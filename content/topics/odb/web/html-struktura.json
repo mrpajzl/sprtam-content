@@ -1,0 +1,485 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "html-struktura",
+  "title": "HTML: struktura dokumentu a sémantické značky",
+  "emoji": "🧱",
+  "explanations": [
+    {
+      "title": "Jako dům",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každá webová stránka, kterou otevřeš, je obyčejný textový soubor. Prohlížeč ho přečte a podle značek v něm pozná, co je nadpis, co odstavec a co menu."
+        },
+        {
+          "type": "text",
+          "text": "Tím jazykem značek je **HTML**. Kdo ho umí, postaví kostru jakéhokoli webu. Na ni se pak navlékne vzhled (CSS) a chování (JavaScript)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "HTML",
+          "definition": "*HyperText Markup Language*, značkovací jazyk. Neříká, jak věci vypadají, ale **co jsou**: nadpis, odstavec, odkaz, seznam.",
+          "example": "`<h1>Rozvrh</h1>` říká: „Rozvrh“ je hlavní nadpis."
+        },
+        {
+          "type": "term",
+          "term": "Značka (tag)",
+          "definition": "Slovo ve špičatých závorkách. Počáteční značka `<p>` něco otevírá, koncová `</p>` (s lomítkem) to zavírá.",
+          "example": "`<p>` a `</p>`"
+        },
+        {
+          "type": "term",
+          "term": "Element",
+          "definition": "Celý kus od počáteční po koncovou značku i s obsahem. Některé elementy obsah nemají a koncovou značku nepotřebují (tzv. prázdné elementy).",
+          "example": "`<p>Ahoj</p>` je element odstavce. `<br>` je prázdný element (zalomení řádku)."
+        },
+        {
+          "type": "term",
+          "term": "Atribut",
+          "definition": "Doplňující údaj uvnitř počáteční značky ve tvaru `název=\"hodnota\"`.",
+          "example": "`<html lang=\"cs\">` – atribut `lang` říká, že stránka je česky."
+        },
+        {
+          "type": "heading",
+          "text": "Dům: základy, střecha, obytné patro"
+        },
+        {
+          "type": "text",
+          "text": "HTML dokument je jako dům. Na začátku je nápis „tady stojí dům podle současných norem“. Pak celý dům, v něm technická místnost, kam návštěva nechodí, a obytné patro, které všichni vidí."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Dům",
+            "HTML",
+            "Co tam patří"
+          ],
+          "rows": [
+            [
+              "nápis o normě",
+              "`<!DOCTYPE html>`",
+              "prohlížeč ví, že jde o HTML5"
+            ],
+            [
+              "celý dům",
+              "`<html lang=\"cs\">`",
+              "všechno ostatní"
+            ],
+            [
+              "technická místnost",
+              "`<head>`",
+              "kódování, název stránky, odkaz na styly; na stránce se nezobrazí"
+            ],
+            [
+              "obytné patro",
+              "`<body>`",
+              "všechno, co uživatel vidí"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Vnoření",
+          "definition": "Element může ležet uvnitř jiného. Vnitřní se musí zavřít dřív než vnější, jako krabička v krabici.",
+          "example": "Správně `<p><strong>Pozor</strong></p>`, špatně `<p><strong>Pozor</p></strong>`."
+        },
+        {
+          "type": "example",
+          "question": "Napiš nejmenší správnou kostru české stránky s názvem „Moje stránka“ a jedním odstavcem.",
+          "answer": "`<!DOCTYPE html>` / `<html lang=\"cs\">` / `<head>` / `<meta charset=\"utf-8\">` / `<title>Moje stránka</title>` / `</head>` / `<body>` / `<p>Ahoj světe.</p>` / `</body>` / `</html>`. Lomítka tu jen oddělují řádky. `meta charset` zajistí správnou češtinu, `title` je text v záložce prohlížeče."
+        },
+        {
+          "type": "heading",
+          "text": "Místnosti mají jména: sémantické značky"
+        },
+        {
+          "type": "term",
+          "term": "Sémantická značka",
+          "definition": "Značka, která svým jménem říká, **jaký význam** má obsah. Pomáhá čtečkám obrazovky, vyhledávačům i dalším vývojářům.",
+          "example": "`<nav>` = navigace. Je jasnější než `<div class=\"menu\">`."
+        },
+        {
+          "type": "term",
+          "term": "div",
+          "definition": "Obecná krabice bez významu. Používá se jen tam, kde žádná sémantická značka nesedí, třeba kvůli rozvržení.",
+          "example": "`<div class=\"karta\">…</div>`"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`<header>`",
+                "back": "hlavička stránky nebo článku (logo, název)"
+              },
+              {
+                "front": "`<nav>`",
+                "back": "hlavní navigace (menu s odkazy)"
+              },
+              {
+                "front": "`<main>`",
+                "back": "hlavní obsah stránky, jen jednou"
+              },
+              {
+                "front": "`<article>`",
+                "back": "samostatný celek, který dává smysl i sám (článek, příspěvek)"
+              },
+              {
+                "front": "`<section>`",
+                "back": "tematický oddíl, obvykle s nadpisem"
+              },
+              {
+                "front": "`<aside>`",
+                "back": "doplňkový obsah vedle (boční panel, poznámka)"
+              },
+              {
+                "front": "`<footer>`",
+                "back": "patička (kontakt, autor, copyright)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ke každé značce si nejdřív řekni, k čemu je, a pak kartičku otoč."
+        },
+        {
+          "type": "example",
+          "question": "Školní web má nahoře logo a menu, uprostřed tři novinky, vpravo kalendář akcí a dole kontakt. Jaké značky použiješ?",
+          "answer": "Logo do `<header>`, menu do `<nav>`. Novinky do `<main>`, každá jako `<article>`. Kalendář je doplněk, tedy `<aside>`. Kontakt do `<footer>`."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nadpisy vybírám podle velikosti: chci menší písmo, tak použiju `<h4>`.",
+          "right": "Úroveň nadpisu určuje stavba obsahu: `<h1>` hlavní nadpis, pod ním `<h2>`, pod tím `<h3>`. Velikost se nastaví v CSS.",
+          "why": "HTML popisuje význam, ne vzhled. Čtečky obrazovky a vyhledávače podle úrovní nadpisů poznávají osnovu stránky."
+        },
+        {
+          "type": "summary",
+          "text": "HTML dokument začíná `<!DOCTYPE html>`, pak `<html>` s částmi `<head>` (údaje o stránce) a `<body>` (viditelný obsah). Sémantické značky jako `header`, `nav`, `main`, `article` a `footer` říkají, co obsah znamená; `div` je jen krabice bez významu."
+        }
+      ]
+    },
+    {
+      "title": "Rozbor kódu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Vývojář čte cizí kód každý den. Proto si vezmeme hotovou malou stránku a projdeme ji řádek po řádku. U každého řádku zjistíme, proč tam je."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "HTML",
+          "definition": "Značkovací jazyk webových stránek. Značkami označuje, co je který kus obsahu.",
+          "example": "`<p>` = odstavec, `<h1>` = hlavní nadpis."
+        },
+        {
+          "type": "term",
+          "term": "Element, značka, atribut",
+          "definition": "Značka je `<p>` nebo `</p>`. Element je celý kus `<p>text</p>`. Atribut je doplňující údaj v počáteční značce, `název=\"hodnota\"`.",
+          "example": "V `<a href=\"/kontakt\">Kontakt</a>` je `a` element, `href` atribut a „Kontakt“ obsah."
+        },
+        {
+          "type": "term",
+          "term": "Kódování znaků (UTF-8)",
+          "definition": "Pravidlo, jak se písmena ukládají jako čísla. UTF-8 umí všechna písmena světa včetně českých.",
+          "example": "Bez `<meta charset=\"utf-8\">` se může místo „ř“ zobrazit nesmysl."
+        },
+        {
+          "type": "heading",
+          "text": "Řádek po řádku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`<!DOCTYPE html>` – deklarace typu dokumentu. Prohlížeč použije standardní režim HTML5.",
+            "`<html lang=\"cs\">` – kořenový element. `lang` pomůže čtečce správně vyslovovat a překladači poznat jazyk.",
+            "`<head>` – hlavička dokumentu. Údaje o stránce, ne obsah.",
+            "`<meta charset=\"utf-8\">` – kódování znaků; má být na začátku hlavičky.",
+            "`<title>Kroužek robotiky</title>` – název v záložce, v záložkách i ve výsledcích vyhledávání.",
+            "`<body>` – tělo, vše viditelné.",
+            "`<h1>Kroužek robotiky</h1>` – hlavní nadpis stránky.",
+            "`<p>Scházíme se ve středu.</p>` – odstavec textu."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hierarchie nadpisů"
+        },
+        {
+          "type": "text",
+          "text": "Nadpisy jsou `<h1>` až `<h6>`. Tvoří osnovu jako v učebnici: kapitola, podkapitola, oddíl. Úrovně se nemají přeskakovat (po `h2` nemá přijít rovnou `h4`)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "patří do `<head>`",
+              "patří do `<body>`"
+            ],
+            "items": [
+              {
+                "text": "`<title>`",
+                "group": 0
+              },
+              {
+                "text": "`<meta charset=\"utf-8\">`",
+                "group": 0
+              },
+              {
+                "text": "`<link rel=\"stylesheet\" href=\"styl.css\">`",
+                "group": 0
+              },
+              {
+                "text": "`<h1>`",
+                "group": 1
+              },
+              {
+                "text": "`<nav>`",
+                "group": 1
+              },
+              {
+                "text": "`<p>`",
+                "group": 1
+              },
+              {
+                "text": "`<footer>`",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď elementy: co popisuje stránku a co je vidět."
+        },
+        {
+          "type": "heading",
+          "text": "Sémantika místo samých divů"
+        },
+        {
+          "type": "term",
+          "term": "Sémantické značky",
+          "definition": "Značky s významem: `header` (hlavička), `nav` (navigace), `main` (hlavní obsah, jen jednou), `article` (samostatný celek), `section` (oddíl s nadpisem), `aside` (doplněk), `footer` (patička).",
+          "example": "`<nav><a href=\"/\">Domů</a></nav>`"
+        },
+        {
+          "type": "term",
+          "term": "div a span",
+          "definition": "Obecné kontejnery bez významu. `div` je blokový (začíná na novém řádku), `span` řádkový (uvnitř textu).",
+          "example": "`<span class=\"cena\">250 Kč</span>`"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Bez sémantiky",
+            "Se sémantikou"
+          ],
+          "rows": [
+            [
+              "`<div class=\"hlavicka\">`",
+              "`<header>`"
+            ],
+            [
+              "`<div class=\"menu\">`",
+              "`<nav>`"
+            ],
+            [
+              "`<div class=\"obsah\">`",
+              "`<main>`"
+            ],
+            [
+              "`<div class=\"clanek\">`",
+              "`<article>`"
+            ],
+            [
+              "`<div class=\"paticka\">`",
+              "`<footer>`"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Najdi chybu: `<p>Cena: <strong>250 Kč</p></strong>`",
+          "answer": "Elementy se kříží. `strong` byl otevřen uvnitř `p`, musí se tedy zavřít dřív: `<p>Cena: <strong>250 Kč</strong></p>`."
+        },
+        {
+          "type": "example",
+          "question": "Stránka má dva `<h1>` a pod nimi rovnou `<h4>`. Co opravíš?",
+          "answer": "Na stránce má být jeden hlavní nadpis `<h1>`. Pod ním `<h2>`, pod ním `<h3>`. Pokud chceš menší písmo, uprav ho v CSS, ne skokem na `<h4>`."
+        },
+        {
+          "type": "term",
+          "term": "Validace",
+          "definition": "Kontrola, že kód odpovídá standardu HTML. Dělá ji validátor, např. validator.w3.org.",
+          "example": "Validátor upozorní na neuzavřený element nebo chybějící `alt` u obrázku."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Prohlížeč stránku zobrazil, takže HTML je správně.",
+          "right": "Prohlížeče chyby v HTML tiše opravují. Správnost ověří až validátor.",
+          "why": "Každý prohlížeč může chybu „opravit“ jinak a čtečky obrazovky se pak v rozbité struktuře ztrácí."
+        },
+        {
+          "type": "summary",
+          "text": "Kostra: `<!DOCTYPE html>`, `<html lang>`, `<head>` s `meta charset` a `title`, `<body>` s obsahem. Nadpisy tvoří osnovu `h1`–`h6`, elementy se správně vnořují a místo samých `div` se používají sémantické značky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co popisuje HTML?",
+      "options": [
+        "co je který kus obsahu (strukturu a význam)",
+        "barvy a písma stránky",
+        "chování stránky po kliknutí",
+        "databázi webu"
+      ],
+      "answer": 0,
+      "explanation": "Vzhled řeší CSS, chování JavaScript."
+    },
+    {
+      "type": "truefalse",
+      "question": "Obsah elementu `<head>` se zobrazuje na stránce.",
+      "answer": false,
+      "explanation": "`head` nese údaje o stránce (kódování, název, styly). Viditelný obsah je v `body`."
+    },
+    {
+      "type": "input",
+      "question": "Jaký atribut elementu `<html>` udává jazyk stránky? Napiš jen jeho název.",
+      "answers": [
+        "lang"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď řádky kostry HTML dokumentu shora dolů.",
+      "items": [
+        "`<!DOCTYPE html>`",
+        "`<html lang=\"cs\">`",
+        "`<head>`",
+        "`<title>Web</title>`",
+        "`</head>`",
+        "`<body>`"
+      ],
+      "hints": [
+        "Úplně první je deklarace typu dokumentu."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj sémantickou značku s obsahem.",
+      "pairs": [
+        [
+          "`<nav>`",
+          "menu s odkazy"
+        ],
+        [
+          "`<main>`",
+          "hlavní obsah stránky"
+        ],
+        [
+          "`<aside>`",
+          "boční panel s doplňkem"
+        ],
+        [
+          "`<footer>`",
+          "kontakt a copyright dole"
+        ],
+        [
+          "`<article>`",
+          "samostatný příspěvek blogu"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který zápis je správně vnořený?",
+      "options": [
+        "`<p><em>text</em></p>`",
+        "`<p><em>text</p></em>`",
+        "`<em><p>text</em></p>`",
+        "`<p><em>text</p>`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co se otevřelo jako poslední, musí se zavřít jako první."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Úroveň nadpisu (`h1`–`h6`) volíme podle toho, jak velké písmo chceme.",
+      "answer": false,
+      "explanation": "Úroveň vyjadřuje osnovu obsahu. Velikost se nastavuje v CSS."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží `<meta charset=\"utf-8\">`?",
+      "options": [
+        "určuje kódování znaků, aby se správně zobrazila čeština",
+        "nastavuje písmo stránky",
+        "říká vyhledávačům popis stránky",
+        "zapíná HTTPS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Která značka (jen název, bez závorek) obaluje hlavní obsah stránky a smí být na stránce viditelná jen jednou?",
+      "answers": [
+        "main"
+      ],
+      "hints": [
+        "Anglicky „hlavní“."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy je vhodné použít `<div>`?",
+      "options": [
+        "když žádná sémantická značka nesedí, např. jen kvůli rozvržení",
+        "vždy místo `<nav>`, je univerzálnější",
+        "jen v `<head>`",
+        "nikdy, v HTML5 už neexistuje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Když prohlížeč stránku zobrazí bez problému, je HTML určitě validní.",
+      "answer": false,
+      "explanation": "Prohlížeče chyby tiše opravují. Validitu ověří validátor."
+    },
+    {
+      "type": "open",
+      "question": "Popiš základní strukturu HTML dokumentu.",
+      "answer": "Začíná deklarací `<!DOCTYPE html>`. Následuje kořenový `<html lang=\"cs\">` se dvěma částmi: `<head>` s údaji o stránce (kódování, title, odkazy na styly) a `<body>` s viditelným obsahem."
+    },
+    {
+      "type": "open",
+      "question": "Proč používat sémantické značky místo samých `div`?",
+      "answer": "Sémantické značky říkají, co obsah znamená. Čtečky obrazovky podle nich nabídnou navigaci, vyhledávače lépe pochopí stránku a kód je čitelnější pro další vývojáře."
+    }
+  ]
+}

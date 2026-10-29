@@ -1,0 +1,430 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "css-grid",
+  "title": "Layout: CSS grid",
+  "emoji": "🔲",
+  "explanations": [
+    {
+      "title": "Šachovnice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Galerie fotek ve třech sloupcích. Rozvržení stránky s hlavičkou, bočním panelem, obsahem a patičkou. Obojí jsou **řádky i sloupce zároveň**. Na to je CSS grid."
+        },
+        {
+          "type": "text",
+          "text": "Flexbox řadí věci do jedné řady. Grid kreslí celou mřížku, jako šachovnici, a prvky do ní pokládá na políčka."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Grid kontejner a položky",
+          "definition": "Element s `display: grid;` je kontejner a vytvoří mřížku. Jeho přímí potomci jsou položky, které se do mřížky pokládají.",
+          "example": "`.galerie { display: grid; }`"
+        },
+        {
+          "type": "term",
+          "term": "Stopa (track)",
+          "definition": "Jeden řádek nebo jeden sloupec mřížky.",
+          "example": "Mřížka 3 × 2 má tři sloupcové a dvě řádkové stopy."
+        },
+        {
+          "type": "term",
+          "term": "Buňka",
+          "definition": "Jedno políčko: průnik řádku a sloupce.",
+          "example": "Na šachovnici je to jedno pole, třeba e4."
+        },
+        {
+          "type": "term",
+          "term": "Mřížková čára",
+          "definition": "Čára mezi stopami. Čísluje se od 1. Tři sloupce mají čtyři svislé čáry (1 až 4). Číslo −1 je poslední čára.",
+          "example": "První sloupec leží mezi čarami 1 a 2."
+        },
+        {
+          "type": "heading",
+          "text": "Nakresli mřížku"
+        },
+        {
+          "type": "term",
+          "term": "Jednotka fr",
+          "definition": "*Fraction*, podíl. Říká, kolik dílů **zbylého** místa stopa dostane, když se odečtou pevné stopy a mezery.",
+          "example": "`1fr 2fr` – druhý sloupec dostane dvakrát víc zbylého místa než první."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zápis",
+            "Co vznikne"
+          ],
+          "rows": [
+            [
+              "`grid-template-columns: 200px 1fr;`",
+              "pevný sloupec 200 px a sloupec na zbytek"
+            ],
+            [
+              "`grid-template-columns: 1fr 1fr 1fr;`",
+              "tři stejné sloupce"
+            ],
+            [
+              "`grid-template-columns: repeat(3, 1fr);`",
+              "totéž, kratší zápis"
+            ],
+            [
+              "`grid-template-rows: auto 1fr auto;`",
+              "řádek podle obsahu, řádek na zbytek, řádek podle obsahu"
+            ],
+            [
+              "`gap: 16px;`",
+              "mezery mezi řádky i sloupci"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Galerie: 4 stejné sloupce s mezerou 10 px. Napiš CSS.",
+          "answer": "`.galerie { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }`. Fotky se samy rozloží po čtyřech do řádků."
+        },
+        {
+          "type": "heading",
+          "text": "Pokládání na políčka"
+        },
+        {
+          "type": "term",
+          "term": "grid-column a grid-row",
+          "definition": "Říkají, mezi kterými čarami položka leží. `grid-column: 1 / 3` = od čáry 1 po čáru 3, tedy přes dva sloupce. `span 2` = přes dvě stopy.",
+          "example": "`grid-column: 1 / -1` roztáhne položku přes všechny sloupce."
+        },
+        {
+          "type": "example",
+          "question": "Mřížka má 3 sloupce. První fotka má zabrat celý první řádek. Jak?",
+          "answer": "`.hlavni-foto { grid-column: 1 / -1; }` nebo `grid-column: 1 / 4;` nebo `grid-column: span 3;`. Čára −1 je poslední, takže zápis funguje i při změně počtu sloupců."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`grid-column: 2 / 4`",
+                "back": "sloupce 2 a 3 (mezi čarami 2 a 4)"
+              },
+              {
+                "front": "`grid-row: span 2`",
+                "back": "přes dva řádky"
+              },
+              {
+                "front": "`repeat(2, 100px 1fr)`",
+                "back": "100px 1fr 100px 1fr"
+              },
+              {
+                "front": "Kolik čar mají 4 sloupce?",
+                "back": "5"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si u každé kartičky odpověď nakreslit na papír s mřížkou, pak ji otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`grid-column: 1 / 3` zabere sloupce 1, 2 a 3.",
+          "right": "Zabere sloupce 1 a 2. Čísla jsou **čáry**, ne sloupce.",
+          "why": "Od čáry 1 do čáry 3 jsou mezi nimi jen dvě stopy, stejně jako od 1 do 3 cm na pravítku jsou 2 cm."
+        },
+        {
+          "type": "summary",
+          "text": "`display: grid` vytvoří mřížku. `grid-template-columns`/`rows` určí stopy (px, %, `fr`, `repeat()`), `gap` mezery. Položky se umisťují mezi číslované čáry pomocí `grid-column` a `grid-row`."
+        }
+      ]
+    },
+    {
+      "title": "Rozvržení stránky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Typická stránka: hlavička nahoře, vlevo menu, uprostřed obsah, dole patička. Gridem to napíšeš na pár řádků a ještě si můžeš rozvržení „nakreslit“ přímo v CSS."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Grid kontejner",
+          "definition": "Element s `display: grid`. Určuje řádky a sloupce, do kterých se pokládají jeho přímí potomci.",
+          "example": "`body { display: grid; }`"
+        },
+        {
+          "type": "term",
+          "term": "Jednotka fr",
+          "definition": "Díl volného místa. Nejdřív se odečtou pevné rozměry a mezery, zbytek se rozdělí podle počtu `fr`.",
+          "example": "`200px 1fr` – 200 px pevně, zbytek pro druhý sloupec."
+        },
+        {
+          "type": "term",
+          "term": "Pojmenovaná oblast",
+          "definition": "Skupina buněk se jménem. Kontejner je nakreslí vlastností `grid-template-areas`, položka se do ní pošle vlastností `grid-area`.",
+          "example": "`header { grid-area: hlavicka; }`"
+        },
+        {
+          "type": "heading",
+          "text": "Nakreslené rozvržení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Kontejneru dej `display: grid`.",
+            "Urči sloupce: `grid-template-columns: 220px 1fr;`.",
+            "Urči řádky: `grid-template-rows: auto 1fr auto;`.",
+            "Nakresli oblasti, každý řetězec je jeden řádek: `grid-template-areas: \"hlavicka hlavicka\" \"menu obsah\" \"paticka paticka\";`.",
+            "Každé položce přiřaď oblast: `header { grid-area: hlavicka; }`, `nav { grid-area: menu; }`, `main { grid-area: obsah; }`, `footer { grid-area: paticka; }`."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stejné jméno vedle sebe znamená, že oblast zabírá víc buněk. Oblast musí být vždy obdélník."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet s fr"
+        },
+        {
+          "type": "example",
+          "question": "Kontejner 900 px, `grid-template-columns: 200px 1fr 2fr; gap: 20px;`. Jak široké jsou sloupce?",
+          "answer": "Mezery: dvě mezi třemi sloupci, 40 px. Volno: 900 − 200 − 40 = 660 px. Dílů 1 + 2 = 3, jeden díl 220 px. Sloupce: **200 px, 220 px, 440 px**."
+        },
+        {
+          "type": "example",
+          "question": "Jak udělat galerii, která má tolik sloupců, kolik se vejde, a každý aspoň 150 px?",
+          "answer": "`grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));`. `minmax` říká: nejméně 150 px, nejvíc 1fr. `auto-fill` vytvoří tolik sloupců, kolik se vejde. Funguje to bez media queries."
+        },
+        {
+          "type": "heading",
+          "text": "Grid, nebo flexbox?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Flexbox",
+            "Grid"
+          ],
+          "rows": [
+            [
+              "rozměry",
+              "jedna řada (řádek nebo sloupec)",
+              "dvě dimenze (řádky i sloupce)"
+            ],
+            [
+              "kdo určuje rozložení",
+              "hlavně obsah a velikost položek",
+              "hlavně mřížka kontejneru"
+            ],
+            [
+              "typické použití",
+              "menu, řada tlačítek, zarovnání ikony a textu",
+              "rozvržení stránky, galerie, dlaždice"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "spíš flexbox",
+              "spíš grid"
+            ],
+            "items": [
+              {
+                "text": "odkazy v menu vedle sebe",
+                "group": 0
+              },
+              {
+                "text": "ikona a text na středu výšky",
+                "group": 0
+              },
+              {
+                "text": "tlačítka OK a Zrušit vpravo",
+                "group": 0
+              },
+              {
+                "text": "hlavička, boční panel, obsah, patička",
+                "group": 1
+              },
+              {
+                "text": "galerie 4 × 3 fotek",
+                "group": 1
+              },
+              {
+                "text": "dlaždice různé velikosti přes víc řádků",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď úkoly. Pomůže otázka: je to jedna řada, nebo mřížka?"
+        },
+        {
+          "type": "mistake",
+          "wrong": "`grid-template-areas: \"a a\" \"b a\";` – oblast `a` má tvar písmene L.",
+          "right": "Oblast musí být obdélník, třeba `\"a a\" \"b b\"` nebo `\"a b\" \"a b\"`.",
+          "why": "Grid neumí oblast tvaru L. Takový zápis je neplatný a prohlížeč celou vlastnost ignoruje."
+        },
+        {
+          "type": "summary",
+          "text": "Grid je dvourozměrné rozvržení. Stopy se určí v px, % nebo `fr` (díl volného místa po odečtení pevných stop a mezer). `grid-template-areas` dovolí rozvržení nakreslit jmény oblastí. Flexbox na řady, grid na mřížky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím se grid liší od flexboxu?",
+      "options": [
+        "Grid rozvrhuje ve dvou rozměrech (řádky i sloupce), flexbox v jedné řadě.",
+        "Grid funguje jen v tabulkách.",
+        "Flexbox umí řádky i sloupce, grid jen sloupce.",
+        "Grid je zastaralá technika."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik svislých mřížkových čar mají 3 sloupce?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ],
+      "hints": [
+        "Nakresli si tři sloupce a spočítej čáry včetně krajních."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik sloupců zabere `grid-column: 2 / 5`?",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "answer": 0,
+      "hints": [
+        "Čísla jsou čáry, ne sloupce."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "`repeat(3, 1fr)` je totéž jako `1fr 1fr 1fr`.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 600 px, `grid-template-columns: 1fr 2fr`, bez gap. Šířka druhého sloupce v px =",
+      "answers": [
+        "400"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 1000 px, `grid-template-columns: 300px 1fr 1fr`, `gap: 50px`. Šířka posledního sloupce v px =",
+      "answers": [
+        "300"
+      ],
+      "hints": [
+        "Kolik mezer je mezi třemi sloupci?",
+        "Volné místo = 1000 − pevný sloupec − mezery."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak roztáhnout položku přes všechny sloupce bez ohledu na jejich počet?",
+      "options": [
+        "`grid-column: 1 / -1;`",
+        "`grid-column: all;`",
+        "`grid-column: 1 / 100%;`",
+        "`width: 100%;`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj vlastnost s účelem.",
+      "pairs": [
+        [
+          "`grid-template-columns`",
+          "určí sloupce"
+        ],
+        [
+          "`gap`",
+          "mezery mezi stopami"
+        ],
+        [
+          "`grid-template-areas`",
+          "nakreslí pojmenované oblasti"
+        ],
+        [
+          "`grid-area`",
+          "pošle položku do oblasti"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pojmenovaná oblast gridu může mít tvar písmene L.",
+      "answer": false,
+      "explanation": "Oblast musí být obdélník."
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá `minmax(150px, 1fr)`?",
+      "options": [
+        "Stopa je nejméně 150 px a nejvíc 1 díl volného místa.",
+        "Stopa má přesně 150 px.",
+        "Stopa má 150 px plus 1fr.",
+        "Vytvoří 150 sloupců."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Na co se spíš hodí flexbox než grid?",
+      "options": [
+        "řada tlačítek v patičce formuláře",
+        "rozvržení celé stránky s bočním panelem",
+        "galerie 4 × 3",
+        "dlaždice přes víc řádků a sloupců"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli jednotku fr a jak se s ní počítá.",
+      "answer": "fr je díl volného místa v gridu. Od velikosti kontejneru se odečtou pevné stopy a mezery a zbytek se rozdělí v poměru hodnot fr."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak gridem postavíš rozvržení s hlavičkou, menu vlevo, obsahem a patičkou.",
+      "answer": "Kontejneru dám `display: grid`, dva sloupce (např. 220px 1fr) a tři řádky (auto 1fr auto). V `grid-template-areas` nakreslím hlavičku přes oba sloupce, menu a obsah vedle sebe a patičku přes oba sloupce, a každé části přiřadím `grid-area`."
+    }
+  ]
+}

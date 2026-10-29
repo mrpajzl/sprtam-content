@@ -1,0 +1,465 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "css-selektory-kaskada",
+  "title": "CSS: selektory a kaskáda",
+  "emoji": "🎨",
+  "explanations": [
+    {
+      "title": "Kdo vyhraje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "HTML řekne, co je nadpis a co odstavec. Jak to bude vypadat, řeší **CSS**. Napíšeš „nadpisy budou modré“ a všechny nadpisy zmodrají."
+        },
+        {
+          "type": "text",
+          "text": "Potíž nastane, když dvě pravidla chtějí pro tentýž element něco jiného. Jedno říká modrá, druhé červená. Kdo vyhraje? To rozhoduje **kaskáda**. Kdo ji nezná, tráví hodiny laděním, proč se styl „nechytá“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CSS",
+          "definition": "*Cascading Style Sheets*, kaskádové styly. Jazyk, kterým se popisuje vzhled HTML: barvy, písmo, velikosti, rozložení.",
+          "example": "`h1 { color: navy; }`"
+        },
+        {
+          "type": "term",
+          "term": "Pravidlo, selektor, deklarace",
+          "definition": "Pravidlo = selektor + složené závorky s deklaracemi. **Selektor** vybírá, kterých elementů se pravidlo týká. **Deklarace** je dvojice `vlastnost: hodnota;`.",
+          "example": "V `p { color: gray; }` je `p` selektor, `color` vlastnost a `gray` hodnota."
+        },
+        {
+          "type": "term",
+          "term": "Třída a id",
+          "definition": "Atributy v HTML. `class` může mít stejnou hodnotu u mnoha elementů. `id` musí být na stránce jedinečné.",
+          "example": "`<p class=\"upozorneni\">`, `<section id=\"rozvrh\">`"
+        },
+        {
+          "type": "heading",
+          "text": "Selektory: jak vybrat elementy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Selektor",
+            "Vybere",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`p`",
+              "všechny elementy daného typu",
+              "všechny odstavce"
+            ],
+            [
+              "`.upozorneni`",
+              "elementy s třídou (tečka)",
+              "`<p class=\"upozorneni\">`"
+            ],
+            [
+              "`#rozvrh`",
+              "element s id (mřížka)",
+              "`<section id=\"rozvrh\">`"
+            ],
+            [
+              "`nav a`",
+              "potomek: `a` kdekoli uvnitř `nav`",
+              "odkazy v menu"
+            ],
+            [
+              "`a:hover`",
+              "pseudotřída: stav elementu",
+              "odkaz pod myší"
+            ],
+            [
+              "`*`",
+              "úplně všechno",
+              "základní nastavení"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Pseudotřída",
+          "definition": "Část selektoru za dvojtečkou. Vybírá element podle stavu nebo pozice, ne podle značky.",
+          "example": "`:hover` (pod myší), `:focus` (aktivní pole), `:first-child` (první potomek)."
+        },
+        {
+          "type": "heading",
+          "text": "Kaskáda: soutěž pravidel"
+        },
+        {
+          "type": "term",
+          "term": "Kaskáda",
+          "definition": "Postup, kterým prohlížeč vybere jednu hodnotu, když se o tutéž vlastnost téhož elementu přou různá pravidla.",
+          "example": "`p { color: blue; }` a `.upozorneni { color: red; }` – odstavec s třídou bude červený."
+        },
+        {
+          "type": "term",
+          "term": "Specificita",
+          "definition": "„Síla“ selektoru. Počítá se jako trojice (id – třídy – typy): kolik je v selektoru id, kolik tříd, atributů a pseudotříd, kolik typů elementů. Porovnává se zleva.",
+          "example": "`#menu a` má 1-0-1, `.menu a` má 0-1-1. Vyhrává `#menu a`."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pravidlo s `!important` přebije pravidla bez něj.",
+            "Při stejné důležitosti vyhrává vyšší specificita.",
+            "Inline styl v atributu `style` je silnější než jakýkoli selektor.",
+            "Při stejné specificitě vyhrává pravidlo, které je v kódu **později**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "`p { color: blue; }`, `.text { color: green; }`, `p { color: red; }`. Jakou barvu má `<p class=\"text\">`?",
+          "answer": "Specificity: `p` = 0-0-1, `.text` = 0-1-0. Třída má vyšší specificitu, takže vyhrává **zelená**. Že je `p { color: red; }` později, nevadí: pořadí rozhoduje jen při shodné specificitě."
+        },
+        {
+          "type": "example",
+          "question": "Porovnej `#hlavni p` a `.obsah .clanek p`.",
+          "answer": "`#hlavni p` = 1-0-1. `.obsah .clanek p` = 0-2-1. Porovnává se zleva: 1 id > 0 id, vyhrává **`#hlavni p`**, i když má druhý selektor dvě třídy."
+        },
+        {
+          "type": "heading",
+          "text": "Dědičnost"
+        },
+        {
+          "type": "term",
+          "term": "Dědičnost",
+          "definition": "Některé vlastnosti (hlavně písmo a barva textu) přechází z rodiče na potomky. Jiné (okraje, rámečky, pozadí) se nedědí.",
+          "example": "`body { font-family: sans-serif; }` změní písmo celé stránky."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Styl se neuplatnil, tak přidám `!important` a je to.",
+          "right": "Zjisti v nástrojích pro vývojáře (F12), které pravidlo vyhrává, a uprav specificitu nebo pořadí.",
+          "why": "`!important` přebije všechno. Za chvíli potřebuješ další `!important`, abys přebil ten první, a styly se stanou neudržitelnými."
+        },
+        {
+          "type": "summary",
+          "text": "Selektor vybírá elementy (typ, `.třída`, `#id`, potomek, pseudotřída). Když se pravidla přou, rozhoduje kaskáda: důležitost, pak specificita (id – třídy – typy), pak pozdější pořadí. Písmo a barva textu se dědí."
+        }
+      ]
+    },
+    {
+      "title": "Počítáme body",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Specificita je jako bodování ve sportu se třemi koly. Kdo vyhraje první kolo, vyhrává. Teprve při remíze se hraje další kolo. Naučíš se body spočítat u jakéhokoli selektoru."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CSS a pravidlo",
+          "definition": "CSS je jazyk vzhledu webu. Pravidlo má selektor (co) a deklarace `vlastnost: hodnota;` (jak).",
+          "example": "`.tlacitko { background: orange; }`"
+        },
+        {
+          "type": "term",
+          "term": "Selektor",
+          "definition": "Výraz, který vybírá elementy: podle typu (`p`), třídy (`.cena`), id (`#kosik`), stavu (`:hover`) nebo umístění (`nav a`).",
+          "example": "`ul li` vybere položky seznamu uvnitř `ul`."
+        },
+        {
+          "type": "term",
+          "term": "Specificita",
+          "definition": "Body selektoru ve tvaru **A-B-C**. A = počet id, B = počet tříd, atributových selektorů a pseudotříd, C = počet typů elementů a pseudoelementů. `*` a kombinátory (mezera, `>`) body nemají.",
+          "example": "`nav a:hover` = 0-1-2"
+        },
+        {
+          "type": "heading",
+          "text": "Jak spočítat body"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej `#něco` → číslo A.",
+            "Spočítej `.něco`, `[atribut]` a `:pseudotřídy` → číslo B.",
+            "Spočítej názvy elementů (`p`, `div`, `a`) a pseudoelementy (`::before`) → číslo C.",
+            "Porovnej A. Při rovnosti B. Při rovnosti C.",
+            "Při úplné shodě vyhrává pravidlo, které je v CSS později."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Selektor",
+            "A (id)",
+            "B (třídy…)",
+            "C (typy)"
+          ],
+          "rows": [
+            [
+              "`p`",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "`.cena`",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "`ul li a`",
+              "0",
+              "0",
+              "3"
+            ],
+            [
+              "`.menu a:hover`",
+              "0",
+              "2",
+              "1"
+            ],
+            [
+              "`#kosik .polozka`",
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "`input[type=\"email\"]`",
+              "0",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`h1`",
+                "back": "0-0-1"
+              },
+              {
+                "front": "`.nadpis`",
+                "back": "0-1-0"
+              },
+              {
+                "front": "`#logo`",
+                "back": "1-0-0"
+              },
+              {
+                "front": "`header .nadpis h1`",
+                "back": "0-1-2"
+              },
+              {
+                "front": "`a:focus`",
+                "back": "0-1-1"
+              },
+              {
+                "front": "`#menu li.aktivni a`",
+                "back": "1-1-2"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Spočítej body selektoru na kartičce a pak ji otoč pro kontrolu."
+        },
+        {
+          "type": "example",
+          "question": "Jakou barvu má odkaz `<a class=\"btn\">` v `<nav id=\"menu\">`? Pravidla: `#menu a { color: white; }` a `a.btn { color: black; }`.",
+          "answer": "`#menu a` = 1-0-1. `a.btn` = 0-1-1. Rozhoduje první číslo: 1 > 0. Odkaz je **bílý**."
+        },
+        {
+          "type": "example",
+          "question": "Dvě pravidla `.cena { color: red; }` a `.akce { color: green; }`, element `<span class=\"cena akce\">`. Pravidlo `.akce` je v souboru druhé. Výsledek?",
+          "answer": "Obě mají 0-1-0, je remíza. Rozhoduje pořadí: později je `.akce`, cena bude **zelená**. Pořadí tříd v atributu `class` nerozhoduje."
+        },
+        {
+          "type": "heading",
+          "text": "Mimo body"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Inline styl** (`style=\"color:red\"` přímo v HTML) přebije každý selektor.",
+            "**`!important`** přebije i inline styl bez `!important`. Je to nouzová brzda.",
+            "**Dědičnost**: hodnota zděděná od rodiče prohraje s jakýmkoli pravidlem, které cílí přímo na element."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "`.a .b .c .d .e .f .g .h .i .j .k` (11 tříd) přebije `#x`, protože 11 > 1.",
+          "right": "Vyhrává `#x`. Specificita 1-0-0 je větší než 0-11-0.",
+          "why": "Body se nesčítají do jednoho čísla. Kola se porovnávají zleva a jedno id vyhraje nad libovolným počtem tříd."
+        },
+        {
+          "type": "summary",
+          "text": "Specificita = A-B-C (id – třídy, atributy, pseudotřídy – typy elementů), porovnává se zleva. Při remíze vyhrává pozdější pravidlo. Inline styl a `!important` stojí nad body a mají se používat výjimečně."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co v pravidle `h2 { color: teal; }` je selektor?",
+      "options": [
+        "`h2`",
+        "`color`",
+        "`teal`",
+        "`{ }`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj selektor s tím, co vybere.",
+      "pairs": [
+        [
+          "`.cena`",
+          "elementy s třídou cena"
+        ],
+        [
+          "`#kosik`",
+          "element s id kosik"
+        ],
+        [
+          "`nav a`",
+          "odkazy uvnitř nav"
+        ],
+        [
+          "`a:hover`",
+          "odkaz pod kurzorem myši"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je specificita selektoru `.menu li a` ve tvaru A-B-C?",
+      "answers": [
+        "0-1-2",
+        "0,1,2",
+        "012",
+        "(0,1,2)",
+        "0 1 2"
+      ],
+      "hints": [
+        "Spočítej id, pak třídy, pak názvy elementů.",
+        "`li` a `a` jsou názvy elementů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který selektor má nejvyšší specificitu?",
+      "options": [
+        "`#obsah p`",
+        "`.clanek .text p`",
+        "`div div div p`",
+        "`p.uvod`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnávej nejdřív počet id."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejné specificitě vyhrává pravidlo, které je v CSS později.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Vlastnost `margin` se dědí z rodiče na potomky.",
+      "answer": false,
+      "explanation": "Dědí se hlavně vlastnosti textu (color, font…). Okraje, rámečky a pozadí ne."
+    },
+    {
+      "type": "choice",
+      "question": "Pravidla `p { color: blue; }` a `.info { color: orange; }`. Jakou barvu má `<p class=\"info\">`?",
+      "options": [
+        "oranžovou",
+        "modrou",
+        "černou",
+        "záleží jen na pořadí"
+      ],
+      "answer": 0,
+      "explanation": "Třída (0-1-0) má vyšší specificitu než typ (0-0-1)."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejslabšího po nejsilnější.",
+      "items": [
+        "zděděná hodnota od rodiče",
+        "selektor typu `p`",
+        "selektor třídy `.text`",
+        "selektor id `#hlavni`",
+        "inline styl `style=\"…\"`"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč je špatný nápad řešit každý konflikt přidáním `!important`?",
+      "options": [
+        "Přebije vše a k jeho přebití je potřeba další `!important`, styly se stanou neudržitelné.",
+        "Prohlížeče `!important` nepodporují.",
+        "Zpomalí načítání stránky o několik sekund.",
+        "Funguje jen v id selektorech."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jaký znak píšeš v CSS před název třídy?",
+      "answers": [
+        ".",
+        "tečka",
+        "tecka"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Selektor s 11 třídami přebije selektor s jedním id.",
+      "answer": false,
+      "explanation": "Specificita se porovnává zleva po kolech, 1-0-0 > 0-11-0."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik bodů ve sloupci B (třídy) má selektor `input[type=\"text\"]:focus`?",
+      "options": [
+        "2",
+        "1",
+        "0",
+        "3"
+      ],
+      "answer": 0,
+      "hints": [
+        "Atributový selektor i pseudotřída se počítají do stejného sloupce jako třída."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je kaskáda v CSS a podle čeho prohlížeč rozhoduje.",
+      "answer": "Kaskáda vybírá hodnotu, když se o vlastnost jednoho elementu přou různá pravidla. Rozhoduje důležitost (`!important`), pak specificita selektoru (id – třídy – typy) a při shodě pořadí: vyhrává pozdější pravidlo."
+    },
+    {
+      "type": "open",
+      "question": "Jak spočítáš specificitu selektoru `#menu .polozka a`?",
+      "answer": "Spočítám id (1), třídy, atributy a pseudotřídy (1) a typy elementů (1). Specificita je 1-1-1 a porovnává se zleva."
+    }
+  ]
+}

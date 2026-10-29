@@ -1,0 +1,425 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pristupnost-seo",
+  "title": "Přístupnost a SEO",
+  "emoji": "♿",
+  "explanations": [
+    {
+      "title": "Čtyři návštěvníci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na web školy přijdou čtyři lidé. Nevidomá Jana s čtečkou obrazovky. Petr se zlomenou rukou, který ovládá počítač jen klávesnicí. Babička, která špatně vidí drobné šedé písmo. A robot vyhledávače, který stránku čte, aby ji mohl ukázat ve výsledcích hledání."
+        },
+        {
+          "type": "text",
+          "text": "Všem čtyřem pomáhají stejné věci: dobrá struktura HTML, popisky a srozumitelný obsah. Proto se **přístupnost** a **SEO** učí spolu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přístupnost (accessibility, a11y)",
+          "definition": "Web je přístupný, když ho mohou používat všichni lidé, i lidé se zrakovým, sluchovým, pohybovým nebo kognitivním postižením.",
+          "example": "Formulář jde vyplnit jen klávesnicí a čtečka ke každému poli přečte popisek."
+        },
+        {
+          "type": "term",
+          "term": "Čtečka obrazovky",
+          "definition": "Program, který nevidomému uživateli předčítá obsah obrazovky nebo ho posílá na hmatový (Braillův) řádek. Orientuje se podle struktury HTML.",
+          "example": "NVDA ve Windows, VoiceOver v macOS a iOS, TalkBack v Androidu."
+        },
+        {
+          "type": "term",
+          "term": "SEO",
+          "definition": "*Search Engine Optimization*, optimalizace pro vyhledávače. Úpravy webu, které pomáhají vyhledávačům stránku pochopit a ukázat ji lidem, kteří hledají její téma.",
+          "example": "Výstižný `<title>` „Kroužek robotiky – SPŠ Brno“ místo „Stránka 1“."
+        },
+        {
+          "type": "heading",
+          "text": "Co potřebuje Jana (čtečka obrazovky)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Obrázky s výstižným `alt`.",
+            "Hierarchii nadpisů `h1`–`h6`: čtečka mezi nimi umí skákat.",
+            "Sémantické značky `nav`, `main`, `footer`: čtečka podle nich nabídne přeskok na hlavní obsah.",
+            "Pole formuláře s `label`.",
+            "Odkazy, které dávají smysl i vytržené: „Rozvrh 1. A“, ne „klikněte zde“.",
+            "Atribut `lang` u `html`, aby čtečka četla správným jazykem."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co potřebuje Petr (jen klávesnice)"
+        },
+        {
+          "type": "text",
+          "text": "Klávesou Tab se přechází mezi odkazy, tlačítky a poli. Musí být vidět, kde právě je – tzv. **fokus**. Nikdy nemaž obrys fokusu (`outline: none`) bez náhrady. Klikací věci dělej z `<button>` a `<a>`, ne z `<div>`, které klávesnicí ovládat nejdou."
+        },
+        {
+          "type": "heading",
+          "text": "Co potřebuje babička (zrak)"
+        },
+        {
+          "type": "term",
+          "term": "Kontrast",
+          "definition": "Poměr jasu textu a pozadí. Standard WCAG pro úroveň AA chce u běžného textu aspoň **4,5 : 1**, u velkého textu aspoň 3 : 1.",
+          "example": "Černá na bílé má 21 : 1. Světle šedá na bílé často neprojde."
+        },
+        {
+          "type": "text",
+          "text": "Písmo v `rem`, aby šlo zvětšit. Informaci nesděluj **jen barvou** (červené pole = chyba); přidej i text nebo ikonu."
+        },
+        {
+          "type": "heading",
+          "text": "Co potřebuje robot vyhledávače"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Jedinečný a výstižný `<title>` pro každou stránku.",
+            "`<meta name=\"description\">` – krátký popis, vyhledávač ho často ukáže pod odkazem.",
+            "Jeden `h1` s hlavním tématem a logické nadpisy.",
+            "Čitelné URL: `/krouzky/robotika`, ne `/page?id=8731`.",
+            "Rychlé načítání a dobré zobrazení na mobilu.",
+            "Kvalitní text, který odpovídá na to, co lidé hledají."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "pomáhá přístupnosti",
+              "pomáhá oběma",
+              "jen SEO"
+            ],
+            "items": [
+              {
+                "text": "viditelný fokus",
+                "group": 0
+              },
+              {
+                "text": "kontrast 4,5 : 1",
+                "group": 0
+              },
+              {
+                "text": "`label` u polí",
+                "group": 0
+              },
+              {
+                "text": "alt u obrázků",
+                "group": 1
+              },
+              {
+                "text": "logické nadpisy",
+                "group": 1
+              },
+              {
+                "text": "výstižné texty odkazů",
+                "group": 1
+              },
+              {
+                "text": "`meta description`",
+                "group": 2
+              },
+              {
+                "text": "čitelné URL",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď opatření. Uvidíš, že hodně z nich pomáhá oběma stranám."
+        },
+        {
+          "type": "example",
+          "question": "Odkaz zní „Více informací najdete <a>zde</a>“. Co je na něm špatně a jak ho opravit?",
+          "answer": "Čtečka umí vypsat jen seznam odkazů. Pak slyší „zde, zde, zde“ a neví kam vedou. Vyhledávač z textu odkazu taky nic nepozná. Oprava: „Přečtěte si <a>pravidla přijímacích zkoušek</a>.“"
+        },
+        {
+          "type": "example",
+          "question": "Šedý text #999 na bílém pozadí má kontrast asi 2,8 : 1. Projde úrovní AA pro běžný text?",
+          "answer": "**Neprojde.** AA vyžaduje u běžného textu aspoň 4,5 : 1. Text je třeba ztmavit, třeba na #595959, který má na bílé asi 7 : 1."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Přístupnost se týká jen pár nevidomých, nám se to nevyplatí.",
+          "right": "Přístupnost pomáhá všem: lidem se zraněním, starším lidem, uživatelům na slunci s mobilem i vyhledávačům.",
+          "why": "Postižení může být trvalé, dočasné (zlomená ruka) i situační (jedna ruka drží dítě). A u webů veřejné správy je přístupnost v ČR zákonnou povinností (zákon č. 99/2019 Sb.)."
+        },
+        {
+          "type": "summary",
+          "text": "Přístupný web používá sémantické HTML, alt, label, logické nadpisy, dost kontrastu a jde ovládat klávesnicí. SEO stojí na výstižném title a description, nadpisech, čitelných URL, rychlosti a kvalitním obsahu. Obojí začíná dobrým HTML."
+        }
+      ]
+    },
+    {
+      "title": "Audit stránky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Firma ti dá hotový web a chce vědět, co je potřeba opravit. Uděláš **audit**: projdeš stránku podle seznamu bodů a zapíšeš nálezy. Tady je ten seznam i postup."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přístupnost",
+          "definition": "Vlastnost webu, že ho mohou používat i lidé s postižením zraku, sluchu, pohybu nebo s potížemi s porozuměním.",
+          "example": "Video má titulky pro neslyšící."
+        },
+        {
+          "type": "term",
+          "term": "WCAG",
+          "definition": "*Web Content Accessibility Guidelines*, mezinárodní doporučení pro přístupnost od organizace W3C. Pravidla mají tři úrovně: **A** (minimum), **AA** (běžně požadovaná), **AAA** (nejpřísnější).",
+          "example": "Novější verze jsou WCAG 2.1 (2018) a WCAG 2.2 (2023)."
+        },
+        {
+          "type": "term",
+          "term": "Čtyři principy WCAG",
+          "definition": "Obsah má být **vnímatelný** (jde ho vidět nebo slyšet jiným způsobem), **ovladatelný** (i klávesnicí), **srozumitelný** a **robustní** (funguje s různými prohlížeči a čtečkami).",
+          "example": "Titulky k videu = vnímatelnost. Ovládání tabulátorem = ovladatelnost."
+        },
+        {
+          "type": "term",
+          "term": "SEO",
+          "definition": "Optimalizace pro vyhledávače: aby vyhledávač stránce porozuměl a ukázal ji lidem, kteří hledají její téma.",
+          "example": "Stránka pekárny má title „Pekárna U Lípy – chleba a koláče, Olomouc“."
+        },
+        {
+          "type": "heading",
+          "text": "Postup auditu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Projdi stránku jen klávesnicí (Tab, Shift+Tab, Enter, mezerník). Je fokus vidět? Dostaneš se všude?",
+            "Zkontroluj obrázky: mají smysluplný `alt`, ozdobné prázdný `alt=\"\"`?",
+            "Vypiš osnovu nadpisů. Je jeden `h1` a nepřeskakují se úrovně?",
+            "Zkontroluj formuláře: má každé pole `label`? Jsou chybové hlášky textem, ne jen barvou?",
+            "Změř kontrast textu nástrojem (např. v nástrojích pro vývojáře prohlížeče).",
+            "Spusť automatický test, např. Lighthouse v Chrome. Najde jen část problémů, ruční kontrola je nutná.",
+            "SEO: má každá stránka jedinečný `title` a `meta description`? Jsou URL čitelné? Je stránka rychlá a funguje na mobilu?",
+            "Zapiš nálezy s prioritou a návrhem opravy."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Najdi problémy: `<div onclick=\"odeslat()\">Odeslat</div>` a `<input placeholder=\"E-mail\">`.",
+          "answer": "1) `div` nejde ovládat klávesnicí a čtečka ho neoznámí jako tlačítko → použij `<button type=\"submit\">Odeslat</button>`. 2) `placeholder` není popisek: po začátku psaní zmizí a čtečky ho nemusí přečíst → přidej `<label for=\"mail\">E-mail</label>` a poli `id=\"mail\"`."
+        },
+        {
+          "type": "example",
+          "question": "Všechny stránky e-shopu mají `<title>E-shop</title>`. Proč je to problém?",
+          "answer": "Ve výsledcích hledání i v záložkách vypadají všechny stránky stejně a vyhledávač z title nepozná, o čem stránka je. Každá má mít vlastní title, např. „Pánská bunda Alpine, modrá – E-shop Hory“. Čtečka title přečte jako první, takže pomůže i nevidomým."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Vnímatelný",
+                "back": "alt u obrázků, titulky u videa, dostatečný kontrast"
+              },
+              {
+                "front": "Ovladatelný",
+                "back": "vše jde klávesnicí, viditelný fokus, dost času na úkon"
+              },
+              {
+                "front": "Srozumitelný",
+                "back": "jasný jazyk, předvídatelné chování, srozumitelné chybové hlášky"
+              },
+              {
+                "front": "Robustní",
+                "back": "validní a sémantické HTML, funguje se čtečkami"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ke každému principu si zkus vymyslet jeden příklad, pak kartu otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Lighthouse ukázal 100 bodů za přístupnost, web je tedy přístupný.",
+          "right": "Automatický test najde jen část problémů. Je potřeba i ruční kontrola: klávesnice, čtečka, smysl alt textů.",
+          "why": "Program pozná, že `alt` chybí, ale ne, že `alt=\"obrázek\"` nic neříká. Nepozná ani nelogické pořadí ovládání."
+        },
+        {
+          "type": "summary",
+          "text": "Audit přístupnosti vychází z WCAG (úrovně A, AA, AAA; principy vnímatelnost, ovladatelnost, srozumitelnost, robustnost): klávesnice, alt, nadpisy, label, kontrast. SEO audit kontroluje title, description, nadpisy, URL, rychlost a mobil. Automatické nástroje nestačí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená, že je web přístupný?",
+      "options": [
+        "Mohou ho používat všichni, i lidé s postižením.",
+        "Je dostupný 24 hodin denně.",
+        "Nemá heslo.",
+        "Je zdarma."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj problém s uživatelem, kterého nejvíc trápí.",
+      "pairs": [
+        [
+          "chybějící alt u obrázku",
+          "nevidomý se čtečkou"
+        ],
+        [
+          "nejde ovládat klávesnicí",
+          "člověk, který nemůže používat myš"
+        ],
+        [
+          "video bez titulků",
+          "neslyšící"
+        ],
+        [
+          "světle šedý text na bílé",
+          "slabozraký"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký nejmenší kontrastní poměr vyžaduje WCAG úrovně AA pro běžný text? Napiš číslo před „: 1“.",
+      "answers": [
+        "4,5",
+        "4.5"
+      ],
+      "hints": [
+        "Pro velký text je to 3 : 1, pro běžný víc."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Odkaz s textem „klikněte zde“ je pro čtečku obrazovky i vyhledávač stejně dobrý jako „Rozvrh 1. A“.",
+      "answer": false,
+      "explanation": "Text odkazu má říct, kam vede."
+    },
+    {
+      "type": "choice",
+      "question": "Proč nedělat tlačítko z `<div onclick=…>`?",
+      "options": [
+        "Nejde ovládat klávesnicí a čtečka ho neoznámí jako tlačítko.",
+        "`div` nejde obarvit.",
+        "`onclick` nefunguje v `div`.",
+        "`div` se nezobrazí na mobilu."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď úrovně WCAG od nejmírnější po nejpřísnější.",
+      "items": [
+        "A",
+        "AA",
+        "AAA"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který prvek nejvíc ovlivní, jak se stránka ukáže jako nadpis ve výsledcích vyhledávání?",
+      "options": [
+        "`<title>`",
+        "`<footer>`",
+        "`<meta charset>`",
+        "`<aside>`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Automatický test (např. Lighthouse) najde všechny problémy s přístupností.",
+      "answer": false,
+      "explanation": "Nepozná třeba nesmyslný alt nebo nelogické pořadí ovládání."
+    },
+    {
+      "type": "choice",
+      "question": "Proč nestačí označit chybné pole formuláře jen červenou barvou?",
+      "options": [
+        "Barvoslepý ani čtečka obrazovky barvu nerozliší; chybí text.",
+        "Červená není v CSS povolená.",
+        "Formuláře nesmí mít barvy.",
+        "Vyhledávač pak stránku nezaindexuje."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj princip WCAG s příkladem.",
+      "pairs": [
+        [
+          "vnímatelný",
+          "titulky k videu"
+        ],
+        [
+          "ovladatelný",
+          "vše jde tabulátorem"
+        ],
+        [
+          "srozumitelný",
+          "jasná chybová hláška"
+        ],
+        [
+          "robustní",
+          "validní sémantické HTML"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která URL je lepší pro SEO i pro lidi?",
+      "options": [
+        "`/krouzky/robotika`",
+        "`/page.php?id=8731`",
+        "`/a/b/c/x1`",
+        "`/KROUZKY_robotika_final2`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkráceně píše anglický výraz pro optimalizaci pro vyhledávače? (3 písmena)",
+      "answers": [
+        "SEO"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jmenuj aspoň čtyři opatření, kterými zlepšíš přístupnost webu.",
+      "answer": "Výstižný alt u obrázků, logická hierarchie nadpisů a sémantické značky, label u polí formuláře, dostatečný kontrast, ovládání klávesnicí s viditelným fokusem a informace nesdělovaná jen barvou."
+    },
+    {
+      "type": "open",
+      "question": "Proč spolu přístupnost a SEO souvisí?",
+      "answer": "Čtečka obrazovky i robot vyhledávače stránku „nevidí“ a orientují se podle HTML: nadpisů, alt textů, textů odkazů a title. Co pomáhá nevidomému, pomáhá i vyhledávači."
+    }
+  ]
+}

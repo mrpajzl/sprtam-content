@@ -1,0 +1,435 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "responzivni-design",
+  "title": "Responzivní design",
+  "emoji": "📱",
+  "explanations": [
+    {
+      "title": "Jako voda",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tentýž web otevřeš na mobilu, tabletu i na velkém monitoru. Na mobilu má být menu schované a text v jednom sloupci. Na monitoru se vejdou tři sloupce vedle sebe."
+        },
+        {
+          "type": "text",
+          "text": "Dělat tři různé weby by bylo drahé. Proto se dělá jeden, který se **přizpůsobí** šířce obrazovky. Tomu se říká responzivní design. Většina lidí dnes na web chodí z mobilu, takže bez toho se neobejdeš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Responzivní design",
+          "definition": "Způsob tvorby webu, kdy se rozvržení samo přizpůsobí šířce okna nebo zařízení.",
+          "example": "Na mobilu jeden sloupec, na monitoru tři."
+        },
+        {
+          "type": "term",
+          "term": "Viewport",
+          "definition": "Viditelná plocha okna prohlížeče, ve které se stránka zobrazuje.",
+          "example": "Na mobilu má viewport šířku kolem 360–430 CSS pixelů."
+        },
+        {
+          "type": "heading",
+          "text": "Buď jako voda"
+        },
+        {
+          "type": "text",
+          "text": "Voda nemá svůj tvar. Nalij ji do sklenice a má tvar sklenice. Responzivní web taky nemá pevnou šířku. Vyplní okno, které dostane. K tomu slouží tři nástroje."
+        },
+        {
+          "type": "heading",
+          "text": "1. Meta viewport"
+        },
+        {
+          "type": "text",
+          "text": "Mobilní prohlížeče kdysi předstíraly široký displej a stránku zmenšily. Tenhle řádek do `<head>` jim řekne: „Použij skutečnou šířku zařízení.“"
+        },
+        {
+          "type": "example",
+          "question": "Jak zní řádek meta viewport?",
+          "answer": "`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`. Bez něj se na mobilu zobrazí zmenšená „desktopová“ stránka a media queries nebudou fungovat, jak čekáš."
+        },
+        {
+          "type": "heading",
+          "text": "2. Pružné jednotky"
+        },
+        {
+          "type": "term",
+          "term": "Relativní jednotka",
+          "definition": "Velikost vyjádřená vůči něčemu jinému, ne v pevných pixelech.",
+          "example": "`%` = procento rodiče, `rem` = násobek velikosti písma kořenového elementu, `vw` = procento šířky viewportu."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Jednotka",
+            "Vůči čemu",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`%`",
+              "rozměr rodiče",
+              "`width: 50%`"
+            ],
+            [
+              "`em`",
+              "velikost písma (u `font-size` písma rodiče)",
+              "`padding: 1em`"
+            ],
+            [
+              "`rem`",
+              "velikost písma kořenového elementu `html` (v prohlížečích obvykle 16 px)",
+              "`font-size: 1.5rem` = 24 px při 16 px"
+            ],
+            [
+              "`vw` / `vh`",
+              "1 % šířky / výšky viewportu",
+              "`width: 100vw`"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Obrázek, který nesmí přetéct z úzkého displeje: `img { max-width: 100%; height: auto; }`."
+        },
+        {
+          "type": "heading",
+          "text": "3. Media queries"
+        },
+        {
+          "type": "term",
+          "term": "Media query",
+          "definition": "Podmínka v CSS: „tato pravidla použij, jen když…“ (např. je viewport aspoň tak široký).",
+          "example": "`@media (min-width: 768px) { … }`"
+        },
+        {
+          "type": "term",
+          "term": "Breakpoint (zlomový bod)",
+          "definition": "Šířka, při které se rozvržení mění. Volí se podle obsahu (kdy se rozvržení začne rozpadat), ne podle konkrétního modelu telefonu.",
+          "example": "Např. 600 px a 1000 px."
+        },
+        {
+          "type": "example",
+          "question": "Karty mají být na mobilu pod sebou a od šířky 768 px ve třech sloupcích. Napiš CSS.",
+          "answer": "`.karty { display: grid; gap: 16px; }` platí pro všechny. `@media (min-width: 768px) { .karty { grid-template-columns: repeat(3, 1fr); } }` přidá sloupce jen na širších displejích."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "pevná jednotka",
+              "relativní jednotka"
+            ],
+            "items": [
+              {
+                "text": "`px`",
+                "group": 0
+              },
+              {
+                "text": "`cm`",
+                "group": 0
+              },
+              {
+                "text": "`%`",
+                "group": 1
+              },
+              {
+                "text": "`rem`",
+                "group": 1
+              },
+              {
+                "text": "`em`",
+                "group": 1
+              },
+              {
+                "text": "`vw`",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď jednotky. Ptej se: mění se velikost, když se změní okno nebo písmo?"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Responzivní web = pro mobil udělám zvláštní web m.skola.cz.",
+          "right": "Responzivní web je jeden web s jedním HTML, jehož CSS se přizpůsobí šířce.",
+          "why": "Dva weby znamenají dvojí práci a obsah se rozchází. Responzivní design řeší všechny šířky jedním kódem."
+        },
+        {
+          "type": "summary",
+          "text": "Responzivní web se přizpůsobí šířce: meta viewport, pružné jednotky (`%`, `rem`, `vw`, `max-width: 100%`) a media queries, které při breakpointech mění rozvržení."
+        }
+      ]
+    },
+    {
+      "title": "Mobile first",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš navrhnout web pro pekárnu. Zákazníci ho otevírají hlavně na mobilu cestou do práce. Začneš tedy u malé obrazovky a teprve pak přidáváš pro větší. Tomuto postupu se říká **mobile first**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Viewport a meta viewport",
+          "definition": "Viewport je viditelná plocha prohlížeče. Meta viewport v `<head>` řekne mobilu, ať použije skutečnou šířku zařízení.",
+          "example": "`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`"
+        },
+        {
+          "type": "term",
+          "term": "Media query",
+          "definition": "Blok `@media (podmínka) { … }`. Pravidla uvnitř platí jen, když je podmínka splněná.",
+          "example": "`@media (min-width: 900px) { … }` – jen pro viewport široký aspoň 900 px."
+        },
+        {
+          "type": "term",
+          "term": "Breakpoint",
+          "definition": "Šířka, při které se rozvržení mění.",
+          "example": "Při 600 px se karty seřadí do dvou sloupců."
+        },
+        {
+          "type": "term",
+          "term": "Mobile first",
+          "definition": "Nejdřív napíšeš styly pro nejmenší displej, bez media query. Pro větší displeje je **přidáváš** pomocí `min-width`.",
+          "example": "Opak, *desktop first*, začíná širokým displejem a pro menší ubírá pomocí `max-width`."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Do `<head>` dej meta viewport.",
+            "Napiš základní CSS pro mobil: jeden sloupec, čitelné písmo, velká tlačítka.",
+            "Obrázkům nastav `max-width: 100%`, ať nepřetékají.",
+            "Zvětšuj okno, dokud rozvržení nezačne vypadat špatně. Tam je breakpoint.",
+            "Přidej `@media (min-width: …)` a v něm jen to, co se mění.",
+            "Opakuj pro další šířky a otestuj na skutečném telefonu i v nástrojích pro vývojáře."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Menu pekárny: na mobilu odkazy pod sebou, od 600 px vedle sebe. Napiš CSS stylem mobile first.",
+          "answer": "`nav { display: flex; flex-direction: column; }` – základ pro mobil. `@media (min-width: 600px) { nav { flex-direction: row; } }` – na větších displejích vedle sebe."
+        },
+        {
+          "type": "example",
+          "question": "Kořenový element má písmo 16 px. Kolik pixelů je `2.5rem` a kolik `50vw` na displeji širokém 400 px?",
+          "answer": "`2.5rem` = 2,5 · 16 = **40 px**. `50vw` = 50 % ze 400 px = **200 px**."
+        },
+        {
+          "type": "heading",
+          "text": "Proč zrovna min-width"
+        },
+        {
+          "type": "text",
+          "text": "Při mobile first se pravidla jen **přidávají**. Mobil stáhne a použije nejjednodušší styly a nic se nepřepisuje tam a zpátky. Zároveň tě to nutí rozmyslet, co je na stránce opravdu důležité."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Mobile first přidává styly pro větší displeje přes `@media (",
+                "after": ": 768px)`",
+                "options": [
+                  "min-width",
+                  "max-width",
+                  "width"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Styly bez media query platí pro ",
+                "after": "",
+                "options": [
+                  "všechny šířky",
+                  "jen desktop",
+                  "jen tisk"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Obrázek nepřeteče: `img { ",
+                "after": ": 100%; }`",
+                "options": [
+                  "max-width",
+                  "min-width",
+                  "width-limit"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň mezery a ověř si, že rozumíš principu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Breakpointy nastavím přesně na šířky iPhonu a Samsungu, které znám.",
+          "right": "Breakpointy dej tam, kde se rozvržení tvého obsahu začne rozpadat.",
+          "why": "Zařízení jsou stovky a každý rok přibývají nová. Rozvržení navázané na obsah funguje na všech."
+        },
+        {
+          "type": "summary",
+          "text": "Mobile first: základní CSS pro mobil, pro větší displeje přidávat pravidla v `@media (min-width: …)`. Nezapomeň na meta viewport, pružné jednotky a breakpointy podle obsahu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je responzivní design?",
+      "options": [
+        "jeden web, jehož rozvržení se přizpůsobí šířce zařízení",
+        "zvláštní web pro mobily na subdoméně",
+        "web, který rychle odpovídá",
+        "web jen pro dotykové displeje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Bez meta viewport zobrazí mobilní prohlížeč stránku zmenšenou, jako by byla pro široký displej.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kořenový element má písmo 16 px. Kolik px je `1.5rem`?",
+      "answers": [
+        "24"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Viewport je široký 360 px. Kolik px je `25vw`?",
+      "answers": [
+        "90"
+      ],
+      "hints": [
+        "1vw je 1 % šířky viewportu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která media query se používá při postupu mobile first?",
+      "options": [
+        "`@media (min-width: 768px)`",
+        "`@media (max-width: 768px)`",
+        "`@media print`",
+        "`@media (orientation: mobile)`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Při mobile first se styly pro větší displeje přidávají."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj jednotku s tím, vůči čemu se počítá.",
+      "pairs": [
+        [
+          "`%`",
+          "rozměr rodiče"
+        ],
+        [
+          "`rem`",
+          "písmo kořenového elementu"
+        ],
+        [
+          "`vw`",
+          "šířka viewportu"
+        ],
+        [
+          "`px`",
+          "nic, pevná jednotka"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak zajistit, aby obrázek nepřetekl z úzkého displeje?",
+      "options": [
+        "`img { max-width: 100%; height: auto; }`",
+        "`img { width: 1200px; }`",
+        "`img { overflow: mobile; }`",
+        "`img { display: none; }`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Breakpointy je nejlepší nastavit přesně podle šířek konkrétních modelů telefonů.",
+      "answer": false,
+      "explanation": "Breakpoint patří tam, kde se rozvržení obsahu začne rozpadat."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky tvorby webu stylem mobile first.",
+      "items": [
+        "přidat meta viewport",
+        "napsat základní styly pro mobil",
+        "zvětšovat okno a najít, kde se rozvržení rozpadá",
+        "přidat `@media (min-width: …)` se změnami",
+        "otestovat na skutečných zařízeních"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Pravidla mimo jakoukoli media query platí…",
+      "options": [
+        "pro všechny šířky",
+        "jen pro mobil",
+        "jen pro desktop",
+        "pro žádnou šířku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém elementu je meta viewport?",
+      "options": [
+        "`<head>`",
+        "`<body>`",
+        "`<footer>`",
+        "`<nav>`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli přístup mobile first.",
+      "answer": "Nejdřív se napíšou styly pro malý displej bez media query. Pro větší displeje se pravidla přidávají v blocích `@media (min-width: …)`, takže mobil dostane nejjednodušší styly a nic se nepřepisuje."
+    },
+    {
+      "type": "open",
+      "question": "Jaké tři nástroje používá responzivní design?",
+      "answer": "Meta viewport, aby mobil použil skutečnou šířku; pružné jednotky a obrázky (%, rem, vw, max-width: 100%); a media queries, které při breakpointech mění rozvržení."
+    }
+  ]
+}

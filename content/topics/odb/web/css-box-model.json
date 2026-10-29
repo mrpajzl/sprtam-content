@@ -1,0 +1,447 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "css-box-model",
+  "title": "Box model",
+  "emoji": "📦",
+  "explanations": [
+    {
+      "title": "Obraz v rámu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nastavíš tlačítku šířku 200 px, a ono je na obrazovce širší. Nastavíš dvěma odstavcům mezeru 20 px a mezi nimi je zase jen 20 px, ne 40. Obojí má jedno vysvětlení: **box model**."
+        },
+        {
+          "type": "text",
+          "text": "Prohlížeč vidí každý element jako obdélníkovou krabici. Kdo ví, z čeho se krabice skládá, umí přesně spočítat rozměry a rozložení stránky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Box model",
+          "definition": "Způsob, jak CSS chápe každý element: jako krabici ze čtyř vrstev zevnitř ven – obsah, vnitřní okraj, rámeček, vnější okraj.",
+          "example": "Odstavec, obrázek i tlačítko jsou krabice."
+        },
+        {
+          "type": "term",
+          "term": "px (pixel)",
+          "definition": "Základní jednotka délky v CSS. Jeden CSS pixel je pevná malá délka na obrazovce.",
+          "example": "`width: 200px;`"
+        },
+        {
+          "type": "heading",
+          "text": "Obraz v rámu na zdi"
+        },
+        {
+          "type": "text",
+          "text": "Představ si zarámovaný obraz. Uprostřed je malba. Kolem ní bílá paspartu. Pak dřevěný rám. A obrazy na zdi mezi sebou mají volné místo."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Obraz",
+            "CSS",
+            "Vlastnost"
+          ],
+          "rows": [
+            [
+              "malba",
+              "obsah (content)",
+              "`width`, `height`"
+            ],
+            [
+              "paspartu",
+              "vnitřní okraj (padding)",
+              "`padding`"
+            ],
+            [
+              "rám",
+              "rámeček (border)",
+              "`border`"
+            ],
+            [
+              "místo mezi obrazy",
+              "vnější okraj (margin)",
+              "`margin`"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "padding (vnitřní okraj)",
+          "definition": "Prostor mezi obsahem a rámečkem. Má barvu pozadí elementu.",
+          "example": "`padding: 10px;` – 10 px ze všech čtyř stran."
+        },
+        {
+          "type": "term",
+          "term": "border (rámeček)",
+          "definition": "Čára kolem paddingu. Má tloušťku, styl a barvu.",
+          "example": "`border: 2px solid black;`"
+        },
+        {
+          "type": "term",
+          "term": "margin (vnější okraj)",
+          "definition": "Průhledné místo vně rámečku. Odsouvá od elementu sousedy.",
+          "example": "`margin: 20px auto;` – nahoře a dole 20 px, vlevo a vpravo automaticky (vycentruje blok)."
+        },
+        {
+          "type": "heading",
+          "text": "Proč je tlačítko širší"
+        },
+        {
+          "type": "term",
+          "term": "box-sizing",
+          "definition": "Říká, k čemu se vztahuje `width`. Výchozí **content-box**: šířka jen obsahu, padding a border se přičtou. **border-box**: šířka včetně paddingu a borderu.",
+          "example": "Mnoho webů nastaví `* { box-sizing: border-box; }`, aby se rozměry počítaly snadno."
+        },
+        {
+          "type": "example",
+          "question": "`width: 200px; padding: 20px; border: 5px solid;` a výchozí `content-box`. Jak široký je element na obrazovce?",
+          "answer": "Obsah 200 + padding vlevo i vpravo 2 · 20 = 40 + border 2 · 5 = 10. Celkem **250 px**. Margin se do šířky elementu nepočítá, jen kolem něj zabírá místo."
+        },
+        {
+          "type": "example",
+          "question": "Totéž, ale s `box-sizing: border-box`. Jak široký je element a kolik zbude na obsah?",
+          "answer": "Celá krabice včetně paddingu a borderu má **200 px**. Na obsah zbude 200 − 40 − 10 = **150 px**."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Mezera mezi textem a rámečkem: ",
+                "after": "",
+                "options": [
+                  "padding",
+                  "margin",
+                  "border"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Mezera mezi dvěma kartami: ",
+                "after": "",
+                "options": [
+                  "margin",
+                  "padding",
+                  "width"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Čára kolem karty: ",
+                "after": "",
+                "options": [
+                  "border",
+                  "outline-box",
+                  "padding"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Šířka včetně paddingu a borderu: `box-sizing: ",
+                "after": "`",
+                "options": [
+                  "border-box",
+                  "content-box",
+                  "margin-box"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň vlastnost, která danou věc nastavuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dva odstavce pod sebou s `margin: 20px` mají mezi sebou 40 px.",
+          "right": "Mají mezi sebou 20 px. Svislé vnější okraje sousedních blokových elementů se slučují a platí ten větší.",
+          "why": "Tomu se říká slučování okrajů (*margin collapsing*). Vodorovné okraje se neslučují."
+        },
+        {
+          "type": "summary",
+          "text": "Každý element je krabice: obsah, padding, border, margin. Při výchozím `content-box` se padding a border k `width` přičítají, při `border-box` jsou v ní. Svislé marginy sousedních bloků se slučují."
+        }
+      ]
+    },
+    {
+      "title": "Počítáme",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Grafik pošle návrh: karta široká 300 px, uvnitř odsazení 16 px, rámeček 1 px a mezi kartami 24 px. Ty to musíš převést do CSS tak, aby rozměry seděly na pixel. Naučíme se to spočítat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obsah (content)",
+          "definition": "Vnitřek krabice: text nebo obrázek. Jeho rozměry jsou `width` a `height` (při výchozím nastavení).",
+          "example": "`width: 300px;`"
+        },
+        {
+          "type": "term",
+          "term": "Padding, border, margin",
+          "definition": "Padding = vnitřní okraj (uvnitř rámečku, s barvou pozadí). Border = rámeček. Margin = vnější okraj (průhledný, odsouvá sousedy).",
+          "example": "`padding: 16px; border: 1px solid #ccc; margin: 24px;`"
+        },
+        {
+          "type": "term",
+          "term": "Zkrácený zápis",
+          "definition": "Jedna vlastnost pro čtyři strany. Čtyři hodnoty jdou **po směru hodinových ručiček od horní**: nahoře, vpravo, dole, vlevo. Dvě hodnoty = svisle, vodorovně.",
+          "example": "`margin: 10px 20px 30px 40px;` / `padding: 8px 16px;`"
+        },
+        {
+          "type": "term",
+          "term": "Blokový a řádkový element",
+          "definition": "Blokový (`div`, `p`, `h1`) začíná na novém řádku a zabere celou šířku rodiče. Řádkový (`span`, `a`, `strong`) teče v textu a `width`, `height` ani svislé marginy na něj nepůsobí.",
+          "example": "`display: inline-block;` je kompromis: teče v řádku, ale rozměry mu nastavit jde."
+        },
+        {
+          "type": "heading",
+          "text": "Vzorce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "box-sizing",
+            "Šířka na obrazovce",
+            "Šířka obsahu"
+          ],
+          "rows": [
+            [
+              "content-box (výchozí)",
+              "width + padding L + P + border L + P",
+              "width"
+            ],
+            [
+              "border-box",
+              "width",
+              "width − padding L + P − border L + P"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti, jaký je `box-sizing`.",
+            "Rozepiš padding a border na levou a pravou stranu.",
+            "Sečti podle tabulky.",
+            "Margin přičti zvlášť, jen když počítáš celkové místo, které krabice zabere."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "`width: 300px; padding: 16px; border: 1px solid;` (content-box). Šířka na obrazovce?",
+          "answer": "300 + 2 · 16 + 2 · 1 = 300 + 32 + 2 = **334 px**."
+        },
+        {
+          "type": "example",
+          "question": "Grafik chce, aby celá karta měla 300 px. Jak to zařídíš a jak široký pak bude obsah?",
+          "answer": "Nastavím `box-sizing: border-box;` a `width: 300px;`. Obsah: 300 − 32 − 2 = **266 px**. Druhá možnost bez border-box: `width: 266px`."
+        },
+        {
+          "type": "example",
+          "question": "Kolik místa vodorovně zabere karta 334 px s `margin: 0 12px`?",
+          "answer": "334 + 12 + 12 = **358 px**. Margin je vně rámečku, ale místo v řádku zabírá."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`padding: 10px 20px`",
+                "back": "nahoře a dole 10 px, vlevo a vpravo 20 px"
+              },
+              {
+                "front": "`margin: 5px 10px 15px 20px`",
+                "back": "nahoře 5, vpravo 10, dole 15, vlevo 20 px"
+              },
+              {
+                "front": "`margin: 0 auto`",
+                "back": "svisle 0, vodorovně auto: blok s danou šířkou se vycentruje"
+              },
+              {
+                "front": "`border: 3px dashed red`",
+                "back": "červený přerušovaný rámeček 3 px"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Rozlušti zkrácený zápis a teprve pak kartu otoč."
+        },
+        {
+          "type": "heading",
+          "text": "Slučování marginů"
+        },
+        {
+          "type": "text",
+          "text": "Když jsou dva blokové elementy pod sebou, jejich svislé marginy se nesečtou. Výsledná mezera je **větší z nich**. Horní odstavec `margin-bottom: 30px`, dolní `margin-top: 20px` → mezera 30 px."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`margin: 10px 20px` = vlevo 10 px, vpravo 20 px.",
+          "right": "`margin: 10px 20px` = nahoře a dole 10 px, vlevo a vpravo 20 px.",
+          "why": "Zkrácený zápis začíná vždy nahoře. Se dvěma hodnotami je první svislá, druhá vodorovná."
+        },
+        {
+          "type": "summary",
+          "text": "Při `content-box` je skutečná šířka = width + padding + border; při `border-box` je to přímo width. Margin je místo kolem krabice a svislé marginy sousedních bloků se slučují na ten větší. Zkrácený zápis jde od horní strany po směru hodinových ručiček."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď vrstvy box modelu zevnitř ven.",
+      "items": [
+        "obsah (content)",
+        "padding",
+        "border",
+        "margin"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`width: 100px; padding: 10px; border: 2px solid;`, výchozí content-box. Šířka na obrazovce v px =",
+      "answers": [
+        "124"
+      ],
+      "hints": [
+        "Padding i border jsou vlevo i vpravo.",
+        "100 + 2 · 10 + 2 · 2"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`box-sizing: border-box; width: 200px; padding: 15px; border: 5px solid;`. Šířka obsahu v px =",
+      "answers": [
+        "160"
+      ],
+      "hints": [
+        "Při border-box jsou padding a border uvnitř zadané šířky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která vrstva má barvu pozadí elementu?",
+      "options": [
+        "padding",
+        "margin",
+        "obě",
+        "žádná"
+      ],
+      "answer": 0,
+      "explanation": "Margin je vždy průhledný."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dva odstavce pod sebou s `margin: 20px` mají mezi sebou mezeru 40 px.",
+      "answer": false,
+      "explanation": "Svislé marginy se slučují, mezera je 20 px."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená `padding: 5px 15px`?",
+      "options": [
+        "nahoře a dole 5 px, vlevo a vpravo 15 px",
+        "vlevo 5 px, vpravo 15 px",
+        "nahoře 5 px, dole 15 px",
+        "všude 20 px"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "K čemu je `box-sizing: border-box`?",
+      "options": [
+        "aby `width` zahrnovala i padding a border",
+        "aby se margin přičetl k šířce",
+        "aby element dostal rámeček",
+        "aby se zrušilo slučování marginů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj potřebu s vlastností.",
+      "pairs": [
+        [
+          "odsadit text od rámečku",
+          "`padding`"
+        ],
+        [
+          "oddálit dva prvky od sebe",
+          "`margin`"
+        ],
+        [
+          "nakreslit čáru kolem",
+          "`border`"
+        ],
+        [
+          "nastavit šířku obsahu",
+          "`width`"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Horní blok má `margin-bottom: 40px`, dolní `margin-top: 25px`. Jak velká mezera v px mezi nimi bude?",
+      "answers": [
+        "40"
+      ],
+      "hints": [
+        "Svislé marginy sousedních bloků se nesčítají."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na řádkový element `span` nepůsobí vlastnost `width`.",
+      "answer": true,
+      "explanation": "Rozměry jdou nastavit až po změně na `inline-block` nebo `block`."
+    },
+    {
+      "type": "choice",
+      "question": "Jak vycentrovat blok s pevnou šířkou vodorovně?",
+      "options": [
+        "`margin: 0 auto;`",
+        "`padding: auto;`",
+        "`border: center;`",
+        "`margin: center;`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš box model a vysvětli rozdíl mezi content-box a border-box.",
+      "answer": "Každý element je krabice z obsahu, paddingu, borderu a marginu. Při content-boxu `width` udává jen obsah a padding s borderem se přičítají; při border-boxu `width` zahrnuje i padding a border, takže skutečná šířka je přesně zadaná."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi paddingem a marginem?",
+      "answer": "Padding je vnitřní okraj mezi obsahem a rámečkem a má pozadí elementu. Margin je vnější průhledný okraj, který odsouvá sousední elementy; svislé marginy se slučují."
+    }
+  ]
+}

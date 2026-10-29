@@ -1,0 +1,626 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "jak-funguje-web",
+  "title": "Jak funguje web: klient, server, HTTP",
+  "emoji": "🌐",
+  "explanations": [
+    {
+      "title": "Jako pošta",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Napíšeš do prohlížeče *sprtam.cz* a za chvíli vidíš stránku. Mezi tím se odehraje celý rozhovor dvou počítačů. Jeden se ptá, druhý odpovídá."
+        },
+        {
+          "type": "text",
+          "text": "Když tomu rozhovoru rozumíš, víš, proč stránka někdy hlásí „404“, proč má zámek v adresním řádku a kde hledat chybu, když web nejde. Na tom stojí celá práce webového vývojáře."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Klient",
+          "definition": "Program, který o něco **žádá**. Na webu je to skoro vždy prohlížeč (Chrome, Firefox, Safari).",
+          "example": "Tvůj prohlížeč v mobilu je klient."
+        },
+        {
+          "type": "term",
+          "term": "Server",
+          "definition": "Počítač s programem, který **čeká na žádosti** a posílá odpovědi. Běží nepřetržitě, často v datovém centru.",
+          "example": "Počítač, na kterém leží soubory webu školy."
+        },
+        {
+          "type": "term",
+          "term": "Požadavek a odpověď",
+          "definition": "Požadavek (anglicky *request*) posílá klient: „Pošli mi tuhle stránku.“ Odpověď (*response*) posílá server: obsah stránky nebo zprávu, proč to nejde.",
+          "example": "Požadavek: „Dej mi /rozvrh.“ Odpověď: HTML stránka s rozvrhem."
+        },
+        {
+          "type": "heading",
+          "text": "Web jako pošta"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že píšeš dopis do knihovny: „Pošlete mi prosím knihu Babička.“ Na obálku napíšeš adresu knihovny. Pošta dopis doručí, knihovna ho přečte a pošle zpátky balík s knihou, nebo lístek „Tu knihu nemáme“."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pošta",
+            "Web"
+          ],
+          "rows": [
+            [
+              "ty, kdo píše dopis",
+              "klient (prohlížeč)"
+            ],
+            [
+              "knihovna",
+              "server"
+            ],
+            [
+              "adresa na obálce",
+              "URL"
+            ],
+            [
+              "dopis s prosbou",
+              "požadavek HTTP"
+            ],
+            [
+              "balík nebo lístek „nemáme“",
+              "odpověď HTTP se stavovým kódem"
+            ],
+            [
+              "pravidla, jak psát dopis",
+              "protokol HTTP"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Protokol",
+          "definition": "Dohodnutá pravidla, jak spolu dva počítače mluví: kdo začíná, v jakém tvaru se ptá a jak odpovídá.",
+          "example": "HTTP je protokol webu. Díky němu si rozumí jakýkoli prohlížeč s jakýmkoli serverem."
+        },
+        {
+          "type": "term",
+          "term": "HTTP",
+          "definition": "*HyperText Transfer Protocol*. Protokol, kterým si prohlížeč a server posílají požadavky a odpovědi.",
+          "example": "Prohlížeč pošle „GET /index.html“, server odpoví „200 OK“ a pošle stránku."
+        },
+        {
+          "type": "heading",
+          "text": "Adresa: URL"
+        },
+        {
+          "type": "term",
+          "term": "URL",
+          "definition": "*Uniform Resource Locator*, adresa jedné věci na webu. Říká, jakým protokolem, na který server a pro jaký soubor se jde.",
+          "example": "https://www.skola.cz/rozvrh?trida=1A#pondeli"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Část",
+            "V příkladu",
+            "Co znamená"
+          ],
+          "rows": [
+            [
+              "schéma",
+              "https",
+              "jakým protokolem se mluví"
+            ],
+            [
+              "host (doména)",
+              "www.skola.cz",
+              "který server"
+            ],
+            [
+              "cesta",
+              "/rozvrh",
+              "která stránka na serveru"
+            ],
+            [
+              "parametry (query)",
+              "?trida=1A",
+              "upřesnění pro server"
+            ],
+            [
+              "fragment",
+              "#pondeli",
+              "místo na stránce; server ho nedostane, řeší ho prohlížeč"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "DNS",
+          "definition": "*Domain Name System*, „telefonní seznam internetu“. Převádí jméno domény na IP adresu, tedy číslo, podle kterého se server v síti najde.",
+          "example": "Prohlížeč se DNS zeptá na www.skola.cz a dostane třeba 192.0.2.10."
+        },
+        {
+          "type": "heading",
+          "text": "Co server odpoví: stavové kódy"
+        },
+        {
+          "type": "term",
+          "term": "Stavový kód",
+          "definition": "Trojmístné číslo na začátku každé odpovědi. První číslice říká skupinu: 2xx povedlo se, 3xx jdi jinam, 4xx chyba na straně klienta, 5xx chyba na straně serveru.",
+          "example": "404 Not Found: stránka na této adrese neexistuje."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "povedlo se (2xx)",
+              "přesměrování (3xx)",
+              "chyba klienta (4xx)",
+              "chyba serveru (5xx)"
+            ],
+            "items": [
+              {
+                "text": "200 OK",
+                "group": 0
+              },
+              {
+                "text": "201 Created",
+                "group": 0
+              },
+              {
+                "text": "301 Moved Permanently",
+                "group": 1
+              },
+              {
+                "text": "304 Not Modified",
+                "group": 1
+              },
+              {
+                "text": "403 Forbidden",
+                "group": 2
+              },
+              {
+                "text": "404 Not Found",
+                "group": 2
+              },
+              {
+                "text": "500 Internal Server Error",
+                "group": 3
+              },
+              {
+                "text": "503 Service Unavailable",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď kódy do krabiček. Stačí se dívat na první číslici."
+        },
+        {
+          "type": "example",
+          "question": "Napíšeš adresu https://www.skola.cz/rozvrhh (s překlepem). Jaký kód asi dostaneš a čí je to chyba?",
+          "answer": "Server stránku /rozvrhh nemá, takže pošle **404 Not Found**. Kód začíná 4, tedy chyba je v požadavku klienta: špatná adresa. Server funguje."
+        },
+        {
+          "type": "example",
+          "question": "Web školy po aktualizaci vrací všem 500. Kde hledat chybu?",
+          "answer": "Kód **500** začíná 5, chyba je **na serveru**. Požadavky jsou v pořádku, ale program na serveru spadl. Správce se má podívat do logů serveru, ne do prohlížeče žáků."
+        },
+        {
+          "type": "heading",
+          "text": "Zámek v adresním řádku: HTTPS"
+        },
+        {
+          "type": "term",
+          "term": "HTTPS",
+          "definition": "HTTP, které jede uvnitř šifrovaného spojení (TLS). Nikdo po cestě nepřečte ani nezmění, co si klient a server posílají. Server navíc certifikátem dokazuje, že je opravdu ten, za koho se vydává.",
+          "example": "Přihlášení do školního systému musí jít přes https://, jinak by heslo šlo po síti čitelně."
+        },
+        {
+          "type": "text",
+          "text": "U pošty je to rozdíl mezi pohlednicí a zalepenou obálkou. HTTP je pohlednice: každý pošťák ji může přečíst. HTTPS je zalepená obálka."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Web má zámek a https, takže je bezpečný a dá se mu věřit.",
+          "right": "HTTPS jen zaručuje, že spojení je šifrované a že doména patří tomu, kdo má certifikát. Podvodná stránka může mít HTTPS taky.",
+          "why": "Certifikát pro svou doménu si zdarma pořídí kdokoli, i podvodník. Zámek neříká nic o poctivosti obsahu."
+        },
+        {
+          "type": "summary",
+          "text": "Klient (prohlížeč) posílá serveru požadavek HTTP na nějakou URL a server vrátí odpověď se stavovým kódem: 2xx v pořádku, 3xx jinam, 4xx chyba klienta, 5xx chyba serveru. HTTPS je totéž, jen v šifrovaném spojení."
+        }
+      ]
+    },
+    {
+      "title": "Krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Od stisku Enter po hotovou stránku uplyne zlomek sekundy. Za tu dobu proběhne několik přesně daných kroků. Projdeme je jeden po druhém."
+        },
+        {
+          "type": "text",
+          "text": "Kdo zná kroky, umí najít, který z nich selhal. To je základ ladění webu i práce na helpdesku."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Klient a server",
+          "definition": "Klient je program, který žádá (prohlížeč). Server je počítač, který na žádosti čeká a odpovídá. Tomuto rozdělení rolí se říká **model klient–server**.",
+          "example": "Prohlížeč = klient, počítač s webem e-shopu = server."
+        },
+        {
+          "type": "term",
+          "term": "IP adresa",
+          "definition": "Číslo, podle kterého se počítač najde v síti. Je to jako číslo domu.",
+          "example": "192.0.2.10 (IPv4) nebo 2001:db8::10 (IPv6)."
+        },
+        {
+          "type": "term",
+          "term": "Doména a DNS",
+          "definition": "Doména je jméno, které si člověk zapamatuje (skola.cz). DNS je služba, která jméno přeloží na IP adresu.",
+          "example": "skola.cz → 192.0.2.10"
+        },
+        {
+          "type": "term",
+          "term": "Port",
+          "definition": "Číslo „dveří“ na serveru. Jeden server může nabízet víc služeb a každá poslouchá na jiném portu.",
+          "example": "HTTP běží standardně na portu 80, HTTPS na portu 443."
+        },
+        {
+          "type": "term",
+          "term": "HTTP a HTTPS",
+          "definition": "HTTP je protokol (soubor pravidel), kterým prohlížeč žádá o stránky. HTTPS je HTTP uvnitř šifrovaného spojení TLS.",
+          "example": "https://sprtam.cz se načítá přes HTTPS."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta jedné stránky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Prohlížeč rozloží URL: schéma https, host www.skola.cz, cesta /rozvrh.",
+            "Zeptá se DNS na IP adresu hostu www.skola.cz.",
+            "Naváže spojení se serverem na portu 443 (u https).",
+            "Domluví se se serverem na šifrování (TLS) a ověří jeho certifikát.",
+            "Pošle požadavek HTTP: metoda GET, cesta /rozvrh.",
+            "Server požadavek zpracuje a pošle odpověď: stavový kód 200 a HTML.",
+            "Prohlížeč HTML přečte a pro každý obrázek, styl a skript pošle další požadavek.",
+            "Ze všeho poskládá stránku a vykreslí ji."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Metody: co chci se serverem udělat"
+        },
+        {
+          "type": "term",
+          "term": "Metoda HTTP",
+          "definition": "Slovo na začátku požadavku. Říká, co klient chce: číst, poslat, změnit, nebo smazat.",
+          "example": "GET /rozvrh = „dej mi rozvrh“."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "K čemu",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "GET",
+              "získat data, nic nemění",
+              "otevřít stránku, načíst obrázek"
+            ],
+            [
+              "POST",
+              "poslat nová data na server",
+              "odeslat formulář, přidat komentář"
+            ],
+            [
+              "PUT",
+              "nahradit celý záznam",
+              "uložit upravený profil"
+            ],
+            [
+              "PATCH",
+              "změnit část záznamu",
+              "změnit jen e-mail"
+            ],
+            [
+              "DELETE",
+              "smazat",
+              "smazat komentář"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "GET posílá parametry přímo v URL (za otazníkem). Proto se GET nehodí pro hesla: URL se ukládá do historie prohlížeče i do logů serveru. Formulář s heslem se posílá metodou POST, kde jsou data v těle požadavku."
+        },
+        {
+          "type": "heading",
+          "text": "Odpověď: stavové kódy"
+        },
+        {
+          "type": "term",
+          "term": "Stavový kód",
+          "definition": "Trojmístné číslo v odpovědi serveru. Podle první číslice se pozná, jak to dopadlo.",
+          "example": "200 = v pořádku, 404 = nenalezeno."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Skupina",
+            "Význam",
+            "Častý kód"
+          ],
+          "rows": [
+            [
+              "2xx",
+              "úspěch",
+              "200 OK, 201 Created"
+            ],
+            [
+              "3xx",
+              "přesměrování, hledej jinde",
+              "301 Moved Permanently, 304 Not Modified"
+            ],
+            [
+              "4xx",
+              "chyba klienta (špatný požadavek)",
+              "400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found"
+            ],
+            [
+              "5xx",
+              "chyba serveru",
+              "500 Internal Server Error, 503 Service Unavailable"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "401",
+                "back": "Nejsi přihlášený (chybí ověření)."
+              },
+              {
+                "front": "403",
+                "back": "Jsi známý, ale sem nesmíš (zakázáno)."
+              },
+              {
+                "front": "301",
+                "back": "Stránka se trvale přestěhovala na jinou URL."
+              },
+              {
+                "front": "503",
+                "back": "Server je dočasně nedostupný (přetížený, údržba)."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si u každé kartičky nejdřív říct význam nahlas a pak ji otoč."
+        },
+        {
+          "type": "example",
+          "question": "Žák odešle přihlašovací formulář a dostane 401. Je chyba v serveru?",
+          "answer": "Kód začíná **4**, jde o chybu na straně klienta. **401 Unauthorized** znamená, že ověření selhalo nebo chybí. Nejspíš špatné heslo, server funguje správně."
+        },
+        {
+          "type": "example",
+          "question": "Urči části URL https://eshop.cz:8443/kosik?mena=czk#souhrn.",
+          "answer": "Schéma **https**, host **eshop.cz**, port **8443** (uvedený výslovně, jinak by byl 443), cesta **/kosik**, parametr **mena=czk**, fragment **souhrn** (zůstane v prohlížeči)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Chyba 404 znamená, že spadl server.",
+          "right": "404 znamená, že server běží a odpověděl, jen na dané adrese nic nemá.",
+          "why": "Kódy 4xx popisují chybu v požadavku klienta. Když server nefunguje, vrací 5xx, nebo se prohlížeč k němu nepřipojí vůbec."
+        },
+        {
+          "type": "summary",
+          "text": "Prohlížeč přes DNS najde IP adresu serveru, připojí se (u HTTPS šifrovaně na portu 443) a pošle požadavek s metodou, např. GET. Server vrátí stavový kód a obsah. Podle první číslice kódu víš, kde hledat chybu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který program je na webu obvykle klient?",
+      "options": [
+        "webový prohlížeč",
+        "DNS server",
+        "databáze",
+        "webový server"
+      ],
+      "answer": 0,
+      "explanation": "Klient žádá o data. Na webu to dělá prohlížeč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stavový kód 404 znamená, že server spadl.",
+      "answer": false,
+      "explanation": "404 = server běží, ale na této adrese nic nenašel. Chyby serveru jsou 5xx."
+    },
+    {
+      "type": "match",
+      "question": "Spoj stavový kód s jeho významem.",
+      "pairs": [
+        [
+          "200",
+          "v pořádku"
+        ],
+        [
+          "301",
+          "trvale přesunuto"
+        ],
+        [
+          "403",
+          "přístup zakázán"
+        ],
+        [
+          "404",
+          "nenalezeno"
+        ],
+        [
+          "500",
+          "vnitřní chyba serveru"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na kterém portu standardně běží HTTPS? Napiš číslo.",
+      "answers": [
+        "443"
+      ],
+      "explanation": "HTTP používá port 80, HTTPS port 443.",
+      "hints": [
+        "HTTP má port 80. HTTPS má jiný, trojmístný."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která metoda HTTP se používá pro načtení stránky bez změny dat?",
+      "options": [
+        "GET",
+        "POST",
+        "DELETE",
+        "PATCH"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč se přihlašovací formulář neposílá metodou GET?",
+      "options": [
+        "Data by byla v URL, tedy v historii prohlížeče i v logách serveru.",
+        "GET neumí přenášet text.",
+        "GET funguje jen bez HTTPS.",
+        "GET je pomalejší než POST."
+      ],
+      "answer": 0,
+      "explanation": "GET dává parametry do URL za otazník. URL se ukládá na mnoho míst."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje služba, která převádí doménové jméno (např. skola.cz) na IP adresu? Napiš zkratku.",
+      "answers": [
+        "DNS",
+        "Domain Name System"
+      ],
+      "hints": [
+        "Je to „telefonní seznam internetu“.",
+        "Zkratka má tři písmena."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky načtení stránky https://www.skola.cz/ od prvního.",
+      "items": [
+        "Prohlížeč zjistí přes DNS IP adresu serveru.",
+        "Naváže spojení na port 443.",
+        "Domluví šifrování TLS a ověří certifikát.",
+        "Pošle požadavek GET.",
+        "Server vrátí kód 200 a HTML.",
+        "Prohlížeč stránku vykreslí."
+      ],
+      "hints": [
+        "Než se dá někam připojit, musíš znát adresu."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj část URL https://www.skola.cz/rozvrh?trida=1A#pondeli s jejím názvem.",
+      "pairs": [
+        [
+          "https",
+          "schéma"
+        ],
+        [
+          "www.skola.cz",
+          "host"
+        ],
+        [
+          "/rozvrh",
+          "cesta"
+        ],
+        [
+          "?trida=1A",
+          "parametry"
+        ],
+        [
+          "#pondeli",
+          "fragment"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zámek a HTTPS zaručují, že stránka nepatří podvodníkovi.",
+      "answer": false,
+      "explanation": "HTTPS šifruje spojení a ověřuje doménu. Certifikát si ale může pro svou doménu pořídit i podvodník."
+    },
+    {
+      "type": "choice",
+      "question": "Server vrací kód 503. Co to nejspíš znamená?",
+      "options": [
+        "Server je dočasně nedostupný, třeba přetížený nebo v údržbě.",
+        "Uživatel zadal špatné heslo.",
+        "Stránka se přestěhovala.",
+        "Požadavek se povedl."
+      ],
+      "answer": 0,
+      "hints": [
+        "Podívej se na první číslici kódu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou část URL server vůbec nedostane?",
+      "options": [
+        "fragment (#…)",
+        "cestu",
+        "parametry (?…)",
+        "host"
+      ],
+      "answer": 0,
+      "explanation": "Fragment zpracuje jen prohlížeč: posune stránku na dané místo."
+    },
+    {
+      "type": "open",
+      "question": "Popiš model klient–server na příkladu otevření webové stránky.",
+      "answer": "Klient (prohlížeč) pošle serveru požadavek HTTP, např. GET na adresu stránky. Server ho zpracuje a vrátí odpověď se stavovým kódem (např. 200) a obsahem, typicky HTML, které prohlížeč vykreslí."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi HTTP a HTTPS a proč je HTTPS důležité?",
+      "answer": "HTTPS je HTTP přenášené šifrovaným spojením TLS. Nikdo po cestě nemůže obsah číst ani měnit a server prokazuje certifikátem, že doména patří jemu. Bez HTTPS by šla hesla a osobní údaje po síti čitelně."
+    }
+  ]
+}

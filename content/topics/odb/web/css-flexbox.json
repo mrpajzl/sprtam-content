@@ -1,0 +1,436 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "css-flexbox",
+  "title": "Layout: flexbox",
+  "emoji": "↔️",
+  "explanations": [
+    {
+      "title": "Police s knihami",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Menu s pěti odkazy vedle sebe. Tlačítka v patičce rozestavená po celé šířce. Ikona a text, oba přesně uprostřed výšky. Tohle všechno se dřív dělalo složitými triky. Dnes na to stačí **flexbox**."
+        },
+        {
+          "type": "text",
+          "text": "Flexbox rozkládá prvky do **jedné řady** (vodorovné nebo svislé) a rozděluje mezi ně volné místo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Flex kontejner",
+          "definition": "Rodičovský element s `display: flex;`. Řídí, jak se rozloží jeho přímí potomci.",
+          "example": "`nav { display: flex; }`"
+        },
+        {
+          "type": "term",
+          "term": "Flex položka",
+          "definition": "Každý **přímý** potomek flex kontejneru. Vnuci už položkami nejsou.",
+          "example": "Odkazy `a` přímo v `nav` s `display: flex`."
+        },
+        {
+          "type": "heading",
+          "text": "Police s knihami"
+        },
+        {
+          "type": "text",
+          "text": "Kontejner je police, položky jsou knihy. Knihy stojí v řadě zleva doprava. Můžeš je přisunout doleva, doprava, doprostřed nebo rozestavit s mezerami. Taky je můžeš srovnat nahoru, dolů nebo na střed police."
+        },
+        {
+          "type": "term",
+          "term": "Hlavní osa",
+          "definition": "Směr, ve kterém položky jdou za sebou. Určuje ji `flex-direction`: `row` (vodorovně, výchozí) nebo `column` (svisle).",
+          "example": "U `row` je hlavní osa zleva doprava."
+        },
+        {
+          "type": "term",
+          "term": "Vedlejší (příčná) osa",
+          "definition": "Osa kolmá na hlavní. U `row` je svislá.",
+          "example": "U `row` se položky na vedlejší ose srovnávají nahoru, dolů nebo na střed."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vlastnost (na kontejneru)",
+            "Osa",
+            "Časté hodnoty"
+          ],
+          "rows": [
+            [
+              "`justify-content`",
+              "hlavní",
+              "`flex-start`, `center`, `flex-end`, `space-between`, `space-around`, `space-evenly`"
+            ],
+            [
+              "`align-items`",
+              "vedlejší",
+              "`stretch` (výchozí), `flex-start`, `center`, `flex-end`"
+            ],
+            [
+              "`flex-wrap`",
+              "–",
+              "`nowrap` (výchozí, vše v jedné řadě), `wrap` (zalomit na další řádek)"
+            ],
+            [
+              "`gap`",
+              "obě",
+              "mezera mezi položkami, např. `16px`"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hlavička: logo vlevo, menu vpravo, obojí svisle na středu. Napiš CSS pro `header`.",
+          "answer": "`header { display: flex; justify-content: space-between; align-items: center; }`. `space-between` dá první položku k levému a poslední k pravému okraji. `align-items: center` je vycentruje na vedlejší (svislé) ose."
+        },
+        {
+          "type": "example",
+          "question": "Jak dostat jeden element přesně doprostřed boxu vodorovně i svisle?",
+          "answer": "Na rodiče: `display: flex; justify-content: center; align-items: center;`. Rodič musí mít výšku, jinak není kde centrovat svisle."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Položky pod sebou: `flex-direction: ",
+                "after": "`",
+                "options": [
+                  "column",
+                  "row",
+                  "vertical"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Rozestavit po celé šířce, krajní u okrajů: `justify-content: ",
+                "after": "`",
+                "options": [
+                  "space-between",
+                  "center",
+                  "stretch"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Srovnat svisle na střed (u row): `",
+                "after": ": center`",
+                "options": [
+                  "align-items",
+                  "justify-content",
+                  "vertical-align"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Když se nevejdou, zalomit: `flex-wrap: ",
+                "after": "`",
+                "options": [
+                  "wrap",
+                  "break",
+                  "nowrap"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň hodnoty. Pamatuj: justify = hlavní osa, align = vedlejší."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Přepnu na `flex-direction: column` a `justify-content: center` pořád centruje vodorovně.",
+          "right": "U `column` je hlavní osa svislá. `justify-content` teď posouvá položky nahoru a dolů, vodorovně je srovnává `align-items`.",
+          "why": "`justify-content` vždy pracuje na hlavní ose a `align-items` na vedlejší. Změnou směru se osy prohodí."
+        },
+        {
+          "type": "summary",
+          "text": "`display: flex` z rodiče udělá flex kontejner a z přímých potomků položky v jedné řadě. `justify-content` je rozmisťuje na hlavní ose, `align-items` na vedlejší. `flex-direction` určuje, která osa je hlavní."
+        }
+      ]
+    },
+    {
+      "title": "Dělení místa",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš kontejner široký 600 px a v něm tři karty. Mají být stejně široké? Má prostřední růst víc? Co když se okno zúží? Flexbox umí volné místo rozdělit podle pravidel, která mu dáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Flex kontejner a položky",
+          "definition": "Element s `display: flex` je kontejner. Jeho přímí potomci jsou položky, které se řadí za sebou podél hlavní osy.",
+          "example": "`.karty { display: flex; gap: 20px; }`"
+        },
+        {
+          "type": "term",
+          "term": "Hlavní a vedlejší osa",
+          "definition": "Hlavní osa = směr řady (`flex-direction: row` vodorovně, `column` svisle). Vedlejší osa je na ni kolmá.",
+          "example": "`justify-content` řídí hlavní osu, `align-items` vedlejší."
+        },
+        {
+          "type": "term",
+          "term": "Volné místo",
+          "definition": "Kolik zbude v kontejneru na hlavní ose, když od jeho velikosti odečteš základní velikosti položek a mezery.",
+          "example": "Kontejner 600 px, tři položky po 100 px, bez mezer: volno 300 px."
+        },
+        {
+          "type": "heading",
+          "text": "Tři vlastnosti položek"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vlastnost",
+            "Význam",
+            "Výchozí"
+          ],
+          "rows": [
+            [
+              "`flex-basis`",
+              "základní velikost položky na hlavní ose, než se dělí místo",
+              "`auto` (vezme se `width`, případně obsah)"
+            ],
+            [
+              "`flex-grow`",
+              "kolik dílů **volného** místa položka dostane",
+              "`0` (neroste)"
+            ],
+            [
+              "`flex-shrink`",
+              "jak moc se zmenší, když místo chybí",
+              "`1` (smí se zmenšit)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zkratka `flex: 1;` znamená `flex-grow: 1; flex-shrink: 1; flex-basis: 0%`. Když ho dáš všem položkám, budou stejně široké."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti základní velikost každé položky (`flex-basis`, jinak `width`).",
+            "Volné místo = šířka kontejneru − součet základů − mezery `gap`.",
+            "Sečti `flex-grow` všech položek → počet dílů.",
+            "Jeden díl = volné místo : počet dílů.",
+            "Každá položka = základ + její `flex-grow` × díl."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kontejner 600 px, bez gap. Tři položky `width: 100px`, `flex-grow` 1, 1, 2. Jak široké budou?",
+          "answer": "Volno = 600 − 300 = 300 px. Dílů 1 + 1 + 2 = 4, jeden díl 75 px. Šířky: 100 + 75 = **175 px**, **175 px**, 100 + 150 = **250 px**. Kontrola: 175 + 175 + 250 = 600."
+        },
+        {
+          "type": "example",
+          "question": "Kontejner 800 px, `gap: 20px`, čtyři položky s `flex: 1`. Šířka jedné položky?",
+          "answer": "Mezery: tři mezi čtyřmi položkami, 3 · 20 = 60 px. `flex: 1` dá základ 0, takže celé zbylé místo 800 − 60 = 740 px se dělí na 4 díly. Každá položka **185 px**."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`flex: 1`",
+                "back": "rovným dílem si rozdělí místo"
+              },
+              {
+                "front": "`flex-grow: 0`",
+                "back": "položka neroste, zůstane v základní velikosti"
+              },
+              {
+                "front": "`flex-shrink: 0`",
+                "back": "položka se nikdy nezmenší pod základ"
+              },
+              {
+                "front": "`flex-wrap: wrap`",
+                "back": "co se nevejde, přejde na další řádek"
+              },
+              {
+                "front": "`align-self: flex-end`",
+                "back": "jen tahle položka se srovná na konec vedlejší osy"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "U každé kartičky si nejdřív představ, co se na stránce stane, a pak ji otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`flex-grow: 2` znamená, že položka bude dvakrát širší než ta s `flex-grow: 1`.",
+          "right": "`flex-grow: 2` dostane dvakrát víc **volného** místa. Celková šířka záleží i na základní velikosti.",
+          "why": "V příkladu výše má položka s grow 2 šířku 250 px a s grow 1 šířku 175 px, to není dvojnásobek. Dvojnásobek by byl jen při základu 0, tedy s `flex: 1` a `flex: 2`."
+        },
+        {
+          "type": "summary",
+          "text": "Flex položky mají základ (`flex-basis`), růst (`flex-grow`) a smršťování (`flex-shrink`). Volné místo se dělí podle poměru `flex-grow`. `flex: 1` u všech dá stejně široké položky, `flex-wrap: wrap` dovolí zalomení řady."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co udělá `display: flex` na elementu?",
+      "options": [
+        "Z elementu udělá flex kontejner a jeho přímé potomky flex položky.",
+        "Udělá z elementu položku cizího kontejneru.",
+        "Skryje element.",
+        "Rozloží element do mřížky řádků a sloupců."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Flex položkami jsou všichni potomci kontejneru, i vnoučata.",
+      "answer": false,
+      "explanation": "Jen přímí potomci."
+    },
+    {
+      "type": "match",
+      "question": "Spoj vlastnost s tím, co řídí.",
+      "pairs": [
+        [
+          "`justify-content`",
+          "rozmístění na hlavní ose"
+        ],
+        [
+          "`align-items`",
+          "zarovnání na vedlejší ose"
+        ],
+        [
+          "`flex-direction`",
+          "směr hlavní osy"
+        ],
+        [
+          "`flex-wrap`",
+          "zalamování na další řádek"
+        ],
+        [
+          "`gap`",
+          "mezery mezi položkami"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je výchozí hodnota `flex-direction`?",
+      "options": [
+        "`row`",
+        "`column`",
+        "`row-reverse`",
+        "`wrap`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Hlavička má logo vlevo a menu vpravo. Kterou hodnotu `justify-content` použiješ?",
+      "options": [
+        "`space-between`",
+        "`center`",
+        "`flex-start`",
+        "`stretch`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 500 px, bez gap, dvě položky `width: 100px`, `flex-grow` 1 a 2. Šířka druhé položky v px =",
+      "answers": [
+        "300"
+      ],
+      "hints": [
+        "Nejdřív spočítej volné místo.",
+        "Volné místo se dělí na 3 díly."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 620 px, `gap: 10px`, tři položky s `flex: 1`. Šířka jedné položky v px =",
+      "answers": [
+        "200"
+      ],
+      "hints": [
+        "Kolik je mezer mezi třemi položkami?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při `flex-direction: column` posouvá `justify-content` položky svisle.",
+      "answer": true,
+      "explanation": "Hlavní osa je teď svislá a `justify-content` pracuje vždy na hlavní ose."
+    },
+    {
+      "type": "choice",
+      "question": "Jak vycentrovat jeden prvek v boxu vodorovně i svisle pomocí flexboxu?",
+      "options": [
+        "`display: flex; justify-content: center; align-items: center;`",
+        "`display: flex; align: middle;`",
+        "`display: flex; text-align: center;`",
+        "`display: flex; margin: center;`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená `flex-shrink: 0` u obrázku v řadě?",
+      "options": [
+        "Obrázek se při nedostatku místa nezmenší.",
+        "Obrázek nebude růst.",
+        "Obrázek zmizí.",
+        "Obrázek se zalomí na další řádek."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Výchozí hodnota `align-items` je `stretch`, takže se položky natáhnou na výšku řady.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu šířek flex položek.",
+      "items": [
+        "zjistit základní velikosti položek",
+        "spočítat volné místo",
+        "sečíst flex-grow všech položek",
+        "vydělit volné místo počtem dílů",
+        "přičíst každé položce její díly"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi hlavní a vedlejší osou ve flexboxu.",
+      "answer": "Hlavní osa je směr, ve kterém položky jdou za sebou, určený `flex-direction` (row vodorovně, column svisle). Vedlejší osa je na ni kolmá. `justify-content` pracuje na hlavní ose, `align-items` na vedlejší."
+    },
+    {
+      "type": "open",
+      "question": "Jak flexbox rozdělí volné místo mezi položky podle `flex-grow`?",
+      "answer": "Od šířky kontejneru se odečtou základní velikosti položek a mezery. Zbylé volné místo se rozdělí v poměru hodnot `flex-grow` a každá položka dostane svůj podíl navíc k základu."
+    }
+  ]
+}

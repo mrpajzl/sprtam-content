@@ -1,0 +1,454 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "javascript-dom",
+  "title": "DOM: práce se stránkou z JavaScriptu",
+  "emoji": "🌳",
+  "explanations": [
+    {
+      "title": "Rodokmen stránky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klikneš na „Přidat do košíku“ a číslo u košíku se zvýší, aniž by se stránka načetla znovu. JavaScript tu změnil kousek stránky. Aby to šlo, musí stránku „vidět“ v podobě, se kterou umí pracovat. Ta podoba se jmenuje **DOM**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "JavaScript",
+          "definition": "Programovací jazyk, který běží v prohlížeči a dává stránce chování.",
+          "example": "Po kliknutí přepne tmavý režim."
+        },
+        {
+          "type": "term",
+          "term": "DOM",
+          "definition": "*Document Object Model*. Prohlížeč z HTML postaví **strom objektů** v paměti. JavaScript ve stromu hledá, mění, přidává a maže a prohlížeč změnu hned ukáže.",
+          "example": "Změníš text objektu nadpisu a nadpis na obrazovce se přepíše."
+        },
+        {
+          "type": "term",
+          "term": "Uzel a element",
+          "definition": "Uzel je každý kousek stromu: element, text i komentář. Element je uzel, který vznikl ze značky (`<p>`, `<li>`…).",
+          "example": "`<p>Ahoj</p>` = element p a v něm textový uzel „Ahoj“."
+        },
+        {
+          "type": "heading",
+          "text": "Strom jako rodokmen"
+        },
+        {
+          "type": "text",
+          "text": "DOM vypadá jako rodokmen. Úplně nahoře je `document`, pod ním `html` a pod ním dvě větve `head` a `body`. Každá další značka je další větev nebo lístek stromu."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "📄",
+            "➡️",
+            "🌳",
+            "➡️",
+            "🖥️"
+          ],
+          "caption": "HTML soubor → strom DOM v paměti → vykreslená stránka"
+        },
+        {
+          "type": "term",
+          "term": "Rodič, potomek, sourozenec",
+          "definition": "Rodič je element, ve kterém jiný element přímo leží. Potomek (dítě) je element uvnitř. Sourozenci mají stejného rodiče.",
+          "example": "V `<ul><li>A</li><li>B</li></ul>` je `ul` rodič a obě `li` jsou sourozenci."
+        },
+        {
+          "type": "heading",
+          "text": "Najdi, změň, přidej"
+        },
+        {
+          "type": "term",
+          "term": "querySelector",
+          "definition": "Metoda, která najde **první** element podle CSS selektoru. `querySelectorAll` najde **všechny** a vrátí jejich seznam.",
+          "example": "`document.querySelector('#kosik')`, `document.querySelectorAll('.produkt')`"
+        },
+        {
+          "type": "example",
+          "question": "Na stránce je `<span id=\"pocet\">0</span>`. Napiš kód, který po kliknutí na `<button id=\"pridat\">` zvýší číslo o 1.",
+          "answer": "`const pocet = document.querySelector('#pocet');` `const btn = document.querySelector('#pridat');` `btn.addEventListener('click', () => { pocet.textContent = Number(pocet.textContent) + 1; });`. `textContent` je text elementu; protože je to string, převedeme ho na číslo."
+        },
+        {
+          "type": "example",
+          "question": "Přidej do seznamu `<ul id=\"ukoly\">` nový úkol „Nakoupit“.",
+          "answer": "`const li = document.createElement('li');` vytvoří nový element (zatím mimo stránku). `li.textContent = 'Nakoupit';` mu dá text. `document.querySelector('#ukoly').append(li);` ho připojí jako posledního potomka. Teprve teď se objeví na stránce."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Najdi první element s třídou menu: `document.",
+                "after": "('.menu')`",
+                "options": [
+                  "querySelector",
+                  "querySelectorAll",
+                  "getElement"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Změň text bezpečně: `el.",
+                "after": " = 'Hotovo'`",
+                "options": [
+                  "textContent",
+                  "innerHTML",
+                  "value"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Přidej třídu: `el.classList.",
+                "after": "('aktivni')`",
+                "options": [
+                  "add",
+                  "push",
+                  "set"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vytvoř nový odstavec: `document.",
+                "after": "('p')`",
+                "options": [
+                  "createElement",
+                  "newElement",
+                  "querySelector"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň správnou metodu nebo vlastnost."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Text od uživatele vložím do stránky přes `el.innerHTML = komentar;`.",
+          "right": "Text od uživatele vkládej přes `el.textContent = komentar;`.",
+          "why": "`innerHTML` text vyloží jako HTML. Útočník může napsat komentář s kódem a ten se spustí ostatním návštěvníkům. Tomu útoku se říká XSS. `textContent` vloží vždy jen obyčejný text."
+        },
+        {
+          "type": "summary",
+          "text": "DOM je strom objektů, který prohlížeč postaví z HTML. JavaScript v něm hledá (`querySelector`), mění (`textContent`, `classList`), vytváří a připojuje (`createElement`, `append`) a prohlížeč změny hned vykreslí. Text od uživatele patří do `textContent`, ne do `innerHTML`."
+        }
+      ]
+    },
+    {
+      "title": "Recepty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Práce s DOM se skládá ze stále stejných úkonů: najít element, změnit ho, reagovat na událost. Tady je máš jako krátké recepty, které budeš skládat dohromady."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "DOM",
+          "definition": "Strom objektů, který prohlížeč vytvoří z HTML. Každý element je objekt s vlastnostmi a metodami. Změna objektu se hned projeví na stránce.",
+          "example": "`document.title = 'Nový název'` změní text v záložce."
+        },
+        {
+          "type": "term",
+          "term": "Selektor",
+          "definition": "Výraz z CSS, který vybírá elementy: `#id`, `.trida`, `p`, `nav a`.",
+          "example": "`'#formular input'`"
+        },
+        {
+          "type": "term",
+          "term": "Událost a posluchač",
+          "definition": "Událost je něco, co se stane (kliknutí, psaní, odeslání). Posluchač je funkce navázaná přes `addEventListener`. Dostane objekt události s podrobnostmi.",
+          "example": "`form.addEventListener('submit', (e) => { … })`"
+        },
+        {
+          "type": "heading",
+          "text": "Tahák"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Chci",
+            "Kód"
+          ],
+          "rows": [
+            [
+              "najít jeden element",
+              "`document.querySelector('.x')` nebo `document.getElementById('x')`"
+            ],
+            [
+              "najít všechny",
+              "`document.querySelectorAll('.x')` (vrátí seznam, projdeš `for…of`)"
+            ],
+            [
+              "změnit text",
+              "`el.textContent = 'text'`"
+            ],
+            [
+              "vložit HTML (jen důvěryhodné!)",
+              "`el.innerHTML = '<b>tučně</b>'`"
+            ],
+            [
+              "přidat / odebrat / přepnout třídu",
+              "`el.classList.add('x')`, `.remove('x')`, `.toggle('x')`"
+            ],
+            [
+              "změnit styl",
+              "`el.style.color = 'red'`"
+            ],
+            [
+              "vytvořit a připojit",
+              "`const p = document.createElement('p'); rodic.append(p);`"
+            ],
+            [
+              "odstranit",
+              "`el.remove()`"
+            ],
+            [
+              "hodnota pole formuláře",
+              "`input.value`"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Recept: kontrola formuláře"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi formulář a pole: `const form = document.querySelector('form'); const mail = document.querySelector('#mail');`",
+            "Navaž posluchač na `submit`: `form.addEventListener('submit', (e) => { … });`",
+            "Uvnitř zkontroluj hodnotu: `if (!mail.value.includes('@')) { … }`",
+            "Při chybě zastav odeslání: `e.preventDefault();` a zobraz hlášku přes `textContent`.",
+            "Server přesto data zkontroluje znovu – kontrola v prohlížeči jde obejít."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "preventDefault",
+          "definition": "Metoda objektu události. Zruší výchozí chování prohlížeče: formulář se neodešle, odkaz se neotevře.",
+          "example": "`e.preventDefault();`"
+        },
+        {
+          "type": "example",
+          "question": "Tlačítko `#tema` má přepínat tmavý režim. CSS má hotovou třídu `.tmavy` pro `body`. Napiš JS.",
+          "answer": "`document.querySelector('#tema').addEventListener('click', () => { document.body.classList.toggle('tmavy'); });`. `toggle` třídu přidá, když chybí, a odebere, když tam je. Vzhled zůstává v CSS, JS jen přepíná třídu."
+        },
+        {
+          "type": "example",
+          "question": "Všechny odkazy v `nav` mají dostat třídu `odkaz`. Jak?",
+          "answer": "`for (const a of document.querySelectorAll('nav a')) { a.classList.add('odkaz'); }`. `querySelectorAll` vrátí seznam a cyklus `for…of` ho projde. Volat `classList` přímo na seznamu nejde, je to metoda jednoho elementu."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "najde element",
+              "změní element",
+              "reaguje na uživatele"
+            ],
+            "items": [
+              {
+                "text": "`querySelector`",
+                "group": 0
+              },
+              {
+                "text": "`getElementById`",
+                "group": 0
+              },
+              {
+                "text": "`querySelectorAll`",
+                "group": 0
+              },
+              {
+                "text": "`textContent = …`",
+                "group": 1
+              },
+              {
+                "text": "`classList.toggle`",
+                "group": 1
+              },
+              {
+                "text": "`remove()`",
+                "group": 1
+              },
+              {
+                "text": "`addEventListener`",
+                "group": 2
+              },
+              {
+                "text": "`preventDefault()`",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď nástroje podle toho, k čemu slouží."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Skript v `<head>` bez `defer` zavolá `document.querySelector('#menu')` a dostane `null`.",
+          "right": "Skript dej na konec `<body>` nebo mu přidej atribut `defer`.",
+          "why": "Prohlížeč čte HTML shora. Skript v hlavičce běží dřív, než se `#menu` vůbec dostane do DOM."
+        },
+        {
+          "type": "summary",
+          "text": "Recept na DOM: najdi (`querySelector`, `querySelectorAll`), změň (`textContent`, `classList`, `style`, `append`, `remove`), reaguj (`addEventListener`, `preventDefault`). Skript spouštěj až po načtení HTML a vzhled nech v CSS."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je DOM?",
+      "options": [
+        "strom objektů, který prohlížeč postaví z HTML a se kterým pracuje JavaScript",
+        "databáze webu na serveru",
+        "jiný název pro CSS",
+        "soubor s obrázky stránky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co vrátí `document.querySelector('.produkt')`?",
+      "options": [
+        "první element s třídou produkt",
+        "všechny elementy s třídou produkt",
+        "počet elementů",
+        "text elementu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Vkládat text od uživatele přes `innerHTML` je bezpečné.",
+      "answer": false,
+      "explanation": "Text by se vyložil jako HTML a mohl by spustit cizí kód (XSS). Použij `textContent`."
+    },
+    {
+      "type": "match",
+      "question": "Spoj úkol s kódem.",
+      "pairs": [
+        [
+          "změnit text",
+          "`textContent`"
+        ],
+        [
+          "přepnout třídu",
+          "`classList.toggle`"
+        ],
+        [
+          "vytvořit element",
+          "`createElement`"
+        ],
+        [
+          "zastavit odeslání formuláře",
+          "`preventDefault`"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kterou metodou na elementu navážeš funkci na událost? Napiš jen název metody.",
+      "answers": [
+        "addEventListener",
+        "addEventListener()"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč `document.querySelector('#menu')` ve skriptu v `<head>` bez `defer` vrátí `null`?",
+      "options": [
+        "Skript běží dřív, než prohlížeč element `#menu` načte.",
+        "`querySelector` v hlavičce nefunguje.",
+        "Id nejde vyhledávat.",
+        "`null` znamená, že element je skrytý."
+      ],
+      "answer": 0,
+      "hints": [
+        "Prohlížeč čte HTML shora dolů."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Element vytvořený `document.createElement('li')` se na stránce ukáže hned.",
+      "answer": false,
+      "explanation": "Ukáže se až po připojení, např. `seznam.append(li)`."
+    },
+    {
+      "type": "input",
+      "question": "Jakou vlastností přečteš, co uživatel napsal do pole `input`? Napiš jen název.",
+      "answers": [
+        "value",
+        ".value"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Seznam z `querySelectorAll('li')` chceš celý obarvit. Jak?",
+      "options": [
+        "projít ho cyklem `for…of` a nastavit každému prvku",
+        "nastavit `seznam.style.color` přímo",
+        "použít `querySelector` místo něj",
+        "nejde to"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky přidání nové položky do seznamu.",
+      "items": [
+        "najít seznam pomocí `querySelector`",
+        "vytvořit element `createElement('li')`",
+        "nastavit mu text `textContent`",
+        "připojit ho `append`"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V `<ul><li>A</li><li>B</li></ul>` jsou oba `li`…",
+      "options": [
+        "sourozenci se stejným rodičem `ul`",
+        "rodič a potomek",
+        "nesouvisející uzly",
+        "kořeny stromu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je DOM a jak s ním JavaScript pracuje.",
+      "answer": "DOM je strom objektů, který prohlížeč vytvoří z HTML. JavaScript v něm najde element (querySelector), změní ho (textContent, classList) nebo přidá nový (createElement, append) a prohlížeč změnu hned vykreslí."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi `textContent` a `innerHTML` z pohledu bezpečnosti?",
+      "answer": "`textContent` vloží vždy jen obyčejný text. `innerHTML` text vyloží jako HTML, takže vstup od uživatele s kódem by se spustil (XSS). Pro vstup od uživatele se proto používá `textContent`."
+    }
+  ]
+}

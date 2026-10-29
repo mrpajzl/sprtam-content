@@ -1,0 +1,538 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "html-odkazy-tabulky-formulare",
+  "title": "Odkazy, obrázky, tabulky a formuláře",
+  "emoji": "🔗",
+  "explanations": [
+    {
+      "title": "Stavíme stránku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Postavíme stránku školního kroužku robotiky. Bude mít odkaz na školu, fotku robota, tabulku termínů a přihlášku. To jsou čtyři věci, které má skoro každý web."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Element a atribut",
+          "definition": "Element je kus HTML od počáteční po koncovou značku, např. `<p>text</p>`. Atribut je údaj v počáteční značce ve tvaru `název=\"hodnota\"`.",
+          "example": "`<img src=\"robot.jpg\">` – element `img`, atribut `src`."
+        },
+        {
+          "type": "term",
+          "term": "Odkaz (hypertextový odkaz)",
+          "definition": "Klikací text nebo obrázek, který vede na jinou stránku, soubor nebo místo. Píše se elementem `a` s atributem `href` (cíl).",
+          "example": "`<a href=\"https://www.skola.cz\">Web školy</a>`"
+        },
+        {
+          "type": "term",
+          "term": "Absolutní a relativní cesta",
+          "definition": "Absolutní cesta je celá adresa i se schématem a doménou. Relativní cesta se počítá od místa, kde leží aktuální stránka.",
+          "example": "Absolutní: `https://www.skola.cz/krouzky.html`. Relativní: `krouzky.html` nebo `../index.html` (o složku výš)."
+        },
+        {
+          "type": "heading",
+          "text": "1. Odkaz"
+        },
+        {
+          "type": "example",
+          "question": "Přidej odkaz „Zpět na hlavní stránku“ na soubor index.html, který je o složku výš než naše stránka.",
+          "answer": "`<a href=\"../index.html\">Zpět na hlavní stránku</a>`. Dvě tečky a lomítko `../` znamenají „o složku nahoru“."
+        },
+        {
+          "type": "text",
+          "text": "Atribut `target=\"_blank\"` otevře odkaz v nové záložce. Používej ho střídmě: uživatele to může mást."
+        },
+        {
+          "type": "heading",
+          "text": "2. Obrázek"
+        },
+        {
+          "type": "term",
+          "term": "Element img a atribut alt",
+          "definition": "`img` vloží obrázek, `src` říká, kde soubor je. `alt` je **náhradní text**: přečte ho čtečka obrazovky a zobrazí se, když se obrázek nenačte.",
+          "example": "`<img src=\"robot.jpg\" alt=\"Robot z Lega sleduje černou čáru\">`"
+        },
+        {
+          "type": "text",
+          "text": "`img` je prázdný element, koncovou značku nemá. Čistě ozdobný obrázek dostane prázdný `alt=\"\"`, aby ho čtečka přeskočila."
+        },
+        {
+          "type": "heading",
+          "text": "3. Tabulka"
+        },
+        {
+          "type": "term",
+          "term": "Tabulka v HTML",
+          "definition": "`table` je celá tabulka, `tr` řádek, `th` záhlaví (nadpis sloupce nebo řádku), `td` obyčejná buňka s daty.",
+          "example": "`<tr><th>Den</th><th>Čas</th></tr>`"
+        },
+        {
+          "type": "example",
+          "question": "Zapiš tabulku: záhlaví Den, Čas; řádek Středa, 14:00.",
+          "answer": "`<table>` `<tr><th>Den</th><th>Čas</th></tr>` `<tr><td>Středa</td><td>14:00</td></tr>` `</table>`. První řádek tvoří buňky `th`, protože jde o nadpisy sloupců."
+        },
+        {
+          "type": "heading",
+          "text": "4. Formulář"
+        },
+        {
+          "type": "term",
+          "term": "Formulář",
+          "definition": "Element `form` sbírá data od uživatele a odešle je na server. `action` říká kam, `method` jakou metodou HTTP (GET nebo POST).",
+          "example": "`<form action=\"/prihlaska\" method=\"post\">`"
+        },
+        {
+          "type": "term",
+          "term": "input, label, name",
+          "definition": "`input` je políčko; jeho `type` určuje druh (text, email, password, number, checkbox, radio…). `name` je jméno, pod kterým hodnota odejde na server. `label` je popisek; přes `for` se propojí s `id` políčka.",
+          "example": "`<label for=\"jmeno\">Jméno</label> <input id=\"jmeno\" name=\"jmeno\" type=\"text\" required>`"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Pole pro e-mail: `<input type=\"",
+                "after": "\">`",
+                "options": [
+                  "email",
+                  "mail",
+                  "text-email"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pole pro heslo: `<input type=\"",
+                "after": "\">`",
+                "options": [
+                  "password",
+                  "secret",
+                  "hidden"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Políčko musí být vyplněné: atribut `",
+                "after": "`",
+                "options": [
+                  "required",
+                  "needed",
+                  "must"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Popisek propojený s polem: `<label ",
+                "after": "=\"jmeno\">`",
+                "options": [
+                  "for",
+                  "name",
+                  "href"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň správné hodnoty. Všechna slova jsou anglická, jako v opravdovém kódu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Atribut `required` a `type=\"email\"` zajistí, že na server přijdou jen správná data.",
+          "right": "Kontrola v prohlížeči je jen pohodlí pro uživatele. Server musí data zkontrolovat znovu.",
+          "why": "Útočník může poslat požadavek přímo, mimo formulář, nebo kontrolu v prohlížeči vypnout."
+        },
+        {
+          "type": "summary",
+          "text": "Odkaz `a href`, obrázek `img src alt`, tabulka `table` – `tr` – `th`/`td`, formulář `form action method` s poli `input` (type, name) a popisky `label for`. Alt a label nejsou ozdoba: bez nich stránku nepoužije člověk se čtečkou."
+        }
+      ]
+    },
+    {
+      "title": "Tahák",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tyhle čtyři skupiny elementů napíšeš na webu stokrát. Tady je máš přehledně: co dělá který element, jaké má důležité atributy a kde se nejčastěji chybuje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Atribut",
+          "definition": "Doplňující údaj v počáteční značce elementu: `název=\"hodnota\"`.",
+          "example": "V `<a href=\"kontakt.html\">` je atribut `href`."
+        },
+        {
+          "type": "term",
+          "term": "Prázdný element",
+          "definition": "Element bez obsahu a bez koncové značky.",
+          "example": "`<img>`, `<input>`, `<br>`"
+        },
+        {
+          "type": "term",
+          "term": "Cesta k souboru",
+          "definition": "Kde soubor leží. **Absolutní** = celá URL. **Relativní** = od složky aktuální stránky; `../` je o složku výš, `/` na začátku znamená kořen webu.",
+          "example": "`obrazky/logo.png`, `../index.html`, `/kontakt.html`"
+        },
+        {
+          "type": "heading",
+          "text": "Odkazy a obrázky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zápis",
+            "Co udělá"
+          ],
+          "rows": [
+            [
+              "`<a href=\"https://example.com\">`",
+              "odkaz na jiný web (absolutní cesta)"
+            ],
+            [
+              "`<a href=\"kontakt.html\">`",
+              "odkaz na soubor ve stejné složce"
+            ],
+            [
+              "`<a href=\"#rozvrh\">`",
+              "skok na element s `id=\"rozvrh\"` na téže stránce"
+            ],
+            [
+              "`<a href=\"mailto:info@skola.cz\">`",
+              "otevře nový e-mail"
+            ],
+            [
+              "`<img src=\"a.jpg\" alt=\"popis\">`",
+              "obrázek s náhradním textem"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tabulky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`table` – celá tabulka",
+            "`tr` (*table row*) – řádek",
+            "`th` (*table header*) – buňka záhlaví",
+            "`td` (*table data*) – buňka s daty",
+            "`caption` – nadpis tabulky",
+            "`colspan` / `rowspan` – buňka přes víc sloupců / řádků"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tabulka je na **data** (rozvrh, ceník, výsledky). Na rozvržení stránky se nepoužívá, na to je CSS."
+        },
+        {
+          "type": "heading",
+          "text": "Formuláře"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Element / atribut",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "`form action=\"/x\" method=\"post\"`",
+              "kam a jak se data odešlou"
+            ],
+            [
+              "`input type=\"text\"`",
+              "jednořádkový text"
+            ],
+            [
+              "`input type=\"email\"`, `\"password\"`, `\"number\"`",
+              "e-mail, skryté heslo, číslo"
+            ],
+            [
+              "`input type=\"checkbox\"` / `\"radio\"`",
+              "zaškrtávátko / jedna volba z několika"
+            ],
+            [
+              "`select` + `option`",
+              "rozbalovací seznam"
+            ],
+            [
+              "`textarea`",
+              "víceřádkový text"
+            ],
+            [
+              "`button type=\"submit\"`",
+              "tlačítko odeslat"
+            ],
+            [
+              "`name`",
+              "jméno hodnoty pro server"
+            ],
+            [
+              "`label for=\"id\"`",
+              "popisek propojený s polem"
+            ],
+            [
+              "`required`",
+              "pole je povinné"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Napiš `form` s `action` a `method` (u osobních údajů POST).",
+            "Pro každý údaj přidej `label` a `input` se správným `type`.",
+            "Každému poli dej `id` (pro label) a `name` (pro server).",
+            "Povinná pole označ `required`.",
+            "Na konec dej `<button type=\"submit\">`."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "tabulka",
+              "formulář",
+              "odkaz a obrázek"
+            ],
+            "items": [
+              {
+                "text": "`td`",
+                "group": 0
+              },
+              {
+                "text": "`th`",
+                "group": 0
+              },
+              {
+                "text": "`tr`",
+                "group": 0
+              },
+              {
+                "text": "`input`",
+                "group": 1
+              },
+              {
+                "text": "`label`",
+                "group": 1
+              },
+              {
+                "text": "`textarea`",
+                "group": 1
+              },
+              {
+                "text": "`href`",
+                "group": 2
+              },
+              {
+                "text": "`alt`",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď elementy a atributy do skupin, kam patří."
+        },
+        {
+          "type": "example",
+          "question": "Je stránka v `krouzky/robotika.html`. Jak z ní odkážeš na `obrazky/robot.jpg` v kořeni webu dvěma způsoby?",
+          "answer": "Relativně: `../obrazky/robot.jpg` (o složku výš, pak do složky obrazky). Od kořene webu: `/obrazky/robot.jpg`."
+        },
+        {
+          "type": "example",
+          "question": "Napiš přihlášku: povinný e-mail a výběr dne (středa, čtvrtek) přepínači.",
+          "answer": "`<form action=\"/prihlaska\" method=\"post\">` `<label for=\"mail\">E-mail</label> <input id=\"mail\" name=\"email\" type=\"email\" required>` `<label><input type=\"radio\" name=\"den\" value=\"st\"> Středa</label>` `<label><input type=\"radio\" name=\"den\" value=\"ct\"> Čtvrtek</label>` `<button type=\"submit\">Odeslat</button></form>`. Přepínače mají stejné `name`, proto jde vybrat jen jeden."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`<img src=\"graf.png\">` – alt nepotřebuji, obrázek je přece vidět.",
+          "right": "`<img src=\"graf.png\" alt=\"Graf: počet členů vzrostl z 8 na 15\">`",
+          "why": "Nevidomý uživatel obrázek nevidí, čtečka přečte jen alt. Alt se ukáže i tehdy, když se obrázek nenačte."
+        },
+        {
+          "type": "summary",
+          "text": "Odkaz `a href` (absolutní nebo relativní cesta), obrázek `img` vždy s `alt`, tabulka jen na data (`tr`, `th`, `td`), formulář `form` s `action` a `method`, pole `input` se správným `type`, `name` a popiskem `label`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který atribut určuje cíl odkazu?",
+      "options": [
+        "`href`",
+        "`src`",
+        "`target`",
+        "`link`"
+      ],
+      "answer": 0,
+      "explanation": "`src` je zdroj obrázku, `target` říká, kde se odkaz otevře."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje atribut obrázku s náhradním textem pro čtečky obrazovky? Napiš jen název.",
+      "answers": [
+        "alt"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Cesta `../index.html` vede na soubor index.html o složku výš.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj element tabulky s významem.",
+      "pairs": [
+        [
+          "`table`",
+          "celá tabulka"
+        ],
+        [
+          "`tr`",
+          "řádek"
+        ],
+        [
+          "`th`",
+          "buňka záhlaví"
+        ],
+        [
+          "`td`",
+          "buňka s daty"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak správně propojit popisek s polem `<input id=\"vek\">`?",
+      "options": [
+        "`<label for=\"vek\">Věk</label>`",
+        "`<label name=\"vek\">Věk</label>`",
+        "`<label href=\"vek\">Věk</label>`",
+        "`<label id=\"vek\">Věk</label>`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Atribut popisku musí ukazovat na `id` pole."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým atributem pole se určuje jméno, pod kterým hodnota odejde na server?",
+      "options": [
+        "`name`",
+        "`id`",
+        "`value`",
+        "`for`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Atribut `required` stačí, aby server nikdy nedostal prázdnou hodnotu.",
+      "answer": false,
+      "explanation": "Kontrolu v prohlížeči jde obejít. Server musí data ověřit sám."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou metodou HTTP se má odeslat formulář s heslem?",
+      "options": [
+        "POST",
+        "GET",
+        "HEAD",
+        "na metodě nezáleží"
+      ],
+      "answer": 0,
+      "hints": [
+        "Při jedné z metod jsou data vidět v URL."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakou hodnotu atributu `type` má pole `input` pro heslo?",
+      "answers": [
+        "password"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy se hodí HTML tabulka?",
+      "options": [
+        "pro tabulková data, např. rozvrh nebo ceník",
+        "pro rozvržení celé stránky do sloupců",
+        "pro menu",
+        "pro formulář"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ pole s použitím.",
+      "pairs": [
+        [
+          "`checkbox`",
+          "souhlas s podmínkami"
+        ],
+        [
+          "`radio`",
+          "jedna volba z několika"
+        ],
+        [
+          "`email`",
+          "e-mailová adresa"
+        ],
+        [
+          "`number`",
+          "počet kusů"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký `alt` má mít čistě ozdobný obrázek (ornament)?",
+      "options": [
+        "prázdný `alt=\"\"`",
+        "`alt=\"obrázek\"`",
+        "žádný atribut alt",
+        "název souboru"
+      ],
+      "answer": 0,
+      "explanation": "Prázdný alt řekne čtečce, ať obrázek přeskočí."
+    },
+    {
+      "type": "open",
+      "question": "K čemu slouží atribut `alt` u obrázku a jak ho napsat dobře?",
+      "answer": "Alt je náhradní text: čte ho čtečka obrazovky a zobrazí se, když se obrázek nenačte. Má stručně říct, co obrázek sděluje; ozdobný obrázek má prázdný alt."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, z čeho se skládá jednoduchý přihlašovací formulář.",
+      "answer": "Element `form` s `action` (kam) a `method=\"post\"`. Uvnitř popisky `label` propojené přes `for` s poli `input` typu text/email a password, každé s `name`, a tlačítko `button type=\"submit\"`."
+    }
+  ]
+}

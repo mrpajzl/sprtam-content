@@ -1,0 +1,488 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "javascript-zaklady",
+  "title": "JavaScript: základy",
+  "emoji": "⚡",
+  "explanations": [
+    {
+      "title": "Kalkulačka spropitného",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "HTML dělá kostru, CSS vzhled. Když ale chceš, aby stránka po kliknutí něco **udělala** (spočítala, ukázala, schovala), potřebuješ program. Ten se na webu píše v **JavaScriptu**."
+        },
+        {
+          "type": "text",
+          "text": "Postavíme malou kalkulačku spropitného. Při tom poznáš všechno základní: proměnné, výpočty, podmínky, funkce a reakci na kliknutí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "JavaScript (JS)",
+          "definition": "Programovací jazyk, který běží přímo v prohlížeči. S Javou nemá kromě podobného jména nic společného.",
+          "example": "Na stránku se vloží elementem `<script src=\"app.js\"></script>`, obvykle na konec `<body>` nebo s atributem `defer`."
+        },
+        {
+          "type": "term",
+          "term": "Proměnná",
+          "definition": "Pojmenovaná „krabička“ na hodnotu. `const` = hodnota se znovu nepřiřadí. `let` = hodnotu jde později změnit. Starší `var` se v novém kódu nepoužívá.",
+          "example": "`const sazba = 0.1;` `let celkem = 0;`"
+        },
+        {
+          "type": "term",
+          "term": "Konzole",
+          "definition": "Panel v nástrojích pro vývojáře (F12). `console.log(x)` do něj vypíše hodnotu; slouží k ladění.",
+          "example": "`console.log(celkem);`"
+        },
+        {
+          "type": "heading",
+          "text": "Krok 1: hodnoty a výpočet"
+        },
+        {
+          "type": "term",
+          "term": "Datový typ",
+          "definition": "Druh hodnoty. Základní: **number** (číslo), **string** (text v uvozovkách), **boolean** (`true`/`false`), **undefined** (zatím bez hodnoty), **null** (záměrně nic), **object** (složená data, i pole).",
+          "example": "`450` je number, `\"450\"` je string."
+        },
+        {
+          "type": "example",
+          "question": "Účet je 450 Kč, spropitné 10 %. Spočítej celkovou částku v JS.",
+          "answer": "`const ucet = 450;` `const sazba = 0.1;` `const celkem = ucet + ucet * sazba;` `console.log(celkem);` → **495**. Násobení má přednost před sčítáním, jako v matematice."
+        },
+        {
+          "type": "heading",
+          "text": "Krok 2: podmínka"
+        },
+        {
+          "type": "term",
+          "term": "Podmínka if / else",
+          "definition": "Kód v `if (podmínka) { … }` se provede, jen když je podmínka pravdivá. Jinak se provede větev `else`.",
+          "example": "`if (celkem > 1000) { … } else { … }`"
+        },
+        {
+          "type": "term",
+          "term": "Porovnání === a ==",
+          "definition": "`===` porovná hodnotu **i typ**. `==` před porovnáním typy převádí, a to vede k překvapením. Používej `===` a `!==`.",
+          "example": "`5 === \"5\"` je `false`, ale `5 == \"5\"` je `true`."
+        },
+        {
+          "type": "heading",
+          "text": "Krok 3: funkce"
+        },
+        {
+          "type": "term",
+          "term": "Funkce",
+          "definition": "Pojmenovaný kus kódu, který jde spustit opakovaně. Dostane **parametry** (vstupy) a příkazem `return` vrátí výsledek.",
+          "example": "`function spropitne(ucet, sazba) { return ucet * sazba; }`"
+        },
+        {
+          "type": "example",
+          "question": "Napiš funkci, která vrátí celkovou částku a zaokrouhlí ji na celé koruny. Kolik vrátí pro 389 Kč a 15 %?",
+          "answer": "`function celkem(ucet, procenta) { return Math.round(ucet * (1 + procenta / 100)); }`. Pro `celkem(389, 15)`: 389 · 1,15 = 447,35 → zaokrouhleno **447**."
+        },
+        {
+          "type": "heading",
+          "text": "Krok 4: reakce na kliknutí"
+        },
+        {
+          "type": "term",
+          "term": "Událost a posluchač",
+          "definition": "Událost je něco, co se na stránce stane: kliknutí (`click`), psaní (`input`), odeslání formuláře (`submit`). Posluchač je funkce, kterou na událost navážeš metodou `addEventListener`.",
+          "example": "`tlacitko.addEventListener('click', spocitej);`"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi tlačítko: `const btn = document.querySelector('#spocitej');`",
+            "Napiš funkci `spocitej`, která přečte hodnoty, spočítá a zobrazí výsledek.",
+            "Navaž ji na kliknutí: `btn.addEventListener('click', spocitej);`",
+            "Pozor: funkci předáváš bez závorek. `spocitej()` by ji spustilo hned."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "number",
+              "string",
+              "boolean"
+            ],
+            "items": [
+              {
+                "text": "`42`",
+                "group": 0
+              },
+              {
+                "text": "`3.14`",
+                "group": 0
+              },
+              {
+                "text": "`\"42\"`",
+                "group": 1
+              },
+              {
+                "text": "`'ahoj'`",
+                "group": 1
+              },
+              {
+                "text": "`true`",
+                "group": 2
+              },
+              {
+                "text": "`10 > 3`",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď hodnoty podle datového typu. Pozor na uvozovky."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hodnota z políčka `\"450\"` plus `50` dá 500.",
+          "right": "`\"450\" + 50` dá text `\"45050\"`. Nejdřív převeď na číslo: `Number(\"450\") + 50` = 500.",
+          "why": "Hodnota z formuláře je vždy string. Operátor `+` se stringem spojuje texty místo sčítání."
+        },
+        {
+          "type": "summary",
+          "text": "JavaScript dává stránce chování. Hodnoty ukládáš do proměnných (`const`, `let`), rozhoduješ podmínkou `if` s porovnáním `===`, opakovaný kód balíš do funkcí s `return` a na akce uživatele reaguješ přes `addEventListener`."
+        }
+      ]
+    },
+    {
+      "title": "Přehled jazyka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Programovací jazyk je jako stavebnice: má pár druhů dílků a z nich se skládá všechno. Tady jsou dílky JavaScriptu přehledně, každý s krátkou ukázkou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "JavaScript",
+          "definition": "Programovací jazyk webových stránek. Prohlížeč ho spouští a skript může měnit obsah stránky a reagovat na uživatele.",
+          "example": "`<script src=\"app.js\" defer></script>` v `<head>`."
+        },
+        {
+          "type": "term",
+          "term": "Příkaz a výraz",
+          "definition": "Výraz je kus kódu, který má hodnotu (`2 + 3`). Příkaz je pokyn, co udělat (`let x = 2 + 3;`). Příkazy se ukončují středníkem.",
+          "example": "`console.log(2 + 3);` vypíše 5."
+        },
+        {
+          "type": "term",
+          "term": "Proměnná",
+          "definition": "Pojmenovaná hodnota. `let` – smí se přepsat, `const` – nesmí se znovu přiřadit.",
+          "example": "`let body = 0; body = body + 10;`"
+        },
+        {
+          "type": "heading",
+          "text": "Datové typy a operátory"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Příklad",
+            "Poznámka"
+          ],
+          "rows": [
+            [
+              "number",
+              "`7`, `3.5`, `-2`",
+              "celá i desetinná čísla, desetinná tečka"
+            ],
+            [
+              "string",
+              "`'Ahoj'`, `\"Ahoj\"`, `` `Ahoj ${jmeno}` ``",
+              "text; ve zpětných apostrofech jde vkládat hodnoty"
+            ],
+            [
+              "boolean",
+              "`true`, `false`",
+              "pravda / nepravda"
+            ],
+            [
+              "undefined",
+              "`let x;`",
+              "proměnná bez hodnoty"
+            ],
+            [
+              "null",
+              "`let vybrany = null;`",
+              "záměrně prázdná hodnota"
+            ],
+            [
+              "object, pole",
+              "`{ jmeno: 'Eva' }`, `[1, 2, 3]`",
+              "složená data"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operátor",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "`+ - * / %`",
+              "počty; `%` je zbytek po dělení"
+            ],
+            [
+              "`===`, `!==`",
+              "rovná se / nerovná se (i typem)"
+            ],
+            [
+              "`< > <= >=`",
+              "porovnání"
+            ],
+            [
+              "`&&`, `||`, `!`",
+              "a zároveň, nebo, negace"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Řízení běhu"
+        },
+        {
+          "type": "term",
+          "term": "Podmínka",
+          "definition": "`if (podmínka) { … } else { … }` – provede jednu z větví podle toho, zda je podmínka pravdivá.",
+          "example": "`if (vek >= 18) { … }`"
+        },
+        {
+          "type": "term",
+          "term": "Cyklus",
+          "definition": "Opakuje kód. `for` se hodí, když víš kolikrát; `while`, dokud platí podmínka; `for…of` projde všechny prvky pole.",
+          "example": "`for (let i = 1; i <= 3; i++) { console.log(i); }` vypíše 1, 2, 3."
+        },
+        {
+          "type": "term",
+          "term": "Funkce",
+          "definition": "Pojmenovaný blok kódu s parametry. `return` vrátí výsledek a funkci ukončí. Zapisuje se klasicky nebo jako šipková funkce.",
+          "example": "`function dvakrat(x) { return x * 2; }` nebo `const dvakrat = (x) => x * 2;`"
+        },
+        {
+          "type": "term",
+          "term": "Událost",
+          "definition": "Něco, co se stane na stránce (kliknutí, psaní, odeslání). `prvek.addEventListener('click', funkce)` zařídí, že se funkce spustí při každém kliknutí.",
+          "example": "`btn.addEventListener('click', () => console.log('klik'));`"
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše: `let soucet = 0; for (const n of [4, 7, 9]) { if (n % 2 === 1) { soucet += n; } } console.log(soucet);`",
+          "answer": "Cyklus projde 4, 7, 9. Podmínka `n % 2 === 1` platí pro lichá čísla: 7 a 9. `soucet` = 0 + 7 + 9 = **16**."
+        },
+        {
+          "type": "example",
+          "question": "Co vypíšou `console.log('5' + 3)`, `console.log('5' - 3)` a `console.log(5 === '5')`?",
+          "answer": "**'53'** – `+` se stringem spojuje texty. **2** – `-` text převede na číslo. **false** – `===` porovnává i typ a number není string."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`10 % 3`",
+                "back": "1 (zbytek po dělení)"
+              },
+              {
+                "front": "`typeof 'abc'`",
+                "back": "'string'"
+              },
+              {
+                "front": "`true && false`",
+                "back": "false"
+              },
+              {
+                "front": "`!true`",
+                "back": "false"
+              },
+              {
+                "front": "`let x; console.log(x);`",
+                "back": "undefined"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Nejdřív si výsledek tipni v hlavě, pak kartu otoč. V konzoli prohlížeče (F12) si to můžeš i vyzkoušet."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`const pocet = 1; pocet = pocet + 1;` – vždyť je to proměnná.",
+          "right": "Hodnotu, kterou budeš měnit, deklaruj přes `let`: `let pocet = 1; pocet = pocet + 1;`",
+          "why": "`const` zakazuje nové přiřazení. Druhý řádek skončí chybou *TypeError: Assignment to constant variable*."
+        },
+        {
+          "type": "summary",
+          "text": "Základ JS: proměnné (`let`, `const`), typy (number, string, boolean, undefined, null, object), operátory s porovnáním `===`, podmínky, cykly, funkce s `return` a události přes `addEventListener`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kterým klíčovým slovem deklaruješ proměnnou, jejíž hodnotu budeš později měnit?",
+      "options": [
+        "`let`",
+        "`const`",
+        "`function`",
+        "`return`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `console.log('5' + 3)`? Napiš výsledek bez uvozovek.",
+      "answers": [
+        "53"
+      ],
+      "hints": [
+        "Jeden z operandů je text.",
+        "Co dělá `+`, když je jeden z operandů string?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `console.log(17 % 5)`?",
+      "answers": [
+        "2"
+      ],
+      "hints": [
+        "`%` není procento."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "`5 === '5'` má hodnotu `true`.",
+      "answer": false,
+      "explanation": "`===` porovnává i typ; number není string."
+    },
+    {
+      "type": "match",
+      "question": "Spoj hodnotu s datovým typem.",
+      "pairs": [
+        [
+          "`42`",
+          "number"
+        ],
+        [
+          "`'42'`",
+          "string"
+        ],
+        [
+          "`false`",
+          "boolean"
+        ],
+        [
+          "`let a;` (hodnota a)",
+          "undefined"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč psát `btn.addEventListener('click', spocitej)` a ne `…('click', spocitej())`?",
+      "options": [
+        "Se závorkami by se funkce spustila hned a předal by se jen její výsledek.",
+        "Závorky v JS nejsou povolené.",
+        "Bez závorek je to rychlejší, jinak stejné.",
+        "Se závorkami by se funkce spouštěla dvakrát."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `function f(x) { return x * 2 + 1; }` při volání `f(4)`?",
+      "answers": [
+        "9"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane po `const a = 1; a = 2;`?",
+      "options": [
+        "Chyba: konstantě nelze znovu přiřadit hodnotu.",
+        "a bude 2.",
+        "a bude 1 a nic se nestane.",
+        "a bude undefined."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát se vypíše text? `for (let i = 0; i < 4; i++) { console.log('Ahoj'); }`",
+      "answers": [
+        "4",
+        "čtyřikrát",
+        "ctyrikrat"
+      ],
+      "hints": [
+        "Vypiš si hodnoty i, pro které podmínka platí."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hodnota z textového pole formuláře je v JavaScriptu vždy typu string.",
+      "answer": true,
+      "explanation": "Proto se před počítáním převádí, např. `Number(pole.value)`."
+    },
+    {
+      "type": "choice",
+      "question": "Která událost nastane při kliknutí na tlačítko?",
+      "options": [
+        "`click`",
+        "`submit`",
+        "`input`",
+        "`load`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak navázat výpočet na tlačítko.",
+      "items": [
+        "najít tlačítko pomocí `querySelector`",
+        "napsat funkci s výpočtem",
+        "navázat funkci na událost `click` přes `addEventListener`",
+        "kliknout a zkontrolovat výsledek v konzoli"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi `let` a `const`?",
+      "answer": "Obě deklarují proměnnou. Proměnné z `let` jde později přiřadit novou hodnotu, proměnné z `const` ne. Výchozí volba je `const`, `let` se použije, když se hodnota mění."
+    },
+    {
+      "type": "open",
+      "question": "Proč se doporučuje `===` místo `==`?",
+      "answer": "`==` před porovnáním převádí typy, takže `5 == '5'` je pravda a vznikají nečekané výsledky. `===` porovnává hodnotu i typ, chování je předvídatelné."
+    }
+  ]
+}
