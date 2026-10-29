@@ -1,0 +1,425 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ekzemy-alergie",
+  "title": "Ekzémy a alergie",
+  "emoji": "🤧",
+  "explanations": [
+    {
+      "title": "Když kůže reaguje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klientce si po nové barvě na řasy oteklo víčko. Jinému klientovi po krému zčervenaly tváře. A kolegyni po letech práce v salonu popraskaly ruce. Všechno to jsou zánětlivé reakce kůže."
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička pracuje s desítkami látek, které mohou kůži dráždit nebo vyvolat alergii. Musí umět reakci rozpoznat, předcházet jí a vědět, kdy volat pomoc."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Alergie",
+          "definition": "Přehnaná reakce obranného (imunitního) systému na látku, která je pro většinu lidí neškodná.",
+          "example": "Pyl, nikl nebo barva na vlasy."
+        },
+        {
+          "type": "term",
+          "term": "Alergen",
+          "definition": "Látka, která u citlivého člověka vyvolá alergii.",
+          "example": "Nikl v náušnicích."
+        },
+        {
+          "type": "term",
+          "term": "Senzibilizace",
+          "definition": "První setkání s alergenem, při kterém se tělo „naučí“ na látku reagovat. Napoprvé obvykle nevidíš nic, reakce přijde až při dalším kontaktu.",
+          "example": "Někdo si barví vlasy roky bez potíží a pak najednou dostane alergii."
+        },
+        {
+          "type": "term",
+          "term": "Dermatitida (ekzém)",
+          "definition": "Zánět kůže se svěděním, zarudnutím, puchýřky, mokváním a později olupováním.",
+          "example": "Svědivé zarudlé ruce po práci s čisticími prostředky."
+        },
+        {
+          "type": "heading",
+          "text": "Tři typy reakcí, které musíš znát"
+        },
+        {
+          "type": "text",
+          "text": "**1. Dráždivá (iritační) kontaktní dermatitida.** Není to alergie. Látka kůži přímo poškozuje, když působí dlouho nebo je silná. Může ji dostat kdokoli. Typicky ruce kadeřnic a kosmetiček po častém mytí, dezinfekci a práci ve vlhku."
+        },
+        {
+          "type": "text",
+          "text": "**2. Alergická kontaktní dermatitida.** Je to alergie. Objeví se jen u člověka, který je na látku senzibilizovaný. Reakce přijde **opožděně, za 1–3 dny** po kontaktu, a může se šířit i mimo místo kontaktu. Časté alergeny: **nikl**, **parafenylendiamin (PPD)** v barvách na vlasy a řasy, **vonné látky**, některé **konzervanty**, **akryláty** v gelech na nehty."
+        },
+        {
+          "type": "text",
+          "text": "**3. Atopická dermatitida (atopický ekzém).** Dlouhodobé onemocnění s dědičným sklonem. Kůže je suchá, svědí, ekzém bývá v loketních a podkolenních jamkách a na obličeji. Často začíná v dětství."
+        },
+        {
+          "type": "heading",
+          "text": "Kopřivka a anafylaxe"
+        },
+        {
+          "type": "term",
+          "term": "Kopřivka (urtikarie)",
+          "definition": "Okamžitá alergická reakce: během minut se objeví svědivé pupeny jako po kopřivě.",
+          "example": "Kopřivka po kousnutí do jahody."
+        },
+        {
+          "type": "term",
+          "term": "Anafylaxe",
+          "definition": "Nejtěžší, život ohrožující alergická reakce celého těla: otok, dušnost, pokles tlaku, mdloba. Volá se **155**.",
+          "example": "Otok jazyka a dušení po bodnutí vosou."
+        },
+        {
+          "type": "heading",
+          "text": "Prevence v salonu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Při vstupním rozhovoru se ptej na alergie, ekzémy a léky a zapiš je do karty klienta.",
+            "Před barvením řas a obočí udělej **test snášenlivosti** podle návodu výrobce (obvykle 48 hodin předem).",
+            "Chraň si ruce: rukavice, šetrné mytí, krém na ruce.",
+            "Při reakci přípravek ihned smyj, ošetření ukonči a doporuč lékaře."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka si před dvěma dny nechala barvit řasy a teď má oteklá svědivá víčka. Jaká reakce to je?",
+          "answer": "Reakce přišla **opožděně** (za 2 dny) po kontaktu s barvou → **alergická kontaktní dermatitida**. Časté alergeny v barvách jsou **PPD** a příbuzné látky. Doporučím lékaře, zapíšu alergii do karty a barvu už nepoužiji."
+        },
+        {
+          "type": "example",
+          "question": "Kosmetička má po zimě popraskané ruce, hlavně mezi prsty. Alergii na nic nemá. Co to je?",
+          "answer": "Je to **dráždivá (iritační)** kontaktní dermatitida z častého mytí, dezinfekce a vlhka. Pomůže práce v rukavicích, jemné mytí, důkladné osušení a pravidelný krém na ruce."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Alergie se vždy projeví hned při prvním použití přípravku.",
+          "right": "Napoprvé dojde často jen k **senzibilizaci**. Alergie se projeví až při dalším kontaktu, někdy i po letech používání.",
+          "why": "Proto se test snášenlivosti dělá před každým barvením, i u stálé klientky."
+        },
+        {
+          "type": "summary",
+          "text": "**Dráždivá** dermatitida = přímé poškození kůže, může ji mít každý. **Alergická** = opožděná reakce u senzibilizovaného člověka (nikl, PPD, vůně, konzervanty, akryláty). **Atopický ekzém** = dlouhodobé onemocnění se suchou svědivou kůží. Anafylaxe je život ohrožující – volej 155."
+        }
+      ]
+    },
+    {
+      "title": "Rozliš a jednej",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V salonu nemáš čas listovat učebnicí. Když se kůže začne chovat divně, musíš rychle rozhodnout: jde o podráždění, alergii, nebo něco vážného?"
+        },
+        {
+          "type": "text",
+          "text": "Tady máš přehled reakcí a postup, jak jednat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Imunitní systém",
+          "definition": "Obranný systém těla, který bojuje proti mikrobům. Při alergii reaguje přehnaně na neškodnou látku.",
+          "example": "Pyl je neškodný, ale alergikovi způsobí rýmu."
+        },
+        {
+          "type": "term",
+          "term": "Alergen",
+          "definition": "Látka, která vyvolá alergickou reakci.",
+          "example": "Nikl, PPD, vonné látky."
+        },
+        {
+          "type": "term",
+          "term": "Ekzém (dermatitida)",
+          "definition": "Svědivý zánět kůže: zarudnutí, puchýřky, mokvání, šupinky.",
+          "example": "Zarudlá svědivá víčka po barvě na řasy."
+        },
+        {
+          "type": "term",
+          "term": "Test snášenlivosti",
+          "definition": "Nanesení malého množství přípravku na malé místo kůže a sledování reakce před skutečným ošetřením.",
+          "example": "Barva na řasy za ucho 48 hodin před barvením."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled reakcí"
+        },
+        {
+          "type": "table",
+          "head": [
+            "reakce",
+            "příčina",
+            "kdy se objeví",
+            "kdo ji může dostat"
+          ],
+          "rows": [
+            [
+              "dráždivá kontaktní dermatitida",
+              "přímé poškození kůže (mytí, dezinfekce, tenzidy)",
+              "postupně, v místě kontaktu",
+              "kdokoli"
+            ],
+            [
+              "alergická kontaktní dermatitida",
+              "alergen (nikl, PPD, vůně, konzervanty, akryláty)",
+              "za 1–3 dny, může přesahovat místo kontaktu",
+              "jen senzibilizovaný člověk"
+            ],
+            [
+              "atopická dermatitida",
+              "dědičný sklon, porucha bariéry kůže",
+              "dlouhodobě, střídá se zhoršení a klid",
+              "lidé se sklonem k atopii"
+            ],
+            [
+              "kopřivka",
+              "okamžitá alergie",
+              "během minut",
+              "alergik"
+            ],
+            [
+              "anafylaxe",
+              "okamžitá těžká alergie",
+              "během minut",
+              "alergik"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Přiřaď popis ke správné reakci."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "dráždivá",
+              "alergická kontaktní",
+              "okamžitá alergie"
+            ],
+            "items": [
+              {
+                "text": "popraskané ruce po častém mytí",
+                "group": 0
+              },
+              {
+                "text": "otok víček 2 dny po barvení řas",
+                "group": 1
+              },
+              {
+                "text": "ekzém pod kovovou sponou džínů",
+                "group": 1
+              },
+              {
+                "text": "svědivé pupeny 5 minut po krému",
+                "group": 2
+              },
+              {
+                "text": "dušnost a otok rtů po ošetření",
+                "group": 2
+              },
+              {
+                "text": "pálení po dlouhém kontaktu s dezinfekcí",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Postup, když se objeví reakce"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ošetření okamžitě ukonči.",
+            "Přípravek šetrně, ale důkladně smyj vlažnou vodou.",
+            "Sleduj klienta: dýchá normálně? Neotékají mu rty, jazyk, hrdlo? Nemdlí?",
+            "Při dušnosti, otoku v obličeji nebo mdlobě volej **155** – může jít o anafylaxi. Má-li klient vlastní adrenalinový autoinjektor, pomoz mu ho použít.",
+            "Při lehké reakci doporuč lékaře, zapiš reakci a použitý přípravek do karty."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klient má kovovou alergii a chce piercing ucha v salonu. Na co si dát pozor?",
+          "answer": "Pravděpodobně jde o alergii na **nikl**. Šperk musí být z materiálu bez niklu (např. chirurgická ocel určená k piercingu, titan). Zapíšu to do karty klienta."
+        },
+        {
+          "type": "example",
+          "question": "Klientka s atopickým ekzémem chce peeling obličeje. Co jí doporučíš?",
+          "answer": "Atopická kůže má oslabenou **bariéru**. Agresivní peeling ji podráždí. Doporučím šetrné čištění, hydratační a zklidňující péči bez parfemace; v ložiskách aktivního ekzému neošetřuji a odkážu na dermatologa."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dráždivá dermatitida je druh alergie.",
+          "right": "Dráždivá dermatitida **není alergie**. Kůži přímo poškozuje látka a může ji dostat kdokoli.",
+          "why": "U alergie musí tělo nejdřív projít senzibilizací, u podráždění ne."
+        },
+        {
+          "type": "summary",
+          "text": "Rozliš: dráždivá (kdokoli, přímé poškození), alergická kontaktní (opožděná, alergen), atopická (dlouhodobá, dědičný sklon), okamžitá alergie (kopřivka, anafylaxe). Při reakci ukonči ošetření, smyj přípravek a při ohrožení volej 155."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Za jak dlouho se obvykle projeví alergická kontaktní dermatitida?",
+      "options": [
+        "za 1–3 dny",
+        "během sekund",
+        "až za měsíc"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který alergen se vyskytuje v barvách na vlasy a řasy?",
+      "options": [
+        "parafenylendiamin (PPD)",
+        "glycerin",
+        "kyselina hyaluronová"
+      ],
+      "answer": 0,
+      "hints": [
+        "Zkratka má tři písmena."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dráždivou kontaktní dermatitidu může dostat kdokoli, i bez alergie.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Když klientce barva na řasy roky nevadila, test snášenlivosti už není potřeba.",
+      "answer": false,
+      "explanation": "Alergie může vzniknout i po letech používání."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje první setkání s alergenem, při kterém se tělo „naučí“ na něj reagovat?",
+      "answers": [
+        "senzibilizace",
+        "senzibilizace organismu"
+      ],
+      "hints": [
+        "Slovo souvisí se slovem „senzitivní“ (citlivý)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na jaké číslo zavoláš záchrannou službu při anafylaxi?",
+      "answers": [
+        "155",
+        "112"
+      ],
+      "explanation": "Zdravotnická záchranná služba 155, jednotné evropské číslo 112."
+    },
+    {
+      "type": "match",
+      "question": "Spoj reakci s typickým příkladem.",
+      "pairs": [
+        [
+          "dráždivá dermatitida",
+          "popraskané ruce z mytí"
+        ],
+        [
+          "alergická kontaktní",
+          "ekzém pod niklovou sponou"
+        ],
+        [
+          "atopická",
+          "suchá svědivá kůže v loketních jamkách"
+        ],
+        [
+          "kopřivka",
+          "pupeny během minut"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup při alergické reakci v salonu.",
+      "items": [
+        "ukonči ošetření",
+        "smyj přípravek",
+        "sleduj dýchání a otoky",
+        "při ohrožení volej 155",
+        "zapiš reakci do karty"
+      ],
+      "hints": [
+        "Nejdřív přeruš kontakt s tím, co reakci způsobuje."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je anafylaxe?",
+      "options": [
+        "život ohrožující alergická reakce celého těla",
+        "mírné zarudnutí po masce",
+        "dědičný ekzém"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterým materiálem se často vyvolá alergie u šperků a spon?",
+      "options": [
+        "nikl",
+        "zlato 24 karátů",
+        "sklo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Akryláty v gelech na nehty mohou vyvolat alergii.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč klientka s atopickým ekzémem nemá podstupovat agresivní peeling?",
+      "options": [
+        "má oslabenou bariéru kůže",
+        "má málo melaninu",
+        "má hodně mazových žláz"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi dráždivou a alergickou kontaktní dermatitidou.",
+      "answer": "Dráždivá dermatitida vzniká přímým poškozením kůže, třeba častým mytím, a může ji dostat kdokoli. Alergická vzniká jen u člověka senzibilizovaného na alergen, například nikl nebo PPD, a projeví se opožděně za 1–3 dny."
+    },
+    {
+      "type": "open",
+      "question": "Jak budeš postupovat, když se u klienta během ošetření objeví alergická reakce?",
+      "answer": "Ošetření ukončím a přípravek smyji. Sleduji dýchání a otoky; při dušnosti, otoku obličeje nebo mdlobě volám 155. Při lehké reakci doporučím lékaře a zapíšu reakci a přípravek do karty."
+    }
+  ]
+}

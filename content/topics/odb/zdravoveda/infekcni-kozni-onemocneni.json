@@ -1,0 +1,525 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "infekcni-kozni-onemocneni",
+  "title": "Infekční kožní nemoci a hygiena",
+  "emoji": "🦠",
+  "explanations": [
+    {
+      "title": "Čtyři vetřelci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Do salonu přijde klientka s oparem na rtu. Jiná má zažloutlé nehty na nohou. Můžeš ji ošetřit? Co hrozí tobě a dalším klientům?"
+        },
+        {
+          "type": "text",
+          "text": "Infekční nemoci kůže se přenášejí dotykem, nástroji, ručníky nebo podlahou. Kosmetička je musí poznat a hlavně jim předcházet hygienou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Infekce",
+          "definition": "Napadení těla mikroorganismy, které se v něm množí a škodí.",
+          "example": "Bakterie se dostane do drobné ranky a vznikne hnisavý zánět."
+        },
+        {
+          "type": "term",
+          "term": "Mikroorganismus (mikrob)",
+          "definition": "Drobný organismus viditelný jen mikroskopem: bakterie, virus, plíseň (houba).",
+          "example": "Zlatý stafylokok je bakterie."
+        },
+        {
+          "type": "term",
+          "term": "Nakažlivé (přenosné)",
+          "definition": "Nemoc, která může přejít z jednoho člověka na druhého.",
+          "example": "Opar je nakažlivý, akné ne."
+        },
+        {
+          "type": "term",
+          "term": "Kontraindikace",
+          "definition": "Důvod, proč se ošetření **nesmí** provést.",
+          "example": "Opar na rtu je kontraindikace líčení rtů."
+        },
+        {
+          "type": "heading",
+          "text": "Vetřelec 1: bakterie"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Impetigo** – povrchová hnisavá infekce, typické medově žluté krusty, hlavně u dětí. Velmi nakažlivé.",
+            "**Folikulitida** – zánět vlasového folikulu, drobné pustuly kolem chloupků (např. po holení).",
+            "**Furunkl** – hluboký bolestivý zánět folikulu a okolí („nežit“). Několik splynulých = **karbunkl**.",
+            "**Erysipel (růže)** – ostře ohraničené zarudnutí a otok, horečka. Patří k lékaři."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vetřelec 2: viry"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Opar (herpes simplex)** – puchýřky na rtu, virus zůstává v těle a vrací se.",
+            "**Bradavice (veruky)** – způsobuje je lidský papilomavirus, na rukou i na chodidlech.",
+            "**Molluscum contagiosum** – drobné perleťové pupínky s důlkem uprostřed.",
+            "**Pásový opar** – bolestivé puchýřky v pruhu na jedné straně těla."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vetřelec 3: plísně (mykózy)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Plíseň nohou** – svědění a olupování mezi prsty, šíří se v bazénech a sprchách.",
+            "**Plíseň nehtů (onychomykóza)** – zažloutlý, ztluštělý, drolivý nehet.",
+            "**Kvasinky (kandidy)** – zarudnutí v záhybech kůže, v koutcích."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vetřelec 4: parazité"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Svrab** – způsobuje zákožka svrabová, která si dělá chodbičky v kůži; silné svědění hlavně v noci.",
+            "**Vši** – vajíčka (hnidy) přilepená na vlasech, svědění hlavy."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "bakterie",
+              "virus",
+              "plíseň",
+              "parazit"
+            ],
+            "items": [
+              {
+                "text": "impetigo",
+                "group": 0
+              },
+              {
+                "text": "furunkl",
+                "group": 0
+              },
+              {
+                "text": "opar",
+                "group": 1
+              },
+              {
+                "text": "bradavice",
+                "group": 1
+              },
+              {
+                "text": "onychomykóza",
+                "group": 2
+              },
+              {
+                "text": "plíseň nohou",
+                "group": 2
+              },
+              {
+                "text": "svrab",
+                "group": 3
+              },
+              {
+                "text": "vši",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Hygiena v salonu"
+        },
+        {
+          "type": "text",
+          "text": "Hygienická pravidla pro kosmetické služby určuje **zákon č. 258/2000 Sb.** o ochraně veřejného zdraví a **vyhláška č. 137/2004 Sb.** Každý salon musí mít **provozní řád** schválený krajskou hygienickou stanicí."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Před každým klientem si umyj a vydezinfikuj ruce.",
+            "Používej čisté nebo jednorázové pomůcky (ručník, prostěradlo, špachtle).",
+            "Nástroje po použití dezinfikuj; nástroje, které porušují kůži, navíc sterilizuj.",
+            "Pracovní plochy a lehátko dezinfikuj po každém klientovi.",
+            "Při podezření na infekční nemoc ošetření odmítni a doporuč lékaře."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka na pedikúře má zažloutlé ztluštělé nehty na palcích. Co uděláš?",
+          "answer": "Může jít o **plíseň nehtů**. Doporučím lékaře (dermatologa). Pokud ošetření provedu, použiji jednorázové nebo samostatně sterilizované nástroje, pracuji v rukavicích a vše po ošetření pečlivě dezinfikuji a sterilizuji."
+        },
+        {
+          "type": "example",
+          "question": "Klient přijde na čištění pleti s medově žlutými krustami kolem nosu. Smíš ho ošetřit?",
+          "answer": "Ne. Žluté krusty mohou být **impetigo** – velmi nakažlivá bakteriální infekce. Je to **kontraindikace**. Ošetření odložím a doporučím lékaře."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Stačí nástroje opláchnout pod vodou a otřít.",
+          "right": "Nástroje se **dezinfikují** a ty, které porušují kůži, se navíc **sterilizují** (např. v autoklávu).",
+          "why": "Voda mikroby nezničí. Přes nástroje se mohou přenést i viry žloutenky B a C nebo HIV."
+        },
+        {
+          "type": "summary",
+          "text": "Kožní infekce způsobují **bakterie** (impetigo, furunkl), **viry** (opar, bradavice), **plísně** (plíseň nohou a nehtů) a **parazité** (svrab, vši). Infekční nemoc je kontraindikace; prevencí je hygiena, dezinfekce a sterilizace."
+        }
+      ]
+    },
+    {
+      "title": "Dezinfekce a sterilizace",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička se dotýká desítek lidí týdně. Když neudrží hygienu, může přenést nemoc z jednoho klienta na dalšího. Proto má salon přísná pravidla."
+        },
+        {
+          "type": "text",
+          "text": "Tady se podíváme, jak se nemoci přenášejí, jak je poznat a jak správně dezinfikovat a sterilizovat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mikrob",
+          "definition": "Drobný organismus viditelný jen mikroskopem: bakterie, virus, plíseň.",
+          "example": "Viry způsobují opar."
+        },
+        {
+          "type": "term",
+          "term": "Přenos nákazy",
+          "definition": "Cesta, kterou se mikrob dostane od nemocného ke zdravému.",
+          "example": "Přímý dotyk, společný ručník, nesterilní nástroj."
+        },
+        {
+          "type": "term",
+          "term": "Dezinfekce",
+          "definition": "Zničení většiny choroboplodných mikrobů na povrchu nebo nástroji pomocí chemických přípravků nebo tepla.",
+          "example": "Otření lehátka dezinfekčním přípravkem."
+        },
+        {
+          "type": "term",
+          "term": "Sterilizace",
+          "definition": "Zničení **všech** mikroorganismů včetně odolných zárodků (spor). Dělá se hlavně párou pod tlakem (autokláv) nebo horkým vzduchem.",
+          "example": "Kleštičky na kůžičku, které mohou porušit kůži, se sterilizují."
+        },
+        {
+          "type": "term",
+          "term": "Kontraindikace",
+          "definition": "Důvod, proč ošetření nesmíš provést.",
+          "example": "Hnisavá infekce v oblasti ošetření."
+        },
+        {
+          "type": "heading",
+          "text": "Jak nemoci poznat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "původce",
+            "nemoc",
+            "typický znak"
+          ],
+          "rows": [
+            [
+              "bakterie",
+              "impetigo",
+              "medově žluté krusty"
+            ],
+            [
+              "bakterie",
+              "furunkl",
+              "bolestivý hnisavý uzel kolem chlupu"
+            ],
+            [
+              "bakterie",
+              "erysipel (růže)",
+              "ostře ohraničené zarudnutí, horečka"
+            ],
+            [
+              "virus",
+              "opar",
+              "puchýřky na rtu, pálení"
+            ],
+            [
+              "virus",
+              "bradavice",
+              "tvrdý drsný výrůstek"
+            ],
+            [
+              "virus",
+              "pásový opar",
+              "bolestivé puchýřky v pruhu na jedné straně"
+            ],
+            [
+              "plíseň",
+              "plíseň nohou",
+              "svědění a olupování mezi prsty"
+            ],
+            [
+              "plíseň",
+              "onychomykóza",
+              "žlutý, ztluštělý, drolivý nehet"
+            ],
+            [
+              "parazit",
+              "svrab",
+              "noční svědění, chodbičky v kůži"
+            ],
+            [
+              "parazit",
+              "vši",
+              "hnidy na vlasech"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup v salonu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Vstupní rozhovor a prohlídka** – zeptej se na zdravotní potíže a prohlédni ošetřovanou oblast.",
+            "**Podezření na infekci?** Ošetření nedělej, klientovi to taktně vysvětli a doporuč lékaře.",
+            "**Hygiena rukou** – mytí, dezinfekce, rukavice tam, kde hrozí kontakt s krví nebo poškozenou kůží.",
+            "**Jednorázové pomůcky** – kde to jde (špachtle, jehly, pilníky na jedno použití).",
+            "**Dezinfekce** – nástroje a plochy dezinfekčním přípravkem podle návodu (koncentrace a doba působení).",
+            "**Sterilizace** – nástroje, které porušují kůži, po dezinfekci a očištění sterilizuj a ulož tak, aby zůstaly sterilní."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pravidla stanoví **zákon č. 258/2000 Sb.** a **vyhláška č. 137/2004 Sb.**; salon se řídí svým **provozním řádem** schváleným krajskou hygienickou stanicí."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Kleště na kůžičku, které mohou porušit kůži, se po dezinfekci ",
+                "after": ".",
+                "options": [
+                  "sterilizují",
+                  "jen opláchnou"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Lehátko se po klientovi ",
+                "after": ".",
+                "options": [
+                  "dezinfikuje",
+                  "sterilizuje"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Opar na rtu je ",
+                "after": " líčení rtů.",
+                "options": [
+                  "kontraindikace",
+                  "indikace"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Plíseň nohou se často šíří v ",
+                "after": ".",
+                "options": [
+                  "bazénech a sprchách",
+                  "slunečním světle"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Kosmetička se při ošetření pichne jehlou, kterou předtím použila u klienta. Co má udělat?",
+          "answer": "Jde o **poranění kontaminovaným nástrojem**. Ranku nechá krátce krvácet, umyje mýdlem a vodou a vydezinfikuje. Úraz zapíše a co nejdřív vyhledá lékaře, protože hrozí přenos žloutenky B a C nebo HIV."
+        },
+        {
+          "type": "example",
+          "question": "Proč nestačí kleště na kůžičku jen dezinfikovat?",
+          "answer": "Mohou porušit kůži a dostat se do kontaktu s krví. **Dezinfekce** nezničí všechny mikroby. Proto se po ní nástroj ještě **sterilizuje**, aby byl bez všech mikroorganismů."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dezinfekce a sterilizace jsou totéž.",
+          "right": "Dezinfekce ničí **většinu** choroboplodných mikrobů, sterilizace **všechny** mikroorganismy včetně spor.",
+          "why": "Na plochy stačí dezinfekce, na nástroje porušující kůži je nutná sterilizace."
+        },
+        {
+          "type": "summary",
+          "text": "Kožní infekce šíří bakterie, viry, plísně a parazité. Infekce je kontraindikace ošetření. Prevence: hygiena rukou, jednorázové pomůcky, dezinfekce ploch a nástrojů a sterilizace nástrojů, které porušují kůži."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který původce způsobuje opar?",
+      "options": [
+        "virus",
+        "bakterie",
+        "plíseň"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která nemoc je plísňová?",
+      "options": [
+        "onychomykóza",
+        "impetigo",
+        "svrab"
+      ],
+      "answer": 0,
+      "hints": [
+        "Plísňové nemoci se odborně nazývají mykózy."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dezinfekce zničí úplně všechny mikroorganismy včetně spor.",
+      "answer": false,
+      "explanation": "To dělá až sterilizace."
+    },
+    {
+      "type": "truefalse",
+      "question": "Infekční kožní onemocnění v ošetřované oblasti je kontraindikace kosmetického ošetření.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje parazitární kožní nemoc, kterou způsobuje zákožka a která v noci silně svědí?",
+      "answers": [
+        "svrab",
+        "scabies"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj nemoc s původcem.",
+      "pairs": [
+        [
+          "impetigo",
+          "bakterie"
+        ],
+        [
+          "bradavice",
+          "virus"
+        ],
+        [
+          "plíseň nohou",
+          "plíseň"
+        ],
+        [
+          "vši",
+          "parazit"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má na rtu puchýřky. Co uděláš?",
+      "options": [
+        "Rty nelíčím ani neošetřuji a doporučím lékaře či lékárnu.",
+        "Puchýřky propíchnu sterilní jehlou.",
+        "Zakryji je korektorem."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje přístroj, který sterilizuje nástroje párou pod tlakem?",
+      "answers": [
+        "autokláv",
+        "autoklav"
+      ],
+      "hints": [
+        "Používá se i v nemocnicích a zubních ordinacích."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď správný postup s nástrojem, který porušil kůži.",
+      "items": [
+        "dezinfekce",
+        "mechanické očištění a opláchnutí",
+        "osušení",
+        "sterilizace",
+        "uložení tak, aby zůstal sterilní"
+      ],
+      "hints": [
+        "Nejdřív musíš nástroj zbavit nebezpečných mikrobů, než na něj sáhneš při čištění."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje dokument, podle kterého salon dodržuje hygienu a který schvaluje krajská hygienická stanice?",
+      "options": [
+        "provozní řád",
+        "ceník",
+        "živnostenský list"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Bradavice způsobuje lidský papilomavirus.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Typický znak impetiga je:",
+      "options": [
+        "medově žlutá krusta",
+        "černá tečka v póru",
+        "bílý šupinatý povlak na hlavě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi dezinfekcí a sterilizací a kdy se používají v salonu?",
+      "answer": "Dezinfekce zničí většinu choroboplodných mikrobů a používá se na ruce, plochy a nástroje. Sterilizace zničí všechny mikroorganismy včetně spor; v salonu se sterilizují nástroje, které porušují kůži, například kleště nebo frézy pro pedikúru."
+    },
+    {
+      "type": "open",
+      "question": "Uveď příklad bakteriální, virové, plísňové a parazitární kožní nemoci.",
+      "answer": "Bakteriální: impetigo nebo furunkl. Virová: opar nebo bradavice. Plísňová: plíseň nohou nebo nehtů. Parazitární: svrab nebo vši."
+    }
+  ]
+}

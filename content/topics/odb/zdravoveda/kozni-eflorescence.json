@@ -1,0 +1,498 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "kozni-eflorescence",
+  "title": "Kožní eflorescence",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Abeceda kůže",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lékař se podívá na kůži a řekne „papula“ nebo „vezikula“. Zní to tajemně, ale je to jen přesný název pro to, co vidí: pupínek, puchýřek, šupinku."
+        },
+        {
+          "type": "text",
+          "text": "Těmto „písmenkům“ kožních nemocí se říká **eflorescence**. Kosmetička je musí poznat, aby věděla, kdy může pleť ošetřit a kdy má klienta poslat k lékaři."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Eflorescence (výsev)",
+          "definition": "Viditelná změna na kůži, ze které se skládá obraz kožní nemoci.",
+          "example": "Pupínek, skvrna nebo strup jsou eflorescence."
+        },
+        {
+          "type": "term",
+          "term": "Primární eflorescence",
+          "definition": "Změna, která se objeví **jako první** na dosud zdravé kůži.",
+          "example": "Puchýřek u oparu."
+        },
+        {
+          "type": "term",
+          "term": "Sekundární eflorescence",
+          "definition": "Změna, která vznikne **až z primární** – vývojem, poškrábáním nebo hojením.",
+          "example": "Strup, který vznikne zaschnutím obsahu prasklého puchýřku."
+        },
+        {
+          "type": "term",
+          "term": "Hnis",
+          "definition": "Žlutobílá tekutina z bílých krvinek a bakterií. Znamená obvykle bakteriální zánět.",
+          "example": "Hnis v pupínku u akné."
+        },
+        {
+          "type": "heading",
+          "text": "Primární eflorescence"
+        },
+        {
+          "type": "text",
+          "text": "Rozlišujeme je podle dvou otázek: **Je změna v úrovni kůže, nebo vystupuje?** a **Co je uvnitř – nic, tekutina, nebo hnis?**"
+        },
+        {
+          "type": "table",
+          "head": [
+            "název (latinsky)",
+            "jak vypadá",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "skvrna (macula)",
+              "změna barvy v úrovni kůže, nevystupuje",
+              "piha, zarudnutí"
+            ],
+            [
+              "pupínek (papula)",
+              "malé pevné vyvýšení bez tekutiny",
+              "zánětlivý pupínek u akné"
+            ],
+            [
+              "uzel (nodus)",
+              "větší, hlouběji uložené tuhé ložisko, často bolestivé",
+              "hluboký uzel u těžkého akné"
+            ],
+            [
+              "pupen (urtika)",
+              "plochý svědivý otok, rychle přijde a zmizí",
+              "po kopřivě, kopřivka"
+            ],
+            [
+              "puchýřek (vezikula)",
+              "malá dutinka s čirou tekutinou",
+              "opar"
+            ],
+            [
+              "puchýř (bula)",
+              "větší dutina s tekutinou",
+              "puchýř po popálení nebo z bot"
+            ],
+            [
+              "pustula",
+              "dutinka s hnisem",
+              "hnisavý pupínek"
+            ],
+            [
+              "cysta",
+              "dutina s pouzdrem a obsahem uložená v kůži",
+              "mazová cysta"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sekundární eflorescence"
+        },
+        {
+          "type": "table",
+          "head": [
+            "název",
+            "jak vzniká",
+            "hojení"
+          ],
+          "rows": [
+            [
+              "šupina (squama)",
+              "odlupující se zrohovatělé buňky",
+              "bez jizvy"
+            ],
+            [
+              "strup (krusta)",
+              "zaschlá tekutina, krev nebo hnis",
+              "podle hloubky rány"
+            ],
+            [
+              "eroze",
+              "povrchové poškození jen pokožky (např. prasklý puchýř)",
+              "bez jizvy"
+            ],
+            [
+              "exkoriace",
+              "oděrka, typicky po škrábání",
+              "obvykle bez jizvy"
+            ],
+            [
+              "ragáda",
+              "trhlina, prasklina v kůži",
+              "často bolí, např. koutky"
+            ],
+            [
+              "vřed (ulkus)",
+              "hluboký defekt zasahující do škáry a hlouběji",
+              "jizvou"
+            ],
+            [
+              "jizva",
+              "náhrada poškozené tkáně vazivem",
+              "trvalá"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď eflorescence na primární a sekundární."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "primární",
+              "sekundární"
+            ],
+            "items": [
+              {
+                "text": "skvrna",
+                "group": 0
+              },
+              {
+                "text": "papula",
+                "group": 0
+              },
+              {
+                "text": "vezikula",
+                "group": 0
+              },
+              {
+                "text": "pustula",
+                "group": 0
+              },
+              {
+                "text": "strup",
+                "group": 1
+              },
+              {
+                "text": "eroze",
+                "group": 1
+              },
+              {
+                "text": "jizva",
+                "group": 1
+              },
+              {
+                "text": "šupina",
+                "group": 1
+              },
+              {
+                "text": "urtika",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka má na rtu malé puchýřky s čirou tekutinou. Jak je nazveš a co uděláš?",
+          "answer": "Jsou to **vezikuly** (puchýřky) – primární eflorescence. Na rtu typicky ukazují na **opar**, který je nakažlivý. Oblast neošetřuji, nelíčím a klientku doporučím k lékaři nebo do lékárny."
+        },
+        {
+          "type": "example",
+          "question": "Z prasklého puchýřku zůstala mokvající plocha, která zaschla do žluté krusty. Které eflorescence vidíš?",
+          "answer": "Prasklý puchýřek = **eroze** (jen pokožka). Zaschlá tekutina = **krusta (strup)**. Obě jsou **sekundární**. Žlutá „medová“ krusta může znamenat bakteriální infekci – patří k lékaři."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Strup je primární eflorescence.",
+          "right": "Strup (krusta) je **sekundární** – vzniká zaschnutím obsahu puchýřku, pustuly nebo krve.",
+          "why": "Primární je jen to, co vznikne jako první na zdravé kůži."
+        },
+        {
+          "type": "summary",
+          "text": "**Primární** eflorescence vznikají na zdravé kůži (skvrna, papula, nodus, urtika, vezikula, bula, pustula, cysta). **Sekundární** vznikají z nich (šupina, krusta, eroze, exkoriace, ragáda, vřed, jizva)."
+        }
+      ]
+    },
+    {
+      "title": "Rozhodovací strom",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na pleti klientky vidíš „něco“. Místo hádání si položíš pár otázek po sobě a dojdeš k přesnému názvu. Stejně postupuje i dermatolog."
+        },
+        {
+          "type": "text",
+          "text": "Přesný název ti pomůže zapsat stav pleti do karty klienta a domluvit se s lékařem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Eflorescence",
+          "definition": "Jednotlivá viditelná změna na kůži.",
+          "example": "Pupínek, puchýř, šupina."
+        },
+        {
+          "type": "term",
+          "term": "Primární",
+          "definition": "První, původní. Primární eflorescence vzniká přímo na zdravé kůži.",
+          "example": "Skvrna od kopřivy."
+        },
+        {
+          "type": "term",
+          "term": "Sekundární",
+          "definition": "Druhotná. Vzniká vývojem primární eflorescence nebo poškozením.",
+          "example": "Jizva po hlubokém pupínku."
+        },
+        {
+          "type": "term",
+          "term": "Pokožka a škára",
+          "definition": "Připomenutí: pokožka je horní vrstva bez cév, škára je pod ní a má cévy. Poškození škáry se hojí jizvou.",
+          "example": "Oděrka bez krve = pokožka."
+        },
+        {
+          "type": "heading",
+          "text": "Postup: ptej se krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Vznikla změna na zdravé kůži, nebo z jiné změny?** Na zdravé → primární. Z jiné → sekundární.",
+            "**Primární: vystupuje nad kůži?** Ne → **skvrna (makula)**.",
+            "**Vystupuje a je pevná, bez tekutiny?** Malá → **papula**. Větší a hluboká → **nodus**. Plochý svědivý otok, který brzy zmizí → **urtika**.",
+            "**Je uvnitř čirá tekutina?** Malá → **vezikula**. Velká → **bula**.",
+            "**Je uvnitř hnis?** → **pustula**.",
+            "**Sekundární: co vidíš?** Odlupující se šupinky → **šupina**. Zaschlý povlak → **krusta**. Povrchové mokvání → **eroze**. Trhlina → **ragáda**. Hluboký defekt → **vřed**. Vazivo místo tkáně → **jizva**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartu s popisem a řekni přesný název."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Hnědá plochá piha",
+                "back": "skvrna (makula)"
+              },
+              {
+                "front": "Svědivý plochý otok po štípnutí komárem",
+                "back": "pupen (urtika)"
+              },
+              {
+                "front": "Pupínek s bílou hnisavou tečkou",
+                "back": "pustula"
+              },
+              {
+                "front": "Velký puchýř na patě z nových bot",
+                "back": "bula"
+              },
+              {
+                "front": "Prasklina v koutku úst",
+                "back": "ragáda"
+              },
+              {
+                "front": "Oděrka po škrábání",
+                "back": "exkoriace"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klient má na tváři červený pupínek, pevný, bez tekutiny, asi 3 mm. Co to je?",
+          "answer": "Postup: vznikl na zdravé kůži → primární. Vystupuje, je pevný, bez tekutiny, malý → **papula**."
+        },
+        {
+          "type": "example",
+          "question": "Na předloktí jsou drobné šupinky na zarudlém podkladu. Co zapíšeš do karty?",
+          "answer": "Zarudnutí v úrovni kůže = **makula** (primární). Na ní **šupiny** (sekundární). Šupinatá ložiska mohou patřit k ekzému nebo lupénce – doporučím dermatologa a oblast neošetřuji agresivně."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Každý pupínek je pustula.",
+          "right": "Pustula je jen dutinka **s hnisem**. Pevný pupínek bez tekutiny je **papula**.",
+          "why": "Rozlišení je důležité: pustuly se nesmí vymačkávat, hrozí šíření infekce."
+        },
+        {
+          "type": "summary",
+          "text": "Ptej se postupně: zdravá kůže, nebo z jiné změny? Vystupuje? Je pevná, s tekutinou, nebo s hnisem? Tak dojdeš k přesnému názvu primární či sekundární eflorescence."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která eflorescence je primární?",
+      "options": [
+        "pustula",
+        "krusta",
+        "jizva"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje malá dutinka s čirou tekutinou?",
+      "options": [
+        "vezikula",
+        "pustula",
+        "papula"
+      ],
+      "answer": 0,
+      "hints": [
+        "Čirá tekutina, ne hnis."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Skvrna (makula) vystupuje nad povrch kůže.",
+      "answer": false,
+      "explanation": "Makula je jen změna barvy v úrovni kůže."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vřed se hojí jizvou.",
+      "answer": true,
+      "explanation": "Vřed zasahuje do škáry a hlouběji."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje sekundární eflorescence, která vznikne zaschnutím tekutiny, krve nebo hnisu (česky)?",
+      "answers": [
+        "strup",
+        "krusta"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj eflorescenci s příkladem.",
+      "pairs": [
+        [
+          "makula",
+          "piha"
+        ],
+        [
+          "urtika",
+          "po kopřivě"
+        ],
+        [
+          "vezikula",
+          "opar"
+        ],
+        [
+          "ragáda",
+          "prasklý koutek"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se liší eroze od vředu?",
+      "options": [
+        "Eroze je jen v pokožce a hojí se bez jizvy.",
+        "Eroze je vždy hnisavá.",
+        "Eroze je primární eflorescence."
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na to, která vrstva má cévy a hojí se jizvou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se odborně jmenuje plochý svědivý otok, který rychle přijde a zmizí (třeba po kopřivě)?",
+      "answers": [
+        "urtika",
+        "urtica",
+        "pupen"
+      ],
+      "hints": [
+        "Název je odvozený od latinského jména kopřivy."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď vývoj oparu.",
+      "items": [
+        "zarudnutí a pálení",
+        "puchýřky (vezikuly)",
+        "prasknutí a mokvání (eroze)",
+        "strup (krusta)",
+        "zhojení"
+      ],
+      "hints": [
+        "Začni tím, co klient cítí jako první."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má na bradě pupínky se žlutou hnisavou tečkou. Co uděláš?",
+      "options": [
+        "Nevymačkávám je, ošetřím okolí šetrně.",
+        "Vymačkám je, aby se rychleji zhojily.",
+        "Přes ně udělám mechanický peeling."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Exkoriace je oděrka, která často vzniká škrábáním.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Která eflorescence je dutina s pouzdrem a obsahem uložená v kůži?",
+      "options": [
+        "cysta",
+        "bula",
+        "makula"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi primární a sekundární eflorescencí a uveď příklady.",
+      "answer": "Primární eflorescence vzniká jako první na zdravé kůži, například skvrna, papula, vezikula nebo pustula. Sekundární vzniká z primární vývojem nebo poškozením, například strup, eroze, šupina nebo jizva."
+    },
+    {
+      "type": "open",
+      "question": "Proč musí kosmetička znát kožní eflorescence?",
+      "answer": "Aby uměla popsat stav pleti, rozpoznala možné nakažlivé nebo vážné onemocnění a věděla, kdy ošetření odmítnout a poslat klienta k lékaři. Některé eflorescence, třeba pustuly, se nesmí vymačkávat."
+    }
+  ]
+}

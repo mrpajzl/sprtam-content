@@ -1,0 +1,444 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "akne",
+  "title": "Akné",
+  "emoji": "🔴",
+  "explanations": [
+    {
+      "title": "Jak vzniká pupínek",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Akné má v pubertě skoro každý, u někoho jen pár černých teček, u někoho bolestivé pupínky. Je to nejčastější kožní problém, se kterým klienti přicházejí ke kosmetičce."
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička umí s mírným akné hodně pomoci. Musí ale vědět, co smí, a kdy patří klient k dermatologovi."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Akné (acne vulgaris)",
+          "definition": "Zánětlivé onemocnění mazových žláz a vlasových folikulů. Vzniká nejčastěji v pubertě.",
+          "example": "Černé tečky a pupínky na čele a bradě patnáctiletého kluka."
+        },
+        {
+          "type": "term",
+          "term": "Mazová žláza",
+          "definition": "Připomenutí: žláza ve škáře, která vylučuje kožní maz do vlasového folikulu.",
+          "example": "Nejvíc jich je v T-zóně obličeje."
+        },
+        {
+          "type": "term",
+          "term": "Hormony (androgeny)",
+          "definition": "Látky, kterými tělo řídí různé děje. Mužské hormony (androgeny) mají v pubertě kluci i holky a zvyšují tvorbu mazu.",
+          "example": "Proto akné začíná s pubertou."
+        },
+        {
+          "type": "term",
+          "term": "Komedon",
+          "definition": "Ucpaný vlasový folikul plný mazu a odumřelých buněk. Je to základní projev akné.",
+          "example": "Černá tečka na nose."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři kroky ke vzniku akné"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Víc mazu** – hormony v pubertě nutí mazové žlázy vyrábět víc mazu.",
+            "**Ucpání ústí folikulu** – buňky v ústí folikulu nadměrně rohovatí a slepí se. Vznikne zátka = **komedon**.",
+            "**Množení bakterií** – v ucpaném folikulu bez vzduchu se množí bakterie *Cutibacterium acnes*.",
+            "**Zánět** – tělo na bakterie reaguje zánětem: vznikne červený pupínek, hnisavý pupínek nebo hluboký uzel."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Od černé tečky po uzel"
+        },
+        {
+          "type": "table",
+          "head": [
+            "projev",
+            "jak vypadá",
+            "zánět"
+          ],
+          "rows": [
+            [
+              "otevřený komedon",
+              "černá tečka; tmavá je kvůli oxidaci obsahu na vzduchu, ne kvůli špíně",
+              "ne"
+            ],
+            [
+              "zavřený komedon",
+              "drobný bělavý pupínek bez otvoru",
+              "ne"
+            ],
+            [
+              "papula",
+              "červený pevný pupínek",
+              "ano"
+            ],
+            [
+              "pustula",
+              "pupínek s hnisem",
+              "ano"
+            ],
+            [
+              "nodus a cysta",
+              "hluboký bolestivý uzel, hojí se jizvou",
+              "ano, těžký"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Podle převažujících projevů rozlišujeme akné **komedonické** (hlavně komedony), **papulopustulózní** (pupínky a pustuly) a **nodulocystické** (uzly a cysty, těžká forma)."
+        },
+        {
+          "type": "example",
+          "question": "Šestnáctiletá klientka má na nose a čele hodně černých teček, žádné červené pupínky. Jakou formu akné má a co jí nabídneš?",
+          "answer": "Jde o **komedonickou** formu. Nabídnu **čištění pleti** (šetrné odstranění komedonů po změkčení), doporučím každodenní jemné čištění a **nekomedogenní** kosmetiku, tedy takovou, která neucpává póry."
+        },
+        {
+          "type": "example",
+          "question": "Klient má na tvářích hluboké bolestivé uzly a jizvy. Co uděláš?",
+          "answer": "Je to **nodulocystická**, těžká forma. Patří **k dermatologovi**, protože hrozí trvalé jizvy a je potřeba léčba, kterou předepisuje lékař. Já uzly nevymačkávám a doporučím jen šetrnou péči."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Černé tečky jsou špína, stačí se víc drhnout.",
+          "right": "Černá barva vzniká **oxidací** obsahu komedonu na vzduchu. Drhnutí pleť dráždí a akné může zhoršit.",
+          "why": "Komedon je zátka z mazu a zrohovatělých buněk, ne nečistota zvenčí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hnisavé pupínky je nejlepší doma vymačkat.",
+          "right": "Zanícené pupínky se **nevymačkávají**. Hrozí zanesení infekce hlouběji, jizvy a skvrny.",
+          "why": "Tlakem se zánět může protlačit do okolí a do škáry."
+        },
+        {
+          "type": "summary",
+          "text": "Akné vzniká ze **zvýšené tvorby mazu**, **ucpání folikulu**, **bakterií** a **zánětu**. Projevy: komedony, papuly, pustuly, uzly. Mírné formy ošetří kosmetička, těžké patří dermatologovi."
+        }
+      ]
+    },
+    {
+      "title": "Péče v salonu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klient s akné se často stydí a zkoušel už všechno. Ty mu můžeš pomoct: správně vyčistit pleť a naučit ho domácí péči."
+        },
+        {
+          "type": "text",
+          "text": "Tady se podíváme na akné prakticky: co v salonu smíš, co ne, a jak pleť ošetřit krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Komedon",
+          "definition": "Ucpaný vlasový folikul se zátkou z mazu a zrohovatělých buněk.",
+          "example": "Otevřený = černá tečka, zavřený = bílá tečka."
+        },
+        {
+          "type": "term",
+          "term": "Zánět",
+          "definition": "Reakce těla na poškození nebo mikroby: zarudnutí, otok, teplo, bolest.",
+          "example": "Červený bolestivý pupínek je zanícený."
+        },
+        {
+          "type": "term",
+          "term": "Nekomedogenní",
+          "definition": "Kosmetika, která je vyrobená tak, aby neucpávala póry a nepodporovala vznik komedonů.",
+          "example": "Nekomedogenní make-up pro pleť se sklonem k akné."
+        },
+        {
+          "type": "term",
+          "term": "Dermatolog",
+          "definition": "Lékař specializovaný na kožní nemoci.",
+          "example": "Předepisuje léky na těžké akné."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo pomůže s jakým akné"
+        },
+        {
+          "type": "table",
+          "head": [
+            "forma",
+            "projevy",
+            "kdo pomáhá"
+          ],
+          "rows": [
+            [
+              "komedonické",
+              "černé a bílé tečky",
+              "kosmetička, domácí péče"
+            ],
+            [
+              "papulopustulózní lehčí",
+              "pár červených pupínků a pustul",
+              "kosmetička + doporučit lékaře, pokud se nelepší"
+            ],
+            [
+              "papulopustulózní těžší",
+              "mnoho zanícených projevů",
+              "dermatolog, kosmetička jen doplňkově"
+            ],
+            [
+              "nodulocystické",
+              "uzly, cysty, jizvy",
+              "dermatolog"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Čištění pleti krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rozhovor a prohlídka pleti: forma akné, léky, alergie, kontraindikace.",
+            "Odlíčení a jemné čištění.",
+            "Změkčení pleti (teplý obklad nebo pára podle typu pleti).",
+            "Šetrné odstranění **komedonů** v rukavicích – nikdy zanícených pupínků a uzlů.",
+            "Dezinfekce ošetřené pleti.",
+            "Zklidňující maska.",
+            "Lehký nekomedogenní krém a doporučení domácí péče."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co v salonu nedělat"
+        },
+        {
+          "type": "list",
+          "items": [
+            "nevymačkávat pustuly, uzly a cysty",
+            "nedělat agresivní mechanický peeling na zanícenou pleť",
+            "nemasírovat zanícenou pleť – šíří se zánět",
+            "u klienta, který bere lék **isotretinoin**, nedělat peelingy, depilaci voskem ani jiné zákroky, které dráždí kůži; kůže je při léčbě a ještě nějakou dobu po ní velmi křehká – postupuj podle doporučení lékaře"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co při akné kosmetička dělá a co ne."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "ano",
+              "ne"
+            ],
+            "items": [
+              {
+                "text": "vytlačení otevřeného komedonu po změkčení",
+                "group": 0
+              },
+              {
+                "text": "vymačkání hlubokého uzlu",
+                "group": 1
+              },
+              {
+                "text": "doporučení nekomedogenní kosmetiky",
+                "group": 0
+              },
+              {
+                "text": "silná masáž zanícené pleti",
+                "group": 1
+              },
+              {
+                "text": "poslat klienta s jizvami k dermatologovi",
+                "group": 0
+              },
+              {
+                "text": "hrubý peeling přes pustuly",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka se ptá, jestli si má pleť s akné vysušovat lihem, „aby se nemastila“. Co poradíš?",
+          "answer": "Ne. Líh pleť vysuší a podráždí, ochranná bariéra se oslabí a pleť pak může tvořit ještě víc mazu. Doporučím **jemné čištění** dvakrát denně, lehký **hydratační nekomedogenní** krém a ochranu před sluncem."
+        },
+        {
+          "type": "example",
+          "question": "Klient s akné bere od dermatologa isotretinoin a chce depilaci obočí voskem. Co uděláš?",
+          "answer": "Depilaci voskem **odmítnu**. Při léčbě isotretinoinem je kůže tenká a křehká, vosk by ji mohl strhnout. Nabídnu šetrnou úpravu pinzetou a doporučím řídit se pokyny dermatologa."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Akné je z toho, že se člověk málo myje nebo jí čokoládu.",
+          "right": "Hlavní příčinou jsou **hormony**, **zvýšená tvorba mazu**, **ucpání folikulů**, **bakterie** a **dědičnost**. Hygiena a strava hrají spíš doplňkovou roli.",
+          "why": "Akné není špína. Moc časté mytí a drhnutí ho může naopak zhoršit."
+        },
+        {
+          "type": "summary",
+          "text": "Kosmetička čistí komedony, učí domácí péči a doporučuje nekomedogenní kosmetiku. Zanícené pupínky a uzly nevymačkává; těžké akné a klienty s jizvami posílá k dermatologovi."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je základním projevem akné?",
+      "options": [
+        "komedon",
+        "pigmentová skvrna",
+        "bradavice"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč je otevřený komedon černý?",
+      "options": [
+        "obsah na vzduchu oxiduje",
+        "je v něm špína",
+        "je v něm krev"
+      ],
+      "answer": 0,
+      "hints": [
+        "Bílá tečka je zavřená, černá otevřená. Co se změní, když je obsah na vzduchu?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hormony v pubertě zvyšují tvorbu kožního mazu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Hluboké uzly a cysty má kosmetička vymačkat, aby se pleť rychleji zhojila.",
+      "answer": false,
+      "explanation": "Uzly se nevymačkávají; těžké akné patří dermatologovi."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky vzniku akné.",
+      "items": [
+        "zvýšená tvorba mazu",
+        "ucpání ústí folikulu",
+        "množení bakterií",
+        "zánět"
+      ],
+      "hints": [
+        "Začni tím, co spouští hormony."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje kosmetika, která neucpává póry?",
+      "answers": [
+        "nekomedogenní",
+        "nekomedogenni",
+        "non-komedogenní"
+      ],
+      "hints": [
+        "Je to zápor slova odvozeného od „komedon“."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj formu akné s typickým projevem.",
+      "pairs": [
+        [
+          "komedonické",
+          "černé a bílé tečky"
+        ],
+        [
+          "papulopustulózní",
+          "červené pupínky a pustuly"
+        ],
+        [
+          "nodulocystické",
+          "hluboké uzly a cysty"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klient bere isotretinoin. Které ošetření mu neuděláš?",
+      "options": [
+        "depilaci voskem",
+        "odlíčení",
+        "jemnou hydratační masku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje lékař, ke kterému posíláš klienta s těžkým akné?",
+      "answers": [
+        "dermatolog",
+        "kožní lékař",
+        "kozni lekar"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mechanický peeling je vhodný na pleť s mnoha zanícenými pustulami.",
+      "answer": false,
+      "explanation": "Dráždí zanícenou pleť a může šířit infekci."
+    },
+    {
+      "type": "choice",
+      "question": "Která bakterie se uplatňuje při vzniku akné?",
+      "options": [
+        "Cutibacterium acnes",
+        "Escherichia coli",
+        "Streptococcus pneumoniae"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky čištění pleti s akné.",
+      "items": [
+        "rozhovor a prohlídka",
+        "odlíčení a čištění",
+        "změkčení pleti",
+        "odstranění komedonů",
+        "dezinfekce",
+        "zklidňující maska"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak vzniká akné.",
+      "answer": "Hormony zvýší tvorbu mazu, ústí folikulu se ucpe zrohovatělými buňkami a vznikne komedon. V ucpaném folikulu se množí bakterie Cutibacterium acnes a vznikne zánět: papuly, pustuly, u těžkých forem uzly a cysty."
+    },
+    {
+      "type": "open",
+      "question": "Co smí kosmetička u klienta s akné dělat a kdy ho má poslat k lékaři?",
+      "answer": "Smí šetrně čistit pleť, odstraňovat komedony, zklidňovat a poradit s domácí péčí a nekomedogenní kosmetikou. K dermatologovi patří klient s mnoha zanícenými projevy, uzly, cystami, jizvami nebo když se akné nelepší."
+    }
+  ]
+}
