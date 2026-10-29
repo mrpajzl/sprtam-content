@@ -1,0 +1,369 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "klasicka-manikura",
+  "title": "Postup klasické manikúry",
+  "emoji": "🖐️",
+  "explanations": [
+    {
+      "title": "Jedna klientka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Paní Marie přijde do salonu. Má ruce od práce na zahradě, nehty různě dlouhé, kůžičky přerostlé a na jednom prstu záděrku. Za necelou hodinu odchází s upravenýma rukama a nalakovanými nehty."
+        },
+        {
+          "type": "text",
+          "text": "Klasická manikúra má pevné pořadí kroků. Když ho dodržíš, nic nevynecháš a pracuješ hygienicky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Manikúra",
+          "definition": "Kosmetická péče o ruce a nehty: úprava tvaru a délky nehtů, ošetření kůžičky, masáž a lakování.",
+          "example": "Klasická manikúra s lakováním."
+        },
+        {
+          "type": "term",
+          "term": "Nehtová kůžička",
+          "definition": "Kůže u kořene nehtu. Její odumřelá vrstvička (kutikula) přerůstá na nehet a při manikúře se upravuje.",
+          "example": "Kůžička přerostlá do třetiny nehtu."
+        },
+        {
+          "type": "term",
+          "term": "Záděrka",
+          "definition": "Natržený proužek kůže u nehtu. Když se vytrhne, bolí a může se zanítit.",
+          "example": "Odstávající kousek kůže na boku nehtu."
+        },
+        {
+          "type": "term",
+          "term": "Změkčující lázeň",
+          "definition": "Miska s teplou vodou a přípravkem, ve které se namočí prsty. Kůžička změkne a dobře se odsouvá.",
+          "example": "Prsty 3–5 minut v teplé vodě s jemným mýdlem."
+        },
+        {
+          "type": "heading",
+          "text": "Manikúra paní Marie"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Příprava**: čisté pracoviště, vydezinfikované nebo sterilní nástroje, jednorázové pomůcky, ručník.",
+            "**Rozhovor a prohlídka**: zdraví nehtů a kůže, alergie, přání klientky.",
+            "**Dezinfekce** rukou manikérky i klientky.",
+            "**Odlakování** odlakovačem, i když lak skoro není vidět.",
+            "**Úprava tvaru a délky** nehtů pilníkem (případně zkrácení nůžkami).",
+            "**Změkčující lázeň** pro kůžičky.",
+            "**Ošetření kůžičky**: odsunutí a odstranění odumřelé kůžičky, odstřižení záděrek.",
+            "**Masáž rukou** krémem nebo olejem.",
+            "**Odmaštění** nehtů.",
+            "**Lakování**: podkladový lak, barva, nadlak."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč se nehty pilují před změkčující lázní, a ne po ní?",
+          "answer": "Ve vodě nehet **nasákne a změkne**. Při pilování měkkého nehtu se ploténka snadno třepí a láme. Proto se tvar dělá na **suchém** nehtu a až pak jdou prsty do lázně."
+        },
+        {
+          "type": "example",
+          "question": "Proč se nehty před lakováním odmašťují, když jsou čisté?",
+          "answer": "Po masáži zůstal na nehtech **krém nebo olej**. Lak by na mastném povrchu nedržel a brzy by se odlupoval. Odmaštění odstraní tuk a lak lépe přilne."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Lakuji hned po masáži, nehty jsou přece čisté.",
+          "right": "Po masáži nehty odmastím a teprve pak lakuji.",
+          "why": "Zbytky krému nebo oleje brání přilnutí laku, lak se pak loupe."
+        },
+        {
+          "type": "summary",
+          "text": "Klasická manikúra: příprava, prohlídka, dezinfekce, odlakování, tvar nehtů, změkčující lázeň, kůžička, masáž, odmaštění, lakování. Tvar se piluje na suchém nehtu."
+        }
+      ]
+    },
+    {
+      "title": "Mokrá a suchá",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Manikúra nemá jen jednu podobu. Některé salony namáčejí prsty do vody, jiné pracují nasucho. Obě cesty mají stejný cíl: zdravé, upravené ruce a nehty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Manikúra",
+          "definition": "Péče o ruce a nehty: tvar nehtů, kůžička, masáž, lakování.",
+          "example": "Manikúra před svatbou."
+        },
+        {
+          "type": "term",
+          "term": "Mokrá (klasická) manikúra",
+          "definition": "Kůžička se změkčuje ve vodní lázni a pak se odsouvá a stříhá.",
+          "example": "Prsty v misce s teplou vodou."
+        },
+        {
+          "type": "term",
+          "term": "Suchá manikúra",
+          "definition": "Bez vodní lázně. Kůžička se změkčí přípravkem (odstraňovačem kůžičky) nebo se upravuje frézkou nebo přístrojem.",
+          "example": "Kombinovaná manikúra s brusnými nástavci."
+        },
+        {
+          "type": "term",
+          "term": "Odstraňovač kůžičky",
+          "definition": "Přípravek, který změkčí a rozpustí odumřelou kůžičku. Působí jen krátce, pak se smyje nebo setře.",
+          "example": "Gel na kůžičku nanesený štětečkem."
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Mokrá manikúra",
+            "Suchá manikúra"
+          ],
+          "rows": [
+            [
+              "změkčení kůžičky",
+              "teplá lázeň",
+              "přípravek nebo bez změkčení"
+            ],
+            [
+              "nástroje",
+              "odsouvač, kleště",
+              "odsouvač, kleště nebo frézka"
+            ],
+            [
+              "vhodné pro",
+              "hrubou a suchou kůžičku",
+              "před gel lakem a modeláží"
+            ],
+            [
+              "pozor na",
+              "nehet nasákne vodou",
+              "zručnost s frézkou, prach"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kontraindikace manikúry"
+        },
+        {
+          "type": "list",
+          "items": [
+            "plíseň nehtů nebo kůže rukou",
+            "zánět nehtového valu (zarudlý, oteklý, bolestivý)",
+            "bradavice v okolí nehtu",
+            "otevřené rány, ekzém v aktivní fázi",
+            "neznámé změny nehtu: doporučit lékaře"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Seřaď si v hlavě kroky klasické manikúry a pak si je ověř na kartičkách."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "1. krok po dezinfekci",
+                "back": "odlakování"
+              },
+              {
+                "front": "Tvar nehtů",
+                "back": "pilník na suchém nehtu"
+              },
+              {
+                "front": "Před ošetřením kůžičky",
+                "back": "změkčující lázeň nebo přípravek"
+              },
+              {
+                "front": "Před lakováním",
+                "back": "odmaštění nehtů"
+              },
+              {
+                "front": "Lakování",
+                "back": "podkladový lak, barva, nadlak"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka chce manikúru s gel lakem. Je lepší mokrá, nebo suchá?",
+          "answer": "Lepší je **suchá**. Nehet ve vodní lázni nasákne vodou, mírně nabobtná a po vyschnutí se zmenší. Gel lak by pak hůř držel a mohl by odstoupit."
+        },
+        {
+          "type": "example",
+          "question": "Klientka má jeden nehtový val zarudlý, oteklý a bolestivý. Co uděláš?",
+          "answer": "Jde o **zánět**. Ten prst neošetřuješ, nemáčíš ho a nestříháš kůži. Klientce doporučíš lékaře. Ostatní prsty můžeš ošetřit, pracuješ ale hygienicky a nástroj, který by se zánětu dotkl, hned vyřadíš na dezinfekci."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Odstraňovač kůžičky nechám působit déle, ať je kůžička úplně měkká.",
+          "right": "Odstraňovač nechám působit jen dobu podle návodu a pak ho setřu nebo smyji.",
+          "why": "Přípravek rozpouští odumřelou kůži. Dlouhým působením dráždí i živou kůži kolem nehtu."
+        },
+        {
+          "type": "summary",
+          "text": "Mokrá manikúra změkčuje kůžičku vodou, suchá přípravkem nebo pracuje bez změkčení a hodí se před gel lakem. Při zánětu, plísni nebo ranách se postižené místo neošetřuje a klientka jde k lékaři."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď kroky klasické manikúry.",
+      "items": [
+        "dezinfekce rukou",
+        "odlakování",
+        "úprava tvaru nehtů",
+        "změkčující lázeň",
+        "ošetření kůžičky",
+        "masáž rukou",
+        "odmaštění a lakování"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se nehty pilují před lázní?",
+      "options": [
+        "mokrý nehet se třepí a láme",
+        "po lázni je nehet moc tvrdý",
+        "pilník ve vodě rezaví",
+        "kvůli rychlosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Před lakováním je potřeba nehty odmastit.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje natržený proužek kůže u nehtu?",
+      "answers": [
+        "záděrka",
+        "zaderka"
+      ],
+      "hints": [
+        "Když se vytrhne, bolí a může se zanítit."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která manikúra se hodí před gel lakem?",
+      "options": [
+        "suchá",
+        "mokrá s dlouhou lázní",
+        "žádná",
+        "jen masáž"
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na to, co dělá voda s nehtem."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj krok s jeho účelem.",
+      "pairs": [
+        [
+          "změkčující lázeň",
+          "změkčí kůžičku"
+        ],
+        [
+          "odmaštění",
+          "lak lépe drží"
+        ],
+        [
+          "odlakování",
+          "odstraní starý lak"
+        ],
+        [
+          "masáž",
+          "uvolní a vyživí ruce"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Prst se zaníceným nehtovým valem se při manikúře normálně ošetří.",
+      "answer": false,
+      "explanation": "Zánět je kontraindikace, klientka patří k lékaři."
+    },
+    {
+      "type": "choice",
+      "question": "Co je kontraindikace manikúry?",
+      "options": [
+        "plíseň nehtů",
+        "krátké nehty",
+        "suchá kůže rukou",
+        "přerostlá kůžička"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje manikúra, při které se kůžička změkčuje ve vodní lázni? (… manikúra)",
+      "answers": [
+        "mokrá",
+        "mokra",
+        "klasická",
+        "klasicka"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Odstraňovač kůžičky smí působit jen dobu podle návodu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co následuje po ošetření kůžičky?",
+      "options": [
+        "masáž rukou",
+        "odlakování",
+        "úprava tvaru",
+        "změkčující lázeň"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup klasické manikúry.",
+      "answer": "Připravím pracoviště, prohlédnu ruce, vydezinfikuji je. Odlakuji, upravím tvar nehtů na suchu, dám prsty do změkčující lázně, ošetřím kůžičku, namasíruji ruce, odmastím nehty a nalakuji podkladovým lakem, barvou a nadlakem."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi mokrou a suchou manikúrou?",
+      "answer": "Mokrá manikúra změkčuje kůžičku v teplé vodní lázni. Suchá je bez vody, kůžičku změkčí přípravek nebo se upravuje frézkou. Suchá se hodí před gel lakem, protože nehet nenasákne vodou."
+    }
+  ]
+}

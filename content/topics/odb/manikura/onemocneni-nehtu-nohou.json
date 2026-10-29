@@ -1,0 +1,380 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "onemocneni-nehtu-nohou",
+  "title": "Onemocnění nehtů a kůže nohou",
+  "emoji": "🩺",
+  "explanations": [
+    {
+      "title": "Co vidíš",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pedikérka vidí za den spoustu nohou. Některé jsou zdravé, jiné mají žluté zesílené nehty, popraskanou kůži mezi prsty nebo tvrdé bolestivé body. Musí poznat, co může ošetřit, a co patří lékaři."
+        },
+        {
+          "type": "text",
+          "text": "Pedikérka **nestanovuje diagnózu a neléčí**. Pozná ale varovné znaky, chrání se před nákazou a posílá klienta k lékaři."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Onychomykóza",
+          "definition": "Plísňové onemocnění nehtu. Nehet žloutne, ztlušťuje, drolí se a může se odlupovat.",
+          "example": "Žlutý, zesílený a drolivý nehet palce."
+        },
+        {
+          "type": "term",
+          "term": "Plíseň nohou (tinea pedis)",
+          "definition": "Plísňové onemocnění kůže nohou, nejčastěji mezi prsty. Kůže svědí, je rozmočená, praská a olupuje se.",
+          "example": "Bílá rozmočená kůže mezi 4. a 5. prstem."
+        },
+        {
+          "type": "term",
+          "term": "Bradavice",
+          "definition": "Tvrdý výrůstek na kůži, který způsobuje virus. Na chodidle bývá zatlačená dovnitř a může bolet při chůzi.",
+          "example": "Tvrdá skvrna s tmavými tečkami na chodidle."
+        },
+        {
+          "type": "term",
+          "term": "Kuří oko",
+          "definition": "Malé, ostře ohraničené ztluštění kůže s tvrdým jádrem, které tlačí do hloubky a bolí. Vzniká tlakem, často bot.",
+          "example": "Bolestivý tvrdý bod na kloubu malíčku."
+        },
+        {
+          "type": "term",
+          "term": "Paronychie",
+          "definition": "Zánět nehtového valu (kůže kolem nehtu). Val je zarudlý, oteklý, bolestivý, někdy s hnisem.",
+          "example": "Oteklý bolestivý kraj palce u zarůstajícího nehtu."
+        },
+        {
+          "type": "heading",
+          "text": "Co je nakažlivé"
+        },
+        {
+          "type": "text",
+          "text": "Plísně nehtů a kůže a bradavice jsou **nakažlivé**. Přenášejí se přes nástroje, podlahu, ručníky a vaničky. Proto se nástroje po každém klientovi dezinfikují a sterilizují."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co je nakažlivé a co vzniká tlakem nebo jinou příčinou."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "nakažlivé",
+              "nenakažlivé"
+            ],
+            "items": [
+              {
+                "text": "plíseň nehtu",
+                "group": 0
+              },
+              {
+                "text": "plíseň mezi prsty",
+                "group": 0
+              },
+              {
+                "text": "bradavice",
+                "group": 0
+              },
+              {
+                "text": "kuří oko",
+                "group": 1
+              },
+              {
+                "text": "mozol na patě",
+                "group": 1
+              },
+              {
+                "text": "zarůstající nehet bez zánětu",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka má jeden nehet žlutý, zesílený a drolivý. Co uděláš?",
+          "answer": "Může jít o **plíseň nehtu**. Nestanovuješ diagnózu, ale doporučíš **lékaře (dermatologa)**. Postižený nehet ošetřuješ odděleným nástrojem nebo ho vynecháš, nástroje pak dezinfikuješ a sterilizuješ. Zdravé nehty zvlášť."
+        },
+        {
+          "type": "example",
+          "question": "Klient má na chodidle tvrdé bolestivé místo. Kuří oko, nebo bradavice?",
+          "answer": "Pomůže pohled zblízka: **kuří oko** je na místě tlaku a má tvrdé průsvitné jádro. **Bradavice** narušuje rýhování kůže a bývají v ní drobné tmavé tečky. Když si nejsi jistá, místo nebrousíš a doporučíš lékaře. Bradavici bys rozšířila."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Bradavici obrousím frézkou, ať klienta netlačí.",
+          "right": "Bradavici nebrousím ani nestříhám, klient jde k lékaři.",
+          "why": "Bradavici způsobuje virus. Broušením by se rozšířil na další místa a nástroj by se zamořil."
+        },
+        {
+          "type": "summary",
+          "text": "Plíseň nehtů (onychomykóza), plíseň nohou a bradavice jsou nakažlivé a patří lékaři. Kuří oko a mozol vznikají tlakem. Paronychie je zánět nehtového valu. Pedikérka nediagnostikuje, rozpozná a odešle."
+        }
+      ]
+    },
+    {
+      "title": "Ošetřím, nebo pošlu?",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "U každé změny na noze si pedikérka klade jednu otázku: smím to ošetřit, nebo musím klienta poslat k lékaři? Odpověď chrání klienta i ostatní, kteří přijdou po něm."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mozol",
+          "definition": "Plošné ztluštění zrohovatělé kůže bez jádra. Vzniká dlouhodobým třením nebo tlakem.",
+          "example": "Tvrdá kůže na patě nebo pod prsty."
+        },
+        {
+          "type": "term",
+          "term": "Onycholýza",
+          "definition": "Oddělení nehtu od nehtového lůžka. Nehet od okraje bělá a odstává.",
+          "example": "Bílý okraj palce, pod který se dá zasunout tyčinka."
+        },
+        {
+          "type": "term",
+          "term": "Zarůstající nehet",
+          "definition": "Okraj nehtu se zařezává do nehtového valu (kůže po straně nehtu).",
+          "example": "Bolest na kraji palce v úzkých botách."
+        },
+        {
+          "type": "term",
+          "term": "Kontraindikace",
+          "definition": "Důvod, proč ošetření neudělat nebo ho upravit.",
+          "example": "Hnisavý zánět u nehtu."
+        },
+        {
+          "type": "heading",
+          "text": "Rozhodovací tabulka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Stav",
+            "Co udělá pedikérka"
+          ],
+          "rows": [
+            [
+              "mozol, ztvrdlá kůže",
+              "ošetří: odstraní odumřelou vrstvu, poradí obuv a krém"
+            ],
+            [
+              "kuří oko bez zánětu",
+              "šetrně ošetří povrch, ulehčí tlak, poradí obuv; hluboké nebo bolestivé k lékaři"
+            ],
+            [
+              "zarůstající nehet bez zánětu",
+              "správně zkrátí nehet rovně, poradí; opakované potíže k lékaři nebo podologovi"
+            ],
+            [
+              "zarůstající nehet se zánětem, paronychie",
+              "neošetřuje, posílá k lékaři"
+            ],
+            [
+              "plíseň nehtu nebo kůže",
+              "postižené místo neošetřuje nebo jen zvláštními nástroji, posílá k lékaři"
+            ],
+            [
+              "bradavice",
+              "neošetřuje, posílá k lékaři"
+            ],
+            [
+              "onycholýza, změna barvy nehtu, tmavá skvrna pod nehtem bez úrazu",
+              "posílá k lékaři"
+            ],
+            [
+              "rána, vřed, zarudnutí u diabetika",
+              "posílá ihned k lékaři"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prevence přenosu v salonu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Prohlédni nohy před ošetřením.",
+            "Pracuj v rukavicích.",
+            "Postižená místa ošetřuj až nakonec nebo vůbec, zvláštním nástrojem.",
+            "Nástroje dezinfikuj a sterilizuj, jednorázové pomůcky vyhoď.",
+            "Vydezinfikuj vaničku, křeslo a podlahu kolem.",
+            "Klientovi poraď: sušit mezi prsty, střídat boty, vlastní pantofle ve sprchách a bazénech."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka má zarudlý, oteklý kraj palce s trochou hnisu u zarůstajícího nehtu. Chce, abys jí roh nehtu vystřihla. Co uděláš?",
+          "answer": "Je tu **zánět s hnisem (paronychie)**. To je kontraindikace. Nestříháš, netlačíš, nemáčíš. Doporučíš **lékaře**, protože zánět může vyžadovat léčbu. Až se vyhojí, můžeš poradit správné stříhání a obuv."
+        },
+        {
+          "type": "example",
+          "question": "Klientovi jde od okraje nehtu pod ploténku bílé zbarvení a nehet odstává. Neví o žádném úrazu. Co uděláš?",
+          "answer": "Jde o **onycholýzu**. Má mnoho možných příčin (plíseň, lupénka, úraz, léky). Ploténku neodtrháváš ani nečistíš do hloubky. Nehet zkrátíš a doporučíš **lékaře**, aby zjistil příčinu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pedikérka klientovi řekne: „Máte plíseň, kupte si tenhle lak a bude to dobré.“",
+          "right": "Pedikérka řekne: „Nehet vypadá změněně, doporučuji ukázat ho lékaři.“",
+          "why": "Diagnózu a léčbu určuje lékař. Plíseň se navíc musí potvrdit vyšetřením, podobně vypadají i jiné nemoci."
+        },
+        {
+          "type": "summary",
+          "text": "Mozol a ztvrdlou kůži pedikérka ošetří. Kuří oko a zarůstající nehet bez zánětu šetrně, se zánětem posílá k lékaři. Plísně, bradavice, onycholýzu a rány u diabetika posílá k lékaři vždy."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jak se odborně jmenuje plísňové onemocnění nehtu?",
+      "answers": [
+        "onychomykóza",
+        "onychomykoza"
+      ],
+      "hints": [
+        "Slovo začíná řeckým „onycho-“ = nehet."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je nakažlivé?",
+      "options": [
+        "bradavice",
+        "kuří oko",
+        "mozol",
+        "zarůstající nehet bez zánětu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj onemocnění s popisem.",
+      "pairs": [
+        [
+          "onychomykóza",
+          "žlutý zesílený drolivý nehet"
+        ],
+        [
+          "kuří oko",
+          "bolestivé ztluštění s jádrem"
+        ],
+        [
+          "paronychie",
+          "zánět nehtového valu"
+        ],
+        [
+          "onycholýza",
+          "oddělení nehtu od lůžka"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pedikérka smí obrousit bradavici frézkou.",
+      "answer": false,
+      "explanation": "Bradavici způsobuje virus, broušením by se rozšířil."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mozol na patě může pedikérka ošetřit odstraněním odumřelé vrstvy.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kde se nejčastěji objevuje plíseň nohou?",
+      "options": [
+        "mezi prsty",
+        "na nártu",
+        "na kotníku",
+        "na lýtku"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kde zůstává kůže nejdéle vlhká?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Zarůstající nehet je zarudlý, oteklý a hnisá. Co uděláš?",
+      "options": [
+        "pošlu klienta k lékaři",
+        "vystřihnu roh nehtu",
+        "dám dlouhou koupel a vymačkám hnis",
+        "obrousím val frézkou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky prevence přenosu nákazy při pedikúře.",
+      "items": [
+        "prohlídka nohou",
+        "rukavice",
+        "postižená místa až nakonec zvláštním nástrojem",
+        "dezinfekce a sterilizace nástrojů",
+        "dezinfekce vaničky a okolí"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje zánět nehtového valu?",
+      "answers": [
+        "paronychie",
+        "paronychium"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tmavá skvrna pod nehtem bez úrazu je důvod doporučit lékaře.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co poradíš klientovi jako prevenci plísní?",
+      "options": [
+        "sušit kůži mezi prsty a nosit vlastní pantofle v bazénu",
+        "chodit bos ve společných sprchách",
+        "nosit stále stejné vlhké boty",
+        "nemýt nohy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Které stavy na noze pedikérka ošetří a se kterými posílá klienta k lékaři?",
+      "answer": "Ošetří mozoly, ztvrdlou kůži a šetrně kuří oko a zarůstající nehet bez zánětu. K lékaři posílá plísně nehtů a kůže, bradavice, záněty s hnisem, onycholýzu, nevysvětlitelné změny nehtu a každou ranku u diabetika."
+    },
+    {
+      "type": "open",
+      "question": "Jak zabráníš přenosu plísní a bradavic v salonu?",
+      "answer": "Prohlédnu nohy, pracuji v rukavicích, postižená místa ošetřím zvlášť nebo vůbec, nástroje dezinfikuji a sterilizuji, jednorázové pomůcky vyhodím a vydezinfikuji vaničku a okolí."
+    }
+  ]
+}

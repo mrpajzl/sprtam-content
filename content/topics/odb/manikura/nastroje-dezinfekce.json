@@ -1,0 +1,404 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "nastroje-dezinfekce",
+  "title": "Nástroje a jejich dezinfekce a sterilizace",
+  "emoji": "✂️",
+  "explanations": [
+    {
+      "title": "Kufřík manikérky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Manikérka má na stolku kleštičky, nůžky, pilníky a další nástroje. Každý má svůj účel. Všechny ale přicházejí do styku s kůží různých lidí, někdy i s krví."
+        },
+        {
+          "type": "text",
+          "text": "Proto musí manikérka vědět nejen, k čemu nástroj je, ale i jak ho po každé klientce ošetřit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nehtová kůžička",
+          "definition": "Kůže u kořene nehtu. Její odumřelá vrstvička (kutikula) se při manikúře upravuje.",
+          "example": "Kůžička přerostlá na nehet."
+        },
+        {
+          "type": "term",
+          "term": "Jednorázová pomůcka",
+          "definition": "Pomůcka jen pro jednu klientku. Po použití se vyhodí nebo ji klientka dostane domů.",
+          "example": "Papírový pilník, dřevěná tyčinka."
+        },
+        {
+          "type": "term",
+          "term": "Dezinfekce",
+          "definition": "Ničení choroboplodných zárodků na nástrojích, plochách a kůži, většinou chemickým přípravkem. Nezničí všechny mikroorganismy.",
+          "example": "Ponoření nástrojů do dezinfekčního roztoku."
+        },
+        {
+          "type": "term",
+          "term": "Sterilizace",
+          "definition": "Zničení **všech** mikroorganismů včetně odolných spor, nejčastěji horkým vzduchem nebo párou pod tlakem.",
+          "example": "Kleštičky v horkovzdušném sterilizátoru."
+        },
+        {
+          "type": "heading",
+          "text": "Co je v kufříku"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Nástroj",
+            "K čemu je"
+          ],
+          "rows": [
+            [
+              "kleště na kůžičku",
+              "odstřižení odstávající odumřelé kůže a záděrek"
+            ],
+            [
+              "nůžky na nehty",
+              "zkrácení nehtů"
+            ],
+            [
+              "kleště na nehty",
+              "zkrácení silných nehtů (hlavně na nohou)"
+            ],
+            [
+              "pilník",
+              "úprava tvaru a délky nehtu"
+            ],
+            [
+              "odsouvač (pusher)",
+              "odsunutí kůžičky od nehtu"
+            ],
+            [
+              "kopýtko, dřevěná tyčinka",
+              "jemné odsunutí kůžičky, čištění pod volným okrajem"
+            ],
+            [
+              "leštěnka (buffer)",
+              "vyhlazení a vyleštění povrchu nehtu"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co se po klientce vyhodí nebo jí dá domů a co se dezinfikuje a sterilizuje."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "jednorázové",
+              "dezinfikovat a sterilizovat"
+            ],
+            "items": [
+              {
+                "text": "papírový pilník",
+                "group": 0
+              },
+              {
+                "text": "dřevěná tyčinka",
+                "group": 0
+              },
+              {
+                "text": "vatový tampon",
+                "group": 0
+              },
+              {
+                "text": "kovové kleště na kůžičku",
+                "group": 1
+              },
+              {
+                "text": "kovové nůžky",
+                "group": 1
+              },
+              {
+                "text": "kovový odsouvač",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Manikérka chce používat jeden papírový pilník pro všechny klientky. Proč to nejde?",
+          "answer": "Papírový pilník **nejde vydezinfikovat ani sterilizovat**, nasákne a rozpadl by se. Zachytávají se v něm úlomky kůže a mikroorganismy. Je proto **jednorázový** a po manikúře se vyhodí nebo ho klientka dostane domů."
+        },
+        {
+          "type": "example",
+          "question": "Klientce se při stříhání záděrky objevila kapka krve. Co se stane s kleštičkami?",
+          "answer": "Kleštičky se potřísnily krví, takže hned jdou do **dezinfekce s virucidním účinkem** (účinná i proti virům). Pak se očistí, opláchnou, osuší a **sterilizují**. U další klientky se použijí jiné sterilní kleštičky."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kleštičky stačí po klientce otřít ubrouskem s dezinfekcí.",
+          "right": "Kovové nástroje se dezinfikují ponořením, očistí, opláchnou, osuší a sterilizují.",
+          "why": "Otření nezničí všechny mikroorganismy. Kleštičky se mohou dostat do kontaktu s krví, a tím přenést žloutenku nebo HIV."
+        },
+        {
+          "type": "summary",
+          "text": "Každý nástroj má svůj účel. Jednorázové pomůcky (papírové pilníky, tyčinky) se po klientce vyhodí. Kovové nástroje se po každém použití dezinfikují a sterilizují."
+        }
+      ]
+    },
+    {
+      "title": "Cesta nástroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kleštičky na kůžičku projdou po každé klientce pořád stejnou cestou. Až na jejím konci jsou zase bezpečné. Když se jeden krok vynechá, může se nemoc přenést."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dezinfekce",
+          "definition": "Ničení choroboplodných zárodků. U nástrojů se dělá ponořením do roztoku na dobu podle návodu.",
+          "example": "Nádoba s víčkem a dezinfekčním roztokem."
+        },
+        {
+          "type": "term",
+          "term": "Virucidní",
+          "definition": "Účinný i proti virům. Pro nástroje, které se mohly dotknout krve, je povinný.",
+          "example": "Na etiketě: baktericidní, fungicidní, virucidní."
+        },
+        {
+          "type": "term",
+          "term": "Sterilizace",
+          "definition": "Zničení všech mikroorganismů včetně spor.",
+          "example": "Horkovzdušný sterilizátor, autokláv."
+        },
+        {
+          "type": "term",
+          "term": "Autokláv",
+          "definition": "Přístroj, který sterilizuje nasycenou vodní párou pod tlakem.",
+          "example": "Sterilizace kovových nástrojů v balíčku."
+        },
+        {
+          "type": "heading",
+          "text": "Pět kroků"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Dezinfekce**: hned po použití nástroj ponořit (otevřený, aby roztok dosáhl všude) do roztoku s virucidním účinkem na dobu podle návodu.",
+            "**Mechanická očista**: v rukavicích kartáčkem odstranit zbytky kůže.",
+            "**Oplach** pod tekoucí vodou.",
+            "**Osušení**.",
+            "**Sterilizace** v horkovzdušném sterilizátoru nebo autoklávu a zápis do evidence."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Teploty horkovzdušné sterilizace"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Teplota",
+            "Doba"
+          ],
+          "rows": [
+            [
+              "160 °C",
+              "120 minut"
+            ],
+            [
+              "170 °C",
+              "60 minut"
+            ],
+            [
+              "180 °C",
+              "30 minut"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Doba se počítá od chvíle, kdy celý obsah sterilizátoru dosáhne nastavené teploty. Teploty a doby vycházejí z vyhlášky č. 306/2012 Sb. Přesný postup salonu stojí v jeho **provozním řádu**."
+        },
+        {
+          "type": "heading",
+          "text": "Ruce a pracoviště"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Před i po klientce umýt a vydezinfikovat ruce.",
+            "Ruce klientky vydezinfikovat před manikúrou.",
+            "Rukavice při práci, kde hrozí kontakt s krví.",
+            "Pracovní plochu a lampu otřít dezinfekcí po každé klientce.",
+            "Dezinfekční roztok měnit podle návodu, nedolévat do starého."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Manikérka sterilizuje nástroje při 160 °C. Jak dlouho musí sterilizace trvat?",
+          "answer": "Podle tabulky: 160 °C → **120 minut**. Počítá se od dosažení teploty, ne od zapnutí přístroje."
+        },
+        {
+          "type": "example",
+          "question": "Proč se nástroj nejdřív dezinfikuje a až potom čistí kartáčkem?",
+          "answer": "Na nástroji mohou být viry z krve. Když by ho manikérka nejdřív drhla, mohla by se **sama nakazit** nebo rozstříknout zárodky do okolí. Dezinfekce na začátku je ochranou toho, kdo nástroj čistí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Do dezinfekčního roztoku přiliji nový, když ho ubude, ať nemusím měnit celou nádobu.",
+          "right": "Roztok měním celý podle návodu výrobce a provozního řádu.",
+          "why": "Starý roztok je znečištěný a jeho účinek slábne. Doléváním se nádoba nevyčistí."
+        },
+        {
+          "type": "summary",
+          "text": "Cesta nástroje: dezinfekce s virucidním účinkem → mechanická očista → oplach → osušení → sterilizace (např. 180 °C 30 minut). Ruce a plochy se dezinfikují po každé klientce."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj nástroj s účelem.",
+      "pairs": [
+        [
+          "kleště na kůžičku",
+          "odstřižení záděrek"
+        ],
+        [
+          "pilník",
+          "úprava tvaru nehtu"
+        ],
+        [
+          "odsouvač",
+          "odsunutí kůžičky"
+        ],
+        [
+          "leštěnka",
+          "vyleštění povrchu"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Papírový pilník se po klientce vydezinfikuje a použije znovu.",
+      "answer": false,
+      "explanation": "Papírový pilník je jednorázový, nejde vydezinfikovat."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu kovového nástroje po použití.",
+      "items": [
+        "dezinfekce ponořením",
+        "mechanická očista",
+        "oplach",
+        "osušení",
+        "sterilizace"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik minut trvá sterilizace horkým vzduchem při 170 °C?",
+      "answers": [
+        "60"
+      ],
+      "hints": [
+        "Při 180 °C je to polovina."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená, že přípravek je virucidní?",
+      "options": [
+        "ničí i viry",
+        "ničí jen plísně",
+        "voní",
+        "je určený na ruce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co zničí všechny mikroorganismy včetně spor?",
+      "options": [
+        "sterilizace",
+        "dezinfekce",
+        "oplach",
+        "osušení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje přístroj, který sterilizuje párou pod tlakem?",
+      "answers": [
+        "autokláv",
+        "autoklav"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dezinfekční roztok se může donekonečna dolévat.",
+      "answer": false,
+      "explanation": "Roztok se mění celý podle návodu, jinak slábne a je znečištěný."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se nástroje dávají do roztoku otevřené?",
+      "options": [
+        "aby roztok dosáhl na všechna místa",
+        "aby rychleji uschly",
+        "aby se nezlomily",
+        "aby se vešly do nádoby"
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na místa mezi čelistmi kleští."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy si manikérka dezinfikuje ruce?",
+      "options": [
+        "před i po každé klientce",
+        "jen ráno",
+        "jen když se pořeže",
+        "jen po pedikúře"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Přesný hygienický postup salonu je popsaný v jeho provozním řádu.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak ošetříš kovové kleštičky po klientce.",
+      "answer": "Hned je ponořím otevřené do dezinfekce s virucidním účinkem na dobu podle návodu. Pak je v rukavicích očistím kartáčkem, opláchnu, osuším a sterilizuji, například horkým vzduchem 180 °C 30 minut. Sterilizaci zapíšu."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi jednorázovými a opakovaně použitelnými nástroji? Uveď příklady.",
+      "answer": "Jednorázové pomůcky jako papírový pilník, dřevěná tyčinka nebo tampon se po klientce vyhodí nebo je dostane domů, protože nejdou vydezinfikovat. Kovové nástroje jako kleštičky, nůžky a odsouvač se po každé klientce dezinfikují a sterilizují."
+    }
+  ]
+}
