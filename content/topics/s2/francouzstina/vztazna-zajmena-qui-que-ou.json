@@ -1,0 +1,454 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vztazna-zajmena-qui-que-ou",
+  "title": "Vztažná zájmena qui, que, où",
+  "emoji": "🔗",
+  "explanations": [
+    {
+      "title": "Co je za ním?",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„To je kluk, **který** bydlí vedle nás.“ „To je film, **který** jsem viděl.“ Česky v obou větách říkáš *který*. Francouzština má ale dvě různá slova: **qui** a **que**. A pro místo a čas ještě **où**."
+        },
+        {
+          "type": "text",
+          "text": "Vztažná zájmena spojí dvě krátké věty do jedné. Díky nim nemusíš opakovat podstatné jméno a mluvíš plynuleji."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažná věta",
+          "definition": "Věta, která blíž popisuje podstatné jméno. Začíná vztažným zájmenem.",
+          "example": "le garçon **qui habite ici** = kluk, který tu bydlí"
+        },
+        {
+          "type": "term",
+          "term": "Podmět",
+          "definition": "Kdo nebo co dělá činnost. Ptáš se „kdo? co?“.",
+          "example": "**Le garçon** habite ici."
+        },
+        {
+          "type": "term",
+          "term": "Předmět",
+          "definition": "Koho nebo co se činnost týká.",
+          "example": "J’ai vu **le film**."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidlo"
+        },
+        {
+          "type": "table",
+          "head": [
+            "zájmeno",
+            "kdy",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "**qui**",
+              "je podmětem vztažné věty, hned za ním je **sloveso**",
+              "le garçon **qui habite** ici",
+              "kluk, který tu bydlí"
+            ],
+            [
+              "**que** (qu’)",
+              "je předmětem, za ním je **nový podmět** + sloveso",
+              "le film **que j’ai vu**",
+              "film, který jsem viděl"
+            ],
+            [
+              "**où**",
+              "**místo** nebo **čas**",
+              "la ville **où** j’habite / le jour **où** il est né",
+              "město, kde bydlím / den, kdy se narodil"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se rozhodnout"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Podívej se na slovo hned za mezerou.",
+            "Je to sloveso (*habite, est, parle*)? → **qui**.",
+            "Je to podmět (*je, tu, il, Marie, mes parents*)? → **que**.",
+            "Mluvíš o místě nebo čase (kde, kdy)? → **où**."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*que* se před samohláskou zkracuje na **qu’** (*le livre qu’il lit*). *qui* se **nezkracuje nikdy** (*l’ami qui arrive*)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "C’est le garçon",
+                "after": "parle français.",
+                "options": [
+                  "qui",
+                  "que",
+                  "où"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "C’est le livre",
+                "after": "je lis.",
+                "options": [
+                  "que",
+                  "qui",
+                  "où"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "C’est la ville",
+                "after": "je suis né.",
+                "options": [
+                  "où",
+                  "que",
+                  "qui"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Voici la robe",
+                "after": "Marie a achetée.",
+                "options": [
+                  "que",
+                  "qui",
+                  "où"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "C’est le chien",
+                "after": "aboie tout le temps.",
+                "options": [
+                  "qui",
+                  "que",
+                  "où"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty: J’ai une amie. Elle habite à Nice.",
+          "answer": "*Elle* je podmět, ve vztažné větě za zájmenem hned sloveso *habite* → **qui**: **J’ai une amie qui habite à Nice.**"
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty: C’est un film. Mes parents adorent ce film.",
+          "answer": "Za zájmenem bude nový podmět *mes parents* → **que**: **C’est un film que mes parents adorent.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "L’ami qu’arrive.",
+          "right": "L’ami qui arrive.",
+          "why": "*qui* se nikdy nezkracuje. Zkracuje se jen *que → qu’*."
+        },
+        {
+          "type": "summary",
+          "text": "**qui** + sloveso (je podmětem), **que/qu’** + podmět + sloveso (je předmětem), **où** pro místo a čas. Česky ve všech případech často „který“ nebo „kde, kdy“."
+        }
+      ]
+    },
+    {
+      "title": "Hádanky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zahrajeme si hádanky. Popíšu věc nebo místo jednou větou a ty hádáš, co to je. V hádankách se vztažná zájmena hodí nejvíc: *C’est un animal qui…, C’est une chose que…, C’est un endroit où…*"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažné zájmeno",
+          "definition": "Slovo, které připojí k podstatnému jménu vedlejší větu, aby ho popsalo. Francouzsky *qui, que, où*.",
+          "example": "un animal **qui** miaule = zvíře, které mňouká"
+        },
+        {
+          "type": "term",
+          "term": "qui",
+          "definition": "Zastupuje **podmět**. Za ním následuje rovnou sloveso.",
+          "example": "un animal qui **dort** beaucoup"
+        },
+        {
+          "type": "term",
+          "term": "que",
+          "definition": "Zastupuje **předmět**. Za ním je další podmět a sloveso. Před samohláskou *qu’*.",
+          "example": "une chose que **tu manges**"
+        },
+        {
+          "type": "term",
+          "term": "où",
+          "definition": "Zastupuje **místo** (kde) nebo **čas** (kdy).",
+          "example": "un endroit où on achète du pain"
+        },
+        {
+          "type": "heading",
+          "text": "Hádanky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*C’est un animal **qui** fait « miaou ».* (To je zvíře, které dělá „mňau“.) → *le chat*",
+            "*C’est un fruit jaune **que** les singes adorent.* (To je žluté ovoce, které opice zbožňují.) → *la banane*",
+            "*C’est un endroit **où** on achète du pain.* (To je místo, kde se kupuje chleba.) → *la boulangerie*",
+            "*C’est le jour **où** on reçoit des cadeaux et un gâteau.* (To je den, kdy dostaneš dárky a dort.) → *l’anniversaire*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč čeština klame"
+        },
+        {
+          "type": "text",
+          "text": "V češtině se mění tvar *který*: *film, který běží* (1. pád) × *film, **který** vidím* (4. pád, u neživotných stejný tvar). Proto nepoznáš rozdíl podle ucha. Francouzsky ale musíš: řiď se tím, co je **hned za** zájmenem."
+        },
+        {
+          "type": "text",
+          "text": "Pomůže i angličtina: *the boy **who** lives here* (podmět) × *the film (**that**) I saw* (předmět). Kde v angličtině může zájmeno chybět, ve francouzštině je to **que**. Ve francouzštině nikdy nevypadne."
+        },
+        {
+          "type": "heading",
+          "text": "Pozor na shodu"
+        },
+        {
+          "type": "text",
+          "text": "Když stojí *que* před passé composé s *avoir*, příčestí se shoduje s podstatným jménem, ke kterému se *que* vztahuje: *la robe **que** j’ai achet**ée***, *les photos **que** tu as pris**es***."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď části vět: přijde před ně *qui*, nebo *que*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "qui",
+              "que / qu’"
+            ],
+            "items": [
+              {
+                "text": "___ habite à Paris",
+                "group": 0
+              },
+              {
+                "text": "___ est sur la table",
+                "group": 0
+              },
+              {
+                "text": "___ parle trop",
+                "group": 0
+              },
+              {
+                "text": "___ me plaît",
+                "group": 0
+              },
+              {
+                "text": "___ je connais",
+                "group": 1
+              },
+              {
+                "text": "___ tu as vu",
+                "group": 1
+              },
+              {
+                "text": "___ il préfère",
+                "group": 1
+              },
+              {
+                "text": "___ nous attendons",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vymysli hádanku na „la piscine“ se zájmenem *où*.",
+          "answer": "Bazén je místo → *où*: **C’est un endroit où on nage.** (To je místo, kde se plave.)"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Le gâteau ___ ma grand-mère fait est délicieux.",
+          "answer": "Za mezerou je podmět *ma grand-mère* → **que**: *Le gâteau que ma grand-mère fait est délicieux.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Le livre je lis est super.",
+          "right": "Le livre que je lis est super.",
+          "why": "Na rozdíl od angličtiny (*the book I read*) nesmí francouzské *que* vypadnout."
+        },
+        {
+          "type": "summary",
+          "text": "Za *qui* hned sloveso, za *que* nový podmět, *où* pro místo a čas. *que* nikdy nevynecháš a před samohláskou ho zkrátíš na *qu’*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "C’est le garçon ___ parle français.",
+      "options": [
+        "qui",
+        "que",
+        "où"
+      ],
+      "answer": 0,
+      "explanation": "Za zájmenem hned sloveso → *qui*."
+    },
+    {
+      "type": "choice",
+      "question": "C’est le film ___ j’ai vu hier.",
+      "options": [
+        "que",
+        "qui",
+        "où"
+      ],
+      "answer": 0,
+      "explanation": "Za zájmenem podmět *j’* → *que*."
+    },
+    {
+      "type": "choice",
+      "question": "C’est la ville ___ je suis né.",
+      "options": [
+        "où",
+        "que",
+        "qui"
+      ],
+      "answer": 0,
+      "explanation": "Místo → *où*."
+    },
+    {
+      "type": "choice",
+      "question": "Je me souviens du jour ___ tu es arrivé.",
+      "options": [
+        "où",
+        "que",
+        "qui"
+      ],
+      "answer": 0,
+      "explanation": "Čas (den, kdy) → *où*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: La fille ___ chante est ma sœur.",
+      "answers": [
+        "qui"
+      ],
+      "explanation": "Za ním sloveso *chante* → *qui*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Le livre ___ il lit est intéressant.",
+      "answers": [
+        "qu’",
+        "qu'"
+      ],
+      "explanation": "Za ním podmět *il* → *que*, před samohláskou se zkrátí na *qu’*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: C’est le restaurant ___ nous avons mangé.",
+      "answers": [
+        "où"
+      ],
+      "explanation": "Místo, kde → *où*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*qui* se před samohláskou zkracuje na *qu’*.",
+      "answer": false,
+      "explanation": "Zkracuje se jen *que*. *qui* zůstává: *l’ami qui arrive*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Voici les photos que j’ai prises.“ je správně.",
+      "answer": true,
+      "explanation": "*que* odkazuje na *les photos* (ž. r., mn. č.) před *avoir* → *prises*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„C’est le livre je préfère.“ je správná francouzská věta.",
+      "answer": false,
+      "explanation": "Zájmeno *que* nesmí chybět: *C’est le livre que je préfère.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj začátek s koncem věty.",
+      "pairs": [
+        [
+          "C’est un animal qui",
+          "fait « miaou »."
+        ],
+        [
+          "C’est un fruit que",
+          "les singes adorent."
+        ],
+        [
+          "C’est un endroit où",
+          "on achète du pain."
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „To je kamarád, kterého znám.“",
+      "items": [
+        "C’est",
+        "l’ami",
+        "que",
+        "je",
+        "connais"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jak poznáš, jestli doplnit *qui*, nebo *que*?",
+      "answer": "Podívám se, co je hned za zájmenem. Když sloveso, zájmeno je podmět → *qui*. Když nový podmět a sloveso, zájmeno je předmět → *que* (*qu’*)."
+    },
+    {
+      "type": "open",
+      "question": "Vymysli francouzsky dvě hádanky: jednu s *qui* a jednu s *où*.",
+      "answer": "Například: *C’est un animal qui vit dans l’eau et qui nage.* (le poisson) *C’est un endroit où on regarde des films.* (le cinéma)"
+    }
+  ]
+}

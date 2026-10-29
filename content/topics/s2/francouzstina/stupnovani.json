@@ -1,0 +1,506 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "stupnovani",
+  "title": "Stupňování přídavných jmen a příslovcí",
+  "emoji": "📈",
+  "explanations": [
+    {
+      "title": "Plus, moins, aussi",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Paříž je **větší než** Lyon.“ „Můj brácha běhá **rychleji než** já.“ „Je to **nejlepší** film roku.“ Porovnáváš pořád: ceny, výšky, známky, kamarády."
+        },
+        {
+          "type": "text",
+          "text": "Čeština mění tvar slova (*velký → větší → největší*). Francouzština to dělá jako angličtina u dlouhých slov (*more beautiful*): slovo se nemění, jen se před něj dá **plus, moins** nebo **aussi**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které popisuje vlastnost podstatného jména. Ve francouzštině se shoduje v rodě a čísle.",
+          "example": "grand, grande, grands, grandes = velký"
+        },
+        {
+          "type": "term",
+          "term": "Příslovce",
+          "definition": "Slovo, které popisuje, **jak** se něco děje. Nemění tvar.",
+          "example": "vite = rychle, souvent = často, bien = dobře"
+        },
+        {
+          "type": "term",
+          "term": "Druhý stupeň (komparativ)",
+          "definition": "Porovnání dvou věcí: víc, méně nebo stejně.",
+          "example": "plus grand que = větší než"
+        },
+        {
+          "type": "term",
+          "term": "Třetí stupeň (superlativ)",
+          "definition": "Nejvíc nebo nejméně ze všech.",
+          "example": "le plus grand = největší"
+        },
+        {
+          "type": "heading",
+          "text": "Druhý stupeň"
+        },
+        {
+          "type": "table",
+          "head": [
+            "význam",
+            "vzorec",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "víc",
+              "**plus** … **que**",
+              "Paris est **plus** grande **que** Lyon.",
+              "Paříž je větší než Lyon."
+            ],
+            [
+              "méně",
+              "**moins** … **que**",
+              "Ce livre est **moins** cher **que** l’autre.",
+              "Tahle kniha je levnější (méně drahá) než ta druhá."
+            ],
+            [
+              "stejně",
+              "**aussi** … **que**",
+              "Léa est **aussi** grande **que** sa mère.",
+              "Léa je stejně vysoká jako máma."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Přídavné jméno se pořád shoduje s tím, co popisuje: *Paris est plus grand**e***, protože *la ville*. Po *que* stojí u osob zdůrazněné zájmeno: *plus grand que **moi**, que **toi**, que **lui***. Před samohláskou *que → qu’*: *qu’elle*."
+        },
+        {
+          "type": "heading",
+          "text": "Třetí stupeň"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi člen podle rodu a čísla: *le, la, les*.",
+            "Přidej *plus* nebo *moins* a přídavné jméno: *la plus grande*.",
+            "Stojí-li přídavné jméno obvykle **za** podstatným jménem, člen se zopakuje: *le film **le plus** intéressant*.",
+            "Pro „v (zemi, třídě)“ použij **de**: *la plus grande ville **de** France*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nepravidelné tvary"
+        },
+        {
+          "type": "table",
+          "head": [
+            "základ",
+            "2. stupeň",
+            "3. stupeň"
+          ],
+          "rows": [
+            [
+              "bon (dobrý)",
+              "**meilleur** (lepší)",
+              "le **meilleur** (nejlepší)"
+            ],
+            [
+              "bien (dobře)",
+              "**mieux** (lépe)",
+              "le **mieux** (nejlépe)"
+            ],
+            [
+              "mauvais (špatný)",
+              "plus mauvais / **pire**",
+              "le plus mauvais / le **pire**"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Mon frère est plus grand",
+                "after": "moi.",
+                "options": [
+                  "que",
+                  "de",
+                  "comme"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ce gâteau est",
+                "after": "que l’autre.",
+                "options": [
+                  "meilleur",
+                  "plus bon",
+                  "mieux"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle chante",
+                "after": "que moi.",
+                "options": [
+                  "mieux",
+                  "meilleur",
+                  "plus bien"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "C’est la plus belle ville",
+                "after": "France.",
+                "options": [
+                  "de",
+                  "en",
+                  "dans"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Marie est",
+                "after": "grande que Paul.",
+                "options": [
+                  "aussi",
+                  "autant",
+                  "si"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Moje sestra je mladší než já.",
+          "answer": "„mladší“ = víc mladá: *plus jeune*; po *que* zdůrazněné zájmeno: **Ma sœur est plus jeune que moi.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Je to nejzajímavější kniha ve třídě.",
+          "answer": "*intéressant* stojí za podstatným jménem → zopakuj člen; „ve třídě“ = *de la classe*: **C’est le livre le plus intéressant de la classe.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "C’est plus bon. / Il parle plus bien.",
+          "right": "C’est meilleur. / Il parle mieux.",
+          "why": "*bon* (přídavné jméno) má 2. stupeň *meilleur*, *bien* (příslovce) má *mieux*. *Plus bon* a *plus bien* jsou chyby."
+        },
+        {
+          "type": "summary",
+          "text": "*plus/moins/aussi* + přídavné jméno nebo příslovce + *que*. 3. stupeň: *le/la/les plus* (+ *de* pro „v“). Nepravidelně: *bon → meilleur*, *bien → mieux*."
+        }
+      ]
+    },
+    {
+      "title": "Meilleur, nebo mieux?",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dva kamarádi, Hugo a Nathan, se pořád přou, kdo je lepší. Při jejich hádce uvidíš, jak se porovnávají vlastnosti, činnosti i množství. A hlavně, kdy říct *meilleur* a kdy *mieux*, na čem chybuje i spousta Francouzů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Popisuje **věc nebo osobu**: jaká je? Odpovídá na otázku „jaký?“.",
+          "example": "un bon élève = dobrý žák"
+        },
+        {
+          "type": "term",
+          "term": "Příslovce",
+          "definition": "Popisuje **činnost**: jak se dělá? Odpovídá na otázku „jak?“. Nemění tvar.",
+          "example": "Il joue bien. = Hraje dobře."
+        },
+        {
+          "type": "term",
+          "term": "Porovnání",
+          "definition": "Věta, která říká, kdo nebo co má nějakou vlastnost víc, méně nebo stejně.",
+          "example": "Hugo est plus rapide que Nathan."
+        },
+        {
+          "type": "heading",
+          "text": "Hádka"
+        },
+        {
+          "type": "text",
+          "text": "*Hugo : Je cours **plus vite que** toi ! Nathan : Peut-être, mais je nage **mieux que** toi. Et je suis **meilleur** en maths. Hugo : Pfff ! Moi, j’ai **plus de** copains **que** toi. Nathan : Non, j’ai **autant de** copains **que** toi !*"
+        },
+        {
+          "type": "text",
+          "text": "= Hugo: Běhám rychleji než ty! Nathan: Možná, ale plavu líp než ty. A jsem lepší z matiky. Hugo: Pff! Já mám víc kamarádů než ty. Nathan: Ne, mám stejně kamarádů jako ty!"
+        },
+        {
+          "type": "heading",
+          "text": "Co v hádce najdeš"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*plus vite que* – příslovce (*vite* = rychle) se porovnává stejně jako přídavné jméno.",
+            "*je nage mieux* – „plavu jak?“ → příslovce *bien* → **mieux**.",
+            "*je suis meilleur* – „jsem jaký?“ → přídavné jméno *bon* → **meilleur**.",
+            "*plus de copains que* – u podstatných jmen (množství) se dá **de**: *plus de, moins de, autant de*.",
+            "*autant de … que* = stejně … jako. U podstatných jmen a sloves *autant*, u přídavných jmen a příslovcí *aussi*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "porovnáváš",
+            "víc",
+            "stejně"
+          ],
+          "rows": [
+            [
+              "vlastnost (přídavné jméno)",
+              "*plus grand que*",
+              "*aussi grand que*"
+            ],
+            [
+              "způsob (příslovce)",
+              "*plus vite que*",
+              "*aussi vite que*"
+            ],
+            [
+              "množství (podstatné jméno)",
+              "*plus **de** livres que*",
+              "*autant **de** livres que*"
+            ],
+            [
+              "činnost (sloveso)",
+              "*il travaille plus que moi*",
+              "*il travaille autant que moi*"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: doplníš *meilleur(e)*, nebo *mieux*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "meilleur(e)",
+              "mieux"
+            ],
+            "items": [
+              {
+                "text": "Ce film est ___ que l’autre.",
+                "group": 0
+              },
+              {
+                "text": "Elle est la ___ élève.",
+                "group": 0
+              },
+              {
+                "text": "Ton gâteau est ___.",
+                "group": 0
+              },
+              {
+                "text": "Il danse ___ que moi.",
+                "group": 1
+              },
+              {
+                "text": "Je vais ___ aujourd’hui.",
+                "group": 1
+              },
+              {
+                "text": "Tu comprends ___ maintenant ?",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň *meilleur* nebo *mieux*: Ma mère cuisine ___ que mon père.",
+          "answer": "„Vaří jak?“ → příslovce → **mieux**: *Ma mère cuisine mieux que mon père.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Mám míň času než ty.",
+          "answer": "Množství (podstatné jméno *temps*) → *moins de*: **J’ai moins de temps que toi.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’ai aussi de livres que toi.",
+          "right": "J’ai autant de livres que toi.",
+          "why": "U množství (podstatných jmen) se používá *autant de*, ne *aussi*."
+        },
+        {
+          "type": "summary",
+          "text": "Jaký? → přídavné jméno → *meilleur*. Jak? → příslovce → *mieux*. Množství: *plus de, moins de, autant de … que*. Stejně u vlastností *aussi … que*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Paris est ___ grande que Lyon.",
+      "options": [
+        "plus",
+        "plus de",
+        "autant"
+      ],
+      "answer": 0,
+      "explanation": "Přídavné jméno → *plus … que*."
+    },
+    {
+      "type": "choice",
+      "question": "Ce gâteau est ___ que l’autre.",
+      "options": [
+        "meilleur",
+        "plus bon",
+        "mieux"
+      ],
+      "answer": 0,
+      "explanation": "*bon* → *meilleur*."
+    },
+    {
+      "type": "choice",
+      "question": "Elle chante ___ que moi.",
+      "options": [
+        "mieux",
+        "meilleur",
+        "plus bien"
+      ],
+      "answer": 0,
+      "explanation": "Zpívá jak? → *bien* → *mieux*."
+    },
+    {
+      "type": "choice",
+      "question": "C’est la plus haute montagne ___ France.",
+      "options": [
+        "de",
+        "en",
+        "dans la"
+      ],
+      "answer": 0,
+      "explanation": "U 3. stupně se „v“ řekne *de*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Il est plus grand que ___. (než já)",
+      "answers": [
+        "moi"
+      ],
+      "explanation": "Po *que* zdůrazněné zájmeno *moi*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: J’ai ___ de livres que toi. (stejně)",
+      "answers": [
+        "autant"
+      ],
+      "explanation": "U množství *autant de … que*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Léa est ___ intelligente que sa sœur. (stejně)",
+      "answers": [
+        "aussi"
+      ],
+      "explanation": "U přídavných jmen *aussi … que*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „nejzajímavější film“?",
+      "options": [
+        "le film le plus intéressant",
+        "le plus film intéressant",
+        "le film plus intéressant"
+      ],
+      "answer": 0,
+      "explanation": "*intéressant* stojí za podstatným jménem, proto se člen zopakuje."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Il parle plus bien que moi.“ je správně.",
+      "answer": false,
+      "explanation": "Správně *mieux*: *Il parle mieux que moi.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ma sœur est plus petite que moi.“ je správně.",
+      "answer": true,
+      "explanation": "Shoda (*petite*) a zdůrazněné zájmeno *moi*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj základní tvar s druhým stupněm.",
+      "pairs": [
+        [
+          "bon",
+          "meilleur"
+        ],
+        [
+          "bien",
+          "mieux"
+        ],
+        [
+          "grand",
+          "plus grand"
+        ],
+        [
+          "vite",
+          "plus vite"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Je to nejlepší restaurace ve městě.“",
+      "items": [
+        "C’est",
+        "le meilleur",
+        "restaurant",
+        "de la",
+        "ville"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *meilleur* a *mieux*? Uveď příklad.",
+      "answer": "*meilleur* je 2. stupeň přídavného jména *bon* (jaký?): *Ce livre est meilleur.* *mieux* je 2. stupeň příslovce *bien* (jak?): *Il joue mieux que moi.*"
+    },
+    {
+      "type": "open",
+      "question": "Porovnej francouzsky sebe a někoho z rodiny (aspoň tři věty: vlastnost, činnost, množství).",
+      "answer": "Například: *Mon frère est plus grand que moi. Mais je cours plus vite que lui. J’ai moins de livres que lui.*"
+    }
+  ]
+}

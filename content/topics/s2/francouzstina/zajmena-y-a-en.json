@@ -1,0 +1,481 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zajmena-y-a-en",
+  "title": "Zájmena y a en",
+  "emoji": "📍",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Jedeš do Paříže? – Ano, jedu **tam**.“ „Chceš chleba? – Ano, chci **ho** (trochu).“ Česky to zvládneš slovem *tam* nebo *ho*. Francouzština má na takové věty dvě malá zájmena: **y** a **en**."
+        },
+        {
+          "type": "text",
+          "text": "Francouzi je používají pořád, třeba ve větách *Il y a…* (je tam…), *On y va !* (Jdeme!) nebo *J’en ai marre.* (Mám toho dost.)"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zájmeno y",
+          "definition": "Zastoupí **místo** (*à Paris, en France, chez moi, dans la cuisine*) nebo věc s předložkou **à** (*penser à l’examen*). Česky „tam“ nebo „na to“.",
+          "example": "Je vais à Paris. → J’**y** vais. = Jedu tam."
+        },
+        {
+          "type": "term",
+          "term": "Zájmeno en",
+          "definition": "Zastoupí věc s předložkou **de** (*parler de, venir de*), dělivý člen (*du, de la, des*) nebo množství. Česky „z toho, o tom, ho, jich“.",
+          "example": "Tu veux du pain ? → Oui, j’**en** veux. = Ano, chci (ho)."
+        },
+        {
+          "type": "term",
+          "term": "Dělivý člen",
+          "definition": "Připomenutí: *du, de la, de l’, des* před věcmi, které nepočítáš po kusech, ale bereš „trochu, nějaké“.",
+          "example": "du pain, de la musique, des pommes"
+        },
+        {
+          "type": "heading",
+          "text": "Kdy y a kdy en"
+        },
+        {
+          "type": "table",
+          "head": [
+            "co nahrazuješ",
+            "zájmeno",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "místo (*à, en, dans, chez…*)",
+              "**y**",
+              "Il va à l’école. → Il **y** va."
+            ],
+            [
+              "*à* + věc",
+              "**y**",
+              "Je pense à mes vacances. → J’**y** pense."
+            ],
+            [
+              "*de* + místo (odkud)",
+              "**en**",
+              "Je viens de Lyon. → J’**en** viens."
+            ],
+            [
+              "*de* + věc",
+              "**en**",
+              "Il parle de son voyage. → Il **en** parle."
+            ],
+            [
+              "dělivý člen *du, de la, des*",
+              "**en**",
+              "Je bois du lait. → J’**en** bois."
+            ],
+            [
+              "množství (číslo, *beaucoup de*)",
+              "**en** + množství",
+              "J’ai deux frères. → J’**en** ai **deux**."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U množství se číslo nebo slovo jako *beaucoup* na konci zopakuje: *J’en ai deux. J’en ai beaucoup.*"
+        },
+        {
+          "type": "heading",
+          "text": "Kam je dát"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Stejně jako ostatní zájmena: **před** časované sloveso (*J’y vais*).",
+            "S infinitivem před infinitiv (*Je vais y aller*).",
+            "V passé composé před *avoir/être* (*J’y suis allé, J’en ai mangé*).",
+            "V záporu: *Je n’y vais pas. Je n’en ai pas.*",
+            "V kladném rozkazu za sloveso: *Vas-y ! Prends-en !* (u *aller* se přidá *s*)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Tu vas à la piscine ? Oui, j’",
+                "after": "vais.",
+                "options": [
+                  "y",
+                  "en"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu veux de l’eau ? Oui, j’",
+                "after": "veux.",
+                "options": [
+                  "en",
+                  "y"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu penses à ton examen ? Oui, j’",
+                "after": "pense.",
+                "options": [
+                  "y",
+                  "en"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu as des frères ? Oui, j’",
+                "after": "ai deux.",
+                "options": [
+                  "en",
+                  "y"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu viens de la gare ? Oui, j’",
+                "after": "viens.",
+                "options": [
+                  "en",
+                  "y"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověz zájmenem: Vous habitez en France ?",
+          "answer": "*en France* je místo → *y*: **Oui, nous y habitons.**"
+        },
+        {
+          "type": "example",
+          "question": "Odpověz zápornou větou: Tu as mangé des frites ?",
+          "answer": "Dělivý člen *des* → *en*, před *avoir*, zápor: **Non, je n’en ai pas mangé.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’ai deux frères. → J’en ai.",
+          "right": "J’en ai deux.",
+          "why": "U množství musíš číslo zopakovat. *J’en ai* by znamenalo jen „nějaké mám“."
+        },
+        {
+          "type": "summary",
+          "text": "**y** = místo nebo *à* + věc („tam, na to“). **en** = *de* + věc, dělivý člen, množství („z toho, o tom, nějaké“). Stojí před slovesem jako ostatní zájmena."
+        }
+      ]
+    },
+    {
+      "title": "Na nákupu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lucas jde s maminkou na trh a pak k babičce. Při nakupování i domlouvání uslyšíš *y* a *en* skoro v každé větě. Ukážeme si, jak je poznat a kdy je **nepoužít**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "y",
+          "definition": "Nahradí místo nebo věc s *à*. Překládá se často „tam“.",
+          "example": "On va au marché ? – Oui, on **y** va. = Jdeme na trh? – Jo, jdeme tam."
+        },
+        {
+          "type": "term",
+          "term": "en",
+          "definition": "Nahradí věc s *de*, dělivý člen nebo množství. Překládá se „ho, je, jich, z toho, o tom“.",
+          "example": "Des tomates ? J’**en** prends un kilo. = Rajčata? Vezmu si jich kilo."
+        },
+        {
+          "type": "term",
+          "term": "Množství",
+          "definition": "Kolik čeho: číslo (*deux, trois*) nebo slovo jako *beaucoup* (hodně), *un peu* (trochu), *un kilo* (kilo).",
+          "example": "beaucoup de pommes, un kilo de tomates"
+        },
+        {
+          "type": "heading",
+          "text": "Na trhu"
+        },
+        {
+          "type": "text",
+          "text": "*— Bonjour ! Vous avez des fraises ? — Oui, j’**en** ai. Vous **en** voulez combien ? — J’**en** voudrais un kilo. Et des pommes ? — Désolé, je n’**en** ai plus.*"
+        },
+        {
+          "type": "text",
+          "text": "= Dobrý den! Máte jahody? – Ano, mám. Kolik jich chcete? – Chtěla bych kilo. A jablka? – Bohužel, už nemám."
+        },
+        {
+          "type": "text",
+          "text": "*— Lucas, on va chez mamie maintenant ? — Oui, on **y** va ! Elle nous attend. — Tu penses à son cadeau ? — Oui, j’**y** pense !*"
+        },
+        {
+          "type": "text",
+          "text": "= Lucasi, jdeme teď k babičce? – Jo, jdeme tam! Čeká nás. – Myslíš na její dárek? – Jo, myslím na něj!"
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: osoby"
+        },
+        {
+          "type": "text",
+          "text": "*y* a *en* nahrazují obvykle **věci a místa**, ne lidi. Když myslíš na osobu, řekneš *penser **à lui** / **à elle***. Když mluvíš o osobě, *parler **d’elle***."
+        },
+        {
+          "type": "table",
+          "head": [
+            "věc",
+            "osoba"
+          ],
+          "rows": [
+            [
+              "Je pense à mon examen. → J’**y** pense.",
+              "Je pense à ma grand-mère. → Je pense **à elle**."
+            ],
+            [
+              "Il parle de son voyage. → Il **en** parle.",
+              "Il parle de son père. → Il parle **de lui**."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: co nahradíš zájmenem *y* a co *en*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "y",
+              "en"
+            ],
+            "items": [
+              {
+                "text": "à Prague",
+                "group": 0
+              },
+              {
+                "text": "chez mes amis",
+                "group": 0
+              },
+              {
+                "text": "à mon avenir",
+                "group": 0
+              },
+              {
+                "text": "dans le jardin",
+                "group": 0
+              },
+              {
+                "text": "du fromage",
+                "group": 1
+              },
+              {
+                "text": "de la confiture",
+                "group": 1
+              },
+              {
+                "text": "trois cousins",
+                "group": 1
+              },
+              {
+                "text": "de mon voyage",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověz: Tu es déjà allé à Londres ?",
+          "answer": "Místo → *y*, passé composé → před *être*: **Oui, j’y suis déjà allé.** (Nebo *Non, je n’y suis jamais allé.*)"
+        },
+        {
+          "type": "example",
+          "question": "Odpověz: Combien de livres est-ce que tu lis par mois ?",
+          "answer": "Množství → *en* + číslo na konci: **J’en lis trois par mois.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je pense à ma copine. → J’y pense.",
+          "right": "Je pense à elle.",
+          "why": "U osob se *y* nepoužívá, místo něj *à* + zdůrazněné zájmeno (*à lui, à elle, à eux*)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Va-y !",
+          "right": "Vas-y !",
+          "why": "V kladném rozkazu před *y* a *en* se k *va* přidá *s*, aby se to dobře vyslovilo: *Vas-y ! Manges-en !*"
+        },
+        {
+          "type": "summary",
+          "text": "Na trhu: *J’en voudrais un kilo. Je n’en ai plus.* Na cestě: *On y va !* U lidí místo *y/en*: *Je pense à elle, il parle de lui.*"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Tu vas à la piscine ? Oui, j’___ vais.",
+      "options": [
+        "y",
+        "en",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "Místo → *y*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu veux du fromage ? Oui, j’___ veux.",
+      "options": [
+        "en",
+        "y",
+        "le"
+      ],
+      "answer": 0,
+      "explanation": "Dělivý člen *du* → *en*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu as combien de sœurs ? J’___ ai deux.",
+      "options": [
+        "en",
+        "y",
+        "les"
+      ],
+      "answer": 0,
+      "explanation": "Množství → *en* + číslo."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Tu penses à tes vacances ? Oui, j’___ pense.",
+      "answers": [
+        "y"
+      ],
+      "explanation": "*penser à* + věc → *y*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Il parle de son film ? Oui, il ___ parle.",
+      "answers": [
+        "en"
+      ],
+      "explanation": "*parler de* + věc → *en*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Tu viens de la bibliothèque ? Oui, j’___ viens.",
+      "answers": [
+        "en"
+      ],
+      "explanation": "*venir de* + místo (odkud) → *en*."
+    },
+    {
+      "type": "choice",
+      "question": "Která odpověď je správně? „Tu es allé à Rome ?“",
+      "options": [
+        "Oui, j’y suis allé.",
+        "Oui, je suis y allé.",
+        "Oui, j’en suis allé."
+      ],
+      "answer": 0,
+      "explanation": "Místo → *y*, stojí před pomocným slovesem."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Jdi tam!“ / „Do toho!“?",
+      "options": [
+        "Vas-y !",
+        "Va-y !",
+        "Y va !"
+      ],
+      "answer": 0,
+      "explanation": "Před *y* se k *va* přidá *s*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je pense à ma mère.“ → „J’y pense.“ je správně.",
+      "answer": false,
+      "explanation": "U osob: *Je pense à elle.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Tu as des stylos ? – Non, je n’en ai pas.“ je správně.",
+      "answer": true,
+      "explanation": "*des* → *en*, zápor kolem *en ai*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj otázku se správnou odpovědí.",
+      "pairs": [
+        [
+          "Tu vas au cinéma ?",
+          "Oui, j’y vais."
+        ],
+        [
+          "Tu veux du thé ?",
+          "Oui, j’en veux."
+        ],
+        [
+          "Tu as deux chats ?",
+          "Oui, j’en ai deux."
+        ],
+        [
+          "Tu habites à Brno ?",
+          "Oui, j’y habite."
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Nebyl jsem tam.“",
+      "items": [
+        "Je",
+        "n’y",
+        "suis",
+        "pas",
+        "allé"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ zájmeno *y* a kdy *en*? Uveď ke každému příklad.",
+      "answer": "*y* nahrazuje místo nebo *à* + věc: *Je vais à Paris → J’y vais.* *en* nahrazuje *de* + věc, dělivý člen nebo množství: *Je bois du lait → J’en bois. J’ai deux frères → J’en ai deux.*"
+    },
+    {
+      "type": "open",
+      "question": "Zahraj si krátký rozhovor na trhu: zeptej se na zboží a odpověz pomocí *en*.",
+      "answer": "Například: *— Vous avez des pommes ? — Oui, j’en ai. Vous en voulez combien ? — J’en voudrais deux kilos, s’il vous plaît.*"
+    }
+  ]
+}

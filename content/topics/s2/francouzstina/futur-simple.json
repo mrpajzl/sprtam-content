@@ -1,0 +1,548 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "futur-simple",
+  "title": "Futur simple (budoucí čas)",
+  "emoji": "🔮",
+  "explanations": [
+    {
+      "title": "Infinitiv + koncovky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Budoucnost už francouzsky umíš říct pomocí *aller* + infinitiv: *Je vais manger.* = Budu jíst / Jdu jíst. To je **futur proche**, blízká budoucnost."
+        },
+        {
+          "type": "text",
+          "text": "Pro plány, předpovědi a sliby má francouzština ještě jeden čas: **futur simple**. Najdeš ho v předpovědi počasí, v horoskopu i ve slibech: *Je t’écrirai.* = Napíšu ti."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Futur simple",
+          "definition": "Jednoduchý budoucí čas. Je jen **jedno slovo** (bez pomocného slovesa).",
+          "example": "Je parlerai. = Budu mluvit / Promluvím."
+        },
+        {
+          "type": "term",
+          "term": "Futur proche",
+          "definition": "Blízká budoucnost: *aller* + infinitiv. Pro věci, které se stanou brzy nebo jsou jisté.",
+          "example": "Il va pleuvoir. = Bude pršet (už se mračí)."
+        },
+        {
+          "type": "term",
+          "term": "Kmen budoucího času",
+          "definition": "Základ, ke kterému přidáš koncovky. U pravidelných sloves je to **celý infinitiv**, u nepravidelných zvláštní tvar.",
+          "example": "parler → *parler-*, être → *ser-*"
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi infinitiv: *parler, finir, prendre*.",
+            "U sloves na *-re* odstraň koncové *-e*: *prendre → prendr-*.",
+            "Přidej koncovky: **-ai, -as, -a, -ons, -ez, -ont**.",
+            "Hotovo: *je parlerai, tu finiras, il prendra*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "parler",
+            "finir",
+            "prendre"
+          ],
+          "rows": [
+            [
+              "je",
+              "parler**ai**",
+              "finir**ai**",
+              "prendr**ai**"
+            ],
+            [
+              "tu",
+              "parler**as**",
+              "finir**as**",
+              "prendr**as**"
+            ],
+            [
+              "il / elle",
+              "parler**a**",
+              "finir**a**",
+              "prendr**a**"
+            ],
+            [
+              "nous",
+              "parler**ons**",
+              "finir**ons**",
+              "prendr**ons**"
+            ],
+            [
+              "vous",
+              "parler**ez**",
+              "finir**ez**",
+              "prendr**ez**"
+            ],
+            [
+              "ils / elles",
+              "parler**ont**",
+              "finir**ont**",
+              "prendr**ont**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Koncovky si snadno zapamatuješ: jsou to skoro tvary slovesa *avoir* (*ai, as, a, (av)ons, (av)ez, ont*)."
+        },
+        {
+          "type": "heading",
+          "text": "Nepravidelné kmeny"
+        },
+        {
+          "type": "text",
+          "text": "Koncovky jsou u všech sloves stejné. Mění se jen kmen, vždy končí na **-r**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "infinitiv",
+            "kmen",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "être",
+              "ser-",
+              "je serai"
+            ],
+            [
+              "avoir",
+              "aur-",
+              "j’aurai"
+            ],
+            [
+              "aller",
+              "ir-",
+              "j’irai"
+            ],
+            [
+              "faire",
+              "fer-",
+              "je ferai"
+            ],
+            [
+              "venir",
+              "viendr-",
+              "je viendrai"
+            ],
+            [
+              "pouvoir",
+              "pourr-",
+              "je pourrai"
+            ],
+            [
+              "vouloir",
+              "voudr-",
+              "je voudrai"
+            ],
+            [
+              "devoir",
+              "devr-",
+              "je devrai"
+            ],
+            [
+              "voir",
+              "verr-",
+              "je verrai"
+            ],
+            [
+              "savoir",
+              "saur-",
+              "je saurai"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Neosobní slovesa: *il faut → il **faudra*** (bude třeba), *il pleut → il **pleuvra*** (bude pršet)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Demain, je",
+                "after": "à Paris.",
+                "options": [
+                  "serai",
+                  "sera",
+                  "serais"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous",
+                "after": "nos devoirs ce soir.",
+                "options": [
+                  "ferons",
+                  "faisons",
+                  "fairons"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu",
+                "after": "demain ?",
+                "options": [
+                  "viendras",
+                  "veniras",
+                  "viendrais"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils",
+                "after": "le train de 8 heures.",
+                "options": [
+                  "prendront",
+                  "prenderont",
+                  "prendrons"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle",
+                "after": "avec nous.",
+                "options": [
+                  "ira",
+                  "allera",
+                  "aira"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř futur simple: *finir*, osoba *nous*.",
+          "answer": "Celý infinitiv *finir* + *-ons*: **nous finirons**."
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř futur simple: *avoir*, osoba *ils*, a *aller*, osoba *tu*.",
+          "answer": "Nepravidelné kmeny: *aur-* + *-ont* → **ils auront**; *ir-* + *-as* → **tu iras**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "je prendreai / j’allerai",
+          "right": "je prendrai / j’irai",
+          "why": "U sloves na *-re* se koncové *e* vypustí. *aller* má zvláštní kmen *ir-*."
+        },
+        {
+          "type": "summary",
+          "text": "Futur simple = infinitiv (bez koncového *-e*) + *-ai, -as, -a, -ons, -ez, -ont*. Nepravidelné kmeny: *ser-, aur-, ir-, fer-, viendr-, pourr-, voudr-, devr-, verr-, saur-*."
+        }
+      ]
+    },
+    {
+      "title": "Plány a sliby",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Je konec školního roku a Camille píše kamarádce, co bude dělat o prázdninách. Celý její dopis je o budoucnosti. Uvidíš, kdy použít futur simple, kdy *aller* + infinitiv, a jednu velkou past, ve které se čeština a francouzština liší."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Futur simple",
+          "definition": "Budoucí čas z jednoho slova: kmen (většinou infinitiv) + *-ai, -as, -a, -ons, -ez, -ont*.",
+          "example": "je partirai = odjedu"
+        },
+        {
+          "type": "term",
+          "term": "Podmínková věta se si",
+          "definition": "*si* = když, jestli(že). Věta říká, co se stane, pokud se splní podmínka.",
+          "example": "S’il fait beau, nous irons à la plage. = Jestli bude hezky, půjdeme na pláž."
+        },
+        {
+          "type": "term",
+          "term": "Časová věta s quand",
+          "definition": "*quand* = až, když. Říká, kdy se něco stane.",
+          "example": "Quand je serai grand… = Až budu velký…"
+        },
+        {
+          "type": "heading",
+          "text": "Camille píše"
+        },
+        {
+          "type": "text",
+          "text": "*Chère Inès, cet été, je **partirai** en Bretagne avec mes parents. Nous **ferons** du vélo et nous **visiterons** Saint-Malo. S’il **fait** beau, j’**irai** à la plage tous les jours. Quand je **serai** là-bas, je t’**enverrai** des photos. Je te **téléphonerai** en août !*"
+        },
+        {
+          "type": "text",
+          "text": "= Milá Inès, letos v létě odjedu s rodiči do Bretaně. Budeme jezdit na kole a navštívíme Saint-Malo. Jestli bude hezky, budu každý den chodit na pláž. Až tam budu, pošlu ti fotky. Zavolám ti v srpnu!"
+        },
+        {
+          "type": "heading",
+          "text": "Dvě pravidla z dopisu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Po **si** (jestli) stojí **přítomný čas**, ve druhé části budoucí: *S’il **fait** beau, j’**irai** à la plage.* Česky říkáme „jestli **bude** hezky“, ale francouzsky (i anglicky *if it is*) přítomný čas.",
+            "Po **quand** (až) o budoucnosti stojí **budoucí čas**: *Quand je **serai** là-bas…* Tady se francouzština liší od angličtiny (*when I am there*), ale shoduje s češtinou (*až tam budu*)."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "česky",
+            "francouzsky"
+          ],
+          "rows": [
+            [
+              "Jestli **bude** pršet, zůstanu doma.",
+              "S’il **pleut**, je **resterai** à la maison."
+            ],
+            [
+              "Až **budu** velký, budu lékař.",
+              "Quand je **serai** grand, je **serai** médecin."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Futur simple, nebo aller + infinitiv?"
+        },
+        {
+          "type": "text",
+          "text": "Často jde obojí. *Futur proche* (*je vais partir*) zní hovorověji a hodí se pro věci blízké nebo už jisté. *Futur simple* (*je partirai*) se hodí pro vzdálenější plány, sliby, předpovědi a psaný text."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku a zkontroluj tvar."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "être – nous",
+                "back": "nous serons"
+              },
+              {
+                "front": "faire – vous",
+                "back": "vous ferez"
+              },
+              {
+                "front": "voir – je",
+                "back": "je verrai"
+              },
+              {
+                "front": "envoyer – je",
+                "back": "j’enverrai"
+              },
+              {
+                "front": "il faut",
+                "back": "il faudra"
+              },
+              {
+                "front": "acheter – tu",
+                "back": "tu achèteras"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň správné časy: Si tu (venir) ___, nous (regarder) ___ un film.",
+          "answer": "Po *si* přítomný čas → *tu viens*. Druhá část budoucí → *nous regarderons*. **Si tu viens, nous regarderons un film.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Až budeme v Paříži, uvidíme Eiffelovku.",
+          "answer": "Po *quand* o budoucnosti futur simple: **Quand nous serons à Paris, nous verrons la tour Eiffel.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Si il fera beau, nous irons à la plage.",
+          "right": "S’il fait beau, nous irons à la plage.",
+          "why": "Po *si* (jestli) nikdy nedáváš budoucí čas, ale přítomný. A *si + il* se stahuje na *s’il*."
+        },
+        {
+          "type": "summary",
+          "text": "Futur simple pro plány, sliby a předpovědi: *je partirai, je t’écrirai*. Po *si* přítomný čas (*s’il fait beau, j’irai*), po *quand* o budoucnosti budoucí čas (*quand je serai grand*)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Futur simple od *parler* pro *nous*:",
+      "options": [
+        "nous parlerons",
+        "nous parlons",
+        "nous parlerions"
+      ],
+      "answer": 0,
+      "explanation": "Infinitiv + *-ons*."
+    },
+    {
+      "type": "choice",
+      "question": "Futur simple od *être* pro *je*:",
+      "options": [
+        "je serai",
+        "je serais",
+        "j’étrai"
+      ],
+      "answer": 0,
+      "explanation": "Kmen *ser-* + *-ai*. *Je serais* je podmiňovací způsob."
+    },
+    {
+      "type": "choice",
+      "question": "Futur simple od *aller* pro *ils*:",
+      "options": [
+        "ils iront",
+        "ils alleront",
+        "ils vont"
+      ],
+      "answer": 0,
+      "explanation": "Kmen *ir-* + *-ont*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň futur simple od *faire*: Demain, nous ___ du ski.",
+      "answers": [
+        "ferons"
+      ],
+      "explanation": "Kmen *fer-* + *-ons*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň futur simple od *avoir*: Tu ___ seize ans en mai.",
+      "answers": [
+        "auras"
+      ],
+      "explanation": "Kmen *aur-* + *-as*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň futur simple od *prendre*: Elle ___ le bus.",
+      "answers": [
+        "prendra"
+      ],
+      "explanation": "Bez koncového *-e*: *prendr-* + *-a*."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: S’il ___ demain, je resterai à la maison.",
+      "options": [
+        "pleut",
+        "pleuvra",
+        "pleuvait"
+      ],
+      "answer": 0,
+      "explanation": "Po *si* přítomný čas."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Quand je ___ grand, je serai pilote.",
+      "options": [
+        "serai",
+        "suis",
+        "serais"
+      ],
+      "answer": 0,
+      "explanation": "Po *quand* o budoucnosti futur simple."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve futur simple mají všechna slovesa stejné koncovky -ai, -as, -a, -ons, -ez, -ont.",
+      "answer": true,
+      "explanation": "Nepravidelný bývá jen kmen."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Si il fera beau, on ira au parc.“ je správně.",
+      "answer": false,
+      "explanation": "Správně: *S’il fait beau, on ira au parc.* Po *si* přítomný čas a *si il* → *s’il*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s kmenem budoucího času.",
+      "pairs": [
+        [
+          "venir",
+          "viendr-"
+        ],
+        [
+          "voir",
+          "verr-"
+        ],
+        [
+          "pouvoir",
+          "pourr-"
+        ],
+        [
+          "savoir",
+          "saur-"
+        ],
+        [
+          "devoir",
+          "devr-"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Zavolám ti zítra.“",
+      "items": [
+        "Je",
+        "te",
+        "téléphonerai",
+        "demain"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří futur simple? Uveď pravidelné sloveso a dvě nepravidelná.",
+      "answer": "K infinitivu (u *-re* bez koncového *e*) přidám *-ai, -as, -a, -ons, -ez, -ont*: *je parlerai, je prendrai*. Nepravidelné kmeny: *être → je serai, aller → j’irai*."
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky, co budeš dělat o prázdninách (aspoň tři věty ve futur simple, jednu se *si*).",
+      "answer": "Například: *Cet été, j’irai chez mes grands-parents. Je lirai beaucoup et je ferai du vélo. S’il fait beau, je nagerai dans le lac.*"
+    }
+  ]
+}

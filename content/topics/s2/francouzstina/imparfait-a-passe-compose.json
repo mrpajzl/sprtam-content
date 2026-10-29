@@ -1,0 +1,493 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "imparfait-a-passe-compose",
+  "title": "Imparfait vs. passé composé",
+  "emoji": "🎬",
+  "explanations": [
+    {
+      "title": "Jako ve filmu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si film. Nejdřív kamera ukáže **kulisy**: prší, je noc, hrdina sedí v kavárně a čte noviny. Pak se najednou něco **stane**: otevřou se dveře a vejde neznámý muž."
+        },
+        {
+          "type": "text",
+          "text": "Francouzština na kulisy a na události používá dva různé minulé časy. Kulisy = **imparfait**, události = **passé composé**. Kdo to umí rozlišit, umí francouzsky vyprávět."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Passé composé",
+          "definition": "Minulý čas pro **události**: co se stalo, skončilo, posunulo děj dál. Tvoří se z *avoir/être* + příčestí.",
+          "example": "Il **est entré**. = Vešel."
+        },
+        {
+          "type": "term",
+          "term": "Imparfait",
+          "definition": "Minulý čas pro **kulisy**: popis, okolnosti, zvyky a děje, které právě probíhaly. Tvoří se z kmene *nous* + *-ais, -ait…*",
+          "example": "Il **pleuvait**. = Pršelo."
+        },
+        {
+          "type": "term",
+          "term": "Kulisy (pozadí)",
+          "definition": "Všechno, co tvoří scénu: počasí, čas, jak lidé vypadali, co zrovna dělali, jak se cítili.",
+          "example": "Il faisait nuit. Paul lisait."
+        },
+        {
+          "type": "heading",
+          "text": "Scéna z filmu"
+        },
+        {
+          "type": "text",
+          "text": "*Il **était** dix heures du soir. Il **pleuvait**. Paul **était** seul dans un café et il **lisait** le journal. Tout à coup, la porte **s’est ouverte** et un homme **est entré**. Il **s’est assis** à côté de Paul.*"
+        },
+        {
+          "type": "text",
+          "text": "= Bylo deset hodin večer. Pršelo. Paul byl sám v kavárně a četl noviny. Najednou se otevřely dveře a vešel muž. Sedl si vedle Paula."
+        },
+        {
+          "type": "table",
+          "head": [
+            "imparfait = kulisy",
+            "passé composé = události"
+          ],
+          "rows": [
+            [
+              "*il était dix heures* (čas)",
+              "*la porte s’est ouverte*"
+            ],
+            [
+              "*il pleuvait* (počasí)",
+              "*un homme est entré*"
+            ],
+            [
+              "*Paul était seul* (situace)",
+              "*il s’est assis*"
+            ],
+            [
+              "*il lisait* (probíhající děj)",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se rozhodnout"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zeptej se: posouvá to děj dopředu? Stalo se to a skončilo? → **passé composé**.",
+            "Popisuje to, jak to bylo, nebo co se dělo pořád dokola? → **imparfait**.",
+            "Probíhal děj, když se stalo něco jiného? Probíhající děj → **imparfait**, ta nová věc → **passé composé**: *Je dormais quand le téléphone a sonné.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pomocná slova"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "spíš imparfait",
+              "spíš passé composé"
+            ],
+            "items": [
+              {
+                "text": "tous les jours",
+                "group": 0
+              },
+              {
+                "text": "d’habitude",
+                "group": 0
+              },
+              {
+                "text": "souvent",
+                "group": 0
+              },
+              {
+                "text": "quand j’étais petit",
+                "group": 0
+              },
+              {
+                "text": "tout à coup",
+                "group": 1
+              },
+              {
+                "text": "soudain",
+                "group": 1
+              },
+              {
+                "text": "un jour",
+                "group": 1
+              },
+              {
+                "text": "trois fois",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pomocná slova jen napovídají. Rozhoduje vždy **smysl**: popis, nebo událost?"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je",
+                "after": "la télé quand mon frère est arrivé.",
+                "options": [
+                  "regardais",
+                  "ai regardé"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Quand je suis sorti, il",
+                "after": "froid.",
+                "options": [
+                  "faisait",
+                  "a fait"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Hier, nous",
+                "after": "au cinéma.",
+                "options": [
+                  "sommes allés",
+                  "allions"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tous les étés, ils",
+                "after": "à la mer.",
+                "options": [
+                  "allaient",
+                  "sont allés"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň správné časy: Quand je (rentrer) ___, ma mère (préparer) ___ le dîner.",
+          "answer": "Návrat je událost → *je suis rentré(e)*. Máma právě vařila → *préparait*. **Quand je suis rentré, ma mère préparait le dîner.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Bylo hezky, a tak jsme šli na procházku.",
+          "answer": "Počasí = kulisy → *il faisait beau*. Šli jsme = událost → *nous sommes allés*. **Il faisait beau, alors nous sommes allés nous promener.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hier, il a fait beau et je me promenais.",
+          "right": "Hier, il faisait beau et je me suis promené(e).",
+          "why": "Počasí je kulisa → imparfait. Procházka je ukončená událost → passé composé."
+        },
+        {
+          "type": "summary",
+          "text": "**Imparfait** = kulisy: popis, počasí, pocity, zvyky, probíhající děj. **Passé composé** = události: co se stalo a posunulo příběh. *Je lisais (kulisa) quand il est entré (událost).*"
+        }
+      ]
+    },
+    {
+      "title": "Videm jako v češtině",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Čeština má na podobný rozdíl svůj vlastní nástroj: **vid** sloves. „Četl jsem“ × „přečetl jsem“, „psal“ × „napsal“. Když tohle cítíš česky, máš k francouzským časům napůl vyhráno."
+        },
+        {
+          "type": "text",
+          "text": "Pozor ale: pravidlo „nedokonavé = imparfait“ platí **často, ne vždy**. Proto se naučíš i výjimky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vid",
+          "definition": "Vlastnost českých sloves. **Nedokonavý** vid vyjadřuje průběh nebo opakování (*psal, chodil*), **dokonavý** vid ukončenou věc (*napsal, přišel*).",
+          "example": "dělat × udělat, číst × přečíst"
+        },
+        {
+          "type": "term",
+          "term": "Imparfait",
+          "definition": "Francouzský minulý čas pro popis, zvyky a probíhající děj.",
+          "example": "Je lisais. = Četl jsem (zrovna, nebo pravidelně)."
+        },
+        {
+          "type": "term",
+          "term": "Passé composé",
+          "definition": "Francouzský minulý čas pro ukončené události.",
+          "example": "J’ai lu ce livre. = Přečetl jsem tu knihu."
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "česky",
+            "francouzsky",
+            "proč"
+          ],
+          "rows": [
+            [
+              "Když jsem byl malý, **chodil** jsem do parku.",
+              "*j’**allais** au parc*",
+              "zvyk → imparfait"
+            ],
+            [
+              "Včera jsem **šel** do parku.",
+              "*je **suis allé** au parc*",
+              "jednorázová událost → passé composé"
+            ],
+            [
+              "**Psala** dopis, když zazvonil telefon.",
+              "*elle **écrivait**… le téléphone **a sonné***",
+              "probíhající × nová událost"
+            ],
+            [
+              "**Napsala** dopis a odešla.",
+              "*elle **a écrit**… elle **est partie***",
+              "dvě události za sebou"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kdy čeština klame"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ohraničená doba: *Hier, j’**ai travaillé** pendant trois heures.* = Včera jsem tři hodiny pracoval. Česky nedokonavé, ale děj má jasný začátek a konec → **passé composé**.",
+            "Kolikrát: *Je **suis allé** trois fois à Paris.* = Byl jsem třikrát v Paříži. Spočítané opakování → **passé composé**.",
+            "Pocit nebo stav v daném okamžiku: *J’**étais** fatigué.* = Byl jsem unavený → **imparfait**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku: imparfait, nebo passé composé?"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Byla zima. (*faire froid*)",
+                "back": "imparfait: *il faisait froid*"
+              },
+              {
+                "front": "Najednou zakopl. (*tomber*)",
+                "back": "passé composé: *il est tombé*"
+              },
+              {
+                "front": "Každou sobotu jsme hráli fotbal.",
+                "back": "imparfait: *nous jouions au foot*"
+              },
+              {
+                "front": "Spal jsem osm hodin.",
+                "back": "passé composé (ohraničená doba): *j’ai dormi huit heures*"
+              },
+              {
+                "front": "Byl jsem dvakrát v Londýně.",
+                "back": "passé composé (spočítané): *je suis allé deux fois à Londres*"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Zrovna jsem se sprchoval, když přišla zpráva.",
+          "answer": "Probíhající děj → *je prenais une douche*; nová událost → *un message est arrivé*. **Je prenais une douche quand un message est arrivé.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Loni jsem dva měsíce bydlel v Lyonu.",
+          "answer": "Česky nedokonavé, ale doba je ohraničená (dva měsíce, skončilo) → passé composé: **L’année dernière, j’ai habité pendant deux mois à Lyon.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’allais à Paris trois fois.",
+          "right": "Je suis allé(e) trois fois à Paris.",
+          "why": "Když opakování spočítáš (třikrát), bere se jako celek ukončených událostí → passé composé."
+        },
+        {
+          "type": "summary",
+          "text": "Nedokonavý vid často = **imparfait** (popis, zvyk, průběh), dokonavý = **passé composé** (událost). Výjimky: ohraničená doba a spočítané opakování jsou v passé composé."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Je ___ la télé quand le téléphone a sonné.",
+      "options": [
+        "regardais",
+        "ai regardé",
+        "regarde"
+      ],
+      "answer": 0,
+      "explanation": "Probíhající děj přerušený událostí → imparfait."
+    },
+    {
+      "type": "choice",
+      "question": "Tout à coup, la porte ___.",
+      "options": [
+        "s’est ouverte",
+        "s’ouvrait",
+        "ouvrait"
+      ],
+      "answer": 0,
+      "explanation": "*Tout à coup* uvádí událost → passé composé."
+    },
+    {
+      "type": "choice",
+      "question": "Quand j’étais petit, je ___ au foot tous les samedis.",
+      "options": [
+        "jouais",
+        "ai joué",
+        "jouerai"
+      ],
+      "answer": 0,
+      "explanation": "Zvyk v minulosti → imparfait."
+    },
+    {
+      "type": "choice",
+      "question": "Hier, nous ___ au cinéma.",
+      "options": [
+        "sommes allés",
+        "allions",
+        "avons allé"
+      ],
+      "answer": 0,
+      "explanation": "Jednorázová událost → passé composé, *aller* s *être*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň *faire* v imparfait: Il ___ beau quand nous sommes partis.",
+      "answers": [
+        "faisait"
+      ],
+      "explanation": "Počasí = kulisa → imparfait."
+    },
+    {
+      "type": "input",
+      "question": "Doplň *arriver* v passé composé (ona): Elle ___ à huit heures.",
+      "answers": [
+        "est arrivée",
+        "est arrivee"
+      ],
+      "explanation": "Událost; *arriver* má *être* a shodu: *arrivée*."
+    },
+    {
+      "type": "choice",
+      "question": "J’___ deux heures hier soir.",
+      "options": [
+        "ai dormi",
+        "dormais",
+        "suis dormi"
+      ],
+      "answer": 0,
+      "explanation": "Ohraničená doba (dvě hodiny) → passé composé s *avoir*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Il pleuvait et il faisait froid.“ popisujeme kulisy, proto je správně imparfait.",
+      "answer": true,
+      "explanation": "Počasí je popis → imparfait."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je suis allé trois fois à Rome.“ je správně v passé composé.",
+      "answer": true,
+      "explanation": "Spočítané opakování → passé composé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Hier, il faisait froid, alors je suis resté à la maison.“ by mělo být i *faisait* v passé composé, protože je tam *hier*.",
+      "answer": false,
+      "explanation": "Počasí je kulisa → imparfait. Slovo *hier* samo nerozhoduje, rozhoduje smysl."
+    },
+    {
+      "type": "match",
+      "question": "Spoj začátek se správným pokračováním.",
+      "pairs": [
+        [
+          "Quand il est entré,",
+          "je lisais."
+        ],
+        [
+          "Tous les jours,",
+          "je prenais le bus."
+        ],
+        [
+          "Soudain,",
+          "j’ai entendu un bruit."
+        ],
+        [
+          "Quand j’avais dix ans,",
+          "j’habitais à Brno."
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Spal jsem, když zazvonil budík.“",
+      "items": [
+        "Je",
+        "dormais",
+        "quand",
+        "le réveil",
+        "a sonné"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi imparfait a passé composé na příkladu.",
+      "answer": "Imparfait popisuje kulisy, zvyky a probíhající děje, passé composé ukončené události. *Je dormais (probíhalo) quand le téléphone a sonné (událost).*"
+    },
+    {
+      "type": "open",
+      "question": "Vyprávěj francouzsky krátkou příhodu: popiš, jaké bylo počasí a co jsi dělal(a), a pak, co se najednou stalo.",
+      "answer": "Například: *Il faisait beau et je me promenais dans le parc. Tout à coup, un chien a couru vers moi et il a pris mon sandwich !*"
+    }
+  ]
+}
