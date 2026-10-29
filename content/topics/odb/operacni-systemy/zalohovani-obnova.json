@@ -1,0 +1,508 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zalohovani-obnova",
+  "title": "Zálohování a obnova",
+  "emoji": "💾",
+  "explanations": [
+    {
+      "title": "Až se to pokazí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Disk jednou odejde. Notebook spadne na zem, mobil zůstane ve vlaku, vyděračský virus zašifruje fotky. Otázka není **jestli**, ale **kdy**. Kdo má zálohu, za hodinu pracuje dál. Kdo ji nemá, přijde o roky práce."
+        },
+        {
+          "type": "text",
+          "text": "Pro technika je zálohování povinnost číslo jedna. Naučíš se, jak zálohovat, jak často a kam, a hlavně jak data zase obnovit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Záloha",
+          "definition": "Kopie dat uložená **jinde** než originál, ze které jde data obnovit, když originál zmizí nebo se poškodí.",
+          "example": "Fotky z notebooku zkopírované na externí disk."
+        },
+        {
+          "type": "term",
+          "term": "Obnova",
+          "definition": "Vrácení dat ze zálohy zpět, na původní nebo nové místo."
+        },
+        {
+          "type": "term",
+          "term": "Ransomware",
+          "definition": "Vyděračský škodlivý program. Zašifruje soubory a za klíč chce výkupné. Zašifruje i zálohy, na které dosáhne."
+        },
+        {
+          "type": "term",
+          "term": "Offline záloha",
+          "definition": "Záloha, která není trvale připojená k počítači ani k síti (odpojený disk). Ransomware na ni nedosáhne."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidlo 3-2-1"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**3** kopie dat (originál + 2 zálohy),",
+            "na **2** různých typech médií (např. disk v počítači a externí disk nebo NAS),",
+            "**1** kopie **mimo** budovu (cloud, disk u rodičů)."
+          ]
+        },
+        {
+          "type": "picture",
+          "items": [
+            "💻",
+            "💽",
+            "☁️"
+          ],
+          "caption": "Originál, externí disk, cloud"
+        },
+        {
+          "type": "text",
+          "text": "Proč mimo budovu? Požár nebo krádež zničí počítač i externí disk, který leží vedle něj."
+        },
+        {
+          "type": "heading",
+          "text": "Tři druhy záloh"
+        },
+        {
+          "type": "term",
+          "term": "Úplná záloha",
+          "definition": "Zkopíruje **všechna** vybraná data. Nejjednodušší obnova, ale trvá dlouho a zabere nejvíc místa."
+        },
+        {
+          "type": "term",
+          "term": "Přírůstková (inkrementální) záloha",
+          "definition": "Zkopíruje jen to, co se změnilo od **poslední zálohy jakéhokoli druhu**. Malá a rychlá, ale k obnově potřebuješ úplnou zálohu a **všechny** přírůstky po ní."
+        },
+        {
+          "type": "term",
+          "term": "Rozdílová (diferenciální) záloha",
+          "definition": "Zkopíruje vše, co se změnilo od **poslední úplné** zálohy. Každý den roste, ale k obnově stačí úplná a **poslední** rozdílová."
+        },
+        {
+          "type": "example",
+          "question": "V neděli uděláš úplnou zálohu 100 GB. Každý den se změní 5 GB jiných souborů. Kolik místa zaberou zálohy za týden (neděle až sobota) při přírůstkové a při rozdílové metodě?",
+          "answer": "**Přírůstková**: 100 + 6 · 5 = **130 GB**. **Rozdílová**: pondělí 5, úterý 10, … sobota 30 GB; dohromady 5 + 10 + 15 + 20 + 25 + 30 = 105, s úplnou **205 GB**."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "GB za týden",
+            "items": [
+              {
+                "label": "přírůstková",
+                "value": 130
+              },
+              {
+                "label": "rozdílová",
+                "value": 205
+              },
+              {
+                "label": "úplná každý den",
+                "value": 700
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Ve čtvrtek ráno odešel disk. Poslední záloha proběhla ve středu večer. Které zálohy potřebuješ k obnově?",
+          "answer": "**Přírůstková**: nedělní úplná + pondělí + úterý + středa (4 sady, v tomto pořadí). **Rozdílová**: nedělní úplná + **jen středeční** rozdílová (2 sady)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mám disky v RAID 1 (zrcadlo), takže zálohu nepotřebuju.",
+          "right": "RAID **není záloha**. Zálohu potřebuješ i s RAIDem.",
+          "why": "RAID chrání jen proti selhání jednoho disku. Smazaný soubor, virus nebo požár zasáhnou oba disky naráz."
+        },
+        {
+          "type": "summary",
+          "text": "Záloha je kopie jinde než originál. Pravidlo 3-2-1: tři kopie, dvě média, jedna mimo budovu. Úplná, přírůstková (od poslední zálohy) a rozdílová (od poslední úplné). RAID ani synchronizace nejsou záloha."
+        }
+      ]
+    },
+    {
+      "title": "Plán zálohování",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Malá účetní firma ti řekne: „Nesmíme ztratit víc než jeden den práce a do půl dne musíme zase fungovat.“ Z takové věty se dá sestavit konkrétní plán: co zálohovat, jak často, jakou metodou, kam a jak ověřit, že obnova funguje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Záloha a obnova",
+          "definition": "Záloha je kopie dat jinde než originál. Obnova je vrácení dat ze zálohy."
+        },
+        {
+          "type": "term",
+          "term": "RPO",
+          "definition": "Kolik dat (měřeno časem) smíš ztratit. Určuje, **jak často** zálohovat.",
+          "example": "RPO 24 h → záloha aspoň jednou denně."
+        },
+        {
+          "type": "term",
+          "term": "RTO",
+          "definition": "Jak rychle musí být systém po havárii zase v provozu.",
+          "example": "RTO 4 h → obnova musí trvat nejvýš 4 hodiny."
+        },
+        {
+          "type": "term",
+          "term": "Verzování",
+          "definition": "Uchovávání víc starších verzí souborů. Dovolí vrátit se do stavu před chybou nebo před napadením."
+        },
+        {
+          "type": "term",
+          "term": "Synchronizace",
+          "definition": "Udržování stejného obsahu na dvou místech (OneDrive, Dropbox). Když soubor smažeš nebo zašifruješ, změna se **přenese** i do druhé kopie. Bez verzování to tedy není záloha."
+        },
+        {
+          "type": "term",
+          "term": "Obraz disku",
+          "definition": "Záloha celého disku včetně systému a programů. Obnovou dostaneš celý počítač zpět do stavu zálohy."
+        },
+        {
+          "type": "heading",
+          "text": "Sestavení plánu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči, **co** je důležité: dokumenty, databáze, pošta, konfigurace serverů.",
+            "Z **RPO** urči, jak často zálohovat.",
+            "Zvol **metodu**: např. úplná každou neděli a přírůstková každý všední den.",
+            "Zvol **cíle** podle 3-2-1: NAS ve firmě + cloud nebo odpojený disk mimo firmu.",
+            "Nastav **uchování**: kolik verzí a jak dlouho držet.",
+            "Pravidelně **zkoušej obnovu**. Neotestovaná záloha je jen naděje."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nástroje"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Systém",
+            "Nástroj",
+            "Co dělá"
+          ],
+          "rows": [
+            [
+              "Windows",
+              "Historie souborů",
+              "průběžně zálohuje verze souborů z uživatelských složek na jiný disk"
+            ],
+            [
+              "Windows",
+              "Bod obnovení systému",
+              "vrátí systémové soubory a nastavení, **ne** osobní dokumenty"
+            ],
+            [
+              "Linux",
+              "`rsync`",
+              "kopíruje a synchronizuje jen změněné soubory, i přes síť"
+            ],
+            [
+              "Linux",
+              "`tar`",
+              "zabalí složky do jednoho archivu"
+            ],
+            [
+              "Linux",
+              "Timeshift",
+              "snímky systému pro návrat po nepovedené aktualizaci"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ukázka: `rsync -a --delete /home/jana/ /mnt/zaloha/jana/`. Co dělá a v čem je riziko?",
+          "answer": "`-a` zachová oprávnění, časy a projde podsložky. `--delete` smaže v cíli to, co ve zdroji už není. Výsledkem je **přesná kopie**. Riziko: když omylem smažeš soubor, smaže se při dalším běhu i ze zálohy. Proto přidej **verzování** (víc záloh v různých složkách podle data)."
+        },
+        {
+          "type": "example",
+          "question": "Firma má RPO 24 h a RTO 4 h. Obnova 500 GB z cloudu přes linku 100 Mb/s by trvala kolik? Vyhoví?",
+          "answer": "100 Mb/s = 12,5 MB/s. 500 GB = 500 000 MB. 500 000 / 12,5 = 40 000 s ≈ **11 hodin**. RTO 4 h **nesplní**. Potřebuje i místní zálohu (NAS ve firmě), z cloudu jen pro případ katastrofy."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "je záloha",
+              "není záloha (sama o sobě)"
+            ],
+            "items": [
+              {
+                "text": "odpojený externí disk s kopií dat",
+                "group": 0
+              },
+              {
+                "text": "cloudová záloha s verzemi",
+                "group": 0
+              },
+              {
+                "text": "RAID 1",
+                "group": 1
+              },
+              {
+                "text": "synchronizovaná složka bez verzí",
+                "group": 1
+              },
+              {
+                "text": "bod obnovení systému",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Kolik dat smíš ztratit, udává ",
+                "after": "",
+                "options": [
+                  "RPO",
+                  "RTO",
+                  "RAID"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "K obnově z přírůstkových záloh potřebuješ úplnou a ",
+                "after": "",
+                "options": [
+                  "všechny přírůstky po ní",
+                  "jen poslední přírůstek"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Proti ransomwaru nejlépe chrání záloha ",
+                "after": "",
+                "options": [
+                  "offline",
+                  "na stejném disku",
+                  "v RAID"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "3-2-1",
+                "back": "3 kopie, 2 média, 1 mimo budovu"
+              },
+              {
+                "front": "Přírůstková",
+                "back": "změny od poslední zálohy"
+              },
+              {
+                "front": "Rozdílová",
+                "back": "změny od poslední úplné"
+              },
+              {
+                "front": "RPO",
+                "back": "kolik dat smíš ztratit"
+              },
+              {
+                "front": "RTO",
+                "back": "jak rychle musí systém zase běžet"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zálohy běží každý den automaticky, takže je nemusím kontrolovat.",
+          "right": "Pravidelně kontroluj **hlášení o chybách** a dělej **zkušební obnovu**.",
+          "why": "Záloha může měsíce tiše selhávat (plný disk, změněné heslo, poškozený archiv). Zjistíš to až ve chvíli, kdy ji potřebuješ."
+        },
+        {
+          "type": "summary",
+          "text": "Plán zálohování vychází z RPO (jak často) a RTO (jak rychle obnovit). Kombinuj úplné a přírůstkové nebo rozdílové zálohy, drž verze, dodržuj 3-2-1 s offline kopií a pravidelně zkoušej obnovu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co říká pravidlo 3-2-1?",
+      "options": [
+        "3 kopie dat, 2 různá média, 1 kopie mimo budovu",
+        "3 zálohy denně, 2 týdně, 1 měsíčně",
+        "3 disky v RAID, 2 servery, 1 cloud",
+        "3 hesla, 2 účty, 1 správce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která záloha kopíruje změny od poslední **úplné** zálohy?",
+      "options": [
+        "rozdílová",
+        "přírůstková",
+        "úplná",
+        "zrcadlová"
+      ],
+      "answer": 0,
+      "hints": [
+        "Každý den roste, dokud se neudělá nová úplná."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co potřebuješ k obnově, když děláš úplnou zálohu v neděli a přírůstkovou každý den, a disk selže ve čtvrtek ráno?",
+      "options": [
+        "nedělní úplnou + pondělní, úterní a středeční přírůstek",
+        "jen středeční přírůstek",
+        "nedělní úplnou + středeční přírůstek",
+        "jen nedělní úplnou"
+      ],
+      "answer": 0,
+      "hints": [
+        "Každý přírůstek obsahuje jen změny od předchozí zálohy."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "RAID 1 nahrazuje zálohování.",
+      "answer": false,
+      "explanation": "Chrání jen proti selhání disku, ne proti smazání, viru nebo požáru."
+    },
+    {
+      "type": "truefalse",
+      "question": "Synchronizovaná složka bez verzí přenese i smazání souboru.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Úplná záloha má 200 GB, každý den se změní 10 GB jiných dat. Kolik GB zaberou úplná + 5 přírůstkových záloh?",
+      "answers": [
+        "250"
+      ],
+      "hints": [
+        "Každý přírůstek obsahuje jen změny jednoho dne."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Úplná záloha 200 GB, denně 10 GB jiných změn. Kolik GB bude mít třetí rozdílová záloha po úplné?",
+      "answers": [
+        "30"
+      ],
+      "hints": [
+        "Rozdílová obsahuje všechny změny od úplné zálohy."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "RPO",
+          "kolik dat smíš ztratit"
+        ],
+        [
+          "RTO",
+          "za jak dlouho musí systém běžet"
+        ],
+        [
+          "verzování",
+          "uchování starších verzí souborů"
+        ],
+        [
+          "offline záloha",
+          "odpojená, ransomware na ni nedosáhne"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co nejlépe ochrání data před ransomwarem?",
+      "options": [
+        "offline záloha s více verzemi",
+        "RAID 1",
+        "synchronizace s cloudem bez verzí",
+        "antivirus bez zálohy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky sestavení plánu zálohování.",
+      "items": [
+        "určit důležitá data",
+        "z RPO určit četnost",
+        "zvolit metodu a cíle 3-2-1",
+        "nastavit uchování verzí",
+        "pravidelně zkoušet obnovu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který nástroj Windows průběžně zálohuje verze osobních souborů?",
+      "options": [
+        "Historie souborů",
+        "Bod obnovení systému",
+        "Správce úloh",
+        "Defragmentace"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá přepínač `--delete` u rsync?",
+      "options": [
+        "smaže v cíli soubory, které už nejsou ve zdroji",
+        "smaže zdroj po zkopírování",
+        "smaže celou zálohu",
+        "zakáže mazání"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi přírůstkovou a rozdílovou zálohou a co potřebuješ k obnově.",
+      "answer": "Přírůstková kopíruje změny od poslední zálohy jakéhokoli typu, je malá, ale k obnově potřebuji úplnou a všechny přírůstky po ní. Rozdílová kopíruje změny od poslední úplné, roste, ale k obnově stačí úplná a poslední rozdílová."
+    },
+    {
+      "type": "open",
+      "question": "Navrhni zálohování pro domácí počítač s rodinnými fotkami.",
+      "answer": "Podle 3-2-1: fotky v počítači, záloha na externí disk, který po zálohování odpojím, a třetí kopie v cloudu s verzemi. Zálohovat pravidelně, třeba týdně, a občas zkusit obnovit pár souborů."
+    }
+  ]
+}

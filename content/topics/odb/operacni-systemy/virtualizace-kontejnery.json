@@ -1,0 +1,535 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "virtualizace-kontejnery",
+  "title": "Virtualizace a kontejnery",
+  "emoji": "📦",
+  "explanations": [
+    {
+      "title": "Počítač v počítači",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chceš si vyzkoušet Linux, ale nechceš si rozbít Windows. Nebo škola potřebuje 20 serverů, ale nemá místo na 20 skříní. Řešením je **virtualizace**: na jednom fyzickém počítači běží několik „počítačů“ jako programy."
+        },
+        {
+          "type": "text",
+          "text": "Virtuální stroje a kontejnery jsou dnes základ datových center i cloudu. A pro tebe skvělé hřiště: pokazit tu nemůžeš skoro nic."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Virtuální stroj (VM)",
+          "definition": "Počítač vytvořený softwarem. Má vlastní virtuální procesor, paměť, disk a síťovou kartu a běží v něm celý operační systém.",
+          "example": "Ubuntu spuštěné v okně na Windows"
+        },
+        {
+          "type": "term",
+          "term": "Hostitel a host",
+          "definition": "**Hostitel** (host) je skutečný počítač, na kterém virtualizace běží. **Host** (guest) je systém uvnitř virtuálního stroje.",
+          "example": "hostitel Windows 11, host Debian"
+        },
+        {
+          "type": "term",
+          "term": "Hypervizor",
+          "definition": "Software, který virtuální stroje vytváří a dělí mezi ně skutečný hardware.",
+          "example": "VirtualBox, Hyper-V, VMware ESXi"
+        },
+        {
+          "type": "term",
+          "term": "Snímek (snapshot)",
+          "definition": "Uložený stav virtuálního stroje v určitém okamžiku. Kdykoli se k němu vrátíš.",
+          "example": "Snímek před pokusem s nastavením sítě."
+        },
+        {
+          "type": "heading",
+          "text": "Dva typy hypervizorů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Jak běží",
+            "Příklady",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "typ 1 (bare-metal)",
+              "přímo na hardwaru, bez dalšího OS pod sebou",
+              "VMware ESXi, Microsoft Hyper-V, KVM (Proxmox VE)",
+              "servery, datová centra"
+            ],
+            [
+              "typ 2 (hostovaný)",
+              "jako program v běžném OS",
+              "Oracle VirtualBox, VMware Workstation",
+              "výuka, testování na PC"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Aby virtualizace běžela rychle, musí ji umět procesor: **Intel VT-x** nebo **AMD-V**. Zapíná se v nastavení UEFI."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si: první virtuální stroj"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "V UEFI zapni podporu virtualizace (VT-x / AMD-V).",
+            "Nainstaluj VirtualBox.",
+            "Vytvoř nový VM: zvol typ systému, přiděl např. 2 jádra, 4 GB RAM a 25 GB disk.",
+            "Připoj ISO s Linuxem jako virtuální DVD a VM spusť.",
+            "Nainstaluj systém jako na skutečný počítač.",
+            "Udělej **snímek**, než začneš experimentovat."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Počítač má 16 GB RAM. Kolik virtuálních strojů po 4 GB rozumně spustíš současně?",
+          "answer": "Hostitel sám potřebuje paměť, počítejme aspoň 4 GB. Zbude 16 − 4 = 12 GB → **3 VM po 4 GB**. Čtvrtý by hostitele připravil o paměť a vše by se zpomalilo."
+        },
+        {
+          "type": "heading",
+          "text": "Kontejnery"
+        },
+        {
+          "type": "term",
+          "term": "Kontejner",
+          "definition": "Odlehčená izolace: aplikace se vším, co potřebuje (knihovny, nastavení), zabalená do balíčku. Kontejnery **sdílejí jádro hostitelského OS**, nemají vlastní celý systém.",
+          "example": "webový server Nginx v kontejneru Docker"
+        },
+        {
+          "type": "term",
+          "term": "Docker",
+          "definition": "Nejznámější nástroj na kontejnery. Z **obrazu** (šablony) spustí **kontejner** (běžící instanci).",
+          "example": "`docker run -d -p 8080:80 nginx`"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "typická velikost (MB, příklad)",
+            "items": [
+              {
+                "label": "VM s Ubuntu Server",
+                "value": 3000
+              },
+              {
+                "label": "kontejner s Nginx",
+                "value": 190
+              },
+              {
+                "label": "kontejner Alpine Linux",
+                "value": 8
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Co udělá `docker run -d -p 8080:80 nginx`?",
+          "answer": "Stáhne obraz **nginx** (pokud ho nemáš) a spustí z něj kontejner na pozadí (**-d**). **-p 8080:80** propojí port 8080 hostitele s portem 80 v kontejneru. Web pak otevřeš na http://localhost:8080."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kontejner je totéž co virtuální stroj, jen menší.",
+          "right": "VM má **vlastní celý OS i jádro**, kontejner **sdílí jádro hostitele** a obsahuje jen aplikaci a knihovny.",
+          "why": "Proto kontejner startuje za vteřinu a je malý, ale linuxový kontejner nespustíš přímo na jádru Windows (Docker Desktop k tomu používá skrytý linuxový VM)."
+        },
+        {
+          "type": "summary",
+          "text": "Hypervizor dělí hardware mezi virtuální stroje: typ 1 přímo na hardwaru (ESXi, Hyper-V, KVM), typ 2 jako program (VirtualBox). Snímek uloží stav VM. Kontejnery (Docker) sdílejí jádro hostitele, jsou menší a rychlejší, ale méně oddělené."
+        }
+      ]
+    },
+    {
+      "title": "Srovnání a provoz",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Firma provozuje e-shop, databázi a poštu. Správce se rozhoduje: dát každou službu na vlastní server, do virtuálního stroje, nebo do kontejneru? Každá možnost má jiné náklady, bezpečnost i rychlost nasazení. Porovnáme je v přehledu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Virtualizace",
+          "definition": "Vytvoření virtuálních zdrojů (počítač, disk, síť) softwarem nad skutečným hardwarem."
+        },
+        {
+          "type": "term",
+          "term": "Hypervizor",
+          "definition": "Vrstva, která spravuje virtuální stroje a přiděluje jim procesor, paměť a zařízení. Typ 1 běží přímo na hardwaru, typ 2 v běžném OS."
+        },
+        {
+          "type": "term",
+          "term": "Virtuální stroj",
+          "definition": "Úplný počítač emulovaný softwarem, s vlastním OS a jádrem."
+        },
+        {
+          "type": "term",
+          "term": "Kontejner a obraz",
+          "definition": "**Obraz** je neměnná šablona (aplikace + knihovny). **Kontejner** je spuštěná instance obrazu. Sdílí jádro hostitele, izolaci zajišťují funkce jádra Linuxu."
+        },
+        {
+          "type": "term",
+          "term": "Orchestrace",
+          "definition": "Automatická správa mnoha kontejnerů na mnoha serverech: spouštění, škálování, restart při pádu.",
+          "example": "Kubernetes"
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Fyzický server",
+            "Virtuální stroj",
+            "Kontejner"
+          ],
+          "rows": [
+            [
+              "vlastní jádro OS",
+              "ano",
+              "ano",
+              "ne, sdílí hostitele"
+            ],
+            [
+              "start",
+              "minuty",
+              "desítky sekund až minuty",
+              "sekundy"
+            ],
+            [
+              "velikost",
+              "–",
+              "GB",
+              "MB"
+            ],
+            [
+              "oddělení (izolace)",
+              "nejlepší",
+              "velmi dobré",
+              "slabší"
+            ],
+            [
+              "jiný OS než hostitel",
+              "–",
+              "ano (Windows vedle Linuxu)",
+              "jen se stejným jádrem"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Výhody virtualizace"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Úspora**: jeden výkonný server nahradí mnoho málo vytížených.",
+            "**Snímky a klony**: rychlý návrat po chybě, nový server za minutu.",
+            "**Přesun** VM na jiný hostitel, i za běhu (live migrace).",
+            "**Testování** bez rizika pro skutečný systém."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Docker v kostce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příkaz",
+            "Co dělá"
+          ],
+          "rows": [
+            [
+              "`docker pull nginx`",
+              "stáhne obraz"
+            ],
+            [
+              "`docker run -d --name web -p 8080:80 nginx`",
+              "spustí kontejner"
+            ],
+            [
+              "`docker ps`",
+              "vypíše běžící kontejnery"
+            ],
+            [
+              "`docker stop web`",
+              "zastaví kontejner"
+            ],
+            [
+              "`docker images`",
+              "vypíše stažené obrazy"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Obraz se popisuje souborem **Dockerfile**: z jakého základu vychází, co se do něj nakopíruje a co se spustí."
+        },
+        {
+          "type": "example",
+          "question": "Vývojář říká: „U mě to funguje, na serveru ne.“ Jak pomohou kontejnery?",
+          "answer": "Aplikace se zabalí do **obrazu** i se všemi knihovnami a verzemi. Ten samý obraz poběží u vývojáře, na testu i na serveru **stejně**. Rozdíly v prostředí zmizí."
+        },
+        {
+          "type": "example",
+          "question": "Potřebuješ na linuxovém serveru provozovat aplikaci, která běží jen ve Windows. Kontejner, nebo VM?",
+          "answer": "Kontejner sdílí **jádro** hostitele, tady linuxové. Aplikace pro Windows v něm nepoběží. Potřebuješ **virtuální stroj** s Windows."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "hypervizor typu 1",
+              "hypervizor typu 2",
+              "kontejnery"
+            ],
+            "items": [
+              {
+                "text": "VMware ESXi",
+                "group": 0
+              },
+              {
+                "text": "Proxmox VE (KVM)",
+                "group": 0
+              },
+              {
+                "text": "VirtualBox",
+                "group": 1
+              },
+              {
+                "text": "VMware Workstation",
+                "group": 1
+              },
+              {
+                "text": "Docker",
+                "group": 2
+              },
+              {
+                "text": "Podman",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Kontejnery sdílejí ",
+                "after": "",
+                "options": [
+                  "jádro hostitele",
+                  "vlastní jádro",
+                  "BIOS"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Spuštěná instance obrazu je ",
+                "after": "",
+                "options": [
+                  "kontejner",
+                  "snímek",
+                  "hypervizor"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Běžící kontejnery vypíše ",
+                "after": "",
+                "options": [
+                  "docker ps",
+                  "docker pull",
+                  "docker build"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Snímek virtuálního stroje je záloha, další zálohy nepotřebuju.",
+          "right": "Snímek je **dočasný bod návratu**, ne záloha. Zálohy dělej zvlášť, na jiné úložiště.",
+          "why": "Snímek leží na stejném úložišti jako VM. Když selže disk hostitele, zmizí VM i snímky. Dlouho držené snímky navíc rostou a zpomalují VM."
+        },
+        {
+          "type": "summary",
+          "text": "VM má vlastní OS a jádro, je dobře oddělený, ale větší a pomalejší na start. Kontejner sdílí jádro hostitele, je malý a rychlý. Typ 1: ESXi, Hyper-V, KVM; typ 2: VirtualBox. Docker: obraz → kontejner (docker run, ps, stop). Snímek není záloha."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je hypervizor?",
+      "options": [
+        "software, který vytváří a spravuje virtuální stroje",
+        "typ procesoru",
+        "záloha disku",
+        "kontejner s webem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj produkt s typem.",
+      "pairs": [
+        [
+          "VMware ESXi",
+          "hypervizor typu 1"
+        ],
+        [
+          "VirtualBox",
+          "hypervizor typu 2"
+        ],
+        [
+          "Docker",
+          "kontejnery"
+        ],
+        [
+          "Kubernetes",
+          "orchestrace kontejnerů"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kontejnery sdílejí jádro hostitelského operačního systému.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Snímek virtuálního stroje plně nahradí zálohu.",
+      "answer": false,
+      "explanation": "Leží na stejném úložišti; při poruše disku zmizí s VM."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje skutečný počítač, na kterém běží virtuální stroje?",
+      "options": [
+        "hostitel",
+        "host",
+        "kontejner",
+        "obraz"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kdo „hostí“ návštěvy?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co musí umět procesor pro rychlou virtualizaci?",
+      "options": [
+        "Intel VT-x nebo AMD-V",
+        "Secure Boot",
+        "Hyper-Threading",
+        "TPM 2.0"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Aplikaci pouze pro Windows chceš provozovat na linuxovém serveru. Co zvolíš?",
+      "options": [
+        "virtuální stroj s Windows",
+        "linuxový kontejner",
+        "snímek",
+        "GRUB"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Napiš příkaz Dockeru, který vypíše běžící kontejnery.",
+      "answers": [
+        "docker ps",
+        "docker container ls"
+      ],
+      "hints": [
+        "Zkratku ps znáš i z Linuxu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená `-p 8080:80` v příkazu docker run?",
+      "options": [
+        "port 8080 hostitele se propojí s portem 80 kontejneru",
+        "kontejner dostane 8080 MB RAM",
+        "spustí se 80 kontejnerů",
+        "kontejner poběží 8080 sekund"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Hostitel má 32 GB RAM, sám si nechá 8 GB. Kolik VM po 6 GB spustíš?",
+      "answers": [
+        "4"
+      ],
+      "hints": [
+        "Nejdřív odečti paměť hostitele.",
+        "Výsledek vyděl a zaokrouhli dolů."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejrychlejšího startu po nejpomalejší.",
+      "items": [
+        "kontejner",
+        "virtuální stroj",
+        "fyzický server"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá soubor, který popisuje, jak sestavit obraz Dockeru?",
+      "options": [
+        "Dockerfile",
+        "Imagefile",
+        "docker.ini",
+        "compose.exe"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej virtuální stroj a kontejner.",
+      "answer": "Virtuální stroj má vlastní celý OS i jádro, je dobře oddělený a může běžet jiný systém než hostitel, ale je velký a startuje pomaleji. Kontejner sdílí jádro hostitele a obsahuje jen aplikaci s knihovnami, je malý a startuje za sekundy, ale izolace je slabší."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi hypervizorem typu 1 a typu 2?",
+      "answer": "Typ 1 běží přímo na hardwaru bez dalšího OS pod sebou (ESXi, Hyper-V, KVM) a používá se na serverech. Typ 2 běží jako program v běžném OS (VirtualBox, VMware Workstation) a hodí se pro výuku a testování."
+    }
+  ]
+}

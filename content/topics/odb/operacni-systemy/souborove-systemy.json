@@ -1,0 +1,568 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "souborove-systemy",
+  "title": "Souborové systémy a cesty",
+  "emoji": "🗂️",
+  "explanations": [
+    {
+      "title": "Knihovna a katalog",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V knihovně jsou tisíce knih. Bez katalogu bys žádnou nenašel. Katalog říká, kde kniha stojí, kdo ji smí půjčit a kdy přišla."
+        },
+        {
+          "type": "text",
+          "text": "Disk je jen obrovská řada bajtů. Aby se v ní daly najít soubory a složky, potřebuje **souborový systém**: katalog disku. Podle něj se rozhoduješ, jak naformátovat flashku, proč na ni nejde nahrát 5GB film a jak správně napsat cestu k souboru."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Soubor",
+          "definition": "Pojmenovaná data uložená na disku. Má jméno, často **příponu** (typ) a velikost.",
+          "example": "referat.docx, fotka.jpg"
+        },
+        {
+          "type": "term",
+          "term": "Složka (adresář)",
+          "definition": "Pojmenovaný „šuplík“, který obsahuje soubory a další složky. Složky tvoří strom.",
+          "example": "Dokumenty, Obrázky"
+        },
+        {
+          "type": "term",
+          "term": "Oddíl (partition)",
+          "definition": "Samostatná část disku, která se chová jako vlastní disk.",
+          "example": "Disk rozdělený na C: (systém) a D: (data)."
+        },
+        {
+          "type": "term",
+          "term": "Souborový systém",
+          "definition": "Způsob, jak jsou na oddílu uložené soubory, složky a údaje o nich. Vytvoří se **formátováním** oddílu.",
+          "example": "NTFS, FAT32, exFAT, ext4"
+        },
+        {
+          "type": "term",
+          "term": "Formátování",
+          "definition": "Vytvoření prázdného souborového systému na oddílu. **Smaže** přístup k dosavadním datům."
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější souborové systémy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Systém",
+            "Kde se používá",
+            "Výhody",
+            "Omezení"
+          ],
+          "rows": [
+            [
+              "FAT32",
+              "starší flashky, paměťové karty, zařízení",
+              "umí ho skoro každé zařízení",
+              "soubor nejvýš **4 GiB − 1 B**, žádná oprávnění"
+            ],
+            [
+              "exFAT",
+              "flashky a karty",
+              "velké soubory, funguje ve Windows i macOS",
+              "bez žurnálu a oprávnění"
+            ],
+            [
+              "NTFS",
+              "Windows (systémový disk)",
+              "oprávnění, žurnál, šifrování, komprese",
+              "macOS ho bez doplňků jen čte"
+            ],
+            [
+              "ext4",
+              "Linux",
+              "oprávnění, žurnál, rychlý",
+              "Windows ho běžně nepřečte"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Žurnál",
+          "definition": "Deník, kam si souborový systém nejdřív zapíše, co chce změnit. Když vypadne proud, podle žurnálu se dokončí nebo vrátí rozdělaná změna a disk nezůstane poškozený."
+        },
+        {
+          "type": "example",
+          "question": "Chceš nahrát film o velikosti 6 GB na flashku s FAT32. Proč to nejde a co s tím?",
+          "answer": "FAT32 dovolí soubor nejvýš **4 GiB − 1 B**. 6 GB je víc. Flashku naformátuj na **exFAT** (pozor, smaže data) nebo použij NTFS, pokud ji budeš používat jen ve Windows."
+        },
+        {
+          "type": "heading",
+          "text": "Cesty k souborům"
+        },
+        {
+          "type": "term",
+          "term": "Cesta",
+          "definition": "Zápis, jak se ke souboru dostat po složkách."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Windows",
+            "Linux"
+          ],
+          "rows": [
+            [
+              "oddělovač",
+              "zpětné lomítko \\",
+              "lomítko /"
+            ],
+            [
+              "začátek stromu",
+              "písmeno jednotky (C:\\)",
+              "kořen /"
+            ],
+            [
+              "domovská složka",
+              "C:\\Users\\jana",
+              "/home/jana (zkráceně ~)"
+            ],
+            [
+              "velká a malá písmena",
+              "nerozlišuje",
+              "**rozlišuje** (Foto.jpg ≠ foto.jpg)"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Absolutní a relativní cesta",
+          "definition": "**Absolutní** začíná od začátku stromu a platí odkudkoli. **Relativní** začíná od složky, kde právě jsi. **.** znamená „tato složka“, **..** „nadřazená složka“.",
+          "example": "absolutní: /home/jana/skola/referat.odt; relativní z /home/jana: skola/referat.odt"
+        },
+        {
+          "type": "example",
+          "question": "Jsi ve složce /home/jana/skola. Jak relativní cestou zapíšeš soubor /home/jana/hudba/song.mp3?",
+          "answer": "Ze složky skola musíš o úroveň výš do /home/jana: **..** Pak do hudba: **../hudba/song.mp3**."
+        },
+        {
+          "type": "text",
+          "text": "Doplň správný zápis."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Absolutní cesta v Linuxu začíná znakem ",
+                "after": "",
+                "options": [
+                  "/",
+                  "\\",
+                  "C:"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ve Windows se složky oddělují znakem ",
+                "after": "",
+                "options": [
+                  "\\",
+                  "/",
+                  ":"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nadřazenou složku označují znaky ",
+                "after": "",
+                "options": [
+                  "..",
+                  ".",
+                  "~"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "V Linuxu jsou Dokumenty a dokumenty stejná složka.",
+          "right": "V Linuxu (ext4) jsou to **dvě různé** složky.",
+          "why": "Linux rozlišuje velká a malá písmena v názvech. Windows (NTFS) je běžně nerozlišuje."
+        },
+        {
+          "type": "summary",
+          "text": "Souborový systém je katalog disku: FAT32 (soubor max. 4 GiB − 1 B), exFAT (flashky), NTFS (Windows, oprávnění), ext4 (Linux). Cesty: Windows C:\\…, Linux /…; absolutní od kořene, relativní od aktuální složky, .. = o úroveň výš."
+        }
+      ]
+    },
+    {
+      "title": "Disk zevnitř",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik dostane nový disk. Než na něj uloží jediný soubor, musí ho **rozdělit na oddíly** a **naformátovat**. Volby, které při tom udělá (MBR nebo GPT, NTFS nebo ext4), rozhodnou, jestli z disku půjde nastartovat a jak velké soubory na něj půjdou uložit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Oddíl",
+          "definition": "Samostatná část disku s vlastním souborovým systémem."
+        },
+        {
+          "type": "term",
+          "term": "Tabulka oddílů",
+          "definition": "Seznam oddílů na začátku disku. Starší **MBR** zvládne disk jen do 2 TiB a nejvýš 4 primární oddíly. Novější **GPT** zvládne obrovské disky a Windows na něm povolí až 128 oddílů. Start přes UEFI používá GPT."
+        },
+        {
+          "type": "term",
+          "term": "Souborový systém",
+          "definition": "Struktura na oddílu, která eviduje soubory, složky, jejich velikost, data a oprávnění."
+        },
+        {
+          "type": "term",
+          "term": "Blok (cluster)",
+          "definition": "Nejmenší kus disku, který souborový systém přidělí souboru. Typicky 4 KiB.",
+          "example": "Soubor o 1 B zabere celý 4KiB blok."
+        },
+        {
+          "type": "term",
+          "term": "Inode",
+          "definition": "V Linuxu (ext4) záznam o souboru: velikost, vlastník, oprávnění, časy a kde leží jeho bloky. Jméno souboru je uložené ve složce a odkazuje na inode."
+        },
+        {
+          "type": "term",
+          "term": "Metadata",
+          "definition": "Údaje **o** souboru, ne jeho obsah: jméno, velikost, datum změny, vlastník, oprávnění."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání souborových systémů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "FAT32",
+            "exFAT",
+            "NTFS",
+            "ext4"
+          ],
+          "rows": [
+            [
+              "žurnál",
+              "ne",
+              "ne",
+              "ano",
+              "ano"
+            ],
+            [
+              "oprávnění",
+              "ne",
+              "ne",
+              "ano (ACL)",
+              "ano (rwx)"
+            ],
+            [
+              "max. soubor",
+              "4 GiB − 1 B",
+              "prakticky neomezený",
+              "prakticky neomezený",
+              "16 TiB"
+            ],
+            [
+              "hlavní použití",
+              "staré flashky, karty",
+              "flashky, karty",
+              "Windows",
+              "Linux"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Další, se kterými se potkáš: **APFS** (macOS), **Btrfs** a **XFS** (Linux)."
+        },
+        {
+          "type": "heading",
+          "text": "Strom složek v Linuxu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Složka",
+            "Co obsahuje"
+          ],
+          "rows": [
+            [
+              "/",
+              "kořen celého stromu"
+            ],
+            [
+              "/home",
+              "domovské složky uživatelů"
+            ],
+            [
+              "/root",
+              "domovská složka správce root"
+            ],
+            [
+              "/etc",
+              "konfigurační soubory"
+            ],
+            [
+              "/bin, /usr/bin",
+              "programy"
+            ],
+            [
+              "/var",
+              "proměnlivá data, např. logy v /var/log"
+            ],
+            [
+              "/tmp",
+              "dočasné soubory"
+            ],
+            [
+              "/dev",
+              "zařízení jako soubory (disk /dev/sda)"
+            ],
+            [
+              "/media, /mnt",
+              "připojené disky a flashky"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "V Linuxu nejsou písmena jednotek. Další disky se **připojí** (mount) do nějaké složky stromu, např. flashka do /media/jana/FLASH."
+        },
+        {
+          "type": "heading",
+          "text": "Postup přípravy nového disku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vyber tabulku oddílů: pro UEFI a disky nad 2 TiB **GPT**.",
+            "Vytvoř oddíly (Windows: Správa disků; Linux: `fdisk`, `parted` nebo GParted).",
+            "Naformátuj oddíly zvoleným souborovým systémem.",
+            "Ve Windows přiřaď písmeno jednotky, v Linuxu oddíl připoj do složky (a zapiš do /etc/fstab)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Soubor zabírá 10 KiB, blok má 4 KiB. Kolik místa na disku skutečně zabere?",
+          "answer": "10 / 4 = 2,5 → 3 bloky. Na disku zabere **12 KiB**. Proto ve Windows vidíš „Velikost“ a „Velikost na disku“."
+        },
+        {
+          "type": "example",
+          "question": "Kolegovi nefunguje na Linuxu skript, ve kterém je cesta C:\\Data\\vstup.txt. Proč?",
+          "answer": "Linux nemá písmena jednotek a odděluje složky **lomítkem /**. Cestu je třeba přepsat třeba na **/home/kolega/data/vstup.txt** a pozor na velká a malá písmena."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "jen Windows (běžně)",
+              "jen Linux (běžně)",
+              "všude"
+            ],
+            "items": [
+              {
+                "text": "NTFS se systémem",
+                "group": 0
+              },
+              {
+                "text": "ext4",
+                "group": 1
+              },
+              {
+                "text": "FAT32",
+                "group": 2
+              },
+              {
+                "text": "exFAT",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rychlé formátování data nenávratně smaže, takže stačí před prodejem disku.",
+          "right": "Rychlé formátování jen vytvoří nový prázdný katalog, **data zůstanou** na disku a jdou obnovit. Před prodejem použij bezpečné vymazání (u SSD funkci výrobce Secure Erase, u HDD přepsání).",
+          "why": "Formátování zahodí „katalog“, ale knihy zůstanou v regálech, dokud je něco nepřepíše."
+        },
+        {
+          "type": "summary",
+          "text": "Disk → tabulka oddílů (MBR do 2 TiB, GPT pro UEFI a velké disky) → oddíly → souborový systém. NTFS a ext4 mají žurnál a oprávnění, FAT32 a exFAT ne. Linux má jeden strom od /, další disky se připojují do složek."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký největší soubor uložíš na FAT32?",
+      "options": [
+        "4 GiB − 1 B",
+        "2 GiB",
+        "16 TiB",
+        "neomezený"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který souborový systém je výchozí pro systémový disk Windows?",
+      "options": [
+        "NTFS",
+        "ext4",
+        "FAT32",
+        "APFS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Linux rozlišuje v názvech souborů velká a malá písmena.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Rychlé formátování nenávratně zničí všechna data.",
+      "answer": false,
+      "explanation": "Smaže jen katalog, data jdou často obnovit."
+    },
+    {
+      "type": "input",
+      "question": "Jsi v /home/jana/skola. Napiš relativní cestu ke složce /home/jana/hudba.",
+      "answers": [
+        "../hudba",
+        "../hudba/"
+      ],
+      "hints": [
+        "Nejdřív musíš o úroveň výš.",
+        "Nadřazená složka se píše dvěma tečkami."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ve které složce Linuxu jsou konfigurační soubory? Napiš cestu.",
+      "answers": [
+        "/etc",
+        "/etc/"
+      ],
+      "hints": [
+        "Je přímo pod kořenem a má tři písmena."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj složku Linuxu s obsahem.",
+      "pairs": [
+        [
+          "/home",
+          "domovské složky uživatelů"
+        ],
+        [
+          "/etc",
+          "konfigurace"
+        ],
+        [
+          "/var/log",
+          "logy"
+        ],
+        [
+          "/tmp",
+          "dočasné soubory"
+        ],
+        [
+          "/dev",
+          "zařízení"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je žurnál souborového systému?",
+      "options": [
+        "deník změn, který chrání data při výpadku proudu",
+        "seznam smazaných souborů",
+        "záloha disku",
+        "šifrovací klíč"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterou tabulku oddílů potřebuješ pro disk 4 TB a start přes UEFI?",
+      "options": [
+        "GPT",
+        "MBR",
+        "FAT32",
+        "NTFS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Soubor má 5 KiB, blok 4 KiB. Kolik KiB zabere na disku?",
+      "answers": [
+        "8"
+      ],
+      "hints": [
+        "Kolik celých bloků je potřeba?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky přípravy nového disku.",
+      "items": [
+        "vytvořit tabulku oddílů",
+        "vytvořit oddíly",
+        "naformátovat oddíly",
+        "přiřadit písmeno nebo připojit do složky"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak vypadá absolutní cesta k dokumentu uživatelky jana ve Windows?",
+      "options": [
+        "C:\\Users\\jana\\Documents\\referat.docx",
+        "/home/jana/referat.docx",
+        "Users/jana/referat.docx",
+        "..\\referat.docx"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej FAT32, exFAT a NTFS a řekni, kdy použiješ který.",
+      "answer": "FAT32 přečte skoro každé zařízení, ale soubor má nejvýš 4 GiB a nemá oprávnění ani žurnál. exFAT zvládne velké soubory a hodí se na flashky pro Windows i macOS. NTFS má žurnál, oprávnění a šifrování a používá se pro disky ve Windows."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi absolutní a relativní cestou?",
+      "answer": "Absolutní cesta začíná od začátku stromu (v Linuxu od /, ve Windows od písmene jednotky) a platí odkudkoli. Relativní začíná od aktuální složky a používá . pro tuto složku a .. pro nadřazenou."
+    }
+  ]
+}

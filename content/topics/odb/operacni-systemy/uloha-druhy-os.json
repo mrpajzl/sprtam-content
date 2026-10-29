@@ -1,0 +1,502 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "uloha-druhy-os",
+  "title": "Úloha a druhy operačních systémů",
+  "emoji": "💻",
+  "explanations": [
+    {
+      "title": "Správce domu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V paneláku bydlí desítky rodin. Všichni chtějí výtah, teplou vodu a elektřinu, ale nikdo nechce řešit kotelnu. To dělá **správce domu**: rozděluje, hlídá, opravuje a pouští dovnitř jen ty, kdo tam patří."
+        },
+        {
+          "type": "text",
+          "text": "V počítači je takovým správcem **operační systém**. Programy (prohlížeč, hra, Word) chtějí procesor, paměť, disk a obrazovku. Operační systém jim je přidělí tak, aby si nepřekážely. Ve škole i v práci budeš OS instalovat, nastavovat a opravovat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hardware",
+          "definition": "Fyzické součásti počítače, na které si můžeš sáhnout: procesor, paměť, disk, klávesnice.",
+          "example": "procesor Intel Core i5, SSD disk 512 GB"
+        },
+        {
+          "type": "term",
+          "term": "Software",
+          "definition": "Programy a data. Nedá se na ně sáhnout, jsou to instrukce pro hardware.",
+          "example": "prohlížeč Firefox, hra Minecraft"
+        },
+        {
+          "type": "term",
+          "term": "Operační systém (OS)",
+          "definition": "Základní software, který řídí hardware a poskytuje služby ostatním programům. Bez něj by každý program musel sám ovládat disk, síť i grafiku.",
+          "example": "Windows 11, Ubuntu, macOS, Android, iOS"
+        },
+        {
+          "type": "term",
+          "term": "Aplikace",
+          "definition": "Program pro uživatele, který běží „nad“ operačním systémem a využívá jeho služby.",
+          "example": "Word si o uložení souboru řekne OS, ne přímo disku."
+        },
+        {
+          "type": "heading",
+          "text": "Co operační systém dělá"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Spravuje procesy**: spouští programy a střídá je na procesoru.",
+            "**Spravuje paměť**: každému programu přidělí kus RAM a hlídá, aby si nesahaly do cizí.",
+            "**Spravuje soubory**: ukládá data na disk do složek.",
+            "**Ovládá zařízení**: přes ovladače mluví s tiskárnou, grafikou, sítí.",
+            "**Chrání a hlídá přístup**: uživatelé, hesla, oprávnění.",
+            "**Poskytuje rozhraní**: grafické okna, nebo textovou příkazovou řádku."
+          ]
+        },
+        {
+          "type": "picture",
+          "items": [
+            "👤",
+            "⬇️",
+            "🧩",
+            "⬇️",
+            "🖥️",
+            "⬇️",
+            "🔩"
+          ],
+          "caption": "Uživatel → aplikace → operační systém → hardware"
+        },
+        {
+          "type": "heading",
+          "text": "Druhy operačních systémů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Druh",
+            "K čemu",
+            "Příklady"
+          ],
+          "rows": [
+            [
+              "desktopový",
+              "osobní počítač a notebook",
+              "Windows, macOS, Linux (Ubuntu, Fedora)"
+            ],
+            [
+              "serverový",
+              "služby pro mnoho uživatelů, běží nepřetržitě",
+              "Windows Server, Linux (Debian, Red Hat Enterprise Linux)"
+            ],
+            [
+              "mobilní",
+              "telefon, tablet, dotykové ovládání, úspora baterie",
+              "Android, iOS, iPadOS"
+            ],
+            [
+              "vestavěný (embedded)",
+              "pračka, router, auto, průmyslový stroj",
+              "embedded Linux, FreeRTOS"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď systémy podle druhu."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "desktopový",
+              "mobilní",
+              "serverový"
+            ],
+            "items": [
+              {
+                "text": "Windows 11",
+                "group": 0
+              },
+              {
+                "text": "macOS",
+                "group": 0
+              },
+              {
+                "text": "Android",
+                "group": 1
+              },
+              {
+                "text": "iOS",
+                "group": 1
+              },
+              {
+                "text": "Windows Server 2022",
+                "group": 2
+              },
+              {
+                "text": "Red Hat Enterprise Linux",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Kamarád říká: „Linux není operační systém, je to jen jádro.“ Má pravdu?",
+          "answer": "Částečně. **Linux** je ve skutečnosti jen **jádro** (srdce OS). Kompletní systém s programy, který si nainstaluješ, se jmenuje **distribuce**: Ubuntu, Debian, Fedora. V běžné řeči se ale „Linux“ používá pro celý systém."
+        },
+        {
+          "type": "example",
+          "question": "Proč v pračce nepoběží Windows 11?",
+          "answer": "Pračka má slabý procesor a málo paměti a potřebuje reagovat přesně včas (zavřít ventil). Používá malý **vestavěný** systém šitý na míru. Windows 11 potřebuje aspoň 4 GB RAM a 64 GB úložiště, to pračka nemá a ani nepotřebuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Operační systém je to, co vidím na ploše: ikony, okna a tapeta.",
+          "right": "Grafické prostředí je jen **rozhraní**. Hlavní práce OS (procesy, paměť, soubory, ovladače) probíhá **na pozadí**.",
+          "why": "Linuxový server často žádnou grafiku nemá, a přesto je to plnohodnotný operační systém."
+        },
+        {
+          "type": "summary",
+          "text": "Operační systém je prostředník mezi hardwarem a aplikacemi: spravuje procesy, paměť, soubory, zařízení a bezpečnost a dává uživateli rozhraní. Druhy: desktopový, serverový, mobilní, vestavěný."
+        }
+      ]
+    },
+    {
+      "title": "Vrstvy a licence",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V obchodě vybíráš notebook s Windows, nebo bez systému. Ve firmě se rozhoduješ, jestli na server dát placený Windows Server, nebo zdarma Debian. Abys vybral dobře, potřebuješ vědět, z čeho se OS skládá, jak startuje a za jakých podmínek ho smíš používat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Operační systém",
+          "definition": "Software, který řídí hardware a nabízí služby aplikacím."
+        },
+        {
+          "type": "term",
+          "term": "Jádro (kernel)",
+          "definition": "Nejdůležitější část OS. Běží s nejvyššími právy, přímo ovládá procesor, paměť a zařízení.",
+          "example": "jádro Linux, jádro Windows NT"
+        },
+        {
+          "type": "term",
+          "term": "Uživatelské rozhraní",
+          "definition": "Způsob, jak člověk s OS komunikuje. **GUI** = grafické (okna, myš), **CLI** = příkazová řádka (píšeš příkazy).",
+          "example": "Průzkumník souborů (GUI), terminál Bash (CLI)"
+        },
+        {
+          "type": "term",
+          "term": "Firmware (UEFI, BIOS)",
+          "definition": "Program uložený přímo na základní desce. Po zapnutí otestuje hardware a spustí zavaděč. **UEFI** je moderní náhrada staršího **BIOSu**."
+        },
+        {
+          "type": "term",
+          "term": "Zavaděč (bootloader)",
+          "definition": "Malý program, který z disku načte jádro OS do paměti a spustí ho.",
+          "example": "GRUB (Linux), Windows Boot Manager"
+        },
+        {
+          "type": "heading",
+          "text": "Jak počítač nastartuje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zapneš počítač, spustí se **firmware** (UEFI/BIOS) a otestuje hardware.",
+            "Firmware najde na disku **zavaděč** a spustí ho.",
+            "Zavaděč načte **jádro** OS do paměti.",
+            "Jádro spustí první proces (v Linuxu obvykle **systemd**), ten spustí služby.",
+            "Objeví se **přihlášení** uživatele."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Druhy jader"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Jak funguje",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "monolitické",
+              "skoro všechno (ovladače, souborové systémy) běží v jádře, rychlé",
+              "Linux"
+            ],
+            [
+              "mikrojádro",
+              "v jádře jen minimum, ostatní běží jako samostatné služby, odolnější",
+              "QNX, MINIX"
+            ],
+            [
+              "hybridní",
+              "kombinace obou přístupů",
+              "Windows NT (Windows 10, 11), macOS (XNU)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Licence"
+        },
+        {
+          "type": "term",
+          "term": "Proprietární software",
+          "definition": "Zdrojový kód je tajný, používání určuje licence výrobce, často placená.",
+          "example": "Windows, macOS"
+        },
+        {
+          "type": "term",
+          "term": "Open source",
+          "definition": "Zdrojový kód je veřejný, smíš ho číst, upravovat a šířit podle licence (např. GNU GPL).",
+          "example": "Linux, FreeBSD"
+        },
+        {
+          "type": "text",
+          "text": "Open source neznamená vždy zdarma a bez podmínek: licence GPL třeba vyžaduje, aby upravené dílo šířené dál zůstalo pod GPL. Firemní distribuce (Red Hat Enterprise Linux) se platí za podporu."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Jádro",
+                "back": "srdce OS, ovládá hardware"
+              },
+              {
+                "front": "UEFI",
+                "back": "firmware, který spustí zavaděč"
+              },
+              {
+                "front": "GRUB",
+                "back": "zavaděč Linuxu"
+              },
+              {
+                "front": "GUI",
+                "back": "grafické rozhraní"
+              },
+              {
+                "front": "CLI",
+                "back": "příkazová řádka"
+              },
+              {
+                "front": "Distribuce",
+                "back": "jádro Linux + programy, např. Ubuntu"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Seřaď, co se děje po stisku tlačítka napájení na počítači s Ubuntu.",
+          "answer": "UEFI otestuje hardware → spustí **GRUB** → GRUB načte **jádro Linux** → jádro spustí **systemd** → systemd spustí služby a **přihlašovací obrazovku**."
+        },
+        {
+          "type": "example",
+          "question": "Škola chce na 30 starších počítačů systém zdarma, bez licenčních poplatků. Co doporučíš?",
+          "answer": "Linuxovou distribuci, např. **Ubuntu** nebo **Linux Mint**. Je open source, zdarma, a odlehčené varianty běží i na starším hardwaru. Musíš ale ověřit, že na ní poběží programy, které výuka potřebuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Open source software smím použít úplně jakkoli, protože je zdarma.",
+          "right": "Open source se řídí **licencí** (GPL, MIT…), která určuje, co smíš a co musíš.",
+          "why": "Licence je právní podmínka užívání. Např. GPL vyžaduje při šíření upravené verze zveřejnit i její zdrojový kód."
+        },
+        {
+          "type": "summary",
+          "text": "OS se skládá z jádra, systémových programů a rozhraní (GUI, CLI). Start: firmware → zavaděč → jádro → init (systemd) → přihlášení. Jádra: monolitické, mikrojádro, hybridní. Licence: proprietární a open source."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je hlavní úloha operačního systému?",
+      "options": [
+        "řídit hardware a poskytovat služby aplikacím",
+        "upravovat fotky",
+        "zrychlit internet",
+        "chránit počítač před prachem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh OS s příkladem.",
+      "pairs": [
+        [
+          "desktopový",
+          "Windows 11"
+        ],
+        [
+          "serverový",
+          "Windows Server"
+        ],
+        [
+          "mobilní",
+          "iOS"
+        ],
+        [
+          "vestavěný",
+          "FreeRTOS"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který systém je mobilní?",
+      "options": [
+        "Android",
+        "Windows Server",
+        "Debian",
+        "FreeBSD"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Linux je v užším smyslu jen jádro operačního systému.",
+      "answer": true,
+      "explanation": "Kompletní systém je distribuce, např. Ubuntu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Operační systém bez grafického prostředí není plnohodnotný OS.",
+      "answer": false,
+      "explanation": "Servery často běží jen s příkazovou řádkou."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky startu počítače.",
+      "items": [
+        "firmware (UEFI) otestuje hardware",
+        "spustí se zavaděč",
+        "zavaděč načte jádro",
+        "jádro spustí první proces a služby",
+        "přihlášení uživatele"
+      ],
+      "hints": [
+        "Začni tím, co je uložené přímo na základní desce."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s příkladem.",
+      "pairs": [
+        [
+          "zavaděč",
+          "GRUB"
+        ],
+        [
+          "firmware",
+          "UEFI"
+        ],
+        [
+          "mikrojádro",
+          "QNX"
+        ],
+        [
+          "hybridní jádro",
+          "Windows NT"
+        ],
+        [
+          "distribuce Linuxu",
+          "Ubuntu"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje nejdůležitější část OS, která přímo ovládá hardware?",
+      "options": [
+        "jádro",
+        "zavaděč",
+        "plocha",
+        "ovladač tiskárny"
+      ],
+      "answer": 0,
+      "hints": [
+        "Anglicky „kernel“."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou nazývá textové rozhraní, kde píšeš příkazy?",
+      "answers": [
+        "CLI"
+      ],
+      "hints": [
+        "Anglicky command-line interface."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který typ jádra má Linux?",
+      "options": [
+        "monolitické",
+        "mikrojádro",
+        "hybridní",
+        "žádné"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená, že je software open source?",
+      "options": [
+        "jeho zdrojový kód je veřejný a licence dovoluje ho upravovat a šířit",
+        "je vždy bez jakýchkoli podmínek",
+        "je vždy placený",
+        "běží jen na serverech"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký systém najdeš typicky v routeru nebo pračce?",
+      "options": [
+        "vestavěný (embedded)",
+        "desktopový",
+        "mobilní",
+        "žádný"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj hlavní úkoly operačního systému.",
+      "answer": "OS spravuje procesy a procesor, přiděluje a chrání paměť, spravuje soubory na disku, přes ovladače ovládá zařízení, hlídá uživatele a oprávnění a poskytuje uživatelské rozhraní (GUI nebo CLI)."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se spustí operační systém po zapnutí počítače.",
+      "answer": "Firmware UEFI nebo BIOS otestuje hardware a spustí zavaděč z disku. Zavaděč (např. GRUB) načte jádro do paměti, jádro spustí první proces (systemd), který spustí služby, a nakonec se objeví přihlášení."
+    }
+  ]
+}

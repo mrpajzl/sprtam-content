@@ -1,0 +1,486 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sprava-pameti",
+  "title": "Správa paměti a virtuální paměť",
+  "emoji": "🧠",
+  "explanations": [
+    {
+      "title": "Pracovní stůl",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když se učíš, máš na stole jen sešity, které právě potřebuješ. Ostatní jsou v knihovně. Stůl je malý, ale rychle se k němu sáhne. Knihovna je velká, ale pro knihu musíš dojít."
+        },
+        {
+          "type": "text",
+          "text": "V počítači je stolem **operační paměť (RAM)** a knihovnou **disk**. Operační systém rozhoduje, co leží na stole, a když se stůl zaplní, odnáší málo používané věci do knihovny. Díky tomu pochopíš, proč počítač s málo RAM zpomalí a co dělá soubor pagefile.sys."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Operační paměť (RAM)",
+          "definition": "Rychlá paměť, ve které jsou právě spuštěné programy a jejich data. Po vypnutí počítače se **vymaže**.",
+          "example": "16 GB RAM v notebooku"
+        },
+        {
+          "type": "term",
+          "term": "Adresa",
+          "definition": "Číslo místa v paměti. Paměť je jako dlouhá řada očíslovaných přihrádek po 1 bajtu.",
+          "example": "bajt na adrese 4096"
+        },
+        {
+          "type": "term",
+          "term": "Virtuální paměť",
+          "definition": "Trik OS: každý proces vidí **svou vlastní** souvislou paměť od adresy 0. OS a procesor ji za běhu převádějí na skutečná místa v RAM nebo na disku."
+        },
+        {
+          "type": "term",
+          "term": "Stránka",
+          "definition": "Kousek virtuální paměti pevné velikosti, obvykle **4 KiB**. OS paměť přiděluje a přesouvá po stránkách."
+        },
+        {
+          "type": "term",
+          "term": "Odkládací prostor (swap, stránkovací soubor)",
+          "definition": "Místo na disku, kam OS odloží stránky, na které teď nikdo nesahá, když RAM nestačí. Windows: soubor **pagefile.sys**, Linux: **swap** oddíl nebo soubor."
+        },
+        {
+          "type": "heading",
+          "text": "Proč je paměť rozdělená do úrovní"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Úroveň",
+            "Velikost (příklad)",
+            "Rychlost"
+          ],
+          "rows": [
+            [
+              "registry procesoru",
+              "bajty",
+              "nejrychlejší"
+            ],
+            [
+              "cache procesoru",
+              "jednotky až desítky MB",
+              "velmi rychlá"
+            ],
+            [
+              "RAM",
+              "jednotky až desítky GB",
+              "rychlá"
+            ],
+            [
+              "SSD",
+              "stovky GB až jednotky TB",
+              "pomalejší"
+            ],
+            [
+              "HDD",
+              "jednotky až desítky TB",
+              "nejpomalejší"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Čím rychlejší paměť, tím je dražší a menší. RAM je oproti SSD řádově rychlejší, proto odkládání na disk počítač zpomalí."
+        },
+        {
+          "type": "heading",
+          "text": "Co OS dělá s pamětí"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Přiděluje** procesům paměť a po skončení ji uvolní.",
+            "**Chrání** procesy: jeden nesmí číst ani přepsat paměť druhého. Pokus skončí chybou (Linux: *segmentation fault*).",
+            "Pomocí **virtuální paměti** umí spustit víc programů, než by se vešlo do RAM."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Máš 8 GB RAM a otevřeš programy, které chtějí dohromady 11 GB. Co se stane?",
+          "answer": "Spustí se všechny. OS odloží asi **3 GB** málo používaných stránek do **stránkovacího souboru** na disku. Když se pak přepneš do odloženého programu, chvíli se načítá z disku a počítač se zpomalí."
+        },
+        {
+          "type": "example",
+          "question": "Program potřebuje 10 KiB paměti a stránka má 4 KiB. Kolik stránek dostane a kolik místa se nevyužije?",
+          "answer": "10 / 4 = 2,5 → potřebuje **3 stránky** = 12 KiB. Nevyužité zůstanou 12 − 10 = **2 KiB** v poslední stránce (tzv. vnitřní fragmentace)."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "GB",
+            "items": [
+              {
+                "label": "RAM",
+                "value": 8
+              },
+              {
+                "label": "požadavky programů",
+                "value": 11
+              },
+              {
+                "label": "odloženo na disk",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Stránkovací soubor je zbytečný, když mám hodně RAM. Smažu ho a počítač zrychlí.",
+          "right": "Stránkovací soubor nech, ať ho spravuje systém (výchozí nastavení).",
+          "why": "Některé programy s ním počítají, systém do něj ukládá výpis paměti při pádu a bez něj může program při nedostatku paměti nečekaně spadnout."
+        },
+        {
+          "type": "summary",
+          "text": "RAM je rychlá a malá, disk velký a pomalý. Virtuální paměť dává každému procesu vlastní adresový prostor, dělí ho na stránky (4 KiB) a při nedostatku RAM je odkládá na disk (pagefile.sys, swap). OS také chrání paměť procesů navzájem."
+        }
+      ]
+    },
+    {
+      "title": "Překlad adres",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý program si myslí, že má paměť od nuly a celou pro sebe. Přitom jich běží stovky. Jak to, že si nepřepíšou data? Odpověď je **překlad adres** po stránkách. Pochopíš ho na jednoduchém výpočtu, jaký se objevuje i v testech."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Fyzická adresa",
+          "definition": "Skutečné místo v čipech RAM."
+        },
+        {
+          "type": "term",
+          "term": "Virtuální (logická) adresa",
+          "definition": "Adresa, se kterou pracuje program. Neví, kde data fyzicky leží."
+        },
+        {
+          "type": "term",
+          "term": "Stránka a rámec",
+          "definition": "Virtuální paměť se dělí na **stránky**, fyzická RAM na stejně velké **rámce**. Stránka se uloží do libovolného volného rámce.",
+          "example": "stránka 4 KiB = 4096 B"
+        },
+        {
+          "type": "term",
+          "term": "Tabulka stránek",
+          "definition": "Tabulka, kterou OS vede pro každý proces: která stránka leží ve kterém rámci, nebo že je odložená na disku."
+        },
+        {
+          "type": "term",
+          "term": "MMU",
+          "definition": "Jednotka správy paměti v procesoru. Při každém přístupu přeloží virtuální adresu na fyzickou podle tabulky stránek."
+        },
+        {
+          "type": "term",
+          "term": "Výpadek stránky (page fault)",
+          "definition": "Program sáhne na stránku, která není v RAM. OS ji načte z disku do volného rámce a program pokračuje."
+        },
+        {
+          "type": "term",
+          "term": "KiB a kB",
+          "definition": "**KiB** (kibibajt) = 1024 B, **kB** (kilobajt) = 1000 B. Paměť se počítá v mocninách dvou, proto KiB, MiB, GiB."
+        },
+        {
+          "type": "heading",
+          "text": "Postup překladu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vyděl virtuální adresu velikostí stránky.",
+            "Celá část = **číslo stránky**, zbytek = **posun** uvnitř stránky.",
+            "V tabulce stránek najdi rámec pro tuto stránku.",
+            "Fyzická adresa = číslo rámce · velikost stránky + posun."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Velikost stránky je 4096 B. Virtuální adresa 8200. Tabulka: stránka 0 → rámec 3, stránka 1 → rámec 7, stránka 2 → rámec 5. Jaká je fyzická adresa?",
+          "answer": "8200 : 4096 = **2** zbytek **8** → stránka 2, posun 8. Stránka 2 je v rámci 5. Fyzická adresa = 5 · 4096 + 8 = 20 480 + 8 = **20 488**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik bitů adresy zabere posun při stránce 4 KiB?",
+          "answer": "4 KiB = 4096 = 2¹². Posun potřebuje **12 bitů**. Zbytek adresy je číslo stránky."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Virtuální adresa",
+            "Stránka",
+            "Posun"
+          ],
+          "rows": [
+            [
+              "100",
+              "0",
+              "100"
+            ],
+            [
+              "4100",
+              "1",
+              "4"
+            ],
+            [
+              "12 288",
+              "3",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Když paměť nestačí"
+        },
+        {
+          "type": "term",
+          "term": "Thrashing (zahlcení)",
+          "definition": "Stav, kdy RAM chybí tolik, že OS jen přenáší stránky mezi RAM a diskem a na skutečnou práci nezbývá čas. Disk pořád pracuje, počítač skoro stojí."
+        },
+        {
+          "type": "text",
+          "text": "Řešení thrashingu: zavřít programy, nebo **přidat RAM**. Rychlejší SSD pomůže jen trochu."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Překlad adres dělá v procesoru ",
+                "after": "",
+                "options": [
+                  "MMU",
+                  "GPU",
+                  "BIOS"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Stránka chybí v RAM → nastane ",
+                "after": "",
+                "options": [
+                  "výpadek stránky",
+                  "přepnutí kontextu",
+                  "deadlock"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "1 KiB je ",
+                "after": "",
+                "options": [
+                  "1024 B",
+                  "1000 B",
+                  "8 bitů"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Stránka",
+                "back": "kousek virtuální paměti, typicky 4 KiB"
+              },
+              {
+                "front": "Rámec",
+                "back": "kousek fyzické RAM velikosti stránky"
+              },
+              {
+                "front": "Tabulka stránek",
+                "back": "stránka → rámec, pro každý proces"
+              },
+              {
+                "front": "Page fault",
+                "back": "stránka není v RAM, OS ji načte"
+              },
+              {
+                "front": "Thrashing",
+                "back": "neustálé odkládání, počítač stojí"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výpadek stránky je chyba, která shodí program.",
+          "right": "Výpadek stránky je **běžná událost**. OS stránku načte a program pokračuje.",
+          "why": "Program spadne jen při přístupu na adresu, která mu **nepatří** (neplatný přístup), ne při výpadku platné stránky."
+        },
+        {
+          "type": "summary",
+          "text": "Virtuální adresa = stránka + posun. Tabulka stránek určí rámec, MMU spočítá fyzickou adresu: rámec · velikost stránky + posun. Chybějící stránku OS načte z disku (page fault); při velkém nedostatku RAM nastane thrashing."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co se stane s obsahem RAM po vypnutí počítače?",
+      "options": [
+        "vymaže se",
+        "zůstane uložený",
+        "přesune se na disk",
+        "zkomprimuje se"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se ve Windows jmenuje stránkovací soubor? (název i s příponou)",
+      "answers": [
+        "pagefile.sys"
+      ],
+      "hints": [
+        "Leží v kořeni systémového disku C:."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou velikost má obvykle stránka paměti?",
+      "options": [
+        "4 KiB",
+        "4 MiB",
+        "512 B",
+        "1 GiB"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Stránka má 4096 B. Ve které stránce leží virtuální adresa 13 000? Napiš číslo stránky.",
+      "answers": [
+        "3"
+      ],
+      "explanation": "13 000 : 4096 = 3 zbytek 712.",
+      "hints": [
+        "Vyděl adresu velikostí stránky.",
+        "Rozhoduje celá část podílu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Stránka 4096 B, virtuální adresa 4100, stránka 1 je v rámci 2. Jaká je fyzická adresa?",
+      "answers": [
+        "8196"
+      ],
+      "explanation": "4100 = 1 · 4096 + 4. Fyzická = 2 · 4096 + 4 = 8196.",
+      "hints": [
+        "Nejdřív zjisti číslo stránky a posun.",
+        "Fyzická adresa = rámec · velikost stránky + posun."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik stránek po 4 KiB potřebuje program o velikosti 18 KiB?",
+      "answers": [
+        "5"
+      ],
+      "hints": [
+        "Poslední stránka nemusí být plná, ale přidělí se celá."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Každý proces má vlastní virtuální adresový prostor.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Výpadek stránky (page fault) vždy ukončí program.",
+      "answer": false,
+      "explanation": "OS stránku načte z disku a program pokračuje."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď paměti od nejrychlejší po nejpomalejší.",
+      "items": [
+        "registry procesoru",
+        "cache procesoru",
+        "RAM",
+        "SSD",
+        "HDD"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s vysvětlením.",
+      "pairs": [
+        [
+          "MMU",
+          "překládá virtuální adresy na fyzické"
+        ],
+        [
+          "swap",
+          "odkládací prostor na disku v Linuxu"
+        ],
+        [
+          "rámec",
+          "kus fyzické RAM velikosti stránky"
+        ],
+        [
+          "thrashing",
+          "neustálé přesouvání stránek, počítač stojí"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Počítač při práci neustále pracuje s diskem a skoro nereaguje. Co nejvíc pomůže?",
+      "options": [
+        "přidat RAM",
+        "smazat stránkovací soubor",
+        "vyměnit monitor",
+        "zvýšit rozlišení"
+      ],
+      "answer": 0,
+      "hints": [
+        "Čeho je zjevně málo, že se pořád odkládá na disk?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů má 1 KiB?",
+      "answers": [
+        "1024"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je virtuální paměť a k čemu slouží.",
+      "answer": "Každý proces vidí vlastní souvislou paměť od nuly, kterou OS a MMU po stránkách převádějí na skutečná místa v RAM. Díky tomu jsou procesy od sebe oddělené a OS může málo používané stránky odložit na disk, takže lze spustit víc programů, než se vejde do RAM."
+    },
+    {
+      "type": "open",
+      "question": "Proč se počítač zpomalí, když dochází RAM?",
+      "answer": "OS začne odkládat stránky na disk do stránkovacího souboru nebo swapu. Disk je řádově pomalejší než RAM, takže každé načtení odložené stránky trvá. Při velkém nedostatku nastane thrashing a počítač skoro stojí."
+    }
+  ]
+}

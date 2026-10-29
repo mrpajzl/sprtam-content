@@ -1,0 +1,576 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "uzivatele-opravneni",
+  "title": "Uživatelé a oprávnění",
+  "emoji": "🔐",
+  "explanations": [
+    {
+      "title": "Klíče od školy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve škole má školník klíč od všech dveří. Učitel má klíč od svého kabinetu a učeben. Žák nemá klíč skoro od ničeho. Nikdo to nebere jako nedůvěru: každý má přesně to, co potřebuje k práci."
+        },
+        {
+          "type": "text",
+          "text": "V operačním systému to funguje stejně. Každý člověk má **uživatelský účet** a ke každému souboru jsou nastavená **oprávnění**: kdo smí číst, kdo měnit a kdo spouštět. Správné nastavení chrání data před chybou i útokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Uživatelský účet",
+          "definition": "Identita člověka (nebo služby) v systému: jméno, heslo, domovská složka.",
+          "example": "účet jana"
+        },
+        {
+          "type": "term",
+          "term": "Skupina",
+          "definition": "Pojmenovaná množina uživatelů. Oprávnění se dávají skupině, ne každému zvlášť.",
+          "example": "skupina ucitele"
+        },
+        {
+          "type": "term",
+          "term": "Správce",
+          "definition": "Účet s plnými právy nad systémem. V Linuxu **root**, ve Windows člen skupiny **Administrators** (Správci)."
+        },
+        {
+          "type": "term",
+          "term": "Vlastník souboru",
+          "definition": "Uživatel, kterému soubor patří, obvykle ten, kdo ho vytvořil. Může měnit jeho oprávnění."
+        },
+        {
+          "type": "term",
+          "term": "Princip nejnižších oprávnění",
+          "definition": "Každý dostane jen ta práva, která opravdu potřebuje. Běžná práce se dělá pod obyčejným účtem, ne pod správcem."
+        },
+        {
+          "type": "heading",
+          "text": "Oprávnění v Linuxu: r, w, x"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Písmeno",
+            "U souboru",
+            "U složky"
+          ],
+          "rows": [
+            [
+              "r (read)",
+              "číst obsah",
+              "vypsat obsah složky"
+            ],
+            [
+              "w (write)",
+              "měnit obsah",
+              "vytvářet a mazat soubory ve složce"
+            ],
+            [
+              "x (execute)",
+              "spustit jako program",
+              "vstoupit do složky (cd)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Oprávnění se nastavují pro tři skupiny osob: **vlastník** (u), **skupina** (g), **ostatní** (o). Příkaz `ls -l` je ukáže takto:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Vlastník",
+            "Skupina",
+            "Ostatní"
+          ],
+          "rows": [
+            [
+              "-",
+              "rwx",
+              "r-x",
+              "r--"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "První znak je typ: **-** soubor, **d** složka. Pomlčka místo písmena znamená, že právo chybí. Tady: vlastník smí vše, skupina číst a spouštět, ostatní jen číst."
+        },
+        {
+          "type": "heading",
+          "text": "Změna oprávnění: chmod"
+        },
+        {
+          "type": "term",
+          "term": "chmod",
+          "definition": "Příkaz pro změnu oprávnění. Píše se, **komu** (u, g, o, a = všem), **co** (+ přidat, − odebrat) a **jaké** právo.",
+          "example": "`chmod u+x skript.sh` přidá vlastníkovi spouštění."
+        },
+        {
+          "type": "example",
+          "question": "Soubor zapisky.txt má -rw-r--r--. Chceš, aby ho ostatní vůbec nemohli číst. Jaký příkaz použiješ a jak bude výsledek vypadat?",
+          "answer": "`chmod o-r zapisky.txt` odebere ostatním čtení. Výsledek: **-rw-r-----**."
+        },
+        {
+          "type": "example",
+          "question": "Skript zaloha.sh nejde spustit: „Permission denied“. Co uděláš?",
+          "answer": "Souboru chybí právo **x**. `chmod u+x zaloha.sh` přidá spouštění vlastníkovi. Pak ho spustíš `./zaloha.sh`."
+        },
+        {
+          "type": "heading",
+          "text": "Oprávnění ve Windows (NTFS)"
+        },
+        {
+          "type": "text",
+          "text": "Ve Windows klikneš na soubor nebo složku pravým tlačítkem → **Vlastnosti → Zabezpečení**. Uvidíš seznam uživatelů a skupin a jejich práva: **Úplné řízení, Změnit, Číst a spouštět, Zobrazit obsah složky, Číst, Zapisovat**. Každé právo jde **povolit**, nebo **odepřít**."
+        },
+        {
+          "type": "term",
+          "term": "Dědění",
+          "definition": "Soubory a podsložky automaticky přebírají oprávnění nadřazené složky. Nastavíš to jednou nahoře a platí to pro všechno uvnitř."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "smí",
+              "nesmí"
+            ],
+            "items": [
+              {
+                "text": "ostatní u -rw-r--r-- číst",
+                "group": 0
+              },
+              {
+                "text": "ostatní u -rw-r--r-- zapisovat",
+                "group": 1
+              },
+              {
+                "text": "skupina u -rwxr-x--- spustit",
+                "group": 0
+              },
+              {
+                "text": "ostatní u -rwxr-x--- číst",
+                "group": 1
+              },
+              {
+                "text": "vlastník u -rw------- číst",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pracuju pořád jako root nebo správce, ať mě systém neotravuje.",
+          "right": "Běžnou práci dělej pod **obyčejným účtem**, právo správce použij jen na chvíli (sudo, dotaz UAC ve Windows).",
+          "why": "Pod správcem může každá chyba nebo škodlivý program smazat nebo změnit celý systém. Obyčejný účet škodu omezí."
+        },
+        {
+          "type": "summary",
+          "text": "Účty a skupiny určují, kdo je kdo. Linux: r, w, x pro vlastníka, skupinu a ostatní, mění se chmod. Windows: NTFS práva ve Vlastnosti → Zabezpečení, s děděním. Vždy princip nejnižších oprávnění."
+        }
+      ]
+    },
+    {
+      "title": "Číselně 755",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V návodech na zprovoznění webového serveru často najdeš „nastav oprávnění 755 pro složky a 644 pro soubory“. Ta čísla nejsou náhodná. Za minutu je budeš umět přečíst a sestavit sám. A k tomu se naučíš, jak spolu fungují práva NTFS ve Windows."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Uživatel a skupina",
+          "definition": "Uživatel je účet člověka nebo služby, skupina je množina uživatelů. Každý soubor v Linuxu má **vlastníka** a **skupinu**."
+        },
+        {
+          "type": "term",
+          "term": "Oprávnění r, w, x",
+          "definition": "Čtení, zápis, spouštění (u složky vstup). Nastavují se zvlášť pro vlastníka, skupinu a ostatní."
+        },
+        {
+          "type": "term",
+          "term": "Osmičkový zápis",
+          "definition": "Každé právo má hodnotu: **r = 4, w = 2, x = 1**. Hodnoty se sečtou. Tři číslice = vlastník, skupina, ostatní.",
+          "example": "rwx = 4 + 2 + 1 = 7, r-x = 4 + 0 + 1 = 5"
+        },
+        {
+          "type": "term",
+          "term": "ACL",
+          "definition": "Seznam řízení přístupu (Access Control List): u každého souboru ve Windows seznam položek „kdo – jaké právo – povolit/odepřít“."
+        },
+        {
+          "type": "term",
+          "term": "UAC",
+          "definition": "Řízení uživatelských účtů ve Windows. I správce pracuje běžně s omezenými právy a před změnou systému se objeví dotaz na potvrzení."
+        },
+        {
+          "type": "heading",
+          "text": "Převod mezi písmeny a čísly"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rozděl zápis na tři trojice: vlastník, skupina, ostatní.",
+            "V každé trojici sečti: r = 4, w = 2, x = 1, pomlčka = 0.",
+            "Napiš tři číslice za sebou."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Číslo",
+            "Písmena",
+            "Typické použití"
+          ],
+          "rows": [
+            [
+              "755",
+              "rwxr-xr-x",
+              "složky, programy, skripty"
+            ],
+            [
+              "644",
+              "rw-r--r--",
+              "běžné soubory"
+            ],
+            [
+              "700",
+              "rwx------",
+              "soukromá složka"
+            ],
+            [
+              "600",
+              "rw-------",
+              "soukromý klíč, hesla"
+            ],
+            [
+              "777",
+              "rwxrwxrwx",
+              "všichni vše: **nebezpečné**, nepoužívat"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď rwxr-x--- na číslo.",
+          "answer": "rwx = 4 + 2 + 1 = **7**; r-x = 4 + 0 + 1 = **5**; --- = **0**. Výsledek **750**: vlastník vše, skupina čte a spouští, ostatní nic."
+        },
+        {
+          "type": "example",
+          "question": "Co znamená `chmod 640 mzdy.xlsx`?",
+          "answer": "6 = 4 + 2 = **rw-** pro vlastníka, 4 = **r--** pro skupinu, 0 = **---** pro ostatní. Vlastník čte a píše, skupina (třeba ucetni) jen čte, ostatní nic."
+        },
+        {
+          "type": "text",
+          "text": "Doplň."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "rw-r--r-- = ",
+                "after": "",
+                "options": [
+                  "644",
+                  "744",
+                  "666"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "rwx------ = ",
+                "after": "",
+                "options": [
+                  "700",
+                  "600",
+                  "777"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "5 = ",
+                "after": "",
+                "options": [
+                  "r-x",
+                  "rw-",
+                  "-wx"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Změnu vlastníka udělá příkaz ",
+                "after": "",
+                "options": [
+                  "chown",
+                  "chmod",
+                  "chgrp -r"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Správa uživatelů v Linuxu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příkaz",
+            "Co dělá"
+          ],
+          "rows": [
+            [
+              "`sudo adduser petr`",
+              "vytvoří uživatele (Debian, Ubuntu)"
+            ],
+            [
+              "`sudo passwd petr`",
+              "nastaví heslo"
+            ],
+            [
+              "`sudo usermod -aG ucitele petr`",
+              "přidá uživatele do skupiny"
+            ],
+            [
+              "`id petr`",
+              "ukáže skupiny uživatele"
+            ],
+            [
+              "`sudo chown petr:ucitele soubor`",
+              "změní vlastníka a skupinu"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Windows: jak se práva skládají"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Práva se **sčítají** ze všech skupin, ve kterých uživatel je.",
+            "**Výslovné odepření** (Deny) má přednost před povolením.",
+            "Výslovně nastavená práva mají přednost před zděděnými.",
+            "U složky sdílené po síti platí zároveň **práva sdílení** a **práva NTFS**; výsledkem je **přísnější** z obou."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Petr je ve skupině Ucitele (Změnit) a Hoste (Odepřít zápis) na stejné složce. Smí do ní zapisovat?",
+          "answer": "**Ne.** Práva se sčítají, ale výslovné **odepření** má přednost. Proto se odepření používá opatrně: raději uživateli právo vůbec nedat."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "r",
+                "back": "4: číst"
+              },
+              {
+                "front": "w",
+                "back": "2: zapisovat"
+              },
+              {
+                "front": "x",
+                "back": "1: spouštět / vstoupit"
+              },
+              {
+                "front": "755",
+                "back": "rwxr-xr-x"
+              },
+              {
+                "front": "644",
+                "back": "rw-r--r--"
+              },
+              {
+                "front": "Deny ve Windows",
+                "back": "má přednost před Allow"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Web nefunguje, tak nastavím `chmod -R 777` na celou složku webu a je to.",
+          "right": "Nastav jen potřebná práva, typicky **755 pro složky a 644 pro soubory**, a správného vlastníka (`chown`).",
+          "why": "777 dovolí komukoli na serveru soubory měnit, takže útočník přes jinou službu může podvrhnout kód webu."
+        },
+        {
+          "type": "summary",
+          "text": "r = 4, w = 2, x = 1, tři číslice = vlastník, skupina, ostatní (755, 644, 600). chmod mění práva, chown vlastníka. Windows NTFS: práva se sčítají ze skupin, odepření má přednost, u sdílení platí přísnější z obou."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jaké číslo odpovídá oprávnění rwxr-xr-x?",
+      "answers": [
+        "755"
+      ],
+      "hints": [
+        "r = 4, w = 2, x = 1.",
+        "Sečti každou trojici zvlášť."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké číslo odpovídá oprávnění rw-r-----?",
+      "answers": [
+        "640"
+      ],
+      "hints": [
+        "Pomlčka má hodnotu 0."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená oprávnění x u složky v Linuxu?",
+      "options": [
+        "smíš do ní vstoupit",
+        "smíš ji smazat",
+        "smíš v ní vytvářet soubory",
+        "smíš ji spustit jako program"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem přidáš vlastníkovi právo spouštět soubor run.sh?",
+      "options": [
+        "chmod u+x run.sh",
+        "chown u+x run.sh",
+        "chmod o+x run.sh",
+        "sudo run.sh"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v Linuxu jmenuje účet správce?",
+      "options": [
+        "root",
+        "admin",
+        "Administrator",
+        "sudo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve Windows má výslovné odepření (Deny) přednost před povolením.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Oprávnění 777 je vhodné pro webové soubory, aby vše fungovalo.",
+      "answer": false,
+      "explanation": "Dovolí komukoli soubory měnit. Pro soubory stačí 644, pro složky 755."
+    },
+    {
+      "type": "match",
+      "question": "Spoj číselný zápis s písmeny.",
+      "pairs": [
+        [
+          "755",
+          "rwxr-xr-x"
+        ],
+        [
+          "644",
+          "rw-r--r--"
+        ],
+        [
+          "700",
+          "rwx------"
+        ],
+        [
+          "600",
+          "rw-------"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co ukazuje první znak ve výpisu `drwxr-x---`?",
+      "options": [
+        "že jde o složku",
+        "že soubor patří rootovi",
+        "že je soubor smazaný",
+        "že je soubor skrytý"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Složka je sdílená po síti s právem sdílení „Číst“ a právem NTFS „Změnit“. Co uživatel přes síť smí?",
+      "options": [
+        "jen číst",
+        "měnit",
+        "nic",
+        "úplné řízení"
+      ],
+      "answer": 0,
+      "hints": [
+        "Při přístupu přes síť platí obě sady práv současně."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části výpisu -rwxr-x--- zleva doprava.",
+      "items": [
+        "typ souboru",
+        "práva vlastníka",
+        "práva skupiny",
+        "práva ostatních"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je princip nejnižších oprávnění?",
+      "options": [
+        "každý dostane jen práva, která opravdu potřebuje",
+        "všichni mají stejná práva",
+        "práva má jen správce",
+        "práva se nastavují jen na nejnižší složku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co znamená chmod 750 a pro koho jaké právo nastaví.",
+      "answer": "7 = rwx pro vlastníka (číst, zapisovat, spouštět), 5 = r-x pro skupinu (číst a spouštět), 0 = žádné právo pro ostatní. Čísla jsou součty r = 4, w = 2, x = 1."
+    },
+    {
+      "type": "open",
+      "question": "Proč by běžný uživatel neměl pracovat pod účtem správce?",
+      "answer": "Pod správcem může každá chyba nebo škodlivý program měnit a mazat celý systém. Obyčejný účet škodu omezí. Práva správce se mají použít jen na chvíli, když jsou potřeba (sudo, UAC)."
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "prikazova-radka-linux",
+  "title": "Příkazová řádka Linuxu",
+  "emoji": "⌨️",
+  "explanations": [
+    {
+      "title": "Rozhovor s počítačem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na serveru v datovém centru není monitor ani myš. Správce se k němu připojí přes síť a píše příkazy do **terminálu**. Jedním řádkem udělá, na co by v oknech potřeboval sto kliknutí."
+        },
+        {
+          "type": "text",
+          "text": "Základní příkazy Linuxu potřebuje každý ajťák: pro správu serverů, Raspberry Pi, routerů i cloudu. Naučíš se pohybovat ve složkách, kopírovat, hledat v souborech a spojovat příkazy."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Terminál a shell",
+          "definition": "**Terminál** je okno, do kterého píšeš text. **Shell** je program, který tvoje příkazy čte a spouští. V Linuxu nejčastěji **Bash**."
+        },
+        {
+          "type": "term",
+          "term": "Výzva (prompt)",
+          "definition": "Text na začátku řádku, který říká, že shell čeká na příkaz. Ukazuje uživatele, počítač a složku.",
+          "example": "jana@pc:~/skola$"
+        },
+        {
+          "type": "term",
+          "term": "Příkaz, přepínač a argument",
+          "definition": "**Příkaz** je název programu. **Přepínač** (začíná pomlčkou) mění jeho chování. **Argument** říká, s čím pracovat.",
+          "example": "V `ls -l /etc` je ls příkaz, -l přepínač, /etc argument."
+        },
+        {
+          "type": "term",
+          "term": "Aktuální složka",
+          "definition": "Složka, ve které právě „stojíš“. Relativní cesty se počítají od ní. **~** je tvoje domovská složka, **..** nadřazená složka."
+        },
+        {
+          "type": "heading",
+          "text": "Pohyb a prohlížení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příkaz",
+            "Co dělá",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`pwd`",
+              "vypíše, kde jsi",
+              "/home/jana"
+            ],
+            [
+              "`ls`",
+              "vypíše obsah složky",
+              "`ls -l` podrobně, `ls -a` i skryté"
+            ],
+            [
+              "`cd`",
+              "přejde do složky",
+              "`cd skola`, `cd ..`, `cd ~`"
+            ],
+            [
+              "`cat`",
+              "vypíše obsah souboru",
+              "`cat poznamky.txt`"
+            ],
+            [
+              "`less`",
+              "prohlížení dlouhého souboru po stránkách",
+              "konec klávesou q"
+            ],
+            [
+              "`man`",
+              "nápověda k příkazu",
+              "`man ls`"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Práce se soubory"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příkaz",
+            "Co dělá",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`mkdir`",
+              "vytvoří složku",
+              "`mkdir projekty`"
+            ],
+            [
+              "`touch`",
+              "vytvoří prázdný soubor",
+              "`touch seznam.txt`"
+            ],
+            [
+              "`cp`",
+              "kopíruje",
+              "`cp a.txt zaloha.txt`, složku `cp -r foto zaloha`"
+            ],
+            [
+              "`mv`",
+              "přesune nebo přejmenuje",
+              "`mv a.txt b.txt`"
+            ],
+            [
+              "`rm`",
+              "smaže (bez koše!)",
+              "`rm a.txt`, složku `rm -r stare`"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jsi v /home/jana. Vytvoř složku zaloha a zkopíruj do ní soubor skola/referat.txt.",
+          "answer": "`mkdir zaloha` vytvoří složku. `cp skola/referat.txt zaloha/` zkopíruje soubor. Kontrola: `ls zaloha` vypíše **referat.txt**."
+        },
+        {
+          "type": "heading",
+          "text": "Hledání a spojování"
+        },
+        {
+          "type": "term",
+          "term": "grep",
+          "definition": "Příkaz, který v textu najde řádky obsahující zadané slovo.",
+          "example": "`grep error log.txt` vypíše řádky se slovem error."
+        },
+        {
+          "type": "term",
+          "term": "Roura (pipe) |",
+          "definition": "Svislá čára spojí dva příkazy: výstup prvního se stane vstupem druhého.",
+          "example": "`ls -l | grep txt` ukáže jen řádky s „txt“."
+        },
+        {
+          "type": "term",
+          "term": "Přesměrování > a >>",
+          "definition": "`>` uloží výstup příkazu do souboru (přepíše ho), `>>` ho připíše na konec.",
+          "example": "`ls > seznam.txt`"
+        },
+        {
+          "type": "example",
+          "question": "Kolik řádků v souboru /var/log/syslog obsahuje slovo „error“?",
+          "answer": "`grep error /var/log/syslog | wc -l`. grep vybere řádky s „error“, roura je předá příkazu `wc -l`, který spočítá řádky. Vyjde jedno číslo, třeba **42**."
+        },
+        {
+          "type": "text",
+          "text": "Doplň příkaz podle úkolu."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Kde právě jsem? → ",
+                "after": "",
+                "options": [
+                  "pwd",
+                  "cd",
+                  "ls"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Přejmenuj a.txt na b.txt → ",
+                "after": " a.txt b.txt",
+                "options": [
+                  "mv",
+                  "cp",
+                  "rm"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Najdi řádky se slovem chyba → ",
+                "after": " chyba log.txt",
+                "options": [
+                  "grep",
+                  "cat",
+                  "find"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vypiš i skryté soubory → ls ",
+                "after": "",
+                "options": [
+                  "-a",
+                  "-r",
+                  "-l"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "rm smazaný soubor najdu v koši.",
+          "right": "`rm` maže **natrvalo**, bez koše. Před `rm -r` si zkontroluj cestu, bezpečnější je `rm -i` (ptá se).",
+          "why": "Příkazová řádka předpokládá, že víš, co děláš. Proto se `rm -rf` s chybnou cestou bojí každý správce."
+        },
+        {
+          "type": "summary",
+          "text": "Pohyb: pwd, ls, cd. Soubory: mkdir, touch, cp, mv, rm (bez koše). Čtení a hledání: cat, less, grep. Roura | posílá výstup do dalšího příkazu, > a >> ho ukládají do souboru. Nápověda: man."
+        }
+      ]
+    },
+    {
+      "title": "Recepty pro správce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správce dostane ráno úkol: „Zjisti, kdo se v noci neúspěšně přihlašoval, zazálohuj konfiguraci a nainstaluj aktualizace.“ Zvládne to pár příkazy. Projdeme typické úkoly jako recepty krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Shell (Bash)",
+          "definition": "Program, který čte a vykonává příkazy, které napíšeš do terminálu."
+        },
+        {
+          "type": "term",
+          "term": "Přepínač",
+          "definition": "Volba příkazu začínající pomlčkou. Krátké jdou spojit: `ls -la` = `ls -l -a`."
+        },
+        {
+          "type": "term",
+          "term": "Root a sudo",
+          "definition": "**root** je správce s neomezenými právy. **sudo** spustí jeden příkaz s právy správce, když na to máš povolení. Zeptá se na **tvoje** heslo.",
+          "example": "`sudo apt update`"
+        },
+        {
+          "type": "term",
+          "term": "Standardní vstup a výstup",
+          "definition": "Každý příkaz čte data ze **vstupu** (obvykle klávesnice) a píše na **výstup** (obvykle obrazovka). Roura | a přesměrování > je umí přepojit."
+        },
+        {
+          "type": "term",
+          "term": "Tabulátor",
+          "definition": "Klávesa Tab doplní rozepsaný název příkazu nebo souboru. Šetří čas a brání překlepům."
+        },
+        {
+          "type": "heading",
+          "text": "Recept 1: orientace"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`pwd` – kde jsem?",
+            "`ls -la` – co tu je, včetně skrytých souborů (začínají tečkou) a oprávnění.",
+            "`cd /var/log` – přejdi do složky s logy.",
+            "`cd -` – vrať se do předchozí složky, `cd` bez argumentu domů."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Recept 2: záloha konfigurace"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak` – zkopíruj soubor pod novým jménem.",
+            "`ls -l /etc/ssh/` – ověř, že záloha existuje.",
+            "Teprve potom soubor upravuj (např. editorem `nano`)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Recept 3: hledání v logu"
+        },
+        {
+          "type": "example",
+          "question": "Na serveru s Ubuntu vypiš posledních 5 neúspěšných přihlášení přes SSH ze souboru /var/log/auth.log.",
+          "answer": "`sudo grep \"Failed password\" /var/log/auth.log | tail -n 5`. `grep` najde řádky s neúspěšným heslem, `tail -n 5` z nich ukáže posledních 5. Soubor patří správci, proto `sudo`."
+        },
+        {
+          "type": "example",
+          "question": "Ulož seznam souborů v /etc, které obsahují v názvu „conf“, do souboru konfigurace.txt a pak připiš datum.",
+          "answer": "`ls /etc | grep conf > konfigurace.txt` vytvoří soubor se seznamem. `date >> konfigurace.txt` připíše datum na konec. `>` by soubor přepsal, `>>` připisuje."
+        },
+        {
+          "type": "heading",
+          "text": "Další užitečné příkazy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příkaz",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "`head`, `tail`",
+              "začátek nebo konec souboru; `tail -f` sleduje log živě"
+            ],
+            [
+              "`wc -l`",
+              "počet řádků"
+            ],
+            [
+              "`sort`, `uniq`",
+              "seřazení, odstranění opakovaných řádků"
+            ],
+            [
+              "`find`",
+              "hledání souborů podle jména: `find ~ -name \"*.pdf\"`"
+            ],
+            [
+              "`nano`",
+              "jednoduchý textový editor v terminálu"
+            ],
+            [
+              "`sudo apt update && sudo apt upgrade`",
+              "aktualizace v Debianu a Ubuntu"
+            ],
+            [
+              "`history`",
+              "dříve zadané příkazy"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "jen čte",
+              "mění soubory"
+            ],
+            "items": [
+              {
+                "text": "ls -l",
+                "group": 0
+              },
+              {
+                "text": "cat zprava.txt",
+                "group": 0
+              },
+              {
+                "text": "grep root /etc/passwd",
+                "group": 0
+              },
+              {
+                "text": "rm stare.txt",
+                "group": 1
+              },
+              {
+                "text": "mv a.txt b.txt",
+                "group": 1
+              },
+              {
+                "text": "echo ahoj > a.txt",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "pwd",
+                "back": "vypíše aktuální složku"
+              },
+              {
+                "front": "cd ..",
+                "back": "o úroveň výš"
+              },
+              {
+                "front": "cp -r",
+                "back": "kopíruje složku i s obsahem"
+              },
+              {
+                "front": "mv",
+                "back": "přesune nebo přejmenuje"
+              },
+              {
+                "front": "grep",
+                "back": "najde řádky se slovem"
+              },
+              {
+                "front": "|",
+                "back": "pošle výstup dalšímu příkazu"
+              },
+              {
+                "front": ">>",
+                "back": "připíše výstup na konec souboru"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Příkaz `ls -l > grep txt` vypíše soubory s „txt“.",
+          "right": "Správně je **`ls -l | grep txt`**.",
+          "why": "`>` neposílá výstup dalšímu příkazu, ale **ukládá ho do souboru**. Tady by vznikl soubor s názvem grep. Pro předání příkazu slouží roura `|`."
+        },
+        {
+          "type": "summary",
+          "text": "sudo spustí příkaz jako správce. Před úpravou konfigurace udělej zálohu (cp). Hledání v logu: grep + tail, počítání: wc -l. Roura | spojuje příkazy, > přepisuje soubor, >> připisuje."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kterým příkazem zjistíš, ve které složce právě jsi?",
+      "options": [
+        "pwd",
+        "ls",
+        "cd",
+        "whoami"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá příkaz `cd ..`?",
+      "options": [
+        "přejde do nadřazené složky",
+        "přejde do domovské složky",
+        "smaže složku",
+        "vypíše obsah složky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem přejmenuješ soubor a.txt na b.txt?",
+      "options": [
+        "mv a.txt b.txt",
+        "cp a.txt b.txt",
+        "rn a.txt b.txt",
+        "rename b.txt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jaký přepínač příkazu ls zobrazí i skryté soubory?",
+      "answers": [
+        "-a",
+        "a"
+      ],
+      "hints": [
+        "Anglicky „all“."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje příkaz, který v souboru najde řádky obsahující zadané slovo?",
+      "answers": [
+        "grep"
+      ],
+      "hints": [
+        "Používá se často za rourou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Soubor smazaný příkazem rm se přesune do koše.",
+      "answer": false,
+      "explanation": "rm maže natrvalo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Roura | předá výstup jednoho příkazu jako vstup dalšímu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá `echo ahoj >> pozdrav.txt`?",
+      "options": [
+        "připíše „ahoj“ na konec souboru",
+        "přepíše soubor textem „ahoj“",
+        "vypíše obsah souboru",
+        "smaže soubor"
+      ],
+      "answer": 0,
+      "hints": [
+        "Rozdíl mezi > a >> je v tom, co se stane se starým obsahem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak zkopíruješ složku foto i s obsahem do složky zaloha?",
+      "options": [
+        "cp -r foto zaloha",
+        "cp foto zaloha",
+        "mv -r foto zaloha",
+        "copy foto zaloha"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj příkaz s jeho činností.",
+      "pairs": [
+        [
+          "mkdir",
+          "vytvoří složku"
+        ],
+        [
+          "cat",
+          "vypíše obsah souboru"
+        ],
+        [
+          "man",
+          "nápověda k příkazu"
+        ],
+        [
+          "wc -l",
+          "spočítá řádky"
+        ],
+        [
+          "sudo",
+          "spustí příkaz jako správce"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď příkazy tak, aby vznikla záloha a kontrola souboru config v nové složce zaloha.",
+      "items": [
+        "mkdir zaloha",
+        "cp config zaloha/",
+        "ls zaloha"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem spočítáš řádky obsahující „error“ v souboru log.txt?",
+      "options": [
+        "grep error log.txt | wc -l",
+        "cat log.txt > error",
+        "wc -l error log.txt",
+        "ls error | log.txt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co dělá roura a přesměrování výstupu, a uveď příklad.",
+      "answer": "Roura | předá výstup jednoho příkazu jako vstup dalšímu, např. ls -l | grep txt ukáže jen řádky s txt. Přesměrování > uloží výstup do souboru a přepíše ho, >> výstup připíše na konec, např. ls > seznam.txt."
+    },
+    {
+      "type": "open",
+      "question": "Proč je příkaz rm -r nebezpečný a jak se chránit?",
+      "answer": "Maže složky i s celým obsahem natrvalo, bez koše a bez ptaní. Před spuštěním si zkontroluju cestu (pwd, ls), můžu použít rm -i, které se ptá, a důležitá data mám zálohovaná."
+    }
+  ]
+}

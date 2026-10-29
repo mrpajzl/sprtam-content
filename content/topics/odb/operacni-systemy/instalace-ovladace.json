@@ -1,0 +1,483 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "instalace-ovladace",
+  "title": "Instalace OS a ovladače",
+  "emoji": "💿",
+  "explanations": [
+    {
+      "title": "Krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Babička koupila notebook bez systému, kamarádovi po viru nejde Windows nastartovat a škola chce do učebny Linux. Ve všech případech potřebuješ **nainstalovat operační systém** a pak zprovoznit všechna zařízení pomocí **ovladačů**."
+        },
+        {
+          "type": "text",
+          "text": "Je to jedna z nejčastějších prací technika. Když ji uděláš správně, nepřijdeš o data a počítač pojede rychle."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Instalační médium",
+          "definition": "Flashka nebo DVD, ze kterého se spustí instalace OS. Vytvoří se z obrazu disku **ISO**.",
+          "example": "flashka vytvořená nástrojem Media Creation Tool nebo Rufus"
+        },
+        {
+          "type": "term",
+          "term": "UEFI",
+          "definition": "Firmware základní desky (nástupce BIOSu). V jeho nastavení se volí, z čeho počítač startuje, a zapíná **Secure Boot**: start jen podepsaného zavaděče."
+        },
+        {
+          "type": "term",
+          "term": "Bootovací nabídka",
+          "definition": "Seznam zařízení, ze kterých jde jednorázově nastartovat. Otevře se klávesou hned po zapnutí, podle výrobce např. **F12**, F11, F8 nebo Esc."
+        },
+        {
+          "type": "term",
+          "term": "Ovladač",
+          "definition": "Program, který OS naučí ovládat konkrétní hardware: grafiku, síťovou kartu, zvuk, tiskárnu."
+        },
+        {
+          "type": "term",
+          "term": "Čistá instalace",
+          "definition": "Instalace na prázdný (smazaný) oddíl. Opak je **upgrade**, který zachová programy a data."
+        },
+        {
+          "type": "heading",
+          "text": "Než začneš"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Zálohuj data.** Instalace může smazat disk.",
+            "Ověř **požadavky** systému. Windows 11 chce mimo jiné 64bitový procesor ze seznamu podporovaných, **4 GB RAM**, **64 GB** úložiště, **UEFI se Secure Boot** a **TPM 2.0**.",
+            "Připrav si licenci (produktový klíč, nebo digitální licenci vázanou na počítač) a ovladač síťové karty, kdyby nefungoval internet."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup instalace Windows"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Stáhni ISO od Microsoftu a vytvoř instalační flashku (Media Creation Tool).",
+            "Zapoj flashku, zapni počítač a v bootovací nabídce (např. F12) vyber flashku.",
+            "Zvol jazyk a typ instalace **Vlastní** (čistá instalace).",
+            "Vyber nebo vytvoř oddíl. Instalátor sám vytvoří potřebné malé oddíly (EFI, obnovovací).",
+            "Po zkopírování souborů se počítač restartuje. Vytáhni flashku, ať se instalace nespustí znovu.",
+            "Nastav účet, soukromí a připoj se k síti.",
+            "Nainstaluj **aktualizace** a **ovladače**, zkontroluj Správce zařízení."
+          ]
+        },
+        {
+          "type": "picture",
+          "items": [
+            "💾",
+            "➡️",
+            "🔌",
+            "➡️",
+            "⚙️",
+            "➡️",
+            "🖥️",
+            "➡️",
+            "🔄"
+          ],
+          "caption": "Záloha → flashka → bootování → instalace → aktualizace a ovladače"
+        },
+        {
+          "type": "heading",
+          "text": "Ovladače"
+        },
+        {
+          "type": "text",
+          "text": "Po instalaci otevři **Správce zařízení**. Žlutý vykřičník znamená zařízení bez funkčního ovladače. Ovladače ber z **Windows Update** nebo z webu **výrobce** notebooku či součástky. Nejdřív čipová sada, pak grafika, síť, zvuk."
+        },
+        {
+          "type": "example",
+          "question": "Po instalaci Windows nefunguje Wi-Fi ani kabelová síť. Jak dostaneš ovladač?",
+          "answer": "Na jiném počítači stáhni ovladač síťové karty z webu **výrobce** (podle přesného modelu notebooku), nahraj ho na flashku a nainstaluj. Pak už stáhneš zbytek přes Windows Update."
+        },
+        {
+          "type": "example",
+          "question": "Po aktualizaci ovladače grafiky bliká obraz. Co uděláš?",
+          "answer": "Ve Správci zařízení → Grafické adaptéry → Vlastnosti → Ovladač → **Vrátit změny ovladače**. Systém se vrátí k předchozí funkční verzi."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ovladač stáhnu z prvního webu, který vyhledávač nabídne, hlavně rychle.",
+          "right": "Ovladače ber jen z **Windows Update** nebo z **oficiálního webu výrobce**.",
+          "why": "Neověřené weby s „ovladači“ často přibalují malware nebo nesprávné verze. Ovladač běží s nejvyššími právy, takže škodlivý ovladač ovládne celý systém."
+        },
+        {
+          "type": "summary",
+          "text": "Před instalací zálohuj a ověř požadavky. Instalační flashka → start z bootovací nabídky → oddíly → instalace → aktualizace. Ovladače z Windows Update nebo od výrobce; problémy ukáže Správce zařízení, vadný ovladač jde vrátit."
+        }
+      ]
+    },
+    {
+      "title": "Disky a dvojí start",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve škole chcete na jednom počítači Windows i Linux: v informatice Linux, v ekonomice Windows. Nebo instaluješ Linux na server. Tady už nestačí klikat „Další“. Musíš rozumět režimu startu, oddílům a pořadí instalace."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "UEFI a Legacy (BIOS)",
+          "definition": "Dva režimy startu. **UEFI** používá disk s tabulkou **GPT** a zvláštní oddíl **EFI** (FAT32). Starý režim **Legacy/BIOS** používá **MBR**. Nové systémy instaluj v režimu UEFI."
+        },
+        {
+          "type": "term",
+          "term": "Oddíl EFI",
+          "definition": "Malý oddíl (desítky až stovky MB, FAT32), kde jsou zavaděče všech nainstalovaných systémů."
+        },
+        {
+          "type": "term",
+          "term": "Zavaděč",
+          "definition": "Program, který spustí jádro OS. Windows Boot Manager, v Linuxu **GRUB**. GRUB umí nabídnout výběr mezi Linuxem a Windows."
+        },
+        {
+          "type": "term",
+          "term": "Dual boot",
+          "definition": "Dva operační systémy na jednom počítači, při startu si vybereš, který spustit."
+        },
+        {
+          "type": "term",
+          "term": "Distribuce a live režim",
+          "definition": "Linux se instaluje jako **distribuce** (Ubuntu, Debian, Fedora). Instalační flashka obvykle umí **live režim**: systém se spustí bez instalace a vyzkoušíš, jestli funguje hardware."
+        },
+        {
+          "type": "heading",
+          "text": "Oddíly"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Systém",
+            "Oddíly (typicky)"
+          ],
+          "rows": [
+            [
+              "Windows (UEFI)",
+              "EFI (FAT32), MSR (vyhrazený), Windows (NTFS), obnovovací"
+            ],
+            [
+              "Linux (UEFI)",
+              "EFI (FAT32), kořen / (ext4); volitelně /home zvlášť a swap (často jen jako soubor)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Samostatný oddíl **/home** má výhodu: při přeinstalaci Linuxu zůstanou data uživatelů nedotčená."
+        },
+        {
+          "type": "heading",
+          "text": "Postup: Windows a Linux vedle sebe"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zálohuj data.",
+            "Nainstaluj **nejdřív Windows** (instalátor Windows by přepsal výběr systému z Linuxu).",
+            "Ve Windows zmenši oddíl (Správa disků → Zmenšit svazek) a nech volné místo.",
+            "Nastartuj z linuxové flashky, v live režimu ověř hardware.",
+            "V instalátoru zvol „nainstalovat vedle Windows“ nebo ručně vytvoř oddíl / do volného místa. Oddíl EFI se použije stávající.",
+            "Po restartu se objeví **GRUB** s výběrem systému."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Instalátor Windows 11 hlásí, že počítač nesplňuje požadavky, i když má nový procesor. Co zkontroluješ?",
+          "answer": "V nastavení UEFI ověř, že je zapnutý **TPM 2.0** (u Intelu často jako PTT, u AMD jako fTPM), **Secure Boot** a režim **UEFI** (ne Legacy/CSM). Disk musí jít použít jako **GPT**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik místa ti zbude pro Linux, když má disk 512 GB, Windows s daty zabírá 210 GB a chceš Windows nechat 100 GB rezervu?",
+          "answer": "Windows potřebuje 210 + 100 = **310 GB**. Pro Linux zbude 512 − 310 = **202 GB** (ve skutečnosti o trochu méně kvůli oddílům EFI a obnovovacímu a kvůli tomu, že výrobci počítají GB po 1000)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "před instalací",
+              "po instalaci"
+            ],
+            "items": [
+              {
+                "text": "zálohovat data",
+                "group": 0
+              },
+              {
+                "text": "ověřit požadavky",
+                "group": 0
+              },
+              {
+                "text": "vytvořit instalační flashku",
+                "group": 0
+              },
+              {
+                "text": "nainstalovat ovladače",
+                "group": 1
+              },
+              {
+                "text": "spustit aktualizace",
+                "group": 1
+              },
+              {
+                "text": "zkontrolovat Správce zařízení",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Režim UEFI používá tabulku oddílů ",
+                "after": "",
+                "options": [
+                  "GPT",
+                  "MBR"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Při dual bootu se nejdřív instaluje ",
+                "after": "",
+                "options": [
+                  "Windows",
+                  "Linux"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Zavaděč Linuxu se jmenuje ",
+                "after": "",
+                "options": [
+                  "GRUB",
+                  "NTFS",
+                  "TPM"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "ISO",
+                "back": "obraz instalačního disku"
+              },
+              {
+                "front": "Secure Boot",
+                "back": "start jen podepsaného zavaděče"
+              },
+              {
+                "front": "TPM 2.0",
+                "back": "bezpečnostní čip, požadavek Windows 11"
+              },
+              {
+                "front": "GRUB",
+                "back": "zavaděč, výběr systému"
+              },
+              {
+                "front": "Live režim",
+                "back": "Linux z flashky bez instalace"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Linux nainstaluju první a Windows potom, výběr systémů zůstane.",
+          "right": "Nejdřív **Windows**, potom **Linux**.",
+          "why": "Instalátor Windows nastaví jako výchozí svůj zavaděč a Linux v nabídce nebude. Instalátor Linuxu naopak Windows najde a přidá ho do GRUBu."
+        },
+        {
+          "type": "summary",
+          "text": "Instaluj v režimu UEFI s GPT a oddílem EFI. Windows potřebuje TPM 2.0 a Secure Boot. Při dual bootu nejdřív Windows, pak Linux, výběr systému nabídne GRUB. Data vždy předem zálohuj."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co uděláš jako první před přeinstalací systému?",
+      "options": [
+        "zálohuješ data",
+        "naformátuješ disk",
+        "nainstaluješ ovladače",
+        "vypneš Secure Boot"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co by se mohlo nenávratně ztratit?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který čip je mimo jiné požadavkem Windows 11?",
+      "options": [
+        "TPM 2.0",
+        "GPU s 8 GB",
+        "Wi-Fi 7",
+        "čtečka otisků"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik GB RAM je minimum pro Windows 11?",
+      "answers": [
+        "4"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kde zjistíš, že zařízení nemá ovladač?",
+      "options": [
+        "ve Správci zařízení (žlutý vykřičník)",
+        "v Kalkulačce",
+        "v nastavení tapety",
+        "v Prohlížeči obrázků"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ovladače je bezpečné stahovat z jakéhokoli webu, který je nabízí.",
+      "answer": false,
+      "explanation": "Jen z Windows Update nebo od výrobce, jinak hrozí malware."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky instalace Windows.",
+      "items": [
+        "vytvořit instalační flashku",
+        "nastartovat z flashky",
+        "vybrat oddíl",
+        "kopírování souborů a restart",
+        "nastavit účet",
+        "aktualizace a ovladače"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Při dual bootu Windows a Linuxu se nejdřív instaluje:",
+      "options": [
+        "Windows",
+        "Linux",
+        "je to jedno",
+        "oba současně"
+      ],
+      "answer": 0,
+      "hints": [
+        "Který instalátor přepíše výběr systému?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s vysvětlením.",
+      "pairs": [
+        [
+          "ISO",
+          "obraz instalačního disku"
+        ],
+        [
+          "GRUB",
+          "zavaděč Linuxu s výběrem systému"
+        ],
+        [
+          "oddíl EFI",
+          "FAT32 oddíl se zavaděči"
+        ],
+        [
+          "Secure Boot",
+          "start jen podepsaného zavaděče"
+        ],
+        [
+          "live režim",
+          "spuštění Linuxu bez instalace"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou tabulku oddílů používá instalace v režimu UEFI?",
+      "options": [
+        "GPT",
+        "MBR",
+        "FAT32",
+        "ext4"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Nový ovladač grafiky způsobuje problémy. Co uděláš ve Správci zařízení?",
+      "options": [
+        "Vrátit změny ovladače",
+        "Odinstalovat Windows",
+        "Zakázat monitor",
+        "Naformátovat disk"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Samostatný oddíl /home v Linuxu usnadní přeinstalaci bez ztráty dat uživatelů.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Disk má 256 GB, Windows zabere 140 GB. Kolik GB zbude pro Linux?",
+      "answers": [
+        "116"
+      ],
+      "hints": [
+        "Odečti."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup čisté instalace Windows.",
+      "answer": "Zálohuji data a ověřím požadavky. Vytvořím instalační flashku z ISO, nastartuji z ní přes bootovací nabídku, zvolím vlastní instalaci a oddíl. Po instalaci nastavím účet, nainstaluji aktualizace a ovladače a zkontroluji Správce zařízení."
+    },
+    {
+      "type": "open",
+      "question": "Co je ovladač a odkud ho bezpečně získáš?",
+      "answer": "Ovladač je program, který operačnímu systému umožní ovládat konkrétní hardware. Bezpečně ho získám přes Windows Update nebo z oficiálního webu výrobce zařízení či notebooku."
+    }
+  ]
+}

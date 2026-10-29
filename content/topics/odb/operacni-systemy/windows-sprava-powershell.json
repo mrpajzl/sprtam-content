@@ -1,0 +1,540 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "windows-sprava-powershell",
+  "title": "Správa Windows a PowerShell",
+  "emoji": "🪟",
+  "explanations": [
+    {
+      "title": "Nástroje správce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kolegyně volá: „Tiskárna netiskne, počítač je pomalý a po aktualizaci nejde zvuk.“ Jako technik nebudeš hádat. Ve Windows máš sadu nástrojů, kde přesně uvidíš, co běží, co selhalo a které zařízení nemá ovladač."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se, kde je najdeš a jak si s nimi poradit, a k tomu základ **PowerShellu**, ve kterém se správa dělá rychle a opakovatelně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Služba",
+          "definition": "Program, který běží na pozadí bez okna, často už od startu systému.",
+          "example": "Zařazování tisku (Spooler), Windows Update"
+        },
+        {
+          "type": "term",
+          "term": "Ovladač",
+          "definition": "Program, který operačnímu systému říká, jak ovládat konkrétní zařízení.",
+          "example": "ovladač grafické karty NVIDIA"
+        },
+        {
+          "type": "term",
+          "term": "Událost (log)",
+          "definition": "Záznam o tom, co se v systému stalo: chyba, varování, informace, s časem a zdrojem."
+        },
+        {
+          "type": "term",
+          "term": "Konzola MMC (.msc)",
+          "definition": "Správcovské nástroje Windows. Spustí se i příkazem v okně **Spustit** (Win + R).",
+          "example": "devmgmt.msc"
+        },
+        {
+          "type": "heading",
+          "text": "Kde co najdeš"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Nástroj",
+            "Spuštění",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "Správce úloh",
+              "Ctrl + Shift + Esc",
+              "běžící procesy, výkon, programy po startu"
+            ],
+            [
+              "Správce zařízení",
+              "devmgmt.msc",
+              "zařízení a ovladače, žlutý vykřičník = problém"
+            ],
+            [
+              "Služby",
+              "services.msc",
+              "spouštění, zastavení, typ spuštění služeb"
+            ],
+            [
+              "Prohlížeč událostí",
+              "eventvwr.msc",
+              "chyby a varování systému a aplikací"
+            ],
+            [
+              "Správa disků",
+              "diskmgmt.msc",
+              "oddíly, formátování, písmena jednotek"
+            ],
+            [
+              "Správa počítače",
+              "compmgmt.msc",
+              "souhrn: uživatelé, disky, služby, události"
+            ],
+            [
+              "Nastavení",
+              "Win + I",
+              "běžné nastavení, Windows Update, účty"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Tiskárna netiskne a úlohy visí ve frontě. Co zkusíš?",
+          "answer": "Otevři **services.msc**, najdi službu **Zařazování tisku** (Print Spooler) a dej **Restartovat**. Když to nepomůže, podívej se do **Prohlížeče událostí** na chyby kolem času tisku a do **Správce zařízení**, jestli tiskárna nemá vykřičník."
+        },
+        {
+          "type": "heading",
+          "text": "PowerShell"
+        },
+        {
+          "type": "term",
+          "term": "PowerShell",
+          "definition": "Příkazová řádka a skriptovací jazyk Windows. Příkazy se jmenují **cmdlety** a mají tvar **Sloveso-Podstatné jméno**.",
+          "example": "Get-Process, Stop-Service"
+        },
+        {
+          "type": "term",
+          "term": "Roura v PowerShellu",
+          "definition": "Znak | předá výsledek dalšímu příkazu. Na rozdíl od Linuxu se předávají **objekty** s vlastnostmi (jméno, CPU, stav), ne jen text."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cmdlet",
+            "Co dělá",
+            "Alias (zkratka)"
+          ],
+          "rows": [
+            [
+              "Get-ChildItem",
+              "vypíše obsah složky",
+              "dir, ls"
+            ],
+            [
+              "Set-Location",
+              "přejde do složky",
+              "cd"
+            ],
+            [
+              "Copy-Item",
+              "kopíruje",
+              "copy, cp"
+            ],
+            [
+              "Move-Item",
+              "přesune",
+              "move, mv"
+            ],
+            [
+              "Remove-Item",
+              "smaže",
+              "del, rm"
+            ],
+            [
+              "Get-Process",
+              "běžící procesy",
+              "ps"
+            ],
+            [
+              "Get-Service",
+              "služby",
+              "–"
+            ],
+            [
+              "Get-Help",
+              "nápověda",
+              "help"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jak v PowerShellu najdeš 5 procesů, které nejvíc vytěžují procesor?",
+          "answer": "`Get-Process | Sort-Object CPU -Descending | Select-Object -First 5`. Get-Process dá všechny procesy, Sort-Object je seřadí podle CPU od největšího, Select-Object vezme prvních 5."
+        },
+        {
+          "type": "text",
+          "text": "Doplň příkaz."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Vypiš služby: ",
+                "after": "",
+                "options": [
+                  "Get-Service",
+                  "Show-Service",
+                  "List-Service"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nápověda k příkazu: ",
+                "after": "",
+                "options": [
+                  "Get-Help",
+                  "Help-Me",
+                  "man-ps"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Restartuj službu Spooler: ",
+                "after": " -Name Spooler",
+                "options": [
+                  "Restart-Service",
+                  "Reset-Service",
+                  "Reboot-Service"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Žlutý vykřičník ve Správci zařízení vyřeším tím, že zařízení odinstaluju a nechám to být.",
+          "right": "Vykřičník znamená chybějící nebo vadný **ovladač**. Stáhni správný ovladač od **výrobce** nebo přes Windows Update a nainstaluj ho.",
+          "why": "Odinstalování problém jen schová. Zařízení bez ovladače dál nefunguje."
+        },
+        {
+          "type": "summary",
+          "text": "Windows spravuješ přes Správce úloh, Správce zařízení (devmgmt.msc), Služby (services.msc), Prohlížeč událostí (eventvwr.msc) a Správu disků. PowerShell má cmdlety Sloveso-Podstatné jméno a rourou předává objekty."
+        }
+      ]
+    },
+    {
+      "title": "Skriptem místo klikání",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš ve firmě nastavit stejnou věc na 40 počítačích. Klikáním strávíš celý den a někde uděláš chybu. Napíšeš-li to jednou do **PowerShellu**, spustíš to 40krát stejně. Proto se ve správě Windows PowerShell vyplatí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "PowerShell",
+          "definition": "Příkazové prostředí Windows. Současná verze **PowerShell 7** běží i na Linuxu a macOS, ve Windows je předinstalovaný **Windows PowerShell 5.1**."
+        },
+        {
+          "type": "term",
+          "term": "Cmdlet",
+          "definition": "Příkaz PowerShellu ve tvaru **Sloveso-Podstatné jméno**. Slovesa jsou standardní: Get (získat), Set (nastavit), New (vytvořit), Remove (odebrat), Start, Stop.",
+          "example": "New-Item, Stop-Process"
+        },
+        {
+          "type": "term",
+          "term": "Parametr",
+          "definition": "Upřesnění příkazu, začíná pomlčkou.",
+          "example": "`Get-ChildItem -Path C:\\Data -Recurse`"
+        },
+        {
+          "type": "term",
+          "term": "Objekt a vlastnost",
+          "definition": "Výsledek cmdletu je objekt s vlastnostmi. Proces má třeba vlastnost Name, Id, CPU.",
+          "example": "`(Get-Process notepad).Id`"
+        },
+        {
+          "type": "term",
+          "term": "Proměnná",
+          "definition": "Pojmenované místo pro hodnotu. V PowerShellu začíná znakem $.",
+          "example": "`$slozka = \"C:\\Zaloha\"`"
+        },
+        {
+          "type": "term",
+          "term": "Zásady spouštění (Execution Policy)",
+          "definition": "Nastavení, které určuje, jestli smí běžet skripty (.ps1). Na klientských Windows jsou skripty ve výchozím stavu **zakázané** (Restricted)."
+        },
+        {
+          "type": "heading",
+          "text": "Jak najít správný příkaz"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`Get-Command *service*` – vypíše příkazy, které mají v názvu „service“.",
+            "`Get-Help Get-Service -Examples` – ukáže příklady použití.",
+            "`Get-Service | Get-Member` – vypíše, jaké vlastnosti mají výsledné objekty."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Filtrování a řazení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cmdlet",
+            "K čemu",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "Where-Object",
+              "vybere objekty podle podmínky",
+              "`Get-Service | Where-Object Status -eq Stopped`"
+            ],
+            [
+              "Sort-Object",
+              "seřadí",
+              "`Sort-Object CPU -Descending`"
+            ],
+            [
+              "Select-Object",
+              "vybere vlastnosti nebo počet",
+              "`Select-Object Name, Id -First 3`"
+            ],
+            [
+              "Export-Csv",
+              "uloží do tabulky CSV",
+              "`Export-Csv sluzby.csv`"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Porovnávací operátory se píšou slovy: **-eq** rovná se, **-ne** nerovná se, **-gt** větší, **-lt** menší."
+        },
+        {
+          "type": "example",
+          "question": "Vypiš všechny zastavené služby a ulož je do souboru zastavene.csv.",
+          "answer": "`Get-Service | Where-Object Status -eq Stopped | Export-Csv zastavene.csv`. Get-Service vrátí všechny služby, Where-Object nechá jen zastavené, Export-Csv je zapíše do tabulky."
+        },
+        {
+          "type": "example",
+          "question": "Najdi ve složce C:\\Data a všech podsložkách soubory větší než 100 MB.",
+          "answer": "`Get-ChildItem C:\\Data -Recurse -File | Where-Object Length -gt 100MB`. `-Recurse` projde podsložky, `-File` jen soubory, Length je velikost v bajtech a PowerShell rozumí zápisu 100MB."
+        },
+        {
+          "type": "heading",
+          "text": "Užitečné i v příkazovém řádku (cmd)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`ipconfig /all` – síťové nastavení.",
+            "`ping` – dostupnost počítače v síti.",
+            "`sfc /scannow` – kontrola a oprava systémových souborů (jako správce).",
+            "`gpupdate /force` – načte nové zásady skupiny ve firemní doméně."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Get-Command",
+                "back": "najde příkazy podle jména"
+              },
+              {
+                "front": "Get-Member",
+                "back": "ukáže vlastnosti objektů"
+              },
+              {
+                "front": "Where-Object",
+                "back": "filtruje podle podmínky"
+              },
+              {
+                "front": "Sort-Object",
+                "back": "řadí"
+              },
+              {
+                "front": "Export-Csv",
+                "back": "uloží výsledek do tabulky"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Do PowerShellu musím psát příkazy přesně velkými a malými písmeny, jinak nefungují.",
+          "right": "PowerShell velikost písmen v názvech příkazů a parametrů **nerozlišuje**: get-service = Get-Service.",
+          "why": "Velká písmena na začátku slov se píšou kvůli čitelnosti. Rozlišování má Linuxový shell, ne PowerShell."
+        },
+        {
+          "type": "summary",
+          "text": "PowerShell: cmdlety Sloveso-Podstatné jméno, parametry s pomlčkou, proměnné s $. Roura předává objekty: Where-Object filtruje, Sort-Object řadí, Select-Object vybírá. Nápověda Get-Help, hledání příkazů Get-Command."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou zkratkou otevřeš Správce úloh?",
+      "options": [
+        "Ctrl + Shift + Esc",
+        "Win + L",
+        "Alt + Tab",
+        "Ctrl + Alt + T"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kde zjistíš, které zařízení nemá ovladač?",
+      "options": [
+        "ve Správci zařízení (devmgmt.msc)",
+        "ve Správě disků",
+        "v Prohlížeči událostí",
+        "v Kalkulačce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se spouští Prohlížeč událostí z okna Spustit? (název i s příponou)",
+      "answers": [
+        "eventvwr.msc",
+        "eventvwr"
+      ],
+      "hints": [
+        "Zkratka z anglického event viewer."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar mají názvy cmdletů v PowerShellu?",
+      "options": [
+        "Sloveso-Podstatné jméno",
+        "Podstatné jméno-Sloveso",
+        "jen jedno slovo",
+        "zkratka o třech písmenech"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj cmdlet s činností.",
+      "pairs": [
+        [
+          "Get-ChildItem",
+          "vypíše obsah složky"
+        ],
+        [
+          "Copy-Item",
+          "kopíruje"
+        ],
+        [
+          "Remove-Item",
+          "maže"
+        ],
+        [
+          "Get-Process",
+          "vypíše procesy"
+        ],
+        [
+          "Get-Help",
+          "nápověda"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Roura v PowerShellu předává objekty, ne jen text.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "PowerShell rozlišuje velká a malá písmena v názvech příkazů.",
+      "answer": false,
+      "explanation": "Get-Service i get-service fungují stejně."
+    },
+    {
+      "type": "choice",
+      "question": "Který příkaz vypíše jen zastavené služby?",
+      "options": [
+        "Get-Service | Where-Object Status -eq Stopped",
+        "Get-Service | Sort-Object Stopped",
+        "Stop-Service | Get-Service",
+        "Get-Service -Stopped -All"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Služba tisku zamrzla. Kde ji restartuješ v grafickém prostředí?",
+      "options": [
+        "services.msc",
+        "diskmgmt.msc",
+        "devmgmt.msc",
+        "Ovládací panely → Myš"
+      ],
+      "answer": 0,
+      "hints": [
+        "Tiskovou frontu obsluhuje program na pozadí."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená operátor -gt v PowerShellu?",
+      "options": [
+        "větší než",
+        "rovná se",
+        "menší než",
+        "není rovno"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části příkazu pro 3 nejvíc vytížené procesy.",
+      "items": [
+        "Get-Process",
+        "Sort-Object CPU -Descending",
+        "Select-Object -First 3"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem zjistíš síťové nastavení ve Windows (IP, brána, DNS)?",
+      "options": [
+        "ipconfig /all",
+        "ifconfig -a",
+        "netstat -r",
+        "Get-Help"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Které nástroje Windows použiješ, když je počítač pomalý a po aktualizaci nefunguje zvuk?",
+      "answer": "Ve Správci úloh zjistím, co vytěžuje procesor, paměť nebo disk. Ve Správci zařízení se podívám, jestli zvuková karta nemá vykřičník, a případně nainstaluji správný ovladač. V Prohlížeči událostí najdu chyby z doby aktualizace."
+    },
+    {
+      "type": "open",
+      "question": "Proč se správci vyplatí PowerShell místo klikání?",
+      "answer": "Příkazy a skripty se dají opakovat stejně na mnoha počítačích, bez chyb z klikání, dají se naplánovat a zdokumentovat. Roura s objekty umožní výsledky snadno filtrovat, řadit a ukládat."
+    }
+  ]
+}

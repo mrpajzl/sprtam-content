@@ -1,0 +1,472 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "jadro-procesy",
+  "title": "Jádro, procesy a vlákna",
+  "emoji": "⚙️",
+  "explanations": [
+    {
+      "title": "Kuchař a objednávky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V restauraci je jeden kuchař a deset objednávek. Nemůže vařit deset jídel naráz. Chvíli míchá polévku, pak otočí řízek, pak zase polévka. Hostům to připadá, že se všechno vaří současně."
+        },
+        {
+          "type": "text",
+          "text": "Procesor je takový kuchař a programy jsou objednávky. O tom, kdo zrovna „vaří“, rozhoduje **jádro** operačního systému. Když pochopíš procesy, budeš umět zjistit, proč se počítač seká, a ukončit zamrzlý program."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Procesor (CPU)",
+          "definition": "Část počítače, která vykonává instrukce programů. Moderní procesor má několik **jader**, každé jádro zvládne jednu práci v jednom okamžiku.",
+          "example": "čtyřjádrový procesor"
+        },
+        {
+          "type": "term",
+          "term": "Jádro OS (kernel)",
+          "definition": "Hlavní část operačního systému. Mimo jiné rozhoduje, který program poběží na procesoru. Pozor: jádro OS je software, jádro procesoru je hardware."
+        },
+        {
+          "type": "term",
+          "term": "Program a proces",
+          "definition": "**Program** je soubor na disku (recept). **Proces** je spuštěný program v paměti (vaření podle receptu). Jeden program může běžet jako víc procesů.",
+          "example": "chrome.exe na disku = program; tři otevřená okna Chrome = několik procesů"
+        },
+        {
+          "type": "term",
+          "term": "PID",
+          "definition": "Číslo procesu (Process ID), podle kterého ho OS rozlišuje.",
+          "example": "proces firefox s PID 2481"
+        },
+        {
+          "type": "term",
+          "term": "Vlákno",
+          "definition": "Samostatně běžící část procesu. Vlákna jednoho procesu **sdílejí jeho paměť**, takže spolupracují rychle.",
+          "example": "Ve Wordu jedno vlákno přijímá psaní, druhé kontroluje pravopis."
+        },
+        {
+          "type": "heading",
+          "text": "Stavy procesu"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "připravený: čeká na procesor",
+              "běžící: právě je na procesoru",
+              "čekající: čeká na disk, síť nebo klávesu",
+              "připravený: data dorazila, zase čeká na procesor"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Proces navíc vzniká (**nový**) a nakonec skončí (**ukončený**)."
+        },
+        {
+          "type": "heading",
+          "text": "Plánování"
+        },
+        {
+          "type": "term",
+          "term": "Plánovač",
+          "definition": "Část jádra, která rozhoduje, který připravený proces dostane procesor a na jak dlouho."
+        },
+        {
+          "type": "term",
+          "term": "Přepnutí kontextu",
+          "definition": "Výměna procesu na procesoru: jádro uloží stav jednoho a načte stav druhého. Trvá krátce, ale není zadarmo."
+        },
+        {
+          "type": "term",
+          "term": "Preemptivní multitasking",
+          "definition": "Jádro smí procesu procesor **odebrat** i proti jeho vůli, třeba po uplynutí časového kvanta. Tak to dělají Windows, Linux i macOS."
+        },
+        {
+          "type": "example",
+          "question": "Procesy A, B, C potřebují 5, 3 a 2 ms procesoru. Plánovač je střídá po 2 ms (Round Robin) v pořadí A, B, C. Kdy který skončí?",
+          "answer": "Časová osa: A 0–2, B 2–4, C 4–6 (**C hotovo v 6**), A 6–8, B 8–9 (**B hotovo v 9**), A 9–10 (**A hotovo v 10**)."
+        },
+        {
+          "type": "example",
+          "question": "Počítač se seká. Jak zjistíš, který proces za to může?",
+          "answer": "Ve Windows otevři **Správce úloh** (Ctrl + Shift + Esc) a seřaď procesy podle sloupce CPU nebo Paměť. V Linuxu spusť `top` nebo `htop`. Proces, který bere skoro 100 % CPU, můžeš ukončit (Windows: Ukončit úlohu; Linux: `kill PID`)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čtyřjádrový procesor zrychlí každý program čtyřikrát.",
+          "right": "Víc jader pomůže hlavně, když běží **víc procesů**, nebo když program umí práci rozdělit do **víc vláken**.",
+          "why": "Program s jediným vláknem běží v jednu chvíli jen na jednom jádře. Ostatní jádra mu nepomohou."
+        },
+        {
+          "type": "summary",
+          "text": "Proces je spuštěný program s vlastním PID a pamětí, vlákna jsou jeho části sdílející paměť. Plánovač jádra střídá procesy na procesoru tak rychle, že se zdá, že běží současně."
+        }
+      ]
+    },
+    {
+      "title": "Algoritmy plánování",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V nemocniční čekárně se nechodí jen podle pořadí příchodu: člověk s infarktem jde hned. Plánovač v jádře řeší stejnou otázku: koho pustit na procesor dřív. Různá pravidla dávají různé výsledky a ve zkouškách se na ně často počítá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Proces",
+          "definition": "Spuštěný program, který má v paměti svůj kód, data a stav."
+        },
+        {
+          "type": "term",
+          "term": "Vlákno",
+          "definition": "Jednotka běhu uvnitř procesu. Vlákna jednoho procesu sdílejí paměť, procesy mají každý svou."
+        },
+        {
+          "type": "term",
+          "term": "Plánovač",
+          "definition": "Část jádra OS, která přiděluje procesor připraveným procesům."
+        },
+        {
+          "type": "term",
+          "term": "Doba čekání",
+          "definition": "Jak dlouho proces strávil ve frontě, než doběhl, bez času, kdy sám běžel. Čím menší průměr, tím lépe."
+        },
+        {
+          "type": "term",
+          "term": "Časové kvantum",
+          "definition": "Pevně dlouhý úsek času, který proces dostane, než se vystřídá další.",
+          "example": "10 ms"
+        },
+        {
+          "type": "heading",
+          "text": "Základní algoritmy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Algoritmus",
+            "Pravidlo",
+            "Vlastnost"
+          ],
+          "rows": [
+            [
+              "FCFS (kdo dřív přijde)",
+              "podle pořadí příchodu",
+              "jednoduchý, krátké procesy čekají za dlouhými"
+            ],
+            [
+              "SJF (nejkratší první)",
+              "nejdřív nejkratší úloha",
+              "nejmenší průměrné čekání, ale délku nutno znát předem"
+            ],
+            [
+              "Round Robin",
+              "dokola, každý dostane kvantum",
+              "spravedlivý, vhodný pro interaktivní systémy"
+            ],
+            [
+              "prioritní",
+              "nejdřív nejvyšší priorita",
+              "hrozí „vyhladovění“ procesů s nízkou prioritou"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet průměrné doby čekání"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Seřaď procesy podle pravidla algoritmu.",
+            "Nakresli časovou osu: kdy který proces začne a skončí.",
+            "Doba čekání = čas začátku (u FCFS a SJF, když všichni přijdou v čase 0).",
+            "Sečti doby čekání a vyděl počtem procesů."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Procesy přijdou v čase 0 v pořadí P1 (8 ms), P2 (4 ms), P3 (2 ms). Spočítej průměrné čekání u FCFS.",
+          "answer": "Pořadí P1, P2, P3. P1 čeká **0**, P2 čeká **8**, P3 čeká 8 + 4 = **12**. Průměr (0 + 8 + 12) / 3 = **≈ 6,67 ms**."
+        },
+        {
+          "type": "example",
+          "question": "Stejné procesy plánuj podle SJF.",
+          "answer": "Od nejkratšího: P3 (2), P2 (4), P1 (8). P3 čeká **0**, P2 čeká **2**, P1 čeká 2 + 4 = **6**. Průměr (0 + 2 + 6) / 3 = **≈ 2,67 ms**. SJF výrazně zkrátil čekání."
+        },
+        {
+          "type": "heading",
+          "text": "Proces a vlákno v porovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Proces",
+            "Vlákno"
+          ],
+          "rows": [
+            [
+              "paměť",
+              "vlastní, oddělená",
+              "sdílená s ostatními vlákny procesu"
+            ],
+            [
+              "vytvoření a přepnutí",
+              "náročnější",
+              "rychlejší"
+            ],
+            [
+              "pád",
+              "neohrozí jiné procesy",
+              "může shodit celý proces"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Uváznutí (deadlock)",
+          "definition": "Dva procesy čekají jeden na druhého, každý drží něco, co potřebuje ten druhý. Ani jeden nepokročí.",
+          "example": "Proces A drží tiskárnu a chce skener, proces B drží skener a chce tiskárnu."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Nejmenší průměrné čekání dává ",
+                "after": "",
+                "options": [
+                  "SJF",
+                  "FCFS",
+                  "Round Robin"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vlákna jednoho procesu ",
+                "after": "",
+                "options": [
+                  "sdílejí paměť",
+                  "mají každé svou paměť"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Odebrání procesoru po uplynutí kvanta je multitasking ",
+                "after": "",
+                "options": [
+                  "preemptivní",
+                  "kooperativní"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "FCFS",
+                "back": "kdo dřív přijde, ten dřív mele"
+              },
+              {
+                "front": "SJF",
+                "back": "nejkratší úloha první"
+              },
+              {
+                "front": "Round Robin",
+                "back": "dokola po časových kvantech"
+              },
+              {
+                "front": "Deadlock",
+                "back": "vzájemné čekání, nikdo nepokročí"
+              },
+              {
+                "front": "Přepnutí kontextu",
+                "back": "uložení stavu jednoho procesu a načtení druhého"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Doba čekání procesu je čas, kdy skončil.",
+          "right": "Doba čekání = čas dokončení − příchod − doba vlastního běhu.",
+          "why": "Do čekání se nepočítá čas, kdy proces sám běžel. U FCFS se vším v čase 0 je čekání rovno času, kdy proces začal."
+        },
+        {
+          "type": "summary",
+          "text": "Plánovač vybírá proces podle algoritmu: FCFS (pořadí), SJF (nejkratší, nejmenší čekání), Round Robin (kvanta dokola), prioritní. Vlákna sdílejí paměť procesu. Deadlock = vzájemné čekání."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký je rozdíl mezi programem a procesem?",
+      "options": [
+        "proces je spuštěný program v paměti",
+        "program je spuštěný proces",
+        "není mezi nimi rozdíl",
+        "proces je soubor na disku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Vlákna jednoho procesu sdílejí jeho paměť.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou nazývá číslo, kterým OS označuje proces?",
+      "answers": [
+        "PID"
+      ],
+      "hints": [
+        "Process ID."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který algoritmus plánování dává nejmenší průměrnou dobu čekání?",
+      "options": [
+        "SJF",
+        "FCFS",
+        "Round Robin",
+        "náhodný výběr"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Procesy P1 (6 ms), P2 (3 ms), P3 (3 ms) přijdou v čase 0 v tomto pořadí. Jaká je průměrná doba čekání u FCFS v ms?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Čekání 0, 6, 9 → (0 + 6 + 9) / 3 = 5 ms.",
+      "hints": [
+        "Každý proces čeká, dokud nedoběhnou všechny před ním.",
+        "Sečti tři doby čekání a vyděl třemi."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Stejné procesy P1 (6 ms), P2 (3 ms), P3 (3 ms) plánuj podle SJF. Průměrné čekání v ms?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Pořadí P2, P3, P1: čekání 0, 3, 6 → 9 / 3 = 3 ms.",
+      "hints": [
+        "Nejdřív seřaď procesy od nejkratšího."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď stavy procesu, kterými projde program, který chvíli čeká na disk.",
+      "items": [
+        "nový",
+        "připravený",
+        "běžící",
+        "čekající na disk",
+        "znovu připravený, pak běžící",
+        "ukončený"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj algoritmus s pravidlem.",
+      "pairs": [
+        [
+          "FCFS",
+          "podle pořadí příchodu"
+        ],
+        [
+          "SJF",
+          "nejkratší úloha první"
+        ],
+        [
+          "Round Robin",
+          "dokola po časových kvantech"
+        ],
+        [
+          "prioritní",
+          "nejvyšší priorita první"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je uváznutí (deadlock)?",
+      "options": [
+        "procesy čekají jeden na druhého a žádný nepokročí",
+        "proces spotřebuje celou paměť",
+        "počítač se vypne",
+        "proces skončí chybou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Čtyřjádrový procesor zrychlí jednovláknový program čtyřikrát.",
+      "answer": false,
+      "explanation": "Jedno vlákno běží v jednu chvíli jen na jednom jádře."
+    },
+    {
+      "type": "choice",
+      "question": "Jak ve Windows rychle otevřeš Správce úloh?",
+      "options": [
+        "Ctrl + Shift + Esc",
+        "Ctrl + C",
+        "Alt + F4",
+        "Win + L"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem v Linuxu ukončíš proces s PID 2481?",
+      "options": [
+        "kill 2481",
+        "stop 2481",
+        "rm 2481",
+        "exit 2481"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je proces a co vlákno a v čem se liší.",
+      "answer": "Proces je spuštěný program s vlastní pamětí a PID. Vlákno je část procesu, která běží samostatně, ale sdílí paměť s ostatními vlákny téhož procesu. Vlákna se vytvářejí a přepínají rychleji, ale chyba ve vlákně může shodit celý proces."
+    },
+    {
+      "type": "open",
+      "question": "Jak to, že na jednojádrovém procesoru běží zdánlivě víc programů současně?",
+      "answer": "Plánovač jádra procesy rychle střídá: každý dostane krátké časové kvantum a pak se přepne kontext na další. Střídá je tak rychle, že to člověk vnímá jako současný běh."
+    }
+  ]
+}
