@@ -1,0 +1,492 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "privlastnovaci-a-ukazovaci-zajmena",
+  "title": "Přivlastňovací a ukazovací zájmena",
+  "emoji": "👉",
+  "explanations": [
+    {
+      "title": "Tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na obrázku rodiny ukazuješ: „To je **můj** táta, **tahle** paní je **moje** teta a **tamten** pán je **její** muž.“ Potřebuješ dva druhy slov: kdo komu patří (můj, tvůj, její) a na co ukazuješ (tento, ten, tamten)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přivlastňovací zájmeno",
+          "definition": "Říká, komu něco patří: můj, tvůj, jeho, náš…",
+          "example": "*mi libro* = moje kniha"
+        },
+        {
+          "type": "term",
+          "term": "Ukazovací zájmeno",
+          "definition": "Ukazuje na něco blízko nebo daleko: tento, ten, tamten.",
+          "example": "*este libro* = tato kniha"
+        },
+        {
+          "type": "term",
+          "term": "Shoda",
+          "definition": "Zájmeno se přizpůsobí podstatnému jménu, ke kterému patří: rodem (mužský/ženský) a číslem (jedno/víc).",
+          "example": "*mi libro* → *mis libros*"
+        },
+        {
+          "type": "heading",
+          "text": "Přivlastňovací zájmena"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Česky",
+            "jedna věc",
+            "víc věcí"
+          ],
+          "rows": [
+            [
+              "můj, moje",
+              "mi",
+              "mis"
+            ],
+            [
+              "tvůj, tvoje",
+              "tu",
+              "tus"
+            ],
+            [
+              "jeho, její, jejich, Váš",
+              "su",
+              "sus"
+            ],
+            [
+              "náš, naše",
+              "nuestro / nuestra",
+              "nuestros / nuestras"
+            ],
+            [
+              "váš (vosotros)",
+              "vuestro / vuestra",
+              "vuestros / vuestras"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Důležité: zájmeno se řídí **věcí, která patří**, ne majitelem. *Mis padres* = moji rodiče (rodičů je víc, i když já jsem jeden). *Nuestra casa* = náš dům (*casa* je ženská)."
+        },
+        {
+          "type": "text",
+          "text": "Pozor: *tu* (tvůj) je bez čárky, *tú* (ty) s čárkou."
+        },
+        {
+          "type": "heading",
+          "text": "Ukazovací zájmena"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "blízko mě (tento)",
+            "blízko tebe (ten)",
+            "daleko od nás (tamten)"
+          ],
+          "rows": [
+            [
+              "mužský, jedno",
+              "este",
+              "ese",
+              "aquel"
+            ],
+            [
+              "ženský, jedno",
+              "esta",
+              "esa",
+              "aquella"
+            ],
+            [
+              "mužský, víc",
+              "estos",
+              "esos",
+              "aquellos"
+            ],
+            [
+              "ženský, víc",
+              "estas",
+              "esas",
+              "aquellas"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hodí se k nim příslovce: *aquí* (tady u mě), *ahí* (tam u tebe), *allí* (tamhle daleko)."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi podstatné jméno: *casa*.",
+            "Zjisti jeho rod a číslo: ženský, jedno.",
+            "Vyber tvar: *nuestra casa*, *esta casa*, *aquella casa*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: naši přátelé",
+          "answer": "Přátelé = *amigos*, mužský rod, víc → *nuestros*. *Nuestros amigos.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: tyto tašky (u mě) a tamty boty (daleko). (*bolsa* = taška, *zapato* = bota)",
+          "answer": "*bolsas*: ženský, víc, blízko → *estas bolsas*. *zapatos*: mužský, víc, daleko → *aquellos zapatos*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mi libros",
+          "right": "Mis libros",
+          "why": "Knih je víc, proto *mis*. Zájmeno se řídí věcí, ne majitelem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "estes chicos",
+          "right": "estos chicos",
+          "why": "Mužský tvar množného čísla je *estos*. Tvar „estes“ neexistuje."
+        },
+        {
+          "type": "summary",
+          "text": "Přivlastňovací: **mi, tu, su** (+s pro víc věcí), **nuestro/a, vuestro/a** (+s). Ukazovací: **este** (tady), **ese** (u tebe), **aquel** (daleko). Řídí se věcí, ke které patří."
+        }
+      ]
+    },
+    {
+      "title": "Rodinná fotka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ana ukazuje kamarádovi fotky z léta. Ukazuje prstem a vypráví, kdo je kdo. Při tom používá slova, která říkají **čí** kdo je a **který** to je."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přivlastňovací zájmeno",
+          "definition": "Slovo jako můj, tvůj, jeho, náš. Ve španělštině stojí před podstatným jménem bez členu.",
+          "example": "*mi hermano* = můj brácha"
+        },
+        {
+          "type": "term",
+          "term": "Ukazovací zájmeno",
+          "definition": "Slovo jako tento, ten, tamten. Podle vzdálenosti máš tři řady: *este, ese, aquel*.",
+          "example": "*esta foto* = tahle fotka"
+        },
+        {
+          "type": "term",
+          "term": "Esto, eso, aquello",
+          "definition": "Tvary pro věc, kterou nejmenuješ nebo neznáš. Nemění se.",
+          "example": "*¿Qué es esto?* = Co je tohle?"
+        },
+        {
+          "type": "heading",
+          "text": "Ana vypráví"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Mira, esta es mi familia.",
+              "Podívej, tohle je moje rodina."
+            ],
+            [
+              "Este chico es mi hermano Leo.",
+              "Tenhle kluk je můj brácha Leo."
+            ],
+            [
+              "Esa señora es nuestra tía.",
+              "Ta paní je naše teta."
+            ],
+            [
+              "Y aquellos niños son sus hijos.",
+              "A tamty děti jsou její děti."
+            ],
+            [
+              "¿Y esta foto? ¿Son tus abuelos?",
+              "A tahle fotka? To jsou tví prarodiče?"
+            ],
+            [
+              "Sí, y aquella es su casa.",
+              "Ano, a tamto je jejich dům."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *su* jednou znamená „její“ a jindy „jejich“. Co přesně, je jasné z věty. Když to jasné není, řekne se to jinak: *la casa de mis abuelos* (dům mých prarodičů)."
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: esta × está"
+        },
+        {
+          "type": "text",
+          "text": "*Esta* (bez čárky) = tato. *Está* (s čárkou) = je (sloveso estar). *Esta casa está en Madrid.* = Tento dům je v Madridu."
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: doplň správný tvar."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "padres son de Brno. (moji)",
+                "options": [
+                  "Mi",
+                  "Mis"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "",
+                "after": "casa es grande. (náš)",
+                "options": [
+                  "Nuestro",
+                  "Nuestra"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "",
+                "after": "chicos son mis amigos. (tito)",
+                "options": [
+                  "Estos",
+                  "Estas",
+                  "Estes"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "¿Quién es",
+                "after": "señora de allí? (tamta)",
+                "options": [
+                  "aquel",
+                  "aquella",
+                  "esa"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Tvůj pes je v naší zahradě. (*perro*, *jardín*)",
+          "answer": "*perro* je mužský, jeden → *tu perro*. *jardín* mužský, jeden → *nuestro jardín*. Místo → *está*. *Tu perro está en nuestro jardín.*"
+        },
+        {
+          "type": "example",
+          "question": "Ukaž na fotku daleko na zdi: Tamta fotka je mojí mámy.",
+          "answer": "*foto* je ženského rodu (*la foto*), daleko → *aquella*. Komu patří, řekneš pomocí *de*: *Aquella foto es de mi madre.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nuestro casa",
+          "right": "Nuestra casa",
+          "why": "*Casa* je ženského rodu, *nuestro* se mu musí přizpůsobit: *nuestra*."
+        },
+        {
+          "type": "summary",
+          "text": "Čí: **mi, tu, su, nuestro, vuestro** (shoda s věcí). Který: **este** (tady), **ese** (u tebe), **aquel** (tamhle). *Esta* = tato, *está* = je."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "___ libros (moje knihy)",
+      "options": [
+        "mis",
+        "mi",
+        "mío"
+      ],
+      "answer": 0,
+      "explanation": "Víc knih → mis."
+    },
+    {
+      "type": "choice",
+      "question": "___ casa (náš dům)",
+      "options": [
+        "nuestra",
+        "nuestro",
+        "nuestros"
+      ],
+      "answer": 0,
+      "explanation": "Casa je ženská → nuestra."
+    },
+    {
+      "type": "choice",
+      "question": "___ hermanos (tví sourozenci)",
+      "options": [
+        "tus",
+        "tu",
+        "tús"
+      ],
+      "answer": 0,
+      "explanation": "Víc → tus."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: ___ padre se llama Juan. (můj)",
+      "answers": [
+        "mi"
+      ],
+      "explanation": "Jeden táta → mi."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Ana y ___ hermana son altas. (její)",
+      "answers": [
+        "su"
+      ],
+      "explanation": "Její, jedna sestra → su.",
+      "hints": [
+        "Který tvar zájmena patří ke třetí osobě?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "___ chicos de aquí son mis amigos. (tito)",
+      "options": [
+        "Estos",
+        "Estes",
+        "Estas"
+      ],
+      "answer": 0,
+      "explanation": "Mužský rod, víc → estos."
+    },
+    {
+      "type": "choice",
+      "question": "¿Qué es ___? (tohle – neznámá věc)",
+      "options": [
+        "esto",
+        "este",
+        "esta"
+      ],
+      "answer": 0,
+      "explanation": "Neznámá věc → esto."
+    },
+    {
+      "type": "choice",
+      "question": "Ukazuješ na hory daleko na obzoru: ___ montañas.",
+      "options": [
+        "aquellas",
+        "estas",
+        "esas"
+      ],
+      "answer": 0,
+      "explanation": "Daleko od obou, ženský rod, víc → aquellas."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Mis padres* je správně, i když mluví jen jeden člověk.",
+      "answer": true,
+      "explanation": "Zájmeno se řídí věcí (rodiče = víc), ne majitelem."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Esta* a *está* znamenají totéž.",
+      "answer": false,
+      "explanation": "*Esta* = tato, *está* = je."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zájmeno se vzdáleností.",
+      "pairs": [
+        [
+          "este",
+          "blízko mě"
+        ],
+        [
+          "ese",
+          "blízko tebe"
+        ],
+        [
+          "aquel",
+          "daleko od nás"
+        ]
+      ],
+      "explanation": "Tři vzdálenosti: aquí, ahí, allí."
+    },
+    {
+      "type": "match",
+      "question": "Spoj česky a španělsky.",
+      "pairs": [
+        [
+          "moje kamarádky",
+          "mis amigas"
+        ],
+        [
+          "náš pes",
+          "nuestro perro"
+        ],
+        [
+          "vaše třída (vosotros)",
+          "vuestra clase"
+        ],
+        [
+          "jejich auta",
+          "sus coches"
+        ]
+      ],
+      "explanation": "Shoda s věcí: rod a číslo."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Tento dům je v Madridu.“",
+      "items": [
+        "Esta",
+        "casa",
+        "está",
+        "en Madrid."
+      ],
+      "explanation": "Esta = tato, está = je."
+    },
+    {
+      "type": "open",
+      "question": "Čím se řídí tvar přivlastňovacího zájmena ve španělštině? Uveď příklad.",
+      "answer": "Řídí se věcí, která patří, ne majitelem: *mis libros* (moje knihy), *nuestra casa* (náš dům, casa je ženská)."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi *este, ese* a *aquel*.",
+      "answer": "*Este* je blízko mluvčího (tady), *ese* blízko posluchače nebo trochu dál (tam u tebe), *aquel* daleko od obou (tamhle)."
+    }
+  ]
+}

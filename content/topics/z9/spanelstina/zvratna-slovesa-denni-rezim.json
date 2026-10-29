@@ -1,0 +1,559 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zvratna-slovesa-denni-rezim",
+  "title": "Zvratná slovesa a denní režim",
+  "emoji": "⏰",
+  "explanations": [
+    {
+      "title": "Se a si",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky říkáš „myju **se**“, „čistím **si** zuby“, „oblékám **se**“. Španělština má taková slovesa taky. Říká se jim **zvratná** a nejvíc jich potkáš, když popisuješ svůj den: vstávání, sprchu, oblékání."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné sloveso",
+          "definition": "Sloveso, kde činnost dělám **sám sobě**. Ve slovníku má na konci infinitivu *-se*.",
+          "example": "*lavarse* = mýt se"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné zájmeno",
+          "definition": "Krátké slovo, které ukazuje, komu činnost dělám: me, te, se, nos, os, se. Česky „se“ nebo „si“.",
+          "example": "*Me lavo.* = Myju se."
+        },
+        {
+          "type": "term",
+          "term": "Denní režim",
+          "definition": "Co obvykle děláš během dne a v kolik hodin.",
+          "example": "vstávám v 7, snídám, jdu do školy…"
+        },
+        {
+          "type": "heading",
+          "text": "Časování: levantarse (vstávat)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "zájmeno",
+            "sloveso",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "yo",
+              "me",
+              "levanto",
+              "vstávám"
+            ],
+            [
+              "tú",
+              "te",
+              "levantas",
+              "vstáváš"
+            ],
+            [
+              "él / ella / usted",
+              "se",
+              "levanta",
+              "vstává"
+            ],
+            [
+              "nosotros",
+              "nos",
+              "levantamos",
+              "vstáváme"
+            ],
+            [
+              "vosotros",
+              "os",
+              "levantáis",
+              "vstáváte"
+            ],
+            [
+              "ellos / ellas / ustedes",
+              "se",
+              "levantan",
+              "vstávají"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odtrhni *-se* z infinitivu: *levantarse → levantar*.",
+            "Vyčasuj sloveso jako obvykle: *levanto*.",
+            "Před sloveso dej zájmeno podle osoby: **me** levanto.",
+            "Zápor: *no* před zájmeno: *No me levanto temprano.* = Nevstávám brzo."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Slovesa denního režimu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "yo",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "despertarse (e→ie)",
+              "me despierto",
+              "probouzím se"
+            ],
+            [
+              "levantarse",
+              "me levanto",
+              "vstávám"
+            ],
+            [
+              "ducharse",
+              "me ducho",
+              "sprchuji se"
+            ],
+            [
+              "lavarse los dientes",
+              "me lavo los dientes",
+              "čistím si zuby"
+            ],
+            [
+              "vestirse (e→i)",
+              "me visto",
+              "oblékám se"
+            ],
+            [
+              "peinarse",
+              "me peino",
+              "češu se"
+            ],
+            [
+              "acostarse (o→ue)",
+              "me acuesto",
+              "jdu spát (lehám si)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Některá slovesa mění kmen, jak už znáš z 8. třídy: *despertarse* e→ie, *acostarse* o→ue, *vestirse* e→i."
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: doplň zvratné zájmeno."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Yo",
+                "after": "ducho por la mañana.",
+                "options": [
+                  "me",
+                  "te",
+                  "se"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "¿A qué hora",
+                "after": "levantas?",
+                "options": [
+                  "me",
+                  "te",
+                  "se"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Mi padre",
+                "after": "acuesta tarde.",
+                "options": [
+                  "me",
+                  "nos",
+                  "se"
+                ],
+                "answer": 2
+              },
+              {
+                "before": "Nosotros",
+                "after": "vestimos rápido.",
+                "options": [
+                  "nos",
+                  "os",
+                  "se"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Ona se sprchuje.",
+          "answer": "1) *ducharse* → bez *-se*: *duchar*. 2) Ona → *ducha*. 3) Zájmeno pro ona: *se*. *Ella se ducha.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Jdu spát v deset. (*a las diez*)",
+          "answer": "1) *acostarse* (o→ue). 2) Yo → *acuesto* (v botě, o→ue). 3) Zájmeno *me*. *Me acuesto a las diez.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Yo levanto a las siete.",
+          "right": "Me levanto a las siete.",
+          "why": "Bez zájmena *me* by věta znamenala „zvedám (něco) v sedm“. Vstávat = *levantarse*."
+        },
+        {
+          "type": "summary",
+          "text": "Zvratné sloveso = zájmeno **me, te, se, nos, os, se** + vyčasované sloveso: *me levanto, te duchas, se viste*."
+        }
+      ]
+    },
+    {
+      "title": "Můj den",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pablo z Barcelony popisuje svůj obyčejný školní den. Přečti si ho a všimni si malých slovíček *me* před slovesy. A taky toho, že ve Španělsku se jí a chodí spát později než u nás."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné sloveso",
+          "definition": "Sloveso s *-se* v infinitivu. Činnost dělá člověk sám sobě. V časování má před sebou zájmeno.",
+          "example": "*ducharse* → *me ducho* = sprchuji se"
+        },
+        {
+          "type": "term",
+          "term": "Hodiny",
+          "definition": "Čas řekneš *a la una* (v jednu), *a las dos, a las siete…* (ve dvě, v sedm). *Y media* = a půl.",
+          "example": "*a las siete y media* = v půl osmé"
+        },
+        {
+          "type": "term",
+          "term": "Člen místo „můj“",
+          "definition": "U částí těla a oblečení španělština používá člen, ne „můj“, protože je jasné, čí jsou.",
+          "example": "Me lavo **los** dientes. = Čistím si zuby."
+        },
+        {
+          "type": "heading",
+          "text": "Pablův den"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Me despierto a las siete.",
+              "Probouzím se v sedm."
+            ],
+            [
+              "Me levanto y me ducho.",
+              "Vstanu a osprchuju se."
+            ],
+            [
+              "Me visto y desayuno.",
+              "Obléknu se a nasnídám se."
+            ],
+            [
+              "Me lavo los dientes y salgo de casa.",
+              "Vyčistím si zuby a odejdu z domu."
+            ],
+            [
+              "Como a las dos y media.",
+              "Obědvám v půl třetí."
+            ],
+            [
+              "Ceno a las nueve.",
+              "Večeřím v devět."
+            ],
+            [
+              "Me acuesto a las diez y media.",
+              "Jdu spát v půl jedenácté."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *desayunar* (snídat), *comer* (obědvat), *cenar* (večeřet) **nejsou** zvratná, i když česky říkáš „nasnídám se“. Naopak *levantarse* (vstávat) zvratné je, i když česky „se“ nemá."
+        },
+        {
+          "type": "text",
+          "text": "S infinitivem může zájmeno stát i na konci: *Voy a ducharme* = *Me voy a duchar* (Půjdu se osprchovat)."
+        },
+        {
+          "type": "heading",
+          "text": "Seřaď den"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Me despierto. (Probudím se.)",
+            "Me levanto. (Vstanu.)",
+            "Me ducho y me visto. (Osprchuju se a obléknu.)",
+            "Desayuno. (Nasnídám se.)",
+            "Por la noche me acuesto. (Večer jdu spát.)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: které sloveso je zvratné (má *-se*) a které ne?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "zvratné (-se)",
+              "nezvratné"
+            ],
+            "items": [
+              {
+                "text": "levantarse",
+                "group": 0
+              },
+              {
+                "text": "desayunar",
+                "group": 1
+              },
+              {
+                "text": "ducharse",
+                "group": 0
+              },
+              {
+                "text": "cenar",
+                "group": 1
+              },
+              {
+                "text": "acostarse",
+                "group": 0
+              },
+              {
+                "text": "comer",
+                "group": 1
+              },
+              {
+                "text": "vestirse",
+                "group": 0
+              },
+              {
+                "text": "estudiar",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Popiš, co dělá Pablova sestra ráno: probouzí se v sedm a obléká se.",
+          "answer": "Ona → zájmeno *se*. *despertarse* e→ie: *se despierta*. *vestirse* e→i: *se viste*. *Se despierta a las siete y se viste.*"
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se kamaráda, v kolik chodí spát.",
+          "answer": "Ty → *te*, *acostarse* o→ue → *te acuestas*. *¿A qué hora te acuestas?*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Me lavo mis dientes.",
+          "right": "Me lavo los dientes.",
+          "why": "U částí těla stačí člen. Že jsou to tvoje zuby, říká už *me*."
+        },
+        {
+          "type": "summary",
+          "text": "Den popíšeš zvratnými slovesy: *me despierto, me levanto, me ducho, me visto, me acuesto*. U částí těla člen: *me lavo los dientes*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Yo ___ levanto a las siete.",
+      "options": [
+        "me",
+        "se",
+        "te"
+      ],
+      "answer": 0,
+      "explanation": "Yo → me."
+    },
+    {
+      "type": "choice",
+      "question": "¿Tú ___ duchas por la mañana?",
+      "options": [
+        "te",
+        "se",
+        "me"
+      ],
+      "answer": 0,
+      "explanation": "Tú → te."
+    },
+    {
+      "type": "choice",
+      "question": "Mis hermanos ___ acuestan tarde.",
+      "options": [
+        "se",
+        "nos",
+        "os"
+      ],
+      "answer": 0,
+      "explanation": "Ellos → se."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Nosotros ___ levantamos temprano.",
+      "answers": [
+        "nos"
+      ],
+      "explanation": "Nosotros → nos."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar: Yo me ___ a las diez. (acostarse, o→ue)",
+      "answers": [
+        "acuesto"
+      ],
+      "explanation": "Yo je v botě, o→ue: acuesto.",
+      "hints": [
+        "Mění se v osobě yo kmen?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar: Ella se ___ rápido. (vestirse, e→i)",
+      "answers": [
+        "viste"
+      ],
+      "explanation": "Ona v botě, e→i: viste."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Čistím si zuby“?",
+      "options": [
+        "Me lavo los dientes.",
+        "Me lavo mis dientes.",
+        "Lavo me los dientes."
+      ],
+      "answer": 0,
+      "explanation": "U částí těla člen, zájmeno před slovesem."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Desayunar* (snídat) je zvratné sloveso.",
+      "answer": false,
+      "explanation": "Desayunar zvratné není: *desayuno* = snídám."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Voy a ducharme* a *Me voy a duchar* znamenají totéž.",
+      "answer": true,
+      "explanation": "Zájmeno může stát před *ir*, nebo se přilepit k infinitivu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso s významem.",
+      "pairs": [
+        [
+          "despertarse",
+          "probouzet se"
+        ],
+        [
+          "levantarse",
+          "vstávat"
+        ],
+        [
+          "vestirse",
+          "oblékat se"
+        ],
+        [
+          "acostarse",
+          "jít spát"
+        ],
+        [
+          "ducharse",
+          "sprchovat se"
+        ]
+      ],
+      "explanation": "Všechna jsou zvratná."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď ranní činnosti.",
+      "items": [
+        "Me despierto.",
+        "Me levanto.",
+        "Me ducho.",
+        "Me visto.",
+        "Salgo de casa."
+      ],
+      "explanation": "Nejdřív se probudím, pak vstanu, osprchuju se, obléknu a odejdu."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš „V kolik vstáváš?“",
+      "options": [
+        "¿A qué hora te levantas?",
+        "¿A qué hora levantas?",
+        "¿A qué hora se levantas?"
+      ],
+      "answer": 0,
+      "explanation": "Tú → te levantas."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená *Yo levanto la mano*?",
+      "options": [
+        "Zvedám ruku.",
+        "Vstávám.",
+        "Myju si ruce."
+      ],
+      "answer": 0,
+      "explanation": "Bez zájmena je *levantar* „zvednout něco“. Vstávat = levantarse."
+    },
+    {
+      "type": "open",
+      "question": "Popiš španělsky svůj běžný školní den (aspoň čtyři věty).",
+      "answer": "Me despierto a las seis y media. Me levanto, me ducho y me visto. Desayuno y voy al colegio. Por la noche ceno y me acuesto a las diez."
+    },
+    {
+      "type": "open",
+      "question": "Co je zvratné sloveso a jak se časuje? Ukaž na *levantarse*.",
+      "answer": "Zvratné sloveso má v infinitivu -se a v časování před sebou zájmeno podle osoby: me levanto, te levantas, se levanta, nos levantamos, os levantáis, se levantan."
+    }
+  ]
+}
