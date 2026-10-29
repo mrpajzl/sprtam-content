@@ -1,0 +1,433 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ochrana-pred-sluncem",
+  "title": "Ochrana před sluncem",
+  "emoji": "☀️",
+  "explanations": [
+    {
+      "title": "Dva druhy paprsků",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Po dni u vody máš červená ramena. Po letech na slunci má kůže vrásky a skvrny. Obojí dělá sluneční záření, ale každé jiná jeho část."
+        },
+        {
+          "type": "text",
+          "text": "Ochrana před sluncem je nejlepší prevence předčasného stárnutí kůže i rakoviny kůže. Kosmetička ji musí umět vysvětlit a správně doporučit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "UV záření",
+          "definition": "Ultrafialové záření ze Slunce. Oko ho nevidí, ale kůže na něj reaguje. Dělí se podle **vlnové délky** (v nanometrech, nm) na UVA, UVB a UVC.",
+          "example": "Opálení i spálení způsobuje UV záření, ne teplo."
+        },
+        {
+          "type": "term",
+          "term": "UVB",
+          "definition": "Záření s vlnovou délkou 280–315 nm. Působí hlavně v pokožce (horní vrstva kůže). Způsobuje **spálení** (zarudnutí) a podílí se na rakovině kůže.",
+          "example": "Spálená ramena po koupališti."
+        },
+        {
+          "type": "term",
+          "term": "UVA",
+          "definition": "Záření s vlnovou délkou 315–400 nm. Proniká hlouběji, až do škáry (střední vrstva kůže). Způsobuje hlavně **stárnutí kůže** (vrásky, skvrny), přispívá k rakovině. Prochází i oknem.",
+          "example": "Řidič má víc vrásek na straně u okna."
+        },
+        {
+          "type": "term",
+          "term": "UVC",
+          "definition": "Záření pod 280 nm. Pohltí ho ozonová vrstva, na zem se ze Slunce nedostane.",
+          "example": "Germicidní lampy na dezinfekci."
+        },
+        {
+          "type": "term",
+          "term": "UV filtr",
+          "definition": "Látka v opalovacím přípravku, která UV záření pohlcuje, rozptyluje nebo odráží. V EU se smí použít jen filtry ze seznamu povolených (příloha VI nařízení 1223/2009).",
+          "example": "Zinc Oxide, Butyl Methoxydibenzoylmethane (avobenzon)."
+        },
+        {
+          "type": "heading",
+          "text": "Dva druhy filtrů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "minerální (anorganické)",
+            "chemické (organické)"
+          ],
+          "rows": [
+            [
+              "jak působí",
+              "rozptylují a odrážejí záření, z velké části ho i pohlcují",
+              "pohlcují záření a mění ho na teplo"
+            ],
+            [
+              "příklady",
+              "Zinc Oxide, Titanium Dioxide",
+              "Butyl Methoxydibenzoylmethane, Octocrylene"
+            ],
+            [
+              "výhody",
+              "vhodné pro citlivou pleť a děti",
+              "lehké, neviditelné na kůži"
+            ],
+            [
+              "nevýhody",
+              "mohou bělit kůži",
+              "u citlivých lidí častěji alergie"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co znamená SPF"
+        },
+        {
+          "type": "text",
+          "text": "**SPF** (ochranný faktor) měří ochranu hlavně proti **UVB**. Říká, kolikrát déle trvá, než kůže zčervená, když je namazaná, oproti nenamazané. Měří se při vrstvě **2 mg na cm²**, to je víc, než si lidé běžně nanesou."
+        },
+        {
+          "type": "table",
+          "head": [
+            "kategorie (doporučení EU)",
+            "SPF na obalu"
+          ],
+          "rows": [
+            [
+              "nízká ochrana",
+              "6, 10"
+            ],
+            [
+              "střední ochrana",
+              "15, 20, 25"
+            ],
+            [
+              "vysoká ochrana",
+              "30, 50"
+            ],
+            [
+              "velmi vysoká ochrana",
+              "50+"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ochrana proti UVA se značí logem **UVA v kroužku**. Znamená, že ochrana proti UVA je aspoň třetina deklarovaného SPF."
+        },
+        {
+          "type": "example",
+          "question": "SPF 15 zachytí asi 93 % UVB, SPF 30 asi 97 %, SPF 50 asi 98 %. Je SPF 30 dvakrát silnější než SPF 15?",
+          "answer": "Ne. Rozdíl v zachyceném záření je jen asi **4 procentní body** (93 % → 97 %). Propustí ale asi polovinu záření (7 % → 3 %). Důležitější než vyšší číslo je **dost krému a opakované nanášení**."
+        },
+        {
+          "type": "example",
+          "question": "Při kontrolovaném testu kůže bez krému zčervená za 10 minut. Jak dlouho by teoreticky chránil SPF 20?",
+          "answer": "10 min × 20 = **200 minut**. Je to ale jen teorie z laboratoře: v praxi nanášíme méně krému, potíme se a otíráme. Proto se doporučuje opakovat nanášení zhruba každé 2 hodiny a nikdy nepočítat s maximem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mám SPF 50, takže můžu ležet na slunci celý den.",
+          "right": "Žádný krém neblokuje 100 % záření. Opakuj nanášení, po polední době (asi 11–15 h) se drž ve stínu, nos klobouk a oblečení.",
+          "why": "SPF je laboratorní hodnota. Pot, voda, ručník a málo krému ochranu rychle snižují."
+        },
+        {
+          "type": "summary",
+          "text": "UVB pálí, UVA stárne a proniká oknem, obojí přispívá k rakovině kůže. SPF měří hlavně UVB, UVA v kroužku znamená vyváženou ochranu. Filtry jsou minerální a chemické, smí jen povolené z přílohy VI."
+        }
+      ]
+    },
+    {
+      "title": "Poradna u pultu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Do salonu přijde maminka: „Jedeme k moři. Co mám koupit sobě a dítěti?“ Ty máš za pět minut poradit přípravek, množství i zásady pobytu na slunci."
+        },
+        {
+          "type": "text",
+          "text": "Správná rada chrání klientku před spálením, předčasným stárnutím kůže i rakovinou kůže. Projdeš ji krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "UVA a UVB",
+          "definition": "Dvě části ultrafialového záření ze Slunce. **UVB** (kratší vlny) pálí, způsobuje zarudnutí kůže. **UVA** (delší vlny) proniká hlouběji, urychluje stárnutí kůže a prochází i oknem.",
+          "example": "B jako *burn* (spálení), A jako *aging* (stárnutí)."
+        },
+        {
+          "type": "term",
+          "term": "SPF",
+          "definition": "Sun Protection Factor, ochranný faktor. Udává ochranu hlavně proti UVB: kolikrát déle trvá, než namazaná kůže zčervená.",
+          "example": "SPF 30 = vysoká ochrana."
+        },
+        {
+          "type": "term",
+          "term": "Fototyp",
+          "definition": "Typ kůže podle toho, jak snadno se spálí a opálí. Rozlišuje se I–VI: I se spálí vždy a neopálí, VI se prakticky nespálí.",
+          "example": "Zrzka s pihami bývá fototyp I."
+        },
+        {
+          "type": "term",
+          "term": "Voděodolný",
+          "definition": "Přípravek, který si po koupání v testu zachová aspoň polovinu ochrany. Po koupání a utření se stejně musí znovu nanést.",
+          "example": "„Water resistant“ na obalu."
+        },
+        {
+          "type": "heading",
+          "text": "Jak poradit krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti **fototyp** a kde a jak dlouho bude klientka na slunci.",
+            "Doporuč přípravek s **UVA v kroužku** a SPF podle fototypu a místa (u moře a na horách spíš 30–50+).",
+            "Vysvětli **množství**: asi 2 mg/cm², pro celé tělo dospělého zhruba 6 čajových lžiček (asi 36 g).",
+            "Nanést před pobytem na slunci, nevynechat uši, krk, nárty.",
+            "**Opakovat** zhruba každé 2 hodiny a vždy po koupání, pocení a utření.",
+            "Poradit stín v době 11–15 h, klobouk, brýle s UV filtrem a oblečení."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Děti"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Kojenci do 6 měsíců nemají být na přímém slunci vůbec.",
+            "Pro malé děti přípravky s vysokou ochranou určené dětem, často s minerálními filtry.",
+            "Hlavní ochrana dětí je **stín a oblečení**, krém je doplněk."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka má fototyp II (snadno se spálí, opálí se málo) a jede na týden k moři. Co jí doporučíš?",
+          "answer": "Přípravek s **vysokou nebo velmi vysokou ochranou (SPF 30–50+) a UVA v kroužku**, dostatečné množství, opakování každé 2 hodiny a po koupání, stín v poledne, klobouk a tričko."
+        },
+        {
+          "type": "example",
+          "question": "Krém je SPF 50, ale klientka si na obličej nanese jen tenkou vrstvu (asi čtvrtinu doporučeného množství). Je chráněná na SPF 50?",
+          "answer": "**Není.** SPF se měří při 2 mg/cm². Při menším množství je ochrana výrazně nižší, a to víc, než by odpovídalo poměru. Proto nanášej dost a opakuj."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Spálení způsobuje hlavně záření ",
+                "after": ".",
+                "options": [
+                  "UVB",
+                  "UVA",
+                  "UVC"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Oknem auta prochází záření ",
+                "after": ".",
+                "options": [
+                  "UVA",
+                  "UVB",
+                  "UVC"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "SPF se měří při množství ",
+                "after": " na cm².",
+                "options": [
+                  "2 mg",
+                  "0,5 mg",
+                  "10 mg"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nanášení opakuj zhruba každé ",
+                "after": ".",
+                "options": [
+                  "2 hodiny",
+                  "4 hodiny",
+                  "6 hodin"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Voděodolný krém se po koupání nemusí znovu nanášet.",
+          "right": "Voděodolný krém si po koupání drží jen část ochrany. Po vykoupání a utření ho nanes znovu.",
+          "why": "Voda, písek a ručník krém z kůže odstraňují."
+        },
+        {
+          "type": "summary",
+          "text": "Poraď podle fototypu: UVA v kroužku, SPF 30–50+ u moře, dost krému (2 mg/cm²), opakovat každé 2 hodiny a po koupání. K tomu stín v poledne, klobouk, brýle a oblečení; kojenci na přímé slunce nepatří."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které záření způsobuje hlavně spálení kůže?",
+      "options": [
+        "UVB",
+        "UVA",
+        "UVC",
+        "infračervené"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Které záření prochází oknem a způsobuje hlavně stárnutí kůže?",
+      "options": [
+        "UVA",
+        "UVB",
+        "UVC",
+        "viditelné světlo"
+      ],
+      "answer": 0,
+      "hints": [
+        "Má delší vlnovou délku a proniká hlouběji do kůže."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Záření UVC ze Slunce pohltí ozonová vrstva.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proti čemu chrání hlavně hodnota SPF?",
+      "options": [
+        "proti UVB",
+        "proti UVA",
+        "proti infračervenému záření",
+        "proti modrému světlu z mobilu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik miligramů krému na cm² kůže se používá při měření SPF? (číslo)",
+      "answers": [
+        "2"
+      ],
+      "hints": [
+        "Je to víc, než si lidé běžně nanesou.",
+        "Je to malé celé číslo."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená logo „UVA“ v kroužku?",
+      "options": [
+        "ochrana proti UVA je aspoň třetina SPF",
+        "přípravek chrání jen proti UVA",
+        "přípravek je voděodolný",
+        "přípravek obsahuje jen minerální filtry"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj SPF s kategorií ochrany podle doporučení EU.",
+      "pairs": [
+        [
+          "SPF 10",
+          "nízká"
+        ],
+        [
+          "SPF 20",
+          "střední"
+        ],
+        [
+          "SPF 30",
+          "vysoká"
+        ],
+        [
+          "SPF 50+",
+          "velmi vysoká"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "SPF 30 propustí přibližně polovinu toho UVB záření, které propustí SPF 15.",
+      "answer": true,
+      "explanation": "SPF 15 propustí asi 7 %, SPF 30 asi 3 %."
+    },
+    {
+      "type": "choice",
+      "question": "Který z těchto UV filtrů je minerální (anorganický)?",
+      "options": [
+        "Zinc Oxide",
+        "Octocrylene",
+        "Butyl Methoxydibenzoylmethane",
+        "Ethylhexyl Salicylate"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kůže bez krému zčervená za 10 minut. Kolik minut by teoreticky chránil SPF 15? (číslo)",
+      "answers": [
+        "150"
+      ],
+      "explanation": "10 × 15 = 150 minut, ale jen v laboratoři; v praxi se nanášení opakuje.",
+      "hints": [
+        "SPF udává, kolikrát déle to trvá."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup rady klientce k ochraně před sluncem.",
+      "items": [
+        "zjistit fototyp a pobyt na slunci",
+        "vybrat SPF a UVA ochranu",
+        "vysvětlit množství a místa nanášení",
+        "připomenout opakované nanášení",
+        "poradit stín, klobouk a oblečení"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kojence do 6 měsíců stačí namazat SPF 50 a může být na přímém slunci.",
+      "answer": false,
+      "explanation": "Kojenci nemají být na přímém slunci vůbec; chrání je stín a oblečení."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi UVA a UVB zářením.",
+      "answer": "UVB má kratší vlnovou délku, působí hlavně v pokožce a způsobuje spálení. UVA proniká hlouběji do škáry, prochází oknem a způsobuje hlavně stárnutí kůže. Obě přispívají ke vzniku rakoviny kůže."
+    },
+    {
+      "type": "open",
+      "question": "Jaké zásady správného používání opalovacího přípravku klientce řekneš?",
+      "answer": "Vybrat SPF podle fototypu s UVA v kroužku, nanést dostatečné množství, nevynechat uši a krk, opakovat zhruba každé 2 hodiny a po koupání. K tomu stín kolem poledne, klobouk, brýle a oblečení."
+    }
+  ]
+}

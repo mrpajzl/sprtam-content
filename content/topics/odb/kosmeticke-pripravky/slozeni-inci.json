@@ -1,0 +1,442 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "slozeni-inci",
+  "title": "Složení a INCI",
+  "emoji": "🔬",
+  "explanations": [
+    {
+      "title": "Jako recept",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na balení sušenek je napsané, co v nich je: nejdřív mouka, pak cukr, nakonec trocha soli. Kosmetika má podobný seznam. Jen je psaný mezinárodní řečí, které se musíš naučit."
+        },
+        {
+          "type": "text",
+          "text": "Ze seznamu složek poznáš, z čeho je krém hlavně udělaný, jestli obsahuje parfém a jestli v něm není látka, na kterou je klientka alergická."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Složka",
+          "definition": "Každá látka, kterou výrobce do přípravku záměrně přidal.",
+          "example": "voda, glycerin, olej, parfém"
+        },
+        {
+          "type": "term",
+          "term": "INCI",
+          "definition": "Zkratka z angličtiny: International Nomenclature of Cosmetic Ingredients, **mezinárodní názvosloví kosmetických složek**. Každá složka má jeden jednotný název platný v celém světě.",
+          "example": "Voda = **Aqua**, bambucké máslo = **Butyrospermum Parkii Butter**."
+        },
+        {
+          "type": "term",
+          "term": "Hmotnostní podíl",
+          "definition": "Kolik procent z celkové hmotnosti přípravku tvoří jedna složka.",
+          "example": "Ve 100 g krému je 70 g vody → voda tvoří 70 %."
+        },
+        {
+          "type": "term",
+          "term": "Barvivo",
+          "definition": "Látka, která přípravek nebo kůži barví. V INCI se většinou píše jako číslo **CI** (Colour Index).",
+          "example": "CI 77891 = oxid titaničitý (bílý)."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla seznamu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Seznam začíná slovem **Ingredients** (složení).",
+            "Složky nad 1 % se píšou **od největšího hmotnostního podílu po nejmenší**.",
+            "Složky do 1 % smí být za nimi v **libovolném pořadí**.",
+            "Barviva smí být na konci v libovolném pořadí, jako čísla CI.",
+            "Vonné směsi se píšou slovem **Parfum** (vůně), u výrobků do úst **Aroma**.",
+            "Rostliny se píšou latinským názvem, např. *Aloe Barbadensis Leaf Juice*.",
+            "Složka ve formě nanomateriálu má za názvem **(nano)**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Krém obsahuje: glycerin 5 %, voda 72 %, olej 15 %, emulgátor 4 %, parfém 0,3 %. Jak budou první čtyři složky v INCI seřazené?",
+          "answer": "Seřadím podle procent sestupně: voda 72 % → olej 15 % → glycerin 5 % → emulgátor 4 %. Parfém (0,3 %) je pod 1 %, může být kdekoli za nimi. Tedy **Aqua, olej, Glycerin, emulgátor, …, Parfum**."
+        },
+        {
+          "type": "example",
+          "question": "Tělové mléko má na konci seznamu: „… Parfum, Linalool, Limonene“. Proč jsou tam linalool a limonen zvlášť?",
+          "answer": "Jsou to **vonné alergeny** z parfému. Když jich je víc než 0,001 % v neoplachovaném výrobku (u oplachovaného víc než 0,01 %), musí se jmenovat zvlášť, aby je alergik našel."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň do vět správné slovo."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Voda se v INCI píše ",
+                "after": ".",
+                "options": [
+                  "Aqua",
+                  "Water",
+                  "Voda"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Složky nad 1 % jsou seřazené od ",
+                "after": " podílu.",
+                "options": [
+                  "největšího",
+                  "nejmenšího",
+                  "abecedně"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vonná směs se v INCI píše ",
+                "after": ".",
+                "options": [
+                  "Parfum",
+                  "Aroma",
+                  "Odor"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Barviva se značí čísly ",
+                "after": ".",
+                "options": [
+                  "CI",
+                  "E",
+                  "INCI"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Aloe je v krému hodně, protože ho výrobce píše velkým písmem na přední straně.",
+          "right": "Množství poznáš podle **pořadí v INCI**. Když je aloe až za parfémem, je ho méně než 1 %.",
+          "why": "Přední strana obalu je reklama. Pořadí v seznamu složek je dané předpisem."
+        },
+        {
+          "type": "summary",
+          "text": "INCI je mezinárodní seznam složek. Složky nad 1 % jdou od největšího podílu, pod 1 % a barviva (CI) v libovolném pořadí na konci. Vůně = Parfum, vonné alergeny se nad limit jmenují zvlášť."
+        }
+      ]
+    },
+    {
+      "title": "Detektiv složení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klientka říká: „Na parfémy jsem alergická.“ Vezmeš do ruky krém a hledáš. Obal je z Francie, ale seznam složek přečteš stejně snadno jako český."
+        },
+        {
+          "type": "text",
+          "text": "Ze seznamu umíš vyčíst víc než reklama: čeho je v krému nejvíc, co v něm je jen pro vůni a jestli v něm není něco, co klientce vadí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "INCI",
+          "definition": "Jednotné mezinárodní názvy kosmetických složek. Seznam složek na obalu se v EU píše vždy v INCI.",
+          "example": "Glycerin, Aqua, Parfum."
+        },
+        {
+          "type": "term",
+          "term": "Sestupné pořadí",
+          "definition": "Od největšího množství po nejmenší.",
+          "example": "Aqua první = voda je hlavní složka."
+        },
+        {
+          "type": "term",
+          "term": "Vonný alergen",
+          "definition": "Vonná látka, na kterou část lidí reaguje alergií. Nad stanovený limit se musí v INCI jmenovat zvlášť, i když je součástí parfému.",
+          "example": "Limonene, Linalool, Citral, Geraniol."
+        },
+        {
+          "type": "term",
+          "term": "CI číslo",
+          "definition": "Číslo barviva podle Colour Indexu. V INCI nahrazuje název barviva.",
+          "example": "CI 77491 = červený oxid železa."
+        },
+        {
+          "type": "heading",
+          "text": "Jak číst seznam"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**První 3–5 složek** tvoří většinu přípravku (často voda, oleje, zvlhčující látky).",
+            "Kolem hranice 1 % bývají **konzervanty** (např. Phenoxyethanol, který smí být nejvýš 1 %).",
+            "Za touto hranicí jsou látky v malém množství, výtažky, vitaminy, parfém.",
+            "Na konci jsou **vonné alergeny** a **barviva** (CI)."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "INCI",
+            "česky"
+          ],
+          "rows": [
+            [
+              "Aqua",
+              "voda"
+            ],
+            [
+              "Glycerin",
+              "glycerol"
+            ],
+            [
+              "Parfum",
+              "parfém, vonná směs"
+            ],
+            [
+              "Butyrospermum Parkii Butter",
+              "bambucké máslo"
+            ],
+            [
+              "Tocopherol",
+              "vitamin E"
+            ],
+            [
+              "CI 77891",
+              "oxid titaničitý"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zkus vytřídit"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď názvy: je to vonná látka, nebo barvivo?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vonná látka",
+              "barvivo"
+            ],
+            "items": [
+              {
+                "text": "Parfum",
+                "group": 0
+              },
+              {
+                "text": "Limonene",
+                "group": 0
+              },
+              {
+                "text": "Linalool",
+                "group": 0
+              },
+              {
+                "text": "CI 77891",
+                "group": 1
+              },
+              {
+                "text": "CI 77491",
+                "group": 1
+              },
+              {
+                "text": "CI 77499",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka je alergická na parfémy. Krém má INCI: „Aqua, Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Phenoxyethanol, Tocopherol.“ Je vhodný?",
+          "answer": "Hledám Parfum, Aroma a vonné alergeny (Limonene, Linalool…). **Nejsou tam.** Cetearyl Alcohol je mastný alkohol (zahušťovadlo), ne vonná látka. Z pohledu parfémů je krém vhodný. Při jiné alergii je ale potřeba hledat dál."
+        },
+        {
+          "type": "example",
+          "question": "Sérum se chlubí „s vitaminem E“. INCI: „Aqua, Glycerin, Propanediol, Phenoxyethanol, Tocopherol, Parfum“. Kolik vitaminu E asi obsahuje?",
+          "answer": "Tocopherol (vitamin E) je **až za konzervantem Phenoxyethanol**, který smí být nejvýš 1 %. Vitaminu E je tedy **méně než 1 %**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Krém bez slova Parfum nemůže obsahovat žádnou vonnou látku.",
+          "right": "Vonné látky mohou být i ve výtažcích a esenciálních olejích (např. *Lavandula Angustifolia Oil*). Hledej i vonné alergeny jako Linalool.",
+          "why": "Esenciální oleje se v INCI píšou jejich rostlinným názvem, ne slovem Parfum."
+        },
+        {
+          "type": "summary",
+          "text": "Seznam INCI čti odshora: začátek = hlavní složky, kolem 1 % konzervanty, na konci látky v malém množství, vonné alergeny a barviva CI. Reklamě na přední straně nevěř bez kontroly složení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jak se v INCI píše voda?",
+      "answers": [
+        "Aqua"
+      ],
+      "explanation": "Voda se v INCI píše latinsky Aqua."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka INCI?",
+      "options": [
+        "mezinárodní názvosloví kosmetických složek",
+        "mezinárodní norma kvality kosmetiky",
+        "index nebezpečných chemických látek",
+        "evropský seznam schválených krémů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "V jakém pořadí se píšou složky nad 1 %?",
+      "options": [
+        "od největšího hmotnostního podílu po nejmenší",
+        "abecedně",
+        "podle účinnosti",
+        "jak chce výrobce"
+      ],
+      "answer": 0,
+      "explanation": "Sestupně podle hmotnosti v době přidání do přípravku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Složky, kterých je méně než 1 %, smí být v seznamu v libovolném pořadí.",
+      "answer": true,
+      "explanation": "Pod hranicí 1 % už pořadí nemusí odpovídat množství."
+    },
+    {
+      "type": "input",
+      "question": "Jakým slovem se v INCI označuje vonná směs (parfém) u kosmetiky na kůži?",
+      "answers": [
+        "Parfum"
+      ],
+      "hints": [
+        "Je to francouzské slovo.",
+        "U zubní pasty se místo něj píše Aroma."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je CI 77891?",
+      "options": [
+        "barvivo (oxid titaničitý)",
+        "konzervant",
+        "vonný alergen",
+        "UV filtr pro vlasy"
+      ],
+      "answer": 0,
+      "explanation": "Čísla CI označují barviva. 77891 je bílý oxid titaničitý.",
+      "hints": [
+        "Zkratka CI pochází z Colour Index."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Krém obsahuje: voda 65 %, olej 18 %, glycerin 6 %, emulgátor 3 %. Seřaď složky tak, jak budou v INCI.",
+      "items": [
+        "voda (Aqua)",
+        "olej",
+        "glycerin",
+        "emulgátor"
+      ],
+      "hints": [
+        "Pořadí určuje hmotnostní podíl."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj název v INCI s českým významem.",
+      "pairs": [
+        [
+          "Aqua",
+          "voda"
+        ],
+        [
+          "Tocopherol",
+          "vitamin E"
+        ],
+        [
+          "Parfum",
+          "vonná směs"
+        ],
+        [
+          "Butyrospermum Parkii Butter",
+          "bambucké máslo"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když je složka napsaná na přední straně obalu velkým písmem, musí jí být v přípravku nejvíc.",
+      "answer": false,
+      "explanation": "O množství vypovídá pořadí v INCI, ne reklama na obalu."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je v INCI zvlášť uvedený Linalool, i když je tam už Parfum?",
+      "options": [
+        "je to vonný alergen nad zákonným limitem",
+        "je to konzervant",
+        "výrobce ho chtěl zvýraznit",
+        "je to barvivo"
+      ],
+      "answer": 0,
+      "explanation": "Vonné alergeny nad 0,001 % (neoplachované) nebo 0,01 % (oplachované výrobky) se uvádějí jménem."
+    },
+    {
+      "type": "input",
+      "question": "Co se píše za názvem složky, která je v přípravku ve formě nanomateriálu? (bez závorek)",
+      "answers": [
+        "nano",
+        "(nano)"
+      ],
+      "explanation": "Například „Titanium Dioxide (nano)“."
+    },
+    {
+      "type": "open",
+      "question": "Jak ze seznamu INCI odhadneš, kolik je v krému nějaké složky?",
+      "answer": "Složky nad 1 % jsou seřazené od největšího podílu. Čím dřív složka je, tím je jí víc. Když je až za konzervantem, kterého bývá kolem 1 % a méně, je jí pravděpodobně méně než 1 %."
+    },
+    {
+      "type": "open",
+      "question": "Klientka je alergická na parfémy. Co v seznamu složek budeš hledat?",
+      "answer": "Slovo Parfum (u výrobků do úst Aroma), vonné alergeny jmenované zvlášť, jako Limonene, Linalool nebo Citral, a esenciální oleje uvedené latinským rostlinným názvem."
+    }
+  ]
+}

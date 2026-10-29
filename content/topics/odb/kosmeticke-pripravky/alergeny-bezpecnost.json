@@ -1,0 +1,356 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "alergeny-bezpecnost",
+  "title": "Alergeny a bezpečnost",
+  "emoji": "⚠️",
+  "explanations": [
+    {
+      "title": "Příběh klientky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klientka si v pondělí nechala obarvit řasy. Ve středu volá: víčka jí natekla, svědí a pálí. Co se stalo a dalo se tomu předejít?"
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička pracuje s přípravky na cizí kůži. Musí poznat rizika, předcházet jim a vědět, co dělat, když reakce přijde."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Alergen",
+          "definition": "Látka, na kterou imunitní systém (obranný systém těla) některých lidí přehnaně reaguje.",
+          "example": "vonné látky, některé konzervanty, PPD v barvách"
+        },
+        {
+          "type": "term",
+          "term": "Senzibilizace",
+          "definition": "Moment, kdy si tělo na alergen „zvykne“ jako na nepřítele. Při prvních kontaktech se nic neděje, ale od teď tělo při každém dalším kontaktu reaguje.",
+          "example": "Klientka barví řasy pět let bez potíží a pak najednou zareaguje."
+        },
+        {
+          "type": "term",
+          "term": "Dráždivá kontaktní dermatitida",
+          "definition": "Zánět kůže z přímého poškození látkou. Postihne každého, když je látky dost nebo působí dlouho. Objeví se rychle, hlavně v místě kontaktu.",
+          "example": "Zarudlé ruce po častém mytí bez rukavic."
+        },
+        {
+          "type": "term",
+          "term": "Alergická kontaktní dermatitida",
+          "definition": "Zánět kůže u člověka, který je na látku **alergický**. Objeví se obvykle **opožděně, za 1–3 dny**, svědí, kůže je zarudlá, oteklá, mohou být puchýřky. Stačí i malé množství.",
+          "example": "Oteklá víčka dva dny po barvení řas."
+        },
+        {
+          "type": "term",
+          "term": "PPD (p-fenylendiamin)",
+          "definition": "Barvicí látka v barvách na vlasy a na řasy a obočí. Patří k nejsilnějším alergenům v kosmetice.",
+          "example": "INCI: p-Phenylenediamine"
+        },
+        {
+          "type": "heading",
+          "text": "Jak se tomu dalo předejít"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Před ošetřením se klientky zeptej na alergie a reakce v minulosti a zapiš to do karty klientky.",
+            "U barvení řas a obočí udělej **test snášenlivosti** podle návodu výrobce, obvykle **48 hodin předem**: malé množství barvy za ucho nebo do loketní jamky.",
+            "Při zarudnutí, svědění nebo otoku v místě testu barvení neprováděj.",
+            "I když test vyšel dobře, při ošetření sleduj, jak klientka reaguje."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Když reakce přijde"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ošetření ihned přeruš.",
+            "Přípravek důkladně odstraň a opláchni velkým množstvím vlažné vody (u očí oplachuj oko vodou směrem od vnitřního koutku ven).",
+            "Nic dalšího na kůži nenanášej.",
+            "Při otoku, silném pálení nebo zasažení oka pošli klientku k lékaři; při dušnosti nebo otoku obličeje a rtů volej **155**.",
+            "Reakci zapiš do karty klientky a nahlas ji výrobci nebo dodavateli přípravku."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka barví obočí u tebe dva roky a test už nechce: „Vždyť mi to nikdy nevadilo.“ Co uděláš?",
+          "answer": "Alergie může vzniknout i po letech (**senzibilizace**). Vysvětlím jí to a test podle návodu výrobce udělám. Bez testu barvit nebudu."
+        },
+        {
+          "type": "example",
+          "question": "Kosmetička má po týdnu práce bez rukavic zarudlé, popraskané ruce. Alergie, nebo dráždění?",
+          "answer": "Reakce přišla postupně v místě častého kontaktu s vodou a čisticími přípravky, kterým je vystavená každý den. Spíš jde o **dráždivou kontaktní dermatitidu**. Pomáhají rukavice a ochranný krém. Když to nepřejde, ať navštíví kožního lékaře."
+        },
+        {
+          "type": "mistake",
+          "wrong": "„Hypoalergenní“ přípravek nemůže vyvolat alergii.",
+          "right": "„Hypoalergenní“ znamená jen, že výrobce omezil známé alergeny. Alergii vyvolat může.",
+          "why": "Alergický může být člověk téměř na cokoli. Žádný přípravek není 100% bezalergenní."
+        },
+        {
+          "type": "summary",
+          "text": "Alergická dermatitida přichází opožděně a stačí jí malé množství, dráždivá vzniká z přímého poškození. Před barvením řas a obočí test 48 hodin předem, při reakci přerušit, opláchnout, lékař, záznam."
+        }
+      ]
+    },
+    {
+      "title": "Bezpečnost v salonu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Salon je pracoviště s chemickými látkami, ostrými nástroji a cizí kůží. Bezpečnost tu chrání klientku i tebe."
+        },
+        {
+          "type": "text",
+          "text": "Projdeš nejčastější alergeny, ochranu kosmetičky a pravidla, podle kterých s přípravky zacházíš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Alergen",
+          "definition": "Látka, která u citlivých lidí vyvolá alergickou reakci.",
+          "example": "parfém"
+        },
+        {
+          "type": "term",
+          "term": "Kontaktní dermatitida",
+          "definition": "Zánět kůže v místě, kde se dotkla nějaké látky. Je **dráždivá** (látka kůži poškodí přímo) nebo **alergická** (u člověka s alergií, opožděně).",
+          "example": "Ekzém na zápěstí od kovové spony hodinek (nikl)."
+        },
+        {
+          "type": "term",
+          "term": "Test snášenlivosti",
+          "definition": "Nanesení malého množství přípravku na malé místo kůže a sledování reakce, obvykle 48 hodin, podle návodu výrobce.",
+          "example": "Barva na řasy za ucho dva dny před barvením."
+        },
+        {
+          "type": "term",
+          "term": "Bezpečnostní list",
+          "definition": "Dokument k profesionální chemické látce nebo směsi (např. peroxid, dezinfekce). Popisuje nebezpečí, ochranu, první pomoc a skladování.",
+          "example": "Bezpečnostní list dezinfekčního přípravku na nástroje."
+        },
+        {
+          "type": "term",
+          "term": "Osobní ochranné pracovní prostředky",
+          "definition": "Pomůcky, které chrání pracovníka: rukavice, ochranné brýle, rouška, pracovní oděv.",
+          "example": "Nitrilové rukavice při práci s barvou."
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější alergeny v kosmetice"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Vonné látky",
+                "back": "Parfum, Limonene, Linalool, Citral, esenciální oleje."
+              },
+              {
+                "front": "Konzervanty",
+                "back": "Methylisothiazolinone (MI), uvolňovače formaldehydu."
+              },
+              {
+                "front": "Barvy na vlasy, řasy a obočí",
+                "back": "PPD (p-Phenylenediamine), toluen-2,5-diamin."
+              },
+              {
+                "front": "Lepidla na řasy a nehty",
+                "back": "Akryláty a kyanoakryláty."
+              },
+              {
+                "front": "Kovy",
+                "back": "Nikl (např. v nástrojích, šperkách)."
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Zásady bezpečné práce"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Používej jen přípravky s úplným označením a v době použitelnosti.",
+            "Dodržuj návod výrobce: koncentraci, dobu působení, test snášenlivosti.",
+            "Při práci s barvami, peroxidem a dezinfekcí nos **rukavice**, při riziku stříknutí brýle.",
+            "Přípravky nabírej špachtlí, nepřelévej je do neoznačených nádob.",
+            "Skladuj v chladu, suchu a mimo světlo, chemikálie odděleně od potravin.",
+            "U každé klientky veď kartu: alergie, nemoci, léky, reakce.",
+            "Závažnou reakci po přípravku hlas výrobci nebo dodavateli; ten ji předává úřadům."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka píše do karty: „alergie na nikl a na parfémy“. Na co si dáš pozor?",
+          "answer": "Vyberu přípravky **bez parfému a vonných alergenů** (kontrola INCI). U nástrojů a doplňků si ověřím, jestli neobsahují nikl, a zabráním dlouhému kontaktu s kůží."
+        },
+        {
+          "type": "example",
+          "question": "Na profesionální dezinfekci je piktogram vykřičníku a v bezpečnostním listu „dráždí oči“. Jak s ní budeš pracovat?",
+          "answer": "Podle bezpečnostního listu: **rukavice a ochranné brýle**, ředění přesně podle návodu, větrání, skladování v originálním obalu mimo dosah klientů. Při zasažení oka vyplachovat vodou a postupovat podle první pomoci z listu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Přírodní přípravky s esenciálními oleji alergii nevyvolávají.",
+          "right": "Esenciální oleje obsahují vonné alergeny (např. linalool, limonen) a patří k častým příčinám alergie.",
+          "why": "„Přírodní“ neznamená bezpečné; alergen je alergen bez ohledu na původ."
+        },
+        {
+          "type": "summary",
+          "text": "Nejčastější alergeny: vonné látky, některé konzervanty, PPD v barvách, akryláty a nikl. Bezpečnost: karta klientky, test snášenlivosti, návod výrobce, rukavice a brýle, bezpečnostní listy a hlášení závažných reakcí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kdy se obvykle objeví alergická kontaktní dermatitida po kontaktu s alergenem?",
+      "options": [
+        "za 1–3 dny",
+        "okamžitě, do 1 minuty",
+        "za několik týdnů",
+        "nikdy, jen při prvním kontaktu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Alergie na barvu na řasy může vzniknout i u klientky, která barví řasy roky bez potíží.",
+      "answer": true,
+      "explanation": "Senzibilizace může nastat i po mnoha bezproblémových použitích."
+    },
+    {
+      "type": "input",
+      "question": "Kolik hodin předem se obvykle dělá test snášenlivosti před barvením řas? (číslo)",
+      "answers": [
+        "48"
+      ],
+      "hints": [
+        "Je to celé dva dny."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která látka je silný alergen v barvách na vlasy, řasy a obočí?",
+      "options": [
+        "p-fenylendiamin (PPD)",
+        "glycerin",
+        "oxid zinečnatý",
+        "panthenol"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "„Hypoalergenní“ přípravek nemůže nikdy vyvolat alergii.",
+      "answer": false
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup, když klientka během ošetření reaguje pálením a zarudnutím.",
+      "items": [
+        "ošetření přerušit",
+        "přípravek odstranit a opláchnout vodou",
+        "podle závažnosti poslat k lékaři",
+        "zapsat reakci do karty klientky"
+      ],
+      "hints": [
+        "Nejdřív zastav příčinu."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj skupinu alergenů s příkladem.",
+      "pairs": [
+        [
+          "vonné látky",
+          "Linalool"
+        ],
+        [
+          "konzervanty",
+          "Methylisothiazolinone"
+        ],
+        [
+          "barvy na řasy",
+          "p-Phenylenediamine"
+        ],
+        [
+          "kovy",
+          "nikl"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kosmetička má od častého mytí rukou zarudlou a popraskanou kůži. O co jde nejspíš?",
+      "options": [
+        "dráždivá kontaktní dermatitida",
+        "alergie na krém klientky",
+        "spálení od slunce",
+        "plísňová infekce"
+      ],
+      "answer": 0,
+      "hints": [
+        "Postihne každého, kdo je látce vystaven dost dlouho."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kde najdeš první pomoc a ochranné pomůcky pro práci s profesionální dezinfekcí?",
+      "options": [
+        "v bezpečnostním listu",
+        "v INCI",
+        "na účtence",
+        "v kartě klientky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Esenciální oleje jsou přírodní, a proto nemohou vyvolat alergii.",
+      "answer": false,
+      "explanation": "Obsahují vonné alergeny jako linalool a limonen."
+    },
+    {
+      "type": "input",
+      "question": "Jaké telefonní číslo voláš v ČR, když má klientka po přípravku otok obličeje a dušnost? (číslo)",
+      "answers": [
+        "155",
+        "112"
+      ],
+      "explanation": "155 je zdravotnická záchranná služba, 112 jednotné evropské číslo tísňového volání."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi dráždivou a alergickou kontaktní dermatitidou.",
+      "answer": "Dráždivá vzniká přímým poškozením kůže látkou, může postihnout každého a objeví se rychle v místě kontaktu. Alergická postihne jen člověka s alergií na látku, stačí malé množství a objeví se opožděně, obvykle za 1–3 dny."
+    },
+    {
+      "type": "open",
+      "question": "Jak předcházíš alergickým reakcím u klientek v salonu?",
+      "answer": "Vedu kartu klientky s alergiemi, kontroluji složení v INCI, dělám test snášenlivosti 48 hodin před barvením podle návodu výrobce, dodržuji návod a hygienu a sleduji klientku během ošetření."
+    }
+  ]
+}

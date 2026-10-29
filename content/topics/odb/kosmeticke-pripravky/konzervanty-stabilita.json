@@ -1,0 +1,425 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "konzervanty-stabilita",
+  "title": "Konzervanty a stabilita",
+  "emoji": "🧫",
+  "explanations": [
+    {
+      "title": "Krém v teple",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nech v létě v kuchyni otevřené mléko. Za dva dny zkysne a zapáchá. Krém obsahuje vodu a živiny stejně jako mléko. Proč se nezkazí za týden?"
+        },
+        {
+          "type": "text",
+          "text": "Krém chrání **konzervanty** a správné skladování. V salonu sahá do kelímku víc rukou, proto tam na hygieně a skladování záleží ještě víc."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mikroorganismy",
+          "definition": "Drobné živé organismy viditelné jen mikroskopem: bakterie, kvasinky a plísně. Rostou hlavně tam, kde je voda.",
+          "example": "Plíseň na starém chlebu."
+        },
+        {
+          "type": "term",
+          "term": "Kontaminace",
+          "definition": "Znečištění přípravku mikroorganismy nebo nečistotami.",
+          "example": "Prst ponořený do kelímku krému."
+        },
+        {
+          "type": "term",
+          "term": "Konzervant",
+          "definition": "Látka, která brání růstu mikroorganismů v přípravku. V EU se smí použít jen konzervanty ze **seznamu povolených** (příloha V nařízení 1223/2009) a v povoleném množství.",
+          "example": "Phenoxyethanol (nejvýš 1 %), Sodium Benzoate, Potassium Sorbate."
+        },
+        {
+          "type": "term",
+          "term": "Stabilita",
+          "definition": "Schopnost přípravku zůstat po celou dobu použitelnosti stejný: stejná barva, vůně, konzistence, účinnost i bezpečnost.",
+          "example": "Stabilní krém se po roce nerozdělí a nezmění vůni."
+        },
+        {
+          "type": "heading",
+          "text": "Co přípravek kazí"
+        },
+        {
+          "type": "table",
+          "head": [
+            "příčina",
+            "co se stane",
+            "jak se brání"
+          ],
+          "rows": [
+            [
+              "mikroorganismy",
+              "zápach, plíseň, změna barvy, riziko infekce",
+              "konzervanty, hygienické nabírání"
+            ],
+            [
+              "kyslík",
+              "oleje žluknou, vitamin C zhnědne",
+              "antioxidanty (vitamin E), uzavřené obaly"
+            ],
+            [
+              "světlo",
+              "rozklad účinných látek, změna barvy",
+              "neprůhledné nebo tmavé obaly"
+            ],
+            [
+              "teplo a mráz",
+              "rozdělení emulze, změna konzistence",
+              "skladování v chladu, ne na topení ani v autě"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se stabilita zkouší"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Zátěžový test konzervace** (challenge test): do přípravku se schválně přidají mikroorganismy a sleduje se, jestli je konzervant zničí.",
+            "**Test stability**: vzorky se nechají v teple, chladu, na světle a střídavě zmrazují a rozmrazují.",
+            "Sleduje se vzhled, vůně, pH, konzistence a rozdělení emulze.",
+            "Podle výsledků výrobce určí trvanlivost a dobu po otevření (PAO)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Krém má PAO 12M. Kolegyně ho v salonu otevřela v lednu, teď je prosinec, krém voní normálně. Použiješ ho?",
+          "answer": "Od ledna do prosince uplynulo 11 měsíců, krém je ještě v době po otevření. Když nezměnil vůni, barvu ani konzistenci, **použít ho lze**. Za měsíc ho ale vyřadíš."
+        },
+        {
+          "type": "example",
+          "question": "Tělový olej bez vody nemá v INCI žádný konzervant. Je to chyba?",
+          "answer": "Většinou ne. Mikroorganismy potřebují **vodu**; bezvodé přípravky (oleje, balzámy, pudry) jsou proti nim odolnější. Olej ale musí chránit **antioxidant** (Tocopherol), jinak žlukne."
+        },
+        {
+          "type": "heading",
+          "text": "Hygiena v salonu"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "správně",
+              "špatně"
+            ],
+            "items": [
+              {
+                "text": "nabírat krém čistou špachtlí",
+                "group": 0
+              },
+              {
+                "text": "na obal napsat datum otevření",
+                "group": 0
+              },
+              {
+                "text": "skladovat v chladu a ve stínu",
+                "group": 0
+              },
+              {
+                "text": "nabírat krém prstem",
+                "group": 1
+              },
+              {
+                "text": "vracet nepoužitý krém zpět do kelímku",
+                "group": 1
+              },
+              {
+                "text": "nechat kelímek otevřený během ošetření",
+                "group": 1
+              },
+              {
+                "text": "ředit krém vodou z kohoutku",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "„Bez konzervantů“ znamená, že je přípravek bezpečnější a vydrží déle.",
+          "right": "Přípravek s vodou bez konzervace se zkazí rychle. Výrobky „bez konzervantů“ se chrání jinak (airless obal, malé balení, látky s vedlejším konzervačním účinkem) a často mají kratší trvanlivost.",
+          "why": "Zkažený krém plný mikroorganismů je pro kůži mnohem nebezpečnější než povolený konzervant."
+        },
+        {
+          "type": "summary",
+          "text": "Krém kazí mikroorganismy, kyslík, světlo a teplota. Konzervanty z povoleného seznamu brání mikrobům, antioxidanty žluknutí. V salonu nabírej špachtlí, piš datum otevření a skladuj v chladu a ve stínu."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a čísla",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na sociálních sítích slyšíš: „Parabeny jsou jed!“ Klientka se tě zeptá, jestli je to pravda. Potřebuješ znát pravidla, ne mýty."
+        },
+        {
+          "type": "text",
+          "text": "Konzervanty a stabilita přípravků mají v EU jasná pravidla. Ta ti pomůžou odpovědět věcně a přípravky v salonu správně používat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mikroorganismy",
+          "definition": "Bakterie, kvasinky a plísně. Pouhým okem je nevidíš, ale v přípravku s vodou se rychle množí.",
+          "example": "Zlatý stafylokok, plíseň."
+        },
+        {
+          "type": "term",
+          "term": "Konzervant",
+          "definition": "Látka, jejímž hlavním úkolem je bránit růstu mikroorganismů v přípravku.",
+          "example": "Phenoxyethanol, Benzyl Alcohol, Sodium Benzoate."
+        },
+        {
+          "type": "term",
+          "term": "Příloha V",
+          "definition": "Seznam konzervantů, které EU v kosmetice **povoluje**, s nejvyšší povolenou koncentrací a podmínkami. Jiné konzervanty se použít nesmí.",
+          "example": "Phenoxyethanol smí být nejvýš 1 %."
+        },
+        {
+          "type": "term",
+          "term": "Parabeny",
+          "definition": "Skupina konzervantů (estery kyseliny p-hydroxybenzoové). Některé jsou povolené s limity, jiné EU zakázala.",
+          "example": "Povolený: Methylparaben. Zakázaný od roku 2014: Isobutylparaben."
+        },
+        {
+          "type": "term",
+          "term": "Stabilita",
+          "definition": "Přípravek si po celou dobu použitelnosti udrží vzhled, vůni, konzistenci, účinek a bezpečnost.",
+          "example": "Krém, který se po půl roce rozdělí, není stabilní."
+        },
+        {
+          "type": "heading",
+          "text": "Fakta o konzervantech"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Konzervanty se v EU posuzují vědecky a smí jen v povoleném množství.",
+            "**Methylparaben** a **ethylparaben** jsou povolené. Pět dalších parabenů (isopropyl-, isobutyl-, fenyl-, benzyl- a pentylparaben) EU zakázala v roce 2014, protože o nich chybělo dost údajů o bezpečnosti.",
+            "**Methylisothiazolinone (MI)** způsoboval mnoho alergií, proto je od roku 2017 zakázaný v neoplachovaných přípravcích (krémy).",
+            "Konzervanty mohou u citlivých lidí vyvolat alergii, ale zkažený přípravek je riziko infekce."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co přípravek kazí"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Krém zapáchá a má tečky",
+                "back": "Mikroorganismy → vyřadit."
+              },
+              {
+                "front": "Olej voní jako starý ořech",
+                "back": "Žluknutí kyslíkem → vyřadit, příště antioxidant a uzavřený obal."
+              },
+              {
+                "front": "Sérum s vitaminem C zhnědlo",
+                "back": "Oxidace vzduchem a světlem → účinek ztracen."
+              },
+              {
+                "front": "Na krému je vrstva oleje",
+                "back": "Rozdělení emulze teplem nebo mrazem → vyřadit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Postup při kontrole zásob"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zkontroluj datum minimální trvanlivosti nebo datum otevření a dobu po otevření (PAO).",
+            "Podívej se na barvu, konzistenci a jestli se emulze nerozdělila.",
+            "Přičichni: změna vůně nebo žluklý zápach = vyřadit.",
+            "Vyřazené přípravky zlikviduj podle pravidel, nedolévej je do nových.",
+            "Zásoby skladuj v chladu, suchu a ve tmě, otevřené výrobky dobře zavřené."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Krém vyrobený 1/2025 s ⌛ 06/2027 otevřeš 3/2027. PAO na obalu není. Dokdy ho použiješ?",
+          "answer": "Rozhoduje **datum minimální trvanlivosti** – nejpozději do června 2027, i když byl otevřen až v březnu."
+        },
+        {
+          "type": "example",
+          "question": "Klientka: „Parabeny jsou zakázané, a vy máte krém s Methylparabenem!“ Co odpovíš?",
+          "answer": "Zakázáno je **pět konkrétních** parabenů. **Methylparaben je v EU povolený** v omezeném množství a byl vědecky posouzený jako bezpečný. Pokud klientka parabeny přesto nechce, nabídnu jiný přípravek."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Všechny parabeny jsou v EU zakázané.",
+          "right": "Zakázáno je pět parabenů. Methyl-, ethyl-, propyl- a butylparaben jsou povolené s limity.",
+          "why": "Každý konzervant se posuzuje zvlášť; zákaz jedné látky neplatí pro celou skupinu."
+        },
+        {
+          "type": "summary",
+          "text": "Smí se jen konzervanty z přílohy V v povoleném množství. Některé parabeny jsou povolené, pět jich je zakázaných, MI je zakázaný v neoplachovaných výrobcích. Kontroluj trvanlivost, vzhled a vůni přípravků."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "K čemu slouží konzervant v krému?",
+      "options": [
+        "brání růstu mikroorganismů",
+        "brání žluknutí olejů",
+        "drží vodu a olej pohromadě",
+        "zvyšuje SPF"
+      ],
+      "answer": 0,
+      "explanation": "Žluknutí brání antioxidant, vodu a olej drží emulgátor."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přípravky, které obsahují vodu, jsou na mikroorganismy citlivější než bezvodé oleje.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Která příloha nařízení 1223/2009 obsahuje seznam povolených konzervantů?",
+      "options": [
+        "příloha V",
+        "příloha II",
+        "příloha IV",
+        "příloha VI"
+      ],
+      "answer": 0,
+      "explanation": "II = zakázané látky, III = omezené, IV = barviva, V = konzervanty, VI = UV filtry.",
+      "hints": [
+        "Přílohy jdou za sebou: zakázané, omezené, barviva, …"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik procent smí být nejvýš v přípravku konzervantu phenoxyethanol? (číslo)",
+      "answers": [
+        "1"
+      ],
+      "hints": [
+        "Je to celé číslo menší než 5."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Methylparaben je v EU v kosmetice zakázaný.",
+      "answer": false,
+      "explanation": "Methylparaben je povolený s limitem. Zakázáno je pět jiných parabenů."
+    },
+    {
+      "type": "choice",
+      "question": "Olej v krému zžlukl. Co tomu mělo zabránit?",
+      "options": [
+        "antioxidant (např. tokoferol)",
+        "konzervant",
+        "emulgátor",
+        "parfém"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj projev zkažení s příčinou.",
+      "pairs": [
+        [
+          "žluklý zápach oleje",
+          "kyslík"
+        ],
+        [
+          "plíseň a tečky",
+          "mikroorganismy"
+        ],
+        [
+          "vrstva oleje na krému",
+          "teplo nebo mráz"
+        ],
+        [
+          "vybledlá barva",
+          "světlo"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v salonu správně nabírá krém z kelímku?",
+      "options": [
+        "čistou špachtlí",
+        "čistým prstem v rukavici",
+        "prstem, když jsou ruce umyté",
+        "štětcem, kterým se pak nanáší na klientku a vrací do kelímku"
+      ],
+      "answer": 0,
+      "hints": [
+        "Nic, co se dotklo kůže, se nesmí vrátit do kelímku."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky kontroly zásob přípravků.",
+      "items": [
+        "zkontrolovat datum trvanlivosti nebo PAO",
+        "prohlédnout barvu a konzistenci",
+        "přičichnout",
+        "vyřadit zkažené přípravky",
+        "uložit zbytek v chladu a tmě"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Methylisothiazolinone (MI) je zakázaný v neoplachovaných přípravcích, protože často vyvolával alergie.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co je zátěžový test konzervace?",
+      "options": [
+        "do přípravku se přidají mikroorganismy a sleduje se, jestli je konzervant zničí",
+        "přípravek se nanáší dobrovolníkům 30 dní",
+        "přípravek se zahřeje na 100 °C",
+        "měří se, kolik je v přípravku vody"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jaké vlivy mohou kosmetický přípravek zkazit a jak se proti nim chrání?",
+      "answer": "Mikroorganismy (konzervanty, hygienické nabírání), kyslík (antioxidanty, uzavřený obal), světlo (tmavé obaly) a teplo nebo mráz (skladování v chladu, ne na mrazu)."
+    },
+    {
+      "type": "open",
+      "question": "Klientka tvrdí, že všechny parabeny jsou jed. Co jí věcně odpovíš?",
+      "answer": "Konzervanty v EU posuzují vědci a smí jen povolené v daném množství. Pět parabenů je zakázaných, ale methylparaben a ethylparaben jsou povolené. Bez konzervace by se krém s vodou rychle zkazil, což je větší riziko."
+    }
+  ]
+}
