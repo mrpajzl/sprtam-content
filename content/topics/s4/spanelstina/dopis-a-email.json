@@ -1,0 +1,505 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "dopis-a-email",
+  "title": "Formální a neformální dopis a e-mail",
+  "emoji": "✉️",
+  "explanations": [
+    {
+      "title": "Stavba dopisu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jednou napíšeš kamarádovi z výměnného pobytu, jindy škole v Madridu kvůli kurzu nebo firmě kvůli brigádě. Každý dopis má jiný tón. U maturity z cizího jazyka se psaní dopisu nebo e-mailu objevuje skoro vždy."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: stavba je pořád stejná a fráze se dají naučit předem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Formální dopis",
+          "definition": "Dopis neznámé osobě, úřadu nebo firmě. Píše se ve **vykání** (*usted*), zdvořile a věcně.",
+          "example": "Estimada señora García: Le escribo para…"
+        },
+        {
+          "type": "term",
+          "term": "Neformální dopis",
+          "definition": "Dopis kamarádovi nebo rodině. **Tykání** (*tú*), volnější jazyk.",
+          "example": "¡Hola, Marta! ¿Qué tal estás?"
+        },
+        {
+          "type": "term",
+          "term": "Oslovení",
+          "definition": "Pozdrav na začátku dopisu. Ve formálním španělském dopise za ním píšeš **dvojtečku**, ne čárku.",
+          "example": "Estimado señor López:"
+        },
+        {
+          "type": "term",
+          "term": "Závěrečná formule",
+          "definition": "Zdvořilé rozloučení před podpisem.",
+          "example": "Atentamente, / Un abrazo,"
+        },
+        {
+          "type": "heading",
+          "text": "Stavba"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Místo a datum (formálně): *Praga, 29 de octubre de 2026*. Měsíce se píší **malým písmenem**.",
+            "Oslovení: formálně *Estimado/a señor/a + příjmení:*, neformálně *Querido/a + jméno:* nebo *¡Hola, Ana!*",
+            "Úvod: proč píšeš.",
+            "Hlavní část: 1–2 odstavce, každý o jedné věci.",
+            "Závěr: co čekáš, poděkování.",
+            "Rozloučení a podpis."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Fráze"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Část",
+            "Formálně (usted)",
+            "Neformálně (tú)"
+          ],
+          "rows": [
+            [
+              "oslovení",
+              "Estimado señor Ruiz: / Estimada señora: / Estimados señores:",
+              "Querido Pablo: / Querida Ana: / ¡Hola, Lucía!"
+            ],
+            [
+              "úvod",
+              "Le escribo para… / Me pongo en contacto con usted para…",
+              "¿Qué tal estás? / Te escribo para contarte que…"
+            ],
+            [
+              "prosba",
+              "Le agradecería que me enviara… / ¿Podría informarme sobre…?",
+              "¿Me puedes decir…? / ¿Por qué no…?"
+            ],
+            [
+              "závěr",
+              "Quedo a la espera de su respuesta. / Muchas gracias de antemano.",
+              "¡Escríbeme pronto! / Tengo muchas ganas de verte."
+            ],
+            [
+              "rozloučení",
+              "Atentamente, / Un cordial saludo, / Saludos cordiales,",
+              "Un abrazo, / Besos, / Hasta pronto,"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Začni formální e-mail jazykové škole, kde chceš informace o kurzu.",
+          "answer": "**Estimados señores:** Me pongo en contacto con ustedes para pedir información sobre el curso de verano de español. – Vážení, obracím se na vás s žádostí o informace o letním kurzu španělštiny."
+        },
+        {
+          "type": "example",
+          "question": "Ukonči formální dopis.",
+          "answer": "**Quedo a la espera de su respuesta. Atentamente, Jana Nováková** – Těším se na vaši odpověď. S pozdravem, Jana Nováková."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Estimado señor López, le escribo para…",
+          "right": "Estimado señor López: Le escribo para…",
+          "why": "Ve španělském dopise za oslovením stojí dvojtečka a další řádek začíná velkým písmenem."
+        },
+        {
+          "type": "summary",
+          "text": "Formálně: **usted**, *Estimado/a…:*, *Le escribo para…*, *Atentamente*. Neformálně: **tú**, *Querido/a…:* / *¡Hola…!*, *Te escribo para…*, *Un abrazo*. Datum: *29 de octubre de 2026*."
+        }
+      ]
+    },
+    {
+      "title": "Dva e-maily",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tomáš jede v létě do Španělska. Píše dva e-maily: jeden kamarádce Carmen, u které bude bydlet, a druhý jazykové škole. Obsah je podobný, ale tón úplně jiný."
+        },
+        {
+          "type": "text",
+          "text": "Porovnej je větu po větě. Všimni si oslovení, slovesných tvarů (*tú* × *usted*) a rozloučení."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předmět (asunto)",
+          "definition": "Krátký nadpis e-mailu, který říká, o co jde.",
+          "example": "Asunto: Información sobre el curso de verano"
+        },
+        {
+          "type": "term",
+          "term": "Vykání (usted)",
+          "definition": "Zdvořilá forma. Sloveso je ve **3. osobě** jednotného čísla, zájmena *le, su*.",
+          "example": "¿Podría usted enviarme…? – Mohl byste mi poslat…?"
+        },
+        {
+          "type": "term",
+          "term": "Registr",
+          "definition": "Úroveň jazyka podle situace: formální (úřední, zdvořilý) nebo neformální (kamarádský).",
+          "example": "Atentamente (formální) × Besos (neformální)"
+        },
+        {
+          "type": "heading",
+          "text": "E-mail kamarádce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Asunto: ¡Llego en julio!",
+              "Předmět: Přijedu v červenci!"
+            ],
+            [
+              "¡Hola, Carmen!",
+              "Ahoj, Carmen!"
+            ],
+            [
+              "¿Qué tal estás? **Te escribo para contarte** que ya tengo los billetes.",
+              "Jak se máš? Píšu ti, abych ti řekl, že už mám lístky."
+            ],
+            [
+              "Llego el 3 de julio a las 18:00. **¿Puedes** ir a buscarme a la estación?",
+              "Přijedu 3. července v 18:00. Můžeš pro mě přijít na nádraží?"
+            ],
+            [
+              "¡Tengo muchas ganas de verte! **Un abrazo**, Tomáš",
+              "Moc se na tebe těším! Objímám, Tomáš"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "E-mail škole"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Asunto: Información sobre el curso de verano",
+              "Předmět: Informace o letním kurzu"
+            ],
+            [
+              "**Estimados señores:**",
+              "Vážení,"
+            ],
+            [
+              "**Me pongo en contacto con ustedes para** pedir información sobre el curso de julio.",
+              "Obracím se na vás s žádostí o informace o červencovém kurzu."
+            ],
+            [
+              "**Les agradecería que me informaran** sobre el precio y el horario.",
+              "Byl bych vám vděčný, kdybyste mi sdělili cenu a rozvrh."
+            ],
+            [
+              "**Quedo a la espera de su respuesta. Atentamente,** Tomáš Novák",
+              "Těším se na vaši odpověď. S pozdravem, Tomáš Novák"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Je fráze formální, nebo neformální?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "formální",
+              "neformální"
+            ],
+            "items": [
+              {
+                "text": "Estimada señora:",
+                "group": 0
+              },
+              {
+                "text": "Atentamente,",
+                "group": 0
+              },
+              {
+                "text": "Le escribo para…",
+                "group": 0
+              },
+              {
+                "text": "Quedo a la espera de su respuesta.",
+                "group": 0
+              },
+              {
+                "text": "¡Hola, Pablo!",
+                "group": 1
+              },
+              {
+                "text": "Un abrazo,",
+                "group": 1
+              },
+              {
+                "text": "¿Qué tal estás?",
+                "group": 1
+              },
+              {
+                "text": "¡Escríbeme pronto!",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Estimado señor Gómez",
+                "after": "",
+                "options": [
+                  ":",
+                  ",",
+                  "!"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "escribo para solicitar el puesto de monitor. (formálně)",
+                "options": [
+                  "Le",
+                  "Te"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "¿Podría",
+                "after": "más información? (formálně)",
+                "options": [
+                  "enviarme",
+                  "envíame",
+                  "enviarte"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Praga, 3 de",
+                "after": "de 2026",
+                "options": [
+                  "mayo",
+                  "Mayo",
+                  "mayo,"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přepiš neformální větu formálně: ¿Me puedes mandar el horario?",
+          "answer": "*tú* → *usted*, zdvořile condicional: **¿Podría enviarme el horario, por favor?**"
+        },
+        {
+          "type": "example",
+          "question": "Kterou formuli použiješ na konci dopisu řediteli školy?",
+          "answer": "Formální: **Atentamente,** nebo **Un cordial saludo,** a pod tím celé jméno. Ne *Besos*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Estimado señor López: ¿Qué tal estás? Te escribo…",
+          "right": "Estimado señor López: Le escribo…",
+          "why": "Ve formálním dopise drž vykání celou dobu: *usted, le, su*, ne *tú, te, tu*."
+        },
+        {
+          "type": "text",
+          "text": "V Latinské Americe se ve formálních dopisech často používá oslovení *A quien corresponda:* (Komu se to týká) a pozdrav *Saludos cordiales*."
+        },
+        {
+          "type": "summary",
+          "text": "Rozhodni registr a drž ho celý dopis: **formálně usted** (*Estimado/a…:, Le escribo para…, Atentamente*), **neformálně tú** (*¡Hola…!, Te escribo para…, Un abrazo*)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak oslovíš ve formálním dopise paní Garcíovou?",
+      "options": [
+        "Estimada señora García:",
+        "Querida señora García,",
+        "¡Hola, señora García!",
+        "Estimado señora García:"
+      ],
+      "answer": 0,
+      "explanation": "Formální oslovení: *Estimada* (ženský rod) + dvojtečka."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nejčastěji rozloučíš ve formálním dopise?",
+      "options": [
+        "Atentamente,",
+        "Un abrazo,",
+        "Besos,",
+        "Hasta luego,"
+      ],
+      "answer": 0,
+      "explanation": "*Atentamente* = s pozdravem (formálně)."
+    },
+    {
+      "type": "choice",
+      "question": "Co se ve španělském formálním dopise píše za oslovením?",
+      "options": [
+        "dvojtečka",
+        "čárka",
+        "vykřičník"
+      ],
+      "answer": 0,
+      "explanation": "*Estimado señor López:*"
+    },
+    {
+      "type": "input",
+      "question": "Doplň formální úvod: ___ escribo para pedir información. (usted)",
+      "answers": [
+        "le"
+      ],
+      "explanation": "Vykání → *le* (vám)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň neformální úvod: ___ escribo para contarte una noticia.",
+      "answers": [
+        "te"
+      ],
+      "explanation": "Tykání → *te*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve španělském datu se měsíce píšou velkým písmenem: 3 de Mayo de 2026.",
+      "answer": false,
+      "explanation": "Měsíce se píší malým písmenem: *3 de mayo de 2026*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Quedo a la espera de su respuesta.“ je formální fráze.",
+      "answer": true,
+      "explanation": "Používá vykání (*su*) a hodí se na konec formálního dopisu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj formální frázi s neformální, která znamená podobně.",
+      "pairs": [
+        [
+          "Estimado Pablo:",
+          "¡Hola, Pablo!"
+        ],
+        [
+          "Le escribo para…",
+          "Te escribo para…"
+        ],
+        [
+          "Atentamente,",
+          "Un abrazo,"
+        ],
+        [
+          "¿Podría enviarme…?",
+          "¿Me mandas…?"
+        ]
+      ],
+      "explanation": "Formálně *usted*, neformálně *tú*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta se hodí do e-mailu firmě?",
+      "options": [
+        "Les agradecería que me enviaran más información.",
+        "¡Mandadme más info!",
+        "¿Me mandas más información, porfa?"
+      ],
+      "answer": 0,
+      "explanation": "Zdvořilý condicional a vykání *ustedes*."
+    },
+    {
+      "type": "choice",
+      "question": "Co je „asunto“ v e-mailu?",
+      "options": [
+        "předmět",
+        "podpis",
+        "příloha"
+      ],
+      "answer": 0,
+      "explanation": "*Asunto* = předmět e-mailu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části formálního dopisu.",
+      "items": [
+        "Praga, 29 de octubre de 2026",
+        "Estimados señores:",
+        "Me pongo en contacto con ustedes para…",
+        "Quedo a la espera de su respuesta.",
+        "Atentamente,"
+      ],
+      "explanation": "Datum, oslovení, úvod, závěr, rozloučení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve formálním dopise je v pořádku střídat usted a tú.",
+      "answer": false,
+      "explanation": "Registr se drží celý dopis: buď vykání, nebo tykání."
+    },
+    {
+      "type": "choice",
+      "question": "Které oslovení se často používá ve formálních dopisech v Latinské Americe, když neznáš adresáta?",
+      "options": [
+        "A quien corresponda:",
+        "¡Hola a todos!",
+        "Querido amigo:"
+      ],
+      "answer": 0,
+      "explanation": "*A quien corresponda* = komu se to týká."
+    },
+    {
+      "type": "open",
+      "question": "Jak se liší formální a neformální dopis ve španělštině? Uveď oslovení, úvodní frázi a rozloučení pro oba.",
+      "answer": "Formální: vykání, *Estimado/a señor/a…:*, *Le escribo para…*, *Atentamente* nebo *Un cordial saludo*. Neformální: tykání, *Querido/a…:* nebo *¡Hola…!*, *Te escribo para…*, *Un abrazo* nebo *Besos*."
+    },
+    {
+      "type": "open",
+      "question": "Napiš krátký formální e-mail (3–4 věty) jazykové škole, kde se ptáš na cenu kurzu.",
+      "answer": "Např.: *Estimados señores: Me pongo en contacto con ustedes para pedir información sobre el curso de español de agosto. ¿Podrían informarme sobre el precio y el alojamiento? Quedo a la espera de su respuesta. Atentamente, Jana Nováková*"
+    }
+  ]
+}

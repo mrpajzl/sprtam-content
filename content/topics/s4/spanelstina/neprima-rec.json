@@ -1,0 +1,477 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "neprima-rec",
+  "title": "Nepřímá řeč a posun časů",
+  "emoji": "🗣️",
+  "explanations": [
+    {
+      "title": "Pravidla posunu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kamarádka ti včera řekla: „Jsem unavená.“ Dnes to přeposíláš: „Řekla, že **byla** unavená.“ Ve španělštině (stejně jako v angličtině) se při převyprávění **posouvají časy** o krok do minulosti. Čeština to nedělá, proto je to pro nás chyták."
+        },
+        {
+          "type": "text",
+          "text": "Nepřímou řeč potřebuješ, kdykoli předáváš zprávu, vyprávíš rozhovor nebo píšeš sloh."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přímá řeč",
+          "definition": "Přesná slova mluvčího v uvozovkách.",
+          "example": "Ana dijo: «Estoy cansada.»"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá řeč",
+          "definition": "Převyprávění toho, co někdo řekl, bez uvozovek, s *que*.",
+          "example": "Ana dijo que estaba cansada."
+        },
+        {
+          "type": "term",
+          "term": "Uvozovací sloveso",
+          "definition": "Sloveso, kterým nepřímou řeč uvedeš: *decir, explicar, contar, preguntar, contestar*.",
+          "example": "Me contó que… – Vyprávěl mi, že…"
+        },
+        {
+          "type": "term",
+          "term": "Posun časů",
+          "definition": "Když je uvozovací sloveso v minulosti (*dijo*), čas v nepřímé řeči se posune o krok do minulosti.",
+          "example": "«Vivo aquí» → Dijo que vivía allí."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy se posouvá"
+        },
+        {
+          "type": "text",
+          "text": "Je-li uvozovací sloveso v přítomnosti (*dice que*), čas se **nemění**: *Dice que está cansada.* Posun nastává po minulém slovese: *dijo que, explicó que, contó que*."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka posunu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Přímá řeč",
+            "→ Nepřímá řeč (po dijo que)",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "presente",
+              "imperfecto",
+              "«Tengo hambre.» → Dijo que **tenía** hambre."
+            ],
+            [
+              "pretérito perfecto",
+              "pluscuamperfecto",
+              "«He terminado.» → Dijo que **había terminado**."
+            ],
+            [
+              "indefinido",
+              "pluscuamperfecto (nebo beze změny)",
+              "«Llegué ayer.» → Dijo que **había llegado** el día anterior."
+            ],
+            [
+              "futuro",
+              "condicional",
+              "«Vendré mañana.» → Dijo que **vendría** al día siguiente."
+            ],
+            [
+              "imperfecto",
+              "beze změny",
+              "«Era tarde.» → Dijo que **era** tarde."
+            ],
+            [
+              "rozkaz",
+              "que + imperfecto de subjuntivo",
+              "«¡Estudia!» → Me dijo que **estudiara**."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Mění se i další slova"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Přímá řeč",
+            "Nepřímá řeč"
+          ],
+          "rows": [
+            [
+              "hoy",
+              "aquel día / ese día"
+            ],
+            [
+              "mañana",
+              "al día siguiente"
+            ],
+            [
+              "ayer",
+              "el día anterior"
+            ],
+            [
+              "aquí",
+              "allí"
+            ],
+            [
+              "este",
+              "ese / aquel"
+            ],
+            [
+              "yo, mi",
+              "él / ella, su"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Pablo dijo: «Mañana iré al médico.»",
+          "answer": "Futuro → condicional, *mañana* → *al día siguiente*. **Pablo dijo que al día siguiente iría al médico.**"
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Mi madre me dijo: «Ordena tu habitación.»",
+          "answer": "Rozkaz → *que* + imperfecto de subjuntivo; *tu* → *mi*. **Mi madre me dijo que ordenara mi habitación.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ana dijo que está cansada.",
+          "right": "Ana dijo que estaba cansada.",
+          "why": "Po minulém *dijo que* se presente posouvá na imperfecto. (Bez posunu jen tehdy, když to platí i teď a chceme to zdůraznit.)"
+        },
+        {
+          "type": "summary",
+          "text": "Po **dijo que**: presente → **imperfecto**, perfecto / indefinido → **pluscuamperfecto**, futuro → **condicional**, rozkaz → **que + -ra**. Uprav i *hoy, mañana, aquí* a zájmena."
+        }
+      ]
+    },
+    {
+      "title": "Zprávy od kamarádů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lucas byl nemocný a nebyl ve škole. Večer mu Sara převypráví, co kdo říkal. Celý její rozhovor je nepřímá řeč: „Učitel říkal, že…“, „Pablo se ptal, jestli…“."
+        },
+        {
+          "type": "text",
+          "text": "Uvidíš i to, jak se převádějí **otázky**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá otázka",
+          "definition": "Otázka převyprávěná bez otazníku. Zjišťovací otázka (ano / ne) se uvede *si* (jestli), doplňovací zůstane u tázacího slova (*dónde, qué, cuándo*).",
+          "example": "«¿Vienes?» → Me preguntó si iba."
+        },
+        {
+          "type": "term",
+          "term": "Posun časů",
+          "definition": "Po minulém uvozovacím slovese se čas v nepřímé řeči posune do minulosti.",
+          "example": "«Es fácil» → Dijo que era fácil."
+        },
+        {
+          "type": "heading",
+          "text": "Co Sara vyprávěla"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Přímá řeč",
+            "Sara převypráví"
+          ],
+          "rows": [
+            [
+              "Profesora: «El examen **será** el lunes.»",
+              "La profesora dijo que el examen **sería** el lunes."
+            ],
+            [
+              "Pablo: «¿**Está** Lucas enfermo?»",
+              "Pablo preguntó **si** **estabas** enfermo."
+            ],
+            [
+              "Marta: «**He leído** el libro dos veces.»",
+              "Marta contó que **había leído** el libro dos veces."
+            ],
+            [
+              "Profesora: «¿Dónde **está** el cuaderno de Lucas?»",
+              "La profesora preguntó **dónde estaba** tu cuaderno."
+            ],
+            [
+              "Profesora: «**Haced** el ejercicio 5.»",
+              "La profesora nos dijo que **hiciéramos** el ejercicio 5."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *Lucas* se změnil na *tú* (*estabas, tu cuaderno*), protože Sara mluví přímo s ním. V nepřímé řeči se zájmena přizpůsobí tomu, kdo komu vypráví."
+        },
+        {
+          "type": "heading",
+          "text": "Otázky v nepřímé řeči"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Otázka ano / ne → *preguntó si* + posunutý čas: *«¿Tienes tiempo?» → Preguntó si tenía tiempo.*",
+            "Otázka s tázacím slovem → *preguntó* + tázací slovo (s čárkou) + posunutý čas: *«¿Cuándo llegas?» → Preguntó cuándo llegaba.*",
+            "Otazník zmizí, pořadí slov je jako v oznamovací větě."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "«Vivo en Toledo.» → Dijo que",
+                "after": "en Toledo.",
+                "options": [
+                  "vivía",
+                  "vive",
+                  "viviría"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "«Te llamaré.» → Me dijo que me",
+                "after": ".",
+                "options": [
+                  "llamaría",
+                  "llamará",
+                  "llamaba"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "«¿Quieres café?» → Me preguntó",
+                "after": "quería café.",
+                "options": [
+                  "si",
+                  "que",
+                  "sí"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "«Hemos perdido.» → Dijeron que",
+                "after": ".",
+                "options": [
+                  "habían perdido",
+                  "habíamos perdido",
+                  "perderían"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "«¡Cierra la puerta!» → Me pidió que",
+                "after": "la puerta.",
+                "options": [
+                  "cerrara",
+                  "cierro",
+                  "cerraba"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Juan me preguntó: «¿Dónde vives?»",
+          "answer": "Doplňovací otázka → *dónde* zůstane; *vives* → *vivía*. **Juan me preguntó dónde vivía.**"
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Ana dice: «Estoy cansada.»",
+          "answer": "Uvozovací sloveso je v přítomnosti (*dice*) → **bez posunu**. **Ana dice que está cansada.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Me preguntó que si tenía tiempo.",
+          "right": "Me preguntó si tenía tiempo.",
+          "why": "Ve spisovné řeči stačí *preguntó si*. Spojení *que si* se objevuje v hovoru, ale do slohu se nehodí."
+        },
+        {
+          "type": "summary",
+          "text": "Oznámení: **dijo que** + posunutý čas. Otázka ano / ne: **preguntó si**. Otázka s tázacím slovem: **preguntó dónde / qué / cuándo**. Rozkaz: **dijo / pidió que + -ra**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Ana dijo: «Estoy cansada.» → Ana dijo que ___ cansada.",
+      "options": [
+        "estaba",
+        "esté",
+        "estará",
+        "estuviera"
+      ],
+      "answer": 0,
+      "explanation": "Presente → imperfecto."
+    },
+    {
+      "type": "choice",
+      "question": "Pablo dijo: «Iré al médico.» → Pablo dijo que ___ al médico.",
+      "options": [
+        "iría",
+        "fue",
+        "vaya",
+        "fuera"
+      ],
+      "answer": 0,
+      "explanation": "Futuro → condicional."
+    },
+    {
+      "type": "input",
+      "question": "Převeď: «He terminado.» → Dijo que ___.",
+      "answers": [
+        "había terminado"
+      ],
+      "explanation": "Pretérito perfecto → pluscuamperfecto."
+    },
+    {
+      "type": "input",
+      "question": "Převeď otázku: «¿Tienes tiempo?» → Me preguntó ___ tenía tiempo.",
+      "answers": [
+        "si"
+      ],
+      "explanation": "Otázka ano / ne → *si*."
+    },
+    {
+      "type": "input",
+      "question": "Převeď rozkaz: «¡Estudia!» → Me dijo que ___.",
+      "answers": [
+        "estudiara",
+        "estudiase"
+      ],
+      "explanation": "Rozkaz → *que* + imperfecto de subjuntivo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po „Dice que…“ (v přítomném čase) se časy neposouvají.",
+      "answer": true,
+      "explanation": "Posun je jen po minulém uvozovacím slovese."
+    },
+    {
+      "type": "truefalse",
+      "question": "V nepřímé řeči se „mañana“ po minulém slovese obvykle mění na „al día siguiente“.",
+      "answer": true,
+      "explanation": "Z pohledu vypravěče už „zítra“ není zítra."
+    },
+    {
+      "type": "match",
+      "question": "Spoj čas v přímé řeči s časem v nepřímé řeči (po dijo que).",
+      "pairs": [
+        [
+          "presente",
+          "imperfecto"
+        ],
+        [
+          "futuro",
+          "condicional"
+        ],
+        [
+          "pretérito perfecto",
+          "pluscuamperfecto"
+        ],
+        [
+          "rozkaz",
+          "imperfecto de subjuntivo"
+        ]
+      ],
+      "explanation": "Každý čas se posune o krok do minulosti."
+    },
+    {
+      "type": "choice",
+      "question": "Juan me preguntó: «¿Dónde vives?» → Juan me preguntó ___.",
+      "options": [
+        "dónde vivía",
+        "que dónde vives",
+        "si dónde vivía"
+      ],
+      "answer": 0,
+      "explanation": "Tázací slovo zůstane, čas se posune."
+    },
+    {
+      "type": "choice",
+      "question": "«Hemos perdido.» → Dijeron que ___.",
+      "options": [
+        "habían perdido",
+        "habíamos perdido",
+        "han perdido"
+      ],
+      "answer": 0,
+      "explanation": "Osoba se změní na *ellos*, čas na pluscuamperfecto."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je správný převod slov „aquí“ a „hoy“ v nepřímé řeči?",
+      "options": [
+        "allí, aquel día",
+        "aquí, hoy",
+        "allí, mañana"
+      ],
+      "answer": 0,
+      "explanation": "*aquí → allí, hoy → aquel día / ese día*."
+    },
+    {
+      "type": "input",
+      "question": "Převeď: «Vendré mañana.» → Dijo que ___ al día siguiente.",
+      "answers": [
+        "vendría",
+        "vendria"
+      ],
+      "explanation": "*vendré → vendría*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova: Zeptala se mě, jestli mám hlad.",
+      "items": [
+        "Me",
+        "preguntó",
+        "si",
+        "tenía",
+        "hambre"
+      ],
+      "explanation": "*preguntar si* + imperfecto."
+    },
+    {
+      "type": "open",
+      "question": "Jak se posouvají časy v nepřímé řeči po „dijo que“? Uveď aspoň tři změny.",
+      "answer": "Presente → imperfecto (*tengo → tenía*), pretérito perfecto a indefinido → pluscuamperfecto (*he comido → había comido*), futuro → condicional (*iré → iría*), rozkaz → *que* + imperfecto de subjuntivo (*¡ven! → que viniera*)."
+    },
+    {
+      "type": "open",
+      "question": "Převyprávěj, co ti někdo včera řekl a na co se ptal (2–3 věty v nepřímé řeči).",
+      "answer": "Např.: *Mi amigo me dijo que estaba muy cansado y que no iría a la fiesta. También me preguntó si quería ir al cine el sábado.*"
+    }
+  ]
+}
