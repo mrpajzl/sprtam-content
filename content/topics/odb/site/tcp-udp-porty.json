@@ -1,0 +1,565 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "tcp-udp-porty",
+  "title": "TCP, UDP a porty",
+  "emoji": "🚪",
+  "explanations": [
+    {
+      "title": "Doporučený dopis a pohled",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když posíláš důležitou smlouvu, pošleš ji **doporučeně**: pošta potvrdí doručení, a když se ztratí, řeší se to. Pohlednici z dovolené hodíš do schránky a doufáš. Je to rychlé a levné, ale bez záruky."
+        },
+        {
+          "type": "text",
+          "text": "V síti existují přesně tyhle dva způsoby: **TCP** (doporučeně) a **UDP** (pohled). A protože v jednom počítači běží najednou prohlížeč, e-mail i hra, data se musí dostat ke správnému programu. K tomu slouží **porty**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Transportní vrstva",
+          "definition": "4. vrstva modelu OSI. Doručuje data mezi **programy** na dvou počítačích (IP adresa doručí jen k počítači)."
+        },
+        {
+          "type": "term",
+          "term": "Port",
+          "definition": "Číslo 0–65535, které v počítači určuje konkrétní program nebo službu. Jako číslo bytu v domě: IP adresa je dům, port je byt.",
+          "example": "Webový server poslouchá na portu 443."
+        },
+        {
+          "type": "term",
+          "term": "TCP",
+          "definition": "Protokol se **spojením** a se **zárukou doručení**. Data čísluje, příjemce potvrzuje, ztracené kusy se pošlou znovu a doručí se ve správném pořadí.",
+          "example": "web, e-mail, stahování souborů, SSH"
+        },
+        {
+          "type": "term",
+          "term": "UDP",
+          "definition": "Protokol **bez spojení** a bez záruky. Pošle data a dál se nestará. Je rychlejší a má menší režii.",
+          "example": "DNS dotaz, online hra, internetové volání"
+        },
+        {
+          "type": "heading",
+          "text": "Jak TCP naváže spojení"
+        },
+        {
+          "type": "term",
+          "term": "Třícestný handshake",
+          "definition": "Úvodní pozdrav TCP o třech zprávách, po kterém obě strany ví, že spojení funguje."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Klient pošle **SYN**: „Chci se spojit.“",
+            "Server odpoví **SYN-ACK**: „Beru na vědomí, taky se chci spojit.“",
+            "Klient pošle **ACK**: „Potvrzuji.“ Spojení je otevřené a mohou téct data."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Na konci se spojení slušně ukončí zprávami **FIN** a ACK."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy co použít"
+        },
+        {
+          "type": "text",
+          "text": "TCP se hodí, kde **nesmí chybět ani bajt** (soubor, web, e-mail). UDP se hodí, kde je **rychlost důležitější** než každý kousek: při hovoru je lepší malé zakřupání než zpoždění o vteřinu."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "TCP",
+              "UDP"
+            ],
+            "items": [
+              {
+                "text": "stahování souboru",
+                "group": 0
+              },
+              {
+                "text": "e-mail",
+                "group": 0
+              },
+              {
+                "text": "vzdálené přihlášení SSH",
+                "group": 0
+              },
+              {
+                "text": "internetové volání",
+                "group": 1
+              },
+              {
+                "text": "online střílečka",
+                "group": 1
+              },
+              {
+                "text": "přidělení adresy DHCP",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Známé porty"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Port",
+            "Služba",
+            "Protokol"
+          ],
+          "rows": [
+            [
+              "20, 21",
+              "FTP (přenos souborů)",
+              "TCP"
+            ],
+            [
+              "22",
+              "SSH (bezpečný vzdálený přístup)",
+              "TCP"
+            ],
+            [
+              "25",
+              "SMTP (odesílání pošty mezi servery)",
+              "TCP"
+            ],
+            [
+              "53",
+              "DNS (překlad jmen)",
+              "UDP i TCP"
+            ],
+            [
+              "67, 68",
+              "DHCP (server, klient)",
+              "UDP"
+            ],
+            [
+              "80",
+              "HTTP (web)",
+              "TCP"
+            ],
+            [
+              "443",
+              "HTTPS (šifrovaný web)",
+              "TCP (HTTP/3 přes UDP)"
+            ],
+            [
+              "3389",
+              "RDP (vzdálená plocha Windows)",
+              "TCP"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Otevřeš https://www.example.com. Na jaký port a jakým protokolem se prohlížeč připojí?",
+          "answer": "HTTPS → port **443**, transportní protokol **TCP** (u nového HTTP/3 UDP). Klientský port si prohlížeč vybere náhodně z vysokých čísel, třeba 52 311."
+        },
+        {
+          "type": "example",
+          "question": "Proč pro telefonní hovor přes internet nepoužít TCP?",
+          "answer": "Když se ztratí kousek zvuku, TCP by ho poslal znovu a **čekal** na něj. Hovor by se zasekával. Ztracený zlomek vteřiny už nemá cenu, proto se volá přes **UDP**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "UDP je špatný protokol, protože ztrácí data.",
+          "right": "UDP je **jednodušší**, ne horší. Pro hovory, hry, DNS je vhodnější než TCP.",
+          "why": "Spolehlivost stojí čas. Kde stačí rychlá odpověď nebo kde opakování nemá smysl, je UDP lepší volba."
+        },
+        {
+          "type": "summary",
+          "text": "TCP = spojení (SYN, SYN-ACK, ACK), potvrzování, opakování a pořadí. UDP = bez spojení, rychlé, bez záruky. Port (0–65535) určuje program: 22 SSH, 53 DNS, 80 HTTP, 443 HTTPS."
+        }
+      ]
+    },
+    {
+      "title": "Socket a tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správce serveru potřebuje vědět, které služby na serveru „poslouchají“ a jsou dostupné zvenku. Firewall se nastavuje právě podle portů a protokolů. Bez znalosti TCP, UDP a portů nevíš, co povolit a co zakázat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Port",
+          "definition": "Šestnáctibitové číslo (0–65535) v hlavičce TCP i UDP. Určuje aplikaci na počítači."
+        },
+        {
+          "type": "term",
+          "term": "Socket",
+          "definition": "Dvojice **IP adresa + port**. Spojení TCP je jednoznačně dané dvěma sockety: klienta a serveru.",
+          "example": "192.168.1.20:52311 ↔ 93.184.215.14:443"
+        },
+        {
+          "type": "term",
+          "term": "Segment a datagram",
+          "definition": "Jednotka dat na transportní vrstvě: u TCP **segment**, u UDP **datagram**."
+        },
+        {
+          "type": "term",
+          "term": "Firewall",
+          "definition": "Program nebo zařízení, které podle pravidel propouští nebo blokuje provoz, např. podle portu.",
+          "example": "Povolit TCP 443, zakázat TCP 23."
+        },
+        {
+          "type": "heading",
+          "text": "Rozsahy portů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rozsah",
+            "Název",
+            "Kdo je používá"
+          ],
+          "rows": [
+            [
+              "0–1023",
+              "dobře známé (well-known)",
+              "standardní služby: 22, 80, 443…"
+            ],
+            [
+              "1024–49151",
+              "registrované",
+              "konkrétní aplikace, např. 3389 RDP"
+            ],
+            [
+              "49152–65535",
+              "dynamické",
+              "klienti si z nich berou dočasné porty"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "TCP vs. UDP podrobně"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vlastnost",
+            "TCP",
+            "UDP"
+          ],
+          "rows": [
+            [
+              "spojení",
+              "ano (handshake)",
+              "ne"
+            ],
+            [
+              "potvrzování a opakování",
+              "ano",
+              "ne"
+            ],
+            [
+              "pořadí dat",
+              "zaručené",
+              "nezaručené"
+            ],
+            [
+              "řízení toku",
+              "ano (okno)",
+              "ne"
+            ],
+            [
+              "hlavička",
+              "nejméně 20 B",
+              "8 B"
+            ],
+            [
+              "rychlost a režie",
+              "pomalejší, víc režie",
+              "rychlejší, málo režie"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Řízení toku",
+          "definition": "TCP hlídá, aby odesílatel nezahltil příjemce: příjemce oznamuje, kolik dat ještě zvládne přijmout (velikost okna)."
+        },
+        {
+          "type": "heading",
+          "text": "Navázání a ukončení spojení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "SYN (klient → server)",
+            "SYN-ACK (server → klient)",
+            "ACK (klient → server), spojení otevřené",
+            "přenos dat s potvrzováním ACK",
+            "ukončení: FIN a ACK od obou stran"
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Výpis `ss -tln` na Linuxu ukazuje naslouchání na 0.0.0.0:22 a 0.0.0.0:443. Co na serveru běží?",
+          "answer": "Port **22 = SSH** (vzdálená správa), port **443 = HTTPS** (web). `-t` = TCP, `-l` = naslouchající, `-n` = čísla místo jmen. Ve Windows podobně `netstat -an`."
+        },
+        {
+          "type": "example",
+          "question": "Na server mají mít přístup jen webové prohlížeče a správce přes SSH. Která pravidla firewallu nastavíš?",
+          "answer": "Povolit příchozí **TCP 80** a **TCP 443** (web) a **TCP 22** jen z adresy správce. Vše ostatní příchozí **zakázat**. Telnet (23) nepovolovat, posílá hesla nešifrovaně."
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ověř si porty."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "22",
+                "back": "SSH"
+              },
+              {
+                "front": "25",
+                "back": "SMTP"
+              },
+              {
+                "front": "53",
+                "back": "DNS"
+              },
+              {
+                "front": "80",
+                "back": "HTTP"
+              },
+              {
+                "front": "443",
+                "back": "HTTPS"
+              },
+              {
+                "front": "3389",
+                "back": "RDP"
+              },
+              {
+                "front": "67/68",
+                "back": "DHCP"
+              },
+              {
+                "front": "21",
+                "back": "FTP (řízení)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Hlavička UDP má ",
+                "after": "",
+                "options": [
+                  "8 B",
+                  "20 B",
+                  "40 B"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Socket je IP adresa a ",
+                "after": "",
+                "options": [
+                  "port",
+                  "MAC adresa",
+                  "maska"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Klient dostane dočasný port z rozsahu ",
+                "after": "",
+                "options": [
+                  "49152–65535",
+                  "0–1023",
+                  "1–100"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Port 443 je v počítači fyzická zásuvka pro síťový kabel.",
+          "right": "Port v TCP/UDP je **číslo** v hlavičce, které určuje program. Zásuvka pro kabel je **port přepínače nebo síťové karty**.",
+          "why": "Slovo „port“ má v sítích dva významy. Na transportní vrstvě je to vždy logické číslo."
+        },
+        {
+          "type": "summary",
+          "text": "Socket = IP + port. Porty 0–1023 jsou dobře známé, 49152–65535 dynamické. TCP: spojení, potvrzování, pořadí, řízení toku, hlavička od 20 B. UDP: 8 B hlavička, bez záruky. Firewall pracuje s porty a protokoly."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď zprávy třícestného handshaku TCP.",
+      "items": [
+        "SYN",
+        "SYN-ACK",
+        "ACK"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na jakém portu běží HTTPS?",
+      "answers": [
+        "443"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na jakém portu běží SSH?",
+      "answers": [
+        "22"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který protokol zaručuje doručení a správné pořadí dat?",
+      "options": [
+        "TCP",
+        "UDP",
+        "IP",
+        "ARP"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Pro co se nejvíc hodí UDP?",
+      "options": [
+        "internetové volání a hry",
+        "stahování souborů",
+        "odesílání e-mailu",
+        "přihlášení přes SSH"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kde vadí zpoždění víc než malá ztráta?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj port se službou.",
+      "pairs": [
+        [
+          "53",
+          "DNS"
+        ],
+        [
+          "80",
+          "HTTP"
+        ],
+        [
+          "25",
+          "SMTP"
+        ],
+        [
+          "3389",
+          "RDP"
+        ],
+        [
+          "67",
+          "DHCP server"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké je nejvyšší možné číslo portu?",
+      "answers": [
+        "65535"
+      ],
+      "hints": [
+        "Port má 16 bitů."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "UDP před odesláním dat navazuje spojení.",
+      "answer": false,
+      "explanation": "UDP je bez spojení, data rovnou posílá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Socket je dvojice IP adresa a port.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak velká je hlavička UDP?",
+      "options": [
+        "8 B",
+        "20 B",
+        "40 B",
+        "1500 B"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Do jakého rozsahu patří dobře známé porty?",
+      "options": [
+        "0–1023",
+        "1024–49151",
+        "49152–65535",
+        "0–255"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem na Linuxu vypíšeš naslouchající TCP porty?",
+      "options": [
+        "ss -tln",
+        "ip route",
+        "ping -t",
+        "chmod 755"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej TCP a UDP a uveď příklad použití každého.",
+      "answer": "TCP navazuje spojení, potvrzuje přijetí, opakuje ztracená data a drží pořadí; hodí se pro web, e-mail nebo soubory. UDP posílá bez spojení a bez záruky, ale rychle a s malou režií; hodí se pro DNS, hovory a hry."
+    },
+    {
+      "type": "open",
+      "question": "K čemu slouží porty a co je socket?",
+      "answer": "IP adresa doručí data k počítači, port určí konkrétní program v něm, např. 443 pro webový server. Socket je dvojice IP adresa a port; spojení je dané socketem klienta a socketem serveru."
+    }
+  ]
+}

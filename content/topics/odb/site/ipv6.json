@@ -1,0 +1,553 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ipv6",
+  "title": "IPv6",
+  "emoji": "🆕",
+  "explanations": [
+    {
+      "title": "Proč nové adresy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "IPv4 adres je asi 4,3 miliardy. Lidí na Zemi je víc než 8 miliard a každý má mobil, počítač, televizi, hodinky. Adresy prostě došly. Evropský registr RIPE NCC rozdal poslední volný blok IPv4 v roce 2019."
+        },
+        {
+          "type": "text",
+          "text": "Řešením je **IPv6**: adresy tak dlouhé, že jich je víc, než kolik kdy budeme potřebovat. Už dnes po IPv6 jezdí velká část provozu internetu a každý síťař ho musí umět přečíst a zapsat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: IPv4",
+          "definition": "Adresa o 32 bitech, zapsaná čtyřmi desítkovými čísly s tečkami.",
+          "example": "192.168.1.10"
+        },
+        {
+          "type": "term",
+          "term": "IPv6 adresa",
+          "definition": "Adresa o **128 bitech**. Píše se jako **8 skupin** po 4 šestnáctkových číslicích, oddělených dvojtečkami.",
+          "example": "2001:0db8:0000:0000:0000:ff00:0042:8329"
+        },
+        {
+          "type": "term",
+          "term": "Šestnáctková číslice",
+          "definition": "Číslice 0–9 a písmena a–f (a = 10 … f = 15). Jedna šestnáctková číslice = 4 bity, skupina 4 číslic = 16 bitů."
+        },
+        {
+          "type": "term",
+          "term": "Prefix",
+          "definition": "Číslo za lomítkem, které říká, kolik bitů zleva tvoří síť. Běžná síť v IPv6 má **/64**: 64 bitů síť, 64 bitů zařízení.",
+          "example": "2001:db8:1:2::/64"
+        },
+        {
+          "type": "heading",
+          "text": "Kolik je to adres"
+        },
+        {
+          "type": "text",
+          "text": "IPv4: 2³² ≈ 4,3 miliardy. IPv6: 2¹²⁸ ≈ 3,4 · 10³⁸ adres. Na každého člověka na Zemi by připadlo asi 4 · 10²⁸ adres."
+        },
+        {
+          "type": "heading",
+          "text": "Jak adresu zkrátit"
+        },
+        {
+          "type": "text",
+          "text": "Dlouhé adresy se zkracují podle dvou pravidel:"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "V každé skupině můžeš vynechat **úvodní nuly**: 0db8 → db8, 0042 → 42, 0000 → 0.",
+            "Jeden souvislý úsek skupin, které jsou celé nulové, nahradíš **dvěma dvojtečkami ::**. V adrese smí být :: jen **jednou**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zkrať 2001:0db8:0000:0000:0000:ff00:0042:8329.",
+          "answer": "Úvodní nuly: 2001:db8:0:0:0:ff00:42:8329. Tři nulové skupiny za sebou nahradím ::. Výsledek **2001:db8::ff00:42:8329**."
+        },
+        {
+          "type": "example",
+          "question": "Rozepiš celou adresu 2001:db8:a::1.",
+          "answer": "Viditelné skupiny: 2001, db8, a, 1 → jsou to 4 skupiny, chybí 8 − 4 = **4** nulové skupiny v místě ::. Každou skupinu doplním na 4 číslice: **2001:0db8:000a:0000:0000:0000:0000:0001**."
+        },
+        {
+          "type": "text",
+          "text": "Vyber správné zkrácení."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "fe80:0000:0000:0000:0204:61ff:fe9d:f156 → ",
+                "after": "",
+                "options": [
+                  "fe80::204:61ff:fe9d:f156",
+                  "fe8::204:61ff:fe9d:f156",
+                  "fe80::0204::f156"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "0000:0000:0000:0000:0000:0000:0000:0001 → ",
+                "after": "",
+                "options": [
+                  "::1",
+                  "1::",
+                  ":1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "2001:0db8:0000:0001:0000:0000:0000:0005 → ",
+                "after": "",
+                "options": [
+                  "2001:db8:0:1::5",
+                  "2001:db8::1::5",
+                  "2001:db8:1::5"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Druhy adres"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Začíná",
+            "Druh",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "2000::/3 (2… nebo 3…)",
+              "globální unicast",
+              "veřejná adresa v internetu"
+            ],
+            [
+              "fe80::/10",
+              "link-local",
+              "jen v místní síti, má ji každé rozhraní"
+            ],
+            [
+              "fc00::/7 (v praxi fd…)",
+              "unikátní lokální (ULA)",
+              "vnitřní síť, obdoba privátních IPv4"
+            ],
+            [
+              "::1",
+              "loopback",
+              "„já sám“"
+            ],
+            [
+              "ff00::/8",
+              "multicast",
+              "skupina příjemců"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "IPv6 **nemá broadcast**. Místo něj používá multicast."
+        },
+        {
+          "type": "mistake",
+          "wrong": "V adrese 2001:db8::1::5 jsem dvakrát použil ::, je to kratší.",
+          "right": "Správně **2001:db8:0:1::5** (nebo jiná varianta s jediným ::).",
+          "why": "Když jsou :: dvě, nikdo nepozná, kolik nulových skupin patří do které mezery. Adresa by nebyla jednoznačná."
+        },
+        {
+          "type": "summary",
+          "text": "IPv6 adresa má 128 bitů, 8 skupin po 4 šestnáctkových číslicích. Zkracuje se vynecháním úvodních nul a jedním :: místo nulových skupin. Běžná podsíť je /64, broadcast neexistuje."
+        }
+      ]
+    },
+    {
+      "title": "Srovnání s IPv4",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když nastavíš notebook ve škole, nejspíš dostane dvě adresy: IPv4 jako 192.168.1.20 i IPv6 jako 2001:db8:10:20::1a. Tomu se říká **dual stack** a je to dnes běžný stav. Abys rozuměl tomu, co vidíš v `ipconfig` nebo `ip a`, porovnáme IPv6 s tím, co znáš z IPv4."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "IPv6",
+          "definition": "Nová verze protokolu IP se 128bitovými adresami."
+        },
+        {
+          "type": "term",
+          "term": "Dual stack",
+          "definition": "Zařízení i síť běží s IPv4 i IPv6 současně."
+        },
+        {
+          "type": "term",
+          "term": "Hextet",
+          "definition": "Jedna skupina IPv6 adresy: 4 šestnáctkové číslice = 16 bitů.",
+          "example": "V 2001:db8::1 je první hextet 2001."
+        },
+        {
+          "type": "term",
+          "term": "Identifikátor rozhraní",
+          "definition": "Posledních 64 bitů adresy. Určuje konkrétní zařízení v síti /64."
+        },
+        {
+          "type": "term",
+          "term": "SLAAC",
+          "definition": "Automatické nastavení adresy bez DHCP serveru: router v síti oznámí prefix a zařízení si k němu samo doplní identifikátor rozhraní."
+        },
+        {
+          "type": "term",
+          "term": "NDP",
+          "definition": "Protokol pro hledání sousedů v IPv6. Mimo jiné nahrazuje **ARP** (zjištění MAC adresy k IP adrese) a hledá routery v síti."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "IPv4",
+            "IPv6"
+          ],
+          "rows": [
+            [
+              "délka adresy",
+              "32 bitů",
+              "128 bitů"
+            ],
+            [
+              "zápis",
+              "desítkově s tečkami",
+              "šestnáctkově s dvojtečkami"
+            ],
+            [
+              "typická podsíť",
+              "/24",
+              "/64"
+            ],
+            [
+              "broadcast",
+              "ano",
+              "ne, jen multicast"
+            ],
+            [
+              "automatické adresy",
+              "DHCP",
+              "SLAAC nebo DHCPv6"
+            ],
+            [
+              "MAC k IP adrese",
+              "ARP",
+              "NDP"
+            ],
+            [
+              "loopback",
+              "127.0.0.1",
+              "::1"
+            ],
+            [
+              "vnitřní adresy",
+              "privátní 10/8, 172.16/12, 192.168/16",
+              "ULA fc00::/7, link-local fe80::/10"
+            ],
+            [
+              "velikost hlavičky",
+              "proměnná, 20–60 B",
+              "pevná 40 B"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Díky obrovskému množství adres v IPv6 **není potřeba NAT** (překlad mnoha privátních adres na jednu veřejnou). Každé zařízení může mít vlastní veřejnou adresu. Ochranu pak musí zajistit **firewall**."
+        },
+        {
+          "type": "heading",
+          "text": "Stavba adresy"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🏢",
+            "2001:db8:10:20",
+            "➕",
+            "💻",
+            "::1a"
+          ],
+          "caption": "Prvních 64 bitů = síť, posledních 64 bitů = zařízení"
+        },
+        {
+          "type": "example",
+          "question": "Poskytovatel přidělil firmě prefix /48. Kolik podsítí /64 si z něj firma udělá?",
+          "answer": "Mezi /48 a /64 je 64 − 48 = **16 bitů** na číslování podsítí. 2¹⁶ = **65 536 podsítí /64**."
+        },
+        {
+          "type": "example",
+          "question": "Domácnost dostala /56. Kolik má podsítí /64?",
+          "answer": "64 − 56 = 8 bitů → 2⁸ = **256 podsítí**."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla zápisu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Úvodní nuly ve skupině vynech (0db8 → db8).",
+            "Nejdelší úsek nulových skupin nahraď :: (jen jednou).",
+            "Písmena piš malá (doporučení RFC 5952).",
+            "Při rozepisování spočítej viditelné skupiny a :: doplň tolika nulovými skupinami, aby jich bylo 8."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "::1",
+                "back": "loopback"
+              },
+              {
+                "front": "fe80::…",
+                "back": "link-local, jen místní síť"
+              },
+              {
+                "front": "2001:db8::…",
+                "back": "dokumentační rozsah pro příklady"
+              },
+              {
+                "front": "ff02::1",
+                "back": "multicast všem uzlům v místní síti"
+              },
+              {
+                "front": "/64",
+                "back": "běžná velikost podsítě"
+              },
+              {
+                "front": "SLAAC",
+                "back": "zařízení si adresu sestaví samo"
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "globální unicast",
+              "link-local",
+              "multicast"
+            ],
+            "items": [
+              {
+                "text": "2001:db8:5::7",
+                "group": 0
+              },
+              {
+                "text": "2a00:1028:1::10",
+                "group": 0
+              },
+              {
+                "text": "fe80::1",
+                "group": 1
+              },
+              {
+                "text": "fe80::a1b2:3ff:fe44:5566",
+                "group": 1
+              },
+              {
+                "text": "ff02::1",
+                "group": 2
+              },
+              {
+                "text": "ff02::2",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Adresa fe80::1 je veřejná adresa, kterou uvidí celý internet.",
+          "right": "fe80::/10 je **link-local**: platí jen v jedné místní síti a router ji dál nepošle.",
+          "why": "Každé rozhraní s IPv6 má link-local adresu automaticky. K internetu je potřeba globální adresa (2… nebo 3…)."
+        },
+        {
+          "type": "summary",
+          "text": "IPv6: 128 bitů, podsíť /64, bez broadcastu, místo ARP je NDP, adresy přes SLAAC nebo DHCPv6, NAT obvykle není potřeba. Link-local fe80::, loopback ::1, globální 2000::/3."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik bitů má IPv6 adresa?",
+      "answers": [
+        "128"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik skupin (hextetů) má plně zapsaná IPv6 adresa?",
+      "answers": [
+        "8",
+        "osm"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které zkrácení adresy 2001:0db8:0000:0000:0000:0000:0000:0001 je správné?",
+      "options": [
+        "2001:db8::1",
+        "2001:db8:1",
+        "2001::db8::1",
+        "21:db8::1"
+      ],
+      "answer": 0,
+      "hints": [
+        "Úvodní nuly ve skupině smíš vynechat, koncové ne.",
+        "Nulové skupiny nahraď :: jen jednou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V jedné IPv6 adrese smí být :: použito dvakrát.",
+      "answer": false,
+      "explanation": "Jen jednou, jinak by adresa nebyla jednoznačná."
+    },
+    {
+      "type": "truefalse",
+      "question": "IPv6 nepoužívá broadcast.",
+      "answer": true,
+      "explanation": "Místo broadcastu používá multicast."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je loopback adresa v IPv6?",
+      "options": [
+        "::1",
+        "fe80::1",
+        "127.0.0.1",
+        "ff02::1"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Adresa fe80::a1b2:3ff:fe44:5566 je:",
+      "options": [
+        "link-local",
+        "globální unicast",
+        "multicast",
+        "loopback"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj protokol IPv4 s jeho obdobou v IPv6.",
+      "pairs": [
+        [
+          "ARP",
+          "NDP"
+        ],
+        [
+          "127.0.0.1",
+          "::1"
+        ],
+        [
+          "DHCP",
+          "SLAAC nebo DHCPv6"
+        ],
+        [
+          "broadcast",
+          "multicast"
+        ],
+        [
+          "/24 pro LAN",
+          "/64 pro LAN"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik podsítí /64 lze vytvořit z prefixu /56?",
+      "answers": [
+        "256"
+      ],
+      "hints": [
+        "Kolik bitů leží mezi /56 a /64?",
+        "Počet podsítí = 2 na počet těch bitů."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky rozepsání zkrácené IPv6 adresy.",
+      "items": [
+        "spočítej viditelné skupiny",
+        "zjisti, kolik nulových skupin chybí do 8",
+        "nahraď :: chybějícími skupinami 0000",
+        "doplň každou skupinu úvodními nulami na 4 číslice"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč v IPv6 obvykle není potřeba NAT?",
+      "options": [
+        "adres je tolik, že každé zařízení může mít veřejnou",
+        "IPv6 nepoužívá routery",
+        "IPv6 nemá porty",
+        "NAT je v IPv6 zakázaný zákonem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Rozepiš na plnou délku první skupinu adresy db8::1 (4 číslice).",
+      "answers": [
+        "0db8"
+      ],
+      "hints": [
+        "Doplň úvodní nuly na 4 číslice."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč vzniklo IPv6 a čím se liší od IPv4?",
+      "answer": "IPv4 má jen 32 bitů, asi 4,3 miliardy adres, a ty došly. IPv6 má 128 bitů, zapisuje se šestnáctkově s dvojtečkami, nemá broadcast, místo ARP používá NDP a adresy si zařízení umí nastavit samo (SLAAC)."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli pravidla pro zkracování IPv6 adres.",
+      "answer": "Ve skupině se smí vynechat úvodní nuly. Jeden souvislý úsek celých nulových skupin se nahradí dvěma dvojtečkami, ale jen jednou v adrese, aby šla jednoznačně rozepsat."
+    }
+  ]
+}

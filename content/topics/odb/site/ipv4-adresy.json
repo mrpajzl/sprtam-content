@@ -1,0 +1,531 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ipv4-adresy",
+  "title": "IPv4 adresy a maska",
+  "emoji": "🔢",
+  "explanations": [
+    {
+      "title": "Ulice a číslo domu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Adresa „Dlouhá 12, Brno“ má dvě části: **ulici**, kde dům leží, a **číslo domu** v té ulici. Pošťák nejdřív najde ulici, pak dům."
+        },
+        {
+          "type": "text",
+          "text": "IP adresa funguje stejně. Část adresy říká, ve které **síti** zařízení je, a zbytek určuje **zařízení** v té síti. Kde je hranice mezi nimi, prozradí **maska**. Bez toho nenastavíš ani domácí router."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "IP adresa (IPv4)",
+          "definition": "Logická adresa zařízení v síti. Má **32 bitů**, píše se jako 4 čísla 0–255 oddělená tečkami.",
+          "example": "192.168.1.37"
+        },
+        {
+          "type": "term",
+          "term": "Bit a oktet",
+          "definition": "**Bit** je 0 nebo 1. **Oktet** je skupina 8 bitů, tedy jedno ze 4 čísel v adrese (0–255).",
+          "example": "V adrese 192.168.1.37 je první oktet 192."
+        },
+        {
+          "type": "term",
+          "term": "Síťová a hostitelská část",
+          "definition": "Začátek adresy (**síťová část**) je stejný pro všechna zařízení v jedné síti, jako název ulice. Konec (**hostitelská část**) se liší, jako číslo domu."
+        },
+        {
+          "type": "term",
+          "term": "Maska podsítě",
+          "definition": "Číslo stejné délky jako adresa, které ukazuje, kolik bitů zleva tvoří síťovou část. Jedničky = síť, nuly = hostitel. Zapisuje se tečkově, nebo zkráceně jako **prefix** /počet jedniček.",
+          "example": "255.255.255.0 = /24 = prvních 24 bitů je síť"
+        },
+        {
+          "type": "heading",
+          "text": "Jak čtu adresu s maskou /24"
+        },
+        {
+          "type": "text",
+          "text": "U masky 255.255.255.0 (/24) jsou **první tři čísla síť** a **poslední číslo zařízení**. To je nejčastější případ v domácnostech a malých firmách."
+        },
+        {
+          "type": "term",
+          "term": "Adresa sítě",
+          "definition": "První adresa sítě: hostitelská část samé nuly. Označuje celou síť, zařízení ji dostat nesmí.",
+          "example": "192.168.1.0"
+        },
+        {
+          "type": "term",
+          "term": "Broadcastová adresa",
+          "definition": "Poslední adresa sítě: hostitelská část samé jedničky. Data na ni dostanou všichni v síti. Zařízení ji dostat nesmí.",
+          "example": "192.168.1.255"
+        },
+        {
+          "type": "term",
+          "term": "Výchozí brána",
+          "definition": "Adresa routeru v místní síti. Na ni počítač posílá vše, co jde **mimo** jeho síť (např. do internetu).",
+          "example": "Často 192.168.1.1"
+        },
+        {
+          "type": "example",
+          "question": "Počítač má 192.168.1.37/24. Urči adresu sítě, broadcast a rozsah adres pro zařízení.",
+          "answer": "Maska /24 → síť jsou první tři čísla 192.168.1. **Síť: 192.168.1.0**, **broadcast: 192.168.1.255**. Pro zařízení zbývá **192.168.1.1 až 192.168.1.254**, tedy 256 − 2 = **254 adres**."
+        },
+        {
+          "type": "example",
+          "question": "Jsou 192.168.1.37/24 a 192.168.2.40/24 ve stejné síti?",
+          "answer": "Síťové části jsou 192.168.**1** a 192.168.**2**. Liší se → **nejsou** ve stejné síti. Komunikovat spolu budou jen přes router (výchozí bránu)."
+        },
+        {
+          "type": "heading",
+          "text": "Adresy, které jsou zvláštní"
+        },
+        {
+          "type": "term",
+          "term": "Privátní adresy",
+          "definition": "Rozsahy vyhrazené pro vnitřní sítě. V internetu se nesměrují, každá firma je může použít znovu."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rozsah",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "10.0.0.0/8",
+              "privátní (velké sítě)"
+            ],
+            [
+              "172.16.0.0/12 (172.16.0.0–172.31.255.255)",
+              "privátní"
+            ],
+            [
+              "192.168.0.0/16",
+              "privátní (domácnosti)"
+            ],
+            [
+              "127.0.0.0/8",
+              "loopback, „já sám“ (127.0.0.1)"
+            ],
+            [
+              "169.254.0.0/16",
+              "APIPA: počítač si ji dá sám, když nedostal adresu od DHCP"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď adresy: kterou uvidíš v internetu a kterou jen uvnitř sítě?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "privátní",
+              "veřejná",
+              "zvláštní"
+            ],
+            "items": [
+              {
+                "text": "192.168.0.10",
+                "group": 0
+              },
+              {
+                "text": "10.1.2.3",
+                "group": 0
+              },
+              {
+                "text": "172.20.5.5",
+                "group": 0
+              },
+              {
+                "text": "8.8.8.8",
+                "group": 1
+              },
+              {
+                "text": "185.15.4.2",
+                "group": 1
+              },
+              {
+                "text": "127.0.0.1",
+                "group": 2
+              },
+              {
+                "text": "169.254.3.7",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Adresa 192.168.1.255/24 je dobrá pro tiskárnu, je přece v rozsahu sítě.",
+          "right": "Pro tiskárnu použij 192.168.1.1–192.168.1.254 (kromě brány). **.255 je broadcast**.",
+          "why": "První (síť) a poslední (broadcast) adresu sítě nesmí dostat žádné zařízení."
+        },
+        {
+          "type": "summary",
+          "text": "IPv4 adresa má 32 bitů ve 4 oktetech. Maska (prefix) určí, kolik bitů je síť. Adresa sítě a broadcast se zařízením nepřidělují, takže u /24 zbývá 254 adres. Privátní rozsahy: 10/8, 172.16/12, 192.168/16."
+        }
+      ]
+    },
+    {
+      "title": "Ve dvojkové soustavě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Router nečte adresy jako „192.168.1.37“. Vidí jen jedničky a nuly. Když chceš pochopit masky jiné než /24 a zvládnout výpočty k maturitě nebo v práci, musíš adresu umět převést do **dvojkové soustavy**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dvojková soustava",
+          "definition": "Zápis čísla jen pomocí 0 a 1. Každá pozice má hodnotu mocniny dvou. V oktetu zleva: **128, 64, 32, 16, 8, 4, 2, 1**.",
+          "example": "11000000 = 128 + 64 = 192"
+        },
+        {
+          "type": "term",
+          "term": "Oktet",
+          "definition": "8 bitů, jedno z čísel 0–255 v adrese."
+        },
+        {
+          "type": "term",
+          "term": "IPv4 adresa",
+          "definition": "32 bitů = 4 oktety, zapsané desítkově s tečkami."
+        },
+        {
+          "type": "term",
+          "term": "Maska a prefix",
+          "definition": "Maska = 32 bitů, nejdřív samé jedničky (síť), pak samé nuly (hostitel). Prefix /n = počet jedniček.",
+          "example": "/20 = 11111111.11111111.11110000.00000000 = 255.255.240.0"
+        },
+        {
+          "type": "term",
+          "term": "Logický součin (AND)",
+          "definition": "Porovnání bitů dvou čísel: výsledek je 1, jen když jsou **oba** bity 1. Adresa AND maska = **adresa sítě**.",
+          "example": "1 AND 1 = 1, 1 AND 0 = 0"
+        },
+        {
+          "type": "heading",
+          "text": "Převod oktetu do dvojkové soustavy"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Napiš si hodnoty pozic: 128 64 32 16 8 4 2 1.",
+            "Zleva: vejde se hodnota do čísla? Ano → napiš 1 a odečti ji. Ne → napiš 0.",
+            "Pokračuj, dokud nemáš 8 bitů."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď 172 do dvojkové soustavy.",
+          "answer": "172 − 128 = 44 → **1**; 64 se nevejde → **0**; 44 − 32 = 12 → **1**; 16 ne → **0**; 12 − 8 = 4 → **1**; 4 − 4 = 0 → **1**; 2 ne → **0**; 1 ne → **0**. Výsledek **10101100**."
+        },
+        {
+          "type": "text",
+          "text": "Doplň hodnoty běžných oktetů masky."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "11111111 = ",
+                "after": "",
+                "options": [
+                  "255",
+                  "254",
+                  "128"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "11110000 = ",
+                "after": "",
+                "options": [
+                  "240",
+                  "224",
+                  "248"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "11000000 = ",
+                "after": "",
+                "options": [
+                  "192",
+                  "128",
+                  "224"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "11111100 = ",
+                "after": "",
+                "options": [
+                  "252",
+                  "248",
+                  "254"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Adresa sítě a broadcast pro libovolnou masku"
+        },
+        {
+          "type": "term",
+          "term": "Adresa sítě",
+          "definition": "Hostitelské bity samé 0. Spočítá se jako adresa AND maska."
+        },
+        {
+          "type": "term",
+          "term": "Broadcast",
+          "definition": "Hostitelské bity samé 1. Poslední adresa sítě."
+        },
+        {
+          "type": "term",
+          "term": "Počet použitelných adres",
+          "definition": "Když hostitelská část má **h** bitů, je v síti 2^h adres. Pro zařízení zbývá **2^h − 2** (bez sítě a broadcastu).",
+          "example": "/24 → h = 8 → 256 − 2 = 254"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Prefix",
+            "Maska",
+            "Hostitelské bity",
+            "Použitelných adres"
+          ],
+          "rows": [
+            [
+              "/8",
+              "255.0.0.0",
+              "24",
+              "16 777 214"
+            ],
+            [
+              "/16",
+              "255.255.0.0",
+              "16",
+              "65 534"
+            ],
+            [
+              "/24",
+              "255.255.255.0",
+              "8",
+              "254"
+            ],
+            [
+              "/25",
+              "255.255.255.128",
+              "7",
+              "126"
+            ],
+            [
+              "/30",
+              "255.255.255.252",
+              "2",
+              "2"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Urči adresu sítě a broadcast pro 172.16.45.200/20.",
+          "answer": "/20 = 255.255.**240**.0. Rozhoduje 3. oktet: 45 = 0010**1101**, maska 240 = 1111**0000**. AND → 00100000 = **32**. Síť: **172.16.32.0**. Hostitelské bity ve 3. oktetu na jedničky: 00101111 = 47, 4. oktet 255. Broadcast: **172.16.47.255**. Použitelných 2¹² − 2 = **4094** adres."
+        },
+        {
+          "type": "example",
+          "question": "Kolik zařízení se vejde do sítě /26?",
+          "answer": "Hostitelských bitů je 32 − 26 = 6. 2⁶ = 64 adres, minus síť a broadcast = **62** zařízení."
+        },
+        {
+          "type": "heading",
+          "text": "Třídy adres: jen historie"
+        },
+        {
+          "type": "text",
+          "text": "Dřív se adresy dělily do **tříd** A (1–126.x.x.x), B (128–191) a C (192–223) s pevnou maskou /8, /16, /24. Dnes se používá **beztřídní** adresování (CIDR): maska může mít libovolnou délku a vždy se píše."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Síť /20 má 2²⁰ adres.",
+          "right": "Síť /20 má **2¹² = 4096** adres (4094 použitelných).",
+          "why": "Prefix říká počet **síťových** bitů. Počet adres určují **zbylé** bity: 32 − 20 = 12."
+        },
+        {
+          "type": "summary",
+          "text": "Oktet převádíš pomocí hodnot 128, 64, 32, 16, 8, 4, 2, 1. Adresa AND maska = adresa sítě, hostitelské bity na 1 = broadcast. Počet zařízení = 2^(32 − prefix) − 2."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik bitů má IPv4 adresa?",
+      "answers": [
+        "32"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký prefix odpovídá masce 255.255.255.0? Napiš jen číslo.",
+      "answers": [
+        "24",
+        "/24"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je adresa sítě pro 192.168.10.77/24?",
+      "answers": [
+        "192.168.10.0"
+      ],
+      "hints": [
+        "U /24 jsou první tři oktety síť.",
+        "Hostitelskou část nahraď nulou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je broadcastová adresa sítě 10.5.0.0/16?",
+      "answers": [
+        "10.5.255.255"
+      ],
+      "hints": [
+        "U /16 jsou síť první dva oktety.",
+        "Všechny hostitelské bity nastav na jedničky."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 200 do dvojkové soustavy (8 bitů).",
+      "answers": [
+        "11001000"
+      ],
+      "hints": [
+        "Hodnoty pozic: 128, 64, 32, 16, 8, 4, 2, 1.",
+        "Začni: 200 − 128 = 72."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik zařízení lze adresovat v síti /27?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "32 − 27 = 5 bitů, 2⁵ − 2 = 30.",
+      "hints": [
+        "Spočítej hostitelské bity: 32 minus prefix.",
+        "Od počtu adres odečti síť a broadcast."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která adresa je privátní?",
+      "options": [
+        "172.20.1.5",
+        "172.40.1.5",
+        "8.8.4.4",
+        "193.168.1.1"
+      ],
+      "answer": 0,
+      "hints": [
+        "Privátní rozsah se 172 jde jen od 172.16 do 172.31."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou adresu nesmí dostat počítač v síti 192.168.5.0/24?",
+      "options": [
+        "192.168.5.255",
+        "192.168.5.1",
+        "192.168.5.100",
+        "192.168.5.254"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Adresy 192.168.1.10/24 a 192.168.1.200/24 jsou ve stejné síti.",
+      "answer": true,
+      "explanation": "Obě mají síťovou část 192.168.1."
+    },
+    {
+      "type": "truefalse",
+      "question": "Adresa 169.254.12.5 znamená, že počítač nejspíš nedostal adresu od DHCP.",
+      "answer": true,
+      "explanation": "Rozsah 169.254.0.0/16 (APIPA) si počítač přidělí sám, když DHCP neodpovídá."
+    },
+    {
+      "type": "match",
+      "question": "Spoj prefix s maskou.",
+      "pairs": [
+        [
+          "/8",
+          "255.0.0.0"
+        ],
+        [
+          "/16",
+          "255.255.0.0"
+        ],
+        [
+          "/24",
+          "255.255.255.0"
+        ],
+        [
+          "/26",
+          "255.255.255.192"
+        ],
+        [
+          "/30",
+          "255.255.255.252"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží výchozí brána?",
+      "options": [
+        "přes ni počítač posílá data mimo svou síť",
+        "přiděluje IP adresy",
+        "překládá jména na adresy",
+        "ukládá MAC adresy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, k čemu je maska podsítě.",
+      "answer": "Maska určuje, kolik bitů IP adresy zleva je síťová část a kolik hostitelská. Počítač podle ní pozná, jestli je cíl v jeho síti (pošle přímo), nebo mimo ni (pošle na výchozí bránu)."
+    },
+    {
+      "type": "open",
+      "question": "Proč v síti /24 může mít adresu jen 254 zařízení, a ne 256?",
+      "answer": "Hostitelská část má 8 bitů, to je 256 adres. První adresa (samé nuly) je adresa sítě a poslední (samé jedničky) je broadcast. Tyto dvě se zařízením nepřidělují, zbývá 254."
+    }
+  ]
+}

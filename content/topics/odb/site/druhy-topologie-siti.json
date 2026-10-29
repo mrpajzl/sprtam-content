@@ -1,0 +1,519 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "druhy-topologie-siti",
+  "title": "Druhy a topologie sítí",
+  "emoji": "🗺️",
+  "explanations": [
+    {
+      "title": "Od domova po svět",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Doma máš notebook, mobil a tiskárnu. Mobil pošle fotku do tiskárny a notebook si přehraje film ze serveru na druhém konci světa. Všechno to funguje díky **počítačovým sítím**."
+        },
+        {
+          "type": "text",
+          "text": "Když síť navrhuješ nebo opravuješ, musíš vědět, jak je velká a jak jsou zařízení propojená. Podle toho volíš kabely, krabičky i způsob hledání závady."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Počítačová síť",
+          "definition": "Dvě a více zařízení propojených tak, aby si mohla posílat data a sdílet prostředky (soubory, tiskárnu, internet).",
+          "example": "Notebook a tiskárna připojené ke stejnému domácímu routeru."
+        },
+        {
+          "type": "term",
+          "term": "Uzel",
+          "definition": "Každé zařízení připojené do sítě: počítač, mobil, tiskárna, server, ale i přepínač nebo router.",
+          "example": "Ve třídě s 30 počítači a jednou tiskárnou je aspoň 31 uzlů."
+        },
+        {
+          "type": "term",
+          "term": "Topologie",
+          "definition": "Tvar sítě: jak jsou uzly propojené. **Fyzická** topologie popisuje, kudy vedou kabely. **Logická** popisuje, kudy skutečně tečou data.",
+          "example": "Kabely vedou do jedné krabice uprostřed → fyzická hvězda."
+        },
+        {
+          "type": "heading",
+          "text": "Sítě podle velikosti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zkratka",
+            "Celý název",
+            "Rozsah",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "PAN",
+              "Personal Area Network",
+              "pár metrů kolem člověka",
+              "mobil + sluchátka přes Bluetooth"
+            ],
+            [
+              "LAN",
+              "Local Area Network",
+              "místnost, budova, areál",
+              "síť školy nebo firmy"
+            ],
+            [
+              "MAN",
+              "Metropolitan Area Network",
+              "město",
+              "metropolitní síť propojující městské úřady"
+            ],
+            [
+              "WAN",
+              "Wide Area Network",
+              "státy, kontinenty",
+              "propojení poboček firmy, internet"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**WLAN** je bezdrátová LAN, tedy síť Wi-Fi. **Internet** je největší WAN: síť sítí, která propojuje miliony LAN po celém světě."
+        },
+        {
+          "type": "heading",
+          "text": "Topologie: jak jsou uzly propojené"
+        },
+        {
+          "type": "term",
+          "term": "Přepínač (switch)",
+          "definition": "Krabička s mnoha zásuvkami pro síťové kabely. Propojí zařízení v jedné LAN a posílá data jen tomu, komu patří.",
+          "example": "Přepínač s 24 porty v serverovně školy."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Topologie",
+            "Jak vypadá",
+            "Výhoda",
+            "Nevýhoda"
+          ],
+          "rows": [
+            [
+              "sběrnice",
+              "všichni na jednom společném kabelu",
+              "málo kabelu",
+              "přerušení kabelu vyřadí celou síť"
+            ],
+            [
+              "kruh",
+              "každý uzel spojený se dvěma sousedy, dokola",
+              "pravidelný provoz",
+              "výpadek jednoho uzlu může přerušit kruh"
+            ],
+            [
+              "hvězda",
+              "všichni připojení k jednomu středu (přepínači)",
+              "snadné hledání závady, výpadek kabelu vyřadí jen jeden uzel",
+              "výpadek středu vyřadí všechny"
+            ],
+            [
+              "strom (rozšířená hvězda)",
+              "hvězdy napojené na další hvězdy",
+              "dobře roste s velikostí sítě",
+              "výpadek horního přepínače odřízne celou větev"
+            ],
+            [
+              "mesh (síť)",
+              "uzly propojené mnoha cestami, úplný mesh = každý s každým",
+              "když jedna cesta padne, data jdou jinudy",
+              "drahé, hodně kabelů"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dnešní kabelové LAN jsou skoro vždy **hvězda** nebo **strom**. Páteř internetu je **částečný mesh**: mezi uzly vede víc cest."
+        },
+        {
+          "type": "example",
+          "question": "Ve škole vede z každé učebny 20 kabelů do přepínače na chodbě. Přepínače z chodeb vedou do hlavního přepínače v serverovně. Jaká je to topologie?",
+          "answer": "Každá učebna je **hvězda** kolem svého přepínače. Ty hvězdy jsou napojené na hlavní přepínač. Hvězda složená z hvězd je **strom (rozšířená hvězda)**."
+        },
+        {
+          "type": "example",
+          "question": "V hvězdě s 12 počítači se přetrhne kabel k počítači č. 5. Kolik počítačů přijde o síť? A co když vyhoří přepínač?",
+          "answer": "Přetržený kabel vede jen k počítači č. 5, takže síť ztratí **1 počítač**. Ostatní komunikují dál. Když vyhoří přepínač, je to střed hvězdy: o síť přijde **všech 12**."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo komu slouží"
+        },
+        {
+          "type": "term",
+          "term": "Klient–server",
+          "definition": "Uspořádání, kde **server** nabízí službu (web, soubory, tisk) a **klienti** si o ni žádají.",
+          "example": "Prohlížeč (klient) si stáhne stránku z webového serveru."
+        },
+        {
+          "type": "term",
+          "term": "Peer-to-peer (P2P)",
+          "definition": "Uspořádání, kde jsou si všichni rovni: každý počítač je klient i server zároveň.",
+          "example": "Dva notebooky si přímo sdílejí složku, nebo sdílení souborů přes BitTorrent."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "LAN",
+              "WAN",
+              "PAN"
+            ],
+            "items": [
+              {
+                "text": "síť v jedné kanceláři",
+                "group": 0
+              },
+              {
+                "text": "hodinky spárované s mobilem",
+                "group": 2
+              },
+              {
+                "text": "propojení poboček v Praze a Brně",
+                "group": 1
+              },
+              {
+                "text": "Wi-Fi v kavárně",
+                "group": 0
+              },
+              {
+                "text": "internet",
+                "group": 1
+              },
+              {
+                "text": "bezdrátová myš přes Bluetooth",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hvězda je spolehlivá, protože nemá žádné slabé místo.",
+          "right": "Hvězda snese výpadek kabelu k jednomu uzlu, ale **střed (přepínač) je slabé místo** celé sítě.",
+          "why": "Všechna data tečou přes střed. Když vypadne, nikdo nemá s kým mluvit. Proto se v důležitých sítích zálohují přepínače i trasy."
+        },
+        {
+          "type": "summary",
+          "text": "Podle velikosti dělíme sítě na PAN, LAN, MAN a WAN; internet je největší WAN. Topologie popisuje tvar sítě: sběrnice, kruh, hvězda, strom, mesh. Dnešní LAN jsou hvězda nebo strom."
+        }
+      ]
+    },
+    {
+      "title": "Tvary a vlastnosti",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že máš propojit pět domů telefonním drátem. Můžeš natáhnout jeden dlouhý drát kolem všech, každý dům napojit do jedné ústředny, nebo propojit každý dům s každým. Každá možnost stojí jinak a jinak snese poruchu."
+        },
+        {
+          "type": "text",
+          "text": "Přesně tohle řeší **topologie** počítačových sítí. A k tomu, jak velkou oblast síť pokrývá, slouží dělení LAN, MAN, WAN."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Počítačová síť",
+          "definition": "Propojená zařízení, která si posílají data.",
+          "example": "Školní síť, na kterou jsou připojené počítače v učebnách."
+        },
+        {
+          "type": "term",
+          "term": "Uzel",
+          "definition": "Jakékoli zařízení v síti.",
+          "example": "počítač, tiskárna, router"
+        },
+        {
+          "type": "term",
+          "term": "Topologie",
+          "definition": "Způsob propojení uzlů. Fyzická = kudy vedou kabely, logická = jak tečou data."
+        },
+        {
+          "type": "term",
+          "term": "Přepínač (switch)",
+          "definition": "Zařízení, do kterého se zapojí kabely od počítačů. Tvoří střed hvězdy."
+        },
+        {
+          "type": "term",
+          "term": "Redundance",
+          "definition": "Záložní cesta nebo zařízení navíc. Když jedno selže, převezme práci druhé.",
+          "example": "Dvě linky k internetu od dvou různých operátorů."
+        },
+        {
+          "type": "heading",
+          "text": "Pět základních tvarů"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "💻",
+            "➖",
+            "💻",
+            "➖",
+            "💻",
+            "➖",
+            "💻"
+          ],
+          "caption": "Sběrnice: jeden společný kabel"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "💻",
+            "➖",
+            "🔀",
+            "➖",
+            "💻"
+          ],
+          "caption": "Hvězda: všichni do přepínače uprostřed"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Sběrnice** – historická (koaxiální kabel). Všichni slyší všechno. Porucha kabelu = celá síť stojí.",
+            "**Kruh** – data obíhají dokola od souseda k sousedovi. Dnes hlavně v páteřních optických sítích, kde bývá kruh zdvojený.",
+            "**Hvězda** – každý uzel má vlastní kabel do středu. Standard dnešních LAN.",
+            "**Strom** – víc hvězd zapojených pod sebe. Typická síť budovy.",
+            "**Mesh** – mnoho cest mezi uzly. Vysoká redundance, vysoká cena."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kolik kabelů potřebuješ na **úplný mesh** pěti počítačů?",
+          "answer": "Každý počítač se spojí se 4 ostatními: 5 · 4 = 20. Tak by ale byl každý kabel započítaný dvakrát (A–B i B–A). Vzorec je `n · (n − 1) / 2` = 5 · 4 / 2 = **10 kabelů**."
+        },
+        {
+          "type": "example",
+          "question": "A kolik kabelů potřebuje hvězda pěti počítačů?",
+          "answer": "Každý počítač jeden kabel do přepínače: **5 kabelů**. Proto je hvězda levná a mesh drahý."
+        },
+        {
+          "type": "heading",
+          "text": "Velikost sítě"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**PAN** – osobní síť do pár metrů (Bluetooth sluchátka).",
+            "**LAN** – místní síť budovy nebo areálu. Patří jednomu vlastníkovi, je rychlá.",
+            "**MAN** – síť města.",
+            "**WAN** – rozlehlá síť přes velké vzdálenosti. Linky si většinou pronajímáš od operátora. Největší WAN je internet."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Klient–server a peer-to-peer"
+        },
+        {
+          "type": "text",
+          "text": "V síti **klient–server** jeden výkonný počítač (**server**) poskytuje službu a ostatní (**klienti**) ji využívají. Správa je centrální, ale server je slabé místo. V síti **peer-to-peer** jsou si počítače rovné a sdílejí si prostředky navzájem."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Sběrnice",
+                "back": "jeden společný kabel, porucha vyřadí všechny"
+              },
+              {
+                "front": "Hvězda",
+                "back": "všichni do jednoho přepínače"
+              },
+              {
+                "front": "Strom",
+                "back": "hvězdy zapojené pod sebe"
+              },
+              {
+                "front": "Mesh",
+                "back": "mnoho cest, vysoká redundance"
+              },
+              {
+                "front": "WAN",
+                "back": "rozlehlá síť, např. internet"
+              },
+              {
+                "front": "P2P",
+                "back": "všichni jsou klient i server"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wi-Fi síť v bytě je WAN, protože je bezdrátová.",
+          "right": "Wi-Fi v bytě je **WLAN**, tedy bezdrátová **LAN**.",
+          "why": "Dělení LAN/MAN/WAN se řídí **rozlohou**, ne tím, jestli síť používá kabel nebo rádio."
+        },
+        {
+          "type": "summary",
+          "text": "Topologie = tvar sítě (sběrnice, kruh, hvězda, strom, mesh). Mesh je nejodolnější, hvězda nejlevnější na správu. Velikost: PAN < LAN < MAN < WAN."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká topologie převládá v dnešních kabelových LAN?",
+      "options": [
+        "hvězda nebo strom",
+        "sběrnice",
+        "kruh",
+        "úplný mesh"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Síť, která propojuje pobočky firmy v Praze, Brně a Vídni, je:",
+      "options": [
+        "WAN",
+        "LAN",
+        "PAN",
+        "WLAN"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve hvězdě vyřadí přetržený kabel k jednomu počítači celou síť.",
+      "answer": false,
+      "explanation": "Přijde o síť jen ten jeden počítač. Celou síť vyřadí výpadek středu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Internet je největší WAN – síť sítí.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolik propojení potřebuje úplný mesh 6 uzlů?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "6 · 5 / 2 = 15.",
+      "hints": [
+        "Každý uzel se spojí se všemi ostatními.",
+        "Použij vzorec n · (n − 1) / 2 a nezapomeň, že každé spojení počítáš jen jednou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou nazývá osobní síť do několika metrů, např. mobil a sluchátka?",
+      "answers": [
+        "PAN"
+      ],
+      "hints": [
+        "P jako „personal“."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj topologii s jejím popisem.",
+      "pairs": [
+        [
+          "sběrnice",
+          "jeden společný kabel"
+        ],
+        [
+          "hvězda",
+          "všichni do jednoho středu"
+        ],
+        [
+          "kruh",
+          "každý se dvěma sousedy dokola"
+        ],
+        [
+          "mesh",
+          "mnoho záložních cest"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď sítě od nejmenší po největší rozlohu.",
+      "items": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je **slabé místo** topologie hvězda?",
+      "options": [
+        "přepínač uprostřed",
+        "kabel k jednomu počítači",
+        "počet počítačů",
+        "délka názvu sítě"
+      ],
+      "answer": 0,
+      "hints": [
+        "Přes které zařízení tečou úplně všechna data?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Školní síť: učebny mají vlastní přepínače napojené na hlavní přepínač. Jaká je to topologie?",
+      "options": [
+        "strom (rozšířená hvězda)",
+        "sběrnice",
+        "kruh",
+        "peer-to-peer"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve fyzické topologii jde o to, kudy vedou kabely; v logické o to, jak tečou data.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Dva notebooky si přímo sdílejí složku bez serveru. Jde o:",
+      "options": [
+        "peer-to-peer",
+        "klient–server",
+        "MAN",
+        "sběrnici"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej topologii hvězda a mesh. Kdy bys zvolil kterou?",
+      "answer": "Hvězda je levná a snadno se spravuje, ale střed je slabé místo. Mesh má mnoho cest, snese výpadky, ale je drahý. Hvězdu volím pro běžnou LAN, mesh pro páteř nebo kritické spoje, kde výpadek nesmí nastat."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi LAN a WAN.",
+      "answer": "LAN je místní síť jedné budovy nebo areálu, patří jednomu vlastníkovi a je rychlá. WAN propojuje vzdálená místa (města, státy), linky se pronajímají od operátora. Internet je největší WAN."
+    }
+  ]
+}

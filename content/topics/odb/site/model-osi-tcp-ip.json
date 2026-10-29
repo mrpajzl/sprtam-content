@@ -1,0 +1,591 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "model-osi-tcp-ip",
+  "title": "Model OSI a TCP/IP",
+  "emoji": "🧅",
+  "explanations": [
+    {
+      "title": "Jako balík poštou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když posíláš balík, nemusíš vědět, jak jezdí poštovní auto. Zabalíš věc, napíšeš adresu a zbytek zařídí pošta. Každý v řetězu dělá jen svou část: balič, třídírna, řidič."
+        },
+        {
+          "type": "text",
+          "text": "Síť funguje stejně. Přenos dat je rozdělený do **vrstev** a každá řeší jen jeden úkol. Díky tomu můžeš vyměnit kabel za Wi-Fi a prohlížeč to vůbec nepozná. Vrstvy jsou také společný jazyk techniků: „chyba je na 1. vrstvě“ znamená „zkontroluj kabel“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Protokol",
+          "definition": "Dohodnutá pravidla, jak si dvě zařízení vyměňují data: co pošlou, v jakém pořadí a formátu.",
+          "example": "HTTP je protokol, podle kterého si prohlížeč říká serveru o webovou stránku."
+        },
+        {
+          "type": "term",
+          "term": "Vrstva",
+          "definition": "Část přenosu, která řeší jeden úkol a využívá služby vrstvy pod sebou.",
+          "example": "Vrstva, která hledá cestu přes síť, se nestará o to, jestli vede kabel, nebo rádio."
+        },
+        {
+          "type": "term",
+          "term": "Referenční model",
+          "definition": "Popis rozdělení přenosu do vrstev. Slouží k učení, návrhu a hledání chyb.",
+          "example": "Model OSI má 7 vrstev, model TCP/IP 4."
+        },
+        {
+          "type": "term",
+          "term": "MAC adresa, IP adresa a port",
+          "definition": "**MAC adresa** je pevná adresa síťové karty, platí v místní síti. **IP adresa** je logická adresa zařízení, podle ní se hledá cesta mezi sítěmi. **Port** je číslo, které v počítači určuje konkrétní program nebo službu.",
+          "example": "MAC 3C:52:82:1A:2B:3C, IP 192.168.1.15, port 443 pro HTTPS."
+        },
+        {
+          "type": "heading",
+          "text": "Sedm vrstev OSI na příkladu balíku"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Č.",
+            "Vrstva OSI",
+            "Co dělá",
+            "Jako u pošty"
+          ],
+          "rows": [
+            [
+              "7",
+              "aplikační",
+              "služby pro programy (web, e-mail)",
+              "co chceš poslat"
+            ],
+            [
+              "6",
+              "prezentační",
+              "formát dat, kódování, šifrování, komprese",
+              "přeložení dopisu, zapečetění"
+            ],
+            [
+              "5",
+              "relační",
+              "zahájení, udržení a ukončení relace (spojení programů)",
+              "domluva, že spolu dopisujete"
+            ],
+            [
+              "4",
+              "transportní",
+              "rozdělení na kusy, spolehlivost, porty",
+              "očíslování krabic, potvrzení doručení"
+            ],
+            [
+              "3",
+              "síťová",
+              "logické adresy (IP), hledání cesty mezi sítěmi",
+              "adresa a třídírny po cestě"
+            ],
+            [
+              "2",
+              "linková (spojová)",
+              "přenos v rámci jedné sítě, fyzické adresy (MAC)",
+              "předání od jedné pobočky k další"
+            ],
+            [
+              "1",
+              "fyzická",
+              "bity jako elektrické, světelné nebo rádiové signály",
+              "auto, silnice"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pořadí si zapamatuješ pomůckou zdola: **F**yzická, **L**inková, **S**íťová, **T**ransportní, **R**elační, **P**rezentační, **A**plikační."
+        },
+        {
+          "type": "heading",
+          "text": "Zabalení a rozbalení"
+        },
+        {
+          "type": "term",
+          "term": "Zapouzdření (enkapsulace)",
+          "definition": "Každá vrstva při odesílání přidá k datům svou **hlavičku** (štítek s údaji pro svou vrstvu) a pošle je o vrstvu níž. Příjemce hlavičky postupně sundává zdola nahoru.",
+          "example": "Transportní vrstva přidá číslo portu, síťová IP adresy, linková MAC adresy."
+        },
+        {
+          "type": "term",
+          "term": "PDU",
+          "definition": "Jednotka dat na dané vrstvě (Protocol Data Unit). Každá vrstva má pro ni jiný název.",
+          "example": "Na 3. vrstvě se jednotka jmenuje paket."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vrstva",
+            "Název PDU"
+          ],
+          "rows": [
+            [
+              "aplikační (5–7)",
+              "data"
+            ],
+            [
+              "transportní (4)",
+              "segment (TCP), datagram (UDP)"
+            ],
+            [
+              "síťová (3)",
+              "paket"
+            ],
+            [
+              "linková (2)",
+              "rámec"
+            ],
+            [
+              "fyzická (1)",
+              "bity"
+            ]
+          ]
+        },
+        {
+          "type": "picture",
+          "items": [
+            "📄",
+            "➡️",
+            "📦",
+            "➡️",
+            "✉️",
+            "➡️",
+            "🚚"
+          ],
+          "caption": "Data → segment → paket → rámec → bity"
+        },
+        {
+          "type": "heading",
+          "text": "Model TCP/IP"
+        },
+        {
+          "type": "text",
+          "text": "OSI je hlavně učebnicový model. Internet ve skutečnosti běží podle modelu **TCP/IP**, který má jen 4 vrstvy. Některé vrstvy OSI v něm jsou sloučené."
+        },
+        {
+          "type": "table",
+          "head": [
+            "TCP/IP",
+            "odpovídá v OSI",
+            "příklady protokolů"
+          ],
+          "rows": [
+            [
+              "aplikační",
+              "5, 6, 7",
+              "HTTP, DNS, SMTP, SSH"
+            ],
+            [
+              "transportní",
+              "4",
+              "TCP, UDP"
+            ],
+            [
+              "internetová (síťová)",
+              "3",
+              "IP, ICMP"
+            ],
+            [
+              "síťového rozhraní (přístup k síti)",
+              "1, 2",
+              "Ethernet, Wi-Fi"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Otevřeš v prohlížeči web. Popiš, co se děje s daty při odeslání požadavku.",
+          "answer": "1) Prohlížeč vytvoří požadavek **HTTP** (aplikační vrstva). 2) **TCP** ho zabalí do segmentu a přidá porty (transportní). 3) **IP** přidá IP adresu odesílatele a cíle → paket (síťová). 4) **Ethernet** přidá MAC adresy → rámec (linková). 5) Síťová karta pošle bity kabelem (fyzická). U serveru se to rozbalí opačně."
+        },
+        {
+          "type": "example",
+          "question": "Počítač nevidí síť, na síťové kartě nesvítí kontrolka. Na které vrstvě začneš hledat?",
+          "answer": "Nesvítí kontrolka spojení → není signál → **1. fyzická vrstva**. Zkontroluj kabel, zásuvku a port přepínače. Hledání chyb se obvykle dělá **zdola nahoru**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Model OSI je protokol, který posílá data po internetu.",
+          "right": "OSI je **referenční model**, tedy popis. Data posílají konkrétní **protokoly** (Ethernet, IP, TCP, HTTP).",
+          "why": "Model je jako mapa: pomůže pochopit, kde co je, ale sám nikam nejede."
+        },
+        {
+          "type": "summary",
+          "text": "OSI má 7 vrstev (fyzická, linková, síťová, transportní, relační, prezentační, aplikační), TCP/IP má 4. Při odesílání každá vrstva přidá hlavičku (zapouzdření), příjemce je sundává."
+        }
+      ]
+    },
+    {
+      "title": "Vrstvu po vrstvě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik na podpoře se ptá: „Svítí kontrolka? Máte IP adresu? Funguje jiná stránka?“ Neptá se náhodně. Postupuje po **vrstvách** síťového modelu, od kabelu po aplikaci."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme každou vrstvu zvlášť: co dělá, jaká zařízení a protokoly k ní patří a jak se jmenuje balíček dat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Protokol",
+          "definition": "Pravidla komunikace mezi zařízeními.",
+          "example": "IP, TCP, HTTP"
+        },
+        {
+          "type": "term",
+          "term": "Hlavička",
+          "definition": "Řídicí údaje, které vrstva přidá před data, např. adresu odesílatele a příjemce.",
+          "example": "IP hlavička obsahuje IP adresu cíle."
+        },
+        {
+          "type": "term",
+          "term": "Zapouzdření",
+          "definition": "Postupné přidávání hlaviček shora dolů při odesílání. Opak (sundávání hlaviček u příjemce) je **dekapsulace**."
+        },
+        {
+          "type": "term",
+          "term": "Rozbočovač (hub)",
+          "definition": "Zastaralé zařízení, které příchozí signál jen zopakuje do všech portů. Adresám nerozumí."
+        },
+        {
+          "type": "term",
+          "term": "Router (směrovač)",
+          "definition": "Zařízení, které propojuje různé sítě a hledá cestu podle IP adres.",
+          "example": "Domácí router propojuje tvoji LAN s internetem."
+        },
+        {
+          "type": "term",
+          "term": "MAC adresa, IP adresa a port",
+          "definition": "**MAC adresa** je pevná adresa síťové karty, platí v místní síti. **IP adresa** je logická adresa zařízení, podle ní se hledá cesta mezi sítěmi. **Port** je číslo, které v počítači určuje konkrétní program nebo službu.",
+          "example": "MAC 3C:52:82:1A:2B:3C, IP 192.168.1.15, port 443 pro HTTPS."
+        },
+        {
+          "type": "heading",
+          "text": "Vrstvy zdola nahoru"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**1 Fyzická** – bity jako signál v kabelu, světle nebo rádiu. Konektory, napětí. Zařízení: kabel, hub, opakovač.",
+            "**2 Linková** – přenos rámců mezi sousedy v jedné síti, MAC adresy, kontrola chyb. Zařízení: přepínač, síťová karta.",
+            "**3 Síťová** – IP adresy, směrování mezi sítěmi. Zařízení: router.",
+            "**4 Transportní** – spojení mezi programy, porty, spolehlivost. Protokoly TCP a UDP.",
+            "**5 Relační** – řídí relaci (sezení): navázání, udržování, ukončení.",
+            "**6 Prezentační** – převod formátu, kódování znaků, šifrování, komprese.",
+            "**7 Aplikační** – protokoly, které používají programy: HTTP, DNS, SMTP, FTP."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si: roztřiď zařízení a protokoly podle vrstvy, na které pracují."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "1 fyzická",
+              "2 linková",
+              "3 síťová",
+              "4 transportní"
+            ],
+            "items": [
+              {
+                "text": "kabel UTP",
+                "group": 0
+              },
+              {
+                "text": "hub",
+                "group": 0
+              },
+              {
+                "text": "přepínač",
+                "group": 1
+              },
+              {
+                "text": "MAC adresa",
+                "group": 1
+              },
+              {
+                "text": "router",
+                "group": 2
+              },
+              {
+                "text": "IP adresa",
+                "group": 2
+              },
+              {
+                "text": "TCP",
+                "group": 3
+              },
+              {
+                "text": "UDP",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Jména balíčků dat"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Na 2. vrstvě se data jmenují ",
+                "after": "",
+                "options": [
+                  "rámec",
+                  "paket",
+                  "segment"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Na 3. vrstvě se data jmenují ",
+                "after": "",
+                "options": [
+                  "paket",
+                  "rámec",
+                  "bity"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "TCP posílá ",
+                "after": "",
+                "options": [
+                  "segmenty",
+                  "rámce",
+                  "pakety"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Na 1. vrstvě putují ",
+                "after": "",
+                "options": [
+                  "bity",
+                  "pakety",
+                  "segmenty"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "TCP/IP: model, podle kterého běží internet"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Aplikační** (OSI 5–7): HTTP, HTTPS, DNS, SMTP, SSH.",
+            "**Transportní** (OSI 4): TCP, UDP.",
+            "**Internetová** (OSI 3): IP, ICMP (ping).",
+            "**Síťového rozhraní** (OSI 1–2): Ethernet, Wi-Fi."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ping na IP adresu 8.8.8.8 funguje, ale stránka google.com se nenačte. Které vrstvy fungují a kde hledat chybu?",
+          "answer": "Ping na IP prošel → fungují vrstvy **1–3** (kabel, místní síť, směrování). Nefunguje přeložení jména na adresu nebo samotná služba → hledej **výš**: nejčastěji **DNS** (aplikační vrstva), případně nastavení prohlížeče."
+        },
+        {
+          "type": "example",
+          "question": "Kolik hlaviček přidá odesílatel k HTTP požadavku, když jde přes Ethernet?",
+          "answer": "TCP hlavička (4. vrstva), IP hlavička (3. vrstva) a ethernetová hlavička s patičkou (2. vrstva) = **3 hlavičky**. Fyzická vrstva už jen převede rámec na signál."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Přepínač pracuje na 3. vrstvě, protože posílá data správnému počítači.",
+          "right": "Běžný přepínač pracuje na **2. vrstvě**: rozhoduje podle **MAC** adres. Na 3. vrstvě podle IP adres pracuje **router** (a L3 přepínač).",
+          "why": "Vrstvu zařízení určuje, jakou adresu čte, ne to, že „posílá správně“."
+        },
+        {
+          "type": "summary",
+          "text": "Fyzická = bity, linková = rámce a MAC, síťová = pakety a IP, transportní = segmenty a porty, horní vrstvy = služby pro programy. TCP/IP slučuje OSI do 4 vrstev. Chyby hledej zdola nahoru."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď vrstvy modelu OSI od 1. (nejnižší) po 7.",
+      "items": [
+        "fyzická",
+        "linková",
+        "síťová",
+        "transportní",
+        "relační",
+        "prezentační",
+        "aplikační"
+      ],
+      "hints": [
+        "Začni vrstvou, kde jsou kabely a signály.",
+        "Pomůcka: F-L-S-T-R-P-A."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik vrstev má model OSI?",
+      "answers": [
+        "7",
+        "sedm"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik vrstev má model TCP/IP?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na které vrstvě OSI pracuje router?",
+      "options": [
+        "síťové (3.)",
+        "linkové (2.)",
+        "fyzické (1.)",
+        "transportní (4.)"
+      ],
+      "answer": 0,
+      "hints": [
+        "Router rozhoduje podle IP adres."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje PDU na linkové vrstvě?",
+      "options": [
+        "rámec",
+        "paket",
+        "segment",
+        "bit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj protokol nebo zařízení s vrstvou OSI.",
+      "pairs": [
+        [
+          "HTTP",
+          "aplikační"
+        ],
+        [
+          "TCP",
+          "transportní"
+        ],
+        [
+          "IP",
+          "síťová"
+        ],
+        [
+          "přepínač",
+          "linková"
+        ],
+        [
+          "kabel UTP",
+          "fyzická"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při odesílání přidává každá vrstva k datům svou hlavičku.",
+      "answer": true,
+      "explanation": "Tomu se říká zapouzdření."
+    },
+    {
+      "type": "truefalse",
+      "question": "Model OSI je protokol, kterým se přenášejí webové stránky.",
+      "answer": false,
+      "explanation": "OSI je referenční model. Webové stránky přenáší protokol HTTP(S)."
+    },
+    {
+      "type": "choice",
+      "question": "Která vrstva OSI má na starosti šifrování a převod formátu dat?",
+      "options": [
+        "prezentační",
+        "relační",
+        "transportní",
+        "linková"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Ping na IP adresu funguje, ale jména webů se nepřekládají. Kde je nejspíš chyba?",
+      "options": [
+        "v DNS na aplikační vrstvě",
+        "v kabelu",
+        "v síťové kartě",
+        "v přepínači"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Které vrstvy OSI odpovídají vrstvě síťového rozhraní v TCP/IP?",
+      "options": [
+        "fyzická a linková",
+        "síťová a transportní",
+        "relační a prezentační",
+        "jen fyzická"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jednou slovem nazývá postupné přidávání hlaviček při odesílání dat?",
+      "answers": [
+        "zapouzdření",
+        "zapouzdreni",
+        "enkapsulace"
+      ],
+      "hints": [
+        "Data se postupně „balí“ do obálek."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč se síťová komunikace dělí do vrstev.",
+      "answer": "Každá vrstva řeší jeden úkol a spoléhá na vrstvu pod sebou. Díky tomu jde měnit jednu část (třeba kabel za Wi-Fi), aniž by se měnily ostatní, různí výrobci si rozumí a chyby se dají hledat postupně po vrstvách."
+    },
+    {
+      "type": "open",
+      "question": "Popiš zapouzdření dat při odeslání webového požadavku.",
+      "answer": "Prohlížeč vytvoří HTTP požadavek. TCP přidá hlavičku s porty a vznikne segment, IP přidá IP adresy a vznikne paket, Ethernet přidá MAC adresy a vznikne rámec. Fyzická vrstva ho pošle jako bity. Příjemce hlavičky sundává v opačném pořadí."
+    }
+  ]
+}

@@ -1,0 +1,547 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "wifi",
+  "title": "Wi-Fi: standardy a zabezpečení",
+  "emoji": "📶",
+  "explanations": [
+    {
+      "title": "Rádio v bytě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Wi-Fi je rádio. Router vysílá jako malá rozhlasová stanice a tvůj mobil ho poslouchá a odpovídá. Proto signál slábne za zdí, ruší ho mikrovlnka a soused na stejném kanálu ti zpomalí internet."
+        },
+        {
+          "type": "text",
+          "text": "Kdo stavíš nebo spravuješ Wi-Fi, musíš vybrat správné **pásmo**, **kanál** a hlavně **zabezpečení**. Špatně zabezpečená Wi-Fi je otevřené okno do celé sítě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Wi-Fi",
+          "definition": "Bezdrátová místní síť podle norem **IEEE 802.11**. Přenáší data rádiovými vlnami."
+        },
+        {
+          "type": "term",
+          "term": "Přístupový bod (AP)",
+          "definition": "Zařízení, které vysílá Wi-Fi a připojuje bezdrátová zařízení do kabelové sítě. Domácí router má AP v sobě."
+        },
+        {
+          "type": "term",
+          "term": "SSID",
+          "definition": "Jméno Wi-Fi sítě, které vidíš v seznamu.",
+          "example": "Skola-Hoste"
+        },
+        {
+          "type": "term",
+          "term": "Pásmo a kanál",
+          "definition": "**Pásmo** je rozsah rádiových kmitočtů: 2,4 GHz, 5 GHz, 6 GHz. **Kanál** je úzký úsek pásma, na kterém AP vysílá. Dva blízké AP na stejném kanálu si překážejí."
+        },
+        {
+          "type": "heading",
+          "text": "Pásma"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pásmo",
+            "Dosah a průchod zdmi",
+            "Rychlost a rušení"
+          ],
+          "rows": [
+            [
+              "2,4 GHz",
+              "nejlepší",
+              "pomalejší, málo kanálů, ruší mikrovlnky a Bluetooth"
+            ],
+            [
+              "5 GHz",
+              "menší",
+              "rychlejší, víc kanálů"
+            ],
+            [
+              "6 GHz",
+              "nejmenší",
+              "nejrychlejší, téměř bez rušení (od Wi-Fi 6E)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "V pásmu 2,4 GHz se kanály překrývají. Při šířce 20 MHz se v praxi používají nepřekrývající se kanály **1, 6 a 11**."
+        },
+        {
+          "type": "heading",
+          "text": "Generace Wi-Fi"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Označení",
+            "Norma",
+            "Pásma",
+            "Teoretické maximum"
+          ],
+          "rows": [
+            [
+              "Wi-Fi 4",
+              "802.11n",
+              "2,4 a 5 GHz",
+              "600 Mb/s"
+            ],
+            [
+              "Wi-Fi 5",
+              "802.11ac",
+              "5 GHz",
+              "asi 6,9 Gb/s"
+            ],
+            [
+              "Wi-Fi 6",
+              "802.11ax",
+              "2,4 a 5 GHz",
+              "asi 9,6 Gb/s"
+            ],
+            [
+              "Wi-Fi 6E",
+              "802.11ax",
+              "+ 6 GHz",
+              "jako Wi-Fi 6"
+            ],
+            [
+              "Wi-Fi 7",
+              "802.11be",
+              "2,4, 5 a 6 GHz",
+              "ještě vyšší"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Teoretické maximum v praxi nikdy neuvidíš: dělí se mezi všechna zařízení a klesá se vzdáleností a zdmi."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "Mb/s (teoreticky)",
+            "items": [
+              {
+                "label": "Wi-Fi 4",
+                "value": 600
+              },
+              {
+                "label": "Wi-Fi 5",
+                "value": 6900
+              },
+              {
+                "label": "Wi-Fi 6",
+                "value": 9600
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Zabezpečení"
+        },
+        {
+          "type": "term",
+          "term": "Šifrování",
+          "definition": "Úprava dat tak, aby je bez klíče nikdo nepřečetl. Ve Wi-Fi brání tomu, aby soused „poslouchal“ tvoje data ze vzduchu."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zabezpečení",
+            "Stav"
+          ],
+          "rows": [
+            [
+              "otevřená síť",
+              "bez šifrování, kdokoli čte provoz"
+            ],
+            [
+              "WEP",
+              "**prolomené**, nepoužívat"
+            ],
+            [
+              "WPA (TKIP)",
+              "zastaralé, nepoužívat"
+            ],
+            [
+              "WPA2 (AES)",
+              "stále přijatelné minimum"
+            ],
+            [
+              "WPA3",
+              "**doporučené**, nejbezpečnější"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "V bytě je router v obýváku a do pokoje za dvěma zdmi dojde slabý signál 5 GHz. Co uděláš?",
+          "answer": "Zařízení v pokoji může použít **2,4 GHz**, které lépe prochází zdmi (ale je pomalejší). Lepší řešení: přidat druhý AP nebo **mesh** systém, nebo přivést do pokoje kabel."
+        },
+        {
+          "type": "example",
+          "question": "Kterou trojici kanálů nastavíš třem AP vedle sebe v pásmu 2,4 GHz (šířka 20 MHz)?",
+          "answer": "**1, 6 a 11**. Nepřekrývají se, takže si AP nebudou rušit. Kdybys dal 1, 2 a 3, rušily by se navzájem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Skryju SSID a nastavím filtr MAC adres, to je dostatečné zabezpečení.",
+          "right": "Základ je **WPA3** (nebo WPA2 s AES) a **silné heslo**.",
+          "why": "Skryté SSID i povolené MAC adresy jde zachytit ze vzduchu běžnými nástroji a MAC adresu lze podvrhnout. Šifrování a heslo ochrání skutečně."
+        },
+        {
+          "type": "summary",
+          "text": "Wi-Fi = IEEE 802.11, pásma 2,4 GHz (dosah), 5 a 6 GHz (rychlost). Wi-Fi 4/5/6/7 = 802.11n/ac/ax/be. Používej WPA3, případně WPA2-AES, nikdy WEP ani otevřenou síť pro citlivá data."
+        }
+      ]
+    },
+    {
+      "title": "Nastavujeme AP",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Škola chce Wi-Fi pro učitele a zvlášť pro hosty. Učitelé se mají přihlašovat svým účtem a hosté nesmí vidět do školní sítě. Projdeme, jak takovou Wi-Fi navrhnout a zabezpečit krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "IEEE 802.11",
+          "definition": "Rodina norem pro Wi-Fi. Každá generace má písmena (n, ac, ax, be) a obchodní číslo (Wi-Fi 4, 5, 6, 7)."
+        },
+        {
+          "type": "term",
+          "term": "Přístupový bod (AP) a SSID",
+          "definition": "AP vysílá Wi-Fi, SSID je jméno sítě. Jeden AP může vysílat víc SSID, každé do jiné VLAN."
+        },
+        {
+          "type": "term",
+          "term": "CSMA/CA",
+          "definition": "Způsob přístupu k rádiu: zařízení nejdřív poslouchá, jestli je kanál volný, a teprve pak vysílá. Ve vzduchu totiž vysílá jen jeden najednou."
+        },
+        {
+          "type": "term",
+          "term": "WPA2 a WPA3",
+          "definition": "Zabezpečení Wi-Fi. **WPA2** šifruje AES. **WPA3** (od roku 2018) přidává bezpečnější přihlášení **SAE**, které brání hádání hesla offline ze zachyceného provozu."
+        },
+        {
+          "type": "term",
+          "term": "Personal a Enterprise",
+          "definition": "**Personal (PSK/SAE)** = jedno společné heslo pro všechny. **Enterprise (802.1X)** = každý uživatel se přihlásí vlastním účtem, ověřuje ho server **RADIUS**."
+        },
+        {
+          "type": "term",
+          "term": "WPS",
+          "definition": "Funkce pro připojení tlačítkem nebo PINem. Režim s PINem jde prolomit zkoušením, proto se WPS **vypíná**."
+        },
+        {
+          "type": "heading",
+          "text": "Postup nastavení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Změň výchozí heslo ke správě AP nebo routeru a aktualizuj jeho firmware.",
+            "Vytvoř SSID pro zaměstnance: **WPA3-Enterprise** (nebo WPA2-Enterprise), přihlášení školním účtem.",
+            "Vytvoř SSID pro hosty: **WPA3-Personal** (nebo WPA2-AES) s heslem, v **oddělené VLAN** jen s přístupem do internetu.",
+            "**Vypni WPS** a nepoužívej WEP, WPA/TKIP.",
+            "Vyber kanály: v 2,4 GHz 1, 6, 11; v 5 GHz širší kanály pro rychlost.",
+            "Ověř pokrytí měřením signálu (aplikací pro analýzu Wi-Fi)."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď nastavení na bezpečná a nebezpečná."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "bezpečné",
+              "nebezpečné"
+            ],
+            "items": [
+              {
+                "text": "WPA3-Personal se silným heslem",
+                "group": 0
+              },
+              {
+                "text": "WPA2-Enterprise s RADIUS",
+                "group": 0
+              },
+              {
+                "text": "zapnuté WPS s PINem",
+                "group": 1
+              },
+              {
+                "text": "WEP",
+                "group": 1
+              },
+              {
+                "text": "výchozí heslo admin/admin",
+                "group": 1
+              },
+              {
+                "text": "hosté v oddělené VLAN",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Personal vs. Enterprise"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Personal",
+            "Enterprise"
+          ],
+          "rows": [
+            [
+              "přihlášení",
+              "jedno heslo pro všechny",
+              "každý vlastní účet"
+            ],
+            [
+              "když někdo odejde",
+              "změnit heslo všem",
+              "zrušit jen jeho účet"
+            ],
+            [
+              "potřebuje",
+              "nic navíc",
+              "server RADIUS"
+            ],
+            [
+              "typicky",
+              "domácnost, hosté",
+              "firmy, školy"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Z firmy odešel zaměstnanec, který znal heslo k Wi-Fi WPA2-Personal. Co musí správce udělat? A jak by to bylo u Enterprise?",
+          "answer": "U **Personal** zná heslo každý, kdo ho kdy dostal. Správce musí **změnit heslo** a rozdat ho znovu všem. U **Enterprise** stačí **zablokovat účet** odcházejícího, ostatní nic nepoznají."
+        },
+        {
+          "type": "example",
+          "question": "Proč je WPA3-Personal bezpečnější než WPA2-Personal, když obě používají heslo?",
+          "answer": "U WPA2-Personal může útočník zachytit úvodní výměnu (handshake) a pak **offline** zkoušet hesla na svém počítači, kolik chce. WPA3 používá **SAE**: ze zachyceného provozu heslo zkoušet nejde, každý pokus musí jít přes AP. Navíc zachycený starší provoz nejde dešifrovat ani po prozrazení hesla."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "802.11n",
+                "back": "Wi-Fi 4"
+              },
+              {
+                "front": "802.11ac",
+                "back": "Wi-Fi 5"
+              },
+              {
+                "front": "802.11ax",
+                "back": "Wi-Fi 6 (6E s pásmem 6 GHz)"
+              },
+              {
+                "front": "802.11be",
+                "back": "Wi-Fi 7"
+              },
+              {
+                "front": "WEP",
+                "back": "prolomené, nepoužívat"
+              },
+              {
+                "front": "WPA3",
+                "back": "SAE, doporučené"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "WPA2-Enterprise a WPA2-Personal jsou totéž, jen se jinak jmenují.",
+          "right": "Personal = **jedno sdílené heslo**. Enterprise = **vlastní účet** každého uživatele ověřený přes 802.1X a RADIUS.",
+          "why": "Rozdíl je v ověřování uživatelů. Enterprise umí zablokovat jednoho člověka a ví, kdo se kdy připojil."
+        },
+        {
+          "type": "summary",
+          "text": "Wi-Fi bezpečně: WPA3 (nebo WPA2-AES), ve firmě Enterprise s RADIUS, hosté v oddělené VLAN, WPS vypnout, výchozí hesla změnit. Kanály 2,4 GHz: 1, 6, 11."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj označení Wi-Fi s normou.",
+      "pairs": [
+        [
+          "Wi-Fi 4",
+          "802.11n"
+        ],
+        [
+          "Wi-Fi 5",
+          "802.11ac"
+        ],
+        [
+          "Wi-Fi 6",
+          "802.11ax"
+        ],
+        [
+          "Wi-Fi 7",
+          "802.11be"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které pásmo Wi-Fi má nejlepší dosah a průchod zdmi?",
+      "options": [
+        "2,4 GHz",
+        "5 GHz",
+        "6 GHz",
+        "všechna stejný"
+      ],
+      "answer": 0,
+      "hints": [
+        "Nižší kmitočet se méně tlumí."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které zabezpečení Wi-Fi je dnes doporučené?",
+      "options": [
+        "WPA3",
+        "WEP",
+        "WPA (TKIP)",
+        "otevřená síť se skrytým SSID"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Skrytí SSID spolehlivě ochrání Wi-Fi před útočníkem.",
+      "answer": false,
+      "explanation": "Jméno sítě se dá zachytit z provozu. Chrání šifrování a silné heslo."
+    },
+    {
+      "type": "truefalse",
+      "question": "WPS s PINem se doporučuje vypnout.",
+      "answer": true,
+      "explanation": "PIN jde prolomit zkoušením."
+    },
+    {
+      "type": "choice",
+      "question": "Které kanály v pásmu 2,4 GHz (20 MHz) se nepřekrývají?",
+      "options": [
+        "1, 6, 11",
+        "1, 2, 3",
+        "5, 10, 15",
+        "2, 4, 6"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co potřebuje WPA2/WPA3-Enterprise navíc oproti Personal?",
+      "options": [
+        "server RADIUS pro ověření uživatelů",
+        "kabel ke každému počítači",
+        "pásmo 6 GHz",
+        "vypnuté šifrování"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč je WPA3-Personal odolnější proti hádání hesla?",
+      "options": [
+        "přihlášení SAE neumožní zkoušet hesla offline ze zachyceného provozu",
+        "má delší SSID",
+        "vysílá jen v 6 GHz",
+        "nepoužívá heslo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď zabezpečení Wi-Fi od nejslabšího po nejsilnější.",
+      "items": [
+        "otevřená síť",
+        "WEP",
+        "WPA (TKIP)",
+        "WPA2 (AES)",
+        "WPA3"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pod jakým číslem normy IEEE (802.?) jsou všechny Wi-Fi standardy? Napiš celé číslo.",
+      "answers": [
+        "802.11"
+      ],
+      "hints": [
+        "Ethernet má 802.3."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hosté ve škole mají mít internet, ale nesmí vidět do školní sítě. Jak to zajistíš?",
+      "options": [
+        "samostatné SSID pro hosty v oddělené VLAN",
+        "stejné SSID s jiným heslem",
+        "skrytím SSID",
+        "vypnutím DHCP"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak zařízení ve Wi-Fi zjišťují, jestli smí vysílat?",
+      "options": [
+        "nejdřív poslouchají, jestli je kanál volný (CSMA/CA)",
+        "vysílají všichni naráz",
+        "přidělí jim čas router podle MAC",
+        "podle čísla kanálu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak bys zabezpečil Wi-Fi v malé firmě?",
+      "answer": "Změním výchozí přihlášení do routeru a aktualizuji firmware. Nastavím WPA3 (nebo WPA2-AES), pro zaměstnance ideálně Enterprise s vlastními účty, pro hosty zvláštní SSID v oddělené VLAN. Vypnu WPS a nepoužiji WEP ani WPA/TKIP."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej pásma 2,4 GHz a 5 GHz.",
+      "answer": "2,4 GHz má větší dosah a lépe prochází zdmi, ale je pomalejší, má málo nepřekrývajících se kanálů a ruší ho mikrovlnky a Bluetooth. 5 GHz je rychlejší a má víc kanálů, ale menší dosah."
+    }
+  ]
+}

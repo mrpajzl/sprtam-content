@@ -1,0 +1,514 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "dns-dhcp-nat",
+  "title": "DNS, DHCP a NAT",
+  "emoji": "📇",
+  "explanations": [
+    {
+      "title": "Tři pomocníci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Připojíš notebook k Wi-Fi a za vteřinu můžeš psát „seznam.cz“. Nic jsi nenastavoval. Postarali se o to tři neviditelní pomocníci: **DHCP** ti přidělil adresu, **DNS** přeložil jméno na číslo a **NAT** tě pustil do internetu, i když máš jen vnitřní adresu."
+        },
+        {
+          "type": "text",
+          "text": "Když jeden z nich nefunguje, uživatel hlásí „nejde internet“. Technik musí poznat, který z nich to je."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: IP adresa",
+          "definition": "Číselná adresa zařízení v síti, např. 192.168.1.20. Privátní adresy (192.168.x.x, 10.x.x.x, 172.16–31.x.x) se v internetu nesměrují."
+        },
+        {
+          "type": "term",
+          "term": "Doménové jméno",
+          "definition": "Snadno zapamatovatelné jméno počítače nebo služby.",
+          "example": "www.seznam.cz"
+        },
+        {
+          "type": "term",
+          "term": "DNS",
+          "definition": "Systém doménových jmen. Funguje jako **telefonní seznam**: k jménu najde IP adresu.",
+          "example": "www.example.com → 93.184.215.14"
+        },
+        {
+          "type": "term",
+          "term": "DHCP",
+          "definition": "Služba, která zařízení po připojení **automaticky přidělí** IP adresu, masku, výchozí bránu a adresu DNS serveru. Adresu jen **půjčí** na určitou dobu."
+        },
+        {
+          "type": "term",
+          "term": "NAT",
+          "definition": "Překlad adres. Router vymění privátní adresu odesílatele za svou **veřejnou** adresu, aby se odpověď z internetu vrátila."
+        },
+        {
+          "type": "heading",
+          "text": "DHCP: jak dostaneš adresu"
+        },
+        {
+          "type": "text",
+          "text": "Výměna má 4 zprávy, podle prvních písmen **DORA**:"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Discover: „Je tu DHCP server?“",
+            "Offer: „Nabízím 192.168.1.20.“",
+            "Request: „Chci tu adresu.“",
+            "Acknowledge: „Potvrzuji, je tvoje na 24 hodin.“"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Před koncem výpůjčky si klient adresu prodlouží. Když se DHCP server neozve, Windows si dají adresu **169.254.x.x** a internet nefunguje."
+        },
+        {
+          "type": "heading",
+          "text": "DNS: jak se jméno přeloží"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Napíšeš www.example.com. Počítač se podívá do své paměti (cache).",
+            "Nenajde → zeptá se svého **DNS serveru** (obvykle u poskytovatele nebo v routeru).",
+            "Ten se ptá postupně: **kořenového** serveru („kdo zná .com?“), pak serveru domény **.com** („kdo zná example.com?“), nakonec **autoritativního** serveru domény example.com.",
+            "Autoritativní server odpoví IP adresou. DNS server ji předá počítači a uloží si ji na dobu **TTL**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "NAT: jedna veřejná adresa pro celý byt"
+        },
+        {
+          "type": "text",
+          "text": "Doma máš od poskytovatele obvykle **jednu** veřejnou IPv4 adresu, ale zařízení víc. Router si vede **tabulku překladů**: kdo zevnitř se s kým spojil a přes jaký port. Odpověď pak vrátí správnému zařízení. Této variantě se říká **PAT** (překlad i s porty)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vnitřní socket",
+            "Venkovní socket routeru"
+          ],
+          "rows": [
+            [
+              "192.168.1.20:51000",
+              "85.70.1.2:40001"
+            ],
+            [
+              "192.168.1.21:51000",
+              "85.70.1.2:40002"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Notebook má 192.168.1.20, bránu 192.168.1.1, ping na 8.8.8.8 funguje, ale „seznam.cz“ se nenačte. Který pomocník selhal?",
+          "answer": "Adresa je v pořádku (DHCP funguje). Ping ven funguje, takže směrování i NAT jedou. Nefunguje překlad jmen → **DNS**. Ověř `nslookup seznam.cz` a nastavení DNS serveru."
+        },
+        {
+          "type": "example",
+          "question": "Počítač má adresu 169.254.33.7. Co se stalo?",
+          "answer": "Adresa z rozsahu 169.254.0.0/16 si Windows přidělí samy, když **nedostanou odpověď od DHCP**. Zkontroluj kabel nebo Wi-Fi a jestli běží DHCP server (v routeru)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "NAT chrání síť, takže firewall už nepotřebuju.",
+          "right": "NAT jen **překládá adresy**. Pro ochranu je potřeba **firewall** s pravidly.",
+          "why": "NAT sice běžně zabrání nevyžádaným spojením zvenku, ale to je vedlejší efekt. Nefiltruje obsah ani odchozí provoz a s přesměrováním portů otevírá cestu dovnitř."
+        },
+        {
+          "type": "summary",
+          "text": "DHCP přidělí adresu, masku, bránu a DNS (Discover, Offer, Request, Acknowledge). DNS přeloží jméno na IP adresu. NAT (PAT) přeloží privátní adresy na jednu veřejnou a pamatuje si porty."
+        }
+      ]
+    },
+    {
+      "title": "Správce sítě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve firmě dostaneš úkol: rozdat adresy 100 počítačům, zařídit, aby tiskárna měla vždy stejnou adresu, zprovoznit firemní web pod jménem a zpřístupnit kameru zvenku. Na to potřebuješ umět nastavit DHCP, DNS záznamy a NAT."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "DNS",
+          "definition": "Hierarchický systém, který překládá jména na IP adresy a zpět."
+        },
+        {
+          "type": "term",
+          "term": "Doména",
+          "definition": "Část stromu jmen. Zprava doleva: **kořen** (tečka) → **doména nejvyšší úrovně** (TLD: cz, com) → **doména 2. řádu** (skola.cz) → **subdoména** (www.skola.cz).",
+          "example": "Doménu .cz spravuje sdružení CZ.NIC."
+        },
+        {
+          "type": "term",
+          "term": "DNS záznam",
+          "definition": "Řádek s informací o doméně v zóně autoritativního serveru. Má typ, hodnotu a TTL."
+        },
+        {
+          "type": "term",
+          "term": "TTL záznamu",
+          "definition": "Jak dlouho (v sekundách) si smí ostatní servery odpověď pamatovat.",
+          "example": "TTL 3600 = hodina"
+        },
+        {
+          "type": "term",
+          "term": "DHCP rozsah (scope)",
+          "definition": "Rozmezí adres, které DHCP server půjčuje, s nastavením masky, brány a DNS.",
+          "example": "192.168.1.100–192.168.1.199"
+        },
+        {
+          "type": "term",
+          "term": "Rezervace",
+          "definition": "Nastavení DHCP: zařízení s danou **MAC adresou** dostane vždy stejnou IP adresu."
+        },
+        {
+          "type": "term",
+          "term": "Přesměrování portu",
+          "definition": "Pravidlo NAT: co přijde na veřejnou adresu routeru na určitý port, pošli na vnitřní zařízení.",
+          "example": "veřejná:8443 → 192.168.1.50:443"
+        },
+        {
+          "type": "heading",
+          "text": "Nejdůležitější DNS záznamy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Co obsahuje",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "A",
+              "IPv4 adresu jména",
+              "www → 93.184.215.14"
+            ],
+            [
+              "AAAA",
+              "IPv6 adresu jména",
+              "www → 2001:db8::10"
+            ],
+            [
+              "CNAME",
+              "přezdívku, odkaz na jiné jméno",
+              "eshop → www.skola.cz"
+            ],
+            [
+              "MX",
+              "poštovní server domény (s prioritou)",
+              "10 mail.skola.cz"
+            ],
+            [
+              "NS",
+              "autoritativní DNS servery domény",
+              "ns1.skola.cz"
+            ],
+            [
+              "TXT",
+              "libovolný text, např. ověření domény, SPF",
+              "v=spf1 …"
+            ],
+            [
+              "PTR",
+              "zpětný překlad: IP → jméno",
+              "14.215.184.93.in-addr.arpa → www…"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Spoj si typ záznamu s jeho účelem."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "A / AAAA",
+              "MX",
+              "CNAME"
+            ],
+            "items": [
+              {
+                "text": "kam doručovat e-maily pro @skola.cz",
+                "group": 1
+              },
+              {
+                "text": "IP adresa webu www.skola.cz",
+                "group": 0
+              },
+              {
+                "text": "eshop.skola.cz je jen jiný název pro www.skola.cz",
+                "group": 2
+              },
+              {
+                "text": "IPv6 adresa serveru",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Nastavení DHCP serveru"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Rozsah**: např. 192.168.1.100–199 (mimo adresy serverů a tiskáren).",
+            "**Maska**: 255.255.255.0.",
+            "**Výchozí brána**: 192.168.1.1.",
+            "**DNS servery**: např. firemní 192.168.1.10.",
+            "**Doba výpůjčky**: např. 8 hodin pro hosty, 8 dní pro kancelář.",
+            "**Rezervace** pro tiskárnu podle její MAC adresy."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "NAT: tři podoby"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Statický NAT** – jedna vnitřní adresa ↔ jedna veřejná (pro server).",
+            "**PAT (NAT overload, maškaráda)** – mnoho vnitřních adres za jednou veřejnou, rozlišení podle portů. Doma i ve firmách.",
+            "**Přesměrování portu (DNAT)** – zpřístupnění vnitřní služby zvenku."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma má web na serveru 192.168.1.50 a jednu veřejnou adresu 85.70.1.2. Co nastavíš, aby web šel z internetu pod jménem www.firma.cz?",
+          "answer": "1) V DNS zóně firma.cz záznam **A**: www → 85.70.1.2. 2) Na routeru **přesměrování portu**: TCP 443 (a 80) na 85.70.1.2 → 192.168.1.50. 3) Serveru dej pevnou adresu nebo DHCP **rezervaci**, aby se adresa nezměnila."
+        },
+        {
+          "type": "example",
+          "question": "Změnil jsi A záznam s TTL 86400, ale někteří uživatelé ještě 10 hodin chodí na starou adresu. Proč?",
+          "answer": "TTL 86 400 s = **24 hodin**. DNS servery po světě si starou odpověď smí pamatovat až den. Před plánovanou změnou se proto TTL dopředu sníží, třeba na 300 s."
+        },
+        {
+          "type": "text",
+          "text": "Doplň."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Poštovní server domény udává záznam ",
+                "after": "",
+                "options": [
+                  "MX",
+                  "A",
+                  "PTR"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pevnou adresu tiskárně v DHCP zajistí ",
+                "after": "",
+                "options": [
+                  "rezervace",
+                  "rozsah",
+                  "TTL"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Překlad jména na IPv6 adresu je záznam ",
+                "after": "",
+                "options": [
+                  "AAAA",
+                  "A",
+                  "NS"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když nastavím DNS záznam, změna platí okamžitě všude na světě.",
+          "right": "Změna se šíří postupně, až vyprší **TTL** starého záznamu v mezipaměti (cache) serverů.",
+          "why": "DNS servery si odpovědi ukládají, aby se nemusely pořád ptát. Proto se TTL snižuje před plánovanou změnou."
+        },
+        {
+          "type": "summary",
+          "text": "DNS: hierarchie kořen → TLD → doména, záznamy A, AAAA, CNAME, MX, NS, TXT, PTR, s TTL. DHCP: rozsah, maska, brána, DNS, výpůjčka, rezervace podle MAC. NAT: statický, PAT pro mnoho zařízení, přesměrování portu pro služby zvenku."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď zprávy DHCP (DORA).",
+      "items": [
+        "Discover",
+        "Offer",
+        "Request",
+        "Acknowledge"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá DNS?",
+      "options": [
+        "překládá doménová jména na IP adresy",
+        "přiděluje IP adresy",
+        "překládá privátní adresy na veřejné",
+        "šifruje web"
+      ],
+      "answer": 0,
+      "hints": [
+        "Představ si telefonní seznam."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který DNS záznam určuje poštovní server domény?",
+      "options": [
+        "MX",
+        "A",
+        "CNAME",
+        "NS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ DNS záznamu s obsahem.",
+      "pairs": [
+        [
+          "A",
+          "IPv4 adresa"
+        ],
+        [
+          "AAAA",
+          "IPv6 adresa"
+        ],
+        [
+          "CNAME",
+          "přezdívka jiného jména"
+        ],
+        [
+          "NS",
+          "autoritativní DNS servery"
+        ],
+        [
+          "PTR",
+          "zpětný překlad IP → jméno"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Počítač má adresu 169.254.10.4. Co je nejpravděpodobnější příčina?",
+      "options": [
+        "neodpověděl DHCP server",
+        "nefunguje DNS",
+        "je špatně nastavený NAT",
+        "vypršelo TTL záznamu"
+      ],
+      "answer": 0,
+      "hints": [
+        "Tuto adresu si Windows dají samy. Kdy?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "PAT umožní mnoha zařízením s privátními adresami sdílet jednu veřejnou adresu.",
+      "answer": true,
+      "explanation": "Rozlišuje je podle portů v tabulce překladů."
+    },
+    {
+      "type": "truefalse",
+      "question": "NAT nahrazuje firewall.",
+      "answer": false,
+      "explanation": "NAT jen překládá adresy; filtrování provozu zajišťuje firewall."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje nastavení DHCP, které zařízení podle MAC adresy přidělí vždy stejnou IP?",
+      "answers": [
+        "rezervace",
+        "rezervace adresy",
+        "DHCP rezervace"
+      ],
+      "hints": [
+        "Jako u stolu v restauraci, který je „jen pro tebe“."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik hodin si DNS servery smí pamatovat záznam s TTL 7200?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "7200 s : 3600 = 2 hodiny."
+    },
+    {
+      "type": "choice",
+      "question": "Ping na 8.8.8.8 funguje, ale weby podle jména ne. Jakým příkazem to ověříš?",
+      "options": [
+        "nslookup",
+        "ipconfig /release",
+        "route print",
+        "arp -a"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části jména www.skola.cz od kořene stromu DNS.",
+      "items": [
+        "kořen (.)",
+        "cz",
+        "skola",
+        "www"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co nastavíš, aby kamera 192.168.1.60 byla dostupná z internetu přes veřejnou adresu routeru?",
+      "options": [
+        "přesměrování portu na routeru",
+        "záznam MX",
+        "delší výpůjčku DHCP",
+        "rezervaci v DNS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak počítač po připojení do sítě získá IP adresu.",
+      "answer": "Pošle broadcast DHCP Discover. DHCP server odpoví nabídkou (Offer) s adresou, maskou, branou a DNS. Klient o adresu požádá (Request) a server to potvrdí (Acknowledge). Adresa je půjčená na dobu výpůjčky a klient si ji průběžně prodlužuje."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč doma může mít víc zařízení přístup do internetu přes jednu veřejnou adresu.",
+      "answer": "Router používá PAT. Odchozím paketům vymění privátní adresu a port za svou veřejnou adresu a volný port a zapíše si to do tabulky překladů. Podle portu v odpovědi pak pozná, kterému vnitřnímu zařízení ji vrátit."
+    }
+  ]
+}

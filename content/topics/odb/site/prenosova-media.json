@@ -1,0 +1,613 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "prenosova-media",
+  "title": "Přenosová média a kabeláž",
+  "emoji": "🔌",
+  "explanations": [
+    {
+      "title": "Kabel v ruce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Za počítačem ve škole vede šedý nebo modrý kabel do zásuvky ve zdi. V serverovně uvidíš tenké žluté nebo tyrkysové kabely, kterými svítí světlo. A notebook se připojí úplně bez kabelu."
+        },
+        {
+          "type": "text",
+          "text": "Každý způsob má jinou rychlost, dosah i cenu. Když stavíš síť, musíš vybrat správné **přenosové médium** a umět ho správně zapojit. Špatně zvolený kabel je nejčastější příčina pomalé sítě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přenosové médium",
+          "definition": "To, čím putuje signál mezi zařízeními: měděný kabel, optické vlákno nebo vzduch (rádiové vlny).",
+          "example": "kabel UTP, optický kabel, Wi-Fi"
+        },
+        {
+          "type": "term",
+          "term": "Přenosová rychlost",
+          "definition": "Kolik bitů se přenese za sekundu. Jednotka **b/s** (bit za sekundu), běžně Mb/s a Gb/s. Pozor: 1 bajt = 8 bitů.",
+          "example": "1 Gb/s = 1 000 Mb/s ≈ 125 MB/s (megabajtů za sekundu)."
+        },
+        {
+          "type": "term",
+          "term": "Rušení a přeslech",
+          "definition": "**Rušení** je cizí elektromagnetický signál, který kazí data (motor, zářivka, silový kabel). **Přeslech** je rušení mezi sousedními vodiči v jednom kabelu.",
+          "example": "Síťový kabel vedený těsně vedle silového kabelu výtahu."
+        },
+        {
+          "type": "heading",
+          "text": "Kroucená dvojlinka (UTP)"
+        },
+        {
+          "type": "term",
+          "term": "Kroucená dvojlinka",
+          "definition": "Kabel s **8 měděnými vodiči**, které jsou spletené do **4 párů**. Kroucení snižuje rušení a přeslech. Zakončuje se konektorem **RJ-45** (přesně 8P8C).",
+          "example": "Běžný „ethernetový“ kabel k počítači."
+        },
+        {
+          "type": "term",
+          "term": "UTP, FTP, STP",
+          "definition": "Podle stínění: **UTP** = nestíněná, **FTP** = kolem párů je fólie, **STP/S-FTP** = stínění fólií i opletem. Stínění pomáhá v prostředí s rušením.",
+          "example": "V dílně s velkými motory se dává stíněný kabel."
+        },
+        {
+          "type": "text",
+          "text": "Kabely se dělí do **kategorií** (Cat). Vyšší kategorie zvládne vyšší kmitočet a tím i vyšší rychlost. Maximální délka metalického ethernetového spoje je **100 m**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kategorie",
+            "Kmitočet",
+            "Typicky zvládne"
+          ],
+          "rows": [
+            [
+              "Cat5e",
+              "100 MHz",
+              "1 Gb/s na 100 m"
+            ],
+            [
+              "Cat6",
+              "250 MHz",
+              "1 Gb/s na 100 m, 10 Gb/s jen asi do 55 m"
+            ],
+            [
+              "Cat6A",
+              "500 MHz",
+              "10 Gb/s na 100 m"
+            ],
+            [
+              "Cat8",
+              "2000 MHz",
+              "25 nebo 40 Gb/s do 30 m (datová centra)"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "MHz",
+            "items": [
+              {
+                "label": "Cat5e",
+                "value": 100
+              },
+              {
+                "label": "Cat6",
+                "value": 250
+              },
+              {
+                "label": "Cat6A",
+                "value": 500
+              },
+              {
+                "label": "Cat8",
+                "value": 2000
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Optické vlákno"
+        },
+        {
+          "type": "term",
+          "term": "Optické vlákno",
+          "definition": "Tenké skleněné vlákno, kterým se data přenášejí **světlem**. Neruší ho elektromagnetické pole a dosáhne na stovky metrů až desítky kilometrů.",
+          "example": "Propojení dvou budov školy, páteř internetu."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Jádro",
+            "Zdroj světla",
+            "Dosah"
+          ],
+          "rows": [
+            [
+              "jednovidové (singlemode, SM)",
+              "asi 9 µm",
+              "laser",
+              "desítky km"
+            ],
+            [
+              "mnohovidové (multimode, MM)",
+              "50 nebo 62,5 µm",
+              "LED nebo levný laser",
+              "stovky metrů"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Konektory optiky jsou např. **LC** (malý, nejběžnější) a **SC** (hranatý, větší)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Do konce optického kabelu se podívám, jestli svítí.",
+          "right": "**Nikdy se nedívej do optického vlákna ani konektoru.** Na kontrolu používej měřič optického výkonu nebo kartu, ne oko.",
+          "why": "Lasery v optice svítí často **neviditelným infračerveným** světlem. Paprsek můžeš poškodit sítnici, a přitom nic neuvidíš."
+        },
+        {
+          "type": "heading",
+          "text": "Bezdrátový přenos"
+        },
+        {
+          "type": "text",
+          "text": "Wi-Fi, Bluetooth a mobilní sítě přenášejí data **rádiovými vlnami**. Výhoda: žádné kabely, mobilita. Nevýhoda: sdílený prostor, rušení, zdi tlumí signál, nižší stabilita."
+        },
+        {
+          "type": "example",
+          "question": "Máš propojit dva přepínače vzdálené 160 m na rychlosti 10 Gb/s. Co použiješ?",
+          "answer": "Metalika má limit **100 m**, 160 m nestačí ani Cat6A. Použiješ **optiku**. Pro 160 m a 10 Gb/s stačí **mnohovidové** vlákno (OM3 nebo OM4) nebo jednovidové."
+        },
+        {
+          "type": "example",
+          "question": "Do kanceláří chceš kabel, který bude za 10 let zvládat 10 Gb/s na celých 90 m od rozvaděče. Kterou kategorii zvolíš?",
+          "answer": "Cat5e zvládne jen 1 Gb/s. Cat6 zvládne 10 Gb/s jen asi do 55 m. Na celou délku 10 Gb/s zvládne **Cat6A**."
+        },
+        {
+          "type": "summary",
+          "text": "Měděná kroucená dvojlinka (Cat5e, Cat6, Cat6A…) má limit 100 m, vyšší kategorie = vyšší rychlost. Optika přenáší světlo na velké vzdálenosti a neruší ji elektromagnetické pole. Do optického vlákna se nikdy nedívej."
+        }
+      ]
+    },
+    {
+      "title": "Jak krimpovat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik sítí musí umět vyrobit **patch kabel**: odizolovat kabel, srovnat barevné vodiče a nalisovat konektor. Když dá jediný vodič na špatné místo, kabel nebude fungovat, nebo pojede pomalu."
+        },
+        {
+          "type": "text",
+          "text": "Ukážeme si, z čeho se kabeláž skládá, jak se zapojuje a podle čeho vybrat médium."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přenosové médium",
+          "definition": "Cesta signálu: měď, sklo (optika) nebo vzduch (rádio)."
+        },
+        {
+          "type": "term",
+          "term": "Kroucená dvojlinka",
+          "definition": "Kabel z 8 vodičů ve 4 kroucených párech. Každý pár má svou barvu: oranžový, zelený, modrý, hnědý. Jeden vodič páru je plný, druhý bílý s proužkem.",
+          "example": "pár bílo-oranžový + oranžový"
+        },
+        {
+          "type": "term",
+          "term": "RJ-45",
+          "definition": "Průhledný konektor s 8 kontakty na konci síťového kabelu. Kontakty se číslují 1–8 zleva, když se díváš na kontakty a západka je dole."
+        },
+        {
+          "type": "term",
+          "term": "Krimpování",
+          "definition": "Nalisování konektoru na kabel speciálními kleštěmi (krimpovačkou)."
+        },
+        {
+          "type": "term",
+          "term": "Patch kabel",
+          "definition": "Krátký kabel s konektory na obou koncích: od počítače do zásuvky nebo v rozvaděči z patch panelu do přepínače."
+        },
+        {
+          "type": "heading",
+          "text": "Zapojení T568A a T568B"
+        },
+        {
+          "type": "text",
+          "text": "Pořadí barev určuje norma **TIA/EIA-568**. Má dvě varianty. Liší se jen tím, že prohazují **oranžový a zelený pár**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pin",
+            "T568A",
+            "T568B"
+          ],
+          "rows": [
+            [
+              "1",
+              "bílo-zelená",
+              "bílo-oranžová"
+            ],
+            [
+              "2",
+              "zelená",
+              "oranžová"
+            ],
+            [
+              "3",
+              "bílo-oranžová",
+              "bílo-zelená"
+            ],
+            [
+              "4",
+              "modrá",
+              "modrá"
+            ],
+            [
+              "5",
+              "bílo-modrá",
+              "bílo-modrá"
+            ],
+            [
+              "6",
+              "oranžová",
+              "zelená"
+            ],
+            [
+              "7",
+              "bílo-hnědá",
+              "bílo-hnědá"
+            ],
+            [
+              "8",
+              "hnědá",
+              "hnědá"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Přímý a křížený kabel",
+          "definition": "**Přímý** kabel má na obou koncích stejné zapojení (B–B nebo A–A). **Křížený** má na jednom konci A a na druhém B. Dnešní zařízení umí **Auto-MDI-X**, tedy si vysílací a přijímací páry prohodí sama, a stačí jim přímý kabel."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odstřihni kabel rovně a odizoluj asi 2–3 cm pláště.",
+            "Rozpleť páry a srovnej vodiče podle T568B: bílo-oranžová, oranžová, bílo-zelená, modrá, bílo-modrá, zelená, bílo-hnědá, hnědá.",
+            "Zastřihni vodiče rovně na délku asi 12–13 mm.",
+            "Zasuň je do konektoru až na doraz, plášť kabelu musí být uvnitř konektoru.",
+            "Zkontroluj barvy proti světlu a zalisuj krimpovačkou.",
+            "Otestuj kabel testerem: všech 8 vodičů musí svítit ve stejném pořadí."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Doplň barvy na pinech podle T568B."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Pin 1: ",
+                "after": "",
+                "options": [
+                  "bílo-oranžová",
+                  "bílo-zelená",
+                  "bílo-hnědá"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pin 2: ",
+                "after": "",
+                "options": [
+                  "oranžová",
+                  "zelená",
+                  "modrá"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pin 3: ",
+                "after": "",
+                "options": [
+                  "bílo-zelená",
+                  "bílo-modrá",
+                  "bílo-oranžová"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pin 6: ",
+                "after": "",
+                "options": [
+                  "zelená",
+                  "oranžová",
+                  "hnědá"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vodiče stačí srovnat 1–8 jen podle párů, třeba oranžový, zelený, modrý a hnědý pár za sebou.",
+          "right": "Piny **3 a 6** tvoří jeden pár (u T568B zelený), který obkročí modrý pár na pinech 4 a 5.",
+          "why": "Signál potřebuje oba vodiče páru, aby kroucení rušilo rušení. Když páry rozdělíš špatně, tester může ukázat „průchodnost“, ale kabel bude mít velký přeslech a pojede pomalu nebo vůbec."
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybrat médium"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Do 100 m, běžná kancelář** → kroucená dvojlinka Cat6 nebo Cat6A.",
+            "**Silné rušení** (dílna, motory) → stíněný kabel nebo optika.",
+            "**Přes 100 m nebo mezi budovami** → optika. Mezi budovami optika zároveň chrání před přepětím (nevede proud).",
+            "**Mobilní zařízení** → Wi-Fi."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zkus roztřídit situace podle vhodného média."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "metalika (UTP)",
+              "optika",
+              "bezdrátově"
+            ],
+            "items": [
+              {
+                "text": "počítač v kanceláři 30 m od rozvaděče",
+                "group": 0
+              },
+              {
+                "text": "propojení dvou budov 400 m",
+                "group": 1
+              },
+              {
+                "text": "tablety učitelů ve třídách",
+                "group": 2
+              },
+              {
+                "text": "páteř mezi městy",
+                "group": 1
+              },
+              {
+                "text": "tiskárna ve vedlejší místnosti",
+                "group": 0
+              },
+              {
+                "text": "telefon návštěvy",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Tester ukazuje: pin 1 → 1, 2 → 2, 3 → 6, 6 → 3, ostatní rovně. Co je to za kabel?",
+          "answer": "Prohozené piny 1↔3 a 2↔6 znamenají, že jeden konec je T568A a druhý T568B. Je to **křížený kabel**. Není vadný, jen jiný typ."
+        },
+        {
+          "type": "example",
+          "question": "Kabel z rozvaděče vede 85 m, patch kabely na obou koncích mají 5 m a 8 m. Vejdeš se do limitu?",
+          "answer": "Celková délka: 85 + 5 + 8 = **98 m**. Limit je 100 m, takže **ano**. Norma doporučuje pevnou trasu nejvýš 90 m a zbytek pro patch kabely; tady je pevná trasa 85 m, to je v pořádku."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Limit délky metaliky",
+                "back": "100 m"
+              },
+              {
+                "front": "Cat6A",
+                "back": "10 Gb/s na 100 m"
+              },
+              {
+                "front": "Jednovidová optika",
+                "back": "laser, desítky km"
+              },
+              {
+                "front": "T568A vs. T568B",
+                "back": "prohozený oranžový a zelený pár"
+              },
+              {
+                "front": "Auto-MDI-X",
+                "back": "zařízení si samo prohodí páry, stačí přímý kabel"
+              }
+            ]
+          }
+        },
+        {
+          "type": "summary",
+          "text": "Kroucená dvojlinka má 4 páry a konektor RJ-45, zapojuje se podle T568A nebo T568B (obě strany stejně = přímý kabel). Metalika do 100 m, na delší vzdálenost nebo mezi budovy optika."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jaká je největší délka metalického ethernetového spoje v metrech?",
+      "answers": [
+        "100"
+      ],
+      "hints": [
+        "Zahrnuje pevnou trasu i patch kabely."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která kategorie kabelu zvládne 10 Gb/s na celých 100 m?",
+      "options": [
+        "Cat6A",
+        "Cat5e",
+        "Cat6",
+        "Cat5"
+      ],
+      "answer": 0,
+      "hints": [
+        "Cat6 to zvládne jen na kratší vzdálenost."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč jsou vodiče v kabelu UTP zkroucené do párů?",
+      "options": [
+        "aby se snížilo rušení a přeslech",
+        "aby byl kabel pevnější",
+        "aby se vešel do konektoru",
+        "kvůli barevnému značení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Do konce optického vlákna se smíš podívat, protože světlo je slabé.",
+      "answer": false,
+      "explanation": "Laser může být neviditelný (infračervený) a poškodí oko. Používej měřič."
+    },
+    {
+      "type": "choice",
+      "question": "Které médium použiješ na propojení dvou budov vzdálených 500 m?",
+      "options": [
+        "optické vlákno",
+        "kabel Cat6",
+        "kabel Cat5e",
+        "koaxiální kabel"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď barvy vodičů na pinech 1–4 podle T568B.",
+      "items": [
+        "bílo-oranžová",
+        "oranžová",
+        "bílo-zelená",
+        "modrá"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zapojení T568A a T568B se liší prohozením oranžového a zeleného páru.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ média s jeho vlastností.",
+      "pairs": [
+        [
+          "UTP",
+          "nestíněná kroucená dvojlinka"
+        ],
+        [
+          "S/FTP",
+          "stínění fólií i opletem"
+        ],
+        [
+          "jednovidová optika",
+          "laser, desítky km"
+        ],
+        [
+          "mnohovidová optika",
+          "stovky metrů"
+        ],
+        [
+          "Wi-Fi",
+          "rádiové vlny"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik vodičů má kabel kroucené dvojlinky?",
+      "answers": [
+        "8",
+        "osm"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kabel má na jednom konci T568A a na druhém T568B. Jaký je to kabel?",
+      "options": [
+        "křížený",
+        "přímý",
+        "vadný",
+        "konzolový"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnej, jestli jsou konce stejné."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik MB/s (megabajtů za sekundu) je teoreticky 1 Gb/s? Napiš číslo.",
+      "answers": [
+        "125"
+      ],
+      "explanation": "1 Gb/s = 1 000 Mb/s, děleno 8 bity na bajt = 125 MB/s.",
+      "hints": [
+        "1 bajt = 8 bitů.",
+        "Převeď nejdřív na Mb/s."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký konektor se nejčastěji používá na optických patch kabelech v přepínačích?",
+      "options": [
+        "LC",
+        "RJ-45",
+        "RJ-11",
+        "BNC"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej metalický kabel a optické vlákno.",
+      "answer": "Metalika je levná a snadno se zapojuje, ale má limit 100 m a ruší ji elektromagnetické pole. Optika přenáší světlo, neruší ji pole, dosáhne na stovky metrů až desítky kilometrů a mezi budovami nevede přepětí, ale je dražší a montáž je náročnější."
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup výroby patch kabelu.",
+      "answer": "Odizoluji plášť, rozpletu páry a srovnám vodiče podle T568B na obou koncích, zastřihnu je rovně, zasunu do konektoru RJ-45 až na doraz s pláštěm uvnitř a zalisuji krimpovačkou. Nakonec kabel otestuji testerem."
+    }
+  ]
+}

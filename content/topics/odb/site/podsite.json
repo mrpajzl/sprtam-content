@@ -1,0 +1,484 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "podsite",
+  "title": "Podsítě (subnetting)",
+  "emoji": "✂️",
+  "explanations": [
+    {
+      "title": "Dělení pozemku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš velký pozemek a chceš ho rozdělit na stejně velké parcely pro několik domů. Nejdřív si řekneš, kolik parcel potřebuješ a jak velká musí každá být. Pak natáhneš ploty."
+        },
+        {
+          "type": "text",
+          "text": "S adresami sítě se dělá totéž. Firma dostane rozsah 192.168.10.0/24, ale chce oddělit kancelář, dílnu, hosty a kamery. Rozsah proto rozdělí na **podsítě**. Je to nejčastější výpočet v sítích a objevuje se v každé zkoušce."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: IPv4 a prefix",
+          "definition": "IPv4 adresa má 32 bitů. Prefix /n říká, kolik bitů zleva je **síťová část**; zbytek je **hostitelská část** pro zařízení.",
+          "example": "/24 → 24 bitů síť, 8 bitů pro zařízení."
+        },
+        {
+          "type": "term",
+          "term": "Podsíť (subnet)",
+          "definition": "Menší síť vzniklá rozdělením větší sítě. Každá podsíť má svou adresu sítě, broadcast a rozsah adres pro zařízení."
+        },
+        {
+          "type": "term",
+          "term": "Půjčení bitů",
+          "definition": "Při dělení vezmeš pár bitů z hostitelské části a přidáš je k síťové. Prefix se tím prodlouží. Každý půjčený bit **zdvojnásobí** počet podsítí a **způlí** jejich velikost.",
+          "example": "/24 → /26: půjčené 2 bity → 4 podsítě."
+        },
+        {
+          "type": "term",
+          "term": "Velikost bloku",
+          "definition": "Kolik adres má jedna podsíť. Podsítě začínají vždy na násobku velikosti bloku.",
+          "example": "U /26 má blok 64 adres: podsítě začínají na 0, 64, 128, 192."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti, kolik podsítí potřebuješ (nebo kolik zařízení v jedné).",
+            "Najdi nejmenší počet bitů **b**, aby 2^b ≥ počet podsítí.",
+            "Nový prefix = starý prefix + b.",
+            "Velikost bloku = 2^(32 − nový prefix).",
+            "Vypiš podsítě po blocích: adresa sítě, první a poslední použitelná, broadcast."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Rozděl 192.168.10.0/24 na 4 stejné podsítě.",
+          "answer": "Potřebuju 4 podsítě → 2² = 4 → půjčím **2 bity**. Nový prefix /24 + 2 = **/26**. Blok = 2⁶ = **64** adres, z toho 62 pro zařízení. Podsítě: 1) 192.168.10.**0** – použitelné .1–.62, broadcast .63; 2) 192.168.10.**64** – .65–.126, broadcast .127; 3) 192.168.10.**128** – .129–.190, broadcast .191; 4) 192.168.10.**192** – .193–.254, broadcast .255"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "adres v podsíti",
+            "items": [
+              {
+                "label": "/24",
+                "value": 256
+              },
+              {
+                "label": "/25",
+                "value": 128
+              },
+              {
+                "label": "/26",
+                "value": 64
+              },
+              {
+                "label": "/27",
+                "value": 32
+              },
+              {
+                "label": "/28",
+                "value": 16
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "V dílně bude 50 zařízení. Jaký nejmenší prefix stačí?",
+          "answer": "Hledám nejmenší **h**, aby 2^h − 2 ≥ 50. 2⁵ − 2 = 30 nestačí, 2⁶ − 2 = 62 stačí → h = 6. Prefix = 32 − 6 = **/26**."
+        },
+        {
+          "type": "example",
+          "question": "Ve které podsíti leží 192.168.10.150/26 a jaký má broadcast?",
+          "answer": "Blok je 64. Násobky 64: 0, 64, **128**, 192. Číslo 150 je mezi 128 a 191 → síť **192.168.10.128**, broadcast **192.168.10.191**."
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si: doplň správné hodnoty pro síť 192.168.10.0/27."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Velikost bloku /27 je ",
+                "after": "",
+                "options": [
+                  "32",
+                  "16",
+                  "64"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Druhá podsíť začíná na 192.168.10.",
+                "after": "",
+                "options": [
+                  "32",
+                  "33",
+                  "31"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Broadcast první podsítě je 192.168.10.",
+                "after": "",
+                "options": [
+                  "31",
+                  "32",
+                  "30"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Počet podsítí z /24 je ",
+                "after": "",
+                "options": [
+                  "8",
+                  "4",
+                  "16"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při potřebě 30 zařízení zvolím /27, protože 2⁵ = 32 a to je víc než 30. Pro 32 zařízení zvolím také /27.",
+          "right": "Pro 30 zařízení stačí /27 (30 použitelných adres). Pro **32** zařízení je potřeba **/26** (62 použitelných).",
+          "why": "Vždy odečti 2 adresy: adresu sítě a broadcast. /27 dá jen 32 − 2 = 30 adres."
+        },
+        {
+          "type": "summary",
+          "text": "Půjčením b bitů vznikne 2^b podsítí. Velikost bloku = 2^(32 − prefix), použitelných adres o 2 méně. Podsítě začínají na násobcích velikosti bloku."
+        }
+      ]
+    },
+    {
+      "title": "Magické číslo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na zkoušce nebo u routeru nemáš čas převádět všechno do jedniček a nul. Existuje rychlá metoda: **magické číslo** (velikost bloku). S ním spočítáš podsíť z hlavy během pár vteřin."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Prefix a maska",
+          "definition": "Prefix /n = počet jedniček v masce. Maska se píše po oktetech, každý oktet 0–255.",
+          "example": "/26 = 255.255.255.192"
+        },
+        {
+          "type": "term",
+          "term": "Podsíť",
+          "definition": "Část adresního rozsahu s vlastní adresou sítě a broadcastem."
+        },
+        {
+          "type": "term",
+          "term": "Rozhodující oktet",
+          "definition": "Oktet masky, který **není** 255 ani 0. V něm se síť dělí.",
+          "example": "U 255.255.240.0 je rozhodující 3. oktet (240)."
+        },
+        {
+          "type": "term",
+          "term": "Magické číslo",
+          "definition": "256 minus hodnota rozhodujícího oktetu masky. Je to velikost bloku v tom oktetu.",
+          "example": "256 − 192 = 64"
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka, kterou se vyplatí umět"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Maska v oktetu",
+            "128",
+            "192",
+            "224",
+            "240",
+            "248",
+            "252"
+          ],
+          "rows": [
+            [
+              "bitů navíc",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            [
+              "magické číslo",
+              "128",
+              "64",
+              "32",
+              "16",
+              "8",
+              "4"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup magickým číslem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Napiš si masku a najdi rozhodující oktet.",
+            "Magické číslo = 256 − hodnota oktetu.",
+            "V rozhodujícím oktetu adresy najdi **největší násobek** magického čísla, který není větší než ta hodnota. To je adresa sítě.",
+            "Broadcast = adresa další podsítě − 1.",
+            "Oktety vpravo od rozhodujícího: u sítě 0, u broadcastu 255."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Urči síť, broadcast a rozsah pro 172.16.5.130/27.",
+          "answer": "Maska /27 = 255.255.255.**224**. Magické číslo 256 − 224 = **32**. Násobky 32: 96, **128**, 160. 130 leží mezi 128 a 159. Síť **172.16.5.128**, broadcast **172.16.5.159**, zařízení **.129 až .158** (30 adres)."
+        },
+        {
+          "type": "example",
+          "question": "Urči síť a broadcast pro 10.1.77.9/21.",
+          "answer": "/21 = 255.255.**248**.0. Rozhodující je 3. oktet, magické číslo 256 − 248 = **8**. Násobky 8: 64, **72**, 80. 77 leží v bloku 72–79. Síť **10.1.72.0**, broadcast **10.1.79.255**. Zařízení 10.1.72.1 až 10.1.79.254."
+        },
+        {
+          "type": "heading",
+          "text": "Podsítě různých velikostí (VLSM)"
+        },
+        {
+          "type": "term",
+          "term": "VLSM",
+          "definition": "Dělení na podsítě **různé** velikosti podle potřeby. Začíná se od největší podsítě, aby se bloky nepřekrývaly."
+        },
+        {
+          "type": "example",
+          "question": "Z 192.168.1.0/24 potřebuješ podsítě pro 100, 50 a 20 zařízení a jeden spoj mezi dvěma routery.",
+          "answer": "Od největší: 100 → /25 (126 adres): **192.168.1.0/25** (.0–.127). 50 → /26 (62): **192.168.1.128/26** (.128–.191). 20 → /27 (30): **192.168.1.192/27** (.192–.223). Spoj 2 routerů → /30 (2 adresy): **192.168.1.224/30** (.224–.227). Zbytek .228–.255 zůstává volný."
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkontroluj, jestli znáš magická čísla."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "/25",
+                "back": "maska .128, blok 128, 126 zařízení"
+              },
+              {
+                "front": "/26",
+                "back": "maska .192, blok 64, 62 zařízení"
+              },
+              {
+                "front": "/27",
+                "back": "maska .224, blok 32, 30 zařízení"
+              },
+              {
+                "front": "/28",
+                "back": "maska .240, blok 16, 14 zařízení"
+              },
+              {
+                "front": "/29",
+                "back": "maska .248, blok 8, 6 zařízení"
+              },
+              {
+                "front": "/30",
+                "back": "maska .252, blok 4, 2 zařízení"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Adresa 192.168.1.64/26 je adresa počítače.",
+          "right": "192.168.1.64 je u /26 **adresa sítě** (64 je násobek 64). Počítač může mít .65 až .126.",
+          "why": "Když je hodnota v rozhodujícím oktetu násobkem magického čísla (a vpravo jsou nuly), jde o adresu sítě."
+        },
+        {
+          "type": "summary",
+          "text": "Magické číslo = 256 − rozhodující oktet masky. Adresa sítě = největší násobek magického čísla nepřevyšující hodnotu adresy, broadcast = další síť − 1. U VLSM přiděluj od největší podsítě."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik podsítí vznikne, když z /24 uděláš /27?",
+      "answers": [
+        "8"
+      ],
+      "hints": [
+        "Kolik bitů jsi půjčil?",
+        "Každý půjčený bit počet podsítí zdvojnásobí."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké je magické číslo pro masku 255.255.255.240?",
+      "answers": [
+        "16"
+      ],
+      "hints": [
+        "Odečti rozhodující oktet od 256."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je adresa sítě pro 192.168.4.100/26?",
+      "answers": [
+        "192.168.4.64"
+      ],
+      "hints": [
+        "Blok /26 má 64 adres.",
+        "Najdi největší násobek bloku, který nepřesáhne 100."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký je broadcast sítě, do které patří 172.16.5.130/27?",
+      "answers": [
+        "172.16.5.159"
+      ],
+      "hints": [
+        "Magické číslo pro /27 je 32.",
+        "Broadcast = další podsíť − 1."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik použitelných adres má podsíť /28?",
+      "answers": [
+        "14"
+      ],
+      "explanation": "2⁴ = 16, minus síť a broadcast = 14."
+    },
+    {
+      "type": "choice",
+      "question": "Potřebuješ podsíť pro 60 zařízení. Jaký nejmenší (nejužší) prefix stačí?",
+      "options": [
+        "/26",
+        "/27",
+        "/25",
+        "/28"
+      ],
+      "answer": 0,
+      "hints": [
+        "Odečti 2 adresy od velikosti bloku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký prefix se obvykle dává na spoj mezi dvěma routery (2 adresy)?",
+      "options": [
+        "/30",
+        "/24",
+        "/28",
+        "/32"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Adresa 10.0.0.32/27 je použitelná pro počítač.",
+      "answer": false,
+      "explanation": "32 je násobek 32, takže jde o adresu sítě 10.0.0.32/27."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď podsítě vzniklé z 192.168.10.0/24 při prefixu /26 podle pořadí.",
+      "items": [
+        "192.168.10.0",
+        "192.168.10.64",
+        "192.168.10.128",
+        "192.168.10.192"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj masku s magickým číslem.",
+      "pairs": [
+        [
+          "255.255.255.128",
+          "128"
+        ],
+        [
+          "255.255.255.192",
+          "64"
+        ],
+        [
+          "255.255.255.224",
+          "32"
+        ],
+        [
+          "255.255.255.248",
+          "8"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve které podsíti leží 10.1.77.9/21?",
+      "options": [
+        "10.1.72.0",
+        "10.1.64.0",
+        "10.1.76.0",
+        "10.1.77.0"
+      ],
+      "answer": 0,
+      "hints": [
+        "Rozhodující je 3. oktet, maska v něm je 248."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se při VLSM přiděluje od největší podsítě?",
+      "options": [
+        "aby se bloky nepřekrývaly a nevznikaly mezery",
+        "protože to vyžaduje router",
+        "aby byly všechny podsítě stejné",
+        "aby bylo víc broadcastů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup, jak najdeš adresu sítě a broadcast pro 192.168.10.150/26.",
+      "answer": "Maska /26 je 255.255.255.192, magické číslo 256 − 192 = 64. Násobky 64 jsou 0, 64, 128, 192; 150 leží v bloku od 128. Síť je 192.168.10.128 a broadcast je o 1 menší než další síť, tedy 192.168.10.191."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč se sítě dělí na podsítě.",
+      "answer": "Podsítě oddělí skupiny zařízení (kancelář, hosty, kamery), což zvyšuje bezpečnost a přehlednost a omezuje broadcast. Adresy se přidělí podle potřeby a neplýtvá se jimi."
+    }
+  ]
+}

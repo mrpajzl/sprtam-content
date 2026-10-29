@@ -1,0 +1,528 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "smerovani",
+  "title": "Směrování",
+  "emoji": "🧭",
+  "explanations": [
+    {
+      "title": "Rozcestníky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jedeš autem z Ostravy do Plzně. Nemáš v hlavě celou mapu, stačí ti cedule na křižovatkách: „Plzeň → doleva“. Každá křižovatka ti řekne jen další krok."
+        },
+        {
+          "type": "text",
+          "text": "Pakety v internetu cestují stejně. Na každé „křižovatce“ stojí **router** a rozhodne jen o dalším kroku. Tomu rozhodování se říká **směrování**. Když ho špatně nastavíš, síť sice svítí, ale data nedojdou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Router (směrovač)",
+          "definition": "Zařízení, které propojuje **různé sítě** a přeposílá mezi nimi pakety podle cílové IP adresy.",
+          "example": "Domácí router propojuje tvoji LAN s internetem."
+        },
+        {
+          "type": "term",
+          "term": "Paket",
+          "definition": "Balíček dat na síťové vrstvě. Nese mimo jiné **cílovou IP adresu**."
+        },
+        {
+          "type": "term",
+          "term": "Směrovací tabulka",
+          "definition": "Seznam v routeru: do které sítě posílat přes kterého souseda nebo které rozhraní. Je to „sada cedulí“ routeru.",
+          "example": "192.168.2.0/24 → přes 10.0.0.2"
+        },
+        {
+          "type": "term",
+          "term": "Next hop (další skok)",
+          "definition": "IP adresa sousedního routeru, kterému se paket předá."
+        },
+        {
+          "type": "term",
+          "term": "Výchozí cesta",
+          "definition": "Záznam 0.0.0.0/0. Platí pro **všechny** cíle, které router jinak nezná: „všechno ostatní pošli sem“. Obvykle vede k poskytovateli internetu."
+        },
+        {
+          "type": "heading",
+          "text": "Jak router rozhoduje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Přijde paket. Router přečte **cílovou IP adresu**.",
+            "Projde směrovací tabulku a hledá sítě, do kterých adresa patří.",
+            "Když jich sedí víc, vybere tu s **nejdelším prefixem** (nejpřesnější shodu).",
+            "Paket pošle dalšímu skoku nebo rovnou do připojené sítě.",
+            "Když nesedí nic a nemá výchozí cestu, paket zahodí."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Síť",
+            "Kam poslat"
+          ],
+          "rows": [
+            [
+              "10.1.5.0/24",
+              "R4"
+            ],
+            [
+              "10.1.0.0/16",
+              "R3"
+            ],
+            [
+              "10.0.0.0/8",
+              "R2"
+            ],
+            [
+              "0.0.0.0/0",
+              "poskytovatel (ISP)"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kam router podle tabulky výše pošle paket pro 10.1.5.9?",
+          "answer": "Adresa patří do 10.1.5.0/24, do 10.1.0.0/16, do 10.0.0.0/8 i do 0.0.0.0/0. Nejdelší prefix je **/24** → paket jde na **R4**."
+        },
+        {
+          "type": "example",
+          "question": "A kam pošle pakety pro 10.1.7.1 a 8.8.8.8?",
+          "answer": "10.1.7.1 nepatří do 10.1.5.0/24, ale patří do 10.1.0.0/16 → **R3**. 8.8.8.8 nepatří do žádné z konkrétních sítí, zbývá výchozí cesta → **ISP**."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo cesty do tabulky zapíše"
+        },
+        {
+          "type": "term",
+          "term": "Přímo připojená síť",
+          "definition": "Síť na rozhraní routeru. Router ji zná sám, jakmile rozhraní dostane adresu a je zapnuté."
+        },
+        {
+          "type": "term",
+          "term": "Statické směrování",
+          "definition": "Cestu zapíše **správce ručně**. Je jednoduché a předvídatelné, ale při změně nebo výpadku se samo nepřizpůsobí.",
+          "example": "Linux: `ip route add 192.168.2.0/24 via 10.0.0.2`"
+        },
+        {
+          "type": "term",
+          "term": "Dynamické směrování",
+          "definition": "Routery si cesty **samy vyměňují** pomocí směrovacího protokolu. Při výpadku linky najdou jinou cestu.",
+          "example": "OSPF ve firmě, BGP mezi poskytovateli internetu."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, kdy se hodí které směrování."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "statické",
+              "dynamické"
+            ],
+            "items": [
+              {
+                "text": "malá pobočka s jedinou linkou ven",
+                "group": 0
+              },
+              {
+                "text": "výchozí cesta domácího routeru",
+                "group": 0
+              },
+              {
+                "text": "firma se 40 routery a záložními linkami",
+                "group": 1
+              },
+              {
+                "text": "propojení poskytovatelů internetu",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Router posílá paket přes první řádek tabulky, který na adresu sedí.",
+          "right": "Router vybere záznam s **nejdelším prefixem**, tedy nejpřesnější.",
+          "why": "Výchozí cesta 0.0.0.0/0 sedí na úplně všechno. Kdyby rozhodoval první řádek, mohlo by všechno odejít k poskytovateli."
+        },
+        {
+          "type": "summary",
+          "text": "Router přeposílá pakety mezi sítěmi podle směrovací tabulky a vybírá nejdelší shodu prefixu. 0.0.0.0/0 je výchozí cesta. Cesty jsou přímo připojené, statické (ručně) nebo dynamické (protokoly)."
+        }
+      ]
+    },
+    {
+      "title": "Protokoly a příkazy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve firmě se pobočky propojují linkami a jedna z nich občas vypadne. Správce nechce v noci ručně přepisovat cesty. Proto nastaví **dynamický směrovací protokol**, který cestu změní sám. Pro malou síť ale stačí pár ručních příkazů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Směrování",
+          "definition": "Hledání cesty paketu přes více sítí. Dělají ho routery."
+        },
+        {
+          "type": "term",
+          "term": "Směrovací tabulka",
+          "definition": "Seznam cílových sítí s prefixem, dalším skokem (nebo rozhraním) a metrikou."
+        },
+        {
+          "type": "term",
+          "term": "Metrika",
+          "definition": "Číslo, které říká, jak „drahá“ je cesta. Menší = lepší.",
+          "example": "U RIP počet routerů po cestě, u OSPF cena podle rychlosti linek."
+        },
+        {
+          "type": "term",
+          "term": "TTL",
+          "definition": "Počítadlo v paketu (Time To Live). Každý router ho sníží o 1. Když klesne na 0, paket se zahodí. Tím se brání nekonečnému kroužení paketů."
+        },
+        {
+          "type": "term",
+          "term": "Autonomní systém (AS)",
+          "definition": "Síť pod jednou správou, např. síť jednoho poskytovatele internetu."
+        },
+        {
+          "type": "heading",
+          "text": "Statická cesta v praxi"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Systém",
+            "Příkaz"
+          ],
+          "rows": [
+            [
+              "Linux",
+              "`ip route add 192.168.2.0/24 via 10.0.0.2`"
+            ],
+            [
+              "Windows",
+              "`route add 192.168.2.0 mask 255.255.255.0 10.0.0.2`"
+            ],
+            [
+              "Cisco IOS",
+              "`ip route 192.168.2.0 255.255.255.0 10.0.0.2`"
+            ],
+            [
+              "Výchozí cesta (Linux)",
+              "`ip route add default via 192.168.1.1`"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Výpis tabulky: `ip route` (Linux), `route print` (Windows), `show ip route` (Cisco)."
+        },
+        {
+          "type": "heading",
+          "text": "Dynamické protokoly"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Protokol",
+            "Typ",
+            "Metrika",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "RIP",
+              "vektor vzdálenosti",
+              "počet skoků, max. 15",
+              "malé a výukové sítě"
+            ],
+            [
+              "OSPF",
+              "stav linek",
+              "cena podle šířky pásma",
+              "firemní sítě"
+            ],
+            [
+              "BGP",
+              "vektor cest",
+              "pravidla (politiky) mezi AS",
+              "internet mezi poskytovateli"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vektor vzdálenosti** (RIP): router zná jen to, co mu řeknou sousedé: „síť X je ode mě 2 skoky“.",
+            "**Stav linek** (OSPF): každý router zná mapu celé oblasti a sám si spočítá nejkratší cesty (Dijkstrův algoritmus).",
+            "**Vnitřní protokoly** (RIP, OSPF) běží uvnitř jednoho AS, **vnější** (BGP) mezi AS."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Síť má dvě cesty: A) 2 skoky přes linky 10 Mb/s, B) 3 skoky přes linky 1 Gb/s. Kterou vybere RIP a kterou OSPF?",
+          "answer": "RIP počítá jen **skoky** → vybere **A** (2 < 3). OSPF počítá **cenu** podle rychlosti linek, pomalé linky jsou drahé → vybere **B**. Proto se ve firmách používá spíš OSPF."
+        },
+        {
+          "type": "example",
+          "question": "Paket odešel s TTL 64 a prošel 5 routery. Jaké má TTL, když dorazí k cíli?",
+          "answer": "Každý router odečte 1: 64 − 5 = **59**. Na tom je postavený příkaz `traceroute` (`tracert` ve Windows): posílá pakety s TTL 1, 2, 3… a z hlášení „TTL vypršelo“ pozná routery po cestě."
+        },
+        {
+          "type": "text",
+          "text": "Doplň, co platí."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Metrika RIP je počet ",
+                "after": "",
+                "options": [
+                  "skoků",
+                  "megabitů",
+                  "milisekund"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Mezi poskytovateli internetu se používá ",
+                "after": "",
+                "options": [
+                  "BGP",
+                  "RIP",
+                  "ARP"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Výchozí cesta má prefix ",
+                "after": "",
+                "options": [
+                  "/0",
+                  "/32",
+                  "/24"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Když TTL klesne na 0, router paket ",
+                "after": "",
+                "options": [
+                  "zahodí",
+                  "vrátí",
+                  "zdvojí"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Statická cesta",
+                "back": "ručně, předvídatelná, nepřizpůsobí se výpadku"
+              },
+              {
+                "front": "RIP",
+                "back": "vektor vzdálenosti, počet skoků, max. 15"
+              },
+              {
+                "front": "OSPF",
+                "back": "stav linek, cena podle rychlosti"
+              },
+              {
+                "front": "BGP",
+                "back": "mezi autonomními systémy"
+              },
+              {
+                "front": "TTL",
+                "back": "každý router odečte 1, při 0 zahodí"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když přidám do sítě dynamický protokol, statické cesty už nikdy nepotřebuju.",
+          "right": "Statické cesty se dál běžně používají, hlavně **výchozí cesta** ven k poskytovateli a malé pobočky s jednou linkou.",
+          "why": "Statické směrování je jednoduché, nespotřebuje výkon ani přenos a nic neprozradí sousedům. Kde není náhradní cesta, dynamika nic nepřinese."
+        },
+        {
+          "type": "summary",
+          "text": "Statické cesty zapisuje správce (ip route, route add), dynamické si routery vyměňují: RIP (skoky), OSPF (cena linek), BGP (mezi AS). TTL brání kroužení paketů a využívá ho traceroute."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Podle čeho router vybírá cestu paketu?",
+      "options": [
+        "podle cílové IP adresy a směrovací tabulky",
+        "podle cílové MAC adresy",
+        "podle zdrojového portu",
+        "náhodně"
+      ],
+      "answer": 0,
+      "hints": [
+        "Router pracuje na síťové vrstvě."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se v IPv4 zapisuje výchozí cesta (síť/prefix)?",
+      "answers": [
+        "0.0.0.0/0",
+        "0.0.0.0 0.0.0.0"
+      ],
+      "hints": [
+        "Je to síť, do které patří úplně každá adresa."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka: 10.0.0.0/8 → R2, 10.1.0.0/16 → R3, 0.0.0.0/0 → ISP. Kam jde paket pro 10.1.200.3?",
+      "options": [
+        "R3",
+        "R2",
+        "ISP",
+        "zahodí se"
+      ],
+      "answer": 0,
+      "hints": [
+        "Router vybírá nejpřesnější shodu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Statické cesty se při výpadku linky samy přesměrují jinudy.",
+      "answer": false,
+      "explanation": "To umí jen dynamické směrování."
+    },
+    {
+      "type": "choice",
+      "question": "Která metrika je u protokolu RIP?",
+      "options": [
+        "počet skoků",
+        "cena podle šířky pásma",
+        "zpoždění v ms",
+        "počet MAC adres"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který protokol se používá mezi poskytovateli internetu?",
+      "options": [
+        "BGP",
+        "OSPF",
+        "RIP",
+        "DHCP"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Paket odešel s TTL 128 a prošel 9 routery. Jaké TTL má u cíle?",
+      "answers": [
+        "119"
+      ],
+      "explanation": "128 − 9 = 119."
+    },
+    {
+      "type": "match",
+      "question": "Spoj protokol s typem.",
+      "pairs": [
+        [
+          "RIP",
+          "vektor vzdálenosti"
+        ],
+        [
+          "OSPF",
+          "stav linek"
+        ],
+        [
+          "BGP",
+          "vektor cest mezi AS"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem v Linuxu přidáš statickou cestu do 192.168.2.0/24 přes 10.0.0.2?",
+      "options": [
+        "ip route add 192.168.2.0/24 via 10.0.0.2",
+        "ip addr add 192.168.2.0/24 dev 10.0.0.2",
+        "route print 192.168.2.0",
+        "arp -a 10.0.0.2"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "OSPF zná mapu sítě a počítá nejkratší cesty sám.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co router dělá s příchozím paketem.",
+      "items": [
+        "přečte cílovou IP adresu",
+        "najde shodné záznamy ve směrovací tabulce",
+        "vybere záznam s nejdelším prefixem",
+        "sníží TTL a pošle paket dalšímu skoku"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký příkaz ve Windows ukáže routery po cestě k cíli?",
+      "options": [
+        "tracert",
+        "ipconfig",
+        "netstat",
+        "nslookup"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej statické a dynamické směrování.",
+      "answer": "Statické cesty zapisuje správce ručně; jsou jednoduché a předvídatelné, ale při změně sítě se samy nepřizpůsobí. Dynamické si routery vyměňují protokolem (OSPF, BGP), samy reagují na výpadky, ale složitěji se nastavují. Malé sítě stačí statické, velké potřebují dynamické."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je výchozí cesta a k čemu slouží.",
+      "answer": "Výchozí cesta 0.0.0.0/0 platí pro všechny cíle, které router jinak nezná. Obvykle vede k poskytovateli internetu, takže router nemusí znát cesty do všech sítí světa."
+    }
+  ]
+}

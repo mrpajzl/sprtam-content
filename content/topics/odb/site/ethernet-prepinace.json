@@ -1,0 +1,533 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ethernet-prepinace",
+  "title": "Ethernet, MAC adresy a VLAN",
+  "emoji": "🔀",
+  "explanations": [
+    {
+      "title": "Přepínač jako vrátný",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si vrátného v paneláku. Ze začátku neví, kdo kde bydlí. Když mu ale někdo z bytu 12 podá dopis, zapamatuje si: „Novák bydlí ve dvanáctce.“ Příště dopis pro Nováka nese rovnou tam a nemusí obcházet celý dům."
+        },
+        {
+          "type": "text",
+          "text": "Přesně takhle funguje **přepínač (switch)** v počítačové síti. Pochopíš díky tomu, proč jsou dnešní sítě rychlé a jak se jedna fyzická síť dá rozdělit na víc oddělených sítí (VLAN)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ethernet",
+          "definition": "Nejrozšířenější technologie kabelových místních sítí (norma IEEE 802.3). Určuje, jak vypadají data v kabelu a jak se adresují.",
+          "example": "Síťová zásuvka v počítači je ethernetový port."
+        },
+        {
+          "type": "term",
+          "term": "Rámec",
+          "definition": "Balíček dat, který posílá Ethernet. Obsahuje adresu příjemce, adresu odesílatele, typ obsahu, samotná data a kontrolní součet."
+        },
+        {
+          "type": "term",
+          "term": "MAC adresa",
+          "definition": "Fyzická adresa síťové karty. Má **48 bitů**, zapisuje se jako 6 dvojic šestnáctkových číslic. První 3 bajty určují **výrobce**.",
+          "example": "3C:52:82:1A:2B:3C (Linux) nebo 3C-52-82-1A-2B-3C (Windows)"
+        },
+        {
+          "type": "term",
+          "term": "Šestnáctková soustava",
+          "definition": "Zápis čísel číslicemi 0–9 a písmeny A–F (A = 10 … F = 15). Jedna dvojice znaků je 1 bajt (0–255).",
+          "example": "FF = 255, 1A = 26"
+        },
+        {
+          "type": "term",
+          "term": "Port",
+          "definition": "Tady: fyzická zásuvka přepínače, do které vede kabel.",
+          "example": "Přepínač s 24 porty."
+        },
+        {
+          "type": "heading",
+          "text": "Jak přepínač učí a posílá"
+        },
+        {
+          "type": "term",
+          "term": "Tabulka MAC adres",
+          "definition": "Seznam v přepínači: která MAC adresa je za kterým portem. Záznamy po čase bez provozu mizí.",
+          "example": "3C:52:82:1A:2B:3C → port 5"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na port přijde rámec.",
+            "Přepínač se podívá na **zdrojovou** MAC a zapíše si: tato adresa je za tímhle portem (učení).",
+            "Podívá se na **cílovou** MAC a hledá ji v tabulce.",
+            "Najde ji → pošle rámec **jen** na ten jeden port.",
+            "Nenajde ji, nebo je to všesměrová adresa FF:FF:FF:FF:FF:FF → pošle rámec na **všechny** porty kromě toho, odkud přišel (zaplavení)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Tabulka je prázdná. Počítač A (port 1) pošle rámec počítači B (port 3). Co udělá přepínač?",
+          "answer": "Zapíše si: **A → port 1**. Adresu B v tabulce nemá, proto rámec **zaplaví** na porty 2, 3, 4… B odpoví a přepínač si zapíše **B → port 3**. Další rámce mezi A a B už jdou jen mezi porty 1 a 3."
+        },
+        {
+          "type": "example",
+          "question": "Jak se liší přepínač od starého rozbočovače (hubu)?",
+          "answer": "Hub nezná adresy. Každý signál zopakuje na všechny porty, takže si všichni překážejí (kolize). Přepínač posílá rámec jen správnému portu. Každý port má tak plnou rychlost a může vysílat i přijímat zároveň (**plný duplex**)."
+        },
+        {
+          "type": "heading",
+          "text": "ARP: jak se zjistí MAC adresa"
+        },
+        {
+          "type": "term",
+          "term": "ARP",
+          "definition": "Protokol, který k známé **IP adrese** v místní síti zjistí **MAC adresu**. Počítač zakřičí všem: „Kdo má IP 192.168.1.20?“ a vlastník odpoví svou MAC. Odpověď si počítač uloží do ARP tabulky (příkaz `arp -a`)."
+        },
+        {
+          "type": "heading",
+          "text": "VLAN: víc sítí v jednom přepínači"
+        },
+        {
+          "type": "term",
+          "term": "VLAN",
+          "definition": "Virtuální LAN. Přepínač rozdělí své porty do skupin. Každá skupina se chová jako **samostatná síť**, i když leží v jednom přepínači.",
+          "example": "Porty 1–12 = VLAN 10 učitelé, porty 13–24 = VLAN 20 žáci."
+        },
+        {
+          "type": "term",
+          "term": "Všesměrové vysílání (broadcast)",
+          "definition": "Rámec určený všem v síti, na adresu FF:FF:FF:FF:FF:FF. VLAN určuje, kam až broadcast dojde."
+        },
+        {
+          "type": "text",
+          "text": "Proč VLAN: oddělíš skupiny kvůli **bezpečnosti** (žáci nevidí na učitelské počítače), omezíš zbytečný broadcast a nemusíš kupovat víc přepínačů. Mezi VLAN mohou data projít jen přes **router** nebo L3 přepínač, kde se dá nastavit, co je povolené."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🔀",
+            "🟦🟦🟦",
+            "🟧🟧🟧"
+          ],
+          "caption": "Jeden přepínač, dvě VLAN: modrá a oranžová se nevidí"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když dám učitele a žáky do různých VLAN, ale do stejného přepínače, broadcast žáků stejně dojde k učitelům.",
+          "right": "Broadcast zůstane **jen ve své VLAN**.",
+          "why": "Každá VLAN je samostatná broadcastová doména. Přepínač pošle rámec jen na porty stejné VLAN."
+        },
+        {
+          "type": "summary",
+          "text": "Ethernet posílá rámce adresované MAC adresami (48 bitů). Přepínač se učí ze zdrojových MAC, posílá podle cílových a neznámé zaplaví. VLAN rozdělí jeden přepínač na oddělené sítě; mezi nimi jde provoz jen přes router."
+        }
+      ]
+    },
+    {
+      "title": "Rámec pod lupou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správce sítě ve firmě dostane úkol: „Účetní nesmí sdílet síť s hosty na Wi-Fi.“ Nekoupí nový kabel ani nový přepínač. Nastaví **VLAN**. Aby to uměl, musí rozumět tomu, jak vypadá ethernetový rámec a jak se do něj přidá značka VLAN."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ethernet",
+          "definition": "Technologie kabelové LAN podle normy IEEE 802.3."
+        },
+        {
+          "type": "term",
+          "term": "Bajt (B)",
+          "definition": "8 bitů. Velikosti částí rámce se udávají v bajtech."
+        },
+        {
+          "type": "term",
+          "term": "MAC adresa",
+          "definition": "48bitová (6bajtová) adresa síťové karty. Prvních 24 bitů je **OUI** (kód výrobce), zbytek je pořadové číslo karty.",
+          "example": "V adrese 00:1B:63:84:45:E6 je OUI 00:1B:63."
+        },
+        {
+          "type": "term",
+          "term": "Rámec",
+          "definition": "Jednotka dat na linkové (2.) vrstvě."
+        },
+        {
+          "type": "term",
+          "term": "Kontrolní součet (FCS)",
+          "definition": "Číslo spočítané z obsahu rámce (metodou CRC). Příjemce ho spočítá znovu. Když nesedí, rámec je poškozený a zahodí se."
+        },
+        {
+          "type": "heading",
+          "text": "Stavba ethernetového rámce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Část",
+            "Velikost",
+            "K čemu je"
+          ],
+          "rows": [
+            [
+              "preambule + začátek rámce",
+              "7 + 1 B",
+              "synchronizace, „teď začíná rámec“"
+            ],
+            [
+              "cílová MAC",
+              "6 B",
+              "komu"
+            ],
+            [
+              "zdrojová MAC",
+              "6 B",
+              "od koho"
+            ],
+            [
+              "typ (EtherType)",
+              "2 B",
+              "co je uvnitř, např. IPv4 nebo IPv6"
+            ],
+            [
+              "data",
+              "46–1500 B",
+              "obsah, typicky IP paket"
+            ],
+            [
+              "FCS",
+              "4 B",
+              "kontrola chyb"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Největší obsah 1500 B se nazývá **MTU** (Maximum Transmission Unit). Větší data se musí rozdělit."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy adres"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**unicast** – adresa jedné karty,",
+            "**broadcast** – FF:FF:FF:FF:FF:FF, všem v síti,",
+            "**multicast** – skupině přijímačů."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Přepínač"
+        },
+        {
+          "type": "term",
+          "term": "Přepínač (switch)",
+          "definition": "Zařízení 2. vrstvy. Vede si **tabulku MAC adres** (MAC → port) a rámce posílá jen na port, kde je cíl."
+        },
+        {
+          "type": "term",
+          "term": "Kolizní doména",
+          "definition": "Část sítě, kde se dva vysílající mohou srazit. U hubu je to celá síť, u přepínače každý port zvlášť."
+        },
+        {
+          "type": "term",
+          "term": "Broadcastová doména",
+          "definition": "Část sítě, kam dojde broadcast. Přepínač ji **nerozděluje**, rozděluje ji **router** a **VLAN**."
+        },
+        {
+          "type": "heading",
+          "text": "VLAN a značkování 802.1Q"
+        },
+        {
+          "type": "term",
+          "term": "VLAN ID",
+          "definition": "Číslo VLAN. Má **12 bitů**, použitelná čísla jsou **1–4094** (0 a 4095 jsou vyhrazené).",
+          "example": "VLAN 10, VLAN 20"
+        },
+        {
+          "type": "term",
+          "term": "Access port",
+          "definition": "Port pro koncové zařízení. Patří do **jedné** VLAN a rámce posílá **bez značky**. Počítač o VLAN vůbec neví."
+        },
+        {
+          "type": "term",
+          "term": "Trunk port",
+          "definition": "Port mezi přepínači (nebo k routeru), kterým jde **víc VLAN** najednou. Každý rámec dostane **značku 802.1Q** (4 B) s číslem VLAN."
+        },
+        {
+          "type": "text",
+          "text": "Doplň, co platí."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Port k počítači účetní je ",
+                "after": "",
+                "options": [
+                  "access",
+                  "trunk"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Spoj mezi dvěma přepínači s VLAN 10 a 20 je ",
+                "after": "",
+                "options": [
+                  "trunk",
+                  "access"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Značka 802.1Q má velikost ",
+                "after": "",
+                "options": [
+                  "4 B",
+                  "6 B",
+                  "12 B"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Mezi VLAN 10 a VLAN 20 data pošle ",
+                "after": "",
+                "options": [
+                  "router",
+                  "hub",
+                  "access port"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přepínač má tabulku: AA → port 1, BB → port 2, CC → port 7. Přijde rámec s cílem DD na port 2. Kam ho pošle?",
+          "answer": "DD v tabulce **není** → přepínač rámec zaplaví na **všechny porty kromě 2** (v téže VLAN). Zároveň si ze zdrojové adresy zapíše, kdo sedí na portu 2."
+        },
+        {
+          "type": "example",
+          "question": "Kolik různých VLAN ID je možné zapsat do 12 bitů a kolik jich je použitelných?",
+          "answer": "12 bitů = 2¹² = **4096** hodnot (0–4095). 0 a 4095 jsou vyhrazené, použitelných je **4094** (1–4094)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "zařízení 1. vrstvy",
+              "zařízení 2. vrstvy",
+              "zařízení 3. vrstvy"
+            ],
+            "items": [
+              {
+                "text": "hub",
+                "group": 0
+              },
+              {
+                "text": "opakovač",
+                "group": 0
+              },
+              {
+                "text": "přepínač",
+                "group": 1
+              },
+              {
+                "text": "síťová karta s MAC",
+                "group": 1
+              },
+              {
+                "text": "router",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Trunk port přenáší jen jednu VLAN a access port všechny.",
+          "right": "**Access** = jedna VLAN, bez značky. **Trunk** = víc VLAN, rámce značené 802.1Q.",
+          "why": "Trunk je „kmen“, kterým mezi přepínači proudí provoz všech VLAN. Proto potřebuje značky, aby druhý přepínač poznal, kam rámec patří."
+        },
+        {
+          "type": "summary",
+          "text": "Rámec: cílová a zdrojová MAC, typ, data 46–1500 B, FCS. MAC má 48 bitů, prvních 24 je OUI výrobce. Přepínač dělí kolizní domény, broadcastové dělí router a VLAN. Access port = jedna VLAN, trunk = víc VLAN se značkou 802.1Q."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik bitů má MAC adresa?",
+      "answers": [
+        "48"
+      ],
+      "hints": [
+        "Má 6 bajtů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Podle které adresy si přepínač **plní** tabulku MAC adres?",
+      "options": [
+        "podle zdrojové MAC",
+        "podle cílové MAC",
+        "podle IP adresy",
+        "podle čísla portu TCP"
+      ],
+      "answer": 0,
+      "hints": [
+        "Přepínač si pamatuje, kdo sedí za kterým portem. Kdo to prozradí?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá přepínač s rámcem, jehož cílovou MAC nezná?",
+      "options": [
+        "pošle ho na všechny porty kromě příchozího",
+        "zahodí ho",
+        "pošle ho zpět odesílateli",
+        "pošle ho routeru"
+      ],
+      "answer": 0,
+      "hints": [
+        "Přepínač chce, aby rámec došel, i když neví kam."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš všesměrovou (broadcast) MAC adresu.",
+      "answers": [
+        "FF:FF:FF:FF:FF:FF",
+        "FF-FF-FF-FF-FF-FF",
+        "FFFF.FFFF.FFFF",
+        "FFFFFFFFFFFF"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Přepínač rozděluje broadcastové domény.",
+      "answer": false,
+      "explanation": "Přepínač dělí kolizní domény. Broadcastové domény dělí router a VLAN."
+    },
+    {
+      "type": "truefalse",
+      "question": "Každá VLAN je samostatná broadcastová doména.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jaký protokol zjistí MAC adresu k IP adrese v místní síti?",
+      "options": [
+        "ARP",
+        "DNS",
+        "DHCP",
+        "NAT"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s vysvětlením.",
+      "pairs": [
+        [
+          "access port",
+          "jedna VLAN, bez značky"
+        ],
+        [
+          "trunk port",
+          "víc VLAN, značky 802.1Q"
+        ],
+        [
+          "OUI",
+          "první 3 bajty MAC, kód výrobce"
+        ],
+        [
+          "FCS",
+          "kontrolní součet rámce"
+        ],
+        [
+          "MTU",
+          "největší obsah rámce"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů dat nejvýš unese běžný ethernetový rámec (MTU)?",
+      "answers": [
+        "1500"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části ethernetového rámce od začátku.",
+      "items": [
+        "preambule",
+        "cílová MAC",
+        "zdrojová MAC",
+        "typ (EtherType)",
+        "data",
+        "FCS"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se dostanou data z VLAN 10 do VLAN 20?",
+      "options": [
+        "přes router nebo L3 přepínač",
+        "samy, jsou ve stejném přepínači",
+        "přes hub",
+        "přes access port"
+      ],
+      "answer": 0,
+      "hints": [
+        "Každá VLAN je samostatná síť. Co propojuje sítě?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik VLAN ID je použitelných (1 až …)? Napiš horní mez.",
+      "answers": [
+        "4094"
+      ],
+      "hints": [
+        "VLAN ID má 12 bitů.",
+        "Dvě krajní hodnoty jsou vyhrazené."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se přepínač učí, kam má posílat rámce.",
+      "answer": "Z každého příchozího rámce si přečte zdrojovou MAC a zapíše si ji k portu, odkud přišel. Rámce pak posílá podle cílové MAC jen na zapsaný port. Neznámé cíle a broadcasty zaplaví na všechny porty kromě příchozího."
+    },
+    {
+      "type": "open",
+      "question": "K čemu slouží VLAN a jaký je rozdíl mezi access a trunk portem?",
+      "answer": "VLAN rozdělí jeden přepínač na oddělené sítě, např. kvůli bezpečnosti nebo omezení broadcastu. Access port patří do jedné VLAN a posílá rámce bez značky, trunk přenáší víc VLAN mezi přepínači a rámce značí podle 802.1Q."
+    }
+  ]
+}
