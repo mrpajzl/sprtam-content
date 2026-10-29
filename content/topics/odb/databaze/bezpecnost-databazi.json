@@ -1,0 +1,381 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "bezpecnost-databazi",
+  "title": "Bezpečnost databází",
+  "emoji": "🛡️",
+  "explanations": [
+    {
+      "title": "Klíče od školy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Školník má klíče od všech místností. Učitel jen od svého kabinetu a tříd, žák od své skříňky. Nikdo nemá víc klíčů, než potřebuje. Když žák klíč ztratí, zloděj se nedostane do ředitelny."
+        },
+        {
+          "type": "text",
+          "text": "Databáze funguje stejně. Obsahuje známky, adresy, rodná čísla, hesla. Každý uživatel smí jen to, co nutně potřebuje. Tady se naučíš, jak se oprávnění nastavují a jak data chránit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Uživatelský účet databáze",
+          "definition": "Jméno a heslo, pod kterým se člověk nebo aplikace připojuje k SŘBD. Každý účet má svá oprávnění.",
+          "example": "Účet `ucitel` pro aplikaci žákovské knížky."
+        },
+        {
+          "type": "term",
+          "term": "Oprávnění (privilegium)",
+          "definition": "Povolení provést určitou operaci s určitým objektem.",
+          "example": "Smí číst (`SELECT`) tabulku `znamky`."
+        },
+        {
+          "type": "term",
+          "term": "DCL (Data Control Language)",
+          "definition": "Příkazy SQL pro řízení přístupu: `GRANT` (přiděl oprávnění) a `REVOKE` (odeber oprávnění).",
+          "example": "`GRANT SELECT ON znamky TO zak;`"
+        },
+        {
+          "type": "term",
+          "term": "Role",
+          "definition": "Pojmenovaná skupina oprávnění. Přidělíš ji uživatelům a nemusíš každému nastavovat vše zvlášť.",
+          "example": "Role `ucitele`: čtení a zápis známek."
+        },
+        {
+          "type": "term",
+          "term": "Princip nejmenších oprávnění",
+          "definition": "Každý účet dostane jen ta oprávnění, která nutně potřebuje ke své práci. Nic navíc.",
+          "example": "Aplikace, která jen zobrazuje rozvrh, nesmí mazat tabulky."
+        },
+        {
+          "type": "heading",
+          "text": "Přidělení a odebrání"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`GRANT SELECT ON znamky TO zak;`",
+            "`GRANT SELECT, INSERT, UPDATE ON znamky TO ucitel;`",
+            "`REVOKE UPDATE ON znamky FROM ucitel;`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Žák smí známky jen číst. Učitel je smí číst, vkládat a měnit. Poslední příkaz učiteli právo měnit zase odebere. (Přesný zápis jména uživatele se mezi SŘBD liší, třeba v MySQL `'ucitel'@'localhost'`.)"
+        },
+        {
+          "type": "heading",
+          "text": "Další ochrana dat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Opatření",
+            "Proti čemu chrání"
+          ],
+          "rows": [
+            [
+              "oprávnění a role",
+              "neoprávněnému čtení a změnám"
+            ],
+            [
+              "hesla ukládat jen jako hash (Argon2, bcrypt), nikdy čitelně",
+              "úniku hesel při krádeži databáze"
+            ],
+            [
+              "šifrované spojení (TLS) a šifrování disku",
+              "odposlechu a krádeži nosiče"
+            ],
+            [
+              "pravidelné zálohy a jejich zkušební obnova",
+              "ztrátě dat (havárie, chyba, ransomware)"
+            ],
+            [
+              "protokolování (logy) přístupů",
+              "nevysledovatelnému zneužití"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Databáze s osobními údaji (jména, adresy, známky žáků) spadají pod **GDPR**, nařízení EU 2016/679. Správce musí údaje chránit a zpracovávat jen v nutném rozsahu."
+        },
+        {
+          "type": "example",
+          "question": "Aplikace e-shopu se k databázi připojuje účtem `root` se všemi právy. Co je špatně?",
+          "answer": "Porušuje **princip nejmenších oprávnění**. Když útočník aplikaci zneužije, může smazat celou databázi i ostatní databáze na serveru. Aplikace má mít vlastní účet jen s právy `SELECT`, `INSERT`, `UPDATE` (a případně `DELETE`) na své tabulky."
+        },
+        {
+          "type": "example",
+          "question": "Proč se hesla neukládají jako text, ale jako hash?",
+          "answer": "Hash je jednosměrný otisk: z hesla ho spočítáš snadno, zpátky to prakticky nejde. Při přihlášení se spočítá hash zadaného hesla a porovná s uloženým. Když někdo databázi ukradne, hesla nezíská přímo. Používají se pomalé algoritmy s „solí“ (Argon2, bcrypt), ne rychlé MD5."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zálohu máme, protože databáze běží na dvou discích v RAID.",
+          "right": "Záloha je samostatná kopie dat na jiném místě. RAID chrání jen před selháním disku.",
+          "why": "Když někdo omylem smaže tabulku nebo data zašifruje ransomware, RAID tu změnu okamžitě provede na obou discích."
+        },
+        {
+          "type": "summary",
+          "text": "Přístup řídí DCL: `GRANT` přiděluje, `REVOKE` odebírá oprávnění, role je seskupují. Platí princip nejmenších oprávnění. Hesla ukládej jako hash, dělej zálohy a chraň osobní údaje podle GDPR."
+        }
+      ]
+    },
+    {
+      "title": "SQL injection",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na přihlašovací stránce napíše útočník do pole heslo podivný text s apostrofy. A je přihlášený, aniž by heslo znal. Tomuto útoku se říká **SQL injection** (vložení SQL kódu). Patří dlouhodobě k nejčastějším zranitelnostem webových aplikací."
+        },
+        {
+          "type": "text",
+          "text": "Pochopíš, jak útok funguje, a naučíš se jedinou spolehlivou obranu. Každý programátor, který pracuje s databází, ji musí znát."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dotaz SQL",
+          "definition": "Příkaz pro databázi, např. `SELECT * FROM uzivatele WHERE jmeno = 'eva';`. Text v něm je v apostrofech.",
+          "example": "Aplikace dotaz sestaví a pošle SŘBD."
+        },
+        {
+          "type": "term",
+          "term": "SQL injection",
+          "definition": "Útok, při kterém útočník vloží do vstupu (formulář, adresa) kus SQL kódu. Aplikace vstup slepí do dotazu a SŘBD ho provede jako příkaz.",
+          "example": "Do pole heslo napíše `' OR '1'='1`."
+        },
+        {
+          "type": "term",
+          "term": "Parametrizovaný (připravený) dotaz",
+          "definition": "Dotaz se zástupnými znaky (`?` nebo `%s`) místo hodnot. Hodnoty se pošlou zvlášť a SŘBD je vždy bere jen jako data, nikdy jako kód.",
+          "example": "`WHERE jmeno = ? AND heslo_hash = ?`"
+        },
+        {
+          "type": "term",
+          "term": "Validace vstupu",
+          "definition": "Kontrola, že vstup odpovídá očekávání (číslo je číslo, e-mail má zavináč). Doplňková ochrana, sama nestačí.",
+          "example": "ID objednávky musí být celé číslo."
+        },
+        {
+          "type": "heading",
+          "text": "Jak útok funguje"
+        },
+        {
+          "type": "text",
+          "text": "Aplikace v Pythonu skládá dotaz spojováním řetězců:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`dotaz = \"SELECT * FROM uzivatele WHERE jmeno = '\" + jmeno + \"' AND heslo = '\" + heslo + \"'\"`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Poctivý uživatel zadá jméno `eva` a heslo `tajne`. Dotaz: `… WHERE jmeno = 'eva' AND heslo = 'tajne'`. Vše v pořádku.",
+            "Útočník zadá jméno `eva` a heslo `' OR '1'='1`.",
+            "Po slepení: `… WHERE jmeno = 'eva' AND heslo = '' OR '1'='1'`.",
+            "`AND` má přednost před `OR`. Podmínka zní: (jméno eva a prázdné heslo) **nebo** 1 = 1. Druhá část platí vždy.",
+            "Dotaz vrátí všechny uživatele a aplikace útočníka přihlásí."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Obrana"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`cur.execute(`",
+            "`    \"SELECT * FROM uzivatele WHERE jmeno = ? AND heslo_hash = ?\",`",
+            "`    (jmeno, heslo_hash)`",
+            "`)`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hodnoty jdou do SŘBD odděleně od textu dotazu. Útočníkův vstup `' OR '1'='1` se pak hledá jako obyčejný (divný) text a nic se nestane. Navíc se tu neporovnává heslo, ale jeho hash."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vždy parametrizované dotazy** (nebo knihovna ORM, která je používá).",
+            "**Nejmenší oprávnění** účtu aplikace: i úspěšný útok pak napáchá méně škody.",
+            "**Validace vstupu** jako doplněk.",
+            "**Nevypisuj uživateli chybové hlášky databáze**, prozrazují její strukturu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Adresa e-shopu je `…/zbozi?id=15` a aplikace dělá `\"SELECT * FROM zbozi WHERE id = \" + id`. Co když útočník zadá `id=15; DROP TABLE zbozi`?",
+          "answer": "Pokud SŘBD a knihovna dovolí víc příkazů najednou, provede se i `DROP TABLE` a tabulka zmizí. I když ne, útočník může přidat `OR 1=1` a vypsat všechno. Obrana: parametr `WHERE id = ?` a kontrola, že `id` je celé číslo."
+        },
+        {
+          "type": "example",
+          "question": "Stačí jako obrana z textu odstranit apostrofy?",
+          "answer": "Ne. Číselné parametry apostrofy vůbec nepotřebují (`id = 15 OR 1=1`) a různé SŘBD a kódování mají různé triky. Filtrování je křehké. Spolehlivou obranou jsou **parametrizované dotazy**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Formulář má v prohlížeči kontrolu v JavaScriptu, takže SQL injection nehrozí.",
+          "right": "Vstup vždy ošetři na serveru a dotazy posílej parametrizované.",
+          "why": "Kontrolu v prohlížeči útočník snadno obejde, třeba tím, že pošle požadavek přímo bez prohlížeče."
+        },
+        {
+          "type": "summary",
+          "text": "SQL injection vzniká, když aplikace slepí uživatelský vstup do textu dotazu. Spolehlivě ji zastaví parametrizované dotazy. Doplňkem je nejmenší oprávnění, validace na serveru a skryté chybové hlášky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který příkaz přidělí uživateli oprávnění?",
+      "options": [
+        "`GRANT`",
+        "`REVOKE`",
+        "`ALLOW`",
+        "`COMMIT`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který příkaz oprávnění odebere?",
+      "options": [
+        "`REVOKE`",
+        "`GRANT`",
+        "`DELETE`",
+        "`DROP`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je nejspolehlivější obrana proti SQL injection?",
+      "options": [
+        "parametrizované dotazy",
+        "odstranění apostrofů ze vstupu",
+        "kontrola v JavaScriptu v prohlížeči",
+        "dlouhé názvy tabulek"
+      ],
+      "answer": 0,
+      "hints": [
+        "Obrana musí zajistit, že vstup nikdy nebude chápán jako kód."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se mají ukládat hesla uživatelů?",
+      "options": [
+        "jako hash pomalým algoritmem se solí (Argon2, bcrypt)",
+        "čitelně, aby je šlo poslat uživateli",
+        "jako MD5",
+        "zašifrovaná stejným klíčem jako zálohy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená princip nejmenších oprávnění?",
+      "options": [
+        "účet má jen oprávnění nutná pro svou práci",
+        "uživatelů má být co nejméně",
+        "oprávnění se nastavují jen jednou",
+        "správce nemá žádná oprávnění"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kontrola vstupu v JavaScriptu v prohlížeči sama spolehlivě zabrání SQL injection.",
+      "answer": false,
+      "explanation": "Útočník může požadavek poslat i bez prohlížeče."
+    },
+    {
+      "type": "truefalse",
+      "question": "RAID nahrazuje zálohy.",
+      "answer": false,
+      "explanation": "Smazání nebo zašifrování dat RAID okamžitě zopakuje na všech discích."
+    },
+    {
+      "type": "truefalse",
+      "question": "Role je pojmenovaná skupina oprávnění, kterou lze přidělit více uživatelům.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj opatření s hrozbou.",
+      "pairs": [
+        [
+          "parametrizované dotazy",
+          "SQL injection"
+        ],
+        [
+          "zálohy",
+          "ztráta dat"
+        ],
+        [
+          "hash hesel",
+          "únik hesel"
+        ],
+        [
+          "TLS",
+          "odposlech spojení"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky útoku SQL injection na přihlášení.",
+      "items": [
+        "útočník napíše do pole heslo `' OR '1'='1`",
+        "aplikace vstup slepí do textu dotazu",
+        "podmínka WHERE je vždy pravdivá",
+        "SŘBD vrátí uživatele a aplikace útočníka přihlásí"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakým slovem se v SQL příkazu GRANT odděluje oprávnění od tabulky: `GRANT SELECT ___ znamky TO zak;`?",
+      "answers": [
+        "ON"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenují příkazy SQL pro řízení přístupu (GRANT, REVOKE)? Napiš zkratku.",
+      "answers": [
+        "DCL"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak funguje útok SQL injection a jak se mu bránit.",
+      "answer": "Aplikace slepí vstup uživatele do textu dotazu a útočník do vstupu vloží kus SQL, např. `' OR '1'='1`, který změní význam dotazu. Bránit se má parametrizovanými dotazy, kde se hodnoty předávají odděleně a SŘBD je bere jen jako data. Pomáhá i nejmenší oprávnění účtu aplikace."
+    },
+    {
+      "type": "open",
+      "question": "Proč by se aplikace neměla připojovat k databázi účtem správce (root)?",
+      "answer": "Porušuje to princip nejmenších oprávnění. Když útočník aplikaci zneužije, získá všechna práva a může smazat nebo ukrást všechna data na serveru. Aplikace má mít účet jen s oprávněními, která nutně potřebuje."
+    }
+  ]
+}

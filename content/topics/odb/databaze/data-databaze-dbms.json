@@ -1,0 +1,452 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "data-databaze-dbms",
+  "title": "Data, databáze a SŘBD (DBMS)",
+  "emoji": "🗃️",
+  "explanations": [
+    {
+      "title": "Školní kartotéka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dřív měla škola papírovou kartotéku: na každého žáka jednu kartu se jménem, adresou a známkami. Hledat v ní bylo pomalé. Když se žák přestěhoval, musela sekretářka přepsat adresu na všech kartách, kde byla. Někde zapomněla a údaje si začaly odporovat."
+        },
+        {
+          "type": "text",
+          "text": "Dnes jsou údaje v **databázi**. Používá ji elektronická žákovská, e-shop, banka, nemocnice i mobilní hra. Než se naučíš s databází pracovat, potřebuješ znát pár základních pojmů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Data",
+          "definition": "Zaznamenané údaje: čísla, texty, data narození. Sama o sobě nemusí nic říkat.",
+          "example": "„3“, „Novák“, „2008-05-14“"
+        },
+        {
+          "type": "term",
+          "term": "Informace",
+          "definition": "Data, která mají pro člověka význam, protože víme, co znamenají.",
+          "example": "„Jan Novák dostal z matematiky trojku.“"
+        },
+        {
+          "type": "term",
+          "term": "Databáze",
+          "definition": "Uspořádaný soubor vzájemně souvisejících dat uložených tak, aby se v nich dalo rychle hledat a měnit je.",
+          "example": "Databáze žáků, předmětů a známek jedné školy."
+        },
+        {
+          "type": "term",
+          "term": "SŘBD (DBMS)",
+          "definition": "Systém řízení báze dat (Database Management System). Program, který databázi spravuje: ukládá data, hledá v nich, hlídá oprávnění a souběžný přístup.",
+          "example": "MySQL, MariaDB, PostgreSQL, SQLite, Microsoft SQL Server, Oracle Database."
+        },
+        {
+          "type": "term",
+          "term": "Databázový systém",
+          "definition": "Databáze (data) spolu se SŘBD (programem), který s ní pracuje.",
+          "example": "Data žákovské knížky + PostgreSQL, který je spravuje."
+        },
+        {
+          "type": "heading",
+          "text": "Proč ne obyčejné soubory"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Problém se soubory",
+            "Jak ho řeší databázový systém"
+          ],
+          "rows": [
+            [
+              "stejný údaj na více místech (**redundance**)",
+              "údaj je uložený jednou, ostatní místa na něj odkazují"
+            ],
+            [
+              "údaje si odporují (**nekonzistence**)",
+              "pravidla integrity nedovolí uložit nesmysl"
+            ],
+            [
+              "dva lidé zapisují současně a přepíší se",
+              "SŘBD řídí souběžný přístup"
+            ],
+            [
+              "každý vidí všechno",
+              "oprávnění pro jednotlivé uživatele"
+            ],
+            [
+              "po havárii se data ztratí",
+              "transakce, zálohy a obnova"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak s databází mluvíš"
+        },
+        {
+          "type": "text",
+          "text": "S relační databází se komunikuje jazykem **SQL** (Structured Query Language). Napíšeš dotaz, SŘBD ho provede a vrátí výsledek. Aplikace (web, mobil) posílá SQL dotazy za tebe."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🧑‍💻",
+            "➡️",
+            "📝",
+            "➡️",
+            "⚙️",
+            "➡️",
+            "🗄️"
+          ],
+          "caption": "uživatel → aplikace posílá SQL → SŘBD → data"
+        },
+        {
+          "type": "example",
+          "question": "Je „37,2“ informace?",
+          "answer": "Samo o sobě je to **data**. Informací se stane, až víme, co znamená: „Petr má teplotu 37,2 °C.“"
+        },
+        {
+          "type": "example",
+          "question": "Škola eviduje adresu žáka v třídní knize i v seznamu na obědy. Co se stane, když se žák přestěhuje a změní se jen jeden seznam?",
+          "answer": "Údaje si budou odporovat, to je **nekonzistence**. Jejím zdrojem je **redundance** (adresa uložená dvakrát). Databáze má adresu jen jednou a oba seznamy na ni odkazují."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Databáze a SŘBD (DBMS) je totéž.",
+          "right": "Databáze jsou data, SŘBD je program, který je spravuje.",
+          "why": "MySQL není databáze, ale systém řízení báze dat. V jednom SŘBD může běžet mnoho databází."
+        },
+        {
+          "type": "summary",
+          "text": "Databáze je uspořádaný soubor souvisejících dat, SŘBD (DBMS) program, který je spravuje. Databázový systém odstraňuje redundanci a nekonzistenci, řídí souběžný přístup a oprávnění. Komunikuje se jazykem SQL."
+        }
+      ]
+    },
+    {
+      "title": "Druhy databází",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Knihovna řadí knihy do regálů, ale fotky v telefonu máš v albech a kamarády na sociální síti propojené se všemi jejich kamarády. Různá data se hodí uspořádat různě. Podobně existují různé **databázové modely**."
+        },
+        {
+          "type": "text",
+          "text": "Ve škole i v praxi se nejvíc používají **relační databáze** s tabulkami. Měl bys ale vědět, že existují i jiné a kdy se hodí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Databáze a SŘBD",
+          "definition": "Databáze jsou uspořádaná související data. SŘBD (systém řízení báze dat, anglicky DBMS) je program, který je ukládá, hledá a chrání.",
+          "example": "Databáze e-shopu spravovaná v MySQL."
+        },
+        {
+          "type": "term",
+          "term": "Databázový model",
+          "definition": "Způsob, jak jsou data v databázi uspořádaná a propojená.",
+          "example": "relační (tabulky), dokumentový, grafový"
+        },
+        {
+          "type": "term",
+          "term": "Relační databáze",
+          "definition": "Data jsou v **tabulkách** (relacích) s řádky a sloupci. Tabulky se propojují přes společné hodnoty (klíče). Pracuje se v jazyce SQL.",
+          "example": "Tabulka `zaci` a tabulka `znamky` propojené číslem žáka."
+        },
+        {
+          "type": "term",
+          "term": "NoSQL databáze",
+          "definition": "Souhrnné označení pro databáze, které nepoužívají klasické tabulky. Patří sem dokumentové, klíč–hodnota a grafové databáze.",
+          "example": "MongoDB (dokumenty), Redis (klíč–hodnota), Neo4j (graf)."
+        },
+        {
+          "type": "term",
+          "term": "SQL",
+          "definition": "Standardizovaný jazyk pro práci s relačními databázemi. Dotazem v něm data čteš, vkládáš, měníš i mažeš a vytváříš tabulky.",
+          "example": "`SELECT jmeno FROM zaci;`"
+        },
+        {
+          "type": "heading",
+          "text": "Přehled modelů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Model",
+            "Jak ukládá data",
+            "Hodí se pro",
+            "Příklad SŘBD"
+          ],
+          "rows": [
+            [
+              "hierarchický",
+              "strom: rodič a jeho potomci",
+              "starší systémy, adresáře",
+              "IBM IMS"
+            ],
+            [
+              "síťový",
+              "záznamy propojené odkazy, i víc rodičů",
+              "dnes historický",
+              "IDS"
+            ],
+            [
+              "relační",
+              "tabulky propojené klíči",
+              "většina běžných aplikací",
+              "PostgreSQL, MySQL, SQLite"
+            ],
+            [
+              "dokumentový (NoSQL)",
+              "dokumenty podobné JSON",
+              "proměnlivá struktura dat",
+              "MongoDB"
+            ],
+            [
+              "klíč–hodnota (NoSQL)",
+              "dvojice klíč a hodnota",
+              "rychlá mezipaměť",
+              "Redis"
+            ],
+            [
+              "grafový (NoSQL)",
+              "uzly a hrany mezi nimi",
+              "sociální sítě, doporučování",
+              "Neo4j"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď systémy řízení báze dat podle toho, jestli jsou relační."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "relační",
+              "NoSQL"
+            ],
+            "items": [
+              {
+                "text": "PostgreSQL",
+                "group": 0
+              },
+              {
+                "text": "MongoDB",
+                "group": 1
+              },
+              {
+                "text": "MySQL",
+                "group": 0
+              },
+              {
+                "text": "Redis",
+                "group": 1
+              },
+              {
+                "text": "SQLite",
+                "group": 0
+              },
+              {
+                "text": "Neo4j",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Kdo s databází pracuje"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Správce databáze (DBA)**: instaluje SŘBD, zálohuje, nastavuje oprávnění a výkon.",
+            "**Návrhář a vývojář**: navrhuje tabulky a píše aplikace, které databázi používají.",
+            "**Koncový uživatel**: pracuje s daty přes aplikaci a SQL ani nevidí."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Která databáze se hodí pro elektronickou žákovskou knížku?",
+          "answer": "**Relační.** Data mají pevnou strukturu (žák, předmět, známka, datum) a jsou mezi sebou propojená. Relační SŘBD navíc hlídá integritu a dobře zvládá souběžné zápisy učitelů."
+        },
+        {
+          "type": "example",
+          "question": "Sociální síť chce rychle zjistit „přátele přátel“. Jaký model se nabízí?",
+          "answer": "**Grafový.** Lidé jsou uzly a přátelství hrany. Procházení vazeb je v grafové databázi přirozené a rychlé. Jde to i relačně, ale dotazy přes mnoho úrovní jsou složitější."
+        },
+        {
+          "type": "mistake",
+          "wrong": "SQL je databáze od firmy Microsoft.",
+          "right": "SQL je jazyk pro práci s relačními databázemi. Microsoft SQL Server je jeden z mnoha SŘBD, který tento jazyk používá.",
+          "why": "Název SQL nese více produktů (MySQL, PostgreSQL, SQL Server), ale jazyk sám je standard (ISO/IEC 9075)."
+        },
+        {
+          "type": "summary",
+          "text": "Nejrozšířenější je relační model: tabulky propojené klíči a jazyk SQL. NoSQL databáze (dokumentové, klíč–hodnota, grafové) se hodí pro proměnlivá nebo silně propojená data. SŘBD spravuje DBA, používají ho vývojáři i koncoví uživatelé."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je SŘBD (DBMS)?",
+      "options": [
+        "program, který spravuje databázi",
+        "jazyk pro dotazy",
+        "tabulka s daty",
+        "záloha databáze"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá stav, kdy je stejný údaj uložený na více místech?",
+      "options": [
+        "redundance",
+        "nekonzistence",
+        "integrita",
+        "normalizace"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jde o zbytečné opakování."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá stav, kdy si údaje v databázi odporují?",
+      "options": [
+        "nekonzistence",
+        "redundance",
+        "transakce",
+        "relace"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který model ukládá data do tabulek propojených klíči?",
+      "options": [
+        "relační",
+        "grafový",
+        "dokumentový",
+        "klíč–hodnota"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "MySQL je systém řízení báze dat, ne jazyk.",
+      "answer": true,
+      "explanation": "Jazyk je SQL, MySQL je SŘBD."
+    },
+    {
+      "type": "truefalse",
+      "question": "Databázový systém = databáze + SŘBD.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "„42“ je samo o sobě informace.",
+      "answer": false,
+      "explanation": "Je to jen údaj (data). Informací se stane, když víme, co znamená."
+    },
+    {
+      "type": "match",
+      "question": "Spoj SŘBD s typem databáze.",
+      "pairs": [
+        [
+          "PostgreSQL",
+          "relační"
+        ],
+        [
+          "MongoDB",
+          "dokumentová"
+        ],
+        [
+          "Redis",
+          "klíč–hodnota"
+        ],
+        [
+          "Neo4j",
+          "grafová"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj roli s činností.",
+      "pairs": [
+        [
+          "správce (DBA)",
+          "zálohy a oprávnění"
+        ],
+        [
+          "vývojář",
+          "píše aplikaci nad databází"
+        ],
+        [
+          "koncový uživatel",
+          "pracuje s daty přes aplikaci"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje standardní jazyk pro práci s relačními databázemi? (zkratka)",
+      "answers": [
+        "SQL"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu požadavku od uživatele k datům.",
+      "items": [
+        "uživatel klikne v aplikaci",
+        "aplikace pošle SQL dotaz",
+        "SŘBD dotaz provede",
+        "SŘBD čte data z databáze"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která výhoda databázového systému řeší situaci, kdy dva učitelé zapisují známky současně?",
+      "options": [
+        "řízení souběžného přístupu",
+        "redundance",
+        "export do souboru",
+        "grafické rozhraní"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi databází a SŘBD? Uveď příklad.",
+      "answer": "Databáze je uspořádaný soubor souvisejících dat, třeba data e-shopu. SŘBD je program, který tato data ukládá, hledá a chrání, třeba MySQL nebo PostgreSQL."
+    },
+    {
+      "type": "open",
+      "question": "Uveď tři výhody databázového systému oproti ukládání dat do obyčejných souborů.",
+      "answer": "Odstraňuje redundanci a tím i nekonzistenci, hlídá integritu dat, řídí souběžný přístup více uživatelů, nastavuje oprávnění a umí transakce, zálohy a obnovu."
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "razeni-agregace",
+  "title": "Řazení a agregační funkce",
+  "emoji": "📊",
+  "explanations": [
+    {
+      "title": "Seřadit a spočítat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na konci pololetí chce třídní učitelka vědět: jaký je průměr z matematiky, kolik známek kdo má a kdo má průměr horší než 2. Nechce vidět všech 500 známek, chce **souhrnná čísla**. A chce je seřazená."
+        },
+        {
+          "type": "text",
+          "text": "SQL na to má řazení (`ORDER BY`) a **agregační funkce**, které z mnoha řádků spočítají jedno číslo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dotaz SELECT",
+          "definition": "Připomenutí: `SELECT sloupce FROM tabulka WHERE podmínka;` vybere řádky a sloupce z tabulky.",
+          "example": "`SELECT znamka FROM znamky WHERE predmet = 'M';`"
+        },
+        {
+          "type": "term",
+          "term": "`ORDER BY`",
+          "definition": "Seřadí výsledek podle sloupce. `ASC` vzestupně (výchozí), `DESC` sestupně. Bez `ORDER BY` není pořadí řádků zaručené.",
+          "example": "`ORDER BY prijmeni ASC`"
+        },
+        {
+          "type": "term",
+          "term": "Agregační funkce",
+          "definition": "Funkce, která z hodnot mnoha řádků spočítá jednu hodnotu.",
+          "example": "`AVG(znamka)` spočítá průměr všech známek."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Funkce",
+            "Co spočítá"
+          ],
+          "rows": [
+            [
+              "`COUNT(*)`",
+              "počet řádků"
+            ],
+            [
+              "`COUNT(sloupec)`",
+              "počet řádků, kde sloupec není NULL"
+            ],
+            [
+              "`SUM(sloupec)`",
+              "součet"
+            ],
+            [
+              "`AVG(sloupec)`",
+              "aritmetický průměr (NULL vynechá)"
+            ],
+            [
+              "`MIN(sloupec)`, `MAX(sloupec)`",
+              "nejmenší, největší hodnota"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka znamky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "id",
+            "id_zaka",
+            "predmet",
+            "znamka"
+          ],
+          "rows": [
+            [
+              "1",
+              "1",
+              "M",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "ČJ",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "M",
+              "3"
+            ],
+            [
+              "4",
+              "2",
+              "ČJ",
+              "4"
+            ],
+            [
+              "5",
+              "3",
+              "M",
+              "2"
+            ],
+            [
+              "6",
+              "4",
+              "ČJ",
+              "1"
+            ],
+            [
+              "7",
+              "2",
+              "M",
+              "5"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Příklady"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Dotaz",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "`SELECT COUNT(*) FROM znamky;`",
+              "7"
+            ],
+            [
+              "`SELECT SUM(znamka) FROM znamky;`",
+              "18"
+            ],
+            [
+              "`SELECT MIN(znamka), MAX(znamka) FROM znamky;`",
+              "1, 5"
+            ],
+            [
+              "`SELECT AVG(znamka) FROM znamky WHERE predmet = 'M';`",
+              "2.75"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Spočítej průměr z matematiky ručně a ověř výsledek dotazu.",
+          "answer": "Matematika: 1, 3, 2, 5. Součet 11, počet 4. Průměr 11 / 4 = **2.75**. `WHERE` nejdřív nechá jen řádky matematiky, `AVG` pak počítá jen z nich."
+        },
+        {
+          "type": "example",
+          "question": "Seřaď žáky od nejmladšího, při stejném roce podle příjmení.",
+          "answer": "`SELECT jmeno, prijmeni FROM zaci ORDER BY rok_narozeni DESC, prijmeni ASC;` Nejdřív se řadí podle roku sestupně (nejmladší má nejvyšší rok). Když je rok stejný, rozhoduje příjmení."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`SELECT * FROM zaci WHERE AVG(znamka) > 2;`",
+          "right": "Agregace patří do `HAVING` (viz druhé vysvětlení) nebo do `SELECT`, ne do `WHERE`.",
+          "why": "`WHERE` posuzuje každý řádek zvlášť. Průměr ale vzniká až z více řádků, takže ho `WHERE` ještě nezná."
+        },
+        {
+          "type": "summary",
+          "text": "`ORDER BY` řadí výsledek (`ASC` vzestupně, `DESC` sestupně). Agregační funkce `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` spočítají z mnoha řádků jednu hodnotu."
+        }
+      ]
+    },
+    {
+      "title": "Skupiny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Průměr všech známek je málo užitečný. Učitelka chce průměr **zvlášť pro každý předmět** nebo **pro každého žáka**. Představ si, že známky rozhází do hromádek podle předmětu a v každé hromádce spočítá průměr. Přesně to dělá `GROUP BY`."
+        },
+        {
+          "type": "text",
+          "text": "A když chce vidět jen žáky s průměrem horším než 2, přidá podmínku na hromádky: `HAVING`."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Agregační funkce",
+          "definition": "`COUNT`, `SUM`, `AVG`, `MIN`, `MAX` – z hodnot více řádků spočítají jednu hodnotu.",
+          "example": "`AVG(znamka)`"
+        },
+        {
+          "type": "term",
+          "term": "`GROUP BY`",
+          "definition": "Rozdělí řádky do skupin podle stejné hodnoty sloupce. Agregační funkce se pak spočítá pro každou skupinu zvlášť. Výsledek má jeden řádek za každou skupinu.",
+          "example": "`GROUP BY predmet` vytvoří skupinu M a skupinu ČJ."
+        },
+        {
+          "type": "term",
+          "term": "`HAVING`",
+          "definition": "Podmínka na celé skupiny. Smí obsahovat agregační funkce.",
+          "example": "`HAVING AVG(znamka) > 2`"
+        },
+        {
+          "type": "term",
+          "term": "`WHERE` vs. `HAVING`",
+          "definition": "`WHERE` filtruje jednotlivé řádky **před** seskupením. `HAVING` filtruje hotové skupiny **po** seskupení.",
+          "example": "Nejdřív vyhoď neplatné známky (WHERE), pak skupiny s malým počtem (HAVING)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "id",
+            "id_zaka",
+            "predmet",
+            "znamka"
+          ],
+          "rows": [
+            [
+              "1",
+              "1",
+              "M",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "ČJ",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "M",
+              "3"
+            ],
+            [
+              "4",
+              "2",
+              "ČJ",
+              "4"
+            ],
+            [
+              "5",
+              "3",
+              "M",
+              "2"
+            ],
+            [
+              "6",
+              "4",
+              "ČJ",
+              "1"
+            ],
+            [
+              "7",
+              "2",
+              "M",
+              "5"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Průměr podle předmětu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`SELECT predmet, COUNT(*) AS pocet, AVG(znamka) AS prumer`",
+            "`FROM znamky`",
+            "`GROUP BY predmet;`"
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "predmet",
+            "pocet",
+            "prumer"
+          ],
+          "rows": [
+            [
+              "M",
+              "4",
+              "2.75"
+            ],
+            [
+              "ČJ",
+              "3",
+              "2.33…"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pořadí vyhodnocení celého dotazu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`FROM` – vezmi tabulku.",
+            "`WHERE` – vyhoď nevyhovující řádky.",
+            "`GROUP BY` – rozděl řádky do skupin.",
+            "`HAVING` – vyhoď nevyhovující skupiny.",
+            "`SELECT` – spočítej sloupce a agregace.",
+            "`ORDER BY` – seřaď výsledek."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kteří žáci mají průměr horší než 2? Napiš dotaz a výsledek.",
+          "answer": "`SELECT id_zaka, AVG(znamka) FROM znamky GROUP BY id_zaka HAVING AVG(znamka) > 2;` Skupiny: žák 1 (1, 2) = 1.5, žák 2 (3, 4, 5) = 4, žák 3 (2) = 2, žák 4 (1) = 1. Podmínku splní jen **žák 2** s průměrem 4. Žák 3 má přesně 2, a to není víc než 2."
+        },
+        {
+          "type": "example",
+          "question": "Kolik žáků narozených v roce 2008 a později je v každé třídě (tabulka zaci: 2.A Eva 2009 a Petr 2008, 3.B Jana 2008 a Tomáš 2007, 1.C Lucie 2010)?",
+          "answer": "`SELECT trida, COUNT(*) FROM zaci WHERE rok_narozeni >= 2008 GROUP BY trida;` `WHERE` vyřadí Tomáše (2007) ještě před seskupením. Výsledek: 2.A **2**, 3.B **1**, 1.C **1**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`SELECT predmet, id_zaka, AVG(znamka) FROM znamky GROUP BY predmet;`",
+          "right": "V `SELECT` mohou být jen sloupce z `GROUP BY` a agregace: `SELECT predmet, AVG(znamka) … GROUP BY predmet;`",
+          "why": "Ve skupině M je několik různých `id_zaka`. Který by se měl ukázat? Standard SQL takový dotaz odmítne (některé SŘBD vrátí náhodnou hodnotu)."
+        },
+        {
+          "type": "summary",
+          "text": "`GROUP BY` rozdělí řádky do skupin a agregace se počítá pro každou zvlášť. `WHERE` filtruje řádky před seskupením, `HAVING` skupiny po něm. V `SELECT` smí být jen seskupované sloupce a agregace."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Co vrátí `SELECT COUNT(*) FROM znamky;`?",
+      "answers": [
+        "7"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Co vrátí `SELECT SUM(znamka) FROM znamky;`?",
+      "answers": [
+        "18"
+      ],
+      "hints": [
+        "Sečti sloupec znamka: 1, 2, 3, 4, 2, 1, 5."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Co vrátí `SELECT AVG(znamka) FROM znamky WHERE predmet = 'M';`?",
+      "answers": [
+        "2.75",
+        "2,75"
+      ],
+      "hints": [
+        "Vyber jen řádky matematiky.",
+        "Sečti je a vyděl jejich počtem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Kolik řádků vrátí `SELECT predmet, COUNT(*) FROM znamky GROUP BY predmet;`?",
+      "answers": [
+        "2",
+        "dva"
+      ],
+      "explanation": "Jeden řádek za každou skupinu: M a ČJ."
+    },
+    {
+      "type": "choice",
+      "question": "Které klíčové slovo seřadí výsledek sestupně?",
+      "options": [
+        "`DESC`",
+        "`ASC`",
+        "`DOWN`",
+        "`REVERSE`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kam patří podmínka `AVG(znamka) > 2`?",
+      "options": [
+        "do `HAVING`",
+        "do `WHERE`",
+        "do `ORDER BY`",
+        "do `FROM`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Průměr vzniká až ze skupiny řádků."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co spočítá `COUNT(email)`?",
+      "options": [
+        "počet řádků, kde email není NULL",
+        "počet všech řádků",
+        "počet různých e-mailů",
+        "délku e-mailu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Bez `ORDER BY` není pořadí řádků ve výsledku zaručené.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "`WHERE` se vyhodnocuje až po `GROUP BY`.",
+      "answer": false,
+      "explanation": "`WHERE` filtruje řádky před seskupením, po seskupení filtruje `HAVING`."
+    },
+    {
+      "type": "truefalse",
+      "question": "`AVG` při výpočtu průměru hodnoty NULL vynechá.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj funkci s výsledkem pro známky 1, 3, 2, 5.",
+      "pairs": [
+        [
+          "`COUNT(*)`",
+          "4"
+        ],
+        [
+          "`SUM(znamka)`",
+          "11"
+        ],
+        [
+          "`MAX(znamka)`",
+          "5"
+        ],
+        [
+          "`AVG(znamka)`",
+          "2.75"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části dotazu podle pořadí vyhodnocení.",
+      "items": [
+        "FROM",
+        "WHERE",
+        "GROUP BY",
+        "HAVING",
+        "SELECT",
+        "ORDER BY"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části dotazu tak, jak se píšou.",
+      "items": [
+        "`SELECT predmet, AVG(znamka)`",
+        "`FROM znamky`",
+        "`WHERE znamka IS NOT NULL`",
+        "`GROUP BY predmet`",
+        "`HAVING COUNT(*) > 2`",
+        "`ORDER BY predmet`"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi `WHERE` a `HAVING`.",
+      "answer": "`WHERE` filtruje jednotlivé řádky ještě před seskupením a nesmí obsahovat agregační funkce. `HAVING` filtruje celé skupiny vytvořené pomocí `GROUP BY` a agregační funkce obsahovat smí."
+    }
+  ]
+}

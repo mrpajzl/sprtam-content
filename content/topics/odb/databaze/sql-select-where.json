@@ -1,0 +1,494 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sql-select-where",
+  "title": "SQL: SELECT a WHERE",
+  "emoji": "🔎",
+  "explanations": [
+    {
+      "title": "Otázka databázi",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když se ve školní kanceláři zeptáš „Kdo chodí do 2.A?“, sekretářka projde kartotéku a přečte ti jména. Databázi se ptáš stejně, jen přesnou větou v jazyce **SQL**. Té větě se říká **dotaz**."
+        },
+        {
+          "type": "text",
+          "text": "Nejčastější dotaz začíná slovem `SELECT` (vyber). Používá ho každý web, který ti něco ukazuje: seznam zboží, výsledky hledání, tvoje známky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "SQL",
+          "definition": "Structured Query Language, jazyk pro práci s relačními databázemi. Klíčová slova se píšou obvykle velkými písmeny, ale na velikosti nezáleží. Příkaz končí středníkem.",
+          "example": "`SELECT jmeno FROM zaci;`"
+        },
+        {
+          "type": "term",
+          "term": "Dotaz",
+          "definition": "Příkaz, který z databáze něco čte. Výsledkem je opět tabulka.",
+          "example": "Dotaz na jména žáků 2.A vrátí tabulku se dvěma řádky."
+        },
+        {
+          "type": "term",
+          "term": "`SELECT … FROM …`",
+          "definition": "Za `SELECT` napíšeš sloupce, které chceš vidět, za `FROM` tabulku. Hvězdička `*` znamená všechny sloupce.",
+          "example": "`SELECT jmeno, prijmeni FROM zaci;`"
+        },
+        {
+          "type": "term",
+          "term": "`WHERE`",
+          "definition": "Podmínka, která vybere jen některé řádky. Textové hodnoty se píšou do **jednoduchých** apostrofů.",
+          "example": "`WHERE trida = '2.A'`"
+        },
+        {
+          "type": "heading",
+          "text": "Ukázková tabulka zaci"
+        },
+        {
+          "type": "table",
+          "head": [
+            "id",
+            "jmeno",
+            "prijmeni",
+            "trida",
+            "rok_narozeni"
+          ],
+          "rows": [
+            [
+              "1",
+              "Eva",
+              "Malá",
+              "2.A",
+              "2009"
+            ],
+            [
+              "2",
+              "Petr",
+              "Novák",
+              "2.A",
+              "2008"
+            ],
+            [
+              "3",
+              "Jana",
+              "Svobodová",
+              "3.B",
+              "2008"
+            ],
+            [
+              "4",
+              "Tomáš",
+              "Černý",
+              "3.B",
+              "2007"
+            ],
+            [
+              "5",
+              "Lucie",
+              "Malá",
+              "1.C",
+              "2010"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "První dotazy"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`SELECT jmeno, prijmeni`",
+            "`FROM zaci`",
+            "`WHERE trida = '2.A';`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Výsledek: Eva Malá a Petr Novák. SŘBD vezme tabulku `zaci` (FROM), nechá jen řádky třídy 2.A (WHERE) a ukáže dva sloupce (SELECT)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operátor",
+            "Význam",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`=`",
+              "rovná se",
+              "`trida = '3.B'`"
+            ],
+            [
+              "`<>` (nebo `!=`)",
+              "nerovná se",
+              "`trida <> '1.C'`"
+            ],
+            [
+              "`<` `>` `<=` `>=`",
+              "menší, větší…",
+              "`rok_narozeni >= 2009`"
+            ],
+            [
+              "`AND`, `OR`, `NOT`",
+              "a zároveň, nebo, negace",
+              "`trida = '2.A' AND rok_narozeni = 2008`"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Napiš dotaz na všechny sloupce žáků narozených před rokem 2009.",
+          "answer": "`SELECT * FROM zaci WHERE rok_narozeni < 2009;` Vrátí Petra (2008), Janu (2008) a Tomáše (2007), tedy **3** řádky."
+        },
+        {
+          "type": "example",
+          "question": "Kolik řádků vrátí `SELECT jmeno FROM zaci WHERE trida = '3.B' OR rok_narozeni = 2010;`?",
+          "answer": "Třída 3.B: Jana a Tomáš. Rok 2010: Lucie. U `OR` stačí jedna podmínka, celkem **3** řádky."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`SELECT * FROM zaci WHERE trida = 2.A;`",
+          "right": "`SELECT * FROM zaci WHERE trida = '2.A';`",
+          "why": "Text musí být v jednoduchých apostrofech. Bez nich SŘBD nerozumí, co je `2.A`, a ohlásí chybu."
+        },
+        {
+          "type": "summary",
+          "text": "Dotaz `SELECT sloupce FROM tabulka WHERE podmínka;` vybere ze zadané tabulky řádky, které splňují podmínku, a ukáže zvolené sloupce. Text patří do apostrofů, `*` znamená všechny sloupce."
+        }
+      ]
+    },
+    {
+      "title": "Chytřejší podmínky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na e-shopu filtruješ: cena od 500 do 1 000 Kč, značka Nike nebo Adidas, název obsahuje „mikina“. Každý takový filtr se v databázi změní v podmínku za `WHERE`. SQL na to má pohodlné operátory."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se `BETWEEN`, `IN`, `LIKE`, `IS NULL`, odstranění duplicit a přejmenování sloupců. Pracujeme se stejnou tabulkou žáků."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dotaz SELECT",
+          "definition": "`SELECT sloupce FROM tabulka WHERE podmínka;` – vybere řádky splňující podmínku a zobrazí dané sloupce.",
+          "example": "`SELECT jmeno FROM zaci WHERE trida = '2.A';`"
+        },
+        {
+          "type": "term",
+          "term": "`BETWEEN a AND b`",
+          "definition": "Hodnota leží v rozsahu od a do b **včetně** obou krajů.",
+          "example": "`rok_narozeni BETWEEN 2008 AND 2009`"
+        },
+        {
+          "type": "term",
+          "term": "`IN (…)`",
+          "definition": "Hodnota je jedna z vyjmenovaných.",
+          "example": "`trida IN ('2.A', '1.C')`"
+        },
+        {
+          "type": "term",
+          "term": "`LIKE` a zástupné znaky",
+          "definition": "Porovnání textu se vzorem. `%` zastoupí libovolný počet znaků (i žádný), `_` právě jeden znak.",
+          "example": "`prijmeni LIKE 'M%'` = příjmení začíná na M."
+        },
+        {
+          "type": "term",
+          "term": "`IS NULL`",
+          "definition": "Test, jestli hodnota chybí. S NULL nefunguje `=`, protože NULL není hodnota, ale „neznámo“.",
+          "example": "`WHERE telefon IS NULL`"
+        },
+        {
+          "type": "term",
+          "term": "`DISTINCT` a `AS`",
+          "definition": "`DISTINCT` odstraní z výsledku opakující se řádky. `AS` dá sloupci ve výsledku jiný název (alias).",
+          "example": "`SELECT DISTINCT trida AS skupina FROM zaci;`"
+        },
+        {
+          "type": "table",
+          "head": [
+            "id",
+            "jmeno",
+            "prijmeni",
+            "trida",
+            "rok_narozeni"
+          ],
+          "rows": [
+            [
+              "1",
+              "Eva",
+              "Malá",
+              "2.A",
+              "2009"
+            ],
+            [
+              "2",
+              "Petr",
+              "Novák",
+              "2.A",
+              "2008"
+            ],
+            [
+              "3",
+              "Jana",
+              "Svobodová",
+              "3.B",
+              "2008"
+            ],
+            [
+              "4",
+              "Tomáš",
+              "Černý",
+              "3.B",
+              "2007"
+            ],
+            [
+              "5",
+              "Lucie",
+              "Malá",
+              "1.C",
+              "2010"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Dotaz (za `SELECT jmeno FROM zaci`)",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "`WHERE rok_narozeni BETWEEN 2008 AND 2009`",
+              "Eva, Petr, Jana"
+            ],
+            [
+              "`WHERE trida IN ('2.A', '1.C')`",
+              "Eva, Petr, Lucie"
+            ],
+            [
+              "`WHERE prijmeni LIKE 'M%'`",
+              "Eva, Lucie"
+            ],
+            [
+              "`WHERE prijmeni LIKE '%ová'`",
+              "Jana"
+            ],
+            [
+              "`WHERE NOT trida = '2.A'`",
+              "Jana, Tomáš, Lucie"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pořadí vyhodnocení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`FROM`: SŘBD vezme tabulku.",
+            "`WHERE`: nechá jen řádky, které splňují podmínku.",
+            "`SELECT`: vybere sloupce a spočítá výrazy.",
+            "`DISTINCT`: odstraní opakované řádky výsledku."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Proto nemůžeš ve `WHERE` použít alias z `SELECT`: v okamžiku, kdy se vyhodnocuje `WHERE`, ještě neexistuje."
+        },
+        {
+          "type": "example",
+          "question": "Co vrátí `SELECT DISTINCT trida FROM zaci;`?",
+          "answer": "Sloupec třída má hodnoty 2.A, 2.A, 3.B, 3.B, 1.C. `DISTINCT` duplicity odstraní: **2.A, 3.B, 1.C**, tedy 3 řádky."
+        },
+        {
+          "type": "example",
+          "question": "Kolik řádků vrátí `SELECT * FROM zaci WHERE trida = '2.A' OR trida = '3.B' AND rok_narozeni = 2007;`?",
+          "answer": "`AND` má přednost před `OR`. Podmínka je: 2.A, **nebo** (3.B a zároveň 2007). 2.A: Eva, Petr. 3.B a 2007: Tomáš. Celkem **3**. Se závorkami `(trida = '2.A' OR trida = '3.B') AND rok_narozeni = 2007` by vyšel jen Tomáš."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`WHERE telefon = NULL`",
+          "right": "`WHERE telefon IS NULL`",
+          "why": "Porovnání s NULL přes `=` nikdy nevrátí pravdu, výsledek je „neznámo“. Proto dotaz nevrátí ani jeden řádek."
+        },
+        {
+          "type": "summary",
+          "text": "`BETWEEN` testuje rozsah včetně krajů, `IN` výčet, `LIKE` vzor s `%` a `_`, `IS NULL` chybějící hodnotu. `DISTINCT` odstraní duplicity, `AS` přejmenuje sloupec. `AND` má přednost před `OR`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT * FROM zaci WHERE trida = '2.A';`?",
+      "answers": [
+        "2",
+        "dva"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT jmeno FROM zaci WHERE prijmeni LIKE 'M%';`?",
+      "answers": [
+        "2",
+        "dva"
+      ],
+      "explanation": "Malá a Malá.",
+      "hints": [
+        "`%` zastoupí cokoli za písmenem M."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT DISTINCT trida FROM zaci;`?",
+      "answers": [
+        "3",
+        "tři"
+      ],
+      "hints": [
+        "Kolik různých tříd v tabulce je?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT * FROM zaci WHERE rok_narozeni BETWEEN 2008 AND 2009;`?",
+      "answers": [
+        "3",
+        "tři"
+      ],
+      "explanation": "BETWEEN zahrnuje oba kraje: 2009, 2008, 2008.",
+      "hints": [
+        "Patří kraje rozsahu do výsledku?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená `*` v `SELECT * FROM zaci`?",
+      "options": [
+        "všechny sloupce",
+        "všechny tabulky",
+        "násobení",
+        "žádný sloupec"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak správně zapíšeš text v podmínce SQL?",
+      "options": [
+        "`'2.A'`",
+        "`2.A`",
+        "`(2.A)`",
+        "`[2.A]`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který vzor najde příjmení končící na „ová“?",
+      "options": [
+        "`LIKE '%ová'`",
+        "`LIKE 'ová%'`",
+        "`LIKE '_ová'`",
+        "`= '%ová'`"
+      ],
+      "answer": 0,
+      "hints": [
+        "`%` stojí na místě, kde může být cokoli."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak zjistíš řádky, kde chybí e-mail?",
+      "options": [
+        "`WHERE email IS NULL`",
+        "`WHERE email = NULL`",
+        "`WHERE email = ''`",
+        "`WHERE email = 0`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "V SQL záleží na velikosti písmen u klíčových slov (`select` je chyba).",
+      "answer": false,
+      "explanation": "Klíčová slova nerozlišují velikost písmen, velkými se píšou kvůli čitelnosti."
+    },
+    {
+      "type": "truefalse",
+      "question": "V podmínce `a OR b AND c` se nejdřív vyhodnotí `b AND c`.",
+      "answer": true,
+      "explanation": "`AND` má přednost před `OR`."
+    },
+    {
+      "type": "match",
+      "question": "Spoj operátor s významem.",
+      "pairs": [
+        [
+          "`BETWEEN`",
+          "rozsah včetně krajů"
+        ],
+        [
+          "`IN`",
+          "jedna z vyjmenovaných hodnot"
+        ],
+        [
+          "`LIKE`",
+          "porovnání se vzorem"
+        ],
+        [
+          "`DISTINCT`",
+          "bez opakování"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části dotazu tak, jak se píšou.",
+      "items": [
+        "`SELECT jmeno`",
+        "`FROM zaci`",
+        "`WHERE trida = '2.A'`",
+        "`;`"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části dotazu podle toho, jak je SŘBD vyhodnocuje.",
+      "items": [
+        "FROM",
+        "WHERE",
+        "SELECT"
+      ],
+      "hints": [
+        "Nejdřív musí vědět, odkud data bere."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi zástupnými znaky `%` a `_` v `LIKE` na příkladu.",
+      "answer": "`%` zastoupí libovolný počet znaků, i žádný: `'M%'` najde Malá i Mo. `_` zastoupí právě jeden znak: `'M_'` najde jen dvouznakové texty začínající M."
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "indexy-transakce",
+  "title": "Indexy a transakce (ACID)",
+  "emoji": "🔐",
+  "explanations": [
+    {
+      "title": "Rejstřík a převod peněz",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve tlusté učebnici hledáš slovo „fotosyntéza“. Můžeš listovat stránku po stránce, nebo otevřít **rejstřík** vzadu: slova jsou seřazená abecedně a u každého je číslo stránky. Za pár vteřin jsi tam. Databáze má na totéž **index**."
+        },
+        {
+          "type": "text",
+          "text": "Druhá věc: posíláš kamarádovi 500 Kč. Banka je musí odečíst z tvého účtu a připsat na jeho. Kdyby po odečtení vypadl proud, peníze by zmizely. Databáze proto obě změny spojí do **transakce**: buď proběhnou obě, nebo žádná."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Index",
+          "definition": "Pomocná seřazená struktura nad jedním nebo více sloupci tabulky. Pro každou hodnotu ví, kde leží odpovídající řádky. Nejčastěji je to **B-strom**.",
+          "example": "Index nad sloupcem `prijmeni` urychlí hledání podle příjmení."
+        },
+        {
+          "type": "term",
+          "term": "Procházení celé tabulky (full table scan)",
+          "definition": "Když index chybí, SŘBD musí přečíst každý řádek a u každého zkontrolovat podmínku.",
+          "example": "Hledání jednoho žáka mezi milionem řádků."
+        },
+        {
+          "type": "term",
+          "term": "Transakce",
+          "definition": "Skupina příkazů, která se provede jako jeden celek: buď celá, nebo vůbec.",
+          "example": "Odečtení z jednoho účtu a připsání na druhý."
+        },
+        {
+          "type": "term",
+          "term": "`COMMIT` a `ROLLBACK`",
+          "definition": "`COMMIT` transakci potvrdí a změny se trvale uloží. `ROLLBACK` ji zruší a vrátí data do stavu před jejím začátkem.",
+          "example": "Při chybě uprostřed převodu se zavolá `ROLLBACK`."
+        },
+        {
+          "type": "heading",
+          "text": "Index"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`CREATE INDEX idx_zaci_prijmeni ON zaci (prijmeni);`"
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "přečtených řádků (řádově)",
+            "items": [
+              {
+                "label": "bez indexu, 1 milion řádků",
+                "value": 1000000
+              },
+              {
+                "label": "s indexem, 1 milion řádků",
+                "value": 20
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Porovnej pruhy. Bez indexu se čte každý řádek. Seřazený index se prohledává podobně jako binární vyhledávání, takže stačí řádově desítky kroků."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Index pomáhá",
+            "Index škodí"
+          ],
+          "rows": [
+            [
+              "`WHERE` s podmínkou na indexovaný sloupec",
+              "zpomalí `INSERT`, `UPDATE`, `DELETE` (index se musí aktualizovat)"
+            ],
+            [
+              "`JOIN` přes cizí klíč",
+              "zabírá místo na disku"
+            ],
+            [
+              "`ORDER BY` podle indexovaného sloupce",
+              "u malých tabulek nemá smysl"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Primární klíč a `UNIQUE` sloupce mají index automaticky. Indexy se proto přidávají hlavně na cizí klíče a sloupce, podle kterých se často hledá."
+        },
+        {
+          "type": "heading",
+          "text": "Transakce"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`START TRANSACTION;`",
+            "`UPDATE ucty SET zustatek = zustatek - 500 WHERE id = 1;`",
+            "`UPDATE ucty SET zustatek = zustatek + 500 WHERE id = 2;`",
+            "`COMMIT;`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kdyby druhý `UPDATE` selhal, aplikace zavolá `ROLLBACK` a i první změna se vrátí. Když databáze spadne před `COMMIT`, při novém startu nedokončenou transakci zruší. (Začátek se v některých SŘBD píše `BEGIN`.)"
+        },
+        {
+          "type": "example",
+          "question": "Má smysl dát index na sloupec `pohlavi` s hodnotami M a Ž v tabulce milionu osob?",
+          "answer": "Většinou ne. Podmínka `pohlavi = 'Ž'` vybere zhruba polovinu tabulky a SŘBD ji stejně rychleji přečte celou. Index pomáhá u sloupců s mnoha různými hodnotami, kde podmínka vybere malou část řádků."
+        },
+        {
+          "type": "example",
+          "question": "Uprostřed převodu peněz dojde k chybě. Co se stane, když aplikace zavolá `ROLLBACK`?",
+          "answer": "Všechny změny od `START TRANSACTION` se zruší. První účet bude mít zase původní zůstatek. Peníze nezmizí ani se nezdvojí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dám index na každý sloupec, databáze bude rychlejší.",
+          "right": "Index přidávej jen na sloupce, podle kterých se často hledá, řadí nebo spojuje.",
+          "why": "Každý index se musí aktualizovat při každém zápisu a zabírá místo. Příliš mnoho indexů zpomalí vkládání a změny."
+        },
+        {
+          "type": "summary",
+          "text": "Index je seřazená pomocná struktura (B-strom), která zrychlí hledání, ale zpomalí zápisy. Transakce spojí příkazy do celku: `COMMIT` ji potvrdí, `ROLLBACK` zruší."
+        }
+      ]
+    },
+    {
+      "title": "ACID",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Banka, e-shop i rezervační systém letenek zpracují tisíce operací za sekundu. Dva lidé si chtějí koupit poslední místo v letadle ve stejnou chvíli. Server spadne uprostřed objednávky. Přesto data musí zůstat v pořádku."
+        },
+        {
+          "type": "text",
+          "text": "Relační databáze to zaručují čtyřmi vlastnostmi transakcí. Podle anglických počátečních písmen se jim říká **ACID**. Je to častá maturitní otázka."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Transakce",
+          "definition": "Posloupnost databázových operací, která tvoří logický celek. Začíná `START TRANSACTION` (nebo `BEGIN`), končí `COMMIT` (potvrzení) nebo `ROLLBACK` (zrušení).",
+          "example": "Rezervace místa + zaplacení + vystavení letenky."
+        },
+        {
+          "type": "term",
+          "term": "Konzistentní stav",
+          "definition": "Stav databáze, ve kterém platí všechna pravidla (omezení, cizí klíče, pravidla aplikace).",
+          "example": "Součet peněz na všech účtech banky se převodem nezmění."
+        },
+        {
+          "type": "term",
+          "term": "Souběžné transakce",
+          "definition": "Transakce, které běží ve stejnou dobu a pracují se stejnými daty.",
+          "example": "Dva prodavači prodávají poslední kus zboží."
+        },
+        {
+          "type": "term",
+          "term": "Transakční log (žurnál)",
+          "definition": "Soubor, kam SŘBD zapisuje změny dřív, než je provede v tabulkách. Podle něj po havárii dokončí potvrzené transakce a vrátí nepotvrzené.",
+          "example": "Po výpadku proudu se databáze obnoví z logu."
+        },
+        {
+          "type": "term",
+          "term": "Zámek",
+          "definition": "Značka, kterou si transakce „zamluví“ řádek nebo tabulku, aby je jiná transakce mezitím nezměnila.",
+          "example": "První prodavač zamkne řádek se zbožím, druhý musí počkat."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři vlastnosti ACID"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Písmeno",
+            "Vlastnost",
+            "Co znamená",
+            "Převod peněz"
+          ],
+          "rows": [
+            [
+              "A",
+              "atomicita (Atomicity)",
+              "provede se všechno, nebo nic",
+              "nikdy jen odečtení bez připsání"
+            ],
+            [
+              "C",
+              "konzistence (Consistency)",
+              "transakce převede databázi z konzistentního stavu do konzistentního",
+              "zůstatek nepůjde pod povolený limit"
+            ],
+            [
+              "I",
+              "izolovanost (Isolation)",
+              "souběžné transakce se navzájem neovlivňují, jako by běžely po sobě",
+              "dva převody z jednoho účtu se nepřepíší"
+            ],
+            [
+              "D",
+              "trvalost (Durability)",
+              "potvrzená transakce přežije i havárii",
+              "po `COMMIT` a výpadku proudu je převod uložený"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky až poté, co si vlastnost zkusíš říct sám."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "A",
+                "back": "atomicita: všechno, nebo nic"
+              },
+              {
+                "front": "C",
+                "back": "konzistence: z platného stavu do platného"
+              },
+              {
+                "front": "I",
+                "back": "izolovanost: souběžné transakce se neruší"
+              },
+              {
+                "front": "D",
+                "back": "trvalost: potvrzené přežije havárii"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Co se stane bez izolace"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na účtu je 1 000 Kč. Transakce T1 přečte zůstatek 1 000.",
+            "Současně transakce T2 přečte také 1 000.",
+            "T1 vybere 300 a zapíše 700.",
+            "T2 vybere 200 a zapíše 800. Přepíše tím zápis T1.",
+            "Zůstatek je 800, správně měl být 500. Tomuto problému se říká **ztracená aktualizace**. Izolace (zámky) ho zabrání."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kterou vlastnost ACID porušuje systém, kde po potvrzení objednávky a výpadku proudu objednávka zmizí?",
+          "answer": "**Trvalost (D).** Co bylo potvrzeno pomocí `COMMIT`, musí přežít havárii. SŘBD to zajišťuje transakčním logem."
+        },
+        {
+          "type": "example",
+          "question": "Dvě transakce čekají na zámek, který drží ta druhá. Co se stane?",
+          "answer": "Vznikne **uváznutí (deadlock)**: žádná nemůže pokračovat. SŘBD ho rozpozná, jednu transakci zruší (`ROLLBACK`) a druhá doběhne. Aplikace zrušenou transakci obvykle zopakuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Atomicita znamená, že transakce obsahuje jen jeden příkaz.",
+          "right": "Atomicita znamená, že všechny příkazy transakce se provedou jako jeden nedělitelný celek: všechny, nebo žádný.",
+          "why": "„Atomický“ tu znamená nedělitelný, ne „malý“. Transakce může mít libovolně mnoho příkazů."
+        },
+        {
+          "type": "summary",
+          "text": "ACID: atomicita (vše, nebo nic), konzistence (z platného stavu do platného), izolovanost (souběžné transakce se neruší), trvalost (potvrzené přežije havárii). SŘBD je zajišťuje logem a zámky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co index v databázi urychlí?",
+      "options": [
+        "vyhledávání podle indexovaného sloupce",
+        "vkládání nových řádků",
+        "mazání všech řádků",
+        "zálohování"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je nevýhoda indexu?",
+      "options": [
+        "zpomaluje zápisy a zabírá místo",
+        "zpomaluje všechny dotazy SELECT",
+        "znemožní řazení",
+        "smaže duplicitní řádky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který příkaz potvrdí transakci?",
+      "options": [
+        "`COMMIT`",
+        "`ROLLBACK`",
+        "`SAVE`",
+        "`END`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost ACID zaručuje, že potvrzená transakce přežije výpadek proudu?",
+      "options": [
+        "trvalost",
+        "atomicita",
+        "izolovanost",
+        "konzistence"
+      ],
+      "answer": 0,
+      "hints": [
+        "Která vlastnost mluví o tom, co se stane po potvrzení?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost ACID zaručuje „všechno, nebo nic“?",
+      "options": [
+        "atomicita",
+        "trvalost",
+        "konzistence",
+        "izolovanost"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Primární klíč má v běžných SŘBD index automaticky.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "`ROLLBACK` vrátí změny už potvrzené pomocí `COMMIT`.",
+      "answer": false,
+      "explanation": "`ROLLBACK` ruší jen nepotvrzenou transakci."
+    },
+    {
+      "type": "truefalse",
+      "question": "Index na sloupci se dvěma možnými hodnotami ve velké tabulce obvykle hledání výrazně nezrychlí.",
+      "answer": true,
+      "explanation": "Podmínka vybere velkou část tabulky."
+    },
+    {
+      "type": "match",
+      "question": "Spoj písmeno ACID s vlastností.",
+      "pairs": [
+        [
+          "A",
+          "atomicita"
+        ],
+        [
+          "C",
+          "konzistence"
+        ],
+        [
+          "I",
+          "izolovanost"
+        ],
+        [
+          "D",
+          "trvalost"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď příkazy převodu peněz.",
+      "items": [
+        "`START TRANSACTION;`",
+        "`UPDATE` – odečti z účtu 1",
+        "`UPDATE` – přičti na účet 2",
+        "`COMMIT;`"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na účtu je 1 000 Kč. T1 i T2 současně přečtou 1 000. T1 zapíše 700 (výběr 300), pak T2 zapíše 800 (výběr 200). Jaký zůstatek v Kč zůstane?",
+      "answers": [
+        "800"
+      ],
+      "explanation": "Zápis T2 přepsal zápis T1: ztracená aktualizace.",
+      "hints": [
+        "Která hodnota byla zapsána jako poslední?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje situace, kdy dvě transakce navzájem čekají na zámek té druhé? (anglický termín)",
+      "answers": [
+        "deadlock",
+        "dead lock"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje datová struktura, kterou SŘBD pro indexy používá nejčastěji?",
+      "options": [
+        "B-strom",
+        "zásobník",
+        "fronta",
+        "spojový seznam"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli vlastnosti ACID na příkladu převodu peněz mezi účty.",
+      "answer": "Atomicita: převod se provede celý, nebo vůbec, peníze nezmizí. Konzistence: po převodu platí všechna pravidla, celkový součet peněz se nezmění. Izolovanost: souběžné převody se navzájem nepřepíší. Trvalost: po potvrzení převod přežije i havárii."
+    }
+  ]
+}

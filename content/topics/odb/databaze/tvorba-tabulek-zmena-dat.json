@@ -1,0 +1,470 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "tvorba-tabulek-zmena-dat",
+  "title": "Tvorba tabulek a změna dat",
+  "emoji": "✏️",
+  "explanations": [
+    {
+      "title": "Stavba tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než nalije truhlář do formy lepidlo, musí formu postavit: určit rozměry a z jakého materiálu bude. U databáze je to stejné. Než do tabulky uložíš první řádek, musíš ji **vytvořit**: říct, jaké má sloupce, jakého typu a jaká pravidla musí data splňovat."
+        },
+        {
+          "type": "text",
+          "text": "Část SQL, která vytváří a mění strukturu databáze, se jmenuje **DDL**. Dobře nastavená pravidla ušetří spoustu chyb: databáze sama odmítne nesmyslná data."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "DDL (Data Definition Language)",
+          "definition": "Příkazy SQL pro definici struktury: `CREATE` (vytvoř), `ALTER` (změň), `DROP` (smaž celý objekt).",
+          "example": "`CREATE TABLE zaci (…);`"
+        },
+        {
+          "type": "term",
+          "term": "Datový typ sloupce",
+          "definition": "Určuje, jaké hodnoty sloupec smí obsahovat a kolik místa zaberou.",
+          "example": "`INT` celé číslo, `VARCHAR(50)` text do 50 znaků."
+        },
+        {
+          "type": "term",
+          "term": "Integritní omezení (constraint)",
+          "definition": "Pravidlo, které SŘBD hlídá při každém zápisu. Když ho data porušují, zápis odmítne.",
+          "example": "`NOT NULL`: hodnota nesmí chybět."
+        },
+        {
+          "type": "term",
+          "term": "Primární a cizí klíč",
+          "definition": "Připomenutí: primární klíč (`PRIMARY KEY`) jednoznačně určuje řádek. Cizí klíč (`FOREIGN KEY … REFERENCES …`) odkazuje na primární klíč jiné tabulky.",
+          "example": "`id_tridy` v tabulce žáků odkazuje na tabulku tříd."
+        },
+        {
+          "type": "heading",
+          "text": "Běžné datové typy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Na co",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`INT`",
+              "celé číslo",
+              "počet kusů"
+            ],
+            [
+              "`DECIMAL(8, 2)`",
+              "přesné desetinné číslo: 8 číslic, z toho 2 za čárkou",
+              "cena 123456.78"
+            ],
+            [
+              "`VARCHAR(n)`",
+              "text proměnné délky, nejvýš n znaků",
+              "jméno"
+            ],
+            [
+              "`CHAR(n)`",
+              "text pevné délky n",
+              "kód státu „CZ“"
+            ],
+            [
+              "`DATE`",
+              "datum, zapisuje se `'2025-09-01'`",
+              "datum narození"
+            ],
+            [
+              "`BOOLEAN`",
+              "pravda/nepravda (ne každý SŘBD ho má)",
+              "aktivní účet"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Omezení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Omezení",
+            "Co hlídá"
+          ],
+          "rows": [
+            [
+              "`PRIMARY KEY`",
+              "jedinečnost a NOT NULL klíče"
+            ],
+            [
+              "`NOT NULL`",
+              "hodnota nesmí chybět"
+            ],
+            [
+              "`UNIQUE`",
+              "hodnota se ve sloupci nesmí opakovat"
+            ],
+            [
+              "`DEFAULT x`",
+              "když hodnotu nezadáš, použije se x"
+            ],
+            [
+              "`CHECK (podmínka)`",
+              "hodnota musí splnit podmínku"
+            ],
+            [
+              "`FOREIGN KEY … REFERENCES …`",
+              "hodnota musí existovat v odkazované tabulce"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vytvoření tabulek"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`CREATE TABLE tridy (`",
+            "`    id INT PRIMARY KEY,`",
+            "`    nazev VARCHAR(10) NOT NULL UNIQUE`",
+            "`);`",
+            " ",
+            "`CREATE TABLE zaci (`",
+            "`    id INT PRIMARY KEY,`",
+            "`    jmeno VARCHAR(50) NOT NULL,`",
+            "`    email VARCHAR(100) UNIQUE,`",
+            "`    rok_narozeni INT CHECK (rok_narozeni > 1990),`",
+            "`    id_tridy INT NOT NULL,`",
+            "`    FOREIGN KEY (id_tridy) REFERENCES tridy(id)`",
+            "`);`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tabulku `tridy` musíš vytvořit dřív. Cizí klíč může odkazovat jen na tabulku, která už existuje."
+        },
+        {
+          "type": "example",
+          "question": "Jaký datový typ zvolíš pro cenu zboží v Kč s haléři?",
+          "answer": "**`DECIMAL(10, 2)`**. Je přesný. Typy `FLOAT` a `REAL` ukládají čísla přibližně a u peněz by vznikaly zaokrouhlovací chyby."
+        },
+        {
+          "type": "example",
+          "question": "Přidej do tabulky žáků sloupec telefon a pak smaž tabulku kroužků.",
+          "answer": "`ALTER TABLE zaci ADD telefon VARCHAR(20);` přidá sloupec (u existujících řádků bude NULL). `DROP TABLE krouzky;` smaže tabulku **i se všemi daty**, bez možnosti vrácení."
+        },
+        {
+          "type": "mistake",
+          "wrong": "PSČ uložím jako `INT`, je to přece číslo.",
+          "right": "PSČ ulož jako text, např. `CHAR(5)` nebo `VARCHAR(6)`.",
+          "why": "S PSČ se nepočítá. Navíc čísla ztrácejí úvodní nuly a nepojmou mezeru („110 00“). Totéž platí pro telefonní čísla."
+        },
+        {
+          "type": "summary",
+          "text": "DDL vytváří a mění strukturu: `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`. Každý sloupec má datový typ. Omezení (`PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`, `FOREIGN KEY`) brání uložení nesmyslných dat."
+        }
+      ]
+    },
+    {
+      "title": "Změny dat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Do školy nastoupí nový žák, jiný se přestěhuje a další odejde. Tabulky už existují, mění se jen jejich obsah. Na to slouží tři příkazy: `INSERT`, `UPDATE` a `DELETE`."
+        },
+        {
+          "type": "text",
+          "text": "Jsou jednoduché, ale nebezpečné. Jedna zapomenutá podmínka a změníš nebo smažeš data celé školy. Proto se naučíš i to, jak se tomu bránit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tabulka a omezení",
+          "definition": "Připomenutí: tabulka má pevné sloupce s datovými typy. Omezení (`NOT NULL`, `UNIQUE`, cizí klíč…) SŘBD kontroluje při každé změně dat.",
+          "example": "Vložení žáka bez povinného jména SŘBD odmítne."
+        },
+        {
+          "type": "term",
+          "term": "DML (Data Manipulation Language)",
+          "definition": "Příkazy SQL pro práci s daty: `SELECT` (čti), `INSERT` (vlož), `UPDATE` (změň), `DELETE` (smaž).",
+          "example": "`INSERT INTO zaci …`"
+        },
+        {
+          "type": "term",
+          "term": "`INSERT INTO … VALUES …`",
+          "definition": "Vloží nový řádek. Za jménem tabulky vyjmenuj sloupce, za `VALUES` hodnoty ve stejném pořadí.",
+          "example": "`INSERT INTO zaci (id, jmeno, id_tridy) VALUES (6, 'Adam', 2);`"
+        },
+        {
+          "type": "term",
+          "term": "`UPDATE … SET … WHERE …`",
+          "definition": "Změní hodnoty ve sloupcích u řádků, které splní podmínku `WHERE`.",
+          "example": "`UPDATE zaci SET id_tridy = 3 WHERE id = 6;`"
+        },
+        {
+          "type": "term",
+          "term": "`DELETE FROM … WHERE …`",
+          "definition": "Smaže řádky, které splní podmínku.",
+          "example": "`DELETE FROM zaci WHERE id = 6;`"
+        },
+        {
+          "type": "heading",
+          "text": "Bez WHERE to platí pro všechno"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příkaz",
+            "S `WHERE id = 6`",
+            "Bez `WHERE`"
+          ],
+          "rows": [
+            [
+              "`UPDATE zaci SET id_tridy = 3`",
+              "změní třídu jednomu žákovi",
+              "přesune do třídy 3 **všechny** žáky"
+            ],
+            [
+              "`DELETE FROM zaci`",
+              "smaže jednoho žáka",
+              "smaže **všechny** žáky"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečný postup změny"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nejdřív napiš `SELECT` se stejnou podmínkou: `SELECT * FROM zaci WHERE id = 6;`",
+            "Zkontroluj, že vrací přesně ty řádky, které chceš změnit.",
+            "Teprve pak `SELECT *` nahraď za `UPDATE … SET …` nebo `DELETE`.",
+            "U důležitých dat pracuj v transakci, ať jde změnu vrátit (viz téma Transakce)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cizí klíč a mazání"
+        },
+        {
+          "type": "text",
+          "text": "Když smažeš třídu, na kterou odkazují žáci, porušil bys referenční integritu. U cizího klíče proto určíš, co se má stát:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Volba u FOREIGN KEY",
+            "Co se stane se žáky při smazání jejich třídy"
+          ],
+          "rows": [
+            [
+              "`ON DELETE RESTRICT` / `NO ACTION`",
+              "smazání třídy SŘBD odmítne (výchozí chování)"
+            ],
+            [
+              "`ON DELETE CASCADE`",
+              "smažou se i žáci té třídy"
+            ],
+            [
+              "`ON DELETE SET NULL`",
+              "žákům se `id_tridy` nastaví na NULL"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zdraž všechno zboží v kategorii 4 o 10 %.",
+          "answer": "`UPDATE zbozi SET cena = cena * 1.1 WHERE id_kategorie = 4;` Nová hodnota se smí počítat ze staré. `WHERE` omezí změnu jen na kategorii 4."
+        },
+        {
+          "type": "example",
+          "question": "Vlož dva žáky jedním příkazem.",
+          "answer": "`INSERT INTO zaci (id, jmeno, id_tridy) VALUES (7, 'Bára', 1), (8, 'Ondřej', 2);` Každá závorka za `VALUES` je jeden řádek. Sloupce, které nevyjmenuješ, dostanou `DEFAULT`, nebo NULL."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`DELETE FROM zaci;` smaže tabulku zaci.",
+          "right": "`DELETE FROM zaci;` smaže všechny **řádky**, tabulka zůstane prázdná. Tabulku i se strukturou smaže až `DROP TABLE zaci;`.",
+          "why": "`DELETE` patří do DML (data), `DROP` do DDL (struktura)."
+        },
+        {
+          "type": "summary",
+          "text": "`INSERT` vkládá řádky, `UPDATE … SET` je mění, `DELETE` je maže. Bez `WHERE` se `UPDATE` i `DELETE` týká všech řádků, proto podmínku nejdřív vyzkoušej v `SELECT`. `ON DELETE` u cizího klíče určí, co se stane s odkazujícími řádky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který příkaz patří do DDL?",
+      "options": [
+        "`CREATE TABLE`",
+        "`INSERT`",
+        "`UPDATE`",
+        "`SELECT`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký datový typ je nejvhodnější pro cenu v korunách s haléři?",
+      "options": [
+        "`DECIMAL(10, 2)`",
+        "`FLOAT`",
+        "`INT`",
+        "`VARCHAR(10)`"
+      ],
+      "answer": 0,
+      "hints": [
+        "U peněz nesmí vznikat zaokrouhlovací chyby."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které omezení zajistí, že se e-mail v tabulce nebude opakovat?",
+      "options": [
+        "`UNIQUE`",
+        "`NOT NULL`",
+        "`DEFAULT`",
+        "`CHECK`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá `UPDATE zaci SET id_tridy = 3;` bez `WHERE`?",
+      "options": [
+        "přesune do třídy 3 všechny žáky",
+        "nic, chybí podmínka",
+        "změní jen prvního žáka",
+        "ohlásí chybu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane se žáky při smazání jejich třídy, je-li cizí klíč `ON DELETE CASCADE`?",
+      "options": [
+        "smažou se taky",
+        "zůstanou beze změny",
+        "dostanou NULL",
+        "smazání se odmítne"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "`DELETE FROM zaci;` smaže tabulku i s její strukturou.",
+      "answer": false,
+      "explanation": "Smaže jen řádky. Strukturu smaže `DROP TABLE`."
+    },
+    {
+      "type": "truefalse",
+      "question": "PSČ je vhodné ukládat jako text, ne jako číslo.",
+      "answer": true,
+      "explanation": "S PSČ se nepočítá a obsahuje mezeru."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tabulka, na kterou odkazuje cizí klíč, musí existovat dřív, než ten cizí klíč vytvoříš.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj příkaz s jeho účinkem.",
+      "pairs": [
+        [
+          "`INSERT`",
+          "vloží řádek"
+        ],
+        [
+          "`UPDATE`",
+          "změní hodnoty"
+        ],
+        [
+          "`DELETE`",
+          "smaže řádky"
+        ],
+        [
+          "`DROP TABLE`",
+          "smaže celou tabulku"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj omezení s pravidlem.",
+      "pairs": [
+        [
+          "`NOT NULL`",
+          "hodnota nesmí chybět"
+        ],
+        [
+          "`CHECK (cena > 0)`",
+          "cena musí být kladná"
+        ],
+        [
+          "`DEFAULT 0`",
+          "nezadaná hodnota bude 0"
+        ],
+        [
+          "`PRIMARY KEY`",
+          "jedinečný a nikdy NULL"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části příkazu UPDATE.",
+      "items": [
+        "`UPDATE zbozi`",
+        "`SET cena = cena * 1.1`",
+        "`WHERE id_kategorie = 4;`"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky bezpečné hromadné změny dat.",
+      "items": [
+        "napiš SELECT se stejnou podmínkou",
+        "zkontroluj vrácené řádky",
+        "nahraď SELECT za UPDATE nebo DELETE",
+        "ověř výsledek"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka má 30 řádků, 4 z nich mají `trida = '1.C'`. Kolik řádků zůstane po `DELETE FROM zaci WHERE trida = '1.C';`?",
+      "answers": [
+        "26"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi DDL a DML? Uveď příkazy.",
+      "answer": "DDL definuje strukturu databáze: CREATE, ALTER, DROP. DML pracuje s daty uloženými v tabulkách: SELECT, INSERT, UPDATE, DELETE."
+    }
+  ]
+}

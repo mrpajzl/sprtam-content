@@ -1,0 +1,433 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "normalizace",
+  "title": "Normalizace (1NF–3NF)",
+  "emoji": "🧹",
+  "explanations": [
+    {
+      "title": "Uklizená tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Trenér vede docházku do kroužků v jedné velké tabulce. U každého zápisu opisuje jméno žáka, jeho třídu, název kroužku i jméno vedoucího. Když vedoucí kroužku změní příjmení, musí ho přepsat na sto řádcích. Jeden přehlédne a tabulka si začne odporovat."
+        },
+        {
+          "type": "text",
+          "text": "**Normalizace** je postup, jak takovou tabulku rozdělit na menší, aby se každý údaj ukládal jen jednou. Postupuje se po stupních, kterým se říká **normální formy**: 1NF, 2NF, 3NF."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Redundance",
+          "definition": "Zbytečné opakování stejného údaje v databázi.",
+          "example": "Jméno vedoucího kroužku uložené u každého žáka."
+        },
+        {
+          "type": "term",
+          "term": "Anomálie",
+          "definition": "Problém, který redundance způsobuje. **Aktualizační**: údaj musíš měnit na mnoha místech. **Vkládací**: nejde vložit údaj bez jiného (nový kroužek bez žáka). **Mazací**: smazáním jednoho údaje zmizí i jiný (poslední žák odejde a ztratí se i vedoucí kroužku).",
+          "example": "Změna příjmení vedoucího na sto řádcích."
+        },
+        {
+          "type": "term",
+          "term": "Atomická hodnota",
+          "definition": "Hodnota, kterou už dál nedělíme, protože s jejími částmi nepotřebujeme pracovat zvlášť.",
+          "example": "Jedno telefonní číslo v buňce. Ne „777 111 222, 603 333 444“."
+        },
+        {
+          "type": "term",
+          "term": "Funkční závislost A → B",
+          "definition": "Hodnota A jednoznačně určuje hodnotu B. Když znáš A, znáš i B.",
+          "example": "`id_zaka → jmeno`: číslo žáka určuje jeho jméno."
+        },
+        {
+          "type": "term",
+          "term": "Primární klíč",
+          "definition": "Sloupec nebo skupina sloupců, která jednoznačně určuje řádek. Skupině se říká složený klíč.",
+          "example": "Docházka: (id_zaka, id_krouzku)."
+        },
+        {
+          "type": "heading",
+          "text": "Tři normální formy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Forma",
+            "Podmínka",
+            "Zkráceně"
+          ],
+          "rows": [
+            [
+              "1NF",
+              "všechny hodnoty jsou atomické, žádné seznamy v buňce ani opakující se sloupce (tel1, tel2, tel3), tabulka má primární klíč",
+              "jedna buňka = jedna hodnota"
+            ],
+            [
+              "2NF",
+              "je v 1NF a každý neklíčový sloupec závisí na **celém** primárním klíči, ne jen na jeho části",
+              "žádná částečná závislost"
+            ],
+            [
+              "3NF",
+              "je v 2NF a žádný neklíčový sloupec nezávisí na jiném neklíčovém sloupci",
+              "žádná tranzitivní závislost"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Starý pomocný výrok to shrnuje: každý neklíčový sloupec závisí „na klíči (1NF), na celém klíči (2NF) a na ničem jiném než na klíči (3NF)“."
+        },
+        {
+          "type": "heading",
+          "text": "Příklad: 1NF"
+        },
+        {
+          "type": "table",
+          "head": [
+            "id_zaka",
+            "jmeno",
+            "telefony"
+          ],
+          "rows": [
+            [
+              "1",
+              "Eva Malá",
+              "777 111 222, 603 333 444"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Uveď tabulku výše do 1NF.",
+          "answer": "Buňka `telefony` obsahuje seznam a `jmeno` spojuje jméno a příjmení. Rozdělíš `jmeno` na `jmeno` a `prijmeni` a telefony dáš do samostatné tabulky `telefon(id_zaka, cislo)`, jeden telefon na řádek. Teď je každá hodnota atomická."
+        },
+        {
+          "type": "example",
+          "question": "Tabulka `dochazka(id_zaka, id_krouzku, jmeno_zaka, nazev_krouzku, datum_prihlaseni)` s klíčem (id_zaka, id_krouzku). Je v 2NF?",
+          "answer": "Ne. `jmeno_zaka` závisí jen na `id_zaka` a `nazev_krouzku` jen na `id_krouzku`, tedy na **části** klíče. Rozděl na `zak(id_zaka, jmeno_zaka)`, `krouzek(id_krouzku, nazev_krouzku)` a `dochazka(id_zaka, id_krouzku, datum_prihlaseni)`. Datum závisí na celém klíči, zůstává."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Tabulka s jednoduchým (jednosloupcovým) primárním klíčem může porušit 2NF.",
+          "right": "Je-li tabulka v 1NF a má jednoduchý primární klíč, je automaticky v 2NF.",
+          "why": "Částečná závislost znamená závislost na části klíče. Klíč z jednoho sloupce žádnou část nemá."
+        },
+        {
+          "type": "summary",
+          "text": "Normalizace odstraňuje redundanci a anomálie. 1NF: atomické hodnoty. 2NF: neklíčové sloupce závisí na celém klíči. 3NF: neklíčové sloupce nezávisí na jiných neklíčových sloupcích."
+        }
+      ]
+    },
+    {
+      "title": "Krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Malý e-shop si zapisuje objednávky do jedné tabulky v tabulkovém procesoru. Funguje to, dokud má deset objednávek. Pak zákazník změní adresu, zboží zdraží a v tabulce vznikne chaos. Projdeme normalizaci této tabulky krok za krokem, jako u maturitní úlohy."
+        },
+        {
+          "type": "text",
+          "text": "Cílem je, aby každý údaj byl uložený jen jednou a změna se dělala na jediném místě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Normalizace",
+          "definition": "Postupné rozdělování tabulek podle pravidel (normálních forem) tak, aby se údaje neopakovaly a nevznikaly anomálie.",
+          "example": "Jedna tabulka objednávek → čtyři menší tabulky."
+        },
+        {
+          "type": "term",
+          "term": "Funkční závislost A → B",
+          "definition": "Když znáš hodnotu A, znáš jednoznačně i B.",
+          "example": "`id_zbozi → nazev_zbozi`"
+        },
+        {
+          "type": "term",
+          "term": "Částečná závislost",
+          "definition": "Neklíčový sloupec závisí jen na **části** složeného primárního klíče. Porušuje 2NF.",
+          "example": "`datum` závisí jen na `cislo_obj`, ne na dvojici (cislo_obj, id_zbozi)."
+        },
+        {
+          "type": "term",
+          "term": "Tranzitivní závislost",
+          "definition": "Neklíčový sloupec závisí na klíči jen **přes** jiný neklíčový sloupec: klíč → X → Y. Porušuje 3NF.",
+          "example": "`cislo_obj → id_zakaznika → mesto`"
+        },
+        {
+          "type": "heading",
+          "text": "Výchozí tabulka"
+        },
+        {
+          "type": "text",
+          "text": "Tabulka `objednavky` je v 1NF (hodnoty jsou atomické, každá položka objednávky má svůj řádek). Primární klíč je složený: **(cislo_obj, id_zbozi)**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "cislo_obj",
+            "datum",
+            "id_zakaznika",
+            "jmeno",
+            "mesto",
+            "id_zbozi",
+            "nazev",
+            "cena",
+            "mnozstvi"
+          ],
+          "rows": [
+            [
+              "501",
+              "3. 9.",
+              "7",
+              "Eva Malá",
+              "Brno",
+              "12",
+              "hrnek",
+              "120",
+              "2"
+            ],
+            [
+              "501",
+              "3. 9.",
+              "7",
+              "Eva Malá",
+              "Brno",
+              "15",
+              "tričko",
+              "350",
+              "1"
+            ],
+            [
+              "502",
+              "4. 9.",
+              "9",
+              "Petr Novák",
+              "Zlín",
+              "12",
+              "hrnek",
+              "120",
+              "5"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Najdi závislosti.** `cislo_obj → datum, id_zakaznika`. `id_zbozi → nazev, cena`. `id_zakaznika → jmeno, mesto`. `(cislo_obj, id_zbozi) → mnozstvi`.",
+            "**2NF: odstraň částečné závislosti.** Co závisí jen na `cislo_obj`, dej do tabulky `objednavka`. Co závisí jen na `id_zbozi`, dej do tabulky `zbozi`. V původní tabulce `polozka` zůstane jen to, co závisí na celém klíči: `mnozstvi`.",
+            "**3NF: odstraň tranzitivní závislosti.** V tabulce `objednavka` závisí `jmeno` a `mesto` na `id_zakaznika`, ne přímo na `cislo_obj`. Přesuň je do tabulky `zakaznik`.",
+            "**Zkontroluj.** Každý údaj je uložený jednou a tabulky jsou propojené cizími klíči."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Tabulka po 3NF",
+            "Sloupce (PK tučně)"
+          ],
+          "rows": [
+            [
+              "zakaznik",
+              "**id_zakaznika**, jmeno, mesto"
+            ],
+            [
+              "objednavka",
+              "**cislo_obj**, datum, id_zakaznika (FK)"
+            ],
+            [
+              "zbozi",
+              "**id_zbozi**, nazev, cena"
+            ],
+            [
+              "polozka",
+              "**cislo_obj** (FK), **id_zbozi** (FK), mnozstvi"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Které anomálie měla výchozí tabulka?",
+          "answer": "**Aktualizační**: zdražení hrnku se musí přepsat na všech řádcích s hrnkem. **Vkládací**: nové zboží nejde vložit, dokud si ho někdo neobjedná (chybí cislo_obj, část klíče). **Mazací**: smazáním objednávky 502 zmizí i jediný záznam o Petru Novákovi."
+        },
+        {
+          "type": "example",
+          "question": "Tabulka `zak(id_zaka, jmeno, psc, obec)`. Platí `psc → obec`. Je v 3NF?",
+          "answer": "Pro tento příklad předpokládáme, že PSČ určuje obec. Pak ne: `id_zaka → psc → obec` je tranzitivní závislost. Rozděl na `zak(id_zaka, jmeno, psc)` a `psc(psc, obec)`. (Ve skutečnosti jedno PSČ může patřit více obcím, proto se v praxi takto rozděluje opatrně.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím víc tabulek, tím lépe. Rozdělím i jméno a příjmení do dvou tabulek.",
+          "right": "Rozděluj jen podle závislostí: dokud všechny neklíčové sloupce závisí přímo na celém klíči, tabulka je v 3NF a dál ji dělit netřeba.",
+          "why": "Zbytečně rozdělené tabulky jen zpomalují dotazy (víc spojování) a nic nepřinesou."
+        },
+        {
+          "type": "summary",
+          "text": "Postup: najdi funkční závislosti, pro 2NF odstraň závislosti na části klíče, pro 3NF závislosti mezi neklíčovými sloupci. Výsledné tabulky propoj cizími klíči."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která normální forma vyžaduje atomické hodnoty v buňkách?",
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "žádná"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co porušuje 2NF?",
+      "options": [
+        "závislost neklíčového sloupce na části složeného klíče",
+        "seznam hodnot v jedné buňce",
+        "závislost mezi dvěma neklíčovými sloupci",
+        "chybějící index"
+      ],
+      "answer": 0,
+      "hints": [
+        "2NF se týká hlavně tabulek se složeným klíčem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co porušuje 3NF?",
+      "options": [
+        "tranzitivní závislost neklíčového sloupce na klíči",
+        "složený primární klíč",
+        "atomické hodnoty",
+        "cizí klíč"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Smazáním poslední objednávky zákazníka zmizí i jeho adresa. Jak se tato anomálie nazývá?",
+      "options": [
+        "mazací",
+        "vkládací",
+        "aktualizační",
+        "referenční"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Tabulka v 1NF s jednosloupcovým primárním klíčem je automaticky v 2NF.",
+      "answer": true,
+      "explanation": "Jednosloupcový klíč nemá žádnou část, na které by šlo částečně záviset."
+    },
+    {
+      "type": "truefalse",
+      "question": "Buňka s hodnotou „777 111 222, 603 333 444“ splňuje 1NF.",
+      "answer": false,
+      "explanation": "Obsahuje dva telefony, hodnota není atomická."
+    },
+    {
+      "type": "truefalse",
+      "question": "Cílem normalizace je odstranit redundanci a anomálie.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj anomálii s příkladem.",
+      "pairs": [
+        [
+          "aktualizační",
+          "změna ceny na mnoha řádcích"
+        ],
+        [
+          "vkládací",
+          "nové zboží nejde vložit bez objednávky"
+        ],
+        [
+          "mazací",
+          "se smazáním objednávky zmizí zákazník"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj normální formu s podmínkou.",
+      "pairs": [
+        [
+          "1NF",
+          "atomické hodnoty"
+        ],
+        [
+          "2NF",
+          "závislost na celém klíči"
+        ],
+        [
+          "3NF",
+          "žádná tranzitivní závislost"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky normalizace.",
+      "items": [
+        "zajisti atomické hodnoty a primární klíč (1NF)",
+        "odstraň částečné závislosti (2NF)",
+        "odstraň tranzitivní závislosti (3NF)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka objednávek se rozdělila na zákazník, objednávka, zboží a položka. Kolik tabulek vzniklo?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje závislost klíč → X → Y, kde X i Y jsou neklíčové sloupce? (jedno slovo)",
+      "answers": [
+        "tranzitivní",
+        "tranzitivni"
+      ],
+      "hints": [
+        "Závislost jde „přes“ jiný sloupec."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi 2NF a 3NF.",
+      "answer": "2NF požaduje, aby každý neklíčový sloupec závisel na celém primárním klíči, ne jen na jeho části. 3NF navíc požaduje, aby neklíčový sloupec nezávisel na jiném neklíčovém sloupci, tedy aby nebyly tranzitivní závislosti."
+    },
+    {
+      "type": "open",
+      "question": "K čemu je normalizace a jaké problémy řeší?",
+      "answer": "Normalizace rozděluje tabulky tak, aby se údaje neopakovaly. Odstraňuje redundanci a tím aktualizační, vkládací a mazací anomálie, takže data si neodporují."
+    }
+  ]
+}

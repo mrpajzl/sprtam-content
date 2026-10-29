@@ -1,0 +1,482 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "spojovani-tabulek",
+  "title": "Spojování tabulek (JOIN)",
+  "emoji": "🤝",
+  "explanations": [
+    {
+      "title": "Slepení tabulek",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V tabulce známek je jen číslo žáka, třeba 2. Učitelka ale chce vidět „Petr – M – 3“, ne „2 – M – 3“. Jméno je v jiné tabulce. Musí obě tabulky „slepit“ podle čísla žáka."
+        },
+        {
+          "type": "text",
+          "text": "Kvůli normalizaci jsou data rozdělená do více tabulek. Při čtení je zase skládáme dohromady. Na to slouží **spojování tabulek**, anglicky `JOIN`. Je to nejdůležitější dovednost práce s SQL."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Primární a cizí klíč",
+          "definition": "Připomenutí: primární klíč jednoznačně určuje řádek (`zaci.id`). Cizí klíč na něj odkazuje z jiné tabulky (`znamky.id_zaka`).",
+          "example": "Známka s `id_zaka` = 2 patří žákovi s `id` = 2."
+        },
+        {
+          "type": "term",
+          "term": "Spojení `JOIN … ON …`",
+          "definition": "Ke každému řádku jedné tabulky připojí řádky druhé tabulky, pro které platí podmínka za `ON`. Podmínka obvykle porovná cizí klíč s primárním.",
+          "example": "`zaci JOIN znamky ON zaci.id = znamky.id_zaka`"
+        },
+        {
+          "type": "term",
+          "term": "Vnitřní spojení `INNER JOIN`",
+          "definition": "Vrátí jen dvojice řádků, které k sobě našly protějšek. Slovo `INNER` se smí vynechat, samotné `JOIN` znamená totéž.",
+          "example": "Žák bez známek ve výsledku nebude."
+        },
+        {
+          "type": "term",
+          "term": "Alias tabulky",
+          "definition": "Krátké jméno tabulky v dotazu. Píše se za název tabulky. Sloupec se pak zapisuje `alias.sloupec`.",
+          "example": "`FROM zaci z` → `z.jmeno`"
+        },
+        {
+          "type": "heading",
+          "text": "Dvě tabulky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "id",
+            "jmeno",
+            "trida"
+          ],
+          "rows": [
+            [
+              "1",
+              "Eva",
+              "2.A"
+            ],
+            [
+              "2",
+              "Petr",
+              "2.A"
+            ],
+            [
+              "3",
+              "Jana",
+              "3.B"
+            ],
+            [
+              "4",
+              "Tomáš",
+              "3.B"
+            ],
+            [
+              "5",
+              "Lucie",
+              "1.C"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "id",
+            "id_zaka",
+            "predmet",
+            "znamka"
+          ],
+          "rows": [
+            [
+              "1",
+              "1",
+              "M",
+              "1"
+            ],
+            [
+              "2",
+              "1",
+              "ČJ",
+              "2"
+            ],
+            [
+              "3",
+              "2",
+              "M",
+              "3"
+            ],
+            [
+              "4",
+              "2",
+              "ČJ",
+              "4"
+            ],
+            [
+              "5",
+              "3",
+              "M",
+              "2"
+            ],
+            [
+              "6",
+              "4",
+              "ČJ",
+              "1"
+            ],
+            [
+              "7",
+              "2",
+              "M",
+              "5"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dotaz"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`SELECT z.jmeno, k.predmet, k.znamka`",
+            "`FROM zaci z`",
+            "`JOIN znamky k ON z.id = k.id_zaka`",
+            "`WHERE z.trida = '2.A';`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pro každý řádek žáka najdi známky, kde `k.id_zaka` = `z.id`.",
+            "Z každé nalezené dvojice vznikne jeden řádek výsledku.",
+            "`WHERE` nechá jen žáky z 2.A.",
+            "Výsledek: Eva M 1, Eva ČJ 2, Petr M 3, Petr ČJ 4, Petr M 5."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kolik řádků vrátí `SELECT * FROM zaci z JOIN znamky k ON z.id = k.id_zaka;` (bez WHERE)?",
+          "answer": "Každá známka najde právě jednoho žáka. Řádků je tolik jako známek: **7**. Lucie (id 5) nemá žádnou známku, ve výsledku vnitřního spojení není."
+        },
+        {
+          "type": "example",
+          "question": "Vypiš průměr každého žáka i se jménem.",
+          "answer": "`SELECT z.jmeno, AVG(k.znamka) FROM zaci z JOIN znamky k ON z.id = k.id_zaka GROUP BY z.id, z.jmeno;` Nejdřív spojení, pak seskupení. Výsledek: Eva 1.5, Petr 4, Jana 2, Tomáš 1."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`SELECT jmeno, znamka FROM zaci, znamky;`",
+          "right": "`SELECT jmeno, znamka FROM zaci JOIN znamky ON zaci.id = znamky.id_zaka;`",
+          "why": "Bez podmínky spojení se každý žák spojí s každou známkou (5 · 7 = 35 řádků). Většina dvojic nedává smysl."
+        },
+        {
+          "type": "summary",
+          "text": "`JOIN … ON` spojí řádky dvou tabulek podle podmínky, nejčastěji cizí klíč = primární klíč. Vnitřní spojení vrátí jen řádky, které mají protějšek. Aliasy (`zaci z`) zkracují zápis."
+        }
+      ]
+    },
+    {
+      "title": "Druhy spojení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Učitelka chce seznam **všech** žáků se známkami. I Lucii, která zatím žádnou známku nemá, aby nezapomněla ji vyzkoušet. Obyčejné `JOIN` by Lucii vynechalo. Pro takové případy existují vnější spojení."
+        },
+        {
+          "type": "text",
+          "text": "Druhy spojení si nejlépe představíš jako dvě překrývající se množiny: žáky a známky. Každý druh spojení vybere jinou část."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Spojení tabulek (JOIN)",
+          "definition": "Skládá řádky ze dvou tabulek podle podmínky za `ON`, obvykle cizí klíč = primární klíč.",
+          "example": "`zaci z JOIN znamky k ON z.id = k.id_zaka`"
+        },
+        {
+          "type": "term",
+          "term": "Levá a pravá tabulka",
+          "definition": "Levá je tabulka uvedená před slovem `JOIN`, pravá za ním.",
+          "example": "V `zaci LEFT JOIN znamky` je levá `zaci`."
+        },
+        {
+          "type": "term",
+          "term": "Vnější spojení (OUTER JOIN)",
+          "definition": "Vrátí i řádky bez protějšku. Chybějící hodnoty druhé tabulky doplní jako NULL. Slovo `OUTER` se smí vynechat.",
+          "example": "Lucie se ve výsledku objeví se známkou NULL."
+        },
+        {
+          "type": "term",
+          "term": "Kartézský součin (CROSS JOIN)",
+          "definition": "Spojí každý řádek jedné tabulky s každým řádkem druhé. Počet řádků = součin počtů.",
+          "example": "5 žáků × 7 známek = 35 řádků."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Spojení",
+            "Co vrátí",
+            "Pro žáky a známky"
+          ],
+          "rows": [
+            [
+              "`INNER JOIN`",
+              "jen řádky s protějškem",
+              "7 řádků, Lucie chybí"
+            ],
+            [
+              "`LEFT JOIN`",
+              "všechny řádky levé tabulky + protějšky (nebo NULL)",
+              "8 řádků, Lucie s NULL"
+            ],
+            [
+              "`RIGHT JOIN`",
+              "všechny řádky pravé tabulky + protějšky (nebo NULL)",
+              "jako LEFT, jen strany obráceně"
+            ],
+            [
+              "`FULL OUTER JOIN`",
+              "všechny řádky obou tabulek",
+              "nepodporuje např. MySQL"
+            ],
+            [
+              "`CROSS JOIN`",
+              "každý s každým",
+              "35 řádků"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď úlohy: stačí vnitřní spojení, nebo potřebuješ i řádky bez protějšku?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "INNER JOIN",
+              "LEFT JOIN"
+            ],
+            "items": [
+              {
+                "text": "Seznam známek se jmény žáků",
+                "group": 0
+              },
+              {
+                "text": "Všichni žáci, i ti bez známky",
+                "group": 1
+              },
+              {
+                "text": "Žáci, kteří ještě nemají žádnou známku",
+                "group": 1
+              },
+              {
+                "text": "Objednávky i se jménem zákazníka",
+                "group": 0
+              },
+              {
+                "text": "Všichni zákazníci a počet jejich objednávek, i nula",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Kdo nemá známku"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`SELECT z.jmeno`",
+            "`FROM zaci z`",
+            "`LEFT JOIN znamky k ON z.id = k.id_zaka`",
+            "`WHERE k.id IS NULL;`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "`LEFT JOIN` ponechá všechny žáky. U Lucie nenašel žádnou známku, proto jsou sloupce známek NULL. `WHERE k.id IS NULL` nechá právě takové žáky. Výsledek: **Lucie**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik řádků vrátí `SELECT * FROM zaci z LEFT JOIN znamky k ON z.id = k.id_zaka;`?",
+          "answer": "Žáci se známkami dají 7 řádků (jako INNER JOIN). Lucie bez známky přidá 1 řádek s NULL. Celkem **8**."
+        },
+        {
+          "type": "example",
+          "question": "Spojení tří tabulek: `zaci`, `zak_krouzek(id_zaka, id_krouzku)` a `krouzky(id, nazev)`. Vypiš jména žáků a názvy kroužků.",
+          "answer": "`SELECT z.jmeno, kr.nazev FROM zaci z JOIN zak_krouzek zk ON z.id = zk.id_zaka JOIN krouzky kr ON kr.id = zk.id_krouzku;` Vazební tabulka je uprostřed, na každé straně jedno `JOIN`."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`… LEFT JOIN znamky k ON z.id = k.id_zaka WHERE k.predmet = 'M'` vrátí všechny žáky.",
+          "right": "Chceš-li všechny žáky a jen známky z M, dej podmínku do `ON`: `ON z.id = k.id_zaka AND k.predmet = 'M'`.",
+          "why": "U žáků bez známky z M je `k.predmet` NULL a podmínka ve `WHERE` je vyřadí. Z LEFT JOIN se tak nechtěně stane vnitřní spojení."
+        },
+        {
+          "type": "summary",
+          "text": "`INNER JOIN` vrátí jen řádky s protějškem, `LEFT JOIN` všechny řádky levé tabulky (chybějící doplní NULL), `RIGHT JOIN` pravé, `FULL OUTER JOIN` obou. `CROSS JOIN` spojí každý řádek s každým."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Tabulky zaci (5 žáků) a znamky (7 známek) z výkladu. Kolik řádků vrátí `zaci z JOIN znamky k ON z.id = k.id_zaka`?",
+      "answers": [
+        "7"
+      ],
+      "hints": [
+        "Každá známka patří právě jednomu žákovi."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulky z výkladu. Kolik řádků vrátí `zaci z LEFT JOIN znamky k ON z.id = k.id_zaka`?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "7 spojených + Lucie bez známky.",
+      "hints": [
+        "Kolik žáků nemá žádnou známku?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik řádků vrátí `CROSS JOIN` tabulky s 5 řádky a tabulky se 7 řádky?",
+      "answers": [
+        "35"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulky z výkladu. Které jméno vrátí `SELECT z.jmeno FROM zaci z LEFT JOIN znamky k ON z.id = k.id_zaka WHERE k.id IS NULL;`?",
+      "answers": [
+        "Lucie"
+      ],
+      "hints": [
+        "Hledáš žáka, ke kterému se nenašla žádná známka."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které spojení vrátí jen řádky, které mají protějšek v obou tabulkách?",
+      "options": [
+        "`INNER JOIN`",
+        "`LEFT JOIN`",
+        "`FULL OUTER JOIN`",
+        "`CROSS JOIN`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co obsahují sloupce pravé tabulky u řádku bez protějšku v `LEFT JOIN`?",
+      "options": [
+        "NULL",
+        "0",
+        "prázdný text",
+        "hodnoty předchozího řádku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane, když zapomeneš podmínku spojení (`FROM zaci, znamky`)?",
+      "options": [
+        "vznikne kartézský součin",
+        "dotaz vrátí prázdný výsledek",
+        "SŘBD spojí tabulky podle id automaticky",
+        "vrátí se jen první tabulka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterou podmínku napíšeš za `ON` při spojení žáků a známek?",
+      "options": [
+        "`z.id = k.id_zaka`",
+        "`z.id = k.id`",
+        "`z.jmeno = k.predmet`",
+        "`k.znamka = z.id`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Spojuje se cizí klíč s primárním klíčem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Samotné `JOIN` znamená totéž co `INNER JOIN`.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "`LEFT JOIN` vrátí vždy aspoň tolik řádků, kolik má levá tabulka.",
+      "answer": true,
+      "explanation": "Každý řádek levé tabulky se objeví aspoň jednou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Podmínka ve `WHERE` na sloupec pravé tabulky nemůže LEFT JOIN nijak ovlivnit.",
+      "answer": false,
+      "explanation": "Vyřadí řádky s NULL a z vnějšího spojení udělá v podstatě vnitřní."
+    },
+    {
+      "type": "match",
+      "question": "Spoj spojení s výsledkem.",
+      "pairs": [
+        [
+          "`INNER JOIN`",
+          "jen řádky s protějškem"
+        ],
+        [
+          "`LEFT JOIN`",
+          "všechny z levé tabulky"
+        ],
+        [
+          "`RIGHT JOIN`",
+          "všechny z pravé tabulky"
+        ],
+        [
+          "`CROSS JOIN`",
+          "každý s každým"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď řádky dotazu, který vypíše jména žáků a jejich kroužky přes vazební tabulku.",
+      "items": [
+        "`SELECT z.jmeno, kr.nazev`",
+        "`FROM zaci z`",
+        "`JOIN zak_krouzek zk ON z.id = zk.id_zaka`",
+        "`JOIN krouzky kr ON kr.id = zk.id_krouzku;`"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi `INNER JOIN` a `LEFT JOIN` na příkladu žáků a známek.",
+      "answer": "`INNER JOIN` vrátí jen žáky, kteří mají aspoň jednu známku, každého tolikrát, kolik má známek. `LEFT JOIN` vrátí všechny žáky. Žáci bez známky jsou ve výsledku jednou a sloupce známky mají NULL."
+    }
+  ]
+}

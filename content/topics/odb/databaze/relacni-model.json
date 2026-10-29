@@ -1,0 +1,464 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "relacni-model",
+  "title": "Relační model a klíče",
+  "emoji": "🔑",
+  "explanations": [
+    {
+      "title": "Tabulka v sešitě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Třídní učitelka si vede seznam žáků v tabulce: každý žák jeden řádek, ve sloupcích jméno, příjmení, třída a datum narození. Tabulku umí přečíst každý. Proto je na ní postavená většina databází na světě."
+        },
+        {
+          "type": "text",
+          "text": "V **relačním modelu** jsou všechna data v tabulkách. Abys mohl tabulky správně navrhovat a propojovat, potřebuješ znát jejich části a hlavně **klíče**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Relace (tabulka)",
+          "definition": "Tabulka s pevně danými sloupci a libovolným počtem řádků. Odtud název „relační“ databáze.",
+          "example": "Tabulka `zaci`."
+        },
+        {
+          "type": "term",
+          "term": "Atribut (sloupec)",
+          "definition": "Jedna vlastnost, kterou o každém řádku evidujeme. Má jméno a datový typ.",
+          "example": "`prijmeni`, `datum_narozeni`"
+        },
+        {
+          "type": "term",
+          "term": "Záznam (řádek, n-tice)",
+          "definition": "Jeden řádek tabulky, údaje o jedné věci nebo osobě.",
+          "example": "1 | Eva | Malá | 2.A"
+        },
+        {
+          "type": "term",
+          "term": "Doména",
+          "definition": "Množina povolených hodnot atributu.",
+          "example": "Známka: celá čísla 1 až 5."
+        },
+        {
+          "type": "term",
+          "term": "Primární klíč (PK)",
+          "definition": "Atribut (nebo skupina atributů), který **jednoznačně určuje každý řádek**. Nesmí se opakovat a nesmí být prázdný (NULL).",
+          "example": "`id_zaka`: dva žáci nikdy nemají stejné číslo."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka zaci"
+        },
+        {
+          "type": "table",
+          "head": [
+            "id_zaka (PK)",
+            "jmeno",
+            "prijmeni",
+            "trida"
+          ],
+          "rows": [
+            [
+              "1",
+              "Eva",
+              "Malá",
+              "2.A"
+            ],
+            [
+              "2",
+              "Petr",
+              "Novák",
+              "2.A"
+            ],
+            [
+              "3",
+              "Eva",
+              "Novák",
+              "3.B"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Jméno ani příjmení nestačí jako klíč, opakují se. Proto má tabulka uměle přidané číslo `id_zaka`. Pořadí řádků ani sloupců v relační tabulce nemá význam."
+        },
+        {
+          "type": "heading",
+          "text": "Propojení tabulek: cizí klíč"
+        },
+        {
+          "type": "term",
+          "term": "Cizí klíč (FK)",
+          "definition": "Atribut, jehož hodnota odkazuje na primární klíč v jiné (nebo stejné) tabulce. Tím se tabulky propojí.",
+          "example": "`id_zaka` v tabulce `znamky` odkazuje na `zaci.id_zaka`."
+        },
+        {
+          "type": "table",
+          "head": [
+            "id_znamky (PK)",
+            "id_zaka (FK)",
+            "predmet",
+            "znamka"
+          ],
+          "rows": [
+            [
+              "101",
+              "1",
+              "M",
+              "2"
+            ],
+            [
+              "102",
+              "1",
+              "ČJ",
+              "1"
+            ],
+            [
+              "103",
+              "3",
+              "M",
+              "4"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Známka 103 patří žákovi s `id_zaka` 3, tedy Evě Novákové ze 3.B. Jméno se ve známkách neopakuje, stačí číslo."
+        },
+        {
+          "type": "example",
+          "question": "Proč se v tabulce `znamky` neukládá přímo jméno žáka?",
+          "answer": "Jména se opakují (dvě Evy) a mohou se změnit. Číslo `id_zaka` je jednoznačné a stálé. Navíc jméno je uložené jen jednou v tabulce `zaci`, takže nevzniká **redundance**."
+        },
+        {
+          "type": "example",
+          "question": "Můžeš do tabulky `znamky` vložit řádek s `id_zaka` = 7, když žák 7 neexistuje?",
+          "answer": "Ne. Cizí klíč musí odkazovat na existující primární klíč. SŘBD takový zápis odmítne. Tomuto pravidlu se říká **referenční integrita**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Primárním klíčem tabulky žáků bude příjmení.",
+          "right": "Primárním klíčem bude jedinečný identifikátor, třeba `id_zaka`.",
+          "why": "Příjmení se opakuje (dva Novákové) a může se změnit, např. sňatkem. Klíč musí být jedinečný a ideálně neměnný."
+        },
+        {
+          "type": "summary",
+          "text": "Relační databáze ukládá data do tabulek: sloupce jsou atributy, řádky záznamy. Primární klíč jednoznačně určuje řádek, cizí klíč odkazuje na primární klíč jiné tabulky a tím tabulky propojuje."
+        }
+      ]
+    },
+    {
+      "title": "Druhy klíčů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý občan má rodné číslo, číslo občanky a třeba i číslo pasu. Každé z nich ho jednoznačně určuje. Úřad si ale musí vybrat jedno, podle kterého ho bude v evidenci hledat. Stejné rozhodování děláš při návrhu databázové tabulky."
+        },
+        {
+          "type": "text",
+          "text": "Tady projdeš všechny druhy klíčů, které se u maturity objevují, a pravidla integrity, která SŘBD podle nich hlídá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tabulka, atribut, záznam",
+          "definition": "Relační databáze ukládá data do tabulek (relací). Sloupec je atribut, řádek je záznam. Každý záznam musí být jednoznačně rozlišitelný.",
+          "example": "Tabulka `ucitele` se sloupci `id`, `jmeno`, `email`, `telefon`."
+        },
+        {
+          "type": "term",
+          "term": "Kandidátní klíč",
+          "definition": "Každý atribut nebo nejmenší skupina atributů, která jednoznačně určuje řádek. Tabulka jich může mít víc.",
+          "example": "U učitele: `id`, `email`."
+        },
+        {
+          "type": "term",
+          "term": "Primární klíč (PK)",
+          "definition": "Ten kandidátní klíč, který vybereš jako hlavní identifikátor. Je jedinečný a nesmí být NULL. Tabulka má právě jeden primární klíč.",
+          "example": "`id`"
+        },
+        {
+          "type": "term",
+          "term": "Alternativní klíč",
+          "definition": "Kandidátní klíč, který nebyl vybrán jako primární. Obvykle se hlídá, aby byl jedinečný (`UNIQUE`).",
+          "example": "`email`"
+        },
+        {
+          "type": "term",
+          "term": "Složený klíč",
+          "definition": "Klíč tvořený více atributy. Jednoznačná je až jejich kombinace.",
+          "example": "V rozvrhu: `trida` + `den` + `hodina`."
+        },
+        {
+          "type": "term",
+          "term": "Přirozený a umělý klíč",
+          "definition": "Přirozený klíč je údaj, který existuje i mimo databázi. Umělý (náhradní) klíč je číslo, které vytvoří databáze, často automaticky zvyšované.",
+          "example": "Přirozený: ISBN knihy. Umělý: `id` 1, 2, 3…"
+        },
+        {
+          "type": "term",
+          "term": "Cizí klíč (FK)",
+          "definition": "Atribut, který odkazuje na primární klíč jiné tabulky.",
+          "example": "`id_ucitele` v tabulce `predmety`."
+        },
+        {
+          "type": "term",
+          "term": "NULL",
+          "definition": "Značka „hodnota chybí nebo není známá“. Není to nula ani prázdný text.",
+          "example": "Učitel bez telefonu má `telefon` = NULL."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla integrity"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pravidlo",
+            "Co hlídá",
+            "Porušení"
+          ],
+          "rows": [
+            [
+              "entitní integrita",
+              "primární klíč je jedinečný a není NULL",
+              "dva řádky s id 5"
+            ],
+            [
+              "referenční integrita",
+              "cizí klíč odkazuje na existující řádek (nebo je NULL)",
+              "předmět s id_ucitele 99, který neexistuje"
+            ],
+            [
+              "doménová integrita",
+              "hodnota patří do povolené domény",
+              "známka 7"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zkus si ke každému druhu klíče vymyslet příklad ze školy, teprve pak kartičku otoč."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Kandidátní klíč",
+                "back": "každý, který jednoznačně určuje řádek"
+              },
+              {
+                "front": "Primární klíč",
+                "back": "vybraný hlavní identifikátor, ne NULL"
+              },
+              {
+                "front": "Alternativní klíč",
+                "back": "kandidátní, ale nevybraný"
+              },
+              {
+                "front": "Cizí klíč",
+                "back": "odkaz na PK jiné tabulky"
+              },
+              {
+                "front": "Složený klíč",
+                "back": "z více atributů"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Tabulka `rozvrh(trida, den, hodina, predmet)`. Co bude primárním klíčem?",
+          "answer": "Jedna třída má v jednu hodinu jednoho dne jen jeden předmět. Jednoznačná je kombinace **(trida, den, hodina)**, je to **složený klíč**. Žádný z těch atributů sám nestačí."
+        },
+        {
+          "type": "example",
+          "question": "Kniha má ISBN a v knihovně dostala číslo 15. Co je přirozený a co umělý klíč?",
+          "answer": "ISBN existuje i mimo databázi, je to **přirozený** klíč. Číslo 15 vytvořila databáze knihovny, je to **umělý** klíč. Pozor: knihovna může mít více výtisků se stejným ISBN, proto se u výtisků hodí umělý klíč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "NULL je totéž co 0.",
+          "right": "NULL znamená „hodnota není známá“. 0 je konkrétní číslo.",
+          "why": "Žák s počtem zameškaných hodin 0 nechyběl. Žák s NULL nemá údaj vyplněný a nevíme, kolik zameškal."
+        },
+        {
+          "type": "summary",
+          "text": "Kandidátní klíče jednoznačně určují řádek, jeden z nich je primární, ostatní alternativní. Klíč může být složený, přirozený nebo umělý. Cizí klíč odkazuje na primární klíč jiné tabulky a SŘBD hlídá entitní a referenční integritu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co v relační databázi znamená atribut?",
+      "options": [
+        "sloupec tabulky",
+        "řádek tabulky",
+        "celá tabulka",
+        "propojení tabulek"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Které tvrzení o primárním klíči platí?",
+      "options": [
+        "je jedinečný a nesmí být NULL",
+        "smí se opakovat",
+        "tabulka jich má několik",
+        "musí to být text"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Na co odkazuje cizí klíč?",
+      "options": [
+        "na primární klíč jiné nebo stejné tabulky",
+        "na libovolný sloupec bez omezení",
+        "na soubor na disku",
+        "na název tabulky"
+      ],
+      "answer": 0,
+      "hints": [
+        "Cizí klíč propojuje dvě tabulky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kandidátní klíč, který nebyl vybrán jako primární, se nazývá…",
+      "options": [
+        "alternativní",
+        "cizí",
+        "složený",
+        "umělý"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Které pravidlo poruší známka žáka s `id_zaka` = 99, když takový žák neexistuje?",
+      "options": [
+        "referenční integritu",
+        "entitní integritu",
+        "doménovou integritu",
+        "žádné"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "NULL a 0 znamenají v databázi totéž.",
+      "answer": false,
+      "explanation": "NULL znamená, že hodnota chybí nebo je neznámá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na pořadí řádků v relační tabulce nezáleží.",
+      "answer": true,
+      "explanation": "Pořadí výsledku se určuje až v dotazu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tabulka může mít více kandidátních klíčů, ale jen jeden primární.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem relačního modelu s běžným názvem.",
+      "pairs": [
+        [
+          "relace",
+          "tabulka"
+        ],
+        [
+          "atribut",
+          "sloupec"
+        ],
+        [
+          "záznam (n-tice)",
+          "řádek"
+        ],
+        [
+          "doména",
+          "povolené hodnoty"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj klíč s příkladem.",
+      "pairs": [
+        [
+          "přirozený klíč",
+          "ISBN knihy"
+        ],
+        [
+          "umělý klíč",
+          "automaticky číslované id"
+        ],
+        [
+          "složený klíč",
+          "(trida, den, hodina)"
+        ],
+        [
+          "cizí klíč",
+          "id_zaka v tabulce znamky"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka `rozvrh(trida, den, hodina, predmet)` má složený primární klíč. Z kolika atributů se skládá?",
+      "answers": [
+        "3",
+        "tři"
+      ],
+      "explanation": "Z atributů trida, den a hodina.",
+      "hints": [
+        "Co jednoznačně určuje jednu buňku rozvrhu?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje značka pro chybějící nebo neznámou hodnotu v databázi?",
+      "answers": [
+        "NULL"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výběru primárního klíče.",
+      "items": [
+        "najdi všechny kandidátní klíče",
+        "vyber jeden jako primární",
+        "ostatní označ jako alternativní (UNIQUE)"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi primárním a cizím klíčem na příkladu.",
+      "answer": "Primární klíč jednoznačně určuje řádek ve vlastní tabulce, třeba `id_zaka` v tabulce žáků. Cizí klíč je atribut v jiné tabulce, který na tento primární klíč odkazuje, třeba `id_zaka` v tabulce známek, a tím tabulky propojuje."
+    }
+  ]
+}

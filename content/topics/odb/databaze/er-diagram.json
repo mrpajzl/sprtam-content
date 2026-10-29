@@ -1,0 +1,447 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "er-diagram",
+  "title": "ER diagram a kardinality",
+  "emoji": "🔗",
+  "explanations": [
+    {
+      "title": "Plán před stavbou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než se postaví dům, nakreslí architekt plán. Na papíře se chyba opraví gumou, v hotovém domě je to drahé. Databáze se staví stejně. Než vytvoříš tabulky, nakreslíš **ER diagram**: co budeš evidovat a jak to spolu souvisí."
+        },
+        {
+          "type": "text",
+          "text": "ER diagram čte zadavatel (ředitel, majitel firmy) i programátor. Je to společný jazyk, ve kterém se domluví, co má databáze umět."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Entita",
+          "definition": "Věc, osoba nebo událost z reálného světa, o které chceme v databázi uchovávat údaje. Skupině stejných entit se říká **entitní typ** (entitní množina); z něj později vznikne tabulka.",
+          "example": "Entitní typ Žák; konkrétní entita je žákyně Eva Malá."
+        },
+        {
+          "type": "term",
+          "term": "Atribut",
+          "definition": "Vlastnost entity, kterou evidujeme.",
+          "example": "Žák: jméno, příjmení, datum narození."
+        },
+        {
+          "type": "term",
+          "term": "Identifikátor",
+          "definition": "Atribut (nebo skupina), který jednoznačně rozliší entity stejného typu. V tabulce z něj bude primární klíč.",
+          "example": "číslo žáka"
+        },
+        {
+          "type": "term",
+          "term": "Vztah",
+          "definition": "Souvislost mezi entitami. Pojmenovává se slovesem.",
+          "example": "Žák **chodí do** Třídy."
+        },
+        {
+          "type": "term",
+          "term": "ER diagram",
+          "definition": "Entity-Relationship diagram, obrázek entit, jejich atributů a vztahů. Používá se v konceptuálním návrhu databáze.",
+          "example": "Obdélník Žák – kosočtverec „chodí do“ – obdélník Třída."
+        },
+        {
+          "type": "heading",
+          "text": "Značky (Chenova notace)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "obdélník",
+              "entitní typ (Žák, Třída)"
+            ],
+            [
+              "ovál",
+              "atribut (jméno); podtržený = identifikátor"
+            ],
+            [
+              "kosočtverec",
+              "vztah (chodí do)"
+            ],
+            [
+              "čára",
+              "spojuje atribut s entitou a entitu se vztahem; u čáry se píše kardinalita"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "V praxi se často kreslí i **notace vraní nohy** (crow's foot): atributy jsou vypsané uvnitř obdélníku a kardinalita je značka na konci čáry. Rozvětvená „noha“ znamená „mnoho“."
+        },
+        {
+          "type": "heading",
+          "text": "Kardinalita"
+        },
+        {
+          "type": "term",
+          "term": "Kardinalita vztahu",
+          "definition": "Kolik entit na jedné straně může souviset s kolika entitami na druhé straně. Tři druhy: 1:1, 1:N a M:N.",
+          "example": "Jedna třída má mnoho žáků, žák chodí do jedné třídy: 1:N."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kardinalita",
+            "Čte se",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "1:1",
+              "jedna k jedné",
+              "Třída – Třídní učitel (každá třída má jednoho třídního, učitel je třídním nejvýš jedné třídy)"
+            ],
+            [
+              "1:N",
+              "jedna k mnoha",
+              "Třída – Žák"
+            ],
+            [
+              "M:N",
+              "mnoho k mnoha",
+              "Žák – Kroužek (žák chodí do více kroužků, kroužek má více žáků)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vztahy podle kardinality. U každého se zeptej z obou stran."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "1:1",
+              "1:N",
+              "M:N"
+            ],
+            "items": [
+              {
+                "text": "Občan – Občanský průkaz (platný)",
+                "group": 0
+              },
+              {
+                "text": "Matka – Dítě (biologická matka)",
+                "group": 1
+              },
+              {
+                "text": "Herec – Film",
+                "group": 2
+              },
+              {
+                "text": "Zákazník – Objednávka",
+                "group": 1
+              },
+              {
+                "text": "Student – Předmět",
+                "group": 2
+              },
+              {
+                "text": "Stát – Hlavní město",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Urči kardinalitu vztahu Autor – Kniha.",
+          "answer": "Ptej se z obou stran. Kolik knih může napsat jeden autor? **Mnoho.** Kolik autorů může mít jedna kniha? **Mnoho** (učebnice od tří autorů). Kardinalita je **M:N**."
+        },
+        {
+          "type": "example",
+          "question": "Urči kardinalitu vztahu Zákazník – Objednávka v e-shopu.",
+          "answer": "Jeden zákazník může mít mnoho objednávek. Jedna objednávka patří právě jednomu zákazníkovi. Kardinalita je **1:N**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kardinalitu určím otázkou jen z jedné strany: „Kolik žáků má třída?“ → mnoho, takže M:N.",
+          "right": "Ptej se z obou stran: třída má mnoho žáků, žák chodí do jedné třídy → 1:N.",
+          "why": "Kardinalita popisuje oba směry vztahu. Z jedné otázky nepoznáš, jestli jde o 1:N, nebo M:N."
+        },
+        {
+          "type": "summary",
+          "text": "ER diagram zobrazuje entitní typy (obdélník), atributy (ovál) a vztahy (kosočtverec). Kardinalita vztahu je 1:1, 1:N nebo M:N a určuje se otázkou z obou stran."
+        }
+      ]
+    },
+    {
+      "title": "Z diagramu tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Diagram je hezký, ale databáze potřebuje tabulky. Převést ER diagram na tabulky je mechanická práce s jasnými pravidly. U maturity z databází je to jedna z nejčastějších úloh."
+        },
+        {
+          "type": "text",
+          "text": "Ukážeme si pravidla na malé škole: třídy, žáci a kroužky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Entitní typ a vztah",
+          "definition": "Entitní typ je skupina stejných věcí, o kterých evidujeme údaje (Žák, Kroužek). Vztah je souvislost mezi nimi (žák navštěvuje kroužek).",
+          "example": "Žák – navštěvuje – Kroužek"
+        },
+        {
+          "type": "term",
+          "term": "Kardinalita",
+          "definition": "Kolik entit může být ve vztahu na každé straně: 1:1, 1:N, M:N.",
+          "example": "Žák – Kroužek je M:N."
+        },
+        {
+          "type": "term",
+          "term": "Povinnost (parcialita) vztahu",
+          "definition": "Říká, jestli entita **musí**, nebo jen **může** být ve vztahu. Povinná účast = minimálně 1, nepovinná = minimálně 0.",
+          "example": "Každý žák musí chodit do třídy (povinné). Do kroužku chodit nemusí (nepovinné)."
+        },
+        {
+          "type": "term",
+          "term": "Primární a cizí klíč",
+          "definition": "Primární klíč jednoznačně určuje řádek tabulky. Cizí klíč je sloupec, který odkazuje na primární klíč jiné tabulky.",
+          "example": "`zak.id_tridy` odkazuje na `trida.id_tridy`."
+        },
+        {
+          "type": "term",
+          "term": "Vazební (průniková) tabulka",
+          "definition": "Pomocná tabulka, která rozloží vztah M:N na dva vztahy 1:N. Obsahuje cizí klíče na obě tabulky.",
+          "example": "Tabulka `zak_krouzek(id_zaka, id_krouzku)`."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla převodu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Každý entitní typ → tabulka. Atributy → sloupce. Identifikátor → primární klíč.",
+            "Vztah **1:N** → do tabulky na straně **N** přidej cizí klíč na stranu 1.",
+            "Vztah **1:1** → cizí klíč přidej do jedné z tabulek (obvykle tam, kde je účast nepovinná, nebo tabulky slouč).",
+            "Vztah **M:N** → vytvoř vazební tabulku s cizími klíči na obě strany. Jejím primárním klíčem bývá dvojice těchto cizích klíčů.",
+            "Atributy vztahu M:N (např. datum přihlášení) patří do vazební tabulky."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Malá škola"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Tabulka",
+            "Sloupce"
+          ],
+          "rows": [
+            [
+              "trida",
+              "**id_tridy** (PK), nazev"
+            ],
+            [
+              "zak",
+              "**id_zaka** (PK), jmeno, prijmeni, id_tridy (FK → trida)"
+            ],
+            [
+              "krouzek",
+              "**id_krouzku** (PK), nazev, den"
+            ],
+            [
+              "zak_krouzek",
+              "**id_zaka** (FK → zak), **id_krouzku** (FK → krouzek), datum_prihlaseni; PK = (id_zaka, id_krouzku)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Třída – Žák je 1:N, proto má žák sloupec `id_tridy`. Žák – Kroužek je M:N, proto vznikla vazební tabulka `zak_krouzek`."
+        },
+        {
+          "type": "example",
+          "question": "Proč nejde vztah M:N Žák – Kroužek uložit jako sloupec `id_krouzku` v tabulce `zak`?",
+          "answer": "Do jednoho sloupce se vejde jen jeden kroužek. Žák se třemi kroužky by potřeboval tři řádky (a zopakované jméno) nebo seznam v buňce. Obojí je špatně. Řeší to **vazební tabulka**: každý řádek je jedna dvojice žák–kroužek."
+        },
+        {
+          "type": "example",
+          "question": "Vztah Zákazník – Objednávka je 1:N. Do které tabulky dáš cizí klíč?",
+          "answer": "Na stranu **N**, tedy do tabulky `objednavka`: sloupec `id_zakaznika`. Každá objednávka zná svého zákazníka. Opačně by zákazník potřeboval seznam objednávek v jedné buňce."
+        },
+        {
+          "type": "mistake",
+          "wrong": "U vztahu 1:N dám cizí klíč na stranu 1 (do tabulky třída sloupec id_zaka).",
+          "right": "Cizí klíč patří na stranu N: do tabulky žák sloupec id_tridy.",
+          "why": "Třída má mnoho žáků, ale do jednoho sloupce se vejde jen jedno id. Žák má právě jednu třídu, takže jeden sloupec stačí."
+        },
+        {
+          "type": "summary",
+          "text": "Entitní typ → tabulka, identifikátor → primární klíč. U 1:N dej cizí klíč na stranu N. Vztah M:N rozlož vazební tabulkou s cizími klíči na obě strany."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou značkou se v Chenově ER diagramu kreslí entitní typ?",
+      "options": [
+        "obdélník",
+        "ovál",
+        "kosočtverec",
+        "kruh"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou značkou se v Chenově ER diagramu kreslí vztah?",
+      "options": [
+        "kosočtverec",
+        "obdélník",
+        "ovál",
+        "šipka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je kardinalita vztahu Herec – Film?",
+      "options": [
+        "M:N",
+        "1:N",
+        "1:1",
+        "N:1"
+      ],
+      "answer": 0,
+      "hints": [
+        "Polož si otázku z obou stran: kolik filmů má herec a kolik herců má film?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je kardinalita vztahu Zákazník – Objednávka?",
+      "options": [
+        "1:N",
+        "M:N",
+        "1:1",
+        "žádná"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co uděláš se vztahem M:N při převodu do tabulek?",
+      "options": [
+        "vytvoříš vazební tabulku",
+        "přidáš cizí klíč do obou tabulek",
+        "vztah vynecháš",
+        "obě tabulky sloučíš"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Do které tabulky přidáš cizí klíč u vztahu 1:N Třída – Žák?",
+      "options": [
+        "do tabulky žák",
+        "do tabulky třída",
+        "do obou",
+        "do nové tabulky"
+      ],
+      "answer": 0,
+      "hints": [
+        "Která strana má mít jen jednu hodnotu?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kardinalita se určuje otázkou z obou stran vztahu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Vztah s nepovinnou účastí znamená, že entita nemusí být s žádnou jinou ve vztahu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Atribut vztahu M:N (např. datum přihlášení do kroužku) patří do tabulky žák.",
+      "answer": false,
+      "explanation": "Patří do vazební tabulky, protože se týká konkrétní dvojice žák–kroužek."
+    },
+    {
+      "type": "match",
+      "question": "Spoj vztah s kardinalitou.",
+      "pairs": [
+        [
+          "Stát – Hlavní město",
+          "1:1"
+        ],
+        [
+          "Třída – Žák",
+          "1:N"
+        ],
+        [
+          "Student – Předmět",
+          "M:N"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik tabulek vznikne z ER diagramu se dvěma entitními typy spojenými jedním vztahem M:N?",
+      "answers": [
+        "3",
+        "tři"
+      ],
+      "explanation": "Dvě tabulky entit a jedna vazební.",
+      "hints": [
+        "Co se dělá se vztahem M:N?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky návrhu databáze.",
+      "items": [
+        "zjisti, co se má evidovat",
+        "nakresli ER diagram",
+        "převeď diagram na tabulky",
+        "vytvoř tabulky v SŘBD"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak převedeš vztah M:N do relačních tabulek, na příkladu Žák – Kroužek.",
+      "answer": "Vytvořím vazební tabulku `zak_krouzek` se sloupci `id_zaka` a `id_krouzku`, které jsou cizími klíči na tabulky žák a kroužek. Jejich dvojice je primárním klíčem. Tím se M:N rozloží na dva vztahy 1:N."
+    },
+    {
+      "type": "open",
+      "question": "Co je kardinalita vztahu a jaké druhy znáš?",
+      "answer": "Kardinalita říká, kolik entit jedné strany může být ve vztahu s kolika entitami druhé strany. Druhy jsou 1:1, 1:N a M:N."
+    }
+  ]
+}
