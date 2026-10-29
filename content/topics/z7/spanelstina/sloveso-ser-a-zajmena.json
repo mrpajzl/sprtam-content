@@ -1,0 +1,531 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sloveso-ser-a-zajmena",
+  "title": "Sloveso ser a osobní zájmena",
+  "emoji": "🧍",
+  "explanations": [
+    {
+      "title": "Tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Abys mohl říct „jsem Tomáš“, „jsme z Česka“ nebo „Ana je milá“, potřebuješ sloveso **být**. Španělsky se jmenuje **ser** a je to jedno z nejdůležitějších slov vůbec."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: ser se mění podobně jako české „jsem, jsi, je“. Stačí se naučit šest tvarů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Sloveso",
+          "definition": "Slovo, které říká, co kdo dělá nebo jaký je.",
+          "example": "být = *ser*, mluvit = *hablar*"
+        },
+        {
+          "type": "term",
+          "term": "Osobní zájmeno",
+          "definition": "Krátké slovo místo jména osoby: já, ty, on, ona, my, vy, oni.",
+          "example": "*yo* = já, *ella* = ona"
+        },
+        {
+          "type": "term",
+          "term": "Časování",
+          "definition": "Měnění slovesa podle osoby. Česky: jsem, jsi, je, jsme, jste, jsou.",
+          "example": "*yo soy* = já jsem, *tú eres* = ty jsi"
+        },
+        {
+          "type": "heading",
+          "text": "Osobní zájmena"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky",
+            "Poznámka"
+          ],
+          "rows": [
+            [
+              "yo",
+              "já",
+              ""
+            ],
+            [
+              "tú",
+              "ty",
+              "s čárkou"
+            ],
+            [
+              "él / ella / usted",
+              "on / ona / vy (jednomu)",
+              "*él* s čárkou = on"
+            ],
+            [
+              "nosotros / nosotras",
+              "my",
+              "-as jen když jsou to samé ženy"
+            ],
+            [
+              "vosotros / vosotras",
+              "vy (víc lidem)",
+              "jen ve Španělsku"
+            ],
+            [
+              "ellos / ellas / ustedes",
+              "oni / ony / vy (zdvořile víc lidem)",
+              "-as jen samé ženy"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Smíšená skupina (kluci i holky) má vždycky mužský tvar: *ellos, nosotros*. V Latinské Americe se *vosotros* neříká, místo něj je vždy *ustedes*."
+        },
+        {
+          "type": "heading",
+          "text": "Sloveso ser"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "ser",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "yo",
+              "soy",
+              "jsem"
+            ],
+            [
+              "tú",
+              "eres",
+              "jsi"
+            ],
+            [
+              "él / ella / usted",
+              "es",
+              "je / jste"
+            ],
+            [
+              "nosotros / nosotras",
+              "somos",
+              "jsme"
+            ],
+            [
+              "vosotros / vosotras",
+              "sois",
+              "jste"
+            ],
+            [
+              "ellos / ellas / ustedes",
+              "son",
+              "jsou / jste"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stejně jako v češtině zájmeno většinou vynecháš, protože osobu pozná každý z tvaru slovesa: *Soy Ana.* = Jsem Ana. Zájmeno řekneš, jen když ho chceš zdůraznit."
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: doplň správný tvar ser."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Yo",
+                "after": "de Praga.",
+                "options": [
+                  "soy",
+                  "es",
+                  "eres"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tú",
+                "after": "muy simpático.",
+                "options": [
+                  "es",
+                  "eres",
+                  "son"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Nosotros",
+                "after": "estudiantes.",
+                "options": [
+                  "son",
+                  "sois",
+                  "somos"
+                ],
+                "answer": 2
+              },
+              {
+                "before": "Ellas",
+                "after": "de México.",
+                "options": [
+                  "son",
+                  "es",
+                  "somos"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Jsme z Brna.",
+          "answer": "1) „my“ = *nosotros* → tvar *somos*. 2) „z“ = *de*. 3) Zájmeno vynechám: *Somos de Brno.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Pan López je učitel.",
+          "answer": "1) Pan López = on → *es*. 2) Učitel = *profesor*. U povolání se ve španělštině člen nepíše: *El señor López es profesor.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Yo es de Praga.",
+          "right": "Yo soy de Praga.",
+          "why": "K *yo* patří vždycky *soy*. *Es* je pro on, ona, usted."
+        },
+        {
+          "type": "summary",
+          "text": "Ser = být: **soy, eres, es, somos, sois, son**. Zájmena (*yo, tú, él…*) se většinou vynechávají jako v češtině."
+        }
+      ]
+    },
+    {
+      "title": "Kdo jsem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že píšeš kamarádovi z Mexika o sobě a o své rodině: kdo jsi, odkud jsi a jací jsou tví blízcí. Na všechno tohle potřebuješ sloveso *ser* (být)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zájmeno",
+          "definition": "Slovo, které zastoupí jméno, abys ho nemusel opakovat.",
+          "example": "*Ana es de Madrid. Ella es simpática.* (*ella* = ona = Ana)"
+        },
+        {
+          "type": "term",
+          "term": "Osoba",
+          "definition": "Kdo mluví (1. osoba: já, my), s kým se mluví (2. osoba: ty, vy), o kom se mluví (3. osoba: on, ona, oni).",
+          "example": "*soy* = 1. osoba, *eres* = 2. osoba, *es* = 3. osoba"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které říká, jaký kdo je. Ve španělštině má koncovku podle toho, jestli jde o muže, nebo ženu.",
+          "example": "*alto* (vysoký), *alta* (vysoká)"
+        },
+        {
+          "type": "heading",
+          "text": "K čemu se ser používá"
+        },
+        {
+          "type": "list",
+          "items": [
+            "jméno: *Soy Marta.* = Jsem Marta.",
+            "původ: *Somos de Chequia.* = Jsme z Česka.",
+            "národnost: *Pablo es español.* = Pablo je Španěl.",
+            "povolání: *Mi madre es médica.* = Moje máma je lékařka.",
+            "jaký kdo je: *Eres muy simpático.* = Jsi moc milý."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dopis kamarádovi"
+        },
+        {
+          "type": "text",
+          "text": "*¡Hola! Soy Klára. Soy checa, de Ostrava. Mi hermano se llama Petr. Es alto y simpático. Mis padres son profesores. ¿Y tú? ¿De dónde eres?*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: Ahoj! Jsem Klára. Jsem Češka, z Ostravy. Můj brácha se jmenuje Petr. Je vysoký a milý. Moji rodiče jsou učitelé. A ty? Odkud jsi?"
+        },
+        {
+          "type": "heading",
+          "text": "Jak postavit větu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti, o kom mluvíš: já, ty, on/ona, my, vy, oni?",
+            "Vyber tvar *ser*: soy, eres, es, somos, sois, son.",
+            "Zájmeno můžeš vynechat: *Soy Klára* stačí.",
+            "Zápor: dej *no* před sloveso: *No soy de Praga.* = Nejsem z Prahy.",
+            "Otázka: stačí otazníky a stoupavá intonace: *¿Eres español?* = Jsi Španěl?"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: otoč kartičky."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "já jsem",
+                "back": "yo soy"
+              },
+              {
+                "front": "ty jsi",
+                "back": "tú eres"
+              },
+              {
+                "front": "ona je",
+                "back": "ella es"
+              },
+              {
+                "front": "my jsme",
+                "back": "nosotros somos"
+              },
+              {
+                "front": "vy jste (Španělsko)",
+                "back": "vosotros sois"
+              },
+              {
+                "front": "oni jsou",
+                "back": "ellos son"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Řekni zápor: Ana je z Madridu → Ana není z Madridu.",
+          "answer": "*Ana es de Madrid.* Před sloveso dám *no*: *Ana no es de Madrid.*"
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se kamarádky: Jsi Mexičanka?",
+          "answer": "Ona = ty → *eres*. Mexičanka = *mexicana*. Otázka: *¿Eres mexicana?*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ellos es simpáticos.",
+          "right": "Ellos son simpáticos.",
+          "why": "Oni = *ellos* → *son*. *Es* patří jen k jedné osobě (on, ona, usted)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Soy no de Praga.",
+          "right": "No soy de Praga.",
+          "why": "*No* stojí vždycky **před** slovesem."
+        },
+        {
+          "type": "summary",
+          "text": "S *ser* řekneš, kdo jsi, odkud jsi, co děláš a jaký jsi: *Soy Klára, soy de Ostrava, soy simpática.* Zápor *no* + sloveso."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Yo ___ de Brno.",
+      "options": [
+        "soy",
+        "es",
+        "eres"
+      ],
+      "answer": 0,
+      "explanation": "Yo → soy."
+    },
+    {
+      "type": "choice",
+      "question": "¿Tú ___ español?",
+      "options": [
+        "eres",
+        "es",
+        "soy"
+      ],
+      "answer": 0,
+      "explanation": "Tú → eres."
+    },
+    {
+      "type": "choice",
+      "question": "Nosotros ___ amigos.",
+      "options": [
+        "somos",
+        "son",
+        "sois"
+      ],
+      "answer": 0,
+      "explanation": "Nosotros → somos."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar ser: Ellos ___ de Perú.",
+      "answers": [
+        "son"
+      ],
+      "explanation": "Ellos (oni) → son.",
+      "hints": [
+        "Ellos = oni, tedy 3. osoba množného čísla."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar ser: Ella ___ profesora.",
+      "answers": [
+        "es"
+      ],
+      "explanation": "Ella (ona) → es."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zájmeno s tvarem ser.",
+      "pairs": [
+        [
+          "yo",
+          "soy"
+        ],
+        [
+          "tú",
+          "eres"
+        ],
+        [
+          "usted",
+          "es"
+        ],
+        [
+          "vosotros",
+          "sois"
+        ],
+        [
+          "ellas",
+          "son"
+        ]
+      ],
+      "explanation": "Usted má tvar jako on/ona: es."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zájmeno s češtinou.",
+      "pairs": [
+        [
+          "yo",
+          "já"
+        ],
+        [
+          "él",
+          "on"
+        ],
+        [
+          "nosotras",
+          "my (samé ženy)"
+        ],
+        [
+          "ellos",
+          "oni"
+        ]
+      ],
+      "explanation": "Koncovka -as znamená skupinu samých žen."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve španělštině se osobní zájmeno (yo, tú…) většinou vynechává, podobně jako v češtině.",
+      "answer": true,
+      "explanation": "Osoba je jasná z tvaru slovesa: *Soy Ana* = Jsem Ana."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Nejsem z Madridu“?",
+      "options": [
+        "No soy de Madrid.",
+        "Soy no de Madrid.",
+        "No es de Madrid."
+      ],
+      "answer": 0,
+      "explanation": "*No* stojí před slovesem a k „já“ patří *soy*."
+    },
+    {
+      "type": "choice",
+      "question": "Skupina: Petr, Jana a Eva. Jaké zájmeno použiješ pro „oni“?",
+      "options": [
+        "ellos",
+        "ellas",
+        "nosotros"
+      ],
+      "answer": 0,
+      "explanation": "Smíšená skupina má mužský tvar: ellos."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Vosotros* se běžně používá v celé Latinské Americe.",
+      "answer": false,
+      "explanation": "*Vosotros* je jen ve Španělsku. V Latinské Americe se říká vždy *ustedes*."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo znamená „on“?",
+      "options": [
+        "él",
+        "el",
+        "tú"
+      ],
+      "answer": 0,
+      "explanation": "*él* s čárkou = on. *el* bez čárky je člen."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Moji rodiče jsou učitelé“.",
+      "items": [
+        "Mis",
+        "padres",
+        "son",
+        "profesores."
+      ],
+      "explanation": "Mis padres (moji rodiče) + son (jsou) + profesores (učitelé)."
+    },
+    {
+      "type": "open",
+      "question": "Vyčasuj sloveso ser ve všech osobách.",
+      "answer": "Yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ellas/ustedes son."
+    },
+    {
+      "type": "open",
+      "question": "Řekni španělsky tři věty o sobě se slovesem ser.",
+      "answer": "Soy Lukáš. Soy de Praga, soy checo. Soy alto y simpático."
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cleny-rod-a-cislo",
+  "title": "Členy, rod a číslo podstatných jmen",
+  "emoji": "📦",
+  "explanations": [
+    {
+      "title": "Pravidla",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V angličtině před podstatnými jmény stojí *the* nebo *a*. Ve španělštině je to podobné, jen se tahle slůvka mění podle toho, jestli je slovo mužské, nebo ženské, a jestli je jedno, nebo jich je víc."
+        },
+        {
+          "type": "text",
+          "text": "Bez nich se španělsky neobejde skoro žádná věta: *el libro* (ta kniha), *una casa* (nějaký dům)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podstatné jméno",
+          "definition": "Slovo pro osobu, zvíře, věc nebo místo.",
+          "example": "*libro* (kniha), *perro* (pes), *casa* (dům)"
+        },
+        {
+          "type": "term",
+          "term": "Rod",
+          "definition": "Každé podstatné jméno je ve španělštině buď **mužské**, nebo **ženské**. Střední rod (jako české „to“) neexistuje.",
+          "example": "*el libro* je mužského rodu, *la casa* ženského"
+        },
+        {
+          "type": "term",
+          "term": "Číslo",
+          "definition": "Jednotné číslo = jedna věc. Množné číslo = víc věcí.",
+          "example": "*libro* (kniha) – *libros* (knihy)"
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Malé slovo před podstatným jménem. Určitý člen (*el, la, los, las*) jako anglické *the*. Neurčitý člen (*un, una*) jako anglické *a*.",
+          "example": "*el perro* = ten pes, *un perro* = nějaký pes"
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka členů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "mužský rod",
+            "ženský rod"
+          ],
+          "rows": [
+            [
+              "určitý, jednotné",
+              "el libro",
+              "la casa"
+            ],
+            [
+              "určitý, množné",
+              "los libros",
+              "las casas"
+            ],
+            [
+              "neurčitý, jednotné",
+              "un libro",
+              "una casa"
+            ],
+            [
+              "neurčitý, množné",
+              "unos libros",
+              "unas casas"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*Unos, unas* znamená „nějaké, pár“: *unos libros* = pár knih."
+        },
+        {
+          "type": "heading",
+          "text": "Jak poznáš rod"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Končí na **-o**? Většinou mužský: *el libro, el perro, el chico*.",
+            "Končí na **-a**? Většinou ženský: *la casa, la mesa, la chica*.",
+            "Končí na **-ción, -sión, -dad**? Ženský: *la canción* (píseň), *la ciudad* (město).",
+            "Končí na **-e** nebo souhlásku? Rod se musíš naučit se slovem: *el coche* (auto), *la noche* (noc), *el hotel*, *la flor* (květina).",
+            "Pozor na výjimky: *el día* (den), *el mapa*, *el problema*, ale *la mano* (ruka), *la foto*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Množné číslo"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Končí na samohlásku → přidej **-s**: *libro → libros, casa → casas*.",
+            "Končí na souhlásku → přidej **-es**: *ciudad → ciudades, hotel → hoteles*.",
+            "Končí na **-z** → z se změní na c a přidá se **-es**: *lápiz → lápices* (tužky)."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: vyber správný člen."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "libro",
+                "options": [
+                  "el",
+                  "la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "mesa",
+                "options": [
+                  "el",
+                  "la"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "",
+                "after": "ciudades",
+                "options": [
+                  "los",
+                  "las"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "",
+                "after": "día",
+                "options": [
+                  "el",
+                  "la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "coches",
+                "options": [
+                  "unos",
+                  "unas"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Utvoř množné číslo se členem: *la flor* (květina).",
+          "answer": "1) *flor* končí na souhlásku r → přidám **-es**: *flores*. 2) Ženský rod v množném čísle → *las*. Výsledek: *las flores*."
+        },
+        {
+          "type": "example",
+          "question": "Utvoř množné číslo: *el lápiz* (tužka).",
+          "answer": "1) Končí na -z → z se mění na c a přidám -es: *lápices*. 2) Mužský rod množné číslo → *los*. Výsledek: *los lápices*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "la día",
+          "right": "el día",
+          "why": "*Día* končí na -a, ale je mužského rodu. Je to výjimka, kterou si musíš zapamatovat."
+        },
+        {
+          "type": "summary",
+          "text": "Mužský rod: **el / los, un / unos**. Ženský rod: **la / las, una / unas**. Množné číslo: samohláska + -s, souhláska + -es."
+        }
+      ]
+    },
+    {
+      "title": "Šuplíky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že ve španělštině má každé podstatné jméno svůj šuplík: modrý pro mužský rod a červený pro ženský. Na šuplíku je štítek, a to je **člen**. Když víš, do kterého šuplíku slovo patří, víš i, jaký člen dostane."
+        },
+        {
+          "type": "text",
+          "text": "Pozor: šuplík se často liší od češtiny. Česky je to **ten** stůl, ale španělsky **la** mesa, ženský rod."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rod podstatného jména",
+          "definition": "Jestli je slovo mužské, nebo ženské. U věcí to nemá nic společného s tím, jestli jsou „klučičí“ nebo „holčičí“. Je to jen gramatika.",
+          "example": "*el coche* (auto) je mužské, *la leche* (mléko) ženské"
+        },
+        {
+          "type": "term",
+          "term": "Určitý člen",
+          "definition": "Ten, ta, to. Mluvíš o konkrétní věci, kterou oba znáte. Jako anglické *the*.",
+          "example": "*el gato* = ta (naše, známá) kočka"
+        },
+        {
+          "type": "term",
+          "term": "Neurčitý člen",
+          "definition": "Nějaký, jeden. Věc zmiňuješ poprvé nebo nezáleží na tom, která. Jako anglické *a, an*.",
+          "example": "*un gato* = nějaká kočka"
+        },
+        {
+          "type": "heading",
+          "text": "Příběh o kočce"
+        },
+        {
+          "type": "text",
+          "text": "Tengo **un** gato. **El** gato se llama Tom. = Mám (nějakou) kočku. Ta kočka se jmenuje Tom."
+        },
+        {
+          "type": "text",
+          "text": "Poprvé o kočce mluvím, takže *un*. Podruhé už oba víme, o kterou jde, takže *el*. Úplně stejně to funguje v angličtině: *I have a cat. The cat is called Tom.*"
+        },
+        {
+          "type": "heading",
+          "text": "Kde se rod liší od češtiny"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky",
+            "Rod v češtině"
+          ],
+          "rows": [
+            [
+              "la mesa",
+              "stůl",
+              "mužský"
+            ],
+            [
+              "el coche",
+              "auto",
+              "střední"
+            ],
+            [
+              "la leche",
+              "mléko",
+              "střední"
+            ],
+            [
+              "el árbol",
+              "strom",
+              "mužský (stejně)"
+            ],
+            [
+              "la flor",
+              "květina",
+              "ženský (stejně)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Proto se každé slovo uč i se členem: ne „mesa = stůl“, ale „*la mesa* = stůl“."
+        },
+        {
+          "type": "heading",
+          "text": "Smíšená skupina"
+        },
+        {
+          "type": "text",
+          "text": "Když jsou ve skupině kluci i holky, použije se mužský tvar: *los chicos* = kluci, ale i kluci a holky dohromady. *Los padres* = rodiče (táta i máma)."
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: roztřiď slova do šuplíků."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "mužský rod (el)",
+              "ženský rod (la)"
+            ],
+            "items": [
+              {
+                "text": "libro",
+                "group": 0
+              },
+              {
+                "text": "casa",
+                "group": 1
+              },
+              {
+                "text": "día",
+                "group": 0
+              },
+              {
+                "text": "canción",
+                "group": 1
+              },
+              {
+                "text": "problema",
+                "group": 0
+              },
+              {
+                "text": "mano",
+                "group": 1
+              },
+              {
+                "text": "ciudad",
+                "group": 1
+              },
+              {
+                "text": "perro",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Doplň členy: Tengo ___ perro y ___ gata. ___ perro se llama Max.",
+          "answer": "Pes (*perro*) je mužský, poprvé → *un*. Kočka (*gata*) je ženská, poprvé → *una*. Podruhé o psovi → *el*. *Tengo un perro y una gata. El perro se llama Max.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: písně (ty, o kterých mluvíme).",
+          "answer": "*canción* končí na -ción → ženský rod. Množné číslo: souhláska + -es → *canciones* (čárka zmizí, protože přízvuk teď vychází sám na předposlední slabiku). Určitý člen ženský množný: *las canciones*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "el mesa",
+          "right": "la mesa",
+          "why": "Česky je stůl „ten“, ale ve španělštině je *mesa* ženského rodu. Rod se nepřekládá z češtiny."
+        },
+        {
+          "type": "summary",
+          "text": "Každé podstatné jméno patří do šuplíku: mužský (**el, un**) nebo ženský (**la, una**). Poprvé zmíněná věc má *un/una*, známá *el/la*. Slova se uč vždycky se členem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "___ libro",
+      "options": [
+        "el",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "*Libro* končí na -o, je mužského rodu."
+    },
+    {
+      "type": "choice",
+      "question": "___ ciudad",
+      "options": [
+        "la",
+        "el"
+      ],
+      "answer": 0,
+      "explanation": "Slova na -dad jsou ženského rodu."
+    },
+    {
+      "type": "choice",
+      "question": "___ día",
+      "options": [
+        "el",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "*Día* je výjimka: končí na -a, ale je mužského rodu.",
+      "hints": [
+        "Pozor na výjimky, které si musíš pamatovat."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "___ mano (ruka)",
+      "options": [
+        "la",
+        "el"
+      ],
+      "answer": 0,
+      "explanation": "*Mano* je výjimka: končí na -o, ale je ženského rodu."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo slova *casa*.",
+      "answers": [
+        "casas"
+      ],
+      "explanation": "Končí na samohlásku → přidá se -s."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo slova *ciudad*.",
+      "answers": [
+        "ciudades"
+      ],
+      "explanation": "Končí na souhlásku → přidá se -es."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo slova *lápiz* (tužka).",
+      "answers": [
+        "lápices",
+        "lapices"
+      ],
+      "explanation": "Z se změní na c a přidá se -es.",
+      "hints": [
+        "Co se děje se z na konci slova?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je určitý člen ke slovu *flores* (květiny)?",
+      "options": [
+        "las",
+        "los",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "*Flor* je ženského rodu, v množném čísle tedy *las flores*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve španělštině existuje střední rod jako české „to“.",
+      "answer": false,
+      "explanation": "Španělština má jen mužský a ženský rod."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Los padres* může znamenat tátu i mámu dohromady.",
+      "answer": true,
+      "explanation": "Smíšená skupina má mužský tvar: *los padres* = rodiče."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Tengo ___ hermana. (Mám sestru.)",
+      "options": [
+        "una",
+        "un",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "Sestru zmiňuji poprvé a *hermana* je ženského rodu → *una*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj se správným členem.",
+      "pairs": [
+        [
+          "coche",
+          "el"
+        ],
+        [
+          "noche",
+          "la"
+        ],
+        [
+          "libros",
+          "los"
+        ],
+        [
+          "canciones",
+          "las"
+        ]
+      ],
+      "explanation": "Coche je mužské, noche ženské. Množné číslo: los / las."
+    },
+    {
+      "type": "choice",
+      "question": "Která dvojice je správně?",
+      "options": [
+        "el problema – los problemas",
+        "la problema – las problemas",
+        "el problema – las problemas"
+      ],
+      "answer": 0,
+      "explanation": "*Problema* je mužského rodu, i když končí na -a."
+    },
+    {
+      "type": "open",
+      "question": "Jak se ve španělštině tvoří množné číslo podstatných jmen? Uveď příklady.",
+      "answer": "Slovo na samohlásku dostane -s (*libro → libros*), slovo na souhlásku -es (*hotel → hoteles*). Na -z se z mění na c: *lápiz → lápices*."
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ *un* a kdy *el*? Vysvětli na příkladu.",
+      "answer": "*Un* použiju, když o věci mluvím poprvé nebo nezáleží na tom, která to je. *El*, když oba víme, o kterou jde: *Tengo un perro. El perro se llama Max.*"
+    }
+  ]
+}

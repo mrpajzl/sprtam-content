@@ -1,0 +1,550 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vyslovnost-a-pravopis",
+  "title": "Výslovnost a pravopis",
+  "emoji": "🔤",
+  "explanations": [
+    {
+      "title": "Písmeno po písmenu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Španělština se čte skoro tak, jak se píše, podobně jako čeština. Stačí se naučit pár písmen, která se čtou jinak než u nás. Pak přečteš nahlas i slovo, které vidíš poprvé."
+        },
+        {
+          "type": "text",
+          "text": "Hodí se to hned od první hodiny: když víš, jak se čte *j*, *ll* nebo *ñ*, nebudeš se stydět říct *Me llamo Juan* (Jmenuji se Juan)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výslovnost",
+          "definition": "Jak se slovo vyslovuje nahlas. V hranatých závorkách ti ji napíšeme českými písmeny.",
+          "example": "*hola* se čte [ola] = ahoj"
+        },
+        {
+          "type": "term",
+          "term": "Samohláska",
+          "definition": "Písmena a, e, i, o, u. Ve španělštině se čtou stejně jako v češtině, jen vždy krátce.",
+          "example": "*casa* [kasa] = dům"
+        },
+        {
+          "type": "term",
+          "term": "Souhláska",
+          "definition": "Všechna ostatní písmena: b, c, d, g, j, l, n, r…",
+          "example": "V *gato* (kočka) jsou souhlásky g a t."
+        },
+        {
+          "type": "term",
+          "term": "Ñ (eňe)",
+          "definition": "Písmeno, které čeština nemá. Čte se jako české **ň**.",
+          "example": "*España* [espaňa] = Španělsko, *mañana* [maňana] = zítra"
+        },
+        {
+          "type": "heading",
+          "text": "Písmena, která se čtou jinak"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Píše se",
+            "Čte se",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "h",
+              "nečte se vůbec",
+              "*hola* [ola]",
+              "ahoj"
+            ],
+            [
+              "ch",
+              "č",
+              "*chico* [čiko]",
+              "kluk"
+            ],
+            [
+              "ll",
+              "j (ve Španělsku)",
+              "*calle* [kaje]",
+              "ulice"
+            ],
+            [
+              "ñ",
+              "ň",
+              "*niño* [niňo]",
+              "dítě"
+            ],
+            [
+              "j",
+              "ch",
+              "*jamón* [chamón]",
+              "šunka"
+            ],
+            [
+              "qu",
+              "k (u se nečte)",
+              "*queso* [keso]",
+              "sýr"
+            ],
+            [
+              "v",
+              "b",
+              "*vino* [bino]",
+              "víno"
+            ],
+            [
+              "y",
+              "j (samotné *y* = i)",
+              "*yo* [jo]",
+              "já"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "C, Z a G: záleží, co následuje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**c** před a, o, u se čte jako **k**: *casa* [kasa] = dům, *cola* = ocas, fronta.",
+            "**c** před e, i a každé **z** se ve Španělsku čte jako anglické *th* ve slově *think*: *cena* (večeře), *zapato* (bota). V Latinské Americe se čte jako **s**: [sena], [sapato].",
+            "**g** před a, o, u se čte jako české **g**: *gato* [gato] = kočka.",
+            "**g** před e, i se čte jako **ch**: *gente* [chente] = lidé.",
+            "Chceš tvrdé g před e, i? Píše se **gu**: *guitarra* [gitara] = kytara. U se tu nečte."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: přečti si přední stranu kartičky nahlas a pak ji otoč."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "hotel",
+                "back": "[otel] – h se nečte"
+              },
+              {
+                "front": "llamo",
+                "back": "[jamo] – ll jako j"
+              },
+              {
+                "front": "gente",
+                "back": "[chente] – g před e jako ch"
+              },
+              {
+                "front": "queso",
+                "back": "[keso] – qu jako k"
+              },
+              {
+                "front": "mucho",
+                "back": "[mučo] – ch jako č"
+              },
+              {
+                "front": "año",
+                "back": "[aňo] – ñ jako ň"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Jak přečteš *Juan juega*? (Juan hraje.)",
+          "answer": "1) *j* se čte jako ch. 2) *u* před samohláskou se čte krátce, skoro jako *u* v „auto“. Výsledek: [chuan chuega]."
+        },
+        {
+          "type": "example",
+          "question": "Jak přečteš *guitarra* a *gente*?",
+          "answer": "1) V *guitarra* je *gu* před *i*, takže tvrdé g a *u* se nečte. *rr* je silně vibrující r: [gitara]. 2) V *gente* je *g* před *e*, tedy ch: [chente]."
+        },
+        {
+          "type": "mistake",
+          "wrong": "*hola* čteš [hola]",
+          "right": "*hola* čteš [ola]",
+          "why": "Písmeno h je ve španělštině vždycky němé. Nečte se ani na začátku slova."
+        },
+        {
+          "type": "summary",
+          "text": "Zapamatuj si: **h** se nečte, **ch** = č, **ll** = j, **ñ** = ň, **j** = ch, **qu** = k. **C** a **g** se před *e, i* čtou jinak než před *a, o, u*."
+        }
+      ]
+    },
+    {
+      "title": "Přízvuk a znaménka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V češtině dáváš důraz vždycky na první slabiku: *KO-čka, TE-le-fon*. Ve španělštině může být důraz na kterékoli slabice a mění se tím význam. Proto mají Španělé jednoduchá pravidla a čárku nad samohláskou."
+        },
+        {
+          "type": "text",
+          "text": "A ještě jedna zvláštnost: otázku a zvolání poznáš už na začátku věty, protože tam stojí obrácený otazník **¿** nebo vykřičník **¡**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Slabika",
+          "definition": "Kousek slova, který vyslovíš na jeden nádech. Každá slabika má jednu samohlásku (nebo dvě vedle sebe).",
+          "example": "*ca-sa*, *te-lé-fo-no*"
+        },
+        {
+          "type": "term",
+          "term": "Přízvuk",
+          "definition": "Slabika, kterou ve slově řekneš silněji. V textu ji tu píšeme velkými písmeny.",
+          "example": "*CA-sa* (dům), *ha-BLAR* (mluvit)"
+        },
+        {
+          "type": "term",
+          "term": "Čárka (tilde)",
+          "definition": "Znaménko nad samohláskou: á, é, í, ó, ú. Ve španělštině **neprodlužuje**, jen ukazuje, kde je přízvuk.",
+          "example": "*café* [kafe] s důrazem na -FE, ne [kafé] s dlouhým é"
+        },
+        {
+          "type": "term",
+          "term": "Obrácený otazník a vykřičník",
+          "definition": "Znaménka ¿ a ¡ na začátku otázky a zvolání. Na konci stojí obyčejné ? a !.",
+          "example": "*¿Cómo te llamas?* = Jak se jmenuješ? *¡Hola!* = Ahoj!"
+        },
+        {
+          "type": "heading",
+          "text": "Kde je přízvuk: tři kroky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Má slovo čárku? Přízvuk je **na ní**: *ca-FÉ, in-GLÉS, MÚ-si-ca*.",
+            "Nemá čárku a končí na **samohlásku, -n nebo -s**? Přízvuk je na **předposlední** slabice: *CA-sa, HA-blan, LI-bros*.",
+            "Nemá čárku a končí na **jinou souhlásku** (r, l, d, z…)? Přízvuk je na **poslední** slabice: *ha-BLAR, es-pa-ÑOL, ciu-DAD*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: kde je přízvuk? Vyber slabiku."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "casa → přízvuk na",
+                "after": "",
+                "options": [
+                  "ca",
+                  "sa"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "hablar → přízvuk na",
+                "after": "",
+                "options": [
+                  "ha",
+                  "blar"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "café → přízvuk na",
+                "after": "",
+                "options": [
+                  "ca",
+                  "fé"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "libros → přízvuk na",
+                "after": "",
+                "options": [
+                  "li",
+                  "bros"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "árbol → přízvuk na",
+                "after": "",
+                "options": [
+                  "ár",
+                  "bol"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Čárka rozlišuje slova"
+        },
+        {
+          "type": "table",
+          "head": [
+            "S čárkou",
+            "Bez čárky"
+          ],
+          "rows": [
+            [
+              "*tú* = ty",
+              "*tu* = tvůj"
+            ],
+            [
+              "*él* = on",
+              "*el* = člen (ten)"
+            ],
+            [
+              "*sí* = ano",
+              "*si* = jestli, když"
+            ],
+            [
+              "*¿qué?* = co?",
+              "*que* = že, který"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tázací slova mají v otázce vždycky čárku: *¿qué?* (co), *¿cómo?* (jak), *¿dónde?* (kde), *¿cuándo?* (kdy), *¿quién?* (kdo)."
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Kde je přízvuk ve slově *español*?",
+          "answer": "Slovo nemá čárku. Končí na *l*, to je souhláska jiná než n, s. Přízvuk je tedy na poslední slabice: *es-pa-ÑOL*."
+        },
+        {
+          "type": "example",
+          "question": "Proč má *lápiz* (tužka) čárku, ale *casa* ne?",
+          "answer": "*lápiz* končí na *z*, takže by podle pravidla měl být přízvuk na konci (*la-PIZ*). Vyslovuje se ale *LÁ-piz*, a tuhle výjimku musí čárka ukázat. *casa* končí na samohlásku, přízvuk je podle pravidla na předposlední slabice, čárku nepotřebuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Como te llamas?",
+          "right": "¿Cómo te llamas?",
+          "why": "Otázka začíná obráceným otazníkem ¿. A tázací *cómo* (jak) má čárku."
+        },
+        {
+          "type": "mistake",
+          "wrong": "*café* čteš s dlouhým é jako v češtině",
+          "right": "*café* čteš s krátkým e, jen s důrazem na konci",
+          "why": "Španělská čárka nikdy neprodlužuje. Ukazuje jen přízvuk."
+        },
+        {
+          "type": "summary",
+          "text": "Čárka ve španělštině ukazuje **přízvuk**, ne délku. Bez čárky: konec na samohlásku, -n, -s → předposlední slabika, jinak poslední. Otázka začíná **¿**, zvolání **¡**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak se čte španělské slovo *hola* (ahoj)?",
+      "options": [
+        "[ola]",
+        "[hola]",
+        "[chola]"
+      ],
+      "answer": 0,
+      "explanation": "Písmeno h se ve španělštině nečte nikdy."
+    },
+    {
+      "type": "choice",
+      "question": "Písmeno **ñ** ve slově *España* se čte jako české…",
+      "options": [
+        "ň",
+        "n",
+        "nj"
+      ],
+      "answer": 0,
+      "explanation": "ñ = ň: [espaňa]."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte **j** ve slově *jamón* (šunka)?",
+      "options": [
+        "jako české ch",
+        "jako české j",
+        "jako anglické dž"
+      ],
+      "answer": 0,
+      "explanation": "Španělské j se čte jako české ch: [chamón]."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se ve Španělsku obvykle čte *calle* (ulice)?",
+      "options": [
+        "[kaje]",
+        "[kale]",
+        "[kalle]"
+      ],
+      "answer": 0,
+      "explanation": "Dvojité ll se ve Španělsku čte jako české j.",
+      "hints": [
+        "Dvě l vedle sebe tvoří jedno písmeno se zvláštní výslovností."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte *gente* (lidé)?",
+      "options": [
+        "[chente]",
+        "[gente]",
+        "[džente]"
+      ],
+      "answer": 0,
+      "explanation": "G před e a i se čte jako ch.",
+      "hints": [
+        "Podívej se, jaké písmeno stojí hned za g."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte *guitarra* (kytara)?",
+      "options": [
+        "[gitara]",
+        "[guitara]",
+        "[chitara]"
+      ],
+      "answer": 0,
+      "explanation": "Ve skupině gu před e, i se u nečte a g je tvrdé."
+    },
+    {
+      "type": "match",
+      "question": "Spoj písmeno s českou výslovností.",
+      "pairs": [
+        [
+          "ñ",
+          "ň"
+        ],
+        [
+          "ch",
+          "č"
+        ],
+        [
+          "qu",
+          "k"
+        ],
+        [
+          "j",
+          "ch"
+        ],
+        [
+          "h",
+          "nečte se"
+        ]
+      ],
+      "explanation": "Tyhle dvojice je dobré umět nazpaměť."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čárka nad samohláskou (á, é, í…) ve španělštině prodlužuje samohlásku stejně jako v češtině.",
+      "answer": false,
+      "explanation": "Španělská čárka jen ukazuje, na které slabice je přízvuk. Samohláska zůstává krátká."
+    },
+    {
+      "type": "choice",
+      "question": "Na které slabice je přízvuk ve slově *hablar* (mluvit)?",
+      "options": [
+        "ha",
+        "blar"
+      ],
+      "answer": 1,
+      "explanation": "Slovo končí na r (ne na samohlásku, n ani s), proto je přízvuk na poslední slabice.",
+      "hints": [
+        "Podívej se na poslední písmeno slova."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na které slabice je přízvuk ve slově *libros* (knihy)?",
+      "options": [
+        "li",
+        "bros"
+      ],
+      "answer": 0,
+      "explanation": "Slovo končí na -s, proto je přízvuk na předposlední slabice: LI-bros."
+    },
+    {
+      "type": "choice",
+      "question": "Která otázka je napsaná správně?",
+      "options": [
+        "¿Cómo te llamas?",
+        "Cómo te llamas?",
+        "¿Como te llamas?",
+        "?Cómo te llamas?"
+      ],
+      "answer": 0,
+      "explanation": "Na začátku obrácený otazník ¿, na konci obyčejný ?. Tázací *cómo* má čárku."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená *tú* s čárkou?",
+      "options": [
+        "ty",
+        "tvůj",
+        "ten"
+      ],
+      "answer": 0,
+      "explanation": "*tú* = ty, *tu* bez čárky = tvůj."
+    },
+    {
+      "type": "input",
+      "question": "Napiš písmeno, které se ve španělštině nikdy nečte (třeba v *hotel* nebo *hola*).",
+      "answers": [
+        "h"
+      ],
+      "explanation": "H je němé: *hotel* [otel]."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak najdeš přízvuk ve slově.",
+      "items": [
+        "Podívej se, jestli má slovo čárku.",
+        "Má-li ji, přízvuk je na ní.",
+        "Nemá-li ji, podívej se na poslední písmeno.",
+        "Samohláska, n, s → předposlední slabika; jiná souhláska → poslední."
+      ],
+      "explanation": "Čárka má vždycky přednost, teprve potom platí pravidla podle konce slova."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi čárkou v češtině a ve španělštině?",
+      "answer": "V češtině čárka prodlužuje samohlásku (a → á). Ve španělštině samohlásku neprodlužuje, jen ukazuje, na které slabice je přízvuk, např. *café* s důrazem na konci."
+    },
+    {
+      "type": "open",
+      "question": "Jak se čte c ve slovech *casa* a *cena*? Liší se to ve Španělsku a v Latinské Americe?",
+      "answer": "V *casa* je c před a, čte se jako k. V *cena* je c před e: ve Španělsku se čte jako anglické th v *think*, v Latinské Americe jako s."
+    }
+  ]
+}
