@@ -1,0 +1,392 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ocenovani-cena",
+  "title": "Oceňování a tržní cena",
+  "emoji": "💰",
+  "explanations": [
+    {
+      "title": "Dvě komody",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve skladu stojí dvě biedermeierové komody ze stejné doby. Jedna je z ořechu s původním kováním, druhá ze smrku, přebarvená a s novými úchytkami. Na pohled podobné – a přesto se cena může lišit i desetkrát."
+        },
+        {
+          "type": "text",
+          "text": "Starožitník musí umět **zdůvodnit cenu**. Zákazník chce vědět, proč mu za věc nabízíš právě tolik, a kupec, proč za ni má tolik zaplatit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tržní cena",
+          "definition": "Cena, za kterou se předmět **v dané době skutečně prodává** mezi kupujícím a prodávajícím, kteří jednají dobrovolně a znají předmět.",
+          "example": "Podobné komody se letos na aukcích prodaly za 30–40 tisíc Kč."
+        },
+        {
+          "type": "term",
+          "term": "Faktor hodnoty",
+          "definition": "Vlastnost nebo okolnost, která cenu **zvyšuje nebo snižuje**.",
+          "example": "Původní kování cenu zvyšuje, nové úchytky ji snižují."
+        },
+        {
+          "type": "term",
+          "term": "Původnost",
+          "definition": "Kolik z předmětu je z doby jeho vzniku – bez výměn, doplňků a přemaleb.",
+          "example": "Komoda s původní povrchovou úpravou a kováním je „velmi původní“."
+        },
+        {
+          "type": "term",
+          "term": "Provenience",
+          "definition": "Doložený původ předmětu – kdo ho kdy vlastnil.",
+          "example": "Komoda ze známé zámecké sbírky."
+        },
+        {
+          "type": "heading",
+          "text": "Faktory hodnoty"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Autor, dílna, výrobce** – signovaný kus známé dílny je dražší.",
+            "**Kvalita** – materiál a řemeslné či umělecké provedení.",
+            "**Stáří a sloh** – ceněná období a typické znaky.",
+            "**Stav a původnost** – poškození, opravy, výměny dílů.",
+            "**Vzácnost** – kolik podobných kusů je na trhu.",
+            "**Provenience** – doložený zajímavý původ.",
+            "**Móda a poptávka** – co lidé právě chtějí; mění se v čase."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď okolnosti podle toho, jak působí na cenu."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "cenu zvyšuje",
+              "cenu snižuje"
+            ],
+            "items": [
+              {
+                "text": "signatura známé dílny",
+                "group": 0
+              },
+              {
+                "text": "nové úchytky místo původních",
+                "group": 1
+              },
+              {
+                "text": "doložená zámecká provenience",
+                "group": 0
+              },
+              {
+                "text": "přemalba původního povrchu",
+                "group": 1
+              },
+              {
+                "text": "vzácný typ, málo kusů na trhu",
+                "group": 0
+              },
+              {
+                "text": "aktivní červotoč",
+                "group": 1
+              },
+              {
+                "text": "ořechová dýha vysoké kvality",
+                "group": 0
+              },
+              {
+                "text": "chybějící zásuvka",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Proč bude ořechová komoda s původním kováním dražší než smrková přebarvená?",
+          "answer": "Vyhrává v několika faktorech: **kvalita materiálu** (ořech), **původnost** (kování, povrch) a **stav**. Smrková přebarvená ztrácí na původnosti i kvalitě."
+        },
+        {
+          "type": "example",
+          "question": "Před deseti lety se tmavý selský nábytek prodával dobře, dnes je o něj menší zájem. Co to znamená pro cenu?",
+          "answer": "Projevuje se faktor **móda a poptávka**. I když se předmět nezměnil, jeho **tržní cena klesla**. Ceny proto vždy porovnávej s aktuálními prodeji."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Cenu určím podle toho, kolik předmět stál před lety v katalogu.",
+          "right": "Cenu odvoď z **aktuálních** prodejů srovnatelných předmětů.",
+          "why": "Tržní cena se mění s poptávkou. Staré údaje mohou být výrazně vyšší i nižší."
+        },
+        {
+          "type": "summary",
+          "text": "Tržní cena je cena, za kterou se předmět dnes skutečně prodává. Určují ji autor, kvalita, stáří, stav a původnost, vzácnost, provenience a poptávka."
+        }
+      ]
+    },
+    {
+      "title": "Od ceny k nabídce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jedno slovo „cena“ může znamenat různé věci. Pojišťovna chce znát jinou částku než kupec v obchodě a jinou než soud. Starožitník musí vědět, **kterou cenu** po něm kdo chce a jak k ní dojít."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tržní cena",
+          "definition": "Cena, za kterou se předmět v dané době obvykle prodává.",
+          "example": "Srovnatelné hodiny se letos prodaly za 18–22 tisíc Kč."
+        },
+        {
+          "type": "term",
+          "term": "Pojistná cena",
+          "definition": "Částka, za kterou by se dal pořídit **náhradní** srovnatelný předmět. Bývá vyšší než výkupní cena.",
+          "example": "Obraz pojištěný na cenu, za kterou by se dal koupit podobný v galerii."
+        },
+        {
+          "type": "term",
+          "term": "Výkupní cena",
+          "definition": "Cena, za kterou obchodník předmět **koupí** od prodávajícího. Je nižší než prodejní, protože obchodník nese náklady a riziko.",
+          "example": "Starožitník nabídne za hodiny 11 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Znalecký posudek",
+          "definition": "Odborné ocenění, které vypracuje **soudní znalec** zapsaný v seznamu znalců. Používá se u soudu, v dědictví nebo pro úřady.",
+          "example": "Posudek ceny sbírky pro dědické řízení."
+        },
+        {
+          "type": "term",
+          "term": "Marže",
+          "definition": "Rozdíl mezi prodejní a výkupní cenou. Musí pokrýt náklady obchodu (nájem, opravy, mzdy) a zisk.",
+          "example": "Koupeno za 10 000 Kč, prodáno za 15 000 Kč → marže 5 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Postup ocenění"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Předmět přesně **urči**: co to je, z čeho, odkud a kdy.",
+            "Popiš **stav a původnost** včetně oprav.",
+            "Najdi **srovnatelné prodeje** – aukční výsledky, nabídky obchodů.",
+            "Uprav odhad podle rozdílů (lepší / horší stav, autor, provenience).",
+            "Stanov **účel ceny**: prodejní, výkupní, pojistná.",
+            "Cenu i zdůvodnění zapiš."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "situace",
+            "jaká cena",
+            "kdo ji určí"
+          ],
+          "rows": [
+            [
+              "prodej v obchodě",
+              "prodejní (tržní) cena",
+              "obchodník"
+            ],
+            [
+              "nákup od klienta",
+              "výkupní cena",
+              "obchodník"
+            ],
+            [
+              "pojištění sbírky",
+              "pojistná cena",
+              "odhadce, pojišťovna"
+            ],
+            [
+              "dědictví, soud",
+              "cena podle znaleckého posudku",
+              "soudní znalec"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Srovnatelné hodiny se letos vydražily za 18 000, 20 000 a 22 000 Kč. Tvoje mají vyměněné ručičky. Jakou prodejní cenu zvolíš?",
+          "answer": "Průměr srovnání je **20 000 Kč**. Vyměněné ručičky snižují původnost, proto cenu posuneš **pod průměr**, např. k 17–18 tisícům Kč. Čísla jsou jen příklad postupu."
+        },
+        {
+          "type": "example",
+          "question": "Chceš hodiny prodávat za 18 000 Kč a potřebuješ marži aspoň 6 000 Kč. Jakou nejvyšší výkupní cenu nabídneš?",
+          "answer": "Výkupní cena = prodejní cena − marže = 18 000 − 6 000 = **12 000 Kč**. (Čísla jsou příklad; skutečná marže závisí na nákladech obchodu.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pojistná cena, výkupní cena a tržní cena jsou totéž.",
+          "right": "Každá slouží k jinému účelu: výkupní je nejnižší, pojistná počítá s pořízením náhrady.",
+          "why": "Když zaměníš účel, klient dostane zavádějící údaj – například pojistí předmět na výkupní cenu a při škodě nedostane dost."
+        },
+        {
+          "type": "summary",
+          "text": "Ocenění: urči předmět, popiš stav, najdi srovnatelné prodeje, uprav odhad a stanov účel ceny. Výkupní cena = prodejní cena − marže; pojistná a znalecká cena slouží jiným účelům."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je tržní cena?",
+      "options": [
+        "cena, za kterou se předmět v dané době skutečně prodává",
+        "cena, kterou předmět stál při výrobě",
+        "cena podle stáří v letech",
+        "cena stanovená ministerstvem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Výměna původních dílů obvykle snižuje cenu starožitnosti.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh ceny s účelem.",
+      "pairs": [
+        [
+          "výkupní cena",
+          "nákup od klienta"
+        ],
+        [
+          "pojistná cena",
+          "pořízení náhradního předmětu"
+        ],
+        [
+          "znalecký posudek",
+          "soud a dědictví"
+        ],
+        [
+          "prodejní cena",
+          "prodej v obchodě"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Prodejní cena 25 000 Kč, požadovaná marže 8 000 Kč. Jaká je nejvyšší výkupní cena v Kč?",
+      "answers": [
+        "17000",
+        "17 000"
+      ],
+      "hints": [
+        "Marže je rozdíl mezi prodejní a výkupní cenou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který faktor hodnoty se mění s módou a v čase?",
+      "options": [
+        "poptávka",
+        "materiál",
+        "autor",
+        "stáří v době vzniku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky ocenění.",
+      "items": [
+        "urči předmět",
+        "popiš stav a původnost",
+        "najdi srovnatelné prodeje",
+        "uprav odhad podle rozdílů",
+        "stanov účel ceny a zapiš ho"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Znalecký posudek může vypracovat kdokoli, kdo se starožitnostmi obchoduje.",
+      "answer": false,
+      "explanation": "Vypracovává ho soudní znalec zapsaný v seznamu znalců."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „původnost“ předmětu?",
+      "options": [
+        "kolik z něj je z doby vzniku bez výměn a přemaleb",
+        "kdo ho vlastnil",
+        "v jaké zemi vznikl",
+        "jak je vzácný"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Srovnatelné předměty se prodaly za 12 000, 14 000 a 16 000 Kč. Jaký je průměr v Kč?",
+      "answers": [
+        "14000",
+        "14 000"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč je výkupní cena nižší než prodejní?",
+      "options": [
+        "Obchodník nese náklady a riziko a potřebuje marži.",
+        "Zákon zakazuje vykupovat za tržní cenu.",
+        "Prodávající si to vždy přeje.",
+        "Kvůli puncovnímu poplatku."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro ocenění je nejlepší vycházet z aktuálních prodejů srovnatelných předmětů.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Klient chce pojistit sbírku. Kterou cenu potřebuje?",
+      "options": [
+        "pojistnou",
+        "výkupní",
+        "vyvolávací",
+        "šrotovou"
+      ],
+      "answer": 0,
+      "hints": [
+        "Pojištění má po škodě umožnit pořídit si co?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj faktory, které ovlivňují cenu starožitnosti.",
+      "answer": "Autor nebo dílna, kvalita materiálu a provedení, stáří a sloh, stav a původnost, vzácnost, provenience a aktuální móda a poptávka."
+    },
+    {
+      "type": "open",
+      "question": "Jak klientovi vysvětlíš, proč je tvoje výkupní nabídka nižší než cena v tvém obchodě?",
+      "answer": "Prodejní cena musí pokrýt náklady obchodu – nájem, opravy, mzdy, daně – a riziko, že se předmět dlouho neprodá. Rozdíl mezi prodejní a výkupní cenou je marže, ze které obchod žije."
+    }
+  ]
+}

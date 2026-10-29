@@ -1,0 +1,381 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "aukce",
+  "title": "Aukce a aukční síně",
+  "emoji": "🔨",
+  "explanations": [
+    {
+      "title": "Jeden aukční večer",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Sál je plný lidí s čísly v rukou. Na pódiu stojí licitátor, vedle obrazovka s fotkou obrazu. „Vyvolávací cena 40 000 Kč… kdo dá 42?“ Ruce se zvedají, cena roste – a pak zazní úder kladívka."
+        },
+        {
+          "type": "text",
+          "text": "Aukce jsou pro starožitníky místo, kde **nakupují**, **prodávají** a hlavně kde zjišťují, kolik věci **opravdu stojí**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aukce",
+          "definition": "Veřejný prodej, při kterém zájemci **přihazují** a předmět získá ten, kdo nabídne nejvíc.",
+          "example": "Aukce obrazů a starožitností v aukční síni."
+        },
+        {
+          "type": "term",
+          "term": "Aukční síň",
+          "definition": "Firma, která aukce pořádá: přebírá předměty od prodávajících, vydává katalog a vede aukci.",
+          "example": "Pražská aukční síň s pravidelnými aukcemi umění."
+        },
+        {
+          "type": "term",
+          "term": "Položka (lot)",
+          "definition": "Jeden předmět nebo soubor, který se v aukci prodává najednou pod jedním číslem.",
+          "example": "Položka č. 125: pár svícnů."
+        },
+        {
+          "type": "term",
+          "term": "Licitátor",
+          "definition": "Člověk, který aukci vede: oznamuje ceny, přijímá příhozy a kladívkem prodej uzavírá.",
+          "example": "„Poprvé, podruhé, potřetí – prodáno!“"
+        },
+        {
+          "type": "term",
+          "term": "Vyvolávací cena",
+          "definition": "Cena, kterou aukce položky **začíná**.",
+          "example": "Obraz s vyvolávací cenou 40 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Příhoz",
+          "definition": "Zvýšení nabídky o určitý krok.",
+          "example": "Při ceně kolem 40 000 Kč se přihazuje po 2 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Příklep",
+          "definition": "Úder kladívka, kterým licitátor potvrdí nejvyšší nabídku. Tím je položka prodána. Částka je **cena dosažená příklepem**.",
+          "example": "Příklep při 56 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Aukční přirážka (buyer's premium)",
+          "definition": "Poplatek, který kupující platí aukční síni **navíc** k ceně příklepu. Udává se v procentech a každá síň ji má v aukčním řádu.",
+          "example": "Při přirážce 20 % zaplatí kupec k příklepu 56 000 Kč ještě 11 200 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Průběh aukce"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Prodávající (komitent) předá předměty aukční síni a dohodne podmínky.",
+            "Síň předměty popíše, nafotí a vydá **katalog** s vyvolávacími cenami.",
+            "Před aukcí je **výstava** – zájemci si předměty prohlédnou.",
+            "Zájemci se **registrují** a dostanou číslo; jde přihazovat i písemně, telefonicky nebo online.",
+            "Licitátor vyvolává položky, přijímá příhozy a dá **příklep**.",
+            "Kupec zaplatí cenu příklepu + aukční přirážku a převezme předmět."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Spočítej si přirážku"
+        },
+        {
+          "type": "text",
+          "text": "Posuň posuvník a sleduj, kolik zaplatí kupec navíc z příklepu 50 000 Kč při různé přirážce."
+        },
+        {
+          "type": "widget",
+          "widget": "percent",
+          "props": {
+            "percent": 20,
+            "of": 50000
+          }
+        },
+        {
+          "type": "example",
+          "question": "Příklep 50 000 Kč, aukční přirážka 20 %. Kolik kupec zaplatí celkem? (procenta jsou příklad, každá síň má svou sazbu)",
+          "answer": "Přirážka: 50 000 × 0,20 = 10 000 Kč. Celkem: 50 000 + 10 000 = **60 000 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Máš na obraz limit 60 000 Kč **včetně** přirážky 20 %. Do kolika smíš přihazovat?",
+          "answer": "Celková cena = příklep × 1,2. Příklep = 60 000 ÷ 1,2 = **50 000 Kč**. Výš přihazovat nesmíš."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mám 60 000 Kč, tak přihazuji až do 60 000 Kč.",
+          "right": "Ke ceně příklepu se připočítá aukční přirážka. Limit příhozu musí být nižší.",
+          "why": "Kupec platí příklep + přirážku. Kdo na ni zapomene, přeplatí svůj rozpočet."
+        },
+        {
+          "type": "summary",
+          "text": "Aukce: katalog → výstava → registrace → příhozy → příklep. Kupec platí cenu příklepu plus aukční přirážku v procentech podle aukčního řádu síně."
+        }
+      ]
+    },
+    {
+      "title": "Dvě strany stolu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Starožitník může být v aukci **prodávající** (posílá do aukce své zboží) i **kupující** (doplňuje sklad). Na každé straně platí jiná pravidla, poplatky a rizika."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aukce",
+          "definition": "Veřejný prodej s přihazováním, kde vyhrává nejvyšší nabídka.",
+          "example": "Aukce starožitností v sále i online."
+        },
+        {
+          "type": "term",
+          "term": "Komitent",
+          "definition": "Ten, kdo předmět do aukce **dává k prodeji** (prodávající).",
+          "example": "Rodina, která do aukce posílá sbírku po dědečkovi."
+        },
+        {
+          "type": "term",
+          "term": "Provize prodávajícího",
+          "definition": "Poplatek, který si aukční síň strhne **prodávajícímu** z ceny příklepu.",
+          "example": "Při provizi 15 % dostane komitent z příklepu 10 000 Kč 8 500 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Limit (minimální cena)",
+          "definition": "Neveřejná nejnižší cena, pod kterou komitent předmět prodat nechce.",
+          "example": "Komitent má limit 30 000 Kč; nabídka 28 000 Kč nestačí."
+        },
+        {
+          "type": "term",
+          "term": "Aukční řád",
+          "definition": "Pravidla aukční síně: přirážky, provize, platby, převzetí, reklamace. Před aukcí si ho přečti.",
+          "example": "Řád stanoví, do kdy se platí a jaká je přirážka."
+        },
+        {
+          "type": "term",
+          "term": "Aukční přirážka",
+          "definition": "Poplatek kupujícího k ceně příklepu v procentech.",
+          "example": "Příklep 10 000 Kč + 20 % = 12 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Peníze na obou stranách"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "prodávající (komitent)",
+            "kupující"
+          ],
+          "rows": [
+            [
+              "platí",
+              "provizi z příklepu (případně další poplatky)",
+              "příklep + aukční přirážku"
+            ],
+            [
+              "chrání ho",
+              "limit (minimální cena)",
+              "vlastní limit příhozu, prohlídka na výstavě"
+            ],
+            [
+              "riziko",
+              "předmět se neprodá",
+              "přeplatí, koupí vadný kus"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Příklep 10 000 Kč. Provize prodávajícího 15 %, přirážka kupujícího 20 %. Kolik dostane komitent, kolik zaplatí kupec a kolik získá síň? (sazby jsou příklad)",
+          "answer": "Komitent: 10 000 − 1 500 = **8 500 Kč**. Kupec: 10 000 + 2 000 = **12 000 Kč**. Síň: 1 500 + 2 000 = **3 500 Kč**."
+        },
+        {
+          "type": "heading",
+          "text": "Rady pro kupujícího"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Přečti si **aukční řád** (přirážka, platba, převzetí).",
+            "Předmět si prohlédni na **výstavě**; popis v katalogu nemusí uvést vše.",
+            "Zjisti, za kolik se podobné kusy prodaly.",
+            "Stanov si **limit včetně přirážky** a dodrž ho.",
+            "Pamatuj, že **příklep je závazný** – musíš zaplatit."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Komitent chce za vázu dostat „na ruku“ aspoň 17 000 Kč. Provize je 15 %. Jaký musí být nejnižší příklep?",
+          "answer": "Komitent dostane 85 % příklepu. Příklep = 17 000 ÷ 0,85 = **20 000 Kč**. Takový limit by měl se síní dohodnout."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vyvolávací cena je cena, za kterou se předmět prodá.",
+          "right": "Vyvolávací cena je **začátek** aukce. Konečnou cenu určí příhozy a příklep.",
+          "why": "Vyvolávací cena bývá nízko, aby přilákala zájemce. Výsledná cena může být mnohem vyšší – nebo se předmět neprodá vůbec."
+        },
+        {
+          "type": "summary",
+          "text": "Prodávající platí síni provizi z příklepu a chrání se limitem. Kupující platí příklep plus přirážku, předmět si prohlíží předem a příklep je pro něj závazný."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je vyvolávací cena?",
+      "options": [
+        "cena, kterou aukce položky začíná",
+        "konečná cena po příklepu",
+        "poplatek kupujícího",
+        "provize prodávajícího"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Příklep 30 000 Kč, aukční přirážka 20 %. Kolik Kč zaplatí kupec celkem?",
+      "answers": [
+        "36000",
+        "36 000"
+      ],
+      "hints": [
+        "Nejdřív spočítej 20 % z příklepu.",
+        "Přirážku přičti k ceně příklepu."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "licitátor",
+          "vede aukci"
+        ],
+        [
+          "komitent",
+          "dává předmět k prodeji"
+        ],
+        [
+          "příklep",
+          "potvrzení nejvyšší nabídky"
+        ],
+        [
+          "limit",
+          "nejnižší cena komitenta"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď průběh aukce.",
+      "items": [
+        "komitent předá předměty síni",
+        "síň vydá katalog",
+        "předaukční výstava",
+        "registrace zájemců",
+        "příhozy a příklep",
+        "platba a převzetí"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Aukční přirážku platí kupující navíc k ceně příklepu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kdo platí provizi z ceny příklepu?",
+      "options": [
+        "prodávající (komitent)",
+        "licitátor",
+        "stát",
+        "kupující"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Máš limit 48 000 Kč včetně přirážky 20 %. Do jaké ceny příklepu v Kč smíš přihazovat?",
+      "answers": [
+        "40000",
+        "40 000"
+      ],
+      "hints": [
+        "Celková cena je příklep × 1,2."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Příklep je pro kupujícího závazný.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kde zjistíš, jaká je přirážka a do kdy musíš zaplatit?",
+      "options": [
+        "v aukčním řádu síně",
+        "v puncovním zákoně",
+        "v katastru",
+        "u licitátora po aukci"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Příklep 20 000 Kč, provize prodávajícího 15 %. Kolik Kč dostane komitent?",
+      "answers": [
+        "17000",
+        "17 000"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč si kupec má předmět prohlédnout na předaukční výstavě?",
+      "options": [
+        "Popis v katalogu nemusí ukázat všechna poškození.",
+        "Bez prohlídky nesmí přihazovat.",
+        "Aby mohl snížit vyvolávací cenu.",
+        "Aby se stal komitentem."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pokud nabídky nedosáhnou limitu komitenta, předmět se neprodá.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Popiš průběh aukce od převzetí předmětu po jeho předání kupci.",
+      "answer": "Komitent předá předmět síni, síň ho popíše a zařadí do katalogu s vyvolávací cenou. Na předaukční výstavě si ho zájemci prohlédnou, zaregistrují se a v aukci přihazují; licitátor dá příklep nejvyšší nabídce. Kupec zaplatí příklep a aukční přirážku a předmět převezme."
+    },
+    {
+      "type": "open",
+      "question": "Proč si kupující musí limit stanovit i s ohledem na aukční přirážku?",
+      "answer": "Ke ceně příklepu se připočítává přirážka v procentech, takže celková platba je vyšší než příklep. Kdo ji nezapočítá, překročí svůj rozpočet."
+    }
+  ]
+}

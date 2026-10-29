@@ -1,0 +1,362 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "etika-klient",
+  "title": "Etika a jednání s klientem",
+  "emoji": "🤝",
+  "explanations": [
+    {
+      "title": "Babiččina váza",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Starší paní přinese vázu po mamince. Chce za ni „aspoň 500 korun“. Ty vidíš, že jde o secesní vázu známé sklárny, která se v aukcích prodává za desítky tisíc. Zákon ti nezakazuje ji koupit levně. Ale je to správné?"
+        },
+        {
+          "type": "text",
+          "text": "Starožitnický obchod stojí na **důvěře**. Zákazník často nerozumí tomu, co prodává nebo kupuje, a spoléhá na tebe. Jak se zachováš, rozhodne o tvém jménu na roky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Etika",
+          "definition": "Pravidla správného jednání – co je poctivé a férové, i když to žádný zákon přímo nepřikazuje.",
+          "example": "Upozornit klienta, že jeho věc má vyšší hodnotu, než si myslí."
+        },
+        {
+          "type": "term",
+          "term": "Střet zájmů",
+          "definition": "Situace, kdy máš **dvě role**, které jdou proti sobě: třeba věc odhaduješ a zároveň ji chceš levně koupit.",
+          "example": "Starožitník oceňuje dědictví a sám ho hned vykupuje."
+        },
+        {
+          "type": "term",
+          "term": "Hrubý nepoměr",
+          "definition": "Když je cena v hrubém nepoměru k hodnotě věci. **Občanský zákoník** (§ 1793) umožňuje zkrácené straně za určitých podmínek domáhat se zrušení smlouvy, pokud druhá strana rozdíl nedoplní.",
+          "example": "Vykoupení cenné vázy za zlomek obvyklé ceny může být napadeno."
+        },
+        {
+          "type": "term",
+          "term": "Diskrétnost",
+          "definition": "Mlčenlivost o klientech, jejich majetku a obchodech. Osobní údaje navíc chrání zákon (GDPR).",
+          "example": "Nikomu neříkáš, kdo ti prodal sbírku obrazů."
+        },
+        {
+          "type": "heading",
+          "text": "Zásady poctivého starožitníka"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Pravdivý popis**: stáří, materiál, autor, opravy a poškození. Co nevíš jistě, označ jako odhad („pravděpodobně“, „připisováno“).",
+            "**Férová cena**: nevyužívat neznalost klienta.",
+            "**Otevřenost při střetu zájmů**: řekni, že věc chceš koupit, nebo odhad nech udělat jiného.",
+            "**Nekupovat věci pochybného původu**.",
+            "**Diskrétnost** a ochrana osobních údajů.",
+            "**Dodržovat sliby**: lhůty, rezervace, garance."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "poctivé",
+              "nepoctivé"
+            ],
+            "items": [
+              {
+                "text": "uvést v popisu lepenou prasklinu",
+                "group": 0
+              },
+              {
+                "text": "označit nesignovaný obraz jako dílo slavného malíře",
+                "group": 1
+              },
+              {
+                "text": "říct klientovi, že vázu chceš sám koupit",
+                "group": 0
+              },
+              {
+                "text": "nabídnout 500 Kč za vázu za 30 000 Kč a mlčet",
+                "group": 1
+              },
+              {
+                "text": "napsat „připisováno“, když autorem nejsi jistý",
+                "group": 0
+              },
+              {
+                "text": "vyprávět sousedům, kdo ti prodal sbírku",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Co uděláš s vázou za „aspoň 500 korun“?",
+          "answer": "Řekni paní, že váza má **vyšší hodnotu**, a nabídni **férovou výkupní cenu** (tržní cena mínus přiměřená marže). Případně jí nabídni prodej v komisi nebo aukci. Získáš spokojenou klientku, která se vrátí a doporučí tě."
+        },
+        {
+          "type": "example",
+          "question": "Dědicové tě požádají o odhad pozůstalosti a zároveň se ptají, jestli ji koupíš. Jak postupuješ?",
+          "answer": "Jde o **střet zájmů**. Řekni otevřeně, že máš zájem o koupi, a doporuč, aby si cenu nechali ověřit nezávisle (jiný odhadce, aukční síň). Odhad a nabídku od sebe jasně odděl."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Co zákon nezakazuje, je v obchodě v pořádku.",
+          "right": "Etika jde dál než zákon: poctivý popis, férová cena a otevřenost budují důvěru.",
+          "why": "Obchod se starožitnostmi stojí na pověsti. Jediný nepoctivý obchod může zničit jméno, které se budovalo léta."
+        },
+        {
+          "type": "summary",
+          "text": "Poctivý starožitník pravdivě popisuje, nabízí férovou cenu, otevřeně přizná střet zájmů, nekupuje věci pochybného původu a je diskrétní. Etika jde dál než zákon."
+        }
+      ]
+    },
+    {
+      "title": "Rozhovor s klientem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klient do obchodu nepřichází jen prodat nebo koupit. Často nese **vzpomínky**: věci po rodičích, dědictví, sbírku celého života. Dobrý starožitník umí věcně ocenit předmět a zároveň citlivě jednat s člověkem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Etika",
+          "definition": "Pravidla poctivého a férového jednání, která platí i tam, kde zákon nic nepřikazuje.",
+          "example": "Nevyužít, že klient nezná cenu své věci."
+        },
+        {
+          "type": "term",
+          "term": "Aktivní naslouchání",
+          "definition": "Pozorné poslouchání, při kterém dáváš najevo, že vnímáš: díváš se na klienta, doptáš se, shrneš, co řekl.",
+          "example": "„Rozumím, je to váza po vaší mamince a chcete, aby se o ni někdo dobře postaral.“"
+        },
+        {
+          "type": "term",
+          "term": "Komise (komisní prodej)",
+          "definition": "Obchodník věc **nekupuje**, ale prodává ji za klienta. Po prodeji mu vyplatí cenu bez dohodnuté provize.",
+          "example": "Obraz visí v obchodě s cenou 20 000 Kč, klient dostane po prodeji dohodnutou částku."
+        },
+        {
+          "type": "term",
+          "term": "Střet zájmů",
+          "definition": "Dvě role, které jdou proti sobě, např. odhadce a kupec zároveň.",
+          "example": "Odhaduješ sbírku, kterou chceš koupit."
+        },
+        {
+          "type": "heading",
+          "text": "Průběh dobrého rozhovoru"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Přivítej** klienta a vyslechni, co přináší a co si přeje (prodat, ocenit, koupit).",
+            "**Prohlédni** předmět v jeho přítomnosti a nahlas popiš, co vidíš.",
+            "**Vysvětli** hodnotu: co ji zvyšuje a co snižuje.",
+            "**Nabídni možnosti**: výkup, komisní prodej, aukce, ponechání si.",
+            "**Dohodni podmínky** písemně (cena, provize, lhůty).",
+            "Klientovi nech **čas na rozmyšlenou**, netlač."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Možnosti pro klienta"
+        },
+        {
+          "type": "table",
+          "head": [
+            "možnost",
+            "výhoda pro klienta",
+            "nevýhoda"
+          ],
+          "rows": [
+            [
+              "výkup",
+              "peníze hned",
+              "nižší cena (obchodník nese riziko)"
+            ],
+            [
+              "komisní prodej",
+              "vyšší cena",
+              "čeká, až se věc prodá"
+            ],
+            [
+              "aukce",
+              "cena podle trhu, šance na vysoký výsledek",
+              "provize, nejistý výsledek, čekání na termín"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka je rozrušená, prodává věci po zemřelém manželovi a chce „všechno hned pryč“. Jak jednáš?",
+          "answer": "Projev pochopení, nepospíchej a **nevyužij** její situace. Navrhni, ať si nechá čas, případně zvolí komisní prodej. Dohodu dej písemně a vysvětli ji srozumitelně."
+        },
+        {
+          "type": "example",
+          "question": "Kupec se ptá, jestli je komoda „úplně původní“. Víš, že má vyměněnou zadní stěnu. Co odpovíš?",
+          "answer": "Pravdu: „Komoda je z doby kolem 1830, zadní stěna je **vyměněná** při pozdější opravě.“ Uveď to i v popisu a na dokladu. Zatajení vady by bylo nepoctivé a kupec by mohl uplatnit práva z vadného plnění."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Klienta tlačím k rychlému rozhodnutí, ať mi obchod neuteče.",
+          "right": "Vysvětli možnosti a nech klientovi čas na rozmyšlenou.",
+          "why": "Nátlak ničí důvěru. Spokojený klient se vrací a doporučuje tě dál."
+        },
+        {
+          "type": "summary",
+          "text": "Dobrý rozhovor: vyslechnout, prohlédnout v přítomnosti klienta, vysvětlit hodnotu, nabídnout možnosti (výkup, komise, aukce), dohodnout podmínky písemně a netlačit."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je střet zájmů u starožitníka?",
+      "options": [
+        "Odhaduje věc a zároveň ji chce koupit.",
+        "Prodává dvě věci najednou.",
+        "Má dva obchody.",
+        "Klient nesouhlasí s cenou."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Co zákon nezakazuje, je vždy eticky v pořádku.",
+      "answer": false
+    },
+    {
+      "type": "choice",
+      "question": "Jak poctivě popíšeš obraz, u kterého si nejsi jistý autorem?",
+      "options": [
+        "„připisováno“ autorovi",
+        "jako jisté dílo autora",
+        "vymyslíš signaturu",
+        "autora vůbec nezmíníš, i když tušíš"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj možnost prodeje s výhodou pro klienta.",
+      "pairs": [
+        [
+          "výkup",
+          "peníze hned"
+        ],
+        [
+          "komisní prodej",
+          "vyšší cena"
+        ],
+        [
+          "aukce",
+          "cena podle trhu"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Opravy a vyměněné díly je třeba kupujícímu přiznat.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá prodej, při kterém obchodník věc nekupuje, ale prodává ji za klienta? (jedno slovo)",
+      "answers": [
+        "komise",
+        "komisní",
+        "komisní prodej"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co uděláš, když klientka nabízí vzácnou vázu za zlomek ceny?",
+      "options": [
+        "upozorníš ji na hodnotu a nabídneš férovou cenu",
+        "rychle ji koupíš",
+        "nabídneš ještě méně",
+        "odmítneš s ní mluvit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky rozhovoru s klientem.",
+      "items": [
+        "přivítej a vyslechni",
+        "prohlédni předmět v jeho přítomnosti",
+        "vysvětli hodnotu",
+        "nabídni možnosti",
+        "dohodni podmínky písemně"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Diskrétnost znamená, že nikomu neříkáš, kdo ti co prodal.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Který paragraf občanského zákoníku upravuje hrubý nepoměr plnění (neúměrné zkrácení)?",
+      "options": [
+        "§ 1793",
+        "§ 31",
+        "§ 13",
+        "§ 209"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jde o občanský zákoník, ne o živnostenský nebo památkový zákon."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klient je rozrušený a chce prodat vše hned. Co je správné?",
+      "options": [
+        "nepospíchat, nabídnout čas a možnosti",
+        "využít situace a koupit levně",
+        "odmítnout ho",
+        "nic nevysvětlovat"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Při střetu zájmů je vhodné klientovi doporučit nezávislé ocenění.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Jaké zásady by měl dodržovat poctivý starožitník?",
+      "answer": "Pravdivě popisovat stáří, autora, opravy a poškození, nabízet férovou cenu a nevyužívat neznalost klienta, otevřeně přiznat střet zájmů, nekupovat věci pochybného původu a být diskrétní."
+    },
+    {
+      "type": "open",
+      "question": "Jak se zachováš, když tě dědicové požádají o odhad a zároveň o výkup pozůstalosti?",
+      "answer": "Řeknu otevřeně, že mám zájem o koupi, takže jsem ve střetu zájmů. Doporučím jim nezávislé ocenění, například jiným odhadcem nebo aukční síní, a odhad i nabídku jasně oddělím."
+    }
+  ]
+}

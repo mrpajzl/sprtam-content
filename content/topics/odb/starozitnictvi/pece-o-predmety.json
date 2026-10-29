@@ -1,0 +1,403 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pece-o-predmety",
+  "title": "Péče o předměty v obchodě a skladu",
+  "emoji": "🧤",
+  "explanations": [
+    {
+      "title": "Nepřátelé starožitností",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Starožitnost přežila sto let u jedné rodiny. Pak může za pár měsíců ve špatném skladu popraskat, vyblednout nebo zplesnivět. Za škodu na předmětu, který máš v obchodě, odpovídáš ty."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá péče je levná: stačí znát hlavní **nepřátele** předmětů a hlídat je."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Preventivní péče",
+          "definition": "Všechno, co děláme, aby se předmět **vůbec nepoškodil**: správné prostředí, uložení a zacházení.",
+          "example": "Zatažené závěsy proti slunci na akvarely."
+        },
+        {
+          "type": "term",
+          "term": "Relativní vlhkost (RV)",
+          "definition": "Kolik vodní páry je ve vzduchu v procentech toho, kolik by se při dané teplotě vešlo. Měří se **vlhkoměrem (hygrometrem)**.",
+          "example": "RV 50 % je pro většinu předmětů vhodná."
+        },
+        {
+          "type": "term",
+          "term": "Lux",
+          "definition": "Jednotka osvětlení – jak moc světla dopadá na plochu. Měří se luxmetrem.",
+          "example": "Jasný slunný den venku má desítky tisíc luxů, pokoj s lampou stovky."
+        },
+        {
+          "type": "term",
+          "term": "Škůdci",
+          "definition": "Živočichové a plísně, kteří předměty žerou nebo rozkládají.",
+          "example": "Červotoč v dřevě, moli ve vlně, plísně na papíře."
+        },
+        {
+          "type": "heading",
+          "text": "Pět nepřátel"
+        },
+        {
+          "type": "table",
+          "head": [
+            "nepřítel",
+            "co způsobí",
+            "jak se bránit"
+          ],
+          "rows": [
+            [
+              "kolísání vlhkosti a teploty",
+              "praskání dřeva a dýh, odlupování barvy",
+              "stálé prostředí, hlídat vlhkoměr"
+            ],
+            [
+              "vysoká vlhkost",
+              "plísně, koroze kovů",
+              "nepoužívat sklepy, větrat, odvlhčovač"
+            ],
+            [
+              "světlo a UV záření",
+              "blednutí barev, žloutnutí papíru a textilu",
+              "žádné přímé slunce, UV filtry, slabší osvětlení"
+            ],
+            [
+              "škůdci",
+              "chodbičky v dřevě, díry v textilu",
+              "kontrola nových kusů, karanténa, čistota"
+            ],
+            [
+              "neopatrné zacházení",
+              "pády, praskliny, otisky prstů",
+              "rukavice, nosit oběma rukama, pevné podložky"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Orientační hodnoty"
+        },
+        {
+          "type": "text",
+          "text": "V muzeích se pro smíšené sbírky obvykle doporučuje **stálá** relativní vlhkost kolem **45–55 %** a teplota kolem **18–22 °C**. Nad asi 65 % RV hrozí plísně. Velmi citlivé věci (papír, akvarely, textil) se osvětlují jen slabě, kolem **50 lux**. Jsou to orientační hodnoty; nejdůležitější je **bez prudkých výkyvů**."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vhodné",
+              "nevhodné"
+            ],
+            "items": [
+              {
+                "text": "akvarel ve výloze na jižním slunci",
+                "group": 1
+              },
+              {
+                "text": "skříň v suchém vytápěném skladu",
+                "group": 0
+              },
+              {
+                "text": "textilie ve vlhkém sklepě",
+                "group": 1
+              },
+              {
+                "text": "obraz nad topením",
+                "group": 1
+              },
+              {
+                "text": "kontrola nově vykoupeného nábytku na červotoč",
+                "group": 0
+              },
+              {
+                "text": "porcelán na pevné polici se zarážkou",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vlhkoměr ve skladu ukazuje v zimě 30 % a v létě 70 %. Co hrozí a co uděláš?",
+          "answer": "Velké **kolísání**: v zimě dřevo vysychá a praská, v létě hrozí plísně. Pořiď **zvlhčovač** na zimu a **odvlhčovač** na léto a hlídej, aby se vlhkost držela co nejstáleji."
+        },
+        {
+          "type": "example",
+          "question": "Vykoupíš skříň, ze které se sype jemný světlý prášek (drtinka). Co uděláš?",
+          "answer": "Jemná drtinka u dírek ukazuje na **aktivního červotoče**. Skříň dej do **karantény** odděleně od ostatního nábytku a nech ji ošetřit (např. restaurátorem). Jinak se škůdce rozšíří."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Obraz pověsím nad topení, tam je hezky teplo a sucho.",
+          "right": "Obrazy a nábytek patří dál od topení, kamen a oken.",
+          "why": "Teplý suchý proud vzduchu vysuší dřevo a plátno – vznikají praskliny a barva se odlupuje."
+        },
+        {
+          "type": "summary",
+          "text": "Nepřátelé předmětů: kolísání vlhkosti a teploty, vlhko, světlo, škůdci a neopatrnost. Pomáhá stálé prostředí (orientačně RV 45–55 %, 18–22 °C), slabé světlo, karanténa nových kusů a opatrné zacházení."
+        }
+      ]
+    },
+    {
+      "title": "Den ve skladu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Péče o předměty není jednorázová akce. Je to **každodenní rutina**: jak předmět přijmeš, jak ho neseš, kam ho uložíš a jak ho ukážeš zákazníkovi. Projdi si s námi jeden pracovní den."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Preventivní péče",
+          "definition": "Opatření, která zabrání poškození předmětu dřív, než vznikne.",
+          "example": "Vlhkoměr ve skladu, rukavice při manipulaci."
+        },
+        {
+          "type": "term",
+          "term": "Karanténa",
+          "definition": "Oddělené místo, kde nové předměty čekají, než se ověří, že nenesou škůdce ani plísně.",
+          "example": "Nově vykoupený koberec leží v karanténě odděleně od ostatních textilií."
+        },
+        {
+          "type": "term",
+          "term": "Bezkyselinový materiál",
+          "definition": "Papír, karton nebo látka bez kyselin, které by předmět časem poškodily. Používá se k balení a ukládání.",
+          "example": "Grafiky proložené bezkyselinovým papírem."
+        },
+        {
+          "type": "term",
+          "term": "Relativní vlhkost",
+          "definition": "Podíl vodní páry ve vzduchu v procentech; měří se vlhkoměrem.",
+          "example": "Ráno 48 %, odpoledne 52 % – stabilní."
+        },
+        {
+          "type": "heading",
+          "text": "Pracovní den krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Ráno**: zkontroluj vlhkoměr a teploměr, zapiš hodnoty.",
+            "**Příjem zboží**: prohlédni předmět na škůdce a plísně, nafoť stav, nový kus dej do karantény.",
+            "**Manipulace**: čisté ruce nebo rukavice, předmět nos oběma rukama za nejpevnější část, volné díly (víka, desky, sklo) zvlášť.",
+            "**Uložení**: pevné police, nic nepřečnívá, těžké dole, lehké nahoře, papír a textil v bezkyselinových obalech.",
+            "**Výloha a vystavení**: žádné přímé slunce, citlivé věci krátce a v menším světle.",
+            "**Večer**: zhasni, zavři okna, zkontroluj, že nic nestojí u topení."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Podle materiálu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "materiál",
+            "na co dát pozor"
+          ],
+          "rows": [
+            [
+              "dřevo a nábytek",
+              "kolísání vlhkosti, červotoč, nepřenášet za desku nebo opěradlo"
+            ],
+            [
+              "papír a grafika",
+              "světlo, vlhkost, kyselé obaly, nesahat holými prsty"
+            ],
+            [
+              "textil",
+              "moli, světlo, skládání do ostrých přehybů"
+            ],
+            [
+              "kovy",
+              "vlhkost, otisky prstů"
+            ],
+            [
+              "sklo a porcelán",
+              "nárazy, nosit vždy za tělo, ne za ucho"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zákazník si chce prohlédnout porcelánovou konvici a bere ji za ucho. Co uděláš?",
+          "answer": "Zdvořile ho požádej, aby ji **podržel za tělo oběma rukama** nad stolem, nebo mu ji podej na podložce. Staré ucho může být oslabené nebo lepené a mohlo by se ulomit."
+        },
+        {
+          "type": "example",
+          "question": "Máš uložit sadu grafik. Jak to uděláš?",
+          "answer": "Grafiky **vodorovně** do krabice nebo desek z **bezkyselinového kartonu**, proložené bezkyselinovým papírem. Ulož je v temnu a v suchu a ber je jen čistýma rukama nebo v rukavicích."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Stůl přenesu tak, že ho vezmu za desku a zvednu.",
+          "right": "Stůl nos za **rám (lub)** nebo nohy, ideálně ve dvou; volné desky a zásuvky vyjmi a přenášej zvlášť.",
+          "why": "Deska bývá k rámu jen přišroubovaná nebo volně usazená. Může se utrhnout a stůl spadne."
+        },
+        {
+          "type": "summary",
+          "text": "Péče je denní rutina: kontrola prostředí, karanténa nových kusů, opatrná manipulace, správné uložení podle materiálu a vystavení bez přímého slunce."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je pro většinu předmětů nejškodlivější?",
+      "options": [
+        "prudké kolísání vlhkosti a teploty",
+        "stálá pokojová teplota",
+        "temno",
+        "bezkyselinový obal"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje přístroj na měření vlhkosti vzduchu?",
+      "answers": [
+        "vlhkoměr",
+        "hygrometr"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nad asi 65 % relativní vlhkosti roste riziko plísní.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj materiál s hlavním nebezpečím.",
+      "pairs": [
+        [
+          "dřevo",
+          "červotoč a kolísání vlhkosti"
+        ],
+        [
+          "textil",
+          "moli"
+        ],
+        [
+          "papír",
+          "světlo a kyselé obaly"
+        ],
+        [
+          "porcelán",
+          "nárazy a pády"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak správně neseš porcelánovou konvici?",
+      "options": [
+        "oběma rukama za tělo",
+        "za ucho",
+        "za víčko",
+        "za hubičku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč nové kusy dáváme do karantény?",
+      "options": [
+        "aby nezanesly škůdce a plísně k ostatním",
+        "aby zákazník počkal",
+        "kvůli puncovní kontrole",
+        "aby vyschly na slunci"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Obraz je vhodné pověsit nad topení, kde je sucho.",
+      "answer": false
+    },
+    {
+      "type": "order",
+      "question": "Seřaď činnosti při příjmu předmětu.",
+      "items": [
+        "prohlédni předmět na škůdce a plísně",
+        "nafoť a zapiš stav",
+        "dej ho do karantény",
+        "po kontrole ho ulož na místo"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v muzeích osvětlují velmi citlivé předměty jako akvarely?",
+      "options": [
+        "slabě, kolem 50 lux",
+        "co nejsilněji",
+        "přímým sluncem",
+        "na tom nezáleží"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co dělá silné světlo s barvami papíru a textilu?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jemný světlý prášek u dírek v nábytku může znamenat aktivního červotoče.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak přeneseš stůl?",
+      "options": [
+        "za rám nebo nohy, desku a zásuvky zvlášť",
+        "za desku",
+        "táhnout ho po zemi",
+        "za jednu nohu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje jednotka osvětlení?",
+      "answers": [
+        "lux",
+        "lx"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj hlavní nepřátele starožitností a jak se proti nim bránit.",
+      "answer": "Kolísání vlhkosti a teploty (stálé prostředí, vlhkoměr), vysoká vlhkost (žádné sklepy, odvlhčovač), světlo (bez přímého slunce, UV filtry), škůdci (karanténa, kontrola) a neopatrné zacházení (rukavice, nosit oběma rukama)."
+    },
+    {
+      "type": "open",
+      "question": "Jak uložíš sadu starých grafik?",
+      "answer": "Vodorovně do desek nebo krabice z bezkyselinového kartonu, proložené bezkyselinovým papírem, v suchu a temnu. Manipuluji s nimi čistýma rukama nebo v rukavicích."
+    }
+  ]
+}
