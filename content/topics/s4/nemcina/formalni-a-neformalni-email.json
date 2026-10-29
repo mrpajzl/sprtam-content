@@ -1,0 +1,503 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "formalni-a-neformalni-email",
+  "title": "Formální a neformální e-mail",
+  "emoji": "✉️",
+  "explanations": [
+    {
+      "title": "Stavba krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kamarádovi z Rakouska napíšeš jinak než hotelu v Mnichově, kde chceš rezervovat pokoj. V němčině se to pozná hned na první a poslední řádce. E-mail nebo dopis je navíc běžná úloha u maturity a jazykových zkoušek."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Formální e-mail",
+          "definition": "E-mail úřadu, firmě, škole nebo neznámému člověku. Vyká se: *Sie, Ihnen, Ihr* – vždy s velkým písmenem.",
+          "example": "Sehr geehrte Damen und Herren, … Mit freundlichen Grüßen"
+        },
+        {
+          "type": "term",
+          "term": "Neformální e-mail",
+          "definition": "E-mail kamarádovi nebo rodině. Tyká se: *du, dich, dir, dein*.",
+          "example": "Liebe Anna, … Liebe Grüße"
+        },
+        {
+          "type": "term",
+          "term": "Betreff",
+          "definition": "Předmět e-mailu, krátce o čem píšeš.",
+          "example": "Betreff: Anfrage Zimmerreservierung = Předmět: Dotaz na rezervaci pokoje"
+        },
+        {
+          "type": "term",
+          "term": "Oslovení (Anrede)",
+          "definition": "První řádek dopisu, za ním **čárka**.",
+          "example": "Sehr geehrter Herr Weber,"
+        },
+        {
+          "type": "term",
+          "term": "Pozdrav na konci (Grußformel)",
+          "definition": "Ustálená fráze před podpisem. Za ní se **nedává čárka ani tečka**.",
+          "example": "Mit freundlichen Grüßen"
+        },
+        {
+          "type": "heading",
+          "text": "Stavba e-mailu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Betreff** – předmět.",
+            "**Anrede** – oslovení s čárkou.",
+            "**Einleitung** – úvod: proč píšeš.",
+            "**Hauptteil** – hlavní část: tvoje otázky, informace.",
+            "**Schluss** – závěr: poděkování, prosba o odpověď.",
+            "**Grußformel** – pozdrav.",
+            "**Unterschrift** – podpis (jméno)."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Po oslovení s čárkou začíná text na dalším řádku **malým písmenem** (pokud první slovo není podstatné jméno nebo *Sie*): *Sehr geehrte Frau Schmidt, **v**ielen Dank für Ihre Antwort.* Angličtina tu píše velké písmeno (*Dear John, **T**hank you…*)."
+        },
+        {
+          "type": "heading",
+          "text": "Fráze"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "formálně",
+            "neformálně"
+          ],
+          "rows": [
+            [
+              "oslovení",
+              "Sehr geehrter Herr Weber, / Sehr geehrte Frau Schmidt, / Sehr geehrte Damen und Herren,",
+              "Lieber Tom, / Liebe Anna, / Hallo Max,"
+            ],
+            [
+              "úvod",
+              "ich schreibe Ihnen, weil … (píšu Vám, protože…)",
+              "danke für deine Mail! (díky za tvůj mail!)"
+            ],
+            [
+              "prosba",
+              "Könnten Sie mir bitte mitteilen, …? (Mohl byste mi prosím sdělit…?)",
+              "Kannst du mir sagen, …? (Můžeš mi říct…?)"
+            ],
+            [
+              "závěr",
+              "Ich freue mich auf Ihre Antwort. (Těším se na Vaši odpověď.)",
+              "Schreib bald! (Napiš brzy!)"
+            ],
+            [
+              "pozdrav",
+              "Mit freundlichen Grüßen",
+              "Liebe Grüße / Viele Grüße / Bis bald"
+            ],
+            [
+              "podpis",
+              "Jana Nováková",
+              "Deine Jana / Dein Tom"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď fráze: patří do formálního, nebo neformálního e-mailu?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "formální",
+              "neformální"
+            ],
+            "items": [
+              {
+                "text": "Sehr geehrte Damen und Herren,",
+                "group": 0
+              },
+              {
+                "text": "Mit freundlichen Grüßen",
+                "group": 0
+              },
+              {
+                "text": "Könnten Sie mir bitte helfen?",
+                "group": 0
+              },
+              {
+                "text": "Vielen Dank im Voraus.",
+                "group": 0
+              },
+              {
+                "text": "Hallo Max,",
+                "group": 1
+              },
+              {
+                "text": "Liebe Grüße",
+                "group": 1
+              },
+              {
+                "text": "Schreib bald!",
+                "group": 1
+              },
+              {
+                "text": "Wie geht es dir?",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Napiš oslovení paní Kellerové (formálně) a kamarádovi Lukasovi.",
+          "answer": "Žena → *Sehr geehrte Frau Keller,* (s koncovkou *-e*). Muž, kamarád → *Lieber Lukas,* (*lieber* s *-r* pro muže, *liebe* pro ženu). Za obojím čárka."
+        },
+        {
+          "type": "example",
+          "question": "Začni formální e-mail hotelu a zeptej se, jestli mají volný pokoj.",
+          "answer": "*Sehr geehrte Damen und Herren,* / *ich möchte vom 3. bis 5. Mai ein Zimmer reservieren. Könnten Sie mir bitte mitteilen, ob Sie ein Doppelzimmer frei haben?* = Rád bych si rezervoval pokoj od 3. do 5. května. Mohli byste mi prosím sdělit, zda máte volný dvoulůžkový pokoj? Všimni si malého *i* po oslovení a velkého *Sie*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mit freundlichen Grüßen, Jana Nováková",
+          "right": "Mit freundlichen Grüßen / Jana Nováková (jméno na dalším řádku, bez čárky)",
+          "why": "Za závěrečným pozdravem se v němčině čárka nepíše, na rozdíl od angličtiny (*Best regards,*)."
+        },
+        {
+          "type": "summary",
+          "text": "Formálně: *Sehr geehrte/r …,* – vykání *Sie* – *Mit freundlichen Grüßen*. Neformálně: *Liebe/r …,* nebo *Hallo …,* – tykání *du* – *Liebe Grüße*. Po oslovení čárka a malé písmeno, za pozdravem nic."
+        }
+      ]
+    },
+    {
+      "title": "Dva e-maily vedle sebe",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nejlépe se to naučíš na ukázce. Jana z Brna píše dva e-maily o stejné věci – chce jet v létě do Vídně. Jeden kamarádce Lise, druhý jazykové škole. Porovnej, co se změní."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vykání a tykání",
+          "definition": "Formálně *Sie* (Vy), neformálně *du* (ty). Zájmena *Sie, Ihnen, Ihr* se píšou velkým písmenem; *du, dein* se v e-mailu smí psát malým i velkým.",
+          "example": "Danke für **Ihre** Hilfe. × Danke für **deine** Hilfe."
+        },
+        {
+          "type": "term",
+          "term": "Rejstřík",
+          "definition": "Míra formálnosti jazyka: jak oficiálně nebo kamarádsky zníš.",
+          "example": "Hallo! (kamarádsky) × Sehr geehrte… (oficiálně)"
+        },
+        {
+          "type": "term",
+          "term": "Ustálená fráze",
+          "definition": "Spojení, které se v dopisech používá pořád stejně. Uč se je celé.",
+          "example": "Vielen Dank im Voraus. = Předem mnohokrát děkuji."
+        },
+        {
+          "type": "heading",
+          "text": "E-mail kamarádce"
+        },
+        {
+          "type": "text",
+          "text": "*Liebe Lisa, / danke für deine Mail! Ich habe mich sehr darüber gefreut. Im Sommer komme ich nach Wien. Hast du im Juli Zeit? Dann können wir zusammen ins Museum gehen. / Schreib bald! / Liebe Grüße / Deine Jana*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: *Milá Liso, díky za tvůj mail! Moc mě potěšil. V létě přijedu do Vídně. Máš v červenci čas? Pak můžeme jít spolu do muzea. Napiš brzy! Měj se / Tvoje Jana*"
+        },
+        {
+          "type": "heading",
+          "text": "E-mail jazykové škole"
+        },
+        {
+          "type": "text",
+          "text": "*Betreff: Anfrage Sommerkurs / Sehr geehrte Damen und Herren, / ich interessiere mich für Ihren Deutschkurs im Juli. Könnten Sie mir bitte mitteilen, wie viel der Kurs kostet? Ich würde mich über eine schnelle Antwort freuen. / Vielen Dank im Voraus. / Mit freundlichen Grüßen / Jana Nováková*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: *Předmět: Dotaz na letní kurz / Vážené dámy a pánové, zajímám se o Váš kurz němčiny v červenci. Mohli byste mi prosím sdělit, kolik kurz stojí? Byla bych ráda za rychlou odpověď. Předem mnohokrát děkuji. S pozdravem Jana Nováková*"
+        },
+        {
+          "type": "heading",
+          "text": "Co se změnilo"
+        },
+        {
+          "type": "list",
+          "items": [
+            "oslovení: *Liebe Lisa* × *Sehr geehrte Damen und Herren* (když neznáš jméno)",
+            "zájmena: *deine Mail* × *Ihren Deutschkurs*",
+            "otázky: přímé *Hast du Zeit?* × zdvořilé *Könnten Sie mir bitte mitteilen, …?*",
+            "pozdrav: *Liebe Grüße / Deine Jana* × *Mit freundlichen Grüßen / celé jméno*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň správné slovo."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "Herr Weber,",
+                "options": [
+                  "Sehr geehrter",
+                  "Sehr geehrte",
+                  "Liebe"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "Anna,",
+                "options": [
+                  "Liebe",
+                  "Lieber",
+                  "Lieben"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Danke für",
+                "after": "Hilfe, Herr Weber.",
+                "options": [
+                  "Ihre",
+                  "deine",
+                  "ihre"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Mit freundlichen",
+                "after": "",
+                "options": [
+                  "Grüßen",
+                  "Grüße",
+                  "Gruß"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přepiš do formálního tvaru: Kannst du mir sagen, wann der Kurs beginnt?",
+          "answer": "Vykání *Sie* a zdvořilé *könnten* (konjunktiv II): **Könnten Sie mir bitte sagen, wann der Kurs beginnt?** = Mohl byste mi prosím říct, kdy kurz začíná?"
+        },
+        {
+          "type": "example",
+          "question": "Jak ukončíš e-mail kamarádovi Benovi, když jsi dívka jménem Eva?",
+          "answer": "**Liebe Grüße** (nebo *Viele Grüße*), na další řádek **Deine Eva**. *Deine* s *-e*, protože podepisující je žena."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Sehr geehrte Frau Schmidt, / Vielen Dank für Ihre Antwort.",
+          "right": "Sehr geehrte Frau Schmidt, / vielen Dank für Ihre Antwort.",
+          "why": "Oslovení končí čárkou, věta tedy pokračuje a začíná malým písmenem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich danke ihnen für die Information. (formálně)",
+          "right": "Ich danke Ihnen für die Information.",
+          "why": "Malé *ihnen* znamená „jim“. Vykání *Ihnen* se píše vždy s velkým I."
+        },
+        {
+          "type": "summary",
+          "text": "Neformálně: *Liebe/r*, *du*, *Liebe Grüße*, *Dein/e* + jméno. Formálně: *Sehr geehrte/r*, *Sie/Ihnen/Ihr* s velkým písmenem, zdvořilé *Könnten Sie…?*, *Mit freundlichen Grüßen* + celé jméno."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak formálně oslovíš pana Webera?",
+      "options": [
+        "Sehr geehrter Herr Weber,",
+        "Sehr geehrte Herr Weber,",
+        "Hallo Weber,"
+      ],
+      "answer": 0,
+      "explanation": "U muže *geehrter* s *-r*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak oslovíš kamarádku Annu?",
+      "options": [
+        "Liebe Anna,",
+        "Lieber Anna,",
+        "Sehr geehrte Anna,"
+      ],
+      "answer": 0,
+      "explanation": "U ženy *liebe*, u muže *lieber*. *Sehr geehrte* je formální."
+    },
+    {
+      "type": "choice",
+      "question": "Jak oslovíš firmu, když neznáš jméno adresáta?",
+      "options": [
+        "Sehr geehrte Damen und Herren,",
+        "Liebe Damen und Herren,",
+        "Hallo Firma,"
+      ],
+      "answer": 0,
+      "explanation": "Ustálené formální oslovení = Vážené dámy a pánové."
+    },
+    {
+      "type": "input",
+      "question": "Doplň formální pozdrav: Mit ___ Grüßen",
+      "answers": [
+        "freundlichen"
+      ],
+      "explanation": "Ustálená fráze *Mit freundlichen Grüßen* = S přátelským pozdravem.",
+      "hints": [
+        "Slovo znamená „přátelský“."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která věta po oslovení „Sehr geehrte Frau Schmidt,“ je napsaná správně?",
+      "options": [
+        "vielen Dank für Ihre Antwort.",
+        "Vielen Dank für ihre Antwort.",
+        "vielen Dank für deine Antwort."
+      ],
+      "answer": 0,
+      "explanation": "Po čárce malé písmeno, vykání *Ihre* s velkým I."
+    },
+    {
+      "type": "truefalse",
+      "question": "Za frází „Mit freundlichen Grüßen“ se píše čárka.",
+      "answer": false,
+      "explanation": "V němčině se za závěrečný pozdrav nedává ani čárka, ani tečka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve formálním e-mailu se Sie, Ihnen a Ihr píšou s velkým písmenem.",
+      "answer": true,
+      "explanation": "Tak se odliší vykání od *sie* (ona, oni), *ihnen* (jim) a *ihr* (její, jejich)."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Liebe Grüße“ je vhodný pozdrav do e-mailu řediteli neznámé firmy.",
+      "answer": false,
+      "explanation": "Je neformální, pro kamarády a rodinu. Formálně *Mit freundlichen Grüßen*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části formálního e-mailu.",
+      "items": [
+        "Betreff",
+        "Anrede",
+        "Einleitung",
+        "Hauptteil",
+        "Schluss",
+        "Grußformel",
+        "Unterschrift"
+      ],
+      "explanation": "Předmět, oslovení, úvod, hlavní část, závěr, pozdrav, podpis."
+    },
+    {
+      "type": "match",
+      "question": "Spoj německou frázi s českou.",
+      "pairs": [
+        [
+          "Vielen Dank im Voraus.",
+          "Předem mnohokrát děkuji."
+        ],
+        [
+          "Schreib bald!",
+          "Napiš brzy!"
+        ],
+        [
+          "Ich freue mich auf Ihre Antwort.",
+          "Těším se na Vaši odpověď."
+        ],
+        [
+          "Könnten Sie mir bitte mitteilen, …?",
+          "Mohl byste mi prosím sdělit…?"
+        ]
+      ],
+      "explanation": "Ustálené fráze se uč celé."
+    },
+    {
+      "type": "input",
+      "question": "Doplň (neformálně, kamarádovi): Danke für ___ Mail!",
+      "answers": [
+        "deine",
+        "Deine"
+      ],
+      "explanation": "Tykání → *dein*, *die Mail* je ženského rodu → *deine*.",
+      "hints": [
+        "Kamarádovi tykáš.",
+        "Mail je ženského rodu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která otázka se hodí do formálního e-mailu?",
+      "options": [
+        "Könnten Sie mir bitte sagen, wann der Kurs beginnt?",
+        "Kannst du mir sagen, wann der Kurs beginnt?",
+        "Wann beginnt der Kurs, hä?"
+      ],
+      "answer": 0,
+      "explanation": "Vykání *Sie* a zdvořilé *könnten*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se podepíše Tom pod e-mail kamarádovi?",
+      "options": [
+        "Dein Tom",
+        "Deine Tom",
+        "Ihr Tom"
+      ],
+      "answer": 0,
+      "explanation": "Podepisující je muž → *Dein*; *Deine* píše žena. *Ihr* je formální."
+    },
+    {
+      "type": "open",
+      "question": "Jak se liší formální a neformální e-mail v němčině?",
+      "answer": "Formální začíná *Sehr geehrte/r …* nebo *Sehr geehrte Damen und Herren*, vyká se (*Sie, Ihnen* velkým písmenem) a končí *Mit freundlichen Grüßen* a celým jménem. Neformální začíná *Liebe/r …* nebo *Hallo*, tyká se a končí např. *Liebe Grüße* a *Dein/e* + jméno."
+    },
+    {
+      "type": "open",
+      "question": "Popiš stavbu formálního e-mailu.",
+      "answer": "Předmět (Betreff), oslovení s čárkou, úvod s důvodem psaní, hlavní část s otázkami nebo informacemi, závěr s poděkováním nebo prosbou o odpověď, pozdrav *Mit freundlichen Grüßen* bez čárky a podpis."
+    }
+  ]
+}

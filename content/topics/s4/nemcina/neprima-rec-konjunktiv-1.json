@@ -1,0 +1,496 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "neprima-rec-konjunktiv-1",
+  "title": "Nepřímá řeč s konjunktivem I",
+  "emoji": "🗞️",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve zprávách často slyšíš, co **někdo jiný řekl**: „Ministr uvedl, že situace je vážná.“ Novinář tím dává najevo: „To netvrdím já, to řekl on.“ Němčina k tomu má zvláštní slovesný tvar – **konjunktiv I**."
+        },
+        {
+          "type": "text",
+          "text": "Čeština v nepřímé řeči jen změní osobu (*Řekl: „Jsem nemocný.“ → Řekl, že je nemocný.*). Angličtina posouvá čas (*He said he **was** ill*). Němčina čas neposouvá, místo toho použije konjunktiv I: *Er sagte, er **sei** krank.*"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přímá řeč",
+          "definition": "Doslovná slova mluvčího v uvozovkách.",
+          "example": "Er sagt: „Ich bin krank.“ = Říká: „Jsem nemocný.“"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá řeč",
+          "definition": "Převyprávění toho, co někdo řekl, bez uvozovek, často se *dass*.",
+          "example": "Er sagt, er sei krank. = Říká, že je nemocný."
+        },
+        {
+          "type": "term",
+          "term": "Konjunktiv I",
+          "definition": "Slovesný tvar pro nepřímou řeč. Tvoří se z **kmene infinitivu** + koncovky *-e, -est, -e, -en, -et, -en*. Nejčastěji ho uvidíš ve 3. osobě: *er komme, er habe, er sei*.",
+          "example": "kommen → er komm**e**"
+        },
+        {
+          "type": "term",
+          "term": "Konjunktiv II (připomenutí)",
+          "definition": "Tvar ze 3. ročníku: *hätte, wäre, würde, könnte*. Pomůže tam, kde konjunktiv I vypadá stejně jako běžný tvar.",
+          "example": "sie hätten, sie würden kommen"
+        },
+        {
+          "type": "heading",
+          "text": "Tvary"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "sein",
+            "haben",
+            "kommen",
+            "können"
+          ],
+          "rows": [
+            [
+              "ich",
+              "sei",
+              "(habe → hätte)",
+              "(komme → käme)",
+              "könne"
+            ],
+            [
+              "du",
+              "sei(e)st",
+              "habest",
+              "kommest",
+              "könnest"
+            ],
+            [
+              "er/sie/es",
+              "**sei**",
+              "**habe**",
+              "**komme**",
+              "**könne**"
+            ],
+            [
+              "wir",
+              "seien",
+              "(haben → hätten)",
+              "(kommen → kämen)",
+              "(können → könnten)"
+            ],
+            [
+              "sie/Sie",
+              "seien",
+              "(haben → hätten)",
+              "(kommen → kämen)",
+              "(können → könnten)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kde je tvar v závorce, konjunktiv I by vypadal stejně jako běžný přítomný čas. Pak se místo něj použije konjunktiv II (nebo *würde* + infinitiv)."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Změň osobu jako v češtině: *„Ich bin müde,“ sagt Anna.* → *sie*.",
+            "Sloveso dej do konjunktivu I: *bin* → *sei*.",
+            "Hotovo: *Anna sagt, sie sei müde.* nebo *Anna sagt, dass sie müde sei.*",
+            "Minulost: *habe/sei* + příčestí: *Er sagte, er habe das Buch gelesen.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň tvar konjunktivu I."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Der Minister sagt, die Lage",
+                "after": "ernst.",
+                "options": [
+                  "sei",
+                  "ist",
+                  "wäre"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sie sagt, sie",
+                "after": "keine Zeit.",
+                "options": [
+                  "habe",
+                  "hat",
+                  "haben"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er sagt, er",
+                "after": "morgen.",
+                "options": [
+                  "komme",
+                  "kommt",
+                  "kam"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tom sagte, er",
+                "after": "nach Berlin gefahren.",
+                "options": [
+                  "sei",
+                  "habe",
+                  "wäre"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Paul sagt: „Ich kann nicht kommen.“",
+          "answer": "Osoba *ich* → *er*; *kann* → konjunktiv I *könne*: **Paul sagt, er könne nicht kommen.** = Paul říká, že nemůže přijít."
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Die Kinder sagen: „Wir haben Hunger.“",
+          "answer": "*wir* → *sie*; konjunktiv I *sie haben* je stejný jako běžný tvar → konjunktiv II: **Die Kinder sagen, sie hätten Hunger.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Er sagte, er war krank. (jako v angličtině)",
+          "right": "Er sagte, er sei krank.",
+          "why": "Němčina v nepřímé řeči čas neposouvá. Přítomný děj zůstává přítomný, jen v konjunktivu I."
+        },
+        {
+          "type": "summary",
+          "text": "Konjunktiv I (*er sei, er habe, er komme*) ukazuje, že jde o cizí slova. Změníš osobu, čas neposouváš. Když je tvar stejný jako běžný, vezmi konjunktiv II (*sie hätten*)."
+        }
+      ]
+    },
+    {
+      "title": "Jako novinář",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že píšeš do školního časopisu a převyprávíš, co ti řekla ředitelka. Nechceš to vydávat za svůj názor. V němčině to dáš najevo jediným slovesem: *Die Direktorin sagt, die Schule **bleibe** im Juli geschlossen.*"
+        },
+        {
+          "type": "text",
+          "text": "V běžném hovoru Němci často řeknou jen *Sie sagt, dass die Schule geschlossen bleibt.* To je také správně. Konjunktiv I patří hlavně do novin, zpráv a formálních textů – proto ho potřebuješ umět **poznat a použít**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Uvozovací sloveso",
+          "definition": "Sloveso, kterým nepřímou řeč uvedeš.",
+          "example": "sagen (říct), meinen (myslet si), erklären (vysvětlit), berichten (oznámit)"
+        },
+        {
+          "type": "term",
+          "term": "Konjunktiv I",
+          "definition": "Tvar slovesa pro převyprávěnou řeč. Ve 3. osobě jednotného čísla končí na **-e** (kromě *sei*).",
+          "example": "er habe, sie wisse, es gebe"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá otázka",
+          "definition": "Převyprávěná otázka. Zjišťovací otázka se uvádí *ob* (zda), doplňovací tázacím slovem; sloveso jde na konec.",
+          "example": "Sie fragt, ob er Zeit habe. Sie fragt, wann der Zug komme."
+        },
+        {
+          "type": "heading",
+          "text": "Zpráva"
+        },
+        {
+          "type": "text",
+          "text": "*Die Polizei teilte mit, der Fahrer **sei** zu schnell gefahren. Er **habe** das Auto nicht mehr kontrollieren können. Niemand **sei** verletzt worden.*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: *Policie sdělila, že řidič jel příliš rychle. Prý už nedokázal auto ovládat. Nikdo nebyl zraněn.*"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*sei … gefahren* – minulost: konjunktiv I od *sein* + příčestí (*fahren* tvoří perfektum se *sein*)",
+            "*habe … können* – minulost se způsobovým slovesem",
+            "Čeština tu často přidá slovíčko „prý“, němčina má konjunktiv."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tři situace"
+        },
+        {
+          "type": "table",
+          "head": [
+            "přímá řeč",
+            "nepřímá řeč",
+            "česky"
+          ],
+          "rows": [
+            [
+              "„Ich bin müde.“",
+              "Sie sagt, sie sei müde.",
+              "Říká, že je unavená."
+            ],
+            [
+              "„Ich habe das gemacht.“",
+              "Er sagt, er habe das gemacht.",
+              "Říká, že to udělal."
+            ],
+            [
+              "„Kommst du mit?“",
+              "Sie fragt, ob ich mitkomme / mitkäme.",
+              "Ptá se, jestli půjdu s ní."
+            ],
+            [
+              "„Ich werde anrufen.“",
+              "Er sagt, er werde anrufen.",
+              "Říká, že zavolá."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku: jaký je konjunktiv I pro *er*?"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "sein",
+                "back": "er sei"
+              },
+              {
+                "front": "haben",
+                "back": "er habe"
+              },
+              {
+                "front": "werden",
+                "back": "er werde"
+              },
+              {
+                "front": "können",
+                "back": "er könne"
+              },
+              {
+                "front": "müssen",
+                "back": "er müsse"
+              },
+              {
+                "front": "wissen",
+                "back": "er wisse"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Lisa fragt: „Wann kommt der Bus?“",
+          "answer": "Doplňovací otázka → zůstane *wann*, sloveso na konec v konjunktivu I: **Lisa fragt, wann der Bus komme.** = Lisa se ptá, kdy přijede autobus."
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Der Trainer sagte: „Wir haben gut gespielt.“",
+          "answer": "*wir* → *sie*; *sie haben* je stejné jako běžný tvar → *hätten*: **Der Trainer sagte, sie hätten gut gespielt.** = Trenér řekl, že hráli dobře."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Anna sagt: „Ich bin müde.“ → Anna sagt, ich sei müde.",
+          "right": "Anna sagt, sie sei müde.",
+          "why": "Osobu musíš změnit stejně jako v češtině: Anna mluví o sobě → *sie*."
+        },
+        {
+          "type": "summary",
+          "text": "Převyprávěnou řeč (hlavně ve zprávách) dávej do konjunktivu I: *er sei, er habe, er komme, er werde*. Minulost: *habe/sei* + příčestí. Splývá-li tvar s běžným, použij konjunktiv II."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň konjunktiv I: Er sagt, er ___ keine Zeit.",
+      "options": [
+        "habe",
+        "hat",
+        "hatte"
+      ],
+      "answer": 0,
+      "explanation": "Konjunktiv I od *haben* pro *er* = *habe*. (*hat* je běžný tvar, *hatte* préteritum.)"
+    },
+    {
+      "type": "input",
+      "question": "Napiš konjunktiv I slovesa sein pro er: Er sagt, er ___ krank.",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "*sein* má nepravidelný konjunktiv I: *ich sei, er sei, wir seien*.",
+      "hints": [
+        "Tvar je nepravidelný a krátký."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň konjunktiv I slovesa kommen: Sie sagt, sie ___ morgen.",
+      "answers": [
+        "komme"
+      ],
+      "explanation": "Kmen *komm-* + *-e* → *sie komme*.",
+      "hints": [
+        "Vezmi kmen infinitivu a přidej koncovku 3. osoby."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Die Schüler sagen, sie ___ keine Zeit.",
+      "options": [
+        "hätten",
+        "haben",
+        "habe"
+      ],
+      "answer": 0,
+      "explanation": "Konjunktiv I *sie haben* splývá s běžným tvarem → konjunktiv II *hätten*."
+    },
+    {
+      "type": "choice",
+      "question": "Anna sagt: „Ich bin müde.“ Převeď do nepřímé řeči.",
+      "options": [
+        "Anna sagt, sie sei müde.",
+        "Anna sagt, ich sei müde.",
+        "Anna sagt, sie seien müde."
+      ],
+      "answer": 0,
+      "explanation": "Osoba se mění na *sie*, sloveso do konjunktivu I *sei*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Er sagte: „Ich bin nach Berlin gefahren.“ → Er sagte, er ___ nach Berlin gefahren.",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "*fahren* tvoří minulost se *sein* → konjunktiv I *sei*.",
+      "hints": [
+        "Které pomocné sloveso má fahren v perfektu?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Er sagte: „Ich habe das Buch gelesen.“ → Er sagte, er ___ das Buch gelesen.",
+      "options": [
+        "habe",
+        "hat",
+        "sei"
+      ],
+      "answer": 0,
+      "explanation": "*lesen* tvoří perfektum s *haben* → konjunktiv I *habe*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Konjunktiv I se nejčastěji používá v novinách a zprávách.",
+      "answer": true,
+      "explanation": "Ukazuje, že autor jen převypráví cizí slova."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když je uvozovací sloveso v minulém čase (er sagte), musí se čas v nepřímé řeči posunout jako v angličtině.",
+      "answer": false,
+      "explanation": "Němčina čas neposouvá: *Er sagte, er sei krank.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Sie sagt, dass sie keine Zeit hat.“ je v běžném hovoru správně.",
+      "answer": true,
+      "explanation": "V hovoru se nepřímá řeč často tvoří indikativem. Konjunktiv I je typický pro psaný a formální jazyk."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s konjunktivem I pro er.",
+      "pairs": [
+        [
+          "sein",
+          "er sei"
+        ],
+        [
+          "haben",
+          "er habe"
+        ],
+        [
+          "können",
+          "er könne"
+        ],
+        [
+          "werden",
+          "er werde"
+        ],
+        [
+          "wissen",
+          "er wisse"
+        ]
+      ],
+      "explanation": "Konjunktiv I = kmen infinitivu + *-e*, jen *sein* je nepravidelné."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď nepřímou otázku: Ptá se, kdy přijede vlak.",
+      "items": [
+        "Sie fragt,",
+        "wann",
+        "der Zug",
+        "komme."
+      ],
+      "explanation": "Tázací slovo na začátek vedlejší věty, sloveso v konjunktivu I na konec."
+    },
+    {
+      "type": "open",
+      "question": "K čemu slouží konjunktiv I a jak se tvoří?",
+      "answer": "Slouží k nepřímé řeči: ukazuje, že převyprávím cizí slova, hlavně ve zprávách. Tvoří se z kmene infinitivu a koncovek *-e, -est, -e, -en, -et, -en* (er komme, er habe), *sein* má tvary *sei, seien*."
+    },
+    {
+      "type": "open",
+      "question": "Převeď do nepřímé řeči a vysvětli: Der Arzt sagt: „Sie müssen im Bett bleiben.“ (mluví k pacientce)",
+      "answer": "*Der Arzt sagt, sie müsse im Bett bleiben.* Osoba se mění na *sie* (ona) a sloveso *müssen* jde do konjunktivu I *müsse*."
+    }
+  ]
+}

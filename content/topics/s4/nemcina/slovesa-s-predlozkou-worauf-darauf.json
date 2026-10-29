@@ -1,0 +1,522 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "slovesa-s-predlozkou-worauf-darauf",
+  "title": "Slovesa s předložkou a worauf, darauf",
+  "emoji": "🔗",
+  "explanations": [
+    {
+      "title": "Pravidla a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky *čekáš na* autobus, *myslíš na* prázdniny a *zajímáš se o* hudbu. Některá slovesa mají „svou“ předložku. Němčina je má taky, jen často **jiné** než čeština: *sich interessieren **für*** (zajímat se **o**)."
+        },
+        {
+          "type": "text",
+          "text": "Kdo tyto dvojice zná, mluví přirozeně a rozumí i otázkám typu *Worauf wartest du?* (Na co čekáš?)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Sloveso s předložkovou vazbou",
+          "definition": "Sloveso, ke kterému patří pevná předložka a pevný pád. Učí se jako celek, jako jedno slovíčko.",
+          "example": "warten **auf** + 4. pád = čekat na"
+        },
+        {
+          "type": "term",
+          "term": "Pád (připomenutí)",
+          "definition": "4. pád (akuzativ) = *den, die, das*; 3. pád (dativ) = *dem, der, dem*.",
+          "example": "auf **den** Bus (4. p.), vor **dem** Hund (3. p.)"
+        },
+        {
+          "type": "term",
+          "term": "Zájmenné příslovce",
+          "definition": "Jedno slovo složené z *da-* nebo *wo-* a předložky. Zastupuje **věc** nebo celou myšlenku.",
+          "example": "**darauf** = na to, **worauf** = na co"
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější vazby"
+        },
+        {
+          "type": "table",
+          "head": [
+            "němčina",
+            "pád",
+            "česky"
+          ],
+          "rows": [
+            [
+              "warten auf",
+              "4.",
+              "čekat na"
+            ],
+            [
+              "sich freuen auf",
+              "4.",
+              "těšit se na (co přijde)"
+            ],
+            [
+              "sich freuen über",
+              "4.",
+              "mít radost z (co už je)"
+            ],
+            [
+              "denken an",
+              "4.",
+              "myslet na"
+            ],
+            [
+              "sich interessieren für",
+              "4.",
+              "zajímat se o"
+            ],
+            [
+              "sprechen über",
+              "4.",
+              "mluvit o"
+            ],
+            [
+              "Angst haben vor",
+              "3.",
+              "bát se (čeho)"
+            ],
+            [
+              "träumen von",
+              "3.",
+              "snít o"
+            ],
+            [
+              "teilnehmen an",
+              "3.",
+              "zúčastnit se (čeho)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se ptát a odpovídat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ptáš se na **věc**? Spoj *wo-* s předložkou: *wo + auf* = **worauf**.",
+            "Začíná-li předložka samohláskou, vlož **-r-**: wo**r**auf, wo**r**an, wo**r**über (ale *wofür, wovon, womit*).",
+            "Odpovídáš a věc nechceš opakovat? Spoj *da-* s předložkou: **darauf, daran, dafür, davon**.",
+            "Jde o **osobu**? Žádné *wo-/da-*: předložka + zájmeno: *Auf **wen** wartest du? – Auf **ihn**.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň předložku nebo zájmenné příslovce."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich warte",
+                "after": "den Bus.",
+                "options": [
+                  "auf",
+                  "für",
+                  "an"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich interessiere mich",
+                "after": "Musik.",
+                "options": [
+                  "für",
+                  "über",
+                  "auf"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er hat Angst",
+                "after": "dem Hund.",
+                "options": [
+                  "vor",
+                  "von",
+                  "an"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "wartest du? – Auf den Zug.",
+                "options": [
+                  "Worauf",
+                  "Wofür",
+                  "Auf wen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "denkst du? – An meine Oma.",
+                "options": [
+                  "An wen",
+                  "Woran",
+                  "Daran"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověz zájmenným příslovcem: Denkst du an die Prüfung?",
+          "answer": "*denken an* + věc (zkouška) → *da + r + an*: **Ja, ich denke daran.** = Ano, myslím na to."
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se na podtržené: Ich interessiere mich für **Fußball**.",
+          "answer": "Věc + *für* → *wo + für* (souhláska, bez -r-): **Wofür interessierst du dich?** = O co se zajímáš?"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich interessiere mich über Musik.",
+          "right": "Ich interessiere mich für Musik.",
+          "why": "Česky „o“, ale německy *sich interessieren **für***. Vazbu se uč celou, nepřekládej předložku doslova."
+        },
+        {
+          "type": "summary",
+          "text": "Slovesa mají pevné předložky (*warten auf, denken an, sich interessieren für*). Na věc se ptáš **wo(r)- + předložka** a odkazuješ **da(r)- + předložka**; u osob předložka + zájmeno (*auf wen, auf ihn*)."
+        }
+      ]
+    },
+    {
+      "title": "V rozhovoru",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rozhovory se točí kolem toho, na co čekáme, na co se těšíme a čeho se bojíme. Aby to v němčině znělo přirozeně, potřebuješ slovesa s jejich předložkami a krátká slova *darauf, worauf*, která šetří opakování."
+        },
+        {
+          "type": "text",
+          "text": "Angličtina to zná taky: *wait **for**, think **of**, be interested **in***. A v otázce *What are you waiting for?* nechá předložku na konci. Němčina ji místo toho „přilepí“ k *wo-*: *Worauf wartest du?*"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pevná předložka",
+          "definition": "Předložka, kterou si sloveso „vybralo“ a nemění ji. Často neodpovídá češtině.",
+          "example": "Angst haben **vor** = bát se (česky bez předložky)"
+        },
+        {
+          "type": "term",
+          "term": "Zájmenné příslovce s da-",
+          "definition": "da(r) + předložka = „na to, o tom, z toho…“. Odkazuje na věc, ne na osobu.",
+          "example": "davon = o tom, daran = na to"
+        },
+        {
+          "type": "term",
+          "term": "Tázací příslovce s wo-",
+          "definition": "wo(r) + předložka = „na co, o čem, z čeho…“. Ptá se na věc.",
+          "example": "wovon = o čem, woran = na co"
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor"
+        },
+        {
+          "type": "text",
+          "text": "*Lena: Worauf freust du dich am meisten? – Jonas: Auf die Ferien! Ich freue mich schon lange darauf. – Lena: Und wovon träumst du? – Jonas: Von einer Reise nach Island. – Lena: Wovor hast du Angst? – Jonas: Vor dem Fliegen, aber ich denke nicht daran.*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: *Na co se nejvíc těšíš? – Na prázdniny! Těším se na ně už dlouho. – A o čem sníš? – O cestě na Island. – Čeho se bojíš? – Létání, ale nemyslím na to.*"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*sich freuen auf* → *worauf? – darauf*",
+            "*träumen von* → *wovon?* (bez -r-, *von* začíná souhláskou)",
+            "*Angst haben vor* → *wovor?* (3. pád: *vor dem Fliegen*)",
+            "*denken an* → *daran* (s -r-, *an* začíná samohláskou)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Osoba, nebo věc?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "věc",
+            "osoba"
+          ],
+          "rows": [
+            [
+              "otázka",
+              "Worauf wartest du?",
+              "Auf wen wartest du?"
+            ],
+            [
+              "odpověď",
+              "Ich warte darauf.",
+              "Ich warte auf ihn."
+            ],
+            [
+              "česky",
+              "Na co čekáš? Čekám na to.",
+              "Na koho čekáš? Čekám na něj."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: freuen auf × freuen über"
+        },
+        {
+          "type": "text",
+          "text": "*Ich freue mich **auf** den Urlaub.* = Těším se na dovolenou (ještě nebyla). *Ich freue mich **über** das Geschenk.* = Mám radost z dárku (už ho mám)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku a ověř si vazbu."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "čekat na",
+                "back": "warten auf + 4. p."
+              },
+              {
+                "front": "myslet na",
+                "back": "denken an + 4. p."
+              },
+              {
+                "front": "bát se",
+                "back": "Angst haben vor + 3. p."
+              },
+              {
+                "front": "zajímat se o",
+                "back": "sich interessieren für + 4. p."
+              },
+              {
+                "front": "snít o",
+                "back": "träumen von + 3. p."
+              },
+              {
+                "front": "těšit se na",
+                "back": "sich freuen auf + 4. p."
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Ich freue mich ___ dein Geschenk. Danke!",
+          "answer": "Dárek už mám → radost z něčeho, co už je → **über**: *Ich freue mich über dein Geschenk.*"
+        },
+        {
+          "type": "example",
+          "question": "Odpověz bez opakování: Sprichst du oft über Politik?",
+          "answer": "*sprechen über* + věc → *dar + über*: **Nein, ich spreche selten darüber.** = Ne, mluvím o tom zřídka."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Worauf wartest du? – Auf meine Schwester.",
+          "right": "Auf wen wartest du? – Auf meine Schwester.",
+          "why": "Na osobu se neptáš *wo-*, ale předložkou a *wen/wem*."
+        },
+        {
+          "type": "summary",
+          "text": "Uč se sloveso i s předložkou a pádem. U věcí *wo(r)-* v otázce a *da(r)-* v odpovědi (*-r-* před samohláskou), u osob předložka + *wen/wem* nebo zájmeno."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Ich warte ___ den Bus.",
+      "options": [
+        "auf",
+        "für",
+        "an"
+      ],
+      "answer": 0,
+      "explanation": "*warten auf* + 4. pád = čekat na."
+    },
+    {
+      "type": "choice",
+      "question": "Ich interessiere mich ___ Geschichte.",
+      "options": [
+        "für",
+        "über",
+        "an"
+      ],
+      "answer": 0,
+      "explanation": "*sich interessieren für* = zajímat se o."
+    },
+    {
+      "type": "choice",
+      "question": "Ich freue mich ___ dein Geschenk, danke!",
+      "options": [
+        "über",
+        "auf",
+        "an"
+      ],
+      "answer": 0,
+      "explanation": "Dárek už mám → *sich freuen über*. *Auf* je pro to, co teprve přijde."
+    },
+    {
+      "type": "choice",
+      "question": "___ wartest du? – Auf den Bus.",
+      "options": [
+        "Worauf",
+        "Wofür",
+        "Auf wen"
+      ],
+      "answer": 0,
+      "explanation": "Autobus je věc → *wo + r + auf*."
+    },
+    {
+      "type": "choice",
+      "question": "___ wartest du? – Auf meine Schwester.",
+      "options": [
+        "Auf wen",
+        "Worauf",
+        "Wofür"
+      ],
+      "answer": 0,
+      "explanation": "Sestra je osoba → předložka + *wen*."
+    },
+    {
+      "type": "input",
+      "question": "Odpověz zájmenným příslovcem: Denkst du oft an den Urlaub? – Ja, ich denke oft ___.",
+      "answers": [
+        "daran"
+      ],
+      "explanation": "*denken an* + věc → *da + r + an*.",
+      "hints": [
+        "Spoj da- s předložkou ze slovesa.",
+        "Předložka začíná samohláskou, přidej -r-."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Zeptej se: ___ interessierst du dich? – Für Fußball.",
+      "answers": [
+        "Wofür",
+        "Wofuer"
+      ],
+      "explanation": "*für* začíná souhláskou → *wo + für*, bez -r-.",
+      "hints": [
+        "Ptáš se na věc, použij wo-."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň předložku: Er hat Angst ___ der Prüfung.",
+      "answers": [
+        "vor"
+      ],
+      "explanation": "*Angst haben vor* + 3. pád.",
+      "hints": [
+        "Česky „bát se čeho“ je bez předložky – v němčině je."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso s jeho předložkou.",
+      "pairs": [
+        [
+          "warten",
+          "auf"
+        ],
+        [
+          "denken",
+          "an"
+        ],
+        [
+          "träumen",
+          "von"
+        ],
+        [
+          "sich interessieren",
+          "für"
+        ],
+        [
+          "Angst haben",
+          "vor"
+        ]
+      ],
+      "explanation": "Tyto dvojice se učí jako celek."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich freue mich auf die Ferien.“ znamená: Těším se na prázdniny.",
+      "answer": true,
+      "explanation": "*sich freuen auf* = těšit se na něco, co teprve přijde."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na osobu se ptáme tvarem s wo-, např. Worauf wartest du? – Auf Petra.",
+      "answer": false,
+      "explanation": "U osob: *Auf wen wartest du?* Tvary s *wo-* jsou pro věci."
+    },
+    {
+      "type": "truefalse",
+      "question": "V tvaru woran je -r- proto, že předložka an začíná samohláskou.",
+      "answer": true,
+      "explanation": "Mezi *wo/da* a samohlásku se vkládá *-r-*: *woran, darauf, darüber*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď odpověď: Ano, těším se na to.",
+      "items": [
+        "Ja,",
+        "ich",
+        "freue",
+        "mich",
+        "darauf."
+      ],
+      "explanation": "Sloveso na 2. místě, *mich* hned za ním, *darauf* na konci."
+    },
+    {
+      "type": "open",
+      "question": "Co je zájmenné příslovce a jak se tvoří? Uveď příklad.",
+      "answer": "Je to slovo z *da-* nebo *wo-* a předložky, které zastupuje věc: *darauf* (na to), *worauf* (na co). Před předložkou se samohláskou se vkládá *-r-*. Pro osoby se nepoužívá, tam je předložka + zájmeno."
+    },
+    {
+      "type": "open",
+      "question": "Uveď tři německá slovesa s předložkovou vazbou, která se liší od češtiny.",
+      "answer": "Například *sich interessieren für* (zajímat se o), *Angst haben vor* (bát se čeho, česky bez předložky), *sich freuen über* (mít radost z) nebo *teilnehmen an* (zúčastnit se čeho)."
+    }
+  ]
+}

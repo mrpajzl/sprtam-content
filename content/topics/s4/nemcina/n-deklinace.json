@@ -1,0 +1,498 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "n-deklinace",
+  "title": "N-deklinace (der Junge, des Jungen)",
+  "emoji": "👦",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky se podstatná jména skloňují pořád: *student, studenta, studentovi*. Německá podstatná jména se v jednotném čísle skoro nemění, pád ukazuje člen: *der Tisch, den Tisch, dem Tisch*. Jen malá skupina mužských slov dostává koncovku **-(e)n** – říká se jí **n-deklinace**."
+        },
+        {
+          "type": "text",
+          "text": "Jsou to hlavně slova pro **lidi a zvířata**: *der Junge, der Student, der Kollege, der Löwe*. Používají se pořád, proto stojí za to je poznat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Skloňování (deklinace)",
+          "definition": "Změna tvaru slova podle pádu a čísla.",
+          "example": "česky: kluk – kluka – klukovi"
+        },
+        {
+          "type": "term",
+          "term": "Pády v němčině (připomenutí)",
+          "definition": "1. pád (nominativ) – kdo, co; 4. pád (akuzativ) – koho, co; 3. pád (dativ) – komu, čemu; 2. pád (genitiv) – koho, čeho.",
+          "example": "der Junge – den Jungen – dem Jungen – des Jungen"
+        },
+        {
+          "type": "term",
+          "term": "N-deklinace",
+          "definition": "Skupina podstatných jmen **mužského rodu**, která mají ve všech pádech kromě 1. pádu jednotného čísla koncovku **-n** nebo **-en**.",
+          "example": "der Student → den Student**en**"
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "pád",
+            "der Junge (kluk)",
+            "der Student (student)",
+            "der Tisch (běžné slovo)"
+          ],
+          "rows": [
+            [
+              "1.",
+              "der Junge",
+              "der Student",
+              "der Tisch"
+            ],
+            [
+              "4.",
+              "den Junge**n**",
+              "den Student**en**",
+              "den Tisch"
+            ],
+            [
+              "3.",
+              "dem Junge**n**",
+              "dem Student**en**",
+              "dem Tisch"
+            ],
+            [
+              "2.",
+              "des Junge**n**",
+              "des Student**en**",
+              "des Tisch**es**"
+            ],
+            [
+              "množné č.",
+              "die Junge**n**",
+              "die Student**en**",
+              "die Tische"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ve 2. pádě **není -s**: *des Jungen*, ne *des Jungens*."
+        },
+        {
+          "type": "heading",
+          "text": "Jak je poznáš"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je slovo mužského rodu (*der*)? Jinak to n-deklinace není.",
+            "Končí na **-e** a jde o osobu nebo zvíře? → n-deklinace: *der Junge, der Kollege, der Kunde, der Neffe, der Löwe, der Affe, der Tscheche, der Franzose*.",
+            "Je to cizí slovo pro osobu nebo zvíře na **-ent, -ant, -ist, -at, -oge, -af**? → n-deklinace: *der Student, der Präsident, der Elefant, der Polizist, der Tourist, der Soldat, der Biologe, der Fotograf*.",
+            "Několik slov si zapamatuj zvlášť: *der Mensch, der Herr, der Nachbar, der Bär, der Held*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*der Herr* má v jednotném čísle jen **-n** (*den Herrn*), v množném **-en** (*die Herren*)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slova: patří do n-deklinace, nebo ne?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "n-deklinace",
+              "běžné skloňování"
+            ],
+            "items": [
+              {
+                "text": "der Junge",
+                "group": 0
+              },
+              {
+                "text": "der Student",
+                "group": 0
+              },
+              {
+                "text": "der Polizist",
+                "group": 0
+              },
+              {
+                "text": "der Mensch",
+                "group": 0
+              },
+              {
+                "text": "der Elefant",
+                "group": 0
+              },
+              {
+                "text": "der Lehrer",
+                "group": 1
+              },
+              {
+                "text": "der Vater",
+                "group": 1
+              },
+              {
+                "text": "der Tisch",
+                "group": 1
+              },
+              {
+                "text": "der Hund",
+                "group": 1
+              },
+              {
+                "text": "der Freund",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Ich frage den ___ (Polizist).",
+          "answer": "*der Polizist* končí na *-ist* → n-deklinace. 4. pád: **den Polizisten**. = Ptám se policisty."
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Das ist das Auto des ___ (Nachbar).",
+          "answer": "*der Nachbar* patří mezi slova, která si pamatuješ zvlášť; 2. pád: **des Nachbarn** (jen -n, bez -s). = To je auto souseda."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich kenne den Student.",
+          "right": "Ich kenne den Studenten.",
+          "why": "*der Student* je v n-deklinaci: ve 4. pádě potřebuje *-en*."
+        },
+        {
+          "type": "summary",
+          "text": "N-deklinace = mužská slova (hlavně lidé a zvířata na *-e*, cizí slova na *-ent, -ist, -ant…*, a *Mensch, Herr, Nachbar*), která mají mimo 1. pád jednotného čísla vždy **-(e)n**."
+        }
+      ]
+    },
+    {
+      "title": "Příběhem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve škole potkáváš *studenty*, na ulici *policisty* a v zoo *slony*. Když o nich mluvíš německy v jiném pádě než v 1., musíš ke slovu přidat **-n** nebo **-en**. Angličtina nic takového nemá (*the student – the student*), čeština naopak mění koncovky skoro u všech slov."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podstatné jméno mužského rodu",
+          "definition": "Slovo se členem *der*.",
+          "example": "der Junge, der Mann, der Löwe"
+        },
+        {
+          "type": "term",
+          "term": "Koncovka",
+          "definition": "Část na konci slova, která se mění podle pádu.",
+          "example": "den Junge**n**"
+        },
+        {
+          "type": "term",
+          "term": "N-deklinace",
+          "definition": "Způsob skloňování některých mužských slov: v 1. pádě jednotného čísla jsou bez koncovky, všude jinde mají **-(e)n**.",
+          "example": "der Löwe – den Löwen – dem Löwen – des Löwen"
+        },
+        {
+          "type": "heading",
+          "text": "Příběh"
+        },
+        {
+          "type": "text",
+          "text": "*Im Zoo arbeitet **ein Junge**. Er füttert jeden Tag **den Löwen** und **den Elefanten**. Ein Tourist fragt **den Jungen**: „Haben Sie keine Angst vor **dem Löwen**?“ Der Junge lacht: „Nein, ich bin der Freund **des Löwen**!“*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: *V zoo pracuje jeden kluk. Každý den krmí lva a slona. Jeden turista se kluka ptá: „Nemáte strach ze lva?“ Kluk se směje: „Ne, jsem kamarád toho lva!“*"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*ein Junge, der Tourist* – 1. pád → bez koncovky",
+            "*den Löwen, den Elefanten, den Jungen* – 4. pád → -(e)n",
+            "*vor dem Löwen* – 3. pád → -n",
+            "*des Löwen* – 2. pád → -n, žádné -s"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Výjimka: der Name"
+        },
+        {
+          "type": "text",
+          "text": "Několik slov (*der Name, der Gedanke, der Buchstabe*) má ve 2. pádě navíc **-s**: *des Namens*. Jinak se chovají jako ostatní: *den Namen, dem Namen*. *Wie ist Ihr Name?* = Jak se jmenujete?"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň správný tvar."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich helfe dem",
+                "after": ".",
+                "options": [
+                  "Kunden",
+                  "Kunde",
+                  "Kundes"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir besuchen den",
+                "after": ".",
+                "options": [
+                  "Präsidenten",
+                  "Präsident",
+                  "Präsidents"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Das ist die Tasche des",
+                "after": ".",
+                "options": [
+                  "Jungen",
+                  "Jungens",
+                  "Junge"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich spreche mit",
+                "after": "Müller.",
+                "options": [
+                  "Herrn",
+                  "Herr",
+                  "Herren"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Der",
+                "after": "kommt aus Prag.",
+                "options": [
+                  "Student",
+                  "Studenten",
+                  "Studentes"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Kennst du den ___ (Kollege) von Anna?",
+          "answer": "*der Kollege* = osoba na *-e* → n-deklinace. 4. pád: **den Kollegen**. = Znáš Annina kolegu?"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Der ___ (Mensch) braucht Wasser. / Wir helfen dem ___ (Mensch).",
+          "answer": "V 1. pádě bez koncovky: **Der Mensch** braucht Wasser. Ve 3. pádě *-en*: Wir helfen **dem Menschen**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich spreche mit Herr Müller.",
+          "right": "Ich spreche mit Herrn Müller.",
+          "why": "*der Herr* je v n-deklinaci, ve 3. pádě má *-n*. Stejně v adrese dopisu: *Herrn Peter Müller*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "die Tasche des Jungens",
+          "right": "die Tasche des Jungen",
+          "why": "Slova v n-deklinaci nemají ve 2. pádě *-s* (kromě *Name, Gedanke, Buchstabe*)."
+        },
+        {
+          "type": "summary",
+          "text": "Mužská slova pro lidi a zvířata na *-e*, cizí slova na *-ent, -ist, -ant…* a *Mensch, Herr, Nachbar* mají mimo 1. pád koncovku **-(e)n**: *der Junge, den Jungen, dem Jungen, des Jungen*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Ich frage den ___.",
+      "options": [
+        "Polizisten",
+        "Polizist",
+        "Polizists"
+      ],
+      "answer": 0,
+      "explanation": "*der Polizist* (-ist) → n-deklinace, 4. pád *den Polizisten*."
+    },
+    {
+      "type": "choice",
+      "question": "Das ist das Zimmer des ___.",
+      "options": [
+        "Jungen",
+        "Jungens",
+        "Junge"
+      ],
+      "answer": 0,
+      "explanation": "N-deklinace má ve 2. pádě *-n*, bez *-s*."
+    },
+    {
+      "type": "choice",
+      "question": "Wie ist Ihr ___? (Jak se jmenujete?)",
+      "options": [
+        "Name",
+        "Namen",
+        "Namens"
+      ],
+      "answer": 0,
+      "explanation": "Je to 1. pád (podmět) → *der Name* bez koncovky."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slova Nachbar: Das ist das Auto des ___.",
+      "answers": [
+        "Nachbarn"
+      ],
+      "explanation": "*der Nachbar* → 2. pád *des Nachbarn*.",
+      "hints": [
+        "Nachbar patří do n-deklinace.",
+        "Ve 2. pádě se tu nepřidává -s."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slova Kunde: Ich helfe dem ___.",
+      "answers": [
+        "Kunden"
+      ],
+      "explanation": "*der Kunde* (osoba na -e) → 3. pád *dem Kunden*.",
+      "hints": [
+        "Osoba končící na -e → n-deklinace."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slova Herr: Ich schreibe an ___ Weber. (= panu Weberovi, 4. pád bez členu)",
+      "answers": [
+        "Herrn"
+      ],
+      "explanation": "*der Herr* má v jednotném čísle jen *-n*: *an Herrn Weber*.",
+      "hints": [
+        "Herr dostává v jednotném čísle kratší koncovku."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo der Lehrer patří do n-deklinace.",
+      "answer": false,
+      "explanation": "*der Lehrer* se skloňuje běžně: *den Lehrer, dem Lehrer, des Lehrers*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo der Elefant patří do n-deklinace.",
+      "answer": true,
+      "explanation": "Cizí slovo na *-ant* pro zvíře → *den Elefanten*."
+    },
+    {
+      "type": "truefalse",
+      "question": "V 1. pádě jednotného čísla mají slova v n-deklinaci koncovku -en: der Studenten.",
+      "answer": false,
+      "explanation": "1. pád jednotného čísla je bez koncovky: *der Student*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj 1. pád se 4. pádem.",
+      "pairs": [
+        [
+          "der Junge",
+          "den Jungen"
+        ],
+        [
+          "der Student",
+          "den Studenten"
+        ],
+        [
+          "der Herr",
+          "den Herrn"
+        ],
+        [
+          "der Lehrer",
+          "den Lehrer"
+        ],
+        [
+          "der Name",
+          "den Namen"
+        ]
+      ],
+      "explanation": "*Lehrer* není v n-deklinaci, ostatní dostávají -(e)n."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo NEpatří do n-deklinace?",
+      "options": [
+        "der Vater",
+        "der Kollege",
+        "der Tourist",
+        "der Mensch"
+      ],
+      "answer": 0,
+      "explanation": "*der Vater* se skloňuje běžně (*den Vater*). Ostatní: *den Kollegen, den Touristen, den Menschen*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu: Ten turista se ptá kluka.",
+      "items": [
+        "Der",
+        "Tourist",
+        "fragt",
+        "den",
+        "Jungen."
+      ],
+      "explanation": "Podmět *der Tourist* (1. pád), předmět *den Jungen* (4. pád s -n)."
+    },
+    {
+      "type": "open",
+      "question": "Co je n-deklinace a která slova do ní patří?",
+      "answer": "Je to skloňování některých mužských podstatných jmen, která mají ve všech pádech kromě 1. pádu jednotného čísla koncovku *-(e)n*. Patří sem hlavně osoby a zvířata na *-e* (der Junge, der Löwe), cizí slova na *-ent, -ist, -ant* (der Student) a slova *der Mensch, der Herr, der Nachbar*."
+    },
+    {
+      "type": "open",
+      "question": "Vyskloňuj slovo der Junge v jednotném čísle.",
+      "answer": "1. pád *der Junge*, 2. pád *des Jungen*, 3. pád *dem Jungen*, 4. pád *den Jungen*. Ve 2. pádě není *-s*."
+    }
+  ]
+}
