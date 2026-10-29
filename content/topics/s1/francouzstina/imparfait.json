@@ -1,0 +1,513 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "imparfait",
+  "title": "Imparfait (tvoření a použití)",
+  "emoji": "🕰️",
+  "explanations": [
+    {
+      "title": "Tvoření",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Když jsem byl malý, **jezdil** jsem každé léto k babičce. **Bylo** teplo a **hráli** jsme si u řeky.“ Takhle vyprávíš o tom, jaké to **bývalo**. Francouzsky na to máš čas **imparfait**."
+        },
+        {
+          "type": "text",
+          "text": "Passé composé už znáš: říká, co se **stalo** (*j’ai mangé* = snědl jsem). Imparfait popisuje, jaké to **bylo** a co se **opakovalo**. Dobrá zpráva: tvoří se skoro u všech sloves stejně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Imparfait",
+          "definition": "Minulý čas pro popis, zvyky a děje, které právě probíhaly. Česky mu nejčastěji odpovídá nedokonavé sloveso: *dělal, jezdil, byl*.",
+          "example": "Je jouais. = Hrál jsem (hrával jsem)."
+        },
+        {
+          "type": "term",
+          "term": "Kmen",
+          "definition": "Část slovesa, ke které přidáš koncovku. U imparfait ho vezmeš z tvaru pro **nous** v přítomném čase.",
+          "example": "nous **parl**ons → kmen *parl-*"
+        },
+        {
+          "type": "term",
+          "term": "Koncovka",
+          "definition": "Konec slova, který se mění podle osoby.",
+          "example": "-ais, -ait, -aient"
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi tvar přítomného času pro **nous**: *nous finissons*.",
+            "Odtrhni koncovku **-ons**: *finiss-*.",
+            "Přidej koncovky imparfait: **-ais, -ais, -ait, -ions, -iez, -aient**.",
+            "Hotovo: *je finissais, nous finissions*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "parler (nous parlons)",
+            "finir (nous finissons)",
+            "faire (nous faisons)"
+          ],
+          "rows": [
+            [
+              "je",
+              "parl**ais**",
+              "finiss**ais**",
+              "fais**ais**"
+            ],
+            [
+              "tu",
+              "parl**ais**",
+              "finiss**ais**",
+              "fais**ais**"
+            ],
+            [
+              "il / elle",
+              "parl**ait**",
+              "finiss**ait**",
+              "fais**ait**"
+            ],
+            [
+              "nous",
+              "parl**ions**",
+              "finiss**ions**",
+              "fais**ions**"
+            ],
+            [
+              "vous",
+              "parl**iez**",
+              "finiss**iez**",
+              "fais**iez**"
+            ],
+            [
+              "ils / elles",
+              "parl**aient**",
+              "finiss**aient**",
+              "fais**aient**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Koncovky *-ais, -ait, -aient* znějí stejně, jako [ɛ] („e“ s otevřenými ústy). Píšou se ale různě."
+        },
+        {
+          "type": "heading",
+          "text": "Výjimka a pravopis"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Jediná výjimka je **être**: kmen *ét-* → *j’étais, tu étais, il était, nous étions, vous étiez, ils étaient*.",
+            "*avoir* je pravidelné: *nous avons* → *j’avais*.",
+            "Slovesa na *-ger* nechávají *e* před *a*: *je mangeais* (ale *nous mangions*).",
+            "Slovesa na *-cer* mají *ç* před *a*: *je commençais* (ale *nous commencions*)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Quand j’étais petit, je",
+                "after": "beaucoup.",
+                "options": [
+                  "jouais",
+                  "jouait",
+                  "jouions"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il",
+                "after": "beau.",
+                "options": [
+                  "faisait",
+                  "faisais",
+                  "fait"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous",
+                "after": "à la campagne.",
+                "options": [
+                  "habitions",
+                  "habitons",
+                  "habitaient"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elles",
+                "after": "contentes.",
+                "options": [
+                  "étaient",
+                  "étais",
+                  "était"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vous",
+                "after": "du piano ?",
+                "options": [
+                  "joueriez",
+                  "jouiez",
+                  "jouez"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř imparfait: prendre, osoba *ils*.",
+          "answer": "*nous prenons* → kmen *pren-* + *-aient* → **ils prenaient**."
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř imparfait: avoir, osoba *nous*, a être, osoba *je*.",
+          "answer": "*nous avons* → *av-* + *-ions* → **nous avions**. *être* je výjimka → **j’étais**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "je mangais",
+          "right": "je mangeais",
+          "why": "U sloves na *-ger* musí před *a* zůstat *e*, aby se *g* četlo měkce [ʒ]. Stejně *je nageais, il voyageait*."
+        },
+        {
+          "type": "summary",
+          "text": "Imparfait: kmen z *nous* (bez *-ons*) + *-ais, -ais, -ait, -ions, -iez, -aient*. Jediná výjimka je *être* (*j’étais*). Pozor na *mangeais, commençais*."
+        }
+      ]
+    },
+    {
+      "title": "Jak to bývalo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dědeček Pierre vypráví vnukovi, jaké to bylo, když byl malý. Celé jeho vyprávění je v čase **imparfait**, protože popisuje, jak věci **byly** a co se **opakovalo**."
+        },
+        {
+          "type": "text",
+          "text": "Kdy imparfait použít, poznáš podle otázky: popisuju, jaké to bylo, nebo co se dělo pořád dokola? Pak je to imparfait."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Imparfait",
+          "definition": "Francouzský minulý čas. Tvoří se z kmene tvaru *nous* + *-ais, -ais, -ait, -ions, -iez, -aient*.",
+          "example": "nous jouons → je jouais"
+        },
+        {
+          "type": "term",
+          "term": "Popis v minulosti",
+          "definition": "Jak něco vypadalo, jaké bylo počasí, jak se kdo cítil, kolik mu bylo let.",
+          "example": "Il faisait froid. = Byla zima."
+        },
+        {
+          "type": "term",
+          "term": "Opakovaný děj (zvyk)",
+          "definition": "Něco, co se v minulosti dělo pravidelně. Česky často „-val“ (hrával, chodíval).",
+          "example": "Tous les dimanches, nous allions chez mamie. = Každou neděli jsme jezdili k babičce."
+        },
+        {
+          "type": "heading",
+          "text": "Dědeček vypráví"
+        },
+        {
+          "type": "text",
+          "text": "*Quand j’**étais** petit, nous **habitions** dans un village. Il n’y **avait** pas de télé. Tous les jours, j’**allais** à l’école à pied. L’hiver, il **faisait** très froid et la neige **était** partout. Le soir, ma mère **lisait** et mon père **réparait** des vélos. J’**étais** heureux.*"
+        },
+        {
+          "type": "text",
+          "text": "= Když jsem byl malý, bydleli jsme na vesnici. Nebyla tam televize. Každý den jsem chodil do školy pěšky. V zimě byla velká zima a všude byl sníh. Večer máma četla a táta opravoval kola. Byl jsem šťastný."
+        },
+        {
+          "type": "heading",
+          "text": "Tři použití imparfait"
+        },
+        {
+          "type": "table",
+          "head": [
+            "použití",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "popis (jak to bylo)",
+              "*Il faisait froid. J’avais dix ans.*",
+              "Byla zima. Bylo mi deset."
+            ],
+            [
+              "zvyk, opakování",
+              "*Tous les jours, j’allais à l’école.*",
+              "Každý den jsem chodil do školy."
+            ],
+            [
+              "děj, který právě probíhal",
+              "*Ma mère lisait.*",
+              "Máma (zrovna) četla."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Srovnej s angličtinou: imparfait často odpovídá *used to* (zvyk: *I used to walk to school*) nebo *was doing* (probíhající děj: *my mother was reading*)."
+        },
+        {
+          "type": "heading",
+          "text": "Slova, která na imparfait ukazují"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*quand j’étais petit(e)* = když jsem byl(a) malý(á)",
+            "*tous les jours, chaque été* = každý den, každé léto",
+            "*d’habitude, souvent* = obvykle, často",
+            "*autrefois, à cette époque* = dřív, v té době"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku a zkontroluj, jestli umíš tvar v imparfait."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "être – je",
+                "back": "j’étais"
+              },
+              {
+                "front": "avoir – il",
+                "back": "il avait"
+              },
+              {
+                "front": "aller – nous",
+                "back": "nous allions"
+              },
+              {
+                "front": "faire – il (počasí)",
+                "back": "il faisait"
+              },
+              {
+                "front": "lire – elle",
+                "back": "elle lisait (nous lisons)"
+              },
+              {
+                "front": "manger – je",
+                "back": "je mangeais"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Každé léto jsme jezdili k moři.",
+          "answer": "Zvyk → imparfait. *aller*: *nous allons* → *nous allions*: **Chaque été, nous allions à la mer.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Bylo mi dvanáct a měl jsem psa.",
+          "answer": "Popis → imparfait. Věk se ve francouzštině „má“: **J’avais douze ans et j’avais un chien.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Quand j’ai été petit, j’ai joué au foot tous les jours.",
+          "right": "Quand j’étais petit, je jouais au foot tous les jours.",
+          "why": "Popis (*být malý*) a zvyk (*tous les jours*) patří do imparfait, ne do passé composé."
+        },
+        {
+          "type": "summary",
+          "text": "Imparfait použiješ na **popis** (jak to bylo), **zvyky** (co se opakovalo) a děje, které právě **probíhaly**. Česky mu většinou odpovídá nedokonavé sloveso: *bydleli, chodil, četla*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Imparfait od *parler* pro *je*:",
+      "options": [
+        "je parlais",
+        "je parlait",
+        "je parlerai"
+      ],
+      "answer": 0,
+      "explanation": "Kmen *parl-* + *-ais*."
+    },
+    {
+      "type": "choice",
+      "question": "Imparfait od *finir* pro *nous*:",
+      "options": [
+        "nous finissions",
+        "nous finions",
+        "nous finissons"
+      ],
+      "answer": 0,
+      "explanation": "*nous finissons* → *finiss-* + *-ions*."
+    },
+    {
+      "type": "choice",
+      "question": "Imparfait od *être* pro *ils*:",
+      "options": [
+        "ils étaient",
+        "ils êtaient",
+        "ils sontaient"
+      ],
+      "answer": 0,
+      "explanation": "*être* má kmen *ét-*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň imparfait od *avoir*: Quand il ___ dix ans, il habitait à Lyon.",
+      "answers": [
+        "avait"
+      ],
+      "explanation": "*nous avons* → *av-* + *-ait*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň imparfait od *faire*: Il ___ beau.",
+      "answers": [
+        "faisait"
+      ],
+      "explanation": "*nous faisons* → *fais-* + *-ait*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň imparfait od *manger*: Je ___ des crêpes tous les dimanches.",
+      "answers": [
+        "mangeais"
+      ],
+      "explanation": "U *-ger* zůstává *e* před *a*."
+    },
+    {
+      "type": "choice",
+      "question": "Z kterého tvaru se tvoří kmen imparfait?",
+      "options": [
+        "z přítomného času pro *nous*",
+        "z infinitivu",
+        "z tvaru pro *je*"
+      ],
+      "answer": 0,
+      "explanation": "Např. *nous prenons* → *pren-* → *je prenais*."
+    },
+    {
+      "type": "choice",
+      "question": "Které sloveso má v imparfait nepravidelný kmen?",
+      "options": [
+        "être",
+        "avoir",
+        "aller"
+      ],
+      "answer": 0,
+      "explanation": "Jen *être*: *j’étais*. Ostatní se tvoří z *nous*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Imparfait se používá pro popis v minulosti a pro opakované děje.",
+      "answer": true,
+      "explanation": "A také pro děj, který právě probíhal."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je commençais“ je správný tvar imparfait slovesa *commencer*.",
+      "answer": true,
+      "explanation": "Před *a* se *c* mění na *ç*, aby se četlo [s]."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso s tvarem imparfait pro *je*.",
+      "pairs": [
+        [
+          "aller",
+          "j’allais"
+        ],
+        [
+          "prendre",
+          "je prenais"
+        ],
+        [
+          "boire",
+          "je buvais"
+        ],
+        [
+          "être",
+          "j’étais"
+        ]
+      ],
+      "explanation": "Kmen z *nous allons, nous prenons, nous buvons*; *être* je výjimka."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta popisuje zvyk?",
+      "options": [
+        "Tous les jours, je prenais le bus.",
+        "Hier, j’ai pris le bus.",
+        "Demain, je vais prendre le bus."
+      ],
+      "answer": 0,
+      "explanation": "*Tous les jours* + imparfait = opakování v minulosti."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď koncovky imparfait od *je* po *ils*.",
+      "items": [
+        "-ais (je)",
+        "-ais (tu)",
+        "-ait (il)",
+        "-ions (nous)",
+        "-iez (vous)",
+        "-aient (ils)"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří imparfait? Ukaž to na slovese *prendre*.",
+      "answer": "Vezmu tvar *nous* v přítomném čase (*nous prenons*), odtrhnu *-ons* a přidám *-ais, -ais, -ait, -ions, -iez, -aient*: *je prenais, tu prenais, il prenait, nous prenions, vous preniez, ils prenaient*."
+    },
+    {
+      "type": "open",
+      "question": "Popiš francouzsky v imparfait, jaké to bylo, když ti bylo šest let (aspoň tři věty).",
+      "answer": "Například: *Quand j’avais six ans, j’habitais à Brno. J’avais un chat. Tous les week-ends, j’allais chez mes grands-parents.*"
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zajmena-primeho-predmetu",
+  "title": "Zájmena přímého předmětu (le, la, les)",
+  "emoji": "🎯",
+  "explanations": [
+    {
+      "title": "Pravidlo a pozice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Vidíš tu tašku? – Jo, vidím **ji**.“ Česky slovo nezopakuješ, nahradíš ho zájmenem *ho, ji, je*. Francouzština to dělá taky. Jen musíš vědět, **které** zájmeno vzít a **kam** ho dát."
+        },
+        {
+          "type": "text",
+          "text": "Bez toho bys pořád opakoval podstatná jména: *Tu vois le film ? Oui, je vois le film.* To zní stejně nepřirozeně jako „Ano, vidím ten film, ten film je dobrý.“"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předmět",
+          "definition": "Část věty, které se činnost týká. Ptáš se na něj „koho? co?“ (nebo jiným pádem).",
+          "example": "Je regarde **la télé**. = Dívám se na **televizi**."
+        },
+        {
+          "type": "term",
+          "term": "Přímý předmět",
+          "definition": "Předmět, který ve francouzštině stojí za slovesem **bez předložky**. Francouzsky *COD* (complément d’objet direct).",
+          "example": "Je cherche **mon sac**. (bez předložky) = Hledám svou tašku."
+        },
+        {
+          "type": "term",
+          "term": "Zájmeno",
+          "definition": "Slovo, které zastoupí podstatné jméno, abychom ho nemuseli opakovat.",
+          "example": "le film → **le**: Je **le** vois."
+        },
+        {
+          "type": "heading",
+          "text": "Tvary zájmen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "osoba / věc",
+            "zájmeno",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "mě",
+              "**me** (m’)",
+              "Il **me** regarde.",
+              "Dívá se na mě."
+            ],
+            [
+              "tě",
+              "**te** (t’)",
+              "Je **t’**aime.",
+              "Miluju tě."
+            ],
+            [
+              "ho (rod mužský)",
+              "**le** (l’)",
+              "Je **le** vois.",
+              "Vidím ho."
+            ],
+            [
+              "ji (rod ženský)",
+              "**la** (l’)",
+              "Je **la** connais.",
+              "Znám ji."
+            ],
+            [
+              "nás",
+              "**nous**",
+              "Elle **nous** invite.",
+              "Zve nás."
+            ],
+            [
+              "vás",
+              "**vous**",
+              "Je **vous** écoute.",
+              "Poslouchám vás."
+            ],
+            [
+              "je (oba rody)",
+              "**les**",
+              "Je **les** achète.",
+              "Kupuju je."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*le* a *la* platí pro lidi i věci. Rod se řídí francouzským slovem: *la voiture* → *la*, i když česky je to „auto“ (*ho*)."
+        },
+        {
+          "type": "heading",
+          "text": "Kam zájmeno patří"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi časované sloveso (to, které se mění podle osoby).",
+            "Zájmeno dej **před** něj: *Je **le** vois.*",
+            "Je-li ve větě infinitiv (*vais voir, veux manger*), dej zájmeno před **infinitiv**: *Je vais **le** voir.*",
+            "V passé composé dej zájmeno před **pomocné sloveso**: *Je **l’**ai vu.*",
+            "V záporu obklopí *ne … pas* zájmeno se slovesem: *Je ne **le** vois pas.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pozor: shoda v passé composé"
+        },
+        {
+          "type": "text",
+          "text": "Když přímé zájmeno stojí **před** *avoir*, příčestí se s ním shoduje: *Tu as vu Marie ? Oui, je **l’ai vue**.* (+ *e*, protože Marie). *Les clés ? Je **les ai prises**.* (+ *es*, protože *les clés* jsou ženského rodu a v množném čísle.)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Tu vois Paul ? Oui, je",
+                "after": "vois.",
+                "options": [
+                  "le",
+                  "la",
+                  "les"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu aimes la pizza ? Oui, je",
+                "after": "aime.",
+                "options": [
+                  "l’",
+                  "la",
+                  "le"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu achètes les billets ? Oui, je",
+                "after": "achète.",
+                "options": [
+                  "les",
+                  "le",
+                  "leur"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu vas regarder le film ? Oui, je vais",
+                "after": "regarder.",
+                "options": [
+                  "le",
+                  "la",
+                  "les"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu connais ma sœur ? Non, je ne",
+                "after": "connais pas.",
+                "options": [
+                  "la",
+                  "le",
+                  "lui"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Nahraď podstatné jméno: Je prends le bus.",
+          "answer": "*le bus* je mužského rodu, jednotné číslo → *le*, před sloveso: **Je le prends.**"
+        },
+        {
+          "type": "example",
+          "question": "Nahraď: Nous allons inviter nos amis.",
+          "answer": "*nos amis* = množné číslo → *les*; je tu infinitiv *inviter*, zájmeno jde před něj: **Nous allons les inviter.**"
+        },
+        {
+          "type": "example",
+          "question": "Nahraď a dej do záporu: J’ai vu la tour Eiffel.",
+          "answer": "*la tour* → *la*, před *avoir* se zkrátí na *l’*; příčestí se shoduje (ženský rod): **Je ne l’ai pas vue.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je vois le. / Je vais le voir pas.",
+          "right": "Je le vois. / Je ne vais pas le voir.",
+          "why": "Zájmeno nikdy nestojí za časovaným slovesem jako v angličtině (*I see him*). Stojí před ním, nebo před infinitivem."
+        },
+        {
+          "type": "summary",
+          "text": "Přímý předmět (bez předložky) nahradíš zájmenem *me, te, le, la, nous, vous, les*. Stojí **před** slovesem, u infinitivu před infinitivem, v passé composé před *avoir* (a příčestí se s ním shoduje)."
+        }
+      ]
+    },
+    {
+      "title": "Chytáky s předložkou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Největší past u tohoto tématu není tvar zájmena, ale otázka, **jestli je předmět přímý**. Čeština a francouzština se tu často liší. Česky „čekám **na** autobus“, ale francouzsky *j’attends le bus*, bez předložky."
+        },
+        {
+          "type": "text",
+          "text": "Proto se nesmíš řídit češtinou. Musíš se podívat na **francouzské** sloveso: má za sebou předložku, nebo ne?"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přímý předmět (COD)",
+          "definition": "Předmět, který stojí za francouzským slovesem **bez předložky**. Nahrazuje se zájmeny *le, la, les* (a *me, te, nous, vous*).",
+          "example": "J’attends **le bus**. → Je **l’**attends."
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo před podstatným jménem, které ukazuje vztah: *à* (k, do), *de* (z, od), *avec* (s), *pour* (pro)…",
+          "example": "Je parle **à** Marie."
+        },
+        {
+          "type": "term",
+          "term": "Elize",
+          "definition": "Vypuštění samohlásky před další samohláskou nebo němým *h*. Píše se apostrof.",
+          "example": "le + aime → je **l’**aime"
+        },
+        {
+          "type": "heading",
+          "text": "Slovesa, kde se čeština plete"
+        },
+        {
+          "type": "table",
+          "head": [
+            "francouzsky (bez předložky)",
+            "česky",
+            "se zájmenem"
+          ],
+          "rows": [
+            [
+              "attendre **le bus**",
+              "čekat **na** autobus",
+              "Je **l’**attends."
+            ],
+            [
+              "écouter **la radio**",
+              "poslouchat rádio",
+              "Je **l’**écoute."
+            ],
+            [
+              "regarder **la télé**",
+              "dívat se **na** televizi",
+              "Je **la** regarde."
+            ],
+            [
+              "chercher **mes clés**",
+              "hledat klíče",
+              "Je **les** cherche."
+            ],
+            [
+              "aider **ma mère**",
+              "pomáhat mamince (komu?)",
+              "Je **l’**aide."
+            ],
+            [
+              "remercier **le prof**",
+              "poděkovat učiteli (komu?)",
+              "Je **le** remercie."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U *aider* a *remercier* se česky ptáš „komu?“, ale francouzsky je předmět přímý. Proto *je l’aide*, ne *je lui aide*."
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor"
+        },
+        {
+          "type": "text",
+          "text": "*— Tu regardes la météo ? — Oui, je **la** regarde tous les matins. — Et ton petit frère, tu **l’**aides à faire ses devoirs ? — Oui, je **l’**aide. Mais aujourd’hui, je ne **l’**ai pas aidé : il était chez mamie.*"
+        },
+        {
+          "type": "text",
+          "text": "= Díváš se na počasí? – Ano, dívám se na něj každé ráno. – A bráchovi pomáháš s úkoly? – Ano, pomáhám mu. Ale dnes jsem mu nepomohl: byl u babičky."
+        },
+        {
+          "type": "heading",
+          "text": "Rozkaz"
+        },
+        {
+          "type": "text",
+          "text": "V kladném rozkazu stojí zájmeno **za** slovesem se spojovníkem: *Regarde-**le** ! Prends-**les** !* A z *me* se stane *moi*: *Aide-**moi** !* V záporném rozkazu je zájmeno zase vpředu: *Ne **le** regarde pas !*"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: nahradíš předmět zájmenem *le/la/les* (přímý), nebo ne (je tam předložka)?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "přímý: le / la / les",
+              "s předložkou"
+            ],
+            "items": [
+              {
+                "text": "attendre le train",
+                "group": 0
+              },
+              {
+                "text": "écouter la musique",
+                "group": 0
+              },
+              {
+                "text": "aider mon père",
+                "group": 0
+              },
+              {
+                "text": "regarder les photos",
+                "group": 0
+              },
+              {
+                "text": "chercher la sortie",
+                "group": 0
+              },
+              {
+                "text": "parler à Marie",
+                "group": 1
+              },
+              {
+                "text": "téléphoner à Paul",
+                "group": 1
+              },
+              {
+                "text": "aller à l’école",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověz zájmenem: Tu attends tes amis ?",
+          "answer": "*attendre* je bez předložky → přímý předmět, *tes amis* = množné číslo: **Oui, je les attends.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Pomoz mi!",
+          "answer": "Kladný rozkaz, zájmeno za slovesem, *me → moi*: **Aide-moi !**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’attends pour le bus. / Je lui aide.",
+          "right": "J’attends le bus. / Je l’aide.",
+          "why": "*attendre* i *aider* mají ve francouzštině přímý předmět, i když česky říkáš „čekat **na**“ a „pomoct **komu**“."
+        },
+        {
+          "type": "summary",
+          "text": "Rozhoduje francouzské sloveso: bez předložky = přímý předmět → *le, la, les*. Pozor na *attendre, écouter, regarder, chercher, aider*. V kladném rozkazu: *Regarde-le ! Aide-moi !*"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Tu vois Paul ? Oui, je ___ vois.",
+      "options": [
+        "le",
+        "la",
+        "lui"
+      ],
+      "answer": 0,
+      "explanation": "*Paul* je mužského rodu → *le*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu aimes la musique ? Oui, je ___ aime.",
+      "options": [
+        "l’",
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "explanation": "Před samohláskou se *la* zkrátí na *l’*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu attends le bus ? Oui, je ___ attends.",
+      "options": [
+        "l’",
+        "lui",
+        "y"
+      ],
+      "answer": 0,
+      "explanation": "*attendre* má přímý předmět (bez předložky), zkráceno před samohláskou."
+    },
+    {
+      "type": "input",
+      "question": "Odpověz zájmenem: Tu achètes les billets ? Oui, je ___ achète.",
+      "answers": [
+        "les"
+      ],
+      "explanation": "Množné číslo → *les*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Tu vas regarder le film ? Oui, je vais ___ regarder.",
+      "answers": [
+        "le"
+      ],
+      "explanation": "Zájmeno stojí před infinitivem."
+    },
+    {
+      "type": "choice",
+      "question": "Kam patří zájmeno? (Nevidím ji.)",
+      "options": [
+        "Je ne la vois pas.",
+        "Je ne vois la pas.",
+        "Je la ne vois pas."
+      ],
+      "answer": 0,
+      "explanation": "Zápor obklopí zájmeno i sloveso."
+    },
+    {
+      "type": "choice",
+      "question": "Tu as vu Marie ? Oui, je l’ai ___.",
+      "options": [
+        "vue",
+        "vu",
+        "vus"
+      ],
+      "answer": 0,
+      "explanation": "Přímé zájmeno před *avoir* → shoda: Marie je ženského rodu → *vue*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Pomáhám mu.“ (bratrovi)?",
+      "options": [
+        "Je l’aide.",
+        "Je lui aide.",
+        "J’aide le."
+      ],
+      "answer": 0,
+      "explanation": "*aider quelqu’un* má přímý předmět, proto *l’*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Regarde-le !“ je správný kladný rozkaz.",
+      "answer": true,
+      "explanation": "V kladném rozkazu stojí zájmeno za slovesem se spojovníkem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Je vais voir le.“ je zájmeno na správném místě.",
+      "answer": false,
+      "explanation": "Zájmeno patří před infinitiv: *Je vais le voir.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj české zájmeno s francouzským.",
+      "pairs": [
+        [
+          "mě",
+          "me"
+        ],
+        [
+          "tě",
+          "te"
+        ],
+        [
+          "ji",
+          "la"
+        ],
+        [
+          "nás",
+          "nous"
+        ],
+        [
+          "je",
+          "les"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Neviděl jsem ho.“",
+      "items": [
+        "Je",
+        "ne",
+        "l’ai",
+        "pas",
+        "vu"
+      ],
+      "explanation": "V passé composé stojí zájmeno před *avoir*, zápor kolem nich."
+    },
+    {
+      "type": "input",
+      "question": "Přelož rozkaz: „Pomoz mi!“ (tykání, sloveso *aider*)",
+      "answers": [
+        "Aide-moi",
+        "Aide moi",
+        "Aide-moi !",
+        "Aide-moi!"
+      ],
+      "explanation": "Kladný rozkaz: zájmeno za slovesem, *me → moi*."
+    },
+    {
+      "type": "open",
+      "question": "Kam ve francouzské větě patří zájmeno přímého předmětu? Uveď tři příklady.",
+      "answer": "Před časované sloveso (*Je le vois*), před infinitiv (*Je vais le voir*), v passé composé před *avoir* (*Je l’ai vu*). V kladném rozkazu za sloveso (*Regarde-le !*)."
+    },
+    {
+      "type": "open",
+      "question": "Proč se řekne „Je l’attends“, i když česky říkáme „čekám na něj“?",
+      "answer": "Protože francouzské *attendre* má předmět bez předložky (přímý), takže ho nahradí *le/la/les*. Rozhoduje francouzské sloveso, ne čeština."
+    }
+  ]
+}

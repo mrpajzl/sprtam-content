@@ -1,0 +1,569 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zvratna-slovesa",
+  "title": "Zvratná slovesa (se lever)",
+  "emoji": "🪥",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky říkáš „vstávám“, ale „myju **se**“, „oblékám **se**“, „jmenuju **se**“. To malé slovíčko *se* říká, že činnost děláš **sám sobě**. Francouzština má totéž, jen se její *se* mění podle osoby."
+        },
+        {
+          "type": "text",
+          "text": "Bez zvratných sloves nepopíšeš svůj den: ráno se probudíš, umyješ, oblékneš, večer si lehneš. Hodí se i k představení: *Je m’appelle Tomáš.* = Jmenuju se Tomáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné sloveso",
+          "definition": "Sloveso, u kterého stojí zvratné zájmeno. Činnost se „vrací“ k tomu, kdo ji dělá. Francouzsky *verbe pronominal*.",
+          "example": "se laver = mýt se, se lever = vstávat"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné zájmeno",
+          "definition": "Malé slovo před slovesem, které odpovídá českému *se/si*. Ve francouzštině má pro každou osobu jiný tvar: *me, te, se, nous, vous, se*.",
+          "example": "je **me** lave = myju se, tu **te** laves = myješ se"
+        },
+        {
+          "type": "term",
+          "term": "Časování",
+          "definition": "Měnění slovesa podle osoby (já, ty, on…). Připomenutí: slovesa na *-er* mají koncovky *-e, -es, -e, -ons, -ez, -ent*.",
+          "example": "je lave, tu laves, il lave, nous lavons, vous lavez, ils lavent"
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka: se laver (mýt se)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "osoba",
+            "zájmeno + sloveso",
+            "česky"
+          ],
+          "rows": [
+            [
+              "je",
+              "je **me** lave",
+              "myju se"
+            ],
+            [
+              "tu",
+              "tu **te** laves",
+              "myješ se"
+            ],
+            [
+              "il / elle / on",
+              "il **se** lave",
+              "myje se"
+            ],
+            [
+              "nous",
+              "nous **nous** lavons",
+              "myjeme se"
+            ],
+            [
+              "vous",
+              "vous **vous** lavez",
+              "myjete se"
+            ],
+            [
+              "ils / elles",
+              "ils **se** lavent",
+              "myjí se"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Před samohláskou nebo němým *h* se *me, te, se* zkrátí na **m’, t’, s’**: *je m’appelle, tu t’habilles, il s’amuse*."
+        },
+        {
+          "type": "heading",
+          "text": "Jak na to"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi osobu: kdo to dělá? (*je, tu, elle…*)",
+            "Vyber zvratné zájmeno pro tu osobu: *je → me, tu → te, il/elle → se, nous → nous, vous → vous, ils/elles → se*.",
+            "Začni-li sloveso samohláskou nebo *h*, zkrať *me/te/se* na *m’/t’/s’*.",
+            "Sloveso vyčasuj normálně jako každé jiné."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Časté zvratné sloveso dne"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*se réveiller* = probudit se",
+            "*se lever* = vstát (*je me lève, nous nous levons*)",
+            "*se laver* = umýt se, *se brosser les dents* = čistit si zuby",
+            "*s’habiller* = obléknout se",
+            "*se dépêcher* = pospíšit si",
+            "*se coucher* = jít spát, *s’amuser* = bavit se"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zápor a minulý čas"
+        },
+        {
+          "type": "text",
+          "text": "Zápor *ne … pas* obklopí zájmeno i sloveso dohromady: *Je **ne** me lève **pas**.* Zájmeno se od slovesa nikdy neodtrhne."
+        },
+        {
+          "type": "text",
+          "text": "V passé composé mají všechna zvratná slovesa pomocné sloveso **être**: *je me suis levé(e), elle s’est habillée, nous nous sommes couchés*. Příčestí se (když za ním není další předmět) shoduje s podmětem, stejně jako u *aller*."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň správné zvratné zájmeno. Nejdřív se podívej na osobu."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je",
+                "after": "réveille à sept heures.",
+                "options": [
+                  "me",
+                  "se",
+                  "te"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous",
+                "after": "levons tôt.",
+                "options": [
+                  "nous",
+                  "se",
+                  "vous"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle",
+                "after": "habille vite.",
+                "options": [
+                  "s’",
+                  "se",
+                  "m’"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vous",
+                "after": "couchez à quelle heure ?",
+                "options": [
+                  "vous",
+                  "se",
+                  "nous"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils",
+                "after": "amusent bien.",
+                "options": [
+                  "s’",
+                  "se",
+                  "nous"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Jmenuju se Eva a moje sestra se jmenuje Lucie.",
+          "answer": "*appeler* začíná samohláskou, takže *me → m’*, *se → s’*: **Je m’appelle Eva et ma sœur s’appelle Lucie.**"
+        },
+        {
+          "type": "example",
+          "question": "Dej do záporu: Tu te dépêches.",
+          "answer": "Zápor obklopí zájmeno i sloveso: **Tu ne te dépêches pas.** (Nepospícháš.)"
+        },
+        {
+          "type": "example",
+          "question": "Dej do passé composé: Elle se couche à dix heures.",
+          "answer": "Zvratné sloveso → *être*. Podmět *elle* je ženského rodu → *couchée*: **Elle s’est couchée à dix heures.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je lave me. / Je ne me pas lave.",
+          "right": "Je me lave. / Je ne me lave pas.",
+          "why": "Zvratné zájmeno stojí vždy **před** slovesem a v záporu tvoří se slovesem jeden celek uvnitř *ne … pas*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je me ai levé.",
+          "right": "Je me suis levé.",
+          "why": "Zvratná slovesa tvoří passé composé s *être*, nikdy s *avoir*."
+        },
+        {
+          "type": "summary",
+          "text": "Zvratné sloveso = zájmeno *me, te, se, nous, vous, se* + sloveso (*je me lave*). Před samohláskou *m’, t’, s’*. V záporu *je ne me lave pas*, v passé composé vždy s *être*: *je me suis lavé(e)*."
+        }
+      ]
+    },
+    {
+      "title": "Ráno u Ley",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Léa je patnáctiletá Francouzka z Lyonu. Podíváme se, jak vypadá její ráno, a přitom zjistíme, jak francouzsky říct „myju se“, „oblékám se“ nebo „pospíchám“."
+        },
+        {
+          "type": "text",
+          "text": "Česky i francouzsky jsou to slovesa se zájmenem, kterému se říká **zvratné**. Angličtina ho většinou vynechá: *I get up, I get dressed*. Francouzština ho naopak nikdy nevynechá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné sloveso",
+          "definition": "Sloveso, kde činnost děláš sám sobě. V češtině má *se* nebo *si*, ve francouzštině *se* (v slovníku: *se laver*, *s’habiller*).",
+          "example": "se réveiller = probudit se"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné zájmeno",
+          "definition": "To malé slovo před slovesem. Mění se podle toho, kdo mluví: *me* (já), *te* (ty), *se* (on, ona, oni), *nous* (my), *vous* (vy).",
+          "example": "tu te réveilles = probouzíš se"
+        },
+        {
+          "type": "term",
+          "term": "Němé h",
+          "definition": "Písmeno *h* na začátku slova, které se nevyslovuje. Chová se jako samohláska, takže se před ním zkracuje (*s’habiller*).",
+          "example": "l’homme, s’habiller"
+        },
+        {
+          "type": "heading",
+          "text": "Léa vypráví"
+        },
+        {
+          "type": "text",
+          "text": "*Je **me** réveille à six heures et demie. Je **me** lève tout de suite. Je **me** lave et je **me** brosse les dents. Puis je **m’**habille. Mon frère Hugo, lui, ne **se** lève pas : il dort ! Alors je crie : « Hugo, lève-toi ! » Nous **nous** dépêchons et nous partons à sept heures et quart.*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: Probouzím se v půl sedmé. Hned vstanu. Umyju se a vyčistím si zuby. Pak se obléknu. Můj brácha Hugo nevstává: spí! Tak křičím: „Hugo, vstávej!“ Pospícháme a odcházíme ve čtvrt na osm."
+        },
+        {
+          "type": "heading",
+          "text": "Co si z příběhu všimnout"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*je me réveille, je me lève* – u *je* je zájmeno **me**.",
+            "*je m’habille* – před samohláskou se *me* zkrátí na **m’**.",
+            "*il ne se lève pas* – zápor obejme **zájmeno i sloveso**.",
+            "*nous nous dépêchons* – u *nous* je zájmeno zase **nous**, takže slovo stojí dvakrát.",
+            "*lève-toi !* – v rozkazu stojí zájmeno **za** slovesem a z *te* se stane **toi**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Rozkaz u zvratných sloves"
+        },
+        {
+          "type": "table",
+          "head": [
+            "kladný rozkaz",
+            "záporný rozkaz",
+            "česky"
+          ],
+          "rows": [
+            [
+              "Lève-**toi** !",
+              "Ne **te** lève pas !",
+              "Vstaň! / Nevstávej!"
+            ],
+            [
+              "Levons-**nous** !",
+              "Ne **nous** levons pas !",
+              "Vstaňme! / Nevstávejme!"
+            ],
+            [
+              "Levez-**vous** !",
+              "Ne **vous** levez pas !",
+              "Vstaňte! / Nevstávejte!"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "A co bylo včera?"
+        },
+        {
+          "type": "text",
+          "text": "Večer Léa píše do deníku: *Ce matin, je **me suis** réveillée à six heures et demie. Hugo **s’est** levé à sept heures !* Všimni si: minulý čas se tvoří s **être** a za *je* (Léa je dívka) se píše *réveillée* s *-e*."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď tvary: které jsou správně a které ne?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "správně",
+              "špatně"
+            ],
+            "items": [
+              {
+                "text": "je me lève",
+                "group": 0
+              },
+              {
+                "text": "tu t’habilles",
+                "group": 0
+              },
+              {
+                "text": "nous nous dépêchons",
+                "group": 0
+              },
+              {
+                "text": "il ne se lave pas",
+                "group": 0
+              },
+              {
+                "text": "je me habille",
+                "group": 1
+              },
+              {
+                "text": "nous se levons",
+                "group": 1
+              },
+              {
+                "text": "il se ne lave pas",
+                "group": 1
+              },
+              {
+                "text": "elle s’est réveillé",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Hugo ráno nespěchá. Jak to řekneš francouzsky?",
+          "answer": "*se dépêcher*, osoba *il* → *se*, zápor kolem obou: **Hugo ne se dépêche pas.**"
+        },
+        {
+          "type": "example",
+          "question": "Léa mamince řekne: „Neobleč se ještě, nejdřív snídaně!“ Jak zní začátek francouzsky (tykání)?",
+          "answer": "Záporný rozkaz: zájmeno zůstává před slovesem jako *te*, a protože *habille* začíná *h*, zkrátí se na *t’*: **Ne t’habille pas encore !**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Lève-te !",
+          "right": "Lève-toi !",
+          "why": "V kladném rozkazu stojí zájmeno za slovesem a *te* se mění na **toi**. V záporu zůstává *te*: *Ne te lève pas.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nous se levons.",
+          "right": "Nous nous levons.",
+          "why": "Zájmeno se řídí osobou. U *nous* je to **nous**, i když to zní zdvojeně."
+        },
+        {
+          "type": "summary",
+          "text": "Zvratná slovesa mají vždy zájmeno podle osoby (*je me, tu te, il se, nous nous, vous vous, ils se*). V rozkazu *lève-toi*, v záporu *je ne me lève pas*, v minulém čase *je me suis levé(e)*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň: Je ___ réveille à sept heures.",
+      "options": [
+        "me",
+        "se",
+        "te"
+      ],
+      "answer": 0,
+      "explanation": "U osoby *je* je zvratné zájmeno *me*."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Nous ___ levons tôt.",
+      "options": [
+        "nous",
+        "se",
+        "vous"
+      ],
+      "answer": 0,
+      "explanation": "U *nous* je zájmeno *nous*: *nous nous levons*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Obléká se.“ (o dívce)?",
+      "options": [
+        "Elle s’habille.",
+        "Elle se habille.",
+        "Elle habille se."
+      ],
+      "answer": 0,
+      "explanation": "*habiller* začíná němým *h* → *se* se zkrátí na *s’*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zvratné zájmeno: Vous ___ couchez à quelle heure ?",
+      "answers": [
+        "vous"
+      ],
+      "explanation": "U *vous* je zájmeno *vous*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zvratné zájmeno: Tu ___ dépêches ?",
+      "answers": [
+        "te"
+      ],
+      "explanation": "U *tu* je zájmeno *te*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je v záporu správně?",
+      "options": [
+        "Je ne me lève pas.",
+        "Je me ne lève pas.",
+        "Je ne lève me pas."
+      ],
+      "answer": 0,
+      "explanation": "Zápor *ne … pas* obklopí zájmeno i sloveso."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Vstaň!“ (jednomu kamarádovi)?",
+      "options": [
+        "Lève-toi !",
+        "Lève-te !",
+        "Te lève !"
+      ],
+      "answer": 0,
+      "explanation": "V kladném rozkazu zájmeno za slovesem, *te* → *toi*."
+    },
+    {
+      "type": "choice",
+      "question": "Passé composé: Elle ___ couchée tard.",
+      "options": [
+        "s’est",
+        "s’a",
+        "a"
+      ],
+      "answer": 0,
+      "explanation": "Zvratná slovesa mají v passé composé *être*: *elle s’est couchée*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je me suis levé“ je správný tvar passé composé slovesa *se lever*.",
+      "answer": true,
+      "explanation": "Zvratné sloveso + *être*. Mluví-li dívka, píše se *levée*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Ils se amusent.“ je všechno správně.",
+      "answer": false,
+      "explanation": "Před samohláskou se *se* zkrátí: *Ils s’amusent.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu se zvratným zájmenem.",
+      "pairs": [
+        [
+          "je",
+          "me"
+        ],
+        [
+          "tu",
+          "te"
+        ],
+        [
+          "elle",
+          "se"
+        ],
+        [
+          "nous",
+          "nous"
+        ],
+        [
+          "vous",
+          "vous"
+        ]
+      ],
+      "explanation": "Ve 3. osobě jednotného i množného čísla je *se*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Nemyju se.“",
+      "items": [
+        "Je",
+        "ne",
+        "me",
+        "lave",
+        "pas"
+      ],
+      "explanation": "Zájmeno se slovesem stojí uprostřed záporu *ne … pas*."
+    },
+    {
+      "type": "input",
+      "question": "Přelož slovesem *s’appeler*: „Jmenuju se Petr.“ Napiš celou větu.",
+      "answers": [
+        "Je m’appelle Petr",
+        "Je m'appelle Petr",
+        "Je m’appelle Petr.",
+        "Je m'appelle Petr."
+      ],
+      "explanation": "Před samohláskou *me → m’*; *appeler* má v tvaru pro *je* dvě *l*: *j’appelle*."
+    },
+    {
+      "type": "open",
+      "question": "Popiš francouzsky aspoň čtyřmi zvratnými slovesy své ráno.",
+      "answer": "Například: *Je me réveille à six heures et demie. Je me lève, je me lave et je me brosse les dents. Puis je m’habille et je me dépêche.*"
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří passé composé zvratných sloves? Uveď příklad.",
+      "answer": "Vždy s pomocným slovesem *être*: zájmeno + *être* + příčestí, které se (bez dalšího předmětu) shoduje s podmětem. Např. *Elle s’est levée à sept heures.*"
+    }
+  ]
+}

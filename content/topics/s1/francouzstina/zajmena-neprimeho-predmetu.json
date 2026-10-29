@@ -1,0 +1,518 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zajmena-neprimeho-predmetu",
+  "title": "Zájmena nepřímého předmětu (lui, leur)",
+  "emoji": "🎁",
+  "explanations": [
+    {
+      "title": "Komu?",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Napíšu **jí** zprávu.“ „Dám **jim** dárek.“ Česky se ptáš **komu?** a odpovídáš *mu, jí, jim*. Francouzsky na to máš zájmena **lui** a **leur**."
+        },
+        {
+          "type": "text",
+          "text": "Budeš je potřebovat pořád: při telefonování, psaní zpráv, dávání dárků nebo když něco někomu říkáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímý předmět",
+          "definition": "Osoba, které se činnost týká, ale ve francouzštině před ní stojí předložka **à**. Francouzsky *COI* (complément d’objet indirect).",
+          "example": "Je parle **à Marie**. = Mluvím s Marií."
+        },
+        {
+          "type": "term",
+          "term": "lui",
+          "definition": "Zastoupí *à* + **jednu** osobu, muže i ženu. Znamená „mu“ i „jí“.",
+          "example": "Je téléphone à Paul / à Léa. → Je **lui** téléphone."
+        },
+        {
+          "type": "term",
+          "term": "leur",
+          "definition": "Zastoupí *à* + **víc** osob. Znamená „jim“. Jako zájmeno nikdy nemá *-s*.",
+          "example": "J’écris à mes parents. → Je **leur** écris."
+        },
+        {
+          "type": "heading",
+          "text": "Všechny tvary"
+        },
+        {
+          "type": "table",
+          "head": [
+            "komu?",
+            "zájmeno",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "mně",
+              "**me** (m’)",
+              "Il **me** parle.",
+              "Mluví se mnou."
+            ],
+            [
+              "tobě",
+              "**te** (t’)",
+              "Je **te** donne le livre.",
+              "Dám ti knihu."
+            ],
+            [
+              "jemu / jí",
+              "**lui**",
+              "Je **lui** écris.",
+              "Píšu mu / jí."
+            ],
+            [
+              "nám",
+              "**nous**",
+              "Elle **nous** répond.",
+              "Odpovídá nám."
+            ],
+            [
+              "vám",
+              "**vous**",
+              "Je **vous** dis merci.",
+              "Děkuju vám."
+            ],
+            [
+              "jim",
+              "**leur**",
+              "Je **leur** téléphone.",
+              "Volám jim."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*me, te, nous, vous* jsou stejné jako u přímého předmětu. Liší se jen 3. osoba: přímý *le, la, les* × nepřímý **lui, leur**."
+        },
+        {
+          "type": "heading",
+          "text": "Slovesa s à + osoba"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*parler à* = mluvit s, *téléphoner à* = volat (komu)",
+            "*donner à* = dát, *offrir à* = darovat",
+            "*écrire à* = psát, *répondre à* = odpovědět",
+            "*dire à* = říct, *demander à* = zeptat se (koho)",
+            "*plaire à* = líbit se: *Ce film **lui** plaît.* = Ten film se mu líbí."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postavení ve větě"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zájmeno stojí **před** časovaným slovesem: *Je **lui** parle.*",
+            "S infinitivem před infinitivem: *Je vais **lui** écrire.*",
+            "V passé composé před *avoir*: *Je **leur** ai téléphoné.* (bez shody příčestí!)",
+            "V záporu: *Je ne **lui** parle pas.*",
+            "V kladném rozkazu za slovesem: *Parle-**lui** ! Donne-**moi** ça !*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Tu écris à Léa ? Oui, je",
+                "after": "écris.",
+                "options": [
+                  "lui",
+                  "la",
+                  "leur"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu téléphones à tes parents ? Oui, je",
+                "after": "téléphone.",
+                "options": [
+                  "leur",
+                  "les",
+                  "lui"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu as parlé au prof ? Oui, je",
+                "after": "ai parlé.",
+                "options": [
+                  "lui",
+                  "l’",
+                  "le"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu vas répondre à tes amis ? Oui, je vais",
+                "after": "répondre.",
+                "options": [
+                  "leur",
+                  "leurs",
+                  "les"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Nahraď: J’offre des fleurs à ma grand-mère.",
+          "answer": "*à ma grand-mère* = *à* + jedna osoba → *lui*: **Je lui offre des fleurs.**"
+        },
+        {
+          "type": "example",
+          "question": "Nahraď a dej do záporu: Nous avons écrit à nos cousins.",
+          "answer": "*à nos cousins* = více osob → *leur*, před *avoir*: **Nous ne leur avons pas écrit.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je leurs téléphone.",
+          "right": "Je leur téléphone.",
+          "why": "Zájmeno *leur* („jim“) se nemění, nikdy nemá *-s*. *Leurs* s *-s* je přivlastňovací zájmeno: *leurs enfants* = jejich děti."
+        },
+        {
+          "type": "summary",
+          "text": "*à* + osoba → *lui* (jedna osoba, muž i žena), *leur* (víc osob); dál *me, te, nous, vous*. Stojí před slovesem (*je lui parle*), před infinitivem, před *avoir*; v kladném rozkazu za slovesem (*parle-lui*)."
+        }
+      ]
+    },
+    {
+      "title": "Dárky a zprávy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Blíží se Vánoce. Tom chystá dárky pro rodinu a píše zprávy kamarádům. Při tom zjistíš, jak ve francouzštině říct *mu, jí, jim* a jak to nesplést s *ho, ji, je*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přímý předmět",
+          "definition": "Předmět bez předložky, nahradíš ho *le, la, les*. Obvykle je to věc, kterou dáváš, píšeš, kupuješ.",
+          "example": "Je donne **le cadeau**. → Je **le** donne."
+        },
+        {
+          "type": "term",
+          "term": "Nepřímý předmět",
+          "definition": "Osoba s předložkou *à*, nahradíš ji *lui, leur*. Obvykle je to ten, **komu** něco dáváš, píšeš.",
+          "example": "Je donne le cadeau **à Léa**. → Je **lui** donne le cadeau."
+        },
+        {
+          "type": "term",
+          "term": "Pořadí zájmen",
+          "definition": "Když ve větě nahradíš věc i osobu, mají obě zájmena pevné pořadí.",
+          "example": "Je **le lui** donne. = Dám jí ho."
+        },
+        {
+          "type": "heading",
+          "text": "Tom vypráví"
+        },
+        {
+          "type": "text",
+          "text": "*Pour ma mère, j’ai un livre. Je **lui** offre un roman policier. Pour mes grands-parents, j’ai des chocolats. Je **leur** donne aussi une carte. Mon ami Hugo m’a écrit hier, mais je ne **lui** ai pas encore répondu. Je vais **lui** répondre ce soir.*"
+        },
+        {
+          "type": "text",
+          "text": "= Pro mámu mám knihu. Daruju jí detektivku. Pro prarodiče mám čokolády. Dám jim taky přání. Kamarád Hugo mi včera psal, ale ještě jsem mu neodpověděl. Odpovím mu dnes večer."
+        },
+        {
+          "type": "heading",
+          "text": "Jak poznat lui od le"
+        },
+        {
+          "type": "table",
+          "head": [
+            "věta",
+            "otázka",
+            "zájmeno"
+          ],
+          "rows": [
+            [
+              "Je regarde **Léa**.",
+              "koho? bez *à*",
+              "Je **la** regarde."
+            ],
+            [
+              "Je parle **à Léa**.",
+              "s *à*",
+              "Je **lui** parle."
+            ],
+            [
+              "J’attends **mes amis**.",
+              "bez *à*",
+              "Je **les** attends."
+            ],
+            [
+              "J’écris **à mes amis**.",
+              "s *à*",
+              "Je **leur** écris."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor, čeština tu může klamat: *aider* (pomáhat komu) má ve francouzštině přímý předmět (*je l’aide*), ale *téléphoner à* (volat komu) nepřímý (*je lui téléphone*). Vždy se podívej, jestli je za francouzským slovesem *à*."
+        },
+        {
+          "type": "heading",
+          "text": "Dvě zájmena najednou"
+        },
+        {
+          "type": "text",
+          "text": "*Je donne le livre à Léa.* → *Je **le lui** donne.* Pořadí je pevné: nejdřív **me, te, nous, vous**, pak **le, la, les**, nakonec **lui, leur**. Proto *Il **me le** donne* (dává mi ho), ale *Je **le lui** donne* (dám jí ho)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: nahradí se osoba zájmenem *lui/leur*, nebo *le/la/les*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "lui / leur",
+              "le / la / les"
+            ],
+            "items": [
+              {
+                "text": "téléphoner à Marc",
+                "group": 0
+              },
+              {
+                "text": "écrire à ses parents",
+                "group": 0
+              },
+              {
+                "text": "répondre au prof",
+                "group": 0
+              },
+              {
+                "text": "offrir un cadeau à Léa",
+                "group": 0
+              },
+              {
+                "text": "aider Marc",
+                "group": 1
+              },
+              {
+                "text": "inviter ses parents",
+                "group": 1
+              },
+              {
+                "text": "attendre le prof",
+                "group": 1
+              },
+              {
+                "text": "regarder Léa",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověz zájmenem: Tu as téléphoné à ton père ?",
+          "answer": "*téléphoner à* → nepřímý předmět, jedna osoba → *lui*, před *avoir*: **Oui, je lui ai téléphoné.**"
+        },
+        {
+          "type": "example",
+          "question": "Nahraď obě části: Je donne les clés à mes voisins.",
+          "answer": "*les clés* → *les*, *à mes voisins* → *leur*. Pořadí *les* před *leur*: **Je les leur donne.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je la téléphone.",
+          "right": "Je lui téléphone.",
+          "why": "*téléphoner à quelqu’un* má předložku *à*, proto nepřímé *lui*, i u ženy. *lui* platí pro muže i ženy."
+        },
+        {
+          "type": "summary",
+          "text": "Za *à* + osoba → *lui/leur*, bez předložky → *le/la/les*. *lui* = mu i jí. Pořadí dvou zájmen: *me/te/nous/vous* → *le/la/les* → *lui/leur* (*je le lui donne*)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Tu écris à Léa ? Oui, je ___ écris.",
+      "options": [
+        "lui",
+        "l’",
+        "leur"
+      ],
+      "answer": 0,
+      "explanation": "*écrire à* + jedna osoba → *lui* (i u ženy)."
+    },
+    {
+      "type": "choice",
+      "question": "Tu téléphones à tes parents ? Oui, je ___ téléphone.",
+      "options": [
+        "leur",
+        "les",
+        "leurs"
+      ],
+      "answer": 0,
+      "explanation": "*à* + víc osob → *leur*, bez *-s*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu aides ta sœur ? Oui, je ___ aide.",
+      "options": [
+        "l’",
+        "lui",
+        "leur"
+      ],
+      "answer": 0,
+      "explanation": "*aider quelqu’un* má přímý předmět → *la*, zkráceno *l’*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Tu as parlé au directeur ? Oui, je ___ ai parlé.",
+      "answers": [
+        "lui"
+      ],
+      "explanation": "*parler à* + jedna osoba → *lui*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Tu vas répondre à tes amis ? Oui, je vais ___ répondre.",
+      "answers": [
+        "leur"
+      ],
+      "explanation": "Více osob → *leur*, před infinitivem."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Je ne leur ai pas écrit.",
+        "Je ne ai pas leur écrit.",
+        "Je leur n’ai pas écrit."
+      ],
+      "answer": 0,
+      "explanation": "Zájmeno před *avoir*, zápor obklopí zájmeno i *avoir*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Řekni mu pravdu!“?",
+      "options": [
+        "Dis-lui la vérité !",
+        "Lui dis la vérité !",
+        "Dis-le la vérité !"
+      ],
+      "answer": 0,
+      "explanation": "Kladný rozkaz: zájmeno za slovesem, *dire à* → *lui*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zájmeno *lui* může znamenat „mu“ i „jí“.",
+      "answer": true,
+      "explanation": "*lui* je pro jednu osobu bez ohledu na rod."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je leurs donne un cadeau.“ je správně.",
+      "answer": false,
+      "explanation": "Zájmeno *leur* nemá nikdy *-s*: *Je leur donne un cadeau.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "V passé composé se příčestí s nepřímým zájmenem neshoduje: „Je lui ai écrit.“",
+      "answer": true,
+      "explanation": "Shoda je jen s přímým předmětem (*le, la, les*) před *avoir*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj české zájmeno s francouzským.",
+      "pairs": [
+        [
+          "mně",
+          "me"
+        ],
+        [
+          "jí",
+          "lui"
+        ],
+        [
+          "nám",
+          "nous"
+        ],
+        [
+          "vám",
+          "vous"
+        ],
+        [
+          "jim",
+          "leur"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Nahraď obě části: Je donne le livre à Paul.",
+      "options": [
+        "Je le lui donne.",
+        "Je lui le donne.",
+        "Je le leur donne."
+      ],
+      "answer": 0,
+      "explanation": "Pořadí *le* před *lui*; Paul je jedna osoba → *lui*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Zavolám jim zítra.“",
+      "items": [
+        "Je",
+        "vais",
+        "leur",
+        "téléphoner",
+        "demain"
+      ],
+      "explanation": "Zájmeno stojí před infinitivem."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi „Je la regarde“ a „Je lui parle“?",
+      "answer": "*regarder* má přímý předmět (bez předložky) → *la*. *parler à* má nepřímý předmět s *à* → *lui*. Rozhoduje, jestli má francouzské sloveso předložku *à*."
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky, komu co daruješ k Vánocům, a použij *lui* a *leur*.",
+      "answer": "Například: *À ma sœur, je lui offre un livre. À mes parents, je leur offre un voyage. À mon ami, je lui donne un jeu.*"
+    }
+  ]
+}
