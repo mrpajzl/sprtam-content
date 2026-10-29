@@ -1,0 +1,546 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "stupnovani-pridavnych-jmen",
+  "title": "Stupňování přídavných jmen (als, wie)",
+  "emoji": "📈",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kdo je vyšší? Které město je větší? Co máš nejraději? Abys mohl věci porovnávat, potřebuješ **stupňování**: velký – větší – největší. Němčina to má jednodušší než čeština: skoro vždy stačí přidat **-er** a **-sten**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které říká, jaký kdo nebo co je.",
+          "example": "groß – velký, schnell – rychlý"
+        },
+        {
+          "type": "term",
+          "term": "Příslovce",
+          "definition": "Slovo, které říká, jak se něco dělá. V němčině má často stejný tvar jako přídavné jméno.",
+          "example": "Er läuft schnell. – Běží rychle."
+        },
+        {
+          "type": "term",
+          "term": "2. stupeň (komparativ)",
+          "definition": "Tvar pro porovnání dvou věcí: větší, rychlejší. Německy **-er**.",
+          "example": "schneller – rychlejší"
+        },
+        {
+          "type": "term",
+          "term": "3. stupeň (superlativ)",
+          "definition": "Tvar pro „ze všech nejvíc“. Německy **am …sten**.",
+          "example": "am schnellsten – nejrychleji"
+        },
+        {
+          "type": "heading",
+          "text": "Základní pravidlo"
+        },
+        {
+          "type": "table",
+          "head": [
+            "1. stupeň",
+            "2. stupeň",
+            "3. stupeň"
+          ],
+          "rows": [
+            [
+              "schnell – rychlý",
+              "schnell**er**",
+              "am schnell**sten**"
+            ],
+            [
+              "klein – malý",
+              "klein**er**",
+              "am klein**sten**"
+            ],
+            [
+              "billig – levný",
+              "billig**er**",
+              "am billig**sten**"
+            ],
+            [
+              "interessant – zajímavý",
+              "interessant**er**",
+              "am interessant**esten**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Když slovo končí na **-d, -t, -s, -ß, -z**, vloží se ve 3. stupni **e**, aby se to dalo vyslovit: *am interessant**e**sten, am kürz**e**sten, am heiß**e**sten*."
+        },
+        {
+          "type": "heading",
+          "text": "Přehláska u krátkých slov"
+        },
+        {
+          "type": "text",
+          "text": "Mnoho krátkých (jednoslabičných) přídavných jmen dostane přehlásku: *alt – **ä**lter – am **ä**ltesten* (starý), *jung – j**ü**nger – am j**ü**ngsten* (mladý), *kalt – k**ä**lter* (studený), *warm – w**ä**rmer* (teplý), *lang – l**ä**nger* (dlouhý), *kurz – k**ü**rzer* (krátký), *groß – gr**ö**ßer – am gr**ö**ßten* (velký; bez vloženého e!)."
+        },
+        {
+          "type": "heading",
+          "text": "Nepravidelné tvary"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "gut – dobrý",
+                "back": "besser – am besten"
+              },
+              {
+                "front": "viel – hodně",
+                "back": "mehr – am meisten"
+              },
+              {
+                "front": "gern – rád",
+                "back": "lieber – am liebsten"
+              },
+              {
+                "front": "hoch – vysoký",
+                "back": "höher – am höchsten"
+              },
+              {
+                "front": "nah – blízký",
+                "back": "näher – am nächsten"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "als, nebo wie?"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Jsou věci **různé**? → 2. stupeň + **als** (než): *Tom ist größer **als** Paul.* – Tom je větší než Pavel.",
+            "Jsou věci **stejné**? → 1. stupeň + **so … wie** (stejně … jako): *Tom ist **so** groß **wie** Paul.* – Tom je stejně velký jako Pavel.",
+            "Ze všech nejvíc? → **am …sten**: *Tom ist **am größten**.* – Tom je největší."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ein Auto ist schneller",
+                "after": "ein Fahrrad.",
+                "options": [
+                  "als",
+                  "wie"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Anna ist so alt",
+                "after": "Petra.",
+                "options": [
+                  "wie",
+                  "als"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Im Juli ist es",
+                "after": "als im Mai.",
+                "options": [
+                  "wärmer",
+                  "warmer",
+                  "mehr warm"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pizza esse ich am",
+                "after": ".",
+                "options": [
+                  "liebsten",
+                  "gernsten",
+                  "meisten gern"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Porovnej: Prag (1,3 Mio. Einwohner) – Brno (400 000 Einwohner). Použij groß.",
+          "answer": "Různé → 2. stupeň + *als*. *groß* má přehlásku: **Prag ist größer als Brno.** (Praha je větší než Brno.)"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Mein Bruder ist ___ als ich. (jung)",
+          "answer": "*jung* je krátké slovo → přehláska + *-er*: **jünger**. *Mein Bruder ist jünger als ich.* (Můj bratr je mladší než já.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Er ist größer wie ich.",
+          "right": "Er ist größer als ich.",
+          "why": "Po 2. stupni patří ve spisovné němčině **als** (než). *wie* jen u stejné míry: *so groß wie*."
+        },
+        {
+          "type": "summary",
+          "text": "**-er** (+ als) = víc než, **am …sten** = nejvíc, **so … wie** = stejně jako. Krátká slova často s přehláskou, *gut – besser – am besten*."
+        }
+      ]
+    },
+    {
+      "title": "Porovnávání ve třídě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve třídě se pořád porovnává: kdo běhá nejrychleji, kdo je nejvyšší, který předmět je nejtěžší. Pojďme si na takovém porovnávání ukázat, jak to dělají Němci. Pak to zkus sám o svých kamarádech."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Stupňování",
+          "definition": "Měnění přídavného jména nebo příslovce, když porovnáváme: velký – větší – největší.",
+          "example": "klein – kleiner – am kleinsten"
+        },
+        {
+          "type": "term",
+          "term": "als",
+          "definition": "„než“. Stojí za 2. stupněm, když jsou věci **různé**.",
+          "example": "größer als ich – větší než já"
+        },
+        {
+          "type": "term",
+          "term": "so … wie",
+          "definition": "„stejně … jako“. Stojí kolem 1. stupně, když jsou věci **stejné**.",
+          "example": "so groß wie ich – stejně velký jako já"
+        },
+        {
+          "type": "term",
+          "term": "Přehláska",
+          "definition": "Tečky nad a, o, u (ä, ö, ü). U krátkých přídavných jmen se při stupňování často objeví.",
+          "example": "alt → älter"
+        },
+        {
+          "type": "heading",
+          "text": "Tři kamarádi"
+        },
+        {
+          "type": "text",
+          "text": "*Jonas ist 1,70 m groß, Leon 1,80 m und Mia auch 1,70 m.*"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*Leon ist **größer als** Jonas.* – Leon je vyšší než Jonas.",
+            "*Jonas ist **so groß wie** Mia.* – Jonas je stejně vysoký jako Mia.",
+            "*Leon ist **am größten**.* – Leon je nejvyšší."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: německy se o výšce člověka říká *groß* (velký). *hoch* (vysoký) je pro hory a budovy: *Die Schneekoppe ist höher als der Ještěd.* (Sněžka je vyšší než Ještěd.)"
+        },
+        {
+          "type": "heading",
+          "text": "Co máš nejradši?"
+        },
+        {
+          "type": "text",
+          "text": "Slovo *gern* (rád) se stupňuje nepravidelně: *gern – lieber – am liebsten*."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Německy",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Ich spiele **gern** Tennis.",
+              "Rád hraju tenis."
+            ],
+            [
+              "Ich spiele **lieber** Fußball.",
+              "Raději hraju fotbal."
+            ],
+            [
+              "Ich spiele **am liebsten** Volleyball.",
+              "Nejraději hraju volejbal."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Srovnej s angličtinou"
+        },
+        {
+          "type": "text",
+          "text": "Angličtina říká *tall – taller – the tallest* a *taller **than***. Němčina: *groß – größer – am größten* a *größer **als***. Jen u dlouhých slov angličtina používá *more* (*more interesting*), němčina ne: vždycky **interessanter**."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď tvary: 2. stupeň, nebo 3. stupeň?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "2. stupeň (víc)",
+              "3. stupeň (nejvíc)"
+            ],
+            "items": [
+              {
+                "text": "besser",
+                "group": 0
+              },
+              {
+                "text": "älter",
+                "group": 0
+              },
+              {
+                "text": "lieber",
+                "group": 0
+              },
+              {
+                "text": "mehr",
+                "group": 0
+              },
+              {
+                "text": "interessanter",
+                "group": 0
+              },
+              {
+                "text": "am besten",
+                "group": 1
+              },
+              {
+                "text": "am ältesten",
+                "group": 1
+              },
+              {
+                "text": "am liebsten",
+                "group": 1
+              },
+              {
+                "text": "am meisten",
+                "group": 1
+              },
+              {
+                "text": "am interessantesten",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Matematika je těžší než němčina. (schwer)",
+          "answer": "*schwer* + *-er* = *schwerer*, různé věci → *als*: **Mathe ist schwerer als Deutsch.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Moje sestra je stejně stará jako ty. (alt)",
+          "answer": "Stejná míra → *so … wie* a 1. stupeň (bez *-er*): **Meine Schwester ist so alt wie du.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Deutsch ist mehr interessant als Mathe.",
+          "right": "Deutsch ist interessanter als Mathe.",
+          "why": "Němčina nepoužívá *mehr* jako angličtina *more*. I dlouhé slovo dostane prostě *-er*."
+        },
+        {
+          "type": "summary",
+          "text": "Různé → **-er + als**. Stejné → **so … wie**. Nejvíc → **am …sten**. Pozor na *gut – besser*, *gern – lieber*, *viel – mehr*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Ein Auto ist schneller ___ ein Fahrrad.",
+      "options": [
+        "als",
+        "wie",
+        "dann"
+      ],
+      "answer": 0,
+      "explanation": "Po 2. stupni → *als*."
+    },
+    {
+      "type": "choice",
+      "question": "Anna ist so groß ___ Petra.",
+      "options": [
+        "wie",
+        "als",
+        "wenn"
+      ],
+      "answer": 0,
+      "explanation": "Stejná míra → *so … wie*."
+    },
+    {
+      "type": "choice",
+      "question": "2. stupeň od „gut“ je:",
+      "options": [
+        "besser",
+        "guter",
+        "güter"
+      ],
+      "answer": 0,
+      "explanation": "Nepravidelné: *gut – besser – am besten*."
+    },
+    {
+      "type": "choice",
+      "question": "3. stupeň od „alt“ je:",
+      "options": [
+        "am ältesten",
+        "am altsten",
+        "am ältsten"
+      ],
+      "answer": 0,
+      "explanation": "Přehláska a po *-t* vložené *e*: *am ältesten*.",
+      "hints": [
+        "Slovo končí na -t."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš 2. stupeň od „klein“.",
+      "answers": [
+        "kleiner"
+      ],
+      "explanation": "*klein* + *-er*."
+    },
+    {
+      "type": "input",
+      "question": "Napiš 2. stupeň od „jung“.",
+      "answers": [
+        "jünger",
+        "juenger"
+      ],
+      "explanation": "Krátké slovo → přehláska + *-er*.",
+      "hints": [
+        "Krátká přídavná jména často dostanou přehlásku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Ich trinke ___ Tee als Kaffee. (raději; gern)",
+      "answers": [
+        "lieber"
+      ],
+      "explanation": "*gern – lieber – am liebsten*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Er ist größer wie ich.“ je ve spisovné němčině správně.",
+      "answer": false,
+      "explanation": "Po 2. stupni *als*: *größer als ich*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„am größten“ se píše bez vloženého e, i když groß končí na ß.",
+      "answer": true,
+      "explanation": "*groß – größer – am größten* je výjimka."
+    },
+    {
+      "type": "match",
+      "question": "Spoj 1. stupeň s 2. stupněm.",
+      "pairs": [
+        [
+          "viel",
+          "mehr"
+        ],
+        [
+          "gern",
+          "lieber"
+        ],
+        [
+          "hoch",
+          "höher"
+        ],
+        [
+          "warm",
+          "wärmer"
+        ],
+        [
+          "gut",
+          "besser"
+        ]
+      ],
+      "explanation": "Pozor na nepravidelné tvary a přehlásky."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejmenší míry po největší.",
+      "items": [
+        "gut",
+        "besser",
+        "am besten"
+      ],
+      "explanation": "1. stupeň, 2. stupeň, 3. stupeň."
+    },
+    {
+      "type": "choice",
+      "question": "Přelož: „Němčina je zajímavější než zeměpis.“",
+      "options": [
+        "Deutsch ist interessanter als Erdkunde.",
+        "Deutsch ist mehr interessant als Erdkunde.",
+        "Deutsch ist interessanter wie Erdkunde."
+      ],
+      "answer": 0,
+      "explanation": "I dlouhé slovo jen *-er*, a *als*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš o člověku, že je vyšší než ty?",
+      "options": [
+        "Er ist größer als ich.",
+        "Er ist höher als ich.",
+        "Er ist mehr groß als ich."
+      ],
+      "answer": 0,
+      "explanation": "O výšce člověka se říká *groß*; *hoch* je pro hory a budovy."
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ als a kdy wie?",
+      "answer": "*als* (než) po 2. stupni, když jsou věci různé: größer als. *so … wie* (stejně jako) s 1. stupněm, když jsou stejné: so groß wie."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej německy dvěma větami dva své kamarády nebo dva předměty ve škole.",
+      "answer": "Například: Tom ist größer als Jan. Mathe ist schwerer als Deutsch, aber Sport mag ich am liebsten."
+    }
+  ]
+}

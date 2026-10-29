@@ -1,0 +1,542 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zvratna-slovesa",
+  "title": "Zvratná slovesa (sich waschen)",
+  "emoji": "🪞",
+  "explanations": [
+    {
+      "title": "Tabulka a pravidlo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky se ráno **myješ**, **oblékáš** a **těšíš** se na víkend. To malé slovo *se* nebo *si* ukazuje, že děj míří zpátky na tebe. Němčina má totéž, jen má pro každou osobu jiné slovo."
+        },
+        {
+          "type": "text",
+          "text": "Bez zvratných sloves nepopíšeš běžný den: vstávání, oblékání, spěchání, radost i to, že se s někým potkáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné sloveso",
+          "definition": "Sloveso, u kterého děj míří zpátky na toho, kdo ho dělá. V češtině má u sebe *se* nebo *si*.",
+          "example": "mýt se = sich waschen"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné zájmeno",
+          "definition": "Slovo, které u zvratného slovesa ukazuje „sám sebe“. Česky *se/si*, německy *mich, dich, sich, uns, euch*.",
+          "example": "Ich wasche **mich**. – Myju se."
+        },
+        {
+          "type": "term",
+          "term": "Osoba",
+          "definition": "Kdo děj dělá: já, ty, on/ona/ono, my, vy, oni (a zdvořilé Vy).",
+          "example": "ich, du, er/sie/es, wir, ihr, sie/Sie"
+        },
+        {
+          "type": "heading",
+          "text": "Zájmeno se mění s osobou"
+        },
+        {
+          "type": "text",
+          "text": "Česky řekneš *se* pro všechny osoby: myju se, myješ se, myjeme se. Němčina má jiné zájmeno skoro pro každou osobu. Jen 3. osoba a zdvořilé *Sie* mají *sich*."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "sich waschen",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "ich",
+              "wasche **mich**",
+              "myju se"
+            ],
+            [
+              "du",
+              "wäschst **dich**",
+              "myješ se"
+            ],
+            [
+              "er/sie/es",
+              "wäscht **sich**",
+              "myje se"
+            ],
+            [
+              "wir",
+              "waschen **uns**",
+              "myjeme se"
+            ],
+            [
+              "ihr",
+              "wascht **euch**",
+              "myjete se"
+            ],
+            [
+              "sie/Sie",
+              "waschen **sich**",
+              "myjí se / myjete se (vykání)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Častá zvratná slovesa"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Německy",
+            "Česky",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "sich anziehen",
+              "obléknout se",
+              "*Ich ziehe mich an.* – Oblékám se."
+            ],
+            [
+              "sich beeilen",
+              "pospíšit si",
+              "*Beeil dich!* – Pospěš si!"
+            ],
+            [
+              "sich freuen auf",
+              "těšit se na",
+              "*Wir freuen uns auf die Ferien.* – Těšíme se na prázdniny."
+            ],
+            [
+              "sich interessieren für",
+              "zajímat se o",
+              "*Er interessiert sich für Musik.* – Zajímá se o hudbu."
+            ],
+            [
+              "sich treffen",
+              "sejít se, potkat se",
+              "*Wir treffen uns um acht.* – Sejdeme se v osm."
+            ],
+            [
+              "sich setzen",
+              "posadit se",
+              "*Setzen Sie sich, bitte.* – Posaďte se, prosím."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kam zájmeno patří"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Sloveso dej na 2. místo ve větě a vyčasuj ho.",
+            "Zvratné zájmeno dej hned za sloveso (podle osoby: mich, dich, sich, uns, euch, sich).",
+            "Když věta začíná něčím jiným než podmětem, prohodí se podmět se slovesem: *Morgen treffe ich mich mit Eva.*",
+            "U odlučitelného slovesa jde předpona na konec: *Ich ziehe mich schnell **an**.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich freue",
+                "after": "auf das Wochenende.",
+                "options": [
+                  "mich",
+                  "sich",
+                  "dich"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du musst",
+                "after": "beeilen!",
+                "options": [
+                  "dich",
+                  "mich",
+                  "sich"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir treffen",
+                "after": "vor der Schule.",
+                "options": [
+                  "uns",
+                  "sich",
+                  "euch"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Interessiert ihr",
+                "after": "für Sport?",
+                "options": [
+                  "euch",
+                  "uns",
+                  "sich"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Anna zieht",
+                "after": "an.",
+                "options": [
+                  "sich",
+                  "ihr",
+                  "mich"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Těšíme se na prázdniny. (sich freuen auf, die Ferien – množné číslo)",
+          "answer": "Osoba *wir* → zájmeno *uns*. *sich freuen auf* + 4. pád; *die Ferien* zůstávají *die*: **Wir freuen uns auf die Ferien.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Rychle se oblékáš. (sich anziehen, schnell)",
+          "answer": "*du* → *ziehst*, zájmeno *dich* hned za sloveso, předpona *an* na konec: **Du ziehst dich schnell an.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich wasche sich.",
+          "right": "Ich wasche mich.",
+          "why": "Česky je *se* u všech osob, německy ne. *sich* patří jen ke 3. osobě a ke zdvořilému *Sie*. Pro *ich* je *mich*."
+        },
+        {
+          "type": "summary",
+          "text": "Zvratné zájmeno se mění s osobou: **mich, dich, sich, uns, euch, sich**. Stojí hned za časovaným slovesem."
+        }
+      ]
+    },
+    {
+      "title": "Ráno s Lukasem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lukas je patnáctiletý kluk z Mnichova. Ráno zaspal a teď všechno dělá ve spěchu. Jeho ráno je plné zvratných sloves. Sleduj, jak se zájmeno mění podle toho, o kom je řeč."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné sloveso",
+          "definition": "Sloveso, jehož děj se vrací na podmět. Česky poznáš podle *se* nebo *si*, německy podle *sich* v infinitivu.",
+          "example": "sich waschen – mýt se, sich beeilen – pospíšit si"
+        },
+        {
+          "type": "term",
+          "term": "Infinitiv",
+          "definition": "Základní tvar slovesa, jak je ve slovníku.",
+          "example": "sich waschen, sich anziehen"
+        },
+        {
+          "type": "term",
+          "term": "Zvratné zájmeno",
+          "definition": "Slovíčko *mich, dich, sich, uns, euch, sich*. Řekne, kdo je ten „sám“, ke komu se děj vrací.",
+          "example": "du wäschst **dich** – myješ se"
+        },
+        {
+          "type": "heading",
+          "text": "Příběh"
+        },
+        {
+          "type": "text",
+          "text": "*Es ist schon sieben Uhr! Lukas steht schnell auf und wäscht **sich**. Dann zieht er **sich** an. Seine Mutter ruft: „Lukas, beeil **dich**!“ Lukas antwortet: „Ich beeile **mich** ja!“*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: Už je sedm hodin! Lukas rychle vstane a umyje se. Pak se obleče. Máma volá: „Lukasi, pospěš si!“ Lukas odpovídá: „Vždyť já si pospíchám!“"
+        },
+        {
+          "type": "text",
+          "text": "*In der Schule trifft er seine Freundin Mia. „Wir treffen **uns** heute Nachmittag, ja? Ich freue **mich** schon!“* – Ve škole potká kamarádku Miu. „Sejdeme se odpoledne, ano? Už se těším!“"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*Lukas wäscht sich* – on → **sich**",
+            "*beeil dich* – ty → **dich**",
+            "*ich beeile mich* – já → **mich**",
+            "*wir treffen uns* – my → **uns**"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Mýt si ruce: mir a dir"
+        },
+        {
+          "type": "text",
+          "text": "Když myješ **něco na sobě** (ruce, zuby, vlasy), česky řekneš *si*: myju si ruce. Němčina pak dává pro *ich* a *du* jiný tvar, **mir** a **dir**. Ostatní osoby zůstávají stejné (sich, uns, euch, sich)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Celý já",
+            "Něco na mně"
+          ],
+          "rows": [
+            [
+              "*Ich wasche mich.* – Myju se.",
+              "*Ich wasche mir die Hände.* – Myju si ruce."
+            ],
+            [
+              "*Du kämmst dich.* – Češeš se.",
+              "*Du kämmst dir die Haare.* – Češeš si vlasy."
+            ],
+            [
+              "*Er wäscht sich.* – Myje se.",
+              "*Er putzt sich die Zähne.* – Čistí si zuby."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: česky zvratné, německy ne (a naopak)"
+        },
+        {
+          "type": "text",
+          "text": "Ne každé české sloveso se *se* je zvratné i v němčině. Musíš se je učit se zájmenem."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "učit se",
+                "back": "*lernen* – bez zájmena! *Ich lerne Deutsch.*"
+              },
+              {
+                "front": "smát se",
+                "back": "*lachen* – bez zájmena. *Wir lachen.*"
+              },
+              {
+                "front": "odpočívat",
+                "back": "*sich ausruhen* – zvratné. *Ich ruhe mich aus.*"
+              },
+              {
+                "front": "vzpomenout si na",
+                "back": "*sich erinnern an* – *Ich erinnere mich an dich.*"
+              },
+              {
+                "front": "cítit se",
+                "back": "*sich fühlen* – *Wie fühlst du dich?*"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň zájmeno: Lukas, putzt du ___ die Zähne?",
+          "answer": "Čistíš si zuby – něco na sobě (zuby) a osoba *du* → **dir**: *Putzt du dir die Zähne?*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Mia se zajímá o koně. (sich interessieren für, die Pferde)",
+          "answer": "Mia = ona → *sich*. *für* + 4. pád, *die Pferde*: **Mia interessiert sich für Pferde.** (*Pferde* bez členu = koně obecně.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich lerne mich Deutsch.",
+          "right": "Ich lerne Deutsch.",
+          "why": "*učit se* je česky zvratné, ale německé *lernen* zvratné není. Nepřekládej *se* automaticky."
+        },
+        {
+          "type": "summary",
+          "text": "Zájmeno ukazuje osobu: ich **mich**, du **dich**, er/sie/es **sich**, wir **uns**, ihr **euch**, sie/Sie **sich**. U „něco na sobě“ je ich **mir**, du **dir**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Ich wasche ___.",
+      "options": [
+        "mich",
+        "sich",
+        "mir"
+      ],
+      "answer": 0,
+      "explanation": "Celý já → *mich*.",
+      "hints": [
+        "Jaké zvratné zájmeno patří k *ich*?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Wir freuen ___ auf die Ferien.",
+      "options": [
+        "uns",
+        "sich",
+        "euch"
+      ],
+      "answer": 0,
+      "explanation": "*wir* → *uns*."
+    },
+    {
+      "type": "choice",
+      "question": "Interessierst du ___ für Fußball?",
+      "options": [
+        "dich",
+        "sich",
+        "dir"
+      ],
+      "answer": 0,
+      "explanation": "*du* → *dich*."
+    },
+    {
+      "type": "choice",
+      "question": "Die Kinder ziehen ___ an.",
+      "options": [
+        "sich",
+        "uns",
+        "euch"
+      ],
+      "answer": 0,
+      "explanation": "*die Kinder* = oni (3. osoba množného čísla) → *sich*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Ihr müsst ___ beeilen!",
+      "answers": [
+        "euch"
+      ],
+      "explanation": "*ihr* → *euch*.",
+      "hints": [
+        "Je to 2. osoba množného čísla."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Ich putze ___ die Zähne.",
+      "answers": [
+        "mir"
+      ],
+      "explanation": "Něco na sobě (zuby) a osoba *ich* → *mir*.",
+      "hints": [
+        "Myješ celého sebe, nebo jen část těla?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Setzen Sie ___, bitte!",
+      "answers": [
+        "sich"
+      ],
+      "explanation": "Zdvořilé *Sie* má vždy *sich*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich lerne mich Deutsch.“ je správně.",
+      "answer": false,
+      "explanation": "*lernen* (učit se) není v němčině zvratné: *Ich lerne Deutsch.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve 3. osobě (er, sie, es) je zvratné zájmeno vždy „sich“.",
+      "answer": true,
+      "explanation": "Ano: *er wäscht sich, sie freut sich*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu se zvratným zájmenem (sich waschen).",
+      "pairs": [
+        [
+          "ich",
+          "mich"
+        ],
+        [
+          "du",
+          "dich"
+        ],
+        [
+          "wir",
+          "uns"
+        ],
+        [
+          "ihr",
+          "euch"
+        ],
+        [
+          "er",
+          "sich"
+        ]
+      ],
+      "explanation": "Pozor: česky je pro všechny *se*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Sejdeme se zítra před školou.“",
+      "items": [
+        "Morgen",
+        "treffen",
+        "wir",
+        "uns",
+        "vor der Schule"
+      ],
+      "explanation": "Časový údaj na 1. místě → sloveso 2., pak podmět *wir*, zájmeno *uns*."
+    },
+    {
+      "type": "choice",
+      "question": "Který překlad „Rychle se oblékám.“ je správně?",
+      "options": [
+        "Ich ziehe mich schnell an.",
+        "Ich ziehe schnell an mich.",
+        "Ich anziehe mich schnell."
+      ],
+      "answer": 0,
+      "explanation": "Zájmeno za sloveso, předpona *an* na konec."
+    },
+    {
+      "type": "choice",
+      "question": "Které sloveso NENÍ v němčině zvratné?",
+      "options": [
+        "lachen (smát se)",
+        "sich freuen (těšit se)",
+        "sich beeilen (pospíšit si)"
+      ],
+      "answer": 0,
+      "explanation": "*lachen* nemá *sich*: *Wir lachen.*"
+    },
+    {
+      "type": "open",
+      "question": "Čím se liší české „se“ od německého zvratného zájmena?",
+      "answer": "České *se* je stejné pro všechny osoby. Německé se mění podle osoby: mich, dich, sich, uns, euch, sich."
+    },
+    {
+      "type": "open",
+      "question": "Popiš německy třemi větami svoje ráno (se zvratnými slovesy).",
+      "answer": "Například: Ich wasche mich. Dann ziehe ich mich an. Ich putze mir die Zähne und beeile mich."
+    }
+  ]
+}

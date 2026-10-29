@@ -1,0 +1,550 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "preteritum-sein-haben-modalni",
+  "title": "Préteritum: war, hatte, konnte…",
+  "emoji": "⏳",
+  "explanations": [
+    {
+      "title": "Tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na základní škole ses naučil minulý čas **perfektum**: *Ich habe Fußball gespielt.* (Hrál jsem fotbal.) U slovesa *být*, *mít* a u způsobových sloves (*moct, muset, chtít…*) ale Němci v řeči skoro vždy používají jiný, kratší minulý čas: **préteritum**."
+        },
+        {
+          "type": "text",
+          "text": "Místo dlouhého *Ich bin krank gewesen* řekne Němec prostě *Ich **war** krank.* (Byl jsem nemocný.) Kdo zná tyhle tvary, mluví o minulosti přirozeně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Perfektum",
+          "definition": "Připomenutí: minulý čas složený z *haben/sein* a příčestí. Používá se v řeči u většiny sloves.",
+          "example": "Ich habe gelernt. – Učil jsem se."
+        },
+        {
+          "type": "term",
+          "term": "Préteritum",
+          "definition": "Minulý čas z **jednoho slova**. V řeči se používá hlavně u *sein*, *haben* a způsobových sloves.",
+          "example": "ich war – byl jsem, ich hatte – měl jsem"
+        },
+        {
+          "type": "term",
+          "term": "Způsobové sloveso",
+          "definition": "Sloveso, které říká, jestli něco můžu, musím, chci, smím… Pojí se s dalším slovesem v infinitivu na konci věty.",
+          "example": "können, müssen, wollen, dürfen, sollen, mögen"
+        },
+        {
+          "type": "heading",
+          "text": "sein a haben"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "sein → war",
+            "haben → hatte"
+          ],
+          "rows": [
+            [
+              "ich",
+              "war – byl jsem",
+              "hatte – měl jsem"
+            ],
+            [
+              "du",
+              "warst",
+              "hattest"
+            ],
+            [
+              "er/sie/es",
+              "war",
+              "hatte"
+            ],
+            [
+              "wir",
+              "waren",
+              "hatten"
+            ],
+            [
+              "ihr",
+              "wart",
+              "hattet"
+            ],
+            [
+              "sie/Sie",
+              "waren",
+              "hatten"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: tvar pro **ich** a **er/sie/es** je stejný a nemá koncovku: *ich war, er war; ich hatte, sie hatte.*"
+        },
+        {
+          "type": "heading",
+          "text": "Způsobová slovesa"
+        },
+        {
+          "type": "text",
+          "text": "Vezmi infinitiv, **odstraň přehlásku** (ä, ö, ü → a, o, u), místo *-en* dej **-te** a přidej koncovky jako u *hatte*."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "Česky",
+            "ich / er",
+            "wir / sie"
+          ],
+          "rows": [
+            [
+              "können",
+              "moct, umět",
+              "konnte",
+              "konnten"
+            ],
+            [
+              "müssen",
+              "muset",
+              "musste",
+              "mussten"
+            ],
+            [
+              "dürfen",
+              "smět",
+              "durfte",
+              "durften"
+            ],
+            [
+              "wollen",
+              "chtít",
+              "wollte",
+              "wollten"
+            ],
+            [
+              "sollen",
+              "mít (povinnost)",
+              "sollte",
+              "sollten"
+            ],
+            [
+              "mögen",
+              "mít rád",
+              "mochte",
+              "mochten"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi sloveso: je to sein, haben, nebo způsobové sloveso?",
+            "Vyber tvar préterita podle osoby (ich war, du warst, wir konnten…).",
+            "Dej ho na 2. místo ve větě.",
+            "U způsobového slovesa dej druhé sloveso v infinitivu na konec: *Ich **musste** viel **lernen**.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Gestern",
+                "after": "ich krank.",
+                "options": [
+                  "war",
+                  "bin",
+                  "warst"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir",
+                "after": "keine Zeit.",
+                "options": [
+                  "hatten",
+                  "hatte",
+                  "haben"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du",
+                "after": "nicht kommen.",
+                "options": [
+                  "konntest",
+                  "konnte",
+                  "könntest"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er",
+                "after": "zu Hause bleiben.",
+                "options": [
+                  "musste",
+                  "müsste",
+                  "muss"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "ihr gestern im Kino?",
+                "options": [
+                  "Wart",
+                  "Wartet",
+                  "Waren"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď do préterita: Ich habe Hunger. Ich will etwas essen.",
+          "answer": "*habe* → **hatte**, *will* → **wollte**, infinitiv *essen* zůstává na konci: **Ich hatte Hunger. Ich wollte etwas essen.** (Měl jsem hlad. Chtěl jsem něco sníst.)"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Minulý týden jsme nesměli jít ven. (letzte Woche, nach draußen gehen)",
+          "answer": "*dürfen* → bez přehlásky *durf-* + *-te* + *-n* pro *wir* → *durften*. Časový údaj na začátku → sloveso na 2. místo, pak *wir*: **Letzte Woche durften wir nicht nach draußen gehen.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich könnte gestern nicht kommen.",
+          "right": "Ich konnte gestern nicht kommen.",
+          "why": "S přehláskou (*könnte*) je to podmiňovací způsob „mohl bych“. Préteritum nemá přehlásku: *konnte* = mohl jsem."
+        },
+        {
+          "type": "summary",
+          "text": "**war, hatte** a způsobová slovesa bez přehlásky + **-te** (konnte, musste, durfte, wollte, sollte, mochte). Tvar pro ich a er je stejný, bez koncovky."
+        }
+      ]
+    },
+    {
+      "title": "Vyprávění",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že kamarádce vyprávíš, jaký byl tvůj víkend. Byl jsi unavený, měl jsi hodně úkolů, musel ses učit a nemohl jsi na koncert. Všechna tahle slovesa jsou v němčině v **préteritu**."
+        },
+        {
+          "type": "text",
+          "text": "Perfektum ze základní školy dál platí pro většinu sloves (*Ich habe ferngesehen.*). Ale *být, mít, moct, muset, chtít, smět* zní v perfektu těžkopádně, proto je Němci řeknou jedním slovem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Préteritum",
+          "definition": "Minulý čas, který tvoří jedno slovo. U *sein*, *haben* a způsobových sloves je v řeči běžný.",
+          "example": "Ich war müde. – Byl jsem unavený."
+        },
+        {
+          "type": "term",
+          "term": "Způsobové sloveso",
+          "definition": "Sloveso jako *können* (moct), *müssen* (muset), *wollen* (chtít). Druhé sloveso jde v infinitivu na konec věty.",
+          "example": "Ich muss lernen. – Musím se učit."
+        },
+        {
+          "type": "term",
+          "term": "Přehláska",
+          "definition": "Tečky nad samohláskou: ä, ö, ü. V préteritu způsobových sloves **mizí**.",
+          "example": "können → konnte, müssen → musste"
+        },
+        {
+          "type": "heading",
+          "text": "Vyprávění Sophie"
+        },
+        {
+          "type": "text",
+          "text": "*Am Wochenende **war** ich sehr müde. Ich **hatte** viele Hausaufgaben. Ich **musste** für einen Test lernen. Am Samstag **wollte** ich auf ein Konzert gehen, aber ich **durfte** nicht. Meine Eltern **waren** streng!*"
+        },
+        {
+          "type": "text",
+          "text": "Česky: O víkendu jsem byla hodně unavená. Měla jsem spoustu úkolů. Musela jsem se učit na test. V sobotu jsem chtěla jít na koncert, ale nesměla jsem. Rodiče byli přísní!"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*war, waren* – od *sein*",
+            "*hatte* – od *haben*",
+            "*musste, wollte, durfte* – od *müssen, wollen, dürfen*",
+            "infinitiv (*lernen, gehen*) je na konci věty"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Perfektum × préteritum"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Perfektum (zní těžkopádně)",
+            "Préteritum (běžné v řeči)"
+          ],
+          "rows": [
+            [
+              "Ich bin müde gewesen.",
+              "Ich **war** müde."
+            ],
+            [
+              "Ich habe keine Zeit gehabt.",
+              "Ich **hatte** keine Zeit."
+            ],
+            [
+              "Ich habe lernen müssen.",
+              "Ich **musste** lernen."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Obojí je správně, ale v pravém sloupci mluví Němci každý den. Angličtina to má podobně: *I was, I had, I could* je jedno slovo."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku a zkontroluj tvar préterita."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "ich bin",
+                "back": "ich **war**"
+              },
+              {
+                "front": "wir haben",
+                "back": "wir **hatten**"
+              },
+              {
+                "front": "du kannst",
+                "back": "du **konntest**"
+              },
+              {
+                "front": "sie muss",
+                "back": "sie **musste**"
+              },
+              {
+                "front": "ihr wollt",
+                "back": "ihr **wolltet**"
+              },
+              {
+                "front": "ich mag",
+                "back": "ich **mochte**"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď vyprávění do préterita: Wir sind in Berlin. Wir haben wenig Geld. Wir können nicht ins Museum gehen.",
+          "answer": "*sind* → **waren**, *haben* → **hatten**, *können* → **konnten**: **Wir waren in Berlin. Wir hatten wenig Geld. Wir konnten nicht ins Museum gehen.** (Byli jsme v Berlíně. Měli jsme málo peněz. Nemohli jsme jít do muzea.)"
+        },
+        {
+          "type": "example",
+          "question": "Jak řekneš „Chtěl jsem ti zavolat.“? (anrufen)",
+          "answer": "*wollen* → **wollte** (ich, bez koncovky), infinitiv na konec: **Ich wollte dich anrufen.** Pozor: česky „zavolat **ti**“, ale *anrufen* má v němčině 4. pád, proto *dich*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich musstete lernen.",
+          "right": "Ich musste lernen.",
+          "why": "Přípona *-te* se přidává jen jednou. Pro *ich* nic dalšího nepřidáváš: *ich musste*. Koncovky mají jen jiné osoby: *du musstest, wir mussten*."
+        },
+        {
+          "type": "summary",
+          "text": "O minulosti mluv u *sein, haben* a způsobových sloves préteritem: **war, hatte, konnte, musste, wollte, durfte, sollte, mochte**. Ostatní slovesa dál v perfektu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Gestern ___ ich krank.",
+      "options": [
+        "war",
+        "bin",
+        "wäre"
+      ],
+      "answer": 0,
+      "explanation": "Préteritum *sein* pro *ich* = *war*.",
+      "hints": [
+        "Hledáš minulý tvar slovesa „být“."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Wir ___ keine Zeit.",
+      "options": [
+        "hatten",
+        "hatte",
+        "hattet"
+      ],
+      "answer": 0,
+      "explanation": "*wir* → *hatten*."
+    },
+    {
+      "type": "choice",
+      "question": "Ich ___ gestern nicht kommen. (nemohl jsem)",
+      "options": [
+        "konnte",
+        "könnte",
+        "kann"
+      ],
+      "answer": 0,
+      "explanation": "Préteritum bez přehlásky: *konnte*. *könnte* = mohl bych.",
+      "hints": [
+        "V préteritu způsobových sloves přehláska mizí."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum: du / sein → du ___",
+      "answers": [
+        "warst"
+      ],
+      "explanation": "*du warst* = byl jsi."
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum: er / müssen → er ___",
+      "answers": [
+        "musste"
+      ],
+      "explanation": "*müssen* → bez přehlásky + *-te*: *musste*.",
+      "hints": [
+        "Odstraň přehlásku a přidej příponu minulého času."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum: wir / dürfen → wir ___",
+      "answers": [
+        "durften"
+      ],
+      "explanation": "*dürfen* → *durf-* + *-ten*."
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum: ihr / haben → ihr ___",
+      "answers": [
+        "hattet"
+      ],
+      "explanation": "*ihr hattet* = měli jste."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar préterita pro „ich“ a „er“ je u war, hatte i konnte stejný.",
+      "answer": true,
+      "explanation": "*ich war – er war, ich konnte – er konnte*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„mögen“ má v préteritu tvar „möchte“.",
+      "answer": false,
+      "explanation": "*möchte* = chtěl bych. Préteritum je *mochte* (bez přehlásky)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s tvarem préterita (ich).",
+      "pairs": [
+        [
+          "können",
+          "konnte"
+        ],
+        [
+          "wollen",
+          "wollte"
+        ],
+        [
+          "sollen",
+          "sollte"
+        ],
+        [
+          "mögen",
+          "mochte"
+        ],
+        [
+          "haben",
+          "hatte"
+        ]
+      ],
+      "explanation": "Bez přehlásky + *-te*; *haben* → *hatte*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Musel jsem včera dlouho pracovat.“",
+      "items": [
+        "Ich",
+        "musste",
+        "gestern",
+        "lange",
+        "arbeiten"
+      ],
+      "explanation": "Způsobové sloveso na 2. místě, infinitiv na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta zní v běžné řeči nejpřirozeněji?",
+      "options": [
+        "Ich war gestern im Kino.",
+        "Ich bin gestern im Kino gewesen.",
+        "Ich habe gestern im Kino gewesen."
+      ],
+      "answer": 0,
+      "explanation": "U *sein* se v řeči používá préteritum. Třetí věta je chybná (*sein* má perfektum se *sein*)."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správný tvar: ___ du am Wochenende Zeit?",
+      "options": [
+        "Hattest",
+        "Hatte",
+        "Hattet"
+      ],
+      "answer": 0,
+      "explanation": "*du* → *hattest*."
+    },
+    {
+      "type": "open",
+      "question": "Proč se u sein, haben a způsobových sloves v řeči používá préteritum?",
+      "answer": "Protože perfektum je u nich dlouhé a těžkopádné (ich bin gewesen, ich habe lernen müssen). Préteritum je jedno krátké slovo: ich war, ich musste lernen."
+    },
+    {
+      "type": "open",
+      "question": "Řekni německy třemi větami, jaký byl tvůj víkend (war, hatte, musste/wollte).",
+      "answer": "Například: Mein Wochenende war schön. Ich hatte viel Zeit. Ich wollte ins Kino gehen, aber ich musste lernen."
+    }
+  ]
+}
