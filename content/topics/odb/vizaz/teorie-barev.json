@@ -1,0 +1,472 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "teorie-barev",
+  "title": "Teorie barev a barevná typologie",
+  "emoji": "🎨",
+  "explanations": [
+    {
+      "title": "Barevný kruh",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Proč někomu sluší zlatá a jinému stříbrná? Proč zelený korektor schová červený pupínek? Odpověď najdeš v jednoduchém kruhu barev."
+        },
+        {
+          "type": "text",
+          "text": "Vizážistka barvy nevybírá podle toho, co se jí líbí, ale podle pravidel. Díky nim make-up působí přirozeně a podtrhne klientku, místo aby ji „zabil“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Barevný kruh",
+          "definition": "Barvy seřazené do kruhu tak, jak přecházejí jedna v druhou: červená, oranžová, žlutá, zelená, modrá, fialová a zpět k červené.",
+          "example": "Na kruhu leží zelená mezi žlutou a modrou."
+        },
+        {
+          "type": "term",
+          "term": "Základní barvy",
+          "definition": "Barvy, které nejde namíchat z jiných. V malířství a líčení: **červená, žlutá, modrá**.",
+          "example": "Ze žluté a modré namícháš zelenou."
+        },
+        {
+          "type": "term",
+          "term": "Podvojné barvy",
+          "definition": "Barvy smíchané ze dvou základních: **oranžová** (červená + žlutá), **zelená** (žlutá + modrá), **fialová** (modrá + červená).",
+          "example": "Oranžová stíny vznikly ze žluté a červené."
+        },
+        {
+          "type": "term",
+          "term": "Doplňkové (komplementární) barvy",
+          "definition": "Dvojice barev, které leží v kruhu **naproti sobě**. Vedle sebe se navzájem zvýrazní, smíchané se navzájem ztlumí (zešednou).",
+          "example": "Červená–zelená, modrá–oranžová, žlutá–fialová."
+        },
+        {
+          "type": "heading",
+          "text": "Teplé a studené barvy"
+        },
+        {
+          "type": "text",
+          "text": "**Teplé** barvy připomínají oheň a slunce: žlutá, oranžová, červená a zlatá. **Studené** barvy připomínají vodu a led: modrá, modrozelená, fialová a stříbrná. I jedna barva může mít teplý nebo studený odstín: korálová rtěnka je teplá červená, malinová studená."
+        },
+        {
+          "type": "heading",
+          "text": "Doplňkové barvy v praxi"
+        },
+        {
+          "type": "table",
+          "head": [
+            "problém na pleti",
+            "jakou barvu má",
+            "korektor, který ho ztlumí"
+          ],
+          "rows": [
+            [
+              "zarudnutí, pupínek, popraskané žilky",
+              "červená",
+              "zelený"
+            ],
+            [
+              "modré kruhy pod očima",
+              "modrá až fialová",
+              "broskvový, oranžový (u tmavší pleti)"
+            ],
+            [
+              "nažloutlá, unavená pleť",
+              "žlutá",
+              "fialový (levandulový)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Korektor se nanáší **v tenké vrstvě** jen na problém a překryje se make-upem. Jinak by prosvítal zeleně nebo oranžově."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň doplňkovou barvu."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Doplňková barva k červené je ",
+                "after": ".",
+                "options": [
+                  "zelená",
+                  "modrá",
+                  "žlutá"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Doplňková barva k modré je ",
+                "after": ".",
+                "options": [
+                  "oranžová",
+                  "fialová",
+                  "zelená"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Doplňková barva ke žluté je ",
+                "after": ".",
+                "options": [
+                  "fialová",
+                  "oranžová",
+                  "červená"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Zelená vznikne smícháním žluté a ",
+                "after": ".",
+                "options": [
+                  "modré",
+                  "červené"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka má zarudlé okolí nosu. Jaký korektor použiješ a proč?",
+          "answer": "Zarudnutí je **červené**. V kruhu naproti červené leží **zelená**. Tenká vrstva zeleného korektoru červenou ztlumí, pak to překryji make-upem v odstínu pleti."
+        },
+        {
+          "type": "example",
+          "question": "Hnědooká klientka chce, aby oči „svítily“. Jakou barvu stínů zvolíš?",
+          "answer": "Hnědá oči obsahují teplou oranžovohnědou. Doplňkově ji zvýrazní **modrá, fialová a švestková** odstíny. Zvolím třeba švestkové nebo bronzově fialové stíny."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na modré kruhy pod očima dám co nejsvětlejší korektor, skoro bílý.",
+          "right": "Na modré kruhy patří **broskvový nebo oranžový** korektor (podle tmavosti pleti). Bílý korektor modrou nezakryje, jen ji zesvětlí do šedé.",
+          "why": "Modrou neutralizuje její doplňková barva – oranžová."
+        },
+        {
+          "type": "summary",
+          "text": "Základní barvy: červená, žlutá, modrá. Doplňkové páry: červená–zelená, modrá–oranžová, žlutá–fialová. Doplňková barva **ztlumí** vadu pleti a **zvýrazní** barvu očí."
+        }
+      ]
+    },
+    {
+      "title": "Barevné typy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Určitě znáš někoho, komu černá „ubírá“ a jiného, komu sluší. Záleží na tom, jaké barvy má přirozeně v pleti, vlasech a očích."
+        },
+        {
+          "type": "text",
+          "text": "Barevná typologie pomáhá zvolit odstín make-upu, rtěnky i oblečení tak, aby ladil s přirozenými barvami klientky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podtón pleti",
+          "definition": "Barva, která prosvítá „zespodu“ pleti. Zůstává stejná, i když se opálíš. Bývá **teplý** (žlutý, zlatý), **studený** (růžový, namodralý) nebo **neutrální**.",
+          "example": "Dva lidé se stejně světlou pletí mohou mít jeden teplý, druhý studený podtón."
+        },
+        {
+          "type": "term",
+          "term": "Teplé a studené barvy",
+          "definition": "Teplé obsahují víc žluté (zlatá, oranžová, korálová). Studené víc modré (stříbrná, růžová, malinová).",
+          "example": "Zlatý šperk je teplý, stříbrný studený."
+        },
+        {
+          "type": "term",
+          "term": "Kontrast",
+          "definition": "Rozdíl mezi světlou a tmavou barvou ve vzhledu, např. mezi pletí a vlasy.",
+          "example": "Bledá pleť a černé vlasy = vysoký kontrast."
+        },
+        {
+          "type": "term",
+          "term": "Barevná typologie",
+          "definition": "Rozdělení lidí do skupin podle přirozených barev pleti, vlasů a očí. Nejznámější je dělení podle ročních období.",
+          "example": "Typ „zima“, typ „jaro“."
+        },
+        {
+          "type": "heading",
+          "text": "Jak určit podtón"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pracuj při **denním světle** a s odlíčenou pletí.",
+            "Podívej se na žilky na zápěstí: spíš zelené → teplý podtón, spíš modrofialové → studený. Nejde poznat → neutrální.",
+            "Přilož ke tváři zlatou a stříbrnou látku. Při které pleť vypadá svěžeji?",
+            "Zeptej se, jestli se klientka snáz opálí (často teplý) nebo spálí a zčervená (často studený).",
+            "Výsledky porovnej – jedna zkouška sama o sobě nestačí."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři roční období"
+        },
+        {
+          "type": "table",
+          "head": [
+            "typ",
+            "podtón",
+            "typický vzhled",
+            "sluší"
+          ],
+          "rows": [
+            [
+              "jaro",
+              "teplý",
+              "světlá broskvová pleť, zlatavé vlasy, světlé oči",
+              "jasné teplé barvy: korálová, broskvová, zlatá"
+            ],
+            [
+              "léto",
+              "studený",
+              "světlá růžová pleť, popelavé vlasy, šedomodré oči",
+              "tlumené studené pastely: růžová, levandulová, šedomodrá"
+            ],
+            [
+              "podzim",
+              "teplý",
+              "zlatavá pleť, často pihy, rezavé nebo kaštanové vlasy",
+              "sytě teplé zemité: cihlová, olivová, bronzová"
+            ],
+            [
+              "zima",
+              "studený",
+              "velký kontrast pleti a tmavých vlasů",
+              "čisté a výrazné barvy: černá, bílá, rudá, smaragdová"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď barvy na teplé a studené."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "teplé",
+              "studené"
+            ],
+            "items": [
+              {
+                "text": "korálová",
+                "group": 0
+              },
+              {
+                "text": "zlatá",
+                "group": 0
+              },
+              {
+                "text": "broskvová",
+                "group": 0
+              },
+              {
+                "text": "cihlová",
+                "group": 0
+              },
+              {
+                "text": "stříbrná",
+                "group": 1
+              },
+              {
+                "text": "malinová",
+                "group": 1
+              },
+              {
+                "text": "levandulová",
+                "group": 1
+              },
+              {
+                "text": "ledově modrá",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka má popelavě blond vlasy, růžovou pleť a šedomodré oči. Jakou rtěnku doporučíš?",
+          "answer": "Podtón je **studený**, typ nejspíš **léto**. Doporučím tlumenou studenou barvu: starorůžovou nebo malinovou. Oranžová a korálová by na ní působily cize."
+        },
+        {
+          "type": "example",
+          "question": "Klientka má zlatavou pleť s pihami a kaštanové vlasy. Jaké stíny zvolíš?",
+          "answer": "Teplý podtón, typ **podzim**. Sluší jí teplé zemité odstíny: **bronzová, měděná, olivová, teplá hnědá**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Podtón poznám podle toho, jak je pleť světlá nebo tmavá.",
+          "right": "Světlost (hloubka) a podtón jsou **dvě různé věci**. Světlá pleť může být teplá i studená, stejně tak tmavá.",
+          "why": "Proto mají značky make-upu u každé světlosti víc podtónů (např. 2W, 2C, 2N)."
+        },
+        {
+          "type": "summary",
+          "text": "Podtón je teplý, studený nebo neutrální a nemění se opálením. Typologie podle ročních období: **jaro a podzim teplé**, **léto a zima studené**. Barvy líčidel volíme podle podtónu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které barvy jsou základní?",
+      "options": [
+        "červená, žlutá, modrá",
+        "zelená, oranžová, fialová",
+        "černá, bílá, šedá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký korektor použiješ na zarudnutí?",
+      "options": [
+        "zelený",
+        "fialový",
+        "žlutý"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hledej barvu, která leží v kruhu naproti červené."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Doplňkové barvy leží v barevném kruhu naproti sobě.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jakou barvu dostaneš smícháním žluté a modré?",
+      "answers": [
+        "zelená",
+        "zelenou",
+        "zelena",
+        "zelenou barvu"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj barvu s její doplňkovou.",
+      "pairs": [
+        [
+          "červená",
+          "zelená"
+        ],
+        [
+          "modrá",
+          "oranžová"
+        ],
+        [
+          "žlutá",
+          "fialová"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která barva je teplá?",
+      "options": [
+        "korálová",
+        "stříbrná",
+        "levandulová"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Podtón pleti se po opálení mění ze studeného na teplý.",
+      "answer": false,
+      "explanation": "Podtón zůstává stejný, mění se jen světlost."
+    },
+    {
+      "type": "choice",
+      "question": "Který barevný typ má velký kontrast mezi pletí a tmavými vlasy a studený podtón?",
+      "options": [
+        "zima",
+        "jaro",
+        "podzim"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje barva, která prosvítá „zespodu“ pleti a je teplá, studená nebo neutrální?",
+      "answers": [
+        "podtón",
+        "podton",
+        "podtón pleti"
+      ],
+      "hints": [
+        "Je to slovo složené z předpony „pod“ a jednoho dalšího slova."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký korektor použiješ na modré kruhy pod očima?",
+      "options": [
+        "broskvový",
+        "zelený",
+        "bílý"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky určení podtónu.",
+      "items": [
+        "odlič pleť a pracuj při denním světle",
+        "prohlédni žilky na zápěstí",
+        "přilož zlatou a stříbrnou látku",
+        "zeptej se na reakci na slunce",
+        "porovnej výsledky"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Typ „podzim“ má teplý podtón.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak se doplňkové barvy využívají při korekci pleti.",
+      "answer": "Doplňková barva leží v kruhu naproti a ztlumí vadu. Na zarudnutí se dává zelený korektor, na modré kruhy broskvový nebo oranžový a na nažloutlou pleť fialový. Korektor se nanáší tence a překryje se make-upem."
+    },
+    {
+      "type": "open",
+      "question": "Jak určíš podtón pleti klientky?",
+      "answer": "Při denním světle a na odlíčené pleti se podívám na žilky na zápěstí, přiložím zlatou a stříbrnou látku a zeptám se, jak reaguje na slunce. Zelené žilky a lepší vzhled se zlatou ukazují na teplý podtón, modrofialové žilky a stříbrná na studený."
+    }
+  ]
+}

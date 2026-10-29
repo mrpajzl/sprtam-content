@@ -1,0 +1,479 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "tvary-obliceje",
+  "title": "Tvary obličeje a jejich korekce",
+  "emoji": "🙂",
+  "explanations": [
+    {
+      "title": "Světlo a stín",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Malíři už stovky let vědí, že světlá barva věci „přibližuje“ a tmavá „oddaluje“. Stejný trik používá vizážistka, když opticky mění tvar obličeje."
+        },
+        {
+          "type": "text",
+          "text": "Nejdřív musíš tvar obličeje správně určit. Pak víš, co zvýraznit a co ztlumit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Korekce",
+          "definition": "Optická úprava tvaru obličeje nebo jeho části pomocí světlých a tmavých odstínů.",
+          "example": "Tmavším odstínem opticky zúžíš široký nos."
+        },
+        {
+          "type": "term",
+          "term": "Rozjasnění (highlight)",
+          "definition": "Světlejší odstín než pleť. Místo **zvýrazní**, vystoupí dopředu a vypadá větší.",
+          "example": "Rozjasňovač na lícních kostech."
+        },
+        {
+          "type": "term",
+          "term": "Stínování (kontura)",
+          "definition": "Tmavší odstín než pleť. Místo **ustoupí** do pozadí a vypadá menší nebo užší.",
+          "example": "Stín pod lícní kostí."
+        },
+        {
+          "type": "term",
+          "term": "Ideální (oválný) obličej",
+          "definition": "Tvar, ke kterému se při korekci obvykle přibližujeme. Je asi o polovinu delší, než je široký, a jemně se zužuje k bradě.",
+          "example": "Oválný obličej korekci skoro nepotřebuje."
+        },
+        {
+          "type": "heading",
+          "text": "Jak určit tvar obličeje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Stáhni klientce vlasy z obličeje.",
+            "Podívej se zepředu do zrcadla.",
+            "Porovnej šířku **čela**, **lícních kostí** a **čelisti**.",
+            "Porovnej **délku** a **šířku** obličeje.",
+            "Všimni si tvaru brady: kulatá, hranatá, špičatá."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tvary a jejich korekce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "tvar",
+            "jak ho poznáš",
+            "korekce"
+          ],
+          "rows": [
+            [
+              "oválný",
+              "o polovinu delší než široký, měkké linie",
+              "korekci nepotřebuje, jen modelace"
+            ],
+            [
+              "kulatý",
+              "délka ≈ šířka, plné tváře, kulatá brada",
+              "stín po stranách obličeje a pod lícními kostmi, světlo na střed čela a bradu"
+            ],
+            [
+              "hranatý (čtvercový)",
+              "široké čelo i čelist, hranatá brada",
+              "stín na rohy čelisti a spánky, změkčit linie"
+            ],
+            [
+              "podlouhlý (obdélníkový)",
+              "výrazně delší než široký",
+              "stín na horní okraj čela a spodek brady, tvářenka vodorovně"
+            ],
+            [
+              "trojúhelníkový (hruškový)",
+              "úzké čelo, široká čelist",
+              "stín na čelist, světlo na spánky a čelo"
+            ],
+            [
+              "srdcový (obrácený trojúhelník)",
+              "široké čelo, úzká špičatá brada",
+              "stín na spánky a špičku brady, světlo na čelist"
+            ],
+            [
+              "diamantový (kosočtverec)",
+              "široké lícní kosti, úzké čelo i brada",
+              "stín na vrchol lícních kostí, světlo na čelo a bradu"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Rozhodni, jestli na dané místo patří světlo, nebo stín."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "světlo",
+              "stín"
+            ],
+            "items": [
+              {
+                "text": "rohy čelisti u hranatého obličeje",
+                "group": 1
+              },
+              {
+                "text": "střed čela u kulatého obličeje",
+                "group": 0
+              },
+              {
+                "text": "spánky u srdcového obličeje",
+                "group": 1
+              },
+              {
+                "text": "čelist u srdcového obličeje",
+                "group": 0
+              },
+              {
+                "text": "spodek brady u podlouhlého obličeje",
+                "group": 1
+              },
+              {
+                "text": "spánky u hruškového obličeje",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka má obličej skoro stejně široký jako dlouhý, plné tváře a kulatou bradu. Jaký je tvar a jak ho upravíš?",
+          "answer": "Je to **kulatý** obličej. Stín dám **po stranách** obličeje a šikmo **pod lícní kosti**, aby se obličej opticky protáhl. Světlo dám na **střed čela** a **bradu**. Tvářenku nanesu šikmo směrem ke spánkům."
+        },
+        {
+          "type": "example",
+          "question": "Klient má široké čelo a úzkou špičatou bradu. Co uděláš?",
+          "answer": "Tvar je **srdcový**. Stínem ztlumím **spánky a boky čela** a jemně **špičku brady**. Světlem rozšířím spodní část – oblast **čelisti**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Stín na obličeji dělám co nejtmavší, ať je korekce vidět.",
+          "right": "Stín má být jen o **1–2 odstíny tmavší** než pleť a dokonale rozmazaný.",
+          "why": "Korekce nesmí být vidět jako pruh. Má jen opticky změnit tvar."
+        },
+        {
+          "type": "summary",
+          "text": "Světlé odstíny zvýrazní a přiblíží, tmavé ztlumí a oddálí. Určíš tvar (oválný, kulatý, hranatý, podlouhlý, hruškový, srdcový, diamantový) a korekcí se přibližuješ oválu."
+        }
+      ]
+    },
+    {
+      "title": "Měření",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když si nejsi jistá, jaký tvar obličeje klientka má, nemusíš hádat. Stačí pár měření a porovnání."
+        },
+        {
+          "type": "text",
+          "text": "Přesné určení tvaru je základ: použiješ ho pro konturování, tvar obočí, tvářenku i radu s účesem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Lícní kosti",
+          "definition": "Kosti na tvářích pod očima. Nejširší místo obličeje u většiny lidí.",
+          "example": "Na lícních kostech se při úsměvu zvednou tváře."
+        },
+        {
+          "type": "term",
+          "term": "Čelist",
+          "definition": "Spodní kost obličeje od ucha k bradě. Její úhel tvoří „roh“ obličeje.",
+          "example": "Hranatá čelist je typická pro hranatý obličej."
+        },
+        {
+          "type": "term",
+          "term": "Světlo a stín v líčení",
+          "definition": "Světlejší odstín místo opticky zvětší a přiblíží, tmavší zmenší a oddálí.",
+          "example": "Tmavý pruh podél nosu ho zúží."
+        },
+        {
+          "type": "term",
+          "term": "Ovál",
+          "definition": "Obličej asi o polovinu delší než široký, s měkkými liniemi. Cíl korekce.",
+          "example": "Modelky často mají oválný obličej."
+        },
+        {
+          "type": "heading",
+          "text": "Postup měření"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Klientku posaď rovně, vlasy stáhni čelenkou.",
+            "Změř **šířku čela** v jeho nejširším místě.",
+            "Změř **šířku přes lícní kosti** (nejširší místo pod očima).",
+            "Změř **šířku čelisti** od úhlu k úhlu.",
+            "Změř **délku obličeje** od kořínků vlasů po špičku brady.",
+            "Porovnej čísla s tabulkou."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "výsledek měření",
+            "tvar"
+          ],
+          "rows": [
+            [
+              "délka asi 1,5× šířka, lícní kosti nejširší, měkká brada",
+              "oválný"
+            ],
+            [
+              "délka ≈ šířka, měkké linie",
+              "kulatý"
+            ],
+            [
+              "čelo ≈ lícní kosti ≈ čelist, hranatá čelist",
+              "hranatý"
+            ],
+            [
+              "délka výrazně víc než 1,5× šířka",
+              "podlouhlý"
+            ],
+            [
+              "čelist nejširší, čelo nejužší",
+              "hruškový"
+            ],
+            [
+              "čelo nejširší, brada úzká a špičatá",
+              "srdcový"
+            ],
+            [
+              "lícní kosti nejširší, čelo i brada úzké",
+              "diamantový"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní pravidlo korekce"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**ztlum** (stín) to, co je široké nebo vystupuje",
+            "**zvýrazni** (světlo) to, co je úzké nebo ustupuje",
+            "tvářenku a obočí veď tak, aby linie mířily k oválu"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Čelist je nejširší, čelo úzké",
+                "back": "hruškový – stín na čelist, světlo na čelo"
+              },
+              {
+                "front": "Čelo nejširší, brada špičatá",
+                "back": "srdcový – stín na spánky, světlo na čelist"
+              },
+              {
+                "front": "Délka ≈ šířka, měkké linie",
+                "back": "kulatý – stín po stranách"
+              },
+              {
+                "front": "Lícní kosti nejširší, čelo i brada úzké",
+                "back": "diamantový – stín na lícní kosti"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Naměřila jsi: čelo 13 cm, lícní kosti 13 cm, čelist 12,5 cm, délka 18 cm. Čelist je hranatá. Jaký je tvar?",
+          "answer": "Šířky jsou skoro stejné (12,5–13 cm) a čelist je **hranatá** → **hranatý** obličej. Délka 18 cm je jen asi 1,4× šířka, takže to není podlouhlý. Korekce: stín na rohy čelisti a spánky."
+        },
+        {
+          "type": "example",
+          "question": "Délka obličeje 22 cm, nejširší místo 13 cm. Jaký tvar a jak ho upravíš?",
+          "answer": "22 : 13 ≈ 1,7 → výrazně delší než ovál (asi 1,5) → **podlouhlý**. Stín dám na horní okraj čela a pod bradu, tvářenku nanesu **vodorovně**, aby obličej opticky rozšířila."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Tvar obličeje určím podle účesu, který klientka zrovna má.",
+          "right": "Tvar určuješ s **vlasy staženými** z obličeje.",
+          "why": "Ofina nebo vlasy kolem tváří tvar opticky mění a zkreslí měření."
+        },
+        {
+          "type": "summary",
+          "text": "Změř šířku čela, lícních kostí a čelisti a délku obličeje, porovnej je a urči tvar. Pak ztlum široká místa stínem a zvýrazni úzká světlem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co udělá s místem na obličeji tmavší odstín?",
+      "options": [
+        "opticky ho zmenší a oddálí",
+        "opticky ho zvětší",
+        "nic, jen změní barvu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar obličeje se považuje za ideální?",
+      "options": [
+        "oválný",
+        "kulatý",
+        "hranatý"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kulatý obličej je přibližně stejně dlouhý jako široký.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje tvar obličeje se širokým čelem a úzkou špičatou bradou?",
+      "answers": [
+        "srdcový",
+        "srdcovy",
+        "obrácený trojúhelník",
+        "obraceny trojuhelnik",
+        "srdce"
+      ],
+      "hints": [
+        "Připomíná symbol lásky."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj tvar obličeje s místem pro stín.",
+      "pairs": [
+        [
+          "hranatý",
+          "rohy čelisti"
+        ],
+        [
+          "podlouhlý",
+          "horní okraj čela a pod bradou"
+        ],
+        [
+          "hruškový",
+          "čelist"
+        ],
+        [
+          "diamantový",
+          "vrchol lícních kostí"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar obličeje se určuje s vlasy staženými z obličeje.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "O kolik odstínů má být kontura tmavší než pleť?",
+      "options": [
+        "asi o 1–2 odstíny",
+        "o 5 a víc odstínů",
+        "má být černá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup určení tvaru obličeje.",
+      "items": [
+        "stáhni vlasy z obličeje",
+        "změř šířku čela",
+        "změř šířku přes lícní kosti",
+        "změř šířku čelisti",
+        "změř délku obličeje",
+        "porovnej s tabulkou"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak naneseš tvářenku na podlouhlý obličej?",
+      "options": [
+        "vodorovně",
+        "svisle",
+        "jen na špičku nosu"
+      ],
+      "answer": 0,
+      "hints": [
+        "Chceš obličej opticky rozšířit, ne prodloužit."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje světlejší odstín, který místo zvýrazní? Napiš české slovo.",
+      "answers": [
+        "rozjasnění",
+        "rozjasneni",
+        "rozjasňovač",
+        "rozjasnovac",
+        "světlo",
+        "svetlo"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má nejširší čelist a nejužší čelo. Jaký je to tvar?",
+      "options": [
+        "hruškový",
+        "srdcový",
+        "oválný"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "U hranatého obličeje dáváme světlo na rohy čelisti.",
+      "answer": false,
+      "explanation": "Rohy čelisti se ztlumí stínem."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak určíš tvar obličeje klientky.",
+      "answer": "Stáhnu jí vlasy z obličeje a zepředu porovnám nebo změřím šířku čela, lícních kostí a čelisti a délku obličeje. Podle toho, co je nejširší a jak je obličej dlouhý vůči šířce, a podle tvaru brady určím tvar."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli princip korekce obličeje světlem a stínem.",
+      "answer": "Světlejší odstín místo zvýrazní a opticky přiblíží a zvětší, tmavší ho ztlumí a zmenší. Stínem tedy ztlumím široká nebo vystupující místa a světlem zvýrazním úzká, abych obličej opticky přiblížila oválu."
+    }
+  ]
+}
