@@ -1,0 +1,546 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ser-a-estar",
+  "title": "Sloveso estar a rozdíl ser × estar",
+  "emoji": "📍",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Čeština má jedno sloveso „být“. Španělština má dvě: **ser** a **estar**. „Jsem Tomáš“ se řekne se *ser*, ale „jsem doma“ nebo „jsem unavený“ se *estar*. Když je zaměníš, Španěl ti sice porozumí, ale zní to divně."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: rozhodnout se dá podle jednoduché otázky. Říkáš, **kdo nebo co** něco je? Nebo **kde** to je a **jak se to** zrovna **má**?"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ser",
+          "definition": "Sloveso „být“ pro to, **co kdo je**: jméno, původ, národnost, povolání, vlastnosti, čas. Připomenutí: soy, eres, es, somos, sois, son.",
+          "example": "*Soy de Praga.* = Jsem z Prahy."
+        },
+        {
+          "type": "term",
+          "term": "Estar",
+          "definition": "Sloveso „být“ pro to, **kde** kdo je a **jak se** zrovna **má** (nálada, zdraví, momentální stav).",
+          "example": "*Estoy en casa.* = Jsem doma."
+        },
+        {
+          "type": "term",
+          "term": "Stav",
+          "definition": "Jak se někdo nebo něco má právě teď. Může se to brzy změnit.",
+          "example": "být unavený, nemocný, veselý, být otevřený (obchod)"
+        },
+        {
+          "type": "term",
+          "term": "Vlastnost",
+          "definition": "Jaký někdo nebo něco je obecně, z podstaty.",
+          "example": "být vysoký, chytrý, milý, být Španěl"
+        },
+        {
+          "type": "heading",
+          "text": "Časování estar"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "estar",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "yo",
+              "estoy",
+              "jsem"
+            ],
+            [
+              "tú",
+              "estás",
+              "jsi"
+            ],
+            [
+              "él / ella / usted",
+              "está",
+              "je / jste"
+            ],
+            [
+              "nosotros / nosotras",
+              "estamos",
+              "jsme"
+            ],
+            [
+              "vosotros / vosotras",
+              "estáis",
+              "jste"
+            ],
+            [
+              "ellos / ellas / ustedes",
+              "están",
+              "jsou / jste"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor na čárky: *está* (je) a *esta* (tato) jsou dvě různá slova."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy ser a kdy estar"
+        },
+        {
+          "type": "table",
+          "head": [
+            "ser – co kdo je",
+            "estar – kde je a jak se má"
+          ],
+          "rows": [
+            [
+              "jméno: Soy Ana.",
+              "místo: Estoy en el colegio."
+            ],
+            [
+              "původ: Es de Chile.",
+              "zdraví: Está enfermo."
+            ],
+            [
+              "povolání: Son médicos.",
+              "nálada: Estamos contentos."
+            ],
+            [
+              "vlastnost: Eres simpática.",
+              "stav: La tienda está cerrada."
+            ],
+            [
+              "čas: Son las tres.",
+              "jak se máš: Estoy bien."
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je to **místo** (kde)? → estar: *Madrid está en España.* I když se Madrid nikam nehne.",
+            "Je to **stav nebo nálada** právě teď? → estar: *Estoy cansado.*",
+            "Jinak (kdo, odkud, jaký, čím je, kolik je hodin) → ser."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: vyber ser, nebo estar."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Yo",
+                "after": "de Brno.",
+                "options": [
+                  "soy",
+                  "estoy"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Yo",
+                "after": "en Brno.",
+                "options": [
+                  "soy",
+                  "estoy"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Pedro",
+                "after": "muy cansado hoy.",
+                "options": [
+                  "es",
+                  "está"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Pedro",
+                "after": "alto y simpático.",
+                "options": [
+                  "es",
+                  "está"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "¿Dónde",
+                "after": "el baño?",
+                "options": [
+                  "es",
+                  "está"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Máma je doktorka, ale dnes je nemocná.",
+          "answer": "1) Povolání → ser: *Mi madre es médica.* 2) Momentální zdraví → estar: *hoy está enferma.* Celé: *Mi madre es médica, pero hoy está enferma.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Praha je v Česku. Je krásná.",
+          "answer": "1) Kde → estar: *Praga está en Chequia.* 2) Vlastnost → ser: *Es bonita.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Soy en casa.",
+          "right": "Estoy en casa.",
+          "why": "Kde se nacházím, to vždy říká *estar*."
+        },
+        {
+          "type": "summary",
+          "text": "**Ser** = kdo a jaký kdo je (jméno, původ, povolání, vlastnosti, čas). **Estar** = kde je a jak se má (místo, nálada, zdraví, stav): *estoy, estás, está, estamos, estáis, están*."
+        }
+      ]
+    },
+    {
+      "title": "Fotka a vizitka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že o každém člověku máš **vizitku** a **fotku**. Na vizitce stojí, kdo je: jméno, odkud je, čím je. To se nemění a patří k tomu *ser*. Fotka ukazuje, kde zrovna je a jak se tváří. To se mění, a patří k tomu *estar*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ser",
+          "definition": "Být, když popisuješ „vizitku“: kdo kdo je, odkud je, čím je, jaký je.",
+          "example": "*Lucía es española.* = Lucía je Španělka."
+        },
+        {
+          "type": "term",
+          "term": "Estar",
+          "definition": "Být, když popisuješ „fotku“: kde kdo je a jak se právě má.",
+          "example": "*Lucía está en la playa.* = Lucía je na pláži."
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které říká, jaký kdo je nebo jak se má. Koncovka se řídí osobou: -o muž, -a žena, -os/-as víc lidí.",
+          "example": "*cansado / cansada / cansados / cansadas* = unavený, unavená…"
+        },
+        {
+          "type": "heading",
+          "text": "Lucía: vizitka a fotka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vizitka (ser)",
+            "Fotka (estar)"
+          ],
+          "rows": [
+            [
+              "Lucía es de Valencia.",
+              "Lucía está en Praga."
+            ],
+            [
+              "Es estudiante.",
+              "Está muy contenta."
+            ],
+            [
+              "Es simpática y alta.",
+              "Está un poco cansada."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Česky: Lucía je z Valencie. Je studentka. Je milá a vysoká. – Lucía je v Praze. Je moc spokojená. Je trochu unavená."
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: jedno slovo, dva významy"
+        },
+        {
+          "type": "text",
+          "text": "Některá přídavná jména mění význam podle toho, jestli stojí se *ser*, nebo s *estar*:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "se ser",
+            "s estar"
+          ],
+          "rows": [
+            [
+              "Es aburrido. = Je nudný (takový je).",
+              "Está aburrido. = Nudí se (teď)."
+            ],
+            [
+              "Es listo. = Je chytrý.",
+              "Está listo. = Je připravený."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: roztřiď věty na vizitku a fotku."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vizitka (ser)",
+              "fotka (estar)"
+            ],
+            "items": [
+              {
+                "text": "Soy checo.",
+                "group": 0
+              },
+              {
+                "text": "Estoy en Madrid.",
+                "group": 1
+              },
+              {
+                "text": "Es profesora.",
+                "group": 0
+              },
+              {
+                "text": "Está triste.",
+                "group": 1
+              },
+              {
+                "text": "Somos altos.",
+                "group": 0
+              },
+              {
+                "text": "Estamos en clase.",
+                "group": 1
+              },
+              {
+                "text": "Son las dos.",
+                "group": 0
+              },
+              {
+                "text": "Estoy bien.",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Kamarád píše: *¿Cómo estás?* Jsi trochu nemocný. Co odpovíš?",
+          "answer": "Ptá se, jak se máš → fotka, *estar*. *Estoy un poco enfermo.* (Holka by napsala *enferma*.)"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Nosotros ___ de Ostrava, pero ahora ___ en Barcelona.",
+          "answer": "Odkud jsme → vizitka: *somos*. Kde jsme teď → fotka: *estamos*. *Somos de Ostrava, pero ahora estamos en Barcelona.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Estoy de Praga.",
+          "right": "Soy de Praga.",
+          "why": "Odkud jsi, patří na vizitku, tedy *ser*. Estar by říkal, kde jsi právě teď."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Soy bien.",
+          "right": "Estoy bien.",
+          "why": "Jak se máš, je stav. Proto *estar*: *Estoy bien.*"
+        },
+        {
+          "type": "summary",
+          "text": "Vizitka = **ser** (kdo, odkud, čím, jaký). Fotka = **estar** (kde právě je, jak se má). *Es simpática, pero hoy está triste.*"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Yo ___ en el colegio.",
+      "options": [
+        "estoy",
+        "soy"
+      ],
+      "answer": 0,
+      "explanation": "Kde jsem → estar."
+    },
+    {
+      "type": "choice",
+      "question": "Ana ___ de Colombia.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "explanation": "Původ → ser."
+    },
+    {
+      "type": "choice",
+      "question": "Hoy mi hermano ___ enfermo.",
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "explanation": "Zdraví právě teď → estar."
+    },
+    {
+      "type": "choice",
+      "question": "Mis padres ___ profesores.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "answer": 0,
+      "explanation": "Povolání → ser."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar estar: Nosotros ___ en Madrid.",
+      "answers": [
+        "estamos"
+      ],
+      "explanation": "Nosotros → estamos.",
+      "hints": [
+        "Jde o místo. Které sloveso to vyjadřuje?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar estar: ¿Cómo ___ tú?",
+      "answers": [
+        "estás",
+        "estas"
+      ],
+      "explanation": "Tú → estás."
+    },
+    {
+      "type": "choice",
+      "question": "Ellos ___ muy contentos.",
+      "options": [
+        "están",
+        "son",
+        "estáis"
+      ],
+      "answer": 0,
+      "explanation": "Nálada → estar, oni → están."
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu s tvarem estar.",
+      "pairs": [
+        [
+          "yo",
+          "estoy"
+        ],
+        [
+          "tú",
+          "estás"
+        ],
+        [
+          "ella",
+          "está"
+        ],
+        [
+          "vosotros",
+          "estáis"
+        ],
+        [
+          "ellos",
+          "están"
+        ]
+      ],
+      "explanation": "Estoy, estás, está, estamos, estáis, están."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Madrid está en España* je správně, i když se Madrid nikdy nepřestěhuje.",
+      "answer": true,
+      "explanation": "Místo se vždy vyjadřuje slovesem estar."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Soy bien* znamená „Mám se dobře“ a je správně.",
+      "answer": false,
+      "explanation": "Správně je *Estoy bien*, jde o stav."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená *Está aburrido*?",
+      "options": [
+        "Nudí se.",
+        "Je to nudný člověk.",
+        "Je chytrý."
+      ],
+      "answer": 0,
+      "explanation": "Estar + aburrido = momentální stav: nudí se. *Es aburrido* = je nudný."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou větou řekneš „Je chytrý“?",
+      "options": [
+        "Es listo.",
+        "Está listo."
+      ],
+      "answer": 0,
+      "explanation": "*Ser listo* = být chytrý, *estar listo* = být připravený."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova: „Jsem z Prahy, ale teď jsem v Seville.“",
+      "items": [
+        "Soy",
+        "de Praga,",
+        "pero ahora",
+        "estoy",
+        "en Sevilla."
+      ],
+      "explanation": "Původ se ser, místo s estar."
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ ser a kdy estar? Uveď ke každému příklad.",
+      "answer": "Ser použiju pro to, kdo kdo je: jméno, původ, povolání, vlastnosti (*Soy de Brno*). Estar pro místo a momentální stav nebo náladu (*Estoy en casa, estoy cansado*)."
+    },
+    {
+      "type": "open",
+      "question": "Popiš kamaráda: odkud je a jaký je (ser), kde je teď a jak se má (estar).",
+      "answer": "Mi amigo Pavel es de Plzeň. Es alto y muy simpático. Ahora está en el colegio y está un poco cansado."
+    }
+  ]
+}

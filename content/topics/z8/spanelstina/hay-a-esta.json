@@ -1,0 +1,501 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "hay-a-esta",
+  "title": "Hay × está / están",
+  "emoji": "🏠",
+  "explanations": [
+    {
+      "title": "Pravidlo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Popisuješ svůj pokoj nebo se v cizím městě ptáš na cestu. Někdy říkáš, že něco **existuje** („v pokoji je postel“), jindy, **kde** je konkrétní věc („moje postel je u okna“). Španělština na to má dvě různá slova: **hay** a **está / están**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hay",
+          "definition": "Je, jsou, nachází se, existuje. Má jen tento jeden tvar pro jednu i víc věcí. Čte se [aj].",
+          "example": "*Hay un parque.* = Je tu park."
+        },
+        {
+          "type": "term",
+          "term": "Está / están",
+          "definition": "Tvary slovesa *estar* pro „on, ona, ono“ a „oni“. Říkají, **kde** je konkrétní, už známá věc.",
+          "example": "*El parque está cerca.* = Ten park je blízko."
+        },
+        {
+          "type": "term",
+          "term": "Předložka místa",
+          "definition": "Slovíčko, které říká, kde něco je vzhledem k něčemu jinému.",
+          "example": "*en* (v, na), *debajo de* (pod), *al lado de* (vedle)"
+        },
+        {
+          "type": "heading",
+          "text": "Kdy hay a kdy está"
+        },
+        {
+          "type": "table",
+          "head": [
+            "hay + …",
+            "está / están + …"
+          ],
+          "rows": [
+            [
+              "un / una: Hay un gato.",
+              "el / la: El gato está en el sofá."
+            ],
+            [
+              "číslo: Hay dos libros.",
+              "los / las: Los libros están en la mesa."
+            ],
+            [
+              "množné bez členu: Hay sillas.",
+              "jméno: Ana está en casa."
+            ],
+            [
+              "otázka: ¿Hay un banco por aquí?",
+              "otázka: ¿Dónde está el banco?"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je věc nová, neznámá, jen říkáš, že **existuje**? (un, una, číslo, bez členu) → **hay**.",
+            "Je věc konkrétní, známá (el, la, los, las, můj, jméno) a říkáš, **kde je**? → **está** (jedna) / **están** (víc).",
+            "Hay se nikdy nemění: *hay un libro*, *hay tres libros*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Předložky místa"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "en",
+              "v, na"
+            ],
+            [
+              "encima de",
+              "na (nahoře na)"
+            ],
+            [
+              "debajo de",
+              "pod"
+            ],
+            [
+              "al lado de",
+              "vedle"
+            ],
+            [
+              "delante de",
+              "před"
+            ],
+            [
+              "detrás de",
+              "za"
+            ],
+            [
+              "entre",
+              "mezi"
+            ],
+            [
+              "cerca de / lejos de",
+              "blízko / daleko od"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: *de + el* se stáhne na **del**: *al lado del sofá* (vedle gauče). *De la* se nestahuje: *al lado de la mesa*."
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: vyber hay, nebo está/están."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "En mi calle",
+                "after": "una farmacia.",
+                "options": [
+                  "hay",
+                  "está"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "La farmacia",
+                "after": "al lado del banco.",
+                "options": [
+                  "hay",
+                  "está"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "",
+                "after": "tres gatos en el jardín.",
+                "options": [
+                  "Hay",
+                  "Están"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Mis gatos",
+                "after": "en el jardín.",
+                "options": [
+                  "hay",
+                  "están"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: V mém pokoji je postel. Postel je u okna. (*cama* = postel, *ventana* = okno)",
+          "answer": "1) Postel zmiňuji poprvé → *hay una cama*. 2) Teď je to ta postel, říkám kde → *la cama está*. Celé: *En mi habitación hay una cama. La cama está al lado de la ventana.*"
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se: Je tady poblíž nějaký supermarket? A pak: Kde je ten supermarket?",
+          "answer": "1) Nevím, jestli existuje → *¿Hay un supermercado por aquí?* 2) Ptám se na konkrétní → *¿Dónde está el supermercado?*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hay el libro en la mesa.",
+          "right": "El libro está en la mesa.",
+          "why": "Hay nikdy nestojí s el, la, los, las. Konkrétní věci se ptáš, kde je, slovesem estar."
+        },
+        {
+          "type": "summary",
+          "text": "**Hay** = je/jsou/existuje (s *un, una*, číslem nebo bez členu). **Está/están** = kde je konkrétní věc (s *el, la, los, las*, jménem, *mi*)."
+        }
+      ]
+    },
+    {
+      "title": "Můj pokoj",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kamarádka z Mexika ti posílá zprávu: „Popiš mi svůj pokoj!“ Nejdřív vyjmenuješ, co v něm **je**. Pak řekneš, **kde** ty věci stojí. Na první použiješ *hay*, na druhé *está* a *están*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hay",
+          "definition": "Jediný tvar pro „je / jsou“ ve smyslu „nachází se tu, existuje“. Jako anglické *there is / there are*.",
+          "example": "*Hay una mesa.* = Je tam stůl. *Hay dos sillas.* = Jsou tam dvě židle."
+        },
+        {
+          "type": "term",
+          "term": "Estar",
+          "definition": "Sloveso „být“ pro místo. Připomenutí: *está* = je (jedna věc), *están* = jsou (víc věcí).",
+          "example": "*La mesa está aquí.* = Stůl je tady."
+        },
+        {
+          "type": "term",
+          "term": "Členy",
+          "definition": "Připomenutí: neurčitý *un, una* = nějaký (nová věc). Určitý *el, la, los, las* = ten (známá věc).",
+          "example": "*un libro* (nějaká kniha) × *el libro* (ta kniha)"
+        },
+        {
+          "type": "heading",
+          "text": "Zpráva kamarádce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "En mi habitación hay una cama, una mesa y dos sillas.",
+              "V mém pokoji je postel, stůl a dvě židle."
+            ],
+            [
+              "La cama está al lado de la ventana.",
+              "Postel je vedle okna."
+            ],
+            [
+              "Las sillas están delante de la mesa.",
+              "Židle jsou před stolem."
+            ],
+            [
+              "Debajo de la cama hay un gato.",
+              "Pod postelí je kočka."
+            ],
+            [
+              "¡No hay televisión!",
+              "Televize tam není!"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *hay* stojí s *una cama*, *dos sillas*, *un gato*. *Está / están* stojí s *la cama*, *las sillas*. A zápor je prostě *no hay* = není, nejsou."
+        },
+        {
+          "type": "heading",
+          "text": "Rozhodovací otázka"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zeptej se: Říkám, ŽE tu něco je? → *hay*.",
+            "Nebo: Říkám, KDE ta známá věc je? → *está* (jedna), *están* (víc).",
+            "Kontrola: před podstatným jménem je *un, una*, číslo nebo nic → hay. Je tam *el, la, los, las*, *mi* nebo jméno → está/están."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: otoč kartičky a zkus nejdřív přeložit sám."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Je tu park.",
+                "back": "Hay un parque."
+              },
+              {
+                "front": "Park je blízko.",
+                "back": "El parque está cerca."
+              },
+              {
+                "front": "Jsou tu dvě kavárny.",
+                "back": "Hay dos cafeterías."
+              },
+              {
+                "front": "Kavárny jsou na náměstí.",
+                "back": "Las cafeterías están en la plaza."
+              },
+              {
+                "front": "Není tu mléko.",
+                "back": "No hay leche."
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: En la mesa ___ un libro. El libro ___ abierto.",
+          "answer": "Kniha poprvé, s *un* → *hay*. Pak ta kniha (*el libro*) a jak je (stav) → *está*. *En la mesa hay un libro. El libro está abierto.*"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Mis padres ___ en el salón.",
+          "answer": "*Mis padres* jsou konkrétní lidé, víc než jeden, říkám kde → *están*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Están dos gatos en el jardín.",
+          "right": "Hay dos gatos en el jardín.",
+          "why": "S číslem a novou informací („jsou tam dvě kočky“) se používá *hay*."
+        },
+        {
+          "type": "summary",
+          "text": "Nejdřív řekni, co tam **je** (*hay* + un/una/číslo), pak **kde** to je (*el/la… + está/están*). *Hay un gato. El gato está debajo de la cama.*"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "En mi ciudad ___ un museo.",
+      "options": [
+        "hay",
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "explanation": "Nová věc s *un* → hay."
+    },
+    {
+      "type": "choice",
+      "question": "El museo ___ en la plaza.",
+      "options": [
+        "está",
+        "hay",
+        "están"
+      ],
+      "answer": 0,
+      "explanation": "Konkrétní věc (*el museo*), kde je → está."
+    },
+    {
+      "type": "choice",
+      "question": "Los niños ___ en el parque.",
+      "options": [
+        "están",
+        "hay",
+        "está"
+      ],
+      "answer": 0,
+      "explanation": "Konkrétní děti, víc → están."
+    },
+    {
+      "type": "choice",
+      "question": "___ dos bancos en esta calle.",
+      "options": [
+        "Hay",
+        "Están",
+        "Está"
+      ],
+      "answer": 0,
+      "explanation": "S číslem → hay."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: ¿Dónde ___ la estación? (Kde je nádraží?)",
+      "answers": [
+        "está",
+        "esta"
+      ],
+      "explanation": "Ptám se, kde je konkrétní věc → está.",
+      "hints": [
+        "Je před podstatným jménem určitý, nebo neurčitý člen?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň: No ___ leche en la nevera. (V lednici není mléko.)",
+      "answers": [
+        "hay"
+      ],
+      "explanation": "Zápor existence: no hay."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Hay* má jen jeden tvar pro jednu i víc věcí.",
+      "answer": true,
+      "explanation": "*Hay un libro*, *hay tres libros*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Hay el perro en el jardín* je správně.",
+      "answer": false,
+      "explanation": "Hay nestojí s el, la, los, las. Správně: *El perro está en el jardín.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj předložku s významem.",
+      "pairs": [
+        [
+          "debajo de",
+          "pod"
+        ],
+        [
+          "al lado de",
+          "vedle"
+        ],
+        [
+          "detrás de",
+          "za"
+        ],
+        [
+          "entre",
+          "mezi"
+        ],
+        [
+          "cerca de",
+          "blízko"
+        ]
+      ],
+      "explanation": "Předložky místa se často pojí s *de*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak správně řekneš „vedle gauče“?",
+      "options": [
+        "al lado del sofá",
+        "al lado de el sofá",
+        "al lado sofá"
+      ],
+      "answer": 0,
+      "explanation": "*De + el* se stahuje na *del*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Mi móvil está en la mochila.",
+        "Mi móvil hay en la mochila.",
+        "Hay mi móvil en la mochila."
+      ],
+      "answer": 0,
+      "explanation": "Konkrétní věc (*mi móvil*) → está."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš, jestli je poblíž lékárna?",
+      "options": [
+        "¿Hay una farmacia por aquí?",
+        "¿Está una farmacia por aquí?",
+        "¿Dónde hay la farmacia?"
+      ],
+      "answer": 0,
+      "explanation": "Nevíš, jestli existuje, a máš *una* → hay."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Pod postelí je kočka.“",
+      "items": [
+        "Debajo de",
+        "la cama",
+        "hay",
+        "un gato."
+      ],
+      "explanation": "Kočka je nová informace s *un* → hay."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *hay* a *está*? Uveď příklady.",
+      "answer": "*Hay* říká, že něco existuje nebo se někde nachází, stojí s un/una, číslem nebo bez členu: *Hay un parque.* *Está* říká, kde je konkrétní známá věc: *El parque está cerca.*"
+    },
+    {
+      "type": "open",
+      "question": "Popiš španělsky svůj pokoj ve třech větách s *hay* a *está/están*.",
+      "answer": "En mi habitación hay una cama y una mesa. La mesa está al lado de la ventana. Mis libros están encima de la mesa."
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sloveso-gustar",
+  "title": "Gustar a podobná slovesa",
+  "emoji": "❤️",
+  "explanations": [
+    {
+      "title": "Jako česky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Anglicky řekneš *I like chocolate*: já mám rád. Španělsky se to řekne obráceně, **úplně stejně jako česky**: „čokoláda se mi líbí“ = *me gusta el chocolate*. Kdo má něco rád, je jen „mi“, a sloveso se řídí tím, **co** se líbí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Gustar",
+          "definition": "Líbit se, chutnat. Používá se hlavně ve dvou tvarech: *gusta* (líbí se jedna věc) a *gustan* (líbí se víc věcí).",
+          "example": "*Me gusta el fútbol.* = Líbí se mi fotbal."
+        },
+        {
+          "type": "term",
+          "term": "Zájmeno komu",
+          "definition": "Krátké slovo, které řekne, **komu** se něco líbí: me (mi), te (ti), le (jemu, jí, vám), nos (nám), os (vám), les (jim, vám).",
+          "example": "*Te gusta.* = Líbí se ti."
+        },
+        {
+          "type": "term",
+          "term": "Jednotné a množné číslo",
+          "definition": "Připomenutí: jedna věc (*el perro*) × víc věcí (*los perros*).",
+          "example": "*Me gusta el perro.* × *Me gustan los perros.*"
+        },
+        {
+          "type": "heading",
+          "text": "Stavba věty"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Komu",
+            "gusta / gustan",
+            "Co",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "me",
+              "gusta",
+              "el chocolate",
+              "Chutná mi čokoláda."
+            ],
+            [
+              "te",
+              "gustan",
+              "los gatos",
+              "Líbí se ti kočky."
+            ],
+            [
+              "le",
+              "gusta",
+              "leer",
+              "Rád/ráda čte. (Líbí se mu/jí číst.)"
+            ],
+            [
+              "nos",
+              "gustan",
+              "las películas",
+              "Líbí se nám filmy."
+            ],
+            [
+              "os",
+              "gusta",
+              "la música",
+              "Líbí se vám hudba."
+            ],
+            [
+              "les",
+              "gusta",
+              "bailar",
+              "Rádi tančí."
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Komu se to líbí? Vyber *me, te, le, nos, os, les*.",
+            "Co se líbí? Jedna věc nebo činnost (infinitiv) → **gusta**. Víc věcí → **gustan**.",
+            "Před podstatné jméno dej člen: *el, la, los, las*. Me gusta **el** chocolate, ne *me gusta chocolate*.",
+            "Zápor: *no* před zájmeno: *No me gusta el té.*"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "I několik činností za sebou má *gusta*: *Me gusta bailar y cantar.*"
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: gusta, nebo gustan?"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Me",
+                "after": "el chocolate.",
+                "options": [
+                  "gusta",
+                  "gustan"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Me",
+                "after": "los perros.",
+                "options": [
+                  "gusta",
+                  "gustan"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "¿Te",
+                "after": "nadar?",
+                "options": [
+                  "gusta",
+                  "gustan"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "No nos",
+                "after": "las matemáticas.",
+                "options": [
+                  "gusta",
+                  "gustan"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Chutnají mi jahody. (*fresas*)",
+          "answer": "1) Komu: mi → *me*. 2) Co: jahody, víc věcí → *gustan*. 3) Člen: *las fresas*. *Me gustan las fresas.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Bratr rád hraje počítačové hry. (*jugar a los videojuegos*)",
+          "answer": "1) Komu: jemu → *le*. 2) Co: hrát = činnost (infinitiv) → *gusta*. 3) *A mi hermano le gusta jugar a los videojuegos.* (*A mi hermano* upřesní, komu.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Me gusta los perros.",
+          "right": "Me gustan los perros.",
+          "why": "Líbí se víc věcí (psi), proto je sloveso v množném čísle: *gustan*. Sloveso se řídí tím, co se líbí, ne tím, komu."
+        },
+        {
+          "type": "summary",
+          "text": "**Me / te / le / nos / os / les + gusta** (jedna věc, činnost) **/ gustan** (víc věcí). Před podstatným jménem je člen: *Me gusta el fútbol.*"
+        }
+      ]
+    },
+    {
+      "title": "Co máme rádi",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Při seznamování se nejčastěji ptáš, co má kdo rád: hudbu, sport, jídlo. Podívej se na rozhovor dvou kamarádů a uvidíš, jak se ve španělštině vyjadřuje, co se líbí, co ne a co je úplně nejlepší."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Gustar",
+          "definition": "Líbit se. Sloveso se řídí věcí, která se líbí: *gusta* (jedna), *gustan* (víc).",
+          "example": "*Me gusta el cine.* = Mám rád kino."
+        },
+        {
+          "type": "term",
+          "term": "Encantar",
+          "definition": "Moc se líbit, zbožňovat. Staví se stejně jako gustar.",
+          "example": "*Me encanta el chocolate.* = Zbožňuju čokoládu."
+        },
+        {
+          "type": "term",
+          "term": "A mí / a ti",
+          "definition": "Zdůraznění, komu: *a mí* (mně), *a ti* (tobě), *a él / a ella* (jemu / jí). Používá se hlavně v krátkých odpovědích.",
+          "example": "*¿Y a ti?* = A tobě?"
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kdo",
+            "Španělsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Marta",
+              "¿Te gusta el fútbol?",
+              "Máš rád fotbal?"
+            ],
+            [
+              "Jan",
+              "Sí, me encanta. ¿Y a ti?",
+              "Jo, zbožňuju ho. A ty?"
+            ],
+            [
+              "Marta",
+              "A mí no. Me gusta más el baloncesto.",
+              "Já ne. Mám radši basketbal."
+            ],
+            [
+              "Jan",
+              "No me gustan los deportes de invierno.",
+              "Nemám rád zimní sporty."
+            ],
+            [
+              "Marta",
+              "A mí tampoco. Pero me gusta mucho nadar.",
+              "Já taky ne. Ale moc ráda plavu."
+            ],
+            [
+              "Jan",
+              "¡A mí también!",
+              "Já taky!"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Krátké odpovědi"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Souhlas s kladnou větou: *Me gusta nadar.* – **A mí también.** (Já taky.)",
+            "Souhlas se zápornou větou: *No me gusta el té.* – **A mí tampoco.** (Já taky ne.)",
+            "Nesouhlas: *Me gusta el té.* – **A mí no.** / *No me gusta el té.* – **A mí sí.**"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Podobná slovesa"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sloveso",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "encantar",
+              "Me encantan los gatos.",
+              "Zbožňuju kočky."
+            ],
+            [
+              "interesar",
+              "Me interesa la historia.",
+              "Zajímá mě dějepis."
+            ],
+            [
+              "doler (o→ue)",
+              "Me duele la cabeza.",
+              "Bolí mě hlava."
+            ],
+            [
+              "doler (o→ue)",
+              "Me duelen los pies.",
+              "Bolí mě nohy."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si to: otoč kartičky a přelož."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Líbí se mi hudba.",
+                "back": "Me gusta la música."
+              },
+              {
+                "front": "Líbí se mi knihy.",
+                "back": "Me gustan los libros."
+              },
+              {
+                "front": "Zbožňuju tanec. (tančit)",
+                "back": "Me encanta bailar."
+              },
+              {
+                "front": "Bolí mě hlava.",
+                "back": "Me duele la cabeza."
+              },
+              {
+                "front": "Já taky ne.",
+                "back": "A mí tampoco."
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Řešené příklady"
+        },
+        {
+          "type": "example",
+          "question": "Kamarádka řekne: *No me gustan las arañas* (pavouci). Ty je taky nemáš ráda. Co odpovíš?",
+          "answer": "Souhlasím se zápornou větou → *A mí tampoco.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Zajímají nás zvířata. (*los animales*)",
+          "answer": "1) Nám → *nos*. 2) Zvířata = víc věcí → *interesan*. 3) *Nos interesan los animales.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Yo gusto el chocolate.",
+          "right": "Me gusta el chocolate.",
+          "why": "Gustar neznamená „mít rád“, ale „líbit se“. Podmětem je čokoláda, já jsem jen „mi“ (*me*)."
+        },
+        {
+          "type": "summary",
+          "text": "*Me gusta / me encanta* + jedna věc nebo činnost, *me gustan / me encantan* + víc věcí. Odpovědi: *a mí también* (já taky), *a mí tampoco* (já taky ne)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Me ___ el chocolate.",
+      "options": [
+        "gusta",
+        "gustan",
+        "gusto"
+      ],
+      "answer": 0,
+      "explanation": "Jedna věc → gusta."
+    },
+    {
+      "type": "choice",
+      "question": "Me ___ los perros.",
+      "options": [
+        "gustan",
+        "gusta",
+        "gustas"
+      ],
+      "answer": 0,
+      "explanation": "Víc věcí → gustan."
+    },
+    {
+      "type": "choice",
+      "question": "¿Te ___ bailar?",
+      "options": [
+        "gusta",
+        "gustan"
+      ],
+      "answer": 0,
+      "explanation": "Činnost (infinitiv) → gusta."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: ¿A ti ___ gusta el cine?",
+      "answers": [
+        "te"
+      ],
+      "explanation": "A ti → te.",
+      "hints": [
+        "Komu se kino líbí? Tobě."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: A nosotros ___ gustan las vacaciones.",
+      "answers": [
+        "nos"
+      ],
+      "explanation": "A nosotros → nos."
+    },
+    {
+      "type": "choice",
+      "question": "A mi madre ___ gusta el café.",
+      "options": [
+        "le",
+        "la",
+        "me"
+      ],
+      "answer": 0,
+      "explanation": "Jí (mé mámě) → le."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Me gusta chocolate* je správně, člen se nepíše.",
+      "answer": false,
+      "explanation": "Před podstatným jménem musí být člen: *Me gusta el chocolate.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "*Me gusta bailar y cantar* je správně, i když jsou tam dvě činnosti.",
+      "answer": true,
+      "explanation": "Činnosti v infinitivu mají vždy gusta."
+    },
+    {
+      "type": "choice",
+      "question": "Kamarád řekne: *No me gusta el té.* Ty ho taky nemáš rád. Co odpovíš?",
+      "options": [
+        "A mí tampoco.",
+        "A mí también.",
+        "A mí sí."
+      ],
+      "answer": 0,
+      "explanation": "Souhlas se záporem → tampoco."
+    },
+    {
+      "type": "choice",
+      "question": "Kamarádka řekne: *Me encanta nadar.* Ty taky. Co odpovíš?",
+      "options": [
+        "A mí también.",
+        "A mí tampoco.",
+        "Yo también gusto."
+      ],
+      "answer": 0,
+      "explanation": "Souhlas s kladnou větou → también."
+    },
+    {
+      "type": "match",
+      "question": "Spoj se správným zájmenem.",
+      "pairs": [
+        [
+          "a mí",
+          "me"
+        ],
+        [
+          "a ti",
+          "te"
+        ],
+        [
+          "a ella",
+          "le"
+        ],
+        [
+          "a nosotros",
+          "nos"
+        ],
+        [
+          "a ellos",
+          "les"
+        ]
+      ],
+      "explanation": "Me, te, le, nos, os, les."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Bolí mě nohy“?",
+      "options": [
+        "Me duelen los pies.",
+        "Me duele los pies.",
+        "Me dolen los pies."
+      ],
+      "answer": 0,
+      "explanation": "Nohy = víc věcí → duelen (doler o→ue)."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Zajímá mě dějepis.“",
+      "items": [
+        "Me",
+        "interesa",
+        "la",
+        "historia."
+      ],
+      "explanation": "Interesar se staví jako gustar."
+    },
+    {
+      "type": "input",
+      "question": "Přelož jedním slovem tvar slovesa: Me ___ los gatos. (Zbožňuju kočky.)",
+      "answers": [
+        "encantan"
+      ],
+      "explanation": "Encantar, víc věcí → encantan."
+    },
+    {
+      "type": "open",
+      "question": "Jak funguje sloveso gustar? Porovnej s angličtinou a češtinou.",
+      "answer": "Gustar znamená „líbit se“, takže věta je stavěná jako česká „líbí se mi“, ne jako anglické *I like*. Sloveso se řídí tím, co se líbí: *me gusta el perro*, *me gustan los perros*."
+    },
+    {
+      "type": "open",
+      "question": "Řekni španělsky, co máš rád a co ne (aspoň tři věty).",
+      "answer": "Me gusta mucho la música. Me encantan los gatos. No me gustan las matemáticas."
+    }
+  ]
+}
