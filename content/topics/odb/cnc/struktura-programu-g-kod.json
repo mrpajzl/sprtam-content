@@ -1,0 +1,488 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "struktura-programu-g-kod",
+  "title": "Struktura programu a G-kód",
+  "emoji": "📜",
+  "explanations": [
+    {
+      "title": "Jako recept",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Recept na bábovku je seznam kroků: nejdřív zapni troubu, pak smíchej, pak peč 50 minut. Každý řádek je jeden pokyn a pořadí je důležité."
+        },
+        {
+          "type": "text",
+          "text": "**NC program** je recept pro CNC stroj. Každý řádek říká, co má stroj udělat. Jazyk těchto řádků se podle nejčastějších příkazů hovorově jmenuje **G-kód** a jeho základ popisuje norma ISO 6983. Když ho umíš číst, rozumíš, co stroj udělá, ještě než to udělá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Blok (věta)",
+          "definition": "Jeden řádek programu. Stroj ho přečte a provede celý, pak jde na další.",
+          "example": "N60 X50 F200"
+        },
+        {
+          "type": "term",
+          "term": "Slovo",
+          "definition": "Nejmenší část bloku: **adresa** (písmeno) + **hodnota** (číslo).",
+          "example": "X50 – adresa X, hodnota 50."
+        },
+        {
+          "type": "term",
+          "term": "Adresa",
+          "definition": "Písmeno, které říká, co číslo za ním znamená.",
+          "example": "N číslo bloku, G přípravná funkce, X/Y/Z souřadnice, F posuv, S otáčky, T nástroj, M pomocná funkce."
+        },
+        {
+          "type": "term",
+          "term": "Přípravná funkce G",
+          "definition": "Říká, **jak** se má stroj pohybovat nebo jak má číst další čísla.",
+          "example": "G00 rychloposuv, G01 přímka pracovním posuvem, G90 absolutní souřadnice."
+        },
+        {
+          "type": "term",
+          "term": "Modální funkce",
+          "definition": "Platí, dokud ji nezrušíš jinou funkcí ze stejné skupiny. Nemusíš ji psát znovu v každém bloku.",
+          "example": "Po G01 jede stroj přímkou i v dalších blocích, dokud nenapíšeš třeba G00."
+        },
+        {
+          "type": "term",
+          "term": "Nemodální funkce",
+          "definition": "Platí jen v bloku, kde je napsaná.",
+          "example": "G04 – prodleva (stroj chvíli počká) jen v tomto bloku."
+        },
+        {
+          "type": "heading",
+          "text": "Rozbor jednoho bloku"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slovo",
+            "Adresa",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "N50",
+              "N",
+              "číslo bloku 50 (jen pro orientaci)"
+            ],
+            [
+              "G01",
+              "G",
+              "jeď po přímce pracovním posuvem"
+            ],
+            [
+              "Z−2",
+              "Z",
+              "cíl v ose Z: 2 mm pod nulou obrobku"
+            ],
+            [
+              "F100",
+              "F",
+              "posuv 100 mm/min"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Celý krátký program"
+        },
+        {
+          "type": "text",
+          "text": "Program na frézku, která vyfrézuje dvě drážky do tvaru L hloubky 2 mm: N10 G90 G17 G21 G40 G54 · N20 T1 M06 · N30 S1500 M03 · N40 G00 X0 Y0 Z5 · N50 G01 Z−2 F100 · N60 X50 F200 · N70 Y30 · N80 G00 Z50 · N90 M30"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**N10** – úvodní (bezpečnostní) blok: absolutní souřadnice G90, rovina XY G17, milimetry G21, bez rádiusové korekce G40, nulový bod G54.",
+            "**N20** – vyměň na nástroj číslo 1.",
+            "**N30** – zapni vřeteno 1 500 ot/min doprava.",
+            "**N40** – rychle najeď nad počátek, 5 mm nad obrobek.",
+            "**N50–N70** – zajeď do hloubky 2 mm a frézuj po přímkách.",
+            "**N80** – rychle odjeď nahoru.",
+            "**N90** – konec programu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč v bloku N70 Y30 není napsáno G01 ani F?",
+          "answer": "G01 i posuv F jsou **modální** – platí z bloku N60 dál. Stroj tedy jede po přímce na Y30 posuvem 200 mm/min. X zůstává 50, protože se nezměnilo."
+        },
+        {
+          "type": "example",
+          "question": "Co by se stalo, kdyby v N80 chybělo G00?",
+          "answer": "Platilo by pořád G01 a posuv F200. Stroj by vyjel nahoru na Z50 pomalým pracovním posuvem – nic by se nerozbilo, jen by to trvalo déle. G00 ho pošle rychloposuvem."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "G90 = ",
+                "after": " souřadnice",
+                "options": [
+                  "absolutní",
+                  "přírůstkové"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "G91 = ",
+                "after": " souřadnice",
+                "options": [
+                  "absolutní",
+                  "přírůstkové"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "G17 = rovina ",
+                "after": "",
+                "options": [
+                  "XY",
+                  "ZX",
+                  "YZ"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "G01 je funkce ",
+                "after": "",
+                "options": [
+                  "modální",
+                  "nemodální"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Číslo bloku N určuje, v jakém pořadí stroj bloky provede.",
+          "right": "Stroj provádí bloky v pořadí, jak jsou **zapsané v souboru**. N je jen značka pro orientaci a skoky.",
+          "why": "Na většině systémů je N nepovinné; přeházená čísla pořadí nezmění."
+        },
+        {
+          "type": "summary",
+          "text": "Program = bloky, blok = slova, slovo = adresa + hodnota. G funkce říkají jak, souřadnice kam, F/S/T/M doplňují posuv, otáčky, nástroj a pomocné povely. Modální funkce platí, dokud je nezrušíš."
+        }
+      ]
+    },
+    {
+      "title": "Absolutně a přírůstkově",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Jdi do domu číslo 30“ a „jdi o 20 domů dál“ jsou dva způsoby, jak popsat totéž. CNC program umí oba – a když je spleteš, stroj jede úplně jinam. Proto je dobré rozumět, z čeho se program skládá a jak se v něm zapisují cíle pohybu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "NC program",
+          "definition": "Textový soubor s povely pro CNC stroj. Základ zápisu (G-kód) popisuje ISO 6983; výrobci řídicích systémů ho doplňují vlastními funkcemi.",
+          "example": "Program pro Fanuc i Sinumerik vypadá podobně, ale liší se v detailech."
+        },
+        {
+          "type": "term",
+          "term": "Blok",
+          "definition": "Jeden řádek programu, provádí se celý najednou.",
+          "example": "N40 G00 X0 Y0 Z5"
+        },
+        {
+          "type": "term",
+          "term": "Adresa a hodnota",
+          "definition": "Písmeno (adresa) a číslo za ním (hodnota) dávají dohromady slovo.",
+          "example": "S1500 = otáčky 1 500 za minutu."
+        },
+        {
+          "type": "term",
+          "term": "Absolutní programování G90",
+          "definition": "Souřadnice v bloku je **cílový bod měřený od nulového bodu obrobku W**.",
+          "example": "G90 X30 = jeď do bodu X30."
+        },
+        {
+          "type": "term",
+          "term": "Přírůstkové programování G91",
+          "definition": "Hodnota v bloku je **o kolik** se posunout od místa, kde nástroj právě je.",
+          "example": "G91 X20 = posuň se o 20 mm v kladném směru X."
+        },
+        {
+          "type": "term",
+          "term": "Modální funkce",
+          "definition": "Platí, dokud ji nezrušíš jinou ze stejné skupiny.",
+          "example": "G90 a G91 jsou modální a navzájem se ruší."
+        },
+        {
+          "type": "term",
+          "term": "Rovina obrábění",
+          "definition": "Rovina, ve které se počítají oblouky a korekce: **G17** XY, **G18** ZX, **G19** YZ.",
+          "example": "Frézka obvykle G17, soustruh G18."
+        },
+        {
+          "type": "heading",
+          "text": "Stejná dráha dvakrát"
+        },
+        {
+          "type": "text",
+          "text": "Nástroj stojí v X10. Má dojet do X30 a pak do X50."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Absolutně G90",
+            "Přírůstkově G91"
+          ],
+          "rows": [
+            [
+              "X30",
+              "X20"
+            ],
+            [
+              "X50",
+              "X20"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Nástroj stojí v X0 Y0. Pomocí G91 zapiš pohyb do X40 Y15 a pak do X40 Y35.",
+          "answer": "První pohyb: o 40 v X a 15 v Y → **G91 X40 Y15**. Druhý: X se nemění, Y o 35 − 15 = 20 → **Y20**. Absolutně by to bylo G90 X40 Y15 a pak Y35."
+        },
+        {
+          "type": "example",
+          "question": "Program je v G91 a obsahuje X10, X10, X−5. Kde skončí nástroj, když začínal v X0?",
+          "answer": "Přírůstky se sčítají: 0 + 10 + 10 − 5 = **X15**. Pozor – jedna chyba v přírůstku posune i všechny další body."
+        },
+        {
+          "type": "heading",
+          "text": "Úvodní bezpečnostní blok"
+        },
+        {
+          "type": "text",
+          "text": "Řídicí systém si pamatuje modální funkce z předchozího programu. Proto se na začátek programu píše blok, který vše nastaví do známého stavu, např. **G90 G17 G21 G40 G54**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**G90** – absolutní souřadnice",
+            "**G17** – rovina XY",
+            "**G21** – rozměry v milimetrech (Fanuc a ISO; na Sinumeriku je to **G71**)",
+            "**G40** – zrušení rádiusové korekce",
+            "**G54** – první posunutí nulového bodu"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Komentáře se zapisují podle systému: na Fanucu do kulatých závorek (TO JE KOMENTÁŘ), na Sinumeriku za středník."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "G90",
+                "back": "absolutní souřadnice od W"
+              },
+              {
+                "front": "G91",
+                "back": "přírůstkové souřadnice od aktuální polohy"
+              },
+              {
+                "front": "G17",
+                "back": "rovina XY"
+              },
+              {
+                "front": "G18",
+                "back": "rovina ZX"
+              },
+              {
+                "front": "G21 (Fanuc)",
+                "back": "rozměry v mm"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Po G91 napíšeš cílový bod z výkresu.",
+          "right": "Po G91 píšeš **rozdíl** mezi novým a současným bodem.",
+          "why": "G91 je modální – dokud nepřepneš na G90, každé číslo je přírůstek. Zapomenutý G91 je častá příčina havárie."
+        },
+        {
+          "type": "summary",
+          "text": "G90 = kam (od W), G91 = o kolik (od současné polohy). Program začíná bezpečnostním blokem, který nastaví modální funkce: G90, G17, mm, G40, G54. Kódy se mezi systémy částečně liší."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Z čeho se skládá slovo NC programu?",
+      "options": [
+        "z adresy (písmene) a hodnoty (čísla)",
+        "ze dvou bloků",
+        "z G funkce a M funkce",
+        "z čísla bloku a komentáře"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená G91?",
+      "options": [
+        "přírůstkové souřadnice",
+        "absolutní souřadnice",
+        "rovina YZ",
+        "rozměry v palcích"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Modální funkce platí, dokud ji nezruší jiná funkce ze stejné skupiny.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v X25. V režimu G91 následuje blok X−10. Na jaké souřadnici X skončí?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "25 + (−10) = 15.",
+      "hints": [
+        "V G91 je číslo posun, ne cíl.",
+        "Přičti posun k současné poloze."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v X15 a má dojet do X60. Jakou hodnotu X napíšeš v režimu G91?",
+      "answers": [
+        "45",
+        "X45"
+      ],
+      "explanation": "60 − 15 = 45.",
+      "hints": [
+        "Zjisti rozdíl mezi cílovou a současnou polohou."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj funkci s rovinou obrábění.",
+      "pairs": [
+        [
+          "G17",
+          "XY"
+        ],
+        [
+          "G18",
+          "ZX"
+        ],
+        [
+          "G19",
+          "YZ"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která adresa označuje číslo bloku?",
+      "options": [
+        "N",
+        "G",
+        "P",
+        "O"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo bloku N určuje pořadí, v jakém stroj bloky provede.",
+      "answer": false,
+      "explanation": "Bloky se provádějí v pořadí zápisu; N je jen pro orientaci a skoky."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se na začátek programu píše blok jako G90 G17 G21 G40 G54?",
+      "options": [
+        "aby se modální funkce nastavily do známého stavu",
+        "aby stroj vyměnil nástroj",
+        "aby se zapnulo chlazení",
+        "protože bez něj nejde program uložit"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co si řídicí systém pamatuje z předchozího programu?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části typického programu frézování.",
+      "items": [
+        "bezpečnostní blok (G90 G17 G21 G40 G54)",
+        "výměna nástroje",
+        "zapnutí otáček vřetena",
+        "najetí rychloposuvem nad obrobek",
+        "obrábění pracovním posuvem",
+        "odjetí a konec programu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou funkcí se na Fanucu nastaví rozměry v milimetrech?",
+      "options": [
+        "G21",
+        "G20",
+        "G70",
+        "G90"
+      ],
+      "answer": 0,
+      "explanation": "G20 jsou palce. Na Sinumeriku je mm G71 a palce G70."
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce G04 (prodleva) je nemodální – platí jen v bloku, kde je napsaná.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi absolutním a přírůstkovým programováním na příkladu.",
+      "answer": "V absolutním režimu G90 je hodnota cílový bod od nulového bodu obrobku: z X10 do X30 napíšu X30. V přírůstkovém G91 je hodnota posun od současné polohy: napíšu X20. Chyba v přírůstku se přenese do všech dalších bodů."
+    },
+    {
+      "type": "open",
+      "question": "Popiš stavbu bloku N60 G01 X50 F200.",
+      "answer": "N60 je číslo bloku, G01 přípravná funkce – lineární pohyb pracovním posuvem, X50 je cílová souřadnice v ose X a F200 posuv 200 mm/min. Každé slovo je adresa (písmeno) a hodnota."
+    }
+  ]
+}

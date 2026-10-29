@@ -1,0 +1,471 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cad-modelovani",
+  "title": "CAD modelování",
+  "emoji": "🧊",
+  "explanations": [
+    {
+      "title": "Model krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dřív konstruktér kreslil součást tužkou na výkres. Dnes ji nejdřív postaví jako **3D model** v počítači. Z modelu pak vznikne výkres, kontrola, jestli díly do sebe pasují, i dráhy nástrojů pro CNC stroj."
+        },
+        {
+          "type": "text",
+          "text": "Ukážeme si, jak takový model vzniká: od jednoduchého náčrtu po hotovou přírubu s dírami a zaoblením. Postup je skoro stejný v SolidWorksu, Inventoru, Fusionu, Solid Edge i dalších programech."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CAD",
+          "definition": "*Computer Aided Design* – konstruování s pomocí počítače. Program, ve kterém se kreslí 2D výkresy a modelují 3D součásti.",
+          "example": "Autodesk Inventor, SolidWorks, Fusion, Solid Edge, CATIA."
+        },
+        {
+          "type": "term",
+          "term": "Skica",
+          "definition": "Rovinný (2D) náčrt na zvolené rovině nebo ploše modelu. Je to základ, ze kterého vznikne 3D tvar.",
+          "example": "Obdélník 80 × 50 mm nakreslený v rovině XY."
+        },
+        {
+          "type": "term",
+          "term": "Geometrická vazba",
+          "definition": "Pravidlo mezi prvky skici, které určuje jejich vzájemnou polohu – bez čísel.",
+          "example": "vodorovná, svislá, rovnoběžná, kolmá, tečná, soustředná, shodná, stejná délka"
+        },
+        {
+          "type": "term",
+          "term": "Rozměrová vazba (kóta)",
+          "definition": "Číslo, které určuje velikost nebo vzdálenost ve skice.",
+          "example": "Délka hrany 80 mm, průměr díry 10 mm."
+        },
+        {
+          "type": "term",
+          "term": "Plně určená skica",
+          "definition": "Skica, ve které vazby a kóty jednoznačně určují tvar, velikost i polohu. Žádnou čarou nejde myší pohnout. Programy ji obvykle zobrazí jinou barvou (často černou).",
+          "example": "Obdélník s rohem v počátku, vodorovnými a svislými hranami a dvěma kótami."
+        },
+        {
+          "type": "term",
+          "term": "Prvek (feature)",
+          "definition": "Jeden krok tvorby 3D modelu: přidá nebo odebere materiál.",
+          "example": "vysunutí, rotace, díra, zaoblení, sražení"
+        },
+        {
+          "type": "term",
+          "term": "Pole",
+          "definition": "Prvek, který zopakuje jiný prvek vícekrát – v řadě (lineární pole) nebo po kružnici (kruhové pole).",
+          "example": "Jedna díra a kruhové pole = 6 děr rovnoměrně po kružnici."
+        },
+        {
+          "type": "term",
+          "term": "Zaoblení a sražení",
+          "definition": "Úpravy hran: **zaoblení** hranu zakulatí poloměrem, **sražení** ji zkosí (např. 1 × 45°).",
+          "example": "Zaoblení R2 na rohu, sražení 1 × 45° na konci hřídele."
+        },
+        {
+          "type": "heading",
+          "text": "Stavíme přírubu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vyber rovinu a nakresli skicu: kružnici.",
+            "Přidej vazbu: střed kružnice **shodný** s počátkem souřadnic.",
+            "Okótuj průměr 100 mm – skica je plně určená.",
+            "Prvkem **vysunutí** z ní udělej válec tloušťky 15 mm.",
+            "Prvkem **díra** vytvoř jednu díru, prvkem **kruhové pole** ji rozmnož na 6 děr.",
+            "Hrany uprav prvky **zaoblení** a **sražení**."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Vysunutí",
+          "definition": "Prvek, který skicu „vytáhne“ do prostoru o zadanou délku. Může materiál přidat, nebo odebrat (vysunutý řez).",
+          "example": "Obdélník vysunutý o 20 mm = kvádr."
+        },
+        {
+          "type": "term",
+          "term": "Rotace",
+          "definition": "Prvek, který skicu otočí kolem osy. Tak vznikají rotační součásti.",
+          "example": "Poloviční profil hřídele otočený o 360° = hřídel."
+        },
+        {
+          "type": "term",
+          "term": "Strom prvků (historie)",
+          "definition": "Seznam všech prvků v pořadí, jak vznikly. Kliknutím na prvek ho můžeš upravit a model se přepočítá.",
+          "example": "Skica1 → Vysunutí1 → Díra1 → Kruhové pole1 → Zaoblení1"
+        },
+        {
+          "type": "example",
+          "question": "Obdélník má roh v počátku a hrany mají vazby vodorovná a svislá. Kolik kót potřebuješ, aby byla skica plně určená?",
+          "answer": "Poloha je daná rohem v počátku, směr hran vazbami. Chybí jen velikost: **2 kóty** – délka a šířka."
+        },
+        {
+          "type": "example",
+          "question": "Potřebuješ změnit tloušťku příruby z 15 na 20 mm. Co uděláš?",
+          "answer": "Ve stromu prvků najdeš **Vysunutí1** a změníš hodnotu 15 na 20. Díry, pole i zaoblení se přepočítají samy. To je výhoda **parametrického** modelu."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "skica (2D)",
+              "prvek (3D)"
+            ],
+            "items": [
+              {
+                "text": "geometrická vazba",
+                "group": 0
+              },
+              {
+                "text": "kóta",
+                "group": 0
+              },
+              {
+                "text": "kružnice",
+                "group": 0
+              },
+              {
+                "text": "vysunutí",
+                "group": 1
+              },
+              {
+                "text": "rotace",
+                "group": 1
+              },
+              {
+                "text": "zaoblení",
+                "group": 1
+              },
+              {
+                "text": "díra",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Skica nemusí být plně určená, stejně z ní model vznikne.",
+          "right": "Skicu vždy plně urči vazbami a kótami.",
+          "why": "Neurčená skica se při úpravě rozměru nebo omylem myší pokřiví a model se změní nečekaně; na nesprávném modelu pak stojí i CAM dráhy."
+        },
+        {
+          "type": "summary",
+          "text": "CAD model vzniká ze skic (2D tvar s geometrickými vazbami a kótami, plně určený) a prvků (vysunutí, rotace, díra, zaoblení, sražení, pole). Strom prvků zaznamenává postup a díky parametrům jde model snadno měnit."
+        }
+      ]
+    },
+    {
+      "title": "Myšlením konstruktéra",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dva lidé můžou namodelovat stejnou součást – a jeden model jde snadno upravit, druhý se při první změně rozpadne. Rozdíl je v tom, jak přemýšlíš: co je hlavní tvar, co jsou detaily a na čem co závisí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CAD",
+          "definition": "Počítačové konstruování: 2D výkresy a 3D modely.",
+          "example": "SolidWorks, Inventor, Fusion."
+        },
+        {
+          "type": "term",
+          "term": "Parametrický model",
+          "definition": "Model, jehož tvar řídí čísla (parametry) a vazby. Změníš číslo a model se přepočítá.",
+          "example": "Délka hřídele = 120 mm; změníš na 150 a hřídel se prodlouží."
+        },
+        {
+          "type": "term",
+          "term": "Skica a vazby",
+          "definition": "2D náčrt s **geometrickými vazbami** (rovnoběžnost, kolmost, tečnost, soustřednost…) a **rozměrovými vazbami** (kótami).",
+          "example": "Dvě kružnice soustředné, kóty Ø40 a Ø60."
+        },
+        {
+          "type": "term",
+          "term": "Plně určená skica",
+          "definition": "Tvar i poloha jsou dané vazbami a kótami úplně, nic není „volné“.",
+          "example": "Program hlásí „plně určeno“ (Fully defined)."
+        },
+        {
+          "type": "term",
+          "term": "Vysunutí, rotace a vysunutý řez",
+          "definition": "**Vysunutí** vytáhne skicu do prostoru o zadanou délku, **rotace** ji otočí kolem osy, **vysunutý řez** tvarem skici materiál odebere.",
+          "example": "Kružnice vysunutá o 15 mm = kotouč; obdélník jako vysunutý řez = drážka."
+        },
+        {
+          "type": "term",
+          "term": "Základní prvek",
+          "definition": "První 3D prvek modelu, nejčastěji vysunutí nebo rotace. Představuje hlavní tvar součásti.",
+          "example": "U hřídele rotace, u desky vysunutí."
+        },
+        {
+          "type": "term",
+          "term": "Dokončovací prvky",
+          "definition": "Detaily přidané na konec: zaoblení, sražení, díry, pole, zrcadlení.",
+          "example": "Sražení 1 × 45° na hraně hřídele."
+        },
+        {
+          "type": "term",
+          "term": "Strom prvků",
+          "definition": "Historie modelu – pořadí prvků. Pozdější prvky závisí na dřívějších.",
+          "example": "Zaoblení hrany závisí na vysunutí, které tu hranu vytvořilo."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla dobrého modelu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pravidlo",
+            "Proč"
+          ],
+          "rows": [
+            [
+              "Skicu kótuj jako na výkrese (od funkčních ploch).",
+              "Kóty v modelu pak přejdou do výkresu."
+            ],
+            [
+              "Skicu vždy plně urči.",
+              "Model se nepokřiví při změně."
+            ],
+            [
+              "Nejdřív hlavní tvar, nakonec zaoblení a sražení.",
+              "Zaoblení na začátku komplikují další skici a vazby."
+            ],
+            [
+              "Opakované prvky dělej polem nebo zrcadlením.",
+              "Změníš jeden a změní se všechny."
+            ],
+            [
+              "Rotační součásti modeluj rotací polovičního profilu.",
+              "Odpovídá to soustružení a výkresu."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup u hřídele"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na rovině nakresli polovinu podélného řezu hřídele a osu.",
+            "Přidej vazby (vodorovné a svislé čáry, osa ve středu) a kóty průměrů a délek.",
+            "Prvek **rotace** kolem osy o 360°.",
+            "Prvkem **vysunutý řez** udělej drážku pro pero.",
+            "Na konec přidej **sražení** hran."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hřídel má tři osazení: Ø30 délky 40, Ø40 délky 60, Ø30 délky 40. Jakým prvkem ji vytvoříš nejrychleji?",
+          "answer": "Jednou **rotací**: nakreslíš polovinu profilu (schody 15 / 20 / 15 mm od osy) a otočíš ji o 360°. Kótovat můžeš rovnou průměry – většina programů to u rotace umožní."
+        },
+        {
+          "type": "example",
+          "question": "V modelu desky jsi nejdřív udělal zaoblení rohů R5 a pak chceš na boční hranu nakreslit skicu drážky. Co se může pokazit?",
+          "answer": "Zaoblení rozbilo ostré hrany, na které by se skica mohla vázat. Když se pak zaoblení změní nebo smaže, vazby skici se ztratí a prvek drážky se nepřepočítá. Proto zaoblení **až na konec**."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Skica",
+                "back": "2D náčrt s vazbami a kótami"
+              },
+              {
+                "front": "Vysunutí",
+                "back": "skica vytažená do prostoru"
+              },
+              {
+                "front": "Rotace",
+                "back": "skica otočená kolem osy"
+              },
+              {
+                "front": "Pole",
+                "back": "opakování prvku v řadě nebo po kružnici"
+              },
+              {
+                "front": "Strom prvků",
+                "back": "historie modelu"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rozměr se dá opravit tak, že ho v modelu „natáhneš“ myší.",
+          "right": "Rozměr se mění **úpravou kóty** nebo parametru.",
+          "why": "Tažení myší u neurčené skici dá náhodný rozměr a parametrický model ztratí smysl."
+        },
+        {
+          "type": "summary",
+          "text": "Dobrý parametrický model: plně určené skici kótované jako výkres, základní prvek (vysunutí nebo rotace), pak řezy a díry, nakonec zaoblení a sražení. Opakování přes pole a zrcadlení. Změny přes kóty ve stromu prvků."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka CAD?",
+      "options": [
+        "Computer Aided Design – konstruování s pomocí počítače",
+        "Computer Automatic Drilling",
+        "Control And Drive",
+        "Computer Aided Data"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která vazba je geometrická (ne rozměrová)?",
+      "options": [
+        "kolmost",
+        "délka 50 mm",
+        "průměr 20 mm",
+        "vzdálenost 15 mm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Plně určená skica má jednoznačně daný tvar, velikost i polohu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jakým prvkem nejlépe vymodeluješ hřídel?",
+      "options": [
+        "rotací polovičního profilu kolem osy",
+        "vysunutím obdélníku",
+        "zrcadlením",
+        "zaoblením"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Obdélník má roh v počátku a vazby vodorovná/svislá. Kolik kót je potřeba, aby byla skica plně určená?",
+      "answers": [
+        "2",
+        "dvě"
+      ],
+      "explanation": "Chybí jen délka a šířka.",
+      "hints": [
+        "Co už je určeno polohou rohu a vazbami?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj prvek s výsledkem.",
+      "pairs": [
+        [
+          "vysunutí",
+          "z obdélníku kvádr"
+        ],
+        [
+          "rotace",
+          "z profilu hřídel"
+        ],
+        [
+          "kruhové pole",
+          "6 děr po kružnici"
+        ],
+        [
+          "sražení",
+          "zkosená hrana"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zaoblení a sražení je lepší dělat na začátku modelování.",
+      "answer": false,
+      "explanation": "Detaily patří na konec, aby nekomplikovaly další skici a vazby."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup tvorby jednoduché součásti.",
+      "items": [
+        "zvolit rovinu",
+        "nakreslit skicu",
+        "plně ji určit vazbami a kótami",
+        "vysunutí nebo rotace",
+        "díry a řezy",
+        "zaoblení a sražení"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je strom prvků?",
+      "options": [
+        "historie modelu – seznam prvků v pořadí vzniku",
+        "seznam nástrojů pro CNC",
+        "složka se soubory",
+        "kusovník sestavy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane v parametrickém modelu, když změníš kótu tloušťky?",
+      "options": [
+        "model se přepočítá a závislé prvky se přizpůsobí",
+        "musíš model nakreslit znovu",
+        "změní se jen výkres",
+        "nic, kóta je jen popisek"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co řídí tvar parametrického modelu?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Opakované díry je výhodné dělat polem, protože při změně jedné díry se změní všechny.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Co je plně určená skica a proč je důležitá?",
+      "answer": "Je to skica, ve které geometrické vazby a kóty jednoznačně určují tvar, velikost i polohu, takže nic nejde posunout myší. Model je pak stabilní, předvídatelně se přepočítá při změně rozměru a dají se na něj spolehnout výkres i CAM."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak namodeluješ přírubu s šesti dírami.",
+      "answer": "Na rovině nakreslím kružnici se středem v počátku a okótuji průměr, vysunu ji na tloušťku příruby. Vytvořím jednu díru na roztečné kružnici a kruhovým polem ji rozmnožím na šest. Nakonec přidám zaoblení a sražení hran."
+    }
+  ]
+}

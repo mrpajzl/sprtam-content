@@ -1,0 +1,439 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "funkce-s-f-t",
+  "title": "Otáčky, posuv a nástroj (S, F, T)",
+  "emoji": "🔄",
+  "explanations": [
+    {
+      "title": "Proč a jak rychle",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když jedeš na kole, stejné šlapání znamená na velkém kole větší rychlost než na malém. U obrábění je to podobné: při stejných otáčkách se obvod velkého obrobku nebo velké frézy pohybuje mnohem rychleji než obvod malého."
+        },
+        {
+          "type": "text",
+          "text": "Aby nástroj vydržel a povrch byl hezký, musí břit jet po materiálu **správnou rychlostí**. Proto programátor nastavuje tři věci: otáčky **S**, posuv **F** a nástroj **T**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Řezná rychlost vc",
+          "definition": "Rychlost, kterou se břit nástroje pohybuje po materiálu. Udává se v **m/min**. Doporučené hodnoty najdeš v katalogu nástrojů podle materiálu.",
+          "example": "Pro soustružení oceli třeba 150–250 m/min, pro hliník mnohem víc (hodnoty jsou jen orientační příklad)."
+        },
+        {
+          "type": "term",
+          "term": "Otáčky n",
+          "definition": "Kolikrát se vřeteno otočí za minutu, v **ot/min** (1/min). V programu je píšeš za adresu **S**.",
+          "example": "S1500 = 1 500 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Posuv",
+          "definition": "Jak rychle se nástroj posouvá do materiálu. Buď **mm/min** (za minutu), nebo **mm/ot** (za jednu otáčku vřetena). V programu za adresu **F**.",
+          "example": "F200 = 200 mm/min; F0.2 = 0,2 mm na otáčku."
+        },
+        {
+          "type": "term",
+          "term": "Posuv na zub fz",
+          "definition": "U frézy: o kolik mm se fréza posune, než do materiálu zabere další zub.",
+          "example": "Fréza se 4 zuby a fz = 0,05 mm."
+        },
+        {
+          "type": "term",
+          "term": "Nástroj T",
+          "definition": "Adresa, kterou vybereš nástroj ze zásobníku nebo revolverové hlavy.",
+          "example": "T5 = nástroj číslo 5."
+        },
+        {
+          "type": "heading",
+          "text": "Z rychlosti na otáčky"
+        },
+        {
+          "type": "text",
+          "text": "Za jednu otáčku urazí bod na obvodu dráhu π · D. Za minutu tedy π · D · n milimetrů. Řezná rychlost je v metrech, proto se dělí 1 000:"
+        },
+        {
+          "type": "text",
+          "text": "`vc = π · D · n / 1000`, a tedy `n = 1000 · vc / (π · D)` (D v mm, vc v m/min, n v ot/min)."
+        },
+        {
+          "type": "example",
+          "question": "Soustružíš ocelovou tyč průměru 50 mm řeznou rychlostí 200 m/min. Jaké otáčky nastavíš?",
+          "answer": "n = 1000 · 200 / (π · 50) = 200 000 / 157,08 ≈ **1 273 ot/min**. V programu S1273 M03 (nebo zaokrouhleně S1270)."
+        },
+        {
+          "type": "example",
+          "question": "Fréza má 4 zuby, posuv na zub 0,1 mm a otáčky 1 000 ot/min. Jaký posuv F v mm/min nastavíš?",
+          "answer": "Za jednu otáčku zabere 4 zuby po 0,1 mm = 0,4 mm. Za minutu: 0,4 · 1 000 = **400 mm/min**. Vzorec: `vf = fz · z · n`."
+        },
+        {
+          "type": "heading",
+          "text": "Konstantní řezná rychlost na soustruhu"
+        },
+        {
+          "type": "term",
+          "term": "G96 a G97",
+          "definition": "**G96** – v programu je za S řezná rychlost v m/min a systém sám mění otáčky podle průměru. **G97** – za S jsou přímo otáčky v ot/min.",
+          "example": "G96 S200 při čelním soustružení: čím blíž ke středu, tím vyšší otáčky."
+        },
+        {
+          "type": "text",
+          "text": "Při G96 by se u středu obrobku (průměr se blíží nule) otáčky vyšplhaly nebezpečně vysoko. Proto se **vždy omezují maximální otáčky**: na Sinumeriku příkazem LIMS=…, na Fanucu funkcí G50 S… (podle typu G-kódu i G92 S…). Přesný zápis ověř v návodu ke svému stroji."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Menší průměr = menší otáčky.",
+          "right": "Při stejné řezné rychlosti potřebuje **menší průměr větší otáčky**.",
+          "why": "n = 1000 · vc / (π · D): D je ve jmenovateli, takže se zmenšujícím průměrem otáčky rostou."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "S",
+                "back": "otáčky (G97) nebo řezná rychlost (G96)"
+              },
+              {
+                "front": "F",
+                "back": "posuv"
+              },
+              {
+                "front": "T",
+                "back": "číslo nástroje"
+              },
+              {
+                "front": "vc",
+                "back": "řezná rychlost v m/min"
+              },
+              {
+                "front": "n = ?",
+                "back": "1000 · vc / (π · D)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "summary",
+          "text": "Řezná rychlost vc = π·D·n/1000. Z ní spočítáš otáčky S; posuv F frézy je fz · z · n. Na soustruhu G96 drží vc stálou, a proto musí mít omezené maximální otáčky."
+        }
+      ]
+    },
+    {
+      "title": "Jako tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než napíšeš první řez, potřebuješ do programu dát tři čísla: kterým nástrojem (T), jak rychle se točí (S) a jak rychle jede do materiálu (F). Tady je to jako přehledná tabulka a postup výpočtu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Adresa S",
+          "definition": "Otáčky vřetena. Podle režimu buď ot/min (G97), nebo řezná rychlost v m/min (G96).",
+          "example": "S800"
+        },
+        {
+          "type": "term",
+          "term": "Adresa F",
+          "definition": "Posuv. Podle režimu buď mm/min, nebo mm/ot.",
+          "example": "F0.15"
+        },
+        {
+          "type": "term",
+          "term": "Adresa T",
+          "definition": "Volba nástroje. Zápis se liší podle systému.",
+          "example": "Frézka: T3 M06. Soustruh Fanuc: T0303 (nástroj 3, korekce 3). Sinumerik: T3 D1."
+        },
+        {
+          "type": "term",
+          "term": "Řezná rychlost vc",
+          "definition": "Rychlost břitu po materiálu v m/min, bere se z katalogu nástroje.",
+          "example": "vc = 30 m/min pro vrtání oceli HSS vrtákem (příklad)."
+        },
+        {
+          "type": "term",
+          "term": "Korekce nástroje",
+          "definition": "Uložené rozměry nástroje (délka, poloměr), se kterými systém počítá. Podrobně v tématu Korekce nástroje.",
+          "example": "D1, nebo druhé dvojčíslí v T0303."
+        },
+        {
+          "type": "heading",
+          "text": "Režimy posuvu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Režim",
+            "Jednotka",
+            "Kde se používá"
+          ],
+          "rows": [
+            [
+              "posuv za minutu",
+              "mm/min",
+              "hlavně frézky"
+            ],
+            [
+              "posuv za otáčku",
+              "mm/ot",
+              "hlavně soustruhy a vrtání"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Funkce pro přepnutí se liší podle systému: na Sinumeriku a frézkách Fanuc **G94** (mm/min) a **G95** (mm/ot); na soustruzích Fanuc je to obvykle **G98** a **G99**."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vyber nástroj a zapiš ho: T… (u frézky s M06).",
+            "Z katalogu zjisti řeznou rychlost vc pro materiál obrobku a nástroj.",
+            "Spočítej otáčky `n = 1000 · vc / (π · D)`, D = průměr nástroje (frézka) nebo obrobku (soustruh).",
+            "Zapiš S s M03, nebo na soustruhu G96 S(vc) s omezením maximálních otáček.",
+            "Z katalogu vezmi posuv na zub fz (frézka) nebo posuv na otáčku f (soustruh).",
+            "U frézky spočítej `vf = fz · z · n` a zapiš F v mm/min."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Vrták průměru 10 mm, vc = 25 m/min. Jaké otáčky?",
+          "answer": "n = 1000 · 25 / (π · 10) = 25 000 / 31,42 ≈ **796 ot/min**. Zápis: S796 M03 (zaokrouhlení na S800 je v pořádku)."
+        },
+        {
+          "type": "example",
+          "question": "Fréza průměru 16 mm se 3 zuby, vc = 100 m/min, fz = 0,05 mm. Spočítej S a F.",
+          "answer": "n = 1000 · 100 / (π · 16) = 100 000 / 50,27 ≈ **1 989 ot/min** → S1990. vf = 0,05 · 3 · 1 990 ≈ **299 mm/min** → F300."
+        },
+        {
+          "type": "example",
+          "question": "Soustruh: obrobek průměru 80 mm, posuv f = 0,25 mm/ot, otáčky 600 ot/min. Kolik mm urazí nůž za minutu?",
+          "answer": "Posuv za minutu = f · n = 0,25 · 600 = **150 mm/min**. V programu ale na soustruhu obvykle píšeš F0.25 v režimu mm/ot."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "G96: za S je ",
+                "after": "",
+                "options": [
+                  "řezná rychlost",
+                  "počet otáček"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "G97: za S je ",
+                "after": "",
+                "options": [
+                  "řezná rychlost",
+                  "počet otáček"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "F0.2 na soustruhu je posuv v ",
+                "after": "",
+                "options": [
+                  "mm/ot",
+                  "mm/min"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Menší průměr při stejné vc → ",
+                "after": " otáčky",
+                "options": [
+                  "vyšší",
+                  "nižší"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při G96 není třeba omezovat otáčky, systém si poradí.",
+          "right": "Při G96 **vždy** omez maximální otáčky (Sinumerik LIMS, Fanuc G50 S nebo G92 S podle typu kódu).",
+          "why": "U osy rotace jde průměr k nule a vypočtené otáčky by překročily bezpečnou mez sklíčidla a obrobku."
+        },
+        {
+          "type": "summary",
+          "text": "T vybere nástroj, S nastaví otáčky (G97) nebo řeznou rychlost (G96), F posuv za minutu nebo za otáčku. Otáčky: n = 1000·vc/(π·D); posuv frézy vf = fz·z·n. Zápis funkcí se liší podle řídicího systému."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou jednotku má řezná rychlost vc?",
+      "options": [
+        "m/min",
+        "ot/min",
+        "mm/ot",
+        "mm/min"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená S v režimu G96?",
+      "options": [
+        "řeznou rychlost v m/min",
+        "otáčky v ot/min",
+        "posuv v mm/ot",
+        "číslo nástroje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Spočítej otáčky pro průměr 50 mm a vc = 200 m/min. Výsledek zaokrouhli na celé ot/min.",
+      "answers": [
+        "1273"
+      ],
+      "explanation": "n = 1000 · 200 / (π · 50) ≈ 1 273 ot/min.",
+      "hints": [
+        "Použij n = 1000 · vc / (π · D).",
+        "π · 50 ≈ 157,08."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Fréza má 4 zuby, fz = 0,1 mm, n = 1 000 ot/min. Jaký je posuv v mm/min?",
+      "answers": [
+        "400"
+      ],
+      "explanation": "vf = 0,1 · 4 · 1 000 = 400 mm/min.",
+      "hints": [
+        "Nejdřív zjisti posuv za jednu otáčku.",
+        "Za otáčku zabere každý zub jednou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejné řezné rychlosti potřebuje menší průměr vyšší otáčky.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Při konstantní řezné rychlosti G96 se nemusí omezovat maximální otáčky.",
+      "answer": false,
+      "explanation": "Bez omezení by otáčky u osy rotace nebezpečně vzrostly."
+    },
+    {
+      "type": "match",
+      "question": "Spoj adresu s významem.",
+      "pairs": [
+        [
+          "S",
+          "otáčky / řezná rychlost"
+        ],
+        [
+          "F",
+          "posuv"
+        ],
+        [
+          "T",
+          "nástroj"
+        ],
+        [
+          "M03",
+          "vřeteno vpravo"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký režim posuvu se běžně používá na soustruhu?",
+      "options": [
+        "posuv za otáčku (mm/ot)",
+        "posuv za minutu (mm/min)",
+        "posuv za zub",
+        "rychloposuv"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Posuv 0,2 mm/ot při 500 ot/min. Kolik je to mm/min?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "0,2 · 500 = 100 mm/min.",
+      "hints": [
+        "Za jednu otáčku urazí nůž 0,2 mm."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená na soustruhu Fanuc zápis T0303?",
+      "options": [
+        "nástroj 3 s korekcí číslo 3",
+        "nástroj 303",
+        "nástroj 3 s otáčkami 3 000",
+        "třetí nástroj ve třetím zásobníku"
+      ],
+      "answer": 0,
+      "hints": [
+        "Zápis se skládá ze dvou dvojčíslí."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup určení řezných podmínek pro frézu.",
+      "items": [
+        "zvolit nástroj",
+        "najít vc a fz v katalogu",
+        "spočítat otáčky n",
+        "spočítat posuv vf = fz · z · n",
+        "zapsat S a F do programu"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč se při konstantní řezné rychlosti musí omezit maximální otáčky?",
+      "answer": "Systém při G96 zvyšuje otáčky, když se průměr zmenšuje. U osy rotace by vypočtené otáčky rostly nade všechny meze a mohly by překročit bezpečné otáčky sklíčidla nebo vymrštit obrobek. Proto se nastaví maximum, např. LIMS na Sinumeriku nebo G50 S na Fanucu."
+    },
+    {
+      "type": "open",
+      "question": "Jak spočítáš otáčky vřetena z řezné rychlosti? Uveď vzorec a jednotky.",
+      "answer": "n = 1000 · vc / (π · D), kde vc je řezná rychlost v m/min, D průměr v mm a n otáčky v ot/min. Číslo 1 000 převádí metry na milimetry."
+    }
+  ]
+}

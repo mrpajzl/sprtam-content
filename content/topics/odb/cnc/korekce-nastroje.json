@@ -1,0 +1,427 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "korekce-nastroje",
+  "title": "Korekce nástroje",
+  "emoji": "📏",
+  "explanations": [
+    {
+      "title": "Fix kolem šablony",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když obkreslíš fixou kolem šablony, čára neleží přesně na hraně šablony, ale o půl tloušťky fixy vedle. Silnou fixou vyjde obrázek větší než tenkou."
+        },
+        {
+          "type": "text",
+          "text": "Fréza je taky „silná fixa“. Programátor ale chce psát souřadnice přímo z výkresu, ne počítat dráhu středu každé frézy. To za něj udělají **korekce nástroje**: systém si vezme rozměry nástroje z tabulky a dráhu sám posune."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kontura",
+          "definition": "Obrys součásti z výkresu, po kterém má jet břit nástroje.",
+          "example": "Vnější obdélník 40 × 20 mm."
+        },
+        {
+          "type": "term",
+          "term": "Ekvidistanta",
+          "definition": "Dráha středu nástroje, která je od kontury všude stejně daleko – o poloměr nástroje.",
+          "example": "Pro frézu průměru 10 mm leží ekvidistanta 5 mm od kontury."
+        },
+        {
+          "type": "term",
+          "term": "Rádiusová korekce",
+          "definition": "Řídicí systém posune dráhu o poloměr nástroje na zvolenou stranu kontury. **G41** = nástroj **vlevo** od kontury, **G42** = **vpravo**, **G40** = korekce vypnutá. Vlevo/vpravo se určuje **při pohledu ve směru pohybu nástroje**.",
+          "example": "Jdeš za frézou a obrobek máš po pravé ruce → fréza je vlevo → G41."
+        },
+        {
+          "type": "term",
+          "term": "Délková korekce",
+          "definition": "Každý nástroj je jinak dlouhý. Systém si v tabulce pamatuje délku každého nástroje a připočítá ji, aby Z0 platilo pro špičku každého nástroje stejně.",
+          "example": "Na Fanucu G43 H…, na Sinumeriku se zapne s volbou nástroje a břitu (T… D…)."
+        },
+        {
+          "type": "term",
+          "term": "Tabulka korekcí",
+          "definition": "Paměť v řídicím systému, kam obsluha zapíše změřenou délku a poloměr nástroje.",
+          "example": "D1: poloměr 5,000 mm, délka 112,350 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Jak určit G41 nebo G42"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Představ si, že stojíš na kontuře a díváš se ve směru, kterým fréza pojede.",
+            "Zjisti, kde má být nástroj – na straně odpadu, ne v hotovém dílu.",
+            "Je nástroj po tvé levé ruce? **G41**. Po pravé? **G42**.",
+            "Korekci zapni v přímkovém pohybu ještě mimo materiál a vypni ji (G40) při odjetí od kontury."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Sousledné frézování",
+          "definition": "Způsob frézování, kdy se fréza v místě záběru otáčí **ve stejném směru**, jakým se posouvá. Zub vniká do materiálu v nejsilnějším místě třísky. Na CNC strojích se obvykle preferuje, protože dává lepší povrch a nástroj déle vydrží.",
+          "example": "Pravotočivá fréza (M03) s korekcí G41."
+        },
+        {
+          "type": "example",
+          "question": "Frézuješ vnější obrys obdélníku a objíždíš ho **ve směru hodinových ručiček** (pohled shora). Je to G41, nebo G42?",
+          "answer": "Vezmi horní hranu: jedeš po ní doprava. Obrobek je pod tebou, tedy vpravo; fréza musí být venku, nahoře, tedy **vlevo** → **G41**. S vřetenem M03 je to zároveň **sousledné frézování**."
+        },
+        {
+          "type": "example",
+          "question": "Fréza průměru 10 mm jede vnější obrys 40 × 20 mm **bez** korekce, přímo po souřadnicích z výkresu. Jaký rozměr vyjde?",
+          "answer": "Střed frézy jede po obrysu, takže fréza ubere 5 mm do dílu na každé straně. Vyjde 40 − 2 · 5 = **30 mm** × 20 − 2 · 5 = **10 mm**. Proto se kontura bez korekce neprogramuje."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Nástroj vlevo od kontury ve směru pohybu: ",
+                "after": "",
+                "options": [
+                  "G41",
+                  "G42",
+                  "G40"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nástroj vpravo od kontury: ",
+                "after": "",
+                "options": [
+                  "G41",
+                  "G42",
+                  "G40"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Zrušení rádiusové korekce: ",
+                "after": "",
+                "options": [
+                  "G41",
+                  "G42",
+                  "G40"
+                ],
+                "answer": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vlevo a vpravo u G41/G42 se určuje při pohledu od obsluhy na stroj.",
+          "right": "Strana se určuje **při pohledu ve směru pohybu nástroje** podél kontury.",
+          "why": "Když objedeš stejný obrys opačným směrem, změní se i strana – a tedy G41 na G42."
+        },
+        {
+          "type": "summary",
+          "text": "Korekce posunou dráhu podle rozměrů nástroje z tabulky. Rádiusová: G41 vlevo, G42 vpravo ve směru pohybu, G40 vypnutí. Délková: připočte délku nástroje, aby Z0 platilo pro každý nástroj."
+        }
+      ]
+    },
+    {
+      "title": "Seřízení a měření",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve skutečné dílně má každá fréza trochu jiný průměr a každý držák jinou délku. Nástroje se navíc opotřebovávají. Program se kvůli tomu nepřepisuje – mění se jen čísla v tabulce korekcí. Tady to projdeme z pohledu seřizovače."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tabulka korekcí",
+          "definition": "Seznam rozměrů nástrojů v řídicím systému. Každý řádek má číslo (např. D1, H1 nebo 01).",
+          "example": "Řádek 3: délka 98,120 mm, poloměr 4,000 mm."
+        },
+        {
+          "type": "term",
+          "term": "Délková korekce",
+          "definition": "Rozdíl délky nástroje proti vztažnému bodu vřetena. Systém ho připočte v ose Z (u soustruhu v X i Z).",
+          "example": "Fanuc frézka: G43 H3; Sinumerik: T3 D1."
+        },
+        {
+          "type": "term",
+          "term": "Rádiusová korekce",
+          "definition": "Posun dráhy o poloměr nástroje na stranu kontury: G41 vlevo, G42 vpravo (ve směru pohybu), G40 vypnuto.",
+          "example": "G41 D3 (Fanuc), G41 s aktivním D1 (Sinumerik)."
+        },
+        {
+          "type": "term",
+          "term": "Korekce opotřebení",
+          "definition": "Malá oprava k základní korekci. Zadá ji obsluha podle změřeného dílu, když je rozměr mimo.",
+          "example": "Díl je o 0,04 mm větší → poloměr se opraví o −0,02 mm."
+        },
+        {
+          "type": "term",
+          "term": "Rádius špičky nože",
+          "definition": "Soustružnický nůž nemá ostrý hrot, ale malé zaoblení, typicky 0,4 nebo 0,8 mm. Bez korekce dělá chybu na kuželích a obloucích.",
+          "example": "Destička s označením končícím 08 má rádius 0,8 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Délková korekce na frézce"
+        },
+        {
+          "type": "text",
+          "text": "Nulu Z na horní ploše obrobku změříš jednou. Systém pak ke každému nástroji přičte jeho délku z tabulky, takže každý nástroj „ví“, kde je Z0."
+        },
+        {
+          "type": "example",
+          "question": "Vrták je dlouhý 120 mm, fréza 85 mm (od čela vřetena). Co by se stalo, kdybys frézu použil s korekcí vrtáku?",
+          "answer": "Systém by počítal, že špička je o 120 − 85 = **35 mm** níž, než skutečně je. Fréza by jela o 35 mm výš a „řezala vzduch“. Opačná záměna by nástroj zarazila 35 mm do obrobku – **havárie**."
+        },
+        {
+          "type": "heading",
+          "text": "Rádiusová korekce: najetí a odjetí"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najeď rychloposuvem mimo obrobek, korekce je vypnutá (G40).",
+            "V přímkovém bloku (G00 nebo G01) zapni G41 nebo G42 – systém během tohoto pohybu posune nástroj na ekvidistantu.",
+            "Na konturu najížděj ideálně tečně nebo po oblouku, aby na ní nezůstala stopa.",
+            "Obroběj konturu.",
+            "Odjeď od kontury a v přímkovém bloku vypni korekci G40."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Na většině systémů korekci nejde zapnout ani vypnout v kruhovém bloku (G02/G03) – systém ohlásí chybu."
+        },
+        {
+          "type": "example",
+          "question": "Po obrobení vnějšího obrysu naměříš šířku 40,04 mm místo 40,00 mm. Jak upravíš korekci?",
+          "answer": "Díl je širší o 0,04 mm, tedy na každé straně o **0,02 mm**. Do korekce opotřebení poloměru zadáš **−0,02 mm**. Systém pak vede frézu o 0,02 mm blíž ke kontuře na každé straně."
+        },
+        {
+          "type": "heading",
+          "text": "Soustruh: rádius špičky"
+        },
+        {
+          "type": "text",
+          "text": "Bez korekce rádiusu (G41/G42 a zadané polohy břitu) sedí čelní a válcové plochy, ale **kužely a rádiusy vyjdou nepřesně**, protože systém počítá s ostrým hrotem, který neexistuje."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "délková korekce",
+              "rádiusová korekce"
+            ],
+            "items": [
+              {
+                "text": "G43 H… (Fanuc)",
+                "group": 0
+              },
+              {
+                "text": "G41",
+                "group": 1
+              },
+              {
+                "text": "G42",
+                "group": 1
+              },
+              {
+                "text": "G40",
+                "group": 1
+              },
+              {
+                "text": "chyba v ose Z při záměně nástroje",
+                "group": 0
+              },
+              {
+                "text": "ekvidistanta",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když je díl po frézování větší, přepíšu souřadnice v programu.",
+          "right": "Upraví se **korekce opotřebení** v tabulce, program zůstává.",
+          "why": "Program odpovídá výkresu. Odchylku způsobil nástroj (opotřebení, skutečný průměr), takže se opravuje údaj o nástroji."
+        },
+        {
+          "type": "summary",
+          "text": "Rozměry nástrojů jsou v tabulce korekcí. Délková korekce srovná Z0 pro všechny nástroje, rádiusová posune dráhu o poloměr (G41/G42, vypnutí G40, zapnutí a vypnutí v přímce mimo materiál). Odchylky rozměru se opravují korekcí opotřebení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená G42?",
+      "options": [
+        "rádiusová korekce, nástroj vpravo od kontury ve směru pohybu",
+        "rádiusová korekce, nástroj vlevo od kontury",
+        "zrušení rádiusové korekce",
+        "délková korekce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Odkud se určuje „vlevo“ a „vpravo“ u G41/G42?",
+      "options": [
+        "při pohledu ve směru pohybu nástroje",
+        "při pohledu obsluhy čelem ke stroji",
+        "při pohledu shora od +Z",
+        "vždy od nulového bodu stroje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "G40 zruší rádiusovou korekci.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Fréza průměru 12 mm jede vnější obrys 50 mm bez korekce přímo po obrysu. Jaký rozměr v mm vyjde?",
+      "answers": [
+        "38"
+      ],
+      "explanation": "50 − 2 · 6 = 38 mm.",
+      "hints": [
+        "O kolik ubere fréza na jedné straně?",
+        "Poloměr je polovina průměru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Díl má být 30,00 mm, naměříš 30,06 mm (vnější obrys). O kolik mm opravíš korekci poloměru? (číslo se znaménkem)",
+      "answers": [
+        "-0,03",
+        "−0,03",
+        "-0.03"
+      ],
+      "explanation": "Na každé straně je přídavek 0,03 mm, poloměr se zmenší o 0,03.",
+      "hints": [
+        "Odchylka v rozměru se rozdělí na dvě strany."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rádiusovou korekci je nejlepší zapnout přímo v kruhovém bloku G02 na kontuře.",
+      "answer": false,
+      "explanation": "Korekce se zapíná v přímkovém bloku mimo materiál; v oblouku to systémy obvykle nedovolí."
+    },
+    {
+      "type": "choice",
+      "question": "Vnější obrys objíždíš ve směru hodinových ručiček (pohled shora). Kterou korekci použiješ?",
+      "options": [
+        "G41",
+        "G42",
+        "G40",
+        "G43"
+      ],
+      "answer": 0,
+      "hints": [
+        "Postav se na horní hranu a dívej se ve směru jízdy.",
+        "Kde je obrobek a kde odpad?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "ekvidistanta",
+          "dráha středu nástroje"
+        ],
+        [
+          "kontura",
+          "obrys z výkresu"
+        ],
+        [
+          "korekce opotřebení",
+          "malá oprava podle měření"
+        ],
+        [
+          "délková korekce",
+          "délka nástroje v ose Z"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane na soustruhu, když nepoužiješ korekci rádiusu špičky nože?",
+      "options": [
+        "kužely a rádiusy vyjdou nepřesně",
+        "nebudou sedět válcové plochy",
+        "nůž se zlomí",
+        "nepůjde spustit program"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup obrábění kontury s rádiusovou korekcí.",
+      "items": [
+        "najetí mimo obrobek s G40",
+        "zapnutí G41/G42 v přímkovém bloku",
+        "tečné najetí na konturu",
+        "obrobení kontury",
+        "odjetí a G40"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při záměně délkové korekce nástroje může nástroj narazit do obrobku.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je typický rádius špičky soustružnické destičky?",
+      "options": [
+        "0,4 nebo 0,8 mm",
+        "4 nebo 8 mm",
+        "0,04 mm",
+        "špička je vždy ostrá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Proč se používá rádiusová korekce a jak vybereš G41 nebo G42?",
+      "answer": "Díky ní programátor píše konturu přímo z výkresu a systém sám posune dráhu o poloměr nástroje; při jiném průměru stačí změnit tabulku. Stranu určím při pohledu ve směru pohybu nástroje: nástroj vlevo od kontury G41, vpravo G42."
+    },
+    {
+      "type": "open",
+      "question": "Na co slouží délková korekce?",
+      "answer": "Každý nástroj je jinak dlouhý. Délková korekce v tabulce řekne systému délku každého nástroje, takže nulový bod obrobku v ose Z platí pro špičku všech nástrojů stejně a není třeba měnit program."
+    }
+  ]
+}

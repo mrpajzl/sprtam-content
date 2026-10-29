@@ -1,0 +1,479 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pevne-cykly",
+  "title": "Pevné cykly",
+  "emoji": "🔁",
+  "explanations": [
+    {
+      "title": "Program pračky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pračka má tlačítko „bavlna 40 °C“. Nemusíš jí říkat, kdy napustit vodu, kdy točit a kdy ždímat – stačí vybrat program a nastavit pár údajů. Uvnitř je ale celý sled kroků."
+        },
+        {
+          "type": "text",
+          "text": "CNC stroje mají podobná „tlačítka“: **pevné cykly**. Vrtání deseti děr by bez nich znamenalo desítky bloků s G00 a G01. S cyklem stačí jeden řádek a pak jen souřadnice dalších děr."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pevný cyklus",
+          "definition": "Předem připravený sled pohybů, který se vyvolá jedním příkazem a několika parametry. Opakované operace se pak píšou krátce a bez chyb.",
+          "example": "G81 – vrtací cyklus."
+        },
+        {
+          "type": "term",
+          "term": "Modální cyklus",
+          "definition": "Cyklus zůstane zapnutý a provede se v každém dalším bodě, dokud ho nezrušíš.",
+          "example": "Po G81 stačí psát X40, X60… a v každém bodě se vrtá."
+        },
+        {
+          "type": "term",
+          "term": "Rovina R (rovina přiblížení)",
+          "definition": "Výška nad obrobkem, do které nástroj sjede rychloposuvem. Teprve odtud vrtá pracovním posuvem.",
+          "example": "R2 = 2 mm nad povrchem obrobku (Z0)."
+        },
+        {
+          "type": "term",
+          "term": "Výplach (vyjíždění) z díry",
+          "definition": "Při hlubokém vrtání vrták po kouscích vyjede z díry, aby se vysypaly třísky a dostalo se k břitu chlazení.",
+          "example": "Každých 5 mm vyjede vrták nahoru."
+        },
+        {
+          "type": "heading",
+          "text": "Vrtací cykly (Fanuc a ISO zápis)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cyklus",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "G81",
+              "obyčejné vrtání, navrtání"
+            ],
+            [
+              "G82",
+              "vrtání s prodlevou na dně (zahloubení)"
+            ],
+            [
+              "G83",
+              "hluboké vrtání s vyjížděním z díry"
+            ],
+            [
+              "G73",
+              "vrtání s lámáním třísky (krátké zpětné pohyby)"
+            ],
+            [
+              "G84",
+              "řezání závitu závitníkem"
+            ],
+            [
+              "G85",
+              "vystružování"
+            ],
+            [
+              "G80",
+              "zrušení cyklu"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Na Sinumeriku mají cykly jména, např. **CYCLE81**, **CYCLE83**, **CYCLE84**, a modálně se vyvolávají přes MCALL. Princip je stejný, liší se zápis."
+        },
+        {
+          "type": "example",
+          "question": "Vyvrtej 3 díry hluboké 15 mm v bodech X20, X40 a X60 (Y10). Rovina R je 2 mm nad obrobkem, posuv 100 mm/min. Zápis Fanuc.",
+          "answer": "**G90 G99 G81 X20 Y10 Z−15 R2 F100** – první díra. **X40** – druhá. **X60** – třetí. **G80** – zrušení cyklu. Místo asi 12 bloků jsou jen 4."
+        },
+        {
+          "type": "example",
+          "question": "Díra hluboká 30 mm se vrtá cyklem G83 s hloubkou jednoho zanoření Q5. Kolikrát vrták zajede do materiálu?",
+          "answer": "30 : 5 = **6** zanoření. Mezi nimi vrták vyjede z díry a třísky se vysypou."
+        },
+        {
+          "type": "heading",
+          "text": "Soustružnické cykly"
+        },
+        {
+          "type": "text",
+          "text": "Také soustruh má cykly: třeba **hrubování** podélným soustružením. Programátor popíše jen hotový obrys a cyklus sám rozdělí odebírání materiálu na třísky. Na Fanucu je to typicky **G71** (hrubování) a **G70** (dokončení), na Sinumeriku **CYCLE95**. Parametry a zápis se mezi systémy i verzemi liší, proto se vždy řiď návodem ke stroji."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "G81",
+                "back": "vrtání"
+              },
+              {
+                "front": "G83",
+                "back": "hluboké vrtání s vyjížděním"
+              },
+              {
+                "front": "G84",
+                "back": "řezání závitu"
+              },
+              {
+                "front": "G80",
+                "back": "zrušení cyklu"
+              },
+              {
+                "front": "R",
+                "back": "rovina přiblížení"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Po posledním otvoru stačí jet G00 jinam, cyklus se vypne sám.",
+          "right": "Cyklus je modální – musíš ho zrušit **G80** (Fanuc). Na Sinumeriku se modální vyvolání ruší prázdným MCALL.",
+          "why": "Bez zrušení by stroj v dalším bodě, kam pošleš nástroj, znovu vrtal – třeba do upínky."
+        },
+        {
+          "type": "summary",
+          "text": "Pevný cyklus = hotový sled pohybů vyvolaný jedním příkazem. Vrtací cykly (G81, G83, G84… zrušení G80; na Sinumeriku CYCLE8x) jsou modální. Soustružnické cykly (Fanuc G71/G70, Sinumerik CYCLE95) hrubují podle obrysu."
+        }
+      ]
+    },
+    {
+      "title": "Pohyb po pohybu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Abys cyklu věřil, musíš vědět, co přesně stroj udělá. Rozebereme cyklus G81 na jednotlivé pohyby a ukážeme, co znamená každý parametr."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pevný cyklus",
+          "definition": "Jeden příkaz s parametry, za kterým se skrývá několik pohybů.",
+          "example": "G81 = najetí, vrtání, vyjetí."
+        },
+        {
+          "type": "term",
+          "term": "Počáteční rovina",
+          "definition": "Výška Z, ve které nástroj stojí před vyvoláním cyklu. Je bezpečně nad obrobkem i upínkami.",
+          "example": "Z50"
+        },
+        {
+          "type": "term",
+          "term": "Rovina R",
+          "definition": "Výška těsně nad obrobkem, kam se jede rychloposuvem a odkud začíná posuv.",
+          "example": "R2"
+        },
+        {
+          "type": "term",
+          "term": "G98 a G99 (u frézky)",
+          "definition": "Kam se nástroj vrátí po díře: **G98** do počáteční roviny, **G99** do roviny R. Pozor: na soustruzích Fanuc mají G98/G99 jiný význam (posuv za minutu / za otáčku).",
+          "example": "Mezi dírami je upínka → G98, aby ji nástroj přejel."
+        },
+        {
+          "type": "term",
+          "term": "Parametr Q",
+          "definition": "U G83: hloubka jednoho zanoření, po kterém vrták vyjede z díry.",
+          "example": "Q5 = po 5 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Co udělá G81"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rychloposuvem nad bod X, Y v počáteční rovině.",
+            "Rychloposuvem dolů do roviny R.",
+            "Posuvem F vrtá do hloubky Z.",
+            "Rychloposuvem zpět do roviny R (G99), nebo do počáteční roviny (G98).",
+            "V dalším bloku s novým X/Y se vše opakuje, dokud nepřijde G80."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parametr",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "X, Y",
+              "poloha díry"
+            ],
+            [
+              "Z",
+              "hloubka (dno díry)"
+            ],
+            [
+              "R",
+              "rovina přiblížení"
+            ],
+            [
+              "Q",
+              "hloubka zanoření (G83, G73)"
+            ],
+            [
+              "P",
+              "prodleva na dně (G82)"
+            ],
+            [
+              "F",
+              "posuv"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Nástroj stojí v Z50, píšeš G98 G81 X10 Y10 Z−8 R3 F120. Kam až sjede rychloposuvem a kam se vrátí?",
+          "answer": "Rychloposuvem do **Z3** (rovina R), posuvem do **Z−8**, a protože je G98, vrátí se rychloposuvem až do **Z50** (počáteční rovina)."
+        },
+        {
+          "type": "example",
+          "question": "Mezi dvěma dírami je upínka vysoká 20 mm nad obrobkem. Počáteční rovina je Z50, R2. Zvolíš G98, nebo G99?",
+          "answer": "Při **G99** by nástroj přejížděl ve výšce Z2 a narazil do upínky. Použiješ **G98** – přejezd proběhne v Z50, nad upínkou."
+        },
+        {
+          "type": "heading",
+          "text": "Soustružnický cyklus hrubování"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Programátor popíše hotový obrys součásti (bloky G01, G02, G03).",
+            "V cyklu zadá hloubku třísky a přídavek na dokončení.",
+            "Cyklus sám odebírá materiál v několika třískách podél osy Z.",
+            "Dokončovací průchod po obrysu (Fanuc G70) obrobí přídavek na čisto."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Názvy a parametry: Fanuc G71/G70, Sinumerik CYCLE95. Přesný zápis se liší podle verze systému."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Návrat do počáteční roviny: ",
+                "after": "",
+                "options": [
+                  "G98",
+                  "G99"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Návrat do roviny R: ",
+                "after": "",
+                "options": [
+                  "G98",
+                  "G99"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Hluboké vrtání s vyjížděním: ",
+                "after": "",
+                "options": [
+                  "G81",
+                  "G83"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Zrušení cyklu: ",
+                "after": "",
+                "options": [
+                  "G80",
+                  "G40"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hloubka Z v cyklu je hloubka vrtání od roviny R.",
+          "right": "Z je **souřadnice dna díry** (v G90 od nulového bodu obrobku), ne délka vrtání.",
+          "why": "Při Z−15 a R2 vrták ujede posuvem 17 mm – od R2 do Z−15."
+        },
+        {
+          "type": "summary",
+          "text": "G81: rychle do R, posuvem do Z, zpět do R (G99) nebo do počáteční roviny (G98). Q dělí hlubokou díru na zanoření (G83). Cyklus je modální a ruší se G80. Soustružnické cykly hrubují podle popsaného obrysu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který cyklus (Fanuc/ISO) se používá pro hluboké vrtání s vyjížděním z díry?",
+      "options": [
+        "G83",
+        "G81",
+        "G84",
+        "G80"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá G80?",
+      "options": [
+        "ruší pevný cyklus",
+        "zapíná vrtací cyklus",
+        "zapíná chlazení",
+        "vrací nástroj do reference"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pevné vrtací cykly jsou modální – vrtá se v každém dalším bodě, dokud cyklus nezrušíš.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená parametr R ve vrtacím cyklu?",
+      "options": [
+        "rovinu přiblížení, odkud začíná posuv",
+        "poloměr díry",
+        "počet opakování",
+        "otáčky vřetena"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Díra hloubky 24 mm se vrtá cyklem G83 s Q6. Kolik zanoření vrták udělá?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "24 : 6 = 4.",
+      "hints": [
+        "Q je hloubka jednoho zanoření."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Cyklus G81 má R2 a Z−15. Kolik mm ujede vrták pracovním posuvem?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "Od Z2 do Z−15 je 17 mm.",
+      "hints": [
+        "Posuv začíná v rovině R.",
+        "Vzdálenost od +2 do −15."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj cyklus s operací.",
+      "pairs": [
+        [
+          "G81",
+          "vrtání"
+        ],
+        [
+          "G84",
+          "řezání závitu závitníkem"
+        ],
+        [
+          "G85",
+          "vystružování"
+        ],
+        [
+          "G82",
+          "vrtání s prodlevou na dně"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při G99 se nástroj po díře vrací do počáteční roviny.",
+      "answer": false,
+      "explanation": "G99 vrací do roviny R, G98 do počáteční roviny."
+    },
+    {
+      "type": "choice",
+      "question": "Mezi dírami je vysoká upínka. Kterou funkci zvolíš?",
+      "options": [
+        "G98 – návrat do počáteční roviny",
+        "G99 – návrat do roviny R",
+        "G80",
+        "na tom nezáleží"
+      ],
+      "answer": 0,
+      "hints": [
+        "Ve které výšce bude nástroj přejíždět mezi dírami?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď pohyby cyklu G81.",
+      "items": [
+        "rychloposuv nad díru v počáteční rovině",
+        "rychloposuv do roviny R",
+        "vrtání posuvem do hloubky Z",
+        "návrat rychloposuvem"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se na Sinumeriku jmenuje cyklus pro vrtání?",
+      "options": [
+        "CYCLE81",
+        "G81 CYCLE",
+        "DRILL1",
+        "M81"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Soustružnický hrubovací cyklus (např. Fanuc G71) odebírá materiál podle obrysu, který programátor popíše.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Proč se používají pevné cykly a co se stane, když cyklus nezrušíš?",
+      "answer": "Pevné cykly zkrátí program: opakovaný sled pohybů (najetí, vrtání, vyjetí) se zapíše jedním příkazem s parametry a pak jen souřadnicemi děr, takže je méně chyb. Cyklus je modální, a když ho nezrušíš (G80), stroj vrtá v každém dalším bodě – i tam, kde nemá."
+    },
+    {
+      "type": "open",
+      "question": "Popiš pohyby cyklu G81 a rozdíl mezi G98 a G99.",
+      "answer": "Nástroj jede rychloposuvem nad díru a do roviny R, pak vrtá posuvem do hloubky Z a rychloposuvem se vrátí. Při G98 se vrací do počáteční roviny (bezpečné přejetí upínek), při G99 jen do roviny R (kratší čas)."
+    }
+  ]
+}

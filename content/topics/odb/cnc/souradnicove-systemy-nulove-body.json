@@ -1,0 +1,452 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "souradnicove-systemy-nulove-body",
+  "title": "Souřadnice a nulové body",
+  "emoji": "🎯",
+  "explanations": [
+    {
+      "title": "Mapa a adresa",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když se domlouváš s kamarádem, kde se sejdete, potřebujete stejnou mapu a stejný výchozí bod. „Dvě ulice doprava“ nic neznamená, když nevíte, odkud počítat."
+        },
+        {
+          "type": "text",
+          "text": "CNC stroj je na tom stejně. Číslo X50 v programu má smysl, jen když stroj ví, **odkud** se 50 mm měří a **kterým směrem**. K tomu slouží souřadnicový systém a nulové body."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Souřadnicový systém",
+          "definition": "Tři navzájem kolmé osy X, Y, Z, které se protínají v jednom bodě – počátku (nule). Každý bod v prostoru pak popíšeš třemi čísly.",
+          "example": "Bod X30 Y20 Z−5 je 30 mm ve směru X, 20 mm ve směru Y a 5 mm pod nulou v ose Z."
+        },
+        {
+          "type": "term",
+          "term": "Pravidlo pravé ruky",
+          "definition": "Pomůcka pro směry os: palec pravé ruky ukazuje **+X**, ukazovák **+Y**, prostředníček **+Z**. Takový systém se jmenuje pravotočivý a používají ho CNC stroje podle normy ISO 841.",
+          "example": "Natáhni palec doprava, ukazovák dopředu – prostředníček pak míří nahoru, jako osa Z u svislé frézky."
+        },
+        {
+          "type": "term",
+          "term": "Osa Z",
+          "definition": "Osa, která je **rovnoběžná s osou vřetena**. Kladný směr +Z je ten, kterým se nástroj **vzdaluje od obrobku**.",
+          "example": "U svislé frézky míří +Z nahoru, ke stropu."
+        },
+        {
+          "type": "term",
+          "term": "Nulový bod stroje M",
+          "definition": "Počátek souřadnic samotného stroje. Určí ho výrobce a nedá se změnit.",
+          "example": "Často leží v krajní poloze os nebo na čele vřetena."
+        },
+        {
+          "type": "term",
+          "term": "Referenční bod R",
+          "definition": "Přesně známý bod v pracovním prostoru, na který stroj po zapnutí najede, aby si „srovnal“ odměřování s nulovým bodem stroje. Potřebují to hlavně stroje s inkrementálním (přírůstkovým) odměřováním.",
+          "example": "Po zapnutí stroje stiskneš „najetí do reference“ a osy dojedou k R."
+        },
+        {
+          "type": "term",
+          "term": "Nulový bod obrobku W",
+          "definition": "Počátek souřadnic, který si zvolí **programátor** na obrobku – tak, aby se z výkresu dobře počítalo. Od něj se měří všechny souřadnice v programu.",
+          "example": "Levý přední horní roh kvádru nebo střed čela hřídele."
+        },
+        {
+          "type": "heading",
+          "text": "Proč tři různé body"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**M** zná stroj – je pevný, ale programátorovi k ničemu, protože neví, kde na stole bude obrobek.",
+            "**R** slouží k tomu, aby stroj po zapnutí věděl, kde je M.",
+            "**W** zná programátor – je na obrobku a na něj jsou vztažené kóty z výkresu."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Obsluha při seřízení zjistí, jak daleko je W od M, a zapíše to do tabulky **posunutí nulového bodu**. V programu se toto posunutí vyvolá funkcí, typicky **G54** (další G55–G59)."
+        },
+        {
+          "type": "example",
+          "question": "Nulový bod obrobku W je od nulového bodu stroje posunutý o X200 a Y150. V programu je bod X30 Y20. Kde je tento bod v souřadnicích stroje?",
+          "answer": "Souřadnice se sčítají s posunutím: X = 200 + 30 = **230**, Y = 150 + 20 = **170**. Programátor ale počítá jen s X30 Y20 – přepočet udělá řídicí systém."
+        },
+        {
+          "type": "heading",
+          "text": "Soustruh je jiný"
+        },
+        {
+          "type": "text",
+          "text": "U soustruhu se točí obrobek. Osa **Z** leží v ose vřetena (podél obrobku), osa **X** je kolmá na ni – míří od osy obrobku ven, k průměru. Osu Y běžný soustruh nemá."
+        },
+        {
+          "type": "text",
+          "text": "Většina soustruhů se programuje **v průměru**: X40 znamená průměr 40 mm, tedy nástroj je 20 mm od osy."
+        },
+        {
+          "type": "example",
+          "question": "Na soustruhu je W na čele obrobku v ose rotace. Máš osoustružit válec průměru 36 mm délky 25 mm. Jaký bude bod konce válcové plochy?",
+          "answer": "Průměr se píše přímo do X: **X36**. Délka jde od čela do záporu (od čela směrem ke sklíčidlu): **Z−25**. Bod je tedy X36 Z−25."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "M",
+                "back": "nulový bod stroje – určí výrobce"
+              },
+              {
+                "front": "R",
+                "back": "referenční bod – najíždí se po zapnutí"
+              },
+              {
+                "front": "W",
+                "back": "nulový bod obrobku – volí programátor"
+              },
+              {
+                "front": "+Z",
+                "back": "směr, kterým se nástroj vzdaluje od obrobku"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kladný směr osy Z míří do obrobku, protože tam se obrábí.",
+          "right": "+Z míří **od obrobku**. Do materiálu jedeš do záporných Z.",
+          "why": "Norma tak zaručuje, že kladný pohyb v Z je bezpečný – nástroj odjíždí."
+        },
+        {
+          "type": "summary",
+          "text": "CNC stroje mají pravotočivý systém X, Y, Z (pravá ruka), Z leží v ose vřetena a +Z jde od obrobku. M je pevná nula stroje, R slouží k najetí po zapnutí, W si volí programátor a stroj ho zná díky posunutí (G54)."
+        }
+      ]
+    },
+    {
+      "title": "Krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než stroj vyrobí první díl, musí obsluha „spojit“ program s obrobkem na stole. Projdeme to jako postup u stroje: od zapnutí po první souřadnici v programu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kartézský souřadnicový systém",
+          "definition": "Osy X, Y, Z kolmé na sebe, s počátkem v nule. Poloha bodu = tři čísla.",
+          "example": "X10 Y0 Z0 leží 10 mm od počátku po ose X."
+        },
+        {
+          "type": "term",
+          "term": "Pravotočivý systém (pravidlo pravé ruky)",
+          "definition": "Palec = +X, ukazovák = +Y, prostředníček = +Z. Tak jsou podle ISO 841 orientované osy CNC strojů.",
+          "example": "Rotační osy A, B, C se točí kolem X, Y, Z."
+        },
+        {
+          "type": "term",
+          "term": "Pohyb nástroje vůči obrobku",
+          "definition": "Programátor si vždy představuje, že se **pohybuje nástroj** a obrobek stojí – i když na stroji ve skutečnosti jede stůl.",
+          "example": "Když stůl jede doleva, nástroj se vůči obrobku posouvá doprava."
+        },
+        {
+          "type": "term",
+          "term": "M – nulový bod stroje",
+          "definition": "Pevný počátek souřadnic stroje, daný výrobcem."
+        },
+        {
+          "type": "term",
+          "term": "R – referenční bod",
+          "definition": "Bod, který stroj po zapnutí najede, aby věděl, kde je M. Nutný u inkrementálního odměřování (snímač měří jen změny polohy, ne absolutní polohu)."
+        },
+        {
+          "type": "term",
+          "term": "W – nulový bod obrobku",
+          "definition": "Počátek, který si zvolí programátor na obrobku podle výkresu."
+        },
+        {
+          "type": "term",
+          "term": "Posunutí nulového bodu",
+          "definition": "Vzdálenost W od M v jednotlivých osách. Zapisuje se do tabulky v řídicím systému a v programu se zapne funkcí G54 až G59.",
+          "example": "G54: X−412,350 Y−260,100 Z−385,020 (čísla jsou příklad)."
+        },
+        {
+          "type": "heading",
+          "text": "Postup u frézky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zapni stroj a najeď do **reference** R (pokud to stroj vyžaduje). Systém teď ví, kde je M.",
+            "Upni obrobek a zvol, kde bude **W** – podle výkresu, nejčastěji roh nebo střed obrobku, Z0 na horní ploše.",
+            "Najeď nástrojem nebo dotykovou sondou na hrany obrobku a změř polohu W v souřadnicích stroje.",
+            "Zapiš hodnoty do tabulky posunutí, např. do **G54**.",
+            "V programu zavolej G54 – od teď všechny souřadnice platí od W."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Osy u frézky a soustruhu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Svislá frézka",
+            "Soustruh"
+          ],
+          "rows": [
+            [
+              "osa Z",
+              "svisle, v ose vřetena; +Z nahoru",
+              "podél obrobku, v ose vřetena; +Z od sklíčidla"
+            ],
+            [
+              "osa X",
+              "vodorovně, nejdelší pojezd stolu",
+              "kolmo na osu, k průměru; +X od osy ven"
+            ],
+            [
+              "osa Y",
+              "vodorovně, kolmo na X",
+              "běžný soustruh ji nemá"
+            ],
+            [
+              "typické W",
+              "roh nebo střed polotovaru, Z0 nahoře",
+              "střed čela obrobku"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "W na frézce leží v levém předním horním rohu kvádru 100 × 60 × 30 mm. Jaké souřadnice má pravý zadní roh na spodní ploše? (X doprava, Y dozadu.)",
+          "answer": "X roste doprava o délku 100 → **X100**. Y roste dozadu o šířku 60 → **Y60**. Spodní plocha je 30 mm pod Z0 → **Z−30**. Bod: X100 Y60 Z−30."
+        },
+        {
+          "type": "example",
+          "question": "Na soustruhu je W na pravém čele hřídele. Osazení má průměr 50 a začíná 40 mm od čela. Zapiš bod začátku osazení.",
+          "answer": "Průměrové programování: **X50**. Vzdálenost od čela směrem ke sklíčidlu je záporná: **Z−40**. Bod X50 Z−40."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "určuje výrobce stroje",
+              "volí programátor / obsluha"
+            ],
+            "items": [
+              {
+                "text": "nulový bod stroje M",
+                "group": 0
+              },
+              {
+                "text": "referenční bod R",
+                "group": 0
+              },
+              {
+                "text": "nulový bod obrobku W",
+                "group": 1
+              },
+              {
+                "text": "hodnoty v G54",
+                "group": 1
+              },
+              {
+                "text": "směry os X, Y, Z",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Programátor píše souřadnice od nulového bodu stroje M.",
+          "right": "Programuje se od **nulového bodu obrobku W**; posun k M dopočítá systém z G54.",
+          "why": "Programátor předem neví, kam přesně obsluha obrobek upne. Díky W platí stejný program při každém upnutí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na soustruhu X20 znamená, že nástroj je 20 mm od osy.",
+          "right": "Při průměrovém programování X20 znamená **průměr 20 mm**, nástroj je 10 mm od osy.",
+          "why": "Na výkresech se kótují průměry, proto se tak i programuje. Zda stroj čte X jako průměr, nebo poloměr, je nastavení systému."
+        },
+        {
+          "type": "summary",
+          "text": "Osy podle pravé ruky, Z v ose vřetena, +Z od obrobku. Po zapnutí reference R, pak změřit W a zapsat do G54. Program se píše od W; na soustruhu X většinou jako průměr."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který prst pravé ruky ukazuje kladný směr osy Z?",
+      "options": [
+        "prostředníček",
+        "palec",
+        "ukazovák",
+        "malíček"
+      ],
+      "answer": 0,
+      "explanation": "Palec +X, ukazovák +Y, prostředníček +Z."
+    },
+    {
+      "type": "choice",
+      "question": "S čím je rovnoběžná osa Z?",
+      "options": [
+        "s osou vřetena",
+        "s nejdelším pojezdem stolu",
+        "vždy se svislým směrem",
+        "s podlahou"
+      ],
+      "answer": 0,
+      "explanation": "Osa Z je vždy v ose vřetena – u vodorovné frézky je tedy vodorovná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kladný směr osy Z je směr, kterým se nástroj vzdaluje od obrobku.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s nulovým bodem.",
+      "pairs": [
+        [
+          "M",
+          "nulový bod stroje"
+        ],
+        [
+          "W",
+          "nulový bod obrobku"
+        ],
+        [
+          "R",
+          "referenční bod"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo určuje polohu nulového bodu obrobku W?",
+      "options": [
+        "programátor podle výkresu",
+        "výrobce stroje",
+        "řídicí systém náhodně",
+        "norma ISO 841"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Nulový bod stroje M si může obsluha libovolně přesunout.",
+      "answer": false,
+      "explanation": "M je pevný, daný výrobcem. Přesouvá se W pomocí posunutí nulového bodu."
+    },
+    {
+      "type": "input",
+      "question": "Posunutí W od M je X150. Bod v programu má X40. Jaká je jeho souřadnice X v souřadnicích stroje?",
+      "answers": [
+        "190"
+      ],
+      "explanation": "150 + 40 = 190.",
+      "hints": [
+        "Posunutí a souřadnice v programu se v každé ose sčítají."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Soustruh se programuje v průměru. Jakou hodnotu X napíšeš pro válec o poloměru 15 mm?",
+      "answers": [
+        "30",
+        "X30"
+      ],
+      "explanation": "Průměr = 2 · poloměr = 30 mm.",
+      "hints": [
+        "Programuje se průměr, ne poloměr."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou funkcí se v programu typicky vyvolá první nastavitelné posunutí nulového bodu?",
+      "options": [
+        "G54",
+        "G90",
+        "G17",
+        "M30"
+      ],
+      "answer": 0,
+      "hints": [
+        "Tyto funkce tvoří řadu po sobě jdoucích čísel G5…"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky seřízení frézky před obráběním.",
+      "items": [
+        "zapnout stroj",
+        "najet do reference",
+        "upnout obrobek",
+        "změřit polohu W",
+        "zapsat hodnoty do G54",
+        "spustit program"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Běžný dvouosý soustruh má osy X a Z, osu Y nemá.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč se po zapnutí najíždí referenční bod?",
+      "options": [
+        "aby stroj s inkrementálním odměřováním věděl, kde je nulový bod stroje",
+        "aby se nahřálo vřeteno",
+        "aby se vynulovalo posunutí G54",
+        "aby se vyměnil nástroj"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co ví inkrementální snímač po zapnutí o absolutní poloze?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi nulovým bodem stroje a nulovým bodem obrobku.",
+      "answer": "Nulový bod stroje M je pevný počátek souřadnic stroje, který určil výrobce. Nulový bod obrobku W volí programátor na obrobku podle výkresu; obsluha změří jeho polohu vůči M a zapíše ji jako posunutí (např. G54). Program se píše od W."
+    },
+    {
+      "type": "open",
+      "question": "Jak jsou orientované osy na soustruhu a jak se programuje osa X?",
+      "answer": "Osa Z leží v ose vřetena podél obrobku, kladný směr od sklíčidla. Osa X je kolmá, míří od osy rotace ven. X se obvykle programuje jako průměr, takže X40 znamená průměr 40 mm."
+    }
+  ]
+}

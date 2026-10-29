@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pomocne-funkce-m",
+  "title": "Pomocné funkce M",
+  "emoji": "🔘",
+  "explanations": [
+    {
+      "title": "Vypínače stroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V kuchyni nestačí jen vědět, kam pohnout rukou. Musíš taky zapnout plotýnku, pustit vodu, otevřít troubu. U CNC stroje dělají tohle „zapínání a vypínání“ **pomocné funkce M**."
+        },
+        {
+          "type": "text",
+          "text": "G funkce říkají, jak se má nástroj pohybovat. M funkce ovládají všechno okolo: vřeteno, chlazení, výměnu nástroje, zastavení a konec programu. Bez nich by stroj jezdil, ale nic by neobrobil."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pomocná funkce M",
+          "definition": "Povel v programu, který zapne, vypne nebo přepne nějaké zařízení stroje. Zapisuje se písmenem M a číslem.",
+          "example": "M08 – zapni chladicí kapalinu."
+        },
+        {
+          "type": "term",
+          "term": "Vřeteno",
+          "definition": "Rotující část stroje, která točí nástrojem (frézka) nebo obrobkem (soustruh).",
+          "example": "Vřeteno frézky drží frézu v upínači."
+        },
+        {
+          "type": "term",
+          "term": "Smysl otáčení vpravo (M03)",
+          "definition": "Otáčení ve směru hodinových ručiček při pohledu od vřetena směrem k obrobku. Pro tento směr jsou dělané běžné (pravořezné) vrtáky a frézy.",
+          "example": "Vrták ve vrtačce se točí doprava."
+        },
+        {
+          "type": "term",
+          "term": "Chladicí kapalina",
+          "definition": "Kapalina (obvykle emulze vody a oleje), která chladí nástroj, maže řez a odplavuje třísky.",
+          "example": "Bílá „mléčná“ kapalina, která stříká na frézu."
+        },
+        {
+          "type": "term",
+          "term": "Výměna nástroje",
+          "definition": "Stroj vrátí nástroj z vřetena do zásobníku a vloží tam jiný.",
+          "example": "T5 M06 – vyměň na nástroj číslo 5."
+        },
+        {
+          "type": "heading",
+          "text": "Nejpoužívanější M funkce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Funkce",
+            "Co udělá"
+          ],
+          "rows": [
+            [
+              "M00",
+              "programový stop – stroj zastaví vždy, pokračuje se tlačítkem Start"
+            ],
+            [
+              "M01",
+              "volitelný stop – zastaví jen při zapnutém přepínači na panelu"
+            ],
+            [
+              "M02",
+              "konec programu"
+            ],
+            [
+              "M30",
+              "konec programu a návrat na jeho začátek"
+            ],
+            [
+              "M03",
+              "vřeteno vpravo (ve směru hodinových ručiček)"
+            ],
+            [
+              "M04",
+              "vřeteno vlevo (proti směru hodinových ručiček)"
+            ],
+            [
+              "M05",
+              "zastavení vřetena"
+            ],
+            [
+              "M06",
+              "výměna nástroje"
+            ],
+            [
+              "M08",
+              "chlazení zapnout"
+            ],
+            [
+              "M09",
+              "chlazení vypnout"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tyto funkce jsou na většině strojů stejné. Další čísla (např. upínání, otevírání dveří, dopravník třísek) si určuje **výrobce stroje** – vždy je hledej v návodu ke konkrétnímu stroji."
+        },
+        {
+          "type": "example",
+          "question": "Do programu frézky potřebuješ: vyměnit na nástroj 3, roztočit vřeteno doprava na 2 000 ot/min a pustit chlazení. Jak to zapíšeš?",
+          "answer": "Nejdřív výměna: **T3 M06**. Pak otáčky se směrem: **S2000 M03**. Nakonec chlazení: **M08**. Chlazení pouštíš až po výměně nástroje a před řezem."
+        },
+        {
+          "type": "example",
+          "question": "Po hrubování chceš, aby se stroj zastavil a ty jsi mohl změřit obrobek. Kterou funkci použiješ a proč?",
+          "answer": "**M00** – stroj zastaví vždy. Když by stačilo zastavit jen při zkoušení programu, použiješ **M01** a přepínač volitelného stopu necháš zapnutý jen při prvním kusu."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "M03",
+                "back": "vřeteno vpravo"
+              },
+              {
+                "front": "M05",
+                "back": "stop vřetena"
+              },
+              {
+                "front": "M06",
+                "back": "výměna nástroje"
+              },
+              {
+                "front": "M08",
+                "back": "chlazení zap."
+              },
+              {
+                "front": "M30",
+                "back": "konec programu a návrat na začátek"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "M05 je konec programu.",
+          "right": "M05 zastaví jen **vřeteno**. Konec programu je **M30** (nebo M02).",
+          "why": "Program může pokračovat i se stojícím vřetenem, třeba při výměně nástroje."
+        },
+        {
+          "type": "summary",
+          "text": "M funkce zapínají a vypínají zařízení stroje: M03/M04/M05 vřeteno, M06 výměna nástroje, M08/M09 chlazení, M00/M01 zastavení, M02/M30 konec. Čísla nad tento základ určuje výrobce stroje."
+        }
+      ]
+    },
+    {
+      "title": "Podle průběhu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Projdeme jeden program od začátku do konce a u každého kroku se podíváme, kterou pomocnou funkci potřebuje. Uvidíš, že M funkce mají v programu své stálé místo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pomocná funkce M",
+          "definition": "Povel pro zařízení stroje (vřeteno, chlazení, výměna nástroje, stop). Pohyb os neřídí.",
+          "example": "M09 vypne chlazení."
+        },
+        {
+          "type": "term",
+          "term": "Otáčky vřetena S",
+          "definition": "Počet otáček vřetena za minutu. Samotné S nestačí – vřeteno se roztočí až s M03 nebo M04.",
+          "example": "S1200 M03"
+        },
+        {
+          "type": "term",
+          "term": "Programový stop M00",
+          "definition": "Bezpodmínečné zastavení programu. Vřeteno a chlazení se obvykle zastaví, pokračuje se tlačítkem Start.",
+          "example": "Kontrola rozměru po hrubování."
+        },
+        {
+          "type": "term",
+          "term": "Volitelný stop M01",
+          "definition": "Zastaví program, jen když obsluha na panelu zapne přepínač „volitelný stop“ (Optional stop).",
+          "example": "Zastavení před dokončováním při zkoušení nového programu."
+        },
+        {
+          "type": "term",
+          "term": "Konec programu M30",
+          "definition": "Ukončí program, vypne vřeteno i chlazení a vrátí program na začátek, aby šel spustit znovu.",
+          "example": "Další kus: upnout a stisknout Start."
+        },
+        {
+          "type": "heading",
+          "text": "Program krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**T1 M06** – výměna na nástroj 1.",
+            "**S1500 M03** – vřeteno doprava 1 500 ot/min.",
+            "**M08** – zapnout chlazení.",
+            "… obrábění …",
+            "**M09** a **M05** – vypnout chlazení a zastavit vřeteno.",
+            "**M01** – volitelný stop, obsluha může zkontrolovat díl.",
+            "**T2 M06** – výměna na nástroj 2 a znovu S… M03, M08.",
+            "**M30** – konec programu a návrat na začátek."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč je M03 a M04"
+        },
+        {
+          "type": "text",
+          "text": "Většina nástrojů je **pravořezná**: řežou, když se točí vpravo (M03). Vlevo (M04) se točí třeba při řezání levého závitu, nebo na soustruhu podle toho, jak je nůž upnutý (břitem nahoru či dolů)."
+        },
+        {
+          "type": "example",
+          "question": "V programu je S800 a pak hned G01 X40 F150. Vřeteno se ale netočí. Co chybí?",
+          "answer": "Chybí **M03** (nebo M04). S jen nastaví počet otáček, roztočení zajistí až M funkce se směrem. Správně: **S800 M03**, pak teprve pohyb do řezu."
+        },
+        {
+          "type": "example",
+          "question": "Rozhodni, kterou funkci použít: a) konec programu na sériovém kuse, b) zastavení k odstranění třísek z díry jen u prvního kusu.",
+          "answer": "a) **M30** – ukončí program a vrátí ho na začátek pro další kus. b) **M01** – u dalších kusů vypneš přepínač volitelného stopu a stroj bez zastavení pokračuje."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vřeteno",
+              "chlazení",
+              "běh programu"
+            ],
+            "items": [
+              {
+                "text": "M03",
+                "group": 0
+              },
+              {
+                "text": "M04",
+                "group": 0
+              },
+              {
+                "text": "M05",
+                "group": 0
+              },
+              {
+                "text": "M08",
+                "group": 1
+              },
+              {
+                "text": "M09",
+                "group": 1
+              },
+              {
+                "text": "M00",
+                "group": 2
+              },
+              {
+                "text": "M01",
+                "group": 2
+              },
+              {
+                "text": "M30",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "M funkce jsou na všech strojích stejné, takže program z jednoho stroje vždy poběží na jiném.",
+          "right": "Základní funkce (M00–M09, M30) jsou téměř všude stejné, ostatní určuje výrobce stroje a řídicího systému.",
+          "why": "Před přenesením programu na jiný stroj vždy zkontroluj návod a ověř program simulací."
+        },
+        {
+          "type": "summary",
+          "text": "Typický sled: výměna nástroje M06 → otáčky S s M03 → chlazení M08 → obrábění → M09, M05 → M01/M00 při kontrole → M30 na konci. S samo vřeteno neroztočí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která funkce roztočí vřeteno ve směru hodinových ručiček?",
+      "options": [
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá M30?",
+      "options": [
+        "ukončí program a vrátí ho na začátek",
+        "zastaví jen vřeteno",
+        "vymění nástroj",
+        "zapne chlazení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj funkci s jejím významem.",
+      "pairs": [
+        [
+          "M05",
+          "stop vřetena"
+        ],
+        [
+          "M06",
+          "výměna nástroje"
+        ],
+        [
+          "M08",
+          "chlazení zapnout"
+        ],
+        [
+          "M09",
+          "chlazení vypnout"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "M01 zastaví program jen tehdy, když je na panelu zapnutý přepínač volitelného stopu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Samotné S1200 bez M03 nebo M04 roztočí vřeteno.",
+      "answer": false,
+      "explanation": "S jen nastaví otáčky; vřeteno roztočí M03 nebo M04."
+    },
+    {
+      "type": "input",
+      "question": "Napiš funkci, která zastaví program vždy, bez ohledu na přepínače (např. M…).",
+      "answers": [
+        "M00",
+        "M0"
+      ],
+      "explanation": "M00 je bezpodmínečný programový stop.",
+      "hints": [
+        "Jde o stop, který nezávisí na přepínači na panelu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš funkci, která vypne chladicí kapalinu (např. M…).",
+      "answers": [
+        "M09",
+        "M9"
+      ],
+      "hints": [
+        "Zapnutí chlazení je M08."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď bloky na začátku obrábění novým nástrojem.",
+      "items": [
+        "T2 M06",
+        "S1800 M03",
+        "M08",
+        "G00 X0 Y0 Z5",
+        "G01 Z−3 F100"
+      ],
+      "hints": [
+        "Nejdřív musí být nástroj ve vřetenu.",
+        "Do řezu se jede až s točícím se vřetenem a chlazením."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se většina vrtáků a fréz točí vpravo (M03)?",
+      "options": [
+        "jsou pravořezné, řežou při otáčení vpravo",
+        "protože M04 na frézkách neexistuje",
+        "aby se nástroj nepovolil v upínači",
+        "kvůli chladicí kapalině"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce s čísly nad základní sadu (např. otevření dveří, dopravník třísek) určuje výrobce stroje a mezi stroji se liší.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kterou funkci použiješ, když chceš po hrubování vždy zastavit a změřit obrobek?",
+      "options": [
+        "M00",
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "answer": 0,
+      "explanation": "M00 zastaví vždy; M01 jen při zapnutém přepínači."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi M00, M01 a M30?",
+      "answer": "M00 je bezpodmínečný programový stop, M01 zastaví jen při zapnutém přepínači volitelného stopu a M30 program ukončí a vrátí ho na začátek pro další kus."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, které M funkce použiješ při výměně nástroje uprostřed programu a proč.",
+      "answer": "Nejdřív vypnu chlazení M09 a zastavím vřeteno M05, pak T… M06 vymění nástroj. Pak nastavím otáčky S s M03 (nebo M04) a zapnu chlazení M08. Teprve pak jedu do řezu."
+    }
+  ]
+}

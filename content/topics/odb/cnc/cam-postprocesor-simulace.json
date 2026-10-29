@@ -1,0 +1,470 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cam-postprocesor-simulace",
+  "title": "CAM, simulace a bezpečnost",
+  "emoji": "🛡️",
+  "explanations": [
+    {
+      "title": "Cesta dat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Složitou formu nebo tvarovou součást by ručně psaný program měl tisíce řádků. Nikdo by ho nespočítal bez chyby. Proto se dráhy nástrojů počítají v programu **CAM** přímo z 3D modelu."
+        },
+        {
+          "type": "text",
+          "text": "Sledujme cestu jedné součásti: od modelu v počítači přes výpočet drah a kontrolu až po bezpečné spuštění na stroji."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CAM",
+          "definition": "*Computer Aided Manufacturing* – počítačová podpora výroby. Program, který z 3D modelu spočítá dráhy nástrojů a vytvoří NC program.",
+          "example": "Mastercam, Fusion, SolidCAM, hyperMILL, Edgecam."
+        },
+        {
+          "type": "term",
+          "term": "Polotovar",
+          "definition": "Kus materiálu před obráběním: tyč, blok, výkovek. CAM musí znát jeho rozměry, aby věděl, kolik materiálu odebrat.",
+          "example": "Hliníkový blok 105 × 65 × 32 mm pro díl 100 × 60 × 30 mm."
+        },
+        {
+          "type": "term",
+          "term": "Strategie obrábění",
+          "definition": "Způsob, jakým nástroj odebírá materiál: hrubování, dokončování, obrys, kapsa, vrtání, plocha…",
+          "example": "Hrubování kapsy po vrstvách 2 mm, pak dokončení stěn."
+        },
+        {
+          "type": "term",
+          "term": "Dráha nástroje",
+          "definition": "Spočítaná cesta středu nebo špičky nástroje, včetně najetí, odjetí a přejezdů.",
+          "example": "Na obrazovce barevné čáry nad modelem."
+        },
+        {
+          "type": "term",
+          "term": "CL data",
+          "definition": "*Cutter Location* – dráhy nástroje uložené v obecném tvaru, nezávislém na konkrétním stroji.",
+          "example": "Seznam bodů a pohybů, ještě bez G-kódu pro Fanuc či Sinumerik."
+        },
+        {
+          "type": "term",
+          "term": "Postprocesor",
+          "definition": "Převodník, který z CL dat vytvoří NC program přesně v jazyce konkrétního stroje a řídicího systému.",
+          "example": "Postprocesor pro Sinumerik napíše CYCLE81, pro Fanuc G81."
+        },
+        {
+          "type": "term",
+          "term": "Simulace",
+          "definition": "Kontrola programu v počítači: ukáže, jak se odebírá materiál, a odhalí **kolize** – srážky nástroje, držáku nebo vřetena s obrobkem či upínkou.",
+          "example": "Simulace ukáže červeně, že držák narazí do svěráku."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta od modelu ke kusu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**CAD model** součásti se načte do CAM.",
+            "Nastaví se nulový bod obrobku, **polotovar** a upnutí.",
+            "Vyberou se **nástroje** z knihovny a řezné podmínky.",
+            "Zvolí se **strategie** a CAM spočítá **dráhy**.",
+            "**Simulace** ověří odebrání materiálu a kolize.",
+            "**Postprocesor** vytvoří NC program pro konkrétní stroj.",
+            "Na stroji: seřízení, zkušební běh, teprve pak výroba."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč nemůžeš NC program ze stroje s Fanucem jen tak nahrát do stroje se Sinumerikem?",
+          "answer": "Každý systém má trochu jiný jazyk (cykly, zápis nástroje, některé G a M funkce). Stejné dráhy z CAM je potřeba převést **jiným postprocesorem** – pro Sinumerik. Program pak znovu ověříš simulací."
+        },
+        {
+          "type": "example",
+          "question": "Simulace ukáže, že v jednom místě se držák nástroje dotkne stěny kapsy. Co uděláš?",
+          "answer": "Je to **kolize**. Můžeš použít delší vyložení nástroje nebo štíhlejší držák, změnit strategii (např. jiný úhel) nebo rozdělit obrábění. Po změně spustíš simulaci znovu. Na stroj jde jen program bez kolizí."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečně u stroje"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Před spuštěním zkontroluj **upnutí** obrobku a nástrojů; ve sklíčidle nenechávej klíč.",
+            "Pracuj se **zavřenými kryty a dveřmi**; blokování dveří nevyřazuj.",
+            "Znej polohu tlačítka **nouzového zastavení** (červené hřibové tlačítko na žlutém poli).",
+            "Nos **ochranné brýle**, přiléhavý oděv, svázané vlasy, žádné šperky.",
+            "**Rukavice ne** u rotujícího vřetena, nástroje nebo obrobku – může je zachytit a vtáhnout ruku.",
+            "**Třísky neodstraňuj rukou** ani za chodu – jen háčkem nebo kartáčem při stojícím stroji.",
+            "První kus pouštěj **blok po bloku** se sníženým posuvem a rychloposuvem a ruku měj u tlačítka stop."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když simulace v CAM prošla, můžu na stroji rovnou pustit plný posuv.",
+          "right": "I po simulaci pusť první kus opatrně: blok po bloku, se sníženým posuvem a ruku na stopu.",
+          "why": "Simulace nezná chyby seřízení: špatně zadaný nulový bod, záměnu nástroje nebo nesprávnou korekci v tabulce stroje."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "CAM",
+                "back": "výpočet drah nástroje z modelu"
+              },
+              {
+                "front": "Postprocesor",
+                "back": "převod drah do jazyka konkrétního stroje"
+              },
+              {
+                "front": "CL data",
+                "back": "dráhy v obecném tvaru"
+              },
+              {
+                "front": "Kolize",
+                "back": "srážka nástroje, držáku nebo vřetena s něčím"
+              }
+            ]
+          }
+        },
+        {
+          "type": "summary",
+          "text": "CAD model → CAM (polotovar, nástroje, strategie, dráhy) → simulace bez kolizí → postprocesor pro konkrétní stroj → seřízení a opatrný první kus. Při práci: kryty zavřené, brýle, žádné rukavice u rotujících částí, třísky ne rukou."
+        }
+      ]
+    },
+    {
+      "title": "Kontrolní seznam",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chyba v CNC programu nestojí jen zmetek. Může zlomit nástroj, poškodit vřeteno za statisíce korun nebo zranit člověka. Proto má cesta od modelu k obrobku několik **kontrolních bodů**. Projdeme je jako kontrolní seznam."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CAM",
+          "definition": "Program, který z 3D modelu a zadaných nástrojů spočítá dráhy nástrojů.",
+          "example": "Strategie „hrubování kapsy“ vypočítá dráhy po vrstvách."
+        },
+        {
+          "type": "term",
+          "term": "Strategie obrábění",
+          "definition": "Zvolený způsob odebírání materiálu, např. hrubování, dokončování, kontura, vrtání.",
+          "example": "Hrubování nechá přídavek 0,3 mm, dokončení ho odebere."
+        },
+        {
+          "type": "term",
+          "term": "Polotovar",
+          "definition": "Výchozí kus materiálu. Podle něj CAM ví, kde materiál je a kde se jede naprázdno.",
+          "example": "Tyč Ø 45 mm pro hřídel Ø 40 mm."
+        },
+        {
+          "type": "term",
+          "term": "Postprocesor",
+          "definition": "Převodník obecných drah (CL dat) do NC programu konkrétního stroje.",
+          "example": "Postprocesor pro tříosou frézku s Heidenhainem."
+        },
+        {
+          "type": "term",
+          "term": "Kolize",
+          "definition": "Nechtěný dotyk nástroje, držáku, vřetena nebo osy s obrobkem, upínkou nebo částí stroje.",
+          "example": "Rychloposuv G00 přes upínku."
+        },
+        {
+          "type": "term",
+          "term": "Zkušební běh",
+          "definition": "Spuštění programu na stroji se zvýšenou opatrností: **blok po bloku** (Single block), se sníženým posuvem přes přepínač **override**, případně bez obrobku nebo s posunutou nulou Z („na sucho“).",
+          "example": "Override rychloposuvu na 25 %, Single block zapnuto."
+        },
+        {
+          "type": "term",
+          "term": "Nouzové zastavení",
+          "definition": "Červené hřibové tlačítko na žlutém poli. Okamžitě zastaví pohyby stroje.",
+          "example": "Stiskneš ho, když nástroj jede jinam, než má."
+        },
+        {
+          "type": "heading",
+          "text": "Kontrola v kanceláři (CAM)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kontrola",
+            "Na co se díváš"
+          ],
+          "rows": [
+            [
+              "polotovar a nulový bod",
+              "odpovídají skutečnému upnutí na stroji?"
+            ],
+            [
+              "nástroje",
+              "délka vyložení, držák, řezné podmínky podle katalogu"
+            ],
+            [
+              "simulace materiálu",
+              "zbyl materiál? Nepodřezal nástroj hotovou plochu?"
+            ],
+            [
+              "simulace kolizí",
+              "držák, vřeteno, upínky, přejezdy G00"
+            ],
+            [
+              "postprocesor",
+              "je pro správný stroj a řídicí systém?"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kontrola u stroje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ověř, že nástroje ve stroji odpovídají seznamu nástrojů a mají správné korekce.",
+            "Změř a zapiš nulový bod obrobku (např. G54).",
+            "Proveď simulaci nebo grafickou kontrolu programu i v řídicím systému, pokud ji stroj má.",
+            "Zavři kryty. Zapni blok po bloku, sniž posuv a rychloposuv přes override.",
+            "U prvního najetí sleduj zbývající dráhu na obrazovce, ruku měj na stopu nebo nouzovém tlačítku.",
+            "Změř první kus, uprav korekce, teprve pak pusť sérii."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Program má najetí G00 X0 Y0 Z5. Na displeji ale u prvního najetí vidíš, že zbývá dojet v Z −85 mm, i když je nástroj jen 30 mm nad obrobkem. Co uděláš?",
+          "answer": "Okamžitě zastavíš (stop posuvu nebo nouzové zastavení). Nástroj by jel 55 mm pod povrch – **kolize**. Příčina bývá ve špatném nulovém bodu Z nebo v délkové korekci. Zkontroluješ G54 a tabulku nástrojů."
+        },
+        {
+          "type": "example",
+          "question": "Proč se při zkoušení nového programu používá blok po bloku?",
+          "answer": "Stroj po každém bloku zastaví a čeká na Start. Obsluha si stihne přečíst další blok a zbývající dráhu, a když něco nesedí, zastaví dřív, než k chybě dojde."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnostní pravidla"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "správně",
+              "nebezpečné"
+            ],
+            "items": [
+              {
+                "text": "ochranné brýle",
+                "group": 0
+              },
+              {
+                "text": "zavřené kryty a dveře",
+                "group": 0
+              },
+              {
+                "text": "háček na třísky při stojícím stroji",
+                "group": 0
+              },
+              {
+                "text": "rukavice u rotujícího vřetena",
+                "group": 1
+              },
+              {
+                "text": "odstraňování třísek rukou",
+                "group": 1
+              },
+              {
+                "text": "klíč ponechaný ve sklíčidle",
+                "group": 1
+              },
+              {
+                "text": "vyřazení blokování dveří",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "V rukavicích je práce u soustruhu bezpečnější, chrání ruce před třískami.",
+          "right": "U rotujícího vřetena, nástroje nebo obrobku se rukavice **nenosí**. Třísky se odstraňují háčkem nebo kartáčem při stojícím stroji.",
+          "why": "Rotující část může rukavici zachytit a vtáhnout celou ruku. Rukavice patří k manipulaci s ostrými díly mimo chod stroje."
+        },
+        {
+          "type": "summary",
+          "text": "Kontrolní body: CAM (polotovar, nástroje, simulace materiálu a kolizí, správný postprocesor) → stroj (nástroje a korekce, nulový bod, kryty, blok po bloku se sníženým posuvem, měření prvního kusu). Brýle ano, rukavice u rotujících částí ne, třísky ne rukou, nouzové zastavení vždy na dosah."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co dělá postprocesor?",
+      "options": [
+        "převede dráhy z CAM do NC programu pro konkrétní stroj a řídicí systém",
+        "spočítá dráhy nástroje z modelu",
+        "nakreslí 3D model",
+        "zkontroluje kolize na stroji"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka CAM?",
+      "options": [
+        "Computer Aided Manufacturing",
+        "Computer Aided Modelling",
+        "Control And Measuring",
+        "Cutting Automatic Machine"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu od modelu k obrobku.",
+      "items": [
+        "CAD model",
+        "nastavení polotovaru a nástrojů v CAM",
+        "výpočet drah",
+        "simulace",
+        "postprocesor",
+        "zkušební běh na stroji"
+      ],
+      "hints": [
+        "Postprocesor potřebuje hotové a ověřené dráhy."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Simulace v CAM odhalí i chybu v nulovém bodě, který obsluha špatně zapsala na stroji.",
+      "answer": false,
+      "explanation": "CAM nezná nastavení stroje; proto se i po simulaci dělá opatrný zkušební běh."
+    },
+    {
+      "type": "choice",
+      "question": "Co je kolize?",
+      "options": [
+        "nechtěný dotyk nástroje, držáku nebo vřetena s obrobkem, upínkou či strojem",
+        "přehřátí nástroje",
+        "ulomení třísky",
+        "chyba v postprocesoru"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "U rotujícího vřetena, nástroje nebo obrobku se nenosí rukavice.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak správně odstraníš třísky ze stroje?",
+      "options": [
+        "háčkem nebo kartáčem při stojícím stroji",
+        "rukou, když se točí pomalu",
+        "rukou v rukavici",
+        "ofukem vzduchem za chodu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "polotovar",
+          "výchozí kus materiálu"
+        ],
+        [
+          "strategie",
+          "způsob odebírání materiálu"
+        ],
+        [
+          "CL data",
+          "dráhy v obecném tvaru"
+        ],
+        [
+          "override",
+          "přepínač snížení posuvu"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak spustíš první kus nového programu?",
+      "options": [
+        "blok po bloku se sníženým posuvem a rukou u tlačítka stop",
+        "rovnou plným posuvem, simulace prošla",
+        "s otevřenými dveřmi, abys lépe viděl",
+        "bez nástrojů v zásobníku"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co obsluze dává čas zastavit dřív, než k chybě dojde?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje převodník, který z drah v CAM vytvoří NC program pro konkrétní stroj?",
+      "answers": [
+        "postprocesor",
+        "post-procesor",
+        "postprocessor"
+      ],
+      "hints": [
+        "Pracuje až po výpočtu drah, „po“ zpracování."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Program pro stroj s Fanucem se dá vždy beze změny použít na stroji se Sinumerikem.",
+      "answer": false,
+      "explanation": "Jazyky systémů se liší; použije se jiný postprocesor."
+    },
+    {
+      "type": "choice",
+      "question": "Jak vypadá tlačítko nouzového zastavení?",
+      "options": [
+        "červené hřibové tlačítko na žlutém poli",
+        "zelené kulaté tlačítko",
+        "modrý přepínač s klíčem",
+        "šedá páčka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš cestu od 3D modelu k hotovému obrobku pomocí CAD/CAM.",
+      "answer": "Model z CAD se načte do CAM, nastaví se nulový bod, polotovar a upnutí, vyberou se nástroje a strategie a spočítají se dráhy. Simulace ověří odebrání materiálu a kolize, postprocesor vytvoří NC program pro konkrétní stroj. Na stroji se seřídí nástroje a nulový bod a první kus se pustí opatrně blok po bloku."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady dodržuješ při práci na CNC stroji?",
+      "answer": "Pracuji se zavřenými kryty, mám ochranné brýle, přiléhavý oděv a svázané vlasy, u rotujících částí nenosím rukavice. Ověřím upnutí, nenechám klíč ve sklíčidle, třísky odstraňuji háčkem při stojícím stroji. Nový program pouštím blok po bloku se sníženým posuvem a vím, kde je nouzové zastavení."
+    }
+  ]
+}

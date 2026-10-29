@@ -1,0 +1,479 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "princip-cnc-stroje",
+  "title": "Princip CNC stroje a jeho části",
+  "emoji": "⚙️",
+  "explanations": [
+    {
+      "title": "Od ruční frézky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na klasické frézce točí frézař rukou kličkami. Každou otáčkou kličky posune stůl o kousek dál a na stupnici kontroluje, kde je. Vyrobit sto stejných dílů znamená stokrát zopakovat stejné pohyby – a stokrát se nesplést."
+        },
+        {
+          "type": "text",
+          "text": "**CNC stroj** dělá totéž, jen kličky točí elektromotory a o pohybech rozhoduje počítač podle programu. Díl za dílem vyrobí stejně přesně, i složité tvary, které by ručně nešly. Proto dnes CNC stroje najdeš skoro v každé strojírenské firmě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CNC",
+          "definition": "Zkratka anglického *Computer Numerical Control* – číslicové řízení počítačem. Stroj se řídí čísly v programu: kam jet, jak rychle, jakým nástrojem.",
+          "example": "CNC frézka vyfrézuje drážku, protože v programu je napsáno „jeď v ose X na 80 mm“."
+        },
+        {
+          "type": "term",
+          "term": "Řídicí systém",
+          "definition": "„Mozek“ stroje: počítač s obrazovkou a ovládacím panelem. Čte program, počítá dráhy a posílá povely motorům.",
+          "example": "Siemens Sinumerik, Fanuc, Heidenhain."
+        },
+        {
+          "type": "term",
+          "term": "Osa",
+          "definition": "Směr, ve kterém se stroj může řízeně pohybovat. Každá osa má vlastní motor.",
+          "example": "Běžná frézka má osy X, Y, Z; soustruh hlavně X a Z."
+        },
+        {
+          "type": "term",
+          "term": "Vřeteno",
+          "definition": "Rotující hřídel stroje. U frézky drží a točí nástroj, u soustruhu drží a točí obrobek (ve sklíčidle).",
+          "example": "Vřeteno frézky se točí třeba 3 000 otáček za minutu."
+        },
+        {
+          "type": "term",
+          "term": "Posuvový pohon (servomotor)",
+          "definition": "Elektromotor, který přesně posouvá stůl nebo suport v jedné ose. Umí zastavit na setinu milimetru přesně.",
+          "example": "Motor osy X posune stůl o 25,40 mm."
+        },
+        {
+          "type": "term",
+          "term": "Kuličkový šroub",
+          "definition": "Šroub s maticí, mezi kterými se valí kuličky. Mění otáčení motoru na přímý posuv a skoro nemá vůli ani tření.",
+          "example": "Při stoupání 5 mm posune jedna otáčka šroubu stůl o 5 mm."
+        },
+        {
+          "type": "term",
+          "term": "Odměřování",
+          "definition": "Snímač, který měří, kde osa skutečně je, a hlásí to řídicímu systému.",
+          "example": "Lineární pravítko na loži nebo rotační snímač (enkodér) na motoru."
+        },
+        {
+          "type": "heading",
+          "text": "Co nahradilo ruce frézaře"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ruční stroj",
+            "CNC stroj"
+          ],
+          "rows": [
+            [
+              "frézař točí kličkou",
+              "kličku nahradil servomotor s kuličkovým šroubem"
+            ],
+            [
+              "frézař čte stupnici",
+              "polohu měří odměřování"
+            ],
+            [
+              "frézař ví, co dělat, z výkresu",
+              "řídicí systém čte program"
+            ],
+            [
+              "frézař ručně mění nástroj",
+              "výměník vezme nástroj ze zásobníku"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se pohne osa"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Řídicí systém přečte v programu, že osa X má jet na 50 mm.",
+            "Spočítá, kam a jak rychle má motor točit, a pošle povel posuvovému pohonu.",
+            "Servomotor točí kuličkovým šroubem a stůl se posouvá.",
+            "Odměřování průběžně hlásí skutečnou polohu.",
+            "Systém porovnává skutečnou polohu s žádanou a motor doladí, dokud rozdíl není prakticky nulový."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Zpětná vazba (uzavřená smyčka)",
+          "definition": "Systém neposílá povel „naslepo“: měří výsledek a podle rozdílu oproti žádané hodnotě povel opravuje.",
+          "example": "Termostat také měří teplotu a podle ní topí nebo netopí."
+        },
+        {
+          "type": "example",
+          "question": "Kuličkový šroub osy X má stoupání 10 mm. O kolik se posune stůl, když se šroub otočí 3,5krát?",
+          "answer": "Jedna otáčka = posuv o stoupání, tedy 10 mm. 3,5 otáčky · 10 mm = **35 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Proč CNC stroj vyrobí 200 stejných dílů přesněji než zkušený frézař na ručním stroji?",
+          "answer": "Program je pro všechny kusy stejný, pohyby řídí motory a polohu kontroluje odměřování se zpětnou vazbou. Nehraje roli únava ani přehlédnutí na stupnici. Přesnost pak závisí hlavně na stroji, upnutí a opotřebení nástroje."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď části stroje: co patří k řízení a co je mechanika, která koná pohyb?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "řízení a měření",
+              "mechanika a pohon"
+            ],
+            "items": [
+              {
+                "text": "řídicí systém",
+                "group": 0
+              },
+              {
+                "text": "ovládací panel",
+                "group": 0
+              },
+              {
+                "text": "odměřování",
+                "group": 0
+              },
+              {
+                "text": "servomotor",
+                "group": 1
+              },
+              {
+                "text": "kuličkový šroub",
+                "group": 1
+              },
+              {
+                "text": "vřeteno",
+                "group": 1
+              },
+              {
+                "text": "lineární vedení",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "CNC stroj si sám pozná, že je nástroj tupý nebo že je obrobek špatně upnutý.",
+          "right": "Stroj dělá přesně to, co je v programu a v nastavení. Za upnutí, nástroje a kontrolu odpovídá obsluha.",
+          "why": "Odměřování hlídá polohu os, ne kvalitu obrábění. Některé stroje mají přídavné sondy, ale základní CNC stroj chybu v upnutí nepozná."
+        },
+        {
+          "type": "summary",
+          "text": "CNC stroj = mechanika s pohony a odměřováním + řídicí systém, který čte program. Servomotor přes kuličkový šroub posouvá osu, odměřování hlásí skutečnou polohu a systém ji v uzavřené smyčce opravuje."
+        }
+      ]
+    },
+    {
+      "title": "Schéma řízení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý CNC stroj – frézka, soustruh, laser i vodní paprsek – má stejnou kostru: program → řídicí systém → pohony → osy → odměřování zpět do systému. Když tenhle řetěz pochopíš jednou, rozumíš všem strojům."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "CNC",
+          "definition": "*Computer Numerical Control*, číslicové řízení počítačem. Pohyby stroje určují čísla v programu.",
+          "example": "X50 = jeď v ose X na souřadnici 50 mm."
+        },
+        {
+          "type": "term",
+          "term": "NC program",
+          "definition": "Textový soubor s povely pro stroj, řádek po řádku.",
+          "example": "G01 X50 F200 = jeď přímo na X50 posuvem 200 mm/min."
+        },
+        {
+          "type": "term",
+          "term": "Řídicí systém",
+          "definition": "Počítač stroje: čte NC program, počítá dráhy (interpoluje) a řídí pohony.",
+          "example": "Sinumerik, Fanuc, Heidenhain."
+        },
+        {
+          "type": "term",
+          "term": "Pohon",
+          "definition": "Motor s elektronikou, který dělá pohyb. **Hlavní pohon** točí vřetenem, **posuvové pohony** posouvají osy.",
+          "example": "Servomotor osy Z."
+        },
+        {
+          "type": "term",
+          "term": "Odměřování",
+          "definition": "Snímání skutečné polohy osy. **Přímé** měří přímo polohu stolu (lineární pravítko), **nepřímé** ji počítá z natočení motoru nebo šroubu (rotační snímač).",
+          "example": "Lineární pravítko je přesnější, protože neovlivní vůle ani teplotní roztažení šroubu."
+        },
+        {
+          "type": "term",
+          "term": "Uzavřená regulační smyčka",
+          "definition": "Systém porovná žádanou polohu se změřenou a rozdíl (odchylku) průběžně vyrovnává.",
+          "example": "Žádáno X = 50,000; změřeno 49,996 → motor ještě dojede 0,004 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Řetěz řízení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Program**: operátor nebo CAM připraví NC program.",
+            "**Řídicí systém** ho čte blok po bloku a počítá body dráhy.",
+            "**Posuvové pohony** dostanou povel a točí kuličkovými šrouby.",
+            "**Osy** se pohybují po vedení, nástroj obrábí.",
+            "**Odměřování** hlásí polohu zpět – smyčka se uzavírá."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní části stroje"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Část",
+            "Úkol"
+          ],
+          "rows": [
+            [
+              "lože a stojan",
+              "pevná kostra, nese vše ostatní a tlumí chvění"
+            ],
+            [
+              "lineární vedení",
+              "po něm jezdí stůl a saně s malým třením"
+            ],
+            [
+              "kuličkový šroub",
+              "převádí otáčení motoru na posuv bez vůle"
+            ],
+            [
+              "vřeteno",
+              "točí nástrojem (frézka) nebo obrobkem (soustruh)"
+            ],
+            [
+              "zásobník a výměník nástrojů",
+              "automaticky vymění nástroj podle programu"
+            ],
+            [
+              "ovládací panel",
+              "obrazovka, klávesnice, tlačítko nouzového zastavení"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Obráběcí centrum",
+          "definition": "CNC frézka se zásobníkem a automatickou výměnou nástrojů. Udělá na jedno upnutí vrtání, frézování i závity.",
+          "example": "Vertikální obráběcí centrum se zásobníkem na 24 nástrojů."
+        },
+        {
+          "type": "example",
+          "question": "Rotační snímač na motoru hlásí, že šroub se stoupáním 5 mm udělal 12 otáček. Kde je osa, pokud začínala na 0?",
+          "answer": "Posun = otáčky · stoupání = 12 · 5 mm = **60 mm**. To je nepřímé odměřování: poloha se počítá ze šroubu, ne měří na stole."
+        },
+        {
+          "type": "example",
+          "question": "Proč má přesná frézka často lineární pravítka, i když motor má vlastní snímač?",
+          "answer": "Snímač na motoru nevidí vůli v uložení ani prodloužení šroubu teplem. Pravítko měří přímo polohu stolu, takže chybu šroubu systém zachytí a vyrovná."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Co točí vřeteno?",
+                "back": "hlavní pohon"
+              },
+              {
+                "front": "Co posouvá osu?",
+                "back": "posuvový (servo)pohon přes kuličkový šroub"
+              },
+              {
+                "front": "Co hlásí skutečnou polohu?",
+                "back": "odměřování"
+              },
+              {
+                "front": "Kdo čte program?",
+                "back": "řídicí systém"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nepřímé a přímé odměřování je totéž, jen jiný snímač.",
+          "right": "Nepřímé počítá polohu z otáčení motoru nebo šroubu, přímé ji měří na pohyblivé části (lineární pravítko).",
+          "why": "U nepřímého se do výsledku promítne vůle a teplotní roztažení šroubu, u přímého ne."
+        },
+        {
+          "type": "summary",
+          "text": "Program → řídicí systém → pohony → osy → odměřování → zpět do systému. Uzavřená smyčka dělá CNC stroj přesným; obráběcí centrum navíc samo mění nástroje."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka CNC?",
+      "options": [
+        "Computer Numerical Control – číslicové řízení počítačem",
+        "Central Numeric Cutting – centrální řezání",
+        "Computer Network Control – síťové řízení",
+        "Controlled Normal Cutting – řízené řezání"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která část mění otáčení servomotoru na přímý posuv stolu?",
+      "options": [
+        "kuličkový šroub",
+        "vřeteno",
+        "odměřování",
+        "zásobník nástrojů"
+      ],
+      "answer": 0,
+      "explanation": "Kuličkový šroub s maticí převádí rotaci na přímočarý pohyb téměř bez vůle."
+    },
+    {
+      "type": "truefalse",
+      "question": "U CNC frézky drží a točí vřeteno nástroj, u soustruhu obrobek.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kuličkový šroub má stoupání 5 mm. O kolik milimetrů se posune stůl při 8 otáčkách? (číslo v mm)",
+      "answers": [
+        "40"
+      ],
+      "explanation": "8 · 5 mm = 40 mm.",
+      "hints": [
+        "Jedna otáčka šroubu posune stůl právě o stoupání.",
+        "Vynásob počet otáček stoupáním."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá uzavřená regulační smyčka?",
+      "options": [
+        "porovnává žádanou a změřenou polohu a odchylku vyrovnává",
+        "vypíná stroj při otevření dveří",
+        "chladí vřeteno kapalinou",
+        "ukládá program do paměti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Přímé odměřování měří polohu lineárním pravítkem přímo na pohyblivé části stroje.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj část stroje s jejím úkolem.",
+      "pairs": [
+        [
+          "řídicí systém",
+          "čte program a řídí pohony"
+        ],
+        [
+          "odměřování",
+          "hlásí skutečnou polohu"
+        ],
+        [
+          "servomotor",
+          "pohání osu"
+        ],
+        [
+          "výměník",
+          "vymění nástroj"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď řetěz řízení CNC stroje od programu.",
+      "items": [
+        "NC program",
+        "řídicí systém",
+        "posuvový pohon",
+        "pohyb osy",
+        "odměřování polohy"
+      ],
+      "hints": [
+        "Začni tím, co napíše programátor.",
+        "Na konci je to, co se vrací zpět do systému."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá CNC frézka s automatickou výměnou nástrojů ze zásobníku?",
+      "options": [
+        "obráběcí centrum",
+        "soustružnické centrum",
+        "NC kopírka",
+        "univerzální frézka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Řídicí systém CNC stroje sám pozná, že je obrobek špatně upnutý.",
+      "answer": false,
+      "explanation": "Za upnutí odpovídá obsluha; odměřování hlídá polohu os, ne upnutí."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se u nepřímého odměřování může projevit chyba šroubu?",
+      "options": [
+        "poloha se počítá z otáčení motoru nebo šroubu, takže vůle a teplotní roztažení šroubu nejsou vidět",
+        "protože snímač je umístěn přímo na stole",
+        "protože pravítko se ohne",
+        "nepřímé odměřování žádnou chybu mít nemůže"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kde přesně je u nepřímého odměřování snímač?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak CNC stroj dojede s osou na požadovanou polohu.",
+      "answer": "Řídicí systém přečte v programu cílovou polohu a pošle povel posuvovému pohonu. Servomotor přes kuličkový šroub posouvá osu, odměřování hlásí skutečnou polohu a systém v uzavřené smyčce vyrovnává odchylku, dokud osa není na místě."
+    },
+    {
+      "type": "open",
+      "question": "Jaké jsou výhody CNC stroje oproti ručnímu obráběcímu stroji?",
+      "answer": "Opakovatelná přesnost u mnoha kusů, možnost vyrobit složité tvary (oblouky, plochy) souvislým řízením více os, automatická výměna nástrojů a menší závislost na zručnosti a únavě obsluhy. Program se dá uložit a použít znovu."
+    }
+  ]
+}

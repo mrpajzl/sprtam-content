@@ -1,0 +1,449 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "interpolace",
+  "title": "Interpolace G00, G01, G02 a G03",
+  "emoji": "〰️",
+  "explanations": [
+    {
+      "title": "Kreslení perem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že kreslíš tužkou podle pravítka a kružítka. Někdy tužku zvedneš a rychle ji přeneseš jinam, někdy táhneš rovnou čáru, někdy oblouk. CNC stroj dělá s nástrojem přesně tyhle tři věci."
+        },
+        {
+          "type": "text",
+          "text": "Způsob, jakým řídicí systém vede nástroj mezi dvěma body, se jmenuje **interpolace**. Na ní stojí každý obrys, který stroj vyrobí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Interpolace",
+          "definition": "Řídicí systém dopočítá mnoho mezilehlých bodů mezi začátkem a koncem pohybu a řídí osy tak, aby nástroj jel po požadované dráze (přímce nebo oblouku).",
+          "example": "Při šikmé přímce musí osy X a Y jet současně, každá jinou rychlostí."
+        },
+        {
+          "type": "term",
+          "term": "Rychloposuv G00",
+          "definition": "Co nejrychlejší přejezd na nový bod **mimo materiál**. Rychlost určuje stroj, ne program. Dráha nemusí být přímka – na mnoha strojích jede každá osa svou nejvyšší rychlostí.",
+          "example": "G00 X0 Y0 Z5 – najetí nad obrobek."
+        },
+        {
+          "type": "term",
+          "term": "Lineární interpolace G01",
+          "definition": "Pohyb po **přímce** pracovním posuvem F. Tak se obrábí.",
+          "example": "G01 X50 Y20 F200"
+        },
+        {
+          "type": "term",
+          "term": "Kruhová interpolace G02 / G03",
+          "definition": "Pohyb po **oblouku**. G02 = ve směru hodinových ručiček, G03 = proti směru.",
+          "example": "G02 X20 Y0 R10"
+        },
+        {
+          "type": "term",
+          "term": "Pohled na rovinu",
+          "definition": "Smysl oblouku se posuzuje při pohledu **z kladného konce osy kolmé k rovině** – u frézky v rovině XY (G17) tedy shora, od +Z dolů.",
+          "example": "Na svislé frézce se díváš shora na stůl."
+        },
+        {
+          "type": "heading",
+          "text": "Tři druhy pohybu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Funkce",
+            "Dráha",
+            "Rychlost",
+            "Kdy"
+          ],
+          "rows": [
+            [
+              "G00",
+              "nemusí být přímka",
+              "nejvyšší možná (rychloposuv)",
+              "přejezdy mimo materiál"
+            ],
+            [
+              "G01",
+              "přímka",
+              "F (pracovní posuv)",
+              "obrábění rovných ploch"
+            ],
+            [
+              "G02",
+              "oblouk ve směru hodinových ručiček",
+              "F",
+              "obrábění oblouků"
+            ],
+            [
+              "G03",
+              "oblouk proti směru hodinových ručiček",
+              "F",
+              "obrábění oblouků"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak popsat oblouk"
+        },
+        {
+          "type": "text",
+          "text": "Řídicí systém potřebuje znát **koncový bod** (X, Y) a **střed** oblouku. Střed zadáš buď poloměrem **R**, nebo souřadnicemi **I, J** (K pro osu Z)."
+        },
+        {
+          "type": "term",
+          "term": "I, J, K",
+          "definition": "Vzdálenost **středu oblouku od počátečního bodu** v ose X (I), Y (J) a Z (K), včetně znaménka.",
+          "example": "Začínáš v X0 Y0, střed je v X10 Y0 → I10 J0."
+        },
+        {
+          "type": "example",
+          "question": "Nástroj stojí v X0 Y0. Má jet po půlkruhu do X20 Y0 přes horní bod X10 Y10. Napiš blok (frézka, G17).",
+          "answer": "Střed je v X10 Y0, poloměr 10. Shora vidíš pohyb zleva přes vrchol doprava – to je **ve směru hodinových ručiček** → G02. Střed od začátku: I = 10 − 0 = 10, J = 0. Blok: **G02 X20 Y0 I10 J0 F150** (nebo s R10)."
+        },
+        {
+          "type": "example",
+          "question": "Nástroj stojí v X50 Y20. Má jet po čtvrtkruhu do X70 Y40, střed oblouku je v X50 Y40.",
+          "answer": "Začátek je pod středem, konec vpravo od středu. Shora jde pohyb zdola doprava nahoru, tedy **proti směru hodinových ručiček** → G03. I = 50 − 50 = 0, J = 40 − 20 = 20. Blok: **G03 X70 Y40 I0 J20** (nebo R20)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Přejezd nad obrobek: ",
+                "after": "",
+                "options": [
+                  "G00",
+                  "G01"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Rovná hrana pracovním posuvem: ",
+                "after": "",
+                "options": [
+                  "G00",
+                  "G01"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Oblouk ve směru hodinových ručiček: ",
+                "after": "",
+                "options": [
+                  "G02",
+                  "G03"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Oblouk proti směru hodinových ručiček: ",
+                "after": "",
+                "options": [
+                  "G02",
+                  "G03"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "G00 se dá použít i pro řez, jen je rychlejší.",
+          "right": "G00 se **nikdy** nepoužívá v materiálu. Řez je vždy G01, G02 nebo G03 s posuvem F.",
+          "why": "Rychloposuv je mnohonásobně rychlejší než řezný posuv a jeho dráha nemusí být přímka – v materiálu by zlomil nástroj nebo poškodil stroj."
+        },
+        {
+          "type": "summary",
+          "text": "Interpolace = řízené vedení nástroje po dráze. G00 přejezd mimo materiál, G01 přímka, G02 oblouk ve směru a G03 proti směru hodinových ručiček (pohled z + osy kolmé k rovině). Oblouk: koncový bod + R nebo I, J, K."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a výpočet",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý obrys na výkrese – obdélník se zaoblenými rohy, kapsa, drážka – se dá rozložit na úsečky a oblouky. Když umíš zapsat úsečku a oblouk, umíš naprogramovat skoro každý 2D tvar."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Interpolace",
+          "definition": "Výpočet dráhy mezi body, při kterém řídicí systém řídí několik os najednou.",
+          "example": "Oblouk v rovině XY: osy X i Y mění rychlost plynule."
+        },
+        {
+          "type": "term",
+          "term": "G00 a G01",
+          "definition": "**G00** rychloposuv – přejezd mimo materiál, dráha nemusí být přímá. **G01** lineární interpolace – přímka posuvem F.",
+          "example": "G01 Z−3 F80 – zanoření do hloubky 3 mm."
+        },
+        {
+          "type": "term",
+          "term": "G02 a G03",
+          "definition": "Kruhová interpolace: **G02** ve směru hodinových ručiček, **G03** proti směru, při pohledu z kladného konce osy kolmé k rovině obrábění.",
+          "example": "V rovině XY se díváš z +Z, tedy shora."
+        },
+        {
+          "type": "term",
+          "term": "Rovina obrábění",
+          "definition": "G17 = XY, G18 = ZX, G19 = YZ. V ní se počítá oblouk.",
+          "example": "Svislá frézka a kapsy: G17."
+        },
+        {
+          "type": "term",
+          "term": "Zadání středu R",
+          "definition": "Poloměr oblouku. Na Fanucu adresa **R**, na Sinumeriku **CR=**. Pro oblouk delší než půlkruh se zadává se záporným znaménkem. Celou kružnici přes R zadat nejde.",
+          "example": "G02 X20 Y0 R10"
+        },
+        {
+          "type": "term",
+          "term": "Zadání středu I, J, K",
+          "definition": "Souřadnice středu měřené **od počátečního bodu oblouku** (ve výchozím nastavení Fanucu i Sinumeriku). Umí i celou kružnici.",
+          "example": "I−15 J0 = střed 15 mm vlevo od začátku."
+        },
+        {
+          "type": "heading",
+          "text": "Postup zápisu oblouku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti počáteční bod (kde nástroj stojí) a koncový bod oblouku.",
+            "Najdi střed oblouku z výkresu.",
+            "Představ si pohled z +Z (u G17 shora) a urči smysl: po směru hodinových ručiček G02, proti G03.",
+            "Spočítej I = Xstřed − Xzačátek a J = Ystřed − Yzačátek (nebo použij R).",
+            "Zapiš: G02/G03 X(konec) Y(konec) I… J… F…"
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Celá kružnice: nástroj stojí v X30 Y0, střed je v X0 Y0. Jak naprogramuješ celý kruh proti směru hodinových ručiček?",
+          "answer": "Koncový bod = počáteční bod: X30 Y0. Střed od začátku: I = 0 − 30 = **−30**, J = 0. Blok: **G03 X30 Y0 I−30 J0 F200**. S R to nejde – z R by systém nepoznal, kde je střed celé kružnice."
+        },
+        {
+          "type": "example",
+          "question": "Obdélník 40 × 20 mm, W v levém dolním rohu, vnější obrys bez zaoblení. Napiš dráhu od X0 Y0 v hloubce, proti směru hodinových ručiček.",
+          "answer": "Z X0 Y0 jedeš doprava, nahoru, doleva, dolů: **G01 X40 F200**, **Y20**, **X0**, **Y0**. G01 i F jsou modální, takže se dál nepíšou. (Kontura je tu bez korekce poloměru frézy – ta přijde v dalším tématu.)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "G00",
+                "back": "rychloposuv, jen mimo materiál"
+              },
+              {
+                "front": "G01",
+                "back": "přímka posuvem F"
+              },
+              {
+                "front": "G02",
+                "back": "oblouk ve směru hodinových ručiček"
+              },
+              {
+                "front": "G03",
+                "back": "oblouk proti směru"
+              },
+              {
+                "front": "I, J",
+                "back": "střed oblouku od počátečního bodu"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "I a J jsou souřadnice středu od nulového bodu obrobku.",
+          "right": "I, J, K jsou ve výchozím nastavení vzdálenosti středu **od počátečního bodu oblouku**.",
+          "why": "Absolutní zadání středu existuje jen jako zvláštní volba systému. Se špatně spočítaným I, J systém hlásí chybu nebo jede jiný oblouk."
+        },
+        {
+          "type": "summary",
+          "text": "Obrys = úsečky a oblouky. G01 přímka, G02/G03 oblouk (pohled z + osy kolmé k rovině), G00 jen mimo materiál. Střed zadáš R (Sinumerik CR=) nebo I, J, K od počátku oblouku; celá kružnice jen přes I, J."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která funkce se používá pro přejezd mimo materiál?",
+      "options": [
+        "G00",
+        "G01",
+        "G02",
+        "G03"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená G03?",
+      "options": [
+        "kruhová interpolace proti směru hodinových ručiček",
+        "kruhová interpolace ve směru hodinových ručiček",
+        "lineární interpolace",
+        "rychloposuv"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Rychloposuv G00 se smí použít k řezání, když je potřeba ušetřit čas.",
+      "answer": false,
+      "explanation": "V materiálu se jede vždy pracovním posuvem: G01, G02, G03."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dráha při rychloposuvu G00 nemusí být přímka.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Odkud se díváš na rovinu XY (G17), když určuješ smysl G02 a G03?",
+      "options": [
+        "z kladného konce osy Z (shora)",
+        "ze záporného konce osy Z (zdola)",
+        "z kladného konce osy X",
+        "na smyslu nezáleží"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v X10 Y5, střed oblouku je v X10 Y25. Jaká je hodnota J?",
+      "answers": [
+        "20",
+        "J20"
+      ],
+      "explanation": "J = 25 − 5 = 20.",
+      "hints": [
+        "J je vzdálenost středu od počátečního bodu v ose Y."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v X40 Y0, střed je v X0 Y0. Jaká je hodnota I?",
+      "answers": [
+        "-40",
+        "−40",
+        "I-40"
+      ],
+      "explanation": "I = 0 − 40 = −40.",
+      "hints": [
+        "Odečti X počátečního bodu od X středu.",
+        "Pozor na znaménko."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj adresu oblouku s významem.",
+      "pairs": [
+        [
+          "I",
+          "střed od začátku v ose X"
+        ],
+        [
+          "J",
+          "střed od začátku v ose Y"
+        ],
+        [
+          "K",
+          "střed od začátku v ose Z"
+        ],
+        [
+          "R",
+          "poloměr oblouku"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se celá kružnice nezadává poloměrem R?",
+      "options": [
+        "z R a koncového bodu nejde jednoznačně určit střed",
+        "R se dá použít jen u soustruhu",
+        "protože R je jen pro G01",
+        "celou kružnici nejde naprogramovat vůbec"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kde je u celé kružnice koncový bod vzhledem k počátečnímu?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky zápisu oblouku.",
+      "items": [
+        "zjistit počáteční a koncový bod",
+        "najít střed oblouku",
+        "určit smysl G02/G03",
+        "spočítat I a J",
+        "zapsat blok s posuvem F"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na Sinumeriku se poloměr oblouku zapisuje adresou CR=.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Nástroj jede v rovině XY po oblouku zleva doprava přes horní bod (pohled shora). Kterou funkci použiješ?",
+      "options": [
+        "G02",
+        "G03",
+        "G01",
+        "G00"
+      ],
+      "answer": 0,
+      "explanation": "Zleva přes vrchol doprava je ve směru hodinových ručiček.",
+      "hints": [
+        "Představ si ručičky hodin od 9 přes 12 ke 3."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi G00 a G01.",
+      "answer": "G00 je rychloposuv – co nejrychlejší přejezd mimo materiál, rychlost určuje stroj a dráha nemusí být přímka. G01 je lineární interpolace – pohyb po přímce zadaným pracovním posuvem F, používá se k obrábění."
+    },
+    {
+      "type": "open",
+      "question": "Jak určíš, zda použít G02, nebo G03, a co dalšího musí blok oblouku obsahovat?",
+      "answer": "Podívám se na rovinu z kladného konce osy kolmé k ní (u G17 shora). Ve směru hodinových ručiček je G02, proti G03. Blok musí obsahovat koncový bod a střed – buď poloměrem R (CR=), nebo I, J, K od počátečního bodu – a posuv F."
+    }
+  ]
+}
