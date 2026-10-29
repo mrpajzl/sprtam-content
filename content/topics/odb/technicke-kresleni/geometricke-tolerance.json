@@ -1,0 +1,438 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "geometricke-tolerance",
+  "title": "Geometrické tolerance",
+  "emoji": "🧭",
+  "explanations": [
+    {
+      "title": "Rovný stůl",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Deska stolu může mít přesně předepsanou tloušťku 30 mm, a přesto být prohnutá jako banán. Hřídel může mít správný průměr, a přesto být křivá. Rozměrová tolerance hlídá **velikost**, ale ne **tvar** a **polohu**."
+        },
+        {
+          "type": "text",
+          "text": "Na to jsou **geometrické tolerance** podle normy **ČSN EN ISO 1101**. Říkají, jak moc smí být plocha nerovná, osa křivá nebo díra posunutá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Geometrická tolerance",
+          "definition": "Předpis, o kolik se smí skutečný **tvar, orientace nebo poloha** prvku lišit od ideálu.",
+          "example": "Rovinnost 0,05 mm."
+        },
+        {
+          "type": "term",
+          "term": "Prvek",
+          "definition": "Část součásti, ke které se tolerance vztahuje: plocha, hrana, osa, díra.",
+          "example": "Horní plocha desky, osa díry."
+        },
+        {
+          "type": "term",
+          "term": "Toleranční pásmo",
+          "definition": "Prostor, ve kterém musí ležet celý skutečný prvek. Jeho šířka je hodnota tolerance.",
+          "example": "U rovinnosti 0,05 je to prostor mezi dvěma rovnoběžnými rovinami vzdálenými 0,05 mm."
+        },
+        {
+          "type": "term",
+          "term": "Základna",
+          "definition": "Plocha nebo osa, ke které se měří orientace či poloha jiného prvku. Na výkrese se značí **velkým písmenem ve čtverečku** spojeným s trojúhelníkem na prvku.",
+          "example": "Základna A = spodní dosedací plocha."
+        },
+        {
+          "type": "term",
+          "term": "Toleranční rámeček",
+          "definition": "Obdélník rozdělený na políčka: **značka** tolerance | **hodnota** v mm | písmena **základen**. Od rámečku vede šipka k prvku.",
+          "example": "| ∥ | 0,02 | A |"
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři skupiny"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Skupina",
+            "Vlastnosti",
+            "Potřebuje základnu?"
+          ],
+          "rows": [
+            [
+              "**tvar**",
+              "přímost ⏤, rovinnost ⏥, kruhovitost ○, válcovitost ⌭",
+              "ne"
+            ],
+            [
+              "**orientace**",
+              "rovnoběžnost ∥, kolmost ⟂, sklon ∠",
+              "ano"
+            ],
+            [
+              "**umístění**",
+              "pozice ⌖, souosost ◎, souměrnost ⌯",
+              "obvykle ano"
+            ],
+            [
+              "**házení**",
+              "kruhové házení ↗, celkové házení ⌰",
+              "ano"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "K tomu patří ještě tvar profilu čáry ⌒ a plochy ⌓, které se používají se základnou i bez ní."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti, zda potřebují základnu."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "bez základny (tvar)",
+              "se základnou"
+            ],
+            "items": [
+              {
+                "text": "rovinnost",
+                "group": 0
+              },
+              {
+                "text": "kruhovitost",
+                "group": 0
+              },
+              {
+                "text": "přímost",
+                "group": 0
+              },
+              {
+                "text": "rovnoběžnost",
+                "group": 1
+              },
+              {
+                "text": "kolmost",
+                "group": 1
+              },
+              {
+                "text": "házení",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Co znamená rámeček | ⏥ | 0,05 | u horní plochy desky?",
+          "answer": "**Rovinnost 0,05 mm**: celá horní plocha musí ležet mezi dvěma rovnoběžnými rovinami vzdálenými 0,05 mm. Základna tu není – jde jen o tvar plochy samotné."
+        },
+        {
+          "type": "example",
+          "question": "Co znamená | ⟂ | 0,1 | A | u boční plochy, když A je spodní plocha?",
+          "answer": "**Kolmost 0,1 mm k základně A**: boční plocha musí ležet mezi dvěma rovnoběžnými rovinami vzdálenými 0,1 mm, které jsou přesně kolmé k základně A."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rovnoběžnost napíšu bez základny, je přece jasné, ke které ploše.",
+          "right": "Rovnoběžnost, kolmost, sklon i házení **potřebují základnu**, např. | ∥ | 0,02 | A |.",
+          "why": "Rovnoběžnost je vždy „k něčemu“. Bez základny by se nedalo měřit."
+        },
+        {
+          "type": "summary",
+          "text": "Geometrické tolerance hlídají tvar, orientaci, umístění a házení. Zapisují se do tolerančního rámečku: značka | hodnota | základna. Tolerance tvaru základnu nepotřebují, ostatní ano."
+        }
+      ]
+    },
+    {
+      "title": "Čtení rámečku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na výkrese hřídele uvidíš malé obdélníky se značkami a šipkou k ploše. Bez nich by hřídel mohla být rozměrově v pořádku, a přesto by ložisko házelo a ozubené kolo hlučelo. Naučíme se rámeček přečíst krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Geometrická tolerance",
+          "definition": "Dovolená odchylka tvaru, orientace, umístění nebo házení prvku od ideálního stavu.",
+          "example": "Kruhovitost 0,01 mm."
+        },
+        {
+          "type": "term",
+          "term": "Toleranční rámeček",
+          "definition": "Obdélník s políčky: 1. značka vlastnosti, 2. hodnota tolerance (se znakem ⌀, když je pásmo válcové), 3. a další: základny.",
+          "example": "| ◎ | ⌀0,02 | A |"
+        },
+        {
+          "type": "term",
+          "term": "Základna",
+          "definition": "Prvek, od kterého se měří. Značí se písmenem ve čtverečku a trojúhelníkem připojeným k prvku.",
+          "example": "Osa čepu A."
+        },
+        {
+          "type": "term",
+          "term": "Házení",
+          "definition": "Jak moc se plocha „kolébá“ při otočení součásti kolem osy základny. Měří se úchylkoměrem při otáčení.",
+          "example": "Házení čela kotouče brzdy."
+        },
+        {
+          "type": "term",
+          "term": "Teoreticky přesný rozměr",
+          "definition": "Kóta v **rámečku** (např. [40]). Nemá toleranci; určuje ideální polohu, od které se měří tolerance pozice.",
+          "example": "Rozteč děr [60]."
+        },
+        {
+          "type": "heading",
+          "text": "Postup čtení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Podívej se na **značku** v prvním políčku → víš, jaká vlastnost se hlídá.",
+            "Přečti **hodnotu** v mm. Je-li před ní ⌀, toleranční pásmo je válec.",
+            "Přečti **písmena základen** (A, B, C) a najdi je na výkrese.",
+            "Podívej se, **kam míří šipka**: na obrys nebo pomocnou čáru mimo kótu → plocha. V prodloužení kótovací čáry → **osa** nebo střední rovina.",
+            "Představ si toleranční pásmo a v něm skutečný prvek."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "| ◎ | ⌀0,02 | A | – šipka v prodloužení kóty ⌀30 čepu, A je osa jiného čepu.",
+          "answer": "**Souosost**: osa čepu ⌀30 musí ležet ve válci o průměru **0,02 mm**, jehož osa je osa základny A."
+        },
+        {
+          "type": "example",
+          "question": "| ⌖ | ⌀0,1 | A | B | u díry, jejíž poloha je daná rámečkovými kótami [40] a [25] od základen A a B.",
+          "answer": "**Pozice**: osa díry musí ležet ve válci ⌀0,1 mm, jehož střed je přesně 40 mm od A a 25 mm od B. Kóty v rámečku nemají vlastní toleranci."
+        },
+        {
+          "type": "example",
+          "question": "| ↗ | 0,03 | A | na čele ozubeného kola.",
+          "answer": "**Kruhové házení**: při otočení kola kolem osy A nesmí úchylkoměr na čele ukázat větší rozkmit než 0,03 mm v žádném měřeném místě."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "○",
+                "back": "kruhovitost"
+              },
+              {
+                "front": "⏥",
+                "back": "rovinnost"
+              },
+              {
+                "front": "∥",
+                "back": "rovnoběžnost"
+              },
+              {
+                "front": "⟂",
+                "back": "kolmost"
+              },
+              {
+                "front": "◎",
+                "back": "souosost"
+              },
+              {
+                "front": "⌖",
+                "back": "pozice"
+              },
+              {
+                "front": "↗",
+                "back": "kruhové házení"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Rozměr a geometrie se nesčítají"
+        },
+        {
+          "type": "text",
+          "text": "Podle ČSN EN ISO 8015 platí **princip nezávislosti**: rozměrová tolerance a geometrická tolerance se kontrolují **každá zvlášť**. Kóta ⌀30 h6 sama nehlídá, jestli je čep rovný."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Šipku rámečku kruhovitosti dám do prodloužení kóty průměru, protože tolerance patří k průměru.",
+          "right": "Pro **plochu** (např. kruhovitost povrchu válce) směřuje šipka na obrys nebo pomocnou čáru **mimo** kótovací čáru. V prodloužení kóty míří šipka jen tehdy, když se tolerance týká **osy**.",
+          "why": "Poloha šipky rozhoduje, jestli se tolerance vztahuje na plochu, nebo na osu – a to se měří úplně jinak."
+        },
+        {
+          "type": "summary",
+          "text": "Rámeček čti zleva: značka – hodnota (⌀ = válcové pásmo) – základny. Šipka na obrys = plocha, v prodloužení kóty = osa. Rozměrová a geometrická tolerance platí nezávisle."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která geometrická tolerance je tolerancí tvaru?",
+      "options": [
+        "rovinnost",
+        "rovnoběžnost",
+        "kolmost",
+        "pozice"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je v prvním políčku tolerančního rámečku?",
+      "options": [
+        "značka vlastnosti",
+        "hodnota tolerance",
+        "písmeno základny",
+        "číslo výkresu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovinnost potřebuje základnu.",
+      "answer": false,
+      "explanation": "Tolerance tvaru se vztahují jen k prvku samotnému."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kolmost se vždy vztahuje k nějaké základně.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s názvem.",
+      "pairs": [
+        [
+          "○",
+          "kruhovitost"
+        ],
+        [
+          "∥",
+          "rovnoběžnost"
+        ],
+        [
+          "⟂",
+          "kolmost"
+        ],
+        [
+          "◎",
+          "souosost"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená ⌀ před hodnotou v rámečku?",
+      "options": [
+        "toleranční pásmo je válec",
+        "prvek je díra",
+        "hodnota je průměr součásti",
+        "tolerance je v palcích"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Šipka rámečku je v prodloužení kótovací čáry průměru. Na co se tolerance vztahuje?",
+      "options": [
+        "na osu",
+        "na povrch válce",
+        "na čelo",
+        "na základnu"
+      ],
+      "answer": 0,
+      "hints": [
+        "Rozliš šipku na obrysu a šipku navazující na kótu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Rovinnost 0,04: jak daleko od sebe (v mm) jsou dvě roviny, mezi kterými musí plocha ležet?",
+      "answers": [
+        "0,04",
+        "0.04"
+      ],
+      "explanation": "Šířka tolerančního pásma je hodnota tolerance."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se na výkrese značí základna?",
+      "options": [
+        "velké písmeno ve čtverečku s trojúhelníkem",
+        "malé písmeno v kroužku",
+        "číslo v rámečku",
+        "hvězdička"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kóta v rámečku (např. [40]) je teoreticky přesný rozměr bez tolerance.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup čtení tolerančního rámečku.",
+      "items": [
+        "přečíst značku vlastnosti",
+        "přečíst hodnotu tolerance",
+        "najít základny",
+        "zjistit, kam míří šipka",
+        "představit si toleranční pásmo"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj vlastnost se skupinou.",
+      "pairs": [
+        [
+          "válcovitost",
+          "tvar"
+        ],
+        [
+          "sklon",
+          "orientace"
+        ],
+        [
+          "pozice",
+          "umístění"
+        ],
+        [
+          "celkové házení",
+          "házení"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč nestačí rozměrová tolerance a jsou potřeba i geometrické tolerance?",
+      "answer": "Rozměrová tolerance hlídá jen velikost (např. průměr), ne tvar a polohu. Čep může mít správný průměr a být křivý nebo nesouosý; deska správnou tloušťku a být prohnutá. Geometrické tolerance předepíšou tvar, orientaci, umístění a házení."
+    },
+    {
+      "type": "open",
+      "question": "Přečti rámeček | ∥ | 0,02 | A | u horní plochy, když A je spodní plocha.",
+      "answer": "Rovnoběžnost: horní plocha musí ležet mezi dvěma rovinami vzdálenými 0,02 mm, které jsou rovnoběžné se základnou A (spodní plochou)."
+    }
+  ]
+}

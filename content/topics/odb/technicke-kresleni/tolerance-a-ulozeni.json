@@ -1,0 +1,467 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "tolerance-a-ulozeni",
+  "title": "Tolerance rozměrů a uložení",
+  "emoji": "🎯",
+  "explanations": [
+    {
+      "title": "Čep a díra",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kolo na jízdním kole se má na ose točit lehce, ale nesmí se viklat. Ložisko naopak musí v náboji sedět pevně. Obojí je „díra a čep“, jen jinak přesné. Rozdíl dělají **setiny milimetru**."
+        },
+        {
+          "type": "text",
+          "text": "Přesně na 50,000 mm se ale vyrobit nedá nic. Proto výkres říká, **o kolik se smí rozměr lišit**. Tomu se říká tolerance. Pravidla popisuje norma **ČSN EN ISO 286**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Jmenovitý rozměr",
+          "definition": "Rozměr, od kterého se počítají úchylky. Je to „hlavní“ číslo kóty.",
+          "example": "U ⌀50 H7 je jmenovitý rozměr 50 mm."
+        },
+        {
+          "type": "term",
+          "term": "Mezní úchylky",
+          "definition": "O kolik smí být rozměr nejvýš větší (**horní úchylka**) a nejvýš menší (**dolní úchylka**) než jmenovitý rozměr.",
+          "example": "50 +0,025/0: horní úchylka +0,025, dolní 0."
+        },
+        {
+          "type": "term",
+          "term": "Mezní rozměry",
+          "definition": "Největší a nejmenší dovolený rozměr: **horní mezní rozměr** = jmenovitý + horní úchylka, **dolní mezní rozměr** = jmenovitý + dolní úchylka.",
+          "example": "50,025 a 50,000 mm."
+        },
+        {
+          "type": "term",
+          "term": "Tolerance",
+          "definition": "Rozdíl mezi horním a dolním mezním rozměrem. Říká, jak široké je „pásmo“, do kterého se musí výrobek trefit.",
+          "example": "50,025 − 50,000 = 0,025 mm."
+        },
+        {
+          "type": "term",
+          "term": "Díra a hřídel",
+          "definition": "V tolerancích znamená **díra** každý vnitřní rozměr a **hřídel** každý vnější – i když to není kruh.",
+          "example": "Šířka drážky je „díra“, šířka pera je „hřídel“."
+        },
+        {
+          "type": "heading",
+          "text": "Počítáme mezní rozměry"
+        },
+        {
+          "type": "example",
+          "question": "Díra ⌀40 +0,1/−0,05. Jaké jsou mezní rozměry a tolerance?",
+          "answer": "Horní mezní rozměr = 40 + 0,1 = **40,10 mm**. Dolní = 40 − 0,05 = **39,95 mm**. Tolerance = 40,10 − 39,95 = **0,15 mm** (také 0,1 − (−0,05) = 0,15)."
+        },
+        {
+          "type": "heading",
+          "text": "Uložení: jak spolu díra a hřídel sedí"
+        },
+        {
+          "type": "term",
+          "term": "Uložení",
+          "definition": "Vztah díry a hřídele se stejným jmenovitým rozměrem, které do sebe zapadnou.",
+          "example": "Kolo nasazené na čep."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Uložení",
+            "Co platí",
+            "Příklad použití"
+          ],
+          "rows": [
+            [
+              "**s vůlí**",
+              "díra je vždy větší než hřídel",
+              "kluzné ložisko, otočný čep"
+            ],
+            [
+              "**přechodné**",
+              "může vyjít malá vůle i malý přesah",
+              "řemenice s perem, středicí čep"
+            ],
+            [
+              "**s přesahem**",
+              "hřídel je vždy větší než díra – nalisuje se",
+              "věnec ozubeného kola, pouzdro nalisované do tělesa"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Díra ⌀50 H7 má úchylky +0,025/0, hřídel ⌀50 g6 má −0,009/−0,025. Jaké je to uložení a jaké jsou vůle?",
+          "answer": "Největší vůle = největší díra − nejmenší hřídel = 50,025 − 49,975 = **0,050 mm**. Nejmenší vůle = nejmenší díra − největší hřídel = 50,000 − 49,991 = **0,009 mm**. Obě vůle jsou kladné → uložení **s vůlí**."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "s vůlí",
+              "s přesahem"
+            ],
+            "items": [
+              {
+                "text": "kolo volně na ose",
+                "group": 0
+              },
+              {
+                "text": "nalisované pouzdro",
+                "group": 1
+              },
+              {
+                "text": "posuvné šoupátko ve vedení",
+                "group": 0
+              },
+              {
+                "text": "věnec nalisovaný na náboj",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Tolerance ⌀30 +0,02/−0,01 je 0,01 mm.",
+          "right": "Tolerance = horní úchylka − dolní úchylka = 0,02 − (−0,01) = **0,03 mm**.",
+          "why": "Dolní úchylka je záporná – při odečítání se znaménko otočí."
+        },
+        {
+          "type": "summary",
+          "text": "Kóta s úchylkami říká, v jakém rozmezí smí rozměr být. Tolerance = horní − dolní mezní rozměr. Uložení díry a hřídele je s vůlí, přechodné nebo s přesahem."
+        }
+      ]
+    },
+    {
+      "title": "Kód H7/g6",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na výkresech uvidíš kóty jako **⌀25 H7** nebo **⌀25 H7/g6**. Nejsou to šifry. Písmeno říká, **kde** leží tolerance, číslo **jak je široká**. Úchylky k nim se najdou v tabulkách ČSN EN ISO 286-2."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tolerance",
+          "definition": "Dovolený rozdíl mezi největším a nejmenším rozměrem.",
+          "example": "0,021 mm"
+        },
+        {
+          "type": "term",
+          "term": "Toleranční stupeň IT",
+          "definition": "Číslo za písmenem (IT01, IT0, IT1 až IT18). Čím **menší** číslo, tím **užší** tolerance a dražší výroba.",
+          "example": "IT6–IT7 = přesné strojní plochy, IT11 a víc = hrubé rozměry."
+        },
+        {
+          "type": "term",
+          "term": "Základní úchylka",
+          "definition": "Písmeno udává polohu toleranční zóny vůči jmenovitému rozměru. **Velká písmena = díry**, **malá = hřídele**.",
+          "example": "H: dolní úchylka díry = 0. h: horní úchylka hřídele = 0."
+        },
+        {
+          "type": "term",
+          "term": "Toleranční třída",
+          "definition": "Písmeno a číslo dohromady.",
+          "example": "H7, g6, k6, s6"
+        },
+        {
+          "type": "term",
+          "term": "Soustava jednotné díry",
+          "definition": "Všechny díry mají polohu **H** (dolní úchylka 0), uložení se volí změnou hřídele. Je **přednostní**, protože díra se vyrábí normalizovaným nástrojem (výstružník) a hřídel se snadno obrobí na libovolný rozměr.",
+          "example": "H7/g6, H7/k6, H7/s6"
+        },
+        {
+          "type": "term",
+          "term": "Soustava jednotného hřídele",
+          "definition": "Všechny hřídele mají polohu **h** (horní úchylka 0), mění se díry.",
+          "example": "Tažené tyče, pera a drážky: N9/h9."
+        },
+        {
+          "type": "heading",
+          "text": "Jak čteš zápis"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "⌀50 – jmenovitý rozměr 50 mm.",
+            "H – díra, dolní úchylka je 0.",
+            "7 – toleranční stupeň IT7 (pro 50 mm je to 0,025 mm).",
+            "Výsledek: ⌀50 H7 = 50 +0,025/0."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Uložení v soustavě H",
+            "Druh",
+            "Typické použití"
+          ],
+          "rows": [
+            [
+              "H7/g6",
+              "s vůlí (malou)",
+              "přesné otočné a posuvné díly"
+            ],
+            [
+              "H7/h6",
+              "s vůlí (nejmenší vůle 0)",
+              "středicí, posuvné díly"
+            ],
+            [
+              "H7/k6",
+              "přechodné",
+              "řemenice, ozubená kola s perem"
+            ],
+            [
+              "H7/s6",
+              "s přesahem",
+              "nalisovaná pouzdra a věnce"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "⌀20 H7 = 20 +0,021/0, ⌀20 f7 = 20 −0,020/−0,041. Spočítej nejmenší a největší vůli.",
+          "answer": "Nejmenší vůle = 20,000 − 19,980 = **0,020 mm**. Největší vůle = 20,021 − 19,959 = **0,062 mm**. Obě kladné → uložení **s vůlí**."
+        },
+        {
+          "type": "example",
+          "question": "⌀50 H7 (+0,025/0) a ⌀50 s6 (+0,059/+0,043). Jaké uložení?",
+          "answer": "Nejmenší přesah = nejmenší hřídel − největší díra = 50,043 − 50,025 = **0,018 mm**. Největší přesah = 50,059 − 50,000 = **0,059 mm**. Hřídel je vždy větší → uložení **s přesahem**."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Velké písmeno v toleranční třídě patří ",
+                "after": ".",
+                "options": [
+                  "díře",
+                  "hřídeli"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Díra H má dolní úchylku rovnou ",
+                "after": ".",
+                "options": [
+                  "0",
+                  "tolerance",
+                  "−1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Menší číslo IT znamená ",
+                "after": " toleranci.",
+                "options": [
+                  "užší",
+                  "širší"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "H7/s6 je uložení ",
+                "after": ".",
+                "options": [
+                  "s vůlí",
+                  "přechodné",
+                  "s přesahem"
+                ],
+                "answer": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Netolerované rozměry"
+        },
+        {
+          "type": "text",
+          "text": "Ne každá kóta má úchylky. Pro ostatní rozměry platí **obecné tolerance** napsané u popisového pole, nejčastěji podle ISO 2768-1, např. „ISO 2768-m“ (střední třída)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "g6 je díra, protože je to první písmeno abecedy za H.",
+          "right": "Malé písmeno (g, h, k, s) je vždy **hřídel**, velké (H, G, K…) **díra**.",
+          "why": "Zápis H7/g6 se čte „díra H7, hřídel g6“. Díra se píše první (nad zlomkovou čarou)."
+        },
+        {
+          "type": "summary",
+          "text": "Toleranční třída = písmeno (poloha, velké díra, malé hřídel) + číslo IT (šířka). Přednostní je soustava jednotné díry H. H7/g6 s vůlí, H7/k6 přechodné, H7/s6 s přesahem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je tolerance rozměru?",
+      "options": [
+        "rozdíl horního a dolního mezního rozměru",
+        "jmenovitý rozměr",
+        "horní úchylka",
+        "průměr díry"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kóta ⌀60 +0,03/−0,02. Jaká je tolerance v mm?",
+      "answers": [
+        "0,05",
+        "0.05"
+      ],
+      "explanation": "0,03 − (−0,02) = 0,05 mm.",
+      "hints": [
+        "Odečti dolní úchylku od horní.",
+        "Pozor na znaménko záporné úchylky."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kóta 80 +0,1/0. Jaký je horní mezní rozměr v mm?",
+      "answers": [
+        "80,1",
+        "80.1",
+        "80,10",
+        "80.10"
+      ],
+      "explanation": "80 + 0,1 = 80,1 mm."
+    },
+    {
+      "type": "input",
+      "question": "Kóta 25 0/−0,013 (h6). Jaký je dolní mezní rozměr v mm?",
+      "answers": [
+        "24,987",
+        "24.987"
+      ],
+      "explanation": "25 − 0,013 = 24,987 mm.",
+      "hints": [
+        "Dolní mezní rozměr = jmenovitý rozměr + dolní úchylka."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V toleranční třídě H7 označuje velké písmeno díru.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Čím vyšší číslo IT, tím přesnější výroba.",
+      "answer": false,
+      "explanation": "Vyšší IT = širší tolerance = méně přesné."
+    },
+    {
+      "type": "choice",
+      "question": "Které uložení je s přesahem?",
+      "options": [
+        "H7/s6",
+        "H7/g6",
+        "H7/h6",
+        "H7/k6"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč je soustava jednotné díry přednostní?",
+      "options": [
+        "díry se vyrábějí normalizovanými nástroji, hřídel se obrobí snadno",
+        "díry jsou vždy větší",
+        "hřídele nejdou měřit",
+        "je to jediná soustava v ISO"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj uložení s druhem.",
+      "pairs": [
+        [
+          "H7/g6",
+          "s vůlí"
+        ],
+        [
+          "H7/k6",
+          "přechodné"
+        ],
+        [
+          "H7/s6",
+          "s přesahem"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Díra ⌀30 +0,021/0, hřídel ⌀30 −0,007/−0,020. Jaká je největší vůle v mm?",
+      "answers": [
+        "0,041",
+        "0.041"
+      ],
+      "explanation": "30,021 − 29,980 = 0,041 mm.",
+      "hints": [
+        "Největší vůle vznikne u největší díry a nejmenšího hřídele."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je dolní mezní rozměr díry ⌀40 H7?",
+      "options": [
+        "přesně 40 mm",
+        "39,975 mm",
+        "40,025 mm",
+        "nedá se určit"
+      ],
+      "answer": 0,
+      "explanation": "Poloha H má dolní úchylku 0.",
+      "hints": [
+        "Co platí pro dolní úchylku díry v poloze H?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď uložení od největší vůle po největší přesah.",
+      "items": [
+        "H7/f7",
+        "H7/g6",
+        "H7/k6",
+        "H7/s6"
+      ],
+      "hints": [
+        "Písmena hřídelí blíž začátku abecedy dávají větší vůli."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co znamená zápis ⌀50 H7/g6.",
+      "answer": "Jmenovitý rozměr 50 mm, díra v toleranční třídě H7 (dolní úchylka 0, tolerance IT7) a hřídel g6 (leží pod jmenovitým rozměrem, IT6). Hřídel je vždy menší než díra – uložení s malou vůlí, v soustavě jednotné díry."
+    },
+    {
+      "type": "open",
+      "question": "Popiš tři druhy uložení a uveď příklad použití.",
+      "answer": "S vůlí – díra je vždy větší, díly se pohybují (otočný čep, kluzné ložisko). Přechodné – může vzniknout malá vůle i přesah, díly se dají smontovat a zajišťují přesnou polohu (řemenice na hřídeli s perem). S přesahem – hřídel je větší, díly se nalisují a drží třením (pouzdro, věnec kola)."
+    }
+  ]
+}

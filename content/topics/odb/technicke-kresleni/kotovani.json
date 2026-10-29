@@ -1,0 +1,476 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "kotovani",
+  "title": "Kótování",
+  "emoji": "📏",
+  "explanations": [
+    {
+      "title": "Kóta jako věta",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Obrázek ukáže tvar, ale ne velikost. Kóty jsou na výkrese čísla, podle kterých se součást vyrobí a změří. Každá kóta je jako věta: „tahle délka je 120 milimetrů“."
+        },
+        {
+          "type": "text",
+          "text": "Kótovat se dá dobře i špatně. Dobře okótovaný výkres má **každý rozměr právě jednou** a čte se bez počítání. Pravidla popisuje norma **ČSN EN ISO 129-1**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kóta",
+          "definition": "Údaj o rozměru na výkrese. Skládá se z kótovací čáry, pomocných kótovacích čar, hraničení a kótovacího čísla.",
+          "example": "Kóta 80 u délky desky."
+        },
+        {
+          "type": "term",
+          "term": "Kótovací čára",
+          "definition": "Tenká plná čára **rovnoběžná** s kótovaným rozměrem. Od obrysu bývá asi 10 mm, další kótovací čáry asi po 7 mm.",
+          "example": "Čára pod délkou desky."
+        },
+        {
+          "type": "term",
+          "term": "Pomocná kótovací čára",
+          "definition": "Tenká plná čára, která vynáší rozměr z obrysu ven. Je kolmá ke kótovanému rozměru a přesahuje kótovací čáru asi o 2 mm.",
+          "example": "Svislé čárky na krajích desky."
+        },
+        {
+          "type": "term",
+          "term": "Hraničení",
+          "definition": "Zakončení kótovací čáry: obvykle **šipka**, jinak šikmá čárka nebo tečka.",
+          "example": "Šipky na obou koncích kótovací čáry."
+        },
+        {
+          "type": "term",
+          "term": "Kótovací číslo",
+          "definition": "Rozměr v **milimetrech bez jednotky**, nad kótovací čárou, čitelné zdola nebo zprava.",
+          "example": "120"
+        },
+        {
+          "type": "heading",
+          "text": "Značky před číslem"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka",
+            "Význam",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "⌀",
+              "průměr",
+              "⌀40"
+            ],
+            [
+              "R",
+              "poloměr",
+              "R5"
+            ],
+            [
+              "□",
+              "čtverec",
+              "□20"
+            ],
+            [
+              "S⌀ / SR",
+              "průměr / poloměr koule",
+              "S⌀30"
+            ],
+            [
+              "t =",
+              "tloušťka plechu",
+              "t = 3"
+            ],
+            [
+              "2 × 45°",
+              "sražení hrany 2 mm pod 45°",
+              "2 × 45°"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Každý rozměr se okótuje **jen jednou**, na tom pohledu, kde je tvar nejlépe vidět.",
+            "Kótovací čáry se nemají křížit; menší kóty blíž k obrysu, větší dál.",
+            "Nekótuje se k neviditelným (čárkovaným) hranám.",
+            "Osa ani obrysová čára nesmí sloužit jako kótovací čára (smějí být pomocnou kótovací čarou).",
+            "Jednotka mm se nepíše; úhly se píšou ve stupních (30°)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Deska 120 × 60 mm s dírou ⌀10, jejíž střed je 30 mm od levé a 20 mm od spodní hrany. Jaké kóty napíšeš?",
+          "answer": "Celková délka **120**, výška **60**, průměr díry **⌀10** a poloha středu **30** a **20** od hran. Pět kót, každý rozměr jednou."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel je v pohledu nakreslená jen jednou. Jak poznáme, že jde o válec?",
+          "answer": "Před kótu napíšeme **⌀**: např. ⌀25. Značka řekne, že v tom místě je kruhový průřez – druhý pohled není potřeba."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Poloměr oblouku 8 mm zapíšeš ",
+                "after": ".",
+                "options": [
+                  "R8",
+                  "⌀8",
+                  "8R"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Průměr díry 12 mm zapíšeš ",
+                "after": ".",
+                "options": [
+                  "R12",
+                  "⌀12",
+                  "D12"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Kótovací čára je čára plná ",
+                "after": ".",
+                "options": [
+                  "tlustá",
+                  "tenká"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Jednotka mm se u kót ",
+                "after": ".",
+                "options": [
+                  "píše",
+                  "nepíše"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kótu napíšu k čárkované čáře díry, protože je tam díra nejlépe vidět.",
+          "right": "K **neviditelným hranám se nekótuje**. Udělej řez nebo kótuj v pohledu, kde je díra vidět plnou čarou.",
+          "why": "Kóta k čárkované čáře se špatně čte a často vede k omylu, ke které hraně patří."
+        },
+        {
+          "type": "summary",
+          "text": "Kóta = kótovací čára, pomocné čáry, hraničení a číslo v mm. Značky ⌀, R, □, S⌀ upřesní tvar. Každý rozměr jen jednou, ne k neviditelným hranám, kótovací čáry se nekříží."
+        }
+      ]
+    },
+    {
+      "title": "Řetězec a základna",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na desce máš pět děr za sebou. Můžeš je okótovat jednu za druhou, nebo všechny od jedné hrany. Výsledek vypadá podobně, ale **výrobek nebude stejný**. Každá kóta se vyrábí s malou nepřesností a záleží na tom, jak se nepřesnosti sčítají."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kóta",
+          "definition": "Číselný údaj o rozměru na výkrese v milimetrech.",
+          "example": "50"
+        },
+        {
+          "type": "term",
+          "term": "Základna",
+          "definition": "Plocha, hrana nebo osa, od které se rozměry měří. Bývá to plocha, od které se součást vyrábí nebo ke které dosedá.",
+          "example": "Levá hrana desky."
+        },
+        {
+          "type": "term",
+          "term": "Nepřesnost (úchylka)",
+          "definition": "Žádný rozměr se nevyrobí přesně. Skutečná součást se od kóty vždy trochu liší, třeba o 0,1 mm.",
+          "example": "Kóta 50, vyrobeno 50,08."
+        },
+        {
+          "type": "term",
+          "term": "Funkční kóta",
+          "definition": "Rozměr, na kterém závisí, jestli součást bude fungovat (lícovat, dosednout, otáčet se).",
+          "example": "Vzdálenost děr pro šrouby v přírubě."
+        },
+        {
+          "type": "heading",
+          "text": "Kótovací soustavy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Soustava",
+            "Jak",
+            "Výhoda / nevýhoda"
+          ],
+          "rows": [
+            [
+              "**řetězcové** kótování",
+              "kóty navazují jedna na druhou",
+              "nepřesnosti se **sčítají**; jen tam, kde vadí málo"
+            ],
+            [
+              "kótování **od základny** (rovnoběžné)",
+              "všechny kóty od jedné základny",
+              "nepřesnosti se nesčítají; zabírá víc místa"
+            ],
+            [
+              "**smíšené** kótování",
+              "kombinace obou",
+              "nejčastější v praxi"
+            ],
+            [
+              "**souřadnicové** kótování",
+              "tabulka nebo kóty X, Y od počátku",
+              "vhodné pro CNC a mnoho děr"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Tři díry v řetězci po 20 mm. Každá kóta se vyrobí s nepřesností nejvýš ±0,1 mm. Jak velká může být chyba polohy třetí díry od hrany?",
+          "answer": "Nepřesnosti se sčítají: 3 · 0,1 = **±0,3 mm**. Při kótování od základny (20, 40, 60) by každá díra měla jen ±0,1 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Uzavřený řetězec"
+        },
+        {
+          "type": "text",
+          "text": "Když okótuješ všechny dílčí délky **i** celkovou délku, vznikne **uzavřený řetězec**. Je to chyba: dílčí kóty se sečtou do jiného čísla, než je celková, a výrobce neví, kterou dodržet. Jednu nejméně důležitou kótu proto **vynech**."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel má úseky 30, 50, 40 a celkovou délku 120. Co je špatně?",
+          "answer": "30 + 50 + 40 = 120 – rozměr je určený dvakrát. To je **uzavřený řetězec**. Vynech kótu nejméně důležitého úseku (např. 40); jeho délka vyplyne z ostatních."
+        },
+        {
+          "type": "heading",
+          "text": "Postup kótování"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči **základny** (dosedací plochy, osy).",
+            "Okótuj **funkční** rozměry jako první, přímo od základen.",
+            "Doplň zbylé rozměry tak, aby byl tvar úplně určený.",
+            "Zkontroluj: žádný rozměr dvakrát, žádný uzavřený řetězec, žádná kóta k neviditelné hraně.",
+            "Doplň celkové (obrysové) rozměry, pokud nevzniká uzavřený řetězec."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "správně",
+              "chyba"
+            ],
+            "items": [
+              {
+                "text": "kóta ⌀20 u válcové části",
+                "group": 0
+              },
+              {
+                "text": "kóta ke čárkované hraně",
+                "group": 1
+              },
+              {
+                "text": "osa použitá jako kótovací čára",
+                "group": 1
+              },
+              {
+                "text": "všechny díry od jedné základny",
+                "group": 0
+              },
+              {
+                "text": "dílčí kóty i celková délka v jedné řadě",
+                "group": 1
+              },
+              {
+                "text": "číslo 25 bez jednotky mm",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pro jistotu okótuji všechny díly i celkovou délku, ať výrobce nemusí počítat.",
+          "right": "Jeden rozměr v řetězci **vynech** (uzavřený řetězec je chyba).",
+          "why": "Každá kóta má nepřesnost. Když jsou předepsané všechny, nemohou se splnit všechny současně."
+        },
+        {
+          "type": "summary",
+          "text": "Řetězcové kótování sčítá nepřesnosti, kótování od základny ne. Funkční rozměry kótuj přímo od základny. Uzavřený řetězec je chyba: jednu kótu vynech."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená kóta ⌀30?",
+      "options": [
+        "průměr 30 mm",
+        "poloměr 30 mm",
+        "čtverec 30 mm",
+        "délka 30 cm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená kóta R6?",
+      "options": [
+        "poloměr 6 mm",
+        "průměr 6 mm",
+        "6 řezů",
+        "rádius 6 cm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Jednotka mm se ke kótovacímu číslu nepíše.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Ke čárkované (neviditelné) hraně se běžně kótuje.",
+      "answer": false,
+      "explanation": "K neviditelným hranám se nekótuje."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí kótovací čára?",
+      "options": [
+        "plnou tenkou",
+        "plnou tlustou",
+        "čerchovanou tenkou",
+        "čárkovanou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Při kterém způsobu kótování se nepřesnosti sčítají?",
+      "options": [
+        "řetězcovém",
+        "od základny",
+        "souřadnicovém",
+        "u žádného"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Čtyři kóty v řetězci, každá s nepřesností nejvýš ±0,05 mm. Jaká může být největší chyba na konci řetězce (± v mm)?",
+      "answers": [
+        "0,2",
+        "0.2"
+      ],
+      "explanation": "4 · 0,05 = 0,2 mm.",
+      "hints": [
+        "V řetězci se nepřesnosti sčítají."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hřídel: úseky 25 a 40 mm, celková délka 100 mm. Jak dlouhý je třetí (neokótovaný) úsek v mm?",
+      "answers": [
+        "35"
+      ],
+      "explanation": "100 − 25 − 40 = 35 mm.",
+      "hints": [
+        "Neokótovaný úsek je zbytek do celkové délky."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Uzavřený kótovací řetězec je správný, protože je výkres úplnější.",
+      "answer": false,
+      "explanation": "Rozměr je pak určený dvakrát a nejde splnit všechny kóty současně."
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s významem.",
+      "pairs": [
+        [
+          "⌀",
+          "průměr"
+        ],
+        [
+          "R",
+          "poloměr"
+        ],
+        [
+          "□",
+          "čtverec"
+        ],
+        [
+          "S⌀",
+          "průměr koule"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky kótování.",
+      "items": [
+        "určit základny",
+        "okótovat funkční rozměry",
+        "doplnit zbylé rozměry",
+        "zkontrolovat duplicity a uzavřené řetězce"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapíše sražení hrany 1,5 mm pod 45°?",
+      "options": [
+        "1,5 × 45°",
+        "45 × 1,5",
+        "R1,5",
+        "⌀1,5"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Proč se každý rozměr kótuje jen jednou?",
+      "answer": "Každá kóta se vyrábí s nějakou nepřesností. Kdyby byl rozměr určen dvakrát (nebo uzavřeným řetězcem), mohly by si údaje odporovat a výrobce by nevěděl, který dodržet. Výkres by také byl nepřehledný."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej řetězcové kótování a kótování od základny.",
+      "answer": "Řetězcové: kóty navazují, je úsporné, ale nepřesnosti se sčítají. Od základny: všechny rozměry od jedné plochy, nepřesnosti se nesčítají, zabírá víc místa. V praxi se oba způsoby kombinují; funkční rozměry se kótují od základny."
+    }
+  ]
+}

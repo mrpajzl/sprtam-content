@@ -1,0 +1,426 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "rezy-a-prurezy",
+  "title": "Řezy a průřezy",
+  "emoji": "🔪",
+  "explanations": [
+    {
+      "title": "Rozkrojený chleba",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když chceš vědět, jestli má bábovka uvnitř díru, rozkrojíš ji. Stejně se to dělá na výkrese. Součást s mnoha dírami a dutinami by v obyčejném pohledu byla plná čárkovaných čar a nikdo by se v ní nevyznal."
+        },
+        {
+          "type": "text",
+          "text": "Proto ji **v myšlenkách rozřízneme** a nakreslíme, co je uvnitř. Vnitřní tvary pak vidíme jasně, plnými čarami."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rovina řezu",
+          "definition": "Myšlená rovina, kterou součást rozřízneme. Na výkrese ji ukazuje **stopa**: tenká čerchovaná čára s tlustými konci a se šipkami, které ukazují směr pohledu.",
+          "example": "Stopa A–A přes střed díry."
+        },
+        {
+          "type": "term",
+          "term": "Řez",
+          "definition": "Obraz, který ukáže plochu přeříznutou rovinou řezu **a také všechno, co je za ní** ve směru pohledu.",
+          "example": "Řez trubkou ukáže stěny i vnitřek za rovinou."
+        },
+        {
+          "type": "term",
+          "term": "Průřez",
+          "definition": "Obraz, který ukáže **jen** plochu přímo v rovině řezu, nic za ní.",
+          "example": "Průřez hřídelí v místě drážky pro pero."
+        },
+        {
+          "type": "term",
+          "term": "Šrafování",
+          "definition": "Tenké rovnoběžné čáry (obvykle pod 45°), kterými se vyplní plocha, kde rovina řezu prošla **materiálem**. Dutiny se nešrafují.",
+          "example": "Stěna trubky je šrafovaná, otvor ne."
+        },
+        {
+          "type": "heading",
+          "text": "Jak řez vzniká"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na pohledu vyznač stopu roviny řezu a velkými písmeny ji označ (A–A).",
+            "Šipkami na koncích ukaž, odkud se díváme.",
+            "Představ si, že část před rovinou (u oka) odstraníš.",
+            "Nakresli, co zbylo: plochy v rovině řezu **vyšrafuj**, hrany za ní nakresli plnou tlustou čarou.",
+            "Nad řez napiš jeho označení **A–A**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kostka s průchozí dírou ⌀10. Jak bude vypadat řez vedený osou díry?",
+          "answer": "Uvidíš obdélník kostky. Uprostřed bude **nešrafovaný pruh** široký 10 mm – díra. Zbytek plochy (materiál) bude šrafovaný. Stěny díry nakreslíš plnou tlustou čarou, ne čárkovanou."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla šrafování"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Šrafuje se **tenkou** čarou, obvykle pod **45°**.",
+            "Jedna součást má ve **všech** řezech na výkrese stejné šrafování (sklon i rozteč).",
+            "Sousední součásti se šrafují **opačným sklonem** nebo jinou roztečí.",
+            "Velmi tenké plochy (např. těsnění) smí být vyplněné celé."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co se podélně neřeže"
+        },
+        {
+          "type": "text",
+          "text": "Některé součásti se v podélném řezu **nešrafují**, kreslí se jako pohled: **šrouby, matice, podložky, kolíky, nýty, pera, hřídele, kuličky**, a také **žebra** a ramena kol. Řez by o nich nic nového neřekl."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "šrafuje se",
+              "nešrafuje se"
+            ],
+            "items": [
+              {
+                "text": "stěna odlitku v řezu",
+                "group": 0
+              },
+              {
+                "text": "šroub v podélném řezu",
+                "group": 1
+              },
+              {
+                "text": "matice v podélném řezu",
+                "group": 1
+              },
+              {
+                "text": "náboj kola v řezu",
+                "group": 0
+              },
+              {
+                "text": "dutina uvnitř součásti",
+                "group": 1
+              },
+              {
+                "text": "žebro řezané podélně",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Jaký je rozdíl mezi řezem a průřezem hřídele v místě drážky pro pero?",
+          "answer": "**Průřez** ukáže jen kruh s výřezem drážky (to, co je přesně v rovině). **Řez** by ukázal navíc i osazení a hrany hřídele za rovinou. U hřídelí se proto používá průřez – je jednodušší."
+        },
+        {
+          "type": "mistake",
+          "wrong": "V řezu nakreslím díru čárkovaně, protože je uvnitř.",
+          "right": "V řezu je díra **odkrytá**: její stěny se kreslí **plnou tlustou** čarou.",
+          "why": "Řez právě proto děláme, aby vnitřek byl vidět. Čárkované čáry se v řezu obvykle vynechávají."
+        },
+        {
+          "type": "summary",
+          "text": "Řez ukáže plochu v rovině řezu i to, co je za ní; průřez jen plochu v rovině. Materiál se šrafuje tenkými čarami pod 45°, dutiny ne. Šrouby, matice, kolíky, hřídele a žebra se podélně neřežou."
+        }
+      ]
+    },
+    {
+      "title": "Druhy řezů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ne každá součást potřebuje rozříznout celá. Někdy stačí polovina, někdy jen malé okénko. Konstruktér vybírá druh řezu tak, aby ukázal vnitřek a přitom zachoval co nejvíc vnějšího tvaru."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Řez",
+          "definition": "Obraz součásti rozříznuté myšlenou rovinou; vidíš plochu řezu i tvary za ní.",
+          "example": "Řez A–A."
+        },
+        {
+          "type": "term",
+          "term": "Stopa roviny řezu",
+          "definition": "Tenká čerchovaná čára, na koncích a v místech lomu tlustá, se šipkami směru pohledu a písmeny.",
+          "example": "A ↑ – – · – – ↑ A"
+        },
+        {
+          "type": "term",
+          "term": "Souměrná součást",
+          "definition": "Součást, jejíž jedna polovina je zrcadlovým obrazem druhé podle osy.",
+          "example": "Příruba, víčko, trubka."
+        },
+        {
+          "type": "term",
+          "term": "Průřez",
+          "definition": "Obraz jen té plochy, kterou rovina protne – bez tvarů za ní.",
+          "example": "Průřez profilu ve tvaru L."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled řezů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Druh",
+            "Kdy se použije",
+            "Jak vypadá"
+          ],
+          "rows": [
+            [
+              "**úplný řez**",
+              "nesouměrné součásti, kde je důležitý celý vnitřek",
+              "celá součást rozříznutá"
+            ],
+            [
+              "**poloviční řez** (polořez)",
+              "souměrné součásti",
+              "polovina pohled, polovina řez; dělí je osa"
+            ],
+            [
+              "**částečný (místní) řez**",
+              "malé vnitřní místo, např. slepá díra",
+              "okénko ohraničené tenkou čarou od ruky"
+            ],
+            [
+              "řez **rovnoběžnými rovinami**",
+              "díry neleží v jedné rovině",
+              "stopa je lomená do schodu, řez se kreslí jako jeden"
+            ],
+            [
+              "řez **různoběžnými rovinami**",
+              "díry na roztečné kružnici, ramena",
+              "jedna rovina se do obrazu natočí"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Příruba je souměrná a má uvnitř osazenou díru. Jaký řez zvolíš?",
+          "answer": "**Poloviční řez**: polovina vlevo od osy je pohled (vidíš vnější tvar), polovina vpravo je řez (vidíš osazení díry). V polovině s pohledem se neviditelné hrany nekreslí – vnitřek už ukazuje řez."
+        },
+        {
+          "type": "example",
+          "question": "Na dlouhé desce je jedna slepá závitová díra. Jaký řez?",
+          "answer": "**Částečný (místní) řez** kolem díry. Ohraničíš ho tenkou čarou od ruky a zbytek desky zůstane v pohledu."
+        },
+        {
+          "type": "heading",
+          "text": "Průřezy"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vysunutý průřez**: nakreslený vedle pohledu, obrys plnou **tlustou** čarou, označený (např. B–B).",
+            "**Otočený (vrstvený) průřez**: nakreslený přímo do pohledu, otočený o 90°, obrys **tenkou** čarou.",
+            "Průřez se hodí pro hřídele, žebra, profily a drážky."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Polořez se hodí pro…",
+                "back": "souměrné součásti"
+              },
+              {
+                "front": "Částečný řez se ohraničí…",
+                "back": "tenkou čarou od ruky"
+              },
+              {
+                "front": "Obrys vysunutého průřezu je…",
+                "back": "plná tlustá čára"
+              },
+              {
+                "front": "Obrys otočeného průřezu je…",
+                "back": "plná tenká čára"
+              },
+              {
+                "front": "Šroub v podélném řezu…",
+                "back": "se nešrafuje, kreslí se v pohledu"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Polořez kreslím i u nesouměrné součásti, abych ušetřil čas.",
+          "right": "Polořez se smí použít **jen u souměrných** součástí.",
+          "why": "Druhou polovinu si čtenář domýšlí podle souměrnosti. U nesouměrné součásti by si domyslel špatný tvar."
+        },
+        {
+          "type": "summary",
+          "text": "Úplný řez pro nesouměrné, polořez pro souměrné součásti, částečný řez pro malé místo. Řezy rovnoběžnými nebo různoběžnými rovinami spojí více míst do jednoho obrazu. Průřez je vysunutý (tlustý obrys) nebo otočený (tenký obrys)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím se liší průřez od řezu?",
+      "options": [
+        "průřez ukazuje jen plochu v rovině řezu",
+        "průřez se nešrafuje",
+        "průřez je vždy zvětšený",
+        "průřez ukazuje i tvary za rovinou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou a pod jakým úhlem se obvykle šrafuje?",
+      "options": [
+        "tenkou, 45°",
+        "tlustou, 45°",
+        "tenkou, 90°",
+        "čárkovanou, 30°"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Šroub se v podélném řezu nešrafuje.",
+      "answer": true,
+      "explanation": "Šrouby, matice, kolíky, hřídele a žebra se podélně neřežou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dutina (díra) v řezu se šrafuje.",
+      "answer": false,
+      "explanation": "Šrafuje se jen materiál."
+    },
+    {
+      "type": "choice",
+      "question": "Pro jakou součást se hodí poloviční řez?",
+      "options": [
+        "souměrnou",
+        "nesouměrnou",
+        "plochý plech",
+        "šroub"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kdy si čtenář dokáže druhou polovinu domyslet?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se ohraničí částečný (místní) řez?",
+      "options": [
+        "tenkou čarou od ruky nebo se zigzagem",
+        "tlustou čerchovanou čarou",
+        "čárkovanou čarou",
+        "osou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvě sousední součásti v řezu se šrafují stejným směrem.",
+      "answer": false,
+      "explanation": "Šrafují se opačným sklonem nebo jinou roztečí, aby se rozlišily."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh řezu s použitím.",
+      "pairs": [
+        [
+          "úplný řez",
+          "nesouměrná součást"
+        ],
+        [
+          "polořez",
+          "souměrná součást"
+        ],
+        [
+          "částečný řez",
+          "malé místo, např. slepá díra"
+        ],
+        [
+          "průřez",
+          "drážka pro pero na hřídeli"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí obrys vysunutého průřezu?",
+      "options": [
+        "plnou tlustou",
+        "plnou tenkou",
+        "čárkovanou",
+        "čerchovanou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky kreslení řezu.",
+      "items": [
+        "vyznačit stopu roviny řezu a písmena",
+        "šipkami určit směr pohledu",
+        "v myšlenkách odebrat část před rovinou",
+        "vyšrafovat plochy v rovině řezu a dokreslit hrany za ní",
+        "nad obraz napsat označení A–A"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jedna součást má ve všech řezech na výkrese stejné šrafování.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Které součásti se v podélném řezu šrafují?",
+      "options": [
+        "skříň převodovky",
+        "šroub",
+        "kolík",
+        "hřídel"
+      ],
+      "answer": 0,
+      "explanation": "Šroub, kolík i hřídel se podélně neřežou.",
+      "hints": [
+        "Nešrafují se plné normalizované díly a hřídele."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč se na výkresech používají řezy? Jaký je rozdíl mezi řezem a průřezem?",
+      "answer": "Řez ukáže vnitřní tvary plnými čarami místo nepřehledných čárkovaných. Řez zobrazí plochu v rovině řezu i to, co je za ní; průřez jen samotnou plochu v rovině řezu."
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj součásti, které se v podélném řezu nešrafují, a vysvětli proč.",
+      "answer": "Šrouby, matice, podložky, kolíky, nýty, pera, hřídele, kuličky, žebra a ramena kol. Jsou plné, takže řez by neukázal nic nového a výkres by byl jen méně přehledný."
+    }
+  ]
+}

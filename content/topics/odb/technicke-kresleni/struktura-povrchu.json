@@ -1,0 +1,470 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "struktura-povrchu",
+  "title": "Struktura povrchu",
+  "emoji": "🪨",
+  "explanations": [
+    {
+      "title": "Pod lupou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Přejeď nehtem po hrubě uříznutém kusu oceli a po vyleštěném čepu. Rozdíl ucítíš hned. Pod mikroskopem vypadá každý povrch jako pohoří s kopci a údolími – jen jinak vysokými."
+        },
+        {
+          "type": "text",
+          "text": "Na drsnosti záleží: hrubá plocha se rychleji opotřebí, ložisko na ní hučí, těsnění netěsní. Hladší plocha je ale **dražší**. Výkres proto říká, **jak hladká** má která plocha být."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Struktura (drsnost) povrchu",
+          "definition": "Drobné nerovnosti, které na ploše zanechá výroba – stopy nože, brusiva, formy. Měří se v **mikrometrech**.",
+          "example": "Rýhy po soustružnickém noži."
+        },
+        {
+          "type": "term",
+          "term": "Mikrometr (µm)",
+          "definition": "Tisícina milimetru: 1 µm = 0,001 mm. Lidský vlas má zhruba 50–100 µm.",
+          "example": "Ra 1,6 µm = 0,0016 mm."
+        },
+        {
+          "type": "term",
+          "term": "Profil povrchu",
+          "definition": "Čára, kterou dostaneš, když povrch „rozřízneš“ kolmo a podíváš se na okraj řezu. Má výstupky a prohlubně.",
+          "example": "Záznam z drsnoměru."
+        },
+        {
+          "type": "term",
+          "term": "Ra",
+          "definition": "**Průměrná aritmetická úchylka profilu**: průměr, o kolik se profil v průměru odchyluje od své střední čáry (výstupky i prohlubně se berou kladně). Nejpoužívanější parametr.",
+          "example": "Ra 3,2 – běžně obrobená plocha."
+        },
+        {
+          "type": "term",
+          "term": "Rz",
+          "definition": "**Největší výška profilu**: výška nejvyššího výstupku plus hloubka nejnižší prohlubně na měřené délce.",
+          "example": "Rz 12,5"
+        },
+        {
+          "type": "heading",
+          "text": "Jak se drsnost zapisuje"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Základní značka vypadá jako „√“ s nestejně dlouhými rameny, které svírají 60°. Stojí na ploše nebo na pomocné čáře.",
+            "Značka **s vodorovnou čárkou**, která uzavře trojúhelník, = povrch vzniká **obráběním (s úběrem materiálu)**.",
+            "Značka **s kroužkem** = povrch vzniká **bez úběru materiálu** (odlévání, tváření) nebo se ponechá ve stavu dodání.",
+            "Nad dlouhé rameno značky se napíše parametr a hodnota, např. **Ra 1,6**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Řada hodnot Ra (µm)"
+        },
+        {
+          "type": "text",
+          "text": "0,025 – 0,05 – 0,1 – 0,2 – 0,4 – 0,8 – 1,6 – 3,2 – 6,3 – 12,5 – 25 – 50. Každá další je zhruba dvojnásobek."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Způsob výroby (orientačně)",
+            "Obvyklé Ra v µm"
+          ],
+          "rows": [
+            [
+              "řezání pilou, odlitek do písku",
+              "12,5–50"
+            ],
+            [
+              "soustružení, frézování na hrubo",
+              "6,3–25"
+            ],
+            [
+              "soustružení, frézování na čisto",
+              "0,8–3,2"
+            ],
+            [
+              "broušení",
+              "0,2–1,6"
+            ],
+            [
+              "lapování, leštění",
+              "0,025–0,2"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Plocha má předepsáno Ra 0,4. Stačí ji soustružit?",
+          "answer": "Soustružení na čisto dává obvykle Ra 0,8–3,2. Ra 0,4 je hladší → plochu bude potřeba **brousit**. Proto se nízké Ra předepisuje jen tam, kde je opravdu potřeba (ložiska, těsnění)."
+        },
+        {
+          "type": "example",
+          "question": "Je Ra 6,3 hladší, nebo hrubší než Ra 1,6?",
+          "answer": "Čím **větší** číslo, tím **hrubší** povrch. Ra 6,3 je asi **4× hrubší** než Ra 1,6 (6,3 : 1,6 ≈ 4)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "hladký povrch (malé Ra)",
+              "hrubý povrch (velké Ra)"
+            ],
+            "items": [
+              {
+                "text": "Ra 0,2",
+                "group": 0
+              },
+              {
+                "text": "Ra 0,4",
+                "group": 0
+              },
+              {
+                "text": "Ra 25",
+                "group": 1
+              },
+              {
+                "text": "Ra 12,5",
+                "group": 1
+              },
+              {
+                "text": "Ra 0,1",
+                "group": 0
+              },
+              {
+                "text": "Ra 50",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Napíšu všude Ra 0,4, ať je součást kvalitní.",
+          "right": "Předepiš **tak hrubý povrch, jak to funkce dovolí**. Nízké Ra jen na funkčních plochách.",
+          "why": "Každý krok k hladšímu povrchu znamená další operaci (broušení, lapování) a vyšší cenu."
+        },
+        {
+          "type": "summary",
+          "text": "Drsnost se udává nejčastěji parametrem Ra v µm. Menší Ra = hladší a dražší povrch. Značka s čárkou = obrábění, s kroužkem = bez úběru materiálu."
+        }
+      ]
+    },
+    {
+      "title": "Značka na výkrese",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na výkrese hřídele vidíš u čepu pro ložisko malou značku s číslem 0,8 a v rohu u popisového pole velkou značku s Ra 3,2 a závorkou. Co to říká výrobci? Projdeme to postupně podle norem pro zápis struktury povrchu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Drsnost povrchu",
+          "definition": "Jemné nerovnosti povrchu po výrobě, měřené v mikrometrech (µm, tisícina milimetru).",
+          "example": "Stopy po frézování."
+        },
+        {
+          "type": "term",
+          "term": "Parametr Ra",
+          "definition": "Průměrná aritmetická úchylka profilu – průměrná velikost nerovností kolem střední čáry. Udává se v µm.",
+          "example": "Ra 0,8"
+        },
+        {
+          "type": "term",
+          "term": "Úběr materiálu",
+          "definition": "Odebrání vrstvy materiálu nástrojem: soustružení, frézování, vrtání, broušení.",
+          "example": "Při frézování odletují třísky."
+        },
+        {
+          "type": "term",
+          "term": "Hromadná značka",
+          "definition": "Značka u popisového pole, která platí pro **všechny ostatní plochy**, které nemají vlastní značku.",
+          "example": "Ra 3,2 (√) – zbytek součásti má Ra 3,2."
+        },
+        {
+          "type": "term",
+          "term": "Drsnoměr",
+          "definition": "Přístroj, který hrotem přejede po ploše, zaznamená profil a spočítá Ra a další parametry.",
+          "example": "Ruční dílenský drsnoměr."
+        },
+        {
+          "type": "heading",
+          "text": "Tři základní značky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "základní (√ bez doplňku)",
+              "způsob výroby není předepsán"
+            ],
+            [
+              "√ s čárkou (uzavřený trojúhelník)",
+              "povrch **s úběrem materiálu** (obrábění)"
+            ],
+            [
+              "√ s kroužkem",
+              "povrch **bez úběru materiálu** (odlitý, kovaný, válcovaný)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup zápisu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi funkční plochy: dosedací, kluzné, plochy pro ložiska a těsnění.",
+            "Zvol pro ně Ra podle funkce (ložisko např. Ra 0,8, běžná dosedací plocha Ra 3,2).",
+            "Nakresli značku na obrys plochy nebo na pomocnou čáru, hrotem **zvenku materiálu** k ploše.",
+            "Text na značce musí být čitelný zdola nebo zprava (jako kóty).",
+            "Pro ostatní plochy napiš **hromadnou značku** u popisového pole, např. Ra 6,3, a za ni do závorky základní značku."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "U popisového pole je „Ra 3,2 (√)“. Na čepu je značka Ra 0,8. Jakou drsnost mají ostatní plochy?",
+          "answer": "Ostatní plochy bez vlastní značky mají **Ra 3,2**. Závorka se značkou znamená „kromě ploch, které jsou označené zvlášť“. Čep má **Ra 0,8**."
+        },
+        {
+          "type": "example",
+          "question": "Odlitek má plochy, které se nebudou obrábět. Jak to zapíšeš?",
+          "answer": "Použiješ značku **s kroužkem** (bez úběru materiálu). Výrobce pozná, že má plochu nechat tak, jak vyšla z formy."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Menší hodnota Ra znamená ",
+                "after": " povrch.",
+                "options": [
+                  "hladší",
+                  "hrubší"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Značka s kroužkem znamená povrch ",
+                "after": " materiálu.",
+                "options": [
+                  "s úběrem",
+                  "bez úběru"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Ra se udává v ",
+                "after": ".",
+                "options": [
+                  "mm",
+                  "µm",
+                  "%"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Hromadná značka platí pro ",
+                "after": ".",
+                "options": [
+                  "všechny ostatní plochy",
+                  "jen pro díry"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Normy"
+        },
+        {
+          "type": "text",
+          "text": "Ve školách a na většině starších výkresů se značení řídí normou **ČSN EN ISO 1302**. Nově ji nahrazuje řada **ISO 21920**; základní značky a parametr Ra zůstávají. Na velmi starých výkresech uvidíš ještě trojúhelníčky ▽ podle zrušené ČSN – dnes se nepoužívají."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ra 3,2 znamená, že nerovnosti jsou vysoké nejvýš 3,2 mm.",
+          "right": "Ra je v **mikrometrech**: 3,2 µm = 0,0032 mm. A je to **průměrná** úchylka, ne výška největšího výstupku.",
+          "why": "Ra průměruje celý profil; jednotlivé rýhy mohou být hlubší. Nejvyšší výška profilu je Rz."
+        },
+        {
+          "type": "summary",
+          "text": "Tři značky: základní, s čárkou (obrábění), s kroužkem (bez úběru). Ra v µm se píše nad značku; hromadná značka u popisového pole platí pro ostatní plochy. Nízké Ra jen tam, kde to vyžaduje funkce."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "V jakých jednotkách se udává Ra?",
+      "options": [
+        "µm",
+        "mm",
+        "cm",
+        "%"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ra 0,8 je hladší povrch než Ra 3,2.",
+      "answer": true,
+      "explanation": "Menší číslo = menší nerovnosti."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená značka drsnosti s kroužkem?",
+      "options": [
+        "povrch bez úběru materiálu",
+        "povrch se musí brousit",
+        "povrch se leští",
+        "plocha je kulová"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená značka drsnosti s vodorovnou čárkou (uzavřený trojúhelník)?",
+      "options": [
+        "povrch s úběrem materiálu",
+        "povrch bez úběru materiálu",
+        "povrch se nesmí obrábět",
+        "povrch je natřený"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik mm je 1 µm? Napiš jako desetinné číslo.",
+      "answers": [
+        "0,001",
+        "0.001"
+      ],
+      "hints": [
+        "Mikro znamená miliontinu metru."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou drsnost obvykle dosáhneš broušením?",
+      "options": [
+        "Ra 0,2–1,6",
+        "Ra 12,5–50",
+        "Ra 25–100",
+        "Ra 6,3–25"
+      ],
+      "answer": 0,
+      "explanation": "Hodnoty jsou orientační."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hladší povrch je levnější na výrobu.",
+      "answer": false,
+      "explanation": "Hladší povrch vyžaduje další operace, například broušení."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď hodnoty Ra od nejhladšího po nejhrubší povrch.",
+      "items": [
+        "Ra 0,4",
+        "Ra 1,6",
+        "Ra 6,3",
+        "Ra 25"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj způsob výroby s typickou drsností (orientačně).",
+      "pairs": [
+        [
+          "lapování",
+          "Ra 0,05"
+        ],
+        [
+          "broušení",
+          "Ra 0,4"
+        ],
+        [
+          "soustružení na čisto",
+          "Ra 1,6"
+        ],
+        [
+          "řezání pilou",
+          "Ra 25"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená hromadná značka u popisového pole „Ra 6,3 (√)“?",
+      "options": [
+        "ostatní plochy bez vlastní značky mají Ra 6,3",
+        "všechny plochy včetně označených mají Ra 6,3",
+        "Ra 6,3 platí jen pro díry",
+        "plochy se neobrábějí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje parametr, který udává součet nejvyššího výstupku a nejhlubší prohlubně profilu?",
+      "options": [
+        "Rz",
+        "Ra",
+        "IT",
+        "Rm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát je Ra 3,2 hrubší než Ra 0,8?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "3,2 : 0,8 = 4.",
+      "hints": [
+        "Vyděl větší hodnotu menší."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč se nemá na všechny plochy předepisovat co nejmenší drsnost?",
+      "answer": "Hladší povrch vyžaduje přesnější a další operace (broušení, lapování), takže je dražší a pomalejší. Nízké Ra má smysl jen na funkčních plochách – ložiskových, kluzných, těsnicích. Ostatní plochy stačí hrubší."
+    },
+    {
+      "type": "open",
+      "question": "Popiš tři základní značky struktury povrchu.",
+      "answer": "Základní značka – způsob výroby není předepsán. Se zavřeným trojúhelníkem (čárkou) – povrch vznikne s úběrem materiálu, obráběním. S kroužkem – povrch bez úběru materiálu, např. odlitý nebo tvářený, případně ve stavu dodání. Nad značku se píše parametr, např. Ra 1,6."
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "meritka",
+  "title": "Měřítka",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Mapa a mikroskop",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Turistická mapa 1 : 50 000 ukazuje celé hory na jednom listu. Kdyby se kreslila ve skutečné velikosti, nevešla by se do pokoje. Naopak hodinové kolečko by ve skutečné velikosti bylo malé tak, že by na něm nešlo nic okótovat."
+        },
+        {
+          "type": "text",
+          "text": "Proto se na výkresech kreslí **zmenšeně** nebo **zvětšeně** – v měřítku. Pravidla dává norma **ČSN EN ISO 5455**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Měřítko",
+          "definition": "Poměr délky na výkrese ke skutečné délce součásti. Píše se jako dvě čísla s dvojtečkou, **vlevo výkres, vpravo skutečnost**.",
+          "example": "1 : 2 = 1 mm na výkrese odpovídá 2 mm ve skutečnosti."
+        },
+        {
+          "type": "term",
+          "term": "Měřítko zmenšení",
+          "definition": "Výkres je menší než součást. Vpravo je větší číslo.",
+          "example": "1 : 2, 1 : 5, 1 : 10"
+        },
+        {
+          "type": "term",
+          "term": "Měřítko zvětšení",
+          "definition": "Výkres je větší než součást. Vlevo je větší číslo.",
+          "example": "2 : 1, 5 : 1, 10 : 1"
+        },
+        {
+          "type": "term",
+          "term": "Skutečná velikost",
+          "definition": "Měřítko **1 : 1** – výkres je stejně velký jako součást.",
+          "example": "Podložka kreslená 1 : 1."
+        },
+        {
+          "type": "term",
+          "term": "Kóta",
+          "definition": "Číslo s čarami, které na výkrese udává rozměr součásti v milimetrech.",
+          "example": "Kóta 120 u délky hřídele."
+        },
+        {
+          "type": "heading",
+          "text": "Doporučená měřítka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Druh",
+            "Měřítka podle ČSN EN ISO 5455"
+          ],
+          "rows": [
+            [
+              "zvětšení",
+              "2 : 1, 5 : 1, 10 : 1, 20 : 1, 50 : 1"
+            ],
+            [
+              "skutečná velikost",
+              "1 : 1"
+            ],
+            [
+              "zmenšení",
+              "1 : 2, 1 : 5, 1 : 10, 1 : 20, 1 : 50, 1 : 100, 1 : 200 …"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Řada se opakuje po desítkách: 1, 2, 5, 10, 20, 50, 100… Jiná měřítka (např. 1 : 3) se ve strojírenství nepoužívají."
+        },
+        {
+          "type": "heading",
+          "text": "Nejdůležitější pravidlo"
+        },
+        {
+          "type": "text",
+          "text": "**Kóta je vždy skutečný rozměr.** Hřídel dlouhá 400 mm nakreslená v měřítku 1 : 2 je na papíře dlouhá 200 mm, ale kóta u ní je **400**. Výrobce měří kóty, ne papír."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel je dlouhá 360 mm. Jak dlouhá bude na výkrese v měřítku 1 : 2?",
+          "answer": "Délka na výkrese = skutečná délka × 1/2 = 360 : 2 = **180 mm**. Kóta u ní ale zůstane **360**."
+        },
+        {
+          "type": "example",
+          "question": "Pružinka má průměr 4 mm. Jak velká bude v měřítku 5 : 1?",
+          "answer": "Délka na výkrese = 4 × 5 = **20 mm**. Kóta bude ⌀4."
+        },
+        {
+          "type": "example",
+          "question": "Na výkrese v měřítku 1 : 5 naměříš pravítkem 46 mm. Jak velká je součást?",
+          "answer": "Skutečnost = výkres × 5 = 46 × 5 = **230 mm**. Měřit pravítkem na výkrese ale nemáš; když kóta chybí, je to chyba výkresu."
+        },
+        {
+          "type": "heading",
+          "text": "Kam se měřítko píše"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Hlavní měřítko** je v popisovém poli, např. „1 : 2“.",
+            "Má-li nějaký pohled nebo detail jiné měřítko, píše se k němu, např. „Z (5 : 1)“.",
+            "Úhly se v žádném měřítku nemění: 45° zůstane 45°."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hřídel 400 mm v měřítku 1 : 2 okótuji číslem 200.",
+          "right": "Kóta je **400** – vždy skutečný rozměr.",
+          "why": "Měřítko mění jen velikost obrázku. Výrobce vyrábí podle kót, ne podle délky čáry na papíře."
+        },
+        {
+          "type": "summary",
+          "text": "Měřítko = výkres : skutečnost. Zmenšení 1 : 2, 1 : 5, 1 : 10…, zvětšení 2 : 1, 5 : 1, 10 : 1… Kóty jsou vždy skutečné rozměry a úhly se nemění."
+        }
+      ]
+    },
+    {
+      "title": "Počítání v měřítku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kreslíš skříň rozvaděče vysokou 1,2 m na list A3. Musíš rozhodnout, kolikrát ji zmenšit, a pak spočítat délky čar. Je to jednoduchá trojčlenka, jen ji nesmíš otočit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Měřítko M",
+          "definition": "Poměr **délka na výkrese : skutečná délka**.",
+          "example": "M 1 : 10 → 10 mm skutečnosti je na výkrese 1 mm."
+        },
+        {
+          "type": "term",
+          "term": "Kóta",
+          "definition": "Údaj o skutečném rozměru součásti na výkrese, v milimetrech bez jednotky.",
+          "example": "120"
+        },
+        {
+          "type": "term",
+          "term": "Detail (podrobnost)",
+          "definition": "Zvětšený obrázek malého místa součásti, např. drážky. Označí se velkým písmenem a svým měřítkem.",
+          "example": "Z (5 : 1)"
+        },
+        {
+          "type": "heading",
+          "text": "Dva vzorce"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Napiš si měřítko jako zlomek: 1 : 5 → 1/5, 2 : 1 → 2/1 = 2.",
+            "**Výkres = skutečnost × zlomek.** (Kolik nakreslím.)",
+            "**Skutečnost = výkres : zlomek.** (Kolik je součást ve skutečnosti.)",
+            "Kontrola rozumem: u zmenšení musí výkres vyjít menší, u zvětšení větší."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Skříň vysoká 1 200 mm, měřítko 1 : 5. Délka na výkrese?",
+          "answer": "1 200 × 1/5 = **240 mm**. Výška kreslicí plochy A3 na šířku je asi 277 mm (297 − 2 · 10), takže se vejde, ale bez místa na kóty. Lepší je **1 : 10** → 120 mm."
+        },
+        {
+          "type": "example",
+          "question": "Drážka široká 1,5 mm, detail v měřítku 10 : 1. Jak široká bude na výkrese?",
+          "answer": "1,5 × 10 = **15 mm**. Kóta zůstane 1,5."
+        },
+        {
+          "type": "example",
+          "question": "V měřítku 1 : 2 je kružnice na výkrese ⌀30 mm. Jaký je skutečný průměr?",
+          "answer": "Skutečnost = 30 : (1/2) = 30 × 2 = **60 mm**."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Měřítko 1 : 2 je ",
+                "after": ".",
+                "options": [
+                  "zmenšení",
+                  "zvětšení"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Měřítko 5 : 1 je ",
+                "after": ".",
+                "options": [
+                  "zmenšení",
+                  "zvětšení"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Délka 80 mm v měřítku 1 : 2 je na výkrese ",
+                "after": " mm.",
+                "options": [
+                  "40",
+                  "160",
+                  "80"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "V měřítku 1 : 10 je kóta délky 500 mm číslo ",
+                "after": ".",
+                "options": [
+                  "50",
+                  "500",
+                  "5000"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Pozor na plochu"
+        },
+        {
+          "type": "text",
+          "text": "Měřítko platí pro **délky**. Plocha se změní s druhou mocninou: v měřítku 1 : 2 je obdélník na výkrese **čtyřikrát** menší plochou (1/2 · 1/2 = 1/4)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Měřítko 1 : 5 znamená, že výkres je pětkrát větší.",
+          "right": "1 : 5 je **zmenšení**: výkres je pětkrát **menší** než skutečnost.",
+          "why": "Vlevo je vždy výkres, vpravo skutečnost. Větší číslo vpravo = skutečnost je větší."
+        },
+        {
+          "type": "summary",
+          "text": "Výkres = skutečnost × měřítko, skutečnost = výkres : měřítko. U zmenšení vychází výkres menší, u zvětšení větší. Kóta zapisuje vždy skutečný rozměr."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená měřítko 1 : 2?",
+      "options": [
+        "výkres je dvakrát menší než součást",
+        "výkres je dvakrát větší než součást",
+        "součást je kreslená ve skutečné velikosti",
+        "1 cm na výkrese je 2 m"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Měřítko 5 : 1 je měřítko zvětšení.",
+      "answer": true,
+      "explanation": "Vlevo (výkres) je větší číslo."
+    },
+    {
+      "type": "input",
+      "question": "Hřídel dlouhá 300 mm je v měřítku 1 : 2. Jak dlouhá je čára na výkrese (mm)?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "300 : 2 = 150 mm.",
+      "hints": [
+        "Výkres = skutečnost × měřítko."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Součást o délce 400 mm je kreslená v měřítku 1 : 5. Jaké číslo napíšeš do kóty?",
+      "answers": [
+        "400"
+      ],
+      "explanation": "Kóta je vždy skutečný rozměr.",
+      "hints": [
+        "Mění měřítko čísla v kótách?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Součástka ⌀3 mm je v měřítku 10 : 1. Jak velký průměr má na výkrese (mm)?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "3 × 10 = 30 mm.",
+      "hints": [
+        "U zvětšení vynásob."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na výkrese v měřítku 1 : 10 je délka 45 mm. Kolik mm měří součást?",
+      "answers": [
+        "450"
+      ],
+      "explanation": "45 × 10 = 450 mm.",
+      "hints": [
+        "Skutečnost = výkres : měřítko.",
+        "Dělit 1/10 je totéž jako násobit 10."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Úhel 30° v měřítku 1 : 2 okótuješ jako 15°.",
+      "answer": false,
+      "explanation": "Úhly se měřítkem nemění."
+    },
+    {
+      "type": "choice",
+      "question": "Které měřítko není doporučené podle ČSN EN ISO 5455?",
+      "options": [
+        "1 : 3",
+        "1 : 2",
+        "1 : 5",
+        "1 : 10"
+      ],
+      "answer": 0,
+      "explanation": "Řada je 1, 2, 5, 10, 20, 50…"
+    },
+    {
+      "type": "choice",
+      "question": "Kde je na výkrese uvedeno hlavní měřítko?",
+      "options": [
+        "v popisovém poli",
+        "u každé kóty",
+        "v kusovníku",
+        "na zadní straně listu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď měřítka od největšího zmenšení po největší zvětšení.",
+      "items": [
+        "1 : 10",
+        "1 : 5",
+        "1 : 2",
+        "1 : 1",
+        "2 : 1",
+        "5 : 1"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj měřítko s jeho druhem.",
+      "pairs": [
+        [
+          "1 : 1",
+          "skutečná velikost"
+        ],
+        [
+          "1 : 20",
+          "zmenšení"
+        ],
+        [
+          "20 : 1",
+          "zvětšení"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Obdélník kreslený v měřítku 1 : 2 má na výkrese poloviční plochu.",
+      "answer": false,
+      "explanation": "Plocha je čtvrtinová: obě strany se zmenší na polovinu, 1/2 · 1/2 = 1/4."
+    },
+    {
+      "type": "open",
+      "question": "Proč se do kóty píše skutečný rozměr, a ne délka čáry na papíře?",
+      "answer": "Výrobce vyrábí součást, ne obrázek; potřebuje znát skutečný rozměr. Měřítko jen zmenšuje nebo zvětšuje obrázek, aby se vešel na list nebo byl čitelný. Měření pravítkem na výkrese by bylo nepřesné a papír se navíc může smrštit nebo vytisknout v jiném měřítku."
+    },
+    {
+      "type": "open",
+      "question": "Jak zvolíš měřítko pro velmi malou a pro velmi velkou součást?",
+      "answer": "Malou součást kreslím zvětšeně (2 : 1, 5 : 1, 10 : 1), aby šly přehledně zakreslit a okótovat detaily. Velkou zmenšeně (1 : 2, 1 : 5, 1 : 10…), aby se vešla na zvolený formát i s kótami. Volím jen měřítka z normalizované řady."
+    }
+  ]
+}

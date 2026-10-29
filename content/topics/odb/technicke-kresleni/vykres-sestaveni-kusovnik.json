@@ -1,0 +1,460 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vykres-sestaveni-kusovnik",
+  "title": "Výkres sestavení a kusovník",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Jako stavebnice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ke stavebnici dostaneš obrázek, jak díly do sebe zapadají, a seznam dílů v krabici: „3× hranol, 2× kolečko“. Ve strojírenství je to stejné. Obrázku se říká **výkres sestavení**, seznamu **kusovník**."
+        },
+        {
+          "type": "text",
+          "text": "Podle výkresu sestavení montér skládá stroj a podle kusovníku sklad vydá díly a nákup objedná šrouby."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Součást",
+          "definition": "Jeden díl, který se vyrábí z jednoho kusu materiálu a dál se nerozebírá.",
+          "example": "Hřídel, víko, šroub."
+        },
+        {
+          "type": "term",
+          "term": "Sestava (sestavení)",
+          "definition": "Celek složený z více součástí, které spolu fungují.",
+          "example": "Ložiskové těleso s hřídelí a ložisky."
+        },
+        {
+          "type": "term",
+          "term": "Podsestava",
+          "definition": "Menší sestava, která je částí větší sestavy.",
+          "example": "Ložisková jednotka v převodovce."
+        },
+        {
+          "type": "term",
+          "term": "Výkres sestavení",
+          "definition": "Výkres, který ukazuje, **jak jsou součásti uložené** vůči sobě a jak se smontují. Nekótuje se na něm každý rozměr součástí.",
+          "example": "Výkres svěráku složeného ze 12 dílů."
+        },
+        {
+          "type": "term",
+          "term": "Pozice",
+          "definition": "Číslo, kterým se na výkrese sestavení označí každá součást. Stejné číslo je v kusovníku.",
+          "example": "Pozice 3 = pohyblivá čelist."
+        },
+        {
+          "type": "term",
+          "term": "Kusovník",
+          "definition": "Tabulka všech součástí sestavy: pozice, název, počet kusů, číslo výkresu nebo norma, materiál.",
+          "example": "Řádek „5 | Šroub ISO 4017 – M8 × 25 – 8.8 | 4 ks“."
+        },
+        {
+          "type": "heading",
+          "text": "Co je na výkresu sestavení"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pohledy a řezy, ze kterých je jasné, jak součásti do sebe zapadají.",
+            "**Čísla pozic** u každé součásti.",
+            "Jen důležité kóty: **celkové** (obrysové) rozměry, **montážní** a **připojovací** rozměry a předepsaná **uložení** (např. ⌀40 H7/k6).",
+            "Kusovník (na výkrese nad popisovým polem, nebo na samostatném listu)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Odkazové čáry a pozice"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Od součásti vede **tenká odkazová čára** zakončená **tečkou** uvnitř plochy součásti.",
+            "Na druhém konci je číslo pozice, větší než kóty (obvykle 5 nebo 7 mm).",
+            "Čísla pozic se řadí **do řad nebo sloupců**, odkazové čáry se nekříží.",
+            "Stejná součást se označí jen jednou; počet kusů je v kusovníku."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Svěrák má 4 stejné šrouby. Kolikrát je na výkrese sestavení číslo pozice šroubu a co je v kusovníku?",
+          "answer": "Pozice se napíše **jednou** (u jednoho šroubu). V kusovníku je u ní počet **4 ks**. Montér pozná, že všechny čtyři šrouby jsou stejné."
+        },
+        {
+          "type": "example",
+          "question": "Proč se na výkrese sestavení nekótuje průměr každé díry ve víku?",
+          "answer": "Ty rozměry jsou na **výrobním výkrese** víka. Výkres sestavení slouží k montáži. Kótovat jen celkové, montážní a připojovací rozměry a uložení. Dvojí kótování by se mohlo rozcházet."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "kótuje se na výkresu sestavení",
+              "nekótuje se (patří na výkres součásti)"
+            ],
+            "items": [
+              {
+                "text": "celková délka stroje",
+                "group": 0
+              },
+              {
+                "text": "rozteč připojovacích děr",
+                "group": 0
+              },
+              {
+                "text": "uložení ⌀40 H7/k6",
+                "group": 0
+              },
+              {
+                "text": "drsnost plochy víka",
+                "group": 1
+              },
+              {
+                "text": "poloměr zaoblení hrany páky",
+                "group": 1
+              },
+              {
+                "text": "tolerance šířky drážky v hřídeli",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čísla pozic napíšu náhodně tam, kde je místo, a šrouby očísluji každý zvlášť.",
+          "right": "Pozice se řadí do **řad nebo sloupců** a stejné součásti mají **jedno** číslo s počtem kusů v kusovníku.",
+          "why": "Uspořádané pozice se rychle hledají. Stejný šroub pod více čísly by zmátl sklad i nákup."
+        },
+        {
+          "type": "summary",
+          "text": "Výkres sestavení ukazuje, jak díly do sebe zapadají; každá součást má pozici. Kusovník vypisuje pozice, názvy, počty, čísla výkresů či normy a materiál. Kótují se jen celkové, montážní a připojovací rozměry a uložení."
+        }
+      ]
+    },
+    {
+      "title": "Kusovník řádek po řádku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kusovník je jako recept: seznam surovin s množstvím. Když v něm chybí jedna podložka, stroj se v dílně nesmontuje. Naučíme se ho vyplnit a přečíst."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výkres sestavení",
+          "definition": "Výkres celku, který ukazuje vzájemnou polohu součástí a postup montáže.",
+          "example": "Sestava ložiskového tělesa."
+        },
+        {
+          "type": "term",
+          "term": "Pozice",
+          "definition": "Číslo součásti na výkrese sestavení, shodné s řádkem v kusovníku.",
+          "example": "Pozice 1"
+        },
+        {
+          "type": "term",
+          "term": "Kusovník",
+          "definition": "Seznam všech položek sestavy v tabulce.",
+          "example": "Kusovník převodovky."
+        },
+        {
+          "type": "term",
+          "term": "Normalizovaná součást",
+          "definition": "Díl vyráběný podle normy a nakupovaný hotový. V kusovníku má místo čísla výkresu **normu a označení**.",
+          "example": "Matice ISO 4032 – M10 – 8"
+        },
+        {
+          "type": "term",
+          "term": "Polotovar",
+          "definition": "Materiál, ze kterého se součást vyrábí, v dodávaném tvaru.",
+          "example": "Tyč kruhová ⌀45 × 120."
+        },
+        {
+          "type": "heading",
+          "text": "Sloupce kusovníku"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pozice",
+            "Název",
+            "Ks",
+            "Číslo výkresu / norma",
+            "Materiál, polotovar"
+          ],
+          "rows": [
+            [
+              "1",
+              "Těleso",
+              "1",
+              "TK-01-001",
+              "EN-GJL-250, odlitek"
+            ],
+            [
+              "2",
+              "Hřídel",
+              "1",
+              "TK-01-002",
+              "C45, tyč ⌀45 × 160"
+            ],
+            [
+              "3",
+              "Víko",
+              "2",
+              "TK-01-003",
+              "S235JR, plech t = 8"
+            ],
+            [
+              "4",
+              "Šroub M8 × 25",
+              "8",
+              "ISO 4017 – 8.8",
+              "–"
+            ],
+            [
+              "5",
+              "Ložisko 6206",
+              "2",
+              "ISO 15 (rozměrová řada)",
+              "–"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Materiál se píše značkou podle norem, např. **C45** (ocel k zušlechťování), **S235JR** (konstrukční ocel), **EN-GJL-250** (šedá litina)."
+        },
+        {
+          "type": "heading",
+          "text": "Kam kusovník patří"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Na výkrese sestavení**: přímo **nad popisové pole**. Záhlaví (názvy sloupců) je **dole** a pozice se píšou **zdola nahoru** – kusovník jde prodloužit.",
+            "**Na samostatném listu** (formát A4): záhlaví nahoře, pozice **shora dolů**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup sestavení dokumentace"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nakresli výkres sestavení v pohledech a řezech, aby byla vidět poloha všech dílů.",
+            "Ke každé součásti dej odkazovou čáru s tečkou a číslo pozice. Pozice řaď do řad nebo sloupců.",
+            "Okótuj celkové, montážní a připojovací rozměry a uložení.",
+            "Vyplň kusovník: pozice, název, počet kusů, číslo výkresu nebo norma, materiál a polotovar.",
+            "Pro každou nenormalizovanou součást připrav samostatný výrobní výkres s číslem z kusovníku."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Do kusovníku zapisuješ šest stejných šroubů M10 × 30 třídy 8.8 s celým závitem. Jak bude řádek vypadat?",
+          "answer": "Pozice (např. 7) | Šroub | **6** | **ISO 4017 – M10 × 30 – 8.8** | – . Šroub se kupuje, takže nemá číslo výkresu ani polotovar."
+        },
+        {
+          "type": "example",
+          "question": "Sestava má 5 vyráběných dílů a 3 druhy normalizovaných dílů. Kolik výrobních výkresů součástí potřebuješ?",
+          "answer": "Výrobní výkres má jen **vyráběná** součást → **5**. Normalizované díly se popíšou normou v kusovníku."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Kde je kusovník na výkrese sestavení?",
+                "back": "nad popisovým polem, záhlaví dole"
+              },
+              {
+                "front": "Pořadí pozic na samostatném listu?",
+                "back": "shora dolů"
+              },
+              {
+                "front": "Co má normalizovaný díl místo čísla výkresu?",
+                "back": "normu a označení"
+              },
+              {
+                "front": "Čím končí odkazová čára v ploše součásti?",
+                "back": "tečkou"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kusovník nad popisovým polem vyplním shora dolů se záhlavím nahoře.",
+          "right": "Nad popisovým polem je **záhlaví dole** a pozice jdou **zdola nahoru**.",
+          "why": "Když se přidá součást, připíše se nový řádek nahoru a nic se nemusí překreslovat."
+        },
+        {
+          "type": "summary",
+          "text": "Kusovník: pozice, název, počet kusů, číslo výkresu nebo norma, materiál a polotovar. Na výkrese nad popisovým polem zdola nahoru, na samostatném listu shora dolů. Výrobní výkres mají jen vyráběné součásti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co ukazuje výkres sestavení?",
+      "options": [
+        "vzájemnou polohu a spojení součástí",
+        "všechny rozměry každé součásti",
+        "jen materiál součástí",
+        "postup obrábění"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je kusovník?",
+      "options": [
+        "tabulka součástí sestavy s počty kusů",
+        "seznam nástrojů",
+        "ceník dílů",
+        "pracovní postup"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Na výkresu sestavení se kótují všechny rozměry všech součástí.",
+      "answer": false,
+      "explanation": "Kótují se jen celkové, montážní a připojovací rozměry a uložení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čtyři stejné šrouby mají na výkresu sestavení jedno číslo pozice.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Čím je zakončena odkazová čára uvnitř plochy součásti?",
+      "options": [
+        "tečkou",
+        "šipkou",
+        "kroužkem",
+        "křížkem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kde je kusovník umístěný na výkresu sestavení?",
+      "options": [
+        "nad popisovým polem",
+        "vlevo nahoře",
+        "pod rámečkem",
+        "na zadní straně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se píšou pozice v kusovníku nad popisovým polem?",
+      "options": [
+        "zdola nahoru, záhlaví dole",
+        "shora dolů, záhlaví nahoře",
+        "podle abecedy",
+        "libovolně"
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na to, kam se dá kusovník nad popisovým polem prodloužit."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloupec kusovníku s příkladem.",
+      "pairs": [
+        [
+          "Pozice",
+          "3"
+        ],
+        [
+          "Ks",
+          "4"
+        ],
+        [
+          "Číslo výkresu / norma",
+          "ISO 4032"
+        ],
+        [
+          "Materiál",
+          "C45"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Sestava má 7 vyráběných součástí a 4 druhy nakupovaných normalizovaných dílů. Kolik výrobních výkresů součástí potřebuješ?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "Výrobní výkres mají jen vyráběné součásti.",
+      "hints": [
+        "Které díly se kupují hotové podle normy?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup tvorby dokumentace sestavy.",
+      "items": [
+        "nakreslit výkres sestavení",
+        "přidat odkazové čáry a pozice",
+        "okótovat celkové, montážní a připojovací rozměry",
+        "vyplnit kusovník",
+        "nakreslit výrobní výkresy součástí"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Normalizovaná součást (šroub, matice) má v kusovníku místo čísla výkresu normu a označení.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Který rozměr se na výkresu sestavení kótuje?",
+      "options": [
+        "rozteč připojovacích děr",
+        "poloměr zaoblení páky",
+        "drsnost víka",
+        "šířka sražení na hřídeli"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "K čemu slouží výkres sestavení a kusovník a jak spolu souvisejí?",
+      "answer": "Výkres sestavení ukazuje, jak jsou součásti uložené a jak se smontují; kótují se na něm jen celkové, montážní, připojovací rozměry a uložení. Kusovník vypisuje všechny součásti s počty, čísly výkresů nebo normami a materiálem. Spojuje je číslo pozice – stejné na výkrese i v kusovníku."
+    },
+    {
+      "type": "open",
+      "question": "Jak se zapisují do kusovníku normalizované a vyráběné součásti?",
+      "answer": "Vyráběná součást má název, počet kusů, číslo svého výrobního výkresu, materiál a polotovar. Normalizovaná součást se nekreslí; v kusovníku má normu a úplné označení, např. Šroub ISO 4017 – M8 × 25 – 8.8, a počet kusů."
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pravouhle-promitani",
+  "title": "Pravoúhlé promítání",
+  "emoji": "🧊",
+  "explanations": [
+    {
+      "title": "Krabice kolem součásti",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Fotka součásti ukáže tvar, ale ne přesné rozměry: vzdálené hrany jsou zkrácené a šikmé. Výrobce ale potřebuje vidět každou plochu **ve skutečném tvaru**. Proto se součást kreslí z několika přesně daných směrů – jako bys ji obcházel a díval se kolmo na každou stranu."
+        },
+        {
+          "type": "text",
+          "text": "Takovému kreslení se říká **pravoúhlé promítání**. V Evropě se používá **metoda E** podle ČSN EN ISO 5456-2."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Promítání",
+          "definition": "Převedení prostorového tělesa do roviny papíru. Z každého bodu tělesa vedeme přímku (paprsek) až na rovinu a tam vznikne obraz.",
+          "example": "Stín předmětu na zdi."
+        },
+        {
+          "type": "term",
+          "term": "Průmětna",
+          "definition": "Rovina, na kterou se těleso promítá – myšlená „stěna“, na které vznikne obrázek.",
+          "example": "Zadní stěna krabice."
+        },
+        {
+          "type": "term",
+          "term": "Pravoúhlé promítání",
+          "definition": "Promítací paprsky jsou rovnoběžné a dopadají na průmětnu **kolmo**. Plochy rovnoběžné s průmětnou se ukážou ve **skutečné velikosti**.",
+          "example": "Pohled přesně zepředu na kostku dá čtverec."
+        },
+        {
+          "type": "term",
+          "term": "Pohled",
+          "definition": "Obraz součásti z jednoho směru.",
+          "example": "Pohled zepředu, shora, zleva."
+        },
+        {
+          "type": "term",
+          "term": "Nárys (hlavní pohled)",
+          "definition": "Pohled **zepředu**. Je nejdůležitější a ostatní pohledy se k němu přikládají.",
+          "example": "U auta pohled z boku, pokud ukazuje nejvíc."
+        },
+        {
+          "type": "term",
+          "term": "Půdorys",
+          "definition": "Pohled **shora**.",
+          "example": "Jak součást vidíš, když se na ni díváš ze stropu."
+        },
+        {
+          "type": "term",
+          "term": "Bokorys",
+          "definition": "Pohled **z boku**, nejčastěji **zleva**.",
+          "example": "Profil hřídele s drážkou."
+        },
+        {
+          "type": "term",
+          "term": "Metoda E",
+          "definition": "Evropský způsob rozmístění pohledů: součást je **mezi** okem a průmětnou. Pohled shora se proto kreslí **pod** nárys, pohled zleva **vpravo** od nárysu.",
+          "example": "Většina výkresů v Česku a v Evropě."
+        },
+        {
+          "type": "heading",
+          "text": "Představ si krabici"
+        },
+        {
+          "type": "text",
+          "text": "Vlož součást do krabice. Podívej se zepředu – co vidíš, nakresli na **zadní** stěnu. Podívej se shora – nakresli na **dno**. Zleva – nakresli na **pravou** stěnu. Teď krabici rozlož do roviny. Dno se sklopí **dolů**, pravá stěna **doprava**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pohled",
+            "Umístění u metody E"
+          ],
+          "rows": [
+            [
+              "zepředu (nárys)",
+              "uprostřed"
+            ],
+            [
+              "shora (půdorys)",
+              "**pod** nárysem"
+            ],
+            [
+              "zleva (bokorys)",
+              "**vpravo** od nárysu"
+            ],
+            [
+              "zprava",
+              "vlevo od nárysu"
+            ],
+            [
+              "zdola",
+              "nad nárysem"
+            ],
+            [
+              "zezadu",
+              "vedle pohledu zleva nebo zprava"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co mají pohledy společné"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Nárys a půdorys mají stejnou **délku** (šířku) – jsou pod sebou.",
+            "Nárys a bokorys mají stejnou **výšku** – jsou vedle sebe.",
+            "Půdorys a bokorys mají stejnou **hloubku**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kostka 40 × 30 × 20 mm (délka × hloubka × výška). Jaké rozměry mají obdélníky v nárysu, půdorysu a bokorysu?",
+          "answer": "Nárys (délka × výška) = **40 × 20**. Půdorys (délka × hloubka) = **40 × 30**, leží pod nárysem. Bokorys zleva (hloubka × výška) = **30 × 20**, leží vpravo od nárysu."
+        },
+        {
+          "type": "example",
+          "question": "V nárysu vidíš kružnici, v půdorysu obdélník s čárkovanými čarami. Co je to za tvar?",
+          "answer": "Kružnice zepředu a obdélník shora s čárkovanými (neviditelnými) hranami: je to **díra** procházející součástí ve směru pohledu zepředu. Čárkované čáry v půdorysu jsou její stěny schované v materiálu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Půdorys nakreslím nad nárys, protože se díváme shora.",
+          "right": "U metody E je půdorys **pod** nárysem.",
+          "why": "Součást leží mezi okem a průmětnou; obraz pohledu shora vznikne na dně a dno se sklopí dolů. Nad nárys patří půdorys jen u metody A (americké)."
+        },
+        {
+          "type": "summary",
+          "text": "Pravoúhlé promítání zobrazí plochy ve skutečné velikosti. Metoda E: nárys uprostřed, půdorys pod ním, pohled zleva vpravo. Pohledy na sebe navazují délkou, výškou a hloubkou."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a volba pohledů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jak poznáš, ze kterého směru je pohled nakreslený, když nad ním nic nepíše? Podle jeho **polohy** vůči hlavnímu pohledu a podle **značky metody** v popisovém poli. A kolik pohledů nakreslit? Co nejméně, ale tak, aby tvar byl jednoznačný."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pravoúhlý průmět",
+          "definition": "Obraz tělesa vzniklý kolmými rovnoběžnými paprsky na rovinu. Plochy rovnoběžné s rovinou mají skutečný tvar a velikost.",
+          "example": "Čelo hřídele se promítne jako skutečná kružnice."
+        },
+        {
+          "type": "term",
+          "term": "Hlavní pohled (nárys)",
+          "definition": "Pohled zepředu. Volí se tak, aby ukázal **nejvíc tvaru**, součást byla v **pracovní nebo výrobní poloze** a bylo v něm co nejméně neviditelných hran.",
+          "example": "Hřídel se kreslí vodorovně, jak leží na soustruhu."
+        },
+        {
+          "type": "term",
+          "term": "Metoda E a metoda A",
+          "definition": "Dva systémy rozmístění pohledů. **E** (evropská): pohled shora pod nárys, zleva vpravo. **A** (americká): pohled shora nad nárys, zleva vlevo.",
+          "example": "Výkres z USA bývá v metodě A."
+        },
+        {
+          "type": "term",
+          "term": "Značka metody",
+          "definition": "Malý obrázek komolého kužele ve dvou pohledech v popisovém poli. U metody E je **lichoběžník vlevo a kružnice vpravo** – pohled zleva je vpravo.",
+          "example": "Symbol v kolonce „Promítání“."
+        },
+        {
+          "type": "heading",
+          "text": "Postup kreslení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Prohlédni si součást a zvol **hlavní pohled** (nejvíc tvaru, pracovní poloha).",
+            "Rozhodni, kolik dalších pohledů je **nutných** – rotační součást často stačí jeden pohled s průměry.",
+            "Nakresli osy a hlavní obrysy nárysu.",
+            "Půdorys umísti **pod** nárys a přenášej svislými čarami délky.",
+            "Bokorys zleva umísti **vpravo** a přenášej vodorovnými čarami výšky.",
+            "Hloubku přenes z půdorysu do bokorysu (kružítkem nebo čarou pod 45°).",
+            "Dokresli neviditelné hrany a osy, zkontroluj, že pohledy na sebe navazují."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kolik pohledů"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Jeden pohled**: rotační součásti (hřídel, čep) – průměry se označí ⌀, plochý plech – tloušťka se zapíše „t = 3“.",
+            "**Dva pohledy**: většina jednoduchých hranolových součástí.",
+            "**Tři a více**: členité tvary, kde by dva pohledy nebyly jednoznačné."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč u hřídele stačí jeden pohled?",
+          "answer": "Hřídel je rotační. Značka **⌀** u kóty řekne, že jde o válec. Druhý pohled (kružnice) by nepřinesl nic nového. Méně pohledů = méně práce a menší riziko rozporu."
+        },
+        {
+          "type": "example",
+          "question": "Dva pohledy: nárys je čtverec, půdorys je čtverec. Je tvar jasný?",
+          "answer": "Ne. Může to být krychle, válec ležící na boku, i jiné těleso. Je potřeba **třetí pohled** (bokorys), nebo kóta s ⌀. Proto se pohledy volí, aby tvar byl **jednoznačný**."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "kreslí se vpravo od nárysu",
+              "kreslí se pod nárysem"
+            ],
+            "items": [
+              {
+                "text": "pohled zleva (metoda E)",
+                "group": 0
+              },
+              {
+                "text": "pohled shora (metoda E)",
+                "group": 1
+              },
+              {
+                "text": "bokorys zleva",
+                "group": 0
+              },
+              {
+                "text": "půdorys",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nakreslím všech šest pohledů, aby výkres byl úplný.",
+          "right": "Kresli jen **nezbytné** pohledy – tolik, aby byl tvar jednoznačný.",
+          "why": "Zbytečné pohledy zabírají místo a zvyšují riziko, že si budou odporovat."
+        },
+        {
+          "type": "summary",
+          "text": "Hlavní pohled ukazuje nejvíc tvaru v pracovní poloze. Metoda E: půdorys pod nárysem, bokorys zleva vpravo, značka metody v popisovém poli. Kresli jen tolik pohledů, kolik je nutné."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kam se u metody E kreslí pohled shora?",
+      "options": [
+        "pod nárys",
+        "nad nárys",
+        "vlevo od nárysu",
+        "vpravo od nárysu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kam se u metody E kreslí pohled zleva?",
+      "options": [
+        "vpravo od nárysu",
+        "vlevo od nárysu",
+        "nad nárys",
+        "pod nárys"
+      ],
+      "answer": 0,
+      "explanation": "Rozložená krabice: pravá stěna se sklopí doprava.",
+      "hints": [
+        "Představ si, kam dopadne obraz, když se díváš zleva a součást je mezi tebou a stěnou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nárys a půdorys mají stejnou délku.",
+      "answer": true,
+      "explanation": "Jsou pod sebou a délky se přenášejí svislými čarami."
+    },
+    {
+      "type": "truefalse",
+      "question": "U metody E leží součást mezi pozorovatelem a průmětnou.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jinak říká hlavnímu pohledu?",
+      "options": [
+        "nárys",
+        "půdorys",
+        "bokorys",
+        "průřez"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Podle čeho volíš hlavní pohled?",
+      "options": [
+        "ukazuje nejvíc tvaru, v pracovní poloze",
+        "je to vždy pohled shora",
+        "musí mít nejvíc neviditelných hran",
+        "je to strana s nejmenší plochou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pohled s jeho názvem.",
+      "pairs": [
+        [
+          "zepředu",
+          "nárys"
+        ],
+        [
+          "shora",
+          "půdorys"
+        ],
+        [
+          "z boku",
+          "bokorys"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kvádr má délku 60, hloubku 25 a výšku 40 mm. Jakou výšku (v mm) má obdélník v bokorysu?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "Nárys a bokorys mají stejnou výšku.",
+      "hints": [
+        "Která dvojice pohledů má společnou výšku?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kvádr 60 × 25 × 40 mm (délka × hloubka × výška). Jak široký (v mm) je obdélník v bokorysu?",
+      "answers": [
+        "25"
+      ],
+      "explanation": "V bokorysu vidíš hloubku × výšku.",
+      "hints": [
+        "V pohledu z boku nevidíš délku součásti."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rotační součást (hřídel) musí mít vždy aspoň tři pohledy.",
+      "answer": false,
+      "explanation": "Obvykle stačí jeden pohled a průměry označené ⌀."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky kreslení pohledů.",
+      "items": [
+        "zvolit hlavní pohled",
+        "nakreslit osy a obrysy nárysu",
+        "umístit a nakreslit půdorys pod nárys",
+        "nakreslit bokorys vpravo od nárysu",
+        "dokreslit neviditelné hrany a zkontrolovat"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou metodou promítání se kreslí většina výkresů v Česku?",
+      "options": [
+        "metoda E",
+        "metoda A",
+        "axonometrie",
+        "perspektiva"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak jsou u metody E rozmístěné pohledy, a proč.",
+      "answer": "Nárys je uprostřed, půdorys pod ním, pohled zleva vpravo, zprava vlevo, zdola nad nárysem. Součást je mezi okem a průmětnou, takže obraz dopadne na protější stěnu myšlené krabice; po rozložení krabice se stěny sklopí na tato místa."
+    },
+    {
+      "type": "open",
+      "question": "Jak zvolíš hlavní pohled a počet pohledů?",
+      "answer": "Hlavní pohled ukazuje nejvíc charakteristického tvaru, součást je v pracovní nebo výrobní poloze a má co nejméně neviditelných hran. Dalších pohledů kreslím jen tolik, aby byl tvar jednoznačný; rotační součásti často stačí jeden pohled."
+    }
+  ]
+}

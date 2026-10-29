@@ -1,0 +1,503 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cary-a-technicke-pismo",
+  "title": "Druhy čar a technické písmo",
+  "emoji": "✏️",
+  "explanations": [
+    {
+      "title": "Čára má význam",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na mapě poznáš silnici, řeku i hranici státu podle toho, jak je čára nakreslená. Ve výkresu je to stejné: **každý druh čáry něco znamená**. Plná tlustá čára je hrana, kterou vidíš. Čerchovaná je osa díry."
+        },
+        {
+          "type": "text",
+          "text": "Kdo čáry nezná, čte výkres špatně. Vyrobí díru tam, kde je jen osa, nebo přehlédne skrytou drážku. Pravidla stanoví norma **ČSN EN ISO 128-2**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obrys a hrana",
+          "definition": "**Hrana** je místo, kde se stýkají dvě plochy tělesa. **Obrys** je okraj tělesa, jak ho vidíš z daného směru.",
+          "example": "Hrana krychle, obrys válce."
+        },
+        {
+          "type": "term",
+          "term": "Viditelná a neviditelná hrana",
+          "definition": "**Viditelnou** hranu vidíš z daného směru pohledu. **Neviditelná** (skrytá) hrana je za materiálem, např. dno díry uvnitř kostky.",
+          "example": "Vnitřní závit v díře je zvenku neviditelný."
+        },
+        {
+          "type": "term",
+          "term": "Osa",
+          "definition": "Myšlená přímka, kolem které je těleso souměrné nebo otočné. Ve skutečnosti na součásti není, ale na výkrese musí být.",
+          "example": "Osa válcového čepu, osa díry."
+        },
+        {
+          "type": "term",
+          "term": "Šrafování",
+          "definition": "Řada tenkých rovnoběžných čar (obvykle pod 45°), kterou se vyplní plocha, kde řez prošel materiálem.",
+          "example": "Plocha přeříznuté trubky."
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní druhy čar"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Čára",
+            "Kde se používá"
+          ],
+          "rows": [
+            [
+              "plná **tlustá**",
+              "viditelné hrany a obrysy"
+            ],
+            [
+              "plná **tenká**",
+              "kótovací a pomocné čáry, šrafování, odkazové čáry"
+            ],
+            [
+              "plná tenká **od ruky** (nebo se zigzagem)",
+              "ohraničení přerušeného pohledu nebo částečného řezu"
+            ],
+            [
+              "čárkovaná tenká",
+              "neviditelné hrany a obrysy"
+            ],
+            [
+              "čerchovaná tenká",
+              "osy, roztečné kružnice, osy souměrnosti"
+            ],
+            [
+              "čerchovaná tenká, na koncích a v lomech **tlustá**",
+              "stopa roviny řezu"
+            ],
+            [
+              "čerchovaná tlustá",
+              "plocha se zvláštním požadavkem (např. kalení)"
+            ],
+            [
+              "dvojitě čerchovaná tenká",
+              "sousední součásti, krajní polohy pohyblivých dílů"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co se kreslí tlustou a co tenkou čarou."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "tlustá čára",
+              "tenká čára"
+            ],
+            "items": [
+              {
+                "text": "viditelná hrana",
+                "group": 0
+              },
+              {
+                "text": "obrys tělesa",
+                "group": 0
+              },
+              {
+                "text": "kótovací čára",
+                "group": 1
+              },
+              {
+                "text": "šrafování",
+                "group": 1
+              },
+              {
+                "text": "osa díry",
+                "group": 1
+              },
+              {
+                "text": "neviditelná hrana",
+                "group": 1
+              },
+              {
+                "text": "odkazová čára",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Tloušťky čar"
+        },
+        {
+          "type": "text",
+          "text": "Tlustá čára je **dvakrát** silnější než tenká (poměr 2 : 1). Tloušťky se volí z řady 0,13 – 0,18 – 0,25 – 0,35 – 0,5 – 0,7 – 1 – 1,4 – 2 mm. Na formátech A4 a A3 se nejčastěji kreslí **0,5 mm** tlustá a **0,25 mm** tenká."
+        },
+        {
+          "type": "example",
+          "question": "Tlustou čáru máš 0,7 mm. Jak silná bude tenká?",
+          "answer": "Poměr je 2 : 1, tedy 0,7 : 2 = **0,35 mm**. Obě hodnoty jsou v normalizované řadě."
+        },
+        {
+          "type": "heading",
+          "text": "Technické písmo"
+        },
+        {
+          "type": "text",
+          "text": "Písmo na výkresech řeší **ČSN EN ISO 3098**. Píše se **typem B** (tloušťka tahu = 1/10 výšky písma), svisle nebo šikmo se sklonem 75° k řádku. Výška písma je z řady 1,8 – 2,5 – 3,5 – 5 – 7 – 10 – 14 – 20 mm. Kótovací čísla mají nejčastěji **3,5 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Jakou tloušťku čáry má písmo typu B vysoké 5 mm?",
+          "answer": "U typu B je tloušťka 1/10 výšky: 5 : 10 = **0,5 mm**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Osu díry kreslím čárkovanou čarou, protože ji „nevidím“.",
+          "right": "Osa se kreslí **čerchovanou tenkou** čarou (čárka – tečka – čárka). Čárkovaná je pro **neviditelné hrany**.",
+          "why": "Osa není hrana. Kdo je splete, čte díru jako skrytý výstupek nebo drážku."
+        },
+        {
+          "type": "summary",
+          "text": "Plná tlustá = viditelné hrany, plná tenká = kóty a šrafy, čárkovaná = neviditelné hrany, čerchovaná tenká = osy. Tlustá : tenká = 2 : 1. Písmo podle ČSN EN ISO 3098, kóty obvykle výšky 3,5 mm."
+        }
+      ]
+    },
+    {
+      "title": "Co se překrývá",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Podívej se na jednoduchou kostku s dírou zepředu. Na stejném místě může ležet obrys kostky, skrytá stěna díry i její osa. Nakreslit můžeš jen jednu čáru. Kterou? Na to má norma **pořadí přednosti**."
+        },
+        {
+          "type": "text",
+          "text": "K tomu potřebuješ znát druhy čar a vědět, co každá znamená. To je abeceda technického kreslení."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Druh čáry",
+          "definition": "Vzhled čáry: **plná**, **čárkovaná** (krátké čárky s mezerami), **čerchovaná** (dlouhá čárka – tečka), **dvojitě čerchovaná** (dlouhá čárka – dvě tečky).",
+          "example": "Osa je čerchovaná."
+        },
+        {
+          "type": "term",
+          "term": "Tloušťka čáry",
+          "definition": "Jak silná je čára: **tlustá** nebo **tenká**. Tlustá je dvakrát silnější.",
+          "example": "0,5 mm a 0,25 mm."
+        },
+        {
+          "type": "term",
+          "term": "Neviditelná hrana",
+          "definition": "Hrana schovaná za materiálem. Kreslí se tenkou čárkovanou čarou.",
+          "example": "Dno slepé díry viděné z boku."
+        },
+        {
+          "type": "term",
+          "term": "Rovina řezu",
+          "definition": "Myšlená rovina, kterou součást „rozřízneme“, abychom viděli dovnitř. Na výkrese ji ukazuje její **stopa**.",
+          "example": "Řez A–A vedený středem díry."
+        },
+        {
+          "type": "heading",
+          "text": "Pořadí přednosti"
+        },
+        {
+          "type": "text",
+          "text": "Když se čáry kryjí, kreslí se ta, která je v pořadí výš:"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**viditelné hrany a obrysy** (plná tlustá)",
+            "**neviditelné hrany** (čárkovaná)",
+            "**stopy rovin řezu**",
+            "**osy** a osy souměrnosti (čerchovaná tenká)",
+            "těžišťové čáry",
+            "pomocné kótovací čáry"
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na stejném místě leží obrys kostky a skrytá stěna díry. Co nakreslíš?",
+          "answer": "Obrys je viditelná hrana, ta má **nejvyšší přednost**. Nakreslíš plnou tlustou čáru, čárkovaná se pod ní ztratí."
+        },
+        {
+          "type": "example",
+          "question": "Osa díry vede přes místo, kde je i neviditelná hrana. Co nakreslíš?",
+          "answer": "Neviditelná hrana (2.) má přednost před osou (4.). Nakreslíš **čárkovanou** čáru. Osa ale smí vyčnívat za obrys asi 2–3 mm, takže ji vně tělesa uvidíš."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka čar"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Druh a tloušťka",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "plná tlustá",
+              "viditelné hrany, obrysy, vrcholy závitu šroubu"
+            ],
+            [
+              "plná tenká",
+              "kótovací a pomocné kótovací čáry, odkazové čáry, šrafování, dno závitu šroubu"
+            ],
+            [
+              "čárkovaná tenká",
+              "neviditelné hrany a obrysy"
+            ],
+            [
+              "čerchovaná tenká",
+              "osy, roztečné kružnice"
+            ],
+            [
+              "dvojitě čerchovaná tenká",
+              "sousední díly, krajní polohy"
+            ],
+            [
+              "tenká od ruky",
+              "hranice přerušení a částečného řezu"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Viditelná hrana se kreslí čarou plnou ",
+                "after": ".",
+                "options": [
+                  "tlustou",
+                  "tenkou"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Neviditelná hrana se kreslí čarou ",
+                "after": ".",
+                "options": [
+                  "čárkovanou",
+                  "čerchovanou",
+                  "plnou"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Osa se kreslí čarou ",
+                "after": " tenkou.",
+                "options": [
+                  "čárkovanou",
+                  "čerchovanou",
+                  "plnou tlustou"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Šrafování se kreslí čarou plnou ",
+                "after": ".",
+                "options": [
+                  "tlustou",
+                  "tenkou"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Písmo"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Norma **ČSN EN ISO 3098**, nejčastěji **typ B**: tloušťka tahu = výška / 10.",
+            "Výšky písma: 1,8 – 2,5 – 3,5 – 5 – 7 – 10 – 14 – 20 mm (každá další ≈ √2krát větší).",
+            "Písmo svislé, nebo šikmé se sklonem 75° k řádku.",
+            "Kótovací čísla obvykle 3,5 mm, název v popisovém poli větší, např. 7 mm."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Šrafování nakreslím stejnou tlustou čarou jako obrys, ať je výrazné.",
+          "right": "Šrafování je vždy **tenké**.",
+          "why": "Tlustě šrafovaná plocha přebije obrysy a výkres se stane nečitelným."
+        },
+        {
+          "type": "summary",
+          "text": "Kryjí-li se čáry, má přednost viditelná hrana, pak neviditelná, stopa řezu a osa. Každý druh čáry má svůj význam a tlustá je dvakrát silnější než tenká. Písmo typu B má tah 1/10 výšky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí viditelné hrany?",
+      "options": [
+        "plnou tlustou",
+        "plnou tenkou",
+        "čárkovanou tenkou",
+        "čerchovanou tenkou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí osa díry?",
+      "options": [
+        "čerchovanou tenkou",
+        "čárkovanou tenkou",
+        "plnou tenkou",
+        "dvojitě čerchovanou tenkou"
+      ],
+      "answer": 0,
+      "explanation": "Čerchovaná = dlouhá čárka, tečka, dlouhá čárka."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená tenká čárkovaná čára?",
+      "options": [
+        "neviditelnou hranu",
+        "osu souměrnosti",
+        "kótovací čáru",
+        "sousední součást"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Tlustá čára je dvakrát silnější než tenká.",
+      "answer": true,
+      "explanation": "Poměr tloušťek je 2 : 1, např. 0,5 a 0,25 mm."
+    },
+    {
+      "type": "input",
+      "question": "Tlustá čára má 0,5 mm. Kolik mm má tenká čára?",
+      "answers": [
+        "0,25",
+        "0.25"
+      ],
+      "explanation": "0,5 : 2 = 0,25 mm.",
+      "hints": [
+        "Vzpomeň si na poměr tlustá : tenká."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Písmo typu B má výšku 3,5 mm. Jaká je tloušťka jeho tahu v mm?",
+      "answers": [
+        "0,35",
+        "0.35"
+      ],
+      "explanation": "Typ B: tloušťka = výška / 10.",
+      "hints": [
+        "U typu B je tloušťka tahu zlomkem výšky písma.",
+        "Jmenovatel toho zlomku je 10."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Šrafování se kreslí plnou tlustou čarou.",
+      "answer": false,
+      "explanation": "Šrafuje se tenkou čarou."
+    },
+    {
+      "type": "match",
+      "question": "Spoj čáru s jejím použitím.",
+      "pairs": [
+        [
+          "plná tlustá",
+          "viditelná hrana"
+        ],
+        [
+          "čárkovaná tenká",
+          "neviditelná hrana"
+        ],
+        [
+          "čerchovaná tenká",
+          "osa"
+        ],
+        [
+          "dvojitě čerchovaná tenká",
+          "krajní poloha dílu"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď čáry podle přednosti, když se kryjí (od nejvyšší).",
+      "items": [
+        "viditelná hrana",
+        "neviditelná hrana",
+        "stopa roviny řezu",
+        "osa"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou čarou se ohraničí částečný řez nebo přerušený pohled?",
+      "options": [
+        "tenkou od ruky nebo se zigzagem",
+        "tlustou čerchovanou",
+        "tlustou čárkovanou",
+        "dvojitě čerchovanou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká výška písma se nejčastěji používá pro kótovací čísla?",
+      "options": [
+        "3,5 mm",
+        "1 mm",
+        "10 mm",
+        "6 mm"
+      ],
+      "answer": 0,
+      "explanation": "3,5 mm je z normalizované řady a je dobře čitelná na A4 i A3."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na stejném místě leží osa a viditelná hrana. Nakreslí se osa.",
+      "answer": false,
+      "explanation": "Viditelná hrana má nejvyšší přednost."
+    },
+    {
+      "type": "open",
+      "question": "Proč má každý druh čáry na výkrese svůj význam? Uveď tři příklady.",
+      "answer": "Výkres je řeč bez slov; čára sama říká, co zobrazuje. Plná tlustá je viditelná hrana, čárkovaná neviditelná hrana, čerchovaná tenká osa. Když se druhy zamění, výrobce součást pochopí a vyrobí špatně."
+    },
+    {
+      "type": "open",
+      "question": "Co uděláš, když se na jednom místě kryje více čar?",
+      "answer": "Nakreslím jen tu s nejvyšší předností: viditelná hrana, pak neviditelná hrana, stopa roviny řezu, osa, těžišťová čára a nakonec pomocná kótovací čára."
+    }
+  ]
+}

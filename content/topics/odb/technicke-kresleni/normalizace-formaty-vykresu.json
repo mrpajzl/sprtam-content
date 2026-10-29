@@ -1,0 +1,478 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "normalizace-formaty-vykresu",
+  "title": "Normy, formáty a popisové pole",
+  "emoji": "📄",
+  "explanations": [
+    {
+      "title": "Jako papír do tiskárny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kup si v Česku papír do tiskárny a v Německu šroub M8. Papír se vejde do každé tiskárny, šroub pasuje do každé matice M8. Za tím stojí **normy**: dohody, jak se věci dělají stejně."
+        },
+        {
+          "type": "text",
+          "text": "Výkres je řeč techniků. Konstruktér v Brně ho nakreslí, frézař v Plzni nebo v Polsku podle něj vyrobí součást. Aby si rozuměli, musí výkres vypadat všude stejně: stejný papír, stejný rámeček, stejné kolonky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Norma",
+          "definition": "Dokument, který popisuje jednotný způsob, jak něco dělat, kreslit nebo označovat. V technice se podle ní řídí celý svět, aby si lidé i výrobky rozuměli.",
+          "example": "Norma říká, že list A4 má rozměr 210 × 297 mm."
+        },
+        {
+          "type": "term",
+          "term": "ČSN, EN, ISO",
+          "definition": "Zkratky, kdo normu vydal. **ISO** = mezinárodní norma, **EN** = evropská, **ČSN** = česká. **ČSN EN ISO** je mezinárodní norma převzatá do Evropy i do Česka.",
+          "example": "ČSN EN ISO 5457 – formáty a úprava výkresových listů."
+        },
+        {
+          "type": "term",
+          "term": "Výkres",
+          "definition": "Technický dokument, který obrazem, kótami a textem přesně popisuje tvar, rozměry a vlastnosti součásti nebo celku.",
+          "example": "Výrobní výkres hřídele."
+        },
+        {
+          "type": "term",
+          "term": "Formát",
+          "definition": "Velikost listu papíru (nebo plochy v CADu), na který se výkres kreslí.",
+          "example": "A3 = 297 × 420 mm."
+        },
+        {
+          "type": "term",
+          "term": "Popisové pole",
+          "definition": "Tabulka v **pravém dolním rohu** výkresu. Říká, co je na výkrese, kdo ho nakreslil, jaké má číslo, měřítko a další údaje.",
+          "example": "Tam najdeš „Název: Hřídel, Číslo výkresu: 01-0045“."
+        },
+        {
+          "type": "heading",
+          "text": "Řada A: každý menší je polovina většího"
+        },
+        {
+          "type": "text",
+          "text": "Největší list **A0** má plochu 1 m². Když ho přeložíš napůl kratší stranou, dostaneš **A1**. Půlka A1 je **A2**, a tak dál až po **A4**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Formát",
+            "Rozměr v mm",
+            "Kolik se vejde do A0"
+          ],
+          "rows": [
+            [
+              "A0",
+              "841 × 1189",
+              "1"
+            ],
+            [
+              "A1",
+              "594 × 841",
+              "2"
+            ],
+            [
+              "A2",
+              "420 × 594",
+              "4"
+            ],
+            [
+              "A3",
+              "297 × 420",
+              "8"
+            ],
+            [
+              "A4",
+              "210 × 297",
+              "16"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Poměr stran je u všech stejný, **1 : √2** (asi 1 : 1,41). Proto se list při půlení nedeformuje a výkres se dá zmenšit na menší formát bez ořezu."
+        },
+        {
+          "type": "example",
+          "question": "Jaké rozměry má A3, když znáš A4 = 210 × 297 mm?",
+          "answer": "A3 je dvojnásobek A4. Zdvojnásobí se kratší strana: 2 · 210 = 420 mm. Delší strana A4 se stane kratší stranou A3. Výsledek: **297 × 420 mm**."
+        },
+        {
+          "type": "heading",
+          "text": "Rámeček a popisové pole"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Rámeček** ohraničuje plochu, kam se kreslí. Podle ČSN EN ISO 5457 je okraj vlevo **20 mm** (pro sešití), na ostatních stranách **10 mm**.",
+            "**Popisové pole** je vždy vpravo dole, aby bylo vidět i na složeném výkresu. Jeho šířka je nejvýš 180 mm (ČSN EN ISO 7200).",
+            "Formát A4 se obvykle kreslí **na výšku**, větší formáty **na šířku**."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "V popisovém poli bývá: **název** součásti, **číslo výkresu**, vlastník (firma nebo škola), kdo výkres **vypracoval** a kdo ho **schválil**, **datum**, **měřítko**, značka **promítací metody**, často i **materiál** a hmotnost, číslo listu a počet listů."
+        },
+        {
+          "type": "text",
+          "text": "Zkus si pojmy otočit: vidíš otázku, zkus odpovědět, pak kartičku otoč."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Kde je popisové pole?",
+                "back": "Vpravo dole, uvnitř rámečku."
+              },
+              {
+                "front": "Plocha listu A0?",
+                "back": "1 m²"
+              },
+              {
+                "front": "Rozměr A4?",
+                "back": "210 × 297 mm"
+              },
+              {
+                "front": "Okraj rámečku vlevo?",
+                "back": "20 mm (pro sešití)"
+              },
+              {
+                "front": "Co znamená ISO v ČSN EN ISO?",
+                "back": "Norma je mezinárodní."
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Kreslíš hřídel dlouhou 350 mm ve skutečné velikosti. Stačí A3?",
+          "answer": "Kreslicí plocha A3 na šířku je přibližně 420 − 20 − 10 = **390 mm** dlouhá. Hřídel 350 mm se vejde, ale zbude jen 40 mm na kóty a mezery. Spíš to bude těsné; můžeš zvolit **A2**, nebo kreslit zmenšeně."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Popisové pole nakreslím do levého horního rohu, tam je vidět jako první.",
+          "right": "Popisové pole patří **vpravo dolů**, uvnitř rámečku.",
+          "why": "Výkresy se skládají na formát A4 tak, aby popisové pole zůstalo navrchu. Kdekoli jinde by se schovalo."
+        },
+        {
+          "type": "summary",
+          "text": "Normy (ČSN, EN, ISO) zajišťují, že výkresu rozumí každý. Formáty A0–A4 vznikají půlením, A4 = 210 × 297 mm. Popisové pole je vpravo dole a nese název, číslo výkresu, autora, měřítko a další údaje."
+        }
+      ]
+    },
+    {
+      "title": "Výkres krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dostaneš za úkol nakreslit výrobní výkres. Než uděláš první čáru, musíš vědět, na jaký list, kam a co do kolonek napsat. Tohle téma je takový „návod na prázdný papír“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Technická norma",
+          "definition": "Pravidlo sepsané odborníky, kterým se řídí výroba a kreslení. V Česku je dobrovolná, ale firmy a školy ji dodržují, protože jinak by si nerozuměly. Může ji předepsat smlouva nebo zákon.",
+          "example": "Norma ČSN EN ISO 7200 popisuje popisové pole."
+        },
+        {
+          "type": "term",
+          "term": "Výkresový list",
+          "definition": "Jeden list výkresu s rámečkem a popisovým polem. Velký výkres může mít více listů.",
+          "example": "List 1/2 = první list ze dvou."
+        },
+        {
+          "type": "term",
+          "term": "Formát řady A",
+          "definition": "Normalizované rozměry listů: A0, A1, A2, A3, A4. Každý menší vznikne rozpůlením většího.",
+          "example": "A2 = 420 × 594 mm."
+        },
+        {
+          "type": "term",
+          "term": "Popisové pole",
+          "definition": "Tabulka vpravo dole s údaji o výkresu: co, kdo, kdy, v jakém měřítku a pod jakým číslem.",
+          "example": "Číslo výkresu 23-41-001."
+        },
+        {
+          "type": "term",
+          "term": "Číslo výkresu",
+          "definition": "Jedinečné označení výkresu. Podle něj se výkres hledá v archivu a objednává se podle něj výroba.",
+          "example": "„KR-2026-015“"
+        },
+        {
+          "type": "heading",
+          "text": "Postup přípravy listu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odhadni velikost součásti a zvol **měřítko** a **formát**, aby se vešly všechny pohledy i kóty.",
+            "Nakresli **rámeček**: vlevo 20 mm od okraje listu, jinde 10 mm.",
+            "Do pravého dolního rohu umísti **popisové pole** (šířka nejvýš 180 mm).",
+            "Vyplň popisové pole: název, číslo výkresu, vlastník, vypracoval, schválil, datum, měřítko, promítací metoda, materiál.",
+            "Teprve teď kresli pohledy a kóty."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Rozměry formátů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Formát",
+            "Kratší × delší strana (mm)"
+          ],
+          "rows": [
+            [
+              "A4",
+              "210 × 297"
+            ],
+            [
+              "A3",
+              "297 × 420"
+            ],
+            [
+              "A2",
+              "420 × 594"
+            ],
+            [
+              "A1",
+              "594 × 841"
+            ],
+            [
+              "A0",
+              "841 × 1189"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pravidlo pro zapamatování: **delší strana menšího formátu = kratší strana většího formátu**. 297 je delší strana A4 i kratší strana A3."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "A4 má rozměr 210 × ",
+                "after": " mm.",
+                "options": [
+                  "297",
+                  "420",
+                  "300"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Polovina A2 je ",
+                "after": ".",
+                "options": [
+                  "A1",
+                  "A3",
+                  "A4"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Popisové pole je vpravo ",
+                "after": ".",
+                "options": [
+                  "nahoře",
+                  "dole"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Okraj rámečku na levé straně je ",
+                "after": " mm.",
+                "options": [
+                  "10",
+                  "20",
+                  "5"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Kolik listů A4 získáš rozřezáním jednoho listu A1?",
+          "answer": "A1 → 2 × A2 → 4 × A3 → **8 × A4**. Každý krok počet zdvojnásobí: 2 · 2 · 2 = 8."
+        },
+        {
+          "type": "example",
+          "question": "Co se stane, když na výkrese chybí číslo výkresu?",
+          "answer": "Výkres se nedá jednoznačně najít ani objednat. Na sestavách a v kusovníku se na součásti odkazuje právě číslem výkresu. Proto je to **jeden z nejdůležitějších údajů** v popisovém poli."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Norma platí jen v Česku, v zahraničí se kreslí jinak.",
+          "right": "Normy ISO jsou **mezinárodní**; ČSN EN ISO je stejná norma převzatá do Česka.",
+          "why": "Proto může výkres z Česka vyrábět firma v Německu i v Číně."
+        },
+        {
+          "type": "summary",
+          "text": "Postup: měřítko a formát → rámeček (vlevo 20 mm, jinde 10 mm) → popisové pole vpravo dole → kreslení. Delší strana menšího formátu je kratší strana většího."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký rozměr má formát A4?",
+      "options": [
+        "210 × 297 mm",
+        "297 × 420 mm",
+        "200 × 300 mm",
+        "148 × 210 mm"
+      ],
+      "answer": 0,
+      "explanation": "A4 je polovina A3 (297 × 420 mm)."
+    },
+    {
+      "type": "choice",
+      "question": "Kde je na výkrese popisové pole?",
+      "options": [
+        "vpravo dole",
+        "vlevo dole",
+        "vpravo nahoře",
+        "uprostřed dole"
+      ],
+      "answer": 0,
+      "explanation": "Při složení na A4 zůstane vpravo dole navrchu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Formát A3 vznikne rozpůlením formátu A2.",
+      "answer": true,
+      "explanation": "A2 = 420 × 594 mm, polovina je 297 × 420 mm = A3."
+    },
+    {
+      "type": "input",
+      "question": "Kolik listů A4 má stejnou plochu jako jeden list A0?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "A0 → A1 (2) → A2 (4) → A3 (8) → A4 (16).",
+      "hints": [
+        "Každé půlení zdvojnásobí počet listů.",
+        "Spočítej, kolikrát musíš půlit, než se dostaneš od A0 k A4."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak široký je okraj rámečku na levé straně listu (v mm)?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "Levý okraj je širší kvůli sešití výkresů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Norma ISO je česká národní norma.",
+      "answer": false,
+      "explanation": "ISO je mezinárodní; česká je ČSN."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou plochu má formát A0?",
+      "options": [
+        "1 m²",
+        "0,5 m²",
+        "2 m²",
+        "0,841 m²"
+      ],
+      "answer": 0,
+      "explanation": "841 × 1189 mm ≈ 1 000 000 mm² = 1 m²."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď formáty od největšího po nejmenší.",
+      "items": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj zkratku s tím, kdo normu vydává.",
+      "pairs": [
+        [
+          "ISO",
+          "mezinárodní organizace"
+        ],
+        [
+          "EN",
+          "evropská normalizace"
+        ],
+        [
+          "ČSN",
+          "česká národní norma"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který údaj nepatří do popisového pole?",
+      "options": [
+        "cena součásti v korunách",
+        "číslo výkresu",
+        "měřítko",
+        "kdo výkres vypracoval"
+      ],
+      "answer": 0,
+      "explanation": "Cena se řeší v obchodních dokumentech, ne na výkrese."
+    },
+    {
+      "type": "input",
+      "question": "Formát A3 má rozměr 297 × ? mm. Doplň delší stranu.",
+      "answers": [
+        "420"
+      ],
+      "hints": [
+        "Delší strana A3 je dvojnásobek kratší strany A4.",
+        "Kratší strana A4 je 210 mm."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Poměr stran je u všech formátů řady A stejný.",
+      "answer": true,
+      "explanation": "Je to 1 : √2, proto se výkres dá zmenšit z A3 na A4 bez deformace."
+    },
+    {
+      "type": "open",
+      "question": "Proč se výkresy kreslí podle norem a co je jejich výhoda?",
+      "answer": "Normy zajistí, že výkres vypadá a čte se všude stejně. Výrobce v jiné firmě nebo zemi mu porozumí bez vysvětlování, výkresy jdou archivovat, kopírovat a skládat. Jednotné jsou formáty, čáry, písmo, kótování i popisové pole."
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj alespoň pět údajů v popisovém poli a vysvětli, k čemu je číslo výkresu.",
+      "answer": "Název součásti, číslo výkresu, vlastník, vypracoval, schválil, datum, měřítko, promítací metoda, materiál, číslo listu. Číslo výkresu výkres jednoznačně identifikuje – podle něj se hledá v archivu a odkazuje se na něj v kusovníku i objednávkách."
+    }
+  ]
+}

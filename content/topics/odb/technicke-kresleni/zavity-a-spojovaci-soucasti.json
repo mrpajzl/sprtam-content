@@ -1,0 +1,474 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zavity-a-spojovaci-soucasti",
+  "title": "Závity a spojovací součásti",
+  "emoji": "🔩",
+  "explanations": [
+    {
+      "title": "Šroub a matice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Šroubek drží brýle, kolo auta i ocelový most. Závit je jedna z nejčastějších věcí na výkresech. Kreslit ho poctivě se všemi šroubovicemi by trvalo hodiny, proto se kreslí **zjednodušeně** – pár čarami podle ČSN EN ISO 6410-1."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Závit",
+          "definition": "Šroubovitá drážka a výstupek na válci (vnější závit) nebo v díře (vnitřní závit).",
+          "example": "Závit na šroubu, závit v matici."
+        },
+        {
+          "type": "term",
+          "term": "Velký průměr (d)",
+          "definition": "Průměr přes **vrcholy** vnějšího závitu – měříš ho posuvkou na šroubu. Podle něj se závit jmenuje.",
+          "example": "M10 má velký průměr 10 mm."
+        },
+        {
+          "type": "term",
+          "term": "Malý průměr",
+          "definition": "Průměr přes **dno** (paty) závitu. U šroubu je uvnitř, u díry je to průměr otvoru, do kterého se závit řeže.",
+          "example": "U M10 zhruba 8,4 mm."
+        },
+        {
+          "type": "term",
+          "term": "Stoupání (P)",
+          "definition": "Vzdálenost dvou sousedních vrcholů závitu. U jednochodého závitu je to i posun šroubu za jednu otáčku.",
+          "example": "M10 má stoupání 1,5 mm."
+        },
+        {
+          "type": "term",
+          "term": "Metrický závit",
+          "definition": "Nejběžnější závit s úhlem profilu 60°. Značí se **M** a velkým průměrem.",
+          "example": "M8, M12×1,25"
+        },
+        {
+          "type": "heading",
+          "text": "Zjednodušené kreslení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Vnější závit (šroub)",
+            "Vnitřní závit (díra)"
+          ],
+          "rows": [
+            [
+              "vrcholy závitu",
+              "plná **tlustá** (velký průměr)",
+              "plná **tlustá** (malý průměr díry)"
+            ],
+            [
+              "dno závitu",
+              "plná **tenká** (malý průměr)",
+              "plná **tenká** (velký průměr)"
+            ],
+            [
+              "pohled na čelo",
+              "dno = tenká kružnice ze ¾",
+              "dno = tenká kružnice ze ¾"
+            ],
+            [
+              "konec závitu",
+              "plná tlustá čára napříč",
+              "plná tlustá čára napříč"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pravidlo, které vše vysvětlí: **tlustě se kreslí to, co vidíš a na co sáhneš** (vrcholy), **tence dno** závitu. V řezu se šrafuje až k **tlusté** čáře."
+        },
+        {
+          "type": "heading",
+          "text": "Označení závitů"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**M10** – metrický závit s hrubým (běžným) stoupáním, zde 1,5 mm. Stoupání se u hrubého závitu nepíše.",
+            "**M10×1,25** – metrický **jemný** závit, stoupání se píše.",
+            "**Tr 20×4** – lichoběžníkový závit (pohybové šrouby, např. svěrák).",
+            "**G 1/2** – trubkový válcový závit (vodovodní armatury).",
+            "**LH** za označením = **levý** závit (utahuje se proti směru hodin)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Díra pod závit"
+        },
+        {
+          "type": "text",
+          "text": "Pro metrický závit se vrtá vrtákem přibližně **d − P** (velký průměr minus stoupání). Pak se závit vyřeže závitníkem."
+        },
+        {
+          "type": "example",
+          "question": "Jakým vrtákem předvrtáš díru pro M10?",
+          "answer": "M10 má hrubé stoupání P = 1,5 mm. Vrták ≈ 10 − 1,5 = **8,5 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Jakým vrtákem předvrtáš díru pro M8?",
+          "answer": "M8 má stoupání 1,25 mm. 8 − 1,25 = **6,75**, v praxi se použije vrták **6,8 mm**."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Vrcholy vnějšího závitu se kreslí čarou ",
+                "after": ".",
+                "options": [
+                  "tlustou",
+                  "tenkou"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Dno závitu v díře se kreslí čarou ",
+                "after": ".",
+                "options": [
+                  "tlustou",
+                  "tenkou"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Levý závit se označí ",
+                "after": ".",
+                "options": [
+                  "LH",
+                  "L",
+                  "RH"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "M12×1,5 je závit ",
+                "after": ".",
+                "options": [
+                  "hrubý",
+                  "jemný"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "U závitové díry nakreslím tlustou čarou velký průměr, protože se podle něj závit jmenuje.",
+          "right": "U díry jsou vrcholy na **malém** průměru → ten je **tlustý**. Velký průměr (dno) je **tenký**.",
+          "why": "Tlustě kreslíš vždy vrcholy závitu, tedy to, co v díře „vidíš“. Proto se díra kreslí obráceně než šroub."
+        },
+        {
+          "type": "summary",
+          "text": "Vrcholy závitu tlustě, dno tence, na čele ¾ tenké kružnice. M10 = hrubý metrický, M10×1,25 = jemný, LH = levý. Díra pod metrický závit ≈ d − P."
+        }
+      ]
+    },
+    {
+      "title": "Spoj na výkrese",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na sestavě převodovky drží víko šest šroubů. Konstruktér je nekreslí na samostatném výkrese – kupují se hotové a v kusovníku se napíše jejich **normalizované označení**. Na výkrese se jen správně zakreslí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Závit",
+          "definition": "Šroubovitý výstupek na válcové ploše; vnější na šroubu, vnitřní v díře nebo matici.",
+          "example": "M12"
+        },
+        {
+          "type": "term",
+          "term": "Spojovací součást",
+          "definition": "Normalizovaný díl pro spojení dílů: šroub, matice, podložka, kolík, nýt, pero.",
+          "example": "Šroub se šestihrannou hlavou."
+        },
+        {
+          "type": "term",
+          "term": "Rozebíratelný spoj",
+          "definition": "Spoj, který jde rozebrat a znovu složit bez poškození dílů.",
+          "example": "Šroubový spoj, spoj perem."
+        },
+        {
+          "type": "term",
+          "term": "Pevnostní třída šroubu",
+          "definition": "Dvě čísla oddělená tečkou, např. **8.8**. První × 100 = mez pevnosti v MPa, součin obou × 10 = mez kluzu v MPa.",
+          "example": "8.8: Rm = 800 MPa, Re = 640 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Normalizované označení",
+          "definition": "Zápis, podle kterého se součást objedná: název, norma, rozměr a třída.",
+          "example": "Šroub ISO 4017 – M10 × 40 – 8.8"
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější spojovací součásti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Součást",
+            "Příklad normy",
+            "Příklad označení"
+          ],
+          "rows": [
+            [
+              "šroub se šestihrannou hlavou, závit po celé délce",
+              "ISO 4017",
+              "Šroub ISO 4017 – M10 × 40 – 8.8"
+            ],
+            [
+              "šroub se šestihrannou hlavou, částečný závit",
+              "ISO 4014",
+              "Šroub ISO 4014 – M12 × 80 – 8.8"
+            ],
+            [
+              "šestihranná matice",
+              "ISO 4032",
+              "Matice ISO 4032 – M10 – 8"
+            ],
+            [
+              "plochá podložka",
+              "ISO 7089",
+              "Podložka ISO 7089 – 10 – 200 HV"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U šroubu se uvádí **délka dříku bez hlavy**: M10 × 40 = závit M10, dřík 40 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Kreslení šroubového spoje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nakresli spojované díly v řezu, díry pro šroub o něco větší než šroub (např. ⌀11 pro M10).",
+            "Šroub, matici a podložku nakresli **v pohledu** – v podélném řezu se nešrafují.",
+            "Na šroubu nakresli vrcholy závitu tlustě, dno tence a konec závitu tlustou příčnou čarou.",
+            "Konec šroubu má přečnívat přes matici asi o 1–2 stoupání.",
+            "U závitu v díře (šroub zašroubovaný do tělesa) kresli v místě, kde je šroub zašroubovaný, **závit šroubu** – vnější závit zakrývá vnitřní."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co znamená „Šroub ISO 4017 – M12 × 50 – 8.8“?",
+          "answer": "Šroub se šestihrannou hlavou a závitem po celé délce (ISO 4017), metrický závit **M12** s hrubým stoupáním, dřík **50 mm**, pevnostní třída **8.8**."
+        },
+        {
+          "type": "example",
+          "question": "Jakou mez kluzu má šroub třídy 10.9?",
+          "answer": "Rm = 10 · 100 = 1 000 MPa. Re = 10 · 9 · 10 = **900 MPa**."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "M16",
+                "back": "metrický závit s hrubým stoupáním, ⌀16"
+              },
+              {
+                "front": "M16×1,5",
+                "back": "metrický jemný závit"
+              },
+              {
+                "front": "Tr 24×5",
+                "back": "lichoběžníkový závit"
+              },
+              {
+                "front": "G 3/4",
+                "back": "trubkový válcový závit"
+              },
+              {
+                "front": "8.8",
+                "back": "Rm 800 MPa, Re 640 MPa"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Šroub v sestavě v řezu vyšrafuji jako ostatní díly.",
+          "right": "Šrouby, matice a podložky se v **podélném řezu nešrafují**, kreslí se jako pohled.",
+          "why": "Jsou plné a normalizované. Šrafování by nic neukázalo a jen by zakrylo kreslení závitu."
+        },
+        {
+          "type": "summary",
+          "text": "Spojovací součásti se nekreslí na vlastní výkres, ale označí normou, rozměrem a třídou. Šroub, matice a podložka se v podélném řezu nešrafují. Třída 8.8 = Rm 800 MPa, Re 640 MPa."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí vrcholy závitu na šroubu?",
+      "options": [
+        "plnou tlustou",
+        "plnou tenkou",
+        "čárkovanou",
+        "čerchovanou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí velký průměr vnitřního závitu (v díře)?",
+      "options": [
+        "plnou tenkou",
+        "plnou tlustou",
+        "čerchovanou",
+        "nekreslí se"
+      ],
+      "answer": 0,
+      "explanation": "V díře je velký průměr dno závitu.",
+      "hints": [
+        "Přemýšlej, co je u díry vrchol a co dno."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Označení M10 znamená metrický závit s hrubým stoupáním.",
+      "answer": true,
+      "explanation": "U hrubého stoupání se stoupání nepíše."
+    },
+    {
+      "type": "input",
+      "question": "Jakým vrtákem (v mm) předvrtáš díru pro závit M10 s hrubým stoupáním 1,5 mm?",
+      "answers": [
+        "8,5",
+        "8.5"
+      ],
+      "explanation": "d − P = 10 − 1,5 = 8,5 mm.",
+      "hints": [
+        "Použij pravidlo velký průměr minus stoupání."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakým vrtákem (v mm) předvrtáš díru pro M6 se stoupáním 1 mm?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "6 − 1 = 5 mm."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená LH v označení závitu?",
+      "options": [
+        "levý závit",
+        "lichoběžníkový závit",
+        "dlouhý závit",
+        "jemné stoupání"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj označení s druhem závitu.",
+      "pairs": [
+        [
+          "M8",
+          "metrický hrubý"
+        ],
+        [
+          "M8×1",
+          "metrický jemný"
+        ],
+        [
+          "Tr 20×4",
+          "lichoběžníkový"
+        ],
+        [
+          "G 1/2",
+          "trubkový válcový"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Matice se v podélném řezu šrafuje.",
+      "answer": false,
+      "explanation": "Šrouby, matice a podložky se podélně neřežou."
+    },
+    {
+      "type": "input",
+      "question": "Šroub třídy 8.8: jaká je jeho mez kluzu Re v MPa?",
+      "answers": [
+        "640"
+      ],
+      "explanation": "8 · 8 · 10 = 640 MPa.",
+      "hints": [
+        "Vynásob obě čísla třídy a pak deseti."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co v označení „Šroub ISO 4017 – M10 × 40 – 8.8“ znamená číslo 40?",
+      "options": [
+        "délka dříku v mm",
+        "délka závitu v mm",
+        "stoupání",
+        "pevnost"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se kreslí dno závitu při pohledu na čelo šroubu?",
+      "options": [
+        "tenká kružnice ze ¾",
+        "tlustá celá kružnice",
+        "čárkovaná kružnice",
+        "nekreslí se"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výroby závitové díry M10.",
+      "items": [
+        "vyznačit střed důlčíkem",
+        "navrtat a vrtat vrtákem 8,5 mm",
+        "srazit hranu díry",
+        "vyřezat závit závitníkem"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli pravidlo, kterou čarou se kreslí vrcholy a dno závitu u šroubu a u díry.",
+      "answer": "Vrcholy závitu, které jsou vidět a dají se nahmatat, se kreslí tlustě; dno tence. U šroubu jsou vrcholy na velkém průměru (tlustý) a dno na malém (tenký). U díry je to obráceně: malý průměr díry je tlustý, velký průměr (dno) tenký. Na čele se dno kreslí tenkou kružnicí ze ¾."
+    },
+    {
+      "type": "open",
+      "question": "Co všechno obsahuje normalizované označení šroubu a proč se šrouby nekreslí na vlastní výkresy?",
+      "answer": "Název, číslo normy, závit, délku dříku a pevnostní třídu, např. Šroub ISO 4017 – M10 × 40 – 8.8. Šrouby se nakupují hotové; norma je jednoznačně popisuje, takže stačí označení v kusovníku a vlastní výkres je zbytečný."
+    }
+  ]
+}
