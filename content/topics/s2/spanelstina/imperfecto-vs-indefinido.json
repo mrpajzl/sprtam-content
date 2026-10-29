@@ -1,0 +1,491 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "imperfecto-vs-indefinido",
+  "title": "Imperfecto, nebo indefinido?",
+  "emoji": "⚖️",
+  "explanations": [
+    {
+      "title": "Jako v divadle",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si divadlo. Na jevišti jsou **kulisy**: noc, prší, v pokoji svítí lampa. A pak se odehraje **děj**: někdo zaklepe, hrdina otevře dveře. Španělské vyprávění funguje stejně a na každou část má jiný minulý čas."
+        },
+        {
+          "type": "text",
+          "text": "Kulisy maluje **imperfecto**, děj posouvá **indefinido**. Kdo je umí kombinovat, vypráví jako spisovatel."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Imperfecto",
+          "definition": "Čas pro **kulisy**: popis, okolnosti, zvyky, děj, který probíhal. Koncovky *-aba, -ía*.",
+          "example": "Llovía. – Pršelo."
+        },
+        {
+          "type": "term",
+          "term": "Indefinido",
+          "definition": "Čas pro **události**, které se staly a skončily a posouvají příběh dál. Koncovky *-é, -ó, -í, -ió…*",
+          "example": "Alguien llamó a la puerta. – Někdo zaklepal na dveře."
+        },
+        {
+          "type": "term",
+          "term": "Přerušený děj",
+          "definition": "Probíhající děj (imperfecto), do kterého vstoupí nová událost (indefinido).",
+          "example": "Dormía cuando sonó el teléfono. – Spal jsem, když zazvonil telefon."
+        },
+        {
+          "type": "heading",
+          "text": "Scéna"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Věta",
+            "Čas",
+            "Proč"
+          ],
+          "rows": [
+            [
+              "**Era** de noche y **llovía**.",
+              "imperfecto",
+              "kulisa: čas, počasí"
+            ],
+            [
+              "Ana **leía** en el sofá.",
+              "imperfecto",
+              "co probíhalo"
+            ],
+            [
+              "De repente **sonó** el timbre.",
+              "indefinido",
+              "událost"
+            ],
+            [
+              "Ana **abrió** la puerta.",
+              "indefinido",
+              "další událost"
+            ],
+            [
+              "Allí **estaba** su amigo Pablo. **Tenía** frío.",
+              "imperfecto",
+              "popis situace"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Je to kulisa, nebo událost? Roztřiď."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "kulisa (imperfecto)",
+              "událost (indefinido)"
+            ],
+            "items": [
+              {
+                "text": "Hacía sol.",
+                "group": 0
+              },
+              {
+                "text": "Los niños jugaban.",
+                "group": 0
+              },
+              {
+                "text": "La casa era vieja.",
+                "group": 0
+              },
+              {
+                "text": "Eran las tres.",
+                "group": 0
+              },
+              {
+                "text": "Se rompió la ventana.",
+                "group": 1
+              },
+              {
+                "text": "Llegó la policía.",
+                "group": 1
+              },
+              {
+                "text": "Encontré la llave.",
+                "group": 1
+              },
+              {
+                "text": "Empezó a llover.",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Cuando (yo) ___ (salir) de casa, ___ (hacer) mucho frío.",
+          "answer": "Odchod z domu je událost → *salí*. Zima je kulisa → *hacía*. **Cuando salí de casa, hacía mucho frío.**"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Mis padres ___ (ver) la tele cuando ___ (llegar) mi hermano.",
+          "answer": "Dívání probíhalo → *veían*. Příchod ho přerušil → *llegó*. **Mis padres veían la tele cuando llegó mi hermano.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Estudié cuando sonaba el teléfono.",
+          "right": "Estudiaba cuando sonó el teléfono.",
+          "why": "Probíhající děj (učení) je kulisa → imperfecto. Krátká událost, která ho přerušila (zazvonění) → indefinido."
+        },
+        {
+          "type": "summary",
+          "text": "**Kulisy** (popis, okolnosti, zvyk, probíhající děj) = **imperfecto**. **Děj** (co se stalo a skončilo) = **indefinido**. Typicky: *Leía cuando llegó Juan.*"
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a test",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Oba časy přeložíš do češtiny minulým časem. Rozdíl je v tom, **jak** se na děj díváš: jako na celek, který skončil, nebo jako na něco, co trvalo, opakovalo se nebo tvořilo pozadí."
+        },
+        {
+          "type": "text",
+          "text": "Tady najdeš přehled, postup krok za krokem a slovesa, která v každém čase znamenají něco trochu jiného."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ukončený děj",
+          "definition": "Děj, o kterém víme, že proběhl celý: začal a skončil, často v určeném čase.",
+          "example": "Ayer estudié dos horas. – Včera jsem se dvě hodiny učil."
+        },
+        {
+          "type": "term",
+          "term": "Dokonavé a nedokonavé sloveso",
+          "definition": "V češtině: dokonavé říká, že děj skončil (*napsal*), nedokonavé, že probíhal nebo se opakoval (*psal, psával*). Často to odpovídá indefinido × imperfecto, ale **ne vždy**.",
+          "example": "napsal dopis → escribió; psal dopis → escribía"
+        },
+        {
+          "type": "heading",
+          "text": "Přehled"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Imperfecto",
+            "Indefinido"
+          ],
+          "rows": [
+            [
+              "popis lidí, věcí, počasí: *Era alto.*",
+              "jednotlivé události: *Compré un libro.*"
+            ],
+            [
+              "zvyk, opakování: *Siempre iba en bici.*",
+              "děj s určeným počtem nebo délkou: *Fui tres veces. Viví dos años en Roma.*"
+            ],
+            [
+              "probíhající děj: *Mientras comía…*",
+              "řada událostí za sebou: *Llegué, cené y me acosté.*"
+            ],
+            [
+              "čas a věk: *Eran las dos. Tenía 15 años.*",
+              "začátek nebo konec děje: *Empezó a llover.*"
+            ],
+            [
+              "*antes, siempre, a menudo, mientras*",
+              "*ayer, el lunes, de repente, en 2020*"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je to popis, okolnost, věk nebo čas? → imperfecto.",
+            "Opakovalo se to jako zvyk bez určeného počtu? → imperfecto.",
+            "Probíhalo to, když se stalo něco jiného? → imperfecto.",
+            "Stalo se to jednou, určitý počet krát nebo v určitém čase a skončilo to? → indefinido."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pozor na délku"
+        },
+        {
+          "type": "text",
+          "text": "„Bydlel jsem dva roky v Římě“ zní česky nedokonavě, ale děj má **jasné ohraničení** (dva roky) a skončil. Proto: *Viví dos años en Roma.* Česká nápověda tu nefunguje, rozhoduje ohraničení."
+        },
+        {
+          "type": "heading",
+          "text": "Slovesa, která mění význam"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sloveso",
+            "Imperfecto",
+            "Indefinido"
+          ],
+          "rows": [
+            [
+              "conocer",
+              "*conocía a Ana* – znal jsem Anu",
+              "*conocí a Ana* – seznámil jsem se s Anou"
+            ],
+            [
+              "saber",
+              "*sabía la verdad* – věděl jsem pravdu",
+              "*supe la verdad* – dozvěděl jsem se pravdu"
+            ],
+            [
+              "tener",
+              "*tenía un perro* – měl jsem psa",
+              "*tuve un accidente* – měl jsem (stala se mi) nehodu"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "El año pasado",
+                "after": "a mi mejor amiga en un campamento.",
+                "options": [
+                  "conocí",
+                  "conocía"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Antes",
+                "after": "mucho a la montaña.",
+                "options": [
+                  "íbamos",
+                  "fuimos"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ayer",
+                "after": "tres horas en la biblioteca.",
+                "options": [
+                  "estuve",
+                  "estaba"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "La chica",
+                "after": "el pelo largo.",
+                "options": [
+                  "tenía",
+                  "tuvo"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Když jsem byl malý, jednou jsem spadl ze stromu.",
+          "answer": "*Byl jsem malý* = kulisa → *era*. *Jednou jsem spadl* = jedna událost → *me caí*. **Cuando era pequeño, una vez me caí de un árbol.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: V roce 2019 jsem byl třikrát ve Španělsku.",
+          "answer": "Určený počet (třikrát) a skončený rok → indefinido. **En 2019 estuve tres veces en España.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ayer hacía los deberes y luego salía con mis amigos.",
+          "right": "Ayer hice los deberes y luego salí con mis amigos.",
+          "why": "Řada událostí za sebou, které proběhly celé → indefinido."
+        },
+        {
+          "type": "summary",
+          "text": "Popis, zvyk, probíhající děj → **imperfecto**. Ohraničená, skončená událost (i dlouhá, pokud má určenou délku nebo počet) → **indefinido**. Česká nedokonavost je jen pomůcka."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Leía un libro cuando ___ el teléfono.",
+      "options": [
+        "sonó",
+        "sonaba",
+        "ha sonado"
+      ],
+      "answer": 0,
+      "explanation": "Událost, která přerušila probíhající děj → indefinido."
+    },
+    {
+      "type": "choice",
+      "question": "Cuando era niño, ___ en bici todos los días.",
+      "options": [
+        "montaba",
+        "monté",
+        "monto"
+      ],
+      "answer": 0,
+      "explanation": "Zvyk (*todos los días*) → imperfecto."
+    },
+    {
+      "type": "choice",
+      "question": "Ayer ___ tres horas en la biblioteca.",
+      "options": [
+        "estuve",
+        "estaba",
+        "estoy"
+      ],
+      "answer": 0,
+      "explanation": "Určená délka (tři hodiny) a skončený čas → indefinido."
+    },
+    {
+      "type": "input",
+      "question": "Doplň imperfecto: Cuando salí de casa, ___ (hacer) mucho frío.",
+      "answers": [
+        "hacía",
+        "hacia"
+      ],
+      "explanation": "Počasí je kulisa → imperfecto."
+    },
+    {
+      "type": "input",
+      "question": "Doplň indefinido: Mis padres veían la tele cuando ___ (llegar) mi hermano.",
+      "answers": [
+        "llegó",
+        "llego"
+      ],
+      "explanation": "Příchod je událost, která přerušila dívání → indefinido."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Viví dos años en Roma.“ je správně, protože děj má určenou délku a skončil.",
+      "answer": true,
+      "explanation": "Ohraničený děj je v indefinidu, i když trval dlouho."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Conocí a Ana“ znamená „Znal jsem Anu“.",
+      "answer": false,
+      "explanation": "*Conocí* = seznámil jsem se. *Conocía* = znal jsem."
+    },
+    {
+      "type": "match",
+      "question": "Spoj větu s časem, který v ní je správně.",
+      "pairs": [
+        [
+          "Hacía sol y los niños ___ (jugar).",
+          "jugaban"
+        ],
+        [
+          "De repente ___ (empezar) a llover.",
+          "empezó"
+        ],
+        [
+          "La casa ___ (ser) muy vieja.",
+          "era"
+        ],
+        [
+          "El lunes ___ (ir, yo) al médico.",
+          "fui"
+        ]
+      ],
+      "explanation": "Popis a probíhající děj → imperfecto, události → indefinido."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Supe la verdad ayer“?",
+      "options": [
+        "Včera jsem se dozvěděl pravdu.",
+        "Včera jsem znal pravdu.",
+        "Včera jsem věděl pravdu."
+      ],
+      "answer": 0,
+      "explanation": "*Saber* v indefinidu znamená dozvědět se."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Llegué a casa, cené y me acosté.",
+        "Llegaba a casa, cenaba y me acosté.",
+        "Llegué a casa, cenaba y me acostaba."
+      ],
+      "answer": 0,
+      "explanation": "Řada událostí za sebou → všechny v indefinidu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: Spal jsem, když zazvonil budík.",
+      "items": [
+        "Dormía",
+        "cuando",
+        "sonó",
+        "el",
+        "despertador"
+      ],
+      "explanation": "Probíhající děj (imperfecto) + přerušení (indefinido)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň imperfecto: La chica ___ (tener) el pelo largo y rubio.",
+      "answers": [
+        "tenía",
+        "tenia"
+      ],
+      "explanation": "Popis osoby → imperfecto."
+    },
+    {
+      "type": "choice",
+      "question": "Cuando era pequeño, una vez ___ de un árbol.",
+      "options": [
+        "me caí",
+        "me caía",
+        "me caigo"
+      ],
+      "answer": 0,
+      "explanation": "Kulisa *era pequeño*, ale *jednou* = jedna událost → indefinido."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi imperfektem a indefinidem pomocí přirovnání k divadlu.",
+      "answer": "Imperfecto maluje kulisy: popis, počasí, zvyky a děje, které probíhaly. Indefinido je samotný děj na jevišti: události, které se staly a skončily. Např. *Llovía cuando llegó el tren.*"
+    },
+    {
+      "type": "open",
+      "question": "Vyprávěj krátkou příhodu (3–4 věty), ve které použiješ imperfecto i indefinido.",
+      "answer": "Např.: *Era sábado y hacía sol. Yo paseaba por el parque con mi perro. De repente, el perro vio un gato y corrió detrás de él. Lo encontré media hora después.*"
+    }
+  ]
+}
