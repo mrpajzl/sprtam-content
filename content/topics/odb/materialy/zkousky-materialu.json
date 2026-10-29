@@ -1,0 +1,422 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zkousky-materialu",
+  "title": "Zkoušky materiálů",
+  "emoji": "🧪",
+  "explanations": [
+    {
+      "title": "Zkouška tahem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hutě dodávají ocel s „atestem“ – papírem, kde je napsaná její pevnost, tažnost a tvrdost. Ta čísla nikdo neodhadl. Zjistily se **zkouškami** na zkušebních vzorcích."
+        },
+        {
+          "type": "text",
+          "text": "Zkoušky ověřují, že materiál vydrží to, co konstruktér spočítal. Bez nich by se nedalo věřit žádnému mostu, jeřábu ani šroubu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zkušební vzorek (zkušební tyč)",
+          "definition": "Kus materiálu přesně daného tvaru a rozměrů, který se při zkoušce zatíží až do porušení nebo do daného stavu.",
+          "example": "Válcová tyč o průměru 10 mm s rozšířenými konci pro upnutí."
+        },
+        {
+          "type": "term",
+          "term": "Napětí σ",
+          "definition": "Síla rozložená na plochu průřezu. `σ = F / S`. Když jsou síla v newtonech a plocha v mm², vyjde napětí v **MPa** (1 MPa = 1 N/mm²).",
+          "example": "Síla 1 000 N na průřez 10 mm² → 100 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Trhací stroj",
+          "definition": "Stroj, který vzorek natahuje stále větší silou a zapisuje sílu a prodloužení do grafu (tahový diagram).",
+          "example": "Univerzální zkušební stroj ve zkušebně hutě."
+        },
+        {
+          "type": "heading",
+          "text": "Zkouška tahem"
+        },
+        {
+          "type": "text",
+          "text": "Vzorek se natahuje, dokud se nepřetrhne. Z grafu síla–prodloužení se zjistí hlavní mechanické vlastnosti. Zkoušku popisuje norma ČSN EN ISO 6892-1."
+        },
+        {
+          "type": "term",
+          "term": "Mez kluzu Re",
+          "definition": "Napětí, při kterém se materiál začne trvale (plasticky) protahovat, i když síla skoro neroste. Do této hodnoty se součásti navrhují. U materiálů bez výrazné meze kluzu se určuje smluvní mez **Rp0,2** (trvalé prodloužení 0,2 %).",
+          "example": "Ocel S235 má mez kluzu aspoň 235 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Mez pevnosti Rm",
+          "definition": "Největší napětí, které vzorek vydrží. `Rm = Fm / S₀`, kde Fm je největší síla a S₀ původní průřez.",
+          "example": "Běžná konstrukční ocel má Rm asi 360–510 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Tažnost A",
+          "definition": "O kolik procent se vzorek prodloužil do přetržení. `A = (Lu − L₀) / L₀ · 100 %`. L₀ je původní délka, Lu délka po přetržení (obě poloviny přiložené k sobě).",
+          "example": "Velká tažnost = materiál je tvárný."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Změř průměr vzorku d₀ a vyznač počáteční délku L₀.",
+            "Upni vzorek do čelistí trhacího stroje.",
+            "Stroj plynule zvyšuje sílu, zapisuje diagram.",
+            "Odečti sílu na mezi kluzu Fe a největší sílu Fm.",
+            "Po přetržení přilož poloviny k sobě a změř Lu.",
+            "Spočítej Re, Rm a A."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Vzorek o průměru 10 mm se přetrhl při největší síle 31 400 N. Jaká je mez pevnosti Rm?",
+          "answer": "Průřez S₀ = π · d² / 4 = 3,14 · 100 / 4 = 78,5 mm². Rm = Fm / S₀ = 31 400 / 78,5 = **400 MPa**."
+        },
+        {
+          "type": "example",
+          "question": "Počáteční délka L₀ = 50 mm, po přetržení Lu = 62 mm. Jaká je tažnost?",
+          "answer": "A = (62 − 50) / 50 · 100 % = 12 / 50 · 100 % = **24 %**."
+        },
+        {
+          "type": "heading",
+          "text": "Další zkoušky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Zkoušky tvrdosti** (Brinell, Vickers, Rockwell) – do povrchu se vtlačí tvrdé tělísko a měří se vtisk.",
+            "**Zkouška rázem v ohybu** (Charpy) – kyvadlové kladivo zlomí vzorek s vrubem a měří se spotřebovaná práce. Ukáže **houževnatost** – schopnost snést náraz a nepraskout.",
+            "**Defektoskopie** (zkoušky bez porušení) – ultrazvuk, rentgen, magnetická prášková a kapilární zkouška hledají skryté vady v hotové součásti."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rm = Fm / S, kde S je průřez v místě přetržení.",
+          "right": "Rm = Fm / S₀ – vždy se dělí **původním** průřezem.",
+          "why": "Vzorek se před přetržením zúží (krček). Norma počítá s původním průřezem, aby výsledky šly porovnat."
+        },
+        {
+          "type": "summary",
+          "text": "Zkouška tahem dá mez kluzu Re, mez pevnosti Rm = Fm / S₀ a tažnost A. Tvrdost se měří vtlačováním tělíska, houževnatost rázovou zkouškou Charpy a skryté vady defektoskopií."
+        }
+      ]
+    },
+    {
+      "title": "Zkušebna",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve zkušebně je několik strojů a každý odpovídá na jinou otázku. Kolik materiál unese? Jak je tvrdý? Praskne při nárazu? Má uvnitř trhlinu? Projdeš je jeden po druhém jako v dílně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Destruktivní zkouška",
+          "definition": "Zkouška, při které se vzorek poškodí nebo zničí. Dělá se na vzorcích, ne na hotových dílech.",
+          "example": "Zkouška tahem, rázová zkouška."
+        },
+        {
+          "type": "term",
+          "term": "Nedestruktivní zkouška (defektoskopie)",
+          "definition": "Zkouška, která součást nepoškodí. Hledá vady uvnitř nebo na povrchu.",
+          "example": "Ultrazvuková kontrola svaru."
+        },
+        {
+          "type": "term",
+          "term": "Tvrdost",
+          "definition": "Odolnost materiálu proti vnikání cizího, tvrdšího tělesa. Měří se velikostí nebo hloubkou vtisku.",
+          "example": "Kalený čep má tvrdost kolem 60 HRC."
+        },
+        {
+          "type": "term",
+          "term": "Indentor (vnikací tělísko)",
+          "definition": "Malé velmi tvrdé tělísko, které se vtlačuje do povrchu: kulička ze slinutého karbidu (velmi tvrdý materiál z karbidu wolframu a kobaltu), diamantový jehlan nebo diamantový kužel.",
+          "example": "Při zkoušce Vickers je to diamantový čtyřboký jehlan."
+        },
+        {
+          "type": "heading",
+          "text": "Tři zkoušky tvrdosti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zkouška",
+            "Indentor",
+            "Co se měří",
+            "Značka"
+          ],
+          "rows": [
+            [
+              "Brinell",
+              "kulička ze slinutého karbidu",
+              "průměr vtisku",
+              "HBW"
+            ],
+            [
+              "Vickers",
+              "diamantový jehlan, vrcholový úhel 136°",
+              "úhlopříčky vtisku",
+              "HV"
+            ],
+            [
+              "Rockwell C",
+              "diamantový kužel, vrcholový úhel 120°",
+              "hloubka vtisku",
+              "HRC"
+            ],
+            [
+              "Rockwell B",
+              "kulička",
+              "hloubka vtisku",
+              "HRB"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Brinell** se hodí pro měkčí a nestejnorodé materiály (litina, neželezné kovy) – velký vtisk zprůměruje strukturu. **Vickers** jde použít pro měkké i velmi tvrdé materiály a tenké vrstvy. **Rockwell** je nejrychlejší: tvrdoměr ukáže číslo hned, proto se používá v provozu, třeba na kontrolu kalených dílů."
+        },
+        {
+          "type": "example",
+          "question": "Při zkoušce Vickers silou F = 294,2 N (HV30) vyšla průměrná úhlopříčka vtisku d = 0,5 mm. Jaká je tvrdost? Vzorec: HV = 0,1891 · F / d².",
+          "answer": "d² = 0,5 · 0,5 = 0,25 mm². HV = 0,1891 · 294,2 / 0,25 = 55,6 / 0,25 ≈ **223 HV30**. Čím menší vtisk, tím tvrdší materiál."
+        },
+        {
+          "type": "heading",
+          "text": "Zkouška rázem v ohybu"
+        },
+        {
+          "type": "term",
+          "term": "Charpyho kladivo",
+          "definition": "Kyvadlo s těžkým břitem. Pustí se z dané výšky, zlomí vzorek s vrubem a vykývne na druhou stranu níž. Rozdíl energií je **nárazová práce KV** v joulech.",
+          "example": "Vzorek 10 × 10 × 55 mm s V-vrubem."
+        },
+        {
+          "type": "text",
+          "text": "Velká nárazová práce = houževnatý materiál. Malá = křehký. Za mrazu se mnoho ocelí stává křehčími, proto se zkouška dělá i při −20 °C nebo nižší teplotě. Zkoušku popisuje ČSN EN ISO 148-1."
+        },
+        {
+          "type": "example",
+          "question": "Kladivo mělo před nárazem energii 300 J, po zlomení vzorku mu zůstalo 255 J. Jaká je nárazová práce?",
+          "answer": "KV = 300 − 255 = **45 J**. Tolik energie vzorek pohltil, než se zlomil."
+        },
+        {
+          "type": "heading",
+          "text": "Zkoušky bez porušení"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Ultrazvuk",
+                "back": "Zvukové vlny se odrazí od vnitřní vady – najde trhliny a dutiny uvnitř."
+              },
+              {
+                "front": "Rentgen (prozařování)",
+                "back": "Paprsky projdou součástí, vada je na snímku vidět jako tmavší místo. Kontrola svarů a odlitků."
+              },
+              {
+                "front": "Magnetická prášková",
+                "back": "Jemný železný prášek se nahromadí nad povrchovou trhlinou. Jen pro feromagnetické materiály – ty, které přitahuje magnet (ocel, litina)."
+              },
+              {
+                "front": "Kapilární (penetrační)",
+                "back": "Barevná kapalina vzlíná do povrchových trhlin, vývojka je zviditelní. I pro nemagnetické kovy."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otáčej kartičky a zkus nejdřív sám říct, co která metoda dělá."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím větší číslo HRC, tím měkčí materiál.",
+          "right": "Čím větší číslo tvrdosti (HB, HV i HRC), tím **tvrdší** materiál.",
+          "why": "Tvrdší materiál dá menší a mělčí vtisk. Vzorce jsou postavené tak, aby z malého vtisku vyšlo velké číslo."
+        },
+        {
+          "type": "summary",
+          "text": "Tvrdost se měří Brinellem (kulička, průměr vtisku), Vickersem (diamantový jehlan, úhlopříčky) a Rockwellem (kužel nebo kulička, hloubka). Charpyho kladivo měří nárazovou práci KV. Defektoskopie najde vady bez poškození součásti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je mez pevnosti Rm?",
+      "options": [
+        "největší napětí, které vzorek vydrží",
+        "napětí, při kterém začne trvalá deformace",
+        "prodloužení vzorku v procentech",
+        "tvrdost povrchu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který indentor se používá u zkoušky Vickers?",
+      "options": [
+        "diamantový čtyřboký jehlan",
+        "diamantový kužel 120°",
+        "kulička ze slinutého karbidu",
+        "ocelový břit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která zkouška tvrdosti měří hloubku vtisku?",
+      "options": [
+        "Rockwell",
+        "Brinell",
+        "Vickers",
+        "Charpy"
+      ],
+      "answer": 0,
+      "hints": [
+        "Dvě z metod měří velikost vtisku pod mikroskopem.",
+        "Tvrdoměr této metody ukazuje číslo přímo na stupnici."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tažnost se počítá z původní délky L₀ a délky po přetržení Lu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Magnetickou práškovou zkoušku můžeš použít i na hliník.",
+      "answer": false,
+      "explanation": "Hliník není feromagnetický. Použije se kapilární zkouška."
+    },
+    {
+      "type": "input",
+      "question": "Vzorek o průřezu S₀ = 50 mm² se přetrhl při síle 25 000 N. Rm v MPa =",
+      "answers": [
+        "500"
+      ],
+      "explanation": "Rm = Fm / S₀ = 25 000 / 50 = 500 MPa.",
+      "hints": [
+        "Rm = Fm / S₀.",
+        "N/mm² je totéž co MPa."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "L₀ = 100 mm, Lu = 125 mm. Tažnost A v % =",
+      "answers": [
+        "25"
+      ],
+      "explanation": "A = (125 − 100) / 100 · 100 % = 25 %.",
+      "hints": [
+        "Nejdřív spočítej, o kolik mm se vzorek prodloužil."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kyvadlo mělo 300 J, po zlomení vzorku 210 J. Nárazová práce KV v J =",
+      "answers": [
+        "90"
+      ],
+      "hints": [
+        "Nárazová práce je rozdíl energií před a po."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj zkoušku s tím, co zjišťuje.",
+      "pairs": [
+        [
+          "tah",
+          "Re, Rm, A"
+        ],
+        [
+          "Charpy",
+          "houževnatost"
+        ],
+        [
+          "Brinell",
+          "tvrdost"
+        ],
+        [
+          "ultrazvuk",
+          "vnitřní vady"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu tvrdosti se značkou.",
+      "pairs": [
+        [
+          "Brinell",
+          "HBW"
+        ],
+        [
+          "Vickers",
+          "HV"
+        ],
+        [
+          "Rockwell s kuželem",
+          "HRC"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky zkoušky tahem.",
+      "items": [
+        "změřit d₀ a vyznačit L₀",
+        "upnout vzorek do stroje",
+        "zatěžovat až do přetržení",
+        "změřit Lu",
+        "spočítat Re, Rm a A"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou zkouškou zkontroluješ svar na skryté dutiny, aniž ho poškodíš?",
+      "options": [
+        "rentgenem nebo ultrazvukem",
+        "zkouškou tahem",
+        "Charpyho kladivem",
+        "zkouškou Brinell"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš zkoušku tahem a jaké vlastnosti z ní zjistíš.",
+      "answer": "Zkušební tyč se v trhacím stroji natahuje rostoucí silou až do přetržení a stroj kreslí diagram síla–prodloužení. Zjistí se mez kluzu Re, mez pevnosti Rm = Fm / S₀ a tažnost A z prodloužení vzorku."
+    },
+    {
+      "type": "open",
+      "question": "Proč se rázová zkouška dělá i za nízkých teplot?",
+      "answer": "Mnoho ocelí je za mrazu křehčích. Zkouška při nízké teplotě ověří, že materiál zůstane houževnatý i v zimě, například u mostů, jeřábů nebo potrubí venku."
+    }
+  ]
+}

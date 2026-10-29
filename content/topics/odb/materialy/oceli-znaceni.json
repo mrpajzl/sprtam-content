@@ -1,0 +1,462 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "oceli-znaceni",
+  "title": "Oceli a jejich značení",
+  "emoji": "🏷️",
+  "explanations": [
+    {
+      "title": "Podle normy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na výkrese ozubeného kola stojí materiál **42CrMo4**, na nosníku **S235JR**. Ve skladu musíš podle značky najít správnou tyč. Kdo značku přečte, pozná i to, k čemu se ocel hodí a jak ji zpracovat."
+        },
+        {
+          "type": "text",
+          "text": "Oceli se v Evropě značí podle norem ČSN EN 10027-1 (zkratkou) a ČSN EN 10027-2 (číslem). V dílnách a starších výkresech potkáš i staré české značení ČSN 41 xxxxx."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ocel",
+          "definition": "Slitina železa s uhlíkem, kde uhlíku je nejvýš 2,14 % (prakticky obvykle do 1,5 %). Dá se tvářet, většinou i svařovat a tepelně zpracovat.",
+          "example": "Plech, profil, šroub, hřídel."
+        },
+        {
+          "type": "term",
+          "term": "Legující prvek",
+          "definition": "Prvek, který se do oceli přidává záměrně, aby zlepšil vlastnosti: Cr, Ni, Mo, Mn, Si, V, W…",
+          "example": "Chrom zlepšuje kalitelnost a odolnost proti korozi."
+        },
+        {
+          "type": "term",
+          "term": "Nelegovaná a legovaná ocel",
+          "definition": "**Nelegovaná** (uhlíková) ocel má legující prvky jen pod normou danými mezemi. **Legovaná** je má záměrně ve vyšším obsahu. **Vysokolegovaná** má aspoň jeden legující prvek v obsahu 5 % a víc.",
+          "example": "C45 je nelegovaná, 42CrMo4 nízkolegovaná, X5CrNi18-10 vysokolegovaná."
+        },
+        {
+          "type": "term",
+          "term": "Mez kluzu",
+          "definition": "Napětí, při kterém se ocel začne trvale deformovat. Udává se v MPa.",
+          "example": "S235 má mez kluzu nejméně 235 MPa."
+        },
+        {
+          "type": "heading",
+          "text": "Značení podle použití"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka",
+            "Význam",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "S…",
+              "oceli pro ocelové konstrukce, číslo = min. mez kluzu v MPa",
+              "S235JR, S355J2"
+            ],
+            [
+              "E…",
+              "strojní oceli, číslo = min. mez kluzu v MPa",
+              "E295, E335"
+            ],
+            [
+              "P…",
+              "oceli pro tlakové nádoby",
+              "P265GH"
+            ],
+            [
+              "B…",
+              "betonářské oceli",
+              "B500B"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Písmena za číslem jsou doplňkové údaje. **JR** znamená zaručenou nárazovou práci (energii, kterou vzorek pohltí, než ho kladivo zlomí) 27 J při +20 °C, **J2** totéž při −20 °C."
+        },
+        {
+          "type": "heading",
+          "text": "Značení podle chemického složení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**C** + číslo: nelegovaná ocel. Číslo / 100 = obsah uhlíku v %. C45 → 0,45 % C.",
+            "Jen číslo + značky prvků + čísla: nízkolegovaná ocel. Číslo na začátku / 100 = % C. Čísla na konci se dělí **faktorem** a patří k prvkům v pořadí.",
+            "Faktor 4: Cr, Co, Mn, Ni, Si, W. Faktor 10: Al, Be, Cu, Mo, Nb, Pb, Ta, Ti, V, Zr. Faktor 100: Ce, N, P, S. Faktor 1 000: B.",
+            "**X** na začátku: vysokolegovaná ocel. Číslo / 100 = % C, čísla na konci jsou přímo procenta prvků.",
+            "**HS** na začátku: rychlořezná ocel. Čísla jsou procenta W-Mo-V-Co v tomto pořadí."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co znamená 42CrMo4?",
+          "answer": "42 / 100 = **0,42 % C**. Prvky Cr a Mo. Číslo 4 patří k prvnímu prvku, chromu: 4 / 4 = asi **1 % Cr**. Molybden je přítomen v malém množství (bez čísla). Nízkolegovaná ocel k zušlechťování (kalení a popuštění na vysokou teplotu) – hřídele, ozubená kola."
+        },
+        {
+          "type": "example",
+          "question": "Co znamená X5CrNi18-10?",
+          "answer": "X → vysokolegovaná, čísla jsou přímo procenta. 5 / 100 = **0,05 % C**, **18 % Cr**, **10 % Ni**. Je to známá korozivzdorná („nerezová“) ocel, číselně 1.4301."
+        },
+        {
+          "type": "heading",
+          "text": "Číselné značení"
+        },
+        {
+          "type": "text",
+          "text": "Podle ČSN EN 10027-2 má ocel číslo tvaru **1.xxxx**. Jednička na začátku = ocel. Další dvojčíslí je skupina oceli, poslední dvojčíslí pořadí. Příklady: C45 = 1.0503, 42CrMo4 = 1.7225, X5CrNi18-10 = 1.4301."
+        },
+        {
+          "type": "text",
+          "text": "Staré české značení **ČSN 41 xxxxx** používá pětimístné číslo. První dvojčíslí říká třídu: 10 a 11 konstrukční oceli obvyklé jakosti, 12 ušlechtilé uhlíkové, 13–16 nízkolegované (podle hlavních prvků), 17 vysokolegované (korozivzdorné aj.), 19 nástrojové. Například **12 050** odpovídá zhruba C45, **15 142** oceli 42CrMo4 a **17 240** oceli X5CrNi18-10. Norma byla nahrazena evropskou, ale v praxi se pořád objevuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "V 42CrMo4 je 4 % chromu.",
+          "right": "V 42CrMo4 je asi **1 % chromu** (4 / 4).",
+          "why": "U nízkolegovaných ocelí se číslo dělí faktorem. Pro chrom je faktor 4. Přímo v procentech se čte jen u ocelí se značkou X."
+        },
+        {
+          "type": "summary",
+          "text": "S a E + číslo = konstrukční a strojní oceli podle meze kluzu. C + číslo = nelegovaná ocel (číslo/100 = % C). Nízkolegované: čísla se dělí faktory 4, 10, 100, 1 000. X = vysokolegovaná, čísla přímo v %. Číselně 1.xxxx, staře ČSN 41 xxxxx."
+        }
+      ]
+    },
+    {
+      "title": "Luštíme kód",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve skladu leží tyče se štítky C45, 16MnCr5, X5CrNi18-10 a HS6-5-2-5. Mistr chce materiál na hřídel, na cementované ozubené kolo, na nerezové zábradlí a na soustružnický nůž. Který štítek patří ke které práci? Naučíš se značku „rozluštit“ jako kód."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ocel",
+          "definition": "Slitina železa a uhlíku s nejvýš 2,14 % C. Další prvky ji zlepšují nebo jsou v ní jako nečistoty (P, S).",
+          "example": "Ocel na hřebíky má asi 0,1 % C, ocel na pilník kolem 1 % C."
+        },
+        {
+          "type": "term",
+          "term": "Legující prvek",
+          "definition": "Prvek přidaný záměrně pro lepší vlastnosti. Chrom a nikl zlepšují odolnost proti korozi, Mo a V pevnost za tepla, Mn a Cr kalitelnost.",
+          "example": "Nerezová ocel má aspoň 10,5 % chromu."
+        },
+        {
+          "type": "term",
+          "term": "Faktor",
+          "definition": "Číslo, kterým se u nízkolegované oceli dělí číselný údaj ve značce, aby vyšel obsah prvku v procentech.",
+          "example": "Chrom má faktor 4, molybden 10."
+        },
+        {
+          "type": "term",
+          "term": "Konstrukční a nástrojová ocel",
+          "definition": "**Konstrukční** ocel slouží na části strojů a staveb (nosníky, hřídele, šrouby). **Nástrojová** na nástroje, které řežou, tváří nebo stříhají (nože, frézy, raznice). Nástrojová bývá tvrdší a má víc uhlíku nebo legur.",
+          "example": "S235JR je konstrukční, HS6-5-2-5 nástrojová (rychlořezná)."
+        },
+        {
+          "type": "heading",
+          "text": "Luštíme značku"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "C45 obsahuje ",
+                "after": " uhlíku.",
+                "options": [
+                  "0,45 %",
+                  "45 %",
+                  "4,5 %"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "16MnCr5 obsahuje asi ",
+                "after": " manganu.",
+                "options": [
+                  "1,25 %",
+                  "5 %",
+                  "0,5 %"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "X5CrNi18-10 obsahuje ",
+                "after": " chromu.",
+                "options": [
+                  "18 %",
+                  "4,5 %",
+                  "1,8 %"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "S355J2 má mez kluzu nejméně ",
+                "after": ".",
+                "options": [
+                  "355 MPa",
+                  "35,5 MPa",
+                  "3 550 MPa"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň mezery. Pamatuj: C a nízkolegované – dělit; X – číst přímo."
+        },
+        {
+          "type": "example",
+          "question": "16MnCr5: kolik uhlíku a manganu?",
+          "answer": "16 / 100 = **0,16 % C**. Mn je první prvek, patří k němu číslo 5. Faktor manganu je 4: 5 / 4 ≈ **1,25 % Mn**. Chrom bez čísla. Málo uhlíku → ocel k **cementaci** (sycení povrchu uhlíkem) – ozubená kola."
+        },
+        {
+          "type": "example",
+          "question": "HS6-5-2-5: co v ní je?",
+          "answer": "HS = rychlořezná ocel. Čísla v pořadí W-Mo-V-Co: **6 % W, 5 % Mo, 2 % V, 5 % Co**. Na nože, vrtáky, frézy – snese vysoké teploty při řezání."
+        },
+        {
+          "type": "heading",
+          "text": "Která ocel na co"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka (EN)",
+            "Číslo",
+            "ČSN (přibližně)",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "S235JR",
+              "1.0038",
+              "11 375",
+              "svařované konstrukce, nosníky"
+            ],
+            [
+              "C45",
+              "1.0503",
+              "12 050",
+              "hřídele, čepy, k zušlechtění"
+            ],
+            [
+              "16MnCr5",
+              "1.7131",
+              "14 220",
+              "cementovaná ozubená kola"
+            ],
+            [
+              "42CrMo4",
+              "1.7225",
+              "15 142",
+              "namáhané hřídele, ojnice"
+            ],
+            [
+              "X5CrNi18-10",
+              "1.4301",
+              "17 240",
+              "korozivzdorné nádoby, zábradlí"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ekvivalenty mezi EN a starou ČSN nejsou vždy úplně přesné. Na výkresu platí značka, kterou předepsal konstruktér."
+        },
+        {
+          "type": "mistake",
+          "wrong": "C45 je ocel se 45 % uhlíku.",
+          "right": "C45 má **0,45 %** uhlíku.",
+          "why": "Číslo za C je stonásobek obsahu uhlíku. Ocel může mít nejvýš 2,14 % C."
+        },
+        {
+          "type": "summary",
+          "text": "Značku čti po částech: písmeno (S, E, C, X, HS) určí druh, první číslo uhlík nebo mez kluzu, ostatní čísla legury – u nízkolegovaných dělené faktorem, u X přímo v procentech."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená číslo 235 ve značce S235JR?",
+      "options": [
+        "minimální mez kluzu 235 MPa",
+        "obsah uhlíku 2,35 %",
+        "pevnost 235 kN",
+        "tvrdost 235 HB"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kolik uhlíku obsahuje ocel C60?",
+      "options": [
+        "0,6 %",
+        "6 %",
+        "60 %",
+        "0,06 %"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená X na začátku značky oceli?",
+      "options": [
+        "vysokolegovaná ocel",
+        "nelegovaná ocel",
+        "ocel na konstrukce",
+        "experimentální ocel"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "V oceli 42CrMo4 je asi 1 % chromu.",
+      "answer": true,
+      "explanation": "4 / 4 = 1 % Cr."
+    },
+    {
+      "type": "truefalse",
+      "question": "V oceli X5CrNi18-10 je 0,18 % chromu.",
+      "answer": false,
+      "explanation": "U oceli X se čísla čtou přímo: 18 % Cr, 10 % Ni."
+    },
+    {
+      "type": "input",
+      "question": "Kolik % niklu obsahuje X5CrNi18-10?",
+      "answers": [
+        "10"
+      ],
+      "hints": [
+        "U X se čísla čtou přímo jako procenta.",
+        "Čísla patří k prvkům v pořadí, jak jsou napsané."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik % uhlíku obsahuje ocel 16MnCr5?",
+      "answers": [
+        "0,16",
+        "0.16"
+      ],
+      "hints": [
+        "První číslo vyděl stem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik % manganu přibližně obsahuje 16MnCr5? (Mn má faktor 4)",
+      "answers": [
+        "1,25",
+        "1.25"
+      ],
+      "hints": [
+        "Číslo na konci patří k prvnímu prvku."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s druhem oceli.",
+      "pairs": [
+        [
+          "S355J2",
+          "ocel pro konstrukce"
+        ],
+        [
+          "C45",
+          "nelegovaná ušlechtilá"
+        ],
+        [
+          "X5CrNi18-10",
+          "korozivzdorná"
+        ],
+        [
+          "HS6-5-2-5",
+          "rychlořezná"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj prvek s faktorem.",
+      "pairs": [
+        [
+          "Cr",
+          "4"
+        ],
+        [
+          "Mo",
+          "10"
+        ],
+        [
+          "S",
+          "100"
+        ],
+        [
+          "B",
+          "1 000"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které ocelové značení je číselné podle ČSN EN 10027-2?",
+      "options": [
+        "1.4301",
+        "S235JR",
+        "42CrMo4",
+        "12 050"
+      ],
+      "answer": 0,
+      "hints": [
+        "Číselné evropské značení začíná číslicí materiálové skupiny a tečkou."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď oceli podle obsahu uhlíku od nejmenšího.",
+      "items": [
+        "X5CrNi18-10",
+        "16MnCr5",
+        "42CrMo4",
+        "C60"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Rozluštíš značku 42CrMo4? Uveď obsah uhlíku a chromu a k čemu se ocel hodí.",
+      "answer": "42 / 100 = 0,42 % C, chrom 4 / 4 ≈ 1 %, molybden v malém množství. Je to nízkolegovaná ocel k zušlechťování na namáhané hřídele, ozubená kola a ojnice."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl ve čtení značky nízkolegované a vysokolegované oceli?",
+      "answer": "U nízkolegované oceli se čísla za prvky dělí faktorem (Cr, Mn, Ni, Si 4; Mo, V 10 atd.). U vysokolegované (začíná X) jsou čísla přímo procenta prvků. U obou je první číslo stonásobek obsahu uhlíku."
+    }
+  ]
+}

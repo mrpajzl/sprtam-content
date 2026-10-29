@@ -1,0 +1,465 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "koroze",
+  "title": "Koroze a ochrana proti ní",
+  "emoji": "🦠",
+  "explanations": [
+    {
+      "title": "Proč kov rezaví",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Starému autu prorezavějí prahy, zábradlí na dešti zrezne, pod nátěrem se objeví puchýře. To je **koroze**. Každý rok kvůli ní zmizí obrovské množství oceli a selhávají mosty, potrubí i stroje."
+        },
+        {
+          "type": "text",
+          "text": "Strojař musí vědět, proč koroze vzniká a jak jí bránit už při návrhu – volbou materiálu, tvarem součásti a povrchovou úpravou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Koroze",
+          "definition": "Samovolné porušování materiálu chemickou nebo elektrochemickou reakcí s okolím (vzduch, voda, chemikálie).",
+          "example": "Rezavění oceli, zelená měděnka na střeše."
+        },
+        {
+          "type": "term",
+          "term": "Rez",
+          "definition": "Produkt koroze železa – oxidy a hydroxidy železa. Je pórovitá, odpadává a kov pod ní neochrání.",
+          "example": "Rezavá skvrna na plechu."
+        },
+        {
+          "type": "term",
+          "term": "Elektrolyt",
+          "definition": "Kapalina, která vede elektrický proud, protože obsahuje ionty. I dešťová voda nebo vlhkost ze vzduchu je slabý elektrolyt, slaná voda silnější.",
+          "example": "Posolená silnice v zimě."
+        },
+        {
+          "type": "term",
+          "term": "Ušlechtilost kovu",
+          "definition": "Jak neochotně kov reaguje. Méně ušlechtilý kov (Mg, Al, Zn, Fe) koroduje snadno, ušlechtilý (Cu, Ag, Au) málo. Pořadí ukazuje **elektrochemická řada napětí kovů**.",
+          "example": "Mg – Al – Zn – Fe – Sn – Pb – (H) – Cu – Ag – Au"
+        },
+        {
+          "type": "heading",
+          "text": "Dva druhy koroze"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Chemická koroze** – kov reaguje přímo se suchým plynem, hlavně za vysokých teplot. Například okuje na oceli při kování nebo žíhání.",
+            "**Elektrochemická koroze** – za přítomnosti elektrolytu (vlhkost, voda). Vznikne malý galvanický článek: méně ušlechtilé místo (**anoda**) se rozpouští, na ušlechtilejším (**katodě**) probíhá jiná reakce. Je nejčastější."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Elektrochemická koroze potřebuje kov, elektrolyt a kyslík (nebo jiný oxidant). Když jedno chybí, koroze se zastaví nebo zpomalí. Proto ocel v suchu nerezaví a sůl na silnicích korozi urychlí."
+        },
+        {
+          "type": "heading",
+          "text": "Formy koroze"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Forma",
+            "Jak vypadá",
+            "Kde hrozí"
+          ],
+          "rows": [
+            [
+              "rovnoměrná",
+              "kov ubývá po celé ploše",
+              "nechráněná ocel venku"
+            ],
+            [
+              "bodová (důlková)",
+              "hluboké malé důlky",
+              "korozivzdorná ocel v chloridech (slaná voda)"
+            ],
+            [
+              "štěrbinová",
+              "koroze ve škvírách",
+              "pod podložkami, v přeplátovaných spojích"
+            ],
+            [
+              "galvanická",
+              "méně ušlechtilý kov se rozpouští u ušlechtilejšího",
+              "hliník přišroubovaný k mědi"
+            ],
+            [
+              "mezikrystalová",
+              "napadá hranice zrn, povrch vypadá zdravě",
+              "nevhodně svařená korozivzdorná ocel"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ochrana proti korozi"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Volba materiálu**: korozivzdorná ocel (aspoň 10,5 % Cr – na povrchu vznikne tenká pasivní vrstva), hliník, plast.",
+            "**Konstrukce**: žádné kapsy, kde stojí voda; otvory pro odtok; nespojovat přímo různé kovy (izolační podložka).",
+            "**Kovové povlaky**: žárové zinkování, galvanické zinkování, niklování, chromování, pocínování.",
+            "**Nekovové povlaky**: nátěry (základ + vrchní barva), práškové lakování, plastové povlaky, smalt.",
+            "**Konverzní vrstvy**: fosfátování, černění oceli, eloxování (anodická oxidace) hliníku.",
+            "**Elektrochemická ochrana**: obětovaná anoda (Zn, Mg) nebo vnější proud – chrání lodě, potrubí v zemi, bojlery.",
+            "**Úprava prostředí**: inhibitory koroze v chladicí kapalině, vysoušení vzduchu, konzervační olej."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč pozinkovaný plech nerezaví ani tam, kde je škrábnutý?",
+          "answer": "Zinek je **méně ušlechtilý** než železo. Ve škrábanci vznikne článek, ve kterém je zinek **anoda** a rozpouští se, železo je katoda a je chráněné. Zinek se „obětuje“ místo oceli."
+        },
+        {
+          "type": "example",
+          "question": "Proč pocínovaná plechovka rezaví rychleji tam, kde je poškrábaná?",
+          "answer": "Cín je **ušlechtilejší** než železo. Ve škrábanci je železo **anoda** a rozpouští se, a to rychleji než bez cínu. Cín chrání jen, když je vrstva neporušená."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nerezová ocel nikdy nekoroduje.",
+          "right": "Korozivzdorná ocel odolává běžnému prostředí, ale v chloridech (slaná voda, bazény) může korodovat bodově a ve štěrbinách.",
+          "why": "Pasivní vrstva chromových oxidů se může v chloridech místně porušit."
+        },
+        {
+          "type": "summary",
+          "text": "Koroze je chemická (plyny za tepla) nebo elektrochemická (s elektrolytem, nejčastější). Chrání se volbou materiálu, konstrukcí bez kapes, povlaky (zinek, nátěry), konverzními vrstvami a obětovanou anodou."
+        }
+      ]
+    },
+    {
+      "title": "Pokus s hřebíky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Udělej si pokus: dva hřebíky namoč do slané vody. Jeden obtoč měděným drátem, druhý zinkovým plíškem. Za pár dní je hřebík s mědí zrezivělý víc než obvykle a hřebík se zinkem skoro čistý. Proč? Odpověď vysvětlí celou ochranu proti korozi."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Koroze",
+          "definition": "Postupné ničení kovu reakcí s okolím. U oceli je jejím výsledkem rez.",
+          "example": "Rezavý hřebík."
+        },
+        {
+          "type": "term",
+          "term": "Galvanický článek",
+          "definition": "Dva různé kovy spojené vodivě a ponořené do elektrolytu. Mezi nimi teče proud a jeden kov se rozpouští.",
+          "example": "Baterie je řízený galvanický článek."
+        },
+        {
+          "type": "term",
+          "term": "Elektrolyt",
+          "definition": "Vodivá kapalina s ionty: slaná voda, ale i vlhkost ze vzduchu.",
+          "example": "Mořská voda je silný elektrolyt."
+        },
+        {
+          "type": "term",
+          "term": "Anoda a katoda",
+          "definition": "Při korozi **anoda** = kov, který se rozpouští (koroduje). **Katoda** = kov, který je chráněný.",
+          "example": "Ve dvojici zinek–železo je anodou zinek."
+        },
+        {
+          "type": "term",
+          "term": "Řada ušlechtilosti kovů",
+          "definition": "Kovy seřazené od nejméně ušlechtilého (koroduje nejsnáz) po nejušlechtilejší: Mg – Al – Zn – Fe – Sn – Pb – Cu – Ag – Au.",
+          "example": "Méně ušlechtilý kov ve dvojici koroduje a ušlechtilejší chrání."
+        },
+        {
+          "type": "heading",
+          "text": "Vysvětlení pokusu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Hřebík (Fe) + měď (Cu) v slané vodě: měď je ušlechtilejší → železo je anoda → **železo koroduje rychleji**.",
+            "Hřebík (Fe) + zinek (Zn): zinek je méně ušlechtilý → zinek je anoda → **zinek koroduje, železo je chráněné**.",
+            "Hřebík sám: koroduje „normálně“ – na jeho povrchu vznikají malé články mezi místy s různým složením."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dva kovy ve vlhku tedy nikdy nespojuj bez rozmyslu. Ten méně ušlechtilý bude korodovat rychleji."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ve dvojici Zn–Fe koroduje ",
+                "after": ".",
+                "options": [
+                  "zinek",
+                  "železo"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ve dvojici Fe–Cu koroduje ",
+                "after": ".",
+                "options": [
+                  "železo",
+                  "měď"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ve dvojici Al–Cu koroduje ",
+                "after": ".",
+                "options": [
+                  "hliník",
+                  "měď"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ve dvojici Fe–Sn koroduje ",
+                "after": ".",
+                "options": [
+                  "železo",
+                  "cín"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň podle řady ušlechtilosti. Vždy koroduje ten kov, který je v řadě víc vlevo."
+        },
+        {
+          "type": "heading",
+          "text": "Kde se to využívá"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ochrana",
+            "Princip",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "žárové zinkování",
+              "povlak zinku – chrání i ve škrábanci (obětuje se)",
+              "svodidla, stožáry, šrouby"
+            ],
+            [
+              "obětovaná anoda",
+              "kus Zn nebo Mg přišroubovaný k chráněnému dílu",
+              "trup lodi, bojler"
+            ],
+            [
+              "katodická ochrana vnějším proudem",
+              "zdroj proudu udělá z chráněného dílu katodu",
+              "plynovody v zemi"
+            ],
+            [
+              "nátěr, lak",
+              "odděluje kov od vody a vzduchu",
+              "konstrukce, stroje"
+            ],
+            [
+              "eloxování hliníku",
+              "zesílí ochrannou vrstvu oxidu",
+              "profily, kliky"
+            ],
+            [
+              "korozivzdorná ocel",
+              "chrom tvoří tenkou ochrannou (pasivní) vrstvu",
+              "kuchyňské dřezy, potravinářství"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hliníkový plech chceš přišroubovat ocelovými šrouby na mokrém místě. Co uděláš?",
+          "answer": "Hliník je méně ušlechtilý než ocel → hrozí **galvanická koroze hliníku**. Použij **izolační podložky** (plast), šrouby z vhodného materiálu nebo s povlakem a spoj natři, aby do něj nezatékala voda."
+        },
+        {
+          "type": "example",
+          "question": "Proč se do bojleru dává hořčíková anoda a proč se má měnit?",
+          "answer": "Hořčík je méně ušlechtilý než ocel nádrže. Je **anodou** a rozpouští se místo nádrže. Postupně se spotřebuje, a když zmizí, začne korodovat nádrž. Proto se kontroluje a vyměňuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na ocel dám měděné nýty, měď nerezaví, tak to vydrží déle.",
+          "right": "Ve vlhku bude ocel kolem měděných nýtů korodovat **rychleji**.",
+          "why": "Měď je ušlechtilejší. Ocel je v tomto článku anoda a rozpouští se."
+        },
+        {
+          "type": "summary",
+          "text": "Ve dvojici kovů s elektrolytem koroduje ten méně ušlechtilý (anoda). Zinkový povlak a obětované anody toho využívají k ochraně oceli. Různé kovy ve vlhku izoluj a natírej."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je potřeba k elektrochemické korozi oceli?",
+      "options": [
+        "elektrolyt (vlhkost) a kyslík",
+        "jen vysoká teplota",
+        "jen suchý vzduch",
+        "vakuum"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který kov chrání ocel jako obětovaná anoda?",
+      "options": [
+        "zinek",
+        "měď",
+        "cín",
+        "stříbro"
+      ],
+      "answer": 0,
+      "hints": [
+        "Musí být v řadě ušlechtilosti před železem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá anodická oxidace hliníku?",
+      "options": [
+        "eloxování",
+        "zinkování",
+        "fosfátování",
+        "nitridování"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pozinkovaná ocel je chráněná i v místě malého škrábance.",
+      "answer": true,
+      "explanation": "Zinek je méně ušlechtilý a koroduje místo oceli."
+    },
+    {
+      "type": "truefalse",
+      "question": "Korozivzdorná ocel je odolná proti korozi díky chromu, kterého má aspoň 10,5 %.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Okuje při kování oceli jsou příkladem elektrochemické koroze.",
+      "answer": false,
+      "explanation": "Je to chemická koroze – reakce se suchým plynem za vysoké teploty."
+    },
+    {
+      "type": "input",
+      "question": "Kolik % chromu nejméně musí mít korozivzdorná ocel?",
+      "answers": [
+        "10,5",
+        "10.5"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá kov, který se v korozním článku rozpouští? (anoda / katoda)",
+      "answers": [
+        "anoda"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj formu koroze s popisem.",
+      "pairs": [
+        [
+          "bodová",
+          "hluboké malé důlky"
+        ],
+        [
+          "štěrbinová",
+          "ve škvírách a pod podložkami"
+        ],
+        [
+          "galvanická",
+          "dva různé kovy ve styku"
+        ],
+        [
+          "rovnoměrná",
+          "kov ubývá po celé ploše"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj ochranu s příkladem.",
+      "pairs": [
+        [
+          "žárové zinkování",
+          "svodidla"
+        ],
+        [
+          "obětovaná anoda",
+          "trup lodi"
+        ],
+        [
+          "eloxování",
+          "hliníkový profil"
+        ],
+        [
+          "inhibitor",
+          "chladicí kapalina"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kovy od nejméně ušlechtilého (koroduje nejsnáz) po nejušlechtilejší.",
+      "items": [
+        "hořčík",
+        "zinek",
+        "železo",
+        "měď",
+        "zlato"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hliníkový plech je přinýtovaný měděnými nýty ve vlhku. Co koroduje?",
+      "options": [
+        "hliník",
+        "měď",
+        "nic",
+        "obojí stejně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč pozinkovaný plech chrání ocel i ve škrábanci, kdežto pocínovaný ne.",
+      "answer": "Zinek je méně ušlechtilý než železo, ve škrábanci se stane anodou a rozpouští se místo železa. Cín je ušlechtilejší než železo, takže ve škrábanci je anodou železo a koroduje dokonce rychleji. Cín chrání jen jako neporušená bariéra."
+    },
+    {
+      "type": "open",
+      "question": "Uveď alespoň čtyři způsoby ochrany strojní součásti proti korozi.",
+      "answer": "Volba korozivzdorného materiálu, konstrukce bez kapes s odtokem vody a s izolací různých kovů, kovové povlaky (zinkování, niklování, chromování), nátěry a práškové lakování, konverzní vrstvy (fosfátování, eloxování), katodická ochrana obětovanou anodou a konzervační oleje nebo inhibitory."
+    }
+  ]
+}

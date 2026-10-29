@@ -1,0 +1,495 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "plasty-kompozity",
+  "title": "Plasty a kompozity",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Druhy a použití",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kryt vrtačky, ozubené kolečko v tiskárně, izolace kabelu, těsnění, rám závodního kola z uhlíku. Plasty a kompozity nahrazují kovy všude, kde je potřeba nízká hmotnost, elektrická izolace nebo odolnost proti korozi."
+        },
+        {
+          "type": "text",
+          "text": "Strojař musí vědět, který plast snese teplo, který jde svařit a znovu roztavit a který ne. A proč je uhlíkový rám kola lehčí a tužší než ocelový."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Polymer",
+          "definition": "Látka z obřích molekul – dlouhých řetězců, které vzniknou spojením tisíců malých molekul (**monomerů**). Plasty jsou polymery s přísadami.",
+          "example": "Polyethylen vzniká spojením mnoha molekul ethylenu."
+        },
+        {
+          "type": "term",
+          "term": "Termoplast",
+          "definition": "Plast, který se teplem změkčí a roztaví, po ochlazení ztuhne – a to **opakovaně**. Dá se svařovat a recyklovat přetavením.",
+          "example": "PE, PP, PVC, PS, PA (polyamid), PC, PET."
+        },
+        {
+          "type": "term",
+          "term": "Reaktoplast (termoset)",
+          "definition": "Plast, který se při výrobě **nevratně vytvrdí** chemickou reakcí. Teplem už nezměkne, při velkém ohřevu se rozkládá.",
+          "example": "Epoxidová pryskyřice, fenolformaldehydové pryskyřice (bakelit)."
+        },
+        {
+          "type": "term",
+          "term": "Elastomer",
+          "definition": "Polymer, který se dá hodně natáhnout a vrátí se do původního tvaru.",
+          "example": "Pryž (guma), silikon – těsnění, pneumatiky."
+        },
+        {
+          "type": "heading",
+          "text": "Vlastnosti plastů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Výhody",
+            "Nevýhody"
+          ],
+          "rows": [
+            [
+              "malá hustota (asi 900–1 400 kg/m³)",
+              "malá pevnost a tuhost proti oceli"
+            ],
+            [
+              "elektricky izolují",
+              "snesou jen nízké teploty (většinou do 100–150 °C)"
+            ],
+            [
+              "nekorodují, odolávají mnoha chemikáliím",
+              "pomalu se deformují pod trvalým zatížením (tečení)"
+            ],
+            [
+              "snadno se tvarují (vstřikování)",
+              "stárnou na slunci (UV záření)"
+            ],
+            [
+              "tlumí hluk a chvění",
+              "hoří, některé uvolňují jedovaté zplodiny"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kde se s nimi potkáš"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "PE (polyethylen)",
+                "back": "termoplast: fólie, trubky, nádoby"
+              },
+              {
+                "front": "PP (polypropylen)",
+                "back": "termoplast: nárazníky, krabičky, trubky na teplou vodu"
+              },
+              {
+                "front": "PVC (polyvinylchlorid)",
+                "back": "termoplast: okenní profily, izolace kabelů, odpady"
+              },
+              {
+                "front": "PA (polyamid)",
+                "back": "termoplast: ozubená kola, kluzná pouzdra, hmoždinky"
+              },
+              {
+                "front": "PMMA (plexisklo)",
+                "back": "termoplast: průhledné kryty strojů"
+              },
+              {
+                "front": "EP (epoxid)",
+                "back": "reaktoplast: lepidla, matrice kompozitů"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otáčej kartičky a zkus si vzpomenout, z čeho jsou plastové věci kolem tebe."
+        },
+        {
+          "type": "heading",
+          "text": "Kompozity"
+        },
+        {
+          "type": "term",
+          "term": "Kompozit",
+          "definition": "Materiál ze dvou (nebo více) různých složek, které spolu drží a dohromady mají lepší vlastnosti než každá zvlášť. **Matrice** drží tvar a spojuje, **výztuž** nese zatížení.",
+          "example": "Železobeton: beton (matrice) + ocelové pruty (výztuž)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Sklolaminát (GFRP)** – skelná vlákna v polyesterové nebo epoxidové pryskyřici. Lodě, nádrže, kryty.",
+            "**Uhlíkový kompozit (CFRP)** – uhlíková vlákna v epoxidu. Velmi lehký a tuhý: letadla, závodní kola, F1.",
+            "**Aramidová vlákna** (Kevlar) – houževnatá, neprůstřelné vesty.",
+            "**Slinutý karbid** – tvrdá zrna karbidu wolframu spojená kobaltem. Břitové destičky nožů."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hmotnost krytu z PA (hustota 1 140 kg/m³) o objemu 0,0002 m³?",
+          "answer": "m = ρ · V = 1 140 · 0,0002 = **0,228 kg** (228 g). Stejný díl z oceli: 7 850 · 0,0002 = 1,57 kg – skoro sedmkrát víc."
+        },
+        {
+          "type": "example",
+          "question": "Ozubené kolečko v tiskárně z polyamidu. Proč ne z oceli?",
+          "answer": "Zatížení je malé. PA je **lehký**, **tichý** (tlumí hluk), má **dobré kluzné vlastnosti** (nemusí se mazat) a kolečko se levně **vstříkne** do formy v jednom kroku. Ocelové by bylo těžké, hlučné a drahé."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rozbitý kryt z reaktoplastu svařím horkým vzduchem jako PE.",
+          "right": "Reaktoplasty se svařovat nedají. Lepí se (např. epoxidem) nebo se díl vymění.",
+          "why": "Reaktoplast se při výrobě nevratně vytvrdil. Teplem už nezměkne, jen se rozloží."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bezpečnost: při svařování a obrábění plastů větrej. Hořící PVC uvolňuje chlorovodík, jiné plasty další jedovaté látky. Prach z uhlíkových a skelných vláken nevdechuj – používej odsávání a respirátor."
+          ]
+        },
+        {
+          "type": "summary",
+          "text": "Plasty jsou polymery: termoplasty jdou opakovaně tavit, reaktoplasty se nevratně vytvrdí, elastomery jsou pružné. Kompozit = matrice + výztuž (sklolaminát, uhlíkový kompozit) a dává velkou pevnost při malé hmotnosti."
+        }
+      ]
+    },
+    {
+      "title": "Špagety a vlákna",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Vezmi talíř uvařených špaget: jsou to dlouhá vlákna propletená mezi sebou. Plasty vypadají uvnitř podobně – jsou to obří dlouhé molekuly. Podle toho, jestli jsou „špagety“ volné, nebo slepené k sobě, se plast chová úplně jinak."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Monomer a polymer",
+          "definition": "**Monomer** je malá molekula. Když se tisíce monomerů spojí do řetězce (**polymerace**), vznikne **polymer**.",
+          "example": "Monomer ethylen → polymer polyethylen."
+        },
+        {
+          "type": "term",
+          "term": "Termoplast",
+          "definition": "Řetězce jsou volné jako uvařené špagety. Teplem se od sebe uvolní – plast změkne a roztaví se. Po ochlazení ztuhne. Jde to opakovat.",
+          "example": "PET láhev se dá roztavit a vyrobit z ní vlákno."
+        },
+        {
+          "type": "term",
+          "term": "Reaktoplast",
+          "definition": "Řetězce jsou navzájem pevně propojené příčnými vazbami, jako špagety slepené sýrem v zapečené lasagni. Teplem se nerozvolní, plast se jen rozloží.",
+          "example": "Epoxid, polyesterová pryskyřice."
+        },
+        {
+          "type": "term",
+          "term": "Elastomer",
+          "definition": "Řetězce jsou propojené jen řídce. Dají se natáhnout, ale po uvolnění se vrátí.",
+          "example": "Gumové těsnění (O-kroužek)."
+        },
+        {
+          "type": "term",
+          "term": "Matrice a výztuž",
+          "definition": "Dvě složky kompozitu. **Matrice** spojuje a drží tvar (pryskyřice, kov, beton). **Výztuž** nese zatížení (vlákna, částice, pruty).",
+          "example": "Uhlíková vlákna (výztuž) v epoxidu (matrice)."
+        },
+        {
+          "type": "heading",
+          "text": "Roztřiď plasty"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "termoplast",
+              "reaktoplast",
+              "elastomer"
+            ],
+            "items": [
+              {
+                "text": "polyethylen PE",
+                "group": 0
+              },
+              {
+                "text": "polypropylen PP",
+                "group": 0
+              },
+              {
+                "text": "PVC",
+                "group": 0
+              },
+              {
+                "text": "polyamid PA",
+                "group": 0
+              },
+              {
+                "text": "epoxidová pryskyřice",
+                "group": 1
+              },
+              {
+                "text": "bakelit (PF)",
+                "group": 1
+              },
+              {
+                "text": "polyesterová pryskyřice",
+                "group": 1
+              },
+              {
+                "text": "pryž",
+                "group": 2
+              },
+              {
+                "text": "silikonový kaučuk",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Klepni na kartičku a pak na krabičku, kam patří."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se plasty zpracovávají"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Vstřikování**: granule termoplastu se roztaví a vstříknou pod tlakem do kovové formy. Kryty, kolečka, víčka.",
+            "**Vytlačování**: tavenina se protlačuje hubicí – vznikají trubky, profily, izolace kabelů.",
+            "**Vyfukování**: trubička taveniny se ve formě nafoukne – láhve, kanystry.",
+            "**Lisování a laminování**: u reaktoplastů a kompozitů se pryskyřice s vlákny tvaruje ve formě a vytvrdí."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kompozit: proč je silnější"
+        },
+        {
+          "type": "text",
+          "text": "Vlákno samo o sobě je pevné jen v tahu a nedrží tvar. Pryskyřice drží tvar, ale je slabá. Dohromady: pryskyřice drží vlákna na místě a přenáší na ně zatížení, vlákna nesou tah. Proto se vlákna kladou ve směru, kde působí síla."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "kg/m³ (hustota, orientačně)",
+            "items": [
+              {
+                "label": "PP",
+                "value": 900
+              },
+              {
+                "label": "PA",
+                "value": 1140
+              },
+              {
+                "label": "uhlíkový kompozit",
+                "value": 1600
+              },
+              {
+                "label": "sklolaminát",
+                "value": 1900
+              },
+              {
+                "label": "hliník",
+                "value": 2700
+              },
+              {
+                "label": "ocel",
+                "value": 7850
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Proč je rám kola z uhlíkového kompozitu lehčí než ocelový, když je stejně tuhý?",
+          "answer": "Uhlíkový kompozit má hustotu asi **1 600 kg/m³**, ocel asi **7 850 kg/m³**. Uhlíková vlákna jsou přitom velmi tuhá a pevná v tahu. Na stejnou tuhost tedy stačí mnohem menší hmotnost. Vlákna navíc vedou ve směru, kde rám nejvíc namáháš."
+        },
+        {
+          "type": "example",
+          "question": "Recyklační značka 5 na krabičce. Co to je a dá se to znovu roztavit?",
+          "answer": "Značka 5 = **PP (polypropylen)**. Je to **termoplast**, takže ano – dá se přetavit a znovu zpracovat. (1 PET, 2 HDPE, 3 PVC, 4 LDPE, 5 PP, 6 PS, 7 ostatní.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kompozit je totéž co slitina – jen se smíchají dvě látky.",
+          "right": "Ve slitině se prvky promísí na úrovni atomů. V kompozitu zůstanou složky **oddělené** a poznáš je (vlákna v pryskyřici).",
+          "why": "Proto může mít kompozit vlastnosti řízené směrem vláken, slitina ne."
+        },
+        {
+          "type": "summary",
+          "text": "Termoplast = volné řetězce, jde tavit znovu. Reaktoplast = propojené řetězce, nevratně vytvrzený. Elastomer = řídce propojené, pružné. Kompozit spojuje matrici a výztuž: lehký a pevný ve směru vláken."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který plast se dá opakovaně roztavit a znovu tvarovat?",
+      "options": [
+        "termoplast",
+        "reaktoplast",
+        "pryž",
+        "epoxid"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je v kompozitu výztuž?",
+      "options": [
+        "složka, která nese zatížení",
+        "složka, která drží tvar a spojuje",
+        "nátěr proti korozi",
+        "přísada proti UV"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který plast je reaktoplast?",
+      "options": [
+        "epoxidová pryskyřice",
+        "polyethylen",
+        "polypropylen",
+        "PVC"
+      ],
+      "answer": 0,
+      "hints": [
+        "Reaktoplast se nevratně vytvrdí – typicky lepidla a pryskyřice."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plasty jsou obvykle elektrické izolanty.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Reaktoplast můžeš opravit svařením horkým vzduchem.",
+      "answer": false,
+      "explanation": "Reaktoplast teplem nezměkne, jen se rozloží."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při hoření PVC vzniká jedovatý chlorovodík.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Hustota PA je 1 140 kg/m³. Hmotnost dílu o objemu 0,001 m³ v kg =",
+      "answers": [
+        "1,14",
+        "1.14"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakou recyklační značkou (číslem) se označuje polypropylen PP?",
+      "answers": [
+        "5"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje proces, kterým se malé molekuly spojují do dlouhých řetězců?",
+      "answers": [
+        "polymerace",
+        "polymerizace"
+      ],
+      "hints": [
+        "Z malých molekul vzniká polymer."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj plast s typickým použitím.",
+      "pairs": [
+        [
+          "PVC",
+          "okenní profily"
+        ],
+        [
+          "PA",
+          "plastová ozubená kola"
+        ],
+        [
+          "PMMA",
+          "průhledný kryt stroje"
+        ],
+        [
+          "PE",
+          "fólie a trubky"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj kompozit s výztuží.",
+      "pairs": [
+        [
+          "sklolaminát",
+          "skelná vlákna"
+        ],
+        [
+          "CFRP",
+          "uhlíková vlákna"
+        ],
+        [
+          "železobeton",
+          "ocelové pruty"
+        ],
+        [
+          "slinutý karbid",
+          "zrna karbidu wolframu"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď materiály podle hustoty od nejmenší.",
+      "items": [
+        "polypropylen",
+        "polyamid",
+        "uhlíkový kompozit",
+        "hliník",
+        "ocel"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi termoplastem a reaktoplastem? Uveď ke každému příklad.",
+      "answer": "Termoplast má volné řetězce, teplem měkne a jde opakovaně tavit, svařovat a recyklovat, například PE, PP, PVC nebo PA. Reaktoplast se při výrobě nevratně vytvrdí propojením řetězců, teplem nezměkne a nedá se svařit, například epoxid nebo bakelit."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je kompozit, a uveď dva příklady z techniky.",
+      "answer": "Kompozit je materiál ze dvou různých složek: matrice drží tvar a spojuje, výztuž nese zatížení. Dohromady má lepší vlastnosti než každá složka zvlášť. Příklady: sklolaminát, uhlíkový kompozit na rámy kol a letadla, železobeton, slinutý karbid."
+    }
+  ]
+}

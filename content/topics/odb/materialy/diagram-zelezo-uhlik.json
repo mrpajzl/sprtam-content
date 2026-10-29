@@ -1,0 +1,449 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "diagram-zelezo-uhlik",
+  "title": "Diagram železo–uhlík",
+  "emoji": "📈",
+  "explanations": [
+    {
+      "title": "Mapa fází",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ocel i litina jsou obě hlavně železo s uhlíkem. Přesto je ocel tvárná a dá se kovat, kdežto bílá litina je tvrdá jako kámen a praskne. Rozdíl dělá **množství uhlíku** a teplota."
+        },
+        {
+          "type": "text",
+          "text": "Diagram železo–uhlík je „mapa“, ze které vyčteš, jaká struktura bude v oceli nebo litině při každé teplotě a obsahu uhlíku. Podle ní se volí teplota kování, žíhání i kalení."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Fáze",
+          "definition": "Část materiálu se stejným složením a stejnou krystalovou mřížkou. V oceli jsou to hlavně ferit, austenit a cementit.",
+          "example": "Ferit a cementit jsou dvě různé fáze."
+        },
+        {
+          "type": "term",
+          "term": "Ferit",
+          "definition": "Tuhý roztok uhlíku v železe α (mřížka prostorově středěná). Rozpustí nejvýš asi 0,02 % C. Je měkký, tvárný a magnetický.",
+          "example": "Měkká ocel na hřebíky je skoro celá feritická."
+        },
+        {
+          "type": "term",
+          "term": "Austenit",
+          "definition": "Tuhý roztok uhlíku v železe γ (mřížka plošně středěná). Existuje v uhlíkové oceli až nad 727 °C. Rozpustí až 2,14 % C, je tvárný a nemagnetický.",
+          "example": "Ocel se kove v austenitické oblasti, kdy je měkká."
+        },
+        {
+          "type": "term",
+          "term": "Cementit Fe₃C",
+          "definition": "Karbid železa – sloučenina železa a uhlíku s 6,67 % C. Je velmi tvrdý a křehký.",
+          "example": "Bílá litina obsahuje hodně cementitu."
+        },
+        {
+          "type": "term",
+          "term": "Perlit",
+          "definition": "Směs tenkých destiček feritu a cementitu, které se střídají. Vzniká z austenitu s 0,77 % C při 727 °C. Pod mikroskopem připomíná perleť.",
+          "example": "Ocel s 0,77 % C je celá perlitická."
+        },
+        {
+          "type": "term",
+          "term": "Ledeburit",
+          "definition": "Směs austenitu a cementitu, která vzniká při tuhnutí taveniny se 4,3 % C při 1 148 °C. Pod 727 °C se austenit v ní mění na perlit.",
+          "example": "Struktura bílé litiny."
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní body diagramu"
+        },
+        {
+          "type": "term",
+          "term": "Eutektoid a eutektikum",
+          "definition": "**Eutektoid** je bod, kde se jedna tuhá fáze (austenit) při stálé teplotě rozpadne na směs dvou fází (perlit). **Eutektikum** je bod, kde tavenina při stálé teplotě ztuhne najednou na směs dvou fází (ledeburit).",
+          "example": "Eutektoid: 0,77 % C, 727 °C. Eutektikum: 4,3 % C, 1 148 °C."
+        },
+        {
+          "type": "term",
+          "term": "Čáry A1, A3 a Acm",
+          "definition": "Hranice v diagramu. **A1** (727 °C): pod ní už není austenit. **A3**: nad ní je podeutektoidní ocel celá austenitická. **Acm**: totéž pro nadeutektoidní ocel.",
+          "example": "Pro ocel s 0,3 % C leží A3 zhruba při 810–820 °C."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Bod / čára",
+            "Obsah C",
+            "Teplota",
+            "Co se děje"
+          ],
+          "rows": [
+            [
+              "eutektoid (bod S)",
+              "0,77 %",
+              "727 °C",
+              "austenit → perlit"
+            ],
+            [
+              "eutektikum (bod C)",
+              "4,3 %",
+              "1 148 °C",
+              "tavenina → ledeburit"
+            ],
+            [
+              "max. rozpustnost C v austenitu (bod E)",
+              "2,14 %",
+              "1 148 °C",
+              "hranice ocel / litina"
+            ],
+            [
+              "čára A1 (PSK)",
+              "0,02–6,67 %",
+              "727 °C",
+              "rozpad austenitu na perlit"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Ocel** má do 2,14 % C, **litina** víc než 2,14 % C. Ocel je za vysoké teploty celá austenitická, a proto se dá kovat. Litina obsahuje ledeburit nebo grafit a kovat se nedá."
+        },
+        {
+          "type": "heading",
+          "text": "Oceli podle obsahu uhlíku"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ocel",
+            "Obsah C",
+            "Struktura za pokojové teploty"
+          ],
+          "rows": [
+            [
+              "podeutektoidní",
+              "méně než 0,77 %",
+              "ferit + perlit"
+            ],
+            [
+              "eutektoidní",
+              "0,77 %",
+              "perlit"
+            ],
+            [
+              "nadeutektoidní",
+              "0,77–2,14 %",
+              "perlit + sekundární cementit"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jakou strukturu bude mít za pokojové teploty pomalu ochlazená ocel C45 (0,45 % C)?",
+          "answer": "0,45 % je méně než 0,77 % → ocel je **podeutektoidní** → struktura **ferit + perlit**. Perlitu je zhruba 0,45 / 0,77 ≈ 0,58, tedy asi 60 %, zbytek ferit (přibližný odhad, ferit obsahuje uhlíku jen nepatrně)."
+        },
+        {
+          "type": "example",
+          "question": "Ocel s 0,3 % C ohřeješ na 900 °C. Jaká fáze v ní bude?",
+          "answer": "Nad čárou A3 (pro 0,3 % C zhruba 810–820 °C) je ocel celá **austenitická**. 900 °C je nad touto čárou → **austenit**. Proto se ocel na kalení ohřívá do této oblasti."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hranice mezi ocelí a litinou je 0,77 % C.",
+          "right": "Hranice mezi ocelí a litinou je **2,14 % C**. 0,77 % je eutektoidní bod.",
+          "why": "0,77 % dělí oceli na podeutektoidní a nadeutektoidní. Ocelí jsou obě skupiny."
+        },
+        {
+          "type": "summary",
+          "text": "Diagram Fe–Fe₃C ukazuje fáze podle teploty a obsahu uhlíku. Ocel má do 2,14 % C, litina víc. Při 727 °C a 0,77 % C vzniká perlit, při 1 148 °C a 4,3 % C ledeburit."
+        }
+      ]
+    },
+    {
+      "title": "Cesta chladnutím",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kovář ohřeje kus oceli do jasně oranžova, vyková ho a nechá na vzduchu vychladnout. Celou dobu se uvnitř mění struktura. Sledujeme tři oceli a jednu litinu na cestě z vysoké teploty dolů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Diagram železo–karbid železa (Fe–Fe₃C)",
+          "definition": "Graf: vodorovně obsah uhlíku v %, svisle teplota. Čáry v něm oddělují oblasti, kde je stálá určitá struktura.",
+          "example": "Bod 0,77 % C a 727 °C je v něm zvlášť důležitý."
+        },
+        {
+          "type": "term",
+          "term": "Ferit",
+          "definition": "Měkká, tvárná fáze: železo α s nepatrným množstvím uhlíku (nejvýš asi 0,02 %).",
+          "example": "Ve světlém poli pod mikroskopem jsou feritická zrna světlá."
+        },
+        {
+          "type": "term",
+          "term": "Austenit",
+          "definition": "Železo γ s rozpuštěným uhlíkem (až 2,14 %). V uhlíkových ocelích je jen nad 727 °C. Tvárný, nemagnetický.",
+          "example": "Při kování je ocel austenitická."
+        },
+        {
+          "type": "term",
+          "term": "Cementit",
+          "definition": "Fe₃C, sloučenina železa s uhlíkem (6,67 % C). Tvrdý a křehký.",
+          "example": "Lamely v perlitu."
+        },
+        {
+          "type": "term",
+          "term": "Perlit",
+          "definition": "Jemná směs destiček feritu a cementitu. Vznikne, když austenit s 0,77 % C pomalu chladne pod 727 °C.",
+          "example": "Kolejnicová ocel má převážně perlitickou strukturu."
+        },
+        {
+          "type": "term",
+          "term": "Ledeburit",
+          "definition": "Směs, která vznikne při tuhnutí litiny se 4,3 % C při 1 148 °C. Tvrdá a křehká.",
+          "example": "Bílá litina."
+        },
+        {
+          "type": "term",
+          "term": "Čáry A1, A3 a Acm",
+          "definition": "Hranice v diagramu. **A1** = 727 °C, pod ní už austenit není. **A3** = nad ní je ocel s méně než 0,77 % C celá austenitická. **Acm** = totéž pro ocel s více než 0,77 % C.",
+          "example": "Čím blíž má podeutektoidní ocel k 0,77 % C, tím níž leží její A3."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta chladnutím"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ocel s 0,77 % C: nad 727 °C je celá austenit. Při 727 °C se najednou celá přemění na **perlit**.",
+            "Ocel s 0,3 % C: nejdřív austenit. Pod čárou A3 se z austenitu začne vylučovat **ferit**. Zbylý austenit se obohacuje uhlíkem až na 0,77 %. Při 727 °C se zbytek změní na perlit. Výsledek: **ferit + perlit**.",
+            "Ocel s 1,2 % C: z austenitu se pod čárou Acm vylučuje **sekundární cementit** po hranicích zrn. Při 727 °C se zbytek změní na perlit. Výsledek: **perlit + cementit**.",
+            "Litina se 4,3 % C: tavenina při 1 148 °C ztuhne na **ledeburit**. Pod 727 °C se austenit v něm změní na perlit."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Projdi kroky jeden po druhém. U každého si řekni, co se stane při teplotě 727 °C."
+        },
+        {
+          "type": "heading",
+          "text": "Co z toho plyne pro vlastnosti"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "% perlitu (přibližně)",
+            "items": [
+              {
+                "label": "0,1 % C",
+                "value": 13
+              },
+              {
+                "label": "0,3 % C",
+                "value": 39
+              },
+              {
+                "label": "0,45 % C",
+                "value": 58
+              },
+              {
+                "label": "0,6 % C",
+                "value": 78
+              },
+              {
+                "label": "0,77 % C",
+                "value": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "S rostoucím uhlíkem v podeutektoidní oceli přibývá perlitu. Ocel je **pevnější a tvrdší**, ale **méně tvárná a hůř svařitelná**. Pruhy ukazují přibližný podíl perlitu, spočítaný jako obsah C děleno 0,77."
+        },
+        {
+          "type": "example",
+          "question": "Kolik procent perlitu má přibližně pomalu ochlazená ocel s 0,6 % C?",
+          "answer": "Podíl perlitu ≈ obsah C / 0,77 = 0,6 / 0,77 ≈ 0,78 → asi **78 % perlitu**, zbytek (asi 22 %) ferit. Je to zjednodušený odhad."
+        },
+        {
+          "type": "example",
+          "question": "Proč se litina nedá kovat, ale ocel ano?",
+          "answer": "Ocel jde ohřát do oblasti, kde je celá z tvárného **austenitu**. Litina má víc než 2,14 % C, takže v ní při každé teplotě pod tuhnutím zůstává tvrdý a křehký ledeburit (nebo grafit). Pod kladivem by praskla."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Perlit je samostatná fáze jako ferit nebo austenit.",
+          "right": "Perlit je **směs dvou fází**: feritu a cementitu.",
+          "why": "Pod mikroskopem jsou v perlitu vidět střídající se destičky feritu a cementitu."
+        },
+        {
+          "type": "summary",
+          "text": "Při pomalém chladnutí se austenit rozpadá: ocel s 0,77 % C na perlit, méně uhlíku dá ferit + perlit, víc uhlíku perlit + cementit. Litina tuhne na ledeburit. Víc perlitu = pevnější, ale méně tvárná ocel."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký je největší obsah uhlíku v oceli podle diagramu Fe–Fe₃C?",
+      "options": [
+        "2,14 %",
+        "0,77 %",
+        "4,3 %",
+        "6,67 %"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co vzniká v eutektoidním bodě (0,77 % C, 727 °C)?",
+      "options": [
+        "perlit",
+        "ledeburit",
+        "martenzit",
+        "sekundární cementit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou strukturu má pomalu ochlazená ocel s 0,2 % C?",
+      "options": [
+        "ferit + perlit",
+        "perlit + cementit",
+        "jen perlit",
+        "ledeburit"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnej 0,2 % s eutektoidním obsahem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Austenit je tvárný a nemagnetický.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Cementit je měkká a tvárná fáze.",
+      "answer": false,
+      "explanation": "Cementit Fe₃C je tvrdý a křehký."
+    },
+    {
+      "type": "input",
+      "question": "Kolik procent uhlíku obsahuje cementit Fe₃C?",
+      "answers": [
+        "6,67",
+        "6.67",
+        "6,7"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Při jaké teplotě ve °C se austenit rozpadá na perlit (čára A1)?",
+      "answers": [
+        "727"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje směs, která vzniká tuhnutím taveniny se 4,3 % C?",
+      "answers": [
+        "ledeburit"
+      ],
+      "hints": [
+        "Je to struktura bílé litiny."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj fázi nebo strukturu s popisem.",
+      "pairs": [
+        [
+          "ferit",
+          "měkký, magnetický, do 0,02 % C"
+        ],
+        [
+          "austenit",
+          "železo γ, nad 727 °C"
+        ],
+        [
+          "cementit",
+          "Fe₃C, tvrdý a křehký"
+        ],
+        [
+          "perlit",
+          "destičky feritu a cementitu"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj ocel se strukturou po pomalém ochlazení.",
+      "pairs": [
+        [
+          "0,4 % C",
+          "ferit + perlit"
+        ],
+        [
+          "0,77 % C",
+          "perlit"
+        ],
+        [
+          "1,2 % C",
+          "perlit + cementit"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď oceli podle podílu perlitu od nejmenšího.",
+      "items": [
+        "0,1 % C",
+        "0,3 % C",
+        "0,5 % C",
+        "0,77 % C"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Přibližně kolik procent perlitu má pomalu ochlazená ocel s 0,385 % C? (odhad: obsah C děleno 0,77)",
+      "answers": [
+        "50"
+      ],
+      "explanation": "0,385 / 0,77 = 0,5 → 50 %.",
+      "hints": [
+        "Vyděl obsah uhlíku eutektoidním obsahem."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš, co se děje při pomalém ochlazování oceli s 0,4 % C z 900 °C na pokojovou teplotu.",
+      "answer": "Při 900 °C je ocel celá austenitická. Pod čárou A3 se z austenitu vylučuje ferit a zbylý austenit se obohacuje uhlíkem. Při 727 °C se zbývající austenit s 0,77 % C přemění na perlit. Výsledná struktura je ferit + perlit."
+    },
+    {
+      "type": "open",
+      "question": "Proč se ocel dá kovat a litina ne? Odpověz pomocí diagramu Fe–Fe₃C.",
+      "answer": "Ocel (do 2,14 % C) jde ohřát do oblasti austenitu, který je tvárný. Litina má víc uhlíku, a tak v ní při teplotách pod tuhnutím zůstává ledeburit nebo grafit, které jsou křehké, a při kování by praskla."
+    }
+  ]
+}

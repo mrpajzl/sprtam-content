@@ -1,0 +1,458 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "krystalova-stavba-kovu",
+  "title": "Krystalová stavba kovů",
+  "emoji": "💎",
+  "explanations": [
+    {
+      "title": "Atomy v mřížce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když zlomíš litinovou tyč, na lomu uvidíš drobná zrníčka. Kov není „jednolitá hmota“. Skládá se z miliard atomů seřazených do pravidelných vzorů a z malých krystalků – zrn."
+        },
+        {
+          "type": "text",
+          "text": "Na tom, jak jsou atomy uspořádané, závisí, jestli je kov tvárný nebo křehký. A díky tomu, že železo umí uspořádání měnit, jde ocel kalit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Atom",
+          "definition": "Nejmenší částice prvku. V kovu jsou atomy natěsno vedle sebe a drží je pohromadě kovová vazba.",
+          "example": "Kousek železa je tvořený jen atomy železa (a trochou příměsí)."
+        },
+        {
+          "type": "term",
+          "term": "Kovová vazba",
+          "definition": "Atomy kovu odevzdají část elektronů do společného „mraku“. Kladně nabité zbytky atomů (ionty) drží tenhle mrak elektronů pohromadě. Volné elektrony vedou proud a teplo.",
+          "example": "Proto kovy dobře vedou elektřinu."
+        },
+        {
+          "type": "term",
+          "term": "Krystalová mřížka",
+          "definition": "Pravidelné prostorové uspořádání atomů, které se stále opakuje – jako kostky v regálu.",
+          "example": "Atomy hliníku leží v pravidelné krychlové síti."
+        },
+        {
+          "type": "term",
+          "term": "Elementární buňka",
+          "definition": "Nejmenší kousek mřížky, ze kterého se poskládáním vedle sebe postaví celý krystal.",
+          "example": "Krychle s atomy v rozích a ve středu."
+        },
+        {
+          "type": "heading",
+          "text": "Tři nejčastější mřížky kovů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Mřížka",
+            "Kde jsou atomy",
+            "Kovy"
+          ],
+          "rows": [
+            [
+              "kubická prostorově středěná (K8)",
+              "8 rohů krychle + 1 ve středu",
+              "Fe α, Cr, W, Mo, V"
+            ],
+            [
+              "kubická plošně středěná (K12)",
+              "8 rohů + 6 středů stěn",
+              "Fe γ, Al, Cu, Ni, Ag, Au, Pb"
+            ],
+            [
+              "šesterečná těsně uspořádaná (H12)",
+              "šestiboký hranol",
+              "Zn, Mg, Ti α"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kovy s **plošně středěnou** mřížkou (hliník, měď, zlato) bývají velmi tvárné. Mají v mřížce nejvíc rovin, po kterých mohou vrstvy atomů klouzat."
+        },
+        {
+          "type": "example",
+          "question": "Kolik atomů patří jedné buňce kubické prostorově středěné mřížky?",
+          "answer": "Atom v rohu sdílí 8 sousedních buněk, takže buňce patří 1/8. Rohů je 8: 8 · 1/8 = 1. Plus 1 celý atom ve středu. Celkem **2 atomy**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik atomů patří jedné buňce kubické plošně středěné mřížky?",
+          "answer": "Rohy: 8 · 1/8 = 1. Atom ve středu stěny sdílí 2 buňky: 6 · 1/2 = 3. Celkem **4 atomy**. Mřížka je hustěji zaplněná."
+        },
+        {
+          "type": "heading",
+          "text": "Železo mění mřížku"
+        },
+        {
+          "type": "term",
+          "term": "Polymorfie (alotropie)",
+          "definition": "Schopnost prvku mít při různých teplotách různou krystalovou mřížku.",
+          "example": "Železo je za pokojové teploty Fe α, nad 912 °C se mění na Fe γ."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Teplota",
+            "Modifikace železa",
+            "Mřížka"
+          ],
+          "rows": [
+            [
+              "do 912 °C",
+              "Fe α",
+              "prostorově středěná"
+            ],
+            [
+              "912–1 394 °C",
+              "Fe γ",
+              "plošně středěná"
+            ],
+            [
+              "1 394–1 538 °C",
+              "Fe δ",
+              "prostorově středěná"
+            ],
+            [
+              "nad 1 538 °C",
+              "tavenina",
+              "–"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Na této přeměně stojí tepelné zpracování ocelí. Fe γ rozpustí mnohem víc uhlíku než Fe α. Při rychlém ochlazení uhlík nestihne „utéct“ a vznikne tvrdá struktura – kalení."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kov je uvnitř jeden velký dokonalý krystal.",
+          "right": "Kov se skládá z mnoha malých zrn a v mřížce jsou poruchy.",
+          "why": "Při tuhnutí roste krystal z mnoha zárodků najednou. Kde se zrna potkají, vzniknou hranice zrn."
+        },
+        {
+          "type": "summary",
+          "text": "Atomy kovu tvoří krystalovou mřížku: kubickou prostorově středěnou, kubickou plošně středěnou nebo šesterečnou. Železo mění mřížku s teplotou (Fe α ↔ Fe γ) a na tom stojí kalení ocelí."
+        }
+      ]
+    },
+    {
+      "title": "Od taveniny ke zrnu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Sleduj, co se děje s kovem od tekuté lázně po hotový ingot. Pochopíš, proč má kov zrna, proč je jemnozrnný kov lepší a proč se kov dá ohnout."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Krystalová mřížka",
+          "definition": "Pravidelné prostorové uspořádání atomů v kovu, které se stále opakuje. Nejmenší opakující se kousek je **elementární buňka**.",
+          "example": "Atomy mědi leží v rozích a ve středech stěn krychlí."
+        },
+        {
+          "type": "term",
+          "term": "Krystalizace",
+          "definition": "Tuhnutí kovu: atomy se z neuspořádané taveniny řadí do pravidelné mřížky.",
+          "example": "Odlitek tuhne ve formě od stěn ke středu."
+        },
+        {
+          "type": "term",
+          "term": "Zárodek",
+          "definition": "Malý shluk atomů, už uspořádaný jako krystal. Od něj krystal roste.",
+          "example": "Při rychlém chladnutí vznikne zárodků hodně."
+        },
+        {
+          "type": "term",
+          "term": "Zrno",
+          "definition": "Jeden krystalek, který vyrostl z jednoho zárodku. Uvnitř má mřížku natočenou jedním směrem.",
+          "example": "Zrna oceli mají velikost setin milimetru."
+        },
+        {
+          "type": "term",
+          "term": "Hranice zrn",
+          "definition": "Tenké místo, kde se dvě zrna s různě natočenou mřížkou dotýkají. Atomy jsou tu méně uspořádané.",
+          "example": "Na výbrusu pod mikroskopem vypadají jako síť čar."
+        },
+        {
+          "type": "heading",
+          "text": "Krystalizace krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Tavenina chladne, atomy se pohybují volně.",
+            "Při teplotě tuhnutí vzniknou první zárodky.",
+            "Na zárodky se přidávají další atomy, krystaly rostou.",
+            "Krystaly do sebe narazí – vzniknou hranice zrn.",
+            "Tavenina zmizí, kov je tuhý a složený ze zrn."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Čistý kov tuhne při jedné teplotě. Na **křivce chladnutí** (teplota v čase) je proto vodorovná prodleva: uvolňuje se skupenské teplo a teplota se chvíli nemění."
+        },
+        {
+          "type": "example",
+          "question": "Proč se z jednoho odlitku po rychlém ochlazení stane jemnozrnný kov?",
+          "answer": "Rychlé ochlazení → vznikne **mnoho zárodků** najednou → každý zárodek má málo místa k růstu → zrna jsou malá. Pomalé ochlazení dá málo zárodků a velká zrna."
+        },
+        {
+          "type": "text",
+          "text": "**Jemné zrno je lepší**: kov je pevnější i houževnatější, protože hranice zrn brzdí šíření trhlin i posouvání vrstev atomů."
+        },
+        {
+          "type": "heading",
+          "text": "Poruchy mřížky a tvárnost"
+        },
+        {
+          "type": "term",
+          "term": "Poruchy mřížky",
+          "definition": "Místa, kde je mřížka nedokonalá: chybí atom (**vakance**), atom je navíc mezi ostatními (**intersticiální atom**), nebo je „posunutá“ celá řada atomů (**dislokace**).",
+          "example": "Kov bez poruch by byl mnohem pevnější, ale nedá se tak vyrobit."
+        },
+        {
+          "type": "text",
+          "text": "Když kov ohneš, posouvají se v něm **dislokace** a vrstvy atomů po sobě kloužou. Proto se kov dá trvale přetvořit a nepraskne. Čím víc dislokací, tím víc se navzájem blokují – kov se při tváření za studena **zpevňuje**."
+        },
+        {
+          "type": "term",
+          "term": "Tuhý roztok",
+          "definition": "Krystal, ve kterém jsou v mřížce jednoho kovu rozpuštěné atomy jiného prvku. **Substituční**: cizí atom nahradí původní (Ni v Cu). **Intersticiální**: malý atom se vejde do mezery (C v železe).",
+          "example": "Uhlík v železe tvoří intersticiální tuhý roztok."
+        },
+        {
+          "type": "term",
+          "term": "Typy mřížek kovů",
+          "definition": "**Kubická prostorově středěná**: atomy v rozích krychle a jeden uprostřed (železo α do 912 °C, chrom, wolfram). **Kubická plošně středěná**: atomy v rozích a ve středech stěn (hliník, měď, železo γ nad 912 °C). **Šesterečná**: šestiboký hranol (zinek, hořčík).",
+          "example": "Železo mění mřížku s teplotou – tomu se říká polymorfie."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Fe α má mřížku kubickou ",
+                "after": " středěnou.",
+                "options": [
+                  "prostorově",
+                  "plošně"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Hliník a měď mají mřížku kubickou ",
+                "after": " středěnou.",
+                "options": [
+                  "plošně",
+                  "prostorově"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Rychlé ochlazení dá zrno ",
+                "after": ".",
+                "options": [
+                  "jemné",
+                  "hrubé"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Uhlík se v železe rozpouští ",
+                "after": ".",
+                "options": [
+                  "intersticiálně",
+                  "substitučně"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň mezery a ověř si, co sis zapamatoval."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hrubé zrno je lepší, protože je kov „kompaktnější“.",
+          "right": "Jemné zrno dává větší pevnost i houževnatost.",
+          "why": "Více hranic zrn znamená víc překážek pro dislokace a trhliny."
+        },
+        {
+          "type": "summary",
+          "text": "Kov tuhne krystalizací ze zárodků a skládá se ze zrn oddělených hranicemi. Rychlé chladnutí dá jemné zrno, které je pevnější a houževnatější. Plastická deformace je pohyb dislokací."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou mřížku má železo α za pokojové teploty?",
+      "options": [
+        "kubickou prostorově středěnou",
+        "kubickou plošně středěnou",
+        "šesterečnou",
+        "žádnou, je amorfní"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který kov má kubickou plošně středěnou mřížku?",
+      "options": [
+        "hliník",
+        "chrom",
+        "zinek",
+        "wolfram"
+      ],
+      "answer": 0,
+      "hints": [
+        "Plošně středěné kovy bývají velmi tvárné."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Při jaké teplotě se Fe α mění na Fe γ?",
+      "options": [
+        "912 °C",
+        "727 °C",
+        "1 538 °C",
+        "1 394 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Rychlé ochlazení taveniny vede k jemnějšímu zrnu.",
+      "answer": true,
+      "explanation": "Vznikne víc zárodků a každé zrno má málo místa k růstu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čistý kov tuhne v širokém rozmezí teplot.",
+      "answer": false,
+      "explanation": "Čistý kov tuhne při jedné teplotě – na křivce chladnutí je vodorovná prodleva."
+    },
+    {
+      "type": "input",
+      "question": "Kolik atomů patří jedné elementární buňce kubické plošně středěné mřížky?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "8 · 1/8 + 6 · 1/2 = 4.",
+      "hints": [
+        "Atom v rohu sdílí 8 buněk.",
+        "Atom ve středu stěny sdílí 2 buňky."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik atomů patří jedné elementární buňce kubické prostorově středěné mřížky?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "8 · 1/8 + 1 = 2."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje čárová porucha mřížky, jejímž pohybem se kov plasticky deformuje?",
+      "answers": [
+        "dislokace",
+        "dislokace mrizky"
+      ],
+      "hints": [
+        "Je to „posunutá“ řada atomů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá schopnost prvku mít při různých teplotách různou mřížku? (jedno slovo)",
+      "answers": [
+        "polymorfie",
+        "alotropie"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj modifikaci železa s rozsahem teplot.",
+      "pairs": [
+        [
+          "Fe α",
+          "do 912 °C"
+        ],
+        [
+          "Fe γ",
+          "912–1 394 °C"
+        ],
+        [
+          "Fe δ",
+          "1 394–1 538 °C"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď děje při krystalizaci.",
+      "items": [
+        "vznik zárodků",
+        "růst krystalů",
+        "srůstání krystalů a vznik hranic zrn",
+        "kov úplně ztuhne"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s popisem.",
+      "pairs": [
+        [
+          "vakance",
+          "chybí atom"
+        ],
+        [
+          "intersticiální atom",
+          "atom navíc v mezeře"
+        ],
+        [
+          "hranice zrn",
+          "styk dvou zrn"
+        ],
+        [
+          "zárodek",
+          "počátek krystalu"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč je jemnozrnný kov pevnější a houževnatější než hrubozrnný.",
+      "answer": "Jemnozrnný kov má mnohem víc hranic zrn. Hranice brzdí pohyb dislokací i šíření trhlin, takže kov vydrží větší napětí a před porušením pohltí víc energie."
+    },
+    {
+      "type": "open",
+      "question": "Co je polymorfie železa a proč je důležitá pro strojírenství?",
+      "answer": "Železo mění s teplotou krystalovou mřížku: do 912 °C je Fe α (prostorově středěné), nad ní Fe γ (plošně středěné). Fe γ rozpustí víc uhlíku, a proto lze ocel ohřevem a rychlým ochlazením zakalit a jinak tepelně zpracovat."
+    }
+  ]
+}

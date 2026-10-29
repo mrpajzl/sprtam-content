@@ -1,0 +1,516 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vlastnosti-materialu",
+  "title": "Vlastnosti materiálů",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Čtyři skupiny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Proč je kladivo z oceli, a ne z hliníku? Proč je pánev z litiny a kabel z mědi? Každý materiál umí něco jiného. Konstruktér musí vybrat ten, který se pro součást hodí nejlépe."
+        },
+        {
+          "type": "text",
+          "text": "Aby mohl vybírat, popisuje materiály pomocí **vlastností**. Ty se dělí do čtyř skupin: fyzikální, chemické, mechanické a technologické. Kdo je zná, nepostaví most z olova ani nevyrobí pružinu z plastelíny."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vlastnost materiálu",
+          "definition": "Co materiál umí nebo jak se chová. Dá se změřit nebo aspoň porovnat.",
+          "example": "Ocel je pevnější než hliník. Měď vede proud lépe než ocel."
+        },
+        {
+          "type": "term",
+          "term": "Fyzikální vlastnosti",
+          "definition": "Vlastnosti, které má materiál „sám o sobě“, bez zatěžování a bez obrábění: hustota, teplota tání, tepelná a elektrická vodivost, tepelná roztažnost, magnetičnost.",
+          "example": "Hliník taje při 660 °C, železo až při 1 538 °C."
+        },
+        {
+          "type": "term",
+          "term": "Chemické vlastnosti",
+          "definition": "Jak materiál reaguje s okolím: se vzduchem, vodou, kyselinami. Nejdůležitější je **odolnost proti korozi** (rezavění).",
+          "example": "Obyčejná ocel na dešti rezaví, korozivzdorná (nerezová) ne."
+        },
+        {
+          "type": "term",
+          "term": "Mechanické vlastnosti",
+          "definition": "Jak se materiál chová, když na něj působí síla: jak moc vydrží, jak se prohne, jestli praskne.",
+          "example": "Lano jeřábu musí unést břemeno a nepřetrhnout se."
+        },
+        {
+          "type": "term",
+          "term": "Technologické vlastnosti",
+          "definition": "Jak dobře jde materiál zpracovat ve výrobě: odlít, vykovat, svařit, obrobit, zakalit.",
+          "example": "Šedá litina se výborně odlévá, ale kovat ani svařovat se běžně nedá."
+        },
+        {
+          "type": "heading",
+          "text": "Fyzikální vlastnosti krok za krokem"
+        },
+        {
+          "type": "term",
+          "term": "Hustota ρ",
+          "definition": "Kolik kilogramů váží jeden metr krychlový materiálu. `ρ = m / V`, jednotka kg/m³.",
+          "example": "Ocel asi 7 850 kg/m³, hliník asi 2 700 kg/m³."
+        },
+        {
+          "type": "text",
+          "text": "Porovnej hustoty běžných technických materiálů. Klepni na pruhy a všimni si, kolikrát je ocel těžší než hliník."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "kg/m³",
+            "items": [
+              {
+                "label": "hořčík",
+                "value": 1740
+              },
+              {
+                "label": "hliník",
+                "value": 2700
+              },
+              {
+                "label": "titan",
+                "value": 4510
+              },
+              {
+                "label": "ocel",
+                "value": 7850
+              },
+              {
+                "label": "měď",
+                "value": 8960
+              },
+              {
+                "label": "olovo",
+                "value": 11340
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Ocelová tyč má objem 0,002 m³ (např. 2 m dlouhá s průřezem 10 cm²). Jaká je její hmotnost?",
+          "answer": "Hustota oceli ρ = 7 850 kg/m³. m = ρ · V = 7 850 · 0,002 = **15,7 kg**. Stejná tyč z hliníku by vážila 2 700 · 0,002 = 5,4 kg."
+        },
+        {
+          "type": "term",
+          "term": "Tepelná roztažnost",
+          "definition": "Při ohřátí se materiál prodlouží, při ochlazení zkrátí. Proto mají koleje a mosty dilatační spáry.",
+          "example": "Ocelová kolejnice 100 m se při oteplení o 40 °C prodlouží asi o 5 cm."
+        },
+        {
+          "type": "heading",
+          "text": "Mechanické vlastnosti"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Pevnost** – jak velké namáhání materiál vydrží, než se poruší (přetrhne, zlomí).",
+            "**Pružnost** – po odlehčení se vrátí do původního tvaru (pružina).",
+            "**Plasticita (tvárnost)** – dá se trvale přetvořit, aniž praskne (ohnutý drát).",
+            "**Tvrdost** – odolnost proti vnikání cizího tělesa do povrchu (pilník, vrták).",
+            "**Houževnatost** – vydrží náraz, než praskne; opak je **křehkost** (sklo, šedá litina)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč je pružina z oceli a ne z mědi?",
+          "answer": "Pružina musí mít velkou **pružnost**: po stlačení se vrátit. Pružinová ocel má vysokou mez pružnosti. Měď je měkká a **plastická**: po stlačení by zůstala trvale zdeformovaná."
+        },
+        {
+          "type": "heading",
+          "text": "Technologické vlastnosti"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Slévatelnost** – jak dobře roztavený kov zaplní formu (litiny, slitiny Al-Si).",
+            "**Tvařitelnost** – jak dobře jde kovat, válcovat, ohýbat (měkká ocel, měď, hliník).",
+            "**Svařitelnost** – jak dobře jde svařit bez trhlin (ocel S235 výborně, šedá litina špatně).",
+            "**Obrobitelnost** – jak snadno se třísky odebírají nožem nebo frézou (mosaz výborně).",
+            "**Kalitelnost** – jestli jde ocel zakalit na vysokou tvrdost."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Tvrdý materiál je vždycky i pevný a odolný proti nárazu.",
+          "right": "Tvrdost a houževnatost jsou různé vlastnosti. Kalená ocel nebo šedá litina jsou tvrdé, ale křehké.",
+          "why": "Tvrdost říká, jak těžko se do povrchu něco zaboří. O tom, jestli materiál vydrží ránu, říká houževnatost."
+        },
+        {
+          "type": "summary",
+          "text": "Vlastnosti materiálů dělíme na fyzikální (hustota, tání, vodivost), chemické (koroze), mechanické (pevnost, pružnost, tvrdost, houževnatost) a technologické (slévatelnost, tvařitelnost, svařitelnost, obrobitelnost). Podle nich vybíráš materiál pro součást."
+        }
+      ]
+    },
+    {
+      "title": "Jako konstruktér",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že máš navrhnout tři věci: hák jeřábu, elektrický vodič a víko motoru auta. Každá potřebuje jiné vlastnosti. Hák musí být pevný a houževnatý, vodič musí vést proud, víko má být lehké a dobře se odlévat."
+        },
+        {
+          "type": "text",
+          "text": "Tady se naučíš vlastnosti třídit do skupin a podle nich vybrat materiál. Postupuješ jako konstruktér: nejdřív otázka „co součást potřebuje“, pak „který materiál to umí“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Materiál",
+          "definition": "Látka, ze které se vyrábí součásti. Ve strojírenství hlavně kovy (ocel, litina, hliník, měď), plasty a kompozity.",
+          "example": "Šroub z oceli, pouzdro z bronzu, kryt z plastu."
+        },
+        {
+          "type": "term",
+          "term": "Fyzikální vlastnost",
+          "definition": "Popisuje materiál bez zatížení: hustota, teplota tání, vodivost tepla a elektřiny, roztažnost, magnetičnost.",
+          "example": "Měď vede proud mnohem lépe než ocel, proto jsou z ní vodiče."
+        },
+        {
+          "type": "term",
+          "term": "Chemická vlastnost",
+          "definition": "Jak materiál odolává okolí: korozi, kyselinám, oxidaci za vysokých teplot.",
+          "example": "Hliník se na vzduchu pokryje tenkou ochrannou vrstvou oxidu."
+        },
+        {
+          "type": "term",
+          "term": "Mechanická vlastnost",
+          "definition": "Jak materiál snáší síly: pevnost, pružnost, plasticita, tvrdost, houževnatost, křehkost.",
+          "example": "Hák jeřábu musí být pevný i houževnatý."
+        },
+        {
+          "type": "term",
+          "term": "Technologická vlastnost",
+          "definition": "Jak jde materiál zpracovat: slévatelnost, tvařitelnost, svařitelnost, obrobitelnost, kalitelnost.",
+          "example": "Mosaz se snadno obrábí, proto se z ní dělají soustružené armatury."
+        },
+        {
+          "type": "term",
+          "term": "Houževnatost a křehkost",
+          "definition": "Houževnatý materiál se před porušením trochu zdeformuje a pohltí energii nárazu. Křehký praskne náhle, skoro bez deformace.",
+          "example": "Ocelový plech se při nárazu promáčkne, skleněná deska se roztříští."
+        },
+        {
+          "type": "heading",
+          "text": "Roztřiď vlastnosti"
+        },
+        {
+          "type": "text",
+          "text": "Každou vlastnost přiřaď do správné skupiny. Když se spleteš, kartička zatřese."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "fyzikální",
+              "chemická",
+              "mechanická",
+              "technologická"
+            ],
+            "items": [
+              {
+                "text": "hustota",
+                "group": 0
+              },
+              {
+                "text": "teplota tání",
+                "group": 0
+              },
+              {
+                "text": "elektrická vodivost",
+                "group": 0
+              },
+              {
+                "text": "odolnost proti korozi",
+                "group": 1
+              },
+              {
+                "text": "odolnost proti kyselinám",
+                "group": 1
+              },
+              {
+                "text": "pevnost",
+                "group": 2
+              },
+              {
+                "text": "tvrdost",
+                "group": 2
+              },
+              {
+                "text": "houževnatost",
+                "group": 2
+              },
+              {
+                "text": "svařitelnost",
+                "group": 3
+              },
+              {
+                "text": "obrobitelnost",
+                "group": 3
+              },
+              {
+                "text": "slévatelnost",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybrat materiál"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti, jak bude součást namáhaná (tah, ohyb, rázy, tření).",
+            "Zjisti prostředí (vlhko, teplo, chemikálie).",
+            "Zjisti, jak se bude vyrábět (odlévat, svařovat, obrábět).",
+            "Vypiš potřebné vlastnosti a ke každé najdi vhodný materiál.",
+            "Mezi vhodnými vyber ten nejlevnější a nejdostupnější."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Materiál",
+            "Silná stránka",
+            "Slabá stránka"
+          ],
+          "rows": [
+            [
+              "konstrukční ocel",
+              "pevná, houževnatá, svařitelná",
+              "rezaví, je těžká"
+            ],
+            [
+              "šedá litina",
+              "dobře se odlévá, tlumí chvění",
+              "křehká, nesvařitelná"
+            ],
+            [
+              "hliník a jeho slitiny",
+              "lehký, nekoroduje, vodivý",
+              "menší pevnost, dražší"
+            ],
+            [
+              "měď",
+              "výborně vede proud a teplo",
+              "měkká, drahá"
+            ],
+            [
+              "plasty",
+              "lehké, izolují, nekorodují",
+              "malá pevnost, vadí jim teplo"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Víko hlavy motoru auta má být lehké, dobře odvádět teplo a mít složitý tvar. Jaký materiál zvolíš?",
+          "answer": "Lehký + vodí teplo → **hliník**. Složitý tvar → odlitek, tedy slitina hliníku (hliník smíchaný s jiným prvkem) dobře slévatelná, např. hliník s křemíkem, tzv. silumin. Ocel by byla těžká, litina těžká a křehká."
+        },
+        {
+          "type": "example",
+          "question": "Hák jeřábu. Jaké vlastnosti potřebuje a z čeho bude?",
+          "answer": "Nese velké břemeno → vysoká **pevnost**. Může dostat ránu nebo trhnutí → **houževnatost**. Nesmí prasknout náhle. Proto **kovaná ocel**, ne šedá litina (ta je křehká)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Měď vede dobře proud, tak z ní budu dělat i hřídele.",
+          "right": "Hřídel potřebuje pevnost a tuhost → ocel. Měď je na hřídel příliš měkká.",
+          "why": "Jedna dobrá vlastnost nestačí. Materiál vybíráš podle toho, co součást opravdu potřebuje."
+        },
+        {
+          "type": "summary",
+          "text": "Konstruktér nejdřív zjistí namáhání, prostředí a způsob výroby. Pak podle fyzikálních, chemických, mechanických a technologických vlastností vybere materiál, který vyhoví a je co nejlevnější."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Do které skupiny patří hustota?",
+      "options": [
+        "fyzikální vlastnosti",
+        "mechanické vlastnosti",
+        "technologické vlastnosti",
+        "chemické vlastnosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost je technologická?",
+      "options": [
+        "svařitelnost",
+        "pevnost",
+        "teplota tání",
+        "tvrdost"
+      ],
+      "answer": 0,
+      "explanation": "Technologické vlastnosti říkají, jak jde materiál zpracovat."
+    },
+    {
+      "type": "choice",
+      "question": "Odolnost proti vnikání cizího tělesa do povrchu se nazývá…",
+      "options": [
+        "tvrdost",
+        "pevnost",
+        "houževnatost",
+        "pružnost"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Šedá litina je tvrdá, ale křehká – špatně snáší rázy.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Pružnost znamená, že se materiál dá trvale přetvořit bez prasknutí.",
+      "answer": false,
+      "explanation": "To je plasticita. Pružný materiál se po odlehčení vrátí do původního tvaru."
+    },
+    {
+      "type": "input",
+      "question": "Hustota oceli je 7 850 kg/m³. Hmotnost ocelového bloku o objemu 0,01 m³ v kg =",
+      "answers": [
+        "78,5",
+        "78.5"
+      ],
+      "explanation": "m = ρ · V = 7 850 · 0,01 = 78,5 kg.",
+      "hints": [
+        "Hmotnost = hustota krát objem.",
+        "Vynásob 7 850 číslem 0,01."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hliník má hustotu 2 700 kg/m³, ocel 7 850 kg/m³. Kolikrát je ocel těžší? Zaokrouhli na celé číslo.",
+      "answers": [
+        "3"
+      ],
+      "explanation": "7 850 / 2 700 ≈ 2,9, tedy asi 3krát.",
+      "hints": [
+        "Vyděl větší hustotu menší."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá schopnost materiálu vydržet náraz, než praskne?",
+      "answers": [
+        "houževnatost",
+        "houzevnatost"
+      ],
+      "hints": [
+        "Opak této vlastnosti je křehkost."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj vlastnost s příkladem.",
+      "pairs": [
+        [
+          "pružnost",
+          "pružina se vrátí"
+        ],
+        [
+          "plasticita",
+          "ohnutý drát zůstane ohnutý"
+        ],
+        [
+          "křehkost",
+          "sklo se roztříští"
+        ],
+        [
+          "slévatelnost",
+          "kov zaplní formu"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj materiál s jeho přednostní vlastností.",
+      "pairs": [
+        [
+          "měď",
+          "elektrická vodivost"
+        ],
+        [
+          "hliník",
+          "malá hustota"
+        ],
+        [
+          "šedá litina",
+          "tlumí chvění"
+        ],
+        [
+          "korozivzdorná ocel",
+          "odolnost proti korozi"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď materiály od nejlehčího (nejmenší hustota) po nejtěžší.",
+      "items": [
+        "hořčík",
+        "hliník",
+        "titan",
+        "ocel",
+        "olovo"
+      ],
+      "hints": [
+        "Hořčík je nejlehčí konstrukční kov.",
+        "Olovo je ze všech nejtěžší."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na hák jeřábu nejlépe použiješ…",
+      "options": [
+        "kovanou ocel",
+        "šedou litinu",
+        "měď",
+        "polystyren"
+      ],
+      "answer": 0,
+      "explanation": "Hák potřebuje pevnost a houževnatost. Šedá litina je křehká."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi tvrdostí a houževnatostí a uveď příklad materiálu, který je tvrdý, ale křehký.",
+      "answer": "Tvrdost je odolnost povrchu proti vnikání cizího tělesa. Houževnatost je schopnost pohltit energii nárazu a nepraskout. Tvrdý, ale křehký je například kalená ocel bez popuštění, šedá litina nebo sklo."
+    },
+    {
+      "type": "open",
+      "question": "Jak postupuješ při výběru materiálu pro novou součást?",
+      "answer": "Zjistím, jak bude součást namáhaná, v jakém prostředí pracuje a jak se bude vyrábět. Podle toho určím potřebné mechanické, chemické a technologické vlastnosti a vyberu materiál, který je splní a je co nejlevnější."
+    }
+  ]
+}

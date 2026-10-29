@@ -1,0 +1,478 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "tepelne-zpracovani",
+  "title": "Tepelné zpracování ocelí",
+  "emoji": "🔥",
+  "explanations": [
+    {
+      "title": "Ohřev a ochlazení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Z jedné tyče oceli C45 můžeš udělat měkký polotovar, který se dobře obrábí, i tvrdý čep, který vydrží roky tření. Stačí ocel jinak ohřát a jinak ochladit. Ocel přitom nemění tvar ani chemické složení – mění se jen její vnitřní struktura."
+        },
+        {
+          "type": "text",
+          "text": "Tomu se říká **tepelné zpracování**. Každé má tři části: ohřev na danou teplotu, výdrž na teplotě a ochlazení danou rychlostí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tepelné zpracování",
+          "definition": "Řízený ohřev, výdrž a ochlazení kovu, kterým se změní jeho struktura a tím vlastnosti. Tvar ani složení se nemění.",
+          "example": "Kalení ocelového nože."
+        },
+        {
+          "type": "term",
+          "term": "Austenit",
+          "definition": "Struktura oceli za vysoké teploty (v uhlíkových ocelích nad 727 °C). Rozpouští hodně uhlíku. Odtud se při ochlazení vytvoří různé struktury.",
+          "example": "Ocel ohřátá na 850 °C je austenitická."
+        },
+        {
+          "type": "term",
+          "term": "Teploty A1 a A3",
+          "definition": "Hranice z diagramu železo–uhlík. **A1** = 727 °C, pod ní austenit není. **A3** = teplota, nad kterou je ocel s méně než 0,77 % C celá austenitická (pro C45 asi 780 °C).",
+          "example": "Kalicí teplotu volíme podle A3."
+        },
+        {
+          "type": "term",
+          "term": "Vnitřní pnutí",
+          "definition": "Napětí, které zůstane v součásti po svařování, tváření nebo rychlém ochlazení, i když na ni nic nepůsobí. Může způsobit zkroucení nebo trhliny.",
+          "example": "Svařený rám se po obrobení zkroutí."
+        },
+        {
+          "type": "heading",
+          "text": "Žíhání: chceme ocel klidnou a měkkou"
+        },
+        {
+          "type": "term",
+          "term": "Žíhání",
+          "definition": "Ohřev, výdrž a **pomalé** ochlazení (obvykle v peci). Cílem je odstranit pnutí, změkčit ocel nebo zjemnit zrno.",
+          "example": "Výkovek se před obráběním žíhá."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Druh žíhání",
+            "Teplota (orientačně)",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "ke snížení pnutí",
+              "550–650 °C (pod A1)",
+              "odstraní pnutí po svařování a hrubování"
+            ],
+            [
+              "na měkko",
+              "kolem A1, asi 680–740 °C",
+              "nejměkčí stav, lepší obrobitelnost"
+            ],
+            [
+              "normalizační",
+              "30–50 °C nad A3, chladnutí na vzduchu",
+              "jemné, rovnoměrné zrno"
+            ],
+            [
+              "rekrystalizační",
+              "pod A1, podle stupně tváření",
+              "obnoví tvárnost po tváření za studena"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kalení: chceme ocel tvrdou"
+        },
+        {
+          "type": "term",
+          "term": "Kalení",
+          "definition": "Ohřev do oblasti austenitu (podeutektoidní ocel 30–50 °C nad A3), výdrž a **rychlé** ochlazení ve vodě, oleji nebo polymerní lázni. Vznikne **martenzit**.",
+          "example": "Kalení břitu sekáče do vody."
+        },
+        {
+          "type": "term",
+          "term": "Martenzit",
+          "definition": "Velmi tvrdá a křehká struktura. Vzniká, když se austenit ochladí tak rychle, že uhlík nestihne z mřížky uniknout.",
+          "example": "Kalená ložisková ocel má kolem 60 HRC."
+        },
+        {
+          "type": "term",
+          "term": "Kritická rychlost ochlazování",
+          "definition": "Nejmenší rychlost ochlazení, při které ještě vznikne martenzit. Legované oceli ji mají menší, proto je stačí kalit do oleje nebo i na vzduchu.",
+          "example": "Uhlíková ocel C45 se kalí do vody, 42CrMo4 do oleje."
+        },
+        {
+          "type": "text",
+          "text": "Zakalit jde jen ocel s dostatkem uhlíku, zhruba od 0,3 % C. Ocel S235 (asi 0,2 % C) se prakticky nezakalí."
+        },
+        {
+          "type": "heading",
+          "text": "Popouštění: ubereme křehkost"
+        },
+        {
+          "type": "term",
+          "term": "Popouštění",
+          "definition": "Ohřev zakalené oceli pod A1, výdrž a ochlazení. Sníží pnutí a křehkost, ale i tvrdost. Dělá se hned po kalení.",
+          "example": "Nástroj se popouští na 180 °C."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Nízkoteplotní popouštění** (asi 150–250 °C): zůstane vysoká tvrdost, ubude pnutí. Nástroje, měřidla, ložiska.",
+            "**Vysokoteplotní popouštění** (asi 500–650 °C): ocel je pevná i houževnatá. Kalení + vysoké popouštění = **zušlechťování**. Hřídele, ojnice, šrouby vyšších pevností."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ocel C45 (A3 ≈ 780 °C) chceš zakalit. Na jakou teplotu ji ohřeješ?",
+          "answer": "Podeutektoidní ocel kalíme 30–50 °C nad A3: 780 + 30 = 810 °C až 780 + 50 = 830 °C. Ohřeješ na **asi 810–830 °C**, vydržíš a ochladíš do vody. Přesnou teplotu vždy ber z materiálového listu oceli."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel z 42CrMo4 má být pevná, ale nesmí prasknout při rázu. Jaké zpracování zvolíš?",
+          "answer": "Potřebuje pevnost i houževnatost → **zušlechtění**: kalení do oleje a pak **vysokoteplotní popouštění** (asi 550–650 °C). Samotné kalení by ji udělalo křehkou."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Po kalení je součást hotová, popouštění není potřeba.",
+          "right": "Po kalení se ocel **vždy popouští**, a to co nejdřív.",
+          "why": "Martenzit je křehký a plný pnutí. Bez popouštění hrozí trhliny i samovolné prasknutí součásti."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost u kalírny"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pracuj v ohnivzdorném oděvu, s ochranným štítem nebo brýlemi a kalicími rukavicemi.",
+            "Díl ponořuj do oleje celý a rychle – olej může vzplanout. U lázně měj víko a hasicí přístroj.",
+            "Rozžhavený i „už vychladlý“ díl beri jen kleštěmi – ocel pod 500 °C nesvítí, ale popálí."
+          ]
+        },
+        {
+          "type": "summary",
+          "text": "Tepelné zpracování = ohřev, výdrž, ochlazení. Žíhání (pomalu) změkčí a uklidní ocel, kalení (rychle) dá tvrdý martenzit, popouštění sníží křehkost. Kalení + vysoké popouštění = zušlechťování."
+        }
+      ]
+    },
+    {
+      "title": "U kováře",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kovář vyková sekáč, nechá ho vychladnout a obrousí. Pak špičku rozžhaví do třešňově červené a ponoří do vody – zasyčí to. Sekáč je teď tvrdý, ale křehký. Kovář ho proto znovu opatrně ohřeje, až se na vyleštěném povrchu objeví slámová barva, a ochladí. Teď je tvrdý i odolný."
+        },
+        {
+          "type": "text",
+          "text": "To jsou tři hlavní kroky tepelného zpracování: žíhání, kalení a popouštění. V dílně dnes místo barev použiješ pec s teploměrem, ale princip je stejný."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Teplota ohřevu",
+          "definition": "Na kolik °C se součást ohřeje. Volí se podle druhu oceli a podle toho, čeho chceš dosáhnout.",
+          "example": "Kalení C45 asi na 820 °C."
+        },
+        {
+          "type": "term",
+          "term": "Výdrž",
+          "definition": "Doba, po kterou se součást na teplotě nechá, aby se prohřála celá a struktura se přeměnila.",
+          "example": "Orientačně se počítá podle tloušťky stěny."
+        },
+        {
+          "type": "term",
+          "term": "Rychlost ochlazování",
+          "definition": "Jak rychle součást chladne. Od nejpomalejší: v peci → na vzduchu → v oleji → ve vodě.",
+          "example": "Ve vodě chladne ocel mnohem rychleji než v oleji."
+        },
+        {
+          "type": "term",
+          "term": "Austenit",
+          "definition": "Struktura oceli za vysoké teploty, kdy je v ní rozpuštěné hodně uhlíku. Z ní při ochlazení vznikají ostatní struktury.",
+          "example": "Rozžhavená ocel při kalicí teplotě."
+        },
+        {
+          "type": "term",
+          "term": "Teploty A1 a A3",
+          "definition": "**A1** = 727 °C, pod ní v uhlíkové oceli austenit není. **A3** = teplota, nad kterou je ocel s méně než 0,77 % C celá austenitická.",
+          "example": "Pro C45 je A3 asi 780 °C."
+        },
+        {
+          "type": "term",
+          "term": "Martenzit",
+          "definition": "Tvrdá, křehká struktura oceli po rychlém ochlazení z austenitu.",
+          "example": "Tvrdý břit sekáče."
+        },
+        {
+          "type": "term",
+          "term": "Houževnatost",
+          "definition": "Schopnost materiálu snést ránu a nepraskout.",
+          "example": "Zušlechtěná hřídel vydrží rázy."
+        },
+        {
+          "type": "heading",
+          "text": "Tři operace v tabulce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operace",
+            "Ohřev",
+            "Ochlazení",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "žíhání",
+              "podle druhu žíhání (550–900 °C)",
+              "pomalu (pec, vzduch)",
+              "měkčí, bez pnutí, jemné zrno"
+            ],
+            [
+              "kalení",
+              "30–50 °C nad A3 (do oblasti austenitu)",
+              "rychle (voda, olej)",
+              "tvrdý a křehký martenzit"
+            ],
+            [
+              "popouštění",
+              "pod A1 (150–650 °C)",
+              "na vzduchu",
+              "méně křehké, pnutí zmizí"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "A3 je teplota, nad kterou je ocel celá austenitická – tedy připravená ke kalení. Pro ocel C45 je to asi 780 °C."
+        },
+        {
+          "type": "heading",
+          "text": "Postup zušlechtění hřídele"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ohřej hřídel z C45 v peci na asi 820 °C.",
+            "Nech ji prohřát (výdrž).",
+            "Rychle ji ponoř do vody a pohybuj s ní, aby se kolem netvořila pára.",
+            "Hned potom ji vlož do popouštěcí pece na asi 550–600 °C.",
+            "Po výdrži ji nech vychladnout na vzduchu.",
+            "Zkontroluj tvrdost tvrdoměrem."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč se hřídel ve vodě pohybuje?",
+          "answer": "Kolem rozžhavené oceli se tvoří **parní polštář**. Ten zpomaluje ochlazení. Kde by se pára držela, ocel by se nezakalila a vznikla by **měkká místa**. Pohybem se polštář strhává."
+        },
+        {
+          "type": "example",
+          "question": "Řezné nářadí: nízké, nebo vysoké popouštění?",
+          "answer": "Nůž, výstružník nebo měřidlo musí zůstat **tvrdé**, aby se neotupily. Proto **nízkoteplotní popouštění** (asi 150–250 °C). Vysoké popouštění by tvrdost snížilo příliš."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Žíhání na měkko",
+                "back": "kolem A1, pomalé ochlazení → nejměkčí stav pro obrábění"
+              },
+              {
+                "front": "Normalizační žíhání",
+                "back": "30–50 °C nad A3, chladnutí na vzduchu → jemné zrno"
+              },
+              {
+                "front": "Žíhání ke snížení pnutí",
+                "back": "550–650 °C, pomalu → zmizí pnutí po svařování"
+              },
+              {
+                "front": "Zušlechťování",
+                "back": "kalení + popouštění 500–650 °C → pevnost i houževnatost"
+              },
+              {
+                "front": "Povrchové kalení",
+                "back": "rychlý ohřev jen povrchu (indukce, plamen) a ochlazení → tvrdý povrch, houževnaté jádro"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otáčej kartičky. Zkus vždy nejdřív sám říct teplotu a účel."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím rychleji ocel ochladím, tím lépe – vždycky dám vodu.",
+          "right": "Prostředí volíš podle oceli. Uhlíkové oceli do vody, legované do oleje nebo na vzduch.",
+          "why": "Příliš ostré ochlazení legované oceli vede k velkému pnutí, deformaci a trhlinám. Legovaná ocel se zakalí i při pomalejším ochlazení."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bezpečnost: ochranný štít nebo brýle, ohnivzdorný oděv, kalicí rukavice, kleště. U olejové lázně hasicí přístroj a víko – olej může vzplanout."
+          ]
+        },
+        {
+          "type": "summary",
+          "text": "Žíhání = pomalé ochlazení (měkčí, bez pnutí), kalení = rychlé ochlazení z austenitu (tvrdý martenzit), popouštění = ohřev pod A1 po kalení (méně křehké). Nízké popouštění pro nástroje, vysoké pro zušlechtěné součásti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které tři fáze má každé tepelné zpracování?",
+      "options": [
+        "ohřev, výdrž, ochlazení",
+        "tavení, lití, tuhnutí",
+        "kování, válcování, tažení",
+        "broušení, leštění, mytí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká struktura vzniká při kalení oceli?",
+      "options": [
+        "martenzit",
+        "perlit",
+        "ferit",
+        "ledeburit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je zušlechťování?",
+      "options": [
+        "kalení + vysokoteplotní popouštění",
+        "kalení + nízkoteplotní popouštění",
+        "žíhání na měkko",
+        "normalizační žíhání"
+      ],
+      "answer": 0,
+      "hints": [
+        "Zušlechtěná ocel má být pevná i houževnatá."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Po kalení se ocel má co nejdříve popustit.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Ocel S235 s asi 0,2 % C se dobře zakalí na vysokou tvrdost.",
+      "answer": false,
+      "explanation": "Ke kalení je potřeba zhruba aspoň 0,3 % C."
+    },
+    {
+      "type": "truefalse",
+      "question": "Normalizační žíhání zjemňuje zrno.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "A3 oceli je 780 °C. Spodní hranice kalicí teploty (A3 + 30 °C) ve °C =",
+      "answers": [
+        "810"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje operace, při které se zakalená ocel ohřeje pod A1, aby byla méně křehká?",
+      "answers": [
+        "popouštění",
+        "popousteni"
+      ],
+      "hints": [
+        "Dělá se vždy hned po kalení."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj operaci s cílem.",
+      "pairs": [
+        [
+          "žíhání na měkko",
+          "lepší obrobitelnost"
+        ],
+        [
+          "žíhání ke snížení pnutí",
+          "odstranit pnutí po svařování"
+        ],
+        [
+          "kalení",
+          "vysoká tvrdost"
+        ],
+        [
+          "nízké popouštění",
+          "tvrdý nástroj s menším pnutím"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď ochlazovací prostředí od nejpomalejšího po nejrychlejší.",
+      "items": [
+        "pec",
+        "klidný vzduch",
+        "olej",
+        "voda"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky zušlechtění hřídele.",
+      "items": [
+        "ohřev nad A3",
+        "výdrž na teplotě",
+        "rychlé ochlazení",
+        "ohřev na popouštěcí teplotu",
+        "ochlazení na vzduchu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se díl při kalení do vody pohybuje?",
+      "options": [
+        "aby se strhával parní polštář a nevznikla měkká místa",
+        "aby se voda nevařila",
+        "aby se díl rychleji ohřál",
+        "aby se smyly okuje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš rozdíl mezi žíháním, kalením a popouštěním.",
+      "answer": "Žíhání je ohřev s pomalým ochlazením, ocel změkne, ztratí pnutí nebo se zjemní zrno. Kalení je ohřev do oblasti austenitu a rychlé ochlazení, vznikne tvrdý a křehký martenzit. Popouštění je ohřev zakalené oceli pod A1, sníží křehkost a pnutí."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady dodržuješ při kalení do oleje?",
+      "answer": "Používám ochranný štít nebo brýle, ohnivzdorný oděv a kalicí rukavice, díl držím kleštěmi. Díl ponořuji rychle a celý, aby olej nevzplanul, u lázně je víko a hasicí přístroj. S díly zacházím, jako by byly horké, i když nesvítí."
+    }
+  ]
+}

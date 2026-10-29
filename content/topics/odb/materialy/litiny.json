@@ -1,0 +1,460 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "litiny",
+  "title": "Litiny",
+  "emoji": "🍳",
+  "explanations": [
+    {
+      "title": "Tvar uhlíku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kanalizační poklop, lože soustruhu, blok motoru, brzdový kotouč nebo babiččin pekáč. Všechno to jsou **odlitky z litiny**. Litina se dobře odlévá do složitých tvarů a je levná."
+        },
+        {
+          "type": "text",
+          "text": "Litin je ale víc druhů. Jedna je křehká jako sklo, jiná snese ohyb skoro jako ocel. Rozdíl dělá tvar, v jakém je v ní uhlík."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Litina",
+          "definition": "Slitina železa s více než 2,14 % uhlíku (obvykle 2,5–4 % C) a s křemíkem. Nedá se kovat, zpracovává se odléváním.",
+          "example": "Šedá litina na lože obráběcího stroje."
+        },
+        {
+          "type": "term",
+          "term": "Odlitek",
+          "definition": "Součást vyrobená tak, že se roztavený kov nalije do formy a nechá ztuhnout.",
+          "example": "Těleso čerpadla."
+        },
+        {
+          "type": "term",
+          "term": "Grafit",
+          "definition": "Čistý uhlík ve formě měkkých šupinek nebo kuliček. V litině je vyloučený mezi zrny kovu.",
+          "example": "Tuha v tužce je také grafit."
+        },
+        {
+          "type": "term",
+          "term": "Cementit",
+          "definition": "Fe₃C – tvrdá a křehká sloučenina železa s uhlíkem.",
+          "example": "V bílé litině je uhlík vázaný v cementitu."
+        },
+        {
+          "type": "term",
+          "term": "Mez pevnosti a tažnost",
+          "definition": "**Mez pevnosti v tahu** (MPa) = největší napětí, které materiál při natahování vydrží. **Tažnost** (%) = o kolik se vzorek prodlouží, než se přetrhne. Velká tažnost = houževnatý materiál.",
+          "example": "Šedá litina má tažnost skoro nulovou, tvárná i 15 % a víc."
+        },
+        {
+          "type": "heading",
+          "text": "Kam se uhlík v litině „schová“"
+        },
+        {
+          "type": "text",
+          "text": "Uhlík v litině je buď **vázaný** v cementitu, nebo **volný** jako grafit. Grafit podporuje křemík a pomalé chladnutí. Cementit vzniká při rychlém chladnutí a malém obsahu křemíku."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Litina",
+            "Tvar uhlíku",
+            "Vlastnosti",
+            "Značka (ČSN EN)"
+          ],
+          "rows": [
+            [
+              "bílá",
+              "cementit (vázaný)",
+              "velmi tvrdá, křehká, neobrobitelná",
+              "–"
+            ],
+            [
+              "šedá",
+              "lupínkový grafit",
+              "dobře se odlévá a obrábí, tlumí chvění, křehká v tahu",
+              "EN-GJL-250"
+            ],
+            [
+              "tvárná",
+              "kuličkový grafit",
+              "pevná a houževnatá, blízko oceli",
+              "EN-GJS-400-15"
+            ],
+            [
+              "temperovaná",
+              "vločkový grafit (z bílé litiny žíháním)",
+              "houževnatá, i tenkostěnné díly",
+              "EN-GJMB-350-10"
+            ],
+            [
+              "s červíkovitým grafitem",
+              "vermikulární grafit",
+              "mezi šedou a tvárnou",
+              "EN-GJV-400"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lupínky grafitu fungují jako drobné vruby (zářezy). Napětí se na jejich ostrých okrajích soustředí, proto je šedá litina v tahu křehká. Kuličky ostré okraje nemají – proto je tvárná litina houževnatá."
+        },
+        {
+          "type": "heading",
+          "text": "Jak číst značku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**EN-GJ** = litina (G = odlitek, J = železo).",
+            "Další písmeno = tvar grafitu: **L** lupínkový, **S** kuličkový, **M** temperovaná, **V** vermikulární.",
+            "První číslo = minimální mez pevnosti v tahu v MPa.",
+            "U tvárné a temperované druhé číslo = tažnost v %."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co znamená EN-GJS-500-7?",
+          "answer": "GJ → litina, S → kuličkový grafit = **tvárná litina**. Mez pevnosti nejméně **500 MPa**, tažnost nejméně **7 %**."
+        },
+        {
+          "type": "example",
+          "question": "Proč je lože soustruhu ze šedé litiny, a ne svařené z ocelových plechů?",
+          "answer": "Šedá litina **tlumí chvění** (grafit pohlcuje vibrace), dobře se **odlévá** do složitého tvaru a je **levná**. Lože hlavně nese tlak, a v tlaku je šedá litina pevná. Klidné lože = přesnější obrábění."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Všechny litiny jsou křehké.",
+          "right": "Šedá a bílá litina jsou křehké, ale **tvárná** a **temperovaná** litina jsou houževnaté.",
+          "why": "Rozhoduje tvar grafitu. Kuličky nebo vločky nevytvářejí ostré vruby jako lupínky."
+        },
+        {
+          "type": "summary",
+          "text": "Litina má víc než 2,14 % C. Bílá má uhlík v cementitu (tvrdá, křehká), šedá v lupíncích grafitu (tlumí chvění, křehká v tahu), tvárná v kuličkách (pevná, houževnatá). Značí se EN-GJL, EN-GJS, EN-GJMB/GJMW, EN-GJV."
+        }
+      ]
+    },
+    {
+      "title": "Ve slévárně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si slévárnu. Z jedné pece teče roztavené železo s uhlíkem. Podle toho, co do něj přidáš a jak rychle ho necháš chladnout, vznikne úplně jiný materiál. Ukážeme si čtyři cesty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Litina",
+          "definition": "Železo s více než 2,14 % uhlíku, většinou 2,5–4 % C a 1–3 % křemíku. Taje při nižší teplotě než ocel, proto se dobře odlévá.",
+          "example": "Tvárná litina na potrubí pitné vody."
+        },
+        {
+          "type": "term",
+          "term": "Grafit",
+          "definition": "Volný uhlík. V litině vypadá jako lupínky, kuličky nebo vločky. Je měkký a mazlavý.",
+          "example": "Lom šedé litiny je šedý právě od grafitu."
+        },
+        {
+          "type": "term",
+          "term": "Očkování (modifikace)",
+          "definition": "Přidání malého množství látky do taveniny těsně před odlitím, aby se změnil tvar grafitu. Hořčík způsobí, že grafit vyroste do kuliček.",
+          "example": "Šedá litina + hořčík → tvárná litina."
+        },
+        {
+          "type": "term",
+          "term": "Temperování",
+          "definition": "Dlouhé žíhání odlitku z bílé litiny (desítky hodin). Cementit se rozloží a uhlík se vyloučí jako vločky grafitu, nebo se z povrchu odstraní.",
+          "example": "Tak se vyrábějí tenkostěnné tvarovky a části řetězů."
+        },
+        {
+          "type": "term",
+          "term": "Mez pevnosti a tažnost",
+          "definition": "**Mez pevnosti v tahu** (MPa) = největší napětí, které materiál při natahování vydrží. **Tažnost** (%) = o kolik se vzorek prodlouží, než se přetrhne. Velká tažnost = houževnatý materiál.",
+          "example": "Šedá litina má tažnost skoro nulovou, tvárná i 15 % a víc."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři cesty ve slévárně"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rychlé ochlazení, málo křemíku → uhlík zůstane v cementitu → **bílá litina**. Tvrdá, odolná proti otěru, ale křehká a neobrobitelná.",
+            "Pomalé ochlazení, víc křemíku → grafit v lupíncích → **šedá litina**. Nejlevnější a nejrozšířenější.",
+            "Šedá tavenina + očkování hořčíkem → grafit v kuličkách → **tvárná litina** (s kuličkovým grafitem).",
+            "Odlitek z bílé litiny + temperování → grafit ve vločkách → **temperovaná litina**."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Projdi cesty postupně a u každé si řekni, jaký tvar má grafit."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "šedá litina",
+              "tvárná litina",
+              "bílá litina"
+            ],
+            "items": [
+              {
+                "text": "lupínkový grafit",
+                "group": 0
+              },
+              {
+                "text": "lože obráběcího stroje",
+                "group": 0
+              },
+              {
+                "text": "EN-GJL-200",
+                "group": 0
+              },
+              {
+                "text": "kuličkový grafit",
+                "group": 1
+              },
+              {
+                "text": "kliková hřídel",
+                "group": 1
+              },
+              {
+                "text": "EN-GJS-400-15",
+                "group": 1
+              },
+              {
+                "text": "uhlík v cementitu",
+                "group": 2
+              },
+              {
+                "text": "bílý lom",
+                "group": 2
+              },
+              {
+                "text": "velmi tvrdá, neobrobitelná",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání pevnosti"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "MPa (minimální pevnost v tahu)",
+            "items": [
+              {
+                "label": "EN-GJL-150",
+                "value": 150
+              },
+              {
+                "label": "EN-GJL-250",
+                "value": 250
+              },
+              {
+                "label": "EN-GJS-400-15",
+                "value": 400
+              },
+              {
+                "label": "EN-GJS-700-2",
+                "value": 700
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Čísla v pruzích jsou přímo čísla ze značky. Všimni si, že s pevností tvárné litiny klesá tažnost (15 % → 2 %)."
+        },
+        {
+          "type": "example",
+          "question": "Brzdový kotouč osobního auta bývá ze šedé litiny. Proč?",
+          "answer": "Kotouč se třením zahřívá. Šedá litina **dobře vede teplo**, **tlumí chvění** (méně pískání) a grafit působí jako mazivo, takže se kotouč rovnoměrně opotřebovává. Navíc je levná a dobře se odlévá."
+        },
+        {
+          "type": "example",
+          "question": "Potrubí pro vodu v zemi. Šedá, nebo tvárná litina?",
+          "answer": "Potrubí může dostat ránu nebo se ohnout, když sedá zem. Šedá litina by praskla. **Tvárná litina** je houževnatá a vydrží ohyb – proto se na tlakové vodovodní potrubí používá ona."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Tvárnou litinu můžu kovat jako ocel, když je „tvárná“.",
+          "right": "Tvárná litina se nekove. Vyrábí se odléváním.",
+          "why": "Slovo „tvárná“ znamená, že je houževnatá a má tažnost. Pořád je to litina s grafitem, která by se při kování porušila."
+        },
+        {
+          "type": "summary",
+          "text": "Bílá litina vznikne rychlým chladnutím (cementit), šedá pomalým chladnutím a křemíkem (lupínky), tvárná očkováním hořčíkem (kuličky), temperovaná žíháním bílé litiny (vločky). Kulatější grafit = houževnatější litina."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kolik uhlíku má litina?",
+      "options": [
+        "více než 2,14 %",
+        "méně než 0,77 %",
+        "přesně 0,77 %",
+        "více než 6,67 %"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar má grafit v šedé litině?",
+      "options": [
+        "lupínky",
+        "kuličky",
+        "vločky",
+        "žádný grafit nemá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Čím se očkuje tavenina, aby vznikla tvárná litina?",
+      "options": [
+        "hořčíkem",
+        "olovem",
+        "sírou",
+        "kyslíkem"
+      ],
+      "answer": 0,
+      "hints": [
+        "Je to lehký kov, který se používá i na slitiny pro letadla."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Šedá litina dobře tlumí chvění, proto se z ní dělají lože obráběcích strojů.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Bílá litina se snadno obrábí.",
+      "answer": false,
+      "explanation": "Bílá litina je velmi tvrdá díky cementitu a prakticky se neobrábí."
+    },
+    {
+      "type": "input",
+      "question": "Minimální mez pevnosti v MPa litiny EN-GJS-400-15 =",
+      "answers": [
+        "400"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Minimální tažnost v % litiny EN-GJS-400-15 =",
+      "answers": [
+        "15"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Které písmeno ve značce litiny znamená kuličkový grafit?",
+      "answers": [
+        "S"
+      ],
+      "hints": [
+        "Pochází z anglického slova pro kouli."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj litinu s tvarem uhlíku.",
+      "pairs": [
+        [
+          "bílá",
+          "cementit"
+        ],
+        [
+          "šedá",
+          "lupínkový grafit"
+        ],
+        [
+          "tvárná",
+          "kuličkový grafit"
+        ],
+        [
+          "temperovaná",
+          "vločkový grafit"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s druhem litiny.",
+      "pairs": [
+        [
+          "EN-GJL",
+          "šedá"
+        ],
+        [
+          "EN-GJS",
+          "tvárná"
+        ],
+        [
+          "EN-GJMB",
+          "temperovaná"
+        ],
+        [
+          "EN-GJV",
+          "s červíkovitým grafitem"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď litiny podle minimální pevnosti od nejmenší.",
+      "items": [
+        "EN-GJL-150",
+        "EN-GJL-250",
+        "EN-GJS-400-15",
+        "EN-GJS-600-3"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč je šedá litina křehká v tahu?",
+      "options": [
+        "ostré lupínky grafitu působí jako vruby",
+        "obsahuje málo uhlíku",
+        "má kuličkový grafit",
+        "je příliš měkká"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak se vyrábí tvárná litina a proč je houževnatější než šedá.",
+      "answer": "Do taveniny šedé litiny se před odlitím přidá hořčík (očkování). Grafit pak vyroste do kuliček místo lupínků. Kuličky nemají ostré okraje, nesoustřeďují napětí jako vruby, proto litina snese tah i ohyb a má tažnost."
+    },
+    {
+      "type": "open",
+      "question": "Uveď tři výhody šedé litiny a jednu nevýhodu.",
+      "answer": "Výhody: dobře se odlévá do složitých tvarů, tlumí chvění, dobře se obrábí, je levná a dobře snáší tlak. Nevýhoda: je křehká v tahu a při rázech, nedá se kovat a špatně se svařuje."
+    }
+  ]
+}

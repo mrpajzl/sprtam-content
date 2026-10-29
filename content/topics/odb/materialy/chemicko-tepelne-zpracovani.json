@@ -1,0 +1,436 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "chemicko-tepelne-zpracovani",
+  "title": "Chemicko-tepelné zpracování",
+  "emoji": "🧂",
+  "explanations": [
+    {
+      "title": "Tvrdý povrch",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ozubené kolo v převodovce má dva protichůdné úkoly. Zuby se o sebe třou, takže povrch musí být **tvrdý**. Zároveň dostávají rázy, takže jádro musí být **houževnaté**, aby zub neulomil. Obyčejné kalení dá tvrdost všude – i křehkost všude."
+        },
+        {
+          "type": "text",
+          "text": "Řešení: změnit chemické složení **jen v povrchové vrstvě**. Tomu se říká chemicko-tepelné zpracování."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Chemicko-tepelné zpracování",
+          "definition": "Ohřev součásti v prostředí, které obsahuje určitý prvek (uhlík, dusík…). Prvek pronikne do povrchu a změní jeho složení a vlastnosti. Jádro zůstane jako dřív.",
+          "example": "Cementace, nitridace."
+        },
+        {
+          "type": "term",
+          "term": "Difuze",
+          "definition": "Samovolné pronikání atomů z místa, kde jich je hodně, tam, kde jich je málo. S vyšší teplotou a delší dobou jde rychleji a hlouběji.",
+          "example": "Kapka inkoustu se ve vodě sama rozptýlí."
+        },
+        {
+          "type": "term",
+          "term": "Houževnatost",
+          "definition": "Schopnost snést ránu a nepraskout.",
+          "example": "Houževnaté jádro zubu se při rázu neulomí."
+        },
+        {
+          "type": "term",
+          "term": "Kalení a popouštění",
+          "definition": "Připomenutí: **kalení** = ohřev a rychlé ochlazení, ocel s dost uhlíkem ztvrdne (martenzit). **Popouštění** = mírný ohřev po kalení, který sníží křehkost.",
+          "example": "Ocel s 0,8 % C se zakalí, s 0,15 % C skoro ne."
+        },
+        {
+          "type": "heading",
+          "text": "Cementace (nauhličování)"
+        },
+        {
+          "type": "term",
+          "term": "Cementace",
+          "definition": "Sycení povrchu uhlíkem. Používá se ocel s malým obsahem uhlíku (asi 0,1–0,25 % C), která sama skoro nezakalí. Povrch se nasytí asi na 0,8–0,9 % C.",
+          "example": "Ocel 16MnCr5 na ozubená kola."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Součást se ohřeje na asi 880–950 °C v prostředí bohatém na uhlík (plyn, prášek nebo solná lázeň).",
+            "Několik hodin na teplotě – uhlík difunduje do povrchu, obvykle do hloubky asi 0,5–2 mm.",
+            "Součást se **zakalí**: povrch s vysokým obsahem uhlíku ztvrdne, jádro s málo uhlíkem zůstane houževnaté.",
+            "Následuje **nízkoteplotní popouštění** (asi 150–200 °C) na snížení pnutí."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč se cementuje ocel 16MnCr5, a ne rovnou ocel s 0,8 % C?",
+          "answer": "Ocel s 0,8 % C by se zakalila **celá** a byla by křehká skrz naskrz. 16MnCr5 má jen **0,16 % C**: jádro po kalení zůstane houževnaté. Uhlík dodá cementace jen do povrchu, který pak ztvrdne. Výsledek: tvrdý povrch + houževnaté jádro."
+        },
+        {
+          "type": "heading",
+          "text": "Nitridace (nitridování)"
+        },
+        {
+          "type": "term",
+          "term": "Nitridace",
+          "definition": "Sycení povrchu dusíkem při asi 500–580 °C (v amoniaku, nebo v doutnavém výboji – iontová nitridace). Vznikají velmi tvrdé nitridy. **Dál se nekalí.**",
+          "example": "Nitridovaná vřetena, válce motorů, formy."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Teplota je nízká a nekalí se → součást se **téměř nedeformuje**. Proto se nitriduje až hotová, obrobená součást.",
+            "Vrstva je tenká (desetiny mm), ale velmi tvrdá a odolná proti opotřebení a únavě.",
+            "Trvá dlouho – desítky hodin.",
+            "Nejlépe se nitridují oceli s Al, Cr, Mo, V (nitridační oceli), které tvoří tvrdé nitridy."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Přesné vřeteno brusky se po tepelném zpracování nesmí zkroutit. Cementace, nebo nitridace?",
+          "answer": "Cementace končí kalením z vysoké teploty → hrozí deformace. **Nitridace** probíhá při asi 500–580 °C a bez kalení, deformace je minimální. Vřeteno se obrobí načisto a pak nitriduje."
+        },
+        {
+          "type": "heading",
+          "text": "Další způsoby"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Karbonitridace** – povrch se sytí uhlíkem i dusíkem zároveň.",
+            "**Difuzní chromování, alitování** – povrch se sytí chromem nebo hliníkem kvůli odolnosti proti korozi a okujení."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Po nitridaci se součást musí zakalit, jinak nebude tvrdá.",
+          "right": "Po nitridaci se **nekalí**. Tvrdost dávají nitridy, které vznikají přímo při nitridaci.",
+          "why": "Právě díky tomu se nitridovaná součást skoro nedeformuje."
+        },
+        {
+          "type": "summary",
+          "text": "Chemicko-tepelné zpracování mění složení povrchu difuzí. Cementace: uhlík do nízkouhlíkové oceli při 880–950 °C, pak kalení a nízké popouštění. Nitridace: dusík při 500–580 °C, bez kalení, minimální deformace."
+        }
+      ]
+    },
+    {
+      "title": "Kůrka a střída",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si chleba: kůrka je tvrdá a křupavá, uvnitř je střída měkká. Součást po chemicko-tepelném zpracování je podobná: tvrdá „kůrka“ (povrchová vrstva) a houževnatá „střída“ (jádro)."
+        },
+        {
+          "type": "text",
+          "text": "Takové součásti potřebuješ všude, kde se povrch opotřebovává třením, ale celek musí vydržet rázy: ozubená kola, vačkové hřídele, čepy, pístní čepy, vřetena."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Povrchová vrstva a jádro",
+          "definition": "Povrchová vrstva je tenká vnější část součásti (desetiny až jednotky milimetru). Jádro je všechno pod ní.",
+          "example": "Pístní čep: vrstva 1 mm tvrdá, jádro houževnaté."
+        },
+        {
+          "type": "term",
+          "term": "Difuze",
+          "definition": "Pronikání atomů do materiálu, pohání ho rozdíl koncentrací. Rychlejší za vyšší teploty.",
+          "example": "Uhlík z plynu pomalu „vsakuje“ do oceli."
+        },
+        {
+          "type": "term",
+          "term": "Tvrdost a houževnatost",
+          "definition": "**Tvrdost** = odolnost povrchu proti vnikání a otěru. **Houževnatost** = schopnost snést ránu a nepraskout. Obvykle jde jedno na úkor druhého.",
+          "example": "Sklo je tvrdé, ale nehouževnaté."
+        },
+        {
+          "type": "term",
+          "term": "Kalení",
+          "definition": "Připomenutí: ohřev oceli a rychlé ochlazení. Zakalí se jen ocel s dostatkem uhlíku (zhruba od 0,3 % C).",
+          "example": "Ocel s 0,9 % C se zakalí na vysokou tvrdost."
+        },
+        {
+          "type": "term",
+          "term": "Nitridy",
+          "definition": "Sloučeniny dusíku s kovem (železem, chromem, hliníkem…). Jsou velmi tvrdé.",
+          "example": "Nitridy chromu v povrchu nitridované oceli."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání v tabulce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Cementace",
+            "Nitridace"
+          ],
+          "rows": [
+            [
+              "prvek",
+              "uhlík (C)",
+              "dusík (N)"
+            ],
+            [
+              "teplota",
+              "asi 880–950 °C",
+              "asi 500–580 °C"
+            ],
+            [
+              "materiál",
+              "nízkouhlíková ocel (0,1–0,25 % C), např. 16MnCr5",
+              "nitridační ocel s Al, Cr, Mo, např. 34CrAlMo5"
+            ],
+            [
+              "po zpracování",
+              "kalení + nízké popouštění",
+              "nic, je hotovo"
+            ],
+            [
+              "hloubka vrstvy",
+              "asi 0,5–2 mm",
+              "desetiny mm"
+            ],
+            [
+              "deformace",
+              "větší",
+              "velmi malá"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hodnoty jsou orientační. Konkrétní předpis určuje technolog podle oceli a součásti."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "cementace",
+              "nitridace"
+            ],
+            "items": [
+              {
+                "text": "sycení uhlíkem",
+                "group": 0
+              },
+              {
+                "text": "880–950 °C",
+                "group": 0
+              },
+              {
+                "text": "po ní kalení",
+                "group": 0
+              },
+              {
+                "text": "ocel 16MnCr5",
+                "group": 0
+              },
+              {
+                "text": "sycení dusíkem",
+                "group": 1
+              },
+              {
+                "text": "500–580 °C",
+                "group": 1
+              },
+              {
+                "text": "bez kalení",
+                "group": 1
+              },
+              {
+                "text": "minimální deformace",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď kartičky ke správné metodě."
+        },
+        {
+          "type": "example",
+          "question": "Ozubené kolo převodovky nákladního auta: velké zatížení zubů, rázy, opotřebení. Co zvolíš?",
+          "answer": "Je potřeba hlubší tvrdá vrstva (zub nese velký tlak) a houževnaté jádro (rázy). Zvol ocel 16MnCr5 a **cementaci** s kalením a nízkým popouštěním. Po kalení se zuby případně brousí, aby se vyrovnala deformace."
+        },
+        {
+          "type": "example",
+          "question": "Vstřikovací forma na plasty: přesné rozměry, odolnost proti otěru. Co zvolíš?",
+          "answer": "Forma je hotová a přesná – nesmí se deformovat. Stačí tenká velmi tvrdá vrstva. **Nitridace** (např. iontová) při nízké teplotě a bez kalení."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Cementovat se dá ocel s 0,6 % C.",
+          "right": "Cementují se oceli s **malým** obsahem uhlíku, asi 0,1–0,25 %.",
+          "why": "Smyslem je houževnaté jádro. Ocel s 0,6 % C by po kalení byla tvrdá a křehká i v jádru."
+        },
+        {
+          "type": "summary",
+          "text": "Tvrdá kůrka + houževnaté jádro. Cementace: uhlík, vysoká teplota, pak kalení – hlubší vrstva, větší deformace. Nitridace: dusík, nízká teplota, bez kalení – tenká velmi tvrdá vrstva, skoro žádná deformace."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který prvek se do povrchu dodává při cementaci?",
+      "options": [
+        "uhlík",
+        "dusík",
+        "chrom",
+        "hliník"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Při jaké teplotě přibližně probíhá nitridace?",
+      "options": [
+        "500–580 °C",
+        "880–950 °C",
+        "150–200 °C",
+        "1 100–1 200 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký obsah uhlíku má typická cementační ocel?",
+      "options": [
+        "0,1–0,25 %",
+        "0,6–0,8 %",
+        "1–1,5 %",
+        "více než 2,14 %"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jádro má zůstat po kalení houževnaté."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Po cementaci se součást kalí a nízkoteplotně popouští.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Po nitridaci se součást musí zakalit.",
+      "answer": false,
+      "explanation": "Nitridovaná vrstva je tvrdá díky nitridům, kalení se nedělá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nitridace způsobuje menší deformace než cementace.",
+      "answer": true,
+      "explanation": "Probíhá při nižší teplotě a bez kalení."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje samovolné pronikání atomů do materiálu, na kterém stojí chemicko-tepelné zpracování?",
+      "answers": [
+        "difuze",
+        "difúze"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje chemicko-tepelné zpracování, při kterém se povrch sytí dusíkem? (jedno slovo)",
+      "answers": [
+        "nitridace",
+        "nitridovani",
+        "nitridování"
+      ],
+      "hints": [
+        "Název je odvozený od latinského jména dusíku."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu s prvkem.",
+      "pairs": [
+        [
+          "cementace",
+          "uhlík"
+        ],
+        [
+          "nitridace",
+          "dusík"
+        ],
+        [
+          "karbonitridace",
+          "uhlík a dusík"
+        ],
+        [
+          "alitování",
+          "hliník"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky cementace ozubeného kola.",
+      "items": [
+        "ohřev v uhlíkatém prostředí",
+        "difuze uhlíku do povrchu",
+        "kalení",
+        "nízkoteplotní popouštění"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hotový přesný díl, který se nesmí zdeformovat, potřebuje tvrdý povrch. Co zvolíš?",
+      "options": [
+        "nitridaci",
+        "cementaci s kalením",
+        "žíhání na měkko",
+        "kalení do vody"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj ocel s vhodným zpracováním.",
+      "pairs": [
+        [
+          "16MnCr5",
+          "cementace"
+        ],
+        [
+          "34CrAlMo5",
+          "nitridace"
+        ],
+        [
+          "42CrMo4",
+          "zušlechťování"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč se cementují oceli s malým obsahem uhlíku? Popiš, co se stane s povrchem a jádrem.",
+      "answer": "Ocel s málo uhlíkem se sama nezakalí, takže jádro po kalení zůstane houževnaté. Cementací se povrch nasytí uhlíkem asi na 0,8–0,9 %, takže po kalení ztvrdne. Vznikne tvrdý povrch odolný proti opotřebení a houževnaté jádro, které snese rázy."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej cementaci a nitridaci (prvek, teplota, další zpracování, deformace).",
+      "answer": "Cementace sytí povrch uhlíkem při asi 880–950 °C, potom se kalí a nízko popouští, vrstva je hlubší a deformace větší. Nitridace sytí povrch dusíkem při asi 500–580 °C, dál se nekalí, vrstva je tenčí, velmi tvrdá a deformace je minimální."
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "nezelezne-kovy",
+  "title": "Neželezné kovy a slitiny",
+  "emoji": "🥉",
+  "explanations": [
+    {
+      "title": "Kov po kovu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rám jízdního kola, kabel v zásuvce, vodovodní kohoutek, kluzné pouzdro, kloubní náhrada. Nic z toho není z oceli. Jsou to **neželezné kovy** a jejich slitiny: hliník, měď, mosaz, bronz, titan."
+        },
+        {
+          "type": "text",
+          "text": "Používají se tam, kde ocel nestačí: kde má být součást lehká, vodivá, odolná proti korozi nebo kluzná."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Neželezný kov",
+          "definition": "Kov, jehož základem není železo. Dělí se na **lehké** (hustota do asi 5 000 kg/m³: Al, Mg, Ti) a **těžké** (Cu, Zn, Ni, Sn, Pb…).",
+          "example": "Hliník je lehký neželezný kov."
+        },
+        {
+          "type": "term",
+          "term": "Slitina",
+          "definition": "Kov, ve kterém je přimíchaný jiný prvek (nebo víc prvků), aby měl lepší vlastnosti než čistý kov.",
+          "example": "Mosaz je slitina mědi a zinku."
+        },
+        {
+          "type": "term",
+          "term": "Hustota",
+          "definition": "Hmotnost jednoho metru krychlového materiálu v kg/m³.",
+          "example": "Hliník asi 2 700 kg/m³, ocel asi 7 850 kg/m³."
+        },
+        {
+          "type": "heading",
+          "text": "Hliník a jeho slitiny"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Hustota asi **2 700 kg/m³** – asi třetina oceli. Taje při 660 °C.",
+            "Na vzduchu se pokryje tenkou vrstvou oxidu, která ho chrání před další korozí.",
+            "Dobře vede proud a teplo, je tvárný, dobře se obrábí.",
+            "Čistý je měkký. Pevnost zvyšuje legování (Cu, Mg, Si, Zn, Mn) a **vytvrzování**."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Vytvrzování",
+          "definition": "Tepelné zpracování slitin hliníku. Slitina se ohřeje, aby se přísady rozpustily, rychle se ochladí a pak se nechá „stárnout“ při pokojové nebo mírně zvýšené teplotě. Přitom se vyloučí nepatrné částice, které slitinu zpevní.",
+          "example": "Dural (slitina Al-Cu-Mg) se po vytvrzení blíží pevností konstrukční oceli."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Řada EN AW",
+            "Hlavní přísada",
+            "Příklad použití"
+          ],
+          "rows": [
+            [
+              "1xxx",
+              "čistý hliník (≥ 99 %)",
+              "fólie, vodiče"
+            ],
+            [
+              "2xxx",
+              "měď (dural)",
+              "letecké konstrukce"
+            ],
+            [
+              "5xxx",
+              "hořčík",
+              "lodě, cisterny, plechy"
+            ],
+            [
+              "6xxx",
+              "hořčík + křemík",
+              "profily oken, rámy"
+            ],
+            [
+              "7xxx",
+              "zinek",
+              "vysoce pevné díly"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tvářené slitiny se značí **EN AW-** a čtyřmístným číslem, slévárenské **EN AC-** a pětimístným číslem. Typická slévárenská slitina je **silumin** – hliník s křemíkem (např. EN AC-AlSi12)."
+        },
+        {
+          "type": "heading",
+          "text": "Měď a její slitiny"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Hustota asi **8 960 kg/m³**, taje při 1 085 °C.",
+            "Po stříbře nejlépe vede elektrický proud a teplo – vodiče, výměníky tepla.",
+            "Velmi tvárná, odolná proti korozi (na vzduchu zezelená – měděnka)."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Mosaz",
+          "definition": "Slitina **mědi a zinku**. Žlutá, dobře se obrábí a tváří. Značka např. CuZn37 (63 % Cu, 37 % Zn).",
+          "example": "Armatury, kohoutky, šrouby, hudební nástroje."
+        },
+        {
+          "type": "term",
+          "term": "Bronz",
+          "definition": "Slitina **mědi s jiným prvkem než zinkem**, klasicky s cínem (cínový bronz CuSn8). Dále hliníkový bronz (CuAl10…). Dobré kluzné vlastnosti, odolný proti korozi.",
+          "example": "Kluzná pouzdra a ložiska, šneková kola, zvony."
+        },
+        {
+          "type": "example",
+          "question": "Kolik zinku obsahuje mosaz CuZn40?",
+          "answer": "Číslo za prvkem udává jeho obsah v %: **40 % Zn**, zbytek je měď: 100 − 40 = **60 % Cu**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik váží hliníkový profil o objemu 0,0005 m³ a kolik by vážil z oceli?",
+          "answer": "Hliník: m = 2 700 · 0,0005 = **1,35 kg**. Ocel: m = 7 850 · 0,0005 ≈ **3,9 kg**. Hliníkový je skoro třikrát lehčí."
+        },
+        {
+          "type": "heading",
+          "text": "Další neželezné kovy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kov",
+            "Vlastnost",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "titan (Ti)",
+              "lehký (4 510 kg/m³), pevný, odolný proti korozi, snášen tělem",
+              "letectví, implantáty"
+            ],
+            [
+              "hořčík (Mg)",
+              "nejlehčí konstrukční kov (1 740 kg/m³)",
+              "odlitky v autech, přísada do slitin"
+            ],
+            [
+              "zinek (Zn)",
+              "chrání ocel před korozí",
+              "pozinkování, odlitky"
+            ],
+            [
+              "cín (Sn)",
+              "nízká teplota tání (232 °C)",
+              "pájky, pocínování"
+            ],
+            [
+              "nikl (Ni)",
+              "odolný proti korozi a teplu",
+              "legování ocelí, niklování"
+            ]
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Bronz je slitina mědi a zinku.",
+          "right": "Slitina mědi a zinku je **mosaz**. Bronz je slitina mědi s jiným prvkem, nejčastěji s **cínem**.",
+          "why": "Mosaz = Cu + Zn, bronz = Cu + Sn (nebo Al, Si…)."
+        },
+        {
+          "type": "summary",
+          "text": "Hliník je lehký a nerezaví, slitiny se značí EN AW (tvářené) a EN AC (lité) a zpevňují se vytvrzováním. Měď výborně vede proud. Mosaz = Cu + Zn, bronz = Cu + Sn a další. Titan je lehký a pevný, hořčík nejlehčí."
+        }
+      ]
+    },
+    {
+      "title": "Podle potřeby",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jsi konstruktér a máš vybrat materiál pro pět dílů: vodič, kluzné pouzdro, kohoutek, rám kola a kyčelní implantát. Ocel není nejlepší volba ani pro jeden z nich. Projdeme neželezné kovy podle toho, **co umějí**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Neželezné kovy",
+          "definition": "Všechny kovy kromě železa a jeho slitin (ocel, litina). Lehké: hliník, hořčík, titan. Těžké: měď, zinek, nikl, cín, olovo.",
+          "example": "Měď je těžký neželezný kov."
+        },
+        {
+          "type": "term",
+          "term": "Slitina",
+          "definition": "Směs kovu s dalším prvkem, která má lepší vlastnosti (pevnost, kluznost, obrobitelnost) než čistý kov.",
+          "example": "Dural, mosaz, bronz."
+        },
+        {
+          "type": "term",
+          "term": "Kluzné vlastnosti",
+          "definition": "Schopnost dobře klouzat po oceli, málo se zadírat a opotřebovávat.",
+          "example": "Bronzové pouzdro na ocelovém čepu."
+        },
+        {
+          "type": "term",
+          "term": "Koroze",
+          "definition": "Postupné porušování kovu reakcí s okolím (voda, vzduch, chemikálie).",
+          "example": "Rezavění oceli."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo umí co"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "MS/m (elektrická vodivost, orientačně)",
+            "items": [
+              {
+                "label": "stříbro",
+                "value": 62
+              },
+              {
+                "label": "měď",
+                "value": 58
+              },
+              {
+                "label": "hliník",
+                "value": 37
+              },
+              {
+                "label": "mosaz",
+                "value": 15
+              },
+              {
+                "label": "ocel",
+                "value": 7
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pruhy ukazují, jak dobře kovy vedou proud. Měď je jen kousek za stříbrem a mnohem levnější – proto jsou z ní vodiče. Hodnoty jsou orientační."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Potřebuji…",
+            "Zvol",
+            "Proč"
+          ],
+          "rows": [
+            [
+              "vést proud",
+              "měď (nebo hliník u venkovních vedení)",
+              "vysoká vodivost"
+            ],
+            [
+              "lehký pevný díl",
+              "slitina hliníku, titan",
+              "malá hustota"
+            ],
+            [
+              "kluzné pouzdro",
+              "bronz (CuSn)",
+              "dobře klouže, nezadírá se"
+            ],
+            [
+              "snadno obrobitelnou armaturu",
+              "mosaz (CuZn)",
+              "výborná obrobitelnost, nekoroduje"
+            ],
+            [
+              "implantát",
+              "titan nebo jeho slitina",
+              "tělo ho snáší, nekoroduje"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "slitina mědi",
+              "slitina hliníku"
+            ],
+            "items": [
+              {
+                "text": "mosaz CuZn37",
+                "group": 0
+              },
+              {
+                "text": "bronz CuSn8",
+                "group": 0
+              },
+              {
+                "text": "hliníkový bronz CuAl10",
+                "group": 0
+              },
+              {
+                "text": "dural",
+                "group": 1
+              },
+              {
+                "text": "silumin",
+                "group": 1
+              },
+              {
+                "text": "EN AW-6060",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pozor na hliníkový bronz: hliník je v něm jen přísada, základ je měď."
+        },
+        {
+          "type": "heading",
+          "text": "Řešené úlohy"
+        },
+        {
+          "type": "example",
+          "question": "Vrchní vedení vysokého napětí: měď, nebo hliník?",
+          "answer": "Měď vede lépe, ale je asi **3,3× těžší** (8 960 vs. 2 700 kg/m³). Na dlouhém rozpětí mezi stožáry rozhoduje hmotnost. Proto se používají **hliníková lana** (s ocelovou duší pro pevnost). V budovách, kde hmotnost nevadí, se dávají měděné vodiče."
+        },
+        {
+          "type": "example",
+          "question": "Rozluštíš CuSn8 a CuZn39Pb3?",
+          "answer": "**CuSn8**: měď + 8 % cínu → **cínový bronz** (pouzdra, pružiny). **CuZn39Pb3**: měď + 39 % zinku + 3 % olova → **mosaz** s olovem pro snadné obrábění (automatová mosaz), zbytek měď: 100 − 39 − 3 = 58 % Cu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hliník nekoroduje vůbec, proto se dá spojit s čímkoli.",
+          "right": "Hliník chrání vrstva oxidu, ale ve styku s mědí nebo ocelí ve vlhku koroduje (galvanická koroze).",
+          "why": "Dva různé kovy ve vlhku tvoří článek a méně ušlechtilý kov (ten, který snáz reaguje) – tady hliník – se rozpouští."
+        },
+        {
+          "type": "summary",
+          "text": "Vodivost → měď, lehkost → hliník a titan, kluzné pouzdro → bronz, obrobitelná armatura → mosaz, implantát → titan. Mosaz = Cu + Zn, bronz = Cu + Sn a další prvky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Mosaz je slitina mědi a…",
+      "options": [
+        "zinku",
+        "cínu",
+        "hliníku",
+        "niklu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která slitina se hodí na kluzné pouzdro?",
+      "options": [
+        "cínový bronz",
+        "čistý hliník",
+        "zinek",
+        "olovo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se značí tvářené slitiny hliníku?",
+      "options": [
+        "EN AW-",
+        "EN AC-",
+        "EN-GJL-",
+        "1.xxxx"
+      ],
+      "answer": 0,
+      "hints": [
+        "Druhé písmeno je z anglického slova pro tvářený."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hliník má asi třetinovou hustotu oceli.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Bronz je slitina mědi a zinku.",
+      "answer": false,
+      "explanation": "Cu + Zn je mosaz. Bronz je Cu s cínem nebo jiným prvkem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po stříbře vede elektrický proud nejlépe měď.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolik % zinku obsahuje mosaz CuZn37?",
+      "answers": [
+        "37"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik % mědi obsahuje mosaz CuZn37?",
+      "answers": [
+        "63"
+      ],
+      "hints": [
+        "Zbytek do 100 % tvoří měď."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hustota hliníku je 2 700 kg/m³. Hmotnost hliníkového bloku o objemu 0,002 m³ v kg =",
+      "answers": [
+        "5,4",
+        "5.4"
+      ],
+      "hints": [
+        "m = ρ · V"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj kov s typickým použitím.",
+      "pairs": [
+        [
+          "měď",
+          "elektrické vodiče"
+        ],
+        [
+          "titan",
+          "kyčelní implantát"
+        ],
+        [
+          "cín",
+          "pájka"
+        ],
+        [
+          "zinek",
+          "ochrana oceli proti korozi"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj slitinu se složením.",
+      "pairs": [
+        [
+          "mosaz",
+          "Cu + Zn"
+        ],
+        [
+          "cínový bronz",
+          "Cu + Sn"
+        ],
+        [
+          "silumin",
+          "Al + Si"
+        ],
+        [
+          "dural",
+          "Al + Cu + Mg"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kovy podle hustoty od nejmenší.",
+      "items": [
+        "hořčík",
+        "hliník",
+        "titan",
+        "měď"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč se venkovní vedení vysokého napětí dělá z hliníku, i když měď vede proud lépe?",
+      "answer": "Hliník je asi třikrát lehčí než měď a levnější. Na dlouhých rozpětích mezi stožáry rozhoduje hmotnost lana. Horší vodivost se vyrovná větším průřezem a pevnost dodá ocelová duše lana."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi mosazí a bronzem a k čemu se každá slitina používá?",
+      "answer": "Mosaz je slitina mědi se zinkem, dobře se obrábí a tváří, používá se na armatury, kohoutky a šrouby. Bronz je slitina mědi s cínem nebo jiným prvkem kromě zinku, má dobré kluzné vlastnosti a odolnost proti korozi, používá se na kluzná pouzdra, šneková kola a zvony."
+    }
+  ]
+}
