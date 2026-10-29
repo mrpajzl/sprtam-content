@@ -1,0 +1,416 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "slevani",
+  "title": "Slévání",
+  "emoji": "🔥",
+  "explanations": [
+    {
+      "title": "Jako bábovka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Znáš bábovku? Těsto naleješ do formy, upečeš a vyklopíš. Má tvar formy. Slévárna dělá totéž s kovem: roztavený kov naleje do formy a nechá ho ztuhnout."
+        },
+        {
+          "type": "text",
+          "text": "Tak vznikají bloky motorů, skříně převodovek, kola vodovodních armatur nebo poklopy kanálů. Litím se dá levně vyrobit i velmi složitý tvar s dutinami."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Slévání",
+          "definition": "Výroba součásti tak, že roztavený kov nalijeme do formy, kde ztuhne.",
+          "example": "Litinový poklop kanálu."
+        },
+        {
+          "type": "term",
+          "term": "Odlitek",
+          "definition": "Součást, která vznikne ztuhnutím kovu ve formě.",
+          "example": "Blok motoru je odlitek."
+        },
+        {
+          "type": "term",
+          "term": "Model",
+          "definition": "Napodobenina odlitku (dřevo, plast, kov), podle které se ve formovacím materiálu udělá dutina. Je o **smrštění** větší než odlitek.",
+          "example": "Dřevěný model řemenice."
+        },
+        {
+          "type": "term",
+          "term": "Smrštění",
+          "definition": "Kov při chladnutí zmenšuje objem. Proto je model a dutina formy o několik procent větší.",
+          "example": "U šedé litiny se počítá zhruba 1 %, u oceli asi 2 %."
+        },
+        {
+          "type": "term",
+          "term": "Jádro",
+          "definition": "Vložka do formy, která v odlitku vytvoří dutinu nebo otvor.",
+          "example": "Pískové jádro vytvoří kanály chladicí vody v bloku motoru."
+        },
+        {
+          "type": "term",
+          "term": "Nálitek",
+          "definition": "Zásobník roztaveného kovu na odlitku. Kov z něj dotéká tam, kde se odlitek při tuhnutí smršťuje. Pak se odřízne.",
+          "example": "Nálitek nad tlustou stěnou odlitku."
+        },
+        {
+          "type": "term",
+          "term": "Vtoková soustava",
+          "definition": "Kanály, kterými kov teče do dutiny formy (vtoková jamka, kůl, rozváděcí kanál, zářezy).",
+          "example": "Po vychladnutí se odřízne."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta odlitku krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Podle výkresu se vyrobí model a jaderník (forma na výrobu jader).",
+            "Ve formovacím rámu se model zaformuje do pískové směsi; vznikne dutina.",
+            "Model se vyjme, do formy se vloží jádra a forma se složí.",
+            "Kov se roztaví v peci (např. kuplovna nebo indukční pec) a nalije přes vtokovou soustavu.",
+            "Po ztuhnutí se forma rozbije a odlitek vytluče.",
+            "Odlitek se očistí, odřízne se vtok a nálitky, pak se případně obrábí."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Odlitek z oceli má mít délku 400 mm. Smrštění oceli ber jako 2 %. Jak dlouhý má být model?",
+          "answer": "Model musí být větší o smrštění: 400 · 1,02 = **408 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Proč má model **úkosy** (mírně šikmé stěny)?",
+          "answer": "Aby šel model vytáhnout z písku, aniž by stěny formy utrhl. Svislé stěny by písek strhávaly. Úkos bývá kolem 1–3°."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ochranný oděv, obuv, štít a rukavice proti roztavenému kovu.",
+            "Forma i nástroje musí být suché – vlhkost s roztaveným kovem vybuchuje (pára).",
+            "Nikdo nestojí v cestě pánve s kovem."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Model udělám přesně na rozměr odlitku.",
+          "right": "Model je větší o smrštění a přídavky na obrábění.",
+          "why": "Kov při chladnutí zmenšuje objem. Přesný model by dal menší odlitek."
+        },
+        {
+          "type": "summary",
+          "text": "Slévání = roztavený kov do formy, kde ztuhne. Model vytvoří dutinu, jádro otvory, vtoková soustava přivádí kov. Model je větší o smrštění."
+        }
+      ]
+    },
+    {
+      "title": "Druhy forem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Slévárna nelije jen do písku. Podle počtu kusů, materiálu a přesnosti volí různé formy. Tady se naučíš způsoby lití rozdělit a vybrat ten správný."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Forma",
+          "definition": "Dutina, do které se lije kov. Má tvar budoucí součásti.",
+          "example": "Písková forma, kovová kokila."
+        },
+        {
+          "type": "term",
+          "term": "Netrvalá (jednorázová) forma",
+          "definition": "Forma, která se po odlití rozbije. Vyrobí jen jeden odlitek.",
+          "example": "Pískové formy, skořepinové formy, lití na vytavitelný model."
+        },
+        {
+          "type": "term",
+          "term": "Trvalá forma",
+          "definition": "Kovová forma, do které se lije mnohokrát.",
+          "example": "Kokila, forma pro tlakové lití."
+        },
+        {
+          "type": "term",
+          "term": "Kokila",
+          "definition": "Trvalá kovová forma, do které kov teče vlastní tíhou.",
+          "example": "Písty z hliníkových slitin."
+        },
+        {
+          "type": "term",
+          "term": "Tlakové lití",
+          "definition": "Kov se do kovové formy vstřikuje pod vysokým tlakem. Přesné tenkostěnné odlitky ve velkých sériích.",
+          "example": "Hliníkové skříně převodovek."
+        },
+        {
+          "type": "term",
+          "term": "Lití na vytavitelný model",
+          "definition": "Model z vosku se obalí keramikou, vosk se vytaví a do keramické skořepiny se lije. Velmi přesné, složité malé díly.",
+          "example": "Lopatky turbín, šperky."
+        },
+        {
+          "type": "term",
+          "term": "Odstředivé lití",
+          "definition": "Kov se lije do rotující formy, odstředivá síla ho přitlačí ke stěně.",
+          "example": "Trubky, pouzdra."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled způsobů lití"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Způsob",
+            "Forma",
+            "Kdy se hodí"
+          ],
+          "rows": [
+            [
+              "do pískové formy",
+              "netrvalá",
+              "kusová i sériová výroba, velké odlitky, litina i ocel"
+            ],
+            [
+              "na vytavitelný model",
+              "netrvalá keramická",
+              "malé, složité a přesné díly"
+            ],
+            [
+              "do kokily",
+              "trvalá",
+              "série, slitiny Al, Cu"
+            ],
+            [
+              "tlakové lití",
+              "trvalá",
+              "velké série tenkostěnných dílů z Al, Zn, Mg"
+            ],
+            [
+              "odstředivé lití",
+              "trvalá, rotuje",
+              "trubky a pouzdra"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď odlitky podle toho, jaká forma se pro ně obvykle použije."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "netrvalá forma",
+              "trvalá forma"
+            ],
+            "items": [
+              {
+                "text": "velký litinový stojan stroje",
+                "group": 0
+              },
+              {
+                "text": "lopatka turbíny z voskového modelu",
+                "group": 0
+              },
+              {
+                "text": "hliníková skříň převodovky (tlakové lití)",
+                "group": 1
+              },
+              {
+                "text": "litinová trubka (odstředivé lití)",
+                "group": 1
+              },
+              {
+                "text": "prototyp v jednom kuse",
+                "group": 0
+              },
+              {
+                "text": "hliníkový píst v kokile",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Vady odlitků"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Bubliny (plynové dutiny)** – plyny nestihly uniknout z kovu nebo formy.",
+            "**Staženiny** – dutiny ze smrštění, kde kov tuhl naposled; brání se jim nálitky (zásobníky kovu, ze kterých kov dotéká).",
+            "**Zavaleniny** – dva proudy kovu se nespojily, protože kov byl moc studený.",
+            "**Zálupy a výronky** – kov vnikl do spáry formy."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma potřebuje 50 000 tenkostěnných hliníkových krytů. Jaký způsob lití zvolí?",
+          "answer": "Velká série → vyplatí se drahá trvalá forma. Tenké stěny a hliník → **tlakové lití**, kov se vstříkne pod tlakem a formu vyplní i v tenkých místech."
+        },
+        {
+          "type": "example",
+          "question": "Je potřeba jeden velký litinový stojan obráběcího stroje. Jaký způsob?",
+          "answer": "Jeden kus a velký rozměr → kovová forma by se nevyplatila. Lije se **do pískové formy** podle dřevěného modelu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Do kokily se dá lít jakýkoli kov stejně snadno.",
+          "right": "Kokily se používají hlavně pro neželezné slitiny s nižší teplotou tání (Al, Cu, Zn, Mg).",
+          "why": "Ocel se taví kolem 1 500 °C a kovovou formu by rychle poškodila."
+        },
+        {
+          "type": "summary",
+          "text": "Formy jsou netrvalé (písek, keramika – jeden odlitek) a trvalé (kokila, tlakové a odstředivé lití – série). Volba závisí na počtu kusů, materiálu, velikosti a přesnosti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co v odlitku vytváří vnitřní dutinu?",
+      "options": [
+        "jádro",
+        "model",
+        "vtok",
+        "nálitek"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Model je větší než hotový odlitek.",
+      "answer": true,
+      "explanation": "Model se zvětšuje o smrštění kovu."
+    },
+    {
+      "type": "input",
+      "question": "Odlitek z oceli má mít 250 mm, smrštění 2 %. Délka modelu v mm =",
+      "answers": [
+        "255"
+      ],
+      "explanation": "250 · 1,02 = 255",
+      "hints": [
+        "Model musí být o smrštění větší.",
+        "Vynásob délku číslem 1,02."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která forma se po odlití rozbije?",
+      "options": [
+        "písková",
+        "kokila",
+        "forma pro tlakové lití",
+        "forma pro odstředivé lití"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nejčastěji vyrábějí litinové trubky?",
+      "options": [
+        "odstředivým litím",
+        "tlakovým litím",
+        "na vytavitelný model",
+        "kováním"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Tlakové lití se vyplatí hlavně pro velké série.",
+      "answer": true,
+      "explanation": "Kovová forma je drahá, rozpočítá se na mnoho kusů."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup výroby odlitku do pískové formy.",
+      "items": [
+        "výroba modelu",
+        "zaformování modelu do písku",
+        "vložení jader a složení formy",
+        "odlití kovu",
+        "vytlučení a čištění odlitku"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj vadu odlitku s příčinou.",
+      "pairs": [
+        [
+          "bublina",
+          "plyny nestihly uniknout"
+        ],
+        [
+          "staženina",
+          "smrštění kovu při tuhnutí"
+        ],
+        [
+          "zavalenina",
+          "kov byl moc studený"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží úkosy na modelu?",
+      "options": [
+        "aby šel model vyjmout z formy",
+        "aby kov rychleji tekl",
+        "aby odlitek byl lehčí",
+        "aby se zmenšilo smrštění"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Do pískové formy můžeš lít, i když je vlhká, pára jen unikne.",
+      "answer": false,
+      "explanation": "Vlhkost se s roztaveným kovem prudce mění na páru a může dojít k výbuchu a vystříknutí kovu."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje trvalá kovová forma, do které kov teče vlastní tíhou?",
+      "answers": [
+        "kokila"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak vzniká odlitek do pískové formy.",
+      "answer": "Podle modelu se v písku vytvoří dutina, model se vyjme, vloží se jádra a forma se složí. Přes vtokovou soustavu se nalije roztavený kov. Po ztuhnutí se forma rozbije, odlitek se očistí a odřízne se vtok."
+    },
+    {
+      "type": "open",
+      "question": "Podle čeho volíš způsob lití? Uveď dva příklady.",
+      "answer": "Podle počtu kusů, materiálu, velikosti a přesnosti. Jeden velký litinový díl lijeme do písku, velkou sérii tenkostěnných hliníkových dílů tlakovým litím."
+    }
+  ]
+}

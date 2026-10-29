@@ -1,0 +1,435 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "soustruzeni",
+  "title": "Soustružení",
+  "emoji": "🔩",
+  "explanations": [
+    {
+      "title": "Na soustruhu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hřídel, čep, šroub, pouzdro, píst. Všechno to jsou „kulaté“ součásti, které mají jednu osu. Takové díly se nejčastěji vyrábějí na soustruhu."
+        },
+        {
+          "type": "text",
+          "text": "Soustružník upne tyč, roztočí ji a pomalu k ní přisouvá ostrý nůž. Z rotující tyče tak vznikne válec přesného průměru, schod (osazení), kužel nebo závit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Soustružení",
+          "definition": "Obrábění, při kterém se otáčí obrobek a nůž se posouvá. Vznikají rotační plochy.",
+          "example": "Výroba hřídele z tyče ⌀60."
+        },
+        {
+          "type": "term",
+          "term": "Soustruh",
+          "definition": "Obráběcí stroj na soustružení. Hlavní části: lože, vřeteník se sklíčidlem, suport s nožovou hlavou a koník.",
+          "example": "Univerzální hrotový soustruh v dílně."
+        },
+        {
+          "type": "term",
+          "term": "Sklíčidlo",
+          "definition": "Upínač na vřetenu, který drží obrobek. Nejběžnější je tříčelisťové samostředicí: čelisti se sevřou současně.",
+          "example": "Tyč ⌀40 upnutá v tříčelisťovém sklíčidle."
+        },
+        {
+          "type": "term",
+          "term": "Suport",
+          "definition": "Pohyblivé saně s nožem; posouvají nůž podélně i příčně.",
+          "example": "Podélným posuvem suportu soustružíš válec."
+        },
+        {
+          "type": "term",
+          "term": "Koník",
+          "definition": "Posuvná část na druhém konci lože. Drží hrot pro podepření dlouhých obrobků nebo vrták.",
+          "example": "Dlouhou hřídel podepřeš hrotem v koníku."
+        },
+        {
+          "type": "term",
+          "term": "Řezná rychlost a posuv (připomenutí)",
+          "definition": "Řezná rychlost vc (m/min) je rychlost povrchu obrobku proti noži. Otáčky z ní spočítáš `n = 1000 · vc / (π · D)`. Posuv f (mm/ot) je posunutí nože za jednu otáčku.",
+          "example": "vc = 120 m/min, f = 0,2 mm/ot."
+        },
+        {
+          "type": "heading",
+          "text": "Základní operace"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Podélné soustružení** – nůž jede podél osy, zmenšuje průměr (válec, osazení = schod na hřídeli).",
+            "**Čelní soustružení (zarovnání čela)** – nůž jede kolmo k ose.",
+            "**Zapichování a upichování** – úzkým nožem uděláš drážku nebo hotový kus odřízneš.",
+            "**Vrtání z koníku** – vrták je v koníku, obrobek se otáčí.",
+            "**Soustružení kužele a závitu** – natočením suportu nebo spřažením posuvu s otáčkami."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup výroby jednoduchého čepu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Upni tyč do sklíčidla, vyndej klíč ze sklíčidla.",
+            "Nastav otáčky podle vc a průměru.",
+            "Zarovnej čelo.",
+            "Ubírej podélně na hrubo, pak načisto s menším posuvem.",
+            "Sraz hrany.",
+            "Zastav vřeteno, změř, upíchni hotový kus."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hřídel ⌀80 mm, doporučená vc = 120 m/min. Jaké otáčky?",
+          "answer": "n = 1000 · vc / (π · D) = 1000 · 120 / (3,14 · 80) ≈ **478 ot/min**."
+        },
+        {
+          "type": "example",
+          "question": "Proč se na načisto soustruží s menším posuvem než na hrubo?",
+          "answer": "Posuv určuje vzdálenost stop nože na povrchu. Menší posuv → stopy blíž u sebe → **hladší povrch**. Na hrubo jde o rychlé ubrání, proto velký posuv."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Upnu tyč, nechám klíč ve sklíčidle a hned pustím vřeteno.",
+          "right": "Klíč vždy vyndej ze sklíčidla před spuštěním.",
+          "why": "Klíč by se s vřetenem roztočil a vystřelil – těžké zranění."
+        },
+        {
+          "type": "text",
+          "text": "Bezpečnost: brýle, přiléhavý oděv, žádné rukavice, kryt sklíčidla zavřený, měř jen při stojícím vřetenu, třísky háčkem."
+        },
+        {
+          "type": "summary",
+          "text": "Při soustružení se otáčí obrobek, nůž se posouvá. Základní operace: podélné a čelní soustružení, zapichování, vrtání, kužel, závit. Otáčky z n = 1000·vc/(π·D)."
+        }
+      ]
+    },
+    {
+      "title": "Výpočet času",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Mistr potřebuje vědět, jak dlouho bude výroba trvat, aby spočítal cenu a plán. U soustružení se čas řezání dá spočítat přesně ze tří čísel: délky, posuvu a otáček."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Soustružení",
+          "definition": "Obrábění rotačních ploch: obrobek se otáčí, nůž se posouvá.",
+          "example": "Čep, hřídel."
+        },
+        {
+          "type": "term",
+          "term": "Otáčky n",
+          "definition": "Kolikrát se obrobek otočí za minutu (ot/min).",
+          "example": "n = 500 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Posuv f",
+          "definition": "O kolik mm se nůž posune za jednu otáčku obrobku (mm/ot).",
+          "example": "f = 0,2 mm/ot."
+        },
+        {
+          "type": "term",
+          "term": "Rychlost posuvu vf",
+          "definition": "Kolik mm ujede nůž za minutu: `vf = f · n` (mm/min).",
+          "example": "0,2 · 500 = 100 mm/min."
+        },
+        {
+          "type": "term",
+          "term": "Strojní čas tAS",
+          "definition": "Čas, kdy nůž skutečně řeže. `t = L / (f · n)` v minutách, kde L je dráha nože v mm.",
+          "example": "L = 200 mm, f = 0,2, n = 500 → t = 2 min."
+        },
+        {
+          "type": "term",
+          "term": "Náběh a přeběh",
+          "definition": "Krátká dráha před začátkem a za koncem obrobené plochy, aby nůž najel bezpečně. Přičítají se k délce: L = l + náběh + přeběh.",
+          "example": "l = 100 mm, náběh 2 mm, přeběh 2 mm → L = 104 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej otáčky n z doporučené řezné rychlosti.",
+            "Zjisti délku dráhy L = délka plochy + náběh + přeběh.",
+            "Zvol posuv f podle hrubování nebo dokončování.",
+            "t = L / (f · n). Násob počtem průchodů."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Soustružíš válec délky 146 mm, náběh 2 mm, přeběh 2 mm, f = 0,3 mm/ot, n = 500 ot/min. Strojní čas?",
+          "answer": "L = 146 + 2 + 2 = 150 mm. t = 150 / (0,3 · 500) = 150 / 150 = **1 min**."
+        },
+        {
+          "type": "example",
+          "question": "Totéž, ale potřebuješ 3 průchody na hrubo. Celkový čas?",
+          "answer": "Jeden průchod 1 min → 3 průchody = **3 min**."
+        },
+        {
+          "type": "heading",
+          "text": "Soustružnické nože"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Nůž",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "ubírací",
+              "hrubé ubírání materiálu"
+            ],
+            [
+              "hladicí",
+              "dokončení povrchu"
+            ],
+            [
+              "zapichovací (upichovací)",
+              "drážky, odříznutí kusu"
+            ],
+            [
+              "závitový",
+              "závity"
+            ],
+            [
+              "vnitřní (vyvrtávací)",
+              "díry"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dnes se používají hlavně nože s **vyměnitelnými břitovými destičkami**: otupený břit destičku pootočíš nebo vyměníš."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň správný výraz do vzorců."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "t = L / (f · ",
+                "after": ")",
+                "options": [
+                  "n",
+                  "vc"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "vf = f · ",
+                "after": "",
+                "options": [
+                  "n",
+                  "D"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "L = l + náběh + ",
+                "after": "",
+                "options": [
+                  "přeběh",
+                  "posuv"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Hladký povrch = ",
+                "after": " posuv",
+                "options": [
+                  "menší",
+                  "větší"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Strojní čas t = L / f, otáčky nejsou potřeba.",
+          "right": "t = L / (f · n).",
+          "why": "Posuv f je jen na jednu otáčku. Rychlost pohybu nože v mm/min je až f · n."
+        },
+        {
+          "type": "summary",
+          "text": "Strojní čas soustružení t = L / (f · n), kde L = l + náběh + přeběh. Rychlost posuvu vf = f · n. Pro více průchodů čas násobíš."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co se při soustružení otáčí?",
+      "options": [
+        "obrobek",
+        "nůž",
+        "koník",
+        "lože"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterou částí soustruhu podepřeš konec dlouhé hřídele?",
+      "options": [
+        "koníkem (hrotem)",
+        "suportem",
+        "vřeteníkem",
+        "ložem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "L = 120 mm, f = 0,2 mm/ot, n = 600 ot/min. Strojní čas v min =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "t = 120 / (0,2 · 600) = 1 min",
+      "hints": [
+        "t = L / (f · n)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "D = 50 mm, vc = 157 m/min. Otáčky v ot/min =",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "explanation": "1000 · 157 / (3,14 · 50) = 1 000",
+      "hints": [
+        "Otáčky spočítáš z řezné rychlosti a průměru.",
+        "Řeznou rychlost převeď na mm/min a vyděl obvodem π · D."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "f = 0,25 mm/ot, n = 800 ot/min. Rychlost posuvu v mm/min =",
+      "answers": [
+        "200"
+      ],
+      "explanation": "0,25 · 800 = 200",
+      "hints": [
+        "Vynásob posuv otáčkami."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro hladší povrch zvolíš menší posuv.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Klíč může zůstat ve sklíčidle, pokud je zavřený kryt.",
+      "answer": false,
+      "explanation": "Klíč se vždy vyndá před spuštěním vřetena."
+    },
+    {
+      "type": "match",
+      "question": "Spoj operaci s nožem.",
+      "pairs": [
+        [
+          "hrubé ubírání",
+          "ubírací nůž"
+        ],
+        [
+          "drážka",
+          "zapichovací nůž"
+        ],
+        [
+          "dokončení",
+          "hladicí nůž"
+        ],
+        [
+          "závit",
+          "závitový nůž"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup výroby čepu.",
+      "items": [
+        "upnutí tyče",
+        "zarovnání čela",
+        "hrubování",
+        "obrábění načisto",
+        "upíchnutí"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké sklíčidlo sevře všechny čelisti současně a vystředí obrobek?",
+      "options": [
+        "tříčelisťové samostředicí",
+        "čtyřčelisťové s nezávislými čelistmi",
+        "lícní deska",
+        "upínací kleště v koníku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozměr obrobku je dovoleno měřit za chodu, když nůž zrovna neřeže.",
+      "answer": false,
+      "explanation": "Měří se jen při zastaveném vřetenu."
+    },
+    {
+      "type": "choice",
+      "question": "Jak vyrobíš na soustruhu díru v ose obrobku?",
+      "options": [
+        "vrtákem upnutým v koníku",
+        "frézou v suportu",
+        "upichovacím nožem",
+        "nejde to"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš hlavní části soustruhu a jejich funkci.",
+      "answer": "Lože nese ostatní části. Vřeteník pohání vřeteno se sklíčidlem, které drží a otáčí obrobek. Suport nese nůž a posouvá ho podélně i příčně. Koník podpírá dlouhé obrobky hrotem nebo drží vrták."
+    },
+    {
+      "type": "open",
+      "question": "Jak spočítáš strojní čas soustružení a na čem závisí?",
+      "answer": "t = L/(f·n), kde L je délka plochy plus náběh a přeběh, f posuv na otáčku a n otáčky. Čas se zkrátí větším posuvem nebo vyššími otáčkami, a násobí se počtem průchodů."
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "svarovani",
+  "title": "Svařování",
+  "emoji": "🧑‍🏭",
+  "explanations": [
+    {
+      "title": "Metody",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zábradlí, rám kola, ocelová konstrukce haly, potrubí. Tyhle díly drží pohromadě svary. Svár se nedá rozebrat jako šroub, ale je pevný a těsný."
+        },
+        {
+          "type": "text",
+          "text": "Svářeč roztaví okraje dvou dílů a kov se spojí v jeden kus. K tomu potřebuje obrovské teplo – elektrický oblouk nebo plamen. A s ním přichází i nebezpečí, proto je tu i bezpečnost."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Svařování",
+          "definition": "Nerozebíratelné spojení kovů natavením jejich okrajů, obvykle s přidáním dalšího kovu.",
+          "example": "Svaření dvou trubek."
+        },
+        {
+          "type": "term",
+          "term": "Základní materiál",
+          "definition": "Kov dílů, které spojuješ.",
+          "example": "Dva ocelové plechy."
+        },
+        {
+          "type": "term",
+          "term": "Přídavný materiál",
+          "definition": "Kov, který přidáváš do svaru: elektroda, drát nebo pruh.",
+          "example": "Drát v cívce u svářečky MAG."
+        },
+        {
+          "type": "term",
+          "term": "Svarová lázeň",
+          "definition": "Malé místo roztaveného kovu, které se posouvá podél spoje. Po ztuhnutí z ní je svar.",
+          "example": "Svítící kaluž kovu pod obloukem."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický oblouk",
+          "definition": "Výboj mezi elektrodou a dílem. Vzniká v něm teplo několik tisíc °C, které kov taví.",
+          "example": "Jasně svítící jiskra pod elektrodou."
+        },
+        {
+          "type": "term",
+          "term": "Ochranný plyn",
+          "definition": "Plyn, který chrání svarovou lázeň před vzduchem. Kyslík a dusík ze vzduchu by svar zkřehly a udělaly v něm póry.",
+          "example": "Argon, CO₂ nebo jejich směs."
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní metody"
+        },
+        {
+          "type": "text",
+          "text": "Metody mají číselné označení podle ČSN EN ISO 4063. To uvidíš ve výrobní dokumentaci."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Číslo",
+            "Metoda",
+            "Co taví a co chrání"
+          ],
+          "rows": [
+            [
+              "111",
+              "ruční obloukové obalenou elektrodou",
+              "oblouk; obal elektrody vytvoří plyn a strusku (ztuhlou krustu na svaru)"
+            ],
+            [
+              "131",
+              "MIG",
+              "oblouk s drátem; inertní plyn (argon)"
+            ],
+            [
+              "135",
+              "MAG",
+              "oblouk s drátem; aktivní plyn (CO₂, směs Ar + CO₂)"
+            ],
+            [
+              "141",
+              "TIG (WIG)",
+              "oblouk z wolframové netavící se elektrody; argon"
+            ],
+            [
+              "311",
+              "plamenem kyslík–acetylen",
+              "plamen; přídavný drát se podává rukou"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Inertní a aktivní plyn",
+          "definition": "Inertní plyn (argon, helium) s kovem nereaguje. Aktivní plyn (CO₂ nebo směs s ním) se reakcí v oblouku účastní.",
+          "example": "MIG = Metal Inert Gas, MAG = Metal Active Gas."
+        },
+        {
+          "type": "example",
+          "question": "Potřebuješ svařit tenký hliníkový plech. Kterou metodu zvolíš?",
+          "answer": "Hliník potřebuje inertní plyn a jemnou kontrolu tepla. Vhodný je **TIG (141)**, pro větší tloušťky a rychlejší práci **MIG (131)**. MAG s CO₂ se na hliník nehodí."
+        },
+        {
+          "type": "example",
+          "question": "Montáž ocelové konstrukce venku, fouká vítr. Kterou metodu?",
+          "answer": "Vítr odfoukne ochranný plyn, takže MIG/MAG ani TIG nejsou vhodné. Zvolíš **ruční obloukové svařování obalenou elektrodou (111)** – ochranu tvoří obal elektrody."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na oblouk se na chvilku podívám bez kukly, nic se nestane.",
+          "right": "Na oblouk se díváš jen přes svářečskou kuklu se správným filtrem.",
+          "why": "Ultrafialové záření popálí oči (zánět spojivek a rohovky) už za pár vteřin; bolest přijde až za několik hodin."
+        },
+        {
+          "type": "summary",
+          "text": "Svařování spojuje kovy natavením. Oblouk taví u metod 111, 131 (MIG), 135 (MAG) a 141 (TIG), plamen u metody 311. Ochranný plyn nebo obal chrání svar před vzduchem."
+        }
+      ]
+    },
+    {
+      "title": "Bezpečně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Svařování je jedna z nejnebezpečnějších dílenských prací. Hrozí popálení, oslepnutí UV zářením, úraz proudem, otrava zplodinami, požár i výbuch lahví. Kdo zná pravidla, svařuje bezpečně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Svařování",
+          "definition": "Spojení kovů natavením okrajů teplem oblouku nebo plamene.",
+          "example": "Svar rámu."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický oblouk",
+          "definition": "Výboj mezi elektrodou a dílem s teplotou několik tisíc °C. Silně svítí a vyzařuje UV záření.",
+          "example": "Oblouk u svářečky MAG."
+        },
+        {
+          "type": "term",
+          "term": "Svářečská kukla",
+          "definition": "Štít na obličej s tmavým ochranným filtrem. Chrání oči a obličej před zářením a rozstřikem.",
+          "example": "Samostmívací kukla ztmavne při zapálení oblouku."
+        },
+        {
+          "type": "term",
+          "term": "Tlaková lahev",
+          "definition": "Ocelová lahev s plynem pod vysokým tlakem.",
+          "example": "Lahev s kyslíkem, acetylenem nebo argonem."
+        },
+        {
+          "type": "term",
+          "term": "Acetylen",
+          "definition": "Hořlavý plyn, který s kyslíkem hoří plamenem o teplotě kolem 3 100 °C. V lahvi je rozpuštěný v acetonu.",
+          "example": "Plamen pro svařování a řezání."
+        },
+        {
+          "type": "term",
+          "term": "Zpětné šlehnutí plamene",
+          "definition": "Plamen vnikne zpět do hořáku a hadic. Proti tomu se montují **pojistky proti zpětnému šlehnutí**.",
+          "example": "Pojistka na výstupu z redukčního ventilu."
+        },
+        {
+          "type": "term",
+          "term": "Zplodiny svařování",
+          "definition": "Kouř a plyny z tavení kovu a obalu. Mohou být jedovaté (např. při svařování pozinkovaného plechu).",
+          "example": "Proto odsávání nebo větrání."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ochranné pomůcky: kukla s filtrem, kožené rukavice, nehořlavý oděv bez syntetiky, pevná obuv.",
+            "Okolí: odstraň hořlaviny, zakryj otvory, měj po ruce hasicí přístroj.",
+            "Větrání: zapni odsávání nebo pracuj na dobře větraném místě.",
+            "Elektrika: neporušené kabely, zemnicí kleště blízko svaru, nesvařuj ve vlhku a mokrém oděvu.",
+            "Lahve: stojí svisle, zajištěné proti pádu, daleko od tepla; kyslíkové ventily bez oleje a tuku.",
+            "Po práci: kontrola místa kvůli doutnání (požární dohled)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč se nesmí ventil kyslíkové lahve mazat olejem?",
+          "answer": "Čistý kyslík pod tlakem s olejem nebo tukem může samovolně vzplanout až vybuchnout. Proto **žádný tuk** na ventilech, redukcích ani rukou."
+        },
+        {
+          "type": "example",
+          "question": "Kolega chce rozřezat prázdný sud od benzinu. Co mu řekneš?",
+          "answer": "Výpary v prázdném sudu jsou výbušné. Nádoby od hořlavin se smí svařovat a řezat jen po odborném vyčištění a odvětrání podle předpisů. Takto **nikdy**."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď metody podle toho, čím taví kov."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "elektrický oblouk",
+              "plamen"
+            ],
+            "items": [
+              {
+                "text": "MAG (135)",
+                "group": 0
+              },
+              {
+                "text": "TIG (141)",
+                "group": 0
+              },
+              {
+                "text": "obalená elektroda (111)",
+                "group": 0
+              },
+              {
+                "text": "kyslík–acetylen (311)",
+                "group": 1
+              },
+              {
+                "text": "MIG (131)",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "MIG",
+                "back": "inertní plyn (argon), tavící se drát – hliník, měď"
+              },
+              {
+                "front": "MAG",
+                "back": "aktivní plyn (CO₂, Ar + CO₂) – oceli"
+              },
+              {
+                "front": "TIG",
+                "back": "netavící se wolframová elektroda, argon"
+              },
+              {
+                "front": "111",
+                "back": "obalená elektroda, jde i venku ve větru"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Svařovat se smí v bavlněném tričku, rukávy si vyhrnu.",
+          "right": "Celé tělo zakryté nehořlavým oděvem s dlouhými rukávy.",
+          "why": "UV záření oblouku spálí kůži jako slunce a odstřik kovu propálí látku."
+        },
+        {
+          "type": "summary",
+          "text": "Bezpečné svařování: kukla, rukavice, nehořlavý oděv, odsávání, žádné hořlaviny v okolí, zajištěné lahve, kyslík bez tuku a kontrola místa po práci."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která metoda používá netavící se wolframovou elektrodu?",
+      "options": [
+        "TIG",
+        "MIG",
+        "MAG",
+        "111"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký plyn chrání svar u metody MAG?",
+      "options": [
+        "aktivní (CO₂ nebo Ar + CO₂)",
+        "jen čistý argon",
+        "acetylen",
+        "kyslík"
+      ],
+      "answer": 0,
+      "hints": [
+        "Písmeno A ve zkratce napoví."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké číslo podle ČSN EN ISO 4063 má ruční obloukové svařování obalenou elektrodou?",
+      "answers": [
+        "111"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo metody s názvem.",
+      "pairs": [
+        [
+          "111",
+          "obalená elektroda"
+        ],
+        [
+          "135",
+          "MAG"
+        ],
+        [
+          "141",
+          "TIG"
+        ],
+        [
+          "311",
+          "kyslík–acetylen"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Venku ve větru je nejvhodnější metoda TIG.",
+      "answer": false,
+      "explanation": "Vítr odfoukne ochranný plyn; vhodná je obalená elektroda (111)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ventil kyslíkové lahve se nesmí mazat olejem.",
+      "answer": true,
+      "explanation": "Kyslík s tukem může vzplanout nebo vybuchnout."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se svařuje pod ochranným plynem?",
+      "options": [
+        "aby se do lázně nedostal vzduch",
+        "aby se svar rychleji ochladil",
+        "aby oblouk méně svítil",
+        "aby se šetřil drát"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která metoda se hodí na tenký hliník?",
+      "options": [
+        "TIG",
+        "MAG s CO₂",
+        "plamenem",
+        "111 bez přípravy"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hliník potřebuje inertní plyn."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Acetylenová lahev se ukládá a používá ve svislé poloze.",
+      "answer": true,
+      "explanation": "Acetylen je v lahvi rozpuštěný v acetonu; vleže by aceton mohl unikat."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď přípravu pracoviště před svařováním.",
+      "items": [
+        "obléct ochranné pomůcky",
+        "odstranit hořlaviny z okolí",
+        "zapnout odsávání",
+        "zkontrolovat kabely a lahve",
+        "zapálit oblouk"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje inertní plyn, který se nejčastěji používá při metodách MIG a TIG?",
+      "answers": [
+        "argon",
+        "Ar"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaká nebezpečí hrozí při svařování obloukem a jak se proti nim chráníš?",
+      "answer": "UV záření a odstřik – kukla s filtrem, rukavice a nehořlavý oděv. Úraz proudem – neporušené kabely, suché prostředí. Zplodiny – odsávání. Požár – odstranit hořlaviny, hasicí přístroj, kontrola po práci."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi MIG a MAG.",
+      "answer": "Obě metody taví kov obloukem mezi tavícím se drátem a dílem. MIG používá inertní plyn (argon), hodí se na hliník a měď. MAG používá aktivní plyn (CO₂ nebo směs s argonem), hodí se na oceli."
+    }
+  ]
+}

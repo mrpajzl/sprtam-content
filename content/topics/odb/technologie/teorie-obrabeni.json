@@ -1,0 +1,433 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "teorie-obrabeni",
+  "title": "Teorie obrábění",
+  "emoji": "⚙️",
+  "explanations": [
+    {
+      "title": "Jako škrabka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když strouháš mrkev, nůž z ní odebírá tenké proužky. Obrábění kovů je totéž: ostrý nástroj odebírá z obrobku materiál po proužcích, až zbude přesný tvar."
+        },
+        {
+          "type": "text",
+          "text": "Soustružení, frézování, vrtání i broušení stojí na stejných základech: jak rychle nástroj řeže, kolik ubírá a z čeho je. Když je nastavíš špatně, nástroj se spálí nebo povrch bude hrubý."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obrábění",
+          "definition": "Výroba součásti odebíráním přebytečného materiálu nástrojem s břitem. Odebraný materiál odchází jako tříska.",
+          "example": "Soustružení hřídele, vrtání díry."
+        },
+        {
+          "type": "term",
+          "term": "Obrobek",
+          "definition": "Součást, kterou obrábíš.",
+          "example": "Ocelová tyč upnutá v soustruhu."
+        },
+        {
+          "type": "term",
+          "term": "Břit",
+          "definition": "Ostrá hrana nástroje, která odděluje třísku.",
+          "example": "Hrana soustružnického nože nebo zub frézy."
+        },
+        {
+          "type": "term",
+          "term": "Tříska",
+          "definition": "Materiál odebraný z obrobku.",
+          "example": "Spirálová tříska při soustružení oceli."
+        },
+        {
+          "type": "term",
+          "term": "Hlavní (řezný) pohyb",
+          "definition": "Pohyb, který přímo odebírá třísku a je nejrychlejší.",
+          "example": "Otáčení obrobku u soustruhu, otáčení frézy."
+        },
+        {
+          "type": "term",
+          "term": "Vedlejší pohyb (posuv)",
+          "definition": "Pohyb, který přivádí břit stále do nového materiálu.",
+          "example": "Pojíždění nože podél obrobku."
+        },
+        {
+          "type": "heading",
+          "text": "Řezné podmínky"
+        },
+        {
+          "type": "term",
+          "term": "Řezná rychlost vc",
+          "definition": "Jak rychle se břit pohybuje proti materiálu, v m/min. `vc = π · D · n / 1000` (D v mm, n v ot/min).",
+          "example": "Typicky desítky až stovky m/min."
+        },
+        {
+          "type": "term",
+          "term": "Otáčky n",
+          "definition": "Kolikrát se obrobek nebo nástroj otočí za minutu (ot/min, min⁻¹). `n = 1000 · vc / (π · D)`.",
+          "example": "Soustruh nastavený na 800 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Posuv f",
+          "definition": "O kolik se nástroj posune za jednu otáčku, v mm/ot.",
+          "example": "f = 0,2 mm/ot."
+        },
+        {
+          "type": "term",
+          "term": "Hloubka řezu ap",
+          "definition": "Tloušťka vrstvy, kterou ubereš v jednom průchodu, v mm.",
+          "example": "Z ⌀50 na ⌀46 v jednom průchodu → ap = 2 mm."
+        },
+        {
+          "type": "example",
+          "question": "Obrobek ⌀50 mm se otáčí 800 ot/min. Jaká je řezná rychlost?",
+          "answer": "vc = π · D · n / 1000 = 3,14 · 50 · 800 / 1000 ≈ **126 m/min**."
+        },
+        {
+          "type": "example",
+          "question": "Výrobce nástroje doporučuje vc = 150 m/min, průměr je 40 mm. Jaké nastavíš otáčky?",
+          "answer": "n = 1000 · vc / (π · D) = 1000 · 150 / (3,14 · 40) ≈ **1 194 ot/min**. Na stroji nastavíš nejbližší nižší stupeň."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hloubka řezu je rozdíl průměrů: z ⌀50 na ⌀46 je ap = 4 mm.",
+          "right": "ap = (50 − 46) / 2 = 2 mm.",
+          "why": "Nůž ubírá z poloměru – na každé straně osy ubere polovinu rozdílu průměrů."
+        },
+        {
+          "type": "text",
+          "text": "Bezpečnost: ochranné brýle, přiléhavý oděv, žádné rukavice ani prstýnky u rotujících částí, dlouhé vlasy pod čepicí. Třísky nikdy rukou – jen háčkem nebo smetáčkem při stojícím stroji."
+        },
+        {
+          "type": "summary",
+          "text": "Obrábění odebírá materiál třískou. Řezné podmínky: vc = π·D·n/1000, posuv f v mm/ot, hloubka řezu ap = rozdíl průměrů / 2."
+        }
+      ]
+    },
+    {
+      "title": "Nástroje a břit",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Proč jde železnou pilkou řezat ocel, ale kuchyňským nožem ne? Rozhoduje materiál nástroje a tvar jeho břitu. Při obrábění vzniká na břitu velké teplo a nástroj musí zůstat tvrdý i rozpálený."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obrábění",
+          "definition": "Odebírání materiálu nástrojem s břitem; odebraný materiál je tříska.",
+          "example": "Soustružení, frézování, vrtání."
+        },
+        {
+          "type": "term",
+          "term": "Břit",
+          "definition": "Ostrá hrana nástroje. Tvoří ji dvě plochy: **čelo** (po něm odchází tříska) a **hřbet** (obrácený k obrobku).",
+          "example": "Hrana vrtáku."
+        },
+        {
+          "type": "term",
+          "term": "Tvrdost za tepla (stálost)",
+          "definition": "Schopnost nástroje zůstat tvrdý i při vysoké teplotě břitu.",
+          "example": "Rychlořezná ocel změkne zhruba nad 600 °C, karbid vydrží víc."
+        },
+        {
+          "type": "term",
+          "term": "Řezná rychlost vc a otáčky n",
+          "definition": "vc je rychlost břitu proti materiálu v m/min, n jsou otáčky za minutu. Platí `vc = π · D · n / 1000` (D v mm).",
+          "example": "D = 50 mm, n = 800 ot/min → vc ≈ 126 m/min."
+        },
+        {
+          "type": "term",
+          "term": "Trvanlivost nástroje",
+          "definition": "Doba řezání, než se břit otupí natolik, že ho musíš vyměnit nebo nabrousit.",
+          "example": "Vyšší řezná rychlost → kratší trvanlivost."
+        },
+        {
+          "type": "term",
+          "term": "Řezná kapalina",
+          "definition": "Kapalina, která chladí, maže a odplavuje třísky.",
+          "example": "Emulze vody a oleje."
+        },
+        {
+          "type": "heading",
+          "text": "Nástrojové materiály od nejměkčího"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Materiál",
+            "Vlastnost",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "nástrojová uhlíková ocel",
+              "levná, změkne už kolem 250 °C",
+              "ruční nářadí, pilníky"
+            ],
+            [
+              "rychlořezná ocel (HSS)",
+              "houževnatá, snese asi 600 °C",
+              "vrtáky, závitníky, frézy"
+            ],
+            [
+              "slinutý karbid (SK)",
+              "velmi tvrdý, snese vyšší teploty, křehčí",
+              "vyměnitelné břitové destičky"
+            ],
+            [
+              "řezná keramika",
+              "ještě tvrdší, citlivá na rázy",
+              "rychlé dokončování litiny a kalené oceli"
+            ],
+            [
+              "kubický nitrid boru (CBN)",
+              "druhý nejtvrdší",
+              "obrábění kalené oceli"
+            ],
+            [
+              "polykrystalický diamant (PKD)",
+              "nejtvrdší",
+              "hliník, měď, plasty; ne ocel"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Čím níž v tabulce, tím vyšší řezné rychlosti nástroj zvládne. Zároveň je dražší a křehčí."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus si nejdřív odpovědět sám."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "vc",
+                "back": "řezná rychlost, m/min"
+              },
+              {
+                "front": "f",
+                "back": "posuv – posunutí nástroje za otáčku, mm/ot"
+              },
+              {
+                "front": "ap",
+                "back": "hloubka řezu – tloušťka ubírané vrstvy, mm"
+              },
+              {
+                "front": "HSS",
+                "back": "rychlořezná ocel"
+              },
+              {
+                "front": "SK",
+                "back": "slinutý karbid"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Druhy třísek"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Plynulá (tvářená)** – dlouhá stuha z houževnatých ocelí; nebezpečná, láme se utvařečem (tvarovaným výstupkem nebo drážkou na čele destičky).",
+            "**Článkovitá** – stuha z částečně oddělených článků.",
+            "**Elementová (drobivá)** – drobné úlomky, typická u šedé litiny a mosazi."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč se diamantovými nástroji neobrábí ocel?",
+          "answer": "Při vysoké teplotě se uhlík diamantu rozpouští v železe a břit se rychle opotřebí. Diamant je proto pro neželezné kovy a plasty, na ocel CBN nebo karbid."
+        },
+        {
+          "type": "example",
+          "question": "Spočítej vc pro vrták ⌀10 mm a n = 1 000 ot/min.",
+          "answer": "vc = π · D · n / 1000 = 3,14 · 10 · 1000 / 1000 ≈ **31 m/min**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím tvrdší nástroj, tím je vždy lepší.",
+          "right": "Tvrdší materiál je i křehčí. Při přerušovaném řezu nebo nestabilním upnutí se vylomí.",
+          "why": "Volí se kompromis mezi tvrdostí a houževnatostí podle práce."
+        },
+        {
+          "type": "summary",
+          "text": "Nástrojové materiály: uhlíková ocel < HSS < slinutý karbid < keramika < CBN < diamant. S tvrdostí roste možná řezná rychlost, ale klesá houževnatost. Řezná kapalina chladí, maže a odvádí třísky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "D = 60 mm, n = 500 ot/min. Řezná rychlost v m/min (zaokrouhli na celé) =",
+      "answers": [
+        "94",
+        "94,2",
+        "94.2"
+      ],
+      "explanation": "3,14 · 60 · 500 / 1000 ≈ 94",
+      "hints": [
+        "vc = π · D · n / 1000"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doporučená vc = 100 m/min, D = 20 mm. Otáčky v ot/min (zaokrouhli na celé) =",
+      "answers": [
+        "1592",
+        "1 592",
+        "1591"
+      ],
+      "explanation": "1000 · 100 / (3,14 · 20) ≈ 1 592",
+      "hints": [
+        "n = 1000 · vc / (π · D)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Soustružíš z ⌀40 na ⌀34 jedním průchodem. Hloubka řezu v mm =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "(40 − 34) / 2",
+      "hints": [
+        "Nůž ubírá z poloměru, ne z průměru."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V jakých jednotkách je posuv u soustružení?",
+      "options": [
+        "mm/ot",
+        "m/min",
+        "ot/min",
+        "mm²"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který nástrojový materiál se nehodí na obrábění oceli?",
+      "options": [
+        "polykrystalický diamant",
+        "slinutý karbid",
+        "rychlořezná ocel",
+        "CBN"
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na reakci uhlíku s železem za vysoké teploty."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď nástrojové materiály od nejměkčího po nejtvrdší.",
+      "items": [
+        "uhlíková nástrojová ocel",
+        "rychlořezná ocel",
+        "slinutý karbid",
+        "kubický nitrid boru",
+        "diamant"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Řezná kapalina chladí, maže a odplavuje třísky.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Při vyšší řezné rychlosti se nástroj opotřebí pomaleji.",
+      "answer": false,
+      "explanation": "Vyšší rychlost = vyšší teplota = kratší trvanlivost."
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s veličinou.",
+      "pairs": [
+        [
+          "vc",
+          "řezná rychlost"
+        ],
+        [
+          "f",
+          "posuv"
+        ],
+        [
+          "ap",
+          "hloubka řezu"
+        ],
+        [
+          "n",
+          "otáčky"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká tříska vzniká při obrábění šedé litiny?",
+      "options": [
+        "elementová (drobivá)",
+        "plynulá",
+        "dlouhá stuha",
+        "žádná"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Třísky z pracovního prostoru se odstraňují rukou v rukavici, když stroj běží pomalu.",
+      "answer": false,
+      "explanation": "Jen háčkem nebo smetáčkem a při stojícím stroji."
+    },
+    {
+      "type": "choice",
+      "question": "Co je hlavní řezný pohyb při soustružení?",
+      "options": [
+        "otáčení obrobku",
+        "posuv nože",
+        "přísuv do hloubky",
+        "upnutí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Co jsou řezné podmínky a jak spolu souvisí otáčky a řezná rychlost?",
+      "answer": "Řezné podmínky jsou řezná rychlost vc, posuv f a hloubka řezu ap. Řezná rychlost je obvodová rychlost obrobku nebo nástroje: vc = π·D·n/1000. Při stejné vc má menší průměr vyšší otáčky."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady platí při obrábění?",
+      "answer": "Ochranné brýle, přiléhavý oděv, žádné rukavice, šperky ani rozpuštěné vlasy u rotujících částí. Obrobek i nástroj pevně upnout, klíč vyndat ze sklíčidla. Třísky odstraňovat háčkem nebo smetáčkem při stojícím stroji, neměřit za chodu."
+    }
+  ]
+}

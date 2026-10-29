@@ -1,0 +1,410 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "technicke-mereni",
+  "title": "Technické měření",
+  "emoji": "📏",
+  "explanations": [
+    {
+      "title": "V dílně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Soustružník vyrobí čep, který má mít průměr 20 mm. Jak pozná, že se trefil? Okem rozdíl 0,05 mm neuvidí. Přitom ložisko na čep s chybou 0,05 mm už nemusí jít nasadit."
+        },
+        {
+          "type": "text",
+          "text": "Proto se ve strojírenství **měří**. Měřidlo řekne, jaký rozměr součást opravdu má. Podle toho rozhodneš, jestli je dobrá, nebo zmetek."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Jmenovitý rozměr",
+          "definition": "Rozměr napsaný na výkrese, ke kterému se vztahují úchylky.",
+          "example": "Na výkrese je ⌀20 – jmenovitý rozměr je 20 mm."
+        },
+        {
+          "type": "term",
+          "term": "Tolerance",
+          "definition": "O kolik se smí skutečný rozměr lišit. Je to rozdíl mezi největším a nejmenším dovoleným rozměrem.",
+          "example": "⌀20 ±0,1: smí mít 19,9 až 20,1 mm, tolerance je 0,2 mm."
+        },
+        {
+          "type": "term",
+          "term": "Posuvné měřítko (šuplera)",
+          "definition": "Měřidlo s pevnou stupnicí v milimetrech a posuvným jezdcem. Měří vnější i vnitřní rozměry a hloubky.",
+          "example": "Průměr trubky, šířka drážky, hloubka díry."
+        },
+        {
+          "type": "term",
+          "term": "Nonius",
+          "definition": "Malá pomocná stupnice na jezdci posuvného měřítka. Díky ní čteš i desetiny nebo setiny milimetru. Běžné noniusy mají přesnost čtení 0,1, 0,05 nebo 0,02 mm.",
+          "example": "Na noniusu 0,05 mm je 20 dílků."
+        },
+        {
+          "type": "heading",
+          "text": "Jak čteš posuvné měřítko"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi nulu noniusu. Celé milimetry přečti na hlavní stupnici vlevo od ní.",
+            "Hledej čárku noniusu, která se přesně kryje s některou čárkou hlavní stupnice.",
+            "Pořadí té čárky vynásob přesností noniusu. To jsou desetiny či setiny.",
+            "Sečti celé milimetry a zlomek milimetru."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Nula noniusu je těsně za 23 mm. S hlavní stupnicí se kryje 7. čárka noniusu s přesností 0,1 mm. Kolik je rozměr?",
+          "answer": "Celé milimetry: 23. Zlomek: 7 · 0,1 = 0,7 mm. Rozměr = 23 + 0,7 = **23,7 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Nula noniusu je za 41 mm, kryje se 9. čárka noniusu s přesností 0,05 mm. Kolik je rozměr?",
+          "answer": "Zlomek: 9 · 0,05 = 0,45 mm. Rozměr = 41 + 0,45 = **41,45 mm**."
+        },
+        {
+          "type": "heading",
+          "text": "Mikrometr"
+        },
+        {
+          "type": "term",
+          "term": "Mikrometr",
+          "definition": "Měřidlo se šroubem. Jedna otáčka bubínku posune vřeteno o 0,5 mm. Bubínek má 50 dílků, jeden dílek = 0,01 mm.",
+          "example": "Třmenový mikrometr 0–25 mm na průměr hřídele."
+        },
+        {
+          "type": "text",
+          "text": "Na objímce čteš celé a půl milimetry. Na bubínku setiny. Obě čísla sečteš. Vřeteno dotahuj **řehtačkou**, ať měříš vždy stejným tlakem."
+        },
+        {
+          "type": "example",
+          "question": "Na objímce je vidět 12 mm a ještě půlmilimetrová ryska. Na bubínku je 28. dílek. Kolik je rozměr?",
+          "answer": "Objímka: 12 + 0,5 = 12,5 mm. Bubínek: 28 · 0,01 = 0,28 mm. Celkem **12,78 mm**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mikrometr dotáhnu pořádně za bubínek, ať to sedí.",
+          "right": "Dotahuj jen řehtačkou, dokud necvakne.",
+          "why": "Velkou silou se měřidlo i součást pruží a rozměr vyjde menší. Řehtačka hlídá stálý měřicí tlak."
+        },
+        {
+          "type": "summary",
+          "text": "Posuvné měřítko čte s přesností 0,1–0,02 mm (celé mm + čárka noniusu × přesnost). Mikrometr čte na 0,01 mm (objímka + bubínek), dotahuje se řehtačkou."
+        }
+      ]
+    },
+    {
+      "title": "Přehled a kalibry",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve výrobě nejde jen o to „kolik to má“. Často stačí odpověď **ano/ne**: je díra dobrá? Na to jsou kalibry. A na přesná čísla měřidla. Tady si je seřadíš do přehledu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tolerance",
+          "definition": "Rozdíl mezi největším a nejmenším dovoleným rozměrem. Uvnitř tolerance je součást dobrá.",
+          "example": "50 ±0,02 mm: tolerance 0,04 mm."
+        },
+        {
+          "type": "term",
+          "term": "Měření",
+          "definition": "Zjištění skutečné hodnoty rozměru číslem.",
+          "example": "Mikrometrem naměříš 19,98 mm."
+        },
+        {
+          "type": "term",
+          "term": "Kontrola kalibrem",
+          "definition": "Zjištění, jestli rozměr leží v toleranci. Číslo nezjistíš, jen dobrý/zmetek.",
+          "example": "Válečkový kalibr do díry ⌀20."
+        },
+        {
+          "type": "term",
+          "term": "Kalibr",
+          "definition": "Měrka vyrobená na mezní rozměry. Má **dobrou stranu** (musí projít) a **zmetkovou stranu** (nesmí projít, bývá označená červeně).",
+          "example": "Kalibr na díru (válečkový) a na hřídel (třmenový)."
+        },
+        {
+          "type": "term",
+          "term": "Úchylkoměr (číselníkový)",
+          "definition": "Měřidlo s ručičkou, které ukazuje odchylku od nastavené hodnoty, obvykle po 0,01 mm.",
+          "example": "Kontrola házení hřídele v hrotech."
+        },
+        {
+          "type": "term",
+          "term": "Koncové měrky",
+          "definition": "Přesné ocelové nebo keramické kostičky známé délky. Skládají se k sobě a slouží k nastavení a kontrole měřidel.",
+          "example": "Sestava 25 + 1,5 + 1,005 = 27,505 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled měřidel"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Měřidlo",
+            "Přesnost čtení",
+            "Typické použití"
+          ],
+          "rows": [
+            [
+              "ocelové měřítko",
+              "1 mm",
+              "hrubé rozměry, orýsování"
+            ],
+            [
+              "posuvné měřítko",
+              "0,1 / 0,05 / 0,02 mm",
+              "vnější, vnitřní, hloubka"
+            ],
+            [
+              "mikrometr",
+              "0,01 mm",
+              "přesné průměry a tloušťky"
+            ],
+            [
+              "úchylkoměr",
+              "0,01 mm (i 0,001)",
+              "odchylky tvaru a polohy"
+            ],
+            [
+              "kalibr",
+              "—",
+              "dobrý / zmetek v sérii"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se kontroluje kalibrem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Očisti kalibr i součást.",
+            "Zkus dobrou stranu – musí projít vlastní vahou, bez násilí.",
+            "Zkus zmetkovou stranu – nesmí projít.",
+            "Prošlo dobrou a neprošlo zmetkovou → součást je dobrá."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Díra ⌀20 smí mít mezní rozměry 20,000 a 20,021 mm. Na jaký rozměr je dobrá a na jaký zmetková strana válečkového kalibru?",
+          "answer": "Dobrá strana musí projít každou dobrou dírou → je na **nejmenší** rozměr 20,000 mm. Zmetková nesmí projít dobrou dírou → je na **největší** rozměr 20,021 mm."
+        },
+        {
+          "type": "example",
+          "question": "Výkres předepisuje 50 ±0,02 mm. Stačí posuvné měřítko s noniusem 0,1 mm?",
+          "answer": "Tolerance je 0,04 mm, ale měřidlo čte jen po 0,1 mm. Nerozliší dobrý a špatný kus. Je potřeba **mikrometr** (0,01 mm). Měřidlo má být výrazně přesnější než tolerance."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ověř si, k čemu které měřidlo slouží."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Nonius 0,05 mm",
+                "back": "20 dílků, každý dílek = 0,05 mm"
+              },
+              {
+                "front": "Jedna otáčka mikrometru",
+                "back": "0,5 mm"
+              },
+              {
+                "front": "Dílek bubínku mikrometru",
+                "back": "0,01 mm"
+              },
+              {
+                "front": "Zmetková strana kalibru",
+                "back": "nesmí projít, bývá červená"
+              },
+              {
+                "front": "Úchylkoměr",
+                "back": "ukazuje odchylku od nastavené hodnoty"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zásady: měř při pokojové teplotě (norma 20 °C), součást i měřidlo očisti, na rotující obrobek nikdy neměř – nejdřív zastav stroj."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zmetková strana kalibru prošla, tak je díra určitě v pořádku.",
+          "right": "Když projde zmetková strana, je díra příliš velká – zmetek.",
+          "why": "Zmetková strana je na mezní rozměr, který už nesmí být překročen."
+        },
+        {
+          "type": "summary",
+          "text": "Měřidlem zjistíš číslo, kalibrem jen dobrý/zmetek. Dobrá strana projít musí, zmetková nesmí. Vyber měřidlo přesnější, než je tolerance."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jakou přesnost čtení má mikrometr?",
+      "options": [
+        "0,01 mm",
+        "0,1 mm",
+        "0,05 mm",
+        "1 mm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Posuvné měřítko s noniusem 0,1 mm: celé mm 15, kryje se 4. čárka noniusu. Rozměr v mm =",
+      "answers": [
+        "15,4",
+        "15.4"
+      ],
+      "explanation": "15 + 4 · 0,1 = 15,4 mm",
+      "hints": [
+        "Celé milimetry čteš u nuly noniusu.",
+        "Zlomek = pořadí krycí čárky × přesnost noniusu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Nonius 0,05 mm: celé mm 32, kryje se 13. čárka. Rozměr v mm =",
+      "answers": [
+        "32,65",
+        "32.65"
+      ],
+      "explanation": "13 · 0,05 = 0,65",
+      "hints": [
+        "Vynásob pořadí čárky přesností noniusu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Mikrometr: objímka ukazuje 8,5 mm, bubínek 17. dílek. Rozměr v mm =",
+      "answers": [
+        "8,67",
+        "8.67"
+      ],
+      "explanation": "8,5 + 17 · 0,01 = 8,67",
+      "hints": [
+        "Jeden dílek bubínku je setina milimetru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "O kolik mm se posune vřeteno mikrometru za jednu otáčku? (číslo v mm)",
+      "answers": [
+        "0,5",
+        "0.5"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zmetková strana kalibru nesmí součástí projít.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Kalibrem zjistíš přesnou hodnotu rozměru na setiny.",
+      "answer": false,
+      "explanation": "Kalibr řekne jen dobrý/zmetek."
+    },
+    {
+      "type": "choice",
+      "question": "Čím se dotahuje vřeteno mikrometru?",
+      "options": [
+        "řehtačkou",
+        "bubínkem silou ruky",
+        "klíčem",
+        "kladívkem"
+      ],
+      "answer": 0,
+      "explanation": "Řehtačka zajistí stálý měřicí tlak."
+    },
+    {
+      "type": "choice",
+      "question": "Výkres předepisuje ⌀30 ±0,01. Čím budeš měřit?",
+      "options": [
+        "mikrometrem",
+        "posuvným měřítkem 0,1 mm",
+        "ocelovým měřítkem",
+        "svinovacím metrem"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnej toleranci s přesností měřidla."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj měřidlo s přesností čtení.",
+      "pairs": [
+        [
+          "ocelové měřítko",
+          "1 mm"
+        ],
+        [
+          "posuvné měřítko",
+          "0,05 mm"
+        ],
+        [
+          "mikrometr",
+          "0,01 mm"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup čtení posuvného měřítka.",
+      "items": [
+        "Přečti celé mm vlevo od nuly noniusu.",
+        "Najdi krycí čárku noniusu.",
+        "Vynásob její pořadí přesností noniusu.",
+        "Sečti obě hodnoty."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozměr rotujícího obrobku můžeš na soustruhu měřit za chodu, pokud jsi opatrný.",
+      "answer": false,
+      "explanation": "Měří se vždy jen při stojícím vřetenu – hrozí zachycení ruky a měřidla."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi měřením a kontrolou kalibrem a kdy se co používá.",
+      "answer": "Měřením zjistím skutečnou hodnotu rozměru číslem (měřítkem, mikrometrem). Kalibrem jen ověřím, zda je rozměr v toleranci – dobrá strana projde, zmetková ne. Kalibry se hodí v sériové výrobě, protože jsou rychlé."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se odečítá rozměr na mikrometru.",
+      "answer": "Na objímce přečtu celé milimetry a případně půlmilimetrovou rysku. Na bubínku přečtu dílek proti podélné rysce a vynásobím 0,01 mm. Obě hodnoty sečtu. Před tím dotáhnu vřeteno řehtačkou."
+    }
+  ]
+}

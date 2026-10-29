@@ -1,0 +1,412 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vrtani-vyvrtavani",
+  "title": "Vrtání a vyvrtávání",
+  "emoji": "🕳️",
+  "explanations": [
+    {
+      "title": "Rodina děr",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Doma vrtáš do zdi kvůli hmoždince. Ve strojírně se vrtají díry pro šrouby, kolíky, čepy i ložiska. Některé stačí „nějak“, jiné musí mít přesnost na setiny milimetru."
+        },
+        {
+          "type": "text",
+          "text": "Proto existuje celá rodina operací: vrtání, vyhrubování, vystružování, vyvrtávání, zahlubování a řezání závitů. Každá dělá díru o kus lepší."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vrtání",
+          "definition": "Výroba díry do plného materiálu. Vrták se otáčí (hlavní pohyb) a posouvá se ve své ose (posuv).",
+          "example": "Díra ⌀8,5 pro závit M10."
+        },
+        {
+          "type": "term",
+          "term": "Šroubovitý vrták",
+          "definition": "Nejběžnější vrták se dvěma břity a šroubovitými drážkami, kterými odcházejí třísky. Pro ocel má vrcholový úhel 118°.",
+          "example": "Vrták z rychlořezné oceli ⌀10."
+        },
+        {
+          "type": "term",
+          "term": "Navrtávák (středicí vrták)",
+          "definition": "Krátký tuhý vrták, kterým se udělá důlek, aby vrták neujel.",
+          "example": "Navrtání středu před vrtáním."
+        },
+        {
+          "type": "term",
+          "term": "Vyhrubování a vystružování",
+          "definition": "Dokončení vyvrtané díry. Výhrubník ubere menší přídavek a zpřesní tvar. Výstružník ubere jen desetiny milimetru a dá přesný rozměr a hladký povrch.",
+          "example": "Díra pro kolík ⌀10 s tolerancí v setinách."
+        },
+        {
+          "type": "term",
+          "term": "Vyvrtávání",
+          "definition": "Zvětšení a zpřesnění už existující díry jednobřitým nožem na vyvrtávací tyči.",
+          "example": "Díra pro ložisko ⌀62 ve skříni."
+        },
+        {
+          "type": "term",
+          "term": "Zahlubování",
+          "definition": "Úprava ústí díry kuželovým nebo válcovým záhlubníkem, aby se zapustila hlava šroubu.",
+          "example": "Kuželové zahloubení pro zápustný šroub."
+        },
+        {
+          "type": "heading",
+          "text": "Od díry k přesné díře"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Orýsuj střed díry (nakresli ho rýsovací jehlou) a označ ho důlčíkem (ocelovým hrotem a kladívkem) nebo navrtávákem.",
+            "Vrtej vrtákem; větší díry na dvakrát (nejdřív menší vrták).",
+            "Vyhrub výhrubníkem, pokud je třeba lepší tvar.",
+            "Vystruž výstružníkem na přesný rozměr.",
+            "Sraz nebo zahlub hranu."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Řezání závitů"
+        },
+        {
+          "type": "term",
+          "term": "Závitník",
+          "definition": "Nástroj na vnitřní závit. Před ním se vyvrtá díra o průměru přibližně `d − P` (jmenovitý průměr minus stoupání; stoupání P je vzdálenost dvou sousedních závitů).",
+          "example": "Závit M10 (stoupání 1,5 mm) → vrták 8,5 mm."
+        },
+        {
+          "type": "example",
+          "question": "Jakým vrtákem předvrtáš díru pro závit M8 se stoupáním 1,25 mm?",
+          "answer": "d − P = 8 − 1,25 = **6,75 mm**, v praxi se volí vrták **6,8 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Jakým vrtákem pro M6 se stoupáním 1 mm?",
+          "answer": "d − P = 6 − 1 = **5 mm**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Malý plech na vrtačce držím rukou, je to jen chvilka.",
+          "right": "Obrobek vždy upni do strojního svěráku nebo upínkou.",
+          "why": "Vrták se může zakousnout a roztočit plech jako vrtuli – hluboké řezné rány."
+        },
+        {
+          "type": "text",
+          "text": "Bezpečnost: brýle, žádné rukavice, klíč vyndat ze sklíčidla, třísky štětečkem až po zastavení."
+        },
+        {
+          "type": "summary",
+          "text": "Vrtání dělá díru do plného, vyhrubování a vystružování ji zpřesní, vyvrtávání zvětší a zpřesní existující díru, zahlubování upraví ústí. Pro závit předvrtej d − P."
+        }
+      ]
+    },
+    {
+      "title": "Vrtačka a výpočet",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Vrtačka má páku, převody a stupnici otáček. Které otáčky zvolit a jak dlouho bude vrtání trvat? Spočítáš to stejně jako u soustruhu, jen průměr je průměr vrtáku."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vrtání",
+          "definition": "Výroba díry do plného materiálu otáčejícím se vrtákem, který se posouvá v ose.",
+          "example": "Díra pro šroub."
+        },
+        {
+          "type": "term",
+          "term": "Vrtačka",
+          "definition": "Stroj na vrtání. Stolní (malé díry), sloupová (větší díry) a radiální (velké obrobky – vřeteno se posouvá po rameni).",
+          "example": "Sloupová vrtačka v dílně."
+        },
+        {
+          "type": "term",
+          "term": "Řezná rychlost vc a otáčky n",
+          "definition": "vc je rychlost břitu na obvodu vrtáku (m/min). Otáčky: `n = 1000 · vc / (π · D)`, D = průměr vrtáku v mm.",
+          "example": "Vrták ⌀10, vc = 25 m/min → n ≈ 796 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Posuv f",
+          "definition": "O kolik mm se vrták posune za otáčku (mm/ot).",
+          "example": "f = 0,15 mm/ot."
+        },
+        {
+          "type": "term",
+          "term": "Strojní čas",
+          "definition": "`t = L / (f · n)`. L = hloubka díry + délka hrotu + náběh (a přeběh u průchozí díry). Délka hrotu je asi 0,3 · D.",
+          "example": "Hloubka 30 mm, vrták ⌀10 → L ≈ 30 + 3 + 2 = 35 mm."
+        },
+        {
+          "type": "term",
+          "term": "Stoupání závitu P",
+          "definition": "Vzdálenost dvou sousedních závitů. Díra pro vnitřní závit se předvrtává přibližně na d − P.",
+          "example": "M10 má stoupání 1,5 mm → díra 8,5 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi doporučenou vc pro materiál a vrták.",
+            "Spočítej n a nastav nejbližší nižší stupeň.",
+            "Zvol posuv f.",
+            "Spočítej L a strojní čas t = L / (f · n)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Vrták z rychlořezné oceli ⌀20 mm, ocel, vc = 25 m/min (příklad doporučení). Otáčky?",
+          "answer": "n = 1000 · 25 / (3,14 · 20) ≈ **398 ot/min**. Na stroji nastavíš nejbližší nižší stupeň, např. 355 ot/min."
+        },
+        {
+          "type": "example",
+          "question": "L = 40 mm, f = 0,2 mm/ot, n = 400 ot/min. Strojní čas?",
+          "answer": "t = 40 / (0,2 · 400) = 40 / 80 = **0,5 min**."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled operací"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operace",
+            "Nástroj",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "vrtání",
+              "šroubovitý vrták",
+              "díra do plného, hrubší"
+            ],
+            [
+              "vyhrubování",
+              "výhrubník",
+              "lepší tvar a povrch"
+            ],
+            [
+              "vystružování",
+              "výstružník",
+              "přesný rozměr, hladká stěna"
+            ],
+            [
+              "vyvrtávání",
+              "vyvrtávací tyč s nožem",
+              "větší přesná díra"
+            ],
+            [
+              "zahlubování",
+              "záhlubník",
+              "místo pro hlavu šroubu"
+            ],
+            [
+              "řezání závitu",
+              "závitník",
+              "vnitřní závit"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ověř si, který nástroj co dělá."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "výstružník",
+                "back": "přesný rozměr díry, ubírá desetiny mm"
+              },
+              {
+                "front": "záhlubník",
+                "back": "ústí díry pro hlavu šroubu"
+              },
+              {
+                "front": "navrtávák",
+                "back": "důlek, aby vrták neujel"
+              },
+              {
+                "front": "vrták pro M10",
+                "back": "8,5 mm (d − P)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Velký vrták ⌀30 roztočím stejně rychle jako ⌀5.",
+          "right": "Větší průměr = nižší otáčky.",
+          "why": "Při stejných otáčkách má větší vrták na obvodu mnohem vyšší řeznou rychlost a spálí se."
+        },
+        {
+          "type": "summary",
+          "text": "Otáčky vrtáku n = 1000·vc/(π·D), strojní čas t = L/(f·n), L zahrnuje i hrot (asi 0,3·D). Díru zpřesníš vyhrubováním, vystružováním nebo vyvrtáváním."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Průměr vrtáku pro závit M10 se stoupáním 1,5 mm v mm =",
+      "answers": [
+        "8,5",
+        "8.5"
+      ],
+      "hints": [
+        "Od jmenovitého průměru odečti stoupání."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vrták ⌀10 mm, vc = 31,4 m/min. Otáčky v ot/min =",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "explanation": "1000 · 31,4 / (3,14 · 10) = 1 000",
+      "hints": [
+        "Otáčky spočítáš z řezné rychlosti a průměru.",
+        "Řeznou rychlost převeď na mm/min a vyděl obvodem π · D."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "L = 30 mm, f = 0,1 mm/ot, n = 600 ot/min. Strojní čas v min =",
+      "answers": [
+        "0,5",
+        "0.5"
+      ],
+      "explanation": "30 / 60 = 0,5",
+      "hints": [
+        "Nejdřív spočítej f · n."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který nástroj dá díře přesný rozměr a hladký povrch?",
+      "options": [
+        "výstružník",
+        "šroubovitý vrták",
+        "záhlubník",
+        "navrtávák"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je obvyklý vrcholový úhel šroubovitého vrtáku pro ocel?",
+      "options": [
+        "118°",
+        "90°",
+        "60°",
+        "180°"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je vyvrtávání?",
+      "options": [
+        "zvětšení a zpřesnění existující díry nožem",
+        "vrtání do plného",
+        "řezání vnitřního závitu",
+        "úprava ústí pro hlavu šroubu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup výroby přesné díry.",
+      "items": [
+        "navrtání středu",
+        "vrtání",
+        "vyhrubování",
+        "vystružování"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Větší vrták potřebuje při stejné řezné rychlosti nižší otáčky.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Malý obrobek smíš při vrtání přidržovat rukou, pokud vrtáš pomalu.",
+      "answer": false,
+      "explanation": "Obrobek se upíná do svěráku; roztočený plech způsobí těžký úraz."
+    },
+    {
+      "type": "match",
+      "question": "Spoj nástroj s výsledkem.",
+      "pairs": [
+        [
+          "záhlubník",
+          "místo pro hlavu šroubu"
+        ],
+        [
+          "závitník",
+          "vnitřní závit"
+        ],
+        [
+          "navrtávák",
+          "důlek pro vrták"
+        ],
+        [
+          "výstružník",
+          "přesná díra"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká vrtačka se hodí pro velký a těžký obrobek?",
+      "options": [
+        "radiální",
+        "stolní",
+        "ruční",
+        "sloupová stolní s malým stolem"
+      ],
+      "answer": 0,
+      "explanation": "U radiální vrtačky se vřeteno posouvá po rameni, obrobek stojí."
+    },
+    {
+      "type": "open",
+      "question": "Popiš rozdíl mezi vrtáním, vystružováním a vyvrtáváním.",
+      "answer": "Vrtáním vznikne díra do plného, je méně přesná. Vystružování výstružníkem ubere jen malý přídavek a dá přesný rozměr a hladký povrch. Vyvrtávání jednobřitým nožem zvětší a zpřesní už existující, obvykle větší díru."
+    },
+    {
+      "type": "open",
+      "question": "Jaké zásady bezpečnosti platí na vrtačce?",
+      "answer": "Obrobek pevně upnout do svěráku nebo upínkou, nikdy nedržet rukou. Ochranné brýle, žádné rukavice ani volné oblečení, vlasy pod čepicí. Klíč vyndat ze sklíčidla. Třísky odstraňovat štětečkem po zastavení."
+    }
+  ]
+}

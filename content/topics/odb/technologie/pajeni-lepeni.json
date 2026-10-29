@@ -1,0 +1,437 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pajeni-lepeni",
+  "title": "Pájení a lepení",
+  "emoji": "🧪",
+  "explanations": [
+    {
+      "title": "Z dílny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Instalatér spojuje měděné trubky vody, elektronik připájí součástku na desku, v autě drží čelní sklo lepidlo. Všechno jsou to spoje, při kterých se díly samotné **netaví**."
+        },
+        {
+          "type": "text",
+          "text": "Proto se hodí tam, kde by svařování díl zničilo nebo kde spojuješ různé materiály. Tady se naučíš, jak pájení a lepení fungují a kdy které použít."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pájení",
+          "definition": "Spojení kovových dílů roztaveným kovem (pájkou), který má nižší teplotu tání než spojované díly. Díly se netaví.",
+          "example": "Měděné trubky spojené cínovou pájkou."
+        },
+        {
+          "type": "term",
+          "term": "Pájka",
+          "definition": "Kov nebo slitina, která se při pájení taví a vyplní spoj.",
+          "example": "Cínová pájka v elektronice, mosazná nebo stříbrná pájka u tvrdého pájení."
+        },
+        {
+          "type": "term",
+          "term": "Tavidlo",
+          "definition": "Látka, která odstraní z povrchu oxidy a chrání ho při ohřevu, aby pájka smáčela kov.",
+          "example": "Kalafuna v elektronice, borax u tvrdého pájení."
+        },
+        {
+          "type": "term",
+          "term": "Vzlínavost (kapilarita)",
+          "definition": "Roztavená pájka sama vtéká do úzké mezery mezi díly, jako voda do papírového ubrousku.",
+          "example": "Pájka se vtáhne do mezery mezi trubkou a tvarovkou."
+        },
+        {
+          "type": "heading",
+          "text": "Měkké a tvrdé pájení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Měkké pájení",
+            "Tvrdé pájení"
+          ],
+          "rows": [
+            [
+              "teplota tání pájky",
+              "do 450 °C",
+              "nad 450 °C"
+            ],
+            [
+              "pájky",
+              "cínové (Sn–Cu, Sn–Ag–Cu, dříve Sn–Pb)",
+              "mosazné, stříbrné, měděné"
+            ],
+            [
+              "zdroj tepla",
+              "páječka, horký vzduch",
+              "plamen hořáku, indukce, pec"
+            ],
+            [
+              "pevnost",
+              "menší",
+              "větší"
+            ],
+            [
+              "použití",
+              "elektronika, plechy, rozvody vody",
+              "nástroje (destičky), rámy, chladicí technika"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se pájí"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Očisti a odmasti povrch (kartáč, smirkové plátno).",
+            "Nanes tavidlo.",
+            "Díly sesaď s úzkou mezerou a zahřej spoj, ne pájku.",
+            "Přilož pájku – roztaví se o horký díl a vzlíná do mezery.",
+            "Nech spoj vychladnout bez pohybu a odstraň zbytky tavidla."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Spojuješ měděné rozvody pitné vody. Jakou pájku použiješ?",
+          "answer": "Pitná voda → pájka **bez olova**, např. Sn–Cu nebo Sn–Ag. Olovo je jedovaté a do rozvodů pitné vody nepatří."
+        },
+        {
+          "type": "example",
+          "question": "Potřebuješ připájet tvrdou řeznou destičku na ocelový soustružnický nůž. Měkké, nebo tvrdé pájení?",
+          "answer": "Nůž se při řezání zahřívá a spoj nese velké síly. Měkká pájka by povolila. Použije se **tvrdé pájení** (např. stříbrnou pájkou)."
+        },
+        {
+          "type": "heading",
+          "text": "A co lepení?"
+        },
+        {
+          "type": "term",
+          "term": "Lepení",
+          "definition": "Spojení dílů vrstvou lepidla, které ztuhne a drží na obou površích. Díly se vůbec neohřívají.",
+          "example": "Čelní sklo auta drží polyuretanové lepidlo."
+        },
+        {
+          "type": "text",
+          "text": "Lepení se hodí na různé materiály (kov a plast, kov a sklo) a na tenké díly, které by teplo zkroutilo. Postup: zdrsnit, odmastit, nanést lepidlo, sesadit, nechat vytvrdit. Spoj navrhuj tak, aby se lepidlo namáhalo po celé ploše, ne odlupováním z okraje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pájku roztavím hrotem pájky a nakapu ji na studený spoj.",
+          "right": "Ohřej spojované díly a pájku přilož k nim.",
+          "why": "Na studeném kovu pájka nesmáčí povrch a vznikne „studený spoj“ bez pevnosti a vodivosti."
+        },
+        {
+          "type": "summary",
+          "text": "Při pájení se taví jen pájka, ne díly. Měkké pájení je do 450 °C, tvrdé nad. Lepení spojí i různé materiály bez ohřevu, povrch musí být čistý a odmaštěný."
+        }
+      ]
+    },
+    {
+      "title": "Přehledy a výpočet",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lepení spojí kov s plastem, sklem nebo dřevem. Netřeba teplo, díly se nedeformují a spoj rozloží sílu na celou plochu. Proto se lepí i letadla a karoserie aut."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Lepení",
+          "definition": "Spojení dílů vrstvou lepidla, které ztuhne a drží na obou površích.",
+          "example": "Přilepení skla k rámu."
+        },
+        {
+          "type": "term",
+          "term": "Adheze",
+          "definition": "Přilnavost lepidla k povrchu dílu.",
+          "example": "Na mastný povrch lepidlo nepřilne – adheze je špatná."
+        },
+        {
+          "type": "term",
+          "term": "Koheze",
+          "definition": "Pevnost samotné vrstvy lepidla.",
+          "example": "Když se lepidlo roztrhne uprostřed, selhala koheze."
+        },
+        {
+          "type": "term",
+          "term": "Vytvrzení",
+          "definition": "Přechod lepidla z tekutého stavu do pevného (chemickou reakcí, odpařením nebo bez přístupu vzduchu).",
+          "example": "Dvousložkový epoxid tvrdne reakcí složek."
+        },
+        {
+          "type": "term",
+          "term": "Pájení (připomenutí)",
+          "definition": "Spojení roztavenou pájkou, díly se netaví. Do 450 °C měkké, nad 450 °C tvrdé.",
+          "example": "Měděné trubky."
+        },
+        {
+          "type": "text",
+          "text": "Pájení i lepení mají společné, že se díly netaví. U pájení drží spoj ztuhlý kov (pájka), u lepení ztuhlé lepidlo. Pájený spoj vede elektřinu a snáší vyšší teplotu, lepený zase spojí i nekovy."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy lepidel"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Lepidlo",
+            "Jak tvrdne",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "epoxidové dvousložkové",
+              "reakce dvou složek",
+              "kov, pevné konstrukční spoje"
+            ],
+            [
+              "kyanoakrylátové (vteřinové)",
+              "vlhkostí ze vzduchu, rychle",
+              "malé díly, gumu, plasty"
+            ],
+            [
+              "anaerobní",
+              "bez přístupu vzduchu mezi kovy",
+              "zajištění závitů, upevnění ložisek"
+            ],
+            [
+              "polyuretanové",
+              "vlhkostí, zůstává pružné",
+              "skla aut, těsnění"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup lepení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Povrch zdrsni (smirek, tryskání).",
+            "Odmasti (např. technický líh, odmašťovač).",
+            "Nanes lepidlo v předepsané vrstvě, u dvousložkového nejdřív smíchej složky v daném poměru.",
+            "Díly sesaď a zafixuj.",
+            "Nech vytvrdit předepsanou dobu, teprve pak spoj zatěžuj."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak spoj navrhnout"
+        },
+        {
+          "type": "text",
+          "text": "Lepený spoj vydrží nejvíc, když ho namáháš **smykem** po velké ploše (přeplátování). Nejhůř snáší **odlupování** – síla působí jen na okraj."
+        },
+        {
+          "type": "example",
+          "question": "Přeplátovaný spoj má plochu 20 × 30 mm. Pevnost lepidla ve smyku je 20 MPa (příklad z katalogu). Jakou sílu vydrží?",
+          "answer": "Plocha S = 20 · 30 = 600 mm². F = S · τ = 600 · 20 = **12 000 N = 12 kN**. V praxi se počítá s bezpečností, tedy méně."
+        },
+        {
+          "type": "example",
+          "question": "Šroub se v provozu povoluje vibracemi. Čím ho zajistíš lepením?",
+          "answer": "**Anaerobním lepidlem** na závity. Mezi kovovými závity nemá přístup vzduch, lepidlo vytvrdne a šroub drží. Podle druhu jde později povolit nářadím."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď spoje: kde se díly natavují a kde ne."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "díly se taví",
+              "díly se netaví"
+            ],
+            "items": [
+              {
+                "text": "svařování MAG",
+                "group": 0
+              },
+              {
+                "text": "měkké pájení",
+                "group": 1
+              },
+              {
+                "text": "tvrdé pájení",
+                "group": 1
+              },
+              {
+                "text": "lepení epoxidem",
+                "group": 1
+              },
+              {
+                "text": "svařování TIG",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Bezpečnost: při pájení odsávej výpary tavidla, po práci s olovnatou pájkou si umyj ruce. Lepidla a odmašťovače používej v rukavicích a při větrání."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Lepím rovnou, povrch je přece čistý na pohled.",
+          "right": "Povrch vždy odmastím a zdrsním.",
+          "why": "Neviditelná vrstva tuku z prstů zničí adhezi a spoj se odloupne."
+        },
+        {
+          "type": "summary",
+          "text": "Lepení: zdrsnit, odmastit, nanést, zafixovat, vytvrdit. Spoj navrhuj na smyk po velké ploše, ne na odlupování."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Do jaké teploty tání pájky mluvíme o měkkém pájení?",
+      "options": [
+        "450 °C",
+        "100 °C",
+        "900 °C",
+        "1 500 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Při pájení se základní materiál taví.",
+      "answer": false,
+      "explanation": "Taví se jen pájka."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží tavidlo?",
+      "options": [
+        "odstraní oxidy a chrání povrch",
+        "zvýší teplotu plamene",
+        "nahradí pájku",
+        "ochladí spoj"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou pájku použiješ na rozvody pitné vody?",
+      "options": [
+        "bez olova (Sn–Cu)",
+        "cín–olovo",
+        "jakoukoli",
+        "lepidlo místo pájky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj lepidlo s použitím.",
+      "pairs": [
+        [
+          "anaerobní",
+          "zajištění závitů"
+        ],
+        [
+          "epoxidové",
+          "pevný spoj kovů"
+        ],
+        [
+          "kyanoakrylátové",
+          "rychlé lepení malých dílů"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup lepení.",
+      "items": [
+        "zdrsnit povrch",
+        "odmastit",
+        "nanést lepidlo",
+        "sesadit a zafixovat",
+        "nechat vytvrdit"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Přeplátovaný spoj 10 × 40 mm, pevnost lepidla ve smyku 15 MPa. Síla v N =",
+      "answers": [
+        "6000",
+        "6 000"
+      ],
+      "explanation": "S = 400 mm², F = 400 · 15 = 6 000 N",
+      "hints": [
+        "Nejdřív spočítej plochu spoje.",
+        "F = S · τ"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Lepený spoj nejlépe snáší odlupování.",
+      "answer": false,
+      "explanation": "Nejlépe snáší smyk po velké ploše."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje přilnavost lepidla k povrchu?",
+      "options": [
+        "adheze",
+        "koheze",
+        "kapilarita",
+        "vytvrzení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Při pájení se ohřívá spoj, pájka se roztaví o horký díl.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje jev, kdy pájka sama vtéká do úzké mezery?",
+      "answers": [
+        "vzlínavost",
+        "kapilarita",
+        "kapilarnost",
+        "vzlinavost"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej svařování, pájení a lepení.",
+      "answer": "Při svařování se natavují spojované díly. Při pájení se taví jen pájka s nižší teplotou tání, díly zůstanou pevné. Při lepení se díly vůbec neohřívají, spoj drží vrstva lepidla – tak jde spojit i různé materiály."
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup měkkého pájení měděné trubky.",
+      "answer": "Konce očistím a odmastím, nanesu tavidlo, trubku zasunu do tvarovky. Ohřeji spoj, přiložím pájku, která se roztaví a vzlíná do mezery. Spoj nechám bez pohybu vychladnout a otřu zbytky tavidla."
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "nekonvencni-metody",
+  "title": "Nekonvenční metody obrábění",
+  "emoji": "✨",
+  "explanations": [
+    {
+      "title": "Světlo, voda, jiskra",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jak vyřízneš z plechu složitý ornament, z kalené oceli úzkou drážku nebo z kamene písmena? Nožem ani frézou to nejde dobře. Pomůže světlo, voda nebo elektrické jiskry."
+        },
+        {
+          "type": "text",
+          "text": "Nekonvenční metody nepotřebují břit. Materiál odebírají energií: teplem, proudem částic nebo výboji. Proto zvládnou i velmi tvrdé materiály a složité tvary."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nekonvenční obrábění",
+          "definition": "Obrábění bez klasického břitu a bez velké řezné síly. Materiál odebírá energie (světlo, voda, elektřina, plazma).",
+          "example": "Laserové řezání plechu."
+        },
+        {
+          "type": "term",
+          "term": "Laser",
+          "definition": "Úzký soustředěný paprsek světla s obrovskou hustotou energie. Materiál v místě dopadu roztaví nebo odpaří.",
+          "example": "Vláknový laser řeže ocelový plech 10 mm."
+        },
+        {
+          "type": "term",
+          "term": "Vodní paprsek",
+          "definition": "Tenký paprsek vody pod velmi vysokým tlakem (řádově stovky MPa). Pro tvrdé materiály se přidává abrazivo.",
+          "example": "Řezání skla, kamene, gumy i oceli."
+        },
+        {
+          "type": "term",
+          "term": "Abrazivo",
+          "definition": "Tvrdý jemný písek přidaný do vody, který materiál obrušuje.",
+          "example": "Granátový písek."
+        },
+        {
+          "type": "term",
+          "term": "Elektroeroze",
+          "definition": "Odebírání materiálu elektrickými výboji (jiskrami) mezi nástrojem a obrobkem v nevodivé kapalině. Funguje jen u elektricky vodivých materiálů.",
+          "example": "Drátová řezačka vyřízne kalený střižník."
+        },
+        {
+          "type": "term",
+          "term": "Tepelně ovlivněná oblast",
+          "definition": "Pás materiálu u řezu, který se ohřál a změnil vlastnosti (ztvrdl, zkřehl).",
+          "example": "U laseru a plazmy vzniká, u vodního paprsku prakticky ne."
+        },
+        {
+          "type": "term",
+          "term": "Plazma",
+          "definition": "Plyn ohřátý elektrickým obloukem na velmi vysokou teplotu. Zúžený tryskou roztaví a vyfoukne kov.",
+          "example": "Plazmová řezačka na silné ocelové plechy."
+        },
+        {
+          "type": "heading",
+          "text": "Která metoda kdy"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je materiál elektricky vodivý a velmi tvrdý, potřebuješ přesný tvar? → elektroeroze.",
+            "Řežeš plech a chceš rychlost a přesnost? → laser.",
+            "Nesmí se materiál ohřát, nebo nevede proud (kámen, sklo, plast, kompozit)? → vodní paprsek.",
+            "Řežeš silný ocelový plech levně? → plazma."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Je potřeba vyříznout tvar z vícevrstvého kompozitu s uhlíkovými vlákny, nesmí se přehřát. Co zvolíš?",
+          "answer": "Teplo by poškodilo pryskyřici → laser ani plazma ne. Zvolíš **vodní paprsek s abrazivem**, řeže za studena."
+        },
+        {
+          "type": "example",
+          "question": "Výroba střižníku složitého tvaru z kalené nástrojové oceli. Co zvolíš?",
+          "answer": "Ocel je kalená (velmi tvrdá), vede proud a tvar je složitý → **drátová elektroeroze**."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Přiřaď materiál k metodě, kterou ho lze obrábět."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "jen vodní paprsek",
+              "i elektroeroze"
+            ],
+            "items": [
+              {
+                "text": "sklo",
+                "group": 0
+              },
+              {
+                "text": "kámen",
+                "group": 0
+              },
+              {
+                "text": "kalená ocel",
+                "group": 1
+              },
+              {
+                "text": "pryž",
+                "group": 0
+              },
+              {
+                "text": "tvrdokov (slinutý karbid)",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Elektroerozí obrobím cokoli, třeba i keramickou destičku.",
+          "right": "Elektroeroze funguje jen u elektricky vodivých materiálů.",
+          "why": "Výboj musí proběhnout mezi nástrojem a obrobkem; nevodivým materiálem proud neprojde."
+        },
+        {
+          "type": "summary",
+          "text": "Nekonvenční metody odebírají materiál energií bez břitu: laser (světlo), vodní paprsek (voda s abrazivem, za studena), elektroeroze (výboje, jen vodivé materiály), plazma."
+        }
+      ]
+    },
+    {
+      "title": "Přehled a bezpečnost",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve firmě stojí laserový stroj, vodní paprsek i drátovka. Každý má jiné výhody a jiná nebezpečí. Tady máš přehled principů, použití a bezpečnosti."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Laserové řezání",
+          "definition": "Paprsek laseru materiál roztaví, asistenční plyn (kyslík nebo dusík) taveninu vyfoukne ze spáry.",
+          "example": "Řezání nerezového plechu s dusíkem."
+        },
+        {
+          "type": "term",
+          "term": "Plazmové řezání",
+          "definition": "Elektrický oblouk zúžený tryskou ohřeje plyn na plazma o velmi vysoké teplotě, který kov roztaví a vyfoukne.",
+          "example": "Řezání ocelových plechů desítek mm."
+        },
+        {
+          "type": "term",
+          "term": "Řezání vodním paprskem",
+          "definition": "Voda pod tlakem řádově stovek MPa prochází tryskou malého průměru; s abrazivem (tvrdým jemným pískem) řeže i kovy.",
+          "example": "Řezání kamenné dlažby."
+        },
+        {
+          "type": "term",
+          "term": "Drátová elektroeroze",
+          "definition": "Tenký drát (např. mosazný, desetiny mm) se odvíjí a výboji mezi ním a obrobkem vyřezává tvar. Pracuje v deionizované vodě.",
+          "example": "Výroba střižníků a střižnic."
+        },
+        {
+          "type": "term",
+          "term": "Hloubení elektroerozí",
+          "definition": "Tvarová elektroda (často grafit nebo měď) se zanořuje do obrobku a vytváří dutinu svého tvaru. Pracuje v dielektrickém oleji.",
+          "example": "Dutiny forem na plasty."
+        },
+        {
+          "type": "term",
+          "term": "Tepelně ovlivněná oblast",
+          "definition": "Pás u řezu, který se ohřál a změnil vlastnosti (ztvrdl, zkřehl).",
+          "example": "Vzniká u laseru a plazmy."
+        },
+        {
+          "type": "term",
+          "term": "Dielektrikum",
+          "definition": "Nevodivá kapalina, ve které výboj proběhne jen na krátkou vzdálenost; zároveň chladí a odplavuje částice.",
+          "example": "Deionizovaná voda, speciální olej."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "Princip",
+            "Výhoda",
+            "Omezení"
+          ],
+          "rows": [
+            [
+              "laser",
+              "světlo taví/odpařuje",
+              "rychlý, přesný, úzký řez",
+              "tepelně ovlivněná oblast, tloušťka omezená"
+            ],
+            [
+              "plazma",
+              "plazmový oblouk",
+              "levné řezání silných plechů",
+              "horší kvalita hrany, jen vodivé kovy"
+            ],
+            [
+              "vodní paprsek",
+              "voda (+ abrazivo)",
+              "řeže za studena téměř cokoli",
+              "pomalejší, hlučný"
+            ],
+            [
+              "elektroeroze",
+              "elektrické výboje",
+              "tvrdé materiály, složité tvary",
+              "jen vodivé materiály, pomalá"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Laser** – přímý i odražený paprsek poškodí oči i kůži; pracuje se se zavřenými kryty, případně s brýlemi určenými pro vlnovou délku laseru; odsávání dýmu.",
+            "**Vodní paprsek** – paprsek pronikne kůží i kostí, nikdy nesahej do pracovního prostoru za chodu; chrání se sluch.",
+            "**Plazma** – UV záření jako u svařování, dým, vysoké napětí.",
+            "**Elektroeroze** – hloubení v oleji: riziko požáru, hladina oleje musí být nad místem výboje."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a připomeň si, čím která metoda odebírá materiál."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "laser",
+                "back": "soustředěné světlo"
+              },
+              {
+                "front": "vodní paprsek",
+                "back": "voda pod tlakem s abrazivem"
+              },
+              {
+                "front": "drátovka",
+                "back": "elektrické výboje z drátu"
+              },
+              {
+                "front": "plazma",
+                "back": "zúžený elektrický oblouk"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Proč se na drátové elektroerozi používá deionizovaná voda?",
+          "answer": "Je to dielektrikum: běžná voda vede proud, deionizovaná prakticky ne. Výboj tak proběhne jen v úzké mezeře u drátu, voda zároveň chladí a odplavuje částice."
+        },
+        {
+          "type": "example",
+          "question": "Firma řeže velké množství tenkých ocelových plechů na přesné díly. Laser, nebo vodní paprsek?",
+          "answer": "Tenký ocelový plech, přesnost a rychlost → **laser**. Je výrazně rychlejší a tepelné ovlivnění u tenkého plechu nevadí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vodní paprsek je jen voda, rukou mi neublíží.",
+          "right": "Paprsek pod takovým tlakem prořízne kůži, svaly i kost.",
+          "why": "Proto se do pracovního prostoru za chodu nesahá a stroj má kryty."
+        },
+        {
+          "type": "summary",
+          "text": "Laser a plazma řežou teplem, vodní paprsek za studena, elektroeroze výboji v dielektriku. Každá metoda má svá rizika: záření, tlak vody, napětí, požár oleje."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která metoda řeže bez tepelného ovlivnění materiálu?",
+      "options": [
+        "vodní paprsek",
+        "laser",
+        "plazma",
+        "kyslíkový plamen"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Elektroerozí lze obrábět jen elektricky vodivé materiály.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co se přidává do vody, aby vodní paprsek řezal i ocel?",
+      "options": [
+        "abrazivo (např. granátový písek)",
+        "olej",
+        "kyslík",
+        "dusík"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "V jaké kapalině pracuje drátová elektroeroze?",
+      "options": [
+        "v deionizované vodě",
+        "v běžné vodovodní vodě",
+        "v benzinu",
+        "v řezném oleji s vodou"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kapalina nesmí vést proud."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu s principem.",
+      "pairs": [
+        [
+          "laser",
+          "soustředěné světlo"
+        ],
+        [
+          "plazma",
+          "zúžený oblouk"
+        ],
+        [
+          "elektroeroze",
+          "elektrické výboje"
+        ],
+        [
+          "vodní paprsek",
+          "voda pod tlakem"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se vytvoří dutina formy na plasty z kalené oceli?",
+      "options": [
+        "hloubením elektroerozí",
+        "vodním paprskem",
+        "plazmou",
+        "pilou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Do pracovního prostoru vodního paprsku smíš za chodu sáhnout, když paprsek míří jinam.",
+      "answer": false,
+      "explanation": "Paprsek pronikne tkání; stroj se zastaví před každým zásahem."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký plyn při laserovém řezání nerezi dá čistou hranu bez oxidů?",
+      "options": [
+        "dusík",
+        "kyslík",
+        "acetylen",
+        "vodík"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá nevodivá kapalina, ve které probíhá elektroeroze?",
+      "answers": [
+        "dielektrikum",
+        "dielektricka kapalina",
+        "dielektrická kapalina"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď rozhodování pro kalený střižník složitého tvaru.",
+      "items": [
+        "je materiál velmi tvrdý? ano",
+        "vede proud? ano",
+        "je tvar složitý a přesný? ano",
+        "zvolím drátovou elektroerozi"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plazmou lze řezat sklo.",
+      "answer": false,
+      "explanation": "Plazmový oblouk potřebuje elektricky vodivý materiál."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej laserové řezání a řezání vodním paprskem.",
+      "answer": "Laser materiál taví světlem, je rychlý a přesný, hlavně pro plechy, ale vzniká tepelně ovlivněná oblast. Vodní paprsek s abrazivem řeže za studena téměř jakýkoli materiál (kámen, sklo, kompozity, kovy), je ale pomalejší a hlučný."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli princip elektroeroze a kdy se používá.",
+      "answer": "Mezi nástrojem (drát nebo tvarová elektroda) a obrobkem v dielektriku přeskakují výboje, které taví a odpařují drobné částice materiálu. Používá se pro velmi tvrdé vodivé materiály a složité tvary – střižníky, dutiny forem."
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "brouseni-dokoncovani",
+  "title": "Broušení a dokončovací metody",
+  "emoji": "💎",
+  "explanations": [
+    {
+      "title": "Jako smirek",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Smirkový papír uhladí dřevo, protože je pokrytý tisíci drobných tvrdých zrnek. Brusný kotouč je totéž, jen pevné a rychle se točí. Každé zrnko je malinký břit."
+        },
+        {
+          "type": "text",
+          "text": "Broušením se dokončují velmi tvrdé hřídele, ložiska, nástroje a čepy. Dosáhneš přesnosti na tisíciny milimetru a velmi hladkého povrchu. Brousí se i velmi tvrdá ocel, kterou nůž neuřízne."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kalená ocel (připomenutí)",
+          "definition": "Ocel, která byla tepelně zpracována (ohřátá a rychle ochlazená), aby byla velmi tvrdá. Běžný soustružnický nůž ji obrábí jen těžko.",
+          "example": "Kalený čep, ložiskový kroužek."
+        },
+        {
+          "type": "term",
+          "term": "Broušení",
+          "definition": "Obrábění mnoha drobnými zrny brusiva vázanými v kotouči. Každé zrno odebere maličkou třísku.",
+          "example": "Broušení kaleného čepu na přesný průměr."
+        },
+        {
+          "type": "term",
+          "term": "Brusivo",
+          "definition": "Tvrdá zrna, která řežou. Umělý korund (Al₂O₃) na oceli, karbid křemíku (SiC) na litinu a neželezné kovy, kubický nitrid boru (CBN) a diamant na velmi tvrdé materiály.",
+          "example": "Bílý korundový kotouč na nástrojovou ocel."
+        },
+        {
+          "type": "term",
+          "term": "Pojivo",
+          "definition": "Hmota, která drží zrna pohromadě. Nejčastěji keramické, dále pryskyřičné nebo kovové.",
+          "example": "Keramické pojivo je tvrdé a pórovité."
+        },
+        {
+          "type": "term",
+          "term": "Zrnitost",
+          "definition": "Velikost zrn, udává se číslem. **Větší číslo = jemnější zrno** = hladší povrch.",
+          "example": "Zrnitost 46 na hrubé broušení, 120 na jemné."
+        },
+        {
+          "type": "term",
+          "term": "Tvrdost kotouče",
+          "definition": "Jak pevně drží pojivo zrna (ne tvrdost zrn!). Označuje se písmenem, A je velmi měkký, Z velmi tvrdý.",
+          "example": "Kotouč „H“ je měkký, „P“ tvrdý."
+        },
+        {
+          "type": "heading",
+          "text": "Proč na tvrdý materiál měkký kotouč"
+        },
+        {
+          "type": "text",
+          "text": "Zrna se při práci otupují. U měkkého kotouče se tupá zrna vylomí a objeví se nová ostrá. Tomu se říká **samoostření**. Tvrdý materiál otupuje zrna rychle, proto potřebuje měkký kotouč. Měkký materiál zrna neotupí, ale zanáší kotouč, proto tvrdší kotouč."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy broušení"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Na kulato vnější** – hřídele mezi hroty.",
+            "**Na kulato vnitřní** – díry.",
+            "**Na plocho** – rovinné plochy na magnetickém stole.",
+            "**Bezhroté** – válečky a čepy v sérii bez upnutí do hrotů."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Orovnávání",
+          "definition": "Úprava kotouče diamantovým orovnávačem: obnoví tvar a ostrost, odstraní zanesení.",
+          "example": "Orovnání před dokončovacím broušením."
+        },
+        {
+          "type": "example",
+          "question": "Brousíš kalenou nástrojovou ocel. Měkký, nebo tvrdý kotouč?",
+          "answer": "Kalená ocel je tvrdá a zrna rychle otupí → **měkký kotouč**, aby se tupá zrna uvolňovala a kotouč se sám ostřil."
+        },
+        {
+          "type": "example",
+          "question": "Co znamená zrnitost 60 a 120? Který kotouč dá hladší povrch?",
+          "answer": "Číslo udává jemnost zrna. **Zrnitost 120** je jemnější → hladší povrch, ale menší úběr."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na tvrdý materiál dám tvrdý kotouč – tvrdé na tvrdé.",
+          "right": "Tvrdý materiál → měkký kotouč; měkký materiál → tvrdší kotouč.",
+          "why": "Tvrdost kotouče znamená, jak pevně drží zrna. Tupá zrna se musí uvolnit."
+        },
+        {
+          "type": "summary",
+          "text": "Broušení řeže tisíci zrny brusiva v pojivu. Větší číslo zrnitosti = jemnější. Tvrdost kotouče = pevnost držení zrn; tvrdý materiál brousíš měkkým kotoučem."
+        }
+      ]
+    },
+    {
+      "title": "Bezpečně a načisto",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Brusný kotouč se točí tak rychle, že jeho obvod jede rychleji než auto na dálnici. Kdyby praskl, úlomky letí jako střely. Proto má broušení přísná pravidla. A po broušení přicházejí metody, které povrch vyhladí ještě víc."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Broušení",
+          "definition": "Obrábění brusným kotoučem, ve kterém je mnoho tvrdých zrn drženo pojivem.",
+          "example": "Broušení nože na stojanové brusce."
+        },
+        {
+          "type": "term",
+          "term": "Obvodová rychlost kotouče",
+          "definition": "Rychlost bodu na obvodu kotouče, u broušení v **m/s**: `v = π · D · n / (1000 · 60)` (D v mm, n v ot/min).",
+          "example": "Kotouč ⌀300 při 2 000 ot/min → asi 31 m/s."
+        },
+        {
+          "type": "term",
+          "term": "Nejvyšší dovolená rychlost",
+          "definition": "Rychlost vyznačená na kotouči (štítek, barevný pruh). Nesmí se překročit.",
+          "example": "Kotouč s označením 35 m/s."
+        },
+        {
+          "type": "term",
+          "term": "Opěrka obrobku",
+          "definition": "Podložka u stojanové brusky, o kterou opřeš obrobek. Mezera mezi ní a kotoučem nesmí být větší než asi 3 mm.",
+          "example": "Opěrka se po opotřebení kotouče přisune."
+        },
+        {
+          "type": "term",
+          "term": "Drsnost povrchu Ra",
+          "definition": "Číslo v µm (mikrometrech), které říká, jak moc je povrch zvlněný. Menší Ra = hladší.",
+          "example": "Soustružení Ra řádově jednotky µm, broušení desetiny µm."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet rychlosti"
+        },
+        {
+          "type": "example",
+          "question": "Kotouč ⌀400 mm, n = 1 500 ot/min. Obvodová rychlost?",
+          "answer": "v = 3,14 · 400 · 1500 / 60 000 ≈ **31,4 m/s**."
+        },
+        {
+          "type": "example",
+          "question": "Kotouč ⌀200 mm má dovoleno 35 m/s. Smíš ho upnout na brusku s 4 000 ot/min?",
+          "answer": "v = 3,14 · 200 · 4000 / 60 000 ≈ 41,9 m/s. To je víc než 35 m/s → **ne, nesmíš**, kotouč by mohl prasknout."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Kotouč prohlédni a „ozvuč“ poklepem – zdravý zní jasně, prasklý drnčí.",
+            "Zkontroluj, že dovolená rychlost kotouče je vyšší než rychlost brusky.",
+            "Upni s pružnými podložkami, nasaď kryt.",
+            "Nastav opěrku nejvýše asi 3 mm od kotouče.",
+            "Při rozběhu stůj mimo rovinu otáčení kotouče.",
+            "Pracuj s brýlemi nebo štítem."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dokončovací metody"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "Jak",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "honování",
+              "honovací hlava s brousky se otáčí a pohybuje tam a zpět; vzniká křížový vzor",
+              "válce motorů, hydraulické válce"
+            ],
+            [
+              "lapování",
+              "volné brusivo v pastě mezi dílem a lapovacím nástrojem",
+              "měrky, těsnicí plochy"
+            ],
+            [
+              "superfinišování",
+              "jemný kmitající brousek",
+              "čepy, oběžné dráhy ložisek"
+            ],
+            [
+              "leštění",
+              "kotouč z plsti nebo látky s pastou",
+              "lesklý vzhled"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Seřaď v duchu metody od nejdrsnějšího povrchu po nejhladší a pak si to ověř na sloupcích (orientační Ra, příklad)."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "µm Ra (orientačně)",
+            "items": [
+              {
+                "label": "soustružení",
+                "value": 3.2
+              },
+              {
+                "label": "frézování",
+                "value": 3.2
+              },
+              {
+                "label": "broušení",
+                "value": 0.8
+              },
+              {
+                "label": "honování",
+                "value": 0.2
+              },
+              {
+                "label": "lapování",
+                "value": 0.05
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Opěrku nechám daleko od kotouče, ať mám víc místa.",
+          "right": "Opěrka nejvýše asi 3 mm od kotouče.",
+          "why": "Do širší mezery se obrobek vtáhne a zaklíní, kotouč praskne nebo strhne ruku."
+        },
+        {
+          "type": "summary",
+          "text": "Obvodová rychlost v = π·D·n/60 000 m/s nesmí překročit hodnotu na kotouči. Kryt, brýle, opěrka do 3 mm, kotouč ozvučit. Honování, lapování a superfinišování povrch dál vyhladí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které číslo zrnitosti znamená jemnější zrno?",
+      "options": [
+        "120",
+        "46",
+        "24",
+        "16"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký kotouč zvolíš na kalenou ocel?",
+      "options": [
+        "měkký",
+        "velmi tvrdý",
+        "jakýkoli",
+        "bez pojiva"
+      ],
+      "answer": 0,
+      "hints": [
+        "Tupá zrna se musí vylamovat."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvrdost brusného kotouče je tvrdost jeho zrn.",
+      "answer": false,
+      "explanation": "Je to pevnost, s jakou pojivo drží zrna."
+    },
+    {
+      "type": "input",
+      "question": "Kotouč ⌀300 mm, n = 2 000 ot/min. Obvodová rychlost v m/s (zaokrouhli na celé) =",
+      "answers": [
+        "31"
+      ],
+      "explanation": "3,14 · 300 · 2000 / 60 000 ≈ 31,4",
+      "hints": [
+        "Výsledek v m/s: děl 60 000, ne 1 000."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kotouč s dovolenou rychlostí 35 m/s smíš provozovat rychlostí 40 m/s, pokud je nový.",
+      "answer": false
+    },
+    {
+      "type": "input",
+      "question": "Maximální mezera mezi opěrkou a kotoučem stojanové brusky v mm (asi) =",
+      "answers": [
+        "3"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu s použitím.",
+      "pairs": [
+        [
+          "honování",
+          "válce motorů"
+        ],
+        [
+          "lapování",
+          "měrky a těsnicí plochy"
+        ],
+        [
+          "bezhroté broušení",
+          "válečky v sérii"
+        ],
+        [
+          "broušení na plocho",
+          "rovinné plochy"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží orovnávání kotouče?",
+      "options": [
+        "obnoví tvar a ostrost kotouče",
+        "zvýší otáčky",
+        "zkouší kotouč zvukem",
+        "mění zrnitost"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď přípravu brusky před prací.",
+      "items": [
+        "prohlédnout a ozvučit kotouč",
+        "porovnat dovolenou rychlost",
+        "upnout a nasadit kryt",
+        "nastavit opěrku",
+        "spustit a stát mimo rovinu kotouče"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které brusivo se hodí na šedou litinu a neželezné kovy?",
+      "options": [
+        "karbid křemíku (SiC)",
+        "umělý korund",
+        "diamant vždy",
+        "ocelový písek"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Při rozběhu brusky stojíš mimo rovinu otáčení kotouče.",
+      "answer": true,
+      "explanation": "Kdyby kotouč praskl, úlomky letí v této rovině."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký vzor typicky zanechává honování na stěně válce?",
+      "options": [
+        "křížový",
+        "soustředné kruhy",
+        "žádný",
+        "podélné rýhy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Proč se na tvrdé materiály používá měkký brusný kotouč?",
+      "answer": "Tvrdý materiál rychle otupí zrna. Měkký kotouč drží zrna slaběji, tupá zrna se vylomí a odkryjí se nová ostrá – kotouč se samoostří. Tvrdý kotouč by se zalesknul, hřál a nebrousil."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady platí při broušení?",
+      "answer": "Kotouč před upnutím prohlédnout a ozvučit, nesmí se překročit dovolená rychlost, musí být nasazený kryt, opěrka nejvýše asi 3 mm od kotouče. Pracuje se s brýlemi nebo štítem a při rozběhu se stojí mimo rovinu kotouče."
+    }
+  ]
+}

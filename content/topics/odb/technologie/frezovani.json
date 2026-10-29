@@ -1,0 +1,426 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "frezovani",
+  "title": "Frézování",
+  "emoji": "🌀",
+  "explanations": [
+    {
+      "title": "Plochy a drážky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Soustruh umí jen „kulaté“ tvary. Jenže skříň převodovky, upínka, forma na plast nebo drážka pro pero jsou rovné plochy, kapsy a drážky. Na ty je **frézka**."
+        },
+        {
+          "type": "text",
+          "text": "Na frézce se otáčí nástroj s mnoha zuby a obrobek pod ním pomalu jede. Každý zub ukousne malou třísku – jako když kolo mlýnku postupně melje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Posuv",
+          "definition": "Pomalý pohyb, který přivádí nástroj stále do nového materiálu.",
+          "example": "Stůl s obrobkem jede pod frézou 300 mm za minutu."
+        },
+        {
+          "type": "term",
+          "term": "Frézování",
+          "definition": "Obrábění vícebřitým rotujícím nástrojem (frézou); posuv obvykle koná obrobek upnutý na stole.",
+          "example": "Frézování rovné plochy na bloku."
+        },
+        {
+          "type": "term",
+          "term": "Fréza",
+          "definition": "Rotační nástroj s více zuby (břity).",
+          "example": "Stopková fréza ⌀10 se 4 zuby."
+        },
+        {
+          "type": "term",
+          "term": "Frézka",
+          "definition": "Stroj na frézování. Má vřeteno s frézou a stůl, který se posouvá ve třech osách.",
+          "example": "Konzolová svislá frézka, CNC obráběcí centrum."
+        },
+        {
+          "type": "term",
+          "term": "Strojní svěrák",
+          "definition": "Pevný svěrák připevněný na stole frézky, do kterého upneš obrobek.",
+          "example": "Hranol 50 × 80 v svěráku."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy frézování"
+        },
+        {
+          "type": "term",
+          "term": "Obvodové (válcové) frézování",
+          "definition": "Řežou zuby na obvodu frézy, osa frézy je rovnoběžná s obráběnou plochou.",
+          "example": "Válcová fréza na vodorovné frézce."
+        },
+        {
+          "type": "term",
+          "term": "Čelní frézování",
+          "definition": "Řežou hlavně zuby na čele frézy, osa je kolmá k ploše. Dává rovnější plochu a vyšší výkon.",
+          "example": "Čelní fréza s destičkami na velkou plochu."
+        },
+        {
+          "type": "term",
+          "term": "Vůle",
+          "definition": "Malá mezera v mechanismu (např. mezi šroubem a maticí posuvu stolu). Stůl se o ni může nechtěně posunout.",
+          "example": "Otočíš klikou a stůl se chvíli nehýbe."
+        },
+        {
+          "type": "term",
+          "term": "Nesousledné frézování",
+          "definition": "Fréza se v místě řezu otáčí **proti** směru posuvu. Tříska začíná od nulové tloušťky.",
+          "example": "Na klasických frézkách s vůlí ve šroubu stolu."
+        },
+        {
+          "type": "term",
+          "term": "Sousledné frézování",
+          "definition": "Fréza se v místě řezu otáčí **ve směru** posuvu. Tříska začíná nejtlustší, povrch je lepší, nástroj vydrží déle. Stroj potřebuje posuv bez vůle.",
+          "example": "Běžné na CNC strojích, které mají posuv bez vůle."
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "text",
+          "text": "Přiřaď nástroj k práci: roztřiď, co je spíš pro plochy a co pro drážky a tvary."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "rovné plochy",
+              "drážky a tvary"
+            ],
+            "items": [
+              {
+                "text": "čelní fréza s destičkami",
+                "group": 0
+              },
+              {
+                "text": "válcová fréza",
+                "group": 0
+              },
+              {
+                "text": "drážkovací fréza na pero",
+                "group": 1
+              },
+              {
+                "text": "kotoučová fréza",
+                "group": 1
+              },
+              {
+                "text": "tvarová fréza na ozubení",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Kterou metodu zvolíš na starší konzolové frézce s vůlí ve šroubu stolu?",
+          "answer": "**Nesousledné frézování.** U sousledného by zuby stůl „vtahovaly“ a vůle by způsobila škubání, vylomení zubů nebo poškození obrobku."
+        },
+        {
+          "type": "example",
+          "question": "Je potřeba velká rovná plocha na odlitku. Obvodově, nebo čelně?",
+          "answer": "**Čelní frézování** čelní frézou – řeže víc zubů naráz, plocha je rovnější a výkon vyšší."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Upnutý obrobek srovnám rukou, zatímco fréza běží, je to rychlejší.",
+          "right": "Úpravy upnutí a odstraňování třísek jen při stojícím vřetenu.",
+          "why": "Rotující fréza zachytí prsty nebo rukavici v zlomku sekundy."
+        },
+        {
+          "type": "text",
+          "text": "Bezpečnost: brýle, žádné rukavice u rotující frézy, obrobek pevně upnout, třísky odstraňovat štětcem nebo smetáčkem po zastavení."
+        },
+        {
+          "type": "summary",
+          "text": "Frézování: otáčí se vícezubá fréza, obrobek se posouvá. Obvodové × čelní, nesousledné (proti posuvu) × sousledné (ve směru posuvu, jen bez vůle)."
+        }
+      ]
+    },
+    {
+      "title": "Výpočet a upínání",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na frézce nastavuješ dvě čísla: otáčky frézy a rychlost posuvu stolu. Obě se počítají z doporučení výrobce nástroje. Tady je postup krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Frézování",
+          "definition": "Obrábění rotující vícezubou frézou, obrobek koná posuv.",
+          "example": "Frézování drážky."
+        },
+        {
+          "type": "term",
+          "term": "Počet zubů z",
+          "definition": "Kolik břitů má fréza.",
+          "example": "Stopková fréza se 4 zuby: z = 4."
+        },
+        {
+          "type": "term",
+          "term": "Posuv na zub fz",
+          "definition": "Jak tlustou třísku ukousne jeden zub, v mm/zub. Udává ho výrobce nástroje.",
+          "example": "fz = 0,1 mm/zub."
+        },
+        {
+          "type": "term",
+          "term": "Otáčky n a řezná rychlost vc",
+          "definition": "Otáčky frézy za minutu. Počítají se ze stejného vztahu jako u soustružení: `n = 1000 · vc / (π · D)`, D je průměr frézy.",
+          "example": "Fréza ⌀20, vc = 63 m/min → n ≈ 1 000 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Rychlost posuvu vf",
+          "definition": "Kolik mm ujede stůl za minutu: `vf = fz · z · n` (mm/min).",
+          "example": "0,1 · 4 · 1000 = 400 mm/min."
+        },
+        {
+          "type": "term",
+          "term": "Strojní čas",
+          "definition": "Doba řezu: `t = L / vf` v minutách; L = délka plochy + náběh + přeběh.",
+          "example": "L = 400 mm, vf = 400 mm/min → 1 min."
+        },
+        {
+          "type": "heading",
+          "text": "Postup nastavení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Z katalogu zjisti vc a fz pro materiál obrobku a nástroj.",
+            "Spočítej otáčky n = 1000 · vc / (π · D).",
+            "Spočítej rychlost posuvu vf = fz · z · n.",
+            "Spočítej dráhu L a strojní čas t = L / vf."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Fréza ⌀50 mm, z = 6, vc = 157 m/min, fz = 0,1 mm/zub. Jaké jsou n a vf?",
+          "answer": "n = 1000 · 157 / (3,14 · 50) = **1 000 ot/min**. vf = 0,1 · 6 · 1000 = **600 mm/min**."
+        },
+        {
+          "type": "example",
+          "question": "Plocha délky 290 mm, náběh a přeběh dohromady 10 mm, vf = 600 mm/min. Strojní čas?",
+          "answer": "L = 290 + 10 = 300 mm. t = 300 / 600 = **0,5 min** (30 s)."
+        },
+        {
+          "type": "heading",
+          "text": "Upínání"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Strojní svěrák** – malé hranolové obrobky.",
+            "**Upínky a šrouby v T-drážkách stolu** – velké obrobky.",
+            "**Dělicí hlava** – pootočí obrobek o přesný úhel (drážky po obvodu, ozubení).",
+            "**Speciální přípravky** – v sériové výrobě."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zkus si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "vf = fz · z · ",
+                "after": "",
+                "options": [
+                  "n",
+                  "D"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Fréza se 4 zuby má z = ",
+                "after": "",
+                "options": [
+                  "4",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sousledné frézování potřebuje stroj bez ",
+                "after": "",
+                "options": [
+                  "vůle",
+                  "chlazení"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "vf = fz · n, počet zubů nehraje roli.",
+          "right": "vf = fz · z · n.",
+          "why": "fz je posuv na jeden zub; za otáčku řeže všech z zubů, takže stůl ujede fz · z."
+        },
+        {
+          "type": "summary",
+          "text": "Frézování nastavíš ze vztahů n = 1000·vc/(π·D), vf = fz·z·n a t = L/vf. Obrobek upneš do svěráku, upínkami nebo do dělicí hlavy."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co se při frézování otáčí?",
+      "options": [
+        "nástroj (fréza)",
+        "obrobek",
+        "stůl",
+        "svěrák"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "fz = 0,05 mm/zub, z = 4, n = 2 000 ot/min. Rychlost posuvu v mm/min =",
+      "answers": [
+        "400"
+      ],
+      "explanation": "0,05 · 4 · 2000 = 400",
+      "hints": [
+        "vf = fz · z · n"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Fréza ⌀40 mm, vc = 125,6 m/min. Otáčky v ot/min =",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "explanation": "1000 · 125,6 / (3,14 · 40) = 1 000",
+      "hints": [
+        "Použij stejný vztah jako u soustružení."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "L = 240 mm, vf = 480 mm/min. Strojní čas v min =",
+      "answers": [
+        "0,5",
+        "0.5"
+      ],
+      "hints": [
+        "t = L / vf"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje frézování, kdy se fréza v místě řezu otáčí proti směru posuvu?",
+      "options": [
+        "nesousledné",
+        "sousledné",
+        "čelní",
+        "obvodové"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Sousledné frézování vyžaduje posuv stolu bez vůle.",
+      "answer": true,
+      "explanation": "Jinak by zuby stůl vtahovaly a škubaly jím."
+    },
+    {
+      "type": "choice",
+      "question": "Čím obrobek pootočíš o přesný úhel, např. pro drážky po obvodu?",
+      "options": [
+        "dělicí hlavou",
+        "strojním svěrákem",
+        "upínkou",
+        "koníkem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj nástroj s prací.",
+      "pairs": [
+        [
+          "čelní fréza",
+          "velká rovná plocha"
+        ],
+        [
+          "drážkovací fréza",
+          "drážka pro pero"
+        ],
+        [
+          "tvarová fréza",
+          "ozubení"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup nastavení frézky.",
+      "items": [
+        "vyhledat vc a fz v katalogu",
+        "spočítat otáčky n",
+        "spočítat rychlost posuvu vf",
+        "spočítat strojní čas"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na frézce se doporučuje pracovat v rukavicích, aby ses neřízl o třísky.",
+      "answer": false,
+      "explanation": "Rukavice zachytí rotující nástroj a vtáhnou ruku."
+    },
+    {
+      "type": "choice",
+      "question": "Která metoda dá na velké ploše nejrovnější povrch a nejvyšší výkon?",
+      "options": [
+        "čelní frézování",
+        "obvodové frézování válcovou frézou",
+        "vrtání",
+        "zapichování"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi sousledným a nesousledným frézováním.",
+      "answer": "Při nesousledném se fréza otáčí proti posuvu, tříska začíná od nulové tloušťky a funguje i na strojích s vůlí. Při sousledném se otáčí ve směru posuvu, tříska začíná nejtlustší, povrch i trvanlivost jsou lepší, ale stroj nesmí mít vůli v posuvu."
+    },
+    {
+      "type": "open",
+      "question": "Jak spočítáš rychlost posuvu stolu frézky?",
+      "answer": "Ze vztahu vf = fz·z·n: posuv na zub z katalogu vynásobím počtem zubů a otáčkami. Otáčky spočítám z řezné rychlosti a průměru frézy n = 1000·vc/(π·D)."
+    }
+  ]
+}
