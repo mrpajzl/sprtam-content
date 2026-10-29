@@ -1,0 +1,529 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zu-infinitiv",
+  "title": "zu + infinitiv a um … zu",
+  "emoji": "🎯",
+  "explanations": [
+    {
+      "title": "Pravidla",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky řekneš „Zkusím **přijít**.“, „Nemám chuť **jít** ven.“ nebo „Učím se německy, **abych** mohl studovat ve Vídni.“ Němčina k takovému infinitivu často přidá slůvko **zu**, podobně jako angličtina *to*: *I try **to** come.*"
+        },
+        {
+          "type": "text",
+          "text": "S *um … zu* pak vyjádříš účel, tedy „abych, aby“. Obojí se hodí, když chceš říct, co plánuješ, na co máš chuť a proč něco děláš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Infinitiv",
+          "definition": "Základní tvar slovesa, jak je ve slovníku.",
+          "example": "gehen (jít), lernen (učit se)"
+        },
+        {
+          "type": "term",
+          "term": "zu + infinitiv",
+          "definition": "Infinitiv se slůvkem *zu* před sebou. Stojí na **konci** věty, jako anglické *to + sloveso*.",
+          "example": "Ich versuche, pünktlich zu sein. (Snažím se být dochvilný.)"
+        },
+        {
+          "type": "term",
+          "term": "um … zu",
+          "definition": "Vyjadřuje **účel**: „abych, aby“. *um* je na začátku, *zu* + infinitiv na konci.",
+          "example": "Ich spare, um ein Fahrrad zu kaufen. (Šetřím, abych si koupil kolo.)"
+        },
+        {
+          "type": "term",
+          "term": "Odlučitelné sloveso",
+          "definition": "Připomenutí: sloveso s předponou, která se v přítomném čase odtrhne (*ich rufe an*). U zu + infinitivu se *zu* vloží **dovnitř**.",
+          "example": "anrufen → anzurufen"
+        },
+        {
+          "type": "heading",
+          "text": "Kdy se zu používá"
+        },
+        {
+          "type": "list",
+          "items": [
+            "po slovesech jako *versuchen* (zkoušet), *vergessen* (zapomenout), *beginnen / anfangen* (začít), *hoffen* (doufat), *vorhaben* (mít v plánu)",
+            "po výrazech *Lust haben* (mít chuť), *Zeit haben* (mít čas), *keine Angst haben* (nebát se)",
+            "po *es ist* + přídavné jméno: *Es ist schwer, Deutsch zu lernen.* (Je těžké učit se německy.)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Bez zu** zůstává infinitiv po způsobových slovesech (*können, müssen, wollen, dürfen, sollen, möchten*) a po *werden*: *Ich kann schwimmen.* (Umím plavat.)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "sloveso",
+            "zu + infinitiv",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "lernen",
+              "zu lernen",
+              "Ich habe keine Lust zu lernen. (Nemám chuť se učit.)"
+            ],
+            [
+              "anrufen",
+              "anzurufen",
+              "Vergiss nicht, mich anzurufen! (Nezapomeň mi zavolat!)"
+            ],
+            [
+              "aufstehen",
+              "aufzustehen",
+              "Es ist schwer, früh aufzustehen. (Je těžké vstávat brzy.)"
+            ],
+            [
+              "verstehen",
+              "zu verstehen",
+              "Ich versuche, dich zu verstehen. (Snažím se ti rozumět.)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: *verstehen* není odlučitelné (*ver-* se neodtrhne), proto *zu verstehen*."
+        },
+        {
+          "type": "heading",
+          "text": "um … zu = abych"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zeptej se: proč to dělám? Odpověď „abych…“ znamená um … zu.",
+            "Za čárku napiš *um*.",
+            "Doplň zbytek věty (předmět, místo, čas).",
+            "Na konec dej *zu* + infinitiv."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Funguje to, jen když obě části mají **stejný podmět** (já šetřím, já si koupím). Pro různé osoby se používá spojka *damit*: *Ich spare, damit meine Schwester ein Fahrrad bekommt.* (Šetřím, aby sestra dostala kolo.)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich habe keine Zeit, ins Kino ",
+                "after": ". (Nemám čas jít do kina.)",
+                "options": [
+                  "zu gehen",
+                  "gehen",
+                  "um gehen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich kann gut ",
+                "after": ". (Umím dobře plavat.)",
+                "options": [
+                  "schwimmen",
+                  "zu schwimmen",
+                  "um zu schwimmen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vergiss nicht, Brot ",
+                "after": "! (Nezapomeň koupit chleba!)",
+                "options": [
+                  "zu kaufen",
+                  "kaufen",
+                  "zukaufen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er fährt nach Berlin, ",
+                "after": " seinen Onkel zu besuchen. (Jede do Berlína, aby navštívil strýce.)",
+                "options": [
+                  "um",
+                  "damit",
+                  "zu"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Es ist wichtig, früh ",
+                "after": ". (Je důležité vstávat brzy.)",
+                "options": [
+                  "aufzustehen",
+                  "zu aufstehen",
+                  "aufstehen"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj: Ich lerne Deutsch. Ich will in Wien studieren. (Učím se německy. Chci studovat ve Vídni.)",
+          "answer": "Druhá věta je účel a podmět je stejný (ich) → *um … zu*. *wollen* vypustíme, účel už je v *um*: **Ich lerne Deutsch, um in Wien zu studieren.** (Učím se německy, abych mohl studovat ve Vídni.)"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Hast du Lust, heute Abend fern___? (fernsehen) (Máš chuť dnes večer koukat na televizi?)",
+          "answer": "*fernsehen* je odlučitelné → *zu* jde dovnitř: **fernzusehen**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich kann gut zu schwimmen.",
+          "right": "Ich kann gut schwimmen. (Umím dobře plavat.)",
+          "why": "Po způsobových slovesech (*können, müssen, wollen…*) se *zu* nepíše."
+        },
+        {
+          "type": "summary",
+          "text": "Po slovesech jako versuchen, vergessen, Lust haben a po „es ist + přídavné jméno“ je zu + infinitiv na konci. Odlučitelná slovesa mají zu uprostřed (anzurufen). um … zu = „abych“, jen se stejným podmětem."
+        }
+      ]
+    },
+    {
+      "title": "Jako v angličtině",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kdo umí anglicky, už to skoro umí. *I want **to** go* × *I try **to** come* × *I came here **to** learn*. Němčina má jen tři rozdíly: infinitiv jde **na konec**, po způsobových slovesech *zu* **není** a pro „abych“ přidá **um**."
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že píšeš kamarádce z Rakouska, proč se učíš německy a co máš v plánu na víkend. Bez zu + infinitivu se neobejdeš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Infinitiv",
+          "definition": "Základní tvar slovesa (ve slovníku). Končí na -en nebo -n.",
+          "example": "spielen (hrát), sammeln (sbírat)"
+        },
+        {
+          "type": "term",
+          "term": "zu",
+          "definition": "Slůvko před infinitivem, jako anglické *to*. Česky se nepřekládá.",
+          "example": "zu spielen = to play = hrát"
+        },
+        {
+          "type": "term",
+          "term": "Účel",
+          "definition": "Proč něco děláš. Česky „abych, aby“, anglicky *(in order) to*.",
+          "example": "um Geld zu verdienen (abych vydělal peníze)"
+        },
+        {
+          "type": "term",
+          "term": "Způsobové sloveso",
+          "definition": "Připomenutí: *können, müssen, wollen, dürfen, sollen, mögen/möchten*. Po nich je holý infinitiv bez zu.",
+          "example": "Ich muss gehen. (Musím jít.)"
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "angličtina",
+            "němčina",
+            "čeština"
+          ],
+          "rows": [
+            [
+              "I try to help.",
+              "Ich versuche zu helfen.",
+              "Zkouším pomoct."
+            ],
+            [
+              "I forgot to buy milk.",
+              "Ich habe vergessen, Milch zu kaufen.",
+              "Zapomněl jsem koupit mléko."
+            ],
+            [
+              "I can swim.",
+              "Ich kann schwimmen.",
+              "Umím plavat."
+            ],
+            [
+              "I want to sleep.",
+              "Ich will schlafen.",
+              "Chci spát."
+            ],
+            [
+              "I work to earn money.",
+              "Ich arbeite, um Geld zu verdienen.",
+              "Pracuji, abych vydělal peníze."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: anglické *want to* je v němčině bez zu, protože *wollen* je způsobové sloveso. A zatímco v angličtině je *to* hned za slovesem, v němčině jde *zu* + infinitiv až na úplný konec."
+        },
+        {
+          "type": "heading",
+          "text": "Dopis kamarádce"
+        },
+        {
+          "type": "text",
+          "text": "*Liebe Anna, ich lerne Deutsch, um später in Österreich zu arbeiten. Am Wochenende habe ich vor, meine Oma zu besuchen. Ich habe auch Lust, endlich mal ins Theater zu gehen. Vergiss nicht, mir zu schreiben!*"
+        },
+        {
+          "type": "text",
+          "text": "Milá Anno, učím se německy, abych později mohl pracovat v Rakousku. O víkendu mám v plánu navštívit babičku. Mám taky chuť konečně zajít do divadla. Nezapomeň mi napsat!"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: potřebuje sloveso před infinitivem zu, nebo ne?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "se zu",
+              "bez zu"
+            ],
+            "items": [
+              {
+                "text": "Ich versuche, …",
+                "group": 0
+              },
+              {
+                "text": "Ich habe keine Lust, …",
+                "group": 0
+              },
+              {
+                "text": "Es ist leicht, …",
+                "group": 0
+              },
+              {
+                "text": "Ich vergesse oft, …",
+                "group": 0
+              },
+              {
+                "text": "Ich kann …",
+                "group": 1
+              },
+              {
+                "text": "Ich muss …",
+                "group": 1
+              },
+              {
+                "text": "Ich möchte …",
+                "group": 1
+              },
+              {
+                "text": "Ich will …",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Zkouším mu zavolat.",
+          "answer": "*versuchen* chce zu. *anrufen* je odlučitelné → *anzurufen*. **Ich versuche, ihn anzurufen.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Jedu do Německa, abych se naučil německy.",
+          "answer": "Účel, stejný podmět → *um … zu*: **Ich fahre nach Deutschland, um Deutsch zu lernen.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich lerne Deutsch, um zu studieren in Wien.",
+          "right": "Ich lerne Deutsch, um in Wien zu studieren.",
+          "why": "Na rozdíl od angličtiny stojí *zu* + infinitiv vždy až na **konci**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich will zu schlafen.",
+          "right": "Ich will schlafen. (Chci spát.)",
+          "why": "Anglické *want to* svádí k *zu*, ale *wollen* je způsobové sloveso: infinitiv bez zu."
+        },
+        {
+          "type": "summary",
+          "text": "zu + infinitiv = anglické to + sloveso, ale na konci věty. Po können, müssen, wollen… zu není. Účel „abych“ = um … zu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Ich habe keine Lust, heute ___. (Nemám chuť dnes vařit.)",
+      "options": [
+        "zu kochen",
+        "kochen",
+        "um kochen",
+        "kochen zu"
+      ],
+      "answer": 0,
+      "explanation": "*Lust haben* chce zu + infinitiv na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Ich muss morgen früh ___. (Zítra musím brzy vstát.)",
+      "options": [
+        "aufstehen",
+        "aufzustehen",
+        "zu aufstehen",
+        "um aufzustehen"
+      ],
+      "answer": 0,
+      "explanation": "Po *müssen* je infinitiv bez zu."
+    },
+    {
+      "type": "choice",
+      "question": "Er spart Geld, ___ ein Auto zu kaufen. (Šetří, aby si koupil auto.)",
+      "options": [
+        "um",
+        "damit",
+        "für",
+        "zu"
+      ],
+      "answer": 0,
+      "explanation": "Účel se stejným podmětem → *um … zu*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Ich versuche, dich anzurufen.",
+        "Ich versuche, dich zu anrufen.",
+        "Ich versuche, zu anrufen dich.",
+        "Ich versuche dich anrufen."
+      ],
+      "answer": 0,
+      "explanation": "Odlučitelné sloveso: *zu* jde mezi předponu a sloveso → *anzurufen*, na konec věty."
+    },
+    {
+      "type": "choice",
+      "question": "Kdy použiješ *damit* místo *um … zu*?",
+      "options": [
+        "když mají obě části různý podmět",
+        "když je věta v minulosti",
+        "po způsobových slovesech",
+        "nikdy, znamenají něco jiného"
+      ],
+      "answer": 0,
+      "explanation": "*um … zu* jen pro stejný podmět. Pro různé osoby: *Ich helfe ihm, damit er die Prüfung schafft.*"
+    },
+    {
+      "type": "input",
+      "question": "Napiš tvar s zu: einkaufen",
+      "answers": [
+        "einzukaufen"
+      ],
+      "explanation": "Odlučitelné sloveso → *zu* dovnitř: *ein-zu-kaufen*.",
+      "hints": [
+        "Je předpona ein- odlučitelná?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš tvar s zu: besuchen",
+      "answers": [
+        "zu besuchen"
+      ],
+      "explanation": "*be-* je neodlučitelná předpona → *zu* před sloveso."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Es ist schwer, Deutsch zu ___. (Je těžké mluvit německy.)",
+      "answers": [
+        "sprechen"
+      ],
+      "explanation": "Infinitiv *sprechen* na konci za *zu*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Ich kann gut kochen.“ chybí zu.",
+      "answer": false,
+      "explanation": "Po *können* se zu nepíše, věta je správně."
+    },
+    {
+      "type": "truefalse",
+      "question": "*um … zu* znamená česky „abych, aby“.",
+      "answer": true,
+      "explanation": "Vyjadřuje účel: *um … zu lernen* = abych se naučil."
+    },
+    {
+      "type": "match",
+      "question": "Spoj s překladem.",
+      "pairs": [
+        [
+          "um zu helfen",
+          "abych pomohl"
+        ],
+        [
+          "anzufangen",
+          "začít (se zu)"
+        ],
+        [
+          "Ich kann helfen.",
+          "Můžu pomoct."
+        ],
+        [
+          "Ich versuche zu helfen.",
+          "Zkouším pomoct."
+        ]
+      ],
+      "explanation": "zu + infinitiv po většině sloves, bez zu po způsobových, um … zu pro účel."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: „Jdu do obchodu, abych koupil chleba.“",
+      "items": [
+        "Ich",
+        "gehe",
+        "in den Laden,",
+        "um",
+        "Brot",
+        "zu",
+        "kaufen."
+      ],
+      "explanation": "*um* na začátek vedlejší části, *zu kaufen* na konec."
+    },
+    {
+      "type": "open",
+      "question": "Kdy se v němčině před infinitiv píše *zu* a kdy ne?",
+      "answer": "*zu* se píše po většině sloves (*versuchen, vergessen, anfangen*), po výrazech jako *Lust haben* a po *es ist* + přídavné jméno. Nepíše se po způsobových slovesech (*können, müssen, wollen…*) a po *werden*."
+    },
+    {
+      "type": "open",
+      "question": "Řekni německy, proč se učíš němčinu. Použij *um … zu*.",
+      "answer": "Například: *Ich lerne Deutsch, um in Deutschland zu studieren.* (abych studoval v Německu) nebo *…, um mit meinen Freunden in Österreich zu sprechen.* (abych mluvil s kamarády v Rakousku)."
+    }
+  ]
+}

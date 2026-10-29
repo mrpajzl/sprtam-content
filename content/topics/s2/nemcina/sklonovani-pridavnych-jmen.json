@@ -1,0 +1,562 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sklonovani-pridavnych-jmen",
+  "title": "Skloňování přídavných jmen",
+  "emoji": "🎨",
+  "explanations": [
+    {
+      "title": "Tabulka a pravidla",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky taky měníš koncovky přídavných jmen: *velký pes*, *vidím velkého psa*, *s velkým psem*. Němčina to dělá podobně, jen má méně tvarů a koncovka záleží i na tom, **jaký člen** stojí před přídavným jménem."
+        },
+        {
+          "type": "text",
+          "text": "Angličtina nic takového nemá (*a big dog, the big dog, with the big dog*). Němčina ano, a bez správné koncovky zní věta jako chyba. Dobrá zpráva: koncovek je jen pět: **-e, -en, -er, -es, -em**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které říká, jaká věc je.",
+          "example": "groß (velký), neu (nový), rot (červený)"
+        },
+        {
+          "type": "term",
+          "term": "Přívlastek",
+          "definition": "Přídavné jméno, které stojí **před** podstatným jménem. Jen tehdy se skloňuje. Za slovesem sein zůstává bez koncovky.",
+          "example": "der neue Ball (ten nový míč) × Der Ball ist neu. (Míč je nový.)"
+        },
+        {
+          "type": "term",
+          "term": "Pád",
+          "definition": "Tvar slova podle role ve větě. Připomenutí: 1. pád (Nominativ) = kdo, co; 4. pád (Akkusativ) = koho, co vidím; 3. pád (Dativ) = komu, čemu, s kým.",
+          "example": "der Hund – den Hund – dem Hund"
+        },
+        {
+          "type": "term",
+          "term": "Určitý a neurčitý člen",
+          "definition": "Připomenutí: určitý člen je der, die, das (ten), neurčitý ein, eine, ein (nějaký). Zápor kein se skloňuje jako ein.",
+          "example": "der Tisch (ten stůl), ein Tisch (nějaký stůl)"
+        },
+        {
+          "type": "heading",
+          "text": "Po určitém členu: jen -e, nebo -en"
+        },
+        {
+          "type": "text",
+          "text": "Určitý člen už sám ukazuje rod i pád. Přídavné jméno proto dostane jen „slabou“ koncovku: **-e** v pěti tvarech, jinak všude **-en**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "pád",
+            "mužský (der)",
+            "ženský (die)",
+            "střední (das)",
+            "množné (die)"
+          ],
+          "rows": [
+            [
+              "1. pád",
+              "der neu**e** Ball",
+              "die neu**e** Tasche",
+              "das neu**e** Buch",
+              "die neu**en** Bücher"
+            ],
+            [
+              "4. pád",
+              "den neu**en** Ball",
+              "die neu**e** Tasche",
+              "das neu**e** Buch",
+              "die neu**en** Bücher"
+            ],
+            [
+              "3. pád",
+              "dem neu**en** Ball",
+              "der neu**en** Tasche",
+              "dem neu**en** Buch",
+              "den neu**en** Büchern"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Po neurčitém členu (ein, kein, mein…)"
+        },
+        {
+          "type": "text",
+          "text": "U tvarů *ein* (mužský 1. pád) a *ein* (střední 1. a 4. pád) člen rod neprozradí. Proto ho musí ukázat přídavné jméno: **-er** pro mužský rod, **-es** pro střední. Jinak je to stejné jako po der/die/das."
+        },
+        {
+          "type": "table",
+          "head": [
+            "pád",
+            "mužský",
+            "ženský",
+            "střední",
+            "množné (kein, mein)"
+          ],
+          "rows": [
+            [
+              "1. pád",
+              "ein neu**er** Ball",
+              "eine neu**e** Tasche",
+              "ein neu**es** Buch",
+              "keine neu**en** Bücher"
+            ],
+            [
+              "4. pád",
+              "einen neu**en** Ball",
+              "eine neu**e** Tasche",
+              "ein neu**es** Buch",
+              "keine neu**en** Bücher"
+            ],
+            [
+              "3. pád",
+              "einem neu**en** Ball",
+              "einer neu**en** Tasche",
+              "einem neu**en** Buch",
+              "keinen neu**en** Büchern"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bez členu"
+        },
+        {
+          "type": "text",
+          "text": "Když člen chybí (třeba u látek: káva, mléko, nebo v množném čísle bez členu), přebírá přídavné jméno koncovku, kterou by měl člen: *der* → heiß**er** Kaffee, *das* → frisch**es** Brot, *die* → kalt**e** Milch, *dem* → mit heiß**em** Kaffee."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi podstatné jméno a urči jeho rod a pád.",
+            "Podívej se, co stojí před přídavným jménem: der/die/das, ein/kein/mein, nebo nic.",
+            "Po der/die/das: -e jen v 1. pádě jednotného čísla a ve 4. pádě u ženského a středního rodu, jinak -en.",
+            "Po ein bez koncovky přidej -er (mužský) nebo -es (střední). Jinak jako po der/die/das.",
+            "Bez členu dej přídavnému jménu koncovku členu (der → -er, das → -es, dem → -em)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň koncovku. Vždy se nejdřív zeptej: jaký je člen a jaký pád?"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Das ist ein rot",
+                "after": " Apfel. (To je červené jablko.)",
+                "options": [
+                  "-er",
+                  "-e",
+                  "-en"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich sehe den groß",
+                "after": " Hund. (Vidím toho velkého psa.)",
+                "options": [
+                  "-en",
+                  "-e",
+                  "-er"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sie wohnt in einem klein",
+                "after": " Haus. (Bydlí v malém domě.)",
+                "options": [
+                  "-en",
+                  "-es",
+                  "-em"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich trinke kalt",
+                "after": " Milch. (Piju studené mléko.)",
+                "options": [
+                  "-e",
+                  "-en",
+                  "-er"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir haben ein neu",
+                "after": " Auto. (Máme nové auto.)",
+                "options": [
+                  "-es",
+                  "-e",
+                  "-en"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Ich kaufe einen schwarz___ Pullover. (Kupuji si černý svetr.)",
+          "answer": "*der Pullover* je mužský rod, kupuji co → 4. pád: *einen*. Člen už ukazuje rod (koncovka -en), takže přídavné jméno má -en: **einen schwarzen Pullover**."
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Das ist ein interessant___ Buch. (To je zajímavá kniha.)",
+          "answer": "*das Buch* je střední rod, 1. pád. Člen *ein* nemá koncovku, rod musí ukázat přídavné jméno: **ein interessantes Buch**."
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Ich trinke gern heiß___ Tee mit frisch___ Zitrone. (Rád piju horký čaj s čerstvým citronem.)",
+          "answer": "*der Tee*, 4. pád, bez členu → koncovka členu *den*: **heißen Tee**. *die Zitrone*, po *mit* 3. pád, bez členu → koncovka členu *der*: **frischer Zitrone**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe einen neue Freund.",
+          "right": "Ich habe einen neuen Freund. (Mám nového kamaráda.)",
+          "why": "Ve 4. pádě mužského rodu je po *den/einen* vždy **-en**. Koncovka -e je ve 4. pádě jen u ženského a středního rodu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Das Auto ist neues.",
+          "right": "Das Auto ist neu. (Auto je nové.)",
+          "why": "Za slovesem *sein* (a *werden, bleiben*) se přídavné jméno neskloňuje."
+        },
+        {
+          "type": "summary",
+          "text": "Po der/die/das: -e v 1. pádě a ve 4. pádě ženského a středního rodu, jinak -en. Po ein bez koncovky: -er (mužský), -es (střední). Bez členu nese přídavné jméno koncovku členu."
+        }
+      ]
+    },
+    {
+      "title": "Kdo ukáže rod?",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si štafetu: rod a pád podstatného jména musí ve větě **jednou** jasně zaznít. Když to řekne člen, přídavné jméno si odpočine a dostane krátké -e nebo -en. Když člen mlčí nebo chybí, musí to říct přídavné jméno samo."
+        },
+        {
+          "type": "text",
+          "text": "Tenhle jediný princip vysvětlí skoro všechny koncovky. Hodí se pokaždé, když chceš něco popsat: oblečení v obchodě, byt, kamaráda, jídlo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno jako přívlastek",
+          "definition": "Slovo, které říká, jaká věc je, a stojí před podstatným jménem. Jen tehdy má koncovku.",
+          "example": "ein schönes Kleid (hezké šaty)"
+        },
+        {
+          "type": "term",
+          "term": "Signál rodu",
+          "definition": "Koncovka, ze které poznáš rod a pád: **-r** (der) = mužský, **-s** (das) = střední, **-e** (die) = ženský nebo množné, **-n** a **-m** = 4. a 3. pád.",
+          "example": "der, dem, des → mužský nebo střední rod"
+        },
+        {
+          "type": "term",
+          "term": "Pád",
+          "definition": "Připomenutí: 1. pád = kdo (podmět), 4. pád = koho, co (předmět, po *für, durch*), 3. pád = komu (po *mit, bei, von, zu, aus, nach*).",
+          "example": "mit dem Bus (autobusem) – 3. pád"
+        },
+        {
+          "type": "heading",
+          "text": "Tři situace"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Člen mluví** (der, den, dem, die, das, einen, einem, einer): přídavné jméno má jen -e nebo -en. *der alte Mann* (ten starý muž), *mit einem alten Mann* (se starým mužem).",
+            "**Člen mlčí** (ein bez koncovky: mužský 1. pád, střední 1. a 4. pád): přídavné jméno nese signál. *ein alter Mann* (starý muž), *ein altes Haus* (starý dům).",
+            "**Člen chybí**: přídavné jméno nese signál vždy. *alter Wein* (staré víno), *mit altem Wein* (se starým vínem)."
+          ]
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🗣️",
+            "➡️",
+            "🤫"
+          ],
+          "caption": "Když mluví člen, přídavné jméno mlčí (-e/-en). Když člen mlčí, mluví přídavné jméno."
+        },
+        {
+          "type": "heading",
+          "text": "Dialog v obchodě"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Verkäuferin:** Was suchen Sie? (Co hledáte?)",
+            "**Jana:** Ich suche einen warm**en** Mantel. (Hledám teplý kabát.) – *einen* ukazuje mužský 4. pád, stačí -en.",
+            "**Verkäuferin:** Hier ist ein schön**er** Mantel. (Tady je hezký kabát.) – *ein* mlčí, -er říká „mužský“.",
+            "**Jana:** Und haben Sie auch eine rot**e** Mütze? (A máte i červenou čepici?) – ženský 4. pád, -e.",
+            "**Verkäuferin:** Ja, die rot**e** Mütze kostet 15 Euro. (Ano, ta červená čepice stojí 15 eur.)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: nese tady signál člen (přídavné jméno má -e/-en), nebo přídavné jméno samo (-er, -es, -em…)?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "signál nese člen",
+              "signál nese přídavné jméno"
+            ],
+            "items": [
+              {
+                "text": "den alten Mann",
+                "group": 0
+              },
+              {
+                "text": "mit einer guten Freundin",
+                "group": 0
+              },
+              {
+                "text": "das kleine Kind",
+                "group": 0
+              },
+              {
+                "text": "dem neuen Lehrer",
+                "group": 0
+              },
+              {
+                "text": "ein alter Mann",
+                "group": 1
+              },
+              {
+                "text": "ein kleines Kind",
+                "group": 1
+              },
+              {
+                "text": "frisches Brot",
+                "group": 1
+              },
+              {
+                "text": "mit kaltem Wasser",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Proč je *ein großer Hund* (velký pes), ale *der große Hund* (ten velký pes)?",
+          "answer": "Ve tvaru *der* je signál **-r** (mužský). V *ein* žádný signál není, proto si ho vezme přídavné jméno: groß**er**. Stejný signál se neopakuje dvakrát."
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Wir fahren mit unser___ neu___ Auto. (Jedeme naším novým autem.)",
+          "answer": "*mit* chce 3. pád, *das Auto* je střední rod → člen *dem*, takže **unserem** (signál -m). Člen mluví, přídavné jméno má -en: **mit unserem neuen Auto**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "ein kleine Haus",
+          "right": "ein kleines Haus (malý dům)",
+          "why": "*ein* u středního rodu nemá žádný signál. Přídavné jméno musí ukázat rod: -es."
+        },
+        {
+          "type": "mistake",
+          "wrong": "mit einem netten Freunde",
+          "right": "mit einem netten Freund (s milým kamarádem)",
+          "why": "Koncovka -e u podstatného jména ve 3. pádě je zastaralá, dnes se nepíše. Pozor ale na množné číslo: tam ve 3. pádě přibude -n: *mit netten Freunden* (s milými kamarády)."
+        },
+        {
+          "type": "summary",
+          "text": "Rod a pád zazní jednou. Když ho ukáže člen, přídavné jméno má jen -e nebo -en. Když člen mlčí (ein) nebo chybí, přídavné jméno nese signál: -er, -es, -e, -em."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Das ist ein ___ Film. (To je dobrý film.)",
+      "options": [
+        "guter",
+        "gute",
+        "guten",
+        "gutes"
+      ],
+      "answer": 0,
+      "explanation": "*der Film*, 1. pád, *ein* neukazuje rod → přídavné jméno nese -er."
+    },
+    {
+      "type": "choice",
+      "question": "Ich lese das ___ Buch. (Čtu tu novou knihu.)",
+      "options": [
+        "neue",
+        "neues",
+        "neuen",
+        "neuer"
+      ],
+      "answer": 0,
+      "explanation": "Po *das* (4. pád středního rodu) má přídavné jméno -e."
+    },
+    {
+      "type": "choice",
+      "question": "Er hilft der ___ Frau. (Pomáhá té staré paní.)",
+      "options": [
+        "alten",
+        "alte",
+        "alter",
+        "altem"
+      ],
+      "answer": 0,
+      "explanation": "*helfen* chce 3. pád: *der Frau*. Člen mluví → -en.",
+      "hints": [
+        "Jaký pád chce sloveso helfen?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Wir trinken ___ Kaffee. (Pijeme černou kávu.)",
+      "options": [
+        "schwarzen",
+        "schwarzer",
+        "schwarze",
+        "schwarzes"
+      ],
+      "answer": 0,
+      "explanation": "*der Kaffee*, 4. pád, bez členu → koncovka členu *den*: -en."
+    },
+    {
+      "type": "choice",
+      "question": "Sie hat zwei ___ Katzen. (Má dvě malé kočky.)",
+      "options": [
+        "kleine",
+        "kleinen",
+        "kleiner",
+        "kleines"
+      ],
+      "answer": 0,
+      "explanation": "Číslovka není člen. Množné číslo bez členu, 4. pád → koncovka členu *die*: -e."
+    },
+    {
+      "type": "input",
+      "question": "Doplň celé slovo: Ich suche einen ___ Rucksack (groß). (Hledám velký batoh.)",
+      "answers": [
+        "großen",
+        "grossen"
+      ],
+      "explanation": "*der Rucksack*, 4. pád: *einen* ukazuje rod → **großen**.",
+      "hints": [
+        "Je Rucksack mužský rod a v jakém je pádě?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň celé slovo: Er wohnt in einem ___ Dorf (klein). (Bydlí v malé vesnici.)",
+      "answers": [
+        "kleinen"
+      ],
+      "explanation": "*das Dorf*, *in* + 3. pád (kde?): *einem* ukazuje pád → **kleinen**."
+    },
+    {
+      "type": "input",
+      "question": "Doplň celé slovo: Das ist ein ___ Kleid (schön). (To jsou hezké šaty.)",
+      "answers": [
+        "schönes",
+        "schoenes"
+      ],
+      "explanation": "*das Kleid*, 1. pád, *ein* nic neukazuje → přídavné jméno nese -es."
+    },
+    {
+      "type": "input",
+      "question": "Doplň celé slovo: Ich esse gern ___ Brot (frisch). (Rád jím čerstvý chléb.)",
+      "answers": [
+        "frisches"
+      ],
+      "explanation": "*das Brot*, bez členu → koncovka členu *das*: **frisches**."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Der Tee ist heißer.“ je správně ve významu „Čaj je horký.“",
+      "answer": false,
+      "explanation": "Za *sein* se přídavné jméno neskloňuje: *Der Tee ist heiß.* (*heißer* by znamenalo „teplejší“.)"
+    },
+    {
+      "type": "truefalse",
+      "question": "Po určitém členu má přídavné jméno v množném čísle vždy koncovku -en.",
+      "answer": true,
+      "explanation": "*die neuen Bücher, den neuen Büchern* – ve všech pádech -en."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tvar se správným překladem.",
+      "pairs": [
+        [
+          "ein alter Freund",
+          "starý kamarád (1. pád)"
+        ],
+        [
+          "einen alten Freund",
+          "starého kamaráda (4. pád)"
+        ],
+        [
+          "mit einem alten Freund",
+          "s (jedním) starým kamarádem"
+        ],
+        [
+          "alte Freunde",
+          "staří kamarádi"
+        ]
+      ],
+      "explanation": "Rozhoduje člen a pád: ein → -er, einen/einem → -en, množné číslo bez členu → -e."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do správné věty: „Mám nové kolo.“",
+      "items": [
+        "Ich",
+        "habe",
+        "ein",
+        "neues",
+        "Fahrrad."
+      ],
+      "explanation": "Přídavné jméno stojí mezi členem a podstatným jménem: *ein neues Fahrrad*."
+    },
+    {
+      "type": "open",
+      "question": "Proč se říká *ein kleiner Hund*, ale *der kleine Hund*?",
+      "answer": "Rod a pád se ve skupině ukazuje jednou. Člen *der* ukazuje mužský rod sám, proto má přídavné jméno jen -e. *ein* rod neukazuje, proto ho musí ukázat přídavné jméno koncovkou -er."
+    },
+    {
+      "type": "open",
+      "question": "Popiš německy svůj pokoj ve třech větách s přídavnými jmény.",
+      "answer": "Například: *Ich habe ein kleines Zimmer.* (Mám malý pokoj.) *Dort steht ein großer Schrank.* (Stojí tam velká skříň.) *Auf dem alten Tisch liegt eine grüne Lampe.* (Na starém stole leží zelená lampa.)"
+    }
+  ]
+}

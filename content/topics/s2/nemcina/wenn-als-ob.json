@@ -1,0 +1,500 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "wenn-als-ob",
+  "title": "Vedlejší věty s wenn, als a ob",
+  "emoji": "⏰",
+  "explanations": [
+    {
+      "title": "Pravidla a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky říkáš „**když** jsem byl malý“, „**když** prší, zůstanu doma“ a „nevím, **jestli** přijde“. Němčina má pro tyhle významy tři různá slova: **als**, **wenn** a **ob**."
+        },
+        {
+          "type": "text",
+          "text": "Spojují dvě věty do jedné a ve vedlejší větě posílají sloveso **na konec**, stejně jako *weil* a *dass*, které už znáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vedlejší věta",
+          "definition": "Věta, která sama nedává smysl a závisí na jiné (hlavní) větě. Začíná spojkou. V němčině má sloveso na konci.",
+          "example": "…, weil ich müde bin. (…, protože jsem unavený.)"
+        },
+        {
+          "type": "term",
+          "term": "Hlavní věta",
+          "definition": "Věta, která dává smysl i sama. Sloveso je na druhém místě.",
+          "example": "Ich bleibe zu Hause. (Zůstanu doma.)"
+        },
+        {
+          "type": "term",
+          "term": "als",
+          "definition": "„když“ pro **jednu** událost nebo období **v minulosti**.",
+          "example": "Als ich klein war, … (Když jsem byl malý, …)"
+        },
+        {
+          "type": "term",
+          "term": "wenn",
+          "definition": "„když“ pro **opakování** (i v minulosti), přítomnost a budoucnost; a „jestli/pokud“ jako **podmínka**.",
+          "example": "Wenn es regnet, … (Když prší, … / Jestli bude pršet, …)"
+        },
+        {
+          "type": "term",
+          "term": "ob",
+          "definition": "„jestli, zda“ v **nepřímé otázce**: když se ptáš nebo nevíš, jestli platí ano, nebo ne.",
+          "example": "Ich weiß nicht, ob er kommt. (Nevím, jestli přijde.)"
+        },
+        {
+          "type": "heading",
+          "text": "Kdy které"
+        },
+        {
+          "type": "table",
+          "head": [
+            "význam",
+            "spojka",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "jednou v minulosti",
+              "als",
+              "Als ich in Berlin war, sah ich das Brandenburger Tor. (Když jsem byl v Berlíně, viděl jsem Braniborskou bránu.)"
+            ],
+            [
+              "opakovaně v minulosti (vždy když)",
+              "wenn",
+              "Immer wenn ich krank war, las ich. (Vždycky když jsem byl nemocný, četl jsem.)"
+            ],
+            [
+              "přítomnost, budoucnost",
+              "wenn",
+              "Wenn ich nach Hause komme, esse ich. (Když přijdu domů, najím se.)"
+            ],
+            [
+              "podmínka (pokud)",
+              "wenn",
+              "Wenn du Zeit hast, ruf mich an. (Jestli máš čas, zavolej mi.)"
+            ],
+            [
+              "jestli ano, nebo ne (otázka)",
+              "ob",
+              "Weißt du, ob der Laden offen ist? (Víš, jestli je obchod otevřený?)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Slovosled"
+        },
+        {
+          "type": "text",
+          "text": "Ve vedlejší větě jde osobní tvar slovesa **na konec**. Když vedlejší věta stojí **na začátku**, hlavní věta začíná hned **slovesem**: *Wenn es regnet, **bleibe** ich zu Hause.* (Když prší, zůstanu doma.) Celá vedlejší věta totiž zabírá první místo."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zeptej se: jde o „jestli ano, nebo ne“? → ob.",
+            "Jde o jednu událost v minulosti? → als.",
+            "Jinak (opakování, přítomnost, budoucnost, podmínka) → wenn.",
+            "Sloveso vedlejší věty dej na konec.",
+            "Je-li vedlejší věta první, začni hlavní větu slovesem."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": " ich zehn Jahre alt war, bekam ich einen Hund. (Když mi bylo deset, dostal jsem psa.)",
+                "options": [
+                  "Als",
+                  "Wenn",
+                  "Ob"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": " du Hunger hast, iss etwas. (Jestli máš hlad, něco sněz.)",
+                "options": [
+                  "Wenn",
+                  "Als",
+                  "Ob"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich frage ihn, ",
+                "after": " er mitkommt. (Zeptám se ho, jestli půjde s námi.)",
+                "options": [
+                  "ob",
+                  "wenn",
+                  "als"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Immer ",
+                "after": " wir in Prag waren, besuchten wir Oma. (Vždycky když jsme byli v Praze, navštívili jsme babičku.)",
+                "options": [
+                  "wenn",
+                  "als",
+                  "ob"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj: Es ist warm. Wir gehen schwimmen. (Je teplo. Jdeme plavat.)",
+          "answer": "Podmínka/opakování → *wenn*. Sloveso *ist* na konec, hlavní věta začne slovesem: **Wenn es warm ist, gehen wir schwimmen.** (Když je teplo, jdeme plavat.)"
+        },
+        {
+          "type": "example",
+          "question": "Převeď na nepřímou otázku: Kommt Petra morgen? → Ich weiß nicht, …",
+          "answer": "Zjišťovací otázka (ano/ne) → *ob*, sloveso na konec: **Ich weiß nicht, ob Petra morgen kommt.** (Nevím, jestli Petra zítra přijde.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wenn ich gestern nach Hause kam, war niemand da.",
+          "right": "Als ich gestern nach Hause kam, war niemand da. (Když jsem včera přišel domů, nikdo tam nebyl.)",
+          "why": "Jedna událost v minulosti (*gestern*) → *als*. *wenn* by znamenalo „vždycky, když“."
+        },
+        {
+          "type": "summary",
+          "text": "als = jednou v minulosti. wenn = opakovaně, teď, v budoucnu, nebo „pokud“. ob = „jestli“ v nepřímé otázce. Ve všech třech větách je sloveso na konci."
+        }
+      ]
+    },
+    {
+      "title": "Tři otázky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česká slova „když“ a „jestli“ mají každé víc významů. Němčina je přesnější a pozná, který význam myslíš. Stačí si u každé věty položit tři otázky."
+        },
+        {
+          "type": "text",
+          "text": "Angličtina to má podobně: *when* (jednou) ~ als, *whenever/if* ~ wenn, *whether* ~ ob. Kdo umí anglicky, má výhodu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Spojka",
+          "definition": "Slovo, které spojuje věty: protože, že, když, jestli.",
+          "example": "weil, dass, wenn, als, ob"
+        },
+        {
+          "type": "term",
+          "term": "Vedlejší věta",
+          "definition": "Část souvětí, která začíná spojkou a sama by nedávala smysl. V němčině má sloveso na konci.",
+          "example": "…, ob er Zeit hat. (…, jestli má čas.)"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá otázka",
+          "definition": "Otázka schovaná uvnitř jiné věty: „Nevím, **jestli** přijde.“ „Řekni mi, **kde** bydlíš.“ Má slovosled vedlejší věty.",
+          "example": "Kannst du mir sagen, wo der Bahnhof ist? (Můžeš mi říct, kde je nádraží?)"
+        },
+        {
+          "type": "term",
+          "term": "Podmínka",
+          "definition": "Věc, která musí platit, aby se stalo něco jiného. Česky „jestli, pokud“.",
+          "example": "Wenn es regnet, bleibe ich zu Hause. (Pokud bude pršet, zůstanu doma.)"
+        },
+        {
+          "type": "heading",
+          "text": "Tři otázky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "1. Dá se „jestli“ nahradit slovem „zda“? → **ob**. (Nevím, zda přijde.)",
+            "2. Dá se „když/jestli“ nahradit slovem „pokud“ nebo „vždycky když“? → **wenn**.",
+            "3. Jde o jeden konkrétní okamžik nebo období v minulosti? → **als**."
+          ]
+        },
+        {
+          "type": "picture",
+          "items": [
+            "❓",
+            "➡️",
+            "ob"
+          ],
+          "caption": "„zda“ → ob"
+        },
+        {
+          "type": "heading",
+          "text": "Příběh Tomáše"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*Als ich sechs Jahre alt war, kam ich in die Schule.* (Když mi bylo šest, šel jsem do školy.) – jednou → als.",
+            "*Wenn ich Hausaufgaben machte, half mir meine Mutter.* (Když jsem dělal úkoly, pomáhala mi máma.) – opakovaně → wenn.",
+            "*Heute frage ich mich, ob ich Lehrer werden soll.* (Dnes se ptám sám sebe, jestli mám být učitelem.) – zda → ob.",
+            "*Wenn ich das Abitur habe, entscheide ich mich.* (Až budu mít maturitu, rozhodnu se.) – budoucnost → wenn."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nepřímé otázky s tázacím slovem"
+        },
+        {
+          "type": "text",
+          "text": "Když otázka začíná tázacím slovem (*wo, wann, warum, wie…*), použiješ to slovo místo *ob*. Sloveso jde opět na konec: *Wo wohnt er?* → *Ich weiß nicht, **wo** er **wohnt**.* (Nevím, kde bydlí.) *ob* je jen pro otázky, na které se odpovídá ano/ne."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "als",
+              "wenn",
+              "ob"
+            ],
+            "items": [
+              {
+                "text": "Když jsem byl včera v kině, …",
+                "group": 0
+              },
+              {
+                "text": "Když mi bylo pět, …",
+                "group": 0
+              },
+              {
+                "text": "Vždycky když prší, …",
+                "group": 1
+              },
+              {
+                "text": "Pokud budeš mít čas, …",
+                "group": 1
+              },
+              {
+                "text": "Až přijdu domů, …",
+                "group": 1
+              },
+              {
+                "text": "Nevím, zda má čas.",
+                "group": 2
+              },
+              {
+                "text": "Zeptej se, jestli je doma.",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Zeptej se ho, jestli má čas.",
+          "answer": "„jestli“ = „zda“ → *ob*. Sloveso *hat* na konec: **Frag ihn, ob er Zeit hat.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Až budu v Mnichově, navštívím tě.",
+          "answer": "Budoucnost → *wenn*. Vedlejší věta je první, hlavní začíná slovesem: **Wenn ich in München bin, besuche ich dich.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich weiß nicht, wenn er kommt.",
+          "right": "Ich weiß nicht, ob er kommt. (Nevím, jestli přijde.)",
+          "why": "Tady „jestli“ znamená „zda“, jde o nepřímou otázku → *ob*. *wenn* je jen pro podmínku a čas."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wenn es regnet, ich bleibe zu Hause.",
+          "right": "Wenn es regnet, bleibe ich zu Hause. (Když prší, zůstanu doma.)",
+          "why": "Vedlejší věta zabírá první místo, takže sloveso hlavní věty musí přijít hned za čárkou."
+        },
+        {
+          "type": "summary",
+          "text": "Zda → ob. Pokud, vždycky když, až → wenn. Jednou v minulosti → als. Sloveso jde ve vedlejší větě na konec a hlavní věta za ní začíná slovesem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "___ ich klein war, wohnte ich in Brno. (Když jsem byl malý, bydlel jsem v Brně.)",
+      "options": [
+        "Als",
+        "Wenn",
+        "Ob"
+      ],
+      "answer": 0,
+      "explanation": "Jedno období v minulosti → *als*."
+    },
+    {
+      "type": "choice",
+      "question": "___ du müde bist, geh schlafen. (Jestli jsi unavený, jdi spát.)",
+      "options": [
+        "Wenn",
+        "Als",
+        "Ob"
+      ],
+      "answer": 0,
+      "explanation": "Podmínka („pokud“) → *wenn*."
+    },
+    {
+      "type": "choice",
+      "question": "Ich weiß nicht, ___ sie heute kommt. (Nevím, jestli dnes přijde.)",
+      "options": [
+        "ob",
+        "wenn",
+        "als"
+      ],
+      "answer": 0,
+      "explanation": "„jestli“ ve smyslu „zda“ → *ob*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta má správný slovosled?",
+      "options": [
+        "Wenn ich Zeit habe, lese ich.",
+        "Wenn ich habe Zeit, lese ich.",
+        "Wenn ich Zeit habe, ich lese.",
+        "Wenn habe ich Zeit, ich lese."
+      ],
+      "answer": 0,
+      "explanation": "Ve vedlejší větě sloveso na konci, hlavní věta za ní začíná slovesem."
+    },
+    {
+      "type": "choice",
+      "question": "Kannst du mir sagen, ___ der Zug abfährt? (Můžeš mi říct, kdy odjíždí vlak?)",
+      "options": [
+        "wann",
+        "ob",
+        "als",
+        "wenn"
+      ],
+      "answer": 0,
+      "explanation": "Nepřímá otázka s tázacím slovem „kdy“ → *wann*. *wenn* není tázací slovo."
+    },
+    {
+      "type": "input",
+      "question": "Doplň spojku: Immer ___ ich Oma besuchte, backte sie Kuchen. (Vždycky když jsem navštívil babičku, upekla koláč.)",
+      "answers": [
+        "wenn"
+      ],
+      "explanation": "Opakování v minulosti → *wenn*.",
+      "hints": [
+        "Stalo se to jednou, nebo vícekrát?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň spojku: ___ ich gestern aufwachte, schien die Sonne. (Když jsem se včera probudil, svítilo slunce.)",
+      "answers": [
+        "als"
+      ],
+      "explanation": "Jednou v minulosti (*gestern*) → *als*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň spojku: Frag ihn, ___ er mitkommt. (Zeptej se ho, jestli půjde s námi.)",
+      "answers": [
+        "ob"
+      ],
+      "explanation": "„zda“ → *ob*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě s *ob* stojí sloveso na konci.",
+      "answer": true,
+      "explanation": "*ob* uvozuje vedlejší větu: *…, ob er Zeit hat.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Wenn ich gestern im Kino war, …“ je správně.",
+      "answer": false,
+      "explanation": "Jedna událost v minulosti → *Als ich gestern im Kino war, …*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj začátek s pokračováním.",
+      "pairs": [
+        [
+          "Als ich 2020 in Wien war,",
+          "besuchte ich den Prater."
+        ],
+        [
+          "Wenn ich morgen Zeit habe,",
+          "komme ich zu dir."
+        ],
+        [
+          "Ich weiß nicht,",
+          "ob das stimmt."
+        ],
+        [
+          "Sag mir bitte,",
+          "wo du wohnst."
+        ]
+      ],
+      "explanation": "als = jednou v minulosti, wenn = budoucnost, ob = zda, wo = tázací slovo."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: „Když prší, čtu.“",
+      "items": [
+        "Wenn",
+        "es",
+        "regnet,",
+        "lese",
+        "ich."
+      ],
+      "explanation": "Sloveso vedlejší věty na konec, hlavní věta začíná slovesem."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: „Nevím, jestli má čas.“",
+      "items": [
+        "Ich",
+        "weiß",
+        "nicht,",
+        "ob",
+        "er",
+        "Zeit",
+        "hat."
+      ],
+      "explanation": "*ob* + sloveso na konci."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi *als* a *wenn*.",
+      "answer": "*als* se používá pro jednu událost nebo jedno období v minulosti (*Als ich klein war…*). *wenn* pro opakované děje (i v minulosti), pro přítomnost, budoucnost a pro podmínku (*Wenn es regnet…*)."
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ *ob* a kdy *wenn*, když česky řekneš „jestli“?",
+      "answer": "Když „jestli“ znamená „zda“ a jde o nepřímou otázku (*Ich weiß nicht, ob er kommt*), je to *ob*. Když znamená „pokud“ a jde o podmínku (*Wenn du Zeit hast, …*), je to *wenn*."
+    }
+  ]
+}
