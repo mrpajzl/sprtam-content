@@ -1,0 +1,434 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vztazne-vety",
+  "title": "Vztažné věty (que, donde, quien, lo que)",
+  "emoji": "🔗",
+  "explanations": [
+    {
+      "title": "Pravidla a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„To je kluk, **který** bydlí vedle.“ „To je město, **kde** jsem se narodil.“ „Nerozumím tomu, **co** říkáš.“ Spojíš dvě myšlenky do jedné věty a nemusíš opakovat, o kom mluvíš."
+        },
+        {
+          "type": "text",
+          "text": "Česky na to máme *který, kde, co, kdo*. Španělsky nejčastěji **que**, pak **donde**, **quien** a **lo que**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažná věta",
+          "definition": "Vedlejší věta, která blíž popisuje osobu nebo věc z hlavní věty.",
+          "example": "El libro **que leo** es interesante. – Kniha, kterou čtu, je zajímavá."
+        },
+        {
+          "type": "term",
+          "term": "Vztažné zájmeno",
+          "definition": "Slovo, které vztažnou větu připojí: *que, quien, donde, lo que*. Na rozdíl od otázek se píše **bez čárky**.",
+          "example": "que (který) × ¿qué? (co?)"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo jako *con, de, en, para* (s, z, v, pro).",
+          "example": "con mi amigo – s mým kamarádem"
+        },
+        {
+          "type": "heading",
+          "text": "Přehled"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zájmeno",
+            "Kdy",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "que",
+              "osoby i věci, nejčastější",
+              "El chico **que** vive aquí es mi primo. – Kluk, který tu bydlí, je můj bratranec."
+            ],
+            [
+              "quien / quienes",
+              "jen osoby, hlavně po předložce",
+              "La chica **con quien** hablé es Ana. – Holka, se kterou jsem mluvil, je Ana."
+            ],
+            [
+              "donde",
+              "místa",
+              "La ciudad **donde** nací es pequeña. – Město, kde jsem se narodil, je malé."
+            ],
+            [
+              "lo que",
+              "„to, co“ – celá myšlenka, ne konkrétní věc",
+              "No entiendo **lo que** dices. – Nerozumím tomu, co říkáš."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybrat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Jde o místo? → **donde** (nebo *en el / la que*).",
+            "Jde o celou myšlenku, česky „to, co“? → **lo que**.",
+            "Jde o osobu a před zájmenem je předložka (*con, para, de, a*)? → **quien / quienes**.",
+            "Ve všech ostatních případech → **que**."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Věci po předložce: *el / la / los / las que*: *la casa **en la que** vivo* – dům, ve kterém bydlím. Tvar se řídí podstatným jménem."
+        },
+        {
+          "type": "example",
+          "question": "Spoj: Tengo un amigo. Mi amigo habla chino.",
+          "answer": "Osoba bez předložky → *que*. **Tengo un amigo que habla chino.**"
+        },
+        {
+          "type": "example",
+          "question": "Spoj: Este es el profesor. Trabajo con este profesor.",
+          "answer": "Osoba po předložce *con* → *con quien*. **Este es el profesor con quien trabajo.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "El chico quien vive aquí es mi primo.",
+          "right": "El chico que vive aquí es mi primo.",
+          "why": "Bez předložky a bez čárek se *quien* nepoužívá. Pro osoby stačí *que*."
+        },
+        {
+          "type": "summary",
+          "text": "**que** = který (osoby i věci), **quien** = osoba po předložce, **donde** = kde, **lo que** = to, co. Vztažné zájmeno se píše bez čárky."
+        }
+      ]
+    },
+    {
+      "title": "Hádanky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hrajeme „Hádej, co to je“: *Es un animal **que** vive en el agua y **que** tiene ocho brazos.* Hádanky jsou plné vztažných vět – popisují věc, aniž ji jmenují."
+        },
+        {
+          "type": "text",
+          "text": "Až budeš vztažné věty umět, zvládneš popsat i slovo, které nevíš: *Es una cosa que sirve para…* (Je to věc, která slouží k…)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažná věta",
+          "definition": "Část věty, která říká víc o něčem, co už bylo zmíněné. Začíná slovem jako *que, donde, quien, lo que*.",
+          "example": "una persona que enseña – člověk, který učí"
+        },
+        {
+          "type": "term",
+          "term": "Lo que",
+          "definition": "Znamená „to, co“. Neodkazuje na konkrétní podstatné jméno, ale na celou věc nebo myšlenku.",
+          "example": "Lo que me gusta es leer. – To, co mám rád, je čtení."
+        },
+        {
+          "type": "heading",
+          "text": "Hádanky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Hádanka",
+            "Řešení"
+          ],
+          "rows": [
+            [
+              "Es una persona **que** trabaja en un hospital y **que** cuida a los enfermos.",
+              "un/a enfermero/a – zdravotní sestra / ošetřovatel"
+            ],
+            [
+              "Es un lugar **donde** puedes ver películas en una pantalla grande.",
+              "el cine – kino"
+            ],
+            [
+              "Es la persona **a quien** le das tu billete en el tren.",
+              "el revisor – průvodčí"
+            ],
+            [
+              "Es una cosa **que** sirve para abrir puertas.",
+              "la llave – klíč"
+            ],
+            [
+              "Es **lo que** comes por la mañana.",
+              "el desayuno – snídaně"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pozor na angličtinu"
+        },
+        {
+          "type": "text",
+          "text": "Anglicky můžeš *that* vynechat: *the book I read*. Španělsky **nikdy**: *el libro **que** leo*. A *what* ve významu „to, co“ je *lo que*, ne *qué*: *I don't know what you mean* → *No sé lo que quieres decir*."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "La película",
+                "after": "vimos ayer era muy buena.",
+                "options": [
+                  "que",
+                  "quien",
+                  "donde"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "El pueblo",
+                "after": "vive mi abuela es muy bonito.",
+                "options": [
+                  "donde",
+                  "que",
+                  "quien"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "No entiendo",
+                "after": "dices.",
+                "options": [
+                  "lo que",
+                  "que",
+                  "qué lo"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Los amigos con",
+                "after": "viajo son de Madrid.",
+                "options": [
+                  "quienes",
+                  "quien",
+                  "que"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Esta es la casa en",
+                "after": "vivo.",
+                "options": [
+                  "la que",
+                  "lo que",
+                  "que la"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Popiš slovo, které neznáš (deštník).",
+          "answer": "Věc + *que* + k čemu slouží. **Es una cosa que usas cuando llueve.** – Je to věc, kterou používáš, když prší."
+        },
+        {
+          "type": "example",
+          "question": "Přelož: To, co potřebuju, je dovolená.",
+          "answer": "„To, co“ = *lo que*. **Lo que necesito son unas vacaciones.** (Ve španělštině se sloveso *ser* řídí množným číslem *vacaciones*.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "No entiendo que dices.",
+          "right": "No entiendo lo que dices.",
+          "why": "„To, co“ se řekne *lo que*. Samotné *que* tu nestačí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Es el libro leo.",
+          "right": "Es el libro que leo.",
+          "why": "Na rozdíl od angličtiny se *que* nikdy nevynechává."
+        },
+        {
+          "type": "summary",
+          "text": "Věci a osoby → **que**, osoby po předložce → **quien(es)**, místa → **donde**, „to, co“ → **lo que**. Vztažné zájmeno se nevynechává."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "El chico ___ vive aquí es mi primo.",
+      "options": [
+        "que",
+        "quien",
+        "donde",
+        "lo que"
+      ],
+      "answer": 0,
+      "explanation": "Osoba bez předložky → *que*."
+    },
+    {
+      "type": "choice",
+      "question": "La ciudad ___ nací es pequeña.",
+      "options": [
+        "donde",
+        "que",
+        "quien"
+      ],
+      "answer": 0,
+      "explanation": "Místo → *donde*."
+    },
+    {
+      "type": "choice",
+      "question": "No entiendo ___ dices.",
+      "options": [
+        "lo que",
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "explanation": "„To, co“ → *lo que*."
+    },
+    {
+      "type": "choice",
+      "question": "La chica con ___ hablé es Ana.",
+      "options": [
+        "quien",
+        "que",
+        "donde"
+      ],
+      "answer": 0,
+      "explanation": "Osoba po předložce → *quien*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: El libro ___ leo es muy interesante.",
+      "answers": [
+        "que"
+      ],
+      "explanation": "Věc → *que*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: El restaurante ___ cenamos ayer es caro.",
+      "answers": [
+        "donde",
+        "en el que",
+        "en que"
+      ],
+      "explanation": "Místo → *donde* (nebo *en el que*)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: ___ me gusta es dormir. (To, co…)",
+      "answers": [
+        "lo que"
+      ],
+      "explanation": "„To, co“ → *lo que*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve španělštině lze vztažné zájmeno que vynechat, jako v angličtině.",
+      "answer": false,
+      "explanation": "*El libro que leo* – *que* se nevynechává."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Los amigos con quienes viajo son de Madrid.“ je správně.",
+      "answer": true,
+      "explanation": "Osoby v množném čísle po předložce → *con quienes*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj začátek s koncem věty.",
+      "pairs": [
+        [
+          "Es una persona",
+          "que enseña en un colegio."
+        ],
+        [
+          "Es un lugar",
+          "donde se compran medicinas."
+        ],
+        [
+          "Haz",
+          "lo que quieras."
+        ],
+        [
+          "Es el amigo",
+          "con quien juego al tenis."
+        ]
+      ],
+      "explanation": "*que* pro osoby i věci, *donde* pro místo, *lo que* = to, co, *quien* po předložce."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je **špatně**?",
+      "options": [
+        "El chico quien vive aquí es simpático.",
+        "El chico que vive aquí es simpático.",
+        "El chico con quien vivo es simpático."
+      ],
+      "answer": 0,
+      "explanation": "Bez předložky se pro osobu použije *que*, ne *quien*."
+    },
+    {
+      "type": "choice",
+      "question": "Esta es la casa en ___ vivo.",
+      "options": [
+        "la que",
+        "lo que",
+        "quien"
+      ],
+      "answer": 0,
+      "explanation": "Věc po předložce → *el / la que* podle rodu: *la casa → la que*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova: Film, který jsme viděli, byl dobrý.",
+      "items": [
+        "La",
+        "película",
+        "que",
+        "vimos",
+        "era",
+        "buena"
+      ],
+      "explanation": "Vztažná věta *que vimos* stojí hned za *la película*."
+    },
+    {
+      "type": "open",
+      "question": "Kdy se použije que, quien, donde a lo que? Ke každému uveď příklad.",
+      "answer": "*Que* pro osoby i věci (*el libro que leo*), *quien* pro osoby po předložce (*la chica con quien hablé*), *donde* pro místa (*la ciudad donde vivo*), *lo que* znamená „to, co“ (*No entiendo lo que dices*)."
+    },
+    {
+      "type": "open",
+      "question": "Popiš španělsky dvě věci nebo osoby pomocí vztažné věty, jako v hádance.",
+      "answer": "Např.: *Es una persona que trabaja en un restaurante y que sirve la comida* (camarero). *Es un lugar donde hay muchos libros* (biblioteca)."
+    }
+  ]
+}
