@@ -1,0 +1,533 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "privlastnovaci-zajmena",
+  "title": "Přivlastňovací zájmena mon, ma, mes…",
+  "emoji": "👨‍👩‍👧",
+  "explanations": [
+    {
+      "title": "Tabulka a pravidlo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chceš představit svou rodinu: „To je **můj** bratr a **moje** sestra.“ K tomu potřebuješ přivlastňovací zájmena: *mon frère, ma sœur*. Řeknou, komu co patří."
+        },
+        {
+          "type": "text",
+          "text": "Francouzská zájmena mají jednu zvláštnost: řídí se tím, **co** někomu patří, ne tím, **komu** to patří. To je jinak než v angličtině."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přivlastňovací zájmeno",
+          "definition": "Slovo, které říká, komu něco patří.",
+          "example": "můj, tvůj, jeho, náš… = *mon, ton, son, notre…*"
+        },
+        {
+          "type": "term",
+          "term": "Vlastník",
+          "definition": "Ten, komu věc patří.",
+          "example": "V „můj pes“ je vlastník „já“."
+        },
+        {
+          "type": "term",
+          "term": "Rod a číslo",
+          "definition": "Připomenutí: rod je mužský (*le*) nebo ženský (*la*), číslo jednotné nebo množné (*les*).",
+          "example": "*le frère* (m.), *la sœur* (ž.), *les parents* (mn. č.)"
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vlastník",
+            "mužský rod (le)",
+            "ženský rod (la)",
+            "množné číslo (les)",
+            "česky"
+          ],
+          "rows": [
+            [
+              "je",
+              "mon",
+              "ma",
+              "mes",
+              "můj, moje"
+            ],
+            [
+              "tu",
+              "ton",
+              "ta",
+              "tes",
+              "tvůj, tvoje"
+            ],
+            [
+              "il / elle",
+              "son",
+              "sa",
+              "ses",
+              "jeho / její"
+            ],
+            [
+              "nous",
+              "notre",
+              "notre",
+              "nos",
+              "náš"
+            ],
+            [
+              "vous",
+              "votre",
+              "votre",
+              "vos",
+              "váš"
+            ],
+            [
+              "ils / elles",
+              "leur",
+              "leur",
+              "leurs",
+              "jejich"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Jak ji číst: najdi řádek podle vlastníka a sloupec podle věci. *můj otec* → řádek *je*, *père* je mužský → **mon père**. *moje matka* → *mère* je ženský → **ma mère**. *moji rodiče* → *parents* je množné → **mes parents**."
+        },
+        {
+          "type": "heading",
+          "text": "Pozor: son / sa"
+        },
+        {
+          "type": "text",
+          "text": "*son* a *sa* znamenají **jeho i její**. O tom, které použiješ, rozhoduje rod věci: *son père* = jeho otec i její otec; *sa mère* = jeho matka i její matka. Angličtina rozhoduje podle vlastníka (*his/her*), francouzština podle věci."
+        },
+        {
+          "type": "heading",
+          "text": "Pozor: mon amie"
+        },
+        {
+          "type": "text",
+          "text": "Před ženským slovem, které začíná samohláskou nebo němým *h*, se místo *ma, ta, sa* použije **mon, ton, son**, aby se dvě samohlásky nesrazily: *mon amie* (moje kamarádka), *ton école* (tvoje škola), *son histoire* (jeho/její příběh)."
+        },
+        {
+          "type": "heading",
+          "text": "Rodina"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "le père / la mère",
+                "back": "otec / matka"
+              },
+              {
+                "front": "les parents",
+                "back": "rodiče"
+              },
+              {
+                "front": "le frère / la sœur",
+                "back": "bratr / sestra"
+              },
+              {
+                "front": "le grand-père / la grand-mère",
+                "back": "dědeček / babička"
+              },
+              {
+                "front": "l’oncle / la tante",
+                "back": "strýc / teta"
+              },
+              {
+                "front": "le cousin / la cousine",
+                "back": "bratranec / sestřenice"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Tady je moje teta a můj strýc.",
+          "answer": "„Tady je“ = *voici*. *tante* je ženský → *ma tante*. *oncle* je mužský → *mon oncle* (čti „monõkl“, s vázáním). **Voici ma tante et mon oncle.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Léa má ráda svého bratra a svou sestru.",
+          "answer": "Vlastník je Léa (*elle*). *frère* je mužský → *son frère*. *sœur* je ženský → *sa sœur*. Francouzština nemá zvláštní „svůj“, použije *son/sa/ses*. **Léa aime son frère et sa sœur.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "ma amie",
+          "right": "mon amie",
+          "why": "Před ženským slovem na samohlásku se píše *mon, ton, son*."
+        },
+        {
+          "type": "summary",
+          "text": "*mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs*. Řídí se rodem a číslem **věci**, ne vlastníka. Před samohláskou *mon amie*."
+        }
+      ]
+    },
+    {
+      "title": "Rodinné album",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hugo listuje rodinným albem a ukazuje ho kamarádce Inès. U každé fotky říká, kdo to je. Uslyšíš, jak se mění *mon, ma, mes* – a proč Hugo o babiččině psovi říká *son chien*, i když babička je žena."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přivlastňovací zájmeno",
+          "definition": "Slovo jako *můj, tvůj, jeho*. Stojí před podstatným jménem místo členu.",
+          "example": "*mon chien* (můj pes) – žádné *le* navíc"
+        },
+        {
+          "type": "term",
+          "term": "Rod podstatného jména",
+          "definition": "Připomenutí: každé francouzské podstatné jméno je mužské (*le*), nebo ženské (*la*).",
+          "example": "*le chien*, *la maison*"
+        },
+        {
+          "type": "term",
+          "term": "Vázání",
+          "definition": "Připomenutí: koncová souhláska se vysloví, když další slovo začíná samohláskou.",
+          "example": "*mes amis* = „mezamí“"
+        },
+        {
+          "type": "heading",
+          "text": "Hugo ukazuje album"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "📖",
+            "👨",
+            "👩",
+            "👵",
+            "🐈"
+          ],
+          "caption": "Rodinné album: táta, máma, babička a její kočka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Hugo říká",
+            "Česky",
+            "Proč"
+          ],
+          "rows": [
+            [
+              "Voici mon père et ma mère.",
+              "Tady je můj táta a moje máma.",
+              "père (m.) → mon, mère (ž.) → ma"
+            ],
+            [
+              "Ce sont mes parents.",
+              "To jsou moji rodiče.",
+              "parents (mn. č.) → mes"
+            ],
+            [
+              "Voici ma grand-mère et sa chatte.",
+              "Tady je moje babička a její kočka.",
+              "chatte (ž.) → sa"
+            ],
+            [
+              "Et voici son chien, Max.",
+              "A tady je její pes Max.",
+              "chien (m.) → son, i když je babiččin"
+            ],
+            [
+              "Voici mon amie Zoé.",
+              "Tady je moje kamarádka Zoé.",
+              "amie začíná samohláskou → mon"
+            ],
+            [
+              "Ce sont nos vacances à la mer.",
+              "To jsou naše prázdniny u moře.",
+              "vacances (mn. č.), my → nos"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Inès se zeptá: *C’est ta maison ?* (Je to tvůj dům?) Hugo: *Non, c’est la maison de mes cousins. C’est leur maison.* (Ne, to je dům mých bratranců. Je to jejich dům.)"
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybrat správné zájmeno"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Komu to patří? (já → m-, ty → t-, on/ona → s-, my → notre/nos, vy → votre/vos, oni → leur/leurs)",
+            "Co to je a jakého rodu? Mužský → *mon/ton/son*, ženský → *ma/ta/sa*, víc věcí → *mes/tes/ses*.",
+            "Ženské slovo na samohlásku? Místo *ma/ta/sa* dej *mon/ton/son*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "C’est",
+                "after": "frère. (můj)",
+                "options": [
+                  "mon",
+                  "ma",
+                  "mes"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Voici",
+                "after": "sœur. (tvoje)",
+                "options": [
+                  "ta",
+                  "ton",
+                  "tes"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ce sont",
+                "after": "amis. (moji)",
+                "options": [
+                  "mes",
+                  "mon",
+                  "ma"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Léa aime",
+                "after": "chat. (svého)",
+                "options": [
+                  "son",
+                  "sa",
+                  "ses"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "C’est",
+                "after": "école. (naše)",
+                "options": [
+                  "notre",
+                  "nos",
+                  "ma"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Tom a Max mají psa. Jejich pes se jmenuje Rex.",
+          "answer": "Vlastníci jsou *ils* (Tom a Max). Jeden pes → *leur* (bez *s*). **Tom et Max ont un chien. Leur chien s’appelle Rex.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Kde jsou tvoje boty? (*les chaussures* = boty)",
+          "answer": "Vlastník *tu*, bot je víc → *tes*. Otázka s *où*: **Où sont tes chaussures ?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Léa aime son mère.",
+          "right": "Léa aime sa mère.",
+          "why": "Rozhoduje rod věci (*mère* je ženský), ne vlastníka."
+        },
+        {
+          "type": "summary",
+          "text": "Zájmeno vybírá vlastník (*m-, t-, s-, notre, votre, leur*) a tvar rod a číslo věci. *son/sa* = jeho i její. *mon amie, ton école*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "___ père (můj otec)",
+      "options": [
+        "mon",
+        "ma",
+        "mes"
+      ],
+      "answer": 0,
+      "explanation": "*père* je mužský rod → *mon*."
+    },
+    {
+      "type": "choice",
+      "question": "___ sœur (tvoje sestra)",
+      "options": [
+        "ta",
+        "ton",
+        "tes"
+      ],
+      "answer": 0,
+      "explanation": "*sœur* je ženský rod, vlastník *tu* → *ta*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: ___ parents (moji rodiče)",
+      "answers": [
+        "mes"
+      ],
+      "explanation": "Množné číslo, vlastník *je* → *mes*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „moje kamarádka“?",
+      "options": [
+        "mon amie",
+        "ma amie",
+        "mes amie"
+      ],
+      "answer": 0,
+      "explanation": "Ženské slovo na samohlásku → *mon*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*sa mère* může znamenat „jeho matka“ i „její matka“.",
+      "answer": true,
+      "explanation": "*sa* se řídí rodem slova *mère*, ne vlastníkem."
+    },
+    {
+      "type": "choice",
+      "question": "Paul aime ___ sœur. (Pavel má rád svou sestru.)",
+      "options": [
+        "sa",
+        "son",
+        "ses"
+      ],
+      "answer": 0,
+      "explanation": "*sœur* je ženský rod → *sa*."
+    },
+    {
+      "type": "choice",
+      "question": "Marie aime ___ père. (Marie má ráda svého otce.)",
+      "options": [
+        "son",
+        "sa",
+        "ses"
+      ],
+      "answer": 0,
+      "explanation": "*père* je mužský rod → *son*, i když Marie je žena."
+    },
+    {
+      "type": "match",
+      "question": "Spoj francouzské zájmeno s českým.",
+      "pairs": [
+        [
+          "notre maison",
+          "náš dům"
+        ],
+        [
+          "vos livres",
+          "vaše knihy"
+        ],
+        [
+          "leur chat",
+          "jejich kočka"
+        ],
+        [
+          "tes amis",
+          "tvoji kamarádi"
+        ]
+      ],
+      "explanation": "*notre/nos* = náš, *votre/vos* = váš, *leur/leurs* = jejich, *ton/ta/tes* = tvůj."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Ils aiment ___ enfants. (Mají rádi své děti.)",
+      "answers": [
+        "leurs"
+      ],
+      "explanation": "Vlastníci *ils*, dětí je víc → *leurs*.",
+      "hints": [
+        "Kolik je dětí?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "___ école (naše škola)",
+      "options": [
+        "notre",
+        "nos",
+        "notres"
+      ],
+      "answer": 0,
+      "explanation": "Jedna škola, vlastník *nous* → *notre*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu „To je můj strýc.“",
+      "items": [
+        "C’est",
+        "mon",
+        "oncle."
+      ],
+      "explanation": "*oncle* je mužský rod → *mon oncle*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve francouzštině se přivlastňovací zájmeno řídí tím, komu věc patří, stejně jako v angličtině *his / her*.",
+      "answer": false,
+      "explanation": "Řídí se rodem a číslem věci: *son père, sa mère*."
+    },
+    {
+      "type": "input",
+      "question": "Jak se francouzsky řekne „babička“ (se členem la)?",
+      "answers": [
+        "la grand-mère",
+        "la grand mère",
+        "la grand-mere"
+      ],
+      "explanation": "*la grand-mère*, píše se se spojovníkem."
+    },
+    {
+      "type": "choice",
+      "question": "Où sont ___ chaussures ? (Kde jsou vaše boty?)",
+      "options": [
+        "vos",
+        "votre",
+        "vous"
+      ],
+      "answer": 0,
+      "explanation": "Vlastník *vous*, bot je víc → *vos*."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *son* a *sa*? Uveď příklad.",
+      "answer": "Oba znamenají jeho i její. *son* se dává před mužské slovo (*son père*), *sa* před ženské (*sa mère*). Rozhoduje rod věci, ne vlastníka."
+    },
+    {
+      "type": "open",
+      "question": "Představ francouzsky svou rodinu ve třech větách.",
+      "answer": "Voici mon père et ma mère. J’ai un frère, il s’appelle Adam. Mes grands-parents habitent à Brno."
+    }
+  ]
+}

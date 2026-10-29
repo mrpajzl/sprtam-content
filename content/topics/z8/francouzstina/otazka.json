@@ -1,0 +1,550 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "otazka",
+  "title": "Otázka",
+  "emoji": "❓",
+  "explanations": [
+    {
+      "title": "Tři způsoby",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kdo se umí ptát, umí se domluvit. Francouzština má na otázku tři způsoby: od nejjednoduššího, který používají Francouzi doma, po nejslavnostnější, který najdeš v knihách. Naučíš se je všechny, ale nejvíc budeš používat první dva."
+        },
+        {
+          "type": "text",
+          "text": "Pak přidáš tázací slova jako *où* (kde) nebo *pourquoi* (proč) a zeptáš se na cokoli."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Otázka zjišťovací",
+          "definition": "Otázka, na kterou se odpovídá *ano*, nebo *ne*.",
+          "example": "*Tu as un chien ?* – *Oui. / Non.*"
+        },
+        {
+          "type": "term",
+          "term": "Otázka doplňovací",
+          "definition": "Otázka s tázacím slovem (kde, kdy, proč…). Odpověď je informace, ne jen ano/ne.",
+          "example": "*Où tu habites ?* – *À Prague.*"
+        },
+        {
+          "type": "term",
+          "term": "Intonace",
+          "definition": "Melodie hlasu. V otázce hlas na konci stoupne nahoru.",
+          "example": "*Tu parles français ?* ↗"
+        },
+        {
+          "type": "term",
+          "term": "Inverze",
+          "definition": "Prohození: sloveso jde před zájmeno a spojí se s ním spojovníkem (-).",
+          "example": "*Parles-tu français ?*"
+        },
+        {
+          "type": "heading",
+          "text": "Způsob 1: jen hlasem (intonace)"
+        },
+        {
+          "type": "text",
+          "text": "Vezmeš obyčejnou větu a na konci zvedneš hlas. Slova se nemění. Takhle se Francouzi ptají nejčastěji. *Tu parles français.* (Mluvíš francouzsky.) → *Tu parles français ?* (Mluvíš francouzsky?) Česky to děláš úplně stejně."
+        },
+        {
+          "type": "heading",
+          "text": "Způsob 2: Est-ce que"
+        },
+        {
+          "type": "text",
+          "text": "Na začátek věty dáš **est-ce que** (čti „eske“). Doslova to znamená „je to tak, že…“. Zbytek věty zůstane. *Est-ce que tu parles français ?* Před samohláskou: **est-ce qu’**: *Est-ce qu’il a un chien ?*"
+        },
+        {
+          "type": "heading",
+          "text": "Způsob 3: inverze (spisovně)"
+        },
+        {
+          "type": "text",
+          "text": "Sloveso a zájmeno si vymění místo: *Vous parlez français.* → *Parlez-vous français ?* Znáš to už z *Comment vous appelez-vous ?* Inverzi uslyšíš hlavně ve zdvořilé řeči a uvidíš v knihách."
+        },
+        {
+          "type": "heading",
+          "text": "Tázací slova"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Francouzsky",
+            "Česky",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "qui",
+              "kdo",
+              "Qui est-ce ? (Kdo je to?)"
+            ],
+            [
+              "qu’est-ce que",
+              "co",
+              "Qu’est-ce que tu manges ? (Co jíš?)"
+            ],
+            [
+              "où",
+              "kde, kam",
+              "Où est-ce que tu habites ? (Kde bydlíš?)"
+            ],
+            [
+              "quand",
+              "kdy",
+              "Quand est-ce que tu joues ? (Kdy hraješ?)"
+            ],
+            [
+              "comment",
+              "jak",
+              "Comment tu t’appelles ? (Jak se jmenuješ?)"
+            ],
+            [
+              "pourquoi",
+              "proč",
+              "Pourquoi tu ris ? (Proč se směješ?)"
+            ],
+            [
+              "combien (de)",
+              "kolik",
+              "Tu as combien de frères ? (Kolik máš bratrů?)"
+            ],
+            [
+              "quel / quelle",
+              "jaký, který",
+              "Tu as quel âge ? (Kolik ti je?)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tázací slovo může stát na začátku (*Où est-ce que tu habites ?*) nebo v hovoru i na konci (*Tu habites où ?*). Na *pourquoi* (proč) se odpovídá **parce que** (protože)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku a zkontroluj, co tázací slovo znamená."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "où",
+                "back": "kde / kam"
+              },
+              {
+                "front": "quand",
+                "back": "kdy"
+              },
+              {
+                "front": "pourquoi",
+                "back": "proč"
+              },
+              {
+                "front": "qui",
+                "back": "kdo"
+              },
+              {
+                "front": "combien",
+                "back": "kolik"
+              },
+              {
+                "front": "comment",
+                "back": "jak"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se třemi způsoby: „Máte psa?“ (vykáš)",
+          "answer": "1) Hlasem: **Vous avez un chien ?** 2) S *est-ce que*: **Est-ce que vous avez un chien ?** 3) Inverzí: **Avez-vous un chien ?**"
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se kamaráda, kde bydlí, s *est-ce que*.",
+          "answer": "Tázací slovo *où* dám na začátek, za něj *est-ce que* a pak větu: **Où est-ce que tu habites ?** Hovorově taky *Tu habites où ?*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Est-ce que tu manges ? (když chceš vědět, CO jí)",
+          "right": "Qu’est-ce que tu manges ?",
+          "why": "*Est-ce que* dělá otázku ano/ne (Jíš?). „Co“ přidá *qu’* na začátku: *Qu’est-ce que* = co."
+        },
+        {
+          "type": "summary",
+          "text": "Otázka: 1) jen hlasem *Tu parles français ?*, 2) *Est-ce que tu parles français ?*, 3) *Parles-tu français ?* Tázací slova: *qui, qu’est-ce que, où, quand, comment, pourquoi, combien, quel*."
+        }
+      ]
+    },
+    {
+      "title": "Rozhovor s novou spolužačkou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Do třídy přišla nová spolužačka z Francie, Inès. Všichni ji chtějí poznat a ptají se jí na všechno možné. Podle jejich otázek uvidíš, jak se francouzská otázka staví a jak se na ni odpovídá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tázací slovo",
+          "definition": "Slovo, kterým se ptáš na konkrétní informaci: kde, kdy, kdo, proč…",
+          "example": "*où* = kde, *pourquoi* = proč"
+        },
+        {
+          "type": "term",
+          "term": "Est-ce que",
+          "definition": "Kouzelná formulka („eske“). Dáš ji před oznamovací větu a vznikne otázka.",
+          "example": "*Est-ce que tu aimes le sport ?* = Máš ráda sport?"
+        },
+        {
+          "type": "term",
+          "term": "Intonace",
+          "definition": "Jak hlas stoupá a klesá. Otázka bez *est-ce que* se pozná jen podle toho, že hlas na konci stoupne.",
+          "example": "*Tu aimes le sport ?* ↗"
+        },
+        {
+          "type": "heading",
+          "text": "Otázky pro Inès"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Otázka",
+            "Česky",
+            "Odpověď Inès"
+          ],
+          "rows": [
+            [
+              "Comment tu t’appelles ?",
+              "Jak se jmenuješ?",
+              "Je m’appelle Inès."
+            ],
+            [
+              "Tu as quel âge ?",
+              "Kolik ti je?",
+              "J’ai treize ans."
+            ],
+            [
+              "Où est-ce que tu habites ?",
+              "Kde bydlíš?",
+              "J’habite à Brno, mais je suis de Marseille."
+            ],
+            [
+              "Est-ce que tu as des frères et sœurs ?",
+              "Máš sourozence?",
+              "Oui, j’ai un frère."
+            ],
+            [
+              "Qu’est-ce que tu aimes ?",
+              "Co máš ráda?",
+              "J’aime le basket et la musique."
+            ],
+            [
+              "Pourquoi tu es à Brno ?",
+              "Proč jsi v Brně?",
+              "Parce que ma mère travaille ici."
+            ],
+            [
+              "Tu n’aimes pas le foot ?",
+              "Ty nemáš ráda fotbal?",
+              "Si ! J’adore le foot !"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Poslední řádek je chyták. Na otázku **se záporem** (*Tu n’aimes pas… ?*) neodpovíš „ano“ slovem *oui*, ale slovem **si**. *Si* znamená „ale ano, mám!“. Čeština nic takového nemá, němčina má *doch*."
+        },
+        {
+          "type": "heading",
+          "text": "Jak postavit otázku s tázacím slovem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Napiš si odpověď jako větu: *Tu habites à Brno.*",
+            "Nahraď neznámou informaci tázacím slovem: *à Brno* → *où*.",
+            "Dej tázací slovo na začátek a za něj *est-ce que*: *Où est-ce que…*",
+            "Doplň zbytek věty beze změny: *Où est-ce que tu habites ?*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Vyber tázací slovo, které do otázky patří."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "est-ce que tu habites ? – À Paris.",
+                "options": [
+                  "Où",
+                  "Quand",
+                  "Qui"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "est-ce ? – C’est mon frère.",
+                "options": [
+                  "Qui",
+                  "Où",
+                  "Pourquoi"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "tu ris ? – Parce que c’est drôle.",
+                "options": [
+                  "Pourquoi",
+                  "Comment",
+                  "Combien"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "est-ce que tu manges ? – Une pizza.",
+                "options": [
+                  "Qu’",
+                  "Où",
+                  "Qui"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu as",
+                "after": "de frères ? – Deux.",
+                "options": [
+                  "combien",
+                  "quand",
+                  "quel"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověď je *Je joue au tennis le samedi.* (Hraju tenis v sobotu.) Zeptej se na to, KDY hraje.",
+          "answer": "Neznámá informace je *le samedi* (v sobotu) → tázací slovo *quand* (kdy). Na začátek *quand*, za něj *est-ce que*, pak věta: **Quand est-ce que tu joues au tennis ?**"
+        },
+        {
+          "type": "example",
+          "question": "Kamarád se ptá: *Tu n’as pas de chien ?* Ty psa máš. Jak odpovíš?",
+          "answer": "Otázka je záporná, takže „ale ano“ = **si**: **Si, j’ai un chien !** Kdybys psa neměl, řekneš *Non, je n’ai pas de chien.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Est-ce que il parle français ?",
+          "right": "Est-ce qu’il parle français ?",
+          "why": "Před samohláskou se *que* zkrátí na *qu’*."
+        },
+        {
+          "type": "summary",
+          "text": "Otázka ano/ne: hlasem (*Tu parles français ?*) nebo s *est-ce que*. Doplňovací: tázací slovo + *est-ce que* + věta. Na zápornou otázku odpovídáš „ale ano“ slovem *si*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená *où*?",
+      "options": [
+        "kde",
+        "nebo",
+        "kdy"
+      ],
+      "answer": 0,
+      "explanation": "*où* s akcentem = kde/kam. *ou* bez akcentu = nebo."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tázací slovo s překladem.",
+      "pairs": [
+        [
+          "qui",
+          "kdo"
+        ],
+        [
+          "quand",
+          "kdy"
+        ],
+        [
+          "pourquoi",
+          "proč"
+        ],
+        [
+          "comment",
+          "jak"
+        ],
+        [
+          "combien",
+          "kolik"
+        ]
+      ],
+      "explanation": "Tázací slova se vyplatí naučit nazpaměť."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš s *est-ce que* „Mluvíš francouzsky?“",
+      "options": [
+        "Est-ce que tu parles français ?",
+        "Est-ce tu parles français ?",
+        "Qu’est-ce que tu parles français ?"
+      ],
+      "answer": 0,
+      "explanation": "*Est-ce que* + věta beze změny."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: ___ est-ce que tu manges ? (Co jíš?)",
+      "answers": [
+        "qu’",
+        "qu"
+      ],
+      "explanation": "„Co“ = *qu’est-ce que*.",
+      "hints": [
+        "Je to zkrácené slovo que."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Otázku můžeš ve francouzštině udělat i jen tím, že na konci zvedneš hlas.",
+      "answer": true,
+      "explanation": "Například *Tu as faim ?* Je to nejčastější způsob v hovoru."
+    },
+    {
+      "type": "choice",
+      "question": "*Tu n’aimes pas le chocolat ?* Máš čokoládu rád. Co odpovíš?",
+      "options": [
+        "Si !",
+        "Oui !",
+        "Non !"
+      ],
+      "answer": 0,
+      "explanation": "Na zápornou otázku se kladně odpovídá *si*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš inverzí „Máte psa?“",
+      "options": [
+        "Avez-vous un chien ?",
+        "Vous-avez un chien ?",
+        "Avez vous un chien"
+      ],
+      "answer": 0,
+      "explanation": "Při inverzi jde sloveso před zájmeno a spojí se spojovníkem."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď otázku „Kde bydlíš?“",
+      "items": [
+        "Où",
+        "est-ce que",
+        "tu",
+        "habites ?"
+      ],
+      "explanation": "Tázací slovo + *est-ce que* + věta."
+    },
+    {
+      "type": "input",
+      "question": "Jak se řekne francouzsky „proč“?",
+      "answers": [
+        "pourquoi"
+      ],
+      "explanation": "Na *pourquoi* odpovídáš *parce que* (protože)."
+    },
+    {
+      "type": "choice",
+      "question": "Na otázku *Pourquoi tu es là ?* začne odpověď:",
+      "options": [
+        "Parce que…",
+        "Pourquoi…",
+        "Est-ce que…"
+      ],
+      "answer": 0,
+      "explanation": "*parce que* = protože."
+    },
+    {
+      "type": "choice",
+      "question": "Která otázka je správně?",
+      "options": [
+        "Est-ce qu’elle a un chat ?",
+        "Est-ce que elle a un chat ?",
+        "Est-ce qu elle a un chat ?"
+      ],
+      "answer": 0,
+      "explanation": "Před samohláskou se *que* zkrátí na *qu’*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tázací slovo: ___ est-ce ? – C’est Paul. (Kdo je to?)",
+      "answers": [
+        "qui"
+      ],
+      "explanation": "*Qui est-ce ?* = Kdo je to?"
+    },
+    {
+      "type": "truefalse",
+      "question": "*Est-ce que tu aimes le sport ?* je otázka, na kterou se odpovídá *oui* nebo *non*.",
+      "answer": true,
+      "explanation": "Bez tázacího slova se *est-ce que* ptá jen na ano/ne."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se hovorově zeptáš „Kolik ti je?“",
+      "options": [
+        "Tu as quel âge ?",
+        "Tu es quel âge ?",
+        "Quel âge tu es ?"
+      ],
+      "answer": 0,
+      "explanation": "Věk se říká slovesem *avoir*, i v otázce."
+    },
+    {
+      "type": "open",
+      "question": "Jakými třemi způsoby se ve francouzštině dá udělat otázka? Uveď příklady.",
+      "answer": "1) Jen intonací: *Tu parles français ?* 2) S *est-ce que*: *Est-ce que tu parles français ?* 3) Inverzí: *Parles-tu français ?*"
+    },
+    {
+      "type": "open",
+      "question": "Zeptej se francouzsky spolužáka na tři věci: kde bydlí, co má rád a kolik mu je.",
+      "answer": "*Où est-ce que tu habites ? Qu’est-ce que tu aimes ? Tu as quel âge ?*"
+    }
+  ]
+}

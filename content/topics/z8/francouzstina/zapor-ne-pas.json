@@ -1,0 +1,541 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zapor-ne-pas",
+  "title": "Zápor ne … pas",
+  "emoji": "🚫",
+  "explanations": [
+    {
+      "title": "Sendvič",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky zápor uděláš jednoduše: „mluvím“ → **ne**mluvím. Francouzština na to má dvě slovíčka, **ne** a **pas**, a sloveso vloží mezi ně. Vypadá to jako sendvič: dva krajíce a uprostřed sloveso."
+        },
+        {
+          "type": "text",
+          "text": "Zápor potřebuješ pořád: „nemám psa“, „nejsem Francouz“, „nemám rád rajčata“. Bez něj neumíš nic odmítnout."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zápor",
+          "definition": "Věta, která něco popírá. Česky v ní bývá *ne-*.",
+          "example": "Mluvím. → **Ne**mluvím."
+        },
+        {
+          "type": "term",
+          "term": "Sloveso",
+          "definition": "Slovo, které říká, co kdo dělá nebo jaký je. Připomenutí: ve francouzské větě stojí za zájmenem.",
+          "example": "*je parle* (mluvím), *il est* (je)"
+        },
+        {
+          "type": "term",
+          "term": "ne … pas",
+          "definition": "Dvoudílný francouzský zápor. *ne* stojí **před** slovesem, *pas* **za** ním.",
+          "example": "*Je **ne** parle **pas**.* = Nemluvím."
+        },
+        {
+          "type": "heading",
+          "text": "Jak postavit sendvič"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi kladnou větu: *Je parle français.*",
+            "Najdi sloveso: *parle*.",
+            "Před sloveso dej *ne*, za něj *pas*: *Je ne parle pas français.*",
+            "Začíná-li sloveso samohláskou nebo *h*, zkrať *ne* na *n’*: *Je n’aime pas…*"
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kladně",
+            "Záporně",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Je suis français.",
+              "Je ne suis pas français.",
+              "Nejsem Francouz."
+            ],
+            [
+              "Tu parles anglais.",
+              "Tu ne parles pas anglais.",
+              "Nemluvíš anglicky."
+            ],
+            [
+              "Il aime le sport.",
+              "Il n’aime pas le sport.",
+              "Nemá rád sport."
+            ],
+            [
+              "Nous habitons à Paris.",
+              "Nous n’habitons pas à Paris.",
+              "Nebydlíme v Paříži."
+            ],
+            [
+              "Ils ont faim.",
+              "Ils n’ont pas faim.",
+              "Nemají hlad."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Když jsou ve větě dvě slovesa, sendvič obalí to **první**, časované: *J’aime danser.* → *Je n’aime pas danser.* (Nerad tancuji.)"
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: un, une, des → de"
+        },
+        {
+          "type": "text",
+          "text": "Po záporu se neurčitý člen *un, une, des* změní na **de** (před samohláskou **d’**). Je to, jako by francouzština říkala „nemám **žádného** psa“."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kladně",
+            "Záporně",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "J’ai un chien.",
+              "Je n’ai pas de chien.",
+              "Nemám psa."
+            ],
+            [
+              "Elle a une sœur.",
+              "Elle n’a pas de sœur.",
+              "Nemá sestru."
+            ],
+            [
+              "Nous avons des amis.",
+              "Nous n’avons pas d’amis.",
+              "Nemáme kamarády."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor, platí to jen pro *un, une, des*. Určitý člen *le, la, l’, les* zůstane: *J’aime le chocolat.* → *Je n’aime pas le chocolat.* A po slovese *être* se nemění nic: *C’est un chat.* → *Ce n’est pas un chat.* (To není kočka.)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je",
+                "after": "parle pas allemand.",
+                "options": [
+                  "ne",
+                  "n’",
+                  "pas"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle",
+                "after": "aime pas le café.",
+                "options": [
+                  "n’",
+                  "ne",
+                  "pas"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous n’avons pas",
+                "after": "voiture.",
+                "options": [
+                  "de",
+                  "une",
+                  "la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il n’aime pas",
+                "after": "chocolat.",
+                "options": [
+                  "le",
+                  "de",
+                  "du"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Dej do záporu: *Tu regardes la télé.*",
+          "answer": "Sloveso je *regardes*. Obalím ho: *ne* před, *pas* za. *la* je určitý člen, ten zůstane. **Tu ne regardes pas la télé.** (Nedíváš se na televizi.)"
+        },
+        {
+          "type": "example",
+          "question": "Dej do záporu: *Il y a des pommes.* (Jsou tu jablka.)",
+          "answer": "*Il y a* = je tu / jsou tu; sloveso je *a* (od *avoir*) a *y* k němu patří. Obalím: *Il n’y a pas*. *des* se po záporu mění na *de*. **Il n’y a pas de pommes.** (Nejsou tu žádná jablka.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je n’ai pas un chien.",
+          "right": "Je n’ai pas de chien.",
+          "why": "Po záporu se *un, une, des* mění na *de*."
+        },
+        {
+          "type": "summary",
+          "text": "Zápor = **ne + sloveso + pas** (před samohláskou *n’*). Po záporu se *un/une/des* mění na *de/d’*, ale *le/la/les* a věty s *être* zůstávají."
+        }
+      ]
+    },
+    {
+      "title": "Odmítavá Chloé",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chloé má dneska špatnou náladu. Na všechno, co se jí maminka zeptá, odpoví „ne“. Z jejích odpovědí se naučíš, jak francouzsky říct, že něco není, něco nemáš nebo něco nechceš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zápor",
+          "definition": "Věta, která říká, že něco **není** pravda.",
+          "example": "Mám hlad. → Nemám hlad."
+        },
+        {
+          "type": "term",
+          "term": "ne … pas",
+          "definition": "Francouzský zápor ze dvou kousků. Obalí sloveso zleva i zprava.",
+          "example": "*Je ne sais pas.* = Nevím."
+        },
+        {
+          "type": "term",
+          "term": "Neurčitý člen",
+          "definition": "Připomenutí: *un, une, des* = nějaký, nějaká, nějací. Stojí před podstatným jménem.",
+          "example": "*un chien* = (nějaký) pes"
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor u snídaně"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Maman",
+            "Chloé",
+            "Česky (Chloé)"
+          ],
+          "rows": [
+            [
+              "Tu as faim ?",
+              "Non, je n’ai pas faim.",
+              "Ne, nemám hlad."
+            ],
+            [
+              "Tu aimes le chocolat ?",
+              "Non, je n’aime pas le chocolat.",
+              "Ne, nemám ráda čokoládu."
+            ],
+            [
+              "Tu es fatiguée ?",
+              "Non, je ne suis pas fatiguée !",
+              "Ne, nejsem unavená!"
+            ],
+            [
+              "Tu as un cours de piano ?",
+              "Non, je n’ai pas de cours de piano.",
+              "Ne, nemám hodinu klavíru."
+            ],
+            [
+              "Tu regardes la télé ?",
+              "Non, je ne regarde pas la télé.",
+              "Ne, nedívám se na televizi."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si tří věcí. 1) *Non* na začátku je jen „ne“ jako odpověď; samotný zápor ve větě dělá *ne … pas*. 2) Před samohláskou je *n’*: *n’ai, n’aime*. 3) *un cours* se v záporu změnilo na *de cours*, ale *le chocolat* a *la télé* zůstaly."
+        },
+        {
+          "type": "heading",
+          "text": "Jak to Francouzi říkají doma"
+        },
+        {
+          "type": "text",
+          "text": "V rychlé řeči Francouzi *ne* často „spolknou“: *Je sais pas.* (Nevím.) *C’est pas grave.* (To nevadí.) To *pas* ale zůstane vždy, nese celý zápor. Ve škole a v psaní používej obě části."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď věty: jsou správně, nebo je v nich chyba?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "správně",
+              "chyba"
+            ],
+            "items": [
+              {
+                "text": "Je ne parle pas.",
+                "group": 0
+              },
+              {
+                "text": "Il n’a pas de frère.",
+                "group": 0
+              },
+              {
+                "text": "Ce n’est pas un chat.",
+                "group": 0
+              },
+              {
+                "text": "Je n’aime pas le lait.",
+                "group": 0
+              },
+              {
+                "text": "Je ne aime pas.",
+                "group": 1
+              },
+              {
+                "text": "Je parle ne pas.",
+                "group": 1
+              },
+              {
+                "text": "Tu n’as pas une voiture.",
+                "group": 1
+              },
+              {
+                "text": "Il ne est pas là.",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Postup pro odpověď „ne“"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Začni *Non,* a zopakuj otázku jako větu: *Tu as un chat ?* → *Non, j’ai un chat*…",
+            "Obal sloveso: *je n’ai pas*.",
+            "Zkontroluj člen: *un, une, des* → *de/d’*; *le, la, les* nech.",
+            "Výsledek: *Non, je n’ai pas de chat.*"
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Maminka se zeptá: *Tu as des devoirs ?* (Máš úkoly?) Chloé nemá. Co odpoví?",
+          "answer": "Sloveso *ai* (od *avoir*) začíná samohláskou → *n’ai pas*. *des* se po záporu změní na *de*. **Non, je n’ai pas de devoirs.**"
+        },
+        {
+          "type": "example",
+          "question": "Kamarád ukazuje na psa: *C’est un chat ?* Odpověz, že to není kočka.",
+          "answer": "Sloveso je *est* (od *être*) → *ce n’est pas*. Po *être* se člen **nemění**: **Non, ce n’est pas un chat. C’est un chien !**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je ne aime pas le lait.",
+          "right": "Je n’aime pas le lait.",
+          "why": "Před samohláskou se *ne* zkrátí na *n’*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je parle ne pas.",
+          "right": "Je ne parle pas.",
+          "why": "*ne* stojí vždy **před** slovesem, *pas* **za** ním."
+        },
+        {
+          "type": "summary",
+          "text": "Sloveso obal: *ne … pas* (*n’* před samohláskou). *un/une/des* se po záporu mění na *de*, *le/la/les* zůstává, po *être* se nemění nic."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Nemluvím francouzsky“?",
+      "options": [
+        "Je ne parle pas français.",
+        "Je parle ne pas français.",
+        "Je pas parle français."
+      ],
+      "answer": 0,
+      "explanation": "*ne* před slovesem, *pas* za ním."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *J’aime le sport.*",
+      "options": [
+        "Je n’aime pas le sport.",
+        "Je ne aime pas le sport.",
+        "Je n’aime pas de sport."
+      ],
+      "answer": 0,
+      "explanation": "Před samohláskou *n’*. Určitý člen *le* zůstává."
+    },
+    {
+      "type": "input",
+      "question": "Dej do záporu: Je suis tchèque.",
+      "answers": [
+        "je ne suis pas tchèque",
+        "je ne suis pas tcheque"
+      ],
+      "explanation": "Sloveso *suis* obalím: *Je ne suis pas tchèque.* (Nejsem Čech.)",
+      "hints": [
+        "Najdi sloveso a obal ho dvěma slovíčky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *J’ai un frère.*",
+      "options": [
+        "Je n’ai pas de frère.",
+        "Je n’ai pas un frère.",
+        "Je ne ai pas de frère."
+      ],
+      "answer": 0,
+      "explanation": "*un* se po záporu změní na *de* a *je* před *ai* na *n’*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Ce n’est pas un chat.* je chyba, mělo by být *pas de chat*.",
+      "answer": false,
+      "explanation": "Po slovese *être* se člen v záporu nemění: *Ce n’est pas un chat.*"
+    },
+    {
+      "type": "input",
+      "question": "Doplň člen: Il n’y a pas ___ pain. (Není tu chleba.)",
+      "answers": [
+        "de"
+      ],
+      "explanation": "Po záporu je *de*: *pas de pain*.",
+      "hints": [
+        "Jak se mění člen po záporu?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu „Nemám hlad.“",
+      "items": [
+        "Je",
+        "n’ai",
+        "pas",
+        "faim."
+      ],
+      "explanation": "*ne* (zkrácené *n’*) + sloveso + *pas*."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *J’aime danser.*",
+      "options": [
+        "Je n’aime pas danser.",
+        "Je aime pas danser.",
+        "Je n’aime danser pas."
+      ],
+      "answer": 0,
+      "explanation": "Zápor obalí první, časované sloveso *aime*."
+    },
+    {
+      "type": "truefalse",
+      "question": "V hovorové francouzštině se často vynechává *ne*, ale *pas* zůstává.",
+      "answer": true,
+      "explanation": "Například *Je sais pas.* V psaní ale používej obě části."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *Elle a des amis.*",
+      "options": [
+        "Elle n’a pas d’amis.",
+        "Elle n’a pas des amis.",
+        "Elle n’a pas de amis."
+      ],
+      "answer": 0,
+      "explanation": "*des* → *de*, a před samohláskou *d’*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj kladnou větu se záporem.",
+      "pairs": [
+        [
+          "Je suis là.",
+          "Je ne suis pas là."
+        ],
+        [
+          "Tu as un chat.",
+          "Tu n’as pas de chat."
+        ],
+        [
+          "Il aime la pizza.",
+          "Il n’aime pas la pizza."
+        ],
+        [
+          "Ils regardent la télé.",
+          "Ils ne regardent pas la télé."
+        ]
+      ],
+      "explanation": "*ne … pas* kolem slovesa, *un → de*, *le/la* zůstává."
+    },
+    {
+      "type": "input",
+      "question": "Které slovo stojí ve francouzském záporu ZA slovesem?",
+      "answers": [
+        "pas"
+      ],
+      "explanation": "*ne* stojí před slovesem, *pas* za ním."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Vous ne parlez pas anglais.",
+        "Vous parlez ne pas anglais.",
+        "Vous ne pas parlez anglais."
+      ],
+      "answer": 0,
+      "explanation": "Sendvič: *ne* + sloveso + *pas*."
+    },
+    {
+      "type": "open",
+      "question": "Jak se ve francouzštině tvoří zápor? Uveď příklad.",
+      "answer": "Sloveso obalím slovíčky *ne* a *pas*: *ne* před slovesem, *pas* za ním. Před samohláskou je *n’*: *Je ne parle pas. Je n’aime pas le lait.*"
+    },
+    {
+      "type": "open",
+      "question": "Co se stane s *un, une, des* po záporu? Uveď příklad i výjimku.",
+      "answer": "Změní se na *de* (před samohláskou *d’*): *J’ai un chien → Je n’ai pas de chien.* Výjimka je sloveso *être*: *C’est un chat → Ce n’est pas un chat.* Určité členy *le, la, les* se nemění."
+    }
+  ]
+}

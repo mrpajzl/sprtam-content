@@ -1,0 +1,601 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pridavna-jmena",
+  "title": "Přídavná jména – rod, číslo a postavení",
+  "emoji": "🎨",
+  "explanations": [
+    {
+      "title": "Pravidla krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky říkáš *velký* pes, *velká* kočka, *velké* auto. Slovo „velký“ se přizpůsobí podstatnému jménu. Francouzská přídavná jména dělají totéž. A navíc mají svoje místo ve větě: většinou stojí **za** podstatným jménem."
+        },
+        {
+          "type": "text",
+          "text": "Díky přídavným jménům popíšeš kamaráda, svůj pokoj nebo oblečení: *un chat noir* (černá kočka), *une petite maison* (malý dům)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které říká, jaký kdo nebo co je.",
+          "example": "*grand* (velký), *rouge* (červený), *content* (spokojený)"
+        },
+        {
+          "type": "term",
+          "term": "Shoda",
+          "definition": "Přídavné jméno se řídí podstatným jménem: má stejný rod a číslo. Připomenutí: rod je mužský nebo ženský, číslo jednotné nebo množné.",
+          "example": "*un petit chat* × *une petite souris* (malá myš)"
+        },
+        {
+          "type": "term",
+          "term": "Postavení",
+          "definition": "Místo ve větě: před podstatným jménem, nebo za ním.",
+          "example": "*une voiture rouge* (za), *une petite voiture* (před)"
+        },
+        {
+          "type": "heading",
+          "text": "Krok 1: ženský rod = + e"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Mužský rod",
+            "Ženský rod",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "grand",
+              "grande",
+              "velký / velká"
+            ],
+            [
+              "petit",
+              "petite",
+              "malý / malá"
+            ],
+            [
+              "noir",
+              "noire",
+              "černý / černá"
+            ],
+            [
+              "joli",
+              "jolie",
+              "hezký / hezká"
+            ],
+            [
+              "rouge",
+              "rouge",
+              "červený / červená (už má -e, nic se nepřidá)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Někdy *-e* změní výslovnost: *grand* „grã“ → *grande* „grãd“, *petit* „pəti“ → *petite* „pətit“. Někdy ne: *noir* i *noire* zní „nwar“."
+        },
+        {
+          "type": "heading",
+          "text": "Krok 2: nepravidelný ženský rod"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Mužský rod",
+            "Ženský rod",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "blanc",
+              "blanche",
+              "bílý"
+            ],
+            [
+              "bon",
+              "bonne",
+              "dobrý"
+            ],
+            [
+              "gros",
+              "grosse",
+              "tlustý"
+            ],
+            [
+              "heureux",
+              "heureuse",
+              "šťastný"
+            ],
+            [
+              "sportif",
+              "sportive",
+              "sportovní"
+            ],
+            [
+              "beau",
+              "belle",
+              "krásný"
+            ],
+            [
+              "nouveau",
+              "nouvelle",
+              "nový"
+            ],
+            [
+              "vieux",
+              "vieille",
+              "starý"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Krok 3: množné číslo = + s"
+        },
+        {
+          "type": "text",
+          "text": "Do množného čísla přidáš **-s** (nečte se): *petit → petits*, *petite → petites*. Končí-li slovo už na *-s* nebo *-x*, nic nepřidáš: *gris → gris* (šedý), *heureux → heureux*. Slova na *-eau* dostanou *-x*: *beau → beaux*, *nouveau → nouveaux*."
+        },
+        {
+          "type": "text",
+          "text": "Ve smíšené skupině (kluci i holky) se použije **mužský** tvar: *Paul et Marie sont contents.*"
+        },
+        {
+          "type": "heading",
+          "text": "Krok 4: kam přídavné jméno dát"
+        },
+        {
+          "type": "text",
+          "text": "**Většina** přídavných jmen stojí **za** podstatným jménem: barvy (*un chat noir*), národnosti (*un garçon français*) i dlouhá slova (*un livre intéressant*)."
+        },
+        {
+          "type": "text",
+          "text": "Jen několik krátkých a častých stojí **před** ním: *petit, grand, beau, joli, bon, mauvais* (špatný), *jeune* (mladý), *vieux, nouveau, gros*. Pomůcka: krása, věk, dobrota a velikost jdou dopředu. *une belle maison, un bon ami, un nouveau vélo.*"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "une maison",
+                "after": "",
+                "options": [
+                  "blanche",
+                  "blanc",
+                  "blancs"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "des chats",
+                "after": "",
+                "options": [
+                  "noirs",
+                  "noir",
+                  "noires"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "une",
+                "after": "fille",
+                "options": [
+                  "petite",
+                  "petit",
+                  "petites"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle est très",
+                "after": ".",
+                "options": [
+                  "belle",
+                  "beau",
+                  "beaux"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils sont",
+                "after": ".",
+                "options": [
+                  "contents",
+                  "contentes",
+                  "content"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: malé červené auto (*la voiture* = auto, ženský rod).",
+          "answer": "*petit* je krátké a časté → jde **před**: *petite* (ženský rod). *rouge* je barva → jde **za**, už končí na *-e*. **une petite voiture rouge**"
+        },
+        {
+          "type": "example",
+          "question": "Dej do množného čísla: *le nouveau livre intéressant* (ta nová zajímavá kniha).",
+          "answer": "*le* → *les*. *nouveau* (na -eau) → *nouveaux*. *livre* → *livres*. *intéressant* → *intéressants*. **les nouveaux livres intéressants** – každé slovo dostalo znak množného čísla, i když se většinou nečte."
+        },
+        {
+          "type": "mistake",
+          "wrong": "une voiture petite",
+          "right": "une petite voiture",
+          "why": "*petit* patří mezi krátká přídavná jména, která stojí **před** podstatným jménem."
+        },
+        {
+          "type": "summary",
+          "text": "Přídavné jméno se shoduje v rodě (+e) a čísle (+s). Většina stojí **za** podstatným jménem, krátká *petit, grand, beau, bon, jeune, vieux, nouveau…* **před** ním."
+        }
+      ]
+    },
+    {
+      "title": "Popis kamarádů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Léa posílá babičce fotky ze školního výletu a popisuje na nich kamarády. Z jejích popisek zjistíš, jak se francouzské přídavné jméno mění podle toho, koho popisuje, a kam ve větě patří."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přídavné jméno",
+          "definition": "Slovo, které popisuje, jaký kdo nebo co je.",
+          "example": "*grand* (vysoký, velký), *sympa* (milý)"
+        },
+        {
+          "type": "term",
+          "term": "Rod a číslo",
+          "definition": "Rod: mužský / ženský. Číslo: jeden / víc. Přídavné jméno si oboje „půjčí“ od podstatného jména.",
+          "example": "*un garçon grand*, *une fille grande*, *des filles grandes*"
+        },
+        {
+          "type": "term",
+          "term": "Koncovka",
+          "definition": "Kousek na konci slova, který se mění.",
+          "example": "*grand* + **e** = *grande*"
+        },
+        {
+          "type": "heading",
+          "text": "Léiny popisky"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "👦",
+            "👧",
+            "👫",
+            "👭"
+          ],
+          "caption": "Tom, Emma, Hugo s Chloé a dvojčata Zoé a Lou"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Popiska",
+            "Česky",
+            "Co se stalo"
+          ],
+          "rows": [
+            [
+              "Tom est grand et sportif.",
+              "Tom je vysoký a sportovní.",
+              "mužský rod, jednotné č. – základní tvar"
+            ],
+            [
+              "Emma est grande et sportive.",
+              "Emma je vysoká a sportovní.",
+              "ženský rod: + e, sportif → sportive"
+            ],
+            [
+              "Hugo et Chloé sont contents.",
+              "Hugo a Chloé jsou spokojení.",
+              "smíšená skupina → mužský tvar + s"
+            ],
+            [
+              "Zoé et Lou sont petites et blondes.",
+              "Zoé a Lou jsou malé a blonďaté.",
+              "ženský rod, množné č.: + e + s"
+            ],
+            [
+              "C’est une jolie photo !",
+              "To je hezká fotka!",
+              "joli → jolie, stojí před podstatným jménem"
+            ],
+            [
+              "Nous avons un professeur sympa.",
+              "Máme milého učitele.",
+              "sympa stojí za podstatným jménem"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Recept na správný tvar"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti, koho popisuješ: kluk, holka, víc lidí?",
+            "Ženský rod? Přidej *-e* (pokud tam už není). Pozor na nepravidelné: *blanc → blanche, beau → belle*.",
+            "Víc lidí nebo věcí? Přidej *-s* (pokud slovo nekončí na *-s* nebo *-x*).",
+            "Rozhodni o místě: barva, národnost, dlouhé slovo → **za**. *petit, grand, beau, joli, bon, jeune, vieux, nouveau* → **před**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď přídavná jména: stojí obvykle před podstatným jménem, nebo za ním?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "před (une ___ maison)",
+              "za (une maison ___)"
+            ],
+            "items": [
+              {
+                "text": "petite",
+                "group": 0
+              },
+              {
+                "text": "belle",
+                "group": 0
+              },
+              {
+                "text": "grande",
+                "group": 0
+              },
+              {
+                "text": "vieille",
+                "group": 0
+              },
+              {
+                "text": "jolie",
+                "group": 0
+              },
+              {
+                "text": "rouge",
+                "group": 1
+              },
+              {
+                "text": "moderne",
+                "group": 1
+              },
+              {
+                "text": "française",
+                "group": 1
+              },
+              {
+                "text": "blanche",
+                "group": 1
+              },
+              {
+                "text": "intéressante",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Popiš kočku: *une chatte* (kočka), malá a černá.",
+          "answer": "*chatte* je ženský rod → *petite*, *noire*. *petite* jde před, barva *noire* za. **une petite chatte noire**"
+        },
+        {
+          "type": "example",
+          "question": "Popiš dva staré pány: *deux messieurs*, starý = *vieux*.",
+          "answer": "*vieux* končí na *-x*, v množném čísle se nemění. Stojí před podstatným jménem. **deux vieux messieurs**. Kdyby to byly dvě staré paní: *deux vieilles dames*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Emma est grand.",
+          "right": "Emma est grande.",
+          "why": "Emma je dívka, přídavné jméno musí být v ženském rodě. Česky taky neřekneš „Emma je velký“."
+        },
+        {
+          "type": "mistake",
+          "wrong": "un chat noire",
+          "right": "un chat noir",
+          "why": "*chat* je mužský rod, takže bez *-e*."
+        },
+        {
+          "type": "summary",
+          "text": "Přídavné jméno se řídí podstatným jménem: holka +e, víc +s, smíšená skupina mužský tvar. Barvy a většina slov stojí za, krátká *petit, grand, beau, joli, bon, vieux, jeune, nouveau* před."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "une maison ___ (bílý dům)",
+      "options": [
+        "blanche",
+        "blanc",
+        "blanchee"
+      ],
+      "answer": 0,
+      "explanation": "*blanc* má nepravidelný ženský tvar *blanche*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň ženský tvar: Marie est ___ (petit).",
+      "answers": [
+        "petite"
+      ],
+      "explanation": "Ženský rod: + *e*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Les filles sont ___ (grand).",
+      "answers": [
+        "grandes"
+      ],
+      "explanation": "Ženský rod a množné číslo: + *e* + *s*.",
+      "hints": [
+        "Kolik je dívek a jakého jsou rodu?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které spojení je správně?",
+      "options": [
+        "un chat noir",
+        "un noir chat",
+        "un chat noire"
+      ],
+      "answer": 0,
+      "explanation": "Barva stojí za podstatným jménem a *chat* je mužský rod."
+    },
+    {
+      "type": "choice",
+      "question": "Které spojení je správně?",
+      "options": [
+        "une petite maison",
+        "une maison petite",
+        "une petit maison"
+      ],
+      "answer": 0,
+      "explanation": "*petit* stojí před podstatným jménem a má tvar *petite*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve skupině kluků a holek se použije mužský tvar přídavného jména.",
+      "answer": true,
+      "explanation": "*Paul et Marie sont contents.*"
+    },
+    {
+      "type": "choice",
+      "question": "Ženský tvar od *beau*:",
+      "options": [
+        "belle",
+        "beaue",
+        "bele"
+      ],
+      "answer": 0,
+      "explanation": "*beau → belle* je nepravidelný tvar."
+    },
+    {
+      "type": "match",
+      "question": "Spoj mužský a ženský tvar.",
+      "pairs": [
+        [
+          "bon",
+          "bonne"
+        ],
+        [
+          "heureux",
+          "heureuse"
+        ],
+        [
+          "sportif",
+          "sportive"
+        ],
+        [
+          "nouveau",
+          "nouvelle"
+        ],
+        [
+          "vieux",
+          "vieille"
+        ]
+      ],
+      "explanation": "Tyhle ženské tvary jsou nepravidelné, uč se je nazpaměť."
+    },
+    {
+      "type": "choice",
+      "question": "Množné číslo od *le beau jardin* (ta krásná zahrada):",
+      "options": [
+        "les beaux jardins",
+        "les beaus jardins",
+        "les belles jardins"
+      ],
+      "answer": 0,
+      "explanation": "Na *-eau* se přidává *-x*: *beaux*. *jardin* je mužský rod."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přídavné jméno *rouge* má v ženském rodě tvar *rougee*.",
+      "answer": false,
+      "explanation": "Končí-li slovo už na *-e*, v ženském rodě se nic nepřidává: *une robe rouge*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „malé modré auto“",
+      "items": [
+        "une",
+        "petite",
+        "voiture",
+        "bleue"
+      ],
+      "explanation": "*petite* před podstatným jménem, barva *bleue* za ním."
+    },
+    {
+      "type": "input",
+      "question": "Doplň správný tvar slova *français*: une fille ___ (francouzská dívka)",
+      "answers": [
+        "française",
+        "francaise"
+      ],
+      "explanation": "Ženský rod: *français + e = française*. Národnost stojí za podstatným jménem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově *gris* (šedý) se v množném čísle přidá *-s*.",
+      "answer": false,
+      "explanation": "Slovo už končí na *-s*, takže *des chats gris*."
+    },
+    {
+      "type": "choice",
+      "question": "Emma ___ . (Emma je šťastná.)",
+      "options": [
+        "est heureuse",
+        "est heureux",
+        "est heureuses"
+      ],
+      "answer": 0,
+      "explanation": "Jedna dívka: ženský rod, jednotné číslo."
+    },
+    {
+      "type": "open",
+      "question": "Kam se ve francouzštině dávají přídavná jména? Uveď příklady.",
+      "answer": "Většina stojí za podstatným jménem, hlavně barvy a národnosti: *un chat noir, un garçon français*. Krátká častá slova jako *petit, grand, beau, bon, jeune, vieux, nouveau* stojí před ním: *une petite maison*."
+    },
+    {
+      "type": "open",
+      "question": "Popiš francouzsky svého kamaráda nebo kamarádku dvěma přídavnými jmény.",
+      "answer": "Mon ami Tom est grand et sportif. / Mon amie Klára est petite et blonde. (U dívky přidám *-e*.)"
+    }
+  ]
+}
