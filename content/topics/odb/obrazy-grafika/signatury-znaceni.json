@@ -1,0 +1,392 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "signatury-znaceni",
+  "title": "Signatury, monogramy a značení grafiky",
+  "emoji": "✍️",
+  "explanations": [
+    {
+      "title": "Co je napsáno pod obrazem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pod moderní grafikou je tužkou napsáno: vlevo „12/50“, uprostřed název, vpravo podpis. Pod starou rytinou je v desce vytištěno „W. Hollar fecit“. Každý z těch nápisů něco znamená a často rozhoduje o ceně."
+        },
+        {
+          "type": "text",
+          "text": "Starožitník musí umět tyto nápisy přečíst, ověřit a nenechat se jimi oklamat. Podpis je totiž to nejsnadnější, co se dá padělat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Signatura",
+          "definition": "Podpis autora na díle. Na obraze bývá štětcem v rohu, na moderní grafice tužkou pod obrazem vpravo.",
+          "example": "„M. Švabinský“ tužkou pod leptem."
+        },
+        {
+          "type": "term",
+          "term": "Monogram",
+          "definition": "Zkrácený podpis z počátečních písmen jména, často spojených do jednoho znaku.",
+          "example": "Velké A a v něm D – monogram Albrechta Dürera."
+        },
+        {
+          "type": "term",
+          "term": "Signatura v desce",
+          "definition": "Podpis, který umělec udělal přímo do matrice (desky). Tiskne se se všemi listy, takže není ruční a nic o konkrétním listu neříká.",
+          "example": "Monogram vyrytý v rohu dřevořezu."
+        },
+        {
+          "type": "term",
+          "term": "Náklad a číslování",
+          "definition": "**Náklad** je počet listů vytištěných z jedné matrice. Číslování ve tvaru „12/50“ znamená dvanáctý list z padesáti.",
+          "example": "„3/30“ tužkou vlevo pod obrazem."
+        },
+        {
+          "type": "term",
+          "term": "Épreuve d’artiste",
+          "definition": "Francouzsky „autorský tisk“, značí se **E.A.**, **P.A.** nebo **A.P.** Listy mimo číslovaný náklad, které si umělec ponechal. Bývá jich málo.",
+          "example": "„E.A.“ místo čísla vlevo pod grafikou."
+        },
+        {
+          "type": "heading",
+          "text": "Kde co bývá na moderní grafice"
+        },
+        {
+          "type": "table",
+          "head": [
+            "místo pod obrazem",
+            "co tam bývá"
+          ],
+          "rows": [
+            [
+              "vlevo",
+              "číslo listu a nákladu (12/50) nebo E.A."
+            ],
+            [
+              "uprostřed",
+              "název díla, někdy technika"
+            ],
+            [
+              "vpravo",
+              "podpis autora, někdy rok"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ruční podpis a číslo tužkou se u grafiky běžně rozšířily až koncem 19. a ve 20. století. Starší listy bývají signované jen v desce."
+        },
+        {
+          "type": "heading",
+          "text": "Latinské zkratky na starých listech"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "pinx. (pinxit)",
+                "back": "namaloval – autor předlohy, obrazu"
+              },
+              {
+                "front": "del. (delineavit)",
+                "back": "nakreslil – autor kresby"
+              },
+              {
+                "front": "sc. / sculp. (sculpsit)",
+                "back": "vyryl – rytec desky"
+              },
+              {
+                "front": "fec. (fecit)",
+                "back": "udělal – autor grafiky"
+              },
+              {
+                "front": "inv. (invenit)",
+                "back": "vymyslel – autor návrhu"
+              },
+              {
+                "front": "exc. (excudit)",
+                "back": "vydal – nakladatel"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky. Na jednom listu může být několik jmen: kdo obraz namaloval, kdo ho přenesl do mědi a kdo list vydal."
+        },
+        {
+          "type": "example",
+          "question": "Pod mědirytem je vlevo „Rubens pinx.“ a vpravo „Vorsterman sculp.“ Kdo list vytvořil?",
+          "answer": "„pinx.“ = namaloval: **Rubens** je autor předlohy, obrazu. „sculp.“ = vyryl: **Vorsterman** vyryl desku. Grafiku tedy udělal Vorsterman podle Rubensova obrazu – je to **reprodukční rytina**."
+        },
+        {
+          "type": "example",
+          "question": "Pod leptem je tužkou vlevo „E.A.“, vpravo podpis. Co znamená E.A.?",
+          "answer": "**Épreuve d’artiste** – autorský tisk mimo číslovaný náklad. Je stejně originální jako číslované listy."
+        },
+        {
+          "type": "summary",
+          "text": "Signatura je podpis, monogram zkratka z iniciál. Na moderní grafice: vlevo číslo (12/50) nebo E.A., uprostřed název, vpravo podpis tužkou. Na starých listech latinské zkratky říkají, kdo maloval, ryl a vydal."
+        }
+      ]
+    },
+    {
+      "title": "Ověř, nevěř",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na obraze z bazaru stojí v rohu „J. Mánes“. Je to zázrak, nebo podvod? Podpis sám o sobě nic nedokazuje. Napsat ho dokáže kdokoli. Starožitník proto podpis vždy **ověřuje** spolu s celým dílem."
+        },
+        {
+          "type": "text",
+          "text": "Ukážeme si, jak se ověřuje signatura obrazu a značení grafiky a jaké zkratky na listech potkáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Signatura",
+          "definition": "Podpis autora. Může být ruční (štětcem, tužkou) nebo v desce (vytištěný s celým nákladem).",
+          "example": "Podpis štětcem v pravém dolním rohu obrazu."
+        },
+        {
+          "type": "term",
+          "term": "Soupis díla",
+          "definition": "Odborný katalog všech známých děl jednoho umělce s popisem, rozměry, technikou a náklady. Mezinárodně se mu říká *catalogue raisonné*.",
+          "example": "Soupis grafického díla Václava Hollara."
+        },
+        {
+          "type": "term",
+          "term": "Dotisk",
+          "definition": "Pozdější tisk z původní matrice, často po smrti umělce, bez jeho dohledu a podpisu. Má menší cenu než tisky za života autora.",
+          "example": "Pozdní dotisky starých měděných desek v 19. století."
+        },
+        {
+          "type": "term",
+          "term": "H.C. a B.A.T.",
+          "definition": "**H.C.** (hors commerce) = list mimo prodej, např. pro výstavy. **B.A.T.** (bon à tirer) = schválený vzorový tisk, podle kterého tiskař tiskne náklad.",
+          "example": "„H.C.“ tužkou vlevo pod obrazem."
+        },
+        {
+          "type": "heading",
+          "text": "Jak ověřit signaturu obrazu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je podpis **v barvě obrazu**, nebo leží **na laku**? Pozdější podpis bývá navrchu.",
+            "Jdou **praskliny** (craquelure) i přes podpis? Pokud podpis praskliny vyplňuje nebo přeskakuje, je mladší.",
+            "Pod **UV lampou**: mladší podpis na starém laku vypadá jako tmavý nápis.",
+            "**Porovnej** podpis s ověřenými díly a soupisem díla.",
+            "Sedí ke jménu **styl, technika, materiál a doba**?"
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "v pořádku",
+              "podezřelé"
+            ],
+            "items": [
+              {
+                "text": "praskliny přecházejí i přes podpis",
+                "group": 0
+              },
+              {
+                "text": "podpis je pod UV tmavý na svítícím laku",
+                "group": 1
+              },
+              {
+                "text": "číslo 12/50 tužkou na listu z roku 1960",
+                "group": 0
+              },
+              {
+                "text": "číslo 12/50 tužkou na rytině ze 17. století",
+                "group": 1
+              },
+              {
+                "text": "list je v soupisu díla se stejným nákladem",
+                "group": 0
+              },
+              {
+                "text": "náklad na listu je větší, než uvádí soupis",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď znaky. U grafiky ze 17. století se ruční číslování tužkou ještě nedělalo."
+        },
+        {
+          "type": "example",
+          "question": "Obraz krajiny z 19. století je celý pokrytý jemnou krakeláží, ale podpis v rohu je hladký, bez prasklin, a pod UV lampou je tmavý. Co z toho plyne?",
+          "answer": "Hladký podpis bez prasklin na popraskané malbě a tmavý pod UV = podpis byl **přidán později na lak**. Signatura je **podezřelá**, obraz nelze prodávat pod tímto jménem bez znaleckého ověření."
+        },
+        {
+          "type": "example",
+          "question": "Lept je podepsaný tužkou, číslovaný 45/100, ale soupis díla uvádí u tohoto listu náklad jen 30 kusů. Co uděláš?",
+          "answer": "Číslo převyšuje známý náklad. Může jít o **padělek** nebo pozdější **dotisk** s falešným značením. List neprodávej jako originál, dokud ho neověří znalec."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Podpis v desce znamená, že list umělec osobně podepsal.",
+          "right": "Podpis v desce je součástí matrice a vytiskne se na každém listu i na dotiscích. Ruční podpis je tužkou nebo inkoustem na konkrétním listu.",
+          "why": "Podpis v desce říká, kdo matrici vytvořil, ne kdo a kdy tiskl konkrétní list."
+        },
+        {
+          "type": "summary",
+          "text": "Podpis nikdy neber jako důkaz. U obrazu ověř, jestli je v barvě, pod prasklinami a pod UV v pořádku. U grafiky porovnej číslování a značky (E.A., H.C., B.A.T.) se soupisem díla a pamatuj na dotisky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená „12/50“ pod grafikou?",
+      "options": [
+        "dvanáctý list z nákladu padesáti",
+        "12. prosinec 1950",
+        "cena 12 až 50 Kč",
+        "12 barev z 50"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje zkrácený podpis z počátečních písmen jména?",
+      "answers": [
+        "monogram",
+        "monogramem"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka E.A.?",
+      "options": [
+        "autorský tisk mimo číslovaný náklad",
+        "list mimo prodej",
+        "schválený vzorový tisk",
+        "dotisk po smrti autora"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj latinskou zkratku s významem.",
+      "pairs": [
+        [
+          "pinx.",
+          "namaloval"
+        ],
+        [
+          "sculp.",
+          "vyryl"
+        ],
+        [
+          "del.",
+          "nakreslil"
+        ],
+        [
+          "exc.",
+          "vydal"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podpis v desce dokazuje, že umělec konkrétní list osobně podepsal.",
+      "answer": false
+    },
+    {
+      "type": "choice",
+      "question": "Kde na moderní grafice obvykle bývá podpis autora?",
+      "options": [
+        "tužkou vpravo pod obrazem",
+        "vlevo pod obrazem",
+        "na rubu",
+        "uprostřed obrazu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se česky jmenuje odborný katalog všech děl umělce (dvě slova)?",
+      "answers": [
+        "soupis díla",
+        "soupis dila",
+        "soupisný katalog"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Praskliny, které přecházejí i přes podpis, svědčí o tom, že podpis je stejně starý jako malba.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co je dotisk?",
+      "options": [
+        "pozdější tisk z původní matrice bez dohledu autora",
+        "první zkusmý tisk",
+        "reprodukce ofsetem",
+        "list mimo prodej"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Rytina ze 17. století s ručním číslováním tužkou 12/50 je…",
+      "options": [
+        "podezřelá",
+        "zcela běžná",
+        "důkazem pravosti",
+        "známkou vysoké ceny"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kdy se rozšířilo ruční číslování a podepisování tužkou?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená H.C.?",
+      "options": [
+        "mimo prodej (hors commerce)",
+        "autorský tisk",
+        "schválený vzorový tisk",
+        "ručně kolorováno"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak ověříš signaturu na olejomalbě?",
+      "answer": "Zjistím, zda je podpis v barvě, nebo až na laku, zda přes něj přecházejí praskliny, jak vypadá pod UV lampou, porovnám ho s ověřenými díly a soupisem a posoudím, zda ke jménu sedí styl, technika a doba."
+    },
+    {
+      "type": "open",
+      "question": "Co všechno může být napsáno pod moderní grafikou a co to znamená?",
+      "answer": "Vlevo číslo listu a nákladu (např. 12/50) nebo označení E.A., H.C. či B.A.T., uprostřed název, vpravo ruční podpis autora tužkou, případně rok."
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "original-reprodukce",
+  "title": "Originál, nebo reprodukce?",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Pod lupou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Z dálky vypadá plakát na stěně úplně stejně jako originální litografie za desítky tisíc korun. Rozdíl uvidíš až zblízka, s lupou v ruce. Tohle je nejčastější a nejdůležitější úkol starožitníka u obrazů a grafiky."
+        },
+        {
+          "type": "text",
+          "text": "Kdo si splete reprodukci s originálem, může zákazníka nevědomky poškodit, nebo sám přijít o peníze. Naučíš se, na co se dívat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Originální grafika",
+          "definition": "List, který umělec sám vytvořil v matrici (desce, kameni, sítu) a který se z ní tiskl ručně, jím nebo pod jeho dohledem.",
+          "example": "Lept vytištěný z měděné desky, kterou leptal sám umělec."
+        },
+        {
+          "type": "term",
+          "term": "Reprodukce",
+          "definition": "Strojová kopie díla, nejčastěji z fotografie. Umělec ji nevytvořil v matrici, jen se tiskne jeho obraz.",
+          "example": "Ofsetový plakát Muchy z obchodu se suvenýry."
+        },
+        {
+          "type": "term",
+          "term": "Rastr",
+          "definition": "Pravidelná síť drobných teček, ze kterých tiskárna skládá obraz. U barevného tisku tvoří tečky azurové, purpurové, žluté a černé barvy drobné **růžice**.",
+          "example": "Lupa ukáže v novinové fotce tečky."
+        },
+        {
+          "type": "term",
+          "term": "Lupa 10×",
+          "definition": "Zvětšovací sklo, které zvětší desetkrát. Základní nástroj na určení techniky tisku.",
+          "example": "Hodinářská nebo klenotnická lupa."
+        },
+        {
+          "type": "heading",
+          "text": "Co uvidíš lupou"
+        },
+        {
+          "type": "text",
+          "text": "Připomenutí: **tisk z hloubky** (lept, mědiryt) tiskne barvu z rýh v kovové desce, **litografie** z rovného kamene, **sítotisk** protlačí barvu sítem."
+        },
+        {
+          "type": "table",
+          "head": [
+            "co vidíš",
+            "co to je"
+          ],
+          "rows": [
+            [
+              "pravidelné tečky v řadách nebo růžicích",
+              "ofsetová nebo jiná rastrová reprodukce"
+            ],
+            [
+              "drobné nepravidelné barevné tečky jako mlha",
+              "digitální tisk (inkoustová tiskárna)"
+            ],
+            [
+              "souvislé čáry s barvou v reliéfu",
+              "tisk z hloubky (lept, mědiryt)"
+            ],
+            [
+              "nepravidelné zrno jako křída",
+              "litografie"
+            ],
+            [
+              "silná vrstva barvy s ostrými okraji",
+              "sítotisk"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "spíš originál",
+              "spíš reprodukce"
+            ],
+            "items": [
+              {
+                "text": "pravidelné růžice teček",
+                "group": 1
+              },
+              {
+                "text": "barva v čáře je hmatatelně vystouplá",
+                "group": 0
+              },
+              {
+                "text": "nepravidelné křídové zrno",
+                "group": 0
+              },
+              {
+                "text": "jemná barevná mlha teček",
+                "group": 1
+              },
+              {
+                "text": "tahy štětce s reliéfem i v detailech",
+                "group": 0
+              },
+              {
+                "text": "papír pod UV svítí jasně modře, list je prý z roku 1890",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď znaky. Poslední kartička: jasně modře pod UV svítí papíry s optickým zjasňovačem, které se rozšířily až ve 20. století."
+        },
+        {
+          "type": "heading",
+          "text": "Obraz na plátně"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Originální olejomalba má **reliéf** tahů, který odpovídá barvám: kde je hustá barva, je i hrubý tah.",
+            "**Oleografie** (19. století) je barevná litografie napodobující olejomalbu; strukturu plátna a tahů má vylisovanou a pravidelnou.",
+            "Moderní tisk na plátno bývá lupou rastrový nebo „mlhavý“; někdy je přetřený gelem, aby měl tahy. Ty pak nesedí na barvy."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Lupou na „olejomalbě“ vidíš pod lesklými tahy pravidelné barevné tečky. Co to je?",
+          "answer": "Pravidelné tečky pod tahy = **rastrový tisk** na plátně, přetřený gelem nebo lakem, aby vypadal jako malba. Je to **reprodukce**."
+        },
+        {
+          "type": "example",
+          "question": "Grafika má barvu v čarách hmatatelně vystouplou, vmáčknutý otisk okraje desky a nepravidelné čáry. Lupou nevidíš rastr. Jak ji hodnotíš?",
+          "answer": "Vystouplá barva, otisk okraje desky a souvislé čáry bez rastru odpovídají **tisku z hloubky**. Jde nejspíš o **originální grafiku**. Dál ověř papír, signaturu a soupis díla."
+        },
+        {
+          "type": "summary",
+          "text": "Lupou hledej rastr (reprodukce), mlhu teček (digitální tisk), nebo souvislou čáru, zrno a reliéf barvy (originální grafika). U pláten kontroluj, jestli reliéf tahů sedí na barvy."
+        }
+      ]
+    },
+    {
+      "title": "Postup prohlídky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zákazník přinese zarámovaný list a tvrdí, že je to originál od známého umělce. Kde začít? Tady je postup, který můžeš opakovat u každého obrazu a grafiky. Od nejjednoduššího pohledu po lupu a UV lampu."
+        },
+        {
+          "type": "text",
+          "text": "Nikdy nerozhoduj podle jediného znaku. Rozhoduje součet všech."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Originál",
+          "definition": "Dílo vytvořené umělcem: namalovaný obraz nebo grafický list tištěný z matrice (desky), kterou umělec sám udělal.",
+          "example": "Lept Václava Hollara tištěný z jeho desky."
+        },
+        {
+          "type": "term",
+          "term": "Reprodukce",
+          "definition": "Strojová, nejčastěji fotografická kopie díla. Tiskárna ji skládá z rastru – pravidelných teček.",
+          "example": "Plakát z obchodu s pohledy."
+        },
+        {
+          "type": "term",
+          "term": "Fotogravura",
+          "definition": "Také heliogravura. Reprodukce z 19. a 20. století vyrobená fotografickou cestou jako tisk z hloubky. Má plotnovou stopu a jemné nepravidelné zrno, takže se snadno splete s originálem.",
+          "example": "Kvalitní knižní příloha s reprodukcí rytiny."
+        },
+        {
+          "type": "term",
+          "term": "Oleografie",
+          "definition": "Barevná litografie z 19. století, která napodobuje olejomalbu, často s vylisovanou strukturou plátna a tahů.",
+          "example": "Lakovaný obrázek svaté rodiny v rámu na selské zdi."
+        },
+        {
+          "type": "term",
+          "term": "Optický zjasňovač",
+          "definition": "Látka, která papír dělá bělejší. Pod UV lampou svítí jasně modrobíle. V papírech se běžně používá až zhruba od poloviny 20. století.",
+          "example": "Kancelářský papír pod UV lampou září."
+        },
+        {
+          "type": "heading",
+          "text": "Pět kroků"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Na dálku:** celkový dojem, okraje listu, stav, rám.",
+            "**Šikmé světlo:** reliéf barvy, plotnová stopa (vmáčknutý okraj desky), slepotisk, struktura plátna.",
+            "**Lupa 10×:** rastr, mlha teček, souvislá čára, zrno, tahy štětce.",
+            "**Papír:** stáří, ruční nebo strojový, vodoznak, okraje. Pod **UV lampou** zjasňovače a retuše.",
+            "**Doklady:** signatura, značení, soupis díla, původ (kdo list vlastnil)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Pravidelné tečky v růžicích",
+                "back": "ofsetová reprodukce"
+              },
+              {
+                "front": "Plotnová stopa a jemné nepravidelné zrno, ale žádné čáry",
+                "back": "pozor – může jít o fotogravuru"
+              },
+              {
+                "front": "Vylisovaná pravidelná struktura plátna na litografii",
+                "back": "oleografie"
+              },
+              {
+                "front": "Papír jasně svítí pod UV",
+                "back": "papír s optickým zjasňovačem, zhruba od poloviny 20. století"
+              },
+              {
+                "front": "Reliéf tahů nesedí na barvy",
+                "back": "tisk přetřený gelem"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky. Zkus u každé říct, kterým krokem postupu bys znak objevil."
+        },
+        {
+          "type": "example",
+          "question": "Rytina má plotnovou stopu a vypadá staře. Lupou ale nevidíš ostré rytecké čáry, jen jemné nepravidelné zrnko po celé ploše. Co zvážíš?",
+          "answer": "Plotnová stopa ukazuje tisk z hloubky, ale chybí ostrá čára rydla. Jemné zrno po celé ploše je typické pro **fotogravuru** – fotomechanickou reprodukci. List je nejspíš **reprodukce** rytiny."
+        },
+        {
+          "type": "example",
+          "question": "Obraz svaté rodiny je lesklý, má pravidelnou strukturu plátna i tahy, ale je na papíře nalepeném na kartonu. Vznikl asi kolem roku 1890. Co to je?",
+          "answer": "Barevný tisk napodobující olejomalbu s vylisovanou strukturou z 19. století = **oleografie**. Je to reprodukce, i když stará; cenu má jako dobový dekorativní předmět."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je to staré, takže je to originál.",
+          "right": "Reprodukce se vyráběly i v 19. století: oleografie, fotogravury, chromolitografie podle obrazů. Stáří a originalita jsou dvě různé otázky.",
+          "why": "Stará reprodukce je pořád reprodukce. Rozhoduje, jak list vznikl, ne kolik mu je."
+        },
+        {
+          "type": "summary",
+          "text": "Postupuj od pohledu na dálku přes šikmé světlo a lupu k papíru, UV a dokladům. Dej si pozor na staré reprodukce (oleografie, fotogravura) a nikdy nerozhoduj podle jediného znaku."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co pod lupou prozradí ofsetovou reprodukci?",
+      "options": [
+        "pravidelné tečky v růžicích",
+        "nepravidelné křídové zrno",
+        "vystouplá barva v čáře",
+        "tahy štětce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát zvětšuje základní lupa starožitníka? (číslo)",
+      "answers": [
+        "10"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Oleografie je originální olejomalba.",
+      "answer": false,
+      "explanation": "Je to barevná litografie napodobující olejomalbu."
+    },
+    {
+      "type": "choice",
+      "question": "Jak pod UV lampou vypadá papír s optickým zjasňovačem?",
+      "options": [
+        "svítí jasně modrobíle",
+        "je tmavě fialový",
+        "je úplně černý",
+        "svítí červeně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj znak s výsledkem.",
+      "pairs": [
+        [
+          "pravidelné růžice teček",
+          "ofsetová reprodukce"
+        ],
+        [
+          "barevná mlha drobných teček",
+          "digitální tisk"
+        ],
+        [
+          "souvislá čára s vystouplou barvou",
+          "tisk z hloubky"
+        ],
+        [
+          "nepravidelné křídové zrno",
+          "litografie"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jinak jmenuje fotogravura?",
+      "answers": [
+        "heliogravura",
+        "heliogravure"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky prohlídky.",
+      "items": [
+        "celkový pohled na dálku",
+        "šikmé světlo",
+        "lupa 10×",
+        "papír a UV lampa",
+        "doklady a soupis díla"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plotnová stopa sama o sobě dokazuje originál.",
+      "answer": false,
+      "explanation": "Má ji i fotogravura a dá se uměle vytlačit."
+    },
+    {
+      "type": "choice",
+      "question": "Na „olejomalbě“ pod lesklými tahy vidíš pravidelné tečky. Co to je?",
+      "options": [
+        "tisk na plátně přetřený gelem",
+        "originální olejomalba",
+        "akvarel",
+        "pastel"
+      ],
+      "answer": 0,
+      "hints": [
+        "Tečky v řadách dělá tiskárna, ne štětec."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co platí o stáří a originalitě?",
+      "options": [
+        "jsou to dvě různé otázky",
+        "co je staré, je originál",
+        "co je nové, je reprodukce",
+        "reprodukce v 19. století neexistovaly"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterým krokem nejlépe zjistíš reliéf barvy a plotnovou stopu?",
+      "options": [
+        "šikmým světlem",
+        "pohledem na dálku",
+        "vodoznakem",
+        "čtením signatury"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak postupuješ, když máš rozhodnout, jestli je grafika originál?",
+      "answer": "Prohlédnu ji na dálku, pak šikmým světlem (reliéf, plotnová stopa), lupou 10× (rastr, čára, zrno), zkontroluji papír a UV lampou zjasňovače. Nakonec ověřím signaturu, značení, soupis díla a původ. Rozhoduje součet znaků."
+    },
+    {
+      "type": "open",
+      "question": "Proč nestačí, že je list starý?",
+      "answer": "Reprodukce se vyráběly i v 19. století, např. oleografie, chromolitografie a fotogravury. Stáří neříká, jak list vznikl; originál je jen to, co umělec vytvořil v matrici nebo namaloval."
+    }
+  ]
+}
