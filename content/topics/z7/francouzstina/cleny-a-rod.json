@@ -1,0 +1,550 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cleny-a-rod",
+  "title": "Členy a rod podstatných jmen",
+  "emoji": "🎩",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky řekneš jen „pes“. Francouz skoro nikdy neřekne jen *chien*. Řekne *le chien* (ten pes) nebo *un chien* (nějaký pes). Před podstatným jménem stojí krátké slovíčko – **člen**."
+        },
+        {
+          "type": "text",
+          "text": "Člen ti navíc prozradí, jestli je slovo mužského, nebo ženského rodu a jestli je ho jeden, nebo víc. Bez členů zní francouzština jako rozbitá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podstatné jméno",
+          "definition": "Slovo, které pojmenovává osobu, zvíře, věc nebo místo.",
+          "example": "chlapec, pes, kniha, škola"
+        },
+        {
+          "type": "term",
+          "term": "Rod",
+          "definition": "Skupina, do které podstatné jméno patří. Francouzština má jen **dva** rody: mužský a ženský. Střední rod nemá.",
+          "example": "*le garçon* (chlapec) je mužský, *la fille* (dívka) ženský."
+        },
+        {
+          "type": "term",
+          "term": "Číslo",
+          "definition": "Jestli je věc jedna (jednotné číslo), nebo jich je víc (množné číslo).",
+          "example": "*le livre* (kniha) × *les livres* (knihy)"
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Krátké slovo před podstatným jménem. Určitý člen (*le, la, l’, les*) = ten konkrétní, známý. Neurčitý člen (*un, une, des*) = nějaký, jeden z mnoha. Angličtina má podobně *the* a *a*.",
+          "example": "*le chat* = ta kočka, *un chat* = nějaká kočka"
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka členů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "mužský rod",
+            "ženský rod",
+            "množné číslo (oba rody)"
+          ],
+          "rows": [
+            [
+              "určitý (ten)",
+              "le (l’)",
+              "la (l’)",
+              "les"
+            ],
+            [
+              "neurčitý (nějaký)",
+              "un",
+              "une",
+              "des"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "*le livre* (ta kniha), *la table* (ten stůl), *les livres* (ty knihy)",
+            "*un livre* (nějaká kniha), *une table* (nějaký stůl), *des livres* (nějaké knihy)",
+            "Před samohláskou a němým *h* se *le* i *la* zkrátí na **l’**: *l’ami* (přítel), *l’école* (škola), *l’hôtel* (hotel)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Rod se s češtinou neshoduje"
+        },
+        {
+          "type": "text",
+          "text": "Rod musíš znát u každého slova zvlášť. Často je jiný než v češtině:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Francouzsky",
+            "Rod ve francouzštině",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "le livre",
+              "mužský",
+              "kniha (ženský)"
+            ],
+            [
+              "la table",
+              "ženský",
+              "stůl (mužský)"
+            ],
+            [
+              "la voiture",
+              "ženský",
+              "auto (střední)"
+            ],
+            [
+              "le soleil",
+              "mužský",
+              "slunce (střední)"
+            ],
+            [
+              "la lune",
+              "ženský",
+              "měsíc (mužský)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pár nápověd: slova na **-tion** jsou ženská (*la station*, *la nation*), slova na **-ment** mužská (*le moment*, *l’appartement*). Ale nejjistější je učit se slovo rovnou se členem: ne *livre*, ale *le livre*."
+        },
+        {
+          "type": "heading",
+          "text": "Množné číslo"
+        },
+        {
+          "type": "text",
+          "text": "Množné číslo vznikne většinou přidáním **-s**: *le chat → les chats*. To *-s* se ale nečte! *chat* i *chats* zní „ša“. Že jde o víc koček, poznáš podle členu: *le* „lə“ × *les* „le“. Slova na *-eau* dostanou **-x**: *le gâteau → les gâteaux* (dorty)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "livre (m.)",
+                "options": [
+                  "le",
+                  "la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "maison (ž.)",
+                "options": [
+                  "un",
+                  "une"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "",
+                "after": "école (ž.)",
+                "options": [
+                  "l’",
+                  "la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "enfants",
+                "options": [
+                  "les",
+                  "le"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "J’ai",
+                "after": "amis.",
+                "options": [
+                  "des",
+                  "un"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň členy: Mám (nějakého) psa a (nějakou) kočku.",
+          "answer": "*chien* (pes) je mužský → *un chien*. Kočka se obecně řekne *chat* a to je ve francouzštině **mužský** rod, i když česky je „kočka“ ženská → *un chat*. **J’ai un chien et un chat.**"
+        },
+        {
+          "type": "example",
+          "question": "Dej do množného čísla: *l’hôtel*.",
+          "answer": "Člen *l’* se v množném čísle změní na *les*, ke slovu přidám *-s*: **les hôtels**. Čte se „lezotel“ – *s* z *les* se spojí s *hôtels* (vázání)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "la école",
+          "right": "l’école",
+          "why": "Před samohláskou se *le* i *la* zkrátí na *l’*."
+        },
+        {
+          "type": "summary",
+          "text": "Mužský rod: *le / un*, ženský: *la / une*, množné číslo: *les / des*. Před samohláskou *l’*. Rod se uč se slovem, protože bývá jiný než v češtině."
+        }
+      ]
+    },
+    {
+      "title": "Klobouky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že ve Francii nosí každé podstatné jméno klobouk. Podle klobouku poznáš, jestli je to „pán“ (mužský rod), nebo „paní“ (ženský rod), a jestli jde o jednoho, nebo o skupinu. Těm kloboukům se říká **členy**."
+        },
+        {
+          "type": "text",
+          "text": "Proč je to důležité? Podle členu se pak mění i další slova ve větě. Kdo zná klobouk, ví, jak mluvit dál."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podstatné jméno",
+          "definition": "Název osoby, zvířete, věci nebo místa.",
+          "example": "*garçon* (chlapec), *fille* (dívka), *pomme* (jablko)"
+        },
+        {
+          "type": "term",
+          "term": "Rod",
+          "definition": "Jestli je slovo „pán“ (mužský rod), nebo „paní“ (ženský rod). Ve francouzštině nic jiného není.",
+          "example": "*le soleil* (slunce) je „pán“, *la lune* (měsíc) je „paní“."
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Klobouk podstatného jména. Řekne rod, číslo a jestli jde o věc známou (*le, la, les*), nebo novou, nějakou (*un, une, des*).",
+          "example": "*un garçon* (nějaký chlapec), *la fille* (ta dívka)"
+        },
+        {
+          "type": "heading",
+          "text": "Šest klobouků"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🎩 le",
+            "👒 la",
+            "🎩 un",
+            "👒 une",
+            "🧢 les",
+            "🧢 des"
+          ],
+          "caption": "Pánské klobouky le, un; dámské la, une; společné pro skupinu les, des"
+        },
+        {
+          "type": "text",
+          "text": "Skupina nosí stejný klobouk, ať jsou v ní páni, nebo paní: *les garçons*, *les filles*. Když slovo začíná samohláskou, klobouk *le* nebo *la* se „smáčkne“ na **l’**: *l’orange*, *l’ami*."
+        },
+        {
+          "type": "heading",
+          "text": "Příběh: první a podruhé"
+        },
+        {
+          "type": "text",
+          "text": "*J’ai **un** chien. **Le** chien s’appelle Rex.* = Mám psa. Ten pes se jmenuje Rex. Poprvé je pes nový, neznámý: dostane *un*. Podruhé už víme, o kterého jde: dostane *le*."
+        },
+        {
+          "type": "text",
+          "text": "*Il y a **des** livres sur la table. **Les** livres sont à Léa.* = Na stole jsou (nějaké) knihy. Ty knihy jsou Léiny. *Des* je množné číslo od *un/une*. Česky ho nepřekládáš."
+        },
+        {
+          "type": "heading",
+          "text": "Jak nasadit správný klobouk"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti rod slova (ze slovníku – tam je *m.* = mužský, *f.* = ženský).",
+            "Rozhodni, jestli je věc známá, konkrétní (*le/la/les*), nebo nová, nějaká (*un/une/des*).",
+            "Je jich víc? Vezmi *les* nebo *des* a ke slovu přidej *-s*.",
+            "Začíná slovo samohláskou nebo *h*? *Le/la* změň na *l’*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slova podle klobouku. Pomůže ti český překlad v závorce."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "le",
+              "la",
+              "l’"
+            ],
+            "items": [
+              {
+                "text": "livre (kniha)",
+                "group": 0
+              },
+              {
+                "text": "soleil (slunce)",
+                "group": 0
+              },
+              {
+                "text": "garçon (chlapec)",
+                "group": 0
+              },
+              {
+                "text": "table (stůl)",
+                "group": 1
+              },
+              {
+                "text": "voiture (auto)",
+                "group": 1
+              },
+              {
+                "text": "fille (dívka)",
+                "group": 1
+              },
+              {
+                "text": "ami (přítel)",
+                "group": 2
+              },
+              {
+                "text": "école (škola)",
+                "group": 2
+              },
+              {
+                "text": "hôtel (hotel)",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Il y a ___ voiture dans la rue. ___ voiture est rouge. (Na ulici je auto. To auto je červené.)",
+          "answer": "*voiture* (auto) je ženský rod. Poprvé je auto nové, nějaké → *une*. Podruhé už víme, o které jde → *la*. **Il y a une voiture dans la rue. La voiture est rouge.**"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Il y a ___ enfants dans le parc. ___ enfants jouent.",
+          "answer": "*enfants* (děti) je množné číslo. Poprvé nějaké děti → *des*. Podruhé ty děti → *les*. **Il y a des enfants dans le parc. Les enfants jouent.** Obojí s vázáním: „dezãfã“, „lezãfã“."
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’ai chien. (bez členu)",
+          "right": "J’ai un chien.",
+          "why": "Česky člen nemáme, ale francouzské podstatné jméno ho skoro vždycky potřebuje."
+        },
+        {
+          "type": "summary",
+          "text": "Každé podstatné jméno nosí klobouk: *le/la/l’/les* pro známé věci, *un/une/des* pro nové. Rod se učí se slovem a bývá jiný než v češtině."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "___ livre (kniha, mužský rod)",
+      "options": [
+        "le",
+        "la",
+        "les"
+      ],
+      "answer": 0,
+      "explanation": "*livre* je ve francouzštině mužského rodu: *le livre*."
+    },
+    {
+      "type": "choice",
+      "question": "___ école (škola)",
+      "options": [
+        "l’",
+        "le",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "Před samohláskou se člen zkrátí: *l’école*."
+    },
+    {
+      "type": "choice",
+      "question": "Množné číslo od *le chat*:",
+      "options": [
+        "les chats",
+        "le chats",
+        "les chat"
+      ],
+      "answer": 0,
+      "explanation": "Člen se změní na *les* a slovo dostane *-s* (nečte se)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň neurčitý člen: ___ maison (ženský rod)",
+      "answers": [
+        "une"
+      ],
+      "explanation": "Ženský rod, nějaký dům → *une maison*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň neurčitý člen: J’ai ___ amis. (Mám kamarády.)",
+      "answers": [
+        "des"
+      ],
+      "explanation": "Množné číslo od *un/une* je *des*. Česky ho nepřekládáme.",
+      "hints": [
+        "Jde o víc kamarádů a nejsou konkrétní."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Francouzština má tři rody jako čeština.",
+      "answer": false,
+      "explanation": "Francouzština má jen mužský a ženský rod."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve francouzštině má podstatné jméno skoro vždycky před sebou člen.",
+      "answer": true,
+      "explanation": "Proto se učíme slova se členem: *le livre*, *la table*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj podstatné jméno se správným členem.",
+      "pairs": [
+        [
+          "___ soleil",
+          "le"
+        ],
+        [
+          "___ lune",
+          "la"
+        ],
+        [
+          "___ hôtel",
+          "l’"
+        ],
+        [
+          "___ enfants",
+          "les"
+        ]
+      ],
+      "explanation": "*le soleil, la lune, l’hôtel* (h je němé), *les enfants*."
+    },
+    {
+      "type": "choice",
+      "question": "Jakého rodu je ve francouzštině *table* (stůl)?",
+      "options": [
+        "ženského",
+        "mužského",
+        "středního"
+      ],
+      "answer": 0,
+      "explanation": "*la table* je ženského rodu, i když česky je „stůl“ mužský."
+    },
+    {
+      "type": "choice",
+      "question": "___ garçon (nějaký chlapec)",
+      "options": [
+        "un",
+        "une",
+        "des"
+      ],
+      "answer": 0,
+      "explanation": "Chlapec je mužského rodu a je jeden: *un garçon*."
+    },
+    {
+      "type": "choice",
+      "question": "Které spojení je správně?",
+      "options": [
+        "l’ami",
+        "le ami",
+        "la ami"
+      ],
+      "answer": 0,
+      "explanation": "*ami* začíná samohláskou, proto *l’ami*."
+    },
+    {
+      "type": "input",
+      "question": "Napiš určitý člen pro množné číslo.",
+      "answers": [
+        "les"
+      ],
+      "explanation": "*les* platí pro mužský i ženský rod: *les garçons, les filles*."
+    },
+    {
+      "type": "choice",
+      "question": "Množné číslo od *le gâteau* (dort):",
+      "options": [
+        "les gâteaux",
+        "les gâteaus",
+        "le gâteaux"
+      ],
+      "answer": 0,
+      "explanation": "Slova na *-eau* dostanou v množném čísle *-x*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově *chats* (kočky) se koncové *s* čte.",
+      "answer": false,
+      "explanation": "Koncové *s* je němé. Množné číslo poznáš podle členu *les* nebo *des*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu „Mám psa a kočku.“",
+      "items": [
+        "J’ai",
+        "un chien",
+        "et",
+        "un chat."
+      ],
+      "explanation": "Každé podstatné jméno má svůj člen: *un chien*, *un chat*."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *le* a *un*? Uveď příklad.",
+      "answer": "*le* je určitý člen: mluvím o konkrétní, známé věci („ten“). *un* je neurčitý: věc je nová, nějaká. *J’ai un chien. Le chien s’appelle Rex.*"
+    },
+    {
+      "type": "open",
+      "question": "Proč je dobré učit se francouzská podstatná jména rovnou se členem?",
+      "answer": "Protože rod se nedá spolehlivě odhadnout a často je jiný než v češtině, třeba *le livre* (kniha) nebo *la table* (stůl). Člen rod prozradí."
+    }
+  ]
+}

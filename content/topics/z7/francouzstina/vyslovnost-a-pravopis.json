@@ -1,0 +1,641 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vyslovnost-a-pravopis",
+  "title": "Výslovnost a pravopis",
+  "emoji": "🗣️",
+  "explanations": [
+    {
+      "title": "Pravidla a tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Francouzské slovo **Paris** znáš: Francouzi ho čtou „pa-rí“. Písmeno **s** na konci se vůbec neozve. Francouzština se píše jinak, než se čte, ale řídí se pravidly. Když je znáš, přečteš i slovo, které vidíš poprvé."
+        },
+        {
+          "type": "text",
+          "text": "Tohle téma je základ pro všechno další. Než se naučíš první větu, musíš vědět, která písmena se čtou, která mlčí a co znamenají čárky nad písmeny."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výslovnost",
+          "definition": "Jak slovo zní, když ho řekneš nahlas.",
+          "example": "Slovo *Paris* má výslovnost „parí“."
+        },
+        {
+          "type": "term",
+          "term": "Spřežka",
+          "definition": "Dvě nebo tři písmena, která se dohromady čtou jako jeden zvuk. Čeština má jednu: *ch*.",
+          "example": "Francouzské *ou* se čte jako české **u**: *vous* = „vu“."
+        },
+        {
+          "type": "term",
+          "term": "Němé písmeno",
+          "definition": "Písmeno, které se píše, ale nečte.",
+          "example": "V *petit* (malý) se koncové *t* nečte: „pəti“."
+        },
+        {
+          "type": "term",
+          "term": "Nosovka",
+          "definition": "Samohláska, při které jde vzduch i nosem. Písmeno *n* nebo *m* za ní se samo nevysloví, jen „ponosuje“ samohlásku. Čeština nosovky nemá.",
+          "example": "*bon* (dobrý) – „bõ“, *n* neuslyšíš."
+        },
+        {
+          "type": "term",
+          "term": "Akcent",
+          "definition": "Znaménko nad písmenem nebo pod ním (é, è, ê, ç). Mění výslovnost nebo rozlišuje slova. **Neznačí délku** jako česká čárka.",
+          "example": "*café* (káva), *père* (otec), *fête* (oslava), *garçon* (chlapec)"
+        },
+        {
+          "type": "heading",
+          "text": "1. Spřežky: dvě písmena, jeden zvuk"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Píšeš",
+            "Čteš (zhruba)",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "ou",
+              "u",
+              "vous – „vu“",
+              "vy"
+            ],
+            [
+              "oi",
+              "wa (ua)",
+              "moi – „mwa“",
+              "já"
+            ],
+            [
+              "au, eau",
+              "o",
+              "beau – „bo“",
+              "hezký"
+            ],
+            [
+              "ai",
+              "e",
+              "j’ai – „že“",
+              "mám"
+            ],
+            [
+              "eu",
+              "ö",
+              "deux – „dö“",
+              "dva"
+            ],
+            [
+              "ch",
+              "š",
+              "chat – „ša“",
+              "kočka"
+            ],
+            [
+              "gn",
+              "ň",
+              "montagne – „montaň“",
+              "hora"
+            ],
+            [
+              "qu",
+              "k",
+              "qui – „ki“",
+              "kdo"
+            ],
+            [
+              "u",
+              "ü (rty jako u, jazyk jako i)",
+              "tu – „tü“",
+              "ty"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ještě dvě pravidla: písmeno **h** se nečte nikdy (*hôtel* = „otel“). Písmeno **c** se před *e, i* čte jako **s** (*merci* = „mersi“), jinak jako **k** (*café*). Písmeno **g** se před *e, i* čte jako **ž** (*rouge* = „ruž“, červený)."
+        },
+        {
+          "type": "heading",
+          "text": "2. Němé koncovky"
+        },
+        {
+          "type": "text",
+          "text": "Na konci slova se většinou **nečtou** písmena *e, s, t, d, x, p, z*. Proto *Paris* = „parí“, *deux* = „dö“, *grand* = „grã“, *beaucoup* = „boku“."
+        },
+        {
+          "type": "text",
+          "text": "Naopak **c, r, f, l** na konci se většinou čtou. Pomůcka: anglické slovo **CaReFuL**. *sac* (taška), *bonjour*, *neuf* (devět), *hôtel*. Pozor: u sloves na **-er** se *r* nečte: *parler* (mluvit) = „parle“."
+        },
+        {
+          "type": "text",
+          "text": "Koncové **-e** samo mlčí, ale „probudí“ souhlásku před sebou: *grand* = „grã“, ale *grande* = „grãd“. *petit* = „pəti“, ale *petite* = „pətit“."
+        },
+        {
+          "type": "heading",
+          "text": "3. Nosovky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Píšeš",
+            "Zní jako",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "an, am, en, em",
+              "nosové „a“",
+              "enfant (dítě), chambre (pokoj)"
+            ],
+            [
+              "on, om",
+              "nosové „o“",
+              "bonjour (dobrý den), non (ne)"
+            ],
+            [
+              "in, im, ain, ein, un",
+              "nosové „e“",
+              "vin (víno), pain (chléb), un (jeden)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nosovka **nevznikne**, když po *n/m* následuje samohláska nebo druhé *n/m*: *bon* je nosovka, ale *bonne* (dobrá) se čte „bon“ s obyčejným *n*. Stejně *un* (nosovka) × *une* = „ün“."
+        },
+        {
+          "type": "heading",
+          "text": "4. Akcenty"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**é** (accent aigu, čárka doprava) = zavřené **e**: *café, été* (léto).",
+            "**è** (accent grave, čárka doleva) = otevřené **e**: *père* (otec), *très* (velmi).",
+            "**ê** (accent circonflexe, stříška) = také otevřené **e**: *fête* (oslava), *être* (být).",
+            "**ç** (cédille, ocásek pod c) = **s** i před *a, o, u*: *ça* (to), *garçon* (chlapec), *français*.",
+            "**à** a **où** jen rozlišují slova: *a* (má) × *à* (do, v); *ou* (nebo) × *où* (kde)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "5. Vázání (liaison) a přízvuk"
+        },
+        {
+          "type": "term",
+          "term": "Vázání (liaison)",
+          "definition": "Jinak němá koncová souhláska se vysloví, když další slovo začíná samohláskou nebo němým *h*. Obě slova pak zní jako jedno. Koncové *s* nebo *x* zní při tom jako **z**.",
+          "example": "*les amis* (ti přátelé) = „lezamí“, ale *les garçons* = „le garsõ“."
+        },
+        {
+          "type": "text",
+          "text": "**Přízvuk** je ve francouzštině vždycky na **poslední** vyslovené slabice: *cho-co-LAT*, *Pa-RIS*. V češtině je na první – proto čeština ve francouzštině „pozná“ Čecha."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Řekni si slovo nahlas a teprve pak kartičku otoč."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "bonjour",
+                "back": "„bõžur“ – on je nosovka, j = ž, r na konci se čte"
+              },
+              {
+                "front": "beaucoup",
+                "back": "„boku“ – eau = o, ou = u, p na konci mlčí"
+              },
+              {
+                "front": "croissant",
+                "back": "„krwasã“ – oi = wa, ss = s, ant je nosovka a t mlčí"
+              },
+              {
+                "front": "merci",
+                "back": "„mersi“ – c před i = s"
+              },
+              {
+                "front": "les enfants",
+                "back": "„lezãfã“ – vázání s jako z, en a an jsou nosovky"
+              },
+              {
+                "front": "garçon",
+                "back": "„garsõ“ – ç = s, on je nosovka"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přečti slovo *trois* (tři).",
+          "answer": "Rozdělím na kousky: *tr* + *oi* + *s*. Spřežka *oi* = „wa“, koncové *s* mlčí. Čtu **„trwa“**."
+        },
+        {
+          "type": "example",
+          "question": "Proč se *grand* čte „grã“, ale *grande* „grãd“?",
+          "answer": "V *grand* je *an* nosovka a koncové *d* je němé. V *grande* je na konci *e*. To samo mlčí, ale díky němu se *d* před ním vysloví: **„grãd“**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "café čtu „kafé“ s dlouhým é jako v češtině",
+          "right": "café čtu „kafe“ s krátkým zavřeným e a přízvukem na konci",
+          "why": "Francouzská čárka neznačí délku. Říká jen, jak samohlásku vyslovit."
+        },
+        {
+          "type": "summary",
+          "text": "Koncová písmena většinou mlčí (kromě c, r, f, l), spřežky jako *ou, oi, eau* se čtou jako jeden zvuk, *an/on/in* jsou nosovky a akcenty mění zvuk, ne délku. Přízvuk je vždy na konci."
+        }
+      ]
+    },
+    {
+      "title": "Procházka Paříží",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ema jede poprvé do Paříže. Francouzsky zatím neumí, ale chce si aspoň přečíst nápisy a slušně pozdravit. Půjdeš s ní a u každého nápisu zjistíš, jak se čte. Na konci procházky přečteš i slova, která jsi nikdy neviděl."
+        },
+        {
+          "type": "text",
+          "text": "Proč to potřebuješ? Francouzština se píše „s rezervou“: některá písmena jsou jen na ozdobu. Když je budeš číst česky, nikdo ti nebude rozumět."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Němé písmeno",
+          "definition": "Písmeno, které se napíše, ale nevysloví.",
+          "example": "V názvu *Paris* je *s* němé."
+        },
+        {
+          "type": "term",
+          "term": "Spřežka",
+          "definition": "Skupina písmen, která zní jako jeden zvuk. Jako české *ch*.",
+          "example": "*eau* zní jako „o“."
+        },
+        {
+          "type": "term",
+          "term": "Nosovka",
+          "definition": "Samohláska vyslovená zároveň nosem. Vzniká z *an, en, on, in, un* a *n* se samo neozve.",
+          "example": "*pain* (chléb) = „pẽ“"
+        },
+        {
+          "type": "term",
+          "term": "Akcent",
+          "definition": "Znaménko u písmene: é, è, ê, ç, à. Mění, jak písmeno zní, nebo rozlišuje dvě slova. Délku neznačí.",
+          "example": "*où* (kde) × *ou* (nebo)"
+        },
+        {
+          "type": "term",
+          "term": "Vázání (liaison)",
+          "definition": "Když slovo končí němou souhláskou a další začíná samohláskou, souhláska se najednou vysloví a slova se spojí.",
+          "example": "*vous avez* (vy máte) = „vuzave“"
+        },
+        {
+          "type": "heading",
+          "text": "Zastávka 1: pekárna"
+        },
+        {
+          "type": "text",
+          "text": "Ema stojí před obchodem s nápisem **BOULANGERIE** (pekárna). *ou* = u, *an* = nosové a, *g* před *e* = ž, koncové *e* mlčí. Čte: „bulãžrí“. Uvnitř si koupí **un croissant** – „ẽ krwasã“."
+        },
+        {
+          "type": "heading",
+          "text": "Zastávka 2: pozdrav a poděkování"
+        },
+        {
+          "type": "text",
+          "text": "Prodavačce řekne **Bonjour, madame !** („bõžur madam“) a na konci **Merci beaucoup !** („mersi boku“). V *beaucoup* je *eau* = o, *ou* = u a *p* na konci mlčí."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🥐",
+            "🥖",
+            "👩‍🍳",
+            "🙂"
+          ],
+          "caption": "Bonjour, madame ! Un croissant, s’il vous plaît. Merci beaucoup !"
+        },
+        {
+          "type": "heading",
+          "text": "Zastávka 3: zámek a slavná třída"
+        },
+        {
+          "type": "text",
+          "text": "Na mapě vidí **château** (zámek): *ch* = š, *â* je obyčejné a, *eau* = o. Čte „šato“. Pak jde po třídě **Champs-Élysées**: „šãzelize“. Koncové *s* v *Champs* se spojí s *É* a zní jako z – to je vázání."
+        },
+        {
+          "type": "heading",
+          "text": "Zastávka 4: děti v parku"
+        },
+        {
+          "type": "text",
+          "text": "V parku slyší paní volat **les enfants !** (děti!). Zní to „lezãfã“. Když ale volá **les garçons !** (kluci!), řekne „le garsõ“ – *g* není samohláska, takže se nic neváže. A *ç* s ocáskem se čte jako s."
+        },
+        {
+          "type": "heading",
+          "text": "Emin postup na neznámé slovo"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi spřežky (ou, oi, eau, au, ai, eu, ch, gn, qu) a čti je jako jeden zvuk.",
+            "Najdi an/en/on/in/un: pokud za nimi není samohláska, je to nosovka.",
+            "Podívej se na konec slova: e, s, t, d, x většinou mlčí; c, r, f, l se čtou (u sloves na -er ale r mlčí).",
+            "Zkontroluj akcenty: é zavřené e, è a ê otevřené e, ç = s.",
+            "Přízvuk dej na poslední slabiku a zkus, jestli se slovo neváže s dalším."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slova: je v nich slyšet nosovka, nebo ne?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "nosovka",
+              "bez nosovky"
+            ],
+            "items": [
+              {
+                "text": "bon",
+                "group": 0
+              },
+              {
+                "text": "bonne",
+                "group": 1
+              },
+              {
+                "text": "pain",
+                "group": 0
+              },
+              {
+                "text": "une",
+                "group": 1
+              },
+              {
+                "text": "enfant",
+                "group": 0
+              },
+              {
+                "text": "un",
+                "group": 0
+              },
+              {
+                "text": "ami",
+                "group": 1
+              },
+              {
+                "text": "vin",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Ema vidí nápis *Où sont les toilettes ?* Jak ho přečte a co znamená?",
+          "answer": "*Où* = „u“ (kde), *sont* = „sõ“ (on je nosovka, t mlčí), *les* = „le“, *toilettes* = „twalet“ (oi = wa, koncové -es mlčí). Celé „u sõ le twalet“ = **Kde jsou toalety?**"
+        },
+        {
+          "type": "example",
+          "question": "Proč se *vous avez* čte „vuzave“, ale *vous parlez* „vu parle“?",
+          "answer": "Za *vous* stojí v prvním případě slovo na samohlásku *a*, takže se *s* vysloví jako z a slova se spojí. *parlez* začíná souhláskou *p*, takže *s* zůstane němé. A *-ez* na konci se čte jako „e“."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Paris čtu „paris“ se s na konci",
+          "right": "Paris čtu „parí“",
+          "why": "Koncové *s* je ve francouzštině skoro vždycky němé."
+        },
+        {
+          "type": "mistake",
+          "wrong": "ou čtu jako české „ou“ v „louka“",
+          "right": "ou čtu jako české „u“: vous = „vu“",
+          "why": "*ou* je spřežka – dvě písmena, jeden zvuk."
+        },
+        {
+          "type": "summary",
+          "text": "Čti po kouscích: spřežky jako jeden zvuk, nosovky bez *n*, němé konce vynech, akcenty měň zvuk, ne délku. Přízvuk je na konci a slova se před samohláskou vážou."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak se čte spřežka *ou* ve slově *vous* (vy)?",
+      "options": [
+        "jako české u",
+        "jako české ou",
+        "jako české o"
+      ],
+      "answer": 0,
+      "explanation": "*ou* jsou dvě písmena, ale jeden zvuk: *vous* = „vu“."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte *oi* ve slově *moi* (já)?",
+      "options": [
+        "wa",
+        "oj",
+        "o"
+      ],
+      "answer": 0,
+      "explanation": "*oi* se čte „wa“: *moi* = „mwa“, *trois* = „trwa“."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově *Paris* se koncové *s* nevyslovuje.",
+      "answer": true,
+      "explanation": "Koncové *s* je němé, čte se „parí“."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově je **nosovka**?",
+      "options": [
+        "bon",
+        "bonne",
+        "une"
+      ],
+      "answer": 0,
+      "explanation": "V *bon* nenásleduje po *n* samohláska, takže je to nosovka. *bonne* a *une* mají za *n* samohlásku *e*.",
+      "hints": [
+        "Nosovka vzniká, když za n není samohláska ani další n."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj spřežku se zvukem.",
+      "pairs": [
+        [
+          "ou",
+          "u"
+        ],
+        [
+          "oi",
+          "wa"
+        ],
+        [
+          "eau",
+          "o"
+        ],
+        [
+          "ch",
+          "š"
+        ],
+        [
+          "gn",
+          "ň"
+        ]
+      ],
+      "explanation": "Spřežky čteš jako jeden zvuk: *vous, moi, beau, chat, montagne*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čárka nad *é* znamená, že se samohláska čte dlouze jako v češtině.",
+      "answer": false,
+      "explanation": "Francouzské akcenty neznačí délku. *é* je krátké zavřené e."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém spojení se koncové *s* prvního slova vysloví (jako z)?",
+      "options": [
+        "les amis",
+        "les garçons",
+        "les livres"
+      ],
+      "answer": 0,
+      "explanation": "Vázání nastane jen před samohláskou: *les amis* = „lezamí“.",
+      "hints": [
+        "Podívej se, čím začíná druhé slovo."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které písmeno se čte jako **s** i před *a, o, u*?",
+      "options": [
+        "ç",
+        "é",
+        "ê"
+      ],
+      "answer": 0,
+      "explanation": "*ç* (c s cédillou): *ça, garçon, français*."
+    },
+    {
+      "type": "input",
+      "question": "Jak se francouzsky jmenuje ocásek pod písmenem c (ç)?",
+      "answers": [
+        "cédille",
+        "cedille",
+        "la cédille"
+      ],
+      "explanation": "Je to *la cédille*. Díky ní se *c* čte jako s i před a, o, u."
+    },
+    {
+      "type": "choice",
+      "question": "Na které slabice je přízvuk ve slově *chocolat*?",
+      "options": [
+        "na poslední (-lat)",
+        "na první (cho-)",
+        "na prostřední (-co-)"
+      ],
+      "answer": 0,
+      "explanation": "Francouzský přízvuk je vždy na poslední vyslovené slabice."
+    },
+    {
+      "type": "truefalse",
+      "question": "*où* a *ou* znamenají totéž.",
+      "answer": false,
+      "explanation": "*où* = kde, *ou* = nebo. Zní stejně, akcent je rozlišuje jen v písmu."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se liší výslovnost *grand* a *grande*?",
+      "options": [
+        "v grande je slyšet d",
+        "zní úplně stejně",
+        "v grand je slyšet d"
+      ],
+      "answer": 0,
+      "explanation": "Koncové *-e* je němé, ale „probudí“ souhlásku před sebou: „grã“ × „grãd“."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte *c* ve slově *merci*?",
+      "options": [
+        "s",
+        "k",
+        "č"
+      ],
+      "answer": 0,
+      "explanation": "*c* před *e* a *i* se čte jako s, jinak jako k."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově se koncová souhláska **čte**?",
+      "options": [
+        "bonjour",
+        "petit",
+        "deux"
+      ],
+      "answer": 0,
+      "explanation": "Koncové *r* se čte (pomůcka CaReFuL). *t* a *x* na konci mlčí.",
+      "hints": [
+        "Vzpomeň si na anglické slovo CaReFuL."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slabiky slova *boulangerie* (pekárna).",
+      "items": [
+        "bou",
+        "lan",
+        "ge",
+        "rie"
+      ],
+      "explanation": "*bou-lan-ge-rie* se čte „bu-lã-žə-rí“, rychle „bulãžrí“."
+    },
+    {
+      "type": "open",
+      "question": "Proč francouzské slovo často zní kratší, než jak se píše? Uveď příklad.",
+      "answer": "Protože hodně písmen na konci je němých (e, s, t, d, x) a spřežky jako ou, eau, oi zní jako jeden zvuk. Například *beaucoup* se čte „boku“."
+    },
+    {
+      "type": "open",
+      "question": "Co je vázání (liaison)? Uveď příklad.",
+      "answer": "Když slovo končí němou souhláskou a další začíná samohláskou, souhláska se vysloví a slova se spojí. *les amis* zní „lezamí“, *vous avez* „vuzave“."
+    }
+  ]
+}
