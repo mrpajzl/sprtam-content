@@ -1,0 +1,576 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "perfektum",
+  "title": "Perfektum (minulý čas)",
+  "emoji": "⏪",
+  "explanations": [
+    {
+      "title": "Dva kousky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Včera jsem hrál fotbal. O víkendu jsme jeli do Vídně.“ Když Němci vyprávějí o minulosti, používají nejčastěji **perfektum**. Hodí se na vyprávění o víkendu, prázdninách i na pohlednici."
+        },
+        {
+          "type": "text",
+          "text": "Perfektum má dva kousky: pomocné sloveso a tvar hlavního slovesa na konci věty. Funguje to podobně jako české „**jsem** hrál“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Perfektum",
+          "definition": "Německý minulý čas, který se nejvíc používá v mluvené řeči. Má dvě části.",
+          "example": "Ich **habe** Fußball **gespielt**. = Hrál jsem fotbal."
+        },
+        {
+          "type": "term",
+          "term": "Pomocné sloveso",
+          "definition": "Sloveso, které jen pomáhá postavit čas. V perfektu je to **haben** nebo **sein**, vyčasované a na **2. místě**.",
+          "example": "ich **habe** gespielt, ich **bin** gefahren"
+        },
+        {
+          "type": "term",
+          "term": "Příčestí minulé (Partizip II)",
+          "definition": "Tvar slovesa, který stojí **na konci věty** a nemění se podle osoby. Většinou začíná na *ge-*.",
+          "example": "spielen → **gespielt**, fahren → **gefahren**"
+        },
+        {
+          "type": "heading",
+          "text": "Pravidelná slovesa: ge- + kmen + -t"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi infinitiv: *spielen*.",
+            "Ustřihni -en: *spiel*.",
+            "Přidej **ge-** dopředu a **-t** dozadu: **gespielt**.",
+            "Kmen na -t/-d dostane **-et**: *arbeiten → gearbeitet*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "Partizip II",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "machen",
+              "gemacht",
+              "dělat"
+            ],
+            [
+              "kaufen",
+              "gekauft",
+              "kupovat"
+            ],
+            [
+              "lernen",
+              "gelernt",
+              "učit se"
+            ],
+            [
+              "wohnen",
+              "gewohnt",
+              "bydlet"
+            ],
+            [
+              "arbeiten",
+              "gearbeitet",
+              "pracovat"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nepravidelná slovesa: ge- + … + -en"
+        },
+        {
+          "type": "text",
+          "text": "Častá nepravidelná slovesa končí na **-en** a často mění samohlásku. Ty se musíš naučit:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "Partizip II",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "essen",
+              "gegessen",
+              "jíst"
+            ],
+            [
+              "trinken",
+              "getrunken",
+              "pít"
+            ],
+            [
+              "lesen",
+              "gelesen",
+              "číst"
+            ],
+            [
+              "sehen",
+              "gesehen",
+              "vidět"
+            ],
+            [
+              "schreiben",
+              "geschrieben",
+              "psát"
+            ],
+            [
+              "schlafen",
+              "geschlafen",
+              "spát"
+            ],
+            [
+              "fahren",
+              "gefahren",
+              "jet"
+            ],
+            [
+              "gehen",
+              "gegangen",
+              "jít"
+            ],
+            [
+              "kommen",
+              "gekommen",
+              "přijít"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "haben, nebo sein?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Většina sloves má **haben**: *Ich habe Pizza gegessen.*",
+            "**sein** mají slovesa **pohybu z místa na místo** (*gehen, fahren, kommen, fliegen, laufen*) a **změny stavu** (*aufstehen, einschlafen*): *Ich bin nach Wien gefahren.*",
+            "**sein** mají i *sein* a *bleiben*: *Ich bin zu Hause gewesen. Ich bin zu Hause geblieben.*"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyber správné pomocné sloveso:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich",
+                "after": "einen Film gesehen.",
+                "options": [
+                  "habe",
+                  "bin"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir",
+                "after": "nach Prag gefahren.",
+                "options": [
+                  "sind",
+                  "haben"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er",
+                "after": "viel gelernt.",
+                "options": [
+                  "hat",
+                  "ist"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du",
+                "after": "spät gekommen.",
+                "options": [
+                  "bist",
+                  "hast"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sie",
+                "after": "um sechs aufgestanden.",
+                "options": [
+                  "ist",
+                  "hat"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Včera jsem hrál tenis.",
+          "answer": "Pomocné sloveso: *spielen* není pohyb → *haben*, ich → **habe** na 2. místě. Partizip: ge + spiel + t = **gespielt** na konec. **Gestern habe ich Tennis gespielt.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: V sobotu jsme jeli do Drážďan.",
+          "answer": "*fahren* je pohyb z místa na místo → *sein*, wir → **sind**. Partizip nepravidelný: **gefahren**. **Am Samstag sind wir nach Dresden gefahren.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe nach Berlin gefahren.",
+          "right": "Ich bin nach Berlin gefahren.",
+          "why": "*fahren* vyjadřuje pohyb z místa na místo, proto má pomocné sloveso **sein**."
+        },
+        {
+          "type": "summary",
+          "text": "Perfektum = **haben/sein na 2. místě + Partizip II na konci**. Pravidelná: **ge-…-t** (*gespielt*), nepravidelná: **ge-…-en** (*gegessen*). *sein* u pohybu a změny stavu."
+        }
+      ]
+    },
+    {
+      "title": "Pohlednice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lena ti poslala pohlednici z prázdnin. Píše, co všechno dělala. Když ji rozluštíš, uvidíš, jak perfektum funguje i u složitějších sloves."
+        },
+        {
+          "type": "text",
+          "text": "Pak napíšeš podobnou pohlednici sám."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Perfektum",
+          "definition": "Minulý čas: *haben* nebo *sein* + Partizip II.",
+          "example": "Ich habe gegessen. = Jedl jsem."
+        },
+        {
+          "type": "term",
+          "term": "Partizip II",
+          "definition": "Tvar slovesa na konci věty v perfektu, většinou s *ge-*.",
+          "example": "gemacht, gegangen"
+        },
+        {
+          "type": "term",
+          "term": "Odlučitelná předpona",
+          "definition": "Připomenutí: přízvučná předpona, která se odtrhává (*auf-, ein-, an-, fern-*…).",
+          "example": "aufstehen → Ich stehe auf."
+        },
+        {
+          "type": "heading",
+          "text": "Lenina pohlednice"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Německy",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Liebe Klara,",
+              "Milá Kláro,"
+            ],
+            [
+              "ich **bin** mit meiner Familie nach Italien **gefahren**.",
+              "jela jsem s rodinou do Itálie."
+            ],
+            [
+              "Wir **haben** jeden Tag im Meer **gebadet**.",
+              "Každý den jsme se koupali v moři."
+            ],
+            [
+              "Ich **bin** immer spät **aufgestanden**.",
+              "Vždycky jsem vstávala pozdě."
+            ],
+            [
+              "Papa **hat** viel **fotografiert**.",
+              "Táta hodně fotil."
+            ],
+            [
+              "Wir **haben** auch Oma **besucht**.",
+              "Navštívili jsme taky babičku."
+            ],
+            [
+              "Ich **habe** jeden Tag Eis **gegessen**!",
+              "Každý den jsem jedla zmrzlinu!"
+            ],
+            [
+              "Viele Grüße, Lena",
+              "Mnoho pozdravů, Lena"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tři zvláštní skupiny"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Odlučitelná předpona**: *ge-* se vloží **mezi** předponu a sloveso: *aufstehen → auf**ge**standen, einkaufen → ein**ge**kauft, fernsehen → fern**ge**sehen*.",
+            "**Neodlučitelná předpona** (*be-, ver-, er-*…): **bez ge-**: *besuchen → besucht, verstehen → verstanden, bekommen → bekommen*.",
+            "Slovesa na **-ieren**: **bez ge-**: *fotografieren → fotografiert, telefonieren → telefoniert*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus Partizip II:"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "einkaufen",
+                "back": "eingekauft"
+              },
+              {
+                "front": "besuchen",
+                "back": "besucht"
+              },
+              {
+                "front": "telefonieren",
+                "back": "telefoniert"
+              },
+              {
+                "front": "fernsehen",
+                "back": "ferngesehen"
+              },
+              {
+                "front": "verstehen",
+                "back": "verstanden"
+              },
+              {
+                "front": "aufräumen",
+                "back": "aufgeräumt"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Kdy sein"
+        },
+        {
+          "type": "text",
+          "text": "Zeptej se: **pohnul se člověk z jednoho místa na jiné** nebo se **změnil jeho stav**? Pak *sein*. Lena jela do Itálie (pohyb) → *bin gefahren*. Vstala (změna ze spánku do bdění) → *bin aufgestanden*. Koupala se, fotila, jedla → *haben*."
+        },
+        {
+          "type": "text",
+          "text": "Pozor: u *sein* a *haben* se v minulosti častěji používá jiný tvar, **war** (byl jsem) a **hatte** (měl jsem): *Ich war in Italien. Ich hatte Glück.*"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Ráno jsem nakoupil a odpoledne jsem se díval na televizi.",
+          "answer": "*einkaufen* → haben, *ein**ge**kauft*. *fernsehen* → haben, *fern**ge**sehen*. **Am Morgen habe ich eingekauft und am Nachmittag habe ich ferngesehen.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Nerozuměl jsem tomu. (verstehen)",
+          "answer": "*ver-* je neodlučitelná → bez ge-: *verstanden* (nepravidelné). Pomocné *haben*. Zápor *nicht* před Partizip. **Ich habe das nicht verstanden.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe meine Oma gebesucht.",
+          "right": "Ich habe meine Oma besucht.",
+          "why": "Slovesa s neodlučitelnou předponou (*be-, ver-, er-*…) nemají v Partizipu II *ge-*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe geaufgestanden.",
+          "right": "Ich bin aufgestanden.",
+          "why": "*ge-* jde mezi předponu a sloveso: *aufgestanden*. A *aufstehen* je změna stavu, proto *sein*."
+        },
+        {
+          "type": "summary",
+          "text": "Odlučitelná předpona: *auf**ge**standen*. Neodlučitelná předpona a *-ieren*: bez ge- (*besucht, telefoniert*). Pohyb a změna stavu → **sein**, ostatní → **haben**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký je Partizip II od „spielen“?",
+      "options": [
+        "gespielt",
+        "gespielen",
+        "spielt"
+      ],
+      "answer": 0,
+      "explanation": "Pravidelné sloveso: ge + spiel + t."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je Partizip II od „essen“?",
+      "options": [
+        "gegessen",
+        "geesst",
+        "gegesst"
+      ],
+      "answer": 0,
+      "explanation": "Nepravidelné: gegessen."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Wir ___ nach Wien gefahren.",
+      "options": [
+        "sind",
+        "haben",
+        "hat"
+      ],
+      "answer": 0,
+      "explanation": "fahren = pohyb z místa na místo → sein."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich ___ ein Buch gelesen.",
+      "options": [
+        "habe",
+        "bin",
+        "hat"
+      ],
+      "answer": 0,
+      "explanation": "lesen není pohyb ani změna stavu → haben."
+    },
+    {
+      "type": "input",
+      "question": "Napiš Partizip II od slovesa kaufen.",
+      "answers": [
+        "gekauft"
+      ],
+      "explanation": "ge + kauf + t."
+    },
+    {
+      "type": "input",
+      "question": "Napiš Partizip II od slovesa arbeiten.",
+      "answers": [
+        "gearbeitet"
+      ],
+      "explanation": "Kmen na -t dostane -et: gearbeitet."
+    },
+    {
+      "type": "input",
+      "question": "Napiš Partizip II od slovesa aufstehen.",
+      "answers": [
+        "aufgestanden"
+      ],
+      "explanation": "ge- jde mezi předponu a sloveso."
+    },
+    {
+      "type": "input",
+      "question": "Napiš Partizip II od slovesa besuchen.",
+      "answers": [
+        "besucht"
+      ],
+      "explanation": "Neodlučitelná předpona be- → bez ge-."
+    },
+    {
+      "type": "input",
+      "question": "Napiš Partizip II od slovesa telefonieren.",
+      "answers": [
+        "telefoniert"
+      ],
+      "explanation": "Slovesa na -ieren nemají ge-."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s Partizipem II.",
+      "pairs": [
+        [
+          "gehen",
+          "gegangen"
+        ],
+        [
+          "trinken",
+          "getrunken"
+        ],
+        [
+          "schreiben",
+          "geschrieben"
+        ],
+        [
+          "kommen",
+          "gekommen"
+        ],
+        [
+          "sehen",
+          "gesehen"
+        ]
+      ],
+      "explanation": "Nepravidelná slovesa končí na -en a často mění samohlásku."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Včera jsem hrál fotbal.“",
+      "items": [
+        "Gestern",
+        "habe",
+        "ich",
+        "Fußball",
+        "gespielt."
+      ],
+      "explanation": "Pomocné sloveso na 2. místě, Partizip II na konci."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich habe nach Berlin gefahren.“ je správně.",
+      "answer": false,
+      "explanation": "fahren je pohyb → Ich bin nach Berlin gefahren."
+    },
+    {
+      "type": "truefalse",
+      "question": "V perfektu stojí Partizip II na konci věty.",
+      "answer": true,
+      "explanation": "Pomocné sloveso je na 2. místě, Partizip II na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Ich habe eingekauft.",
+        "Ich habe geeinkauft.",
+        "Ich bin eingekauft."
+      ],
+      "answer": 0,
+      "explanation": "Odlučitelná předpona: ein-ge-kauft, pomocné sloveso haben."
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří perfektum a kdy se používá sein místo haben?",
+      "answer": "Pomocné sloveso haben nebo sein je na 2. místě a Partizip II na konci věty. sein se používá u sloves pohybu z místa na místo (gehen, fahren) a změny stavu (aufstehen) a u sein a bleiben."
+    },
+    {
+      "type": "open",
+      "question": "Řekni německy aspoň tři věty o tom, co jsi dělal(a) o víkendu.",
+      "answer": "Am Samstag bin ich spät aufgestanden. Dann habe ich mit meinem Freund Fußball gespielt. Am Sonntag sind wir zu meiner Oma gefahren und haben Kuchen gegessen."
+    }
+  ]
+}

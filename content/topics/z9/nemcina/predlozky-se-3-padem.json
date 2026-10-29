@@ -1,0 +1,501 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "predlozky-se-3-padem",
+  "title": "Předložky se 3. pádem (dativ)",
+  "emoji": "🧭",
+  "explanations": [
+    {
+      "title": "Sedm předložek",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Jedu **autobusem**. Bydlím **u babičky**. Jdu **k doktorovi**. Jsem **z Česka**.“ Takové věty potřebuješ pořád. V němčině je tvoří malá slovíčka *mit, bei, zu, aus* a další, kterým se říká **předložky**."
+        },
+        {
+          "type": "text",
+          "text": "Těchto sedm předložek má jednu společnou věc: po nich vždy následuje **3. pád (dativ)**. Stačí se naučit jeden nový tvar členu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo před podstatným jménem, které říká, kde, kam, s kým nebo odkud.",
+          "example": "mit (s), bei (u), aus (z)"
+        },
+        {
+          "type": "term",
+          "term": "Dativ (3. pád)",
+          "definition": "Německý pád, který následuje po některých předložkách. Česky by tam mohl být jiný pád, na tom nezáleží.",
+          "example": "mit **dem** Bus = autobusem"
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Připomenutí: der (mužský), die (ženský), das (střední), v množném čísle die.",
+          "example": "der Bus, die Oma, das Auto"
+        },
+        {
+          "type": "heading",
+          "text": "Tvary ve 3. pádě"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rod",
+            "1. pád",
+            "3. pád (dativ)"
+          ],
+          "rows": [
+            [
+              "mužský",
+              "der / ein / mein",
+              "**dem / einem / meinem**"
+            ],
+            [
+              "ženský",
+              "die / eine / meine",
+              "**der / einer / meiner**"
+            ],
+            [
+              "střední",
+              "das / ein / mein",
+              "**dem / einem / meinem**"
+            ],
+            [
+              "množné",
+              "die / – / meine",
+              "**den / – / meinen** + **-n** na konci slova"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pomůcka: mužský a střední mají **-m**, ženský **-r**, množné **-n**. V množném čísle dostane -n i podstatné jméno: *die Kinder → mit den Kinder**n***."
+        },
+        {
+          "type": "heading",
+          "text": "Sedm předložek"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Předložka",
+            "Česky",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "mit",
+              "s, čím",
+              "mit dem Bus (autobusem), mit meiner Schwester (se sestrou)"
+            ],
+            [
+              "bei",
+              "u",
+              "bei meiner Oma (u babičky)"
+            ],
+            [
+              "zu",
+              "k, do",
+              "zum Arzt (k lékaři), zur Schule (do školy)"
+            ],
+            [
+              "aus",
+              "z (zevnitř, odkud pocházím)",
+              "aus dem Haus (z domu), aus Polen"
+            ],
+            [
+              "von",
+              "od, z",
+              "von meinem Vater (od táty), vom Bahnhof (z nádraží)"
+            ],
+            [
+              "nach",
+              "do (města, země bez členu); po",
+              "nach Berlin, nach der Schule (po škole)"
+            ],
+            [
+              "seit",
+              "od (a pořád trvá), už",
+              "seit einem Jahr (už rok)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Některé předložky se se členem **slučují**: *zu dem = **zum***, *zu der = **zur***, *bei dem = **beim***, *von dem = **vom***."
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný tvar:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich fahre mit",
+                "after": "Bus. (der Bus)",
+                "options": [
+                  "dem",
+                  "der",
+                  "den"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich wohne bei",
+                "after": "Oma. (die Oma)",
+                "options": [
+                  "meiner",
+                  "meine",
+                  "meinem"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er kommt aus",
+                "after": "Haus. (das Haus)",
+                "options": [
+                  "dem",
+                  "das",
+                  "der"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir spielen mit",
+                "after": ".",
+                "options": [
+                  "den Kindern",
+                  "die Kinder",
+                  "den Kinder"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Jedu vlakem do Vídně. (der Zug)",
+          "answer": "*mit* + dativ: *der Zug* → **dem Zug**. Do Vídně (město bez členu): **nach Wien**. **Ich fahre mit dem Zug nach Wien.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Po škole jdu k doktorovi. (die Schule, der Arzt)",
+          "answer": "Po = *nach*, *die Schule* → *der Schule*. K = *zu*, *der Arzt* → *dem Arzt* → *zum Arzt*. Na začátku je *Nach der Schule*, sloveso na 2. místě: **Nach der Schule gehe ich zum Arzt.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich fahre mit der Bus.",
+          "right": "Ich fahre mit dem Bus.",
+          "why": "*der Bus* je mužský. Ve 3. pádě má mužský rod **dem**. Tvar *der* je dativ ženského rodu."
+        },
+        {
+          "type": "summary",
+          "text": "Po **mit, bei, zu, aus, von, nach, seit** je vždy dativ: mužský a střední **dem / einem**, ženský **der / einer**, množné **den + -n**. *zum, zur, beim, vom* jsou sloučené tvary."
+        }
+      ]
+    },
+    {
+      "title": "Kam, kde, odkud",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Čeština říká „jdu **do** školy“, „jedu **do** Berlína“ i „jdu **domů**“. Němčina pro každou situaci volí jinou předložku. Tady se naučíš, která kdy sedí."
+        },
+        {
+          "type": "text",
+          "text": "Pojedeme s Jakubem na výlet do Německa. Na každé zastávce se objeví jedna předložka."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Slovíčko před podstatným jménem: s, u, k, z, od, do…",
+          "example": "mit, bei, zu, aus, von, nach, seit"
+        },
+        {
+          "type": "term",
+          "term": "Dativ",
+          "definition": "Německý 3. pád. Po těchto sedmi předložkách je vždy, i když česky je tam jiný pád.",
+          "example": "mit **dem** Zug (vlakem), bei **der** Oma (u babičky)"
+        },
+        {
+          "type": "term",
+          "term": "Sloučený tvar",
+          "definition": "Předložka a člen spojené do jednoho slova.",
+          "example": "zu + dem = zum, bei + dem = beim"
+        },
+        {
+          "type": "heading",
+          "text": "Jakubova cesta"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Jakub vyjíždí **z** domova: *Er kommt **aus** Brno.* (aus = odkud pochází, zevnitř něčeho)",
+            "Jede vlakem: *Er fährt **mit dem** Zug.* (mit = s, čím)",
+            "Cíl je město: *Er fährt **nach** Dresden.* (nach = do města nebo země bez členu)",
+            "Bydlí u strýce: *Er wohnt **bei** seinem Onkel.* (bei = u někoho)",
+            "Jde k lékaři: *Er geht **zum** Arzt.* (zu = k osobě nebo na místo)",
+            "Dostal dárek od tety: *Das Geschenk ist **von** seiner Tante.* (von = od někoho)",
+            "Učí se německy už dva roky: *Er lernt **seit** zwei Jahren Deutsch.* (seit = od, trvá dodnes)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dvě dvojice, které se pletou"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**nach Hause** = domů (kam). **zu Hause** = doma (kde). *Ich gehe nach Hause. Ich bin zu Hause.*",
+            "**nach** jen u měst a zemí bez členu: *nach Prag, nach Deutschland*. K lidem a do budov **zu**: *zu meiner Oma, zum Bahnhof, zur Schule*.",
+            "**aus** = odkud pocházím nebo zevnitř: *aus Tschechien, aus dem Haus*. **von** = od osoby nebo z místa, kde jsi byl: *von meinem Freund, vom Training*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: seit"
+        },
+        {
+          "type": "text",
+          "text": "Česky řekneš „Učím se německy **už rok**.“ v přítomném čase. Němčina to dělá stejně: **seit** + přítomný čas. *Ich wohne seit drei Jahren in Prag.* = Bydlím v Praze už tři roky (a pořád tam bydlím). Pozor: *Jahre* dostane v dativu -n: *seit drei Jahre**n***."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: patří sem *nach*, nebo *zu*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "nach",
+              "zu / zum / zur"
+            ],
+            "items": [
+              {
+                "text": "___ Berlin",
+                "group": 0
+              },
+              {
+                "text": "___ Österreich",
+                "group": 0
+              },
+              {
+                "text": "___ Hause (domů)",
+                "group": 0
+              },
+              {
+                "text": "___ meiner Oma",
+                "group": 1
+              },
+              {
+                "text": "___ Schule",
+                "group": 1
+              },
+              {
+                "text": "___ Bahnhof",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Jdu po škole domů.",
+          "answer": "Po škole = *nach der Schule* (dativ ženského rodu). Domů = *nach Hause*. **Ich gehe nach der Schule nach Hause.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Bydlím u kamaráda už týden. (der Freund, die Woche)",
+          "answer": "U = *bei*, mužský rod → *bei meinem Freund*. Už týden = *seit* + dativ ženského rodu: *seit einer Woche*. **Ich wohne seit einer Woche bei meinem Freund.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich fahre nach meiner Oma.",
+          "right": "Ich fahre zu meiner Oma.",
+          "why": "K lidem se jezdí s předložkou **zu**. *nach* je jen pro města a země bez členu (a pro *nach Hause*)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich bin nach Hause.",
+          "right": "Ich bin zu Hause.",
+          "why": "*nach Hause* = domů (směr), *zu Hause* = doma (místo)."
+        },
+        {
+          "type": "summary",
+          "text": "**aus** odkud, **mit** s čím/s kým, **nach** do města a země (a *nach Hause*), **bei** u, **zu** k lidem a na místa (a *zu Hause*), **von** od, **seit** od (trvá dodnes). Vždy s dativem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň: Ich fahre mit ___ Fahrrad. (das Fahrrad)",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "answer": 0,
+      "explanation": "Střední rod v dativu: das → dem."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Er wohnt bei ___ Tante. (die Tante)",
+      "options": [
+        "seiner",
+        "seine",
+        "seinem"
+      ],
+      "answer": 0,
+      "explanation": "Ženský rod v dativu: -er."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Wir spielen mit ___. (die Kinder)",
+      "options": [
+        "den Kindern",
+        "den Kinder",
+        "die Kindern"
+      ],
+      "answer": 0,
+      "explanation": "Množné číslo v dativu: den + -n na konci slova."
+    },
+    {
+      "type": "input",
+      "question": "Doplň sloučený tvar: Ich gehe ___ Arzt. (zu + dem)",
+      "answers": [
+        "zum"
+      ],
+      "explanation": "zu + dem = zum."
+    },
+    {
+      "type": "input",
+      "question": "Doplň sloučený tvar: Sie geht ___ Schule. (zu + der)",
+      "answers": [
+        "zur"
+      ],
+      "explanation": "zu + der = zur."
+    },
+    {
+      "type": "input",
+      "question": "Doplň předložku: Ich fahre ___ Deutschland. (do Německa)",
+      "answers": [
+        "nach"
+      ],
+      "explanation": "Do země bez členu: nach."
+    },
+    {
+      "type": "input",
+      "question": "Doplň předložku: Ich lerne ___ einem Jahr Deutsch. (už rok)",
+      "answers": [
+        "seit"
+      ],
+      "explanation": "seit = od, a stále to trvá."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Jsem doma.“?",
+      "options": [
+        "Ich bin zu Hause.",
+        "Ich bin nach Hause.",
+        "Ich bin bei Hause."
+      ],
+      "answer": 0,
+      "explanation": "zu Hause = doma, nach Hause = domů."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Jedu k babičce.“?",
+      "options": [
+        "Ich fahre zu meiner Oma.",
+        "Ich fahre nach meiner Oma.",
+        "Ich fahre bei meiner Oma."
+      ],
+      "answer": 0,
+      "explanation": "K lidem: zu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj předložku s významem.",
+      "pairs": [
+        [
+          "mit",
+          "s"
+        ],
+        [
+          "bei",
+          "u"
+        ],
+        [
+          "aus",
+          "z (odkud pocházím)"
+        ],
+        [
+          "von",
+          "od"
+        ],
+        [
+          "seit",
+          "od (trvá dodnes)"
+        ]
+      ],
+      "explanation": "Po všech těchto předložkách je dativ."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po předložce „mit“ je vždy 3. pád (dativ).",
+      "answer": true,
+      "explanation": "mit, bei, zu, aus, von, nach, seit mají vždy dativ."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich fahre mit der Zug.“ je správně.",
+      "answer": false,
+      "explanation": "der Zug je mužský, v dativu dem: mit dem Zug."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Po škole jdu domů.“",
+      "items": [
+        "Nach der Schule",
+        "gehe",
+        "ich",
+        "nach Hause."
+      ],
+      "explanation": "Sloveso na 2. místě; nach der Schule = po škole, nach Hause = domů."
+    },
+    {
+      "type": "open",
+      "question": "Které předložky mají vždy 3. pád a jak se mění členy?",
+      "answer": "mit, bei, zu, aus, von, nach a seit. V dativu je mužský a střední rod dem/einem, ženský der/einer a množné číslo den a slovo dostane -n."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi „nach Hause“ a „zu Hause“ a mezi „nach“ a „zu“.",
+      "answer": "nach Hause = domů, zu Hause = doma. nach se používá u měst a zemí bez členu (nach Berlin), zu u osob a míst (zu meiner Oma, zum Bahnhof)."
+    }
+  ]
+}

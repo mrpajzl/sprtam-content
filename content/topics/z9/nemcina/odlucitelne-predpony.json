@@ -1,0 +1,497 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "odlucitelne-predpony",
+  "title": "Slovesa s odlučitelnou předponou",
+  "emoji": "✂️",
+  "explanations": [
+    {
+      "title": "Utíkající předpona",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve slovníku najdeš sloveso **aufstehen** (vstávat). Ale ve větě ho Němec napíše takhle: *Ich **stehe** um sieben Uhr **auf**.* Předpona *auf* utekla na konec věty!"
+        },
+        {
+          "type": "text",
+          "text": "Takových sloves je hodně a jsou mezi nimi ta nejběžnější: vstávat, nakupovat, telefonovat, dívat se na televizi. Kdo nezná pravidlo, nepozná je ve větě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předpona",
+          "definition": "Kousek na začátku slova, který mění jeho význam. Česky třeba *vy-*, *na-*, *při-*.",
+          "example": "jít → **při**jít, **vy**jít"
+        },
+        {
+          "type": "term",
+          "term": "Odlučitelná předpona",
+          "definition": "Předpona, která se v oznamovací větě a v otázce **odtrhne** od slovesa a jde na **konec věty**. Je přízvučná: AUFstehen.",
+          "example": "aufstehen → Ich stehe **auf**."
+        },
+        {
+          "type": "term",
+          "term": "Sloveso na 2. místě",
+          "definition": "Připomenutí: v oznamovací větě stojí sloveso vždy na 2. místě.",
+          "example": "Heute **kaufe** ich ein."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidlo"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odtrhni předponu: *auf|stehen*.",
+            "Zbytek slovesa vyčasuj a dej na **2. místo**: *ich stehe*.",
+            "Předponu dej na **úplný konec** věty: *Ich stehe um 7 Uhr **auf**.*"
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "Česky",
+            "Ve větě"
+          ],
+          "rows": [
+            [
+              "**auf**stehen",
+              "vstávat",
+              "Ich stehe früh **auf**."
+            ],
+            [
+              "**ein**kaufen",
+              "nakupovat",
+              "Mama kauft im Supermarkt **ein**."
+            ],
+            [
+              "**an**rufen",
+              "zavolat (telefonem)",
+              "Ich rufe Oma **an**."
+            ],
+            [
+              "**fern**sehen",
+              "dívat se na televizi",
+              "Er sieht am Abend **fern**."
+            ],
+            [
+              "**mit**kommen",
+              "jít s někým",
+              "Kommst du **mit**?"
+            ],
+            [
+              "**auf**räumen",
+              "uklízet",
+              "Wir räumen das Zimmer **auf**."
+            ],
+            [
+              "**an**kommen",
+              "přijet",
+              "Der Zug kommt um 8 Uhr **an**."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *fernsehen* má i změnu samohlásky: *er sieht fern*. Kmen se časuje jako obyčejné *sehen*."
+        },
+        {
+          "type": "heading",
+          "text": "Se způsobovým slovesem"
+        },
+        {
+          "type": "text",
+          "text": "Když je ve větě způsobové sloveso (*können, müssen, wollen*…), jde celý infinitiv na konec **vcelku**: *Ich muss früh **aufstehen**.* Předpona se neodtrhne."
+        },
+        {
+          "type": "text",
+          "text": "Doplň, co patří na konec věty:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich stehe um sechs Uhr",
+                "after": ".",
+                "options": [
+                  "auf",
+                  "aufstehen",
+                  "stehe"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Kaufst du heute",
+                "after": "?",
+                "options": [
+                  "ein",
+                  "einkaufen",
+                  "kauf"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich muss Oma",
+                "after": ".",
+                "options": [
+                  "anrufen",
+                  "an",
+                  "rufe an"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wann kommt der Bus",
+                "after": "?",
+                "options": [
+                  "an",
+                  "ankommen",
+                  "kommt"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Večer se dívám na televizi.",
+          "answer": "*fernsehen* → *ich sehe* na 2. místo, *fern* na konec. Večer = *am Abend* na začátek. **Am Abend sehe ich fern.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Musíš si uklidit pokoj.",
+          "answer": "Způsobové sloveso *musst* na 2. místě, infinitiv *aufräumen* vcelku na konci. **Du musst dein Zimmer aufräumen.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich aufstehe um sieben Uhr.",
+          "right": "Ich stehe um sieben Uhr auf.",
+          "why": "Odlučitelná předpona se v oznamovací větě odtrhne a jde na konec. Na 2. místě je jen *stehe*."
+        },
+        {
+          "type": "summary",
+          "text": "Odlučitelná předpona (*auf-, ein-, an-, mit-, fern-*…) jde **na konec věty**: *Ich stehe um 7 auf.* Se způsobovým slovesem zůstane infinitiv vcelku na konci: *Ich muss aufstehen.*"
+        }
+      ]
+    },
+    {
+      "title": "Odlučitelné a neodlučitelné",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ne každá předpona utíká. *verstehen* (rozumět) se nikdy nerozdělí: *Ich verstehe dich.* Jak poznat, která předpona je odlučitelná a která ne?"
+        },
+        {
+          "type": "text",
+          "text": "Pomůže ti krátký seznam a výslovnost. Pak se nespleteš ani u slov, která vidíš poprvé."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předpona",
+          "definition": "Kousek na začátku slovesa, který mění význam.",
+          "example": "**auf**stehen, **ver**stehen"
+        },
+        {
+          "type": "term",
+          "term": "Přízvuk",
+          "definition": "Slabika, kterou ve slově vyslovíš nejsilněji. Česky je vždy na první slabice.",
+          "example": "AUFstehen (přízvuk na *auf*), verSTEhen (přízvuk na *ste*)"
+        },
+        {
+          "type": "term",
+          "term": "Neodlučitelná předpona",
+          "definition": "Předpona, která **zůstane** se slovesem vždycky. Je nepřízvučná.",
+          "example": "verstehen → Ich verstehe."
+        },
+        {
+          "type": "heading",
+          "text": "Dva seznamy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Předpony",
+            "Příklady"
+          ],
+          "rows": [
+            [
+              "odlučitelné (utíkají)",
+              "ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-, fern-, zurück-",
+              "abfahren (odjet), aufmachen (otevřít), zumachen (zavřít), aussehen (vypadat)"
+            ],
+            [
+              "neodlučitelné (zůstávají)",
+              "be-, ver-, er-, ent-, emp-, ge-, zer-, miss-",
+              "besuchen (navštívit), verstehen (rozumět), bekommen (dostat), erzählen (vyprávět)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pomůcka: neodlučitelné předpony jsou krátké a „nedávají smysl“ samy o sobě. Odlučitelné předpony většinou existují i jako samostatná slova: *auf* (na), *mit* (s), *aus* (z)."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slovesa:"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "předpona utíká",
+              "předpona zůstává"
+            ],
+            "items": [
+              {
+                "text": "aufmachen",
+                "group": 0
+              },
+              {
+                "text": "einkaufen",
+                "group": 0
+              },
+              {
+                "text": "mitkommen",
+                "group": 0
+              },
+              {
+                "text": "abfahren",
+                "group": 0
+              },
+              {
+                "text": "besuchen",
+                "group": 1
+              },
+              {
+                "text": "verstehen",
+                "group": 1
+              },
+              {
+                "text": "bekommen",
+                "group": 1
+              },
+              {
+                "text": "erzählen",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: bekommen"
+        },
+        {
+          "type": "text",
+          "text": "*bekommen* vypadá jako anglické *become* (stát se), ale znamená **dostat**: *Ich bekomme ein Geschenk.* = Dostanu dárek. A předpona *be-* se neodtrhává."
+        },
+        {
+          "type": "heading",
+          "text": "Otázka a rozkaz"
+        },
+        {
+          "type": "text",
+          "text": "V otázce předpona utíká taky: *Wann **fährt** der Zug **ab**?* (Kdy odjíždí vlak?) *Machst du das Fenster **zu**?* (Zavřeš okno?)"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Kdy navštívíš babičku? (besuchen)",
+          "answer": "*be-* je neodlučitelná, sloveso zůstane celé. W-otázka: *Wann* + sloveso + podmět. **Wann besuchst du Oma?**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Otevřu okno. (aufmachen, das Fenster)",
+          "answer": "*auf-* utíká. *ich mache* na 2. místě, *auf* na konec. **Ich mache das Fenster auf.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich suche Oma be.",
+          "right": "Ich besuche Oma.",
+          "why": "*be-* je neodlučitelná předpona. Zůstává se slovesem: *besuche*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich bekomme ein Hund. (myšleno: Stanu se psem.)",
+          "right": "Ich bekomme einen Hund. = Dostanu psa.",
+          "why": "*bekommen* znamená **dostat**, ne „stát se“. Pes je mužského rodu, proto ve 4. pádě *einen Hund*."
+        },
+        {
+          "type": "summary",
+          "text": "**Utíkají** přízvučné předpony *ab-, an-, auf-, aus-, ein-, mit-, zu-, fern-*. **Zůstávají** nepřízvučné *be-, ver-, er-, ent-, ge-, zer-, emp-, miss-*. *bekommen* = dostat."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Ich stehe um sieben Uhr auf.",
+        "Ich aufstehe um sieben Uhr.",
+        "Ich stehe auf um sieben Uhr."
+      ],
+      "answer": 0,
+      "explanation": "Předpona auf jde na úplný konec věty."
+    },
+    {
+      "type": "choice",
+      "question": "Kam patří ve větě odlučitelná předpona?",
+      "options": [
+        "na konec věty",
+        "na 2. místo",
+        "před podmět"
+      ],
+      "answer": 0,
+      "explanation": "Sloveso je na 2. místě, předpona na konci."
+    },
+    {
+      "type": "input",
+      "question": "Doplň předponu: Mama kauft im Supermarkt ___.",
+      "answers": [
+        "ein"
+      ],
+      "explanation": "einkaufen → kauft … ein."
+    },
+    {
+      "type": "input",
+      "question": "Doplň předponu: Wann kommt der Zug ___?",
+      "answers": [
+        "an"
+      ],
+      "explanation": "ankommen → kommt … an."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa fernsehen (první část): Er ___ am Abend fern.",
+      "answers": [
+        "sieht"
+      ],
+      "explanation": "sehen mění u er samohlásku: er sieht … fern."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Zavolám babičce.“",
+      "items": [
+        "Ich",
+        "rufe",
+        "Oma",
+        "an."
+      ],
+      "explanation": "anrufen: rufe na 2. místě, an na konci."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Musím uklidit.“",
+      "items": [
+        "Ich",
+        "muss",
+        "aufräumen."
+      ],
+      "explanation": "Se způsobovým slovesem zůstává infinitiv vcelku na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Které sloveso má neodlučitelnou předponu?",
+      "options": [
+        "verstehen",
+        "aufstehen",
+        "mitkommen"
+      ],
+      "answer": 0,
+      "explanation": "ver- je neodlučitelná předpona, verstehen se nikdy nerozdělí."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „bekommen“?",
+      "options": [
+        "dostat",
+        "stát se",
+        "přijít"
+      ],
+      "answer": 0,
+      "explanation": "Falešný kamarád: bekommen = dostat (ne anglické become)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Ich besuche meine Oma.“ je předpona správně u slovesa.",
+      "answer": true,
+      "explanation": "be- je neodlučitelná, nikdy se neodtrhává."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Kommst du mit?“ je správná otázka.",
+      "answer": true,
+      "explanation": "mitkommen: kommst na začátku, mit na konci."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso s významem.",
+      "pairs": [
+        [
+          "aufstehen",
+          "vstávat"
+        ],
+        [
+          "einkaufen",
+          "nakupovat"
+        ],
+        [
+          "anrufen",
+          "zavolat"
+        ],
+        [
+          "fernsehen",
+          "dívat se na televizi"
+        ],
+        [
+          "aufräumen",
+          "uklízet"
+        ]
+      ],
+      "explanation": "Všechna mají odlučitelnou předponu."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich will heute ___.",
+      "options": [
+        "einkaufen",
+        "kaufe ein",
+        "ein"
+      ],
+      "answer": 0,
+      "explanation": "Se způsobovým slovesem jde infinitiv vcelku na konec."
+    },
+    {
+      "type": "open",
+      "question": "Co je odlučitelná předpona a jak se chová ve větě? Uveď příklad.",
+      "answer": "Je to předpona, která se v oznamovací větě a v otázce odtrhne od slovesa a jde na konec věty. Například aufstehen: Ich stehe um sieben Uhr auf. Se způsobovým slovesem zůstává infinitiv celý: Ich muss aufstehen."
+    },
+    {
+      "type": "open",
+      "question": "Popiš německy své ráno. Použij aspoň dvě slovesa s odlučitelnou předponou.",
+      "answer": "Ich stehe um sechs Uhr auf. Dann frühstücke ich. Um sieben Uhr rufe ich meinen Freund an und wir fahren zusammen in die Schule."
+    }
+  ]
+}

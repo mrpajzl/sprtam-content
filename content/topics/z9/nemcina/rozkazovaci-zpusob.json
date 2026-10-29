@@ -1,0 +1,528 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "rozkazovaci-zpusob",
+  "title": "Rozkazovací způsob",
+  "emoji": "📣",
+  "explanations": [
+    {
+      "title": "Tři adresáti",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Pojď sem! Poslouchejte! Posaďte se, prosím.“ Rozkazy, prosby a rady slyšíš ve škole, doma i na ulici. V němčině záleží na tom, **komu** rozkaz dáváš: kamarádovi, víc kamarádům, nebo dospělému."
+        },
+        {
+          "type": "text",
+          "text": "Pro každého je jiný tvar. Všechny tři ale odvodíš z tvarů, které už znáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozkazovací způsob (imperativ)",
+          "definition": "Tvar slovesa, kterým někomu říkáš, co má dělat: rozkaz, prosba, rada.",
+          "example": "Komm! = Pojď! Hör zu! = Poslouchej!"
+        },
+        {
+          "type": "term",
+          "term": "Tvar pro du",
+          "definition": "Připomenutí: sloveso s koncovkou -st, kterým oslovuješ jednoho kamaráda.",
+          "example": "du kommst, du machst"
+        },
+        {
+          "type": "term",
+          "term": "Vykání (Sie)",
+          "definition": "Zdvořilé oslovení dospělého, píše se s velkým S.",
+          "example": "Kommen Sie! = Pojďte!"
+        },
+        {
+          "type": "heading",
+          "text": "Jak na to"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Komu",
+            "Postup",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "jednomu kamarádovi (du)",
+              "tvar pro *du* bez *du* a bez -st",
+              "du kommst → **Komm!**",
+              "Pojď!"
+            ],
+            [
+              "víc kamarádům (ihr)",
+              "tvar pro *ihr* bez *ihr*",
+              "ihr kommt → **Kommt!**",
+              "Pojďte!"
+            ],
+            [
+              "dospělému (Sie)",
+              "sloveso + *Sie*",
+              "Sie kommen → **Kommen Sie!**",
+              "Pojďte!"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Za rozkazem se v němčině obvykle píše vykřičník. Slovo **bitte** (prosím) ho udělá zdvořilejším: *Komm bitte!*"
+        },
+        {
+          "type": "heading",
+          "text": "Další příklady"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "du",
+            "ihr",
+            "Sie"
+          ],
+          "rows": [
+            [
+              "machen (dělat)",
+              "Mach!",
+              "Macht!",
+              "Machen Sie!"
+            ],
+            [
+              "schreiben (psát)",
+              "Schreib!",
+              "Schreibt!",
+              "Schreiben Sie!"
+            ],
+            [
+              "warten (čekat)",
+              "Warte!",
+              "Wartet!",
+              "Warten Sie!"
+            ],
+            [
+              "sprechen (mluvit)",
+              "Sprich!",
+              "Sprecht!",
+              "Sprechen Sie!"
+            ],
+            [
+              "lesen (číst)",
+              "Lies!",
+              "Lest!",
+              "Lesen Sie!"
+            ],
+            [
+              "sein (být)",
+              "Sei!",
+              "Seid!",
+              "Seien Sie!"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Kmen na -t/-d (*warten, arbeiten*) dostane u *du* koncovku **-e**: *Warte! Arbeite!*",
+            "Změna e → i / ie zůstává: *du sprichst → Sprich!, du liest → Lies!, du isst → Iss!*",
+            "Změna a → ä **nezůstává**: *du fährst → Fahr!, du schläfst → Schlaf!*",
+            "*sein* je nepravidelné: *Sei leise! Seid leise! Seien Sie leise!* (Buď/Buďte potichu!)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný rozkaz:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Tom,",
+                "after": "bitte!",
+                "options": [
+                  "komm",
+                  "kommst",
+                  "kommen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Kinder,",
+                "after": "leise!",
+                "options": [
+                  "seid",
+                  "sei",
+                  "sind"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Herr Weber,",
+                "after": "bitte!",
+                "options": [
+                  "warten Sie",
+                  "wartet",
+                  "warte"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Lisa,",
+                "after": "den Text!",
+                "options": [
+                  "lies",
+                  "les",
+                  "liest"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Paul,",
+                "after": "langsam!",
+                "options": [
+                  "fahr",
+                  "fähr",
+                  "fährst"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Řekni kamarádovi: Pomoz mi!",
+          "answer": "*helfen* → *du hilfst*. Bez *du* a bez -st: **Hilf!** Celá věta: **Hilf mir bitte!**"
+        },
+        {
+          "type": "example",
+          "question": "Řekni paní učitelce: Opakujte to prosím. (wiederholen)",
+          "answer": "Vykání → sloveso + *Sie*: **Wiederholen Sie das bitte!**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Sei Sie leise!",
+          "right": "Seien Sie leise!",
+          "why": "Sloveso *sein* má u vykání zvláštní tvar **seien**."
+        },
+        {
+          "type": "summary",
+          "text": "du: **Komm! Sprich! Fahr! Warte!**; ihr: **Kommt!**; Sie: **Kommen Sie!** *sein*: **Sei! Seid! Seien Sie!** Zdvořile přidej *bitte*."
+        }
+      ]
+    },
+    {
+      "title": "Ve třídě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V hodině němčiny uslyšíš od učitelky spoustu pokynů: *Hört zu! Öffnet die Bücher! Schreibt das auf!* Když jim rozumíš, víš hned, co máš dělat."
+        },
+        {
+          "type": "text",
+          "text": "A když budeš něco potřebovat ty, umíš o to požádat kamaráda i paní učitelku."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozkaz",
+          "definition": "Věta, kterou někomu říkáš, aby něco udělal. Sloveso stojí **na začátku**.",
+          "example": "Öffnet die Bücher! = Otevřete knihy!"
+        },
+        {
+          "type": "term",
+          "term": "Odlučitelná předpona",
+          "definition": "Připomenutí: předpona jako *auf-, zu-, an-*, která jde na konec věty.",
+          "example": "zuhören → Hör zu!"
+        },
+        {
+          "type": "term",
+          "term": "Bitte",
+          "definition": "**Prosím**. Do rozkazu se dává hned za sloveso nebo na konec.",
+          "example": "Komm bitte! / Komm, bitte!"
+        },
+        {
+          "type": "heading",
+          "text": "Pokyny ve třídě"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Učitelka třídě (ihr)",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Hört zu!",
+              "Poslouchejte!"
+            ],
+            [
+              "Öffnet die Bücher!",
+              "Otevřete knihy!"
+            ],
+            [
+              "Lest den Text!",
+              "Přečtěte text!"
+            ],
+            [
+              "Schreibt das auf!",
+              "Zapište si to!"
+            ],
+            [
+              "Steht auf!",
+              "Vstaňte!"
+            ],
+            [
+              "Seid bitte leise!",
+              "Buďte prosím potichu!"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: rozkaz vypadá skoro jako otázka bez podmětu. *Hört ihr zu?* (Posloucháte?) → *Hört zu!* (Poslouchejte!)"
+        },
+        {
+          "type": "heading",
+          "text": "Rozkaz pro jednoho"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vyčasuj sloveso pro *du*: *du öffnest*.",
+            "Škrtni *du* a koncovku *-st*: *öffne*.",
+            "Odlučitelnou předponu dej na konec: *du hörst zu* → *Hör zu!*",
+            "Přidej vykřičník a podle potřeby *bitte*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U některých sloves (*öffnen, warten, arbeiten*) zůstane na konci **-e**, protože by se tvar jinak nedal vyslovit: *Öffne das Fenster!*"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky: jak by to řekla učitelka jednomu žákovi?"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Hört zu!",
+                "back": "Hör zu!"
+              },
+              {
+                "front": "Lest!",
+                "back": "Lies!"
+              },
+              {
+                "front": "Steht auf!",
+                "back": "Steh auf!"
+              },
+              {
+                "front": "Sprecht laut!",
+                "back": "Sprich laut!"
+              },
+              {
+                "front": "Öffnet das Buch!",
+                "back": "Öffne das Buch!"
+              },
+              {
+                "front": "Seid leise!",
+                "back": "Sei leise!"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Požádej kamarádku, aby zavřela okno. (zumachen, das Fenster)",
+          "answer": "*du machst zu* → škrtnu *du* a *-st*: *Mach … zu*. Předpona na konec: **Mach bitte das Fenster zu!**"
+        },
+        {
+          "type": "example",
+          "question": "Požádej pana ředitele, aby se posadil. (sich setzen = posadit se)",
+          "answer": "Vykání: sloveso + *Sie*, zvratné *sich* (se) stojí hned za *Sie*. **Setzen Sie sich bitte!**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Liest den Text!",
+          "right": "Lies den Text!",
+          "why": "Tvar pro *du* je *du liest*. Když škrtneš *du* a koncovku *-st*, zbude *lies*. Protože kmen končí na *s*, ztratí se jen *-t*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Fähr langsam!",
+          "right": "Fahr langsam!",
+          "why": "U sloves s a → ä se přehláska do rozkazu **nedostane**: *du fährst*, ale *Fahr!*"
+        },
+        {
+          "type": "summary",
+          "text": "Rozkaz začíná **slovesem**. Pro *ihr* je to tvar bez *ihr* (*Hört zu!*), pro *du* tvar bez *du* a *-st* (*Hör zu! Lies!*), pro *Sie* sloveso + *Sie* (*Hören Sie zu!*). Předpona jde na konec."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak řekneš kamarádovi „Pojď!“?",
+      "options": [
+        "Komm!",
+        "Kommst!",
+        "Kommen!"
+      ],
+      "answer": 0,
+      "explanation": "du kommst → škrtnu du a -st → Komm!"
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš paní učitelce „Pojďte prosím!“?",
+      "options": [
+        "Kommen Sie bitte!",
+        "Kommt bitte!",
+        "Komm Sie bitte!"
+      ],
+      "answer": 0,
+      "explanation": "Vykání: sloveso + Sie."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš dvěma kamarádům „Poslouchejte!“?",
+      "options": [
+        "Hört zu!",
+        "Hör zu!",
+        "Hören zu!"
+      ],
+      "answer": 0,
+      "explanation": "ihr hört zu → Hört zu!"
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro jednoho kamaráda od slovesa lesen: ___ das Buch!",
+      "answers": [
+        "Lies"
+      ],
+      "explanation": "du liest → lies (změna e → ie zůstává)."
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro jednoho kamaráda od slovesa sprechen: ___ lauter!",
+      "answers": [
+        "Sprich"
+      ],
+      "explanation": "du sprichst → sprich."
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro jednoho kamaráda od slovesa fahren: ___ vorsichtig!",
+      "answers": [
+        "Fahr",
+        "Fahre"
+      ],
+      "explanation": "Změna a → ä v rozkazu nezůstává: Fahr!"
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro jednoho kamaráda od slovesa warten: ___ bitte!",
+      "answers": [
+        "Warte"
+      ],
+      "explanation": "Kmen na -t dostane u du koncovku -e: Warte!"
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu s rozkazem od slovesa sein.",
+      "pairs": [
+        [
+          "du",
+          "Sei leise!"
+        ],
+        [
+          "ihr",
+          "Seid leise!"
+        ],
+        [
+          "Sie",
+          "Seien Sie leise!"
+        ]
+      ],
+      "explanation": "sein má v rozkazu nepravidelné tvary."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do rozkazu „Vstaň prosím!“ (aufstehen)",
+      "items": [
+        "Steh",
+        "bitte",
+        "auf!"
+      ],
+      "explanation": "Sloveso na začátku, bitte za ním, předpona auf na konci."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do rozkazu „Zavřete prosím dveře!“ (vykání, zumachen)",
+      "items": [
+        "Machen",
+        "Sie",
+        "bitte",
+        "die Tür",
+        "zu!"
+      ],
+      "explanation": "Sloveso, Sie, pak zbytek a předpona na konci."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Fähr langsam!“ je správný rozkaz.",
+      "answer": false,
+      "explanation": "Přehláska z du fährst se do rozkazu nedostane: Fahr langsam!"
+    },
+    {
+      "type": "truefalse",
+      "question": "V rozkazu stojí sloveso na začátku věty.",
+      "answer": true,
+      "explanation": "Komm! Hört zu! Kommen Sie!"
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Öffnet die Bücher!“?",
+      "options": [
+        "Otevřete knihy!",
+        "Otevři knihu!",
+        "Otevíráte knihy?"
+      ],
+      "answer": 0,
+      "explanation": "Tvar öffnet je rozkaz pro ihr (vy, víc lidí)."
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří rozkaz pro du, ihr a Sie? Ukaž na slovesu „kommen“.",
+      "answer": "Pro du vezmu tvar du kommst a škrtnu du a -st: Komm! Pro ihr vezmu tvar bez ihr: Kommt! Pro Sie dám sloveso a za něj Sie: Kommen Sie!"
+    },
+    {
+      "type": "open",
+      "question": "Dej německy tři pokyny: kamarádovi, celé třídě a paní učitelce.",
+      "answer": "Kamarádovi: Hilf mir bitte! Třídě: Seid bitte leise! Paní učitelce: Wiederholen Sie das bitte!"
+    }
+  ]
+}

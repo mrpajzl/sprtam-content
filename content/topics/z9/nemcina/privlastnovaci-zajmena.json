@@ -1,0 +1,534 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "privlastnovaci-zajmena",
+  "title": "Přivlastňovací zájmena",
+  "emoji": "👨‍👩‍👧",
+  "explanations": [
+    {
+      "title": "Čí to je",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„To je můj brácha. To je její pes. To je náš dům.“ Když vyprávíš o rodině nebo o věcech, pořád říkáš, **čí** co je. K tomu slouží přivlastňovací zájmena."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: koncovky už znáš. Chovají se úplně stejně jako *ein* a *kein*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přivlastňovací zájmeno",
+          "definition": "Slovo, které říká, **komu** něco patří: můj, tvůj, jeho, její, náš…",
+          "example": "mein Hund = můj pes"
+        },
+        {
+          "type": "term",
+          "term": "Vlastník",
+          "definition": "Ten, komu věc patří.",
+          "example": "Ve „její pes“ je vlastník ona."
+        },
+        {
+          "type": "term",
+          "term": "Rod a člen",
+          "definition": "Připomenutí: každé podstatné jméno má rod, který ukazuje člen: der (mužský), die (ženský), das (střední), v množném čísle die.",
+          "example": "der Vater, die Mutter, das Kind, die Eltern"
+        },
+        {
+          "type": "heading",
+          "text": "Kdo je vlastník"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "Zájmeno",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "ich",
+              "**mein**",
+              "můj"
+            ],
+            [
+              "du",
+              "**dein**",
+              "tvůj"
+            ],
+            [
+              "er / es",
+              "**sein**",
+              "jeho"
+            ],
+            [
+              "sie (ona)",
+              "**ihr**",
+              "její"
+            ],
+            [
+              "wir",
+              "**unser**",
+              "náš"
+            ],
+            [
+              "ihr",
+              "**euer**",
+              "váš (vy kamarádi)"
+            ],
+            [
+              "sie (oni)",
+              "**ihr**",
+              "jejich"
+            ],
+            [
+              "Sie (vykání)",
+              "**Ihr**",
+              "Váš"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Koncovka podle věci"
+        },
+        {
+          "type": "text",
+          "text": "Koncovka se řídí **věcí, která patří**, ne vlastníkem. Je stejná jako u *ein / kein*:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Věc",
+            "1. pád",
+            "4. pád",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "der Vater",
+              "mein Vater",
+              "mein**en** Vater",
+              "můj otec"
+            ],
+            [
+              "die Mutter",
+              "mein**e** Mutter",
+              "mein**e** Mutter",
+              "moje matka"
+            ],
+            [
+              "das Kind",
+              "mein Kind",
+              "mein Kind",
+              "moje dítě"
+            ],
+            [
+              "die Eltern (množné)",
+              "mein**e** Eltern",
+              "mein**e** Eltern",
+              "moji rodiče"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor u *euer*: když se přidá koncovka, *e* uprostřed vypadne: *euer Vater*, ale **eure** Mutter."
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný tvar:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Das ist",
+                "after": "Schwester.",
+                "options": [
+                  "meine",
+                  "mein",
+                  "meinen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich habe",
+                "after": "Ball. (der Ball, 4. pád)",
+                "options": [
+                  "deinen",
+                  "dein",
+                  "deine"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wo ist",
+                "after": "Auto? (das Auto)",
+                "options": [
+                  "unser",
+                  "unsere",
+                  "unseren"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sind das",
+                "after": "Eltern?",
+                "options": [
+                  "eure",
+                  "euere",
+                  "euer"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: To je můj bratr a moje sestra.",
+          "answer": "Bratr = *der Bruder* → *mein Bruder*. Sestra = *die Schwester* → *meine Schwester*. Jde o dva lidi, proto *Das sind*: **Das sind mein Bruder und meine Schwester.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Máme psa. Náš pes se jmenuje Bobby.",
+          "answer": "*der Hund*, 1. pád → *unser Hund*. **Wir haben einen Hund. Unser Hund heißt Bobby.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Das ist mein Mutter.",
+          "right": "Das ist meine Mutter.",
+          "why": "*Mutter* je ženského rodu (*die*), proto *meine*, stejně jako *eine Mutter*."
+        },
+        {
+          "type": "summary",
+          "text": "*mein, dein, sein, ihr, unser, euer, ihr, Ihr* podle vlastníka. Koncovka podle věci, jako u *ein*: **mein Vater, meine Mutter, mein Kind, meine Eltern**, ve 4. pádě **meinen Vater**."
+        }
+      ]
+    },
+    {
+      "title": "Jeho, nebo její",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky řekneš: „Tom má psa. **Jeho** pes je velký.“ a „Anna má psa. **Její** pes je malý.“ Němčina rozlišuje *jeho* a *její* úplně stejně: **sein** a **ihr**."
+        },
+        {
+          "type": "text",
+          "text": "Potíž je jinde. Čeština má slovo **svůj** a němčina ho nemá. A slovo *ihr* může znamenat tři různé věci."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přivlastňovací zájmeno",
+          "definition": "Slovo, které říká, komu něco patří.",
+          "example": "sein Hund = jeho pes, ihr Hund = její pes"
+        },
+        {
+          "type": "term",
+          "term": "Svůj",
+          "definition": "České zájmeno, kterým odkazuješ na podmět (toho, kdo něco dělá). Němčina ho **nemá**: místo něj použije *mein, dein, sein, ihr…* podle osoby.",
+          "example": "Miluju svou mámu. = Ich liebe **meine** Mama."
+        },
+        {
+          "type": "term",
+          "term": "Podmět",
+          "definition": "Kdo nebo co něco dělá.",
+          "example": "**Anna** liebt ihren Hund."
+        },
+        {
+          "type": "heading",
+          "text": "Dvě otázky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Komu** věc patří? Klukovi nebo něčemu „das“ → *sein*. Holce → *ihr*. Víc lidem → *ihr*. Mně → *mein*…",
+            "**Jaká** je věc? Podle jejího rodu a pádu přidej koncovku jako u *ein*: mužský ve 4. pádě *-en*, ženský a množné *-e*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Věta",
+            "Vlastník",
+            "Věc",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "Tom liebt ___ Katze.",
+              "Tom → sein",
+              "die Katze → -e",
+              "Tom liebt **seine** Katze."
+            ],
+            [
+              "Anna liebt ___ Hund.",
+              "Anna → ihr",
+              "der Hund, 4. pád → -en",
+              "Anna liebt **ihren** Hund."
+            ],
+            [
+              "Ich besuche ___ Oma.",
+              "ich → mein",
+              "die Oma → -e",
+              "Ich besuche **meine** Oma."
+            ],
+            [
+              "Die Kinder suchen ___ Ball.",
+              "oni → ihr",
+              "der Ball, 4. pád → -en",
+              "Die Kinder suchen **ihren** Ball."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tři významy ihr"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**ihr** = její: *Lena und ihr Bruder* (Lena a její bratr)",
+            "**ihr** = jejich: *Die Kinder und ihr Lehrer* (děti a jejich učitel)",
+            "**Ihr** = Váš (vykání, velké I): *Frau Nová, ist das Ihr Auto?* (Paní Nová, je to Vaše auto?)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "A pozor, *ihr* je i osobní zájmeno „vy“: *Ihr seid nett.* Které *ihr* to je, poznáš podle toho, jestli za ním stojí podstatné jméno."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: patří do věty *sein*, nebo *ihr*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "sein",
+              "ihr"
+            ],
+            "items": [
+              {
+                "text": "Peter und ___ Vater",
+                "group": 0
+              },
+              {
+                "text": "Eva und ___ Vater",
+                "group": 1
+              },
+              {
+                "text": "das Kind und ___ Ball",
+                "group": 0
+              },
+              {
+                "text": "die Kinder und ___ Ball",
+                "group": 1
+              },
+              {
+                "text": "Opa und ___ Hut",
+                "group": 0
+              },
+              {
+                "text": "Oma und ___ Hut",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Petra hledá svůj mobil. (das Handy)",
+          "answer": "Čeština říká „svůj“, němčina se zeptá: kdo je vlastník? Petra = ona → *ihr*. Mobil je střední (*das*), ve 4. pádě beze změny. **Petra sucht ihr Handy.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Pan Novák, je to Váš klíč? (der Schlüssel)",
+          "answer": "Vykání → *Ihr* s velkým I. Klíč je mužský, ale tady stojí v 1. pádě (*das ist…*) → bez koncovky. **Herr Novák, ist das Ihr Schlüssel?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Anna liebt seinen Hund. (myšleno: svého psa)",
+          "right": "Anna liebt ihren Hund.",
+          "why": "Pes je sice mužského rodu, ale vlastníkem je Anna, tedy ona → *ihr*. Koncovka *-en* pak patří k psovi. *seinen Hund* by znamenalo „jeho psa“, psa nějakého muže."
+        },
+        {
+          "type": "summary",
+          "text": "Zájmeno vybírá **vlastník** (Tom → *sein*, Anna → *ihr*), koncovku **věc** (*ihren Hund, seine Katze*). Místo českého *svůj* použij zájmeno podle osoby."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj osobu s přivlastňovacím zájmenem.",
+      "pairs": [
+        [
+          "ich",
+          "mein"
+        ],
+        [
+          "du",
+          "dein"
+        ],
+        [
+          "er",
+          "sein"
+        ],
+        [
+          "wir",
+          "unser"
+        ],
+        [
+          "ihr (vy)",
+          "euer"
+        ]
+      ],
+      "explanation": "sie (ona i oni) → ihr, Sie → Ihr."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Das ist ___ Mutter. (moje)",
+      "options": [
+        "meine",
+        "mein",
+        "meinen"
+      ],
+      "answer": 0,
+      "explanation": "die Mutter je ženská → meine."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich besuche ___ Opa. (svého, 4. pád)",
+      "options": [
+        "meinen",
+        "mein",
+        "meine"
+      ],
+      "answer": 0,
+      "explanation": "der Opa, 4. pád mužského rodu → meinen."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Lena und ___ Bruder spielen Tennis. (její bratr)",
+      "options": [
+        "ihr",
+        "sein",
+        "dein"
+      ],
+      "answer": 0,
+      "explanation": "Vlastník je Lena (ona) → ihr."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Max sucht ___ Handy. (svůj mobil, das Handy)",
+      "answers": [
+        "sein"
+      ],
+      "explanation": "Vlastník Max → sein; das Handy ve 4. pádě bez koncovky."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Anna liebt ___ Hund. (svého psa, der Hund)",
+      "answers": [
+        "ihren"
+      ],
+      "explanation": "Vlastník Anna → ihr; der Hund ve 4. pádě → ihren."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Wo sind ___ Eltern? (vaše, ihr = vy)",
+      "answers": [
+        "eure"
+      ],
+      "explanation": "euer + e → eure (prostřední e vypadne)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Koncovka přivlastňovacího zájmena se řídí vlastníkem.",
+      "answer": false,
+      "explanation": "Vlastník vybírá zájmeno (sein/ihr), koncovka se řídí věcí, která patří."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Frau Weber, ist das Ihr Buch?“ znamená „Paní Weberová, je to Vaše kniha?“",
+      "answer": true,
+      "explanation": "Velké Ihr = Váš (vykání)."
+    },
+    {
+      "type": "choice",
+      "question": "Jak přeložíš „Tom miluje svou kočku.“?",
+      "options": [
+        "Tom liebt seine Katze.",
+        "Tom liebt ihre Katze.",
+        "Tom liebt sein Katze."
+      ],
+      "answer": 0,
+      "explanation": "Vlastník Tom → sein; die Katze → seine."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Die Kinder und ihr Lehrer“?",
+      "options": [
+        "děti a jejich učitel",
+        "děti a její učitel",
+        "děti a váš učitel"
+      ],
+      "answer": 0,
+      "explanation": "Vlastník jsou děti (oni) → ihr = jejich."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Náš dům je velký.“",
+      "items": [
+        "Unser",
+        "Haus",
+        "ist",
+        "groß."
+      ],
+      "explanation": "das Haus → unser Haus (bez koncovky)."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Habt ihr ___ Hausaufgaben? (vaše, množné číslo)",
+      "options": [
+        "eure",
+        "euere",
+        "euren"
+      ],
+      "answer": 0,
+      "explanation": "Množné číslo → koncovka -e; euer + e = eure."
+    },
+    {
+      "type": "open",
+      "question": "Jak se rozhodneš mezi „sein“ a „ihr“ a jak určíš koncovku?",
+      "answer": "Zájmeno vyberu podle vlastníka: když patří jemu, je to sein, když jí nebo jim, je to ihr. Koncovku určím podle věci, stejně jako u ein: Anna liebt ihren Hund, Tom liebt seine Katze."
+    },
+    {
+      "type": "open",
+      "question": "Představ svou rodinu pomocí přivlastňovacích zájmen.",
+      "answer": "Das ist meine Familie. Mein Vater heißt Jan, meine Mutter heißt Eva. Mein Bruder ist zehn. Unser Hund heißt Max."
+    }
+  ]
+}
