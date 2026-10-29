@@ -1,0 +1,472 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ciselne-soustavy-logicke-funkce",
+  "title": "Číselné soustavy a logické funkce",
+  "emoji": "🔢",
+  "explanations": [
+    {
+      "title": "Počítání na vypínačích",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Číslicový obvod zná jen dva stavy: napětí je, nebo není. Vypínač zapnuto, nebo vypnuto. Ze dvou stavů se ale dají poskládat čísla, písmena i rozhodnutí typu „spusť lis, jen když jsou zavřené dveře A ZÁROVEŇ je stisknuté tlačítko“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Bit",
+          "definition": "Nejmenší jednotka informace. Má hodnotu **0** nebo **1** (log. 0 = nízké napětí, log. 1 = vysoké).",
+          "example": "LED nesvítí = 0, svítí = 1."
+        },
+        {
+          "type": "term",
+          "term": "Bajt (byte)",
+          "definition": "Skupina 8 bitů. Uloží číslo 0 až 255.",
+          "example": "11111111 = 255."
+        },
+        {
+          "type": "term",
+          "term": "Dvojková (binární) soustava",
+          "definition": "Zápis čísel jen číslicemi 0 a 1. Každá pozice zprava má váhu dvakrát větší: 1, 2, 4, 8, 16, 32…",
+          "example": "1101₂ = 8 + 4 + 0 + 1 = 13."
+        },
+        {
+          "type": "heading",
+          "text": "Z dvojkové do desítkové"
+        },
+        {
+          "type": "text",
+          "text": "Napiš nad každou číslici její váhu a sečti váhy tam, kde je jednička."
+        },
+        {
+          "type": "table",
+          "head": [
+            "váha",
+            "128",
+            "64",
+            "32",
+            "16",
+            "8",
+            "4",
+            "2",
+            "1"
+          ],
+          "rows": [
+            [
+              "číslo 45",
+              "0",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "číslo 200",
+              "1",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď 10110₂ do desítkové soustavy.",
+          "answer": "Váhy zprava: 1, 2, 4, 8, 16. Jedničky jsou na pozicích 16, 4 a 2. Součet 16 + 4 + 2 = **22**."
+        },
+        {
+          "type": "example",
+          "question": "Převeď 37 do dvojkové soustavy.",
+          "answer": "Opakovaně děl dvěma a piš zbytky: 37 : 2 = 18 zb. 1; 18 : 2 = 9 zb. 0; 9 : 2 = 4 zb. 1; 4 : 2 = 2 zb. 0; 2 : 2 = 1 zb. 0; 1 : 2 = 0 zb. 1. Zbytky čti odspodu: **100101₂**. Kontrola: 32 + 4 + 1 = 37 ✓."
+        },
+        {
+          "type": "heading",
+          "text": "Logické funkce"
+        },
+        {
+          "type": "term",
+          "term": "Logická funkce a pravdivostní tabulka",
+          "definition": "Pravidlo, které z jedné nebo více vstupních hodnot 0/1 určí výstup 0/1. **Pravdivostní tabulka** vypíše výstup pro všechny kombinace vstupů.",
+          "example": "Dva vstupy mají 4 kombinace: 00, 01, 10, 11."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**AND (logický součin, A · B)**: výstup 1, jen když jsou **oba** vstupy 1. Jako dva vypínače za sebou.",
+            "**OR (logický součet, A + B)**: výstup 1, když je **aspoň jeden** vstup 1. Jako dva vypínače vedle sebe.",
+            "**NOT (negace, Ā)**: obrátí hodnotu, z 0 udělá 1 a naopak."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "1 AND 0 = ",
+                "after": "",
+                "options": [
+                  "0",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "1 OR 0 = ",
+                "after": "",
+                "options": [
+                  "1",
+                  "0"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "NOT 1 = ",
+                "after": "",
+                "options": [
+                  "0",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "1 AND 1 = ",
+                "after": "",
+                "options": [
+                  "1",
+                  "0"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň výsledky. Představ si vždy vypínače: za sebou (AND), vedle sebe (OR)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "V logice platí 1 + 1 = 2.",
+          "right": "V logickém součtu (OR) platí 1 + 1 = 1.",
+          "why": "Logická funkce má jen hodnoty 0 a 1. OR říká „aspoň jeden vstup je 1“ – a to platí, i když jsou oba."
+        },
+        {
+          "type": "summary",
+          "text": "Dvojková soustava: váhy 1, 2, 4, 8, 16…; do dvojkové převádíš dělením dvěma. AND = oba, OR = aspoň jeden, NOT = obrácení."
+        }
+      ]
+    },
+    {
+      "title": "Soustavy a algebra",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V adresách paměti, v barvách webu (#FF8800) i v registrech mikrokontroléru se čísla píšou šestnáctkově. Řídicí logiku stroje zase popíšeš a zjednodušíš pomocí Booleovy algebry. Tady je přehled soustav a pravidel."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Poziční číselná soustava",
+          "definition": "Hodnota číslice závisí na její pozici. Váhy pozic jsou mocniny **základu** soustavy.",
+          "example": "Desítková: 345 = 3 · 100 + 4 · 10 + 5 · 1."
+        },
+        {
+          "type": "term",
+          "term": "Dvojková soustava",
+          "definition": "Základ 2, číslice 0 a 1, váhy 1, 2, 4, 8, 16, 32, 64, 128…",
+          "example": "1010₂ = 10."
+        },
+        {
+          "type": "term",
+          "term": "Šestnáctková (hexadecimální) soustava",
+          "definition": "Základ 16, číslice 0–9 a A–F (A = 10, B = 11, C = 12, D = 13, E = 14, F = 15). Jedna šestnáctková číslice = přesně 4 bity.",
+          "example": "2F₁₆ = 2 · 16 + 15 = 47. Píše se také 0x2F."
+        },
+        {
+          "type": "term",
+          "term": "Kód BCD",
+          "definition": "Binárně kódované desítkové číslo: každá desítková číslice zvlášť ve 4 bitech.",
+          "example": "59 v BCD = 0101 1001. Používá se pro sedmisegmentové displeje."
+        },
+        {
+          "type": "term",
+          "term": "Booleova algebra",
+          "definition": "Počítání s logickými hodnotami 0 a 1 a funkcemi AND (·), OR (+), NOT (pruh nad písmenem). Slouží k zápisu a zjednodušení logických obvodů.",
+          "example": "Y = A · B + C̄."
+        },
+        {
+          "type": "heading",
+          "text": "Převody přes 4 bity"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Dvojkové číslo rozděl zprava po 4 bitech (zleva doplň nuly).",
+            "Každou čtveřici převeď na jednu šestnáctkovou číslici (0000 = 0 … 1111 = F).",
+            "Opačně: každou šestnáctkovou číslici rozepiš na 4 bity."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď 11010110₂ do šestnáctkové a desítkové soustavy.",
+          "answer": "Čtveřice 1101 | 0110 = D | 6 → **D6₁₆**. Desítkově: 13 · 16 + 6 = 208 + 6 = **214**."
+        },
+        {
+          "type": "example",
+          "question": "Převeď 0x3A do dvojkové soustavy.",
+          "answer": "3 = 0011, A = 1010 → **0011 1010₂** (= 58)."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla Booleovy algebry"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pravidlo",
+            "AND",
+            "OR"
+          ],
+          "rows": [
+            [
+              "s nulou",
+              "A · 0 = 0",
+              "A + 0 = A"
+            ],
+            [
+              "s jedničkou",
+              "A · 1 = A",
+              "A + 1 = 1"
+            ],
+            [
+              "se sebou",
+              "A · A = A",
+              "A + A = A"
+            ],
+            [
+              "s negací",
+              "A · Ā = 0",
+              "A + Ā = 1"
+            ],
+            [
+              "De Morgan",
+              "‾(A · B) = Ā + B̄",
+              "‾(A + B) = Ā · B̄"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zjednoduš Y = A · B + A · B̄.",
+          "answer": "Vytkni A: Y = A · (B + B̄). Podle pravidla B + B̄ = 1: Y = A · 1 = **A**. Výstup tedy vůbec nezávisí na B."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "1111₂",
+                "back": "15 = F₁₆"
+              },
+              {
+                "front": "0x10",
+                "back": "16"
+              },
+              {
+                "front": "255",
+                "back": "FF₁₆ = 1111 1111₂"
+              },
+              {
+                "front": "A + 1",
+                "back": "1"
+              },
+              {
+                "front": "A · Ā",
+                "back": "0"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Nejdřív odpověz, pak karty otoč. Převody 15, 16 a 255 se vyplatí znát zpaměti."
+        },
+        {
+          "type": "mistake",
+          "wrong": "0x10 = 10.",
+          "right": "0x10 = 1 · 16 + 0 = 16.",
+          "why": "Předpona 0x říká, že je číslo v šestnáctkové soustavě. Druhá pozice zprava má váhu 16, ne 10."
+        },
+        {
+          "type": "summary",
+          "text": "Šestnáctková číslice = 4 bity, převod po čtveřicích. BCD kóduje každou desítkovou číslici zvlášť. Booleova algebra: A + 1 = 1, A · 0 = 0, A + Ā = 1, A · Ā = 0 a De Morganovy zákony."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Převeď 1011₂ do desítkové soustavy.",
+      "answers": [
+        "11"
+      ],
+      "hints": [
+        "Váhy zprava jsou 1, 2, 4, 8."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 25 do dvojkové soustavy.",
+      "answers": [
+        "11001"
+      ],
+      "explanation": "16 + 8 + 1 = 25.",
+      "hints": [
+        "Opakovaně děl dvěma a zapisuj zbytky.",
+        "Zbytky čti odspodu nahoru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 0xFF do desítkové soustavy.",
+      "answers": [
+        "255"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 1010 0011₂ do šestnáctkové soustavy.",
+      "answers": [
+        "A3",
+        "0xA3",
+        "a3"
+      ],
+      "hints": [
+        "Každou čtveřici bitů převeď samostatně."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik bitů má jeden bajt?",
+      "options": [
+        "8",
+        "4",
+        "16",
+        "10"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce AND má výstup 1, když je aspoň jeden vstup 1.",
+      "answer": false,
+      "explanation": "To je OR. AND má výstup 1, jen když jsou všechny vstupy 1."
+    },
+    {
+      "type": "match",
+      "question": "Spoj funkci s popisem.",
+      "pairs": [
+        [
+          "AND",
+          "1 jen když jsou oba vstupy 1"
+        ],
+        [
+          "OR",
+          "1 když je aspoň jeden vstup 1"
+        ],
+        [
+          "NOT",
+          "obrátí hodnotu"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapíše číslo 47 v kódu BCD?",
+      "options": [
+        "0100 0111",
+        "0010 1111",
+        "0100 1110",
+        "0011 0111"
+      ],
+      "answer": 0,
+      "explanation": "4 = 0100, 7 = 0111. (0010 1111 je 47 binárně.)"
+    },
+    {
+      "type": "choice",
+      "question": "Čemu se rovná A + Ā?",
+      "options": [
+        "1",
+        "0",
+        "A",
+        "Ā"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď čísla od nejmenšího.",
+      "items": [
+        "1001₂",
+        "0x0C",
+        "15",
+        "0x1F"
+      ],
+      "explanation": "9, 12, 15, 31.",
+      "hints": [
+        "Všechna převeď do desítkové soustavy."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle De Morganova zákona je negace součinu rovna součtu negací.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolik různých kombinací vstupů má pravdivostní tabulka se 3 vstupy?",
+      "answers": [
+        "8",
+        "osm"
+      ],
+      "hints": [
+        "Každý vstup má dvě možnosti."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak převedeš číslo z desítkové do dvojkové soustavy a zpět.",
+      "answer": "Do dvojkové: číslo opakovaně dělím dvěma, zapisuji zbytky a čtu je odspodu. Zpět: každou jedničku vynásobím váhou její pozice (1, 2, 4, 8, …) a váhy sečtu."
+    },
+    {
+      "type": "open",
+      "question": "Proč se v elektronice používá šestnáctková soustava?",
+      "answer": "Jedna šestnáctková číslice odpovídá přesně čtyřem bitům, takže dlouhá dvojková čísla zapíšeš krátce a převod je snadný. Používá se pro adresy paměti, obsah registrů a kódy barev."
+    }
+  ]
+}

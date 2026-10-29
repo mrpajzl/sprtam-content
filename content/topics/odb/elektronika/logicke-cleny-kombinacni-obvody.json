@@ -1,0 +1,472 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "logicke-cleny-kombinacni-obvody",
+  "title": "Logické členy a kombinační obvody",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Rozhodování stroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lis smí sjet jen tehdy, když obsluha drží obě tlačítka **a** ochranný kryt je zavřený. Alarm má houkat, když se otevřou dveře **nebo** okno. Taková rozhodnutí v elektronice dělají **logické členy** – malé obvody, které z napětí 0 a 1 na vstupech určí výstup."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: logické funkce",
+          "definition": "Pracují s hodnotami 0 a 1. AND dá 1, jen když jsou všechny vstupy 1. OR dá 1, když je aspoň jeden vstup 1. NOT hodnotu obrátí."
+        },
+        {
+          "type": "term",
+          "term": "Logický člen (hradlo)",
+          "definition": "Elektronický obvod, který provádí jednu logickou funkci. Vyrábí se jako integrované obvody, v jednom pouzdře bývá několik členů.",
+          "example": "Obvod 74HC08 obsahuje čtyři členy AND se dvěma vstupy."
+        },
+        {
+          "type": "term",
+          "term": "NAND a NOR",
+          "definition": "**NAND** = AND s negovaným výstupem (výstup 0 jen při všech vstupech 1). **NOR** = OR s negovaným výstupem (výstup 1 jen při všech vstupech 0).",
+          "example": "Ve značce se negace kreslí kroužkem na výstupu."
+        },
+        {
+          "type": "term",
+          "term": "XOR (nonekvivalence)",
+          "definition": "Výstup 1, když jsou vstupy **různé**. Když jsou stejné, výstup 0.",
+          "example": "Schodišťový vypínač: přepnutím kteréhokoli vypínače se stav světla změní."
+        },
+        {
+          "type": "heading",
+          "text": "Pravdivostní tabulka všech členů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "A",
+            "B",
+            "AND",
+            "OR",
+            "NAND",
+            "NOR",
+            "XOR"
+          ],
+          "rows": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "AND",
+              "OR",
+              "XOR"
+            ],
+            "items": [
+              {
+                "text": "lis: obě tlačítka současně",
+                "group": 0
+              },
+              {
+                "text": "alarm: dveře nebo okno",
+                "group": 1
+              },
+              {
+                "text": "schodišťový vypínač",
+                "group": 2
+              },
+              {
+                "text": "motor jen při zavřeném krytu a stisknutém start",
+                "group": 0
+              },
+              {
+                "text": "světlo z kteréhokoli tlačítka",
+                "group": 1
+              },
+              {
+                "text": "kontrola, jestli se dva bity liší",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď situace podle toho, který člen se na ně hodí. Ptej se: musí platit obojí, stačí jedno, nebo mají být různé?"
+        },
+        {
+          "type": "heading",
+          "text": "Kombinační obvod"
+        },
+        {
+          "type": "term",
+          "term": "Kombinační obvod",
+          "definition": "Obvod z logických členů, jehož výstup závisí **jen na tom, co je právě na vstupech**. Nic si nepamatuje.",
+          "example": "Dekodér pro sedmisegmentový displej, sčítačka."
+        },
+        {
+          "type": "example",
+          "question": "Lis: tlačítka T1, T2 a kryt K (1 = zavřený). Napiš logickou funkci a jakými členy ji postavíš.",
+          "answer": "Lis sjede, jen když platí všechny tři podmínky: Y = T1 · T2 · K. Postavíš ji ze **třívstupového členu AND** (nebo ze dvou dvouvstupových AND za sebou). Ve skutečném stroji se takové bezpečnostní funkce řeší certifikovanými bezpečnostními moduly (bezpečnostní relé, bezpečnostní PLC), ne obyčejnými logickými členy – princip je ale stejný."
+        },
+        {
+          "type": "example",
+          "question": "Polosčítačka sečte dva bity A a B. Jak vypadá výsledek pro A = 1, B = 1 a jakými členy ji postavíš?",
+          "answer": "1 + 1 = 10₂: součet S = 0 a přenos C = 1. Z tabulky: **S = A XOR B**, **C = A AND B**. Polosčítačka je tedy jeden XOR a jeden AND."
+        },
+        {
+          "type": "mistake",
+          "wrong": "NAND je totéž co AND, jen se jinak kreslí.",
+          "right": "NAND má výstup přesně opačný než AND: 0 jen tehdy, když jsou všechny vstupy 1.",
+          "why": "Kroužek na výstupu značky znamená negaci. Záměna AND a NAND obrátí celé chování obvodu."
+        },
+        {
+          "type": "summary",
+          "text": "AND = všechny, OR = aspoň jeden, XOR = různé; NAND a NOR jsou jejich negace. Kombinační obvod nemá paměť: výstup závisí jen na současných vstupech."
+        }
+      ]
+    },
+    {
+      "title": "Návrh z tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zadání zní: „Kontrolka se rozsvítí, když jsou zapnuté právě dva ze tří ventilátorů.“ Jak z takové věty vznikne zapojení? Přes pravdivostní tabulku a logickou rovnici. Tady je postup krok za krokem a přehled hotových kombinačních obvodů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Logický člen",
+          "definition": "Obvod, který realizuje jednu logickou funkci: AND, OR, NOT, NAND, NOR, XOR. Ve schématech podle norem IEC/ČSN obdélník se symbolem uvnitř: & (AND), ≥1 (OR), =1 (XOR), 1 (NOT); negace = kroužek na výstupu.",
+          "example": "Obdélník s & a kroužkem na výstupu je NAND."
+        },
+        {
+          "type": "term",
+          "term": "Kombinační obvod",
+          "definition": "Logický obvod bez paměti: výstup v každém okamžiku závisí jen na okamžitých vstupech.",
+          "example": "Na rozdíl od čítače, který si pamatuje předchozí stav."
+        },
+        {
+          "type": "term",
+          "term": "Minterm (součinový člen)",
+          "definition": "Součin (AND) všech vstupů, každého buď přímo, nebo negovaného, který je 1 jen pro jeden řádek tabulky.",
+          "example": "Pro řádek A = 1, B = 0, C = 1 je minterm A · B̄ · C."
+        },
+        {
+          "type": "term",
+          "term": "Univerzální člen",
+          "definition": "Člen, ze kterého se dá postavit kterákoli logická funkce. Univerzální jsou **NAND** a **NOR**.",
+          "example": "NOT z NANDu: spoj oba vstupy dohromady."
+        },
+        {
+          "type": "heading",
+          "text": "Postup návrhu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pojmenuj vstupy a výstup a urči, co znamená 1.",
+            "Sestav pravdivostní tabulku pro všechny kombinace (n vstupů = 2ⁿ řádků).",
+            "Najdi řádky, kde je výstup 1, a pro každý napiš minterm.",
+            "Mintermy spoj součtem (OR) – vznikne rovnice.",
+            "Rovnici zjednoduš Booleovou algebrou.",
+            "Nakresli schéma z členů."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kontrolka svítí, když jsou zapnuté právě dva ze tří ventilátorů A, B, C. Napiš rovnici.",
+          "answer": "Řádky s výstupem 1: 011, 101, 110. Mintermy: Ā·B·C, A·B̄·C, A·B·C̄. Rovnice: **Y = Ā·B·C + A·B̄·C + A·B·C̄**. Zapojení: 3 členy NOT, 3 třívstupové AND a jeden třívstupový OR."
+        },
+        {
+          "type": "example",
+          "question": "Zjednoduš Y = Ā·B + A·B.",
+          "answer": "Vytkni B: Y = B · (Ā + A) = B · 1 = **B**. Obvod nepotřebuje žádný člen, výstup je přímo vstup B."
+        },
+        {
+          "type": "heading",
+          "text": "Hotové kombinační obvody"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Obvod",
+            "Co dělá",
+            "Příklad použití"
+          ],
+          "rows": [
+            [
+              "dekodér",
+              "z binárního čísla na vstupu aktivuje jeden z výstupů",
+              "výběr jednoho z 8 čidel (3 bity → 8 výstupů)"
+            ],
+            [
+              "kodér",
+              "opak dekodéru: z aktivního vstupu udělá binární číslo",
+              "klávesnice"
+            ],
+            [
+              "multiplexer",
+              "přepínač: adresou vybere, který vstup jde na výstup",
+              "jeden A/D převodník pro víc čidel"
+            ],
+            [
+              "sčítačka",
+              "sčítá binární čísla",
+              "aritmetická jednotka procesoru"
+            ],
+            [
+              "dekodér pro 7segmentovku",
+              "z BCD čísla rozsvítí správné segmenty",
+              "displej s číslicí"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Multiplexer se 4 vstupy potřebuje ",
+                "after": " adresové bity.",
+                "options": [
+                  "2",
+                  "4",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Dekodér se 3 vstupy má ",
+                "after": " výstupů.",
+                "options": [
+                  "8",
+                  "6",
+                  "3"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pravdivostní tabulka se 4 vstupy má ",
+                "after": " řádků.",
+                "options": [
+                  "16",
+                  "8",
+                  "4"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň čísla. Pomůže ti, že n bitů dá 2ⁿ kombinací."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mintermy z řádků s výstupem 1 spojím členem AND.",
+          "right": "Mintermy se spojují součtem (OR): výstup je 1, když nastane kterýkoli z těch řádků.",
+          "why": "Každý minterm platí jen pro jeden řádek. Součin dvou různých mintermů je vždy 0."
+        },
+        {
+          "type": "summary",
+          "text": "Návrh: tabulka → mintermy pro řádky s 1 → součet → zjednodušení → schéma. NAND a NOR jsou univerzální. Dekodér, multiplexer a sčítačka jsou hotové kombinační obvody."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který člen má výstup 1, jen když jsou oba vstupy 1?",
+      "options": [
+        "AND",
+        "OR",
+        "NAND",
+        "XOR"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který člen má výstup 1, když jsou vstupy různé?",
+      "options": [
+        "XOR",
+        "AND",
+        "NOR",
+        "OR"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Výstup členu NAND pro A = 1, B = 1 =",
+      "answers": [
+        "0"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Výstup členu NOR pro A = 0, B = 0 =",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kombinační obvod si pamatuje předchozí stav vstupů.",
+      "answer": false,
+      "explanation": "Výstup závisí jen na okamžitých vstupech."
+    },
+    {
+      "type": "truefalse",
+      "question": "Z členů NAND se dá postavit libovolná logická funkce.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj symbol v obdélníkové značce s členem.",
+      "pairs": [
+        [
+          "&",
+          "AND"
+        ],
+        [
+          "≥1",
+          "OR"
+        ],
+        [
+          "=1",
+          "XOR"
+        ],
+        [
+          "1 s kroužkem na výstupu",
+          "NOT"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Polosčítačka: jakou funkcí vznikne součet S?",
+      "options": [
+        "A XOR B",
+        "A AND B",
+        "A OR B",
+        "A NOR B"
+      ],
+      "answer": 0,
+      "hints": [
+        "Spočítej 0 + 1 a 1 + 1 a podívej se na nižší bit."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik adresových bitů potřebuje multiplexer s 8 vstupy?",
+      "answers": [
+        "3",
+        "tři",
+        "tri"
+      ],
+      "hints": [
+        "Kolik bitů dá 8 různých kombinací?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky návrhu kombinačního obvodu.",
+      "items": [
+        "pojmenovat vstupy a výstup",
+        "sestavit pravdivostní tabulku",
+        "napsat mintermy pro řádky s 1",
+        "spojit mintermy součtem",
+        "zjednodušit rovnici",
+        "nakreslit schéma"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ochrana lisu: lis sjede, jen když jsou stisknutá obě tlačítka T1 a T2. Jaká je rovnice?",
+      "options": [
+        "Y = T1 · T2",
+        "Y = T1 + T2",
+        "Y = T1 ⊕ T2",
+        "Y = ‾(T1 · T2)"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží multiplexer?",
+      "options": [
+        "vybere podle adresy jeden ze vstupů a pošle ho na výstup",
+        "sečte dvě binární čísla",
+        "pamatuje si jeden bit",
+        "převede analogový signál na číslo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je kombinační obvod, a uveď dva příklady.",
+      "answer": "Je to logický obvod bez paměti, jehož výstup závisí jen na okamžitých hodnotách vstupů. Příklady: dekodér, multiplexer, sčítačka, dekodér pro sedmisegmentový displej."
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup, jak ze slovního zadání navrhneš kombinační obvod.",
+      "answer": "Určím vstupy a výstup, sestavím pravdivostní tabulku pro všechny kombinace, pro řádky s výstupem 1 napíšu mintermy a spojím je součtem. Rovnici zjednoduším Booleovou algebrou a nakreslím schéma z logických členů."
+    }
+  ]
+}

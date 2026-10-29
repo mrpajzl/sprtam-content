@@ -1,0 +1,421 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "diody",
+  "title": "Diody: usměrňovací, Zenerova a LED",
+  "emoji": "🚦",
+  "explanations": [
+    {
+      "title": "Jednosměrka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dioda je jako jednosměrná ulice nebo zpětný ventil ve vodovodu: proud pustí jedním směrem, druhým ne. Díky tomu se ze střídavého proudu v zásuvce dá udělat stejnosměrný pro nabíječku. Speciální diody umí udržet stálé napětí nebo svítit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: přechod PN",
+          "definition": "Rozhraní polovodiče typu P a N. Vede, když je + na P a − na N (propustný směr), opačně nevede (závěrný směr)."
+        },
+        {
+          "type": "term",
+          "term": "Dioda",
+          "definition": "Součástka s jedním přechodem PN a dvěma vývody: **anoda (A)** na straně P a **katoda (K)** na straně N. Ve schématu trojúhelník (šipka ukazuje směr proudu) s čárkou u katody.",
+          "example": "Na pouzdře je katoda označená proužkem."
+        },
+        {
+          "type": "term",
+          "term": "Prahové napětí",
+          "definition": "Napětí v propustném směru, od kterého dioda začne výrazně vést. U křemíkové diody asi 0,6–0,7 V. Při vedení na ní zůstává zhruba toto napětí.",
+          "example": "Křemíková dioda 1N4007 vede od asi 0,7 V."
+        },
+        {
+          "type": "heading",
+          "text": "Tři nejčastější diody"
+        },
+        {
+          "type": "term",
+          "term": "Usměrňovací dioda",
+          "definition": "Propouští proud jedním směrem. Používá se v usměrňovačích a jako ochrana proti přepólování.",
+          "example": "1N4007: do 1 A, závěrné napětí až 1 000 V."
+        },
+        {
+          "type": "term",
+          "term": "Zenerova dioda",
+          "definition": "Dioda určená k zapojení v **závěrném** směru. Do určitého napětí nevede, ale po dosažení **Zenerova napětí U_Z** začne vést a napětí na ní se dál téměř nemění. Slouží ke stabilizaci napětí.",
+          "example": "Zenerova dioda 5,1 V drží na sobě asi 5,1 V, i když se vstupní napětí mění."
+        },
+        {
+          "type": "term",
+          "term": "LED (svítivá dioda)",
+          "definition": "Dioda, která v propustném směru svítí. Má vyšší prahové napětí podle barvy a vždy potřebuje **omezit proud** (předřadným rezistorem).",
+          "example": "Červená asi 1,8–2 V, modrá a bílá asi 3 V, typický proud 10–20 mA."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "usměrňovací dioda",
+                "back": "propustí proud jen jedním směrem"
+              },
+              {
+                "front": "Zenerova dioda",
+                "back": "v závěrném směru drží stálé napětí U_Z"
+              },
+              {
+                "front": "LED",
+                "back": "v propustném směru svítí, potřebuje omezit proud"
+              },
+              {
+                "front": "proužek na pouzdře",
+                "back": "katoda"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Než kartičku otočíš, řekni si, k čemu daná dioda slouží."
+        },
+        {
+          "type": "heading",
+          "text": "Předřadný rezistor k LED"
+        },
+        {
+          "type": "text",
+          "text": "Rezistor „spotřebuje“ napětí, které na LED nemá být: `R = (U − U_LED) / I`."
+        },
+        {
+          "type": "example",
+          "question": "Červenou LED (2 V, 20 mA) chceš napájet z 12 V. Jaký rezistor potřebuješ?",
+          "answer": "R = (12 − 2) / 0,02 = 10 / 0,02 = **500 Ω**. Vybereš nejbližší vyšší vyráběnou hodnotu, třeba 560 Ω. Výkon na rezistoru: 10 V · 0,02 A = 0,2 W, tedy rezistor aspoň 0,25 W."
+        },
+        {
+          "type": "example",
+          "question": "Bílou LED (3 V, 15 mA) chceš napájet z 5 V z USB. Jaký rezistor?",
+          "answer": "R = (5 − 3) / 0,015 ≈ **133 Ω**. Nejbližší vyšší řadová hodnota je 150 Ω."
+        },
+        {
+          "type": "mistake",
+          "wrong": "LED na 3 V připojím rovnou k baterii 5 V, rezistor není potřeba.",
+          "right": "LED vždy potřebuje předřadný rezistor (nebo zdroj proudu).",
+          "why": "Nad prahovým napětím proud diodou prudce roste. Bez omezení teče velký proud a LED se během okamžiku zničí."
+        },
+        {
+          "type": "summary",
+          "text": "Dioda vede od anody ke katodě, od asi 0,7 V (Si). Zenerova dioda v závěrném směru drží napětí U_Z. LED svítí a potřebuje rezistor R = (U − U_LED) / I."
+        }
+      ]
+    },
+    {
+      "title": "Charakteristiky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V katalogu diody najdeš graf a tabulku. Podle nich vybereš diodu, která vydrží proud i závěrné napětí v tvém zapojení. Tady se naučíš, co ty údaje znamenají a jak se podle nich počítá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dioda, anoda, katoda",
+          "definition": "Dioda je polovodičová součástka s jedním přechodem PN. Proud teče od **anody** (P) ke **katodě** (N), opačně ne.",
+          "example": "Ve schématu šipka ukazuje směr proudu ke katodě."
+        },
+        {
+          "type": "term",
+          "term": "Voltampérová (VA) charakteristika",
+          "definition": "Graf, jak proud součástkou závisí na napětí na ní. U rezistoru přímka, u diody zakřivená křivka.",
+          "example": "V propustné části dioda do 0,6 V skoro nevede, pak proud prudce roste."
+        },
+        {
+          "type": "term",
+          "term": "Průraz",
+          "definition": "Při velkém závěrném napětí začne dioda náhle vést. U běžné diody to ji obvykle zničí, u Zenerovy je to pracovní stav (s omezeným proudem).",
+          "example": "1N4007 má závěrné napětí 1 000 V, nad ním hrozí průraz."
+        },
+        {
+          "type": "term",
+          "term": "Mezní hodnoty",
+          "definition": "Největší hodnoty, které součástka snese: maximální propustný proud I_F, maximální závěrné napětí U_R, ztrátový výkon P.",
+          "example": "Dioda 1 A / 400 V nesmí vést víc než 1 A ani dostat víc než 400 V v závěrném směru."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled diod"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Dioda",
+            "Pracuje ve směru",
+            "Typické napětí",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "usměrňovací (Si)",
+              "propustném",
+              "asi 0,7 V",
+              "usměrňovače, ochrana proti přepólování"
+            ],
+            [
+              "Schottkyho",
+              "propustném",
+              "asi 0,2–0,4 V",
+              "rychlé a úsporné zdroje"
+            ],
+            [
+              "Zenerova",
+              "závěrném",
+              "U_Z, např. 3,3 V, 5,1 V, 12 V",
+              "stabilizace a omezení napětí"
+            ],
+            [
+              "LED",
+              "propustném",
+              "asi 1,8–3,5 V podle barvy",
+              "signalizace, osvětlení"
+            ],
+            [
+              "fotodioda",
+              "závěrném",
+              "—",
+              "čidlo světla"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stabilizace Zenerovou diodou"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zenerovu diodu zapoj katodou ke kladnému pólu (závěrně).",
+            "Do série před ni dej rezistor, který omezí proud.",
+            "Výstupní napětí odebírej paralelně ze Zenerovy diody.",
+            "Rezistor spočítej: R = (U_vst − U_Z) / I, kde I je proud diodou a zátěží dohromady."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zdroj 12 V, Zenerova dioda 5,1 V, zátěž odebírá 10 mA a diodou má téct asi 5 mA. Jaký rezistor zvolíš?",
+          "answer": "Rezistorem teče 10 + 5 = 15 mA. R = (12 − 5,1) / 0,015 = 6,9 / 0,015 = **460 Ω**. Zvolíš nejbližší nižší řadovou hodnotu 430 Ω, aby proud nebyl menší než potřeba."
+        },
+        {
+          "type": "example",
+          "question": "Proč se na vstup přístroje napájeného z baterie dává dioda do série?",
+          "answer": "Je to **ochrana proti přepólování**. Když baterii vložíš obráceně, dioda je v závěrném směru a proud neteče. Nevýhoda: na diodě se ztratí asi 0,7 V (u Schottkyho méně)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "pracuje v propustném směru",
+              "pracuje v závěrném směru"
+            ],
+            "items": [
+              {
+                "text": "LED",
+                "group": 0
+              },
+              {
+                "text": "Zenerova dioda při stabilizaci",
+                "group": 1
+              },
+              {
+                "text": "usměrňovací dioda, když vede",
+                "group": 0
+              },
+              {
+                "text": "fotodioda jako čidlo",
+                "group": 1
+              },
+              {
+                "text": "Schottkyho dioda ve zdroji",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď diody podle toho, jak jsou v obvodu zapojené, když plní svou funkci."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zenerovu diodu zapojím jako běžnou: anodou na +.",
+          "right": "Zenerova dioda pro stabilizaci se zapojuje závěrně: katodou na + a s rezistorem v sérii.",
+          "why": "V propustném směru by na ní bylo jen asi 0,7 V jako u každé diody. Stabilizuje jen v závěrném směru."
+        },
+        {
+          "type": "summary",
+          "text": "VA charakteristika diody: v propustném směru vede od prahového napětí, v závěrném nevede až do průrazu. Zenerova dioda pracuje v průrazu, LED a usměrňovací dioda v propustném směru. Nepřekračuj mezní hodnoty."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak se označuje katoda na pouzdře diody?",
+      "options": [
+        "proužkem",
+        "tečkou",
+        "delším vývodem",
+        "neoznačuje se"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Dioda propouští proud od katody k anodě.",
+      "answer": false,
+      "explanation": "Proud teče od anody ke katodě."
+    },
+    {
+      "type": "input",
+      "question": "LED 2 V, 20 mA, napájení 9 V. Předřadný rezistor v Ω =",
+      "answers": [
+        "350"
+      ],
+      "explanation": "R = (9 − 2) / 0,02 = 350 Ω.",
+      "hints": [
+        "Rezistor musí „spotřebovat“ rozdíl napětí.",
+        "Proud převeď na ampéry."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém směru pracuje Zenerova dioda při stabilizaci napětí?",
+      "options": [
+        "v závěrném",
+        "v propustném",
+        "střídavě v obou",
+        "nezáleží"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jaké přibližné napětí je na vodivé křemíkové diodě? V =",
+      "answers": [
+        "0,7",
+        "0,6",
+        "0,65"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj diodu s použitím.",
+      "pairs": [
+        [
+          "usměrňovací",
+          "usměrňovač ve zdroji"
+        ],
+        [
+          "Zenerova",
+          "stabilizace napětí"
+        ],
+        [
+          "LED",
+          "signalizace a osvětlení"
+        ],
+        [
+          "fotodioda",
+          "čidlo světla"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "LED se smí připojit přímo ke zdroji o napětí vyšším, než je její prahové napětí.",
+      "answer": false,
+      "explanation": "Proud by prudce vzrostl a LED by se zničila. Potřebuje omezit proud."
+    },
+    {
+      "type": "choice",
+      "question": "Která dioda má nejmenší úbytek napětí v propustném směru?",
+      "options": [
+        "Schottkyho",
+        "křemíková usměrňovací",
+        "červená LED",
+        "modrá LED"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Zdroj 15 V, Zenerova dioda 10 V, proud rezistorem 25 mA. Rezistor v Ω =",
+      "answers": [
+        "200"
+      ],
+      "explanation": "R = (15 − 10) / 0,025 = 200 Ω.",
+      "hints": [
+        "Na rezistoru je rozdíl vstupního a Zenerova napětí."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď LED podle prahového napětí od nejmenšího.",
+      "items": [
+        "červená",
+        "zelená",
+        "modrá"
+      ],
+      "hints": [
+        "Čím kratší vlnová délka (modřejší světlo), tím větší energie."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se dioda dává do série se vstupem napájení?",
+      "options": [
+        "jako ochrana proti přepólování",
+        "aby zvýšila napětí",
+        "aby filtrovala rušení",
+        "aby šetřila baterii"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane s běžnou usměrňovací diodou, když překročíš její maximální závěrné napětí?",
+      "options": [
+        "hrozí průraz a zničení",
+        "začne svítit",
+        "sníží se jí prahové napětí",
+        "nic, závěrně nevede nikdy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš VA charakteristiku křemíkové diody.",
+      "answer": "V propustném směru dioda do asi 0,6 V skoro nevede, pak proud prudce roste a napětí zůstává kolem 0,7 V. V závěrném směru teče jen nepatrný proud, dokud se nedosáhne průrazného napětí, kdy proud náhle vzroste."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak Zenerova dioda stabilizuje napětí a proč potřebuje rezistor.",
+      "answer": "Zenerova dioda je zapojena závěrně. Po dosažení Zenerova napětí vede a napětí na ní zůstává téměř stálé, i když se vstupní napětí mění. Rezistor v sérii omezuje proud a zachytí rozdíl napětí, jinak by se dioda zničila."
+    }
+  ]
+}

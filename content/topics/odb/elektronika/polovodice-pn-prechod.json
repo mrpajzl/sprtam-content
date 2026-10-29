@@ -1,0 +1,451 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "polovodice-pn-prechod",
+  "title": "Polovodiče a přechod PN",
+  "emoji": "🧱",
+  "explanations": [
+    {
+      "title": "Elektrony a díry",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V mobilu, v řídicí jednotce robota i v nabíječce jsou miliardy součástek z křemíku. Křemík není ani dobrý vodič jako měď, ani izolant jako plast. Je **polovodič** – a jeho vodivost umíme řídit. Na tom stojí celá elektronika."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Polovodič",
+          "definition": "Látka, která za nízké teploty skoro nevede, ale za pokojové teploty, při osvětlení nebo po přidání příměsí vede. Nejpoužívanější je **křemík (Si)**, dříve germanium (Ge).",
+          "example": "Křemík se vyrábí z křemenného písku."
+        },
+        {
+          "type": "term",
+          "term": "Valenční elektrony",
+          "definition": "Elektrony ve vnější vrstvě atomu. Tvoří vazby se sousedními atomy. Křemík jich má 4.",
+          "example": "V krystalu křemíku každý atom sdílí 4 elektrony se 4 sousedy."
+        },
+        {
+          "type": "term",
+          "term": "Volný elektron a díra",
+          "definition": "Když teplo vytrhne elektron z vazby, stane se **volným elektronem** (záporný nosič náboje). Na jeho místě zůstane prázdné místo – **díra**, která se chová jako kladný náboj. Do díry může přeskočit sousední elektron, takže díra „putuje“.",
+          "example": "Jako volné místo v plném kině: lidé si přesedají a volné místo se posouvá na opačnou stranu."
+        },
+        {
+          "type": "heading",
+          "text": "Příměsi: typ N a typ P"
+        },
+        {
+          "type": "text",
+          "text": "Čistý křemík vede málo. Proto se do něj přidává nepatrné množství jiných atomů – říká se tomu **dotování** (příměs)."
+        },
+        {
+          "type": "term",
+          "term": "Polovodič typu N",
+          "definition": "Křemík s příměsí prvku s **5** valenčními elektrony (fosfor, arsen). Pátý elektron do vazby nepasuje a je volný. Převládají **elektrony** (Negativní).",
+          "example": "Křemík dotovaný fosforem."
+        },
+        {
+          "type": "term",
+          "term": "Polovodič typu P",
+          "definition": "Křemík s příměsí prvku se **3** valenčními elektrony (bor, galium). Jedna vazba zůstane neúplná – vznikne díra. Převládají **díry** (Pozitivní).",
+          "example": "Křemík dotovaný borem."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "typ N",
+              "typ P"
+            ],
+            "items": [
+              {
+                "text": "příměs fosforu",
+                "group": 0
+              },
+              {
+                "text": "příměs boru",
+                "group": 1
+              },
+              {
+                "text": "převládají elektrony",
+                "group": 0
+              },
+              {
+                "text": "převládají díry",
+                "group": 1
+              },
+              {
+                "text": "příměs s 5 valenčními elektrony",
+                "group": 0
+              },
+              {
+                "text": "příměs se 3 valenčními elektrony",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti. Pomůcka: N jako negativní (elektrony), P jako pozitivní (díry)."
+        },
+        {
+          "type": "heading",
+          "text": "Přechod PN"
+        },
+        {
+          "type": "term",
+          "term": "Přechod PN",
+          "definition": "Rozhraní, kde se v jednom krystalu stýká oblast P a oblast N. Elektrony a díry u rozhraní se vzájemně „vyruší“ a vznikne tenká **vyprázdněná (hradlová) vrstva** bez volných nosičů, která proud nepropouští.",
+          "example": "Základ každé diody a tranzistoru."
+        },
+        {
+          "type": "text",
+          "text": "Když připojíš + na P a − na N (**propustný směr**), vrstva se zúží a od asi 0,6–0,7 V (u křemíku) teče proud. Když připojíš obráceně (**závěrný směr**), vrstva se rozšíří a proud prakticky neteče."
+        },
+        {
+          "type": "example",
+          "question": "Na křemíkový přechod PN připojíš + na stranu N a − na stranu P, napětí 5 V. Poteče proud?",
+          "answer": "Ne (jen nepatrný závěrný proud). Je to **závěrný směr**: kladný pól přitahuje elektrony z N a záporný díry z P od rozhraní, vyprázdněná vrstva se rozšíří."
+        },
+        {
+          "type": "example",
+          "question": "Na stejný přechod připojíš + na P a − na N, napětí 0,3 V. A pak 0,7 V. Kdy teče výrazný proud?",
+          "answer": "Při 0,3 V skoro neteče, protože ještě nebyla překonána hradlová vrstva. Při 0,7 V už je přechod otevřený a proud teče – pak ho musí omezit odpor v obvodu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Díra je skutečná kladná částice, která se pohybuje krystalem.",
+          "right": "Díra je jen chybějící elektron ve vazbě. Pohybuje se tak, že do ní postupně přeskakují sousední elektrony.",
+          "why": "Navenek se chová jako kladný náboj, a proto se s ní tak počítá, ale není to samostatná částice jako proton."
+        },
+        {
+          "type": "summary",
+          "text": "Polovodič (Si) má volné elektrony a díry. Příměs s 5 elektrony dá typ N, se 3 elektrony typ P. Přechod PN vede v propustném směru (+ na P) od asi 0,6–0,7 V, v závěrném nevede."
+        }
+      ]
+    },
+    {
+      "title": "Vlastnosti a přehled",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Proč se křemíkový čip při přehřátí chová jinak? Proč dioda vede jen jedním směrem? Odpověď je v tom, jak se v polovodiči pohybují nosiče náboje. Tady máš vlastnosti polovodičů v přehledu a srovnání s kovem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nosič náboje",
+          "definition": "Částice, která se může pohybovat a nese náboj. V kovu jen volné elektrony. V polovodiči volné elektrony (−) a díry (+).",
+          "example": "Proud v polovodiči = pohyb elektronů jedním a děr opačným směrem."
+        },
+        {
+          "type": "term",
+          "term": "Vlastní vodivost",
+          "definition": "Vodivost čistého polovodiče. Teplem vznikají páry elektron–díra. Je malá a silně roste s teplotou.",
+          "example": "Čistý křemík při 20 °C vede velmi špatně."
+        },
+        {
+          "type": "term",
+          "term": "Nevlastní (příměsová) vodivost",
+          "definition": "Vodivost způsobená příměsí. Typ N má příměs 5mocného prvku (P, As), typ P 3mocného (B, Ga).",
+          "example": "Jeden atom příměsi na milion atomů křemíku zvýší vodivost mnohonásobně."
+        },
+        {
+          "type": "term",
+          "term": "Majoritní a minoritní nosiče",
+          "definition": "**Majoritní** jsou ty, kterých je v dané oblasti nejvíc (v N elektrony, v P díry). **Minoritní** jsou ty druhé, vznikají jen teplem.",
+          "example": "Minoritní nosiče tvoří malý závěrný proud diody."
+        },
+        {
+          "type": "term",
+          "term": "Přechod PN",
+          "definition": "Rozhraní oblastí P a N v jednom krystalu. Vznikne na něm vyprázdněná vrstva a difuzní napětí (u Si asi 0,6–0,7 V), které je třeba překonat.",
+          "example": "Dioda = jeden přechod PN, bipolární tranzistor = dva."
+        },
+        {
+          "type": "heading",
+          "text": "Polovodič a kov"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "kov (měď)",
+            "polovodič (křemík)"
+          ],
+          "rows": [
+            [
+              "nosiče náboje",
+              "volné elektrony",
+              "elektrony a díry"
+            ],
+            [
+              "s rostoucí teplotou odpor",
+              "roste",
+              "klesá"
+            ],
+            [
+              "vliv příměsí",
+              "malý",
+              "obrovský"
+            ],
+            [
+              "vliv světla",
+              "zanedbatelný",
+              "může vodivost zvýšit (fotodioda)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Přechod PN ve dvou směrech"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zapojení",
+            "Vyprázdněná vrstva",
+            "Proud"
+          ],
+          "rows": [
+            [
+              "propustný: + na P, − na N",
+              "zužuje se",
+              "teče (od asi 0,6–0,7 V u Si)"
+            ],
+            [
+              "závěrný: + na N, − na P",
+              "rozšiřuje se",
+              "jen nepatrný závěrný proud"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Příměs fosforu vytvoří polovodič typu ",
+                "after": ".",
+                "options": [
+                  "N",
+                  "P"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "V polovodiči typu P jsou majoritní nosiče ",
+                "after": ".",
+                "options": [
+                  "díry",
+                  "elektrony"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "S rostoucí teplotou odpor polovodiče ",
+                "after": ".",
+                "options": [
+                  "klesá",
+                  "roste"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Propustný směr: kladný pól na oblast ",
+                "after": ".",
+                "options": [
+                  "P",
+                  "N"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň věty. Když váháš, podívej se znovu do tabulek."
+        },
+        {
+          "type": "example",
+          "question": "Proč se teplotní čidlo NTC termistor vyrábí z polovodiče, a ne z kovu?",
+          "answer": "Odpor polovodiče s teplotou výrazně **klesá** (víc tepla = víc párů elektron–díra = víc nosičů). Změna je mnohem větší než u kovu, takže čidlo je citlivější. NTC = záporný teplotní součinitel."
+        },
+        {
+          "type": "example",
+          "question": "Proč závěrný proud diody s teplotou roste?",
+          "answer": "Závěrný proud tvoří **minoritní nosiče**. Ty vznikají teplem, takže čím teplejší přechod, tím jich je víc a závěrný proud roste. Proto se v elektronice hlídá teplota součástek."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Polovodič se chová jako kov: když se zahřeje, vede hůř.",
+          "right": "Polovodič při zahřátí vede lépe, jeho odpor klesá.",
+          "why": "U kovu teplo jen zvyšuje kmitání atomů, které brzdí elektrony. U polovodiče teplo navíc uvolňuje nové nosiče náboje a tento vliv převáží."
+        },
+        {
+          "type": "summary",
+          "text": "V polovodiči nesou náboj elektrony a díry. Příměsi tvoří typ N (elektrony) a P (díry). Odpor polovodiče s teplotou klesá. Přechod PN vede jen v propustném směru."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který prvek je nejpoužívanější polovodič?",
+      "options": [
+        "křemík",
+        "měď",
+        "hliník",
+        "uhlík ve formě grafitu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký typ polovodiče vznikne, když do křemíku přidáš bor?",
+      "options": [
+        "typ P",
+        "typ N",
+        "izolant",
+        "vlastní polovodič"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kolik valenčních elektronů má bor?",
+        "Chybějící elektron ve vazbě = díra."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V polovodiči typu N jsou majoritními nosiči náboje elektrony.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Odpor polovodiče s rostoucí teplotou roste stejně jako u kovů.",
+      "answer": false,
+      "explanation": "Odpor polovodiče s teplotou klesá."
+    },
+    {
+      "type": "input",
+      "question": "Kolik valenčních elektronů má atom křemíku?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapojí přechod PN v propustném směru?",
+      "options": [
+        "+ na P, − na N",
+        "+ na N, − na P",
+        "obě strany na +",
+        "na směru nezáleží"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jaké je přibližné napětí, od kterého vede křemíkový přechod PN? Napiš v V (stačí jedno desetinné místo).",
+      "answers": [
+        "0,6",
+        "0,7",
+        "0,65"
+      ],
+      "hints": [
+        "Je to méně než jeden volt."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s vysvětlením.",
+      "pairs": [
+        [
+          "díra",
+          "chybějící elektron ve vazbě"
+        ],
+        [
+          "typ N",
+          "příměs s 5 valenčními elektrony"
+        ],
+        [
+          "typ P",
+          "příměs se 3 valenčními elektrony"
+        ],
+        [
+          "vyprázdněná vrstva",
+          "oblast bez volných nosičů u přechodu"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje při zapojení přechodu PN v propustném směru.",
+      "items": [
+        "přiložím + na P a − na N",
+        "vyprázdněná vrstva se zužuje",
+        "napětí překročí asi 0,6 V",
+        "přechodem teče proud"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co tvoří malý závěrný proud diody?",
+      "options": [
+        "minoritní nosiče",
+        "majoritní nosiče",
+        "atomy příměsi",
+        "ionty z vodiče"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Díra se v elektrickém poli chová jako kladný náboj.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč se do křemíku přidávají příměsi?",
+      "options": [
+        "aby se cíleně zvýšila a řídila jeho vodivost",
+        "aby byl pevnější",
+        "aby se nepřehříval",
+        "aby nevedl vůbec"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak vzniká polovodič typu N a typu P.",
+      "answer": "Do čistého křemíku se přidá malé množství příměsi. Prvek s 5 valenčními elektrony (fosfor) dá volný elektron – vznikne typ N. Prvek se 3 valenčními elektrony (bor) vytvoří díru – vznikne typ P."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se chová přechod PN v propustném a v závěrném směru.",
+      "answer": "V propustném směru (+ na P) se vyprázdněná vrstva zúží a po překonání asi 0,6–0,7 V teče proud. V závěrném směru (+ na N) se vrstva rozšíří a teče jen nepatrný závěrný proud minoritních nosičů."
+    }
+  ]
+}

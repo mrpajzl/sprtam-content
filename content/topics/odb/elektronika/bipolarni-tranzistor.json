@@ -1,0 +1,406 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "bipolarni-tranzistor",
+  "title": "Bipolární tranzistor",
+  "emoji": "🎛️",
+  "explanations": [
+    {
+      "title": "Malý proud řídí velký",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Výstup mikrokontroléru dá jen pár miliampérů. Relé nebo motorek ale potřebuje stovky miliampérů. Tranzistor je jako kohoutek: malou silou na páčce ovládáš velký proud vody. Malý proud do báze řídí velký proud kolektorem."
+        },
+        {
+          "type": "text",
+          "text": "Tranzistor umí dvě věci: **spínat** (zapnuto / vypnuto) a **zesilovat** (malý signál převést na větší)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: přechod PN",
+          "definition": "Rozhraní polovodiče typu P a N. Vede, když je + na P a − na N, od asi 0,6–0,7 V (křemík)."
+        },
+        {
+          "type": "term",
+          "term": "Bipolární tranzistor",
+          "definition": "Součástka ze tří vrstev polovodiče, NPN nebo PNP, se dvěma přechody PN. Má tři vývody: **báze (B)** – řídicí, **kolektor (C)** a **emitor (E)** – jimi teče hlavní proud.",
+          "example": "BC547 (NPN, malý), BD139 (NPN, středně výkonový)."
+        },
+        {
+          "type": "term",
+          "term": "Proudový zesilovací činitel β",
+          "definition": "Kolikrát je kolektorový proud větší než proud báze: `I_C = β · I_B`. V katalogu se značí také h₂₁E nebo h_FE. Bývá desítky až stovky.",
+          "example": "β = 200, I_B = 0,1 mA → I_C = 20 mA."
+        },
+        {
+          "type": "heading",
+          "text": "Jak tranzistor NPN funguje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Mezi bázi a emitor přivedeš napětí asi 0,7 V – přechod B-E se otevře.",
+            "Do báze teče malý proud I_B.",
+            "Ten „otevře cestu“ z kolektoru do emitoru, teče velký proud I_C = β · I_B.",
+            "Emitorem odtéká oba proudy dohromady: I_E = I_B + I_C.",
+            "Když proud báze přestane téct, kolektorový proud také zanikne."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Tranzistor má β = 150, do báze teče 0,2 mA. Jaký je kolektorový a emitorový proud?",
+          "answer": "I_C = 150 · 0,2 = **30 mA**. I_E = 0,2 + 30 = **30,2 mA**."
+        },
+        {
+          "type": "heading",
+          "text": "Tranzistor jako spínač"
+        },
+        {
+          "type": "text",
+          "text": "Ve spínacím režimu je tranzistor buď **zavřený** (I_B = 0, proud neteče), nebo **otevřený v saturaci** – báze dostane víc proudu, než je nutné, a mezi C a E zůstane jen asi 0,2 V."
+        },
+        {
+          "type": "example",
+          "question": "Mikrokontrolér (5 V) spíná přes tranzistor NPN (β = 100) relé, které bere 50 mA. Jaký rezistor do báze? Počítej s dvojnásobným proudem báze pro jistou saturaci.",
+          "answer": "Nutný I_B = 50 / 100 = 0,5 mA, s rezervou 2× → 1 mA. Na rezistoru je 5 − 0,7 = 4,3 V. R_B = 4,3 / 0,001 = **4,3 kΩ**. Volíš 3,9 kΩ (menší odpor = víc proudu = jistá saturace). K cívce relé patří **nulová dioda** (dioda zapojená paralelně k cívce v závěrném směru; po vypnutí přes ni doběhne proud cívky a nevznikne napěťová špička, která by zničila tranzistor)."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "B",
+                "back": "báze – řídicí vývod"
+              },
+              {
+                "front": "C",
+                "back": "kolektor – sem vtéká hlavní proud (NPN)"
+              },
+              {
+                "front": "E",
+                "back": "emitor – odtud vytéká I_B + I_C (NPN)"
+              },
+              {
+                "front": "I_C = ?",
+                "back": "β · I_B"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ověř si, jestli umíš vývody a hlavní vztah."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Bázi tranzistoru připojím rovnou na výstup 5 V, rezistor není potřeba.",
+          "right": "Do báze vždy patří rezistor, který omezí proud báze.",
+          "why": "Přechod B-E je dioda. Při 5 V bez rezistoru by jím tekl obrovský proud, zničil by tranzistor i výstup mikrokontroléru."
+        },
+        {
+          "type": "summary",
+          "text": "Bipolární tranzistor: B, C, E. I_C = β · I_B, I_E = I_B + I_C, U_BE ≈ 0,7 V. Jako spínač pracuje zavřený nebo v saturaci; do báze vždy patří rezistor."
+        }
+      ]
+    },
+    {
+      "title": "Režimy a zapojení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Stejný tranzistor jednou spíná ventil a jindy zesiluje signál z mikrofonu. Rozdíl je v tom, v jakém **pracovním režimu** ho provozuješ. Tady je přehled režimů, zapojení a výpočtů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tranzistor NPN a PNP",
+          "definition": "Bipolární tranzistor má tři vrstvy: N-P-N nebo P-N-P. U NPN teče hlavní proud z kolektoru do emitoru a báze se ovládá kladným napětím proti emitoru. U PNP je vše obráceně. Ve značce ukazuje šipka na emitoru směr proudu.",
+          "example": "NPN: šipka ven z tranzistoru. PNP: šipka dovnitř."
+        },
+        {
+          "type": "term",
+          "term": "Proudové zesílení β",
+          "definition": "Poměr I_C / I_B v aktivním režimu. Každý kus tranzistoru má jiné β, i ve stejném typu, a mění se s teplotou.",
+          "example": "BC547B: β zhruba 200–450."
+        },
+        {
+          "type": "term",
+          "term": "Pracovní bod",
+          "definition": "Klidové hodnoty proudů a napětí tranzistoru bez signálu. U zesilovače se nastavuje doprostřed, aby se signál mohl měnit nahoru i dolů.",
+          "example": "Napájení 12 V, U_CE v klidu asi 6 V."
+        },
+        {
+          "type": "term",
+          "term": "Saturace",
+          "definition": "Stav plně otevřeného tranzistoru: kolektorový proud už neroste s proudem báze, protože ho omezuje zátěž. U_CE je jen asi 0,1–0,3 V.",
+          "example": "Spínač LED pásku v sepnutém stavu."
+        },
+        {
+          "type": "heading",
+          "text": "Tři režimy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Režim",
+            "Přechod B-E",
+            "Co se děje",
+            "Použití"
+          ],
+          "rows": [
+            [
+              "zavřený (nevodivý)",
+              "nevede (U_BE < asi 0,6 V)",
+              "I_C ≈ 0",
+              "spínač vypnuto"
+            ],
+            [
+              "aktivní",
+              "vede",
+              "I_C = β · I_B",
+              "zesilovač"
+            ],
+            [
+              "saturace",
+              "vede, I_B je nadbytečný",
+              "U_CE ≈ 0,2 V, I_C určuje zátěž",
+              "spínač zapnuto"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "zavřený",
+              "aktivní",
+              "saturace"
+            ],
+            "items": [
+              {
+                "text": "I_B = 0",
+                "group": 0
+              },
+              {
+                "text": "I_C = β · I_B platí",
+                "group": 1
+              },
+              {
+                "text": "U_CE ≈ 0,2 V",
+                "group": 2
+              },
+              {
+                "text": "zesilovač zvuku",
+                "group": 1
+              },
+              {
+                "text": "relé sepnuté",
+                "group": 2
+              },
+              {
+                "text": "relé rozepnuté",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď situace do režimů. Rozhoduje, kolik proudu teče do báze a co omezuje kolektorový proud."
+        },
+        {
+          "type": "heading",
+          "text": "Zapojení se společným emitorem"
+        },
+        {
+          "type": "text",
+          "text": "Nejčastější zapojení: emitor je společný pro vstup i výstup (na zemi). Vstup jde do báze, výstup se bere z kolektoru přes kolektorový rezistor R_C. Zesiluje proud i napětí a **obrací fázi**: když vstup roste, výstup klesá."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči proud zátěže (u spínače) nebo požadovaný klidový I_C (u zesilovače).",
+            "Z β spočítej I_B = I_C / β (u spínače vynásob rezervou 2–5×).",
+            "Napětí na rezistoru báze: U_RB = U_řídicí − 0,7 V.",
+            "R_B = U_RB / I_B.",
+            "Zkontroluj ztrátový výkon P = U_CE · I_C a mezní hodnoty tranzistoru."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zapojení se společným emitorem: napájení 12 V, R_C = 1 kΩ, β = 100, I_B = 50 μA. Jaký je I_C a U_CE?",
+          "answer": "I_C = 100 · 0,05 mA = **5 mA**. Úbytek na R_C: 1 000 · 0,005 = 5 V. U_CE = 12 − 5 = **7 V**. Tranzistor je v aktivním režimu."
+        },
+        {
+          "type": "example",
+          "question": "Ve stejném zapojení zvýšíš I_B na 200 μA. Co se stane?",
+          "answer": "Podle β by I_C = 20 mA a úbytek na R_C 20 V. To nejde – napájení má jen 12 V. Tranzistor je v **saturaci**: I_C ≈ (12 − 0,2) / 1 000 ≈ **11,8 mA**, U_CE ≈ 0,2 V."
+        },
+        {
+          "type": "mistake",
+          "wrong": "U spínače spočítám R_B přesně podle katalogového β a jsem hotov.",
+          "right": "Proud báze se u spínače volí s rezervou (2–5× víc, než vyjde z β).",
+          "why": "β se liší kus od kusu a klesá s teplotou. Bez rezervy by tranzistor nemusel dojít do saturace, U_CE by bylo velké a tranzistor by se přehříval."
+        },
+        {
+          "type": "summary",
+          "text": "Režimy: zavřený, aktivní (I_C = β · I_B, zesilovač), saturace (U_CE ≈ 0,2 V, spínač). Společný emitor zesiluje a obrací fázi. U spínače počítej I_B s rezervou."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj vývod tranzistoru s popisem.",
+      "pairs": [
+        [
+          "báze",
+          "řídicí vývod"
+        ],
+        [
+          "kolektor",
+          "do něj vtéká hlavní proud u NPN"
+        ],
+        [
+          "emitor",
+          "odtéká jím I_B + I_C u NPN"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "β = 200, I_B = 0,05 mA. Kolektorový proud v mA =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "I_C = 200 · 0,05 = 10 mA."
+    },
+    {
+      "type": "input",
+      "question": "I_B = 0,1 mA, I_C = 25 mA. Emitorový proud v mA =",
+      "answers": [
+        "25,1"
+      ],
+      "explanation": "I_E = I_B + I_C.",
+      "hints": [
+        "Do emitoru se sejdou oba proudy."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké napětí je přibližně mezi bází a emitorem otevřeného křemíkového tranzistoru?",
+      "options": [
+        "0,7 V",
+        "0,2 V",
+        "5 V",
+        "12 V"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "V jakém režimu pracuje tranzistor jako sepnutý spínač?",
+      "options": [
+        "v saturaci",
+        "v aktivním režimu",
+        "v závěrném průrazu",
+        "v zavřeném stavu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "V zapojení se společným emitorem je výstupní napětí ve fázi se vstupním.",
+      "answer": false,
+      "explanation": "Zapojení se společným emitorem obrací fázi."
+    },
+    {
+      "type": "input",
+      "question": "Řízení 5 V, U_BE = 0,7 V, požadovaný I_B = 1 mA. R_B v Ω =",
+      "answers": [
+        "4300",
+        "4 300"
+      ],
+      "explanation": "R_B = (5 − 0,7) / 0,001 = 4 300 Ω.",
+      "hints": [
+        "Na rezistoru báze je napětí řízení minus U_BE."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "β je u všech kusů tranzistoru stejného typu přesně stejné.",
+      "answer": false,
+      "explanation": "Liší se kus od kusu a mění se s teplotou."
+    },
+    {
+      "type": "choice",
+      "question": "Proč dáváš proud báze u spínače s rezervou?",
+      "options": [
+        "aby tranzistor spolehlivě došel do saturace",
+        "aby se zvětšilo β",
+        "aby tranzistor rychleji stárnul",
+        "aby obrátil fázi"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu rezistoru báze pro tranzistorový spínač.",
+      "items": [
+        "zjistit proud zátěže I_C",
+        "spočítat I_B = I_C / β",
+        "vynásobit I_B rezervou",
+        "spočítat napětí na R_B",
+        "spočítat R_B = U_RB / I_B"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napájení 10 V, R_C = 2 kΩ, I_C = 3 mA (aktivní režim). U_CE ve V =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Úbytek na R_C = 2 000 · 0,003 = 6 V, U_CE = 10 − 6 = 4 V."
+    },
+    {
+      "type": "choice",
+      "question": "Co je nutné přidat, když tranzistor spíná cívku relé?",
+      "options": [
+        "nulovou diodu paralelně k cívce",
+        "kondenzátor do báze",
+        "druhý tranzistor do série",
+        "nic"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak bipolární tranzistor NPN pracuje jako spínač.",
+      "answer": "Když do báze neteče proud, tranzistor je zavřený a zátěží proud neteče. Když přes rezistor báze přivedu dostatečný proud (s rezervou), tranzistor přejde do saturace, U_CE klesne asi na 0,2 V a zátěží teče plný proud."
+    },
+    {
+      "type": "open",
+      "question": "Popiš tři pracovní režimy bipolárního tranzistoru.",
+      "answer": "Zavřený: přechod B-E nevede, kolektorový proud je nulový. Aktivní: I_C = β · I_B, tranzistor zesiluje. Saturace: báze dostává nadbytek proudu, U_CE je jen asi 0,2 V a proud určuje zátěž – sepnutý spínač."
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "unipolarni-tranzistory",
+  "title": "Unipolární tranzistory (MOSFET)",
+  "emoji": "🚪",
+  "explanations": [
+    {
+      "title": "Vrata ovládaná napětím",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Elektrokoloběžka, 3D tiskárna, LED pásek řízený z Arduina – všude tam ampéry proudu spínají tranzistory **MOSFET**. Na rozdíl od bipolárního tranzistoru je neovládá proud, ale **napětí**. Do řídicí elektrody v klidu skoro nic neteče, a přesto spínají desítky ampérů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: bipolární tranzistor",
+          "definition": "Tranzistor, ve kterém malý proud báze řídí velký proud kolektorem: I_C = β · I_B."
+        },
+        {
+          "type": "term",
+          "term": "Unipolární tranzistor (FET)",
+          "definition": "Tranzistor řízený **elektrickým polem**, tedy napětím. Proud vede jen jeden druh nosičů náboje (jen elektrony, nebo jen díry), proto „unipolární“.",
+          "example": "MOSFET, JFET."
+        },
+        {
+          "type": "term",
+          "term": "Elektrody G, D, S",
+          "definition": "**Gate (G, hradlo)** – řídicí elektroda. **Drain (D, kolektor/odtok)** a **Source (S, emitor/zdroj)** – mezi nimi teče hlavní proud kanálem.",
+          "example": "U MOSFETu s kanálem N je S obvykle na zemi a zátěž mezi + a D."
+        },
+        {
+          "type": "term",
+          "term": "Kanál",
+          "definition": "Vodivá cesta v polovodiči mezi D a S. Napětí na hradle ho vytvoří, rozšíří nebo zúží.",
+          "example": "Jako hadice, kterou napětím otevíráš a zavíráš."
+        },
+        {
+          "type": "term",
+          "term": "MOSFET",
+          "definition": "Tranzistor, jehož hradlo je od kanálu oddělené tenoučkou vrstvou **izolantu** (oxidu křemíku). Proto hradlem v ustáleném stavu neteče skoro žádný proud.",
+          "example": "IRLZ44N – MOSFET s kanálem N pro spínání z 5 V logiky."
+        },
+        {
+          "type": "heading",
+          "text": "Jak MOSFET s kanálem N spíná"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Hradlo je na 0 V proti S: kanál neexistuje, tranzistor je zavřený.",
+            "Napětí U_GS roste a překročí prahové napětí U_GS(th) (typicky 1–4 V): kanál se začne tvořit.",
+            "Při dostatečném U_GS (podle katalogu, např. 4,5 V nebo 10 V) je kanál plně otevřený.",
+            "Mezi D a S je jen malý odpor R_DS(on) – tranzistor je sepnutý.",
+            "Když U_GS klesne k nule, kanál zmizí a proud přestane téct."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "MOSFET má R_DS(on) = 0,02 Ω a spíná motor s proudem 10 A. Jaký výkon se na něm mění v teplo?",
+          "answer": "P = R_DS(on) · I² = 0,02 · 100 = **2 W**. Bipolární tranzistor s U_CE(sat) = 0,3 V by při 10 A ztrácel 3 W a navíc by potřeboval velký proud báze."
+        },
+        {
+          "type": "example",
+          "question": "Proč je dobré dát mezi hradlo a S rezistor třeba 10 kΩ?",
+          "answer": "Když je řídicí výstup odpojený (třeba při startu mikrokontroléru), hradlo by „viselo ve vzduchu“ a náhodný náboj by mohl tranzistor napůl otevřít. Rezistor (**pull-down**) drží hradlo na 0 V, takže MOSFET je spolehlivě zavřený."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "G",
+                "back": "gate (hradlo) – řídicí elektroda"
+              },
+              {
+                "front": "D",
+                "back": "drain – sem vtéká hlavní proud (kanál N)"
+              },
+              {
+                "front": "S",
+                "back": "source – odtud proud vytéká (kanál N)"
+              },
+              {
+                "front": "U_GS(th)",
+                "back": "prahové napětí, od kterého se tvoří kanál"
+              },
+              {
+                "front": "R_DS(on)",
+                "back": "odpor sepnutého kanálu"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč si kartičky a porovnej je s vývody bipolárního tranzistoru: G ~ báze, D ~ kolektor, S ~ emitor."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vezmu MOSFET za vývody holými prsty a zasunu ho do desky, je to jen kus křemíku.",
+          "right": "MOSFET je citlivý na statickou elektřinu (ESD). Pracuje se na antistatické podložce, s uzemňovacím náramkem a součástky se skladují v antistatických obalech.",
+          "why": "Izolant hradla je tak tenký, že ho výboj z těla, který ani necítíš, prorazí a tranzistor zničí nebo poškodí."
+        },
+        {
+          "type": "summary",
+          "text": "MOSFET je řízený napětím U_GS, hradlo je izolované a v klidu nebere proud. Nad prahovým napětím se otevře kanál, sepnutý má malý odpor R_DS(on), ztráta P = R_DS(on) · I². Pozor na statickou elektřinu."
+        }
+      ]
+    },
+    {
+      "title": "Srovnání a katalog",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš vybrat tranzistor, který z výstupu 3,3 V mikrokontroléru spíná ventil 24 V / 2 A. Bipolární, nebo MOSFET? A který MOSFET? Tady je srovnání a postup, jak číst katalogový list."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Unipolární tranzistor a MOSFET",
+          "definition": "Tranzistor řízený napětím, ve kterém proud vede jeden druh nosičů. MOSFET má hradlo izolované oxidem, proto má obrovský vstupní odpor.",
+          "example": "Vývody G (hradlo), D (drain), S (source)."
+        },
+        {
+          "type": "term",
+          "term": "Kanál N a kanál P",
+          "definition": "MOSFET s **kanálem N** se otevírá kladným napětím hradla proti S, spíná se jím obvykle zátěž proti zemi (low-side). S **kanálem P** se otevírá záporným napětím hradla proti S, spíná zátěž od kladného napájení (high-side).",
+          "example": "N-MOSFET pod motorem, P-MOSFET nad ním."
+        },
+        {
+          "type": "term",
+          "term": "Indukovaný kanál",
+          "definition": "Kanál, který bez napětí na hradle neexistuje a vytvoří se až nad prahovým napětím. Takový MOSFET je bez řízení zavřený – to je pro spínače výhodné a nejčastější.",
+          "example": "Většina výkonových MOSFETů."
+        },
+        {
+          "type": "term",
+          "term": "Logic-level MOSFET",
+          "definition": "MOSFET, který se plně otevře už napětím logiky (např. 4,5 V nebo 2,5 V). V katalogu má R_DS(on) zaručený při takovém U_GS.",
+          "example": "Pro 3,3V mikrokontrolér hledáš R_DS(on) udaný při U_GS = 2,5 V nebo 3,3 V."
+        },
+        {
+          "type": "heading",
+          "text": "Bipolární a unipolární tranzistor"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "bipolární (BJT)",
+            "unipolární (MOSFET)"
+          ],
+          "rows": [
+            [
+              "řízení",
+              "proudem báze",
+              "napětím hradla"
+            ],
+            [
+              "vstupní odpor",
+              "malý (kΩ)",
+              "velmi velký (hradlo izolované)"
+            ],
+            [
+              "sepnutý stav",
+              "U_CE(sat) ≈ 0,2 V",
+              "odpor R_DS(on), často mΩ"
+            ],
+            [
+              "citlivost na ESD",
+              "menší",
+              "velká"
+            ],
+            [
+              "typické použití",
+              "malé signály, jednoduché spínače",
+              "výkonové spínání, PWM, spínané zdroje"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co hledat v katalogu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "U_DS max – největší napětí mezi D a S (volíš s rezervou nad napájením).",
+            "I_D max – největší proud drainem.",
+            "R_DS(on) a U_GS, při kterém platí.",
+            "U_GS(th) – prahové napětí.",
+            "U_GS max – největší dovolené napětí hradla (často ±20 V)."
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči napájení zátěže a její proud.",
+            "Vyber U_DS max s rezervou (aspoň asi 1,5–2× napájení u indukčních zátěží).",
+            "Zkontroluj, že R_DS(on) je zaručené při napětí, které tvůj řídicí výstup opravdu dává.",
+            "Spočítej ztrátu P = R_DS(on) · I² a rozhodni o chladiči.",
+            "Přidej pull-down na hradlo a u indukční zátěže nulovou diodu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ventil 24 V / 2 A, řízení 3,3 V. MOSFET má U_DS max 60 V a R_DS(on) = 0,05 Ω při U_GS = 2,5 V. Hodí se? Jaká je ztráta?",
+          "answer": "U_DS 60 V > 24 V s rezervou ✓. R_DS(on) je zaručené už při 2,5 V, tedy i při 3,3 V ✓. P = 0,05 · 2² = **0,2 W** – stačí bez chladiče. Ventil je cívka, takže paralelně k ní **nulová dioda** (dioda zapojená paralelně k cívce v závěrném směru; po vypnutí přes ni doběhne proud cívky a nevznikne napěťová špička, která by zničila tranzistor)."
+        },
+        {
+          "type": "example",
+          "question": "Jiný MOSFET má R_DS(on) = 0,03 Ω, ale jen při U_GS = 10 V a U_GS(th) = 2–4 V. Proč se pro 3,3V řízení nehodí?",
+          "answer": "Při 3,3 V může být sotva nad prahem (práh až 4 V!), kanál by nebyl otevřený nebo jen částečně. R_DS(on) by byl mnohem větší než 0,03 Ω a tranzistor by se přehříval. Potřeboval by budič hradla na 10 V."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "bipolární tranzistor",
+              "MOSFET"
+            ],
+            "items": [
+              {
+                "text": "řízený proudem",
+                "group": 0
+              },
+              {
+                "text": "řízený napětím",
+                "group": 1
+              },
+              {
+                "text": "báze, kolektor, emitor",
+                "group": 0
+              },
+              {
+                "text": "hradlo, drain, source",
+                "group": 1
+              },
+              {
+                "text": "sepnutý má odpor R_DS(on)",
+                "group": 1
+              },
+              {
+                "text": "sepnutý má U_CE(sat)",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti. Zkus to bez nahlížení do tabulky."
+        },
+        {
+          "type": "mistake",
+          "wrong": "MOSFET má U_GS(th) = 2 V, takže při 3,3 V z mikrokontroléru je plně otevřený.",
+          "right": "Při prahovém napětí teče jen nepatrný proud (řádově stovky μA). Plně otevřený je až při U_GS, pro které katalog udává R_DS(on).",
+          "why": "Prahové napětí je začátek otevírání, ne plné sepnutí."
+        },
+        {
+          "type": "summary",
+          "text": "MOSFET: řízení napětím, velký vstupní odpor, malý R_DS(on), citlivý na ESD. Vybírej podle U_DS max, I_D max a R_DS(on) při napětí, které skutečně přivedeš na hradlo."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím se řídí MOSFET?",
+      "options": [
+        "napětím mezi hradlem a source",
+        "proudem do báze",
+        "teplotou",
+        "frekvencí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj elektrodu MOSFETu s popisem.",
+      "pairs": [
+        [
+          "gate",
+          "řídicí elektroda (hradlo)"
+        ],
+        [
+          "drain",
+          "sem vtéká hlavní proud u kanálu N"
+        ],
+        [
+          "source",
+          "odtud proud vytéká u kanálu N"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "R_DS(on) = 0,01 Ω, proud 20 A. Ztrátový výkon ve W =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "P = 0,01 · 400 = 4 W.",
+      "hints": [
+        "Ztráta na odporu je odpor krát proud na druhou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hradlem MOSFETu v ustáleném stavu teče skoro nulový proud.",
+      "answer": true,
+      "explanation": "Hradlo je od kanálu izolované oxidem."
+    },
+    {
+      "type": "truefalse",
+      "question": "MOSFET je odolný proti statické elektřině, takže se s ním může zacházet bez opatření.",
+      "answer": false,
+      "explanation": "Tenký izolant hradla se výbojem snadno prorazí."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží rezistor mezi hradlem a source (pull-down)?",
+      "options": [
+        "drží MOSFET zavřený, když je řídicí výstup odpojený",
+        "zvyšuje proud zátěží",
+        "chrání před přepólováním",
+        "zrychluje spínání"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená U_GS(th)?",
+      "options": [
+        "prahové napětí, od kterého se tvoří kanál",
+        "napětí plného otevření",
+        "maximální napětí mezi D a S",
+        "úbytek napětí na sepnutém tranzistoru"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik vývodů (elektrod) má běžný MOSFET v pouzdře TO-220?",
+      "answers": [
+        "3",
+        "tři",
+        "tri"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se pro výkonové PWM řízení motorů používají spíš MOSFETy než bipolární tranzistory?",
+      "options": [
+        "mají malý odpor v sepnutém stavu a řídí se napětím, bez velkého proudu",
+        "jsou odolnější proti ESD",
+        "nepotřebují žádné řízení",
+        "fungují jen se střídavým proudem"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnej ztráty v sepnutém stavu a co potřebuje řídicí elektroda."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď stavy MOSFETu s kanálem N při postupném zvyšování U_GS od nuly.",
+      "items": [
+        "zavřený, kanál neexistuje",
+        "U_GS dosáhne prahu, kanál se začíná tvořit",
+        "kanál se rozšiřuje, proud roste",
+        "plně otevřený, odpor R_DS(on)"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Logic-level MOSFET se plně otevře napětím logiky, například 5 V nebo 3,3 V.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Napájení zátěže je 24 V a zátěž je cívka. Jaký MOSFET podle U_DS max vybereš?",
+      "options": [
+        "60 V",
+        "20 V",
+        "24 V",
+        "12 V"
+      ],
+      "answer": 0,
+      "explanation": "U indukční zátěže je potřeba rezerva, aspoň 1,5–2× napájení."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej bipolární tranzistor a MOSFET.",
+      "answer": "Bipolární tranzistor je řízený proudem báze a v sepnutém stavu má úbytek U_CE(sat) asi 0,2 V. MOSFET je řízený napětím na izolovaném hradle, má velký vstupní odpor a v sepnutém stavu malý odpor R_DS(on). MOSFET je výhodnější pro výkonové spínání, ale je citlivý na statickou elektřinu."
+    },
+    {
+      "type": "open",
+      "question": "Jak správně zacházet se součástkami citlivými na ESD?",
+      "answer": "Pracovat na antistatické podložce s uzemňovacím náramkem, součástky skladovat v antistatických obalech, nesahat přímo na vývody a nepracovat v oblečení, které se snadno nabíjí."
+    }
+  ]
+}

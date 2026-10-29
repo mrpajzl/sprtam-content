@@ -1,0 +1,391 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "prevodniky-mikrokontrolery",
+  "title": "Převodníky A/D, D/A a mikrokontroléry",
+  "emoji": "🖥️",
+  "explanations": [
+    {
+      "title": "Od čidla k číslu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Teplotní čidlo dává plynule se měnící napětí. Mikrokontrolér ale umí počítat jen s čísly z nul a jedniček. Most mezi těmito světy tvoří **převodníky**: A/D převede napětí na číslo, D/A číslo zpět na napětí. Mezi nimi pracuje **mikrokontrolér** – malý počítač v jednom čipu, který řídí pračku, 3D tiskárnu i robota."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Analogový a číslicový signál",
+          "definition": "**Analogový** se mění plynule a může mít jakoukoli hodnotu v rozsahu. **Číslicový (digitální)** má jen omezený počet hodnot zapsaných čísly.",
+          "example": "Napětí z potenciometru 0–5 V je analogové; číslo 0–1023 v mikrokontroléru je číslicové."
+        },
+        {
+          "type": "term",
+          "term": "Převodník A/D (ADC)",
+          "definition": "Obvod, který změří analogové napětí a vyjádří ho číslem.",
+          "example": "Arduino Uno má 10bitový převodník: 0 V → 0, 5 V → 1023."
+        },
+        {
+          "type": "term",
+          "term": "Rozlišení",
+          "definition": "Kolika bity převodník číslo vyjadřuje. n bitů = 2ⁿ úrovní. Nejmenší rozlišitelná změna (krok) je `U_ref / 2ⁿ`, kde U_ref je referenční (největší měřitelné) napětí.",
+          "example": "10 bitů, 5 V: 1 024 úrovní, krok asi 4,9 mV."
+        },
+        {
+          "type": "term",
+          "term": "Mikrokontrolér (MCU)",
+          "definition": "Celý malý počítač v jednom čipu: procesor, paměť pro program, paměť pro data a vstupy a výstupy. Běží v něm jeden program, který se stále opakuje.",
+          "example": "ATmega328P v Arduinu Uno, ESP32, STM32."
+        },
+        {
+          "type": "heading",
+          "text": "Jak mikrokontrolér řídí"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "přečte vstupy: tlačítka a čidla (přes A/D převodník)",
+              "spočítá, co dělat podle programu",
+              "nastaví výstupy: LED, relé, motor (PWM)",
+              "počká a začne znovu"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi smyčku programu. Mikrokontrolér ji opakuje tisíckrát i milionkrát za sekundu, proto se zdá, že reaguje okamžitě."
+        },
+        {
+          "type": "example",
+          "question": "Desetibitový převodník s U_ref = 5 V naměřil číslo 512. Jaké napětí je na vstupu?",
+          "answer": "Krok = 5 / 1 024 ≈ 0,00488 V. U ≈ 512 · 0,00488 ≈ **2,5 V** – polovina rozsahu, protože 512 je polovina z 1 024."
+        },
+        {
+          "type": "example",
+          "question": "Čidlo dává 1,2 V. Jaké číslo ukáže 10bitový převodník s U_ref = 5 V?",
+          "answer": "N = U / U_ref · 1 024 = 1,2 / 5 · 1 024 ≈ 245,8. Převodník vrací celé číslo a obvykle zaokrouhluje dolů: **245**."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta zpět: D/A a PWM"
+        },
+        {
+          "type": "term",
+          "term": "PWM (pulzně šířková modulace)",
+          "definition": "Výstup se velmi rychle zapíná a vypíná. Poměr doby zapnutí k celé periodě se jmenuje **střída**. Průměrné napětí = střída · napájecí napětí. Takto mikrokontrolér řídí jas LED nebo otáčky motoru, i když jeho výstup umí jen 0 a 1.",
+          "example": "Střída 25 % při 5 V → průměr 1,25 V."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výstup mikrokontroléru zvládne přímo napájet motorek nebo relé.",
+          "right": "Výstup zvládne jen malý proud (podle katalogu jednotky až desítky mA). Motor nebo relé se spíná přes tranzistor, s nulovou diodou paralelně k cívce relé.",
+          "why": "Větší proud by výstup přetížil a zničil, a indukční zátěž by navíc při vypnutí vytvořila napěťovou špičku."
+        },
+        {
+          "type": "summary",
+          "text": "A/D převádí napětí na číslo, n bitů = 2ⁿ úrovní, krok U_ref / 2ⁿ. Mikrokontrolér čte vstupy, počítá a nastavuje výstupy pořád dokola. Analogovou hodnotu na výstupu napodobí PWM."
+        }
+      ]
+    },
+    {
+      "title": "Uvnitř čipu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než vybereš mikrokontrolér pro projekt, musíš vědět, kolik má paměti, vstupů, převodníků a jaké umí komunikace. Než navrhneš měření, musíš vědět, jak rychle a jak jemně převodník měří. Tady je přehled stavby MCU a převodníků."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Převodník A/D a D/A",
+          "definition": "**A/D** převádí analogové napětí na číslo, **D/A** číslo na napětí: `U = N · U_ref / 2ⁿ`.",
+          "example": "8bitový D/A, U_ref = 5 V, N = 128 → 2,5 V."
+        },
+        {
+          "type": "term",
+          "term": "Vzorkování",
+          "definition": "A/D převodník neměří nepřetržitě, ale v pravidelných okamžicích – **vzorcích**. Počet vzorků za sekundu je **vzorkovací frekvence**. Podle Shannonova–Kotelnikovova teorému musí být **víc než dvojnásobná** než nejvyšší frekvence v signálu.",
+          "example": "Zvuk do 20 kHz se vzorkuje 44,1 kHz (CD)."
+        },
+        {
+          "type": "term",
+          "term": "Paměti Flash, RAM, EEPROM",
+          "definition": "**Flash** – program, zůstane i bez napájení. **RAM** – proměnné za běhu, po vypnutí se smaže. **EEPROM** – malá trvalá paměť pro nastavení.",
+          "example": "ATmega328P: 32 kB Flash, 2 kB RAM, 1 kB EEPROM."
+        },
+        {
+          "type": "term",
+          "term": "GPIO",
+          "definition": "Univerzální vstupně-výstupní piny. Každý jde nastavit jako číslicový vstup (čte 0/1) nebo výstup (dává 0 V / napájení). Některé mají i zvláštní funkce: A/D vstup, PWM výstup, komunikace.",
+          "example": "Pin nastavený jako vstup s vnitřním pull-up rezistorem pro tlačítko."
+        },
+        {
+          "type": "heading",
+          "text": "Bloky mikrokontroléru"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Blok",
+            "Úkol"
+          ],
+          "rows": [
+            [
+              "CPU (jádro)",
+              "provádí instrukce programu"
+            ],
+            [
+              "Flash",
+              "uložený program"
+            ],
+            [
+              "RAM",
+              "data za běhu"
+            ],
+            [
+              "GPIO",
+              "číslicové vstupy a výstupy"
+            ],
+            [
+              "časovače a PWM",
+              "měření času, generování PWM"
+            ],
+            [
+              "A/D převodník",
+              "měření analogových napětí"
+            ],
+            [
+              "UART, I²C, SPI",
+              "komunikace s počítačem, čidly a displeji"
+            ],
+            [
+              "oscilátor",
+              "hodinový signál (třeba 16 MHz)"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "paměť",
+              "periferie pro vstup a výstup"
+            ],
+            "items": [
+              {
+                "text": "Flash",
+                "group": 0
+              },
+              {
+                "text": "RAM",
+                "group": 0
+              },
+              {
+                "text": "EEPROM",
+                "group": 0
+              },
+              {
+                "text": "A/D převodník",
+                "group": 1
+              },
+              {
+                "text": "GPIO",
+                "group": 1
+              },
+              {
+                "text": "PWM",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď bloky. U pamětí si navíc řekni, která si data pamatuje i po vypnutí."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočty převodníků"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti rozlišení n (bity) a referenční napětí U_ref.",
+            "Počet úrovní 2ⁿ, krok q = U_ref / 2ⁿ.",
+            "A/D: N = U / q (zaokrouhleno dolů na celé číslo).",
+            "D/A: U = N · q.",
+            "Zkontroluj vzorkovací frekvenci: víc než 2× nejvyšší frekvence signálu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "12bitový A/D převodník, U_ref = 3,3 V. Jaký je krok a jaké číslo dá pro 1 V?",
+          "answer": "2¹² = 4 096 úrovní. q = 3,3 / 4 096 ≈ 0,806 mV. N = 1 / 0,000806 ≈ **1 241**."
+        },
+        {
+          "type": "example",
+          "question": "Čidlo vibrací dává signál až do 2 kHz. Stačí vzorkovat 3 kHz?",
+          "answer": "Nestačí. Vzorkovací frekvence musí být víc než 2 · 2 kHz = 4 kHz. V praxi se volí s rezervou, třeba **10 kHz**. Při malé frekvenci vzniká zkreslení (aliasing) – ve výsledku se objeví falešné nízké frekvence."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Převodník má 16 bitů, takže měření je přesné na 16 bitů.",
+          "right": "Rozlišení říká, jak jemné jsou kroky. Skutečnou přesnost zhoršuje šum, nepřesná reference a chyby převodníku.",
+          "why": "Rozlišení a přesnost jsou různé věci. Měření se špatnou referencí ukáže jemně „rozlišené“, ale špatné číslo."
+        },
+        {
+          "type": "summary",
+          "text": "Krok q = U_ref / 2ⁿ, A/D: N = U / q, D/A: U = N · q. Vzorkuj víc než dvojnásobkem nejvyšší frekvence. MCU = CPU + Flash + RAM + GPIO + periferie (A/D, PWM, časovače, komunikace)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik úrovní rozliší 8bitový A/D převodník?",
+      "answers": [
+        "256"
+      ],
+      "hints": [
+        "Počet úrovní je 2 na počet bitů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "10bitový převodník, U_ref = 5 V. Jaké číslo přibližně dá pro 2,5 V?",
+      "answers": [
+        "512",
+        "511"
+      ],
+      "explanation": "2,5 / 5 · 1 024 = 512 (podle zaokrouhlení převodníku 511 nebo 512)."
+    },
+    {
+      "type": "input",
+      "question": "8bitový D/A převodník, U_ref = 5,12 V, N = 100. Výstupní napětí ve V =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "q = 5,12 / 256 = 0,02 V, U = 100 · 0,02 = 2 V.",
+      "hints": [
+        "Nejdřív spočítej velikost jednoho kroku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak velká musí být vzorkovací frekvence pro signál s nejvyšší frekvencí 1 kHz?",
+      "options": [
+        "víc než 2 kHz",
+        "přesně 1 kHz",
+        "aspoň 500 Hz",
+        "na frekvenci nezáleží"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Obsah paměti RAM mikrokontroléru se po vypnutí napájení zachová.",
+      "answer": false,
+      "explanation": "Zachová se Flash a EEPROM, RAM se smaže."
+    },
+    {
+      "type": "match",
+      "question": "Spoj paměť s jejím účelem.",
+      "pairs": [
+        [
+          "Flash",
+          "program"
+        ],
+        [
+          "RAM",
+          "proměnné za běhu"
+        ],
+        [
+          "EEPROM",
+          "trvalé nastavení"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "PWM se střídou 40 % z napájení 5 V. Průměrné napětí ve V =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "0,4 · 5 = 2 V."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se správně připojí relé k výstupu mikrokontroléru?",
+      "options": [
+        "přes tranzistor, s nulovou diodou paralelně k cívce",
+        "přímo na pin výstupu",
+        "přes kondenzátor",
+        "přes A/D převodník"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky hlavní smyčky řídicího programu.",
+      "items": [
+        "přečíst vstupy",
+        "spočítat reakci",
+        "nastavit výstupy",
+        "začít znovu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které rozhraní slouží ke komunikaci mikrokontroléru s čidly a displeji?",
+      "options": [
+        "I²C",
+        "PWM",
+        "EEPROM",
+        "GPIO jako analogový výstup"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Větší rozlišení převodníku automaticky znamená přesnější měření.",
+      "answer": false,
+      "explanation": "Přesnost zhoršuje šum a nepřesná reference."
+    },
+    {
+      "type": "input",
+      "question": "Jaký je krok 10bitového převodníku s U_ref = 1,024 V? Výsledek v mV =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "1,024 V / 1 024 = 0,001 V = 1 mV."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, z jakých hlavních bloků se skládá mikrokontrolér.",
+      "answer": "Mikrokontrolér obsahuje procesorové jádro (CPU), paměť Flash pro program, RAM pro data a často EEPROM. Dále má vstupně-výstupní piny GPIO, časovače a PWM, A/D převodník, komunikační rozhraní (UART, I²C, SPI) a oscilátor pro hodiny."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je rozlišení A/D převodníku a jak souvisí s velikostí kroku.",
+      "answer": "Rozlišení je počet bitů, kterými převodník vyjadřuje výsledek; n bitů dá 2ⁿ úrovní. Krok, tedy nejmenší rozlišitelná změna napětí, je U_ref / 2ⁿ, takže čím víc bitů, tím jemnější kroky."
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "klopne-obvody-citace-registry",
+  "title": "Klopné obvody, čítače a registry",
+  "emoji": "⏱️",
+  "explanations": [
+    {
+      "title": "Obvod, který si pamatuje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Stiskneš tlačítko START a pustíš ho, ale motor běží dál, dokud nestiskneš STOP. Linka počítá výrobky na pásu. To kombinační obvod neumí – potřebuješ obvod s **pamětí**. Nejmenší paměť na jeden bit je **klopný obvod**, z nich se skládají čítače a registry."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: kombinační obvod",
+          "definition": "Logický obvod, jehož výstup závisí jen na okamžitých vstupech. Nic si nepamatuje."
+        },
+        {
+          "type": "term",
+          "term": "Sekvenční obvod",
+          "definition": "Logický obvod, jehož výstup závisí na vstupech **i na předchozím stavu**. Má paměť.",
+          "example": "Čítač, registr, paměť RAM."
+        },
+        {
+          "type": "term",
+          "term": "Klopný obvod",
+          "definition": "Obvod se dvěma stálými stavy (výstup Q = 0 nebo 1), který si stav pamatuje, dokud ho vstup nezmění. Má obvykle i negovaný výstup Q̄.",
+          "example": "Jeden klopný obvod = jeden bit paměti."
+        },
+        {
+          "type": "term",
+          "term": "Hodinový signál (CLK)",
+          "definition": "Pravidelné pulzy, které říkají, **kdy** se má obvod podívat na vstupy a změnit stav. Často se reaguje na **náběžnou hranu** – okamžik přechodu z 0 na 1.",
+          "example": "Krystal 16 MHz dává mikrokontroléru 16 milionů pulzů za sekundu."
+        },
+        {
+          "type": "heading",
+          "text": "Klopný obvod RS jako start–stop"
+        },
+        {
+          "type": "text",
+          "text": "Vstup **S (set)** nastaví Q = 1, vstup **R (reset)** nastaví Q = 0. Když jsou oba 0, obvod drží poslední stav. Přesně jako START a STOP: krátký stisk START motor zapne a ten běží, dokud nepřijde STOP."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "S = 1: Q se nastaví na 1 (motor běží)",
+              "S = 0, R = 0: Q drží 1 (paměť)",
+              "R = 1: Q se nuluje (motor stojí)",
+              "S = 0, R = 0: Q drží 0 (paměť)"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi cyklus. Všimni si, že ve stavech „drží“ jsou vstupy stejné (0 a 0), a výstup je přesto jednou 1 a jednou 0 – podle toho, co bylo předtím."
+        },
+        {
+          "type": "heading",
+          "text": "Od klopného obvodu k čítači"
+        },
+        {
+          "type": "term",
+          "term": "Klopný obvod T",
+          "definition": "Při každé hodinové hraně (když je T = 1) změní stav na opačný: 0 → 1 → 0 → 1…",
+          "example": "Výstup se mění dvakrát pomaleji než hodiny – vydělí frekvenci dvěma."
+        },
+        {
+          "type": "term",
+          "term": "Čítač",
+          "definition": "Řada klopných obvodů, která počítá hodinové pulzy a stav ukazuje jako dvojkové číslo. Čítač z n klopných obvodů napočítá 2ⁿ stavů (0 až 2ⁿ − 1), pak začne znovu.",
+          "example": "4bitový čítač počítá 0 až 15."
+        },
+        {
+          "type": "example",
+          "question": "Čítač ze 4 klopných obvodů T dostává hodiny 1 kHz. Jakou frekvenci má výstup posledního obvodu?",
+          "answer": "Každý obvod dělí dvěma: 1 000 → 500 → 250 → 125 → **62,5 Hz** (1 000 / 2⁴ = 1 000 / 16)."
+        },
+        {
+          "type": "example",
+          "question": "Kolik klopných obvodů potřebuje čítač výrobků do 100?",
+          "answer": "Potřebuješ aspoň 101 stavů (0 až 100). 2⁶ = 64 nestačí, 2⁷ = 128 stačí. Potřebuješ **7** klopných obvodů."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Klopný obvod RS: když stisknu START i STOP najednou (S = 1, R = 1), motor se rozběhne.",
+          "right": "U klopného obvodu RS je kombinace S = R = 1 nepovolená (výstup je nejednoznačný). V řízení se navrhuje s přednostním vypnutím: STOP má přednost.",
+          "why": "Obvod nemůže zároveň nastavovat a nulovat. U strojů je bezpečnější, když při konfliktu vyhraje zastavení."
+        },
+        {
+          "type": "summary",
+          "text": "Sekvenční obvody si pamatují stav. Klopný obvod = 1 bit. RS: S nastaví, R vynuluje. T překlápí a dělí frekvenci 2. Čítač z n obvodů má 2ⁿ stavů."
+        }
+      ]
+    },
+    {
+      "title": "Druhy a tabulky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Obvod 74HC595 rozsvítí 8 LED a stačí mu k tomu tři vodiče z mikrokontroléru. Uvnitř je **posuvný registr** z klopných obvodů D. Tady je přehled klopných obvodů RS, D, JK a T a toho, co se z nich staví."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Klopný obvod",
+          "definition": "Sekvenční obvod se dvěma stabilními stavy, uchová 1 bit. Výstupy Q a Q̄.",
+          "example": "Integrovaný obvod 74HC74 obsahuje dva klopné obvody D."
+        },
+        {
+          "type": "term",
+          "term": "Synchronní obvod a hrana",
+          "definition": "**Synchronní** klopný obvod mění stav jen v okamžiku hodinové **hrany** (náběžné 0→1 nebo sestupné 1→0), ne kdykoli. Ve značce se hranové řízení kreslí trojúhelníčkem u vstupu C.",
+          "example": "Všechny bity registru se tak změní přesně najednou."
+        },
+        {
+          "type": "term",
+          "term": "Registr",
+          "definition": "Skupina klopných obvodů D se společnými hodinami, která uchová vícebitové číslo. **Posuvný registr** při každém pulzu posune bity o jednu pozici.",
+          "example": "8bitový registr uchová 1 bajt."
+        },
+        {
+          "type": "term",
+          "term": "Modulo čítače",
+          "definition": "Počet různých stavů, kterými čítač projde, než začne znovu.",
+          "example": "Dekadický čítač má modulo 10 (0–9)."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled klopných obvodů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Obvod",
+            "Vstupy",
+            "Chování"
+          ],
+          "rows": [
+            [
+              "RS",
+              "S, R",
+              "S = 1 nastaví, R = 1 vynuluje, 0/0 drží, 1/1 nepovoleno"
+            ],
+            [
+              "D",
+              "D, C",
+              "při hraně hodin se Q = D (zapamatuje si vstup)"
+            ],
+            [
+              "JK",
+              "J, K, C",
+              "jako RS, ale J = K = 1 stav překlopí"
+            ],
+            [
+              "T",
+              "T, C",
+              "T = 1: při každé hraně překlopí, T = 0: drží"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "D: D = 1, přijde náběžná hrana",
+                "back": "Q = 1"
+              },
+              {
+                "front": "JK: J = 1, K = 1, hrana, Q bylo 0",
+                "back": "Q = 1 (překlopí)"
+              },
+              {
+                "front": "JK: J = 0, K = 0, hrana",
+                "back": "Q se nemění"
+              },
+              {
+                "front": "RS: S = 0, R = 1",
+                "back": "Q = 0"
+              },
+              {
+                "front": "T: T = 1, hrana, Q bylo 1",
+                "back": "Q = 0"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ke každé situaci si nejdřív řekni výsledek a pak kartu otoč."
+        },
+        {
+          "type": "heading",
+          "text": "Posuvný registr krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na datový vstup přivedeš první bit.",
+            "Pulz hodin: bit se zapíše do prvního klopného obvodu.",
+            "Přivedeš další bit, pulz hodin: první bit se posune do druhého obvodu, nový je v prvním.",
+            "Po 8 pulzech je v registru celý bajt.",
+            "Pulz na vstup „zápis do výstupů“ (latch) ho najednou zobrazí na 8 výstupech."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Do čtyřbitového posuvného registru (na začátku 0000) postupně pošleš bity 1, 0, 1, 1. Bity vstupují zleva. Co je v registru po čtyřech pulzech?",
+          "answer": "Po 1. pulzu 1000, po 2. 0100, po 3. 1010, po 4. **1101**. První poslaný bit je teď úplně vpravo."
+        },
+        {
+          "type": "example",
+          "question": "Jaký nejmenší počet klopných obvodů potřebuje dekadický čítač (0–9)? Jak ho zastavíš na 9?",
+          "answer": "Potřebuje 10 stavů: 2³ = 8 nestačí, 2⁴ = 16 stačí → **4 obvody**. Při dosažení 10 (1010₂) se čítač pomocí logiky okamžitě vynuluje, takže projde jen stavy 0–9."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Klopný obvod D s hranovým řízením přebírá vstup D pořád, dokud jsou hodiny v log. 1.",
+          "right": "Hranový klopný obvod D převezme vstup jen v okamžiku hrany hodin. Mezi hranami změny D ignoruje.",
+          "why": "Přebírání po celou dobu úrovně dělá jiný obvod – záchytný (latch, řízený úrovní). Hranové řízení zaručí, že se všechny bity změní ve stejném okamžiku."
+        },
+        {
+          "type": "summary",
+          "text": "RS nastaví/vynuluje, D si zapamatuje vstup při hraně, JK při J = K = 1 překlopí, T překlápí. Registr = klopné obvody D se společnými hodinami; posuvný registr převádí sériová data na paralelní."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím se liší sekvenční obvod od kombinačního?",
+      "options": [
+        "má paměť, výstup závisí i na předchozím stavu",
+        "má víc vstupů",
+        "pracuje jen se střídavým proudem",
+        "nemá žádné výstupy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik bitů uchová jeden klopný obvod?",
+      "answers": [
+        "1",
+        "jeden"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klopný obvod RS: S = 0, R = 0. Co udělá výstup?",
+      "options": [
+        "drží předchozí stav",
+        "nastaví se na 1",
+        "vynuluje se",
+        "kmitá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "U klopného obvodu RS je kombinace S = 1, R = 1 nepovolená.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá klopný obvod JK při J = 1, K = 1 a hodinové hraně?",
+      "options": [
+        "překlopí výstup do opačného stavu",
+        "nastaví 1",
+        "vynuluje",
+        "nic"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik stavů má čítač z 5 klopných obvodů?",
+      "answers": [
+        "32"
+      ],
+      "hints": [
+        "Každý obvod zdvojnásobí počet stavů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hodiny 8 kHz, čítač ze 3 klopných obvodů T. Frekvence posledního výstupu v kHz =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "8 / 2³ = 1 kHz.",
+      "hints": [
+        "Každý klopný obvod T dělí frekvenci dvěma."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik klopných obvodů potřebuje čítač, který má napočítat do 50 (stavy 0 až 50)?",
+      "answers": [
+        "6",
+        "šest",
+        "sest"
+      ],
+      "hints": [
+        "Hledej nejmenší mocninu dvou, která je aspoň 51."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj klopný obvod s chováním.",
+      "pairs": [
+        [
+          "RS",
+          "nastavení a nulování dvěma vstupy"
+        ],
+        [
+          "D",
+          "při hraně převezme vstup"
+        ],
+        [
+          "JK",
+          "při J = K = 1 překlopí"
+        ],
+        [
+          "T",
+          "při každé hraně překlopí, dělí dvěma"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Do prázdného 3bitového posuvného registru vstupují zleva bity 1, 1, 0. Seřaď stavy registru po jednotlivých pulzech.",
+      "items": [
+        "100",
+        "110",
+        "011"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu se používá posuvný registr 74HC595?",
+      "options": [
+        "převod sériových dat na paralelní výstupy",
+        "převod analogového signálu na číslo",
+        "stabilizace napětí",
+        "zesílení signálu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Dekadický čítač projde stavy 0 až 9 a pak začne znovu od nuly.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak funguje klopný obvod RS a kde se použije.",
+      "answer": "Vstup S nastaví výstup Q na 1, vstup R ho vynuluje, při S = R = 0 obvod drží poslední stav. Kombinace S = R = 1 je nepovolená. Použije se například jako paměť start–stop pro motor."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak pracuje binární čítač a proč ho lze použít jako dělič frekvence.",
+      "answer": "Čítač je řada klopných obvodů, které počítají hodinové pulzy a jejich výstupy tvoří dvojkové číslo. Každý klopný obvod T překlopí dvakrát pomaleji než předchozí, takže dělí frekvenci dvěma; n obvodů dělí 2ⁿ."
+    }
+  ]
+}

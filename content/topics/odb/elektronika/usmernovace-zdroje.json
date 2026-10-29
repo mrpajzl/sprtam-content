@@ -1,0 +1,426 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "usmernovace-zdroje",
+  "title": "Usměrňovače a napájecí zdroje",
+  "emoji": "🔋",
+  "explanations": [
+    {
+      "title": "Ze zásuvky do čipu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V zásuvce je střídavé napětí 230 V. Mikrokontrolér ale potřebuje stálých 5 V nebo 3,3 V stejnosměrných. Cestu od jednoho k druhému obstarává **napájecí zdroj**. Jeho části si teď projdeš jednu po druhé."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Transformátor a efektivní hodnota",
+          "definition": "**Transformátor** mění velikost střídavého napětí a odděluje obvod od sítě. Střídavé napětí se udává **efektivní hodnotou**; jeho vrchol je √2krát (asi 1,41krát) větší.",
+          "example": "Transformátor 230/12 V: na výstupu 12 V efektivních, vrchol asi 17 V."
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: dioda a kondenzátor",
+          "definition": "Dioda propustí proud jen od anody ke katodě, při vedení na ní zůstane asi 0,7 V. Kondenzátor umí uložit náboj a pak ho vydávat."
+        },
+        {
+          "type": "term",
+          "term": "Usměrňovač",
+          "definition": "Obvod z diod, který ze střídavého napětí udělá napětí jedné polarity. Je ale **pulzující** – kolísá od nuly do vrcholu.",
+          "example": "Můstek ze 4 diod v nabíječce."
+        },
+        {
+          "type": "term",
+          "term": "Filtr (vyhlazovací kondenzátor)",
+          "definition": "Velký kondenzátor za usměrňovačem. Na vrcholu vlny se nabije a mezi vrcholy dodává proud zátěži. Pulzy tím vyhladí na téměř stálé napětí s malým **zvlněním**.",
+          "example": "Elektrolytický kondenzátor 2 200 μF."
+        },
+        {
+          "type": "term",
+          "term": "Stabilizátor",
+          "definition": "Obvod, který udržuje výstupní napětí stálé, i když kolísá vstupní napětí nebo odběr.",
+          "example": "Integrovaný stabilizátor 7805 dává 5 V."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta energie zdrojem"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "transformátor sníží 230 V AC na menší napětí a oddělí obvod od sítě",
+              "usměrňovač udělá z obou půlvln pulzy jedné polarity",
+              "kondenzátor pulzy vyhladí",
+              "stabilizátor drží přesně 5 V",
+              "zátěž (mikrokontrolér) dostává stálé napětí"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi blokové schéma zdroje krok za krokem. U každého kroku si řekni, jak vypadá napětí na jeho výstupu."
+        },
+        {
+          "type": "heading",
+          "text": "Jednocestný a dvoucestný usměrňovač"
+        },
+        {
+          "type": "text",
+          "text": "**Jednocestný** usměrňovač má jednu diodu. Propustí jen kladné půlvlny, záporné zahodí. **Dvoucestný můstkový (Graetzův)** má čtyři diody a obrátí i zápornou půlvlnu, takže využije obě."
+        },
+        {
+          "type": "example",
+          "question": "Transformátor dává 12 V (efektivní). Na jaké napětí se naprázdno nabije filtrační kondenzátor za Graetzovým můstkem?",
+          "answer": "Vrchol: 12 · √2 ≈ 17 V. Proud teče vždy přes dvě diody, úbytek 2 · 0,7 = 1,4 V. Kondenzátor se nabije asi na **15,6 V**."
+        },
+        {
+          "type": "example",
+          "question": "Stabilizátor 7805 dává 5 V, vstup má 12 V a zátěž odebírá 0,5 A. Jaký výkon se na stabilizátoru mění v teplo?",
+          "answer": "P = (12 − 5) · 0,5 = **3,5 W**. To je hodně, stabilizátor potřebuje chladič. Proto se při velkých rozdílech napětí používají spínané zdroje."
+        },
+        {
+          "type": "term",
+          "term": "Spínaný zdroj",
+          "definition": "Zdroj, který napětí velmi rychle spíná tranzistorem a mění ho přes malý transformátor nebo cívku. Ztrácí málo energie jako teplo a je lehký. Síť se v něm usměrňuje hned na vstupu, takže uvnitř je vysoké stejnosměrné napětí.",
+          "example": "Nabíječka mobilu nebo zdroj 24 V na DIN lištu v rozvaděči."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zdroj je vytažený ze zásuvky, takže na desce uvnitř nemůže být nebezpečné napětí.",
+          "right": "Filtrační kondenzátory na primární straně spínaného zdroje mohou zůstat nabité na více než 300 V. Před prací se musí vybít a změřit.",
+          "why": "Kondenzátor drží náboj, dokud ho nic nevybije. Síťovou část zdroje smí opravovat jen osoba s elektrotechnickou kvalifikací."
+        },
+        {
+          "type": "summary",
+          "text": "Zdroj: transformátor → usměrňovač → filtrační kondenzátor → stabilizátor. Graetzův můstek využije obě půlvlny. Kondenzátor se nabije na vrcholové napětí minus úbytky na diodách."
+        }
+      ]
+    },
+    {
+      "title": "Návrh zdroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Potřebuješ napájet čidla 5 V s odběrem 0,5 A. Jaký transformátor, jaké diody, jak velký kondenzátor? Tady je postup s výpočty a srovnání lineárního a spínaného zdroje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Usměrňovač",
+          "definition": "Obvod z diod, který mění střídavé napětí na pulzující stejnosměrné. **Jednocestný** (1 dioda) využije jednu půlvlnu, **dvoucestný můstkový** (Graetz, 4 diody) obě.",
+          "example": "Můstek bývá i jako jedna součástka se 4 vývody (~, ~, +, −)."
+        },
+        {
+          "type": "term",
+          "term": "Zvlnění ΔU",
+          "definition": "O kolik napětí na filtračním kondenzátoru klesne mezi dvěma nabíjecími pulzy. Přibližně `ΔU ≈ I / (f_z · C)`, kde f_z je frekvence pulzů (jednocestný 50 Hz, dvoucestný 100 Hz).",
+          "example": "Větší kondenzátor nebo menší odběr = menší zvlnění."
+        },
+        {
+          "type": "term",
+          "term": "Lineární stabilizátor",
+          "definition": "Stabilizátor, který přebytečné napětí „spálí“ v teplo. Potřebuje vstupní napětí vyšší o úbytek (u 78xx asi 2 V). Ztráta `P = (U_vst − U_výst) · I`.",
+          "example": "7805 (5 V), 7812 (12 V); záporné verze 79xx."
+        },
+        {
+          "type": "term",
+          "term": "Spínaný zdroj",
+          "definition": "Zdroj, který napětí rychle spíná tranzistorem (desítky až stovky kHz) a mění ho přes malý transformátor nebo cívku. Má malé ztráty a je lehký.",
+          "example": "Nabíječka mobilu, zdroj počítače, zdroj na DIN lištu 24 V."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "jednocestný",
+            "dvoucestný (Graetz)"
+          ],
+          "rows": [
+            [
+              "počet diod",
+              "1",
+              "4"
+            ],
+            [
+              "frekvence pulzů při 50 Hz",
+              "50 Hz",
+              "100 Hz"
+            ],
+            [
+              "úbytek na diodách",
+              "asi 0,7 V",
+              "asi 1,4 V"
+            ],
+            [
+              "zvlnění se stejným C",
+              "větší",
+              "poloviční"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "lineární zdroj",
+            "spínaný zdroj"
+          ],
+          "rows": [
+            [
+              "účinnost",
+              "nízká (teplo na stabilizátoru)",
+              "vysoká, často přes 80 %"
+            ],
+            [
+              "hmotnost",
+              "velký síťový transformátor",
+              "malý a lehký"
+            ],
+            [
+              "rušení",
+              "malé",
+              "větší, potřebuje odrušení"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup návrhu lineárního zdroje 5 V"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči odběr zátěže I a výstupní napětí (5 V).",
+            "Stabilizátor potřebuje na vstupu aspoň U_výst + úbytek (7805: aspoň asi 7 V, i v dolním bodě zvlnění).",
+            "Zvol kondenzátor tak, aby ΔU nesnížilo napětí pod toto minimum.",
+            "Z vrcholového napětí na kondenzátoru urči efektivní napětí transformátoru: U_ef ≈ (U_C + 1,4) / √2.",
+            "Spočítej ztrátu na stabilizátoru a navrhni chladič."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Graetzův můstek, odběr 0,5 A, kondenzátor 2 200 μF. Jaké bude zvlnění?",
+          "answer": "Dvoucestný → f_z = 100 Hz. ΔU ≈ 0,5 / (100 · 0,0022) = 0,5 / 0,22 ≈ **2,3 V**."
+        },
+        {
+          "type": "example",
+          "question": "Kondenzátor se nabíjí na 11 V a zvlnění je 2,3 V. Stačí to pro 7805?",
+          "answer": "Nejnižší napětí: 11 − 2,3 = 8,7 V. Stabilizátor potřebuje asi 7 V. **Stačí**, rezerva 1,7 V."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Graetzův můstek má ",
+                "after": " diody.",
+                "options": [
+                  "4",
+                  "2",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Dvoucestný usměrňovač při 50 Hz dává pulzy s frekvencí ",
+                "after": ".",
+                "options": [
+                  "100 Hz",
+                  "50 Hz",
+                  "25 Hz"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Větší filtrační kondenzátor zvlnění ",
+                "after": ".",
+                "options": [
+                  "zmenší",
+                  "zvětší",
+                  "nezmění"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň věty a ke každé si řekni proč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Elektrolytický kondenzátor ve zdroji zapojím libovolně, je to jen kondenzátor.",
+          "right": "Elektrolytický kondenzátor se zapojuje se správnou polaritou a s jmenovitým napětím s rezervou nad napětím, které na něm bude.",
+          "why": "Přepólovaný nebo přetížený elektrolyt se zahřívá a může prasknout či vybuchnout."
+        },
+        {
+          "type": "summary",
+          "text": "Dvoucestný můstek: 100 Hz pulzy, úbytek asi 1,4 V. Zvlnění ΔU ≈ I / (f_z · C). Lineární stabilizátor potřebuje úbytek a mění rozdíl napětí v teplo, spínaný zdroj je účinnější a lehčí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď bloky lineárního napájecího zdroje od zásuvky k zátěži.",
+      "items": [
+        "transformátor",
+        "usměrňovač",
+        "filtrační kondenzátor",
+        "stabilizátor",
+        "zátěž"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik diod má Graetzův můstek?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je frekvence pulzů za dvoucestným usměrňovačem při síti 50 Hz?",
+      "options": [
+        "100 Hz",
+        "50 Hz",
+        "25 Hz",
+        "150 Hz"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Stabilizátor 7805, vstup 9 V, odběr 0,4 A. Ztrátový výkon ve W =",
+      "answers": [
+        "1,6"
+      ],
+      "explanation": "P = (9 − 5) · 0,4 = 1,6 W.",
+      "hints": [
+        "Jaké napětí dává stabilizátor 7805?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Větší filtrační kondenzátor zmenší zvlnění výstupního napětí.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Efektivní napětí transformátoru 9 V. Vrcholové napětí ve V (zaokrouhli na celé) =",
+      "answers": [
+        "13"
+      ],
+      "explanation": "9 · √2 ≈ 12,7 V ≈ 13 V."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je spínaný zdroj lehčí než lineární se stejným výkonem?",
+      "options": [
+        "pracuje na vysoké frekvenci, takže stačí malý transformátor",
+        "nemá žádné kondenzátory",
+        "nepotřebuje usměrňovač",
+        "má menší výstupní napětí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Dvoucestný usměrňovač, odběr 1 A, kondenzátor 4 700 μF. Zvlnění ve V (zaokrouhli na 1 desetinné místo) =",
+      "answers": [
+        "2,1"
+      ],
+      "explanation": "ΔU ≈ 1 / (100 · 0,0047) ≈ 2,13 V.",
+      "hints": [
+        "Frekvence pulzů u dvoucestného usměrňovače je 100 Hz.",
+        "Kapacitu převeď na farady."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj součást zdroje s úkolem.",
+      "pairs": [
+        [
+          "transformátor",
+          "sníží napětí a oddělí od sítě"
+        ],
+        [
+          "usměrňovač",
+          "udělá napětí jedné polarity"
+        ],
+        [
+          "kondenzátor",
+          "vyhladí pulzy"
+        ],
+        [
+          "stabilizátor",
+          "drží stálé výstupní napětí"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na primární straně spínaného zdroje mohou kondenzátory zůstat nabité na nebezpečné napětí i po vytažení ze zásuvky.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jaké je přibližné napětí na kondenzátoru za Graetzovým můstkem naprázdno, když transformátor dává 12 V efektivních?",
+      "options": [
+        "asi 15,6 V",
+        "12 V",
+        "asi 17 V",
+        "asi 8,5 V"
+      ],
+      "answer": 0,
+      "explanation": "12 · √2 ≈ 17 V, minus 2 · 0,7 V na diodách."
+    },
+    {
+      "type": "choice",
+      "question": "Co je hlavní nevýhoda lineárního stabilizátoru?",
+      "options": [
+        "rozdíl napětí mění v teplo, má nízkou účinnost",
+        "silně ruší",
+        "nestabilizuje přesně",
+        "potřebuje střídavý vstup"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi jednocestným a dvoucestným usměrňovačem.",
+      "answer": "Jednocestný má jednu diodu a propustí jen jednu půlvlnu, pulzy mají 50 Hz a velké zvlnění. Dvoucestný (Graetzův můstek se 4 diodami) obrátí i druhou půlvlnu, pulzy mají 100 Hz a zvlnění se stejným kondenzátorem je poloviční."
+    },
+    {
+      "type": "open",
+      "question": "Popiš blokové schéma lineárního napájecího zdroje a funkci jednotlivých bloků.",
+      "answer": "Transformátor sníží síťové napětí a galvanicky oddělí obvod. Usměrňovač z diod vytvoří pulzující napětí jedné polarity. Filtrační kondenzátor pulzy vyhladí a stabilizátor udržuje stálé výstupní napětí bez ohledu na kolísání vstupu a odběru."
+    }
+  ]
+}

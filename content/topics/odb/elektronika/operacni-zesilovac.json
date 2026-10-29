@@ -1,0 +1,373 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "operacni-zesilovac",
+  "title": "Operační zesilovač",
+  "emoji": "📈",
+  "explanations": [
+    {
+      "title": "Porovnávač a zesilovač",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Čidlo teploty dává jen pár milivoltů. Mikrokontrolér ale potřebuje signál 0–5 V. Termostat zase má sepnout, když teplota překročí nastavenou hodnotu. Obě úlohy vyřeší jedna levná součástka – **operační zesilovač**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Operační zesilovač (OZ)",
+          "definition": "Integrovaný obvod se dvěma vstupy a jedním výstupem. Zesiluje **rozdíl** napětí mezi vstupy, a to obrovsky – statisíckrát i víc.",
+          "example": "LM358 (dva OZ v jednom pouzdře), TL072, starší 741."
+        },
+        {
+          "type": "term",
+          "term": "Neinvertující a invertující vstup",
+          "definition": "Vstup **+** (neinvertující): když na něm napětí roste, výstup roste. Vstup **−** (invertující): když na něm napětí roste, výstup klesá.",
+          "example": "Ve schématu je OZ trojúhelník se vstupy + a − vlevo a výstupem ve špičce vpravo."
+        },
+        {
+          "type": "term",
+          "term": "Napájení OZ",
+          "definition": "OZ potřebuje napájení, nejčastěji symetrické (např. ±15 V) nebo jednoduché (0 a +5 V). Výstup se nemůže dostat mimo napájecí napětí, obvykle ani úplně k němu.",
+          "example": "OZ napájený ±12 V dá na výstupu nejvýš asi ±10,5 V (podle typu)."
+        },
+        {
+          "type": "heading",
+          "text": "1. Bez zpětné vazby: komparátor"
+        },
+        {
+          "type": "text",
+          "text": "Protože je zesílení obrovské, stačí nepatrný rozdíl vstupů a výstup „uteče“ až k napájení. OZ pak jen **porovnává**: je-li U₊ > U₋, výstup je u kladného napájení, jinak u záporného."
+        },
+        {
+          "type": "example",
+          "question": "Na vstup − přivedeš referenci 2,5 V, na vstup + napětí z teplotního čidla. Co dělá výstup, když čidlo dává 2,4 V, a co při 2,6 V? (Napájení 0 a 5 V.)",
+          "answer": "Při 2,4 V je U₊ < U₋ → výstup u **0 V**. Při 2,6 V je U₊ > U₋ → výstup u **5 V** (téměř). Výstup může spínat tranzistor s ventilátorem – vznikl termostat."
+        },
+        {
+          "type": "heading",
+          "text": "2. Se zápornou zpětnou vazbou: zesilovač"
+        },
+        {
+          "type": "term",
+          "term": "Záporná zpětná vazba",
+          "definition": "Část výstupního napětí se přes rezistor vrací na **invertující** vstup. OZ pak sám nastaví výstup tak, aby byl rozdíl vstupů prakticky nulový. Zesílení pak určují jen rezistory.",
+          "example": "Jako řidič, který stále opravuje volant podle toho, kam auto jede."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "vstupní napětí na + vzroste",
+              "výstup začne rychle růst",
+              "přes zpětnou vazbu vzroste napětí na −",
+              "rozdíl vstupů se zmenší skoro na nulu",
+              "výstup se ustálí na nové hodnotě"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi, jak se zesilovač se zpětnou vazbou sám „vyrovná“. Proto u něj platí jednoduché pravidlo: U₊ ≈ U₋."
+        },
+        {
+          "type": "example",
+          "question": "Neinvertující zesilovač má R₁ = 1 kΩ (z − na zem) a R₂ = 9 kΩ (z výstupu na −). Vstup 0,3 V. Jaký je výstup?",
+          "answer": "Zesílení A = 1 + R₂ / R₁ = 1 + 9 = **10**. Výstup = 10 · 0,3 = **3 V**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "OZ má zesílení 100 000, takže z 1 V na vstupu udělá 100 000 V.",
+          "right": "Výstup OZ se nikdy nedostane za napájecí napětí. Bez zpětné vazby skončí v saturaci u napájení.",
+          "why": "OZ energii nevyrábí, jen ji bere z napájení. Velké zesílení jen znamená, že malý rozdíl vstupů stačí na plné vybuzení."
+        },
+        {
+          "type": "summary",
+          "text": "OZ zesiluje rozdíl vstupů + a −. Bez zpětné vazby je to komparátor (výstup u napájení). Se zápornou zpětnou vazbou platí U₊ ≈ U₋ a zesílení určují rezistory."
+        }
+      ]
+    },
+    {
+      "title": "Základní zapojení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Z operačního zesilovače a dvou rezistorů postavíš zesilovač s přesně daným zesílením. Tady jsou tři nejpoužívanější zapojení, jejich vzorce a postup výpočtu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Operační zesilovač",
+          "definition": "Integrovaný stejnosměrný zesilovač rozdílu napětí mezi vstupem + a −. Má velmi velké zesílení naprázdno, velký vstupní a malý výstupní odpor.",
+          "example": "LM358, TL072."
+        },
+        {
+          "type": "term",
+          "term": "Ideální OZ",
+          "definition": "Zjednodušený model pro výpočty: nekonečné zesílení, do vstupů neteče žádný proud, výstupní odpor nulový. Se zápornou zpětnou vazbou platí `U₊ = U₋`.",
+          "example": "Pro běžné výpočty zapojení s rezistory stačí."
+        },
+        {
+          "type": "term",
+          "term": "Zesílení A",
+          "definition": "Kolikrát je výstupní napětí větší než vstupní: `A = U_výst / U_vst`. Záporné zesílení znamená, že se obrací polarita.",
+          "example": "A = −5: vstup +1 V → výstup −5 V."
+        },
+        {
+          "type": "term",
+          "term": "Zpětná vazba",
+          "definition": "Propojení výstupu zpět na vstup. **Záporná** (na vstup −) zesilovač stabilizuje, **kladná** (na vstup +) ho překlápí.",
+          "example": "Rezistor R₂ z výstupu na vstup −."
+        },
+        {
+          "type": "heading",
+          "text": "Tři zapojení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zapojení",
+            "Kam jde vstup",
+            "Zesílení",
+            "Vlastnost"
+          ],
+          "rows": [
+            [
+              "invertující",
+              "přes R₁ na vstup −, + na zem",
+              "A = −R₂ / R₁",
+              "obrací polaritu"
+            ],
+            [
+              "neinvertující",
+              "přímo na vstup +",
+              "A = 1 + R₂ / R₁",
+              "neobrací, velký vstupní odpor"
+            ],
+            [
+              "sledovač napětí",
+              "na vstup +, výstup spojený s −",
+              "A = 1",
+              "oddělí slabý zdroj od zátěže"
+            ],
+            [
+              "komparátor",
+              "na + a − bez zpětné vazby",
+              "—",
+              "výstup u napájení podle toho, který vstup je větší"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "invertující, R₁ = 2 kΩ, R₂ = 10 kΩ",
+                "back": "A = −5"
+              },
+              {
+                "front": "neinvertující, R₁ = 2 kΩ, R₂ = 10 kΩ",
+                "back": "A = 6"
+              },
+              {
+                "front": "sledovač",
+                "back": "A = 1"
+              },
+              {
+                "front": "U₊ = 3 V, U₋ = 2 V, bez zpětné vazby",
+                "back": "výstup u kladného napájení"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si zesílení spočítat sám a teprve pak kartu otoč."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Poznej zapojení: kam jde signál a kam vede zpětná vazba.",
+            "Vyber vzorec pro zesílení.",
+            "Spočítej U_výst = A · U_vst.",
+            "Zkontroluj, že výsledek je uvnitř rozsahu napájení. Pokud ne, výstup se zastaví v saturaci."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Invertující zesilovač: R₁ = 10 kΩ, R₂ = 47 kΩ, vstup 0,5 V, napájení ±15 V. Jaký je výstup?",
+          "answer": "A = −47 / 10 = −4,7. U_výst = −4,7 · 0,5 = **−2,35 V**. Je uvnitř napájení ✓."
+        },
+        {
+          "type": "example",
+          "question": "Neinvertující zesilovač má zesílit 21krát. R₁ = 1 kΩ. Jaký R₂? Co bude s výstupem při vstupu 1 V a napájení ±12 V?",
+          "answer": "21 = 1 + R₂ / 1 kΩ → R₂ = **20 kΩ**. Vypočtený výstup 21 V je mimo napájení ±12 V → OZ bude v **saturaci**, výstup se zastaví zhruba na 10–11 V (podle typu)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Invertující zesilovač: R₁ = 10 kΩ, R₂ = 100 kΩ, zesílení A = 1 + 100/10 = 11.",
+          "right": "Invertující zesilovač má A = −R₂ / R₁ = −10. Vzorec 1 + R₂ / R₁ patří neinvertujícímu.",
+          "why": "U invertujícího jde signál na vstup −, výstup je obrácený a celé zesílení dané poměrem rezistorů."
+        },
+        {
+          "type": "summary",
+          "text": "Invertující A = −R₂/R₁, neinvertující A = 1 + R₂/R₁, sledovač A = 1. Se zápornou zpětnou vazbou U₊ = U₋. Výstup nikdy nepřekročí napájení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co operační zesilovač zesiluje?",
+      "options": [
+        "rozdíl napětí mezi vstupy + a −",
+        "jen napětí na vstupu +",
+        "součet napětí obou vstupů",
+        "napájecí napětí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Invertující zesilovač: R₁ = 1 kΩ, R₂ = 10 kΩ. Zesílení A =",
+      "answers": [
+        "-10",
+        "−10"
+      ],
+      "explanation": "A = −R₂ / R₁ = −10.",
+      "hints": [
+        "Invertující zapojení obrací polaritu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Neinvertující zesilovač: R₁ = 1 kΩ, R₂ = 4 kΩ. Zesílení A =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "A = 1 + 4 / 1 = 5."
+    },
+    {
+      "type": "input",
+      "question": "Jaké zesílení má sledovač napětí?",
+      "answers": [
+        "1",
+        "jedna"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Výstupní napětí OZ může být větší než jeho napájecí napětí.",
+      "answer": false
+    },
+    {
+      "type": "choice",
+      "question": "Jak pracuje OZ zapojený bez zpětné vazby?",
+      "options": [
+        "jako komparátor",
+        "jako sledovač",
+        "jako invertující zesilovač se zesílením 1",
+        "nefunguje vůbec"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Komparátor napájený 0 a 5 V: U₊ = 1,2 V, U₋ = 1,5 V. Kde bude výstup?",
+      "options": [
+        "u 0 V",
+        "u 5 V",
+        "na 1,35 V",
+        "na −0,3 V"
+      ],
+      "answer": 0,
+      "hints": [
+        "Který vstup je větší?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "U ideálního OZ se zápornou zpětnou vazbou je napětí na obou vstupech prakticky stejné.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Invertující zesilovač A = −3, vstup 2 V, napájení ±15 V. Výstup ve V =",
+      "answers": [
+        "-6",
+        "−6"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj zapojení se vzorcem zesílení.",
+      "pairs": [
+        [
+          "invertující",
+          "A = −R₂ / R₁"
+        ],
+        [
+          "neinvertující",
+          "A = 1 + R₂ / R₁"
+        ],
+        [
+          "sledovač",
+          "A = 1"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu se hodí sledovač napětí?",
+      "options": [
+        "oddělí slabý zdroj signálu od zátěže",
+        "zesílí napětí desetkrát",
+        "obrátí polaritu",
+        "usměrní střídavé napětí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu výstupu zapojení s OZ.",
+      "items": [
+        "poznat zapojení",
+        "vybrat vzorec zesílení",
+        "spočítat U_výst = A · U_vst",
+        "zkontrolovat, že výsledek je v rozsahu napájení"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi komparátorem a zesilovačem s operačním zesilovačem.",
+      "answer": "Komparátor nemá zpětnou vazbu, OZ porovnává vstupy a výstup je v saturaci u kladného nebo záporného napájení. Zesilovač má zápornou zpětnou vazbu, výstup se ustálí tak, aby byly vstupy stejné, a zesílení je dané rezistory."
+    },
+    {
+      "type": "open",
+      "question": "Popiš vlastnosti ideálního operačního zesilovače.",
+      "answer": "Ideální OZ má nekonečné zesílení, nekonečný vstupní odpor (do vstupů neteče proud) a nulový výstupní odpor. Se zápornou zpětnou vazbou pak platí, že napětí na obou vstupech jsou stejná."
+    }
+  ]
+}
