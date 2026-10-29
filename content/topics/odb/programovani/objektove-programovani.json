@@ -1,0 +1,382 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "objektove-programovani",
+  "title": "Objektově orientované programování",
+  "emoji": "🏗️",
+  "explanations": [
+    {
+      "title": "Formička a bábovky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na pískovišti máš formičku na bábovku. Formička sama bábovka není, je to **předpis**, jak bábovka vypadá. Podle jedné formičky uděláš kolik bábovek chceš. Každá je samostatná: jednu rozšlápneš a ostatní zůstanou."
+        },
+        {
+          "type": "text",
+          "text": "Objektově orientované programování (OOP) staví programy přesně takhle. Popíšeš předpis (**třídu**) a podle něj vyrábíš **objekty**. Hry, aplikace i webové stránky jsou plné objektů: hráčů, tlačítek, objednávek."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Třída (class)",
+          "definition": "Předpis, který říká, jaká data budou objekty mít a co budou umět.",
+          "example": "Třída `Pes`: každý pes má jméno a umí štěkat."
+        },
+        {
+          "type": "term",
+          "term": "Objekt (instance)",
+          "definition": "Konkrétní věc vyrobená podle třídy. Má vlastní data.",
+          "example": "`rex = Pes(\"Rex\")` a `bety = Pes(\"Bety\")` jsou dva objekty třídy Pes."
+        },
+        {
+          "type": "term",
+          "term": "Atribut",
+          "definition": "Proměnná, která patří objektu. Popisuje jeho stav.",
+          "example": "`rex.jmeno` je „Rex“."
+        },
+        {
+          "type": "term",
+          "term": "Metoda",
+          "definition": "Funkce, která patří třídě. Popisuje, co objekt umí. Volá se přes tečku.",
+          "example": "`rex.stekej()`"
+        },
+        {
+          "type": "term",
+          "term": "Konstruktor `__init__` a `self`",
+          "definition": "`__init__` je metoda, kterou Python zavolá při vytvoření objektu a nastaví v ní počáteční atributy. `self` je první parametr každé metody a znamená „tento objekt“.",
+          "example": "`self.jmeno = jmeno` uloží jméno do právě vytvářeného objektu."
+        },
+        {
+          "type": "heading",
+          "text": "Třída v Pythonu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`class Ucet:`",
+            "`    def __init__(self, majitel):`",
+            "`        self.majitel = majitel`",
+            "`        self.zustatek = 0`",
+            " ",
+            "`    def vloz(self, castka):`",
+            "`        self.zustatek = self.zustatek + castka`",
+            " ",
+            "`u = Ucet(\"Eva\")`",
+            "`u.vloz(100)`",
+            "`u.vloz(50)`",
+            "`print(u.zustatek)`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`Ucet(\"Eva\")` vytvoří nový objekt a zavolá `__init__`. Do `self` se dosadí nový objekt, do `majitel` „Eva“.",
+            "Objekt dostane atributy `majitel = \"Eva\"` a `zustatek = 0`.",
+            "`u.vloz(100)` zavolá metodu, `self` je `u`. Zůstatek je 100.",
+            "`u.vloz(50)` zvýší zůstatek na 150. `print` vypíše **150**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Vytvoříš `a = Ucet(\"Eva\")` a `b = Ucet(\"Petr\")`, pak `a.vloz(10)`. Kolik je `b.zustatek`?",
+          "answer": "**0**. Každý objekt má vlastní atributy. Vklad na účet `a` se účtu `b` netýká, stejně jako rozšlápnutá bábovka neovlivní ostatní."
+        },
+        {
+          "type": "example",
+          "question": "Přidej metodě `vyber(castka)` kontrolu, aby zůstatek nešel do mínusu.",
+          "answer": "`def vyber(self, castka):` → `if castka > self.zustatek: print(\"Nedostatek peněz\")` → `else: self.zustatek = self.zustatek - castka`. Objekt sám hlídá, aby jeho data dávala smysl."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`def vloz(castka): zustatek = zustatek + castka`",
+          "right": "`def vloz(self, castka): self.zustatek = self.zustatek + castka`",
+          "why": "Metoda musí mít jako první parametr `self` a k atributům přistupovat přes `self.`. Bez toho by pracovala s lokální proměnnou, ne s daty objektu."
+        },
+        {
+          "type": "summary",
+          "text": "Třída je předpis, objekt konkrétní výrobek podle něj. Atributy jsou data objektu, metody jeho schopnosti. `__init__` nastaví počáteční stav, `self` je odkaz na aktuální objekt."
+        }
+      ]
+    },
+    {
+      "title": "Čtyři pilíře",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Automobilka nevyrábí každé auto od nuly. Má obecný návrh „vozidlo“ a z něj odvozuje osobní auto, dodávku a autobus. Řidič navíc nepotřebuje rozumět motoru: má volant a pedály. OOP přenáší tyto principy do programování."
+        },
+        {
+          "type": "text",
+          "text": "U maturity a pohovorů se často ptají na **čtyři pilíře OOP**. Projdeš je na jednom příkladu se zvířaty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Třída a objekt",
+          "definition": "Třída je předpis (`class`), objekt je konkrétní instance vytvořená podle třídy. Objekt má atributy (data) a metody (funkce).",
+          "example": "`class Zvire:` a objekt `Zvire(\"Micka\")`."
+        },
+        {
+          "type": "term",
+          "term": "Zapouzdření",
+          "definition": "Objekt drží svá data a metody pohromadě a skrývá vnitřek. Okolí s ním pracuje jen přes metody. V Pythonu se „vnitřní“ atributy označují podtržítkem na začátku jména (`_zustatek`); je to dohoda, ne zámek.",
+          "example": "Zůstatek účtu měníš metodou `vloz()`, ne přímo."
+        },
+        {
+          "type": "term",
+          "term": "Dědičnost",
+          "definition": "Nová třída (potomek) převezme atributy a metody existující třídy (předka) a může je doplnit nebo změnit. Zápis `class Pes(Zvire):`.",
+          "example": "Pes **je** zvíře, proto může dědit ze třídy Zvire."
+        },
+        {
+          "type": "term",
+          "term": "Polymorfismus",
+          "definition": "Různé objekty reagují na stejnou metodu po svém. Kód je volá stejně a nemusí řešit, o jaký objekt jde.",
+          "example": "`zvuk()` vrátí u psa „haf“, u kočky „mňau“."
+        },
+        {
+          "type": "term",
+          "term": "Abstrakce",
+          "definition": "Z reálné věci popíšeš jen to, co program potřebuje. Ostatní vynecháš.",
+          "example": "Ve školní evidenci má žák jméno a třídu, ne barvu očí."
+        },
+        {
+          "type": "term",
+          "term": "Přepsání metody (override)",
+          "definition": "Potomek definuje metodu se stejným jménem jako předek. Pro jeho objekty platí nová verze.",
+          "example": "Pes přepíše `zvuk()` předka."
+        },
+        {
+          "type": "heading",
+          "text": "Dědičnost a polymorfismus v kódu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`class Zvire:`",
+            "`    def __init__(self, jmeno):`",
+            "`        self.jmeno = jmeno`",
+            "`    def zvuk(self):`",
+            "`        return \"...\"`",
+            "`    def predstav_se(self):`",
+            "`        return self.jmeno + \": \" + self.zvuk()`",
+            " ",
+            "`class Pes(Zvire):`",
+            "`    def zvuk(self):`",
+            "`        return \"haf\"`",
+            " ",
+            "`class Kocka(Zvire):`",
+            "`    def zvuk(self):`",
+            "`        return \"mňau\"`",
+            " ",
+            "`for z in [Pes(\"Rex\"), Kocka(\"Micka\")]:`",
+            "`    print(z.predstav_se())`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vypíše „Rex: haf“ a „Micka: mňau“. `Pes` a `Kocka` nemají vlastní `__init__` ani `predstav_se`, zdědily je. Přepsaly jen `zvuk()`. Cyklus volá stejnou metodu a každý objekt odpoví po svém: to je polymorfismus."
+        },
+        {
+          "type": "example",
+          "question": "Potomek `Student(Osoba)` potřebuje navíc atribut `trida`. Jak napíše `__init__`?",
+          "answer": "`def __init__(self, jmeno, trida):` → `super().__init__(jmeno)` → `self.trida = trida`. `super()` zavolá konstruktor předka, který nastaví jméno. Pak se doplní, co je nové."
+        },
+        {
+          "type": "example",
+          "question": "Má třída `Auto` dědit ze třídy `Kolo`?",
+          "answer": "Ne. Dědičnost vyjadřuje vztah „**je**“: pes je zvíře. Auto není kolo, auto kola **má**. Správně má auto atribut se seznamem kol (skládání objektů)."
+        },
+        {
+          "type": "text",
+          "text": "Zkus každý pilíř vysvětlit vlastními slovy a pak kartičku otoč."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Zapouzdření",
+                "back": "data a metody pohromadě, vnitřek skrytý"
+              },
+              {
+                "front": "Dědičnost",
+                "back": "potomek převezme vlastnosti předka"
+              },
+              {
+                "front": "Polymorfismus",
+                "back": "stejná metoda, různé chování"
+              },
+              {
+                "front": "Abstrakce",
+                "back": "jen podstatné vlastnosti"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dědičnost použiju vždy, když chci v jedné třídě využít jinou (Auto dědí z Motor).",
+          "right": "Dědičnost jen pro vztah „je“ (Pes je Zvire). Pro vztah „má“ dej objekt do atributu (`self.motor = Motor()`).",
+          "why": "Auto není druh motoru. Špatná dědičnost dá autu metody motoru, které mu nepatří."
+        },
+        {
+          "type": "summary",
+          "text": "Čtyři pilíře OOP: zapouzdření (data skrytá za metodami), dědičnost (`class Pes(Zvire)`), polymorfismus (stejná metoda, různé chování) a abstrakce (jen podstatné). Dědit jen při vztahu „je“."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký je vztah mezi třídou a objektem?",
+      "options": [
+        "objekt je instance vytvořená podle třídy",
+        "třída je instance objektu",
+        "jsou to dvě jména pro totéž",
+        "objekt obsahuje víc tříd"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená `self` v metodě?",
+      "options": [
+        "objekt, na kterém je metoda volaná",
+        "třídu jako celek",
+        "předka třídy",
+        "globální proměnnou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterou metodu Python zavolá při vytvoření objektu?",
+      "options": [
+        "`__init__`",
+        "`__new_object__`",
+        "`create`",
+        "`start`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který pilíř OOP popisuje, že pes i kočka odpoví na `zvuk()` jinak?",
+      "options": [
+        "polymorfismus",
+        "zapouzdření",
+        "abstrakce",
+        "dědičnost"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jde o to, že stejné volání vede k různému chování."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`u = Ucet(\"Eva\")` (zůstatek 0), pak `u.vloz(100)` a `u.vloz(50)`. Kolik je `u.zustatek`?",
+      "answers": [
+        "150"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`a = Ucet(\"Eva\")`, `b = Ucet(\"Petr\")` (oba se zůstatkem 0), pak `a.vloz(10)`. Kolik je `b.zustatek`?",
+      "answers": [
+        "0"
+      ],
+      "explanation": "Každý objekt má vlastní atributy.",
+      "hints": [
+        "Sdílejí dva objekty své atributy?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "V kódu `class Pes(Zvire):` je `Zvire`… (jedno slovo: předek, nebo potomek?)",
+      "answers": [
+        "předek",
+        "predek"
+      ],
+      "explanation": "Pes dědí ze Zvire, Zvire je předek (rodičovská třída)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Potomek může přepsat metodu, kterou zdědil od předka.",
+      "answer": true,
+      "explanation": "Tomu se říká přepsání (override)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Třída Auto by měla dědit ze třídy Motor, protože auto má motor.",
+      "answer": false,
+      "explanation": "Dědičnost jen pro vztah „je“. Motor bude atribut auta."
+    },
+    {
+      "type": "truefalse",
+      "question": "Podtržítko na začátku jména atributu (`_zustatek`) v Pythonu přístup zvenku úplně zakáže.",
+      "answer": false,
+      "explanation": "Je to jen dohoda mezi programátory, že atribut je vnitřní."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s příkladem.",
+      "pairs": [
+        [
+          "třída",
+          "`class Pes:`"
+        ],
+        [
+          "objekt",
+          "`rex = Pes(\"Rex\")`"
+        ],
+        [
+          "atribut",
+          "`rex.jmeno`"
+        ],
+        [
+          "metoda",
+          "`rex.stekej()`"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje při `u = Ucet(\"Eva\")`.",
+      "items": [
+        "vznikne nový prázdný objekt",
+        "zavolá se `__init__` se `self` = nový objekt",
+        "nastaví se atributy majitel a zůstatek",
+        "objekt se uloží do proměnné u"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj a stručně vysvětli čtyři pilíře OOP.",
+      "answer": "Zapouzdření: data a metody jsou v objektu pohromadě a vnitřek je skrytý. Dědičnost: potomek přebírá vlastnosti předka. Polymorfismus: různé objekty reagují na stejnou metodu po svém. Abstrakce: popisujeme jen podstatné vlastnosti."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli na příkladu rozdíl mezi třídou a objektem.",
+      "answer": "Třída je předpis, např. třída Auto říká, že auto má značku a umí jet. Objekt je konkrétní auto vytvořené podle předpisu, např. modrá Škoda s vlastními hodnotami atributů."
+    }
+  ]
+}

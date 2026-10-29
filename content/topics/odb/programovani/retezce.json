@@ -1,0 +1,411 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "retezce",
+  "title": "Řetězce",
+  "emoji": "🔤",
+  "explanations": [
+    {
+      "title": "Korálky na niti",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si náhrdelník z korálků s písmeny. Korálky jsou navlečené v pevném pořadí a dohromady tvoří slovo. Každý korálek má své místo, první, druhé, třetí."
+        },
+        {
+          "type": "text",
+          "text": "V programu je text uložený přesně takhle, jako řada znaků. Říká se mu **řetězec**. Programy s textem pracují pořád: kontrolují hesla, hledají slova, upravují jména, čtou řádky ze souborů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Řetězec (str)",
+          "definition": "Text uložený jako řada znaků. Píše se do uvozovek, jednoduchých `'…'` nebo dvojitých `\"…\"`.",
+          "example": "`jmeno = \"Eva\"`"
+        },
+        {
+          "type": "term",
+          "term": "Znak",
+          "definition": "Jeden symbol řetězce: písmeno, číslice, mezera, interpunkce.",
+          "example": "`\"Ahoj!\"` má 5 znaků: A, h, o, j, !"
+        },
+        {
+          "type": "term",
+          "term": "Index znaku",
+          "definition": "Pořadí znaku v řetězci, od nuly. Záporný index jde od konce, −1 je poslední znak.",
+          "example": "V `\"Ahoj\"` je `[0]` „A“ a `[-1]` „j“."
+        },
+        {
+          "type": "term",
+          "term": "Délka `len()`",
+          "definition": "Počet znaků řetězce. Mezery se počítají taky.",
+          "example": "`len(\"Ahoj světe\")` je 10."
+        },
+        {
+          "type": "heading",
+          "text": "Indexy a řezy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "znak",
+            "p",
+            "y",
+            "t",
+            "h",
+            "o",
+            "n"
+          ],
+          "rows": [
+            [
+              "index",
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Řetězec `t = \"python\"` má 6 znaků. `t[0]` je „p“. Řez `t[od:do]` vezme znaky od indexu `od` do `do − 1`: `t[0:2]` je „py“, `t[2:]` je „thon“, `t[::-1]` je pozpátku „nohtyp“."
+        },
+        {
+          "type": "heading",
+          "text": "Spojování a opakování"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`\"Ahoj\" + \" \" + \"Evo\"` spojí řetězce: „Ahoj Evo“.",
+            "`\"ha\" * 3` zopakuje řetězec: „hahaha“.",
+            "`\"oj\" in \"ahoj\"` zjistí, jestli je část v řetězci: True."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Průchod po znacích"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`slovo = \"banán\"`",
+            "`pocet = 0`",
+            "`for znak in slovo:`",
+            "`    if znak == \"a\":`",
+            "`        pocet = pocet + 1`",
+            "`print(pocet)`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Cyklus projde znaky b, a, n, á, n. „a“ je jen jednou, protože „á“ s čárkou je jiný znak. Vypíše **1**."
+        },
+        {
+          "type": "example",
+          "question": "`s = \"Programování\"`. Co je `s[0:3]` a `len(s)`?",
+          "answer": "Znaky na indexech 0, 1, 2: **„Pro“**. Délka: P-r-o-g-r-a-m-o-v-á-n-í je **12** znaků."
+        },
+        {
+          "type": "example",
+          "question": "Jak zjistíš, jestli zadané heslo má aspoň 8 znaků?",
+          "answer": "`if len(heslo) >= 8:` → heslo je dost dlouhé. Funkce `len` vrátí počet znaků včetně mezer a číslic."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`jmeno = \"eva\"` a pak `jmeno[0] = \"E\"` změní jméno na „Eva“.",
+          "right": "`jmeno = \"E\" + jmeno[1:]` nebo `jmeno = jmeno.capitalize()`.",
+          "why": "Řetězce v Pythonu jsou **neměnné**. Jednotlivý znak nejde přepsat, Python ohlásí `TypeError`. Musíš vytvořit nový řetězec."
+        },
+        {
+          "type": "summary",
+          "text": "Řetězec je řada znaků v uvozovkách. Indexy začínají nulou, řezy fungují jako u seznamů. `+` spojuje, `*` opakuje, `in` hledá. Řetězec nejde měnit, jen z něj vytvořit nový."
+        }
+      ]
+    },
+    {
+      "title": "Metody řetězců",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Uživatel napíše do formuláře „  novák “ s mezerami a malým písmenem. Do databáze chceš uložit „Novák“. Nebo dostaneš řádek „Eva;17;Brno“ a chceš z něj tři údaje. Na to má Python sadu hotových **metod**."
+        },
+        {
+          "type": "text",
+          "text": "Kdo je zná, zpracuje text na pár řádcích. Jsou to nástroje, které programátor používá denně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Řetězec",
+          "definition": "Text uložený jako řada znaků v uvozovkách, typ `str`. Je **neměnný**: žádná metoda ho nezmění, vždy vrátí nový řetězec.",
+          "example": "`s = \"ahoj\"`"
+        },
+        {
+          "type": "term",
+          "term": "Metoda",
+          "definition": "Funkce, která patří k hodnotě a volá se přes tečku: `hodnota.metoda()`.",
+          "example": "`\"ahoj\".upper()` vrátí „AHOJ“."
+        },
+        {
+          "type": "term",
+          "term": "Oddělovač",
+          "definition": "Znak nebo text, který odděluje části řetězce.",
+          "example": "V „Eva;17;Brno“ je oddělovač středník."
+        },
+        {
+          "type": "term",
+          "term": "Formátování f-řetězcem",
+          "definition": "`f\"…{výraz}…\"` vloží hodnotu do textu. Za dvojtečkou můžeš určit formát, `:.2f` znamená 2 desetinná místa.",
+          "example": "`f\"{3.14159:.2f}\"` je „3.14“."
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější metody"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "Co vrátí",
+            "Příklad → výsledek"
+          ],
+          "rows": [
+            [
+              "`upper()`, `lower()`",
+              "velká / malá písmena",
+              "`\"Ahoj\".upper()` → „AHOJ“"
+            ],
+            [
+              "`strip()`",
+              "bez mezer na začátku a konci",
+              "`\"  ahoj \".strip()` → „ahoj“"
+            ],
+            [
+              "`replace(a, b)`",
+              "nahradí všechna a za b",
+              "`\"kos\".replace(\"k\", \"n\")` → „nos“"
+            ],
+            [
+              "`split(odd)`",
+              "seznam částí podle oddělovače",
+              "`\"a,b,c\".split(\",\")` → ['a', 'b', 'c']"
+            ],
+            [
+              "`odd.join(seznam)`",
+              "spojí seznam do řetězce",
+              "`\"-\".join([\"a\", \"b\"])` → „a-b“"
+            ],
+            [
+              "`find(x)`",
+              "index prvního výskytu, nebo −1",
+              "`\"ahoj\".find(\"o\")` → 2"
+            ],
+            [
+              "`count(x)`",
+              "počet výskytů",
+              "`\"banana\".count(\"a\")` → 3"
+            ],
+            [
+              "`startswith(x)`",
+              "True, když začíná x",
+              "`\"Ahoj\".startswith(\"A\")` → True"
+            ],
+            [
+              "`isdigit()`",
+              "True, když jsou to jen číslice",
+              "`\"12\".isdigit()` → True"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zpracování řádku dat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Máš řádek `radek = \"Eva;17;Brno\"`.",
+            "`casti = radek.split(\";\")` vytvoří seznam ['Eva', '17', 'Brno'].",
+            "`jmeno = casti[0]` je „Eva“.",
+            "`vek = int(casti[1])` je číslo 17. Z textu „17“ udělá číslo přetypování.",
+            "`print(f\"{jmeno} ({vek} let)\")` vypíše „Eva (17 let)“."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Uprav vstup „  novák “ na „Novák“.",
+          "answer": "`jmeno = vstup.strip().capitalize()`. Metody jdou řetězit: `strip()` vrátí „novák“ a `capitalize()` z něj udělá „Novák“ (první písmeno velké, ostatní malá)."
+        },
+        {
+          "type": "example",
+          "question": "Spočítej slova ve větě „Dnes je hezky“.",
+          "answer": "`len(veta.split())`. Bez argumentu dělí `split()` podle mezer: ['Dnes', 'je', 'hezky'], tedy **3** slova."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`s.upper()` a pak `print(s)` vypíše text velkými písmeny.",
+          "right": "`s = s.upper()` a pak `print(s)`.",
+          "why": "Řetězec je neměnný. `upper()` vrátí nový řetězec a ten musíš uložit, jinak se zahodí."
+        },
+        {
+          "type": "summary",
+          "text": "Metody řetězců (`upper`, `strip`, `replace`, `split`, `join`, `find`…) vždy vracejí nový řetězec, výsledek proto ulož. `split` rozdělí text na seznam, `join` ho zase spojí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Co vypíše `print(\"python\"[2:])`?",
+      "answers": [
+        "thon"
+      ],
+      "hints": [
+        "Na indexu 2 je třetí znak."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(\"python\"[::-1])`?",
+      "answers": [
+        "nohtyp"
+      ],
+      "explanation": "Krok −1 projde řetězec pozpátku."
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `len(\"Ahoj světe\")`?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Mezera je také znak.",
+      "hints": [
+        "Počítej i mezeru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `\"banana\".count(\"a\")`?",
+      "answers": [
+        "3"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `\"ahoj\".find(\"o\")`?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Indexy: a = 0, h = 1, o = 2."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(\"ha\" * 3)`?",
+      "answers": [
+        "hahaha"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co vrátí `\"a,b,c\".split(\",\")`?",
+      "options": [
+        "['a', 'b', 'c']",
+        "\"abc\"",
+        "['a,b,c']",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane po `s = \"eva\"` a `s[0] = \"E\"`?",
+      "options": [
+        "chyba TypeError",
+        "s bude „Eva“",
+        "s bude „E“",
+        "nic, příkaz se ignoruje"
+      ],
+      "answer": 0,
+      "explanation": "Řetězce jsou neměnné.",
+      "hints": [
+        "Jde v Pythonu měnit jednotlivé znaky řetězce?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak z `[\"a\", \"b\", \"c\"]` vytvoříš řetězec „a-b-c“?",
+      "options": [
+        "`\"-\".join([\"a\", \"b\", \"c\"])`",
+        "`[\"a\", \"b\", \"c\"].join(\"-\")`",
+        "`\"-\".split([\"a\", \"b\", \"c\"])`",
+        "`\"a\" - \"b\" - \"c\"`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Po `s = \"ahoj\"` a `s.upper()` obsahuje `s` text „AHOJ“.",
+      "answer": false,
+      "explanation": "Metoda vrátí nový řetězec, `s` se nezmění, dokud výsledek neuložíš."
+    },
+    {
+      "type": "truefalse",
+      "question": "`\"oj\" in \"ahoj\"` má hodnotu True.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj volání s výsledkem.",
+      "pairs": [
+        [
+          "`\"  ahoj \".strip()`",
+          "ahoj"
+        ],
+        [
+          "`\"Ahoj\".upper()`",
+          "AHOJ"
+        ],
+        [
+          "`\"kos\".replace(\"k\", \"n\")`",
+          "nos"
+        ],
+        [
+          "`\"ahoj\"[-1]`",
+          "j"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak z řádku „Eva;17;Brno“ získat věk jako číslo.",
+      "items": [
+        "rozdělit řádek `split(\";\")`",
+        "vzít prvek s indexem 1",
+        "převést ho funkcí `int()`"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Co znamená, že řetězce v Pythonu jsou neměnné, a jaký to má důsledek?",
+      "answer": "Po vytvoření nejde řetězec změnit, ani jeho jednotlivý znak. Metody jako `upper()` nebo `replace()` vracejí nový řetězec, který je potřeba uložit do proměnné."
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cykly",
+  "title": "Cykly for a while",
+  "emoji": "🔁",
+  "explanations": [
+    {
+      "title": "Opakování",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Trenér řekne: „Uběhni 10 koleček.“ Neříká desetkrát „uběhni kolečko“. Řekne to jednou a dodá, kolikrát. Program to umí stejně. Místo deseti stejných řádků napíšeš jeden **cyklus**."
+        },
+        {
+          "type": "text",
+          "text": "Cykly počítají součty, procházejí seznamy žáků, opakují hru, dokud hráč nechce skončit. Bez nich by programy byly nekonečně dlouhé."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Cyklus",
+          "definition": "Část programu, která se provede opakovaně. Jednomu provedení se říká **iterace** (průchod).",
+          "example": "Vypsat čísla 1 až 100 jedním cyklem místo 100 řádků `print`."
+        },
+        {
+          "type": "term",
+          "term": "Tělo cyklu",
+          "definition": "Odsazené řádky pod hlavičkou cyklu. Ty se opakují. Hlavička končí dvojtečkou.",
+          "example": "V `for i in range(3):` je tělem odsazený řádek pod ním."
+        },
+        {
+          "type": "term",
+          "term": "Řídicí proměnná",
+          "definition": "Proměnná, která v každém průchodu cyklu dostane další hodnotu.",
+          "example": "V `for i in range(3):` je to `i`, postupně 0, 1, 2."
+        },
+        {
+          "type": "term",
+          "term": "`range()`",
+          "definition": "Funkce, která vytvoří řadu celých čísel. `range(n)` jde od 0 do n − 1. `range(a, b)` od a do b − 1. `range(a, b, krok)` s daným krokem. Horní mez se **nezahrnuje**.",
+          "example": "`range(2, 6)` jsou čísla 2, 3, 4, 5."
+        },
+        {
+          "type": "heading",
+          "text": "Cyklus for"
+        },
+        {
+          "type": "text",
+          "text": "`for` použiješ, když víš, kolikrát nebo přes co se má opakovat."
+        },
+        {
+          "type": "list",
+          "items": [
+            "`for i in range(1, 6):`",
+            "`    print(i * i)`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vypíše 1, 4, 9, 16, 25. Proměnná `i` nabývá hodnot 1 až 5, šestka už ne."
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše `for i in range(10, 0, -2): print(i)`?",
+          "answer": "Začne na 10, krok je −2 a k nule nedojde: **10, 8, 6, 4, 2**."
+        },
+        {
+          "type": "example",
+          "question": "Sečti čísla 1 až 100.",
+          "answer": "`s = 0`, pak `for i in range(1, 101):` → `s = s + i`, nakonec `print(s)`. Proměnná `s` je **sčítač**, na začátku musí být 0. Vypíše **5050**. Horní mez je 101, aby se započítala i stovka."
+        },
+        {
+          "type": "heading",
+          "text": "Cyklus while"
+        },
+        {
+          "type": "text",
+          "text": "`while` (dokud) opakuje tělo, **dokud** platí podmínka. Použiješ ho, když předem nevíš, kolikrát se bude opakovat."
+        },
+        {
+          "type": "list",
+          "items": [
+            "`heslo = \"\"`",
+            "`while heslo != \"sezam\":`",
+            "`    heslo = input(\"Heslo: \")`",
+            "`print(\"Vítej!\")`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Program se ptá pořád dokola, dokud uživatel nenapíše „sezam“. Může to být jednou i stokrát."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`for i in range(1, 10):` vypíše čísla 1 až 10.",
+          "right": "Vypíše 1 až 9. Pro 1 až 10 napiš `range(1, 11)`.",
+          "why": "Horní mez `range` se do řady nikdy nezahrnuje."
+        },
+        {
+          "type": "summary",
+          "text": "Cyklus opakuje odsazené tělo. `for` použiješ, když znáš počet opakování (`range(a, b)` jde od a do b − 1). `while` opakuje, dokud platí podmínka."
+        }
+      ]
+    },
+    {
+      "title": "Trasování",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Programátor často neví, proč program dělá něco jiného, než čekal. Pomůže mu **trasování**: projde cyklus ručně a po každém průchodu si zapíše hodnoty proměnných do tabulky. Na písemce z programování to po tobě budou chtít taky."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se oba cykly v Pythonu, příkazy `break` a `continue` a hlavně to, jak cyklus spolehlivě „přehrát v hlavě“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Cyklus `for`",
+          "definition": "Projde postupně všechny prvky nějaké řady: čísla z `range()`, písmena řetězce, prvky seznamu. Počet průchodů je dán délkou řady.",
+          "example": "`for z in \"ahoj\":` projde písmena a, h, o, j."
+        },
+        {
+          "type": "term",
+          "term": "Cyklus `while`",
+          "definition": "Před každým průchodem zkontroluje podmínku. Když platí, provede tělo. Když neplatí, cyklus skončí.",
+          "example": "`while n > 1:`"
+        },
+        {
+          "type": "term",
+          "term": "Nekonečný cyklus",
+          "definition": "Cyklus, jehož podmínka nikdy nepřestane platit. Program „zamrzne“. Vzniká, když v těle zapomeneš měnit proměnnou z podmínky.",
+          "example": "`while x > 0: print(x)` bez změny `x`."
+        },
+        {
+          "type": "term",
+          "term": "`break` a `continue`",
+          "definition": "`break` cyklus okamžitě ukončí. `continue` přeskočí zbytek těla a pokračuje dalším průchodem.",
+          "example": "Hledáš první záporné číslo: jakmile ho najdeš, `break`."
+        },
+        {
+          "type": "term",
+          "term": "Trasovací tabulka",
+          "definition": "Tabulka, kam si po každém průchodu cyklu zapíšeš hodnoty proměnných a podmínky.",
+          "example": "Sloupce: průchod, n, c, podmínka."
+        },
+        {
+          "type": "heading",
+          "text": "Trasujeme while"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`n = 10`",
+            "`c = 0`",
+            "`while n > 1:`",
+            "`    n = n // 2`",
+            "`    c = c + 1`",
+            "`print(c)`"
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kontrola",
+            "n",
+            "c",
+            "n > 1?"
+          ],
+          "rows": [
+            [
+              "před cyklem",
+              "10",
+              "0",
+              "ano"
+            ],
+            [
+              "po 1. průchodu",
+              "5",
+              "1",
+              "ano"
+            ],
+            [
+              "po 2. průchodu",
+              "2",
+              "2",
+              "ano"
+            ],
+            [
+              "po 3. průchodu",
+              "1",
+              "3",
+              "ne → konec"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vypíše **3**. Program spočítal, kolikrát jde 10 vydělit dvěma, než dojdeš k 1."
+        },
+        {
+          "type": "heading",
+          "text": "Jak trasovat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nakresli tabulku se sloupcem pro každou proměnnou a pro podmínku.",
+            "Zapiš hodnoty před začátkem cyklu.",
+            "Vyhodnoť podmínku. Neplatí? Cyklus končí.",
+            "Platí? Proveď řádky těla jeden po druhém a zapiš nové hodnoty.",
+            "Vrať se ke kroku 3."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše `for i in range(5):` → `if i == 3: break` → `print(i)`?",
+          "answer": "i = 0 → vypíše 0. i = 1 → 1. i = 2 → 2. i = 3 → `break`, cyklus končí dřív, než se 3 vypíše. Výstup: **0, 1, 2**."
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše `for i in range(5):` → `if i % 2 == 0: continue` → `print(i)`?",
+          "answer": "Sudá i (0, 2, 4) přeskočí `print` díky `continue`. Vypíší se jen lichá: **1, 3**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`i = 0` a `while i < 5: print(i)`",
+          "right": "`i = 0` a `while i < 5:` → `print(i)` → `i = i + 1`",
+          "why": "Bez změny `i` je podmínka pořád pravdivá a cyklus nikdy neskončí."
+        },
+        {
+          "type": "summary",
+          "text": "`for` prochází prvky řady, `while` opakuje, dokud platí podmínka. `break` cyklus ukončí, `continue` skočí na další průchod. Neznámý cyklus pochopíš trasovací tabulkou."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik čísel obsahuje `range(3, 8)`?",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "3, 4, 5, 6, 7.",
+      "hints": [
+        "Horní mez se nezahrnuje."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `s = 0`, `for i in range(1, 5): s = s + i`, `print(s)`?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "1 + 2 + 3 + 4 = 10, čtyřka je poslední.",
+      "hints": [
+        "Napiš si, jaké hodnoty má `i`."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše program `n = 10`, `c = 0`, `while n > 1:` → `n = n // 2` → `c = c + 1`, nakonec `print(c)`?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "n: 10 → 5 → 2 → 1, tedy tři průchody.",
+      "hints": [
+        "Udělej si trasovací tabulku pro n a c."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `x = 1`, `while x < 100: x = x * 3`, `print(x)`?",
+      "answers": [
+        "243"
+      ],
+      "explanation": "1 → 3 → 9 → 27 → 81 → 243. Až 243 už není menší než 100.",
+      "hints": [
+        "Násob třemi a po každém kroku zkontroluj podmínku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která čísla vytvoří `range(1, 10, 3)`?",
+      "options": [
+        "1, 4, 7",
+        "1, 4, 7, 10",
+        "3, 6, 9",
+        "1, 3, 10"
+      ],
+      "answer": 0,
+      "explanation": "Od 1 s krokem 3, desítka se nezahrnuje."
+    },
+    {
+      "type": "choice",
+      "question": "Kdy je vhodnější `while` než `for`?",
+      "options": [
+        "když předem nevíš, kolikrát se bude opakovat",
+        "když procházíš všechny prvky seznamu",
+        "když chceš opakovat přesně 10krát",
+        "nikdy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá příkaz `break`?",
+      "options": [
+        "okamžitě ukončí cyklus",
+        "přeskočí na další průchod",
+        "zastaví celý program",
+        "vypíše chybu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "`for i in range(5):` proběhne pětkrát a poslední hodnota `i` je 5.",
+      "answer": false,
+      "explanation": "Proběhne pětkrát, ale `i` je 0 až 4."
+    },
+    {
+      "type": "truefalse",
+      "question": "Cyklus `while`, ve kterém se nemění proměnná z podmínky, může běžet donekonečna.",
+      "answer": true,
+      "explanation": "Podmínka zůstane pořád stejná."
+    },
+    {
+      "type": "match",
+      "question": "Spoj kód s výstupem.",
+      "pairs": [
+        [
+          "`for i in range(3): print(i)`",
+          "0 1 2"
+        ],
+        [
+          "`for i in range(1, 4): print(i)`",
+          "1 2 3"
+        ],
+        [
+          "`for i in range(3, 0, -1): print(i)`",
+          "3 2 1"
+        ],
+        [
+          "`for i in range(0, 6, 2): print(i)`",
+          "0 2 4"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky trasování cyklu `while`.",
+      "items": [
+        "zapiš hodnoty před cyklem",
+        "vyhodnoť podmínku",
+        "proveď tělo a zapiš nové hodnoty",
+        "vrať se k podmínce"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `for z in \"ahoj\": print(z, end=\"-\")`? (Napiš celý výstup.)",
+      "answers": [
+        "a-h-o-j-"
+      ],
+      "explanation": "Cyklus projde každé písmeno a za ním vypíše pomlčku místo nového řádku."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi cykly `for` a `while`.",
+      "answer": "`for` prochází prvky dané řady (čísla z `range`, písmena, prvky seznamu), počet průchodů je dopředu známý. `while` opakuje tělo, dokud platí podmínka, a počet průchodů předem znát nemusíš."
+    },
+    {
+      "type": "open",
+      "question": "Co je nekonečný cyklus a jak mu předejít?",
+      "answer": "Cyklus, jehož podmínka nikdy nepřestane platit, takže program nikdy neskončí. Předejdeš mu tím, že v těle cyklu měníš proměnnou z podmínky tak, aby se k ukončení blížila."
+    }
+  ]
+}

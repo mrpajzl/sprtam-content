@@ -1,0 +1,407 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "soubory-vyjimky",
+  "title": "Práce se soubory a výjimky",
+  "emoji": "📁",
+  "explanations": [
+    {
+      "title": "Sešit v šuplíku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hraješ hru, nasbíráš 500 bodů a vypneš počítač. Kdyby si program pamatoval body jen v proměnných, po vypnutí by zmizely. Proměnné žijí jen v operační paměti, dokud program běží. Aby se data zachovala, musí je program zapsat do **souboru** na disk."
+        },
+        {
+          "type": "text",
+          "text": "Práce se soubory je jako práce se sešitem v šuplíku: otevřeš ho, čteš nebo píšeš a zase ho zavřeš. A když sešit v šuplíku není, nesmí se program zhroutit. Proto k souborům patří i **výjimky**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Soubor",
+          "definition": "Pojmenovaná data uložená na disku. Zůstanou tam i po vypnutí programu a počítače. Textový soubor obsahuje řádky textu.",
+          "example": "`body.txt`, `zaci.csv`"
+        },
+        {
+          "type": "term",
+          "term": "Otevření souboru `open()`",
+          "definition": "Funkce, která soubor zpřístupní programu. Má jméno souboru, **režim** a kódování.",
+          "example": "`open(\"body.txt\", \"r\", encoding=\"utf-8\")`"
+        },
+        {
+          "type": "term",
+          "term": "Režim otevření",
+          "definition": "Říká, co se souborem chceš dělat. `\"r\"` čtení (výchozí), `\"w\"` zápis (starý obsah smaže!), `\"a\"` připsání na konec.",
+          "example": "Deník, do kterého jen přidáváš, otevři s `\"a\"`."
+        },
+        {
+          "type": "term",
+          "term": "Blok `with`",
+          "definition": "Otevře soubor a po skončení odsazeného bloku ho **sám zavře**, i když nastane chyba. Je to doporučený způsob práce se soubory.",
+          "example": "`with open(\"body.txt\", encoding=\"utf-8\") as f:`"
+        },
+        {
+          "type": "term",
+          "term": "Kódování (encoding)",
+          "definition": "Pravidlo, jak se znaky ukládají do bajtů. Pro češtinu používej `\"utf-8\"`, jinak se mohou rozbít písmena s háčky a čárkami.",
+          "example": "`encoding=\"utf-8\"`"
+        },
+        {
+          "type": "heading",
+          "text": "Zápis a čtení"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`with open(\"zaci.txt\", \"w\", encoding=\"utf-8\") as f:`",
+            "`    f.write(\"Eva\\n\")`",
+            "`    f.write(\"Petr\\n\")`",
+            " ",
+            "`with open(\"zaci.txt\", \"r\", encoding=\"utf-8\") as f:`",
+            "`    for radek in f:`",
+            "`        print(radek.strip())`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "První blok otevře soubor pro zápis. Když neexistuje, vytvoří ho.",
+            "`write` zapíše text. Nový řádek nepřidá sám, proto `\\n` na konci.",
+            "Na konci bloku `with` se soubor zavře a data jsou na disku.",
+            "Druhý blok soubor otevře pro čtení a cyklem projde řádky.",
+            "Každý řádek končí znakem `\\n`. `strip()` ho odstraní, aby `print` nevypsal prázdné řádky navíc."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "Co vrátí"
+          ],
+          "rows": [
+            [
+              "`f.read()`",
+              "celý obsah jako jeden řetězec"
+            ],
+            [
+              "`f.readline()`",
+              "jeden další řádek"
+            ],
+            [
+              "`f.readlines()`",
+              "seznam všech řádků"
+            ],
+            [
+              "`for radek in f:`",
+              "prochází řádky jeden po druhém"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Do souboru `denik.txt` chceš každý den připsat nový řádek a nesmazat staré. Jaký režim?",
+          "answer": "Režim **\"a\"** (append): `with open(\"denik.txt\", \"a\", encoding=\"utf-8\") as f:` → `f.write(\"Dnes pršelo\\n\")`. Režim `\"w\"` by celý deník smazal."
+        },
+        {
+          "type": "example",
+          "question": "Soubor `cisla.txt` má na každém řádku jedno číslo. Sečti je.",
+          "answer": "`s = 0`, pak `with open(\"cisla.txt\", encoding=\"utf-8\") as f:` → `for r in f:` → `s = s + int(r)`. Z řádku je text, proto `int()`. (Znak `\\n` na konci `int()` toleruje.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Otevřu soubor s výsledky v režimu `\"w\"`, abych do něj přidal nový výsledek.",
+          "right": "Pro přidání použij `\"a\"`.",
+          "why": "Režim `\"w\"` soubor při otevření vyprázdní. Všechny staré výsledky by zmizely."
+        },
+        {
+          "type": "summary",
+          "text": "Data přežijí konec programu jen v souboru. Soubor otevírej přes `with open(jmeno, režim, encoding=\"utf-8\")`, který ho sám zavře. `\"r\"` čte, `\"w\"` přepisuje, `\"a\"` připisuje."
+        }
+      ]
+    },
+    {
+      "title": "Když něco selže",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Program se zeptá na věk a uživatel napíše „sedmnáct“. Nebo program chce otevřít soubor, který někdo smazal. Bez ošetření program spadne a vypíše červenou chybu. Uživatel přijde o rozdělanou práci."
+        },
+        {
+          "type": "text",
+          "text": "Dobrý program s chybami počítá. Chybu zachytí, vysvětlí ji uživateli a pokračuje. K tomu slouží **výjimky** a blok `try`/`except`."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výjimka (exception)",
+          "definition": "Chyba, která nastane **za běhu** programu. Python přeruší provádění a vytvoří objekt výjimky s jejím druhem a popisem. Když ji nikdo nezachytí, program skončí.",
+          "example": "`int(\"abc\")` vyvolá výjimku `ValueError`."
+        },
+        {
+          "type": "term",
+          "term": "Ošetření výjimky `try` / `except`",
+          "definition": "Kód, který může selhat, dáš do bloku `try`. Když v něm nastane výjimka, Python skočí do bloku `except` a program pokračuje dál.",
+          "example": "`try: x = int(vstup)` → `except ValueError: print(\"To není číslo\")`"
+        },
+        {
+          "type": "term",
+          "term": "`else` a `finally`",
+          "definition": "Blok `else` se provede, když v `try` **žádná** výjimka nenastala. Blok `finally` se provede **vždy**, s chybou i bez ní. Hodí se na úklid.",
+          "example": "Ve `finally` se zavírá spojení nebo vypisuje „Konec“."
+        },
+        {
+          "type": "term",
+          "term": "Soubor",
+          "definition": "Data uložená na disku, otevírají se funkcí `open()`. Když soubor pro čtení neexistuje, vznikne výjimka `FileNotFoundError`.",
+          "example": "`open(\"neni.txt\")`"
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější výjimky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Výjimka",
+            "Kdy nastane",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "`ValueError`",
+              "hodnota má správný typ, ale nesmyslný obsah",
+              "`int(\"abc\")`"
+            ],
+            [
+              "`ZeroDivisionError`",
+              "dělení nulou",
+              "`10 / 0`"
+            ],
+            [
+              "`FileNotFoundError`",
+              "soubor neexistuje",
+              "`open(\"neni.txt\")`"
+            ],
+            [
+              "`IndexError`",
+              "index mimo seznam",
+              "`[1, 2][5]`"
+            ],
+            [
+              "`KeyError`",
+              "klíč není ve slovníku",
+              "`{}[\"a\"]`"
+            ],
+            [
+              "`TypeError`",
+              "operace s nevhodným typem",
+              "`\"a\" + 1`"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečné načtení čísla"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`while True:`",
+            "`    try:`",
+            "`        vek = int(input(\"Věk: \"))`",
+            "`        break`",
+            "`    except ValueError:`",
+            "`        print(\"Zadej celé číslo.\")`",
+            "`print(\"Za rok ti bude\", vek + 1)`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Když uživatel napíše „sedmnáct“, `int()` vyvolá `ValueError`. Řádek `break` se přeskočí, program vypíše radu a ptá se znovu. Když napíše „17“, převod se povede a `break` ukončí cyklus."
+        },
+        {
+          "type": "heading",
+          "text": "Pořadí bloků"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`try:` kód, který může selhat.",
+            "`except Druh:` co dělat, když nastane výjimka daného druhu. Bloků `except` může být víc.",
+            "`else:` co dělat, když vše proběhlo bez chyby (nepovinné).",
+            "`finally:` co se provede vždy (nepovinné)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše `f(0)`? Funkce: `try: r = 10 / x` → `except ZeroDivisionError: print(\"nulou ne\")` → `else: print(\"ok\")` → `finally: print(\"konec\")`.",
+          "answer": "Dělení nulou vyvolá výjimku, provede se `except`: **nulou ne**. `else` se přeskočí. `finally` se provede vždy: **konec**."
+        },
+        {
+          "type": "example",
+          "question": "Načti soubor `nastaveni.txt`, a když neexistuje, použij výchozí nastavení.",
+          "answer": "`try:` → `with open(\"nastaveni.txt\", encoding=\"utf-8\") as f: text = f.read()` → `except FileNotFoundError:` → `text = \"výchozí\"`. Program nespadne a pokračuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`try: …` a `except: pass` kolem celého programu, aby nikdy nespadl.",
+          "right": "Zachytávej jen konkrétní výjimky, které čekáš (`except ValueError:`), a uživateli řekni, co se stalo.",
+          "why": "Holé `except` s `pass` schová i chyby v tvém kódu. Program pak tiše dělá nesmysly a chybu nenajdeš."
+        },
+        {
+          "type": "summary",
+          "text": "Výjimka je chyba za běhu programu. Kód, který může selhat, dej do `try` a konkrétní výjimku zachyť v `except`. `else` běží bez chyby, `finally` vždy."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký režim `open()` použiješ, když chceš do souboru připsat řádek a zachovat starý obsah?",
+      "options": [
+        "`\"a\"`",
+        "`\"w\"`",
+        "`\"r\"`",
+        "`\"x\"`"
+      ],
+      "answer": 0,
+      "explanation": "\"a\" = append, připsání na konec."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se soubory otevírají v bloku `with`?",
+      "options": [
+        "soubor se po bloku sám zavře, i při chybě",
+        "jinak soubor nejde číst",
+        "`with` zrychlí čtení",
+        "`with` automaticky vytvoří zálohu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterou výjimku vyvolá `int(\"abc\")`?",
+      "options": [
+        "ValueError",
+        "TypeError",
+        "KeyError",
+        "ZeroDivisionError"
+      ],
+      "answer": 0,
+      "hints": [
+        "Typ argumentu (řetězec) je v pořádku. Co je špatně?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakou výjimku vyvolá `10 / 0`? (Napiš její název.)",
+      "answers": [
+        "ZeroDivisionError"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakou výjimku vyvolá `open(\"neexistuje.txt\")` v režimu čtení? (Napiš její název.)",
+      "answers": [
+        "FileNotFoundError"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Režim `\"w\"` při otevření smaže dosavadní obsah souboru.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Metoda `write()` sama přidá na konec zapsaného textu nový řádek.",
+      "answer": false,
+      "explanation": "Nový řádek musíš zapsat sám znakem `\\n`."
+    },
+    {
+      "type": "truefalse",
+      "question": "Blok `finally` se provede jen tehdy, když nastala výjimka.",
+      "answer": false,
+      "explanation": "`finally` se provede vždy."
+    },
+    {
+      "type": "match",
+      "question": "Spoj kód s výjimkou, kterou vyvolá.",
+      "pairs": [
+        [
+          "`[1, 2][5]`",
+          "IndexError"
+        ],
+        [
+          "`{}[\"a\"]`",
+          "KeyError"
+        ],
+        [
+          "`\"a\" + 1`",
+          "TypeError"
+        ],
+        [
+          "`int(\"x\")`",
+          "ValueError"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď bloky ošetření výjimek tak, jak se píšou.",
+      "items": [
+        "`try:`",
+        "`except ValueError:`",
+        "`else:`",
+        "`finally:`"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Funkce `f(x)` má `try: r = 10 / x`, `except ZeroDivisionError: print(\"A\")`, `else: print(\"B\")`, `finally: print(\"C\")`. Co vypíše `f(2)`? (Napiš písmena za sebou bez mezer.)",
+      "answers": [
+        "BC"
+      ],
+      "explanation": "Bez chyby se provede `else` a pak vždy `finally`.",
+      "hints": [
+        "Nastane při dělení dvěma výjimka?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se při čtení souboru často volá `radek.strip()`?",
+      "options": [
+        "odstraní znak nového řádku a mezery na krajích",
+        "převede řádek na číslo",
+        "zavře soubor",
+        "rozdělí řádek na slova"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "K čemu slouží blok `try`/`except` a proč nemáš psát holé `except: pass`?",
+      "answer": "`try`/`except` zachytí výjimku, aby program nespadl, a umožní na chybu rozumně reagovat. Holé `except: pass` zachytí a schová úplně všechny chyby, i chyby v kódu, takže se nedají najít."
+    },
+    {
+      "type": "open",
+      "question": "Proč program ukládá data do souboru, když je má v proměnných?",
+      "answer": "Proměnné jsou v operační paměti a po skončení programu zmizí. Soubor na disku data zachová i po vypnutí programu a počítače."
+    }
+  ]
+}

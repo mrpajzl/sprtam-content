@@ -1,0 +1,436 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "algoritmus",
+  "title": "Algoritmus a vývojový diagram",
+  "emoji": "🧭",
+  "explanations": [
+    {
+      "title": "Recept na čaj",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ráno si děláš čaj. Napustíš vodu, zapneš konvici, počkáš, až se voda uvaří, a zaliješ sáček. Kroky jdou v pevném pořadí a na konci máš čaj. Přesně takhle vypadá **algoritmus**."
+        },
+        {
+          "type": "text",
+          "text": "Počítač nic nedomyslí. Udělá jen to, co mu přesně a krok za krokem popíšeš. Než začneš psát program, musíš si umět rozmyslet algoritmus. Programovací jazyk je pak jen způsob, jak ho zapsat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Algoritmus",
+          "definition": "Přesný návod, jak v konečném počtu kroků vyřešit úlohu. Každý krok je jasný a vykonavatel (člověk nebo počítač) ví, co má udělat.",
+          "example": "Postup, jak zjistit větší ze dvou čísel: porovnej je a vypiš to, které je větší."
+        },
+        {
+          "type": "term",
+          "term": "Vstup a výstup algoritmu",
+          "definition": "**Vstup** jsou data, která algoritmus dostane na začátku. **Výstup** je výsledek, který vydá na konci.",
+          "example": "Algoritmus pro obsah obdélníku: vstup = délky stran a, b; výstup = obsah a · b."
+        },
+        {
+          "type": "term",
+          "term": "Program",
+          "definition": "Algoritmus zapsaný v programovacím jazyce, kterému rozumí počítač (například Python).",
+          "example": "Recept v kuchařce je algoritmus. Kdyby byl napsaný pro kuchyňského robota, byl by to program."
+        },
+        {
+          "type": "heading",
+          "text": "Co musí správný algoritmus splňovat"
+        },
+        {
+          "type": "text",
+          "text": "Ne každý návod je algoritmus. „Uvař něco dobrého“ je přání, ne postup. Ve škole se učí tyto vlastnosti:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vlastnost",
+            "Co znamená",
+            "Čaj"
+          ],
+          "rows": [
+            [
+              "konečnost",
+              "skončí po konečném počtu kroků",
+              "jednou čaj dovaříš"
+            ],
+            [
+              "determinovanost (jednoznačnost)",
+              "v každém kroku je jasné, co udělat dál",
+              "ne „přidej trochu cukru“, ale „přidej 1 lžičku“"
+            ],
+            [
+              "hromadnost (obecnost)",
+              "funguje pro celou skupinu stejných úloh, ne pro jednu",
+              "postup platí pro každý sáčkový čaj"
+            ],
+            [
+              "rezultativnost",
+              "vede k výsledku (výstupu)",
+              "na konci je hotový čaj"
+            ],
+            [
+              "elementárnost",
+              "skládá se z jednoduchých kroků, kterým vykonavatel rozumí",
+              "„zapni konvici“ zvládne každý"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tři stavební kameny"
+        },
+        {
+          "type": "text",
+          "text": "Každý algoritmus se dá poskládat jen ze tří základních konstrukcí. Říká se jim **řídicí struktury**."
+        },
+        {
+          "type": "term",
+          "term": "Posloupnost (sekvence)",
+          "definition": "Kroky jdou jeden za druhým v daném pořadí.",
+          "example": "Napusť vodu → zapni konvici → zalij sáček."
+        },
+        {
+          "type": "term",
+          "term": "Větvení (podmínka)",
+          "definition": "Algoritmus se rozhodne podle podmínky, kterou cestou půjde dál.",
+          "example": "Pokud chceš sladký čaj, přidej cukr, jinak nic."
+        },
+        {
+          "type": "term",
+          "term": "Cyklus (opakování)",
+          "definition": "Některé kroky se opakují, dokud platí podmínka, nebo daný počet krát.",
+          "example": "Dokud se voda nevaří, čekej."
+        },
+        {
+          "type": "example",
+          "question": "Napiš algoritmus, který zjistí, jestli je číslo sudé.",
+          "answer": "Vstup: celé číslo n. 1) Vyděl n dvěma a zjisti zbytek. 2) Pokud je zbytek 0, vypiš „sudé“. 3) Jinak vypiš „liché“. Výstup: slovo sudé/liché. Je to posloupnost s jedním větvením."
+        },
+        {
+          "type": "example",
+          "question": "Je postup „Míchej polévku, dokud nebude dobrá“ algoritmus?",
+          "answer": "Není. Chybí **determinovanost**: „dobrá“ není jednoznačná podmínka. Navíc nemusí platit **konečnost**: kdyby polévka nikdy „dobrá“ nebyla, míchal bys donekonečna. Správně: „Míchej 5 minut“ nebo „Míchej, dokud teplota nedosáhne 90 °C“."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Postup „Opakuj: přičti 1 k číslu x“ je algoritmus.",
+          "right": "Bez podmínky ukončení to není algoritmus, protože nikdy neskončí.",
+          "why": "Chybí konečnost. Každý cyklus potřebuje podmínku, která jednou přestane platit."
+        },
+        {
+          "type": "summary",
+          "text": "Algoritmus je přesný, konečný a obecný postup řešení úlohy. Skládá se z posloupnosti, větvení a cyklů. Program je algoritmus zapsaný v programovacím jazyce."
+        }
+      ]
+    },
+    {
+      "title": "Vývojový diagram",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Návod k sestavení skříně z obchodu je skoro celý z obrázků. Obrázek pochopíš rychleji než dlouhý text. Algoritmy se také kreslí. Nejznámější kresba je **vývojový diagram**."
+        },
+        {
+          "type": "text",
+          "text": "Diagram se kreslí, než začneš programovat. Na papíře snadno uvidíš chybu v rozhodování nebo cyklus, který nikdy neskončí. Programátoři i učitelé ho používají, protože mu rozumí lidé bez ohledu na programovací jazyk."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Algoritmus",
+          "definition": "Přesný postup řešení úlohy v konečném počtu jednoznačných kroků.",
+          "example": "Postup výpočtu průměru tří známek."
+        },
+        {
+          "type": "term",
+          "term": "Vývojový diagram",
+          "definition": "Grafický zápis algoritmu. Kroky jsou značky (obdélník, kosočtverec…) a pořadí určují šipky. Značky popisuje norma ČSN ISO 5807.",
+          "example": "Diagram, který načte věk a rozhodne, jestli je člověk plnoletý."
+        },
+        {
+          "type": "term",
+          "term": "Spojnice",
+          "definition": "Čára se šipkou mezi značkami. Ukazuje, kterým krokem se pokračuje.",
+          "example": "Šipka z „Načti a“ vede do „Načti b“."
+        },
+        {
+          "type": "heading",
+          "text": "Značky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka",
+            "Tvar",
+            "K čemu je"
+          ],
+          "rows": [
+            [
+              "mezní značka",
+              "ovál (zaoblený obdélník)",
+              "začátek a konec algoritmu"
+            ],
+            [
+              "zpracování",
+              "obdélník",
+              "výpočet nebo přiřazení, např. `s = a + b`"
+            ],
+            [
+              "vstup/výstup (data)",
+              "rovnoběžník (kosodélník)",
+              "načtení nebo vypsání dat"
+            ],
+            [
+              "rozhodování",
+              "kosočtverec",
+              "podmínka se dvěma výstupy: ano / ne"
+            ],
+            [
+              "spojnice",
+              "čára se šipkou",
+              "pořadí kroků"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Ovál",
+                "back": "začátek / konec"
+              },
+              {
+                "front": "Obdélník",
+                "back": "zpracování (výpočet)"
+              },
+              {
+                "front": "Rovnoběžník",
+                "back": "vstup / výstup dat"
+              },
+              {
+                "front": "Kosočtverec",
+                "back": "rozhodování (podmínka)"
+              },
+              {
+                "front": "Šipka",
+                "back": "pořadí kroků"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus si nejdřív sám říct, k čemu značka slouží."
+        },
+        {
+          "type": "heading",
+          "text": "Jak nakreslit diagram"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nakresli ovál „Začátek“.",
+            "Rovnoběžníkem načti vstupy (např. „Načti věk“).",
+            "Obdélníky zapiš výpočty v pořadí, jak jdou po sobě.",
+            "Kde se rozhoduješ, nakresli kosočtverec s podmínkou a dvěma šipkami „ano“ a „ne“.",
+            "Cyklus nakresli jako šipku, která se vrací zpět nad podmínku.",
+            "Rovnoběžníkem vypiš výsledek a skonči oválem „Konec“."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Popiš diagram, který načte věk a vypíše „plnoletý“, nebo „neplnoletý“.",
+          "answer": "Ovál „Začátek“ → rovnoběžník „Načti věk“ → kosočtverec „věk ≥ 18?“. Větev **ano** → rovnoběžník „Vypiš plnoletý“. Větev **ne** → rovnoběžník „Vypiš neplnoletý“. Obě větve se spojí → ovál „Konec“."
+        },
+        {
+          "type": "example",
+          "question": "Popiš diagram, který sečte čísla 1 až 10.",
+          "answer": "Začátek → obdélník `s = 0`, `i = 1` → kosočtverec „i ≤ 10?“. **Ano** → obdélník `s = s + i` → obdélník `i = i + 1` → šipka zpět ke kosočtverci. **Ne** → rovnoběžník „Vypiš s“ → Konec. Vypíše 55. Šipka zpět nad podmínku je **cyklus**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Podmínku „je x > 0?“ nakreslím do obdélníku.",
+          "right": "Podmínka patří do kosočtverce, ze kterého vedou dvě šipky (ano/ne).",
+          "why": "Obdélník je jen pro zpracování a má jeden výstup. Rozhodování má vždy dva."
+        },
+        {
+          "type": "summary",
+          "text": "Vývojový diagram kreslí algoritmus značkami: ovál začátek/konec, obdélník zpracování, rovnoběžník vstup/výstup, kosočtverec rozhodování. Šipka zpět nad podmínku tvoří cyklus."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která značka vývojového diagramu označuje rozhodování?",
+      "options": [
+        "kosočtverec",
+        "obdélník",
+        "rovnoběžník",
+        "ovál"
+      ],
+      "answer": 0,
+      "explanation": "Z kosočtverce vedou dvě šipky: ano a ne."
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost algoritmu chybí návodu „Osol podle chuti“?",
+      "options": [
+        "determinovanost",
+        "konečnost",
+        "hromadnost",
+        "elementárnost"
+      ],
+      "answer": 0,
+      "explanation": "„Podle chuti“ není jednoznačné, každý to udělá jinak.",
+      "hints": [
+        "Zeptej se: ví každý přesně, co má udělat?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Algoritmus musí skončit po konečném počtu kroků.",
+      "answer": true,
+      "explanation": "To je vlastnost konečnost."
+    },
+    {
+      "type": "truefalse",
+      "question": "Algoritmus, který umí spočítat obsah jen obdélníku 3 × 4 cm, splňuje hromadnost.",
+      "answer": false,
+      "explanation": "Hromadnost znamená, že funguje pro celou třídu úloh, tedy pro libovolné strany a, b."
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s jejím významem.",
+      "pairs": [
+        [
+          "ovál",
+          "začátek / konec"
+        ],
+        [
+          "obdélník",
+          "zpracování"
+        ],
+        [
+          "rovnoběžník",
+          "vstup / výstup"
+        ],
+        [
+          "kosočtverec",
+          "rozhodování"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj řídicí strukturu s příkladem.",
+      "pairs": [
+        [
+          "posloupnost",
+          "umyj se, obleč se, nasnídej se"
+        ],
+        [
+          "větvení",
+          "když prší, vezmi deštník"
+        ],
+        [
+          "cyklus",
+          "dokud není plno, přilévej"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky algoritmu výpočtu obsahu obdélníku.",
+      "items": [
+        "Začátek",
+        "Načti a, b",
+        "S = a · b",
+        "Vypiš S",
+        "Konec"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik šipek (výstupů) vede z kosočtverce ve vývojovém diagramu?",
+      "answers": [
+        "2",
+        "dvě",
+        "dva"
+      ],
+      "explanation": "Ano a ne."
+    },
+    {
+      "type": "input",
+      "question": "Diagram: `s = 0`, `i = 1`; dokud i ≤ 4, proveď `s = s + i` a `i = i + 1`; vypiš s. Co vypíše?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "1 + 2 + 3 + 4 = 10.",
+      "hints": [
+        "Projdi cyklus ručně a zapisuj si s a i po každém kroku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je program?",
+      "options": [
+        "algoritmus zapsaný v programovacím jazyce",
+        "jakýkoli vývojový diagram",
+        "výsledek výpočtu",
+        "počítač"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se ve vývojovém diagramu nakreslí cyklus?",
+      "options": [
+        "šipkou, která se vrací zpět nad podmínku",
+        "dvojitým obdélníkem",
+        "dvěma ovály",
+        "rovnoběžníkem"
+      ],
+      "answer": 0,
+      "hints": [
+        "Cyklus znamená, že se některé kroky opakují. Kam se tedy musí vrátit tok?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Každý algoritmus lze poskládat z posloupnosti, větvení a cyklu.",
+      "answer": true,
+      "explanation": "To jsou tři základní řídicí struktury."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je algoritmus, a vyjmenuj aspoň tři jeho vlastnosti.",
+      "answer": "Algoritmus je přesný postup, jak v konečném počtu kroků vyřešit úlohu. Má konečnost, determinovanost (jednoznačnost), hromadnost, rezultativnost a elementárnost."
+    },
+    {
+      "type": "open",
+      "question": "Popiš vývojový diagram, který načte dvě čísla a vypíše větší z nich.",
+      "answer": "Začátek → načti a, b → kosočtverec „a > b?“ → ano: vypiš a, ne: vypiš b → konec."
+    }
+  ]
+}

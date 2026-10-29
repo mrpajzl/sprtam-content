@@ -1,0 +1,417 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vyhledavani-trideni",
+  "title": "Vyhledávání a třídění",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Hledání ve slovníku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hledáš v papírovém slovníku slovo „mrak“. Nečteš ho od první stránky. Otevřeš ho někde uprostřed, uvidíš „lampa“ a víš, že „mrak“ je dál. Zahodíš celou první půlku. Za pár kroků jsi u cíle."
+        },
+        {
+          "type": "text",
+          "text": "Funguje to jen proto, že slova jsou **seřazená**. Hledání a třídění patří k nejčastějším úlohám v programování: vyhledávač, e-shop, telefonní kontakty. A u velkých dat rozhoduje, jestli program odpoví za vteřinu, nebo za hodinu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Lineární (sekvenční) vyhledávání",
+          "definition": "Procházíš prvky jeden po druhém od začátku, dokud hledaný nenajdeš. Funguje vždy, i na neseřazených datech.",
+          "example": "Hledáš kamaráda v řadě lidí tak, že se díváš na jednoho po druhém."
+        },
+        {
+          "type": "term",
+          "term": "Binární vyhledávání (půlení intervalu)",
+          "definition": "Funguje **jen na seřazených datech**. Podíváš se doprostřed. Je-li hledaná hodnota menší, pokračuješ v levé půlce, je-li větší, v pravé. Každý krok zmenší úsek na polovinu.",
+          "example": "Hra „myslím si číslo 1 až 100“, kde hádáš vždy polovinu."
+        },
+        {
+          "type": "term",
+          "term": "Časová složitost a zápis O",
+          "definition": "Jak roste počet kroků algoritmu, když roste počet prvků n. Zápis **O(…)** (velké O) popisuje tento růst v nejhorším případě, bez konstant.",
+          "example": "O(n): dvakrát víc prvků = zhruba dvakrát víc kroků."
+        },
+        {
+          "type": "term",
+          "term": "Logaritmus log₂ n",
+          "definition": "Kolikrát musíš n dělit dvěma, než dojdeš k 1. Roste velmi pomalu.",
+          "example": "log₂ 1 024 = 10, protože 2^10 = 1 024."
+        },
+        {
+          "type": "heading",
+          "text": "Binární vyhledávání krok za krokem"
+        },
+        {
+          "type": "text",
+          "text": "Hledáme 23 v seřazeném seznamu `[2, 5, 8, 12, 16, 23, 38, 56, 72, 91]` (indexy 0 až 9)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Krok",
+            "Úsek (indexy)",
+            "Prostředek `(od + do) // 2`",
+            "Hodnota",
+            "Rozhodnutí"
+          ],
+          "rows": [
+            [
+              "1",
+              "0–9",
+              "4",
+              "16",
+              "23 > 16 → vpravo"
+            ],
+            [
+              "2",
+              "5–9",
+              "7",
+              "56",
+              "23 < 56 → vlevo"
+            ],
+            [
+              "3",
+              "5–6",
+              "5",
+              "23",
+              "nalezeno"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stačily 3 porovnání. Lineární vyhledávání by potřebovalo 6."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "porovnání (nejhorší případ)",
+            "items": [
+              {
+                "label": "lineární, n = 1 000",
+                "value": 1000
+              },
+              {
+                "label": "binární, n = 1 000",
+                "value": 10
+              },
+              {
+                "label": "binární, n = 1 000 000",
+                "value": 20
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Podívej se na délky pruhů. Binární vyhledávání v milionu prvků potřebuje jen 20 porovnání, lineární až milion."
+        },
+        {
+          "type": "example",
+          "question": "Kolik porovnání nejvýš potřebuje binární vyhledávání v seřazeném seznamu 1 000 prvků?",
+          "answer": "Úsek se půlí: 1 000 → 500 → 250 → 125 → 63 → 32 → 16 → 8 → 4 → 2 → 1. Je to **10** kroků, protože 2^10 = 1 024 ≥ 1 000. Složitost O(log n)."
+        },
+        {
+          "type": "example",
+          "question": "Máš neseřazený seznam a hledáš v něm jednou jediné číslo. Které vyhledávání použiješ?",
+          "answer": "**Lineární**, O(n). Binární by vyžadovalo nejdřív seřadit, a třídění stojí víc než jedno lineární hledání."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Binárním vyhledáváním najdu prvek v jakémkoli seznamu.",
+          "right": "Binární vyhledávání funguje jen na seřazeném seznamu.",
+          "why": "Rozhodnutí „vlevo, nebo vpravo“ dává smysl jen tehdy, když vlevo jsou menší a vpravo větší hodnoty."
+        },
+        {
+          "type": "summary",
+          "text": "Lineární vyhledávání prochází prvky postupně, O(n), a funguje vždy. Binární půlí seřazený úsek, O(log n), a je u velkých dat mnohem rychlejší. Zápis O popisuje, jak roste počet kroků s n."
+        }
+      ]
+    },
+    {
+      "title": "Třídicí algoritmy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Učitel má na stole hromádku písemek a chce je seřadit podle abecedy. Jeden bere vždy tu „nejmenší“ a dává ji navrch. Jiný bere jednu po druhé a zasouvá ji na správné místo. Oba dojdou k cíli, ale ne stejně rychle."
+        },
+        {
+          "type": "text",
+          "text": "Třídicích algoritmů je mnoho. Ve škole se učí jednoduché, na kterých pochopíš princip a složitost, a jeden rychlý, který používají skutečné programy."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Třídění (řazení)",
+          "definition": "Uspořádání prvků podle velikosti, obvykle vzestupně (od nejmenšího).",
+          "example": "`[5, 2, 8, 1]` → `[1, 2, 5, 8]`"
+        },
+        {
+          "type": "term",
+          "term": "Časová složitost O(…)",
+          "definition": "Jak roste počet kroků, když roste počet prvků n, v nejhorším případě. O(n²): dvakrát víc prvků = zhruba čtyřikrát víc kroků.",
+          "example": "Pro n = 1 000 je n² milion kroků."
+        },
+        {
+          "type": "term",
+          "term": "Výměna (swap)",
+          "definition": "Prohození dvou prvků. V Pythonu jedním řádkem `a[i], a[j] = a[j], a[i]`.",
+          "example": "`[5, 2]` → `[2, 5]`"
+        },
+        {
+          "type": "term",
+          "term": "Rozděl a panuj",
+          "definition": "Způsob řešení: úlohu rozdělíš na menší části, ty vyřešíš (často rekurzí) a výsledky spojíš.",
+          "example": "Merge sort rozdělí seznam na půlky, seřadí je a slije."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled algoritmů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Algoritmus",
+            "Princip",
+            "Složitost"
+          ],
+          "rows": [
+            [
+              "bublinkové (bubble sort)",
+              "porovnává sousedy a prohazuje je; největší „probublá“ na konec",
+              "O(n²)"
+            ],
+            [
+              "přímý výběr (selection sort)",
+              "najde nejmenší ze zbytku a dá ho na začátek zbytku",
+              "O(n²)"
+            ],
+            [
+              "přímé vkládání (insertion sort)",
+              "bere prvky postupně a zasouvá je do už seřazené části",
+              "O(n²)"
+            ],
+            [
+              "slučováním (merge sort)",
+              "rozdělí na půlky, seřadí je a slije",
+              "O(n log n)"
+            ],
+            [
+              "rychlé (quicksort)",
+              "rozdělí podle pivota na menší a větší",
+              "průměrně O(n log n), nejhůř O(n²)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bublinkové třídění ručně"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`for i in range(len(a) - 1):`",
+            "`    for j in range(len(a) - 1 - i):`",
+            "`        if a[j] > a[j + 1]:`",
+            "`            a[j], a[j + 1] = a[j + 1], a[j]`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Start: [5, 2, 8, 1].",
+            "1. průchod: 5 > 2 prohoď, 5 < 8 nech, 8 > 1 prohoď → [2, 5, 1, 8]. Osmička je na konci.",
+            "2. průchod: 2 < 5 nech, 5 > 1 prohoď → [2, 1, 5, 8].",
+            "3. průchod: 2 > 1 prohoď → [1, 2, 5, 8]. Hotovo."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Seřaď přímým výběrem [5, 2, 8, 1]. Napiš stav po každém průchodu.",
+          "answer": "1. nejmenší je 1, prohoď s 5 → [1, 2, 8, 5]. 2. nejmenší ze zbytku [2, 8, 5] je 2, už je na místě → [1, 2, 8, 5]. 3. nejmenší z [8, 5] je 5, prohoď → **[1, 2, 5, 8]**."
+        },
+        {
+          "type": "example",
+          "question": "Bublinkové třídění seřadí 1 000 prvků zhruba za 1 s. Jak dlouho bude třídit 10 000 prvků?",
+          "answer": "O(n²): desetkrát víc prvků = zhruba **stokrát** víc kroků, tedy asi 100 s. Algoritmus O(n log n) by se zpomalil jen asi 13krát."
+        },
+        {
+          "type": "text",
+          "text": "V praxi nepíšeš třídění sám. Python má `sorted(a)` a `a.sort()`, které používají algoritmus Timsort se složitostí O(n log n)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když je n² u bublinkového třídění „jen“ o něco víc než n log n, na rychlosti nezáleží.",
+          "right": "Pro n = 1 000 000 je n² bilion kroků, n log₂ n jen asi 20 milionů.",
+          "why": "Rozdíl roste s velikostí dat. U malých seznamů ho nepoznáš, u velkých rozhoduje o minutách a dnech."
+        },
+        {
+          "type": "summary",
+          "text": "Jednoduché třídění (bublinkové, výběrem, vkládáním) má složitost O(n²). Merge sort a quicksort využívají „rozděl a panuj“ a mají O(n log n). V Pythonu třiď přes `sorted()`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká je časová složitost binárního vyhledávání?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je časová složitost bublinkového třídění v nejhorším případě?",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je podmínkou pro použití binárního vyhledávání?",
+      "options": [
+        "seznam musí být seřazený",
+        "seznam musí mít sudý počet prvků",
+        "prvky musí být čísla",
+        "seznam musí být kratší než 1 000"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik porovnání nejvýš potřebuje binární vyhledávání v seřazeném seznamu 1 000 prvků?",
+      "answers": [
+        "10"
+      ],
+      "hints": [
+        "Kolikrát musíš 1 000 vydělit dvěma, než dojdeš k 1?",
+        "Spočítej 2 na kolikátou je aspoň 1 000."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "V seřazeném seznamu s indexy 0 až 9 binárně hledáš prvek. Na jakém indexu je první prostředek, když se počítá `(od + do) // 2`?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "(0 + 9) // 2 = 4."
+    },
+    {
+      "type": "input",
+      "question": "Jak bude vypadat `[5, 2, 8, 1]` po prvním průchodu bublinkového třídění? (Zapiš jako seznam.)",
+      "answers": [
+        "[2, 5, 1, 8]",
+        "[2,5,1,8]"
+      ],
+      "hints": [
+        "Porovnávej sousední dvojice zleva a prohazuj, když je levý větší."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Algoritmus O(n²) zpracuje 1 000 prvků za 1 s. Kolik zhruba potrvá 10 000 prvků?",
+      "options": [
+        "100 s",
+        "10 s",
+        "20 s",
+        "1 000 s"
+      ],
+      "answer": 0,
+      "explanation": "Desetkrát víc prvků → 10² = stokrát víc kroků.",
+      "hints": [
+        "Jak se změní n², když n vynásobíš deseti?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Lineární vyhledávání funguje i na neseřazeném seznamu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Merge sort má složitost O(n log n).",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Quicksort má složitost O(n log n) vždy, i v nejhorším případě.",
+      "answer": false,
+      "explanation": "V nejhorším případě (špatně zvolený pivot) má O(n²)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj algoritmus s principem.",
+      "pairs": [
+        [
+          "bubble sort",
+          "prohazuje sousedy"
+        ],
+        [
+          "selection sort",
+          "vybírá nejmenší ze zbytku"
+        ],
+        [
+          "insertion sort",
+          "zasouvá do seřazené části"
+        ],
+        [
+          "merge sort",
+          "dělí na půlky a slévá"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď složitosti od nejrychlejší po nejpomalejší (pro velké n).",
+      "items": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)",
+        "O(n²)"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli princip binárního vyhledávání a proč je rychlejší než lineární.",
+      "answer": "Na seřazeném seznamu se podívám doprostřed a podle porovnání pokračuji jen v levé nebo pravé polovině. Každý krok úsek zmenší na půlku, proto stačí asi log₂ n kroků místo až n kroků u lineárního vyhledávání."
+    },
+    {
+      "type": "open",
+      "question": "Co vyjadřuje zápis O(n²)?",
+      "answer": "Že počet kroků algoritmu roste s druhou mocninou počtu prvků n (v nejhorším případě). Při dvojnásobku prvků je kroků zhruba čtyřikrát víc."
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "promenne-datove-typy",
+  "title": "Proměnné, datové typy, vstup a výstup",
+  "emoji": "📦",
+  "explanations": [
+    {
+      "title": "Krabičky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Program si potřebuje pamatovat věci: jméno uživatele, počet bodů ve hře, cenu nákupu. Pamatuje si je v **proměnných**. Představ si proměnnou jako krabičku se štítkem. Na štítku je jméno, uvnitř hodnota."
+        },
+        {
+          "type": "text",
+          "text": "V této části se naučíš první skutečné příkazy Pythonu: uložit hodnotu, spočítat něco, vypsat výsledek a načíst, co napíše uživatel. Z těchto kousků se skládá každý program."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Proměnná",
+          "definition": "Pojmenované místo v paměti, kam program uloží hodnotu. Hodnotu můžeš kdykoli přečíst nebo nahradit novou.",
+          "example": "`body = 10` vytvoří proměnnou `body` s hodnotou 10."
+        },
+        {
+          "type": "term",
+          "term": "Přiřazení `=`",
+          "definition": "Uloží hodnotu zprava do proměnné vlevo. Není to rovnost z matematiky, čti ho „ulož do“.",
+          "example": "`body = body + 5` vezme starou hodnotu 10, přičte 5 a uloží 15."
+        },
+        {
+          "type": "term",
+          "term": "Datový typ",
+          "definition": "Druh hodnoty. Určuje, co s hodnotou jde dělat. Čísla jde dělit, text ne.",
+          "example": "`10` je celé číslo, `\"10\"` je text."
+        },
+        {
+          "type": "term",
+          "term": "Funkce `print()` a `input()`",
+          "definition": "`print()` vypíše hodnotu na obrazovku (výstup). `input()` počká, až uživatel něco napíše a stiskne Enter, a vrátí to jako text (vstup).",
+          "example": "`jmeno = input(\"Jak se jmenuješ? \")`"
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři základní typy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Česky",
+            "Příklad",
+            "Poznámka"
+          ],
+          "rows": [
+            [
+              "`int`",
+              "celé číslo",
+              "`42`, `-7`",
+              "libovolně velké"
+            ],
+            [
+              "`float`",
+              "desetinné číslo",
+              "`3.14`, `2.0`",
+              "v kódu desetinná **tečka**"
+            ],
+            [
+              "`str`",
+              "řetězec (text)",
+              "`\"ahoj\"`, `'42'`",
+              "v uvozovkách"
+            ],
+            [
+              "`bool`",
+              "pravdivostní hodnota",
+              "`True`, `False`",
+              "velké první písmeno"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Typ hodnoty zjistíš funkcí `type()`. Například `type(3.0)` vrátí `float`."
+        },
+        {
+          "type": "heading",
+          "text": "Počítání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operátor",
+            "Význam",
+            "Příklad",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "`+` `-`",
+              "sčítání, odčítání",
+              "`7 - 2`",
+              "5"
+            ],
+            [
+              "`*`",
+              "násobení",
+              "`7 * 2`",
+              "14"
+            ],
+            [
+              "`/`",
+              "dělení (vždy `float`)",
+              "`7 / 2`",
+              "3.5"
+            ],
+            [
+              "`//`",
+              "celočíselné dělení",
+              "`7 // 2`",
+              "3"
+            ],
+            [
+              "`%`",
+              "zbytek po dělení (modulo)",
+              "`7 % 2`",
+              "1"
+            ],
+            [
+              "`**`",
+              "mocnina",
+              "`2 ** 3`",
+              "8"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Platí přednost jako v matematice: nejdřív mocnina, pak násobení a dělení, nakonec sčítání a odčítání. Závorky mají přednost před vším."
+        },
+        {
+          "type": "heading",
+          "text": "Načtení čísla od uživatele"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "`vek = input(\"Kolik ti je? \")` načte text, třeba `\"16\"`.",
+            "`vek = int(vek)` převede text na celé číslo 16. Převodu se říká **přetypování**.",
+            "`print(\"Za rok ti bude\", vek + 1)` vypíše `Za rok ti bude 17`."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše program `a = 5`, `a = a * 2`, `a = a - 3`, `print(a)`?",
+          "answer": "Postupně: a = 5 → a = 10 → a = 7. Vypíše **7**. Přiřazení vždy přepíše starou hodnotu novou."
+        },
+        {
+          "type": "example",
+          "question": "Uživatel zadá `4`. Co vypíše `x = input()` a pak `print(x * 3)`?",
+          "answer": "`input()` vrací text `\"4\"`. Násobit text číslem znamená opakovat ho: vypíše **444**. Kdybys chtěl 12, musíš napsat `x = int(input())`."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`cislo = input()` a pak `print(cislo + 1)` vypíše o jedna větší číslo.",
+          "right": "`cislo = int(input())` a pak `print(cislo + 1)`.",
+          "why": "`input()` vrací vždy řetězec. Řetězec a číslo nejde sečíst, Python ohlásí chybu `TypeError`."
+        },
+        {
+          "type": "summary",
+          "text": "Proměnná je pojmenovaná krabička na hodnotu, `=` do ní ukládá. Základní typy jsou `int`, `float`, `str` a `bool`. `input()` vrací vždy text, číslo z něj uděláš pomocí `int()` nebo `float()`."
+        }
+      ]
+    },
+    {
+      "title": "Program krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pokladna v obchodě načte cenu, vynásobí ji počtem kusů a vypíše, kolik platíš. Je to malý program: **vstup → výpočet → výstup**. Takhle vypadá skoro každý program, který napíšeš v prvních hodinách programování."
+        },
+        {
+          "type": "text",
+          "text": "Postavíš si ho krok za krokem a u každého řádku uvidíš, co se děje v paměti počítače."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Proměnná",
+          "definition": "Jméno, pod kterým si program pamatuje hodnotu. Jméno začíná písmenem nebo `_`, nesmí obsahovat mezery a záleží v něm na velikosti písmen.",
+          "example": "`cena`, `pocet_kusu`, `Cena` (to je jiná proměnná než `cena`)."
+        },
+        {
+          "type": "term",
+          "term": "Výraz",
+          "definition": "Kus kódu, který Python spočítá na jednu hodnotu.",
+          "example": "`cena * pocet` je výraz. Když cena = 25 a počet = 3, má hodnotu 75."
+        },
+        {
+          "type": "term",
+          "term": "Datový typ",
+          "definition": "Druh hodnoty: `int` celé číslo, `float` desetinné číslo, `str` text, `bool` pravda/nepravda (`True`/`False`).",
+          "example": "`25` je `int`, `25.0` je `float`, `\"25\"` je `str`."
+        },
+        {
+          "type": "term",
+          "term": "Přetypování",
+          "definition": "Převod hodnoty na jiný typ funkcí `int()`, `float()`, `str()` nebo `bool()`.",
+          "example": "`int(\"25\")` je číslo 25, `str(25)` je text `\"25\"`, `int(3.9)` je 3 (desetinná část se usekne, nezaokrouhluje)."
+        },
+        {
+          "type": "term",
+          "term": "f-řetězec",
+          "definition": "Text s `f` před uvozovkami. Do složených závorek `{}` vložíš proměnnou nebo výraz a Python dosadí jeho hodnotu.",
+          "example": "`f\"Platíš {cena} Kč\"` vypíše `Platíš 75 Kč`."
+        },
+        {
+          "type": "heading",
+          "text": "Pokladna"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`cena = float(input(\"Cena za kus: \"))`",
+            "`pocet = int(input(\"Počet kusů: \"))`",
+            "`celkem = cena * pocet`",
+            "`print(f\"Celkem zaplatíš {celkem} Kč\")`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Uživatel zadá cenu `12.5` a počet `4`. Sleduj, co je v paměti po každém řádku:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Řádek",
+            "cena",
+            "pocet",
+            "celkem"
+          ],
+          "rows": [
+            [
+              "1",
+              "12.5",
+              "–",
+              "–"
+            ],
+            [
+              "2",
+              "12.5",
+              "4",
+              "–"
+            ],
+            [
+              "3",
+              "12.5",
+              "4",
+              "50.0"
+            ],
+            [
+              "4",
+              "12.5",
+              "4",
+              "50.0 (vypíše se)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Výsledek je `50.0`, ne `50`. Když v násobení je aspoň jedno desetinné číslo (`float`), je i výsledek `float`."
+        },
+        {
+          "type": "heading",
+          "text": "Dělení a zbytek"
+        },
+        {
+          "type": "text",
+          "text": "Python má tři operátory pro dělení. `/` dělí přesně a výsledek je vždy `float`. `//` dělí celočíselně (zaokrouhlí dolů). `%` vrátí zbytek."
+        },
+        {
+          "type": "example",
+          "question": "Máš 17 bonbonů a rozdělíš je 5 dětem. Kolik dostane každé a kolik zbude?",
+          "answer": "`17 // 5` = **3** bonbony pro každé dítě. `17 % 5` = **2** bonbony zbydou. Kontrola: 5 · 3 + 2 = 17."
+        },
+        {
+          "type": "example",
+          "question": "Kolik je `2 + 3 * 4` a `(2 + 3) * 4`?",
+          "answer": "Násobení má přednost: 2 + 12 = **14**. Se závorkou se nejdřív sčítá: 5 · 4 = **20**."
+        },
+        {
+          "type": "text",
+          "text": "Doplň výsledky. Zkus to nejdřív v hlavě, až pak klepni."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "7 / 2 je ",
+                "after": "",
+                "options": [
+                  "3.5",
+                  "3",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "7 // 2 je ",
+                "after": "",
+                "options": [
+                  "3.5",
+                  "3",
+                  "1"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "7 % 2 je ",
+                "after": "",
+                "options": [
+                  "3.5",
+                  "3",
+                  "1"
+                ],
+                "answer": 2
+              },
+              {
+                "before": "type(\"7\") je ",
+                "after": "",
+                "options": [
+                  "int",
+                  "str",
+                  "float"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "`x = 5` znamená, že x se rovná 5 navždy, a `x = x + 1` je nesmysl, protože 5 ≠ 6.",
+          "right": "`x = x + 1` vezme starou hodnotu x, přičte 1 a výsledek uloží zpět do x.",
+          "why": "`=` je přiřazení, ne rovnost. Porovnání se v Pythonu píše `==`."
+        },
+        {
+          "type": "summary",
+          "text": "Program načte vstup, spočítá výraz a vypíše výstup. `input()` vrací text, převeď ho přes `int()` nebo `float()`. `/` dává `float`, `//` celou část a `%` zbytek."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Co vypíše `print(7 // 2)`?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Celočíselné dělení zahodí desetinnou část."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(17 % 5)`?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "17 = 3 · 5 + 2, zbytek je 2.",
+      "hints": [
+        "Kolikrát se 5 vejde do 17? Co zbude?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(2 ** 3)`?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "`**` je mocnina: 2 · 2 · 2."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(\"3\" + \"4\")`?",
+      "answers": [
+        "34"
+      ],
+      "explanation": "Sčítání řetězců je spojení, ne počítání.",
+      "hints": [
+        "Jsou to čísla, nebo texty? Všimni si uvozovek."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `a = 5`, `a = a * 2`, `a = a - 3`, `print(a)`?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "5 → 10 → 7."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(10 / 5)`?",
+      "answers": [
+        "2.0",
+        "2,0"
+      ],
+      "explanation": "Operátor `/` vrací vždy desetinné číslo (`float`)."
+    },
+    {
+      "type": "choice",
+      "question": "Jakého typu je hodnota, kterou vrací `input()`?",
+      "options": [
+        "str",
+        "int",
+        "float",
+        "podle toho, co uživatel napíše"
+      ],
+      "answer": 0,
+      "explanation": "`input()` vrací vždy řetězec, i když uživatel napíše číslo."
+    },
+    {
+      "type": "choice",
+      "question": "Které jméno proměnné je v Pythonu neplatné?",
+      "options": [
+        "`2pocet`",
+        "`pocet2`",
+        "`_pocet`",
+        "`pocetKusu`"
+      ],
+      "answer": 0,
+      "explanation": "Jméno nesmí začínat číslicí.",
+      "hints": [
+        "Čím smí jméno proměnné začínat?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co vrátí `int(3.9)`?",
+      "options": [
+        "3",
+        "4",
+        "3.9",
+        "chybu"
+      ],
+      "answer": 0,
+      "explanation": "`int()` desetinnou část usekne, nezaokrouhluje."
+    },
+    {
+      "type": "truefalse",
+      "question": "V Pythonu jsou `cena` a `Cena` dvě různé proměnné.",
+      "answer": true,
+      "explanation": "Python rozlišuje velká a malá písmena."
+    },
+    {
+      "type": "truefalse",
+      "question": "`x = x + 1` je chyba, protože x se nemůže rovnat x + 1.",
+      "answer": false,
+      "explanation": "`=` je přiřazení: do x se uloží jeho stará hodnota zvětšená o 1."
+    },
+    {
+      "type": "match",
+      "question": "Spoj hodnotu s jejím typem.",
+      "pairs": [
+        [
+          "`42`",
+          "int"
+        ],
+        [
+          "`4.2`",
+          "float"
+        ],
+        [
+          "`\"42\"`",
+          "str"
+        ],
+        [
+          "`True`",
+          "bool"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď řádky programu, který načte dvě čísla a vypíše jejich součet.",
+      "items": [
+        "`a = int(input())`",
+        "`b = int(input())`",
+        "`s = a + b`",
+        "`print(s)`"
+      ],
+      "hints": [
+        "Proměnnou můžeš použít až poté, co do ní něco uložíš."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč program `x = input()` a `print(x + 1)` skončí chybou a jak ho opravit?",
+      "answer": "`input()` vrací řetězec a řetězec nejde sečíst s číslem (TypeError). Opravíš ho přetypováním: `x = int(input())`."
+    }
+  ]
+}

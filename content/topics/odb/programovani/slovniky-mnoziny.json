@@ -1,0 +1,462 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "slovniky-mnoziny",
+  "title": "Slovníky a množiny",
+  "emoji": "📖",
+  "explanations": [
+    {
+      "title": "Telefonní seznam",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V telefonu nehledáš číslo podle pořadí („dej mi 57. kontakt“). Hledáš podle jména: „Máma“. Jméno je klíč, číslo je hodnota, která k němu patří."
+        },
+        {
+          "type": "text",
+          "text": "Přesně tak funguje **slovník** v Pythonu. Hodí se všude, kde k něčemu patří něco jiného: zboží → cena, žák → známka, slovo → překlad. A druhá užitečná struktura, **množina**, hlídá, aby se nic neopakovalo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Slovník (dict)",
+          "definition": "Kolekce dvojic **klíč: hodnota** ve složených závorkách. Hodnotu najdeš podle klíče, ne podle pořadí.",
+          "example": "`ceny = {\"jablko\": 25, \"hruska\": 30}`"
+        },
+        {
+          "type": "term",
+          "term": "Klíč",
+          "definition": "Jednoznačné „jméno“ hodnoty ve slovníku. Každý klíč je ve slovníku nejvýš jednou. Klíčem bývá řetězec nebo číslo (musí být neměnný).",
+          "example": "`\"jablko\"`"
+        },
+        {
+          "type": "term",
+          "term": "Hodnota",
+          "definition": "Údaj, který patří ke klíči. Hodnoty se opakovat smí a mohou být libovolného typu.",
+          "example": "`25`"
+        },
+        {
+          "type": "term",
+          "term": "Množina (set)",
+          "definition": "Neuspořádaná kolekce, ve které je každý prvek **jen jednou**. Píše se do složených závorek bez dvojteček.",
+          "example": "`{1, 2, 2, 3}` je ve skutečnosti `{1, 2, 3}`."
+        },
+        {
+          "type": "heading",
+          "text": "Práce se slovníkem"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zápis",
+            "Co udělá",
+            "ceny = {\"jablko\": 25, \"hruska\": 30}"
+          ],
+          "rows": [
+            [
+              "`ceny[\"jablko\"]`",
+              "hodnota pro klíč",
+              "25"
+            ],
+            [
+              "`ceny[\"banan\"] = 10`",
+              "přidá novou dvojici",
+              "3 dvojice"
+            ],
+            [
+              "`ceny[\"jablko\"] = 20`",
+              "přepíše hodnotu existujícího klíče",
+              "jablko stojí 20"
+            ],
+            [
+              "`del ceny[\"hruska\"]`",
+              "smaže dvojici",
+              "hruška zmizí"
+            ],
+            [
+              "`\"hruska\" in ceny`",
+              "je tam klíč?",
+              "True"
+            ],
+            [
+              "`ceny.get(\"kiwi\", 0)`",
+              "hodnota, nebo náhradní hodnota",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Průchod slovníkem"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`for zbozi, cena in ceny.items():`",
+            "`    print(f\"{zbozi}: {cena} Kč\")`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Metoda `items()` dává dvojice klíč–hodnota. Samotné `for k in ceny:` prochází jen klíče."
+        },
+        {
+          "type": "example",
+          "question": "Spočítej, kolikrát se v seznamu `[\"a\", \"b\", \"a\", \"c\", \"a\"]` opakuje každé písmeno.",
+          "answer": "`pocty = {}`, pak `for p in seznam:` → `pocty[p] = pocty.get(p, 0) + 1`. `get` vrátí dosavadní počet, nebo 0, když písmeno ještě nebylo. Výsledek: **{'a': 3, 'b': 1, 'c': 1}**."
+        },
+        {
+          "type": "example",
+          "question": "Co se stane po `ceny[\"kiwi\"]`, když kiwi ve slovníku není?",
+          "answer": "Chyba **KeyError**. Bezpečně: `if \"kiwi\" in ceny:` nebo `ceny.get(\"kiwi\")`, které vrátí `None`."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`ceny[0]` vrátí první dvojici ze slovníku.",
+          "right": "Hodnotu získáš přes klíč: `ceny[\"jablko\"]`.",
+          "why": "Slovník se neindexuje pořadím, ale klíči. `ceny[0]` hledá klíč 0 a skončí chybou KeyError."
+        },
+        {
+          "type": "summary",
+          "text": "Slovník ukládá dvojice klíč: hodnota a hodnotu najdeš podle klíče. Klíče jsou jedinečné. `get` vrátí náhradní hodnotu místo chyby, `items()` dává dvojice pro cyklus."
+        }
+      ]
+    },
+    {
+      "title": "Kdy co použít",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kuchař má šuplíky na příbory, kořenky se jmény a misku na zbytky. Každá nádoba se hodí na něco jiného. V Pythonu jsou čtyři základní „nádoby“ na data a dobrý programátor ví, kterou kdy vzít."
+        },
+        {
+          "type": "text",
+          "text": "Tady porovnáš seznam, n-tici, slovník a množinu. Hlavně se naučíš množiny a jejich operace, které znáš z matematiky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kolekce",
+          "definition": "Datová struktura, která v jedné proměnné drží víc hodnot.",
+          "example": "seznam, n-tice, slovník, množina"
+        },
+        {
+          "type": "term",
+          "term": "Slovník",
+          "definition": "Dvojice klíč: hodnota v `{ }`. Hledá se podle klíče, klíče se neopakují.",
+          "example": "`{\"CZ\": \"Praha\", \"SK\": \"Bratislava\"}`"
+        },
+        {
+          "type": "term",
+          "term": "Množina",
+          "definition": "Prvky v `{ }` bez opakování a bez pořadí. Nemá indexy. Prázdná množina je `set()`, protože `{}` je prázdný slovník.",
+          "example": "`set(\"banan\")` je `{'b', 'a', 'n'}` (pořadí může být jiné)."
+        },
+        {
+          "type": "term",
+          "term": "N-tice (tuple)",
+          "definition": "Jako seznam, ale v kulatých závorkách a **neměnná**. Hodí se na údaje, které k sobě pevně patří.",
+          "example": "`bod = (3, 4)`"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Struktura",
+            "Zápis",
+            "Pořadí",
+            "Opakování",
+            "Měnitelná",
+            "Hledání"
+          ],
+          "rows": [
+            [
+              "seznam",
+              "`[1, 2]`",
+              "ano",
+              "ano",
+              "ano",
+              "podle indexu"
+            ],
+            [
+              "n-tice",
+              "`(1, 2)`",
+              "ano",
+              "ano",
+              "ne",
+              "podle indexu"
+            ],
+            [
+              "slovník",
+              "`{\"a\": 1}`",
+              "pořadí vložení",
+              "klíče ne",
+              "ano",
+              "podle klíče"
+            ],
+            [
+              "množina",
+              "`{1, 2}`",
+              "ne",
+              "ne",
+              "ano",
+              "jen „je tam?“"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Operace s množinami"
+        },
+        {
+          "type": "text",
+          "text": "Pro `a = {1, 2, 3}` a `b = {2, 3, 4}`:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operace",
+            "Zápis",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "sjednocení (vše z obou)",
+              "`a | b`",
+              "{1, 2, 3, 4}"
+            ],
+            [
+              "průnik (v obou)",
+              "`a & b`",
+              "{2, 3}"
+            ],
+            [
+              "rozdíl (v a, ne v b)",
+              "`a - b`",
+              "{1}"
+            ],
+            [
+              "symetrický rozdíl (jen v jedné)",
+              "`a ^ b`",
+              "{1, 4}"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kolik různých čísel je v seznamu `[1, 1, 2, 2, 3]`?",
+          "answer": "`len(set([1, 1, 2, 2, 3]))`. Množina zahodí opakování: {1, 2, 3}, tedy **3**."
+        },
+        {
+          "type": "example",
+          "question": "Které předměty mají Eva i Petr? Eva: {\"M\", \"ČJ\", \"IT\"}, Petr: {\"IT\", \"AJ\", \"M\"}.",
+          "answer": "Průnik `eva & petr` = **{\"M\", \"IT\"}**."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď úlohy podle toho, která struktura se na ně hodí nejlépe."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "seznam",
+              "slovník",
+              "množina"
+            ],
+            "items": [
+              {
+                "text": "pořadí hráčů v závodě",
+                "group": 0
+              },
+              {
+                "text": "cena podle názvu zboží",
+                "group": 1
+              },
+              {
+                "text": "které země už jsi navštívil",
+                "group": 2
+              },
+              {
+                "text": "překlad slova",
+                "group": 1
+              },
+              {
+                "text": "známky v pořadí, jak přišly",
+                "group": 0
+              },
+              {
+                "text": "různá slova v textu",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "`prazdna = {}` vytvoří prázdnou množinu.",
+          "right": "`prazdna = set()`",
+          "why": "Složené závorky bez obsahu znamenají prázdný **slovník**, protože slovník byl v Pythonu dřív."
+        },
+        {
+          "type": "summary",
+          "text": "Seznam = pořadí, slovník = hledání podle klíče, množina = jedinečné prvky bez pořadí, n-tice = neměnný seznam. Množiny umí sjednocení `|`, průnik `&` a rozdíl `-`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "`d = {\"jablko\": 25, \"hruska\": 30}`. Co vrátí `d[\"jablko\"]`?",
+      "answers": [
+        "25"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`d = {\"jablko\": 25}`. Co vrátí `d.get(\"banan\", 0)`?",
+      "answers": [
+        "0"
+      ],
+      "explanation": "Klíč chybí, vrátí se náhradní hodnota."
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `len({1, 1, 2, 2, 3})`?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Množina drží každý prvek jen jednou.",
+      "hints": [
+        "Zbav se opakujících se prvků."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co je `{1, 2, 3} & {2, 3, 4}`? (Zapiš jako množinu.)",
+      "answers": [
+        "{2, 3}",
+        "{2,3}",
+        "{3, 2}",
+        "{3,2}"
+      ],
+      "explanation": "Průnik = prvky, které jsou v obou.",
+      "hints": [
+        "`&` je průnik."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co je `{1, 2, 3} - {2, 3, 4}`? (Zapiš jako množinu.)",
+      "answers": [
+        "{1}"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane po `d[\"kiwi\"]`, když klíč „kiwi“ ve slovníku není?",
+      "options": [
+        "chyba KeyError",
+        "vrátí `None`",
+        "vrátí 0",
+        "přidá kiwi do slovníku"
+      ],
+      "answer": 0,
+      "hints": [
+        "Rozlišuj zápis s hranatými závorkami a metodu `get`."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak vytvoříš prázdnou množinu?",
+      "options": [
+        "`set()`",
+        "`{}`",
+        "`[]`",
+        "`()`"
+      ],
+      "answer": 0,
+      "explanation": "`{}` je prázdný slovník."
+    },
+    {
+      "type": "choice",
+      "question": "Která struktura je nejvhodnější pro překladový slovník čeština → angličtina?",
+      "options": [
+        "slovník",
+        "množina",
+        "seznam",
+        "n-tice"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slovníku mohou být dva stejné klíče s různými hodnotami.",
+      "answer": false,
+      "explanation": "Klíč je jedinečný; nové přiřazení přepíše starou hodnotu."
+    },
+    {
+      "type": "truefalse",
+      "question": "N-tici `(3, 4)` nejde po vytvoření změnit.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Prvky množiny mají indexy, takže `m[0]` vrátí první prvek.",
+      "answer": false,
+      "explanation": "Množina nemá pořadí ani indexy."
+    },
+    {
+      "type": "match",
+      "question": "Spoj množinovou operaci se zápisem.",
+      "pairs": [
+        [
+          "sjednocení",
+          "`a | b`"
+        ],
+        [
+          "průnik",
+          "`a & b`"
+        ],
+        [
+          "rozdíl",
+          "`a - b`"
+        ],
+        [
+          "symetrický rozdíl",
+          "`a ^ b`"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak spočítat výskyty slov v textu.",
+      "items": [
+        "vytvoř prázdný slovník",
+        "rozděl text na slova `split()`",
+        "pro každé slovo zvyš jeho počet o 1",
+        "vypiš slovník"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ slovník a kdy seznam?",
+      "answer": "Seznam, když záleží na pořadí a prvky hledám podle pozice. Slovník, když k nějakému klíči (jménu, kódu) patří hodnota a hledám ji podle klíče."
+    }
+  ]
+}

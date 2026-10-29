@@ -1,0 +1,442 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "podminky",
+  "title": "Podmínky a logické operátory",
+  "emoji": "🔀",
+  "explanations": [
+    {
+      "title": "Rozcestí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Stojíš na rozcestí. Když prší, jdeš autobusem. Jinak jdeš pěšky. Takové rozhodování dělá i program: podle situace provede jednu nebo druhou část kódu."
+        },
+        {
+          "type": "text",
+          "text": "Bez podmínek by program dělal pořád totéž. S nimi umí zkontrolovat heslo, ohodnotit test nebo poznat, že hráč prohrál."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podmínka",
+          "definition": "Otázka, na kterou je odpověď `True` (pravda), nebo `False` (nepravda). Hodnotám `True` a `False` se říká pravdivostní hodnoty, typ `bool`.",
+          "example": "`teplota < 0` je `True`, když mrzne."
+        },
+        {
+          "type": "term",
+          "term": "Větvení `if` / `else`",
+          "definition": "Když podmínka za `if` platí, provede se blok pod ním. Jinak se provede blok pod `else`.",
+          "example": "`if teplota < 0:` → `print(\"Mrzne\")`, `else:` → `print(\"Nemrzne\")`"
+        },
+        {
+          "type": "term",
+          "term": "Odsazení",
+          "definition": "Řádky, které patří do bloku `if`, musí být odsazené (obvykle 4 mezery). Odsazením Python pozná, kde blok začíná a končí. Řádek za `if` končí dvojtečkou.",
+          "example": "Neodsazený řádek za blokem se provede vždy."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnávání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Operátor",
+            "Význam",
+            "Příklad (x = 5)",
+            "Výsledek"
+          ],
+          "rows": [
+            [
+              "`==`",
+              "rovná se",
+              "`x == 5`",
+              "True"
+            ],
+            [
+              "`!=`",
+              "nerovná se",
+              "`x != 5`",
+              "False"
+            ],
+            [
+              "`<` `>`",
+              "menší, větší",
+              "`x > 3`",
+              "True"
+            ],
+            [
+              "`<=` `>=`",
+              "menší nebo rovno, větší nebo rovno",
+              "`x <= 4`",
+              "False"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "První program s podmínkou"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`vek = int(input(\"Věk: \"))`",
+            "`if vek >= 18:`",
+            "`    print(\"Jsi plnoletý.\")`",
+            "`else:`",
+            "`    print(\"Ještě nejsi plnoletý.\")`",
+            "`print(\"Konec\")`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pro věk 20 vypíše „Jsi plnoletý.“ a „Konec“. Pro věk 15 vypíše „Ještě nejsi plnoletý.“ a „Konec“. Poslední řádek není odsazený, proto se provede pokaždé."
+        },
+        {
+          "type": "example",
+          "question": "Uživatel zadá 7. Co vypíše program: `if x % 2 == 0:` → `print(\"sudé\")`, `else:` → `print(\"liché\")`?",
+          "answer": "7 % 2 je 1. Podmínka `1 == 0` je False, provede se větev `else`: vypíše **liché**."
+        },
+        {
+          "type": "example",
+          "question": "Kdy je podmínka `heslo == \"Tajne123\"` pravdivá?",
+          "answer": "Jen když se text shoduje úplně přesně, i ve velikosti písmen. Pro `\"tajne123\"` je False."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`if x = 5:`",
+          "right": "`if x == 5:`",
+          "why": "Jedno `=` je přiřazení (ulož), dvě `==` porovnání (rovná se?). Python `if x = 5:` odmítne jako syntaktickou chybu."
+        },
+        {
+          "type": "summary",
+          "text": "`if` provede blok, když podmínka platí, `else` když neplatí. Řádek s `if` končí dvojtečkou a blok je odsazený. Porovnání je `==`, ne `=`."
+        }
+      ]
+    },
+    {
+      "title": "Více větví",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Učitel převádí body z testu na známku. 90 a víc je jednička, 75 a víc dvojka, 50 a víc trojka, jinak pětka. Tady nestačí dvě cesty, potřebuješ jich víc. A často musí platit víc věcí najednou: do kina smíš, když máš lístek **a** je ti aspoň 15."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se `elif` pro víc větví a logické operátory `and`, `or` a `not`, kterými skládáš podmínky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podmínka",
+          "definition": "Výraz, jehož výsledek je `True` nebo `False` (typ `bool`). Vzniká hlavně porovnáním: `==`, `!=`, `<`, `>`, `<=`, `>=`.",
+          "example": "`body >= 90`"
+        },
+        {
+          "type": "term",
+          "term": "`elif`",
+          "definition": "Zkratka „else if“. Další podmínka, která se zkouší, jen když všechny předchozí neplatily. Provede se **jen první** větev, jejíž podmínka platí.",
+          "example": "`if a: …`, `elif b: …`, `else: …`"
+        },
+        {
+          "type": "term",
+          "term": "Logické operátory",
+          "definition": "`and` (a zároveň): pravda, jen když platí obě části. `or` (nebo): pravda, když platí aspoň jedna. `not` (ne): obrátí pravdu na nepravdu a naopak.",
+          "example": "`vek >= 15 and ma_listek`"
+        },
+        {
+          "type": "term",
+          "term": "Pravdivostní tabulka",
+          "definition": "Tabulka všech kombinací hodnot a výsledku logického operátoru.",
+          "example": "Pro `and` je jen jeden řádek True: True and True."
+        },
+        {
+          "type": "table",
+          "head": [
+            "A",
+            "B",
+            "A and B",
+            "A or B",
+            "not A"
+          ],
+          "rows": [
+            [
+              "True",
+              "True",
+              "True",
+              "True",
+              "False"
+            ],
+            [
+              "True",
+              "False",
+              "False",
+              "True",
+              "False"
+            ],
+            [
+              "False",
+              "True",
+              "False",
+              "True",
+              "True"
+            ],
+            [
+              "False",
+              "False",
+              "False",
+              "False",
+              "True"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Převod bodů na známku"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`if body >= 90:`",
+            "`    znamka = 1`",
+            "`elif body >= 75:`",
+            "`    znamka = 2`",
+            "`elif body >= 50:`",
+            "`    znamka = 3`",
+            "`else:`",
+            "`    znamka = 5`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Python zkusí první podmínku. Platí? Provede její blok a zbytek přeskočí.",
+            "Neplatí? Zkusí první `elif`. Pak další.",
+            "Když neplatí žádná, provede `else`.",
+            "Vždy se provede právě jedna větev."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jakou známku dostane žák se 72 body?",
+          "answer": "72 >= 90? Ne. 72 >= 75? Ne. 72 >= 50? Ano → **znamka = 3**. Další větve se už nezkouší."
+        },
+        {
+          "type": "example",
+          "question": "Platí `vek >= 15 and ma_listek`, když `vek = 16` a `ma_listek = False`?",
+          "answer": "16 >= 15 je True, `ma_listek` je False. True and False = **False**. Do kina nesmí."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď výrazy podle výsledku. U `and` musí platit obě strany, u `or` stačí jedna."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "True",
+              "False"
+            ],
+            "items": [
+              {
+                "text": "`5 > 3 and 2 > 1`",
+                "group": 0
+              },
+              {
+                "text": "`5 > 3 and 2 > 4`",
+                "group": 1
+              },
+              {
+                "text": "`5 < 3 or 2 > 1`",
+                "group": 0
+              },
+              {
+                "text": "`not 5 > 3`",
+                "group": 1
+              },
+              {
+                "text": "`3 == 3.0`",
+                "group": 0
+              },
+              {
+                "text": "`5 != 5`",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pořadí `if body >= 50` → 3, `elif body >= 75` → 2, `elif body >= 90` → 1.",
+          "right": "Začni nejpřísnější podmínkou: `>= 90`, pak `>= 75`, pak `>= 50`.",
+          "why": "Provede se jen první platná větev. Pro 95 bodů by platilo už `>= 50` a žák by dostal trojku."
+        },
+        {
+          "type": "summary",
+          "text": "`elif` přidává další větve, provede se jen první platná. `and` chce obě podmínky, `or` aspoň jednu, `not` obrací pravdu. U rozsahů řaď podmínky od nejpřísnější."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Co vypíše `print(5 > 3 and 2 > 4)`?",
+      "answers": [
+        "False"
+      ],
+      "explanation": "Druhá část je nepravdivá a `and` potřebuje obě."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(5 > 3 or 2 > 4)`?",
+      "answers": [
+        "True"
+      ],
+      "explanation": "U `or` stačí jedna pravdivá část."
+    },
+    {
+      "type": "input",
+      "question": "`x = 15`. Co vypíše `if x > 10: print(\"A\")`, `elif x > 5: print(\"B\")`, `else: print(\"C\")`?",
+      "answers": [
+        "A"
+      ],
+      "explanation": "Platí už první podmínka, další větve se nezkouší.",
+      "hints": [
+        "Projdi podmínky shora a zastav se u první pravdivé."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Body = 72. Jakou známku vrátí program 90 → 1, 75 → 2, 50 → 3, jinak 5?",
+      "answers": [
+        "3"
+      ],
+      "hints": [
+        "Zkoušej podmínky odshora: `>= 90`, `>= 75`, `>= 50`."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým operátorem se v Pythonu porovnává rovnost?",
+      "options": [
+        "`==`",
+        "`=`",
+        "`===`",
+        "`:=`"
+      ],
+      "answer": 0,
+      "explanation": "Jedno `=` je přiřazení."
+    },
+    {
+      "type": "choice",
+      "question": "Čím končí řádek s `if` v Pythonu?",
+      "options": [
+        "dvojtečkou",
+        "středníkem",
+        "složenou závorkou",
+        "ničím"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kolik větví se provede v řetězci `if`/`elif`/`else`?",
+      "options": [
+        "právě jedna",
+        "všechny platné",
+        "nejvýš dvě",
+        "žádná, pokud neplatí `if`"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co se stane se zbytkem větví, když jedna podmínka platí?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "`not True or True` má hodnotu True.",
+      "answer": true,
+      "explanation": "`not` má přednost: False or True = True."
+    },
+    {
+      "type": "truefalse",
+      "question": "Řádek bez odsazení za blokem `if` se provede jen tehdy, když podmínka platí.",
+      "answer": false,
+      "explanation": "Neodsazený řádek už do bloku nepatří, provede se vždy."
+    },
+    {
+      "type": "match",
+      "question": "Spoj výraz s výsledkem (x = 4).",
+      "pairs": [
+        [
+          "`x % 2 == 0`",
+          "True"
+        ],
+        [
+          "`x > 4`",
+          "False"
+        ],
+        [
+          "`x >= 4 and x < 10`",
+          "True"
+        ],
+        [
+          "`not x == 4`",
+          "False"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď podmínky pro převod bodů na známku tak, aby program fungoval správně.",
+      "items": [
+        "`if body >= 90:`",
+        "`elif body >= 75:`",
+        "`elif body >= 50:`",
+        "`else:`"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která podmínka zjistí, že číslo n je dělitelné třemi?",
+      "options": [
+        "`n % 3 == 0`",
+        "`n / 3 == 0`",
+        "`n // 3 == 0`",
+        "`n % 3 == 1`"
+      ],
+      "answer": 0,
+      "explanation": "Dělitelné znamená zbytek 0.",
+      "hints": [
+        "Který operátor vrací zbytek po dělení?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi `=` a `==` v Pythonu.",
+      "answer": "`=` je přiřazení, uloží hodnotu do proměnné. `==` porovnává dvě hodnoty a vrací True nebo False."
+    },
+    {
+      "type": "open",
+      "question": "Proč záleží na pořadí podmínek v řetězci `if`/`elif`?",
+      "answer": "Provede se jen první větev, jejíž podmínka platí. Když dáš volnější podmínku první (např. `>= 50` před `>= 90`), přísnější větve se nikdy neprovedou."
+    }
+  ]
+}

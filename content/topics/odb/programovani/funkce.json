@@ -1,0 +1,382 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "funkce",
+  "title": "Funkce a parametry",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Kuchyňský robot",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kuchyňský robot má tlačítko „Šlehat“. Dáš do něj vajíčka a cukr, zmáčkneš ho a dostaneš pěnu. Nemusíš vědět, jak uvnitř funguje motor. Stačí vědět, co dovnitř dát a co dostaneš ven."
+        },
+        {
+          "type": "text",
+          "text": "Funkce v programu je takové tlačítko. Kus kódu jednou napíšeš, pojmenuješ a pak ho voláš, kolikrát chceš. Program je kratší, přehlednější a chybu opravíš na jednom místě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Funkce",
+          "definition": "Pojmenovaný kus kódu, který udělá jednu úlohu. Spustí se, když ji **zavoláš** jejím jménem a závorkami.",
+          "example": "`print()`, `len()` a `input()` jsou funkce, které už Python má."
+        },
+        {
+          "type": "term",
+          "term": "Definice funkce `def`",
+          "definition": "Řádek `def jmeno(parametry):` vytvoří novou funkci. Pod ním je odsazené tělo. Definice sama nic neprovede, funkce se spustí až voláním.",
+          "example": "`def pozdrav():` → `print(\"Ahoj\")`"
+        },
+        {
+          "type": "term",
+          "term": "Parametr a argument",
+          "definition": "**Parametr** je proměnná v hlavičce funkce, do které funkce dostane vstup. **Argument** je konkrétní hodnota, kterou předáš při volání.",
+          "example": "V `def obsah(a, b):` jsou `a`, `b` parametry. Ve volání `obsah(3, 4)` jsou 3 a 4 argumenty."
+        },
+        {
+          "type": "term",
+          "term": "Návratová hodnota `return`",
+          "definition": "`return` funkci ukončí a vrátí výsledek tam, odkud byla zavolána. Výsledek můžeš uložit do proměnné nebo s ním dál počítat.",
+          "example": "`def dvakrat(n): return n * 2` – `dvakrat(5)` vrátí 10."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "📥",
+            "⚙️",
+            "📤"
+          ],
+          "caption": "argumenty dovnitř → tělo funkce → návratová hodnota ven"
+        },
+        {
+          "type": "heading",
+          "text": "Funkce krok za krokem"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`def obsah_obdelniku(a, b):`",
+            "`    s = a * b`",
+            "`    return s`",
+            " ",
+            "`vysledek = obsah_obdelniku(3, 4)`",
+            "`print(vysledek)`"
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Python si zapamatuje definici funkce, ale nic nespustí.",
+            "Na řádku s voláním skočí do funkce: `a = 3`, `b = 4`.",
+            "Spočítá `s = 12` a `return` vrátí 12.",
+            "Hodnota 12 se uloží do `vysledek` a `print` ji vypíše."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše `def dvakrat(n): return n * 2` a pak `print(dvakrat(dvakrat(3)))`?",
+          "answer": "Nejdřív se spočítá vnitřní volání: `dvakrat(3)` = 6. Pak `dvakrat(6)` = **12**."
+        },
+        {
+          "type": "example",
+          "question": "Napiš funkci, která vrátí větší ze dvou čísel.",
+          "answer": "`def vetsi(a, b):` → `if a > b: return a` → `return b`. Když je `a` větší, první `return` funkci ukončí. Jinak se dojde k `return b`. `vetsi(3, 8)` vrátí 8."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`def soucet(a, b): print(a + b)` a pak `x = soucet(2, 3) * 10`.",
+          "right": "`def soucet(a, b): return a + b` a pak `x = soucet(2, 3) * 10`, tedy 50.",
+          "why": "`print` jen vypíše na obrazovku. Funkce bez `return` vrací `None` a s `None` nejde počítat."
+        },
+        {
+          "type": "summary",
+          "text": "Funkce je pojmenovaný kus kódu. `def` ji definuje, voláním se spustí. Parametry jsou vstupy, `return` vrací výsledek. Bez `return` funkce vrací `None`."
+        }
+      ]
+    },
+    {
+      "title": "Proměnné ve funkci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když ve škole napíšeš „Novák“, myslíš spolužáka ze své třídy. Ve vedlejší třídě může být jiný Novák. Jména platí jen v určité „místnosti“. U funkcí je to stejné: proměnná vytvořená uvnitř funkce existuje jen uvnitř."
+        },
+        {
+          "type": "text",
+          "text": "Kdo tomu rozumí, nedělá záhadné chyby typu „proč se mi proměnná nezměnila“. Naučíš se taky výchozí a pojmenované parametry, které Python používá všude."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Funkce a volání",
+          "definition": "Funkce je pojmenovaný kus kódu definovaný pomocí `def`. Volání `jmeno(argumenty)` ji spustí. Argumenty se dosadí do parametrů v pořadí, v jakém jsou napsané.",
+          "example": "`def obvod(a, b): return 2 * (a + b)` a volání `obvod(3, 4)` vrátí 14."
+        },
+        {
+          "type": "term",
+          "term": "`return` a `None`",
+          "definition": "`return hodnota` funkci ukončí a vrátí výsledek. Funkce bez `return` vrátí speciální hodnotu `None` (nic).",
+          "example": "`def ahoj(): print(\"ahoj\")` – `print(ahoj())` vypíše „ahoj“ a pak `None`."
+        },
+        {
+          "type": "term",
+          "term": "Lokální proměnná",
+          "definition": "Proměnná vytvořená uvnitř funkce (i parametr). Existuje jen během volání funkce a zvenku není vidět.",
+          "example": "Proměnná `s` v těle funkce."
+        },
+        {
+          "type": "term",
+          "term": "Globální proměnná",
+          "definition": "Proměnná vytvořená mimo všechny funkce. Funkce ji může číst, ale přiřazením uvnitř funkce vznikne nová lokální proměnná se stejným jménem.",
+          "example": "`pocet = 0` na začátku programu."
+        },
+        {
+          "type": "term",
+          "term": "Výchozí hodnota parametru",
+          "definition": "Parametr s hodnotou v hlavičce (`b=1`). Když argument při volání vynecháš, použije se tato hodnota.",
+          "example": "`def obvod(a, b=1):` – `obvod(3)` počítá s b = 1."
+        },
+        {
+          "type": "term",
+          "term": "Pojmenovaný argument",
+          "definition": "Argument předaný jménem parametru. Pořadí pak nehraje roli.",
+          "example": "`obvod(b=2, a=5)`"
+        },
+        {
+          "type": "heading",
+          "text": "Kde proměnná žije"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`def zvetsi(x):`",
+            "`    x = x + 1`",
+            "`    return x`",
+            " ",
+            "`x = 5`",
+            "`zvetsi(x)`",
+            "`print(x)`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vypíše **5**, ne 6. Parametr `x` uvnitř funkce je lokální kopie. Funkce ji zvětší na 6 a vrátí, ale vrácenou hodnotu nikdo neuložil. Globální `x` zůstalo 5. Správně: `x = zvetsi(x)`."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Volání",
+            "a",
+            "b",
+            "Výsledek `2 * (a + b)`"
+          ],
+          "rows": [
+            [
+              "`obvod(3)`",
+              "3",
+              "1 (výchozí)",
+              "8"
+            ],
+            [
+              "`obvod(3, 4)`",
+              "3",
+              "4",
+              "14"
+            ],
+            [
+              "`obvod(b=2, a=5)`",
+              "5",
+              "2",
+              "14"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč psát funkce"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Znovupoužitelnost**: kód napíšeš jednou a voláš ho mnohokrát.",
+            "**Přehlednost**: dobře pojmenovaná funkce (`spocitej_prumer`) vysvětlí, co kód dělá.",
+            "**Dekompozice**: velký problém rozložíš na malé funkce a každou vyřešíš zvlášť.",
+            "**Testování**: malou funkci snadno vyzkoušíš samostatně."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Napiš funkci `prumer(a, b, c)`, která vrátí průměr tří čísel. Kolik vrátí `prumer(1, 2, 6)`?",
+          "answer": "`def prumer(a, b, c): return (a + b + c) / 3`. Závorky jsou nutné, jinak by se dělilo jen c. (1 + 2 + 6) / 3 = 9 / 3 = **3.0** (dělení `/` vrací `float`)."
+        },
+        {
+          "type": "example",
+          "question": "Co vypíše `def f(): y = 10` a pak `f()` a `print(y)`?",
+          "answer": "Chybu `NameError`. Proměnná `y` je lokální, po skončení funkce zanikne a mimo funkci neexistuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Funkce změní globální proměnnou, když do svého parametru se stejným jménem přiřadí novou hodnotu.",
+          "right": "Přiřazení uvnitř funkce mění jen lokální proměnnou. Výsledek vrať přes `return` a ulož: `x = zvetsi(x)`.",
+          "why": "Každé volání funkce má vlastní lokální proměnné, které po návratu zanikají."
+        },
+        {
+          "type": "summary",
+          "text": "Parametry a proměnné ve funkci jsou lokální a po návratu zanikají. Výsledek předávej přes `return`. Výchozí hodnoty (`b=1`) a pojmenované argumenty (`b=2`) dělají volání pohodlnější."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Co vypíše `def dvakrat(n): return n * 2` a `print(dvakrat(dvakrat(3)))`?",
+      "answers": [
+        "12"
+      ],
+      "hints": [
+        "Nejdřív spočítej vnitřní volání."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`def obvod(a, b=1): return 2 * (a + b)`. Co vrátí `obvod(3)`?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "b má výchozí hodnotu 1: 2 · (3 + 1) = 8.",
+      "hints": [
+        "Jakou hodnotu dostane b, když ji při volání nezadáš?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`def obvod(a, b=1): return 2 * (a + b)`. Co vrátí `obvod(b=2, a=5)`?",
+      "answers": [
+        "14"
+      ],
+      "explanation": "Pojmenované argumenty: a = 5, b = 2."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše program `def zvetsi(x): x = x + 1; return x`, pak `x = 5`, `zvetsi(x)`, `print(x)`?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Vrácená hodnota se nikam neuložila, globální x zůstalo 5.",
+      "hints": [
+        "Uložil někdo výsledek volání do proměnné?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co vrací funkce, která nemá příkaz `return`?",
+      "options": [
+        "`None`",
+        "0",
+        "prázdný řetězec",
+        "poslední vypsanou hodnotu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Ve volání `obsah(3, 4)` jsou 3 a 4…",
+      "options": [
+        "argumenty",
+        "parametry",
+        "návratové hodnoty",
+        "lokální funkce"
+      ],
+      "answer": 0,
+      "explanation": "Parametry jsou jména v hlavičce funkce, argumenty hodnoty při volání."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým klíčovým slovem se v Pythonu definuje funkce?",
+      "options": [
+        "`def`",
+        "`function`",
+        "`func`",
+        "`define`"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Řádek `def pozdrav(): print(\"Ahoj\")` sám o sobě něco vypíše.",
+      "answer": false,
+      "explanation": "Definice jen vytvoří funkci. Vypíše se až po zavolání `pozdrav()`."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příkaz `return` okamžitě ukončí provádění funkce.",
+      "answer": true,
+      "explanation": "Řádky za provedeným `return` se už neprovedou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Proměnná vytvořená uvnitř funkce je po skončení funkce dostupná i mimo ni.",
+      "answer": false,
+      "explanation": "Je lokální, po návratu zaniká."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s příkladem v kódu `def obsah(a, b): return a * b` a `obsah(3, 4)`.",
+      "pairs": [
+        [
+          "definice",
+          "`def obsah(a, b):`"
+        ],
+        [
+          "parametry",
+          "`a`, `b`"
+        ],
+        [
+          "argumenty",
+          "`3`, `4`"
+        ],
+        [
+          "návratová hodnota",
+          "`a * b`"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje při `v = obsah(3, 4)`.",
+      "items": [
+        "Python skočí do funkce obsah",
+        "do parametrů se dosadí a = 3, b = 4",
+        "provede se tělo a `return` vrátí 12",
+        "hodnota 12 se uloží do v"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi `print` a `return` uvnitř funkce?",
+      "answer": "`print` jen vypíše hodnotu na obrazovku, funkce přitom vrací `None`. `return` funkci ukončí a vrátí hodnotu volajícímu, takže s ní může dál počítat."
+    },
+    {
+      "type": "open",
+      "question": "Uveď aspoň tři důvody, proč dělit program do funkcí.",
+      "answer": "Kód se nepíše opakovaně, ale volá se. Program je přehlednější, protože jména funkcí popisují, co dělají. Velký problém se rozloží na menší a každá funkce se dá samostatně otestovat a opravit."
+    }
+  ]
+}

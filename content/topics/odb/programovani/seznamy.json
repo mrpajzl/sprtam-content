@@ -1,0 +1,469 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "seznamy",
+  "title": "Seznamy",
+  "emoji": "📋",
+  "explanations": [
+    {
+      "title": "Řada skříněk",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve škole máte na chodbě řadu očíslovaných skříněk. Každá má číslo a v každé něco je. Když chceš věc ze skříňky 3, nemusíš prohledávat všechny. Jdeš rovnou ke trojce."
+        },
+        {
+          "type": "text",
+          "text": "**Seznam** je taková řada skříněk v paměti. Do jedné proměnné uložíš třeba známky celé třídy, nákupní seznam nebo skóre všech hráčů. Pak s nimi pracuješ najednou, nejčastěji cyklem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Seznam (list)",
+          "definition": "Uspořádaná řada hodnot v jedné proměnné. Zapisuje se do hranatých závorek, prvky odděluje čárka. Seznam jde měnit: přidávat, mazat i přepisovat prvky.",
+          "example": "`znamky = [1, 3, 2, 1]`"
+        },
+        {
+          "type": "term",
+          "term": "Prvek",
+          "definition": "Jedna hodnota v seznamu.",
+          "example": "V `[1, 3, 2]` jsou tři prvky."
+        },
+        {
+          "type": "term",
+          "term": "Index",
+          "definition": "Pořadové číslo prvku. **Počítá se od nuly.** Záporný index počítá od konce: −1 je poslední prvek.",
+          "example": "V `a = [3, 1, 4]` je `a[0]` = 3 a `a[-1]` = 4."
+        },
+        {
+          "type": "term",
+          "term": "Délka `len()`",
+          "definition": "Funkce, která vrátí počet prvků seznamu.",
+          "example": "`len([3, 1, 4])` je 3."
+        },
+        {
+          "type": "heading",
+          "text": "Indexy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "prvek",
+            "3",
+            "1",
+            "4",
+            "1",
+            "5"
+          ],
+          "rows": [
+            [
+              "index",
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            [
+              "záporný index",
+              "−5",
+              "−4",
+              "−3",
+              "−2",
+              "−1"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Seznam `a = [3, 1, 4, 1, 5]` má 5 prvků. Indexy jdou od 0 do 4. Index 5 už neexistuje a `a[5]` skončí chybou `IndexError`."
+        },
+        {
+          "type": "heading",
+          "text": "Změny seznamu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zápis",
+            "Co udělá",
+            "a = [3, 1, 4] potom"
+          ],
+          "rows": [
+            [
+              "`a[0] = 7`",
+              "přepíše prvek na indexu 0",
+              "[7, 1, 4]"
+            ],
+            [
+              "`a.append(9)`",
+              "přidá prvek na konec",
+              "[3, 1, 4, 9]"
+            ],
+            [
+              "`a.insert(0, 8)`",
+              "vloží prvek na index 0",
+              "[8, 3, 1, 4]"
+            ],
+            [
+              "`a.remove(1)`",
+              "smaže první výskyt hodnoty 1",
+              "[3, 4]"
+            ],
+            [
+              "`a.pop()`",
+              "odebere a vrátí poslední prvek",
+              "[3, 1]"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Průchod seznamem"
+        },
+        {
+          "type": "list",
+          "items": [
+            "`znamky = [1, 3, 2, 1]`",
+            "`soucet = 0`",
+            "`for z in znamky:`",
+            "`    soucet = soucet + z`",
+            "`print(soucet / len(znamky))`"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Cyklus vezme postupně každou známku a přičte ji. Součet je 7, prvky jsou 4, vypíše průměr 1.75."
+        },
+        {
+          "type": "example",
+          "question": "`a = [3, 1, 4, 1, 5]`. Co je `a[2]` a `a[-2]`?",
+          "answer": "Index 2 je třetí prvek: **4**. Index −2 je druhý od konce: **1**."
+        },
+        {
+          "type": "example",
+          "question": "Najdi největší prvek bez funkce `max()`.",
+          "answer": "`nej = a[0]`, pak `for x in a:` → `if x > nej: nej = x`. Začneš prvním prvkem a každý větší si zapamatuješ. Pro `[3, 1, 4, 1, 5]` vyjde 5. (Python to umí i hotově: `max(a)`.)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "První prvek seznamu `a` je `a[1]`.",
+          "right": "První prvek je `a[0]`, poslední `a[len(a) - 1]` neboli `a[-1]`.",
+          "why": "Indexy v Pythonu začínají nulou. Index říká, o kolik míst jsi od začátku."
+        },
+        {
+          "type": "summary",
+          "text": "Seznam je uspořádaná, měnitelná řada hodnot v `[ ]`. Indexy začínají nulou, −1 je poslední prvek. `append` přidává, `remove` a `pop` odebírají, `for` prochází všechny prvky."
+        }
+      ]
+    },
+    {
+      "title": "Řezy a triky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš výsledky závodu jako seznam časů. Chceš první tři, chceš je seřadit, chceš jen časy pod minutu. Python na to má krátké zápisy, které ušetří spoustu řádků."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se řezy, užitečné funkce a jednu záludnost: dvě proměnné mohou ukazovat na tentýž seznam."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Seznam a index",
+          "definition": "Seznam je řada hodnot v `[ ]`, která jde měnit. Index je pořadí prvku od nuly, záporný od konce.",
+          "example": "`casy = [58, 63, 49, 71]`, `casy[0]` je 58, `casy[-1]` je 71."
+        },
+        {
+          "type": "term",
+          "term": "Řez (slice)",
+          "definition": "Zápis `a[od:do]` vrátí nový seznam s prvky od indexu `od` do indexu `do − 1`. Vynechaná mez znamená začátek nebo konec. Třetí číslo je krok.",
+          "example": "`casy[1:3]` je `[63, 49]`, `casy[:2]` je `[58, 63]`, `casy[::-1]` je seznam pozpátku."
+        },
+        {
+          "type": "term",
+          "term": "Metoda",
+          "definition": "Funkce, která patří k hodnotě a volá se přes tečku.",
+          "example": "`casy.sort()` seřadí seznam `casy` na místě."
+        },
+        {
+          "type": "term",
+          "term": "Odkaz (reference)",
+          "definition": "Proměnná neobsahuje celý seznam, jen ukazuje, kde v paměti leží. Přiřazení `b = a` seznam nezkopíruje, jen vytvoří druhý odkaz na tentýž seznam.",
+          "example": "Po `b = a` a `b.append(4)` se změní i `a`."
+        },
+        {
+          "type": "heading",
+          "text": "Užitečné nástroje"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zápis",
+            "Výsledek pro a = [3, 1, 4, 1, 5]"
+          ],
+          "rows": [
+            [
+              "`len(a)`",
+              "5"
+            ],
+            [
+              "`sum(a)`, `max(a)`, `min(a)`",
+              "14, 5, 1"
+            ],
+            [
+              "`sorted(a)`",
+              "nový seřazený seznam [1, 1, 3, 4, 5]"
+            ],
+            [
+              "`a.sort()`",
+              "seřadí přímo `a`, vrací `None`"
+            ],
+            [
+              "`a.count(1)`",
+              "2 (kolikrát je tam 1)"
+            ],
+            [
+              "`4 in a`",
+              "True"
+            ],
+            [
+              "`a + [9]`, `[0] * 3`",
+              "spojení seznamů, opakování [0, 0, 0]"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Generátorová notace (list comprehension)"
+        },
+        {
+          "type": "text",
+          "text": "Krátký zápis, jak z jednoho seznamu vyrobit jiný: `[výraz for prvek in seznam if podmínka]`."
+        },
+        {
+          "type": "example",
+          "question": "Co je `[i * i for i in range(4)]`?",
+          "answer": "Pro i = 0, 1, 2, 3 spočítá druhou mocninu: **[0, 1, 4, 9]**."
+        },
+        {
+          "type": "example",
+          "question": "Z `casy = [58, 63, 49, 71]` vyber jen časy pod 60.",
+          "answer": "`[c for c in casy if c < 60]` → **[58, 49]**. Totéž jako cyklus s `if` a `append`, jen na jednom řádku."
+        },
+        {
+          "type": "heading",
+          "text": "Seznam v seznamu"
+        },
+        {
+          "type": "text",
+          "text": "Prvkem seznamu může být zase seznam. Tak vznikne tabulka (matice). `m = [[1, 2], [3, 4]]`: `m[1]` je řádek `[3, 4]` a `m[1][0]` je **3**."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "`a[1:3]` pro a = [3, 1, 4, 1, 5]",
+                "back": "[1, 4]"
+              },
+              {
+                "front": "`a[:2]`",
+                "back": "[3, 1]"
+              },
+              {
+                "front": "`a[-1]`",
+                "back": "5"
+              },
+              {
+                "front": "`a[::-1]`",
+                "back": "[5, 1, 4, 1, 3]"
+              },
+              {
+                "front": "`len(a)`",
+                "back": "5"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Řekni si výsledek nahlas a teprve pak kartičku otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`b = a` vytvoří kopii seznamu, takže `b.append(4)` změní jen `b`.",
+          "right": "Kopii vytvoříš `b = a.copy()` nebo `b = a[:]`.",
+          "why": "`b = a` jen přidá druhé jméno k témuž seznamu. Změna přes jedno jméno je vidět i přes druhé."
+        },
+        {
+          "type": "summary",
+          "text": "Řez `a[od:do]` vrací prvky od `od` do `do − 1`. `sorted()` vrací nový seřazený seznam, `sort()` řadí na místě. `b = a` seznam nekopíruje, kopii udělá `a.copy()`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "`a = [3, 1, 4, 1, 5]`. Co je `a[2]`?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Indexy začínají nulou: a[0] = 3, a[1] = 1, a[2] = 4.",
+      "hints": [
+        "Na jakém indexu je první prvek?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`a = [3, 1, 4, 1, 5]`. Co je `a[-1]`?",
+      "answers": [
+        "5"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`a = [3, 1, 4, 1, 5]`. Co je `a[1:3]`? (Zapiš jako seznam.)",
+      "answers": [
+        "[1, 4]",
+        "[1,4]"
+      ],
+      "explanation": "Prvky na indexech 1 a 2, trojka se nezahrnuje.",
+      "hints": [
+        "Řez bere prvky od prvního čísla do druhého minus jedna."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print([i * i for i in range(4)])`?",
+      "answers": [
+        "[0, 1, 4, 9]",
+        "[0,1,4,9]"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `b = [1, 2, 3]`, `c = b`, `c.append(4)`, `print(len(b))`?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "c a b ukazují na tentýž seznam.",
+      "hints": [
+        "Vznikla příkazem `c = b` kopie?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`m = [[1, 2], [3, 4]]`. Co je `m[1][0]`?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "m[1] je [3, 4] a jeho prvek s indexem 0 je 3."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá `a.append(9)`?",
+      "options": [
+        "přidá 9 na konec seznamu",
+        "přidá 9 na začátek",
+        "nahradí poslední prvek devítkou",
+        "vrátí nový seznam s devítkou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je rozdíl mezi `sorted(a)` a `a.sort()`?",
+      "options": [
+        "`sorted` vrací nový seznam, `sort` mění původní",
+        "žádný",
+        "`sort` vrací nový seznam, `sorted` mění původní",
+        "`sorted` řadí sestupně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Seznam má 6 prvků. Jaký je index posledního prvku?",
+      "options": [
+        "5",
+        "6",
+        "−6",
+        "0"
+      ],
+      "answer": 0,
+      "hints": [
+        "Indexy začínají nulou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "`a[len(a)]` vrátí poslední prvek seznamu.",
+      "answer": false,
+      "explanation": "Poslední je `a[len(a) - 1]`; `a[len(a)]` skončí chybou IndexError."
+    },
+    {
+      "type": "truefalse",
+      "question": "Prvky jednoho seznamu v Pythonu mohou být různých typů.",
+      "answer": true,
+      "explanation": "Např. `[1, \"ahoj\", True]` je platný seznam."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zápis s výsledkem pro `a = [3, 1, 4]`.",
+      "pairs": [
+        [
+          "`len(a)`",
+          "3"
+        ],
+        [
+          "`sum(a)`",
+          "8"
+        ],
+        [
+          "`max(a)`",
+          "4"
+        ],
+        [
+          "`a[::-1]`",
+          "[4, 1, 3]"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď prvky seznamu `[5, 2, 8]` podle indexu od 0, tak jak je uloží `a = [5, 2, 8]` a pak `a.insert(1, 7)`.",
+      "items": [
+        "5",
+        "7",
+        "2",
+        "8"
+      ],
+      "hints": [
+        "`insert(1, 7)` vloží sedmičku tak, aby měla index 1."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč `b = a` nevytvoří kopii seznamu a jak kopii udělat?",
+      "answer": "Proměnná obsahuje jen odkaz na seznam, takže `b = a` vytvoří druhé jméno pro tentýž seznam. Kopii vytvoří `a.copy()`, `list(a)` nebo řez `a[:]`."
+    }
+  ]
+}
