@@ -1,0 +1,414 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "osobnost-temperament",
+  "title": "Osobnost a temperament klienta",
+  "emoji": "🎭",
+  "explanations": [
+    {
+      "title": "Čtyři klientky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Do salonu přijdou za den čtyři klientky. První chce všechno hned a rozčílí ji pět minut čekání. Druhá se směje a vypráví. Třetí se pětkrát ptá, jestli krém nezpůsobí alergii. Čtvrtá skoro nemluví a všechno jí vyhovuje."
+        },
+        {
+          "type": "text",
+          "text": "Každá potřebuje jiný přístup. Když poznáš, jak člověk obvykle reaguje, víš, jak s ním mluvit. Ušetříš si konflikty a klient se rád vrátí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Osobnost",
+          "definition": "Jedinečný celek duševních vlastností člověka – jak myslí, cítí a jedná. Je poměrně stálá.",
+          "example": "Klientka je pečlivá, citlivá a ráda plánuje dopředu."
+        },
+        {
+          "type": "term",
+          "term": "Temperament",
+          "definition": "Vrozená složka osobnosti: jak **rychle**, jak **silně** a jak **dlouho** člověk reaguje na podněty.",
+          "example": "Jeden se při čekání rozčílí hned, jiný vůbec."
+        },
+        {
+          "type": "term",
+          "term": "Extrovert a introvert",
+          "definition": "**Extrovert** je zaměřený navenek, k lidem; energii čerpá ve společnosti. **Introvert** je zaměřený dovnitř; energii čerpá v klidu.",
+          "example": "Extrovertní klient si povídá celé ošetření, introvertní si užívá ticho."
+        },
+        {
+          "type": "term",
+          "term": "Stabilní a labilní",
+          "definition": "**Stabilní** člověk je citově vyrovnaný. **Labilní** má silné a proměnlivé emoce.",
+          "example": "Labilní klienta drobná chyba rozhodí na celý den."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři typy temperamentu"
+        },
+        {
+          "type": "text",
+          "text": "Typy popsal už starověký lékař **Hippokratés**. Psycholog **Hans J. Eysenck** je ve 20. století seřadil podle dvou os: extrovert–introvert a stabilní–labilní."
+        },
+        {
+          "type": "table",
+          "head": [
+            "typ",
+            "osy",
+            "jak se projeví v salonu",
+            "jak s ním jednat"
+          ],
+          "rows": [
+            [
+              "cholerik",
+              "labilní extrovert",
+              "netrpělivý, rychle se rozčílí",
+              "jednat rychle, věcně, nehádat se"
+            ],
+            [
+              "sangvinik",
+              "stabilní extrovert",
+              "veselý, upovídaný, rychle se nadchne",
+              "být přátelský, ale hlídat čas a dohodu"
+            ],
+            [
+              "melancholik",
+              "labilní introvert",
+              "citlivý, opatrný, mnoho otázek",
+              "trpělivě vysvětlovat, ujišťovat"
+            ],
+            [
+              "flegmatik",
+              "stabilní introvert",
+              "klidný, pomalejší, nedává najevo názor",
+              "nechat čas na rozhodnutí, ptát se"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "cholerik",
+                "back": "labilní extrovert – prudký, netrpělivý"
+              },
+              {
+                "front": "sangvinik",
+                "back": "stabilní extrovert – veselý, přizpůsobivý"
+              },
+              {
+                "front": "melancholik",
+                "back": "labilní introvert – citlivý, prožívá dlouho"
+              },
+              {
+                "front": "flegmatik",
+                "back": "stabilní introvert – klidný, pomalý"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus si typ vybavit dřív, než uvidíš rub."
+        },
+        {
+          "type": "example",
+          "question": "Klient v starožitnictví se ptá na každý detail, chce papíry o původu a dlouho váhá. Který typ to nejspíš je a jak s ním jednat?",
+          "answer": "Opatrný, uzavřenější, prožívá nejistotu → spíš **melancholik** (labilní introvert). Pomůže trpělivost, doklady o původu a žádný nátlak."
+        },
+        {
+          "type": "example",
+          "question": "Klientka vtrhne do salonu, je naštvaná, že přišla o deset minut později a „všechno jí ujíždí“. Jak reagovat?",
+          "answer": "Prudká, rychlá reakce → spíš **cholerik**. Nehádat se, klidně a věcně nabídnout řešení: „Stihneme hlavní část, masáž zkrátíme.“"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je to cholerik, takže je to zlý člověk.",
+          "right": "Temperament říká, **jak** člověk reaguje, ne jestli je hodný. Poctivost a ohleduplnost patří k charakteru.",
+          "why": "Charakter vzniká výchovou; temperament je vrozený. Cholerik může být velmi laskavý."
+        },
+        {
+          "type": "text",
+          "text": "Pozor: čistý typ skoro nikdo nemá. Většina lidí je směs. Typologie je pomůcka, ne nálepka."
+        },
+        {
+          "type": "summary",
+          "text": "Temperament je vrozený styl reagování. Čtyři typy (cholerik, sangvinik, melancholik, flegmatik) vznikají kombinací os extrovert–introvert a stabilní–labilní. S každým typem klienta jednáme trochu jinak."
+        }
+      ]
+    },
+    {
+      "title": "Stavba osobnosti",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když popisuješ šikovnou kolegyni, řekneš: „Je klidná, poctivá, má zlaté ruce a chce mít vlastní salon.“ To jsou čtyři různé části její osobnosti."
+        },
+        {
+          "type": "text",
+          "text": "Některé části máme od narození, jiné si vypěstujeme. Kdo to ví, lépe rozumí sobě i klientům a ví, co se dá změnit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Osobnost",
+          "definition": "Celek všech duševních vlastností člověka. Je jedinečná a poměrně stálá.",
+          "example": "Dvě kosmetičky ze stejné školy, a přesto každá pracuje jinak."
+        },
+        {
+          "type": "term",
+          "term": "Vrozené a získané",
+          "definition": "**Vrozené** máme od narození. **Získané** vzniká výchovou, prostředím a zkušeností.",
+          "example": "Klidná povaha může být vrozená, zdvořilost k zákazníkům získaná."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři složky osobnosti"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Temperament** – jak rychle, silně a dlouho reagujeme. Vrozený.",
+            "**Charakter** – morální vlastnosti: poctivost, spolehlivost, ohleduplnost. Získaný výchovou.",
+            "**Schopnosti** – předpoklady něco dělat. Rostou z vrozených **vloh** tréninkem.",
+            "**Motivace** – potřeby, zájmy a cíle, které nás pohánějí."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Vlohy",
+          "definition": "Vrozené předpoklady, ze kterých se tréninkem rozvinou schopnosti.",
+          "example": "Cit pro barvy je vloha. Umět namíchat odstín barvy na řasy je naučená schopnost."
+        },
+        {
+          "type": "term",
+          "term": "Temperamentové typy",
+          "definition": "Čtyři typy podle Hippokrata, seřazené Eysenckem podle os extrovert–introvert a stabilní–labilní: **cholerik** (labilní extrovert), **sangvinik** (stabilní extrovert), **melancholik** (labilní introvert), **flegmatik** (stabilní introvert).",
+          "example": "Klidný, mlčenlivý klient bývá flegmatik."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "temperament",
+              "charakter",
+              "schopnosti",
+              "motivace"
+            ],
+            "items": [
+              {
+                "text": "rychle se rozčílí",
+                "group": 0
+              },
+              {
+                "text": "je poctivý a nepodvádí s cenou",
+                "group": 1
+              },
+              {
+                "text": "umí přesně zastřihnout obočí",
+                "group": 2
+              },
+              {
+                "text": "chce si otevřít vlastní salon",
+                "group": 3
+              },
+              {
+                "text": "je pomalý a klidný",
+                "group": 0
+              },
+              {
+                "text": "vždy dodrží slib",
+                "group": 1
+              },
+              {
+                "text": "pozná pravou malbu od kopie",
+                "group": 2
+              },
+              {
+                "text": "baví ho historie nábytku",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti do čtyř složek. Ptej se: je to rychlost reakce, morálka, dovednost, nebo cíl?"
+        },
+        {
+          "type": "example",
+          "question": "Kolegyně je výbušná, ale nikdy klientovi nezalže. Odporuje si to?",
+          "answer": "Ne. **Výbušnost** je temperament (vrozený, rychlost reakce). **Pravdomluvnost** je charakter (získaný). Jsou to různé složky."
+        },
+        {
+          "type": "example",
+          "question": "Začínající restaurátor říká: „Na zlacení nemám talent, nikdy to umět nebudu.“ Co mu odpovíš?",
+          "answer": "Schopnosti rostou z vloh **tréninkem**. I s průměrnými vlohami se zlacení naučí cvičením; vlohy určují spíš rychlost učení než strop."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Temperament se dá výchovou úplně změnit.",
+          "right": "Temperament je vrozený. Výchovou se učíme ho **ovládat** – cholerik se naučí počítat do deseti.",
+          "why": "Změnit se dá chování a charakter, základní styl reagování zůstává."
+        },
+        {
+          "type": "summary",
+          "text": "Osobnost tvoří temperament (vrozený), charakter (získaný), schopnosti (z vloh tréninkem) a motivace. U klienta odhadneme hlavně temperament, abychom zvolili vhodný přístup."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je temperament?",
+      "options": [
+        "vrozený styl reagování – rychlost, síla a délka reakce",
+        "morální vlastnosti člověka",
+        "naučené dovednosti",
+        "cíle a zájmy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ temperamentu s popisem.",
+      "pairs": [
+        [
+          "cholerik",
+          "labilní extrovert"
+        ],
+        [
+          "sangvinik",
+          "stabilní extrovert"
+        ],
+        [
+          "melancholik",
+          "labilní introvert"
+        ],
+        [
+          "flegmatik",
+          "stabilní introvert"
+        ]
+      ],
+      "hints": [
+        "Labilní = silné emoce, extrovert = zaměřený na lidi."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Charakter je vrozený, temperament se získává výchovou.",
+      "answer": false,
+      "explanation": "Je to obráceně: temperament je vrozený, charakter získaný."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka je klidná, mluví málo a na otázku „Vyhovuje vám to?“ jen pokrčí rameny. Jaký přístup je vhodný?",
+      "options": [
+        "dát jí čas a ptát se konkrétně",
+        "mluvit rychle a hodně",
+        "rozhodnout za ni bez ptaní",
+        "ignorovat ji, je spokojená"
+      ],
+      "answer": 0,
+      "explanation": "Flegmatik se rozhoduje pomaleji a názor sám neřekne – pomůžou konkrétní otázky a čas."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje typ temperamentu, který je veselý, společenský a citově stabilní?",
+      "answers": [
+        "sangvinik"
+      ],
+      "hints": [
+        "Je to stabilní extrovert."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo seřadil temperamenty podle os extrovert–introvert a stabilní–labilní?",
+      "options": [
+        "Hans J. Eysenck",
+        "Sigmund Freud",
+        "Ivan Pavlov",
+        "Abraham Maslow"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Většina lidí nemá čistý typ temperamentu, ale směs.",
+      "answer": true,
+      "explanation": "Typologie je zjednodušení, pomáhá jen odhadnout převažující styl."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenují vrozené předpoklady, ze kterých se tréninkem rozvinou schopnosti?",
+      "answers": [
+        "vlohy",
+        "vloha"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup, jak odhadnout typ temperamentu klienta.",
+      "items": [
+        "Pozoruj, jak klient mluví a reaguje",
+        "Urči obě osy: extrovert–introvert a stabilní–labilní",
+        "Z kombinace os odvoď typ",
+        "Přizpůsob mu svůj přístup"
+      ],
+      "hints": [
+        "Nejdřív pozoruješ, pak teprve určuješ.",
+        "Typ vzniká až z kombinace obou os."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost patří k charakteru?",
+      "options": [
+        "poctivost",
+        "rychlost reakce",
+        "cit pro barvy",
+        "zájem o historii"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Netrpělivý, rozčílený klient (cholerik) si stěžuje na čekání. Co je nejlepší?",
+      "options": [
+        "klidně a věcně nabídnout řešení",
+        "vysvětlovat mu, že je cholerik",
+        "odpovědět stejně ostře",
+        "dlouze se omlouvat a nic nenabídnout"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš čtyři složky osobnosti a řekni, které jsou vrozené a které získané.",
+      "answer": "Temperament (vrozený styl reagování), charakter (morální vlastnosti, získaný výchovou), schopnosti (rostou z vrozených vloh tréninkem) a motivace (potřeby, zájmy, cíle)."
+    },
+    {
+      "type": "open",
+      "question": "Jak se liší jednání s klientem melancholikem a cholerikem?",
+      "answer": "Melancholik je citlivý a opatrný – potřebuje trpělivé vysvětlení a ujištění. Cholerik je netrpělivý a prudký – pomůže rychlé, věcné jednání a klid bez hádky."
+    }
+  ]
+}
