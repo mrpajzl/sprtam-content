@@ -1,0 +1,568 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "subjonctif-present",
+  "title": "Subjonctif présent",
+  "emoji": "💭",
+  "explanations": [
+    {
+      "title": "Tvoření",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Je nutné, **abys** přišel.“ „Chci, **abys** mi pomohl.“ „Jsem rád, **že jsi** tady.“ V takových větách francouzština nepoužije obyčejný tvar slovesa, ale zvláštní způsob: **subjonctif**."
+        },
+        {
+          "type": "text",
+          "text": "Subjonctif uslyšíš ve Francii denně: *Il faut que je parte.* = Musím jít. Bez něj nevyjádříš, co je potřeba, co chceš po druhých ani co cítíš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Způsob slovesa",
+          "definition": "Tvar slovesa, který ukazuje, jak mluvčí děj vidí: jako skutečnost (oznamovací způsob), jako přání nebo nutnost (subjonctif), jako podmínku (podmiňovací způsob).",
+          "example": "Tu viens. (skutečnost) × Il faut que tu viennes. (nutnost)"
+        },
+        {
+          "type": "term",
+          "term": "Subjonctif",
+          "definition": "Francouzský způsob pro věci, které nejsou jisté skutečnosti: přání, nutnost, pocity, pochybnosti. Stojí ve vedlejší větě po **que**. Česky mu často odpovídá „aby“.",
+          "example": "Je veux que tu **viennes**. = Chci, abys přišel."
+        },
+        {
+          "type": "term",
+          "term": "Vedlejší věta",
+          "definition": "Část souvětí, která závisí na hlavní větě. Tady začíná spojkou *que* (že, aby).",
+          "example": "Il faut **que tu travailles**."
+        },
+        {
+          "type": "heading",
+          "text": "Postup tvoření"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi tvar přítomného času pro **ils**: *ils finissent*.",
+            "Odtrhni **-ent**: *finiss-*.",
+            "Přidej koncovky **-e, -es, -e, -ions, -iez, -ent**.",
+            "Pro *nous* a *vous* vezmi kmen z tvaru **nous**: *nous prenons → que nous prenions*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "parler (ils parlent)",
+            "finir (ils finissent)",
+            "prendre (ils prennent / nous prenons)"
+          ],
+          "rows": [
+            [
+              "que je",
+              "parl**e**",
+              "finiss**e**",
+              "prenn**e**"
+            ],
+            [
+              "que tu",
+              "parl**es**",
+              "finiss**es**",
+              "prenn**es**"
+            ],
+            [
+              "qu’il / elle",
+              "parl**e**",
+              "finiss**e**",
+              "prenn**e**"
+            ],
+            [
+              "que nous",
+              "parl**ions**",
+              "finiss**ions**",
+              "pren**ions**"
+            ],
+            [
+              "que vous",
+              "parl**iez**",
+              "finiss**iez**",
+              "pren**iez**"
+            ],
+            [
+              "qu’ils / elles",
+              "parl**ent**",
+              "finiss**ent**",
+              "prenn**ent**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U sloves na *-er* zní *que je parle* stejně jako *je parle*. Rozdíl uslyšíš hlavně u ostatních sloves: *je finis* × *que je finisse*."
+        },
+        {
+          "type": "heading",
+          "text": "Nepravidelná slovesa"
+        },
+        {
+          "type": "table",
+          "head": [
+            "sloveso",
+            "que je",
+            "que nous"
+          ],
+          "rows": [
+            [
+              "être",
+              "sois",
+              "soyons"
+            ],
+            [
+              "avoir",
+              "aie",
+              "ayons"
+            ],
+            [
+              "aller",
+              "aille",
+              "allions"
+            ],
+            [
+              "faire",
+              "fasse",
+              "fassions"
+            ],
+            [
+              "pouvoir",
+              "puisse",
+              "puissions"
+            ],
+            [
+              "savoir",
+              "sache",
+              "sachions"
+            ],
+            [
+              "vouloir",
+              "veuille",
+              "voulions"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Celé *être*: *que je sois, que tu sois, qu’il soit, que nous soyons, que vous soyez, qu’ils soient*. Celé *avoir*: *que j’aie, que tu aies, qu’il ait, que nous ayons, que vous ayez, qu’ils aient*."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Il faut que tu",
+                "after": "tes devoirs.",
+                "options": [
+                  "fasses",
+                  "fais",
+                  "feras"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je veux que vous",
+                "after": "là.",
+                "options": [
+                  "soyez",
+                  "êtes",
+                  "serez"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il faut que nous",
+                "after": "tôt.",
+                "options": [
+                  "partions",
+                  "partons",
+                  "partirons"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ma mère veut que je",
+                "after": "le bus.",
+                "options": [
+                  "prenne",
+                  "prends",
+                  "prenais"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il faut qu’elle",
+                "after": "patience.",
+                "options": [
+                  "ait",
+                  "a",
+                  "est"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř subjonctif: *venir*, osoba *je* a *nous*.",
+          "answer": "*ils viennent* → *vienn-* + *-e* → **que je vienne**. *nous venons* → *ven-* + *-ions* → **que nous venions**."
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř subjonctif: *finir*, osoba *tu*.",
+          "answer": "*ils finissent* → *finiss-* + *-es* → **que tu finisses**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Il faut que tu fais attention.",
+          "right": "Il faut que tu fasses attention.",
+          "why": "Po *il faut que* vždy subjonctif. *faire* je nepravidelné: *que je fasse*."
+        },
+        {
+          "type": "summary",
+          "text": "Subjonctif: kmen z *ils* (bez *-ent*) + *-e, -es, -e, -ions, -iez, -ent*; *nous/vous* z kmene *nous*. Zpaměti: *sois, aie, aille, fasse, puisse, sache, veuille*."
+        }
+      ]
+    },
+    {
+      "title": "Kdy ho použít",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tvary už umíš (nebo je najdeš v prvním vysvětlení). Teď to hlavní: **kdy** se subjonctif používá. Pomůže si zapamatovat, že po něm sahá francouzština, když věc **není jistá skutečnost**, ale něco, co chceš, musíš nebo cítíš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Subjonctif",
+          "definition": "Tvar slovesa ve vedlejší větě po *que*, který vyjadřuje nutnost, přání, pocit nebo pochybnost. Tvoří se z *ils* přítomného času + *-e, -es, -e, -ions, -iez, -ent*.",
+          "example": "que je parte, que tu sois"
+        },
+        {
+          "type": "term",
+          "term": "Indikativ (oznamovací způsob)",
+          "definition": "Obyčejný tvar slovesa pro skutečnosti: přítomný, minulý i budoucí čas.",
+          "example": "Je sais que tu **es** là. = Vím, že jsi tady."
+        },
+        {
+          "type": "term",
+          "term": "Stejný podmět",
+          "definition": "Obě části věty mluví o téže osobě.",
+          "example": "Je veux partir. (já chci, já odjedu)"
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor"
+        },
+        {
+          "type": "text",
+          "text": "*Maman : Il faut que tu **ranges** ta chambre ! Théo : Mais je veux sortir avec Lucas ! Maman : Je veux bien que tu **sortes**, mais d’abord, il faut que ta chambre **soit** propre. Théo : D’accord… Je suis content que tu **sois** d’accord.*"
+        },
+        {
+          "type": "text",
+          "text": "= Máma: Musíš si uklidit pokoj! Théo: Ale chci jít ven s Lucasem! Máma: Klidně můžeš jít ven, ale nejdřív musí být pokoj uklizený. Théo: Dobře… Jsem rád, že souhlasíš."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy subjonctif"
+        },
+        {
+          "type": "table",
+          "head": [
+            "skupina",
+            "výrazy",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "nutnost",
+              "*il faut que, il est nécessaire que*",
+              "*Il faut que tu ranges ta chambre.*"
+            ],
+            [
+              "přání, vůle",
+              "*vouloir que, aimer que, préférer que*",
+              "*Je veux que tu viennes.*"
+            ],
+            [
+              "pocity",
+              "*être content que, avoir peur que, regretter que*",
+              "*Je suis content que tu sois là.*"
+            ],
+            [
+              "pochybnost",
+              "*je ne pense pas que, douter que*",
+              "*Je ne pense pas qu’il vienne.*"
+            ],
+            [
+              "některé spojky",
+              "*pour que, avant que, bien que*",
+              "*Je parle lentement pour que tu comprennes.*"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dvě důležitá pravidla"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Různé osoby → subjonctif, stejná osoba → infinitiv.** *Je veux que **tu** partes.* (já chci, ty odjedeš) × *Je veux partir.* (já chci, já odjedu). Nikdy *je veux que je parte*.",
+            "Po **jistotě** je indikativ: *je sais que, je pense que, je suis sûr que, **j’espère que***. Např. *J’espère que tu **viendras**.* Pozor: *espérer* je přání, a přesto bez subjonctivu!"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď začátky vět: následuje subjonctif, nebo indikativ?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "subjonctif",
+              "indikativ"
+            ],
+            "items": [
+              {
+                "text": "Il faut que…",
+                "group": 0
+              },
+              {
+                "text": "Je veux que…",
+                "group": 0
+              },
+              {
+                "text": "J’ai peur que…",
+                "group": 0
+              },
+              {
+                "text": "Je ne pense pas que…",
+                "group": 0
+              },
+              {
+                "text": "Je sais que…",
+                "group": 1
+              },
+              {
+                "text": "J’espère que…",
+                "group": 1
+              },
+              {
+                "text": "Je pense que…",
+                "group": 1
+              },
+              {
+                "text": "Il est sûr que…",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň *venir*: Je suis triste que tu ne ___ pas.",
+          "answer": "Pocit (*être triste que*) → subjonctif: **que tu ne viennes pas**."
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Chci se učit francouzsky. / Chci, aby ses učil francouzsky.",
+          "answer": "Stejná osoba → infinitiv: **Je veux apprendre le français.** Různé osoby → subjonctif: **Je veux que tu apprennes le français.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’espère que tu viennes.",
+          "right": "J’espère que tu viens / viendras.",
+          "why": "Po *espérer que* je indikativ, i když jde o přání."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je veux que je parte.",
+          "right": "Je veux partir.",
+          "why": "Když je podmět v obou částech stejný, použij infinitiv."
+        },
+        {
+          "type": "summary",
+          "text": "Subjonctif po *il faut que*, *vouloir que*, po pocitech (*content que, peur que*), pochybnostech a spojkách *pour que, avant que, bien que*. Stejný podmět → infinitiv. Po *je pense que, j’espère que* indikativ."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Il faut que tu ___ tes devoirs.",
+      "options": [
+        "fasses",
+        "fais",
+        "feras"
+      ],
+      "answer": 0,
+      "explanation": "Po *il faut que* subjonctif, *faire → que tu fasses*."
+    },
+    {
+      "type": "choice",
+      "question": "Je veux que vous ___ à l’heure.",
+      "options": [
+        "soyez",
+        "êtes",
+        "serez"
+      ],
+      "answer": 0,
+      "explanation": "*être* v subjonctivu: *que vous soyez*."
+    },
+    {
+      "type": "choice",
+      "question": "Je suis content que tu ___ là.",
+      "options": [
+        "sois",
+        "es",
+        "seras"
+      ],
+      "answer": 0,
+      "explanation": "Pocit → subjonctif."
+    },
+    {
+      "type": "choice",
+      "question": "J’espère que tu ___ demain.",
+      "options": [
+        "viendras",
+        "viennes",
+        "venais"
+      ],
+      "answer": 0,
+      "explanation": "Po *espérer que* indikativ."
+    },
+    {
+      "type": "input",
+      "question": "Doplň subjonctif od *finir*: Il faut que nous ___ ce travail.",
+      "answers": [
+        "finissions"
+      ],
+      "explanation": "*finiss-* + *-ions*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň subjonctif od *avoir*: Je veux qu’il ___ de bonnes notes.",
+      "answers": [
+        "ait"
+      ],
+      "explanation": "*avoir*: *qu’il ait*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň subjonctif od *aller*: Il faut que j’___ chez le médecin.",
+      "answers": [
+        "aille"
+      ],
+      "explanation": "*aller*: *que j’aille*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Je veux partir.",
+        "Je veux que je parte.",
+        "Je veux que je pars."
+      ],
+      "answer": 0,
+      "explanation": "Stejný podmět → infinitiv."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po *je pense que* (kladná věta) následuje indikativ.",
+      "answer": true,
+      "explanation": "*Je pense qu’il vient.* Subjonctif až v záporu: *Je ne pense pas qu’il vienne.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Il faut que tu prennes le train.“ je správně.",
+      "answer": true,
+      "explanation": "*ils prennent* → *que tu prennes*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Subjonctif se tvoří z kmene tvaru pro *je* v přítomném čase.",
+      "answer": false,
+      "explanation": "Z kmene tvaru pro *ils* (*ils finissent → que je finisse*)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso s tvarem *que je…* v subjonctivu.",
+      "pairs": [
+        [
+          "être",
+          "que je sois"
+        ],
+        [
+          "faire",
+          "que je fasse"
+        ],
+        [
+          "pouvoir",
+          "que je puisse"
+        ],
+        [
+          "savoir",
+          "que je sache"
+        ],
+        [
+          "vouloir",
+          "que je veuille"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Musíme odejít.“",
+      "items": [
+        "Il",
+        "faut",
+        "que",
+        "nous",
+        "partions"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Kdy se ve francouzštině používá subjonctif? Uveď tři situace s příkladem.",
+      "answer": "Po nutnosti (*Il faut que tu viennes*), po vůli nebo přání týkajícím se jiné osoby (*Je veux que tu restes*) a po pocitech (*Je suis content que tu sois là*). Také po pochybnosti a spojkách *pour que, avant que, bien que*."
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky tři věci, které musíš tento týden udělat, s *il faut que*.",
+      "answer": "Například: *Il faut que je fasse mes devoirs. Il faut que j’aille chez le dentiste. Il faut que je range ma chambre.*"
+    }
+  ]
+}

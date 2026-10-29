@@ -1,0 +1,479 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "trpny-rod",
+  "title": "Trpný rod (la voix passive)",
+  "emoji": "🏗️",
+  "explanations": [
+    {
+      "title": "Z činného do trpného",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Gustave Eiffel postavil věž.“ × „Věž **byla postavena** Gustavem Eiffelem.“ Obě věty říkají totéž, ale v druhé je hlavní **věž**, ne stavitel. Takovou větu najdeš v novinách, v průvodcích i v dějepise."
+        },
+        {
+          "type": "text",
+          "text": "Francouzský trpný rod se tvoří skoro jako český: *být* + příčestí. Česky *byla postavena*, francouzsky *a été construite*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Činný rod",
+          "definition": "Věta, kde podmět činnost **dělá**.",
+          "example": "*Le chat mange la souris.* = Kočka jí myš."
+        },
+        {
+          "type": "term",
+          "term": "Trpný rod",
+          "definition": "Věta, kde podmět činnost **snáší**, děje se mu něco. Francouzsky *la voix passive*.",
+          "example": "*La souris est mangée par le chat.* = Myš je sežrána kočkou."
+        },
+        {
+          "type": "term",
+          "term": "Příčestí minulé",
+          "definition": "Tvar slovesa jako v passé composé: *mangé, fini, pris, construit, écrit*.",
+          "example": "construire → construit"
+        },
+        {
+          "type": "term",
+          "term": "Původce",
+          "definition": "Kdo činnost dělá. V trpném rodě ho uvádí předložka **par** (česky 7. pád).",
+          "example": "*par Gustave Eiffel* = Gustavem Eiffelem"
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi v činné větě **předmět** (co se dělá): *Eiffel a construit **la tour***.",
+            "Udělej z něj **podmět**: *La tour…*",
+            "Dej sloveso **être** do stejného času, v jakém bylo původní sloveso: *a construit* (passé composé) → *a été*.",
+            "Přidej **příčestí** a shodni ho s podmětem: *construit**e*** (la tour).",
+            "Původní podmět připoj s **par**: *par Gustave Eiffel*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Výsledek: *La tour **a été construite** par Gustave Eiffel.*"
+        },
+        {
+          "type": "heading",
+          "text": "Trpný rod v různých časech"
+        },
+        {
+          "type": "table",
+          "head": [
+            "čas",
+            "tvar *être*",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "présent",
+              "est",
+              "La lettre **est écrite** par Léa.",
+              "Dopis je psán Leou."
+            ],
+            [
+              "passé composé",
+              "a été",
+              "La lettre **a été écrite**.",
+              "Dopis byl napsán."
+            ],
+            [
+              "imparfait",
+              "était",
+              "La lettre **était écrite** en anglais.",
+              "Dopis byl napsán anglicky."
+            ],
+            [
+              "futur simple",
+              "sera",
+              "La lettre **sera écrite** demain.",
+              "Dopis bude napsán zítra."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Příčestí se vždy shoduje s podmětem: *Les maisons ont été construit**es**.* Samo *été* se nemění nikdy."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Le gâteau est",
+                "after": "par ma mère.",
+                "options": [
+                  "préparé",
+                  "préparée",
+                  "préparés"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Les fenêtres ont été",
+                "after": ".",
+                "options": [
+                  "fermées",
+                  "fermés",
+                  "fermé"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "La Joconde a été",
+                "after": "par Léonard de Vinci.",
+                "options": [
+                  "peinte",
+                  "peint",
+                  "peints"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Le match",
+                "after": "retransmis demain.",
+                "options": [
+                  "sera",
+                  "est été",
+                  "était être"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď do trpného rodu: Le professeur corrige les devoirs.",
+          "answer": "Předmět *les devoirs* → podmět. Čas přítomný → *sont*. Příčestí v množném čísle: **Les devoirs sont corrigés par le professeur.**"
+        },
+        {
+          "type": "example",
+          "question": "Převeď do trpného rodu: Molière a écrit cette pièce.",
+          "answer": "Passé composé → *a été*; *la pièce* je ženského rodu → *écrite*: **Cette pièce a été écrite par Molière.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "La tour a été construit par Eiffel.",
+          "right": "La tour a été construite par Eiffel.",
+          "why": "V trpném rodě se příčestí shoduje s podmětem (*la tour* → *construite*)."
+        },
+        {
+          "type": "summary",
+          "text": "Trpný rod = **être** (ve správném čase) + **příčestí** shodné s podmětem + **par** + původce. *La tour a été construite par Eiffel.*"
+        }
+      ]
+    },
+    {
+      "title": "Zprávy a nápisy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že čteš francouzské zprávy: *Un nouveau pont a été inauguré. Trois voleurs ont été arrêtés.* Kdo most otevřel nebo kdo zloděje zatkl, často není důležité. Proto zprávy používají trpný rod."
+        },
+        {
+          "type": "text",
+          "text": "Mluvená francouzština ale trpný rod moc nemá ráda. Místo něj často řekne **on** + činný rod. Obojí si teď ukážeme."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trpný rod",
+          "definition": "Tvar *être* + příčestí minulé. Podmět činnost nedělá, ale „snáší“.",
+          "example": "Le pont **a été inauguré**. = Most byl otevřen."
+        },
+        {
+          "type": "term",
+          "term": "on",
+          "definition": "Neurčité zájmeno: „lidé, někdo, my“. Sloveso má tvar jako u *il*. Česky často zvratné *se*.",
+          "example": "*On parle français ici.* = Mluví se tu francouzsky."
+        },
+        {
+          "type": "term",
+          "term": "Přímý předmět",
+          "definition": "Předmět bez předložky. Jen sloveso s přímým předmětem jde dát do trpného rodu.",
+          "example": "arrêter **les voleurs** → les voleurs sont arrêtés"
+        },
+        {
+          "type": "heading",
+          "text": "Zprávy"
+        },
+        {
+          "type": "text",
+          "text": "*Hier soir, trois voleurs **ont été arrêtés** par la police à Lyon. Les bijoux **ont été retrouvés** dans une voiture. Le musée **sera rouvert** lundi.*"
+        },
+        {
+          "type": "text",
+          "text": "= Včera večer byli v Lyonu policií zatčeni tři zloději. Šperky byly nalezeny v autě. Muzeum bude znovu otevřeno v pondělí."
+        },
+        {
+          "type": "list",
+          "items": [
+            "*ont été arrêtés* – podmět *trois voleurs* (muži, mn. č.) → *-s*.",
+            "*ont été retrouvés* – *les bijoux* (m. r., mn. č.) → *-s*.",
+            "*sera rouvert* – budoucí čas *être* → *sera*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hovorově: on"
+        },
+        {
+          "type": "table",
+          "head": [
+            "trpný rod (psaný)",
+            "on + činný rod (mluvený)",
+            "česky"
+          ],
+          "rows": [
+            [
+              "Le français est parlé ici.",
+              "On parle français ici.",
+              "Mluví se tu francouzsky."
+            ],
+            [
+              "Les voleurs ont été arrêtés.",
+              "On a arrêté les voleurs.",
+              "Zloděje zatkli."
+            ],
+            [
+              "La porte est fermée à 20 h.",
+              "On ferme la porte à 20 h.",
+              "Dveře se zavírají ve 20 h."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: ne každé sloveso"
+        },
+        {
+          "type": "text",
+          "text": "Trpný rod jde jen u sloves s přímým předmětem (*construire qqch, écrire qqch*). Slovesa jako *téléphoner à*, *parler à* nebo *aller* ho nemají. Česky „Bylo mu zavoláno“ se francouzsky řekne: ***On** lui a téléphoné.*"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď věty: jsou v činném, nebo trpném rodě?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "činný rod",
+              "trpný rod"
+            ],
+            "items": [
+              {
+                "text": "La police arrête le voleur.",
+                "group": 0
+              },
+              {
+                "text": "On a fermé le musée.",
+                "group": 0
+              },
+              {
+                "text": "Marie est partie.",
+                "group": 0
+              },
+              {
+                "text": "Le voleur est arrêté.",
+                "group": 1
+              },
+              {
+                "text": "Le musée a été fermé.",
+                "group": 1
+              },
+              {
+                "text": "Ces photos ont été prises par Léa.",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pozor na *Marie est partie*: vypadá jako *être* + příčestí, ale je to jen passé composé slovesa *partir*. Trpný rod to není, protože Marie činnost sama dělá."
+        },
+        {
+          "type": "example",
+          "question": "Řekni hovorově s *on*: Les billets sont vendus à l’entrée.",
+          "answer": "Předmět zůstane předmětem, podmět bude *on*: **On vend les billets à l’entrée.**"
+        },
+        {
+          "type": "example",
+          "question": "Převeď do trpného rodu: On a volé mon vélo.",
+          "answer": "Předmět *mon vélo* → podmět, *on* se vynechá (původce neznáme): **Mon vélo a été volé.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Il a été téléphoné.",
+          "right": "On lui a téléphoné.",
+          "why": "*téléphoner à* nemá přímý předmět, takže trpný rod nejde. Použij *on*."
+        },
+        {
+          "type": "summary",
+          "text": "Ve zprávách: *Trois voleurs ont été arrêtés.* V hovoru častěji *on*: *On a arrêté trois voleurs.* Trpný rod jen u sloves s přímým předmětem, příčestí se shoduje s podmětem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "La lettre ___ par Paul.",
+      "options": [
+        "est écrite",
+        "est écrit",
+        "a écrite"
+      ],
+      "answer": 0,
+      "explanation": "*être* + příčestí shodné s *la lettre*."
+    },
+    {
+      "type": "choice",
+      "question": "Les maisons ont été ___ en 1900.",
+      "options": [
+        "construites",
+        "construits",
+        "construit"
+      ],
+      "answer": 0,
+      "explanation": "*les maisons* = ž. r., mn. č. → *construites*."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou předložkou uvedeš původce v trpném rodě?",
+      "options": [
+        "par",
+        "de la part",
+        "avec"
+      ],
+      "answer": 0,
+      "explanation": "*par* = česky 7. pád (kým)."
+    },
+    {
+      "type": "choice",
+      "question": "Le musée ___ rouvert lundi prochain.",
+      "options": [
+        "sera",
+        "a été",
+        "était"
+      ],
+      "answer": 0,
+      "explanation": "Budoucnost → *sera* + příčestí."
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí od *peindre*: La Joconde a été ___ par Léonard de Vinci.",
+      "answers": [
+        "peinte"
+      ],
+      "explanation": "*peint* + *e* (la Joconde)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar *être*: Les voleurs ___ arrêtés hier. (passé composé)",
+      "answers": [
+        "ont été"
+      ],
+      "explanation": "Passé composé trpného rodu: *ont été* + příčestí."
+    },
+    {
+      "type": "input",
+      "question": "Přepiš s *on* (napiš jen první dvě slova): Le français est parlé ici. → ___ français ici.",
+      "answers": [
+        "On parle"
+      ],
+      "explanation": "Hovorová náhrada trpného rodu: *On parle français ici.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Marie est partie.“ je věta v trpném rodě.",
+      "answer": false,
+      "explanation": "Je to passé composé slovesa *partir* s *être*; Marie sama odešla."
+    },
+    {
+      "type": "truefalse",
+      "question": "V trpném rodě se příčestí shoduje s podmětem.",
+      "answer": true,
+      "explanation": "*La tour a été construite.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Il a été téléphoné par sa mère.“ je správně.",
+      "answer": false,
+      "explanation": "*téléphoner à* nemá přímý předmět; správně *Sa mère lui a téléphoné.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj činnou větu s trpnou.",
+      "pairs": [
+        [
+          "Paul lave la voiture.",
+          "La voiture est lavée par Paul."
+        ],
+        [
+          "Paul a lavé la voiture.",
+          "La voiture a été lavée par Paul."
+        ],
+        [
+          "Paul lavera la voiture.",
+          "La voiture sera lavée par Paul."
+        ]
+      ],
+      "explanation": "Čas se pozná na tvaru *être*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Můj telefon byl ukraden.“",
+      "items": [
+        "Mon",
+        "téléphone",
+        "a",
+        "été",
+        "volé"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří trpný rod ve francouzštině? Uveď příklad v passé composé.",
+      "answer": "*être* ve správném čase + příčestí minulé, které se shoduje s podmětem, původce s *par*. Např. *La tour a été construite par Gustave Eiffel.*"
+    },
+    {
+      "type": "open",
+      "question": "Proč a jak se v mluvené francouzštině trpný rod často nahrazuje?",
+      "answer": "Trpný rod zní knižně, proto se v hovoru používá *on* + činný rod: místo *Le français est parlé ici* řekneme *On parle français ici*."
+    }
+  ]
+}

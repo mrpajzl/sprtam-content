@@ -1,0 +1,488 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "conditionnel-podminkove-vety",
+  "title": "Conditionnel présent a podmínkové věty",
+  "emoji": "🤔",
+  "explanations": [
+    {
+      "title": "Tvoření",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„**Šel bych** do kina.“ „**Mohl bys** mi pomoct?“ „Kdybych měl peníze, **koupil bych** si kolo.“ Česky přidáš ke slovesu *bych, bys, by*. Francouzsky na to máš **conditionnel**, podmiňovací způsob."
+        },
+        {
+          "type": "text",
+          "text": "Conditionnel už vlastně znáš: *je voudrais* (chtěl bych) je přesně jeho tvar. Teď se naučíš tvořit ho u všech sloves."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Conditionnel présent",
+          "definition": "Podmiňovací způsob přítomný. Vyjadřuje, co **by** se stalo, zdvořilou prosbu, přání nebo radu. Česky „bych, bys, by“.",
+          "example": "J’**aimerais** voyager. = Rád bych cestoval."
+        },
+        {
+          "type": "term",
+          "term": "Kmen budoucího času",
+          "definition": "Připomenutí z futur simple: infinitiv (u *-re* bez *-e*) nebo nepravidelný kmen na *-r* (*ser-, aur-, ir-, fer-*…).",
+          "example": "parler-, prendr-, ser-"
+        },
+        {
+          "type": "term",
+          "term": "Koncovky imparfait",
+          "definition": "Připomenutí: *-ais, -ais, -ait, -ions, -iez, -aient*.",
+          "example": "je parlais, nous parlions"
+        },
+        {
+          "type": "heading",
+          "text": "Recept: dva časy v jednom"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi **kmen budoucího času**: *parler-, finir-, prendr-, ser-, aur-*.",
+            "Přidej **koncovky imparfait**: *-ais, -ais, -ait, -ions, -iez, -aient*.",
+            "Hotovo: *je parlerais, tu finirais, il prendrait, nous serions*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "parler",
+            "être",
+            "avoir"
+          ],
+          "rows": [
+            [
+              "je",
+              "parler**ais**",
+              "ser**ais**",
+              "aur**ais**"
+            ],
+            [
+              "tu",
+              "parler**ais**",
+              "ser**ais**",
+              "aur**ais**"
+            ],
+            [
+              "il / elle",
+              "parler**ait**",
+              "ser**ait**",
+              "aur**ait**"
+            ],
+            [
+              "nous",
+              "parler**ions**",
+              "ser**ions**",
+              "aur**ions**"
+            ],
+            [
+              "vous",
+              "parler**iez**",
+              "ser**iez**",
+              "aur**iez**"
+            ],
+            [
+              "ils / elles",
+              "parler**aient**",
+              "ser**aient**",
+              "aur**aient**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ostatní nepravidelná slovesa mají stejné kmeny jako ve futur simple: *j’irais, je ferais, je viendrais, je pourrais, je voudrais, je devrais, je verrais, je saurais*; *il faudrait*."
+        },
+        {
+          "type": "heading",
+          "text": "K čemu se hodí"
+        },
+        {
+          "type": "list",
+          "items": [
+            "zdvořilá prosba: *Pourriez-vous m’aider ?* = Mohl byste mi pomoct?",
+            "přání: *J’aimerais aller au Japon.* = Rád bych jel do Japonska.",
+            "rada: *Tu devrais dormir plus.* = Měl bys víc spát.",
+            "představa, co by bylo: *Avec un million, je voyagerais.* = S milionem bych cestoval."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je",
+                "after": "un café, s’il vous plaît.",
+                "options": [
+                  "voudrais",
+                  "voudrai",
+                  "veux bien"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu",
+                "after": "travailler plus.",
+                "options": [
+                  "devrais",
+                  "devras",
+                  "doives"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Est-ce que vous",
+                "after": "m’aider ?",
+                "options": [
+                  "pourriez",
+                  "pouvriez",
+                  "pourrez"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous",
+                "after": "contents.",
+                "options": [
+                  "serions",
+                  "serons",
+                  "étions"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils",
+                "after": "en vacances.",
+                "options": [
+                  "iraient",
+                  "alleraient",
+                  "iront"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř conditionnel: *finir*, osoba *nous*.",
+          "answer": "Kmen budoucího času *finir-* + koncovka imparfait *-ions* → **nous finirions**."
+        },
+        {
+          "type": "example",
+          "question": "Řekni zdvořile: „Můžete zavřít okno?“",
+          "answer": "Conditionnel od *pouvoir* (*pourr-* + *-iez*): **Pourriez-vous fermer la fenêtre, s’il vous plaît ?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "je serai content (= byl bych rád)",
+          "right": "je serais content",
+          "why": "*je serai* (bez *s*) je budoucí čas „budu“. Podmiňovací způsob končí na *-ais*: *je serais* = byl bych. Vyslovuje se skoro stejně, proto pozor při psaní."
+        },
+        {
+          "type": "summary",
+          "text": "Conditionnel = kmen budoucího času + koncovky imparfait (*je parlerais, je serais, j’aurais, j’irais*). Hodí se na prosby, přání, rady a představy. Česky „bych, bys, by“."
+        }
+      ]
+    },
+    {
+      "title": "Kdybych…",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Kdybych vyhrál v loterii, koupil bych si dům u moře.“ Takové představy jsou zábavné a hodí se při psaní slohu i v ústní maturitě. Francouzština na ně má pevné pravidlo časů, které si stačí jednou zapamatovat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podmínková věta",
+          "definition": "Souvětí z dvou částí: **podmínka** (*si* = když, kdyby) a **důsledek** (co se stane nebo stalo by).",
+          "example": "Si j’avais le temps, je viendrais. = Kdybych měl čas, přišel bych."
+        },
+        {
+          "type": "term",
+          "term": "Skutečná podmínka",
+          "definition": "Podmínka, která se klidně může splnit.",
+          "example": "S’il fait beau demain, nous irons à la plage."
+        },
+        {
+          "type": "term",
+          "term": "Neskutečná podmínka",
+          "definition": "Představa, která teď neplatí nebo je nepravděpodobná. Česky „kdyby“.",
+          "example": "Si j’étais riche… = Kdybych byl bohatý… (ale nejsem)"
+        },
+        {
+          "type": "heading",
+          "text": "Dva typy podmínky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "typ",
+            "část se si",
+            "druhá část",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "skutečná (jestli)",
+              "přítomný čas",
+              "futur simple",
+              "*S’il **pleut**, je **resterai** à la maison.*"
+            ],
+            [
+              "neskutečná (kdyby)",
+              "**imparfait**",
+              "**conditionnel**",
+              "*S’il **pleuvait**, je **resterais** à la maison.*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pravidlo zlatým písmem: **po *si* nikdy conditionnel ani futur.** Conditionnel patří jen do druhé části."
+        },
+        {
+          "type": "heading",
+          "text": "Sen o loterii"
+        },
+        {
+          "type": "text",
+          "text": "*Si je **gagnais** au loto, j’**achèterais** une maison au bord de la mer. Je **ferais** le tour du monde avec mes amis. Mes parents ne **travailleraient** plus. Et toi, qu’est-ce que tu **ferais** si tu **étais** riche ?*"
+        },
+        {
+          "type": "text",
+          "text": "= Kdybych vyhrál v loterii, koupil bych si dům u moře. Objel bych s kamarády svět. Rodiče by už nepracovali. A co bys dělal ty, kdybys byl bohatý?"
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání s angličtinou"
+        },
+        {
+          "type": "text",
+          "text": "Funguje to stejně jako anglický *second conditional*: *If I **won** the lottery, I **would buy** a house.* → *Si je **gagnais** au loto, j’**achèterais** une maison.* Anglické *past simple* = francouzské *imparfait*, *would* = conditionnel."
+        },
+        {
+          "type": "text",
+          "text": "Pořadí částí může být i obrácené: *J’achèterais une maison si je gagnais au loto.* Časy zůstávají stejné."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Spoj podmínku s pokračováním: otoč kartičku a zkontroluj."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Si j’avais un chien…",
+                "back": "…je le promènerais tous les jours."
+              },
+              {
+                "front": "Si tu étudiais plus…",
+                "back": "…tu aurais de meilleures notes."
+              },
+              {
+                "front": "S’il faisait beau…",
+                "back": "…nous irions à la plage."
+              },
+              {
+                "front": "Si nous habitions à Paris…",
+                "back": "…nous visiterions le Louvre."
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň časy: Si j’(avoir) ___ le temps, je (lire) ___ plus.",
+          "answer": "Neskutečná podmínka: po *si* imparfait → *j’avais*; druhá část conditionnel → *je lirais*. **Si j’avais le temps, je lirais plus.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Kdyby byla nemocná, zůstala by doma.",
+          "answer": "„Kdyby“ → *si* + imparfait, „zůstala by“ → conditionnel: **Si elle était malade, elle resterait à la maison.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Si j’aurais de l’argent, j’achèterais un vélo.",
+          "right": "Si j’avais de l’argent, j’achèterais un vélo.",
+          "why": "Po *si* nikdy conditionnel. Česky „kdybych měl“ svádí, ale francouzsky je to *imparfait*."
+        },
+        {
+          "type": "summary",
+          "text": "Kdyby → **si + imparfait, conditionnel**: *Si j’étais riche, je voyagerais.* Jestli → *si + přítomný čas, futur*. Po *si* nikdy conditionnel ani futur."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Conditionnel od *être* pro *je*:",
+      "options": [
+        "je serais",
+        "je serai",
+        "j’étais"
+      ],
+      "answer": 0,
+      "explanation": "Kmen *ser-* + *-ais*. *Je serai* je budoucí čas."
+    },
+    {
+      "type": "choice",
+      "question": "Conditionnel od *aller* pro *nous*:",
+      "options": [
+        "nous irions",
+        "nous allerions",
+        "nous irons"
+      ],
+      "answer": 0,
+      "explanation": "Kmen *ir-* + *-ions*."
+    },
+    {
+      "type": "choice",
+      "question": "Si j’___ riche, je voyagerais.",
+      "options": [
+        "étais",
+        "serais",
+        "suis"
+      ],
+      "answer": 0,
+      "explanation": "Kdyby → po *si* imparfait."
+    },
+    {
+      "type": "choice",
+      "question": "S’il fait beau demain, nous ___ à la plage.",
+      "options": [
+        "irons",
+        "irions",
+        "allions"
+      ],
+      "answer": 0,
+      "explanation": "Skutečná podmínka (přítomný čas po *si*) → futur simple."
+    },
+    {
+      "type": "input",
+      "question": "Doplň conditionnel od *pouvoir*: ___-vous m’aider ?",
+      "answers": [
+        "Pourriez"
+      ],
+      "explanation": "Kmen *pourr-* + *-iez*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň conditionnel od *devoir*: Tu ___ dormir plus.",
+      "answers": [
+        "devrais"
+      ],
+      "explanation": "Rada → conditionnel: *tu devrais*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň imparfait od *avoir*: Si j’___ le temps, je viendrais.",
+      "answers": [
+        "avais"
+      ],
+      "explanation": "Po *si* v neskutečné podmínce imparfait."
+    },
+    {
+      "type": "input",
+      "question": "Doplň conditionnel od *faire*: Qu’est-ce que tu ___ si tu étais riche ?",
+      "answers": [
+        "ferais"
+      ],
+      "explanation": "Kmen *fer-* + *-ais*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Si j’aurais le temps, je viendrais.“ je správně.",
+      "answer": false,
+      "explanation": "Po *si* nikdy conditionnel: *Si j’avais le temps…*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Conditionnel se tvoří z kmene budoucího času a koncovek imparfait.",
+      "answer": true,
+      "explanation": "Např. *parler-* + *-ais* = *je parlerais*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je voudrais un thé“ je zdvořilejší než „Je veux un thé“.",
+      "answer": true,
+      "explanation": "*Je voudrais* je conditionnel, zní zdvořile."
+    },
+    {
+      "type": "match",
+      "question": "Spoj podmínku s důsledkem.",
+      "pairs": [
+        [
+          "Si j’avais faim,",
+          "je mangerais."
+        ],
+        [
+          "S’il pleut demain,",
+          "je resterai à la maison."
+        ],
+        [
+          "Si nous étions en vacances,",
+          "nous dormirions plus."
+        ],
+        [
+          "Si tu viens,",
+          "on ira au cinéma."
+        ]
+      ],
+      "explanation": "Imparfait → conditionnel, přítomný čas → futur."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Kdybych byl bohatý, koupil bych si dům.“",
+      "items": [
+        "Si",
+        "j’étais",
+        "riche,",
+        "j’achèterais",
+        "une maison"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak se tvoří věty typu „Kdybych…, …bych“.",
+      "answer": "Část se *si* má imparfait, druhá část conditionnel (kmen budoucího času + *-ais, -ait…*). Např. *Si j’avais un chien, je le promènerais.* Po *si* nikdy conditionnel."
+    },
+    {
+      "type": "open",
+      "question": "Co bys dělal(a), kdybys měl(a) volný celý týden? Odpověz francouzsky aspoň dvěma větami.",
+      "answer": "Například: *Si j’avais une semaine libre, j’irais à la montagne. Je ferais du vélo et je dormirais beaucoup.*"
+    }
+  ]
+}
