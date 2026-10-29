@@ -1,0 +1,458 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "kirchhoffovy-zakony-razeni-rezistoru",
+  "title": "Kirchhoffovy zákony a řazení rezistorů",
+  "emoji": "🔀",
+  "explanations": [
+    {
+      "title": "Křižovatky a okruhy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve skutečném zařízení není jeden spotřebič, ale desítky. V rozvaděči stroje se proud větví k motorům, ventilům a čidlům. Abys věděl, kolik proudu kam teče a jaké napětí kde je, potřebuješ dvě jednoduchá pravidla – Kirchhoffovy zákony."
+        },
+        {
+          "type": "text",
+          "text": "Z nich pak vyplývá, jak spočítat výsledný odpor rezistorů zapojených za sebou nebo vedle sebe."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: Ohmův zákon",
+          "definition": "Proud I = U / R, napětí U = R · I. Odpor R se měří v ohmech (Ω)."
+        },
+        {
+          "type": "term",
+          "term": "Uzel",
+          "definition": "Místo, kde se spojují aspoň tři vodiče. Proud se v něm rozdělí nebo slije.",
+          "example": "Svorka, ze které vedou dráty ke dvěma žárovkám."
+        },
+        {
+          "type": "term",
+          "term": "Smyčka",
+          "definition": "Uzavřená cesta obvodem, po které se dá obejít dokola a vrátit do výchozího bodu.",
+          "example": "Zdroj → rezistor R₁ → rezistor R₂ → zpět ke zdroji."
+        },
+        {
+          "type": "term",
+          "term": "Úbytek napětí",
+          "definition": "Napětí, které „spotřebuje“ rezistor nebo spotřebič, když jím teče proud. Spočítá se jako U = R · I.",
+          "example": "Na rezistoru 10 Ω při proudu 0,5 A je úbytek 5 V."
+        },
+        {
+          "type": "heading",
+          "text": "1. Kirchhoffův zákon – uzel"
+        },
+        {
+          "type": "text",
+          "text": "Představ si křižovatku potrubí. Kolik vody přiteče, tolik musí odtéct. Stejně v uzlu: **součet proudů do uzlu vtékajících = součet proudů vytékajících**. Náboj se v uzlu nehromadí ani neztrácí."
+        },
+        {
+          "type": "example",
+          "question": "Do uzlu vtéká proud 5 A. Jednou větví odtéká 2 A. Kolik odtéká druhou větví?",
+          "answer": "5 = 2 + I₂, takže I₂ = **3 A**."
+        },
+        {
+          "type": "heading",
+          "text": "2. Kirchhoffův zákon – smyčka"
+        },
+        {
+          "type": "text",
+          "text": "Představ si túru do kopce a zpět. Kolik metrů vystoupáš, tolik zase sestoupíš. Ve smyčce: **napětí zdrojů = součet úbytků napětí na spotřebičích**."
+        },
+        {
+          "type": "example",
+          "question": "Zdroj 24 V napájí dva rezistory za sebou. Na prvním je úbytek 9 V. Jaký je na druhém?",
+          "answer": "24 = 9 + U₂, takže U₂ = **15 V**."
+        },
+        {
+          "type": "heading",
+          "text": "Za sebou a vedle sebe"
+        },
+        {
+          "type": "term",
+          "term": "Sériové zapojení",
+          "definition": "Rezistory za sebou v jedné větvi. Všemi teče **stejný proud**, napětí se mezi ně dělí. Výsledný odpor `R = R₁ + R₂ + …`.",
+          "example": "Starší vánoční řetěz: když jedna žárovka praskne, zhasnou všechny."
+        },
+        {
+          "type": "term",
+          "term": "Paralelní zapojení",
+          "definition": "Rezistory vedle sebe mezi stejnými dvěma uzly. Na všech je **stejné napětí**, proud se mezi ně dělí. `1/R = 1/R₁ + 1/R₂ + …`. Výsledný odpor je menší než nejmenší z nich.",
+          "example": "Spotřebiče v zásuvkách v bytě jsou zapojené paralelně, každý má 230 V."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "sériové",
+              "paralelní"
+            ],
+            "items": [
+              {
+                "text": "stejný proud všemi rezistory",
+                "group": 0
+              },
+              {
+                "text": "stejné napětí na všech",
+                "group": 1
+              },
+              {
+                "text": "odpory se sčítají",
+                "group": 0
+              },
+              {
+                "text": "výsledný odpor je menší než nejmenší",
+                "group": 1
+              },
+              {
+                "text": "napětí se dělí",
+                "group": 0
+              },
+              {
+                "text": "proud se dělí",
+                "group": 1
+              },
+              {
+                "text": "spotřebiče v bytě",
+                "group": 1
+              },
+              {
+                "text": "dělič napětí",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti. Pomůže ti, když si u každé představíš, jestli proud má jen jednu cestu, nebo víc cest."
+        },
+        {
+          "type": "example",
+          "question": "Rezistory 30 Ω a 60 Ω jsou zapojené paralelně na 12 V. Jaký je výsledný odpor a celkový proud?",
+          "answer": "1/R = 1/30 + 1/60 = 2/60 + 1/60 = 3/60, R = **20 Ω**. Proudy: I₁ = 12/30 = 0,4 A, I₂ = 12/60 = 0,2 A, celkem 0,6 A. Kontrola: 12 / 20 = 0,6 A. ✓"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dva rezistory 100 Ω paralelně dají 200 Ω.",
+          "right": "Dva rezistory 100 Ω paralelně dají 50 Ω.",
+          "why": "Paralelně proud dostane další cestu, takže teče snáz. Výsledný odpor proto klesá, nesčítá se."
+        },
+        {
+          "type": "summary",
+          "text": "1. K. z.: proudy do uzlu = proudy z uzlu. 2. K. z.: ve smyčce napětí zdrojů = součet úbytků. Sériově R = R₁ + R₂ (stejný proud), paralelně 1/R = 1/R₁ + 1/R₂ (stejné napětí)."
+        }
+      ]
+    },
+    {
+      "title": "Postup výpočtu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve schématu senzoru najdeš rezistory poskládané za sebou i vedle sebe. Abys spočítal proudy a napětí, postupně ho zjednodušíš na jeden rezistor a pak se vrátíš zpět. Tady je přesný postup."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Uzel a větev",
+          "definition": "**Uzel** je spoj aspoň tří vodičů. **Větev** je část obvodu mezi dvěma uzly, ve které teče stejný proud.",
+          "example": "Dva paralelní rezistory tvoří dvě větve mezi stejnými dvěma uzly."
+        },
+        {
+          "type": "term",
+          "term": "1. Kirchhoffův zákon",
+          "definition": "Algebraický součet proudů v uzlu je nula: `ΣI = 0`. Proudy do uzlu bereme kladně, z uzlu záporně.",
+          "example": "I₁ = I₂ + I₃."
+        },
+        {
+          "type": "term",
+          "term": "2. Kirchhoffův zákon",
+          "definition": "V uzavřené smyčce je součet napětí zdrojů roven součtu úbytků napětí: `ΣU_zdrojů = Σ R · I`.",
+          "example": "U = U₁ + U₂."
+        },
+        {
+          "type": "term",
+          "term": "Výsledný (náhradní) odpor",
+          "definition": "Jeden odpor, který by obvod zatěžoval úplně stejně jako skupina rezistorů.",
+          "example": "Sériově 10 Ω + 20 Ω nahradí jeden 30Ω rezistor."
+        },
+        {
+          "type": "term",
+          "term": "Dělič napětí",
+          "definition": "Dva rezistory v sérii. Napětí se rozdělí v poměru odporů: `U₂ = U · R₂ / (R₁ + R₂)`.",
+          "example": "12 V, R₁ = R₂ → na každém 6 V."
+        },
+        {
+          "type": "heading",
+          "text": "Vzorce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "sériově",
+            "paralelně"
+          ],
+          "rows": [
+            [
+              "proud",
+              "stejný: I = I₁ = I₂",
+              "dělí se: I = I₁ + I₂"
+            ],
+            [
+              "napětí",
+              "dělí se: U = U₁ + U₂",
+              "stejné: U = U₁ = U₂"
+            ],
+            [
+              "odpor",
+              "R = R₁ + R₂ + …",
+              "1/R = 1/R₁ + 1/R₂ + …"
+            ],
+            [
+              "dva rezistory",
+              "R = R₁ + R₂",
+              "R = R₁ · R₂ / (R₁ + R₂)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup u smíšeného zapojení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi skupinu rezistorů, které jsou čistě sériově nebo čistě paralelně.",
+            "Nahraď ji jedním náhradním odporem a schéma si překresli.",
+            "Opakuj, dokud nezbude jeden odpor.",
+            "Ohmovým zákonem spočítej celkový proud ze zdroje.",
+            "Vracej se zpět: na každé části spočítej napětí a proudy.",
+            "Zkontroluj Kirchhoffovy zákony v uzlech a smyčkách."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "R₁ = 10 Ω je v sérii s paralelní dvojicí R₂ = R₃ = 40 Ω. Zdroj 30 V. Jaké jsou proudy?",
+          "answer": "R₂ ∥ R₃ = 40 · 40 / 80 = 20 Ω. Celkem R = 10 + 20 = 30 Ω. I = 30 / 30 = **1 A**. Na R₁: U₁ = 10 · 1 = 10 V. Na dvojici zbývá 30 − 10 = 20 V. I₂ = I₃ = 20 / 40 = **0,5 A**. Kontrola uzlu: 0,5 + 0,5 = 1 A. ✓"
+        },
+        {
+          "type": "example",
+          "question": "Dělič napětí: R₁ = 8 kΩ, R₂ = 2 kΩ, vstup 10 V. Jaké je napětí na R₂?",
+          "answer": "U₂ = U · R₂ / (R₁ + R₂) = 10 · 2 / 10 = **2 V**. Na R₁ zbývá 8 V."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "10 Ω a 15 Ω sériově = ",
+                "after": " Ω",
+                "options": [
+                  "25",
+                  "6",
+                  "150"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "10 Ω a 15 Ω paralelně = ",
+                "after": " Ω",
+                "options": [
+                  "25",
+                  "6",
+                  "12,5"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Tři rezistory 30 Ω paralelně = ",
+                "after": " Ω",
+                "options": [
+                  "90",
+                  "10",
+                  "30"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Vyzkoušej si odhad: paralelní výsledek musí být vždy menší než nejmenší rezistor."
+        },
+        {
+          "type": "mistake",
+          "wrong": "1/R = 1/10 + 1/15 = 1/25, tedy R = 25 Ω.",
+          "right": "1/10 + 1/15 = 3/30 + 2/30 = 5/30, tedy R = 30/5 = 6 Ω.",
+          "why": "Zlomky se nesčítají sečtením jmenovatelů. Převeď je na společný jmenovatel, nebo použij vzorec R₁ · R₂ / (R₁ + R₂)."
+        },
+        {
+          "type": "summary",
+          "text": "Smíšený obvod zjednodušuj po skupinách na jeden odpor, spočítej celkový proud a vracej se zpět. Na konci zkontroluj ΣI = 0 v uzlech a ΣU v smyčkách."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Do uzlu vtékají proudy 3 A a 2 A, vytéká jedním vodičem. Jak velký proud v A?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Podle 1. Kirchhoffova zákona 3 + 2 = 5 A."
+    },
+    {
+      "type": "input",
+      "question": "Rezistory 120 Ω a 80 Ω v sérii. Výsledný odpor v Ω =",
+      "answers": [
+        "200"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Rezistory 60 Ω a 30 Ω paralelně. Výsledný odpor v Ω =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "60 · 30 / 90 = 1 800 / 90 = 20 Ω.",
+      "hints": [
+        "Pro dva rezistory použij součin lomeno součtem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je stejné u všech rezistorů zapojených paralelně?",
+      "options": [
+        "napětí",
+        "proud",
+        "výkon",
+        "odpor"
+      ],
+      "answer": 0,
+      "explanation": "Paralelní rezistory jsou připojené ke stejným dvěma uzlům, mají stejné napětí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výsledný odpor paralelního zapojení je vždy menší než nejmenší z rezistorů.",
+      "answer": true,
+      "explanation": "Každá další větev dává proudu další cestu."
+    },
+    {
+      "type": "truefalse",
+      "question": "V sériovém zapojení teče každým rezistorem jiný proud.",
+      "answer": false,
+      "explanation": "V sérii je jen jedna cesta, proud je všude stejný."
+    },
+    {
+      "type": "input",
+      "question": "Zdroj 12 V, dva rezistory v sérii. Na prvním je 4,5 V. Napětí na druhém ve V =",
+      "answers": [
+        "7,5"
+      ],
+      "explanation": "2. Kirchhoffův zákon: 12 = 4,5 + U₂.",
+      "hints": [
+        "Součet úbytků ve smyčce se rovná napětí zdroje."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Dělič: R₁ = 3 kΩ, R₂ = 1 kΩ, vstup 12 V. Napětí na R₂ ve V =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "U₂ = 12 · 1 / 4 = 3 V.",
+      "hints": [
+        "Napětí se dělí v poměru odporů.",
+        "R₂ tvoří jakou část celkového odporu?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s popisem.",
+      "pairs": [
+        [
+          "uzel",
+          "spoj aspoň tří vodičů"
+        ],
+        [
+          "smyčka",
+          "uzavřená cesta obvodem"
+        ],
+        [
+          "větev",
+          "část mezi dvěma uzly se stejným proudem"
+        ],
+        [
+          "úbytek napětí",
+          "U = R · I na spotřebiči"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Tři rezistory po 90 Ω jsou zapojeny paralelně. Výsledný odpor je:",
+      "options": [
+        "30 Ω",
+        "270 Ω",
+        "90 Ω",
+        "45 Ω"
+      ],
+      "answer": 0,
+      "explanation": "n stejných rezistorů paralelně: R / n = 90 / 3 = 30 Ω."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky řešení smíšeného zapojení.",
+      "items": [
+        "zjednodušit čistě sériové nebo paralelní skupiny",
+        "získat jeden náhradní odpor",
+        "spočítat celkový proud ze zdroje",
+        "vracet se a počítat napětí a proudy částí",
+        "zkontrolovat Kirchhoffovy zákony"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "R₁ = 10 Ω v sérii s paralelní dvojicí 20 Ω a 20 Ω. Výsledný odpor je:",
+      "options": [
+        "20 Ω",
+        "50 Ω",
+        "30 Ω",
+        "15 Ω"
+      ],
+      "answer": 0,
+      "explanation": "20 ∥ 20 = 10 Ω, plus 10 Ω v sérii = 20 Ω."
+    },
+    {
+      "type": "open",
+      "question": "Vyslov oba Kirchhoffovy zákony a řekni, z čeho vycházejí.",
+      "answer": "1. zákon: součet proudů do uzlu se rovná součtu proudů z uzlu – náboj se v uzlu nehromadí. 2. zákon: v uzavřené smyčce je součet napětí zdrojů roven součtu úbytků napětí – vychází ze zákona zachování energie."
+    },
+    {
+      "type": "open",
+      "question": "Proč jsou spotřebiče v domácnosti zapojené paralelně, a ne sériově?",
+      "answer": "Při paralelním zapojení má každý spotřebič plné síťové napětí 230 V a dá se zapínat a vypínat nezávisle. V sérii by se napětí dělilo a vypnutím jednoho spotřebiče by se přerušil obvod všem."
+    }
+  ]
+}

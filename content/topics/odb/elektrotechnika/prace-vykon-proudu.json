@@ -1,0 +1,388 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "prace-vykon-proudu",
+  "title": "Práce a výkon elektrického proudu",
+  "emoji": "💡",
+  "explanations": [
+    {
+      "title": "Účet za elektřinu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na štítku rychlovarné konvice je 2 000 W, na nabíječce mobilu 20 W. Za elektřinu platíš podle toho, kolik energie spotřebiče odebraly. Kdo umí spočítat práci a výkon proudu, umí odhadnout účet i vybrat správný jistič."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: napětí, proud, odpor",
+          "definition": "Napětí U (V) žene náboj, proud I (A) je náboj za sekundu, odpor R (Ω) proud brzdí. Platí I = U / R."
+        },
+        {
+          "type": "term",
+          "term": "Elektrická práce W",
+          "definition": "Energie, kterou proud předá spotřebiči (na teplo, světlo, pohyb). `W = U · I · t`. Jednotka **joule (J)**.",
+          "example": "Žárovka 12 V, 2 A svítí 10 s: W = 12 · 2 · 10 = 240 J."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický výkon P",
+          "definition": "Práce za jednu sekundu, tedy jak „rychle“ spotřebič bere energii. `P = U · I`. Jednotka **watt (W)**; 1 W = 1 J/s.",
+          "example": "Konvice 230 V, 8,7 A má výkon asi 2 000 W = 2 kW."
+        },
+        {
+          "type": "term",
+          "term": "Kilowatthodina (kWh)",
+          "definition": "Praktická jednotka práce, podle které se platí elektřina. Je to energie, kterou spotřebič s výkonem 1 kW odebere za 1 hodinu. 1 kWh = 3 600 000 J.",
+          "example": "Konvice 2 kW zapnutá 3 minuty (0,05 h) spotřebuje 0,1 kWh."
+        },
+        {
+          "type": "heading",
+          "text": "Jak počítat spotřebu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti výkon spotřebiče ze štítku a převeď na kW.",
+            "Zjisti dobu provozu a převeď na hodiny.",
+            "Vynásob: W (kWh) = P (kW) · t (h).",
+            "Pro cenu vynásob kWh cenou za 1 kWh."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kompresor s příkonem 1,5 kW běží denně 4 hodiny. Kolik spotřebuje za 20 pracovních dní? Kolik to stojí při ceně 6 Kč za kWh (cena je jen příklad)?",
+          "answer": "Za den: 1,5 · 4 = 6 kWh. Za 20 dní: 6 · 20 = **120 kWh**. Cena: 120 · 6 = **720 Kč**."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "W",
+            "items": [
+              {
+                "label": "LED žárovka",
+                "value": 9
+              },
+              {
+                "label": "notebook",
+                "value": 60
+              },
+              {
+                "label": "lednice (v chodu)",
+                "value": 120
+              },
+              {
+                "label": "vrtačka",
+                "value": 700
+              },
+              {
+                "label": "konvice",
+                "value": 2000
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Typické výkony spotřebičů (orientačně). Odhadni, co za hodinu spotřebuje víc: 10 LED žárovek, nebo konvice zapnutá 3 minuty?"
+        },
+        {
+          "type": "heading",
+          "text": "Proč se dráty hřejí"
+        },
+        {
+          "type": "term",
+          "term": "Joulovo teplo",
+          "definition": "Když vodičem teče proud, část energie se mění v teplo. Výkon této ztráty je `P = R · I²`.",
+          "example": "Na tom stojí topná tělesa, pájka i tavná pojistka."
+        },
+        {
+          "type": "example",
+          "question": "Kabel má odpor 0,4 Ω a teče jím 10 A. Jaký výkon se v něm mění v teplo? A při 20 A?",
+          "answer": "P = R · I² = 0,4 · 100 = **40 W**. Při 20 A: 0,4 · 400 = **160 W**. Dvojnásobný proud = čtyřnásobné teplo, proto se přetížený kabel přehřívá."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výkon 2 kW a kilowatthodina jsou totéž, obojí je spotřeba.",
+          "right": "kW je výkon (jak rychle se bere energie), kWh je práce (kolik energie se spotřebovalo za dobu).",
+          "why": "Konvice má pořád 2 kW. Za 1 hodinu spotřebuje 2 kWh, za půl hodiny 1 kWh."
+        },
+        {
+          "type": "summary",
+          "text": "Výkon P = U · I (W), práce W = P · t (J nebo kWh). Ve vodiči se ztrácí teplo P = R · I², roste s druhou mocninou proudu."
+        }
+      ]
+    },
+    {
+      "title": "Tři tvary vzorce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Někdy znáš napětí a proud, jindy jen odpor a napětí. Spojením vzorce pro výkon s Ohmovým zákonem dostaneš tři tvary a vždy vybereš ten, který se hodí. K tomu přidáme účinnost – kolik energie se opravdu využije."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výkon P",
+          "definition": "Energie za sekundu. `P = U · I`, jednotka watt (W).",
+          "example": "12 V · 3 A = 36 W."
+        },
+        {
+          "type": "term",
+          "term": "Práce W",
+          "definition": "Energie dodaná za dobu t: `W = P · t`. V joulech (W · s) nebo v kilowatthodinách (kW · h).",
+          "example": "100 W · 10 h = 1 000 Wh = 1 kWh."
+        },
+        {
+          "type": "term",
+          "term": "Příkon P₀ a účinnost η",
+          "definition": "**Příkon** je výkon, který stroj odebírá ze sítě. **Výkon** je to, co užitečně odevzdá. Účinnost `η = P / P₀`, vždy menší než 1 (100 %). Zbytek jsou ztráty, většinou teplo.",
+          "example": "Motor odebírá 4 kW, na hřídeli dává 3,4 kW: η = 0,85 = 85 %."
+        },
+        {
+          "type": "heading",
+          "text": "Odvození tří tvarů"
+        },
+        {
+          "type": "text",
+          "text": "Do `P = U · I` dosadíme z Ohmova zákona U = R · I: vyjde `P = R · I²`. Dosadíme-li I = U / R: vyjde `P = U² / R`."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Znám",
+            "Vzorec",
+            "Kdy se hodí"
+          ],
+          "rows": [
+            [
+              "U a I",
+              "P = U · I",
+              "měření multimetrem"
+            ],
+            [
+              "R a I",
+              "P = R · I²",
+              "ztráty ve vedení, rezistor v sérii"
+            ],
+            [
+              "U a R",
+              "P = U² / R",
+              "topné těleso na známém napětí"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "U = 230 V, I = 10 A",
+                "back": "P = U · I = 2 300 W"
+              },
+              {
+                "front": "R = 5 Ω, I = 2 A",
+                "back": "P = R · I² = 20 W"
+              },
+              {
+                "front": "U = 12 V, R = 6 Ω",
+                "back": "P = U² / R = 24 W"
+              },
+              {
+                "front": "P = 3,4 kW, P₀ = 4 kW",
+                "back": "η = 0,85 = 85 %"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Nejdřív si zkus výsledek spočítat sám, teprve potom kartičku otoč."
+        },
+        {
+          "type": "example",
+          "question": "Topné těleso má odpor 26,45 Ω a je připojené na 230 V. Jaký má výkon? Kolik energie spotřebuje za 2 hodiny?",
+          "answer": "P = U² / R = 230² / 26,45 = 52 900 / 26,45 = **2 000 W**. W = P · t = 2 kW · 2 h = **4 kWh**."
+        },
+        {
+          "type": "example",
+          "question": "Rezistor 100 Ω má dovolené zatížení 0,25 W. Jaký největší proud jím smí téct?",
+          "answer": "P = R · I², takže I² = P / R = 0,25 / 100 = 0,0025, I = √0,0025 = **0,05 A = 50 mA**."
+        },
+        {
+          "type": "example",
+          "question": "Motor odebírá ze sítě 5 kW, účinnost je 88 %. Jaký je výkon na hřídeli a kolik jsou ztráty?",
+          "answer": "P = η · P₀ = 0,88 · 5 = **4,4 kW**. Ztráty: 5 − 4,4 = **0,6 kW**, mění se v teplo ve vinutí, v železe a v ložiskách."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Žárovka 230 V / 60 W na 115 V bude mít poloviční výkon, 30 W.",
+          "right": "Při stálém odporu bude mít čtvrtinový výkon, asi 15 W.",
+          "why": "P = U² / R: poloviční napětí znamená čtvrtinový výkon. (U skutečné žárovky se odpor s teplotou mění, takže výsledek je jen přibližný.)"
+        },
+        {
+          "type": "summary",
+          "text": "P = U · I = R · I² = U² / R. W = P · t, 1 kWh = 3,6 MJ. Účinnost η = P / P₀ < 1, zbytek jsou ztráty."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Spotřebič na 230 V odebírá proud 4 A. Výkon ve W =",
+      "answers": [
+        "920"
+      ],
+      "explanation": "P = U · I = 230 · 4 = 920 W."
+    },
+    {
+      "type": "input",
+      "question": "Spotřebič s výkonem 2 kW běží 3 hodiny. Spotřeba v kWh =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "W = P · t = 2 · 3 = 6 kWh."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik joulů je 1 kWh?",
+      "options": [
+        "3 600 000 J",
+        "1 000 J",
+        "3 600 J",
+        "60 000 J"
+      ],
+      "answer": 0,
+      "explanation": "1 000 W · 3 600 s = 3 600 000 J.",
+      "hints": [
+        "Kilo je tisíc a hodina má 3 600 sekund."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Rezistorem 50 Ω teče proud 0,2 A. Výkon ve W =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "P = R · I² = 50 · 0,04 = 2 W.",
+      "hints": [
+        "Znáš odpor a proud, vyber vhodný tvar vzorce.",
+        "Proud nejdřív umocni na druhou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Topná spirála 48 Ω je připojena na 24 V. Výkon ve W =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "P = U² / R = 576 / 48 = 12 W."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se proud vodičem zdvojnásobí, teplo v něm se také jen zdvojnásobí.",
+      "answer": false,
+      "explanation": "P = R · I², dvojnásobný proud = čtyřnásobné teplo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Účinnost elektromotoru může být větší než 100 %.",
+      "answer": false,
+      "explanation": "Část energie se vždy ztratí, hlavně jako teplo."
+    },
+    {
+      "type": "input",
+      "question": "Motor má příkon 10 kW a výkon 9 kW. Účinnost v % =",
+      "answers": [
+        "90"
+      ],
+      "explanation": "η = 9 / 10 = 0,9 = 90 %."
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s jednotkou.",
+      "pairs": [
+        [
+          "výkon",
+          "watt"
+        ],
+        [
+          "práce",
+          "joule"
+        ],
+        [
+          "spotřeba na faktuře",
+          "kilowatthodina"
+        ],
+        [
+          "účinnost",
+          "procento"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Žárovka 230 V / 100 W. Jaký jí teče proud (přibližně)?",
+      "options": [
+        "0,43 A",
+        "2,3 A",
+        "23 A",
+        "0,043 A"
+      ],
+      "answer": 0,
+      "explanation": "I = P / U = 100 / 230 ≈ 0,43 A."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď spotřebiče podle toho, kolik energie spotřebují (od nejmenší).",
+      "items": [
+        "LED 10 W svítí 10 h",
+        "notebook 60 W běží 5 h",
+        "konvice 2 kW běží 15 min",
+        "vrtačka 700 W běží 1 h"
+      ],
+      "explanation": "100 Wh, 300 Wh, 500 Wh, 700 Wh.",
+      "hints": [
+        "U každého spočítej výkon krát čas ve watthodinách."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč je přetížený kabel nebezpečný?",
+      "options": [
+        "Teplo roste s druhou mocninou proudu, izolace se může roztavit a vznítit.",
+        "Kabel začne vyrábět vyšší napětí.",
+        "Proud se v kabelu hromadí.",
+        "Klesne jeho odpor na nulu a vznikne zkrat."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi příkonem, výkonem a účinností elektromotoru.",
+      "answer": "Příkon je výkon, který motor odebírá ze sítě. Výkon je užitečný mechanický výkon na hřídeli. Účinnost je jejich poměr η = P / P₀ a je vždy menší než 100 %, protože část energie se mění v teplo."
+    },
+    {
+      "type": "open",
+      "question": "Odvoď ze vzorce P = U · I a Ohmova zákona další dva tvary vzorce pro výkon.",
+      "answer": "Dosadím U = R · I a dostanu P = R · I². Dosadím I = U / R a dostanu P = U² / R."
+    }
+  ]
+}

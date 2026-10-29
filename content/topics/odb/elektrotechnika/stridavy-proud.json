@@ -1,0 +1,413 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "stridavy-proud",
+  "title": "Střídavý proud",
+  "emoji": "〰️",
+  "explanations": [
+    {
+      "title": "Houpačka v zásuvce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Baterie má plus a mínus pořád na stejném místě. V zásuvce je to jinak: napětí se 50krát za sekundu překlopí z kladného na záporné a zpět, jako houpačka. Takovému proudu říkáme **střídavý**."
+        },
+        {
+          "type": "text",
+          "text": "Střídavý proud se snadno transformuje na vysoké napětí pro přenos na velké vzdálenosti a pohání většinu průmyslových motorů. Proto ho musí znát každý, kdo připojuje stroje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Střídavé napětí a proud",
+          "definition": "Napětí a proud, které pravidelně mění velikost i směr. V síti mají tvar **sinusoidy** – plynulé vlny.",
+          "example": "Zásuvka 230 V, 50 Hz."
+        },
+        {
+          "type": "term",
+          "term": "Perioda T",
+          "definition": "Doba jednoho celého kmitu – od kladné vlny přes zápornou zpět na začátek. Jednotka sekunda.",
+          "example": "V síti 50 Hz je T = 1/50 s = 0,02 s = 20 ms."
+        },
+        {
+          "type": "term",
+          "term": "Frekvence f",
+          "definition": "Kolik celých kmitů proběhne za sekundu. `f = 1 / T`, jednotka **hertz (Hz)**.",
+          "example": "Evropská síť 50 Hz, v USA 60 Hz."
+        },
+        {
+          "type": "term",
+          "term": "Amplituda Uₘ",
+          "definition": "Největší (vrcholová) hodnota napětí během kmitu.",
+          "example": "V zásuvce 230 V je amplituda asi 325 V."
+        },
+        {
+          "type": "term",
+          "term": "Efektivní hodnota U",
+          "definition": "Takové stejnosměrné napětí, které by ve stejném rezistoru vytvořilo **stejné teplo**. Pro sinusovku `U = Uₘ / √2 ≈ 0,707 · Uₘ`. Na štítcích a multimetrech se uvádí právě efektivní hodnota.",
+          "example": "230 V v zásuvce je efektivní hodnota, protože 325 / √2 ≈ 230."
+        },
+        {
+          "type": "heading",
+          "text": "Jeden kmit krok za krokem"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "0 ms: napětí 0 V",
+              "5 ms: kladný vrchol +325 V",
+              "10 ms: napětí 0 V",
+              "15 ms: záporný vrchol −325 V",
+              "20 ms: zase 0 V, začíná další kmit"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi jeden kmit sítě 50 Hz. Za 20 ms se napětí dvakrát dostane na nulu a jednou na každý vrchol."
+        },
+        {
+          "type": "example",
+          "question": "Jaká je perioda napětí s frekvencí 400 Hz (používá se třeba v letadlech)?",
+          "answer": "T = 1 / f = 1 / 400 = 0,0025 s = **2,5 ms**."
+        },
+        {
+          "type": "example",
+          "question": "Ovládací transformátor dává 24 V (efektivní). Jaká je amplituda?",
+          "answer": "Uₘ = U · √2 = 24 · 1,414 ≈ **33,9 V**."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se chovají R, L a C"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: rezistor a kondenzátor",
+          "definition": "Rezistor je součástka s daným odporem R (Ω). Kondenzátor jsou dvě vodivé desky oddělené izolantem, které se nabíjejí a vybíjejí."
+        },
+        {
+          "type": "term",
+          "term": "Cívka (induktor L)",
+          "definition": "Drát navinutý do závitů, často na železném jádře. Brání se každé **změně** proudu, který jí teče.",
+          "example": "Tlumivka, vinutí motoru, cívka relé."
+        },
+        {
+          "type": "text",
+          "text": "**Rezistor** se chová stejně jako u stejnosměrného proudu. **Cívka** (L) se brání změnám proudu, takže čím vyšší frekvence, tím víc proud brzdí. **Kondenzátor** (C) se stále nabíjí a vybíjí, takže čím vyšší frekvence, tím lépe proud propouští."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "s rostoucí frekvencí brzdí víc",
+              "s rostoucí frekvencí brzdí míň",
+              "na frekvenci nezáleží"
+            ],
+            "items": [
+              {
+                "text": "cívka",
+                "group": 0
+              },
+              {
+                "text": "tlumivka",
+                "group": 0
+              },
+              {
+                "text": "kondenzátor",
+                "group": 1
+              },
+              {
+                "text": "odrušovací kondenzátor",
+                "group": 1
+              },
+              {
+                "text": "rezistor",
+                "group": 2
+              },
+              {
+                "text": "topná spirála",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď součástky. U každé si řekni, jestli se brání změně proudu, jestli se nabíjí a vybíjí, nebo jestli prostě jen brzdí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "V zásuvce je 230 V, takže izolace musí vydržet právě 230 V.",
+          "right": "230 V je efektivní hodnota. Vrcholové napětí je asi 325 V a izolace i součástky na ně musí být dimenzované (a s rezervou na přepětí).",
+          "why": "Efektivní hodnota vyjadřuje tepelné účinky, ale okamžité napětí kmitá mezi +325 V a −325 V."
+        },
+        {
+          "type": "summary",
+          "text": "Střídavé napětí mění směr, v síti 50 Hz (T = 20 ms). Efektivní hodnota U = Uₘ / √2, 230 V odpovídá vrcholu asi 325 V. Cívka brzdí víc při vyšší frekvenci, kondenzátor méně."
+        }
+      ]
+    },
+    {
+      "title": "Reaktance a fáze",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na štítku motoru najdeš kromě výkonu i **cos φ**. Říká, jak moc je proud „posunutý“ za napětím. Abys tomu rozuměl a uměl spočítat proud ve střídavém obvodu s cívkou nebo kondenzátorem, potřebuješ reaktanci a impedanci."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Frekvence a perioda",
+          "definition": "Frekvence f (Hz) = počet kmitů za sekundu, perioda T = 1/f = doba jednoho kmitu. Úhlová frekvence `ω = 2 · π · f`.",
+          "example": "50 Hz: T = 20 ms, ω ≈ 314 rad/s."
+        },
+        {
+          "type": "term",
+          "term": "Efektivní a vrcholová hodnota",
+          "definition": "Vrcholová (amplituda) Uₘ je největší hodnota. Efektivní `U = Uₘ / √2` má stejné tepelné účinky jako stejnosměrné napětí U.",
+          "example": "Uₘ = 100 V → U ≈ 70,7 V."
+        },
+        {
+          "type": "term",
+          "term": "Fázový posun φ",
+          "definition": "O kolik je vlna proudu posunutá proti vlně napětí, ve stupních. Celá perioda = 360°.",
+          "example": "Posun 90° = proud je o čtvrt periody napřed nebo pozadu."
+        },
+        {
+          "type": "term",
+          "term": "Reaktance X",
+          "definition": "„Odpor“ cívky nebo kondenzátoru vůči střídavému proudu. Neztrácí se na ní energie jako teplo, jen se střídavě ukládá a vrací. Jednotka ohm. **Induktivní** `X_L = 2πfL`, **kapacitní** `X_C = 1 / (2πfC)`.",
+          "example": "Cívka 0,1 H při 50 Hz: X_L = 2 · 3,14 · 50 · 0,1 ≈ 31,4 Ω."
+        },
+        {
+          "type": "term",
+          "term": "Impedance Z",
+          "definition": "Celkový „odpor“ obvodu se střídavým proudem, skládá odpor R a reaktanci X. Pro sériové spojení R a X: `Z = √(R² + X²)`. Platí `I = U / Z`.",
+          "example": "R = 30 Ω, X_L = 40 Ω → Z = √(900 + 1 600) = 50 Ω."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka chování"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Prvek",
+            "„Odpor“",
+            "Fáze proudu vůči napětí"
+          ],
+          "rows": [
+            [
+              "rezistor R",
+              "R (nezávisí na f)",
+              "ve fázi (φ = 0°)"
+            ],
+            [
+              "cívka L",
+              "X_L = 2πfL (roste s f)",
+              "proud se zpožďuje o 90°"
+            ],
+            [
+              "kondenzátor C",
+              "X_C = 1/(2πfC) (klesá s f)",
+              "proud předbíhá o 90°"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pomůcka: **CIVIL** – u kondenzátoru (C) je I před V (napětím), u cívky (L) je V před I."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej reaktanci cívky nebo kondenzátoru při dané frekvenci.",
+            "Spočítej impedanci Z = √(R² + X²).",
+            "Proud I = U / Z.",
+            "cos φ = R / Z.",
+            "Činný výkon P = U · I · cos φ."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kondenzátor 10 μF je připojen na 230 V, 50 Hz. Jaká je jeho reaktance a proud?",
+          "answer": "X_C = 1 / (2 · 3,14 · 50 · 0,00001) = 1 / 0,00314 ≈ **318 Ω**. I = U / X_C = 230 / 318 ≈ **0,72 A**."
+        },
+        {
+          "type": "example",
+          "question": "Cívka má R = 30 Ω a X_L = 40 Ω, napětí 230 V. Jaký teče proud, jaký je cos φ a činný výkon?",
+          "answer": "Z = √(30² + 40²) = 50 Ω. I = 230 / 50 = **4,6 A**. cos φ = R / Z = 30 / 50 = **0,6**. P = U · I · cos φ = 230 · 4,6 · 0,6 ≈ **635 W**."
+        },
+        {
+          "type": "term",
+          "term": "Účiník cos φ",
+          "definition": "Říká, jaká část zdánlivého výkonu S = U · I se mění v užitečný (**činný**) výkon `P = U · I · cos φ`. U rezistoru je 1, u motorů typicky 0,7–0,9.",
+          "example": "Motory s malým cos φ zatěžují síť zbytečným proudem, proto se účiník kompenzuje kondenzátory."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Impedance cívky je R + X_L = 30 + 40 = 70 Ω.",
+          "right": "Z = √(R² + X_L²) = √(900 + 1 600) = 50 Ω.",
+          "why": "Napětí na odporu a na reaktanci jsou vůči sobě posunutá o 90°, proto se skládají jako odvěsny pravoúhlého trojúhelníku, ne prostým součtem."
+        },
+        {
+          "type": "summary",
+          "text": "X_L = 2πfL, X_C = 1/(2πfC), Z = √(R² + X²), I = U/Z. Na cívce proud zaostává o 90°, na kondenzátoru předbíhá. Činný výkon P = U · I · cos φ."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jaká je perioda síťového napětí 50 Hz v milisekundách? ms =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "T = 1 / 50 = 0,02 s = 20 ms."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená údaj 230 V u zásuvky?",
+      "options": [
+        "efektivní hodnotu napětí",
+        "vrcholovou hodnotu napětí",
+        "průměrnou hodnotu za půlperiodu",
+        "napětí mezi dvěma fázemi"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Efektivní napětí je 100 V. Amplituda ve V (zaokrouhli na celé) =",
+      "answers": [
+        "141"
+      ],
+      "explanation": "Uₘ = 100 · √2 ≈ 141 V.",
+      "hints": [
+        "Efektivní hodnota je amplituda dělená odmocninou ze dvou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Induktivní reaktance cívky roste s frekvencí.",
+      "answer": true,
+      "explanation": "X_L = 2πfL."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kondenzátor propouští střídavý proud tím lépe, čím je frekvence nižší.",
+      "answer": false,
+      "explanation": "X_C = 1/(2πfC) s frekvencí klesá, takže propouští lépe při vyšší frekvenci."
+    },
+    {
+      "type": "input",
+      "question": "R = 6 Ω a X_L = 8 Ω v sérii. Impedance v Ω =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Z = √(36 + 64) = 10 Ω.",
+      "hints": [
+        "R a X se skládají jako odvěsny pravoúhlého trojúhelníku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak je posunutý proud vůči napětí na ideální cívce?",
+      "options": [
+        "zpožďuje se o 90°",
+        "předbíhá o 90°",
+        "je ve fázi",
+        "je posunutý o 180°"
+      ],
+      "answer": 0,
+      "hints": [
+        "Vzpomeň si na pomůcku CIVIL."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "U = 230 V, I = 10 A, cos φ = 0,8. Činný výkon ve W =",
+      "answers": [
+        "1840",
+        "1 840"
+      ],
+      "explanation": "P = 230 · 10 · 0,8 = 1 840 W."
+    },
+    {
+      "type": "match",
+      "question": "Spoj prvek s jeho chováním ve střídavém obvodu.",
+      "pairs": [
+        [
+          "rezistor",
+          "proud ve fázi s napětím"
+        ],
+        [
+          "cívka",
+          "proud zaostává o 90°"
+        ],
+        [
+          "kondenzátor",
+          "proud předbíhá o 90°"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Cívka 0,2 H při 50 Hz má induktivní reaktanci přibližně:",
+      "options": [
+        "63 Ω",
+        "10 Ω",
+        "31 Ω",
+        "628 Ω"
+      ],
+      "answer": 0,
+      "explanation": "X_L = 2 · 3,14 · 50 · 0,2 ≈ 62,8 Ω."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu proudu v sériovém obvodu R a L.",
+      "items": [
+        "spočítat X_L = 2πfL",
+        "spočítat Z = √(R² + X_L²)",
+        "spočítat I = U / Z",
+        "spočítat cos φ = R / Z"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je frekvence, když perioda trvá 10 ms? Hz =",
+      "answers": [
+        "100"
+      ],
+      "explanation": "f = 1 / 0,01 = 100 Hz."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je efektivní hodnota střídavého napětí a proč se používá.",
+      "answer": "Je to hodnota stejnosměrného napětí, které by ve stejném rezistoru vytvořilo stejné teplo. Pro sinusovku je U = Uₘ / √2. Používá se, protože s ní se počítá výkon stejně jako u stejnosměrného proudu, a uvádí se na štítcích a ukazují ji měřicí přístroje."
+    },
+    {
+      "type": "open",
+      "question": "Co je účiník cos φ a proč je pro síť nevýhodný malý účiník?",
+      "answer": "Účiník je poměr činného a zdánlivého výkonu, cos φ = P / (U · I). Při malém účiníku teče pro stejný užitečný výkon větší proud, takže se víc zatěžují a ohřívají vedení a transformátory. Proto se účiník kompenzuje kondenzátory."
+    }
+  ]
+}

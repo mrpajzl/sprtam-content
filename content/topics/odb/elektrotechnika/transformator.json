@@ -1,0 +1,412 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "transformator",
+  "title": "Transformátor",
+  "emoji": "🔁",
+  "explanations": [
+    {
+      "title": "Cesta z elektrárny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Elektrárna vyrábí elektřinu desítky až stovky kilometrů od tvé dílny. Kdyby ji posílala rovnou na 230 V, většina energie by se cestou proměnila v teplo ve vedení. Proto se napětí pro přenos zvýší na stovky tisíc voltů a u spotřebitele zase sníží. Obojí dělá **transformátor**."
+        },
+        {
+          "type": "text",
+          "text": "Malé transformátory najdeš v ovládání strojů (24 V pro relé a čidla), v bezpečnostních zdrojích a ve svářečkách."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: elektromagnetická indukce",
+          "definition": "Když se mění magnetické pole procházející cívkou, indukuje se v ní napětí. Čím víc závitů, tím větší napětí."
+        },
+        {
+          "type": "term",
+          "term": "Primární a sekundární vinutí",
+          "definition": "**Primární** vinutí se připojuje ke zdroji. **Sekundární** dává napětí spotřebiči. Obě cívky nejsou vodivě spojené, energie přechází magnetickým polem.",
+          "example": "Ovládací transformátor: primár na 400 V, sekundár 24 V."
+        },
+        {
+          "type": "term",
+          "term": "Magnetický obvod (jádro)",
+          "definition": "Uzavřené železné jádro, na kterém jsou obě vinutí. Vede magnetické pole z primáru do sekundáru. Skládá se z tenkých izolovaných plechů, aby se v něm netvořily velké vířivé proudy, které jádro zahřívají.",
+          "example": "Jádro ve tvaru E a I z transformátorových plechů."
+        },
+        {
+          "type": "term",
+          "term": "Převod p",
+          "definition": "Poměr napětí a počtu závitů: `p = U₁ / U₂ = N₁ / N₂`. Proudy jsou v obráceném poměru: `I₂ / I₁ = p`.",
+          "example": "N₁ = 1 000, N₂ = 100 → p = 10, z 230 V vznikne 23 V."
+        },
+        {
+          "type": "heading",
+          "text": "Jak to funguje"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "střídavý proud teče primárním vinutím",
+              "v jádře vzniká střídavý magnetický tok",
+              "tok prochází i sekundárním vinutím",
+              "v sekundáru se indukuje napětí",
+              "připojeným spotřebičem teče proud"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi cyklus. Všimni si, že bez **změny** toku by se nic neindukovalo. Proto transformátor se stejnosměrným proudem nefunguje."
+        },
+        {
+          "type": "example",
+          "question": "Transformátor má primár 1 200 závitů na 230 V. Kolik závitů potřebuje sekundár pro 12 V?",
+          "answer": "N₂ = N₁ · U₂ / U₁ = 1 200 · 12 / 230 ≈ **63 závitů**. (Prakticky se přidá pár závitů navíc na úbytek napětí při zatížení.)"
+        },
+        {
+          "type": "example",
+          "question": "Ideální transformátor 230 V / 23 V dodává do spotřebiče 5 A. Jaký proud odebírá ze sítě?",
+          "answer": "p = 230 / 23 = 10. I₁ = I₂ / p = 5 / 10 = **0,5 A**. Kontrola výkonu: 230 · 0,5 = 115 VA = 23 · 5. ✓"
+        },
+        {
+          "type": "heading",
+          "text": "Proč vysoké napětí na přenos"
+        },
+        {
+          "type": "text",
+          "text": "Stejný výkon P = U · I přeneseš buď velkým napětím a malým proudem, nebo naopak. Ztráty ve vedení jsou `R · I²`. Desetkrát vyšší napětí = desetkrát menší proud = **stokrát menší ztráty**."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "kV",
+            "items": [
+              {
+                "label": "přenosová soustava",
+                "value": 400
+              },
+              {
+                "label": "distribuce 110 kV",
+                "value": 110
+              },
+              {
+                "label": "distribuce vn",
+                "value": 22
+              },
+              {
+                "label": "domácnost (sdružené)",
+                "value": 0.4
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Transformátor zvyšuje napětí, takže zvyšuje i výkon.",
+          "right": "Výkon na výstupu je vždy o něco menší než na vstupu. Když se napětí zvýší, proud se úměrně zmenší.",
+          "why": "Transformátor energii nevyrábí, jen ji předává. U₁ · I₁ ≈ U₂ · I₂, rozdíl tvoří ztráty."
+        },
+        {
+          "type": "summary",
+          "text": "Transformátor = dvě vinutí na společném jádře. Funguje jen se střídavým proudem. U₁ / U₂ = N₁ / N₂ = I₂ / I₁. Vysoké napětí na přenos snižuje proud a ztráty."
+        }
+      ]
+    },
+    {
+      "title": "Druhy a výpočty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na štítku transformátoru v rozvaděči čteš „400/24 V, 160 VA“. Musíš poznat, kolik zátěže na něj smíš připojit, jaký proud teče na primární straně a jestli je to transformátor bezpečnostní. Tady je přehled druhů a výpočtů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Transformátor",
+          "definition": "Netočivý elektrický stroj, který mění velikost střídavého napětí a proudu při stejné frekvenci. Má primární a sekundární vinutí na společném železném jádře.",
+          "example": "Síťový transformátor 230/12 V."
+        },
+        {
+          "type": "term",
+          "term": "Zdánlivý výkon S",
+          "definition": "Součin napětí a proudu `S = U · I`. Jednotka **voltampér (VA)**. Transformátor se dimenzuje na S, protože ho ohřívá proud bez ohledu na cos φ spotřebiče.",
+          "example": "24 V · 6,67 A ≈ 160 VA."
+        },
+        {
+          "type": "term",
+          "term": "Ztráty v železe a ve vinutí",
+          "definition": "**V železe**: ohřev jádra střídavým magnetováním (hysterezní) a vířivými proudy; skoro nezávisí na zatížení. **Ve vinutí** (v mědi): teplo R · I², roste se zatížením.",
+          "example": "Naprázdno se transformátor mírně hřeje – to jsou ztráty v železe."
+        },
+        {
+          "type": "term",
+          "term": "Galvanické oddělení",
+          "definition": "Primární a sekundární obvod nejsou vodivě spojené. Energie přechází jen magnetickým polem.",
+          "example": "Oddělovací transformátor 230/230 V pro bezpečnější práci s přístrojem."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy transformátorů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Druh",
+            "K čemu",
+            "Pozor na"
+          ],
+          "rows": [
+            [
+              "síťový (ovládací)",
+              "napájení ovládání 24 V, 230 V",
+              "jištění primáru i sekundáru"
+            ],
+            [
+              "bezpečnostní",
+              "zdroj bezpečného malého napětí (např. SELV)",
+              "na štítku má značku bezpečnostního transformátoru"
+            ],
+            [
+              "oddělovací",
+              "galvanicky oddělený obvod 230 V",
+              "chrání jen při jednom připojeném spotřebiči"
+            ],
+            [
+              "autotransformátor",
+              "jedno vinutí s odbočkou, levnější",
+              "nemá galvanické oddělení"
+            ],
+            [
+              "měřicí transformátor proudu",
+              "měření velkých proudů",
+              "sekundár se nesmí rozpojit, musí být zkratovaný nebo zatížený měřákem"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup výpočtu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ze štítku zjisti U₁, U₂ a jmenovitý výkon S.",
+            "Jmenovitý sekundární proud I₂ = S / U₂.",
+            "Převod p = U₁ / U₂.",
+            "Primární proud I₁ ≈ I₂ / p (u reálného trochu víc kvůli ztrátám).",
+            "Zkontroluj, že součet zátěží nepřekročí S."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ovládací transformátor 400/24 V, 160 VA. Jaký je jmenovitý sekundární a primární proud?",
+          "answer": "I₂ = 160 / 24 ≈ **6,7 A**. p = 400 / 24 ≈ 16,7. I₁ ≈ 6,7 / 16,7 ≈ **0,4 A** (nebo 160 / 400 = 0,4 A)."
+        },
+        {
+          "type": "example",
+          "question": "Transformátor odebírá ze sítě 500 W a dodává 470 W. Jaká je účinnost a ztráty?",
+          "answer": "η = 470 / 500 = **0,94 = 94 %**. Ztráty 30 W se mění v teplo v jádře a ve vinutí."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "má galvanické oddělení",
+              "nemá galvanické oddělení"
+            ],
+            "items": [
+              {
+                "text": "bezpečnostní transformátor",
+                "group": 0
+              },
+              {
+                "text": "oddělovací transformátor",
+                "group": 0
+              },
+              {
+                "text": "autotransformátor",
+                "group": 1
+              },
+              {
+                "text": "ovládací transformátor 400/24 V",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď druhy. Rozhoduje, jestli mají dvě samostatná vinutí, nebo jedno společné."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Měřicí transformátor proudu odpojím od ampérmetru a svorky sekundáru nechám volné.",
+          "right": "Sekundár měřicího transformátoru proudu se před odpojením měřáku musí zkratovat.",
+          "why": "Primárním proudem je dán tok v jádře. Bez zátěže na sekundáru se na něm indukuje nebezpečně vysoké napětí a jádro se přehřívá."
+        },
+        {
+          "type": "summary",
+          "text": "Dimenzuje se na zdánlivý výkon S = U · I (VA). Ztráty jsou v železe a ve vinutí. Bezpečnostní a oddělovací transformátor galvanicky odděluje, autotransformátor ne. Sekundár transformátoru proudu nikdy nerozpojuj."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Primár 2 000 závitů, sekundár 100 závitů, primární napětí 230 V. Sekundární napětí ve V =",
+      "answers": [
+        "11,5"
+      ],
+      "explanation": "U₂ = 230 · 100 / 2 000 = 11,5 V.",
+      "hints": [
+        "Napětí jsou ve stejném poměru jako počty závitů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ideální transformátor 230/23 V, sekundární proud 10 A. Primární proud v A =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "Proudy jsou v obráceném poměru: I₁ = 10 / 10 = 1 A."
+    },
+    {
+      "type": "truefalse",
+      "question": "Transformátor funguje i se stejnosměrným proudem.",
+      "answer": false,
+      "explanation": "Stejnosměrný proud nevytvoří měnící se tok, nic se neindukuje."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je jádro transformátoru složené z tenkých izolovaných plechů?",
+      "options": [
+        "omezují vířivé proudy a ohřev jádra",
+        "aby bylo lehčí",
+        "aby lépe vedlo elektrický proud",
+        "aby se dalo snadno rozebrat"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "V jaké jednotce se udává jmenovitý výkon transformátoru?",
+      "options": [
+        "VA",
+        "W",
+        "Wh",
+        "A"
+      ],
+      "answer": 0,
+      "explanation": "Dimenzuje se na zdánlivý výkon, protože ho ohřívá proud."
+    },
+    {
+      "type": "input",
+      "question": "Transformátor 230/12 V má výkon 60 VA. Jmenovitý sekundární proud v A =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "I₂ = S / U₂ = 60 / 12 = 5 A."
+    },
+    {
+      "type": "truefalse",
+      "question": "Autotransformátor galvanicky odděluje vstup od výstupu.",
+      "answer": false,
+      "explanation": "Má jedno společné vinutí s odbočkou."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se elektřina přenáší na velké vzdálenosti vysokým napětím?",
+      "options": [
+        "menší proud znamená menší ztráty R · I²",
+        "vysoké napětí je bezpečnější",
+        "transformátory jinak nefungují",
+        "vodiče s vysokým napětím mají menší odpor"
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na vzorec pro teplo ve vodiči."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh transformátoru s jeho typickým použitím.",
+      "pairs": [
+        [
+          "bezpečnostní",
+          "zdroj bezpečného malého napětí"
+        ],
+        [
+          "ovládací",
+          "napájení cívek stykačů 24 V"
+        ],
+        [
+          "měřicí proudu",
+          "měření velkých proudů"
+        ],
+        [
+          "autotransformátor",
+          "plynulá regulace napětí"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď děje v transformátoru.",
+      "items": [
+        "proud teče primárem",
+        "v jádře vzniká střídavý tok",
+        "tok prochází sekundárem",
+        "v sekundáru se indukuje napětí"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Transformátor odebírá 1 000 W a dodává 960 W. Účinnost v % =",
+      "answers": [
+        "96"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se nesmí udělat se sekundárem měřicího transformátoru proudu za provozu?",
+      "options": [
+        "rozpojit ho",
+        "zkratovat ho",
+        "připojit k němu ampérmetr",
+        "uzemnit jeden jeho konec"
+      ],
+      "answer": 0,
+      "explanation": "Na rozpojeném sekundáru vznikne nebezpečně vysoké napětí."
+    },
+    {
+      "type": "open",
+      "question": "Popiš princip transformátoru.",
+      "answer": "Střídavý proud v primárním vinutí vytvoří v železném jádře střídavý magnetický tok. Ten prochází sekundárním vinutím a indukuje v něm napětí. Napětí jsou v poměru počtu závitů U₁ / U₂ = N₁ / N₂."
+    },
+    {
+      "type": "open",
+      "question": "Jaké ztráty vznikají v transformátoru a na čem závisí?",
+      "answer": "Ztráty v železe vznikají přemagnetováním jádra (hystereze) a vířivými proudy; téměř nezávisí na zatížení. Ztráty ve vinutí jsou Joulovo teplo R · I², rostou s druhou mocninou proudu, tedy se zatížením."
+    }
+  ]
+}

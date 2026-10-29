@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "bezpecnost-v-elektrotechnice",
+  "title": "Bezpečnost práce v elektrotechnice",
+  "emoji": "⛑️",
+  "explanations": [
+    {
+      "title": "Co dělá proud s tělem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Elektřinu nevidíš, neslyšíš ani necítíš – dokud tě nezasáhne. Úraz elektřinou může zastavit srdce během zlomku sekundy. Kdo pracuje u strojů, musí vědět, jak úrazu předejít, a když už se stane, jak správně pomoct."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Úraz elektrickým proudem",
+          "definition": "Poškození těla proudem, který jím projde. Proud teče, když se člověk dotkne dvou míst s různým napětím – třeba fáze a země (podlahy, kostry stroje).",
+          "example": "Dotkneš se poškozeného kabelu a stojíš na betonové podlaze."
+        },
+        {
+          "type": "term",
+          "term": "Živá a neživá část",
+          "definition": "**Živá část** je za provozu pod napětím (vodič, svorka). **Neživá část** je vodivá část, která za normálního stavu pod napětím není, ale při poruše být může (kovová kostra stroje).",
+          "example": "Prodřená izolace se dotkne kostry pračky – kostra „chytí“ fázi."
+        },
+        {
+          "type": "term",
+          "term": "Fáze, ochranný vodič PE a jistič",
+          "definition": "**Fáze** je vodič, na kterém je proti zemi napětí 230 V. **Ochranný vodič PE** (zelenožlutý) je spojený se zemí a s kovovými kostrami spotřebičů. **Jistič** je přístroj, který vypne obvod při přetížení nebo zkratu, tedy při proudech v ampérech.",
+          "example": "Jistič 16 A v rozvaděči chrání vedení k zásuvkám."
+        },
+        {
+          "type": "heading",
+          "text": "Jak proud působí"
+        },
+        {
+          "type": "text",
+          "text": "Proud má na tělo **tepelné** účinky (popáleniny, i vnitřní), **chemické** (rozklad tělních tekutin) a hlavně **fyziologické**: křeče svalů, zástava dechu a **fibrilace srdečních komor**, kdy srdce místo pumpování jen nepravidelně kmitá."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "mA (orientačně, střídavý 50 Hz)",
+            "items": [
+              {
+                "label": "začínáš proud cítit",
+                "value": 1
+              },
+              {
+                "label": "křeč, nemusíš se pustit",
+                "value": 10
+              },
+              {
+                "label": "chránič vypíná nejpozději při",
+                "value": 30
+              },
+              {
+                "label": "hrozí fibrilace (podle doby)",
+                "value": 50
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Porovnej hodnoty. Už desítky miliampérů mohou zabíjet. Žárovka 100 W přitom bere asi 430 mA."
+        },
+        {
+          "type": "text",
+          "text": "Nebezpečnost úrazu závisí na **velikosti proudu**, **době působení**, **dráze proudu** tělem (ruka–ruka nebo ruka–noha vede přes srdce), na frekvenci a na stavu člověka (mokrá kůže má mnohem menší odpor)."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se chráníme"
+        },
+        {
+          "type": "term",
+          "term": "Základní ochrana",
+          "definition": "Brání dotyku **živých** částí: izolace, kryty, přepážky, zábrany, umístění mimo dosah.",
+          "example": "Zavřený rozvaděč, izolace vodiče."
+        },
+        {
+          "type": "term",
+          "term": "Ochrana při poruše",
+          "definition": "Chrání, když se pod napětím ocitne **neživá** část. Nejčastěji **automatické odpojení od zdroje**: kostra je připojená na ochranný vodič PE, při poruše teče velký proud a jistič vypne. Dále dvojitá izolace nebo malé napětí.",
+          "example": "Kostra pračky připojená přes kolík zásuvky na PE."
+        },
+        {
+          "type": "term",
+          "term": "Proudový chránič (RCD)",
+          "definition": "Přístroj, který porovnává proud tekoucí tam a zpět. Když část proudu uteče jinudy (třeba tělem do země), rychle vypne. Pro doplňkovou ochranu se používá chránič s vybavovacím proudem nejvýš **30 mA**.",
+          "example": "Chránič v bytovém rozvaděči má tlačítko TEST, kterým se zkouší jeho funkce."
+        },
+        {
+          "type": "example",
+          "question": "Proč chránič ochrání člověka, který sáhne na fázi, ale jistič 16 A ne?",
+          "answer": "Tělem teče třeba 50 mA. To je pro jistič zanedbatelné, vypíná až při ampérech. Chránič ale pozná, že 50 mA chybí ve zpětném vodiči, a vypne za zlomek sekundy."
+        },
+        {
+          "type": "heading",
+          "text": "První pomoc"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nesahej na postiženého holýma rukama, dokud je v obvodu.",
+            "Přeruš proud: vypni vypínač nebo jistič, vytáhni vidlici. U nízkého napětí, když to nejde, odsuň zdroj nebo postiženého nevodivým předmětem (suché dřevo) a stůj na izolantu.",
+            "U vysokého napětí se nepřibližuj, zajisti okolí a volej 155 nebo 112 – vyprošťovat smí jen odborník po vypnutí.",
+            "Zkontroluj vědomí a dýchání. Když nedýchá normálně, volej 155 a zahaj resuscitaci (stlačování hrudníku), použij AED (automatický externí defibrilátor), je-li k dispozici.",
+            "Popáleniny chlaď a sterilně překryj.",
+            "I když se postižený cítí dobře, musí k lékaři – poruchy srdečního rytmu se mohou objevit i později."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kolega se drží kabelu a třese se. Hned ho chytím za ruku a odtrhnu.",
+          "right": "Nejdřív vypnu proud (jistič, vidlice). Jen když to nejde a jde o nízké napětí, odsunu ho suchým nevodivým předmětem a stojím na izolantu.",
+          "why": "Kdo se dotkne postiženého v obvodu, stane se sám součástí obvodu a zraní se také."
+        },
+        {
+          "type": "summary",
+          "text": "Nebezpečné jsou už desítky mA. Základní ochrana brání dotyku živých částí, ochrana při poruše chrání u neživých částí, chránič 30 mA je doplňková ochrana. Při úrazu nejdřív přerušit proud, pak 155, resuscitace a vždy lékař."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a kvalifikace",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na elektrickém zařízení nesmí pracovat kdokoli. Zákon určuje, kdo smí co dělat a jakou kvalifikaci k tomu potřebuje. Při každé práci platí pevný postup, jak zařízení bezpečně odpojit. Tady je přehled pravidel, tříd ochrany a kvalifikací."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Živé a neživé části",
+          "definition": "Živé části jsou pod napětím za provozu (vodiče, svorky). Neživé jsou vodivé části, které jsou pod napětím jen při poruše (kovové kryty, kostry).",
+          "example": "Svorka motoru je živá, plechový kryt motoru neživá část."
+        },
+        {
+          "type": "term",
+          "term": "Malé napětí (ELV)",
+          "definition": "Napětí nejvýš **50 V střídavých** nebo **120 V stejnosměrných** (bez zvlnění). Bezpečné malé napětí **SELV** je navíc oddělené od sítě (např. bezpečnostním transformátorem) a není uzemněné; **PELV** je podobné, ale uzemněné.",
+          "example": "Ovládací obvody 24 V, osvětlení v kotli nebo nádrži."
+        },
+        {
+          "type": "term",
+          "term": "Třídy ochrany spotřebičů",
+          "definition": "**Třída I**: kovová kostra připojená na ochranný vodič PE (vidlice s ochranným kontaktem). **Třída II**: dvojitá nebo zesílená izolace, PE nemá, značka dvou čtverců v sobě. **Třída III**: napájení jen malým napětím SELV.",
+          "example": "Pračka – třída I. Fén nebo nabíječka – obvykle třída II."
+        },
+        {
+          "type": "term",
+          "term": "Beznapěťový stav",
+          "definition": "Stav, kdy na zařízení není napětí a je to **ověřeno** zkoušečkou nebo měřicím přístrojem určeným k tomuto účelu.",
+          "example": "Vypnutý jistič ještě nezaručuje beznapěťový stav – mohl být vypnut jiný jistič."
+        },
+        {
+          "type": "heading",
+          "text": "Pět pravidel bezpečné práce"
+        },
+        {
+          "type": "text",
+          "text": "Před prací bez napětí se podle ČSN EN 50110-1 dodržuje pevné pořadí:"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vypnout a odpojit zařízení od všech zdrojů.",
+            "Zajistit proti opětovnému zapnutí (zámek, cedulka „Nezapínat! Pracuje se na zařízení“).",
+            "Ověřit beznapěťový stav na místě práce.",
+            "Uzemnit a zkratovat (vždy u vysokého napětí, u nízkého tam, kde hrozí zpětné napájení).",
+            "Zakrýt nebo oddělit sousední části, které zůstaly pod napětím."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "1. pravidlo",
+                "back": "vypnout a odpojit"
+              },
+              {
+                "front": "2. pravidlo",
+                "back": "zajistit proti zapnutí"
+              },
+              {
+                "front": "3. pravidlo",
+                "back": "ověřit beznapěťový stav"
+              },
+              {
+                "front": "4. pravidlo",
+                "back": "uzemnit a zkratovat"
+              },
+              {
+                "front": "5. pravidlo",
+                "back": "zakrýt sousední živé části"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si pravidla říct zpaměti v pořadí a teprve pak je otoč. Při práci se nesmí žádné přeskočit."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo smí na elektrickém zařízení pracovat"
+        },
+        {
+          "type": "text",
+          "text": "Odbornou způsobilost upravuje **nařízení vlády č. 194/2022 Sb.** (nahradilo starou vyhlášku č. 50/1978 Sb.). Rozlišuje stupně podle vzdělání, praxe a přezkoušení:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Stupeň",
+            "Co zhruba smí"
+          ],
+          "rows": [
+            [
+              "osoba bez elektrotechnické kvalifikace",
+              "jen obsluhovat zařízení, která jsou tak konstruovaná, že je to bezpečné"
+            ],
+            [
+              "osoba poučená",
+              "po poučení obsluhovat zařízení a pracovat na nich pod dohledem nebo dozorem v rozsahu poučení"
+            ],
+            [
+              "osoba znalá",
+              "elektrotechnické vzdělání a přezkoušení; pracuje pod dohledem nebo dozorem"
+            ],
+            [
+              "osoba znalá pro samostatnou činnost",
+              "samostatně pracovat na zařízeních v rozsahu svého oprávnění"
+            ],
+            [
+              "osoba znalá pro řízení činnosti",
+              "řídit práci ostatních"
+            ],
+            [
+              "osoba znalá pro provádění revizí",
+              "revizní technik – kontroluje a reviduje zařízení"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Žák elektrooboru na praxi chce sám vyměnit vadnou zásuvku v dílně. Smí?",
+          "answer": "Samostatně ne. Žák nemá kvalifikaci osoby znalé pro samostatnou činnost. Smí pracovat jen pod dohledem nebo dozorem oprávněné osoby a zařízení musí být bezpečně odpojené podle pěti pravidel."
+        },
+        {
+          "type": "example",
+          "question": "Na vrtačce je značka dvou čtverců v sobě a vidlice nemá ochranný kontakt. Je to chyba?",
+          "answer": "Není. Je to spotřebič **třídy ochrany II** s dvojitou izolací. Ochranný vodič nepotřebuje, ochranu při poruše zajišťuje izolace."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Jistič je vypnutý, zkoušečka nesvítí na prvním vodiči, takže můžu pracovat.",
+          "right": "Beznapěťový stav se ověřuje na všech vodičích v místě práce a zkoušečka se před i po měření vyzkouší na známém zdroji napětí.",
+          "why": "Jistič mohl odpojit jiný obvod, zkoušečka mohla být vadná a zařízení může mít víc napájecích zdrojů."
+        },
+        {
+          "type": "summary",
+          "text": "Malé napětí: do 50 V AC / 120 V DC. Třídy ochrany I (PE), II (dvojitá izolace), III (SELV). Pět pravidel: vypnout, zajistit, ověřit, uzemnit a zkratovat, zakrýt. Kvalifikaci určuje NV č. 194/2022 Sb."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď pět pravidel bezpečné práce na elektrickém zařízení.",
+      "items": [
+        "vypnout a odpojit",
+        "zajistit proti opětovnému zapnutí",
+        "ověřit beznapěťový stav",
+        "uzemnit a zkratovat",
+        "zakrýt sousední živé části"
+      ],
+      "hints": [
+        "Nejdřív musí být zařízení bez napětí a nesmí ho nikdo zapnout.",
+        "Uzemnit se smí až po ověření, že napětí opravdu není."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je nejvyšší vybavovací proud proudového chrániče pro doplňkovou ochranu osob?",
+      "options": [
+        "30 mA",
+        "300 mA",
+        "10 A",
+        "1 mA"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co uděláš jako první, když vidíš kolegu, který se drží vodiče pod napětím (nízké napětí)?",
+      "options": [
+        "vypnu jistič nebo vytáhnu vidlici",
+        "chytím ho a odtáhnu",
+        "polévám ho vodou",
+        "nejdřív zavolám 155 a čekám"
+      ],
+      "answer": 0,
+      "explanation": "Nejdřív přerušit proud, jinak se stanu další obětí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Spotřebič třídy ochrany II má dvojitou izolaci a nepotřebuje ochranný vodič.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Po úrazu elektřinou nemusí postižený k lékaři, pokud se cítí dobře.",
+      "answer": false,
+      "explanation": "Poruchy srdečního rytmu se mohou objevit i později."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh ochrany s příkladem.",
+      "pairs": [
+        [
+          "základní ochrana",
+          "izolace vodiče, kryt rozvaděče"
+        ],
+        [
+          "ochrana při poruše",
+          "automatické odpojení přes PE a jistič"
+        ],
+        [
+          "doplňková ochrana",
+          "proudový chránič 30 mA"
+        ],
+        [
+          "ochrana malým napětím",
+          "ovládací obvod 24 V ze SELV"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je horní hranice malého napětí pro střídavý proud ve voltech? V =",
+      "answers": [
+        "50"
+      ],
+      "hints": [
+        "Pro stejnosměrné je hranice 120 V, pro střídavé je nižší."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který předpis dnes upravuje odbornou způsobilost v elektrotechnice v ČR?",
+      "options": [
+        "nařízení vlády č. 194/2022 Sb.",
+        "vyhláška č. 50/1978 Sb.",
+        "zákoník práce č. 262/2006 Sb., § 1",
+        "ČSN EN 60617"
+      ],
+      "answer": 0,
+      "explanation": "Vyhláška 50/1978 Sb. byla tímto nařízením nahrazena."
+    },
+    {
+      "type": "choice",
+      "question": "Která dráha proudu tělem je nejnebezpečnější?",
+      "options": [
+        "levá ruka – nohy (přes srdce)",
+        "prst – prst téže ruky",
+        "pravá noha – pravá noha",
+        "loket – zápěstí"
+      ],
+      "answer": 0,
+      "hints": [
+        "Zamysli se, který orgán je na úraz nejcitlivější."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jistič 16 A spolehlivě ochrání člověka, který se dotkne fáze, protože vypne při zkratu.",
+      "answer": false,
+      "explanation": "Proud tělem jsou desítky mA, na to jistič nereaguje. Chrání chránič."
+    },
+    {
+      "type": "match",
+      "question": "Spoj třídu ochrany s popisem.",
+      "pairs": [
+        [
+          "třída I",
+          "kostra připojená na PE"
+        ],
+        [
+          "třída II",
+          "dvojitá nebo zesílená izolace"
+        ],
+        [
+          "třída III",
+          "napájení malým napětím SELV"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo smí samostatně pracovat na elektrickém zařízení?",
+      "options": [
+        "osoba znalá pro samostatnou činnost",
+        "osoba poučená",
+        "žák na praxi",
+        "kdokoli s izolovaným nářadím"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš první pomoc při úrazu elektrickým proudem nízkého napětí.",
+      "answer": "Nejdřív přerušit proud (vypínač, jistič, vidlice), případně postiženého odsunout nevodivým předmětem a stát na izolantu. Zkontrolovat vědomí a dýchání, volat 155, při zástavě dechu resuscitovat a použít AED. Popáleniny chladit a krýt a postiženého vždy předat lékaři."
+    },
+    {
+      "type": "open",
+      "question": "Na čem závisí nebezpečnost úrazu elektrickým proudem?",
+      "answer": "Na velikosti proudu, době, po kterou působí, dráze proudu tělem (nejhorší přes srdce), na druhu a frekvenci proudu a na stavu člověka, například na vlhkosti kůže, která snižuje odpor těla."
+    }
+  ]
+}

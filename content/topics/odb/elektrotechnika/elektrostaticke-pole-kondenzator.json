@@ -1,0 +1,406 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "elektrostaticke-pole-kondenzator",
+  "title": "Elektrostatické pole a kondenzátor",
+  "emoji": "🔋",
+  "explanations": [
+    {
+      "title": "Od svetru ke kondenzátoru",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Svlékneš svetr a vlasy se ti zvednou. Sáhneš na kliku a „kopne“ tě to. To jsou náboje, které stojí na místě – **elektrostatika**. Stejný jev v řízené podobě využívá kondenzátor: součástka, která umí náboj na chvíli uložit."
+        },
+        {
+          "type": "text",
+          "text": "Kondenzátory najdeš v každém zdroji, v rozběhu jednofázového motoru, ve fotoaparátu u blesku i v elektronice mechatronických zařízení."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: náboj a napětí",
+          "definition": "Náboj Q (coulomb, C) je kladný nebo záporný; souhlasné se odpuzují, nesouhlasné přitahují. Napětí U (volt, V) je rozdíl „elektrických hladin“ mezi dvěma body."
+        },
+        {
+          "type": "term",
+          "term": "Elektrostatické pole",
+          "definition": "Prostor kolem nabitého tělesa, ve kterém působí síla na jiné náboje. Kreslí se **siločárami**: vedou od kladného náboje k zápornému.",
+          "example": "Nabitý balonek přitáhne papírky, aniž se jich dotkne."
+        },
+        {
+          "type": "term",
+          "term": "Coulombův zákon",
+          "definition": "Síla mezi dvěma bodovými náboji: `F = k · Q₁ · Q₂ / r²`, kde k ≈ 9 · 10⁹ N·m²/C² (ve vakuu a přibližně ve vzduchu). Dvojnásobná vzdálenost = čtvrtinová síla.",
+          "example": "Dva náboje po 1 μC ve vzdálenosti 0,1 m: F = 9 · 10⁹ · 10⁻⁶ · 10⁻⁶ / 0,01 = 0,9 N."
+        },
+        {
+          "type": "term",
+          "term": "Intenzita elektrického pole E",
+          "definition": "Jak silné je pole v daném místě: síla na náboj 1 C. `E = F / Q`, jednotka V/m. Mezi dvěma rovnoběžnými deskami je pole stejné všude (homogenní): `E = U / d`.",
+          "example": "Desky 2 mm od sebe, napětí 200 V: E = 200 / 0,002 = 100 000 V/m."
+        },
+        {
+          "type": "term",
+          "term": "Kondenzátor",
+          "definition": "Dvě vodivé desky (elektrody) oddělené izolantem (**dielektrikem**). Po připojení napětí se na jedné desce nahromadí kladný, na druhé stejně velký záporný náboj.",
+          "example": "Svitkový kondenzátor: dva pásky hliníkové fólie s papírem nebo plastem mezi nimi, svinuté do válečku."
+        },
+        {
+          "type": "term",
+          "term": "Kapacita C",
+          "definition": "Kolik náboje kondenzátor pojme na 1 V napětí. `C = Q / U`, jednotka **farad (F)**. Farad je obrovský, běžně μF, nF, pF.",
+          "example": "Kondenzátor 100 μF na 12 V nese Q = 100 · 10⁻⁶ · 12 = 1,2 mC."
+        },
+        {
+          "type": "heading",
+          "text": "Nabíjení a vybíjení"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "připojím zdroj: elektrony odcházejí z jedné desky na druhou",
+              "napětí na kondenzátoru roste, proud slábne",
+              "kondenzátor je nabitý: proud už neteče",
+              "připojím spotřebič: náboj se vyrovnává, kondenzátor se vybíjí"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi cyklus. Všimni si: izolantem mezi deskami proud neteče. Teče jen v přívodech, dokud se kondenzátor nabíjí nebo vybíjí. Proto kondenzátor stejnosměrný proud trvale nepropustí."
+        },
+        {
+          "type": "heading",
+          "text": "Na čem kapacita závisí"
+        },
+        {
+          "type": "text",
+          "text": "U deskového kondenzátoru `C = ε₀ · εᵣ · S / d`. Větší plocha desek S = větší kapacita. Menší vzdálenost d = větší kapacita. Lepší dielektrikum (větší εᵣ) = větší kapacita. ε₀ ≈ 8,85 · 10⁻¹² F/m je permitivita vakua."
+        },
+        {
+          "type": "example",
+          "question": "Deskový kondenzátor: plocha 0,01 m², vzdálenost desek 1 mm, vzduch (εᵣ ≈ 1). Jaká je kapacita?",
+          "answer": "C = 8,85 · 10⁻¹² · 1 · 0,01 / 0,001 = 8,85 · 10⁻¹¹ F ≈ **88,5 pF**. Proto mají skutečné kondenzátory velké svinuté plochy, tenoučké dielektrikum a materiál s velkým εᵣ."
+        },
+        {
+          "type": "example",
+          "question": "Kondenzátor 470 μF je nabitý na 25 V. Kolik náboje nese?",
+          "answer": "Q = C · U = 470 · 10⁻⁶ · 25 = **0,01175 C ≈ 11,8 mC**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zařízení je vypnuté ze zásuvky, takže uvnitř na nic nemůže dát ránu.",
+          "right": "Kondenzátory (třeba ve zdrojích nebo v měničích) mohou udržet nebezpečné napětí i dlouho po odpojení. Před prací se musí vybít a ověřit beznapěťový stav.",
+          "why": "Nabitý kondenzátor drží náboj, dokud ho nic nevybije. Velké kondenzátory na stovky voltů mohou způsobit úraz."
+        },
+        {
+          "type": "summary",
+          "text": "Náboje kolem sebe vytvářejí pole, sílu udává Coulombův zákon. Kondenzátor jsou dvě desky s dielektrikem, ukládá náboj Q = C · U. Kapacita roste s plochou desek a εᵣ, klesá se vzdáleností."
+        }
+      ]
+    },
+    {
+      "title": "Výpočty a zapojení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když v zařízení odejde kondenzátor a nemáš přesnou náhradu, složíš ji ze dvou jiných. Musíš ale vědět, jak se kapacity skládají – a je to přesně naopak než u rezistorů. Spočítáš také energii, kterou kondenzátor uloží."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kondenzátor a kapacita",
+          "definition": "Dvě vodivé elektrody oddělené izolantem. Kapacita `C = Q / U` (farad, F) říká, kolik náboje pojme na 1 V.",
+          "example": "1 μF = 10⁻⁶ F, 1 nF = 10⁻⁹ F, 1 pF = 10⁻¹² F."
+        },
+        {
+          "type": "term",
+          "term": "Dielektrikum a εᵣ",
+          "definition": "Izolant mezi elektrodami. **Relativní permitivita εᵣ** říká, kolikrát se kapacita zvětší oproti vakuu.",
+          "example": "Vzduch ≈ 1, papír asi 2–4, keramika může mít εᵣ v tisících."
+        },
+        {
+          "type": "term",
+          "term": "Jmenovité napětí",
+          "definition": "Největší napětí, které kondenzátor trvale snese. Při překročení dielektrikum prorazí a kondenzátor se zničí.",
+          "example": "Na pouzdře: 100 μF / 35 V."
+        },
+        {
+          "type": "term",
+          "term": "Elektrolytický kondenzátor",
+          "definition": "Kondenzátor s velkou kapacitou v malém pouzdře. Je **polarizovaný**: má vyznačený pól + a −. Při přepólování se může zahřát a roztrhnout.",
+          "example": "Na pouzdře je pruh se znaménky − u záporného vývodu."
+        },
+        {
+          "type": "heading",
+          "text": "Skládání kapacit"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "paralelně",
+            "sériově"
+          ],
+          "rows": [
+            [
+              "kapacita",
+              "C = C₁ + C₂ + …",
+              "1/C = 1/C₁ + 1/C₂ + …"
+            ],
+            [
+              "napětí",
+              "stejné na všech",
+              "dělí se (nepřímo úměrně C)"
+            ],
+            [
+              "náboj",
+              "sčítá se",
+              "stejný na všech"
+            ],
+            [
+              "proč",
+              "jako by se zvětšila plocha desek",
+              "jako by se zvětšila vzdálenost desek"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "kapacity se sčítají",
+              "počítá se přes převrácené hodnoty"
+            ],
+            "items": [
+              {
+                "text": "kondenzátory paralelně",
+                "group": 0
+              },
+              {
+                "text": "kondenzátory sériově",
+                "group": 1
+              },
+              {
+                "text": "rezistory sériově",
+                "group": 0
+              },
+              {
+                "text": "rezistory paralelně",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď čtyři situace. Všimni si, že kondenzátory se skládají „obráceně“ než rezistory."
+        },
+        {
+          "type": "heading",
+          "text": "Energie a časová konstanta"
+        },
+        {
+          "type": "text",
+          "text": "Nabitý kondenzátor ukládá energii `W = ½ · C · U²`. Rychlost nabíjení přes rezistor udává **časová konstanta** `τ = R · C`. Za τ se kondenzátor nabije asi na 63 % napětí zdroje, za 5τ je prakticky nabitý."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Převeď kapacitu na farady (μF · 10⁻⁶).",
+            "Rozhodni, jestli jsou kondenzátory paralelně, nebo sériově.",
+            "Spočítej výslednou kapacitu.",
+            "Podle zadání dopočítej náboj Q = C · U nebo energii W = ½ · C · U².",
+            "Zkontroluj, že žádný kondenzátor nemá víc než své jmenovité napětí."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kondenzátory 10 μF a 40 μF jsou zapojené sériově. Jaká je výsledná kapacita? A paralelně?",
+          "answer": "Sériově: C = 10 · 40 / (10 + 40) = 400 / 50 = **8 μF** (menší než nejmenší). Paralelně: 10 + 40 = **50 μF**."
+        },
+        {
+          "type": "example",
+          "question": "Kondenzátor 1 000 μF je nabitý na 40 V. Jakou energii ukládá?",
+          "answer": "W = ½ · C · U² = 0,5 · 0,001 · 1 600 = **0,8 J**."
+        },
+        {
+          "type": "example",
+          "question": "Rezistor 10 kΩ a kondenzátor 100 μF. Jaká je časová konstanta a za jak dlouho se kondenzátor prakticky nabije?",
+          "answer": "τ = R · C = 10 000 · 0,0001 = **1 s**. Prakticky nabitý je za 5τ = **5 s**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dva kondenzátory 10 μF sériově dají 20 μF.",
+          "right": "Dva kondenzátory 10 μF sériově dají 5 μF, paralelně 20 μF.",
+          "why": "Sériové spojení je jako jeden kondenzátor s větší vzdáleností desek, kapacita klesá. Je to opak rezistorů."
+        },
+        {
+          "type": "summary",
+          "text": "Paralelně se kapacity sčítají, sériově přes převrácené hodnoty. Energie W = ½CU², nabíjení přes rezistor trvá asi 5τ, τ = RC. Elektrolyt je polarizovaný, nepřekračuj jmenovité napětí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká je jednotka kapacity?",
+      "options": [
+        "farad",
+        "henry",
+        "coulomb",
+        "tesla"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátor 50 μF je nabitý na 100 V. Náboj v mC =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Q = C · U = 50 · 10⁻⁶ · 100 = 5 · 10⁻³ C = 5 mC.",
+      "hints": [
+        "Náboj = kapacita krát napětí.",
+        "Mikro je 10⁻⁶, mili je 10⁻³."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátory 20 μF a 30 μF paralelně. Výsledná kapacita v μF =",
+      "answers": [
+        "50"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátory 20 μF a 30 μF sériově. Výsledná kapacita v μF =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "20 · 30 / 50 = 12 μF.",
+      "hints": [
+        "Sériově se kondenzátory skládají jako rezistory paralelně."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když zvětšíme vzdálenost desek kondenzátoru, jeho kapacita se zvětší.",
+      "answer": false,
+      "explanation": "C = ε₀ · εᵣ · S / d, vzdálenost je ve jmenovateli."
+    },
+    {
+      "type": "truefalse",
+      "question": "Elektrolytický kondenzátor se nesmí zapojit obráceně (přepólovat).",
+      "answer": true,
+      "explanation": "Je polarizovaný, při přepólování se může zahřát a roztrhnout."
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane se silou mezi dvěma náboji, když jejich vzdálenost zdvojnásobíš?",
+      "options": [
+        "klesne na čtvrtinu",
+        "klesne na polovinu",
+        "zdvojnásobí se",
+        "nezmění se"
+      ],
+      "answer": 0,
+      "explanation": "Vzdálenost je v Coulombově zákoně na druhou."
+    },
+    {
+      "type": "input",
+      "question": "Mezi deskami vzdálenými 5 mm je napětí 500 V. Intenzita pole ve V/m =",
+      "answers": [
+        "100000",
+        "100 000"
+      ],
+      "explanation": "E = U / d = 500 / 0,005 = 100 000 V/m.",
+      "hints": [
+        "Vzdálenost převeď na metry."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátor 2 000 μF nabitý na 10 V. Energie v J =",
+      "answers": [
+        "0,1"
+      ],
+      "explanation": "W = ½ · 0,002 · 100 = 0,1 J."
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu se vzorcem.",
+      "pairs": [
+        [
+          "kapacita",
+          "C = Q / U"
+        ],
+        [
+          "energie kondenzátoru",
+          "W = ½ · C · U²"
+        ],
+        [
+          "časová konstanta",
+          "τ = R · C"
+        ],
+        [
+          "intenzita homogenního pole",
+          "E = U / d"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejmenší kapacity po největší.",
+      "items": [
+        "100 pF",
+        "10 nF",
+        "1 μF",
+        "470 μF"
+      ],
+      "hints": [
+        "Převeď vše na stejnou jednotku: pico < nano < mikro."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč kondenzátor trvale nepropustí stejnosměrný proud?",
+      "options": [
+        "mezi deskami je izolant, proud teče jen při nabíjení a vybíjení",
+        "má příliš malou kapacitu",
+        "stejnosměrný proud ho hned zničí",
+        "propustí ho, jen pomaleji"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš, co je kondenzátor, na čem závisí jeho kapacita a k čemu se používá.",
+      "answer": "Kondenzátor jsou dvě vodivé elektrody oddělené dielektrikem; ukládá náboj Q = C · U. Kapacita roste s plochou elektrod a permitivitou dielektrika a klesá s jejich vzdáleností. Používá se k filtraci napětí ve zdrojích, k rozběhu motorů, v časovačích a k oddělení stejnosměrné složky."
+    },
+    {
+      "type": "open",
+      "question": "Proč je nebezpečné sahat do vypnutého zařízení s velkými kondenzátory a jak postupovat?",
+      "answer": "Kondenzátor může držet vysoké napětí i dlouho po odpojení. Před prací se musí bezpečně vybít přes vhodný rezistor nebo vybíjecí přípravek a měřením ověřit, že na něm napětí není."
+    }
+  ]
+}

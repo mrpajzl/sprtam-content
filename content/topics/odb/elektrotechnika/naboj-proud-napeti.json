@@ -1,0 +1,446 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "naboj-proud-napeti",
+  "title": "Elektrický náboj, proud a napětí",
+  "emoji": "⚡",
+  "explanations": [
+    {
+      "title": "Jako voda v trubkách",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rozsvítíš lampu, nabiješ mobil, spustíš vrtačku. Ve všech případech drátem něco teče a koná práci. Tomu „něčemu“ říkáme elektrický náboj."
+        },
+        {
+          "type": "text",
+          "text": "Mechatronik i strojař pracuje s motory, čidly a řízením. Bez tří základních veličin – **náboje, proudu a napětí** – nepřečte schéma ani nezměří závadu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Elektrický náboj Q",
+          "definition": "Vlastnost částic, kvůli které se přitahují nebo odpuzují. Je kladný (proton) a záporný (elektron). Stejné náboje se odpuzují, opačné přitahují. Jednotka **coulomb (C)**.",
+          "example": "Elektron má náboj −1,602 · 10⁻¹⁹ C. Tomuto nejmenšímu náboji se říká elementární náboj e."
+        },
+        {
+          "type": "term",
+          "term": "Vodič a izolant",
+          "definition": "**Vodič** má volné částice s nábojem, které se mohou pohybovat (v kovech volné elektrony). **Izolant** volné náboje skoro nemá, proud jím prakticky neteče.",
+          "example": "Měď je vodič, PVC na kabelu je izolant."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický proud I",
+          "definition": "Kolik náboje projde průřezem vodiče za jednu sekundu. Jednotka **ampér (A)**. `I = Q / t`.",
+          "example": "Projde-li vodičem 10 C za 5 s, teče proud 2 A."
+        },
+        {
+          "type": "term",
+          "term": "Elektrické napětí U",
+          "definition": "„Tlak“, který žene náboj obvodem. Přesněji: práce, kterou vykoná elektrické pole při přenesení náboje 1 C mezi dvěma body. Jednotka **volt (V)**. `U = W / Q`.",
+          "example": "Tužková baterie má 1,5 V, zásuvka v ČR 230 V."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický obvod",
+          "definition": "Uzavřená cesta pro proud: **zdroj** (baterie), **spotřebič** (žárovka, motor), **vodiče** a obvykle **spínač**. Když se cesta přeruší, proud neteče.",
+          "example": "Baterka: baterie → vypínač → žárovka → zpět do baterie."
+        },
+        {
+          "type": "heading",
+          "text": "Přirovnání k vodě"
+        },
+        {
+          "type": "text",
+          "text": "Představ si vodovod. Čerpadlo vytváří tlak, voda teče trubkou a roztáčí turbínku. V obvodu je čerpadlo zdroj, tlak napětí, průtok vody proud a turbínka spotřebič."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "čerpadlo",
+                "back": "zdroj napětí (baterie, zásuvka)"
+              },
+              {
+                "front": "tlak vody",
+                "back": "napětí U ve voltech"
+              },
+              {
+                "front": "průtok (litry za sekundu)",
+                "back": "proud I v ampérech"
+              },
+              {
+                "front": "množství vody",
+                "back": "náboj Q v coulombech"
+              },
+              {
+                "front": "turbínka",
+                "back": "spotřebič (žárovka, motor)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč si kartičky a ke každé části vodovodu si řekni, co jí odpovídá v obvodu."
+        },
+        {
+          "type": "heading",
+          "text": "Kterým směrem proud teče"
+        },
+        {
+          "type": "text",
+          "text": "Ve schématech kreslíme **technický (dohodnutý) směr proudu**: od kladného pólu zdroje (+) přes spotřebič k zápornému pólu (−). Elektrony v kovu se ve skutečnosti pohybují opačně, od − k +. Dohoda vznikla dřív, než se elektron objevil."
+        },
+        {
+          "type": "example",
+          "question": "Nabíječka nabíjí akumulátor proudem 2 A po dobu 30 minut. Kolik náboje do něj proteče?",
+          "answer": "Čas převedu na sekundy: 30 min = 1 800 s. Q = I · t = 2 · 1 800 = **3 600 C**. To je přesně 1 Ah (ampérhodina), protože 1 Ah = 1 A · 3 600 s."
+        },
+        {
+          "type": "example",
+          "question": "Při přenesení náboje 4 C mezi dvěma body vykoná pole práci 48 J. Jaké je mezi body napětí?",
+          "answer": "U = W / Q = 48 / 4 = **12 V**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Baterie je zdroj proudu, proud se v ní „vyrábí“ a ve spotřebiči „spotřebuje“.",
+          "right": "Zdroj dodává napětí. Proud je v celém jednoduchém obvodu stejný – do žárovky ho vteče stejně, jako z ní vyteče.",
+          "why": "Náboj se v obvodu neztrácí. Spotřebič odebírá energii, ne náboj."
+        },
+        {
+          "type": "summary",
+          "text": "Náboj Q (C) je to, co teče. Proud I = Q / t (A) říká, kolik ho proteče za sekundu. Napětí U (V) je „tlak“, který ho žene. Proud teče jen uzavřeným obvodem, technický směr je od + k −."
+        }
+      ]
+    },
+    {
+      "title": "Veličiny a měření",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Opravář přijde k nefunkčnímu stroji a první, co vezme do ruky, je **multimetr**. Změří napětí a proud a podle čísel pozná, kde je závada. K tomu musí přesně vědět, co která veličina znamená a jak se měří."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Elektrický náboj Q",
+          "definition": "Vlastnost částic (elektronů, protonů), kvůli které na sebe působí silou. Kladný a záporný. Jednotka coulomb (C). Náboj se nedá vytvořit ani zničit, jen přemístit.",
+          "example": "Náboj 1 C nese asi 6,24 · 10¹⁸ elektronů."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický proud I",
+          "definition": "Usměrněný pohyb částic s nábojem. Velikost = náboj, který projde průřezem vodiče za 1 s: `I = Q / t`. Jednotka ampér (A); 1 A = 1 C/s.",
+          "example": "LED potřebuje asi 20 mA = 0,02 A."
+        },
+        {
+          "type": "term",
+          "term": "Elektrické napětí U",
+          "definition": "Rozdíl „elektrických hladin“ (potenciálů) mezi dvěma body. Udává práci na přenesení náboje 1 C: `U = W / Q`. Jednotka volt (V); 1 V = 1 J/C.",
+          "example": "Mezi póly autobaterie je asi 12 V."
+        },
+        {
+          "type": "term",
+          "term": "Stejnosměrný a střídavý proud",
+          "definition": "**Stejnosměrný (DC)** teče stále jedním směrem (baterie). **Střídavý (AC)** pravidelně mění směr (zásuvka, v Evropě 50krát za sekundu).",
+          "example": "Mobil se nabíjí stejnosměrně, nabíječka je zapojená do střídavé sítě."
+        },
+        {
+          "type": "term",
+          "term": "Voltmetr a ampérmetr",
+          "definition": "**Voltmetr** měří napětí a připojuje se **paralelně** (vedle) ke spotřebiči. **Ampérmetr** měří proud a zapojuje se **do série**, obvod se kvůli němu rozpojí.",
+          "example": "U multimetru přepneš mezi V a A a u proudu přepojíš i hrot do zdířky A."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled veličin"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Veličina",
+            "Značka",
+            "Jednotka",
+            "Vztah"
+          ],
+          "rows": [
+            [
+              "náboj",
+              "Q",
+              "coulomb (C)",
+              "Q = I · t"
+            ],
+            [
+              "proud",
+              "I",
+              "ampér (A)",
+              "I = Q / t"
+            ],
+            [
+              "napětí",
+              "U",
+              "volt (V)",
+              "U = W / Q"
+            ],
+            [
+              "práce (energie)",
+              "W",
+              "joule (J)",
+              "W = U · Q"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Násobky jednotek"
+        },
+        {
+          "type": "text",
+          "text": "V elektrotechnice jsou hodnoty často velmi malé nebo velké. Používáme předpony: **m** (mili) = tisícina, **μ** (mikro) = miliontina, **k** (kilo) = tisíc, **M** (mega) = milion."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "250 mA = ",
+                "after": " A",
+                "options": [
+                  "0,25",
+                  "2,5",
+                  "25"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "22 kV = ",
+                "after": " V",
+                "options": [
+                  "220",
+                  "2 200",
+                  "22 000"
+                ],
+                "answer": 2
+              },
+              {
+                "before": "1,5 A = ",
+                "after": " mA",
+                "options": [
+                  "15",
+                  "150",
+                  "1 500"
+                ],
+                "answer": 2
+              },
+              {
+                "before": "400 μA = ",
+                "after": " mA",
+                "options": [
+                  "0,4",
+                  "4",
+                  "40"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň převody. Mili a mikro dělí, kilo a mega násobí."
+        },
+        {
+          "type": "heading",
+          "text": "Jak měřit multimetrem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odhadni, jestli měříš stejnosměrnou (DC, V⎓) nebo střídavou (AC, V~) veličinu.",
+            "Nastav rozsah větší, než čekáš (nebo automatický rozsah).",
+            "Napětí: hroty přilož paralelně ke dvěma bodům, obvod nerozpojuj.",
+            "Proud: obvod rozpoj, ampérmetr vlož do série a červený hrot přepoj do zdířky A nebo mA.",
+            "Po měření proudu vrať hrot zpět do zdířky V – jinak příště při měření napětí uděláš zkrat."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Akumulátor má kapacitu 2 000 mAh. Jak dlouho teoreticky vydrží dodávat proud 250 mA?",
+          "answer": "Kapacita je náboj: Q = I · t, takže t = Q / I = 2 000 mAh / 250 mA = **8 h**. Ve skutečnosti méně, kapacita s věkem a zátěží klesá."
+        },
+        {
+          "type": "example",
+          "question": "Vodičem proteče za 2 minuty náboj 600 C. Jaký proud teče?",
+          "answer": "t = 2 min = 120 s. I = Q / t = 600 / 120 = **5 A**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ampérmetr přiložím hroty k pólům baterie, abych zjistil, kolik dává proudu.",
+          "right": "Ampérmetr se zapojuje vždy do série se spotřebičem. K pólům zdroje se přikládá jen voltmetr.",
+          "why": "Ampérmetr má téměř nulový odpor. Přímo na zdroji vytvoří zkrat: teče obrovský proud, spálí se pojistka měřáku nebo vznikne oblouk."
+        },
+        {
+          "type": "summary",
+          "text": "Q v coulombech, I = Q/t v ampérech, U = W/Q ve voltech. Voltmetr paralelně, ampérmetr do série. Pozor na předpony m, μ, k, M."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "V jaké jednotce se měří elektrický proud?",
+      "options": [
+        "ampér",
+        "volt",
+        "coulomb",
+        "watt"
+      ],
+      "answer": 0,
+      "explanation": "Proud = ampér (A), napětí = volt, náboj = coulomb, výkon = watt."
+    },
+    {
+      "type": "truefalse",
+      "question": "Technický směr proudu je od kladného pólu zdroje přes spotřebič k zápornému pólu.",
+      "answer": true,
+      "explanation": "Je to dohoda. Elektrony v kovu se pohybují opačně."
+    },
+    {
+      "type": "input",
+      "question": "Vodičem proteče za 10 s náboj 30 C. Proud v A =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "I = Q / t = 30 / 10 = 3 A.",
+      "hints": [
+        "Proud je náboj za jednu sekundu.",
+        "Vyděl náboj časem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik je 0,35 A v miliampérech? mA =",
+      "answers": [
+        "350"
+      ],
+      "explanation": "1 A = 1 000 mA, 0,35 · 1 000 = 350 mA."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapojuje voltmetr?",
+      "options": [
+        "paralelně ke spotřebiči",
+        "do série se spotřebičem",
+        "mezi spotřebič a pojistku",
+        "nezáleží na tom"
+      ],
+      "answer": 0,
+      "explanation": "Voltmetr měří rozdíl mezi dvěma body, proto se k nim přikládá paralelně."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve spotřebiči se proud „spotřebuje“, takže za žárovkou teče menší proud než před ní.",
+      "answer": false,
+      "explanation": "V jednoduchém obvodu je proud všude stejný. Spotřebič odebírá energii, náboj se neztrácí."
+    },
+    {
+      "type": "input",
+      "question": "Pole vykoná při přenesení náboje 5 C práci 60 J. Napětí ve V =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "U = W / Q = 60 / 5 = 12 V.",
+      "hints": [
+        "Napětí je práce na jeden coulomb."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s její jednotkou.",
+      "pairs": [
+        [
+          "náboj",
+          "coulomb"
+        ],
+        [
+          "proud",
+          "ampér"
+        ],
+        [
+          "napětí",
+          "volt"
+        ],
+        [
+          "práce",
+          "joule"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Nabíječka dodává proud 0,5 A po dobu 2 hodin. Kolik je to ampérhodin? Ah =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "Q = I · t = 0,5 A · 2 h = 1 Ah.",
+      "hints": [
+        "Ampérhodiny dostaneš, když proud v ampérech vynásobíš časem v hodinách."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky měření proudu multimetrem.",
+      "items": [
+        "nastavit rozsah A nebo mA",
+        "přepojit červený hrot do zdířky A",
+        "rozpojit obvod",
+        "vložit měřák do série a odečíst",
+        "vrátit hrot do zdířky V"
+      ],
+      "hints": [
+        "Nejdřív připrav měřák, pak sahej na obvod."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane, když ampérmetr připojíš přímo na póly autobaterie?",
+      "options": [
+        "vznikne zkrat a může shořet pojistka nebo měřák",
+        "ukáže kapacitu baterie",
+        "ukáže napětí 12 V",
+        "nic, ampérmetr neteče proud"
+      ],
+      "answer": 0,
+      "explanation": "Ampérmetr má skoro nulový odpor, takže přímo na zdroji tvoří zkrat."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi elektrickým napětím a proudem.",
+      "answer": "Napětí je „tlak“, rozdíl potenciálů mezi dvěma body, který žene náboj obvodem; měří se ve voltech. Proud je množství náboje, které projde průřezem vodiče za sekundu; měří se v ampérech."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, z čeho se skládá jednoduchý elektrický obvod a co je potřeba, aby jím tekl proud.",
+      "answer": "Obvod tvoří zdroj napětí, spotřebič, vodiče a obvykle spínač. Proud teče jen tehdy, když je obvod uzavřený a zdroj vytváří napětí."
+    }
+  ]
+}

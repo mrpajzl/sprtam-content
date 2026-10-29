@@ -1,0 +1,406 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ohmuv-zakon-odpor",
+  "title": "Ohmův zákon a elektrický odpor",
+  "emoji": "🎚️",
+  "explanations": [
+    {
+      "title": "Proč drát brzdí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Prodlužovačka na staveništi je dlouhá 50 m. Vrtačka na jejím konci se točí pomaleji a kabel se hřeje. Důvod: každý vodič klade proudu **odpor**. Čím je drát delší a tenčí, tím víc brzdí."
+        },
+        {
+          "type": "text",
+          "text": "Ohmův zákon je nejpoužívanější vztah v elektrotechnice. Spočítáš z něj proud, napětí i odpor a podle toho vybereš kabel, rezistor nebo pojistku."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: napětí a proud",
+          "definition": "Napětí U (volt, V) je „tlak“, který žene náboj. Proud I (ampér, A) je množství náboje, které proteče za sekundu."
+        },
+        {
+          "type": "term",
+          "term": "Elektrický odpor R",
+          "definition": "Jak moc vodič brání průchodu proudu. Jednotka **ohm (Ω)**. Vodič má odpor 1 Ω, když při napětí 1 V jím teče proud 1 A.",
+          "example": "Topná spirála rychlovarné konvice má asi 25 Ω."
+        },
+        {
+          "type": "term",
+          "term": "Rezistor",
+          "definition": "Součástka, která má záměrně určitý odpor. Používá se k omezení proudu nebo k dělení napětí.",
+          "example": "Rezistor 220 Ω omezuje proud do LED."
+        },
+        {
+          "type": "heading",
+          "text": "Ohmův zákon"
+        },
+        {
+          "type": "text",
+          "text": "Georg Simon Ohm zjistil, že u kovového vodiče při stálé teplotě roste proud přímo úměrně s napětím. Dvojnásobné napětí = dvojnásobný proud."
+        },
+        {
+          "type": "text",
+          "text": "`I = U / R`. Z toho plyne i `U = R · I` a `R = U / I`. Pomůcka: zakryj v trojúhelníku U nad R · I hledanou veličinu."
+        },
+        {
+          "type": "text",
+          "text": "Graf proudu v závislosti na napětí je přímka z počátku. Posuvníkem k měníš sklon: k tu znamená 1/R. Při k = 0,5 je R = 2 Ω. Zkus k zmenšit: větší odpor = menší sklon = menší proud při stejném napětí."
+        },
+        {
+          "type": "widget",
+          "widget": "linear",
+          "props": {
+            "k": 0.5,
+            "q": 0
+          }
+        },
+        {
+          "type": "example",
+          "question": "Žárovka do auta má při 12 V odpor 2,4 Ω. Jaký jí teče proud?",
+          "answer": "I = U / R = 12 / 2,4 = **5 A**."
+        },
+        {
+          "type": "example",
+          "question": "Rezistorem 470 Ω teče proud 20 mA. Jaké je na něm napětí?",
+          "answer": "Převod: 20 mA = 0,02 A. U = R · I = 470 · 0,02 = **9,4 V**."
+        },
+        {
+          "type": "heading",
+          "text": "Na čem odpor drátu závisí"
+        },
+        {
+          "type": "term",
+          "term": "Rezistivita ρ (měrný odpor)",
+          "definition": "Odpor drátu z daného materiálu dlouhého 1 m s průřezem 1 mm². Čím menší ρ, tím lepší vodič. Jednotka Ω·mm²/m.",
+          "example": "Měď asi 0,0178 Ω·mm²/m, hliník asi 0,028 Ω·mm²/m."
+        },
+        {
+          "type": "text",
+          "text": "Odpor drátu: `R = ρ · l / S`, kde l je délka v metrech a S průřez v mm². Dvakrát delší drát má dvakrát větší odpor, dvakrát silnější průřez poloviční."
+        },
+        {
+          "type": "example",
+          "question": "Jaký odpor má měděný vodič délky 100 m s průřezem 1,5 mm² (ρ = 0,0178 Ω·mm²/m)?",
+          "answer": "R = ρ · l / S = 0,0178 · 100 / 1,5 ≈ **1,19 Ω**. Prodlužovačka má dva vodiče (tam a zpět), takže odpor smyčky je dvojnásobný, asi 2,4 Ω."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Odpor je vlastnost napětí – když zvýším napětí, zvětší se odpor.",
+          "right": "Odpor kovového vodiče je dán materiálem, délkou, průřezem a teplotou. Vyšší napětí jen zvětší proud.",
+          "why": "R = U / I je jen způsob, jak odpor spočítat. Zvýšíš-li U, zvětší se ve stejném poměru I a podíl zůstane stejný."
+        },
+        {
+          "type": "summary",
+          "text": "Ohmův zákon: `I = U / R`. Odpor drátu `R = ρ · l / S`: roste s délkou, klesá s průřezem a závisí na materiálu."
+        }
+      ]
+    },
+    {
+      "title": "Vzorce a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když navrhuješ zapojení čidla nebo vybíráš průřez kabelu k motoru, potřebuješ rychle a přesně počítat. Tady jsou všechny vztahy pro odpor pohromadě a postup, jak s nimi pracovat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Elektrický odpor R",
+          "definition": "Veličina, která říká, jak vodič brání proudu. Jednotka ohm (Ω); 1 Ω = 1 V / 1 A. Násobky kΩ (tisíc) a MΩ (milion).",
+          "example": "4,7 kΩ = 4 700 Ω."
+        },
+        {
+          "type": "term",
+          "term": "Vodivost G",
+          "definition": "Opak odporu: `G = 1 / R`. Jednotka **siemens (S)**. Čím větší vodivost, tím lépe vodič vede.",
+          "example": "Odpor 0,5 Ω → vodivost 2 S."
+        },
+        {
+          "type": "term",
+          "term": "Rezistivita ρ",
+          "definition": "Měrný odpor materiálu: odpor vodiče délky 1 m a průřezu 1 mm². Jednotka Ω·mm²/m (v soustavě SI Ω·m).",
+          "example": "Stříbro 0,016, měď 0,0178, hliník 0,028, konstantan asi 0,5 Ω·mm²/m."
+        },
+        {
+          "type": "term",
+          "term": "Teplotní součinitel odporu α",
+          "definition": "Říká, o kolik se poměrně změní odpor, když se vodič ohřeje o 1 °C (1 K). U kovů je kladný: zahřátý kov má větší odpor.",
+          "example": "Měď má α ≈ 0,004 K⁻¹, tedy asi 0,4 % na každý stupeň."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled vztahů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Co hledám",
+            "Vztah",
+            "Jednotky"
+          ],
+          "rows": [
+            [
+              "proud",
+              "I = U / R",
+              "A = V / Ω"
+            ],
+            [
+              "napětí",
+              "U = R · I",
+              "V = Ω · A"
+            ],
+            [
+              "odpor",
+              "R = U / I",
+              "Ω = V / A"
+            ],
+            [
+              "odpor drátu",
+              "R = ρ · l / S",
+              "Ω, m, mm²"
+            ],
+            [
+              "odpor po ohřátí",
+              "R = R₂₀ · (1 + α · Δt)",
+              "Δt ve °C nebo K"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup výpočtu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vypiš zadané veličiny i s jednotkami.",
+            "Převeď na základní jednotky (mA → A, kΩ → Ω).",
+            "Vyber vztah, ve kterém je hledaná veličina a ostatní znáš.",
+            "Dosaď a vypočítej.",
+            "Zkontroluj, jestli je výsledek rozumný (řádově)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na rezistor 4,7 kΩ přivedeš 12 V. Jaký proud poteče?",
+          "answer": "4,7 kΩ = 4 700 Ω. I = U / R = 12 / 4 700 ≈ 0,00255 A ≈ **2,55 mA**."
+        },
+        {
+          "type": "example",
+          "question": "Měděné vinutí motoru má při 20 °C odpor 2 Ω. Jaký odpor má při 80 °C (α = 0,004 K⁻¹)?",
+          "answer": "Δt = 80 − 20 = 60 K. R = 2 · (1 + 0,004 · 60) = 2 · 1,24 = **2,48 Ω**. Teplý motor má o 24 % větší odpor vinutí."
+        },
+        {
+          "type": "example",
+          "question": "Hliníkový vodič délky 200 m má mít odpor nejvýš 0,5 Ω (ρ = 0,028 Ω·mm²/m). Jaký nejmenší průřez potřebuje?",
+          "answer": "Z R = ρ · l / S vyjádřím S = ρ · l / R = 0,028 · 200 / 0,5 = **11,2 mm²**. Vybereš nejbližší vyšší normalizovaný průřez, tedy 16 mm²."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "Ω·mm²/m (× 1 000)",
+            "items": [
+              {
+                "label": "stříbro",
+                "value": 16
+              },
+              {
+                "label": "měď",
+                "value": 17.8
+              },
+              {
+                "label": "hliník",
+                "value": 28
+              },
+              {
+                "label": "železo",
+                "value": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Porovnej rezistivity kovů. Proč se na kabely používá měď a hliník, a ne železo? A proč ne stříbro?"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rezistor 470 Ω, proud 20 mA: U = 470 · 20 = 9 400 V.",
+          "right": "20 mA = 0,02 A, takže U = 470 · 0,02 = 9,4 V.",
+          "why": "Miliampéry jsou tisíciny ampéru. Bez převodu na základní jednotky (V, A, Ω) vyjde výsledek tisíckrát špatně."
+        },
+        {
+          "type": "summary",
+          "text": "I = U / R, U = R · I, R = U / I. Odpor drátu R = ρ · l / S, s teplotou roste: R = R₂₀ · (1 + α · Δt). Před dosazením vždy převeď jednotky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Na rezistor 100 Ω je přivedeno napětí 12 V. Proud v A =",
+      "answers": [
+        "0,12"
+      ],
+      "explanation": "I = U / R = 12 / 100 = 0,12 A.",
+      "hints": [
+        "Použij Ohmův zákon pro proud."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Spotřebičem s odporem 46 Ω teče proud 5 A. Napětí ve V =",
+      "answers": [
+        "230"
+      ],
+      "explanation": "U = R · I = 46 · 5 = 230 V."
+    },
+    {
+      "type": "input",
+      "question": "Při napětí 24 V teče spotřebičem proud 0,5 A. Odpor v Ω =",
+      "answers": [
+        "48"
+      ],
+      "explanation": "R = U / I = 24 / 0,5 = 48 Ω."
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane s odporem drátu, když zdvojnásobíš jeho délku a průřez zůstane stejný?",
+      "options": [
+        "zdvojnásobí se",
+        "zmenší se na polovinu",
+        "nezmění se",
+        "zčtyřnásobí se"
+      ],
+      "answer": 0,
+      "explanation": "R = ρ · l / S, odpor je přímo úměrný délce."
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane s odporem drátu, když zdvojnásobíš jeho průřez?",
+      "options": [
+        "zmenší se na polovinu",
+        "zdvojnásobí se",
+        "nezmění se",
+        "zmenší se na čtvrtinu"
+      ],
+      "answer": 0,
+      "explanation": "Průřez je ve jmenovateli, takže dvojnásobný průřez = poloviční odpor."
+    },
+    {
+      "type": "truefalse",
+      "question": "Odpor kovového vodiče se při zahřátí zvětšuje.",
+      "answer": true,
+      "explanation": "Kovy mají kladný teplotní součinitel odporu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když na rezistor přivedu dvojnásobné napětí, jeho odpor se zdvojnásobí.",
+      "answer": false,
+      "explanation": "Odpor zůstane stejný, zdvojnásobí se proud."
+    },
+    {
+      "type": "input",
+      "question": "Měděný vodič: ρ = 0,0178 Ω·mm²/m, délka 50 m, průřez 2,5 mm². Odpor v Ω =",
+      "answers": [
+        "0,356",
+        "0,36",
+        "0,4"
+      ],
+      "explanation": "R = 0,0178 · 50 / 2,5 = 0,356 Ω.",
+      "hints": [
+        "Rezistivitu vynásob délkou.",
+        "Výsledek vyděl průřezem v mm²."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 2,2 kΩ na ohmy. Ω =",
+      "answers": [
+        "2200",
+        "2 200"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď materiály od nejlepšího vodiče (nejmenší rezistivita) po nejhorší.",
+      "items": [
+        "stříbro",
+        "měď",
+        "hliník",
+        "železo"
+      ],
+      "hints": [
+        "Nejlepší vodič je drahý kov, který se na kabely nepoužívá kvůli ceně."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s jednotkou.",
+      "pairs": [
+        [
+          "odpor",
+          "ohm"
+        ],
+        [
+          "vodivost",
+          "siemens"
+        ],
+        [
+          "rezistivita",
+          "Ω·mm²/m"
+        ],
+        [
+          "teplotní součinitel",
+          "K⁻¹"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vinutí má při 20 °C odpor 10 Ω, α = 0,004 K⁻¹. Jaký odpor má při 70 °C?",
+      "options": [
+        "12 Ω",
+        "10,2 Ω",
+        "14 Ω",
+        "8 Ω"
+      ],
+      "answer": 0,
+      "explanation": "R = 10 · (1 + 0,004 · 50) = 10 · 1,2 = 12 Ω.",
+      "hints": [
+        "Nejdřív zjisti rozdíl teplot.",
+        "Dosaď do R = R₂₀ · (1 + α · Δt)."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyslov Ohmův zákon a vysvětli, kdy platí.",
+      "answer": "Proud ve vodiči je přímo úměrný napětí a nepřímo úměrný odporu: I = U / R. Přesně platí pro kovové vodiče a rezistory při stálé teplotě."
+    },
+    {
+      "type": "open",
+      "question": "Na čem závisí odpor vodiče? Vysvětli, proč se dlouhé prodlužovačky dělají s větším průřezem.",
+      "answer": "Odpor závisí na materiálu (rezistivitě), délce, průřezu a teplotě: R = ρ · l / S. Dlouhý kabel má velký odpor, proto se volí větší průřez, aby na něm nebyl velký úbytek napětí a nehřál se."
+    }
+  ]
+}

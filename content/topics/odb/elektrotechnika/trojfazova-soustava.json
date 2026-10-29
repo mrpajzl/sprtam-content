@@ -1,0 +1,400 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "trojfazova-soustava",
+  "title": "Trojfázová soustava",
+  "emoji": "🔺",
+  "explanations": [
+    {
+      "title": "Tři vlny v dílně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V dílně je kromě běžné zásuvky ještě červená zásuvka s pěti kolíky. Do ní se zapojuje soustruh, kompresor nebo svářečka. Je to přípojka **trojfázového** proudu, říká se jí lidově „třífázová“ nebo „400“."
+        },
+        {
+          "type": "text",
+          "text": "Trojfázová soustava přenáší velký výkon úsporněji než jednofázová a sama vytváří točivé magnetické pole, které roztočí asynchronní motor. Proto ji najdeš v každé fabrice."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: střídavé napětí",
+          "definition": "Napětí, které 50krát za sekundu mění směr, má tvar sinusové vlny. Udává se jeho efektivní hodnota (230 V v zásuvce)."
+        },
+        {
+          "type": "term",
+          "term": "Fáze (fázový vodič) L1, L2, L3",
+          "definition": "Tři vodiče, na kterých je střídavé napětí. Vlny jsou proti sobě posunuté o **třetinu periody (120°)**: když je jedna na vrcholu, ostatní jsou jinde.",
+          "example": "Barvy izolace fázových vodičů: hnědá, černá, šedá."
+        },
+        {
+          "type": "term",
+          "term": "Střední (nulový) vodič N",
+          "definition": "Společný zpětný vodič, spojený se středem vinutí transformátoru. Má modrou izolaci.",
+          "example": "Jednofázová zásuvka má fázi a N."
+        },
+        {
+          "type": "term",
+          "term": "Ochranný vodič PE",
+          "definition": "Vodič se zelenožlutou izolací, spojený s kostrou spotřebiče. Při poruše odvede proud, aby jistič vypnul. Za normálního provozu jím proud neteče.",
+          "example": "Kolík v zásuvce, na který se připojí kostra pračky."
+        },
+        {
+          "type": "term",
+          "term": "Fázové a sdružené napětí",
+          "definition": "**Fázové** napětí je mezi fází a N (230 V). **Sdružené** je mezi dvěma fázemi (400 V). Platí `U_s = √3 · U_f`.",
+          "example": "230 · 1,73 ≈ 400 V."
+        },
+        {
+          "type": "heading",
+          "text": "Proč 400, a ne 460"
+        },
+        {
+          "type": "text",
+          "text": "Dvě fáze nejsou nikdy na vrcholu současně, jsou posunuté o 120°. Rozdíl dvou takových vln je proto jen √3krát (asi 1,73krát) větší než jedna vlna, ne dvakrát."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "L1 na kladném vrcholu",
+              "L2 na kladném vrcholu (o 120° později)",
+              "L3 na kladném vrcholu (o dalších 120°)",
+              "znovu L1 – celá perioda má 360°"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Sleduj, jak se vrcholy fází střídají dokola. Právě toto „obíhání“ vytvoří v motoru točivé magnetické pole."
+        },
+        {
+          "type": "heading",
+          "text": "Hvězda a trojúhelník"
+        },
+        {
+          "type": "text",
+          "text": "Tři vinutí motoru jde zapojit dvěma způsoby. Do **hvězdy (Y)**: konce vinutí spojené do jednoho bodu, každé vinutí má 230 V. Do **trojúhelníku (D, Δ)**: vinutí za sebou do kruhu, každé má 400 V."
+        },
+        {
+          "type": "example",
+          "question": "Na štítku motoru je 400/690 V, Δ/Y. Jak ho zapojíš na síť 3 × 400 V?",
+          "answer": "Vinutí snese 400 V. V síti 400 V ho tedy zapojíš do **trojúhelníku**, kde má každé vinutí sdružené napětí 400 V. Do hvězdy by se zapojil jen v síti 690 V."
+        },
+        {
+          "type": "example",
+          "question": "Motor má na štítku 230/400 V, Δ/Y. Jak ho zapojíš na síť 3 × 400 V?",
+          "answer": "Vinutí snese 230 V. Zapojíš ho do **hvězdy**: každé vinutí pak má fázové napětí 400 / √3 ≈ 230 V. V trojúhelníku by na vinutí bylo 400 V a motor by se spálil."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zelenožlutý vodič je „nulák“, můžu ho použít místo modrého N.",
+          "right": "Zelenožlutý je jen ochranný PE, modrý je pracovní střední vodič N. Jsou to různé vodiče s různou funkcí.",
+          "why": "PE nesmí za normálního provozu vést proud a nesmí se přerušit. Záměna může uvést kostru stroje pod napětí."
+        },
+        {
+          "type": "summary",
+          "text": "Trojfázová soustava: tři fáze posunuté o 120°, fázové napětí 230 V, sdružené 400 V = √3 · 230. Vinutí motoru se zapojuje do hvězdy (230 V na vinutí) nebo do trojúhelníku (400 V na vinutí) podle štítku."
+        }
+      ]
+    },
+    {
+      "title": "Vzorce a štítek",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než připojíš trojfázový stroj, musíš z jeho štítku spočítat proud, vybrat jistič a správně zapojit svorkovnici. K tomu stačí pár vzorců a pravidla pro hvězdu a trojúhelník."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trojfázová soustava",
+          "definition": "Tři střídavá napětí stejné velikosti a frekvence, vzájemně posunutá o 120°. V ČR se značí 3/N/PE AC 400/230 V 50 Hz.",
+          "example": "Rozvod v dílně: L1, L2, L3, N, PE."
+        },
+        {
+          "type": "term",
+          "term": "Fázové a sdružené veličiny",
+          "definition": "Fázové napětí U_f je mezi fází a N, sdružené U_s mezi dvěma fázemi: `U_s = √3 · U_f`. **Fázový proud** teče jedním vinutím (fází spotřebiče), **sdružený** přívodním vodičem.",
+          "example": "U_f = 230 V, U_s = 400 V."
+        },
+        {
+          "type": "term",
+          "term": "Symetrická zátěž",
+          "definition": "Všechny tři fáze spotřebiče jsou stejné (stejná impedance). Proudy jsou stejně velké a jejich součet je nula – středním vodičem nic neteče.",
+          "example": "Trojfázový motor je symetrická zátěž, proto ke svému chodu N nepotřebuje."
+        },
+        {
+          "type": "term",
+          "term": "Účiník cos φ",
+          "definition": "Říká, jaká část proudu koná užitečnou práci. U motorů typicky 0,7–0,9, je na štítku.",
+          "example": "cos φ = 0,85."
+        },
+        {
+          "type": "heading",
+          "text": "Hvězda a trojúhelník v tabulce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "hvězda Y",
+            "trojúhelník D"
+          ],
+          "rows": [
+            [
+              "napětí na vinutí",
+              "U_f = U_s / √3 (230 V)",
+              "U_s (400 V)"
+            ],
+            [
+              "proud v přívodu",
+              "stejný jako ve vinutí",
+              "√3 × proud ve vinutí"
+            ],
+            [
+              "střední bod",
+              "ano, lze připojit N",
+              "není"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Výkon trojfázového spotřebiče (v obou zapojeních): `P = √3 · U_s · I · cos φ`, kde I je proud v přívodním vodiči."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet proudu ze štítku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ze štítku zjisti příkon P₀ (nebo výkon P a účinnost η, P₀ = P / η).",
+            "Zjisti sdružené napětí sítě U_s (400 V) a cos φ.",
+            "Proud I = P₀ / (√3 · U_s · cos φ).",
+            "Podle proudu a charakteru zátěže vyber jistič a průřez vodičů."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Trojfázový motor odebírá příkon 11 kW, cos φ = 0,85, síť 400 V. Jaký proud teče jedním přívodem?",
+          "answer": "I = P₀ / (√3 · U · cos φ) = 11 000 / (1,732 · 400 · 0,85) = 11 000 / 589 ≈ **18,7 A**."
+        },
+        {
+          "type": "example",
+          "question": "Trojfázové topidlo má tři topné spirály po 53 Ω zapojené do hvězdy na síť 400/230 V. Jaký je proud a celkový výkon?",
+          "answer": "Každá spirála má 230 V. I = 230 / 53 ≈ 4,34 A. Výkon jedné spirály 230 · 4,34 ≈ 1 000 W, celkem **3 kW**. Kontrola: √3 · 400 · 4,34 · 1 ≈ 3 007 W. ✓"
+        },
+        {
+          "type": "example",
+          "question": "Stejné tři spirály zapojíš do trojúhelníku. Jaký bude výkon?",
+          "answer": "Každá spirála má teď 400 V. P jedné = 400² / 53 ≈ 3 019 W, celkem asi **9 kW** – trojnásobek. Proto se rozběh velkých motorů dělá **hvězda–trojúhelník**: v hvězdě je proud i moment třetinový."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "štítek 230/400 V Δ/Y, síť 400 V",
+                "back": "hvězda Y"
+              },
+              {
+                "front": "štítek 400/690 V Δ/Y, síť 400 V",
+                "back": "trojúhelník D"
+              },
+              {
+                "front": "napětí mezi L1 a N",
+                "back": "fázové, 230 V"
+              },
+              {
+                "front": "napětí mezi L1 a L2",
+                "back": "sdružené, 400 V"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ke každé kartičce si nejdřív řekni odpověď sám a teprve pak ji otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výkon trojfázového motoru spočítám jako P = 3 · 400 · I · cos φ.",
+          "right": "P = √3 · 400 · I · cos φ (nebo 3 · 230 · I · cos φ).",
+          "why": "Sdružené napětí 400 V už v sobě √3 obsahuje. Trojku dosazuješ jen s fázovým napětím 230 V."
+        },
+        {
+          "type": "summary",
+          "text": "U_s = √3 · U_f. P = √3 · U_s · I · cos φ. Hvězda: vinutí má 230 V; trojúhelník: 400 V a trojnásobný výkon. Symetrickou zátěží N neteče proud."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaké je sdružené napětí v české síti nízkého napětí?",
+      "options": [
+        "400 V",
+        "230 V",
+        "460 V",
+        "690 V"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "O kolik stupňů jsou proti sobě posunuté fáze trojfázové soustavy?",
+      "options": [
+        "120°",
+        "90°",
+        "180°",
+        "60°"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj vodič s barvou jeho izolace.",
+      "pairs": [
+        [
+          "ochranný PE",
+          "zelenožlutá"
+        ],
+        [
+          "střední N",
+          "modrá"
+        ],
+        [
+          "fáze L1",
+          "hnědá"
+        ],
+        [
+          "fáze L2",
+          "černá"
+        ],
+        [
+          "fáze L3",
+          "šedá"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Fázové napětí je 230 V. Kolikrát je sdružené napětí větší? Napiš na dvě desetinná místa.",
+      "answers": [
+        "1,73",
+        "1.73"
+      ],
+      "explanation": "U_s / U_f = √3 ≈ 1,73.",
+      "hints": [
+        "Vzpomeň si na vzorec mezi sdruženým a fázovým napětím."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při symetrické zátěži teče středním vodičem N nulový proud.",
+      "answer": true,
+      "explanation": "Proudy tří fází posunuté o 120° se sečtou na nulu."
+    },
+    {
+      "type": "choice",
+      "question": "Motor má na štítku 230/400 V Δ/Y. Jak ho zapojíš do sítě 3 × 400 V?",
+      "options": [
+        "do hvězdy",
+        "do trojúhelníku",
+        "jen na jednu fázi",
+        "na libovolné zapojení"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kolik voltů snese jedno vinutí?",
+        "Ve kterém zapojení má vinutí 230 V?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Trojfázový spotřebič: U = 400 V, I = 10 A, cos φ = 1. Výkon ve W (zaokrouhli na celé stovky) =",
+      "answers": [
+        "6900",
+        "6 900"
+      ],
+      "explanation": "P = 1,732 · 400 · 10 · 1 ≈ 6 928 W ≈ 6 900 W."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ochranný vodič PE vede za normálního provozu pracovní proud spotřebiče.",
+      "answer": false,
+      "explanation": "PE vede proud jen při poruše. Pracovní proud vede fáze a N."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se velké motory rozbíhají přepnutím hvězda–trojúhelník?",
+      "options": [
+        "v hvězdě je rozběhový proud asi třetinový",
+        "v hvězdě se motor točí opačně",
+        "trojúhelník nejde zapnout přímo",
+        "aby nepotřeboval ochranný vodič"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu proudu trojfázového motoru ze štítku.",
+      "items": [
+        "zjistit výkon a účinnost",
+        "spočítat příkon P₀ = P / η",
+        "zjistit napětí a cos φ",
+        "spočítat I = P₀ / (√3 · U · cos φ)",
+        "vybrat jistič a průřez"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tři rezistory 230 Ω zapojené do hvězdy na síť 400/230 V. Proud jedním rezistorem v A =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "V hvězdě má každý rezistor fázové napětí 230 V: I = 230 / 230 = 1 A."
+    },
+    {
+      "type": "choice",
+      "question": "Která výhoda patří trojfázové soustavě?",
+      "options": [
+        "vytváří točivé magnetické pole pro motory",
+        "nepotřebuje žádný jistič",
+        "má nižší napětí než jednofázová",
+        "funguje bez transformátorů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi zapojením do hvězdy a do trojúhelníku.",
+      "answer": "Ve hvězdě jsou konce vinutí spojené do společného bodu a každé vinutí má fázové napětí 230 V. V trojúhelníku jsou vinutí zapojená za sebou do uzavřeného obrazce a každé má sdružené napětí 400 V, výkon je přitom trojnásobný."
+    },
+    {
+      "type": "open",
+      "question": "Jaké vodiče má trojfázový rozvod TN-S a jakou mají funkci?",
+      "answer": "Tři fázové vodiče L1, L2, L3 (hnědá, černá, šedá) vedou pracovní proud. Střední vodič N (modrý) je zpětný vodič pro jednofázové spotřebiče. Ochranný vodič PE (zelenožlutý) je spojený s kostrami a při poruše odvede proud, aby ochrana vypnula."
+    }
+  ]
+}

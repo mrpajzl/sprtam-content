@@ -1,0 +1,412 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "elektricke-stroje",
+  "title": "Elektrické stroje: asynchronní a stejnosměrný motor",
+  "emoji": "⚙️",
+  "explanations": [
+    {
+      "title": "Co se v motoru točí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dopravník, čerpadlo, ventilátor, vřeteno soustruhu – skoro všechno, co se ve fabrice točí, pohání elektromotor. Nejčastější je **asynchronní motor**: jednoduchý, levný a skoro bez údržby. V autech, robotech a malém nářadí zase najdeš **stejnosměrné motory**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: síla na vodič v magnetickém poli",
+          "definition": "Na vodič s proudem v magnetickém poli působí síla F = B · I · l. A když se vodič v poli pohybuje (nebo se pole mění), indukuje se v něm napětí."
+        },
+        {
+          "type": "term",
+          "term": "Stator a rotor",
+          "definition": "**Stator** je nepohyblivá část motoru (kostra s vinutím nebo magnety). **Rotor** je otáčivá část na hřídeli.",
+          "example": "U ventilátoru je stator v plechové skříni, rotor nese lopatky."
+        },
+        {
+          "type": "term",
+          "term": "Točivé magnetické pole",
+          "definition": "Magnetické pole, které se samo otáčí, i když se nic mechanicky nehýbe. Vytvoří ho tři vinutí statoru napájená trojfázovým proudem, protože fáze dosahují vrcholu jedna po druhé.",
+          "example": "Jako kdyby kolem rotoru obíhal neviditelný magnet."
+        },
+        {
+          "type": "heading",
+          "text": "Asynchronní motor krok za krokem"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "trojfázový proud ve statoru vytvoří točivé pole",
+              "pole protíná tyče rotoru a indukuje v nich proud",
+              "na tyče s proudem působí v poli síla",
+              "rotor se roztočí za polem, ale o trochu pomaleji"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi cyklus. Kdyby rotor dohnal pole, přestal by ho protínat, nic by se neindukovalo a nevznikla by síla. Proto se rotor vždy točí o něco pomaleji – **asynchronně**."
+        },
+        {
+          "type": "term",
+          "term": "Klecový rotor (kotva nakrátko)",
+          "definition": "Rotor z hliníkových nebo měděných tyčí spojených na koncích kruhy, jako veverčí klec, zalitých v plechovém jádře. Nemá žádné kartáče ani přívody.",
+          "example": "Proto asynchronní motor skoro nepotřebuje údržbu, jen ložiska."
+        },
+        {
+          "type": "term",
+          "term": "Synchronní otáčky a skluz",
+          "definition": "**Synchronní otáčky** n_s = rychlost točivého pole: `n_s = 60 · f / p`, kde p je počet pólových dvojic. **Skluz** říká, o kolik rotor zaostává: `s = (n_s − n) / n_s`.",
+          "example": "50 Hz, p = 2 → n_s = 1 500 ot/min. Na štítku bývá třeba 1 440 ot/min."
+        },
+        {
+          "type": "example",
+          "question": "Motor má na štítku 1 440 ot/min, síť 50 Hz. Kolik má pólových dvojic a jaký je skluz?",
+          "answer": "Synchronní otáčky musí být těsně nad 1 440: možnosti 3 000, 1 500, 1 000… → n_s = 1 500, tedy p = 60 · 50 / 1 500 = **2**. Skluz s = (1 500 − 1 440) / 1 500 = 0,04 = **4 %**."
+        },
+        {
+          "type": "heading",
+          "text": "Stejnosměrný motor"
+        },
+        {
+          "type": "term",
+          "term": "Komutátor a kartáče",
+          "definition": "**Komutátor** je válec z měděných lamel na hřídeli rotoru. Uhlíkové **kartáče** po něm kloužou a přivádějí proud do vinutí rotoru. Každou půlotáčku obrátí směr proudu ve vinutí, aby síla tlačila rotor stále stejným směrem.",
+          "example": "Jiskření a opotřebené kartáče jsou typická závada starších vrtaček."
+        },
+        {
+          "type": "text",
+          "text": "Stejnosměrný motor: stator vytváří stálé pole (magnety nebo budicí vinutí), rotor (kotva) dostává proud přes komutátor. Otáčky se snadno řídí velikostí napětí na kotvě, směr otáčení změnou její polarity."
+        },
+        {
+          "type": "example",
+          "question": "Jak obrátíš směr otáčení trojfázového asynchronního motoru a jak stejnosměrného motoru s permanentními magnety?",
+          "answer": "Asynchronní: prohodíš **dvě libovolné fáze** – točivé pole se otočí opačně. Stejnosměrný s magnety: prohodíš **polaritu napájení** kotvy."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Asynchronní motor na 50 Hz se čtyřmi póly se točí přesně 1 500 ot/min.",
+          "right": "Točivé pole má 1 500 ot/min, rotor se točí o několik procent pomaleji (třeba 1 440 ot/min).",
+          "why": "Bez skluzu by se do rotoru nic neindukovalo a motor by neměl moment. Se zatížením skluz roste."
+        },
+        {
+          "type": "summary",
+          "text": "Asynchronní motor: točivé pole statoru indukuje proud v klecovém rotoru, rotor se točí se skluzem, n_s = 60 · f / p. Stejnosměrný motor: proud do rotoru přes komutátor a kartáče, otáčky řídíš napětím."
+        }
+      ]
+    },
+    {
+      "title": "Štítek a provoz",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Mechatronik motor vybírá, zapojuje, spouští a hledá na něm závady. K tomu potřebuje přečíst štítek, spočítat otáčky a moment a znát vlastnosti různých druhů motorů. Tady jsou v přehledu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Elektrický stroj",
+          "definition": "Zařízení, které přeměňuje energii pomocí magnetického pole. **Točivé**: motor (elektrická → mechanická), generátor (mechanická → elektrická). **Netočivé**: transformátor.",
+          "example": "Alternátor v autě je generátor, startér je motor."
+        },
+        {
+          "type": "term",
+          "term": "Stator, rotor, vzduchová mezera",
+          "definition": "Stator stojí, rotor se točí. Mezi nimi je úzká vzduchová mezera, přes kterou přechází magnetické pole.",
+          "example": "Mezera bývá desetiny milimetru až jednotky milimetrů."
+        },
+        {
+          "type": "term",
+          "term": "Jmenovité hodnoty",
+          "definition": "Hodnoty na štítku, při kterých motor smí trvale pracovat: výkon na hřídeli P (kW), napětí, proud, otáčky, cos φ, účinnost, zapojení.",
+          "example": "3 kW, 400 V Y, 6,3 A, 1 430 ot/min, cos φ 0,82."
+        },
+        {
+          "type": "term",
+          "term": "Moment M",
+          "definition": "Otáčivý účinek síly na hřídeli, jednotka N·m. S výkonem a otáčkami souvisí: `M = 9 550 · P / n` (P v kW, n v ot/min).",
+          "example": "3 kW při 1 430 ot/min → M ≈ 20 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Rozběhový proud",
+          "definition": "Proud při zapnutí, když rotor ještě stojí. U asynchronního motoru při přímém zapnutí bývá několikanásobkem jmenovitého proudu (řádově 5–8×).",
+          "example": "Proto se větší motory spouštějí přepínačem hvězda–trojúhelník, softstartérem nebo frekvenčním měničem."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání motorů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "asynchronní klecový",
+            "stejnosměrný s komutátorem"
+          ],
+          "rows": [
+            [
+              "napájení",
+              "střídavé, nejčastěji 3 × 400 V",
+              "stejnosměrné"
+            ],
+            [
+              "proud do rotoru",
+              "indukcí, bez kontaktů",
+              "přes kartáče a komutátor"
+            ],
+            [
+              "řízení otáček",
+              "frekvenčním měničem (mění f)",
+              "napětím na kotvě"
+            ],
+            [
+              "údržba",
+              "minimální (ložiska)",
+              "kartáče a komutátor se opotřebují"
+            ],
+            [
+              "změna směru",
+              "prohození dvou fází",
+              "přepólování kotvy"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "asynchronní motor",
+              "stejnosměrný motor"
+            ],
+            "items": [
+              {
+                "text": "klecový rotor",
+                "group": 0
+              },
+              {
+                "text": "komutátor",
+                "group": 1
+              },
+              {
+                "text": "uhlíkové kartáče",
+                "group": 1
+              },
+              {
+                "text": "skluz",
+                "group": 0
+              },
+              {
+                "text": "točivé pole statoru",
+                "group": 0
+              },
+              {
+                "text": "otáčky řízené napětím kotvy",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď pojmy k motoru, ke kterému patří."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti frekvenci sítě a počet pólů (nebo z otáček na štítku odhadni n_s).",
+            "Spočítej n_s = 60 · f / p.",
+            "Skluz s = (n_s − n) / n_s.",
+            "Moment M = 9 550 · P / n.",
+            "Příkon P₀ = P / η, proud I = P₀ / (√3 · U · cos φ)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Šestipólový motor (p = 3) je napájen frekvenčním měničem 40 Hz. Jaké jsou synchronní otáčky?",
+          "answer": "n_s = 60 · 40 / 3 = **800 ot/min**. Změnou frekvence měnič plynule řídí otáčky."
+        },
+        {
+          "type": "example",
+          "question": "Motor 7,5 kW má jmenovité otáčky 2 900 ot/min. Jaký je jmenovitý moment?",
+          "answer": "M = 9 550 · 7,5 / 2 900 ≈ **24,7 N·m**."
+        },
+        {
+          "type": "term",
+          "term": "Sériový motor",
+          "definition": "Stejnosměrný motor, jehož budicí vinutí statoru je zapojené do série s rotorem (kotvou). Má velký záběrný moment. Když funguje i na střídavý proud, říká se mu **univerzální motor**.",
+          "example": "Startér auta (sériový), vrtačka nebo vysavač (univerzální)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Velký sériový stejnosměrný motor spojím se strojem řemenem a klidně ho zkusím pustit naprázdno.",
+          "right": "Sériový motor musí být se zátěží spojený pevně (spojkou, převodovkou) a nesmí běžet naprázdno.",
+          "why": "U sériového motoru s klesající zátěží klesá proud i budicí pole a otáčky prudce rostou. Když spadne řemen, může se motor „rozběhnout“ až k mechanickému zničení."
+        },
+        {
+          "type": "summary",
+          "text": "Točivé stroje: motory a generátory. n_s = 60 · f / p, skluz s = (n_s − n)/n_s, M = 9 550 · P / n. Asynchronní motor řídí frekvenční měnič, stejnosměrný napětí kotvy. Rozběhový proud asynchronního motoru je několikanásobkem jmenovitého."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Synchronní otáčky motoru s p = 1 pólovou dvojicí při 50 Hz v ot/min =",
+      "answers": [
+        "3000",
+        "3 000"
+      ],
+      "explanation": "n_s = 60 · 50 / 1 = 3 000 ot/min."
+    },
+    {
+      "type": "input",
+      "question": "n_s = 1 000 ot/min, rotor se točí 960 ot/min. Skluz v % =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "s = (1 000 − 960) / 1 000 = 0,04 = 4 %.",
+      "hints": [
+        "Skluz je rozdíl otáček pole a rotoru vztažený k otáčkám pole."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak změníš směr otáčení trojfázového asynchronního motoru?",
+      "options": [
+        "prohodím dvě fáze",
+        "prohodím fázi a N",
+        "přepnu z hvězdy do trojúhelníku",
+        "odpojím jednu fázi"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Rotor asynchronního motoru se točí přesně stejně rychle jako točivé magnetické pole.",
+      "answer": false,
+      "explanation": "Točí se pomaleji o skluz, jinak by se v něm nic neindukovalo."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží komutátor stejnosměrného motoru?",
+      "options": [
+        "obrací směr proudu ve vinutí rotoru, aby se točil jedním směrem",
+        "usměrňuje střídavý proud ze sítě",
+        "chladí rotor",
+        "měří otáčky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj část motoru s popisem.",
+      "pairs": [
+        [
+          "stator",
+          "nepohyblivá část"
+        ],
+        [
+          "rotor",
+          "otáčivá část na hřídeli"
+        ],
+        [
+          "kartáče",
+          "kluzný přívod proudu do rotoru"
+        ],
+        [
+          "klecový rotor",
+          "tyče spojené kruhy nakrátko"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se nejčastěji plynule řídí otáčky asynchronního motoru?",
+      "options": [
+        "frekvenčním měničem",
+        "rezistorem v přívodu",
+        "prohozením fází",
+        "kondenzátorem"
+      ],
+      "answer": 0,
+      "hints": [
+        "Ze vzorce pro synchronní otáčky: kterou veličinu jde měnit?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Motor 15 kW při 1 450 ot/min. Moment v N·m (zaokrouhli na celé) =",
+      "answers": [
+        "99"
+      ],
+      "explanation": "M = 9 550 · 15 / 1 450 ≈ 98,8 N·m.",
+      "hints": [
+        "Použij M = 9 550 · P / n s P v kW."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Transformátor patří mezi netočivé elektrické stroje.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď děje v asynchronním motoru.",
+      "items": [
+        "proud ve statoru vytvoří točivé pole",
+        "pole protíná tyče rotoru",
+        "v rotoru se indukuje proud",
+        "na tyče působí síla a rotor se točí"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se větší asynchronní motory nespouštějí přímým zapnutím?",
+      "options": [
+        "rozběhový proud je několikanásobkem jmenovitého",
+        "motor by se točil opačně",
+        "přímo zapnutý motor nemá moment",
+        "spálily by se kartáče"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Na štítku je 2 850 ot/min, síť 50 Hz. Kolik má motor pólových dvojic?",
+      "answers": [
+        "1"
+      ],
+      "explanation": "Nejbližší vyšší synchronní otáčky jsou 3 000 ot/min, to odpovídá p = 1."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli princip asynchronního motoru a proč se mu říká asynchronní.",
+      "answer": "Trojfázové vinutí statoru vytvoří točivé magnetické pole. To indukuje proud v tyčích klecového rotoru a na ně pak v poli působí síla, která rotor roztočí. Rotor se točí pomaleji než pole (se skluzem), tedy ne synchronně, jinak by se v něm nic neindukovalo."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej asynchronní a stejnosměrný motor z hlediska řízení otáček a údržby.",
+      "answer": "Asynchronní klecový motor nemá kartáče, je téměř bezúdržbový a otáčky se řídí změnou frekvence frekvenčním měničem. Stejnosměrný motor s komutátorem má otáčky snadno řiditelné napětím kotvy, ale kartáče a komutátor se opotřebují a potřebují údržbu."
+    }
+  ]
+}
