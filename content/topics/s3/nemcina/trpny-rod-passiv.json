@@ -1,0 +1,519 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "trpny-rod-passiv",
+  "title": "Trpný rod (werden + Partizip II)",
+  "emoji": "🏗️",
+  "explanations": [
+    {
+      "title": "Pravidlo a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na nádraží slyšíš: *Der Zug wird gereinigt.* = Vlak se čistí. Nezajímá nás, **kdo** vlak čistí, ale **co se s ním děje**. Přesně k tomu je trpný rod."
+        },
+        {
+          "type": "text",
+          "text": "Česky to říkáme dvěma způsoby: „Dům je stavěn“ nebo častěji „Dům se staví“. Angličtina má *The house is built*. Němčina používá sloveso **werden** a příčestí minulé: *Das Haus wird gebaut.*"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Činný rod (Aktiv)",
+          "definition": "Věta, ve které podmět děj sám dělá.",
+          "example": "Der Koch kocht die Suppe. = Kuchař vaří polévku."
+        },
+        {
+          "type": "term",
+          "term": "Trpný rod (Passiv)",
+          "definition": "Věta, ve které se s podmětem něco děje. Kdo to dělá, je vedlejší, nebo se to vůbec neřekne.",
+          "example": "Die Suppe wird gekocht. = Polévka se vaří."
+        },
+        {
+          "type": "term",
+          "term": "Příčestí minulé (Partizip II)",
+          "definition": "Tvar slovesa, který znáš z perfekta: *gemacht, gekocht, geschrieben, repariert*.",
+          "example": "Ich habe das Auto repariert. → *repariert*"
+        },
+        {
+          "type": "term",
+          "term": "Vorgangspassiv",
+          "definition": "Německý název pro trpný rod s *werden*. Popisuje děj, který právě probíhá nebo se opakuje.",
+          "example": "Die Tür wird geöffnet. = Dveře se otevírají."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se tvoří"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi sloveso **werden** ve tvaru podle podmětu (*ich werde, er wird…*).",
+            "Dej ho na **2. místo** ve větě.",
+            "Na **konec** věty dej příčestí minulé (Partizip II).",
+            "Chceš říct, kdo děj dělá? Přidej **von + 3. pád** (není povinné)."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "osoba",
+            "werden",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "ich",
+              "werde",
+              "Ich werde gefragt.",
+              "Ptají se mě."
+            ],
+            [
+              "du",
+              "wirst",
+              "Du wirst gerufen.",
+              "Volají tě."
+            ],
+            [
+              "er / sie / es",
+              "wird",
+              "Das Auto wird repariert.",
+              "Auto se opravuje."
+            ],
+            [
+              "wir",
+              "werden",
+              "Wir werden eingeladen.",
+              "Zvou nás."
+            ],
+            [
+              "ihr",
+              "werdet",
+              "Ihr werdet abgeholt.",
+              "Vyzvednou vás."
+            ],
+            [
+              "sie / Sie",
+              "werden",
+              "Die Fenster werden geputzt.",
+              "Okna se myjí."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Minulost"
+        },
+        {
+          "type": "text",
+          "text": "V minulosti se *werden* mění na **wurde** (préteritum): *Das Haus wurde 1990 gebaut.* = Dům byl postaven v roce 1990. Tvary: *ich wurde, du wurdest, er wurde, wir wurden, ihr wurdet, sie wurden*. V mluvené řeči uslyšíš i perfektum: *Das Haus ist 1990 gebaut **worden**.* Pozor, v trpném rodě je to *worden*, ne *geworden*."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Doplň správný tvar *werden*. Podívej se, kdo je podmět a jestli jde o přítomnost, nebo minulost."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Das Auto",
+                "after": "jetzt repariert.",
+                "options": [
+                  "wird",
+                  "werden",
+                  "wirst"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Die Fenster",
+                "after": "jeden Tag geputzt.",
+                "options": [
+                  "werden",
+                  "wird",
+                  "werdet"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Der Brief",
+                "after": "gestern geschrieben.",
+                "options": [
+                  "wurde",
+                  "wird",
+                  "werden"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du",
+                "after": "von deiner Mutter gerufen.",
+                "options": [
+                  "wirst",
+                  "wird",
+                  "werdet"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď do trpného rodu: *Der Mechaniker repariert das Auto.* (Mechanik opravuje auto.)",
+          "answer": "Předmět *das Auto* (4. pád) se stane podmětem (1. pád). Podmět je 3. osoba jednotného čísla → *wird*. Příčestí od *reparieren* je *repariert*. Mechanika přidám s *von + 3. pád*: von dem → *vom*. **Das Auto wird vom Mechaniker repariert.** = Auto opravuje mechanik."
+        },
+        {
+          "type": "example",
+          "question": "Řekni německy: Kostel byl postaven v roce 1350.",
+          "answer": "Je to minulost → *wurde*. Příčestí od *bauen* je *gebaut* a jde na konec: **Die Kirche wurde im Jahr 1350 gebaut.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Das Auto wird von der Mechaniker repariert.",
+          "right": "Das Auto wird vom Mechaniker repariert.",
+          "why": "Po *von* je vždy 3. pád: *von dem Mechaniker*, zkráceně *vom Mechaniker*."
+        },
+        {
+          "type": "summary",
+          "text": "Trpný rod = **werden** (na 2. místě) + **Partizip II** (na konci). V minulosti **wurde** + Partizip II. Kdo děj dělá, řekneš pomocí **von + 3. pád**."
+        }
+      ]
+    },
+    {
+      "title": "V továrně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si exkurzi v továrně na čokoládu. Průvodkyně nevypráví, který dělník co dělá. Mluví o **čokoládě** a o tom, co se s ní děje."
+        },
+        {
+          "type": "text",
+          "text": "*Zuerst wird die Milch gemischt.* = Nejdřív se míchá mléko. To je trpný rod: na začátku je věc, ne člověk. Hodí se na postupy, recepty, návody, zprávy a dějiny."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trpný rod (Passiv)",
+          "definition": "Způsob, jak říct, co se s něčím děje, bez ohledu na to, kdo to dělá. Česky „se vaří“, „je postaven“, anglicky *is made*.",
+          "example": "Die Schokolade wird verpackt. = Čokoláda se balí."
+        },
+        {
+          "type": "term",
+          "term": "werden",
+          "definition": "Sloveso „stávat se“. V trpném rodě slouží jako pomocné sloveso: nese osobu a čas.",
+          "example": "Es wird kalt. = Ochlazuje se. × Es wird gekocht. = Vaří se."
+        },
+        {
+          "type": "term",
+          "term": "Partizip II",
+          "definition": "Příčestí minulé, stejný tvar jako v perfektu. Ve větě stojí na konci.",
+          "example": "mischen → gemischt, verpacken → verpackt, schreiben → geschrieben"
+        },
+        {
+          "type": "heading",
+          "text": "Prohlídka továrny"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*Zuerst wird die Milch gemischt.* = Nejdřív se míchá mléko.",
+            "*Dann wird Kakao dazugegeben.* = Pak se přidává kakao.",
+            "*Danach wird die Schokolade in Formen gegossen.* = Potom se čokoláda nalévá do forem.",
+            "*Am Ende werden die Tafeln verpackt.* = Nakonec se tabulky balí.",
+            "*Jeden Tag werden hier 10 000 Tafeln produziert.* = Každý den se tu vyrobí 10 000 tabulek."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *werden* je vždy na **2. místě** (po *Zuerst, Dann…* jde hned sloveso) a příčestí je na **konci**, stejně jako v perfektu. Když je podmět v množném čísle (*die Tafeln*), použiješ *werden*."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo to dělá?"
+        },
+        {
+          "type": "text",
+          "text": "Kdo děj dělá, řekneš pomocí **von + 3. pád** (anglicky *by*): *Die Schokolade wird von Maschinen verpackt.* = Čokoládu balí stroje. Když jde spíš o příčinu, používá se často **durch + 4. pád**: *Die Stadt wurde durch ein Erdbeben zerstört.* = Město bylo zničeno zemětřesením."
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: werden má tři role"
+        },
+        {
+          "type": "table",
+          "head": [
+            "věta",
+            "co to je",
+            "česky"
+          ],
+          "rows": [
+            [
+              "Ich werde Lehrer.",
+              "werden samo = stát se",
+              "Stanu se učitelem."
+            ],
+            [
+              "Ich werde morgen kommen.",
+              "werden + infinitiv = budoucí čas",
+              "Zítra přijdu."
+            ],
+            [
+              "Ich werde gefragt.",
+              "werden + Partizip II = trpný rod",
+              "Ptají se mě."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď věty: je na konci příčestí (trpný rod), nebo infinitiv (budoucí čas)?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "trpný rod",
+              "budoucí čas"
+            ],
+            "items": [
+              {
+                "text": "Das Haus wird renoviert.",
+                "group": 0
+              },
+              {
+                "text": "Wir werden ins Kino gehen.",
+                "group": 1
+              },
+              {
+                "text": "Die Briefe werden verschickt.",
+                "group": 0
+              },
+              {
+                "text": "Er wird morgen anrufen.",
+                "group": 1
+              },
+              {
+                "text": "Hier wird Deutsch gesprochen.",
+                "group": 0
+              },
+              {
+                "text": "Ihr werdet das schaffen.",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Je věta *Der Kuchen wird gebacken.* trpný rod, nebo budoucí čas?",
+          "answer": "Na konci je *gebacken*, tedy příčestí (infinitiv by byl *backen*). Je to **trpný rod**: Koláč se peče."
+        },
+        {
+          "type": "example",
+          "question": "Řekni v trpném rodě: *Man spricht hier Deutsch.* (Tady se mluví německy.)",
+          "answer": "Kdo mluví, není důležité (*man*). Předmět *Deutsch* se stane podmětem, *werden* je na 2. místě, příčestí od *sprechen* je *gesprochen*: **Hier wird Deutsch gesprochen.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Die Briefe wird verschickt.",
+          "right": "Die Briefe werden verschickt.",
+          "why": "Podmět *die Briefe* je v množném čísle, proto *werden*, ne *wird*."
+        },
+        {
+          "type": "summary",
+          "text": "Když jde o děj, ne o toho, kdo ho dělá: **werden + Partizip II**. Pozor: **werden + infinitiv** je budoucí čas."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Das Fenster ___ geöffnet.",
+      "options": [
+        "wird",
+        "werden",
+        "wirst"
+      ],
+      "answer": 0,
+      "explanation": "Podmět *das Fenster* je 3. osoba jednotného čísla → *wird*."
+    },
+    {
+      "type": "choice",
+      "question": "Die Bücher ___ verkauft.",
+      "options": [
+        "werden",
+        "wird",
+        "worden"
+      ],
+      "answer": 0,
+      "explanation": "*Die Bücher* je množné číslo → *werden*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa werden: Wir ___ zur Party eingeladen.",
+      "answers": [
+        "werden"
+      ],
+      "explanation": "Pro *wir* je tvar *werden*: Zvou nás na párty.",
+      "hints": [
+        "Podmět je *wir*, 1. osoba množného čísla."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň Partizip II slovesa kochen: Das Essen wird ___.",
+      "answers": [
+        "gekocht"
+      ],
+      "explanation": "Pravidelné sloveso: *ge- + koch + -t* = *gekocht*.",
+      "hints": [
+        "Příčestí pravidelných sloves má tvar ge-…-t."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň minulý tvar: Amerika ___ 1492 von Kolumbus entdeckt.",
+      "answers": [
+        "wurde"
+      ],
+      "explanation": "Minulost trpného rodu: *wurde* + Partizip II. Amerika byla objevena Kolumbem.",
+      "hints": [
+        "Jde o minulost, potřebuješ préteritum slovesa werden."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Převeď do trpného rodu: *Die Lehrerin lobt den Schüler.*",
+      "options": [
+        "Der Schüler wird von der Lehrerin gelobt.",
+        "Den Schüler wird von der Lehrerin gelobt.",
+        "Der Schüler wird von die Lehrerin gelobt.",
+        "Der Schüler wird die Lehrerin loben."
+      ],
+      "answer": 0,
+      "explanation": "Předmět se stane podmětem (1. pád *der Schüler*), po *von* je 3. pád *der Lehrerin*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Ich werde morgen arbeiten.* je v trpném rodě.",
+      "answer": false,
+      "explanation": "Na konci je infinitiv *arbeiten*, takže je to budoucí čas: Zítra budu pracovat."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Hier wird nicht geraucht.* znamená „Tady se nekouří.“",
+      "answer": true,
+      "explanation": "Trpný rod bez podmětu, česky „se nekouří“."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s příčestím minulým.",
+      "pairs": [
+        [
+          "bauen",
+          "gebaut"
+        ],
+        [
+          "schreiben",
+          "geschrieben"
+        ],
+        [
+          "reparieren",
+          "repariert"
+        ],
+        [
+          "öffnen",
+          "geöffnet"
+        ],
+        [
+          "einladen",
+          "eingeladen"
+        ]
+      ],
+      "explanation": "Slovesa na *-ieren* nemají *ge-*, u odlučitelných sloves je *ge-* uprostřed (*eingeladen*)."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty: Auto opravuje mechanik.",
+      "items": [
+        "Das Auto",
+        "wird",
+        "vom Mechaniker",
+        "repariert."
+      ],
+      "explanation": "*werden* na 2. místě, příčestí na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš: Dům byl postaven v roce 1900.",
+      "options": [
+        "Das Haus wurde 1900 gebaut.",
+        "Das Haus wird 1900 gebaut.",
+        "Das Haus hat 1900 gebaut.",
+        "Das Haus wurde 1900 bauen."
+      ],
+      "answer": 0,
+      "explanation": "Minulost → *wurde*, na konci příčestí *gebaut*."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou předložkou v trpném rodě uvedeš osobu, která děj dělá?",
+      "options": [
+        "von",
+        "mit",
+        "für"
+      ],
+      "answer": 0,
+      "explanation": "*von + 3. pád*, anglicky *by*: *von meiner Mutter*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je v perfektu trpného rodu správně?",
+      "options": [
+        "Das Haus ist gebaut worden.",
+        "Das Haus ist gebaut geworden.",
+        "Das Haus hat gebaut worden."
+      ],
+      "answer": 0,
+      "explanation": "V perfektu trpného rodu je *sein* a tvar *worden* (ne *geworden*)."
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří trpný rod v němčině? Uveď příklad.",
+      "answer": "Tvoří se slovesem *werden* na 2. místě a příčestím minulým na konci věty, např. *Das Auto wird repariert.* V minulosti se použije *wurde*: *Das Auto wurde repariert.*"
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *Ich werde gefragt* a *Ich werde fragen*?",
+      "answer": "*Ich werde gefragt* je trpný rod (werden + příčestí): ptají se mě. *Ich werde fragen* je budoucí čas (werden + infinitiv): budu se ptát."
+    }
+  ]
+}

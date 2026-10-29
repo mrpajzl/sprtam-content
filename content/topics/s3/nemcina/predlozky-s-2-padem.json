@@ -1,0 +1,532 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "predlozky-s-2-padem",
+  "title": "Předložky s 2. pádem (wegen, trotz, während)",
+  "emoji": "☔",
+  "explanations": [
+    {
+      "title": "Tabulka a pravidlo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Kvůli dešti zůstaneme doma.“ „Navzdory dešti jdeme ven.“ „Během hodiny se netelefonuje.“ Německé předložky *wegen*, *trotz* a *während* chtějí po sobě **2. pád**. Potkáš je hlavně ve zprávách, ve škole a v psaném textu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Genitiv (2. pád)",
+          "definition": "Pád, který odpovídá na otázku *wessen?* = čí? Znáš ho z češtiny: auto (koho?) tatínka.",
+          "example": "das Auto des Vaters = auto tatínka"
+        },
+        {
+          "type": "term",
+          "term": "Předložka s 2. pádem",
+          "definition": "Předložka, po které musí stát podstatné jméno ve 2. pádě.",
+          "example": "wegen des Regens = kvůli dešti"
+        },
+        {
+          "type": "term",
+          "term": "Koncovka -s / -es",
+          "definition": "Mužská a střední podstatná jména dostávají ve 2. pádě na konci *-s* nebo *-es*. Ženská a množné číslo ne.",
+          "example": "der Regen → des Regens, das Kind → des Kindes"
+        },
+        {
+          "type": "heading",
+          "text": "Tvary 2. pádu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "rod",
+            "určitý člen",
+            "neurčitý člen",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "mužský",
+              "des …(e)s",
+              "eines …(e)s",
+              "des Vaters, eines Freundes"
+            ],
+            [
+              "ženský",
+              "der",
+              "einer",
+              "der Mutter, einer Freundin"
+            ],
+            [
+              "střední",
+              "des …(e)s",
+              "eines …(e)s",
+              "des Kindes, eines Buches"
+            ],
+            [
+              "množné",
+              "der",
+              "–",
+              "der Kinder, der Ferien"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U slov končících na *-s, -ß, -z* je vždy *-es* (*des Hauses*), u krátkých slov často také (*des Kindes*). Přídavné jméno má ve 2. pádě po členu koncovku *-en*: *wegen des schlechten Wetters* = kvůli špatnému počasí."
+        },
+        {
+          "type": "heading",
+          "text": "Předložky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "předložka",
+            "česky",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "wegen",
+              "kvůli",
+              "Wegen des Regens bleiben wir zu Hause. = Kvůli dešti zůstaneme doma."
+            ],
+            [
+              "trotz",
+              "navzdory, přes",
+              "Trotz des Regens gehen wir spazieren. = Navzdory dešti jdeme na procházku."
+            ],
+            [
+              "während",
+              "během",
+              "Während des Unterrichts telefoniert man nicht. = Během vyučování se netelefonuje."
+            ],
+            [
+              "statt (anstatt)",
+              "místo",
+              "Statt eines Autos kauft er ein Fahrrad. = Místo auta si koupí kolo."
+            ],
+            [
+              "innerhalb",
+              "během, uvnitř",
+              "innerhalb einer Woche = během jednoho týdne"
+            ],
+            [
+              "außerhalb",
+              "mimo",
+              "außerhalb der Stadt = mimo město"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči rod podstatného jména: *der Regen* → mužský.",
+            "Vyber člen ve 2. pádě: mužský → *des*.",
+            "U mužského a středního rodu přidej *-s / -es*: *des Regens*.",
+            "Dej to za předložku: *wegen des Regens*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Wegen",
+                "after": "Staus kommen wir zu spät.",
+                "options": [
+                  "des",
+                  "dem",
+                  "der"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Trotz",
+                "after": "Kälte gehen wir schwimmen.",
+                "options": [
+                  "der",
+                  "des",
+                  "die"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Während",
+                "after": "Ferien fahren wir ans Meer.",
+                "options": [
+                  "der",
+                  "den",
+                  "des"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wegen des schlechten",
+                "after": "bleiben wir hier.",
+                "options": [
+                  "Wetters",
+                  "Wetter",
+                  "Wettern"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Řekni německy: Kvůli zkoušce se dnes učím.",
+          "answer": "*die Prüfung* je ženský rod → 2. pád *der Prüfung*, bez koncovky. Po *Wegen der Prüfung* (1. místo) jde sloveso: **Wegen der Prüfung lerne ich heute.**"
+        },
+        {
+          "type": "example",
+          "question": "Řekni německy: Během filmu se nemluví.",
+          "answer": "*der Film* je mužský → *des Films*. **Während des Films spricht man nicht.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wegen dem Regen bleiben wir zu Hause.",
+          "right": "Wegen des Regens bleiben wir zu Hause.",
+          "why": "V hovorové řeči uslyšíš *wegen* s 3. pádem, ale ve spisovné a psané němčině patří po *wegen* 2. pád."
+        },
+        {
+          "type": "summary",
+          "text": "**wegen** (kvůli), **trotz** (navzdory), **während** (během), **statt** (místo) + **2. pád**: *des …(e)s* u mužského a středního rodu, *der* u ženského a v množném čísle."
+        }
+      ]
+    },
+    {
+      "title": "Zprávy a chytáky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ráno v rádiu: *Wegen eines Unfalls ist die Autobahn gesperrt.* = Kvůli nehodě je dálnice uzavřená. Zprávy, hlášení na nádraží, školní řád: všude tam najdeš předložky s 2. pádem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Genitiv",
+          "definition": "Německý 2. pád (čí?). Člen *des* u mužského a středního rodu (slovo dostane *-s / -es*), *der* u ženského rodu a v množném čísle.",
+          "example": "des Unfalls, der Pause"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo před podstatným jménem, které určuje jeho pád.",
+          "example": "wegen, trotz, mit, für"
+        },
+        {
+          "type": "term",
+          "term": "Vedlejší věta",
+          "definition": "Připomenutí: věta uvozená spojkou (*weil, dass, obwohl…*), sloveso je na konci.",
+          "example": "…, weil es regnet."
+        },
+        {
+          "type": "heading",
+          "text": "Hlášení a zprávy"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*Wegen eines Unfalls ist die Autobahn gesperrt.* = Kvůli nehodě je dálnice uzavřená.",
+            "*Trotz des Schnees fahren alle Züge.* = Navzdory sněhu jezdí všechny vlaky.",
+            "*Während der Pause ist das Handy erlaubt.* = Během přestávky je mobil povolený.",
+            "*Statt des Lehrers unterrichtet heute eine Kollegin.* = Místo pana učitele dnes učí jeho kolegyně."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták 1: čeština × němčina"
+        },
+        {
+          "type": "table",
+          "head": [
+            "česky",
+            "německy"
+          ],
+          "rows": [
+            [
+              "kvůli + 3. pád: kvůli dešti",
+              "wegen + 2. pád: wegen des Regens"
+            ],
+            [
+              "navzdory + 3. pád: navzdory dešti",
+              "trotz + 2. pád: trotz des Regens"
+            ],
+            [
+              "během + 2. pád: během přestávky",
+              "während + 2. pád: während der Pause"
+            ],
+            [
+              "místo + 2. pád: místo auta",
+              "statt + 2. pád: statt eines Autos"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*Během* a *místo* mají 2. pád i v češtině, ty si zapamatuješ snadno. U *kvůli* a *navzdory* pozor: čeština má 3. pád, němčina 2. pád."
+        },
+        {
+          "type": "heading",
+          "text": "Chyták 2: während jako spojka"
+        },
+        {
+          "type": "text",
+          "text": "*während* může být i spojka „zatímco“. Pak za ním následuje celá vedlejší věta se slovesem na konci: *Während ich koche, liest mein Bruder.* = Zatímco vařím, můj bratr čte. Jako předložka: *während des Essens* = během jídla. Za předložkou je podstatné jméno, za spojkou celá věta."
+        },
+        {
+          "type": "heading",
+          "text": "Chyták 3: trotz × trotzdem"
+        },
+        {
+          "type": "text",
+          "text": "*trotz* je předložka, stojí před podstatným jménem: *trotz des Regens*. *trotzdem* je samostatné slovo na místě ve větě: *Es regnet, trotzdem gehen wir.* = Prší, přesto jdeme."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Je *während, wegen, trotz* předložka (za ní podstatné jméno), nebo jde o spojku s celou větou?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "předložka + 2. pád",
+              "spojka + věta"
+            ],
+            "items": [
+              {
+                "text": "Während des Konzerts …",
+                "group": 0
+              },
+              {
+                "text": "Während wir essen, …",
+                "group": 1
+              },
+              {
+                "text": "Wegen der Hitze …",
+                "group": 0
+              },
+              {
+                "text": "Weil es heiß ist, …",
+                "group": 1
+              },
+              {
+                "text": "Trotz der Müdigkeit …",
+                "group": 0
+              },
+              {
+                "text": "Obwohl ich müde bin, …",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přepiš větu s *weil* pomocí předložky: *Weil es regnet, bleiben wir zu Hause.*",
+          "answer": "Déšť = *der Regen* → 2. pád *des Regens*. **Wegen des Regens bleiben wir zu Hause.** = Kvůli dešti zůstaneme doma."
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Navzdory bolesti hlavy jsem šel do školy.",
+          "answer": "Bolest hlavy = *die Kopfschmerzen* (množné číslo) → 2. pád *der Kopfschmerzen*. **Trotz der Kopfschmerzen bin ich zur Schule gegangen.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Trotz des Kälte gehen wir schwimmen.",
+          "right": "Trotz der Kälte gehen wir schwimmen.",
+          "why": "*die Kälte* je ženský rod, 2. pád je *der Kälte*, bez koncovky."
+        },
+        {
+          "type": "summary",
+          "text": "**wegen, trotz, während, statt** + 2. pád. Pozor: česky *kvůli* a *navzdory* mají 3. pád. *während* + věta je spojka „zatímco“."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Wegen ___ Gewitters fällt das Spiel aus.",
+      "options": [
+        "des",
+        "dem",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": "*das Gewitter* je střední rod → 2. pád *des Gewitters*."
+    },
+    {
+      "type": "choice",
+      "question": "Trotz ___ Krankheit geht sie zur Arbeit.",
+      "options": [
+        "ihrer",
+        "ihres",
+        "ihrem"
+      ],
+      "answer": 0,
+      "explanation": "*die Krankheit* je ženský rod → 2. pád *ihrer Krankheit*."
+    },
+    {
+      "type": "choice",
+      "question": "Während ___ Sommers arbeite ich in einem Café.",
+      "options": [
+        "des",
+        "dem",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": "*der Sommer* je mužský rod → *des Sommers*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň člen: Statt ___ Pizza esse ich einen Salat.",
+      "answers": [
+        "der"
+      ],
+      "explanation": "*die Pizza* je ženský rod → 2. pád *der Pizza*.",
+      "hints": [
+        "Jaký rod má Pizza?",
+        "Ženský rod má ve 2. pádě stejný člen jako ve 3. pádě."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň slovo Spiel ve správném tvaru: Während des ___ schreien die Fans.",
+      "answers": [
+        "Spiels",
+        "Spieles"
+      ],
+      "explanation": "*das Spiel* je střední rod → 2. pád *des Spiels* (nebo *Spieles*).",
+      "hints": [
+        "Střední rod dostává ve 2. pádě koncovku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň předložku „kvůli“: ___ des Staus kommt der Bus zu spät.",
+      "answers": [
+        "wegen"
+      ],
+      "explanation": "kvůli = *wegen* + 2. pád.",
+      "hints": [
+        "Hledáš předložku, která vyjadřuje příčinu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Po české předložce „kvůli“ a po německé „wegen“ je stejný pád.",
+      "answer": false,
+      "explanation": "Česky *kvůli* + 3. pád (kvůli dešti), německy *wegen* + 2. pád (wegen des Regens)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Während ich lerne, höre ich Musik.* je *während* spojka.",
+      "answer": true,
+      "explanation": "Za *während* je celá věta se slovesem na konci → spojka „zatímco“."
+    },
+    {
+      "type": "match",
+      "question": "Spoj předložku s českým významem.",
+      "pairs": [
+        [
+          "wegen",
+          "kvůli"
+        ],
+        [
+          "trotz",
+          "navzdory"
+        ],
+        [
+          "während",
+          "během"
+        ],
+        [
+          "statt",
+          "místo"
+        ],
+        [
+          "außerhalb",
+          "mimo"
+        ]
+      ],
+      "explanation": "Všechny tyto předložky mají po sobě 2. pád."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: Kvůli špatnému počasí zůstaneme doma.",
+      "items": [
+        "Wegen",
+        "des",
+        "schlechten",
+        "Wetters",
+        "bleiben",
+        "wir",
+        "zu Hause."
+      ],
+      "explanation": "Předložka, člen, přídavné jméno s *-en*, podstatné jméno s *-s*; pak sloveso na 2. místě."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je ve spisovné němčině správně?",
+      "options": [
+        "Wegen der Hitze ist die Schule geschlossen.",
+        "Wegen die Hitze ist die Schule geschlossen.",
+        "Wegen den Hitze ist die Schule geschlossen."
+      ],
+      "answer": 0,
+      "explanation": "*die Hitze* je ženský rod → 2. pád *der Hitze*."
+    },
+    {
+      "type": "choice",
+      "question": "Přelož: Během přestávky jím svačinu.",
+      "options": [
+        "Während der Pause esse ich mein Pausenbrot.",
+        "Während die Pause esse ich mein Pausenbrot.",
+        "Während der Pause ich esse mein Pausenbrot."
+      ],
+      "answer": 0,
+      "explanation": "*während* + 2. pád (*der Pause*) a sloveso na 2. místě."
+    },
+    {
+      "type": "open",
+      "question": "Které německé předložky s 2. pádem znáš? Uveď příklad.",
+      "answer": "Například *wegen* (kvůli), *trotz* (navzdory), *während* (během), *statt* (místo). Příklad: *Wegen des Regens bleiben wir zu Hause.*"
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *trotz* a *trotzdem*?",
+      "answer": "*trotz* je předložka s 2. pádem: *trotz des Regens*. *trotzdem* je příslovečná spojka „přesto“ a za ní jde sloveso: *Es regnet, trotzdem gehen wir spazieren.*"
+    }
+  ]
+}

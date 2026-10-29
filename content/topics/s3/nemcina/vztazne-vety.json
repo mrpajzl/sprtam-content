@@ -1,0 +1,502 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vztazne-vety",
+  "title": "Vztažné věty (Relativsätze)",
+  "emoji": "🔗",
+  "explanations": [
+    {
+      "title": "Tabulka a postup",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky říkáš: „To je kluk, **který** bydlí vedle nás.“ Druhá část věty vysvětluje, o kterého kluka jde. Anglicky: *the boy who lives next door*. Německy: *der Junge, **der** nebenan wohnt*."
+        },
+        {
+          "type": "text",
+          "text": "Díky vztažné větě spojíš dvě krátké věty do jedné a nemusíš opakovat stejné slovo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažná věta (Relativsatz)",
+          "definition": "Vedlejší věta, která blíže popisuje podstatné jméno před sebou.",
+          "example": "der Film, den ich sehe = film, který vidím"
+        },
+        {
+          "type": "term",
+          "term": "Vztažné zájmeno (Relativpronomen)",
+          "definition": "Slovo, kterým vztažná věta začíná, česky „který, která, které“. Německy vypadá skoro jako určitý člen: *der, die, das, den, dem…*",
+          "example": "die Frau, die dort steht = žena, která tam stojí"
+        },
+        {
+          "type": "term",
+          "term": "Pád",
+          "definition": "Role slova ve větě: 1. pád kdo, co (podmět), 4. pád koho, co, 3. pád komu, čemu, 2. pád čí.",
+          "example": "Ich sehe den Film. → *den Film* je 4. pád."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka vztažných zájmen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "pád",
+            "mužský",
+            "ženský",
+            "střední",
+            "množné"
+          ],
+          "rows": [
+            [
+              "1. (Nominativ)",
+              "der",
+              "die",
+              "das",
+              "die"
+            ],
+            [
+              "4. (Akkusativ)",
+              "den",
+              "die",
+              "das",
+              "die"
+            ],
+            [
+              "3. (Dativ)",
+              "dem",
+              "der",
+              "dem",
+              "denen"
+            ],
+            [
+              "2. (Genitiv)",
+              "dessen",
+              "deren",
+              "dessen",
+              "deren"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Je to skoro tabulka určitého členu. Rozdíly jsou jen dva: 3. pád množného čísla je **denen** (ne *den*) a 2. pád je **dessen / deren**."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi podstatné jméno, které popisuješ, a urči jeho **rod a číslo**: *der Film* → mužský.",
+            "Zjisti, jakou roli má **ve vztažné větě**: *ich sehe den Film* → 4. pád.",
+            "V tabulce najdi zájmeno: mužský, 4. pád → *den*.",
+            "Sloveso dej na **konec** vztažné věty a odděl ji čárkami: *Der Film, den ich sehe, ist spannend.* = Film, který vidím, je napínavý."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Das ist der Mann,",
+                "after": "mir geholfen hat.",
+                "options": [
+                  "der",
+                  "den",
+                  "dem"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Das ist der Mann,",
+                "after": "ich gestern gesehen habe.",
+                "options": [
+                  "den",
+                  "der",
+                  "dem"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Das ist die Frau,",
+                "after": "ich das Buch gegeben habe.",
+                "options": [
+                  "der",
+                  "die",
+                  "denen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Das sind die Kinder,",
+                "after": "ich Deutsch beibringe.",
+                "options": [
+                  "denen",
+                  "den",
+                  "die"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Das ist das Mädchen,",
+                "after": "Vater Arzt ist.",
+                "options": [
+                  "dessen",
+                  "deren",
+                  "das"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj do jedné věty: *Ich habe einen Freund. Der Freund wohnt in Berlin.*",
+          "answer": "*Freund* je mužský rod. Ve druhé větě je podmět (kdo bydlí?) → 1. pád → *der*. Sloveso *wohnt* na konec: **Ich habe einen Freund, der in Berlin wohnt.** = Mám kamaráda, který bydlí v Berlíně."
+        },
+        {
+          "type": "example",
+          "question": "Spoj do jedné věty: *Das ist die Stadt. Ich wohne in der Stadt.*",
+          "answer": "*Stadt* je ženský rod, po *in* (kde?) je 3. pád → *der*. Předložka jde **před** zájmeno: **Das ist die Stadt, in der ich wohne.** = To je město, ve kterém bydlím."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Der Film, der ich gesehen habe, war toll.",
+          "right": "Der Film, den ich gesehen habe, war toll.",
+          "why": "Podmět vztažné věty je *ich*. Film je předmět (co jsem viděl?) → 4. pád *den*. Rod se řídí podstatným jménem, pád rolí ve vztažné větě."
+        },
+        {
+          "type": "summary",
+          "text": "Vztažné zájmeno má **rod a číslo** podle podstatného jména a **pád** podle role ve vztažné větě. Sloveso je na konci, věta je mezi čárkami."
+        }
+      ]
+    },
+    {
+      "title": "Jako čeština",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: české „který“ funguje skoro stejně jako německé vztažné zájmeno. Také se mění podle rodu (*který, která, které*) a podle pádu (*který, kterého, kterému*). Kdo umí česky říct „kluk, kterému jsem pomohl“, zvládne to i německy."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažná věta",
+          "definition": "Vedlejší věta, která říká víc o podstatném jménu před sebou. Česky začíná slovem „který“.",
+          "example": "das Buch, das ich lese = kniha, kterou čtu"
+        },
+        {
+          "type": "term",
+          "term": "Vztažné zájmeno",
+          "definition": "Německé „který“: *der, die, das* a jejich tvary v pádech (*den, dem, denen…*).",
+          "example": "der Mann, dem ich helfe = muž, kterému pomáhám"
+        },
+        {
+          "type": "term",
+          "term": "Slovosled vedlejší věty",
+          "definition": "Ve vedlejší větě je sloveso na konci. Znáš to z vět s *weil* a *dass*.",
+          "example": "…, weil ich müde bin."
+        },
+        {
+          "type": "heading",
+          "text": "Česky a německy vedle sebe"
+        },
+        {
+          "type": "table",
+          "head": [
+            "česky",
+            "německy"
+          ],
+          "rows": [
+            [
+              "muž, který tam stojí",
+              "der Mann, der dort steht"
+            ],
+            [
+              "muž, kterého znám",
+              "der Mann, den ich kenne"
+            ],
+            [
+              "muž, kterému pomáhám",
+              "der Mann, dem ich helfe"
+            ],
+            [
+              "žena, kterou znám",
+              "die Frau, die ich kenne"
+            ],
+            [
+              "dítě, které si hraje",
+              "das Kind, das spielt"
+            ],
+            [
+              "přátelé, se kterými hraju fotbal",
+              "die Freunde, mit denen ich Fußball spiele"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor na slovesa, která mají v němčině jiný pád než v češtině. *helfen* má 3. pád stejně jako „pomáhat komu“. Ale *fragen* má 4. pád: *der Mann, den ich frage* = muž, **kterého** se ptám (česky 2. pád)."
+        },
+        {
+          "type": "heading",
+          "text": "A co angličtina?"
+        },
+        {
+          "type": "text",
+          "text": "*The book that is on the table belongs to me.* = *Das Buch, das auf dem Tisch liegt, gehört mir.* = Kniha, která leží na stole, patří mně. Angličtina zájmeno někdy vynechá (*the book I read*), němčina **nikdy**: *das Buch, das ich lese*."
+        },
+        {
+          "type": "heading",
+          "text": "Čárky"
+        },
+        {
+          "type": "text",
+          "text": "Vztažná věta se v němčině vždy odděluje čárkami z obou stran, stejně jako v češtině: *Der Mann, der dort steht, ist mein Lehrer.* = Muž, který tam stojí, je můj učitel."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Kam patří vynechané zájmeno? Ptej se: kdo, koho, nebo komu je ve vztažné větě ten učitel nebo pes?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "der",
+              "den",
+              "dem"
+            ],
+            "items": [
+              {
+                "text": "Der Lehrer, ___ uns Deutsch unterrichtet, …",
+                "group": 0
+              },
+              {
+                "text": "Der Lehrer, ___ ich sehr mag, …",
+                "group": 1
+              },
+              {
+                "text": "Der Lehrer, ___ ich eine E-Mail geschrieben habe, …",
+                "group": 2
+              },
+              {
+                "text": "Der Hund, ___ immer bellt, …",
+                "group": 0
+              },
+              {
+                "text": "Der Hund, ___ ich jeden Tag füttere, …",
+                "group": 1
+              },
+              {
+                "text": "Der Hund, mit ___ ich spazieren gehe, …",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Dívka, které jsem dal dárek, se jmenuje Lena.",
+          "answer": "Pozor: *das Mädchen* je v němčině **střední** rod. Dát dárek komu → 3. pád → *dem*. **Das Mädchen, dem ich ein Geschenk gegeben habe, heißt Lena.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Knihy, které čtu, jsou zajímavé.",
+          "answer": "*die Bücher* je množné číslo, čtu co? → 4. pád → *die*. Sloveso *lese* na konec: **Die Bücher, die ich lese, sind interessant.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Der Mann, der wohnt neben uns, ist nett.",
+          "right": "Der Mann, der neben uns wohnt, ist nett.",
+          "why": "Vztažná věta je vedlejší věta, sloveso jde na konec."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Die Kinder, den ich helfe, …",
+          "right": "Die Kinder, denen ich helfe, …",
+          "why": "3. pád množného čísla vztažného zájmena je *denen*, ne *den*."
+        },
+        {
+          "type": "summary",
+          "text": "Vztažné zájmeno = německé „který“: rod podle podstatného jména, pád podle vztažné věty. Sloveso na konci, kolem čárky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Der Junge, ___ dort steht, ist mein Bruder.",
+      "options": [
+        "der",
+        "den",
+        "dem"
+      ],
+      "answer": 0,
+      "explanation": "*der Junge*: mužský rod, ve vztažné větě podmět (kdo stojí?) → *der*."
+    },
+    {
+      "type": "choice",
+      "question": "Die Frau, ___ ich gestern getroffen habe, ist Ärztin.",
+      "options": [
+        "die",
+        "der",
+        "den"
+      ],
+      "answer": 0,
+      "explanation": "Ženský rod, 4. pád (koho jsem potkal?) → *die*."
+    },
+    {
+      "type": "choice",
+      "question": "Das ist der Freund, ___ ich mein Fahrrad geliehen habe.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": "Půjčit komu → 3. pád, mužský rod → *dem*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň vztažné zájmeno: Die Leute, mit ___ ich arbeite, sind nett.",
+      "answers": [
+        "denen"
+      ],
+      "explanation": "Po *mit* je 3. pád, množné číslo → *denen*.",
+      "hints": [
+        "Po předložce mit je 3. pád.",
+        "Jde o množné číslo, které má ve 3. pádě zvláštní tvar."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň vztažné zájmeno: Das Buch, ___ ich lese, ist spannend.",
+      "answers": [
+        "das"
+      ],
+      "explanation": "*das Buch*: střední rod, 4. pád → *das*.",
+      "hints": [
+        "Jaký rod má Buch?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň vztažné zájmeno: Der Mann, ___ Auto vor dem Haus steht, ist mein Nachbar.",
+      "answers": [
+        "dessen"
+      ],
+      "explanation": "Čí auto? → 2. pád, mužský rod → *dessen*. Muž, jehož auto stojí před domem…",
+      "hints": [
+        "Ptáš se „čí auto?“, tedy 2. pád."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve vztažné větě stojí sloveso na konci.",
+      "answer": true,
+      "explanation": "Vztažná věta je vedlejší věta: *der Mann, der dort steht*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rod vztažného zájmena se řídí slovesem ve vztažné větě.",
+      "answer": false,
+      "explanation": "Rod a číslo se řídí podstatným jménem, ke kterému se věta vztahuje. Sloveso ve vztažné větě určuje jen pád."
+    },
+    {
+      "type": "match",
+      "question": "Spoj česky a německy.",
+      "pairs": [
+        [
+          "muž, kterému pomáhám",
+          "der Mann, dem ich helfe"
+        ],
+        [
+          "žena, kterou vidím",
+          "die Frau, die ich sehe"
+        ],
+        [
+          "dítě, které spí",
+          "das Kind, das schläft"
+        ],
+        [
+          "lidé, se kterými mluvím",
+          "die Leute, mit denen ich spreche"
+        ]
+      ],
+      "explanation": "Rod podle podstatného jména, pád podle role ve vztažné větě."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: To je město, ve kterém jsem se narodil.",
+      "items": [
+        "Das ist die Stadt,",
+        "in der",
+        "ich",
+        "geboren",
+        "bin."
+      ],
+      "explanation": "Předložka před zájmenem, sloveso *bin* na konci vztažné věty."
+    },
+    {
+      "type": "choice",
+      "question": "Das Mädchen, ___ neben mir sitzt, heißt Anna.",
+      "options": [
+        "das",
+        "die",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": "*das Mädchen* je gramaticky střední rod → *das*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Ich kenne einen Mann, der drei Sprachen spricht.",
+        "Ich kenne einen Mann, den drei Sprachen spricht.",
+        "Ich kenne einen Mann, der spricht drei Sprachen."
+      ],
+      "answer": 0,
+      "explanation": "Muž ve vztažné větě mluví (podmět → *der*) a sloveso je na konci."
+    },
+    {
+      "type": "open",
+      "question": "Podle čeho vybereš správné vztažné zájmeno?",
+      "answer": "Rod a číslo vyberu podle podstatného jména, ke kterému se věta vztahuje (*der Film* → mužský). Pád podle toho, jakou roli má ve vztažné větě (*den ich sehe* → 4. pád)."
+    },
+    {
+      "type": "open",
+      "question": "Spoj do jedné věty: *Ich habe eine Katze. Die Katze heißt Mimi.*",
+      "answer": "*Ich habe eine Katze, die Mimi heißt.* = Mám kočku, která se jmenuje Mimi. *Katze* je ženský rod a podmět, proto *die*, sloveso na konci."
+    }
+  ]
+}
