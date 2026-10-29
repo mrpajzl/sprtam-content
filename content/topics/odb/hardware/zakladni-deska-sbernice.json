@@ -1,0 +1,474 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zakladni-deska-sbernice",
+  "title": "Základní deska a sběrnice",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Jako město",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Otevřeš skříň počítače a uvidíš velkou desku plnou slotů, konektorů a drobných součástek. Všechno ostatní – procesor, paměť, grafická karta, disk – je zapojené právě do ní."
+        },
+        {
+          "type": "text",
+          "text": "Když víš, jak deska funguje, poznáš, co do počítače půjde přidat, proč nová grafika „nepasuje“ nebo proč se ztrácí čas po vyjmutí baterky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Základní deska (motherboard)",
+          "definition": "Hlavní deska plošných spojů v počítači. Drží všechny součástky a propojuje je měděnými cestičkami.",
+          "example": "Je jako město: procesor je radnice, paměť sklad, cestičky jsou silnice."
+        },
+        {
+          "type": "term",
+          "term": "Sběrnice",
+          "definition": "Soustava vodičů a pravidel, po které si součástky posílají data. Má danou šířku a rychlost.",
+          "example": "Silnice mezi procesorem a grafickou kartou."
+        },
+        {
+          "type": "term",
+          "term": "Patice (socket)",
+          "definition": "Objímka na desce, do které se vkládá procesor. Každá rodina procesorů má svou patici.",
+          "example": "AM5 pro procesory AMD Ryzen 7000 a novější, LGA 1700 pro Intel Core 12.–14. generace."
+        },
+        {
+          "type": "term",
+          "term": "Chipset",
+          "definition": "Čip na desce, který řídí část vstupů a výstupů: další USB, SATA, část slotů PCIe. Určuje, co deska umí navíc.",
+          "example": "Deska s lepším chipsetem má víc portů a dovolí přetaktování."
+        },
+        {
+          "type": "heading",
+          "text": "Procházka po desce"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Patice** procesoru – obvykle uprostřed horní části.",
+            "**Sloty RAM** – dlouhé úzké sloty vedle patice, 2 nebo 4.",
+            "**Sloty PCIe** – vodorovné sloty dole, nejdelší x16 pro grafickou kartu.",
+            "**M.2** – malý konektor naležato pro rychlý SSD disk.",
+            "**SATA** – malé konektory na hraně desky pro disky.",
+            "**Napájecí konektory** – široký 24pin a u patice 8pin pro procesor.",
+            "**Zadní panel** – USB, síť, zvuk, případně video výstupy."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Silnice: paralelní a sériová"
+        },
+        {
+          "type": "term",
+          "term": "Paralelní sběrnice",
+          "definition": "Posílá několik bitů naráz po mnoha souběžných vodičích. Při vysoké rychlosti se bity „rozjedou“ a vodiče se navzájem ruší.",
+          "example": "Starý disk PATA s plochým 40žilovým kabelem."
+        },
+        {
+          "type": "term",
+          "term": "Sériová sběrnice",
+          "definition": "Posílá bity za sebou po jednom páru vodičů, ale velmi rychle. Dnes převládá.",
+          "example": "SATA, USB, PCIe."
+        },
+        {
+          "type": "text",
+          "text": "Dřív se zdálo, že víc drátů = víc rychlosti. Při vysokých frekvencích to ale přestalo fungovat, a tak dnes vedou úzké a velmi rychlé sériové linky."
+        },
+        {
+          "type": "heading",
+          "text": "PCIe: dálnice s pruhy"
+        },
+        {
+          "type": "term",
+          "term": "Linka PCIe (lane)",
+          "definition": "Jeden „jízdní pruh“ sběrnice PCIe: pár vodičů tam a pár zpátky. Slot může mít 1, 4, 8 nebo 16 linek – značí se x1, x4, x8, x16.",
+          "example": "Grafická karta používá x16, síťová karta často x1."
+        },
+        {
+          "type": "text",
+          "text": "Každá nová generace PCIe zhruba zdvojnásobí rychlost jedné linky. Čísla jsou přibližná, na linku a jeden směr:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Generace",
+            "Na 1 linku",
+            "Slot x16"
+          ],
+          "rows": [
+            [
+              "PCIe 3.0",
+              "≈ 1 GB/s",
+              "≈ 16 GB/s"
+            ],
+            [
+              "PCIe 4.0",
+              "≈ 2 GB/s",
+              "≈ 32 GB/s"
+            ],
+            [
+              "PCIe 5.0",
+              "≈ 4 GB/s",
+              "≈ 64 GB/s"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "SSD disk používá 4 linky PCIe 4.0. Kolik dat přenese nejvýš za sekundu jedním směrem?",
+          "answer": "Jedna linka PCIe 4.0 ≈ 2 GB/s. Disk má 4 linky: 4 · 2 = **≈ 8 GB/s**. Skutečný disk bývá o něco pomalejší."
+        },
+        {
+          "type": "example",
+          "question": "Grafická karta PCIe 4.0 x16 je zasunutá do slotu PCIe 3.0 x16. Bude fungovat? Jak rychle?",
+          "answer": "PCIe je zpětně kompatibilní, takže **bude fungovat**. Pojede rychlostí pomalejšího z obou – PCIe 3.0: 16 · 1 = **≈ 16 GB/s**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Slot je velký jako x16, tak má určitě 16 linek.",
+          "right": "Délka slotu neříká, kolik linek je zapojených. Druhý dlouhý slot bývá často zapojený jen jako x4.",
+          "why": "Výrobci používají dlouhé sloty kvůli kompatibilitě karet. Skutečný počet linek najdeš v manuálu desky."
+        },
+        {
+          "type": "heading",
+          "text": "Paměť desky: BIOS a CMOS"
+        },
+        {
+          "type": "term",
+          "term": "UEFI (BIOS)",
+          "definition": "Firmware – program uložený v čipu na desce. Spustí se jako první, otestuje hardware a předá řízení operačnímu systému. UEFI je moderní nástupce starého BIOSu.",
+          "example": "Klávesou Del nebo F2 při startu se dostaneš do nastavení UEFI."
+        },
+        {
+          "type": "term",
+          "term": "CMOS baterie",
+          "definition": "Malá knoflíková baterie (obvykle CR2032), která napájí hodiny reálného času na desce, když je počítač odpojený.",
+          "example": "Když baterie dojde, počítač po odpojení ze zásuvky ukazuje špatný čas a datum."
+        },
+        {
+          "type": "summary",
+          "text": "Základní deska propojuje všechny součástky. Data tečou po sběrnicích; dnes vedou rychlé sériové linky jako PCIe, kde každá generace zdvojnásobí rychlost linky. UEFI spouští počítač, CMOS baterie drží čas."
+        }
+      ]
+    },
+    {
+      "title": "Kontrolní seznam",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kupuješ novou desku nebo chceš poznat, co umí ta stávající. Nejlépe se to dělá podle seznamu: formát, patice, paměť, sloty, disky, napájení. Projdeme ho bod po bodu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Základní deska",
+          "definition": "Deska, do které se zapojují všechny části počítače a přes kterou spolu komunikují."
+        },
+        {
+          "type": "term",
+          "term": "Formát desky (form factor)",
+          "definition": "Norma pro rozměry desky a rozmístění upevňovacích děr. Určuje, do jaké skříně deska pasuje.",
+          "example": "ATX 305 × 244 mm, microATX 244 × 244 mm, mini-ITX 170 × 170 mm."
+        },
+        {
+          "type": "term",
+          "term": "Sběrnice",
+          "definition": "Cesta pro data mezi součástkami, včetně pravidel přenosu."
+        },
+        {
+          "type": "term",
+          "term": "PCIe",
+          "definition": "PCI Express – sériová sběrnice pro rozšiřující karty a rychlé disky. Skládá se z linek; slot x16 má 16 linek."
+        },
+        {
+          "type": "term",
+          "term": "M.2",
+          "definition": "Malý konektor pro karty naležato, nejčastěji SSD. Podle desky může vést na PCIe (NVMe) nebo na SATA.",
+          "example": "SSD o rozměru 2280 = šířka 22 mm, délka 80 mm."
+        },
+        {
+          "type": "term",
+          "term": "SATA",
+          "definition": "Sériové rozhraní pro disky a mechaniky, maximálně 6 Gb/s (SATA III).",
+          "example": "2,5\" SSD nebo 3,5\" HDD připojené plochým SATA kabelem."
+        },
+        {
+          "type": "heading",
+          "text": "Seznam krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Formát:** ATX, microATX, nebo mini-ITX? Vejde se do skříně?",
+            "**Patice:** pasuje k procesoru? AM5 nebere procesory pro LGA 1700 a naopak.",
+            "**Paměť:** DDR4, nebo DDR5? Kolik slotů a jaká je maximální kapacita?",
+            "**Sloty PCIe:** kolik jich je, jaké generace a kolik linek mají skutečně zapojeno.",
+            "**Úložiště:** kolik je M.2 slotů (a zda NVMe) a kolik portů SATA.",
+            "**Napájení:** 24pinový ATX konektor a 8pinový EPS u patice procesoru.",
+            "**Zadní panel:** USB, síť, zvuk, video výstupy pro integrovanou grafiku."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kdo řídí provoz"
+        },
+        {
+          "type": "term",
+          "term": "Chipset",
+          "definition": "Řadič na desce, přes který jdou méně náročná zařízení: další USB, SATA, část slotů. Procesor má vlastní přímé linky PCIe pro grafiku a hlavní M.2."
+        },
+        {
+          "type": "text",
+          "text": "U dnešních počítačů je řadič paměti i hlavní linky PCIe přímo v procesoru. Chipset je k procesoru připojený vlastní linkou a sdílí ji všechna zařízení za ním."
+        },
+        {
+          "type": "term",
+          "term": "Firmware UEFI",
+          "definition": "Program v paměti desky, který se spustí po zapnutí, otestuje hardware (POST) a spustí zavaděč systému. Nastavení drží paměť, kterou spolu s hodinami napájí CMOS baterie."
+        },
+        {
+          "type": "heading",
+          "text": "Napájecí konektory"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Konektor",
+            "Kam",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "ATX 24pin",
+              "okraj desky",
+              "napájení celé desky"
+            ],
+            [
+              "EPS 8pin (4+4)",
+              "u patice nahoře",
+              "napájení procesoru (12 V)"
+            ],
+            [
+              "PCIe 6+2pin / 12V-2x6",
+              "grafická karta",
+              "napájení výkonné grafiky"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď si, co patří ke kterému rozhraní."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "paralelní",
+              "sériové"
+            ],
+            "items": [
+              {
+                "text": "PCIe",
+                "group": 1
+              },
+              {
+                "text": "SATA",
+                "group": 1
+              },
+              {
+                "text": "USB",
+                "group": 1
+              },
+              {
+                "text": "PATA (IDE)",
+                "group": 0
+              },
+              {
+                "text": "PCI (starý)",
+                "group": 0
+              },
+              {
+                "text": "LPT (tiskárna)",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Máš skříň pro microATX. Půjde do ní deska ATX? A mini-ITX?",
+          "answer": "ATX je větší (305 mm na délku) než microATX (244 mm), takže **se nevejde**. Mini-ITX je menší a díry má rozmístěné tak, aby **pasovala** i do microATX skříně."
+        },
+        {
+          "type": "example",
+          "question": "Deska má M.2 slot s označením „PCIe 4.0 x4“. Půjde do něj SSD M.2 SATA?",
+          "answer": "Slot je zapojený jen na PCIe, ne na SATA. **SATA M.2 disk v něm fungovat nebude**, i když se fyzicky vejde. Je třeba ověřit v manuálu, které sloty podporují SATA."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Každý M.2 disk funguje v každém M.2 slotu.",
+          "right": "M.2 je jen tvar konektoru. Disk i slot musí podporovat stejný protokol: NVMe (PCIe), nebo SATA.",
+          "why": "Stejný konektor může vést na dvě různá rozhraní. Vždy čti manuál desky."
+        },
+        {
+          "type": "summary",
+          "text": "Při výběru desky kontroluj formát, patici, typ paměti, sloty PCIe, M.2 a SATA a napájení. Procesor vede hlavní linky PCIe, chipset ostatní zařízení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Do čeho se na základní desce vkládá procesor?",
+      "options": [
+        "do patice (socketu)",
+        "do slotu PCIe",
+        "do slotu M.2",
+        "do konektoru EPS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který formát základní desky je nejmenší?",
+      "options": [
+        "mini-ITX",
+        "microATX",
+        "ATX",
+        "E-ATX"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik linek má slot PCIe označený x16? Napiš číslo.",
+      "answers": [
+        "16"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "PCIe 4.0 přenese asi 2 GB/s na linku a směr. Kolik GB/s přenese slot x4? Napiš číslo.",
+      "answers": [
+        "8"
+      ],
+      "hints": [
+        "Rychlost slotu = rychlost jedné linky × počet linek."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Grafická karta PCIe 4.0 bude fungovat ve slotu PCIe 3.0, jen pomaleji.",
+      "answer": true,
+      "explanation": "PCIe je zpětně kompatibilní; spojení pojede rychlostí starší generace."
+    },
+    {
+      "type": "truefalse",
+      "question": "Do každého slotu M.2 jde zapojit jakýkoli M.2 disk a bude fungovat.",
+      "answer": false,
+      "explanation": "M.2 je jen tvar. Slot může podporovat jen NVMe (PCIe), jen SATA, nebo obojí."
+    },
+    {
+      "type": "choice",
+      "question": "Proč dnes vedou sériové sběrnice nad paralelními?",
+      "options": [
+        "při vysokých frekvencích se paralelní vodiče ruší a bity se rozjedou",
+        "sériová sběrnice má víc vodičů",
+        "paralelní sběrnice nejde vyrobit",
+        "sériová sběrnice nepotřebuje napájení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj konektor s tím, co napájí nebo připojuje.",
+      "pairs": [
+        [
+          "ATX 24pin",
+          "napájení desky"
+        ],
+        [
+          "EPS 8pin",
+          "napájení procesoru"
+        ],
+        [
+          "SATA",
+          "2,5\" SSD nebo HDD"
+        ],
+        [
+          "PCIe x16",
+          "grafická karta"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Počítač po odpojení ze zásuvky pokaždé ukazuje špatný čas. Co je nejpravděpodobnější příčina?",
+      "options": [
+        "vybitá CMOS baterie",
+        "vadná grafická karta",
+        "plný disk",
+        "málo RAM"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co drží hodiny v chodu, když počítač nemá proud?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá UEFI (BIOS) po zapnutí počítače?",
+      "options": [
+        "otestuje hardware a spustí zavaděč operačního systému",
+        "zálohuje data na disk",
+        "řídí výpočty ve hrách",
+        "nabíjí CMOS baterii"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď generace PCIe od nejpomalejší po nejrychlejší.",
+      "items": [
+        "PCIe 3.0",
+        "PCIe 4.0",
+        "PCIe 5.0"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Délka slotu PCIe vždy přesně odpovídá počtu zapojených linek.",
+      "answer": false,
+      "explanation": "Dlouhý slot x16 může být elektricky zapojený jen jako x4 nebo x8."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi paralelní a sériovou sběrnicí a uveď příklady.",
+      "answer": "Paralelní sběrnice posílá víc bitů naráz po mnoha vodičích (PATA, staré PCI), při vysoké frekvenci se ale vodiče ruší. Sériová posílá bity za sebou po jednom páru, zato velmi rychle (PCIe, SATA, USB)."
+    },
+    {
+      "type": "open",
+      "question": "Co zkontroluješ, když vybíráš základní desku k procesoru a skříni?",
+      "answer": "Formát desky vůči skříni, patici a podporu procesoru, typ paměti DDR4/DDR5, sloty PCIe a M.2 (NVMe/SATA), porty SATA a napájecí konektory 24pin a 8pin EPS."
+    }
+  ]
+}

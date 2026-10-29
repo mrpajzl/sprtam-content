@@ -1,0 +1,484 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "architektura-pocitace",
+  "title": "Architektura počítače",
+  "emoji": "🏛️",
+  "explanations": [
+    {
+      "title": "Jako kuchyně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Notebook, mobil, chytrá pračka i server v datacentru vypadají úplně jinak. Uvnitř ale fungují podle stejného plánu, který popsal matematik **John von Neumann** v roce 1945."
+        },
+        {
+          "type": "text",
+          "text": "Když ten plán znáš, rozumíš, proč má počítač procesor, paměť a disk, proč se zpomaluje a co vlastně dělá, když „počítá“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Architektura počítače",
+          "definition": "Plán, z jakých hlavních částí se počítač skládá a jak spolu spolupracují. Neříká, jak je která součástka vyrobená.",
+          "example": "Notebook i herní PC mají stejnou architekturu, jen jiné výkonné součástky."
+        },
+        {
+          "type": "term",
+          "term": "Instrukce",
+          "definition": "Jeden jednoduchý příkaz pro procesor, například „sečti dvě čísla“ nebo „načti číslo z paměti“.",
+          "example": "Program je dlouhá řada instrukcí, třeba miliony."
+        },
+        {
+          "type": "term",
+          "term": "Program",
+          "definition": "Posloupnost instrukcí, která řeší nějaký úkol.",
+          "example": "Kalkulačka, prohlížeč, hra."
+        },
+        {
+          "type": "term",
+          "term": "Data",
+          "definition": "Údaje, se kterými program pracuje: čísla, texty, obrázky.",
+          "example": "Čísla, která sčítá kalkulačka."
+        },
+        {
+          "type": "heading",
+          "text": "Počítač jako kuchyně"
+        },
+        {
+          "type": "text",
+          "text": "Představ si restaurační kuchyni. Kuchař vaří podle receptu. Recept i suroviny leží v jedné spíži. Objednávky přicházejí okénkem a hotová jídla odcházejí jiným okénkem. Mezi spíží a kuchařem chodí pomocník s podnosem."
+        },
+        {
+          "type": "term",
+          "term": "Procesor (CPU)",
+          "definition": "Část, která provádí instrukce. Skládá se z **řadiče** a **ALU**.",
+          "example": "V kuchyni je to kuchař."
+        },
+        {
+          "type": "term",
+          "term": "Řadič",
+          "definition": "Část procesoru, která čte instrukce, rozumí jim a řídí ostatní části: kdy se má co načíst, spočítat a uložit.",
+          "example": "Kuchařova hlava, která čte recept a rozhoduje, co dělat."
+        },
+        {
+          "type": "term",
+          "term": "ALU (aritmeticko-logická jednotka)",
+          "definition": "Část procesoru, která opravdu počítá: sčítá, odčítá, porovnává a dělá logické operace.",
+          "example": "Kuchařovy ruce, které krájí a míchají."
+        },
+        {
+          "type": "term",
+          "term": "Operační paměť",
+          "definition": "Paměť, ve které jsou uložené **zároveň program i data**, se kterými se právě pracuje.",
+          "example": "Spíž, kde je recept i suroviny."
+        },
+        {
+          "type": "term",
+          "term": "Vstupní a výstupní zařízení",
+          "definition": "Části, kterými se data dostávají do počítače (vstup) a ven (výstup).",
+          "example": "Klávesnice a myš jsou vstup, monitor a tiskárna výstup. V kuchyni okénko pro objednávky a pro hotová jídla."
+        },
+        {
+          "type": "term",
+          "term": "Sběrnice",
+          "definition": "Soustava vodičů, po kterých si části počítače posílají data, adresy a řídicí signály.",
+          "example": "Pomocník s podnosem mezi spíží a kuchařem."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "⌨️",
+            "➡️",
+            "🧑‍🍳",
+            "↔️",
+            "🗄️",
+            "➡️",
+            "🖥️"
+          ],
+          "caption": "Vstup → procesor ↔ paměť → výstup"
+        },
+        {
+          "type": "heading",
+          "text": "Jak kuchař pracuje"
+        },
+        {
+          "type": "text",
+          "text": "Kuchař neudělá celý recept naráz. Přečte jeden řádek, pochopí ho, provede ho a jde na další. Procesor to dělá stejně, jen miliardkrát za sekundu. Tomuto koloběhu se říká **cyklus instrukce**. Klepej na šipky a projdi ho."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Fetch: načti instrukci z paměti",
+              "Decode: řadič ji dekóduje (pochopí)",
+              "Execute: ALU ji provede",
+              "Výsledek ulož a posuň se na další instrukci"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Kde je slabé místo"
+        },
+        {
+          "type": "text",
+          "text": "Kuchař je velmi rychlý, ale pomocník s podnosem je jen jeden. Pro recept i pro suroviny musí chodit stejnou cestou. Kuchař pak často čeká. V počítači se tomu říká **von Neumannovo úzké hrdlo**: procesor je rychlejší, než stačí sběrnice a paměť dodávat instrukce a data."
+        },
+        {
+          "type": "term",
+          "term": "Harvardská architektura",
+          "definition": "Jiný plán: program a data jsou ve **dvou oddělených pamětech** s vlastními sběrnicemi, takže se dají číst současně.",
+          "example": "Kuchyně se dvěma pomocníky: jeden nosí recepty, druhý suroviny. Používá se hlavně v mikrokontrolérech, např. v pračce nebo v Arduinu."
+        },
+        {
+          "type": "example",
+          "question": "Ve kterém kroku cyklu instrukce se sečtou dvě čísla?",
+          "answer": "Nejdřív se instrukce „sečti“ načte z paměti (fetch), pak ji řadič dekóduje (decode). Samotné sečtení udělá ALU až v kroku **execute**."
+        },
+        {
+          "type": "example",
+          "question": "Mikrokontrolér v pračce má program v paměti flash a data v malé paměti RAM, každou na vlastní sběrnici. Jaká je to architektura a proč?",
+          "answer": "Program a data jsou v oddělených pamětech s oddělenými sběrnicemi. To je přesně definice **harvardské architektury**. Výhoda: procesor může zároveň číst instrukci i data."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Program je uložený jinde než data, data jsou v paměti a program v procesoru.",
+          "right": "Ve von Neumannově architektuře jsou program i data ve stejné operační paměti.",
+          "why": "Procesor si instrukce programu z paměti načítá jednu po druhé. Sám o sobě program „neobsahuje“."
+        },
+        {
+          "type": "summary",
+          "text": "Von Neumannův počítač má procesor (řadič + ALU), operační paměť pro program i data, vstup a výstup a vše spojují sběrnice. Procesor opakuje cyklus fetch–decode–execute. Sdílená cesta k paměti je úzké hrdlo; harvardská architektura má paměť programu a dat oddělenou."
+        }
+      ]
+    },
+    {
+      "title": "Schéma a vrstvy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik, který počítač opravuje nebo navrhuje, potřebuje vědět, co je kde a jak to spolu mluví. Proto se počítač popisuje blokovým schématem a vrstvami od hardwaru po aplikace."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hardware",
+          "definition": "Fyzické části počítače, které si můžeš osahat.",
+          "example": "Procesor, paměť, disk, základní deska."
+        },
+        {
+          "type": "term",
+          "term": "Software",
+          "definition": "Programy, které na hardwaru běží.",
+          "example": "Windows, prohlížeč, hra."
+        },
+        {
+          "type": "term",
+          "term": "Instrukce",
+          "definition": "Nejmenší příkaz, kterému procesor rozumí, např. sečti, porovnej, skoč jinam v programu.",
+          "example": "Program je řada instrukcí."
+        },
+        {
+          "type": "term",
+          "term": "Procesor (CPU)",
+          "definition": "Jednotka, která provádí instrukce. Obsahuje **řadič** (řídí, čte a dekóduje instrukce) a **ALU**, aritmeticko-logickou jednotku (počítá a porovnává).",
+          "example": "Intel Core, AMD Ryzen, Apple M."
+        },
+        {
+          "type": "term",
+          "term": "Operační paměť",
+          "definition": "Paměť, ze které procesor čte instrukce i data a kam ukládá výsledky.",
+          "example": "Moduly RAM na základní desce."
+        },
+        {
+          "type": "term",
+          "term": "Sběrnice",
+          "definition": "Společné propojení částí počítače. Rozlišuje se **datová** (přenáší data), **adresová** (říká, se kterým místem paměti se pracuje) a **řídicí** (signály typu čti/zapiš).",
+          "example": "Procesor pošle po adresové sběrnici adresu, po řídicí „čti“ a po datové přijde obsah."
+        },
+        {
+          "type": "heading",
+          "text": "Bloky von Neumannova počítače"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Blok",
+            "Úkol"
+          ],
+          "rows": [
+            [
+              "řadič",
+              "čte a dekóduje instrukce, řídí ostatní bloky"
+            ],
+            [
+              "ALU",
+              "provádí výpočty a logické operace"
+            ],
+            [
+              "operační paměť",
+              "uchovává program i data"
+            ],
+            [
+              "vstupní zařízení",
+              "přivádí data do počítače"
+            ],
+            [
+              "výstupní zařízení",
+              "předává výsledky ven"
+            ],
+            [
+              "sběrnice",
+              "propojuje bloky"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Principy, které platí dodnes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Program i data jsou ve **stejné** paměti a mají stejnou podobu (dvojková čísla).",
+            "Paměť je rozdělená na buňky se **stejnou velikostí** a každá má svou **adresu**.",
+            "Instrukce se provádějí **postupně** jedna po druhé, pořadí lze změnit skokem.",
+            "Počítač se na úlohu nepředělává zapojením, ale změnou programu v paměti."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cyklus instrukce krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Fetch** (načtení): řadič vezme z paměti instrukci na adrese, kterou drží **čítač instrukcí** (malá paměť v procesoru, která si pamatuje adresu další instrukce).",
+            "**Decode** (dekódování): řadič zjistí, co instrukce znamená a jaká data potřebuje.",
+            "**Execute** (provedení): ALU provede výpočet, případně se načtou nebo uloží data.",
+            "Čítač instrukcí se posune na další instrukci a cyklus začíná znovu."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Von Neumannovo úzké hrdlo",
+          "definition": "Omezení výkonu: instrukce i data jdou jednou cestou mezi procesorem a pamětí, takže procesor na ně často čeká.",
+          "example": "Dnešní procesory to zmírňují rychlými vyrovnávacími pamětmi (cache)."
+        },
+        {
+          "type": "term",
+          "term": "Harvardská architektura",
+          "definition": "Program a data mají **oddělené** paměti i sběrnice. Instrukci a data lze číst současně.",
+          "example": "Mikrokontroléry (Arduino, řídicí jednotka pračky). V moderních procesorech je oddělená cache pro instrukce a pro data."
+        },
+        {
+          "type": "example",
+          "question": "Porovnej von Neumannovu a harvardskou architekturu ve třech bodech.",
+          "answer": "1) Paměť: von Neumann jedna společná, harvard dvě oddělené. 2) Sběrnice: von Neumann jedna cesta, harvard dvě. 3) Důsledek: harvard může číst instrukci i data **naráz**, von Neumann je jednodušší a pružnější (paměť se dělí podle potřeby)."
+        },
+        {
+          "type": "heading",
+          "text": "Vrstvy počítače"
+        },
+        {
+          "type": "term",
+          "term": "Firmware",
+          "definition": "Software uložený přímo v zařízení, který ho oživí a ovládá na nejnižší úrovni.",
+          "example": "UEFI (dříve BIOS) na základní desce, firmware v SSD nebo tiskárně."
+        },
+        {
+          "type": "term",
+          "term": "Operační systém",
+          "definition": "Software, který spravuje hardware a nabízí ho aplikacím: přiděluje paměť, procesor, soubory.",
+          "example": "Windows, Linux, macOS, Android."
+        },
+        {
+          "type": "text",
+          "text": "Vrstvy zdola nahoru: **hardware → firmware → operační systém → aplikace**. Každá vrstva využívá tu pod sebou. Aplikace tedy na disk nesahá přímo, požádá o to operační systém."
+        },
+        {
+          "type": "example",
+          "question": "Uživatel uloží dokument ve Wordu. Které vrstvy se toho účastní?",
+          "answer": "Aplikace (Word) požádá **operační systém** o zápis souboru. OS přes ovladač pošle příkaz řadiči disku, ve kterém běží **firmware**. Ten zapíše data na **hardware** – paměťové čipy nebo plotny."
+        },
+        {
+          "type": "mistake",
+          "wrong": "BIOS/UEFI je součástí Windows.",
+          "right": "UEFI je firmware základní desky, běží ještě před spuštěním operačního systému.",
+          "why": "Firmware je vrstva pod OS. Proto jde nastavení UEFI otevřít i na počítači bez nainstalovaného systému."
+        },
+        {
+          "type": "summary",
+          "text": "Počítač = řadič + ALU (procesor), operační paměť, vstup, výstup a sběrnice. Program i data jsou v jedné paměti a instrukce běží cyklem fetch–decode–execute. Vrstvy: hardware, firmware, operační systém, aplikace."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které dvě části tvoří procesor ve von Neumannově schématu?",
+      "options": [
+        "řadič a ALU",
+        "řadič a operační paměť",
+        "ALU a sběrnice",
+        "paměť a vstup"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jedna část řídí, druhá počítá."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve von Neumannově architektuře jsou program i data uložené ve stejné operační paměti.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky cyklu instrukce.",
+      "items": [
+        "načtení instrukce (fetch)",
+        "dekódování (decode)",
+        "provedení (execute)",
+        "posun na další instrukci"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj blok s jeho úkolem.",
+      "pairs": [
+        [
+          "řadič",
+          "řídí a dekóduje instrukce"
+        ],
+        [
+          "ALU",
+          "počítá a porovnává"
+        ],
+        [
+          "operační paměť",
+          "drží program a data"
+        ],
+        [
+          "sběrnice",
+          "propojuje části"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou jmenuje aritmeticko-logická jednotka procesoru?",
+      "answers": [
+        "ALU"
+      ],
+      "hints": [
+        "Zkratka vychází z anglického Arithmetic Logic Unit."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je von Neumannovo úzké hrdlo?",
+      "options": [
+        "procesor čeká na instrukce a data, protože jdou jednou cestou z paměti",
+        "procesor se přehřívá",
+        "disk je menší než paměť",
+        "chybí vstupní zařízení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kde se nejčastěji používá harvardská architektura?",
+      "options": [
+        "v mikrokontrolérech",
+        "v monitorech",
+        "v napájecích zdrojích",
+        "v klávesnicích bez elektroniky"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hledej malý počítač v jednom čipu, který řídí pračku nebo Arduino."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Harvardská architektura má společnou paměť pro program i data.",
+      "answer": false,
+      "explanation": "Má je oddělené, každou s vlastní sběrnicí."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď vrstvy počítače od nejnižší po nejvyšší.",
+      "items": [
+        "hardware",
+        "firmware",
+        "operační systém",
+        "aplikace"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj sběrnici s tím, co přenáší.",
+      "pairs": [
+        [
+          "datová",
+          "obsah – data a instrukce"
+        ],
+        [
+          "adresová",
+          "místo v paměti"
+        ],
+        [
+          "řídicí",
+          "signály jako čti a zapiš"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které zařízení je výstupní?",
+      "options": [
+        "monitor",
+        "klávesnice",
+        "myš",
+        "skener"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje firmware základní desky, který nahradil BIOS? (zkratka)",
+      "answers": [
+        "UEFI",
+        "EFI"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš von Neumannovu architekturu a její hlavní slabinu.",
+      "answer": "Počítač tvoří procesor (řadič a ALU), operační paměť se společně uloženým programem i daty, vstupní a výstupní zařízení a sběrnice. Instrukce se provádějí postupně. Slabinou je úzké hrdlo: procesor čeká, protože instrukce i data jdou jednou cestou z paměti."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli cyklus fetch–decode–execute.",
+      "answer": "Řadič načte z paměti instrukci (fetch), dekóduje ji, tedy zjistí, co má udělat (decode), a ALU ji provede (execute). Pak se posune na další instrukci a cyklus se opakuje."
+    }
+  ]
+}

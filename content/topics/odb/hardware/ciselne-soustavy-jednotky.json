@@ -1,0 +1,537 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ciselne-soustavy-jednotky",
+  "title": "Číselné soustavy a jednotky dat",
+  "emoji": "🔢",
+  "explanations": [
+    {
+      "title": "Vypínače a krabičky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Počítač neumí deset číslic jako ty. Uvnitř má jen miliardy malinkých „vypínačů“, které jsou buď zapnuté, nebo vypnuté. Všechno, co ukládá – fotky, hry, texty – je nakonec dlouhá řada takových stavů."
+        },
+        {
+          "type": "text",
+          "text": "Když pochopíš, jak se s dvěma stavy počítá, pochopíš, proč má flash disk „divnou“ kapacitu, proč se barvy na webu píšou jako #FF8800 a proč 100 Mb/s internet stahuje jen asi 12 MB za sekundu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Číselná soustava",
+          "definition": "Způsob zápisu čísel. Říká, kolik různých číslic máme a kolikrát víc „váží“ každé další místo vlevo. Tomu počtu se říká **základ** soustavy.",
+          "example": "Desítková soustava má základ 10: číslice 0–9, místa jednotky, desítky, stovky…"
+        },
+        {
+          "type": "term",
+          "term": "Dvojková (binární) soustava",
+          "definition": "Soustava se základem 2. Má jen číslice 0 a 1. Každé místo vlevo má dvakrát větší váhu: 1, 2, 4, 8, 16…",
+          "example": "Dvojkové 101 = 1·4 + 0·2 + 1·1 = 5."
+        },
+        {
+          "type": "term",
+          "term": "Bit (b)",
+          "definition": "Jedna dvojková číslice – nejmenší kousek informace. Je to jeden „vypínač“: 0, nebo 1.",
+          "example": "Odpověď ano/ne se vejde do jednoho bitu."
+        },
+        {
+          "type": "term",
+          "term": "Bajt (B)",
+          "definition": "Skupina 8 bitů. Je to základní jednotka, ve které se měří velikost souborů a pamětí. Do jednoho bajtu se vejde 2⁸ = 256 různých hodnot (0–255).",
+          "example": "Jedno písmeno bez diakritiky zabere v textovém souboru obvykle 1 bajt."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se čte dvojkové číslo"
+        },
+        {
+          "type": "text",
+          "text": "Představ si řadu krabiček. Každá krabička má svou hodnotu a hodnoty se zprava doleva zdvojnásobují. Do krabičky buď něco dáš (1), nebo ji necháš prázdnou (0). Číslo je součet hodnot plných krabiček."
+        },
+        {
+          "type": "table",
+          "head": [
+            "128",
+            "64",
+            "32",
+            "16",
+            "8",
+            "4",
+            "2",
+            "1"
+          ],
+          "rows": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "První řádek: plné jsou krabičky 8, 4 a 1, tedy 8 + 4 + 1 = **13**. Druhý řádek: všechny plné, 128 + 64 + … + 1 = **255**. Víc se do 8 bitů nevejde."
+        },
+        {
+          "type": "example",
+          "question": "Převeď dvojkové číslo 10110 do desítkové soustavy.",
+          "answer": "Napiš nad číslice váhy zprava: 16, 8, 4, 2, 1. Jedničky jsou pod 16, 4 a 2. Sečti: 16 + 4 + 2 = **22**."
+        },
+        {
+          "type": "heading",
+          "text": "Šestnáctková soustava"
+        },
+        {
+          "type": "term",
+          "term": "Šestnáctková (hexadecimální) soustava",
+          "definition": "Soustava se základem 16. Číslice jsou 0–9 a pak písmena A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Jedna šestnáctková číslice nahradí přesně 4 bity.",
+          "example": "FF = 15·16 + 15 = 255, tedy jeden plný bajt. Píše se třeba 0xFF nebo FFh."
+        },
+        {
+          "type": "text",
+          "text": "Dlouhé řady nul a jedniček se špatně čtou. Proto je programátoři zapisují šestnáctkově: rozdělí bity po čtyřech a každou čtveřici nahradí jednou číslicí. Tak vypadá třeba barva #FF8800 nebo MAC adresa síťové karty."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "0000",
+                "back": "0"
+              },
+              {
+                "front": "1001",
+                "back": "9"
+              },
+              {
+                "front": "1010",
+                "back": "A (10)"
+              },
+              {
+                "front": "1100",
+                "back": "C (12)"
+              },
+              {
+                "front": "1111",
+                "back": "F (15)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si u každé kartičky nejdřív sám sečíst váhy 8, 4, 2, 1 a pak ji otoč."
+        },
+        {
+          "type": "example",
+          "question": "Převeď dvojkové 1101 0110 do šestnáctkové soustavy.",
+          "answer": "Rozděl na čtveřice: 1101 a 0110. 1101 = 8 + 4 + 1 = 13 = D. 0110 = 4 + 2 = 6. Výsledek **D6** (desítkově 13·16 + 6 = 214)."
+        },
+        {
+          "type": "heading",
+          "text": "Kilo, nebo kibi?"
+        },
+        {
+          "type": "term",
+          "term": "Předpony SI (k, M, G, T)",
+          "definition": "Desítkové předpony jako u metrů: kilo = 1 000, mega = 1 000 000, giga = 10⁹, tera = 10¹².",
+          "example": "1 kB = 1 000 B, 1 GB = 1 000 000 000 B."
+        },
+        {
+          "type": "term",
+          "term": "Binární předpony (Ki, Mi, Gi, Ti)",
+          "definition": "Předpony podle mocnin dvou zavedené normou IEC: kibi = 2¹⁰ = 1 024, mebi = 2²⁰ = 1 048 576, gibi = 2³⁰.",
+          "example": "1 KiB = 1 024 B, 1 MiB = 1 024 KiB."
+        },
+        {
+          "type": "text",
+          "text": "Výrobci disků počítají v desítkových předponách. Windows sice píše „GB“, ale počítá ve skutečnosti v GiB. Proto nový „1 TB“ disk ukáže jen asi 931 GB. Nic nechybí, jen se to měří jiným metrem."
+        },
+        {
+          "type": "example",
+          "question": "Disk má 500 GB podle výrobce. Kolik GiB to je?",
+          "answer": "500 GB = 500 · 10⁹ B = 500 000 000 000 B. 1 GiB = 1 073 741 824 B. Vyděl: 500 000 000 000 : 1 073 741 824 ≈ **465,7 GiB**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Internet 100 Mb/s stáhne za sekundu 100 MB.",
+          "right": "100 Mb/s = 100 megabitů za sekundu = 100 : 8 = 12,5 MB/s (megabajtů).",
+          "why": "Malé **b** je bit, velké **B** je bajt. Rychlost sítě se udává v bitech, velikost souborů v bajtech, a bajt má 8 bitů."
+        },
+        {
+          "type": "summary",
+          "text": "Počítač pracuje ve dvojkové soustavě: bit je 0 nebo 1, bajt je 8 bitů (0–255). Šestnáctková číslice zastoupí 4 bity. kB = 1 000 B, KiB = 1 024 B, a b (bit) není B (bajt)."
+        }
+      ]
+    },
+    {
+      "title": "Převody krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik musí umět rychle přepočítat adresu, masku sítě nebo velikost paměti mezi soustavami a jednotkami. Stačí k tomu tři postupy a jedna tabulka. Tady je máš jako recept."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Základ soustavy",
+          "definition": "Počet různých číslic soustavy. Zároveň udává, kolikrát má každé místo vlevo větší váhu než místo vpravo.",
+          "example": "Desítková: základ 10, váhy 1, 10, 100. Dvojková: základ 2, váhy 1, 2, 4, 8."
+        },
+        {
+          "type": "term",
+          "term": "Váha místa",
+          "definition": "Hodnota, kterou číslice na daném místě „násobí“. Je to základ umocněný na pořadí místa (počítáno zprava od nuly).",
+          "example": "V čísle 352 má trojka váhu 10² = 100, tedy znamená 300."
+        },
+        {
+          "type": "term",
+          "term": "Bit a bajt",
+          "definition": "**Bit (b)** je jedna dvojková číslice, 0 nebo 1. **Bajt (B)** je 8 bitů.",
+          "example": "Soubor 3 B má 24 bitů."
+        },
+        {
+          "type": "term",
+          "term": "Hexadecimální soustava",
+          "definition": "Šestnáctková soustava: číslice 0–9 a A–F (A = 10 … F = 15). Jedna číslice = 4 bity, dvě číslice = 1 bajt.",
+          "example": "2A = 2·16 + 10 = 42."
+        },
+        {
+          "type": "heading",
+          "text": "Postup 1: z libovolné soustavy do desítkové"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Očísluj místa zprava od nuly.",
+            "Ke každému místu napiš váhu: základ na pořadí místa (u dvojkové 1, 2, 4, 8…, u šestnáctkové 1, 16, 256…).",
+            "Každou číslici vynásob její vahou.",
+            "Výsledky sečti."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď šestnáctkové 1F4 do desítkové soustavy.",
+          "answer": "Váhy zprava: 1, 16, 256. 4·1 = 4, F = 15 → 15·16 = 240, 1·256 = 256. Součet 256 + 240 + 4 = **500**."
+        },
+        {
+          "type": "heading",
+          "text": "Postup 2: z desítkové do dvojkové"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vyděl číslo dvěma a zapiš zbytek (0 nebo 1).",
+            "Podíl zase vyděl dvěma a zapiš zbytek.",
+            "Pokračuj, dokud nedostaneš podíl 0.",
+            "Zbytky přečti **odspodu nahoru** – to je dvojkové číslo."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Převeď desítkové 45 do dvojkové soustavy.",
+          "answer": "45 : 2 = 22 zb. 1; 22 : 2 = 11 zb. 0; 11 : 2 = 5 zb. 1; 5 : 2 = 2 zb. 1; 2 : 2 = 1 zb. 0; 1 : 2 = 0 zb. 1. Odspodu: **101101**. Kontrola: 32 + 8 + 4 + 1 = 45."
+        },
+        {
+          "type": "heading",
+          "text": "Postup 3: mezi dvojkovou a šestnáctkovou"
+        },
+        {
+          "type": "text",
+          "text": "Tady se nic nedělí. Dvojkové číslo rozděl **zprava** po čtyřech bitech (vlevo případně doplň nuly) a každou čtveřici přepiš na jednu šestnáctkovou číslici. Opačně každou šestnáctkovou číslici rozepiš na 4 bity."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "1010 = ",
+                "after": "",
+                "options": [
+                  "A",
+                  "9",
+                  "B"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "0111 = ",
+                "after": "",
+                "options": [
+                  "E",
+                  "7",
+                  "6"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "C = ",
+                "after": "",
+                "options": [
+                  "1100",
+                  "1010",
+                  "0011"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "3F = ",
+                "after": "",
+                "options": [
+                  "0011 1111",
+                  "0011 1110",
+                  "1111 0011"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň převody. Pomáhá napsat si nad bity váhy 8, 4, 2, 1."
+        },
+        {
+          "type": "heading",
+          "text": "Jednotky dat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Desítkově (SI)",
+            "Hodnota",
+            "Binárně (IEC)",
+            "Hodnota"
+          ],
+          "rows": [
+            [
+              "1 kB",
+              "1 000 B",
+              "1 KiB",
+              "1 024 B"
+            ],
+            [
+              "1 MB",
+              "10⁶ B",
+              "1 MiB",
+              "2²⁰ B = 1 048 576 B"
+            ],
+            [
+              "1 GB",
+              "10⁹ B",
+              "1 GiB",
+              "2³⁰ B = 1 073 741 824 B"
+            ],
+            [
+              "1 TB",
+              "10¹² B",
+              "1 TiB",
+              "2⁴⁰ B"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Soubor má 3 MiB. Kolik je to bajtů a kolik MB?",
+          "answer": "3 MiB = 3 · 1 048 576 = **3 145 728 B**. V desítkových MB: 3 145 728 : 1 000 000 ≈ **3,15 MB**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik sekund trvá stažení souboru 600 MB po lince 50 Mb/s (bez režie)?",
+          "answer": "Soubor v bitech: 600 MB · 8 = 4 800 Mb. Čas = 4 800 : 50 = **96 s**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Převod 13 do dvojkové: zbytky 1, 0, 1, 1 čtu shora → 1011.",
+          "right": "Zbytky se čtou odspodu: 1101 (= 8 + 4 + 1 = 13).",
+          "why": "První zbytek patří nejnižšímu místu (váha 1), proto je ve výsledku úplně vpravo. Výsledek si vždy zkontroluj zpětným převodem."
+        },
+        {
+          "type": "summary",
+          "text": "Do desítkové: číslice krát váha a sečíst. Do dvojkové: dělit dvěma a zbytky číst odspodu. Dvojková ↔ šestnáctková: po čtveřicích bitů. 1 B = 8 b, k = 1 000, Ki = 1 024."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik bitů má jeden bajt?",
+      "answers": [
+        "8",
+        "osm"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď dvojkové číslo 1101 do desítkové soustavy.",
+      "answers": [
+        "13"
+      ],
+      "hints": [
+        "Napiš nad číslice zprava váhy 1, 2, 4, 8.",
+        "Sečti váhy tam, kde je jednička."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď desítkové číslo 37 do dvojkové soustavy.",
+      "answers": [
+        "100101",
+        "00100101"
+      ],
+      "explanation": "37 = 32 + 4 + 1 → 100101.",
+      "hints": [
+        "Opakovaně děl dvěma a zapisuj zbytky.",
+        "Zbytky čti odspodu nahoru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď šestnáctkové číslo FF do desítkové soustavy.",
+      "answers": [
+        "255"
+      ],
+      "hints": [
+        "F znamená 15.",
+        "Levá číslice má váhu 16."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď dvojkové 1011 1100 do šestnáctkové soustavy.",
+      "answers": [
+        "BC",
+        "0xBC",
+        "BCh"
+      ],
+      "hints": [
+        "Každou čtveřici bitů převeď zvlášť.",
+        "1011 = 11 a 1100 = 12; najdi pro ně písmena."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik bajtů je 1 KiB?",
+      "options": [
+        "1 024",
+        "1 000",
+        "1 048",
+        "8 192"
+      ],
+      "answer": 0,
+      "explanation": "Kibi = 2¹⁰ = 1 024. Desítkové kilo (kB) je 1 000."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik různých hodnot uloží 1 bajt?",
+      "options": [
+        "256",
+        "255",
+        "128",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "2⁸ = 256 hodnot, tedy čísla 0 až 255."
+    },
+    {
+      "type": "input",
+      "question": "Připojení má rychlost 80 Mb/s. Kolik MB/s to je (bez režie)?",
+      "answers": [
+        "10"
+      ],
+      "hints": [
+        "Malé b je bit, velké B bajt.",
+        "Kolik bitů má bajt?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Disk prodávaný jako 1 TB ukáže Windows jako asi 931 GB, protože výrobce počítá v desítkových předponách a Windows v binárních.",
+      "answer": true,
+      "explanation": "10¹² B : 2³⁰ ≈ 931 GiB. Windows je označuje jako „GB“."
+    },
+    {
+      "type": "truefalse",
+      "question": "Jedna šestnáctková číslice odpovídá přesně 8 bitům.",
+      "answer": false,
+      "explanation": "Jedna šestnáctková číslice = 4 bity, dvě číslice = 1 bajt."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejmenší po největší.",
+      "items": [
+        "1 bit",
+        "1 bajt",
+        "1 kB",
+        "1 KiB",
+        "1 MB",
+        "1 MiB"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo s jeho zápisem.",
+      "pairs": [
+        [
+          "dvojkově 1010",
+          "desítkově 10"
+        ],
+        [
+          "šestnáctkově 1F",
+          "desítkově 31"
+        ],
+        [
+          "dvojkově 1000 0000",
+          "desítkově 128"
+        ],
+        [
+          "šestnáctkově 64",
+          "desítkově 100"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi kB a KiB a proč má nový disk v počítači menší kapacitu, než je napsané na krabici.",
+      "answer": "kB je desítkové kilo = 1 000 B, KiB je binární kibi = 1 024 B. Výrobce disku uvádí kapacitu v desítkových jednotkách, operační systém ji přepočítává na binární, takže stejný počet bajtů vychází jako menší číslo."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak převedeš desítkové číslo do dvojkové soustavy a jak výsledek ověříš.",
+      "answer": "Číslo opakovaně dělím dvěma a zapisuji zbytky, dokud podíl není 0. Zbytky přečtu odspodu nahoru. Ověřím zpětně: sečtu váhy (1, 2, 4, 8…) míst, kde jsou jedničky."
+    }
+  ]
+}

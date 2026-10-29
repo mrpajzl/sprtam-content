@@ -1,0 +1,438 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zdroj-chlazeni",
+  "title": "Zdroj a chlazení",
+  "emoji": "🌀",
+  "explanations": [
+    {
+      "title": "Energie a teplo",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ze zásuvky jde střídavé napětí 230 V. Procesor ale potřebuje kolem jednoho voltu a stejnosměrný proud. Někdo to musí přeměnit – to dělá **zdroj**."
+        },
+        {
+          "type": "text",
+          "text": "Skoro všechna elektřina, kterou počítač spotřebuje, se nakonec změní v teplo. Když se teplo neodvede, součástky zpomalí, nebo se vypnou. Proto zdroj a chlazení patří k sobě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zdroj (PSU)",
+          "definition": "Power Supply Unit. Mění střídavé napětí ze sítě 230 V na stejnosměrná napětí 12 V, 5 V a 3,3 V pro součástky.",
+          "example": "Krabička vzadu ve skříni s vypínačem a síťovým kabelem."
+        },
+        {
+          "type": "term",
+          "term": "Střídavý a stejnosměrný proud (AC/DC)",
+          "definition": "Střídavý (AC) mění směr – v české síti 50× za sekundu. Stejnosměrný (DC) teče stále jedním směrem, jako z baterie.",
+          "example": "Zásuvka = AC 230 V, větev 12 V ze zdroje = DC."
+        },
+        {
+          "type": "term",
+          "term": "Výkon (W)",
+          "definition": "Kolik energie za sekundu zařízení spotřebuje nebo dodá. Jednotka watt. U zdroje udává, kolik nejvýš unese.",
+          "example": "Zdroj 650 W."
+        },
+        {
+          "type": "text",
+          "text": "Nejvíc odebírají procesor a grafická karta, a to z větve **12 V**. Další napětí (5 V, 3,3 V) slouží hlavně pro USB, disky a obvody desky. Samotné jádro procesoru dostává ještě nižší napětí z měničů na základní desce."
+        },
+        {
+          "type": "heading",
+          "text": "Kolik wattů a jak účinně"
+        },
+        {
+          "type": "term",
+          "term": "Účinnost",
+          "definition": "Kolik procent energie ze zásuvky dojde k součástkám. Zbytek se ve zdroji změní v teplo.",
+          "example": "Při účinnosti 90 % a odběru 450 W bere zdroj ze sítě 500 W, 50 W jde do tepla."
+        },
+        {
+          "type": "term",
+          "term": "80 PLUS",
+          "definition": "Certifikace účinnosti zdroje. Stupně Bronze, Silver, Gold, Platinum, Titanium – čím vyšší, tím účinnější. Základní stupeň znamená aspoň 80 % při 20, 50 i 100 % zátěže.",
+          "example": "Zdroj 80 PLUS Gold má účinnost kolem 90 % při polovičním zatížení."
+        },
+        {
+          "type": "example",
+          "question": "Procesor má spotřebu asi 125 W, grafika 220 W, zbytek počítače asi 75 W. Jaký zdroj zvolíš?",
+          "answer": "Součet: 125 + 220 + 75 = 420 W. Přidáme rezervu asi 30–50 %: 420 · 1,4 ≈ 590 W. Zvolíme kvalitní zdroj **kolem 650 W**. Rezerva počítá se špičkami odběru a zdroj při nižší zátěži běží tišeji a účinněji."
+        },
+        {
+          "type": "heading",
+          "text": "Kam s teplem"
+        },
+        {
+          "type": "term",
+          "term": "TDP",
+          "definition": "Thermal Design Power – kolik tepla (ve W) má chladič procesoru nebo grafiky zvládnout odvádět. Výrobci ho počítají různě, proto je to jen orientační údaj.",
+          "example": "Procesor s TDP 65 W zvládne menší chladič než procesor s TDP 125 W."
+        },
+        {
+          "type": "term",
+          "term": "Chladič",
+          "definition": "Kovový blok (hliník, měď) s žebry. Teplo z čipu přejde do kovu a žebra ho předají vzduchu.",
+          "example": "Věžový chladič s ventilátorem na procesoru."
+        },
+        {
+          "type": "term",
+          "term": "Teplovodivá pasta",
+          "definition": "Tenká vrstva pasty mezi čipem a chladičem. Vyplní mikroskopické nerovnosti, kde by jinak byl vzduch, který teplo vede špatně.",
+          "example": "Kapka velikosti hrášku doprostřed procesoru."
+        },
+        {
+          "type": "term",
+          "term": "Heatpipe (tepelná trubice)",
+          "definition": "Uzavřená měděná trubička s malým množstvím kapaliny. Ta se u čipu vypaří, v žebrech zkondenzuje a vrátí se. Teplo tak rychle putuje od čipu k žebrům.",
+          "example": "Měděné trubky vedoucí z patky chladiče do žeber."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Pasivní chlazení** – jen chladič bez ventilátoru; tiché, ale jen pro malé výkony.",
+            "**Aktivní chlazení** – chladič s ventilátorem.",
+            "**Vodní AiO** (All-in-One) – uzavřený okruh: blok na procesoru, čerpadlo, hadice a radiátor s ventilátory."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Throttling",
+          "definition": "Když je čip příliš horký, sám sníží frekvenci, aby se nepoškodil. Počítač zpomalí.",
+          "example": "Notebook s ucpaným chladičem se ve hře najednou „zasekává“."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím víc pasty, tím lepší chlazení.",
+          "right": "Stačí tenká vrstva. Příliš mnoho pasty teplo vede hůř než přímý kontakt kovů a přetéká na okolí.",
+          "why": "Pasta vede teplo lépe než vzduch, ale mnohem hůř než kov. Má jen vyplnit nerovnosti."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Zdroj nikdy neotvírej.** Kondenzátory v něm drží nebezpečné napětí i po odpojení ze sítě.",
+            "Před prací uvnitř skříně vypni zdroj, vytáhni síťový kabel a podrž tlačítko zapnutí, aby se vybila zbytková energie.",
+            "Chraň součástky před statickou elektřinou (ESD): antistatický náramek, nebo se aspoň dotkni kovové kostry skříně."
+          ]
+        },
+        {
+          "type": "summary",
+          "text": "Zdroj mění 230 V AC na 12, 5 a 3,3 V DC; vybírej ho podle součtu spotřeby s rezervou a podle účinnosti 80 PLUS. Teplo odvádí chladič, pasta, heatpipe a proudění vzduchu; přehřátý čip zpomalí (throttling). Zdroj se neotevírá."
+        }
+      ]
+    },
+    {
+      "title": "Cesta vzduchu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si pokoj v létě. Otevřeš okno na jedné straně a dveře na druhé a vznikne průvan, který teplo vyfouká. Ve skříni počítače to funguje stejně. Sledujme energii od zásuvky až po teplý vzduch, který vyjde ven."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zdroj (PSU)",
+          "definition": "Součástka, která mění 230 V střídavých ze sítě na stejnosměrná napětí 12 V, 5 V a 3,3 V."
+        },
+        {
+          "type": "term",
+          "term": "Watt (W)",
+          "definition": "Jednotka výkonu. Udává, kolik energie se spotřebuje nebo předá za sekundu."
+        },
+        {
+          "type": "term",
+          "term": "Modulární zdroj",
+          "definition": "Zdroj, u kterého se kabely připojují do konektorů na zdroji. Nepotřebné kabely se nemusí zapojit, takže ve skříni je méně „špaget“ a lépe proudí vzduch.",
+          "example": "Plně modulární, polomodulární (hlavní 24pin pevně) a nemodulární zdroje."
+        },
+        {
+          "type": "term",
+          "term": "Airflow",
+          "definition": "Proudění vzduchu skříní: kudy studený vzduch vstupuje a kudy teplý odchází.",
+          "example": "Předek sání, zadek a strop výfuk."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta energie"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ze zásuvky jde 230 V AC do zdroje.",
+            "Zdroj usměrní a přemění napětí na 12 V, 5 V a 3,3 V DC. Část energie se ztratí jako teplo (účinnost).",
+            "Kabely vedou napětí do desky (24pin), procesoru (EPS 8pin), grafiky a disků.",
+            "Měniče na desce sníží 12 V na asi 1 V pro jádra procesoru.",
+            "Čipy pracují a skoro všechna energie se změní v teplo.",
+            "Chladiče teplo převezmou a ventilátory ho vyfoukají ze skříně."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Účinnost v číslech"
+        },
+        {
+          "type": "text",
+          "text": "Účinnost = výkon dodaný součástkám / výkon odebraný ze sítě. Rozdíl zůstane jako teplo ve zdroji."
+        },
+        {
+          "type": "example",
+          "question": "Počítač odebírá ze zdroje 300 W. Zdroj má účinnost 85 %. Kolik bere ze zásuvky a kolik tepla vznikne ve zdroji?",
+          "answer": "Ze sítě: 300 / 0,85 ≈ **353 W**. Teplo ve zdroji: 353 − 300 ≈ **53 W**."
+        },
+        {
+          "type": "example",
+          "question": "Stejný počítač, ale zdroj s účinností 92 %. Kolik ušetří?",
+          "answer": "Ze sítě: 300 / 0,92 ≈ 326 W. Rozdíl proti 353 W je asi **27 W** méně spotřeby i méně tepla."
+        },
+        {
+          "type": "heading",
+          "text": "Cesta tepla"
+        },
+        {
+          "type": "term",
+          "term": "Teplovodivá pasta",
+          "definition": "Tenká vrstva mezi čipem a chladičem, vytlačí vzduch z mikroskopických nerovností."
+        },
+        {
+          "type": "term",
+          "term": "Heatpipe",
+          "definition": "Měděná trubička s kapalinou, která se u čipu vypaří a v žebrech zkondenzuje – rychle přenáší teplo."
+        },
+        {
+          "type": "term",
+          "term": "TDP",
+          "definition": "Orientační tepelný výkon čipu ve W, podle kterého se volí chladič."
+        },
+        {
+          "type": "term",
+          "term": "Throttling",
+          "definition": "Automatické snížení frekvence přehřátého čipu – ochrana, ale počítač zpomalí."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Chlazení",
+            "Jak",
+            "Kdy"
+          ],
+          "rows": [
+            [
+              "pasivní",
+              "jen žebra, bez ventilátoru",
+              "malý výkon, ticho"
+            ],
+            [
+              "vzduchové aktivní",
+              "chladič + ventilátor",
+              "většina PC"
+            ],
+            [
+              "vodní AiO",
+              "blok, čerpadlo, radiátor",
+              "výkonné procesory, malé skříně"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Projdi krok po kroku, jak teplo putuje skříní. Zkus u každého kroku říct, která součástka ho dělá."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Teplo jde z čipu přes pastu a heatpipe do žeber",
+              "Přední ventilátor nasaje studený vzduch",
+              "Vzduch odebere teplo žebrům chladiče",
+              "Zadní a horní ventilátor vyfoukne teplý vzduch"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Teplý vzduch stoupá vzhůru, proto se výfuk dává dozadu a nahoru, sání dopředu a dolů."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kupuju zdroj přesně na součet spotřeby, třeba 420 W na sestavu se 420 W.",
+          "right": "Zdroj volíme s rezervou asi 30–50 %, tedy kolem 550–650 W.",
+          "why": "Grafika a procesor mají krátké špičky odběru nad průměr. Zdroj na hraně výkonu se přehřívá, hlučí a může počítač vypnout."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Zdroj neotvírej – kondenzátory drží nebezpečné napětí i po odpojení.",
+            "Před zásahem do skříně odpoj síťový kabel.",
+            "Chraň díly před statickou elektřinou (ESD)."
+          ]
+        },
+        {
+          "type": "summary",
+          "text": "Energie jde ze sítě přes zdroj a měniče do čipů a končí jako teplo. Účinnější zdroj šetří energii, rezerva výkonu chrání před výpadky. Teplo odvádí pasta, chladič a průvan skříní: sání vpředu, výfuk vzadu a nahoře."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která napětí dodává počítačový zdroj ATX?",
+      "options": [
+        "12 V, 5 V a 3,3 V stejnosměrné",
+        "230 V střídavé",
+        "jen 1 V pro procesor",
+        "24 V střídavé"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Ze které větve zdroje berou nejvíc energie procesor a grafika?",
+      "options": [
+        "12 V",
+        "5 V",
+        "3,3 V",
+        "−12 V"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Počítač odebírá 400 W, zdroj má účinnost 80 %. Kolik W bere ze zásuvky? Napiš číslo.",
+      "answers": [
+        "500"
+      ],
+      "hints": [
+        "Účinnost = dodaný výkon / odebraný výkon.",
+        "Odebraný výkon = dodaný výkon / 0,8."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Vyšší stupeň certifikace 80 PLUS (např. Gold) znamená vyšší účinnost zdroje.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Zdroj je bezpečné otevřít hned po vytažení ze zásuvky.",
+      "answer": false,
+      "explanation": "Kondenzátory ve zdroji mohou držet nebezpečné napětí i po odpojení. Zdroj se neotevírá."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží teplovodivá pasta?",
+      "options": [
+        "vyplní nerovnosti mezi čipem a chladičem, kde by byl vzduch",
+        "přilepí chladič k desce",
+        "izoluje procesor elektricky od chladiče a tím ho chladí",
+        "maže ložiska ventilátoru"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je throttling?",
+      "options": [
+        "přehřátý čip sám sníží frekvenci",
+        "ventilátor se zastaví",
+        "zdroj zvýší napětí",
+        "procesor se přetaktuje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "TDP",
+          "teplo, které má chladič odvádět"
+        ],
+        [
+          "heatpipe",
+          "trubička s kapalinou přenášející teplo"
+        ],
+        [
+          "AiO",
+          "uzavřené vodní chlazení"
+        ],
+        [
+          "modulární zdroj",
+          "odpojitelné kabely"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu energie od zásuvky k teplu.",
+      "items": [
+        "zásuvka 230 V AC",
+        "zdroj (12 V DC)",
+        "měniče na desce",
+        "jádra procesoru",
+        "chladič a ventilátor"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak má být nastavený airflow v běžné skříni?",
+      "options": [
+        "sání vpředu, výfuk vzadu a nahoře",
+        "sání nahoře, výfuk vpředu",
+        "všechny ventilátory foukají dovnitř a nikde nic nevychází",
+        "ventilátory nejsou potřeba"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Sestava má odhadovanou spotřebu 400 W. Při rezervě 50 % – jaký výkon zdroje ve W vyjde? Napiš číslo.",
+      "answers": [
+        "600"
+      ],
+      "hints": [
+        "Rezerva 50 % znamená vynásobit 1,5."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Čím víc teplovodivé pasty, tím lepší chlazení.",
+      "answer": false,
+      "explanation": "Pasta má jen vyplnit nerovnosti. Silná vrstva vede teplo hůř než kontakt kovu."
+    },
+    {
+      "type": "open",
+      "question": "Jak vybereš výkon a kvalitu zdroje pro nový počítač?",
+      "answer": "Sečtu spotřebu hlavních dílů, hlavně procesoru a grafiky, a přidám rezervu asi 30–50 % na špičky. Vyberu kvalitní zdroj s certifikací 80 PLUS (vyšší stupeň = vyšší účinnost) a potřebnými konektory, případně modulární."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se teplo dostane z procesoru ven ze skříně.",
+      "answer": "Teplo přejde z čipu přes teplovodivou pastu do patky chladiče, heatpipe ho přenesou do žeber, ventilátor ho předá vzduchu. Vzduch nasátý vpředu pak odchází výfukovými ventilátory vzadu a nahoře."
+    }
+  ]
+}

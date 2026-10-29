@@ -1,0 +1,456 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pameti",
+  "title": "Operační paměť a typy pamětí",
+  "emoji": "🧮",
+  "explanations": [
+    {
+      "title": "Stůl, police, sklad",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když děláš úkol, máš na stole jen pár sešitů. Další knihy jsou v polici a staré ročníky ve sklepě. Co je blízko, je hned po ruce, ale vejde se toho málo. Počítač s pamětmi zachází úplně stejně."
+        },
+        {
+          "type": "text",
+          "text": "Pochopíš, proč má počítač několik druhů paměti, proč po vypnutí zmizí neuložená práce a jak vybrat správné moduly RAM."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Paměť",
+          "definition": "Součástka, která uchovává data, tedy čísla zapsaná v bitech (nulách a jedničkách).",
+          "example": "Paměť RAM, disk SSD, flash disk."
+        },
+        {
+          "type": "term",
+          "term": "Volatilní paměť",
+          "definition": "Paměť, která po odpojení napájení **ztratí obsah**.",
+          "example": "Operační paměť RAM: po výpadku proudu zmizí neuložený dokument."
+        },
+        {
+          "type": "term",
+          "term": "Nevolatilní paměť",
+          "definition": "Paměť, která obsah **udrží i bez napájení**.",
+          "example": "SSD, pevný disk, flash disk, paměť s firmwarem desky."
+        },
+        {
+          "type": "heading",
+          "text": "Od stolu po sklad"
+        },
+        {
+          "type": "text",
+          "text": "Každé „místo“ má jinou rychlost, velikost a cenu za kus. Čím blíž procesoru, tím rychlejší, menší a dražší za bajt."
+        },
+        {
+          "type": "term",
+          "term": "Registry",
+          "definition": "Pár malých míst přímo v jádře procesoru. Nejrychlejší paměť vůbec.",
+          "example": "Ruka, ve které držíš tužku."
+        },
+        {
+          "type": "term",
+          "term": "Cache",
+          "definition": "Malá velmi rychlá paměť v procesoru, která drží data, jež se brzy budou potřebovat.",
+          "example": "Pracovní stůl."
+        },
+        {
+          "type": "term",
+          "term": "Operační paměť (RAM)",
+          "definition": "Paměť, ve které jsou spuštěné programy a jejich data. Volatilní. Má gigabajty.",
+          "example": "Police vedle stolu: běžný počítač 8–32 GB."
+        },
+        {
+          "type": "term",
+          "term": "Úložiště (disk)",
+          "definition": "Nevolatilní paměť pro trvalé uložení systému, programů a souborů. Stokrát až tisíckrát pomalejší než RAM, ale mnohem větší a levnější za GB.",
+          "example": "Sklad: SSD 1 TB."
+        },
+        {
+          "type": "picture",
+          "items": [
+            "✋",
+            "🗂️",
+            "📚",
+            "🏚️"
+          ],
+          "caption": "Registry → cache → RAM → disk: čím dál větší a pomalejší"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď paměti podle toho, jestli si data pamatují i po vypnutí."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "volatilní",
+              "nevolatilní"
+            ],
+            "items": [
+              {
+                "text": "RAM",
+                "group": 0
+              },
+              {
+                "text": "cache procesoru",
+                "group": 0
+              },
+              {
+                "text": "registry",
+                "group": 0
+              },
+              {
+                "text": "SSD",
+                "group": 1
+              },
+              {
+                "text": "pevný disk HDD",
+                "group": 1
+              },
+              {
+                "text": "flash disk",
+                "group": 1
+              },
+              {
+                "text": "paměť s firmwarem UEFI",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Moduly RAM"
+        },
+        {
+          "type": "text",
+          "text": "RAM se do počítače vkládá jako **modul**: destička s čipy, která se zasune do slotu na základní desce. Stolní PC používají delší moduly **DIMM**, notebooky kratší **SO-DIMM**."
+        },
+        {
+          "type": "term",
+          "term": "DDR4, DDR5",
+          "definition": "Generace operační paměti. Novější je rychlejší. Mají **jiné umístění zářezu** a jiné napětí, takže modul DDR5 do slotu DDR4 nepasuje a naopak.",
+          "example": "Deska pro DDR5 přijme jen moduly DDR5."
+        },
+        {
+          "type": "example",
+          "question": "Kamarád koupil modul DDR5 SO-DIMM do stolního PC se sloty DDR4 DIMM. Půjde to?",
+          "answer": "Ne, dvakrát špatně. **SO-DIMM** je pro notebooky (kratší), stolní deska má sloty DIMM. A **DDR5** nepasuje do slotu DDR4 – zářez je jinde. Potřebuje DDR4 DIMM."
+        },
+        {
+          "type": "example",
+          "question": "Počítač má 8 GB RAM. Otevřeš 40 záložek a hru a počítač začne zpomalovat a disk pořád pracuje. Proč?",
+          "answer": "RAM je plná. Systém část dat odkládá na disk (stránkovací soubor). Disk je mnohem pomalejší než RAM, takže se čeká. Pomůže **víc RAM** nebo zavřít programy."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Paměť a disk jsou totéž – „mám 512 GB paměti“.",
+          "right": "512 GB je úložiště (disk). Operační paměť RAM mívá 8–32 GB.",
+          "why": "RAM je rychlá a po vypnutí se vymaže, drží jen to, co právě běží. Disk je pomalejší, ale trvalý."
+        },
+        {
+          "type": "summary",
+          "text": "Hierarchie pamětí: registry → cache → RAM → disk; směrem dolů roste kapacita a klesá rychlost i cena za GB. RAM je volatilní, disk a flash nevolatilní. Moduly DIMM (PC) a SO-DIMM (notebook), DDR4 a DDR5 nejsou vzájemně zaměnitelné."
+        }
+      ]
+    },
+    {
+      "title": "Parametry a výpočty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Při upgradu nebo stavbě PC musíš vybrat správný typ, kapacitu a rychlost RAM a vědět, jak je osadit. K tomu potřebuješ číst parametry a umět spočítat propustnost."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "RAM (Random Access Memory)",
+          "definition": "Paměť s **přímým přístupem**: na kterékoli místo se dostaneš stejně rychle podle adresy. Jako operační paměť počítače.",
+          "example": "Modul 16 GB DDR5."
+        },
+        {
+          "type": "term",
+          "term": "Volatilní / nevolatilní",
+          "definition": "Volatilní paměť ztratí obsah bez napájení, nevolatilní ho udrží.",
+          "example": "RAM volatilní, flash nevolatilní."
+        },
+        {
+          "type": "term",
+          "term": "DRAM",
+          "definition": "Dynamická RAM. Bit je uložený jako náboj v malém kondenzátoru, který se vybíjí, proto se musí stále **obnovovat** (refresh). Levná a hustá.",
+          "example": "Moduly operační paměti."
+        },
+        {
+          "type": "term",
+          "term": "SRAM",
+          "definition": "Statická RAM. Bit drží klopný obvod z několika tranzistorů, obnovu nepotřebuje. Rychlejší, ale dražší a zabere víc místa.",
+          "example": "Cache v procesoru."
+        },
+        {
+          "type": "term",
+          "term": "ROM a flash",
+          "definition": "Nevolatilní paměti. **ROM** se původně jen četla. Dnes se místo ní používá přepisovatelná **flash**, ve které je třeba **firmware** – základní software zařízení.",
+          "example": "Firmware UEFI základní desky je ve flash čipu a dá se aktualizovat."
+        },
+        {
+          "type": "term",
+          "term": "MT/s (megatransfery za sekundu)",
+          "definition": "Kolik milionů přenosů dat za sekundu modul zvládne. Číslo v názvu DDR4-3200 znamená 3 200 MT/s.",
+          "example": "DDR5-5600 = 5 600 MT/s."
+        },
+        {
+          "type": "term",
+          "term": "Dvoukanálový režim (dual channel)",
+          "definition": "Deska komunikuje se dvěma moduly současně po dvou kanálech, takže propustnost se teoreticky zdvojnásobí.",
+          "example": "Dva moduly 8 GB místo jednoho 16 GB, ve slotech podle manuálu desky (často označené A2 a B2)."
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání typů paměti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paměť",
+            "Volatilní",
+            "Kde",
+            "Rychlost"
+          ],
+          "rows": [
+            [
+              "SRAM",
+              "ano",
+              "cache procesoru",
+              "velmi vysoká"
+            ],
+            [
+              "DRAM",
+              "ano",
+              "operační paměť",
+              "vysoká"
+            ],
+            [
+              "flash",
+              "ne",
+              "SSD, firmware, flash disk",
+              "nižší"
+            ],
+            [
+              "magnetický disk",
+              "ne",
+              "HDD",
+              "nejnižší"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet propustnosti"
+        },
+        {
+          "type": "text",
+          "text": "Jeden kanál DDR4 i DDR5 přenese při jednom přenosu **64 bitů = 8 bajtů** (DDR5 to dělí na dva podkanály po 32 bitech, celkem je to stejné). Propustnost tedy spočítáš takto:"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti rychlost v MT/s z označení modulu.",
+            "Vynásob ji 8 bajty na přenos – dostaneš MB/s.",
+            "Vyděl 1 000 – dostaneš GB/s na jeden kanál.",
+            "Ve dvoukanálovém režimu vynásob dvěma."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jakou teoretickou propustnost má jeden kanál DDR4-3200?",
+          "answer": "3 200 MT/s · 8 B = 25 600 MB/s = **25,6 GB/s**. Proto se modul označuje i PC4-25600."
+        },
+        {
+          "type": "example",
+          "question": "Dva moduly DDR5-4800 v dvoukanálovém režimu. Jaká je teoretická propustnost?",
+          "answer": "Jeden kanál: 4 800 · 8 B = 38 400 MB/s = 38,4 GB/s. Dva kanály: 2 · 38,4 = **76,8 GB/s**."
+        },
+        {
+          "type": "heading",
+          "text": "Postup při výběru RAM"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti typ podporovaný deskou: DDR4, nebo DDR5.",
+            "Zjisti tvar: DIMM (stolní PC), nebo SO-DIMM (notebook).",
+            "Zvol kapacitu podle použití (např. 16 GB běžně, 32 GB pro střih videa).",
+            "Kupuj dva stejné moduly kvůli dvoukanálovému režimu.",
+            "Ověř maximální kapacitu a rychlost podle manuálu desky."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Jeden modul 16 GB je stejně dobrý jako dva moduly po 8 GB.",
+          "right": "Dva moduly ve dvou kanálech mají dvojnásobnou teoretickou propustnost.",
+          "why": "Jeden modul obsadí jen jeden kanál. Kapacita je stejná, ale procesor, a hlavně integrovaná grafika, dostává data pomaleji."
+        },
+        {
+          "type": "summary",
+          "text": "DRAM (operační paměť) se musí obnovovat, SRAM (cache) ne. Flash je nevolatilní a drží firmware. Propustnost kanálu = MT/s · 8 B, u DDR4-3200 je to 25,6 GB/s; dva kanály ji zdvojnásobí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Teoretická propustnost jednoho kanálu DDR4-3200 v GB/s =",
+      "answers": [
+        "25,6",
+        "25.6"
+      ],
+      "hints": [
+        "Jeden přenos má 64 bitů. Kolik je to bajtů?",
+        "Vynásob počet přenosů za sekundu počtem bajtů a převeď na GB/s."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Propustnost dvou kanálů DDR5-4800 v GB/s =",
+      "answers": [
+        "76,8",
+        "76.8"
+      ],
+      "hints": [
+        "Nejdřív spočítej jeden kanál: MT/s · 8 B.",
+        "Pak započítej oba kanály."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Operační paměť RAM je volatilní: po odpojení napájení ztratí obsah.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď paměti od nejrychlejší po nejpomalejší.",
+      "items": [
+        "registry",
+        "cache",
+        "RAM",
+        "SSD",
+        "HDD"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ze které paměti je vyrobená cache procesoru?",
+      "options": [
+        "SRAM",
+        "DRAM",
+        "flash",
+        "HDD"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hledej paměť, která nepotřebuje obnovu náboje."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký modul RAM se používá v noteboocích?",
+      "options": [
+        "SO-DIMM",
+        "DIMM",
+        "M.2",
+        "SATA"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Modul DDR5 lze zasunout do slotu pro DDR4.",
+      "answer": false,
+      "explanation": "Zářez je jinde a liší se i napětí."
+    },
+    {
+      "type": "match",
+      "question": "Spoj paměť s typickým použitím.",
+      "pairs": [
+        [
+          "SRAM",
+          "cache procesoru"
+        ],
+        [
+          "DRAM",
+          "operační paměť"
+        ],
+        [
+          "flash",
+          "SSD a firmware"
+        ],
+        [
+          "registr",
+          "číslo, se kterým jádro právě počítá"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se DRAM musí neustále obnovovat?",
+      "options": [
+        "náboj v kondenzátorech se postupně vybíjí",
+        "aby se nepřehřála",
+        "protože je nevolatilní",
+        "aby se zvýšila kapacita"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů přenese kanál DDR4 při jednom přenosu?",
+      "answers": [
+        "8"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak osadit 16 GB RAM pro nejlepší výkon v desce se dvěma kanály?",
+      "options": [
+        "2 × 8 GB ve slotech různých kanálů",
+        "1 × 16 GB",
+        "2 × 8 GB ve slotech stejného kanálu",
+        "je to jedno"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Firmware UEFI je uložený v nevolatilní paměti flash na základní desce.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Popiš hierarchii pamětí a proč existuje.",
+      "answer": "Registry, cache, operační paměť a disk. Směrem dolů roste kapacita a klesá rychlost i cena za GB. Rychlá paměť je drahá, proto jí je málo a drží jen právě potřebná data blízko procesoru."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi DRAM a SRAM?",
+      "answer": "DRAM ukládá bit jako náboj v kondenzátoru, musí se obnovovat, je levná a hustá – používá se jako operační paměť. SRAM drží bit v klopném obvodu z tranzistorů, nepotřebuje obnovu, je rychlejší a dražší – používá se jako cache."
+    }
+  ]
+}

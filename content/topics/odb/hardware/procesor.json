@@ -1,0 +1,451 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "procesor",
+  "title": "Procesor",
+  "emoji": "🧠",
+  "explanations": [
+    {
+      "title": "Kuchaři v kuchyni",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Při výběru notebooku čteš: „8 jader, 16 vláken, až 4,8 GHz, 24 MB cache“. Co to znamená a podle čeho poznáš, který procesor je rychlejší?"
+        },
+        {
+          "type": "text",
+          "text": "Procesor (CPU) je část počítače, která provádí instrukce programů. Jeho parametry rozhodují, jak rychle počítač zvládne hry, střih videa nebo překlad programu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Instrukce",
+          "definition": "Jeden jednoduchý příkaz pro procesor: sečti, porovnej, načti z paměti.",
+          "example": "Program je řada milionů instrukcí."
+        },
+        {
+          "type": "term",
+          "term": "Jádro",
+          "definition": "Samostatná výpočetní jednotka uvnitř procesoru. Umí sama provádět program. Víc jader = víc věcí současně.",
+          "example": "Osmijádrový procesor je jako kuchyně s osmi kuchaři."
+        },
+        {
+          "type": "term",
+          "term": "Vlákno",
+          "definition": "Jeden proud instrukcí, který operační systém přidělí jádru ke zpracování.",
+          "example": "Prohlížeč má zvlášť vlákno pro načítání stránky a pro přehrávání videa."
+        },
+        {
+          "type": "term",
+          "term": "SMT (u Intelu Hyper-Threading)",
+          "definition": "Technika, kdy jedno jádro zpracovává **dvě vlákna**. Když jedno čeká na data, jádro mezitím pracuje na druhém. Nezdvojnásobí výkon, jen lépe využije jádro.",
+          "example": "8 jader / 16 vláken = 8 kuchařů, z nichž každý vaří dvě jídla střídavě."
+        },
+        {
+          "type": "term",
+          "term": "Takt (frekvence)",
+          "definition": "Kolik pracovních kroků (taktů) procesor udělá za sekundu. Jednotka hertz; 1 GHz = 1 miliarda taktů za sekundu.",
+          "example": "4 GHz = 4 miliardy taktů za sekundu."
+        },
+        {
+          "type": "heading",
+          "text": "Kuchaři a tempo"
+        },
+        {
+          "type": "text",
+          "text": "Představ si kuchyni. **Počet jader** je počet kuchařů. **Takt** je, jak rychle kuchař dělá jednotlivé pohyby. Ale důležité je i to, **kolik práce stihne jedním pohybem** – zkušený kuchař nakrájí dvě cibule naráz."
+        },
+        {
+          "type": "term",
+          "term": "IPC (instructions per cycle)",
+          "definition": "Kolik instrukcí procesor průměrně dokončí za jeden takt. Záleží na tom, jak chytře je jádro navržené.",
+          "example": "Novější generace mívá vyšší IPC: při stejném taktu je rychlejší."
+        },
+        {
+          "type": "text",
+          "text": "Zjednodušeně platí: **výkon jednoho jádra ≈ takt × IPC**. Proto 3,5GHz procesor nové generace může být rychlejší než 4GHz procesor starý deset let."
+        },
+        {
+          "type": "example",
+          "question": "Procesor A: 4 GHz, IPC 2. Procesor B: 3 GHz, IPC 3. Který je na jednom jádře rychlejší? (čísla jsou jen příklad)",
+          "answer": "A: 4 · 2 = 8 miliard instrukcí za sekundu. B: 3 · 3 = 9 miliard. Rychlejší je **B**, i když má nižší takt."
+        },
+        {
+          "type": "heading",
+          "text": "Lednička u plotny"
+        },
+        {
+          "type": "text",
+          "text": "Pro suroviny do spíže (operační paměti) se chodí daleko. Proto má každý kuchař u sebe malou ledničku a kuchyně společnou chladnici."
+        },
+        {
+          "type": "term",
+          "term": "Cache (vyrovnávací paměť)",
+          "definition": "Malá, velmi rychlá paměť přímo v procesoru. Drží data a instrukce, které se právě nebo brzy budou potřebovat, aby se nemuselo čekat na operační paměť.",
+          "example": "**L1** – nejmenší a nejrychlejší, v každém jádře. **L2** – větší, obvykle také pro každé jádro. **L3** – největší a nejpomalejší z nich, společná pro jádra."
+        },
+        {
+          "type": "term",
+          "term": "Registr",
+          "definition": "Nejmenší a nejrychlejší paměťové místo přímo v jádře. Drží čísla, se kterými se právě počítá.",
+          "example": "Kuchařova prkénka – co je na nich, s tím právě pracuje."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "jádro",
+                "back": "kuchař – samostatně provádí program"
+              },
+              {
+                "front": "vlákno",
+                "back": "jedno jídlo, které kuchař právě vaří"
+              },
+              {
+                "front": "takt",
+                "back": "jak rychle kuchař dělá jednotlivé pohyby"
+              },
+              {
+                "front": "IPC",
+                "back": "kolik práce stihne jedním pohybem"
+              },
+              {
+                "front": "cache L1/L2/L3",
+                "back": "ledničky u kuchaře a společná chladnice"
+              },
+              {
+                "front": "registr",
+                "back": "prkénko, na kterém se právě krájí"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ke každé si zkus říct skutečný význam, ne jen přirovnání."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vyšší takt v GHz znamená vždy rychlejší procesor.",
+          "right": "Výkon závisí na taktu, IPC, počtu jader a cache.",
+          "why": "Takt říká jen, kolik taktů je za sekundu, ne kolik se v nich udělá práce. Porovnávat takt má smysl jen u procesorů stejné generace."
+        },
+        {
+          "type": "summary",
+          "text": "Procesor má jádra (kuchaři), která zpracovávají vlákna. Výkon jádra ≈ takt × IPC. Cache L1, L2, L3 a registry drží data blízko jádra, aby se nečekalo na operační paměť."
+        }
+      ]
+    },
+    {
+      "title": "Parametry v tabulce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve specifikaci procesoru najdeš desítky údajů. Technik musí umět každý přečíst a vědět, co znamená pro výkon, spotřebu a kompatibilitu se základní deskou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Procesor (CPU)",
+          "definition": "Čip, který provádí instrukce programů. Obsahuje jádra, cache a další jednotky.",
+          "example": "AMD Ryzen 7, Intel Core i5, Apple M3."
+        },
+        {
+          "type": "term",
+          "term": "Takt a perioda",
+          "definition": "Takt (frekvence f) je počet taktů za sekundu v hertzích. Perioda T je doba jednoho taktu: `T = 1 / f`.",
+          "example": "f = 1 GHz → T = 1 ns (nanosekunda, miliardtina sekundy)."
+        },
+        {
+          "type": "term",
+          "term": "Jádro a vlákno",
+          "definition": "Jádro je samostatná výpočetní jednotka. Vlákno je proud instrukcí. Díky **SMT** (Hyper-Threading) zpracuje jedno jádro dvě vlákna.",
+          "example": "6 jader / 12 vláken."
+        },
+        {
+          "type": "term",
+          "term": "Instrukční sada (ISA)",
+          "definition": "Seznam instrukcí, kterým procesor rozumí. Program přeložený pro jednu sadu na jiné bez překladu nebo emulace nepoběží.",
+          "example": "**x86-64** (Intel, AMD – běžná PC), **ARM** (mobily, Apple M, mnoho tabletů)."
+        },
+        {
+          "type": "term",
+          "term": "CISC a RISC",
+          "definition": "Dva přístupy k instrukční sadě. **CISC**: mnoho složitějších instrukcí různé délky (x86). **RISC**: méně jednodušších instrukcí stejné délky (ARM).",
+          "example": "Moderní x86 procesory si složité instrukce uvnitř rozkládají na jednodušší, takže rozdíl se stírá."
+        },
+        {
+          "type": "term",
+          "term": "TDP",
+          "definition": "Tepelný výkon ve wattech, který musí chladič procesoru odvádět při běžné plné zátěži. Slouží k výběru chladiče; skutečná spotřeba může být krátkodobě vyšší.",
+          "example": "Notebookový procesor 15 W, výkonný stolní 125 W."
+        },
+        {
+          "type": "term",
+          "term": "Patice (socket)",
+          "definition": "Konektor na základní desce, do kterého se procesor vkládá. Procesor musí mít stejnou patici jako deska.",
+          "example": "AMD AM5, Intel LGA 1700."
+        },
+        {
+          "type": "term",
+          "term": "Integrovaná grafika (iGPU)",
+          "definition": "Grafický čip přímo v procesoru. Zvládne kancelář a video, pro náročné hry se přidává samostatná grafická karta.",
+          "example": "Počítač s iGPU připojíš na monitor konektorem na základní desce."
+        },
+        {
+          "type": "heading",
+          "text": "Jak číst specifikaci"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Údaj",
+            "Příklad",
+            "Co znamená"
+          ],
+          "rows": [
+            [
+              "jádra / vlákna",
+              "8 / 16",
+              "kolik věcí zvládne současně"
+            ],
+            [
+              "základní / max. takt",
+              "3,8 / 5,0 GHz",
+              "běžný takt a krátkodobé zrychlení"
+            ],
+            [
+              "cache L2 + L3",
+              "8 MB + 32 MB",
+              "rychlá paměť v čipu"
+            ],
+            [
+              "TDP",
+              "105 W",
+              "jak výkonný chladič potřebuje"
+            ],
+            [
+              "patice",
+              "AM5",
+              "se kterou deskou je kompatibilní"
+            ],
+            [
+              "výrobní proces",
+              "5 nm",
+              "označení technologie výroby"
+            ],
+            [
+              "iGPU",
+              "ano / ne",
+              "jestli jde bez grafické karty"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Výrobní proces (např. „5 nm“) je dnes spíš obchodní označení generace výroby než skutečný rozměr. Platí ale, že novější proces dovolí na čip vměstnat víc **tranzistorů** (miniaturních elektronických spínačů) a spotřebovat méně energie. Moderní procesory jich mají miliardy."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet periody taktu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Převeď takt na hertze: 1 GHz = 10⁹ Hz.",
+            "Dosaď do `T = 1 / f`.",
+            "Výsledek převeď na nanosekundy: 1 ns = 10⁻⁹ s."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jak dlouho trvá jeden takt procesoru s frekvencí 2 GHz?",
+          "answer": "f = 2 · 10⁹ Hz. T = 1 / (2 · 10⁹) s = 0,5 · 10⁻⁹ s = **0,5 ns**."
+        },
+        {
+          "type": "example",
+          "question": "Jak dlouho trvá jeden takt při 4 GHz?",
+          "answer": "T = 1 / (4 · 10⁹) s = 0,25 · 10⁻⁹ s = **0,25 ns**. Dvojnásobný takt = poloviční doba taktu."
+        },
+        {
+          "type": "heading",
+          "text": "Hierarchie uvnitř procesoru"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**registry** – desítky až stovky malých míst v jádře, nejrychlejší",
+            "**cache L1** – desítky kB na jádro, oddělená pro instrukce a data",
+            "**cache L2** – stovky kB až jednotky MB na jádro",
+            "**cache L3** – jednotky až desítky MB, společná pro jádra",
+            "pak teprve **operační paměť** mimo procesor – mnohem pomalejší"
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Procesor s 8 jádry a 16 vlákny má výkon jako 16jádrový.",
+          "right": "Je to 8 jader; SMT jim jen pomáhá lépe se využít.",
+          "why": "Dvě vlákna jednoho jádra sdílejí jeho výpočetní jednotky. Zrychlení bývá výrazně menší než dvojnásobné."
+        },
+        {
+          "type": "summary",
+          "text": "Procesor popisují jádra/vlákna, takt (perioda T = 1/f), IPC, cache L1–L3, instrukční sada (x86-64 CISC, ARM RISC), TDP, patice a iGPU. Kompatibilitu s deskou určuje patice."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Perioda taktu procesoru s frekvencí 2 GHz v nanosekundách =",
+      "answers": [
+        "0,5",
+        "0.5"
+      ],
+      "hints": [
+        "Použij T = 1 / f.",
+        "1 GHz odpovídá periodě 1 ns."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Perioda taktu při 4 GHz v nanosekundách =",
+      "answers": [
+        "0,25",
+        "0.25"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Vyšší takt vždy znamená vyšší výkon, i u procesorů různých generací.",
+      "answer": false,
+      "explanation": "Záleží i na IPC, počtu jader a cache."
+    },
+    {
+      "type": "choice",
+      "question": "Která cache je obvykle největší a sdílená všemi jádry?",
+      "options": [
+        "L3",
+        "L1",
+        "L2",
+        "registr"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejrychlejší po nejpomalejší.",
+      "items": [
+        "registry",
+        "cache L1",
+        "cache L2",
+        "cache L3",
+        "operační paměť"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "jádro",
+          "samostatná výpočetní jednotka"
+        ],
+        [
+          "SMT",
+          "dvě vlákna na jedno jádro"
+        ],
+        [
+          "TDP",
+          "teplo, které musí odvést chladič"
+        ],
+        [
+          "patice",
+          "konektor procesoru na desce"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou instrukční sadu používají běžné procesory Intel a AMD v PC?",
+      "options": [
+        "x86-64",
+        "ARM",
+        "RISC-V",
+        "MIPS"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který přístup používá méně jednodušších instrukcí stejné délky?",
+      "options": [
+        "RISC",
+        "CISC"
+      ],
+      "answer": 0,
+      "hints": [
+        "R v názvu znamená „Reduced“ – zredukovaná."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Procesor s paticí AM5 se vejde do desky s paticí LGA 1700.",
+      "answer": false
+    },
+    {
+      "type": "input",
+      "question": "Procesor má 6 jader a každé díky SMT zpracuje 2 vlákna. Kolik vláken má celkem?",
+      "answers": [
+        "12"
+      ],
+      "hints": [
+        "Vynásob počet jader počtem vláken na jádro."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží integrovaná grafika (iGPU)?",
+      "options": [
+        "umožní zobrazit obraz bez samostatné grafické karty",
+        "zrychlí operační paměť",
+        "nahradí chladič",
+        "zvětší cache L3"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou nazývá počet instrukcí dokončených za jeden takt?",
+      "answers": [
+        "IPC"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč nelze výkon procesorů porovnávat jen podle taktu?",
+      "answer": "Takt říká jen, kolik taktů proběhne za sekundu. Výkon jádra je zhruba takt krát IPC a novější architektury stihnou za takt víc instrukcí. Záleží i na počtu jader a velikosti cache."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, k čemu je v procesoru cache a jaké má úrovně.",
+      "answer": "Cache je malá rychlá paměť v procesoru, která drží právě potřebná data a instrukce, aby jádro nečekalo na pomalejší operační paměť. L1 je nejmenší a nejrychlejší v každém jádře, L2 větší, L3 největší a společná pro jádra."
+    }
+  ]
+}

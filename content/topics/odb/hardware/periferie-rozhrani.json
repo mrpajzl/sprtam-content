@@ -1,0 +1,546 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "periferie-rozhrani",
+  "title": "Periferie a rozhraní",
+  "emoji": "🔌",
+  "explanations": [
+    {
+      "title": "Co kam zapojit",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klávesnice, myš, monitor, tiskárna, sluchátka. Bez nich by byl počítač jen krabice, se kterou se nedá domluvit. Každé z nich se připojuje jiným konektorem a jinou rychlostí."
+        },
+        {
+          "type": "text",
+          "text": "Když víš, co který port umí, nekoupíš kabel, který nepřenese obraz, ani disk, který poběží pomalu ve špatném portu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Periferie",
+          "definition": "Zařízení mimo samotnou skříň (procesor, desku, paměť), které se k počítači připojuje.",
+          "example": "Myš, monitor, tiskárna, webkamera."
+        },
+        {
+          "type": "term",
+          "term": "Vstupní a výstupní zařízení",
+          "definition": "Vstupní posílá data do počítače, výstupní je z počítače přijímá a ukazuje. Některá umí obojí.",
+          "example": "Vstup: klávesnice, mikrofon. Výstup: monitor, reproduktor. Obojí: dotykový displej, externí disk."
+        },
+        {
+          "type": "term",
+          "term": "Rozhraní",
+          "definition": "Dohoda o konektoru, kabelu, napětí a způsobu přenosu dat mezi počítačem a zařízením.",
+          "example": "USB, HDMI, Bluetooth."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď zařízení podle směru dat."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vstupní",
+              "výstupní",
+              "vstupní i výstupní"
+            ],
+            "items": [
+              {
+                "text": "klávesnice",
+                "group": 0
+              },
+              {
+                "text": "skener",
+                "group": 0
+              },
+              {
+                "text": "mikrofon",
+                "group": 0
+              },
+              {
+                "text": "monitor",
+                "group": 1
+              },
+              {
+                "text": "tiskárna",
+                "group": 1
+              },
+              {
+                "text": "reproduktory",
+                "group": 1
+              },
+              {
+                "text": "dotykový displej",
+                "group": 2
+              },
+              {
+                "text": "headset s mikrofonem",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "USB: univerzální sběrnice"
+        },
+        {
+          "type": "term",
+          "term": "USB",
+          "definition": "Universal Serial Bus – sériové rozhraní pro skoro všechny periferie. Přenáší data i napájení.",
+          "example": "Flash disk, myš, nabíjení mobilu."
+        },
+        {
+          "type": "term",
+          "term": "USB-C",
+          "definition": "Tvar konektoru – oboustranný, malý. Neříká nic o rychlosti: za USB-C může být USB 2.0 i USB4.",
+          "example": "Notebook má dva porty USB-C, ale jen jeden umí obraz."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Verze",
+            "Rychlost"
+          ],
+          "rows": [
+            [
+              "USB 2.0",
+              "480 Mb/s"
+            ],
+            [
+              "USB 3.2 Gen 1 (dříve USB 3.0)",
+              "5 Gb/s"
+            ],
+            [
+              "USB 3.2 Gen 2",
+              "10 Gb/s"
+            ],
+            [
+              "USB 3.2 Gen 2x2",
+              "20 Gb/s"
+            ],
+            [
+              "USB4",
+              "až 40 Gb/s (USB4 v2 až 80 Gb/s)"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Thunderbolt",
+          "definition": "Rozhraní firem Intel a Apple s konektorem USB-C. Thunderbolt 3 a 4 mají 40 Gb/s a přenášejí data, obraz i napájení jedním kabelem.",
+          "example": "Dokovací stanice k notebooku s jedním kabelem."
+        },
+        {
+          "type": "example",
+          "question": "Film má 4 GB. Jak dlouho se teoreticky kopíruje přes USB 2.0 a přes USB 3.2 Gen 1?",
+          "answer": "4 GB = 4 · 8 = 32 Gb. USB 2.0: 32 / 0,48 ≈ **67 s**. USB 3.2 Gen 1: 32 / 5 ≈ **6,4 s**. Ve skutečnosti je to pomalejší kvůli režii a rychlosti samotného disku."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Konektor je USB-C, takže je to rychlé USB a půjde přes něj i monitor.",
+          "right": "USB-C je jen tvar. Rychlost a podpora obrazu záleží na tom, co port podporuje – zjistíš to ze specifikace nebo podle symbolů u portu.",
+          "why": "Výrobci dávají USB-C i na pomalé porty USB 2.0 a ne každý port umí obraz (DisplayPort Alt Mode)."
+        },
+        {
+          "type": "heading",
+          "text": "Obraz a zvuk"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**VGA** – starý **analogový** výstup (modrý konektor, 15 pinů); obraz se kvalitou zhoršuje při vysokém rozlišení.",
+            "**DVI** – digitální (varianta DVI-I i analog), dnes ustupuje.",
+            "**HDMI** – digitální obraz i zvuk, televize, monitory, konzole.",
+            "**DisplayPort** – digitální obraz i zvuk, hlavně počítačové monitory; umí řetězit více monitorů.",
+            "**Jack 3,5 mm** – analogový zvuk pro sluchátka a mikrofon."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Monitory a tiskárny"
+        },
+        {
+          "type": "term",
+          "term": "Rozlišení a obnovovací frekvence",
+          "definition": "Rozlišení = počet obrazových bodů (pixelů) na šířku × výšku. Obnovovací frekvence = kolikrát za sekundu se obraz překreslí, v hertzích (Hz).",
+          "example": "1920 × 1080 (Full HD) při 144 Hz."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Panel",
+            "Silné stránky",
+            "Slabiny"
+          ],
+          "rows": [
+            [
+              "TN",
+              "rychlá odezva, levný",
+              "horší barvy a pozorovací úhly"
+            ],
+            [
+              "IPS",
+              "věrné barvy, široké úhly",
+              "slabší kontrast černé"
+            ],
+            [
+              "VA",
+              "vysoký kontrast",
+              "pomalejší přechody v tmavých scénách"
+            ],
+            [
+              "OLED",
+              "dokonalá černá, rychlost",
+              "cena, riziko vypálení statického obrazu"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Laserová tiskárna** nanáší práškový toner, který se zapeče teplem – rychlá a levná na stránku, hodí se do kanceláře. **Inkoustová** stříká kapky inkoustu – dobrá na barevné fotky, inkoust ale může zaschnout."
+        },
+        {
+          "type": "text",
+          "text": "**Bluetooth** je bezdrátové rozhraní na krátkou vzdálenost (typicky jednotky až desítky metrů) pro sluchátka, myši a klávesnice. Zařízení se nejdřív musí **spárovat**."
+        },
+        {
+          "type": "summary",
+          "text": "Periferie jsou vstupní, výstupní, nebo obojí. USB-C je tvar, ne rychlost: USB 2.0 má 480 Mb/s, USB4 až 40 Gb/s. Obraz nese HDMI a DisplayPort, staré VGA je analogové. Monitor posuzuj podle rozlišení, frekvence a typu panelu."
+        }
+      ]
+    },
+    {
+      "title": "Bity za sekundu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na krabici externího disku stojí „USB 10 Gb/s“, u monitoru „4K 144 Hz“. Čísla dávají smysl, až když víš, co znamenají a jak je spolu porovnat. Projdeme to výpočty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Periferie",
+          "definition": "Zařízení připojené k počítači zvenčí – vstupní (klávesnice), výstupní (monitor) nebo obojí (dotyková obrazovka)."
+        },
+        {
+          "type": "term",
+          "term": "Přenosová rychlost",
+          "definition": "Kolik bitů rozhraní přenese za sekundu. Udává se v Mb/s nebo Gb/s – malé **b** = bit. Pro bajty se píše velké **B** (MB/s), 1 B = 8 b.",
+          "example": "10 Gb/s ≈ 1,25 GB/s."
+        },
+        {
+          "type": "term",
+          "term": "Konektor vs. standard",
+          "definition": "Konektor je fyzický tvar (USB-A, USB-C). Standard je, jak a jak rychle se přenáší (USB 2.0, USB 3.2, USB4, Thunderbolt).",
+          "example": "Port USB-C může umět jen USB 2.0."
+        },
+        {
+          "type": "heading",
+          "text": "Převod bitů na bajty"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti rychlost rozhraní v Gb/s.",
+            "Vyděl ji 8 – dostaneš GB/s.",
+            "Velikost souboru v GB vyděl touto rychlostí – vyjde čas v sekundách.",
+            "Pamatuj, že skutečná rychlost bývá nižší (režie protokolu, rychlost disku)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Přes USB 3.2 Gen 2 (10 Gb/s) kopíruješ 25 GB. Jak dlouho to trvá teoreticky?",
+          "answer": "10 Gb/s : 8 = 1,25 GB/s. 25 : 1,25 = **20 s**. Ve skutečnosti déle."
+        },
+        {
+          "type": "example",
+          "question": "Které USB stačí na webkameru, která posílá asi 100 Mb/s?",
+          "answer": "USB 2.0 má 480 Mb/s, to je víc než 100 Mb/s. **Stačí USB 2.0.** Rychlejší USB je potřeba až pro rychlé disky nebo kamery s vysokým rozlišením."
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkontroluj, jestli rychlosti USB znáš."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "USB 2.0",
+                "back": "480 Mb/s"
+              },
+              {
+                "front": "USB 3.2 Gen 1",
+                "back": "5 Gb/s"
+              },
+              {
+                "front": "USB 3.2 Gen 2",
+                "back": "10 Gb/s"
+              },
+              {
+                "front": "USB 3.2 Gen 2x2",
+                "back": "20 Gb/s"
+              },
+              {
+                "front": "USB4",
+                "back": "až 40 Gb/s"
+              },
+              {
+                "front": "Thunderbolt 3/4",
+                "back": "40 Gb/s, konektor USB-C"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Obrazová rozhraní"
+        },
+        {
+          "type": "term",
+          "term": "Analogový a digitální signál",
+          "definition": "Analogový signál je plynule se měnící napětí; cestou se zkresluje. Digitální posílá jedničky a nuly; obraz dorazí beze změny, nebo vůbec.",
+          "example": "VGA je analogové, HDMI a DisplayPort digitální."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rozhraní",
+            "Signál",
+            "Zvuk",
+            "Typické použití"
+          ],
+          "rows": [
+            [
+              "VGA",
+              "analogový",
+              "ne",
+              "starší projektory"
+            ],
+            [
+              "DVI",
+              "digitální (DVI-I i analog)",
+              "ne",
+              "starší monitory"
+            ],
+            [
+              "HDMI",
+              "digitální",
+              "ano",
+              "televize, monitory, konzole"
+            ],
+            [
+              "DisplayPort",
+              "digitální",
+              "ano",
+              "počítačové monitory, vysoké frekvence"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Obnovovací frekvence",
+          "definition": "Kolikrát za sekundu monitor překreslí obraz (Hz). Více Hz = plynulejší pohyb.",
+          "example": "60 Hz kancelář, 144 Hz a víc pro hry."
+        },
+        {
+          "type": "example",
+          "question": "Kolik pixelů má monitor 1920 × 1080 a kolik 3840 × 2160 (4K)?",
+          "answer": "1920 · 1080 = **2 073 600** pixelů (≈ 2 Mpx). 3840 · 2160 = **8 294 400** (≈ 8,3 Mpx). 4K má **4×** víc bodů, takže grafika musí každý snímek kreslit 4× víc pixelů."
+        },
+        {
+          "type": "heading",
+          "text": "Typy panelů a tiskáren"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**TN** – nejrychlejší a levný, horší barvy a úhly.",
+            "**IPS** – věrné barvy, široké úhly.",
+            "**VA** – vysoký kontrast.",
+            "**OLED** – každý bod svítí sám, dokonalá černá; hrozí vypálení statického obrazu.",
+            "**Laserová tiskárna** – toner zapečený teplem, levná stránka, kancelář.",
+            "**Inkoustová tiskárna** – kapky inkoustu, barevné fotky."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rozhraní 10 Gb/s přenese 10 GB za sekundu.",
+          "right": "10 Gb/s jsou gigabity. V bajtech je to 10 : 8 = 1,25 GB/s.",
+          "why": "Malé b = bit, velké B = bajt. Jeden bajt má 8 bitů."
+        },
+        {
+          "type": "summary",
+          "text": "Rychlost rozhraní se udává v bitech za sekundu; na bajty dělíme 8. USB-C je tvar, rychlost určuje standard (480 Mb/s až 40 Gb/s). HDMI a DisplayPort jsou digitální s obrazem i zvukem, VGA analogové."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které zařízení je vstupní?",
+      "options": [
+        "skener",
+        "monitor",
+        "tiskárna",
+        "reproduktor"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jakou rychlost má USB 2.0?",
+      "options": [
+        "480 Mb/s",
+        "5 Gb/s",
+        "480 MB/s",
+        "40 Gb/s"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Každý port s konektorem USB-C umí 40 Gb/s a přenos obrazu.",
+      "answer": false,
+      "explanation": "USB-C je jen tvar konektoru. Za ním může být i USB 2.0 bez obrazu."
+    },
+    {
+      "type": "input",
+      "question": "Kolik GB/s je 10 Gb/s? Napiš číslo.",
+      "answers": [
+        "1,25",
+        "1.25"
+      ],
+      "hints": [
+        "Kolik bitů má jeden bajt?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát víc pixelů má rozlišení 3840 × 2160 než 1920 × 1080? Napiš číslo.",
+      "answers": [
+        "4",
+        "čtyřikrát"
+      ],
+      "hints": [
+        "Porovnej zvlášť šířku a zvlášť výšku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které obrazové rozhraní je analogové?",
+      "options": [
+        "VGA",
+        "HDMI",
+        "DisplayPort",
+        "USB-C s DisplayPort Alt Mode"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď verze USB od nejpomalejší po nejrychlejší.",
+      "items": [
+        "USB 2.0",
+        "USB 3.2 Gen 1",
+        "USB 3.2 Gen 2",
+        "USB 3.2 Gen 2x2",
+        "USB4"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ panelu s jeho typickou vlastností.",
+      "pairs": [
+        [
+          "IPS",
+          "věrné barvy a široké úhly"
+        ],
+        [
+          "TN",
+          "rychlý a levný, horší barvy"
+        ],
+        [
+          "VA",
+          "vysoký kontrast"
+        ],
+        [
+          "OLED",
+          "dokonalá černá, riziko vypálení"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "HDMI i DisplayPort přenášejí obraz i zvuk.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co udává obnovovací frekvence monitoru 144 Hz?",
+      "options": [
+        "obraz se překreslí 144× za sekundu",
+        "monitor má 144 pixelů na palec",
+        "odezva je 144 ms",
+        "spotřeba je 144 W"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Pro kancelář, která tiskne hodně černobílých dokumentů, se nejvíc hodí:",
+      "options": [
+        "laserová tiskárna",
+        "inkoustová fototiskárna",
+        "3D tiskárna",
+        "jehličková tiskárna"
+      ],
+      "answer": 0,
+      "hints": [
+        "Která technologie má nejnižší cenu za stránku a nevadí jí, když se netiskne pár týdnů?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Soubor 25 GB přes rozhraní 10 Gb/s. Kolik sekund trvá teoreticky přenos? Napiš číslo.",
+      "answers": [
+        "20"
+      ],
+      "hints": [
+        "Nejdřív převeď rychlost na GB/s.",
+        "Pak vyděl velikost souboru rychlostí."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi konektorem USB-C a standardem USB.",
+      "answer": "USB-C je jen fyzický tvar konektoru, oboustranný. Standard (USB 2.0, USB 3.2, USB4, Thunderbolt) určuje rychlost a funkce, např. přenos obrazu nebo napájení. Stejný konektor tak může umět 480 Mb/s i 40 Gb/s."
+    },
+    {
+      "type": "open",
+      "question": "Podle čeho vybereš monitor pro hraní a podle čeho pro grafika?",
+      "answer": "Pro hraní je důležitá vysoká obnovovací frekvence (144 Hz a víc) a rychlá odezva, vhodné jsou rychlé IPS, TN nebo OLED. Grafik potřebuje věrné barvy a široké pozorovací úhly, tedy IPS nebo OLED s vyšším rozlišením."
+    }
+  ]
+}

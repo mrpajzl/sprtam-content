@@ -1,0 +1,487 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "uloziste",
+  "title": "Úložiště: HDD, SSD a RAID",
+  "emoji": "💽",
+  "explanations": [
+    {
+      "title": "Gramofon a šuplíky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Fotky, hry i operační systém musí někde zůstat, i když počítač vypneš. Operační paměť RAM se po vypnutí vymaže. Proto má počítač **úložiště**: pevný disk nebo SSD."
+        },
+        {
+          "type": "text",
+          "text": "Podle typu úložiště se počítač zapne za 10 sekund, nebo za minutu. A když disk odejde, rozhoduje záloha, jestli o data přijdeš."
+        },
+        {
+          "type": "heading",
+          "text": "Pevný disk jako gramofon"
+        },
+        {
+          "type": "term",
+          "term": "HDD (pevný disk)",
+          "definition": "Úložiště s rotujícími kovovými nebo skleněnými kotouči – **plotnami**. Data jsou zapsaná magneticky.",
+          "example": "3,5\" disk 4 TB v domácím úložišti."
+        },
+        {
+          "type": "term",
+          "term": "Čtecí a zápisová hlava",
+          "definition": "Drobná součástka na rameni, která se pohybuje nad plotnou ve výšce nanometrů a čte nebo zapisuje magnetické stopy.",
+          "example": "Jako jehla gramofonu, ale plotny se nedotýká."
+        },
+        {
+          "type": "term",
+          "term": "Přístupová doba",
+          "definition": "Čas, než disk začne číst požadovaná data: hlava se musí přesunout a plotna pootočit. U HDD jsou to milisekundy, u SSD desetiny milisekundy i méně.",
+          "example": "HDD 7 200 ot./min má přístupovou dobu kolem 10 ms."
+        },
+        {
+          "type": "text",
+          "text": "HDD má pohyblivé části. Je proto citlivý na otřesy a pády, hlučí a pomalu čte malé soubory rozházené po plotně. Zato je levný za terabajt."
+        },
+        {
+          "type": "heading",
+          "text": "SSD jako skříň plná šuplíků"
+        },
+        {
+          "type": "term",
+          "term": "SSD",
+          "definition": "Úložiště bez pohyblivých částí. Data drží v čipech **flash paměti NAND**. Řídí ho vlastní čip – **řadič**.",
+          "example": "NVMe SSD 1 TB v notebooku."
+        },
+        {
+          "type": "term",
+          "term": "Buňka NAND",
+          "definition": "Nejmenší „šuplík“ flash paměti. Podle toho, kolik bitů drží, se značí SLC (1 bit), MLC (2), TLC (3), QLC (4).",
+          "example": "Levné velké SSD bývají QLC."
+        },
+        {
+          "type": "text",
+          "text": "Čím víc bitů v buňce, tím je SSD levnější a větší, ale pomalejší při zápisu a dřív se opotřebí. Buňka totiž snese jen omezený počet přepisů."
+        },
+        {
+          "type": "term",
+          "term": "TBW",
+          "definition": "Terabytes Written – kolik terabajtů výrobce dovoluje na disk zapsat, než se může opotřebit. Je to údaj záruky.",
+          "example": "SSD s TBW 600: když zapíšeš 60 TB ročně, vystačí zhruba 10 let."
+        },
+        {
+          "type": "term",
+          "term": "TRIM",
+          "definition": "Příkaz, kterým operační systém řekne SSD, které bloky už jsou smazané. Řadič je může předem uklidit a zápis je pak rychlejší.",
+          "example": "Windows i Linux TRIM u SSD zapínají automaticky."
+        },
+        {
+          "type": "heading",
+          "text": "Kudy data tečou"
+        },
+        {
+          "type": "term",
+          "term": "SATA III a NVMe",
+          "definition": "SATA III je starší rozhraní s limitem 6 Gb/s (prakticky asi 550 MB/s). NVMe je protokol pro SSD přes linky PCIe – mnohem rychlejší.",
+          "example": "SATA SSD ≈ 550 MB/s, NVMe PCIe 4.0 x4 až kolem 7 000 MB/s."
+        },
+        {
+          "type": "example",
+          "question": "SSD má TBW 300 TB. Denně na něj zapíšeš 50 GB. Na kolik let vydrží záruční limit?",
+          "answer": "Za rok: 50 GB · 365 = 18 250 GB ≈ 18,25 TB. 300 : 18,25 ≈ **16 let**. Limit TBW tedy běžný uživatel nevyčerpá."
+        },
+        {
+          "type": "heading",
+          "text": "RAID a zálohy"
+        },
+        {
+          "type": "term",
+          "term": "RAID",
+          "definition": "Spojení několika disků do jednoho celku kvůli rychlosti nebo odolnosti proti výpadku disku.",
+          "example": "Dva disky zrcadlené v RAID 1."
+        },
+        {
+          "type": "table",
+          "head": [
+            "RAID",
+            "Jak",
+            "Kapacita z n disků",
+            "Vydrží výpadek"
+          ],
+          "rows": [
+            [
+              "0",
+              "data rozdělená střídavě",
+              "n disků",
+              "žádný disk"
+            ],
+            [
+              "1",
+              "zrcadlo, obě kopie stejné",
+              "1 disk",
+              "n − 1 disků"
+            ],
+            [
+              "5",
+              "data + parita rozprostřená",
+              "n − 1 disků",
+              "1 disk"
+            ],
+            [
+              "10",
+              "zrcadla spojená do RAID 0",
+              "n / 2 disků",
+              "1 v každém zrcadle"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Máš 4 disky po 2 TB v RAID 5. Jaká je využitelná kapacita?",
+          "answer": "RAID 5 ztratí na paritu kapacitu jednoho disku: (4 − 1) · 2 TB = **6 TB**. Vydrží výpadek jednoho disku."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mám RAID 1, takže zálohu nepotřebuju.",
+          "right": "RAID chrání jen před selháním disku. Záloha chrání data i před smazáním, virem nebo požárem.",
+          "why": "Když smažeš soubor nebo ho zašifruje ransomware, RAID 1 změnu okamžitě zkopíruje na druhý disk."
+        },
+        {
+          "type": "text",
+          "text": "Na zálohy se používá pravidlo **3-2-1**: 3 kopie dat, na 2 různých typech médií, z toho 1 mimo domov (jinde nebo v cloudu)."
+        },
+        {
+          "type": "summary",
+          "text": "HDD je levný a velký, ale pomalý a citlivý na otřesy. SSD je rychlé a tiché, opotřebení udává TBW. RAID zvyšuje rychlost nebo odolnost, ale nenahrazuje zálohu 3-2-1."
+        }
+      ]
+    },
+    {
+      "title": "Porovnej a spočítej",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V obchodě vidíš „SSD M.2 1 TB“, „HDD 4 TB 7200 rpm“ a „NVMe Gen4“. Co z toho je tvar, co rozhraní a co rychlost? Rozebereme to tabulkami a výpočty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Úložiště",
+          "definition": "Zařízení, které uchová data i bez napájení. Na rozdíl od RAM se po vypnutí nesmaže."
+        },
+        {
+          "type": "term",
+          "term": "HDD",
+          "definition": "Magnetický disk s rotujícími plotnami a hlavami na rameni. Otáčky se udávají v ot./min (rpm), běžně 5 400 nebo 7 200."
+        },
+        {
+          "type": "term",
+          "term": "SSD",
+          "definition": "Disk z flash čipů NAND s řadičem, bez pohyblivých částí."
+        },
+        {
+          "type": "term",
+          "term": "Formát vs. rozhraní",
+          "definition": "**Formát** je tvar a konektor (2,5\", 3,5\", M.2). **Rozhraní / protokol** je jazyk, kterým disk mluví (SATA, NVMe). Jsou to dvě různé věci.",
+          "example": "M.2 SSD může být SATA i NVMe."
+        },
+        {
+          "type": "heading",
+          "text": "Srovnávací tabulka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "HDD",
+            "SSD SATA",
+            "SSD NVMe"
+          ],
+          "rows": [
+            [
+              "čtení (orientačně)",
+              "≈ 150–250 MB/s",
+              "≈ 550 MB/s",
+              "≈ 3 500–7 000+ MB/s"
+            ],
+            [
+              "přístupová doba",
+              "ms",
+              "desetiny ms",
+              "desetiny ms"
+            ],
+            [
+              "pohyblivé části",
+              "ano",
+              "ne",
+              "ne"
+            ],
+            [
+              "cena za TB",
+              "nejnižší",
+              "střední",
+              "střední až vyšší"
+            ],
+            [
+              "typické použití",
+              "archiv, NAS",
+              "upgrade starších PC",
+              "systém, hry, práce"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Rychlosti jsou orientační a liší se podle modelu i generace PCIe."
+        },
+        {
+          "type": "heading",
+          "text": "Bity v buňce"
+        },
+        {
+          "type": "text",
+          "text": "Buňka NAND rozlišuje úrovně náboje. SLC 1 bit = 2 úrovně, MLC 2 bity = 4 úrovně, TLC 3 bity = 8 úrovní, QLC 4 bity = 16 úrovní. Čím víc úrovní, tím jemněji se musí rozlišovat a tím je buňka pomalejší a méně odolná."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "SLC",
+                "back": "1 bit na buňku – nejrychlejší, nejodolnější, nejdražší"
+              },
+              {
+                "front": "MLC",
+                "back": "2 bity na buňku"
+              },
+              {
+                "front": "TLC",
+                "back": "3 bity – dnes nejběžnější"
+              },
+              {
+                "front": "QLC",
+                "back": "4 bity – levná velká kapacita, nižší výdrž"
+              },
+              {
+                "front": "TRIM",
+                "back": "OS řekne SSD, které bloky jsou volné"
+              },
+              {
+                "front": "TBW",
+                "back": "kolik TB lze zapsat v rámci záruky"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "RAID: počítání kapacity"
+        },
+        {
+          "type": "term",
+          "term": "RAID",
+          "definition": "Pole disků, které se navenek tváří jako jeden disk. Číslo (0, 1, 5, 10) říká, jak jsou data rozložena."
+        },
+        {
+          "type": "term",
+          "term": "Parita",
+          "definition": "Kontrolní údaj vypočtený z dat ostatních disků. Když jeden disk vypadne, data se z parity dopočítají.",
+          "example": "RAID 5 potřebuje aspoň 3 disky."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti počet disků n a kapacitu jednoho disku (u různých velikostí se počítá s nejmenším).",
+            "RAID 0: kapacita = n · disk, odolnost žádná.",
+            "RAID 1: kapacita = 1 disk, ostatní jsou kopie.",
+            "RAID 5: kapacita = (n − 1) · disk, vydrží 1 vadný disk.",
+            "RAID 10: kapacita = n / 2 · disk, potřebuje aspoň 4 disky."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Server má 6 disků po 4 TB. Jaká je kapacita v RAID 10 a v RAID 5?",
+          "answer": "RAID 10: 6 / 2 · 4 = **12 TB**. RAID 5: (6 − 1) · 4 = **20 TB**. RAID 10 je rychlejší při zápisu a rychleji se obnovuje, RAID 5 dá víc místa."
+        },
+        {
+          "type": "example",
+          "question": "Dva disky 1 TB v RAID 0. Jedna jednotka selže. Co se stane?",
+          "answer": "RAID 0 má data rozdělená střídavě na oba disky. Každý soubor má kousky na obou. Selháním jednoho disku **přijdeš o všechna data** v poli."
+        },
+        {
+          "type": "heading",
+          "text": "Zálohování 3-2-1"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**3** kopie dat (originál + 2 zálohy)",
+            "na **2** různých typech médií (např. SSD v PC a externí HDD)",
+            "**1** kopie mimo místo (cloud, jiná budova)"
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Disk je M.2, tak je určitě NVMe a rychlý.",
+          "right": "M.2 je jen tvar. Existují i M.2 SSD s rozhraním SATA, ty mají rychlost jen kolem 550 MB/s.",
+          "why": "Formát a protokol jsou různé věci. Rychlost určuje protokol (NVMe přes PCIe vs. SATA)."
+        },
+        {
+          "type": "summary",
+          "text": "Rozlišuj formát (M.2, 2,5\") a protokol (SATA, NVMe). Kapacitu RAID počítej podle typu: 0 = n, 1 = 1, 5 = n − 1, 10 = n/2 disků. Data chrání jen záloha 3-2-1."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Které úložiště nemá pohyblivé části?",
+      "options": [
+        "SSD",
+        "HDD",
+        "DVD mechanika",
+        "magnetická páska"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je maximální rychlost rozhraní SATA III?",
+      "options": [
+        "6 Gb/s",
+        "600 Gb/s",
+        "1,5 Gb/s",
+        "32 GB/s"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Disk ve formátu M.2 je vždy NVMe.",
+      "answer": false,
+      "explanation": "M.2 je tvar. Existují M.2 SSD s rozhraním SATA."
+    },
+    {
+      "type": "input",
+      "question": "Kolik bitů ukládá jedna buňka paměti TLC? Napiš číslo.",
+      "answers": [
+        "3",
+        "tři"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "4 disky po 2 TB v RAID 5. Kolik TB je využitelných? Napiš číslo.",
+      "answers": [
+        "6"
+      ],
+      "hints": [
+        "Kolik disků „spotřebuje“ parita?",
+        "Kapacita = (n − 1) · velikost disku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "6 disků po 4 TB v RAID 10. Kolik TB je využitelných? Napiš číslo.",
+      "answers": [
+        "12"
+      ],
+      "hints": [
+        "V RAID 10 je každý disk zrcadlený."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které pole RAID nevydrží výpadek ani jednoho disku?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "TRIM",
+          "OS hlásí SSD volné bloky"
+        ],
+        [
+          "TBW",
+          "povolený objem zápisů"
+        ],
+        [
+          "přístupová doba",
+          "čas do začátku čtení"
+        ],
+        [
+          "parita",
+          "údaj k dopočtení dat"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "RAID 1 nahrazuje zálohu, protože data jsou na dvou discích.",
+      "answer": false,
+      "explanation": "Smazání nebo zašifrování souboru se okamžitě projeví na obou discích."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď typy NAND od nejodolnějšího po nejméně odolný.",
+      "items": [
+        "SLC",
+        "MLC",
+        "TLC",
+        "QLC"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená číslo 1 v pravidle záloh 3-2-1?",
+      "options": [
+        "jedna kopie mimo místo",
+        "jeden disk v RAID",
+        "jedna záloha za den",
+        "jeden typ média"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč je HDD pomalý při čtení mnoha malých rozházených souborů?",
+      "options": [
+        "hlava se musí pro každý soubor přesunout a plotna pootočit",
+        "HDD nemá řadič",
+        "HDD čte jen jeden soubor za minutu",
+        "malé soubory se na HDD neukládají"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej HDD a SSD z hlediska principu, rychlosti, odolnosti a ceny.",
+      "answer": "HDD ukládá data magneticky na rotující plotny, je levný za TB, ale pomalý (vysoká přístupová doba) a citlivý na otřesy. SSD používá flash NAND bez pohyblivých částí, je mnohem rychlejší a odolnější proti otřesům, ale dražší za TB a buňky se zápisem opotřebují."
+    },
+    {
+      "type": "open",
+      "question": "Proč RAID není záloha a jak správně zálohovat?",
+      "answer": "RAID chrání jen před selháním disku; smazání, virus nebo požár zasáhnou všechny disky pole. Zálohuje se podle 3-2-1: tři kopie, dva typy médií, jedna kopie mimo místo."
+    }
+  ]
+}

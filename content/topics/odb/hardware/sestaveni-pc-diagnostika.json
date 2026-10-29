@@ -1,0 +1,425 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sestaveni-pc-diagnostika",
+  "title": "Sestavení PC a diagnostika",
+  "emoji": "🛠️",
+  "explanations": [
+    {
+      "title": "Stavíme krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Sestavit počítač je jako postavit stavebnici: díly musí k sobě pasovat a skládají se ve správném pořadí. Když něco nefunguje, hledá se chyba systematicky, ne náhodným mačkáním."
+        },
+        {
+          "type": "text",
+          "text": "Tohle je každodenní práce IT technika: postavit, oživit a opravit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kompatibilita",
+          "definition": "Díly k sobě pasují fyzicky i elektricky a navzájem se podporují.",
+          "example": "Procesor pro patici AM5 nepasuje do desky s paticí LGA 1700."
+        },
+        {
+          "type": "term",
+          "term": "ESD",
+          "definition": "Elektrostatický výboj – statická elektřina z tvého těla. Ty ho ani necítíš, ale může zničit čip.",
+          "example": "Přejdeš po koberci, sáhneš na paměť a modul přestane fungovat."
+        },
+        {
+          "type": "term",
+          "term": "Antistatický náramek",
+          "definition": "Pásek na zápěstí s vodičem připojeným ke kovové kostře nebo uzemnění. Vyrovná náboj těla s počítačem.",
+          "example": "Krokosvorku připneš na nenatřený kov skříně."
+        },
+        {
+          "type": "heading",
+          "text": "1. Výběr dílů"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Procesor a deska:** stejná patice a chipset, který procesor podporuje (případně s aktualizací UEFI).",
+            "**Paměť:** typ podle desky – DDR4, nebo DDR5. Moduly nejsou zaměnitelné, mají zářez jinde.",
+            "**Skříň:** pojme formát desky (ATX, microATX, mini-ITX), délku grafiky a výšku chladiče.",
+            "**Zdroj:** součet spotřeby s rezervou, potřebné konektory (EPS 8pin, napájení grafiky).",
+            "**Úložiště:** M.2 NVMe, nebo SATA podle volných slotů na desce."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "2. Bezpečnost před prací"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Odpoj síťový kabel a vypni vypínač zdroje.",
+            "Podrž tlačítko zapnutí pár sekund, ať se vybije zbytková energie.",
+            "Pracuj na nevodivém stole, ne na koberci; použij antistatický náramek nebo se dotkni kovové kostry.",
+            "Díly drž za okraje, nesahej na kontakty a čipy.",
+            "Zdroj nikdy neotvírej."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "3. Postup sestavení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na desku mimo skříň osaď procesor (šipka na rohu k šipce na patici, bez síly).",
+            "Nanes pastu (pokud ji chladič nemá) a připevni chladič.",
+            "Zasuň RAM do slotů doporučených v manuálu (u 2 modulů obvykle A2 a B2).",
+            "Osaď M.2 SSD.",
+            "Do skříně dej distanční sloupky podle formátu a přišroubuj desku.",
+            "Připevni zdroj a zapoj 24pin, EPS 8pin, napájení grafiky a disků.",
+            "Zasuň grafiku do slotu PCIe x16 a přišroubuj ji.",
+            "Připoj kabely předního panelu (tlačítko, USB, audio) podle manuálu.",
+            "Zapni a zkontroluj v UEFI, že vidí procesor, celou paměť a disky."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "RAM nejde zasunout, tak na ni zatlačím silou.",
+          "right": "Zkontroluj zářez na modulu a slotu. Když nesedí, je to špatný typ paměti (např. DDR4 do DDR5 desky).",
+          "why": "Zářez je schválně jinde, aby nešel zasunout nekompatibilní modul. Silou zničíš modul i slot."
+        },
+        {
+          "type": "heading",
+          "text": "4. Když to nenaběhne"
+        },
+        {
+          "type": "term",
+          "term": "POST",
+          "definition": "Power-On Self-Test – test, který UEFI provede hned po zapnutí. Ověří procesor, paměť a grafiku, než spustí systém.",
+          "example": "Krátké pípnutí nebo zhasnutí LED po úspěšném testu."
+        },
+        {
+          "type": "term",
+          "term": "Diagnostické kódy",
+          "definition": "Hlášení chyby při POST: pípání (beep kódy), kontrolky LED (CPU, DRAM, VGA, BOOT) nebo dvoumístný kód na displeji desky. **Jejich význam se liší podle výrobce**, vždy ho hledej v manuálu.",
+          "example": "Svítí LED „DRAM“ → problém s pamětí."
+        },
+        {
+          "type": "example",
+          "question": "Po zapnutí se roztočí ventilátory, ale monitor je černý a na desce svítí LED „DRAM“. Jak postupuješ?",
+          "answer": "LED ukazuje na paměť. 1) Vypnu a odpojím napájení. 2) Vyjmu a znovu pořádně zasunu moduly. 3) Zkusím jen jeden modul ve slotu doporučeném v manuálu. 4) Vyzkouším jiný modul, o kterém vím, že funguje. Tak zjistím, jestli je vadný modul, nebo slot."
+        },
+        {
+          "type": "example",
+          "question": "Počítač po půl hodině hraní spadne a restartuje se. Co zkontroluješ?",
+          "answer": "Spadnutí pod zátěží často znamená **přehřátí** nebo **slabý zdroj**. Zkontroluji teploty procesoru a grafiky monitorovacím programem, prach v chladičích a funkci ventilátorů. Pak výkon zdroje vůči spotřebě. Nakonec otestuji paměť (MemTest86)."
+        },
+        {
+          "type": "summary",
+          "text": "Nejdřív ověř kompatibilitu (patice, DDR4/DDR5, formát, zdroj), pak pracuj bez napětí a s ochranou proti ESD. Chybu hledej podle POST kódů a manuálu, od nejjednoduššího a výměnou za funkční díl."
+        }
+      ]
+    },
+    {
+      "title": "Jako lékař",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lékař nezačne operací. Nejdřív se ptá, pozoruje příznaky, udělá jednoduché testy a teprve potom léčí. Stejně postupuje technik u nefunkčního počítače: od příznaku přes hypotézu k ověření."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Diagnostika",
+          "definition": "Systematické hledání příčiny závady: zjistit příznaky, vyslovit možné příčiny a postupně je ověřovat."
+        },
+        {
+          "type": "term",
+          "term": "Metoda výměny dílu",
+          "definition": "Podezřelý díl dočasně vyměníš za jiný, o kterém víš, že funguje. Když závada zmizí, našel jsi viníka.",
+          "example": "Jiný síťový kabel, jiný modul RAM, jiný zdroj."
+        },
+        {
+          "type": "term",
+          "term": "POST",
+          "definition": "Autotest hardwaru po zapnutí, který provádí firmware UEFI. Chybu hlásí pípáním, LED nebo kódem – význam podle manuálu výrobce."
+        },
+        {
+          "type": "term",
+          "term": "SMART",
+          "definition": "Vlastní diagnostika disku (HDD i SSD). Disk si zapisuje údaje o svém stavu: chyby, realokované sektory, opotřebení, teplotu.",
+          "example": "Program CrystalDiskInfo nebo smartctl ukáže stav „Dobrý“ / „Varování“."
+        },
+        {
+          "type": "term",
+          "term": "MemTest86",
+          "definition": "Program, který se spouští z flash disku mimo operační systém a důkladně testuje operační paměť.",
+          "example": "Náhodné modré obrazovky → nechám MemTest86 běžet několik průchodů."
+        },
+        {
+          "type": "term",
+          "term": "ESD",
+          "definition": "Elektrostatický výboj, který může zničit čip. Chráníš se antistatickým náramkem nebo dotykem kovové kostry."
+        },
+        {
+          "type": "heading",
+          "text": "Zlaté pravidlo: od nejjednoduššího"
+        },
+        {
+          "type": "text",
+          "text": "Projdi kroky diagnostiky tak, jak je provede zkušený technik: od nejlevnějších a nejrychlejších kontrol po náročné. Když oprava nepomůže, začíná se znovu od příznaku."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Zjisti příznak a co se změnilo",
+              "Zkontroluj napájení, kabely a vypínače",
+              "Přečti kódy POST a LED v manuálu",
+              "Zkus minimální sestavu",
+              "Vyměň podezřelý díl za funkční",
+              "Oprav a ověř, že to funguje"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "**Minimální sestava** = jen deska, procesor s chladičem, jeden modul RAM, zdroj a grafika (nebo integrovaná). Když naběhne, chyba je v něčem, co jsi odpojil."
+        },
+        {
+          "type": "heading",
+          "text": "Příznak → podezřelý"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Příznak",
+            "Nejčastější podezřelý",
+            "Jak ověřit"
+          ],
+          "rows": [
+            [
+              "nic se neděje, ani ventilátor",
+              "napájení, vypínač zdroje, kabel tlačítka",
+              "jiný kabel a zásuvka, zapojení tlačítka podle manuálu"
+            ],
+            [
+              "ventilátory jedou, obraz ne",
+              "RAM, grafika, kabel k monitoru",
+              "LED/kódy, jeden modul RAM, jiný výstup"
+            ],
+            [
+              "náhodné pády, modrá obrazovka",
+              "RAM, ovladače, přehřátí",
+              "MemTest86, teploty, prohlížeč událostí"
+            ],
+            [
+              "vypíná se pod zátěží",
+              "teplota, zdroj",
+              "monitorovat teploty, jiný zdroj"
+            ],
+            [
+              "pomalý start, cvakání disku",
+              "disk",
+              "SMART"
+            ],
+            [
+              "špatný čas po odpojení",
+              "CMOS baterie",
+              "výměna CR2032"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Uživatel hlásí: „Počítač je mrtvý.“ Nic se nerozsvítí, žádný ventilátor. Popiš prvních pět kroků.",
+          "answer": "1) Je zapnutý vypínač na zdroji? 2) Je kabel v zásuvce a zásuvka funguje (zkus lampu)? 3) Je zapojený 24pin a EPS na desce? 4) Je kabel tlačítka správně na pinech předního panelu? 5) Zkusím jiný, ověřený zdroj. Teprve pak podezírám desku."
+        },
+        {
+          "type": "example",
+          "question": "SMART disku ukazuje rostoucí počet realokovaných sektorů. Co uděláš?",
+          "answer": "Rostoucí realokované sektory znamenají, že disk odchází. **Nejdřív zálohuji data**, pak disk vyměním. Nečekám, až selže úplně."
+        },
+        {
+          "type": "heading",
+          "text": "Kontrola kompatibility před stavbou"
+        },
+        {
+          "type": "list",
+          "items": [
+            "patice procesoru = patice desky",
+            "typ RAM (DDR4/DDR5) podle desky",
+            "formát desky vůči skříni, délka grafiky a výška chladiče",
+            "výkon a konektory zdroje"
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Počítač nejde, tak hned koupím novou základní desku.",
+          "right": "Postupuj od nejjednoduššího: kabely, napájení, kódy POST, minimální sestava, výměna za funkční díl.",
+          "why": "Většina závad má jednoduchou příčinu (uvolněný kabel, špatně zasunutá RAM). Zbytečný nákup stojí peníze a závadu nemusí vyřešit."
+        },
+        {
+          "type": "summary",
+          "text": "Diagnostika jde od příznaku k ověřené příčině: nejdřív jednoduché kontroly, pak kódy POST, minimální sestava a výměna za funkční díl. Pomůžou MemTest86, SMART a sledování teplot. Pracuj bez napětí a chraň díly před ESD."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co musí mít procesor a základní deska společné, aby k sobě pasovaly?",
+      "options": [
+        "patici (socket)",
+        "výrobce zdroje",
+        "barvu",
+        "počet USB portů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Modul DDR4 jde zasunout do slotu pro DDR5, jen funguje pomaleji.",
+      "answer": false,
+      "explanation": "DDR4 a DDR5 mají zářez na jiném místě a nejsou zaměnitelné."
+    },
+    {
+      "type": "choice",
+      "question": "Co je POST?",
+      "options": [
+        "autotest hardwaru po zapnutí",
+        "typ konektoru napájení",
+        "program pro test disku ve Windows",
+        "protokol pro síť"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Svítí diagnostická LED „DRAM“. Kterou součástku zkontroluješ nejdřív?",
+      "options": [
+        "operační paměť",
+        "zdroj",
+        "pevný disk",
+        "monitor"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Význam beep kódů je u všech výrobců desek stejný.",
+      "answer": false,
+      "explanation": "Kódy se liší podle výrobce firmwaru a desky – hledej je v manuálu."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje vlastní diagnostika disku, která sleduje jeho stav? Napiš zkratku.",
+      "answers": [
+        "SMART",
+        "S.M.A.R.T.",
+        "S.M.A.R.T"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou jmenuje elektrostatický výboj, který může zničit čip?",
+      "answers": [
+        "ESD"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky diagnostiky od prvního.",
+      "items": [
+        "zjistit příznak",
+        "zkontrolovat napájení a kabely",
+        "přečíst kódy POST",
+        "zkusit minimální sestavu",
+        "vyměnit podezřelý díl za funkční"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj příznak s nejpravděpodobnějším podezřelým.",
+      "pairs": [
+        [
+          "nic se neděje, ani ventilátor",
+          "napájení"
+        ],
+        [
+          "po odpojení špatný čas",
+          "CMOS baterie"
+        ],
+        [
+          "cvakání a rostoucí chyby SMART",
+          "disk"
+        ],
+        [
+          "vypíná se jen při hraní",
+          "přehřátí nebo slabý zdroj"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým nástrojem důkladně otestuješ operační paměť?",
+      "options": [
+        "MemTest86",
+        "CrystalDiskInfo",
+        "Správce úloh",
+        "defragmentace disku"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hledáš program, který se spouští z flash disku mimo operační systém."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co uděláš jako první, když SMART hlásí, že disk odchází?",
+      "options": [
+        "zálohuji data",
+        "defragmentuji disk",
+        "přeinstaluji systém",
+        "ignoruji to, dokud funguje"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co patří k ochraně před ESD při práci uvnitř počítače?",
+      "options": [
+        "antistatický náramek nebo dotyk kovové kostry",
+        "práce na koberci ve vlněném svetru",
+        "držet moduly RAM za kontakty",
+        "nechat počítač zapnutý v zásuvce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak postupuješ, když počítač po sestavení nenaběhne.",
+      "answer": "Zkontroluji vypínač zdroje, zásuvku a zapojení 24pin, EPS a tlačítka. Pak čtu kódy POST nebo LED podle manuálu, zkusím minimální sestavu s jedním modulem RAM a podezřelé díly měním za funkční, dokud nenajdu vadný."
+    },
+    {
+      "type": "open",
+      "question": "Co ověříš před nákupem dílů, aby byly kompatibilní?",
+      "answer": "Stejnou patici procesoru a desky a podporu procesoru chipsetem, typ paměti DDR4/DDR5 podle desky, formát desky vůči skříni včetně délky grafiky a výšky chladiče a výkon a konektory zdroje."
+    }
+  ]
+}

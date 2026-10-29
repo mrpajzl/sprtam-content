@@ -1,0 +1,509 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "reprezentace-dat",
+  "title": "Reprezentace dat: text, obraz, zvuk",
+  "emoji": "🧬",
+  "explanations": [
+    {
+      "title": "Domluvené kódy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Počítač umí uložit jen nuly a jedničky. Přesto v něm máš zprávy od kamarádů, fotky z dovolené i oblíbené písničky. Jde to proto, že se lidé **domluvili**, co která řada bitů znamená – podobně jako Morseova abeceda domlouvá, co znamená tečka a čárka."
+        },
+        {
+          "type": "text",
+          "text": "Když znáš tyto domluvy, umíš spočítat, kolik místa zabere fotka nebo nahrávka, a víš, proč se v e-mailu někdy místo „č“ objeví divné znaky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Bit a bajt",
+          "definition": "Připomenutí: **bit** je jedna dvojková číslice (0 nebo 1), **bajt** je 8 bitů a uloží 256 různých hodnot (0–255).",
+          "example": "Číslo 65 je v jednom bajtu 0100 0001."
+        },
+        {
+          "type": "term",
+          "term": "Kódování",
+          "definition": "Domluvená tabulka, která každé informaci (písmenu, barvě, výšce zvuku) přiřadí číslo, a tím i řadu bitů.",
+          "example": "V tabulce ASCII má velké „A“ číslo 65."
+        },
+        {
+          "type": "heading",
+          "text": "Text: každé písmeno má číslo"
+        },
+        {
+          "type": "term",
+          "term": "ASCII",
+          "definition": "Nejstarší rozšířené kódování znaků. Používá 7 bitů, tedy 128 znaků: anglická písmena, číslice, interpunkci a řídicí znaky (např. nový řádek). Česká písmena s diakritikou v něm nejsou.",
+          "example": "„A“ = 65, „a“ = 97, „0“ = 48, mezera = 32."
+        },
+        {
+          "type": "term",
+          "term": "Unicode a UTF-8",
+          "definition": "**Unicode** je jedna velká tabulka, která dává číslo všem znakům světa včetně češtiny a emoji. **UTF-8** je nejběžnější způsob, jak tato čísla uložit do bajtů: znaky z ASCII zaberou 1 bajt, česká písmena s háčkem či čárkou 2 bajty, jiné znaky 3 nebo 4 bajty.",
+          "example": "„a“ = 1 B, „č“ = 2 B, „€“ = 3 B, emoji 😀 = 4 B."
+        },
+        {
+          "type": "text",
+          "text": "Dřív se pro češtinu používaly jiné tabulky, například **Windows-1250** nebo **ISO 8859-2**. Když text uložíš v jedné tabulce a otevřeš ho ve druhé, písmena s diakritikou se změní na nesmysly."
+        },
+        {
+          "type": "example",
+          "question": "Kolik bajtů zabere slovo „Škola“ v kódování UTF-8?",
+          "answer": "„Š“ je česká hláska s háčkem → 2 B. „k“, „o“, „l“, „a“ jsou z ASCII → 4 · 1 B = 4 B. Celkem 2 + 4 = **6 B**."
+        },
+        {
+          "type": "heading",
+          "text": "Obraz: mozaika z bodů"
+        },
+        {
+          "type": "term",
+          "term": "Pixel",
+          "definition": "Jeden barevný bod obrázku. Rastrový obrázek je mřížka pixelů, jako mozaika z kachliček.",
+          "example": "Obrázek 1920 × 1080 má 1920 pixelů na šířku a 1080 na výšku."
+        },
+        {
+          "type": "term",
+          "term": "RGB a barevná hloubka",
+          "definition": "Barvu pixelu skládáme ze tří světel: červené (R), zelené (G) a modré (B). Každé má obvykle 8 bitů, tedy 256 úrovní jasu. **Barevná hloubka** je počet bitů na pixel; 3 · 8 = 24 bitů dá 256³ = 16 777 216 barev.",
+          "example": "Čistá červená je R = 255, G = 0, B = 0, šestnáctkově #FF0000."
+        },
+        {
+          "type": "term",
+          "term": "Rastrová a vektorová grafika",
+          "definition": "**Rastrová** ukládá každý pixel (fotky; formáty JPEG, PNG). **Vektorová** ukládá tvary jako matematický popis – čáry, křivky, výplně (loga, plány; formát SVG). Vektor jde zvětšit bez rozmazání.",
+          "example": "Logo školy na plakát se hodí ve vektoru, fotka třídy v rastru."
+        },
+        {
+          "type": "example",
+          "question": "Kolik bajtů zabere nekomprimovaný obrázek 1920 × 1080 pixelů s barevnou hloubkou 24 bitů?",
+          "answer": "Pixelů: 1920 · 1080 = 2 073 600. Každý má 24 b = 3 B. Celkem 2 073 600 · 3 = **6 220 800 B**, tedy asi 6,2 MB."
+        },
+        {
+          "type": "heading",
+          "text": "Zvuk: fotky vlny"
+        },
+        {
+          "type": "term",
+          "term": "Vzorkování",
+          "definition": "Zvuk je vlnění vzduchu. Mikrofon ho promění na plynule se měnící napětí. Počítač toto napětí mnohokrát za sekundu změří a uloží jako číslo. Jednomu měření se říká **vzorek**, počtu vzorků za sekundu **vzorkovací frekvence** (Hz).",
+          "example": "Hudební CD má 44 100 vzorků za sekundu, tedy 44,1 kHz."
+        },
+        {
+          "type": "term",
+          "term": "Bitová hloubka zvuku",
+          "definition": "Kolik bitů má každý vzorek. Čím víc bitů, tím jemněji se dá hlasitost zachytit.",
+          "example": "16 bitů = 2¹⁶ = 65 536 úrovní (CD kvalita)."
+        },
+        {
+          "type": "text",
+          "text": "Vzorkovací frekvence musí být aspoň **dvakrát vyšší** než nejvyšší tón, který chceme zachytit. Člověk slyší zhruba do 20 kHz, proto CD vzorkuje 44,1 kHz."
+        },
+        {
+          "type": "example",
+          "question": "Kolik bajtů zabere 1 minuta nekomprimovaného stereo zvuku v kvalitě CD (44,1 kHz, 16 bitů, 2 kanály)?",
+          "answer": "Za sekundu: 44 100 · 16 · 2 = 1 411 200 bitů. Za minutu: 1 411 200 · 60 = 84 672 000 bitů. Na bajty: 84 672 000 : 8 = **10 584 000 B**, asi 10,6 MB."
+        },
+        {
+          "type": "heading",
+          "text": "Proč jsou soubory menší: komprese"
+        },
+        {
+          "type": "term",
+          "term": "Komprese",
+          "definition": "Zmenšení souboru. **Bezeztrátová** zachová všechna data přesně (ZIP, PNG, FLAC). **Ztrátová** zahodí detaily, které člověk skoro nepozná, a ušetří víc místa (JPEG, MP3, AAC).",
+          "example": "Fotka 6 MB se jako JPEG zmenší třeba na 1 MB."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "bezeztrátová",
+              "ztrátová"
+            ],
+            "items": [
+              {
+                "text": "ZIP",
+                "group": 0
+              },
+              {
+                "text": "PNG",
+                "group": 0
+              },
+              {
+                "text": "FLAC",
+                "group": 0
+              },
+              {
+                "text": "JPEG",
+                "group": 1
+              },
+              {
+                "text": "MP3",
+                "group": 1
+              },
+              {
+                "text": "AAC",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď formáty. Nápověda: u programu nebo dokumentu si nemůžeš dovolit ztratit ani jeden bit."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když fotku uložím z JPEG do PNG, vrátí se jí ztracená kvalita.",
+          "right": "Co ztrátová komprese jednou zahodila, už se nevrátí. PNG jen dál uchová to, co zbylo.",
+          "why": "Ztrátová komprese data nenávratně mění. Proto se originály a rozpracované obrázky ukládají bezeztrátově."
+        },
+        {
+          "type": "summary",
+          "text": "Text, obraz i zvuk jsou čísla podle domluveného kódování. Text: ASCII a UTF-8. Obraz: pixely, RGB 24 bitů. Zvuk: vzorkovací frekvence × bitová hloubka × kanály. Komprese je bezeztrátová, nebo ztrátová."
+        }
+      ]
+    },
+    {
+      "title": "Vzorce a výpočty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správce sítě odhaduje, kolik místa zabere archiv kamer. Grafik volí formát pro tisk, zvukař kvalitu nahrávky. Všichni počítají stejně: kolik údajů, krát kolik bitů na údaj. Tady máš ty vzorce v přehledu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Bit, bajt",
+          "definition": "Bit (b) je 0 nebo 1. Bajt (B) je 8 bitů. Při výpočtech velikosti vždy nakonec děl osmi, chceš-li bajty.",
+          "example": "24 bitů = 3 bajty."
+        },
+        {
+          "type": "term",
+          "term": "Kódování",
+          "definition": "Pravidlo, které převádí informaci na čísla a čísla na bity. Kdo data čte, musí použít stejné kódování jako ten, kdo je zapsal.",
+          "example": "Text v UTF-8 otevřený jako Windows-1250 má rozbitá česká písmena."
+        },
+        {
+          "type": "term",
+          "term": "Rozsah n bitů",
+          "definition": "n bitů dá 2ⁿ různých kombinací. Kladná celá čísla se tak dají uložit od 0 do 2ⁿ − 1.",
+          "example": "8 bitů: 0–255. 16 bitů: 0–65 535."
+        },
+        {
+          "type": "heading",
+          "text": "Celá čísla se znaménkem"
+        },
+        {
+          "type": "term",
+          "term": "Dvojkový doplněk",
+          "definition": "Běžný způsob, jak uložit záporná čísla. Nejvyšší bit říká znaménko (1 = záporné). Záporné číslo vznikne tak, že u kladného obrátíš všechny bity a přičteš 1. V 8 bitech uložíš −128 až 127.",
+          "example": "−1 je v 8 bitech 1111 1111."
+        },
+        {
+          "type": "example",
+          "question": "Zapiš −5 v 8bitovém dvojkovém doplňku.",
+          "answer": "+5 = 0000 0101. Obrať bity: 1111 1010. Přičti 1: **1111 1011**. Kontrola: nejvyšší bit je 1, číslo je záporné."
+        },
+        {
+          "type": "heading",
+          "text": "Text"
+        },
+        {
+          "type": "text",
+          "text": "**ASCII** je nejstarší tabulka znaků: jen anglická abeceda, číslice a značky. **Unicode** je tabulka všech znaků světa a **UTF-8** je nejběžnější způsob, jak její čísla uložit do 1 až 4 bajtů. Starší tabulky Windows-1250 a ISO 8859-2 přidaly k ASCII středoevropská písmena."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kódování",
+            "Bitů na znak",
+            "Znaků",
+            "Čeština"
+          ],
+          "rows": [
+            [
+              "ASCII",
+              "7 (ukládá se v 1 B)",
+              "128",
+              "ne"
+            ],
+            [
+              "Windows-1250, ISO 8859-2",
+              "8",
+              "256",
+              "ano"
+            ],
+            [
+              "UTF-8 (Unicode)",
+              "8 až 32 (1–4 B)",
+              "přes milion možných",
+              "ano"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "UTF-8 je dnes standard webu i většiny programů. Znaky z ASCII v něm mají stejné kódy jako v ASCII, proto je s ASCII zpětně kompatibilní."
+        },
+        {
+          "type": "heading",
+          "text": "Obraz"
+        },
+        {
+          "type": "term",
+          "term": "Pixel a barevná hloubka",
+          "definition": "Pixel je jeden bod rastrového obrázku. Barevná hloubka je počet bitů na pixel. Při RGB po 8 bitech je to 24 bitů = 3 B na pixel.",
+          "example": "Černobílý obrázek bez odstínů potřebuje jen 1 bit na pixel."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej pixely: šířka · výška.",
+            "Vynásob barevnou hloubkou v bitech.",
+            "Vyděl 8 – máš bajty.",
+            "Převeď na kB/MB (děl 1 000) nebo KiB/MiB (děl 1 024)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Obrázek 800 × 600 pixelů má 256 odstínů šedi. Kolik bajtů zabere bez komprese?",
+          "answer": "256 odstínů = 2⁸ → 8 bitů = 1 B na pixel. Pixelů 800 · 600 = 480 000. Velikost **480 000 B** = 480 kB (asi 469 KiB)."
+        },
+        {
+          "type": "heading",
+          "text": "Zvuk"
+        },
+        {
+          "type": "term",
+          "term": "Vzorkovací frekvence a bitová hloubka",
+          "definition": "Vzorkovací frekvence = kolikrát za sekundu se změří hlasitost zvukové vlny (Hz). Bitová hloubka = kolik bitů má jedno měření. Kanály = mono 1, stereo 2.",
+          "example": "Telefonní hovor: 8 kHz, 8 bitů, mono."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Velikost v bitech = vzorkovací frekvence · bitová hloubka · počet kanálů · čas v sekundách.",
+            "Vyděl 8 – máš bajty.",
+            "Ověř si, že frekvence je aspoň dvojnásobek nejvyššího tónu, který chceš zachytit."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kolik bajtů zabere 10 s záznamu mono, 8 kHz, 8 bitů?",
+          "answer": "8 000 · 8 · 1 · 10 = 640 000 bitů. Děleno 8 = **80 000 B** = 80 kB."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Kód „A“ v ASCII",
+                "back": "65 (0100 0001)"
+              },
+              {
+                "front": "Barvy při 24 bitech",
+                "back": "16 777 216"
+              },
+              {
+                "front": "CD audio",
+                "back": "44,1 kHz, 16 bitů, stereo"
+              },
+              {
+                "front": "8 bitů se znaménkem",
+                "back": "−128 až 127"
+              },
+              {
+                "front": "„č“ v UTF-8",
+                "back": "2 bajty"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Než kartičku otočíš, řekni odpověď nahlas."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Obrázek 1000 × 1000 pixelů s 24bitovou barvou má 24 000 000 B.",
+          "right": "1 000 000 pixelů · 24 b = 24 000 000 **bitů** = 3 000 000 B.",
+          "why": "Barevná hloubka je v bitech. Na konci výpočtu je potřeba dělit osmi."
+        },
+        {
+          "type": "summary",
+          "text": "Velikost dat = počet údajů × bitů na údaj, pak děleno 8. Obraz: šířka · výška · hloubka. Zvuk: frekvence · hloubka · kanály · čas. Záporná čísla se ukládají dvojkovým doplňkem, text v UTF-8."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kolik znaků obsahuje základní tabulka ASCII?",
+      "options": [
+        "128",
+        "256",
+        "65 536",
+        "100"
+      ],
+      "answer": 0,
+      "explanation": "ASCII je 7bitové: 2⁷ = 128 znaků."
+    },
+    {
+      "type": "input",
+      "question": "Jaké číslo má velké písmeno „A“ v tabulce ASCII (desítkově)?",
+      "answers": [
+        "65"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik bajtů zabere písmeno „ř“ v kódování UTF-8?",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "hints": [
+        "Je „ř“ v tabulce ASCII?",
+        "Znaky mimo ASCII z evropských abeced zabírají v UTF-8 víc než 1 bajt."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik různých barev zobrazí barevná hloubka 24 bitů?",
+      "answers": [
+        "16777216",
+        "16 777 216",
+        "2^24"
+      ],
+      "hints": [
+        "n bitů dá 2ⁿ kombinací.",
+        "Spočítej 256 · 256 · 256."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů zabere nekomprimovaný obrázek 100 × 100 pixelů s barevnou hloubkou 24 bitů?",
+      "answers": [
+        "30000",
+        "30 000"
+      ],
+      "hints": [
+        "Nejdřív spočítej pixely.",
+        "24 bitů je kolik bajtů?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů zabere 1 sekunda nekomprimovaného zvuku: 44,1 kHz, 16 bitů, stereo?",
+      "answers": [
+        "176400",
+        "176 400"
+      ],
+      "hints": [
+        "Vynásob frekvenci, bitovou hloubku a počet kanálů.",
+        "Výsledek v bitech vyděl osmi."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "JPEG a MP3 používají ztrátovou kompresi.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Vektorový obrázek se při zvětšení rozmaže stejně jako fotka.",
+      "answer": false,
+      "explanation": "Vektor je matematický popis tvarů, při zvětšení se znovu vykreslí ostře."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je nejmenší vzorkovací frekvence, která zachytí tón 10 kHz?",
+      "options": [
+        "20 kHz",
+        "10 kHz",
+        "5 kHz",
+        "44,1 kHz"
+      ],
+      "answer": 0,
+      "explanation": "Vzorkovací frekvence musí být aspoň dvojnásobek nejvyšší zachycované frekvence."
+    },
+    {
+      "type": "input",
+      "question": "Zapiš −1 jako 8bitové číslo ve dvojkovém doplňku.",
+      "answers": [
+        "11111111",
+        "1111 1111"
+      ],
+      "hints": [
+        "Začni zápisem +1 v osmi bitech.",
+        "Obrať všechny bity a přičti 1."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj formát s druhem dat.",
+      "pairs": [
+        [
+          "PNG",
+          "rastrový obrázek bez ztráty"
+        ],
+        [
+          "SVG",
+          "vektorová grafika"
+        ],
+        [
+          "MP3",
+          "ztrátově komprimovaný zvuk"
+        ],
+        [
+          "UTF-8",
+          "kódování textu"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu velikosti nekomprimovaného obrázku.",
+      "items": [
+        "spočítat pixely (šířka · výška)",
+        "vynásobit barevnou hloubkou v bitech",
+        "vydělit 8 na bajty",
+        "převést na kB nebo MB"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Proč se v e-mailu nebo na webu někdy místo českých písmen zobrazí nesmyslné znaky?",
+      "answer": "Text byl uložen v jednom kódování (např. UTF-8) a otevřen v jiném (např. Windows-1250). Stejné bajty pak znamenají jiné znaky. Pomůže zvolit správné kódování, dnes nejčastěji UTF-8."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak se zvuk ukládá do počítače a na čem závisí velikost nahrávky.",
+      "answer": "Zvuková vlna se mnohokrát za sekundu změří (vzorkuje) a každý vzorek se uloží jako číslo s danou bitovou hloubkou. Velikost je vzorkovací frekvence · bitová hloubka · počet kanálů · délka; kompresí se dá zmenšit."
+    }
+  ]
+}
