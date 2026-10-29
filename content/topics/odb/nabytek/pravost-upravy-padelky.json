@@ -1,0 +1,404 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pravost-upravy-padelky",
+  "title": "Pravost, úpravy a padělky",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Jako detektiv",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Do obchodu přijde zákazník s „barokní komodou po babičce“. Ty máš rozhodnout, jestli je opravdu z 18. století, jestli ji někdo přestavěl, nebo jestli je to zručný padělek. Na tom závisí cena i tvoje pověst."
+        },
+        {
+          "type": "text",
+          "text": "Jeden znak nikdy nestačí. Starožitník sbírá stopy jako detektiv a teprve všechny dohromady dají závěr."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Originál",
+          "definition": "Kus, který vznikl v době a v podobě, za kterou se vydává.",
+          "example": "Biedermeierovský sekretář vyrobený kolem roku 1830."
+        },
+        {
+          "type": "term",
+          "term": "Kopie a replika",
+          "definition": "Věrná napodobenina staršího kusu. Kopie není podvod, pokud se prodává jako kopie.",
+          "example": "Rokoková komoda vyrobená v roce 1990 jako stylový nábytek."
+        },
+        {
+          "type": "term",
+          "term": "Padělek",
+          "definition": "Kus, který byl vyroben nebo upraven tak, aby **klamal** – vydává se za starší, vzácnější nebo od jiného autora.",
+          "example": "Nová komoda uměle zestárlá a prodávaná jako barokní."
+        },
+        {
+          "type": "term",
+          "term": "Patina",
+          "definition": "Přirozená změna povrchu za mnoho let: ztmavnutí, ohlazení, jemná špína v prohlubních, opotřebení.",
+          "example": "Tmavší, hladce ohmataný okraj desky stolu."
+        },
+        {
+          "type": "term",
+          "term": "Svatba (mariáž)",
+          "definition": "Kus složený ze dvou nebo více částí, které k sobě původně nepatřily.",
+          "example": "Nástavec sekretáře z jednoho kusu postavený na komodu z jiného."
+        },
+        {
+          "type": "term",
+          "term": "Červotoč",
+          "definition": "Brouk, jehož larvy žijí ve dřevě a vyžírají v něm chodbičky. Dospělý brouk vylétá kulatým výletovým otvorem.",
+          "example": "Drobné kulaté dírky a jemná moučka (drť) pod nohou skříně."
+        },
+        {
+          "type": "heading",
+          "text": "Postup prohlídky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Celek**: odpovídá tvar, sloh a dřevo jedné době?",
+            "**Konstrukce**: ruční, nebo strojové spoje? Hřebíky a vruty odpovídají době?",
+            "**Stopy nástrojů** na skrytých plochách (záda, dna zásuvek, spodky).",
+            "**Opotřebení**: je tam, kde se kus používal?",
+            "**Pozdější zásahy**: otvory po starém kování, nové dřevo, změny rozměrů, výměny dýhy.",
+            "**Závěr**: originál, originál s opravami, svatba, stylový nábytek, nebo padělek."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stopy nástrojů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "stopa",
+            "co ukazuje"
+          ],
+          "rows": [
+            [
+              "rovné, mírně šikmé rýhy po rámové pile",
+              "ruční nebo starší řezání"
+            ],
+            [
+              "pravidelné oblouky",
+              "kotoučová pila (strojově, 19. stol. a později)"
+            ],
+            [
+              "mělké nepravidelné prohlubně",
+              "ruční hoblík"
+            ],
+            [
+              "pravidelné drobné vlnky",
+              "strojová hoblovka"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Dno zásuvky „barokní“ komody má pravidelné obloukové rýhy. Co to znamená?",
+          "answer": "Oblouky dělá **kotoučová pila**, která se rozšířila až v 19. století. Dno je tedy mladší než baroko: buď je vyměněné, nebo je celá komoda pozdější."
+        },
+        {
+          "type": "example",
+          "question": "Na vnitřní straně zásuvky vidíš kromě současných úchytek ještě zalepené otvory po jiném kování. Co z toho plyne?",
+          "answer": "Kování bylo **vyměněno**. To je běžná úprava a samo o sobě nevadí, ale musíš to uvést v popisu. Původní kování zvyšuje hodnotu."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "svědčí pro stáří",
+              "podezřelé"
+            ],
+            "items": [
+              {
+                "text": "opotřebené spodky nohou a vodicí lišty zásuvek",
+                "group": 0
+              },
+              {
+                "text": "ruční rybiny a rysky",
+                "group": 0
+              },
+              {
+                "text": "světlejší místo pod starým kováním",
+                "group": 0
+              },
+              {
+                "text": "oblouky po kotoučové pile na „barokním“ dnu",
+                "group": 1
+              },
+              {
+                "text": "stejnoměrné „červí“ díry i na skrytých hranách",
+                "group": 1
+              },
+              {
+                "text": "opotřebení na místech, kam se nikdo nedotkne",
+                "group": 1
+              },
+              {
+                "text": "dno zásuvky z překližky",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kus má otvory po červotoči, takže je jistě starý.",
+          "right": "Otvory se dají napodobit vrtáním nebo použít staré dřevo. Pravé chodbičky červotoče vedou křivolace pod povrchem; vyvrtané díry jsou rovné.",
+          "why": "Padělatelé napodobují nejznámější znaky stáří. Proto se rozhoduje podle souhrnu stop, ne podle jedné."
+        },
+        {
+          "type": "summary",
+          "text": "Pravost posuzuj postupně: celek, konstrukce, stopy nástrojů, opotřebení, pozdější zásahy. Rozlišuj originál, originál s opravami, svatbu, kopii a padělek. Rozhoduje souhrn stop."
+        }
+      ]
+    },
+    {
+      "title": "Logika opotřebení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Podívej se na své oblíbené boty. Ošoupané jsou tam, kde chodíš: na podrážce, na špičce. Nikdo neodře boty zevnitř na jazyku. Stejně je to s nábytkem."
+        },
+        {
+          "type": "text",
+          "text": "Opravdové stáří zanechá stopy **logicky** – tam, kam sahaly ruce, kde se šoupalo a kam svítilo slunce. Padělatel často zestárne kus „všude stejně“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Opotřebení",
+          "definition": "Ohlazení, odřeniny a oblé hrany vzniklé používáním.",
+          "example": "Ohlazený okraj desky stolu, kde se opíraly lokty."
+        },
+        {
+          "type": "term",
+          "term": "Patina",
+          "definition": "Přirozený vzhled starého povrchu: ztmavnutí, ohlazení, usazená špína v prohlubních.",
+          "example": "Tmavší řezba v hloubkách a světlejší na vrcholcích."
+        },
+        {
+          "type": "term",
+          "term": "Umělé zestárnutí",
+          "definition": "Úmyslné poškození nového kusu, aby vypadal staře: tlučení řetězem, vrtání „červích“ děr, moření, opalování.",
+          "example": "Pravidelné důlky po celé ploše desky."
+        },
+        {
+          "type": "term",
+          "term": "Pozdější zásah",
+          "definition": "Jakákoli změna po vzniku kusu: oprava, výměna dílu, zkrácení, přestavba, nový povrch.",
+          "example": "Zkrácené nohy stolu, aby se vešel pod nižší okno."
+        },
+        {
+          "type": "heading",
+          "text": "Kde má být opotřebení"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**spodky nohou** – oťukané, ohlazené, často o pár milimetrů kratší,",
+            "**vodicí lišty a spodní hrany zásuvek** – vyjeté žlábky,",
+            "**okolí klíčových dírek a úchytek** – ohlazené, ztmavlé od rukou,",
+            "**opěrky a přední hrana sedáku židlí**, příčky, na které se dávaly nohy,",
+            "**plochy na slunci** vybledlé nebo ztmavlé, místa pod kováním a lištami jiné barvy."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup posouzení opotřebení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Představ si, jak se kus po staletí používal: kde sedět, kde sahat, co vysouvat.",
+            "Najdi ta místa a podívej se, jestli jsou opotřebená víc než zbytek.",
+            "Hledej místa, kam se nikdo nedotkne: mají být méně opotřebená a s jinou patinou.",
+            "Prohlédni vnitřek a záda: špína a ztmavnutí mají být nerovnoměrné a hluboko v pórech.",
+            "Pokud je vše opotřebené stejně, nebo jsou ostré hrany na místech častého dotyku, zbystři."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Stolek má všechny hrany stejně zaoblené, včetně zadní hrany přisunuté ke zdi. Spodky nohou jsou ostré a čisté. Co si myslíš?",
+          "answer": "Opotřebení není logické: zadní hrana u zdi se neodírá, kdežto spodky nohou by měly být oťukané. Ukazuje to na **umělé zestárnutí** nebo na nové nohy."
+        },
+        {
+          "type": "example",
+          "question": "Sekretář má nástavec z ořechové kořenice a spodní komodu z jiné ořechové dýhy. Záda nástavce mají jiné stopy nástrojů než záda komody a nástavec přesahuje do stran. Co to je?",
+          "answer": "Pravděpodobně **svatba** (mariáž) – dvě části z různých kusů. U posudku je třeba to uvést, hodnota je nižší než u celistvého kusu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Restaurovaný kus je padělek.",
+          "right": "Odborná oprava (doplnění dýhy, přelepení spojů, obnova politury) není padělání. Musí se ale přiznat v popisu a dělat vratně.",
+          "why": "Padělání je klam o stáří, původu nebo autorovi. Poctivá a přiznaná oprava kus zachrání."
+        },
+        {
+          "type": "summary",
+          "text": "Opravdové stáří zanechává logické stopy: na nohách, hranách, zásuvkách, kolem úchytek, nerovnoměrné ztmavnutí. Rovnoměrné „všude stejné“ opotřebení, nelogická místa a nesourodé části ukazují na umělé zestárnutí, výměnu nebo svatbu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je „svatba“ (mariáž) u nábytku?",
+      "options": [
+        "kus složený z částí různých kusů",
+        "svatební truhla",
+        "nábytek darovaný ke svatbě",
+        "nábytek z jednoho kmene"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kopie prodávaná jako kopie je padělek.",
+      "answer": false,
+      "explanation": "Padělek musí klamat. Kopie prodávaná otevřeně jako kopie není podvod."
+    },
+    {
+      "type": "choice",
+      "question": "Pravidelné obloukové rýhy na dnu zásuvky dělá…",
+      "options": [
+        "kotoučová pila",
+        "rámová pila",
+        "ruční hoblík",
+        "dláto"
+      ],
+      "answer": 0,
+      "hints": [
+        "Mysli na nástroj, který se otáčí."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj stopu s významem.",
+      "pairs": [
+        [
+          "otvory po jiném kování",
+          "vyměněné kování"
+        ],
+        [
+          "oblouky po kotoučové pile",
+          "19. stol. a později"
+        ],
+        [
+          "rovné vyvrtané „červí“ díry",
+          "umělé zestárnutí"
+        ],
+        [
+          "vyjeté vodicí lišty zásuvek",
+          "skutečné používání"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky prohlídky.",
+      "items": [
+        "celek a sloh",
+        "konstrukce",
+        "stopy nástrojů",
+        "opotřebení",
+        "pozdější zásahy",
+        "závěr"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje přirozený vzhled starého povrchu (ztmavnutí, ohlazení)? (jedno slovo)",
+      "answers": [
+        "patina"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnoměrné opotřebení všech hran včetně zadní hrany u zdi ukazuje na přirozené stáří.",
+      "answer": false,
+      "explanation": "Přirozené opotřebení je nerovnoměrné a logické. Rovnoměrné ukazuje na umělé zestárnutí."
+    },
+    {
+      "type": "choice",
+      "question": "Kde má být u stolu největší opotřebení?",
+      "options": [
+        "spodky nohou a přední hrany desky",
+        "zadní strana lubu u zdi",
+        "spodní strana desky uprostřed",
+        "vnitřek nohou nahoře"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se liší pravé chodbičky červotoče od vyvrtaných děr?",
+      "options": [
+        "pravé vedou křivolace pod povrchem, vyvrtané jsou rovné",
+        "pravé jsou vždy větší",
+        "vyvrtané jsou vždy kulaté a pravé hranaté",
+        "nijak"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Odborně provedená a přiznaná oprava není padělání.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se odborně nazývá kus složený z částí, které k sobě nepatřily? (jedno slovo, francouzsky odvozené)",
+      "answers": [
+        "mariáž",
+        "mariaz",
+        "svatba"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč je důležité místo pod starým kováním světlejší?",
+      "options": [
+        "bylo chráněné před světlem, svědčí o dlouhém stáří kování na místě",
+        "je to vada dřeva",
+        "je to znak padělku",
+        "kvůli mořidlu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak postupuješ při posouzení pravosti starého nábytku?",
+      "answer": "Posoudím celek a sloh, pak konstrukci a spoje, stopy nástrojů na skrytých plochách, logiku opotřebení a pozdější zásahy. Závěr udělám podle souhrnu stop: originál, originál s opravami, svatba, kopie, nebo padělek."
+    },
+    {
+      "type": "open",
+      "question": "Čím se liší kopie, restaurovaný kus a padělek?",
+      "answer": "Kopie je napodobenina prodávaná jako napodobenina. Restaurovaný kus je originál s přiznanými opravami. Padělek je vyroben nebo upraven tak, aby klamal o stáří, původu nebo autorovi."
+    }
+  ]
+}

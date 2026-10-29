@@ -1,0 +1,410 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "povrchove-upravy",
+  "title": "Povrchové úpravy",
+  "emoji": "✨",
+  "explanations": [
+    {
+      "title": "Co je na povrchu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na staré komodě je hluboký lesk, na novém stolku z obchodu taky. Ale jsou to úplně jiné látky. Jedna se dá opravit lihem a tamponem, druhou bys musel celou strhnout."
+        },
+        {
+          "type": "text",
+          "text": "Povrchová úprava chrání dřevo a dává mu barvu a lesk. Pro starožitníka je i stopou stáří: když je na barokní skříni moderní lak, něco se s ní dělo."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Povrchová úprava",
+          "definition": "Všechno, čím se dřevo po vybroušení ošetří: zbarvení, napuštění, nátěr, lesk.",
+          "example": "Mořidlo a politura na skříni."
+        },
+        {
+          "type": "term",
+          "term": "Mořidlo",
+          "definition": "Látka, která dřevo **obarví**, ale nevytvoří na něm vrstvu. Kresba dřeva zůstane vidět.",
+          "example": "Buk namořený do hněda, aby připomínal ořech."
+        },
+        {
+          "type": "term",
+          "term": "Šelak",
+          "definition": "Přírodní pryskyřice, kterou vylučuje hmyz – červec lakový v jižní a jihovýchodní Asii. Rozpouští se v lihu.",
+          "example": "Šupinky šelaku rozpuštěné v lihu tvoří šelakový lak."
+        },
+        {
+          "type": "term",
+          "term": "Politura",
+          "definition": "Lesklý povrch ze šelaku nanášený **tamponem** (smotkem látky) v mnoha velmi tenkých vrstvách krouživými pohyby.",
+          "example": "Zrcadlově lesklá deska biedermeierovského sekretáře."
+        },
+        {
+          "type": "term",
+          "term": "Vosk",
+          "definition": "Ochrana ze včelího (nebo rostlinného) vosku, vtírá se a vyleští hadříkem. Lesk je měkký, matný až pololesklý.",
+          "example": "Selská dubová truhla ošetřená voskem."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled úprav"
+        },
+        {
+          "type": "table",
+          "head": [
+            "úprava",
+            "jak vypadá",
+            "co ji rozpustí"
+          ],
+          "rows": [
+            [
+              "vosk",
+              "měkký pololesk, dřevo „dýchá“",
+              "terpentýn, technický benzín"
+            ],
+            [
+              "olej (lněný)",
+              "matný, teplý odstín",
+              "prakticky nevratný, vsákne se"
+            ],
+            [
+              "šelak, politura",
+              "hluboký lesk, tenká vrstva",
+              "líh"
+            ],
+            [
+              "nitrolak (20. stol.)",
+              "lesk i mat, tvrdší",
+              "aceton, nitroředidlo"
+            ],
+            [
+              "polyuretan (2. pol. 20. stol.)",
+              "silná „plastová“ vrstva",
+              "běžná rozpouštědla skoro ne"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na skrytém místě (spodek desky) přiložíš vatu namočenou v lihu. Po chvíli je povrch lepkavý. Co to je?",
+          "answer": "Lak se rozpouští lihem, jde tedy nejspíš o **šelak** (politura). Tato zkouška se dělá vždy jen na skrytém malém místě."
+        },
+        {
+          "type": "example",
+          "question": "Líh ani aceton povrch nenarušily a vrstva je silná, „plastová“. Co z toho plyne pro barokní skříň?",
+          "answer": "Nejspíš jde o moderní syntetický lak (např. polyuretan), který se rozšířil až ve 2. polovině 20. století. Původní povrch byl odstraněn nebo překryt. Hodnota kusu je nižší."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Rozpustí se v lihu",
+                "back": "šelak / politura"
+              },
+              {
+                "front": "Rozpustí se v acetonu",
+                "back": "nitrolak"
+              },
+              {
+                "front": "Obarví, ale netvoří vrstvu",
+                "back": "mořidlo"
+              },
+              {
+                "front": "Měkký lesk, vtírá se",
+                "back": "vosk"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Starou politurovanou skříň „osvěžím“ moderním lakem ve spreji.",
+          "right": "Poškozená šelaková politura se opravuje šelakem, nanáší se tamponem. Nový syntetický lak na ni nepatří.",
+          "why": "Syntetický lak není vratný, na šelaku špatně drží a snižuje historickou i tržní hodnotu kusu."
+        },
+        {
+          "type": "summary",
+          "text": "Mořidlo barví, šelak a politura dávají lesk a rozpouští je líh, vosk a olej dávají měkký povrch. Nitrolak a polyuretan jsou až z 20. století. Zkoušky rozpouštědlem dělej jen na skrytém místě."
+        }
+      ]
+    },
+    {
+      "title": "Jak se dělá politura",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Restaurátor má v dílně láhev lihu, šupinky šelaku a smotek látky. Za pár dní z nich udělá zrcadlový lesk. Je to řemeslo, které se učí roky."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme, jak se dřevo připraví, obarví a vyleští – a čím se tradiční úpravy liší od moderních."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mořidlo",
+          "definition": "Barví dřevo bez vytvoření vrstvy. Bývá vodní, lihové, nebo chemické (reaguje s látkami ve dřevě).",
+          "example": "Dub vystavený čpavkovým výparům ztmavne, protože čpavek reaguje s tříslovinami."
+        },
+        {
+          "type": "term",
+          "term": "Šelak",
+          "definition": "Přírodní pryskyřice z výměšků červce lakového, rozpustná v lihu.",
+          "example": "Žluté až hnědé šupinky prodávané v drogerii pro restaurátory."
+        },
+        {
+          "type": "term",
+          "term": "Tampon",
+          "definition": "Smotek vlny nebo vaty zabalený do plátna, kterým se politura nanáší.",
+          "example": "Tampon velikosti vejce napuštěný šelakem."
+        },
+        {
+          "type": "term",
+          "term": "Politura",
+          "definition": "Leštěný povrch z mnoha tenkých vrstev šelaku nanášených tamponem.",
+          "example": "Lesklé plochy biedermeierovského nábytku."
+        },
+        {
+          "type": "term",
+          "term": "Vosk a olej",
+          "definition": "Tradiční jednoduché úpravy: vosk se vtírá a leští, olej (hlavně lněný) se vsákne do dřeva.",
+          "example": "Lidový nábytek, dubové truhly."
+        },
+        {
+          "type": "heading",
+          "text": "Postup klasické politury"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Dřevo se vybrousí a očistí od prachu.",
+            "Podle potřeby se namoří a nechá dobře vyschnout.",
+            "Póry se zaplní (např. pemzou a šelakem), aby byl povrch hladký.",
+            "Tamponem s řídkým šelakem a kapkou oleje se v mnoha sezeních nanáší tenké vrstvy krouživými pohyby a „osmičkami“.",
+            "Na konci se olej z povrchu odstraní tamponem s lihem – vznikne hluboký lesk."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na šelakové desce je bílý mapovitý flek po mokré sklenici. Co se stalo a dá se to opravit?",
+          "answer": "Šelak je citlivý na vodu a teplo, vlhkost v něm vytvořila bílý zákal. Restaurátor ho obvykle opraví lokálně, protože šelak jde znovu rozpustit a doplnit lihem a novým šelakem."
+        },
+        {
+          "type": "example",
+          "question": "Dubový stůl ztmavl rovnoměrně, kresba je vidět a na povrchu není žádná vrstva. Jak mohl být upraven?",
+          "answer": "Spíš **mořením**, nikoli lakem. U dubu se používalo i chemické moření, třeba čpavkovými výpary, které reagují s tříslovinami. Na povrchu pak může být jen vosk."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy se co používalo"
+        },
+        {
+          "type": "widget",
+          "widget": "timeline",
+          "props": {
+            "events": [
+              {
+                "year": 1600,
+                "label": "Vosk a olej, olejové laky"
+              },
+              {
+                "year": 1820,
+                "label": "Šíří se **šelaková politura** tamponem"
+              },
+              {
+                "year": 1930,
+                "label": "Nitrocelulózové laky v továrnách"
+              },
+              {
+                "year": 1965,
+                "label": "Polyuretanové laky"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Data jsou orientační. Šelak znali truhláři už dřív, technika politury tamponem se ale masově rozšířila až v 19. století."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost v dílně"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Líh a ředidla jsou **hořlavé**: pracuj bez otevřeného ohně a s větráním.",
+            "Hadry nasáklé **lněným olejem** se mohou samy vznítit. Rozlož je venku k zaschnutí, nebo je dej do uzavřené kovové nádoby s vodou.",
+            "Při práci s rozpouštědly a mořidly používej rukavice a ochranu očí.",
+            "Chemická mořidla a čpavek jen podle návodu a v dobře větraném prostoru."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mořidlo dřevo ochrání, takže po moření už nic nanášet nemusím.",
+          "right": "Mořidlo jen barví. Ochranu a lesk dává až další vrstva: vosk, šelak nebo lak.",
+          "why": "Mořidlo nevytváří na povrchu vrstvu, takže dřevo nechrání před vodou, špínou ani oděrem."
+        },
+        {
+          "type": "summary",
+          "text": "Politura je mnoho tenkých vrstev šelaku nanesených tamponem, rozpouští se lihem a jde opravit. Mořidlo jen barví. Vosk a olej jsou nejstarší úpravy, nitrolak a polyuretan patří do 20. století. Hadry s lněným olejem se mohou samy vznítit."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím se rozpouští šelak?",
+      "options": [
+        "lihem",
+        "vodou",
+        "acetonem jen po zahřátí",
+        "nerozpouští se ničím"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Mořidlo vytváří na dřevě ochrannou vrstvu.",
+      "answer": false,
+      "explanation": "Mořidlo jen barví, ochranu dává až vosk, šelak nebo lak."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje přírodní pryskyřice z výměšků červce lakového? (jedno slovo)",
+      "answers": [
+        "šelak",
+        "selak"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se nanáší politura?",
+      "options": [
+        "tamponem",
+        "štětcem ve dvou silných vrstvách",
+        "stříkací pistolí",
+        "válečkem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj úpravu s rozpouštědlem, které ji naruší.",
+      "pairs": [
+        [
+          "šelak",
+          "líh"
+        ],
+        [
+          "nitrolak",
+          "aceton"
+        ],
+        [
+          "vosk",
+          "terpentýn"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hadry nasáklé lněným olejem se mohou samy vznítit.",
+      "answer": true,
+      "explanation": "Olej při schnutí oxiduje a uvolňuje teplo. V zmuchlaném hadru se teplo hromadí."
+    },
+    {
+      "type": "choice",
+      "question": "Barokní skříň má silnou, „plastovou“ vrstvu laku, kterou nenaruší líh ani aceton. Co to nejspíš znamená?",
+      "options": [
+        "povrch byl ve 20. století upraven moderním lakem",
+        "je to původní barokní politura",
+        "je to vosk",
+        "je to mořidlo"
+      ],
+      "answer": 0,
+      "hints": [
+        "Zjisti, který lak odolá běžným rozpouštědlům.",
+        "Kdy se takový lak začal používat?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky klasické politury.",
+      "items": [
+        "vybroušení",
+        "moření",
+        "zaplnění pórů",
+        "nanášení šelaku tamponem",
+        "odstranění oleje lihem"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co způsobuje bílý mapovitý flek na šelakové desce?",
+      "options": [
+        "voda nebo teplo",
+        "sluneční světlo",
+        "prach",
+        "červotoč"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Zkoušku rozpouštědlem děláme na skrytém malém místě.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje smotek látky, kterým se nanáší politura? (jedno slovo)",
+      "answers": [
+        "tampon",
+        "tampón"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se na šelakovou polituru nedává moderní syntetický lak?",
+      "options": [
+        "není vratný a snižuje hodnotu",
+        "je moc měkký",
+        "rozpustí se ve vodě",
+        "nejde nanést"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak bys zjistil, jakou povrchovou úpravu má starý kus nábytku?",
+      "answer": "Na skrytém místě zkusím vatičkou líh: když se povrch rozpustí, jde o šelak. Když ne, zkusím aceton (nitrolak). Když nepovolí nic a vrstva je silná, jde o moderní syntetický lak. Vosk poznám podle měkkého lesku a toho, že ho rozpustí terpentýn."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady platí při povrchových úpravách?",
+      "answer": "Líh a ředidla jsou hořlavé, pracuji bez otevřeného ohně a větrám. Hadry s lněným olejem rozložím k zaschnutí nebo dám do kovové nádoby s vodou, protože se mohou samy vznítit. Používám rukavice a ochranu očí."
+    }
+  ]
+}
