@@ -1,0 +1,487 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zakladni-pojmy-bezpecnosti",
+  "title": "Základní pojmy: CIA, hrozba, zranitelnost, riziko",
+  "emoji": "🛡️",
+  "explanations": [
+    {
+      "title": "Dům a zloděj",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než zamkneš dům, přemýšlíš: co v něm mám cenného, kdo by to mohl chtít ukrást a kudy by se dostal dovnitř. Přesně tak uvažuje i kybernetická bezpečnost, jen místo televize chrání data a systémy."
+        },
+        {
+          "type": "text",
+          "text": "Bez společných pojmů se bezpečnost nedá ani popsat, ani řídit. S nimi umíš říct, co chráníš, před čím a jak moc ti to stojí za to."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aktivum",
+          "definition": "Cokoli, co má pro organizaci hodnotu a je potřeba to chránit: data, servery, aplikace, ale i lidé a dobré jméno.",
+          "example": "Databáze známek, školní server, e-mailové účty učitelů."
+        },
+        {
+          "type": "term",
+          "term": "Hrozba",
+          "definition": "Možná příčina škody. Něco nebo někdo, kdo může aktivu ublížit.",
+          "example": "Zloděj, útočník, škodlivý program, ale i povodeň nebo nepozorný zaměstnanec."
+        },
+        {
+          "type": "term",
+          "term": "Zranitelnost",
+          "definition": "Slabé místo, kterým může hrozba škodu způsobit.",
+          "example": "Neaktualizovaný systém, slabé heslo, otevřené okno v přízemí."
+        },
+        {
+          "type": "term",
+          "term": "Riziko",
+          "definition": "Míra toho, jak moc nám hrozí škoda. Zjednodušeně **riziko = pravděpodobnost × dopad**: jak pravděpodobné je, že hrozba zranitelnost využije, a jak velká škoda by vznikla.",
+          "example": "Častá událost s malým dopadem i vzácná s obrovským dopadem mohou mít podobné riziko."
+        },
+        {
+          "type": "term",
+          "term": "Opatření",
+          "definition": "Cokoli, co riziko snižuje: technické (firewall, tedy filtr síťového provozu), organizační (pravidla, školení) nebo fyzické (zámek).",
+          "example": "Aktualizace systému odstraní zranitelnost."
+        },
+        {
+          "type": "heading",
+          "text": "Dům jako příklad"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pojem",
+            "Dům",
+            "Škola"
+          ],
+          "rows": [
+            [
+              "aktivum",
+              "šperky v šuplíku",
+              "databáze známek"
+            ],
+            [
+              "hrozba",
+              "zloděj",
+              "útočník, který chce měnit známky"
+            ],
+            [
+              "zranitelnost",
+              "otevřené okno",
+              "učitel s heslem „Heslo123“"
+            ],
+            [
+              "opatření",
+              "zavřít a zamknout okno",
+              "silná hesla a druhý krok přihlášení (kód z mobilu)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hrozba sama nic neudělá, když nemá zranitelnost, kterou využije. A zranitelnost nevadí, když na ni žádná hrozba nemíří. Riziko vzniká, když se setkají."
+        },
+        {
+          "type": "heading",
+          "text": "Co chráníme: triáda CIA"
+        },
+        {
+          "type": "term",
+          "term": "Důvěrnost (Confidentiality)",
+          "definition": "Informaci vidí jen ten, kdo smí.",
+          "example": "Známky žáka vidí žák, rodiče a učitelé, ne spolužáci."
+        },
+        {
+          "type": "term",
+          "term": "Integrita (Integrity)",
+          "definition": "Informace je správná a úplná a nikdo ji nezměnil bez oprávnění.",
+          "example": "Nikdo si nepřepíše pětku na jedničku."
+        },
+        {
+          "type": "term",
+          "term": "Dostupnost (Availability)",
+          "definition": "Informace a systémy fungují, když je oprávněný uživatel potřebuje.",
+          "example": "Elektronická žákovská jde otevřít i večer před třídní schůzkou."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "důvěrnost",
+              "integrita",
+              "dostupnost"
+            ],
+            "items": [
+              {
+                "text": "únik databáze hesel",
+                "group": 0
+              },
+              {
+                "text": "cizí člověk čte e-maily ředitele",
+                "group": 0
+              },
+              {
+                "text": "útočník změní číslo účtu na faktuře",
+                "group": 1
+              },
+              {
+                "text": "žák si přepíše známku",
+                "group": 1
+              },
+              {
+                "text": "záplava požadavků přetíží e-shop",
+                "group": 2
+              },
+              {
+                "text": "škodlivý program zašifruje disky a nic nejde otevřít",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď incidenty podle toho, kterou vlastnost hlavně porušují."
+        },
+        {
+          "type": "example",
+          "question": "Server s webem školy běží bez aktualizací a útočníci na takové servery zkouší známý útok. Urči aktivum, hrozbu, zranitelnost a navrhni opatření.",
+          "answer": "Aktivum: **web školy a server**. Hrozba: **útočník** se známým útokem. Zranitelnost: **chybějící aktualizace**. Opatření: **aktualizovat** systém a nastavit pravidelné aktualizace, případně zálohy pro případ, že se útok podaří."
+        },
+        {
+          "type": "example",
+          "question": "Porovnej riziko: (a) výpadek Wi-Fi v jídelně, který nastane skoro každý týden a nikomu moc nevadí; (b) únik osobních údajů všech žáků, který je málo pravděpodobný.",
+          "answer": "(a) **vysoká pravděpodobnost, malý dopad**. (b) **nízká pravděpodobnost, velmi vysoký dopad** (poškození žáků, povinnosti podle předpisů o ochraně osobních údajů, ztráta důvěry). Riziko (b) bude nejspíš vyšší a zaslouží si víc pozornosti, i když se stane zřídka."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hrozba a zranitelnost jsou totéž.",
+          "right": "Hrozba je to, co může škodit (útočník). Zranitelnost je slabé místo, kterým to jde (slabé heslo).",
+          "why": "Hrozbu většinou ovlivnit nemůžeme, zranitelnost ano. Proto se opatření zaměřují hlavně na zranitelnosti."
+        },
+        {
+          "type": "summary",
+          "text": "Chráníme aktiva a jejich důvěrnost, integritu a dostupnost (CIA). Hrozba využívá zranitelnost; riziko je pravděpodobnost × dopad. Opatření riziko snižují."
+        }
+      ]
+    },
+    {
+      "title": "Řízení rizik",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Firma nemá peníze na to, aby se chránila úplně před vším. Musí se rozhodnout, co je nejdůležitější. K tomu slouží **analýza rizik**: postup, jak rizika najít, porovnat a vybrat, co s nimi udělat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aktivum, hrozba, zranitelnost",
+          "definition": "Aktivum je to, co má hodnotu (data, systém). Hrozba je možná příčina škody (útočník, požár). Zranitelnost je slabina, kterou hrozba využije (chyba v programu).",
+          "example": "Aktivum e-shop, hrozba útočník, zranitelnost neošetřený formulář."
+        },
+        {
+          "type": "term",
+          "term": "Riziko",
+          "definition": "Pravděpodobnost, že hrozba využije zranitelnost, krát dopad, který by to mělo. Často se hodnotí na škále 1–5.",
+          "example": "Pravděpodobnost 3, dopad 4 → riziko 12 z 25."
+        },
+        {
+          "type": "term",
+          "term": "Triáda CIA",
+          "definition": "Tři vlastnosti, které bezpečnost chrání: **důvěrnost** (vidí jen oprávnění), **integrita** (data jsou správná a nezměněná), **dostupnost** (fungují, když je potřeba).",
+          "example": "Přetížení serveru záplavou požadavků ohrožuje dostupnost."
+        },
+        {
+          "type": "heading",
+          "text": "Postup analýzy rizik"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Sepiš aktiva a urči jejich hodnotu (co by se stalo, kdyby se porušila C, I nebo A).",
+            "Ke každému aktivu najdi hrozby.",
+            "Najdi zranitelnosti, které by hrozby mohly využít.",
+            "Odhadni pravděpodobnost a dopad, spočítej riziko.",
+            "Seřaď rizika od největšího.",
+            "Rozhodni, co s každým rizikem uděláš, a nasaď opatření.",
+            "Pravidelně opakuj – svět i systémy se mění."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co s rizikem udělat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Způsob",
+            "Význam",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "snížit (zmírnit)",
+              "nasadit opatření",
+              "zavést přihlášení s kódem z mobilu"
+            ],
+            [
+              "přenést",
+              "škodu ponese někdo jiný",
+              "kybernetické pojištění, služba u poskytovatele"
+            ],
+            [
+              "vyhnout se",
+              "činnost vůbec nedělat",
+              "neukládat čísla karet, když je nepotřebuji"
+            ],
+            [
+              "přijmout",
+              "vědomě riziko nést",
+              "malé riziko, opatření by stálo víc než škoda"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Vypočti a seřaď rizika (škála 1–5): A – podvodné e-maily na učitele: P = 4, D = 4; B – požár serverovny: P = 1, D = 5; C – výpadek tiskárny: P = 3, D = 1.",
+          "answer": "A = 4 · 4 = **16**, B = 1 · 5 = **5**, C = 3 · 1 = **3**. Pořadí: A, B, C. Nejdřív se řeší podvodné e-maily: školení učitelů a druhý krok přihlášení (kód z mobilu)."
+        },
+        {
+          "type": "heading",
+          "text": "Dvě zásady navíc"
+        },
+        {
+          "type": "term",
+          "term": "Autentizace a autorizace",
+          "definition": "**Autentizace** = ověření, kdo jsi (heslo, otisk prstu). **Autorizace** = rozhodnutí, co smíš (číst, měnit, mazat).",
+          "example": "Přihlásíš se do žákovské (autentizace) a vidíš jen své známky (autorizace)."
+        },
+        {
+          "type": "term",
+          "term": "Princip nejmenších oprávnění",
+          "definition": "Každý uživatel a program dostane jen ta práva, která nutně potřebuje ke své práci.",
+          "example": "Účetní nepotřebuje administrátorská práva k serveru."
+        },
+        {
+          "type": "term",
+          "term": "Obrana do hloubky",
+          "definition": "Několik vrstev opatření za sebou. Když jedna selže, zastaví útok další.",
+          "example": "Firewall + aktualizace + antivir + zálohy + školení lidí."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Přihlášení otiskem prstu",
+                "back": "autentizace"
+              },
+              {
+                "front": "Žák nesmí zapisovat známky",
+                "back": "autorizace"
+              },
+              {
+                "front": "Škodlivý program zašifruje data a chce výkupné",
+                "back": "porušení dostupnosti (a často i důvěrnosti, když data ukradne)"
+              },
+              {
+                "front": "Kybernetické pojištění",
+                "back": "přenesení rizika"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Nejdřív si odpověz sám, pak kartu otoč."
+        },
+        {
+          "type": "example",
+          "question": "Ve škole mají všichni učitelé administrátorská práva na svých počítačích. Který princip to porušuje a proč je to nebezpečné?",
+          "answer": "Porušuje **princip nejmenších oprávnění**. Když učitel otevře škodlivou přílohu, malware poběží s administrátorskými právy a může se v systému usadit hlouběji. Bez nich by škoda byla menší."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dobrá bezpečnost znamená odstranit všechna rizika.",
+          "right": "Všechna rizika odstranit nejde. Cílem je snížit je na přijatelnou úroveň za rozumnou cenu.",
+          "why": "Opatření stojí peníze a omezují práci. Ochrana za milion pro data za tisíc nedává smysl."
+        },
+        {
+          "type": "summary",
+          "text": "Analýza rizik: aktiva → hrozby → zranitelnosti → riziko (pravděpodobnost × dopad) → rozhodnutí (snížit, přenést, vyhnout se, přijmout). Pomáhají principy nejmenších oprávnění a obrany do hloubky; autentizace ověřuje identitu, autorizace práva."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj pojem s příkladem.",
+      "pairs": [
+        [
+          "aktivum",
+          "databáze zákazníků"
+        ],
+        [
+          "hrozba",
+          "útočník"
+        ],
+        [
+          "zranitelnost",
+          "neaktualizovaný systém"
+        ],
+        [
+          "opatření",
+          "instalace aktualizací"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Útočník změní na faktuře číslo účtu. Kterou vlastnost z triády CIA porušil?",
+      "options": [
+        "integritu",
+        "důvěrnost",
+        "dostupnost",
+        "žádnou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Útok DDoS vyřadí e-shop na několik hodin. Která vlastnost je porušena?",
+      "options": [
+        "dostupnost",
+        "integrita",
+        "důvěrnost",
+        "autentizace"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Pravděpodobnost je 3, dopad 5 (škála 1–5). Riziko = pravděpodobnost × dopad =",
+      "answers": [
+        "15"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hrozba a zranitelnost jsou synonyma.",
+      "answer": false,
+      "explanation": "Hrozba je možná příčina škody, zranitelnost slabé místo, které hrozba využije."
+    },
+    {
+      "type": "choice",
+      "question": "Co je autorizace?",
+      "options": [
+        "rozhodnutí, co smí ověřený uživatel dělat",
+        "ověření, kdo uživatel je",
+        "šifrování dat",
+        "záloha dat"
+      ],
+      "answer": 0,
+      "hints": [
+        "Autentizace odpovídá na otázku „kdo jsi?“."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj způsob zacházení s rizikem s příkladem.",
+      "pairs": [
+        [
+          "snížit",
+          "zavést vícefaktorové ověření"
+        ],
+        [
+          "přenést",
+          "uzavřít pojištění"
+        ],
+        [
+          "vyhnout se",
+          "přestat ukládat čísla karet"
+        ],
+        [
+          "přijmout",
+          "malé riziko vědomě nést"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Účetní dostane administrátorská práva k celé síti „pro jistotu“. Který princip se porušuje?",
+      "options": [
+        "princip nejmenších oprávnění",
+        "obrana do hloubky",
+        "dostupnost",
+        "přenesení rizika"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Cílem řízení rizik je odstranit všechna rizika bez ohledu na cenu.",
+      "answer": false,
+      "explanation": "Rizika se snižují na přijatelnou úroveň; opatření nemá stát víc než chráněná hodnota."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky analýzy rizik.",
+      "items": [
+        "sepsat aktiva",
+        "najít hrozby",
+        "najít zranitelnosti",
+        "ohodnotit riziko",
+        "rozhodnout o opatřeních"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkráceně jmenuje triáda důvěrnost, integrita, dostupnost (podle anglických názvů)?",
+      "answers": [
+        "CIA"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je příkladem obrany do hloubky?",
+      "options": [
+        "firewall, aktualizace, antivir, zálohy a školení zároveň",
+        "jedno velmi drahé zařízení na hranici sítě",
+        "silné heslo administrátora",
+        "zákaz internetu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli triádu CIA a ke každé vlastnosti uveď příklad útoku.",
+      "answer": "Důvěrnost: data vidí jen oprávnění – porušení je únik databáze. Integrita: data jsou správná a nezměněná – porušení je přepsání čísla účtu. Dostupnost: systém funguje, když je potřeba – porušení je útok DDoS nebo ransomware."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli vztah mezi hrozbou, zranitelností a rizikem.",
+      "answer": "Hrozba je možná příčina škody, zranitelnost slabé místo, které může využít. Riziko vzniká, když se setkají, a vyjadřuje se jako pravděpodobnost, že k tomu dojde, krát dopad škody."
+    }
+  ]
+}

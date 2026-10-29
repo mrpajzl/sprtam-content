@@ -1,0 +1,413 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zalohy-incidenty",
+  "title": "Zálohy a reakce na incident",
+  "emoji": "🚨",
+  "explanations": [
+    {
+      "title": "Den útoku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pondělí ráno. Účetní volá, že nejde otevřít žádný soubor a na ploše je zpráva s požadavkem na výkupné. V takové chvíli rozhoduje, jestli firma má **použitelné zálohy** a **připravený plán**, co dělat. Bez nich hrozí týdny výpadku i krach firmy."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Záloha",
+          "definition": "Kopie dat uložená jinde než originál, ze které jde data obnovit, když se originál ztratí, poškodí nebo zašifruje.",
+          "example": "Každou noc se data serveru zkopírují na zálohovací zařízení a jednou týdně mimo budovu."
+        },
+        {
+          "type": "term",
+          "term": "Ransomware",
+          "definition": "Připomenutí: škodlivý program, který zašifruje data a požaduje výkupné. Často se snaží zašifrovat i zálohy, které najde v síti.",
+          "example": "Soubory s příponou .locked a soubor s pokyny k platbě."
+        },
+        {
+          "type": "term",
+          "term": "Bezpečnostní událost a incident",
+          "definition": "**Událost** je cokoli podezřelého, co může souviset s bezpečností. **Incident** je událost, která bezpečnost skutečně narušila nebo vážně ohrožuje (důvěrnost, integritu nebo dostupnost).",
+          "example": "Jeden neúspěšný pokus o přihlášení = událost. Zašifrované disky = incident."
+        },
+        {
+          "type": "heading",
+          "text": "Den útoku krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "8:05 – Účetní ohlásí problém na helpdesk podle postupu, který zná ze školení (**detekce**).",
+            "8:15 – Správce potvrdí ransomware a určí rozsah: které počítače a servery jsou zasažené (**analýza**).",
+            "8:20 – Zasažené stroje odpojí od sítě, zablokuje podezřelé účty (**omezení**, aby se útok nešířil).",
+            "Během dne – vedení rozhodne o komunikaci, ohlášení úřadům a o přizvání odborníků.",
+            "Další dny – najde se, jak útočník pronikl, malware se odstraní, díra se opraví (**odstranění**).",
+            "Data se obnoví z čistých záloh a systémy se postupně vrátí do provozu (**obnova**).",
+            "Po incidentu – společná porada: co se stalo, co fungovalo a co změnit (**poučení**)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč přežije jen ten, kdo zálohuje dobře"
+        },
+        {
+          "type": "term",
+          "term": "Pravidlo 3-2-1",
+          "definition": "Měj aspoň **3** kopie dat (originál + 2 zálohy), na **2** různých druzích médií a **1** kopii mimo hlavní místo. Dnes se doporučuje mít aspoň jednu kopii navíc **offline** nebo neměnnou.",
+          "example": "Data na serveru, záloha na NAS ve firmě a záloha v cloudu s neměnnými verzemi."
+        },
+        {
+          "type": "term",
+          "term": "Offline a neměnná záloha",
+          "definition": "Offline záloha není připojená k síti (odpojený disk, páska). Neměnná (*immutable*) záloha se po určitou dobu nedá smazat ani přepsat, ani administrátorským účtem.",
+          "example": "Ransomware zašifruje vše v síti, ale k odpojenému disku v trezoru se nedostane."
+        },
+        {
+          "type": "example",
+          "question": "Firma zálohuje každou noc na síťový disk, který je trvale připojený jako jednotka Z: na všech počítačích. Co se stane při útoku ransomwaru?",
+          "answer": "Ransomware zašifruje i soubory na **Z:**, protože je vidí jako obyčejný disk. Firma přijde o data i o zálohy. Oprava: zálohy nesmí být běžně přístupné uživatelům, potřebuje **offline nebo neměnnou kopii** a kopii mimo budovu (pravidlo 3-2-1)."
+        },
+        {
+          "type": "example",
+          "question": "Firma zálohy dělá roky, ale obnovu nikdy nezkusila. Proč je to problém?",
+          "answer": "Záloha může být neúplná, poškozená nebo bez klíče k dešifrování a obnova může trvat mnohem déle, než se čekalo. Zjistí se to až při incidentu. Obnovu je proto třeba **pravidelně testovat**."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "událost",
+              "incident"
+            ],
+            "items": [
+              {
+                "text": "jeden špatně zadaný kód při přihlášení",
+                "group": 0
+              },
+              {
+                "text": "antivir zachytil a odstranil soubor v příloze",
+                "group": 0
+              },
+              {
+                "text": "skenování portů z internetu zastavené firewallem",
+                "group": 0
+              },
+              {
+                "text": "zašifrované disky serveru",
+                "group": 1
+              },
+              {
+                "text": "útočník odcizil databázi zákazníků",
+                "group": 1
+              },
+              {
+                "text": "cizí člověk je přihlášený k e-mailu ředitele",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: jen podezřelé, nebo skutečné narušení bezpečnosti?"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při ransomwaru hned zaplatíme výkupné, je to nejrychlejší cesta zpět.",
+          "right": "Postupuj podle plánu: odpojit, analyzovat, obnovit ze záloh a spolupracovat s odborníky a úřady.",
+          "why": "Zaplacení nezaručuje, že dostaneš funkční klíč, ani že útočníci data nezveřejní. Financuje další útoky a firmu označí jako ochotnou platit."
+        },
+        {
+          "type": "summary",
+          "text": "Zálohy podle pravidla 3-2-1 s offline nebo neměnnou kopií a s testovanou obnovou. Incident se řeší podle připraveného plánu: detekce a analýza, omezení, odstranění, obnova, poučení."
+        }
+      ]
+    },
+    {
+      "title": "Plánování",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správce musí předem rozhodnout: jak často zálohovat, jakým způsobem, kolik dat smí firma maximálně ztratit a jak rychle se má vrátit do provozu. A musí sepsat, kdo co dělá, když incident nastane. Tohle plánování si projdeme."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Záloha a obnova",
+          "definition": "Záloha je kopie dat uložená jinde. Obnova je vrácení dat ze zálohy zpět do provozu.",
+          "example": "Obnova smazané složky ze včerejší zálohy."
+        },
+        {
+          "type": "term",
+          "term": "Plná, přírůstková a rozdílová záloha",
+          "definition": "**Plná** zkopíruje všechno. **Přírůstková** (inkrementální) jen změny od **poslední zálohy jakéhokoli typu**. **Rozdílová** (diferenciální) změny od **poslední plné** zálohy.",
+          "example": "V neděli plná, v ostatní dny přírůstková."
+        },
+        {
+          "type": "term",
+          "term": "RPO a RTO",
+          "definition": "**RPO** (*Recovery Point Objective*) = kolik dat (měřeno časem) smí firma nejvýš ztratit. **RTO** (*Recovery Time Objective*) = za jak dlouho nejpozději musí systém znovu běžet.",
+          "example": "RPO 24 h → zálohovat aspoň jednou denně. RTO 4 h → obnova musí zvládnout do 4 hodin."
+        },
+        {
+          "type": "term",
+          "term": "Replikace a RAID",
+          "definition": "Průběžné kopírování dat na jiný disk nebo server. Chrání před poruchou disku, ale **není záloha**: smazání nebo zašifrování se okamžitě zkopíruje taky.",
+          "example": "RAID 1 zrcadlí dva disky; když ransomware zašifruje data, jsou zašifrovaná na obou."
+        },
+        {
+          "type": "heading",
+          "text": "Typy záloh v praxi"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Rychlost zálohy a místo",
+            "Co je potřeba k obnově"
+          ],
+          "rows": [
+            [
+              "plná",
+              "nejpomalejší, nejvíc místa",
+              "jen ta jedna záloha"
+            ],
+            [
+              "přírůstková",
+              "nejrychlejší, nejméně místa",
+              "poslední plná + **všechny** přírůstkové po ní"
+            ],
+            [
+              "rozdílová",
+              "postupně roste během týdne",
+              "poslední plná + **poslední** rozdílová"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Plná záloha v neděli, přírůstkové po–čt. Ve čtvrtek večer po záloze se disk rozbije. Co potřebuješ k obnově? A co kdyby byly zálohy rozdílové?",
+          "answer": "Přírůstkové: **nedělní plnou + pondělní, úterní, středeční a čtvrteční** přírůstkovou, v tomto pořadí. Rozdílové: **nedělní plnou + čtvrteční rozdílovou**, protože ta obsahuje všechny změny od neděle."
+        },
+        {
+          "type": "example",
+          "question": "E-shop určil RPO 1 hodinu a RTO 2 hodiny. Stačí jedna noční záloha na pásku uložená v jiném městě?",
+          "answer": "**Nestačí.** Noční záloha znamená ztrátu až 24 hodin dat (RPO 1 h vyžaduje zálohu nebo kopii aspoň každou hodinu). Dovoz pásky a obnova navíc nejspíš nezvládnou 2 hodiny. Potřebuje častější zálohy (např. hodinové snímky) a rychle dostupnou kopii; páska mimo město může zůstat jako další vrstva."
+        },
+        {
+          "type": "heading",
+          "text": "Plán reakce na incident"
+        },
+        {
+          "type": "term",
+          "term": "Incident a plán reakce",
+          "definition": "Incident je událost, která narušila bezpečnost. Plán reakce předem určuje role, kontakty, postupy a rozhodovací pravomoci.",
+          "example": "Kdo smí odpojit server, kdo komunikuje s médii, kdo hlásí úřadům."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Příprava",
+              "Detekce a analýza",
+              "Omezení šíření",
+              "Odstranění příčiny",
+              "Obnova provozu",
+              "Poučení a zlepšení"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Proklikej fáze. Proč je to kruh? Poučení z incidentu zlepší přípravu na další."
+        },
+        {
+          "type": "term",
+          "term": "CSIRT / CERT",
+          "definition": "Tým, který se zabývá řešením bezpečnostních incidentů a pomáhá s ním ostatním. Má ho velká firma, ale i stát.",
+          "example": "V ČR působí národní CSIRT.CZ (provozuje sdružení CZ.NIC) a vládní GovCERT.CZ při Národním úřadu pro kybernetickou a informační bezpečnost (NÚKIB)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Máme RAID a zrcadlení na druhý server, takže zálohy nepotřebujeme.",
+          "right": "RAID a replikace chrání před poruchou hardwaru. Před smazáním, chybou člověka a ransomwarem chrání jen záloha s historií verzí, nejlépe offline nebo neměnná.",
+          "why": "Replikace okamžitě zkopíruje i smazání nebo zašifrování. Záloha uchová stav z doby před problémem."
+        },
+        {
+          "type": "summary",
+          "text": "Zálohovací plán vychází z RPO (kolik dat smím ztratit) a RTO (jak rychle obnovit); kombinuje plné, přírůstkové nebo rozdílové zálohy podle pravidla 3-2-1 a obnova se testuje. Replikace není záloha. Plán reakce na incident: příprava, detekce a analýza, omezení, odstranění, obnova, poučení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co říká pravidlo 3-2-1?",
+      "options": [
+        "3 kopie dat, na 2 druzích médií, 1 kopie mimo hlavní místo",
+        "3 zálohy denně, 2 týdně, 1 měsíčně",
+        "3 servery, 2 firewally, 1 správce",
+        "zálohovat 3krát, obnovit 2krát, smazat jednou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "RAID 1 (zrcadlení disků) nahrazuje zálohu.",
+      "answer": false,
+      "explanation": "Smazání nebo zašifrování se zrcadlí okamžitě na oba disky."
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ zálohy s tím, co ukládá.",
+      "pairs": [
+        [
+          "plná",
+          "všechna data"
+        ],
+        [
+          "přírůstková",
+          "změny od poslední zálohy jakéhokoli typu"
+        ],
+        [
+          "rozdílová",
+          "změny od poslední plné zálohy"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Plná záloha v neděli, rozdílové každý den. Co je potřeba k obnově ve středu večer?",
+      "options": [
+        "nedělní plná + středeční rozdílová",
+        "nedělní plná + pondělní, úterní a středeční rozdílová",
+        "jen středeční rozdílová",
+        "jen nedělní plná"
+      ],
+      "answer": 0,
+      "hints": [
+        "Rozdílová záloha obsahuje všechny změny od poslední plné."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj zkratku s významem.",
+      "pairs": [
+        [
+          "RPO",
+          "kolik dat smí firma nejvýš ztratit"
+        ],
+        [
+          "RTO",
+          "za jak dlouho musí systém znovu běžet"
+        ],
+        [
+          "CSIRT",
+          "tým pro řešení incidentů"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Firma má RPO 6 hodin. Kolik nejméně záloh denně musí dělat, aby ho splnila?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ],
+      "hints": [
+        "Den má 24 hodin."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď fáze reakce na incident.",
+      "items": [
+        "příprava",
+        "detekce a analýza",
+        "omezení šíření",
+        "odstranění příčiny",
+        "obnova provozu",
+        "poučení"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co uděláš jako první po zjištění ransomwaru na počítači?",
+      "options": [
+        "odpojím počítač od sítě a nahlásím incident",
+        "zaplatím výkupné",
+        "smažu všechny zálohy",
+        "počkám, jestli to samo nezmizí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Zálohu je potřeba pravidelně zkoušet obnovit.",
+      "answer": true,
+      "explanation": "Jinak se až při incidentu zjistí, že je neúplná nebo nefunkční."
+    },
+    {
+      "type": "choice",
+      "question": "Proč nemá být zálohovací disk trvale připojený jako síťová jednotka všem uživatelům?",
+      "options": [
+        "Ransomware by zašifroval i zálohy.",
+        "Disk by se rychleji opotřeboval.",
+        "Zálohy by zabraly víc místa.",
+        "Uživatelé by neviděli své soubory."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který případ je bezpečnostní incident, a ne jen událost?",
+      "options": [
+        "útočník je přihlášený k cizímu e-mailovému účtu",
+        "jeden neúspěšný pokus o přihlášení",
+        "antivir zachytil a smazal škodlivou přílohu",
+        "firewall zablokoval skenování portů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kterou zálohu je k obnově potřeba nejvíc kusů?",
+      "options": [
+        "přírůstkovou",
+        "rozdílovou",
+        "plnou",
+        "u všech stejně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Navrhni zálohování pro malou firmu a zdůvodni ho.",
+      "answer": "Podle pravidla 3-2-1: data na serveru, denní záloha na NAS a kopie do cloudu nebo na odpojený disk mimo firmu, z toho aspoň jedna offline nebo neměnná. Frekvence podle RPO, pravidelný test obnovy a zálohy nedostupné běžným uživatelům, aby je nezašifroval ransomware."
+    },
+    {
+      "type": "open",
+      "question": "Popiš fáze reakce na bezpečnostní incident.",
+      "answer": "Příprava (plán, role, zálohy), detekce a analýza (zjistit, co se děje a v jakém rozsahu), omezení šíření (odpojit zasažené systémy), odstranění příčiny, obnova provozu z čistých záloh a nakonec poučení, které zlepší přípravu."
+    }
+  ]
+}

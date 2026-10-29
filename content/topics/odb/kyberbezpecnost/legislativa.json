@@ -1,0 +1,442 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "legislativa",
+  "title": "Legislativa: GDPR, zákon o kybernetické bezpečnosti, NIS2",
+  "emoji": "⚖️",
+  "explanations": [
+    {
+      "title": "Dva zákony, dva cíle",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když firmě unikne databáze zákazníků, nejde jen o ostudu. Má zákonné povinnosti: incident ohlásit, často i lidem, kterých se týká, a hrozí jí vysoká pokuta. Jako IT technik budeš tyto povinnosti pomáhat plnit, proto potřebuješ vědět, co po firmě zákony chtějí."
+        },
+        {
+          "type": "text",
+          "text": "V tomto oboru jsou dvě hlavní skupiny pravidel. **GDPR** chrání lidi a jejich osobní údaje. **NIS2** a český **zákon o kybernetické bezpečnosti** chrání fungování důležitých služeb a organizací. Údaje v tématu odpovídají stavu v roce 2026."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nařízení a směrnice EU",
+          "definition": "**Nařízení** platí ve všech státech EU přímo, stejně jako zákon. **Směrnice** stanoví cíl a každý stát ji musí převést (**transponovat**) do vlastního zákona.",
+          "example": "GDPR je nařízení. NIS2 je směrnice, v ČR ji provádí zákon o kybernetické bezpečnosti."
+        },
+        {
+          "type": "term",
+          "term": "Osobní údaj",
+          "definition": "Jakákoli informace o konkrétním člověku, kterého lze přímo nebo nepřímo určit.",
+          "example": "Jméno, e-mail jan.novak@…, rodné číslo, IP adresa, fotografie, poloha telefonu."
+        },
+        {
+          "type": "term",
+          "term": "Správce a zpracovatel",
+          "definition": "**Správce** určuje, proč a jak se osobní údaje zpracovávají, a nese za ně odpovědnost. **Zpracovatel** je zpracovává pro správce podle jeho pokynů.",
+          "example": "Škola je správce údajů žáků; firma, která jí provozuje elektronickou žákovskou, je zpracovatel."
+        },
+        {
+          "type": "heading",
+          "text": "GDPR: ochrana lidí"
+        },
+        {
+          "type": "text",
+          "text": "**GDPR** je nařízení EU č. 2016/679 o ochraně osobních údajů, použitelné od 25. května 2018. V ČR ho doplňuje zákon č. 110/2019 Sb., o zpracování osobních údajů. Dozorovým úřadem je **Úřad pro ochranu osobních údajů (ÚOOÚ)**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Zpracovávat jen s **právním důvodem** (např. souhlas, plnění smlouvy, povinnost ze zákona, oprávněný zájem).",
+            "Jen tolik údajů, kolik je nutné (**minimalizace**), a jen pro daný účel.",
+            "Uchovávat jen po nezbytnou dobu.",
+            "Údaje **zabezpečit** vhodnými technickými a organizačními opatřeními.",
+            "Lidé mají práva: přístup ke svým údajům, oprava, výmaz, námitka a další.",
+            "**Porušení zabezpečení** osobních údajů hlásit ÚOOÚ do **72 hodin** od zjištění, pokud představuje riziko pro lidi; při vysokém riziku informovat i dotčené osoby."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "NIS2 a zákon o kybernetické bezpečnosti: ochrana služeb"
+        },
+        {
+          "type": "term",
+          "term": "NIS2",
+          "definition": "Směrnice EU 2022/2555 o vysoké společné úrovni kybernetické bezpečnosti. Státy ji měly převést do svých zákonů do 17. října 2024. Oproti předchozí úpravě dopadá na mnohem víc organizací: středně velké a velké firmy v řadě odvětví (energetika, doprava, zdravotnictví, digitální služby, výroba…) a veřejnou správu.",
+          "example": "Středně velký výrobce potravin nebo poskytovatel cloudových služeb."
+        },
+        {
+          "type": "term",
+          "term": "NÚKIB",
+          "definition": "Národní úřad pro kybernetickou a informační bezpečnost. V ČR dozoruje kybernetickou bezpečnost podle zákona o kybernetické bezpečnosti, vydává doporučení a varování a přijímá hlášení incidentů.",
+          "example": "Organizace v režimu zákona hlásí významný incident NÚKIB."
+        },
+        {
+          "type": "text",
+          "text": "V ČR NIS2 provádí **nový zákon o kybernetické bezpečnosti**, účinný od podzimu 2025, který nahradil původní zákon č. 181/2014 Sb. Rozlišuje organizace s vyššími a nižšími povinnostmi. Povinné osoby musí zavést řízení rizik a bezpečnostní opatření, hlásit významné incidenty a odpovědnost nese i jejich **vedení**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "GDPR",
+            "NIS2 / zákon o kybernetické bezpečnosti"
+          ],
+          "rows": [
+            [
+              "co chrání",
+              "osobní údaje lidí",
+              "fungování služeb a systémů organizací"
+            ],
+            [
+              "koho se týká",
+              "každého, kdo zpracovává osobní údaje",
+              "vybrané organizace podle odvětví a velikosti, veřejnou správu"
+            ],
+            [
+              "dozor v ČR",
+              "ÚOOÚ",
+              "NÚKIB"
+            ],
+            [
+              "hlášení",
+              "porušení zabezpečení os. údajů do 72 h",
+              "významný incident (podle NIS2 první varování do 24 h)"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "E-shopu s 30 zaměstnanci unikne databáze zákazníků s e-maily a hashovanými hesly. Který předpis určitě řeší a co musí udělat?",
+          "answer": "Jde o **porušení zabezpečení osobních údajů** podle **GDPR**. E-shop (správce) musí incident zdokumentovat, posoudit riziko a pokud hrozí riziko pro zákazníky, **do 72 hodin ohlásit ÚOOÚ**. Při vysokém riziku informuje i zákazníky (např. ať si změní hesla). Zda se ho týká i zákon o kybernetické bezpečnosti, záleží na odvětví a velikosti."
+        },
+        {
+          "type": "example",
+          "question": "Je IP adresa osobní údaj?",
+          "answer": "**Může být.** Když ji jde spojit s konkrétním člověkem (např. poskytovatel internetu ví, komu ji přidělil, nebo ji web spojí s účtem), jde o osobní údaj. Proto se s logy obsahujícími IP adresy zachází podle GDPR."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "GDPR",
+              "NIS2 / zákon o kybernetické bezpečnosti"
+            ],
+            "items": [
+              {
+                "text": "právo na výmaz údajů",
+                "group": 0
+              },
+              {
+                "text": "dozor ÚOOÚ",
+                "group": 0
+              },
+              {
+                "text": "souhlas se zpracováním",
+                "group": 0
+              },
+              {
+                "text": "dozor NÚKIB",
+                "group": 1
+              },
+              {
+                "text": "povinnosti podle odvětví a velikosti organizace",
+                "group": 1
+              },
+              {
+                "text": "odpovědnost vedení za kybernetickou bezpečnost",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, ke kterému předpisu věc patří."
+        },
+        {
+          "type": "mistake",
+          "wrong": "GDPR se týká jen velkých firem a internetových gigantů.",
+          "right": "GDPR se týká každého, kdo zpracovává osobní údaje v rámci své činnosti: malé firmy, školy, spolku i živnostníka.",
+          "why": "Velikost ovlivňuje jen některé povinnosti. Ochrana osobních údajů platí pro všechny."
+        },
+        {
+          "type": "summary",
+          "text": "GDPR (nařízení EU 2016/679, od 2018, dozor ÚOOÚ) chrání osobní údaje: právní důvod, minimalizace, zabezpečení, práva lidí, hlášení porušení do 72 h. NIS2 (směrnice 2022/2555) provádí v ČR zákon o kybernetické bezpečnosti (od 2025, dozor NÚKIB): řízení rizik, opatření, hlášení incidentů, odpovědnost vedení."
+        }
+      ]
+    },
+    {
+      "title": "Případy z praxe",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zákony se nejlépe pochopí na konkrétních situacích. Projdeme několik případů, se kterými se IT technik ve firmě nebo ve škole potká, a u každého určíme, co z předpisů plyne. Stav odpovídá roku 2026."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "GDPR",
+          "definition": "Nařízení EU 2016/679 o ochraně osobních údajů, používané od 25. 5. 2018. Platí přímo v celé EU. V ČR dozoruje Úřad pro ochranu osobních údajů (ÚOOÚ).",
+          "example": "Pravidla pro to, jak škola smí nakládat s fotkami žáků."
+        },
+        {
+          "type": "term",
+          "term": "Osobní údaj a subjekt údajů",
+          "definition": "Osobní údaj je informace o určitelném člověku. Subjekt údajů je ten člověk.",
+          "example": "Žák (subjekt) a jeho jméno, známky, fotografie (osobní údaje)."
+        },
+        {
+          "type": "term",
+          "term": "Porušení zabezpečení osobních údajů",
+          "definition": "Bezpečnostní incident, při kterém jsou osobní údaje zničeny, ztraceny, změněny nebo zpřístupněny někomu nepovolanému.",
+          "example": "Ztracený nešifrovaný notebook s daty zákazníků."
+        },
+        {
+          "type": "term",
+          "term": "Kybernetický incident a NIS2",
+          "definition": "Incident = narušení bezpečnosti informací nebo služeb. NIS2 je směrnice EU 2022/2555; v ČR ji provádí zákon o kybernetické bezpečnosti, nad nímž dohlíží NÚKIB.",
+          "example": "Ransomware vyřadí nemocniční systém."
+        },
+        {
+          "type": "heading",
+          "text": "Postup při úniku osobních údajů (GDPR)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zastavit únik a zajistit stopy.",
+            "Zjistit, jaké údaje a kolika lidí se to týká.",
+            "Posoudit riziko pro dotčené lidi.",
+            "Pokud je riziko: ohlásit ÚOOÚ do 72 hodin od zjištění.",
+            "Pokud je riziko vysoké: bez zbytečného odkladu informovat dotčené osoby.",
+            "Vše zdokumentovat (i porušení, která se nehlásí)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Učitel nechá ve vlaku nešifrovaný USB disk se jmény, adresami a zdravotními informacemi žáků. Co se má stát?",
+          "answer": "Je to **porušení zabezpečení osobních údajů**, navíc zdravotní údaje patří mezi **zvlášť citlivé**. Škola (správce) posoudí riziko – zde vysoké – a do **72 hodin ohlásí ÚOOÚ** a informuje rodiče, resp. dotčené žáky. Poučení: citlivá data jen na šifrovaných médiích nebo ve školním systému, ne na USB."
+        },
+        {
+          "type": "example",
+          "question": "Ředitel chce kvůli „bezpečnosti“ ukládat záznamy z kamer na chodbách navždy. Je to v pořádku?",
+          "answer": "**Není.** Podle GDPR se údaje uchovávají jen po **nezbytně dlouhou dobu** pro daný účel (zásada omezení uložení) a jen v nutném rozsahu (minimalizace). Škola musí dobu uchování určit a zdůvodnit a pak záznamy mazat."
+        },
+        {
+          "type": "heading",
+          "text": "NIS2 v praxi"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Týká se vybraných organizací podle **odvětví** a **velikosti** (typicky středně velké a velké) a veřejné správy; zda se na organizaci vztahuje, je třeba ověřit podle zákona.",
+            "Povinnosti: řízení rizik, bezpečnostní opatření (např. MFA, zálohy, řízení přístupu, bezpečnost dodavatelů), školení, hlášení incidentů.",
+            "Směrnice NIS2 stanoví hlášení významného incidentu ve stupních: první varování do 24 hodin, oznámení do 72 hodin, závěrečná zpráva do jednoho měsíce.",
+            "Za plnění odpovídá i **vedení** organizace, nejen IT oddělení.",
+            "Za porušení hrozí pokuty; NIS2 stanoví horní hranice až 10 mil. EUR nebo 2 % celosvětového obratu u nejvýznamnějších subjektů."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Lhůta pro ohlášení porušení zabezpečení os. údajů ÚOOÚ",
+                "back": "72 hodin od zjištění (pokud je riziko pro lidi)"
+              },
+              {
+                "front": "Nejvyšší pokuta podle GDPR",
+                "back": "až 20 mil. EUR nebo 4 % celosvětového ročního obratu, podle toho, co je vyšší"
+              },
+              {
+                "front": "Kdo v ČR dozoruje kybernetickou bezpečnost podle NIS2?",
+                "back": "NÚKIB"
+              },
+              {
+                "front": "Je NIS2 nařízení, nebo směrnice?",
+                "back": "Směrnice – státy ji převádějí do svých zákonů."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus odpovědět zpaměti, pak kartu otoč."
+        },
+        {
+          "type": "example",
+          "question": "Středně velký dodavatel pitné vody je zasažen ransomwarem a dodávky jsou ohrožené. Co plyne z NIS2?",
+          "answer": "Vodárenství patří mezi odvětví, na která NIS2 míří. Organizace v režimu zákona musí **významný incident hlásit** (podle NIS2 první varování do 24 hodin) a řešit ho podle svých bezpečnostních opatření. Pokud unikly i osobní údaje zákazníků, platí **navíc** povinnosti podle GDPR vůči ÚOOÚ."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když firma řeší incident podle zákona o kybernetické bezpečnosti, GDPR už neřeší.",
+          "right": "Předpisy platí souběžně. Jeden incident může vyžadovat hlášení NÚKIB i ÚOOÚ.",
+          "why": "Každý předpis chrání něco jiného: zákon o kybernetické bezpečnosti fungování služeb, GDPR práva lidí."
+        },
+        {
+          "type": "summary",
+          "text": "GDPR: osobní údaje jen s právním důvodem, minimálně a po nezbytnou dobu, zabezpečené; porušení hlásit ÚOOÚ do 72 h. NIS2 a zákon o kybernetické bezpečnosti: vybrané organizace řídí rizika, zavádějí opatření a hlásí incidenty NÚKIB; odpovídá i vedení. Oba předpisy platí souběžně."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který úřad v ČR dozoruje ochranu osobních údajů?",
+      "options": [
+        "ÚOOÚ",
+        "NÚKIB",
+        "ČTÚ",
+        "Policie ČR"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který úřad v ČR dozoruje kybernetickou bezpečnost podle zákona o kybernetické bezpečnosti?",
+      "options": [
+        "NÚKIB",
+        "ÚOOÚ",
+        "Ministerstvo školství",
+        "Česká národní banka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Do kolika hodin od zjištění se podle GDPR hlásí porušení zabezpečení osobních údajů dozorovému úřadu?",
+      "answers": [
+        "72"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "GDPR se týká jen firem s více než 250 zaměstnanci.",
+      "answer": false,
+      "explanation": "Týká se každého, kdo zpracovává osobní údaje, i malých firem a škol."
+    },
+    {
+      "type": "choice",
+      "question": "Je NIS2 nařízení, nebo směrnice EU?",
+      "options": [
+        "směrnice, státy ji převádějí do svých zákonů",
+        "nařízení, platí přímo",
+        "mezinárodní norma ISO",
+        "doporučení bez závaznosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem z GDPR s příkladem.",
+      "pairs": [
+        [
+          "správce",
+          "škola, která vede evidenci žáků"
+        ],
+        [
+          "zpracovatel",
+          "firma provozující žákovskou pro školu"
+        ],
+        [
+          "subjekt údajů",
+          "žák"
+        ],
+        [
+          "osobní údaj",
+          "e-mailová adresa žáka"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co z toho NENÍ zásada GDPR?",
+      "options": [
+        "uchovávat údaje co nejdéle pro případ potřeby",
+        "minimalizace údajů",
+        "omezení účelu",
+        "integrita a důvěrnost"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Nejvyšší pokuta podle GDPR je až 20 mil. EUR nebo kolik procent celosvětového ročního obratu?",
+      "answers": [
+        "4",
+        "4 %",
+        "4%"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jeden incident může vyžadovat hlášení NÚKIB i ÚOOÚ.",
+      "answer": true,
+      "explanation": "Předpisy platí souběžně a chrání různé věci."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém roce se GDPR začalo používat?",
+      "options": [
+        "2018",
+        "2016",
+        "2014",
+        "2022"
+      ],
+      "answer": 0,
+      "hints": [
+        "Nařízení bylo přijato v roce 2016 a začalo se používat o dva roky později."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo podle NIS2 nese odpovědnost za kybernetickou bezpečnost organizace?",
+      "options": [
+        "i vedení organizace",
+        "jen správce sítě",
+        "jen dodavatel IT",
+        "nikdo konkrétní"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky při úniku osobních údajů.",
+      "items": [
+        "zastavit únik",
+        "zjistit rozsah dotčených údajů",
+        "posoudit riziko pro lidi",
+        "ohlásit ÚOOÚ do 72 hodin",
+        "informovat dotčené osoby při vysokém riziku"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej GDPR a NIS2: co chrání, koho se týkají a kdo je v ČR dozoruje.",
+      "answer": "GDPR chrání osobní údaje lidí, týká se každého, kdo je zpracovává, a dozoruje ho ÚOOÚ. NIS2 (v ČR zákon o kybernetické bezpečnosti) chrání fungování důležitých služeb, týká se vybraných organizací podle odvětví a velikosti a veřejné správy, dozoruje NÚKIB."
+    },
+    {
+      "type": "open",
+      "question": "Co musí firma udělat, když jí uniknou osobní údaje zákazníků?",
+      "answer": "Zastavit únik, zjistit rozsah, posoudit riziko a pokud je riziko pro lidi, do 72 hodin ohlásit ÚOOÚ; při vysokém riziku informovat i zákazníky. Vše zdokumentovat a přijmout opatření, aby se to neopakovalo."
+    }
+  ]
+}

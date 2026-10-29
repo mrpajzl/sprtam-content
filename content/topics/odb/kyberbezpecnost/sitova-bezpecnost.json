@@ -1,0 +1,499 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sitova-bezpecnost",
+  "title": "Síťová bezpečnost: firewall, VPN, segmentace",
+  "emoji": "🧱",
+  "explanations": [
+    {
+      "title": "Hrad s branami",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Počítače ve firmě nebo ve škole jsou propojené do sítě a ta je připojená k internetu. Z internetu na ni každou minutu někdo zkouší útoky. Síťová bezpečnost určuje, kdo smí dovnitř, kam smí uvnitř chodit a jak se bezpečně připojit zvenku."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Paket",
+          "definition": "Malý kousek dat, na který se rozdělí každá komunikace po síti. Má hlavičku s adresou odesílatele a příjemce.",
+          "example": "Načtení stránky = stovky paketů."
+        },
+        {
+          "type": "term",
+          "term": "IP adresa a port",
+          "definition": "Připomenutí: IP adresa určuje počítač v síti (číslo domu), port určuje službu na něm (číslo bytu).",
+          "example": "Webový server 203.0.113.5, port 443 (HTTPS)."
+        },
+        {
+          "type": "heading",
+          "text": "Síť jako hrad"
+        },
+        {
+          "type": "text",
+          "text": "Středověký hrad měl hradby, bránu se strážemi, nádvoří pro obchodníky a vnitřní hrad, kam smělo jen pár lidí. Dobře chráněná síť vypadá stejně."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Hrad",
+            "Síť"
+          ],
+          "rows": [
+            [
+              "brána se strážemi",
+              "firewall"
+            ],
+            [
+              "nádvoří pro obchodníky",
+              "DMZ – servery přístupné z internetu"
+            ],
+            [
+              "oddělené části hradu",
+              "segmenty sítě, VLAN"
+            ],
+            [
+              "tajná chodba pro posly",
+              "VPN"
+            ],
+            [
+              "hlídka, která si všímá podezřelých",
+              "IDS / IPS"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Firewall",
+          "definition": "Zařízení nebo program, který podle **pravidel** propouští nebo zahazuje síťový provoz. Rozhoduje podle IP adres, portů, protokolu a u lepších firewallů i podle stavu spojení a obsahu.",
+          "example": "Pravidlo: „Z internetu povol jen port 443 na webový server, vše ostatní zakaž.“"
+        },
+        {
+          "type": "term",
+          "term": "DMZ (demilitarizovaná zóna)",
+          "definition": "Oddělená část sítě pro servery, které musí být dostupné z internetu (web, e-mail). Když je útočník ovládne, vnitřní síť je pořád za dalším firewallem.",
+          "example": "Webový server školy je v DMZ, databáze žáků ve vnitřní síti."
+        },
+        {
+          "type": "term",
+          "term": "Segmentace a VLAN",
+          "definition": "Segmentace = rozdělení sítě na menší části, mezi kterými provoz hlídají pravidla. **VLAN** (virtuální LAN) je technika, jak na jednom fyzickém přepínači vytvořit víc oddělených sítí.",
+          "example": "Zvlášť síť učitelů, žáků, hostů, tiskáren a kamer."
+        },
+        {
+          "type": "term",
+          "term": "VPN",
+          "definition": "*Virtual Private Network*. Šifrovaný tunel přes internet, kterým se vzdálený počítač nebo pobočka bezpečně připojí do vnitřní sítě.",
+          "example": "Učitel z domova přes VPN otevře školní server, jako by seděl ve škole."
+        },
+        {
+          "type": "term",
+          "term": "IDS a IPS",
+          "definition": "Systém, který sleduje provoz a hledá známky útoku. **IDS** (*detection*) útok jen ohlásí. **IPS** (*prevention*) ho rovnou zablokuje.",
+          "example": "IPS zastaví pokus o zneužití známé chyby ve webovém serveru."
+        },
+        {
+          "type": "example",
+          "question": "Škola má jednu plochou síť: počítače žáků, učitelů, server se známkami i Wi-Fi pro hosty. Žákův notebook se nakazí červem (škodlivým programem, který se sám šíří po síti). Co hrozí a co navrhneš?",
+          "answer": "Červ se šíří sám, takže v ploché síti může dosáhnout až na **server se známkami**. Návrh: **segmentace** – oddělit žáky, učitele, servery a hosty do VLAN a firewallem mezi nimi povolit jen nutný provoz (žáci k serveru vůbec, učitelé jen přes aplikaci)."
+        },
+        {
+          "type": "example",
+          "question": "Firma chce, aby obchodníci z hotelů přistupovali k interním dokumentům. Navrhni řešení.",
+          "answer": "**VPN** s vícefaktorovým ověřením (heslo + kód nebo klíč v mobilu). Obchodník se připojí šifrovaným tunelem, takže hotelová Wi-Fi provoz nepřečte, a firewall povolí přístup z VPN jen k potřebným serverům (princip nejmenších oprávnění)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "firewall",
+              "VPN",
+              "segmentace",
+              "IDS/IPS"
+            ],
+            "items": [
+              {
+                "text": "zakáže vše kromě portu 443 na web",
+                "group": 0
+              },
+              {
+                "text": "filtruje provoz podle pravidel",
+                "group": 0
+              },
+              {
+                "text": "šifrovaný tunel z domova do firmy",
+                "group": 1
+              },
+              {
+                "text": "propojí pobočku s centrálou přes internet",
+                "group": 1
+              },
+              {
+                "text": "kamery v oddělené síti",
+                "group": 2
+              },
+              {
+                "text": "hosté nevidí počítače zaměstnanců",
+                "group": 2
+              },
+              {
+                "text": "hlásí podezřelé vzorce provozu",
+                "group": 3
+              },
+              {
+                "text": "zablokuje známý útok v provozu",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, které opatření danou věc dělá."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Máme firewall na hranici sítě, takže uvnitř je všechno bezpečné.",
+          "right": "Útok často začne uvnitř (podvodný e-mail, nakažený notebook). Proto i uvnitř segmentace, pravidla mezi segmenty a sledování provozu.",
+          "why": "Jedna hradba nestačí: když ji útočník obejde, má volnou cestu všude. To je obrana do hloubky."
+        },
+        {
+          "type": "summary",
+          "text": "Firewall filtruje provoz podle pravidel, DMZ odděluje veřejné servery, segmentace a VLAN rozdělují vnitřní síť, VPN dává bezpečný přístup zvenku, IDS/IPS hledají a blokují útoky. Dohromady tvoří obranu do hloubky."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a útoky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správce sítě musí umět napsat pravidla firewallu, zabezpečit Wi-Fi a poznat typické síťové útoky. Projdeme to prakticky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Firewall",
+          "definition": "Filtr síťového provozu. Prochází pravidla shora a použije **první**, které na paket sedí: povolit, nebo zahodit.",
+          "example": "`povol TCP z libovolné adresy na 203.0.113.5 port 443`"
+        },
+        {
+          "type": "term",
+          "term": "Paketový a stavový firewall",
+          "definition": "**Paketový** posuzuje každý paket zvlášť jen podle adres a portů. **Stavový** si pamatuje navázaná spojení a odpovědi na ně automaticky pustí. Moderní firewally (NGFW) rozumí i aplikacím.",
+          "example": "Stavový firewall pustí odpověď webového serveru na dotaz, který odešel zevnitř."
+        },
+        {
+          "type": "term",
+          "term": "Výchozí zákaz (default deny)",
+          "definition": "Na konci pravidel je „vše ostatní zakaž“. Povoluje se jen to, co je opravdu potřeba.",
+          "example": "Nový server nemá otevřený žádný port, dokud ho správce vědomě nepovolí."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla firewallu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "#",
+            "Zdroj",
+            "Cíl",
+            "Port",
+            "Akce"
+          ],
+          "rows": [
+            [
+              "1",
+              "internet",
+              "webový server v DMZ",
+              "443 (HTTPS)",
+              "povolit"
+            ],
+            [
+              "2",
+              "síť učitelů",
+              "server známek",
+              "443",
+              "povolit"
+            ],
+            [
+              "3",
+              "síť žáků",
+              "server známek",
+              "jakýkoli",
+              "zakázat"
+            ],
+            [
+              "4",
+              "vše",
+              "vše",
+              "vše",
+              "zakázat (výchozí)"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Sepiš, jaký provoz je opravdu potřeba (kdo, kam, který port).",
+            "Napiš povolující pravidla co nejpřesněji (ne „vše na vše“).",
+            "Pořadí: konkrétní pravidla nahoru, obecná dolů.",
+            "Na konec dej výchozí zákaz.",
+            "Zapni logování a pravidla pravidelně kontroluj a ruš nepotřebná."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Správce dá na první místo pravidlo „povol vše ze sítě žáků“ a na třetí „zakaž síť žáků → server známek“. Co se stane?",
+          "answer": "Firewall použije **první** pravidlo, které sedí. Provoz žáků na server známek odpovídá už pravidlu 1, takže projde. Pravidlo 3 se **nikdy neuplatní**. Konkrétní zákaz musí být nad obecným povolením."
+        },
+        {
+          "type": "heading",
+          "text": "Wi-Fi"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zabezpečení",
+            "Stav"
+          ],
+          "rows": [
+            [
+              "otevřená síť",
+              "bez šifrování, provoz může číst kdokoli v dosahu"
+            ],
+            [
+              "WEP",
+              "prolomené, nepoužívat"
+            ],
+            [
+              "WPA2",
+              "stále běžné; s dlouhým heslem přijatelné"
+            ],
+            [
+              "WPA3",
+              "doporučené; odolnější proti hádání hesla"
+            ],
+            [
+              "WPA2/WPA3-Enterprise",
+              "každý uživatel má vlastní přihlášení (firmy, školy, eduroam)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Typické síťové útoky"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "DoS",
+                "back": "Zahlcení služby z jednoho zdroje, aby přestala fungovat (útok na dostupnost)."
+              },
+              {
+                "front": "DDoS",
+                "back": "Zahlcení z tisíců zařízení najednou, typicky z botnetu (sítě napadených zařízení ovládaných útočníkem)."
+              },
+              {
+                "front": "MitM",
+                "back": "Útočník se vloží mezi dvě strany a čte nebo mění komunikaci."
+              },
+              {
+                "front": "Skenování portů",
+                "back": "Útočník zjišťuje, které služby na serveru běží; bývá to příprava útoku."
+              },
+              {
+                "front": "Falešný přístupový bod (evil twin)",
+                "back": "Wi-Fi se stejným názvem jako pravá; kdo se připojí, jde přes útočníka."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ke každému útoku si zkus říct, které opatření pomůže."
+        },
+        {
+          "type": "example",
+          "question": "E-shop během slevové akce zahltí miliony požadavků z různých zemí. Co to je a jak se bránit?",
+          "answer": "Útok **DDoS** na dostupnost. Firewall u serveru sám nestačí – zahltí se už linka. Pomáhá služba ochrany proti DDoS u poskytovatele nebo CDN, která provoz odfiltruje dřív, než dorazí k serveru, a omezení počtu požadavků (rate limiting)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "VPN mě udělá na internetu anonymním a ochrání před viry.",
+          "right": "VPN šifruje provoz mezi tebou a VPN serverem. Neochrání před škodlivými programy ani podvodnými stránkami a provozovatel VPN tvůj provoz vidí.",
+          "why": "Tunel končí na VPN serveru; dál jde provoz normálně. Firemní VPN slouží hlavně k bezpečnému přístupu do vnitřní sítě."
+        },
+        {
+          "type": "summary",
+          "text": "Firewall prochází pravidla shora a použije první shodné; konkrétní pravidla nahoru, na konec výchozí zákaz. Wi-Fi zabezpečit WPA3 (nebo WPA2 s dlouhým heslem), WEP a otevřené sítě ne. Typické útoky: DoS/DDoS, MitM, skenování portů, falešná Wi-Fi."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co dělá firewall?",
+      "options": [
+        "propouští nebo blokuje síťový provoz podle pravidel",
+        "šifruje disky",
+        "zálohuje data",
+        "odstraňuje viry ze souborů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kam umístíš webový server, který musí být dostupný z internetu?",
+      "options": [
+        "do DMZ",
+        "do sítě účetních",
+        "do stejné sítě jako databáze žáků",
+        "do sítě hostů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Firewall při hledání pravidla použije první pravidlo, které na paket sedí.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj zkratku s významem.",
+      "pairs": [
+        [
+          "VPN",
+          "šifrovaný tunel přes internet"
+        ],
+        [
+          "VLAN",
+          "logicky oddělená síť na jednom přepínači"
+        ],
+        [
+          "IDS",
+          "detekuje a hlásí útoky"
+        ],
+        [
+          "IPS",
+          "detekuje a blokuje útoky"
+        ],
+        [
+          "DMZ",
+          "zóna pro veřejně dostupné servery"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které zabezpečení Wi-Fi je dnes doporučené?",
+      "options": [
+        "WPA3",
+        "WEP",
+        "otevřená síť",
+        "skrytý název sítě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkráceně jmenuje útok, kdy tisíce zařízení zahltí službu požadavky? (4 písmena)",
+      "answers": [
+        "DDoS",
+        "DDOS"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč dělit síť na segmenty?",
+      "options": [
+        "Aby se útok nebo malware nemohl volně šířit po celé síti.",
+        "Aby byl internet rychlejší.",
+        "Aby nebyl potřeba firewall.",
+        "Aby šlo použít WEP."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Komerční VPN ochrání počítač před malwarem a phishingem.",
+      "answer": false,
+      "explanation": "VPN jen šifruje provoz po VPN server."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená výchozí zákaz (default deny)?",
+      "options": [
+        "Povolí se jen výslovně povolený provoz, vše ostatní se zablokuje.",
+        "Zakáže se jen známý škodlivý provoz.",
+        "Firewall je ve výchozím stavu vypnutý.",
+        "Uživatelé nesmí na internet."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď pravidla firewallu do správného pořadí.",
+      "items": [
+        "zakázat síť žáků → server známek",
+        "povolit vše ze sítě žáků",
+        "zakázat vše ostatní"
+      ],
+      "hints": [
+        "Konkrétní pravidla patří výš než obecná."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V kavárně jsou dvě Wi-Fi se stejným názvem. Jaký útok to může být?",
+      "options": [
+        "falešný přístupový bod (evil twin)",
+        "ransomware",
+        "SQL injection",
+        "credential stuffing"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Čím se liší stavový firewall od paketového?",
+      "options": [
+        "Pamatuje si navázaná spojení a pustí odpovědi na ně.",
+        "Šifruje provoz.",
+        "Funguje jen na Wi-Fi.",
+        "Nemá pravidla."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Navrhni základní zabezpečení sítě malé školy.",
+      "answer": "Firewall na hranici s výchozím zákazem, webový server v DMZ, vnitřní síť rozdělená do VLAN (učitelé, žáci, servery, hosté, zařízení) s pravidly mezi nimi, Wi-Fi s WPA3 nebo Enterprise přihlášením, VPN s MFA pro vzdálený přístup a sledování provozu."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je VPN a k čemu slouží ve firmě.",
+      "answer": "VPN je šifrovaný tunel přes internet. Ve firmě umožní zaměstnancům z domova nebo pobočkám bezpečně se připojit do vnitřní sítě, aniž by provoz mohl číst někdo po cestě."
+    }
+  ]
+}

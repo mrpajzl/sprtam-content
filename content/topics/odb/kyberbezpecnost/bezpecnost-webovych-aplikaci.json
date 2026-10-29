@@ -1,0 +1,436 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "bezpecnost-webovych-aplikaci",
+  "title": "Zabezpečení webových aplikací (OWASP)",
+  "emoji": "🕷️",
+  "explanations": [
+    {
+      "title": "Nevěř vstupu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "E-shop, školní systém, internetové bankovnictví – všechno jsou webové aplikace. Přijímají data od kohokoli na internetu. Stačí, aby programátor jednou zapomněl, že vstup může poslat útočník, a ten ovládne databázi nebo účty ostatních uživatelů."
+        },
+        {
+          "type": "text",
+          "text": "Zlaté pravidlo celého tématu: **nikdy nevěř vstupu od uživatele**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Webová aplikace",
+          "definition": "Program, který běží na serveru a uživatel ho ovládá přes prohlížeč. Data obvykle ukládá do databáze.",
+          "example": "Elektronická žákovská knížka."
+        },
+        {
+          "type": "term",
+          "term": "Vstup",
+          "definition": "Cokoli, co do aplikace přijde zvenku: pole formuláře, parametry v URL, cookies, hlavičky požadavku, nahrané soubory.",
+          "example": "`?hledat=boty` v adrese e-shopu."
+        },
+        {
+          "type": "term",
+          "term": "SQL",
+          "definition": "Jazyk, kterým aplikace mluví s databází: hledá, vkládá, mění a maže záznamy.",
+          "example": "`SELECT * FROM uzivatele WHERE jmeno = 'eva'`"
+        },
+        {
+          "type": "term",
+          "term": "OWASP a OWASP Top 10",
+          "definition": "OWASP je nezisková komunita pro bezpečnost webových aplikací. Její **Top 10** je žebříček nejzávažnějších druhů zranitelností webů, který se aktualizuje po několika letech.",
+          "example": "Ve vydání 2021 je na 1. místě chybné řízení přístupu, na 3. místě injection (včetně XSS)."
+        },
+        {
+          "type": "heading",
+          "text": "Injection: když se data stanou příkazem"
+        },
+        {
+          "type": "term",
+          "term": "SQL injection",
+          "definition": "Útočník vloží do vstupu kus SQL. Aplikace ho slepí s vlastním dotazem a databáze ho provede jako příkaz.",
+          "example": "Do pole jméno napíše `' OR '1'='1`."
+        },
+        {
+          "type": "example",
+          "question": "Aplikace skládá dotaz: `\"SELECT * FROM uzivatele WHERE jmeno = '\" + jmeno + \"' AND heslo = '\" + heslo + \"'\"`. Co se stane, když útočník do jména napíše `admin' --`?",
+          "answer": "Vznikne `SELECT * FROM uzivatele WHERE jmeno = 'admin' --' AND heslo = '…'`. Znaky `--` v SQL začínají komentář, takže **kontrola hesla zmizí** a útočník se přihlásí jako admin. Oprava: **parametrizovaný dotaz**, např. `WHERE jmeno = ? AND heslo_hash = ?`, kde data databáze nikdy neprovede jako příkaz."
+        },
+        {
+          "type": "heading",
+          "text": "XSS: cizí skript na tvé stránce"
+        },
+        {
+          "type": "term",
+          "term": "XSS (Cross-Site Scripting)",
+          "definition": "Útočník dostane do stránky vlastní JavaScript, který se pak spustí v prohlížeči jiných uživatelů. Může jim ukrást přihlášení nebo dělat akce jejich jménem.",
+          "example": "Komentář `<script>…</script>` uložený v diskusi se spustí každému, kdo ji otevře."
+        },
+        {
+          "type": "term",
+          "term": "Escapování výstupu",
+          "definition": "Převedení znaků se zvláštním významem v HTML na neškodné zápisy (`<` na `&lt;`, `>` na `&gt;`, `\"` na `&quot;`). Prohlížeč je pak zobrazí jako text, nespustí je.",
+          "example": "Komentář se zobrazí jako text „<script>…“, ale neprovede se."
+        },
+        {
+          "type": "example",
+          "question": "Diskuse ukládá komentáře a vypisuje je přes `innerHTML`. Jak útok funguje a jak ho opravit?",
+          "answer": "Útočník uloží komentář se skriptem (**uložené XSS**). Každý návštěvník ho dostane do stránky a jeho prohlížeč skript spustí. Oprava: výstup **escapovat** podle kontextu (šablonovací systém to dělá automaticky), v JS používat `textContent` místo `innerHTML` a navíc nastavit **Content Security Policy**, která zakáže nepovolené skripty."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "SQL injection",
+              "XSS"
+            ],
+            "items": [
+              {
+                "text": "`' OR '1'='1` v přihlašovacím poli",
+                "group": 0
+              },
+              {
+                "text": "smazání tabulky přes vyhledávání",
+                "group": 0
+              },
+              {
+                "text": "obrana: parametrizované dotazy",
+                "group": 0
+              },
+              {
+                "text": "`<script>` v komentáři",
+                "group": 1
+              },
+              {
+                "text": "skript krade cookie jiných uživatelů",
+                "group": 1
+              },
+              {
+                "text": "obrana: escapování výstupu",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď příklady a obrany k útoku, kam patří. Pamatuj: SQL injection míří na databázi, XSS na prohlížeče ostatních."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Do formuláře jsem dal JavaScriptovou kontrolu, takže nebezpečné znaky na server nepřijdou.",
+          "right": "Kontrolu musí udělat **server**. Útočník pošle požadavek přímo, mimo formulář, a kontrolu v prohlížeči obejde.",
+          "why": "Vše, co běží v prohlížeči, má útočník pod kontrolou. Kontrola v prohlížeči je jen pohodlí pro poctivé uživatele."
+        },
+        {
+          "type": "summary",
+          "text": "Nikdy nevěř vstupu. Proti SQL injection pomáhají parametrizované dotazy, proti XSS escapování výstupu, `textContent` a Content Security Policy. Přehled nejčastějších chyb dává OWASP Top 10."
+        }
+      ]
+    },
+    {
+      "title": "Kontrolní seznam",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš zkontrolovat aplikaci, kterou napsal spolužák, než ji škola nasadí. Kde začít? Pomůže přehled nejčastějších chyb a ke každé jedno hlavní opatření."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zranitelnost",
+          "definition": "Připomenutí: slabé místo, které může útočník využít ke škodě.",
+          "example": "Chybějící kontrola oprávnění v aplikaci."
+        },
+        {
+          "type": "term",
+          "term": "OWASP Top 10",
+          "definition": "Žebříček nejzávažnějších druhů zranitelností webových aplikací od komunity OWASP. Slouží jako kontrolní seznam pro vývojáře a testery.",
+          "example": "Vydání 2021 vede chybné řízení přístupu (Broken Access Control)."
+        },
+        {
+          "type": "term",
+          "term": "Autentizace a autorizace",
+          "definition": "Připomenutí: autentizace ověří, kdo jsi; autorizace rozhodne, co smíš.",
+          "example": "Přihlásíš se jako žák (autentizace) a smíš vidět jen své známky (autorizace)."
+        },
+        {
+          "type": "term",
+          "term": "Session a cookie",
+          "definition": "Po přihlášení server vytvoří **session** (relaci) a prohlížeči pošle její identifikátor v **cookie**. Prohlížeč ho pak posílá s každým požadavkem; kdo ho ukradne, vydává se za uživatele.",
+          "example": "Cookie `session=8f2a…` s příznaky `HttpOnly; Secure; SameSite=Lax`."
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní chyby a obrana"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Chyba",
+            "Příklad",
+            "Hlavní obrana"
+          ],
+          "rows": [
+            [
+              "chybné řízení přístupu",
+              "změním v URL `/znamky?zak=1024` na `1025` a vidím cizí známky",
+              "kontrola oprávnění na serveru u **každého** požadavku"
+            ],
+            [
+              "injection (SQL, příkazy OS)",
+              "`' OR '1'='1` v přihlášení",
+              "parametrizované dotazy, validace vstupu"
+            ],
+            [
+              "XSS",
+              "skript v komentáři",
+              "escapování výstupu, Content Security Policy"
+            ],
+            [
+              "slabá autentizace",
+              "neomezený počet pokusů o heslo",
+              "MFA, omezení pokusů, bezpečné ukládání hesel (hash se solí)"
+            ],
+            [
+              "chybná konfigurace",
+              "zapnutý ladicí výpis chyb na produkci, výchozí heslo admina",
+              "zabezpečená výchozí konfigurace, revize nastavení"
+            ],
+            [
+              "zastaralé komponenty",
+              "knihovna se známou zranitelností",
+              "aktualizace, sledování závislostí"
+            ],
+            [
+              "CSRF",
+              "cizí web odešle formulář tvým jménem, když jsi přihlášený",
+              "CSRF tokeny, cookie `SameSite`"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi všechny vstupy aplikace (formuláře, URL, cookies, API, nahrávání souborů).",
+            "U každého ověř validaci **na serveru** (typ, délka, povolené hodnoty).",
+            "Zkontroluj, že dotazy do databáze jsou parametrizované.",
+            "Zkontroluj, že výstup do HTML se escapuje.",
+            "U každé stránky a akce ověř oprávnění: smí to tento uživatel?",
+            "Zkontroluj přihlašování: hashovaná hesla, omezení pokusů, MFA, bezpečné cookies.",
+            "Zkontroluj konfiguraci a verze knihoven.",
+            "Nálezy sepiš s prioritou a doporučenou opravou."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "V aplikaci je odkaz `/faktura?id=5521`. Přihlášený zákazník změní číslo na 5522 a uvidí cizí fakturu. Jaká je to chyba a jak ji opravit?",
+          "answer": "**Chybné řízení přístupu** (konkrétně tzv. IDOR, přímý odkaz na cizí objekt). Server ověřil, **kdo** uživatel je, ale ne, zda **smí** vidět fakturu 5522. Oprava: u každého požadavku na serveru ověřit, že faktura patří přihlášenému zákazníkovi; jinak vrátit 403 nebo 404."
+        },
+        {
+          "type": "example",
+          "question": "Proč má cookie se session mít příznaky `HttpOnly`, `Secure` a `SameSite`?",
+          "answer": "`HttpOnly` – JavaScript na stránce cookie nepřečte, takže ji případné XSS hůř ukradne. `Secure` – pošle se jen přes HTTPS. `SameSite` – prohlížeč ji nepošle s většinou požadavků z cizích webů, což brání CSRF."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Kde musí být validace vstupu?",
+                "back": "Na serveru (v prohlížeči jen navíc pro pohodlí)."
+              },
+              {
+                "front": "Obrana proti SQL injection?",
+                "back": "Parametrizované dotazy."
+              },
+              {
+                "front": "Obrana proti XSS?",
+                "back": "Escapování výstupu, textContent, Content Security Policy."
+              },
+              {
+                "front": "Obrana proti CSRF?",
+                "back": "CSRF token, cookie SameSite."
+              },
+              {
+                "front": "Uživatel změní id v URL a vidí cizí data?",
+                "back": "Chybné řízení přístupu – chybí kontrola oprávnění na serveru."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus odpověď říct dřív, než kartu otočíš."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Odkaz na administraci jsem z menu odstranil, takže se tam běžný uživatel nedostane.",
+          "right": "Server musí u adresy `/admin` ověřit, že je uživatel administrátor. Skrytý odkaz nic nechrání.",
+          "why": "Útočník adresu uhodne nebo najde v kódu stránky. Bezpečnost nesmí stát na tom, že něco není vidět."
+        },
+        {
+          "type": "summary",
+          "text": "Kontroluj vstupy na serveru, používej parametrizované dotazy, escapuj výstup, u každého požadavku ověřuj oprávnění, chraň přihlášení a session cookies, udržuj konfiguraci a knihovny. Kontrolním seznamem je OWASP Top 10."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je hlavní obranou proti SQL injection?",
+      "options": [
+        "parametrizované dotazy",
+        "delší heslo do databáze",
+        "HTTPS",
+        "kontrola v JavaScriptu ve formuláři"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je XSS?",
+      "options": [
+        "vložení cizího JavaScriptu do stránky, který se spustí jiným uživatelům",
+        "zahlcení serveru požadavky",
+        "útok na databázi přes SQL",
+        "odposlech Wi-Fi"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Validace vstupu v JavaScriptu v prohlížeči stačí, server už nic kontrolovat nemusí.",
+      "answer": false,
+      "explanation": "Útočník může poslat požadavek přímo; kontrola musí být na serveru."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje komunita, která vydává žebříček Top 10 zranitelností webových aplikací?",
+      "answers": [
+        "OWASP"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj zranitelnost s hlavní obranou.",
+      "pairs": [
+        [
+          "SQL injection",
+          "parametrizované dotazy"
+        ],
+        [
+          "XSS",
+          "escapování výstupu"
+        ],
+        [
+          "CSRF",
+          "CSRF token a SameSite cookie"
+        ],
+        [
+          "chybné řízení přístupu",
+          "kontrola oprávnění na serveru"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Uživatel změní v URL `?id=101` na `?id=102` a vidí cizí objednávku. Jaká je to chyba?",
+      "options": [
+        "chybné řízení přístupu",
+        "XSS",
+        "SQL injection",
+        "DDoS"
+      ],
+      "answer": 0,
+      "hints": [
+        "Server ví, kdo uživatel je. Co ale neověřil?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na jaký zápis se při escapování v HTML převede znak `<`?",
+      "answers": [
+        "&lt;",
+        "&lt"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co zajistí příznak cookie `HttpOnly`?",
+      "options": [
+        "JavaScript na stránce cookie nepřečte.",
+        "Cookie se pošle jen přes HTTP, ne HTTPS.",
+        "Cookie nikdy nevyprší.",
+        "Cookie se zašifruje heslem."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Když odkaz na administraci není v menu, je administrace chráněná.",
+      "answer": false,
+      "explanation": "Server musí oprávnění ověřit; skrytí nic nechrání."
+    },
+    {
+      "type": "choice",
+      "question": "Útočník napíše do pole jméno `admin' --`. Co znaky `--` v SQL dotazu udělají?",
+      "options": [
+        "Začnou komentář, takže zbytek dotazu (kontrola hesla) se ignoruje.",
+        "Odečtou hodnoty.",
+        "Ukončí spojení s databází.",
+        "Nic, jsou to obyčejné znaky."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky bezpečnostní kontroly aplikace.",
+      "items": [
+        "najít všechny vstupy",
+        "ověřit validaci na serveru",
+        "zkontrolovat databázové dotazy a výstup do HTML",
+        "ověřit oprávnění u každé akce",
+        "sepsat nálezy s prioritou"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je Content Security Policy (CSP)?",
+      "options": [
+        "hlavička, kterou server prohlížeči říká, odkud smí načítat a spouštět skripty",
+        "druh šifry",
+        "databázový dotaz",
+        "certifikát serveru"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli SQL injection a jak se jí bránit.",
+      "answer": "Útočník vloží do vstupu kus SQL, aplikace ho slepí s vlastním dotazem a databáze ho provede jako příkaz – může obejít přihlášení nebo číst a mazat data. Brání se parametrizovanými dotazy, kde se data nikdy nevykonají jako příkaz, a validací vstupu na serveru."
+    },
+    {
+      "type": "open",
+      "question": "Co znamená zásada „nikdy nevěř vstupu“?",
+      "answer": "Vše, co přijde od uživatele (formuláře, URL, cookies, soubory), může poslat útočník. Server proto každý vstup kontroluje, zpracovává ho bezpečně (parametrizované dotazy) a při výstupu do HTML ho escapuje."
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "certifikaty-tls",
+  "title": "Certifikáty a TLS",
+  "emoji": "📜",
+  "explanations": [
+    {
+      "title": "Občanka pro server",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Připojíš se k Wi-Fi v kavárně a otevřeš banku. Jak víš, že mluvíš opravdu s bankou, a ne s útočníkem, který sedí u vedlejšího stolu a předstírá, že je banka? Odpověď je v zámku v adresním řádku: **certifikát** a protokol **TLS**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Veřejný a soukromý klíč",
+          "definition": "Připomenutí: v asymetrické kryptografii má každý pár klíčů. Veřejný zná každý, soukromý jen majitel. Co podepíše soukromý klíč, ověří veřejný.",
+          "example": "Server banky má svůj pár klíčů."
+        },
+        {
+          "type": "term",
+          "term": "Digitální podpis",
+          "definition": "Připomenutí: hash dokumentu zpracovaný soukromým klíčem. Veřejným klíčem kdokoli ověří, že dokument podepsal majitel klíče a nikdo ho nezměnil.",
+          "example": "Podepsaná aktualizace programu."
+        },
+        {
+          "type": "term",
+          "term": "Útok MitM (muž uprostřed)",
+          "definition": "Útočník se vloží mezi tebe a server. Tobě předstírá, že je server, serveru, že je ty, a vidí a mění vše, co jde mezi vámi.",
+          "example": "Falešná Wi-Fi „Kavarna_Free“ v rukou útočníka."
+        },
+        {
+          "type": "heading",
+          "text": "Problém: komu patří veřejný klíč?"
+        },
+        {
+          "type": "text",
+          "text": "Šifrovat pro banku umíš jejím veřejným klíčem. Jenže útočník uprostřed ti může podstrčit **svůj** veřejný klíč a tvrdit, že je bankovní. Potřebujeme, aby někdo důvěryhodný potvrdil: „Tento klíč opravdu patří doméně banka.cz.“"
+        },
+        {
+          "type": "heading",
+          "text": "Řešení: občanka pro server"
+        },
+        {
+          "type": "term",
+          "term": "Certifikát",
+          "definition": "Elektronický doklad (standard **X.509**), který spojuje veřejný klíč s identitou – u webu s doménou. Obsahuje doménu, veřejný klíč, vydavatele, dobu platnosti a **podpis vydavatele**.",
+          "example": "Certifikát pro www.banka.cz vydaný certifikační autoritou."
+        },
+        {
+          "type": "term",
+          "term": "Certifikační autorita (CA)",
+          "definition": "Důvěryhodná organizace, která ověří, že žadatel doménu opravdu ovládá, a pak certifikát podepíše svým soukromým klíčem.",
+          "example": "Let's Encrypt (zdarma, automaticky), DigiCert, v ČR např. PostSignum."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Občanský průkaz",
+            "Certifikát serveru"
+          ],
+          "rows": [
+            [
+              "jméno a fotka",
+              "doména a veřejný klíč"
+            ],
+            [
+              "vydal úřad",
+              "vydala certifikační autorita"
+            ],
+            [
+              "ochranné prvky proti padělání",
+              "digitální podpis CA"
+            ],
+            [
+              "platnost do",
+              "platnost do"
+            ],
+            [
+              "policie zkontroluje pravost",
+              "prohlížeč ověří podpis a platnost"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč prohlížeč autoritě věří"
+        },
+        {
+          "type": "term",
+          "term": "Kořenový certifikát a řetězec důvěry",
+          "definition": "Prohlížeč nebo operační systém má zabudovaný seznam **kořenových certifikátů** důvěryhodných autorit. Kořenová CA obvykle podepíše **mezilehlou** CA a ta teprve certifikát serveru. Prohlížeč ověří celý řetězec až ke kořeni.",
+          "example": "Kořen ISRG Root X1 → mezilehlá CA Let's Encrypt → certifikát www.skola.cz"
+        },
+        {
+          "type": "example",
+          "question": "Útočník v kavárně podvrhne vlastní certifikát pro www.banka.cz, který si sám podepsal. Co udělá prohlížeč?",
+          "answer": "Prohlížeč se pokusí sestavit řetězec ke kořenové CA ve svém seznamu. Podpis útočníka k žádné důvěryhodné CA nevede, takže **zobrazí varování** „Připojení není soukromé“. Kdo varování odklikne, pustí útočníka doprostřed spojení."
+        },
+        {
+          "type": "example",
+          "question": "Certifikát je platný a od důvěryhodné CA, ale je vydaný pro www.banka.cz a ty jsi otevřel www.banka-login.cz. Co se stane?",
+          "answer": "Prohlížeč kontroluje i **shodu domény**. Certifikát pro jinou doménu na této adrese neplatí → varování. Pozor ale: www.banka-login.cz si může podvodník zaregistrovat a získat pro ni vlastní platný certifikát. Pak varování nebude."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Co certifikát spojuje?",
+                "back": "Veřejný klíč s identitou (doménou)."
+              },
+              {
+                "front": "Kdo certifikát podepisuje?",
+                "back": "Certifikační autorita svým soukromým klíčem."
+              },
+              {
+                "front": "Kde má prohlížeč seznam důvěryhodných CA?",
+                "back": "V úložišti kořenových certifikátů (prohlížeč nebo systém)."
+              },
+              {
+                "front": "Co dělat při varování o certifikátu na bance?",
+                "back": "Nepokračovat, odpojit se z podezřelé sítě a zkusit to jinde."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Odpověz nahlas, pak kartu otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Varování o neplatném certifikátu je jen technická chyba, klidně kliknu na „Přesto pokračovat“.",
+          "right": "U přihlášení, banky nebo e-mailu nepokračuj. Varování může znamenat útok MitM.",
+          "why": "Prohlížeč nedokázal ověřit, s kým mluvíš. Po odkliknutí může útočník číst heslo i když spojení vypadá šifrovaně."
+        },
+        {
+          "type": "summary",
+          "text": "Certifikát (X.509) spojuje veřejný klíč s doménou a je podepsaný certifikační autoritou. Prohlížeč ověří řetězec až ke kořenovému certifikátu, platnost a shodu domény. Tím brání útoku MitM."
+        }
+      ]
+    },
+    {
+      "title": "Průběh spojení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než prohlížeč pošle první požadavek na https:// stránku, proběhne krátký rozhovor se serverem. Během něj se strany dohodnou na šifrování, prohlížeč ověří server a obě strany získají společný tajný klíč. Tomu rozhovoru se říká **TLS handshake**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "TLS",
+          "definition": "*Transport Layer Security*, protokol, který zabezpečuje spojení mezi dvěma programy: šifruje data, chrání je před změnou a ověřuje server. Nástupce zastaralého SSL.",
+          "example": "HTTPS = HTTP přes TLS. Šifruje se tak i e-mail mezi klientem a serverem."
+        },
+        {
+          "type": "term",
+          "term": "Certifikát a certifikační autorita",
+          "definition": "Certifikát je doklad, že veřejný klíč patří dané doméně. Vydává a podepisuje ho certifikační autorita (CA), které prohlížeč věří.",
+          "example": "Certifikát www.skola.cz od Let's Encrypt."
+        },
+        {
+          "type": "term",
+          "term": "Symetrická a asymetrická kryptografie",
+          "definition": "Připomenutí: symetrická šifra (AES) má jeden sdílený klíč a je rychlá. Asymetrická (RSA, ECC) má pár klíčů a hodí se na ověřování a dohodu klíče.",
+          "example": "TLS kombinuje obojí."
+        },
+        {
+          "type": "term",
+          "term": "Výměna klíčů (Diffie–Hellman)",
+          "definition": "Postup, kterým si dvě strany přes veřejnou síť dohodnou společný tajný klíč, aniž by ho kdy poslaly. Kdo komunikaci jen odposlouchává, klíč nespočítá.",
+          "example": "V TLS 1.3 se používá varianta s eliptickými křivkami (ECDHE)."
+        },
+        {
+          "type": "heading",
+          "text": "TLS handshake zjednodušeně (TLS 1.3)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Prohlížeč pošle pozdrav: jaké verze a šifry umí a svou část výměny klíčů.",
+            "Server odpoví: vybranou šifru a svou část výměny klíčů.",
+            "Server pošle svůj certifikát a podpisem svým soukromým klíčem dokáže, že k certifikátu patří.",
+            "Prohlížeč ověří certifikát: řetězec ke kořenové CA, platnost, shodu domény.",
+            "Obě strany z výměny klíčů spočítají stejné symetrické klíče relace.",
+            "Další data (požadavky HTTP, hesla, stránky) jdou zašifrovaná rychlou symetrickou šifrou, např. AES."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč TLS nešifruje celou komunikaci asymetricky, když certifikát obsahuje veřejný klíč?",
+          "answer": "Asymetrická kryptografie je pomalá. Použije se jen na **ověření serveru** a **dohodu klíče**. Samotná data se šifrují symetricky (AES), což je mnohonásobně rychlejší. Je to hybridní přístup."
+        },
+        {
+          "type": "heading",
+          "text": "Co TLS chrání a co ne"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Chrání",
+            "Nechrání"
+          ],
+          "rows": [
+            [
+              "obsah komunikace před odposlechem",
+              "data uložená na serveru (únik databáze)"
+            ],
+            [
+              "data před změnou po cestě",
+              "před podvodnou stránkou, která má vlastní platný certifikát"
+            ],
+            [
+              "před podvržením serveru (MitM)",
+              "před škodlivým programem (malwarem) v tvém počítači"
+            ],
+            [
+              "",
+              "skrytí toho, se kterým serverem komunikuješ (IP adresa a obvykle i doména jsou vidět)"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "prohlížeč zobrazí varování",
+              "varování nebude"
+            ],
+            "items": [
+              {
+                "text": "certifikátu skončila platnost",
+                "group": 0
+              },
+              {
+                "text": "certifikát je pro jinou doménu",
+                "group": 0
+              },
+              {
+                "text": "certifikát podepsal sám útočník",
+                "group": 0
+              },
+              {
+                "text": "podvodník má platný certifikát pro svou doménu banka-overeni.cz",
+                "group": 1
+              },
+              {
+                "text": "platný certifikát pro správnou doménu",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď situace. Která z nich je pro uživatele nejnebezpečnější?"
+        },
+        {
+          "type": "heading",
+          "text": "Platnost a odvolání"
+        },
+        {
+          "type": "text",
+          "text": "Certifikáty pro weby mají omezenou platnost, řádově měsíce, a pravidla ji postupně zkracují. Proto se obnovují automaticky (např. protokolem ACME u Let's Encrypt). Když soukromý klíč unikne, CA certifikát **odvolá** a prohlížeče se to dozví ze seznamu odvolaných certifikátů."
+        },
+        {
+          "type": "example",
+          "question": "Správce zjistí, že unikl soukromý klíč serveru. Co musí udělat?",
+          "answer": "1) Nechat certifikát u CA **odvolat**. 2) Vygenerovat **nový pár klíčů**. 3) Získat nový certifikát a nasadit ho. 4) Vyšetřit, jak klíč unikl. Bez odvolání by útočník mohl s ukradeným klíčem a stále platným certifikátem předstírat server."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zámek u adresy znamená, že web je bezpečný a poctivý.",
+          "right": "Zámek znamená jen šifrované spojení a ověřenou doménu. O poctivosti majitele domény neříká nic.",
+          "why": "Certifikát ověřený jen kontrolou domény (doménově validovaný) si zdarma pořídí kdokoli, i podvodník pro svou podobně znějící doménu."
+        },
+        {
+          "type": "summary",
+          "text": "TLS handshake: dohoda šifer, výměna klíčů, ověření certifikátu serveru, výpočet symetrických klíčů relace; pak jdou data šifrovaná symetricky. TLS chrání data po cestě a brání podvržení serveru, ale nechrání před podvodnou stránkou s vlastním certifikátem ani před únikem dat ze serveru."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co certifikát serveru hlavně potvrzuje?",
+      "options": [
+        "že veřejný klíč patří dané doméně",
+        "že web je poctivý",
+        "že web nemá viry",
+        "že server je rychlý"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kdo podepisuje certifikát webu?",
+      "options": [
+        "certifikační autorita",
+        "prohlížeč",
+        "uživatel",
+        "poskytovatel internetu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Zámek v adresním řádku zaručuje, že stránka nepatří podvodníkovi.",
+      "answer": false,
+      "explanation": "Podvodník může mít platný certifikát pro svou vlastní doménu."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje standard formátu certifikátů používaných v TLS? (např. X.???)",
+      "answers": [
+        "X.509",
+        "X509",
+        "509"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď zjednodušené kroky TLS handshaku.",
+      "items": [
+        "prohlížeč pošle podporované šifry a svou část výměny klíčů",
+        "server odpoví vybranou šifrou a svou částí výměny klíčů",
+        "server pošle certifikát a prokáže vlastnictví soukromého klíče",
+        "prohlížeč ověří certifikát",
+        "obě strany spočítají klíče relace a šifrují symetricky"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se data v TLS šifrují symetrickou šifrou?",
+      "options": [
+        "Je mnohem rychlejší než asymetrická.",
+        "Asymetrická šifra data neumí šifrovat vůbec.",
+        "Symetrická nepotřebuje klíč.",
+        "Kvůli kompatibilitě se SSL 2.0."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj problém s certifikátem s výsledkem.",
+      "pairs": [
+        [
+          "vypršela platnost",
+          "varování v prohlížeči"
+        ],
+        [
+          "jiná doména v certifikátu",
+          "varování v prohlížeči"
+        ],
+        [
+          "platný certifikát podvodné domény",
+          "žádné varování"
+        ],
+        [
+          "unikl soukromý klíč",
+          "certifikát se musí odvolat"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje útok, kdy se útočník vloží mezi klienta a server?",
+      "options": [
+        "Man-in-the-Middle (MitM)",
+        "credential stuffing",
+        "brute force",
+        "SQL injection"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Prohlížeč má zabudovaný seznam kořenových certifikátů důvěryhodných autorit.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co TLS NECHRÁNÍ?",
+      "options": [
+        "data uložená v databázi serveru",
+        "heslo při přenosu po síti",
+        "obsah stránky před změnou po cestě",
+        "ověření, že mluvíš s pravým serverem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co má správce udělat jako první, když unikne soukromý klíč serveru?",
+      "options": [
+        "nechat certifikát odvolat a vygenerovat nové klíče",
+        "nic, certifikát stejně jednou vyprší",
+        "smazat web",
+        "změnit heslo k e-mailu"
+      ],
+      "answer": 0,
+      "hints": [
+        "S ukradeným klíčem a platným certifikátem jde předstírat server."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje protokol, jehož zastaralým předchůdcem je SSL? Napiš zkratku.",
+      "answers": [
+        "TLS"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak certifikát a řetězec důvěry chrání před útokem MitM.",
+      "answer": "Server pošle certifikát, který spojuje jeho veřejný klíč s doménou a je podepsaný certifikační autoritou. Prohlížeč ověří řetězec podpisů ke kořenovému certifikátu, kterému věří, platnost a doménu. Útočník bez certifikátu od důvěryhodné CA pro tuto doménu neprojde a prohlížeč zobrazí varování."
+    },
+    {
+      "type": "open",
+      "question": "Co znamená zámek v adresním řádku a co neznamená?",
+      "answer": "Znamená, že spojení je šifrované TLS a certifikát serveru je platný pro tuto doménu. Neznamená, že majitel webu je poctivý ani že web je bez malwaru; podvodná doména může mít platný certifikát."
+    }
+  ]
+}

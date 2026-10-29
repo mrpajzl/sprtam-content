@@ -1,0 +1,446 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "hesla-autentizace",
+  "title": "Hesla a vícefaktorové ověření",
+  "emoji": "🔑",
+  "explanations": [
+    {
+      "title": "Jak útočník hádá",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Většina průniků do účtů nezačíná geniálním hackem. Začíná uhodnutým, ukradeným nebo opakovaně použitým heslem. Když pochopíš, jak útočník hesla zkouší, poznáš, proč „Petr2008!“ je špatné heslo a proč druhý krok přihlášení zastaví většinu útoků."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Autentizace",
+          "definition": "Ověření, že jsi opravdu ten, za koho se vydáváš. Připomenutí: **autorizace** je až potom rozhodnutí, co smíš.",
+          "example": "Zadáš jméno a heslo do školního systému."
+        },
+        {
+          "type": "term",
+          "term": "Útok hrubou silou (brute force)",
+          "definition": "Útočník zkouší všechny možné kombinace znaků jednu po druhé, dokud se netrefí.",
+          "example": "PIN 0000, 0001, 0002 … 9999."
+        },
+        {
+          "type": "term",
+          "term": "Slovníkový útok",
+          "definition": "Útočník zkouší nejdřív hesla ze seznamu nejčastějších a uniklých hesel a jejich obměny (přidané číslo, vykřičník, velké první písmeno).",
+          "example": "heslo, 123456, Heslo123!, Petr2008"
+        },
+        {
+          "type": "term",
+          "term": "Credential stuffing",
+          "definition": "Útočník vezme jména a hesla, která unikla z jedné služby, a automaticky je zkouší na jiných službách.",
+          "example": "Heslo uniklé z fóra o rybaření funguje i na tvém e-mailu, protože je stejné."
+        },
+        {
+          "type": "heading",
+          "text": "Proč rozhoduje délka"
+        },
+        {
+          "type": "text",
+          "text": "Počet možných hesel = (počet znaků, ze kterých se vybírá) na (délku hesla). Každý znak navíc násobí počet možností. Délka proto pomáhá víc než jeden „zvláštní“ znak."
+        },
+        {
+          "type": "example",
+          "question": "Kolik je možných PINů ze 4 číslic? A kolik hesel ze 4 malých písmen anglické abecedy (26 písmen)?",
+          "answer": "PIN: 10 · 10 · 10 · 10 = **10 000**. Písmena: 26⁴ = **456 976**. Obojí počítač vyzkouší okamžitě. Platební karta je chráněná jinak: po třech špatných pokusech se zablokuje."
+        },
+        {
+          "type": "example",
+          "question": "Které heslo je silnější: „P@ssw0rd!“, nebo „kolo jezevec modrá polévka“ (čtyři náhodně vybraná slova)?",
+          "answer": "**Čtyři náhodná slova.** „P@ssw0rd!“ je známé slovo s obvyklými záměnami písmen za znaky a je ve slovnících útočníků. Čtyři **náhodně** zvolená slova dávají dlouhé heslo s obrovským počtem kombinací a dobře se pamatují."
+        },
+        {
+          "type": "heading",
+          "text": "Druhý zámek: vícefaktorové ověření"
+        },
+        {
+          "type": "term",
+          "term": "Faktor autentizace",
+          "definition": "Druh důkazu, že jsi to ty. Tři druhy: něco, co **znáš** (heslo, PIN), něco, co **máš** (telefon, bezpečnostní klíč), něco, čím **jsi** (otisk prstu, obličej).",
+          "example": "Heslo + kód z aplikace v mobilu = dva různé faktory."
+        },
+        {
+          "type": "term",
+          "term": "Vícefaktorové ověření (MFA, 2FA)",
+          "definition": "Přihlášení vyžaduje aspoň dva faktory **různých druhů**. Ukradené heslo samo nestačí.",
+          "example": "Banka chce heslo a potvrzení v mobilní aplikaci."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "něco, co znáš",
+              "něco, co máš",
+              "něco, čím jsi"
+            ],
+            "items": [
+              {
+                "text": "heslo",
+                "group": 0
+              },
+              {
+                "text": "PIN",
+                "group": 0
+              },
+              {
+                "text": "odpověď na kontrolní otázku",
+                "group": 0
+              },
+              {
+                "text": "mobil s aplikací na kódy",
+                "group": 1
+              },
+              {
+                "text": "hardwarový bezpečnostní klíč",
+                "group": 1
+              },
+              {
+                "text": "čipová karta",
+                "group": 1
+              },
+              {
+                "text": "otisk prstu",
+                "group": 2
+              },
+              {
+                "text": "rozpoznání obličeje",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď faktory. Pak se zamysli: heslo + PIN je vícefaktorové ověření?"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Heslo a PIN dohromady jsou dvoufaktorové ověření.",
+          "right": "Heslo i PIN jsou oba „něco, co znáš“. Dvoufaktorové ověření potřebuje dva **různé druhy**, např. heslo a telefon.",
+          "why": "Útočník, který ti odposlechne nebo vyláká heslo, stejnou cestou získá i PIN. Telefon v ruce mít nebude."
+        },
+        {
+          "type": "summary",
+          "text": "Útočníci zkoušejí hesla hrubou silou, podle slovníků a z uniklých databází. Chrání dlouhé, jedinečné heslo pro každou službu (nejlépe ze správce hesel) a vícefaktorové ověření, které kombinuje různé druhy faktorů."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla a nástroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš desítky účtů: e-mail, školní systém, hry, sociální sítě. Pamatovat si pro každý jiné dlouhé heslo nejde. Ukážeme si, jak to správně řešit a jaké metody přihlášení jsou bezpečnější."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Autentizace",
+          "definition": "Ověření identity uživatele.",
+          "example": "Heslo, otisk prstu, kód z aplikace."
+        },
+        {
+          "type": "term",
+          "term": "Správce hesel",
+          "definition": "Program, který vygeneruje a uloží silné jedinečné heslo pro každou službu. Ty si pamatuješ jen jedno silné hlavní heslo a správce chráníš i vícefaktorovým ověřením.",
+          "example": "Bitwarden, 1Password, KeePassXC nebo správce zabudovaný v prohlížeči či systému."
+        },
+        {
+          "type": "term",
+          "term": "Vícefaktorové ověření (MFA)",
+          "definition": "Přihlášení dvěma nebo více faktory různého druhu: znalost (heslo), vlastnictví (telefon, klíč), biometrie (otisk).",
+          "example": "Heslo + kód z aplikace."
+        },
+        {
+          "type": "term",
+          "term": "TOTP",
+          "definition": "*Time-based One-Time Password*. Aplikace v mobilu (autentizátor) z tajného klíče a aktuálního času vypočítá krátký kód, typicky 6 číslic, platný asi 30 sekund.",
+          "example": "Microsoft Authenticator, Google Authenticator, Aegis."
+        },
+        {
+          "type": "term",
+          "term": "Credential stuffing",
+          "definition": "Útok, kdy útočník vezme jména a hesla uniklá z jedné služby a automaticky je zkouší na jiných službách.",
+          "example": "Heslo uniklé z herního fóra zkusí na tvůj e-mail."
+        },
+        {
+          "type": "term",
+          "term": "Phishing",
+          "definition": "Podvodná zpráva nebo stránka, která se vydává za někoho důvěryhodného (banku, školu) a snaží se z tebe vylákat heslo nebo kód.",
+          "example": "E-mail „Váš účet bude zablokován, přihlaste se zde“ s odkazem na falešnou kopii přihlašovací stránky."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla pro hesla"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Délka** je nejdůležitější. Raději dlouhá fráze z několika náhodných slov než krátké heslo se znaky.",
+            "**Jedinečnost**: každá služba jiné heslo. Pak únik z jedné služby neotevře ostatní.",
+            "Žádné osobní údaje (jména, data narození, název školy).",
+            "Heslo neměň zbytečně každý měsíc, ale **hned**, když mohlo uniknout.",
+            "Hesla si nezapisuj na papírek k monitoru; používej správce hesel.",
+            "Kde to jde, zapni vícefaktorové ověření."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Metody druhého faktoru od slabší po silnější"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "Výhoda",
+            "Slabina"
+          ],
+          "rows": [
+            [
+              "kód v SMS",
+              "jednoduchá, umí ji každý telefon",
+              "útočník může převést číslo na svou SIM (SIM swap) nebo kód vylákat"
+            ],
+            [
+              "kód TOTP z aplikace",
+              "nepotřebuje síť, nejde přesměrovat jako SMS",
+              "podvodná stránka může kód vylákat a hned použít"
+            ],
+            [
+              "potvrzení v aplikaci (push)",
+              "pohodlné",
+              "únava z žádostí: uživatel omylem potvrdí cizí přihlášení"
+            ],
+            [
+              "bezpečnostní klíč, passkey (FIDO2)",
+              "odolné proti phishingu: klíč se přihlásí jen na pravou doménu",
+              "nutné nastavit, klíč se dá ztratit (potřebuješ záložní)"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Passkey (přístupový klíč)",
+          "definition": "Přihlášení bez hesla podle standardu FIDO2. Zařízení si pro každou službu vytvoří dvojici klíčů; tajná část nikdy neopustí zařízení a odemyká se otiskem, obličejem nebo PINem zařízení.",
+          "example": "Přihlášení do účtu Google nebo Microsoft otiskem prstu v telefonu."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nainstaluj správce hesel a zvol silné hlavní heslo (dlouhá fráze).",
+            "Zapni vícefaktorové ověření nejdřív u e-mailu – přes něj jde obnovit všechno ostatní.",
+            "Postupně měň hesla ve službách na vygenerovaná jedinečná.",
+            "Ulož si záložní kódy pro obnovu na bezpečné místo.",
+            "Kde to služba umí, přidej passkey nebo bezpečnostní klíč."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Eva má všude heslo „Eva2007!“. Jedno fórum, kde měla účet, uniklo. Co hrozí a co má udělat?",
+          "answer": "Hrozí **credential stuffing**: útočníci zkusí její e-mail a heslo na dalších službách. Má hned změnit heslo všude, kde ho použila, začít e-mailem, zapnout vícefaktorové ověření a dál používat **jedinečná** hesla ze správce hesel."
+        },
+        {
+          "type": "example",
+          "question": "Proč je e-mailový účet nejdůležitější účet k ochraně?",
+          "answer": "Přes e-mail se obnovují hesla k ostatním službám. Kdo ovládne e-mail, nechá si poslat odkaz „zapomenuté heslo“ a postupně převezme další účty. Proto má mít e-mail nejsilnější heslo a vícefaktorové ověření."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Je dobré mít jedno silné heslo všude?",
+                "back": "Ne. Únik z jedné služby by otevřel všechny."
+              },
+              {
+                "front": "Proč je SMS slabší druhý faktor?",
+                "back": "Číslo jde převést na cizí SIM a kód jde vylákat."
+              },
+              {
+                "front": "Proč passkey odolá phishingu?",
+                "back": "Přihlásí se jen na doménu, pro kterou vznikl; podvodná stránka nic nedostane."
+              },
+              {
+                "front": "Co si pamatuješ u správce hesel?",
+                "back": "Jen jedno silné hlavní heslo."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Odpověz nahlas a teprve pak otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Moje heslo má velké písmeno, číslo i vykřičník („Heslo1!“), takže je silné.",
+          "right": "Je krátké a předvídatelné. Silné je hlavně dlouhé a náhodné heslo, např. vygenerované správcem hesel nebo fráze z několika náhodných slov.",
+          "why": "Útočníci znají vzorce „slovo + číslo + vykřičník“ a zkoušejí je jako první. Délka zvyšuje počet kombinací mnohem víc než jeden znak navíc."
+        },
+        {
+          "type": "summary",
+          "text": "Dlouhá a jedinečná hesla ze správce hesel, vícefaktorové ověření začínaje e-mailem a záložní kódy. Druhé faktory se liší silou: SMS < TOTP < passkey a bezpečnostní klíč, které odolávají phishingu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj faktor s jeho druhem.",
+      "pairs": [
+        [
+          "heslo",
+          "něco, co znáš"
+        ],
+        [
+          "bezpečnostní klíč",
+          "něco, co máš"
+        ],
+        [
+          "otisk prstu",
+          "něco, čím jsi"
+        ],
+        [
+          "PIN",
+          "něco, co znáš"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Heslo a PIN dohromady jsou dvoufaktorové ověření.",
+      "answer": false,
+      "explanation": "Oba jsou „něco, co znáš“. Faktory musí být různého druhu."
+    },
+    {
+      "type": "input",
+      "question": "Kolik různých PINů lze sestavit ze 4 číslic 0–9?",
+      "answers": [
+        "10000",
+        "10 000"
+      ],
+      "hints": [
+        "Na každé ze 4 pozic může být jedna z 10 číslic."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Útočník zkouší uniklé dvojice jméno–heslo z jedné služby na jiných službách. Jak se útok jmenuje?",
+      "options": [
+        "credential stuffing",
+        "útok hrubou silou",
+        "DDoS",
+        "SQL injection"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co zvýší sílu hesla nejvíc?",
+      "options": [
+        "výrazně větší délka (náhodná fráze z více slov)",
+        "nahrazení „a“ znakem „@“",
+        "přidání vykřičníku na konec",
+        "velké první písmeno"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč je kód v SMS slabší druhý faktor než aplikace s TOTP?",
+      "options": [
+        "Číslo lze převést na cizí SIM (SIM swap) a kód přesměrovat.",
+        "SMS kódy jsou vždy kratší.",
+        "SMS funguje jen bez internetu.",
+        "SMS kód platí celý den."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Vícefaktorové ověření je nejdůležitější zapnout nejdřív u e-mailu, protože přes něj jde obnovit hesla k ostatním službám.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč je passkey (FIDO2) odolný proti phishingu?",
+      "options": [
+        "Přihlásí se jen na pravou doménu, pro kterou byl vytvořen.",
+        "Je delší než heslo.",
+        "Posílá se SMS.",
+        "Mění se každý den."
+      ],
+      "answer": 0,
+      "hints": [
+        "Zamysli se, co se stane, když uživatel otevře podvodnou kopii stránky."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje program, který generuje a ukládá jedinečná hesla? (dvě slova)",
+      "answers": [
+        "správce hesel",
+        "spravce hesel",
+        "password manager"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy je správné změnit heslo?",
+      "options": [
+        "hned, když mohlo uniknout",
+        "každý týden bez důvodu",
+        "nikdy",
+        "jen při změně jména"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď metody druhého faktoru od nejslabší po nejodolnější proti phishingu.",
+      "items": [
+        "kód v SMS",
+        "kód TOTP z aplikace",
+        "bezpečnostní klíč FIDO2"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Aplikace TOTP vypočítá kód z tajného klíče a aktuálního času, takže nepotřebuje připojení k síti.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Jak by sis zabezpečil své účty? Popiš konkrétní kroky.",
+      "answer": "Použiju správce hesel s dlouhým hlavním heslem a pro každou službu jedinečné vygenerované heslo. Zapnu vícefaktorové ověření, nejdřív u e-mailu, ideálně aplikací nebo passkey místo SMS, a uložím si záložní kódy."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč je opakované používání stejného hesla nebezpečné.",
+      "answer": "Když jedna služba unikne, útočníci zkoušejí stejné jméno a heslo na dalších službách (credential stuffing). Se stejným heslem by se dostali i do e-mailu nebo banky."
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "hash-digitalni-podpis",
+  "title": "Hashovací funkce a digitální podpis",
+  "emoji": "✍️",
+  "explanations": [
+    {
+      "title": "Otisk prstu dat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Stahuješ instalačku Linuxu, má 3 GB. Jak poznáš, že ti po cestě nikdo nepodstrčil upravenou verzi s virem? A jak web pozná tvoje heslo, když ho vůbec nemá uložené? Obojí řeší **hashovací funkce**."
+        },
+        {
+          "type": "text",
+          "text": "Na ní stojí i **digitální podpis**, kterým se podepisují smlouvy, aktualizace programů a datové zprávy úřadů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hashovací funkce",
+          "definition": "Matematický postup, který z libovolně velkých dat spočítá krátký řetězec **pevné délky**. Tomu výsledku se říká **hash** (otisk, haš).",
+          "example": "SHA-256 z jakýchkoli dat vrátí 256 bitů, zapsaných jako 64 šestnáctkových znaků."
+        },
+        {
+          "type": "term",
+          "term": "Integrita",
+          "definition": "Připomenutí z triády CIA: data jsou správná a nikdo je nezměnil bez oprávnění.",
+          "example": "Stažený soubor je bit po bitu stejný jako originál."
+        },
+        {
+          "type": "heading",
+          "text": "Otisk prstu dat"
+        },
+        {
+          "type": "text",
+          "text": "Hash je jako otisk prstu. Z člověka otisk snadno získáš. Z otisku ale člověka „nevyrobíš“. A dva různí lidé prakticky nemají stejný otisk."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vlastnost",
+            "Co znamená"
+          ],
+          "rows": [
+            [
+              "pevná délka",
+              "výstup má vždy stejnou délku, ať jde o jedno písmeno nebo film"
+            ],
+            [
+              "deterministická",
+              "stejná data → vždy stejný hash"
+            ],
+            [
+              "jednosměrnost",
+              "z hashe nejde zpětně spočítat původní data"
+            ],
+            [
+              "odolnost proti kolizím",
+              "prakticky nejde najít dvoje různá data se stejným hashem"
+            ],
+            [
+              "lavinový efekt",
+              "změna jediného bitu vstupu změní výstup k nepoznání"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Kolize",
+          "definition": "Dvoje různá data se stejným hashem. Teoreticky existují vždy (vstupů je nekonečně, výstupů konečně), dobrá funkce ale nedovolí žádnou prakticky najít.",
+          "example": "U MD5 a SHA-1 se kolize najít podařilo, proto se pro bezpečnost už nepoužívají."
+        },
+        {
+          "type": "example",
+          "question": "Web distribuce uvádí SHA-256 souboru: `9f86d0…`. Po stažení ti vyjde `3a7bd3…`. Co to znamená a co uděláš?",
+          "answer": "Hashe se liší, takže se soubor **liší od originálu** – poškodil se při stahování, nebo ho někdo podvrhl. Neinstaluj ho a stáhni znovu z oficiálního zdroje. Pozor: hash musí pocházet z důvěryhodného místa, jinak ho útočník podvrhne spolu se souborem."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se ukládají hesla"
+        },
+        {
+          "type": "term",
+          "term": "Sůl (salt)",
+          "definition": "Náhodný řetězec, který server přidá k heslu každého uživatele před hashováním. Ukládá se vedle hashe.",
+          "example": "Dva uživatelé s heslem „kocka123“ mají díky různé soli úplně jiné hashe."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Uživatel si nastaví heslo.",
+            "Server vygeneruje náhodnou sůl.",
+            "Spočítá hash ze soli a hesla **pomalou** funkcí určenou pro hesla (bcrypt, scrypt, Argon2).",
+            "Uloží jen sůl a hash, heslo nikdy.",
+            "Při přihlášení spočítá hash ze soli a zadaného hesla a porovná s uloženým."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Proč sůl?",
+                "back": "Stejná hesla mají různé hashe a útočník nemůže použít předpočítané tabulky."
+              },
+              {
+                "front": "Proč pomalá funkce?",
+                "back": "Útočník s uniklou databází zvládne za sekundu jen málo pokusů."
+              },
+              {
+                "front": "MD5 na hesla?",
+                "back": "Ne – je rychlá a prolomená."
+              },
+              {
+                "front": "Jde hash „dešifrovat“?",
+                "back": "Ne. Útočník může jen hádat hesla a porovnávat hashe."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus odpovědět dřív, než kartu otočíš."
+        },
+        {
+          "type": "heading",
+          "text": "Digitální podpis"
+        },
+        {
+          "type": "term",
+          "term": "Veřejný a soukromý klíč",
+          "definition": "Připomenutí z asymetrické kryptografie: dvojice klíčů, které k sobě patří. Soukromý drží jen majitel, veřejný zná každý.",
+          "example": "Pár klíčů RSA nebo ECC."
+        },
+        {
+          "type": "term",
+          "term": "Digitální podpis",
+          "definition": "Autor spočítá hash dokumentu a „zašifruje“ ho svým **soukromým** klíčem. Kdokoli pak podpis ověří jeho **veřejným** klíčem.",
+          "example": "Aktualizace Windows je podepsaná Microsoftem; systém nepodepsanou nebo změněnou aktualizaci odmítne."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hash je druh šifrování, takže z hashe jde heslo dešifrovat.",
+          "right": "Hash je jednosměrný a nemá klíč. Dešifrovat ho nejde; útočník může jen zkoušet hesla a porovnávat jejich hashe.",
+          "why": "Šifrování je vratné (s klíčem). Hashování vratné není – proto se hodí na hesla a otisky dat."
+        },
+        {
+          "type": "summary",
+          "text": "Hashovací funkce dělá z dat otisk pevné délky: jednosměrně, bez kolizí, s lavinovým efektem (SHA-256; MD5 a SHA-1 už ne). Hesla se ukládají jako hash se solí pomalou funkcí. Digitální podpis = hash podepsaný soukromým klíčem, ověřený veřejným."
+        }
+      ]
+    },
+    {
+      "title": "Podpis krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ručně podepsanou smlouvu může někdo po podpisu přepsat a podpis se dá napodobit. Digitální podpis je mnohem silnější: prozradí každou změnu dokumentu a bez soukromého klíče ho nikdo nevytvoří. Projdeme, jak přesně funguje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hash (otisk)",
+          "definition": "Krátký řetězec pevné délky, který hashovací funkce spočítá z libovolných dat. Stejná data dají vždy stejný hash, jakákoli změna dá úplně jiný a zpět se z něj data spočítat nedají.",
+          "example": "SHA-256(„ahoj“) a SHA-256(„Ahoj“) se liší úplně."
+        },
+        {
+          "type": "term",
+          "term": "Asymetrická kryptografie",
+          "definition": "Každý má pár klíčů: **soukromý** (tajný, jen majitel) a **veřejný** (zná každý). Co se udělá jedním, ověří nebo otevře jen ten druhý.",
+          "example": "Pár klíčů RSA."
+        },
+        {
+          "type": "term",
+          "term": "Autenticita a nepopiratelnost",
+          "definition": "Autenticita = víme, kdo je autor. Nepopiratelnost = autor nemůže později tvrdit, že to nepodepsal (jen on má soukromý klíč).",
+          "example": "Firma nemůže popřít, že podepsala nabídku."
+        },
+        {
+          "type": "heading",
+          "text": "Podepsání"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Autor spočítá hash dokumentu (např. SHA-256).",
+            "Hash zpracuje svým soukromým klíčem → vznikne **podpis**.",
+            "Dokument pošle spolu s podpisem (dokument sám zůstává čitelný)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ověření"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Příjemce sám spočítá hash přijatého dokumentu.",
+            "Veřejným klíčem autora zpracuje podpis a získá hash, který podepsal autor.",
+            "Porovná oba hashe.",
+            "Shodují se → dokument je nezměněný a podepsal ho majitel soukromého klíče.",
+            "Neshodují se → dokument byl změněn, nebo ho podepsal někdo jiný."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Útočník v podepsané smlouvě změní částku z 10 000 na 100 000 Kč a podpis nechá. Co zjistí příjemce?",
+          "answer": "Příjemce spočítá hash změněné smlouvy. Ten je kvůli lavinovému efektu úplně jiný než hash v podpisu. **Ověření selže**, změna se odhalí. Útočník nový podpis nevytvoří, protože nemá soukromý klíč autora."
+        },
+        {
+          "type": "example",
+          "question": "Proč se podepisuje hash a ne celý dokument?",
+          "answer": "Operace se soukromým klíčem jsou pomalé. Hash je krátký (např. 256 bitů), i když dokument má gigabajty. Díky odolnosti proti kolizím podpis hashe stejně spolehlivě chrání celý dokument."
+        },
+        {
+          "type": "heading",
+          "text": "Co podpis zaručuje a co ne"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zaručuje",
+            "Nezaručuje"
+          ],
+          "rows": [
+            [
+              "integritu – dokument se nezměnil",
+              "důvěrnost – dokument zůstává čitelný (na utajení je šifrování)"
+            ],
+            [
+              "autenticitu – podepsal majitel soukromého klíče",
+              "že veřejný klíč opravdu patří tomu, za koho ho považuješ (to řeší certifikáty)"
+            ],
+            [
+              "nepopiratelnost – autor podpis nezapře",
+              "že obsah dokumentu je pravdivý"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "soukromým klíčem",
+              "veřejným klíčem"
+            ],
+            "items": [
+              {
+                "text": "vytvořit podpis",
+                "group": 0
+              },
+              {
+                "text": "dešifrovat zprávu, která mi přišla",
+                "group": 0
+              },
+              {
+                "text": "ověřit podpis",
+                "group": 1
+              },
+              {
+                "text": "zašifrovat tajnou zprávu pro majitele klíče",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď úkony podle toho, který klíč se k nim používá."
+        },
+        {
+          "type": "text",
+          "text": "V EU upravuje elektronické podpisy nařízení **eIDAS** (č. 910/2014). Rozlišuje mimo jiné **kvalifikovaný elektronický podpis**, který má stejné právní účinky jako vlastnoruční podpis."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Digitálně podepsaný e-mail je zašifrovaný, takže ho nikdo jiný nepřečte.",
+          "right": "Podpis chrání integritu a autenticitu, ne důvěrnost. Kdo chce zprávu i utajit, musí ji navíc zašifrovat.",
+          "why": "Podpis ověří každý veřejným klíčem a dokument k tomu musí mít čitelný."
+        },
+        {
+          "type": "summary",
+          "text": "Podpis: hash dokumentu zpracovaný soukromým klíčem autora. Ověření: veřejným klíčem získat podepsaný hash a porovnat s vlastním hashem dokumentu. Zaručuje integritu, autenticitu a nepopiratelnost, ne utajení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která vlastnost NEPATŘÍ ke kryptografické hashovací funkci?",
+      "options": [
+        "Z hashe jde snadno spočítat původní data.",
+        "Výstup má pevnou délku.",
+        "Malá změna vstupu úplně změní výstup.",
+        "Stejný vstup dá vždy stejný hash."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik bitů má výstup funkce SHA-256?",
+      "answers": [
+        "256"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "MD5 je vhodná funkce pro ukládání hesel.",
+      "answer": false,
+      "explanation": "MD5 je rychlá a prolomená (kolize). Na hesla patří pomalé funkce jako bcrypt nebo Argon2 se solí."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu je sůl při ukládání hesel?",
+      "options": [
+        "Stejná hesla dostanou různé hashe a nefungují předpočítané tabulky.",
+        "Heslo se díky ní dá později dešifrovat.",
+        "Zrychlí výpočet hashe.",
+        "Nahrazuje heslo."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "kolize",
+          "dvoje různá data se stejným hashem"
+        ],
+        [
+          "lavinový efekt",
+          "malá změna vstupu, úplně jiný hash"
+        ],
+        [
+          "sůl",
+          "náhodný doplněk k heslu před hashováním"
+        ],
+        [
+          "jednosměrnost",
+          "z hashe nejde získat data"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím autor vytváří digitální podpis?",
+      "options": [
+        "svým soukromým klíčem",
+        "svým veřejným klíčem",
+        "veřejným klíčem příjemce",
+        "solí"
+      ],
+      "answer": 0,
+      "hints": [
+        "Podpis má umět vytvořit jen autor."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky ověření digitálního podpisu.",
+      "items": [
+        "spočítat hash přijatého dokumentu",
+        "veřejným klíčem autora získat podepsaný hash",
+        "porovnat oba hashe",
+        "rozhodnout: shoda = platný podpis"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Digitální podpis zajistí, že dokument nikdo kromě příjemce nepřečte.",
+      "answer": false,
+      "explanation": "Podpis nezajišťuje důvěrnost, k tomu je šifrování."
+    },
+    {
+      "type": "choice",
+      "question": "Útočník změní jedno slovo v podepsaném dokumentu. Co se stane při ověření?",
+      "options": [
+        "Ověření selže, protože hash změněného dokumentu nesedí.",
+        "Podpis zůstane platný, změna je malá.",
+        "Podpis se automaticky opraví.",
+        "Dokument se zašifruje."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj vlastnost s tím, co digitální podpis zaručuje.",
+      "pairs": [
+        [
+          "integrita",
+          "dokument se nezměnil"
+        ],
+        [
+          "autenticita",
+          "víme, kdo podepsal"
+        ],
+        [
+          "nepopiratelnost",
+          "autor podpis nemůže zapřít"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik šestnáctkových znaků má hash SHA-256? (1 znak = 4 bity)",
+      "answers": [
+        "64"
+      ],
+      "hints": [
+        "Vyděl počet bitů čtyřmi."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč server ukládá hesla jako hash, a ne přímo?",
+      "options": [
+        "Při úniku databáze útočník hesla přímo nezíská.",
+        "Hash zabere víc místa.",
+        "Hash se snáz pamatuje.",
+        "Zákon zakazuje ukládat hashe."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se vytváří a ověřuje digitální podpis.",
+      "answer": "Autor spočítá hash dokumentu a zpracuje ho svým soukromým klíčem – vznikne podpis. Příjemce spočítá hash dokumentu sám, veřejným klíčem autora získá hash z podpisu a oba porovná; shoda znamená nezměněný dokument od majitele klíče."
+    },
+    {
+      "type": "open",
+      "question": "Jak by měl server bezpečně ukládat hesla uživatelů?",
+      "answer": "Nikdy ne přímo. Ke každému heslu vygeneruje náhodnou sůl a uloží hash spočítaný pomalou funkcí určenou pro hesla (bcrypt, scrypt, Argon2). Při přihlášení spočítá hash znovu a porovná ho."
+    }
+  ]
+}

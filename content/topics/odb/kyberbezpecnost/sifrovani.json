@@ -1,0 +1,421 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sifrovani",
+  "title": "Šifrování: symetrické a asymetrické",
+  "emoji": "🔒",
+  "explanations": [
+    {
+      "title": "Truhla a schránka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když posíláš zprávu přes internet, jde přes desítky cizích počítačů. Kdokoli po cestě by ji mohl přečíst. Šifrování z ní udělá nesrozumitelnou změť, kterou přečte jen ten, kdo má správný klíč."
+        },
+        {
+          "type": "text",
+          "text": "Šifrování chrání tvoje hesla na webu, zprávy v chatu, platby kartou i data na ukradeném notebooku. Připomenutí: chrání hlavně **důvěrnost**, tedy aby data viděl jen ten, kdo smí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Otevřený text a šifrový text",
+          "definition": "Otevřený text je původní čitelná zpráva. Šifrový text je její zašifrovaná, nečitelná podoba.",
+          "example": "AHOJ → DKRM"
+        },
+        {
+          "type": "term",
+          "term": "Klíč",
+          "definition": "Tajný údaj, podle kterého šifra zprávu zašifruje a dešifruje. Bez klíče se šifrový text přečíst nedá (v rozumném čase).",
+          "example": "U Caesarovy šifry je klíč číslo posunu, třeba 3."
+        },
+        {
+          "type": "term",
+          "term": "Šifrování a dešifrování",
+          "definition": "Šifrování převede otevřený text na šifrový pomocí klíče. Dešifrování je opačný převod.",
+          "example": "Zašifruješ dokument na disku; po zadání hesla se dešifruje."
+        },
+        {
+          "type": "example",
+          "question": "Caesarova šifra posouvá každé písmeno o 3 dál v abecedě (A → D). Zašifruj slovo AHOJ.",
+          "answer": "A → D, H → K, O → R, J → M. Výsledek **DKRM**. Dešifrování posouvá o 3 zpět. Dnes je tahle šifra hračka: klíčů je jen 25, počítač je vyzkouší okamžitě."
+        },
+        {
+          "type": "heading",
+          "text": "Truhla s jedním klíčem: symetrické šifrování"
+        },
+        {
+          "type": "term",
+          "term": "Symetrické šifrování",
+          "definition": "K zašifrování i dešifrování se používá **stejný** klíč. Je velmi rychlé, hodí se na velká data.",
+          "example": "AES – dnešní standard; šifruje disky, Wi-Fi i data při prohlížení webu."
+        },
+        {
+          "type": "text",
+          "text": "Představ si truhlu se zámkem a dva stejné klíče. Ty dáš dopis do truhly a zamkneš. Kamarád ji svým klíčem odemkne. Potíž: jak mu klíč předat, aby ho nikdo neokopíroval? Tomu se říká **problém distribuce klíče**."
+        },
+        {
+          "type": "heading",
+          "text": "Schránka se štěrbinou: asymetrické šifrování"
+        },
+        {
+          "type": "term",
+          "term": "Asymetrické šifrování (šifrování s veřejným klíčem)",
+          "definition": "Každý má **dvojici** klíčů, které k sobě matematicky patří. **Veřejný klíč** smí znát kdokoli a zašifruje se jím zpráva. Dešifrovat ji jde jen **soukromým klíčem**, který si majitel nikomu nedává.",
+          "example": "RSA nebo kryptografie eliptických křivek (ECC)."
+        },
+        {
+          "type": "text",
+          "text": "Je to jako poštovní schránka. Štěrbinou (veřejný klíč) může dopis vhodit kdokoli. Vybrat ji umí jen majitel, který má klíček od dvířek (soukromý klíč). Klíč tedy nikomu posílat nemusíš."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Symetrické",
+            "Asymetrické"
+          ],
+          "rows": [
+            [
+              "klíče",
+              "jeden sdílený tajný klíč",
+              "pár: veřejný a soukromý"
+            ],
+            [
+              "rychlost",
+              "velmi rychlé",
+              "výrazně pomalejší"
+            ],
+            [
+              "slabina",
+              "jak bezpečně předat klíč",
+              "pomalé, nevhodné na velká data"
+            ],
+            [
+              "příklad",
+              "AES",
+              "RSA, ECC"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "symetrické",
+              "asymetrické"
+            ],
+            "items": [
+              {
+                "text": "AES",
+                "group": 0
+              },
+              {
+                "text": "jeden klíč pro obě strany",
+                "group": 0
+              },
+              {
+                "text": "šifrování celého disku",
+                "group": 0
+              },
+              {
+                "text": "RSA",
+                "group": 1
+              },
+              {
+                "text": "veřejný a soukromý klíč",
+                "group": 1
+              },
+              {
+                "text": "není potřeba předem předat tajný klíč",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti a příklady k druhu šifrování."
+        },
+        {
+          "type": "example",
+          "question": "Eva chce Adamovi poslat tajnou zprávu asymetrickou šifrou. Čím ji zašifruje a čím ji Adam dešifruje?",
+          "answer": "Eva zprávu zašifruje **Adamovým veřejným klíčem**. Dešifrovat ji jde jen **Adamovým soukromým klíčem**, který má jen Adam. Ani Eva už svou zašifrovanou zprávu nepřečte."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při asymetrickém šifrování zašifruju zprávu svým soukromým klíčem, aby ji nikdo nepřečetl.",
+          "right": "Pro utajení se šifruje **veřejným klíčem příjemce**. Dešifruje ji jen příjemce svým soukromým klíčem.",
+          "why": "Co zašifruješ svým soukromým klíčem, otevře kdokoli tvým veřejným klíčem. Tento postup se používá u digitálního podpisu, ne pro utajení."
+        },
+        {
+          "type": "summary",
+          "text": "Šifrování dělá z otevřeného textu šifrový pomocí klíče. Symetrické (AES) má jeden sdílený klíč, je rychlé, ale klíč se musí bezpečně předat. Asymetrické (RSA, ECC) má veřejný klíč na šifrování a soukromý na dešifrování."
+        }
+      ]
+    },
+    {
+      "title": "Jak se to používá",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve skutečných systémech se symetrické a asymetrické šifrování nepoužívají odděleně. Spojují se tak, aby se využily výhody obou. Ukážeme si, jak to funguje a podle jakých zásad se šifry vybírají."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Šifrování",
+          "definition": "Převod čitelné zprávy (otevřený text) na nečitelnou (šifrový text) pomocí klíče. Chrání důvěrnost dat.",
+          "example": "Zpráva v aplikaci Signal je po cestě zašifrovaná."
+        },
+        {
+          "type": "term",
+          "term": "Symetrická šifra",
+          "definition": "Stejný tajný klíč šifruje i dešifruje. Rychlá. Dnešní standard je **AES** s klíčem 128 nebo 256 bitů.",
+          "example": "BitLocker šifruje disk pomocí AES."
+        },
+        {
+          "type": "term",
+          "term": "Asymetrická šifra",
+          "definition": "Dvojice klíčů: veřejný (zašifruje, smí ho znát každý) a soukromý (dešifruje, drží ho jen majitel). Pomalejší, ale nevyžaduje předem sdílené tajemství.",
+          "example": "RSA, ECC."
+        },
+        {
+          "type": "term",
+          "term": "Kerckhoffsův princip",
+          "definition": "Bezpečnost šifry má záviset jen na utajení **klíče**, ne na utajení postupu. Postup (algoritmus) může být veřejný.",
+          "example": "AES je zveřejněný a prověřený odborníky z celého světa, a přesto bezpečný."
+        },
+        {
+          "type": "heading",
+          "text": "Hybridní šifrování"
+        },
+        {
+          "type": "term",
+          "term": "Hybridní šifrování",
+          "definition": "Data se zašifrují rychlou symetrickou šifrou s náhodným jednorázovým klíčem. Tento malý klíč se bezpečně předá pomocí asymetrické kryptografie.",
+          "example": "Takto funguje HTTPS (zabezpečené spojení prohlížeče s webem) i šifrovaný e-mail."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odesílatel vygeneruje náhodný symetrický klíč (tzv. klíč relace).",
+            "Zprávu zašifruje symetricky (AES) tímto klíčem – rychle, i velká data.",
+            "Klíč relace zašifruje veřejným klíčem příjemce.",
+            "Pošle obojí: zašifrovanou zprávu a zašifrovaný klíč.",
+            "Příjemce soukromým klíčem dešifruje klíč relace.",
+            "Klíčem relace dešifruje zprávu."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "V HTTPS se dnes klíč relace většinou nepředává zašifrovaný, ale obě strany si ho **společně dohodnou** postupem výměny klíčů (Diffie–Hellman). Princip je stejný: asymetrická matematika pro klíč, symetrická šifra pro data."
+        },
+        {
+          "type": "heading",
+          "text": "Proč nestačí jen symetrické"
+        },
+        {
+          "type": "example",
+          "question": "Ve třídě je 10 žáků a každá dvojice chce mít vlastní tajný symetrický klíč. Kolik klíčů je potřeba? Kolik párů klíčů by stačilo s asymetrickou kryptografií?",
+          "answer": "Dvojic je 10 · 9 : 2 = **45**, tedy 45 tajných klíčů a každý se musí bezpečně předat. Asymetricky má každý jen svůj pár: **10 párů**. Veřejné klíče si mohou poslat otevřeně."
+        },
+        {
+          "type": "example",
+          "question": "Firma chce šifrovat 2 TB záloh. Vybere symetrickou, nebo asymetrickou šifru?",
+          "answer": "**Symetrickou (AES)**, protože je mnohonásobně rychlejší. Asymetrickou kryptografii použije nanejvýš na ochranu nebo předání klíče, kterým jsou zálohy zašifrované."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Čím zašifruji tajnou zprávu pro Adama?",
+                "back": "Adamovým veřejným klíčem."
+              },
+              {
+                "front": "Čím ji Adam přečte?",
+                "back": "Svým soukromým klíčem."
+              },
+              {
+                "front": "Proč je algoritmus AES veřejný?",
+                "back": "Kerckhoffsův princip: tajný má být jen klíč."
+              },
+              {
+                "front": "Co se v hybridním šifrování šifruje symetricky?",
+                "back": "Samotná data (zpráva)."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Odpověz a pak kartu otoč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vymyslím si vlastní tajnou šifru. Když ji nikdo nezná, nikdo ji neprolomí.",
+          "right": "Používej veřejně známé a prověřené algoritmy (AES, RSA, ECC) a chraň klíč.",
+          "why": "Domácí šifry mívají chyby, které zkušený útočník rychle najde. Utajení postupu nevydrží – program jde rozebrat. To říká Kerckhoffsův princip."
+        },
+        {
+          "type": "summary",
+          "text": "Prakticky se šifruje hybridně: data rychlou symetrickou šifrou (AES), klíč pomocí asymetrické kryptografie (RSA, ECC, výměna klíčů). Algoritmy jsou veřejné, tajný je jen klíč (Kerckhoffsův princip)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Zašifruj Caesarovou šifrou s posunem 3 slovo PES (anglická abeceda).",
+      "answers": [
+        "SHV"
+      ],
+      "hints": [
+        "Každé písmeno posuň o tři dál: P → Q → R → …"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co platí pro symetrické šifrování?",
+      "options": [
+        "Stejný klíč šifruje i dešifruje.",
+        "Každý má veřejný a soukromý klíč.",
+        "Je pomalejší než asymetrické.",
+        "Nepotřebuje žádný klíč."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Eva posílá tajnou zprávu Adamovi asymetricky. Kterým klíčem ji zašifruje?",
+      "options": [
+        "Adamovým veřejným",
+        "Adamovým soukromým",
+        "svým soukromým",
+        "svým veřejným"
+      ],
+      "answer": 0,
+      "hints": [
+        "Přečíst ji má umět jen Adam."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj algoritmus s druhem kryptografie.",
+      "pairs": [
+        [
+          "AES",
+          "symetrická šifra"
+        ],
+        [
+          "RSA",
+          "asymetrická kryptografie"
+        ],
+        [
+          "ECC",
+          "asymetrická kryptografie (eliptické křivky)"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle Kerckhoffsova principu má být bezpečnost šifry založená na utajení algoritmu.",
+      "answer": false,
+      "explanation": "Utajený má být jen klíč, algoritmus může být veřejný."
+    },
+    {
+      "type": "input",
+      "question": "Kolik různých tajných klíčů potřebuje 6 lidí, aby měla každá dvojice vlastní symetrický klíč?",
+      "answers": [
+        "15"
+      ],
+      "hints": [
+        "Spočítej, kolik je dvojic: n · (n − 1) : 2."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je hlavní problém symetrického šifrování?",
+      "options": [
+        "bezpečné předání sdíleného klíče",
+        "je příliš pomalé",
+        "neumí šifrovat text",
+        "nelze ho použít na disky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky hybridního šifrování zprávy.",
+      "items": [
+        "vygenerovat náhodný klíč relace",
+        "zašifrovat zprávu klíčem relace (AES)",
+        "zašifrovat klíč relace veřejným klíčem příjemce",
+        "příjemce dešifruje klíč relace soukromým klíčem",
+        "příjemce dešifruje zprávu klíčem relace"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se velká data nešifrují přímo asymetricky?",
+      "options": [
+        "Asymetrické šifrování je výrazně pomalejší.",
+        "Asymetrické šifrování je nebezpečné.",
+        "Asymetrické šifry neumí binární data.",
+        "Velká data se nešifrují vůbec."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Veřejný klíč se smí bez obav poslat komukoli.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kterou vlastnost z triády CIA šifrování chrání především?",
+      "options": [
+        "důvěrnost",
+        "dostupnost",
+        "integritu",
+        "žádnou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik párů klíčů potřebuje 10 lidí při asymetrické kryptografii, aby si mohl kdokoli s kýmkoli psát tajně?",
+      "answers": [
+        "10"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi symetrickým a asymetrickým šifrováním a uveď příklady.",
+      "answer": "Symetrické používá jeden sdílený klíč pro šifrování i dešifrování, je rychlé, ale klíč se musí bezpečně předat (AES). Asymetrické používá pár veřejný a soukromý klíč: veřejným se šifruje, soukromým dešifruje; je pomalejší (RSA, ECC)."
+    },
+    {
+      "type": "open",
+      "question": "Co je hybridní šifrování a proč se používá?",
+      "answer": "Data se šifrují rychlou symetrickou šifrou s náhodným klíčem relace a ten se předá nebo dohodne pomocí asymetrické kryptografie. Spojí se rychlost symetrické šifry s tím, že asymetrická nepotřebuje předem sdílené tajemství; používá to např. HTTPS."
+    }
+  ]
+}
