@@ -1,0 +1,459 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zakladni-pojmy",
+  "title": "Základní ekonomické pojmy",
+  "emoji": "🧺",
+  "explanations": [
+    {
+      "title": "Den v dílně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ráno máš hlad, tak si koupíš rohlík. Do školy jedeš autobusem. Odpoledne chceš nová sluchátka, ale peníze stačí jen na jedny. Celý den rozhoduješ, co chceš a za co zaplatíš."
+        },
+        {
+          "type": "text",
+          "text": "Přesně tohle zkoumá **ekonomie**: jak lidé a firmy rozhodují o věcech, kterých není dost pro všechny. Kdo tomu rozumí, lépe hospodaří s penězi doma i v práci."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Potřeba",
+          "definition": "Pocit, že nám něco chybí, a touha ten nedostatek odstranit.",
+          "example": "Hlad, žízeň, potřeba bydlet, potřeba se vzdělávat nebo bavit."
+        },
+        {
+          "type": "term",
+          "term": "Statek",
+          "definition": "Hmotná věc, která uspokojuje potřebu. Dá se vzít do ruky.",
+          "example": "Rohlík, sluchátka, auto, šroubovák."
+        },
+        {
+          "type": "term",
+          "term": "Služba",
+          "definition": "Činnost, kterou pro nás někdo udělá. Nedá se skladovat – vzniká a spotřebuje se zároveň.",
+          "example": "Jízda autobusem, oprava auta, kosmetické ošetření, kadeřník."
+        },
+        {
+          "type": "term",
+          "term": "Vzácnost",
+          "definition": "Zdrojů (peněz, času, surovin) je méně, než kolik bychom chtěli. Proto musíme vybírat.",
+          "example": "Máš 2 000 Kč a chceš sluchátka za 1 500 Kč i boty za 1 800 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se potřeby dělí"
+        },
+        {
+          "type": "table",
+          "head": [
+            "podle čeho",
+            "druhy",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "podle důležitosti",
+              "primární (životně důležité) × sekundární (zbytné)",
+              "jídlo × dovolená u moře"
+            ],
+            [
+              "podle povahy",
+              "hmotné × nehmotné",
+              "oblečení × přátelství, vzdělání"
+            ],
+            [
+              "podle toho, kdo je má",
+              "individuální × kolektivní",
+              "brýle × veřejné osvětlení"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co potřebuje každá výroba"
+        },
+        {
+          "type": "text",
+          "text": "Aby truhlář vyrobil stůl, potřebuje dřevo, dílnu, nářadí, svou práci a nápad, jak to celé zorganizovat. Těmto vstupům se říká **výrobní faktory**."
+        },
+        {
+          "type": "term",
+          "term": "Výrobní faktory",
+          "definition": "Zdroje, ze kterých se vyrábí statky a služby. Klasické jsou tři: práce, půda a kapitál. Často se přidává čtvrtý – podnikavost.",
+          "example": "Truhlář (práce), pozemek pod dílnou (půda), pila a hoblík (kapitál), nápad založit dílnu (podnikavost)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Práce** – lidská činnost, tělesná i duševní. Odměnou je **mzda**.",
+            "**Půda** – vše, co dává příroda: pozemky, voda, nerostné suroviny. Odměnou je **renta** (nájem).",
+            "**Kapitál** – věci vyrobené proto, aby se s nimi vyrábělo dál: stroje, budovy, nářadí. Odměnou je **úrok**.",
+            "**Podnikavost** – schopnost spojit ostatní faktory a nést riziko. Odměnou je **zisk**."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "práce",
+              "půda",
+              "kapitál"
+            ],
+            "items": [
+              {
+                "text": "CNC frézka v dílně",
+                "group": 2
+              },
+              {
+                "text": "programátor píše kód",
+                "group": 0
+              },
+              {
+                "text": "ložisko uhlí",
+                "group": 1
+              },
+              {
+                "text": "kosmetické křeslo v salonu",
+                "group": 2
+              },
+              {
+                "text": "pozemek pod továrnou",
+                "group": 1
+              },
+              {
+                "text": "starožitník oceňuje obraz",
+                "group": 0
+              },
+              {
+                "text": "firemní dodávka",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď kartičky. Ptej se: je to lidská činnost, dar přírody, nebo věc vyrobená k další výrobě?"
+        },
+        {
+          "type": "heading",
+          "text": "Každá volba něco stojí"
+        },
+        {
+          "type": "term",
+          "term": "Náklady obětované příležitosti",
+          "definition": "Hodnota nejlepší možnosti, kterou jsme kvůli své volbě nevybrali.",
+          "example": "Večer se učíš na test místo brigády za 600 Kč. Obětovaná příležitost je těch 600 Kč."
+        },
+        {
+          "type": "example",
+          "question": "Máš volnou sobotu. Můžeš jít na brigádu za 900 Kč, nebo pomoct babičce, která ti dá 300 Kč. Jdeš k babičce. Jaké jsou náklady obětované příležitosti?",
+          "answer": "Nejlepší možnost, kterou jsi nevybral, je brigáda. Náklady obětované příležitosti jsou tedy **900 Kč**. Nepočítáme je jako rozdíl 900 − 300."
+        },
+        {
+          "type": "example",
+          "question": "Kadeřnice si koupí nové křeslo do salonu. Je to statek, nebo služba? A jaký je to výrobní faktor?",
+          "answer": "Křeslo je hmotná věc, tedy **statek**. Kadeřnice ho používá k další práci (stříhání), proto je to výrobní faktor **kapitál**. Samotné stříhání je pak **služba**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kapitál jsou peníze na účtu.",
+          "right": "V ekonomii je kapitál hlavně věcný: stroje, budovy, nářadí, kterými se vyrábí.",
+          "why": "Za peníze se kapitál jen kupuje. Peníze samy nic nevyrobí, vyrábí až stroj, který za ně koupíš."
+        },
+        {
+          "type": "summary",
+          "text": "Lidé mají potřeby a uspokojují je statky (věci) a službami (činnosti). Vyrábí se z výrobních faktorů: práce, půdy, kapitálu a podnikavosti. Zdrojů je málo, proto musíme volit, a každá volba má náklady obětované příležitosti."
+        }
+      ]
+    },
+    {
+      "title": "Koloběh peněz",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tvůj táta pracuje ve strojírně a dostane výplatu. Z ní koupí v obchodě jídlo. Obchod z tržby zaplatí dodavatele a své prodavače. Peníze pořád obíhají dokola."
+        },
+        {
+          "type": "text",
+          "text": "Když pochopíš tenhle koloběh, pochopíš, proč se ekonomika vůbec hýbe. Proč lidé pracují, proč firmy vyrábějí a k čemu je stát."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ekonomie a ekonomika",
+          "definition": "**Ekonomie** je věda o hospodaření. **Ekonomika** je skutečné hospodářství – firmy, domácnosti a stát v jedné zemi nebo podniku.",
+          "example": "Ve škole se učíš ekonomii. Česká ekonomika je hospodářství Česka."
+        },
+        {
+          "type": "term",
+          "term": "Domácnost",
+          "definition": "Lidé, kteří spolu hospodaří: mají společné příjmy a výdaje. V ekonomii hlavně nakupují (spotřebovávají) a nabízejí svou práci.",
+          "example": "Rodina, která platí nájem a nakupuje jídlo."
+        },
+        {
+          "type": "term",
+          "term": "Firma (podnik)",
+          "definition": "Organizace, která vyrábí statky nebo poskytuje služby, aby je prodala.",
+          "example": "Strojírna, autoservis, kosmetický salon, starožitnictví."
+        },
+        {
+          "type": "term",
+          "term": "Statek a služba",
+          "definition": "**Statek** je hmotná věc, která uspokojuje potřebu. **Služba** je činnost, kterou pro nás někdo udělá.",
+          "example": "Notebook je statek, jeho oprava je služba."
+        },
+        {
+          "type": "term",
+          "term": "Výrobní faktory",
+          "definition": "Zdroje, ze kterých se vyrábí: **práce** (lidé), **půda** (přírodní zdroje), **kapitál** (stroje, budovy) a často i **podnikavost**.",
+          "example": "Mechanik, pozemek dílny, zvedák, majitel, který servis vede."
+        },
+        {
+          "type": "heading",
+          "text": "Jak koloběh funguje"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Domácnosti nabízejí firmám práci",
+              "Firmy platí mzdy",
+              "Domácnosti za mzdy nakupují statky a služby",
+              "Firmy z tržeb platí další výrobu"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Proklikej si koloběh krok po kroku. Všimni si, že zboží teče jedním směrem a peníze opačným."
+        },
+        {
+          "type": "text",
+          "text": "Do koloběhu vstupuje i **stát**. Vybírá daně od domácností i firem. Za ně platí školy, nemocnice, silnice a třeba i důchody."
+        },
+        {
+          "type": "heading",
+          "text": "Tři otázky každé ekonomiky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Co** vyrábět? (auta, nebo jídlo? Kolik čeho?)",
+            "**Jak** vyrábět? (ručně, nebo stroji? S jakými surovinami?)",
+            "**Pro koho** vyrábět? (kdo dostane hotové výrobky?)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Na tyto otázky se musí odpovědět, protože zdrojů je **vzácně** – méně, než kolik bychom chtěli. V tržní ekonomice odpovídají hlavně kupující a prodávající na trhu. V příkazové ekonomice rozhodoval stát (v Československu do roku 1989)."
+        },
+        {
+          "type": "example",
+          "question": "Zařaď: oprava pračky, pračka, veřejné osvětlení, koncert.",
+          "answer": "Pračka je **statek** (hmotná věc). Oprava pračky a koncert jsou **služby** (činnosti). Veřejné osvětlení slouží všem, je to tzv. **veřejný statek** – platí ho obec z daní."
+        },
+        {
+          "type": "example",
+          "question": "Mechatronik pracuje ve firmě za mzdu 40 000 Kč. Kde je v koloběhu a co si ve kterém kroku vymění s firmou?",
+          "answer": "Mechatronik je člen **domácnosti**. Firmě nabízí výrobní faktor **práce** a za ni dostává **mzdu**. Mzdu pak utratí za statky a služby jiných firem – a peníze jdou dál."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Služba je něco, co nemá žádnou hodnotu, protože si ji nemůžu odnést.",
+          "right": "Služba má hodnotu, i když není hmotná. Platíme za ni stejně jako za věc.",
+          "why": "Hodnota je v tom, že služba uspokojí potřebu – vlasy jsou ostříhané, auto opravené. Služby dnes tvoří většinu české ekonomiky."
+        },
+        {
+          "type": "summary",
+          "text": "Domácnosti nabízejí firmám práci a dostávají mzdy, za které nakupují statky a služby. Firmy z tržeb platí výrobu. Stát vybírá daně a platí veřejné služby. Protože zdrojů je málo, musí každá ekonomika rozhodnout co, jak a pro koho vyrábět."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co z toho je služba?",
+      "options": [
+        "stříhání vlasů v kadeřnictví",
+        "nůžky na vlasy",
+        "šampon",
+        "kadeřnické křeslo"
+      ],
+      "answer": 0,
+      "explanation": "Služba je činnost. Nůžky, šampon i křeslo jsou hmotné statky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Statek se dá vzít do ruky, služba ne.",
+      "answer": true,
+      "explanation": "Statky jsou hmotné věci, služby jsou činnosti."
+    },
+    {
+      "type": "choice",
+      "question": "Který výrobní faktor je soustruh v dílně?",
+      "options": [
+        "kapitál",
+        "práce",
+        "půda",
+        "podnikavost"
+      ],
+      "answer": 0,
+      "explanation": "Kapitál jsou věci vyrobené k další výrobě – stroje, nářadí, budovy.",
+      "hints": [
+        "Je soustruh lidská činnost, nebo dar přírody?",
+        "Soustruh někdo vyrobil, aby se s ním dál vyrábělo."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj výrobní faktor s odměnou za něj.",
+      "pairs": [
+        [
+          "práce",
+          "mzda"
+        ],
+        [
+          "půda",
+          "renta (nájem)"
+        ],
+        [
+          "kapitál",
+          "úrok"
+        ],
+        [
+          "podnikavost",
+          "zisk"
+        ]
+      ],
+      "explanation": "Každý výrobní faktor má svou odměnu."
+    },
+    {
+      "type": "choice",
+      "question": "Která potřeba je primární (životně důležitá)?",
+      "options": [
+        "napít se vody",
+        "nový mobil",
+        "dovolená v zahraničí",
+        "koncert oblíbené kapely"
+      ],
+      "answer": 0,
+      "explanation": "Primární potřeby zajišťují přežití: jídlo, pití, bydlení, teplo."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje situace, kdy je zdrojů méně, než kolik bychom chtěli? (jedno slovo)",
+      "answers": [
+        "vzácnost",
+        "vzacnost",
+        "nedostatek"
+      ],
+      "explanation": "Vzácnost nás nutí vybírat mezi možnostmi."
+    },
+    {
+      "type": "choice",
+      "question": "Můžeš jít na brigádu za 1 200 Kč, nebo na doučování za 800 Kč. Vybereš doučování. Jaké jsou náklady obětované příležitosti?",
+      "options": [
+        "1 200 Kč",
+        "400 Kč",
+        "800 Kč",
+        "0 Kč"
+      ],
+      "answer": 0,
+      "explanation": "Je to hodnota nejlepší možnosti, kterou jsi nevybral – brigády za 1 200 Kč.",
+      "hints": [
+        "Hledej, čeho ses svou volbou vzdal.",
+        "Nepočítej rozdíl, ale hodnotu té druhé možnosti."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Peníze na účtu firmy jsou v ekonomii výrobní faktor kapitál.",
+      "answer": false,
+      "explanation": "Výrobní faktor kapitál jsou věcné prostředky (stroje, budovy). Za peníze se kapitál teprve kupuje."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď koloběh: začni u domácnosti, která jde do práce.",
+      "items": [
+        "domácnost nabídne firmě práci",
+        "firma zaplatí mzdu",
+        "domácnost nakoupí zboží",
+        "firma z tržby platí další výrobu"
+      ],
+      "explanation": "Práce a zboží jdou jedním směrem, peníze opačným."
+    },
+    {
+      "type": "match",
+      "question": "Spoj potřebu s druhem.",
+      "pairs": [
+        [
+          "jídlo",
+          "primární"
+        ],
+        [
+          "dovolená u moře",
+          "sekundární"
+        ],
+        [
+          "veřejné osvětlení",
+          "kolektivní"
+        ],
+        [
+          "přátelství",
+          "nehmotná"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo v tržní ekonomice hlavně rozhoduje, co se bude vyrábět?",
+      "options": [
+        "kupující a prodávající na trhu",
+        "vláda podle plánu",
+        "jen banky",
+        "odbory"
+      ],
+      "answer": 0,
+      "explanation": "V tržní ekonomice rozhoduje trh – nabídka a poptávka. Plán podle státu je znak příkazové ekonomiky."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje výrobní faktor, který zahrnuje pozemky, vodu a nerostné suroviny? (jedno slovo)",
+      "answers": [
+        "půda",
+        "puda"
+      ],
+      "explanation": "Půda v ekonomii znamená vše, co dává příroda."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi statkem a službou a uveď příklad z tvého oboru.",
+      "answer": "Statek je hmotná věc, která uspokojuje potřebu, služba je činnost, kterou pro nás někdo udělá. Například ve strojírenství je statkem vyrobená hřídel a službou její oprava nebo seřízení stroje."
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj výrobní faktory a ke každému dej příklad z firmy, kde bys chtěl pracovat.",
+      "answer": "Práce (zaměstnanci), půda (pozemek, suroviny), kapitál (stroje, budovy, nářadí) a podnikavost (majitel, který vše organizuje a nese riziko). Např. v IT firmě: programátoři, pozemek kanceláře, servery a počítače, zakladatel firmy."
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "naklady-kalkulace",
+  "title": "Náklady, výnosy, zisk a kalkulace ceny",
+  "emoji": "🧮",
+  "explanations": [
+    {
+      "title": "Dílna na stoličky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Martin vyrábí v pronajaté dílně dřevěné stoličky a prodává je po 1 000 Kč. Měsíc co měsíc platí nájem, i když nic neprodá. Za dřevo platí jen tehdy, když vyrábí."
+        },
+        {
+          "type": "text",
+          "text": "Kolik stoliček musí prodat, aby nebyl ve ztrátě? Tuhle otázku si klade každý podnik – od autoservisu po salon. Odpověď dají náklady, výnosy a zisk."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Náklady",
+          "definition": "Peníze, které podnik spotřebuje, aby mohl vyrábět nebo poskytovat služby.",
+          "example": "Dřevo, lepidlo, nájem dílny, elektřina, mzda pomocníka."
+        },
+        {
+          "type": "term",
+          "term": "Výnosy",
+          "definition": "Peníze, které podnik za svou činnost získá. Hlavní výnos jsou **tržby** za prodané výrobky a služby.",
+          "example": "Martin prodá 150 stoliček po 1 000 Kč → tržby 150 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Zisk a ztráta",
+          "definition": "**Zisk** = výnosy − náklady, když vyjde kladné číslo. Vyjde-li záporné, je to **ztráta**. Obojí se souhrnně nazývá **výsledek hospodaření**.",
+          "example": "Výnosy 150 000 Kč − náklady 120 000 Kč = zisk 30 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Fixní (stálé) náklady",
+          "definition": "Náklady, které se **nemění s množstvím** výroby. Platí se, i když se nic nevyrobí.",
+          "example": "Nájem dílny 40 000 Kč, pojištění, splátka stroje."
+        },
+        {
+          "type": "term",
+          "term": "Variabilní (proměnné) náklady",
+          "definition": "Náklady, které **rostou s každým kusem** navíc.",
+          "example": "Dřevo a lak na jednu stoličku za 400 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Kolik stojí vyrobit 100 stoliček"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Fixní náklady: nájem a provoz dílny = **60 000 Kč** za měsíc.",
+            "Variabilní náklady: 100 kusů × 400 Kč = **40 000 Kč**.",
+            "Celkové náklady: 60 000 + 40 000 = **100 000 Kč**.",
+            "Tržby: 100 × 1 000 Kč = **100 000 Kč**.",
+            "Výsledek: 100 000 − 100 000 = **0 Kč** – Martin je přesně na nule."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Bod zvratu",
+          "definition": "Množství výroby, při kterém se výnosy přesně rovnají nákladům: podnik nemá ani zisk, ani ztrátu. Každý kus navíc už přináší zisk.",
+          "example": "Martinovi to vyšlo na 100 stoliček."
+        },
+        {
+          "type": "text",
+          "text": "Vzorec: `bod zvratu = fixní náklady ÷ (cena − variabilní náklady na kus)`. Rozdíl v závorce říká, kolik každý kus „přispěje“ na pokrytí fixních nákladů."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "tis. Kč",
+            "items": [
+              {
+                "label": "náklady při 50 ks",
+                "value": 80
+              },
+              {
+                "label": "tržby při 50 ks",
+                "value": 50
+              },
+              {
+                "label": "náklady při 100 ks",
+                "value": 100
+              },
+              {
+                "label": "tržby při 100 ks",
+                "value": 100
+              },
+              {
+                "label": "náklady při 150 ks",
+                "value": 120
+              },
+              {
+                "label": "tržby při 150 ks",
+                "value": 150
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Porovnej dvojice pruhů. Kde jsou tržby kratší než náklady, je ztráta. Kde se rovnají, je bod zvratu. Kde jsou delší, je zisk."
+        },
+        {
+          "type": "example",
+          "question": "Kolik zisku má Martin při prodeji 150 stoliček?",
+          "answer": "Náklady: 60 000 + 150 × 400 = 60 000 + 60 000 = 120 000 Kč. Tržby: 150 × 1 000 = 150 000 Kč. Zisk: 150 000 − 120 000 = **30 000 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Kadeřnice platí za salon měsíčně 30 000 Kč fixních nákladů. Jeden střih stojí 500 Kč a materiál na něj 100 Kč. Kolik střihů je bod zvratu?",
+          "answer": "Každý střih přispěje 500 − 100 = 400 Kč. Bod zvratu = 30 000 ÷ 400 = **75 střihů** za měsíc. Od 76. střihu má zisk."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když vyrobím dvakrát víc kusů, budou celkové náklady dvakrát vyšší.",
+          "right": "Dvakrát vzrostou jen variabilní náklady. Fixní zůstanou stejné.",
+          "why": "Nájem zaplatíš stejný, ať vyrobíš 50, nebo 100 kusů. Proto s rostoucí výrobou klesají náklady na jeden kus."
+        },
+        {
+          "type": "summary",
+          "text": "Zisk = výnosy − náklady. Fixní náklady se s výrobou nemění, variabilní rostou s každým kusem. Bod zvratu = fixní náklady ÷ (cena − variabilní náklady na kus); nad ním podnik vydělává."
+        }
+      ]
+    },
+    {
+      "title": "Jako recept na cenu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zákazník chce, aby ti v dílně vyrobili 20 hřídelí. Kolik mu za ně řekneš? Když moc, odejde ke konkurenci. Když málo, budeš pracovat zadarmo."
+        },
+        {
+          "type": "text",
+          "text": "Cena se proto nevymýšlí od oka, ale **kalkuluje** – skládá se jako recept ze všech nákladů a zisku. Stejně to dělá strojírna, kosmetický salon i IT firma."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Náklady",
+          "definition": "Všechno, co podnik spotřebuje, aby výrobek vyrobil nebo službu poskytl – materiál, práce, energie, nájem.",
+          "example": "Ocelová tyč, práce soustružníka, elektřina pro stroj."
+        },
+        {
+          "type": "term",
+          "term": "Kalkulace",
+          "definition": "Výpočet nákladů a ceny **na jeden výrobek nebo jednu službu** (kalkulační jednici).",
+          "example": "Kalkulace jedné hřídele, jednoho kosmetického ošetření."
+        },
+        {
+          "type": "term",
+          "term": "Přímé náklady",
+          "definition": "Náklady, o kterých přesně víme, kolik jich jde na jeden výrobek.",
+          "example": "Materiál 300 Kč a mzda dělníka 200 Kč na jednu hřídel."
+        },
+        {
+          "type": "term",
+          "term": "Režie (nepřímé náklady)",
+          "definition": "Náklady společné pro celou výrobu, které nejde přesně přiřadit jednomu kusu. Rozpočítávají se přirážkou, často v procentech z přímých mezd.",
+          "example": "Osvětlení dílny, mzda mistra, údržba strojů."
+        },
+        {
+          "type": "term",
+          "term": "DPH",
+          "definition": "Daň z přidané hodnoty – daň, kterou plátce DPH připočítá k ceně a odvede státu. Základní sazba v roce 2026 je **21 %**.",
+          "example": "Cena 1 000 Kč bez DPH + 21 % = 1 210 Kč s DPH."
+        },
+        {
+          "type": "heading",
+          "text": "Kalkulační vzorec"
+        },
+        {
+          "type": "table",
+          "head": [
+            "položka",
+            "hřídel (Kč)",
+            "jak vznikla"
+          ],
+          "rows": [
+            [
+              "přímý materiál",
+              "300",
+              "ocel podle spotřeby"
+            ],
+            [
+              "přímé mzdy",
+              "200",
+              "čas práce × hodinová mzda"
+            ],
+            [
+              "výrobní režie",
+              "300",
+              "150 % z přímých mezd"
+            ],
+            [
+              "**vlastní náklady výkonu**",
+              "**800**",
+              "součet"
+            ],
+            [
+              "zisk (přirážka)",
+              "200",
+              "25 % z vlastních nákladů"
+            ],
+            [
+              "**cena bez DPH**",
+              "**1 000**",
+              "náklady + zisk"
+            ],
+            [
+              "DPH 21 % (sazba 2026)",
+              "210",
+              "21 % z ceny bez DPH"
+            ],
+            [
+              "**cena s DPH**",
+              "**1 210**",
+              "cena pro zákazníka"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Sečti **přímé náklady** (materiál, mzdy, další přímé).",
+            "Přičti **režii** podle stanovené přirážky.",
+            "Dostaneš **vlastní náklady** na kus – minimum, pod které se dlouhodobě prodávat nesmí.",
+            "Přičti **zisk** (přirážku) → **cena bez DPH**.",
+            "Jsi-li plátce DPH, přičti **DPH** → cena pro zákazníka."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "percent",
+          "props": {
+            "percent": 25,
+            "of": 800
+          }
+        },
+        {
+          "type": "text",
+          "text": "Posouvej procenta zisku z vlastních nákladů 800 Kč. Sleduj, jak se mění částka, o kterou bude cena vyšší."
+        },
+        {
+          "type": "example",
+          "question": "Kosmetické ošetření: materiál 150 Kč, mzda kosmetičky 250 Kč, režie 100 % z mezd, zisk 20 %. Kolik je cena bez DPH?",
+          "answer": "Přímé náklady: 150 + 250 = 400 Kč. Režie: 100 % z 250 = 250 Kč. Vlastní náklady: 400 + 250 = **650 Kč**. Zisk: 20 % z 650 = 130 Kč. Cena bez DPH: 650 + 130 = **780 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Výrobek má vlastní náklady 2 000 Kč, zisk 15 %. Výrobce je plátce DPH se sazbou 21 % (2026). Jaká je cena s DPH?",
+          "answer": "Zisk: 15 % z 2 000 = 300 Kč. Cena bez DPH: 2 300 Kč. DPH: 21 % z 2 300 = 483 Kč. Cena s DPH: 2 300 + 483 = **2 783 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zisk se počítá z ceny s DPH.",
+          "right": "Zisk (přirážka) se počítá z vlastních nákladů. DPH se přidává až úplně na konci.",
+          "why": "DPH není peníz podniku – plátce ji odvede státu. Kdybys ji počítal do zisku, nadhodnotil bys, kolik vyděláš."
+        },
+        {
+          "type": "summary",
+          "text": "Kalkulace skládá cenu: přímý materiál + přímé mzdy + režie = vlastní náklady; + zisk = cena bez DPH; plátce DPH přičte daň. Vlastní náklady jsou spodní hranice ceny."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který náklad je fixní?",
+      "options": [
+        "nájem dílny",
+        "materiál na výrobek",
+        "lak na každou stoličku",
+        "obal pro každý kus"
+      ],
+      "answer": 0,
+      "explanation": "Nájem se platí stejný bez ohledu na počet vyrobených kusů."
+    },
+    {
+      "type": "input",
+      "question": "Výnosy jsou 250 000 Kč, náklady 190 000 Kč. Kolik Kč je výsledek hospodaření?",
+      "answers": [
+        "60000",
+        "60 000"
+      ],
+      "explanation": "250 000 − 190 000 = 60 000 Kč zisku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Variabilní náklady rostou s množstvím výroby.",
+      "answer": true,
+      "explanation": "Každý kus navíc potřebuje další materiál a práci."
+    },
+    {
+      "type": "input",
+      "question": "Fixní náklady jsou 80 000 Kč, cena výrobku 600 Kč, variabilní náklady 200 Kč na kus. Kolik kusů je bod zvratu?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "Příspěvek na kus = 600 − 200 = 400 Kč. 80 000 ÷ 400 = 200 kusů.",
+      "hints": [
+        "Nejdřív zjisti, kolik Kč přinese každý kus na pokrytí fixních nákladů.",
+        "Pak vyděl fixní náklady tímto příspěvkem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co jsou režijní (nepřímé) náklady?",
+      "options": [
+        "společné náklady, které nejde přesně přiřadit jednomu kusu",
+        "materiál přesně spotřebovaný na jeden výrobek",
+        "zisk podniku",
+        "daň z přidané hodnoty"
+      ],
+      "answer": 0,
+      "explanation": "Například osvětlení dílny nebo mzda mistra."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď položky kalkulace, jak jdou za sebou.",
+      "items": [
+        "přímé náklady",
+        "režie",
+        "vlastní náklady",
+        "zisk",
+        "cena bez DPH",
+        "cena s DPH"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vlastní náklady jsou 400 Kč, zisk 25 %. Kolik Kč je cena bez DPH?",
+      "answers": [
+        "500"
+      ],
+      "explanation": "25 % z 400 = 100 Kč; 400 + 100 = 500 Kč.",
+      "hints": [
+        "Spočítej 25 % ze 400 Kč a přičti je."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Cena bez DPH je 2 000 Kč, sazba DPH 21 % (2026). Kolik je cena s DPH?",
+      "options": [
+        "2 420 Kč",
+        "2 021 Kč",
+        "2 210 Kč",
+        "1 580 Kč"
+      ],
+      "answer": 0,
+      "explanation": "21 % z 2 000 = 420 Kč; 2 000 + 420 = 2 420 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se výroba zdvojnásobí, zdvojnásobí se i celkové náklady.",
+      "answer": false,
+      "explanation": "Fixní náklady se nemění, zdvojnásobí se jen variabilní."
+    },
+    {
+      "type": "match",
+      "question": "Spoj náklad s druhem.",
+      "pairs": [
+        [
+          "ocel na jednu hřídel",
+          "přímý materiál"
+        ],
+        [
+          "mzda soustružníka za hřídel",
+          "přímé mzdy"
+        ],
+        [
+          "osvětlení haly",
+          "režie"
+        ],
+        [
+          "pojištění budovy",
+          "fixní náklad"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Přímé mzdy jsou 300 Kč, výrobní režie je 120 % z přímých mezd. Kolik Kč je režie?",
+      "options": [
+        "360 Kč",
+        "120 Kč",
+        "420 Kč",
+        "300 Kč"
+      ],
+      "answer": 0,
+      "explanation": "120 % z 300 = 1,2 × 300 = 360 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "S rostoucí výrobou obvykle klesají fixní náklady na jeden kus.",
+      "answer": true,
+      "explanation": "Stejné fixní náklady se rozpočítají na víc kusů."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi fixními a variabilními náklady a uveď příklad z tvého oboru.",
+      "answer": "Fixní náklady se nemění s objemem výroby, např. nájem dílny nebo salonu. Variabilní rostou s každým výrobkem či službou, např. materiál na výrobek nebo kosmetika spotřebovaná při ošetření."
+    },
+    {
+      "type": "open",
+      "question": "Co je bod zvratu a proč je pro podnikatele důležitý?",
+      "answer": "Bod zvratu je množství výroby, při kterém se výnosy rovnají nákladům a podnik nemá zisk ani ztrátu. Podnikatel díky němu ví, kolik musí minimálně prodat, aby nebyl ve ztrátě."
+    }
+  ]
+}

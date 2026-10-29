@@ -1,0 +1,460 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "mzdy-odvody",
+  "title": "Mzdy a odvody: z hrubé na čistou",
+  "emoji": "💸",
+  "explanations": [
+    {
+      "title": "Kam zmizely peníze",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dominik nastoupil jako programátor. Ve smlouvě má mzdu 30 000 Kč. Na účet mu ale přišlo jen 24 590 Kč. Kde je zbytek?"
+        },
+        {
+          "type": "text",
+          "text": "Zbytek nikdo neukradl. Zaměstnavatel z mzdy strhl pojištění a daň a poslal je státu. Z nich se platí důchody, nemocnice nebo školy. Pochopíš, jak se to počítá, a budeš si umět zkontrolovat výplatní pásku."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mzda",
+          "definition": "Peníze za práci, které zaměstnanci platí soukromý zaměstnavatel. Ve státní sféře (učitelé, úředníci) se stejné věci říká **plat**.",
+          "example": "Dominik má mzdu, jeho bývalá učitelka plat."
+        },
+        {
+          "type": "term",
+          "term": "Hrubá mzda",
+          "definition": "Mzda, na které se zaměstnanec se zaměstnavatelem dohodli – **před** srážkou pojištění a daně.",
+          "example": "30 000 Kč ve smlouvě."
+        },
+        {
+          "type": "term",
+          "term": "Čistá mzda",
+          "definition": "Co zaměstnanci opravdu zůstane po odečtení pojištění a daně.",
+          "example": "24 590 Kč na účtu."
+        },
+        {
+          "type": "term",
+          "term": "Sociální pojištění",
+          "definition": "Povinná platba, ze které stát vyplácí důchody, nemocenskou a podporu v nezaměstnanosti. Zaměstnanec v roce 2026 platí **7,1 %** z hrubé mzdy.",
+          "example": "7,1 % z 30 000 Kč = 2 130 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Zdravotní pojištění",
+          "definition": "Povinná platba zdravotní pojišťovně, ze které se platí lékaři a nemocnice. Zaměstnanec platí **4,5 %** z hrubé mzdy (2026).",
+          "example": "4,5 % z 30 000 Kč = 1 350 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Záloha na daň z příjmů",
+          "definition": "Daň, kterou zaměstnavatel strhne každý měsíc. Sazba je **15 %** z hrubé mzdy (u velmi vysokých příjmů 23 %). Odečítá se od ní **sleva na poplatníka 2 570 Kč** měsíčně (2026), když zaměstnanec podepsal **prohlášení poplatníka**.",
+          "example": "15 % z 30 000 Kč = 4 500 Kč, minus 2 570 Kč = 1 930 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet krok za krokem (sazby 2026)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Hrubá mzda: **30 000 Kč**.",
+            "Sociální pojištění 7,1 %: 30 000 × 0,071 = **2 130 Kč** (zaokrouhluje se na celé Kč nahoru).",
+            "Zdravotní pojištění 4,5 %: 30 000 × 0,045 = **1 350 Kč** (také nahoru na celé Kč).",
+            "Základ daně: hrubá mzda zaokrouhlená na celé stokoruny nahoru = 30 000 Kč. Daň 15 % = **4 500 Kč**.",
+            "Sleva na poplatníka: 4 500 − 2 570 = **1 930 Kč** záloha na daň.",
+            "Čistá mzda: 30 000 − 2 130 − 1 350 − 1 930 = **24 590 Kč**."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "Kč",
+            "items": [
+              {
+                "label": "čistá mzda",
+                "value": 24590
+              },
+              {
+                "label": "sociální pojištění",
+                "value": 2130
+              },
+              {
+                "label": "záloha na daň",
+                "value": 1930
+              },
+              {
+                "label": "zdravotní pojištění",
+                "value": 1350
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Prohlédni si, na co se hrubá mzda 30 000 Kč rozdělí. Největší díl ti zůstane, zbytek jde státu a pojišťovně."
+        },
+        {
+          "type": "example",
+          "question": "Hrubá mzda je 42 350 Kč, zaměstnanec podepsal prohlášení. Spočítej čistou mzdu (sazby 2026).",
+          "answer": "Sociální: 42 350 × 0,071 = 3 006,85 → **3 007 Kč**. Zdravotní: 42 350 × 0,045 = 1 905,75 → **1 906 Kč**. Základ daně zaokrouhlený na stokoruny nahoru: 42 400 Kč; 15 % = 6 360 Kč; − 2 570 = **3 790 Kč**. Čistá: 42 350 − 3 007 − 1 906 − 3 790 = **33 647 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Kolik Dominika (hrubá 30 000 Kč) stojí jeho zaměstnavatele?",
+          "answer": "Zaměstnavatel platí navíc ze svého: sociální **24,8 %** = 7 440 Kč a zdravotní **9 %** = 2 700 Kč (sazby 2026). Celkem 30 000 + 7 440 + 2 700 = **40 140 Kč**. To jsou celkové **mzdové náklady** zaměstnavatele, lidově „cena práce“."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Daň je 15 % z čisté mzdy.",
+          "right": "Daň se počítá z **hrubé** mzdy (zaokrouhlené na stokoruny nahoru), pak se odečte sleva na poplatníka.",
+          "why": "Čistá mzda vzniká až po odečtení daně – nemůže být jejím základem. Pojištění i daň se počítají ze stejné hrubé mzdy."
+        },
+        {
+          "type": "summary",
+          "text": "Z hrubé mzdy zaměstnanec v roce 2026 platí 7,1 % sociální a 4,5 % zdravotní pojištění a zálohu na daň 15 % sníženou o slevu 2 570 Kč. Co zbude, je čistá mzda. Zaměstnavatel navíc platí 24,8 % a 9 %."
+        }
+      ]
+    },
+    {
+      "title": "Výplatní páska",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý měsíc dostaneš **výplatní pásku** – přehled, z čeho se tvoje mzda skládá a co z ní odešlo. Kdo jí rozumí, pozná chybu ve výpočtu a ví, za co dostal příplatky."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme pásku odshora dolů: jak mzda vzniká, co se k ní přičítá a co se z ní odečítá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hrubá a čistá mzda",
+          "definition": "**Hrubá** = dohodnutá mzda před srážkami. **Čistá** = co zbude po odečtení pojištění a daně.",
+          "example": "Hrubá 35 000 Kč, čistá asi 28 tisíc."
+        },
+        {
+          "type": "term",
+          "term": "Minimální mzda",
+          "definition": "Nejnižší mzda, kterou zaměstnavatel smí zaplatit za plný úvazek. Stanoví ji vláda nařízením na každý rok. Pro rok **2026** je **22 400 Kč** měsíčně.",
+          "example": "Nikdo na plný úvazek nesmí v roce 2026 dostat méně než 22 400 Kč hrubého."
+        },
+        {
+          "type": "term",
+          "term": "Časová a úkolová mzda",
+          "definition": "**Časová** se platí za odpracovaný čas (hodina, měsíc). **Úkolová** za množství odvedené práce (kusy, výkony). **Podílová** je podíl z tržeb.",
+          "example": "Technik má 250 Kč/h (časová), dělník 30 Kč za kus (úkolová), prodavač 5 % z prodeje (podílová)."
+        },
+        {
+          "type": "term",
+          "term": "Příplatek",
+          "definition": "Peníze navíc za práci v náročnějších podmínkách, které nařizuje zákoník práce.",
+          "example": "Za přesčas nejméně 25 % průměrného výdělku, za noc a víkend nejméně 10 %."
+        },
+        {
+          "type": "term",
+          "term": "Odvody",
+          "definition": "Povinné platby z mzdy: **sociální** a **zdravotní pojištění**. Platí je zaměstnanec (strhnou se mu) i zaměstnavatel (ze svého).",
+          "example": "Sazby 2026: zaměstnanec 7,1 % + 4,5 %, zaměstnavatel 24,8 % + 9 %."
+        },
+        {
+          "type": "term",
+          "term": "Sleva na poplatníka",
+          "definition": "Částka, o kterou se sníží vypočtená daň. V roce 2026 je **2 570 Kč** měsíčně (30 840 Kč ročně). Uplatníš ji, když u zaměstnavatele podepíšeš **prohlášení poplatníka** – vždy jen u jednoho.",
+          "example": "Daň 4 500 Kč − sleva 2 570 Kč = záloha 1 930 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se páska čte (sazby 2026)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "řádek pásky",
+            "jak se počítá",
+            "příklad (Kč)"
+          ],
+          "rows": [
+            [
+              "základní mzda",
+              "160 h × 200 Kč/h",
+              "32 000"
+            ],
+            [
+              "příplatek za přesčas",
+              "10 h × 25 % z průměrného výdělku 200 Kč",
+              "500"
+            ],
+            [
+              "**hrubá mzda**",
+              "součet",
+              "**32 500**"
+            ],
+            [
+              "sociální pojištění 7,1 %",
+              "32 500 × 0,071 = 2 307,5 → nahoru",
+              "−2 308"
+            ],
+            [
+              "zdravotní pojištění 4,5 %",
+              "32 500 × 0,045 = 1 462,5 → nahoru",
+              "−1 463"
+            ],
+            [
+              "záloha na daň",
+              "15 % z 32 500 = 4 875; − 2 570",
+              "−2 305"
+            ],
+            [
+              "**čistá mzda**",
+              "32 500 − 2 308 − 1 463 − 2 305",
+              "**26 424**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "K přesčasu: odpracované přesčasové hodiny se zaplatí normální mzdou (jsou už v základní mzdě nebo zvlášť) a navíc příplatkem. V tabulce je pro jednoduchost jen příplatek, s průměrným výdělkem 200 Kč/h jako příkladem."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Sociální pojištění zaměstnance (2026): ",
+                "after": " %",
+                "options": [
+                  "7,1",
+                  "4,5",
+                  "24,8"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Zdravotní pojištění zaměstnance (2026): ",
+                "after": " %",
+                "options": [
+                  "9",
+                  "4,5",
+                  "7,1"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "Sociální pojištění placené zaměstnavatelem (2026): ",
+                "after": " %",
+                "options": [
+                  "24,8",
+                  "9",
+                  "15"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sazba zálohy na daň u běžné mzdy: ",
+                "after": " %",
+                "options": [
+                  "15",
+                  "21",
+                  "23"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň sazby. Pomůcka: zaměstnavatel platí zhruba třikrát víc než zaměstnanec."
+        },
+        {
+          "type": "example",
+          "question": "Kosmetička má úkolovou mzdu 280 Kč za ošetření a v březnu jich udělala 110. Jaká je hrubá a čistá mzda (prohlášení podepsané, sazby 2026)?",
+          "answer": "Hrubá: 110 × 280 = **30 800 Kč** (víc než minimální mzda 22 400 Kč, v pořádku). Sociální: 30 800 × 0,071 = 2 186,8 → 2 187 Kč. Zdravotní: 30 800 × 0,045 = 1 386 Kč. Daň: 15 % z 30 800 = 4 620 − 2 570 = 2 050 Kč. Čistá: 30 800 − 2 187 − 1 386 − 2 050 = **25 177 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Student pracuje na brigádě a prohlášení u zaměstnavatele nepodepsal. Co se stane se slevou?",
+          "answer": "Bez podepsaného prohlášení zaměstnavatel slevu **2 570 Kč** neuplatní. Strhne vyšší daň (u menších výdělků tzv. srážkovou daň). Přeplatek si může student vrátit v **daňovém přiznání** po skončení roku."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Slevu na poplatníka můžu uplatnit u dvou zaměstnavatelů najednou, když mám dvě práce.",
+          "right": "Prohlášení poplatníka smíš ve stejném měsíci podepsat jen u **jednoho** zaměstnavatele.",
+          "why": "Sleva patří každému jen jednou. Kdo ji uplatní dvakrát, musí ji v přiznání vrátit a hrozí mu sankce."
+        },
+        {
+          "type": "summary",
+          "text": "Hrubá mzda = základní mzda + příplatky; nesmí být nižší než minimální mzda (2026: 22 400 Kč). Odečte se sociální 7,1 %, zdravotní 4,5 % a záloha na daň (15 % mínus sleva 2 570 Kč při podepsaném prohlášení). Výsledek je čistá mzda."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kolik procent z hrubé mzdy platí zaměstnanec na sociálním pojištění (2026)?",
+      "options": [
+        "7,1 %",
+        "4,5 %",
+        "24,8 %",
+        "15 %"
+      ],
+      "answer": 0,
+      "explanation": "Sociální pojištění zaměstnance je 7,1 %, zdravotní 4,5 %."
+    },
+    {
+      "type": "input",
+      "question": "Hrubá mzda je 20 000 Kč. Kolik Kč zaplatí zaměstnanec na zdravotním pojištění (4,5 %)?",
+      "answers": [
+        "900"
+      ],
+      "explanation": "20 000 × 0,045 = 900 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Daň z příjmů se u zaměstnance počítá z čisté mzdy.",
+      "answer": false,
+      "explanation": "Počítá se z hrubé mzdy zaokrouhlené na stokoruny nahoru."
+    },
+    {
+      "type": "input",
+      "question": "Hrubá mzda je 40 000 Kč, prohlášení podepsané. Kolik Kč je záloha na daň po slevě 2 570 Kč (2026)?",
+      "answers": [
+        "3430",
+        "3 430"
+      ],
+      "explanation": "15 % ze 40 000 = 6 000 Kč; 6 000 − 2 570 = 3 430 Kč.",
+      "hints": [
+        "Nejdřív spočítej 15 % z hrubé mzdy.",
+        "Pak odečti měsíční slevu na poplatníka."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hrubá mzda 30 000 Kč, prohlášení podepsané, sazby 2026. Jaká je čistá mzda?",
+      "options": [
+        "24 590 Kč",
+        "25 500 Kč",
+        "22 520 Kč",
+        "26 520 Kč"
+      ],
+      "answer": 0,
+      "explanation": "30 000 − 2 130 (soc.) − 1 350 (zdr.) − 1 930 (daň) = 24 590 Kč.",
+      "hints": [
+        "Odečti 7,1 %, 4,5 % a daň.",
+        "Daň: 15 % z 30 000 minus 2 570 Kč."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj odvod se sazbou (2026).",
+      "pairs": [
+        [
+          "sociální – zaměstnanec",
+          "7,1 %"
+        ],
+        [
+          "zdravotní – zaměstnanec",
+          "4,5 %"
+        ],
+        [
+          "sociální – zaměstnavatel",
+          "24,8 %"
+        ],
+        [
+          "zdravotní – zaměstnavatel",
+          "9 %"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik Kč měsíčně je minimální mzda v roce 2026 (plný úvazek)?",
+      "answers": [
+        "22400",
+        "22 400"
+      ],
+      "explanation": "Pro rok 2026 stanovila vláda minimální mzdu 22 400 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje mzda, která se platí podle počtu vyrobených kusů?",
+      "options": [
+        "úkolová",
+        "časová",
+        "podílová",
+        "minimální"
+      ],
+      "answer": 0,
+      "explanation": "Úkolová mzda se odvíjí od množství práce."
+    },
+    {
+      "type": "truefalse",
+      "question": "Prohlášení poplatníka smí zaměstnanec v jednom měsíci podepsat jen u jednoho zaměstnavatele.",
+      "answer": true,
+      "explanation": "Sleva na poplatníka patří každému jen jednou."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu čisté mzdy.",
+      "items": [
+        "zjistit hrubou mzdu včetně příplatků",
+        "odečíst sociální a zdravotní pojištění",
+        "spočítat daň 15 % ze zaokrouhlené hrubé mzdy",
+        "odečíst slevu na poplatníka",
+        "odečíst zálohu na daň a získat čistou mzdu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik nejméně činí příplatek za práci přesčas, pokud se nesjedná náhradní volno?",
+      "options": [
+        "25 % průměrného výdělku",
+        "10 % průměrného výdělku",
+        "50 % průměrného výdělku",
+        "100 % průměrného výdělku"
+      ],
+      "answer": 0,
+      "explanation": "Zákoník práce stanoví za přesčas nejméně 25 % průměrného výdělku."
+    },
+    {
+      "type": "input",
+      "question": "Hrubá mzda je 50 000 Kč. Kolik Kč zaplatí navíc zaměstnavatel na sociálním pojištění (24,8 %, 2026)?",
+      "answers": [
+        "12400",
+        "12 400"
+      ],
+      "explanation": "50 000 × 0,248 = 12 400 Kč."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi hrubou a čistou mzdou a vyjmenuj, co se z hrubé mzdy odečítá.",
+      "answer": "Hrubá mzda je dohodnutá mzda před srážkami, čistá je to, co zaměstnanci skutečně přijde. Z hrubé se odečte sociální pojištění (2026: 7,1 %), zdravotní pojištění (4,5 %) a záloha na daň z příjmů (15 % snížená o slevu na poplatníka)."
+    },
+    {
+      "type": "open",
+      "question": "Proč stojí zaměstnanec firmu víc, než je jeho hrubá mzda?",
+      "answer": "Zaměstnavatel platí ze svého navíc sociální pojištění (2026: 24,8 %) a zdravotní pojištění (9 %) z hrubé mzdy. Při hrubé mzdě 30 000 Kč ho zaměstnanec stojí asi 40 140 Kč."
+    }
+  ]
+}

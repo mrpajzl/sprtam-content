@@ -1,0 +1,460 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "podnikani-zivnost",
+  "title": "Podnikání a živnost",
+  "emoji": "🛠️",
+  "explanations": [
+    {
+      "title": "Jakubův servis",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jakubovi je 19 let a umí skvěle opravovat notebooky. Sousedi mu za opravy rádi platí. Jakub chce opravy dělat pravidelně a vydělávat si tím. Může prostě začít?"
+        },
+        {
+          "type": "text",
+          "text": "Nemůže – aspoň ne bez pravidel. Kdo chce pravidelně vydělávat na sebe, potřebuje oprávnění, musí platit daně a pojištění a za své chyby ručí. Projdeme to s Jakubem krok za krokem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podnikání",
+          "definition": "Výdělečná činnost, kterou člověk dělá **samostatně**, **na vlastní účet a odpovědnost**, **soustavně** (opakovaně) a s cílem dosáhnout **zisku**.",
+          "example": "Jakub opravuje notebooky každý týden a chce na tom vydělat."
+        },
+        {
+          "type": "term",
+          "term": "Živnost",
+          "definition": "Nejčastější druh podnikání v Česku. Řídí ho **živnostenský zákon** (č. 455/1991 Sb.).",
+          "example": "Prodej zboží, opravy, kadeřnictví, truhlářství."
+        },
+        {
+          "type": "term",
+          "term": "OSVČ",
+          "definition": "**Osoba samostatně výdělečně činná** – člověk, který podniká sám za sebe, nejčastěji jako živnostník.",
+          "example": "Jakub se stane OSVČ, až si ohlásí živnost."
+        },
+        {
+          "type": "term",
+          "term": "Živnostenský úřad",
+          "definition": "Úřad obce (většinou městský nebo magistrát), kde se živnost ohlašuje a který ji eviduje v **živnostenském rejstříku**.",
+          "example": "Jakub zajde na živnostenský úřad ve svém městě."
+        },
+        {
+          "type": "heading",
+          "text": "Smí Jakub podnikat?"
+        },
+        {
+          "type": "text",
+          "text": "Každý, kdo chce živnost, musí splnit **všeobecné podmínky**:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "dosáhl věku **18 let**,",
+            "je **svéprávný** – sám právně jedná za sebe (soud mu to neomezil),",
+            "je **bezúhonný** – nebyl odsouzen za úmyslný trestný čin související s podnikáním."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U některých živností přibývá **zvláštní podmínka**: **odborná způsobilost**. Je to doklad, že obor umíš – třeba výuční list, maturita v oboru nebo praxe."
+        },
+        {
+          "type": "heading",
+          "text": "Jaké živnosti existují"
+        },
+        {
+          "type": "table",
+          "head": [
+            "druh",
+            "co je potřeba",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "ohlašovací **volná**",
+              "jen všeobecné podmínky",
+              "maloobchod, poradenství v oblasti IT"
+            ],
+            [
+              "ohlašovací **řemeslná**",
+              "+ vyučení nebo praxe v oboru",
+              "truhlářství, zámečnictví, holičství a kadeřnictví"
+            ],
+            [
+              "ohlašovací **vázaná**",
+              "+ odborná způsobilost podle zákona",
+              "vedení účetnictví, masérské služby"
+            ],
+            [
+              "**koncesovaná**",
+              "+ povolení úřadu (koncese)",
+              "prodej lihovin, ostraha osob a majetku, cestovní kancelář"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Ohlašovací** živnost stačí úřadu ohlásit a oprávnění vzniká dnem ohlášení. **Koncesovanou** úřad povoluje rozhodnutím a oprávnění vzniká, až je rozhodnutí platné."
+        },
+        {
+          "type": "example",
+          "question": "Jakub chce opravovat notebooky a instalovat do nich programy. Má výuční list v elektro oboru. Jakou živnost potřebuje?",
+          "answer": "Instalace programů a poradenství v IT patří do **volné živnosti** – stačí všeobecné podmínky. Opravy elektronických zařízení jsou **řemeslná živnost** – tam využije svůj **výuční list** jako odbornou způsobilost. Obě ohlásí na živnostenském úřadě najednou."
+        },
+        {
+          "type": "example",
+          "question": "Kamarádka Petra (17 let) chce prodávat ručně šité tašky přes e-shop jako živnost. Může?",
+          "answer": "Všeobecná podmínka je věk **18 let**. Petra ji zatím nesplňuje, proto živnost běžně ohlásit nemůže. Výjimku by musel povolit soud se souhlasem rodičů. Nejjednodušší je počkat do 18."
+        },
+        {
+          "type": "heading",
+          "text": "Co Jakuba čeká jako OSVČ"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ohlásí živnost na živnostenském úřadě. Ten funguje jako **centrální registrační místo** – rovnou ho může přihlásit i u finančního úřadu, správy sociálního zabezpečení a zdravotní pojišťovny.",
+            "Dostane **IČO** – identifikační číslo osoby, pod kterým podniká.",
+            "Za každou zakázku vystaví zákazníkovi doklad (fakturu nebo účtenku).",
+            "Vede si přehled příjmů a výdajů a jednou ročně podá **daňové přiznání**.",
+            "Platí si sám **zdravotní** a **sociální pojištění** (zálohy, výši určují pravidla pro daný rok)."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když Jakub podniká jako OSVČ a zkrachuje, přijde jen o peníze vložené do podnikání.",
+          "right": "OSVČ ručí za dluhy z podnikání **celým svým majetkem**, i tím soukromým.",
+          "why": "Živnostník není oddělený od své firmy. Podniká vlastním jménem, proto za dluhy odpovídá vším, co vlastní – třeba i autem nebo úsporami."
+        },
+        {
+          "type": "summary",
+          "text": "Podnikání je samostatná, soustavná činnost na vlastní účet a odpovědnost za účelem zisku. Živnost může mít, kdo má 18 let, je svéprávný a bezúhonný; u řemeslných a vázaných živností je navíc potřeba odborná způsobilost, u koncesovaných povolení. OSVČ ručí celým majetkem a sama platí daně a pojištění."
+        }
+      ]
+    },
+    {
+      "title": "Podle zákona",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Mnoho lidí ze strojírenství, IT nebo kosmetiky si po škole otevře vlastní dílnu, salon nebo firmu. Na začátku je skoro vždy živnostenský list – dnes výpis ze živnostenského rejstříku."
+        },
+        {
+          "type": "text",
+          "text": "Tady si projdeš, co přesně zákon říká: kdo je podnikatel, jaké druhy živností jsou a jak se podnikání začíná a končí. Hodí se to, i kdybys podnikat nechtěl – jako zákazník živnostníků."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podnikatel",
+          "definition": "Kdo samostatně, na vlastní účet a odpovědnost, soustavně vykonává výdělečnou činnost za účelem zisku (tak to říká občanský zákoník).",
+          "example": "Živnostník, obchodní společnost, soukromě hospodařící zemědělec."
+        },
+        {
+          "type": "term",
+          "term": "Živnost a živnostenský zákon",
+          "definition": "**Živnost** je podnikání podle **živnostenského zákona** (č. 455/1991 Sb.). Zákon určuje, kdo smí živnost mít a jaké druhy jsou.",
+          "example": "Autoservis, kosmetický salon, prodejna nábytku."
+        },
+        {
+          "type": "term",
+          "term": "Odborná způsobilost",
+          "definition": "Doklad, že obor umíš: výuční list, maturita, vysoká škola nebo praxe v oboru.",
+          "example": "Truhlář dokládá výuční list v oboru truhlář."
+        },
+        {
+          "type": "term",
+          "term": "Koncese",
+          "definition": "Povolení úřadu k živnosti, u které stát chce víc dohledu. Úřad ji vydá rozhodnutím.",
+          "example": "Cestovní kancelář, ostraha majetku a osob."
+        },
+        {
+          "type": "term",
+          "term": "IČO",
+          "definition": "Identifikační číslo osoby – osmimístné číslo, pod kterým je podnikatel veden ve veřejných rejstřících.",
+          "example": "Píše se na fakturu, aby šlo podnikatele dohledat."
+        },
+        {
+          "type": "heading",
+          "text": "Podmínky živnosti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "všeobecné (pro všechny)",
+            "zvláštní (jen u některých)"
+          ],
+          "rows": [
+            [
+              "věk 18 let",
+              "odborná způsobilost (řemeslné a vázané)"
+            ],
+            [
+              "svéprávnost",
+              "koncese (koncesované)"
+            ],
+            [
+              "bezúhonnost",
+              "–"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "volná",
+              "řemeslná",
+              "vázaná",
+              "koncesovaná"
+            ],
+            "items": [
+              {
+                "text": "maloobchod se zbožím",
+                "group": 0
+              },
+              {
+                "text": "zámečnictví, nástrojářství",
+                "group": 1
+              },
+              {
+                "text": "vedení účetnictví",
+                "group": 2
+              },
+              {
+                "text": "prodej lihovin",
+                "group": 3
+              },
+              {
+                "text": "poradenství v oblasti IT",
+                "group": 0
+              },
+              {
+                "text": "truhlářství",
+                "group": 1
+              },
+              {
+                "text": "provozování cestovní kanceláře",
+                "group": 3
+              },
+              {
+                "text": "masérské služby",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď živnosti. Napovídá otázka: stačí ohlásit, potřebuje to vyučení, zvláštní odbornost, nebo dokonce povolení?"
+        },
+        {
+          "type": "heading",
+          "text": "Od nápadu po konec živnosti"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Ohlášení** živnosti (nebo žádost o koncesi) na kterémkoli živnostenském úřadě, osobně nebo elektronicky.",
+            "**Vznik oprávnění**: u ohlašovací živnosti dnem ohlášení, u koncesované dnem, kdy je rozhodnutí o koncesi pravomocné.",
+            "**Zápis** do živnostenského rejstříku a přidělení **IČO**.",
+            "**Provozování**: doklady zákazníkům, evidence příjmů a výdajů, daně a pojištění.",
+            "**Přerušení** (např. při nemoci) nebo **zánik**: podnikatel se živnosti vzdá, skončí doba, na kterou ji ohlásil, podnikatel zemře nebo ji úřad zruší."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní a vedlejší činnost"
+        },
+        {
+          "type": "text",
+          "text": "OSVČ může podnikat jako **hlavní činnost** (je to její hlavní práce) nebo jako **vedlejší** – vedle zaměstnání, studia nebo rodičovské. Vedlejší činnost mívá nižší povinné zálohy na pojištění. Přesné částky se mění každý rok."
+        },
+        {
+          "type": "example",
+          "question": "Kateřina je vyučená kadeřnice a chce si otevřít kadeřnictví. Jaký druh živnosti to je a co doloží?",
+          "answer": "Holičství a kadeřnictví je **řemeslná** ohlašovací živnost. Kateřina splní všeobecné podmínky (18 let, svéprávnost, bezúhonnost) a jako odbornou způsobilost doloží **výuční list** v oboru. Oprávnění jí vznikne **dnem ohlášení**."
+        },
+        {
+          "type": "example",
+          "question": "Student 4. ročníku (19 let) programuje weby pro firmy. Jak může podnikat?",
+          "answer": "Tvorba webů a poradenství v IT patří do **volné živnosti**. Stačí mu všeobecné podmínky. Protože studuje, bude to jeho **vedlejší činnost**. Po ohlášení dostane IČO a za práci vystavuje faktury."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Koncesovanou živnost stačí ohlásit a můžu začít hned druhý den.",
+          "right": "U koncesované živnosti musí úřad vydat rozhodnutí a oprávnění vznikne, až nabude právní moci.",
+          "why": "Ohlásit stačí jen ohlašovací živnosti (volné, řemeslné, vázané). Koncese je povolení – úřad si podmínky nejdřív ověří."
+        },
+        {
+          "type": "summary",
+          "text": "Živnosti jsou ohlašovací (volné, řemeslné, vázané) a koncesované. Všeobecné podmínky jsou 18 let, svéprávnost a bezúhonnost, zvláštní jsou odborná způsobilost a koncese. Ohlašovací oprávnění vzniká dnem ohlášení, koncesované pravomocným rozhodnutím."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která podmínka NEpatří mezi všeobecné podmínky živnosti?",
+      "options": [
+        "výuční list v oboru",
+        "věk 18 let",
+        "svéprávnost",
+        "bezúhonnost"
+      ],
+      "answer": 0,
+      "explanation": "Výuční list je odborná způsobilost – zvláštní podmínka jen u některých živností."
+    },
+    {
+      "type": "match",
+      "question": "Spoj živnost s jejím druhem.",
+      "pairs": [
+        [
+          "maloobchod",
+          "volná"
+        ],
+        [
+          "truhlářství",
+          "řemeslná"
+        ],
+        [
+          "vedení účetnictví",
+          "vázaná"
+        ],
+        [
+          "prodej lihovin",
+          "koncesovaná"
+        ]
+      ],
+      "hints": [
+        "Volná potřebuje nejméně, koncesovaná nejvíc.",
+        "Koncesovaná je tam, kde stát chce mít největší dohled."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "U ohlašovací živnosti vzniká oprávnění dnem ohlášení.",
+      "answer": true,
+      "explanation": "Stačí úplné ohlášení na živnostenském úřadě."
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou nazývá osoba samostatně výdělečně činná?",
+      "answers": [
+        "OSVČ",
+        "O.S.V.Č."
+      ],
+      "explanation": "OSVČ podniká sama za sebe, nejčastěji jako živnostník."
+    },
+    {
+      "type": "choice",
+      "question": "Čím ručí OSVČ za dluhy z podnikání?",
+      "options": [
+        "celým svým majetkem",
+        "jen majetkem v podnikání",
+        "do výše 1 Kč",
+        "neručí vůbec"
+      ],
+      "answer": 0,
+      "explanation": "Živnostník podniká vlastním jménem, proto ručí veškerým majetkem."
+    },
+    {
+      "type": "choice",
+      "question": "Kde se ohlašuje živnost?",
+      "options": [
+        "na živnostenském úřadě",
+        "na finančním úřadě",
+        "u notáře",
+        "na úřadu práce"
+      ],
+      "answer": 0,
+      "explanation": "Živnostenský úřad je zároveň centrální registrační místo – může předat přihlášky i dalším úřadům."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak začít podnikat na volnou živnost.",
+      "items": [
+        "ověřit, že splňuji všeobecné podmínky",
+        "ohlásit živnost na živnostenském úřadě",
+        "získat zápis do rejstříku a IČO",
+        "vystavit první fakturu zákazníkovi"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Sedmnáctiletý student může běžně ohlásit živnost bez jakéhokoli souhlasu.",
+      "answer": false,
+      "explanation": "Všeobecná podmínka je věk 18 let. Mladší by potřeboval rozhodnutí soudu a souhlas zákonného zástupce."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký druh živnosti je holičství a kadeřnictví?",
+      "options": [
+        "řemeslná",
+        "volná",
+        "koncesovaná",
+        "není to živnost"
+      ],
+      "answer": 0,
+      "explanation": "Kadeřnictví je řemeslná živnost – potřebuje výuční list nebo praxi v oboru.",
+      "hints": [
+        "Je k tomu potřeba vyučit se v oboru?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje povolení úřadu, které potřebuje koncesovaná živnost? (jedno slovo)",
+      "answers": [
+        "koncese"
+      ],
+      "explanation": "Koncesi uděluje živnostenský úřad rozhodnutím."
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost NEpatří k definici podnikání?",
+      "options": [
+        "činnost se dělá jen jednou, výjimečně",
+        "samostatnost",
+        "vlastní účet a odpovědnost",
+        "cíl dosáhnout zisku"
+      ],
+      "answer": 0,
+      "explanation": "Podnikání je soustavné – opakované, ne jednorázové."
+    },
+    {
+      "type": "truefalse",
+      "question": "Student, který vedle školy podniká, má podnikání jako vedlejší činnost.",
+      "answer": true,
+      "explanation": "Studium je jeden z důvodů, proč se podnikání považuje za vedlejší činnost."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi ohlašovací a koncesovanou živností a ke každé uveď příklad.",
+      "answer": "Ohlašovací živnost stačí ohlásit na živnostenském úřadě a oprávnění vzniká dnem ohlášení – např. truhlářství nebo maloobchod. Koncesovaná živnost potřebuje povolení (koncesi), které úřad vydá rozhodnutím – např. ostraha majetku a osob nebo prodej lihovin."
+    },
+    {
+      "type": "open",
+      "question": "Jaké povinnosti má živnostník, když už podniká?",
+      "answer": "Vystavuje zákazníkům doklady, vede evidenci příjmů a výdajů, podává daňové přiznání a platí daň z příjmů. Sám si platí zálohy na sociální a zdravotní pojištění a hlásí úřadům změny."
+    }
+  ]
+}

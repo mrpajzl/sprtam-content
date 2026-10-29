@@ -1,0 +1,444 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "obchodni-korporace",
+  "title": "Obchodní korporace",
+  "emoji": "🏢",
+  "explanations": [
+    {
+      "title": "Tři kamarádi",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Adam, Bára a Ctibor dodělali školu a chtějí spolu založit firmu na opravy průmyslových robotů. Potřebují koupit nářadí, pronajmout dílnu a najmout prvního technika."
+        },
+        {
+          "type": "text",
+          "text": "Hned narazí na otázky: Kdo bude firmu řídit? Jak si rozdělí zisk? A co když firma skončí s dluhy – přijdou o své byty? Odpovědi záleží na tom, jakou **právní formu** si vyberou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obchodní korporace",
+          "definition": "Firma, kterou zakládá jeden nebo víc lidí a která má vlastní právní osobnost: je **právnická osoba**. Řídí ji **zákon o obchodních korporacích** (č. 90/2012 Sb.).",
+          "example": "s.r.o., akciová společnost, družstvo."
+        },
+        {
+          "type": "term",
+          "term": "Právnická osoba",
+          "definition": "„Umělá“ osoba vytvořená podle zákona. Sama uzavírá smlouvy, vlastní majetek a má dluhy – odděleně od lidí, kteří ji založili.",
+          "example": "Smlouvu o nájmu dílny podepíše firma „Robo servis s.r.o.“, ne Adam osobně."
+        },
+        {
+          "type": "term",
+          "term": "Společník",
+          "definition": "Člověk (nebo firma), který do společnosti vložil vklad a podílí se na ní.",
+          "example": "Adam, Bára a Ctibor budou společníci."
+        },
+        {
+          "type": "term",
+          "term": "Vklad a základní kapitál",
+          "definition": "**Vklad** je to, co společník do firmy vloží (peníze nebo věci). Součet vkladů je **základní kapitál**.",
+          "example": "Každý vloží 30 000 Kč → základní kapitál 90 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Ručení",
+          "definition": "Odpovědnost za dluhy firmy: zda a čím musí společník zaplatit, když firma dluhy sama nezaplatí.",
+          "example": "Neomezené ručení = i soukromým majetkem. Omezené = jen do určité částky."
+        },
+        {
+          "type": "term",
+          "term": "Obchodní rejstřík",
+          "definition": "Veřejný seznam firem vedený soudem. Korporace **vzniká dnem zápisu** do něj.",
+          "example": "Na justice.cz najdeš, kdo je jednatelem kterékoli s.r.o."
+        },
+        {
+          "type": "heading",
+          "text": "Jaké formy si můžou vybrat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "forma",
+            "kolik zakladatelů",
+            "minimální základní kapitál",
+            "jak ručí společníci"
+          ],
+          "rows": [
+            [
+              "veřejná obchodní společnost (v.o.s.)",
+              "aspoň 2",
+              "není předepsán",
+              "neomezeně, celým majetkem, společně a nerozdílně"
+            ],
+            [
+              "komanditní společnost (k.s.)",
+              "aspoň 2",
+              "není předepsán",
+              "komplementář neomezeně, komanditista do výše nesplaceného vkladu"
+            ],
+            [
+              "společnost s ručením omezeným (s.r.o.)",
+              "1 a víc",
+              "1 Kč (vklad každého aspoň 1 Kč)",
+              "do výše nesplacených vkladů zapsaných v rejstříku"
+            ],
+            [
+              "akciová společnost (a.s.)",
+              "1 a víc",
+              "2 000 000 Kč (nebo 80 000 €)",
+              "akcionáři za dluhy neručí"
+            ],
+            [
+              "družstvo",
+              "aspoň 3 členové",
+              "není předepsán",
+              "členové za dluhy neručí, pokud stanovy neurčí jinak"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kamarádi chtějí riskovat co nejméně a mají jen 90 000 Kč. Kterou formu jim doporučíš?",
+          "answer": "**s.r.o.** Základní kapitál 90 000 Kč stačí (minimum je 1 Kč). Když každý svůj vklad **splatí**, za dluhy firmy už osobně neručí. a.s. by potřebovala aspoň 2 mil. Kč, v.o.s. by znamenala ručení celým majetkem."
+        },
+        {
+          "type": "example",
+          "question": "Firma „Robo servis s.r.o.“ zkrachuje s dluhem 500 000 Kč. Adam svůj vklad 30 000 Kč splatil jen z poloviny, ostatní celý. Co hrozí?",
+          "answer": "Společníci s.r.o. ručí **společně a nerozdílně** do výše **nesplacených** vkladů podle rejstříku. Nesplaceno je 15 000 Kč (Adamovo). Věřitel tedy může po společnících chtít nejvýš **15 000 Kč** – a to po kterémkoli z nich. Zbytek dluhu je ztráta věřitele."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Společníci s.r.o. nikdy za nic neručí.",
+          "right": "Ručí do výše svých **nesplacených** vkladů. Až je vše splaceno, osobně už neručí.",
+          "why": "Proto se jmenuje „s ručením **omezeným**“, ne „bez ručení“. Ručení zmizí, teprve když jsou vklady zaplacené a zapsané."
+        },
+        {
+          "type": "summary",
+          "text": "Obchodní korporace jsou právnické osoby: v.o.s., k.s., s.r.o., a.s. a družstvo. Liší se počtem zakladatelů, základním kapitálem a ručením. Vznikají zápisem do obchodního rejstříku. Nejčastější je s.r.o. – stačí 1 Kč a společníci ručí jen do výše nesplacených vkladů."
+        }
+      ]
+    },
+    {
+      "title": "Kdo co řídí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V nákupním centru vidíš za názvy obchodů zkratky: Lékárna s.r.o., Banka a.s., Bytové družstvo. Každá zkratka říká, jak je firma postavená, kdo ji řídí a kdo dostává zisk."
+        },
+        {
+          "type": "text",
+          "text": "Až budeš zaměstnanec, dodavatel nebo podnikatel, budeš s nimi uzavírat smlouvy. Hodí se vědět, s kým jednáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obchodní korporace",
+          "definition": "Firma, která je **právnickou osobou** – „umělou“ osobou s vlastním majetkem a dluhy, oddělenými od majitelů. Patří sem obchodní společnosti a družstva.",
+          "example": "Škoda Auto a.s., Pekárna Novák s.r.o."
+        },
+        {
+          "type": "term",
+          "term": "Osobní × kapitálová společnost",
+          "definition": "V **osobní** společnosti je důležitá osobní práce společníků a ti ručí celým majetkem. V **kapitálové** jde hlavně o vložené peníze a ručení je omezené.",
+          "example": "Osobní: v.o.s., k.s. Kapitálové: s.r.o., a.s."
+        },
+        {
+          "type": "term",
+          "term": "Statutární orgán",
+          "definition": "Kdo firmu řídí a jedná za ni navenek – podepisuje smlouvy.",
+          "example": "V s.r.o. je to **jednatel**, v a.s. **představenstvo** (nebo správní rada)."
+        },
+        {
+          "type": "term",
+          "term": "Valná hromada",
+          "definition": "Nejvyšší orgán, schůze všech společníků nebo akcionářů. Rozhoduje o zásadních věcech, třeba o rozdělení zisku.",
+          "example": "Valná hromada s.r.o. schválí, že se zisk 200 000 Kč rozdělí mezi společníky."
+        },
+        {
+          "type": "term",
+          "term": "Akcie a dividenda",
+          "definition": "**Akcie** je cenný papír, který dokládá podíl na akciové společnosti. **Dividenda** je podíl na zisku, který akcionář dostane.",
+          "example": "Máš 10 akcií a firma vyplácí 50 Kč na akcii → dividenda 500 Kč (před zdaněním)."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se korporace zakládá"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zakladatelé sepíšou **společenskou smlouvu** (je-li jich víc) nebo **zakladatelskou listinu** (je-li jeden). U s.r.o. a a.s. musí být ve formě **notářského zápisu**.",
+            "Splatí vklady (u s.r.o. a a.s. aspoň část před zápisem podle zákona).",
+            "Firma potřebuje **podnikatelské oprávnění**, většinou živnostenské.",
+            "Podá se návrh na **zápis do obchodního rejstříku**. Dnem zápisu korporace **vzniká**.",
+            "Název musí obsahovat označení formy: např. „s.r.o.“, „a.s.“, „v.o.s.“, „k.s.“."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kdo řídí kterou firmu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "forma",
+            "kdo řídí (statutární orgán)",
+            "nejvyšší orgán",
+            "kdo dostává zisk"
+          ],
+          "rows": [
+            [
+              "v.o.s.",
+              "všichni společníci",
+              "společníci",
+              "společníci rovným dílem, pokud se nedohodnou jinak"
+            ],
+            [
+              "k.s.",
+              "komplementáři",
+              "společníci",
+              "dělí se mezi společnost a komplementáře, nebo podle smlouvy"
+            ],
+            [
+              "s.r.o.",
+              "jednatel (jeden nebo více)",
+              "valná hromada",
+              "společníci podle podílů"
+            ],
+            [
+              "a.s.",
+              "představenstvo (nebo správní rada)",
+              "valná hromada",
+              "akcionáři – dividenda"
+            ],
+            [
+              "družstvo",
+              "představenstvo",
+              "členská schůze",
+              "členové podle stanov"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Kdo jedná za s.r.o.?",
+                "back": "**jednatel**"
+              },
+              {
+                "front": "Minimální základní kapitál s.r.o.?",
+                "back": "**1 Kč**"
+              },
+              {
+                "front": "Minimální základní kapitál a.s.?",
+                "back": "**2 000 000 Kč** (nebo 80 000 €)"
+              },
+              {
+                "front": "Kolik členů musí mít družstvo?",
+                "back": "aspoň **3**"
+              },
+              {
+                "front": "Kdo v k.s. ručí neomezeně?",
+                "back": "**komplementář**"
+              },
+              {
+                "front": "Kdy korporace vzniká?",
+                "back": "dnem **zápisu do obchodního rejstříku**"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si odpovědět dřív, než kartičku otočíš."
+        },
+        {
+          "type": "example",
+          "question": "Jana má 100 akcií a.s. Valná hromada schválila dividendu 30 Kč na akcii. Kolik Jana dostane před zdaněním?",
+          "answer": "Dividenda = počet akcií × dividenda na akcii = 100 × 30 = **3 000 Kč** před zdaněním. Za dluhy firmy Jana jako akcionářka neručí – riskuje jen, že akcie ztratí hodnotu."
+        },
+        {
+          "type": "example",
+          "question": "Dva bratři chtějí rodinnou truhlárnu, nemají kapitál a věří si. Jedna z forem nevyžaduje základní kapitál, ale bratři by ručili celým majetkem. Která?",
+          "answer": "**Veřejná obchodní společnost (v.o.s.).** Stačí 2 společníci, základní kapitál není předepsán, oba firmu řídí. Nevýhoda: ručí za dluhy **celým svým majetkem, společně a nerozdílně**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Akcionář musí zaplatit dluhy akciové společnosti, když zkrachuje.",
+          "right": "Akcionář za dluhy a.s. **neručí**. Může přijít jen o to, co zaplatil za akcie.",
+          "why": "Akciová společnost je samostatná právnická osoba. Ručí sama svým majetkem, ne majetkem akcionářů."
+        },
+        {
+          "type": "summary",
+          "text": "Osobní společnosti (v.o.s., k.s.) řídí společníci a ti ručí neomezeně. Kapitálové (s.r.o., a.s.) mají valnou hromadu a statutární orgán – jednatele, nebo představenstvo – a společníci ručí omezeně nebo vůbec. Korporace vzniká zápisem do obchodního rejstříku."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký je minimální základní kapitál s.r.o.?",
+      "options": [
+        "1 Kč",
+        "200 000 Kč",
+        "2 000 000 Kč",
+        "není žádný vklad"
+      ],
+      "answer": 0,
+      "explanation": "Od roku 2014 stačí vklad každého společníka 1 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo ručí za dluhy v.o.s.?",
+      "options": [
+        "všichni společníci celým majetkem, společně a nerozdílně",
+        "nikdo, jen firma",
+        "jen jednatel",
+        "společníci do výše 1 Kč"
+      ],
+      "answer": 0,
+      "explanation": "v.o.s. je osobní společnost s neomezeným ručením."
+    },
+    {
+      "type": "truefalse",
+      "question": "Obchodní korporace vzniká dnem zápisu do obchodního rejstříku.",
+      "answer": true,
+      "explanation": "Před zápisem existuje jen jako „založená“, ne vzniklá."
+    },
+    {
+      "type": "match",
+      "question": "Spoj formu s typickým statutárním orgánem.",
+      "pairs": [
+        [
+          "s.r.o.",
+          "jednatel"
+        ],
+        [
+          "a.s.",
+          "představenstvo"
+        ],
+        [
+          "v.o.s.",
+          "všichni společníci"
+        ],
+        [
+          "k.s.",
+          "komplementáři"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik členů musí mít nejméně družstvo? (číslo)",
+      "answers": [
+        "3",
+        "tři",
+        "tri"
+      ],
+      "explanation": "Družstvo musí mít aspoň 3 členy."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje podíl na zisku, který dostává akcionář?",
+      "options": [
+        "dividenda",
+        "renta",
+        "úrok",
+        "mzda"
+      ],
+      "answer": 0,
+      "explanation": "Dividenda je podíl akcionáře na zisku a.s."
+    },
+    {
+      "type": "truefalse",
+      "question": "V komanditní společnosti ručí komanditista celým svým majetkem.",
+      "answer": false,
+      "explanation": "Komanditista ručí jen do výše nesplaceného vkladu. Celým majetkem ručí komplementář."
+    },
+    {
+      "type": "input",
+      "question": "Akciová společnost potřebuje základní kapitál aspoň kolik milionů Kč? (číslo)",
+      "answers": [
+        "2",
+        "dva"
+      ],
+      "explanation": "Minimum je 2 000 000 Kč nebo 80 000 €."
+    },
+    {
+      "type": "choice",
+      "question": "Která forma je kapitálová společnost?",
+      "options": [
+        "s.r.o.",
+        "v.o.s.",
+        "k.s.",
+        "OSVČ"
+      ],
+      "answer": 0,
+      "explanation": "Kapitálové jsou s.r.o. a a.s. v.o.s. a k.s. jsou osobní, OSVČ není korporace."
+    },
+    {
+      "type": "choice",
+      "question": "Akcionář vlastní 40 akcií, dividenda je 25 Kč na akcii. Kolik dostane před zdaněním?",
+      "options": [
+        "1 000 Kč",
+        "65 Kč",
+        "100 Kč",
+        "40 Kč"
+      ],
+      "answer": 0,
+      "explanation": "40 × 25 = 1 000 Kč.",
+      "hints": [
+        "Dividenda se počítá na každou akcii zvlášť."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky vzniku s.r.o.",
+      "items": [
+        "sepsat společenskou smlouvu u notáře",
+        "splatit vklady",
+        "získat živnostenské oprávnění",
+        "zapsat firmu do obchodního rejstříku"
+      ],
+      "hints": [
+        "Co je úplně na konci a od kdy firma vzniká?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Za smlouvu, kterou podepíše jednatel jménem s.r.o., odpovídá společnost, ne jednatel jako soukromá osoba.",
+      "answer": true,
+      "explanation": "Jednatel jedná za právnickou osobu, závazek má společnost."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej s.r.o. a v.o.s. podle počtu zakladatelů, kapitálu a ručení.",
+      "answer": "s.r.o. může založit i jeden člověk, základní kapitál je aspoň 1 Kč a společníci ručí jen do výše nesplacených vkladů. v.o.s. potřebuje aspoň dva společníky, kapitál není předepsán, ale společníci ručí celým majetkem společně a nerozdílně."
+    },
+    {
+      "type": "open",
+      "question": "Co je právnická osoba a proč je pro podnikatele výhodná?",
+      "answer": "Právnická osoba je subjekt vytvořený podle zákona, který má vlastní majetek, práva a dluhy oddělené od zakladatelů. Výhodou je, že za dluhy firmy (např. s.r.o. nebo a.s.) majitelé neručí celým soukromým majetkem."
+    }
+  ]
+}

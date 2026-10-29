@@ -1,0 +1,459 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "trh-cena",
+  "title": "Trh, nabídka, poptávka a cena",
+  "emoji": "⚖️",
+  "explanations": [
+    {
+      "title": "Bleší trh",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V sobotu je na náměstí bleší trh. Prodejce má deset starých gramofonů a chce za každý 2 000 Kč. Nikdo je nekupuje. Odpoledne sleví na 1 200 Kč a prodá je skoro všechny."
+        },
+        {
+          "type": "text",
+          "text": "Proč se cena změnila? Protože se na trhu potkali ti, kdo chtějí prodat, s těmi, kdo chtějí koupit. Pochopit to se hodí každému, kdo něco prodává – ať jsou to gramofony, opravy nebo kosmetické ošetření."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trh",
+          "definition": "Místo nebo situace, kde se setkávají kupující a prodávající a domlouvají se na ceně. Nemusí to být fyzické místo.",
+          "example": "Tržnice, e-shop, burza, inzerát na internetu."
+        },
+        {
+          "type": "term",
+          "term": "Poptávka",
+          "definition": "Kolik zboží chtějí a **mohou** kupující koupit za různé ceny. Musí na to mít peníze, samotné přání nestačí.",
+          "example": "Při ceně 1 200 Kč chce gramofon koupit 9 lidí, při 2 000 Kč jen 1."
+        },
+        {
+          "type": "term",
+          "term": "Nabídka",
+          "definition": "Kolik zboží chtějí prodávající prodat za různé ceny.",
+          "example": "Při vyšší ceně by prodejci přivezli na trh víc gramofonů."
+        },
+        {
+          "type": "term",
+          "term": "Cena",
+          "definition": "Množství peněz, které kupující zaplatí za jednotku zboží nebo služby.",
+          "example": "1 200 Kč za jeden gramofon."
+        },
+        {
+          "type": "heading",
+          "text": "Co dělají kupující a prodávající"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Zákon poptávky:** když cena roste, kupující chtějí koupit **méně**. Když klesá, koupí víc.",
+            "**Zákon nabídky:** když cena roste, prodávající chtějí prodat **více**. Vyplatí se jim to."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "cena gramofonu",
+            "chtějí koupit (ks)",
+            "chtějí prodat (ks)"
+          ],
+          "rows": [
+            [
+              "2 000 Kč",
+              "1",
+              "14"
+            ],
+            [
+              "1 600 Kč",
+              "4",
+              "11"
+            ],
+            [
+              "1 200 Kč",
+              "8",
+              "8"
+            ],
+            [
+              "800 Kč",
+              "13",
+              "4"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tabulka je vymyšlený příklad. Najdi řádek, kde se obě čísla rovnají."
+        },
+        {
+          "type": "term",
+          "term": "Rovnovážná cena",
+          "definition": "Cena, při které kupující chtějí koupit přesně tolik, kolik prodávající chtějí prodat. Trh se „vyčistí“.",
+          "example": "V tabulce je to 1 200 Kč: 8 kusů koupit, 8 kusů prodat."
+        },
+        {
+          "type": "heading",
+          "text": "Když cena není rovnovážná"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Cena je **vyšší** než rovnovážná (2 000 Kč) → prodejci chtějí prodat víc, než lidé koupí. Vznikne **přebytek** – zboží zůstává ležet.",
+            "Prodejci, kteří chtějí prodat, začnou **zlevňovat**.",
+            "Cena je **nižší** než rovnovážná (800 Kč) → lidé chtějí víc, než je na trhu. Vznikne **nedostatek** – fronty, vyprodáno.",
+            "Prodejci zjistí, že můžou **zdražit**. Cena se tak sama posouvá k rovnováze."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "V tabulce je cena 1 600 Kč. Je na trhu přebytek, nebo nedostatek? Kolik kusů?",
+          "answer": "Chtějí koupit 4 ks, chtějí prodat 11 ks. Nabídka je větší → **přebytek** 11 − 4 = **7 kusů**. Cena bude klesat."
+        },
+        {
+          "type": "example",
+          "question": "V tabulce je cena 800 Kč. Co se stane?",
+          "answer": "Chtějí koupit 13 ks, nabízí se jen 4 ks. Je **nedostatek** 13 − 4 = **9 kusů**. Prodejci zjistí, že by prodali i dráž, a **cena poroste** směrem k 1 200 Kč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když se gramofon zdraží, vzroste poptávka, protože je to luxusnější zboží.",
+          "right": "Když se zdraží, kupující chtějí koupit méně kusů.",
+          "why": "Zákon poptávky platí pro běžné zboží: vyšší cena = menší kupované množství. Výjimky (luxus kvůli prestiži) jsou vzácné a ve škole se nepočítají jako pravidlo."
+        },
+        {
+          "type": "summary",
+          "text": "Na trhu se potkává poptávka (kupující) a nabídka (prodávající). Čím vyšší cena, tím méně lidé kupují a tím víc chtějí prodejci prodat. Rovnovážná cena je tam, kde se obě množství rovnají; přebytek tlačí cenu dolů, nedostatek nahoru."
+        }
+      ]
+    },
+    {
+      "title": "Co posouvá cenu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Před Vánoci stojí parfémy víc než v lednu. Když se zdraží káva, lidé kupují víc čaje. Ceny se pořád hýbou a dá se dopředu odhadnout, kam se pohnou."
+        },
+        {
+          "type": "text",
+          "text": "Podnikatel, který tomu rozumí, ví, kdy nakoupit zásoby a kdy dát slevu. Zákazník ví, kdy se vyplatí počkat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trh",
+          "definition": "Setkání kupujících a prodávajících, kteří se domlouvají na ceně. Může být i na internetu.",
+          "example": "Trh s ojetými auty, trh práce, e-shop."
+        },
+        {
+          "type": "term",
+          "term": "Poptávka a nabídka",
+          "definition": "**Poptávka** = kolik chtějí kupující koupit (a mají na to peníze). **Nabídka** = kolik chtějí prodávající prodat.",
+          "example": "Poptávka po zimních pneumatikách roste v listopadu."
+        },
+        {
+          "type": "term",
+          "term": "Rovnovážná cena",
+          "definition": "Cena, při které se kupované a prodávané množství rovná.",
+          "example": "Při 25 Kč za kilo jablek se prodá právě tolik, kolik farmáři přivezli."
+        },
+        {
+          "type": "term",
+          "term": "Substitut",
+          "definition": "Zboží, které může nahradit jiné zboží.",
+          "example": "Máslo a rostlinný tuk, vlak a autobus."
+        },
+        {
+          "type": "term",
+          "term": "Komplement",
+          "definition": "Zboží, které se kupuje spolu s jiným, doplňuje ho.",
+          "example": "Tiskárna a inkoust, auto a benzín."
+        },
+        {
+          "type": "heading",
+          "text": "Co změní poptávku"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Příjmy** lidí: když lidé víc vydělávají, kupují víc.",
+            "**Ceny substitutů:** zdraží-li káva, roste poptávka po čaji.",
+            "**Ceny komplementů:** zdraží-li benzín, klesá poptávka po velkých autech.",
+            "**Móda, vkus, sezona:** zimní bundy v listopadu, plavky v červnu.",
+            "**Očekávání:** když lidé čekají zdražení, nakupují do zásoby hned."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co změní nabídku"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Náklady výroby:** dražší energie nebo materiál = výrobci nabídnou méně za stejnou cenu.",
+            "**Technologie:** nový stroj vyrábí levněji a víc.",
+            "**Počet prodejců:** otevře-li v ulici další salon, nabídka služeb roste.",
+            "**Počasí a příroda:** neúroda zmenší nabídku jablek."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "cena poroste",
+              "cena klesne"
+            ],
+            "items": [
+              {
+                "text": "neúroda jablek",
+                "group": 0
+              },
+              {
+                "text": "nová levnější technologie výroby",
+                "group": 1
+              },
+              {
+                "text": "zboží se stane módním hitem",
+                "group": 0
+              },
+              {
+                "text": "na trh vstoupí deset nových prodejců",
+                "group": 1
+              },
+              {
+                "text": "zdraží se energie pro výrobu",
+                "group": 0
+              },
+              {
+                "text": "výrobek přestane být v módě",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď situace. U každé si řekni: mění se nabídka, nebo poptávka? A roste, nebo klesá?"
+        },
+        {
+          "type": "heading",
+          "text": "Typy trhů podle konkurence"
+        },
+        {
+          "type": "table",
+          "head": [
+            "typ trhu",
+            "kolik prodávajících",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "dokonalá konkurence",
+              "velmi mnoho, stejné zboží",
+              "zemědělci prodávající pšenici"
+            ],
+            [
+              "monopolistická konkurence",
+              "mnoho, každý trochu jiný",
+              "kadeřnictví, restaurace"
+            ],
+            [
+              "oligopol",
+              "několik velkých",
+              "mobilní operátoři"
+            ],
+            [
+              "monopol",
+              "jediný",
+              "dodavatel vody v obci"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zdraží se inkoust do tiskáren. Co se stane s poptávkou po tiskárnách?",
+          "answer": "Inkoust a tiskárna jsou **komplementy** – kupují se spolu. Když je provoz tiskárny dražší, lidé jich kupují méně. Poptávka po tiskárnách **klesne**, a tím i jejich cena."
+        },
+        {
+          "type": "example",
+          "question": "Výrobce součástek koupí robotickou linku a vyrábí levněji. Co se stane s nabídkou a cenou součástek?",
+          "answer": "Nižší náklady → výrobce za stejnou cenu nabídne **víc** kusů. Nabídka **roste**. Při stejné poptávce je zboží víc, proto **rovnovážná cena klesne**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když zlevní máslo, klesne poptávka po másle.",
+          "right": "Když zlevní máslo, lidé ho koupí víc. Poptávka po **rostlinném tuku** (substitutu) klesne.",
+          "why": "Změna ceny samotného zboží mění jen kupované množství. Změna poptávky přichází zvenku – například od ceny substitutu."
+        },
+        {
+          "type": "summary",
+          "text": "Poptávku mění příjmy, ceny substitutů a komplementů, móda a očekávání. Nabídku mění náklady, technologie, počet prodejců a příroda. Víc poptávky nebo méně nabídky ceny zvedá, opak je snižuje. Podle počtu prodejců rozlišujeme dokonalou konkurenci, monopolistickou konkurenci, oligopol a monopol."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co říká zákon poptávky?",
+      "options": [
+        "Když cena roste, kupující chtějí koupit méně.",
+        "Když cena roste, kupující chtějí koupit více.",
+        "Cena nemá na kupující vliv.",
+        "Když cena roste, prodejci chtějí prodat méně."
+      ],
+      "answer": 0,
+      "explanation": "Vyšší cena = menší kupované množství."
+    },
+    {
+      "type": "truefalse",
+      "question": "Trh musí být vždy fyzické místo, například tržnice.",
+      "answer": false,
+      "explanation": "Trh je každé setkání kupujících a prodávajících, i na internetu."
+    },
+    {
+      "type": "choice",
+      "question": "Při ceně 500 Kč chtějí lidé koupit 30 kusů a prodejci prodat 50 kusů. Co je na trhu?",
+      "options": [
+        "přebytek 20 kusů",
+        "nedostatek 20 kusů",
+        "rovnováha",
+        "přebytek 80 kusů"
+      ],
+      "answer": 0,
+      "explanation": "Nabízí se víc, než se poptává: 50 − 30 = 20 kusů přebytek. Cena bude klesat.",
+      "hints": [
+        "Porovnej, které číslo je větší: kolik chtějí koupit, nebo kolik prodat?",
+        "Rozdíl obou množství je velikost přebytku nebo nedostatku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje cena, při které chtějí kupující koupit přesně tolik, kolik chtějí prodávající prodat? Doplň: … cena",
+      "answers": [
+        "rovnovážná",
+        "rovnovazna",
+        "rovnovážná cena",
+        "rovnovazna cena"
+      ],
+      "explanation": "Rovnovážná cena vyčistí trh."
+    },
+    {
+      "type": "match",
+      "question": "Spoj dvojici zboží s tím, čím vůči sobě jsou.",
+      "pairs": [
+        [
+          "máslo – rostlinný tuk",
+          "substituty"
+        ],
+        [
+          "tiskárna – inkoust",
+          "komplementy"
+        ],
+        [
+          "vlak – autobus",
+          "substituty"
+        ],
+        [
+          "auto – benzín",
+          "komplementy"
+        ]
+      ],
+      "explanation": "Substituty se navzájem nahrazují, komplementy se kupují spolu."
+    },
+    {
+      "type": "choice",
+      "question": "Zdraží káva. Co se nejspíš stane s poptávkou po čaji?",
+      "options": [
+        "vzroste",
+        "klesne",
+        "nezmění se",
+        "klesne na nulu"
+      ],
+      "answer": 0,
+      "explanation": "Čaj je substitut kávy. Část lidí přejde na čaj.",
+      "hints": [
+        "Mohou si lidé místo kávy dát čaj?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se zlevní energie pro výrobu, nabídka výrobků se obvykle zvětší.",
+      "answer": true,
+      "explanation": "Nižší náklady = výroba se vyplatí víc, výrobci nabídnou víc."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký typ trhu je, když v zemi působí jen tři velcí mobilní operátoři?",
+      "options": [
+        "oligopol",
+        "monopol",
+        "dokonalá konkurence",
+        "monopolistická konkurence"
+      ],
+      "answer": 0,
+      "explanation": "Oligopol = několik velkých prodávajících."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď typy trhu od nejvíce prodávajících po jediného.",
+      "items": [
+        "dokonalá konkurence",
+        "monopolistická konkurence",
+        "oligopol",
+        "monopol"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Cena je nižší než rovnovážná. Co nastane?",
+      "options": [
+        "nedostatek zboží a cena poroste",
+        "přebytek zboží a cena klesne",
+        "nic, trh je v rovnováze",
+        "výrobci vyrobí víc a cena klesne"
+      ],
+      "answer": 0,
+      "explanation": "Při nízké ceně chce koupit víc lidí, než kolik se nabízí – vzniká nedostatek a prodejci zdražují."
+    },
+    {
+      "type": "truefalse",
+      "question": "Poptávka znamená jen přání něco mít, bez ohledu na peníze.",
+      "answer": false,
+      "explanation": "Poptávka je přání podložené penězi – kupující musí chtít a zároveň moct zaplatit."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje trh, na kterém je jediný prodávající? (jedno slovo)",
+      "answers": [
+        "monopol"
+      ],
+      "explanation": "Monopol nemá konkurenci, proto může mít vyšší ceny. Stát ho proto často reguluje."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak se na trhu vytvoří cena a co se stane, když je cena příliš vysoká.",
+      "answer": "Cena vzniká setkáním nabídky a poptávky; rovnovážná cena je tam, kde se kupované a prodávané množství rovná. Když je cena příliš vysoká, vznikne přebytek – zboží zůstává neprodané a prodejci musí zlevnit."
+    },
+    {
+      "type": "open",
+      "question": "Uveď tři vlivy, které mohou zvýšit poptávku po službách kosmetického salonu, a vysvětli proč.",
+      "answer": "Například růst příjmů lidí (mají víc peněz na služby), nová móda (třeba nový typ ošetření) a sezona či svátky (před plesy a Vánoci chce ošetření víc lidí). Zvýšit ji může i zdražení konkurenčního salonu, protože je to substitut."
+    }
+  ]
+}

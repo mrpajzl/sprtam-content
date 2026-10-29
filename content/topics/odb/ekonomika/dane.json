@@ -1,0 +1,422 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "dane",
+  "title": "Daně: DPH a daň z příjmů",
+  "emoji": "🏛️",
+  "explanations": [
+    {
+      "title": "Cesta stolu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Koupíš si v obchodě stůl za 36 300 Kč. Část té ceny nedostane ani truhlář, ani obchod, ale stát. Je to daň. Platíš ji, i když o tom nevíš."
+        },
+        {
+          "type": "text",
+          "text": "Stát z daní platí školy, silnice, policii nebo nemocnice. Každý podnikatel musí vědět, které daně platí a jak se počítají. Ukážeme si to na cestě jednoho stolu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Daň",
+          "definition": "Povinná platba státu (nebo obci), kterou určuje zákon. Nedostaneš za ni nic přímo zpátky.",
+          "example": "Daň z příjmů, DPH, daň z nemovitých věcí."
+        },
+        {
+          "type": "term",
+          "term": "Přímá daň",
+          "definition": "Daň, kterou platí přímo ten, kdo má příjem nebo majetek. Ví, kolik zaplatil.",
+          "example": "Daň z příjmů z mzdy, daň z nemovitých věcí za dům."
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá daň",
+          "definition": "Daň schovaná v ceně zboží nebo služby. Platí ji kupující, ale státu ji odvádí prodávající.",
+          "example": "DPH, spotřební daň z benzínu, z alkoholu, z tabáku."
+        },
+        {
+          "type": "term",
+          "term": "DPH",
+          "definition": "**Daň z přidané hodnoty.** Platí se z každého prodeje, ale každý článek řetězce odvede jen daň z hodnoty, kterou sám přidal. Sazby v roce 2026: **základní 21 %**, **snížená 12 %** (např. většina potravin a léky).",
+          "example": "Stůl bez DPH 30 000 Kč + 21 % = 36 300 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Plátce DPH",
+          "definition": "Podnikatel registrovaný k DPH. Na výstupu daň připočítává k cenám, na vstupu si ji může odečíst. Registrace je povinná, když **obrat** (součet příjmů z podnikání) za kalendářní rok přesáhne zákonnou hranici (od roku 2025 je to **2 mil. Kč**).",
+          "example": "Truhlářství s obratem 3 mil. Kč ročně je plátce DPH."
+        },
+        {
+          "type": "heading",
+          "text": "Jak DPH putuje (sazba 21 %, 2026)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Pila** prodá truhláři dřevo za 10 000 Kč + DPH 2 100 Kč. Pila odvede státu **2 100 Kč**.",
+            "**Truhlář** vyrobí stůl a prodá ho obchodu za 20 000 Kč + DPH 4 200 Kč. Na vstupu už zaplatil 2 100 Kč, odvede jen rozdíl 4 200 − 2 100 = **2 100 Kč**.",
+            "**Obchod** prodá stůl tobě za 30 000 Kč + DPH 6 300 Kč = 36 300 Kč. Odvede 6 300 − 4 200 = **2 100 Kč**.",
+            "Stát dostal celkem 2 100 + 2 100 + 2 100 = **6 300 Kč** – přesně DPH z konečné ceny. Zaplatil ji ve skutečnosti **konečný zákazník**."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "Kč DPH odvedeno",
+            "items": [
+              {
+                "label": "pila",
+                "value": 2100
+              },
+              {
+                "label": "truhlář",
+                "value": 2100
+              },
+              {
+                "label": "obchod",
+                "value": 2100
+              },
+              {
+                "label": "celkem stát",
+                "value": 6300
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Porovnej pruhy: každý v řetězci odvede jen daň z toho, co sám přidal. Dohromady to dá DPH z ceny pro zákazníka."
+        },
+        {
+          "type": "heading",
+          "text": "Daň z příjmů"
+        },
+        {
+          "type": "text",
+          "text": "Truhlář navíc platí **daň z příjmů** ze svého výdělku. Fyzické osoby (lidé) platí v roce 2026 **15 %** ze základu daně, z části příjmů nad 36násobek průměrné mzdy **23 %**. Firmy (právnické osoby) platí **21 %** ze zisku."
+        },
+        {
+          "type": "example",
+          "question": "Kadeřník je plátce DPH. Za měsíc vybral od zákazníků DPH 15 000 Kč a na fakturách za šampony a energii zaplatil DPH 4 000 Kč. Kolik odvede?",
+          "answer": "Daň na výstupu − daň na vstupu = 15 000 − 4 000 = **11 000 Kč**. Tomu se říká **vlastní daňová povinnost**. Kdyby byl vstup vyšší než výstup, vznikl by **nadměrný odpočet** – stát by mu rozdíl vrátil."
+        },
+        {
+          "type": "example",
+          "question": "Notebook stojí 18 150 Kč s DPH 21 % (2026). Kolik je cena bez DPH a kolik DPH?",
+          "answer": "Cena s DPH = 121 % ceny bez DPH. Cena bez DPH = 18 150 ÷ 1,21 = **15 000 Kč**. DPH = 18 150 − 15 000 = **3 150 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "DPH z ceny s daní spočítám jako 21 % z ceny s DPH.",
+          "right": "DPH je 21 % z ceny **bez** DPH. Z ceny s DPH ji dostaneš, když cenu vydělíš 1,21 a odečteš.",
+          "why": "21 % z 18 150 Kč je 3 811,50 Kč – víc, než je skutečná daň 3 150 Kč. Procento se vždy počítá ze základu, ne z výsledku."
+        },
+        {
+          "type": "summary",
+          "text": "Daně jsou přímé (z příjmů, z nemovitých věcí) a nepřímé (DPH, spotřební). DPH (2026: 21 % a 12 %) odvádí každý plátce jen z přidané hodnoty: výstup − vstup. Zaplatí ji konečný zákazník. Lidé platí daň z příjmů 15 % (nad hranicí 23 %), firmy 21 %."
+        }
+      ]
+    },
+    {
+      "title": "Přiznání OSVČ",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zaměstnanci počítá daň zaměstnavatel. Kdo podniká, musí si ji spočítat sám – v **daňovém přiznání**. Každý rok na jaře ho podávají statisíce živnostníků."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se základní postup: od příjmů přes výdaje a slevy až k dani. Pochopíš i to, proč někteří živnostníci daň skoro neplatí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Daň z příjmů fyzických osob",
+          "definition": "Přímá daň z toho, co člověk vydělá. Řídí ji **zákon o daních z příjmů** (č. 586/1992 Sb.). Sazba v roce 2026: **15 %**, z části nad 36násobek průměrné mzdy **23 %**.",
+          "example": "Daň platí zaměstnanec z mzdy i živnostník ze zisku z podnikání."
+        },
+        {
+          "type": "term",
+          "term": "OSVČ",
+          "definition": "Osoba samostatně výdělečně činná – člověk, který podniká sám za sebe, například jako živnostník.",
+          "example": "Elektrikář, který dělá zakázky na vlastní účet."
+        },
+        {
+          "type": "term",
+          "term": "Daňové přiznání",
+          "definition": "Formulář, ve kterém poplatník za uplynulý rok sám spočítá daň a podá ho finančnímu úřadu. Lhůta je zpravidla do 1. dubna, při elektronickém podání o měsíc delší.",
+          "example": "Přiznání za rok 2026 se podává na jaře 2027."
+        },
+        {
+          "type": "term",
+          "term": "Základ daně",
+          "definition": "Částka, ze které se daň počítá. U OSVČ: **příjmy − výdaje**.",
+          "example": "Příjmy 800 000 Kč − výdaje 500 000 Kč = základ 300 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Výdajový paušál",
+          "definition": "Místo skutečných výdajů smí OSVČ odečíst výdaje procentem z příjmů (zákon stanoví i horní limity). **80 %** řemeslné živnosti, **60 %** ostatní živnosti, **40 %** jiné podnikání (např. svobodná povolání), **30 %** pronájem.",
+          "example": "Řemeslník s příjmy 500 000 Kč odečte 80 % = 400 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Sleva na poplatníka",
+          "definition": "Částka, o kterou se sníží vypočtená daň. V roce 2026 je **30 840 Kč** za rok. Daň po slevě nemůže klesnout pod nulu.",
+          "example": "Daň 45 000 Kč − 30 840 Kč = 14 160 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Postup výpočtu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Sečti **příjmy** z podnikání za celý rok.",
+            "Odečti **výdaje**: skutečné (podle dokladů), nebo **výdajový paušál**.",
+            "Dostaneš **základ daně** (případně ho sniž o odpočty, např. dary, a zaokrouhli na celé stovky dolů).",
+            "Vypočítej **daň 15 %**.",
+            "Odečti **slevy** (sleva na poplatníka, případně další, např. na studenta nebo zvýhodnění na dítě).",
+            "Výsledek zaplať (po odečtení zaplacených záloh)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Základní sazba DPH (2026)",
+                "back": "**21 %**"
+              },
+              {
+                "front": "Snížená sazba DPH (2026)",
+                "back": "**12 %**"
+              },
+              {
+                "front": "Daň z příjmů fyzických osob (2026)",
+                "back": "**15 %**, nad 36násobek průměrné mzdy **23 %**"
+              },
+              {
+                "front": "Daň z příjmů právnických osob (2026)",
+                "back": "**21 %**"
+              },
+              {
+                "front": "Výdajový paušál řemeslné živnosti",
+                "back": "**80 %**"
+              },
+              {
+                "front": "Sleva na poplatníka (2026)",
+                "back": "**30 840 Kč** ročně"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Zkus si sazby říct nahlas a pak kartu otoč."
+        },
+        {
+          "type": "example",
+          "question": "Grafik (volná živnost, paušál 60 %) měl v roce 2026 příjmy 1 000 000 Kč. Kolik zaplatí daň z příjmů (bez dalších slev)?",
+          "answer": "Výdaje: 60 % z 1 000 000 = 600 000 Kč. Základ: 1 000 000 − 600 000 = 400 000 Kč. Daň 15 %: **60 000 Kč**. Po slevě na poplatníka: 60 000 − 30 840 = **29 160 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Zámečník (řemeslná živnost, paušál 80 %) měl příjmy 600 000 Kč. Jakou zaplatí daň (rok 2026)?",
+          "answer": "Výdaje: 80 % z 600 000 = 480 000 Kč. Základ: 120 000 Kč. Daň 15 %: 18 000 Kč. Sleva 30 840 Kč je vyšší než daň, takže daň je **0 Kč** – pod nulu jít nemůže. Pozor: sociální a zdravotní pojištění platit musí i tak."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výdajový paušál 60 % znamená, že zaplatím 60 % daně.",
+          "right": "Paušál znamená, že si **60 % příjmů odečtu jako výdaje**. Daň 15 % se počítá jen ze zbylých 40 %.",
+          "why": "Paušál nahrazuje sbírání účtenek za výdaje. Snižuje základ daně, ne sazbu."
+        },
+        {
+          "type": "summary",
+          "text": "OSVČ v přiznání spočítá: příjmy − výdaje (skutečné nebo paušál 80/60/40/30 %) = základ daně; daň 15 %; minus slevy (2026: na poplatníka 30 840 Kč). Firmy platí 21 % ze zisku. DPH má v roce 2026 sazby 21 % a 12 %."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká je základní sazba DPH v roce 2026?",
+      "options": [
+        "21 %",
+        "15 %",
+        "12 %",
+        "23 %"
+      ],
+      "answer": 0,
+      "explanation": "Základní sazba DPH je 21 %, snížená 12 %."
+    },
+    {
+      "type": "match",
+      "question": "Spoj daň s druhem.",
+      "pairs": [
+        [
+          "DPH",
+          "nepřímá"
+        ],
+        [
+          "spotřební daň z benzínu",
+          "nepřímá"
+        ],
+        [
+          "daň z příjmů",
+          "přímá"
+        ],
+        [
+          "daň z nemovitých věcí",
+          "přímá"
+        ]
+      ],
+      "hints": [
+        "Je daň schovaná v ceně zboží, nebo ji platí přímo ten, kdo má příjem či majetek?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Cena bez DPH je 5 000 Kč, sazba 21 % (2026). Kolik Kč je cena s DPH?",
+      "answers": [
+        "6050",
+        "6 050"
+      ],
+      "explanation": "21 % z 5 000 = 1 050 Kč; 5 000 + 1 050 = 6 050 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Plátce DPH má za měsíc DPH na výstupu 30 000 Kč a na vstupu 12 000 Kč. Kolik Kč odvede státu?",
+      "answers": [
+        "18000",
+        "18 000"
+      ],
+      "explanation": "Výstup − vstup = 30 000 − 12 000 = 18 000 Kč.",
+      "hints": [
+        "Plátce odvádí jen rozdíl mezi daní, kterou vybral, a daní, kterou zaplatil."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "DPH ve skutečnosti zaplatí konečný zákazník, ale státu ji odvádějí plátci v řetězci.",
+      "answer": true,
+      "explanation": "Proto je DPH nepřímá daň."
+    },
+    {
+      "type": "choice",
+      "question": "Výrobek stojí 12 100 Kč včetně DPH 21 % (2026). Kolik je cena bez DPH?",
+      "options": [
+        "10 000 Kč",
+        "9 559 Kč",
+        "10 100 Kč",
+        "14 641 Kč"
+      ],
+      "answer": 0,
+      "explanation": "12 100 ÷ 1,21 = 10 000 Kč.",
+      "hints": [
+        "Cena s DPH je 121 % ceny bez DPH.",
+        "Vyděl cenu s DPH číslem 1,21."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je sazba daně z příjmů právnických osob v roce 2026?",
+      "options": [
+        "21 %",
+        "15 %",
+        "19 %",
+        "12 %"
+      ],
+      "answer": 0,
+      "explanation": "Od roku 2024 platí sazba 21 %."
+    },
+    {
+      "type": "match",
+      "question": "Spoj činnost s výdajovým paušálem.",
+      "pairs": [
+        [
+          "řemeslná živnost",
+          "80 %"
+        ],
+        [
+          "ostatní (volná) živnost",
+          "60 %"
+        ],
+        [
+          "svobodné povolání",
+          "40 %"
+        ],
+        [
+          "pronájem",
+          "30 %"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "OSVČ (volná živnost, paušál 60 %) měla příjmy 500 000 Kč. Kolik Kč je základ daně?",
+      "answers": [
+        "200000",
+        "200 000"
+      ],
+      "explanation": "Výdaje 60 % = 300 000 Kč; 500 000 − 300 000 = 200 000 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když je sleva na poplatníka vyšší než vypočtená daň, stát vrátí rozdíl.",
+      "answer": false,
+      "explanation": "Sleva na poplatníka sníží daň nejvýš na nulu. (Vrátit lze např. daňový bonus na dítě, to je jiná věc.)"
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu daně z příjmů OSVČ.",
+      "items": [
+        "sečíst příjmy",
+        "odečíst výdaje nebo paušál",
+        "získat základ daně",
+        "spočítat daň 15 %",
+        "odečíst slevy"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která daň je přímá?",
+      "options": [
+        "daň z nemovitých věcí",
+        "DPH",
+        "spotřební daň z lihu",
+        "spotřební daň z tabáku"
+      ],
+      "answer": 0,
+      "explanation": "Daň z nemovitých věcí platí přímo vlastník pozemku nebo stavby."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli na příkladu, jak funguje DPH a proč se jí říká daň z přidané hodnoty.",
+      "answer": "Každý plátce v řetězci připočte DPH ke své ceně (výstup) a odečte DPH, kterou zaplatil dodavatelům (vstup); státu odvede jen rozdíl. Například truhlář koupí dřevo s DPH 2 100 Kč a prodá stůl s DPH 4 200 Kč, odvede 2 100 Kč – tedy daň jen z hodnoty, kterou sám přidal."
+    },
+    {
+      "type": "open",
+      "question": "Co je výdajový paušál a kdy se OSVČ vyplatí?",
+      "answer": "Výdajový paušál je odečtení výdajů procentem z příjmů (např. 60 % u volné živnosti) místo skutečných výdajů podle dokladů. Vyplatí se tomu, kdo má skutečné výdaje nižší než paušál – třeba programátorovi, který skoro nic nenakupuje."
+    }
+  ]
+}

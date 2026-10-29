@@ -1,0 +1,420 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "majetek-ucetnictvi",
+  "title": "Majetek podniku, financování a účetnictví",
+  "emoji": "📒",
+  "explanations": [
+    {
+      "title": "Co má a odkud to má",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lucie si otevřela kosmetický salon. Má kosmetické lůžko, lampu s lupou, zásobu krémů a peníze na účtu. Část věcí koupila z úspor, na zbytek si půjčila od banky."
+        },
+        {
+          "type": "text",
+          "text": "Každý podnik se dá popsat dvěma otázkami: **Co má?** a **Odkud to má?** Odpovědi na obě musí dát stejné číslo. Na tom stojí celé účetnictví."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Majetek (aktiva)",
+          "definition": "Všechno, co podnik má a používá: stroje, zboží, peníze, ale i to, co mu někdo dluží.",
+          "example": "Lůžko za 40 000 Kč, krémy za 15 000 Kč, 25 000 Kč na účtu."
+        },
+        {
+          "type": "term",
+          "term": "Zdroje majetku (pasiva)",
+          "definition": "Odkud majetek pochází: z peněz majitele, nebo z peněz někoho jiného, kterým je podnik dluží.",
+          "example": "50 000 Kč vložila Lucie z úspor, 30 000 Kč půjčila banka."
+        },
+        {
+          "type": "term",
+          "term": "Rozvaha",
+          "definition": "Tabulka, která k jednomu dni ukáže vlevo majetek (aktiva) a vpravo jeho zdroje (pasiva). Obě strany se vždy rovnají.",
+          "example": "Aktiva 80 000 Kč = pasiva 80 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Co podnik má: aktiva"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Dlouhodobý majetek** – slouží déle než rok a postupně se opotřebovává. Hmotný (budovy, stroje, auta), nehmotný (software, licence, patenty) a finanční (dlouhodobě držené akcie).",
+            "**Oběžný majetek** – rychle se mění: spotřebuje se, prodá nebo zaplatí. **Zásoby** (materiál, zboží, výrobky), **pohledávky** (co dluží odběratelé nám), **peněžní prostředky** (pokladna, účet)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "dlouhodobý majetek",
+              "oběžný majetek"
+            ],
+            "items": [
+              {
+                "text": "kosmetické lůžko",
+                "group": 0
+              },
+              {
+                "text": "zásoba krémů na prodej",
+                "group": 1
+              },
+              {
+                "text": "peníze v pokladně",
+                "group": 1
+              },
+              {
+                "text": "CNC soustruh",
+                "group": 0
+              },
+              {
+                "text": "nezaplacená faktura od odběratele",
+                "group": 1
+              },
+              {
+                "text": "firemní dodávka",
+                "group": 0
+              },
+              {
+                "text": "licence na účetní software na 5 let",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď majetek. Ptej se: bude to v podniku sloužit déle než rok, nebo se to brzy spotřebuje, prodá či zaplatí?"
+        },
+        {
+          "type": "heading",
+          "text": "Odkud to má: pasiva"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vlastní kapitál** – patří majiteli: vklad majitele (u s.r.o. základní kapitál) a zisk, který v podniku nechal.",
+            "**Cizí kapitál** – dluhy, které se musí vrátit: bankovní úvěr, nezaplacené faktury dodavatelům, dosud nevyplacené mzdy, daně, které se teprve zaplatí."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Závazek",
+          "definition": "Dluh podniku – co podnik musí někomu zaplatit. Opak pohledávky.",
+          "example": "Dodavatel krémů nám poslal fakturu na 8 000 Kč splatnou za 14 dní."
+        },
+        {
+          "type": "example",
+          "question": "Lucie má: lůžko 40 000 Kč, lampu 10 000 Kč, krémy 15 000 Kč, na účtu 15 000 Kč. Vložila 50 000 Kč, úvěr je 30 000 Kč. Sestav rozvahu.",
+          "answer": "**Aktiva:** 40 000 + 10 000 + 15 000 + 15 000 = **80 000 Kč**. **Pasiva:** vlastní kapitál 50 000 + cizí kapitál 30 000 = **80 000 Kč**. Obě strany se rovnají – rozvaha je správně."
+        },
+        {
+          "type": "example",
+          "question": "Lucie zaplatí z účtu 10 000 Kč splátku úvěru. Jak se změní rozvaha?",
+          "answer": "Aktiva: peníze na účtu klesnou o 10 000 Kč → aktiva **70 000 Kč**. Pasiva: úvěr klesne o 10 000 Kč na 20 000 Kč → pasiva 50 000 + 20 000 = **70 000 Kč**. Obě strany se změnily stejně, rovnost platí dál."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Úvěr od banky je majetek, protože jsem za něj dostala peníze.",
+          "right": "Peníze z úvěru jsou majetek (aktiva). Samotný úvěr je **dluh** – zdroj, patří do pasiv.",
+          "why": "Každá věc v rozvaze je dvakrát: jako majetek (co mám) a jako zdroj (odkud to mám). Peníze jsou na straně aktiv, dluh bance na straně pasiv."
+        },
+        {
+          "type": "summary",
+          "text": "Aktiva jsou majetek podniku: dlouhodobý (stroje, budovy, software) a oběžný (zásoby, pohledávky, peníze). Pasiva jsou zdroje: vlastní kapitál majitele a cizí kapitál (dluhy). V rozvaze se aktiva vždy rovnají pasivům."
+        }
+      ]
+    },
+    {
+      "title": "Jak se to zapisuje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý podnikatel musí vědět, kolik vydělal, a musí to umět doložit finančnímu úřadu. K tomu slouží dvě cesty: **daňová evidence** a **účetnictví**."
+        },
+        {
+          "type": "text",
+          "text": "Uvidíš, kdo kterou cestu používá, z jakých papírů se zapisuje a proč se drahý stroj nedá dát do nákladů celý najednou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aktiva a pasiva",
+          "definition": "**Aktiva** = majetek podniku (co má). **Pasiva** = zdroje majetku (odkud to má: vlastní kapitál majitele a dluhy).",
+          "example": "Stroj je aktivum, úvěr na stroj je pasivum."
+        },
+        {
+          "type": "term",
+          "term": "Účetní doklad",
+          "definition": "Písemný důkaz o tom, že se něco stalo (nákup, prodej, platba). Bez dokladu se nesmí nic zapsat.",
+          "example": "Faktura, pokladní doklad, výpis z bankovního účtu, interní doklad."
+        },
+        {
+          "type": "term",
+          "term": "Daňová evidence",
+          "definition": "Jednodušší evidence pro **podnikající fyzické osoby** (OSVČ), které nemusí vést účetnictví. Zapisují se příjmy a výdaje, a také majetek a dluhy.",
+          "example": "Truhlář si zapíše: příjem 12 000 Kč za stůl, výdaj 3 000 Kč za dřevo."
+        },
+        {
+          "type": "term",
+          "term": "Účetnictví",
+          "definition": "Podrobnější evidence podle **zákona o účetnictví**. Musí ho vést všechny právnické osoby (s.r.o., a.s.…) a některé OSVČ, např. zapsané v obchodním rejstříku.",
+          "example": "Firma Robo servis s.r.o. vede podvojné účetnictví."
+        },
+        {
+          "type": "term",
+          "term": "Podvojnost",
+          "definition": "V účetnictví se každá operace zapíše **dvakrát** – na dva účty, na stranu **Má dáti (MD)** jednoho a **Dal (D)** druhého, vždy stejnou částkou.",
+          "example": "Výběr 5 000 Kč z banky do pokladny: pokladna MD 5 000, bankovní účet D 5 000."
+        },
+        {
+          "type": "heading",
+          "text": "Daňová evidence × účetnictví"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "daňová evidence",
+            "účetnictví"
+          ],
+          "rows": [
+            [
+              "kdo",
+              "OSVČ, které nemusí vést účetnictví",
+              "právnické osoby, některé OSVČ"
+            ],
+            [
+              "co sleduje",
+              "příjmy a výdaje (peníze dovnitř a ven)",
+              "náklady a výnosy (kdy vznikly, ne kdy se platilo)"
+            ],
+            [
+              "výsledek",
+              "příjmy − výdaje = základ daně",
+              "výnosy − náklady = výsledek hospodaření"
+            ],
+            [
+              "výkazy",
+              "přehled majetku a dluhů",
+              "rozvaha a výkaz zisku a ztráty (výsledovka)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč se stroj neodepíše najednou"
+        },
+        {
+          "type": "term",
+          "term": "Odpisy",
+          "definition": "Postupné zahrnování ceny dlouhodobého majetku do nákladů (výdajů) během let, kdy ho podnik používá. Vyjadřují jeho opotřebení.",
+          "example": "Auto za 600 000 Kč se nezapíše do nákladů celé v roce nákupu, ale postupně několik let."
+        },
+        {
+          "type": "text",
+          "text": "Podle zákona o daních z příjmů se odpisuje hmotný majetek, jehož vstupní cena je **vyšší než 80 000 Kč** a doba použitelnosti delší než rok (platí od roku 2021). Levnější věci jdou do nákladů hned."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Přijde doklad (např. faktura za materiál).",
+            "Zkontroluješ ho: kdo, komu, co, kolik, kdy.",
+            "Zapíšeš ho: v daňové evidenci do knihy příjmů a výdajů, v účetnictví na dva účty (MD a D).",
+            "Doklad uložíš – zákon určuje, jak dlouho se musí archivovat.",
+            "Na konci roku sestavíš přehledy nebo výkazy a z nich daňové přiznání."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Elektrikář (OSVČ, vede daňovou evidenci) měl za rok příjmy 900 000 Kč a výdaje doložené doklady 550 000 Kč. Jaký má základ daně?",
+          "answer": "V daňové evidenci: příjmy − výdaje = 900 000 − 550 000 = **350 000 Kč**. To je základ daně z příjmů (před případnými úpravami)."
+        },
+        {
+          "type": "example",
+          "question": "Firma zaplatí z bankovního účtu dodavateli fakturu 20 000 Kč. Které dva účty se změní a jak se to projeví v rozvaze?",
+          "answer": "Klesnou **peníze na účtu** (aktiva) a klesnou **závazky vůči dodavatelům** (pasiva), oba o 20 000 Kč. Podvojně: účet Dodavatelé MD 20 000, Bankovní účet D 20 000. Rozvaha zůstane vyrovnaná."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Koupila jsem stroj za 300 000 Kč, tak mám letos výdaj 300 000 Kč a nižší daň.",
+          "right": "Stroj nad 80 000 Kč je dlouhodobý majetek. Do výdajů jde postupně formou **odpisů**.",
+          "why": "Stroj bude sloužit několik let, proto se jeho cena rozloží do let, kdy ho používáš. Najednou jdou do výdajů jen levnější věci."
+        },
+        {
+          "type": "summary",
+          "text": "OSVČ mohou vést jednodušší daňovou evidenci (příjmy a výdaje), právnické osoby vedou podvojné účetnictví (náklady, výnosy, rozvaha, výsledovka). Vše se zapisuje jen podle dokladů. Dlouhodobý majetek se do nákladů dostává postupně odpisy."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co patří do oběžného majetku?",
+      "options": [
+        "zásoba materiálu",
+        "budova dílny",
+        "obráběcí stroj",
+        "licence na software na 5 let"
+      ],
+      "answer": 0,
+      "explanation": "Zásoby se brzy spotřebují nebo prodají. Ostatní slouží déle než rok."
+    },
+    {
+      "type": "truefalse",
+      "question": "V rozvaze se aktiva vždy rovnají pasivům.",
+      "answer": true,
+      "explanation": "Každý majetek má nějaký zdroj, proto jsou součty stejné."
+    },
+    {
+      "type": "match",
+      "question": "Spoj položku s tím, kam v rozvaze patří.",
+      "pairs": [
+        [
+          "peníze na účtu",
+          "aktiva – oběžný majetek"
+        ],
+        [
+          "firemní auto",
+          "aktiva – dlouhodobý majetek"
+        ],
+        [
+          "bankovní úvěr",
+          "pasiva – cizí kapitál"
+        ],
+        [
+          "vklad majitele",
+          "pasiva – vlastní kapitál"
+        ]
+      ],
+      "hints": [
+        "Nejdřív rozhodni: co podnik má (aktiva), nebo odkud to má (pasiva)?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Podnik má aktiva 500 000 Kč a vlastní kapitál 320 000 Kč. Kolik Kč činí cizí kapitál?",
+      "answers": [
+        "180000",
+        "180 000"
+      ],
+      "explanation": "Pasiva = aktiva = 500 000. Cizí kapitál = 500 000 − 320 000 = 180 000 Kč.",
+      "hints": [
+        "Aktiva se rovnají pasivům.",
+        "Pasiva = vlastní kapitál + cizí kapitál."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Odběratel nám ještě nezaplatil fakturu. Co to pro nás je?",
+      "options": [
+        "pohledávka",
+        "závazek",
+        "vlastní kapitál",
+        "odpis"
+      ],
+      "answer": 0,
+      "explanation": "Pohledávka = co dluží někdo nám. Závazek = co dlužíme my."
+    },
+    {
+      "type": "truefalse",
+      "question": "Každá s.r.o. si může vybrat, zda povede účetnictví, nebo jen daňovou evidenci.",
+      "answer": false,
+      "explanation": "Právnické osoby účetnictví vést musí. Daňovou evidenci mohou vést jen některé podnikající fyzické osoby."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenují dvě strany účtu v podvojném účetnictví?",
+      "options": [
+        "Má dáti a Dal",
+        "Příjmy a výdaje",
+        "Aktiva a pasiva",
+        "Zisk a ztráta"
+      ],
+      "answer": 0,
+      "explanation": "Každá operace se zapíše na stranu MD jednoho účtu a D druhého."
+    },
+    {
+      "type": "input",
+      "question": "OSVČ měla příjmy 750 000 Kč a výdaje 420 000 Kč. Kolik Kč je rozdíl příjmů a výdajů?",
+      "answers": [
+        "330000",
+        "330 000"
+      ],
+      "explanation": "750 000 − 420 000 = 330 000 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se dlouhodobý majetek odpisuje?",
+      "options": [
+        "slouží několik let, tak se jeho cena rozloží do let používání",
+        "aby se nemusel platit",
+        "protože ho nelze prodat",
+        "aby měl podnik vyšší zisk v roce nákupu i později"
+      ],
+      "answer": 0,
+      "explanation": "Odpisy vyjadřují postupné opotřebení majetku."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď práci s dokladem.",
+      "items": [
+        "přijetí dokladu",
+        "kontrola dokladu",
+        "zápis do evidence",
+        "uložení do archivu"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Do účetnictví se smí zapsat operace i bez dokladu, když si ji účetní pamatuje.",
+      "answer": false,
+      "explanation": "Každý zápis musí být podložen účetním dokladem."
+    },
+    {
+      "type": "choice",
+      "question": "Firma splatí 10 000 Kč úvěru z bankovního účtu. Co se stane s rozvahou?",
+      "options": [
+        "aktiva i pasiva klesnou o 10 000 Kč",
+        "aktiva klesnou, pasiva vzrostou",
+        "nic se nezmění",
+        "aktiva vzrostou o 10 000 Kč"
+      ],
+      "answer": 0,
+      "explanation": "Ubude peněz (aktiva) i dluhu (pasiva) – rovnost platí dál.",
+      "hints": [
+        "Co ubude na straně majetku?",
+        "A co ubude na straně zdrojů?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co jsou aktiva a pasiva, a uveď ke každému dva příklady.",
+      "answer": "Aktiva jsou majetek podniku, např. stroj a peníze na účtu. Pasiva jsou zdroje, ze kterých byl majetek pořízen, např. vklad majitele (vlastní kapitál) a bankovní úvěr (cizí kapitál)."
+    },
+    {
+      "type": "open",
+      "question": "Čím se liší daňová evidence od účetnictví?",
+      "answer": "Daňová evidence je jednodušší, vedou ji jen některé OSVČ a sleduje příjmy a výdaje. Účetnictví je podvojné, musí ho vést právnické osoby a sleduje náklady a výnosy; výsledkem jsou rozvaha a výkaz zisku a ztráty."
+    }
+  ]
+}

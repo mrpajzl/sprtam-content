@@ -1,0 +1,435 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "financni-produkty",
+  "title": "Finanční produkty: úrok, úvěr a spoření",
+  "emoji": "🏦",
+  "explanations": [
+    {
+      "title": "Půjčit, nebo spořit",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Vojta chce notebook za 30 000 Kč. Může si ho koupit hned na půjčku, nebo rok spořit. Reklama slibuje „půjčku bez starostí“. Která cesta ho bude stát víc?"
+        },
+        {
+          "type": "text",
+          "text": "Půjčky i spoření jsou postavené na **úroku**. Když mu rozumíš, poznáš výhodnou nabídku od pasti a nedostaneš se do dluhů, ze kterých se nedá vyhrabat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Úrok",
+          "definition": "Cena za půjčení peněz. Kdo si půjčí, úrok **platí**. Kdo peníze uloží do banky (vlastně jí je půjčí), úrok **dostává**.",
+          "example": "Uložíš 10 000 Kč, za rok dostaneš úrok 300 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Úroková sazba",
+          "definition": "Úrok vyjádřený v procentech za rok. Zkratka **p. a.** znamená „za rok“.",
+          "example": "3 % p. a. z 10 000 Kč = 300 Kč za rok."
+        },
+        {
+          "type": "term",
+          "term": "Jistina",
+          "definition": "Částka, kterou si půjčíš nebo uložíš – bez úroků.",
+          "example": "Půjčka 30 000 Kč: jistina je 30 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Úvěr",
+          "definition": "Peníze půjčené od banky nebo jiné firmy, které vracíš i s úrokem a poplatky, obvykle ve **splátkách**.",
+          "example": "Spotřebitelský úvěr na auto, hypotéka na byt."
+        },
+        {
+          "type": "term",
+          "term": "RPSN",
+          "definition": "**Roční procentní sazba nákladů.** Ukazuje v procentech za rok, kolik tě úvěr stojí **celkem** – úrok i poplatky. Podle zákona ji musí věřitel uvádět, aby šly nabídky porovnat.",
+          "example": "Úvěr s úrokem 8 % a vysokým poplatkem může mít RPSN 12 %."
+        },
+        {
+          "type": "heading",
+          "text": "Kolik stojí půjčka"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vojta si půjčí **30 000 Kč** (jistina).",
+            "Bude splácet 12 měsíců po **2 750 Kč**.",
+            "Celkem zaplatí 12 × 2 750 = **33 000 Kč**.",
+            "Přeplatí 33 000 − 30 000 = **3 000 Kč** – to je cena půjčky (úroky a poplatky).",
+            "Kdyby rok spořil 2 500 Kč měsíčně, měl by 30 000 Kč a k tomu malý úrok – a nic by nepřeplatil."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak porovnat dvě nabídky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "nabídka A",
+            "nabídka B"
+          ],
+          "rows": [
+            [
+              "úroková sazba",
+              "7 % p. a.",
+              "9 % p. a."
+            ],
+            [
+              "poplatek za sjednání",
+              "3 000 Kč",
+              "0 Kč"
+            ],
+            [
+              "měsíční poplatek za vedení",
+              "150 Kč",
+              "0 Kč"
+            ],
+            [
+              "RPSN",
+              "vyšší, poplatky se započítají",
+              "nižší"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nízký úrok A láká, ale poplatky ji prodraží. Proto se nabídky porovnávají podle **RPSN**, ne podle úroku. Čísla v tabulce jsou jen příklad."
+        },
+        {
+          "type": "example",
+          "question": "Půjčka 50 000 Kč se splácí 24 měsíců po 2 400 Kč. Kolik Kč přeplatíš?",
+          "answer": "Celkem zaplatíš 24 × 2 400 = 57 600 Kč. Přeplatek: 57 600 − 50 000 = **7 600 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Proč je nebezpečné splácet jednu půjčku další půjčkou?",
+          "answer": "Každá půjčka má svůj úrok a poplatky. Když starou splatíš novou, dluh **neklesá, ale roste** – platíš úroky z úroků. Tak vzniká **dluhová past**. Neplacení pak vede k zápisu do **registru dlužníků**, k vymáhání a k **exekuci** majetku nebo mzdy."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vyberu půjčku s nejnižší úrokovou sazbou, ta je nejlevnější.",
+          "right": "Porovnávej **RPSN** a celkovou částku, kterou zaplatíš.",
+          "why": "Úroková sazba nezahrnuje poplatky za sjednání, vedení úvěru nebo pojištění. RPSN je obsahuje všechny."
+        },
+        {
+          "type": "summary",
+          "text": "Úrok je cena peněz: dlužník ho platí, střadatel dostává. Úvěr vracíš i s úroky a poplatky, celkovou cenu ukazuje RPSN – podle ní nabídky porovnávej. Spořit předem je skoro vždy levnější než půjčit si."
+        }
+      ]
+    },
+    {
+      "title": "Peníze, které rostou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Z brigády ti zbylo 20 000 Kč. Necháš je doma v šuplíku, na spořicím účtu, nebo je investuješ? Každá volba má jiný výnos, jiné riziko a jinak rychle se k penězům dostaneš."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se, jak úrok roste z roku na rok, proč peníze v šuplíku ztrácejí hodnotu a jak vybrat mezi spořením a investováním."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Úrok a úroková sazba",
+          "definition": "**Úrok** je odměna za půjčené peníze. **Úroková sazba** je úrok v procentech za rok (**p. a.**).",
+          "example": "4 % p. a. z 20 000 Kč = 800 Kč za rok."
+        },
+        {
+          "type": "term",
+          "term": "Složené úročení",
+          "definition": "Úrok se po každém roce **přičte k vkladu** a další rok se úročí i on. Peníze tak rostou čím dál rychleji.",
+          "example": "10 000 Kč při 4 %: po roce 10 400 Kč, po dvou letech 10 816 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Inflace",
+          "definition": "Růst cen v čase. Za stejné peníze si pak koupíš méně.",
+          "example": "Při inflaci 3 % stojí rohlík za 3 Kč za rok asi 3,09 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Investiční trojúhelník",
+          "definition": "Tři vlastnosti každého produktu: **výnos** (kolik vydělá), **riziko** (jak moc může ztratit) a **likvidita** (jak rychle se dostaneš k penězům). Všechny tři najednou nejlepší být nemůžou.",
+          "example": "Spořicí účet: malé riziko, vysoká likvidita, nízký výnos."
+        },
+        {
+          "type": "heading",
+          "text": "Jak roste vklad (příklad: 10 000 Kč, 4 % p. a.)"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "Kč",
+            "items": [
+              {
+                "label": "na začátku",
+                "value": 10000
+              },
+              {
+                "label": "po 1 roce",
+                "value": 10400
+              },
+              {
+                "label": "po 2 letech",
+                "value": 10816
+              },
+              {
+                "label": "po 3 letech",
+                "value": 11249
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Sleduj, jak přírůstek každým rokem roste: 400 Kč, pak 416 Kč, pak 433 Kč. To dělá složené úročení. Pro jednoduchost tu není odečtena daň z úroků."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled produktů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "produkt",
+            "výnos",
+            "riziko",
+            "likvidita"
+          ],
+          "rows": [
+            [
+              "běžný účet",
+              "skoro žádný",
+              "velmi malé",
+              "okamžitá"
+            ],
+            [
+              "spořicí účet",
+              "nízký",
+              "velmi malé",
+              "vysoká"
+            ],
+            [
+              "termínovaný vklad",
+              "nízký až střední",
+              "velmi malé",
+              "nízká – peníze jsou vázané"
+            ],
+            [
+              "stavební spoření",
+              "nízký + státní podpora",
+              "malé",
+              "nízká – obvykle 6 let"
+            ],
+            [
+              "dluhopisy",
+              "střední",
+              "střední",
+              "střední"
+            ],
+            [
+              "akcie a akciové fondy",
+              "dlouhodobě vyšší",
+              "vysoké",
+              "střední"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Vklady v bankách jsou v Česku **pojištěné** do 100 000 eur na jednoho klienta v jedné bance.",
+            "Z úroků na účtech se platí **daň 15 %**, banka ji strhne sama.",
+            "Akcie a fondy pojištěné nejsou – jejich hodnota může klesnout."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Uložíš 20 000 Kč na rok na spořicí účet se sazbou 4 % p. a. Kolik Kč úroku ti zbude po dani 15 %?",
+          "answer": "Úrok: 4 % z 20 000 = 800 Kč. Daň: 15 % z 800 = 120 Kč. Zbude **680 Kč**. Na účtu budeš mít 20 680 Kč."
+        },
+        {
+          "type": "example",
+          "question": "Spořicí účet nese 3 % a inflace je 4 %. Zbohatneš?",
+          "answer": "Peněz na účtu přibude (3 %), ale ceny vzrostou víc (4 %). Za své peníze si koupíš asi o **1 % méně** než dnes. Tomu se říká **záporný reálný úrok**: reálný úrok ≈ úroková sazba − inflace = 3 − 4 = −1 %."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Peníze v šuplíku o nic nepřijdou, nic jim nehrozí.",
+          "right": "Peníze v šuplíku ztrácejí hodnotu kvůli **inflaci** a hrozí krádež nebo požár.",
+          "why": "Částka zůstane stejná, ale ceny rostou. Za 20 000 Kč si za pár let koupíš méně než dnes."
+        },
+        {
+          "type": "summary",
+          "text": "Při složeném úročení se úrok přičítá k vkladu a peníze rostou stále rychleji. Inflace snižuje hodnotu peněz, proto je důležitý reálný úrok. Každý produkt se posuzuje podle výnosu, rizika a likvidity; vyšší výnos znamená obvykle vyšší riziko."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co vyjadřuje RPSN?",
+      "options": [
+        "celkové roční náklady úvěru včetně poplatků v procentech",
+        "jen úrokovou sazbu",
+        "výši měsíční splátky",
+        "počet splátek"
+      ],
+      "answer": 0,
+      "explanation": "RPSN = roční procentní sazba nákladů; zahrnuje úrok i poplatky."
+    },
+    {
+      "type": "input",
+      "question": "Kolik Kč je roční úrok z 15 000 Kč při sazbě 2 % p. a.?",
+      "answers": [
+        "300"
+      ],
+      "explanation": "2 % z 15 000 = 0,02 × 15 000 = 300 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Půjčka 40 000 Kč se splácí 20 měsíců po 2 300 Kč. Kolik Kč přeplatíš?",
+      "answers": [
+        "6000",
+        "6 000"
+      ],
+      "explanation": "20 × 2 300 = 46 000 Kč; 46 000 − 40 000 = 6 000 Kč.",
+      "hints": [
+        "Nejdřív spočítej, kolik zaplatíš celkem.",
+        "Od celkové částky odečti jistinu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvě půjčky je nejlepší porovnat podle úrokové sazby, poplatky nejsou důležité.",
+      "answer": false,
+      "explanation": "Porovnávat se má RPSN, které zahrnuje i poplatky."
+    },
+    {
+      "type": "choice",
+      "question": "10 000 Kč je uloženo na 2 roky se složeným úročením 5 % p. a. (bez daně). Kolik bude na účtu?",
+      "options": [
+        "11 025 Kč",
+        "11 000 Kč",
+        "10 500 Kč",
+        "10 250 Kč"
+      ],
+      "answer": 0,
+      "explanation": "Po roce 10 500 Kč, po druhém roce 10 500 × 1,05 = 11 025 Kč.",
+      "hints": [
+        "Spočítej nejdřív stav po prvním roce.",
+        "Ve druhém roce se úročí i úrok z prvního roku."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s vysvětlením.",
+      "pairs": [
+        [
+          "jistina",
+          "půjčená částka bez úroků"
+        ],
+        [
+          "inflace",
+          "růst cen"
+        ],
+        [
+          "likvidita",
+          "jak rychle se dostanu k penězům"
+        ],
+        [
+          "úrok",
+          "cena za půjčení peněz"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Vklady v českých bankách jsou pojištěné do 100 000 eur na klienta v jedné bance.",
+      "answer": true,
+      "explanation": "Pojištění vkladů zajišťuje Garanční systém finančního trhu."
+    },
+    {
+      "type": "choice",
+      "question": "Úroková sazba je 2 %, inflace 5 %. Jaký je přibližně reálný úrok?",
+      "options": [
+        "−3 %",
+        "3 %",
+        "7 %",
+        "2 %"
+      ],
+      "answer": 0,
+      "explanation": "Reálný úrok ≈ 2 − 5 = −3 %. Peníze ztrácejí kupní sílu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď produkty od nejmenšího rizika po největší.",
+      "items": [
+        "pojištěný spořicí účet",
+        "státní dluhopis",
+        "akciový fond",
+        "akcie jedné malé firmy"
+      ],
+      "hints": [
+        "Co je pojištěné a co může ztratit hodnotu?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik procent daně se v Česku platí z úroků na spořicím účtu?",
+      "options": [
+        "15 %",
+        "21 %",
+        "0 %",
+        "23 %"
+      ],
+      "answer": 0,
+      "explanation": "Banka strhne daň 15 % sama."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vyšší očekávaný výnos investice obvykle znamená i vyšší riziko.",
+      "answer": true,
+      "explanation": "Investiční trojúhelník: všechny tři vlastnosti nejlepší být nemůžou."
+    },
+    {
+      "type": "input",
+      "question": "Úrok z vkladu je 1 000 Kč. Kolik Kč zbude po odečtení daně 15 %?",
+      "answers": [
+        "850"
+      ],
+      "explanation": "15 % z 1 000 = 150 Kč; 1 000 − 150 = 850 Kč."
+    },
+    {
+      "type": "open",
+      "question": "Kamarád si chce vzít druhou půjčku, aby splatil první. Co mu poradíš a proč?",
+      "answer": "Aby to nedělal: platil by další úroky a poplatky a dluh by rostl – hrozí dluhová past, registr dlužníků a exekuce. Lepší je domluvit se s věřitelem na splátkovém kalendáři, omezit výdaje nebo vyhledat bezplatnou dluhovou poradnu."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je investiční trojúhelník, na příkladu spořicího účtu a akcií.",
+      "answer": "Investiční trojúhelník tvoří výnos, riziko a likvidita, které nemohou být všechny zároveň nejlepší. Spořicí účet má malé riziko a vysokou likviditu, ale nízký výnos; akcie mají dlouhodobě vyšší výnos, ale vysoké riziko kolísání."
+    }
+  ]
+}

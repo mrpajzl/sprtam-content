@@ -1,0 +1,474 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "marketing",
+  "title": "Marketing",
+  "emoji": "📣",
+  "explanations": [
+    {
+      "title": "Nový salon",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nela otevírá kosmetický salon v okresním městě. Má skvělé vybavení i výuční list. Jenže v ulici jsou už dva salony. Jak přesvědčí zákaznice, aby přišly právě k ní?"
+        },
+        {
+          "type": "text",
+          "text": "Nestačí jen umět svou práci. Musíš vědět, kdo jsou tví zákazníci, co chtějí, kolik zaplatí a jak se o tobě dozvědí. To všechno je **marketing**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Marketing",
+          "definition": "Způsob řízení firmy, který vychází z **potřeb zákazníků**: zjistit, co chtějí, nabídnout jim to a vydělat na tom. Není to jen reklama.",
+          "example": "Nela zjistí, že ženám ve městě chybí večerní otevírací doba, a otevře do 20 hodin."
+        },
+        {
+          "type": "term",
+          "term": "Marketingový výzkum",
+          "definition": "Zjišťování informací o zákaznících, konkurenci a trhu. **Primární** – sbíráš data sám (dotazník, rozhovor, pozorování). **Sekundární** – použiješ data, která už někdo sebral (statistiky, články).",
+          "example": "Nela rozdá 100 dotazníků (primární) a projde ceníky konkurence na webu (sekundární)."
+        },
+        {
+          "type": "term",
+          "term": "Segmentace a cílová skupina",
+          "definition": "**Segmentace** je rozdělení zákazníků do skupin s podobnými potřebami (podle věku, příjmu, zájmů). **Cílová skupina** je ta, na kterou se zaměříš.",
+          "example": "Cílová skupina Nely: pracující ženy 25–45 let, které chodí z práce pozdě."
+        },
+        {
+          "type": "heading",
+          "text": "Marketingový mix 4P"
+        },
+        {
+          "type": "text",
+          "text": "Když Nela ví, pro koho pracuje, nastaví čtyři „páky“ – tzv. **marketingový mix 4P** (podle anglických slov):"
+        },
+        {
+          "type": "table",
+          "head": [
+            "P",
+            "česky",
+            "co rozhoduješ",
+            "u Nely"
+          ],
+          "rows": [
+            [
+              "Product",
+              "produkt",
+              "co nabízíš: kvalita, sortiment, značka, obal",
+              "ošetření pleti, líčení, prodej kosmetiky"
+            ],
+            [
+              "Price",
+              "cena",
+              "kolik to stojí, slevy, platební podmínky",
+              "ošetření za 900 Kč, permanentka 5 + 1 zdarma"
+            ],
+            [
+              "Place",
+              "distribuce (místo)",
+              "kde a jak se zákazník k produktu dostane",
+              "salon u zastávky, rezervace online"
+            ],
+            [
+              "Promotion",
+              "propagace (komunikace)",
+              "jak se o tobě lidé dozvědí",
+              "Instagram, letáky, doporučení kamarádek"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "produkt",
+              "cena",
+              "distribuce",
+              "propagace"
+            ],
+            "items": [
+              {
+                "text": "nové ošetření s ampulí",
+                "group": 0
+              },
+              {
+                "text": "sleva 20 % pro studentky",
+                "group": 1
+              },
+              {
+                "text": "online rezervační systém",
+                "group": 2
+              },
+              {
+                "text": "příspěvek na Instagramu",
+                "group": 3
+              },
+              {
+                "text": "dárková krabička s logem",
+                "group": 0
+              },
+              {
+                "text": "otevřeno i v sobotu",
+                "group": 2
+              },
+              {
+                "text": "inzerát v místních novinách",
+                "group": 3
+              },
+              {
+                "text": "platba kartou na splátky",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď rozhodnutí do čtyř P. Ptej se: týká se to toho, co nabízím, kolik to stojí, kde to zákazník dostane, nebo jak se o tom dozví?"
+        },
+        {
+          "type": "example",
+          "question": "Nela chce přilákat studentky. Navrhni jednu změnu v každém P.",
+          "answer": "**Produkt:** rychlé líčení na maturitní ples. **Cena:** studentská sleva po předložení průkazu. **Distribuce:** otevřeno i v pátek odpoledne po škole. **Propagace:** krátká videa na sociálních sítích, kde studentky jsou."
+        },
+        {
+          "type": "example",
+          "question": "Nela zjistila, že konkurence nabízí ošetření za 700–800 Kč. Smí si říct 1 100 Kč?",
+          "answer": "Smí, ale musí to zákaznicím **zdůvodnit** – třeba lepším produktem (dražší značka kosmetiky, delší ošetření) a propagací, která to vysvětlí. Cena je jen jedno P. Musí sedět k ostatním třem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Marketing = reklama.",
+          "right": "Reklama je jen část propagace, tedy jedné ze čtyř částí marketingového mixu.",
+          "why": "Marketing začíná výzkumem, co zákazníci chtějí, a zahrnuje i produkt, cenu a distribuci. Dobrá reklama nezachrání špatný produkt."
+        },
+        {
+          "type": "summary",
+          "text": "Marketing začíná u zákazníka: výzkumem zjistíš, co chce, a vybereš cílovou skupinu. Pak nastavíš marketingový mix 4P – produkt, cenu, distribuci a propagaci – tak, aby k sobě pasovaly."
+        }
+      ]
+    },
+    {
+      "title": "Nástroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nový mobil se nejdřív prodává draze a za rok je ve slevě. Jedna firma o sobě dá do novin článek, druhá rozdává vzorky. Za tím vším stojí promyšlené marketingové nástroje."
+        },
+        {
+          "type": "text",
+          "text": "Poznáš nástroje, kterými firmy plánují, prodávají a propagují. Hodí se, až budeš sám prodávat – nebo až se budeš chtít jako zákazník bránit manipulaci."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Marketing",
+          "definition": "Řízení firmy podle potřeb zákazníků: zjistit, co chtějí, nabídnout jim to a vydělat.",
+          "example": "Výrobce nářadí zjistí, že řemeslníci chtějí lehčí aku vrtačky, a vyvine je."
+        },
+        {
+          "type": "term",
+          "term": "Marketingový mix (4P)",
+          "definition": "Čtyři oblasti, které firma nastavuje: **produkt**, **cena**, **distribuce** (místo) a **propagace**.",
+          "example": "Nová vrtačka (produkt) za 3 990 Kč (cena) v e-shopu (distribuce) s videem na YouTube (propagace)."
+        },
+        {
+          "type": "term",
+          "term": "SWOT analýza",
+          "definition": "Rozbor firmy ve čtyřech polích: **S**ilné stránky, **W** slabé stránky (uvnitř firmy), **O** příležitosti a **T** hrozby (zvenku, z okolí).",
+          "example": "Silná stránka: zkušený technik. Hrozba: nový konkurent v ulici."
+        },
+        {
+          "type": "term",
+          "term": "Životní cyklus výrobku",
+          "definition": "Fáze, kterými výrobek na trhu prochází: **zavádění**, **růst**, **zralost** a **útlum** (úpadek).",
+          "example": "CD přehrávače jsou dnes ve fázi útlumu."
+        },
+        {
+          "type": "heading",
+          "text": "SWOT servisu průmyslových robotů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "pomáhá",
+            "škodí"
+          ],
+          "rows": [
+            [
+              "**uvnitř firmy**",
+              "S: certifikovaní technici, rychlý výjezd",
+              "W: malá firma, málo kapitálu"
+            ],
+            [
+              "**v okolí**",
+              "O: firmy v regionu automatizují výrobu",
+              "T: výrobci robotů zakládají vlastní servis"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Životní cyklus výrobku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Zavádění** – výrobek je nový, prodej je malý, náklady na propagaci velké. Často ztráta.",
+            "**Růst** – zákazníci si výrobek oblíbí, prodej rychle roste, objevuje se konkurence.",
+            "**Zralost** – prodej je nejvyšší, ale už neroste. Bojuje se cenou a vylepšeními.",
+            "**Útlum** – prodej klesá, výrobek nahrazují novější. Firma ho zlevní, nebo stáhne z trhu."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nástroje propagace"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Reklama** – placené sdělení v médiích: televize, internet, billboard.",
+            "**Podpora prodeje** – krátkodobé lákadlo: sleva, vzorek zdarma, soutěž, 2 + 1 zdarma.",
+            "**Public relations (PR)** – budování dobrého jména: články, sponzoring, den otevřených dveří.",
+            "**Osobní prodej** – prodejce mluví přímo se zákazníkem a radí mu.",
+            "**Přímý marketing** – oslovení konkrétního člověka: e-mail, newsletter, katalog poštou (jen se souhlasem se zasíláním)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Vzorek krému zdarma k nákupu",
+                "back": "**podpora prodeje**"
+              },
+              {
+                "front": "Firma sponzoruje místní hokejový klub",
+                "back": "**public relations (PR)**"
+              },
+              {
+                "front": "Placený spot v televizi",
+                "back": "**reklama**"
+              },
+              {
+                "front": "Prodavač v železářství poradí s výběrem vrtáku",
+                "back": "**osobní prodej**"
+              },
+              {
+                "front": "Newsletter stálým zákazníkům",
+                "back": "**přímý marketing**"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Nejdřív si sám řekni, který nástroj to je, a pak kartu otoč."
+        },
+        {
+          "type": "example",
+          "question": "Firma uvádí na trh chytré hodinky. V jaké fázi cyklu jsou a jakou cenu zvolí, chce-li rychle získat hodně zákazníků?",
+          "answer": "Jsou ve fázi **zavádění**. Pro rychlé získání zákazníků se hodí **nízká zaváděcí cena** (tzv. penetrační). Opačná strategie je **vysoká cena** pro nadšence, kteří chtějí novinku hned (tzv. sbírání smetany), a postupné zlevňování."
+        },
+        {
+          "type": "example",
+          "question": "Starožitnictví prodává hlavně starým sběratelům a tržby klesají. Navrhni podle SWOT, co dělat.",
+          "answer": "**Silná stránka:** znalost oboru, ověřené kusy. **Slabina:** chybí e-shop. **Příležitost:** mladí lidé hledají retro nábytek. **Hrozba:** prodej mezi lidmi na internetových bazarech. Doporučení: využít silnou stránku a příležitost – e-shop a sociální sítě zaměřené na mladší zákazníky se zárukou pravosti."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Nový konkurent v ulici je naše slabá stránka.",
+          "right": "Konkurent je **hrozba** – přichází zvenku. Slabé stránky jsou uvnitř firmy.",
+          "why": "S a W se týkají firmy samotné (lidé, vybavení, peníze). O a T jsou vlivy z okolí, které firma neovládá."
+        },
+        {
+          "type": "summary",
+          "text": "SWOT porovná silné a slabé stránky firmy s příležitostmi a hrozbami okolí. Výrobek prochází zaváděním, růstem, zralostí a útlumem. Propagace využívá reklamu, podporu prodeje, PR, osobní prodej a přímý marketing."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co NEpatří do marketingového mixu 4P?",
+      "options": [
+        "personál",
+        "produkt",
+        "cena",
+        "propagace"
+      ],
+      "answer": 0,
+      "explanation": "Klasické 4P jsou produkt, cena, distribuce (místo) a propagace."
+    },
+    {
+      "type": "match",
+      "question": "Spoj nástroj s oblastí marketingového mixu.",
+      "pairs": [
+        [
+          "studentská sleva",
+          "cena"
+        ],
+        [
+          "nový design obalu",
+          "produkt"
+        ],
+        [
+          "prodej přes e-shop",
+          "distribuce"
+        ],
+        [
+          "reklama na Instagramu",
+          "propagace"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Marketing je totéž co reklama.",
+      "answer": false,
+      "explanation": "Reklama je jen jeden z nástrojů propagace."
+    },
+    {
+      "type": "choice",
+      "question": "Nela rozdala zákaznicím vlastní dotazník. Jaký je to výzkum?",
+      "options": [
+        "primární",
+        "sekundární",
+        "terciární",
+        "nepřímý"
+      ],
+      "answer": 0,
+      "explanation": "Primární výzkum = data sbíráš sám."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď fáze životního cyklu výrobku.",
+      "items": [
+        "zavádění",
+        "růst",
+        "zralost",
+        "útlum"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do kterého pole SWOT patří „zkušení a certifikovaní technici“?",
+      "options": [
+        "silné stránky",
+        "slabé stránky",
+        "příležitosti",
+        "hrozby"
+      ],
+      "answer": 0,
+      "explanation": "Je to výhoda uvnitř firmy.",
+      "hints": [
+        "Je to uvnitř firmy, nebo v jejím okolí?",
+        "Pomáhá to firmě, nebo jí to škodí?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do kterého pole SWOT patří „zdražení energií pro všechny firmy“?",
+      "options": [
+        "hrozby",
+        "slabé stránky",
+        "silné stránky",
+        "příležitosti"
+      ],
+      "answer": 0,
+      "explanation": "Je to vnější vliv, který škodí – hrozba.",
+      "hints": [
+        "Může firma zdražení energií ovlivnit?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj příklad s nástrojem propagace.",
+      "pairs": [
+        [
+          "vzorek zdarma",
+          "podpora prodeje"
+        ],
+        [
+          "sponzoring hokejového klubu",
+          "public relations"
+        ],
+        [
+          "televizní spot",
+          "reklama"
+        ],
+        [
+          "rada prodavače v obchodě",
+          "osobní prodej"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje skupina zákazníků, na kterou se firma zaměří? Doplň: … skupina",
+      "answers": [
+        "cílová",
+        "cilova",
+        "cílová skupina",
+        "cilova skupina"
+      ],
+      "explanation": "Cílovou skupinu firma vybere po segmentaci trhu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve fázi zralosti je prodej výrobku obvykle nejvyšší.",
+      "answer": true,
+      "explanation": "Prodej už neroste, ale je nejvyšší; bojuje se cenou a vylepšeními."
+    },
+    {
+      "type": "choice",
+      "question": "Výrobce uvede novinku za nízkou cenu, aby rychle získal hodně zákazníků. Jak se tato strategie jmenuje?",
+      "options": [
+        "penetrační cena",
+        "sbírání smetany",
+        "prestižní cena",
+        "cena podle nákladů"
+      ],
+      "answer": 0,
+      "explanation": "Penetrační cena = nízká zaváděcí cena pro rychlé proniknutí na trh."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje rozdělení zákazníků do skupin s podobnými potřebami? (jedno slovo)",
+      "answers": [
+        "segmentace",
+        "segmentace trhu"
+      ],
+      "explanation": "Segmentace dělí trh podle věku, příjmu, zájmů a dalších znaků."
+    },
+    {
+      "type": "open",
+      "question": "Popiš marketingový mix 4P na příkladu služby nebo výrobku z tvého oboru.",
+      "answer": "Například autoservis: produkt je oprava a pravidelný servis, cena je hodinová sazba a balíčky služeb, distribuce je dílna u hlavní silnice s online objednáním, propagace jsou recenze na internetu, letáky a sleva pro stálé zákazníky."
+    },
+    {
+      "type": "open",
+      "question": "Co je SWOT analýza a k čemu firmě slouží?",
+      "answer": "SWOT analýza rozebírá silné a slabé stránky firmy (uvnitř) a příležitosti a hrozby (v okolí). Firma podle ní plánuje: využívá silné stránky k chopení příležitostí a připravuje se na hrozby."
+    }
+  ]
+}
