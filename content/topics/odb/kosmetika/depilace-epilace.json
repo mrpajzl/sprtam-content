@@ -1,0 +1,387 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "depilace-epilace",
+  "title": "Depilace a epilace",
+  "emoji": "🦵",
+  "explanations": [
+    {
+      "title": "Nad kůží a pod ní",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když se oholíš, chloupky za dva dny zase píchají. Po voskování vydrží hladká kůže několik týdnů. Rozdíl je v tom, jestli se chloupek odstraní jen nad kůží, nebo i s kořínkem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vlasový váček (folikul)",
+          "definition": "Malá jamka v kůži, ze které roste chloupek. Na jejím dně je kořínek (cibulka), kde chloupek vzniká.",
+          "example": "Po vytržení chloupku zůstane ve váčku živá část, ze které vyroste nový."
+        },
+        {
+          "type": "term",
+          "term": "Depilace",
+          "definition": "Odstranění chloupku **nad povrchem kůže**. Kořínek zůstává, chloupek brzy doroste.",
+          "example": "Holení, depilační krém."
+        },
+        {
+          "type": "term",
+          "term": "Epilace",
+          "definition": "Odstranění chloupku **i s kořínkem** z váčku. Výsledek vydrží několik týdnů.",
+          "example": "Vosk, cukrová pasta, pinzeta, elektrický epilátor."
+        },
+        {
+          "type": "text",
+          "text": "Pozor: v běžné řeči se voskování často říká „depilace voskem“. Odborně jde ale o epilaci, protože se chloupek vytrhne s kořínkem."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled metod"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Metoda",
+            "Druh",
+            "Jak dlouho vydrží"
+          ],
+          "rows": [
+            [
+              "holení",
+              "depilace",
+              "1–3 dny"
+            ],
+            [
+              "depilační krém",
+              "depilace",
+              "několik dní"
+            ],
+            [
+              "vosk, cukrová pasta",
+              "epilace",
+              "několik týdnů"
+            ],
+            [
+              "pinzeta, epilátor",
+              "epilace",
+              "několik týdnů"
+            ],
+            [
+              "laser, IPL, elektrolýza",
+              "dlouhodobé až trvalé odstranění",
+              "podle metody, provádí se opakovaně"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď metody na depilaci a epilaci."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "depilace",
+              "epilace"
+            ],
+            "items": [
+              {
+                "text": "holení",
+                "group": 0
+              },
+              {
+                "text": "depilační krém",
+                "group": 0
+              },
+              {
+                "text": "teplý vosk",
+                "group": 1
+              },
+              {
+                "text": "cukrová pasta",
+                "group": 1
+              },
+              {
+                "text": "pinzeta",
+                "group": 1
+              },
+              {
+                "text": "elektrický epilátor",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka chce mít hladké nohy na dovolenou za týden a vydržet celé tři týdny. Co doporučíš?",
+          "answer": "Holení by vydrželo jen pár dní. Doporučíš **epilaci voskem nebo cukrovou pastou** několik dní před odjezdem. Chloupky se vytrhnou s kořínkem a dorůstají několik týdnů. Kůže se do odjezdu stihne zklidnit."
+        },
+        {
+          "type": "example",
+          "question": "Proč chloupky po epilaci dorůstají pomaleji a jemnější?",
+          "answer": "Chloupek se musí znovu vytvořit **od kořínku**, a to trvá týdny. Nový chloupek má navíc **tenký konec**, ne ostrou seříznutou hranu jako po holení, proto působí jemněji."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Depilace a epilace je totéž, jen jinak řečeno.",
+          "right": "Depilace odstraní chloupek nad kůží, epilace i s kořínkem.",
+          "why": "Proto po depilaci chloupky dorostou za pár dní a po epilaci za několik týdnů."
+        },
+        {
+          "type": "summary",
+          "text": "Depilace = odstranění chloupku nad kůží (holení, krém). Epilace = vytržení s kořínkem (vosk, cukrová pasta, pinzeta, epilátor). Laser, IPL a elektrolýza chloupky odstraňují dlouhodobě."
+        }
+      ]
+    },
+    {
+      "title": "Vosk a cukr v salonu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Epilace voskem a cukrovou pastou patří mezi nejčastější služby salonu. Je rychlá, ale pracuje se s teplem a s kůží, která se snadno podráždí. Proto musí kosmetička dodržet postup a hygienu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Epilace",
+          "definition": "Odstranění chloupku i s kořínkem.",
+          "example": "Strhnutí vosku z lýtka."
+        },
+        {
+          "type": "term",
+          "term": "Teplý (stripový) vosk",
+          "definition": "Vosk, který se nanáší tenkou vrstvou a strhává se pomocí papírového nebo textilního proužku.",
+          "example": "Vosk v roll-on kazetě na nohy."
+        },
+        {
+          "type": "term",
+          "term": "Horký (filmový) vosk",
+          "definition": "Vosk, který se nanáší silnější vrstvou, na kůži ztuhne a strhává se bez proužku. Hodí se na menší a citlivá místa.",
+          "example": "Epilace podpaží nebo horního rtu."
+        },
+        {
+          "type": "term",
+          "term": "Cukrová pasta",
+          "definition": "Hustá hmota z cukru, vody a citronové šťávy. Nanáší se a strhává rukou.",
+          "example": "Epilace cukrovou pastou na lýtka."
+        },
+        {
+          "type": "term",
+          "term": "Zarůstání chloupků",
+          "definition": "Dorůstající chloupek se stočí a roste pod kůží. Vznikne pupínek nebo zánět.",
+          "example": "Červené tečky po epilaci třísel."
+        },
+        {
+          "type": "heading",
+          "text": "Postup s teplým voskem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rozhovor a kontrola kontraindikací.",
+            "Chloupky mají délku aspoň několik milimetrů. Delší zkrátíš.",
+            "Kůži očistíš a odmastíš, případně zasypeš pudrem.",
+            "**Teplotu vosku vyzkoušíš** na své ruce (na vnitřní straně zápěstí).",
+            "Vosk naneseš tenkou vrstvou **po směru růstu** chloupků.",
+            "Přitiskneš proužek, kůži napneš a proužek rychle strhneš **proti směru růstu**, těsně u kůže.",
+            "Zbytky vosku odstraníš olejem po epilaci, kůži zklidníš."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cukrová pasta naopak"
+        },
+        {
+          "type": "text",
+          "text": "Pasta se nanáší **proti směru růstu** a strhává se **po směru růstu**. Chloupek se tak méně láme a kůže se méně dráždí. Pasta není tak horká jako vosk."
+        },
+        {
+          "type": "heading",
+          "text": "Hygiena a kontraindikace"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Použitou špachtli **nikdy znovu nenamáčíš** do vosku. Každý nabrání = čistá špachtle.",
+            "Roll-on hlavice jsou jednorázové nebo jen pro jednu klientku podle návodu výrobce.",
+            "Neošetřuješ křečové žíly, rány, záněty, opálenou nebo spálenou kůži, kožní infekce a mateřská znaménka.",
+            "Při cukrovce a lécích na ředění krve postupuješ velmi opatrně, při léčbě isotretinoinem epilaci voskem nedělej."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka má na lýtku mateřské znaménko a výraznou křečovou žílu. Jak postupuješ?",
+          "answer": "Znaménko a žílu **vynecháš**, místně jsou kontraindikací. Kolem nich voskuješ opatrně, znaménko můžeš přelepit nebo obejít. Zbytek nohy ošetříš normálně."
+        },
+        {
+          "type": "example",
+          "question": "Jak klientce poradíš, aby jí chloupky po epilaci nezarůstaly?",
+          "answer": "Prvních 24 hodin bez sauny, slunce a parfémovaných přípravků. Pak **pravidelný jemný peeling** (asi po několika dnech) a hydratace, aby dorůstající chloupek prošel kůží. Netěsné oblečení na epilovaná místa."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Špachtli s voskem po nanesení namočím zpátky do nádoby, ušetřím špachtle.",
+          "right": "Na každé nabrání vosku vezmu čistou jednorázovou špachtli.",
+          "why": "Špachtle se dotkla kůže. Vrácením do vosku by se do něj dostaly mikroorganismy a přenesly se na další klientky."
+        },
+        {
+          "type": "summary",
+          "text": "Teplý vosk: nanést po směru růstu, strhnout proti směru. Cukrová pasta: nanést proti směru, strhnout po směru. Vždy vyzkoušet teplotu, napnout kůži, nevracet špachtli do vosku a vynechat žíly, rány a znaménka."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je epilace?",
+      "options": [
+        "odstranění chloupku i s kořínkem",
+        "odstranění chloupku nad kůží",
+        "zesvětlení chloupků",
+        "zastřižení chloupků"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu s druhem.",
+      "pairs": [
+        [
+          "holení",
+          "depilace"
+        ],
+        [
+          "depilační krém",
+          "depilace"
+        ],
+        [
+          "vosk",
+          "epilace"
+        ],
+        [
+          "cukrová pasta",
+          "epilace"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým směrem se nanáší teplý vosk?",
+      "options": [
+        "po směru růstu chloupků",
+        "proti směru růstu",
+        "kolmo na chloupky",
+        "na tom nezáleží"
+      ],
+      "answer": 0,
+      "hints": [
+        "U cukrové pasty je to naopak."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým směrem se strhává cukrová pasta?",
+      "options": [
+        "po směru růstu chloupků",
+        "proti směru růstu",
+        "kolmo nahoru od kůže",
+        "krouživě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Použitou špachtli lze znovu namočit do společné nádoby s voskem.",
+      "answer": false,
+      "explanation": "Vosk v nádobě by se znečistil pro další klientky."
+    },
+    {
+      "type": "input",
+      "question": "Kde si kosmetička vyzkouší teplotu vosku? Napiš část ruky.",
+      "answers": [
+        "zápěstí",
+        "zapesti",
+        "na zápěstí",
+        "na zapesti"
+      ],
+      "hints": [
+        "Kůže je tam tenká a citlivá, podobně jako u klientky."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Křečové žíly jsou kontraindikace epilace voskem v daném místě.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky epilace teplým voskem.",
+      "items": [
+        "kontrola kontraindikací",
+        "očištění a odmaštění kůže",
+        "vyzkoušení teploty vosku",
+        "nanesení vosku",
+        "přitisknutí a strhnutí proužku",
+        "zklidnění kůže"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje malá jamka v kůži, ze které roste chloupek? (vlasový …)",
+      "answers": [
+        "váček",
+        "vacek",
+        "folikul",
+        "vlasový váček"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co doporučíš proti zarůstání chloupků?",
+      "options": [
+        "pravidelný jemný peeling a hydrataci",
+        "saunu hned po epilaci",
+        "těsné oblečení",
+        "nepoužívat žádný krém"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Laser a IPL patří mezi metody dlouhodobého odstranění chloupků.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi depilací a epilací a uveď dvě metody každé.",
+      "answer": "Depilace odstraní chloupek nad povrchem kůže, třeba holením nebo depilačním krémem, a chloupek doroste za pár dní. Epilace vytrhne chloupek i s kořínkem, třeba voskem nebo cukrovou pastou, a výsledek vydrží několik týdnů."
+    },
+    {
+      "type": "open",
+      "question": "Jaké hygienické zásady dodržuješ při epilaci voskem?",
+      "answer": "Na každé nabrání vosku beru čistou jednorázovou špachtli a nikdy ji nevracím do vosku. Roll-on hlavice jsou pro jednu klientku. Kůži před ošetřením očistím, používám rukavice a po klientce vše vydezinfikuji."
+    }
+  ]
+}

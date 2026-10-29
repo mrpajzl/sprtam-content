@@ -1,0 +1,408 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "diagnostika-pleti",
+  "title": "Diagnostika pleti",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Jako detektiv",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dvě kamarádky si koupí stejný krém. Jedné pomůže, druhé se po něm udělají pupínky. Každá má totiž jinou pleť."
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička proto nejdřív zjistí, jakou pleť klientka má a v jakém je stavu. Teprve pak vybere ošetření a přípravky. Tomuto zjišťování se říká diagnostika pleti."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Diagnostika pleti",
+          "definition": "Posouzení pleti před ošetřením: jaký má typ, v jakém je stavu a jestli něco ošetření nebrání.",
+          "example": "Kosmetička si pleť prohlédne pod lupou a zapíše, že je smíšená a dehydratovaná."
+        },
+        {
+          "type": "term",
+          "term": "Maz",
+          "definition": "Mastná látka z mazových žláz v kůži. Chrání kůži a zvláčňuje ji. Když ho je moc, pleť se leskne.",
+          "example": "Lesklé čelo a nos v poledne."
+        },
+        {
+          "type": "term",
+          "term": "Typ pleti",
+          "definition": "Vlastnost pleti daná hlavně tím, kolik tvoří mazu. Je do velké míry vrozená a mění se jen pomalu (s věkem, hormony).",
+          "example": "Normální, suchá, mastná, smíšená."
+        },
+        {
+          "type": "term",
+          "term": "Stav pleti",
+          "definition": "To, jak pleť vypadá a jak se chová teď. Může se rychle změnit, třeba počasím, péčí nebo stresem.",
+          "example": "Pleť je právě dehydratovaná, citlivá nebo začervenalá."
+        },
+        {
+          "type": "heading",
+          "text": "Stopa 1: rozhovor"
+        },
+        {
+          "type": "text",
+          "text": "Detektiv se nejdřív ptá. Kosmetička zjišťuje, jak se pleť chová během dne, čím se klientka myje, jaké léky bere, jestli má alergie a jestli je těhotná. Tomu se říká **anamnéza**."
+        },
+        {
+          "type": "heading",
+          "text": "Stopa 2: pohled a pohmat"
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička pleť odlíčí a prohlédne si ji **pod lupou s lampou**. Sleduje lesk, velikost pórů, šupinky, pupínky, žilky a skvrny. Pak se pleti dotkne: je pružná, hladká, nebo drsná a napjatá?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ pleti",
+            "Jak vypadá"
+          ],
+          "rows": [
+            [
+              "normální",
+              "matná, jemná, póry skoro nevidíš, nic nepne"
+            ],
+            [
+              "suchá",
+              "málo mazu, jemné šupinky, pnutí, rychleji tvoří vrásky"
+            ],
+            [
+              "mastná",
+              "lesk na celém obličeji, rozšířené póry, sklon ke komedonům"
+            ],
+            [
+              "smíšená",
+              "mastná T-zóna (čelo, nos, brada), tváře normální nebo suché"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka Eva má lesklé čelo, nos a bradu, rozšířené póry na nose. Tváře jsou matné a v zimě ji trochu pnou. Jaký má typ pleti?",
+          "answer": "Mastná je jen **T-zóna** (čelo, nos, brada), tváře ne. To je **smíšená pleť**."
+        },
+        {
+          "type": "example",
+          "question": "Klientka Lucie má mastnou pleť, ale po umytí ji pne a pod lupou jsou vidět drobné šupinky. Co to znamená?",
+          "answer": "Typ zůstává **mastný** (hodně mazu). Pnutí a šupinky ukazují, že pleti **chybí voda**. Stav je tedy **dehydratovaný**. Mastná pleť může být zároveň dehydratovaná, třeba po příliš agresivním mytí."
+        },
+        {
+          "type": "heading",
+          "text": "Stopa 3: zápis"
+        },
+        {
+          "type": "text",
+          "text": "Všechno se zapíše do **karty klientky**: typ a stav pleti, alergie, nemoci, léky, provedené ošetření a doporučená domácí péče. Při další návštěvě kosmetička vidí, jak se pleť změnila. Údaje o zdraví jsou citlivé a nesmí se nikomu ukazovat."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mastná pleť nepotřebuje hydrataci, protože je mastná.",
+          "right": "Maz a voda jsou dvě různé věci. Mastná pleť může mít málo vody a potřebuje lehkou hydrataci.",
+          "why": "Maz je tuk z mazových žláz, hydratace znamená obsah vody v kůži. Jedno nenahradí druhé."
+        },
+        {
+          "type": "summary",
+          "text": "Diagnostika = rozhovor (anamnéza), pohled pod lupou, pohmat a zápis do karty. Typ pleti určuje hlavně množství mazu, stav pleti ukazuje, co pleť potřebuje právě teď."
+        }
+      ]
+    },
+    {
+      "title": "Typ a stav",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lékař se nejdřív ptá a prohlíží, a teprve pak léčí. Kosmetička neléčí, ale postupuje podobně: bez diagnostiky by mohla pleti uškodit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Anamnéza",
+          "definition": "Údaje, které kosmetička zjistí rozhovorem: zdraví, léky, alergie, dosavadní péče, životní styl.",
+          "example": "„Berete nějaké léky? Máte na něco alergii?“"
+        },
+        {
+          "type": "term",
+          "term": "Maz",
+          "definition": "Tuk, který tvoří mazové žlázy v kůži. Chrání pleť před vysycháním.",
+          "example": "Mastný otisk na papírovém kapesníčku přitisknutém na nos."
+        },
+        {
+          "type": "term",
+          "term": "T-zóna",
+          "definition": "Čelo, nos a brada. Je tu nejvíc mazových žláz, takže se tu pleť nejdřív leskne.",
+          "example": "Na fotce se lesknou čelo a nos."
+        },
+        {
+          "type": "term",
+          "term": "Dehydratace pleti",
+          "definition": "Pleti chybí **voda**. Pne, má jemné šupinky a vrásky z vysušení. Může ji mít kterýkoli typ pleti.",
+          "example": "Pleť po celém dni v klimatizované kanceláři."
+        },
+        {
+          "type": "term",
+          "term": "Kuperóza",
+          "definition": "Trvale rozšířené drobné žilky (kapiláry), hlavně na tvářích a nose. Pleť je červená a citlivá na teplo. Píše se i couperóza.",
+          "example": "Jemné červené žilky na tvářích."
+        },
+        {
+          "type": "heading",
+          "text": "Postup diagnostiky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rozhovor: anamnéza a přání klientky.",
+            "Odlíčení a očištění pleti.",
+            "Prohlídka pod lupou s osvětlením.",
+            "Pohmat: pružnost, hladkost, napětí.",
+            "Test na maz: papírek nebo kapesníček na čelo, nos a tváře.",
+            "Určení typu a stavu pleti a zápis do karty klientky.",
+            "Kontrola, jestli něco nebrání ošetření (kontraindikace)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Stavy pleti"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**citlivá**: snadno zčervená, pálí, svědí, reaguje na přípravky",
+            "**dehydratovaná**: chybí voda, pne",
+            "**kuperózní**: rozšířené žilky",
+            "**aknózní**: komedony (černé tečky), pupínky, záněty",
+            "**zralá**: ztráta pružnosti, vrásky, pigmentové skvrny"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co je typ pleti a co stav pleti."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "typ pleti",
+              "stav pleti"
+            ],
+            "items": [
+              {
+                "text": "normální",
+                "group": 0
+              },
+              {
+                "text": "suchá",
+                "group": 0
+              },
+              {
+                "text": "mastná",
+                "group": 0
+              },
+              {
+                "text": "smíšená",
+                "group": 0
+              },
+              {
+                "text": "dehydratovaná",
+                "group": 1
+              },
+              {
+                "text": "citlivá",
+                "group": 1
+              },
+              {
+                "text": "kuperózní",
+                "group": 1
+              },
+              {
+                "text": "aknózní",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Papírek přitisknutý na čelo a nos je mastný, na tvářích zůstal suchý. Co zapíšeš?",
+          "answer": "Maz je jen v T-zóně → typ **smíšená pleť**. Pak ještě posoudíš stav (pnutí, šupinky, žilky…)."
+        },
+        {
+          "type": "example",
+          "question": "Klientka má na tvářích červené žilky a po napaření jí pleť zrudne a pálí. Na co si dáš pozor?",
+          "answer": "Jde o **kuperózní a citlivou pleť**. Vynecháš silné teplo (dlouhé napařování), intenzivní masáž tvářím a dráždivé přípravky. Vybereš šetrné, zklidňující ošetření."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Typ pleti určím hned po příchodu klientky, i když je nalíčená.",
+          "right": "Nejdřív pleť odlíčím a očistím, teprve pak ji posuzuji.",
+          "why": "Make-up a pudr zakryjí lesk, póry, šupinky i zarudnutí, takže by diagnóza byla chybná."
+        },
+        {
+          "type": "summary",
+          "text": "Typ pleti (normální, suchá, mastná, smíšená) určuje množství mazu. Stav (dehydratovaná, citlivá, kuperózní, aknózní, zralá) se může měnit. Diagnostika probíhá na očištěné pleti a končí zápisem do karty."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která oblast tvoří T-zónu?",
+      "options": [
+        "čelo, nos, brada",
+        "tváře a krk",
+        "oční okolí",
+        "dekolt a krk"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Pleť má lesklou T-zónu a normální tváře. Jaký je to typ?",
+      "options": [
+        "smíšená",
+        "mastná",
+        "suchá",
+        "normální"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnej, jestli je mastná celá pleť, nebo jen část."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mastná pleť může být zároveň dehydratovaná.",
+      "answer": true,
+      "explanation": "Maz je tuk, dehydratace je nedostatek vody. Mastná pleť může mít obojí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pleť se posuzuje nejlépe, dokud je klientka nalíčená, aby byla vidět její běžná podoba.",
+      "answer": false,
+      "explanation": "Make-up zakryje lesk, póry i zarudnutí. Pleť se posuzuje odlíčená."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jedním slovem jmenují údaje, které kosmetička zjistí rozhovorem (zdraví, léky, alergie)?",
+      "answers": [
+        "anamnéza",
+        "anamneza"
+      ],
+      "hints": [
+        "Stejné slovo používá i lékař."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje stav pleti s trvale rozšířenými drobnými žilkami na tvářích?",
+      "answers": [
+        "kuperóza",
+        "couperóza",
+        "kuperoza",
+        "couperoza",
+        "kuperózní",
+        "couperózní"
+      ],
+      "hints": [
+        "Žilky jsou vidět hlavně na tvářích a nose a pleť je citlivá na teplo."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky diagnostiky pleti.",
+      "items": [
+        "rozhovor s klientkou",
+        "odlíčení a očištění",
+        "prohlídka pod lupou",
+        "pohmat",
+        "zápis do karty klientky"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ pleti s typickým projevem.",
+      "pairs": [
+        [
+          "normální",
+          "matná, jemné póry"
+        ],
+        [
+          "suchá",
+          "pnutí a šupinky"
+        ],
+        [
+          "mastná",
+          "lesk a rozšířené póry"
+        ],
+        [
+          "smíšená",
+          "mastná jen T-zóna"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je typ pleti, ne stav?",
+      "options": [
+        "suchá",
+        "dehydratovaná",
+        "citlivá",
+        "aknózní"
+      ],
+      "answer": 0,
+      "explanation": "Suchá pleť má málo mazu (typ). Ostatní jsou stavy, které se mohou měnit."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží při diagnostice lampa s lupou?",
+      "options": [
+        "k podrobné prohlídce pórů, šupinek a žilek",
+        "k ohřátí pleti před masáží",
+        "ke sterilizaci nástrojů",
+        "k vysušení pleti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Údaje o zdraví klientky v kartě jsou citlivé a kosmetička je nesmí ukazovat jiným lidem.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi typem a stavem pleti? Uveď příklady.",
+      "answer": "Typ pleti je daný hlavně množstvím mazu a mění se pomalu (normální, suchá, mastná, smíšená). Stav pleti je aktuální a může se rychle měnit, například dehydratovaná, citlivá nebo kuperózní pleť."
+    },
+    {
+      "type": "open",
+      "question": "Popiš postup diagnostiky pleti.",
+      "answer": "Nejdřív rozhovor (anamnéza), pak odlíčení a očištění, prohlídka pod lupou s osvětlením a pohmat. Určím typ a stav pleti, zkontroluji kontraindikace a vše zapíšu do karty klientky."
+    }
+  ]
+}

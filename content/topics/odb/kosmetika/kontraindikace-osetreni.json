@@ -1,0 +1,402 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "kontraindikace-osetreni",
+  "title": "Kontraindikace kosmetických ošetření",
+  "emoji": "⛔",
+  "explanations": [
+    {
+      "title": "Semafor",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kamarád má chřipku a horečku. Nikdo by ho neposlal běhat maraton. Některé stavy prostě nějakou činnost zakazují."
+        },
+        {
+          "type": "text",
+          "text": "V kosmetice je to stejné. Některé nemoci nebo stavy kůže ošetření zakazují nebo omezují. Kosmetička je musí poznat dřív, než začne. Jinak by mohla klientce ublížit nebo přenést nemoc na další lidi."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kontraindikace",
+          "definition": "Důvod, proč se ošetření **nesmí** udělat, nebo se musí upravit.",
+          "example": "Opar na rtu je kontraindikace ošetření v okolí úst."
+        },
+        {
+          "type": "term",
+          "term": "Absolutní kontraindikace",
+          "definition": "Ošetření se nedělá vůbec, dokud stav trvá. Červená na semaforu.",
+          "example": "Horečka, infekční onemocnění kůže v ošetřované oblasti."
+        },
+        {
+          "type": "term",
+          "term": "Relativní kontraindikace",
+          "definition": "Ošetření jde udělat jen upravené: jinou metodou, mimo postižené místo, šetrněji, případně po souhlasu lékaře. Oranžová na semaforu.",
+          "example": "U kuperózní pleti se vynechá silné teplo a intenzivní masáž tváří."
+        },
+        {
+          "type": "term",
+          "term": "Infekční onemocnění",
+          "definition": "Nemoc, kterou způsobují mikroorganismy (viry, bakterie, plísně) a která se může přenést na jiného člověka.",
+          "example": "Opar (virus), impetigo (bakterie), plíseň (houba)."
+        },
+        {
+          "type": "heading",
+          "text": "Červená: neošetřuji"
+        },
+        {
+          "type": "list",
+          "items": [
+            "horečka, akutní nemoc (chřipka, angína)",
+            "infekční onemocnění kůže: opar, impetigo, plísně, bradavice v ošetřované oblasti",
+            "zánět spojivek při ošetření očí",
+            "čerstvé rány, popáleniny, otevřená kůže",
+            "rozsáhlý akutní zánět nebo neznámá vyrážka"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Oranžová: ošetřuji jen upraveně"
+        },
+        {
+          "type": "list",
+          "items": [
+            "citlivá a kuperózní pleť (bez silného tepla a dráždění)",
+            "alergie na některou látku (vynechat ji, u barvení test)",
+            "těhotenství (vynechat přístroje s elektrickým proudem a některé účinné látky)",
+            "cukrovka (opatrně kvůli horšímu hojení)",
+            "užívání léků, které zcitlivují kůži"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Zkus rozhodnout, jestli stav ošetření úplně zakazuje, nebo jen omezuje."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "neošetřuji (absolutní)",
+              "ošetřuji upraveně (relativní)"
+            ],
+            "items": [
+              {
+                "text": "horečka",
+                "group": 0
+              },
+              {
+                "text": "opar v ošetřované oblasti",
+                "group": 0
+              },
+              {
+                "text": "impetigo",
+                "group": 0
+              },
+              {
+                "text": "čerstvá rána v místě ošetření",
+                "group": 0
+              },
+              {
+                "text": "kuperóza",
+                "group": 1
+              },
+              {
+                "text": "citlivá pleť",
+                "group": 1
+              },
+              {
+                "text": "cukrovka",
+                "group": 1
+              },
+              {
+                "text": "těhotenství u masky",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klientka přijde na čištění pleti a na horním rtu má puchýřky s krustou. Říká, že to je „jen opar“. Co uděláš?",
+          "answer": "Opar způsobuje **virus** a je nakažlivý. Ošetření obličeje **odložíš**. Klientce vysvětlíš proč a doporučíš lékárnu nebo lékaře. Nástroje i plochy, kterých se dotkla, vydezinfikuješ."
+        },
+        {
+          "type": "example",
+          "question": "Klientka má kardiostimulátor a chce galvanickou žehličku na pleť. Co uděláš?",
+          "answer": "Galvanizace pracuje s **elektrickým proudem**. Kardiostimulátor je kontraindikace elektroterapie, proto přístroj **nepoužiješ**. Nabídneš ruční ošetření bez proudu (masku, masáž)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Klientka trvá na ošetření, tak ho přes opar udělám, je to její rozhodnutí.",
+          "right": "Při absolutní kontraindikaci ošetření odmítnu a vysvětlím proč.",
+          "why": "Ohrozila bych zdraví klientky i dalších lidí. Za ošetření odpovídá kosmetička."
+        },
+        {
+          "type": "summary",
+          "text": "Kontraindikace je důvod ošetření neudělat nebo ho upravit. Absolutní (horečka, infekce kůže, rány) = neošetřuji. Relativní (kuperóza, alergie, těhotenství, cukrovka) = ošetřuji upraveně. Kosmetička nediagnostikuje nemoci, při podezření posílá k lékaři."
+        }
+      ]
+    },
+    {
+      "title": "Místo a celek",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kosmetička není lékař. Nemoci neléčí a nestanovuje. Musí ale poznat, kdy je ošetření nebezpečné, a umět klientku poslat k lékaři."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kontraindikace",
+          "definition": "Stav, kvůli kterému se ošetření nesmí udělat nebo se musí změnit.",
+          "example": "Zánět spojivek zakazuje barvení řas."
+        },
+        {
+          "type": "term",
+          "term": "Místní kontraindikace",
+          "definition": "Problém je jen na určitém místě. Ošetření toho místa se nedělá, jinde to jít může.",
+          "example": "Bradavice na krku: krk vynecháš, obličej ošetříš."
+        },
+        {
+          "type": "term",
+          "term": "Celková kontraindikace",
+          "definition": "Problém se týká celého těla. Ošetření se nedělá vůbec nebo jen některé jeho části.",
+          "example": "Horečka, celková infekční nemoc."
+        },
+        {
+          "type": "term",
+          "term": "Elektroterapie",
+          "definition": "Ošetření s elektrickým proudem (například galvanizace, darsonvalizace).",
+          "example": "Galvanická žehlička zapravuje účinné látky do pleti."
+        },
+        {
+          "type": "heading",
+          "text": "Kožní infekce, které musíš poznat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Onemocnění",
+            "Původce",
+            "Jak vypadá"
+          ],
+          "rows": [
+            [
+              "opar",
+              "virus",
+              "skupinka puchýřků, často na rtu, pak krusta"
+            ],
+            [
+              "impetigo",
+              "bakterie",
+              "červená místa s medově žlutými krustami"
+            ],
+            [
+              "plísňové onemocnění",
+              "houba (plíseň, kvasinka)",
+              "červená, svědivá, šupinatá ložiska"
+            ],
+            [
+              "bradavice",
+              "virus",
+              "tvrdé drobné výrůstky na kůži"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všechna jsou **nakažlivá**. V místě ošetření jsou absolutní kontraindikací. Klientku pošli k lékaři."
+        },
+        {
+          "type": "heading",
+          "text": "Přístroje: zvláštní pravidla"
+        },
+        {
+          "type": "text",
+          "text": "U elektroterapie platí další kontraindikace: **kardiostimulátor**, kovové implantáty v ošetřované oblasti, **těhotenství**, epilepsie, nádorové onemocnění, poškozená kůže a horečka. Vždy se řiď i návodem výrobce přístroje."
+        },
+        {
+          "type": "heading",
+          "text": "Jak postupovat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Při rozhovoru se zeptej na zdraví, léky, alergie, těhotenství a kardiostimulátor.",
+            "Prohlédni očištěnou pleť pod lupou.",
+            "Rozhodni: je kontraindikace? Místní, nebo celková? Absolutní, nebo relativní?",
+            "Uprav nebo odlož ošetření a klientce vlídně vysvětli proč.",
+            "Při podezření na nemoc doporuč lékaře (praktického nebo dermatologa).",
+            "Zapiš vše do karty klientky."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klientka chce depilaci horní části nohou voskem. Na lýtku má výrazné křečové žíly. Co uděláš?",
+          "answer": "Křečové žíly (varixy) jsou **místní** kontraindikace pro vosk. Lýtko s žilami **vynecháš**, ostatní místa ošetřit můžeš, pokud tam kůže není poškozená."
+        },
+        {
+          "type": "example",
+          "question": "Klientka má zarudlé, slzící a lepkavé oko a chce barvit řasy. Co uděláš?",
+          "answer": "Jde nejspíš o **zánět spojivek** a ten je nakažlivý. Barvení řas odložíš a doporučíš lékaře. Odhad nemoci neříkáš jako diagnózu, jen důvod, proč ošetřit nelze."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kosmetička klientce řekne: „Máte impetigo, namažte si to antibiotickou mastí.“",
+          "right": "Kosmetička řekne: „Tohle místo dnes ošetřit nemohu, doporučuji ukázat ho lékaři.“",
+          "why": "Stanovit nemoc a předepsat léčbu smí jen lékař. Kosmetička rozpozná riziko a odešle."
+        },
+        {
+          "type": "summary",
+          "text": "Místní kontraindikace omezí ošetření jen na jednom místě, celková celé ošetření. Infekční kožní nemoci (opar, impetigo, plísně, bradavice) se v ošetřované oblasti neošetřují. U přístrojů s proudem platí navíc kardiostimulátor, implantáty, těhotenství a epilepsie."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená kontraindikace?",
+      "options": [
+        "důvod ošetření neudělat nebo ho upravit",
+        "doporučení, jaký krém koupit",
+        "druh masky",
+        "postup ošetření"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Opar na rtu je nakažlivý a v ošetřované oblasti je absolutní kontraindikací.",
+      "answer": true,
+      "explanation": "Opar způsobuje virus a snadno se přenáší."
+    },
+    {
+      "type": "choice",
+      "question": "Která kontraindikace patří mezi celkové?",
+      "options": [
+        "horečka",
+        "bradavice na krku",
+        "modřina na tváři",
+        "křečová žíla na lýtku"
+      ],
+      "answer": 0,
+      "explanation": "Horečka se týká celého těla, ostatní jsou omezené na jedno místo."
+    },
+    {
+      "type": "match",
+      "question": "Spoj onemocnění s jeho původcem.",
+      "pairs": [
+        [
+          "opar",
+          "virus"
+        ],
+        [
+          "impetigo",
+          "bakterie"
+        ],
+        [
+          "plíseň kůže",
+          "houba"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má kardiostimulátor. Co nesmíš použít?",
+      "options": [
+        "galvanizaci",
+        "jílovou masku",
+        "odlíčení mlékem",
+        "ruční masáž dekoltu"
+      ],
+      "answer": 0,
+      "hints": [
+        "Uvažuj, co by mohlo rušit přístroj v těle."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje kontraindikace, při které ošetření jde udělat, ale jen upravené? Napiš jedno přídavné jméno.",
+      "answers": [
+        "relativní",
+        "relativni"
+      ],
+      "hints": [
+        "Opak je absolutní."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kosmetička smí klientce určit nemoc a doporučit konkrétní lék na předpis.",
+      "answer": false,
+      "explanation": "Diagnózu a léčbu určuje lékař. Kosmetička doporučí návštěvu lékaře."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup, když u klientky najdeš podezřelou vyrážku.",
+      "items": [
+        "přerušit nebo neprovést ošetření v tom místě",
+        "vlídně vysvětlit důvod",
+        "doporučit lékaře",
+        "vydezinfikovat pomůcky a plochy",
+        "zapsat do karty"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka s kuperózou chce ošetření pleti. Co je správně?",
+      "options": [
+        "ošetřit šetrně bez silného tepla",
+        "odmítnout jakékoli ošetření",
+        "napařovat co nejdéle",
+        "udělat silnou masáž tváří"
+      ],
+      "answer": 0,
+      "explanation": "Kuperóza je relativní kontraindikace: teplo a silné dráždění vynechat."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bradavice na krku zakazuje ošetření celého obličeje.",
+      "answer": false,
+      "explanation": "Je to místní kontraindikace: vynechá se jen postižené místo, nástroje se nesmí bradavice dotknout."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje bakteriální kožní infekce s medově žlutými krustami?",
+      "answers": [
+        "impetigo"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi absolutní a relativní kontraindikací a uveď příklad každé.",
+      "answer": "Při absolutní kontraindikaci se ošetření nedělá vůbec, například při horečce nebo oparu v ošetřované oblasti. Při relativní se ošetření upraví, například u kuperózní pleti bez tepla a silné masáže."
+    },
+    {
+      "type": "open",
+      "question": "Na co se zeptáš klientky před ošetřením přístrojem s elektrickým proudem?",
+      "answer": "Na kardiostimulátor, kovové implantáty, těhotenství, epilepsii, nádorová onemocnění, akutní nemoc nebo horečku a na stav kůže v ošetřované oblasti."
+    }
+  ]
+}
