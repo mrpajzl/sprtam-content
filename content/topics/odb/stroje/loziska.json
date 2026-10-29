@@ -1,0 +1,485 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "loziska",
+  "title": "Ložiska kluzná a valivá",
+  "emoji": "🛞",
+  "explanations": [
+    {
+      "title": "Proč se točí lehce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Roztoč kolo obráceného jízdního kola. Točí se dlouho, skoro bez odporu. Uvnitř náboje jsou **ložiska**: kuličky, které se odvalují místo toho, aby se díly o sebe třely."
+        },
+        {
+          "type": "text",
+          "text": "Ložisko podpírá hřídel, nese jeho zatížení a umožní otáčení s malým třením. Je v každém motoru, pračce, kole i větráku počítače."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hřídel",
+          "definition": "Otáčející se tyč, která přenáší otáčení.",
+          "example": "Hřídel ventilátoru."
+        },
+        {
+          "type": "term",
+          "term": "Ložisko",
+          "definition": "Součást, ve které se hřídel otáčí. Nese zatížení a zmenšuje tření.",
+          "example": "Kuličkové ložisko v náboji kola."
+        },
+        {
+          "type": "term",
+          "term": "Kluzné ložisko",
+          "definition": "Hřídel **klouže** v pouzdře. Mezi nimi je tenká vrstva maziva (oleje), která díly oddělí.",
+          "example": "Ložiska klikového hřídele automobilového motoru."
+        },
+        {
+          "type": "term",
+          "term": "Valivé ložisko",
+          "definition": "Mezi dvěma kroužky se **odvalují** kuličky nebo válečky. Valení má mnohem menší odpor než smýkání.",
+          "example": "Kuličkové ložisko ve skateboardu."
+        },
+        {
+          "type": "heading",
+          "text": "Z čeho je valivé ložisko"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**vnitřní kroužek** – sedí na hřídeli a točí se s ním",
+            "**vnější kroužek** – sedí v tělese (domečku)",
+            "**valivá tělesa** – kuličky, válečky, kuželíky, soudečky nebo jehly",
+            "**klec** – drží valivá tělesa od sebe ve stejných rozestupech",
+            "**těsnění nebo kryty** – drží mazivo uvnitř a nečistoty venku"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ložiska se liší i tím, kterým směrem nesou sílu."
+        },
+        {
+          "type": "term",
+          "term": "Radiální a axiální ložisko",
+          "definition": "**Radiální** ložisko nese sílu kolmo na osu hřídele (do stran). **Axiální** nese sílu ve směru osy (tlačí podél hřídele).",
+          "example": "Kolo auta nese hlavně radiálně; točna otočné židle axiálně."
+        },
+        {
+          "type": "text",
+          "text": "Zkus každou vlastnost přiřadit správnému druhu ložiska."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "valivé",
+              "kluzné"
+            ],
+            "items": [
+              {
+                "text": "kuličky mezi kroužky",
+                "group": 0
+              },
+              {
+                "text": "klec",
+                "group": 0
+              },
+              {
+                "text": "pouzdro z bronzu",
+                "group": 1
+              },
+              {
+                "text": "olejová vrstva odděluje díly",
+                "group": 1
+              },
+              {
+                "text": "ložisko 6205",
+                "group": 0
+              },
+              {
+                "text": "dělená pánev klikového hřídele",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybrat"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Valivé",
+            "Kluzné"
+          ],
+          "rows": [
+            [
+              "tření při rozběhu",
+              "malé",
+              "větší"
+            ],
+            [
+              "hluk",
+              "větší",
+              "tichý chod"
+            ],
+            [
+              "rázy",
+              "snáší hůř",
+              "dobře tlumí"
+            ],
+            [
+              "údržba",
+              "často bez údržby, kupuje se hotové",
+              "potřebuje mazání"
+            ],
+            [
+              "dělené provedení",
+              "jen výjimečně",
+              "snadno (klikový hřídel)"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Proč má klikový hřídel motoru kluzná ložiska?",
+          "answer": "Klikový hřídel má zalomení, přes které by valivé ložisko nešlo nasadit. Kluzné ložisko jde **rozdělit** na dvě půlky. Navíc dobře snáší **rázy** od výbuchů ve válcích a má tlakové mazání olejem."
+        },
+        {
+          "type": "example",
+          "question": "Proč má skateboard valivá ložiska?",
+          "answer": "Potřebuje **malý odpor** a žádnou údržbu. Kuličky se valí, tření je malé a ložisko je uzavřené s mazivem na dlouho."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Valivé ložisko je vždy lepší než kluzné.",
+          "right": "Každé se hodí jinam: kluzné snáší rázy, je tiché a jde ho rozdělit.",
+          "why": "Proto mají motory aut na klikovém hřídeli kluzná ložiska, i když jsou valivá běžnější."
+        },
+        {
+          "type": "summary",
+          "text": "Ložisko nese hřídel a zmenšuje tření. V kluzném ložisku hřídel klouže po vrstvě maziva, ve valivém se odvalují kuličky nebo válečky mezi kroužky."
+        }
+      ]
+    },
+    {
+      "title": "Čtení označení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve stroji doslouží ložisko. Na kroužku je vyraženo **6205-2RS**. Podle toho koupíš přesně stejné. Musíš ale vědět, co čísla znamenají."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Valivé ložisko",
+          "definition": "Ložisko, kde se mezi vnitřním a vnějším kroužkem odvalují kuličky nebo válečky.",
+          "example": "Kuličkové ložisko 6205."
+        },
+        {
+          "type": "term",
+          "term": "Kluzné ložisko",
+          "definition": "Ložisko, kde hřídel klouže v pouzdře po vrstvě maziva.",
+          "example": "Bronzové pouzdro."
+        },
+        {
+          "type": "term",
+          "term": "Vrtání d",
+          "definition": "Vnitřní průměr ložiska – průměr hřídele, na který ložisko sedí.",
+          "example": "6205 má vrtání 25 mm."
+        },
+        {
+          "type": "term",
+          "term": "Rozměrová řada",
+          "definition": "Číslice, která říká, jak je ložisko při stejném vrtání **široké a mohutné**. Větší číslo = větší a únosnější ložisko.",
+          "example": "6205 je lehčí než 6305."
+        },
+        {
+          "type": "heading",
+          "text": "Základní označení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**První číslice** (nebo písmena) = typ ložiska. 6 = kuličkové jednořadé, 3 = kuželíkové, N = válečkové.",
+            "**Druhá číslice** = rozměrová řada (jak mohutné ložisko je).",
+            "**Poslední dvě číslice** = kód vrtání. Od 04 výš: kód × 5 = vrtání v mm.",
+            "Malá vrtání mají pevné kódy: 00 = 10 mm, 01 = 12 mm, 02 = 15 mm, 03 = 17 mm.",
+            "**Přípona** za pomlčkou: 2RS = pryžové těsnění z obou stran, 2Z = plechové kryty z obou stran, C3 = větší vnitřní vůle."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Co znamená 6205-2RS?",
+          "answer": "6 = kuličkové jednořadé. 2 = rozměrová řada. 05 · 5 = **vrtání 25 mm**. 2RS = těsnění z obou stran."
+        },
+        {
+          "type": "example",
+          "question": "Jaké vrtání má ložisko 6002?",
+          "answer": "Kód 02 je pevný: **15 mm**. (Nepočítá se 2 · 5!)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Číslo nebo písmena",
+            "Nese hlavně"
+          ],
+          "rows": [
+            [
+              "kuličkové jednořadé",
+              "6",
+              "radiálně, trochu i axiálně"
+            ],
+            [
+              "kuličkové s kosoúhlým stykem",
+              "7",
+              "radiálně i axiálně"
+            ],
+            [
+              "kuželíkové",
+              "3",
+              "velké radiální i axiální síly (náboje kol)"
+            ],
+            [
+              "válečkové",
+              "N, NU, NJ",
+              "velké radiální síly"
+            ],
+            [
+              "jehlové",
+              "NA",
+              "radiálně, málo místa"
+            ],
+            [
+              "axiální kuličkové",
+              "5",
+              "jen axiálně"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ložisko 6206 má vrtání ",
+                "after": " mm.",
+                "options": [
+                  "30",
+                  "26",
+                  "60"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ložisko 6201 má vrtání ",
+                "after": " mm.",
+                "options": [
+                  "12",
+                  "5",
+                  "11"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Přípona 2Z znamená ",
+                "after": ".",
+                "options": [
+                  "kovové kryty z obou stran",
+                  "dvě řady kuliček"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Trvanlivost"
+        },
+        {
+          "type": "term",
+          "term": "Základní trvanlivost L10",
+          "definition": "Počet milionů otáček, které vydrží 90 % ložisek. `L10 = (C / P)^p`, kde C je dynamická únosnost z katalogu, P zatížení a p = 3 pro kuličková, 10/3 pro válečková ložiska.",
+          "example": "C / P = 7 → L10 = 343 milionů otáček."
+        },
+        {
+          "type": "example",
+          "question": "Kuličkové ložisko má C = 14 kN (příklad z katalogu) a zatížení P = 2 kN. Jaká je trvanlivost v hodinách při 1 000 min⁻¹?",
+          "answer": "L10 = (14 / 2)³ = 343 mil. otáček. Za hodinu udělá 60 · 1 000 = 60 000 otáček. 343 000 000 / 60 000 ≈ **5 700 h**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ložisko 6201 má vrtání 5 mm (01 · 5).",
+          "right": "Kódy 00–03 jsou pevné: 01 = **12 mm**.",
+          "why": "Násobení pěti platí až od kódu 04."
+        },
+        {
+          "type": "summary",
+          "text": "Označení 6205: typ 6, řada 2, vrtání 05 · 5 = 25 mm. Kódy 00–03 znamenají 10, 12, 15, 17 mm. Trvanlivost kuličkového ložiska `L10 = (C/P)³` milionů otáček."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co dělá klec valivého ložiska?",
+      "options": [
+        "drží valivá tělesa v rozestupech",
+        "nese zatížení",
+        "těsní mazivo",
+        "spojuje kroužky natvrdo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kluzné ložisko dobře tlumí rázy.",
+      "answer": true,
+      "explanation": "Olejová vrstva rázy tlumí, proto je v motorech na klikovém hřídeli."
+    },
+    {
+      "type": "input",
+      "question": "Jaké vrtání v mm má ložisko 6208?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "08 · 5 = 40 mm.",
+      "hints": [
+        "Poslední dvě číslice jsou kód vrtání.",
+        "Od kódu 04 se násobí stejným číslem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké vrtání v mm má ložisko 6003?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "Kód 03 je pevný: 17 mm.",
+      "hints": [
+        "Kódy 00 až 03 se nenásobí."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená první číslice 6 v označení 6205?",
+      "options": [
+        "kuličkové jednořadé ložisko",
+        "vrtání 6 mm",
+        "šest kuliček",
+        "rozměrová řada 6"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj příponu s významem.",
+      "pairs": [
+        [
+          "2RS",
+          "pryžové těsnění z obou stran"
+        ],
+        [
+          "2Z",
+          "plechové kryty z obou stran"
+        ],
+        [
+          "C3",
+          "větší vnitřní vůle"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které ložisko nese jen sílu ve směru osy?",
+      "options": [
+        "axiální kuličkové",
+        "kuličkové jednořadé",
+        "válečkové NU",
+        "jehlové"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ložisko 6305 má stejné vrtání jako 6205, ale je mohutnější.",
+      "answer": true,
+      "explanation": "Obě mají vrtání 25 mm, řada 3 je těžší než řada 2."
+    },
+    {
+      "type": "input",
+      "question": "Kuličkové ložisko: C / P = 5. Kolik milionů otáček je základní trvanlivost L10?",
+      "answers": [
+        "125"
+      ],
+      "explanation": "L10 = 5³ = 125 milionů otáček.",
+      "hints": [
+        "U kuličkových ložisek je exponent 3."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč má klikový hřídel motoru kluzná ložiska?",
+      "options": [
+        "jdou rozdělit a snášejí rázy",
+        "jsou levnější než šrouby",
+        "nepotřebují olej",
+        "mají nejmenší tření při rozběhu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části valivého ložiska od hřídele ven.",
+      "items": [
+        "vnitřní kroužek",
+        "valivá tělesa v kleci",
+        "vnější kroužek",
+        "těleso (domeček)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které ložisko se hodí do náboje kola auta, kde působí velké radiální i axiální síly?",
+      "options": [
+        "kuželíkové",
+        "axiální kuličkové",
+        "jehlové",
+        "kluzné pouzdro z plastu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Porovnej kluzné a valivé ložisko.",
+      "answer": "Valivé má malé tření i při rozběhu, nepotřebuje skoro žádnou údržbu a kupuje se hotové. Kluzné je tišší, lépe tlumí rázy a jde rozdělit, ale potřebuje dobré mazání a při rozběhu má větší tření."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak přečteš označení 6206-2Z.",
+      "answer": "6 je kuličkové jednořadé ložisko, 2 je rozměrová řada, 06 · 5 = vrtání 30 mm. 2Z znamená plechové kryty z obou stran."
+    }
+  ]
+}

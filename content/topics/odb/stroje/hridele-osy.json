@@ -1,0 +1,438 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "hridele-osy",
+  "title": "Hřídele a osy",
+  "emoji": "🔄",
+  "explanations": [
+    {
+      "title": "Kolo a motor",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kolo na vozíku se otáčí kolem tyče, která jen nese jeho váhu. Motor vrtačky ale tyčí **otáčí** a přenáší na sklíčidlo sílu, která vrtá. To jsou dva různé díly: **osa** a **hřídel**."
+        },
+        {
+          "type": "text",
+          "text": "Hřídele jsou v každém stroji s motorem. Když se zlomí, stroj stojí. Proto se musí správně tvarovat i spočítat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment Mk",
+          "definition": "Míra otáčivého účinku: síla krát rameno, jednotka N·m. Čím větší, tím víc hřídel „kroutí“.",
+          "example": "Utahuješ matici klíčem 0,2 m silou 100 N: moment 20 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Osa",
+          "definition": "Součást, která **nese** otáčející se díly, ale **nepřenáší krouticí moment**. Namáhá se hlavně ohybem.",
+          "example": "Osa kola přívěsu, osa kladky."
+        },
+        {
+          "type": "term",
+          "term": "Hřídel",
+          "definition": "Součást, která se otáčí a **přenáší krouticí moment** z jednoho dílu na druhý. Namáhá se krutem a obvykle i ohybem.",
+          "example": "Hřídel elektromotoru, klikový hřídel motoru auta."
+        },
+        {
+          "type": "term",
+          "term": "Čep hřídele",
+          "definition": "Část hřídele, kterou hřídel sedí v ložisku.",
+          "example": "Konec hřídele motoru v kuličkovém ložisku."
+        },
+        {
+          "type": "heading",
+          "text": "Jak hřídel vypadá"
+        },
+        {
+          "type": "text",
+          "text": "Hřídel je skoro vždy **osazený**: má několik průměrů za sebou. Na osazení se opřou ložiska, kola i řemenice, takže nesjedou."
+        },
+        {
+          "type": "term",
+          "term": "Osazení a zápich",
+          "definition": "**Osazení** je schod mezi dvěma průměry. **Zápich** je úzká drážka kolem hřídele, třeba pro pojistný kroužek nebo pro výběh nástroje.",
+          "example": "Ložisko je přitlačené k osazení a zajištěné kroužkem v zápichu."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**hladký** – jeden průměr, jednoduchý",
+            "**osazený** – několik průměrů, nejčastější",
+            "**klikový** – mění přímočarý pohyb pístů na otáčení",
+            "**dutý** – lehčí, uvnitř může vést olej nebo kabel",
+            "**ohebný** – spirála z drátů, pohon do těžko dostupných míst"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proč se hřídele lámou"
+        },
+        {
+          "type": "text",
+          "text": "Ostrý roh v osazení nebo drážka soustředí napětí do jednoho místa. Odtud se začne šířit trhlina. Proto mají přechody průměrů **zaoblení**."
+        },
+        {
+          "type": "term",
+          "term": "Vrub",
+          "definition": "Místo náhlé změny tvaru (ostrý roh, drážka, díra), kde napětí prudce vzroste.",
+          "example": "Hřídel se ulomí přesně v ostrém rohu osazení."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď příklady a vlastnosti: patří k ose, nebo k hřídeli?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "osa",
+              "hřídel"
+            ],
+            "items": [
+              {
+                "text": "osa kola přívěsu",
+                "group": 0
+              },
+              {
+                "text": "kladka jeřábu na pevném čepu",
+                "group": 0
+              },
+              {
+                "text": "hřídel elektromotoru",
+                "group": 1
+              },
+              {
+                "text": "klikový hřídel",
+                "group": 1
+              },
+              {
+                "text": "přenáší krouticí moment",
+                "group": 1
+              },
+              {
+                "text": "nese, ale nepohání",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Je zadní kolo jízdního kola na ose, nebo na hřídeli?",
+          "answer": "Náboj zadního kola se otáčí na **ose**, která stojí v rámu. Moment z řetězu nepřenáší osa, ale pastorek přímo na náboj. Osa jen nese."
+        },
+        {
+          "type": "example",
+          "question": "Proč má hřídel v rohu osazení zaoblení, a ne ostrý roh?",
+          "answer": "Ostrý roh je **vrub**: napětí se v něm nahromadí a začne tam trhlina. Zaoblení napětí rozloží a hřídel vydrží déle."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Osa i hřídel jsou totéž, jen jinak řečeno.",
+          "right": "**Osa** nepřenáší krouticí moment, jen nese. **Hřídel** krouticí moment přenáší.",
+          "why": "Rozdíl rozhoduje o výpočtu: osa se počítá na ohyb, hřídel na krut a ohyb."
+        },
+        {
+          "type": "summary",
+          "text": "Osa nese a nepřenáší moment, hřídel přenáší krouticí moment. Hřídele bývají osazené; přechody se zaoblují, protože ostré rohy (vruby) způsobují lomy."
+        }
+      ]
+    },
+    {
+      "title": "Návrh hřídele",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš motor 5 kW s 1 450 otáčkami za minutu. Jak tlustý hřídel potřebuješ, aby se nezkroutil? Tento výpočet dělá konstruktér u každého pohonu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hřídel a osa",
+          "definition": "**Hřídel** se otáčí a přenáší krouticí moment. **Osa** jen nese otáčející se díly a moment nepřenáší.",
+          "example": "Hřídel motoru vs. osa kladky."
+        },
+        {
+          "type": "term",
+          "term": "Výkon P",
+          "definition": "Kolik práce stroj udělá za sekundu. Jednotka watt (W), 1 kW = 1 000 W.",
+          "example": "Motor 5 kW."
+        },
+        {
+          "type": "term",
+          "term": "Úhlová rychlost ω (omega)",
+          "definition": "Jak rychle se něco otáčí, v radiánech za sekundu: `ω = 2 · π · n`, kde n jsou otáčky za sekundu.",
+          "example": "1 450 min⁻¹ = 24,17 s⁻¹, ω = 151,8 rad/s."
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment Mk",
+          "definition": "Otáčivý účinek v N·m. Z výkonu: `Mk = P / ω`.",
+          "example": "5 000 W / 151,8 rad/s ≈ 32,9 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Napětí v krutu τk",
+          "definition": "Jak moc je materiál hřídele namáhaný zkroucením: `τk = Mk / Wk`, kde `Wk = π · d³ / 16` je průřezový modul v krutu plného kruhu.",
+          "example": "Větší průměr = mnohem menší napětí (roste s d³)."
+        },
+        {
+          "type": "heading",
+          "text": "Postup návrhu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Převeď otáčky na s⁻¹: n [min⁻¹] / 60.",
+            "Spočítej úhlovou rychlost `ω = 2 · π · n`.",
+            "Spočítej krouticí moment `Mk = P / ω`.",
+            "Z podmínky `τk = Mk / Wk ≤ τD` vyjádři průměr: `d = ∛(16 · Mk / (π · τD))`.",
+            "Zaokrouhli **nahoru** na normalizovaný průměr a připočti hloubku drážky pro pero."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Motor 5 kW, 1 450 min⁻¹. Dovolené napětí v krutu τD = 30 MPa. Jaký průměr hřídele?",
+          "answer": "n = 1 450 / 60 = 24,17 s⁻¹. ω = 2π · 24,17 = 151,8 rad/s. Mk = 5 000 / 151,8 = 32,9 N·m = 32 900 N·mm. d = ∛(16 · 32 900 / (π · 30)) = ∛5 585 ≈ 17,8 mm. Zvolíme **d = 20 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel d = 25 mm přenáší Mk = 50 N·m. Jaké je napětí v krutu?",
+          "answer": "Wk = π · 25³ / 16 = 3 068 mm³. τk = 50 000 / 3 068 ≈ **16,3 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "Čím se ještě hřídel kontroluje"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kontrola",
+            "Proč"
+          ],
+          "rows": [
+            [
+              "pevnost v krutu a ohybu",
+              "aby se nezlomil"
+            ],
+            [
+              "zkroucení (úhel)",
+              "aby se dlouhý hřídel nezkroutil moc – vadí to u přesných pohonů"
+            ],
+            [
+              "průhyb",
+              "aby se ozubená kola správně zabírala a ložiska se nezatěžovala šikmo"
+            ],
+            [
+              "kritické otáčky",
+              "aby se hřídel při provozních otáčkách nerozkmital (rezonance)"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Materiál hřídelů",
+          "definition": "Nejčastěji konstrukční ocel, např. **11 600** nebo **12 050** podle ČSN. Namáhané hřídele se zušlechťují (kalení a popouštění).",
+          "example": "Hřídel převodovky z oceli 12 050, zušlechtěný."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "N·m",
+            "items": [
+              {
+                "label": "5 kW, 2 900 min⁻¹",
+                "value": 16.5
+              },
+              {
+                "label": "5 kW, 1 450 min⁻¹",
+                "value": 32.9
+              },
+              {
+                "label": "5 kW, 960 min⁻¹",
+                "value": 49.7
+              },
+              {
+                "label": "5 kW, 700 min⁻¹",
+                "value": 68.2
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Graf ukazuje stejný výkon při různých otáčkách. Všimni si: čím **pomaleji** se hřídel točí, tím **větší** moment přenáší, a tím musí být tlustší."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když hřídel vychází na 17,8 mm, zvolím 17 mm.",
+          "right": "Průměr se vždy zaokrouhluje **nahoru** na normalizovanou hodnotu (zde 20 mm).",
+          "why": "Menší průměr by měl větší napětí, než je dovolené."
+        },
+        {
+          "type": "summary",
+          "text": "Mk = P / ω, kde ω = 2πn. Napětí v krutu τk = Mk / Wk, Wk = πd³/16. Průměr hřídele se z pevnostní podmínky zaokrouhlí nahoru."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která součást přenáší krouticí moment?",
+      "options": [
+        "hřídel",
+        "osa",
+        "obě",
+        "ani jedna"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Osa se namáhá hlavně ohybem.",
+      "answer": true,
+      "explanation": "Nese otáčející se díly, moment nepřenáší."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje schod mezi dvěma průměry hřídele?",
+      "options": [
+        "osazení",
+        "zápich",
+        "drážka",
+        "čep"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč se přechody průměrů zaoblují?",
+      "options": [
+        "zmenší se koncentrace napětí ve vrubu",
+        "lépe to vypadá",
+        "hřídel je lehčí",
+        "lépe se maže"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Převeď 1 500 min⁻¹ na otáčky za sekundu.",
+      "answers": [
+        "25"
+      ],
+      "explanation": "1 500 / 60 = 25 s⁻¹."
+    },
+    {
+      "type": "input",
+      "question": "Motor má výkon 3 000 W a úhlovou rychlost 100 rad/s. Jaký je krouticí moment v N·m?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "Mk = P / ω = 3 000 / 100 = 30 N·m.",
+      "hints": [
+        "Moment = výkon / úhlová rychlost."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní napětí v krutu, když zdvojnásobíš průměr hřídele?",
+      "options": [
+        "klesne 8krát",
+        "klesne 2krát",
+        "klesne 4krát",
+        "nezmění se"
+      ],
+      "answer": 0,
+      "explanation": "Wk roste s d³, takže 2³ = 8."
+    },
+    {
+      "type": "input",
+      "question": "Hřídel přenáší Mk = 60 000 N·mm a má Wk = 3 000 mm³. Jaké je napětí v krutu v MPa?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "τk = 60 000 / 3 000 = 20 MPa."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejném výkonu přenáší pomaleji se točící hřídel větší krouticí moment.",
+      "answer": true,
+      "explanation": "Mk = P / ω – menší ω, větší Mk."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh hřídele s použitím.",
+      "pairs": [
+        [
+          "klikový",
+          "motor s písty"
+        ],
+        [
+          "ohebný",
+          "pohon do těžko dostupného místa"
+        ],
+        [
+          "dutý",
+          "lehký, uvnitř olej nebo kabel"
+        ],
+        [
+          "osazený",
+          "běžný hřídel převodovky"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky návrhu průměru hřídele.",
+      "items": [
+        "převést otáčky na s⁻¹",
+        "spočítat ω",
+        "spočítat Mk = P / ω",
+        "vyjádřit d z pevnostní podmínky",
+        "zaokrouhlit nahoru"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vypočítaný průměr hřídele je 22,3 mm. Co zvolíš?",
+      "options": [
+        "nejbližší vyšší normalizovaný průměr, např. 25 mm",
+        "22 mm",
+        "20 mm",
+        "22,3 mm přesně"
+      ],
+      "answer": 0,
+      "explanation": "Zaokrouhluje se vždy nahoru."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi osou a hřídelem.",
+      "answer": "Osa nese otáčející se díly, ale krouticí moment nepřenáší, proto se počítá hlavně na ohyb. Hřídel se otáčí a přenáší krouticí moment, počítá se na krut a obvykle i ohyb."
+    },
+    {
+      "type": "open",
+      "question": "Proč se hřídel často zlomí v osazení a jak tomu předejít?",
+      "answer": "Ostrý roh v osazení je vrub, ve kterém se napětí soustředí, a tam začíná únavová trhlina. Předchází se tomu zaoblením přechodu, plynulejší změnou průměru a kvalitním povrchem."
+    }
+  ]
+}

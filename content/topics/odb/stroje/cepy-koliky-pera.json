@@ -1,0 +1,454 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cepy-koliky-pera",
+  "title": "Čepy, kolíky, pera a drážkování",
+  "emoji": "📌",
+  "explanations": [
+    {
+      "title": "Kde je potkáš",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Podívej se na kloub bagrového ramena, na řemenici na hřídeli motoru nebo na převodovku auta. Díly v nich drží pohromadě malé součásti: **čepy, kolíky, pera a drážkování**."
+        },
+        {
+          "type": "text",
+          "text": "Spojují díly tvarem: jeden díl zapadne do druhého. Jde je rozebrat, a proto patří mezi **rozebíratelné spoje**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozebíratelný spoj",
+          "definition": "Spoj, který jde rozebrat a znovu složit bez zničení dílů.",
+          "example": "Kolík jde vyrazit trnem a znovu zarazit."
+        },
+        {
+          "type": "term",
+          "term": "Hřídel a náboj",
+          "definition": "**Hřídel** je otáčející se tyč, která přenáší otáčení. **Náboj** je střední část kola nebo řemenice, která na hřídeli sedí.",
+          "example": "Řemenice sedí nábojem na hřídeli elektromotoru."
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment",
+          "definition": "Míra toho, jak silně něco otáčí. Je to síla krát rameno, jednotka N·m.",
+          "example": "Motor auta má krouticí moment například 250 N·m."
+        },
+        {
+          "type": "heading",
+          "text": "Čep: kloub, který se otáčí"
+        },
+        {
+          "type": "term",
+          "term": "Čep",
+          "definition": "Válcová součást, která spojuje díly **otočně** – jako kloub. Proti vypadnutí se pojistí závlačkou nebo pojistným kroužkem.",
+          "example": "Čep v kloubu ramene bagru, čep řetězu jízdního kola."
+        },
+        {
+          "type": "term",
+          "term": "Pojistný kroužek",
+          "definition": "Pružný ocelový kroužek, který zapadne do drážky (zápichu) na čepu nebo v díře a nedovolí součásti vyjet do strany.",
+          "example": "Kroužek na konci čepu ramene sekačky."
+        },
+        {
+          "type": "heading",
+          "text": "Kolík: drží polohu"
+        },
+        {
+          "type": "term",
+          "term": "Kolík",
+          "definition": "Krátký váleček nebo kužel zaražený do díry ve dvou dílech. Zajistí jejich přesnou **vzájemnou polohu** nebo přenese malou sílu.",
+          "example": "Dva středicí kolíky zajistí, že víko převodovky přijde vždy na stejné místo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**válcový kolík** – drží v díře přesahem (je o kousek větší než díra)",
+            "**kuželový kolík** – kuželovitost 1 : 50, dobře středí a jde snadno vyrazit",
+            "**pružný kolík** – rozříznutá trubička, v díře se sevře a drží pružností",
+            "**rýhovaný kolík** – rýhy se při zaražení zatlačí a kolík drží",
+            "**střižný (pojistný) kolík** – při přetížení se usekne a ochrání dražší díly"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pero a drážkování: točí nábojem"
+        },
+        {
+          "type": "term",
+          "term": "Pero",
+          "definition": "Ocelový hranolek, který se vloží do drážky v hřídeli i v náboji. Bokem přenáší krouticí moment z hřídele na náboj.",
+          "example": "Pero těsné spojuje řemenici s hřídelem motoru."
+        },
+        {
+          "type": "term",
+          "term": "Drážkování",
+          "definition": "Hřídel má po obvodu mnoho podélných zubů a náboj stejné drážky. Je to jako mnoho per najednou.",
+          "example": "Kolo v převodovce auta se po drážkovaném hřídeli posouvá při řazení."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co kterému spoji nejvíc sedí. Pak si to ověř v textu výše."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "čep",
+              "kolík",
+              "pero / drážkování"
+            ],
+            "items": [
+              {
+                "text": "kloub ramene bagru",
+                "group": 0
+              },
+              {
+                "text": "pojištěn závlačkou nebo kroužkem",
+                "group": 0
+              },
+              {
+                "text": "přesná poloha víka",
+                "group": 1
+              },
+              {
+                "text": "usekne se při přetížení",
+                "group": 1
+              },
+              {
+                "text": "přenáší moment z hřídele na řemenici",
+                "group": 2
+              },
+              {
+                "text": "posuvné kolo v převodovce",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Proč má převodovka auta drážkovaný hřídel, a ne jen jedno pero?",
+          "answer": "Drážkování má mnoho zubů, takže moment se rozloží na velkou plochu. Přenese **větší moment** a kolo se po něm může **posouvat** při řazení."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel o průměru 40 mm přenáší krouticí moment 100 N·m. Jakou silou tlačí na bok pera?",
+          "answer": "Pero je na poloměru r = 20 mm = 0,02 m. Moment M = F · r, takže F = M / r = 100 / 0,02 = **5 000 N**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pero drží náboj na hřídeli i proti posunutí podél osy.",
+          "right": "Pero přenáší jen **otáčení**. Proti posunutí podél osy se náboj zajišťuje zvlášť (osazením, kroužkem, maticí).",
+          "why": "Pero leží v drážce volně v podélném směru – náboj by po něm sjel."
+        },
+        {
+          "type": "summary",
+          "text": "Čep = otočný kloub. Kolík = přesná poloha nebo malá síla, pojistný kolík chrání před přetížením. Pero a drážkování přenášejí krouticí moment mezi hřídelem a nábojem."
+        }
+      ]
+    },
+    {
+      "title": "Výpočtem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když čep nebo pero vybereš moc slabé, usekne se nebo vymačká drážku a stroj se zastaví. Proto se tyto součásti **kontrolují výpočtem**. Stačí dvě jednoduché rovnice."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Čep, kolík, pero, drážkování",
+          "definition": "Čep = otočný kloub mezi díly. Kolík = váleček nebo kužel, který drží polohu. Pero = hranolek v drážce, přenáší otáčení z hřídele (otáčející se tyče) na náboj (střed kola). Drážkování = mnoho zubů po obvodu hřídele.",
+          "example": "Čep řetězu, středicí kolík víka, pero řemenice, drážkovaný hřídel převodovky."
+        },
+        {
+          "type": "term",
+          "term": "Smykové napětí τ (tau)",
+          "definition": "Napětí, když síla čep nebo kolík „stříhá“ napříč: `τ = F / S`, kde S je plocha průřezu, která se může useknout.",
+          "example": "Nůžky stříhají papír – to je střih."
+        },
+        {
+          "type": "term",
+          "term": "Otlačení p",
+          "definition": "Tlak na styčné ploše dvou dílů: `p = F / S`. Když je velký, pero nebo čep vymačká měkčí díl.",
+          "example": "Pero vymačká drážku v hliníkovém náboji."
+        },
+        {
+          "type": "term",
+          "term": "Jednostřižný a dvojstřižný spoj",
+          "definition": "Jednostřižný spoj se může useknout v **jednom** místě, dvojstřižný ve **dvou** (čep prochází třemi plechy). Dvojstřižný vydrží dvakrát víc.",
+          "example": "Čep ve vidlici je dvojstřižný."
+        },
+        {
+          "type": "heading",
+          "text": "Kontrola čepu na střih"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej průřez čepu: `S = π · d² / 4`.",
+            "Zjisti počet střižných ploch n (1 nebo 2).",
+            "Smykové napětí: `τ = F / (n · S)`.",
+            "Porovnej s dovoleným napětím ve střihu. Musí platit τ ≤ τ_D."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Čep d = 20 mm ve vidlici (dvojstřižný) přenáší sílu 20 kN. Jaké je smykové napětí?",
+          "answer": "S = π · 20² / 4 = 314 mm². τ = F / (2 · S) = 20 000 / (2 · 314) ≈ **31,8 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "Kontrola pera na otlačení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Z krouticího momentu spočítej obvodovou sílu: `F = M / r`, kde r = d / 2.",
+            "Styčná plocha boku pera v náboji: `S = l · t` (l = délka pera, t = výška boku v náboji).",
+            "Otlačení: `p = F / S`.",
+            "Porovnej s dovoleným tlakem materiálu náboje."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hřídel d = 40 mm přenáší 100 N·m. Pero je dlouhé 40 mm, v náboji nese bokem 3 mm. Jaké je otlačení?",
+          "answer": "r = 20 mm. F = 100 000 N·mm / 20 mm = 5 000 N. S = 40 · 3 = 120 mm². p = 5 000 / 120 ≈ **41,7 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Spoj",
+            "Jak přenáší",
+            "Hodí se na"
+          ],
+          "rows": [
+            [
+              "čep",
+              "střihem a otlačením, umožní otáčení",
+              "klouby, táhla, řetězy"
+            ],
+            [
+              "kolík",
+              "střihem",
+              "polohu dílů, malé síly, pojistku"
+            ],
+            [
+              "pero těsné",
+              "bokem v drážce",
+              "řemenice, kola, spojky"
+            ],
+            [
+              "drážkování",
+              "mnoha boky zubů",
+              "velké momenty, posuvné náboje"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "τ = ?",
+                "back": "F / (n · S)"
+              },
+              {
+                "front": "p = ?",
+                "back": "F / S (styčná plocha)"
+              },
+              {
+                "front": "F z momentu",
+                "back": "F = M / r"
+              },
+              {
+                "front": "průřez čepu",
+                "back": "S = π · d² / 4"
+              },
+              {
+                "front": "kuželovitost kolíku",
+                "back": "1 : 50"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dvojstřižný čep počítám stejně jako jednostřižný: τ = F / S.",
+          "right": "U dvojstřižného čepu se síla rozloží na **dva** průřezy: τ = F / (2 · S).",
+          "why": "Čep by se musel useknout na dvou místech najednou."
+        },
+        {
+          "type": "summary",
+          "text": "Čepy a kolíky se kontrolují na střih `τ = F / (n · S)`, pera na otlačení `p = F / S`. Obvodová síla na peru je `F = M / r`."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která součást spojuje díly otočně jako kloub?",
+      "options": [
+        "čep",
+        "pero",
+        "drážkování",
+        "klín"
+      ],
+      "answer": 0,
+      "explanation": "Čep umožňuje vzájemné natočení dílů."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží středicí kolíky na víku převodovky?",
+      "options": [
+        "zajistí přesnou polohu víka",
+        "přenášejí krouticí moment",
+        "těsní olej",
+        "tlumí hluk"
+      ],
+      "answer": 0,
+      "explanation": "Kolíky drží vzájemnou polohu dílů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pero přenáší krouticí moment z hřídele na náboj.",
+      "answer": true,
+      "explanation": "Bokem v drážce tlačí na náboj a otáčí jím."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pero samo zajistí náboj proti posunutí podél hřídele.",
+      "answer": false,
+      "explanation": "Proti osovému posunutí je potřeba osazení, kroužek nebo matice."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se v převodovce používá drážkování?",
+      "options": [
+        "přenese velký moment a kolo se po něm může posouvat",
+        "je nejlevnější",
+        "nepotřebuje mazání",
+        "spojuje díly nerozebíratelně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Hřídel d = 50 mm přenáší moment 200 N·m. Jaká je obvodová síla na peru v N?",
+      "answers": [
+        "8000"
+      ],
+      "explanation": "r = 0,025 m; F = 200 / 0,025 = 8 000 N.",
+      "hints": [
+        "Síla = moment děleno poloměrem.",
+        "Poloměr je polovina průměru, převeď ho na metry."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jednostřižný kolík má průřez 50 mm² a přenáší sílu 3 000 N. Jaké je smykové napětí v MPa?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "τ = 3 000 / 50 = 60 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Dvojstřižný čep má průřez 100 mm² a přenáší 10 000 N. Jaké je smykové napětí v MPa?",
+      "answers": [
+        "50"
+      ],
+      "explanation": "τ = F / (2 · S) = 10 000 / 200 = 50 MPa.",
+      "hints": [
+        "Kolik průřezů se musí useknout?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou kuželovitost má kuželový kolík?",
+      "options": [
+        "1 : 50",
+        "1 : 10",
+        "1 : 5",
+        "1 : 100"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj součást s úkolem.",
+      "pairs": [
+        [
+          "střižný kolík",
+          "pojistka proti přetížení"
+        ],
+        [
+          "pojistný kroužek",
+          "zajistí čep proti vysunutí"
+        ],
+        [
+          "pero těsné",
+          "přenos momentu na řemenici"
+        ],
+        [
+          "drážkování",
+          "posuvné kolo převodovky"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená otlačení pera?",
+      "options": [
+        "tlak na styčné ploše boku pera a drážky",
+        "ohyb pera",
+        "zkroucení hřídele",
+        "opotřebení pera třením"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup kontroly pera na otlačení.",
+      "items": [
+        "obvodová síla F = M / r",
+        "styčná plocha S = l · t",
+        "otlačení p = F / S",
+        "porovnání s dovoleným tlakem"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, k čemu slouží pojistný (střižný) kolík.",
+      "answer": "Je to záměrně nejslabší místo spoje. Při přetížení se usekne a přeruší přenos síly, takže ochrání dražší součásti stroje. Pak se jen vymění za nový."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej pero a drážkování.",
+      "answer": "Obojí přenáší krouticí moment mezi hřídelem a nábojem. Pero je jeden hranolek v drážce, je levné a hodí se pro menší momenty. Drážkování má mnoho zubů, přenese větší moment a dovolí náboji posouvat se po hřídeli."
+    }
+  ]
+}

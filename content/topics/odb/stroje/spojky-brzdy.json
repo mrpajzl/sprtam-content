@@ -1,0 +1,459 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "spojky-brzdy",
+  "title": "Spojky a brzdy",
+  "emoji": "🛑",
+  "explanations": [
+    {
+      "title": "V autě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když v autě sešlápneš levý pedál, motor běží dál, ale kola se od něj odpojí. Můžeš přeřadit. To dělá **spojka**. Prostřední pedál auto zastaví – to je **brzda**."
+        },
+        {
+          "type": "text",
+          "text": "Spojky a brzdy jsou ve skoro každém pohonu: v obráběcím stroji, jeřábu, výtahu, kole i v pračce."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hřídel",
+          "definition": "Otáčející se tyč, která přenáší otáčení z motoru dál.",
+          "example": "Hřídel motoru, hřídel převodovky."
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment",
+          "definition": "Otáčivý účinek síly: síla krát rameno, v N·m.",
+          "example": "Motor předá na hřídel moment 200 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Spojka",
+          "definition": "Součást, která spojuje **dva hřídele** za sebou a přenáší mezi nimi krouticí moment. Některé spojky jde za chodu rozpojit.",
+          "example": "Spojka mezi motorem a převodovkou auta."
+        },
+        {
+          "type": "term",
+          "term": "Třecí spojka",
+          "definition": "Dva kotouče se k sobě přitlačí pružinou a **třením** přenášejí moment. Když je oddálíš, spojka rozpojí.",
+          "example": "Spojka v autě, lamelová spojka motocyklu."
+        },
+        {
+          "type": "term",
+          "term": "Brzda",
+          "definition": "Zařízení, které zpomaluje nebo zastavuje pohyb. Mění pohybovou energii na **teplo** třením.",
+          "example": "Kotoučová brzda kola auta."
+        },
+        {
+          "type": "heading",
+          "text": "Jaké spojky známe"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď spojky. **Nevypínatelná** spojuje pořád. **Vypínatelnou** rozpojí člověk nebo řídicí systém. **Samočinná** se spojí nebo rozpojí sama, třeba podle otáček nebo směru otáčení."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "nevypínatelná",
+              "vypínatelná (ovládaná)",
+              "samočinná"
+            ],
+            "items": [
+              {
+                "text": "přírubová spojka",
+                "group": 0
+              },
+              {
+                "text": "pružná spojka s pryží",
+                "group": 0
+              },
+              {
+                "text": "kloubová (kardanová)",
+                "group": 0
+              },
+              {
+                "text": "třecí spojka v autě",
+                "group": 1
+              },
+              {
+                "text": "zubová výsuvná spojka",
+                "group": 1
+              },
+              {
+                "text": "odstředivá spojka motorové pily",
+                "group": 2
+              },
+              {
+                "text": "volnoběžka jízdního kola",
+                "group": 2
+              },
+              {
+                "text": "pojistná prokluzová spojka",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Pružná spojka",
+          "definition": "Mezi dvěma přírubami je pryžový člen. Vyrovná malé nepřesnosti v souososti hřídelů a tlumí rázy.",
+          "example": "Spojka mezi elektromotorem a čerpadlem."
+        },
+        {
+          "type": "term",
+          "term": "Volnoběžka",
+          "definition": "Spojka, která přenáší moment jen jedním směrem. Druhým směrem se volně protáčí.",
+          "example": "Když na kole přestaneš šlapat, kolo se točí dál a pedály stojí."
+        },
+        {
+          "type": "heading",
+          "text": "Brzdy"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**kotoučová** – destičky svírají kotouč, dobře chladí (auta, motocykly)",
+            "**bubnová (čelisťová)** – čelisti se roztahují do bubnu (zadní kola starších aut, přívěsy)",
+            "**pásová** – pás se stáhne kolem bubnu (navijáky)",
+            "**špalíková** – špalek tlačí na obvod kola (vlaky, jeřáby)"
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Pojistný (bezpečnostní) princip brzdy",
+          "definition": "Brzda jeřábu nebo výtahu je **zabrzděná pružinou**. Odbrzdí ji až elektromagnet, když teče proud. Při výpadku proudu se tedy sama zabrzdí.",
+          "example": "Břemeno jeřábu při výpadku proudu nespadne."
+        },
+        {
+          "type": "example",
+          "question": "Proč motorová pila nemá pedál spojky?",
+          "answer": "Má **odstředivou** spojku. Při volnoběhu se čelisti nedotknou bubnu a řetěz stojí. Při vyšších otáčkách je odstředivá síla vytlačí ven, přitlačí se k bubnu a řetěz se roztočí."
+        },
+        {
+          "type": "example",
+          "question": "Proč se brzdy dlouhým brzděním z kopce přehřejí?",
+          "answer": "Brzda mění pohybovou (a polohovou) energii auta na **teplo**. Při dlouhém brzdění z kopce teplo nestihne odejít, brzdy ztrácejí účinek. Proto se brzdí i motorem nižším převodovým stupněm."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Brzda výtahu je zabrzděná elektromagnetem, když teče proud.",
+          "right": "Brzdu zabrzďuje **pružina**, elektromagnet ji **odbrzďuje**.",
+          "why": "Při výpadku proudu musí břemeno zůstat zabrzděné – tomu se říká bezpečný stav."
+        },
+        {
+          "type": "summary",
+          "text": "Spojka spojuje dva hřídele a přenáší krouticí moment; může být nevypínatelná, vypínatelná nebo samočinná. Brzda mění pohyb na teplo. Brzdy zdvihacích zařízení brzdí pružinou a odbrzďují se proudem."
+        }
+      ]
+    },
+    {
+      "title": "Výpočtem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér vybírá spojku a brzdu pro pohon. Musí ověřit, že spojka **nepřeklouzne** a brzda stroj **zastaví**. Oba výpočty stojí na stejném principu: tření."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Spojka a brzda",
+          "definition": "**Spojka** spojuje dva hřídele (otáčející se tyče) a přenáší mezi nimi krouticí moment. **Brzda** pohyb zpomaluje a mění jeho energii na teplo.",
+          "example": "Spojka a brzdy v autě."
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment M",
+          "definition": "Síla krát rameno: `M = F · r`, jednotka N·m.",
+          "example": "Síla 1 000 N na rameni 0,1 m = 100 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Třecí síla",
+          "definition": "Síla, která brání klouzání dvou ploch po sobě: `Ft = f · F_N`. F_N je přítlačná síla, f součinitel tření (pro dvojici materiálů z tabulky).",
+          "example": "Přítlak 1 000 N, f = 0,3: třecí síla 300 N."
+        },
+        {
+          "type": "term",
+          "term": "Třecí plocha",
+          "definition": "Plocha, na které se dva díly o sebe třou. Spojkový kotouč sevřený ze dvou stran má **2** třecí plochy.",
+          "example": "Lamelová spojka s 3 lamelami má víc ploch."
+        },
+        {
+          "type": "heading",
+          "text": "Třecí spojka"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Třecí síla na jedné ploše: `Ft = f · F`.",
+            "Moment jedné plochy: třecí síla krát střední poloměr r_s.",
+            "Krát počet třecích ploch i: `M = f · F · r_s · i`.",
+            "Spojka nepřeklouzne, když je M větší než moment motoru (s rezervou)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Spojka: přítlak F = 3 000 N, f = 0,3, střední poloměr 0,1 m, 2 třecí plochy. Jaký moment přenese?",
+          "answer": "M = 0,3 · 3 000 · 0,1 · 2 = **180 N·m**."
+        },
+        {
+          "type": "heading",
+          "text": "Kotoučová brzda"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Každá ze dvou destiček tlačí na kotouč silou F.",
+            "Třecí síla jedné destičky `f · F`.",
+            "Brzdný moment obou destiček: `Mb = 2 · f · F · r` (r = poloměr, kde destička tře)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Destičky tlačí každá silou 5 kN, f = 0,4, r = 0,12 m. Jaký je brzdný moment?",
+          "answer": "Mb = 2 · 0,4 · 5 000 · 0,12 = **480 N·m**."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled spojek"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Skupina",
+            "Příklady",
+            "Úkol"
+          ],
+          "rows": [
+            [
+              "pevné",
+              "trubková, přírubová",
+              "spojit souosé hřídele natvrdo"
+            ],
+            [
+              "vyrovnávací a pružné",
+              "pryžová, zubová, kloubová",
+              "vyrovnat nesouosost, tlumit rázy"
+            ],
+            [
+              "vypínatelné",
+              "třecí kotoučová, lamelová, zubová výsuvná",
+              "rozpojit za chodu nebo v klidu"
+            ],
+            [
+              "samočinné",
+              "odstředivá, volnoběžná, pojistná",
+              "spojit/rozpojit podle otáček, směru, přetížení"
+            ],
+            [
+              "hydrodynamická",
+              "olejová spojka, měnič",
+              "plynulý rozjezd přes kapalinu"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "moment třecí spojky",
+                "back": "M = f · F · r_s · i"
+              },
+              {
+                "front": "brzdný moment kotoučové brzdy",
+                "back": "Mb = 2 · f · F · r"
+              },
+              {
+                "front": "kloubová spojka",
+                "back": "spojí hřídele pod úhlem"
+              },
+              {
+                "front": "pojistná spojka",
+                "back": "prokluzuje při přetížení"
+              },
+              {
+                "front": "volnoběžka",
+                "back": "přenáší jen jedním směrem"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Spojka v autě s jedním kotoučem má jednu třecí plochu.",
+          "right": "Kotouč je sevřený mezi setrvačníkem a přítlačným kotoučem – má **dvě** třecí plochy.",
+          "why": "Tře se z obou stran, takže i = 2."
+        },
+        {
+          "type": "summary",
+          "text": "Třecí spojka přenese `M = f · F · r_s · i`, kotoučová brzda brzdí momentem `Mb = 2 · f · F · r`. Spojky dělíme na pevné, vyrovnávací, vypínatelné, samočinné a hydrodynamické."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "K čemu slouží spojka?",
+      "options": [
+        "spojuje dva hřídele a přenáší krouticí moment",
+        "mění otáčky",
+        "zastavuje pohyb",
+        "nese hřídel"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Brzda mění pohybovou energii na teplo.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Která spojka přenáší moment jen jedním směrem?",
+      "options": [
+        "volnoběžka",
+        "přírubová",
+        "pružná",
+        "zubová"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zabrzdí brzda jeřábu při výpadku proudu?",
+      "options": [
+        "pružinou, sama",
+        "elektromagnetem",
+        "jeřábník musí zabrzdit ručně",
+        "nezabrzdí se"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj spojku s použitím.",
+      "pairs": [
+        [
+          "odstředivá",
+          "motorová pila"
+        ],
+        [
+          "kloubová",
+          "hřídele pod úhlem"
+        ],
+        [
+          "pružná s pryží",
+          "tlumení rázů motoru a čerpadla"
+        ],
+        [
+          "třecí kotoučová",
+          "auto s manuální převodovkou"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Třecí spojka: f = 0,25, F = 4 000 N, r_s = 0,1 m, i = 2. Kolik N·m přenese?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "M = 0,25 · 4 000 · 0,1 · 2 = 200 N·m.",
+      "hints": [
+        "Vynásob všechny čtyři hodnoty."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kotoučová brzda: dvě destičky, každá tlačí 2 000 N, f = 0,5, r = 0,1 m. Brzdný moment v N·m?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "Mb = 2 · 0,5 · 2 000 · 0,1 = 200 N·m.",
+      "hints": [
+        "Nezapomeň, že destičky jsou dvě."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pojistná spojka prokluzuje při přetížení a chrání stroj.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kolik třecích ploch má spojkový kotouč auta sevřený z obou stran?",
+      "options": [
+        "2",
+        "1",
+        "4",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která brzda je typická pro přední kola osobních aut?",
+      "options": [
+        "kotoučová",
+        "pásová",
+        "špalíková",
+        "elektromagnetická"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje v odstředivé spojce při přidávání plynu.",
+      "items": [
+        "motor běží naprázdno, čelisti nedosedají",
+        "otáčky rostou",
+        "odstředivá síla tlačí čelisti ven",
+        "čelisti se přitlačí k bubnu a řetěz se roztočí"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se z dlouhého kopce brzdí i motorem?",
+      "options": [
+        "provozní brzdy se nepřehřejí",
+        "ušetří se palivo",
+        "motor se lépe chladí",
+        "je to povinné jen v zimě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Rozděl spojky do skupin a ke každé uveď příklad.",
+      "answer": "Nevypínatelné spojují stále: přírubová, pružná, kloubová. Vypínatelné rozpojí obsluha: třecí spojka auta, zubová výsuvná. Samočinné se ovládají samy: odstředivá, volnoběžná, pojistná."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, proč jsou brzdy jeřábů a výtahů zabrzděné pružinou.",
+      "answer": "Při výpadku proudu nebo poruše musí břemeno zůstat zabrzděné. Pružina brzdí vždy, elektromagnet brzdu odbrzdí jen tehdy, když teče proud. Porucha tedy vede k bezpečnému stavu."
+    }
+  ]
+}

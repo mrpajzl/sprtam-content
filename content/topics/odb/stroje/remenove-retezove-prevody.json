@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "remenove-retezove-prevody",
+  "title": "Řemenové a řetězové převody",
+  "emoji": "⛓️",
+  "explanations": [
+    {
+      "title": "Kolo a motor",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na jízdním kole přenáší sílu z pedálů na zadní kolo **řetěz**. V autě pohání alternátor a čerpadlo **řemen**. Oba převody spojí hřídele, které jsou od sebe daleko – tam by ozubená kola musela být obrovská."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hřídel",
+          "definition": "Otáčející se tyč, která přenáší otáčení.",
+          "example": "Hřídel motoru, hřídel čerpadla."
+        },
+        {
+          "type": "term",
+          "term": "Řemenice",
+          "definition": "Kolo na hřídeli, přes které běží řemen. Má na obvodu drážky podle tvaru řemene.",
+          "example": "Řemenice na hřídeli motoru pračky."
+        },
+        {
+          "type": "term",
+          "term": "Řemenový převod",
+          "definition": "Nekonečný pružný řemen obepíná dvě řemenice. Plochý a klínový řemen přenášejí sílu **třením**, ozubený řemen zuby.",
+          "example": "Klínový řemen u kompresoru."
+        },
+        {
+          "type": "term",
+          "term": "Řetězový převod",
+          "definition": "Kovový článkový řetěz obepíná dvě **řetězová kola** se zuby. Přenáší sílu tvarem – zuby zapadají do článků.",
+          "example": "Řetěz jízdního kola nebo motocyklu."
+        },
+        {
+          "type": "term",
+          "term": "Skluz",
+          "definition": "Malé prokluzování třecího řemene na řemenici. Hnaná řemenice se pak točí o trochu pomaleji, než by měla.",
+          "example": "U klínového řemene asi 1–2 %."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy řemenů"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**plochý** – jednoduchý, tichý, dnes méně častý",
+            "**klínový** – lichoběžníkový průřez, zaklíní se do drážky a přenese víc než plochý",
+            "**žebrový (drážkový)** – více malých klínů vedle sebe, tenký a ohebný (auta)",
+            "**ozubený** – zuby jako ozubené kolo, **nemá skluz** (rozvody motoru, 3D tiskárny)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Řemen, nebo řetěz?"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď vlastnosti. Která patří spíš řemenu a která spíš řetězu?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "třecí řemen",
+              "řetěz"
+            ],
+            "items": [
+              {
+                "text": "tichý chod",
+                "group": 0
+              },
+              {
+                "text": "tlumí rázy",
+                "group": 0
+              },
+              {
+                "text": "při přetížení prokluzuje",
+                "group": 0
+              },
+              {
+                "text": "nemá skluz",
+                "group": 1
+              },
+              {
+                "text": "potřebuje mazání",
+                "group": 1
+              },
+              {
+                "text": "přenese velké síly při malých rychlostech",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Napínání",
+          "definition": "Řemen i řetěz musí být správně napnuté. Volný řemen prokluzuje, volný řetěz může spadnout. Napíná se posunutím motoru nebo **napínací kladkou**.",
+          "example": "Napínák rozvodového řemene motoru."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "text",
+          "text": "Místo, kde řemen nebo řetěz **nabíhá** na kolo, vtáhne prsty, rukáv i vlasy. Převody musí být **zakryté krytem**. Řemeny se kontrolují a napínají jen při **vypnutém a zajištěném** stroji."
+        },
+        {
+          "type": "example",
+          "question": "Řemenice motoru má průměr 100 mm, řemenice čerpadla 250 mm. Motor má 1 450 min⁻¹. Kolik otáček má čerpadlo (bez skluzu)?",
+          "answer": "i = d₂ / d₁ = 250 / 100 = 2,5. n₂ = 1 450 / 2,5 = **580 min⁻¹**."
+        },
+        {
+          "type": "example",
+          "question": "Přední převodník kola má 44 zubů, zadní pastorek 11 zubů. Kolikrát se otočí kolo na jedno šlápnutí (otočku pedálů)?",
+          "answer": "i = z₂ / z₁ = 11 / 44 = 0,25. Kolo se otočí 1 / 0,25 = **4krát**. Je to převod do rychla."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Řemen napnu tak silně, jak to jde – nebude prokluzovat.",
+          "right": "Řemen se napíná na **předepsanou hodnotu** (průhyb nebo napínací síla podle výrobce).",
+          "why": "Přepnutý řemen přetěžuje ložiska hřídelů a rychle se opotřebí."
+        },
+        {
+          "type": "summary",
+          "text": "Řemeny a řetězy spojují vzdálené hřídele. Třecí řemen je tichý a tlumí rázy, ale má skluz. Řetěz a ozubený řemen skluz nemají. Převody musí být zakryté."
+        }
+      ]
+    },
+    {
+      "title": "Výpočtem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér navrhuje pohon dopravníku: motor má 1 450 min⁻¹, buben se má točit asi 360 min⁻¹. Jaké řemenice zvolí? A jak rychle poběží řemen?"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Řemenový a řetězový převod",
+          "definition": "Nekonečný řemen nebo článkový řetěz obepíná dvě kola na dvou hřídelích (otáčejících se tyčích) a přenáší mezi nimi otáčení.",
+          "example": "Řemen u kompresoru, řetěz u motocyklu."
+        },
+        {
+          "type": "term",
+          "term": "Převodový poměr i",
+          "definition": "Poměr otáček hnacího a hnaného kola: `i = n₁ / n₂`. U řemene `i = d₂ / d₁`, u řetězu `i = z₂ / z₁`.",
+          "example": "d₁ = 100 mm, d₂ = 400 mm: i = 4."
+        },
+        {
+          "type": "term",
+          "term": "Obvodová rychlost v",
+          "definition": "Jak rychle běží řemen nebo řetěz: `v = π · d · n` (d v metrech, n v otáčkách za sekundu). Výsledek v m/s.",
+          "example": "Řemenice 0,2 m při 1 450 min⁻¹: v ≈ 15,2 m/s."
+        },
+        {
+          "type": "term",
+          "term": "Skluz",
+          "definition": "Prokluz třecího řemene; skutečné otáčky hnané řemenice jsou o něco menší, typicky o 1–2 %.",
+          "example": "Místo 580 min⁻¹ jen asi 570 min⁻¹."
+        },
+        {
+          "type": "heading",
+          "text": "Postup návrhu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej potřebný převodový poměr `i = n₁ / n₂`.",
+            "Zvol menší řemenici d₁ (ne moc malou – řemen by se moc ohýbal).",
+            "Spočítej velkou řemenici `d₂ = i · d₁` a zvol nejbližší normalizovanou.",
+            "Ověř rychlost řemene `v = π · d₁ · n₁`.",
+            "Zvol profil a počet řemenů podle výkonu z katalogu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "n₁ = 1 450 min⁻¹, chceme n₂ ≈ 360 min⁻¹, d₁ = 90 mm. Jak velká bude d₂?",
+          "answer": "i = 1 450 / 360 ≈ 4,03. d₂ = 4,03 · 90 ≈ 363 mm. Zvolíme normalizovanou řemenici, např. **355 mm**; skutečně n₂ = 1 450 · 90 / 355 ≈ 368 min⁻¹."
+        },
+        {
+          "type": "example",
+          "question": "Jakou rychlostí běží řemen na řemenici d = 200 mm při 1 450 min⁻¹?",
+          "answer": "n = 1 450 / 60 = 24,17 s⁻¹. v = π · 0,2 · 24,17 ≈ **15,2 m/s**."
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "klínový řemen",
+            "ozubený řemen",
+            "válečkový řetěz"
+          ],
+          "rows": [
+            [
+              "přenos",
+              "třením",
+              "zuby",
+              "zuby a články"
+            ],
+            [
+              "skluz",
+              "ano, malý",
+              "ne",
+              "ne"
+            ],
+            [
+              "mazání",
+              "ne",
+              "ne",
+              "ano"
+            ],
+            [
+              "hluk",
+              "tichý",
+              "tichý",
+              "hlučnější"
+            ],
+            [
+              "příklad",
+              "kompresor, pračka",
+              "rozvody motoru",
+              "kolo, motocykl, dopravník"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Profil klínového řemene",
+          "definition": "Velikost průřezu je normalizovaná písmeny. Klasické Z, A, B, C…, úzké SPZ, SPA, SPB, SPC. Řemen a drážka řemenice musí mít stejný profil.",
+          "example": "Řemen SPA 1250 = úzký profil SPA, délka 1 250 mm."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "i u řemene",
+                "back": "d₂ / d₁"
+              },
+              {
+                "front": "i u řetězu",
+                "back": "z₂ / z₁"
+              },
+              {
+                "front": "obvodová rychlost",
+                "back": "v = π · d · n"
+              },
+              {
+                "front": "nemá skluz",
+                "back": "ozubený řemen, řetěz"
+              },
+              {
+                "front": "klínový řemen",
+                "back": "zaklíní se do drážky, přenáší třením"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "U řemene počítám převod z poměru menší / větší řemenice: i = d₁ / d₂.",
+          "right": "`i = n₁ / n₂ = d₂ / d₁` – průměr **hnané** dělený průměrem **hnací**.",
+          "why": "Velká hnaná řemenice znamená pomalejší otáčky, takže i > 1."
+        },
+        {
+          "type": "summary",
+          "text": "U řemene `i = d₂ / d₁`, u řetězu `i = z₂ / z₁`. Rychlost řemene `v = π · d · n`. Klínový řemen má malý skluz, ozubený řemen a řetěz ne."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím přenáší sílu klínový řemen?",
+      "options": [
+        "třením v drážce",
+        "zuby",
+        "magnetem",
+        "kapalinou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ozubený řemen nemá skluz.",
+      "answer": true,
+      "explanation": "Zuby zapadají do drážek řemenice."
+    },
+    {
+      "type": "input",
+      "question": "Řemenice d₁ = 120 mm, d₂ = 360 mm. Jaký je převodový poměr?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "i = 360 / 120 = 3."
+    },
+    {
+      "type": "input",
+      "question": "Motor 1 500 min⁻¹, i = 2,5. Jaké jsou otáčky hnané řemenice bez skluzu (min⁻¹)?",
+      "answers": [
+        "600"
+      ],
+      "explanation": "n₂ = 1 500 / 2,5 = 600 min⁻¹.",
+      "hints": [
+        "Při převodu do pomala otáčky klesají."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Řetězové kolo 15 zubů pohání kolo se 45 zuby. Jaký je převodový poměr?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "i = 45 / 15 = 3."
+    },
+    {
+      "type": "choice",
+      "question": "Který převod potřebuje pravidelné mazání?",
+      "options": [
+        "řetězový",
+        "klínový řemen",
+        "plochý řemen",
+        "ozubený řemen"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč musí být řemenové a řetězové převody zakryté?",
+      "options": [
+        "v místě náběhu vtáhnou prsty, oděv nebo vlasy",
+        "kvůli prachu",
+        "aby se nepřehřály",
+        "kvůli hluku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Řemen se smí napínat za chodu stroje.",
+      "answer": false,
+      "explanation": "Jen při vypnutém a zajištěném stroji."
+    },
+    {
+      "type": "input",
+      "question": "Řemenice d = 0,1 m se otáčí 20 s⁻¹. Jakou rychlostí běží řemen v m/s? (zaokrouhli na jedno desetinné místo)",
+      "answers": [
+        "6,3",
+        "6.3",
+        "6,28",
+        "6.28"
+      ],
+      "explanation": "v = π · 0,1 · 20 ≈ 6,28 m/s.",
+      "hints": [
+        "v = π · d · n"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh převodu s typickým použitím.",
+      "pairs": [
+        [
+          "ozubený řemen",
+          "rozvody motoru"
+        ],
+        [
+          "válečkový řetěz",
+          "jízdní kolo"
+        ],
+        [
+          "klínový řemen",
+          "kompresor"
+        ],
+        [
+          "žebrový řemen",
+          "pomocné agregáty auta"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane, když je třecí řemen málo napnutý?",
+      "options": [
+        "prokluzuje",
+        "přetíží ložiska",
+        "praskne hned",
+        "začne se točit opačně"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky návrhu řemenového převodu.",
+      "items": [
+        "spočítat i = n₁ / n₂",
+        "zvolit malou řemenici d₁",
+        "spočítat d₂ = i · d₁",
+        "ověřit rychlost řemene",
+        "zvolit profil a počet řemenů"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej řemenový a řetězový převod.",
+      "answer": "Třecí řemen je tichý, nepotřebuje mazání, tlumí rázy a při přetížení prokluzuje, ale má skluz. Řetěz nemá skluz a přenese velké síly i při malých rychlostech, ale je hlučnější a potřebuje mazání."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady platí u řemenových a řetězových převodů?",
+      "answer": "Převody musí mít ochranný kryt, protože místo náběhu vtáhne prsty, oděv nebo vlasy. Napínání a kontrola se dělá jen u vypnutého a zajištěného stroje. Nesmí se nosit volný oděv ani rozpuštěné vlasy."
+    }
+  ]
+}

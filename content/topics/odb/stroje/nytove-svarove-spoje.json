@@ -1,0 +1,471 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "nytove-svarove-spoje",
+  "title": "Nýtové a svarové spoje",
+  "emoji": "🔥",
+  "explanations": [
+    {
+      "title": "Na mostě a v dílně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Starý železniční most je posetý tisíci kulatými hlavičkami – to jsou **nýty**. Rám nové haly nebo karoserie auta drží **svary**. Oba spoje jsou trvalé: rozebrat je jde jen zničením."
+        },
+        {
+          "type": "text",
+          "text": "Říká se jim **nerozebíratelné spoje**. Patří k nim také pájení a lepení."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nerozebíratelný spoj",
+          "definition": "Spoj, který rozebereš jen tak, že zničíš spojovací prvek nebo díl.",
+          "example": "Svar musíš rozbrousit, nýt odvrtat."
+        },
+        {
+          "type": "term",
+          "term": "Nýt",
+          "definition": "Kovový kolík s hlavou. Prostrčí se dírou v plechách a druhý konec se roztepe do další hlavy. Spojené plechy pak drží sevřené.",
+          "example": "Nýty na Eiffelově věži nebo na letadlech."
+        },
+        {
+          "type": "term",
+          "term": "Závěrná hlava",
+          "definition": "Hlava nýtu, která vznikne až při nýtování roztepáním nebo zalisováním konce nýtu.",
+          "example": "Na straně, kde stojí nýtovací kladivo."
+        },
+        {
+          "type": "term",
+          "term": "Trhací nýt",
+          "definition": "Dutý nýt s trnem. Nýtuje se z **jedné strany** kleštěmi: trn roztáhne nýt a pak se utrhne.",
+          "example": "Plechy vzduchotechniky, kde se zezadu nedostaneš."
+        },
+        {
+          "type": "term",
+          "term": "Svařování",
+          "definition": "Spojení kovů jejich **roztavením** v místě spoje. Po ztuhnutí vznikne jeden kus – svar.",
+          "example": "Svařování ocelového zábradlí."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se svařuje"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**plamenem** – kyslík a acetylen, plamen asi 3 000 °C",
+            "**obalenou elektrodou** – elektrický oblouk, obal elektrody chrání svar",
+            "**MIG/MAG** – drát se sám podává hořákem, chrání ho ochranný plyn",
+            "**TIG (WIG)** – netavící wolframová elektroda, přídavný drát zvlášť, čisté a přesné svary",
+            "**bodové odporové** – proud a tlak dvou elektrod, karoserie aut"
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Tupý a koutový svar",
+          "definition": "**Tupý** svar spojuje plechy v jedné rovině, hrana na hranu (často se hrany upraví do tvaru V nebo X). **Koutový** svar je v rohu mezi dvěma plechy, které na sebe stojí kolmo nebo se překrývají.",
+          "example": "Rohy rámu ze dvou profilů mají koutové svary."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost při svařování"
+        },
+        {
+          "type": "list",
+          "items": [
+            "oči a obličej chraň **svářečskou kuklou** se správným filtrem – oblouk spálí oči i kůži",
+            "nehořlavý oděv, kožené rukavice, pevná obuv",
+            "odsávání nebo větrání – zplodiny jsou jedovaté",
+            "žádné hořlaviny v okolí, po práci kontrola, jestli něco nedoutná",
+            "nikdy nesvařuj nádobu od hořlavin nebo pod tlakem",
+            "svařovat smí jen proškolený pracovník (svářečský průkaz)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď, co patří k nýtování a co ke svařování."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "nýtování",
+              "svařování"
+            ],
+            "items": [
+              {
+                "text": "vzniká závěrná hlava",
+                "group": 0
+              },
+              {
+                "text": "trhací kleště",
+                "group": 0
+              },
+              {
+                "text": "elektrický oblouk",
+                "group": 1
+              },
+              {
+                "text": "ochranný plyn",
+                "group": 1
+              },
+              {
+                "text": "díry v plechách",
+                "group": 0
+              },
+              {
+                "text": "roztavení materiálu",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Proč se dnes ocelové konstrukce většinou svařují, a ne nýtují?",
+          "answer": "Svar nepotřebuje díry, které plech oslabují, je rychlejší, lehčí a těsný. Nýty zůstaly tam, kde nejde svařovat: hliník v letadlech, spoje různých materiálů, opravy historických mostů."
+        },
+        {
+          "type": "example",
+          "question": "Opravuješ vzduchotechnické potrubí a k zadní straně plechu se nedostaneš. Jaký spoj zvolíš?",
+          "answer": "**Trhací nýt**. Nýtuje se z jedné strany kleštěmi, zezadu ho nemusíš přidržovat."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při krátkém svaru se stačí podívat na oblouk bez kukly, jen přimhouřit oči.",
+          "right": "Do oblouku se **nikdy** nedívej bez ochranného filtru, ani na chvíli.",
+          "why": "Ultrafialové záření oblouku spálí sítnici a rohovku během sekund. Bolest přijde až za několik hodin."
+        },
+        {
+          "type": "summary",
+          "text": "Nýty, svary, pájení a lepení jsou nerozebíratelné spoje. Nýt dostane při nýtování závěrnou hlavu. Svar vzniká roztavením kovu; svářeč musí chránit oči, kůži i okolí před požárem."
+        }
+      ]
+    },
+    {
+      "title": "Přehled a výpočet",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér musí rozhodnout, jaký trvalý spoj použije, a ověřit, že vydrží. Pomůže mu přehled druhů a jednoduchý výpočet svaru a nýtu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nerozebíratelný spoj",
+          "definition": "Spoj, který jde rozebrat jen zničením.",
+          "example": "Svar, nýt, pájený nebo lepený spoj."
+        },
+        {
+          "type": "term",
+          "term": "Nýt",
+          "definition": "Kolík s hlavou; druhá, **závěrná hlava** vznikne při nýtování.",
+          "example": "Nýt s půlkulovou hlavou."
+        },
+        {
+          "type": "term",
+          "term": "Svar",
+          "definition": "Místo, kde se kovy roztavily a spojily v jeden kus.",
+          "example": "Koutový svar v rohu rámu."
+        },
+        {
+          "type": "term",
+          "term": "Pájení",
+          "definition": "Spojení kovů roztaveným **pájkou**, která má nižší teplotu tání než spojované kovy. Spojované díly se neroztaví.",
+          "example": "Měděné trubky vody, elektronika."
+        },
+        {
+          "type": "term",
+          "term": "Smykové napětí τ",
+          "definition": "Napětí, kdy síla spoj „stříhá“: `τ = F / S` (MPa = N/mm²).",
+          "example": "Síla 1 000 N na ploše 10 mm² = 100 MPa."
+        },
+        {
+          "type": "heading",
+          "text": "1. Přehled nerozebíratelných spojů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Spoj",
+            "Princip",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "nýtový",
+              "tvarový – nýt drží plechy sevřené",
+              "letadla, mosty, trhací nýty"
+            ],
+            [
+              "svarový",
+              "roztavení základního materiálu",
+              "konstrukce, rámy, potrubí"
+            ],
+            [
+              "pájený měkce",
+              "pájka do 450 °C (cín)",
+              "elektronika"
+            ],
+            [
+              "pájený natvrdo",
+              "pájka nad 450 °C (mosaz, stříbro)",
+              "měděné trubky, nástroje"
+            ],
+            [
+              "lepený",
+              "lepidlo přilne k povrchům",
+              "karoserie, kompozity"
+            ],
+            [
+              "lisovaný",
+              "díl nalisovaný s přesahem",
+              "ozubené kolo na hřídeli"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "2. Výpočet koutového svaru"
+        },
+        {
+          "type": "term",
+          "term": "Účinná výška svaru a",
+          "definition": "Výška trojúhelníku vepsaného do průřezu koutového svaru. Udává, jak „tlustý“ svar nese.",
+          "example": "Svar a = 4 mm."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti sílu F, kterou svar přenáší.",
+            "Spočítej nosnou plochu: `S = a · l` (l = celková délka svarů).",
+            "Napětí ve svaru: `τ = F / S`.",
+            "Porovnej s dovoleným napětím svaru."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Dva koutové svary, každý dlouhý 100 mm, a = 4 mm, přenášejí sílu 40 kN. Jaké je napětí?",
+          "answer": "S = a · l = 4 · (2 · 100) = 800 mm². τ = 40 000 / 800 = **50 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "3. Výpočet nýtu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Průřez jednoho nýtu: `S = π · d² / 4`.",
+            "Počet nýtů i a střižných ploch n.",
+            "`τ = F / (i · n · S)`."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Spoj se 4 jednostřižnými nýty d = 10 mm přenáší 12 kN. Jaké je napětí ve střihu?",
+          "answer": "S = π · 10² / 4 = 78,5 mm². τ = 12 000 / (4 · 1 · 78,5) ≈ **38,2 MPa**."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Pájka pro měkké pájení taje pod ",
+                "after": " °C.",
+                "options": [
+                  "450",
+                  "900"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nosná plocha koutového svaru je ",
+                "after": ".",
+                "options": [
+                  "a · l",
+                  "a²"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tupý svar spojuje plechy ",
+                "after": ".",
+                "options": [
+                  "v jedné rovině",
+                  "do pravého úhlu"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při pájení se spojované díly roztaví stejně jako při svařování.",
+          "right": "Při pájení se taví jen **pájka**, spojované díly zůstávají pevné.",
+          "why": "Pájka má nižší teplotu tání. To je hlavní rozdíl mezi pájením a svařováním."
+        },
+        {
+          "type": "summary",
+          "text": "Mezi nerozebíratelné spoje patří nýtové, svarové, pájené, lepené a lisované. Koutový svar se počítá `τ = F / (a · l)`, nýty `τ = F / (i · n · S)`. Měkké pájení je do 450 °C, tvrdé nad."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který spoj je rozebíratelný?",
+      "options": [
+        "šroubový",
+        "svarový",
+        "nýtový",
+        "pájený"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Při pájení se roztaví i spojované díly.",
+      "answer": false,
+      "explanation": "Taví se jen pájka s nižší teplotou tání."
+    },
+    {
+      "type": "choice",
+      "question": "Co je závěrná hlava nýtu?",
+      "options": [
+        "hlava, která vznikne až při nýtování",
+        "hlava, kterou má nýt od výroby",
+        "matice na konci nýtu",
+        "podložka pod nýtem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kdy použiješ trhací nýt?",
+      "options": [
+        "když se k zadní straně spoje nedostaneš",
+        "u velkých ocelových mostů",
+        "když je potřeba spoj rozebírat",
+        "pro spojení pod vodou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu svařování s popisem.",
+      "pairs": [
+        [
+          "MAG",
+          "drát a ochranný plyn"
+        ],
+        [
+          "TIG",
+          "netavící wolframová elektroda"
+        ],
+        [
+          "obalená elektroda",
+          "obal chrání svar"
+        ],
+        [
+          "bodové",
+          "karoserie, proud a tlak"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Měkké pájení probíhá při teplotě pájky do 450 °C.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Koutový svar má a = 5 mm a celkovou délku 200 mm. Jak velká je jeho nosná plocha v mm²?",
+      "answers": [
+        "1000"
+      ],
+      "explanation": "S = a · l = 5 · 200 = 1 000 mm².",
+      "hints": [
+        "Nosná plocha je součin účinné výšky a délky."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Svar s nosnou plochou 600 mm² přenáší sílu 36 kN. Jaké je napětí v MPa?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "τ = 36 000 / 600 = 60 MPa.",
+      "hints": [
+        "Převeď kN na N.",
+        "Napětí = síla / plocha."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se při svařování nikdy nedíváš do oblouku bez filtru?",
+      "options": [
+        "UV záření spálí oči",
+        "oblouk zhasne",
+        "svar zoxiduje",
+        "elektroda se přilepí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který svar spojuje dva plechy v jedné rovině hrana na hranu?",
+      "options": [
+        "tupý",
+        "koutový",
+        "bodový",
+        "děrový"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Nádobu od benzínu je možné svařovat, když je prázdná.",
+      "answer": false,
+      "explanation": "I prázdná nádoba obsahuje páry, které mohou vybuchnout."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup výpočtu koutového svaru.",
+      "items": [
+        "zjistit sílu F",
+        "spočítat plochu S = a · l",
+        "spočítat τ = F / S",
+        "porovnat s dovoleným napětím"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaké zásady bezpečnosti platí při svařování?",
+      "answer": "Chránit oči a obličej svářečskou kuklou s filtrem, nosit nehořlavý oděv a rukavice, větrat nebo odsávat zplodiny. Odstranit hořlaviny a po práci zkontrolovat okolí. Nesvařovat nádoby od hořlavin ani pod tlakem."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej nýtový a svarový spoj.",
+      "answer": "Nýty potřebují díry, které oslabí plech, a práce je pomalejší, ale spojí i materiály, které nejde svařit (hliník v letadlech). Svar je rychlý, lehčí a těsný, ale materiál se ohřeje a může se zkroutit nebo změnit vlastnosti."
+    }
+  ]
+}

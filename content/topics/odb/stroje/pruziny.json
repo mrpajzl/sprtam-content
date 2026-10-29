@@ -1,0 +1,422 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pruziny",
+  "title": "Pružiny",
+  "emoji": "🌀",
+  "explanations": [
+    {
+      "title": "Kde pracují",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zmáčkni propisku – pružina ji vrátí. Auto na hrbolaté cestě nehází s posádkou, protože má pružiny. Pojistný ventil kotle se otevře, až tlak přemůže pružinu."
+        },
+        {
+          "type": "text",
+          "text": "Pružina se pod silou **deformuje** (stlačí, natáhne, zkroutí) a po odlehčení se **vrátí** do původního tvaru."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pružina",
+          "definition": "Součást, která se pod silou výrazně pruží a pak se vrátí zpátky. Přitom ukládá a vrací energii.",
+          "example": "Pružina v propisce, v tlumiči auta."
+        },
+        {
+          "type": "term",
+          "term": "Pružná deformace",
+          "definition": "Změna tvaru, která po odlehčení **zmizí**. Když pružinu přetížíš, deformace zůstane trvale a pružina „sedne“.",
+          "example": "Přetažená pružina od propisky zůstane dlouhá."
+        },
+        {
+          "type": "term",
+          "term": "Tuhost k",
+          "definition": "Kolik síly je potřeba, aby se pružina stlačila o 1 mm: `k = F / y`, jednotka N/mm. Tvrdá pružina má velkou tuhost.",
+          "example": "k = 20 N/mm: na stlačení o 5 mm potřebuješ 100 N."
+        },
+        {
+          "type": "heading",
+          "text": "K čemu pružiny slouží"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**tlumí rázy a chvění** – podvozek auta, uložení strojů",
+            "**ukládají energii** – natahovací hodinky, hračky",
+            "**vyvozují sílu** – ventily motoru, spojka, pojistný ventil",
+            "**měří sílu** – siloměr, kuchyňská váha na pružinu",
+            "**vracejí díl zpět** – pedál, tlačítko, západka"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Druhy pružin"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď pružiny podle toho, jak se zatěžují."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "tlačná šroubovitá",
+              "tažná šroubovitá",
+              "listová",
+              "zkrutná (torzní)"
+            ],
+            "items": [
+              {
+                "text": "pružina v propisce",
+                "group": 0
+              },
+              {
+                "text": "pružina ventilu motoru",
+                "group": 0
+              },
+              {
+                "text": "pružina na dvířkách, s očky",
+                "group": 1
+              },
+              {
+                "text": "pružina trampolíny",
+                "group": 1
+              },
+              {
+                "text": "svazek per nákladního auta",
+                "group": 2
+              },
+              {
+                "text": "pružina kolíčku na prádlo",
+                "group": 3
+              },
+              {
+                "text": "zkrutná tyč podvozku",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Talířová pružina",
+          "definition": "Kuželový talířek z plechu. Snese velkou sílu při malém stlačení; skládá se do sloupců.",
+          "example": "Pod maticemi u lisovacích nástrojů, ve spojkách."
+        },
+        {
+          "type": "text",
+          "text": "Pružiny se vyrábějí z **pružinové oceli** – po kalení a popouštění snese velké pružné deformace."
+        },
+        {
+          "type": "example",
+          "question": "Pružina má tuhost 20 N/mm. O kolik se stlačí silou 100 N?",
+          "answer": "y = F / k = 100 / 20 = **5 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Do jaké skupiny patří pružina kolíčku na prádlo?",
+          "answer": "Je to **zkrutná** pružina: ramena se otáčejí kolem osy vinutí a pružina se zkrucuje. Vrací kolíček do sevřené polohy."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pružina vydrží jakékoli stlačení, vždycky se vrátí.",
+          "right": "Pružina se vrátí, jen když nepřekročíš její **pružnou** oblast.",
+          "why": "Po přetížení zůstane trvale deformovaná (sedne) nebo praskne."
+        },
+        {
+          "type": "summary",
+          "text": "Pružina se pod silou pružně deformuje a vrací energii. Tuhost k = F / y v N/mm. Pružiny jsou tlačné, tažné, zkrutné, listové a talířové."
+        }
+      ]
+    },
+    {
+      "title": "Výpočtem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér potřebuje, aby ventil přitlačovala síla 200 N a aby se otevřel při určitém zdvihu. Musí vybrat pružinu se správnou **tuhostí** a umět spočítat, co udělají dvě pružiny spolu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pružina",
+          "definition": "Součást, která se pod silou pružně deformuje a pak se vrátí; ukládá energii.",
+          "example": "Tlačná šroubovitá pružina."
+        },
+        {
+          "type": "term",
+          "term": "Stlačení y",
+          "definition": "O kolik se pružina zkrátí (nebo prodlouží) pod silou, v mm.",
+          "example": "Pružina dlouhá 50 mm stlačená na 40 mm: y = 10 mm."
+        },
+        {
+          "type": "term",
+          "term": "Tuhost k",
+          "definition": "`k = F / y` (N/mm). Pro pružinu platí **Hookův zákon**: síla roste přímo úměrně stlačení, `F = k · y`.",
+          "example": "k = 15 N/mm, y = 4 mm: F = 60 N."
+        },
+        {
+          "type": "term",
+          "term": "Práce pružiny W",
+          "definition": "Energie uložená ve stlačené pružině: `W = ½ · F · y`.",
+          "example": "F = 100 N, y = 0,005 m: W = 0,25 J."
+        },
+        {
+          "type": "heading",
+          "text": "Spojování pružin"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zapojení",
+            "Jak",
+            "Výsledná tuhost"
+          ],
+          "rows": [
+            [
+              "paralelně (vedle sebe)",
+              "obě nesou zatížení společně, stlačí se stejně",
+              "k = k₁ + k₂"
+            ],
+            [
+              "sériově (za sebou)",
+              "obě nesou stejnou sílu, stlačení se sčítají",
+              "1/k = 1/k₁ + 1/k₂"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti tuhost každé pružiny.",
+            "Urči zapojení: vedle sebe, nebo za sebou?",
+            "Spočítej výslednou tuhost podle tabulky.",
+            "Stlačení: `y = F / k`."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Dvě pružiny k₁ = 30 N/mm a k₂ = 20 N/mm jsou vedle sebe pod deskou. Deska nese 500 N. O kolik se stlačí?",
+          "answer": "Paralelně: k = 30 + 20 = 50 N/mm. y = 500 / 50 = **10 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Tytéž pružiny jsou zapojené za sebou a nesou 120 N. O kolik se stlačí dohromady?",
+          "answer": "1/k = 1/30 + 1/20 = 5/60 → k = 12 N/mm. y = 120 / 12 = **10 mm**. (Kontrola: 120/30 = 4 mm + 120/20 = 6 mm = 10 mm.)"
+        },
+        {
+          "type": "example",
+          "question": "Pružina k = 20 N/mm je stlačená silou 100 N. Kolik energie je v ní uloženo?",
+          "answer": "y = 100 / 20 = 5 mm = 0,005 m. W = ½ · 100 · 0,005 = **0,25 J**."
+        },
+        {
+          "type": "heading",
+          "text": "Jak je šroubovitá pružina namáhána"
+        },
+        {
+          "type": "text",
+          "text": "Když stlačíš šroubovitou tlačnou pružinu, drát se v každém závitu **zkrucuje**. Hlavní namáhání drátu je tedy **krut**, ne tlak."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Pružiny vedle sebe: k = ",
+                "after": "",
+                "options": [
+                  "k₁ + k₂",
+                  "k₁ · k₂",
+                  "k₁ − k₂"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Drát šroubovité tlačné pružiny je namáhán hlavně ",
+                "after": ".",
+                "options": [
+                  "krutem",
+                  "tlakem",
+                  "tahem"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Jednotka tuhosti pružiny je ",
+                "after": ".",
+                "options": [
+                  "N/mm",
+                  "N·m",
+                  "MPa"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Dvě stejné pružiny za sebou jsou dvakrát tužší.",
+          "right": "Za sebou je výsledná tuhost **poloviční**: 1/k = 1/k₁ + 1/k₂.",
+          "why": "Každá pružina nese celou sílu a stlačí se, takže celkové stlačení je dvojnásobné."
+        },
+        {
+          "type": "summary",
+          "text": "Hookův zákon F = k · y. Paralelně k = k₁ + k₂, sériově 1/k = 1/k₁ + 1/k₂. Energie pružiny W = ½ F y. Drát šroubovité pružiny je namáhán krutem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co udává tuhost pružiny?",
+      "options": [
+        "sílu potřebnou na stlačení o 1 mm",
+        "délku pružiny",
+        "průměr drátu",
+        "počet závitů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Pružina s tuhostí 25 N/mm je stlačena o 8 mm. Jaká síla v N na ni působí?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "F = k · y = 25 · 8 = 200 N.",
+      "hints": [
+        "Síla = tuhost · stlačení."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pružina se silou 150 N stlačí o 6 mm. Jaká je její tuhost v N/mm?",
+      "answers": [
+        "25"
+      ],
+      "explanation": "k = 150 / 6 = 25 N/mm."
+    },
+    {
+      "type": "input",
+      "question": "Dvě pružiny 40 N/mm a 60 N/mm jsou vedle sebe. Jaká je výsledná tuhost v N/mm?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Paralelně k = 40 + 60 = 100 N/mm."
+    },
+    {
+      "type": "input",
+      "question": "Dvě pružiny 40 N/mm a 60 N/mm jsou za sebou. Jaká je výsledná tuhost v N/mm?",
+      "answers": [
+        "24"
+      ],
+      "explanation": "1/k = 1/40 + 1/60 = 5/120, k = 24 N/mm.",
+      "hints": [
+        "Za sebou se sčítají převrácené hodnoty.",
+        "Společný jmenovatel 40 a 60 je 120."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou pružinou je kolíček na prádlo?",
+      "options": [
+        "zkrutnou",
+        "tažnou",
+        "listovou",
+        "talířovou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Drát šroubovité tlačné pružiny je namáhán hlavně krutem.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kde najdeš listové pružiny?",
+      "options": [
+        "podvozky nákladních aut a přívěsů",
+        "propisky",
+        "hodinky",
+        "ventily motoru"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pružina se po přetížení vždy vrátí do původní délky.",
+      "answer": false,
+      "explanation": "Po překročení pružné oblasti zůstane trvale deformovaná."
+    },
+    {
+      "type": "match",
+      "question": "Spoj úkol pružiny s příkladem.",
+      "pairs": [
+        [
+          "tlumí rázy",
+          "podvozek auta"
+        ],
+        [
+          "ukládá energii",
+          "natahovací hodinky"
+        ],
+        [
+          "měří sílu",
+          "siloměr"
+        ],
+        [
+          "vyvozuje sílu",
+          "pojistný ventil"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pružina je stlačena silou 200 N o 0,01 m. Kolik joulů je v ní uloženo?",
+      "answers": [
+        "1"
+      ],
+      "explanation": "W = ½ · 200 · 0,01 = 1 J."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu stlačení dvou pružin.",
+      "items": [
+        "zjistit tuhosti pružin",
+        "určit zapojení",
+        "spočítat výslednou tuhost",
+        "spočítat y = F / k"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj, k čemu se pružiny ve strojích používají, a uveď příklady.",
+      "answer": "Tlumí rázy a chvění (podvozek auta), ukládají energii (natahovací hodinky), vyvozují sílu (ventily motoru, pojistný ventil), měří sílu (siloměr) a vracejí díly do výchozí polohy (pedál, tlačítko)."
+    },
+    {
+      "type": "open",
+      "question": "Jak se liší paralelní a sériové zapojení pružin?",
+      "answer": "Vedle sebe se pružiny stlačí stejně a dělí se o sílu, tuhosti se sčítají a soustava je tužší. Za sebou nese každá celou sílu, stlačení se sčítají a soustava je měkčí: 1/k = 1/k₁ + 1/k₂."
+    }
+  ]
+}

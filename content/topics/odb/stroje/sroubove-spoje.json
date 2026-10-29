@@ -1,0 +1,505 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sroubove-spoje",
+  "title": "Šroubové spoje",
+  "emoji": "🔩",
+  "explanations": [
+    {
+      "title": "V dílně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rozeber kolo, pračku nebo motor auta. Skoro všechno drží pohromadě **šrouby a matice**. Díky nim jde stroj rozebrat, opravit a znovu složit."
+        },
+        {
+          "type": "text",
+          "text": "Strojař musí poznat, jaký šroub kam patří, přečíst jeho označení a zajistit ho, aby se otřesy neuvolnil. Uvolněný šroub na kole auta nebo na jeřábu může zabít."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozebíratelný spoj",
+          "definition": "Spojení součástí, které jde rozebrat a znovu složit, aniž by se něco zničilo.",
+          "example": "Šroub s maticí. Opakem je svar: ten musíš rozříznout."
+        },
+        {
+          "type": "term",
+          "term": "Závit",
+          "definition": "Šroubovitá drážka a výstupek na válci. Vnější závit má šroub, vnitřní závit má matice nebo díra.",
+          "example": "Na šroubu M10 je vnější závit, v matici M10 vnitřní."
+        },
+        {
+          "type": "term",
+          "term": "Šroub",
+          "definition": "Tyč se závitem a s hlavou. Prochází dírou ve spojovaných dílech a utahuje se maticí nebo se šroubuje přímo do závitu v díře.",
+          "example": "Šroub se šestihrannou hlavou M12 × 40 (průměr 12 mm, délka 40 mm)."
+        },
+        {
+          "type": "term",
+          "term": "Matice",
+          "definition": "Součást s vnitřním závitem, kterou šroub dotáhneš.",
+          "example": "Šestihranná matice M12."
+        },
+        {
+          "type": "term",
+          "term": "Svorník (závrtný šroub)",
+          "definition": "Tyč se závitem na obou koncích, bez hlavy. Jeden konec se natrvalo zašroubuje do dílu, na druhý přijde matice.",
+          "example": "Hlava motoru přišroubovaná ke bloku."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se čte metrický závit"
+        },
+        {
+          "type": "text",
+          "text": "V Evropě se nejvíc používá **metrický závit ISO**. Profil zubu má tvar trojúhelníku s vrcholovým úhlem **60°**. Značí se písmenem **M** a jmenovitým průměrem v milimetrech."
+        },
+        {
+          "type": "term",
+          "term": "Stoupání P",
+          "definition": "O kolik se šroub posune podél osy, když ho otočíš o jednu celou otáčku (u jednochodého závitu). Je to také vzdálenost dvou sousedních zubů.",
+          "example": "M10 má hrubé stoupání 1,5 mm: jedna otáčka = posun o 1,5 mm."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Označení",
+            "Co znamená"
+          ],
+          "rows": [
+            [
+              "M10",
+              "metrický závit, průměr 10 mm, hrubé (běžné) stoupání"
+            ],
+            [
+              "M10 × 1,25",
+              "metrický **jemný** závit, stoupání 1,25 mm"
+            ],
+            [
+              "M10 – LH",
+              "levý závit (utahuje se proti směru hodinových ručiček)"
+            ],
+            [
+              "Tr 20 × 4",
+              "lichoběžníkový (trapézový) závit, průměr 20 mm, stoupání 4 mm"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Jemný závit má menší stoupání. Drží lépe proti uvolnění a hodí se pro tenkostěnné díly a seřizování. Lichoběžníkový závit je na **pohybových šroubech**: vřeteno svěráku nebo soustruhu."
+        },
+        {
+          "type": "heading",
+          "text": "Proč se šrouby povolují a jak tomu zabránit"
+        },
+        {
+          "type": "text",
+          "text": "Otřesy a chvění pomalu povolují matici. Proto se šrouby **pojišťují**. Pojištění se dělí podle toho, co matici drží."
+        },
+        {
+          "type": "text",
+          "text": "Zkus roztřídit: kde něco matici **mechanicky brání** v otočení, je to tvarové pojištění. Kde ji drží **tření**, je to silové. Kde závit **slepíš**, je to materiálové."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "tvarové (překážka)",
+              "třecí (silové)",
+              "materiálové (lepidlo)"
+            ],
+            "items": [
+              {
+                "text": "korunová matice se závlačkou",
+                "group": 0
+              },
+              {
+                "text": "pojistný plech s ohnutým okrajem",
+                "group": 0
+              },
+              {
+                "text": "pojistný drát",
+                "group": 0
+              },
+              {
+                "text": "kontramatice",
+                "group": 1
+              },
+              {
+                "text": "samojistná matice s plastovým kroužkem",
+                "group": 1
+              },
+              {
+                "text": "lepidlo na závity",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Kolik milimetrů se posune šroub M10 (hrubé stoupání 1,5 mm), když ho otočíš o 4 celé otáčky?",
+          "answer": "Jedna otáčka = posun o stoupání P = 1,5 mm. Čtyři otáčky: 4 · 1,5 = **6 mm**."
+        },
+        {
+          "type": "term",
+          "term": "Pevnostní třída",
+          "definition": "Dvě čísla na hlavě šroubu, např. 8.8. Říkají, jaké napětí šroub vydrží. **Napětí** je síla na 1 mm² průřezu, měří se v MPa (1 MPa = 1 N/mm²). **Mez pevnosti** je napětí, při kterém se šroub přetrhne. **Mez kluzu** je napětí, při kterém se začne trvale natahovat.",
+          "example": "Šroub 8.8 vydrží víc než šroub 4.6."
+        },
+        {
+          "type": "example",
+          "question": "Šroub pevnostní třídy 8.8. Jaká je jeho mez pevnosti a mez kluzu?",
+          "answer": "První číslo × 100 = mez pevnosti: 8 · 100 = **800 MPa**. Druhé číslo říká poměr meze kluzu k mezi pevnosti: 0,8 · 800 = **640 MPa**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Šroub M10 má stoupání 10 mm.",
+          "right": "Číslo za M je **průměr** 10 mm. Hrubé stoupání M10 je 1,5 mm.",
+          "why": "Stoupání se u hrubého závitu nepíše, vyčte se z tabulky. Píše se jen u jemného závitu (M10 × 1,25)."
+        },
+        {
+          "type": "summary",
+          "text": "Šroubový spoj je rozebíratelný. Metrický závit M má profil 60° a číslo za M je průměr v mm. Šrouby se proti otřesům pojišťují tvarově, třením nebo lepidlem."
+        }
+      ]
+    },
+    {
+      "title": "Krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér navrhuje přírubu potrubí. Musí rozhodnout: jaký šroub, kolik jich, jak pevný a jak ho zajistit. Na to potřebuje znát druhy závitů, značení a jednoduchý výpočet."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Závit",
+          "definition": "Šroubovitý výstupek (zub) na válci nebo v díře. Vnější je na šroubu, vnitřní v matici.",
+          "example": "Závit M8 na šroubu a v matici."
+        },
+        {
+          "type": "term",
+          "term": "Profil závitu",
+          "definition": "Tvar zubu, když závit podélně rozřízneš.",
+          "example": "Trojúhelník (metrický), lichoběžník (trapézový), oblouk (oblý)."
+        },
+        {
+          "type": "term",
+          "term": "Stoupání P",
+          "definition": "Posun šroubu podél osy za jednu otáčku jednochodého závitu.",
+          "example": "M12: P = 1,75 mm."
+        },
+        {
+          "type": "term",
+          "term": "Napětí σ (sigma)",
+          "definition": "Síla rozpočítaná na plochu průřezu: `σ = F / S`. Jednotka MPa = N/mm².",
+          "example": "Síla 1 000 N na ploše 10 mm² dává 100 MPa."
+        },
+        {
+          "type": "heading",
+          "text": "1. Druhy závitů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Závit",
+            "Značka",
+            "Profil",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "metrický",
+              "M",
+              "trojúhelník 60°",
+              "spojovací šrouby a matice"
+            ],
+            [
+              "trubkový (Whitworthův)",
+              "G, R",
+              "trojúhelník 55°",
+              "trubky a armatury"
+            ],
+            [
+              "lichoběžníkový",
+              "Tr",
+              "lichoběžník 30°",
+              "pohybové šrouby, vřetena"
+            ],
+            [
+              "oblý",
+              "Rd",
+              "oblouky",
+              "znečištěné prostředí, potravinářská potrubí"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "2. Druhy šroubů"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**šroub s maticí** – prochází oběma díly, matice ho utahuje",
+            "**šroub do závitu** – šroubuje se přímo do závitové díry ve druhém dílu",
+            "**svorník** – bez hlavy, jeden konec natrvalo v dílu, na druhém matice",
+            "hlavy: šestihranná, s vnitřním šestihranem (imbus), válcová, zápustná",
+            "**podložka** pod maticí rozloží tlak a chrání povrch dílu"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "3. Pevnostní třída"
+        },
+        {
+          "type": "text",
+          "text": "Na hlavě ocelového šroubu je vyraženo např. **8.8** nebo **10.9**. První číslo × 100 = mez pevnosti v MPa. Součin obou čísel × 10 = mez kluzu v MPa."
+        },
+        {
+          "type": "term",
+          "term": "Mez kluzu Re",
+          "definition": "Napětí, při kterém se materiál začne trvale deformovat (natahovat).",
+          "example": "Šroub 8.8: Re = 8 · 8 · 10 = 640 MPa."
+        },
+        {
+          "type": "heading",
+          "text": "4. Kontrola šroubu na tah"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti osovou sílu F, kterou šroub drží (v N).",
+            "Najdi v tabulce průřez šroubu S (u M10 je výpočtový průřez asi 58 mm²).",
+            "Spočítej napětí `σ = F / S`.",
+            "Porovnej s dovoleným napětím (mez kluzu dělená bezpečností). Napětí musí být menší."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Šroub M10 (S = 58 mm²) drží osovou sílu 10 kN. Jaké je v něm napětí?",
+          "answer": "F = 10 kN = 10 000 N. σ = F / S = 10 000 / 58 ≈ **172 MPa**. Šroub 8.8 má mez kluzu 640 MPa, takže vydrží s velkou rezervou."
+        },
+        {
+          "type": "example",
+          "question": "Šroub 10.9: jaká je mez pevnosti a mez kluzu?",
+          "answer": "Rm = 10 · 100 = **1 000 MPa**. Re = 10 · 9 · 10 = **900 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "5. Pojištění"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Korunová matice se závlačkou je pojištění ",
+                "after": ".",
+                "options": [
+                  "tvarové",
+                  "třecí"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Kontramatice drží díky ",
+                "after": ".",
+                "options": [
+                  "tření",
+                  "lepidlu"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Lepidlo na závity je pojištění ",
+                "after": ".",
+                "options": [
+                  "materiálové",
+                  "tvarové"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím víc šroub utáhnu, tím lépe – dotáhnu ho prodlouženým klíčem.",
+          "right": "Šrouby se utahují **předepsaným momentem** momentovým klíčem.",
+          "why": "Přetažený šroub se natáhne za mez kluzu nebo strhne závit a spoj povolí."
+        },
+        {
+          "type": "summary",
+          "text": "Metrický závit (M, 60°) spojuje, lichoběžníkový (Tr) pohybuje. Pevnostní třída 8.8 znamená Rm = 800 MPa a Re = 640 MPa. Šroub se kontroluje na tah `σ = F / S` a utahuje se předepsaným momentem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená označení M16?",
+      "options": [
+        "metrický závit o průměru 16 mm",
+        "metrický závit se stoupáním 16 mm",
+        "šroub dlouhý 16 mm",
+        "matice s klíčem 16 mm"
+      ],
+      "answer": 0,
+      "explanation": "Číslo za M je jmenovitý průměr závitu v milimetrech."
+    },
+    {
+      "type": "truefalse",
+      "question": "Svar je rozebíratelný spoj.",
+      "answer": false,
+      "explanation": "Svar jde rozdělit jen zničením. Rozebíratelný je například šroubový spoj."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký vrcholový úhel má profil metrického závitu?",
+      "options": [
+        "60°",
+        "55°",
+        "30°",
+        "45°"
+      ],
+      "answer": 0,
+      "explanation": "Metrický závit ISO má 60°, trubkový Whitworthův 55°, lichoběžníkový 30°."
+    },
+    {
+      "type": "input",
+      "question": "Šroub má stoupání 1,25 mm. O kolik mm se posune za 8 otáček?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "8 · 1,25 = 10 mm.",
+      "hints": [
+        "Za jednu otáčku se posune přesně o stoupání.",
+        "Vynásob stoupání počtem otáček."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je mez pevnosti šroubu třídy 8.8 v MPa?",
+      "answers": [
+        "800"
+      ],
+      "explanation": "První číslo × 100 = 8 · 100 = 800 MPa.",
+      "hints": [
+        "Podívej se na první číslo před tečkou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je mez kluzu šroubu třídy 10.9 v MPa?",
+      "answers": [
+        "900"
+      ],
+      "explanation": "Re = 10 · 9 · 10 = 900 MPa.",
+      "hints": [
+        "Mez kluzu = první číslo · druhé číslo · 10."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který závit je typický pro vřeteno svěráku?",
+      "options": [
+        "lichoběžníkový Tr",
+        "metrický jemný M",
+        "trubkový G",
+        "oblý Rd"
+      ],
+      "answer": 0,
+      "explanation": "Pohybové šrouby mají lichoběžníkový závit – je pevný a dobře přenáší sílu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojištění s jeho druhem.",
+      "pairs": [
+        [
+          "korunová matice se závlačkou",
+          "tvarové"
+        ],
+        [
+          "kontramatice",
+          "třecí"
+        ],
+        [
+          "lepidlo na závity",
+          "materiálové"
+        ]
+      ],
+      "explanation": "Tvarové = překážka, třecí = tření, materiálové = spojení hmotou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Označení M12 – LH znamená levý závit.",
+      "answer": true,
+      "explanation": "LH (left hand) = levý závit, utahuje se proti směru hodinových ručiček."
+    },
+    {
+      "type": "input",
+      "question": "Šroub s výpočtovým průřezem 84 mm² drží sílu 16 800 N. Jaké je napětí v MPa?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "σ = F / S = 16 800 / 84 = 200 MPa.",
+      "hints": [
+        "Napětí = síla děleno plochou.",
+        "1 N/mm² = 1 MPa."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup kontroly šroubu na tah.",
+      "items": [
+        "zjistit osovou sílu F",
+        "najít průřez šroubu S",
+        "spočítat σ = F / S",
+        "porovnat s dovoleným napětím"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se šroub správně utahuje na předepsanou hodnotu?",
+      "options": [
+        "momentovým klíčem",
+        "prodlouženým klíčem",
+        "kladivem",
+        "rázovým utahovákem na maximum"
+      ],
+      "answer": 0,
+      "explanation": "Momentový klíč ukáže nebo omezí utahovací moment."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi šroubem a svorníkem.",
+      "answer": "Šroub má hlavu a utahuje se maticí nebo do závitu v díře. Svorník nemá hlavu, má závit na obou koncích; jeden konec se natrvalo zašroubuje do dílu a na druhý se nasadí matice."
+    },
+    {
+      "type": "open",
+      "question": "Proč a jak se pojišťují šroubové spoje?",
+      "answer": "Otřesy a chvění mohou matici povolit. Pojišťuje se tvarově (korunová matice se závlačkou, pojistný plech), třením (kontramatice, samojistná matice) nebo materiálově (lepidlo na závity)."
+    }
+  ]
+}

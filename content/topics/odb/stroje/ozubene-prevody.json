@@ -1,0 +1,424 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ozubene-prevody",
+  "title": "Převody ozubenými koly",
+  "emoji": "⚙️",
+  "explanations": [
+    {
+      "title": "Na kole a v hodinách",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na jízdním kole přehodíš řetěz na menší kolečko vzadu: šlapeš těžčeji, ale jedeš rychleji. V převodovce auta, hodinách nebo mixéru dělají totéž **ozubená kola**: mění **otáčky** a **sílu otáčení**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Převod",
+          "definition": "Zařízení, které přenáší otáčení z jednoho hřídele na druhý a obvykle mění otáčky.",
+          "example": "Převodovka auta, převod na kole."
+        },
+        {
+          "type": "term",
+          "term": "Pastorek a kolo",
+          "definition": "V dvojici ozubených kol je **pastorek** to menší, **kolo** to větší.",
+          "example": "Pastorek na hřídeli motoru pohání velké kolo."
+        },
+        {
+          "type": "term",
+          "term": "Převodový poměr i",
+          "definition": "Kolikrát se otočí hnací kolo, než se hnané otočí jednou: `i = n₁ / n₂ = z₂ / z₁` (n = otáčky, z = počet zubů).",
+          "example": "Pastorek 20 zubů, kolo 60 zubů: i = 3."
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment",
+          "definition": "Otáčivý účinek („síla otáčení“), v N·m.",
+          "example": "Motor předává moment 50 N·m."
+        },
+        {
+          "type": "heading",
+          "text": "Co se děje v páru kol"
+        },
+        {
+          "type": "text",
+          "text": "Zuby obou kol se míjejí stejnou rychlostí. Když má velké kolo 3× víc zubů, musí se pastorek otočit 3×, aby velké kolo udělalo jednu otáčku."
+        },
+        {
+          "type": "list",
+          "items": [
+            "převod **do pomala** (i > 1): otáčky klesnou, moment vzroste – rozjezd auta, navijáky",
+            "převod **do rychla** (i < 1): otáčky stoupnou, moment klesne – rychloběžné pohony",
+            "převod **i = 1**: jen přenese otáčení nebo změní směr"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dvě vnější kola se točí **proti sobě**. Když chceš stejný směr, vložíš mezi ně třetí, **vložené** kolo."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy ozubených kol"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď kola podle toho, jak k sobě leží jejich hřídele. **Mimoběžné** hřídele se míjejí (neprotnou se a nejsou rovnoběžné)."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "rovnoběžné hřídele",
+              "různoběžné hřídele",
+              "mimoběžné hřídele"
+            ],
+            "items": [
+              {
+                "text": "čelní kola s přímými zuby",
+                "group": 0
+              },
+              {
+                "text": "čelní kola se šikmými zuby",
+                "group": 0
+              },
+              {
+                "text": "kuželová kola",
+                "group": 1
+              },
+              {
+                "text": "šnek a šnekové kolo",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Šnekový převod",
+          "definition": "Šnek (šroub) pohání šnekové kolo. Dá velký převodový poměr v jednom stupni, třeba 40 : 1. Může být **samosvorný**: kolo nedokáže roztočit šnek zpátky.",
+          "example": "Ladicí mechanika kytary, ruční naviják."
+        },
+        {
+          "type": "example",
+          "question": "Pastorek má 15 zubů a otáčí se 1 200 min⁻¹. Kolo má 45 zubů. Jaký je převodový poměr a otáčky kola?",
+          "answer": "i = z₂ / z₁ = 45 / 15 = **3**. n₂ = n₁ / i = 1 200 / 3 = **400 min⁻¹**."
+        },
+        {
+          "type": "example",
+          "question": "Motor dává 20 N·m. Převod i = 3 s účinností 0,97. Jaký moment je na výstupu?",
+          "answer": "M₂ = M₁ · i · η = 20 · 3 · 0,97 ≈ **58,2 N·m**. Otáčky klesly 3×, moment skoro 3× vzrostl."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Velké kolo se točí rychleji, protože je větší.",
+          "right": "Velké (hnané) kolo se točí **pomaleji**, ale s **větším** momentem.",
+          "why": "Za jednu jeho otáčku musí pastorek odvalit všechny jeho zuby."
+        },
+        {
+          "type": "summary",
+          "text": "Převodový poměr `i = n₁ / n₂ = z₂ / z₁`. Převod do pomala snižuje otáčky a zvyšuje moment. Čelní kola spojují rovnoběžné hřídele, kuželová různoběžné, šnek mimoběžné."
+        }
+      ]
+    },
+    {
+      "title": "Rozměry kola",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik v dílně má vyrobit náhradní ozubené kolo. Na výkresu najde jen **modul a počet zubů**. Z nich spočítá všechny průměry i osovou vzdálenost."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Ozubené kolo, pastorek",
+          "definition": "Kolo se zuby po obvodu; menší z dvojice se jmenuje pastorek.",
+          "example": "Pastorek 20 zubů, kolo 60 zubů."
+        },
+        {
+          "type": "term",
+          "term": "Roztečná kružnice d",
+          "definition": "Pomyslná kružnice, na které se dvě kola v záběru navzájem „odvalují“.",
+          "example": "Kolo m = 3, z = 20 má d = 60 mm."
+        },
+        {
+          "type": "term",
+          "term": "Rozteč p",
+          "definition": "Vzdálenost dvou sousedních zubů měřená po roztečné kružnici.",
+          "example": "p = π · m."
+        },
+        {
+          "type": "term",
+          "term": "Modul m",
+          "definition": "Základní míra velikosti zubu v milimetrech: `m = p / π`. Kola v záběru musí mít **stejný modul**. Moduly jsou normalizované (1; 1,25; 1,5; 2; 2,5; 3; 4; 5…).",
+          "example": "Modul 2 mm – malé zuby, modul 10 mm – velké zuby bagru."
+        },
+        {
+          "type": "term",
+          "term": "Převodový poměr i",
+          "definition": "`i = n₁ / n₂ = z₂ / z₁`, poměr otáček hnacího a hnaného kola.",
+          "example": "z₁ = 20, z₂ = 60: i = 3."
+        },
+        {
+          "type": "heading",
+          "text": "Vzorce čelního kola s přímými zuby"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rozměr",
+            "Vzorec"
+          ],
+          "rows": [
+            [
+              "roztečný průměr",
+              "d = m · z"
+            ],
+            [
+              "hlavový průměr (vnější)",
+              "da = d + 2m = m · (z + 2)"
+            ],
+            [
+              "patní průměr (dno zubů)",
+              "df = d − 2,5m"
+            ],
+            [
+              "výška zubu",
+              "h = 2,25m (hlava m, pata 1,25m)"
+            ],
+            [
+              "osová vzdálenost",
+              "a = (d₁ + d₂) / 2 = m · (z₁ + z₂) / 2"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Běžný úhel záběru je **20°** a boky zubů mají tvar **evolventy** (zakřivené křivky, kterou opíše konec napnuté nitě odvíjené z válce). Díky tomu se zuby po sobě odvalují s malým třením."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti modul m a počty zubů z₁, z₂.",
+            "Spočítej roztečné průměry d = m · z.",
+            "Spočítej hlavové a patní průměry.",
+            "Osová vzdálenost: polovina součtu roztečných průměrů.",
+            "Převodový poměr z₂ / z₁ a výstupní otáčky n₂ = n₁ / i."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "m = 3 mm, z₁ = 20, z₂ = 60. Spočítej d₁, d₂, da₁, df₁ a osovou vzdálenost.",
+          "answer": "d₁ = 3 · 20 = **60 mm**, d₂ = 3 · 60 = **180 mm**. da₁ = 60 + 6 = **66 mm**, df₁ = 60 − 7,5 = **52,5 mm**. a = (60 + 180) / 2 = **120 mm**."
+        },
+        {
+          "type": "example",
+          "question": "Dvoustupňová převodovka má i₁ = 3 a i₂ = 4. Jaký je celkový převod a výstupní otáčky při 1 440 min⁻¹ na vstupu?",
+          "answer": "Převody stupňů se **násobí**: i = 3 · 4 = **12**. n = 1 440 / 12 = **120 min⁻¹**."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Kolo m = 2, z = 30 má roztečný průměr ",
+                "after": " mm.",
+                "options": [
+                  "60",
+                  "32",
+                  "15"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Hlavový průměr téhož kola je ",
+                "after": " mm.",
+                "options": [
+                  "64",
+                  "62",
+                  "60"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Kola v záběru musí mít stejný ",
+                "after": ".",
+                "options": [
+                  "modul",
+                  "počet zubů"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hlavový průměr = m · z.",
+          "right": "m · z je **roztečný** průměr. Hlavový je o 2m větší: da = m · (z + 2).",
+          "why": "Zuby přečnívají přes roztečnou kružnici o výšku hlavy, která je rovná modulu."
+        },
+        {
+          "type": "summary",
+          "text": "Modul m = p / π. Roztečný průměr d = m · z, hlavový da = m(z + 2), patní df = d − 2,5m, osová vzdálenost a = m(z₁ + z₂)/2. Převody více stupňů se násobí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Pastorek má 18 zubů, kolo 54 zubů. Jaký je převodový poměr?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "i = 54 / 18 = 3."
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane s momentem při převodu do pomala?",
+      "options": [
+        "vzroste",
+        "klesne",
+        "nezmění se",
+        "změní znaménko"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jaký je roztečný průměr kola s m = 4 mm a z = 25 (v mm)?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "d = m · z = 4 · 25 = 100 mm.",
+      "hints": [
+        "Roztečný průměr je součin dvou čísel ze zadání."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký je hlavový průměr kola s m = 2 mm a z = 40 (v mm)?",
+      "answers": [
+        "84"
+      ],
+      "explanation": "da = m · (z + 2) = 2 · 42 = 84 mm.",
+      "hints": [
+        "K počtu zubů přičti 2 a vynásob modulem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kola m = 2, z₁ = 20, z₂ = 50. Jaká je osová vzdálenost v mm?",
+      "answers": [
+        "70"
+      ],
+      "explanation": "a = 2 · (20 + 50) / 2 = 70 mm.",
+      "hints": [
+        "Spočítej oba roztečné průměry.",
+        "Osová vzdálenost je polovina jejich součtu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvě kola v záběru mohou mít různý modul.",
+      "answer": false,
+      "explanation": "Zuby musí mít stejnou velikost, jinak do sebe nezapadnou."
+    },
+    {
+      "type": "choice",
+      "question": "Který převod spojuje mimoběžné hřídele a dá velký poměr v jednom stupni?",
+      "options": [
+        "šnekový",
+        "kuželový",
+        "čelní s přímými zuby",
+        "čelní se šikmými zuby"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Motor 1 500 min⁻¹, převod i = 5. Kolik otáček za minutu má výstup?",
+      "answers": [
+        "300"
+      ],
+      "explanation": "n₂ = 1 500 / 5 = 300 min⁻¹."
+    },
+    {
+      "type": "input",
+      "question": "Dvoustupňová převodovka: i₁ = 2,5 a i₂ = 4. Jaký je celkový převodový poměr?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "i = 2,5 · 4 = 10.",
+      "hints": [
+        "Převody za sebou se nesčítají."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj rozměr se vzorcem.",
+      "pairs": [
+        [
+          "roztečný průměr",
+          "m · z"
+        ],
+        [
+          "hlavový průměr",
+          "m · (z + 2)"
+        ],
+        [
+          "rozteč",
+          "π · m"
+        ],
+        [
+          "výška zubu",
+          "2,25 · m"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvě vnější čelní kola v záběru se otáčejí opačnými směry.",
+      "answer": true,
+      "explanation": "Pro stejný směr je potřeba vložené kolo."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je běžný úhel záběru evolventního ozubení?",
+      "options": [
+        "20°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je modul ozubeného kola a proč je důležitý.",
+      "answer": "Modul je rozteč zubů dělená π, udává velikost zubu v milimetrech. Kola v záběru musí mít stejný modul, jinak do sebe zuby nezapadnou. Z modulu a počtu zubů se spočítají všechny průměry kola."
+    },
+    {
+      "type": "open",
+      "question": "Jak převod do pomala mění otáčky a moment a kde se používá?",
+      "answer": "Snižuje otáčky v poměru i a zhruba ve stejném poměru zvyšuje krouticí moment (zmenšeno o ztráty, účinnost). Používá se tam, kde je potřeba velká síla otáčení: rozjezd auta, navijáky, míchačky, pohony dopravníků."
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "potrubi-armatury",
+  "title": "Potrubí a armatury",
+  "emoji": "🚰",
+  "explanations": [
+    {
+      "title": "Doma i v továrně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Doma otočíš kohoutkem a teče voda. Pod dřezem je ventil, kterým vodu zavřeš při opravě. V továrně vedou trubkami pára, stlačený vzduch, olej nebo plyn. Všechno to je **potrubí** a **armatury**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Potrubí",
+          "definition": "Soustava trubek, tvarovek a spojů, kterou proudí kapalina nebo plyn.",
+          "example": "Vodovod, plynovod, rozvod stlačeného vzduchu."
+        },
+        {
+          "type": "term",
+          "term": "Tvarovka",
+          "definition": "Díl potrubí, který mění směr nebo průměr nebo potrubí větví.",
+          "example": "Koleno (zatáčka), T-kus (odbočka), redukce (zúžení)."
+        },
+        {
+          "type": "term",
+          "term": "Armatura",
+          "definition": "Zařízení na potrubí, kterým se průtok **uzavírá, reguluje nebo jistí**.",
+          "example": "Ventil, kohout, šoupátko, zpětná klapka."
+        },
+        {
+          "type": "term",
+          "term": "DN a PN",
+          "definition": "**DN** (jmenovitá světlost) je zaokrouhlený vnitřní průměr v mm. **PN** (jmenovitý tlak) je tlak v barech, na který je díl stavěný.",
+          "example": "Ventil DN 50 PN 16: světlost asi 50 mm, tlak 16 bar."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se trubky spojují"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**závitem** – menší ocelové trubky, domácí rozvody",
+            "**přírubami** – dvě příruby se těsněním mezi nimi stáhnou šrouby; jde rozebrat",
+            "**svařením** – ocelové a plastové trubky (polyfúze), trvalé a těsné",
+            "**pájením nebo lisováním** – měděné trubky",
+            "**lepením** – trubky z PVC"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Druhy armatur"
+        },
+        {
+          "type": "text",
+          "text": "Zkus armatury roztřídit podle toho, k čemu slouží."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "uzavírá nebo reguluje",
+              "jistí"
+            ],
+            "items": [
+              {
+                "text": "šoupátko",
+                "group": 0
+              },
+              {
+                "text": "ventil",
+                "group": 0
+              },
+              {
+                "text": "kulový kohout",
+                "group": 0
+              },
+              {
+                "text": "uzavírací klapka",
+                "group": 0
+              },
+              {
+                "text": "pojistný ventil",
+                "group": 1
+              },
+              {
+                "text": "zpětná klapka",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Pojistný ventil",
+          "definition": "Ventil, který se **sám otevře**, když tlak překročí nastavenou hodnotu, a přebytek vypustí. Chrání nádobu nebo kotel před roztržením.",
+          "example": "Pojistný ventil u bojleru."
+        },
+        {
+          "type": "term",
+          "term": "Zpětná klapka",
+          "definition": "Pustí proud jen jedním směrem. Když se proud otočí, sama se zavře.",
+          "example": "Za čerpadlem, aby voda neutekla zpátky do studny."
+        },
+        {
+          "type": "heading",
+          "text": "Barvy potrubí"
+        },
+        {
+          "type": "text",
+          "text": "V provozech se potrubí označuje barvou podle látky (ČSN 13 0072). Například **voda zelená, pára červená, vzduch modrý, plyny žluté**. Hned vidíš, na co nesahat."
+        },
+        {
+          "type": "example",
+          "question": "Proč se potrubí s horkou vodou nebo párou dělá s ohyby nebo kompenzátory?",
+          "answer": "Při ohřátí se ocel **prodlužuje**. Rovné potrubí sevřené na obou koncích by se prohnulo nebo utrhlo uložení. Ohyb (U-kompenzátor) nebo vlnovec délku vyrovná."
+        },
+        {
+          "type": "example",
+          "question": "Jakou armaturu dáš za čerpadlo, které čerpá vodu ze studny do domu?",
+          "answer": "**Zpětnou klapku** (zpětný ventil). Když se čerpadlo zastaví, voda neodteče zpět do studny a potrubí zůstane plné."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Šoupátko mohu nechat napůl otevřené a regulovat jím průtok.",
+          "right": "Šoupátko má být **úplně otevřené, nebo úplně zavřené**. K regulaci slouží ventil.",
+          "why": "V pootevřeném šoupátku proud víří a deska i sedlo se rychle opotřebí."
+        },
+        {
+          "type": "summary",
+          "text": "Potrubí tvoří trubky, tvarovky, spoje a armatury. DN je jmenovitá světlost, PN jmenovitý tlak. Armatury uzavírají (šoupátko, kohout), regulují (ventil) a jistí (pojistný ventil, zpětná klapka)."
+        }
+      ]
+    },
+    {
+      "title": "Armatury a výpočty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik navrhuje rozvod vody v dílně. Musí zvolit průměr potrubí, vybrat armatury a myslet na to, že se horké potrubí prodlužuje. Pomohou mu tři jednoduché výpočty a přehled armatur."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Potrubí a armatura",
+          "definition": "**Potrubí** = trubky a tvarovky, kterými teče kapalina nebo plyn. **Armatura** = zařízení na potrubí, které průtok uzavírá, reguluje nebo jistí.",
+          "example": "Vodovod a uzavírací ventil."
+        },
+        {
+          "type": "term",
+          "term": "DN a PN",
+          "definition": "DN = jmenovitá světlost (přibližný vnitřní průměr v mm). PN = jmenovitý tlak v barech (1 bar = 0,1 MPa).",
+          "example": "PN 16 = 16 bar = 1,6 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Průtok Q",
+          "definition": "Objem, který proteče za sekundu: `Q = S · v`, kde S je plocha průřezu trubky a v rychlost proudu.",
+          "example": "S = 0,002 m², v = 2 m/s: Q = 0,004 m³/s = 4 l/s."
+        },
+        {
+          "type": "term",
+          "term": "Teplotní roztažnost",
+          "definition": "Prodloužení trubky při ohřátí: `Δl = α · l · Δt`. Pro ocel je α přibližně 12 · 10⁻⁶ 1/K.",
+          "example": "Ocelová trubka 10 m ohřátá o 50 °C se prodlouží asi o 6 mm."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled uzavíracích armatur"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Armatura",
+            "Jak pracuje",
+            "Výhoda",
+            "Nevýhoda"
+          ],
+          "rows": [
+            [
+              "ventil",
+              "kuželka dosedne na sedlo, proud mění směr",
+              "dobře těsní, reguluje",
+              "větší odpor proudění"
+            ],
+            [
+              "šoupátko",
+              "deska se zasune kolmo do proudu",
+              "otevřené skoro nebrzdí proud",
+              "neslouží k regulaci, dlouhá stavební výška"
+            ],
+            [
+              "kohout (kulový)",
+              "koule s otvorem se otočí o 90°",
+              "rychle otevře i zavře",
+              "rychlé zavření může způsobit tlakový ráz"
+            ],
+            [
+              "klapka",
+              "kotouč se v potrubí natočí",
+              "lehká, i pro velké DN",
+              "kotouč zůstává v proudu"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Výpočet průtoku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Převeď průměr na metry.",
+            "Plocha průřezu `S = π · d² / 4`.",
+            "Průtok `Q = S · v`.",
+            "Převeď na litry za sekundu: 1 m³ = 1 000 l."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Trubka s vnitřním průměrem 50 mm, voda teče rychlostí 2 m/s. Jaký je průtok?",
+          "answer": "S = π · 0,05² / 4 = 0,001 96 m². Q = 0,001 96 · 2 = 0,003 93 m³/s ≈ **3,9 l/s**."
+        },
+        {
+          "type": "example",
+          "question": "Ocelové parní potrubí dlouhé 50 m se ohřeje z 20 °C na 100 °C. O kolik se prodlouží?",
+          "answer": "Δt = 80 K. Δl = 12 · 10⁻⁶ · 50 · 80 = 0,048 m = **48 mm**. Proto potřebuje kompenzátor."
+        },
+        {
+          "type": "heading",
+          "text": "Převody tlaků"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "PN 10 znamená tlak ",
+                "after": " bar.",
+                "options": [
+                  "10",
+                  "1",
+                  "100"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "1 bar je ",
+                "after": " MPa.",
+                "options": [
+                  "0,1",
+                  "1",
+                  "10"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "K regulaci průtoku se hodí ",
+                "after": ".",
+                "options": [
+                  "ventil",
+                  "šoupátko"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Proti zpětnému toku chrání ",
+                "after": ".",
+                "options": [
+                  "zpětná klapka",
+                  "redukce"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "DN 50 znamená, že vnější průměr trubky je přesně 50 mm.",
+          "right": "DN je **jmenovitá světlost** – zaokrouhlený vnitřní průměr. Skutečné rozměry se liší podle druhu trubky.",
+          "why": "Například ocelová trubka DN 50 má vnější průměr kolem 60 mm."
+        },
+        {
+          "type": "summary",
+          "text": "Průtok Q = S · v, prodloužení Δl = α · l · Δt. Ventil reguluje, šoupátko a kohout jen uzavírají, pojistný ventil a zpětná klapka jistí. PN se udává v barech."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená PN 16?",
+      "options": [
+        "jmenovitý tlak 16 bar",
+        "jmenovitá světlost 16 mm",
+        "16 přírub",
+        "délka 16 m"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která armatura se hodí k regulaci průtoku?",
+      "options": [
+        "ventil",
+        "šoupátko",
+        "zpětná klapka",
+        "pojistný ventil"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pojistný ventil se otevře sám, když tlak překročí nastavenou hodnotu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jakou barvou se podle ČSN 13 0072 označuje potrubí s párou?",
+      "options": [
+        "červenou",
+        "zelenou",
+        "modrou",
+        "žlutou"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj látku s barvou potrubí.",
+      "pairs": [
+        [
+          "voda",
+          "zelená"
+        ],
+        [
+          "pára",
+          "červená"
+        ],
+        [
+          "vzduch",
+          "modrá"
+        ],
+        [
+          "plyn",
+          "žlutá"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se spojují plastové trubky PVC?",
+      "options": [
+        "lepením",
+        "pájením",
+        "nýtováním",
+        "závitem s konopím"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Trubka má průřez 0,002 m² a voda teče 1,5 m/s. Jaký je průtok v litrech za sekundu?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Q = 0,002 · 1,5 = 0,003 m³/s = 3 l/s.",
+      "hints": [
+        "Q = S · v",
+        "1 m³ = 1 000 litrů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik MPa je 16 bar?",
+      "answers": [
+        "1,6",
+        "1.6"
+      ],
+      "explanation": "1 bar = 0,1 MPa, takže 16 bar = 1,6 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Ocelová trubka (α = 12 · 10⁻⁶ 1/K) dlouhá 10 m se ohřeje o 50 K. O kolik mm se prodlouží?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Δl = 12 · 10⁻⁶ · 10 · 50 = 0,006 m = 6 mm.",
+      "hints": [
+        "Výsledek vyjde v metrech, převeď na mm."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Šoupátko je vhodné nechávat napůl otevřené.",
+      "answer": false,
+      "explanation": "Deska by se opotřebila; šoupátko je jen otevřeno nebo zavřeno."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží kompenzátor na potrubí?",
+      "options": [
+        "vyrovná teplotní prodloužení",
+        "zvýší tlak",
+        "zabrání zpětnému toku",
+        "vyčistí vodu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu průtoku trubkou.",
+      "items": [
+        "převést průměr na metry",
+        "spočítat S = π · d² / 4",
+        "spočítat Q = S · v",
+        "převést na litry za sekundu"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej ventil a šoupátko.",
+      "answer": "Ventil má kuželku, která dosedá na sedlo; proud v něm mění směr, takže má větší odpor, ale dobře těsní a hodí se k regulaci. Šoupátko má desku, která se zasouvá kolmo do proudu; otevřené skoro nebrzdí proud, ale slouží jen k úplnému otevření nebo zavření."
+    },
+    {
+      "type": "open",
+      "question": "Jaké armatury jistí potrubí a co dělají?",
+      "answer": "Pojistný ventil se sám otevře při překročení nastaveného tlaku a chrání zařízení před roztržením. Zpětná klapka nebo zpětný ventil pustí proud jen jedním směrem a při zpětném toku se sami zavřou."
+    }
+  ]
+}
