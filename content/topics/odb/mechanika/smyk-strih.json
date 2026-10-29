@@ -1,0 +1,433 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "smyk-strih",
+  "title": "Smyk a střih",
+  "emoji": "✂️",
+  "explanations": [
+    {
+      "title": "Nůžky a děrovačka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nůžky stříhají papír dvěma břity, které se míjejí těsně u sebe. Stejně pracuje stříhací lis v dílně nebo děrovačka plechu. A naopak: čep, kolík nebo nýt se nesmí **useknout**. Obojí popisuje **smyk a střih**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Napětí",
+          "definition": "Síla rozpočítaná na plochu průřezu, v MPa (1 MPa = 1 N/mm²).",
+          "example": "1 000 N na 10 mm² = 100 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Smyk",
+          "definition": "Namáhání, kdy dvě sousední části materiálu chtějí **sklouznout** po sobě – síly působí napříč, kolmo k ose.",
+          "example": "Čep spojující dvě táhla."
+        },
+        {
+          "type": "term",
+          "term": "Střih",
+          "definition": "Smyk dovedený až k oddělení materiálu. Využívá se při stříhání a děrování.",
+          "example": "Lis vystřihne z plechu kotouč."
+        },
+        {
+          "type": "term",
+          "term": "Smykové napětí τ (tau)",
+          "definition": "`τ = F / S`, kde S je plocha, ve které by se materiál usekl.",
+          "example": "Čep 78,5 mm², síla 3 925 N: τ = 50 MPa."
+        },
+        {
+          "type": "heading",
+          "text": "Spoj, který se nesmí useknout"
+        },
+        {
+          "type": "text",
+          "text": "Čep spojuje táhlo a vidlici. Pokud prochází jen dvěma plechy, usekl by se v jednom místě – je **jednostřižný**. Ve vidlici prochází třemi plechy a usekl by se ve dvou místech – je **dvojstřižný** a vydrží dvakrát víc."
+        },
+        {
+          "type": "example",
+          "question": "Kolík d = 10 mm je dvojstřižný a přenáší 8 kN. Jaké je smykové napětí?",
+          "answer": "S = π · 10² / 4 = 78,5 mm². τ = 8 000 / (2 · 78,5) ≈ **51 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "Spoj, který se má useknout"
+        },
+        {
+          "type": "text",
+          "text": "Při stříhání naopak **chceme** materiál přestřihnout. Síla musí překonat **pevnost ve střihu** materiálu na celé ploše střihu."
+        },
+        {
+          "type": "term",
+          "term": "Pevnost ve střihu τ_ps",
+          "definition": "Smykové napětí, při kterém se materiál oddělí. Pro ocel se často bere přibližně 0,8 · Rm.",
+          "example": "Ocel Rm = 400 MPa: τ_ps ≈ 320 MPa."
+        },
+        {
+          "type": "example",
+          "question": "Děruješ otvor d = 20 mm do plechu tloušťky 3 mm, τ_ps = 320 MPa. Jakou silou musí lis tlačit?",
+          "answer": "Plocha střihu je plášť válečku: S = π · d · t = π · 20 · 3 = 188,5 mm². F = 188,5 · 320 ≈ 60 300 N = **60,3 kN**."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: kde střih nechceme a kde ho chceme?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "střih nežádoucí (kontrolujeme)",
+              "střih žádoucí (technologie)"
+            ],
+            "items": [
+              {
+                "text": "čep táhla",
+                "group": 0
+              },
+              {
+                "text": "nýt mostu",
+                "group": 0
+              },
+              {
+                "text": "pero v náboji",
+                "group": 0
+              },
+              {
+                "text": "děrování plechu",
+                "group": 1
+              },
+              {
+                "text": "tabulové nůžky",
+                "group": 1
+              },
+              {
+                "text": "pojistný střižný kolík při přetížení",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost u stříhání"
+        },
+        {
+          "type": "list",
+          "items": [
+            "lis a nůžky mají **ochranné kryty** nebo světelné závory – ruce nesmí do prostoru nástroje",
+            "lisy se často ovládají **oběma rukama** (dvouruční ovládání), aby ruce byly mimo nástroj",
+            "stříhaný plech má ostré hrany: pracovní rukavice, ochrana očí"
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při děrování je plocha střihu průřez otvoru π · d² / 4.",
+          "right": "Plocha střihu je **plášť** otvoru: `S = π · d · t`.",
+          "why": "Materiál se odděluje po obvodu otvoru přes celou tloušťku plechu."
+        },
+        {
+          "type": "summary",
+          "text": "Smykové napětí τ = F / S. Dvojstřižný spoj má dvě střižné plochy. Při stříhání a děrování je plocha střihu obvod × tloušťka a síla F = S · τ_ps."
+        }
+      ]
+    },
+    {
+      "title": "Výpočet a srovnání",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V technické mechanice se smyk počítá podobně jako tah: síla děleno plocha. Rozdíl je ve směru síly a v tom, jak správně najít **střižnou plochu**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Smyk (střih)",
+          "definition": "Síly působí napříč součástí, těsně vedle sebe a opačně, a snaží se ji „přestřihnout“.",
+          "example": "Čep, kolík, nýt, svar."
+        },
+        {
+          "type": "term",
+          "term": "Smykové napětí τ",
+          "definition": "`τ = F / S` v MPa. S je plocha, ve které by došlo k useknutí.",
+          "example": "F = 6 000 N, S = 100 mm²: τ = 60 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Úhel zkosu γ (gama)",
+          "definition": "Jak moc se při smyku pravoúhlý kousek materiálu zešikmí. Úhel v radiánech.",
+          "example": "Kostka gumy se při smyku překlopí do kosodélníku."
+        },
+        {
+          "type": "term",
+          "term": "Hookův zákon ve smyku",
+          "definition": "`τ = G · γ`. G je **modul pružnosti ve smyku**; pro ocel přibližně 80 000 MPa.",
+          "example": "Ocel je ve smyku asi 2,6× poddajnější než v tahu (E ≈ 210 000 MPa)."
+        },
+        {
+          "type": "term",
+          "term": "Otlačení p",
+          "definition": "Tlak na stykové ploše čepu a díry: `p = F / (d · t)`, d = průměr čepu, t = tloušťka plechu.",
+          "example": "Čep 10 mm v plechu 5 mm, síla 5 kN: p = 100 MPa."
+        },
+        {
+          "type": "heading",
+          "text": "Postup kontroly spoje (čep, nýt, kolík)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej průřez jednoho prvku: `S = π · d² / 4`.",
+            "Urči počet prvků i a počet střižných ploch n.",
+            "Smyk: `τ = F / (i · n · S) ≤ τ_D`.",
+            "Otlačení: `p = F / (i · d · t) ≤ p_D` (t = nejtenčí nosná tloušťka).",
+            "Rozhoduje to, co vyjde hůř."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Spoj se dvěma jednostřižnými čepy d = 12 mm přenáší 18 kN. Plech má 6 mm. Spočítej τ a p.",
+          "answer": "S = π · 12² / 4 = 113,1 mm². τ = 18 000 / (2 · 1 · 113,1) ≈ **79,6 MPa**. p = 18 000 / (2 · 12 · 6) = **125 MPa**."
+        },
+        {
+          "type": "example",
+          "question": "Nůžky stříhají pás plechu široký 100 mm, tlustý 2 mm, τ_ps = 300 MPa. Jaká síla je potřeba?",
+          "answer": "S = b · t = 100 · 2 = 200 mm². F = 200 · 300 = 60 000 N = **60 kN**."
+        },
+        {
+          "type": "heading",
+          "text": "Srovnání tahu a smyku"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Tah / tlak",
+            "Smyk"
+          ],
+          "rows": [
+            [
+              "směr síly",
+              "v ose součásti",
+              "napříč, v rovině řezu"
+            ],
+            [
+              "napětí",
+              "σ = F / S",
+              "τ = F / S"
+            ],
+            [
+              "Hookův zákon",
+              "σ = E · ε",
+              "τ = G · γ"
+            ],
+            [
+              "ocel",
+              "E ≈ 210 000 MPa",
+              "G ≈ 80 000 MPa"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Dvojstřižný čep má ",
+                "after": " střižné plochy.",
+                "options": [
+                  "2",
+                  "1",
+                  "4"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Plocha střihu při děrování je ",
+                "after": ".",
+                "options": [
+                  "π · d · t",
+                  "π · d² / 4"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Modul pružnosti ve smyku se značí ",
+                "after": ".",
+                "options": [
+                  "G",
+                  "E",
+                  "τ"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kontrola čepu na smyk stačí, otlačení není důležité.",
+          "right": "Čep se kontroluje na **smyk i otlačení**.",
+          "why": "Tenký plech se může u čepu vymačkat (ovalizovat díru), i když se čep neusekne."
+        },
+        {
+          "type": "summary",
+          "text": "Smyk: τ = F / (i · n · S), otlačení: p = F / (i · d · t). Hookův zákon ve smyku τ = G · γ. Síla na stříhání F = S · τ_ps, kde S je délka střihu × tloušťka."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak se značí smykové napětí?",
+      "options": [
+        "τ",
+        "σ",
+        "ε",
+        "E"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolík průřezu 50 mm² je jednostřižný a nese 4 000 N. Jaké je smykové napětí v MPa?",
+      "answers": [
+        "80"
+      ],
+      "explanation": "τ = 4 000 / 50 = 80 MPa."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvojstřižný spoj má dvě plochy, ve kterých by se mohl useknout.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Dvojstřižný čep průřezu 100 mm² nese 12 000 N. Jaké je τ v MPa?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "τ = 12 000 / (2 · 100) = 60 MPa.",
+      "hints": [
+        "Síla se rozloží na dvě plochy."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou plochu bereš při děrování otvoru d do plechu tloušťky t?",
+      "options": [
+        "π · d · t",
+        "π · d² / 4",
+        "d · t",
+        "π · d²"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Děrování d = 10 mm, plech 2 mm, τ_ps = 300 MPa. Jaká síla v N? (π ≈ 3,14)",
+      "answers": [
+        "18840",
+        "18850",
+        "18849,6",
+        "18849.6"
+      ],
+      "explanation": "S = 3,14 · 10 · 2 = 62,8 mm². F = 62,8 · 300 = 18 840 N.",
+      "hints": [
+        "Plocha střihu je obvod krát tloušťka."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pás šířky 50 mm, tloušťky 4 mm, τ_ps = 250 MPa. Síla na ustřižení v kN?",
+      "answers": [
+        "50"
+      ],
+      "explanation": "S = 200 mm², F = 50 000 N = 50 kN."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pevnost ve střihu oceli se často bere přibližně jako 0,8 · Rm.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč mají lisy dvouruční ovládání?",
+      "options": [
+        "obě ruce jsou při zdvihu mimo nástroj",
+        "lis je silnější",
+        "je to pohodlnější",
+        "šetří energii"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Čep d = 10 mm v plechu 5 mm přenáší 5 000 N. Jaké je otlačení v MPa?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "p = 5 000 / (10 · 5) = 100 MPa."
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s Hookovým zákonem nebo modulem.",
+      "pairs": [
+        [
+          "tah",
+          "σ = E · ε"
+        ],
+        [
+          "smyk",
+          "τ = G · γ"
+        ],
+        [
+          "G oceli",
+          "asi 80 000 MPa"
+        ],
+        [
+          "E oceli",
+          "asi 210 000 MPa"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky kontroly nýtového spoje.",
+      "items": [
+        "průřez nýtu S = π d² / 4",
+        "počet nýtů a střižných ploch",
+        "smykové napětí τ",
+        "otlačení p",
+        "porovnání s dovolenými hodnotami"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi smykem a tahem.",
+      "answer": "V tahu působí síla v ose součásti a natahuje ji, napětí σ = F / S. Ve smyku působí síly napříč těsně vedle sebe a snaží se části posunout po sobě nebo součást přestřihnout, napětí τ = F / S, kde S je plocha možného useknutí."
+    },
+    {
+      "type": "open",
+      "question": "Kdy střih chceme a kdy ne? Uveď příklady.",
+      "answer": "Nechceme ho u spojovacích součástí: čepy, kolíky, nýty, pera – ty se kontrolují, aby se neusekly. Chceme ho při stříhání a děrování plechu a u pojistného střižného kolíku, který se při přetížení záměrně usekne."
+    }
+  ]
+}

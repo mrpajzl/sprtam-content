@@ -1,0 +1,399 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "dynamika",
+  "title": "Dynamika: síla, práce, výkon, účinnost",
+  "emoji": "🚀",
+  "explanations": [
+    {
+      "title": "Newtonovy zákony",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V autobuse při prudkém brzdění letíš dopředu. Prázdný vozík rozjedeš snadno, plný těžko. Když odstrčíš loďku, sám odplaveš opačně. Všechno to popisují **tři Newtonovy zákony**. **Dynamika** zkoumá, **proč** se tělesa pohybují tak, jak se pohybují."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hmotnost m",
+          "definition": "Kolik látky těleso má a jak moc se brání změně pohybu. Jednotka kg.",
+          "example": "Auto 1 200 kg."
+        },
+        {
+          "type": "term",
+          "term": "Síla F",
+          "definition": "Působení, které mění pohyb tělesa. Jednotka newton (N).",
+          "example": "Motor tlačí auto silou 2 400 N."
+        },
+        {
+          "type": "term",
+          "term": "Zrychlení a",
+          "definition": "O kolik se rychlost změní za 1 s, v m/s².",
+          "example": "a = 2 m/s²: každou sekundu o 2 m/s rychleji."
+        },
+        {
+          "type": "heading",
+          "text": "Tři zákony"
+        },
+        {
+          "type": "term",
+          "term": "1. zákon – setrvačnost",
+          "definition": "Těleso zůstává v klidu nebo v rovnoměrném přímočarém pohybu, dokud na něj nepůsobí výsledná síla.",
+          "example": "Při brzdění autobusu tvé tělo pokračuje v pohybu dopředu."
+        },
+        {
+          "type": "term",
+          "term": "2. zákon – zákon síly",
+          "definition": "`F = m · a`. Čím větší síla, tím větší zrychlení. Čím větší hmotnost, tím menší zrychlení.",
+          "example": "Dvojnásobný náklad = poloviční zrychlení při stejné síle."
+        },
+        {
+          "type": "term",
+          "term": "3. zákon – akce a reakce",
+          "definition": "Když těleso A působí na B silou, B působí na A stejně velkou silou opačného směru. Síly působí na **různá** tělesa.",
+          "example": "Raketa tlačí plyny dozadu, plyny tlačí raketu dopředu."
+        },
+        {
+          "type": "text",
+          "text": "Přiřaď každou situaci k zákonu, který ji nejlépe vysvětluje."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "1. setrvačnost",
+              "2. F = m · a",
+              "3. akce a reakce"
+            ],
+            "items": [
+              {
+                "text": "bezpečnostní pás při nárazu",
+                "group": 0
+              },
+              {
+                "text": "ubrus vytržený zpod talířů",
+                "group": 0
+              },
+              {
+                "text": "plný vozík se rozjíždí pomaleji",
+                "group": 1
+              },
+              {
+                "text": "silnější motor = rychlejší rozjezd",
+                "group": 1
+              },
+              {
+                "text": "zpětný ráz pušky",
+                "group": 2
+              },
+              {
+                "text": "veslování",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Auto 1 200 kg zrychluje 2 m/s². Jakou výslednou silou na něj působí pohon?",
+          "answer": "F = m · a = 1 200 · 2 = **2 400 N**."
+        },
+        {
+          "type": "example",
+          "question": "Výtah 500 kg se rozjíždí nahoru se zrychlením 1 m/s². Jakou silou táhne lano?",
+          "answer": "Lano musí unést tíhu a ještě zrychlovat: F = m · (g + a) = 500 · (9,81 + 1) = **5 405 N**. V klidu by to bylo jen 4 905 N."
+        },
+        {
+          "type": "heading",
+          "text": "Práce a výkon"
+        },
+        {
+          "type": "term",
+          "term": "Práce W a výkon P",
+          "definition": "Práce `W = F · s` (J) – síla krát dráha ve směru síly. Výkon `P = W / t` (W) – práce za sekundu.",
+          "example": "Zvedneš 100 N do výšky 2 m: W = 200 J; za 4 s je P = 50 W."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Akce a reakce se vyruší, takže se nic nepohne.",
+          "right": "Akce a reakce působí na **dvě různá tělesa**, proto se nevyruší.",
+          "why": "Vyrušit se mohou jen síly působící na **stejné** těleso."
+        },
+        {
+          "type": "summary",
+          "text": "1. zákon: setrvačnost. 2. zákon: F = m · a. 3. zákon: akce a reakce na různá tělesa. Práce W = F · s, výkon P = W / t."
+        }
+      ]
+    },
+    {
+      "title": "Práce, výkon, účinnost",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jeřáb má zvednout paletu cihel na střechu. Jak silný motor potřebuje? Kolik energie spotřebuje? Na to stačí práce, výkon a **účinnost** – nejpoužívanější vztahy strojaře."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Síla a hmotnost",
+          "definition": "Síla F (N) mění pohyb tělesa, hmotnost m (kg) mu v tom brání. Platí `F = m · a`; tíha `G = m · g`, g = 9,81 m/s².",
+          "example": "Paleta 500 kg má tíhu 4 905 N."
+        },
+        {
+          "type": "term",
+          "term": "Práce W",
+          "definition": "`W = F · s · cos α` (J), α je úhel mezi silou a dráhou. Když síla míří ve směru pohybu, `W = F · s`.",
+          "example": "Zvednutí tíhy G do výšky h: W = G · h."
+        },
+        {
+          "type": "term",
+          "term": "Výkon P",
+          "definition": "`P = W / t` (W). Pro pohyb stálou rychlostí `P = F · v`, pro otáčení `P = M · ω`.",
+          "example": "Síla 1 000 N při 2 m/s: P = 2 000 W."
+        },
+        {
+          "type": "term",
+          "term": "Účinnost η (éta)",
+          "definition": "Kolik z dodaného výkonu (příkonu) stroj skutečně využije: `η = P_výkon / P_příkon`. Vždy menší než 1, zbytek se mění na teplo.",
+          "example": "Motor s η = 0,9 promění 90 % elektrické energie v práci."
+        },
+        {
+          "type": "term",
+          "term": "Energie",
+          "definition": "Schopnost konat práci (J). **Pohybová** `Ek = ½ · m · v²`, **polohová** `Ep = m · g · h`.",
+          "example": "Auto 1 000 kg při 20 m/s má Ek = 200 kJ."
+        },
+        {
+          "type": "heading",
+          "text": "Postup výpočtu pohonu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej užitečnou práci (např. W = m · g · h).",
+            "Výkon na výstupu: P = W / t.",
+            "Příkon: P_příkon = P / η.",
+            "Více strojů za sebou: η = η₁ · η₂ · …"
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jeřáb zvedne 500 kg do výšky 12 m za 20 s. Účinnost pohonu 0,8. Jaký je potřebný výkon a příkon?",
+          "answer": "W = 500 · 9,81 · 12 = 58 860 J. P = 58 860 / 20 ≈ **2 943 W**. Příkon = 2 943 / 0,8 ≈ **3 679 W** ≈ 3,7 kW."
+        },
+        {
+          "type": "example",
+          "question": "Motor s η₁ = 0,9 pohání převodovku s η₂ = 0,95. Jaká je celková účinnost a kolik W ztrát vznikne při příkonu 10 kW?",
+          "answer": "η = 0,9 · 0,95 = **0,855**. Výstup 8 550 W, ztráty 10 000 − 8 550 = **1 450 W** (teplo)."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "W",
+            "items": [
+              {
+                "label": "příkon motoru",
+                "value": 10000
+              },
+              {
+                "label": "výkon motoru",
+                "value": 9000
+              },
+              {
+                "label": "výkon za převodovkou",
+                "value": 8550
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Graf ukazuje, jak výkon postupně ubývá v každém dalším stroji řetězce."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "2. Newtonův zákon",
+                "back": "F = m · a"
+              },
+              {
+                "front": "práce",
+                "back": "W = F · s"
+              },
+              {
+                "front": "výkon",
+                "back": "P = W / t = F · v = M · ω"
+              },
+              {
+                "front": "účinnost",
+                "back": "η = P / P_příkon"
+              },
+              {
+                "front": "1 kWh",
+                "back": "3,6 MJ"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Účinnosti strojů za sebou se sčítají: 0,9 + 0,95.",
+          "right": "Účinnosti se **násobí**: 0,9 · 0,95 = 0,855.",
+          "why": "Každý stroj ztratí část toho, co dostal od předchozího."
+        },
+        {
+          "type": "summary",
+          "text": "Práce W = F · s, výkon P = W / t = F · v = M · ω, účinnost η = P / P_příkon < 1. Účinnosti řazených strojů se násobí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který Newtonův zákon vysvětluje funkci bezpečnostního pásu?",
+      "options": [
+        "1. zákon setrvačnosti",
+        "2. zákon síly",
+        "3. zákon akce a reakce",
+        "zákon zachování hmotnosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Těleso 50 kg zrychluje 4 m/s². Jaká výsledná síla na něj působí (N)?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "F = m · a = 50 · 4 = 200 N."
+    },
+    {
+      "type": "input",
+      "question": "Síla 600 N působí na těleso 200 kg. Jaké je zrychlení (m/s²)?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "a = F / m = 600 / 200 = 3 m/s²."
+    },
+    {
+      "type": "truefalse",
+      "question": "Akce a reakce působí na stejné těleso, a proto se ruší.",
+      "answer": false,
+      "explanation": "Působí na dvě různá tělesa."
+    },
+    {
+      "type": "input",
+      "question": "Síla 250 N posune bednu o 8 m ve směru síly. Jakou práci vykoná (J)?",
+      "answers": [
+        "2000"
+      ],
+      "explanation": "W = 250 · 8 = 2 000 J."
+    },
+    {
+      "type": "input",
+      "question": "Stroj vykoná práci 6 000 J za 30 s. Jaký je jeho výkon (W)?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "P = 6 000 / 30 = 200 W."
+    },
+    {
+      "type": "input",
+      "question": "Motor má příkon 5 kW a výkon 4 kW. Jaká je účinnost (desetinné číslo)?",
+      "answers": [
+        "0,8",
+        "0.8"
+      ],
+      "explanation": "η = 4 / 5 = 0,8."
+    },
+    {
+      "type": "input",
+      "question": "Dva stroje za sebou mají účinnosti 0,9 a 0,8. Jaká je celková účinnost?",
+      "answers": [
+        "0,72",
+        "0.72"
+      ],
+      "explanation": "η = 0,9 · 0,8 = 0,72.",
+      "hints": [
+        "Účinnosti se nesčítají."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se počítá výkon při otáčivém pohybu?",
+      "options": [
+        "P = M · ω",
+        "P = F · s",
+        "P = m · a",
+        "P = M / ω"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Dopravník táhne silou 1 500 N rychlostí 2 m/s. Jaký je výkon (W)?",
+      "answers": [
+        "3000"
+      ],
+      "explanation": "P = F · v = 1 500 · 2 = 3 000 W."
+    },
+    {
+      "type": "truefalse",
+      "question": "Účinnost skutečného stroje může být větší než 1.",
+      "answer": false,
+      "explanation": "Vždy vznikají ztráty, η < 1."
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s jednotkou.",
+      "pairs": [
+        [
+          "síla",
+          "N"
+        ],
+        [
+          "práce",
+          "J"
+        ],
+        [
+          "výkon",
+          "W"
+        ],
+        [
+          "účinnost",
+          "bez jednotky"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyslov tři Newtonovy zákony a ke každému uveď příklad.",
+      "answer": "1. Těleso setrvává v klidu nebo rovnoměrném přímočarém pohybu, dokud na něj nepůsobí výsledná síla (bezpečnostní pás). 2. F = m · a (plný vozík se rozjíždí pomaleji). 3. Akce a reakce jsou stejně velké, opačné a působí na různá tělesa (zpětný ráz pušky)."
+    },
+    {
+      "type": "open",
+      "question": "Co je účinnost stroje a proč je vždy menší než 1?",
+      "answer": "Účinnost je poměr užitečného výkonu a příkonu, η = P / P_příkon. Část energie se vždy ztratí třením, ohřevem nebo hlukem, a proto je výkon menší než příkon a η < 1."
+    }
+  ]
+}

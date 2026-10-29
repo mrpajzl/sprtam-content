@@ -1,0 +1,375 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "kinematika",
+  "title": "Kinematika: pohyb přímočarý a otáčivý",
+  "emoji": "🏎️",
+  "explanations": [
+    {
+      "title": "Auto a soustruh",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Auto se rozjíždí na křižovatce, vřeteno soustruhu se točí, výtah zpomaluje u patra. **Kinematika** popisuje, jak se tělesa pohybují: jak rychle, jak dlouho a jakou dráhu urazí. Neptá se zatím, **proč** se tak pohybují."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dráha s a čas t",
+          "definition": "Dráha je délka, kterou těleso urazí (m). Čas v sekundách (s).",
+          "example": "Auto ujede 100 m za 5 s."
+        },
+        {
+          "type": "term",
+          "term": "Rychlost v",
+          "definition": "Dráha za jednotku času: `v = s / t` (m/s). Převod: km/h ÷ 3,6 = m/s.",
+          "example": "72 km/h = 20 m/s."
+        },
+        {
+          "type": "term",
+          "term": "Zrychlení a",
+          "definition": "O kolik se rychlost změní za 1 s, v m/s². Záporné zrychlení = zpomalování (brzdění).",
+          "example": "Auto z 0 na 20 m/s za 10 s: a = 2 m/s²."
+        },
+        {
+          "type": "term",
+          "term": "Pohyb rovnoměrný a rovnoměrně zrychlený",
+          "definition": "**Rovnoměrný**: rychlost se nemění. **Rovnoměrně zrychlený**: rychlost roste (nebo klesá) stále stejně: `v = v₀ + a · t`.",
+          "example": "Pásový dopravník jede rovnoměrně, auto při rozjezdu zrychluje."
+        },
+        {
+          "type": "heading",
+          "text": "Graf rychlosti"
+        },
+        {
+          "type": "text",
+          "text": "Rychlost rovnoměrně zrychleného pohybu v čase je přímka `v = v₀ + a · t`. Posuvník k tu znamená zrychlení a, posuvník q počáteční rychlost v₀. Zkus k záporné – to je brzdění."
+        },
+        {
+          "type": "widget",
+          "widget": "linear",
+          "props": {
+            "k": 2,
+            "q": 1
+          }
+        },
+        {
+          "type": "term",
+          "term": "Dráha zrychleného pohybu",
+          "definition": "`s = v₀ · t + ½ · a · t²`.",
+          "example": "Z klidu s a = 2 m/s² za 5 s: s = 25 m."
+        },
+        {
+          "type": "heading",
+          "text": "Otáčivý pohyb"
+        },
+        {
+          "type": "term",
+          "term": "Otáčky n a úhlová rychlost ω",
+          "definition": "Otáčky n = počet otáček za minutu (min⁻¹) nebo za sekundu (s⁻¹). Úhlová rychlost `ω = 2 · π · n` (rad/s, n v s⁻¹). **Radián** (rad) je jednotka úhlu: celá otáčka = 2π rad.",
+          "example": "1 500 min⁻¹ = 25 s⁻¹, ω ≈ 157 rad/s."
+        },
+        {
+          "type": "term",
+          "term": "Obvodová rychlost",
+          "definition": "Rychlost bodu na obvodu: `v = ω · r = π · d · n`. U obrábění se jí říká **řezná rychlost**.",
+          "example": "Obrobek d = 80 mm při 600 min⁻¹: v ≈ 2,5 m/s."
+        },
+        {
+          "type": "example",
+          "question": "Auto jede 72 km/h a brzdí se zpomalením 5 m/s². Za jak dlouho a na jaké dráze zastaví?",
+          "answer": "v₀ = 72 / 3,6 = 20 m/s. t = v₀ / a = 20 / 5 = **4 s**. s = 20 · 4 − ½ · 5 · 4² = 80 − 40 = **40 m**."
+        },
+        {
+          "type": "example",
+          "question": "Soustružíš obrobek d = 80 mm při 600 min⁻¹. Jaká je řezná rychlost v m/min?",
+          "answer": "v = π · d · n = π · 0,08 · 600 ≈ **150,8 m/min** (= 2,51 m/s)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Body na obvodu a blízko středu kotouče mají stejnou rychlost, protože se kotouč točí jako celek.",
+          "right": "Stejnou mají **úhlovou** rychlost ω. **Obvodová** rychlost v = ω · r roste se vzdáleností od středu.",
+          "why": "Bod na obvodu urazí za otáčku delší kružnici."
+        },
+        {
+          "type": "summary",
+          "text": "Rovnoměrný pohyb: v = s / t. Zrychlený: v = v₀ + a·t, s = v₀·t + ½·a·t². Otáčení: ω = 2πn, obvodová rychlost v = ω · r = π · d · n."
+        }
+      ]
+    },
+    {
+      "title": "Přímý a otáčivý pohyb vedle sebe",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Přímočarý a otáčivý pohyb se popisují úplně stejnými vztahy – jen se vymění veličiny. Když umíš jeden, umíš oba. To se hodí u motorů, převodů, kol vozidel i navijáků."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kinematika",
+          "definition": "Část mechaniky, která popisuje pohyb (dráhu, rychlost, zrychlení), ale neřeší jeho příčiny.",
+          "example": "Výpočet brzdné dráhy."
+        },
+        {
+          "type": "term",
+          "term": "Rychlost a zrychlení",
+          "definition": "Rychlost v = změna dráhy za čas (m/s). Zrychlení a = změna rychlosti za čas (m/s²).",
+          "example": "a = 3 m/s²: každou sekundu o 3 m/s rychleji."
+        },
+        {
+          "type": "term",
+          "term": "Úhel otočení φ",
+          "definition": "O jaký úhel se těleso otočí, v radiánech. Jedna otáčka = 2π rad.",
+          "example": "10 otáček = 20π ≈ 62,8 rad."
+        },
+        {
+          "type": "term",
+          "term": "Úhlová rychlost ω a úhlové zrychlení ε",
+          "definition": "ω (rad/s) = změna úhlu za čas. ε (rad/s²) = změna ω za čas.",
+          "example": "Motor se rozběhne na 157 rad/s za 3 s: ε ≈ 52 rad/s²."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka dvojic"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Přímočarý pohyb",
+            "Otáčivý pohyb"
+          ],
+          "rows": [
+            [
+              "dráha s (m)",
+              "úhel φ (rad)"
+            ],
+            [
+              "rychlost v (m/s)",
+              "úhlová rychlost ω (rad/s)"
+            ],
+            [
+              "zrychlení a (m/s²)",
+              "úhlové zrychlení ε (rad/s²)"
+            ],
+            [
+              "v = v₀ + a · t",
+              "ω = ω₀ + ε · t"
+            ],
+            [
+              "s = v₀ · t + ½ · a · t²",
+              "φ = ω₀ · t + ½ · ε · t²"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Spojení obou pohybů: bod na obvodu kola o poloměru r má `v = ω · r` a tečné zrychlení `a = ε · r`."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Převeď jednotky: km/h na m/s (÷ 3,6), min⁻¹ na s⁻¹ (÷ 60).",
+            "Rozhodni: rovnoměrný, nebo rovnoměrně zrychlený pohyb?",
+            "Vyber vztah, ve kterém je jen jedna neznámá.",
+            "Dosaď a vypočítej, výsledek převeď do požadované jednotky."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Motor se z klidu rozběhne na 1 500 min⁻¹ za 3 s rovnoměrně. Jaké je úhlové zrychlení a kolik otáček udělá při rozběhu?",
+          "answer": "ω = 2π · 25 ≈ 157,1 rad/s. ε = 157,1 / 3 ≈ **52,4 rad/s²**. φ = ½ · 52,4 · 3² ≈ 235,6 rad. Otáček: 235,6 / 2π ≈ **37,5**."
+        },
+        {
+          "type": "example",
+          "question": "Výtah se rozjíždí se zrychlením 1 m/s² na rychlost 2 m/s. Jak dlouho a na jaké dráze se rozjíždí?",
+          "answer": "t = v / a = 2 / 1 = **2 s**. s = ½ · 1 · 2² = **2 m**."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "km/h → m/s",
+                "back": "÷ 3,6"
+              },
+              {
+                "front": "min⁻¹ → s⁻¹",
+                "back": "÷ 60"
+              },
+              {
+                "front": "ω z otáček",
+                "back": "ω = 2 · π · n"
+              },
+              {
+                "front": "obvodová rychlost",
+                "back": "v = ω · r = π · d · n"
+              },
+              {
+                "front": "1 otáčka",
+                "back": "2π rad"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "ω = 2 · π · n, kde dosadím n přímo v min⁻¹.",
+          "right": "V `ω = 2 · π · n` musí být n v **s⁻¹**. Z min⁻¹ nejdřív vyděl 60 (nebo použij ω = π · n / 30).",
+          "why": "Jinak vyjde ω šedesátkrát větší."
+        },
+        {
+          "type": "summary",
+          "text": "Otáčivý pohyb má stejné vztahy jako přímočarý: φ ↔ s, ω ↔ v, ε ↔ a. Spojení: v = ω · r. Před dosazením vždy převeď jednotky (km/h, min⁻¹)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Převeď 90 km/h na m/s.",
+      "answers": [
+        "25"
+      ],
+      "explanation": "90 / 3,6 = 25 m/s."
+    },
+    {
+      "type": "input",
+      "question": "Auto zrychlí z 0 na 30 m/s za 10 s. Jaké je zrychlení v m/s²?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "a = 30 / 10 = 3 m/s²."
+    },
+    {
+      "type": "input",
+      "question": "Těleso z klidu zrychluje 2 m/s² po dobu 6 s. Jakou dráhu urazí (m)?",
+      "answers": [
+        "36"
+      ],
+      "explanation": "s = ½ · 2 · 6² = 36 m.",
+      "hints": [
+        "Počáteční rychlost je nula.",
+        "s = ½ · a · t²"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Všechny body otáčejícího se kotouče mají stejnou obvodovou rychlost.",
+      "answer": false,
+      "explanation": "Stejnou mají úhlovou rychlost; obvodová roste s poloměrem."
+    },
+    {
+      "type": "input",
+      "question": "Převeď 3 000 min⁻¹ na s⁻¹.",
+      "answers": [
+        "50"
+      ],
+      "explanation": "3 000 / 60 = 50 s⁻¹."
+    },
+    {
+      "type": "input",
+      "question": "Kolo má ω = 10 rad/s a poloměr 0,3 m. Jaká je obvodová rychlost v m/s?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "v = ω · r = 10 · 0,3 = 3 m/s."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje veličina ε v otáčivém pohybu?",
+      "options": [
+        "úhlové zrychlení",
+        "úhlová rychlost",
+        "úhel otočení",
+        "otáčky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Auto jede 20 m/s a brzdí se zpomalením 4 m/s². Za kolik sekund zastaví?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "t = 20 / 4 = 5 s."
+    },
+    {
+      "type": "input",
+      "question": "Obrobek d = 100 mm se točí 500 min⁻¹. Jaká je řezná rychlost v m/min? (π ≈ 3,14)",
+      "answers": [
+        "157"
+      ],
+      "explanation": "v = 3,14 · 0,1 · 500 = 157 m/min.",
+      "hints": [
+        "Průměr převeď na metry.",
+        "v = π · d · n"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu přímočarého pohybu s otáčivou dvojicí.",
+      "pairs": [
+        [
+          "dráha s",
+          "úhel φ"
+        ],
+        [
+          "rychlost v",
+          "úhlová rychlost ω"
+        ],
+        [
+          "zrychlení a",
+          "úhlové zrychlení ε"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik radiánů je jedna celá otáčka?",
+      "options": [
+        "2π",
+        "π",
+        "360",
+        "1"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky řešení úlohy z kinematiky.",
+      "items": [
+        "převést jednotky",
+        "určit druh pohybu",
+        "vybrat vztah s jednou neznámou",
+        "dosadit a vypočítat"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi rovnoměrným a rovnoměrně zrychleným pohybem?",
+      "answer": "Při rovnoměrném pohybu se rychlost nemění a dráha roste rovnoměrně s časem: s = v · t. Při rovnoměrně zrychleném se rychlost mění každou sekundu o stejnou hodnotu: v = v₀ + a · t, dráha s = v₀ · t + ½ · a · t²."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli vztah mezi otáčkami, úhlovou a obvodovou rychlostí.",
+      "answer": "Úhlová rychlost ω = 2 · π · n, kde n jsou otáčky za sekundu. Obvodová rychlost bodu ve vzdálenosti r od osy je v = ω · r = π · d · n, takže roste s průměrem i otáčkami."
+    }
+  ]
+}

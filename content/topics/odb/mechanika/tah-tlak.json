@@ -1,0 +1,385 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "tah-tlak",
+  "title": "Pružnost a pevnost: tah a tlak",
+  "emoji": "🏋️",
+  "explanations": [
+    {
+      "title": "Lano jeřábu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ocelové lano jeřábu nese tunu. Vydrží? A o kolik se natáhne? Na to odpovídá **pružnost a pevnost**. Inženýr díky ní navrhne lano, šroub nebo sloup tak, aby nepraskly a zbytečně neplýtvaly materiálem."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tah a tlak",
+          "definition": "**Tah** součást natahuje (lano, šroub), **tlak** ji stlačuje (sloup, píst). Síla působí v ose součásti.",
+          "example": "Řetěz s břemenem je v tahu, noha stolu v tlaku."
+        },
+        {
+          "type": "term",
+          "term": "Průřez S",
+          "definition": "Plocha řezu kolmo k ose součásti, v mm².",
+          "example": "Kulatina d = 20 mm: S = π · 20² / 4 = 314 mm²."
+        },
+        {
+          "type": "term",
+          "term": "Normálové napětí σ",
+          "definition": "Síla rozpočítaná na každý mm² průřezu: `σ = F / S`. Jednotka **MPa = N/mm²**.",
+          "example": "10 000 N na 100 mm² = 100 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Poměrné prodloužení ε",
+          "definition": "O kolik se součást prodloužila v poměru k původní délce: `ε = Δl / l`. Bez jednotky.",
+          "example": "Tyč 1 000 mm se prodlouží o 1 mm: ε = 0,001."
+        },
+        {
+          "type": "heading",
+          "text": "Tahová zkouška"
+        },
+        {
+          "type": "text",
+          "text": "Ve zkušebně se tyčinka natahuje, dokud nepraskne, a kreslí se graf napětí podle prodloužení. Z grafu se čtou důležité meze."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**mez úměrnosti** – do ní platí přímá úměrnost napětí a prodloužení",
+            "**mez kluzu Re** – materiál se začne trvale deformovat",
+            "**mez pevnosti Rm** – nejvyšší napětí, pak tyčinka praskne"
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Hookův zákon",
+          "definition": "Do meze úměrnosti platí `σ = E · ε`. **E** je modul pružnosti – jak je materiál tuhý. Pro ocel E ≈ 210 000 MPa.",
+          "example": "Ocel je asi 3× tužší než hliník (E ≈ 70 000 MPa)."
+        },
+        {
+          "type": "text",
+          "text": "Graf Hookova zákona je přímka z počátku. Nastav q = 0 a měň sklon k: větší sklon je jako tužší materiál (větší E) – stejné prodloužení vyvolá větší napětí."
+        },
+        {
+          "type": "widget",
+          "widget": "linear",
+          "props": {
+            "k": 2,
+            "q": 0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečně navrhnout"
+        },
+        {
+          "type": "term",
+          "term": "Dovolené napětí σ_D",
+          "definition": "Napětí, které se v součásti smí objevit: mez kluzu dělená **bezpečností** k (např. 1,5 až 3). `σ_D = Re / k`.",
+          "example": "Ocel S235: Re = 235 MPa, k = 2 → σ_D ≈ 117 MPa."
+        },
+        {
+          "type": "example",
+          "question": "Ocelová tyč d = 20 mm je natahována silou 30 kN. Jaké je v ní napětí?",
+          "answer": "S = π · 20² / 4 = 314,2 mm². σ = 30 000 / 314,2 ≈ **95,5 MPa**."
+        },
+        {
+          "type": "example",
+          "question": "O kolik se ta tyč prodlouží, je-li dlouhá 2 m (E = 210 000 MPa)?",
+          "answer": "Δl = F · l / (E · S) = 30 000 · 2 000 / (210 000 · 314,2) ≈ **0,91 mm**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "1 MPa = 1 N/m².",
+          "right": "1 MPa = **1 N/mm²** = 1 000 000 N/m².",
+          "why": "Proto se síly v N dělí plochou v mm² a napětí vychází rovnou v MPa."
+        },
+        {
+          "type": "summary",
+          "text": "Napětí σ = F / S v MPa (N/mm²). Do meze úměrnosti platí Hookův zákon σ = E · ε. Součást vyhovuje, když σ ≤ σ_D = Re / k."
+        }
+      ]
+    },
+    {
+      "title": "Návrh průřezu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Máš navrhnout táhlo, které unese 50 kN. Jaký průměr? Postup je pořád stejný: **pevnostní podmínka**, z ní plocha, z plochy průměr."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tah a tlak",
+          "definition": "Namáhání silou v ose součásti: tah natahuje, tlak stlačuje.",
+          "example": "Táhlo, šroub (tah); sloup, píst (tlak)."
+        },
+        {
+          "type": "term",
+          "term": "Napětí σ",
+          "definition": "`σ = F / S`, MPa = N/mm². Kladné v tahu, záporné v tlaku.",
+          "example": "50 000 N / 500 mm² = 100 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Mez kluzu Re a mez pevnosti Rm",
+          "definition": "Re: napětí, kdy se materiál začne trvale deformovat. Rm: největší napětí před přetržením.",
+          "example": "Ocel S235: Re nejméně 235 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Bezpečnost k",
+          "definition": "Kolikrát je mez materiálu větší než skutečné napětí. Kryje nepřesnosti zatížení, materiálu i výroby.",
+          "example": "k = 2: součást by vydržela dvojnásobek."
+        },
+        {
+          "type": "term",
+          "term": "Pevnostní podmínka",
+          "definition": "`σ = F / S ≤ σ_D`. Z ní při návrhu: `S ≥ F / σ_D`.",
+          "example": "F = 50 kN, σ_D = 120 MPa: S ≥ 417 mm²."
+        },
+        {
+          "type": "heading",
+          "text": "Tři typy úloh"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Úloha",
+            "Známe",
+            "Počítáme"
+          ],
+          "rows": [
+            [
+              "kontrola",
+              "F, S, σ_D",
+              "σ = F / S a srovnáme s σ_D"
+            ],
+            [
+              "návrh (dimenzování)",
+              "F, σ_D",
+              "S = F / σ_D, pak rozměr"
+            ],
+            [
+              "únosnost",
+              "S, σ_D",
+              "F = S · σ_D"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči dovolené napětí σ_D = Re / k.",
+            "Spočítej potřebnou plochu S = F / σ_D.",
+            "Pro kruh: d = √(4 · S / π).",
+            "Zaokrouhli **nahoru** na vyráběný rozměr.",
+            "Případně spočítej prodloužení Δl = F · l / (E · S)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Táhlo nese 50 kN, σ_D = 120 MPa. Jaký průměr?",
+          "answer": "S = 50 000 / 120 = 416,7 mm². d = √(4 · 416,7 / π) ≈ 23,0 mm. Zvolíme **d = 24 mm** (nebo 25 mm)."
+        },
+        {
+          "type": "example",
+          "question": "Ocelový sloupek 40 × 40 mm, σ_D = 100 MPa. Jakou největší tlakovou sílu unese (bez vzpěru)?",
+          "answer": "S = 40 · 40 = 1 600 mm². F = S · σ_D = 1 600 · 100 = 160 000 N = **160 kN**."
+        },
+        {
+          "type": "term",
+          "term": "Vzpěr",
+          "definition": "Dlouhé štíhlé pruty v tlaku se nezničí rozdrcením, ale **vybočí do strany**. Počítají se zvlášť a dovolená síla je menší.",
+          "example": "Zmáčkni dlouhé pravítko z konců – ohne se do oblouku."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "napětí",
+                "back": "σ = F / S"
+              },
+              {
+                "front": "Hookův zákon",
+                "back": "σ = E · ε"
+              },
+              {
+                "front": "prodloužení",
+                "back": "Δl = F · l / (E · S)"
+              },
+              {
+                "front": "dovolené napětí",
+                "back": "σ_D = Re / k"
+              },
+              {
+                "front": "E oceli",
+                "back": "asi 210 000 MPa"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vyšlo d = 23,0 mm, zvolím 22 mm – je to blízko.",
+          "right": "Při návrhu se rozměr zaokrouhluje vždy **nahoru**.",
+          "why": "Menší průměr = menší plocha = napětí nad dovolenou hodnotou."
+        },
+        {
+          "type": "summary",
+          "text": "Pevnostní podmínka σ = F / S ≤ σ_D, kde σ_D = Re / k. Při návrhu S = F / σ_D a rozměr zaokrouhli nahoru. Štíhlé pruty v tlaku kontroluj i na vzpěr."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká je jednotka napětí?",
+      "options": [
+        "MPa (N/mm²)",
+        "N·m",
+        "N",
+        "J"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Síla 20 000 N působí na průřez 100 mm². Jaké je napětí v MPa?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "σ = 20 000 / 100 = 200 MPa."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hookův zákon platí do meze úměrnosti.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje napětí, při kterém se materiál začne trvale deformovat?",
+      "options": [
+        "mez kluzu",
+        "mez pevnosti",
+        "dovolené napětí",
+        "modul pružnosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Tyč 2 000 mm se prodlouží o 1 mm. Jaké je poměrné prodloužení ε? (desetinné číslo)",
+      "answers": [
+        "0,0005",
+        "0.0005"
+      ],
+      "explanation": "ε = 1 / 2 000 = 0,000 5.",
+      "hints": [
+        "Prodloužení vyděl původní délkou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Re = 300 MPa, bezpečnost k = 2. Jaké je dovolené napětí v MPa?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "σ_D = 300 / 2 = 150 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Táhlo nese 30 kN, σ_D = 150 MPa. Jaká je nejmenší potřebná plocha v mm²?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "S = 30 000 / 150 = 200 mm².",
+      "hints": [
+        "Převeď kN na N.",
+        "Plocha = síla / dovolené napětí."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Průřez 500 mm², σ_D = 120 MPa. Jakou největší sílu unese v kN?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "F = 500 · 120 = 60 000 N = 60 kN."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik je přibližně modul pružnosti oceli E?",
+      "options": [
+        "210 000 MPa",
+        "21 000 MPa",
+        "2 100 MPa",
+        "70 000 MPa"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Dlouhý štíhlý prut v tlaku stačí kontrolovat jen podle σ = F / S.",
+      "answer": false,
+      "explanation": "Může vybočit – je nutná kontrola na vzpěr."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď meze v tahovém diagramu oceli od nejmenšího napětí.",
+      "items": [
+        "mez úměrnosti",
+        "mez kluzu Re",
+        "mez pevnosti Rm"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ úlohy se vzorcem.",
+      "pairs": [
+        [
+          "kontrola",
+          "σ = F / S"
+        ],
+        [
+          "návrh",
+          "S = F / σ_D"
+        ],
+        [
+          "únosnost",
+          "F = S · σ_D"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli Hookův zákon a co je modul pružnosti.",
+      "answer": "Do meze úměrnosti je napětí přímo úměrné poměrnému prodloužení: σ = E · ε. Modul pružnosti E vyjadřuje tuhost materiálu; ocel má asi 210 000 MPa, hliník asi 70 000 MPa."
+    },
+    {
+      "type": "open",
+      "question": "Proč se používá dovolené napětí a bezpečnost?",
+      "answer": "Skutečné zatížení, vlastnosti materiálu i výroba se liší od výpočtu. Proto se nepočítá až k mezi kluzu, ale jen k jejímu zlomku σ_D = Re / k. Bezpečnost k pokrývá nepřesnosti a chrání před trvalou deformací či lomem."
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "treni",
+  "title": "Tření",
+  "emoji": "🧱",
+  "explanations": [
+    {
+      "title": "Ze života",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Bez tření bys neudělal krok, auto by nezabrzdilo a šroub by se sám povolil. Tření ale také brzdí stroje, zahřívá ložiska a opotřebovává díly. Strojař ho musí umět **spočítat** – jednou ho chce co největší (brzdy), jindy co nejmenší (ložiska)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Síla",
+          "definition": "Působení, které mění pohyb nebo tvar tělesa, v newtonech (N).",
+          "example": "Tíha bedny 500 N."
+        },
+        {
+          "type": "term",
+          "term": "Normálová síla F_N",
+          "definition": "Síla, kterou těleso tlačí **kolmo** na podložku (a podložka zpět na něj).",
+          "example": "Bedna 500 N na vodorovné podlaze tlačí F_N = 500 N."
+        },
+        {
+          "type": "term",
+          "term": "Smykové tření",
+          "definition": "Odpor proti klouzání jednoho tělesa po druhém. Třecí síla `Ft = f · F_N` působí proti směru pohybu.",
+          "example": "Posouváš skříň po podlaze."
+        },
+        {
+          "type": "term",
+          "term": "Součinitel tření f",
+          "definition": "Číslo bez jednotky, které říká, jak moc dvojice povrchů klouže. Malé f = kluzké. Zjišťuje se pokusem a hledá v tabulkách.",
+          "example": "Ocel po ledu má f velmi malé."
+        },
+        {
+          "type": "term",
+          "term": "Klidové a pohybové tření",
+          "definition": "Rozpohybovat těleso je těžší než ho udržet v pohybu: **klidový** součinitel f₀ je větší než **pohybový** f.",
+          "example": "Skříň se těžko „utrhne“, pak jde lehčeji."
+        },
+        {
+          "type": "heading",
+          "text": "Příklady součinitelů"
+        },
+        {
+          "type": "text",
+          "text": "Hodnoty jsou jen **přibližné** – záleží na drsnosti, čistotě, vlhkosti a mazání."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "items": [
+              {
+                "label": "pryž – suchý asfalt",
+                "value": 0.7
+              },
+              {
+                "label": "dřevo – dřevo",
+                "value": 0.4
+              },
+              {
+                "label": "ocel – ocel suchá",
+                "value": 0.15
+              },
+              {
+                "label": "ocel – ocel mazaná",
+                "value": 0.05
+              },
+              {
+                "label": "ocel – led",
+                "value": 0.02
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Valení"
+        },
+        {
+          "type": "term",
+          "term": "Valivý odpor",
+          "definition": "Odpor, když se kolo **valí**. Je mnohem menší než smykové tření, proto vozíky mají kola a stroje kuličková ložiska.",
+          "example": "Vozík s nákladem utlačíš, stejný náklad na zemi neposuneš."
+        },
+        {
+          "type": "example",
+          "question": "Bedna má tíhu 800 N, součinitel tření s podlahou je 0,3. Jakou silou ji posuneš rovnoměrně?",
+          "answer": "Na vodorovné podlaze F_N = 800 N. Ft = f · F_N = 0,3 · 800 = **240 N**. Stejnou silou musíš tlačit."
+        },
+        {
+          "type": "example",
+          "question": "Proč se ložiska mažou?",
+          "answer": "Olej oddělí kovové plochy. Součinitel tření klesne (např. z 0,15 na 0,05), díly se méně zahřívají a méně opotřebovávají."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Třecí síla závisí na velikosti styčné plochy – širší bedna se posouvá hůř.",
+          "right": "Smyková třecí síla podle zjednodušeného zákona závisí jen na **F_N a f**, ne na velikosti plochy.",
+          "why": "Větší plocha znamená menší tlak na každý kousek – vyjde to nastejno."
+        },
+        {
+          "type": "summary",
+          "text": "Třecí síla Ft = f · F_N, kde F_N je kolmý přítlak a f součinitel tření. Klidové tření je větší než pohybové. Valivý odpor je mnohem menší než smykové tření."
+        }
+      ]
+    },
+    {
+      "title": "Nakloněná rovina",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Paleta stojí na šikmé rampě. Sjede sama? Jakou silou ji vytáhneš nahoru? Stejné otázky řeší konstruktér u dopravníků, klínů a šroubů. Odpověď dá rozklad tíhy a tření."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tíha G",
+          "definition": "`G = m · g`, g = 9,81 m/s². Míří svisle dolů.",
+          "example": "Paleta 50 kg: G = 490,5 N."
+        },
+        {
+          "type": "term",
+          "term": "Třecí síla Ft",
+          "definition": "`Ft = f · F_N`. Působí proti pohybu (nebo proti tomu, kam by těleso chtělo jet).",
+          "example": "F_N = 400 N, f = 0,2: Ft = 80 N."
+        },
+        {
+          "type": "term",
+          "term": "Normálová síla F_N",
+          "definition": "Síla kolmo k podložce. Na nakloněné rovině s úhlem α: `F_N = G · cos α`.",
+          "example": "α = 30°: F_N = 0,866 · G."
+        },
+        {
+          "type": "term",
+          "term": "Pohybová složka tíhy",
+          "definition": "Část tíhy, která táhne těleso **dolů po svahu**: `G · sin α`.",
+          "example": "α = 30°: polovina tíhy."
+        },
+        {
+          "type": "term",
+          "term": "Úhel tření φ a samosvornost",
+          "definition": "Úhel, pro který platí `tg φ = f`. Když je sklon α ≤ φ, těleso samo nesjede – je **samosvorné**.",
+          "example": "f = 0,2 → φ ≈ 11,3°."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Spočítej tíhu G = m · g.",
+            "Rozlož ji: F_N = G · cos α a složka po svahu G · sin α.",
+            "Spočítej tření Ft = f · F_N.",
+            "Tahání nahoru (rovnoměrně, rovnoběžně se svahem): `F = G · sin α + Ft`.",
+            "Sjede samo? Porovnej G · sin α s klidovým třením (nebo tg α s f₀)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Paleta 50 kg na rampě se sklonem 30°, f = 0,2. Jakou silou ji táhneš nahoru rovnoběžně s rampou?",
+          "answer": "G = 50 · 9,81 = 490,5 N. Složka po svahu: 490,5 · 0,5 = 245,3 N. F_N = 490,5 · 0,866 = 424,8 N. Ft = 0,2 · 424,8 = 85,0 N. F = 245,3 + 85,0 ≈ **330 N**."
+        },
+        {
+          "type": "example",
+          "question": "Sjede bedna sama po rampě se sklonem 10°, když je klidový součinitel 0,3?",
+          "answer": "tg 10° ≈ 0,18. To je méně než 0,3, takže α je menší než úhel tření. Bedna **nesjede**, je samosvorná."
+        },
+        {
+          "type": "heading",
+          "text": "Valivý odpor početně"
+        },
+        {
+          "type": "term",
+          "term": "Rameno valivého odporu ξ (ksí)",
+          "definition": "Délka v mm podle materiálu kola a podložky. Valivý odpor: `Fv = F_N · ξ / R`, R je poloměr kola.",
+          "example": "Měkká podložka má větší ξ než tvrdá kolej."
+        },
+        {
+          "type": "example",
+          "question": "Kolo R = 250 mm nese 10 kN, ξ = 0,5 mm (příklad). Jaký je valivý odpor? Srovnej se smýkáním při f = 0,15.",
+          "answer": "Fv = 10 000 · 0,5 / 250 = **20 N**. Smýkání: 0,15 · 10 000 = **1 500 N**. Valit je asi 75× snazší."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Na nakloněné rovině je F_N = G · ",
+                "after": ".",
+                "options": [
+                  "cos α",
+                  "sin α",
+                  "tg α"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Složka tíhy po svahu je G · ",
+                "after": ".",
+                "options": [
+                  "sin α",
+                  "cos α"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Těleso je samosvorné, když tg α ",
+                "after": " f₀.",
+                "options": [
+                  "≤",
+                  "≥"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na nakloněné rovině je F_N = G, stejně jako na podlaze.",
+          "right": "Na svahu je `F_N = G · cos α` – menší než tíha.",
+          "why": "Část tíhy táhne po svahu dolů, kolmo na podložku tlačí jen zbytek."
+        },
+        {
+          "type": "summary",
+          "text": "Na nakloněné rovině F_N = G cos α, složka po svahu G sin α, tření f · F_N. Tahání nahoru: F = G sin α + Ft. Samosvornost nastane pro tg α ≤ f₀."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Bedna 600 N, f = 0,25. Jaká je třecí síla na vodorovné podlaze (N)?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "Ft = 0,25 · 600 = 150 N."
+    },
+    {
+      "type": "truefalse",
+      "question": "Klidový součinitel tření je obvykle větší než pohybový.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Na čem podle zjednodušeného zákona nezávisí smyková třecí síla?",
+      "options": [
+        "na velikosti styčné plochy",
+        "na normálové síle",
+        "na materiálu povrchů",
+        "na mazání"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč mají vozíky kola?",
+      "options": [
+        "valivý odpor je mnohem menší než smykové tření",
+        "kola jsou lehčí",
+        "tření při valení je větší",
+        "kvůli bezpečnosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Těleso o tíze 1 000 N je na nakloněné rovině 30°. Jak velká je složka tíhy po svahu (N)?",
+      "answers": [
+        "500"
+      ],
+      "explanation": "G · sin 30° = 1 000 · 0,5 = 500 N.",
+      "hints": [
+        "Složka po svahu používá sinus."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Těleso 1 000 N na svahu 60°. Jaká je normálová síla (N)?",
+      "answers": [
+        "500"
+      ],
+      "explanation": "F_N = 1 000 · cos 60° = 500 N."
+    },
+    {
+      "type": "input",
+      "question": "Svah 30°, tíha 400 N, f = 0,25. Jakou silou táhneš těleso rovnoměrně nahoru (N)? (cos 30° = 0,866, výsledek zaokrouhli na celé N)",
+      "answers": [
+        "287"
+      ],
+      "explanation": "Složka po svahu 200 N, F_N = 346,4 N, Ft = 86,6 N, F = 286,6 ≈ 287 N.",
+      "hints": [
+        "Spočítej složku po svahu a normálovou sílu.",
+        "K pohybové složce přičti tření."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Těleso na svahu je samosvorné, když tg α ≤ f₀.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolo R = 200 mm nese 4 000 N, ξ = 0,5 mm. Jaký je valivý odpor (N)?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Fv = 4 000 · 0,5 / 200 = 10 N."
+    },
+    {
+      "type": "choice",
+      "question": "Jak mazání ovlivní součinitel tření ocel – ocel?",
+      "options": [
+        "výrazně ho sníží",
+        "zvýší ho",
+        "nezmění ho",
+        "změní ho na záporný"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu síly na tažení tělesa nahoru po svahu.",
+      "items": [
+        "spočítat G = m · g",
+        "rozložit tíhu na G sin α a G cos α",
+        "spočítat Ft = f · F_N",
+        "sečíst F = G sin α + Ft"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu se vzorcem.",
+      "pairs": [
+        [
+          "třecí síla",
+          "f · F_N"
+        ],
+        [
+          "normálová síla na svahu",
+          "G · cos α"
+        ],
+        [
+          "valivý odpor",
+          "F_N · ξ / R"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Kdy je tření ve strojích užitečné a kdy škodlivé?",
+      "answer": "Užitečné je v brzdách, třecích spojkách, u řemenů, šroubových spojů a při chůzi. Škodlivé je v ložiskách, vedeních a převodech, kde způsobuje ztráty, zahřívání a opotřebení; tam se snižuje mazáním nebo valením."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je samosvornost a kde se využívá.",
+      "answer": "Těleso na nakloněné rovině samo nesjede, když je sklon menší nebo roven úhlu tření, tedy tg α ≤ f₀. Využívá se u šroubů a matic, klínů a šnekových převodů, které se samy neprotočí zpět."
+    }
+  ]
+}

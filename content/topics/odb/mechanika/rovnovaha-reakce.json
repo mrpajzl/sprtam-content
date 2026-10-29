@@ -1,0 +1,425 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "rovnovaha-reakce",
+  "title": "Rovnováha tělesa a reakce v podporách",
+  "emoji": "⚖️",
+  "explanations": [
+    {
+      "title": "Most na dvou pilířích",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lávka přes potok leží na dvou podpěrách. Když po ní jde člověk, podpěry ho „drží“ – tlačí lávku nahoru. Jak velkou silou? To musí vědět každý, kdo navrhuje podpěry, šrouby nebo ložiska."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Síla a moment",
+          "definition": "Síla (N) těleso posouvá, moment síly `M = F · r` (N·m) ho otáčí. Rameno r je kolmá vzdálenost od bodu k přímce síly.",
+          "example": "Síla 100 N na rameni 2 m: 200 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Rovnováha",
+          "definition": "Těleso je v klidu: neposouvá se ani neotáčí. Všechny síly i momenty se navzájem vyruší.",
+          "example": "Lávka v klidu s člověkem uprostřed."
+        },
+        {
+          "type": "term",
+          "term": "Podpora (vazba)",
+          "definition": "Místo, kde je těleso opřené nebo upevněné. Brání mu v pohybu.",
+          "example": "Pilíř mostu, kloub, zabetonovaný konec."
+        },
+        {
+          "type": "term",
+          "term": "Reakce",
+          "definition": "Síla, kterou podpora působí zpět na těleso. Proti zatížení „tlačí“ podpora.",
+          "example": "Pilíř tlačí na most nahoru."
+        },
+        {
+          "type": "term",
+          "term": "Nosník",
+          "definition": "Dlouhé těleso (tyč, trám, profil) uložené na podporách a zatížené napříč.",
+          "example": "Ocelový I-profil stropu, lávka."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy podpor"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Podpora",
+            "Brání",
+            "Neznámé reakce"
+          ],
+          "rows": [
+            [
+              "posuvná (válečková)",
+              "pohybu kolmo k podložce",
+              "1 – kolmo k podložce"
+            ],
+            [
+              "pevná kloubová",
+              "posunutí všemi směry, otáčet se smí",
+              "2 – vodorovná a svislá"
+            ],
+            [
+              "vetknutí",
+              "posunutí i otáčení",
+              "3 – vodorovná, svislá a moment"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Most má na jednom konci pevnou a na druhém posuvnou podporu. Při ohřátí se prodlouží a posuvná podpora ho nechá roztáhnout."
+        },
+        {
+          "type": "heading",
+          "text": "Jak spočítat reakce"
+        },
+        {
+          "type": "text",
+          "text": "Nosník se nesmí otočit kolem žádného bodu. Zvolíš si bod v jedné podpoře – její reakce tam má nulový moment. Zbude jen jedna neznámá."
+        },
+        {
+          "type": "example",
+          "question": "Lávka 6 m na podporách A (vlevo) a B (vpravo). Ve vzdálenosti 2 m od A stojí břemeno 12 kN. Jaké jsou reakce?",
+          "answer": "Momenty k A: R_B · 6 = 12 · 2 → R_B = **4 kN**. Svisle: R_A + R_B = 12 → R_A = **8 kN**. Bližší podpora nese víc."
+        },
+        {
+          "type": "example",
+          "question": "Konzola (vetknutý nosník) délky 2 m nese na volném konci 5 kN. Jaké reakce působí ve vetknutí?",
+          "answer": "Svislá reakce: **5 kN** nahoru. Moment ve vetknutí: 5 · 2 = **10 kN·m**. Vodorovná reakce je 0, protože žádná vodorovná síla nepůsobí."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď podpory podle počtu neznámých reakcí."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "1 reakce",
+              "2 reakce",
+              "3 reakce"
+            ],
+            "items": [
+              {
+                "text": "válečková podpora mostu",
+                "group": 0
+              },
+              {
+                "text": "opření o hladkou podlahu",
+                "group": 0
+              },
+              {
+                "text": "kloub (čep)",
+                "group": 1
+              },
+              {
+                "text": "pevná kloubová podpora",
+                "group": 1
+              },
+              {
+                "text": "zabetonovaný sloup",
+                "group": 2
+              },
+              {
+                "text": "vetknutý konec konzoly",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Břemeno je blíž k A, takže víc nese B, protože je dál a má větší rameno.",
+          "right": "**Bližší** podpora nese **víc**.",
+          "why": "Představ si břemeno přímo nad A: celé ho nese A, na B nic."
+        },
+        {
+          "type": "summary",
+          "text": "Těleso je v rovnováze, když se síly i momenty vyruší. Posuvná podpora má 1 reakci, kloubová 2, vetknutí 3. Reakce nosníku spočítáš z momentové rovnice k jedné podpoře a ze součtu svislých sil."
+        }
+      ]
+    },
+    {
+      "title": "Tři rovnice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý výpočet nosníku, rámu nebo jeřábu začíná stejně: **uvolníš těleso** a napíšeš tři podmínky rovnováhy. Z nich spočítáš neznámé reakce."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rovnováha v rovině",
+          "definition": "Těleso se nepohybuje, když platí tři podmínky: `ΣFx = 0`, `ΣFy = 0`, `ΣM = 0`.",
+          "example": "Nosník na dvou podporách."
+        },
+        {
+          "type": "term",
+          "term": "Moment síly M",
+          "definition": "`M = F · r` (N·m), r = kolmá vzdálenost od bodu k přímce síly. Proti směru hodinových ručiček +.",
+          "example": "Síla 10 kN na rameni 3 m: 30 kN·m."
+        },
+        {
+          "type": "term",
+          "term": "Uvolnění tělesa",
+          "definition": "Podpory (vazby) v myšlenkách odstraníš a nahradíš je **reakcemi** – silami, kterými podpory na těleso působí.",
+          "example": "Nakreslíš nosník bez pilířů, jen se šipkami R_A a R_B."
+        },
+        {
+          "type": "term",
+          "term": "Staticky určité těleso",
+          "definition": "Těleso, u kterého je neznámých reakcí právě tolik, kolik je podmínek rovnováhy (v rovině 3).",
+          "example": "Nosník: kloubová podpora (2) + posuvná (1) = 3."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nakresli těleso, všechny zatěžující síly a vzdálenosti.",
+            "Uvolni ho: podpory nahraď reakcemi (posuvná 1, kloubová 2, vetknutí 3).",
+            "Napiš momentovou podmínku k bodu, kde je nejvíc neznámých (obvykle podpora A).",
+            "Napiš podmínky ΣFy = 0 a ΣFx = 0.",
+            "Vyřeš a **zkontroluj** momentovou podmínkou k jinému bodu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Nosník 5 m, podpora A vlevo (kloubová), B vpravo (posuvná). Síly dolů: F₁ = 10 kN v 1 m a F₂ = 20 kN ve 4 m od A. Spočítej reakce.",
+          "answer": "ΣM_A = 0: R_B · 5 − 10 · 1 − 20 · 4 = 0 → R_B = 90 / 5 = **18 kN**. ΣFy = 0: R_A + 18 − 30 = 0 → R_A = **12 kN**. Kontrola k B: R_A · 5 = 10 · 4 + 20 · 1 → 60 = 60 ✓."
+        },
+        {
+          "type": "example",
+          "question": "Šikmá síla 10 kN pod úhlem 30° k vodorovné působí uprostřed nosníku 4 m. Jaká je vodorovná reakce kloubové podpory A?",
+          "answer": "Vodorovná složka síly: 10 · cos 30° ≈ 8,66 kN. Posuvná podpora vodorovně nedrží, takže ΣFx = 0 dává **R_Ax ≈ 8,66 kN** opačným směrem."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Posuvná podpora má ",
+                "after": " neznámou.",
+                "options": [
+                  "1",
+                  "2",
+                  "3"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Vetknutí má ",
+                "after": " neznámé.",
+                "options": [
+                  "3",
+                  "2",
+                  "1"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Momentovou podmínku píšeme k bodu, kde je ",
+                "after": " neznámých.",
+                "options": [
+                  "nejvíc",
+                  "nejméně"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            "Podmínka",
+            "Co znamená"
+          ],
+          "rows": [
+            [
+              "ΣFx = 0",
+              "těleso se neposune vodorovně"
+            ],
+            [
+              "ΣFy = 0",
+              "těleso se neposune svisle"
+            ],
+            [
+              "ΣM = 0",
+              "těleso se neotočí"
+            ]
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Reakce R_A a R_B se rovnají vždy polovině zatížení.",
+          "right": "Polovina vyjde jen při **souměrném** zatížení (síla uprostřed).",
+          "why": "Reakce závisí na vzdálenostech sil od podpor – spočítej je z momentové rovnice."
+        },
+        {
+          "type": "summary",
+          "text": "Uvolni těleso, podpory nahraď reakcemi a napiš ΣFx = 0, ΣFy = 0, ΣM = 0. Momentovou rovnici piš k podpoře, výsledek ověř k druhé."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kolik neznámých reakcí má vetknutí v rovině?",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kolik neznámých reakcí má posuvná (válečková) podpora?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro rovnováhu v rovině musí platit ΣFx = 0, ΣFy = 0 a ΣM = 0.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Nosník 4 m, síla 8 kN uprostřed. Jaká je reakce v podpoře B (kN)?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Souměrné zatížení: každá podpora nese polovinu, 4 kN."
+    },
+    {
+      "type": "input",
+      "question": "Nosník 6 m, síla 12 kN ve vzdálenosti 1 m od A. Jaká je reakce R_B (kN)?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "R_B · 6 = 12 · 1 → R_B = 2 kN.",
+      "hints": [
+        "Napiš momenty k bodu A."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tentýž nosník (6 m, 12 kN v 1 m od A). Jaká je reakce R_A (kN)?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "R_A = 12 − 2 = 10 kN.",
+      "hints": [
+        "Součet reakcí se rovná zatížení."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Konzola 3 m, na konci 4 kN. Jaký moment působí ve vetknutí (kN·m)?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "M = 4 · 3 = 12 kN·m."
+    },
+    {
+      "type": "choice",
+      "question": "Proč má most na jednom konci posuvnou podporu?",
+      "options": [
+        "aby se mohl při ohřátí prodloužit",
+        "aby byl levnější",
+        "aby se dal otáčet",
+        "aby nesl víc"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Bližší podpora k břemenu nese menší část zatížení.",
+      "answer": false,
+      "explanation": "Bližší podpora nese víc."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „uvolnit těleso“?",
+      "options": [
+        "nahradit podpory reakcemi",
+        "odšroubovat ho",
+        "odstranit zatížení",
+        "zmenšit síly na polovinu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup výpočtu reakcí nosníku.",
+      "items": [
+        "nakreslit těleso a zatížení",
+        "uvolnit těleso – nahradit podpory reakcemi",
+        "momentová podmínka k podpoře A",
+        "součet svislých sil",
+        "kontrola momentem k B"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj podporu s jejími reakcemi.",
+      "pairs": [
+        [
+          "posuvná",
+          "jedna kolmo k podložce"
+        ],
+        [
+          "kloubová",
+          "vodorovná a svislá"
+        ],
+        [
+          "vetknutí",
+          "dvě síly a moment"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaké jsou podmínky rovnováhy tělesa v rovině a co znamenají?",
+      "answer": "Součet vodorovných sil je nula, součet svislých sil je nula a součet momentů k libovolnému bodu je nula. Těleso se tedy neposouvá ani neotáčí."
+    },
+    {
+      "type": "open",
+      "question": "Popiš druhy podpor nosníku a jejich reakce.",
+      "answer": "Posuvná podpora brání pohybu jen kolmo k podložce a má jednu reakci. Pevná kloubová brání posunutí, ale dovolí otáčení, má vodorovnou a svislou reakci. Vetknutí brání posunutí i otáčení a má dvě silové reakce a moment."
+    }
+  ]
+}

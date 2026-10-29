@@ -1,0 +1,417 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "sila-skladani",
+  "title": "Síla a její skládání",
+  "emoji": "➡️",
+  "explanations": [
+    {
+      "title": "Lano a jeřáb",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dva lidé táhnou loďku ke břehu, každý lanem trochu jiným směrem. Loďka se pohne jen jedním směrem – jako by ji táhl jeden silnější člověk. Tomu jednomu „náhradnímu“ tahu říkáme **výslednice**."
+        },
+        {
+          "type": "text",
+          "text": "Technická mechanika začíná právě tady: než spočítáš most, jeřáb nebo hřídel, musíš umět síly sčítat a rozkládat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Síla F",
+          "definition": "Působení, které mění pohyb tělesa nebo ho deformuje. Jednotka **newton (N)**; 1 kN = 1 000 N.",
+          "example": "Tíha tělesa o hmotnosti 1 kg je asi 9,81 N."
+        },
+        {
+          "type": "term",
+          "term": "Vektor",
+          "definition": "Veličina, u které záleží nejen na velikosti, ale i na **směru**. Kreslí se šipkou: délka = velikost, šipka ukazuje směr.",
+          "example": "Síla 50 N doprava je jiná než 50 N nahoru."
+        },
+        {
+          "type": "term",
+          "term": "Určení síly",
+          "definition": "Sílu popisují čtyři údaje: **velikost**, **směr** (přímka, po které působí – nositelka), **smysl** (kam míří šipka) a **působiště** (bod, kde působí).",
+          "example": "Lano táhne 300 N vodorovně doprava, uvázané za háček."
+        },
+        {
+          "type": "term",
+          "term": "Tíha G",
+          "definition": "Síla, kterou Země přitahuje těleso: `G = m · g`, g = 9,81 m/s².",
+          "example": "Břemeno 200 kg: G = 200 · 9,81 = 1 962 N."
+        },
+        {
+          "type": "term",
+          "term": "Výslednice R",
+          "definition": "Jedna síla, která má na těleso **stejný účinek** jako několik sil dohromady.",
+          "example": "Dva tahy 30 N a 40 N kolmo na sebe mají výslednici 50 N."
+        },
+        {
+          "type": "heading",
+          "text": "Síly na jedné přímce"
+        },
+        {
+          "type": "list",
+          "items": [
+            "stejným směrem: velikosti se **sečtou** (30 N + 20 N = 50 N)",
+            "proti sobě: velikosti se **odečtou** a výslednice míří ve směru větší (50 N − 20 N = 30 N)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Síly pod úhlem"
+        },
+        {
+          "type": "text",
+          "text": "Když síly míří různými směry, nakreslíš je za sebou: konec první šipky = začátek druhé. Výslednice vede od začátku první ke konci poslední. Tomu se říká **silový trojúhelník** (nebo silový mnohoúhelník)."
+        },
+        {
+          "type": "text",
+          "text": "Pokud jsou dvě síly na sebe **kolmé**, vznikne pravoúhlý trojúhelník a výslednici spočítáš Pythagorovou větou. Posouvej odvěsny: představ si, že a a b jsou síly v desítkách newtonů."
+        },
+        {
+          "type": "widget",
+          "widget": "pythagoras",
+          "props": {
+            "a": 3,
+            "b": 4
+          }
+        },
+        {
+          "type": "example",
+          "question": "Na háček působí vodorovně 30 N a svisle 40 N. Jak velká je výslednice?",
+          "answer": "Síly jsou kolmé: R = √(30² + 40²) = √(900 + 1 600) = √2 500 = **50 N**."
+        },
+        {
+          "type": "heading",
+          "text": "Rozklad síly"
+        },
+        {
+          "type": "text",
+          "text": "Někdy potřebuješ opak: jednu sílu rozdělit do dvou směrů, třeba vodorovného a svislého. Tomu se říká **rozklad síly** do složek."
+        },
+        {
+          "type": "text",
+          "text": "Připomenutí z matematiky: v pravoúhlém trojúhelníku je `cos α` = přilehlá odvěsna / přepona a `sin α` = protilehlá odvěsna / přepona. Přepona je tady celá síla, odvěsny jsou její složky."
+        },
+        {
+          "type": "example",
+          "question": "Lano táhne vozík silou 200 N pod úhlem 30° nad vodorovnou rovinou. Jaká část síly táhne vozík vodorovně a jaká ho nadzvedává?",
+          "answer": "Vodorovně: Fx = 200 · cos 30° = 200 · 0,866 ≈ **173 N**. Svisle: Fy = 200 · sin 30° = 200 · 0,5 = **100 N**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Síly 30 N a 40 N dají vždy výslednici 70 N.",
+          "right": "70 N vyjde jen tehdy, když míří **stejným směrem**. Kolmo na sebe dají 50 N, proti sobě 10 N.",
+          "why": "Síla je vektor – záleží na směru, ne jen na čísle."
+        },
+        {
+          "type": "summary",
+          "text": "Síla má velikost, směr, smysl a působiště. Výslednice nahradí několik sil jednou. Kolmé síly skládáš Pythagorovou větou, sílu rozkládáš pomocí cos a sin."
+        }
+      ]
+    },
+    {
+      "title": "Početně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na stožár působí lana, vítr a tíha. Kreslit všechno přesně je pracné. Inženýr proto rozloží každou sílu do os x a y, složky sečte a výslednici spočítá. Tenhle postup funguje pro libovolný počet sil."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Síla",
+          "definition": "Vektor: má velikost (v N), směr a působiště. Kreslí se šipkou.",
+          "example": "F = 500 N šikmo vzhůru."
+        },
+        {
+          "type": "term",
+          "term": "Složky síly Fx a Fy",
+          "definition": "Průměty síly do vodorovné osy x a svislé osy y. Síla je přepona pravoúhlého trojúhelníku, složky jeho odvěsny. Pokud síla svírá s osou x úhel α: `Fx = F · cos α`, `Fy = F · sin α` (cos = přilehlá / přepona, sin = protilehlá / přepona).",
+          "example": "F = 100 N, α = 60°: Fx = 50 N, Fy ≈ 86,6 N."
+        },
+        {
+          "type": "term",
+          "term": "Výslednice R",
+          "definition": "Síla se stejným účinkem jako všechny síly dohromady.",
+          "example": "Výslednice sil na stožár."
+        },
+        {
+          "type": "term",
+          "term": "Znaménko složky",
+          "definition": "Složka doprava nebo nahoru je **kladná**, doleva nebo dolů **záporná**.",
+          "example": "Síla 20 N doleva má Fx = −20 N."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nakresli osy x, y a všechny síly s úhly.",
+            "Každou sílu rozlož: `Fx = F · cos α`, `Fy = F · sin α` (se znaménky).",
+            "Sečti složky: ΣFx a ΣFy.",
+            "Velikost výslednice: `R = √(ΣFx² + ΣFy²)`.",
+            "Směr výslednice: `tg α_R = ΣFy / ΣFx`."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Síly: F₁ = 100 N doprava, F₂ = 60 N nahoru, F₃ = 20 N doleva. Najdi výslednici.",
+          "answer": "ΣFx = 100 − 20 = 80 N, ΣFy = 60 N. R = √(80² + 60²) = √10 000 = **100 N**. tg α = 60 / 80 = 0,75 → α ≈ **36,9°** nad osou x."
+        },
+        {
+          "type": "example",
+          "question": "Dvě síly 60 N a 80 N svírají úhel 60°. Jak velká je výslednice?",
+          "answer": "Kosinová věta pro skládání: R² = F₁² + F₂² + 2 · F₁ · F₂ · cos 60° = 3 600 + 6 400 + 4 800 = 14 800. R ≈ **121,7 N**."
+        },
+        {
+          "type": "heading",
+          "text": "Tabulka hodnot"
+        },
+        {
+          "type": "table",
+          "head": [
+            "úhel α",
+            "cos α",
+            "sin α"
+          ],
+          "rows": [
+            [
+              "0°",
+              "1",
+              "0"
+            ],
+            [
+              "30°",
+              "0,866",
+              "0,5"
+            ],
+            [
+              "45°",
+              "0,707",
+              "0,707"
+            ],
+            [
+              "60°",
+              "0,5",
+              "0,866"
+            ],
+            [
+              "90°",
+              "0",
+              "1"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Síla 100 N pod úhlem 60° má Fx = ",
+                "after": " N.",
+                "options": [
+                  "50",
+                  "86,6",
+                  "100"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Síla 100 N pod úhlem 60° má Fy = ",
+                "after": " N.",
+                "options": [
+                  "86,6",
+                  "50",
+                  "60"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Síla 40 N doleva má Fx = ",
+                "after": " N.",
+                "options": [
+                  "−40",
+                  "40",
+                  "0"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Posunutí síly po nositelce",
+          "definition": "U tuhého tělesa (nedeformuje se) můžeš sílu posunout po její přímce – účinek se nezmění.",
+          "example": "Táhneš vozík lanem kratším nebo delším, ale stejným směrem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Fx = F · sin α a Fy = F · cos α, když je α úhel od vodorovné osy.",
+          "right": "Od osy x: `Fx = F · cos α`, `Fy = F · sin α`.",
+          "why": "Kosinus patří k odvěsně **přilehlé** k úhlu – a ta leží na ose x."
+        },
+        {
+          "type": "summary",
+          "text": "Každou sílu rozlož na Fx = F cos α a Fy = F sin α, složky sečti se znaménky a výslednici spočítej R = √(ΣFx² + ΣFy²)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká je jednotka síly?",
+      "options": [
+        "newton (N)",
+        "joule (J)",
+        "pascal (Pa)",
+        "watt (W)"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jakou tíhu má břemeno 100 kg (g = 9,81 m/s²)? Odpověz v N.",
+      "answers": [
+        "981"
+      ],
+      "explanation": "G = m · g = 100 · 9,81 = 981 N."
+    },
+    {
+      "type": "choice",
+      "question": "Které čtyři údaje určují sílu?",
+      "options": [
+        "velikost, směr, smysl, působiště",
+        "hmotnost, rychlost, čas, dráha",
+        "velikost, barva, tvar, materiál",
+        "jen velikost a jednotka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Dvě síly 50 N a 30 N působí na jedné přímce proti sobě. Jak velká je výslednice v N?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "50 − 30 = 20 N, ve směru větší síly."
+    },
+    {
+      "type": "input",
+      "question": "Dvě kolmé síly 60 N a 80 N. Jak velká je výslednice v N?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "R = √(60² + 80²) = √10 000 = 100 N.",
+      "hints": [
+        "Kolmé síly tvoří pravoúhlý trojúhelník.",
+        "Použij Pythagorovu větu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Síla 200 N svírá s vodorovnou osou 60°. Jaká je vodorovná složka Fx v N?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Fx = 200 · cos 60° = 200 · 0,5 = 100 N.",
+      "hints": [
+        "Vodorovná složka používá kosinus.",
+        "Kosinus 60° je jedna polovina."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Výslednice dvou sil je vždy větší než každá z nich.",
+      "answer": false,
+      "explanation": "Síly proti sobě mohou dát i menší výslednici, dokonce nulovou."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje přímka, po které síla působí?",
+      "options": [
+        "nositelka",
+        "rameno",
+        "osa otáčení",
+        "tečna"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "ΣFx = 30 N, ΣFy = 40 N. Jak velká je výslednice v N?",
+      "answers": [
+        "50"
+      ],
+      "explanation": "R = √(30² + 40²) = 50 N."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky početného skládání sil.",
+      "items": [
+        "rozložit síly do os x a y",
+        "sečíst složky ΣFx a ΣFy",
+        "spočítat R = √(ΣFx² + ΣFy²)",
+        "určit úhel výslednice"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj úhel s hodnotou cos α.",
+      "pairs": [
+        [
+          "0°",
+          "1"
+        ],
+        [
+          "60°",
+          "0,5"
+        ],
+        [
+          "90°",
+          "0"
+        ],
+        [
+          "45°",
+          "0,707"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "U tuhého tělesa lze sílu posunout po její nositelce, aniž se změní účinek.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je výslednice sil a jak ji najdeš graficky.",
+      "answer": "Výslednice je jedna síla, která má stejný účinek jako všechny síly dohromady. Graficky nakreslíš síly za sebou (konec jedné = začátek další) a výslednice vede od začátku první ke konci poslední."
+    },
+    {
+      "type": "open",
+      "question": "Jak rozložíš sílu do dvou kolmých směrů?",
+      "answer": "Zvolím osy x a y a změřím úhel α síly od osy x. Vodorovná složka je Fx = F · cos α, svislá Fy = F · sin α. Složky mají znaménko podle směru."
+    }
+  ]
+}

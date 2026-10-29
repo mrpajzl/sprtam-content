@@ -1,0 +1,393 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "moment-sily",
+  "title": "Moment síly a dvojice sil",
+  "emoji": "🔧",
+  "explanations": [
+    {
+      "title": "Klíč a volant",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zarezlou matici povolíš snáz delším klíčem. Dveře otevřeš snadno za kliku, ale těžko, když tlačíš u pantů. Rozhoduje nejen síla, ale i to, **jak daleko od osy** působí. To vyjadřuje **moment síly**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Síla",
+          "definition": "Působení, které mění pohyb nebo tvar tělesa; v newtonech (N). Má velikost a směr.",
+          "example": "Ruka tlačí na klíč silou 100 N."
+        },
+        {
+          "type": "term",
+          "term": "Osa (bod) otáčení",
+          "definition": "Místo, kolem kterého se těleso otáčí.",
+          "example": "Střed matice, pant dveří."
+        },
+        {
+          "type": "term",
+          "term": "Rameno síly r",
+          "definition": "**Kolmá** vzdálenost od bodu otáčení k přímce, po které síla působí (k nositelce).",
+          "example": "Tlačíš kolmo na klíč 0,3 m od matice: rameno 0,3 m."
+        },
+        {
+          "type": "term",
+          "term": "Moment síly M",
+          "definition": "Otáčivý účinek síly: `M = F · r`. Jednotka **N·m** (newtonmetr).",
+          "example": "100 N · 0,3 m = 30 N·m."
+        },
+        {
+          "type": "heading",
+          "text": "Jak moment funguje"
+        },
+        {
+          "type": "text",
+          "text": "Dvojnásobná síla nebo dvojnásobné rameno dají dvojnásobný moment. Proto si mechanik nasadí na klíč trubku."
+        },
+        {
+          "type": "text",
+          "text": "Podívej se, jak moment roste, když prodloužíš klíč nebo zvětšíš sílu."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "N·m",
+            "items": [
+              {
+                "label": "klíč 0,1 m, 100 N",
+                "value": 10
+              },
+              {
+                "label": "klíč 0,2 m, 100 N",
+                "value": 20
+              },
+              {
+                "label": "klíč 0,4 m, 100 N",
+                "value": 40
+              },
+              {
+                "label": "klíč 0,4 m, 200 N",
+                "value": 80
+              }
+            ]
+          }
+        },
+        {
+          "type": "term",
+          "term": "Smysl otáčení",
+          "definition": "Moment může otáčet po směru hodinových ručiček, nebo proti. Dohodneme se: **proti směru je kladný (+)**, po směru záporný (−). (Některé učebnice volí opačně – hlavní je držet jednu dohodu.)",
+          "example": "Povolování běžné matice s pravým závitem: proti směru hodinových ručiček, tedy +."
+        },
+        {
+          "type": "heading",
+          "text": "Dvojice sil"
+        },
+        {
+          "type": "term",
+          "term": "Dvojice sil",
+          "definition": "Dvě stejně velké, rovnoběžné síly opačného smyslu, které nepůsobí na jedné přímce. Těleso jen **otáčejí**, neposouvají. Moment dvojice: `M = F · a`, kde a je kolmá vzdálenost sil.",
+          "example": "Obě ruce na volantu, závitník s vratidlem."
+        },
+        {
+          "type": "example",
+          "question": "Dvěma rukama otáčíš volantem o průměru 0,4 m, každou silou 50 N. Jaký moment vyvodíš?",
+          "answer": "Je to dvojice sil, vzdálenost a = 0,4 m. M = F · a = 50 · 0,4 = **20 N·m**."
+        },
+        {
+          "type": "example",
+          "question": "Táhneš za klíč dlouhý 0,5 m silou 100 N, ale šikmo – pod úhlem 30° ke klíči. Jaký je moment?",
+          "answer": "Rameno je kolmá vzdálenost: r = 0,5 · sin 30° = 0,25 m. M = 100 · 0,25 = **25 N·m**. Kolmým tahem bys měl 50 N·m."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rameno je vždy celá délka klíče.",
+          "right": "Rameno je **kolmá** vzdálenost osy od nositelky síly.",
+          "why": "Táhneš-li šikmo, rameno se zkracuje. Táhneš-li ve směru klíče, moment je nulový."
+        },
+        {
+          "type": "summary",
+          "text": "Moment síly M = F · r, kde r je kolmé rameno. Jednotka N·m. Dvojice sil těleso jen otáčí, její moment je M = F · a."
+        }
+      ]
+    },
+    {
+      "title": "Momentová věta",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "U nosníků, pák a hřídelů se počítá s mnoha silami najednou. Potřebuješ umět sečíst jejich momenty a vědět, kdy je těleso v klidu. K tomu slouží **momentová věta**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Moment síly k bodu",
+          "definition": "`M = F · r`, r je kolmá vzdálenost bodu od nositelky (přímky síly). Jednotka N·m.",
+          "example": "F = 200 N, r = 0,5 m: M = 100 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Znaménková dohoda",
+          "definition": "Proti směru hodinových ručiček +, po směru −. Dohodu zvol na začátku a dodrž ji.",
+          "example": "Síla nahoru vpravo od bodu otáčí proti směru: +."
+        },
+        {
+          "type": "term",
+          "term": "Výslednice",
+          "definition": "Jedna síla se stejným účinkem jako všechny síly dohromady.",
+          "example": "Dvě síly 3 kN a 2 kN dolů mají výslednici 5 kN dolů."
+        },
+        {
+          "type": "term",
+          "term": "Momentová (Varignonova) věta",
+          "definition": "Moment výslednice k bodu = **součet momentů** všech sil k témuž bodu.",
+          "example": "Najdeš tak, kde výslednice působí."
+        },
+        {
+          "type": "term",
+          "term": "Dvojice sil",
+          "definition": "Dvě stejné, rovnoběžné, opačné síly ve vzdálenosti a. Výslednice je nulová, zbývá jen moment `M = F · a`, který je **stejný k libovolnému bodu**.",
+          "example": "Vratidlo závitníku."
+        },
+        {
+          "type": "heading",
+          "text": "Kde působí výslednice rovnoběžných sil"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Sečti síly: R = ΣF.",
+            "Zvol bod (např. levý konec) a spočítej součet momentů ΣM.",
+            "Z momentové věty: R · x = ΣM.",
+            "Poloha výslednice: x = ΣM / R."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na tyči působí dolů 3 kN ve vzdálenosti 1 m a 2 kN ve vzdálenosti 4 m od levého konce. Kde působí výslednice?",
+          "answer": "R = 3 + 2 = 5 kN. ΣM k levému konci = 3 · 1 + 2 · 4 = 11 kN·m. x = 11 / 5 = **2,2 m** od levého konce."
+        },
+        {
+          "type": "example",
+          "question": "Páka: na levé straně 0,2 m od osy visí 500 N. Jakou silou musíš tlačit dolů na pravé straně 1 m od osy, aby páka byla v rovnováze?",
+          "answer": "Momenty se musí vyrovnat: 500 · 0,2 = F · 1. F = **100 N**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Jedna síla",
+            "Dvojice sil"
+          ],
+          "rows": [
+            [
+              "posouvá těleso?",
+              "ano",
+              "ne (výslednice 0)"
+            ],
+            [
+              "otáčí tělesem?",
+              "podle ramene",
+              "ano"
+            ],
+            [
+              "moment závisí na bodu?",
+              "ano",
+              "ne"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "moment síly",
+                "back": "M = F · r (r kolmé)"
+              },
+              {
+                "front": "jednotka momentu",
+                "back": "N·m"
+              },
+              {
+                "front": "moment dvojice",
+                "back": "M = F · a"
+              },
+              {
+                "front": "momentová věta",
+                "back": "moment výslednice = součet momentů složek"
+              },
+              {
+                "front": "síla prochází bodem",
+                "back": "moment k tomu bodu je 0"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Síla působící přímo v bodě otáčení má velký moment, protože je blízko.",
+          "right": "Síla, jejíž nositelka prochází bodem, má k tomu bodu moment **nulový**.",
+          "why": "Rameno je 0, takže M = F · 0 = 0. Na pant dveří tlačit nemá smysl."
+        },
+        {
+          "type": "summary",
+          "text": "Momenty sil k bodu sčítáme se znaménky. Moment výslednice = součet momentů složek, z toho najdeš polohu výslednice. Dvojice sil má výslednici nula a moment F · a."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaká je jednotka momentu síly?",
+      "options": [
+        "N·m",
+        "N/m",
+        "J/s",
+        "Pa"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Síla 80 N působí kolmo na klíč 0,25 m od osy. Jaký je moment v N·m?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "M = 80 · 0,25 = 20 N·m."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rameno síly je kolmá vzdálenost osy otáčení od nositelky síly.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Potřebuješ moment 60 N·m a klíč má 0,3 m. Jakou silou musíš kolmo táhnout (N)?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "F = M / r = 60 / 0,3 = 200 N.",
+      "hints": [
+        "Vyjádři sílu z M = F · r."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá dvojice sil s volným tělesem?",
+      "options": [
+        "jen ho otáčí",
+        "jen ho posouvá",
+        "otáčí i posouvá",
+        "nic"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Volant: dvojice sil 40 N, vzdálenost rukou 0,5 m. Jaký je moment v N·m?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "M = F · a = 40 · 0,5 = 20 N·m."
+    },
+    {
+      "type": "truefalse",
+      "question": "Síla, jejíž nositelka prochází osou otáčení, má k této ose nulový moment.",
+      "answer": true,
+      "explanation": "Rameno je nula."
+    },
+    {
+      "type": "input",
+      "question": "Síla 100 N táhne za klíč 0,4 m pod úhlem 30° ke klíči. Jaký je moment v N·m?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "r = 0,4 · sin 30° = 0,2 m. M = 100 · 0,2 = 20 N·m.",
+      "hints": [
+        "Rameno není celá délka klíče.",
+        "Kolmou vzdálenost dostaneš pomocí sin 30°."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Síly 4 kN v 1 m a 6 kN ve 3 m od levého konce, obě dolů. Jak daleko od levého konce působí výslednice (m)?",
+      "answers": [
+        "2,2",
+        "2.2"
+      ],
+      "explanation": "R = 10 kN, ΣM = 4 + 18 = 22 kN·m, x = 2,2 m.",
+      "hints": [
+        "Nejdřív sečti síly.",
+        "Pak sečti momenty k levému konci a vyděl."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj situaci s veličinou.",
+      "pairs": [
+        [
+          "prodloužím klíč",
+          "větší rameno"
+        ],
+        [
+          "obě ruce na volantu",
+          "dvojice sil"
+        ],
+        [
+          "tlačím na pant dveří",
+          "nulový moment"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na páce visí 300 N ve vzdálenosti 0,5 m od osy. Jakou silou ve vzdálenosti 1,5 m ji vyrovnáš?",
+      "options": [
+        "100 N",
+        "150 N",
+        "300 N",
+        "900 N"
+      ],
+      "answer": 0,
+      "explanation": "300 · 0,5 = F · 1,5 → F = 100 N."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky hledání polohy výslednice rovnoběžných sil.",
+      "items": [
+        "sečíst síly R = ΣF",
+        "zvolit bod a sečíst momenty ΣM",
+        "použít R · x = ΣM",
+        "spočítat x = ΣM / R"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je moment síly a na čem závisí.",
+      "answer": "Moment síly je otáčivý účinek síly kolem osy. Je to součin síly a ramene, tedy kolmé vzdálenosti osy od nositelky síly: M = F · r. Roste s větší silou i s delším ramenem."
+    },
+    {
+      "type": "open",
+      "question": "Co je dvojice sil a kde ji v praxi najdeš?",
+      "answer": "Dvě stejně velké, rovnoběžné síly opačného smyslu, které neleží na jedné přímce. Výslednice je nulová, takže těleso jen otáčejí; moment je M = F · a. Příklad: volant, vratidlo závitníku, kohoutek."
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "krut",
+  "title": "Krut",
+  "emoji": "🔁",
+  "explanations": [
+    {
+      "title": "Hřídel a šroubovák",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když utahuješ šroub šroubovákem, ruka otáčí rukojetí a hrot drží v šroubu. Dřík šroubováku se uprostřed **zkrucuje**. Stejně se zkrucuje hřídel motoru, kloubový hřídel auta nebo drát pružiny. Tomu namáhání se říká **krut**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hřídel",
+          "definition": "Otáčející se tyč, která přenáší otáčení a krouticí moment.",
+          "example": "Hřídel elektromotoru."
+        },
+        {
+          "type": "term",
+          "term": "Krouticí moment Mk",
+          "definition": "Moment, který součást zkrucuje kolem její osy. Jednotka N·m.",
+          "example": "Motor předává na hřídel Mk = 70 N·m."
+        },
+        {
+          "type": "term",
+          "term": "Napětí",
+          "definition": "Síla rozpočítaná na plochu, v MPa = N/mm².",
+          "example": "100 N na 1 mm² = 100 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Krut",
+          "definition": "Namáhání, kdy dvojice momentů na koncích tyče otáčí každým koncem jinam a tyč se zkroutí. V materiálu vzniká **smykové napětí τk**.",
+          "example": "Žmýkání ručníku."
+        },
+        {
+          "type": "term",
+          "term": "Napětí v krutu τk",
+          "definition": "`τk = Mk / Wk`. Největší je na povrchu hřídele, ve středu nulové.",
+          "example": "Mk = 72 400 N·mm, Wk = 3 068 mm³: τk ≈ 23,6 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Průřezový modul v krutu Wk",
+          "definition": "Pro plný kruh `Wk = π · d³ / 16`. Roste s průměrem na třetí.",
+          "example": "d = 25 mm: Wk ≈ 3 068 mm³."
+        },
+        {
+          "type": "heading",
+          "text": "Odkud se moment vezme"
+        },
+        {
+          "type": "text",
+          "text": "Motor má na štítku **výkon** P (W) a **otáčky** n (min⁻¹). Krouticí moment z nich spočítáš: `Mk = P / ω`, kde úhlová rychlost `ω = 2 · π · n` (n v otáčkách za sekundu)."
+        },
+        {
+          "type": "example",
+          "question": "Motor 11 kW, 1 450 min⁻¹. Jaký krouticí moment dává?",
+          "answer": "n = 1 450 / 60 = 24,17 s⁻¹. ω = 2π · 24,17 ≈ 151,8 rad/s. Mk = 11 000 / 151,8 ≈ **72,4 N·m**."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel toho motoru má d = 25 mm. Jaké je v něm napětí v krutu?",
+          "answer": "Wk = π · 25³ / 16 ≈ 3 068 mm³. τk = 72 400 / 3 068 ≈ **23,6 MPa**."
+        },
+        {
+          "type": "heading",
+          "text": "Proč jsou hřídele někdy duté"
+        },
+        {
+          "type": "text",
+          "text": "Uprostřed hřídele je napětí skoro nulové – materiál tam téměř nepracuje. Dutý hřídel ušetří hodně hmotnosti a pevnost klesne málo."
+        },
+        {
+          "type": "text",
+          "text": "Porovnej pruhy: dutý hřídel 40/30 mm váží jen 44 % plného, ale má 68 % jeho průřezového modulu."
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "%",
+            "items": [
+              {
+                "label": "hmotnost plného d = 40",
+                "value": 100
+              },
+              {
+                "label": "hmotnost dutého 40/30",
+                "value": 44
+              },
+              {
+                "label": "Wk plného d = 40",
+                "value": 100
+              },
+              {
+                "label": "Wk dutého 40/30",
+                "value": 68
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když zdvojnásobím průměr hřídele, unese dvakrát větší moment.",
+          "right": "Unese **osmkrát** větší moment.",
+          "why": "Wk = π · d³ / 16 roste s třetí mocninou průměru: 2³ = 8."
+        },
+        {
+          "type": "summary",
+          "text": "Krut zkrucuje součást kolem osy. τk = Mk / Wk, pro kruh Wk = πd³/16. Moment z výkonu Mk = P / ω. Napětí je největší na povrchu, proto dutý hřídel ušetří materiál."
+        }
+      ]
+    },
+    {
+      "title": "Pevnost a tuhost",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "U hřídele se kontrolují dvě věci. **Pevnost**: nesmí se ulomit. **Tuhost**: nesmí se příliš zkroutit – u dlouhých hřídelů obráběcích strojů nebo pojezdů jeřábů by se konce točily nesouhlasně."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Krut a krouticí moment Mk",
+          "definition": "Krut = namáhání zkroucením kolem osy. Mk (N·m) je moment, který zkrucuje.",
+          "example": "Kloubový hřídel auta."
+        },
+        {
+          "type": "term",
+          "term": "Napětí v krutu τk",
+          "definition": "Smykové napětí `τk = Mk / Wk` (MPa).",
+          "example": "Dovolené τ_D pro hřídele bývá desítky MPa."
+        },
+        {
+          "type": "term",
+          "term": "Wk a Jp",
+          "definition": "**Wk** (mm³) – průřezový modul v krutu, pro pevnost: plný kruh `π · d³ / 16`. **Jp** (mm⁴) – polární moment průřezu, pro tuhost: plný kruh `π · d⁴ / 32`.",
+          "example": "d = 25 mm: Wk ≈ 3 068 mm³, Jp ≈ 38 350 mm⁴."
+        },
+        {
+          "type": "term",
+          "term": "Úhel zkroucení φ",
+          "definition": "O kolik se jeden konec hřídele pootočí vůči druhému: `φ = Mk · l / (G · Jp)` v radiánech. G je modul pružnosti ve smyku (ocel ≈ 80 000 MPa).",
+          "example": "1 rad ≈ 57,3°."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Z výkonu a otáček spočítej `Mk = P / (2 · π · n)`.",
+            "Pevnost: `τk = Mk / Wk ≤ τ_D`, nebo návrh `d = ∛(16 · Mk / (π · τ_D))`.",
+            "Tuhost: `φ = Mk · l / (G · Jp)` a porovnej s dovoleným úhlem.",
+            "Zvol průměr, který splní **obě** podmínky, a zaokrouhli nahoru."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Hřídel d = 25 mm, l = 1 m, Mk = 72,4 N·m, G = 80 000 MPa. Jaký je úhel zkroucení?",
+          "answer": "Jp = π · 25⁴ / 32 ≈ 38 350 mm⁴. φ = 72 400 · 1 000 / (80 000 · 38 350) ≈ 0,023 6 rad ≈ **1,35°**."
+        },
+        {
+          "type": "example",
+          "question": "Navrhni plný hřídel pro Mk = 200 N·m, τ_D = 40 MPa.",
+          "answer": "d = ∛(16 · 200 000 / (π · 40)) = ∛25 465 ≈ 29,4 mm. Zvolíme **d = 30 mm**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Plný d = 40",
+            "Dutý 40/30"
+          ],
+          "rows": [
+            [
+              "plocha (hmotnost)",
+              "1 257 mm²",
+              "550 mm² (44 %)"
+            ],
+            [
+              "Wk",
+              "12 566 mm³",
+              "8 590 mm³ (68 %)"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Wk mezikruží",
+          "definition": "Dutý hřídel s vnějším D a vnitřním d: `Wk = π · (D⁴ − d⁴) / (16 · D)`.",
+          "example": "40/30 mm: Wk ≈ 8 590 mm³."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Wk plného kruhu = ",
+                "after": "",
+                "options": [
+                  "π · d³ / 16",
+                  "π · d³ / 32",
+                  "π · d² / 4"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Krouticí moment z výkonu: Mk = ",
+                "after": "",
+                "options": [
+                  "P / ω",
+                  "P · ω",
+                  "ω / P"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Napětí v krutu je největší ",
+                "after": ".",
+                "options": [
+                  "na povrchu",
+                  "v ose"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wk = π · d³ / 32, stejně jako u ohybu.",
+          "right": "V krutu je `Wk = π · d³ / 16` – **dvakrát větší** než Wo v ohybu.",
+          "why": "Plete se to často. Zapamatuj si: krut 16, ohyb 32."
+        },
+        {
+          "type": "summary",
+          "text": "Pevnost v krutu: τk = Mk / Wk ≤ τ_D, Wk = πd³/16. Tuhost: φ = Mk · l / (G · Jp), Jp = πd⁴/32. Dutý hřídel je lehčí při malé ztrátě pevnosti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký vzorec platí pro Wk plného kruhového průřezu?",
+      "options": [
+        "π · d³ / 16",
+        "π · d³ / 32",
+        "b · h² / 6",
+        "π · d⁴ / 32"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Mk = 50 000 N·mm, Wk = 2 500 mm³. Jaké je napětí v krutu v MPa?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "τk = 50 000 / 2 500 = 20 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Motor 6 280 W, ω = 157 rad/s. Jaký je krouticí moment v N·m?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "Mk = 6 280 / 157 = 40 N·m.",
+      "hints": [
+        "Výkon vyděl úhlovou rychlostí."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Napětí v krutu je největší v ose hřídele.",
+      "answer": false,
+      "explanation": "V ose je nulové, největší je na povrchu."
+    },
+    {
+      "type": "choice",
+      "question": "Kolikrát vzroste únosnost hřídele v krutu, když zdvojnásobíš průměr?",
+      "options": [
+        "8×",
+        "2×",
+        "4×",
+        "16×"
+      ],
+      "answer": 0,
+      "explanation": "Wk roste s d³."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dutý hřídel je při stejném vnějším průměru lehčí a ztratí jen část pevnosti.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Převeď 1 200 min⁻¹ na úhlovou rychlost v rad/s (π ≈ 3,14, zaokrouhli na celé číslo).",
+      "answers": [
+        "126"
+      ],
+      "explanation": "n = 20 s⁻¹, ω = 2 · 3,14 · 20 = 125,6 ≈ 126 rad/s.",
+      "hints": [
+        "Nejdřív převeď otáčky za minutu na otáčky za sekundu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která veličina se používá pro výpočet úhlu zkroucení?",
+      "options": [
+        "polární moment průřezu Jp",
+        "Wo",
+        "modul E",
+        "průřez S"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik stupňů je přibližně 1 radián? (celé číslo)",
+      "answers": [
+        "57"
+      ],
+      "explanation": "1 rad = 180° / π ≈ 57,3°."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká součást je v praxi hlavně namáhaná krutem?",
+      "options": [
+        "hřídel převodovky",
+        "lano jeřábu",
+        "sloup haly",
+        "nýt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s jednotkou.",
+      "pairs": [
+        [
+          "Mk",
+          "N·m"
+        ],
+        [
+          "Wk",
+          "mm³"
+        ],
+        [
+          "Jp",
+          "mm⁴"
+        ],
+        [
+          "τk",
+          "MPa"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky návrhu hřídele na krut.",
+      "items": [
+        "spočítat Mk z výkonu a otáček",
+        "spočítat průměr z pevnostní podmínky",
+        "zkontrolovat úhel zkroucení",
+        "zaokrouhlit průměr nahoru"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je krut a kde se s ním setkáš.",
+      "answer": "Krut je namáhání, kdy krouticí moment zkrucuje součást kolem její osy a v materiálu vzniká smykové napětí τk = Mk / Wk. Setkáš se s ním u hřídelů motorů a převodovek, kloubových hřídelů aut, šroubováků a drátu šroubovitých pružin."
+    },
+    {
+      "type": "open",
+      "question": "Proč se dlouhé hřídele kontrolují i na úhel zkroucení?",
+      "answer": "I když hřídel pevnostně vydrží, může se zkroutit tak, že se jeho konce otáčejí nesouhlasně. To vadí u přesných pohonů, obráběcích strojů nebo pojezdů jeřábů. Úhel φ = Mk · l / (G · Jp) roste s délkou hřídele."
+    }
+  ]
+}

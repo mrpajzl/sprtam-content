@@ -1,0 +1,419 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ohyb",
+  "title": "Ohyb",
+  "emoji": "🌉",
+  "explanations": [
+    {
+      "title": "Prkno přes potok",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Polož prkno přes potok a stoupni si doprostřed. Prohne se. Když ho otočíš **na výšku**, skoro se neprohne. Proč? To vysvětluje **ohyb** – nejčastější namáhání nosníků, hřídelů, os, stropů i ramen jeřábů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nosník",
+          "definition": "Dlouhé těleso uložené na podporách a zatížené **napříč** (kolmo k jeho ose).",
+          "example": "Trám, ocelový I-profil, lávka."
+        },
+        {
+          "type": "term",
+          "term": "Moment síly",
+          "definition": "Otáčivý účinek: `M = F · r` (N·m), r je kolmá vzdálenost.",
+          "example": "Síla 1 kN na rameni 2 m = 2 kN·m."
+        },
+        {
+          "type": "term",
+          "term": "Ohybový moment Mo",
+          "definition": "Moment, který nosník v určitém místě ohýbá. V řezu je to součet momentů všech sil na **jedné straně** řezu.",
+          "example": "Konzola 1 m se silou 2 kN na konci: u zdi Mo = 2 kN·m."
+        },
+        {
+          "type": "term",
+          "term": "Neutrální osa",
+          "definition": "Vrstva uprostřed výšky nosníku, která se při ohybu **neprodlouží ani nezkrátí**. Nad ní je materiál stlačený, pod ní natažený (nebo naopak).",
+          "example": "Prohnuté pravítko: horní strana se zkrátí, dolní prodlouží."
+        },
+        {
+          "type": "term",
+          "term": "Ohybové napětí σo",
+          "definition": "Napětí v krajních vláknech nosníku: `σo = Mo / Wo`. Největší je na povrchu, nulové v neutrální ose.",
+          "example": "Mo = 2 · 10⁶ N·mm, Wo = 24 000 mm³: σo ≈ 83 MPa."
+        },
+        {
+          "type": "term",
+          "term": "Průřezový modul v ohybu Wo",
+          "definition": "Číslo (mm³), které říká, jak dobře tvar průřezu odolává ohybu. Obdélník: `Wo = b · h² / 6` (h = výška ve směru zatížení).",
+          "example": "Prkno 100 × 20 mm na výšku má 5× větší Wo než naplocho."
+        },
+        {
+          "type": "heading",
+          "text": "Na výšku, nebo naplocho?"
+        },
+        {
+          "type": "text",
+          "text": "Výška h je ve vzorci **na druhou**. Proto prkno na výšku nese mnohem víc. Porovnej Wo prkna 20 × 100 mm:"
+        },
+        {
+          "type": "widget",
+          "widget": "bars",
+          "props": {
+            "unit": "mm³",
+            "items": [
+              {
+                "label": "naplocho (h = 20 mm)",
+                "value": 6667
+              },
+              {
+                "label": "na výšku (h = 100 mm)",
+                "value": 33333
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ze stejného důvodu mají ocelové nosníky tvar **I**: většina materiálu je nahoře a dole, daleko od neutrální osy, kde je napětí největší."
+        },
+        {
+          "type": "term",
+          "term": "Konzola",
+          "definition": "Nosník, který je jedním koncem pevně zazděný nebo přivařený (**vetknutý**) a druhý konec má volný.",
+          "example": "Balkon, rameno sloupového jeřábu."
+        },
+        {
+          "type": "example",
+          "question": "Konzola (vetknutý trám) délky 1 m nese na konci 2 kN. Průřez je obdélník b = 40 mm, h = 60 mm. Jaké je největší ohybové napětí?",
+          "answer": "Mo = F · l = 2 000 · 1 000 = 2 · 10⁶ N·mm (u vetknutí). Wo = 40 · 60² / 6 = 24 000 mm³. σo = 2 · 10⁶ / 24 000 ≈ **83 MPa**."
+        },
+        {
+          "type": "example",
+          "question": "Kolikrát víc unese prkno 20 × 100 mm položené na výšku než naplocho?",
+          "answer": "Wo naplocho = 100 · 20² / 6 ≈ 6 667 mm³. Na výšku = 20 · 100² / 6 ≈ 33 333 mm³. Poměr = **5×** (= 100 / 20)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Největší ohybové napětí je uprostřed výšky nosníku.",
+          "right": "Uprostřed (v neutrální ose) je napětí **nulové**. Největší je na horním a dolním povrchu.",
+          "why": "Nejvíc se prodlužují a zkracují vlákna nejdál od neutrální osy."
+        },
+        {
+          "type": "summary",
+          "text": "Ohyb natahuje jednu stranu nosníku a stlačuje druhou; neutrální osa zůstává beze změny. σo = Mo / Wo. Obdélník má Wo = bh²/6, proto nosník na výšku nese víc."
+        }
+      ]
+    },
+    {
+      "title": "Výpočet nosníku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každý nosník se kontroluje stejným postupem: spočítáš reakce, najdeš místo **největšího ohybového momentu** a ověříš napětí. Pro nejčastější případy jsou hotové vzorce."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nosník a reakce",
+          "definition": "Nosník je těleso na podporách zatížené napříč. Reakce jsou síly, kterými podpory nosník drží.",
+          "example": "Prostý nosník na dvou podporách."
+        },
+        {
+          "type": "term",
+          "term": "Ohybový moment Mo",
+          "definition": "Součet momentů sil na jedné straně řezu. Jednotka N·mm nebo kN·m.",
+          "example": "Mo = 10 kN·m = 10 · 10⁶ N·mm."
+        },
+        {
+          "type": "term",
+          "term": "Konzola a prostý nosník",
+          "definition": "**Konzola** je nosník jedním koncem pevně vetknutý (zazděný), druhý konec je volný. **Prostý nosník** leží na dvou podporách, z nichž jedna je posuvná.",
+          "example": "Balkon je konzola, lávka přes potok prostý nosník."
+        },
+        {
+          "type": "term",
+          "term": "Nebezpečný průřez",
+          "definition": "Místo, kde je ohybový moment **největší**. Tam se nosník kontroluje.",
+          "example": "U konzoly vetknutí, u prostého nosníku se silou uprostřed střed."
+        },
+        {
+          "type": "term",
+          "term": "Wo",
+          "definition": "Průřezový modul v ohybu (mm³). Obdélník `b · h² / 6`, kruh `π · d³ / 32` (asi 0,1 · d³).",
+          "example": "Kruh d = 50 mm: Wo ≈ 12 272 mm³."
+        },
+        {
+          "type": "heading",
+          "text": "Hotové vzorce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Případ",
+            "Největší Mo",
+            "Kde"
+          ],
+          "rows": [
+            [
+              "konzola, síla F na konci",
+              "F · l",
+              "ve vetknutí"
+            ],
+            [
+              "prostý nosník, síla F uprostřed",
+              "F · l / 4",
+              "uprostřed"
+            ],
+            [
+              "prostý nosník, rovnoměrné zatížení q (N/m)",
+              "q · l² / 8",
+              "uprostřed"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči případ uložení a zatížení (nebo spočítej reakce).",
+            "Najdi největší ohybový moment Mo,max.",
+            "Spočítej Wo průřezu.",
+            "Napětí `σo = Mo / Wo` porovnej s dovoleným σ_D.",
+            "Při návrhu: `Wo ≥ Mo / σ_D` a z tabulek vyber profil."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Prostý nosník l = 2 m, uprostřed F = 6 kN. Průřez 50 × 100 mm (h = 100 mm). Jaké je σo?",
+          "answer": "Mo = F · l / 4 = 6 000 · 2 000 / 4 = 3 · 10⁶ N·mm. Wo = 50 · 100² / 6 ≈ 83 333 mm³. σo = 3 · 10⁶ / 83 333 = **36 MPa**."
+        },
+        {
+          "type": "example",
+          "question": "Hřídel d = 40 mm je namáhán momentem Mo = 640 N·m. Jaké je σo?",
+          "answer": "Wo = π · 40³ / 32 ≈ 6 283 mm³. σo = 640 000 / 6 283 ≈ **102 MPa**."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "konzola Mo,max",
+                "back": "F · l"
+              },
+              {
+                "front": "prostý nosník, F uprostřed",
+                "back": "F · l / 4"
+              },
+              {
+                "front": "rovnoměrné zatížení",
+                "back": "q · l² / 8"
+              },
+              {
+                "front": "Wo obdélníku",
+                "back": "b · h² / 6"
+              },
+              {
+                "front": "Wo kruhu",
+                "back": "π · d³ / 32"
+              }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Při stejné ploše nese nejlépe profil tvaru ",
+                "after": ".",
+                "options": [
+                  "I",
+                  "plného kruhu",
+                  "čtverce"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "V neutrální ose je ohybové napětí ",
+                "after": ".",
+                "options": [
+                  "nulové",
+                  "největší"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Zdvojnásobení výšky h zvětší Wo obdélníku ",
+                "after": ".",
+                "options": [
+                  "4×",
+                  "2×",
+                  "8×"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ve vzorci Wo = b · h² / 6 je h vždy ten delší rozměr.",
+          "right": "h je rozměr **ve směru zatížení** (výška, jak nosník leží).",
+          "why": "Prkno naplocho má h = tloušťka – proto se tolik prohne."
+        },
+        {
+          "type": "summary",
+          "text": "Najdi nebezpečný průřez a Mo,max (konzola F·l, prostý nosník F·l/4 nebo q·l²/8). Pak σo = Mo / Wo ≤ σ_D. Wo obdélníku bh²/6, kruhu πd³/32."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kde je u konzoly se silou na konci největší ohybový moment?",
+      "options": [
+        "ve vetknutí",
+        "na volném konci",
+        "uprostřed",
+        "všude stejný"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Konzola l = 2 m, na konci 3 kN. Jaký je největší ohybový moment v kN·m?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Mo = F · l = 3 · 2 = 6 kN·m."
+    },
+    {
+      "type": "input",
+      "question": "Prostý nosník l = 4 m, uprostřed 10 kN. Jaký je největší ohybový moment v kN·m?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Mo = F · l / 4 = 10 · 4 / 4 = 10 kN·m.",
+      "hints": [
+        "U síly uprostřed se dělí čtyřmi."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V neutrální ose je ohybové napětí největší.",
+      "answer": false,
+      "explanation": "Je tam nulové; největší je na povrchu."
+    },
+    {
+      "type": "input",
+      "question": "Obdélník b = 30 mm, h = 60 mm. Jaký je Wo v mm³?",
+      "answers": [
+        "18000"
+      ],
+      "explanation": "Wo = 30 · 60² / 6 = 18 000 mm³.",
+      "hints": [
+        "Výšku umocni na druhou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Mo = 1 800 000 N·mm, Wo = 18 000 mm³. Jaké je σo v MPa?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "σo = 1 800 000 / 18 000 = 100 MPa."
+    },
+    {
+      "type": "choice",
+      "question": "Proč mají ocelové nosníky průřez tvaru I?",
+      "options": [
+        "materiál je daleko od neutrální osy, kde je napětí největší",
+        "lépe se svařují",
+        "jsou levnější na dopravu",
+        "lépe odolávají korozi"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kolikrát vzroste Wo obdélníku, když zdvojnásobíš výšku h?",
+      "options": [
+        "4×",
+        "2×",
+        "8×",
+        "nezmění se"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Prkno položené na výšku unese víc než naplocho.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Prostý nosník l = 6 m s rovnoměrným zatížením q = 2 kN/m. Jaký je Mo,max v kN·m?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "Mo = q · l² / 8 = 2 · 36 / 8 = 9 kN·m."
+    },
+    {
+      "type": "match",
+      "question": "Spoj případ s největším ohybovým momentem.",
+      "pairs": [
+        [
+          "konzola, síla na konci",
+          "F · l"
+        ],
+        [
+          "prostý nosník, síla uprostřed",
+          "F · l / 4"
+        ],
+        [
+          "prostý nosník, rovnoměrné zatížení",
+          "q · l² / 8"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky kontroly nosníku na ohyb.",
+      "items": [
+        "určit uložení a zatížení",
+        "najít Mo,max",
+        "spočítat Wo",
+        "spočítat σo = Mo / Wo",
+        "porovnat s σ_D"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co se děje v průřezu ohýbaného nosníku.",
+      "answer": "Jedna strana nosníku se natahuje a druhá stlačuje. Mezi nimi je neutrální osa, kde je napětí nulové. Napětí roste se vzdáleností od neutrální osy a největší je na povrchu: σo = Mo / Wo."
+    },
+    {
+      "type": "open",
+      "question": "Proč je výhodnější položit trám na výšku?",
+      "answer": "Průřezový modul obdélníku je Wo = b · h² / 6, výška ve směru zatížení je na druhou. Trám na výšku má proto mnohem větší Wo, menší napětí a menší průhyb než naplocho."
+    }
+  ]
+}
