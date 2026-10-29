@@ -1,0 +1,535 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "slovosled-a-otazky",
+  "title": "Slovosled a otázky",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Sloveso na 2. místě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V češtině můžeš slova ve větě přehazovat skoro libovolně: „Já zítra hraju fotbal.“ „Zítra já hraju fotbal.“ „Fotbal hraju zítra.“ V němčině to nejde. Sloveso má ve větě **pevné místo**."
+        },
+        {
+          "type": "text",
+          "text": "Kdo zná toto jedno pravidlo, staví německé věty správně a otázky má hned hotové."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Slovosled",
+          "definition": "Pořadí slov ve větě.",
+          "example": "Ich spiele heute. × Heute spiele ich."
+        },
+        {
+          "type": "term",
+          "term": "Větný člen",
+          "definition": "Kousek věty, který patří k sobě a počítá se jako **jedno místo**. Může mít jedno slovo i víc slov.",
+          "example": "*heute* (dnes), *am Montag* (v pondělí), *mein großer Bruder* (můj velký brácha)"
+        },
+        {
+          "type": "term",
+          "term": "Podmět",
+          "definition": "Kdo nebo co něco dělá.",
+          "example": "**Ich** spiele. **Mein Bruder** spielt."
+        },
+        {
+          "type": "term",
+          "term": "Sloveso v určitém tvaru",
+          "definition": "Sloveso s koncovkou podle osoby (ne infinitiv).",
+          "example": "spiel**e**, spiel**st**, ist, hat"
+        },
+        {
+          "type": "heading",
+          "text": "Pravidlo: sloveso je druhé"
+        },
+        {
+          "type": "text",
+          "text": "V oznamovací větě stojí sloveso **vždy na 2. místě**. Na 1. místě může být podmět nebo cokoli jiného. Když na začátek dáš něco jiného, podmět přeskočí **za sloveso**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "1. místo",
+            "2. místo (sloveso)",
+            "zbytek"
+          ],
+          "rows": [
+            [
+              "Ich",
+              "**spiele**",
+              "heute Fußball."
+            ],
+            [
+              "Heute",
+              "**spiele**",
+              "ich Fußball."
+            ],
+            [
+              "Am Montag",
+              "**hat**",
+              "Tom Deutsch."
+            ],
+            [
+              "Mein großer Bruder",
+              "**wohnt**",
+              "in Wien."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: *Mein großer Bruder* jsou tři slova, ale jeden větný člen, tedy **jedno** místo."
+        },
+        {
+          "type": "text",
+          "text": "Spojky **und** (a), **aber** (ale), **oder** (nebo) se nepočítají. Stojí jakoby na nultém místě: *Ich spiele Tennis **und** mein Bruder spielt Fußball.*"
+        },
+        {
+          "type": "text",
+          "text": "Doplň, co patří na 2. a 3. místo:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Heute",
+                "after": "Deutsch.",
+                "options": [
+                  "lerne ich",
+                  "ich lerne"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Am Samstag",
+                "after": "nach Prag.",
+                "options": [
+                  "fahren wir",
+                  "wir fahren"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich",
+                "after": "gern Gitarre.",
+                "options": [
+                  "spiele",
+                  "spielen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Dann",
+                "after": "eine Pizza.",
+                "options": [
+                  "isst er",
+                  "er isst"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Začni větu slovem *morgen* (zítra): *Ich habe Mathe.*",
+          "answer": "Na 1. místo dám *Morgen*. Sloveso *habe* zůstane na 2. místě. Podmět *ich* se posune za sloveso. **Morgen habe ich Mathe.**"
+        },
+        {
+          "type": "example",
+          "question": "Začni větu slovy *am Wochenende* (o víkendu): *Wir besuchen Oma.*",
+          "answer": "*Am Wochenende* je jeden větný člen = 1. místo. Sloveso *besuchen* na 2. místě, pak *wir*. **Am Wochenende besuchen wir Oma.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Heute ich spiele Fußball.",
+          "right": "Heute spiele ich Fußball.",
+          "why": "Sloveso musí být na 2. místě. Když je na 1. místě *heute*, podmět *ich* jde za sloveso."
+        },
+        {
+          "type": "summary",
+          "text": "V oznamovací větě je sloveso **vždy na 2. místě**. Když větu začneš něčím jiným než podmětem, podmět jde **za sloveso**. *und, aber, oder* se nepočítají."
+        }
+      ]
+    },
+    {
+      "title": "Otázky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ptát se budeš pořád: kde je nádraží, kolik to stojí, jestli má kamarád čas. Němčina má dva druhy otázek a oba se staví jednoduše, když víš, kam dát sloveso."
+        },
+        {
+          "type": "text",
+          "text": "Česky poznáš otázku hlavně podle melodie. Němčina ji pozná podle **pořadí slov**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tázací slovo (W-Wort)",
+          "definition": "Slovo, kterým se na něco ptáš. Skoro všechna v němčině začínají na **W**, proto se jim říká W-otázky.",
+          "example": "Was? = Co? Wo? = Kde?"
+        },
+        {
+          "type": "term",
+          "term": "Zjišťovací otázka",
+          "definition": "Otázka, na kterou se odpovídá **ano**, nebo **ne** (*ja / nein*).",
+          "example": "Hast du Zeit? – Ja. (Máš čas? – Ano.)"
+        },
+        {
+          "type": "term",
+          "term": "Sloveso",
+          "definition": "Slovo, které říká, co kdo dělá. V otázce rozhoduje, kam ho dáš.",
+          "example": "kommen, wohnen, haben"
+        },
+        {
+          "type": "term",
+          "term": "Podmět",
+          "definition": "Kdo nebo co něco dělá. V otázce stojí hned za slovesem.",
+          "example": "Wo wohnst **du**? Wann kommt **Anna**?"
+        },
+        {
+          "type": "heading",
+          "text": "1. Otázka s tázacím slovem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na 1. místo dej tázací slovo.",
+            "Na 2. místo dej sloveso.",
+            "Pak podmět a zbytek."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Tázací slovo",
+            "Česky",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "Was?",
+              "Co?",
+              "Was machst du?"
+            ],
+            [
+              "Wer?",
+              "Kdo?",
+              "Wer ist das?"
+            ],
+            [
+              "Wo?",
+              "Kde?",
+              "Wo wohnst du?"
+            ],
+            [
+              "Woher?",
+              "Odkud?",
+              "Woher kommst du?"
+            ],
+            [
+              "Wohin?",
+              "Kam?",
+              "Wohin fährst du?"
+            ],
+            [
+              "Wann?",
+              "Kdy?",
+              "Wann beginnt der Film?"
+            ],
+            [
+              "Wie?",
+              "Jak?",
+              "Wie heißt du?"
+            ],
+            [
+              "Warum?",
+              "Proč?",
+              "Warum lernst du Deutsch?"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor na chyták: **Wer** = kdo (ne „kde“!), **Wo** = kde."
+        },
+        {
+          "type": "heading",
+          "text": "2. Otázka ano/ne"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na 1. místo dej sloveso.",
+            "Za něj podmět.",
+            "Pak zbytek. Žádné tázací slovo ani pomocné *do* jako v angličtině."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Oznamovací věta",
+            "Otázka",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Du spielst Tennis.",
+              "**Spielst** du Tennis?",
+              "Hraješ tenis?"
+            ],
+            [
+              "Er hat Zeit.",
+              "**Hat** er Zeit?",
+              "Má čas?"
+            ],
+            [
+              "Ihr kommt mit.",
+              "**Kommt** ihr mit?",
+              "Půjdete s námi?"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Odpověď: **Ja**, ich spiele Tennis. / **Nein**, ich spiele kein Tennis. Na zápornou otázku odpovíš „ale ano“ slovem **Doch**: *Hast du keine Zeit? – Doch!* (Nemáš čas? – Ale mám!)"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ověř si, co tázací slova znamenají:"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Wer?",
+                "back": "Kdo?"
+              },
+              {
+                "front": "Wo?",
+                "back": "Kde?"
+              },
+              {
+                "front": "Wohin?",
+                "back": "Kam?"
+              },
+              {
+                "front": "Wann?",
+                "back": "Kdy?"
+              },
+              {
+                "front": "Warum?",
+                "back": "Proč?"
+              },
+              {
+                "front": "Was?",
+                "back": "Co?"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se kamaráda, kde bydlí, a pak, jestli bydlí v Praze.",
+          "answer": "S tázacím slovem: *Wo* + sloveso + *du*: **Wo wohnst du?** Ano/ne: sloveso na začátek: **Wohnst du in Prag?**"
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se: Kdy přijde Anna? (kommen)",
+          "answer": "Kdy = *Wann*, pak sloveso pro Annu (ona → *kommt*), pak podmět. **Wann kommt Anna?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wo du wohnst?",
+          "right": "Wo wohnst du?",
+          "why": "Za tázacím slovem musí hned následovat sloveso, podmět až za ním."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wer wohnst du?",
+          "right": "Wo wohnst du?",
+          "why": "*Wer* = kdo, *wo* = kde. Česky podobně zní „kde“ a *wer*, ale znamenají něco jiného."
+        },
+        {
+          "type": "summary",
+          "text": "W-otázka: **tázací slovo – sloveso – podmět** (*Wo wohnst du?*). Otázka ano/ne: **sloveso – podmět** (*Wohnst du hier?*). Na zápornou otázku „ale ano“ = *Doch*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Heute spiele ich Tennis.",
+        "Heute ich spiele Tennis.",
+        "Heute ich Tennis spiele."
+      ],
+      "answer": 0,
+      "explanation": "Sloveso na 2. místě, podmět za ním."
+    },
+    {
+      "type": "choice",
+      "question": "Která otázka je správně?",
+      "options": [
+        "Wo wohnst du?",
+        "Wo du wohnst?",
+        "Wohnst wo du?"
+      ],
+      "answer": 0,
+      "explanation": "Tázací slovo – sloveso – podmět."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Wer“?",
+      "options": [
+        "kdo",
+        "kde",
+        "kam"
+      ],
+      "answer": 0,
+      "explanation": "Wer = kdo. Kde = wo, kam = wohin."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tázací slovo s českým.",
+      "pairs": [
+        [
+          "Wann?",
+          "Kdy?"
+        ],
+        [
+          "Wo?",
+          "Kde?"
+        ],
+        [
+          "Woher?",
+          "Odkud?"
+        ],
+        [
+          "Warum?",
+          "Proč?"
+        ],
+        [
+          "Wie?",
+          "Jak?"
+        ]
+      ],
+      "explanation": "Skoro všechna tázací slova začínají na W."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Máš čas?“",
+      "items": [
+        "Hast",
+        "du",
+        "Zeit?"
+      ],
+      "explanation": "V otázce ano/ne stojí sloveso na 1. místě."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „V pondělí máme němčinu.“",
+      "items": [
+        "Am Montag",
+        "haben",
+        "wir",
+        "Deutsch."
+      ],
+      "explanation": "Am Montag je 1. místo, sloveso 2., podmět za ním."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Kam jedeš?“",
+      "items": [
+        "Wohin",
+        "fährst",
+        "du?"
+      ],
+      "explanation": "Tázací slovo – sloveso – podmět."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tázací slovo: ___ kommst du? – Aus Polen.",
+      "answers": [
+        "Woher"
+      ],
+      "explanation": "Odpověď „z Polska“ → ptáš se odkud = woher."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tázací slovo: ___ ist das? – Das ist mein Bruder.",
+      "answers": [
+        "Wer"
+      ],
+      "explanation": "Ptáš se na osobu → wer (kdo)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Ich lerne Deutsch und mein Bruder lernt Englisch.“ je slovosled správně.",
+      "answer": true,
+      "explanation": "und se nepočítá, za ním je podmět a pak sloveso na 2. místě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Německá otázka ano/ne potřebuje pomocné sloveso jako anglické „do“.",
+      "answer": false,
+      "explanation": "Stačí dát sloveso na začátek: Spielst du Tennis?"
+    },
+    {
+      "type": "choice",
+      "question": "„Hast du keinen Hund?“ – Máš psa. Co odpovíš?",
+      "options": [
+        "Doch!",
+        "Ja!",
+        "Nein!"
+      ],
+      "answer": 0,
+      "explanation": "Na zápornou otázku odpovídáš „ale ano“ slovem Doch."
+    },
+    {
+      "type": "choice",
+      "question": "Kam patří sloveso v oznamovací větě?",
+      "options": [
+        "na 2. místo",
+        "na 1. místo",
+        "na konec"
+      ],
+      "answer": 0,
+      "explanation": "Na 2. místo, i když na 1. místě není podmět."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli pravidlo o slovese na 2. místě a ukaž ho na větě se slovem „heute“.",
+      "answer": "V oznamovací větě je sloveso vždy na 2. místě. Když začnu jiným slovem než podmětem, podmět jde za sloveso: Ich spiele heute Fußball → Heute spiele ich Fußball."
+    },
+    {
+      "type": "open",
+      "question": "Jak se v němčině tvoří otázka s tázacím slovem a otázka ano/ne? Uveď příklady.",
+      "answer": "S tázacím slovem: tázací slovo, sloveso, podmět – Wo wohnst du? Otázka ano/ne začíná slovesem, za ním je podmět – Wohnst du in Prag?"
+    }
+  ]
+}

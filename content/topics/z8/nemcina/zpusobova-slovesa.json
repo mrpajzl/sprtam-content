@@ -1,0 +1,547 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zpusobova-slovesa",
+  "title": "Způsobová slovesa",
+  "emoji": "🎯",
+  "explanations": [
+    {
+      "title": "Tabulka a závorka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Umím plavat. Musím se učit. Chci jít ven. Smím jít do kina? Chtěl bych zmrzlinu.“ Tyhle věty potřebuješ každý den. Slovesa *umět, muset, chtít, smět* se v gramatice jmenují **způsobová**."
+        },
+        {
+          "type": "text",
+          "text": "V němčině mají dvě zvláštnosti: nepravidelné tvary a druhé sloveso posílají **na konec věty**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Způsobové sloveso",
+          "definition": "Sloveso, které říká, jestli něco **umíš, musíš, chceš, smíš** nebo **máš rád**. Většinou k němu patří ještě jedno sloveso.",
+          "example": "Ich **kann** schwimmen. = Umím plavat."
+        },
+        {
+          "type": "term",
+          "term": "Infinitiv",
+          "definition": "Základní tvar slovesa, končí na -en.",
+          "example": "schwimmen, lernen, gehen"
+        },
+        {
+          "type": "term",
+          "term": "Větná závorka",
+          "definition": "Způsobové sloveso stojí na **2. místě** a infinitiv na **konci věty**. Jako dvě strany závorky, mezi nimi je zbytek.",
+          "example": "Ich **muss** heute Mathe **lernen**."
+        },
+        {
+          "type": "heading",
+          "text": "Co znamenají"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sloveso",
+            "Česky",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "können",
+              "umět, moct",
+              "Ich kann gut schwimmen."
+            ],
+            [
+              "müssen",
+              "muset",
+              "Ich muss Hausaufgaben machen."
+            ],
+            [
+              "wollen",
+              "chtít",
+              "Ich will ins Kino gehen."
+            ],
+            [
+              "dürfen",
+              "smět",
+              "Darf ich hier spielen?"
+            ],
+            [
+              "mögen",
+              "mít rád",
+              "Ich mag Pizza."
+            ],
+            [
+              "möchten",
+              "chtěl bych",
+              "Ich möchte ein Eis."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tvary"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "können",
+            "müssen",
+            "wollen"
+          ],
+          "rows": [
+            [
+              "ich",
+              "kann",
+              "muss",
+              "will"
+            ],
+            [
+              "du",
+              "kannst",
+              "musst",
+              "willst"
+            ],
+            [
+              "er / sie / es",
+              "kann",
+              "muss",
+              "will"
+            ],
+            [
+              "wir",
+              "können",
+              "müssen",
+              "wollen"
+            ],
+            [
+              "ihr",
+              "könnt",
+              "müsst",
+              "wollt"
+            ],
+            [
+              "sie / Sie",
+              "können",
+              "müssen",
+              "wollen"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "dürfen",
+            "mögen",
+            "möchten"
+          ],
+          "rows": [
+            [
+              "ich",
+              "darf",
+              "mag",
+              "möchte"
+            ],
+            [
+              "du",
+              "darfst",
+              "magst",
+              "möchtest"
+            ],
+            [
+              "er / sie / es",
+              "darf",
+              "mag",
+              "möchte"
+            ],
+            [
+              "wir",
+              "dürfen",
+              "mögen",
+              "möchten"
+            ],
+            [
+              "ihr",
+              "dürft",
+              "mögt",
+              "möchtet"
+            ],
+            [
+              "sie / Sie",
+              "dürfen",
+              "mögen",
+              "möchten"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dvě pomůcky: **ich a er mají stejný tvar** a nemají koncovku -t (*ich kann, er kann*). U *ich, du, er* zmizí přehláska (*können → kann*)."
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný tvar:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Er",
+                "after": "Gitarre spielen.",
+                "options": [
+                  "kann",
+                  "kannt",
+                  "könnt"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du",
+                "after": "jetzt schlafen.",
+                "options": [
+                  "musst",
+                  "muss",
+                  "müssen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir",
+                "after": "heute fernsehen.",
+                "options": [
+                  "dürfen",
+                  "darf",
+                  "dürft"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich",
+                "after": "einen Kakao.",
+                "options": [
+                  "möchte",
+                  "möchtet",
+                  "möchtest"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Umím dobře vařit.",
+          "answer": "Umět = *können*, ich → **kann** (2. místo). Vařit = *kochen* jde na konec. **Ich kann gut kochen.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Musíš dnes uklidit pokoj? (aufräumen = uklidit, das Zimmer)",
+          "answer": "Otázka ano/ne: způsobové sloveso na začátek, *du* → **Musst**. Infinitiv *aufräumen* na konec. **Musst du heute dein Zimmer aufräumen?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich kann schwimmen gut.",
+          "right": "Ich kann gut schwimmen.",
+          "why": "Infinitiv patří **úplně na konec** věty. Všechno ostatní je uvnitř závorky."
+        },
+        {
+          "type": "summary",
+          "text": "*können, müssen, wollen, dürfen, mögen, möchten*: ich = er, bez -t (*ich kann, er kann*). Způsobové sloveso je na 2. místě, **infinitiv na konci**."
+        }
+      ]
+    },
+    {
+      "title": "Falešní kamarádi",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Některá německá způsobová slovesa vypadají jako anglická nebo česká slova, ale znamenají něco jiného. Říká se jim **falešní kamarádi**. Kdo se jim nevyhne, řekne něco úplně jiného, než chtěl."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme situace z jednoho dne a u každé si ukážeme, které sloveso sedí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Falešný kamarád",
+          "definition": "Slovo, které vypadá nebo zní jako slovo, které znáš, ale znamená něco jiného.",
+          "example": "německé *will* = chci (ne „budu“ jako anglické *will*)"
+        },
+        {
+          "type": "term",
+          "term": "Způsobové sloveso",
+          "definition": "Sloveso, které vyjadřuje schopnost, povinnost, přání nebo dovolení. Druhé sloveso jde v základním tvaru (infinitivu, na -en) na konec věty.",
+          "example": "Ich **will** Fußball **spielen**."
+        },
+        {
+          "type": "term",
+          "term": "Zápor",
+          "definition": "Obrácení věty na „ne“. U způsobových sloves se dělá slovem **nicht**.",
+          "example": "Ich kann **nicht** kommen. = Nemůžu přijít."
+        },
+        {
+          "type": "heading",
+          "text": "Jeden den"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ráno: „Musím vstát.“ → **Ich muss aufstehen.** (povinnost = *müssen*)",
+            "Ve škole: „Smím jít na záchod?“ → **Darf ich auf die Toilette gehen?** (dovolení = *dürfen*)",
+            "O přestávce: „Chci hrát fotbal.“ → **Ich will Fußball spielen.** (přání = *wollen*)",
+            "Odpoledne: „Umíš plavat?“ → **Kannst du schwimmen?** (schopnost = *können*)",
+            "V kavárně: „Dal bych si kakao.“ → **Ich möchte einen Kakao.** (zdvořilé přání = *möchten*)",
+            "Večer: „Mám rád pizzu.“ → **Ich mag Pizza.** (mít rád = *mögen*)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tři chytáky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**ich will** = chci. Ne „budu“! Anglické *I will* je budoucnost, německé *ich will* je přání.",
+            "**ich muss nicht** = nemusím. „Nesmím“ je **ich darf nicht**. *Du musst nicht kommen.* = Nemusíš přijít. *Du darfst nicht rauchen.* = Nesmíš kouřit.",
+            "**möchten** je zdvořilejší než *wollen*. V obchodě řekni *Ich möchte…*, ne *Ich will…*, zní to slušněji."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*mögen* se nejčastěji používá **bez** dalšího slovesa, jen s věcí: *Ich mag Hunde.* = Mám rád psy. *Magst du Schokolade?* = Máš rád čokoládu?"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus to přeložit:"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Nemusíš to dělat.",
+                "back": "Du musst das nicht machen."
+              },
+              {
+                "front": "Nesmíš to dělat.",
+                "back": "Du darfst das nicht machen."
+              },
+              {
+                "front": "Chci domů.",
+                "back": "Ich will nach Hause."
+              },
+              {
+                "front": "Dal(a) bych si vodu.",
+                "back": "Ich möchte ein Wasser."
+              },
+              {
+                "front": "Umíš německy?",
+                "back": "Kannst du Deutsch?"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: V neděli nemusím vstávat brzy.",
+          "answer": "Nemusím = *muss nicht*. V neděli = *Am Sonntag* na 1. místě, pak *muss* (2. místo), pak *ich*. Infinitiv *aufstehen* na konec. **Am Sonntag muss ich nicht früh aufstehen.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Moje sestra chce být učitelkou.",
+          "answer": "Chce = *wollen*, sie → **will**. Být učitelkou = *Lehrerin werden* (stát se). **Meine Schwester will Lehrerin werden.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich will morgen kommen. (myšleno: Přijdu zítra.)",
+          "right": "Ich komme morgen.",
+          "why": "*ich will* neznamená budoucnost jako anglické *I will*. Znamená „chci“: *Ich will morgen kommen.* = Chci zítra přijít. Pro budoucnost stačí přítomný čas s *morgen*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Du musst nicht rauchen. (myšleno: Nesmíš kouřit.)",
+          "right": "Du darfst nicht rauchen.",
+          "why": "*muss nicht* = nemusíš. Zákaz („nesmíš“) je *darf nicht*."
+        },
+        {
+          "type": "summary",
+          "text": "*können* = umět, *müssen* = muset, *wollen* = chtít (ne „budu“), *dürfen* = smět, *mögen* = mít rád, *möchten* = chtěl bych. **Nesmím = ich darf nicht**, nemusím = ich muss nicht."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň: Ich ___ gut schwimmen. (umím)",
+      "options": [
+        "kann",
+        "könne",
+        "kannst"
+      ],
+      "answer": 0,
+      "explanation": "können: ich kann."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Er ___ heute lernen. (musí)",
+      "options": [
+        "muss",
+        "musst",
+        "müsst"
+      ],
+      "answer": 0,
+      "explanation": "müssen: er muss (stejné jako ich)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa dürfen: ___ ich hier spielen?",
+      "answers": [
+        "Darf"
+      ],
+      "explanation": "dürfen: ich darf."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa wollen: Was ___ du machen?",
+      "answers": [
+        "willst"
+      ],
+      "explanation": "wollen: du willst."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa können: Ihr ___ gut tanzen.",
+      "answers": [
+        "könnt",
+        "koennt"
+      ],
+      "explanation": "können: ihr könnt."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Ich will ins Kino gehen.“?",
+      "options": [
+        "Chci jít do kina.",
+        "Půjdu do kina.",
+        "Musím jít do kina."
+      ],
+      "answer": 0,
+      "explanation": "wollen = chtít. Pozor, není to budoucnost jako anglické will."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Nesmíš tady kouřit.“?",
+      "options": [
+        "Du darfst hier nicht rauchen.",
+        "Du musst hier nicht rauchen.",
+        "Du willst hier nicht rauchen."
+      ],
+      "answer": 0,
+      "explanation": "Nesmět = nicht dürfen. „muss nicht“ znamená nemusíš."
+    },
+    {
+      "type": "choice",
+      "question": "Jak si zdvořile objednáš v kavárně?",
+      "options": [
+        "Ich möchte einen Tee.",
+        "Ich will einen Tee.",
+        "Ich mag einen Tee."
+      ],
+      "answer": 0,
+      "explanation": "möchten = chtěl(a) bych, zdvořilé přání."
+    },
+    {
+      "type": "match",
+      "question": "Spoj způsobové sloveso s významem.",
+      "pairs": [
+        [
+          "können",
+          "umět"
+        ],
+        [
+          "müssen",
+          "muset"
+        ],
+        [
+          "dürfen",
+          "smět"
+        ],
+        [
+          "wollen",
+          "chtít"
+        ],
+        [
+          "mögen",
+          "mít rád"
+        ]
+      ],
+      "explanation": "möchten = chtěl bych."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Musím se učit německy.“",
+      "items": [
+        "Ich",
+        "muss",
+        "Deutsch",
+        "lernen."
+      ],
+      "explanation": "Způsobové sloveso na 2. místě, infinitiv na konci."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Umíš hrát na kytaru?“",
+      "items": [
+        "Kannst",
+        "du",
+        "Gitarre",
+        "spielen?"
+      ],
+      "explanation": "Otázka ano/ne: způsobové sloveso na začátku, infinitiv na konci."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich muss nicht“ znamená „nesmím“.",
+      "answer": false,
+      "explanation": "Ich muss nicht = nemusím. Nesmím = ich darf nicht."
+    },
+    {
+      "type": "truefalse",
+      "question": "U způsobových sloves mají „ich“ a „er“ stejný tvar.",
+      "answer": true,
+      "explanation": "ich kann – er kann, ich muss – er muss, ich will – er will."
+    },
+    {
+      "type": "open",
+      "question": "Kam patří ve větě způsobové sloveso a kam infinitiv? Ukaž na příkladu.",
+      "answer": "Způsobové sloveso je na 2. místě a infinitiv na konci věty. Například: Ich kann heute nicht kommen."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi „Ich muss nicht“ a „Ich darf nicht“ a mezi německým „will“ a anglickým „will“.",
+      "answer": "Ich muss nicht = nemusím, ich darf nicht = nesmím. Německé ich will = chci, kdežto anglické I will vyjadřuje budoucnost."
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "mnozne-cislo",
+  "title": "Množné číslo podstatných jmen",
+  "emoji": "👥",
+  "explanations": [
+    {
+      "title": "Pět skupin",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Česky řekneš jeden pes – dva psi, jedna kniha – dvě knihy. Němčina tvoří množné číslo taky různě: *der Hund – die Hunde, das Buch – die Bücher, das Auto – die Autos*."
+        },
+        {
+          "type": "text",
+          "text": "Úplně jednotné pravidlo neexistuje. Ale zakončení se dají rozdělit do **pěti skupin** a jedna věc platí vždy: člen v množném čísle je **die**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Jednotné číslo",
+          "definition": "Tvar podstatného jména pro **jednu** věc.",
+          "example": "der Hund = (jeden) pes"
+        },
+        {
+          "type": "term",
+          "term": "Množné číslo",
+          "definition": "Tvar podstatného jména pro **víc** věcí. Člen (slovíčko *der/die/das* před slovem) je v množném čísle vždy **die**, ať je slovo mužské, ženské, nebo střední.",
+          "example": "die Hunde = psi"
+        },
+        {
+          "type": "term",
+          "term": "Přehláska",
+          "definition": "Dvě tečky nad a, o, u. V množném čísle se často objeví navíc.",
+          "example": "der Apfel → die **Ä**pfel"
+        },
+        {
+          "type": "heading",
+          "text": "Pět skupin"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Skupina",
+            "Jednotné",
+            "Množné",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "-e (někdy s přehláskou)",
+              "der Tag, der Stuhl",
+              "die Tag**e**, die St**ü**hl**e**",
+              "dny, židle"
+            ],
+            [
+              "-(e)n",
+              "die Lampe, die Frau",
+              "die Lampe**n**, die Frau**en**",
+              "lampy, ženy"
+            ],
+            [
+              "-er (s přehláskou, kde jde)",
+              "das Kind, das Buch",
+              "die Kind**er**, die B**ü**ch**er**",
+              "děti, knihy"
+            ],
+            [
+              "-s",
+              "das Auto, das Foto",
+              "die Auto**s**, die Foto**s**",
+              "auta, fotky"
+            ],
+            [
+              "bez koncovky (někdy přehláska)",
+              "der Lehrer, der Apfel",
+              "die Lehrer, die **Ä**pfel",
+              "učitelé, jablka"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vodítka"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Většina ženských slov dostane **-n / -en**: *die Schule – die Schulen, die Zeitung – die Zeitungen*.",
+            "Ženy na **-in** dostanou **-nen**: *die Lehrerin – die Lehrerinnen*.",
+            "Mužská a střední slova na **-er, -el, -chen** nemají koncovku: *der Lehrer – die Lehrer, das Mädchen – die Mädchen*. Někdy dostanou jen přehlásku: *der Vater – die Väter*.",
+            "Slova z cizích jazyků a slova na samohlásku (-a, -o, -i, -y) mají většinou **-s**: *das Handy – die Handys, das Kino – die Kinos*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slova podle toho, jakou koncovku mají v množném čísle:"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "-e",
+              "-(e)n",
+              "-er",
+              "-s"
+            ],
+            "items": [
+              {
+                "text": "der Hund",
+                "group": 0
+              },
+              {
+                "text": "der Tag",
+                "group": 0
+              },
+              {
+                "text": "die Schule",
+                "group": 1
+              },
+              {
+                "text": "die Frau",
+                "group": 1
+              },
+              {
+                "text": "die Zeitung",
+                "group": 1
+              },
+              {
+                "text": "das Kind",
+                "group": 2
+              },
+              {
+                "text": "das Bild",
+                "group": 2
+              },
+              {
+                "text": "das Auto",
+                "group": 3
+              },
+              {
+                "text": "das Handy",
+                "group": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Jaké je množné číslo od *die Katze* (kočka)?",
+          "answer": "Slovo je ženské a končí na -e → přidám **-n**. Člen *die*. **die Katzen**."
+        },
+        {
+          "type": "example",
+          "question": "Jaké je množné číslo od *das Haus* (dům)?",
+          "answer": "*Haus* patří do skupiny **-er** s přehláskou, stejně jako *das Buch*. To si musíš zapamatovat. Přehláska: au → äu. **die Häuser**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "der Hunde",
+          "right": "die Hunde",
+          "why": "V množném čísle je člen vždy **die**, i když je slovo v jednotném čísle mužské."
+        },
+        {
+          "type": "summary",
+          "text": "Člen v množném čísle je vždy **die**. Koncovky: **-e, -(e)n, -er, -s** nebo žádná, často s přehláskou. Nejjistější je učit se slovo rovnou s množným číslem."
+        }
+      ]
+    },
+    {
+      "title": "Ve slovníku",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve slovníku nebo v učebnici uvidíš u slova divné značky: *der Hund, -e* nebo *das Buch, ¨-er*. To je zkratka pro množné číslo. Kdo ji umí přečíst, nikdy se nesplete."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se zkratky číst a pak je použiješ ve větách: „Mám dvě sestry.“ „Nemám žádné domácí zvíře.“"
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Množné číslo",
+          "definition": "Tvar slova pro víc věcí. Člen (slovíčko *der/die/das* před slovem) je v něm vždy **die**.",
+          "example": "die Bücher = knihy"
+        },
+        {
+          "type": "term",
+          "term": "Slovníková zkratka",
+          "definition": "Krátký zápis za slovem, který říká, co přidat v množném čísle. Pomlčka znamená celé slovo.",
+          "example": "der Hund, -e → die Hunde"
+        },
+        {
+          "type": "term",
+          "term": "Přehláska",
+          "definition": "Dvě tečky ¨ nad a, o, u. Ve slovníku je znak ¨ před koncovkou.",
+          "example": "der Stuhl, ¨-e → die Stühle"
+        },
+        {
+          "type": "heading",
+          "text": "Jak číst zkratku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Opiš slovo: *der Stuhl, ¨-e*.",
+            "Je tam ¨? Dej přehlásku na poslední a, o, u: *Stühl*.",
+            "Přidej koncovku za pomlčkou: *Stühl + e* = *Stühle*.",
+            "Dej člen *die*: **die Stühle**."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ve slovníku",
+            "Množné číslo",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "der Tisch, -e",
+              "die Tische",
+              "stoly"
+            ],
+            [
+              "die Hand, ¨-e",
+              "die Hände",
+              "ruce"
+            ],
+            [
+              "die Schwester, -n",
+              "die Schwestern",
+              "sestry"
+            ],
+            [
+              "das Haus, ¨-er",
+              "die Häuser",
+              "domy"
+            ],
+            [
+              "der Vater, ¨-",
+              "die Väter",
+              "otcové"
+            ],
+            [
+              "das Zimmer, -",
+              "die Zimmer",
+              "pokoje"
+            ],
+            [
+              "das Foto, -s",
+              "die Fotos",
+              "fotky"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Samotná pomlčka (*das Zimmer, -*) znamená: množné číslo je stejné jako jednotné."
+        },
+        {
+          "type": "heading",
+          "text": "Množné číslo ve větě"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Neurčitý člen *ein/eine* v množném čísle **zmizí**: *Ich habe eine Schwester.* → *Ich habe zwei Schwestern.* (Mám dvě sestry.)",
+            "Zápor je **keine**: *Ich habe keine Geschwister.* (Nemám sourozence.)",
+            "Zájmeno je **sie** a sloveso má koncovku -en: *Die Kinder spielen. Sie sind laut.* (Děti si hrají. Jsou hlučné.)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus množné číslo:"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "der Freund, -e",
+                "back": "die Freunde (kamarádi)"
+              },
+              {
+                "front": "die Mutter, ¨-",
+                "back": "die Mütter (matky)"
+              },
+              {
+                "front": "das Buch, ¨-er",
+                "back": "die Bücher (knihy)"
+              },
+              {
+                "front": "die Blume, -n",
+                "back": "die Blumen (květiny)"
+              },
+              {
+                "front": "der Apfel, ¨-",
+                "back": "die Äpfel (jablka)"
+              },
+              {
+                "front": "das Kino, -s",
+                "back": "die Kinos (kina)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Ve slovníku je *der Baum, ¨-e* (strom). Jak řekneš „Tam jsou tři stromy.“?",
+          "answer": "Přehláska na *au* → *äu*: *Bäum* + *e* = **Bäume**. Věta: **Dort sind drei Bäume.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Nemám žádné bratry. (der Bruder, ¨-)",
+          "answer": "Zkratka ¨- → jen přehláska: *Brüder*. Zápor v množném čísle: **keine**. **Ich habe keine Brüder.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe zwei Schwester.",
+          "right": "Ich habe zwei Schwestern.",
+          "why": "Po čísle větším než jedna musí být podstatné jméno v množném čísle: *die Schwester, -n* → *Schwestern*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe keinen Geschwister.",
+          "right": "Ich habe keine Geschwister.",
+          "why": "V množném čísle má zápor vždy tvar **keine**, i ve 4. pádě."
+        },
+        {
+          "type": "summary",
+          "text": "Zkratku ve slovníku čti takto: ¨ = přehláska, za pomlčkou koncovka. V množném čísle je člen **die**, zápor **keine** a *ein* zmizí."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký člen má každé podstatné jméno v množném čísle?",
+      "options": [
+        "die",
+        "der",
+        "das"
+      ],
+      "answer": 0,
+      "explanation": "V množném čísle je vždy die."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké je množné číslo od „das Kind“?",
+      "options": [
+        "die Kinder",
+        "die Kinde",
+        "die Kinds"
+      ],
+      "answer": 0,
+      "explanation": "das Kind, -er → die Kinder."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké je množné číslo od „das Auto“?",
+      "options": [
+        "die Autos",
+        "die Auten",
+        "die Autoe"
+      ],
+      "answer": 0,
+      "explanation": "Slova na samohlásku mají -s."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké je množné číslo od „die Frau“?",
+      "options": [
+        "die Frauen",
+        "die Fraue",
+        "die Fräuer"
+      ],
+      "answer": 0,
+      "explanation": "Ženská slova mají většinou -(e)n."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo bez členu: die Lampe",
+      "answers": [
+        "Lampen"
+      ],
+      "explanation": "Ženské slovo na -e → přidá se -n."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo bez členu: der Tag",
+      "answers": [
+        "Tage"
+      ],
+      "explanation": "der Tag, -e → Tage."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo bez členu: das Buch (ve slovníku: ¨-er)",
+      "answers": [
+        "Bücher",
+        "Buecher"
+      ],
+      "explanation": "Přehláska u → ü a koncovka -er."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo bez členu: die Lehrerin",
+      "answers": [
+        "Lehrerinnen"
+      ],
+      "explanation": "Slova na -in mají v množném čísle -nen."
+    },
+    {
+      "type": "match",
+      "question": "Spoj jednotné číslo s množným.",
+      "pairs": [
+        [
+          "der Apfel",
+          "die Äpfel"
+        ],
+        [
+          "das Haus",
+          "die Häuser"
+        ],
+        [
+          "der Stuhl",
+          "die Stühle"
+        ],
+        [
+          "das Mädchen",
+          "die Mädchen"
+        ]
+      ],
+      "explanation": "Často se přidává přehláska. Slova na -chen se nemění."
+    },
+    {
+      "type": "truefalse",
+      "question": "„das Zimmer, -“ znamená, že množné číslo je „die Zimmer“.",
+      "answer": true,
+      "explanation": "Samotná pomlčka = žádná koncovka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Ich habe zwei Bruder.“ je správně.",
+      "answer": false,
+      "explanation": "Správně: Ich habe zwei Brüder (der Bruder, ¨-)."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich habe ___ Geschwister. (žádné sourozence)",
+      "options": [
+        "keine",
+        "keinen",
+        "kein"
+      ],
+      "answer": 0,
+      "explanation": "Zápor v množném čísle je vždy keine."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Die Kinder ___ im Garten.",
+      "options": [
+        "spielen",
+        "spielt",
+        "spielst"
+      ],
+      "answer": 0,
+      "explanation": "Množné číslo = sie (oni) → koncovka -en."
+    },
+    {
+      "type": "open",
+      "question": "Proč je dobré učit se německá podstatná jména i s množným číslem? Uveď příklady různých koncovek.",
+      "answer": "Protože množné číslo se tvoří různě a jisté pravidlo není. Například der Hund – die Hunde, die Frau – die Frauen, das Kind – die Kinder, das Auto – die Autos, der Lehrer – die Lehrer."
+    },
+    {
+      "type": "open",
+      "question": "Co znamená ve slovníku zápis „die Hand, ¨-e“? Jak zní množné číslo?",
+      "answer": "Znak ¨ znamená přehlásku a -e koncovku. Množné číslo je die Hände (ruce)."
+    }
+  ]
+}

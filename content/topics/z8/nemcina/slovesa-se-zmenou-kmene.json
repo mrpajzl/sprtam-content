@@ -1,0 +1,563 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "slovesa-se-zmenou-kmene",
+  "title": "Slovesa se změnou kmenové samohlásky",
+  "emoji": "🔄",
+  "explanations": [
+    {
+      "title": "Jen du a er",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Už umíš časovat pravidelná slovesa: *ich spiele, du spielst, er spielt*. Některá velmi častá slovesa ale u dvou osob změní samohlásku uvnitř slova: *ich fahre*, ale *du **fährst***."
+        },
+        {
+          "type": "text",
+          "text": "Jsou mezi nimi slovesa jako jet, jíst, číst nebo mluvit. Bez nich se neobejdeš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kmen",
+          "definition": "Část slovesa, která zbude, když ustřihneš -en.",
+          "example": "fahr|en → kmen fahr"
+        },
+        {
+          "type": "term",
+          "term": "Kmenová samohláska",
+          "definition": "Samohláska (a, e, i, o, u) uvnitř kmene.",
+          "example": "v *fahr* je to **a**, v *les* je to **e**"
+        },
+        {
+          "type": "term",
+          "term": "Změna kmenové samohlásky",
+          "definition": "Samohláska v kmeni se u některých sloves změní na jinou, ale jen u **du** a **er/sie/es**.",
+          "example": "fahren → du fährst, er fährt"
+        },
+        {
+          "type": "heading",
+          "text": "Tři skupiny"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Změna",
+            "Sloveso",
+            "du",
+            "er / sie / es"
+          ],
+          "rows": [
+            [
+              "a → ä",
+              "fahren (jet)",
+              "f**ä**hrst",
+              "f**ä**hrt"
+            ],
+            [
+              "a → ä",
+              "schlafen (spát)",
+              "schl**ä**fst",
+              "schl**ä**ft"
+            ],
+            [
+              "e → i",
+              "sprechen (mluvit)",
+              "spr**i**chst",
+              "spr**i**cht"
+            ],
+            [
+              "e → i",
+              "essen (jíst)",
+              "**i**sst",
+              "**i**sst"
+            ],
+            [
+              "e → i",
+              "helfen (pomáhat)",
+              "h**i**lfst",
+              "h**i**lft"
+            ],
+            [
+              "e → ie",
+              "lesen (číst)",
+              "l**ie**st",
+              "l**ie**st"
+            ],
+            [
+              "e → ie",
+              "sehen (vidět)",
+              "s**ie**hst",
+              "s**ie**ht"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všechny ostatní osoby jsou **úplně pravidelné**: *ich fahre, wir fahren, ihr fahrt, sie fahren*."
+        },
+        {
+          "type": "heading",
+          "text": "Celé časování"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "fahren",
+            "sprechen",
+            "lesen"
+          ],
+          "rows": [
+            [
+              "ich",
+              "fahre",
+              "spreche",
+              "lese"
+            ],
+            [
+              "du",
+              "**fährst**",
+              "**sprichst**",
+              "**liest**"
+            ],
+            [
+              "er / sie / es",
+              "**fährt**",
+              "**spricht**",
+              "**liest**"
+            ],
+            [
+              "wir",
+              "fahren",
+              "sprechen",
+              "lesen"
+            ],
+            [
+              "ihr",
+              "fahrt",
+              "sprecht",
+              "lest"
+            ],
+            [
+              "sie / Sie",
+              "fahren",
+              "sprechen",
+              "lesen"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "U *essen* a *lesen* končí kmen na **s**. U *du* proto přidáš jen **-t**: *du isst, du liest*. Tvar pro *du* a *er* je tak stejný."
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný tvar:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Du",
+                "after": "nach Wien.",
+                "options": [
+                  "fährst",
+                  "fahrst",
+                  "fährest"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er",
+                "after": "Deutsch.",
+                "options": [
+                  "spricht",
+                  "sprecht",
+                  "sprichst"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ihr",
+                "after": "mit dem Bus.",
+                "options": [
+                  "fahrt",
+                  "fährt"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Sie (ona)",
+                "after": "ein Buch.",
+                "options": [
+                  "liest",
+                  "lest",
+                  "lesen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich",
+                "after": "Pizza.",
+                "options": [
+                  "esse",
+                  "isse",
+                  "isst"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Brácha spí a já čtu.",
+          "answer": "Brácha = er, *schlafen* a → ä: **schläft**. Já: *ich lese* (u *ich* se nic nemění). **Mein Bruder schläft und ich lese.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Mluvíš německy?",
+          "answer": "Otázka ano/ne: sloveso na začátek. *sprechen* + du → e → i: **sprichst**. **Sprichst du Deutsch?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ihr fährt nach Berlin.",
+          "right": "Ihr fahrt nach Berlin.",
+          "why": "Samohláska se mění **jen u du a er/sie/es**. U *ihr* zůstává *a*: *ihr fahrt*."
+        },
+        {
+          "type": "summary",
+          "text": "Některá slovesa mění samohlásku **jen u du a er/sie/es**: a → ä (*fährt*), e → i (*spricht, isst*), e → ie (*liest, sieht*). Ostatní osoby jsou pravidelné."
+        }
+      ]
+    },
+    {
+      "title": "Rodina Webrových",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Je sobota ráno u Webrových v Hamburku. Každý dělá něco jiného. Když budeš číst, co kdo dělá, uvidíš, že některá slovesa se u jedné osoby „převléknou“."
+        },
+        {
+          "type": "text",
+          "text": "Tahle slovesa se musíš naučit zvlášť. Dobrá zpráva: změna je vždy jen u **du** a **er/sie/es**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Časování",
+          "definition": "Měnění slovesa podle osoby.",
+          "example": "ich lese, du liest, er liest"
+        },
+        {
+          "type": "term",
+          "term": "Kmen",
+          "definition": "Část slovesa, která zbude, když ustřihneš -en. Za kmen se lepí koncovky (-e, -st, -t…).",
+          "example": "ess|en → kmen ess"
+        },
+        {
+          "type": "term",
+          "term": "Samohláska",
+          "definition": "Hláska, kterou můžeš zpívat: a, e, i, o, u (a německy i ä, ö, ü).",
+          "example": "Ve slově *lesen* jsou dvě samohlásky e."
+        },
+        {
+          "type": "term",
+          "term": "Nepravidelné sloveso",
+          "definition": "Sloveso, které se nechová úplně podle pravidla. Část tvarů si musíš pamatovat.",
+          "example": "lesen: du **liest** (ne „lesst“)"
+        },
+        {
+          "type": "heading",
+          "text": "Sobota u Webrových"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Německy",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Papa **liest** die Zeitung.",
+              "Táta čte noviny."
+            ],
+            [
+              "Mama **spricht** am Telefon.",
+              "Máma mluví do telefonu."
+            ],
+            [
+              "Opa **schläft** noch.",
+              "Děda ještě spí."
+            ],
+            [
+              "Lisa **isst** ein Brötchen.",
+              "Líza jí rohlík."
+            ],
+            [
+              "Und du, Paul? **Siehst** du fern?",
+              "A ty, Pavle? Díváš se na televizi?"
+            ],
+            [
+              "Nein, ich **sehe** nicht fern. Ich **fahre** Rad.",
+              "Ne, nedívám se na televizi. Jezdím na kole."
+            ],
+            [
+              "Paul und Lisa **fahren** dann zusammen.",
+              "Pavel a Líza pak jedou spolu."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *Paul* jako *du* → *siehst*, ale sám o sobě jako *ich* → *sehe*. A Paul s Lízou (*sie*, oni) → *fahren*, bez přehlásky."
+        },
+        {
+          "type": "heading",
+          "text": "Jak poznáš, co změnit"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je osoba **du** nebo **er/sie/es**? Ne → časuj pravidelně a hotovo.",
+            "Ano → je sloveso ze seznamu (fahren, schlafen, essen, sprechen, helfen, geben, nehmen, lesen, sehen…)? Ne → pravidelně.",
+            "Ano → změň samohlásku: a → ä, nebo e → i, nebo e → ie.",
+            "Přilep obvyklou koncovku -st nebo -t."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dvě slovesa se mění víc: **nehmen** (vzít): *du nimmst, er nimmt* a **geben** (dát): *du gibst, er gibt*."
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky:"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "essen – er",
+                "back": "er isst"
+              },
+              {
+                "front": "sehen – du",
+                "back": "du siehst"
+              },
+              {
+                "front": "fahren – ihr",
+                "back": "ihr fahrt"
+              },
+              {
+                "front": "nehmen – du",
+                "back": "du nimmst"
+              },
+              {
+                "front": "helfen – sie (ona)",
+                "back": "sie hilft"
+              },
+              {
+                "front": "schlafen – wir",
+                "back": "wir schlafen"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Was ___ du? (essen)",
+          "answer": "Osoba *du* a *essen* je ze seznamu → e → i: *iss*. Kmen končí na *s*, přidám jen -t: **isst**. *Was isst du?* = Co jíš?"
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Tom ___ mir. (helfen)",
+          "answer": "Tom = er, *helfen* e → i → *hilf* + -t: **hilft**. *Tom hilft mir.* = Tom mi pomáhá."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Er lest ein Buch.",
+          "right": "Er liest ein Buch.",
+          "why": "*lesen* mění u *er* samohlásku e → ie: *liest*. Tvar *lest* patří jen k *ihr*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich isse Pizza.",
+          "right": "Ich esse Pizza.",
+          "why": "U *ich* se samohláska nikdy nemění: *ich esse, ich lese, ich fahre*."
+        },
+        {
+          "type": "summary",
+          "text": "Změna samohlásky platí **jen pro du a er/sie/es**: *fährst, schläft, spricht, isst, hilft, liest, sieht, nimmt, gibt*. Ostatní osoby časuj pravidelně."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň: Du ___ nach Prag. (fahren)",
+      "options": [
+        "fährst",
+        "fahrst",
+        "fährt"
+      ],
+      "answer": 0,
+      "explanation": "fahren: a → ä u du, koncovka -st."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Er ___ Englisch. (sprechen)",
+      "options": [
+        "spricht",
+        "sprecht",
+        "sprichst"
+      ],
+      "answer": 0,
+      "explanation": "sprechen: e → i u er, koncovka -t."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ihr ___ mit dem Zug. (fahren)",
+      "options": [
+        "fahrt",
+        "fährt",
+        "fahrst"
+      ],
+      "answer": 0,
+      "explanation": "U ihr se samohláska nemění."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa lesen: Sie (ona) ___ gern.",
+      "answers": [
+        "liest"
+      ],
+      "explanation": "lesen: e → ie, kmen končí na s → jen -t."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa essen: Was ___ du?",
+      "answers": [
+        "isst"
+      ],
+      "explanation": "essen: e → i, kmen na s → jen -t: du isst."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa schlafen: Das Baby ___.",
+      "answers": [
+        "schläft",
+        "schlaeft"
+      ],
+      "explanation": "schlafen: a → ä u er/sie/es."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa sehen: ___ du den Hund?",
+      "answers": [
+        "Siehst"
+      ],
+      "explanation": "sehen: e → ie u du."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich ___ Pizza. (essen)",
+      "options": [
+        "esse",
+        "isse",
+        "isst"
+      ],
+      "answer": 0,
+      "explanation": "U ich se samohláska nemění."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Du ___ das Buch. (nehmen)",
+      "options": [
+        "nimmst",
+        "nehmst",
+        "nimmt"
+      ],
+      "answer": 0,
+      "explanation": "nehmen je zvláštní: du nimmst, er nimmt."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s tvarem pro „er“.",
+      "pairs": [
+        [
+          "fahren",
+          "fährt"
+        ],
+        [
+          "sprechen",
+          "spricht"
+        ],
+        [
+          "lesen",
+          "liest"
+        ],
+        [
+          "geben",
+          "gibt"
+        ],
+        [
+          "helfen",
+          "hilft"
+        ]
+      ],
+      "explanation": "Samohláska se mění u du a er/sie/es."
+    },
+    {
+      "type": "truefalse",
+      "question": "U sloves jako fahren nebo lesen se samohláska mění i u „wir“.",
+      "answer": false,
+      "explanation": "Jen u du a er/sie/es. wir fahren, wir lesen."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Du isst“ a „er isst“ mají stejný tvar.",
+      "answer": true,
+      "explanation": "Kmen končí na s, proto se u du přidává jen -t."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Mluvíš německy?“",
+      "items": [
+        "Sprichst",
+        "du",
+        "Deutsch?"
+      ],
+      "explanation": "Otázka ano/ne začíná slovesem; sprechen → du sprichst."
+    },
+    {
+      "type": "open",
+      "question": "U kterých osob se mění kmenová samohláska? Uveď tři slovesa a jejich tvar pro „er“.",
+      "answer": "Jen u du a er/sie/es. Například fahren → er fährt, sprechen → er spricht, lesen → er liest."
+    },
+    {
+      "type": "open",
+      "question": "Řekni německy, co dělají členové tvé rodiny o víkendu. Použij aspoň dvě slovesa se změnou samohlásky.",
+      "answer": "Mein Vater liest die Zeitung. Meine Mutter fährt Rad. Mein Bruder schläft lange. (Táta čte noviny, máma jezdí na kole, brácha dlouho spí.)"
+    }
+  ]
+}

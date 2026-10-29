@@ -1,0 +1,522 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "haben-a-akuzativ",
+  "title": "Sloveso haben a 4. pád (akuzativ)",
+  "emoji": "🎒",
+  "explanations": [
+    {
+      "title": "Co mám",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Mám bráchu. Mám psa. Mám nový mobil.“ Takové věty říkáš pořád. Německy k nim potřebuješ sloveso **haben** (mít) a věc, kterou máš, ve **4. pádě**."
+        },
+        {
+          "type": "text",
+          "text": "Je to jednodušší, než to zní: ve 4. pádě se mění jen **mužský rod**. Ženský a střední zůstanou, jak jsou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pád",
+          "definition": "Tvar podstatného jména podle toho, jakou má ve větě roli. Česky máme 7 pádů (pes, psa, psovi…), němčina jen 4.",
+          "example": "To je **pes**. (1. pád) × Mám **psa**. (4. pád)"
+        },
+        {
+          "type": "term",
+          "term": "Akuzativ (4. pád)",
+          "definition": "Pád pro věc nebo osobu, kterou někdo má, vidí, kupuje… Ptáš se **koho? co?** Německy *wen? was?*",
+          "example": "Mám (koho? co?) bratra. = Ich habe einen Bruder."
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Slovíčko před podstatným jménem, které ukazuje rod: der/ein (mužský), die/eine (ženský), das/ein (střední).",
+          "example": "der Hund, die Katze, das Buch"
+        },
+        {
+          "type": "heading",
+          "text": "Sloveso haben"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Německy",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "ich **habe**",
+              "mám"
+            ],
+            [
+              "du **hast**",
+              "máš"
+            ],
+            [
+              "er / sie / es **hat**",
+              "má"
+            ],
+            [
+              "wir **haben**",
+              "máme"
+            ],
+            [
+              "ihr **habt**",
+              "máte"
+            ],
+            [
+              "sie / Sie **haben**",
+              "mají / máte (vykání)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor na *du hast* a *er hat*: v kmeni zmizí *b*."
+        },
+        {
+          "type": "heading",
+          "text": "Co se ve 4. pádě mění"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rod",
+            "1. pád (kdo? co?)",
+            "4. pád (koho? co?)"
+          ],
+          "rows": [
+            [
+              "mužský",
+              "der / ein / kein Hund",
+              "**den / einen / keinen** Hund"
+            ],
+            [
+              "ženský",
+              "die / eine / keine Katze",
+              "die / eine / keine Katze"
+            ],
+            [
+              "střední",
+              "das / ein / kein Buch",
+              "das / ein / kein Buch"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Jediná změna: u mužského rodu přibude **-n** nebo se *der* změní na **den**. Zbytek opíšeš."
+        },
+        {
+          "type": "text",
+          "text": "Doplň správný tvar členu ve 4. pádě:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich habe",
+                "after": "Bruder. (der Bruder)",
+                "options": [
+                  "einen",
+                  "ein",
+                  "eine"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du hast",
+                "after": "Schwester. (die Schwester)",
+                "options": [
+                  "eine",
+                  "einen",
+                  "ein"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir haben",
+                "after": "Auto. (das Auto)",
+                "options": [
+                  "ein",
+                  "einen",
+                  "eine"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er hat",
+                "after": "Hund. (der Hund)",
+                "options": [
+                  "keinen",
+                  "kein",
+                  "keine"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Mám kočku a psa.",
+          "answer": "haben + ich → *habe*. Kočka: *die Katze* → ženský, ve 4. pádě se nemění → *eine Katze*. Pes: *der Hund* → mužský → *einen Hund*. **Ich habe eine Katze und einen Hund.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Nemáme počítač. (der Computer)",
+          "answer": "wir → *haben*. Počítač je mužský, zápor *kein* → ve 4. pádě **keinen**. **Wir haben keinen Computer.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe ein Bruder.",
+          "right": "Ich habe einen Bruder.",
+          "why": "*Bruder* je mužského rodu a po *haben* stojí ve 4. pádě: *ein* → *einen*."
+        },
+        {
+          "type": "summary",
+          "text": "**habe, hast, hat, haben, habt, haben.** Ve 4. pádě (akuzativu) se mění jen mužský rod: **der → den, ein → einen, kein → keinen**."
+        }
+      ]
+    },
+    {
+      "title": "Kdo a koho",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve větě „Pes vidí kočku“ víš, kdo koho vidí, podle konce slova: *pes* × *psa*, *kočka* × *kočku*. Němčina to pozná hlavně podle **členu**."
+        },
+        {
+          "type": "text",
+          "text": "Proto je dobré vědět, kdy použít 4. pád. Nejde jen o *haben*. Hodně běžných sloves má po sobě 4. pád."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podmět",
+          "definition": "Kdo nebo co něco dělá. Ptáš se **kdo? co?** a stojí v 1. pádě (nominativu).",
+          "example": "**Der Hund** sieht die Katze. – podmět je pes."
+        },
+        {
+          "type": "term",
+          "term": "Předmět",
+          "definition": "Koho nebo co sloveso zasáhne. Po většině sloves stojí ve **4. pádě** (akuzativu).",
+          "example": "Der Hund sieht **die Katze**. – předmět je kočka."
+        },
+        {
+          "type": "term",
+          "term": "Rod",
+          "definition": "Mužský, ženský, nebo střední. Ukazuje ho **člen**, slovíčko před podstatným jménem: der (mužský), die (ženský), das (střední).",
+          "example": "der Ball, die Tasche, das Heft"
+        },
+        {
+          "type": "heading",
+          "text": "Jak na to"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi sloveso: *Ich kaufe …* (kupuju).",
+            "Zeptej se „koho? co?“: Co kupuju? Míč.",
+            "Zjisti rod: *der Ball* → mužský.",
+            "Mužský rod ve 4. pádě: *der → den, ein → einen*. **Ich kaufe einen Ball.**",
+            "Ženský a střední nech: *Ich kaufe eine Tasche. Ich kaufe ein Heft.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Slovesa se 4. pádem"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sloveso",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "haben",
+              "Ich habe einen Hund.",
+              "Mám psa."
+            ],
+            [
+              "kaufen",
+              "Sie kauft einen Rock.",
+              "Kupuje si sukni."
+            ],
+            [
+              "brauchen",
+              "Wir brauchen einen Tisch.",
+              "Potřebujeme stůl."
+            ],
+            [
+              "trinken",
+              "Er trinkt einen Tee.",
+              "Pije čaj."
+            ],
+            [
+              "suchen",
+              "Ich suche den Schlüssel.",
+              "Hledám klíč."
+            ],
+            [
+              "es gibt",
+              "Es gibt einen Park.",
+              "Je tu park."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*Es gibt* (= je tu, existuje) má po sobě vždy 4. pád: *Hier gibt es einen Supermarkt.* = Je tady supermarket."
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: který člen ve 4. pádě patří k podstatnému jménu?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "einen",
+              "eine",
+              "ein"
+            ],
+            "items": [
+              {
+                "text": "Bruder",
+                "group": 0
+              },
+              {
+                "text": "Ball",
+                "group": 0
+              },
+              {
+                "text": "Hund",
+                "group": 0
+              },
+              {
+                "text": "Schwester",
+                "group": 1
+              },
+              {
+                "text": "Tasche",
+                "group": 1
+              },
+              {
+                "text": "Katze",
+                "group": 1
+              },
+              {
+                "text": "Heft",
+                "group": 2
+              },
+              {
+                "text": "Fahrrad",
+                "group": 2
+              },
+              {
+                "text": "Buch",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň: Ich suche ___ Bleistift. (der Bleistift = tužka)",
+          "answer": "Hledám (co?) tužku → 4. pád. *Bleistift* je mužský (der). Určitý člen ve 4. pádě: **den**. *Ich suche den Bleistift.* (Pozor: česky je tužka ženská.)"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Brácha nemá kolo, ale má skateboard. (das Fahrrad, das Skateboard)",
+          "answer": "Brácha = on → *hat*. Kolo je střední → *kein Fahrrad* (beze změny). Skateboard střední → *ein Skateboard*. **Mein Bruder hat kein Fahrrad, aber er hat ein Skateboard.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe einen Katze.",
+          "right": "Ich habe eine Katze.",
+          "why": "-n se přidává **jen** v mužském rodě. *Katze* je ženská (die), proto zůstane *eine*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Der Hund sieht der Ball.",
+          "right": "Der Hund sieht den Ball.",
+          "why": "Míč je předmět (co pes vidí?) → 4. pád → *den Ball*. Podmět *der Hund* zůstává v 1. pádě."
+        },
+        {
+          "type": "summary",
+          "text": "Ptej se „koho? co?“. Předmět je ve 4. pádě a mění se jen mužský rod: **den, einen, keinen**. Platí to po *haben, kaufen, brauchen, suchen, es gibt* a dalších."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň: Du ___ einen Hund.",
+      "options": [
+        "hast",
+        "habst",
+        "hat"
+      ],
+      "answer": 0,
+      "explanation": "du → hast (bez b)."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Er ___ eine Schwester.",
+      "options": [
+        "hat",
+        "habt",
+        "hast"
+      ],
+      "answer": 0,
+      "explanation": "er → hat."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa haben: Ihr ___ Glück.",
+      "answers": [
+        "habt"
+      ],
+      "explanation": "ihr → habt."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich habe ___ Bruder.",
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "answer": 0,
+      "explanation": "der Bruder → ve 4. pádě einen."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Wir haben ___ Katze.",
+      "options": [
+        "eine",
+        "einen",
+        "ein"
+      ],
+      "answer": 0,
+      "explanation": "die Katze je ženská, ve 4. pádě se nemění."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Sie kauft ___ Heft.",
+      "options": [
+        "ein",
+        "einen",
+        "eine"
+      ],
+      "answer": 0,
+      "explanation": "das Heft je střední, ve 4. pádě se nemění."
+    },
+    {
+      "type": "input",
+      "question": "Doplň člen: Ich suche ___ Schlüssel. (der Schlüssel, určitý člen)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "Mužský rod ve 4. pádě: der → den."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zápor: Ich habe ___ Computer. (der Computer)",
+      "answers": [
+        "keinen"
+      ],
+      "explanation": "kein ve 4. pádě mužského rodu: keinen."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve 4. pádě (akuzativu) se mění člen jen u mužského rodu.",
+      "answer": true,
+      "explanation": "der → den, ein → einen. Ženský a střední rod zůstávají."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich habe einen Auto.“ je správně.",
+      "answer": false,
+      "explanation": "das Auto je střední: Ich habe ein Auto."
+    },
+    {
+      "type": "match",
+      "question": "Spoj člen v 1. pádě s jeho tvarem ve 4. pádě.",
+      "pairs": [
+        [
+          "der",
+          "den"
+        ],
+        [
+          "ein (mužský)",
+          "einen"
+        ],
+        [
+          "die",
+          "die"
+        ],
+        [
+          "das",
+          "das"
+        ]
+      ],
+      "explanation": "Mění se jen mužský rod."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Hier gibt es einen Park.",
+        "Hier gibt es ein Park.",
+        "Hier gibt es der Park."
+      ],
+      "answer": 0,
+      "explanation": "es gibt má po sobě 4. pád: der Park → einen Park."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Potřebujeme stůl.“",
+      "items": [
+        "Wir",
+        "brauchen",
+        "einen",
+        "Tisch."
+      ],
+      "explanation": "Podmět, sloveso, pak předmět ve 4. pádě."
+    },
+    {
+      "type": "open",
+      "question": "Co se stane se členem ve 4. pádě? Ukaž na příkladech se slovesem haben.",
+      "answer": "Mění se jen mužský rod: der → den, ein → einen, kein → keinen. Ich habe einen Bruder. Ženský a střední zůstanou: Ich habe eine Schwester, ich habe ein Fahrrad."
+    },
+    {
+      "type": "open",
+      "question": "Řekni německy, jaké máš sourozence a zvířata (nebo že je nemáš).",
+      "answer": "Ich habe einen Bruder und eine Schwester. Ich habe keinen Hund, aber ich habe eine Katze."
+    }
+  ]
+}
