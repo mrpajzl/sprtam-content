@@ -1,0 +1,391 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "mince-medaile",
+  "title": "Mince a medaile",
+  "emoji": "🪙",
+  "explanations": [
+    {
+      "title": "Krabice mincí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dědeček sbíral mince a pamětní medaile. Teď je krabice na pultu. Je v ní hromada drobných, ale možná i stříbrný tolar nebo vzácný ročník. Jak rychle zjistit, co má cenu?"
+        },
+        {
+          "type": "text",
+          "text": "Mince a medaile se zkoumají podle jasných pravidel. Kdo zná základní pojmy a nikdy mince nečistí, neudělá drahou chybu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Numismatika",
+          "definition": "Obor, který zkoumá a sbírá **mince**, ale i medaile a papírová platidla.",
+          "example": "Numismatik určí, kdy a kde byla mince ražena."
+        },
+        {
+          "type": "term",
+          "term": "Mince",
+          "definition": "Kovové **platidlo**, které vydal stát nebo panovník. Má stanovenou hodnotu (nominál).",
+          "example": "Pražský groš, rakousko-uherská koruna, dnešní dvacetikoruna."
+        },
+        {
+          "type": "term",
+          "term": "Medaile",
+          "definition": "Kovový předmět podobný minci, ale **není to platidlo**. Připomíná událost, osobu nebo ocenění.",
+          "example": "Medaile k výročí založení města."
+        },
+        {
+          "type": "term",
+          "term": "Líc a rub",
+          "definition": "Dvě strany mince. **Líc** (avers) je hlavní strana, často s panovníkem nebo státním znakem. **Rub** (revers) je druhá strana, často s hodnotou.",
+          "example": "Na líci tolaru je portrét panovníka, na rubu znak."
+        },
+        {
+          "type": "term",
+          "term": "Opis",
+          "definition": "Text vedený po okraji mince dokola.",
+          "example": "Latinský opis se jménem a tituly krále."
+        },
+        {
+          "type": "heading",
+          "text": "Popis mince krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči **líc a rub** a přečti opisy.",
+            "Zjisti **stát (panovníka), nominál a rok** ražby.",
+            "Hledej **značku mincovny** (písmeno nebo symbol).",
+            "Urči **kov** (zlato, stříbro, měď, nikl…) a zvaž minci.",
+            "Posuď **stav (zachovalost)** – opotřebení, rýhy, hrany.",
+            "Teprve pak hledej cenu v katalogu nebo v aukčních výsledcích."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Mince z našich dějin"
+        },
+        {
+          "type": "widget",
+          "widget": "timeline",
+          "props": {
+            "events": [
+              {
+                "year": 1300,
+                "label": "Václav II. zavádí **pražský groš** (Kutná Hora)"
+              },
+              {
+                "year": 1520,
+                "label": "Začíná ražba **jáchymovských tolarů**"
+              },
+              {
+                "year": 1892,
+                "label": "Rakousko-Uhersko přechází na **korunovou měnu**"
+              },
+              {
+                "year": 1919,
+                "label": "Československá koruna"
+              },
+              {
+                "year": 1993,
+                "label": "Česká koruna"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Z názvu „tolar“ (podle Jáchymova, německy Joachimsthal) vzniklo i slovo **dolar**."
+        },
+        {
+          "type": "example",
+          "question": "Mince má na líci hlavu muže a opis s latinským jménem, na rubu orla a číslo 1780. Co uděláš dál?",
+          "answer": "Opis prozradí panovníka, rok je **1780**. Dál hledej značku mincovny, urči kov (asi stříbro – zvaž a změř) a stav. Pak ji porovnej v katalogu."
+        },
+        {
+          "type": "example",
+          "question": "Kulatý stříbrný předmět s portrétem a nápisem k 100. výročí školy, bez hodnoty. Mince, nebo medaile?",
+          "answer": "Nemá **nominál** a připomíná událost. Je to **medaile**, ne platidlo."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Mince vyčistím pastou, aby se lépe prodaly.",
+          "right": "Mince **nikdy nečisti**. Jen je drž za hranu a ulož do sáčků nebo kapslí.",
+          "why": "Čištění zanechá škrábance a zničí patinu. Sběratelé vyčištěnou minci poznají a nabídnou za ni mnohem méně."
+        },
+        {
+          "type": "summary",
+          "text": "Numismatika zkoumá mince (platidla) a medaile (neplatidla). U mince určuješ líc, rub, opis, stát, nominál, rok, mincovnu, kov a stav. Mince se nečistí."
+        }
+      ]
+    },
+    {
+      "title": "Co dělá cenu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dvě stejné mince ze stejného roku mohou mít úplně jinou cenu. Jedna je ohlazená z kapsy, druhá vypadá jako z mincovny. Jiná mince je obyčejná, ale z roku, kdy se razilo jen pár kusů. Tady je, **co určuje cenu**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Mince a medaile",
+          "definition": "Mince je kovové platidlo s nominálem. Medaile je podobný předmět, který platidlem není.",
+          "example": "Tolar je mince, pamětní plaketa je medaile."
+        },
+        {
+          "type": "term",
+          "term": "Ražba",
+          "definition": "Výroba mince úderem nebo tlakem razidel do kovového kotoučku. Vznikne ostrý reliéf.",
+          "example": "Mince ražené v kremnické mincovně."
+        },
+        {
+          "type": "term",
+          "term": "Náklad",
+          "definition": "Kolik kusů dané mince v daném roce vzniklo. Malý náklad = vzácnost.",
+          "example": "Ročník s nákladem několika tisíc kusů je cennější než ročník s miliony."
+        },
+        {
+          "type": "term",
+          "term": "Zachovalost (stav)",
+          "definition": "Jak moc je mince opotřebená. Hodnotí se obvykle stupnicí od „neobíhaná“ (bez opotřebení) po silně opotřebenou.",
+          "example": "Neobíhaná mince má ostré detaily a původní lesk."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři faktory ceny"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vzácnost** – náklad a kolik kusů se dochovalo.",
+            "**Zachovalost** – čím méně opotřebená, tím dražší.",
+            "**Kov** – zlaté a stříbrné mince mají aspoň hodnotu kovu.",
+            "**Poptávka** – co sběratelé zrovna hledají (oblíbená období, panovníci)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pravá, nebo padělek?"
+        },
+        {
+          "type": "term",
+          "term": "Litý padělek",
+          "definition": "Napodobenina vzniklá **odlitím** do formy, ne ražbou. Má zrnitý povrch, drobné dírky a neostré detaily.",
+          "example": "Tolar s póry v ploše a zakulacenými písmeny."
+        },
+        {
+          "type": "table",
+          "head": [
+            "znak",
+            "ražená mince",
+            "litý padělek"
+          ],
+          "rows": [
+            [
+              "povrch",
+              "hladký, ostrý reliéf",
+              "zrnitý, póry, bublinky"
+            ],
+            [
+              "písmena",
+              "ostrá",
+              "zaoblená, rozmazaná"
+            ],
+            [
+              "hrana",
+              "pravidelná",
+              "stopy po švu formy"
+            ],
+            [
+              "hmotnost",
+              "odpovídá katalogu",
+              "často se liší"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zvaž minci a změř průměr; porovnej s katalogem.",
+            "Prohlédni lupou povrch a písmena.",
+            "Zkontroluj hranu – šev formy prozradí odlitek.",
+            "U cenných kusů vyžádej posudek znalce numismatika."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Dva stejné tolary: první ohlazený, detaily vlasů skoro nejsou vidět; druhý má ostré detaily a lesk. Který je dražší a proč?",
+          "answer": "Druhý. Je ve **lepší zachovalosti**. Při stejné vzácnosti rozhoduje stav."
+        },
+        {
+          "type": "example",
+          "question": "Podle katalogu má tolar vážit 28 g. Ten tvůj váží 24 g a má póry v ploše. Co usoudíš?",
+          "answer": "Odchylka hmotnosti a póry ukazují na **litý padělek**. Minci nekupuj jako pravou; nech ji posoudit znalcem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čím je mince starší, tím je dražší.",
+          "right": "Cenu určuje hlavně **vzácnost, zachovalost, kov a poptávka**. Některé římské mince stojí méně než vzácné mince z 20. století.",
+          "why": "Starých mincí se dochovalo mnoho. Stáří samo o sobě vzácnost neznamená."
+        },
+        {
+          "type": "summary",
+          "text": "Cenu mince určuje vzácnost (náklad), zachovalost, kov a poptávka. Litý padělek prozradí póry, zaoblená písmena, šev na hraně a jiná hmotnost."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak se nazývá obor zabývající se mincemi?",
+      "options": [
+        "numismatika",
+        "faleristika",
+        "filatelie",
+        "heraldika"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Medaile je platidlo stejně jako mince.",
+      "answer": false,
+      "explanation": "Medaile nemá nominál a platidlem není."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "líc",
+          "hlavní strana mince"
+        ],
+        [
+          "rub",
+          "druhá strana, často s hodnotou"
+        ],
+        [
+          "opis",
+          "text po okraji dokola"
+        ],
+        [
+          "nominál",
+          "hodnota platidla"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Který český král zavedl roku 1300 pražský groš?",
+      "answers": [
+        "Václav II.",
+        "Václav II",
+        "Vaclav II",
+        "Václav druhý"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Od jakého místa je odvozen název tolar (a tím i dolar)?",
+      "options": [
+        "Jáchymov",
+        "Kutná Hora",
+        "Kremnica",
+        "Vídeň"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Starou minci je dobré před prodejem vyčistit pastou.",
+      "answer": false,
+      "explanation": "Čištění minci poškodí a sníží její cenu."
+    },
+    {
+      "type": "choice",
+      "question": "Co nejčastěji prozradí litý padělek mince?",
+      "options": [
+        "póry, zaoblená písmena a šev na hraně",
+        "ostrý reliéf a lesk",
+        "přesná hmotnost podle katalogu",
+        "patina"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď měny a mince podle doby vzniku.",
+      "items": [
+        "pražský groš",
+        "jáchymovský tolar",
+        "rakousko-uherská koruna",
+        "československá koruna",
+        "česká koruna"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená malý náklad mince?",
+      "options": [
+        "Bylo vyraženo málo kusů – mince je vzácnější.",
+        "Mince je lehká.",
+        "Mince je z levného kovu.",
+        "Mince je padělek."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "V jakém roce přešlo Rakousko-Uhersko na korunovou měnu?",
+      "answers": [
+        "1892"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mince se má držet za hranu, ne za plochu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Tolar má podle katalogu 28 g, tvůj váží 24 g. Co je nejrozumnější?",
+      "options": [
+        "nechat ho posoudit znalcem, je podezřelý",
+        "koupit jako pravý, hmotnost nevadí",
+        "vyčistit ho a zvážit znovu",
+        "prohlásit ho za medaili"
+      ],
+      "answer": 0,
+      "hints": [
+        "Co říká velká odchylka hmotnosti o tom, jak mince vznikla?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi mincí a medailí?",
+      "answer": "Mince je platidlo s nominálem, které vydal stát nebo panovník. Medaile vypadá podobně, ale platidlem není – připomíná událost, osobu nebo ocenění."
+    },
+    {
+      "type": "open",
+      "question": "Co ovlivňuje cenu mince?",
+      "answer": "Hlavně vzácnost (náklad a počet dochovaných kusů), zachovalost, kov, ze kterého je, a poptávka sběratelů. Samotné stáří o ceně nerozhoduje."
+    }
+  ]
+}

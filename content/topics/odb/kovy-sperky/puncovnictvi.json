@@ -1,0 +1,403 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "puncovnictvi",
+  "title": "Puncovnictví a puncovní značky",
+  "emoji": "🔎",
+  "explanations": [
+    {
+      "title": "S lupou v ruce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na vnitřní straně prstenu nebo na dně stříbrné cukřenky jsou drobounké značky. Bez lupy vypadají jako škrábanec. Pro starožitníka jsou ale jako **občanský průkaz předmětu**: řeknou, z jakého kovu je, jak je čistý a často i odkud a kdy pochází."
+        },
+        {
+          "type": "text",
+          "text": "Kdo umí značky číst, rychleji pozná pravé stříbro od postříbřené mosazi a odhalí podezřelý kus."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Připomenutí: ryzost",
+          "definition": "Kolik tisícin slitiny tvoří drahý kov.",
+          "example": "Stříbro 925 = 925 tisícin stříbra."
+        },
+        {
+          "type": "term",
+          "term": "Punc (puncovní značka)",
+          "definition": "Úřední značka vyražená na předmětu z drahého kovu. Potvrzuje, že stát ryzost **přezkoušel** a že odpovídá zákonu.",
+          "example": "Hlava labutě na zlatém prstenu znamená zlato ryzosti 585."
+        },
+        {
+          "type": "term",
+          "term": "Puncovní úřad",
+          "definition": "Státní úřad, který zkouší drahé kovy a razí na ně punc. Sídlí v Praze a má pracoviště v dalších městech.",
+          "example": "Výrobce šperků přinese na Puncovní úřad sérii prstenů, úřad je přezkouší a opuncuje."
+        },
+        {
+          "type": "term",
+          "term": "Identifikační (výrobní) značka",
+          "definition": "Značka výrobce nebo dovozce, kterou si nechá zaregistrovat. Říká, **kdo** předmět vyrobil a odpovídá za něj. Není to punc.",
+          "example": "Iniciály zlatníka v obdélníčku vedle punce."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se punc dostane na předmět"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Výrobce vyrobí předmět a vyrazí na něj svou identifikační značku.",
+            "Předloží ho Puncovnímu úřadu.",
+            "Úřad zkouškou ověří ryzost (třeba na zkušebním kameni nebo přístrojem).",
+            "Odpovídá-li ryzost zákonu, úřad vyrazí puncovní značku.",
+            "Nevyhoví-li, předmět neopuncuje."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Zkušební kámen",
+          "definition": "Černý tvrdý kámen (buližník). Předmětem se po něm přejede, vznikne kovová čárka a na ni se kápne zkušební kyselina. Podle toho, jak čárka reaguje, se odhadne ryzost.",
+          "example": "Čárka zlata 585 se v kyselině pro 750 rozpustí, v kyselině pro 585 vydrží."
+        },
+        {
+          "type": "text",
+          "text": "Se zkušebními kyselinami se pracuje jen v **ochranných rukavicích a brýlích**, při větrání a mimo dosah jídla. Kyselina poleptá kůži i předmět."
+        },
+        {
+          "type": "heading",
+          "text": "Současné české značky"
+        },
+        {
+          "type": "text",
+          "text": "Podle vyhlášky č. 363/2003 Sb. má každý kov svá zvířata nebo symbol. Tvar obrysu a číslice v něm určují ryzost. Malé písmeno prozradí pracoviště úřadu (např. **P** Praha, **B** Brno, **T** Turnov)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "kov",
+            "obraz v puncu",
+            "ryzost (číslo v puncu)"
+          ],
+          "rows": [
+            [
+              "zlato",
+              "hlava orla",
+              "999 (0), 986 (1), 900 (2)"
+            ],
+            [
+              "zlato",
+              "hlava kohouta",
+              "750 (3)"
+            ],
+            [
+              "zlato",
+              "hlava labutě",
+              "585 (4)"
+            ],
+            [
+              "stříbro",
+              "hlava kamzíka",
+              "999 (0), 959 (1), 925 (2)"
+            ],
+            [
+              "stříbro",
+              "hlava zajíce",
+              "900 (3), 835 (4), 800 (5)"
+            ],
+            [
+              "platina",
+              "královská koruna",
+              "999 až 800 (0–4)"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na stříbrném přívěsku je hlava zajíce s číslicí 5. Co z toho víš?",
+          "answer": "Zajíc = stříbro nižších ryzostí. Číslice 5 = ryzost **800**. Předmět je stříbrný, opuncovaný českým Puncovním úřadem."
+        },
+        {
+          "type": "example",
+          "question": "Na prstenu je číslo 585 a vedle něj iniciály „JK“, žádné zvíře. Je to punc?",
+          "answer": "Ne. Číslo 585 vyrazil výrobce jako údaj o ryzosti a „JK“ je jeho značka. **Úřední punc chybí.** Ryzost je jen tvrzení výrobce, je třeba ji ověřit."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Číslo 925 vyražené na prstenu je puncovní značka.",
+          "right": "Samotné číslo je údaj výrobce. Punc je úřední obrázková značka (u stříbra 925 v ČR hlava kamzíka s číslicí 2).",
+          "why": "Číslo si může vyrazit kdokoli, i padělatel. Punc potvrzuje, že ryzost ověřil úřad."
+        },
+        {
+          "type": "summary",
+          "text": "Punc je úřední značka, kterou Puncovní úřad potvrzuje ryzost. Vedle něj bývá značka výrobce. V ČR: zlato = orel, kohout, labuť; stříbro = kamzík, zajíc; platina = koruna."
+        }
+      ]
+    },
+    {
+      "title": "Značky v čase",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Starožitník často drží věc starší než sto let. Na ní nenajde dnešního orla ani zajíce, ale **historické značky**. Podle nich jde předmět zařadit do období – a to výrazně ovlivní cenu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Puncovnictví",
+          "definition": "Obor, který se zabývá zkoušením drahých kovů a jejich označováním puncem. Patří k němu i zákony, které to upravují.",
+          "example": "V ČR platí puncovní zákon č. 539/1992 Sb."
+        },
+        {
+          "type": "term",
+          "term": "Ryzost",
+          "definition": "Podíl drahého kovu ve slitině. Dnes v tisícinách, dříve se počítala i jinak.",
+          "example": "Stříbro 800 = 800 tisícin stříbra."
+        },
+        {
+          "type": "term",
+          "term": "Lot (lotová ryzost)",
+          "definition": "Starší míra ryzosti stříbra. Ryzí stříbro mělo **16 lotů**. Číslo lotů tedy říká, kolik šestnáctin slitiny je stříbro.",
+          "example": "13 lotů = 13/16 = 812,5 ‰."
+        },
+        {
+          "type": "term",
+          "term": "Puncovní značka",
+          "definition": "Úřední značka na předmětu z drahého kovu, která potvrzuje přezkoušenou ryzost.",
+          "example": "Hlava Diany na rakouském stříbře."
+        },
+        {
+          "type": "heading",
+          "text": "Tři velká období na našem území"
+        },
+        {
+          "type": "widget",
+          "widget": "timeline",
+          "props": {
+            "events": [
+              {
+                "year": 1866,
+                "label": "Nový rakouský puncovní zákon, ryzost v **tisícinách**"
+              },
+              {
+                "year": 1872,
+                "label": "Na stříbře se užívá **hlava Diany** (do roku 1922)"
+              },
+              {
+                "year": 1921,
+                "label": "1. března první **československé** puncovní značky"
+              },
+              {
+                "year": 1993,
+                "label": "Puncovní zákon č. 539/1992 Sb. samostatné ČR"
+              },
+              {
+                "year": 2004,
+                "label": "Současné značky podle vyhlášky č. 363/2003 Sb."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Klepni na události a všimni si, že **rakousko-uherské značky** platily u nás až do února 1921. Teprve pak přišly československé."
+        },
+        {
+          "type": "heading",
+          "text": "Rakousko-Uhersko"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Do roku 1866**: u stříbra číslo lotů (nejčastěji 13), značka puncovního místa a letopočet.",
+            "**Od roku 1866**: zákon č. 75/1866 ř. z. zavedl ryzost v tisícinách a nové značky.",
+            "**1872–1922**: stříbro se značilo **hlavou Diany** (bohyně lovu) s číslicí ryzosti; u nás se užívala do 28. 2. 1921.",
+            "Číslice u Diany: 1 = 950, 2 = 900, 3 = 800, 4 = 750 ‰ – nejčastěji uvidíš **trojku**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na stříbrné lžíci je číslo 13, písmeno a letopočet 1834. Kolik tisícin stříbra má?",
+          "answer": "13 lotů z 16: 13 ÷ 16 = 0,8125, tedy **812,5 ‰**. Lžíce pochází z doby před rokem 1866."
+        },
+        {
+          "type": "example",
+          "question": "Na tabatěrce je ženská hlava (Diana) s číslicí 3. Zařaď ji.",
+          "answer": "Hlava Diany = rakousko-uherské stříbro z let **1872–1922** (u nás do 1921). Číslice 3 = ryzost **800**."
+        },
+        {
+          "type": "heading",
+          "text": "Platí staré značky dodnes?"
+        },
+        {
+          "type": "text",
+          "text": "Ano. Puncovní úřad uznává jako platné i řadu **starých značek z dějin našeho území** – rakousko-uherské a československé. Starou opuncovanou věc proto není nutné puncovat znovu. Přehled vydává Puncovní úřad."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hlava Diany znamená, že jde o zlatý předmět.",
+          "right": "Hlava Diany je rakousko-uherská značka pro **stříbro** (1872–1922).",
+          "why": "Každý kov měl vlastní značky. Záměna kovu znamená špatný odhad ceny o celé řády."
+        },
+        {
+          "type": "summary",
+          "text": "Starší stříbro se značilo v lotech (16 lotů = ryzí). Od roku 1866 platily rakouské značky v tisícinách, od 1872 hlava Diany. Od 1. 3. 1921 přišly československé značky, dnes platí značky podle vyhlášky č. 363/2003 Sb."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co potvrzuje puncovní značka?",
+      "options": [
+        "Že ryzost úředně ověřil Puncovní úřad.",
+        "Jak starý předmět je.",
+        "Kolik předmět stojí.",
+        "Kdo předmět vlastnil."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 925 vyražené výrobcem je samo o sobě úřední punc.",
+      "answer": false,
+      "explanation": "Je to údaj výrobce. Punc je úřední značka s obrazem."
+    },
+    {
+      "type": "match",
+      "question": "Spoj současnou českou puncovní značku s kovem a ryzostí.",
+      "pairs": [
+        [
+          "hlava labutě",
+          "zlato 585"
+        ],
+        [
+          "hlava kohouta",
+          "zlato 750"
+        ],
+        [
+          "hlava kamzíka s číslicí 2",
+          "stříbro 925"
+        ],
+        [
+          "hlava zajíce s číslicí 5",
+          "stříbro 800"
+        ],
+        [
+          "královská koruna",
+          "platina"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik lotů mělo ryzí stříbro?",
+      "answers": [
+        "16",
+        "šestnáct"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Stříbro má ryzost 12 lotů. Kolik je to tisícin?",
+      "answers": [
+        "750"
+      ],
+      "explanation": "12 ÷ 16 = 0,75 = 750 ‰.",
+      "hints": [
+        "Ryzí stříbro má 16 lotů.",
+        "Spočítej 12 ÷ 16 a výsledek vynásob tisícem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která značka patří rakousko-uherskému stříbru z let 1872–1922?",
+      "options": [
+        "hlava Diany",
+        "hlava orla",
+        "královská koruna",
+        "hlava labutě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď období puncovních značek na našem území od nejstaršího.",
+      "items": [
+        "ryzost v lotech",
+        "rakouský zákon z roku 1866",
+        "hlava Diany na stříbře",
+        "první československé značky",
+        "značky podle vyhlášky č. 363/2003 Sb."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Od 1. března 1921 se u nás používaly československé puncovní značky.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená malé písmeno T v současné české puncovní značce?",
+      "options": [
+        "pracoviště Puncovního úřadu v Turnově",
+        "ryzost tisícin",
+        "titan",
+        "tombak"
+      ],
+      "answer": 0,
+      "explanation": "Písmeno označuje pracoviště úřadu, např. P Praha, B Brno, T Turnov."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při zkoušce na zkušebním kameni se pracuje s kyselinami, proto patří k práci rukavice a ochranné brýle.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Na stříbrné misce je Diana s číslicí 3. Jaká je ryzost?",
+      "options": [
+        "800",
+        "900",
+        "950",
+        "750"
+      ],
+      "answer": 0,
+      "hints": [
+        "Číslice u Diany jdou od nejčistšího stříbra (1) k nejméně čistému (4)."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Starý rakousko-uherský punc v ČR neplatí, předmět se musí znovu opuncovat.",
+      "answer": false,
+      "explanation": "Puncovní úřad uznává řadu starých značek z historie našeho území jako platné."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi puncovní značkou a identifikační značkou výrobce?",
+      "answer": "Puncovní značku razí Puncovní úřad a potvrzuje jí, že ryzost úředně ověřil. Identifikační značka patří výrobci nebo dovozci a říká, kdo předmět vyrobil a odpovídá za něj."
+    },
+    {
+      "type": "open",
+      "question": "Jak bys podle značek odlišil stříbrnou lžičku z roku 1840 od lžičky z roku 1900?",
+      "answer": "Lžička z roku 1840 má lotovou ryzost (např. 13), značku místa a letopočet. Lžička z roku 1900 má rakousko-uherskou hlavu Diany s číslicí ryzosti (např. 3 = 800)."
+    }
+  ]
+}

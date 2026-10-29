@@ -1,0 +1,433 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "hodiny",
+  "title": "Hodiny: typy a mechanismy",
+  "emoji": "🕰️",
+  "explanations": [
+    {
+      "title": "Uvnitř hodin",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Staré hodiny jsou v obchodě dvojí zboží: **nábytek nebo šperk** (skříň, pouzdro) a **stroj**. Kupce zajímá, jak hodiny vypadají, ale i to, jestli jdou, jaký mají mechanismus a kdo je vyrobil."
+        },
+        {
+          "type": "text",
+          "text": "Když rozumíš tomu, jak mechanické hodiny fungují, poznáš, co je původní, co chybí a co se bude muset opravit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hodinový stroj",
+          "definition": "Vnitřní mechanismus hodin z koleček, pružin a dalších součástek, který odměřuje čas a pohání ručičky.",
+          "example": "Mosazný stroj za ciferníkem nástěnných hodin."
+        },
+        {
+          "type": "term",
+          "term": "Zdroj energie",
+          "definition": "To, co hodiny pohání. U mechanických hodin buď **závaží** (padá dolů), nebo natažené **pero** (stočená ocelová pružina).",
+          "example": "Kukačky pohánějí závaží ve tvaru šišek, kapesní hodinky pero."
+        },
+        {
+          "type": "term",
+          "term": "Převody (kolečka)",
+          "definition": "Soustava ozubených kol, která přenáší sílu ze zdroje energie a rozděluje ji tak, aby se ručičky točily správně rychle.",
+          "example": "Hodinová ručička se otočí 1× za 12 hodin, minutová 1× za hodinu."
+        },
+        {
+          "type": "term",
+          "term": "Krok",
+          "definition": "Součástka, která pouští sílu z převodů **po malých dávkách**. Proto hodiny tikají. Bez kroku by se kolečka roztočila naráz.",
+          "example": "Kotvový krok – „kotva“ střídavě zadrží a pustí zub kola."
+        },
+        {
+          "type": "term",
+          "term": "Regulátor (oscilátor)",
+          "definition": "Část, která se pravidelně kývá a určuje **takt** hodin. Kyvadlo u velkých hodin, **setrvačka s vlásenkou** u hodinek.",
+          "example": "Delší kyvadlo kývá pomaleji, hodiny se zpožďují."
+        },
+        {
+          "type": "heading",
+          "text": "Jak to do sebe zapadá"
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Závaží nebo pero dodá sílu",
+              "Převody ji přenesou dál",
+              "Krok pustí kolo o jeden zub",
+              "Kyvadlo se zhoupne a krok zase zadrží",
+              "Ručičky se posunou o kousek"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Sleduj, jak se kroky opakují dokola. Každé „tik“ je jedno pootočení kola o zub."
+        },
+        {
+          "type": "heading",
+          "text": "Z historie"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Věžní hodiny** se objevují ve středověku. Pražský orloj je doložen roku 1410.",
+            "**Kyvadlo** zavedl do hodin Christiaan Huygens v roce 1656. Hodiny se staly mnohem přesnějšími.",
+            "**Setrvačka s vlásenkou** (kolem roku 1675) zpřesnila přenosné hodinky.",
+            "**Natahování korunkou** místo klíčku se u kapesních hodinek prosazuje od poloviny 19. století.",
+            "**Křemenné (quartzové) hodinky** – první náramkové v roce 1969 (Seiko Astron)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Kyvadlové hodiny se za den zpozdí o 3 minuty. Co s kyvadlem uděláš?",
+          "answer": "Zpoždění = kyvadlo kývá **příliš pomalu**. Kratší kyvadlo kývá rychleji. Čočku kyvadla proto **posuneš nahoru** (zkrátíš kyvadlo) regulační maticí."
+        },
+        {
+          "type": "example",
+          "question": "Kapesní hodinky mají v zadním víčku otvor na klíček a žádnou natahovací korunku. Co z toho vyvodíš?",
+          "answer": "Natahování **klíčkem** je starší způsob. Hodinky nejspíš pocházejí z doby **před rozšířením korunky**, tedy obvykle z 1. poloviny nebo poloviny 19. století či dřív. Zkontroluj, zda klíček nechybí."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při přenášení kyvadlových hodin je nechám v chodu i se závažím a kyvadlem.",
+          "right": "Hodiny zastav, **sundej kyvadlo a závaží** a přenášej je odděleně.",
+          "why": "Rozhoupané kyvadlo a padající závaží poškodí zavěšení, struny i krok."
+        },
+        {
+          "type": "summary",
+          "text": "Mechanické hodiny = zdroj energie (závaží, pero) → převody → krok → regulátor (kyvadlo, setrvačka). Kyvadlo (1656) a setrvačka s vlásenkou (kolem 1675) přinesly přesnost."
+        }
+      ]
+    },
+    {
+      "title": "Typy a značky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V nabídce starožitníků jsou nástěnné „vídeňáky“, zlacené krbové hodiny, kukačky, stojací hodiny i kapesní a náramkové hodinky. Každý typ má svůj trh a svoje sběratele. Prvním krokem je typ správně pojmenovat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hodinový stroj",
+          "definition": "Mechanismus uvnitř hodin, který odměřuje čas.",
+          "example": "Stroj s kyvadlem a dvěma závažími."
+        },
+        {
+          "type": "term",
+          "term": "Kyvadlo",
+          "definition": "Tyč se závažím (čočkou), která se pravidelně kývá a udává takt hodin.",
+          "example": "Mosazná čočka kyvadla ve skříni nástěnných hodin."
+        },
+        {
+          "type": "term",
+          "term": "Bicí ústrojí",
+          "definition": "Část stroje, která **odbíjí** hodiny (a někdy čtvrthodiny) úderem kladívka na zvonek nebo pružinu (gong).",
+          "example": "Hodiny odbijí ve tři hodiny třikrát."
+        },
+        {
+          "type": "term",
+          "term": "Signatura",
+          "definition": "Jméno nebo značka výrobce na ciferníku, stroji nebo pouzdru.",
+          "example": "Nápis „Gustav Becker“ na stroji nástěnných hodin."
+        },
+        {
+          "type": "heading",
+          "text": "Typy hodin"
+        },
+        {
+          "type": "table",
+          "head": [
+            "typ",
+            "popis",
+            "pohon"
+          ],
+          "rows": [
+            [
+              "věžní",
+              "velké hodiny na věžích a radnicích",
+              "závaží"
+            ],
+            [
+              "stojací (podlahové)",
+              "vysoká skříň, dlouhé kyvadlo",
+              "závaží"
+            ],
+            [
+              "nástěnné – vídeňský regulátor",
+              "prosklená dřevěná skříň, přesný chod, 19. století",
+              "závaží nebo pero"
+            ],
+            [
+              "kukačky",
+              "dřevěné, ze Schwarzwaldu, kukačka ohlašuje hodiny",
+              "závaží"
+            ],
+            [
+              "stolní a krbové",
+              "často zlacený bronz nebo mramor, empír až historismus",
+              "pero"
+            ],
+            [
+              "kapesní hodinky",
+              "nošené v kapse na řetízku",
+              "pero"
+            ],
+            [
+              "náramkové hodinky",
+              "rozšířily se po 1. světové válce",
+              "pero, později baterie"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Známé značky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "značka",
+            "odkud",
+            "co je dobré vědět"
+          ],
+          "rows": [
+            [
+              "Vacheron Constantin",
+              "Ženeva",
+              "založeno 1755"
+            ],
+            [
+              "Patek Philippe",
+              "Ženeva",
+              "založeno 1839, luxusní hodinky"
+            ],
+            [
+              "Gustav Becker",
+              "Freiburg ve Slezsku (dnes Świebodzice v Polsku)",
+              "od 1847, velmi rozšířené nástěnné hodiny v Rakousku-Uhersku"
+            ],
+            [
+              "Junghans",
+              "Schramberg, Německo",
+              "masová výroba nástěnných a budíků"
+            ],
+            [
+              "PRIM",
+              "Nové Město nad Metují",
+              "české náramkové hodinky, od roku 1954"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup prohlídky hodin"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Urči **typ** hodin a materiál skříně či pouzdra.",
+            "Hledej **signaturu** na ciferníku, stroji a pouzdru – shodují se?",
+            "Zkontroluj **úplnost**: kyvadlo, závaží, klíček, sklo, ručičky.",
+            "Ověř, zda stroj odpovídá skříni (není „svatba“ ze dvou hodin).",
+            "Hodiny **nenatahuj silou**; o opravě rozhoduje hodinář."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "„Svatba“",
+          "definition": "Hodiny složené z dílů různých hodin, třeba stroj z jedněch a skříň z druhých. Snižuje to hodnotu.",
+          "example": "V otvorech skříně jsou stopy po jiném, větším stroji."
+        },
+        {
+          "type": "example",
+          "question": "Nástěnné hodiny ve skříni z doby kolem 1900 mají na ciferníku „Gustav Becker“, ale stroj je signovaný jinou firmou. Co to znamená?",
+          "answer": "Signatury nesouhlasí. Jde pravděpodobně o **„svatbu“** – stroj byl vyměněn. V popisu to uveď; hodnota je nižší než u původních hodin."
+        },
+        {
+          "type": "example",
+          "question": "Zlacené stolní hodiny s figurou v antickém oděvu, pohon perem. Kam je zařadíš?",
+          "answer": "Typ: **stolní (krbové) hodiny**. Antický motiv a zlacený bronz ukazují na **empír** nebo jeho napodobení v historismu. Rozhodnou stroj a značky."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hodiny nejdou, natáhnu je až na doraz a zatřesu jimi.",
+          "right": "Hodiny jemně zkus, a když nejdou, svěř je **hodináři**.",
+          "why": "Stará olejová maziva tuhnou a pero může prasknout. Násilím se poškodí krok nebo převody."
+        },
+        {
+          "type": "summary",
+          "text": "Hodiny dělíme na věžní, stojací, nástěnné, kukačky, stolní, kapesní a náramkové. Hodnotu zvyšuje signatura, úplnost a původnost; „svatba“ ji snižuje."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď části mechanických hodin tak, jak jimi prochází síla.",
+      "items": [
+        "zdroj energie (závaží, pero)",
+        "převody",
+        "krok",
+        "regulátor (kyvadlo)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo zavedl kyvadlo do hodin?",
+      "options": [
+        "Christiaan Huygens",
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Mikuláš z Kadaně"
+      ],
+      "answer": 0,
+      "explanation": "Huygens sestrojil kyvadlové hodiny roku 1656; Galilei kyvadlo zkoumal, ale hodiny s ním nepostavil."
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá krok?",
+      "options": [
+        "pouští sílu z převodů po malých dávkách",
+        "odbíjí celé hodiny",
+        "dodává hodinám energii",
+        "ukazuje datum"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Delší kyvadlo kývá pomaleji, takže hodiny se zpožďují.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Hodiny se zpožďují. Jak upravíš kyvadlo?",
+      "options": [
+        "čočku posunu nahoru, kyvadlo zkrátím",
+        "čočku posunu dolů, kyvadlo prodloužím",
+        "přidám závaží",
+        "kyvadlo sundám"
+      ],
+      "answer": 0,
+      "hints": [
+        "Zpožďují-li se hodiny, má kyvadlo kývat rychleji, nebo pomaleji?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ hodin s typickým znakem.",
+      "pairs": [
+        [
+          "vídeňský regulátor",
+          "prosklená nástěnná skříň, přesný chod"
+        ],
+        [
+          "kukačky",
+          "dřevěné ze Schwarzwaldu"
+        ],
+        [
+          "krbové hodiny",
+          "zlacený bronz nebo mramor"
+        ],
+        [
+          "stojací hodiny",
+          "vysoká skříň, dlouhé kyvadlo"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "V jakém roce je doložen Pražský orloj?",
+      "answers": [
+        "1410"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je u hodin „svatba“?",
+      "options": [
+        "hodiny složené z dílů různých hodin",
+        "svatební dar ve tvaru hodin",
+        "dvojité bicí ústrojí",
+        "hodiny se dvěma ciferníky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Při přenášení kyvadlových hodin je třeba sundat kyvadlo a závaží.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co pohání kapesní hodinky?",
+      "options": [
+        "natažené pero",
+        "závaží",
+        "kyvadlo",
+        "baterie vždy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Ve kterém roce se objevily první křemenné náramkové hodinky (Seiko Astron)?",
+      "answers": [
+        "1969"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s místem.",
+      "pairs": [
+        [
+          "Patek Philippe",
+          "Ženeva"
+        ],
+        [
+          "Junghans",
+          "Schramberg"
+        ],
+        [
+          "PRIM",
+          "Nové Město nad Metují"
+        ],
+        [
+          "Gustav Becker",
+          "Freiburg ve Slezsku"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak fungují mechanické kyvadlové hodiny.",
+      "answer": "Závaží nebo pero dodává sílu, převody ji přenášejí k ručičkám. Krok ji pouští po malých dávkách a kyvadlo svým pravidelným kýváním určuje takt, takže se ručičky posouvají rovnoměrně."
+    },
+    {
+      "type": "open",
+      "question": "Na co se zaměříš při prohlídce starých nástěnných hodin před výkupem?",
+      "answer": "Určím typ a materiál skříně, hledám signatury na ciferníku i stroji a zda souhlasí. Zkontroluji úplnost (kyvadlo, závaží, klíček), zda stroj patří do skříně, a hodiny nenatahuji silou – o opravě rozhodne hodinář."
+    }
+  ]
+}
