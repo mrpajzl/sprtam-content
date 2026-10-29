@@ -1,0 +1,449 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "hydraulika",
+  "title": "Hydraulika",
+  "emoji": "🛢️",
+  "explanations": [
+    {
+      "title": "Síla z oleje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Bagr zvedne lžíci plnou hlíny, lis ohne plech silou stovek tun a automechanik zvedne auto zvedákem jednou rukou. Všechno to dělá **olej pod tlakem**. Obor se jmenuje **hydraulika**."
+        },
+        {
+          "type": "text",
+          "text": "Oproti pneumatice je hydraulika pomalejší a dražší, ale má mnohem větší sílu a pohyb jde přesně řídit, protože olej se skoro nedá stlačit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tlak",
+          "definition": "Síla na jednotku plochy: `p = F / S`. Jednotka pascal (Pa), v hydraulice se používají bary a megapascaly: 1 MPa = 10 bar = 1 N/mm².",
+          "example": "Hydraulika bagru pracuje s tlaky v řádu stovek barů."
+        },
+        {
+          "type": "term",
+          "term": "Pascalův zákon",
+          "definition": "Tlak, kterým působíme na kapalinu v uzavřené nádobě, se šíří do všech míst a všemi směry stejně.",
+          "example": "Tlak z čerpadla je stejný na pístu válce i ve všech hadicích (když olej neproudí)."
+        },
+        {
+          "type": "term",
+          "term": "Průtok Q",
+          "definition": "Kolik oleje proteče za jednotku času, obvykle v litrech za minutu (l/min).",
+          "example": "Čerpadlo dává 30 l/min."
+        },
+        {
+          "type": "heading",
+          "text": "Hydraulický obvod jako krevní oběh"
+        },
+        {
+          "type": "text",
+          "text": "Hydraulický obvod se podobá krevnímu oběhu: srdce pumpuje, cévy rozvádějí, svaly pracují a krev se vrací zpět."
+        },
+        {
+          "type": "term",
+          "term": "Nádrž",
+          "definition": "Zásobník oleje. Olej se v ní uklidní, ochladí a usadí se v něm nečistoty.",
+          "example": "Kovová nádrž s hladinoznakem a filtrem na zpětném vedení."
+        },
+        {
+          "type": "term",
+          "term": "Hydrogenerátor (čerpadlo)",
+          "definition": "„Srdce“: poháněné elektromotorem nasává olej z nádrže a tlačí ho do obvodu. Vytváří **průtok**; tlak vznikne teprve tehdy, když se olej opře o odpor (zátěž válce).",
+          "example": "Zubové, lamelové nebo pístové čerpadlo."
+        },
+        {
+          "type": "term",
+          "term": "Pojistný ventil",
+          "definition": "Hlídá nejvyšší tlak. Když tlak přesáhne nastavenou hodnotu, otevře se a pustí olej zpět do nádrže. Chrání obvod před roztržením.",
+          "example": "Nastaven na 160 bar – víc tlaku v obvodu nebude."
+        },
+        {
+          "type": "term",
+          "term": "Rozvaděč 4/3",
+          "definition": "Ventil se 4 přípoji a 3 polohami. Přípoje: **P** tlak od čerpadla, **T** zpět do nádrže, **A** a **B** k válci. Krajní polohy posílají válec ven a zpět, střední poloha určuje, co se děje v klidu.",
+          "example": "Páka bagru: dopředu, dozadu, uprostřed stop."
+        },
+        {
+          "type": "term",
+          "term": "Hydromotor a hydraulický válec",
+          "definition": "Akční členy hydrauliky. **Válec** dělá přímočarý pohyb, **hydromotor** otáčivý.",
+          "example": "Válec zvedá rameno bagru, hydromotor točí pásy."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Čerpadlo nasaje olej z nádrže",
+              "Olej jde přes rozvaděč (P → A) do válce",
+              "Píst se pohybuje a koná práci",
+              "Olej z druhé strany válce jde B → T",
+              "Přes filtr zpět do nádrže"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Kolik síly a jak rychle"
+        },
+        {
+          "type": "text",
+          "text": "Síla válce záleží na **tlaku** a ploše pístu: `F = p · S`. Rychlost záleží na **průtoku** a ploše: `v = Q / S`. Pamatuj: tlak = síla, průtok = rychlost."
+        },
+        {
+          "type": "example",
+          "question": "Válec má průměr pístu 80 mm, tlak v obvodu je 10 MPa. Jakou silou tlačí?",
+          "answer": "S = π · r² = 3,14 · 40² ≈ 5 027 mm². p = 10 MPa = 10 N/mm². F = p · S = 10 · 5 027 ≈ **50 270 N ≈ 50 kN**, to je tíha asi pěti tun."
+        },
+        {
+          "type": "example",
+          "question": "Čerpadlo dává 30 l/min, plocha pístu je 50 cm². Jak rychle se píst vysouvá?",
+          "answer": "30 l = 30 000 cm³. v = Q / S = 30 000 cm³/min : 50 cm² = 600 cm/min = **6 m/min = 0,1 m/s**."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Před každou opravou **odtlakuj** obvod: vypni čerpadlo, spusť nebo mechanicky zajisti břemena, vybij hydraulický akumulátor.",
+            "Netěsnost nikdy nehledej rukou. Tenký proud oleje pod vysokým tlakem pronikne kůží a způsobí vážné zranění, se kterým se musí ihned k lékaři.",
+            "Hadice kontroluj: praskliny, odřeniny, prosakování. Mají omezenou životnost a vadné se hned mění.",
+            "Pojistný ventil nikdy nepřenastavuj nad hodnotu určenou výrobcem."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Čerpadlo vyrábí tlak, takže čím silnější čerpadlo, tím vyšší tlak.",
+          "right": "Čerpadlo vyrábí průtok. Tlak vzniká odporem zátěže a jeho maximum omezuje pojistný ventil.",
+          "why": "Válec bez zátěže se vysouvá při malém tlaku. Tlak stoupne, až když se píst opře o břemeno nebo doraz."
+        },
+        {
+          "type": "summary",
+          "text": "Hydraulika přenáší sílu olejem podle Pascalova zákona. Čerpadlo dává průtok, pojistný ventil omezuje tlak, rozvaděč 4/3 (P, T, A, B) řídí směr. Síla F = p · S, rychlost v = Q / S. Před prací vždy odtlakuj."
+        }
+      ]
+    },
+    {
+      "title": "Schéma a výpočty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér lisu musí spočítat, jak velký válec a jaké čerpadlo zvolit. Údržbář musí ze schématu poznat, proč válec v klidu „ujíždí“. Obojí se naučíš tady: značky, střední polohy rozvaděče a dva vzorce."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hydraulika",
+          "definition": "Přenos síly a pohybu pomocí kapaliny pod tlakem, nejčastěji oleje.",
+          "example": "Lisy, bagry, zvedací plošiny."
+        },
+        {
+          "type": "term",
+          "term": "Pascalův zákon",
+          "definition": "Tlak v uzavřené kapalině se šíří všude a všemi směry stejně.",
+          "example": "Proto stejný tlak tlačí na malý i velký píst zvedáku."
+        },
+        {
+          "type": "term",
+          "term": "Plocha pístu S",
+          "definition": "Plocha kruhu, na kterou tlačí olej: `S = π · d² / 4`. Na straně pístnice je plocha menší (mezikruží), protože část zabírá pístnice.",
+          "example": "d = 100 mm → S ≈ 7 854 mm²."
+        },
+        {
+          "type": "term",
+          "term": "Průtok Q",
+          "definition": "Objem oleje za čas, např. l/min. 1 l = 1 dm³ = 1 000 cm³.",
+          "example": "30 l/min = 30 000 cm³/min."
+        },
+        {
+          "type": "term",
+          "term": "Rozvaděč 4/3 a střední poloha",
+          "definition": "4 přípoje (P, T, A, B), 3 polohy. Střední poloha se volí podle toho, co má obvod dělat v klidu.",
+          "example": "Uzavřená, plovoucí, oběhová."
+        },
+        {
+          "type": "term",
+          "term": "Značky ČSN ISO 1219",
+          "definition": "V hydraulice se kreslí podobně jako v pneumatice, ale trojúhelník u zdroje a motorů je **plný (černý)** – znamená kapalinu.",
+          "example": "Kroužek s plným trojúhelníkem = hydrogenerátor."
+        },
+        {
+          "type": "heading",
+          "text": "Střední polohy rozvaděče 4/3"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Střední poloha",
+            "Propojení",
+            "Co dělá válec",
+            "Čerpadlo"
+          ],
+          "rows": [
+            [
+              "uzavřená",
+              "P, T, A, B uzavřeny",
+              "stojí, je zablokovaný",
+              "tlačí přes pojistný ventil (ohřívá olej)"
+            ],
+            [
+              "plovoucí",
+              "A, B spojeny s T, P uzavřen",
+              "jde volně posunout rukou",
+              "tlačí přes pojistný ventil"
+            ],
+            [
+              "oběhová",
+              "P spojen s T, A a B uzavřeny",
+              "stojí, je zablokovaný",
+              "olej se vrací do nádrže bez tlaku – šetří energii"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dva vzorce"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Převeď jednotky: tlak na N/mm² (1 MPa = 1 N/mm², 1 bar = 0,1 N/mm²), plochy na mm² nebo cm².",
+            "Síla: `F = p · S`.",
+            "Rychlost: `v = Q / S` – průtok a plochu převeď do stejných jednotek (cm³/min a cm²).",
+            "Při zasouvání počítej s plochou mezikruží (bez pístnice): síla je menší a rychlost větší."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Lis potřebuje sílu 100 kN, pojistný ventil je nastaven na 20 MPa. Jakou nejmenší plochu musí mít píst?",
+          "answer": "S = F / p = 100 000 N : 20 N/mm² = **5 000 mm²**. Průměr: d = √(4 · S / π) = √(4 · 5 000 / 3,14) ≈ √6 369 ≈ 80 mm. Zvolíš nejbližší vyšší normalizovaný průměr, třeba 80 mm, raději s rezervou."
+        },
+        {
+          "type": "example",
+          "question": "Válec: plocha pístu 50 cm², plocha mezikruží 30 cm², čerpadlo 30 l/min. Jak rychle jede ven a jak zpět?",
+          "answer": "Ven: v = 30 000 cm³/min : 50 cm² = 600 cm/min = **6 m/min**. Zpět: v = 30 000 : 30 = 1 000 cm/min = **10 m/min**. Zpět jede rychleji, protože olej plní menší objem."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Síla válce závisí na ",
+                "after": " a ploše pístu.",
+                "options": [
+                  "tlaku",
+                  "průtoku"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Rychlost válce závisí na ",
+                "after": " a ploše pístu.",
+                "options": [
+                  "průtoku",
+                  "tlaku"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Přípoj zpět do nádrže se značí ",
+                "after": ".",
+                "options": [
+                  "T",
+                  "P",
+                  "A"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Plný trojúhelník ve značce znamená ",
+                "after": ".",
+                "options": [
+                  "kapalinu",
+                  "vzduch"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň mezery a ověř si, že si nepleteš tlak a průtok."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když chci, aby válec jel rychleji, zvýším tlak na pojistném ventilu.",
+          "right": "Rychlost zvýšíš větším průtokem (výkonnější čerpadlo) nebo menší plochou pístu. Tlak ovlivní sílu.",
+          "why": "v = Q / S – tlak ve vzorci rychlosti není. Zvýšení tlaku nad dovolenou mez navíc ohrozí hadice a prvky."
+        },
+        {
+          "type": "summary",
+          "text": "F = p · S (tlak dává sílu), v = Q / S (průtok dává rychlost). Rozvaděč 4/3 má přípoje P, T, A, B; střední poloha uzavřená zablokuje válec, plovoucí ho uvolní, oběhová odlehčí čerpadlo. Plný trojúhelník = kapalina."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co vytváří hydrogenerátor (čerpadlo)?",
+      "options": [
+        "průtok oleje; tlak vzniká odporem zátěže",
+        "přímo tlak bez ohledu na zátěž",
+        "stlačený vzduch"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží pojistný ventil?",
+      "options": [
+        "omezuje nejvyšší tlak v obvodu",
+        "mění směr pohybu válce",
+        "čistí olej"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj přípoj rozvaděče s významem.",
+      "pairs": [
+        [
+          "P",
+          "tlak od čerpadla"
+        ],
+        [
+          "T",
+          "zpět do nádrže"
+        ],
+        [
+          "A, B",
+          "pracovní přípoje k válci"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tlak 5 MPa, plocha pístu 2 000 mm². Síla v N =",
+      "answers": [
+        "10000",
+        "10 000"
+      ],
+      "hints": [
+        "F = p · S.",
+        "1 MPa = 1 N/mm²."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Průtok 20 l/min, plocha pístu 40 cm². Rychlost v m/min =",
+      "answers": [
+        "5"
+      ],
+      "hints": [
+        "Převeď litry na cm³: 1 l = 1 000 cm³.",
+        "Vyjde ti cm/min, převeď na metry."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik barů je 10 MPa?",
+      "answers": [
+        "100"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejném průtoku se válec zasouvá rychleji než vysouvá, protože plocha mezikruží je menší.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Rychlost hydraulického válce zvýšíme zvýšením tlaku na pojistném ventilu.",
+      "answer": false,
+      "explanation": "Rychlost je v = Q / S, záleží na průtoku. Tlak určuje sílu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj střední polohu rozvaděče 4/3 s chováním.",
+      "pairs": [
+        [
+          "uzavřená",
+          "válec zablokován, čerpadlo přes pojistný ventil"
+        ],
+        [
+          "plovoucí",
+          "válec jde volně posunout"
+        ],
+        [
+          "oběhová",
+          "čerpadlo odlehčeno do nádrže, válec stojí"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hledáš netěsnost na hydraulické hadici pod tlakem. Jak správně?",
+      "options": [
+        "obvod odtlakuji a hadici prohlédnu, ruku k úniku nedávám",
+        "přejedu hadici dlaní a cítím, kde stříká",
+        "zvýším tlak, aby únik byl vidět"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu oleje při vysouvání válce.",
+      "items": [
+        "nádrž",
+        "čerpadlo",
+        "rozvaděč (P → A)",
+        "válec",
+        "rozvaděč (B → T)",
+        "filtr a zpět do nádrže"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký trojúhelník ve značce zdroje znamená hydrauliku?",
+      "options": [
+        "plný (černý)",
+        "prázdný (bílý)",
+        "dvojitý"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj hlavní prvky hydraulického obvodu a popiš jejich úkol.",
+      "answer": "Nádrž uchovává a chladí olej, čerpadlo poháněné motorem vytváří průtok, pojistný ventil omezuje nejvyšší tlak, rozvaděč 4/3 řídí směr pohybu, válec nebo hydromotor koná práci a filtr čistí olej před návratem do nádrže."
+    },
+    {
+      "type": "open",
+      "question": "Jaké bezpečnostní zásady platí při práci na hydraulice?",
+      "answer": "Před prací odtlakovat obvod, vypnout čerpadlo, zajistit nebo spustit břemena a vybít akumulátor. Netěsnosti nehledat rukou, protože olej pod tlakem pronikne kůží. Kontrolovat a včas měnit hadice a nepřenastavovat pojistný ventil nad dovolenou hodnotu."
+    }
+  ]
+}

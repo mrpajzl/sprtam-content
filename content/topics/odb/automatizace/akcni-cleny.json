@@ -1,0 +1,480 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "akcni-cleny",
+  "title": "Akční členy: motory, ventily, pohony",
+  "emoji": "⚙️",
+  "explanations": [
+    {
+      "title": "Svaly stroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Senzory jsou smysly stroje, řídicí systém jeho mozek. Chybí ještě **svaly**: to, co skutečně pohne pásem, otevře ventil nebo zvedne břemeno. V automatizaci se jim říká **akční členy**."
+        },
+        {
+          "type": "text",
+          "text": "Řídicí systém dává jen slabý signál, třeba 24 V a pár miliampér. Akční člen z toho udělá pohyb s velkou silou. Podle úkolu volíme elektrický motor, pneumatický nebo hydraulický válec, ventil."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Akční člen",
+          "definition": "Část řízeného systému, která podle povelu řídicího systému provede fyzický zásah: pohyb, otevření, ohřev.",
+          "example": "Motor dopravníku, ventil na přívodu páry, topná spirála."
+        },
+        {
+          "type": "term",
+          "term": "Pohon",
+          "definition": "Zařízení, které vytváří pohyb. Může být elektrický, pneumatický (stlačený vzduch) nebo hydraulický (tlakový olej).",
+          "example": "Pneumatický válec vysouvá píst."
+        },
+        {
+          "type": "term",
+          "term": "Relé",
+          "definition": "Elektricky ovládaný spínač: malý proud do cívky přitáhne kotvu a ta sepne nebo rozepne kontakty. Spíná malé proudy řídicích obvodů.",
+          "example": "Výstup PLC sepne relé a to rozsvítí signálku."
+        },
+        {
+          "type": "term",
+          "term": "Stykač",
+          "definition": "Silné „relé“ pro velké proudy. Hlavními kontakty spíná motory a topení, pomocnými kontakty dává informace řídicímu obvodu.",
+          "example": "Cívka 24 V DC, hlavní kontakty spínají trojfázový motor 400 V."
+        },
+        {
+          "type": "heading",
+          "text": "Elektromotory"
+        },
+        {
+          "type": "term",
+          "term": "Stejnosměrný (DC) motor",
+          "definition": "Napájí se stejnosměrným napětím. Otáčky se mění velikostí napětí, směr otáčení přepólováním.",
+          "example": "Stěrače v autě, malé pohony."
+        },
+        {
+          "type": "term",
+          "term": "Asynchronní motor",
+          "definition": "Nejrozšířenější průmyslový motor. Trojfázové vinutí statoru vytváří točivé magnetické pole a to unáší rotor. Rotor se točí o trochu pomaleji než pole, proto „asynchronní“.",
+          "example": "Čerpadla, ventilátory, dopravníky. Směr otáčení změníš prohozením dvou fází."
+        },
+        {
+          "type": "term",
+          "term": "Frekvenční měnič",
+          "definition": "Elektronické zařízení, které mění frekvenci a napětí pro asynchronní motor, a tím plynule jeho otáčky.",
+          "example": "Dopravník jede pomalu při rozjezdu a rychle v plném provozu."
+        },
+        {
+          "type": "term",
+          "term": "Krokový motor",
+          "definition": "Otáčí se po přesných krocích. Každý impulz z řídicí jednotky = jeden krok. Typický krok je 1,8°, tedy 200 kroků na otáčku.",
+          "example": "3D tiskárny, malé polohovací osy."
+        },
+        {
+          "type": "term",
+          "term": "Servomotor",
+          "definition": "Motor se snímačem polohy (enkodérem) a vlastním měničem (servozesilovačem). Poloha se stále měří a dorovnává – pracuje v uzavřené smyčce.",
+          "example": "Osy CNC strojů a průmyslových robotů."
+        },
+        {
+          "type": "example",
+          "question": "Krokový motor má krok 1,8°. Kolik impulzů potřebuješ na pootočení o 90°?",
+          "answer": "Na 90° potřebuješ 90 / 1,8 = **50 impulzů**. (Celá otáčka 360 / 1,8 = 200 kroků.)"
+        },
+        {
+          "type": "heading",
+          "text": "Ventily a tekutinové pohony"
+        },
+        {
+          "type": "text",
+          "text": "Ne vždy chceme otáčení. Pro přímý pohyb tam a zpět se hodí **válce**. Pneumatický válec je rychlý, levný a čistý, ale síla je omezená tlakem vzduchu (běžně kolem 6 bar). Hydraulický válec s olejem pod tlakem desítek až stovek barů zvedne obrovská břemena, ale je pomalejší a dražší."
+        },
+        {
+          "type": "term",
+          "term": "Elektromagnetický ventil",
+          "definition": "Ventil, který otevírá nebo přepíná cívka s kotvou. Řídicí systém ho ovládá elektricky.",
+          "example": "Pustí stlačený vzduch do válce, když PLC sepne cívku."
+        },
+        {
+          "type": "term",
+          "term": "Regulační ventil",
+          "definition": "Ventil, který se neotevírá jen naplno a nazavřeno, ale plynule. Má pohon (elektrický nebo pneumatický) a mění průtok.",
+          "example": "Ventil na přívodu páry plynule mění výkon ohřevu."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "otáčivý pohyb",
+              "přímočarý pohyb"
+            ],
+            "items": [
+              {
+                "text": "asynchronní motor",
+                "group": 0
+              },
+              {
+                "text": "pneumatický válec",
+                "group": 1
+              },
+              {
+                "text": "krokový motor",
+                "group": 0
+              },
+              {
+                "text": "hydraulický válec",
+                "group": 1
+              },
+              {
+                "text": "servomotor",
+                "group": 0
+              },
+              {
+                "text": "lineární motor",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď pohony podle pohybu, který přímo vytvářejí."
+        },
+        {
+          "type": "example",
+          "question": "Lis má stisknout výlisek silou 200 kN, linka balení má posouvat lehké krabice 60× za minutu. Jaký pohon zvolíš?",
+          "answer": "Lis: velká síla → **hydraulický válec**. Balicí linka: lehké díly, rychlé a časté pohyby → **pneumatický válec**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výstup PLC připojím rovnou na motor 400 V.",
+          "right": "Výstup PLC spíná cívku stykače (nebo ovládá frekvenční měnič) a teprve ten spíná motor.",
+          "why": "Výstup PLC unese jen malý proud a pracuje s malým napětím. Silový obvod se od řídicího odděluje stykačem nebo měničem. Na silové části smí pracovat jen osoba s elektrotechnickou kvalifikací."
+        },
+        {
+          "type": "summary",
+          "text": "Akční členy provádějí zásah řízení. Elektrické: DC, asynchronní, krokový a servomotor; spínají se stykačem či relé, otáčky mění měnič. Tekutinové: pneumatické válce (rychlé, lehké) a hydraulické (velká síla), řízené ventily."
+        }
+      ]
+    },
+    {
+      "title": "Srovnávací tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Konstruktér stojí před otázkou: čím pohnout? Rozhoduje síla, rychlost, přesnost, cena a prostředí. Tady si akční členy porovnáme vedle sebe, jako když vybíráš z katalogu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Akční člen",
+          "definition": "Prvek, který přemění povel řídicího systému na fyzický zásah do procesu.",
+          "example": "Motor, válec, ventil, topné těleso."
+        },
+        {
+          "type": "term",
+          "term": "Otevřená a uzavřená smyčka",
+          "definition": "V otevřené smyčce se poloha neměří, jen se pošle povel. V uzavřené smyčce snímač polohu měří a řízení chybu dorovná.",
+          "example": "Krokový motor obvykle bez snímače (otevřená), servomotor s enkodérem (uzavřená)."
+        },
+        {
+          "type": "term",
+          "term": "Enkodér",
+          "definition": "Snímač natočení hřídele. Posílá impulzy nebo přímo číselnou polohu.",
+          "example": "Enkodér s 1 000 impulzy na otáčku."
+        },
+        {
+          "type": "term",
+          "term": "Synchronní otáčky",
+          "definition": "Rychlost točivého magnetického pole v asynchronním motoru: `n_s = 60 · f / p`, kde f je frekvence sítě a p počet pólových dvojic.",
+          "example": "Při 50 Hz a p = 2: n_s = 60 · 50 / 2 = 1 500 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Skluz",
+          "definition": "O kolik se rotor asynchronního motoru točí pomaleji než pole. Bez skluzu by motor netočil, protože by se do rotoru neindukoval proud.",
+          "example": "Pole 1 500 ot/min, rotor asi 1 450 ot/min."
+        },
+        {
+          "type": "term",
+          "term": "Stykač a relé",
+          "definition": "Elektromagneticky ovládané spínače. Relé pro malé proudy řídicích obvodů, stykač pro velké proudy motorů.",
+          "example": "Stykač spíná motor čerpadla."
+        },
+        {
+          "type": "heading",
+          "text": "Elektromotory vedle sebe"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Motor",
+            "Řízení otáček / polohy",
+            "Výhody",
+            "Nevýhody"
+          ],
+          "rows": [
+            [
+              "DC s kartáči",
+              "napětím; směr přepólováním",
+              "jednoduché řízení",
+              "kartáče se opotřebují"
+            ],
+            [
+              "asynchronní",
+              "frekvenčním měničem; směr prohozením 2 fází",
+              "robustní, levný, téměř bez údržby",
+              "přesná poloha jen s dalším vybavením"
+            ],
+            [
+              "krokový",
+              "počtem impulzů (bez snímače)",
+              "levné polohování",
+              "při přetížení ztratí krok a nepozná to"
+            ],
+            [
+              "servomotor",
+              "servozesilovač + enkodér",
+              "přesný, dynamický, hlídá polohu",
+              "dražší, složitější nastavení"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Asynchronní motor má 2 pólové dvojice a je připojen na síť 50 Hz. Jaké jsou synchronní otáčky a přibližně skutečné?",
+          "answer": "n_s = 60 · f / p = 60 · 50 / 2 = **1 500 ot/min**. Rotor se kvůli skluzu točí o něco pomaleji, typicky kolem 1 400–1 450 ot/min (přesně udává štítek motoru)."
+        },
+        {
+          "type": "heading",
+          "text": "Tekutinové pohony vedle sebe"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Pneumatika",
+            "Hydraulika"
+          ],
+          "rows": [
+            [
+              "médium",
+              "stlačený vzduch",
+              "olej"
+            ],
+            [
+              "běžný tlak",
+              "asi 6 bar",
+              "desítky až stovky bar"
+            ],
+            [
+              "síla",
+              "malá až střední",
+              "velmi velká"
+            ],
+            [
+              "rychlost",
+              "vysoká",
+              "nižší, ale dobře řiditelná"
+            ],
+            [
+              "přesnost polohy",
+              "malá (vzduch je stlačitelný)",
+              "dobrá (olej je téměř nestlačitelný)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybírat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Jaký pohyb potřebuji – otáčivý, nebo přímočarý?",
+            "Jaká síla nebo moment? Velká síla → hydraulika, velký moment → motor s převodovkou.",
+            "Je potřeba přesná poloha? Ano → servomotor (nebo krokový u malých zatížení).",
+            "Stačí dva stavy (vysunuto / zasunuto)? → pneumatický válec s rozvaděčem.",
+            "Jak se akční člen spíná? Motor stykačem nebo měničem, ventil cívkou z výstupu PLC."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Osa portálu musí najet na libovolnou polohu s přesností 0,05 mm a hlásit, kdyby ji něco zablokovalo. Jaký pohon vybereš a proč?",
+          "answer": "**Servomotor** s enkodérem. Enkodér polohu stále měří, takže pohon pozná zablokování a přesně dojede. Krokový motor by bez snímače ztrátu kroku nepoznal."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Krokový motor ví vždy přesně, kde je, protože počítá kroky.",
+          "right": "Krokový motor jen předpokládá, že udělal každý krok. Při přetížení může krok ztratit a bez snímače se to nedozví.",
+          "why": "Bez enkodéru pracuje v otevřené smyčce – řízení nemá zpětnou vazbu o skutečné poloze."
+        },
+        {
+          "type": "summary",
+          "text": "Volba akčního členu závisí na druhu pohybu, síle, rychlosti a přesnosti. Asynchronní motor je tahoun průmyslu (n_s = 60f/p), servomotor přesně polohuje v uzavřené smyčce, pneumatika je rychlá a lehká, hydraulika silná."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co je akční člen?",
+      "options": [
+        "prvek, který provede zásah do procesu",
+        "prvek, který měří veličinu",
+        "program v PLC",
+        "porucha procesu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak změníš směr otáčení trojfázového asynchronního motoru?",
+      "options": [
+        "prohozením dvou fází",
+        "snížením napětí",
+        "přepólováním jedné fáze na nulák",
+        "nijak, točí se jen jedním směrem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Krokový motor má krok 1,8°. Kolik kroků udělá na jednu celou otáčku?",
+      "answers": [
+        "200"
+      ],
+      "hints": [
+        "Celá otáčka má 360°."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Synchronní otáčky asynchronního motoru při 50 Hz a 1 pólové dvojici v ot/min =",
+      "answers": [
+        "3000",
+        "3 000"
+      ],
+      "hints": [
+        "Použij n_s = 60 · f / p."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Servomotor pracuje v uzavřené smyčce, protože má snímač polohy.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Rotor asynchronního motoru se při zatížení točí přesně synchronními otáčkami.",
+      "answer": false,
+      "explanation": "Vždy je tu skluz: rotor je o něco pomalejší než pole."
+    },
+    {
+      "type": "match",
+      "question": "Spoj akční člen s typickým použitím.",
+      "pairs": [
+        [
+          "hydraulický válec",
+          "lis s velkou silou"
+        ],
+        [
+          "pneumatický válec",
+          "rychlé vyhazování lehkých dílů"
+        ],
+        [
+          "servomotor",
+          "přesná osa CNC stroje"
+        ],
+        [
+          "asynchronní motor",
+          "čerpadlo, ventilátor"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se plynule mění otáčky asynchronního motoru?",
+      "options": [
+        "frekvenčním měničem",
+        "stykačem",
+        "relé",
+        "koncovým spínačem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Proč nepřipojíš motor 400 V přímo na výstup PLC?",
+      "options": [
+        "výstup PLC unese jen malý proud a pracuje s malým napětím",
+        "motor by se točil opačně",
+        "PLC by ztratilo program"
+      ],
+      "answer": 0,
+      "hints": [
+        "Porovnej proud, který potřebuje motor, s tím, co dá výstup PLC."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje, když PLC rozbíhá motor 400 V přes stykač.",
+      "items": [
+        "PLC sepne výstup",
+        "proud teče cívkou stykače",
+        "kotva stykače sepne hlavní kontakty",
+        "motor dostane napětí a roztočí se"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj spínací prvek s úkolem.",
+      "pairs": [
+        [
+          "relé",
+          "spíná malé proudy řídicích obvodů"
+        ],
+        [
+          "stykač",
+          "spíná silové obvody motorů"
+        ],
+        [
+          "frekvenční měnič",
+          "mění otáčky motoru"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Krokový motor s krokem 1,8° má otočit hřídel o 180°. Počet impulzů =",
+      "answers": [
+        "100"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej krokový motor a servomotor.",
+      "answer": "Krokový motor se otáčí po krocích podle počtu impulzů, obvykle bez snímače polohy, takže při přetížení může ztratit krok a nepozná to. Servomotor má enkodér a servozesilovač, polohu stále měří a dorovnává v uzavřené smyčce – je přesnější a dynamičtější, ale dražší."
+    },
+    {
+      "type": "open",
+      "question": "Kdy zvolíš pneumatický a kdy hydraulický pohon?",
+      "answer": "Pneumatický pro rychlé, časté pohyby s malou až střední silou, kde stačí dvě krajní polohy (manipulace, balení). Hydraulický tam, kde je potřeba velká síla a dobře řiditelný pohyb (lisy, zvedání), protože olej má vysoký tlak a je téměř nestlačitelný."
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "rizeni-a-regulace",
+  "title": "Řízení: ovládání a regulace",
+  "emoji": "🎛️",
+  "explanations": [
+    {
+      "title": "Sprcha a topení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ráno pouštíš sprchu. Otočíš kohoutkem, rukou zkusíš vodu, je studená, tak přitočíš teplou. Znovu zkusíš a doladíš. Právě jsi **regulovala/reguloval**: měříš, porovnáváš s tím, co chceš, a zasahuješ."
+        },
+        {
+          "type": "text",
+          "text": "Stroje v továrně dělají totéž bez člověka. Udržují teplotu pece, otáčky vřetena nebo tlak v potrubí. Abys stroje uměl/a nastavit a opravit, musíš rozlišit dva základní způsoby řízení: **ovládání** a **regulaci**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Řízení",
+          "definition": "Cílené působení na nějaké zařízení tak, aby dělalo to, co chceme. Je to společný název pro ovládání i regulaci.",
+          "example": "Zapnutí pásového dopravníku, udržování teploty v troubě."
+        },
+        {
+          "type": "term",
+          "term": "Řízená soustava",
+          "definition": "Zařízení nebo proces, který řídíme. Někdy se jí říká objekt řízení.",
+          "example": "Pec, nádrž s vodou, motor."
+        },
+        {
+          "type": "term",
+          "term": "Ovládání (řízení v otevřené smyčce)",
+          "definition": "Řídicí člen pošle povel a dál nekontroluje, jak to dopadlo. Informace jde jen jedním směrem.",
+          "example": "Pračka podle programu topí 20 minut, ať je voda jakkoli teplá. Semafor přepíná podle času."
+        },
+        {
+          "type": "term",
+          "term": "Zpětná vazba",
+          "definition": "Informace o skutečném stavu, která se vrací zpět k řídicímu členu. Ten ji porovná s tím, co chceme.",
+          "example": "Ruka pod sprchou „hlásí“ hlavě, jak je voda teplá."
+        },
+        {
+          "type": "term",
+          "term": "Regulace (řízení v uzavřené smyčce)",
+          "definition": "Řízení se zpětnou vazbou: stav se stále měří, porovnává s požadovaným a podle rozdílu se zasahuje.",
+          "example": "Termostat v obýváku zapíná kotel, dokud není 21 °C."
+        },
+        {
+          "type": "heading",
+          "text": "Co se v regulaci děje"
+        },
+        {
+          "type": "term",
+          "term": "Regulovaná veličina (y)",
+          "definition": "Veličina, kterou chceme udržet na určité hodnotě. Tu měříme.",
+          "example": "Teplota v místnosti."
+        },
+        {
+          "type": "term",
+          "term": "Žádaná hodnota (w)",
+          "definition": "Hodnota, na které chceme regulovanou veličinu udržet. Nastavuje ji člověk.",
+          "example": "21 °C nastavených na termostatu."
+        },
+        {
+          "type": "term",
+          "term": "Regulační odchylka (e)",
+          "definition": "Rozdíl mezi žádanou a skutečnou hodnotou: `e = w − y`.",
+          "example": "Chceme 21 °C, je 19 °C → e = 21 − 19 = 2 °C."
+        },
+        {
+          "type": "term",
+          "term": "Akční veličina (u)",
+          "definition": "Zásah regulátoru do soustavy, kterým mění regulovanou veličinu.",
+          "example": "Výkon kotle, otevření ventilu."
+        },
+        {
+          "type": "term",
+          "term": "Porucha (z)",
+          "definition": "Vliv zvenčí, který regulovanou veličinu nechtěně mění a my ho neřídíme.",
+          "example": "Otevřené okno, mráz venku, víc lidí v místnosti."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Snímač změří skutečnou teplotu y",
+              "Regulátor spočítá odchylku e = w − y",
+              "Regulátor nastaví akční zásah u",
+              "Topení změní teplotu v místnosti",
+              "Porucha (okno) teplotu zase změní"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi koloběh šipkami. Všimni si, že se nikdy nezastaví: regulace běží pořád dokola, proto „smyčka“."
+        },
+        {
+          "type": "heading",
+          "text": "Proč nestačí ovládání"
+        },
+        {
+          "type": "text",
+          "text": "Ovládání je levné a jednoduché. Neumí ale reagovat na poruchu. Pračka topí 20 minut, i když do ní napustíš studenější vodu než obvykle, a výsledek je horší. Regulace poruchu „uvidí“ přes zpětnou vazbu a vyrovná ji."
+        },
+        {
+          "type": "example",
+          "question": "Termostat má žádanou hodnotu 22 °C, teploměr ukazuje 23,5 °C. Jaká je regulační odchylka a co regulátor udělá?",
+          "answer": "e = w − y = 22 − 23,5 = **−1,5 °C**. Odchylka je záporná, je tedy tepleji, než chceme. Regulátor topení **ubere nebo vypne**."
+        },
+        {
+          "type": "example",
+          "question": "Rozhodni: a) vysoušeč rukou běží 30 s po zmáčknutí tlačítka, b) tempomat v autě drží 90 km/h i do kopce.",
+          "answer": "a) **ovládání** – nikdo neměří, jestli máš suché ruce. b) **regulace** – tempomat měří rychlost (zpětná vazba) a do kopce přidá plyn, protože kopec je porucha."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Automatická pračka je regulace, protože běží sama.",
+          "right": "Samočinnost neznamená regulaci. Rozhoduje, jestli se výsledek měří a porovnává. Časový program bez měření je ovládání.",
+          "why": "Regulace = uzavřená smyčka se zpětnou vazbou. Bez měření skutečného stavu je smyčka otevřená."
+        },
+        {
+          "type": "summary",
+          "text": "Ovládání pošle povel bez kontroly (otevřená smyčka). Regulace měří regulovanou veličinu y, porovná ji s žádanou hodnotou w, z odchylky e = w − y určí akční zásah u a tím vyrovnává poruchy (uzavřená smyčka)."
+        }
+      ]
+    },
+    {
+      "title": "Blokové schéma",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Technik, který ladí linku, si systém nekreslí jako fotku stroje. Kreslí **blokové schéma**: obdélníky a šipky. Z něj na první pohled pozná, jestli jde o ovládání nebo regulaci a kde hledat chybu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Blokové schéma",
+          "definition": "Obrázek z obdélníků (bloků) a šipek. Blok je část systému, šipka je signál, který teče mezi částmi.",
+          "example": "Blok „regulátor“ → šipka „akční veličina“ → blok „pec“."
+        },
+        {
+          "type": "term",
+          "term": "Signál",
+          "definition": "Informace přenášená mezi bloky, většinou elektrické napětí nebo proud, jehož velikost odpovídá nějaké veličině.",
+          "example": "Snímač teploty posílá 4–20 mA podle teploty."
+        },
+        {
+          "type": "term",
+          "term": "Řízená soustava",
+          "definition": "Blok, který představuje řízené zařízení (stroj, pec, nádrž).",
+          "example": "Elektrická pec."
+        },
+        {
+          "type": "term",
+          "term": "Řídicí člen (regulátor)",
+          "definition": "Blok, který rozhoduje, jak zasáhnout. V regulaci se mu říká regulátor.",
+          "example": "Termostat, PLC, elektronický regulátor teploty."
+        },
+        {
+          "type": "term",
+          "term": "Akční člen",
+          "definition": "Blok, který zásah fyzicky provede.",
+          "example": "Ventil, stykač topné spirály, motor."
+        },
+        {
+          "type": "term",
+          "term": "Snímač",
+          "definition": "Blok, který měří skutečnou hodnotu a převádí ji na signál.",
+          "example": "Teploměr Pt100."
+        },
+        {
+          "type": "term",
+          "term": "Zpětná vazba",
+          "definition": "Šipka, která vede ze snímače **zpátky** k regulátoru. Uzavírá smyčku.",
+          "example": "Signál teploty jde z pece do regulátoru."
+        },
+        {
+          "type": "heading",
+          "text": "Otevřená smyčka (ovládání)"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🧑",
+            "➡️",
+            "🖥️",
+            "➡️",
+            "⚙️",
+            "➡️",
+            "🔥"
+          ],
+          "caption": "Povel → řídicí člen → akční člen → soustava. Žádná šipka zpět."
+        },
+        {
+          "type": "heading",
+          "text": "Uzavřená smyčka (regulace)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na vstupu je **žádaná hodnota w**.",
+            "**Porovnávací člen** (kroužek se znaménky) od ní odečte skutečnou hodnotu y: vznikne **odchylka e = w − y**.",
+            "**Regulátor** podle e vypočte **akční veličinu u**.",
+            "**Akční člen** zasáhne do **soustavy**.",
+            "Do soustavy působí i **porucha z**.",
+            "**Snímač** měří y a vede ji zpětnou vazbou zpět do porovnávacího členu."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka",
+            "Název",
+            "Příklad (pec)"
+          ],
+          "rows": [
+            [
+              "w",
+              "žádaná hodnota",
+              "200 °C"
+            ],
+            [
+              "y",
+              "regulovaná veličina",
+              "skutečná teplota"
+            ],
+            [
+              "e",
+              "regulační odchylka",
+              "w − y"
+            ],
+            [
+              "u",
+              "akční veličina",
+              "výkon topení"
+            ],
+            [
+              "z",
+              "porucha",
+              "otevřená dvířka"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "ovládání",
+              "regulace"
+            ],
+            "items": [
+              {
+                "text": "semafor řízený časem",
+                "group": 0
+              },
+              {
+                "text": "termostat kotle",
+                "group": 1
+              },
+              {
+                "text": "tempomat",
+                "group": 1
+              },
+              {
+                "text": "časovač osvětlení schodiště",
+                "group": 0
+              },
+              {
+                "text": "hladina v nádrži s plovákem a ventilem",
+                "group": 1
+              },
+              {
+                "text": "pračka topící pevnou dobu",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď příklady. U každého se zeptej: měří se výsledek a vrací se zpátky?"
+        },
+        {
+          "type": "example",
+          "question": "Nakresli slovy blokové schéma regulace hladiny v nádrži s plovákem, který přivírá přítokový ventil (jako ve WC nádržce).",
+          "answer": "Žádaná hodnota w = výška, na kterou je nastavený plovák. Snímač = **plovák** (měří hladinu y). Regulátor + akční člen = **páka s ventilem**. Soustava = nádrž. Porucha z = spláchnutí (odtok). Plovák klesne → ventil se otevře → voda přitéká → hladina stoupá → ventil se zavře. Šipka zpět vede přes plovák, smyčka je **uzavřená**."
+        },
+        {
+          "type": "example",
+          "question": "V peci je w = 850 °C a y = 820 °C. Pak se otevřou dvířka a y klesne na 790 °C. Jak se změní odchylka?",
+          "answer": "Před otevřením: e = 850 − 820 = 30 °C. Po otevření (porucha): e = 850 − 790 = **60 °C**. Odchylka vzrostla, regulátor proto zvýší výkon topení."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Odchylka je e = y − w (skutečná minus žádaná).",
+          "right": "V regulační technice se odchylka zavádí jako e = w − y.",
+          "why": "Kladná odchylka pak znamená „je málo, přidej“. Při opačném znaménku by regulátor zasahoval obráceně."
+        },
+        {
+          "type": "summary",
+          "text": "V blokovém schématu má regulace šipku zpětné vazby ze snímače do porovnávacího členu, ovládání ji nemá. Regulátor pracuje s odchylkou e = w − y a přes akční člen vyrovnává poruchy z."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co odlišuje regulaci od ovládání?",
+      "options": [
+        "zpětná vazba – měří se skutečný stav",
+        "to, že běží samo bez člověka",
+        "použití elektrického proudu",
+        "počet motorů"
+      ],
+      "answer": 0,
+      "explanation": "Regulace je uzavřená smyčka se zpětnou vazbou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Semafor, který přepíná světla jen podle nastaveného času, je příkladem ovládání.",
+      "answer": true,
+      "explanation": "Neměří provoz, smyčka je otevřená."
+    },
+    {
+      "type": "input",
+      "question": "Žádaná hodnota je 60 °C, skutečná 52 °C. Regulační odchylka e ve °C =",
+      "answers": [
+        "8",
+        "+8"
+      ],
+      "hints": [
+        "Použij e = w − y.",
+        "Žádaná je w, skutečná je y."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Žádaná hodnota tlaku je 6 bar, skutečný tlak 6,5 bar. Odchylka e v barech =",
+      "answers": [
+        "-0,5",
+        "−0,5",
+        "-0.5"
+      ],
+      "hints": [
+        "Odečti skutečnou hodnotu od žádané.",
+        "Skutečná je větší než žádaná, znaménko tedy bude…?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s názvem.",
+      "pairs": [
+        [
+          "w",
+          "žádaná hodnota"
+        ],
+        [
+          "y",
+          "regulovaná veličina"
+        ],
+        [
+          "e",
+          "regulační odchylka"
+        ],
+        [
+          "u",
+          "akční veličina"
+        ],
+        [
+          "z",
+          "porucha"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je v regulaci teploty v místnosti poruchou?",
+      "options": [
+        "otevřené okno",
+        "termostat",
+        "radiátor",
+        "nastavených 21 °C"
+      ],
+      "answer": 0,
+      "explanation": "Porucha je vnější vliv, který regulovanou veličinu nechtěně mění."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu signálu v regulační smyčce, začni žádanou hodnotou.",
+      "items": [
+        "žádaná hodnota w",
+        "porovnání (odchylka e)",
+        "regulátor",
+        "akční člen",
+        "řízená soustava",
+        "snímač (zpět k porovnání)"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ovládání umí samo vyrovnat poruchu, kterou nikdo nečekal.",
+      "answer": false,
+      "explanation": "Ovládání výsledek neměří, takže o poruše neví."
+    },
+    {
+      "type": "choice",
+      "question": "Který prvek ve schématu měří regulovanou veličinu?",
+      "options": [
+        "snímač",
+        "akční člen",
+        "regulátor",
+        "porovnávací člen"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Tempomat drží rychlost 90 km/h, auto vjede do kopce. Co se stane?",
+      "options": [
+        "rychlost klesne, odchylka je kladná, tempomat přidá plyn",
+        "tempomat nic nepozná",
+        "odchylka je záporná, tempomat ubere"
+      ],
+      "answer": 0,
+      "hints": [
+        "Spočítej e = w − y, když y klesne pod 90."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Přiřaď k regulaci teploty pece.",
+      "pairs": [
+        [
+          "snímač",
+          "termočlánek"
+        ],
+        [
+          "akční člen",
+          "stykač topné spirály"
+        ],
+        [
+          "regulátor",
+          "regulátor teploty / PLC"
+        ],
+        [
+          "řízená soustava",
+          "pec"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi ovládáním a regulací a uveď ke každému příklad z praxe.",
+      "answer": "Ovládání je řízení v otevřené smyčce: povel se pošle a výsledek se nekontroluje (časový spínač světla). Regulace je uzavřená smyčka: snímač měří regulovanou veličinu, regulátor ji porovná s žádanou hodnotou a podle odchylky zasahuje (termostat kotle)."
+    },
+    {
+      "type": "open",
+      "question": "Popiš blokové schéma regulačního obvodu a co dělá každý blok.",
+      "answer": "Žádaná hodnota w jde do porovnávacího členu, kde se odečte skutečná hodnota y a vznikne odchylka e = w − y. Regulátor z ní určí akční veličinu u, akční člen zasáhne do soustavy, na kterou působí i porucha z. Snímač měří y a zpětnou vazbou ji vrací do porovnávacího členu."
+    }
+  ]
+}

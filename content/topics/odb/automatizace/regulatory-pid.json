@@ -1,0 +1,460 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "regulatory-pid",
+  "title": "Regulátory P, PI, PID",
+  "emoji": "🎛️",
+  "explanations": [
+    {
+      "title": "Řidič a tempomat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jedeš autem s tempomatem nastaveným na 90 km/h. Přijde kopec a auto zpomalí. Tempomat přidá plyn – a čím víc auto zpomalilo, tím víc přidá. Přesně tak pracuje **regulátor**: porovnává, co chceš, s tím, co je, a podle rozdílu zasahuje."
+        },
+        {
+          "type": "text",
+          "text": "Regulátory P, PI a PID řídí teplotu v pecích, tlak v potrubí, otáčky motorů, hladinu v nádržích. Rozdíl mezi nimi je v tom, **jak** chytře reagují."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Žádaná hodnota w",
+          "definition": "Hodnota, které chceme dosáhnout.",
+          "example": "Tempomat nastavený na 90 km/h."
+        },
+        {
+          "type": "term",
+          "term": "Regulovaná veličina y",
+          "definition": "Skutečná změřená hodnota toho, co řídíme.",
+          "example": "Auto právě jede 85 km/h."
+        },
+        {
+          "type": "term",
+          "term": "Regulační odchylka e",
+          "definition": "Rozdíl mezi tím, co chceme, a tím, co je: `e = w − y`.",
+          "example": "e = 90 − 85 = 5 km/h."
+        },
+        {
+          "type": "term",
+          "term": "Akční veličina u",
+          "definition": "To, čím regulátor zasahuje do děje – výstup regulátoru.",
+          "example": "Míra sešlápnutí plynu."
+        },
+        {
+          "type": "heading",
+          "text": "Tři složky regulátoru"
+        },
+        {
+          "type": "term",
+          "term": "Složka P (proporcionální)",
+          "definition": "Zásah je **úměrný odchylce**: `u = Kp · e`. Číslo **Kp** je zesílení: čím je větší, tím silněji regulátor reaguje.",
+          "example": "Auto zpomalí o 5 km/h → přidá trochu plynu; o 20 km/h → přidá hodně."
+        },
+        {
+          "type": "term",
+          "term": "Trvalá regulační odchylka",
+          "definition": "Odchylka, která u samotného P regulátoru zůstane i po ustálení. Regulátor potřebuje nenulovou odchylku, aby vůbec něco dělal.",
+          "example": "Do kopce se tempomat P ustálí na 88 km/h místo 90."
+        },
+        {
+          "type": "term",
+          "term": "Složka I (integrační)",
+          "definition": "Sčítá odchylku v čase. Dokud odchylka trvá, zásah pořád roste – proto I odstraní trvalou odchylku. Jak rychle, určuje **integrační časová konstanta Ti**.",
+          "example": "Auto jede pořád o 2 km/h pomaleji → plyn se postupně přidává, až je to přesně 90."
+        },
+        {
+          "type": "term",
+          "term": "Složka D (derivační)",
+          "definition": "Reaguje na **rychlost změny** odchylky. Zasáhne hned, když se něco začne rychle měnit, ještě než je odchylka velká. Sílu určuje **derivační časová konstanta Td**. Sama se nepoužívá.",
+          "example": "Auto začne prudce zpomalovat → D přidá plyn hned na začátku."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se regulátory chovají"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Regulátor",
+            "Výhoda",
+            "Nevýhoda"
+          ],
+          "rows": [
+            [
+              "P",
+              "jednoduchý, rychlý",
+              "trvalá regulační odchylka"
+            ],
+            [
+              "PI",
+              "odchylku odstraní",
+              "pomalejší, sklon k překmitu"
+            ],
+            [
+              "PID",
+              "rychlý a přesný",
+              "citlivý na šum měření, složitější nastavení"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Překmit",
+          "definition": "Regulovaná veličina přeskočí žádanou hodnotu a pak se k ní vrací.",
+          "example": "Chceš 200 °C, pec vystoupá na 215 °C a pak klesne na 200 °C."
+        },
+        {
+          "type": "example",
+          "question": "Regulátor P má Kp = 2. Žádaná teplota je 60 °C, skutečná 55 °C. Jak velký je zásah u (v %)?",
+          "answer": "Odchylka e = w − y = 60 − 55 = 5. Zásah u = Kp · e = 2 · 5 = **10 %** (navíc k výchozímu nastavení)."
+        },
+        {
+          "type": "example",
+          "question": "S P regulátorem se pec ustálí na 195 °C místo 200 °C. Co změníš?",
+          "answer": "Zbylých 5 °C je trvalá regulační odchylka typická pro P. Přidám **složku I** (z P udělám PI). I bude zásah zvyšovat, dokud odchylka nebude nulová."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Trvalou odchylku u P regulátoru odstraním tím, že Kp hodně zvětším.",
+          "right": "Větší Kp odchylku jen zmenší; odstraní ji až složka I.",
+          "why": "P regulátor potřebuje nenulovou odchylku, aby dával nenulový zásah. Příliš velké Kp navíc vede ke kmitání až nestabilitě."
+        },
+        {
+          "type": "summary",
+          "text": "P zasahuje úměrně odchylce, ale nechá trvalou odchylku. I ji odstraní, protože sčítá odchylku v čase. D reaguje na rychlost změny a tlumí překmit. PID spojuje všechny tři."
+        }
+      ]
+    },
+    {
+      "title": "Na grafu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V termostatu doma je nejjednodušší regulace: kotel buď topí naplno, nebo netopí vůbec. Teplota pak kolísá nahoru a dolů. V průmyslu to často nestačí – lisovací forma potřebuje teplotu přesně a bez kolísání. Tady se uplatní spojitý regulátor P, PI nebo PID."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Regulační obvod",
+          "definition": "Uzavřená smyčka: snímač měří veličinu, regulátor ji porovná se žádanou hodnotou a akční člen podle toho zasáhne do soustavy. Výsledek se znovu měří.",
+          "example": "Čidlo teploty → regulátor → topné těleso → pec → čidlo."
+        },
+        {
+          "type": "term",
+          "term": "Odchylka e",
+          "definition": "`e = w − y`: **žádaná hodnota w** (čeho chceme dosáhnout) minus **regulovaná veličina y** (co snímač skutečně naměřil). Výstupu regulátoru se říká **akční veličina u**.",
+          "example": "Chceš 50 °C, je 47 °C → e = 3 °C."
+        },
+        {
+          "type": "term",
+          "term": "Dvoupolohový regulátor",
+          "definition": "Regulátor, jehož výstup má jen dva stavy: zapnuto a vypnuto. Má **hysterezi** – zapíná a vypíná při trochu odlišných hodnotách, aby nespínal neustále.",
+          "example": "Termostat: pod 20,5 °C zapne, nad 21,5 °C vypne."
+        },
+        {
+          "type": "term",
+          "term": "Spojitý regulátor",
+          "definition": "Regulátor, jehož výstup se mění plynule v celém rozsahu, např. 0–100 %.",
+          "example": "Ventil otevřený na 37 %."
+        },
+        {
+          "type": "term",
+          "term": "Přechodová charakteristika",
+          "definition": "Graf, jak se výstup chová v čase, když se vstup najednou skokem změní. Podle ní se posuzují regulátory i soustavy.",
+          "example": "Skokem změníš žádanou teplotu z 20 °C na 50 °C a sleduješ křivku teploty."
+        },
+        {
+          "type": "term",
+          "term": "Složky P, I, D",
+          "definition": "Spojitý regulátor skládá zásah ze tří částí. **P** (proporcionální) je úměrná odchylce se zesílením **Kp**. **I** (integrační) sčítá odchylku v čase, její rychlost určuje konstanta **Ti**. **D** (derivační) reaguje na rychlost změny odchylky, sílu určuje **Td**.",
+          "example": "Regulátor PI má jen složky P a I."
+        },
+        {
+          "type": "term",
+          "term": "Trvalá regulační odchylka",
+          "definition": "Odchylka, která zůstane i po ustálení, protože regulátor s pouhou složkou P potřebuje nenulovou odchylku, aby vůbec zasahoval.",
+          "example": "Chceš 200 °C, pec se ustálí na 196 °C."
+        },
+        {
+          "type": "term",
+          "term": "Překmit",
+          "definition": "Regulovaná veličina přejde přes žádanou hodnotu a pak se k ní vrací. Udává se často v % žádané hodnoty.",
+          "example": "Žádaná 1,0 m, hladina vystoupá na 1,2 m."
+        },
+        {
+          "type": "heading",
+          "text": "Co uvidíš na grafu po skokové změně"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Regulátor",
+            "Průběh regulované veličiny"
+          ],
+          "rows": [
+            [
+              "dvoupolohový",
+              "kolísá kolem žádané hodnoty (pila)"
+            ],
+            [
+              "P",
+              "vystoupá a ustálí se pod žádanou hodnotou – trvalá odchylka"
+            ],
+            [
+              "PI",
+              "dosáhne žádané hodnoty, často s překmitem a pár kmity"
+            ],
+            [
+              "PID",
+              "dosáhne žádané hodnoty rychleji a s menším překmitem"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "P",
+              "I",
+              "D"
+            ],
+            "items": [
+              {
+                "text": "zásah úměrný velikosti odchylky",
+                "group": 0
+              },
+              {
+                "text": "odstraní trvalou odchylku",
+                "group": 1
+              },
+              {
+                "text": "reaguje na rychlost změny",
+                "group": 2
+              },
+              {
+                "text": "konstanta Ti",
+                "group": 1
+              },
+              {
+                "text": "konstanta Td",
+                "group": 2
+              },
+              {
+                "text": "zesílení Kp",
+                "group": 0
+              },
+              {
+                "text": "zesiluje šum měření",
+                "group": 2
+              },
+              {
+                "text": "sčítá odchylku v čase",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Přiřaď vlastnosti ke složkám. Kterou vlastnost si spleteš, tu si v tabulce výše přečti znovu."
+        },
+        {
+          "type": "heading",
+          "text": "Rovnice PID"
+        },
+        {
+          "type": "text",
+          "text": "Výstup PID regulátoru je součet tří částí: `u = Kp · ( e + (1/Ti) · ∫e dt + Td · de/dt )`. První člen je P, druhý I (integrál = součet odchylky v čase), třetí D (derivace = rychlost změny)."
+        },
+        {
+          "type": "heading",
+          "text": "Nastavení regulátoru krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Začni jen s P: vypni I (Ti velmi velké) a D (Td = 0).",
+            "Zvyšuj Kp, dokud odezva není dost rychlá, ale bez trvalého kmitání.",
+            "Přidej I: postupně zmenšuj Ti, až zmizí trvalá odchylka; když se objeví velký překmit, vrať Ti zpátky.",
+            "Je-li soustava pomalá a překmit vadí, přidej malé D.",
+            "Vyzkoušej skokovou změnu žádané hodnoty a sleduj přechodovou charakteristiku."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Existují i výpočetní metody nastavení (např. Zieglerova–Nicholsova) a mnohé regulátory mají **autotuning**, který konstanty odhadne sám."
+        },
+        {
+          "type": "example",
+          "question": "Termostat má žádanou hodnotu 21 °C a hysterezi ±0,5 °C. Kdy kotel zapne a kdy vypne?",
+          "answer": "Spodní mez: 21 − 0,5 = **20,5 °C** → zapne. Horní mez: 21 + 0,5 = **21,5 °C** → vypne. Mezi nimi drží svůj stav."
+        },
+        {
+          "type": "example",
+          "question": "Na grafu regulace hladiny vidíš: hladina stoupne na 1,2 m, klesne na 0,95 m a ustálí se na 1,0 m (žádaná 1,0 m). Jaký je překmit v procentech žádané hodnoty?",
+          "answer": "Překmit = maximum − žádaná = 1,2 − 1,0 = 0,2 m. V procentech: 0,2 / 1,0 · 100 = **20 %**. Ustálení přesně na žádané hodnotě ukazuje, že regulátor má složku I."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Složka D zlepší každou regulaci, takže ji vždy zapnu naplno.",
+          "right": "D se přidává opatrně a jen tam, kde pomůže, např. u pomalých soustav.",
+          "why": "D reaguje na rychlost změny, a proto silně zesiluje šum měření. Výstup pak „cuká“ a opotřebovává akční člen."
+        },
+        {
+          "type": "summary",
+          "text": "Dvoupolohový regulátor jen zapíná a vypíná s hysterezí. Spojitý P nechá trvalou odchylku, PI ji odstraní, PID je navíc rychlejší s menším překmitem. Regulátor se posuzuje podle přechodové charakteristiky."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Žádaná hodnota w = 80 °C, skutečná y = 74 °C. Regulační odchylka e (ve °C) =",
+      "answers": [
+        "6"
+      ],
+      "hints": [
+        "Odchylka je žádaná minus skutečná."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "P regulátor má Kp = 3 a odchylka je 4. Velikost zásahu u =",
+      "answers": [
+        "12"
+      ],
+      "hints": [
+        "U P regulátoru se odchylka násobí zesílením."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který regulátor má trvalou regulační odchylku?",
+      "options": [
+        "P",
+        "PI",
+        "PID"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Která složka odstraní trvalou regulační odchylku?",
+      "options": [
+        "integrační",
+        "proporcionální",
+        "derivační"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hledej složku, jejíž zásah roste, dokud odchylka trvá."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Derivační složka reaguje na rychlost změny odchylky.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Regulátor D se běžně používá samostatně.",
+      "answer": false,
+      "explanation": "Při ustálené odchylce je derivace nulová, D by nezasahoval. Proto se používá jen v kombinaci (PD, PID)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s významem.",
+      "pairs": [
+        [
+          "w",
+          "žádaná hodnota"
+        ],
+        [
+          "y",
+          "regulovaná veličina"
+        ],
+        [
+          "e",
+          "regulační odchylka"
+        ],
+        [
+          "u",
+          "akční veličina"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je hystereze u dvoupolohového regulátoru?",
+      "options": [
+        "rozdíl mezi hodnotou zapnutí a vypnutí",
+        "zpoždění snímače",
+        "maximální výkon topení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části regulačního obvodu ve směru signálu (od měření).",
+      "items": [
+        "snímač změří veličinu",
+        "regulátor spočítá odchylku a zásah",
+        "akční člen zasáhne",
+        "soustava změní regulovanou veličinu"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Žádaná hodnota je 100 °C, teplota vystoupala nejvýš na 110 °C. Překmit v procentech =",
+      "answers": [
+        "10"
+      ],
+      "hints": [
+        "Překmit je maximum minus žádaná hodnota.",
+        "Pak ho vyděl žádanou hodnotou a vynásob 100."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je přechodová charakteristika?",
+      "options": [
+        "odezva výstupu na skokovou změnu vstupu",
+        "závislost výkonu na napětí",
+        "tabulka nastavení regulátoru"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Termostat s hysterezí, který kotel jen zapíná a vypíná, je dvoupolohový regulátor.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi regulátorem P a PI.",
+      "answer": "P regulátor zasahuje úměrně odchylce (u = Kp · e), a proto mu zůstává trvalá regulační odchylka. PI má navíc integrační složku, která odchylku sčítá v čase a zvyšuje zásah, dokud odchylka nezmizí; bývá ale pomalejší a má sklon k překmitu."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak bys postupně nastavil PID regulátor.",
+      "answer": "Začnu jen s P a zvyšuji Kp, dokud odezva není rychlá bez trvalého kmitání. Pak přidám I a zmenšuji Ti, až zmizí trvalá odchylka. Nakonec opatrně přidám D, pokud je potřeba zmenšit překmit, a ověřím vše skokovou změnou žádané hodnoty."
+    }
+  ]
+}

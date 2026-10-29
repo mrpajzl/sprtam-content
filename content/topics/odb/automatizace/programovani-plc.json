@@ -1,0 +1,482 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "programovani-plc",
+  "title": "Programování PLC",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "Start a stop motoru",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na každém stroji je zelené tlačítko START a červené STOP. Stiskneš START, motor se rozběhne a běží, i když tlačítko pustíš. Stiskneš STOP a motor se zastaví. Přesně tohle se v PLC naprogramuje během pár minut – a je to základ skoro každého programu."
+        },
+        {
+          "type": "text",
+          "text": "Připomenutí: **PLC** je průmyslový řídicí počítač. Čte **vstupy** (tlačítka, snímače), vykoná program a podle výsledku nastaví **výstupy** (stykače, ventily, kontrolky)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Kontaktní schéma (LD, Ladder Diagram)",
+          "definition": "Grafický jazyk pro PLC, který vypadá jako elektrické schéma s relé. Vlevo je „napájecí“ svislá čára, vpravo cívka. Když vede cesta přes kontakty, cívka je sepnutá.",
+          "example": "Řádek: kontakt START → cívka MOTOR."
+        },
+        {
+          "type": "term",
+          "term": "Spínací kontakt (NO)",
+          "definition": "V programu `--| |--`. Propustí signál, když je proměnná rovna 1.",
+          "example": "`--| |--` START propustí, když je vstup START zapnutý."
+        },
+        {
+          "type": "term",
+          "term": "Rozpínací kontakt (NC)",
+          "definition": "V programu `--|/|--`. Propustí signál, když je proměnná rovna 0. Odpovídá logické negaci (NOT).",
+          "example": "`--|/|--` PORUCHA propustí, dokud porucha není."
+        },
+        {
+          "type": "term",
+          "term": "Cívka",
+          "definition": "V programu `--( )--`. Zapíše do proměnné výsledek řádku: 1, když k ní vede cesta, jinak 0.",
+          "example": "`--( )--` MOTOR zapne výstup motoru."
+        },
+        {
+          "type": "term",
+          "term": "Samodržení",
+          "definition": "Zapojení, kdy výstup „drží sám sebe“: kontakt výstupu je paralelně k tlačítku START, takže po puštění tlačítka cesta pořád vede.",
+          "example": "Motor běží dál i po puštění START."
+        },
+        {
+          "type": "heading",
+          "text": "Logika v kontaktech"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Funkce",
+            "Jak se zapojí v LD",
+            "Výsledek je 1, když…"
+          ],
+          "rows": [
+            [
+              "AND (a zároveň)",
+              "dva kontakty za sebou (sériově)",
+              "oba propouštějí"
+            ],
+            [
+              "OR (nebo)",
+              "dva kontakty vedle sebe (paralelně)",
+              "propouští aspoň jeden"
+            ],
+            [
+              "NOT (negace)",
+              "rozpínací kontakt",
+              "proměnná je 0"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Program start/stop krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Tlačítko START (spínací v poli) připoj na vstup, např. `%I0.0`.",
+            "Tlačítko STOP zapoj ve skutečnosti jako **rozpínací**, na vstup `%I0.1`. Když není stisknuté, vstup je 1.",
+            "Řádek programu: kontakt START paralelně s kontaktem MOTOR (samodržení), za nimi sériově kontakt STOP, na konci cívka MOTOR `%Q0.0`.",
+            "STOP je v programu **spínací** kontakt `--| |--`: propouští, dokud vstup je 1, tedy dokud STOP nikdo nemačká.",
+            "Stisk STOP → vstup 0 → cesta se přeruší → motor stojí. Totéž se stane při přetržení vodiče."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Proč tak složitě? Kdyby STOP bylo spínací tlačítko a vodič se přetrhl, stisk STOP by nic neudělal a motor by nešel zastavit. Rozpínací STOP je **bezpečný při poruše vodiče**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "STOP tlačítko je rozpínací, tak ho i v programu nakreslím jako rozpínací kontakt `--|/|--`.",
+          "right": "Fyzicky rozpínací STOP se v programu kreslí jako spínací kontakt `--| |--`.",
+          "why": "Nestisknutý rozpínací STOP dává na vstup 1. Rozpínací kontakt v programu by pak cestu přerušil a motor by nešel nikdy spustit."
+        },
+        {
+          "type": "term",
+          "term": "Priorita vypnutí",
+          "definition": "Když jsou stisknuté START i STOP zároveň, motor musí stát. V našem řádku je STOP sériově za celou paralelní větví, takže vyhraje.",
+          "example": "Takovému zapojení se říká samodržení s přednostním vypnutím."
+        },
+        {
+          "type": "heading",
+          "text": "Časovače a čítače"
+        },
+        {
+          "type": "term",
+          "term": "Časovač TON (zpoždění zapnutí)",
+          "definition": "Výstup Q se zapne, až když je vstup IN zapnutý nepřetržitě po nastavený čas PT. Při vypnutí IN se Q hned vypne.",
+          "example": "Ventilátor se zapne 5 s po zapnutí ohřevu."
+        },
+        {
+          "type": "term",
+          "term": "Čítač CTU (čítání nahoru)",
+          "definition": "Každá náběžná hrana na vstupu (změna 0 → 1) zvýší hodnotu CV o 1. Když CV dosáhne předvolby PV, výstup Q se zapne. Vstup R čítač vynuluje.",
+          "example": "Po 12 lahvích na dopravníku se zapne balicí stroj."
+        },
+        {
+          "type": "example",
+          "question": "Napiš logiku: lis smí sjet, jen když obsluha drží obě tlačítka T1 a T2 a zároveň je zavřený kryt (snímač KRYT = 1).",
+          "answer": "Potřebuju AND všech tří. V LD dám tři spínací kontakty T1, T2, KRYT **za sebe** a na konec cívku LIS. Ve ST: `LIS := T1 AND T2 AND KRYT;`"
+        },
+        {
+          "type": "example",
+          "question": "Na dopravníku je snímač krabic. Po 10 krabicích má zablikat kontrolka a čítač se vynuluje tlačítkem RESET. Co nastavíš?",
+          "answer": "Použiju **CTU**: vstup CU = snímač krabic, PV = 10, R = tlačítko RESET. Výstup Q (zapne se při CV = 10) vede na kontrolku. Čítač počítá jen náběžné hrany, takže jedna krabice se nezapočítá víckrát."
+        },
+        {
+          "type": "summary",
+          "text": "V LD: sériově = AND, paralelně = OR, rozpínací kontakt = NOT. Start/stop se dělá samodržením se STOP sériově (přednost vypnutí); fyzicky rozpínací STOP je v programu spínací kontakt. TON zpožďuje, CTU počítá."
+        }
+      ]
+    },
+    {
+      "title": "Jazyky a bloky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Recept na bábovku můžeš zapsat větami, nakreslit jako obrázkový návod nebo jako tabulku kroků. Program pro PLC se také dá zapsat několika způsoby. Mezinárodní norma říká, které to jsou, aby se programátoři domluvili napříč výrobci."
+        },
+        {
+          "type": "text",
+          "text": "Připomenutí: **PLC** je průmyslový řídicí počítač, který v cyklu čte vstupy, vykonává program a zapisuje výstupy."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "IEC 61131-3",
+          "definition": "Mezinárodní norma pro programovací jazyky PLC. Používá ji Siemens, B&R, Beckhoff, Rockwell i další výrobci (s vlastními drobnými odchylkami).",
+          "example": "Program v ST z jednoho prostředí se dá často s malými úpravami přenést jinam."
+        },
+        {
+          "type": "term",
+          "term": "Proměnná typu BOOL",
+          "definition": "Proměnná, která má jen hodnotu TRUE (1) nebo FALSE (0).",
+          "example": "`Motor : BOOL;`"
+        },
+        {
+          "type": "term",
+          "term": "Funkční blok",
+          "definition": "Hotová „krabička“ s vstupy a výstupy, která si pamatuje svůj stav mezi cykly. Patří sem časovače, čítače a klopné obvody.",
+          "example": "Blok TON má vstupy IN, PT a výstupy Q, ET."
+        },
+        {
+          "type": "term",
+          "term": "Náběžná hrana",
+          "definition": "Okamžik, kdy se signál změní z 0 na 1. Sestupná hrana je změna z 1 na 0.",
+          "example": "Stisk tlačítka = náběžná hrana, puštění = sestupná."
+        },
+        {
+          "type": "heading",
+          "text": "Pět jazyků normy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zkratka",
+            "Název",
+            "Jak vypadá",
+            "Kdy se hodí"
+          ],
+          "rows": [
+            [
+              "LD",
+              "kontaktní (žebříčkové) schéma",
+              "kontakty a cívky",
+              "bitová logika, pro elektrikáře"
+            ],
+            [
+              "FBD",
+              "schéma funkčních bloků",
+              "bloky AND, OR spojené čarami",
+              "logika, regulace"
+            ],
+            [
+              "ST",
+              "strukturovaný text",
+              "text podobný Pascalu",
+              "výpočty, smyčky, složité algoritmy"
+            ],
+            [
+              "IL",
+              "seznam instrukcí",
+              "řádky jako assembler",
+              "zastaralý, v nové verzi normy (2013) vyřazen"
+            ],
+            [
+              "SFC",
+              "sekvenční funkční diagram",
+              "kroky a přechody",
+              "postupné děje, sekvence"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "AND v LD",
+                "back": "kontakty v sérii"
+              },
+              {
+                "front": "OR v LD",
+                "back": "kontakty paralelně"
+              },
+              {
+                "front": "NOT v LD",
+                "back": "rozpínací kontakt --|/|--"
+              },
+              {
+                "front": "SR",
+                "back": "klopný obvod s převahou nastavení (SET)"
+              },
+              {
+                "front": "RS",
+                "back": "klopný obvod s převahou nulování (RESET)"
+              },
+              {
+                "front": "TOF",
+                "back": "zpoždění vypnutí"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Než budeš číst dál, otoč si kartičky a zkus si odpověď říct nahlas."
+        },
+        {
+          "type": "heading",
+          "text": "Klopné obvody SR a RS"
+        },
+        {
+          "type": "term",
+          "term": "Klopný obvod (bistabilní prvek)",
+          "definition": "Funkční blok, který si pamatuje stav. Vstup S (set) ho nastaví na 1, vstup R (reset) na 0. Když jsou oba 0, drží poslední stav.",
+          "example": "Náhrada samodržení: S = START, R = STOP."
+        },
+        {
+          "type": "text",
+          "text": "Co když jsou S i R současně 1? U bloku **SR** vyhraje nastavení (výstup 1), u bloku **RS** vyhraje nulování (výstup 0). Pro STOP motoru se volí **RS**, protože vypnutí musí mít přednost."
+        },
+        {
+          "type": "heading",
+          "text": "Časovače a čítače"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Blok",
+            "Co dělá"
+          ],
+          "rows": [
+            [
+              "TON",
+              "zpoždění zapnutí: Q = 1, až IN trvá déle než PT"
+            ],
+            [
+              "TOF",
+              "zpoždění vypnutí: Q = 1 hned s IN, vypne se až PT po vypnutí IN"
+            ],
+            [
+              "TP",
+              "impulz: náběžná hrana IN vyrobí na Q impulz délky PT"
+            ],
+            [
+              "CTU",
+              "čítá nahoru; Q = 1, když CV ≥ PV; R nuluje"
+            ],
+            [
+              "CTD",
+              "čítá dolů; LD nahraje PV do CV; Q = 1, když CV ≤ 0"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ventilátor má po vypnutí stroje dobíhat ještě 30 s. Který časovač použiješ a jak ho nastavíš?",
+          "answer": "Potřebuju, aby výstup zůstal zapnutý ještě nějakou dobu **po vypnutí** vstupu. To je **TOF**: IN = stroj běží, PT = T#30s, Q = ventilátor."
+        },
+        {
+          "type": "example",
+          "question": "Ve ST zapiš start/stop motoru, kde STOP_OK je 1, když STOP není stisknuté.",
+          "answer": "`Motor := (Start OR Motor) AND STOP_OK;` Závorka je paralelní větev se samodržením, AND se STOP_OK je sériový kontakt. Když STOP_OK = 0, výsledek je 0 bez ohledu na START – vypnutí má přednost."
+        },
+        {
+          "type": "mistake",
+          "wrong": "TON a TOF dělají totéž, jen se jinak jmenují.",
+          "right": "TON zpožďuje zapnutí výstupu, TOF zpožďuje jeho vypnutí.",
+          "why": "U TON výstup čeká po zapnutí vstupu. U TOF výstup sepne hned a čeká až po vypnutí vstupu."
+        },
+        {
+          "type": "summary",
+          "text": "IEC 61131-3 má jazyky LD, FBD, ST, SFC a vyřazený IL. Paměť stavu dávají funkční bloky: SR (přednost set), RS (přednost reset), časovače TON, TOF, TP a čítače CTU, CTD."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj zkratku jazyka IEC 61131-3 s popisem.",
+      "pairs": [
+        [
+          "LD",
+          "kontakty a cívky"
+        ],
+        [
+          "FBD",
+          "propojené funkční bloky"
+        ],
+        [
+          "ST",
+          "text podobný Pascalu"
+        ],
+        [
+          "SFC",
+          "kroky a přechody"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v kontaktním schématu zapíše logický součin AND?",
+      "options": [
+        "dva kontakty v sérii",
+        "dva kontakty paralelně",
+        "jeden rozpínací kontakt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Fyzicky rozpínací tlačítko STOP se v programu LD obvykle kreslí jako spínací kontakt.",
+      "answer": true,
+      "explanation": "Nestisknuté rozpínací tlačítko dává na vstup 1; spínací kontakt v programu tedy propouští, dokud STOP nikdo nestiskne."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se STOP tlačítko zapojuje v poli jako rozpínací?",
+      "options": [
+        "při přetržení vodiče se stroj zastaví",
+        "je levnější",
+        "PLC neumí číst spínací kontakty"
+      ],
+      "answer": 0,
+      "hints": [
+        "Představ si, že se přetrhne kabel k tlačítku.",
+        "Co uvidí PLC na vstupu, když vodič nevede?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který blok zapne výstup až poté, co je vstup zapnutý nastavenou dobu?",
+      "options": [
+        "TON",
+        "TOF",
+        "CTU",
+        "TP"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Klopný obvod, u kterého při současném S = 1 a R = 1 vyhraje nulování, se jmenuje:",
+      "options": [
+        "RS",
+        "SR",
+        "TP"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Čítač CTU má PV = 5 a CV = 0. Kolik náběžných hran na vstupu CU musí přijít, aby se zapnul výstup Q?",
+      "answers": [
+        "5"
+      ],
+      "hints": [
+        "Q se zapne, když CV dosáhne PV.",
+        "Každá náběžná hrana přičte jedničku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Který jazyk IEC 61131-3 (zkratkou) byl ve 3. vydání normy z roku 2013 označen jako zastaralý a vyřazen?",
+      "answers": [
+        "IL"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Paralelní spojení dvou spínacích kontaktů v LD odpovídá funkci OR.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje při stisku STOP u motoru se samodržením (STOP v poli rozpínací).",
+      "items": [
+        "obsluha stiskne STOP",
+        "vstup PLC se změní z 1 na 0",
+        "spínací kontakt STOP v programu přeruší cestu",
+        "cívka MOTOR dostane 0",
+        "výstup vypne stykač a motor se zastaví"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Výstup ventilátoru má zůstat zapnutý ještě 1 minutu po vypnutí stroje. Jaký časovač zvolíš?",
+      "options": [
+        "TOF",
+        "TON",
+        "TP"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Ve ST doplň operátor: Motor := (Start OR Motor) ___ Stop_OK;",
+      "answers": [
+        "AND"
+      ],
+      "hints": [
+        "STOP je v LD zapojený sériově za celou větví.",
+        "Jaká logická funkce odpovídá sérii?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Nakresli slovy a vysvětli zapojení start/stop se samodržením v LD.",
+      "answer": "Spínací kontakt START je paralelně s kontaktem samotného výstupu MOTOR. Za touto paralelní dvojicí je sériově kontakt STOP (fyzicky rozpínací tlačítko, v programu spínací kontakt) a na konci cívka MOTOR. Po puštění START drží motor kontakt MOTOR, stisk STOP cestu přeruší a vypnutí má přednost."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej časovače TON, TOF a TP.",
+      "answer": "TON zapne výstup až po uplynutí času PT od zapnutí vstupu. TOF zapne výstup hned a vypne ho až PT po vypnutí vstupu. TP po náběžné hraně vstupu vytvoří na výstupu impulz pevné délky PT."
+    }
+  ]
+}

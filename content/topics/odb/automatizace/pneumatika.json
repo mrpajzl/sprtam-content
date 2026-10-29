@@ -1,0 +1,472 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pneumatika",
+  "title": "Pneumatika",
+  "emoji": "💨",
+  "explanations": [
+    {
+      "title": "Cesta vzduchu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Nafoukni balonek a pusť ho. Vzduch pod tlakem umí konat práci. Na tom stojí **pneumatika**: stlačený vzduch vysouvá písty, upíná díly, přenáší je přísavkami. Najdeš ji skoro v každé výrobní lince, protože je rychlá, levná a čistá."
+        },
+        {
+          "type": "text",
+          "text": "Sledujme jednu molekulu vzduchu od kompresoru až k pístu válce. Po cestě poznáš všechny důležité prvky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tlak",
+          "definition": "Síla, kterou vzduch tlačí na každý kousek plochy: `p = F / S`. V pneumatice se udává v barech: 1 bar = 100 000 Pa = 0,1 MPa. Rozvody v dílnách mají obvykle kolem 6 bar.",
+          "example": "Na manometru u stroje vidíš 6 bar."
+        },
+        {
+          "type": "term",
+          "term": "Kompresor a vzdušník",
+          "definition": "Kompresor nasává vzduch z okolí a stlačuje ho. Vzdušník je tlaková nádoba, ve které se stlačený vzduch hromadí jako zásoba a vyrovnávají se v něm výkyvy tlaku.",
+          "example": "Pístový nebo šroubový kompresor v kompresorovně závodu."
+        },
+        {
+          "type": "term",
+          "term": "Jednotka úpravy vzduchu",
+          "definition": "Sestava u stroje: **filtr** (zachytí nečistoty a vodu – kondenzát), **regulátor tlaku** s manometrem (nastaví pracovní tlak) a někdy **maznice** (přidá do vzduchu jemnou olejovou mlhu).",
+          "example": "Mnoho dnešních prvků je mazaných z výroby a maznici nepotřebuje."
+        },
+        {
+          "type": "heading",
+          "text": "Válce"
+        },
+        {
+          "type": "term",
+          "term": "Pneumatický válec",
+          "definition": "Trubka s pístem a pístnicí. Vzduch tlačí na píst a pístnice se vysune nebo zasune.",
+          "example": "Válec vytlačí krabici z pásu do skluzu."
+        },
+        {
+          "type": "term",
+          "term": "Jednočinný válec",
+          "definition": "Vzduch tlačí jen jedním směrem (obvykle vysouvá). Zpět píst vrátí **pružina**.",
+          "example": "Upínací válec, který jen přitlačí díl."
+        },
+        {
+          "type": "term",
+          "term": "Dvojčinný válec",
+          "definition": "Vzduch se přivádí střídavě na obě strany pístu, takže vysouvá i zasouvá silou.",
+          "example": "Posuv dílů mezi stanicemi."
+        },
+        {
+          "type": "heading",
+          "text": "Rozvaděče – výhybky pro vzduch"
+        },
+        {
+          "type": "term",
+          "term": "Rozvaděč",
+          "definition": "Ventil, který určuje, kam vzduch poteče. Označuje se dvěma čísly: **počet cest/počet poloh**. Cesty jsou přípoje (otvory), polohy jsou stavy, ve kterých může rozvaděč být.",
+          "example": "3/2 = 3 přípoje, 2 polohy. 5/2 = 5 přípojů, 2 polohy."
+        },
+        {
+          "type": "text",
+          "text": "Přípoje se číslují podle normy. Otoč kartičky a zapamatuj si, co které číslo znamená."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "1",
+                "back": "přívod tlakového vzduchu"
+              },
+              {
+                "front": "2 a 4",
+                "back": "pracovní výstupy k válci"
+              },
+              {
+                "front": "3 a 5",
+                "back": "odvětrání (odfuk do okolí)"
+              },
+              {
+                "front": "12, 14",
+                "back": "řídicí přípoje – signál propojí 1 s 2, resp. 1 se 4"
+              }
+            ]
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            "Jednočinný válec ovládá rozvaděč **3/2**: v jedné poloze pustí vzduch 1 → 2 do válce, ve druhé ho vypustí 2 → 3 ven.",
+            "Dvojčinný válec ovládá rozvaděč **5/2**: jedna strana válce se plní, druhá se současně vyfukuje."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Rychlost a logika"
+        },
+        {
+          "type": "term",
+          "term": "Škrticí zpětný ventil",
+          "definition": "Jedním směrem vzduch škrtí (přivře průtok nastavitelným šroubkem), druhým směrem ho pustí volně přes zpětný ventil.",
+          "example": "Šroubkem nastavíš, jak rychle se válec vysouvá."
+        },
+        {
+          "type": "term",
+          "term": "Logické ventily",
+          "definition": "**Dvoutlakový ventil** (funkce A ZÁROVEŇ B) pustí vzduch dál jen při tlaku na obou vstupech. **Střídavý ventil** (funkce NEBO) pustí vzduch z kteréhokoli vstupu.",
+          "example": "Lis se spustí jen při stisku dvou tlačítek oběma rukama → dvoutlakový ventil."
+        },
+        {
+          "type": "text",
+          "text": "U dvojčinného válce se rychlost obvykle řídí **škrcením odpadu**: škrtí se vzduch, který z válce odchází. Píst je pak sevřený mezi dvěma polštáři vzduchu a jede plynuleji, i když se mění zatížení."
+        },
+        {
+          "type": "example",
+          "question": "Válec má průměr pístu 50 mm a tlak je 6 bar. Jakou teoretickou silou vysouvá (bez tření)?",
+          "answer": "Plocha pístu S = π · r² = 3,14 · 25² ≈ 1 963 mm². Tlak 6 bar = 0,6 MPa = 0,6 N/mm². F = p · S = 0,6 · 1 963 ≈ **1 178 N**, tedy asi 1,2 kN. Skutečná síla je kvůli tření o něco menší."
+        },
+        {
+          "type": "example",
+          "question": "Lis má jít spustit jen tehdy, když obsluha drží obě ruce na dvou tlačítkových ventilech. Jaký logický prvek použiješ?",
+          "answer": "Oba tlačítkové ventily 3/2 se zavedou do **dvoutlakového ventilu** (A ZÁROVEŇ B). Jeho výstup přepne hlavní rozvaděč válce jen při stisku obou tlačítek."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při výměně hadičky ji prostě vytáhnu, válec stojí.",
+          "right": "Nejdřív uzavři přívod a **odvzdušni** obvod, teprve pak rozpojuj.",
+          "why": "V hadicích a válci zůstává tlak. Uvolněná hadice může švihnout a válec se nečekaně pohnout. Stlačeným vzduchem nikdy nefoukej na kůži ani na oblečení a nos ochranné brýle."
+        },
+        {
+          "type": "summary",
+          "text": "Vzduch jde z kompresoru a vzdušníku přes jednotku úpravy (filtr, regulátor, maznice) do rozvaděčů a válců. Rozvaděč x/y má x přípojů a y poloh; jednočinný válec řídí 3/2, dvojčinný 5/2. Rychlost řídí škrticí zpětný ventil, u dvojčinného válce škrcením odpadu."
+        }
+      ]
+    },
+    {
+      "title": "Čtení schémat",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Údržbář přijde ke stroji, který nefunguje. Dostane do ruky **pneumatické schéma**. Když umí číst značky, za pár minut ví, který ventil co dělá a kde hledat závadu. Značky jsou dané normou ČSN ISO 1219, takže jsou stejné po celém světě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pneumatika",
+          "definition": "Obor, který k přenosu síly a pohybu využívá stlačený vzduch.",
+          "example": "Upínání, posuvy, přísavky na lince."
+        },
+        {
+          "type": "term",
+          "term": "Schematická značka",
+          "definition": "Zjednodušený obrázek prvku. Neukazuje, jak prvek vypadá, ale co dělá.",
+          "example": "Válec je obdélník s pístem a pístnicí."
+        },
+        {
+          "type": "term",
+          "term": "Zdroj tlaku",
+          "definition": "Kroužek s **prázdným** (bílým) trojúhelníkem. Prázdný trojúhelník znamená vzduch, plný (černý) by znamenal kapalinu.",
+          "example": "Na začátku každého schématu."
+        },
+        {
+          "type": "term",
+          "term": "Rozvaděč a jeho poloha",
+          "definition": "Rozvaděč se kreslí jako řada **čtverečků**, každý čtvereček je jedna poloha. Šipky ukazují, kudy vzduch teče, značka T znamená uzavřený přípoj. Přípoje se kreslí k té poloze, ve které je rozvaděč v klidu.",
+          "example": "Dva čtverečky = dvě polohy."
+        },
+        {
+          "type": "term",
+          "term": "Ovládání rozvaděče",
+          "definition": "Značky po stranách čtverečků říkají, co rozvaděč přepíná: tlačítko, páka, pružina (klikatá čára), tlakový signál, elektromagnet.",
+          "example": "Tlačítko vlevo, pružina vpravo = po puštění se rozvaděč vrátí."
+        },
+        {
+          "type": "term",
+          "term": "Rozvaděč 3/2 a 5/2",
+          "definition": "První číslo je počet přípojů (cest), druhé počet poloh. Přípoje: 1 tlak, 2 a 4 výstupy, 3 a 5 odvětrání.",
+          "example": "5/2 má přípoje 1, 2, 3, 4, 5 a dvě polohy."
+        },
+        {
+          "type": "heading",
+          "text": "Jak číst schéma"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi **zdroj** (kroužek s prázdným trojúhelníkem) a jednotku úpravy vzduchu.",
+            "Kresli se odspodu nahoru: dole zdroj, nad ním signální prvky (tlačítka, snímače), výš řídicí rozvaděče a nahoře **válce**.",
+            "U každého rozvaděče spočítej čtverečky (polohy) a přípoje u jednoho čtverečku (cesty).",
+            "Podívej se, co rozvaděč ovládá (tlačítko, pružina…), a představ si, co se stane po přepnutí – „přisuň“ druhý čtvereček na místo prvního.",
+            "Sleduj cestu od přípoje 1 přes rozvaděč k válci a zpět ven přes 3 nebo 5."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Značka slovy",
+            "Prvek"
+          ],
+          "rows": [
+            [
+              "kroužek s prázdným trojúhelníkem",
+              "zdroj stlačeného vzduchu"
+            ],
+            [
+              "kosočtverec s čárkovanou čarou",
+              "filtr"
+            ],
+            [
+              "obdélník, uvnitř píst, vpravo pružina",
+              "jednočinný válec s vratnou pružinou"
+            ],
+            [
+              "obdélník s pístem, dva přípoje",
+              "dvojčinný válec"
+            ],
+            [
+              "škrticí značka se šikmou šipkou + vedle kulička v sedle (zpětný ventil)",
+              "škrticí zpětný ventil"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dvě základní zapojení"
+        },
+        {
+          "type": "example",
+          "question": "Popiš obvod: jednočinný válec, rozvaděč 3/2 ovládaný tlačítkem s vratnou pružinou. Co se děje?",
+          "answer": "Klid: pružina drží rozvaděč v poloze, kdy je přípoj 1 uzavřen a válec je propojen 2 → 3 s okolím. Pružina válce drží píst zasunutý. **Stisk**: rozvaděč přepne, vzduch jde 1 → 2 do válce, píst se vysune. **Puštění**: rozvaděč se vrátí, vzduch z válce uteče 2 → 3 a pružina válce píst zasune."
+        },
+        {
+          "type": "example",
+          "question": "Dvojčinný válec má jet ven pomalu a zpět rychle. Kam dáš škrticí zpětný ventil a jak ho natočíš?",
+          "answer": "Při vysouvání vychází vzduch z **pístnicové** strany válce. Škrticí zpětný ventil dáš do této větve tak, aby **škrtil vzduch odcházející** z válce (škrcení odpadu). Při zasouvání jde vzduch tímto směrem dovnitř volně přes zpětný ventil, takže píst zajede rychle."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Rozvaděč 5/2 má ",
+                "after": " přípojů.",
+                "options": [
+                  "5",
+                  "2",
+                  "7"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Přívod tlaku má číslo ",
+                "after": ".",
+                "options": [
+                  "1",
+                  "2",
+                  "3"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Jednočinný válec se řídí rozvaděčem ",
+                "after": ".",
+                "options": [
+                  "3/2",
+                  "5/2",
+                  "4/3"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Prázdný trojúhelník ve značce znamená ",
+                "after": ".",
+                "options": [
+                  "vzduch",
+                  "olej"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň mezery. Když si nejsi jistý, vrať se k tabulce a pojmům."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Rozvaděč 3/2 má tři polohy a dva přípoje.",
+          "right": "3/2 znamená 3 přípoje (cesty) a 2 polohy.",
+          "why": "První číslo vždy udává cesty, druhé polohy. Polohy spočítáš podle čtverečků ve značce."
+        },
+        {
+          "type": "summary",
+          "text": "Schéma se čte odspodu: zdroj, signální prvky, rozvaděče, válce. Každý čtvereček rozvaděče je jedna poloha, kreslí se v klidové poloze. Prázdný trojúhelník = vzduch. Rychlost dvojčinného válce se řídí škrcením odcházejícího vzduchu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená označení rozvaděče 5/2?",
+      "options": [
+        "5 přípojů, 2 polohy",
+        "5 poloh, 2 přípoje",
+        "5 bar, 2 válce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo přípoje s významem.",
+      "pairs": [
+        [
+          "1",
+          "přívod tlaku"
+        ],
+        [
+          "2, 4",
+          "pracovní výstupy"
+        ],
+        [
+          "3, 5",
+          "odvětrání"
+        ],
+        [
+          "14",
+          "řídicí přípoj (1 → 4)"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým rozvaděčem se nejčastěji řídí jednočinný válec?",
+      "options": [
+        "3/2",
+        "5/2",
+        "4/3"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jednočinný válec má jen jeden přípoj vzduchu.",
+        "Potřebuješ: přívod, výstup do válce a odvětrání."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď prvky podle cesty vzduchu od zdroje k válci.",
+      "items": [
+        "kompresor",
+        "vzdušník",
+        "filtr",
+        "regulátor tlaku",
+        "rozvaděč",
+        "válec"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvojčinný válec se vrací do výchozí polohy pružinou.",
+      "answer": false,
+      "explanation": "Pružinu má jednočinný válec, dvojčinný zasouvá vzduchem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve značce zdroje znamená prázdný (bílý) trojúhelník pneumatiku.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolik bar je 0,6 MPa?",
+      "answers": [
+        "6"
+      ],
+      "hints": [
+        "1 bar = 0,1 MPa."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Válec s plochou pístu 1 000 mm² při tlaku 0,5 MPa. Teoretická síla v N =",
+      "answers": [
+        "500"
+      ],
+      "hints": [
+        "F = p · S.",
+        "1 MPa = 1 N/mm²."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Lis smí sjet jen při stisku dvou tlačítek zároveň. Který ventil to zajistí?",
+      "options": [
+        "dvoutlakový ventil (A ZÁROVEŇ B)",
+        "střídavý ventil (NEBO)",
+        "škrticí ventil",
+        "pojistný ventil"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se obvykle řídí rychlost dvojčinného válce?",
+      "options": [
+        "škrcením vzduchu odcházejícího z válce",
+        "škrcením vzduchu přímo za kompresorem",
+        "snížením tlaku na nulu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj část jednotky úpravy vzduchu s úkolem.",
+      "pairs": [
+        [
+          "filtr",
+          "zachytí nečistoty a kondenzát"
+        ],
+        [
+          "regulátor",
+          "nastaví pracovní tlak"
+        ],
+        [
+          "maznice",
+          "přidá olejovou mlhu"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Před rozpojením pneumatické hadice je potřeba obvod odvzdušnit.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Popiš funkci obvodu s jednočinným válcem a rozvaděčem 3/2 ovládaným tlačítkem.",
+      "answer": "V klidu pružina rozvaděče drží válec propojený s odvětráním 2 → 3 a pružina válce drží píst zasunutý. Stiskem tlačítka rozvaděč přepne, vzduch jde 1 → 2 do válce a píst se vysune. Po puštění se rozvaděč vrátí, vzduch odejde přes 3 a píst se pružinou zasune."
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj prvky úpravy stlačeného vzduchu a jejich úkol.",
+      "answer": "Kompresor stlačuje vzduch, vzdušník ho hromadí a vyrovnává tlak. U stroje je jednotka úpravy: filtr zachytí nečistoty a vodu, regulátor s manometrem nastaví pracovní tlak a maznice případně přidá olejovou mlhu."
+    }
+  ]
+}

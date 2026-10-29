@@ -1,0 +1,397 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "elektropneumatika",
+  "title": "Elektropneumatika",
+  "emoji": "⚡",
+  "explanations": [
+    {
+      "title": "Elektřina řídí, vzduch tlačí",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Čistě pneumatické řízení s tlačítkovými ventily je robustní, ale složité úlohy by vyžadovaly hromadu ventilů a hadiček. Proto se dnes dělba práce dělí: **elektřina řídí** (tlačítka, snímače, relé, PLC) a **vzduch tlačí** (válce). Tomu se říká **elektropneumatika**."
+        },
+        {
+          "type": "text",
+          "text": "Spojkou mezi oběma světy je ventil, který přepíná elektromagnet. Řídicí obvod pracuje s bezpečným napětím 24 V DC."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozvaděč",
+          "definition": "Ventil, který určuje, kudy poteče stlačený vzduch. Označení počet přípojů/počet poloh, např. 5/2.",
+          "example": "Rozvaděč 5/2 přepíná vzduch na jednu nebo druhou stranu dvojčinného válce."
+        },
+        {
+          "type": "term",
+          "term": "Elektromagnetický rozvaděč",
+          "definition": "Rozvaděč přepínaný **cívkou** (elektromagnetem). Když cívkou teče proud, přitáhne kotvu a rozvaděč se přepne. Cívka se ve schématech značí **Y** (Y1, Y2…).",
+          "example": "PLC sepne výstup 24 V na cívku Y1 a válec vyjede."
+        },
+        {
+          "type": "term",
+          "term": "Monostabilní rozvaděč",
+          "definition": "Má jednu cívku a vratnou pružinu. Stabilní je jen v jedné poloze: jakmile proud přestane téct, pružina ho vrátí zpět.",
+          "example": "Pustíš tlačítko → válec zajede zpět."
+        },
+        {
+          "type": "term",
+          "term": "Bistabilní (impulzní) rozvaděč",
+          "definition": "Má dvě cívky (Y1, Y2) a žádnou pružinu. Stačí krátký impulz a rozvaděč zůstane v nové poloze, dokud nepřijde impulz na druhou cívku. „Pamatuje si“ polohu.",
+          "example": "I po výpadku proudu zůstane válec, kde byl."
+        },
+        {
+          "type": "term",
+          "term": "Tlačítko",
+          "definition": "Ruční spínač, který spíná jen po dobu stisku. **Spínací kontakt** (NO) při stisku obvod spojí, **rozpínací** (NC) ho při stisku rozpojí. Značí se S.",
+          "example": "START je spínací, STOP rozpínací."
+        },
+        {
+          "type": "term",
+          "term": "Relé",
+          "definition": "Elektricky ovládaný spínač. Cívka relé (K1) při proudu přepne své kontakty. Jedno relé může mít několik kontaktů a tím „rozvětvit“ jeden signál.",
+          "example": "Relé K1 jedním kontaktem drží samo sebe a druhým spíná cívku Y1."
+        },
+        {
+          "type": "term",
+          "term": "Koncový spínač a jazýčkový snímač",
+          "definition": "Hlásí polohu válce. Mechanický koncový spínač stiskne vačka nebo pístnice. **Jazýčkový (magnetický) snímač** se připevní na tělo válce a sepne, když kolem projede magnet v pístu.",
+          "example": "A0 hlásí „válec A zasunut“, A1 „válec A vysunut“."
+        },
+        {
+          "type": "heading",
+          "text": "Samodržný obvod"
+        },
+        {
+          "type": "text",
+          "text": "Chceme, aby válec zůstal venku, i když pustíme tlačítko START, a zajel po stisku STOP. S monostabilním rozvaděčem to vyřeší **samodržení** relé."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Cívku relé K1 napájí tlačítko **START** (spínací) přes **STOP** (rozpínací).",
+            "Paralelně k START je zapojen **spínací kontakt K1** – to je „samodržný“ kontakt.",
+            "Stiskneš START → K1 sepne → jeho kontakt přemostí START.",
+            "Pustíš START → proud teče dál přes kontakt K1. Relé se drží samo.",
+            "Jiný kontakt K1 napájí cívku **Y1** → válec je venku.",
+            "Stiskneš STOP → obvod se přeruší, K1 odpadne, Y1 ztratí proud a pružina vrátí rozvaděč. Válec zajede."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Válec má po stisku START vyjet, na konci zdvihu (snímač A1) se sám vrátit. Rozvaděč je monostabilní. Jak upravíš samodržný obvod?",
+          "answer": "Do série se STOP přidáš **rozpínací kontakt** snímače **A1**. START → K1 se drží → Y1 → válec jede ven. Když dojede, A1 sepne a jeho rozpínací kontakt přeruší samodržení → K1 odpadne → Y1 bez proudu → pružina vrátí rozvaděč → válec zajede."
+        },
+        {
+          "type": "example",
+          "question": "Proč by u úlohy výše nešlo zapojit START přímo na Y1 bez relé?",
+          "answer": "Monostabilní rozvaděč drží jen po dobu proudu. Při puštění START by válec okamžitě zajel. Relé se samodržným kontaktem si stisk **zapamatuje** až do signálu A1."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Bistabilní rozvaděč se po výpadku napětí sám vrátí do výchozí polohy.",
+          "right": "Bistabilní rozvaděč zůstane v poslední poloze. Vrátí se jen impulzem na druhou cívku.",
+          "why": "Nemá vratnou pružinu. To je výhoda (paměť), ale i riziko: po obnovení napětí se válec může chovat jinak, než obsluha čeká."
+        },
+        {
+          "type": "summary",
+          "text": "V elektropneumatice řídí elektrický obvod 24 V DC a válce pohání vzduch. Spojkou je elektromagnetický rozvaděč: monostabilní (cívka + pružina) nebo bistabilní (dvě cívky, pamatuje si polohu). Samodržný obvod s relé si zapamatuje krátký stisk START."
+        }
+      ]
+    },
+    {
+      "title": "Schéma a krokový diagram",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na lince dva válce spolupracují: A upne díl, B ho vyrazí. Musí jet ve správném pořadí, jinak se stroj poškodí. Tady se naučíš pohyb zapsat zkratkou, nakreslit **krokový diagram** a sestavit **kontaktní schéma**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Elektromagnetický rozvaděč",
+          "definition": "Rozvaděč přepínaný cívkou Y. Monostabilní má jednu cívku a pružinu, bistabilní dvě cívky a drží poslední polohu.",
+          "example": "Bistabilní 5/2 s cívkami Y1 (ven) a Y2 (zpět)."
+        },
+        {
+          "type": "term",
+          "term": "Zápis sekvence",
+          "definition": "Válce se značí písmeny. **+** znamená vysunutí, **−** zasunutí. Sekvence se píše v pořadí pohybů.",
+          "example": "A+ B+ A− B−: A ven, B ven, A zpět, B zpět."
+        },
+        {
+          "type": "term",
+          "term": "Snímače polohy válce",
+          "definition": "Ke každému válci dva snímače: **0** = zasunut, **1** = vysunut. Pro válec A tedy A0 a A1.",
+          "example": "Jazýčkové snímače na těle válce."
+        },
+        {
+          "type": "term",
+          "term": "Krokový diagram (diagram dráha–krok)",
+          "definition": "Graf, kde na vodorovné ose jsou kroky a pro každý válec čára, která ukazuje, jestli je zasunut (0), nebo vysunut (1).",
+          "example": "Válec A v kroku 1 stoupá z 0 na 1."
+        },
+        {
+          "type": "term",
+          "term": "Kontaktní (řídicí) schéma",
+          "definition": "Elektrické schéma řízení. Nahoře je vodič +24 V, dole 0 V a mezi nimi svislé **proudové dráhy** očíslované zleva. V každé dráze jsou kontakty a na konci cívka (relé K nebo ventilu Y).",
+          "example": "Dráha 1: START → K1."
+        },
+        {
+          "type": "heading",
+          "text": "Krokový diagram A+ B+ A− B−"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Krok",
+            "Pohyb",
+            "Spouští ho signál",
+            "Válec A",
+            "Válec B"
+          ],
+          "rows": [
+            [
+              "1",
+              "A+",
+              "START a B0",
+              "0 → 1",
+              "0"
+            ],
+            [
+              "2",
+              "B+",
+              "A1",
+              "1",
+              "0 → 1"
+            ],
+            [
+              "3",
+              "A−",
+              "B1",
+              "1 → 0",
+              "1"
+            ],
+            [
+              "4",
+              "B−",
+              "A0",
+              "0",
+              "1 → 0"
+            ],
+            [
+              "5 = 1",
+              "konec cyklu",
+              "–",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Každý pohyb spustí snímač, který hlásí dokončení **předchozího** pohybu. Tak stroj nejde dál, dokud se krok opravdu neprovede."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "A+ (START a B0)",
+              "B+ (A1)",
+              "A− (B1)",
+              "B− (A0)"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Od diagramu ke schématu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pro každý pohyb napiš podmínku: A+ = START a B0, B+ = A1, A− = B1, B− = A0.",
+            "„A ZÁROVEŇ“ = kontakty **sériově** za sebou, „NEBO“ = kontakty **paralelně** vedle sebe.",
+            "S bistabilními rozvaděči: A+ → cívka Y1, A− → Y2, B+ → Y3, B− → Y4.",
+            "Každá podmínka je jedna proudová dráha mezi +24 V a 0 V, na jejím konci cívka.",
+            "Zkontroluj, že v žádném kroku nedostanou proud obě cívky stejného rozvaděče naráz."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Napiš proudové dráhy pro A+ B+ A− B− s bistabilními rozvaděči.",
+          "answer": "Dráha 1: START a B0 v sérii → **Y1** (A+). Dráha 2: A1 → **Y3** (B+). Dráha 3: B1 → **Y2** (A−). Dráha 4: A0 → **Y4** (B−). V této sekvenci se signály pro opačné pohyby téhož válce nepřekrývají (B0 a B1 nejsou nikdy sepnuté zároveň, stejně tak A1 a A0), proto zapojení funguje bez dalších relé."
+        },
+        {
+          "type": "example",
+          "question": "Doplň krokový diagram pro sekvenci A+ A− B+ B−: v kterém kroku je válec B vysunutý?",
+          "answer": "Krok 1: A 0→1. Krok 2: A 1→0. Krok 3: B 0→1. Krok 4: B 1→0. Válec B je vysunutý **po kroku 3**, tedy mezi krokem 3 a 4."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pro B+ stačí tlačítko START, B přece vyjede po A.",
+          "right": "B+ musí spustit snímač A1, tedy potvrzení, že A opravdu dojel.",
+          "why": "Kdyby B jel podle času nebo startu, při pomalém nebo zaseklém válci A by se díly srazily. Každý krok spouští zpětné hlášení předchozího kroku."
+        },
+        {
+          "type": "summary",
+          "text": "Sekvenci zapíšeš A+ B+ A− B−, do krokového diagramu zaneseš polohy 0/1 v každém kroku. Každý pohyb spustí snímač konce předchozího pohybu. V kontaktním schématu jsou podmínky proudové dráhy: sériově = A ZÁROVEŇ, paralelně = NEBO, na konci cívka Y nebo K."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Čím se liší monostabilní rozvaděč od bistabilního?",
+      "options": [
+        "má jednu cívku a vratnou pružinu",
+        "má dvě cívky a žádnou pružinu",
+        "nemá žádnou cívku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Bistabilní rozvaděč si po výpadku napětí pamatuje poslední polohu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jakým písmenem se ve schématech běžně značí cívka elektromagnetického ventilu?",
+      "options": [
+        "Y",
+        "K",
+        "S",
+        "M"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj značku s prvkem.",
+      "pairs": [
+        [
+          "S",
+          "tlačítko"
+        ],
+        [
+          "K",
+          "relé"
+        ],
+        [
+          "Y",
+          "cívka ventilu"
+        ],
+        [
+          "A1",
+          "snímač „válec A vysunut“"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak je v samodržném obvodu zapojen samodržný kontakt relé K1?",
+      "options": [
+        "paralelně k tlačítku START",
+        "sériově s tlačítkem STOP",
+        "paralelně k cívce K1"
+      ],
+      "answer": 0,
+      "hints": [
+        "Kontakt má udržet proud, když START pustíš.",
+        "Musí tedy tlačítko START „přemostit“."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tlačítko STOP v samodržném obvodu má rozpínací kontakt.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď pohyby sekvence A+ B+ A− B−.",
+      "items": [
+        "válec A vysune",
+        "válec B vysune",
+        "válec A zasune",
+        "válec B zasune"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který signál spustí pohyb B+ v sekvenci A+ B+ A− B−?",
+      "options": [
+        "A1",
+        "B0",
+        "START",
+        "A0"
+      ],
+      "answer": 0,
+      "hints": [
+        "B+ je až po A+.",
+        "Který snímač potvrdí, že A+ skončil?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v kontaktním schématu zapíše podmínka „A ZÁROVEŇ B“?",
+      "options": [
+        "kontakty sériově za sebou",
+        "kontakty paralelně vedle sebe",
+        "dvě samostatné cívky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik cívek mají dohromady dva bistabilní rozvaděče pro válce A a B?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak pozná jazýčkový snímač polohu pístu?",
+      "options": [
+        "reaguje na magnet zabudovaný v pístu",
+        "měří tlak vzduchu",
+        "pístnice ho mechanicky stiskne"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Řídicí obvody elektropneumatiky obvykle pracují s napětím 24 V DC.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak funguje samodržný obvod s relé.",
+      "answer": "Tlačítko START (spínací) napájí přes STOP (rozpínací) cívku relé K1. Paralelně ke START je spínací kontakt K1. Po stisku START relé sepne a jeho kontakt START přemostí, takže relé drží i po puštění tlačítka. Stiskem STOP se obvod přeruší a relé odpadne."
+    },
+    {
+      "type": "open",
+      "question": "Popiš sekvenci A+ B+ A− B− a co spouští jednotlivé kroky.",
+      "answer": "Válec A vyjede po stisku START, pokud je B zasunut (B0). Když A dojede (A1), vyjede B. Po vysunutí B (B1) se A vrátí, a když je A zasunut (A0), vrátí se B. Každý krok spouští snímač, který potvrdí dokončení předchozího pohybu."
+    }
+  ]
+}

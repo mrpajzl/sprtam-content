@@ -1,0 +1,438 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "prumyslove-site-prumysl-40",
+  "title": "Průmyslové sítě a Průmysl 4.0",
+  "emoji": "🌐",
+  "explanations": [
+    {
+      "title": "Továrna jako firma",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve velké firmě si informace předávají dělníci, mistr, vedoucí výroby i ředitel. Každý potřebuje jiné údaje a jinak rychle. Dělník musí vědět okamžitě, že se zasekl pás. Ředitel potřebuje jednou za den vědět, kolik se vyrobilo."
+        },
+        {
+          "type": "text",
+          "text": "V automatizované továrně je to stejné, jen si informace předávají stroje. Snímače, PLC, počítače a podnikový systém spojují **průmyslové sítě**. Bez nich by každý snímač potřeboval vlastní kabel až do rozvaděče a nikdo by neměl přehled o výrobě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Průmyslová síť (průmyslová sběrnice)",
+          "definition": "Propojení řídicích zařízení jedním společným vedením, po kterém si posílají data podle dohodnutých pravidel. Musí odolat rušení, vibracím a prachu.",
+          "example": "Jedním kabelem jsou s PLC spojené desítky snímačů a pohonů."
+        },
+        {
+          "type": "term",
+          "term": "Protokol",
+          "definition": "Dohodnutá pravidla komunikace: jak vypadá zpráva, kdo smí vysílat a jak se poznají chyby.",
+          "example": "Modbus, Profinet, EtherCAT."
+        },
+        {
+          "type": "term",
+          "term": "Deterministická komunikace",
+          "definition": "Komunikace se zaručenou dobou doručení zprávy. Víš předem, že data dorazí nejpozději za určitý čas.",
+          "example": "Povel pro pohon dorazí vždy do 1 ms. Běžný internet tohle nezaručí."
+        },
+        {
+          "type": "term",
+          "term": "PLC",
+          "definition": "Připomenutí: průmyslový řídicí počítač, který čte vstupy, vykonává program a nastavuje výstupy."
+        },
+        {
+          "type": "heading",
+          "text": "Pyramida automatizace"
+        },
+        {
+          "type": "text",
+          "text": "Řízení podniku se kreslí jako pyramida. Dole je hodně zařízení a rychlá data, nahoře málo systémů a souhrnná data."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Úroveň",
+            "Co tam je",
+            "Jak rychle"
+          ],
+          "rows": [
+            [
+              "podnik (ERP)",
+              "objednávky, sklad, účetnictví",
+              "hodiny, dny"
+            ],
+            [
+              "řízení výroby (MES)",
+              "plán a evidence výroby, kvalita",
+              "minuty"
+            ],
+            [
+              "dispečink (SCADA, HMI)",
+              "vizualizace, alarmy, obsluha",
+              "sekundy"
+            ],
+            [
+              "řízení (PLC, regulátory)",
+              "program stroje",
+              "milisekundy"
+            ],
+            [
+              "provozní (snímače, akční členy)",
+              "tlačítka, snímače, ventily, motory",
+              "milisekundy"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "SCADA a HMI",
+          "definition": "**HMI** je ovládací panel u stroje (obrazovka, kde obsluha vidí stav a mačká tlačítka). **SCADA** je dispečerský systém, který sbírá data z mnoha PLC a zobrazuje celou výrobu.",
+          "example": "Na velíně čistírny vod vidí operátor na SCADA stav všech čerpadel."
+        },
+        {
+          "type": "heading",
+          "text": "Které sítě se používají"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Profibus DP",
+                "back": "starší sběrnice na sériové lince RS-485, hlavně Siemens"
+              },
+              {
+                "front": "Profinet",
+                "back": "průmyslový Ethernet, nástupce Profibusu"
+              },
+              {
+                "front": "Modbus RTU / Modbus TCP",
+                "back": "jednoduchý otevřený protokol; RTU po sériové lince, TCP po Ethernetu"
+              },
+              {
+                "front": "EtherNet/IP",
+                "back": "průmyslový Ethernet s protokolem CIP, rozšířený hlavně u Rockwell Automation"
+              },
+              {
+                "front": "EtherCAT",
+                "back": "velmi rychlý Ethernet pro pohony, data se zpracují za letu"
+              },
+              {
+                "front": "IO-Link",
+                "back": "komunikace se snímačem bod-bod po běžném 3vodičovém kabelu"
+              },
+              {
+                "front": "AS-i",
+                "back": "dvouvodičový kabel nese data i napájení jednoduchých snímačů"
+              },
+              {
+                "front": "OPC UA",
+                "back": "standard pro bezpečnou výměnu dat mezi stroji a IT, nezávislý na výrobci"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi kartičky. U každé si řekni, na které úrovni pyramidy se síť nejspíš používá."
+        },
+        {
+          "type": "example",
+          "question": "Na stroji je 40 snímačů. Proč je výhodné je připojit přes síť (např. AS-i nebo IO-Link s rozbočovačem) místo přímo do PLC?",
+          "answer": "Při přímém připojení vede od každého snímače vlastní kabel až do rozvaděče: 40 kabelů. Přes síť stačí jedno vedení a rozbočovače u stroje. **Méně kabeláže, rychlejší montáž, snazší hledání závad** a u IO-Link navíc diagnostika snímače."
+        },
+        {
+          "type": "example",
+          "question": "Manažer chce v tabulce vidět počet vyrobených kusů ze všech linek za směnu. Kde se data berou a kudy jdou?",
+          "answer": "Kusy počítá **PLC** každé linky. Data z PLC sbírá **SCADA nebo MES** (často přes OPC UA). Odtud jdou souhrny do **ERP**. Data tedy putují pyramidou zdola nahoru a cestou se shrnují."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pohony robotu můžu řídit přes běžnou kancelářskou síť, Ethernet je přece všude stejný.",
+          "right": "Pro rychlé řízení se používá průmyslový Ethernet s deterministickou komunikací (Profinet IRT, EtherCAT…) a oddělená síť.",
+          "why": "Kancelářská síť nezaručuje dobu doručení a zpoždění by vedlo k chybám v pohybu. Navíc propojení s kancelářskou sítí zvyšuje riziko kybernetického útoku."
+        },
+        {
+          "type": "summary",
+          "text": "Průmyslové sítě propojují snímače, PLC, dispečink a podnikové systémy v pyramidě automatizace. Dole je potřeba rychlá deterministická komunikace (Profinet, EtherCAT, IO-Link, AS-i), nahoře výměna dat s IT (OPC UA)."
+        }
+      ]
+    },
+    {
+      "title": "Čtyři revoluce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Slyšíš „Průmysl 4.0“ v reklamách, ve zprávách i na pohovoru. Číslo 4 znamená, že jde o **čtvrtou průmyslovou revoluci**. Pochopíš ji nejlépe, když uvidíš, co bylo před ní."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Průmyslová revoluce",
+          "definition": "Období, kdy nová technika zásadně změní způsob výroby a s ním i práci a život lidí.",
+          "example": "Parní stroj nahradil sílu lidí a zvířat."
+        },
+        {
+          "type": "heading",
+          "text": "Od páry k datům"
+        },
+        {
+          "type": "widget",
+          "widget": "timeline",
+          "props": {
+            "events": [
+              {
+                "year": 1784,
+                "label": "1.0: mechanizace, parní stroj, mechanický tkalcovský stav"
+              },
+              {
+                "year": 1913,
+                "label": "2.0: elektřina a hromadná výroba – pásová linka u Forda"
+              },
+              {
+                "year": 1969,
+                "label": "3.0: elektronika a automatizace – první PLC"
+              },
+              {
+                "year": 2011,
+                "label": "4.0: pojem Industrie 4.0 představen na veletrhu v Hannoveru"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi časovou osu a všimni si, jak se intervaly mezi revolucemi zkracují. Letopočty jsou orientační – revoluce neproběhla v jednom dni."
+        },
+        {
+          "type": "heading",
+          "text": "Co je na Průmyslu 4.0 nové"
+        },
+        {
+          "type": "term",
+          "term": "Kyberfyzikální systém (CPS)",
+          "definition": "Stroj nebo zařízení, které spojuje fyzickou část (mechaniku, motory, snímače) s výpočetní částí a sítí. Samo o sobě ví, v jakém je stavu, a sdílí to s ostatními.",
+          "example": "Obráběcí stroj, který hlásí opotřebení nástroje a sám si objedná nový."
+        },
+        {
+          "type": "term",
+          "term": "IoT a IIoT",
+          "definition": "**IoT** (internet věcí) jsou běžné věci připojené k síti. **IIoT** je průmyslový internet věcí: snímače a stroje v továrně, které posílají data do sítě.",
+          "example": "Snímač vibrací na čerpadle posílá data do cloudu."
+        },
+        {
+          "type": "term",
+          "term": "Digitální dvojče",
+          "definition": "Počítačový model skutečného stroje nebo linky, který se průběžně aktualizuje daty z reálného zařízení. Na něm se dá zkoušet a předpovídat bez zásahu do výroby.",
+          "example": "Nový program robotu se nejdřív vyzkouší na dvojčeti linky."
+        },
+        {
+          "type": "term",
+          "term": "Big data a prediktivní údržba",
+          "definition": "**Big data** jsou obrovská množství dat ze strojů. Jejich analýzou lze poznat blížící se poruchu dřív, než nastane – to je **prediktivní údržba**.",
+          "example": "Rostoucí vibrace ložiska ohlásí výměnu týden před poruchou."
+        },
+        {
+          "type": "term",
+          "term": "Kybernetická bezpečnost",
+          "definition": "Ochrana řídicích systémů a sítí před útoky, viry a zneužitím. Pro průmysl ji popisuje řada norem IEC 62443.",
+          "example": "Oddělení výrobní sítě od kancelářské, hesla, aktualizace, řízený vzdálený přístup."
+        },
+        {
+          "type": "term",
+          "term": "Průmyslová sběrnice",
+          "definition": "Připomenutí: síť, která propojuje snímače, PLC (průmyslové řídicí počítače) a další zařízení podle dohodnutého protokolu. Pro snímače se používá např. IO-Link, pro rychlé řízení Profinet nebo EtherCAT, pro výměnu dat s počítači standard OPC UA.",
+          "example": "Data z linky putují přes OPC UA do systému **MES** (řízení výroby) a souhrny do **ERP** (podnikový systém: objednávky, sklad, účetnictví)."
+        },
+        {
+          "type": "heading",
+          "text": "Jak data putují v továrně 4.0"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Snímač změří veličinu a pošle ji přes IO-Link do PLC.",
+            "PLC řídí stroj v reálném čase po deterministické síti (např. Profinet nebo EtherCAT).",
+            "Data z PLC čte server přes OPC UA.",
+            "Systém MES nebo cloud je ukládá a analyzuje (big data).",
+            "Výsledek se vrátí zpět: plán údržby, úprava parametrů, objednávka materiálu v ERP."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ložisko čerpadla se dřív měnilo každých 6 měsíců preventivně. Jak by to vypadalo v Průmyslu 4.0?",
+          "answer": "Na čerpadlo se dá snímač vibrací a teploty (IIoT). Data se průběžně vyhodnocují. Ložisko se vymění, **až když data ukážou začínající opotřebení** – ne zbytečně dřív a ne pozdě po havárii. To je prediktivní údržba."
+        },
+        {
+          "type": "example",
+          "question": "Firma chce vyzkoušet novou rychlost linky, ale nechce riskovat zmetky. Co jí pomůže?",
+          "answer": "**Digitální dvojče** linky. Změnu nejdřív simuluje na modelu, který odpovídá skutečné lince díky datům z ní. Když simulace projde, změnu zavede ve skutečnosti."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Průmysl 4.0 znamená, že se do továrny nakoupí víc robotů.",
+          "right": "Jádrem Průmyslu 4.0 je propojení strojů, sdílení a vyhodnocování dat.",
+          "why": "Roboty a automatizace patří už do 3. revoluce. Novinkou 4.0 je, že stroje komunikují mezi sebou i s podnikovými systémy a z dat se rozhoduje."
+        },
+        {
+          "type": "summary",
+          "text": "1.0 pára, 2.0 elektřina a hromadná výroba, 3.0 elektronika a PLC, 4.0 propojení a data. Průmysl 4.0 stojí na kyberfyzikálních systémech, IIoT, digitálním dvojčeti, analýze dat a kybernetické bezpečnosti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "order",
+      "question": "Seřaď úrovně pyramidy automatizace odspodu nahoru.",
+      "items": [
+        "snímače a akční členy",
+        "PLC",
+        "SCADA a HMI",
+        "MES",
+        "ERP"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď průmyslové revoluce podle času.",
+      "items": [
+        "parní stroj a mechanizace",
+        "elektřina a pásová výroba",
+        "elektronika a PLC",
+        "propojení strojů a data"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená deterministická komunikace?",
+      "options": [
+        "zpráva dorazí v zaručeném čase",
+        "zprávy jsou šifrované",
+        "síť nemá žádné kabely"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj síť nebo standard s popisem.",
+      "pairs": [
+        [
+          "AS-i",
+          "dva vodiče nesou data i napájení"
+        ],
+        [
+          "IO-Link",
+          "bod-bod se snímačem po 3vodičovém kabelu"
+        ],
+        [
+          "OPC UA",
+          "výměna dat mezi stroji a IT"
+        ],
+        [
+          "Modbus RTU",
+          "jednoduchý protokol po sériové lince"
+        ],
+        [
+          "EtherCAT",
+          "rychlý Ethernet pro pohony"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Profinet je založený na průmyslovém Ethernetu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Modbus TCP přenáší zprávy Modbus po Ethernetu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co je digitální dvojče?",
+      "options": [
+        "počítačový model stroje aktualizovaný daty ze skutečného stroje",
+        "záložní PLC",
+        "dva roboti se stejným programem"
+      ],
+      "answer": 0,
+      "hints": [
+        "Slovo „digitální“ napovídá, že existuje v počítači.",
+        "Je propojené se skutečným zařízením."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš zkratku průmyslového internetu věcí.",
+      "answers": [
+        "IIoT",
+        "IIOT"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která úroveň pyramidy řeší objednávky, sklad a účetnictví?",
+      "options": [
+        "ERP",
+        "SCADA",
+        "PLC"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je prediktivní údržba?",
+      "options": [
+        "výměna dílu podle dat o jeho stavu ještě před poruchou",
+        "výměna dílu až po poruše",
+        "výměna dílu v pevných intervalech"
+      ],
+      "answer": 0,
+      "hints": [
+        "Slovo „predikce“ znamená předpověď."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ve kterém roce byl na veletrhu v Hannoveru představen pojem Industrie 4.0?",
+      "answers": [
+        "2011"
+      ],
+      "hints": [
+        "Je to na začátku druhého desetiletí 21. století."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kvůli kybernetické bezpečnosti je vhodné oddělit výrobní síť od kancelářské.",
+      "answer": true
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli pyramidu automatizace a co se děje na jednotlivých úrovních.",
+      "answer": "Dole jsou snímače a akční členy, nad nimi PLC, které řídí stroje v reálném čase. Výš je SCADA a HMI pro vizualizaci a obsluhu, pak MES pro řízení a evidenci výroby a nahoře ERP pro objednávky a ekonomiku. Směrem nahoru ubývá zařízení a zpomaluje se potřebná rychlost dat."
+    },
+    {
+      "type": "open",
+      "question": "Co je Průmysl 4.0 a čím se liší od třetí průmyslové revoluce?",
+      "answer": "Třetí revoluce přinesla elektroniku, počítače a automatizaci pomocí PLC. Průmysl 4.0 stroje propojuje do sítě (IIoT, kyberfyzikální systémy), sbírá a vyhodnocuje data, využívá digitální dvojčata a prediktivní údržbu. Proto je v něm důležitá i kybernetická bezpečnost."
+    }
+  ]
+}

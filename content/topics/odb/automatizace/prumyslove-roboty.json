@@ -1,0 +1,500 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "prumyslove-roboty",
+  "title": "Průmyslové roboty",
+  "emoji": "🦾",
+  "explanations": [
+    {
+      "title": "Jako lidská ruka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zkus vzít hrnek ze stolu. Pohneš ramenem, loktem, zápěstím a prsty. Průmyslový robot to dělá stejně – jen bez únavy, 24 hodin denně a s přesností na desetiny milimetru. V automobilce svařuje karoserie, v potravinářství balí sušenky, v elektronice osazuje desky."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Průmyslový robot",
+          "definition": "Podle normy ISO 8373 automaticky řízený, přeprogramovatelný a víceúčelový manipulátor programovatelný ve třech nebo více osách. Jednoduše: stroj, který umí pohybovat nástrojem po prostoru a jehož práci jde změnit novým programem.",
+          "example": "Šestiosý robot, který dnes svařuje a zítra po přeprogramování lakuje."
+        },
+        {
+          "type": "term",
+          "term": "Osa (kloub)",
+          "definition": "Jedno místo, kde se robot může pohybovat: buď se otáčí (rotační osa), nebo posouvá (lineární osa). Každou osu pohání vlastní motor.",
+          "example": "Rameno robota se otáčí v ose 2 jako lidské rameno."
+        },
+        {
+          "type": "term",
+          "term": "Stupně volnosti",
+          "definition": "Kolik nezávislých pohybů těleso může udělat. Volné těleso v prostoru má 6: posun ve směru x, y, z a natočení kolem těchto tří os.",
+          "example": "Aby robot dal šroubovák do libovolné polohy a libovolného natočení, potřebuje 6 os."
+        },
+        {
+          "type": "term",
+          "term": "Koncový efektor",
+          "definition": "Nástroj na konci ruky robota, kterým robot pracuje.",
+          "example": "Chapadlo s prsty, přísavka, svařovací hořák, lakovací pistole."
+        },
+        {
+          "type": "term",
+          "term": "Pracovní prostor",
+          "definition": "Všechna místa, kam robot svým koncovým efektorem dosáhne.",
+          "example": "U kloubového robota má tvar zhruba části koule."
+        },
+        {
+          "type": "heading",
+          "text": "Robot jako ruka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Část robota",
+            "U člověka",
+            "Úkol"
+          ],
+          "rows": [
+            [
+              "základna (osa 1)",
+              "trup, otočení v pase",
+              "otočí celým robotem"
+            ],
+            [
+              "rameno (osa 2)",
+              "rameno",
+              "zvedá a spouští paži"
+            ],
+            [
+              "loket (osa 3)",
+              "loket",
+              "přibližuje a oddaluje ruku"
+            ],
+            [
+              "zápěstí (osy 4, 5, 6)",
+              "zápěstí",
+              "natočí nástroj"
+            ],
+            [
+              "chapadlo",
+              "prsty",
+              "drží předmět"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Takovému robotu se říká **kloubový** (angulární). Je nejrozšířenější, protože dosáhne do většiny míst kolem sebe a nástroj natočí libovolně."
+        },
+        {
+          "type": "heading",
+          "text": "Jiné stavby robotů"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "kloubový (angulární)",
+                "back": "obvykle 6 rotačních os, univerzální: svařování, manipulace"
+              },
+              {
+                "front": "SCARA",
+                "back": "obvykle 4 osy, pohyb hlavně ve vodorovné rovině, rychlá montáž a osazování"
+              },
+              {
+                "front": "kartézský (portálový)",
+                "back": "3 lineární osy x, y, z, velký pracovní prostor do kvádru, paletizace"
+              },
+              {
+                "front": "delta",
+                "back": "paralelní kinematika, tři ramena nad pásem, velmi rychlé uchopování lehkých předmětů"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a ke každému typu si vymysli jednu práci, kterou by v továrně dělal."
+        },
+        {
+          "type": "heading",
+          "text": "Bezpečnost"
+        },
+        {
+          "type": "text",
+          "text": "Robot je silný a rychlý a nevidí, že vedle něj stojí člověk. Proto se klasický robot uzavírá do **oplocení** s dveřmi, které jsou hlídané bezpečnostním spínačem. Vstupy chrání **světelné závory** a **bezpečnostní skenery**. Všude musí být dostupné **nouzové zastavení** (červené hřibové tlačítko na žlutém podkladu)."
+        },
+        {
+          "type": "term",
+          "term": "Kolaborativní robot (cobot)",
+          "definition": "Robot navržený pro práci vedle člověka bez oplocení. Omezuje rychlost a sílu, při nárazu do člověka se zastaví. Požadavky popisuje norma ISO 10218 a podrobnosti technická specifikace ISO/TS 15066.",
+          "example": "Cobot podává díly dělníkovi u montážního stolu."
+        },
+        {
+          "type": "example",
+          "question": "Robot má dopravit krabice z pásu na paletu, která je 3 × 2 m. Jaký typ zvolíš?",
+          "answer": "Pracovní prostor je velký a ve tvaru kvádru, natočení krabic je jednoduché. Hodí se **kartézský (portálový) robot** se 3 lineárními osami, případně ještě jednou rotační osou pro otočení krabice. Kloubový robot s velkým dosahem by také šel."
+        },
+        {
+          "type": "example",
+          "question": "Proč šestiosý robot zvládne položit díl do libovolné polohy, ale tříosý ne?",
+          "answer": "Libovolná poloha a natočení = 6 stupňů volnosti (3 posuny + 3 natočení). Tři osy dají nanejvýš 3 nezávislé pohyby, tedy třeba jen polohu bez natočení. **Šest os pokryje všech 6 stupňů volnosti.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Cobot je bezpečný sám od sebe, takže u něj nemusí být posouzení rizik.",
+          "right": "I u kolaborativního robotu se musí posoudit rizika celé aplikace.",
+          "why": "Nebezpečný může být nástroj nebo díl, např. ostrý plech nebo hořák. Bezpečná musí být celá aplikace, ne jen samotný robot."
+        },
+        {
+          "type": "summary",
+          "text": "Průmyslový robot je přeprogramovatelný manipulátor se třemi a více osami. Nejčastější je šestiosý kloubový, dále SCARA, kartézský a delta. Klasický robot pracuje za oplocením se světelnými závorami a nouzovým zastavením; cobot smí pracovat s člověkem, ale jen po posouzení rizik."
+        }
+      ]
+    },
+    {
+      "title": "Souřadnice a program",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když kamarádovi řekneš „podej mi to vlevo“, záleží, čí levá strana to je. Robot má stejný problém. Aby přesně věděl, kam jet, programátor musí určit, v jakém **souřadném systému** zadává polohu. Bez toho se nedá robot naprogramovat ani bezpečně ovládat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Průmyslový robot",
+          "definition": "Automaticky řízený, přeprogramovatelný manipulátor se třemi a více osami.",
+          "example": "Robot, který přenáší díly mezi dvěma stroji."
+        },
+        {
+          "type": "term",
+          "term": "Osa",
+          "definition": "Jeden pohyblivý kloub robotu s vlastním motorem. Rotační osa se otáčí, lineární se posouvá. Šestiosý robot má šest takových kloubů.",
+          "example": "Osa 1 otáčí celým robotem kolem svislé osy."
+        },
+        {
+          "type": "term",
+          "term": "Souřadný systém",
+          "definition": "Počátek (nulový bod) a tři na sebe kolmé osy x, y, z, podle kterých se určuje poloha bodu.",
+          "example": "Bod [200; 50; 300] mm je 200 mm ve směru x, 50 mm ve směru y a 300 mm ve směru z od počátku."
+        },
+        {
+          "type": "term",
+          "term": "TCP (Tool Center Point)",
+          "definition": "Pracovní bod nástroje – místo, kterým nástroj skutečně pracuje. Robot řídí právě jeho polohu.",
+          "example": "Špička svařovacího drátu, střed mezi prsty chapadla."
+        },
+        {
+          "type": "term",
+          "term": "Teach pendant (programovací panel)",
+          "definition": "Ruční ovládací panel s displejem, tlačítkem nouzového zastavení a povolovacím tlačítkem. Slouží k pohybu robotu a k zápisu programu.",
+          "example": "Programátor robotem dojede k dílu a bod uloží."
+        },
+        {
+          "type": "term",
+          "term": "Povolovací tlačítko",
+          "definition": "Tlačítko na boku panelu se třemi polohami: puštěné = stop, středně stisknuté = pohyb povolen, zmáčknuté naplno = stop. Při leknutí člověk tlačítko buď pustí, nebo zmáčkne, a robot se zastaví.",
+          "example": "Bez držení povolovacího tlačítka se robot v ručním režimu nehne."
+        },
+        {
+          "type": "heading",
+          "text": "Souřadné systémy robotu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Systém",
+            "Kde má počátek",
+            "K čemu"
+          ],
+          "rows": [
+            [
+              "osový (kloubový)",
+              "žádný – zadávají se úhly jednotlivých os",
+              "pohyb jednou osou, výchozí poloha"
+            ],
+            [
+              "světový",
+              "pevný bod v buňce",
+              "společný systém pro více robotů a zařízení"
+            ],
+            [
+              "bázový",
+              "v základně robotu",
+              "poloha vůči robotu"
+            ],
+            [
+              "nástrojový",
+              "v TCP nástroje",
+              "posun a natočení ve směru nástroje"
+            ],
+            [
+              "uživatelský (objektový)",
+              "na obrobku nebo přípravku",
+              "program zůstane platný i po posunutí přípravku"
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "souřadný systém",
+              "bezpečnost",
+              "stavba robotu"
+            ],
+            "items": [
+              {
+                "text": "TCP",
+                "group": 0
+              },
+              {
+                "text": "světelná závora",
+                "group": 1
+              },
+              {
+                "text": "SCARA",
+                "group": 2
+              },
+              {
+                "text": "uživatelský systém",
+                "group": 0
+              },
+              {
+                "text": "povolovací tlačítko",
+                "group": 1
+              },
+              {
+                "text": "delta",
+                "group": 2
+              },
+              {
+                "text": "bázový systém",
+                "group": 0
+              },
+              {
+                "text": "oplocení s hlídanými dveřmi",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď pojmy do tří skupin. Pokud nevíš, vrať se k tabulce."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se robot programuje"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**On-line (učením)**: programátor v ručním režimu se sníženou rychlostí dojede robotem k bodům a uloží je panelem.",
+            "**Off-line**: program vznikne v počítači na 3D modelu pracoviště (simulace) a do robotu se nahraje hotový. Výroba mezitím nemusí stát."
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zkontroluj, že nikdo není v nebezpečném prostoru a nouzové zastavení funguje.",
+            "Přepni robot do ručního režimu se sníženou rychlostí.",
+            "Zvol správný nástroj (TCP) a souřadný systém.",
+            "Drž povolovací tlačítko a dojeď k prvnímu bodu, ulož ho.",
+            "Ulož další body a zvol typ pohybu mezi nimi (přímka, kloubový pohyb).",
+            "Program vyzkoušej krok po kroku sníženou rychlostí, teprve pak v automatu."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Přípravek s dílem se posunul o 20 mm. Program byl naučený v uživatelském souřadném systému přípravku. Co musíš udělat?",
+          "answer": "Body programu jsou zadané vůči přípravku, ne vůči robotu. Stačí **znovu zaměřit uživatelský souřadný systém** (3 body na přípravku). Všechny body programu se posunou s ním a není nutné je učit znovu."
+        },
+        {
+          "type": "example",
+          "question": "Bod je v bázovém systému [500; 0; 400] mm. Robot má jet o 100 mm výš. Jaké budou souřadnice?",
+          "answer": "Výška je osa z bázového systému. Přičtu 100 mm k z: 400 + 100 = 500. Nový bod je **[500; 0; 500] mm**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Po výměně chapadla za delší stačí pustit starý program.",
+          "right": "Po výměně nástroje se musí změřit a nastavit nový TCP.",
+          "why": "Robot řídí polohu TCP. S delším nástrojem by špička byla jinde, než si robot myslí, a mohl by narazit."
+        },
+        {
+          "type": "summary",
+          "text": "Robot jede podle zvoleného souřadného systému: osového, světového, bázového, nástrojového (TCP) nebo uživatelského. Programuje se učením přes teach pendant s povolovacím tlačítkem nebo off-line v simulaci."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Kolik stupňů volnosti má volné těleso v prostoru?",
+      "answers": [
+        "6",
+        "šest",
+        "sest"
+      ],
+      "hints": [
+        "Počítej posuny podél os x, y, z.",
+        "A přidej natočení kolem těchto os."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ robotu s typickým použitím.",
+      "pairs": [
+        [
+          "kloubový šestiosý",
+          "bodové svařování karoserií"
+        ],
+        [
+          "SCARA",
+          "rychlá montáž na stole"
+        ],
+        [
+          "kartézský portálový",
+          "paletizace na velké ploše"
+        ],
+        [
+          "delta",
+          "rychlé vybírání sušenek z pásu"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka TCP u robotu?",
+      "options": [
+        "pracovní bod nástroje",
+        "řídicí počítač robotu",
+        "typ chapadla"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém souřadném systému je nejlepší naučit program, když se přípravek občas posouvá?",
+      "options": [
+        "uživatelském (objektovém)",
+        "osovém",
+        "světovém"
+      ],
+      "answer": 0,
+      "hints": [
+        "Hledej systém, který je spojený s obrobkem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Povolovací tlačítko zastaví robot, když ho obsluha pustí i když ho zmáčkne naplno.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Kolaborativní robot smí pracovat s člověkem bez posouzení rizik celé aplikace.",
+      "answer": false
+    },
+    {
+      "type": "choice",
+      "question": "Který robot má paralelní kinematiku?",
+      "options": [
+        "delta",
+        "SCARA",
+        "kartézský"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik lineárních os má typický kartézský robot?",
+      "answers": [
+        "3",
+        "tři",
+        "tri"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky naučení bodu robotu.",
+      "items": [
+        "ověřit, že v prostoru robotu nikdo není",
+        "přepnout do ručního režimu se sníženou rychlostí",
+        "zvolit nástroj a souřadný systém",
+        "dojet k bodu se stisknutým povolovacím tlačítkem",
+        "uložit bod"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je koncový efektor?",
+      "options": [
+        "nástroj na konci ruky robotu",
+        "koncový spínač osy",
+        "poslední řádek programu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Bod má v bázovém systému z = 350 mm. Robot sjede o 120 mm dolů. Nové z (v mm) =",
+      "answers": [
+        "230"
+      ],
+      "hints": [
+        "Dolů znamená zmenšení souřadnice z."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj bezpečnostní prvek s úkolem.",
+      "pairs": [
+        [
+          "oplocení",
+          "brání vstupu k robotu"
+        ],
+        [
+          "světelná závora",
+          "zastaví robot, když někdo projde otvorem"
+        ],
+        [
+          "nouzové zastavení",
+          "okamžitě zastaví stroj při nebezpečí"
+        ],
+        [
+          "povolovací tlačítko",
+          "povoluje pohyb jen při vědomém držení"
+        ]
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš souřadné systémy průmyslového robotu a k čemu se používají.",
+      "answer": "Osový systém zadává úhly jednotlivých os. Světový je pevný v buňce a společný pro více zařízení, bázový je v základně robotu, nástrojový má počátek v TCP a pohybuje se s nástrojem. Uživatelský systém je na obrobku nebo přípravku, takže při jeho posunutí stačí systém znovu zaměřit."
+    },
+    {
+      "type": "open",
+      "question": "Jak je zajištěna bezpečnost lidí u průmyslového robotu?",
+      "answer": "Klasický robot pracuje za oplocením s hlídanými dveřmi, vstupy chrání světelné závory nebo skenery a všude je nouzové zastavení. Při programování se jezdí sníženou rychlostí s povolovacím tlačítkem. Kolaborativní robot omezuje rychlost a sílu podle ISO 10218 a ISO/TS 15066, ale i u něj se posuzují rizika celé aplikace."
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "plc",
+  "title": "PLC: stavba a cyklus",
+  "emoji": "🖥️",
+  "explanations": [
+    {
+      "title": "Mozek linky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pračka sama napustí vodu, ohřeje ji, točí bubnem a nakonec odčerpá. Řídí ji malý počítač, který čte čidla a podle programu zapíná motor a ventily. V továrně dělá stejnou práci **PLC**: řídí dopravníky, lisy, balicí linky i celé haly."
+        },
+        {
+          "type": "text",
+          "text": "Dřív se stroje řídily stovkami relé zapojených drátem. Každá změna znamenala předrátovat skříň. S PLC stačí změnit program."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "PLC (programovatelný logický automat)",
+          "definition": "Průmyslový počítač odolný proti prachu, vibracím a rušení. Čte signály ze strojů, zpracuje je podle programu a podle výsledku zapíná a vypíná zařízení.",
+          "example": "PLC na balicí lince zjistí čidlem krabici a pustí lepičku."
+        },
+        {
+          "type": "term",
+          "term": "Vstup",
+          "definition": "Místo, kam do PLC přichází signál zvenku – od tlačítka, koncového spínače nebo snímače.",
+          "example": "Tlačítko START připojené na vstup PLC."
+        },
+        {
+          "type": "term",
+          "term": "Výstup",
+          "definition": "Místo, ze kterého PLC posílá signál ven – zapíná stykač, cívku ventilu, kontrolku.",
+          "example": "Výstup PLC sepne cívku stykače a ten pustí proud do motoru."
+        },
+        {
+          "type": "term",
+          "term": "Digitální signál",
+          "definition": "Signál, který má jen dva stavy: 0 (vypnuto) a 1 (zapnuto). V průmyslu typicky 0 V a 24 V.",
+          "example": "Koncový spínač je buď sepnutý, nebo rozepnutý."
+        },
+        {
+          "type": "term",
+          "term": "Analogový signál",
+          "definition": "Signál, který se mění plynule a nese hodnotu veličiny. Běžné jsou 0–10 V a 4–20 mA.",
+          "example": "Snímač tlaku posílá 4 mA při 0 bar a 20 mA při 10 bar."
+        },
+        {
+          "type": "heading",
+          "text": "Z čeho se PLC skládá"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Napájecí zdroj** – nejčastěji 24 V DC pro PLC i pro vstupy a výstupy.",
+            "**CPU** (procesorová jednotka) – vykonává program.",
+            "**Paměť** – uchovává program a data (stavy, hodnoty časovačů a čítačů).",
+            "**Vstupní moduly** – digitální (DI) a analogové (AI).",
+            "**Výstupní moduly** – digitální (DO, tranzistorové nebo reléové) a analogové (AO).",
+            "**Komunikační rozhraní** – pro programování z počítače a pro propojení s dalšími zařízeními."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Kompaktní a modulární PLC",
+          "definition": "**Kompaktní** PLC má zdroj, CPU i vstupy a výstupy v jedné krabičce. **Modulární** se skládá z jednotlivých modulů na liště nebo nosníku a dá se rozšiřovat.",
+          "example": "Malý stroj s 10 tlačítky: kompaktní PLC. Celá linka se stovkami signálů: modulární."
+        },
+        {
+          "type": "heading",
+          "text": "Jak PLC pracuje: cyklus"
+        },
+        {
+          "type": "text",
+          "text": "PLC neběží jako běžný program „jednou od začátku do konce“. Opakuje dokola stejný **cyklus**, třeba stokrát za sekundu."
+        },
+        {
+          "type": "widget",
+          "widget": "cycle",
+          "props": {
+            "steps": [
+              "Přečte všechny vstupy a uloží je do obrazu procesu",
+              "Vykoná program shora dolů",
+              "Zapíše výsledky na výstupy",
+              "Provede komunikaci a vnitřní kontroly"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Projdi si cyklus šipkami. Všimni si, že program pracuje s **uloženou kopií** vstupů, ne přímo se svorkami."
+        },
+        {
+          "type": "term",
+          "term": "Obraz procesu",
+          "definition": "Oblast paměti, kam PLC na začátku cyklu zkopíruje stavy vstupů a kam program zapisuje výstupy. Na svorky se výstupy přepíšou až na konci cyklu.",
+          "example": "Když se tlačítko stiskne uprostřed cyklu, program to uvidí až v dalším cyklu."
+        },
+        {
+          "type": "term",
+          "term": "Doba cyklu",
+          "definition": "Čas, za který PLC projde celý cyklus jednou. Bývá v jednotkách až desítkách milisekund a roste s délkou programu.",
+          "example": "Doba cyklu 5 ms znamená 200 cyklů za sekundu."
+        },
+        {
+          "type": "term",
+          "term": "Watchdog",
+          "definition": "Hlídač doby cyklu. Když cyklus trvá déle, než je nastavený limit (třeba kvůli nekonečné smyčce), PLC přejde do stavu STOP a výstupy vypne.",
+          "example": "Chyba v programu zacyklí smyčku → watchdog zastaví PLC."
+        },
+        {
+          "type": "example",
+          "question": "PLC má dobu cyklu 10 ms. Čidlo vyšle impulz dlouhý 4 ms. Je jisté, že ho program zaznamená?",
+          "answer": "Vstupy se čtou jen jednou za cyklus, tedy jednou za 10 ms. Impulz 4 ms může začít i skončit mezi dvěma čteními. **Není to jisté.** Krátké impulzy se řeší rychlými vstupy nebo přerušením."
+        },
+        {
+          "type": "example",
+          "question": "Program obsahuje 2 000 instrukcí, jedna trvá 0,5 µs. Čtení a zápis vstupů a výstupů trvá 1 ms. Jak dlouhý je cyklus přibližně?",
+          "answer": "Program: 2 000 · 0,5 µs = 1 000 µs = 1 ms. Plus 1 ms na vstupy a výstupy. Cyklus trvá **asi 2 ms** (bez komunikace)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když se vstup změní, PLC na to okamžitě zareaguje uprostřed programu.",
+          "right": "Změnu vstupu program uvidí až po dalším čtení vstupů na začátku cyklu.",
+          "why": "Program pracuje s obrazem procesu, který se během cyklu nemění. Reakce proto trvá až zhruba dvě doby cyklu."
+        },
+        {
+          "type": "summary",
+          "text": "PLC = průmyslový počítač se vstupy, CPU, pamětí a výstupy. Pracuje v cyklu: přečte vstupy do obrazu procesu, vykoná program, zapíše výstupy. Watchdog hlídá, aby cyklus nebyl příliš dlouhý."
+        }
+      ]
+    },
+    {
+      "title": "Schéma a adresy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Elektrikář dostane rozvaděč s PLC a výkres. Musí poznat, kam patří který vodič a jak ho najde v programu. K tomu potřebuje znát stavbu PLC a jeho adresy."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "PLC",
+          "definition": "Programovatelný logický automat – průmyslový řídicí počítač. Čte vstupy, vykonává program a nastavuje výstupy."
+        },
+        {
+          "type": "term",
+          "term": "Modul",
+          "definition": "Samostatná část PLC s jednou funkcí, která se zacvakne vedle ostatních.",
+          "example": "Modul 16 digitálních vstupů, modul 4 analogových výstupů."
+        },
+        {
+          "type": "term",
+          "term": "Adresa",
+          "definition": "Označení konkrétního vstupu nebo výstupu, podle kterého ho najdeš v programu. Podle normy IEC 61131-3 začíná znakem `%`, pak písmeno oblasti a čísla.",
+          "example": "`%I0.0` je vstup č. 0 v bajtu 0."
+        },
+        {
+          "type": "term",
+          "term": "Bit a bajt",
+          "definition": "Bit je jedna hodnota 0 nebo 1. Bajt je skupina 8 bitů, číslovaných 0 až 7.",
+          "example": "`%Q1.7` = výstupní bajt 1, bit 7 (poslední bit toho bajtu)."
+        },
+        {
+          "type": "heading",
+          "text": "Části PLC v tabulce"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Část",
+            "Co dělá",
+            "Typická hodnota"
+          ],
+          "rows": [
+            [
+              "napájecí zdroj",
+              "dodává napětí",
+              "24 V DC"
+            ],
+            [
+              "CPU",
+              "vykonává program",
+              "doba cyklu jednotky ms"
+            ],
+            [
+              "paměť programu a dat",
+              "uchovává program, stavy, časovače",
+              "podle typu CPU"
+            ],
+            [
+              "DI – digitální vstupy",
+              "čtou tlačítka, spínače",
+              "24 V DC = log. 1"
+            ],
+            [
+              "DO – digitální výstupy",
+              "spínají cívky, kontrolky",
+              "tranzistor nebo relé"
+            ],
+            [
+              "AI – analogové vstupy",
+              "čtou snímače",
+              "4–20 mA, 0–10 V"
+            ],
+            [
+              "AO – analogové výstupy",
+              "řídí ventily, měniče",
+              "4–20 mA, 0–10 V"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Adresy podle IEC 61131-3"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Zápis",
+            "Význam"
+          ],
+          "rows": [
+            [
+              "%I",
+              "vstup (input)"
+            ],
+            [
+              "%Q",
+              "výstup"
+            ],
+            [
+              "%M",
+              "paměť (vnitřní proměnná)"
+            ],
+            [
+              "X / B / W / D",
+              "velikost: bit, bajt, slovo 16 bitů, dvojslovo 32 bitů"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Když velikost chybí, jde o bit: `%I0.3` je bit 3 vstupního bajtu 0. Konkrétní výrobci adresy upravují (Siemens v německém zobrazení píše `E` pro vstup a `A` pro výstup a znak % vynechává), princip je stejný. V moderním programu se místo adres používají **symbolické názvy**, např. `Tlacitko_START`."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vstup PLC",
+              "výstup PLC"
+            ],
+            "items": [
+              {
+                "text": "tlačítko START",
+                "group": 0
+              },
+              {
+                "text": "cívka stykače motoru",
+                "group": 1
+              },
+              {
+                "text": "indukční snímač",
+                "group": 0
+              },
+              {
+                "text": "kontrolka PORUCHA",
+                "group": 1
+              },
+              {
+                "text": "koncový spínač",
+                "group": 0
+              },
+              {
+                "text": "cívka elektromagnetického ventilu",
+                "group": 1
+              },
+              {
+                "text": "snímač teploty 4–20 mA",
+                "group": 0
+              },
+              {
+                "text": "houkačka",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď zařízení: co dává PLC informaci, a co PLC ovládá?"
+        },
+        {
+          "type": "heading",
+          "text": "Cyklus krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zkopíruj stavy všech vstupů do obrazu vstupů (%I).",
+            "Proveď program od první instrukce po poslední; čti jen z obrazu, výsledky piš do obrazu výstupů (%Q).",
+            "Přepiš obraz výstupů na výstupní svorky.",
+            "Obsluž komunikaci a diagnostiku, zkontroluj dobu cyklu (watchdog).",
+            "Začni znovu bodem 1."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Režimy RUN a STOP",
+          "definition": "V režimu **RUN** PLC vykonává program. V režimu **STOP** program neběží a výstupy jsou vypnuté (případně v nastaveném bezpečném stavu).",
+          "example": "Nahrávání nového programu se obvykle dělá v režimu STOP."
+        },
+        {
+          "type": "example",
+          "question": "Na kterou adresu patří 3. vstup ve 2. vstupním bajtu, když se bajty i bity číslují od nuly?",
+          "answer": "2. bajt má číslo 1, 3. vstup v něm má číslo 2. Adresa je **%I1.2**."
+        },
+        {
+          "type": "example",
+          "question": "Linka má 40 tlačítek a snímačů a 20 ovládaných zařízení. Kolik modulů po 16 DI a po 16 DO je potřeba?",
+          "answer": "Vstupy: 40 / 16 = 2,5 → **3 moduly DI**. Výstupy: 20 / 16 = 1,25 → **2 moduly DO**. Zaokrouhluje se vždy nahoru a je dobré nechat rezervu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "`%Q0.8` je devátý výstup v bajtu 0.",
+          "right": "Bity v bajtu mají čísla jen 0 až 7. Devátý výstup je `%Q1.0`.",
+          "why": "Bajt má 8 bitů. Po bitu 7 se pokračuje bitem 0 dalšího bajtu."
+        },
+        {
+          "type": "summary",
+          "text": "PLC tvoří zdroj, CPU, paměť a moduly DI, DO, AI, AO. Adresy podle IEC: %I vstupy, %Q výstupy, %M paměť, bity 0–7 v bajtu. Cyklus: vstupy → program → výstupy → kontrola."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka PLC?",
+      "options": [
+        "programovatelný logický automat",
+        "počítačová logická centrála",
+        "průmyslový linkový čip"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď fáze cyklu PLC.",
+      "items": [
+        "čtení vstupů do obrazu procesu",
+        "vykonání programu",
+        "zápis výstupů",
+        "komunikace a diagnostika"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Program PLC během cyklu čte vstupy přímo ze svorek, takže vidí každou změnu okamžitě.",
+      "answer": false,
+      "explanation": "Program pracuje s obrazem procesu načteným na začátku cyklu."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá watchdog, když cyklus trvá příliš dlouho?",
+      "options": [
+        "přepne PLC do STOP a vypne výstupy",
+        "zrychlí procesor",
+        "smaže program"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj modul s tím, co se na něj připojuje.",
+      "pairs": [
+        [
+          "DI",
+          "tlačítko"
+        ],
+        [
+          "DO",
+          "cívka stykače"
+        ],
+        [
+          "AI",
+          "snímač tlaku 4–20 mA"
+        ],
+        [
+          "AO",
+          "řízení frekvenčního měniče 0–10 V"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké napětí (ve voltech, DC) se nejčastěji používá pro napájení PLC a jeho digitálních vstupů?",
+      "answers": [
+        "24",
+        "24 V",
+        "24V"
+      ],
+      "hints": [
+        "Je to malé bezpečné stejnosměrné napětí.",
+        "Je dvojnásobek napětí autobaterie."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš adresu podle IEC 61131-3 pro výstup bit 5 v bajtu 0.",
+      "answers": [
+        "%Q0.5",
+        "Q0.5",
+        "%QX0.5"
+      ],
+      "hints": [
+        "Výstup se značí písmenem Q.",
+        "Nejdřív číslo bajtu, za tečkou číslo bitu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Modulární PLC lze rozšířit přidáním dalších vstupních nebo výstupních modulů.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "PLC má dobu cyklu 4 ms. Kolik cyklů proběhne za 1 sekundu?",
+      "answers": [
+        "250"
+      ],
+      "hints": [
+        "1 s = 1 000 ms.",
+        "Vyděl celkový čas dobou jednoho cyklu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který analogový signál je v průmyslu běžný a pozná i přerušený vodič?",
+      "options": [
+        "4–20 mA",
+        "0–20 mA",
+        "0–230 V"
+      ],
+      "answer": 0,
+      "explanation": "U 4–20 mA odpovídá nule měřené veličiny 4 mA. Proud 0 mA proto znamená poruchu, např. přerušený vodič."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik bitů má jeden bajt?",
+      "options": [
+        "8",
+        "10",
+        "16"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Popiš, z jakých částí se skládá PLC a co dělá každá z nich.",
+      "answer": "Napájecí zdroj (obvykle 24 V DC), CPU, které vykonává program, paměť pro program a data, vstupní moduly (digitální a analogové) pro signály ze snímačů a výstupní moduly pro ovládání akčních členů, plus komunikační rozhraní."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak probíhá cyklus PLC a proč může PLC přehlédnout velmi krátký impulz.",
+      "answer": "PLC na začátku cyklu přečte vstupy do obrazu procesu, vykoná program a zapíše výstupy, pak vše opakuje. Vstupy čte jen jednou za cyklus, takže impulz kratší než doba cyklu může proběhnout mezi dvěma čteními."
+    }
+  ]
+}

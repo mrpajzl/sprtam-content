@@ -1,0 +1,479 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "senzory",
+  "title": "Senzory (snímače)",
+  "emoji": "📡",
+  "explanations": [
+    {
+      "title": "Smysly stroje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Člověk vidí, cítí teplo a hmatem pozná, že se něčeho dotkl. Stroj nic z toho neumí. Aby linka věděla, že na pásu leží díl, že je válec vysunutý nebo že je pec horká, potřebuje **senzory**. Jsou to smysly stroje."
+        },
+        {
+          "type": "text",
+          "text": "Mechatronik senzory vybírá, montuje, zapojuje a hledá na nich závady. Musí proto vědět, co který typ „vidí“ a co ne."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Senzor (snímač)",
+          "definition": "Součástka, která měří nějakou fyzikální veličinu nebo zjistí přítomnost předmětu a převede to na elektrický signál.",
+          "example": "Snímač na pásu sepne, když kolem projede krabice."
+        },
+        {
+          "type": "term",
+          "term": "Binární (dvouhodnotový) snímač",
+          "definition": "Má jen dva stavy výstupu: sepnuto / nesepnuto. Říká „předmět tu je, nebo není“.",
+          "example": "Koncový spínač dveří."
+        },
+        {
+          "type": "term",
+          "term": "Analogový snímač",
+          "definition": "Výstup se plynule mění podle měřené veličiny, typicky 0–10 V nebo 4–20 mA.",
+          "example": "Snímač tlaku dává 4 mA při 0 bar a 20 mA při 10 bar."
+        },
+        {
+          "type": "term",
+          "term": "Bezdotykový snímač",
+          "definition": "Pozná předmět, aniž by se ho dotkl. Nic se v něm mechanicky neopotřebuje.",
+          "example": "Indukční snímač pozná ocelový šroub na vzdálenost několika milimetrů."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo co „vidí“"
+        },
+        {
+          "type": "term",
+          "term": "Indukční snímač",
+          "definition": "Vytváří kolem své čelní plochy střídavé magnetické pole. Kovový předmět v poli toto pole oslabí a snímač sepne. Reaguje **jen na kovy**.",
+          "example": "Hlídá, jestli je na paletě ocelový díl."
+        },
+        {
+          "type": "term",
+          "term": "Kapacitní snímač",
+          "definition": "Reaguje na změnu elektrické kapacity před čelní plochou. Pozná kovy **i nekovy**: plast, dřevo, sklo, vodu, granulát.",
+          "example": "Hlídá hladinu plastového granulátu v násypce, i přes plastovou stěnu."
+        },
+        {
+          "type": "term",
+          "term": "Optický snímač",
+          "definition": "Vysílá světlo (často infračervené nebo červené) a sleduje, jestli dopadne do přijímače. Pozná téměř jakýkoli předmět na větší vzdálenost.",
+          "example": "Světelná závora u vjezdu do garáže."
+        },
+        {
+          "type": "text",
+          "text": "Optické snímače mají tři hlavní provedení:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Jednocestná závora** – vysílač a přijímač jsou proti sobě. Předmět přeruší paprsek. Největší dosah, nejspolehlivější.",
+            "**Reflexní závora** – vysílač i přijímač jsou v jednom pouzdře, naproti je **odrazka**. Předmět přeruší paprsek mezi snímačem a odrazkou.",
+            "**Difuzní (reflexní) snímač** – žádná odrazka, světlo se odrazí přímo od předmětu. Nejjednodušší montáž, nejmenší dosah, záleží na barvě a povrchu předmětu."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Spínací vzdálenost (Sn)",
+          "definition": "Vzdálenost od čela snímače, na kterou ještě spolehlivě sepne. Udává se v katalogu pro normalizovaný ocelový terčík.",
+          "example": "Indukční snímač M12 má Sn třeba 4 mm. Hliník pozná až blíž, protože pro neželezné kovy je spínací vzdálenost menší."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "indukční ano",
+              "jen kapacitní nebo optický"
+            ],
+            "items": [
+              {
+                "text": "ocelový hřídel",
+                "group": 0
+              },
+              {
+                "text": "hliníkový profil",
+                "group": 0
+              },
+              {
+                "text": "plastová lahev",
+                "group": 1
+              },
+              {
+                "text": "dřevěná deska",
+                "group": 1
+              },
+              {
+                "text": "mosazná matice",
+                "group": 0
+              },
+              {
+                "text": "papírová krabice",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď předměty: který zachytí indukční snímač? Pravidlo zní: jen kov."
+        },
+        {
+          "type": "heading",
+          "text": "Teplota a tlak"
+        },
+        {
+          "type": "term",
+          "term": "Odporový teploměr Pt100",
+          "definition": "Platinový drátek nebo vrstva, jejíž odpor s teplotou roste. Pt100 má při 0 °C přesně 100 Ω a na každý stupeň přibude asi 0,385 Ω.",
+          "example": "Při 100 °C má asi 138,5 Ω."
+        },
+        {
+          "type": "term",
+          "term": "Termočlánek",
+          "definition": "Spoj dvou různých kovů. Při rozdílu teplot mezi měřicím a srovnávacím koncem vzniká malé napětí (milivolty). Snese vysoké teploty.",
+          "example": "Typ K (NiCr–NiAl) měří v pecích stovky °C."
+        },
+        {
+          "type": "term",
+          "term": "Termistor",
+          "definition": "Polovodičový odpor, který na teplotu reaguje velmi citlivě. **NTC** má s rostoucí teplotou odpor menší, **PTC** větší.",
+          "example": "NTC hlídá teplotu baterie, PTC chrání vinutí motoru proti přehřátí."
+        },
+        {
+          "type": "term",
+          "term": "Snímač tlaku",
+          "definition": "Tlak prohne tenkou membránu. Na ní jsou odpory (tenzometry nebo piezorezistivní prvek), které při prohnutí mění odpor. Elektronika z toho udělá signál.",
+          "example": "Hlídá tlak vzduchu v rozvodu 6 bar a dává 4–20 mA."
+        },
+        {
+          "type": "example",
+          "question": "Snímač Pt100 naměřil odpor 119,25 Ω. Jaká je přibližně teplota?",
+          "answer": "Odpor nad 100 Ω: 119,25 − 100 = 19,25 Ω. Na 1 °C připadá asi 0,385 Ω. Teplota ≈ 19,25 / 0,385 = **50 °C**."
+        },
+        {
+          "type": "example",
+          "question": "Na pásu jedou kartonové krabice, některé prázdné, některé s kovovou součástkou. Jak poznáš krabici a jak součástku?",
+          "answer": "Krabici (papír) zachytí **optický** snímač, třeba reflexní závora přes pás. Kovovou součástku uvnitř pozná **indukční** snímač pod pásem, protože papír a gumový pás magnetické pole neruší."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Indukčním snímačem pohlídám, jestli je v násypce plastový granulát.",
+          "right": "Na plast je potřeba kapacitní snímač, případně optický.",
+          "why": "Indukční snímač reaguje jen na elektricky vodivé kovy. Plast jeho magnetické pole neovlivní."
+        },
+        {
+          "type": "summary",
+          "text": "Indukční snímač vidí jen kovy, kapacitní i nekovy, optický téměř cokoli na větší vzdálenost (závora jednocestná, reflexní, difuzní). Teplotu měří Pt100, termočlánek a termistor, tlak membrána s tenzometry."
+        }
+      ]
+    },
+    {
+      "title": "Výběr a zapojení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V katalogu najdeš stovky snímačů. Když vybereš špatný, buď nesepne, nebo sepne, kdy nemá. A když ho správně vybereš, ale špatně zapojíš, PLC signál neuvidí. Tady je postup, jak na to."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Senzor (snímač)",
+          "definition": "Prvek, který převádí měřenou veličinu nebo přítomnost předmětu na elektrický signál pro řídicí systém.",
+          "example": "Indukční snímač dává 24 V do vstupu PLC, když je před ním kov."
+        },
+        {
+          "type": "term",
+          "term": "Třívodičový snímač",
+          "definition": "Nejběžnější binární snímač. Má tři vodiče: napájení +24 V (hnědý), 0 V (modrý) a výstup (černý).",
+          "example": "Indukční snímač M12 s kabelem."
+        },
+        {
+          "type": "term",
+          "term": "Výstup PNP",
+          "definition": "Sepnutý snímač připojí výstup na **+24 V**. Zátěž (vstup PLC) je zapojená mezi výstup a 0 V. Snímač proud „dodává“.",
+          "example": "V Evropě nejběžnější varianta pro vstupy PLC."
+        },
+        {
+          "type": "term",
+          "term": "Výstup NPN",
+          "definition": "Sepnutý snímač připojí výstup na **0 V**. Zátěž je mezi +24 V a výstupem. Snímač proud „odebírá“.",
+          "example": "Časté u asijských strojů."
+        },
+        {
+          "type": "term",
+          "term": "Spínací vzdálenost (Sn)",
+          "definition": "Do jaké vzdálenosti od čela snímač spolehlivě sepne. Pro bezpečnou práci se snímač montuje blíž, než je Sn.",
+          "example": "Sn = 8 mm, předmět jezdí ve vzdálenosti 4–5 mm."
+        },
+        {
+          "type": "term",
+          "term": "Analogový výstup 4–20 mA",
+          "definition": "Proudový signál: 4 mA odpovídá začátku rozsahu, 20 mA konci. Když teče 0 mA, víme, že je přerušený vodič.",
+          "example": "Snímač tlaku 0–10 bar: 12 mA = 5 bar."
+        },
+        {
+          "type": "heading",
+          "text": "Jak vybrat snímač přítomnosti"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Z čeho je předmět? Jen kov → **indukční**. Nekov, kapalina, sypký materiál → **kapacitní** nebo **optický**.",
+            "Jak daleko je? Do pár mm → indukční/kapacitní. Desítky cm až metry → **optický**.",
+            "Je místo na odrazku nebo přijímač naproti? Ano → **závora** (spolehlivější). Ne → **difuzní** snímač.",
+            "Jaký vstup má řídicí systém? Podle toho **PNP nebo NPN**, a napájení 24 V DC.",
+            "Ověř prostředí: prach, olej, třísky, teplota. Prach a pára ruší optiku, třísky mohou trvale sepnout indukční snímač."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Typ",
+            "Na co reaguje",
+            "Typický dosah"
+          ],
+          "rows": [
+            [
+              "indukční",
+              "kovy",
+              "jednotky mm až desítky mm"
+            ],
+            [
+              "kapacitní",
+              "kovy i nekovy",
+              "jednotky mm až desítky mm"
+            ],
+            [
+              "optický difuzní",
+              "téměř vše",
+              "centimetry až desítky cm"
+            ],
+            [
+              "optická závora",
+              "téměř vše, co nepropouští světlo",
+              "metry"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Snímače teploty"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Snímač",
+            "Princip",
+            "Typické použití"
+          ],
+          "rows": [
+            [
+              "Pt100",
+              "odpor platiny roste s teplotou (100 Ω při 0 °C)",
+              "přesné měření, potrubí, stroje"
+            ],
+            [
+              "termočlánek",
+              "termoelektrické napětí dvou kovů",
+              "pece, vysoké teploty"
+            ],
+            [
+              "termistor NTC/PTC",
+              "odpor polovodiče silně klesá/roste",
+              "ochrana motorů, levná elektronika"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Snímač tlaku má rozsah 0–10 bar a výstup 4–20 mA. Do PLC teče 12 mA. Jaký je tlak?",
+          "answer": "Rozpětí proudu je 20 − 4 = 16 mA na 10 bar, tedy 1,6 mA na 1 bar. Nad začátkem je 12 − 4 = 8 mA. Tlak = 8 / 1,6 = **5 bar**."
+        },
+        {
+          "type": "example",
+          "question": "Snímač s výstupem PNP sepnul. Jaké napětí naměříš multimetrem mezi černým vodičem a modrým (0 V)?",
+          "answer": "PNP po sepnutí připojí výstup na +24 V. Mezi výstupem a 0 V naměříš asi **24 V**. Když nesepne, je tam přibližně 0 V."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Snímač PNP připojím na vstup PLC, který je určen pro NPN – je to jedno, oba mají 24 V.",
+          "right": "Typ výstupu snímače musí odpovídat zapojení vstupu PLC.",
+          "why": "PNP spíná na +24 V, NPN na 0 V. Při záměně neteče vstupem proud správným směrem a PLC sepnutí nepozná."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Signál 4–20 mA ukazuje 0 mA, takže tlak je 0 bar.",
+          "right": "Nulovému tlaku odpovídají 4 mA. 0 mA znamená poruchu, nejčastěji přerušený vodič.",
+          "why": "Proto se začíná od 4 mA: chyba vedení je hned poznat."
+        },
+        {
+          "type": "summary",
+          "text": "Snímač vybíráš podle materiálu předmětu, vzdálenosti, místa na montáž a prostředí. Musí sedět typ výstupu (PNP/NPN) k vstupu PLC. Analogové 4–20 mA přepočítáš lineárně, 0 mA znamená poruchu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Na který materiál indukční snímač NEsepne?",
+      "options": [
+        "plast",
+        "ocel",
+        "hliník",
+        "mosaz"
+      ],
+      "answer": 0,
+      "explanation": "Indukční snímač reaguje jen na kovy."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým snímačem zjistíš hladinu vody v plastové nádrži zvenku?",
+      "options": [
+        "kapacitním",
+        "indukčním",
+        "jazýčkovým kontaktem",
+        "Pt100"
+      ],
+      "answer": 0,
+      "hints": [
+        "Voda ani plast nejsou kovy.",
+        "Který snímač reaguje i na nekovy?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj optický snímač s popisem.",
+      "pairs": [
+        [
+          "jednocestná závora",
+          "vysílač a přijímač proti sobě"
+        ],
+        [
+          "reflexní závora",
+          "naproti je odrazka"
+        ],
+        [
+          "difuzní snímač",
+          "světlo se odráží od předmětu"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik ohmů má snímač Pt100 při 0 °C?",
+      "answers": [
+        "100"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pt100 (asi 0,385 Ω na 1 °C) ukazuje 107,7 Ω. Teplota ve °C =",
+      "answers": [
+        "20"
+      ],
+      "hints": [
+        "Kolik ohmů přibylo nad hodnotu při 0 °C?",
+        "Ten rozdíl vyděl 0,385."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Snímač 0–10 bar s výstupem 4–20 mA dává 16 mA. Tlak v barech =",
+      "answers": [
+        "7,5",
+        "7.5"
+      ],
+      "hints": [
+        "Celý rozsah 10 bar odpovídá 16 mA rozdílu.",
+        "Od proudu odečti 4 mA a přepočítej."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "U termistoru NTC s rostoucí teplotou odpor klesá.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Snímač s výstupem PNP po sepnutí připojí výstup na 0 V.",
+      "answer": false,
+      "explanation": "PNP spíná na +24 V, NPN na 0 V."
+    },
+    {
+      "type": "choice",
+      "question": "Který snímač teploty se hodí do pece s teplotou kolem 900 °C?",
+      "options": [
+        "termočlánek",
+        "termistor NTC",
+        "kapacitní snímač"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj barvu vodiče třívodičového snímače s významem.",
+      "pairs": [
+        [
+          "hnědý",
+          "+24 V"
+        ],
+        [
+          "modrý",
+          "0 V"
+        ],
+        [
+          "černý",
+          "výstup"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Signál 4–20 mA ukazuje 0 mA. Co to nejspíš znamená?",
+      "options": [
+        "přerušený vodič nebo vadný snímač",
+        "nejnižší hodnotu rozsahu",
+        "nejvyšší hodnotu rozsahu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď optické snímače od největšího typického dosahu po nejmenší.",
+      "items": [
+        "jednocestná závora",
+        "reflexní závora",
+        "difuzní snímač"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej indukční a kapacitní snímač: princip, co detekují a příklad použití.",
+      "answer": "Indukční vytváří střídavé magnetické pole, které kov oslabí – detekuje jen kovy, např. polohu ocelového dílu. Kapacitní reaguje na změnu kapacity – detekuje i nekovy (plast, dřevo, kapaliny), např. hladinu granulátu v násypce."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi výstupem PNP a NPN.",
+      "answer": "Sepnutý PNP snímač připojí výstup na +24 V a zátěž je mezi výstupem a 0 V. Sepnutý NPN připojí výstup na 0 V a zátěž je mezi +24 V a výstupem. Typ musí odpovídat vstupu řídicího systému."
+    }
+  ]
+}
