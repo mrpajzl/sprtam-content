@@ -1,0 +1,580 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "cleny-der-die-das",
+  "title": "Členy der, die, das, ein, eine a kein",
+  "emoji": "📦",
+  "explanations": [
+    {
+      "title": "Tři krabice",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V češtině poznáš rod podle konce slova: *ten* stůl, *ta* lampa, *to* auto. Němčina na to má malé slovíčko před podstatným jménem, **člen**: *der Tisch, die Lampe, das Auto*."
+        },
+        {
+          "type": "text",
+          "text": "Člen je jako štítek na krabici. Říká, do které ze tří krabic slovo patří. Bez správného štítku Němci poznají, že jsi cizinec."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podstatné jméno",
+          "definition": "Slovo pro osobu, zvíře nebo věc. V němčině se píše s velkým písmenem.",
+          "example": "der Hund (pes), die Katze (kočka), das Haus (dům)"
+        },
+        {
+          "type": "term",
+          "term": "Rod",
+          "definition": "Skupina, do které podstatné jméno patří: **mužský, ženský, nebo střední**. Česky poznáš rod podle „ten, ta, to“.",
+          "example": "ten pes, ta kočka, to kuře"
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Malé slovo před podstatným jménem, které ukazuje jeho rod. Česky ho nemáme, angličtina má *the* a *a*.",
+          "example": "der = ten, die = ta, das = to"
+        },
+        {
+          "type": "heading",
+          "text": "Určitý člen: der, die, das"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rod",
+            "Člen",
+            "Příklady",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "mužský",
+              "**der**",
+              "der Vater, der Tisch, der Hund",
+              "otec, stůl, pes"
+            ],
+            [
+              "ženský",
+              "**die**",
+              "die Mutter, die Lampe, die Katze",
+              "matka, lampa, kočka"
+            ],
+            [
+              "střední",
+              "**das**",
+              "das Kind, das Auto, das Buch",
+              "dítě, auto, kniha"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: německý rod je často **jiný** než český. *Kniha* je česky ženská, ale *das Buch* je střední. *Slunce* je česky střední, ale *die Sonne* je ženská. Proto se každé slovo uč **i se členem**."
+        },
+        {
+          "type": "heading",
+          "text": "Neurčitý člen: ein, eine"
+        },
+        {
+          "type": "text",
+          "text": "Když o věci mluvíš poprvé nebo je to „nějaká“, použiješ **ein** nebo **eine**. Je to jako anglické *a/an*."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Rod",
+            "určitý (ten)",
+            "neurčitý (nějaký)"
+          ],
+          "rows": [
+            [
+              "mužský",
+              "der Hund",
+              "**ein** Hund"
+            ],
+            [
+              "ženský",
+              "die Katze",
+              "**eine** Katze"
+            ],
+            [
+              "střední",
+              "das Buch",
+              "**ein** Buch"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*Das ist **ein** Hund. **Der** Hund heißt Rex.* = To je (nějaký) pes. (Ten) pes se jmenuje Rex."
+        },
+        {
+          "type": "heading",
+          "text": "Zápor: kein, keine"
+        },
+        {
+          "type": "text",
+          "text": "Když chceš říct, že něco **není** nějaké podstatné jméno, použiješ **kein** (místo *ein*) nebo **keine** (místo *eine*)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kladně",
+            "Záporně",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Das ist ein Hund.",
+              "Das ist **kein** Hund.",
+              "To není pes."
+            ],
+            [
+              "Das ist eine Katze.",
+              "Das ist **keine** Katze.",
+              "To není kočka."
+            ],
+            [
+              "Das ist ein Buch.",
+              "Das ist **kein** Buch.",
+              "To není kniha."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slova podle členu:"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "der",
+              "die",
+              "das"
+            ],
+            "items": [
+              {
+                "text": "Vater",
+                "group": 0
+              },
+              {
+                "text": "Tisch",
+                "group": 0
+              },
+              {
+                "text": "Mutter",
+                "group": 1
+              },
+              {
+                "text": "Sonne",
+                "group": 1
+              },
+              {
+                "text": "Lampe",
+                "group": 1
+              },
+              {
+                "text": "Kind",
+                "group": 2
+              },
+              {
+                "text": "Buch",
+                "group": 2
+              },
+              {
+                "text": "Auto",
+                "group": 2
+              },
+              {
+                "text": "Hund",
+                "group": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Doplň člen: ___ Mädchen (dívka) spielt.",
+          "answer": "Slova na **-chen** jsou vždy střední, i když jde o holku. **Das Mädchen spielt.**"
+        },
+        {
+          "type": "example",
+          "question": "Řekni, že to není lampa, ale kniha. (die Lampe, das Buch)",
+          "answer": "Lampa je ženská → *keine Lampe*. Kniha je střední → *ein Buch*. **Das ist keine Lampe, das ist ein Buch.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "die Buch",
+          "right": "das Buch",
+          "why": "Česká *kniha* je ženská, ale německé *Buch* je střední. Rod se nepřekládá, musíš si ho pamatovat se slovem."
+        },
+        {
+          "type": "summary",
+          "text": "Mužský **der / ein / kein**, ženský **die / eine / keine**, střední **das / ein / kein**. Každé podstatné jméno se uč se členem."
+        }
+      ]
+    },
+    {
+      "title": "Jak rod uhodnout",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rod se většinou musíš naučit nazpaměť. Existuje ale pár vodítek, podle kterých ho často uhodneš. Kdo je zná, má polovinu práce hotovou."
+        },
+        {
+          "type": "text",
+          "text": "A dozvíš se, k čemu se člen hodí ještě: podle něj víš, jestli o věci říct *er*, *sie*, nebo *es*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Slovíčko před podstatným jménem: der (mužský rod), die (ženský rod), das (střední rod).",
+          "example": "der Ball, die Tasche, das Heft"
+        },
+        {
+          "type": "term",
+          "term": "Rod",
+          "definition": "Skupina, do které podstatné jméno patří: mužský, ženský, nebo střední. Česky ho poznáš podle „ten, ta, to“.",
+          "example": "ten stůl, ta lampa, to auto"
+        },
+        {
+          "type": "term",
+          "term": "Přípona",
+          "definition": "Konec slova, který se přidává k základu. Podle některých přípon poznáš rod.",
+          "example": "Zeit**ung**, Mäd**chen**"
+        },
+        {
+          "type": "term",
+          "term": "Zápor",
+          "definition": "Slovo, které větu „otočí“ na opak.",
+          "example": "kein Hund = žádný pes / není to pes"
+        },
+        {
+          "type": "heading",
+          "text": "Vodítka k rodu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Vodítko",
+            "Rod",
+            "Příklady"
+          ],
+          "rows": [
+            [
+              "muži, dny, měsíce",
+              "der",
+              "der Mann, der Montag, der Mai"
+            ],
+            [
+              "ženy",
+              "die",
+              "die Frau, die Lehrerin"
+            ],
+            [
+              "-ung, -heit, -keit, -schaft",
+              "die",
+              "die Zeitung (noviny), die Freiheit (svoboda)"
+            ],
+            [
+              "-chen, -lein",
+              "das",
+              "das Mädchen (dívka), das Brötchen (rohlík)"
+            ],
+            [
+              "většina slov na -e",
+              "die",
+              "die Lampe, die Schule (ale: der Junge = kluk)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Člen a zájmeno patří k sobě"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Podívej se na člen: **der** Tisch.",
+            "der → mužský rod → zájmeno **er**.",
+            "die → **sie**, das → **es**.",
+            "Věta: *Der Tisch ist groß. **Er** ist neu.* = Stůl je velký. Je nový."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Česky by sis řekl „on je nový“ jen o mužském rodu. Němčina to dělá stejně, jen podle **německého** rodu: *Das Buch ist gut. Es ist neu.*"
+        },
+        {
+          "type": "heading",
+          "text": "kein, nebo nicht?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**kein / keine** zapírá **podstatné jméno**, které by mělo *ein/eine* nebo žádný člen: *Ich habe Zeit.* → *Ich habe **keine** Zeit.* (Nemám čas.)",
+            "**nicht** zapírá všechno ostatní, třeba sloveso nebo slovo pro vlastnost: *Ich bin **nicht** müde.* (Nejsem unavený.)"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný člen nebo zápor:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "Zeitung ist neu.",
+                "options": [
+                  "Die",
+                  "Der",
+                  "Das"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "Brötchen ist frisch.",
+                "options": [
+                  "Das",
+                  "Die",
+                  "Der"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Das ist",
+                "after": "Katze.",
+                "options": [
+                  "keine",
+                  "kein",
+                  "nicht"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich bin",
+                "after": "müde.",
+                "options": [
+                  "nicht",
+                  "kein",
+                  "keine"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "Montag ist lang.",
+                "options": [
+                  "Der",
+                  "Die",
+                  "Das"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Jaký je člen u *Wohnung* (byt) a jak řekneš „Byt je velký. Je hezký.“?",
+          "answer": "Konec **-ung** → ženský rod → *die Wohnung*, zájmeno *sie*. **Die Wohnung ist groß. Sie ist schön.**"
+        },
+        {
+          "type": "example",
+          "question": "Řekni: To není auto, je to kolo. (das Auto, das Fahrrad)",
+          "answer": "Auto je střední → *kein Auto*. Kolo je střední → *ein Fahrrad*. **Das ist kein Auto, das ist ein Fahrrad.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Das ist nicht ein Hund.",
+          "right": "Das ist kein Hund.",
+          "why": "Podstatné jméno s *ein* se zapírá slovem **kein**, ne *nicht ein*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Das Mädchen ist nett. Sie ist zwölf.",
+          "right": "Das Mädchen ist nett. Es ist zwölf.",
+          "why": "Gramaticky je *das Mädchen* střední, proto správně *es*. V běžné řeči uslyšíš i *sie*, ale v testu piš *es*."
+        },
+        {
+          "type": "summary",
+          "text": "Vodítka: **-ung, -heit, -keit → die**, **-chen, -lein → das**, muži a dny **→ der**. Člen určuje zájmeno: der → er, die → sie, das → es. Podstatné jméno zapíráš **kein/keine**, ostatní **nicht**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaký člen má „Vater“ (otec)?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": 0,
+      "explanation": "Muži mají mužský rod: der Vater."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký člen má „Buch“ (kniha)?",
+      "options": [
+        "das",
+        "die",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": "Buch je střední rod, i když česká kniha je ženská."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký člen má „Zeitung“ (noviny)?",
+      "options": [
+        "die",
+        "der",
+        "das"
+      ],
+      "answer": 0,
+      "explanation": "Slova na -ung jsou ženského rodu."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký člen má „Mädchen“ (dívka)?",
+      "options": [
+        "das",
+        "die",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": "Slova na -chen jsou vždy střední."
+    },
+    {
+      "type": "input",
+      "question": "Doplň neurčitý člen: Das ist ___ Katze. (die Katze)",
+      "answers": [
+        "eine"
+      ],
+      "explanation": "Ženský rod: die → eine."
+    },
+    {
+      "type": "input",
+      "question": "Doplň neurčitý člen: Das ist ___ Hund. (der Hund)",
+      "answers": [
+        "ein"
+      ],
+      "explanation": "Mužský rod: der → ein."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zápor: Das ist ___ Lampe. (To není lampa.)",
+      "answers": [
+        "keine"
+      ],
+      "explanation": "die Lampe je ženská → keine."
+    },
+    {
+      "type": "match",
+      "question": "Spoj člen s rodem.",
+      "pairs": [
+        [
+          "der",
+          "mužský"
+        ],
+        [
+          "die",
+          "ženský"
+        ],
+        [
+          "das",
+          "střední"
+        ]
+      ],
+      "explanation": "der = ten, die = ta, das = to."
+    },
+    {
+      "type": "match",
+      "question": "Spoj podstatné jméno se zájmenem, které ho nahradí.",
+      "pairs": [
+        [
+          "der Tisch",
+          "er"
+        ],
+        [
+          "die Lampe",
+          "sie"
+        ],
+        [
+          "das Auto",
+          "es"
+        ]
+      ],
+      "explanation": "Zájmeno se řídí německým rodem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Německý rod je vždy stejný jako český.",
+      "answer": false,
+      "explanation": "Například die Sonne (to slunce) nebo das Buch (ta kniha) mají jiný rod než v češtině."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Ich habe keine Zeit.",
+        "Ich habe nicht Zeit.",
+        "Ich habe kein Zeit."
+      ],
+      "answer": 0,
+      "explanation": "Zeit je ženská a je to podstatné jméno → keine Zeit."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Ich bin ___ müde.",
+      "options": [
+        "nicht",
+        "kein",
+        "keine"
+      ],
+      "answer": 0,
+      "explanation": "müde (unavený) je vlastnost, ne podstatné jméno, proto nicht."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Das ist ein Hund. Der Hund heißt Rex.“ jsou členy použité správně.",
+      "answer": true,
+      "explanation": "Poprvé „ein“ (nějaký pes), potom „der“ (ten pes, o kterém už víme)."
+    },
+    {
+      "type": "open",
+      "question": "Proč se mají německá podstatná jména učit i se členem?",
+      "answer": "Protože rod se většinou nedá odvodit a často je jiný než v češtině. Podle členu volím ein/eine, kein/keine a zájmeno er/sie/es."
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ „kein“ a kdy „nicht“? Dej příklad.",
+      "answer": "kein/keine zapírá podstatné jméno, které by mělo ein/eine nebo žádný člen: Das ist kein Hund. nicht zapírá ostatní, třeba přídavné jméno: Ich bin nicht müde."
+    }
+  ]
+}

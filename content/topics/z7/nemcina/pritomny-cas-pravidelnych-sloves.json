@@ -1,0 +1,513 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pritomny-cas-pravidelnych-sloves",
+  "title": "Časování pravidelných sloves",
+  "emoji": "🔁",
+  "explanations": [
+    {
+      "title": "Kmen a koncovka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chceš říct, co děláš ve volném čase: „Hraju fotbal. Poslouchám hudbu. Moje sestra se učí.“ Na to potřebuješ slovesa ve správném tvaru."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: většina německých sloves se časuje **úplně stejně**. Naučíš se šest koncovek a umíš stovky sloves."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Infinitiv",
+          "definition": "Základní tvar slovesa, jak ho najdeš ve slovníku. Česky končí na *-t* (hrát), německy skoro vždy na **-en**.",
+          "example": "spielen = hrát, wohnen = bydlet, lernen = učit se"
+        },
+        {
+          "type": "term",
+          "term": "Kmen",
+          "definition": "Část slovesa, která zbude, když z infinitivu ustřihneš **-en**.",
+          "example": "spiel|en → kmen **spiel**"
+        },
+        {
+          "type": "term",
+          "term": "Koncovka",
+          "definition": "Kousek, který přilepíš za kmen podle toho, kdo to dělá.",
+          "example": "ich spiel**e**, du spiel**st**"
+        },
+        {
+          "type": "term",
+          "term": "Pravidelné sloveso",
+          "definition": "Sloveso, které se časuje podle pravidla, bez výjimek a změn uvnitř slova.",
+          "example": "machen (dělat), hören (poslouchat), kommen (přijít)"
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi infinitiv: **spielen**.",
+            "Ustřihni -en: zbude kmen **spiel**.",
+            "Podívej se, kdo to dělá (ich, du, er…).",
+            "Přilep koncovku z tabulky: *du* → -st → **du spielst**."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "Koncovka",
+            "spielen (hrát)",
+            "wohnen (bydlet)"
+          ],
+          "rows": [
+            [
+              "ich",
+              "-e",
+              "spiel**e**",
+              "wohn**e**"
+            ],
+            [
+              "du",
+              "-st",
+              "spiel**st**",
+              "wohn**st**"
+            ],
+            [
+              "er / sie / es",
+              "-t",
+              "spiel**t**",
+              "wohn**t**"
+            ],
+            [
+              "wir",
+              "-en",
+              "spiel**en**",
+              "wohn**en**"
+            ],
+            [
+              "ihr",
+              "-t",
+              "spiel**t**",
+              "wohn**t**"
+            ],
+            [
+              "sie / Sie",
+              "-en",
+              "spiel**en**",
+              "wohn**en**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pomůcka: **e – st – t – en – t – en**. Tvar pro *wir* a *sie* je stejný jako infinitiv."
+        },
+        {
+          "type": "heading",
+          "text": "Dvě malé výjimky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Kmen končí na **-t** nebo **-d** (arbeit-en, find-en)? Před -st a -t vlož **e**, aby se to dalo vyslovit: *du arbeit**est**, er arbeit**et**, ihr arbeit**et***.",
+            "Kmen končí na **-s, -ß, -z** (reis-en, heiß-en, tanz-en)? U *du* přidáš jen **-t**: *du heißt, du tanzt, du reist*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vyber správný tvar:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich",
+                "after": "Deutsch.",
+                "options": [
+                  "lerne",
+                  "lernst",
+                  "lernt"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du",
+                "after": "in Prag.",
+                "options": [
+                  "wohnst",
+                  "wohne",
+                  "wohnen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Er",
+                "after": "viel.",
+                "options": [
+                  "arbeitet",
+                  "arbeitt",
+                  "arbeitest"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wir",
+                "after": "Hausaufgaben.",
+                "options": [
+                  "machen",
+                  "macht",
+                  "machst"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Du",
+                "after": "Max.",
+                "options": [
+                  "heißt",
+                  "heißst",
+                  "heißest"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Vyčasuj *lernen* (učit se) pro *du* a *ihr*.",
+          "answer": "Kmen: lern|en → **lern**. du → -st: **du lernst**. ihr → -t: **ihr lernt**."
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Moje máma pracuje v Brně.",
+          "answer": "Pracovat = *arbeiten*, kmen **arbeit** končí na *t*. Máma = ona → -t, ale vložím *e*: **arbeitet**. **Meine Mama arbeitet in Brno.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Er spielen Fußball.",
+          "right": "Er spielt Fußball.",
+          "why": "K *er/sie/es* patří koncovka **-t**. Koncovka *-en* je pro *wir, sie, Sie*."
+        },
+        {
+          "type": "summary",
+          "text": "Kmen + koncovka: **-e, -st, -t, -en, -t, -en**. Kmen na -t/-d přidá e (*arbeitest*), kmen na -s/-ß/-z dá u *du* jen -t (*heißt*)."
+        }
+      ]
+    },
+    {
+      "title": "Můj týden",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Max z Mnichova píše tvé třídě, co dělá on a jeho rodina. Když si jeho dopis přečteš pozorně, sám uvidíš, jak se slovesa mění."
+        },
+        {
+          "type": "text",
+          "text": "Ten samý vzor pak použiješ, až budeš psát o sobě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Sloveso",
+          "definition": "Slovo, které říká, co kdo dělá.",
+          "example": "spielen = hrát, kochen = vařit"
+        },
+        {
+          "type": "term",
+          "term": "Časovat",
+          "definition": "Měnit sloveso podle osoby: já hraju, ty hraješ, on hraje.",
+          "example": "ich spiele, du spielst, er spielt"
+        },
+        {
+          "type": "term",
+          "term": "Přítomný čas",
+          "definition": "Tvar slovesa pro to, co se děje **teď** nebo **pravidelně**.",
+          "example": "Ich spiele jeden Tag. = Hraju každý den."
+        },
+        {
+          "type": "term",
+          "term": "Kmen a koncovka",
+          "definition": "**Kmen** je část slovesa, která se nemění. Zbude, když z infinitivu (základního tvaru) ustřihneš -en. **Koncovka** je kousek, který za kmen přilepíš podle osoby.",
+          "example": "spiel|en → kmen spiel + koncovka -st = du spielst"
+        },
+        {
+          "type": "heading",
+          "text": "Dopis od Maxe"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Německy",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Hallo! Ich heiße Max und ich wohn**e** in München.",
+              "Ahoj! Jmenuju se Max a bydlím v Mnichově."
+            ],
+            [
+              "Ich spiel**e** Fußball und ich hör**e** gern Musik.",
+              "Hraju fotbal a rád poslouchám hudbu."
+            ],
+            [
+              "Mein Vater koch**t** gut. Meine Mutter arbeit**et** viel.",
+              "Táta dobře vaří. Máma hodně pracuje."
+            ],
+            [
+              "Wir mach**en** am Sonntag Ausflüge.",
+              "V neděli jezdíme na výlety."
+            ],
+            [
+              "Und du? Was mach**st** du gern?",
+              "A ty? Co rád děláš?"
+            ],
+            [
+              "Ihr lern**t** Deutsch, oder?",
+              "Vy se učíte německy, že?"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Podívej se na tučné koncovky. *ich* má vždy **-e**, *du* vždy **-st**, *er/sie* (táta, máma) **-t**, *wir* **-en**, *ihr* **-t**."
+        },
+        {
+          "type": "heading",
+          "text": "Jedna věta, dva české překlady"
+        },
+        {
+          "type": "text",
+          "text": "Němčina nemá zvláštní tvar pro „právě teď“ jako angličtina (*I am playing*). *Ich spiele* znamená **hraju** i **právě hraju**. Stejně jako v češtině."
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkus vyčasovat:"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "kochen – du",
+                "back": "du kochst (vaříš)"
+              },
+              {
+                "front": "hören – er",
+                "back": "er hört (poslouchá)"
+              },
+              {
+                "front": "trinken – wir",
+                "back": "wir trinken (pijeme)"
+              },
+              {
+                "front": "finden – du",
+                "back": "du findest (najdeš)"
+              },
+              {
+                "front": "tanzen – du",
+                "back": "du tanzt (tancuješ)"
+              },
+              {
+                "front": "kommen – ihr",
+                "back": "ihr kommt (přijdete)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Odpověz Maxovi, že bydlíš v Plzni a hraješ tenis.",
+          "answer": "ich + wohnen → *wohne*, ich + spielen → *spiele*. **Ich wohne in Pilsen und ich spiele Tennis.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Co děláte (vy, kamarádi) v sobotu?",
+          "answer": "Vy = *ihr* → -t: *macht*. Co = *was*. V sobotu = *am Samstag*. **Was macht ihr am Samstag?**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich bin spiele Fußball.",
+          "right": "Ich spiele Fußball.",
+          "why": "Pod vlivem angličtiny (*I am playing*) se někdo snaží přidat *bin*. Němčina průběhový tvar nemá: stačí *ich spiele*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Du findst den Ball.",
+          "right": "Du findest den Ball.",
+          "why": "Kmen *find* končí na *d*. Před -st se vkládá *e*: *du findest*."
+        },
+        {
+          "type": "summary",
+          "text": "Ich spiel**e**, du spiel**st**, er spiel**t**, wir spiel**en**, ihr spiel**t**, sie spiel**en**. *Ich spiele* = hraju i právě hraju."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Doplň: Ich ___ in Brno. (wohnen)",
+      "options": [
+        "wohne",
+        "wohnst",
+        "wohnt"
+      ],
+      "answer": 0,
+      "explanation": "ich → -e."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Du ___ gern Musik. (hören)",
+      "options": [
+        "hörst",
+        "hört",
+        "höre"
+      ],
+      "answer": 0,
+      "explanation": "du → -st."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Meine Schwester ___ Englisch. (lernen)",
+      "options": [
+        "lernt",
+        "lernen",
+        "lernst"
+      ],
+      "answer": 0,
+      "explanation": "sestra = sie → -t."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa spielen: Wir ___ Tennis.",
+      "answers": [
+        "spielen"
+      ],
+      "explanation": "wir → -en, stejné jako infinitiv."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa machen: Was ___ ihr?",
+      "answers": [
+        "macht"
+      ],
+      "explanation": "ihr → -t."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa arbeiten: Er ___ in Wien.",
+      "answers": [
+        "arbeitet"
+      ],
+      "explanation": "Kmen arbeit končí na t, proto se vkládá e: arbeitet."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa heißen: Wie ___ du?",
+      "answers": [
+        "heißt",
+        "heisst"
+      ],
+      "explanation": "Kmen heiß končí na ß, u du se přidá jen -t."
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu s koncovkou.",
+      "pairs": [
+        [
+          "ich",
+          "-e"
+        ],
+        [
+          "du",
+          "-st"
+        ],
+        [
+          "wir",
+          "-en"
+        ],
+        [
+          "ihr",
+          "-t"
+        ]
+      ],
+      "explanation": "Celá řada: e – st – t – en – t – en."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar slovesa pro „wir“ je stejný jako infinitiv.",
+      "answer": true,
+      "explanation": "wir spielen, wir wohnen, wir lernen."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Er kochen gut.“ je správně.",
+      "answer": false,
+      "explanation": "er → -t: Er kocht gut."
+    },
+    {
+      "type": "choice",
+      "question": "Jak přeložíš „Právě čtu.“? (lesen je nepravidelné, ale u ich se nemění)",
+      "options": [
+        "Ich lese.",
+        "Ich bin lese.",
+        "Ich lesen."
+      ],
+      "answer": 0,
+      "explanation": "Němčina nemá průběhový tvar, stačí „Ich lese“."
+    },
+    {
+      "type": "choice",
+      "question": "Který tvar je správně?",
+      "options": [
+        "du findest",
+        "du findst",
+        "du findet"
+      ],
+      "answer": 0,
+      "explanation": "Kmen na -d: před -st se vkládá e."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Rádi posloucháme hudbu.“",
+      "items": [
+        "Wir",
+        "hören",
+        "gern",
+        "Musik."
+      ],
+      "explanation": "gern (rád) stojí za slovesem."
+    },
+    {
+      "type": "open",
+      "question": "Jak vyčasuješ pravidelné sloveso? Ukaž na slovesu „wohnen“.",
+      "answer": "Ustřihnu -en a ke kmeni wohn přidám koncovky: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie wohnen."
+    },
+    {
+      "type": "open",
+      "question": "Řekni německy tři věty o tom, co děláš ve volném čase.",
+      "answer": "Ich spiele Fußball. Ich höre gern Musik. Ich koche mit meiner Mama. (Hraju fotbal, rád poslouchám hudbu, vařím s mámou.)"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pozdravy-a-predstaveni",
+  "title": "Pozdravy a představení",
+  "emoji": "👋",
+  "explanations": [
+    {
+      "title": "Na táboře",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že přijedeš na letní tábor a vedle tebe sedí holka z Vídně. Co řekneš jako první? Pozdravíš, řekneš, jak se jmenuješ a odkud jsi. Přesně to se teď naučíš německy."
+        },
+        {
+          "type": "text",
+          "text": "Těchto pár vět použiješ pokaždé, když potkáš někoho nového. Je to první rozhovor každého, kdo se učí jazyk."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pozdrav",
+          "definition": "Slova, kterými někoho vítáš nebo se loučíš.",
+          "example": "Hallo! = Ahoj! Tschüs! = Ahoj! (na rozloučenou)"
+        },
+        {
+          "type": "term",
+          "term": "Tykání a vykání",
+          "definition": "Kamarádům a dětem **tykáš** (du = ty). Dospělým, které neznáš, a učitelům **vykáš** (Sie = vy). Německy stejně jako česky.",
+          "example": "Wie heißt du? = Jak se jmenuješ? Wie heißen Sie? = Jak se jmenujete?"
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor"
+        },
+        {
+          "type": "text",
+          "text": "Lena z Vídně a Jakub z Brna se potkají na táboře:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kdo",
+            "Německy",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Lena",
+              "Hallo! Ich heiße Lena. Wie heißt du?",
+              "Ahoj! Jmenuju se Lena. Jak se jmenuješ ty?"
+            ],
+            [
+              "Jakub",
+              "Hallo, Lena! Ich bin Jakub.",
+              "Ahoj, Leno! Já jsem Jakub."
+            ],
+            [
+              "Lena",
+              "Woher kommst du?",
+              "Odkud jsi?"
+            ],
+            [
+              "Jakub",
+              "Ich komme aus Tschechien. Und du?",
+              "Jsem z Česka. A ty?"
+            ],
+            [
+              "Lena",
+              "Ich komme aus Österreich. Ich wohne in Wien.",
+              "Jsem z Rakouska. Bydlím ve Vídni."
+            ],
+            [
+              "Jakub",
+              "Wie alt bist du?",
+              "Kolik ti je?"
+            ],
+            [
+              "Lena",
+              "Ich bin dreizehn. Freut mich!",
+              "Je mi třináct. Těší mě!"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Všimni si: *Ich heiße Lena* i *Ich bin Jakub* znamenají skoro totéž. *Heiße* = jmenuju se, *bin* = jsem."
+        },
+        {
+          "type": "heading",
+          "text": "Pozdravy během dne"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🌅",
+            "☀️",
+            "🌆",
+            "🌙"
+          ],
+          "caption": "Guten Morgen – Guten Tag – Guten Abend – Gute Nacht"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kdy",
+            "Pozdrav",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "ráno",
+              "Guten Morgen!",
+              "Dobré ráno!"
+            ],
+            [
+              "přes den",
+              "Guten Tag!",
+              "Dobrý den!"
+            ],
+            [
+              "večer",
+              "Guten Abend!",
+              "Dobrý večer!"
+            ],
+            [
+              "před spaním",
+              "Gute Nacht!",
+              "Dobrou noc!"
+            ],
+            [
+              "kamarádům kdykoli",
+              "Hallo! / Tschüs!",
+              "Ahoj! (při setkání / na rozloučenou)"
+            ],
+            [
+              "loučení s dospělým",
+              "Auf Wiedersehen!",
+              "Na shledanou!"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky a zkontroluj, jestli víš, jak na otázku odpovědět."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Wie heißt du?",
+                "back": "Ich heiße … (Jmenuju se …)"
+              },
+              {
+                "front": "Woher kommst du?",
+                "back": "Ich komme aus Tschechien. (Jsem z Česka.)"
+              },
+              {
+                "front": "Wo wohnst du?",
+                "back": "Ich wohne in Brno. (Bydlím v Brně.)"
+              },
+              {
+                "front": "Wie alt bist du?",
+                "back": "Ich bin zwölf. (Je mi dvanáct.)"
+              },
+              {
+                "front": "Wie geht’s?",
+                "back": "Gut, danke! (Dobře, díky!)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Představ se německy: jmenuješ se Petr, je ti 12 let a jsi z Prahy.",
+          "answer": "Jméno: **Ich heiße Petr.** Věk: **Ich bin zwölf.** Odkud: **Ich komme aus Prag.** (Praha se německy řekne *Prag*.)"
+        },
+        {
+          "type": "example",
+          "question": "Rakouský kamarád se ptá „Woher kommst du?“. Co odpovíš?",
+          "answer": "*Woher* = odkud. Odpovíš větou s *aus* (z): **Ich komme aus Tschechien.** = Jsem z Česka."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Guten Nacht!",
+          "right": "Gute Nacht!",
+          "why": "Noc (*die Nacht*) je v němčině ženského rodu, proto *Gute*, ne *Guten*. *Guten Morgen, Guten Tag, Guten Abend* jsou správně."
+        },
+        {
+          "type": "summary",
+          "text": "Pozdrav (*Hallo, Guten Tag*), jméno (*Ich heiße …*), odkud jsi (*Ich komme aus …*) a věk (*Ich bin …*). Loučíš se *Tschüs* nebo *Auf Wiedersehen*."
+        }
+      ]
+    },
+    {
+      "title": "Otázka a odpověď",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Každé seznámení je hra na otázky a odpovědi. Když znáš otázku, odpověď poskládáš skoro sama: použiješ stejné sloveso a jen ho změníš z „ty“ na „já“."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se čtyři otázky. Stačí na celé první setkání s někým novým."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Sloveso",
+          "definition": "Slovo, které říká, co kdo dělá nebo jaký je.",
+          "example": "heißen = jmenovat se, kommen = přijít/pocházet, wohnen = bydlet, sein = být"
+        },
+        {
+          "type": "term",
+          "term": "Tázací slovo",
+          "definition": "Slovo na začátku otázky, které říká, na co se ptáš.",
+          "example": "wie = jak, woher = odkud, wo = kde, wer = kdo"
+        },
+        {
+          "type": "heading",
+          "text": "Otázka → odpověď"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi v otázce tázací slovo: *Wie, Woher, Wo, Wer*.",
+            "Najdi sloveso v tvaru pro „ty“: *heißt, kommst, wohnst, bist*.",
+            "Změň ho na tvar pro „já“: *heiße, komme, wohne, bin*.",
+            "Doplň svou informaci: jméno, zemi, město nebo věk."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Otázka",
+            "Odpověď",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Wie heißt du?",
+              "Ich heiße Eva.",
+              "Jak se jmenuješ? – Jmenuju se Eva."
+            ],
+            [
+              "Wer bist du?",
+              "Ich bin Eva.",
+              "Kdo jsi? – Jsem Eva."
+            ],
+            [
+              "Woher kommst du?",
+              "Ich komme aus Tschechien.",
+              "Odkud jsi? – Jsem z Česka."
+            ],
+            [
+              "Wo wohnst du?",
+              "Ich wohne in Ostrava.",
+              "Kde bydlíš? – Bydlím v Ostravě."
+            ],
+            [
+              "Wie alt bist du?",
+              "Ich bin vierzehn.",
+              "Kolik ti je? – Je mi čtrnáct."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zkus doplnit správné sloveso do odpovědi:"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Ich",
+                "after": "Martin.",
+                "options": [
+                  "heiße",
+                  "heißt",
+                  "heißen"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Woher",
+                "after": "du?",
+                "options": [
+                  "kommst",
+                  "komme",
+                  "kommt"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich komme",
+                "after": "Polen.",
+                "options": [
+                  "aus",
+                  "in",
+                  "von"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ich wohne",
+                "after": "Berlin.",
+                "options": [
+                  "in",
+                  "aus",
+                  "nach"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Odkud jsi: aus"
+        },
+        {
+          "type": "text",
+          "text": "*aus* = z. Většina zemí je bez členu: *aus Tschechien, aus Deutschland* (z Německa), *aus Österreich* (z Rakouska). Některé země mají před sebou slovíčko *die*. Pak říkáš *aus der …*: **aus der Slowakei** (ze Slovenska), **aus der Schweiz** (ze Švýcarska)."
+        },
+        {
+          "type": "heading",
+          "text": "Vykání"
+        },
+        {
+          "type": "text",
+          "text": "Paní učitelce nebo cizímu dospělému vykáš. Místo *du* řekneš **Sie** (s velkým S) a sloveso má koncovku **-en**:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Tykání (du)",
+            "Vykání (Sie)",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Wie heißt du?",
+              "Wie heißen Sie?",
+              "Jak se jmenuješ? / Jak se jmenujete?"
+            ],
+            [
+              "Woher kommst du?",
+              "Woher kommen Sie?",
+              "Odkud jsi? / Odkud jste?"
+            ],
+            [
+              "Wie geht’s dir?",
+              "Wie geht es Ihnen?",
+              "Jak se máš? / Jak se máte?"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se paní ve vlaku, odkud je.",
+          "answer": "Paní je dospělá a neznáš ji, takže vykáš. *Woher* + *kommen* + *Sie*: **Woher kommen Sie?**"
+        },
+        {
+          "type": "example",
+          "question": "Odpověz celou větou: „Wo wohnst du?“ Bydlíš v Plzni.",
+          "answer": "Tázací slovo *wo* = kde. Sloveso *wohnst* (bydlíš) změním na *wohne* (bydlím). Plzeň se německy řekne *Pilsen*: **Ich wohne in Pilsen.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich komme von Tschechien.",
+          "right": "Ich komme aus Tschechien.",
+          "why": "Když říkáš, odkud pocházíš, používá němčina **aus**. Je to jako anglické *from*, ale německy se říká *aus*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Wie heißt Sie?",
+          "right": "Wie heißen Sie?",
+          "why": "S vykáním (*Sie*) jde vždy tvar slovesa s koncovkou -en: *heißen, kommen, wohnen*."
+        },
+        {
+          "type": "summary",
+          "text": "Ptáš se *Wie heißt du? Woher kommst du? Wo wohnst du? Wie alt bist du?* Odpovídáš *Ich heiße…, Ich komme aus…, Ich wohne in…, Ich bin…*. Dospělým vykáš: *Wie heißen Sie?*"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Je 8 hodin ráno. Jak pozdravíš paní sousedku?",
+      "options": [
+        "Guten Morgen!",
+        "Guten Abend!",
+        "Gute Nacht!"
+      ],
+      "answer": 0,
+      "explanation": "Guten Morgen = Dobré ráno."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pozdrav s českým významem.",
+      "pairs": [
+        [
+          "Guten Tag!",
+          "Dobrý den!"
+        ],
+        [
+          "Gute Nacht!",
+          "Dobrou noc!"
+        ],
+        [
+          "Auf Wiedersehen!",
+          "Na shledanou!"
+        ],
+        [
+          "Tschüs!",
+          "Ahoj! (na rozloučenou)"
+        ]
+      ],
+      "explanation": "Tschüs říkáš kamarádům, Auf Wiedersehen dospělým."
+    },
+    {
+      "type": "choice",
+      "question": "Kamarád se ptá: „Wie heißt du?“ Co odpovíš?",
+      "options": [
+        "Ich heiße Tom.",
+        "Ich komme aus Prag.",
+        "Ich bin zwölf."
+      ],
+      "answer": 0,
+      "explanation": "Wie heißt du? = Jak se jmenuješ? Odpověď je jméno."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Woher kommst du?“",
+      "options": [
+        "Odkud jsi?",
+        "Kde bydlíš?",
+        "Kam jdeš?"
+      ],
+      "answer": 0,
+      "explanation": "woher = odkud. Kde bydlíš = Wo wohnst du?"
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Ich ___ aus Tschechien. (jsem z Česka)",
+      "answers": [
+        "komme"
+      ],
+      "explanation": "Ich komme aus … = Pocházím z …"
+    },
+    {
+      "type": "input",
+      "question": "Doplň předložku: Ich wohne ___ Brno.",
+      "answers": [
+        "in"
+      ],
+      "explanation": "Kde bydlím: wohnen in + město."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš paní učitelky na jméno?",
+      "options": [
+        "Wie heißen Sie?",
+        "Wie heißt du?",
+        "Wie heißt Sie?"
+      ],
+      "answer": 0,
+      "explanation": "Dospělým vykáš: Sie + sloveso s koncovkou -en."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Guten Abend!“ říkáš ráno, když přijdeš do školy.",
+      "answer": false,
+      "explanation": "Guten Abend = Dobrý večer. Ráno říkáš Guten Morgen."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Kde bydlíš?“",
+      "items": [
+        "Wo",
+        "wohnst",
+        "du?"
+      ],
+      "explanation": "Tázací slovo, pak sloveso, pak „du“."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do věty „Jsem ze Slovenska.“",
+      "items": [
+        "Ich",
+        "komme",
+        "aus",
+        "der",
+        "Slowakei."
+      ],
+      "explanation": "Před Slowakei stojí die, proto aus der Slowakei."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Je mi třináct.“?",
+      "options": [
+        "Ich bin dreizehn.",
+        "Ich habe dreizehn.",
+        "Ich heiße dreizehn."
+      ],
+      "answer": 0,
+      "explanation": "Věk se v němčině říká se slovesem sein: Ich bin 13 (Jahre alt)."
+    },
+    {
+      "type": "choice",
+      "question": "Kamarád se ptá „Wie geht’s?“. Co odpovíš?",
+      "options": [
+        "Gut, danke!",
+        "Ich heiße Jan.",
+        "Aus Prag."
+      ],
+      "answer": 0,
+      "explanation": "Wie geht’s? = Jak se máš? → Gut, danke! = Dobře, díky!"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ich bin Anna“ a „Ich heiße Anna“ se dají obě použít, když se představuješ.",
+      "answer": true,
+      "explanation": "Ich bin = jsem, ich heiße = jmenuju se. Obě věty jsou správně."
+    },
+    {
+      "type": "open",
+      "question": "Představ se německy: jméno, věk, odkud jsi a kde bydlíš.",
+      "answer": "Hallo! Ich heiße Jana. Ich bin dreizehn. Ich komme aus Tschechien und ich wohne in Olomouc."
+    },
+    {
+      "type": "open",
+      "question": "Jak se zeptáš kamaráda a jak dospělého, odkud je? V čem je rozdíl?",
+      "answer": "Kamarádovi tykám: Woher kommst du? Dospělému vykám: Woher kommen Sie? U vykání je Sie a sloveso má koncovku -en."
+    }
+  ]
+}

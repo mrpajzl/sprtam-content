@@ -1,0 +1,588 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vyslovnost-a-pravopis",
+  "title": "Výslovnost a pravopis",
+  "emoji": "🔤",
+  "explanations": [
+    {
+      "title": "Čtení nahlas",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Němčina používá skoro stejná písmena jako čeština. Některé dvojice písmen se ale čtou úplně jinak, než bys čekal. Když napíšeš „drei“ (tři), Němec řekne **[draj]**, ne [drej]."
+        },
+        {
+          "type": "text",
+          "text": "Dobrá zpráva: němčina se čte **podle pravidel**. Stačí se jich naučit pár a přečteš skoro každé slovo, i když ho vidíš poprvé. To angličtina neumí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výslovnost",
+          "definition": "Jak se slovo **vyslovuje**, tedy jak zní nahlas. V hranatých závorkách ji píšeme českými písmeny.",
+          "example": "drei se vyslovuje [draj]"
+        },
+        {
+          "type": "term",
+          "term": "Samohláska",
+          "definition": "Hláska, kterou můžeš zpívat: a, e, i, o, u. Ostatní hlásky (b, k, s, t…) jsou **souhlásky**.",
+          "example": "Ve slově „Hund“ (pes) je samohláska u."
+        },
+        {
+          "type": "term",
+          "term": "Dvojhláska",
+          "definition": "Dvě samohlásky vedle sebe, které se čtou jako **jeden zvuk** v jedné slabice. Česky třeba *ou* v „mouka“.",
+          "example": "ei v „mein“ (můj) zní [aj]"
+        },
+        {
+          "type": "term",
+          "term": "Přehláska",
+          "definition": "Dvě tečky nad samohláskou: **ä, ö, ü**. Mění, jak samohláska zní.",
+          "example": "Mädchen (dívka), schön (hezký), müde (unavený)"
+        },
+        {
+          "type": "heading",
+          "text": "Dvojice samohlásek"
+        },
+        {
+          "type": "text",
+          "text": "Tohle je nejdůležitější pravidlo celé němčiny. Zapamatuj si: **čti druhé písmeno tak, jak ho vyslovují Angličané v abecedě.** V „ei“ je druhé *i* = anglicky [aj]. V „ie“ je druhé *e* = anglicky [í]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Píše se",
+            "Čte se",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "ei",
+              "[aj]",
+              "mein, drei, Eis",
+              "můj, tři, zmrzlina"
+            ],
+            [
+              "ie",
+              "[í] (dlouze)",
+              "vier, Liebe, sieben",
+              "čtyři, láska, sedm"
+            ],
+            [
+              "eu, äu",
+              "[oj]",
+              "neun, Häuser",
+              "devět, domy"
+            ],
+            [
+              "au",
+              "[au]",
+              "Haus, Frau",
+              "dům, žena"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slova podle toho, jak zní jejich dvojice samohlásek. Klepni na slovo a pak na krabičku."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "zní [aj]",
+              "zní [í]"
+            ],
+            "items": [
+              {
+                "text": "mein",
+                "group": 0
+              },
+              {
+                "text": "drei",
+                "group": 0
+              },
+              {
+                "text": "klein",
+                "group": 0
+              },
+              {
+                "text": "heißen",
+                "group": 0
+              },
+              {
+                "text": "vier",
+                "group": 1
+              },
+              {
+                "text": "Liebe",
+                "group": 1
+              },
+              {
+                "text": "spielen",
+                "group": 1
+              },
+              {
+                "text": "sieben",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Souhlásky, které tě překvapí"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Píše se",
+            "Čte se",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "sch",
+              "[š]",
+              "Schule, Tisch",
+              "škola, stůl"
+            ],
+            [
+              "ch po a, o, u, au",
+              "[ch] jako česky",
+              "Buch, acht",
+              "kniha, osm"
+            ],
+            [
+              "ch jinde",
+              "měkké [ch], skoro jako šeptané [š]",
+              "ich, Milch",
+              "já, mléko"
+            ],
+            [
+              "z",
+              "[c]",
+              "zehn, Zimmer",
+              "deset, pokoj"
+            ],
+            [
+              "w",
+              "[v]",
+              "Wasser, wir",
+              "voda, my"
+            ],
+            [
+              "v",
+              "většinou [f]",
+              "vier, Vater",
+              "čtyři, otec"
+            ],
+            [
+              "s před samohláskou",
+              "[z]",
+              "sieben, Sonne",
+              "sedm, slunce"
+            ],
+            [
+              "st, sp na začátku",
+              "[št], [šp]",
+              "Straße, Sport",
+              "ulice, sport"
+            ],
+            [
+              "ß",
+              "[s]",
+              "heißen, groß",
+              "jmenovat se, velký"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**h** po samohlásce se nečte. Jen říká, že samohláska je dlouhá: *gehen* [géen] = jít, *Kuh* [kú] = kráva."
+        },
+        {
+          "type": "heading",
+          "text": "Přehlásky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**ä** čti jako české [e]: *Käse* [kéze] = sýr.",
+            "**ö** je zvuk mezi e a o: našpul pusu jako na „o“ a řekni „e“. *schön* = hezký.",
+            "**ü** je zvuk mezi i a u: našpul pusu jako na „u“ a řekni „i“. *müde* = unavený."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Přečti nahlas: *Die Schule ist klein.* (Škola je malá.)",
+          "answer": "„Die“ obsahuje *ie* → [dí]. „Schule“: *sch* = [š] → [šúle]. „ist“ = [ist]. „klein“: *ei* = [aj] → [klajn]. Celkem: **[dí šúle ist klajn]**."
+        },
+        {
+          "type": "example",
+          "question": "Přečti nahlas: *Wir spielen zwei Stunden.* (Hrajeme dvě hodiny.)",
+          "answer": "„Wir“: *w* = [v] → [vír]. „spielen“: *sp* na začátku = [šp], *ie* = [í] → [špílen]. „zwei“: *z* = [c], *w* = [v], *ei* = [aj] → [cvaj]. „Stunden“: *st* = [št] → [štunden]. Celkem: **[vír špílen cvaj štunden]**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "vier čtu [vír]",
+          "right": "vier čtu [fír]",
+          "why": "Písmeno *v* se v německých slovech čte většinou jako [f]. Zvuk [v] zapisuje němčina písmenem *w*: *wir* [vír] = my."
+        },
+        {
+          "type": "summary",
+          "text": "Klíč ke čtení: **ei = [aj], ie = [í], eu = [oj], sch = [š], z = [c], w = [v], v = [f]**. Přehlásky ä, ö, ü mění zvuk samohlásky."
+        }
+      ]
+    },
+    {
+      "title": "Jak se to píše",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když napíšeš německou zprávu kamarádovi z Rakouska, chceš, aby vypadala správně. Němčina má v psaní tři zvláštnosti: **velká písmena** u podstatných jmen, písmeno **ß** a **přehlásky** ä, ö, ü."
+        },
+        {
+          "type": "text",
+          "text": "Kdo je zná, pozná také, jak se slovo čte. A kdo umí číst, umí i správně psát."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podstatné jméno",
+          "definition": "Slovo, které pojmenovává osobu, zvíře, věc nebo třeba pocit. Zeptáš se na něj „kdo? co?“.",
+          "example": "pes, máma, stůl, radost → der Hund, die Mama, der Tisch, die Freude"
+        },
+        {
+          "type": "term",
+          "term": "Ostré s (ß)",
+          "definition": "Zvláštní německé písmeno. Čte se jako obyčejné **[s]**. Němci mu říkají *Eszett* [es-cet].",
+          "example": "die Straße (ulice), heißen (jmenovat se)"
+        },
+        {
+          "type": "term",
+          "term": "Přehláska",
+          "definition": "Dvě tečky nad samohláskou: ä, ö, ü. Bez nich by slovo znamenalo něco jiného nebo by bylo napsané špatně.",
+          "example": "schon = už, ale schön = hezký"
+        },
+        {
+          "type": "term",
+          "term": "Dlouhá a krátká samohláska",
+          "definition": "Samohlásky (a, e, i, o, u) můžeš říct krátce, nebo dlouze. Česky dlouhou píšeme s čárkou: *a* × *á*. Němčina čárky nemá, délku musíš slyšet.",
+          "example": "Wasser [vaser] má krátké a, Straße [štráse] má dlouhé a."
+        },
+        {
+          "type": "heading",
+          "text": "1. Velká písmena"
+        },
+        {
+          "type": "text",
+          "text": "V češtině píšeš velké písmeno hlavně na začátku věty a u jmen. Němčina navíc píše velké písmeno u **každého podstatného jména**, i uprostřed věty."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Česky",
+            "Německy"
+          ],
+          "rows": [
+            [
+              "Mám psa a kočku.",
+              "Ich habe einen **H**und und eine **K**atze."
+            ],
+            [
+              "Piju rád mléko.",
+              "Ich trinke gern **M**ilch."
+            ],
+            [
+              "Ve škole je stůl.",
+              "In der **S**chule ist ein **T**isch."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: slovo *ich* (já) se uprostřed věty píše **malým** písmenem. Velké *Sie* znamená **vy** (když někomu vykáš)."
+        },
+        {
+          "type": "heading",
+          "text": "2. ß, nebo ss?"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Poslechni si samohlásku před zvukem [s].",
+            "Je **dlouhá**, nebo je to dvojhláska (ei, au, eu)? Piš **ß**: *Straße, groß, heißen, weiß*.",
+            "Je **krátká**? Piš **ss**: *Wasser, essen, Klasse, dass*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Doplň správné písmeno. Nejdřív si slovo řekni nahlas a poslouchej, jestli je samohláska dlouhá."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Stra",
+                "after": "e (ulice)",
+                "options": [
+                  "ß",
+                  "ss"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Wa",
+                "after": "er (voda)",
+                "options": [
+                  "ß",
+                  "ss"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "gro",
+                "after": " (velký)",
+                "options": [
+                  "ß",
+                  "ss"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "e",
+                "after": "en (jíst)",
+                "options": [
+                  "ß",
+                  "ss"
+                ],
+                "answer": 1
+              },
+              {
+                "before": "hei",
+                "after": "en (jmenovat se)",
+                "options": [
+                  "ß",
+                  "ss"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ve Švýcarsku se ß nepíše vůbec, všude se píše *ss*. My se učíme pravopis Německa."
+        },
+        {
+          "type": "heading",
+          "text": "3. Když nemáš přehlásky na klávesnici"
+        },
+        {
+          "type": "text",
+          "text": "Na české klávesnici často ä, ö, ü ani ß nenajdeš. Pak je smíš napsat takto: **ä = ae, ö = oe, ü = ue, ß = ss**. Tečky nikdy jen tak nevynechávej."
+        },
+        {
+          "type": "example",
+          "question": "Napiš bez přehlásek a bez ß: *Grüße aus München* (Pozdravy z Mnichova).",
+          "answer": "ü → ue, ß → ss: *Grüße* → **Gruesse**. *München* → **Muenchen**. Výsledek: **Gruesse aus Muenchen**."
+        },
+        {
+          "type": "example",
+          "question": "Oprav pravopis: *ich wohne in einem grossen haus.* (Bydlím ve velkém domě.)",
+          "answer": "Věta začíná velkým písmenem → *Ich*. Podstatné jméno *Haus* (dům) → velké H. *groß* má dlouhé o, proto *großen*. Výsledek: **Ich wohne in einem großen Haus.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich habe einen hund.",
+          "right": "Ich habe einen Hund.",
+          "why": "Hund (pes) je podstatné jméno a v němčině se každé podstatné jméno píše s velkým písmenem."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ich trinke Waßer.",
+          "right": "Ich trinke Wasser.",
+          "why": "V *Wasser* je krátké a. Po krátké samohlásce se píše **ss**, ß jen po dlouhé samohlásce nebo dvojhlásce."
+        },
+        {
+          "type": "summary",
+          "text": "Všechna podstatná jména píšeš **s velkým písmenem**. Po dlouhé samohlásce píšeš **ß**, po krátké **ss**. Bez speciálních znaků: ä = ae, ö = oe, ü = ue, ß = ss."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak se čte německé „drei“ (tři)?",
+      "options": [
+        "[draj]",
+        "[drí]",
+        "[drej]"
+      ],
+      "answer": 0,
+      "explanation": "ei se čte [aj]."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte „vier“ (čtyři)?",
+      "options": [
+        "[fír]",
+        "[vír]",
+        "[fajr]"
+      ],
+      "answer": 0,
+      "explanation": "v se čte [f] a ie se čte dlouhé [í]."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově slyšíš [oj]?",
+      "options": [
+        "neun (devět)",
+        "nein (ne)",
+        "nie (nikdy)"
+      ],
+      "answer": 0,
+      "explanation": "eu = [oj] → [nojn]. nein = [najn], nie = [ní]."
+    },
+    {
+      "type": "choice",
+      "question": "Jak začíná výslovnost slova „Schule“ (škola)?",
+      "options": [
+        "[š]",
+        "[sch]",
+        "[sk]"
+      ],
+      "answer": 0,
+      "explanation": "sch se v němčině čte jako české š: [šúle]."
+    },
+    {
+      "type": "match",
+      "question": "Spoj písmena s tím, jak se čtou.",
+      "pairs": [
+        [
+          "sch",
+          "[š]"
+        ],
+        [
+          "z",
+          "[c]"
+        ],
+        [
+          "w",
+          "[v]"
+        ],
+        [
+          "ei",
+          "[aj]"
+        ],
+        [
+          "ie",
+          "[í]"
+        ]
+      ],
+      "explanation": "Tyhle dvojice si pamatuj: díky nim přečteš většinu německých slov."
+    },
+    {
+      "type": "truefalse",
+      "question": "V němčině se všechna podstatná jména píšou s velkým písmenem.",
+      "answer": true,
+      "explanation": "Ano: der Hund, die Schule, das Haus – i uprostřed věty."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je ve větě napsané špatně? „Wir haben einen hund.“",
+      "options": [
+        "hund",
+        "haben",
+        "einen"
+      ],
+      "answer": 0,
+      "explanation": "Hund (pes) je podstatné jméno, správně je „Hund“ s velkým H."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Wa__er (voda)",
+      "options": [
+        "ss",
+        "ß"
+      ],
+      "answer": 0,
+      "explanation": "V „Wasser“ je krátké a, po krátké samohlásce se píše ss."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Stra__e (ulice)",
+      "options": [
+        "ß",
+        "ss"
+      ],
+      "answer": 0,
+      "explanation": "V „Straße“ je dlouhé a, po dlouhé samohlásce se píše ß."
+    },
+    {
+      "type": "input",
+      "question": "Jak napíšeš „Mädchen“ (dívka), když na klávesnici nemáš ä?",
+      "answers": [
+        "Maedchen"
+      ],
+      "explanation": "ä se nahrazuje dvojicí ae: Maedchen."
+    },
+    {
+      "type": "input",
+      "question": "Jakým českým písmenem začíná výslovnost slova „zehn“ (deset)? Napiš jedno písmeno.",
+      "answers": [
+        "c"
+      ],
+      "explanation": "Německé z se čte jako české c: [cén]."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo „ich“ (já) se uprostřed věty píše s velkým písmenem.",
+      "answer": false,
+      "explanation": "ich je zájmeno, ne podstatné jméno. Velké písmeno má jen na začátku věty."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se čte „Sport“?",
+      "options": [
+        "[šport]",
+        "[sport]",
+        "[zport]"
+      ],
+      "answer": 0,
+      "explanation": "sp na začátku slova se čte [šp]."
+    },
+    {
+      "type": "open",
+      "question": "Jak poznáš, jestli se dvojice samohlásek čte [aj], nebo [í]? Uveď příklad.",
+      "answer": "ei se čte [aj], třeba drei [draj]. ie se čte dlouhé [í], třeba vier [fír]. Pomůcka: druhé písmeno vyslov jako v anglické abecedě."
+    },
+    {
+      "type": "open",
+      "question": "Kdy se v němčině píše velké písmeno a kdy ß?",
+      "answer": "Velké písmeno má začátek věty, jména a každé podstatné jméno (der Hund, die Schule). ß se píše po dlouhé samohlásce nebo dvojhlásce (Straße, heißen), po krátké samohlásce se píše ss (Wasser)."
+    }
+  ]
+}
