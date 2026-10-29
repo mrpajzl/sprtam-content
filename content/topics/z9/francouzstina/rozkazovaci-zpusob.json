@@ -1,0 +1,570 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "rozkazovaci-zpusob",
+  "title": "Rozkazovací způsob",
+  "emoji": "📣",
+  "explanations": [
+    {
+      "title": "Ze tří tvarů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Poslouchejte!“, „Zavři dveře!“, „Pojďme do kina!“ – tak mluví učitel, rodiče i kamarádi. Francouzsky se to řekne **rozkazovacím způsobem**: *Écoutez ! Ferme la porte ! Allons au cinéma !*"
+        },
+        {
+          "type": "text",
+          "text": "Je to jeden z nejjednodušších tvarů. Vezmeš tvar z přítomného času, který už znáš, a jen vynecháš zájmeno."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozkazovací způsob",
+          "definition": "Tvar slovesa pro rozkaz, prosbu nebo radu. Francouzsky *impératif*.",
+          "example": "*Regarde !* = Podívej se!"
+        },
+        {
+          "type": "term",
+          "term": "Přítomný čas",
+          "definition": "Připomenutí: *tu regardes, nous regardons, vous regardez*. Z těchto tvarů rozkaz vznikne.",
+          "example": "*vous écoutez* → *Écoutez !*"
+        },
+        {
+          "type": "term",
+          "term": "Zápor",
+          "definition": "Připomenutí: *ne … pas* kolem slovesa. U rozkazu stejně.",
+          "example": "*Ne parle pas !* = Nemluv!"
+        },
+        {
+          "type": "heading",
+          "text": "Jen tři osoby"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Osoba",
+            "Přítomný čas",
+            "Rozkaz",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "tu",
+              "tu regardes",
+              "Regarde !",
+              "Dívej se!"
+            ],
+            [
+              "nous",
+              "nous regardons",
+              "Regardons !",
+              "Dívejme se! / Pojďme se dívat!"
+            ],
+            [
+              "vous",
+              "vous regardez",
+              "Regardez !",
+              "Dívejte se!"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi přítomný čas pro *tu*, *nous* nebo *vous*.",
+            "Vynech zájmeno: *vous écoutez → Écoutez !*",
+            "U sloves na **-er** (a u *aller*) v osobě *tu* škrtni koncové *-s*: *tu manges → Mange !*, *tu vas → Va !*"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ostatní slovesa *-s* nechávají: *tu finis → Finis !*, *tu prends → Prends !*, *tu fais → Fais !*, *tu viens → Viens !*, *tu attends → Attends !*"
+        },
+        {
+          "type": "heading",
+          "text": "Tři výjimky"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sloveso",
+            "tu",
+            "nous",
+            "vous"
+          ],
+          "rows": [
+            [
+              "être",
+              "Sois !",
+              "Soyons !",
+              "Soyez !"
+            ],
+            [
+              "avoir",
+              "Aie !",
+              "Ayons !",
+              "Ayez !"
+            ],
+            [
+              "savoir (vědět)",
+              "Sache !",
+              "Sachons !",
+              "Sachez !"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*Sois sage !* = Buď hodný! *N’aie pas peur !* = Neboj se!"
+        },
+        {
+          "type": "heading",
+          "text": "Zápor a zdvořilost"
+        },
+        {
+          "type": "text",
+          "text": "Zápor: *ne* před slovesem, *pas* za ním: *Ne mange pas ! Ne parlez pas !* Zdvořile přidáš *s’il te plaît* nebo *s’il vous plaît*: *Ferme la porte, s’il te plaît.*"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "la porte, s’il te plaît ! (fermer)",
+                "options": [
+                  "Ferme",
+                  "Fermes",
+                  "Fermer"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "vos livres ! (ouvrir)",
+                "options": [
+                  "Ouvrez",
+                  "Ouvre",
+                  "Ouvrir"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "au cinéma ! (aller, my)",
+                "options": [
+                  "Allons",
+                  "Allez",
+                  "Va"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "sage ! (être, ty)",
+                "options": [
+                  "Sois",
+                  "Es",
+                  "Être"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ne",
+                "after": "pas ! (parler, vy)",
+                "options": [
+                  "parlez",
+                  "parle",
+                  "parlons"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Řekni kamarádovi: „Pojď sem!“ (*venir*, sem = *ici*)",
+          "answer": "*tu viens* → *venir* není na *-er*, takže *-s* zůstane. Vynechám *tu*: **Viens ici !**"
+        },
+        {
+          "type": "example",
+          "question": "Řekni dvěma kamarádům: „Nejezte to!“ (to = *ça*)",
+          "answer": "Víc lidí → *vous mangez*. Vynechám *vous* → *Mangez*. Zápor kolem slovesa: **Ne mangez pas ça !**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Manges ta soupe !",
+          "right": "Mange ta soupe !",
+          "why": "U sloves na *-er* se v rozkazu pro *tu* koncové *-s* škrtá."
+        },
+        {
+          "type": "summary",
+          "text": "Rozkaz = přítomný čas *tu / nous / vous* bez zájmena. U *-er* a *aller* v *tu* bez *-s* (*Regarde ! Va !*). Výjimky: *sois, aie*. Zápor: *Ne regarde pas !*"
+        }
+      ]
+    },
+    {
+      "title": "Ve třídě",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Madame Leroy učí francouzštinu a mluví ve třídě jen francouzsky. Pořád něco žádá: otevřete knihy, poslouchejte, opakujte. Když jí budeš rozumět, budeš vědět, co dělat. A pokyny pak umíš dát i ty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozkaz",
+          "definition": "Věta, kterou někoho žádáš, aby něco udělal nebo neudělal.",
+          "example": "Sedni si! Neruš!"
+        },
+        {
+          "type": "term",
+          "term": "Rozkazovací způsob",
+          "definition": "Tvar slovesa pro rozkaz. Francouzština ho má pro *tu* (ty), *vous* (vy) a *nous* (my = „pojďme“).",
+          "example": "*Écoute ! Écoutez ! Écoutons !*"
+        },
+        {
+          "type": "term",
+          "term": "Zájmeno",
+          "definition": "Připomenutí: *tu, nous, vous*. V rozkazu se **nepíše**, stejně jako česky neříkáš „ty poslouchej“.",
+          "example": "*Écoutez !* (ne „vous écoutez“)"
+        },
+        {
+          "type": "heading",
+          "text": "Pokyny madame Leroy"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "👩‍🏫",
+            "📖",
+            "👂",
+            "✏️",
+            "🚪"
+          ],
+          "caption": "Ve třídě madame Leroy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pokyn",
+            "Česky",
+            "Infinitiv"
+          ],
+          "rows": [
+            [
+              "Ouvrez vos livres !",
+              "Otevřete si knihy!",
+              "ouvrir"
+            ],
+            [
+              "Écoutez et répétez !",
+              "Poslouchejte a opakujte!",
+              "écouter, répéter"
+            ],
+            [
+              "Lisez le texte !",
+              "Přečtěte si text!",
+              "lire"
+            ],
+            [
+              "Écrivez la date !",
+              "Napište datum!",
+              "écrire"
+            ],
+            [
+              "Tom, ferme la porte, s’il te plaît !",
+              "Tome, zavři dveře, prosím!",
+              "fermer"
+            ],
+            [
+              "Ne parlez pas !",
+              "Nemluvte!",
+              "parler"
+            ],
+            [
+              "Chantons ensemble !",
+              "Zazpívejme si spolu!",
+              "chanter"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Madame Leroy mluví ke třídě, proto používá tvar pro *vous*. Tomovi tyká: *ferme* (bez *-s*, protože *fermer* je na *-er*). Když chce, aby něco dělali všichni včetně ní, použije *nous*: *Chantons !*"
+        },
+        {
+          "type": "text",
+          "text": "Užitečné ustálené pokyny: *Asseyez-vous !* (Posaďte se!) *Assieds-toi !* (Posaď se!) *Vas-y !* (Do toho! / Jdi!) *Allons-y !* (Jdeme na to!)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď rozkazy: komu jsou určené?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "tu (jednomu kamarádovi)",
+              "vous (třídě)",
+              "nous (pojďme)"
+            ],
+            "items": [
+              {
+                "text": "Écoute !",
+                "group": 0
+              },
+              {
+                "text": "Viens !",
+                "group": 0
+              },
+              {
+                "text": "Sois sage !",
+                "group": 0
+              },
+              {
+                "text": "Écoutez !",
+                "group": 1
+              },
+              {
+                "text": "Ouvrez vos livres !",
+                "group": 1
+              },
+              {
+                "text": "Soyez sages !",
+                "group": 1
+              },
+              {
+                "text": "Partons !",
+                "group": 2
+              },
+              {
+                "text": "Chantons !",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Jak vytvořit pokyn"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rozhodni, komu mluvíš: kamarád (*tu*), skupina nebo dospělý (*vous*), všichni i ty (*nous*).",
+            "Řekni si přítomný čas: *tu écoutes*.",
+            "Škrtni zájmeno a u *-er* v *tu* i *-s*: *Écoute !*",
+            "Chceš zakázat? Obal *ne … pas*: *N’écoute pas !*"
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Napiš pokyn pro třídu: „Neotvírejte okno!“ (*ouvrir* – *vous ouvrez*, okno = *la fenêtre*)",
+          "answer": "Třídě → *vous ouvrez* → *Ouvrez*. Zápor: *n’* (samohláska) + *pas*. **N’ouvrez pas la fenêtre !**"
+        },
+        {
+          "type": "example",
+          "question": "Navrhni kamarádům: „Pojďme do parku!“",
+          "answer": "„Pojďme“ = *nous* → *nous allons* → *Allons*. *le parc* → *au parc*. **Allons au parc !**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vous écoutez ! (jako pokyn)",
+          "right": "Écoutez !",
+          "why": "V rozkazu se zájmeno vynechává. *Vous écoutez* je jen oznámení „posloucháte“."
+        },
+        {
+          "type": "summary",
+          "text": "Třídě nebo dospělému: *Écoutez !*, kamarádovi: *Écoute !*, všem včetně sebe: *Écoutons !* Bez zájmena, zápor *Ne … pas*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Řekni kamarádovi: „Poslouchej!“",
+      "options": [
+        "Écoute !",
+        "Écoutes !",
+        "Tu écoutes !"
+      ],
+      "answer": 0,
+      "explanation": "U *-er* se v rozkazu pro *tu* škrtá *-s*."
+    },
+    {
+      "type": "choice",
+      "question": "Řekni třídě: „Otevřete knihy!“",
+      "options": [
+        "Ouvrez vos livres !",
+        "Vous ouvrez vos livres !",
+        "Ouvre vos livres !"
+      ],
+      "answer": 0,
+      "explanation": "Tvar *vous* bez zájmena."
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro *nous* od *aller*: „Pojďme!“",
+      "answers": [
+        "allons"
+      ],
+      "explanation": "*nous allons* → *Allons !*"
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro *tu* od *finir*: „Dodělej to!“ → ___ !",
+      "answers": [
+        "finis"
+      ],
+      "explanation": "Sloveso není na *-er*, *-s* zůstane: *Finis !*",
+      "hints": [
+        "Vyjdi z přítomného času pro tu a zjisti, jestli je sloveso na -er."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Rozkaz pro *tu* od *être*:",
+      "options": [
+        "Sois",
+        "Es",
+        "Sois-tu"
+      ],
+      "answer": 0,
+      "explanation": "Nepravidelné: *sois, soyons, soyez*."
+    },
+    {
+      "type": "truefalse",
+      "question": "V rozkazovacím způsobu se zájmeno *tu / vous* vynechává.",
+      "answer": true,
+      "explanation": "*Écoutez !*, ne „Vous écoutez !“."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor: „Nemluvte!“",
+      "options": [
+        "Ne parlez pas !",
+        "Parlez ne pas !",
+        "Ne pas parlez !"
+      ],
+      "answer": 0,
+      "explanation": "*ne* před, *pas* za slovesem."
+    },
+    {
+      "type": "match",
+      "question": "Spoj francouzský pokyn s českým.",
+      "pairs": [
+        [
+          "Répétez !",
+          "Opakujte!"
+        ],
+        [
+          "Asseyez-vous !",
+          "Posaďte se!"
+        ],
+        [
+          "Viens !",
+          "Pojď!"
+        ],
+        [
+          "N’aie pas peur !",
+          "Neboj se!"
+        ]
+      ],
+      "explanation": "Častá spojení ve třídě i doma."
+    },
+    {
+      "type": "choice",
+      "question": "Rozkaz pro *tu* od *aller*:",
+      "options": [
+        "Va !",
+        "Vas !",
+        "Allez !"
+      ],
+      "answer": 0,
+      "explanation": "Jako u *-er*: *tu vas → Va !* (jen ve spojení *Vas-y !* zůstane *s*)."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Zavři dveře, prosím.“",
+      "items": [
+        "Ferme",
+        "la porte,",
+        "s’il te plaît."
+      ],
+      "explanation": "Rozkaz *Ferme* + předmět + zdvořilost."
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro *tu* od *manger*: ___ ta soupe !",
+      "answers": [
+        "mange"
+      ],
+      "explanation": "*tu manges* → *Mange !* (bez *-s*)."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Prends ton sac !* je správně, i když *prendre* má v rozkazu *-s*.",
+      "answer": true,
+      "explanation": "*-s* se škrtá jen u *-er* a *aller*. *prendre* ho nechává."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Buďte zticha!“ (zticha = *calmes*)?",
+      "options": [
+        "Soyez calmes !",
+        "Êtes calmes !",
+        "Ayez calmes !"
+      ],
+      "answer": 0,
+      "explanation": "*être* → *soyez*."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená *Chantons !*?",
+      "options": [
+        "Zazpívejme si!",
+        "Zpívejte!",
+        "Zpívej!"
+      ],
+      "answer": 0,
+      "explanation": "Tvar *nous* = pojďme, -me."
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří rozkazovací způsob? Uveď příklad pro tu, nous a vous.",
+      "answer": "Vezmu přítomný čas pro *tu, nous, vous* a vynechám zájmeno. U sloves na *-er* škrtnu v *tu* koncové *-s*: *Regarde ! Regardons ! Regardez !*"
+    },
+    {
+      "type": "open",
+      "question": "Dej francouzsky tři pokyny spolužákům ve třídě.",
+      "answer": "*Écoutez ! Ouvrez vos livres ! Ne parlez pas !*"
+    }
+  ]
+}

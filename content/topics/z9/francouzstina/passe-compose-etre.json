@@ -1,0 +1,607 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "passe-compose-etre",
+  "title": "Passé composé s être",
+  "emoji": "🏠",
+  "explanations": [
+    {
+      "title": "Seznam a shoda",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Většina sloves tvoří minulý čas s *avoir*: *j’ai mangé*. Asi patnáct sloves ale používá místo něj **être**: *je **suis** allé* (šel jsem). Jsou to hlavně slovesa pohybu z místa na místo (jít, přijít, odjet) a slovesa jako narodit se nebo zemřít."
+        },
+        {
+          "type": "text",
+          "text": "Právě tahle slovesa potřebuješ, když vyprávíš o výletě: kam jsi jel, kdy jsi přijel, kde jsi zůstal."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Passé composé",
+          "definition": "Připomenutí: složený minulý čas = pomocné sloveso + příčestí minulé.",
+          "example": "*j’ai mangé* (jedl jsem)"
+        },
+        {
+          "type": "term",
+          "term": "Pomocné sloveso être",
+          "definition": "U některých sloves pomáhá místo *avoir* sloveso *être*: *je suis, tu es, il est, nous sommes, vous êtes, ils sont*.",
+          "example": "*Je suis arrivé.* = Přijel jsem."
+        },
+        {
+          "type": "term",
+          "term": "Shoda příčestí",
+          "definition": "S *être* se příčestí chová jako přídavné jméno: u ženy přidá *-e*, u víc osob *-s*.",
+          "example": "*il est allé*, *elle est allée*, *ils sont allés*"
+        },
+        {
+          "type": "heading",
+          "text": "Slovesa s être (dvojice)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "Příčestí",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "aller / venir",
+              "allé / venu",
+              "jít / přijít"
+            ],
+            [
+              "arriver / partir",
+              "arrivé / parti",
+              "přijet / odjet"
+            ],
+            [
+              "entrer / sortir",
+              "entré / sorti",
+              "vejít / vyjít"
+            ],
+            [
+              "monter / descendre",
+              "monté / descendu",
+              "vystoupat / sejít"
+            ],
+            [
+              "naître / mourir",
+              "né / mort",
+              "narodit se / zemřít"
+            ],
+            [
+              "rester / tomber",
+              "resté / tombé",
+              "zůstat / spadnout"
+            ],
+            [
+              "rentrer / retourner",
+              "rentré / retourné",
+              "vrátit se domů / vrátit se"
+            ],
+            [
+              "revenir / devenir",
+              "revenu / devenu",
+              "vrátit se / stát se"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pomůcka: většina z nich tvoří dvojice opaků. Představ si dům: do domu *entrer*, ven *sortir*, nahoru *monter*, dolů *descendre*, narodit se *naître*, zemřít *mourir*, zůstat *rester*…"
+        },
+        {
+          "type": "heading",
+          "text": "Shoda s podmětem"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "aller",
+            "poznámka"
+          ],
+          "rows": [
+            [
+              "je",
+              "suis allé / allée",
+              "kluk / holka"
+            ],
+            [
+              "tu",
+              "es allé / allée",
+              ""
+            ],
+            [
+              "il / elle",
+              "est allé / est allée",
+              ""
+            ],
+            [
+              "nous",
+              "sommes allés / allées",
+              "smíšená skupina = allés"
+            ],
+            [
+              "vous",
+              "êtes allé(e) / allé(e)s",
+              "vykání jednomu i víc lidem"
+            ],
+            [
+              "ils / elles",
+              "sont allés / sont allées",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Většinou se *-e* ani *-s* nevysloví: *allé* i *allée* zní „ale“. U *mort / morte* je ale *t* v ženském rodě slyšet."
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je sloveso v seznamu? Ano → *être*, ne → *avoir*.",
+            "Dej *être* do přítomného času podle osoby: *je suis, elle est…*",
+            "Přidej příčestí a zkontroluj shodu: žena +*e*, víc osob +*s*.",
+            "Zápor obalí *être*: *Je ne suis pas allé.*"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Elle est",
+                "after": "à Paris.",
+                "options": [
+                  "allée",
+                  "allé",
+                  "allés"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous",
+                "after": "arrivés hier.",
+                "options": [
+                  "sommes",
+                  "avons",
+                  "êtes"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils sont",
+                "after": "à 8 heures.",
+                "options": [
+                  "partis",
+                  "parti",
+                  "parties"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je",
+                "after": "mangé une pomme.",
+                "options": [
+                  "ai",
+                  "suis",
+                  "es"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Marie est",
+                "after": "de vélo.",
+                "options": [
+                  "tombée",
+                  "tombé",
+                  "tombés"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Moje sestra se narodila v roce 2012.",
+          "answer": "*naître* je v seznamu → *être*. Sestra je žena → *née*. **Ma sœur est née en 2012.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož (mluví holka): Včera jsem zůstala doma a nešla jsem do kina.",
+          "answer": "*rester* i *aller* jsou s *être*. Mluví holka → *-e*: *restée*, *allée*. Zápor obalí *suis*. **Hier, je suis restée à la maison et je ne suis pas allée au cinéma.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’ai allé au cinéma.",
+          "right": "Je suis allé au cinéma.",
+          "why": "*aller* tvoří minulý čas s *être*, ne s *avoir*."
+        },
+        {
+          "type": "summary",
+          "text": "Asi 15 sloves pohybu a změny (*aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber…*) má **être + příčestí**. Příčestí se shoduje s podmětem: *elle est allée, ils sont partis*."
+        }
+      ]
+    },
+    {
+      "title": "Výlet do Paříže",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Třída 9. B jela na výlet do Paříže. Po návratu Klára vypráví, co zažili. Většinu sloves pohybu (jet, přijet, vystoupat, sejít) říká s *être*. Uvidíš, jak se přitom mění konec příčestí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Sloveso pohybu",
+          "definition": "Sloveso, které říká, že se někdo přesouvá z místa na místo.",
+          "example": "jít, přijet, odjet, vejít, vystoupat"
+        },
+        {
+          "type": "term",
+          "term": "Pomocné sloveso",
+          "definition": "Sloveso, které pomáhá tvořit čas. Pro minulý čas je to *avoir*, nebo u některých sloves *être*.",
+          "example": "*nous **sommes** partis* = odjeli jsme"
+        },
+        {
+          "type": "term",
+          "term": "Příčestí minulé",
+          "definition": "Druhá část minulého času: *allé, parti, monté…* S *être* se mění jako přídavné jméno.",
+          "example": "*Klára est partie.* (*-e* pro ženu)"
+        },
+        {
+          "type": "heading",
+          "text": "Klára vypráví"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "🚌",
+            "🗼",
+            "🏛️",
+            "🥐",
+            "🏠"
+          ],
+          "caption": "Výlet do Paříže"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Klára",
+            "Česky",
+            "Proč takový tvar"
+          ],
+          "rows": [
+            [
+              "Nous sommes partis lundi à 6 heures.",
+              "Odjeli jsme v pondělí v 6 hodin.",
+              "partir + être, třída (smíšená) → -s"
+            ],
+            [
+              "Nous sommes arrivés à Paris le soir.",
+              "Do Paříže jsme dorazili večer.",
+              "arriver + être, -s"
+            ],
+            [
+              "Mardi, je suis montée sur la tour Eiffel.",
+              "V úterý jsem vystoupala na Eiffelovku.",
+              "Klára je holka → -e"
+            ],
+            [
+              "Mon ami Petr est resté en bas.",
+              "Kamarád Petr zůstal dole.",
+              "Petr → bez koncovky"
+            ],
+            [
+              "Il a mangé trois croissants !",
+              "Snědl tři croissanty!",
+              "manger není v seznamu → avoir"
+            ],
+            [
+              "Les filles sont allées au Louvre.",
+              "Holky šly do Louvru.",
+              "samé ženy → -es"
+            ],
+            [
+              "Vendredi, nous sommes rentrés à Prague.",
+              "V pátek jsme se vrátili do Prahy.",
+              "rentrer + être, -s"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: ne každý pohyb"
+        },
+        {
+          "type": "text",
+          "text": "Se *être* jsou jen slovesa ze seznamu. Pohyb jako *marcher* (chodit), *courir* (běhat), *nager* (plavat) nebo *danser* tvoří minulý čas s *avoir*: *J’ai marché.* (Chodil jsem.) *Nous avons nagé.* (Plavali jsme.)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď slovesa: tvoří passé composé s *être*, nebo s *avoir*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "être",
+              "avoir"
+            ],
+            "items": [
+              {
+                "text": "aller",
+                "group": 0
+              },
+              {
+                "text": "partir",
+                "group": 0
+              },
+              {
+                "text": "tomber",
+                "group": 0
+              },
+              {
+                "text": "naître",
+                "group": 0
+              },
+              {
+                "text": "rester",
+                "group": 0
+              },
+              {
+                "text": "manger",
+                "group": 1
+              },
+              {
+                "text": "marcher",
+                "group": 1
+              },
+              {
+                "text": "nager",
+                "group": 1
+              },
+              {
+                "text": "faire",
+                "group": 1
+              },
+              {
+                "text": "voir",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Klára se ptá kamarádky Evy: „Kdy jsi přijela?“",
+          "answer": "Tykání → *tu es*. *arriver* je se *être*, Eva je žena → *arrivée*. „Kdy“ = *quand*. **Quand est-ce que tu es arrivée ?**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Paní učitelka nespadla, ale Tom spadl.",
+          "answer": "*tomber* → *être*. Učitelka = *la prof*, žena → *tombée*; zápor obalí *est*. Tom → *tombé*. **La prof n’est pas tombée, mais Tom est tombé.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Les filles sont allé au Louvre.",
+          "right": "Les filles sont allées au Louvre.",
+          "why": "S *être* se příčestí shoduje s podmětem: ženský rod (*-e*) a množné číslo (*-s*)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je suis nagé.",
+          "right": "J’ai nagé.",
+          "why": "*nager* není v seznamu sloves s *être*."
+        },
+        {
+          "type": "summary",
+          "text": "Slovesa ze seznamu (pohyb a změna: jít, přijít, odjet, zůstat, spadnout, narodit se…) mají *être* a příčestí se shoduje: *-e* pro ženy, *-s* pro víc. Ostatní mají *avoir*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Je ___ allé au cinéma.",
+      "options": [
+        "suis",
+        "ai",
+        "es"
+      ],
+      "answer": 0,
+      "explanation": "*aller* tvoří minulý čas s *être*: *je suis allé*."
+    },
+    {
+      "type": "choice",
+      "question": "Elle est ___ hier.",
+      "options": [
+        "arrivée",
+        "arrivé",
+        "arrivés"
+      ],
+      "answer": 0,
+      "explanation": "Podmět je žena → *-e*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí od partir: Ils sont ___ à 8 heures.",
+      "answers": [
+        "partis"
+      ],
+      "explanation": "*partir → parti*, *ils* → *-s*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sloveso *manger* tvoří passé composé se *être*.",
+      "answer": false,
+      "explanation": "*manger* není v seznamu: *j’ai mangé*."
+    },
+    {
+      "type": "choice",
+      "question": "Les filles sont ___ au parc.",
+      "options": [
+        "allées",
+        "allés",
+        "allée"
+      ],
+      "answer": 0,
+      "explanation": "Samé ženy, víc osob → *-es*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s příčestím.",
+      "pairs": [
+        [
+          "venir",
+          "venu"
+        ],
+        [
+          "naître",
+          "né"
+        ],
+        [
+          "mourir",
+          "mort"
+        ],
+        [
+          "descendre",
+          "descendu"
+        ],
+        [
+          "sortir",
+          "sorti"
+        ]
+      ],
+      "explanation": "Tyto tvary se musíš naučit."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "J’ai nagé.",
+        "Je suis nagé.",
+        "Je suis nager."
+      ],
+      "answer": 0,
+      "explanation": "*nager* (plavat) je s *avoir*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň pomocné sloveso: Nous ___ restés à la maison.",
+      "answers": [
+        "sommes"
+      ],
+      "explanation": "*rester* je se *être* → *nous sommes*.",
+      "hints": [
+        "Je rester v seznamu sloves „domu“?"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Nešla jsem do školy.“ (mluví holka)",
+      "items": [
+        "Je",
+        "ne",
+        "suis",
+        "pas",
+        "allée",
+        "à l’école."
+      ],
+      "explanation": "Zápor obalí *suis*, příčestí s *-e*."
+    },
+    {
+      "type": "choice",
+      "question": "Mon frère est ___ en 2010. (narodil se)",
+      "options": [
+        "né",
+        "née",
+        "naît"
+      ],
+      "answer": 0,
+      "explanation": "Bratr → *né* bez koncovky."
+    },
+    {
+      "type": "truefalse",
+      "question": "*allé* a *allée* se vyslovují stejně.",
+      "answer": true,
+      "explanation": "Koncové *-e* je němé."
+    },
+    {
+      "type": "choice",
+      "question": "Paul et Marie sont ___ en France.",
+      "options": [
+        "partis",
+        "parties",
+        "parti"
+      ],
+      "answer": 0,
+      "explanation": "Smíšená skupina → mužský tvar a *-s*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí od tomber (mluví holka): Je suis ___.",
+      "answers": [
+        "tombée",
+        "tombee"
+      ],
+      "explanation": "Holka → *-e*: *tombée*."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým pomocným slovesem tvoří passé composé *rentrer*?",
+      "options": [
+        "être",
+        "avoir",
+        "aller"
+      ],
+      "answer": 0,
+      "explanation": "*rentrer* (vrátit se domů) je v seznamu: *je suis rentré*."
+    },
+    {
+      "type": "open",
+      "question": "Která slovesa tvoří passé composé se *être*? Uveď aspoň šest.",
+      "answer": "Hlavně slovesa pohybu a změny: *aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, rentrer, revenir*."
+    },
+    {
+      "type": "open",
+      "question": "Vyprávěj francouzsky ve dvou větách, kam jsi jel(a) o prázdninách a kdy ses vrátil(a).",
+      "answer": "Je suis allé en Croatie avec mes parents. Nous sommes rentrés à la fin d’août. (Holka: *Je suis allée…*)"
+    }
+  ]
+}

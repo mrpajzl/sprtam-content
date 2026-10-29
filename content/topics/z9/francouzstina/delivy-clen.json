@@ -1,0 +1,547 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "delivy-clen",
+  "title": "Dělivý člen",
+  "emoji": "🧀",
+  "explanations": [
+    {
+      "title": "Pravidla",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "U snídaně řekneš česky „jím chleba“ nebo „piju vodu“. Nejíš **celý** chléb ani nepiješ **všechnu** vodu na světě, jen trochu. Francouzština to pozná: před takové slovo dá zvláštní člen – **dělivý**. *Je mange **du** pain. Je bois **de l’**eau.*"
+        },
+        {
+          "type": "text",
+          "text": "Hodí se v obchodě, v restauraci i doma u stolu. Bez něj francouzsky nic neobjednáš."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nepočitatelné podstatné jméno",
+          "definition": "Věc, kterou nepočítáš na kusy, ale měříš nebo vážíš: voda, mléko, chléb, sýr, cukr.",
+          "example": "Neřekneš „tři vody“, ale „tři sklenice vody“."
+        },
+        {
+          "type": "term",
+          "term": "Dělivý člen",
+          "definition": "Člen pro neurčité množství něčeho nepočitatelného: „trochu, nějaké“. Česky se nepřekládá (nebo „trochu“), anglicky *some*.",
+          "example": "*du pain* = (nějaký) chleba"
+        },
+        {
+          "type": "term",
+          "term": "Člen určitý",
+          "definition": "Připomenutí: *le, la, l’, les* = ten konkrétní, nebo věc obecně.",
+          "example": "*J’aime le pain.* = Mám rád chleba (obecně)."
+        },
+        {
+          "type": "heading",
+          "text": "Tvary dělivého členu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Před",
+            "Člen",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "mužským rodem",
+              "du",
+              "du pain, du fromage",
+              "chleba, sýr"
+            ],
+            [
+              "ženským rodem",
+              "de la",
+              "de la confiture, de la soupe",
+              "marmeládu, polévku"
+            ],
+            [
+              "samohláskou",
+              "de l’",
+              "de l’eau, de l’huile",
+              "vodu, olej"
+            ],
+            [
+              "množným číslem",
+              "des",
+              "des pâtes, des fruits",
+              "těstoviny, ovoce"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Česky to někdy znáš taky: „kup **chleba**“, „nalej mi **vody**“ – druhý pád tu znamená „trochu“. Francouzský dělivý člen dělá totéž."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy dělivý člen NEpoužít"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Po záporu** → jen *de / d’*: *Je ne mange pas **de** viande.* (Nejím maso.) *Il ne boit pas **d’**eau.*",
+            "**Po množství** → jen *de / d’*: *beaucoup **de** sucre* (hodně cukru), *un peu **de** lait* (trochu mléka), *un verre **d’**eau* (sklenice vody), *un kilo **de** pommes*.",
+            "**Po slovesech aimer, adorer, détester, préférer** → člen určitý, protože mluvíš o věci obecně: *J’aime **le** fromage.* × *Je mange **du** fromage.*",
+            "**Po être** se člen nemění ani v záporu: *Ce n’est pas du sucre, c’est du sel.* (To není cukr, to je sůl.)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sloveso boire (pít)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "je",
+            "tu",
+            "il / elle",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "rows": [
+            [
+              "bois",
+              "bois",
+              "boit",
+              "buvons",
+              "buvez",
+              "boivent"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je mange",
+                "after": "pain.",
+                "options": [
+                  "du",
+                  "de la",
+                  "le"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu bois",
+                "after": "eau ?",
+                "options": [
+                  "de l’",
+                  "du",
+                  "de la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il prend",
+                "after": "soupe.",
+                "options": [
+                  "de la",
+                  "du",
+                  "des"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je ne mange pas",
+                "after": "viande.",
+                "options": [
+                  "de",
+                  "de la",
+                  "la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "J’adore",
+                "after": "chocolat.",
+                "options": [
+                  "le",
+                  "du",
+                  "de"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: K snídani jím chleba s máslem a piju mléko.",
+          "answer": "*le pain* (m.) → *du pain*. *le beurre* (m.) → *du beurre*. *le lait* (m.) → *du lait*. K snídani = *au petit-déjeuner*. **Au petit-déjeuner, je mange du pain avec du beurre et je bois du lait.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Nemám rád rybu, ale jím hodně zeleniny.",
+          "answer": "„Nemám rád“ = *je n’aime pas* + člen určitý: *le poisson*. „Hodně“ = *beaucoup de* + bez členu: *beaucoup de légumes*. **Je n’aime pas le poisson, mais je mange beaucoup de légumes.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’aime du chocolat.",
+          "right": "J’aime le chocolat.",
+          "why": "Po *aimer* mluvíš o věci obecně → člen určitý."
+        },
+        {
+          "type": "summary",
+          "text": "Neurčité množství: *du, de la, de l’, des*. Po záporu a po množství jen *de*. Po *aimer, adorer, détester* člen určitý *le, la, les*."
+        }
+      ]
+    },
+    {
+      "title": "V restauraci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rodina Novákových je na dovolené v Lyonu a jde do restaurace. Číšník se ptá, co si dají. Z objednávek uvidíš, jak se francouzsky mluví o jídle a pití – a proč se někdy říká *du*, jindy *le* a jindy jen *de*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dělivý člen",
+          "definition": "Člen *du, de la, de l’, des*. Říká „nějaké, trochu“ u věcí, které nepočítáš na kusy.",
+          "example": "*de la soupe* = (trochu) polévky"
+        },
+        {
+          "type": "term",
+          "term": "Množství",
+          "definition": "Slovo, které říká kolik: *beaucoup* (hodně), *un peu* (trochu), *un verre* (sklenice), *une bouteille* (láhev), *un kilo*.",
+          "example": "*une bouteille d’eau* = láhev vody"
+        },
+        {
+          "type": "term",
+          "term": "Člen určitý",
+          "definition": "Připomenutí: *le, la, l’, les*. Používá se i pro věc obecně: „mám rád čokoládu“ = všechnu čokoládu jako takovou.",
+          "example": "*J’aime la soupe.*"
+        },
+        {
+          "type": "heading",
+          "text": "Objednávka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Kdo",
+            "Francouzsky",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "Serveur",
+              "Bonjour ! Qu’est-ce que vous prenez ?",
+              "Dobrý den! Co si dáte?"
+            ],
+            [
+              "Maman",
+              "Pour moi, de la soupe et du poisson, s’il vous plaît.",
+              "Pro mě polévku a rybu, prosím."
+            ],
+            [
+              "Papa",
+              "Moi, je prends du poulet avec des frites.",
+              "Já si dám kuře s hranolky."
+            ],
+            [
+              "Klára",
+              "Je ne mange pas de viande. Je voudrais des pâtes.",
+              "Nejím maso. Chtěla bych těstoviny."
+            ],
+            [
+              "Serveur",
+              "Et comme boisson ?",
+              "A k pití?"
+            ],
+            [
+              "Papa",
+              "Une bouteille d’eau, s’il vous plaît.",
+              "Láhev vody, prosím."
+            ],
+            [
+              "Klára",
+              "Et pour le dessert, de la glace ! J’adore la glace !",
+              "A jako dezert zmrzlinu! Zbožňuju zmrzlinu!"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co se v rozhovoru stalo"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Objednávají si nějaké množství jídla → dělivý člen: *de la soupe, du poisson, du poulet, des frites, des pâtes*.",
+            "Klára nejí maso → po záporu jen *de*: *pas de viande*.",
+            "Láhev vody → po množství jen *de / d’*: *une bouteille d’eau*.",
+            "Klára zbožňuje zmrzlinu obecně → po *adorer* člen určitý: *la glace*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď spojení: je v nich dělivý člen, nebo jen *de* (po záporu nebo množství)?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "dělivý člen",
+              "jen de / d’"
+            ],
+            "items": [
+              {
+                "text": "du fromage",
+                "group": 0
+              },
+              {
+                "text": "de la salade",
+                "group": 0
+              },
+              {
+                "text": "de l’eau",
+                "group": 0
+              },
+              {
+                "text": "des frites",
+                "group": 0
+              },
+              {
+                "text": "pas de fromage",
+                "group": 1
+              },
+              {
+                "text": "beaucoup de salade",
+                "group": 1
+              },
+              {
+                "text": "un verre d’eau",
+                "group": 1
+              },
+              {
+                "text": "un peu de lait",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Číšník se ptá: *Vous voulez du pain ?* Nechceš. Co odpovíš?",
+          "answer": "Po záporu se *du* mění na *de*: **Non merci, je ne veux pas de pain.**"
+        },
+        {
+          "type": "example",
+          "question": "Kamarád se ptá: *Tu aimes le fromage ?* Máš rád sýr a jíš ho každý den. Odpověz dvěma větami.",
+          "answer": "Obecně: *aimer* + člen určitý → *J’aime le fromage.* Jím (nějaký) sýr: *Je mange du fromage tous les jours.* **Oui, j’aime le fromage. Je mange du fromage tous les jours.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je ne bois pas du lait.",
+          "right": "Je ne bois pas de lait.",
+          "why": "Po záporu (kromě *être*) zůstane jen *de*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "beaucoup du sucre",
+          "right": "beaucoup de sucre",
+          "why": "Po slovech pro množství je jen *de* bez členu."
+        },
+        {
+          "type": "summary",
+          "text": "Jím, piju, kupuju nějaké množství → *du, de la, de l’, des*. Po záporu a po množství → *de*. Po *aimer, adorer, détester* → *le, la, les*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Je mange ___ pain.",
+      "options": [
+        "du",
+        "de la",
+        "des"
+      ],
+      "answer": 0,
+      "explanation": "*le pain* je mužského rodu → *du*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu bois ___ eau ?",
+      "options": [
+        "de l’",
+        "du",
+        "de la"
+      ],
+      "answer": 0,
+      "explanation": "Před samohláskou *de l’*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň dělivý člen: Il prend ___ soupe. (ženský rod)",
+      "answers": [
+        "de la"
+      ],
+      "explanation": "Ženský rod → *de la*."
+    },
+    {
+      "type": "choice",
+      "question": "Je ne mange pas ___ viande.",
+      "options": [
+        "de",
+        "de la",
+        "la"
+      ],
+      "answer": 0,
+      "explanation": "Po záporu jen *de*."
+    },
+    {
+      "type": "choice",
+      "question": "J’aime ___ chocolat.",
+      "options": [
+        "le",
+        "du",
+        "de"
+      ],
+      "answer": 0,
+      "explanation": "Po *aimer* mluvíš obecně → člen určitý."
+    },
+    {
+      "type": "truefalse",
+      "question": "*beaucoup de sucre* je správně.",
+      "answer": true,
+      "explanation": "Po slovech pro množství (*beaucoup, un peu, un kilo…*) je jen *de*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: un verre ___ eau (sklenice vody)",
+      "answers": [
+        "d’",
+        "d"
+      ],
+      "explanation": "Po množství *de*, před samohláskou *d’*: *un verre d’eau*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo se správným dělivým členem.",
+      "pairs": [
+        [
+          "pain (m.)",
+          "du"
+        ],
+        [
+          "confiture (ž.)",
+          "de la"
+        ],
+        [
+          "huile (začíná samohl.)",
+          "de l’"
+        ],
+        [
+          "pâtes (mn. č.)",
+          "des"
+        ]
+      ],
+      "explanation": "*du* m., *de la* ž., *de l’* před samohláskou, *des* mn. č."
+    },
+    {
+      "type": "choice",
+      "question": "Nous ___ du lait. (Pijeme mléko.)",
+      "options": [
+        "buvons",
+        "boivons",
+        "boisons"
+      ],
+      "answer": 0,
+      "explanation": "*boire*: je bois, tu bois, il boit, nous buvons, vous buvez, ils boivent."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Ce n’est pas de sel.* je správně.",
+      "answer": false,
+      "explanation": "Po *être* se člen v záporu nemění: *Ce n’est pas du sel.*"
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Chci trochu marmelády.“",
+      "items": [
+        "Je",
+        "veux",
+        "un peu",
+        "de",
+        "confiture."
+      ],
+      "explanation": "Po *un peu* jen *de*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "Je déteste la soupe.",
+        "Je déteste de la soupe.",
+        "Je déteste de soupe."
+      ],
+      "answer": 0,
+      "explanation": "Po *détester* člen určitý."
+    },
+    {
+      "type": "input",
+      "question": "Odpověz záporně: Tu as du lait ? – Non, je n’ai pas ___ lait.",
+      "answers": [
+        "de"
+      ],
+      "explanation": "Po záporu jen *de*: *pas de lait*."
+    },
+    {
+      "type": "choice",
+      "question": "Ils ___ de l’eau. (boire)",
+      "options": [
+        "boivent",
+        "buvent",
+        "boient"
+      ],
+      "answer": 0,
+      "explanation": "*ils boivent* – nepravidelný tvar."
+    },
+    {
+      "type": "open",
+      "question": "Kdy se používá dělivý člen a kdy jen *de*? Uveď příklady.",
+      "answer": "Dělivý člen (*du, de la, de l’, des*) pro nějaké množství: *je mange du pain*. Jen *de* po záporu (*je ne mange pas de pain*) a po množství (*beaucoup de pain*)."
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky, co jíš a piješ k snídani a co nemáš rád.",
+      "answer": "Au petit-déjeuner, je mange du pain avec de la confiture et je bois du lait. Je n’aime pas le café."
+    }
+  ]
+}

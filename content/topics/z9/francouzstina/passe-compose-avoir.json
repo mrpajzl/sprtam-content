@@ -1,0 +1,578 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "passe-compose-avoir",
+  "title": "Passé composé s avoir",
+  "emoji": "⏪",
+  "explanations": [
+    {
+      "title": "Vzorec",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zatím umíš francouzsky mluvit o tom, co se děje teď, a o tom, co budeš dělat. Chybí minulost: „včera jsem hrál fotbal“, „viděl jsem film“. Na to má francouzština **passé composé** – „složený minulý čas“."
+        },
+        {
+          "type": "text",
+          "text": "Česky minulý čas taky skládáš ze dvou kousků: „hrál **jsem**“. Francouzština to dělá podobně: *j’**ai** joué*."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Minulý čas",
+          "definition": "Tvar slovesa pro to, co se už stalo.",
+          "example": "hraju → hrál jsem"
+        },
+        {
+          "type": "term",
+          "term": "Pomocné sloveso",
+          "definition": "Sloveso, které samo nic neznamená, jen pomáhá postavit čas. V passé composé je to většinou **avoir** v přítomném čase.",
+          "example": "*j’**ai** mangé* = jedl jsem"
+        },
+        {
+          "type": "term",
+          "term": "Příčestí minulé",
+          "definition": "Francouzsky *participe passé*. Zvláštní tvar slovesa, který se přidá za pomocné sloveso. Česky odpovídá tvaru na *-l*: hrál, jedl.",
+          "example": "*manger* → *mangé*"
+        },
+        {
+          "type": "heading",
+          "text": "Vzorec"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi *avoir* v přítomném čase podle osoby: *j’ai, tu as, il a, nous avons, vous avez, ils ont*.",
+            "Ze slovesa udělej příčestí minulé (tabulka níže).",
+            "Dej je za sebe: *j’ai + parlé = j’ai parlé* (mluvil jsem)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak vznikne příčestí minulé"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv končí na",
+            "Příčestí",
+            "Příklad"
+          ],
+          "rows": [
+            [
+              "-er",
+              "-é",
+              "parler → parlé, manger → mangé, jouer → joué"
+            ],
+            [
+              "-ir (většina)",
+              "-i",
+              "finir → fini, choisir → choisi, dormir → dormi"
+            ],
+            [
+              "-re (některá)",
+              "-u",
+              "attendre → attendu, vendre → vendu, répondre → répondu"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nepravidelná příčestí se musíš naučit:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Infinitiv",
+            "Příčestí",
+            "Příklad",
+            "Česky"
+          ],
+          "rows": [
+            [
+              "avoir",
+              "eu (čti „ü“)",
+              "j’ai eu",
+              "měl jsem"
+            ],
+            [
+              "être",
+              "été",
+              "j’ai été",
+              "byl jsem"
+            ],
+            [
+              "faire",
+              "fait",
+              "j’ai fait",
+              "dělal jsem / udělal jsem"
+            ],
+            [
+              "prendre",
+              "pris",
+              "j’ai pris",
+              "vzal jsem"
+            ],
+            [
+              "voir",
+              "vu",
+              "j’ai vu",
+              "viděl jsem"
+            ],
+            [
+              "boire",
+              "bu",
+              "j’ai bu",
+              "pil jsem / vypil jsem"
+            ],
+            [
+              "lire",
+              "lu",
+              "j’ai lu",
+              "četl jsem / přečetl jsem"
+            ],
+            [
+              "écrire",
+              "écrit",
+              "j’ai écrit",
+              "psal jsem / napsal jsem"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Čeština rozlišuje „jedl“ a „snědl“. Francouzský passé composé ne: *j’ai mangé* znamená obojí, nejčastěji ukončený děj („snědl jsem“). Angličtina by řekla *I ate* nebo *I have eaten*."
+        },
+        {
+          "type": "heading",
+          "text": "Zápor a otázka"
+        },
+        {
+          "type": "text",
+          "text": "Zápor obalí pomocné sloveso: *Je **n’**ai **pas** mangé.* (Nejedl jsem.) Otázka: *Tu as mangé ?* nebo *Est-ce que tu as mangé ?*"
+        },
+        {
+          "type": "text",
+          "text": "Časová slova: *hier* (včera), *hier soir* (včera večer), *ce matin* (dnes ráno), *samedi dernier* (minulou sobotu), *la semaine dernière* (minulý týden), *il y a deux jours* (před dvěma dny)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Hier, j’ai",
+                "after": "au foot.",
+                "options": [
+                  "joué",
+                  "jouer",
+                  "joue"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous",
+                "after": "fini nos devoirs.",
+                "options": [
+                  "avons",
+                  "sommes",
+                  "avez"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Tu as",
+                "after": "le film ?",
+                "options": [
+                  "vu",
+                  "voir",
+                  "vois"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle a",
+                "after": "un livre.",
+                "options": [
+                  "lu",
+                  "lire",
+                  "lit"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils ont",
+                "after": "du sport.",
+                "options": [
+                  "fait",
+                  "faire",
+                  "font"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Včera jsme se dívali na film.",
+          "answer": "*avoir* pro *nous* → *nous avons*. *regarder* (-er) → *regardé*. **Hier, nous avons regardé un film.**"
+        },
+        {
+          "type": "example",
+          "question": "Dej do záporu: *Il a pris le bus.* (Jel autobusem.)",
+          "answer": "Zápor obalí *a*: *il n’a pas*. Příčestí *pris* zůstane za ním. **Il n’a pas pris le bus.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je n’ai mangé pas.",
+          "right": "Je n’ai pas mangé.",
+          "why": "*ne … pas* obalí pomocné sloveso *ai*, příčestí jde až za *pas*."
+        },
+        {
+          "type": "summary",
+          "text": "Passé composé = **avoir v přítomném čase + příčestí minulé**: *j’ai parlé, tu as fini, il a attendu, nous avons fait*. Zápor: *je n’ai pas parlé*."
+        }
+      ]
+    },
+    {
+      "title": "Deník",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Léa si píše deník. Každý večer zapíše, co ten den zažila. Všechno už se stalo, takže píše v minulém čase. Z jejího deníku zjistíš, jak passé composé vypadá ve skutečném textu a jak se v něm vyznat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Passé composé",
+          "definition": "Nejčastější francouzský minulý čas. Skládá se ze dvou slov: pomocného slovesa a příčestí.",
+          "example": "*j’ai dansé* = tancovala jsem"
+        },
+        {
+          "type": "term",
+          "term": "Pomocné sloveso avoir",
+          "definition": "Připomenutí: *avoir* = mít. Tady ale „mít“ neznamená, jen pomáhá: *j’ai, tu as, il a, nous avons, vous avez, ils ont*.",
+          "example": "*Elle **a** chanté.* = Zpívala."
+        },
+        {
+          "type": "term",
+          "term": "Příčestí minulé",
+          "definition": "Druhý kousek minulého času. U sloves na *-er* končí na *-é*.",
+          "example": "*chanter* → *chanté*"
+        },
+        {
+          "type": "heading",
+          "text": "Léin deník"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "📔",
+            "🏫",
+            "🍕",
+            "📺",
+            "🌙"
+          ],
+          "caption": "Mardi 14 octobre"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Deník",
+            "Česky",
+            "Infinitiv → příčestí"
+          ],
+          "rows": [
+            [
+              "Ce matin, j’ai pris le bus.",
+              "Dnes ráno jsem jela autobusem.",
+              "prendre → pris"
+            ],
+            [
+              "À l’école, nous avons écrit un test.",
+              "Ve škole jsme psali test.",
+              "écrire → écrit"
+            ],
+            [
+              "À midi, j’ai mangé une pizza avec Zoé.",
+              "V poledne jsem jedla pizzu se Zoé.",
+              "manger → mangé"
+            ],
+            [
+              "Zoé a bu un coca.",
+              "Zoé vypila kolu.",
+              "boire → bu"
+            ],
+            [
+              "Le soir, j’ai fini mes devoirs.",
+              "Večer jsem dodělala úkoly.",
+              "finir → fini"
+            ],
+            [
+              "Après, nous avons regardé la télé.",
+              "Potom jsme se dívali na televizi.",
+              "regarder → regardé"
+            ],
+            [
+              "Je n’ai pas lu mon livre. Demain !",
+              "Nečetla jsem knížku. Zítra!",
+              "lire → lu, zápor"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Chyták: mangé, manger, mangez"
+        },
+        {
+          "type": "text",
+          "text": "*mangé*, *manger* i *mangez* zní úplně stejně („mãže“). Jak poznat, co napsat? Zkus místo něj dát sloveso *prendre*. Hodí se *pris*? Napiš **-é** (*j’ai pris* → *j’ai mangé*). Hodí se *prendre*? Napiš **-er** (*je vais prendre* → *je vais manger*)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku a zkontroluj příčestí."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "parler",
+                "back": "parlé"
+              },
+              {
+                "front": "finir",
+                "back": "fini"
+              },
+              {
+                "front": "attendre",
+                "back": "attendu"
+              },
+              {
+                "front": "faire",
+                "back": "fait"
+              },
+              {
+                "front": "voir",
+                "back": "vu"
+              },
+              {
+                "front": "avoir",
+                "back": "eu"
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Napiš do deníku: Minulou sobotu jsem viděla kamarádku.",
+          "answer": "*je* + *avoir* → *j’ai*. *voir* → *vu* (nepravidelné). Kamarádka = *mon amie* (ženské slovo na samohlásku → *mon*). **Samedi dernier, j’ai vu mon amie.**"
+        },
+        {
+          "type": "example",
+          "question": "Zeptej se Léy, jestli dodělala úkoly.",
+          "answer": "Tykám → *tu as*. *finir* → *fini*. Úkoly = *tes devoirs*. **Est-ce que tu as fini tes devoirs ?** (nebo jen *Tu as fini tes devoirs ?*)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Hier, j’ai manger une pizza.",
+          "right": "Hier, j’ai mangé une pizza.",
+          "why": "Za *avoir* v minulém čase stojí příčestí *-é*, ne infinitiv. Zkouška: *j’ai pris* – hodí se, takže *-é*."
+        },
+        {
+          "type": "summary",
+          "text": "Co se stalo: *avoir* (ai, as, a, avons, avez, ont) + příčestí: *-er → -é, -ir → -i, -re → -u*, nepravidelná *eu, été, fait, pris, vu, bu, lu, écrit*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Hier, j’ai ___ au tennis.",
+      "options": [
+        "joué",
+        "jouer",
+        "jouez"
+      ],
+      "answer": 0,
+      "explanation": "Za *avoir* stojí příčestí: *-er → -é*."
+    },
+    {
+      "type": "input",
+      "question": "Napiš příčestí minulé od *finir*.",
+      "answers": [
+        "fini"
+      ],
+      "explanation": "Slovesa na *-ir* mají většinou příčestí na *-i*."
+    },
+    {
+      "type": "input",
+      "question": "Napiš příčestí minulé od *faire*.",
+      "answers": [
+        "fait"
+      ],
+      "explanation": "Nepravidelné: *faire → fait*."
+    },
+    {
+      "type": "choice",
+      "question": "Nous ___ regardé un film.",
+      "options": [
+        "avons",
+        "sommes",
+        "allons"
+      ],
+      "answer": 0,
+      "explanation": "Pomocné sloveso *avoir*: *nous avons*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s příčestím minulým.",
+      "pairs": [
+        [
+          "voir",
+          "vu"
+        ],
+        [
+          "prendre",
+          "pris"
+        ],
+        [
+          "boire",
+          "bu"
+        ],
+        [
+          "lire",
+          "lu"
+        ],
+        [
+          "être",
+          "été"
+        ]
+      ],
+      "explanation": "Tyhle tvary jsou nepravidelné."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *J’ai mangé.*",
+      "options": [
+        "Je n’ai pas mangé.",
+        "Je n’ai mangé pas.",
+        "Je ne pas ai mangé."
+      ],
+      "answer": 0,
+      "explanation": "*ne … pas* obalí *ai*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Il a été malade.* znamená „Byl nemocný.“",
+      "answer": true,
+      "explanation": "Příčestí od *être* je *été* a pojí se s *avoir*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí od attendre: J’ai ___ le bus.",
+      "answers": [
+        "attendu"
+      ],
+      "explanation": "Slovesa na *-re* jako *attendre* mají příčestí na *-u*.",
+      "hints": [
+        "Jak končí příčestí sloves jako vendre nebo répondre?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená *il y a deux jours*?",
+      "options": [
+        "před dvěma dny",
+        "za dva dny",
+        "jsou dva dny"
+      ],
+      "answer": 0,
+      "explanation": "*il y a* + čas = před."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď: „Včera jsme psali test.“",
+      "items": [
+        "Hier,",
+        "nous",
+        "avons",
+        "écrit",
+        "un test."
+      ],
+      "explanation": "Časové slovo, zájmeno, *avoir*, příčestí *écrit*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*J’ai eu* znamená „měl jsem“.",
+      "answer": true,
+      "explanation": "*eu* je příčestí od *avoir*, čte se „ü“."
+    },
+    {
+      "type": "choice",
+      "question": "Tu as ___ ton livre ? (Přečetl jsi knihu?)",
+      "options": [
+        "lu",
+        "lire",
+        "lis"
+      ],
+      "answer": 0,
+      "explanation": "*lire → lu*."
+    },
+    {
+      "type": "input",
+      "question": "Dej do minulého času: Elle chante. → Elle a ___.",
+      "answers": [
+        "chanté",
+        "chante"
+      ],
+      "explanation": "*chanter* → *chanté*."
+    },
+    {
+      "type": "choice",
+      "question": "Ils ___ du coca. (Pili kolu.)",
+      "options": [
+        "ont bu",
+        "ont bois",
+        "sont bu"
+      ],
+      "answer": 0,
+      "explanation": "*avoir* (*ils ont*) + *bu*."
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří passé composé se slovesem avoir? Uveď příklad.",
+      "answer": "Přítomný čas slovesa *avoir* + příčestí minulé. U sloves na *-er* je příčestí na *-é*: *J’ai mangé une pizza.*"
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky tři věci, které jsi dělal(a) včera.",
+      "answer": "Hier, j’ai fait mes devoirs. J’ai joué au foot. J’ai regardé un film avec ma sœur."
+    }
+  ]
+}

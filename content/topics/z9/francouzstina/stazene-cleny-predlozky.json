@@ -1,0 +1,600 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "stazene-cleny-predlozky",
+  "title": "Stažené členy a předložky u měst a zemí",
+  "emoji": "🗺️",
+  "explanations": [
+    {
+      "title": "Tabulka a pravidla",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chceš říct „jdu do kina“, „jedu do Francie“ nebo „jsem z Kanady“. Česky stačí předložka. Francouzština předložku **slepí** se členem do jednoho slova a u zemí volí předložku podle rodu země. Bez toho neřekneš, kam jedeš ani odkud jsi."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo před podstatným jménem, které říká kam, kde, odkud… Nejčastější francouzské jsou **à** (do, v, na) a **de** (z, od; také „o“ a 2. pád).",
+          "example": "*à Paris* (v Paříži, do Paříže), *de Paris* (z Paříže)"
+        },
+        {
+          "type": "term",
+          "term": "Člen",
+          "definition": "Připomenutí: *le* (mužský rod), *la* (ženský), *l’* (před samohláskou), *les* (množné číslo).",
+          "example": "*le cinéma*, *la plage*, *l’école*, *les toilettes*"
+        },
+        {
+          "type": "term",
+          "term": "Stažený člen",
+          "definition": "Předložka a člen splynuté v jedno slovo.",
+          "example": "*à + le = au*, *de + les = des*"
+        },
+        {
+          "type": "heading",
+          "text": "Stažené členy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "+ le",
+            "+ la",
+            "+ l’",
+            "+ les"
+          ],
+          "rows": [
+            [
+              "à",
+              "**au**",
+              "à la",
+              "à l’",
+              "**aux**"
+            ],
+            [
+              "de",
+              "**du**",
+              "de la",
+              "de l’",
+              "**des**"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Slévají se jen *le* a *les*. *la* a *l’* zůstávají oddělené."
+        },
+        {
+          "type": "list",
+          "items": [
+            "*Je vais **au** cinéma.* (do kina – *le cinéma*)",
+            "*Je vais **à la** plage.* (na pláž – *la plage*)",
+            "*Je vais **à l’**école.* (do školy – *l’école*)",
+            "*Je vais **aux** toilettes.* (na záchod – *les toilettes*)",
+            "*Je viens **du** parc.* (z parku – *le parc*)",
+            "*C’est le livre **des** enfants.* (kniha dětí – *les enfants*)",
+            "Také u sportů a her: *jouer **au** foot*, *jouer **aux** cartes* (hrát fotbal, karty)."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "K *de* patří sloveso **venir** (přijít, pocházet): *je viens, tu viens, il vient, nous venons, vous venez, ils viennent*."
+        },
+        {
+          "type": "heading",
+          "text": "Města"
+        },
+        {
+          "type": "text",
+          "text": "U měst je to snadné: **à** = v / do, **de** = z (před samohláskou *d’*). *J’habite à Prague. Je vais à Paris. Je viens de Lyon. Elle vient d’Ostrava.*"
+        },
+        {
+          "type": "heading",
+          "text": "Země"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Země je…",
+            "kde / kam",
+            "odkud",
+            "Příklady"
+          ],
+          "rows": [
+            [
+              "ženského rodu (většinou končí na -e)",
+              "en",
+              "de / d’",
+              "en France, en Espagne, en Italie, en Tchéquie – de France, d’Italie"
+            ],
+            [
+              "mužského rodu",
+              "au",
+              "du",
+              "au Canada, au Japon, au Portugal, au Mexique – du Canada"
+            ],
+            [
+              "v množném čísle",
+              "aux",
+              "des",
+              "aux États-Unis – des États-Unis"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor: *le Mexique* končí na *-e*, ale je mužského rodu: *au Mexique*. *en* znamená „v“ i „do“: *J’habite en France.* (Bydlím ve Francii.) *Je vais en France.* (Jedu do Francie.)"
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je vais",
+                "after": "cinéma.",
+                "options": [
+                  "au",
+                  "à le",
+                  "à la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous allons",
+                "after": "piscine.",
+                "options": [
+                  "à la",
+                  "au",
+                  "aux"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il habite",
+                "after": "Canada.",
+                "options": [
+                  "au",
+                  "en",
+                  "à"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle va",
+                "after": "Espagne.",
+                "options": [
+                  "en",
+                  "au",
+                  "à la"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je viens",
+                "after": "parc.",
+                "options": [
+                  "du",
+                  "de le",
+                  "des"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils habitent",
+                "after": "États-Unis.",
+                "options": [
+                  "aux",
+                  "en",
+                  "au"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přelož: V létě jedeme do Itálie a pak do Portugalska.",
+          "answer": "*l’Italie* je ženská → *en Italie*. *le Portugal* je mužský → *au Portugal*. Jedeme = *nous allons*. **En été, nous allons en Italie et puis au Portugal.**"
+        },
+        {
+          "type": "example",
+          "question": "Přelož: Tom je z Kanady, Léa z Francie.",
+          "answer": "Odkud → *venir de*. *le Canada* (m.) → *de + le = du*. *la France* (ž.) → u ženských zemí jen *de* bez členu. **Tom vient du Canada, Léa vient de France.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je vais à le cinéma.",
+          "right": "Je vais au cinéma.",
+          "why": "*à* a *le* se vždy slijí do *au*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’habite à France.",
+          "right": "J’habite en France.",
+          "why": "U měst je *à*, u ženských zemí *en*."
+        },
+        {
+          "type": "summary",
+          "text": "*à + le = au, à + les = aux, de + le = du, de + les = des*; *la* a *l’* se neslévají. Města: *à / de*. Země: ženské *en / de*, mužské *au / du*, množné *aux / des*."
+        }
+      ]
+    },
+    {
+      "title": "Cesta kolem světa",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hugo vyhrál soutěž: cestu kolem světa! Posílá babičce pohledy odevšad. Z jeho pohledů se naučíš, jak francouzsky říct, **kde** jsi, **kam** jedeš a **odkud** přijíždíš – u měst, zemí i míst ve městě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo, které ukazuje směr nebo místo.",
+          "example": "*à* = v, do, na; *de* = z, od; *en* = v, do (u zemí)"
+        },
+        {
+          "type": "term",
+          "term": "Rod země",
+          "definition": "I země mají rod. Ženské většinou končí na *-e* (*la France*), mužské ne (*le Japon*). Výjimka: *le Mexique*.",
+          "example": "*la Chine* (ž.), *le Brésil* (m.)"
+        },
+        {
+          "type": "term",
+          "term": "Stažený člen",
+          "definition": "Když předložka *à* nebo *de* potká člen *le* nebo *les*, splynou do jednoho slova.",
+          "example": "*à + le = au*, *de + le = du*"
+        },
+        {
+          "type": "heading",
+          "text": "Hugovy pohledy"
+        },
+        {
+          "type": "picture",
+          "items": [
+            "✈️",
+            "🇫🇷",
+            "🇯🇵",
+            "🇺🇸",
+            "🇨🇿"
+          ],
+          "caption": "Hugo letí z Francie do Japonska, pak do USA a domů do Česka."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Pohled",
+            "Česky",
+            "Proč"
+          ],
+          "rows": [
+            [
+              "Je suis à Paris, en France.",
+              "Jsem v Paříži, ve Francii.",
+              "město → à; la France (ž.) → en"
+            ],
+            [
+              "Demain, je vais au Japon !",
+              "Zítra jedu do Japonska!",
+              "le Japon (m.) → au"
+            ],
+            [
+              "Je suis à Tokyo. Je vais au musée et à la plage.",
+              "Jsem v Tokiu. Jdu do muzea a na pláž.",
+              "le musée → au; la plage → à la"
+            ],
+            [
+              "Maintenant, je suis aux États-Unis.",
+              "Teď jsem v USA.",
+              "les États-Unis (mn. č.) → aux"
+            ],
+            [
+              "Je reviens des États-Unis et du Japon avec des cadeaux !",
+              "Vracím se z USA a z Japonska s dárky!",
+              "de + les → des; de + le → du"
+            ],
+            [
+              "Je rentre en Tchéquie, à Brno.",
+              "Vracím se do Česka, do Brna.",
+              "la Tchéquie (ž.) → en; město → à"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup: jak vybrat předložku"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Je to město? Kde/kam = *à*, odkud = *de* (*d’*). Hotovo.",
+            "Je to země? Zjisti rod. Ženská → *en* / *de*. Mužská → *au* / *du*. Množné číslo → *aux* / *des*.",
+            "Je to místo ve městě (kino, škola, park)? Vezmi člen (*le, la, l’, les*) a slep ho s *à* nebo *de*: *le* → *au/du*, *les* → *aux/des*, *la* a *l’* zůstávají."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď země podle toho, jakou předložkou řekneš „ve“ / „do“."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "en",
+              "au",
+              "aux"
+            ],
+            "items": [
+              {
+                "text": "France",
+                "group": 0
+              },
+              {
+                "text": "Espagne",
+                "group": 0
+              },
+              {
+                "text": "Italie",
+                "group": 0
+              },
+              {
+                "text": "Allemagne",
+                "group": 0
+              },
+              {
+                "text": "Canada",
+                "group": 1
+              },
+              {
+                "text": "Japon",
+                "group": 1
+              },
+              {
+                "text": "Portugal",
+                "group": 1
+              },
+              {
+                "text": "Mexique",
+                "group": 1
+              },
+              {
+                "text": "États-Unis",
+                "group": 2
+              },
+              {
+                "text": "Pays-Bas (Nizozemsko)",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Hugo píše: „Jsem v Londýně, v Anglii.“ (*l’Angleterre* = Anglie)",
+          "answer": "Londýn je město → *à Londres*. *l’Angleterre* končí na *-e*, je ženská → *en Angleterre*. **Je suis à Londres, en Angleterre.**"
+        },
+        {
+          "type": "example",
+          "question": "Babička se ptá: „Odkud se vracíš?“ Hugo: „Z kina a ze školy.“",
+          "answer": "„Vracet se odněkud“ = *revenir de*. *le cinéma* → *de + le = du*. *l’école* → *de l’* (neslévá se). **Je reviens du cinéma et de l’école.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je vais en Japon.",
+          "right": "Je vais au Japon.",
+          "why": "*le Japon* je mužského rodu, takže *au*. *en* je jen pro ženské země."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Je viens de le parc.",
+          "right": "Je viens du parc.",
+          "why": "*de + le* se vždy slije do *du*."
+        },
+        {
+          "type": "summary",
+          "text": "Město: *à / de*. Ženská země: *en / de*, mužská: *au / du*, množné číslo: *aux / des*. Ve městě: *au cinéma, à la plage, à l’école, aux toilettes*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Je vais ___ cinéma.",
+      "options": [
+        "au",
+        "à le",
+        "à la"
+      ],
+      "answer": 0,
+      "explanation": "*le cinéma*: *à + le = au*."
+    },
+    {
+      "type": "choice",
+      "question": "Nous allons ___ plage.",
+      "options": [
+        "à la",
+        "au",
+        "aux"
+      ],
+      "answer": 0,
+      "explanation": "*la* se se *à* neslévá: *à la plage*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň stažený člen: Je viens ___ parc. (z parku)",
+      "answers": [
+        "du"
+      ],
+      "explanation": "*de + le = du*.",
+      "hints": [
+        "Jakého rodu je parc a jakou předložku potřebuješ pro „z“?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "J’habite ___ France.",
+      "options": [
+        "en",
+        "à",
+        "au"
+      ],
+      "answer": 0,
+      "explanation": "*la France* je ženská země → *en*."
+    },
+    {
+      "type": "choice",
+      "question": "Il va ___ Canada.",
+      "options": [
+        "au",
+        "en",
+        "à"
+      ],
+      "answer": 0,
+      "explanation": "*le Canada* je mužská země → *au*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Ils habitent ___ États-Unis.",
+      "answers": [
+        "aux"
+      ],
+      "explanation": "*les États-Unis* je množné číslo → *aux*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve spojení *à la* a *à l’* se předložka se členem neslévá.",
+      "answer": true,
+      "explanation": "Slévají se jen *le* a *les*: *au, aux, du, des*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj předložku + člen se staženým tvarem.",
+      "pairs": [
+        [
+          "à + le",
+          "au"
+        ],
+        [
+          "à + les",
+          "aux"
+        ],
+        [
+          "de + le",
+          "du"
+        ],
+        [
+          "de + les",
+          "des"
+        ]
+      ],
+      "explanation": "Čtyři stažené členy stojí za to umět nazpaměť."
+    },
+    {
+      "type": "choice",
+      "question": "Je suis ___ Prague.",
+      "options": [
+        "à",
+        "en",
+        "au"
+      ],
+      "answer": 0,
+      "explanation": "U měst je *à*."
+    },
+    {
+      "type": "choice",
+      "question": "Elle vient ___ Italie. (Je z Itálie.)",
+      "options": [
+        "d’",
+        "de la",
+        "du"
+      ],
+      "answer": 0,
+      "explanation": "U ženských zemí je *de* bez členu, před samohláskou *d’*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*le Mexique* je ženská země, protože končí na *-e*.",
+      "answer": false,
+      "explanation": "*le Mexique* je výjimka: mužská země → *au Mexique*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu „V sobotu jdu do kina.“",
+      "items": [
+        "Samedi,",
+        "je",
+        "vais",
+        "au",
+        "cinéma."
+      ],
+      "explanation": "*le cinéma* → *au cinéma*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „hrát fotbal“?",
+      "options": [
+        "jouer au foot",
+        "jouer le foot",
+        "jouer à le foot"
+      ],
+      "answer": 0,
+      "explanation": "Sporty a hry: *jouer à* + člen → *au foot, aux cartes*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: C’est le chien ___ voisins. (pes sousedů)",
+      "answers": [
+        "des"
+      ],
+      "explanation": "*de + les voisins = des voisins*."
+    },
+    {
+      "type": "choice",
+      "question": "Je vais ___ école.",
+      "options": [
+        "à l’",
+        "au",
+        "à la"
+      ],
+      "answer": 0,
+      "explanation": "*l’école* – před samohláskou *à l’*, neslévá se."
+    },
+    {
+      "type": "open",
+      "question": "Kdy se ve francouzštině používá *en*, *au* a *aux* u zemí? Uveď příklady.",
+      "answer": "*en* u ženských zemí (*en France, en Espagne*), *au* u mužských (*au Canada, au Japon*), *aux* u zemí v množném čísle (*aux États-Unis*). U měst je *à* (*à Paris*)."
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky, odkud jsi, kde bydlíš a kam bys chtěl(a) jet.",
+      "answer": "Je viens de Tchéquie. J’habite à Plzeň. Je voudrais aller au Japon et aux États-Unis."
+    }
+  ]
+}
