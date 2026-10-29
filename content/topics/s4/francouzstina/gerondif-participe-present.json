@@ -1,0 +1,499 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "gerondif-participe-present",
+  "title": "Gérondif a participe présent",
+  "emoji": "🎧",
+  "explanations": [
+    {
+      "title": "En + -ant",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Učím se **při poslechu** hudby.“ „**Cestou** do školy jsem potkal Petra.“ Česky tu máš různé obraty, francouzsky jeden šikovný tvar: **gérondif**, *en écoutant, en allant*. Říká, že dvě věci se dějí **zároveň** nebo **jak** se něco dělá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Participe présent",
+          "definition": "Příčestí přítomné. Tvar slovesa na **-ant**, který se nemění podle osoby. Podobá se anglickému *-ing*.",
+          "example": "parler → parl**ant**"
+        },
+        {
+          "type": "term",
+          "term": "Gérondif",
+          "definition": "*en* + participe présent. Vyjadřuje, že podmět dělá dvě věci zároveň, nebo jak/čím něčeho dosáhne.",
+          "example": "Il chante **en se douchant**. = Zpívá při sprchování."
+        },
+        {
+          "type": "term",
+          "term": "Podmět",
+          "definition": "Kdo činnost dělá. U gérondifu musí být pro obě činnosti **stejný**.",
+          "example": "**Je** mange en regardant la télé. (já jím, já se dívám)"
+        },
+        {
+          "type": "heading",
+          "text": "Tvoření"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Vezmi tvar přítomného času pro **nous**: *nous finissons*.",
+            "Odtrhni **-ons**: *finiss-*.",
+            "Přidej **-ant**: *finissant*.",
+            "Pro gérondif dej před něj **en**: *en finissant*."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "infinitiv",
+            "nous",
+            "participe présent",
+            "gérondif"
+          ],
+          "rows": [
+            [
+              "parler",
+              "parlons",
+              "parlant",
+              "en parlant"
+            ],
+            [
+              "finir",
+              "finissons",
+              "finissant",
+              "en finissant"
+            ],
+            [
+              "faire",
+              "faisons",
+              "faisant",
+              "en faisant"
+            ],
+            [
+              "prendre",
+              "prenons",
+              "prenant",
+              "en prenant"
+            ],
+            [
+              "manger",
+              "mangeons",
+              "mangeant",
+              "en mangeant"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Jen tři výjimky: *être → **étant***, *avoir → **ayant***, *savoir → **sachant***. U zvratných sloves zůstává zájmeno: *en **me** levant, en **se** levant*."
+        },
+        {
+          "type": "heading",
+          "text": "Tři významy gérondifu"
+        },
+        {
+          "type": "table",
+          "head": [
+            "význam",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "současnost (zároveň)",
+              "*Je fais mes devoirs **en écoutant** de la musique.*",
+              "Dělám úkoly a přitom poslouchám hudbu."
+            ],
+            [
+              "způsob (jak?)",
+              "*Il a appris le français **en lisant**.*",
+              "Naučil se francouzsky čtením."
+            ],
+            [
+              "podmínka (když)",
+              "***En prenant** le train, tu arriveras plus vite.*",
+              "Když pojedeš vlakem, budeš tam rychleji."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Známé přísloví: *C’est **en forgeant** qu’on devient forgeron.* = Kováříkem se člověk stává kováním (cvičení dělá mistra)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Il chante",
+                "after": "la vaisselle.",
+                "options": [
+                  "en faisant",
+                  "en faire",
+                  "faisant en"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je l’ai rencontré en",
+                "after": "à l’école.",
+                "options": [
+                  "allant",
+                  "allons",
+                  "aller"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "On apprend en",
+                "after": "des erreurs.",
+                "options": [
+                  "faisant",
+                  "fesant",
+                  "faissant"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Elle s’est blessée en",
+                "after": "de vélo.",
+                "options": [
+                  "tombant",
+                  "tombée",
+                  "tomber"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "malade, il est resté au lit.",
+                "options": [
+                  "Étant",
+                  "Être",
+                  "Ayant"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty gérondifem: Je marche. En même temps, je téléphone.",
+          "answer": "Stejný podmět, dvě činnosti zároveň: **Je téléphone en marchant.**"
+        },
+        {
+          "type": "example",
+          "question": "Vytvoř gérondif od *se lever* pro větu o sobě (*je*).",
+          "answer": "Zvratné zájmeno se přizpůsobí podmětu: **en me levant** (*Je bois un café en me levant.*)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "J’ai vu Paul en sortant de l’école. (myšleno: Paul vycházel)",
+          "right": "J’ai vu Paul qui sortait de l’école.",
+          "why": "Gérondif se vždy vztahuje k **podmětu** věty. *En sortant* znamená, že vycházel ten, kdo viděl (já)."
+        },
+        {
+          "type": "summary",
+          "text": "Participe présent = kmen *nous* + *-ant* (*parlant*; výjimky *étant, ayant, sachant*). Gérondif = *en* + *-ant*: děje zároveň, způsob nebo podmínka, vždy se stejným podmětem."
+        }
+      ]
+    },
+    {
+      "title": "V psaném textu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V novinách, oznámeních nebo slohu najdeš tvar na **-ant** i bez *en*: *Les élèves **souhaitant** participer… Étant malade, il…* To je **participe présent** samotné. Nahrazuje vedlejší větu a text je díky němu kratší a úřednější."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Participe présent",
+          "definition": "Tvar slovesa na *-ant* (*parlant, ayant*). Bez *en* stojí místo vztažné věty s *qui* nebo místo věty s *parce que*. Nemění se.",
+          "example": "les personnes **ayant** un billet = lidé, kteří mají lístek"
+        },
+        {
+          "type": "term",
+          "term": "Gérondif",
+          "definition": "Tvar *en* + *-ant*. Patří k podmětu věty: děj zároveň, způsob, podmínka.",
+          "example": "en lisant = při čtení, čtením"
+        },
+        {
+          "type": "term",
+          "term": "Přechodník",
+          "definition": "Český tvar jako *zpívaje, přišedši*. Dnes je knižní, ale dělá podobnou práci jako francouzský participe présent.",
+          "example": "„Nevěda, co dělat, odešel.“ = *Ne sachant pas quoi faire, il est parti.*"
+        },
+        {
+          "type": "heading",
+          "text": "Oznámení ve škole"
+        },
+        {
+          "type": "text",
+          "text": "*Les élèves **souhaitant** participer au voyage à Paris doivent s’inscrire avant vendredi. **Étant** donné le nombre de places, les élèves **ayant** déjà payé seront prioritaires.*"
+        },
+        {
+          "type": "text",
+          "text": "= Žáci, kteří se chtějí zúčastnit zájezdu do Paříže, se musí přihlásit do pátku. Vzhledem k počtu míst budou mít přednost žáci, kteří už zaplatili."
+        },
+        {
+          "type": "heading",
+          "text": "Participe présent vs. gérondif"
+        },
+        {
+          "type": "table",
+          "head": [
+            "tvar",
+            "nahrazuje",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "participe présent (bez *en*)",
+              "*qui* + sloveso",
+              "*les élèves **parlant** français* = *les élèves qui parlent français*"
+            ],
+            [
+              "participe présent (bez *en*)",
+              "příčinu (*comme, parce que*)",
+              "***Étant** fatigué, il s’est couché.* = Protože byl unavený…"
+            ],
+            [
+              "gérondif (*en* + -ant)",
+              "děj zároveň / způsob podmětu",
+              "*Il s’est couché **en lisant**.*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Rozdíl v praxi: *J’ai vu Marie **sortant** du cinéma.* (Marie vycházela) × *J’ai vu Marie **en sortant** du cinéma.* (já jsem vycházel). Gérondif patří vždy k podmětu."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: je to participe présent, nebo gérondif?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "participe présent",
+              "gérondif"
+            ],
+            "items": [
+              {
+                "text": "les enfants jouant dans le parc",
+                "group": 0
+              },
+              {
+                "text": "Étant en retard, il a couru.",
+                "group": 0
+              },
+              {
+                "text": "Ayant fini, elle est partie.",
+                "group": 0
+              },
+              {
+                "text": "Il travaille en chantant.",
+                "group": 1
+              },
+              {
+                "text": "En arrivant, j’ai vu Paul.",
+                "group": 1
+              },
+              {
+                "text": "Tu réussiras en travaillant.",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Nahraď vztažnou větu: Les personnes qui ont un billet peuvent entrer.",
+          "answer": "*qui ont* → participe présent od *avoir*: **Les personnes ayant un billet peuvent entrer.**"
+        },
+        {
+          "type": "example",
+          "question": "Nahraď příčinu: Comme elle ne savait pas la réponse, elle s’est tue.",
+          "answer": "*ne savait pas* → *ne sachant pas*: **Ne sachant pas la réponse, elle s’est tue.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "les élèves parlants français",
+          "right": "les élèves parlant français",
+          "why": "Participe présent se **nemění** (bez *-s*, bez *-e*), i když stojí u množného čísla."
+        },
+        {
+          "type": "summary",
+          "text": "Participe présent bez *en* (*ayant, étant, parlant*) je hlavně psaný: nahrazuje *qui* + sloveso nebo příčinu. Gérondif *en + -ant* patří k podmětu a vyjadřuje současnost, způsob nebo podmínku."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Participe présent od *finir*:",
+      "options": [
+        "finissant",
+        "finant",
+        "finisant"
+      ],
+      "answer": 0,
+      "explanation": "*nous finissons* → *finiss-* + *-ant*."
+    },
+    {
+      "type": "choice",
+      "question": "Participe présent od *avoir*:",
+      "options": [
+        "ayant",
+        "avant",
+        "avoyant"
+      ],
+      "answer": 0,
+      "explanation": "Výjimka: *ayant*."
+    },
+    {
+      "type": "choice",
+      "question": "Participe présent od *être*:",
+      "options": [
+        "étant",
+        "êtant",
+        "soyant"
+      ],
+      "answer": 0,
+      "explanation": "Výjimka: *étant*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň gérondif od *écouter*: Je travaille en ___ de la musique.",
+      "answers": [
+        "écoutant",
+        "ecoutant"
+      ],
+      "explanation": "*nous écoutons* → *écoutant*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň gérondif od *faire*: Il s’est blessé en ___ du sport.",
+      "answers": [
+        "faisant"
+      ],
+      "explanation": "*nous faisons* → *faisant*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň participe présent od *savoir*: Ne ___ pas quoi dire, il s’est tu.",
+      "answers": [
+        "sachant"
+      ],
+      "explanation": "Výjimka: *sachant*."
+    },
+    {
+      "type": "choice",
+      "question": "Co vyjadřuje gérondif ve větě „Il a appris l’anglais en regardant des séries.“?",
+      "options": [
+        "způsob (jak?)",
+        "příčinu (proč?)",
+        "místo (kde?)"
+      ],
+      "answer": 0,
+      "explanation": "Naučil se *čím, jak*: sledováním seriálů."
+    },
+    {
+      "type": "choice",
+      "question": "Gérondif od *se lever* ve větě s *nous*:",
+      "options": [
+        "en nous levant",
+        "en se levant",
+        "en levant nous"
+      ],
+      "answer": 0,
+      "explanation": "Zvratné zájmeno se řídí podmětem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Gérondif musí mít stejný podmět jako hlavní sloveso věty.",
+      "answer": true,
+      "explanation": "*Je mange en regardant la télé.* (já jím i já se dívám)"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Les élèves parlants français“ je správně.",
+      "answer": false,
+      "explanation": "Participe présent se nemění: *parlant*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj infinitiv s participe présent.",
+      "pairs": [
+        [
+          "manger",
+          "mangeant"
+        ],
+        [
+          "prendre",
+          "prenant"
+        ],
+        [
+          "voir",
+          "voyant"
+        ],
+        [
+          "lire",
+          "lisant"
+        ]
+      ],
+      "explanation": "Kmen z *nous mangeons, prenons, voyons, lisons*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Cestou do školy jsem potkal Pavla.“",
+      "items": [
+        "J’ai",
+        "rencontré",
+        "Paul",
+        "en allant",
+        "à l’école"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jak se tvoří gérondif a co může vyjadřovat?",
+      "answer": "*en* + participe présent (kmen tvaru *nous* + *-ant*): *en parlant*. Vyjadřuje současnost dvou dějů, způsob (jak) nebo podmínku; podmět musí být stejný."
+    },
+    {
+      "type": "open",
+      "question": "Řekni francouzsky tři věci, které děláš při jiné činnosti (gérondif).",
+      "answer": "Například: *Je fais mes devoirs en écoutant de la musique. Je mange en regardant mon portable. Je chante en me douchant.*"
+    }
+  ]
+}

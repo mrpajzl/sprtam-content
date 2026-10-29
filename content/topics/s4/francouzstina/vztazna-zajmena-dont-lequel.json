@@ -1,0 +1,486 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vztazna-zajmena-dont-lequel",
+  "title": "Vztažná zájmena dont a lequel",
+  "emoji": "🧩",
+  "explanations": [
+    {
+      "title": "dont",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„To je kniha, **o které** jsem ti vyprávěl.“ „Mám kamaráda, **jehož** táta je pilot.“ Pomocí *qui, que, où* tyhle věty neřekneš. Potřebuješ zájmeno **dont**."
+        },
+        {
+          "type": "text",
+          "text": "*dont* je jedno z nejpoužívanějších slov psané francouzštiny a v maturitním slohu ukáže, že umíš složitější věty."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Vztažné zájmeno",
+          "definition": "Připomenutí: slovo, které připojí vedlejší větu k podstatnému jménu. Znáš *qui* (podmět), *que* (předmět), *où* (místo, čas).",
+          "example": "le livre **que** je lis"
+        },
+        {
+          "type": "term",
+          "term": "dont",
+          "definition": "Vztažné zájmeno, které zastoupí **de** + podstatné jméno. Česky „o kterém, kterého, jehož, jejíž“.",
+          "example": "le livre **dont** je parle = kniha, o které mluvím (*parler de*)"
+        },
+        {
+          "type": "term",
+          "term": "Vazba slovesa",
+          "definition": "Předložka, kterou si sloveso nebo výraz „žádá“. U *dont* hledej vazbu s **de**.",
+          "example": "*parler **de**, avoir besoin **de**, être fier **de**, se souvenir **de***"
+        },
+        {
+          "type": "heading",
+          "text": "Kdy dont"
+        },
+        {
+          "type": "table",
+          "head": [
+            "vazba s de",
+            "věta s dont",
+            "česky"
+          ],
+          "rows": [
+            [
+              "parler **de** qqch",
+              "le film **dont** je parle",
+              "film, o kterém mluvím"
+            ],
+            [
+              "avoir besoin **de**",
+              "l’outil **dont** j’ai besoin",
+              "nástroj, který potřebuju"
+            ],
+            [
+              "être fier **de**",
+              "le résultat **dont** je suis fier",
+              "výsledek, na který jsem hrdý"
+            ],
+            [
+              "se souvenir **de**",
+              "le jour **dont** je me souviens",
+              "den, na který si pamatuju"
+            ],
+            [
+              "vlastnictví (*la fille **de** l’homme*)",
+              "l’homme **dont** la fille est médecin",
+              "muž, jehož dcera je lékařka"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Rozděl souvětí na dvě věty: *C’est le livre. Je parle **de ce livre**.*",
+            "Najdi ve druhé větě **de** + opakované podstatné jméno.",
+            "Nahraď celé *de ce livre* slovem **dont** a dej ho hned za podstatné jméno: *C’est le livre **dont** je parle.*"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pozor, rozhoduje **francouzská** vazba. *avoir besoin de* = česky „potřebovat **co**“ (bez předložky), přesto *dont*: *le livre dont j’ai besoin*."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "C’est le film",
+                "after": "tout le monde parle.",
+                "options": [
+                  "dont",
+                  "que",
+                  "qui"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Voici le livre",
+                "after": "j’ai besoin.",
+                "options": [
+                  "dont",
+                  "que",
+                  "où"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "C’est le film",
+                "after": "je préfère.",
+                "options": [
+                  "que",
+                  "dont",
+                  "qui"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "J’ai un ami",
+                "after": "le père est pilote.",
+                "options": [
+                  "dont",
+                  "qui",
+                  "que"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty: J’ai une voisine. Je me souviens bien de cette voisine.",
+          "answer": "*se souvenir **de*** → *dont*: **J’ai une voisine dont je me souviens bien.**"
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty: C’est une actrice. Le nom de cette actrice est célèbre.",
+          "answer": "Vlastnictví (*le nom de l’actrice*) → *dont*, za ním člen: **C’est une actrice dont le nom est célèbre.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Le livre que j’ai besoin.",
+          "right": "Le livre dont j’ai besoin.",
+          "why": "*avoir besoin **de*** má vazbu s *de*, proto *dont*, i když česky „kniha, kterou potřebuju“."
+        },
+        {
+          "type": "summary",
+          "text": "**dont** = *de* + podstatné jméno. Hledej vazbu s *de*: *parler de, avoir besoin de, être fier de, se souvenir de* a vlastnictví (*dont le père…*). Česky „o kterém, jehož“."
+        }
+      ]
+    },
+    {
+      "title": "Lequel po předložce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Stůl, **na kterém** leží kniha.“ „Pero, **kterým** píšu.“ „Důvod, **proč** (z kterého) jsem přišel.“ Když je ve vztažné větě před „který“ **předložka** (*sur, avec, pour, dans*…), potřebuješ francouzsky **lequel**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Předložka",
+          "definition": "Krátké slovo, které určuje vztah: *sur* (na), *avec* (s), *pour* (pro), *dans* (v), *sans* (bez), *à* (k, na), *près de* (blízko).",
+          "example": "sur la table, avec un stylo"
+        },
+        {
+          "type": "term",
+          "term": "lequel",
+          "definition": "Vztažné zájmeno po předložce, hlavně u **věcí**. Mění se podle rodu a čísla: *lequel, laquelle, lesquels, lesquelles*.",
+          "example": "la table **sur laquelle** il y a un livre"
+        },
+        {
+          "type": "term",
+          "term": "Stažený tvar",
+          "definition": "Spojení *à* nebo *de* se členem v jedno slovo (jako *au, du*). U *lequel* vzniká *auquel, duquel*…",
+          "example": "à + lequel = **auquel**"
+        },
+        {
+          "type": "heading",
+          "text": "Tvary"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "jednotné",
+            "množné"
+          ],
+          "rows": [
+            [
+              "mužský",
+              "lequel",
+              "lesquels"
+            ],
+            [
+              "ženský",
+              "laquelle",
+              "lesquelles"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "s předložkou à",
+            "s de (po *près de, à côté de*…)"
+          ],
+          "rows": [
+            [
+              "auquel, à laquelle, auxquels, auxquelles",
+              "duquel, de laquelle, desquels, desquelles"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Postup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi předložku, kterou si sloveso žádá: *J’écris **avec** ce stylo.*",
+            "Urči rod a číslo slova: *le stylo* → m. r., j. č. → *lequel*.",
+            "Dej předložku + *lequel* hned za podstatné jméno: *le stylo **avec lequel** j’écris*.",
+            "U *à* a *de* (po složené předložce) použij stažený tvar: *le projet **auquel** je pense*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Osoby"
+        },
+        {
+          "type": "text",
+          "text": "U osob se po předložce obvykle používá **qui**: *l’ami **avec qui** je pars* (kamarád, se kterým jedu), *la fille **à qui** j’ai écrit*. Tvar *avec lequel* by tu byl také správný, ale zní knižně."
+        },
+        {
+          "type": "heading",
+          "text": "Rozhovor"
+        },
+        {
+          "type": "text",
+          "text": "*— C’est la raison **pour laquelle** je suis venu. — Et la boîte **dans laquelle** tu as mis les photos ? — Elle est sur l’étagère, **à côté de laquelle** il y a la lampe.*"
+        },
+        {
+          "type": "text",
+          "text": "= To je důvod, proč (pro který) jsem přišel. – A krabice, do které jsi dal fotky? – Je na polici, vedle které je lampa."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď: kdy *dont* a kdy předložka + *lequel/laquelle*?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "dont",
+              "předložka + lequel"
+            ],
+            "items": [
+              {
+                "text": "le livre ___ je parle",
+                "group": 0
+              },
+              {
+                "text": "la clé ___ j’ai besoin",
+                "group": 0
+              },
+              {
+                "text": "l’homme ___ le fils est acteur",
+                "group": 0
+              },
+              {
+                "text": "la table ___ je travaille (sur)",
+                "group": 1
+              },
+              {
+                "text": "le stylo ___ j’écris (avec)",
+                "group": 1
+              },
+              {
+                "text": "les raisons ___ je reste (pour)",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty: C’est une question. Je pense souvent à cette question.",
+          "answer": "*penser **à*** + *la question* (ž. r., j. č.) → **à laquelle**: *C’est une question à laquelle je pense souvent.*"
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty: Voici le parc. Près de ce parc, il y a une école.",
+          "answer": "*près de* + *le parc* (m. r.) → *de* + *lequel* = **duquel**: *Voici le parc près duquel il y a une école.*"
+        },
+        {
+          "type": "mistake",
+          "wrong": "le stylo avec que j’écris",
+          "right": "le stylo avec lequel j’écris",
+          "why": "Po předložce nemůže stát *que*. U věci použij *lequel* ve správném rodě."
+        },
+        {
+          "type": "mistake",
+          "wrong": "les problèmes à lesquels je pense",
+          "right": "les problèmes auxquels je pense",
+          "why": "*à* + *lesquels* se stahuje na **auxquels** (jako *à les → aux*)."
+        },
+        {
+          "type": "summary",
+          "text": "Po předložce u věcí **lequel, laquelle, lesquels, lesquelles** (*avec lequel, sur laquelle*). *à + lequel = auquel*, *de + lequel = duquel*. U osob po předložce obvykle *qui*. Vazba s *de* → *dont*."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "C’est le film ___ je t’ai parlé.",
+      "options": [
+        "dont",
+        "que",
+        "qui"
+      ],
+      "answer": 0,
+      "explanation": "*parler de* → *dont*."
+    },
+    {
+      "type": "choice",
+      "question": "Voici le livre ___ j’ai besoin.",
+      "options": [
+        "dont",
+        "que",
+        "lequel"
+      ],
+      "answer": 0,
+      "explanation": "*avoir besoin de* → *dont*."
+    },
+    {
+      "type": "choice",
+      "question": "C’est la table sur ___ j’ai posé mon sac.",
+      "options": [
+        "laquelle",
+        "lequel",
+        "qui"
+      ],
+      "answer": 0,
+      "explanation": "*la table* = ž. r., j. č."
+    },
+    {
+      "type": "choice",
+      "question": "C’est le stylo avec ___ j’écris.",
+      "options": [
+        "lequel",
+        "que",
+        "dont"
+      ],
+      "answer": 0,
+      "explanation": "Po předložce u věci *lequel*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: C’est un projet ___ je pense souvent. (penser à + le projet)",
+      "answers": [
+        "auquel"
+      ],
+      "explanation": "*à + lequel = auquel*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: J’ai un ami ___ la mère est française.",
+      "answers": [
+        "dont"
+      ],
+      "explanation": "Vlastnictví (*la mère de l’ami*) → *dont*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Voici les raisons pour ___ je pars. (les raisons = ž. r.)",
+      "answers": [
+        "lesquelles"
+      ],
+      "explanation": "Ž. r., mn. č. → *lesquelles*."
+    },
+    {
+      "type": "choice",
+      "question": "Kamarád, se kterým jedu na výlet:",
+      "options": [
+        "l’ami avec qui je pars",
+        "l’ami avec que je pars",
+        "l’ami dont je pars"
+      ],
+      "answer": 0,
+      "explanation": "U osob po předložce obvykle *qui*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Le livre que j’ai besoin“ je správně.",
+      "answer": false,
+      "explanation": "*avoir besoin de* → *le livre dont j’ai besoin*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Les problèmes auxquels je pense“ je správně.",
+      "answer": true,
+      "explanation": "*à + lesquels = auxquels*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso nebo výraz se zájmenem, které po něm použiješ.",
+      "pairs": [
+        [
+          "parler de",
+          "dont"
+        ],
+        [
+          "penser à (le projet)",
+          "auquel"
+        ],
+        [
+          "écrire avec (le stylo)",
+          "avec lequel"
+        ],
+        [
+          "être fier de",
+          "dont"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „To je dům, ve kterém bydlím.“",
+      "items": [
+        "C’est",
+        "la maison",
+        "dans",
+        "laquelle",
+        "j’habite"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Kdy použiješ *dont* a kdy *lequel*? Uveď příklady.",
+      "answer": "*dont* zastupuje *de* + podstatné jméno: *le film dont je parle* (*parler de*). *lequel* (*laquelle, lesquels, lesquelles*) stojí po jiných předložkách u věcí: *la table sur laquelle…, le stylo avec lequel…*"
+    },
+    {
+      "type": "open",
+      "question": "Popiš francouzsky věc, kterou máš rád(a), a použij *dont* i *avec lequel/laquelle*.",
+      "answer": "Například: *J’ai un vieux vélo dont je suis très fier. C’est le vélo avec lequel j’ai fait mon premier voyage.*"
+    }
+  ]
+}

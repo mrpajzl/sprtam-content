@@ -1,0 +1,460 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "dopis-a-email",
+  "title": "Formální a neformální dopis a e-mail",
+  "emoji": "✉️",
+  "explanations": [
+    {
+      "title": "Stavba dopisu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kamarádce z Francie napíšeš jinak než řediteli jazykové školy. Ve francouzštině je ten rozdíl ještě větší než v češtině: formální dopis má pevné fráze, bez kterých působí neslušně. Dopis nebo e-mail patří mezi nejčastější úlohy u maturity."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Formální dopis",
+          "definition": "Dopis neznámé osobě, úřadu, firmě nebo škole. Vyká se (*vous*) a používají se ustálené zdvořilé fráze.",
+          "example": "Madame, Monsieur, je vous écris pour…"
+        },
+        {
+          "type": "term",
+          "term": "Neformální dopis",
+          "definition": "Dopis kamarádovi nebo rodině. Tyká se (*tu*), je volnější a osobní.",
+          "example": "Salut Léa ! Comment ça va ?"
+        },
+        {
+          "type": "term",
+          "term": "Oslovení",
+          "definition": "První řádek dopisu, kterým oslovíš adresáta. Francouzsky *la formule d’appel*.",
+          "example": "Cher Paul, / Madame, Monsieur,"
+        },
+        {
+          "type": "term",
+          "term": "Závěrečná formule",
+          "definition": "Ustálená věta nebo pozdrav na konci před podpisem. Francouzsky *la formule de politesse*.",
+          "example": "Bises, / Cordialement,"
+        },
+        {
+          "type": "heading",
+          "text": "Stavba"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Místo a datum (vpravo nahoře): *Prague, le 15 mars 2026* (měsíc malým písmenem).",
+            "U formálního dopisu **předmět**: *Objet : Demande d’informations*.",
+            "Oslovení s čárkou: *Madame, Monsieur,*",
+            "Úvod: proč píšeš. Další řádek začíná **velkým písmenem**.",
+            "Hlavní část: co chceš, otázky, informace, v odstavcích.",
+            "Závěr a závěrečná formule.",
+            "Podpis."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Porovnání"
+        },
+        {
+          "type": "table",
+          "head": [
+            "část",
+            "neformální (tu)",
+            "formální (vous)"
+          ],
+          "rows": [
+            [
+              "oslovení",
+              "*Salut Lucas !* / *Cher Lucas,* / *Chère Emma,*",
+              "*Madame, Monsieur,* / *Madame la Directrice,*"
+            ],
+            [
+              "úvod",
+              "*Merci pour ton message ! J’espère que tu vas bien.*",
+              "*Je vous écris pour… / Je me permets de vous écrire afin de…*"
+            ],
+            [
+              "prosba",
+              "*Tu peux m’envoyer… ?*",
+              "*Pourriez-vous m’indiquer… ? Je souhaiterais savoir si…*"
+            ],
+            [
+              "závěr",
+              "*Écris-moi vite ! J’attends ta réponse.*",
+              "*Je vous remercie par avance de votre réponse.*"
+            ],
+            [
+              "pozdrav",
+              "*Bises, / Grosses bises, / À bientôt, / Amitiés,*",
+              "*Je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "V **e-mailu** se formální závěr zkracuje: místo dlouhé formule stačí *Cordialement,* nebo *Bien cordialement,*. Příloha: *Vous trouverez ci-joint mon CV.* = V příloze posílám svůj životopis."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď fráze: patří do formálního, nebo neformálního dopisu?"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "neformální",
+              "formální"
+            ],
+            "items": [
+              {
+                "text": "Salut Marie !",
+                "group": 0
+              },
+              {
+                "text": "Grosses bises,",
+                "group": 0
+              },
+              {
+                "text": "J’espère que tu vas bien.",
+                "group": 0
+              },
+              {
+                "text": "Écris-moi vite !",
+                "group": 0
+              },
+              {
+                "text": "Madame, Monsieur,",
+                "group": 1
+              },
+              {
+                "text": "Je vous remercie par avance.",
+                "group": 1
+              },
+              {
+                "text": "Cordialement,",
+                "group": 1
+              },
+              {
+                "text": "Pourriez-vous m’indiquer les prix ?",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Napiš formální úvod e-mailu jazykové škole: chceš informace o letním kurzu.",
+          "answer": "**Madame, Monsieur,** / **Je vous écris pour obtenir des informations sur vos cours d’été.** Vyká se, oslovení s čárkou, další řádek velkým písmenem."
+        },
+        {
+          "type": "example",
+          "question": "Uzavři dopis kamarádovi.",
+          "answer": "Například: **J’attends ta réponse avec impatience ! Grosses bises, Tereza** (nebo *À bientôt*, *Bisous*)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Cher Monsieur le directeur, salut ! … Bisous",
+          "right": "Monsieur le Directeur, … Je vous prie d’agréer, Monsieur le Directeur, l’expression de mes salutations distinguées.",
+          "why": "Ve formálním dopise nemíchej hovorové fráze. Oslovení a závěrečná formule musí být stejně formální; titul se v oslovení zopakuje i v závěru."
+        },
+        {
+          "type": "summary",
+          "text": "Stavba: místo a datum, (předmět), oslovení, úvod, hlavní část, závěr, pozdrav, podpis. Neformálně *tu*, *Cher/Chère…*, *Bises*. Formálně *vous*, *Madame, Monsieur,* a *Je vous prie d’agréer… / Cordialement*."
+        }
+      ]
+    },
+    {
+      "title": "Dva dopisy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tereza z Brna jede v létě do Francie. Píše dvakrát: kamarádce Camille, se kterou se chce setkat, a jazykové škole v Nice, kde se chce přihlásit na kurz. Porovnej oba dopisy. Téměř každá věta se v nich říká jinak."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Tykání a vykání",
+          "definition": "Francouzsky *tutoyer* (tykat, *tu*) a *vouvoyer* (vykat, *vous*). Ve formálním dopise se vyká vždy, i jednomu člověku.",
+          "example": "Tu peux… × Pourriez-vous…"
+        },
+        {
+          "type": "term",
+          "term": "Ustálená fráze",
+          "definition": "Spojení slov, které se používá v pevné podobě a nepřekládá se doslova.",
+          "example": "Je vous prie d’agréer… = S pozdravem (doslova: Prosím vás, abyste přijal…)"
+        },
+        {
+          "type": "term",
+          "term": "Předmět (Objet)",
+          "definition": "Krátké shrnutí, o čem dopis je. Ve formálním dopise nad oslovením, v e-mailu v kolonce předmět.",
+          "example": "Objet : Inscription au cours d’été"
+        },
+        {
+          "type": "heading",
+          "text": "Dopis kamarádce"
+        },
+        {
+          "type": "text",
+          "text": "*Brno, le 2 mai 2026* / *Chère Camille,* / *Merci pour ta lettre ! Ça m’a fait très plaisir. Tu sais quoi ? Cet été, je vais à Nice pour un cours de français ! On pourrait se voir ? Tu es libre en juillet ? Écris-moi vite ! Grosses bises, Tereza*"
+        },
+        {
+          "type": "text",
+          "text": "= Milá Camille, díky za dopis! Moc mě potěšil. A víš co? V létě jedu do Nice na kurz francouzštiny! Mohly bychom se vidět? Máš v červenci volno? Napiš brzy! Pusu, Tereza"
+        },
+        {
+          "type": "heading",
+          "text": "Dopis jazykové škole"
+        },
+        {
+          "type": "text",
+          "text": "*Objet : Inscription au cours d’été* / *Madame, Monsieur,* / *Je me permets de vous écrire afin de m’inscrire à votre cours d’été de juillet. Je souhaiterais savoir s’il reste des places et quel est le prix du logement en famille. Pourriez-vous également m’indiquer les horaires des cours ? Je vous remercie par avance de votre réponse. Je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées. Tereza Nováková*"
+        },
+        {
+          "type": "text",
+          "text": "= Předmět: Přihláška do letního kurzu. Vážená paní, vážený pane, dovoluji si vám napsat, abych se přihlásila do vašeho červencového letního kurzu. Ráda bych věděla, zda jsou ještě volná místa a jaká je cena ubytování v rodině. Mohli byste mi také sdělit rozvrh kurzů? Předem děkuji za odpověď. S pozdravem Tereza Nováková"
+        },
+        {
+          "type": "heading",
+          "text": "Co si všimnout"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Formálně se ptáš **podmiňovacím způsobem**: *je souhaiterais, pourriez-vous*. Zní to zdvořileji.",
+            "Formální dopis se podepisuje celým jménem, neformální jen křestním.",
+            "V češtině po oslovení s čárkou pokračuješ malým písmenem, ve francouzštině **velkým**: *Chère Camille, / Merci pour…*",
+            "*Cher* + muž, *Chère* + žena: *Cher Paul, Chère Camille*. *Cher Monsieur* jen osobě, kterou znáš; neznámé osobě *Madame, Monsieur,*."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "",
+                "after": "Camille,",
+                "options": [
+                  "Chère",
+                  "Cher",
+                  "Chers"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je vous",
+                "after": "par avance de votre réponse.",
+                "options": [
+                  "remercie",
+                  "remercies",
+                  "merci"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Est-ce que vous",
+                "after": "m’envoyer le programme ?",
+                "options": [
+                  "pourriez",
+                  "pourrais",
+                  "peux"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations",
+                "after": ".",
+                "options": [
+                  "distinguées",
+                  "distingués",
+                  "bises"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přepiš neformální větu formálně: Tu peux m’envoyer les prix ?",
+          "answer": "Vykání a podmiňovací způsob: **Pourriez-vous m’envoyer les prix, s’il vous plaît ?**"
+        },
+        {
+          "type": "example",
+          "question": "Napiš oslovení: dopis paní ředitelce školy.",
+          "answer": "**Madame la Directrice,** (s čárkou; další řádek začni velkým písmenem). Stejný titul zopakuješ v závěrečné formuli."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Madame, Monsieur, je voudrais… (malým písmenem)",
+          "right": "Madame, Monsieur, / Je voudrais…",
+          "why": "Ve francouzském dopise začíná text po oslovení velkým písmenem (na rozdíl od češtiny)."
+        },
+        {
+          "type": "summary",
+          "text": "Kamarádovi: *Chère Camille, / Merci pour ta lettre ! … Grosses bises.* Instituci: *Objet…, Madame, Monsieur, / Je me permets de vous écrire… Je vous prie d’agréer… / Cordialement.* Formálně vykej a ptej se podmiňovacím způsobem."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jak oslovíš ve formálním dopise neznámou osobu?",
+      "options": [
+        "Madame, Monsieur,",
+        "Cher ami,",
+        "Salut !"
+      ],
+      "answer": 0,
+      "explanation": "Standardní formální oslovení."
+    },
+    {
+      "type": "choice",
+      "question": "Která závěrečná fráze je formální?",
+      "options": [
+        "Je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.",
+        "Grosses bises !",
+        "À plus !"
+      ],
+      "answer": 0,
+      "explanation": "Ustálená formální formule."
+    },
+    {
+      "type": "choice",
+      "question": "Jak začneš dopis kamarádce Emmě?",
+      "options": [
+        "Chère Emma,",
+        "Cher Emma,",
+        "Madame Emma,"
+      ],
+      "answer": 0,
+      "explanation": "U ženy *Chère*."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký krátký pozdrav se hodí na konec formálního e-mailu?",
+      "options": [
+        "Cordialement,",
+        "Bisous,",
+        "Salut,"
+      ],
+      "answer": 0,
+      "explanation": "*Cordialement* je zdvořilý a krátký."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Je vous remercie par ___ de votre réponse.",
+      "answers": [
+        "avance"
+      ],
+      "explanation": "Ustálená fráze: *par avance* = předem."
+    },
+    {
+      "type": "input",
+      "question": "Doplň slovo pro předmět ve formálním dopise: ___ : Demande d’informations",
+      "answers": [
+        "Objet"
+      ],
+      "explanation": "Předmět = *Objet*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zdvořile zeptáš ve formálním dopise?",
+      "options": [
+        "Pourriez-vous m’indiquer les horaires ?",
+        "Tu peux me dire les horaires ?",
+        "Dis-moi les horaires !"
+      ],
+      "answer": 0,
+      "explanation": "Vykání + podmiňovací způsob."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve francouzském dopise začíná text po oslovení velkým písmenem.",
+      "answer": true,
+      "explanation": "Na rozdíl od češtiny: *Cher Paul, / Merci pour…*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve formálním dopise jednomu člověku se tyká.",
+      "answer": false,
+      "explanation": "Ve formálním dopise se vždy vyká (*vous*)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Datum se francouzsky píše „le 15 Mars 2026“ s velkým M.",
+      "answer": false,
+      "explanation": "Měsíce se píšou malým písmenem: *le 15 mars 2026*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj neformální frázi s formální.",
+      "pairs": [
+        [
+          "Salut !",
+          "Madame, Monsieur,"
+        ],
+        [
+          "Tu peux…",
+          "Pourriez-vous…"
+        ],
+        [
+          "Merci !",
+          "Je vous remercie."
+        ],
+        [
+          "Bises,",
+          "Cordialement,"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části formálního dopisu.",
+      "items": [
+        "Prague, le 3 mars 2026",
+        "Objet : Demande d’informations",
+        "Madame, Monsieur,",
+        "Je vous écris pour…",
+        "Je vous prie d’agréer…",
+        "Tereza Nováková"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaké jsou hlavní rozdíly mezi formálním a neformálním dopisem ve francouzštině?",
+      "answer": "Formální: vykání, oslovení *Madame, Monsieur,*, předmět, zdvořilé otázky v podmiňovacím způsobu, ustálená závěrečná formule (*Je vous prie d’agréer…* nebo v e-mailu *Cordialement*), celé jméno. Neformální: tykání, *Cher/Chère*, volné fráze, *Bises*, křestní jméno."
+    },
+    {
+      "type": "open",
+      "question": "Napiš ústně krátký e-mail kamarádovi z Francie: poděkuj za zprávu a pozvi ho na návštěvu.",
+      "answer": "Například: *Salut Lucas ! Merci pour ton message. Tu veux venir à Prague cet été ? On pourrait visiter la ville ensemble. Écris-moi vite ! À bientôt, Petr*"
+    }
+  ]
+}

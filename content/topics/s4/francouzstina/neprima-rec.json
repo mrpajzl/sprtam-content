@@ -1,0 +1,507 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "neprima-rec",
+  "title": "Nepřímá řeč a souslednost časů",
+  "emoji": "🗣️",
+  "explanations": [
+    {
+      "title": "Pravidla a tabulka",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kamarád ti řekl: „Jsem unavený.“ Ty to pak tlumočíš někomu dalšímu: „Říkal, **že je** unavený.“ To je **nepřímá řeč**. Používáš ji pořád, když převyprávíš, co kdo řekl nebo se ptal."
+        },
+        {
+          "type": "text",
+          "text": "Francouzština tu má jedno pravidlo, které čeština nezná: když je uvozovací sloveso v minulosti (*il a dit*), **posunou se časy**. Tomu se říká souslednost časů. Angličtina to dělá podobně (*He said he was tired*)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Přímá řeč",
+          "definition": "Doslovná slova mluvčího, v uvozovkách.",
+          "example": "Paul dit : « Je suis fatigué. »"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá řeč",
+          "definition": "Převyprávění cizích slov vedlejší větou, bez uvozovek.",
+          "example": "Paul dit **qu’il est** fatigué."
+        },
+        {
+          "type": "term",
+          "term": "Uvozovací sloveso",
+          "definition": "Sloveso, které uvádí řeč: *dire* (říct), *demander* (ptát se), *répondre* (odpovědět), *expliquer* (vysvětlit).",
+          "example": "Il **a dit** que…"
+        },
+        {
+          "type": "term",
+          "term": "Souslednost časů",
+          "definition": "Pravidlo, podle kterého se čas ve vedlejší větě řídí časem hlavní věty. Francouzsky *concordance des temps*.",
+          "example": "Il a dit qu’il **était** fatigué."
+        },
+        {
+          "type": "heading",
+          "text": "Jak převést oznamovací větu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Za uvozovací sloveso dej **que** (*qu’* před samohláskou).",
+            "Změň osobu a přivlastňovací zájmena: *je → il/elle, mon → son*.",
+            "Je-li uvozovací sloveso v **přítomném** čase (*il dit*), časy se **nemění**.",
+            "Je-li v **minulém** čase (*il a dit, il disait*), časy se posunou podle tabulky."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "přímá řeč",
+            "nepřímá řeč po *il a dit que…*",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "présent",
+              "→ **imparfait**",
+              "« Je suis malade. » → qu’il **était** malade"
+            ],
+            [
+              "passé composé",
+              "→ **plus-que-parfait**",
+              "« J’ai perdu mon sac. » → qu’il **avait perdu** son sac"
+            ],
+            [
+              "futur simple",
+              "→ **conditionnel**",
+              "« Je viendrai. » → qu’il **viendrait**"
+            ],
+            [
+              "futur proche",
+              "→ *allait* + infinitiv",
+              "« Je vais partir. » → qu’il **allait** partir"
+            ],
+            [
+              "imparfait",
+              "→ zůstává imparfait",
+              "« J’étais content. » → qu’il **était** content"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Změny časových výrazů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "přímá řeč",
+            "nepřímá (v minulosti)"
+          ],
+          "rows": [
+            [
+              "aujourd’hui (dnes)",
+              "ce jour-là (ten den)"
+            ],
+            [
+              "hier (včera)",
+              "la veille (den předtím)"
+            ],
+            [
+              "demain (zítra)",
+              "le lendemain (druhý den)"
+            ],
+            [
+              "maintenant (teď)",
+              "à ce moment-là (v tu chvíli)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Léa a dit qu’elle",
+                "after": "faim.",
+                "options": [
+                  "avait",
+                  "a",
+                  "aura"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Il a dit qu’il",
+                "after": "demain.",
+                "options": [
+                  "viendrait",
+                  "viendra",
+                  "vient"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Ils ont dit qu’ils",
+                "after": "le film.",
+                "options": [
+                  "avaient vu",
+                  "ont vu",
+                  "voient"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Marc dit qu’il",
+                "after": "malade.",
+                "options": [
+                  "est",
+                  "était",
+                  "serait"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Marie a dit : « Je partirai demain. »",
+          "answer": "Uvozovací sloveso v minulosti → futur → conditionnel; *je → elle*; *demain → le lendemain*: **Marie a dit qu’elle partirait le lendemain.**"
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Paul a dit : « J’ai oublié mon livre. »",
+          "answer": "Passé composé → plus-que-parfait, *mon → son*: **Paul a dit qu’il avait oublié son livre.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Il a dit qu’il est malade.",
+          "right": "Il a dit qu’il était malade.",
+          "why": "Po uvozovacím slovese v minulosti se přítomný čas posune do imparfait. Česky čas zůstává („řekl, že je nemocný“), proto se tu Češi pletou."
+        },
+        {
+          "type": "summary",
+          "text": "Nepřímá řeč: *dire que* + změna osob. Po minulém uvozovacím slovese posun: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel; *demain → le lendemain, hier → la veille*."
+        }
+      ]
+    },
+    {
+      "title": "Otázky a prosby",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Babička je trochu nedoslýchavá. Když se jí v telefonu ptá vnuk Tom, máma jí to pak přetlumočí: „Ptá se, **jestli** přijedeš. Ptá se, **co** chceš k narozeninám.“ Převyprávět se dají nejen oznámení, ale i **otázky** a **prosby**. Každý typ se uvádí jinak."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Nepřímá otázka",
+          "definition": "Otázka převyprávěná vedlejší větou. Nemá otazník ani obrácený slovosled.",
+          "example": "Il demande **si** tu viens. = Ptá se, jestli přijdeš."
+        },
+        {
+          "type": "term",
+          "term": "Zjišťovací otázka",
+          "definition": "Otázka, na kterou se odpovídá *ano/ne*. V nepřímé řeči ji uvádí **si** (jestli).",
+          "example": "« Tu viens ? » → Il demande si tu viens."
+        },
+        {
+          "type": "term",
+          "term": "Doplňovací otázka",
+          "definition": "Otázka s tázacím slovem (*où, quand, pourquoi, comment, qui*). Tázací slovo zůstává.",
+          "example": "« Où habites-tu ? » → Il demande où tu habites."
+        },
+        {
+          "type": "term",
+          "term": "Souslednost časů",
+          "definition": "Posun časů ve vedlejší větě, když je uvozovací sloveso v minulosti.",
+          "example": "Il a demandé si j’**étais** prêt."
+        },
+        {
+          "type": "heading",
+          "text": "Přehled"
+        },
+        {
+          "type": "table",
+          "head": [
+            "přímá řeč",
+            "nepřímá řeč",
+            "česky"
+          ],
+          "rows": [
+            [
+              "« Tu viens ? »",
+              "Il demande **si** tu viens.",
+              "Ptá se, jestli přijdeš."
+            ],
+            [
+              "« Où habites-tu ? »",
+              "Il demande **où** tu habites.",
+              "Ptá se, kde bydlíš."
+            ],
+            [
+              "« Qu’est-ce que tu veux ? »",
+              "Il demande **ce que** tu veux.",
+              "Ptá se, co chceš."
+            ],
+            [
+              "« Qu’est-ce qui se passe ? »",
+              "Il demande **ce qui** se passe.",
+              "Ptá se, co se děje."
+            ],
+            [
+              "« Ferme la porte ! »",
+              "Il me dit **de** fermer la porte.",
+              "Říká mi, ať zavřu dveře."
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "*est-ce que* a obrácený slovosled v nepřímé otázce mizí: *Il demande où tu habites* (ne *où habites-tu*).",
+            "*qu’est-ce que* → **ce que**, *qu’est-ce qui* → **ce qui**.",
+            "Rozkaz → **de + infinitiv**: *Elle m’a dit de me dépêcher.*",
+            "*si* + *il/ils* se stáhne: **s’il**, ale *si elle* zůstává."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Telefonát s babičkou"
+        },
+        {
+          "type": "text",
+          "text": "*Tom : « Mamie, tu viendras samedi ? Qu’est-ce que tu veux pour ton anniversaire ? » — Maman (plus tard) : Tom t’a demandé **si tu viendrais** samedi et **ce que tu voulais** pour ton anniversaire.*"
+        },
+        {
+          "type": "text",
+          "text": "= Tom: „Babi, přijedeš v sobotu? Co chceš k narozeninám?“ – Máma (později): Tom se tě ptal, jestli přijedeš v sobotu a co chceš k narozeninám."
+        },
+        {
+          "type": "text",
+          "text": "Všimni si posunu: *viendras* (futur) → *viendrais* (conditionnel), *veux* (présent) → *voulais* (imparfait), protože *a demandé* je v minulosti."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičku: jak zní věta v nepřímé řeči?"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "« Tu as faim ? » → Il demande…",
+                "back": "Il demande si tu as faim."
+              },
+              {
+                "front": "« Quand pars-tu ? » → Elle demande…",
+                "back": "Elle demande quand tu pars."
+              },
+              {
+                "front": "« Qu’est-ce que tu fais ? » → Il demande…",
+                "back": "Il demande ce que tu fais."
+              },
+              {
+                "front": "« Viens ici ! » → Elle me dit…",
+                "back": "Elle me dit de venir ici."
+              },
+              {
+                "front": "« Il est malade ? » → Elle a demandé…",
+                "back": "Elle a demandé s’il était malade."
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Le prof nous a demandé : « Avez-vous fini ? »",
+          "answer": "Zjišťovací otázka → *si*; uvozovací sloveso v minulosti → passé composé se posune na plus-que-parfait: **Le prof nous a demandé si nous avions fini.**"
+        },
+        {
+          "type": "example",
+          "question": "Převeď: Ma mère m’a dit : « Range ta chambre ! »",
+          "answer": "Rozkaz → *de* + infinitiv, *ta → ma*: **Ma mère m’a dit de ranger ma chambre.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Il demande qu’est-ce que tu veux.",
+          "right": "Il demande ce que tu veux.",
+          "why": "V nepřímé otázce se *qu’est-ce que* mění na *ce que*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Elle demande si il vient.",
+          "right": "Elle demande s’il vient.",
+          "why": "*si* se před *il/ils* stahuje na *s’*."
+        },
+        {
+          "type": "summary",
+          "text": "Otázka ano/ne → *si*, tázací slovo zůstává, *qu’est-ce que → ce que*, *qu’est-ce qui → ce qui*, rozkaz → *de* + infinitiv. Při minulém uvozovacím slovese platí posun časů."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Léa a dit : « Je suis fatiguée. » → Léa a dit qu’elle ___ fatiguée.",
+      "options": [
+        "était",
+        "est",
+        "sera"
+      ],
+      "answer": 0,
+      "explanation": "Présent → imparfait po minulém uvozovacím slovese."
+    },
+    {
+      "type": "choice",
+      "question": "Il a dit : « Je viendrai. » → Il a dit qu’il ___.",
+      "options": [
+        "viendrait",
+        "viendra",
+        "venait"
+      ],
+      "answer": 0,
+      "explanation": "Futur → conditionnel."
+    },
+    {
+      "type": "choice",
+      "question": "Elle a dit : « J’ai perdu mes clés. » → Elle a dit qu’elle ___ ses clés.",
+      "options": [
+        "avait perdu",
+        "a perdu",
+        "perdrait"
+      ],
+      "answer": 0,
+      "explanation": "Passé composé → plus-que-parfait."
+    },
+    {
+      "type": "choice",
+      "question": "« Tu viens ? » → Il demande ___ tu viens.",
+      "options": [
+        "si",
+        "que",
+        "ce que"
+      ],
+      "answer": 0,
+      "explanation": "Zjišťovací otázka → *si*."
+    },
+    {
+      "type": "choice",
+      "question": "« Qu’est-ce que tu veux ? » → Il demande ___ tu veux.",
+      "options": [
+        "ce que",
+        "qu’est-ce que",
+        "que"
+      ],
+      "answer": 0,
+      "explanation": "*qu’est-ce que* → *ce que*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: « Ferme la fenêtre ! » → Il m’a dit ___ fermer la fenêtre.",
+      "answers": [
+        "de"
+      ],
+      "explanation": "Rozkaz → *de* + infinitiv."
+    },
+    {
+      "type": "input",
+      "question": "Jak se v nepřímé řeči v minulosti změní *demain*? (dvě slova)",
+      "answers": [
+        "le lendemain"
+      ],
+      "explanation": "*demain → le lendemain*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: « Il est là ? » → Elle demande ___ est là. (jestli on)",
+      "answers": [
+        "s’il",
+        "s'il"
+      ],
+      "explanation": "*si + il → s’il*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po „Il dit que…“ (přítomný čas) se časy neposouvají.",
+      "answer": true,
+      "explanation": "Posun nastává jen po uvozovacím slovese v minulosti."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Il a demandé où habitais-tu.“ je správně.",
+      "answer": false,
+      "explanation": "V nepřímé otázce není obrácený slovosled: *Il a demandé où tu habitais.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj čas v přímé řeči s časem v nepřímé (po *il a dit*).",
+      "pairs": [
+        [
+          "présent",
+          "imparfait"
+        ],
+        [
+          "passé composé",
+          "plus-que-parfait"
+        ],
+        [
+          "futur simple",
+          "conditionnel"
+        ],
+        [
+          "imparfait",
+          "imparfait"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Zeptala se mě, kde bydlím.“",
+      "items": [
+        "Elle",
+        "m’a",
+        "demandé",
+        "où",
+        "j’habitais"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Co je souslednost časů ve francouzštině a čím se liší od češtiny?",
+      "answer": "Když je uvozovací sloveso v minulosti, čas ve vedlejší větě se posune o krok do minulosti (présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel). Čeština čas neposouvá: „Řekl, že je nemocný“ × *Il a dit qu’il était malade.*"
+    },
+    {
+      "type": "open",
+      "question": "Převyprávěj francouzsky, co ti včera řekl a na co se ptal kamarád (aspoň jedno oznámení a jednu otázku).",
+      "answer": "Například: *Mon ami m’a dit qu’il avait un nouveau chien. Il m’a demandé si je voulais le voir et quand je serais libre.*"
+    }
+  ]
+}

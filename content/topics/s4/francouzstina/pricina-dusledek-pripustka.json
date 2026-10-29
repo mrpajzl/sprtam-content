@@ -1,0 +1,531 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pricina-dusledek-pripustka",
+  "title": "Příčina, důsledek a přípustka",
+  "emoji": "⚖️",
+  "explanations": [
+    {
+      "title": "Spojky v tabulce",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když argumentuješ, vysvětluješ nebo píšeš sloh, nestačí krátké věty. Potřebuješ říct **proč** (příčina), **co z toho plyne** (důsledek) a **přestože** (přípustka). K tomu slouží spojky a výrazy, které z textu udělají souvislý výklad."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Příčina",
+          "definition": "Důvod, proč se něco stalo. Ptáš se „proč?“.",
+          "example": "Je reste à la maison **parce que** je suis malade."
+        },
+        {
+          "type": "term",
+          "term": "Důsledek",
+          "definition": "Co z něčeho vyplývá. „Proto, tak, takže“.",
+          "example": "Je suis malade, **donc** je reste à la maison."
+        },
+        {
+          "type": "term",
+          "term": "Přípustka",
+          "definition": "Okolnost, která by mohla věci bránit, ale nebrání. „Přestože, i když“.",
+          "example": "**Bien qu’**il soit malade, il va à l’école."
+        },
+        {
+          "type": "term",
+          "term": "Spojka",
+          "definition": "Slovo, které spojuje věty: *parce que, donc, mais, bien que*…",
+          "example": "Il pleut, **mais** je sors."
+        },
+        {
+          "type": "heading",
+          "text": "Příčina"
+        },
+        {
+          "type": "table",
+          "head": [
+            "výraz",
+            "použití",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "**parce que**",
+              "nejběžnější, odpověď na *pourquoi ?*",
+              "*Je suis en retard parce que j’ai raté le bus.*"
+            ],
+            [
+              "**car**",
+              "spíš psané, **nikdy na začátku věty**",
+              "*Il est resté chez lui, car il était malade.*"
+            ],
+            [
+              "**comme**",
+              "příčina **na začátku** věty",
+              "*Comme il pleuvait, nous sommes restés.*"
+            ],
+            [
+              "**puisque**",
+              "příčina, kterou oba znají",
+              "*Puisque tu es là, aide-moi.*"
+            ],
+            [
+              "**à cause de** + jméno",
+              "kvůli (špatná věc)",
+              "*à cause de la pluie*"
+            ],
+            [
+              "**grâce à** + jméno",
+              "díky (dobrá věc)",
+              "*grâce à ton aide*"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Důsledek"
+        },
+        {
+          "type": "table",
+          "head": [
+            "výraz",
+            "příklad",
+            "česky"
+          ],
+          "rows": [
+            [
+              "**donc**",
+              "*Je pense, donc je suis.*",
+              "Myslím, tedy jsem."
+            ],
+            [
+              "**alors** (hovorově)",
+              "*Il faisait froid, alors j’ai mis un pull.*",
+              "…tak jsem si vzal svetr."
+            ],
+            [
+              "**c’est pourquoi**",
+              "*J’aime les langues, c’est pourquoi j’apprends le français.*",
+              "…proto se učím francouzsky."
+            ],
+            [
+              "**si bien que**",
+              "*Il a beaucoup plu, si bien que la rivière a débordé.*",
+              "…takže se řeka vylila."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Přípustka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "výraz",
+            "co následuje",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "**bien que / quoique**",
+              "**subjonctif**",
+              "*Bien qu’il soit fatigué, il travaille.*"
+            ],
+            [
+              "**même si**",
+              "indikativ",
+              "*Même s’il pleut, je sortirai.*"
+            ],
+            [
+              "**malgré** + jméno",
+              "podstatné jméno",
+              "*Malgré la pluie, je sortirai.*"
+            ],
+            [
+              "**mais, pourtant, cependant**",
+              "samostatná věta",
+              "*Il est riche ; pourtant, il n’est pas heureux.*"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Je reste à la maison",
+                "after": "je suis malade.",
+                "options": [
+                  "parce que",
+                  "donc",
+                  "bien que"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Bien qu’il",
+                "after": "tard, il travaille encore.",
+                "options": [
+                  "soit",
+                  "est",
+                  "sera"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "",
+                "after": "il faisait beau, nous sommes sortis.",
+                "options": [
+                  "Comme",
+                  "Car",
+                  "Donc"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Nous avons gagné",
+                "after": "ton aide.",
+                "options": [
+                  "grâce à",
+                  "à cause de",
+                  "malgré"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Même s’il",
+                "after": ", je sortirai.",
+                "options": [
+                  "pleut",
+                  "pleuve",
+                  "pleuvrait"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty přípustkou s *bien que*: Elle est malade. Elle va à l’école.",
+          "answer": "*bien que* + subjonctif od *être* (*qu’elle soit*): **Bien qu’elle soit malade, elle va à l’école.**"
+        },
+        {
+          "type": "example",
+          "question": "Spoj věty a vyjádři důsledek: J’ai raté le bus. Je suis arrivé en retard.",
+          "answer": "**J’ai raté le bus, donc je suis arrivé en retard.** (hovorově *alors*, v textu i *c’est pourquoi*)"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Bien qu’il est malade, il travaille.",
+          "right": "Bien qu’il soit malade, il travaille.",
+          "why": "Po *bien que* a *quoique* vždy subjonctif."
+        },
+        {
+          "type": "summary",
+          "text": "Příčina: *parce que, car* (ne na začátku), *comme* (na začátku), *à cause de / grâce à* + jméno. Důsledek: *donc, alors, c’est pourquoi*. Přípustka: *bien que* + subjonctif, *même si* + indikativ, *malgré* + jméno."
+        }
+      ]
+    },
+    {
+      "title": "Debata",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ve třídě se debatuje: **Mají mít žáci ve škole mobil?** Chloé je pro, Antoine proti. Z jejich argumentů uvidíš, jak se vyjadřuje příčina, důsledek a přípustka v živé řeči. Přesně takhle se mluví u ústní maturity."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Argument",
+          "definition": "Důvod, kterým podpoříš svůj názor.",
+          "example": "*Le portable est utile parce qu’on peut appeler ses parents.*"
+        },
+        {
+          "type": "term",
+          "term": "Příčina × důsledek",
+          "definition": "Příčina odpovídá na „proč?“ (*parce que*), důsledek na „a co z toho?“ (*donc*).",
+          "example": "Il pleut (příčina), donc je prends un parapluie (důsledek)."
+        },
+        {
+          "type": "term",
+          "term": "Přípustka",
+          "definition": "Uznáš protiargument, ale trváš na svém: „Sice…, ale…“, „I když…“.",
+          "example": "*Même si le portable est utile, il distrait les élèves.*"
+        },
+        {
+          "type": "term",
+          "term": "Subjonctif",
+          "definition": "Připomenutí: zvláštní tvar slovesa po *que* (*que je sois, qu’il ait, qu’il fasse*). Vyžaduje ho *bien que*.",
+          "example": "bien qu’il **fasse** froid"
+        },
+        {
+          "type": "heading",
+          "text": "Debata"
+        },
+        {
+          "type": "text",
+          "text": "*Chloé : Je suis pour le portable à l’école, **car** c’est un outil utile. **Grâce au** portable, on peut chercher des informations. Antoine : **Bien que** ce **soit** pratique, c’est aussi une distraction. **À cause des** réseaux sociaux, les élèves ne se concentrent pas. Chloé : **Même si** certains élèves l’utilisent mal, on ne peut pas l’interdire à tous. Antoine : **Comme** on ne peut pas tout contrôler, il vaut mieux l’interdire. **C’est pourquoi** je suis contre.*"
+        },
+        {
+          "type": "text",
+          "text": "= Chloé: Jsem pro mobil ve škole, protože je to užitečný nástroj. Díky mobilu můžeme hledat informace. Antoine: Přestože je to praktické, je to taky rozptýlení. Kvůli sociálním sítím se žáci nesoustředí. Chloé: I když ho někteří žáci používají špatně, nemůžeme ho zakázat všem. Antoine: Protože nemůžeme všechno kontrolovat, je lepší ho zakázat. Proto jsem proti."
+        },
+        {
+          "type": "heading",
+          "text": "Chytáky z debaty"
+        },
+        {
+          "type": "list",
+          "items": [
+            "*grâce **au** portable, à cause **des** réseaux* – *à* a *de* se stahují se členem (*au, aux, du, des*).",
+            "*bien que ce **soit*** – subjonctif. Ale *même si* + indikativ: *même si certains l’**utilisent***.",
+            "*comme* stojí na začátku, *car* nikdy. Nelze říct *Car il pleut, je reste.*",
+            "*même si + il* → **même s’il**."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď výrazy podle toho, co vyjadřují."
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "příčina",
+              "důsledek",
+              "přípustka"
+            ],
+            "items": [
+              {
+                "text": "parce que",
+                "group": 0
+              },
+              {
+                "text": "comme",
+                "group": 0
+              },
+              {
+                "text": "grâce à",
+                "group": 0
+              },
+              {
+                "text": "donc",
+                "group": 1
+              },
+              {
+                "text": "c’est pourquoi",
+                "group": 1
+              },
+              {
+                "text": "si bien que",
+                "group": 1
+              },
+              {
+                "text": "bien que",
+                "group": 2
+              },
+              {
+                "text": "malgré",
+                "group": 2
+              },
+              {
+                "text": "même si",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "example",
+          "question": "Přeformuluj s *malgré*: Bien qu’il pleuve, nous jouons au foot.",
+          "answer": "*malgré* + podstatné jméno (*la pluie*): **Malgré la pluie, nous jouons au foot.**"
+        },
+        {
+          "type": "example",
+          "question": "Přeformuluj s *comme*: Je n’avais pas d’argent, donc je ne suis pas sorti.",
+          "answer": "Příčina na začátek s *comme*: **Comme je n’avais pas d’argent, je ne suis pas sorti.**"
+        },
+        {
+          "type": "mistake",
+          "wrong": "Car il était fatigué, il s’est couché.",
+          "right": "Comme il était fatigué, il s’est couché. / Il s’est couché, car il était fatigué.",
+          "why": "*car* nikdy nezačíná větu. Na začátek patří *comme*."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Même s’il fasse froid, je sors.",
+          "right": "Même s’il fait froid, je sors.",
+          "why": "Po *même si* je indikativ, ne subjonctif (ten patří k *bien que*)."
+        },
+        {
+          "type": "summary",
+          "text": "Argumentuj: *car / parce que / grâce à* (proč), *donc / c’est pourquoi* (co z toho), *bien que* + subjonctif, *même si* + indikativ, *malgré* + jméno (přestože)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Bien qu’il ___ malade, il travaille.",
+      "options": [
+        "soit",
+        "est",
+        "était"
+      ],
+      "answer": 0,
+      "explanation": "*bien que* + subjonctif."
+    },
+    {
+      "type": "choice",
+      "question": "Même s’il ___, je sortirai.",
+      "options": [
+        "pleut",
+        "pleuve",
+        "pleuvrait"
+      ],
+      "answer": 0,
+      "explanation": "*même si* + indikativ."
+    },
+    {
+      "type": "choice",
+      "question": "___ il faisait beau, nous sommes allés à la plage.",
+      "options": [
+        "Comme",
+        "Car",
+        "Donc"
+      ],
+      "answer": 0,
+      "explanation": "Příčina na začátku věty → *comme*."
+    },
+    {
+      "type": "choice",
+      "question": "Nous avons réussi ___ ton aide.",
+      "options": [
+        "grâce à",
+        "à cause de",
+        "bien que"
+      ],
+      "answer": 0,
+      "explanation": "Kladná příčina + podstatné jméno → *grâce à*."
+    },
+    {
+      "type": "choice",
+      "question": "Le match a été annulé ___ la neige.",
+      "options": [
+        "à cause de",
+        "grâce à",
+        "parce que"
+      ],
+      "answer": 0,
+      "explanation": "Záporná příčina + podstatné jméno → *à cause de*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň důsledek: J’ai raté le bus, ___ je suis arrivé en retard. (tedy, takže – jedno slovo)",
+      "answers": [
+        "donc",
+        "alors"
+      ],
+      "explanation": "*donc* (v hovoru *alors*)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň přípustku + podstatné jméno: ___ la pluie, nous sommes sortis.",
+      "answers": [
+        "Malgré",
+        "malgre"
+      ],
+      "explanation": "*malgré* + podstatné jméno."
+    },
+    {
+      "type": "input",
+      "question": "Doplň subjonctif od *avoir*: Bien qu’elle ___ peu de temps, elle m’aide.",
+      "answers": [
+        "ait"
+      ],
+      "explanation": "*avoir* → *qu’elle ait*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*car* může stát na začátku věty: „Car il pleut, je reste.“",
+      "answer": false,
+      "explanation": "*car* nikdy nezačíná větu; na začátek patří *comme*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po *quoique* následuje subjonctif, stejně jako po *bien que*.",
+      "answer": true,
+      "explanation": "*Quoiqu’il soit tard, …*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj výraz s tím, co za ním následuje.",
+      "pairs": [
+        [
+          "bien que",
+          "subjonctif"
+        ],
+        [
+          "même si",
+          "indikativ"
+        ],
+        [
+          "malgré",
+          "podstatné jméno"
+        ],
+        [
+          "grâce à",
+          "podstatné jméno (kladné)"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Přestože je unavená, pracuje.“",
+      "items": [
+        "Bien qu’",
+        "elle",
+        "soit",
+        "fatiguée,",
+        "elle travaille"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi *parce que*, *car* a *comme*?",
+      "answer": "Všechny vyjadřují příčinu. *parce que* je nejběžnější a odpovídá na *pourquoi*. *car* je spíš psané a nesmí stát na začátku věty. *comme* naopak stojí na začátku: *Comme il pleuvait, …*"
+    },
+    {
+      "type": "open",
+      "question": "Vyjádři francouzsky svůj názor na mobily ve škole: uveď příčinu, důsledek a přípustku.",
+      "answer": "Například: *Je suis pour, parce que le portable est utile. Grâce à lui, on trouve vite des informations. Bien que certains élèves l’utilisent mal, on ne devrait pas l’interdire. C’est pourquoi je suis pour.*"
+    }
+  ]
+}
