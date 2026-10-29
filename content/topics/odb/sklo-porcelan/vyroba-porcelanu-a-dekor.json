@@ -1,0 +1,415 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vyroba-porcelanu-a-dekor",
+  "title": "Výroba porcelánu a jeho dekor",
+  "emoji": "🫖",
+  "explanations": [
+    {
+      "title": "Z hlíny do vitríny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Než se porcelánový šálek dostane do vitríny, projde rukama mnoha lidí a několikrát pecí. Každý krok zanechá na hotovém kusu stopy, podle kterých starožitník pozná, jak a kdy vznikl."
+        },
+        {
+          "type": "text",
+          "text": "Nejdůležitější je pochopit, kdy se maluje **pod** glazuru a kdy **na** ni. To rozhoduje o vzhledu, odolnosti i o tom, jak dekor zkoumat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Porcelánová hmota",
+          "definition": "Směs **kaolínu** (bílé hlíny), **živce** a **křemene**. Klasický poměr je zhruba polovina kaolínu a po čtvrtině živce a křemene.",
+          "example": "Hmota připravená k vytáčení talířů."
+        },
+        {
+          "type": "term",
+          "term": "Přežah",
+          "definition": "První výpal při nižší teplotě (asi 900–1000 °C). Výrobek zpevní, ale je ještě pórovitý a nasákavý.",
+          "example": "Matný bílý talíř po prvním výpalu, nasaje barvu jako papír."
+        },
+        {
+          "type": "term",
+          "term": "Ostrý (glazurový) výpal",
+          "definition": "Druhý výpal při nejvyšší teplotě (u tvrdého porcelánu asi 1350–1450 °C). Střep slinuje (zhutní se a přestane nasávat vodu) a glazura se roztaví.",
+          "example": "Talíř po ostrém výpalu je lesklý a průsvitný."
+        },
+        {
+          "type": "term",
+          "term": "Glazura",
+          "definition": "Sklovitý povlak, který se při výpalu roztaví a vytvoří lesklou nepropustnou vrstvu.",
+          "example": "Lesklý povrch porcelánu."
+        },
+        {
+          "type": "heading",
+          "text": "Výroba krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Příprava hmoty: kaolín, živec a křemen se rozemelou a smísí s vodou.",
+            "Tvarování: **točení** na kruhu, **vytáčení** do sádrové formy šablonou (talíře), nebo **lití** řídké hmoty do sádrových forem (konvičky, figurky).",
+            "Sušení a začištění švů po formě.",
+            "**Přežah** asi 900–1000 °C.",
+            "Případně **podglazurní malba** na přežah, pak glazování (namáčení do glazury).",
+            "**Ostrý výpal** asi 1350–1450 °C.",
+            "Případně **nadglazurní malba** a zlacení, pak dekorační výpal při nižší teplotě (asi 750–850 °C)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pod glazurou, nebo na ní?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "podglazurní malba",
+            "nadglazurní malba"
+          ],
+          "rows": [
+            [
+              "kdy",
+              "na přežah, před glazováním",
+              "na hotový porcelán"
+            ],
+            [
+              "teplota",
+              "vydrží ostrý výpal",
+              "vypaluje se níž (asi 750–850 °C)"
+            ],
+            [
+              "barvy",
+              "málo, hlavně kobaltová modř",
+              "bohatá paleta, zlato"
+            ],
+            [
+              "odolnost",
+              "chráněná glazurou, neotře se",
+              "může se otřít, je trochu vystouplá"
+            ],
+            [
+              "příklad",
+              "cibulový vzor",
+              "malované květiny, zlacené okraje"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na talíři s modrým vzorem přejedeš prstem: povrch je úplně hladký, malba je jakoby „ve skle“. Pod nebo nad glazurou?",
+          "answer": "Malba je **pod glazurou** – je pod sklovitou vrstvou, proto ji necítíš. Modrá kobaltová barva je typická podglazurní barva."
+        },
+        {
+          "type": "example",
+          "question": "Na šálku jsou barevné květy a zlatý okraj. Na místech, kde se šálek nejvíc používal, jsou barvy otřené. Proč?",
+          "answer": "Jde o **nadglazurní** malbu. Leží na glazuře a vypaluje se při nižší teplotě, takže je méně odolná a časem se otírá."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "podglazurní",
+              "nadglazurní"
+            ],
+            "items": [
+              {
+                "text": "kobaltová modř cibuláku",
+                "group": 0
+              },
+              {
+                "text": "neotře se",
+                "group": 0
+              },
+              {
+                "text": "maluje se na přežah",
+                "group": 0
+              },
+              {
+                "text": "zlacený okraj",
+                "group": 1
+              },
+              {
+                "text": "bohatá paleta barev",
+                "group": 1
+              },
+              {
+                "text": "lehce vystouplá pod prstem",
+                "group": 1
+              },
+              {
+                "text": "dekorační výpal asi 800 °C",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Podglazurní malba je vždy modrá, nadglazurní vždy barevná.",
+          "right": "Kobaltová modř je nejčastější podglazurní barva, ale existují i jiné (např. některé zelené nebo hnědé). Modrou lze malovat i na glazuru.",
+          "why": "Rozhoduje, **kde** malba leží, ne jaká je barva. Ověř to lesklým odrazem a dotykem."
+        },
+        {
+          "type": "summary",
+          "text": "Porcelán = kaolín, živec, křemen. Tvaruje se točením, vytáčením nebo litím, pak přežah, glazura a ostrý výpal. Podglazurní malba (hlavně kobalt) leží pod glazurou a neotře se, nadglazurní je barevnější, vypaluje se níž a může se otřít."
+        }
+      ]
+    },
+    {
+      "title": "Dekor pod lupou",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Dva talíře se stejnými růžemi: jeden ručně maloval mistr v 19. století, druhý má obtisk z továrny 20. století. Rozdíl v ceně je obrovský a pouhým okem se snadno přehlédne. Lupa ho ale prozradí."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme hlavní druhy dekoru a jak je od sebe poznat."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Dekor",
+          "definition": "Výzdoba předmětu: malba, tisk, zlacení, reliéf.",
+          "example": "Růžičky a zlatý okraj na šálku."
+        },
+        {
+          "type": "term",
+          "term": "Glazura",
+          "definition": "Sklovitý lesklý povlak porcelánu.",
+          "example": "Lesklá vrstva, ve které se odráží světlo."
+        },
+        {
+          "type": "term",
+          "term": "Podglazurní a nadglazurní malba",
+          "definition": "**Podglazurní** se maluje na porcelán po prvním výpalu (přežahu) a pak se překryje glazurou. **Nadglazurní** se maluje na hotovou glazuru a vypaluje se při nižší teplotě.",
+          "example": "Modrý cibulák × pestré květiny."
+        },
+        {
+          "type": "term",
+          "term": "Obtisk",
+          "definition": "Dekor předtištěný na papír nebo fólii a přenesený na porcelán, pak zapálený výpalem. Používá se hlavně od 19. století v sériové výrobě.",
+          "example": "Stejné kytičky na všech talířích servisu."
+        },
+        {
+          "type": "term",
+          "term": "Zlacení",
+          "definition": "Zdobení zlatem. Starší je **matné zlato** leštěné achátem, od 19. století se šíří **lesklé (tekuté) zlato**, které je lesklé hned po výpalu a tenčí.",
+          "example": "Zlatý okraj šálku."
+        },
+        {
+          "type": "heading",
+          "text": "Jak dekor zkoumat"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Podívej se na šikmý odraz světla: podglazurní malba je pod souvislým leskem, nadglazurní tvoří na glazuře vlastní vrstvu.",
+            "Přejeď bříškem prstu: nadglazurní malba a zlato bývají lehce vystouplé.",
+            "Lupou (10×) hledej tahy štětce: ruční malba má nestejné tahy, slabší a silnější místa.",
+            "Pravidelné body (rastr) nebo dokonale stejné motivy na více kusech ukazují na **tisk nebo obtisk**.",
+            "U zlacení sleduj lesk a tloušťku: tenké zrcadlové zlato snadno se otírající bývá lesklé zlato, matné leštěné starší."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Pod lupou vidíš, že růže se skládá z drobných pravidelných teček. Ruční malba, nebo obtisk?",
+          "answer": "Pravidelné tečky (rastr) vznikají tiskem. Jde o **obtisk** nebo tisk, ne ruční malbu."
+        },
+        {
+          "type": "example",
+          "question": "Na šálku jsou okvětní lístky malované viditelnými tahy, některé tahy přesahují obrys a barva je místy silnější. Na druhém šálku servisu je motiv podobný, ale ne stejný. Co to znamená?",
+          "answer": "Nestejné tahy štětce a drobné rozdíly mezi kusy jsou znaky **ruční malby**. Malíř maloval každý kus znovu."
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Pravidelné tečky pod lupou",
+                "back": "tisk / obtisk"
+              },
+              {
+                "front": "Viditelné tahy štětce",
+                "back": "ruční malba"
+              },
+              {
+                "front": "Malba pod souvislým leskem",
+                "back": "podglazurní"
+              },
+              {
+                "front": "Lehce vystouplá barva, otírá se",
+                "back": "nadglazurní"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Obtisk znamená, že je kus bezcenný nebo moderní.",
+          "right": "Obtisky a tisk se na porcelánu používají od 19. století a i starší tištěné servisy mohou mít hodnotu. Jen nejsou ruční malbou a podle toho se oceňují.",
+          "why": "Způsob dekoru je jedna stopa k dataci a ceně, ne rozsudek o pravosti."
+        },
+        {
+          "type": "summary",
+          "text": "Dekor zkoumej odrazem světla, prstem a lupou. Podglazurní malba je pod leskem, nadglazurní na něm a otírá se. Ruční malba má tahy štětce, tisk a obtisk pravidelné body a stejné motivy. Lesklé tekuté zlato je mladší než matné leštěné."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Z čeho se skládá porcelánová hmota?",
+      "options": [
+        "kaolín, živec, křemen",
+        "jíl, písek, vápno",
+        "kaolín, sádra, olovo",
+        "hlína, sůl, popel"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď výrobu porcelánu s podglazurní malbou.",
+      "items": [
+        "příprava hmoty",
+        "tvarování",
+        "přežah",
+        "podglazurní malba",
+        "glazování",
+        "ostrý výpal"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nadglazurní malba se vypaluje při nižší teplotě než ostrý výpal.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje první výpal porcelánu při nižší teplotě? (jedno slovo)",
+      "answers": [
+        "přežah",
+        "prezah"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která barva je typická pro podglazurní malbu?",
+      "options": [
+        "kobaltová modř",
+        "zlato",
+        "růžová purpurová",
+        "stříbro"
+      ],
+      "answer": 0,
+      "hints": [
+        "Podglazurní barva musí vydržet nejvyšší teplotu.",
+        "Vzpomeň si na cibulový vzor."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj způsob tvarování s výrobkem.",
+      "pairs": [
+        [
+          "vytáčení šablonou",
+          "talíř"
+        ],
+        [
+          "lití do sádrové formy",
+          "figurka"
+        ],
+        [
+          "točení na kruhu",
+          "jednotlivá miska"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pravidelné tečky (rastr) pod lupou ukazují na ruční malbu.",
+      "answer": false,
+      "explanation": "Rastr vzniká tiskem, ruční malba má tahy štětce."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se nadglazurní malba časem otírá?",
+      "options": [
+        "leží na glazuře a je vypálená při nižší teplotě",
+        "je pod glazurou",
+        "je z kobaltu",
+        "porcelán je měkký"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje dekor předtištěný na papír nebo fólii a přenesený na porcelán? (jedno slovo)",
+      "answers": [
+        "obtisk",
+        "obtisky"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které zlacení je starší?",
+      "options": [
+        "matné zlato leštěné achátem",
+        "lesklé tekuté zlato",
+        "obě se objevila současně",
+        "zlacení se na porcelánu nepoužívá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Podglazurní malba je chráněná glazurou, a proto se neotře.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jakou teplotu má zhruba ostrý výpal tvrdého porcelánu?",
+      "options": [
+        "1350–1450 °C",
+        "600–700 °C",
+        "900–1000 °C",
+        "2000 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi podglazurní a nadglazurní malbou.",
+      "answer": "Podglazurní malba se nanáší na přežah a překryje se glazurou, takže vydrží ostrý výpal a neotře se, ale má málo barev, hlavně kobaltovou modř. Nadglazurní malba se nanáší na hotovou glazuru a vypaluje při nižší teplotě; má bohatou paletu i zlato, ale může se otírat."
+    },
+    {
+      "type": "open",
+      "question": "Jak odlišíš ruční malbu od obtisku?",
+      "answer": "Lupou: ruční malba má viditelné tahy štětce, nestejnou sílu barvy a drobné rozdíly mezi kusy. Obtisk nebo tisk má pravidelné body rastru a motivy jsou na všech kusech stejné."
+    }
+  ]
+}

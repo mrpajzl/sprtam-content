@@ -1,0 +1,412 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "druhy-keramiky",
+  "title": "Druhy keramiky",
+  "emoji": "🏺",
+  "explanations": [
+    {
+      "title": "Podle střepu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Hrnek z trhu, babiččin talíř s modrým vzorem a čínská váza – všechno je keramika. Přesto má každý jinou hodnotu a jinak se o něj pečuje. Rozdíl je hlavně v tom, z čeho a při jaké teplotě vznikl."
+        },
+        {
+          "type": "text",
+          "text": "Starožitník musí druh keramiky poznat často jen podle odštípnutého místa a zvuku. Na tom závisí datace, cena i čištění."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Keramika",
+          "definition": "Výrobky z hlíny nebo jílu, které získají pevnost **výpalem** v peci.",
+          "example": "Květináč, talíř, dlaždice, porcelánová figurka."
+        },
+        {
+          "type": "term",
+          "term": "Střep",
+          "definition": "Vypálená hmota, ze které je předmět. Vidíš ji na odštípnutém místě nebo na nepolévaném dně.",
+          "example": "Červenohnědý pórovitý střep květináče."
+        },
+        {
+          "type": "term",
+          "term": "Glazura (poleva)",
+          "definition": "Sklovitá vrstva na povrchu keramiky, vzniká výpalem. Dělá předmět hladký, lesklý a nepropustný.",
+          "example": "Lesklá zelená vrstva na kachlu."
+        },
+        {
+          "type": "term",
+          "term": "Pórovitý a slinutý střep",
+          "definition": "**Pórovitý** střep má drobné dutinky a nasává vodu. **Slinutý** je vypálený tak vysoko, že se částice spojily a vodu skoro nepřijímá.",
+          "example": "Neglazovaný květináč vodu propustí (pórovitý), kameninový džbán ne (slinutý)."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři hlavní druhy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "druh",
+            "střep",
+            "výpal (orientačně)",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "hrnčina",
+              "pórovitý, barevný (červený, hnědý)",
+              "asi 900–1100 °C",
+              "hrnce, kachle, lidová keramika"
+            ],
+            [
+              "fajáns / majolika",
+              "pórovitý, pod bílou neprůhlednou glazurou",
+              "asi 900–1100 °C",
+              "habánské džbány, delftské dlaždice"
+            ],
+            [
+              "kamenina",
+              "slinutý, šedý až hnědý, neprůsvitný",
+              "asi 1150–1300 °C",
+              "džbány, láhve na minerálku"
+            ],
+            [
+              "porcelán",
+              "slinutý, bílý, v tenké vrstvě průsvitný",
+              "asi 1300–1450 °C",
+              "servisy, figurky"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Teploty jsou orientační rozpětí, přesné hodnoty se liší podle surovin a dílny."
+        },
+        {
+          "type": "heading",
+          "text": "Jak druh určit"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi místo, kde je vidět střep: nepolévaný okraj dna, odštípnutí.",
+            "Barva střepu: bílá (porcelán, jemná kamenina), barevná (hrnčina, kamenina).",
+            "Zkus nasákavost: kapka vody na neglazovaném místě se vsákne u pórovitého střepu, na slinutém zůstane.",
+            "Prosvítí tenká stěna proti světlu? Pak je to porcelán.",
+            "Lehké poklepání nehtem: porcelán jasně zvoní, hrnčina zní tupě (prasklý kus také tupě)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Talíř má na dně nepolévaný okraj, střep je nažloutlý, kapka vody se vsákne. Glazura je bílá, neprůhledná, malovaná modře. Druh?",
+          "answer": "Pórovitý barevný střep pod bílou neprůhlednou glazurou = **fajáns** (majolika)."
+        },
+        {
+          "type": "example",
+          "question": "Šálek je bílý i na dně, proti světlu prosvítá a po poklepu jasně zvoní. Druh?",
+          "answer": "Bílý, slinutý a průsvitný střep se zvonivým zvukem = **porcelán**."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "pórovitý střep",
+              "slinutý střep"
+            ],
+            "items": [
+              {
+                "text": "hrnčina",
+                "group": 0
+              },
+              {
+                "text": "fajáns",
+                "group": 0
+              },
+              {
+                "text": "majolika",
+                "group": 0
+              },
+              {
+                "text": "kamenina",
+                "group": 1
+              },
+              {
+                "text": "porcelán",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Všechno bílé a malované je porcelán.",
+          "right": "Bílou glazuru má i fajáns. Rozhoduje střep: u fajánsu je pórovitý a barevný, u porcelánu bílý, slinutý a průsvitný.",
+          "why": "Fajáns vznikla právě jako napodobenina čínského porcelánu, proto na první pohled vypadá podobně."
+        },
+        {
+          "type": "summary",
+          "text": "Keramiku dělíme podle střepu: hrnčina a fajáns mají pórovitý střep, kamenina a porcelán slinutý. Porcelán je bílý a průsvitný. Druh určíš podle barvy střepu, nasákavosti, průsvitnosti a zvuku."
+        }
+      ]
+    },
+    {
+      "title": "Cesta k porcelánu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Evropané po staletí obdivovali čínský porcelán – tenký, bílý, průsvitný – ale neuměli ho vyrobit. Zkoušeli ho napodobit všemožně. Z těch pokusů vznikly druhy keramiky, které dnes sbíráme."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme si je v pořadí, jak se zlepšovaly: od obyčejné hrnčiny až po porcelán."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výpal",
+          "definition": "Zahřátí vysušeného výrobku v peci na vysokou teplotu. Hlína se tím mění v tvrdou keramiku.",
+          "example": "Hrnčíř vypaluje hrnky v peci na dřevo."
+        },
+        {
+          "type": "term",
+          "term": "Střep",
+          "definition": "Hmota vypáleného předmětu, kterou uvidíš na odštípnutí nebo nepolévaném dně.",
+          "example": "Bílý střep porcelánu, červený střep hrnčiny."
+        },
+        {
+          "type": "term",
+          "term": "Glazura",
+          "definition": "Sklovitý povlak vzniklý výpalem. **Cíničitá glazura** obsahuje oxid cíničitý a je bílá a neprůhledná.",
+          "example": "Bílá poleva habánského džbánu."
+        },
+        {
+          "type": "term",
+          "term": "Kaolín",
+          "definition": "Velmi čistá bílá hlína, hlavní surovina porcelánu.",
+          "example": "Kaolín z okolí Karlových Varů zásoboval české porcelánky."
+        },
+        {
+          "type": "heading",
+          "text": "Od hrnčiny k porcelánu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Hrnčina**: obyčejná hlína, nízký výpal, pórovitý barevný střep. Nejstarší a nejběžnější keramika.",
+            "**Fajáns / majolika**: hrnčina pokrytá bílou cíničitou glazurou, na které se maluje. Název *majolika* je z Itálie (podle Mallorky), *fajáns* podle italského města Faenza. U nás proslula **habánská fajáns** (Habáni, náboženská skupina na jižní Moravě, 16.–17. století).",
+            "**Kamenina**: hlína vypálená tak vysoko, že slinula. Pevná, nepropustná, šedá až hnědá, často se **solnou glazurou**.",
+            "**Porcelán**: z kaolínu, živce a křemene, vypálený nejvýš. Bílý, slinutý, průsvitný. V Evropě tvrdý porcelán poprvé v **Míšni** (1708–1710)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "timeline",
+          "props": {
+            "events": [
+              {
+                "year": 1600,
+                "label": "Rozkvět **habánské fajánse** na Moravě"
+              },
+              {
+                "year": 1650,
+                "label": "Rozkvět fajánse v Delftu"
+              },
+              {
+                "year": 1708,
+                "label": "Böttger: evropský tvrdý porcelán"
+              },
+              {
+                "year": 1710,
+                "label": "Založena manufaktura v **Míšni**"
+              },
+              {
+                "year": 1760,
+                "label": "Anglie: jemná bílá kamenina (pórovina)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Data jsou orientační body. Hrnčina se vyráběla po celou dobu a vyrábí se dodnes."
+        },
+        {
+          "type": "example",
+          "question": "Džbán je šedohnědý, na povrchu má drobné „pomerančové“ důlky v lesklé vrstvě a voda jím neprosakuje. Co to je?",
+          "answer": "Slinutý šedohnědý střep a důlkovaný povrch typický pro solnou glazuru = **kamenina se solnou glazurou**."
+        },
+        {
+          "type": "example",
+          "question": "Majitel říká: „Je to porcelán z roku 1650 z Moravy.“ Co mu odpovíš?",
+          "answer": "Evropský tvrdý porcelán se vyrábí až od roku 1708–1710 (Míšeň). Kus z Moravy z roku 1650 bude spíš **habánská fajáns** – ověříš to podle pórovitého střepu pod bílou glazurou."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Majolika a fajáns jsou dva úplně různé materiály.",
+          "right": "Obojí je keramika s pórovitým střepem a bílou cíničitou glazurou. Majolika je spíš italské a starší označení, fajáns francouzské a středoevropské.",
+          "why": "Názvy vznikly podle různých míst obchodu a výroby, technika je v zásadě stejná."
+        },
+        {
+          "type": "summary",
+          "text": "Hrnčina (pórovitá, nízký výpal) → fajáns a majolika (hrnčina s bílou cíničitou glazurou) → kamenina (slinutá, nepropustná) → porcelán (kaolín, živec, křemen, bílý a průsvitný, v Evropě od Míšně 1708–1710)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který druh keramiky má bílý, slinutý a v tenké vrstvě průsvitný střep?",
+      "options": [
+        "porcelán",
+        "fajáns",
+        "hrnčina",
+        "majolika"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Fajáns má pórovitý střep pokrytý bílou neprůhlednou glazurou.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh keramiky s typickým výrobkem.",
+      "pairs": [
+        [
+          "hrnčina",
+          "lidový hrnec"
+        ],
+        [
+          "fajáns",
+          "habánský džbán"
+        ],
+        [
+          "kamenina",
+          "láhev na minerálku"
+        ],
+        [
+          "porcelán",
+          "čajový servis"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď druhy keramiky podle obvyklé teploty výpalu od nejnižší.",
+      "items": [
+        "hrnčina",
+        "kamenina",
+        "porcelán"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje bílá hlína, hlavní surovina porcelánu? (jedno slovo)",
+      "answers": [
+        "kaolín",
+        "kaolin"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje fajáns, kterou na jižní Moravě vyráběla náboženská skupina v 16.–17. století?",
+      "options": [
+        "habánská",
+        "delftská",
+        "míšeňská",
+        "anglická"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kapka vody se na neglazovaném slinutém střepu rychle vsákne.",
+      "answer": false,
+      "explanation": "Slinutý střep (kamenina, porcelán) vodu skoro nepřijímá. Vsákne se do pórovitého."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém městě vznikla první evropská manufaktura na tvrdý porcelán?",
+      "options": [
+        "Míšeň",
+        "Delft",
+        "Faenza",
+        "Vídeň"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Šedohnědý nepropustný džbán s drobně důlkovaným lesklým povrchem je nejspíš…",
+      "options": [
+        "kamenina se solnou glazurou",
+        "porcelán",
+        "fajáns",
+        "neglazovaná hrnčina"
+      ],
+      "answer": 0,
+      "hints": [
+        "Je nepropustný – jaký to má střep?",
+        "Důlkovaný povrch vzniká u jedné zvláštní glazury."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje sklovitý povlak na keramice vzniklý výpalem? (jedno slovo)",
+      "answers": [
+        "glazura",
+        "poleva",
+        "glazur"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Porcelán po poklepu obvykle jasně zvoní, pokud není prasklý.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Podle kterého italského města se jmenuje fajáns?",
+      "options": [
+        "Faenza",
+        "Florencie",
+        "Benátky",
+        "Neapol"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak na odštípnutém místě rozlišíš fajáns a porcelán?",
+      "answer": "Fajáns má pórovitý, nažloutlý nebo načervenalý střep, který nasaje vodu, a na něm vrstvu bílé glazury. Porcelán má střep bílý, slinutý, sklovitý a glazura s ním splývá; v tenké vrstvě prosvítá."
+    },
+    {
+      "type": "open",
+      "question": "Popiš čtyři hlavní druhy keramiky.",
+      "answer": "Hrnčina má pórovitý barevný střep a nízký výpal. Fajáns (majolika) je hrnčina s bílou cíničitou glazurou. Kamenina je slinutá, nepropustná a šedá až hnědá. Porcelán je z kaolínu, živce a křemene, bílý, slinutý a průsvitný."
+    }
+  ]
+}

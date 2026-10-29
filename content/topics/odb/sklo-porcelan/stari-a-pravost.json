@@ -1,0 +1,392 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "stari-a-pravost",
+  "title": "Rozpoznání stáří a pravosti",
+  "emoji": "🔦",
+  "explanations": [
+    {
+      "title": "Lupa a lampa",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Zákazník přinese „míšeňskou“ figurku a „barokní“ pohár. Oba vypadají pěkně. Ty ale musíš zjistit, jestli jsou opravdu staré, jestli nejsou opravené a jestli značka nelže."
+        },
+        {
+          "type": "text",
+          "text": "Na to máš jednoduché nástroje: oči, prsty, lupu, UV lampu a znalosti. Nejde o jeden zázračný test, ale o souhrn stop."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pravost",
+          "definition": "Shoda předmětu s tím, za co se vydává: doba, výrobce, autor, materiál.",
+          "example": "Míšeňský talíř opravdu vyrobený v Míšni v 18. století."
+        },
+        {
+          "type": "term",
+          "term": "Padělek",
+          "definition": "Předmět vyrobený nebo upravený tak, aby **klamal** o stáří, původu nebo autorovi.",
+          "example": "Nový porcelán s namalovanými míšeňskými meči."
+        },
+        {
+          "type": "term",
+          "term": "UV lampa",
+          "definition": "Lampa s ultrafialovým světlem. Různé materiály pod ním různě svítí (fluoreskují), takže se ukážou opravy a lepidla.",
+          "example": "Lepené místo na talíři pod UV svítí jinak než okolí."
+        },
+        {
+          "type": "term",
+          "term": "Otěr",
+          "definition": "Drobné škrábance a ohlazení vzniklé dlouhým používáním, hlavně na dně a na okrajích.",
+          "example": "Jemné nepravidelné škrábance na patce talíře."
+        },
+        {
+          "type": "term",
+          "term": "Glazura, retuš, rastr",
+          "definition": "**Glazura** je sklovitá lesklá vrstva na porcelánu. **Retuš** je dodatečně domalované místo, které zakrývá poškození. **Rastr** jsou pravidelné drobné body, ze kterých se skládá tištěný obraz.",
+          "example": "Na opraveném talíři je retuš přes lepenou prasklinu; obtisk má pod lupou rastr."
+        },
+        {
+          "type": "heading",
+          "text": "Postup prohlídky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Celkový dojem**: odpovídá tvar, dekor a materiál udávané době a výrobci?",
+            "**Značka**: porovnej ji s atlasem značek – barvu, tvar, umístění, provedení.",
+            "**Dno a otěr**: staré kusy mají nepravidelné škrábance na místech dotyku se stolem. Pravidelné rovnoběžné škrábance ukazují na umělé zestárnutí.",
+            "**Lupa**: ruční malba (tahy štětce) × tisk (rastr), ruční broušení × lisování.",
+            "**UV lampa**: opravy, retuše a lepidla obvykle svítí jinak než původní materiál.",
+            "**Závěr**: originál, originál s opravou, pozdější dekor, napodobenina, padělek."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Míšeňská figurka má na dně meče, ale pod UV lampou svítí jedna ruka a kus podstavce jinak než zbytek. Co to znamená?",
+          "answer": "Odlišně svítící místa ukazují na **opravu nebo retuš** – ruka a podstavec byly nejspíš ulomené a doplněné. Hodnota je nižší a oprava se musí uvést v popisu."
+        },
+        {
+          "type": "example",
+          "question": "Na dně „starého“ poháru jsou úplně rovnoběžné škrábance ve stejném směru a ostrá hrana dna. Co si myslíš?",
+          "answer": "Přirozený otěr je **nepravidelný**, škrábance jdou různými směry a hrany se ohladí. Rovnoběžné škrábance vznikají umělým zestárnutím, např. smirkovým papírem – podezřelé."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "svědčí pro pravost a stáří",
+              "podezřelé"
+            ],
+            "items": [
+              {
+                "text": "nepravidelné škrábance na patce",
+                "group": 0
+              },
+              {
+                "text": "značka odpovídá atlasu i provedením",
+                "group": 0
+              },
+              {
+                "text": "tahy štětce pod lupou",
+                "group": 0
+              },
+              {
+                "text": "rovnoběžné škrábance jedním směrem",
+                "group": 1
+              },
+              {
+                "text": "rastr tisku na „ručně malovaném“ kusu",
+                "group": 1
+              },
+              {
+                "text": "skvrna, která pod UV svítí jinak",
+                "group": 1
+              },
+              {
+                "text": "značka přes glazuru na kusu, kde má být pod ní",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "UV lampa jednoznačně určí padělek.",
+          "right": "UV lampa jen ukáže, že je někde jiný materiál (oprava, lepidlo, retuš, pozdější dekor). Výsledek je třeba vyložit spolu s dalšími stopami.",
+          "why": "Reakce pod UV závisí na mnoha látkách. Některé moderní opravy jsou navíc dělané tak, aby se pod UV skryly."
+        },
+        {
+          "type": "summary",
+          "text": "Pravost posuzuj postupně: celkový dojem, značka podle atlasu, otěr na dně, lupa (ruční malba × tisk), UV lampa (opravy, lepidla). Přirozený otěr je nepravidelný. Jeden znak nestačí, rozhoduje souhrn."
+        }
+      ]
+    },
+    {
+      "title": "Typické podvody",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Padělatelé porcelánu a skla používají pořád stejné triky. Kdo je zná, nenaletí. Projdeme si ty nejčastější a ukážeme, jak je odhalit."
+        },
+        {
+          "type": "text",
+          "text": "Ne každá nepravost je podvod. Někdy jde o poctivou kopii nebo dodatečný dekor, který jen někdo později vydává za něco jiného."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Značka",
+          "definition": "Znak výrobce na dně: malovaný, vtisknutý nebo tištěný; pod glazurou nebo na ní. Glazura je sklovitá lesklá vrstva porcelánu.",
+          "example": "Modré meče pod glazurou na míšeňském porcelánu."
+        },
+        {
+          "type": "term",
+          "term": "Pozdější dekor",
+          "definition": "Malba nebo zlacení přidané na starý bílý porcelán později, často jinou dílnou než výrobcem.",
+          "example": "Bílý talíř ze 19. století pomalovaný ve 20. století."
+        },
+        {
+          "type": "term",
+          "term": "Napodobenina a kopie",
+          "definition": "Výrobek napodobující slavný vzor. Není podvod, pokud se nevydává za originál.",
+          "example": "Kopie míšeňských figurek z 19. století od pařížské firmy Samson."
+        },
+        {
+          "type": "term",
+          "term": "Pontil",
+          "definition": "Tyč, na které se foukané sklo dokončuje. Po odlomení zůstane na dně jizva.",
+          "example": "Drsný kroužek na dně ručně foukané karafy."
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější triky a jak je odhalit"
+        },
+        {
+          "type": "table",
+          "head": [
+            "trik",
+            "jak odhalit"
+          ],
+          "rows": [
+            [
+              "falešná značka slavné manufaktury",
+              "srovnání s atlasem: barva, tah, umístění; kvalita hmoty a malby"
+            ],
+            [
+              "pozdější dekor na starém bílém porcelánu",
+              "styl malby neodpovídá době značky; malba přes vady glazury; jiný otěr malby a dna"
+            ],
+            [
+              "odbroušená nebo zamaskovaná značka",
+              "vybroušené místo na dně, přelakované místo"
+            ],
+            [
+              "umělý otěr",
+              "pravidelné rovnoběžné škrábance"
+            ],
+            [
+              "dodatečně vyrytá signatura na skle",
+              "čerstvé ostré rýhy bez otěru, tah neodpovídá"
+            ],
+            [
+              "lisované sklo vydávané za broušené",
+              "zaoblené hrany, švy po formě"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zvláštní případy"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Míšeň označovala zboží nižší jakosti **rýhou vybroušenou přes meče**. Pozor na kusy, kde někdo rýhu zamaskoval.",
+            "Pařížská firma **Samson** v 19. století vyráběla kopie slavného porcelánu s vlastními značkami, které se někdy později odstraňovaly.",
+            "Na starém skle hledej **jizvu po pontilu**, bublinky a nepravidelnosti ruční výroby – ale ani ty samy o stáří nerozhodnou, ručně se fouká dodnes."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Talíř má na dně značku porcelánky z let 1890–1910, ale malba je ve stylu 60. let 20. století a leží i přes drobnou vadu glazury. Co to je?",
+          "answer": "Pravděpodobně **pozdější dekor**: bílý talíř z doby kolem 1900 byl pomalován mnohem později. Značka je pravá, ale dekor ne z doby značky. V popisu se musí uvést."
+        },
+        {
+          "type": "example",
+          "question": "Lötzova váza má rytou signaturu s ostrými čerstvými hranami, zatímco zbytek dna je otřený. Co z toho plyne?",
+          "answer": "Signatura je nejspíš **dodatečná**. Stará rytina by byla stejně otřená jako okolní dno. Vázu je třeba posoudit podle skla a dekoru, ne podle podpisu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kopie firmy Samson jsou bezcenné padělky.",
+          "right": "Samsonovy kopie jsou samy o sobě sběratelsky ceněné předměty 19. století. Problém nastává, až když se vydávají za originál Míšně nebo jiné manufaktury.",
+          "why": "Kopie s vlastní značkou není podvod. Podvodem je až klam při prodeji."
+        },
+        {
+          "type": "summary",
+          "text": "Nejčastější triky: falešné značky, pozdější dekor na starém bílém porcelánu, odbroušené značky, umělý otěr, dodatečné signatury na skle a lisované sklo místo broušeného. Kopie není podvod, podvodem je klam o původu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co obvykle ukáže UV lampa na porcelánu?",
+      "options": [
+        "opravy, retuše a lepidla",
+        "přesný rok výroby",
+        "jméno malíře",
+        "teplotu výpalu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Přirozený otěr na dně je nepravidelný, škrábance jdou různými směry.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co znamenají rovnoběžné škrábance jedním směrem na dně?",
+      "options": [
+        "pravděpodobně umělé zestárnutí",
+        "dlouhé používání",
+        "výrobní vadu",
+        "značku výrobce"
+      ],
+      "answer": 0,
+      "hints": [
+        "Jak by vypadaly škrábance od posouvání po stole za sto let?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj trik s tím, jak ho odhalit.",
+      "pairs": [
+        [
+          "pozdější dekor",
+          "styl malby neodpovídá době značky"
+        ],
+        [
+          "umělý otěr",
+          "pravidelné rovnoběžné škrábance"
+        ],
+        [
+          "dodatečná signatura",
+          "čerstvé ostré rýhy bez otěru"
+        ],
+        [
+          "lisované místo broušeného",
+          "zaoblené hrany a švy"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenovala pařížská firma, která v 19. století vyráběla kopie slavného porcelánu? (jméno)",
+      "answers": [
+        "Samson",
+        "Samson & Cie",
+        "Samson a spol."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "UV lampa sama jednoznačně určí padělek.",
+      "answer": false,
+      "explanation": "Ukáže jen odlišný materiál, výsledek se musí vyložit s dalšími stopami."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky prohlídky.",
+      "items": [
+        "celkový dojem",
+        "značka podle atlasu",
+        "dno a otěr",
+        "lupa",
+        "UV lampa",
+        "závěr"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je pozdější dekor?",
+      "options": [
+        "malba přidaná na starý bílý porcelán později",
+        "dekor pod glazurou",
+        "obtisk z doby výroby",
+        "značka výrobce"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Signatura na skle má ostré čerstvé rýhy, dno je otřené. Co z toho plyne?",
+      "options": [
+        "signatura je nejspíš dodatečná",
+        "sklo je určitě pravé",
+        "sklo je lisované",
+        "sklo je porcelán"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Kopie prodávaná jako kopie není podvod.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje lampa, pod jejímž světlem se ukážou opravy a lepidla? (zkratka nebo slovo)",
+      "answers": [
+        "UV",
+        "UV lampa",
+        "ultrafialová",
+        "ultrafialova"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Pod lupou vidíš na „ručně malovaném“ šálku pravidelné tečky. Co to znamená?",
+      "options": [
+        "jde o tisk nebo obtisk",
+        "je to ruční malba",
+        "je to podglazurní kobalt",
+        "je to otěr"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak postupuješ při posouzení pravosti porcelánového předmětu?",
+      "answer": "Posoudím celkový dojem, porovnám značku s atlasem, prohlédnu otěr na dně, lupou zkontroluji malbu a pod UV lampou hledám opravy a lepidla. Závěr dělám ze souhrnu stop."
+    },
+    {
+      "type": "open",
+      "question": "Jaké jsou nejčastější triky padělatelů porcelánu a skla?",
+      "answer": "Falešné značky slavných manufaktur, pozdější dekor na starém bílém porcelánu, odbroušené nebo zamaskované značky, umělý otěr, dodatečně vyryté signatury na skle a lisované sklo vydávané za broušené."
+    }
+  ]
+}

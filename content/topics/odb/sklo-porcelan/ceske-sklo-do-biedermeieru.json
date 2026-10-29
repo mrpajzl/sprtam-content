@@ -1,0 +1,431 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ceske-sklo-do-biedermeieru",
+  "title": "České sklo od renesance po biedermeier",
+  "emoji": "🍷",
+  "explanations": [
+    {
+      "title": "Na časové ose",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "„Bohemian glass“ – české sklo – je pojem po celém světě. V 18. století se české broušené a ryté sklo prodávalo od Lisabonu po Moskvu a do zámoří. Jak se k té slávě došlo?"
+        },
+        {
+          "type": "text",
+          "text": "Starožitník potřebuje znát hlavní období, techniky a osobnosti, aby uměl sklo zařadit a ocenit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Lesní sklo",
+          "definition": "Středověké a raně novověké sklo z lesních hutí, tavené s potaší z popela dřeva. Bývá nazelenalé kvůli železu v surovinách.",
+          "example": "Zelenavá číše s nálepy (přilepenými kapkami skla)."
+        },
+        {
+          "type": "term",
+          "term": "Český křišťál",
+          "definition": "Čiré, tvrdé **draselnovápenaté** sklo (bez olova) vyvinuté v Čechách koncem 17. století. Výborně se brousí a ryje.",
+          "example": "Barokní rytý pohár s víčkem."
+        },
+        {
+          "type": "term",
+          "term": "Rytí",
+          "definition": "Zdobení skla malými měděnými kolečky s brusivem, vytváří matné obrazy.",
+          "example": "Rytá krajina na poháru."
+        },
+        {
+          "type": "term",
+          "term": "Hyalit a lithyalín",
+          "definition": "Neprůhledná barevná skla doby biedermeieru. **Hyalit** (černé nebo červené, panství Buquoyů v Nových Hradech), **lithyalín** (mramorované, podobné polodrahokamům, Friedrich Egermann).",
+          "example": "Lithyalínový pohárek vypadá jako z achátu."
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní období"
+        },
+        {
+          "type": "widget",
+          "widget": "timeline",
+          "props": {
+            "events": [
+              {
+                "year": 1590,
+                "label": "Renesance: **malované smalty**, poháry s orlicí"
+              },
+              {
+                "year": 1609,
+                "label": "Caspar Lehmann dostává privilegium na rytí skla"
+              },
+              {
+                "year": 1690,
+                "label": "Vzniká **český křišťál**"
+              },
+              {
+                "year": 1730,
+                "label": "Vrchol barokního rytého skla"
+              },
+              {
+                "year": 1820,
+                "label": "Biedermeier: **lazury**, hyalit, lithyalín"
+              },
+              {
+                "year": 1835,
+                "label": "Lázeňské rytiny, portréty"
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Co je pro období typické"
+        },
+        {
+          "type": "table",
+          "head": [
+            "období",
+            "typické sklo",
+            "znaky"
+          ],
+          "rows": [
+            [
+              "renesance (16.–17. st.)",
+              "malované poháry",
+              "smalty: erby, orlice, cechovní výjevy"
+            ],
+            [
+              "baroko (asi 1690–1770)",
+              "rytý a broušený křišťál",
+              "čiré tvrdé sklo, rytiny krajin, erbů, alegorií"
+            ],
+            [
+              "biedermeier (1815–1848)",
+              "barevné sklo",
+              "lazury, hyalit, lithyalín, uranové sklo, lázeňské poháry"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Čirý tvrdý pohár bez olova, s víčkem a hustou rytinou krajiny a erbu. Kam ho zařadíš?",
+          "answer": "Čiré tvrdé draselnovápenaté sklo s rytinou je typické pro **barokní český křišťál**, asi 1700–1770."
+        },
+        {
+          "type": "example",
+          "question": "Neprůhledný pohárek vypadá jako z mramorovaného kamene, s lesklými barevnými žilkami a zlacením. Odkud a kdy?",
+          "answer": "Mramorované neprůhledné sklo napodobující kámen je **lithyalín** Friedricha Egermanna, doba **biedermeieru** (vynalezen koncem 20. let 19. století)."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "renesance",
+              "baroko",
+              "biedermeier"
+            ],
+            "items": [
+              {
+                "text": "pohár s malovanou orlicí",
+                "group": 0
+              },
+              {
+                "text": "smaltové erby cechů",
+                "group": 0
+              },
+              {
+                "text": "čirý rytý pohár s víčkem",
+                "group": 1
+              },
+              {
+                "text": "český křišťál",
+                "group": 1
+              },
+              {
+                "text": "lithyalín",
+                "group": 2
+              },
+              {
+                "text": "hyalit",
+                "group": 2
+              },
+              {
+                "text": "lázeňský pohár s portrétem",
+                "group": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Český křišťál obsahuje olovo.",
+          "right": "Barokní český křišťál je **draselnovápenatý**, bez olova. Olovnatý křišťál je anglický vynález (George Ravenscroft, 70. léta 17. století).",
+          "why": "Slovo „křišťál“ se používá pro obojí, ale jde o jiné složení a jiné vlastnosti."
+        },
+        {
+          "type": "summary",
+          "text": "Renesance: malované poháry se smalty. Baroko: český křišťál (draselnovápenatý, bez olova), rytí a broušení, světový vývoz. Biedermeier: barevné sklo – lazury, hyalit (Buquoy), lithyalín (Egermann), lázeňské poháry."
+        }
+      ]
+    },
+    {
+      "title": "Lidé a dílny",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Za slávou českého skla stojí konkrétní lidé: dvorní rytec císaře Rudolfa II., sklářští obchodníci z Kamenického Šenova a vynálezci barevných skel z Polevska a Nových Hradů. Jejich jména na trhu zvyšují cenu."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme si příběh českého skla přes osobnosti a centra výroby."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Sklářský obchodník",
+          "definition": "Kupec, který sklo nakupoval od hutí a brusíren a vyvážel ho do ciziny. Měl obchodní sklady v mnoha evropských městech.",
+          "example": "Obchodníci z Kamenického Šenova a Nového Boru."
+        },
+        {
+          "type": "term",
+          "term": "Český křišťál",
+          "definition": "Čiré tvrdé draselnovápenaté sklo (bez olova) z konce 17. století.",
+          "example": "Barokní broušený pohár."
+        },
+        {
+          "type": "term",
+          "term": "Lazura",
+          "definition": "Tenká průhledná barevná vrstva na povrchu skla zapálená výpalem. Rytina v ní prosvítá čirým sklem.",
+          "example": "Žlutá lazura s rytým jelenem."
+        },
+        {
+          "type": "term",
+          "term": "Uranové sklo",
+          "definition": "Žlutozelené sklo barvené sloučeninami uranu, pod UV lampou zeleně svítí. V Čechách ho proslavil Josef Riedel ve 30. letech 19. století.",
+          "example": "Žlutozelená miska, která pod UV září."
+        },
+        {
+          "type": "heading",
+          "text": "Osobnosti a centra"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Caspar Lehmann** – rytec drahokamů na dvoře Rudolfa II. v Praze. Začal rýt sklo kolečkem a roku 1609 dostal na tuto techniku privilegium.",
+            "Koncem 17. století české huti vyvinuly **křišťál**. Rytci a brusiči ze severních Čech a Krkonoš tvořili poháry s krajinami, erby a alegoriemi.",
+            "**Kamenický Šenov a Nový Bor** – centra zušlechťování a obchodu. Obchodníci vyváželi sklo do celé Evropy i do zámoří. Šenov proslul i **lustry**.",
+            "**Friedrich Egermann** (Polevsko, Nový Bor) – v biedermeieru vynalezl **žlutou lazuru** a **lithyalín**.",
+            "Na panství hraběte **Buquoye** v Nových Hradech vznikl **hyalit** – černé a červené neprůhledné sklo.",
+            "**Lázeňské rytiny**: rytci ryli portréty lázeňských hostů; nejslavnější byl **Dominik Biman**, který v létě pracoval ve Františkových Lázních."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Žlutý pohár má na povrchu tenkou žlutou vrstvu, rytý jelen v ní prosvítá čirým sklem. Kdo stál u vynálezu techniky?",
+          "answer": "Jde o **žlutou lazuru**, kterou v biedermeieru vynalezl **Friedrich Egermann**. Rytina v lazuře je typická pro severočeské sklo této doby."
+        },
+        {
+          "type": "example",
+          "question": "Na rytém poháru je jemný portrét pána a nápis lázní. Kdy a kde mohl vzniknout?",
+          "answer": "Portrétní rytiny lázeňských hostů jsou typické pro **biedermeier** v západočeských lázních. Mistrem portrétu byl Dominik Biman. Připsání konkrétnímu rytci ale vyžaduje porovnání se signovanými díly."
+        },
+        {
+          "type": "heading",
+          "text": "Vyzkoušej si to"
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Caspar Lehmann",
+                "back": "rytí skla kolečkem, Praha, privilegium 1609"
+              },
+              {
+                "front": "Friedrich Egermann",
+                "back": "žlutá lazura a lithyalín"
+              },
+              {
+                "front": "Buquoy, Nové Hrady",
+                "back": "hyalit"
+              },
+              {
+                "front": "Josef Riedel",
+                "back": "uranové sklo"
+              },
+              {
+                "front": "Dominik Biman",
+                "back": "lázeňské portrétní rytiny"
+              }
+            ]
+          }
+        },
+        {
+          "type": "mistake",
+          "wrong": "Každý rytý lázeňský pohár je od Bimana.",
+          "right": "Lázeňské poháry rylo mnoho rytců. Připsání slavnému jménu se musí doložit signaturou nebo srovnáním s ověřenými díly.",
+          "why": "Slavné jméno výrazně zvyšuje cenu, proto se připisuje příliš snadno."
+        },
+        {
+          "type": "summary",
+          "text": "Caspar Lehmann začal v Praze rýt sklo (privilegium 1609). Barokní český křišťál vyvážely obchodníci z Kamenického Šenova a Nového Boru po celém světě. V biedermeieru vznikla barevná skla: lazury a lithyalín (Egermann), hyalit (Buquoy), uranové sklo (Riedel), lázeňské portréty (Biman)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaké složení měl barokní český křišťál?",
+      "options": [
+        "draselnovápenaté, bez olova",
+        "olovnaté",
+        "sodnovápenaté s uranem",
+        "boritokřemičité"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobnost s přínosem.",
+      "pairs": [
+        [
+          "Caspar Lehmann",
+          "rytí skla kolečkem"
+        ],
+        [
+          "Friedrich Egermann",
+          "lithyalín a žlutá lazura"
+        ],
+        [
+          "Josef Riedel",
+          "uranové sklo"
+        ],
+        [
+          "Dominik Biman",
+          "lázeňské portréty"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ve kterém roce dostal Caspar Lehmann privilegium na rytí skla? (rok)",
+      "answers": [
+        "1609"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hyalit vznikl na panství hraběte Buquoye v Nových Hradech.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď období a jevy od nejstaršího.",
+      "items": [
+        "renesanční malované poháry",
+        "Lehmannovo privilegium",
+        "český křišťál",
+        "biedermeierovské lazury"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které město proslulo obchodem se sklem a lustry?",
+      "options": [
+        "Kamenický Šenov",
+        "Slavkov",
+        "Koryčany",
+        "Loket"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Lithyalín je čiré bezbarvé sklo.",
+      "answer": false,
+      "explanation": "Lithyalín je neprůhledné mramorované sklo napodobující polodrahokamy."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je středověké lesní sklo často nazelenalé?",
+      "options": [
+        "kvůli železu v surovinách",
+        "kvůli uranu",
+        "kvůli olovu",
+        "kvůli zlatu"
+      ],
+      "answer": 0,
+      "hints": [
+        "Barvu dávají sklu kovy.",
+        "Který kov je v obyčejném písku a hlíně skoro vždy?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Pro které období jsou typické barevné lazury, hyalit a lithyalín?",
+      "options": [
+        "biedermeier",
+        "renesance",
+        "gotika",
+        "secese"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje barevné sklo, které pod UV lampou zeleně svítí? (jedno slovo)",
+      "answers": [
+        "uranové",
+        "uranove",
+        "uranové sklo"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Olovnatý křišťál vynalezl v Anglii George Ravenscroft.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Na čem pracoval Caspar Lehmann, než začal rýt sklo?",
+      "options": [
+        "rytí drahokamů",
+        "tavení skla",
+        "malba porcelánu",
+        "výroba nábytku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Čím proslulo české barokní sklo?",
+      "answer": "Čirým tvrdým draselnovápenatým křišťálem, který se výborně brousil a ryl. Rytiny krajin, erbů a alegorií a obchodníci ze severních Čech ho vyváželi po celé Evropě i do zámoří."
+    },
+    {
+      "type": "open",
+      "question": "Jmenuj tři druhy barevného skla doby biedermeieru a jejich původ.",
+      "answer": "Lithyalín – mramorované sklo Friedricha Egermanna. Hyalit – černé a červené neprůhledné sklo z buquoyských hutí v Nových Hradech. Uranové sklo – žlutozelené, v Čechách proslavené Josefem Riedelem. Dále lazury, např. Egermannova žlutá."
+    }
+  ]
+}
