@@ -447,6 +447,60 @@
       "type": "open",
       "question": "Uveď tři výhody databázového systému oproti ukládání dat do obyčejných souborů.",
       "answer": "Odstraňuje redundanci a tím i nekonzistenci, hlídá integritu dat, řídí souběžný přístup více uživatelů, nastavuje oprávnění a umí transakce, zálohy a obnovu."
+    },
+    {
+      "type": "choice",
+      "question": "Který databázový model ukládá data jako strom, kde má každý záznam rodiče a potomky?",
+      "options": [
+        "síťový",
+        "relační",
+        "hierarchický",
+        "grafový"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Sociální síť chce rychle hledat „přátele přátel“. Který model se pro to hodí nejvíc?",
+      "options": [
+        "klíč–hodnota",
+        "grafový",
+        "hierarchický"
+      ],
+      "answer": 1,
+      "explanation": "Lidé jsou uzly, přátelství hrany; procházení vazeb je v grafové databázi přirozené."
+    },
+    {
+      "type": "choice",
+      "question": "Co z toho je informace, ne jen data?",
+      "options": [
+        "„2008-05-14“",
+        "„Novák“",
+        "„Petr má teplotu 37,2 °C.“",
+        "„37,2“"
+      ],
+      "answer": 2,
+      "explanation": "Informace jsou data, u kterých víme, co znamenají."
+    },
+    {
+      "type": "truefalse",
+      "question": "SQL je databáze od firmy Microsoft.",
+      "answer": false,
+      "explanation": "SQL je standardizovaný jazyk; Microsoft SQL Server je jen jeden ze SŘBD, které ho používají."
+    },
+    {
+      "type": "truefalse",
+      "question": "V jednom SŘBD může běžet více databází.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Napiš českou zkratku pro systém řízení báze dat.",
+      "answers": [
+        "SŘBD",
+        "SRBD"
+      ],
+      "explanation": "Anglicky DBMS – Database Management System."
     }
   ]
 }

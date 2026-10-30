@@ -428,6 +428,66 @@
       "type": "open",
       "question": "K čemu je normalizace a jaké problémy řeší?",
       "answer": "Normalizace rozděluje tabulky tak, aby se údaje neopakovaly. Odstraňuje redundanci a tím aktualizační, vkládací a mazací anomálie, takže data si neodporují."
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka má sloupce `tel1`, `tel2`, `tel3`. Kterou normální formu porušuje?",
+      "options": [
+        "3NF",
+        "2NF",
+        "1NF"
+      ],
+      "answer": 2,
+      "explanation": "Opakující se sloupce porušují 1NF."
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka `zak(id_zaka, jmeno, id_tridy, tridni_ucitel)` má klíč `id_zaka` a platí `id_tridy → tridni_ucitel`. Kterou normální formu porušuje?",
+      "options": [
+        "3NF",
+        "1NF",
+        "2NF"
+      ],
+      "answer": 0,
+      "explanation": "id_zaka → id_tridy → tridni_ucitel je tranzitivní závislost.",
+      "hints": [
+        "Závisí třídní učitel přímo na žákovi, nebo přes jiný sloupec?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka `vypujcka(id_ctenare, id_knihy, jmeno_ctenare, nazev_knihy, datum_vraceni)` má klíč (id_ctenare, id_knihy). Který neklíčový sloupec v ní zůstane po převodu do 2NF?",
+      "options": [
+        "`jmeno_ctenare`",
+        "`datum_vraceni`",
+        "`nazev_knihy`"
+      ],
+      "answer": 1,
+      "explanation": "Jméno závisí jen na čtenáři, název jen na knize. Datum vrácení závisí na celém klíči.",
+      "hints": [
+        "Hledej sloupec, který závisí na čtenáři i na knize zároveň."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkční závislost `id_zbozi → cena` znamená, že číslo zboží jednoznačně určuje jeho cenu.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozdělení jména a příjmení do dvou různých tabulek zlepší normalizaci.",
+      "answer": false,
+      "explanation": "Dělí se jen podle závislostí; zbytečné tabulky jen zpomalí dotazy."
+    },
+    {
+      "type": "input",
+      "question": "Z kolika sloupců se skládá primární klíč tabulky `polozka(cislo_obj, id_zbozi, mnozstvi)`?",
+      "answers": [
+        "2",
+        "dva",
+        "dvou"
+      ],
+      "explanation": "Klíč tvoří dvojice (cislo_obj, id_zbozi)."
     }
   ]
 }

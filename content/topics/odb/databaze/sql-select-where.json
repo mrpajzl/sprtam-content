@@ -489,6 +489,70 @@
       "type": "open",
       "question": "Vysvětli rozdíl mezi zástupnými znaky `%` a `_` v `LIKE` na příkladu.",
       "answer": "`%` zastoupí libovolný počet znaků, i žádný: `'M%'` najde Malá i Mo. `_` zastoupí právě jeden znak: `'M_'` najde jen dvouznakové texty začínající M."
+    },
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT * FROM zaci WHERE trida <> '2.A' AND rok_narozeni = 2008;`?",
+      "answers": [
+        "1",
+        "jeden"
+      ],
+      "explanation": "Mimo 2.A je z roku 2008 jen Jana.",
+      "hints": [
+        "Nejdřív vyřaď 2.A, pak hledej rok 2008."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT jmeno FROM zaci WHERE trida IN ('2.A', '3.B');`?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ],
+      "explanation": "Eva, Petr, Jana a Tomáš."
+    },
+    {
+      "type": "input",
+      "question": "Tabulka zaci z výkladu. Kolik řádků vrátí `SELECT * FROM zaci WHERE (trida = '2.A' OR trida = '3.B') AND rok_narozeni = 2008;`?",
+      "answers": [
+        "2",
+        "dva"
+      ],
+      "explanation": "Petr (2.A, 2008) a Jana (3.B, 2008).",
+      "hints": [
+        "Závorka se vyhodnotí jako první."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka zaci z výkladu. Co vrátí `SELECT jmeno FROM zaci WHERE prijmeni = 'Malá' AND rok_narozeni > 2009;`?",
+      "options": [
+        "Eva",
+        "Eva, Lucie",
+        "Lucie",
+        "žádný řádek"
+      ],
+      "answer": 2,
+      "explanation": "Malé jsou Eva (2009) a Lucie (2010); víc než 2009 má jen Lucie."
+    },
+    {
+      "type": "choice",
+      "question": "Který vzor najde příjmení, která mají přesně 4 znaky a začínají na M?",
+      "options": [
+        "`LIKE 'M%'`",
+        "`LIKE 'M___'`",
+        "`LIKE 'M_'`",
+        "`LIKE '%M'`"
+      ],
+      "answer": 1,
+      "explanation": "Každé `_` zastoupí právě jeden znak: M + 3 znaky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve `WHERE` můžeš použít alias, který jsi vytvořil pomocí `AS` v `SELECT`.",
+      "answer": false,
+      "explanation": "`WHERE` se vyhodnocuje před `SELECT`, alias v tu chvíli ještě neexistuje."
     }
   ]
 }

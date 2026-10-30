@@ -465,6 +465,61 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi DDL a DML? Uveď příkazy.",
       "answer": "DDL definuje strukturu databáze: CREATE, ALTER, DROP. DML pracuje s daty uloženými v tabulkách: SELECT, INSERT, UPDATE, DELETE."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký datový typ je nejvhodnější pro dvoupísmenný kód státu, např. „CZ“?",
+      "options": [
+        "`INT`",
+        "`DATE`",
+        "`CHAR(2)`",
+        "`DECIMAL(2, 0)`"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "Sloupec má typ `DECIMAL(8, 2)`. Kolik číslic smí mít číslo před desetinnou čárkou?",
+      "answers": [
+        "6",
+        "šest",
+        "sest"
+      ],
+      "explanation": "Celkem 8 číslic, z toho 2 za čárkou: 8 − 2 = 6.",
+      "hints": [
+        "První číslo je počet všech číslic."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane se žáky při smazání jejich třídy, je-li cizí klíč `ON DELETE SET NULL`?",
+      "options": [
+        "smažou se taky",
+        "smazání se odmítne",
+        "přesunou se do jiné třídy",
+        "jejich `id_tridy` bude NULL"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "truefalse",
+      "question": "Po `ALTER TABLE zaci ADD telefon VARCHAR(20);` budou mít existující žáci v novém sloupci NULL.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Tabulka `zbozi` má 12 řádků. Kolik řádků v ní zůstane po `DELETE FROM zbozi;`?",
+      "answers": [
+        "0",
+        "nula"
+      ],
+      "explanation": "Bez WHERE se smažou všechny řádky, tabulka zůstane prázdná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příkaz `INSERT INTO zaci (id, jmeno, id_tridy) VALUES (7, 'Bára', 1), (8, 'Ondřej', 2);` vloží dva řádky.",
+      "answer": true,
+      "explanation": "Každá závorka za VALUES je jeden řádek."
     }
   ]
 }

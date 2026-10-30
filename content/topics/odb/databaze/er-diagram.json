@@ -442,6 +442,62 @@
       "type": "open",
       "question": "Co je kardinalita vztahu a jaké druhy znáš?",
       "answer": "Kardinalita říká, kolik entit jedné strany může být ve vztahu s kolika entitami druhé strany. Druhy jsou 1:1, 1:N a M:N."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou značkou se v Chenově ER diagramu kreslí atribut?",
+      "options": [
+        "obdélník",
+        "kosočtverec",
+        "ovál",
+        "čára"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "Vztah Zákazník – Objednávka je 1:N. Jak se podle výkladu jmenuje sloupec cizího klíče v tabulce `objednavka`?",
+      "answers": [
+        "id_zakaznika"
+      ],
+      "hints": [
+        "Cizí klíč odkazuje na primární klíč tabulky zákazníků."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "ER diagram má entitní typy Třída, Žák a Kroužek. Třída – Žák je 1:N, Žák – Kroužek je M:N. Kolik tabulek vznikne?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ],
+      "explanation": "Tři tabulky entit a jedna vazební tabulka pro vztah M:N.",
+      "hints": [
+        "Vztah 1:N novou tabulku nepotřebuje."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V notaci vraní nohy znamená rozvětvená „noha“ na konci čáry „mnoho“.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co je primárním klíčem vazební tabulky `zak_krouzek(id_zaka, id_krouzku, datum_prihlaseni)`?",
+      "options": [
+        "`datum_prihlaseni`",
+        "jen `id_zaka`",
+        "jen `id_krouzku`",
+        "dvojice (`id_zaka`, `id_krouzku`)"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "truefalse",
+      "question": "Vztah 1:1 se při převodu do tabulek vždy řeší vazební tabulkou.",
+      "answer": false,
+      "explanation": "U 1:1 stačí cizí klíč v jedné z tabulek, případně se tabulky sloučí. Vazební tabulka je pro M:N."
     }
   ]
 }

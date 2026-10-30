@@ -376,6 +376,58 @@
       "type": "open",
       "question": "Proč by se aplikace neměla připojovat k databázi účtem správce (root)?",
       "answer": "Porušuje to princip nejmenších oprávnění. Když útočník aplikaci zneužije, získá všechna práva a může smazat nebo ukrást všechna data na serveru. Aplikace má mít účet jen s oprávněními, která nutně potřebuje."
+    },
+    {
+      "type": "input",
+      "question": "Doplň slovo: `REVOKE UPDATE ON znamky ___ ucitel;`",
+      "answers": [
+        "FROM"
+      ],
+      "explanation": "GRANT … TO, REVOKE … FROM."
+    },
+    {
+      "type": "choice",
+      "question": "Pod které nařízení EU spadají databáze s osobními údaji žáků?",
+      "options": [
+        "ACID",
+        "GDPR",
+        "DCL",
+        "TLS"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Z uloženého hashe hesla se dá snadno spočítat původní heslo.",
+      "answer": false,
+      "explanation": "Hash je jednosměrný otisk; zpátky to prakticky nejde."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se uživateli nemají vypisovat chybové hlášky databáze?",
+      "options": [
+        "zpomalují aplikaci",
+        "jsou v angličtině",
+        "prozrazují strukturu databáze",
+        "smažou transakční log"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Validace vstupu je užitečný doplněk, ale sama proti SQL injection nestačí.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč nestačí jako obrana proti SQL injection odstranit ze vstupu apostrofy?",
+      "options": [
+        "apostrofy SŘBD stejně ignoruje",
+        "bez apostrofů nejde dotaz vůbec spustit",
+        "odstranění apostrofů je příliš pomalé",
+        "číselné parametry apostrofy nepotřebují, např. `id = 15 OR 1=1`"
+      ],
+      "answer": 3
     }
   ]
 }

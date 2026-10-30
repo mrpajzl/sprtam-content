@@ -459,6 +459,61 @@
       "type": "open",
       "question": "Vysvětli rozdíl mezi primárním a cizím klíčem na příkladu.",
       "answer": "Primární klíč jednoznačně určuje řádek ve vlastní tabulce, třeba `id_zaka` v tabulce žáků. Cizí klíč je atribut v jiné tabulce, který na tento primární klíč odkazuje, třeba `id_zaka` v tabulce známek, a tím tabulky propojuje."
+    },
+    {
+      "type": "choice",
+      "question": "Které pravidlo poruší dva řádky tabulky se stejnou hodnotou primárního klíče?",
+      "options": [
+        "referenční integritu",
+        "doménovou integritu",
+        "entitní integritu"
+      ],
+      "answer": 2,
+      "explanation": "Entitní integrita hlídá, že primární klíč je jedinečný a není NULL."
+    },
+    {
+      "type": "choice",
+      "question": "Známka smí být celé číslo 1 až 5. Které pravidlo poruší známka 7?",
+      "options": [
+        "entitní integritu",
+        "doménovou integritu",
+        "referenční integritu"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Proč není příjmení vhodný primární klíč tabulky žáků?",
+      "options": [
+        "je příliš krátké",
+        "opakuje se a může se změnit",
+        "nedá se podle něj řadit",
+        "obsahuje diakritiku"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu (řádky 101, 102, 103). Kolik známek v ní má žákyně s `id_zaka` = 1?",
+      "answers": [
+        "2",
+        "dvě"
+      ],
+      "explanation": "Řádky 101 a 102 mají id_zaka 1.",
+      "hints": [
+        "Spočítej řádky, kde je ve sloupci id_zaka jednička."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle referenční integrity smí být cizí klíč NULL, nebo musí odkazovat na existující řádek.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Přirozený klíč je číslo, které databáze vytvoří automaticky (1, 2, 3…).",
+      "answer": false,
+      "explanation": "To je umělý klíč. Přirozený klíč existuje i mimo databázi, např. ISBN."
     }
   ]
 }

@@ -486,6 +486,65 @@
       "type": "open",
       "question": "Vysvětli rozdíl mezi `WHERE` a `HAVING`.",
       "answer": "`WHERE` filtruje jednotlivé řádky ještě před seskupením a nesmí obsahovat agregační funkce. `HAVING` filtruje celé skupiny vytvořené pomocí `GROUP BY` a agregační funkce obsahovat smí."
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Co vrátí `SELECT MAX(znamka) FROM znamky WHERE predmet = 'ČJ';`?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Známky z ČJ jsou 2, 4 a 1.",
+      "hints": [
+        "Vyber jen řádky češtiny."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Co vrátí `SELECT COUNT(*) FROM znamky WHERE id_zaka = 2;`?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Žák 2 má známky 3, 4 a 5."
+    },
+    {
+      "type": "input",
+      "question": "Tabulka znamky z výkladu. Kolik řádků vrátí `SELECT id_zaka FROM znamky GROUP BY id_zaka HAVING COUNT(*) >= 2;`?",
+      "answers": [
+        "2",
+        "dva"
+      ],
+      "explanation": "Aspoň dvě známky má žák 1 (2 známky) a žák 2 (3 známky).",
+      "hints": [
+        "Spočítej známky pro každého žáka zvlášť."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se seřadí výsledek, když za `ORDER BY prijmeni` nenapíšeš `ASC` ani `DESC`?",
+      "options": [
+        "sestupně",
+        "vzestupně",
+        "náhodně"
+      ],
+      "answer": 1,
+      "explanation": "`ASC` (vzestupně) je výchozí."
+    },
+    {
+      "type": "truefalse",
+      "question": "`COUNT(*)` započítá i řádky, ve kterých jsou některé hodnoty NULL.",
+      "answer": true,
+      "explanation": "`COUNT(*)` počítá řádky; NULL vynechává až `COUNT(sloupec)`."
+    },
+    {
+      "type": "choice",
+      "question": "Který dotaz je zapsaný správně?",
+      "options": [
+        "`SELECT predmet, id_zaka, AVG(znamka) FROM znamky GROUP BY predmet;`",
+        "`SELECT predmet, AVG(znamka) FROM znamky GROUP BY predmet;`",
+        "`SELECT predmet FROM znamky WHERE AVG(znamka) > 2;`"
+      ],
+      "answer": 1,
+      "explanation": "V `SELECT` smí být jen seskupované sloupce a agregace; agregace nepatří do `WHERE`."
     }
   ]
 }

@@ -438,6 +438,61 @@
       "type": "open",
       "question": "Vysvětli vlastnosti ACID na příkladu převodu peněz mezi účty.",
       "answer": "Atomicita: převod se provede celý, nebo vůbec, peníze nezmizí. Konzistence: po převodu platí všechna pravidla, celkový součet peněz se nezmění. Izolovanost: souběžné převody se navzájem nepřepíší. Trvalost: po potvrzení převod přežije i havárii."
+    },
+    {
+      "type": "choice",
+      "question": "Který příkaz zruší nepotvrzenou transakci?",
+      "options": [
+        "`COMMIT`",
+        "`START TRANSACTION`",
+        "`ROLLBACK`"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost ACID brání ztracené aktualizaci při souběžných transakcích?",
+      "options": [
+        "atomicita",
+        "izolovanost",
+        "trvalost",
+        "konzistence"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost ACID zaručuje, že transakce převede databázi z platného stavu do platného (např. zůstatek nepůjde pod limit)?",
+      "options": [
+        "trvalost",
+        "atomicita",
+        "izolovanost",
+        "konzistence"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "truefalse",
+      "question": "SŘBD zapisuje změny do transakčního logu dřív, než je provede v tabulkách.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Index se vyplatí hlavně u malých tabulek s několika řádky.",
+      "answer": false,
+      "explanation": "U malých tabulek index nemá smysl; pomáhá u velkých tabulek."
+    },
+    {
+      "type": "input",
+      "question": "Účet A má 2 000 Kč. Při převodu 300 Kč na účet B dojde po odečtení k chybě a aplikace zavolá `ROLLBACK`. Jaký zůstatek v Kč bude mít účet A?",
+      "answers": [
+        "2000",
+        "2 000"
+      ],
+      "explanation": "ROLLBACK vrátí i odečtení, účet A má původní zůstatek.",
+      "hints": [
+        "Co ROLLBACK udělá se změnami od začátku transakce?"
+      ]
     }
   ]
 }
