@@ -376,6 +376,100 @@
       "type": "open",
       "question": "Jaké důsledky má stárnutí populace?",
       "answer": "Klesá podíl pracujících, rostou výdaje na důchody a zdravotní péči, chybí pracovní síla. Řešení: pozdější odchod do důchodu, podpora rodin, imigrace, automatizace."
+    },
+    {
+      "type": "truefalse",
+      "question": "V 1. fázi demografického přechodu roste populace nejrychleji.",
+      "answer": false,
+      "explanation": "V 1. fázi je vysoká porodnost i úmrtnost, takže populace skoro neroste. Nejrychleji roste ve 2. fázi."
+    },
+    {
+      "type": "input",
+      "question": "Porodnost 9 ‰, úmrtnost 12 ‰. Přirozený přírůstek v ‰ =",
+      "answers": [
+        "-3",
+        "−3"
+      ],
+      "explanation": "9 − 12 = −3 ‰. Populace přirozenou měnou ubývá.",
+      "hints": [
+        "Přirozený přírůstek = porodnost − úmrtnost.",
+        "Úmrtnost je vyšší než porodnost, výsledek bude záporný."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ve městě s 50 000 obyvateli se za rok živě narodilo 500 dětí. Porodnost v ‰ =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "500 : 50 = 10, tedy 10 narozených na každých 1 000 obyvatel = 10 ‰.",
+      "hints": [
+        "Porodnost udává počet narozených na 1 000 obyvatel.",
+        "Kolikrát se 1 000 vejde do 50 000?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč ve 3. fázi demografického přechodu klesá porodnost?",
+      "options": [
+        "zhoršuje se hygiena",
+        "roste dětská úmrtnost",
+        "lidé žijí ve městech, ženy se vzdělávají a je dostupná antikoncepce",
+        "ubývá potravin"
+      ],
+      "answer": 2,
+      "explanation": "S urbanizací a vzděláním žen děti už nejsou potřeba jako pracovní síla a rodiny plánují méně dětí."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je přibližně naděje dožití v Česku?",
+      "options": [
+        "asi 65 let",
+        "asi 79 let",
+        "asi 90 let"
+      ],
+      "answer": 1,
+      "explanation": "Právě narozené dítě v Česku se průměrně dožije asi 79 let."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je přibližně úhrnná plodnost v Nigeru?",
+      "options": [
+        "asi 1,4",
+        "asi 2,1",
+        "asi 6",
+        "asi 10"
+      ],
+      "answer": 2,
+      "explanation": "Ženy v Nigeru mají v průměru asi 6 dětí – země je ve 2. až 3. fázi přechodu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Japonsko má regresivní věkovou pyramidu ve tvaru urny.",
+      "answer": true,
+      "explanation": "Japonsko má málo dětí a hodně starých lidí – základna pyramidy je užší než její střed."
+    },
+    {
+      "type": "match",
+      "question": "Spoj ukazatel a jeho význam.",
+      "pairs": [
+        [
+          "porodnost",
+          "narození na 1 000 obyv. za rok"
+        ],
+        [
+          "úhrnná plodnost",
+          "průměrný počet dětí na ženu"
+        ],
+        [
+          "naděje dožití",
+          "očekávaný věk při narození"
+        ],
+        [
+          "přirozený přírůstek",
+          "porodnost − úmrtnost"
+        ]
+      ]
     }
   ]
 }

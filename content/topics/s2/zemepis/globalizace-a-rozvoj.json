@@ -397,6 +397,95 @@
       "type": "open",
       "question": "Proč je HDI lepším ukazatelem rozvoje než samotné HDP?",
       "answer": "HDP měří jen ekonomický výkon. HDI zahrnuje i zdraví (naději dožití) a vzdělání, takže lépe ukazuje kvalitu života."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se HDP na obyvatele přepočítává podle parity kupní síly (PPP)?",
+      "options": [
+        "aby se do něj započetla nerovnost příjmů",
+        "aby se k němu přičetla naděje dožití",
+        "aby se zohlednilo, že v některých zemích je všechno levnější"
+      ],
+      "answer": 2,
+      "explanation": "Za stejnou částku koupíš v levnější zemi víc. PPP to vyrovná, takže se životní úroveň dá porovnat."
+    },
+    {
+      "type": "choice",
+      "question": "Giniho koeficient země je blízko 0. Co to znamená?",
+      "options": [
+        "příjmy jsou rozdělené téměř rovnoměrně",
+        "skoro všechno bohatství má jeden člověk",
+        "země má téměř nulové HDP",
+        "země je v periferii"
+      ],
+      "answer": 0,
+      "explanation": "0 = všichni mají stejně, 1 (nebo 100) = vše má jeden člověk."
+    },
+    {
+      "type": "truefalse",
+      "question": "HDI nabývá hodnot od 0 do 1.",
+      "answer": true,
+      "explanation": "Například Norsko a Švýcarsko mají kolem 0,96, Česko asi 0,9."
+    },
+    {
+      "type": "choice",
+      "question": "Která země má velmi vysoký Giniho koeficient (velké nerovnosti příjmů)?",
+      "options": [
+        "Švédsko",
+        "Česko",
+        "JAR",
+        "Norsko"
+      ],
+      "answer": 2,
+      "explanation": "Skandinávie a Česko mají nerovnost nízkou, Jihoafrická republika velmi vysokou."
+    },
+    {
+      "type": "choice",
+      "question": "Kde při výrobě a prodeji trička zůstane nejvíc peněz?",
+      "options": [
+        "u šičky v Bangladéši",
+        "u pěstitele bavlny",
+        "u přepravce kontejnerů",
+        "tam, kde je design, značka a prodej"
+      ],
+      "answer": 3,
+      "explanation": "Šička dostane jen malý zlomek ceny, většina zůstane u značky a obchodu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Globalizace zahrnuje jen obchod se zbožím.",
+      "answer": false,
+      "explanation": "Patří k ní i pohyb peněz, lidí, technologií, informací a kultury."
+    },
+    {
+      "type": "match",
+      "question": "Spoj část světového systému a typický stát.",
+      "pairs": [
+        [
+          "jádro",
+          "Německo"
+        ],
+        [
+          "semiperiferie",
+          "Brazílie"
+        ],
+        [
+          "periferie",
+          "Čad"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Země má HDP 300 miliard USD a 6 milionů obyvatel. Kolik USD činí HDP na obyvatele?",
+      "answers": [
+        "50000",
+        "50 000"
+      ],
+      "hints": [
+        "Vyděl HDP počtem obyvatel.",
+        "300 000 000 000 ÷ 6 000 000"
+      ]
     }
   ]
 }
