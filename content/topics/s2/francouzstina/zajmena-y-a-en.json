@@ -476,6 +476,64 @@
       "type": "open",
       "question": "Zahraj si krátký rozhovor na trhu: zeptej se na zboží a odpověz pomocí *en*.",
       "answer": "Například: *— Vous avez des pommes ? — Oui, j’en ai. Vous en voulez combien ? — J’en voudrais deux kilos, s’il vous plaît.*"
+    },
+    {
+      "type": "choice",
+      "question": "Tu as beaucoup d’amis ? Oui, j’___ ai beaucoup.",
+      "options": [
+        "y",
+        "en",
+        "les"
+      ],
+      "answer": 1,
+      "explanation": "Množství (*beaucoup*) → *en*, slovo *beaucoup* se na konci zopakuje."
+    },
+    {
+      "type": "choice",
+      "question": "Vous habitez chez vos parents ? Oui, nous ___ habitons.",
+      "options": [
+        "en",
+        "le",
+        "y"
+      ],
+      "answer": 2,
+      "explanation": "*chez vos parents* je místo → *y*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Tu réponds à la lettre ? Oui, j’___ réponds.",
+      "answers": [
+        "y"
+      ],
+      "explanation": "*répondre à* + věc → *y*."
+    },
+    {
+      "type": "choice",
+      "question": "Která odpověď je správně? „Tu as acheté du pain ?“",
+      "options": [
+        "Oui, j’ai en acheté.",
+        "Oui, j’en ai acheté.",
+        "Oui, j’y ai acheté."
+      ],
+      "answer": 1,
+      "explanation": "Dělivý člen *du* → *en*; v passé composé stojí před *avoir*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Tu veux de la soupe ? – Non, je n’en veux pas.“ je správně.",
+      "answer": true,
+      "explanation": "*de la soupe* → *en*; v záporu stojí *n’en* před slovesem a *pas* za ním."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Půjdu tam zítra.“",
+      "items": [
+        "Je",
+        "vais",
+        "y",
+        "aller",
+        "demain"
+      ]
     }
   ]
 }

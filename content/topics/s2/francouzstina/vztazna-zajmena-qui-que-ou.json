@@ -449,6 +449,61 @@
       "type": "open",
       "question": "Vymysli francouzsky dvě hádanky: jednu s *qui* a jednu s *où*.",
       "answer": "Například: *C’est un animal qui vit dans l’eau et qui nage.* (le poisson) *C’est un endroit où on regarde des films.* (le cinéma)"
+    },
+    {
+      "type": "choice",
+      "question": "L’homme ___ tu vois là-bas est mon prof.",
+      "options": [
+        "qui",
+        "que",
+        "où"
+      ],
+      "answer": 1,
+      "explanation": "Za zájmenem je nový podmět *tu* → *que*."
+    },
+    {
+      "type": "choice",
+      "question": "Le bus ___ arrive est en retard.",
+      "options": [
+        "qu’",
+        "où",
+        "qui"
+      ],
+      "answer": 2,
+      "explanation": "Za zájmenem hned sloveso → *qui*. *qui* se nikdy nezkracuje."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: L’été ___ nous sommes allés en Grèce était super.",
+      "answers": [
+        "où"
+      ],
+      "explanation": "Čas (léto, kdy) → *où*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Les chaussures ___ Paul porte sont neuves.",
+      "answers": [
+        "que"
+      ],
+      "explanation": "Za zájmenem nový podmět *Paul* → *que*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„C’est mon frère que habite à Prague.“ je správně.",
+      "answer": false,
+      "explanation": "Za zájmenem hned sloveso *habite* → *qui*: *C’est mon frère qui habite à Prague.*"
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „To je dárek, který mi dal táta.“",
+      "items": [
+        "C’est",
+        "le cadeau",
+        "que",
+        "mon père",
+        "m’a donné"
+      ]
     }
   ]
 }

@@ -501,6 +501,56 @@
       "type": "open",
       "question": "Porovnej francouzsky sebe a někoho z rodiny (aspoň tři věty: vlastnost, činnost, množství).",
       "answer": "Například: *Mon frère est plus grand que moi. Mais je cours plus vite que lui. J’ai moins de livres que lui.*"
+    },
+    {
+      "type": "choice",
+      "question": "Ce livre coûte 5 €, l’autre 10 €. Ce livre est ___ cher que l’autre.",
+      "options": [
+        "plus",
+        "moins",
+        "aussi"
+      ],
+      "answer": 1,
+      "explanation": "Je levnější, tedy méně drahý → *moins … que*."
+    },
+    {
+      "type": "choice",
+      "question": "Il y a ___ élèves dans ma classe que dans ta classe. (víc)",
+      "options": [
+        "plus",
+        "plus de",
+        "autant"
+      ],
+      "answer": 1,
+      "explanation": "U množství (podstatné jméno *élèves*) → *plus de … que*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň druhý stupeň od *bon*: Cette pizza est ___ que l’autre.",
+      "answers": [
+        "meilleure"
+      ],
+      "explanation": "*bon* → *meilleur*, shoda s *la pizza* (ž. r.) → *meilleure*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Elle court plus vite que ___. (než on)",
+      "answers": [
+        "lui"
+      ],
+      "explanation": "Po *que* stojí u osob zdůrazněné zájmeno: *lui*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„C’est la plus belle ville de France.“ je správně.",
+      "answer": true,
+      "explanation": "*belle* stojí před podstatným jménem, takže se člen neopakuje; „ve Francii“ = *de France*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Il travaille aussi que moi.“ je správně.",
+      "answer": false,
+      "explanation": "U slovesa se „stejně“ řekne *autant*: *Il travaille autant que moi.*"
     }
   ]
 }
