@@ -474,6 +474,79 @@
       "type": "open",
       "question": "Vysvětli rozdíl mezi výstupem PNP a NPN.",
       "answer": "Sepnutý PNP snímač připojí výstup na +24 V a zátěž je mezi výstupem a 0 V. Sepnutý NPN připojí výstup na 0 V a zátěž je mezi +24 V a výstupem. Typ musí odpovídat vstupu řídicího systému."
+    },
+    {
+      "type": "choice",
+      "question": "Snímač tlaku 0–10 bar s výstupem 4–20 mA dává 8 mA. Jaký je tlak?",
+      "options": [
+        "8 bar",
+        "4 bar",
+        "2,5 bar",
+        "0,8 bar"
+      ],
+      "answer": 2,
+      "explanation": "Na 1 bar připadá 16 / 10 = 1,6 mA. Nad začátkem je 8 − 4 = 4 mA, tlak = 4 / 1,6 = 2,5 bar.",
+      "hints": [
+        "Nejdřív odečti 4 mA, které odpovídají 0 bar."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Binární snímač má plynule proměnný výstup, například 0–10 V.",
+      "answer": false,
+      "explanation": "Binární snímač má jen dva stavy (sepnuto / nesepnuto). Plynulý výstup má analogový snímač."
+    },
+    {
+      "type": "choice",
+      "question": "Indukční snímač má spínací vzdálenost Sn = 8 mm. Do jaké vzdálenosti od předmětu ho namontuješ?",
+      "options": [
+        "přesně 8 mm",
+        "asi 4–5 mm, tedy blíž, než je Sn",
+        "10–12 mm, ať se nepoškodí"
+      ],
+      "answer": 1,
+      "explanation": "Pro spolehlivé sepnutí se snímač montuje blíž, než udává Sn."
+    },
+    {
+      "type": "input",
+      "question": "Pt100 má při 0 °C 100 Ω a na 1 °C přibude asi 0,385 Ω. Jaký odpor v Ω má při 40 °C?",
+      "answers": [
+        "115,4",
+        "115.4"
+      ],
+      "hints": [
+        "Spočítej, kolik ohmů přibude za 40 °C.",
+        "40 · 0,385 přičti ke 100 Ω."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj snímač teploty s principem.",
+      "pairs": [
+        [
+          "Pt100",
+          "odpor platiny roste s teplotou"
+        ],
+        [
+          "termočlánek",
+          "napětí na spoji dvou kovů"
+        ],
+        [
+          "termistor PTC",
+          "odpor polovodiče s teplotou roste"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na lince se indukční snímač občas sepne, i když před ním žádný díl není. Co je nejpravděpodobnější příčina?",
+      "options": [
+        "prach na odrazce",
+        "kovové třísky na čele snímače",
+        "plastový kryt pásu"
+      ],
+      "answer": 1,
+      "explanation": "Indukční snímač reaguje na kov, třísky ho mohou sepnout. Odrazku má optická závora a plast indukční snímač neovlivní."
     }
   ]
 }

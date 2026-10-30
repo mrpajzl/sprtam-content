@@ -433,6 +433,79 @@
       "type": "open",
       "question": "Co je Průmysl 4.0 a čím se liší od třetí průmyslové revoluce?",
       "answer": "Třetí revoluce přinesla elektroniku, počítače a automatizaci pomocí PLC. Průmysl 4.0 stroje propojuje do sítě (IIoT, kyberfyzikální systémy), sbírá a vyhodnocuje data, využívá digitální dvojčata a prediktivní údržbu. Proto je v něm důležitá i kybernetická bezpečnost."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s popisem.",
+      "pairs": [
+        [
+          "HMI",
+          "ovládací panel u stroje"
+        ],
+        [
+          "SCADA",
+          "dispečerský systém sbírající data z mnoha PLC"
+        ],
+        [
+          "MES",
+          "plán a evidence výroby"
+        ],
+        [
+          "protokol",
+          "pravidla, jak vypadá zpráva a kdo smí vysílat"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Obráběcí stroj sám hlásí opotřebení nástroje a sdílí svůj stav s ostatními stroji. Jak se takovému zařízení říká?",
+      "options": [
+        "digitální dvojče",
+        "kyberfyzikální systém",
+        "pyramida automatizace",
+        "ERP"
+      ],
+      "answer": 1,
+      "explanation": "Kyberfyzikální systém spojuje fyzickou část s výpočetní částí a sítí. Digitální dvojče je jen počítačový model."
+    },
+    {
+      "type": "truefalse",
+      "question": "Jádrem Průmyslu 4.0 je hlavně nákup většího počtu robotů.",
+      "answer": false,
+      "explanation": "Roboty a automatizace patří už do 3. revoluce. Novinkou 4.0 je propojení strojů a rozhodování podle dat."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se pohony robotu neřídí přes běžnou kancelářskou síť?",
+      "options": [
+        "kancelářská síť nezaručuje dobu doručení zprávy",
+        "kancelářská síť nepoužívá kabely",
+        "pohony neumí přijímat data"
+      ],
+      "answer": 0,
+      "explanation": "Pro rychlé řízení je potřeba deterministická komunikace (např. Profinet IRT, EtherCAT) v oddělené síti."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu dat v továrně 4.0 od snímače.",
+      "items": [
+        "snímač pošle hodnotu přes IO-Link do PLC",
+        "PLC řídí stroj po deterministické síti",
+        "server čte data z PLC přes OPC UA",
+        "MES nebo cloud data ukládá a analyzuje",
+        "výsledek se vrátí jako plán údržby nebo objednávka v ERP"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která řada norem popisuje kybernetickou bezpečnost průmyslových řídicích systémů?",
+      "options": [
+        "ISO 10218",
+        "IEC 61131-3",
+        "IEC 62443"
+      ],
+      "answer": 2,
+      "explanation": "ISO 10218 se týká bezpečnosti robotů, IEC 61131-3 programovacích jazyků PLC."
     }
   ]
 }

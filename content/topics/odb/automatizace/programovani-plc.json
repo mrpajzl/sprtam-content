@@ -477,6 +477,79 @@
       "type": "open",
       "question": "Porovnej časovače TON, TOF a TP.",
       "answer": "TON zapne výstup až po uplynutí času PT od zapnutí vstupu. TOF zapne výstup hned a vypne ho až PT po vypnutí vstupu. TP po náběžné hraně vstupu vytvoří na výstupu impulz pevné délky PT."
+    },
+    {
+      "type": "choice",
+      "question": "Po stisku tlačítka má houkačka zahoukat přesně 2 s, i když obsluha tlačítko drží déle. Který blok použiješ?",
+      "options": [
+        "TON",
+        "TOF",
+        "TP",
+        "CTU"
+      ],
+      "answer": 2,
+      "explanation": "TP po náběžné hraně vstupu vyrobí impulz pevné délky PT, nezávisle na délce stisku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Náběžná hrana je okamžik, kdy se signál změní z 1 na 0.",
+      "answer": false,
+      "explanation": "Náběžná hrana je změna z 0 na 1. Změna z 1 na 0 je sestupná hrana."
+    },
+    {
+      "type": "choice",
+      "question": "Časovač TON má PT = 5 s. Vstup IN je zapnutý jen 3 s a pak se vypne. Co udělá výstup Q?",
+      "options": [
+        "zapne se po 5 s",
+        "vůbec se nezapne",
+        "zapne se na 2 s",
+        "zapne se hned a vypne po 3 s"
+      ],
+      "answer": 1,
+      "explanation": "TON zapne Q, jen když IN trvá nepřetržitě aspoň PT. Při vypnutí IN se čas vynuluje."
+    },
+    {
+      "type": "choice",
+      "question": "Která funkce odpovídá v LD rozpínacímu kontaktu `--|/|--`?",
+      "options": [
+        "AND",
+        "OR",
+        "NOT"
+      ],
+      "answer": 2,
+      "explanation": "Rozpínací kontakt propustí, když je proměnná 0 – je to negace."
+    },
+    {
+      "type": "input",
+      "question": "Ve ST doplň operátor: Lis := T1 AND T2 ___ Kryt; (lis smí sjet jen při obou tlačítkách a zavřeném krytu)",
+      "answers": [
+        "AND"
+      ],
+      "hints": [
+        "Všechny tři podmínky musí platit zároveň."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj čítač nebo vstup s funkcí.",
+      "pairs": [
+        [
+          "CTU",
+          "čítá nahoru"
+        ],
+        [
+          "CTD",
+          "čítá dolů"
+        ],
+        [
+          "R u CTU",
+          "vynuluje čítač"
+        ],
+        [
+          "LD u CTD",
+          "nahraje předvolbu PV do CV"
+        ]
+      ]
     }
   ]
 }

@@ -481,6 +481,90 @@
       "type": "open",
       "question": "Vysvětli, jak probíhá cyklus PLC a proč může PLC přehlédnout velmi krátký impulz.",
       "answer": "PLC na začátku cyklu přečte vstupy do obrazu procesu, vykoná program a zapíše výstupy, pak vše opakuje. Vstupy čte jen jednou za cyklus, takže impulz kratší než doba cyklu může proběhnout mezi dvěma čteními."
+    },
+    {
+      "type": "input",
+      "question": "Bajty i bity se číslují od nuly. Napiš adresu podle IEC 61131-3 pro 6. vstup ve 3. vstupním bajtu.",
+      "answers": [
+        "%I2.5",
+        "I2.5",
+        "%IX2.5"
+      ],
+      "hints": [
+        "3. bajt má číslo 2.",
+        "6. bit má číslo 5."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou adresu má devátý výstup, když v bajtu 0 je prvních osm výstupů?",
+      "options": [
+        "%Q0.8",
+        "%Q0.9",
+        "%Q1.0",
+        "%Q1.1"
+      ],
+      "answer": 2,
+      "explanation": "Bity v bajtu mají čísla jen 0 až 7. Po %Q0.7 pokračuje %Q1.0."
+    },
+    {
+      "type": "input",
+      "question": "Stroj má 50 tlačítek a snímačů. Kolik modulů po 16 digitálních vstupech potřebuješ (bez rezervy)?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ],
+      "hints": [
+        "50 / 16 = 3,125.",
+        "Zaokrouhluje se vždy nahoru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Program má 4 000 instrukcí po 0,5 µs, čtení a zápis vstupů a výstupů trvá 1 ms. Doba cyklu v ms přibližně =",
+      "answers": [
+        "3"
+      ],
+      "hints": [
+        "4 000 · 0,5 µs = ? µs, převeď na ms.",
+        "Přičti 1 ms na vstupy a výstupy."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Malý stroj má 10 tlačítek a 6 kontrolek. Jaké PLC se hodí nejlépe?",
+      "options": [
+        "modulární PLC se stovkami signálů",
+        "kompaktní PLC se zdrojem, CPU a vstupy a výstupy v jedné krabičce",
+        "žádné, PLC neumí ovládat kontrolky"
+      ],
+      "answer": 1,
+      "explanation": "Kompaktní PLC stačí na malé stroje. Modulární se volí pro velké linky s mnoha signály."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zápis adresy s oblastí.",
+      "pairs": [
+        [
+          "%I",
+          "vstup"
+        ],
+        [
+          "%Q",
+          "výstup"
+        ],
+        [
+          "%M",
+          "paměť (vnitřní proměnná)"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V režimu STOP PLC nevykonává program a výstupy jsou vypnuté nebo v bezpečném stavu.",
+      "answer": true,
+      "explanation": "Program se vykonává jen v režimu RUN. Nový program se obvykle nahrává ve STOP."
     }
   ]
 }

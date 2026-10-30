@@ -495,6 +495,78 @@
       "type": "open",
       "question": "Jak je zajištěna bezpečnost lidí u průmyslového robotu?",
       "answer": "Klasický robot pracuje za oplocením s hlídanými dveřmi, vstupy chrání světelné závory nebo skenery a všude je nouzové zastavení. Při programování se jezdí sníženou rychlostí s povolovacím tlačítkem. Kolaborativní robot omezuje rychlost a sílu podle ISO 10218 a ISO/TS 15066, ale i u něj se posuzují rizika celé aplikace."
+    },
+    {
+      "type": "choice",
+      "question": "Program robotu vznikne v počítači na 3D modelu pracoviště a do robotu se nahraje hotový. Jak se tomu říká?",
+      "options": [
+        "programování učením (on-line)",
+        "off-line programování",
+        "autotuning"
+      ],
+      "answer": 1,
+      "explanation": "Při off-line programování nemusí výroba stát. Při učení se robot vede panelem k bodům."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po výměně chapadla za delší stačí spustit starý program, robot si délku nástroje zjistí sám.",
+      "answer": false,
+      "explanation": "Musí se změřit a nastavit nový TCP. Jinak je špička nástroje jinde, než si robot myslí, a může narazit."
+    },
+    {
+      "type": "match",
+      "question": "Spoj část kloubového robotu s částí lidského těla.",
+      "pairs": [
+        [
+          "základna (osa 1)",
+          "trup, otočení v pase"
+        ],
+        [
+          "rameno (osa 2)",
+          "rameno"
+        ],
+        [
+          "loket (osa 3)",
+          "loket"
+        ],
+        [
+          "chapadlo",
+          "prsty"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč robot se třemi osami nedokáže položit díl do libovolné polohy i natočení?",
+      "options": [
+        "tři osy dají nanejvýš 3 nezávislé pohyby, potřeba je 6",
+        "tři osy jsou vždy jen lineární",
+        "nemá koncový efektor"
+      ],
+      "answer": 0,
+      "explanation": "Libovolná poloha a natočení = 6 stupňů volnosti (3 posuny a 3 natočení)."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik os musí mít podle normy ISO 8373 nejméně manipulátor, aby to byl průmyslový robot?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "Průmyslový robot je přeprogramovatelný manipulátor programovatelný ve třech nebo více osách."
+    },
+    {
+      "type": "input",
+      "question": "Bod má v bázovém systému souřadnici x = 600 mm. Robot se posune o 150 mm proti směru osy x. Nové x (v mm) =",
+      "answers": [
+        "450"
+      ],
+      "hints": [
+        "Proti směru osy znamená odečíst."
+      ]
     }
   ]
 }

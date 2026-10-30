@@ -477,6 +477,90 @@
       "type": "open",
       "question": "Popiš blokové schéma regulačního obvodu a co dělá každý blok.",
       "answer": "Žádaná hodnota w jde do porovnávacího členu, kde se odečte skutečná hodnota y a vznikne odchylka e = w − y. Regulátor z ní určí akční veličinu u, akční člen zasáhne do soustavy, na kterou působí i porucha z. Snímač měří y a zpětnou vazbou ji vrací do porovnávacího členu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pračka, která podle programu topí 20 minut a teplotu vody neměří, je příkladem regulace, protože běží sama.",
+      "answer": false,
+      "explanation": "Samočinnost neznamená regulaci. Bez měření skutečného stavu je smyčka otevřená, jde o ovládání."
+    },
+    {
+      "type": "choice",
+      "question": "Co je v regulaci hladiny ve WC nádržce snímačem?",
+      "options": [
+        "přítokový ventil",
+        "plovák",
+        "nádrž",
+        "spláchnutí"
+      ],
+      "answer": 1,
+      "explanation": "Plovák měří výšku hladiny a přes páku ji vrací k ventilu – tvoří zpětnou vazbu."
+    },
+    {
+      "type": "input",
+      "question": "V peci je žádaná teplota 400 °C, skutečná 430 °C. Regulační odchylka e ve °C =",
+      "answers": [
+        "-30",
+        "−30"
+      ],
+      "hints": [
+        "Použij e = w − y.",
+        "Skutečná teplota je vyšší než žádaná, odchylka bude záporná."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak poznáš v blokovém schématu ovládání (otevřenou smyčku)?",
+      "options": [
+        "má víc bloků než regulace",
+        "nemá šipku zpětné vazby ze snímače k řídicímu členu",
+        "nemá akční člen",
+        "šipky vedou zprava doleva"
+      ],
+      "answer": 1,
+      "explanation": "Ovládání výsledek neměří, proto v něm chybí šipka zpětné vazby."
+    },
+    {
+      "type": "match",
+      "question": "Rozhodni, jestli jde o ovládání, nebo regulaci.",
+      "pairs": [
+        [
+          "vysoušeč rukou běží 30 s po stisku",
+          "ovládání"
+        ],
+        [
+          "termostat drží 21 °C",
+          "regulace"
+        ],
+        [
+          "semafor přepíná podle času",
+          "ovládání"
+        ],
+        [
+          "tempomat drží 90 km/h",
+          "regulace"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Řízená soustava je zařízení nebo proces, který řídíme, například pec nebo nádrž s vodou.",
+      "answer": true,
+      "explanation": "Řízené soustavě se někdy říká také objekt řízení."
+    },
+    {
+      "type": "choice",
+      "question": "Termostat má w = 22 °C a teploměr ukazuje y = 20 °C. Co regulátor udělá?",
+      "options": [
+        "topení ubere, protože e je záporná",
+        "nic, odchylka je nulová",
+        "topení přidá, protože e = +2 °C je kladná"
+      ],
+      "answer": 2,
+      "explanation": "e = w − y = 22 − 20 = 2 °C. Kladná odchylka znamená „je málo, přidej“.",
+      "hints": [
+        "Spočítej e = w − y."
+      ]
     }
   ]
 }

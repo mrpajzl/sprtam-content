@@ -455,6 +455,79 @@
       "type": "open",
       "question": "Popiš, jak bys postupně nastavil PID regulátor.",
       "answer": "Začnu jen s P a zvyšuji Kp, dokud odezva není rychlá bez trvalého kmitání. Pak přidám I a zmenšuji Ti, až zmizí trvalá odchylka. Nakonec opatrně přidám D, pokud je potřeba zmenšit překmit, a ověřím vše skokovou změnou žádané hodnoty."
+    },
+    {
+      "type": "input",
+      "question": "Dvoupolohový regulátor bojleru má žádanou hodnotu 60 °C a hysterezi ±2 °C. Při jaké teplotě ve °C ohřev zapne?",
+      "answers": [
+        "58"
+      ],
+      "hints": [
+        "Zapíná se na spodní mezi.",
+        "Od žádané hodnoty odečti 2 °C."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na grafu po skokové změně se teplota ustálí trvale pod žádanou hodnotou a nekmitá. Jaký regulátor to nejspíš je?",
+      "options": [
+        "PI",
+        "P",
+        "PID",
+        "dvoupolohový"
+      ],
+      "answer": 1,
+      "explanation": "Trvalá regulační odchylka je typická pro P regulátor. PI a PID ji odstraní, dvoupolohový kolísá kolem žádané hodnoty."
+    },
+    {
+      "type": "truefalse",
+      "question": "Velké zvětšení Kp u P regulátoru může vést ke kmitání až nestabilitě.",
+      "answer": true,
+      "explanation": "Větší Kp odchylku zmenší, ale příliš silná reakce rozkmitá regulovanou veličinu."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se složka D přidává opatrně?",
+      "options": [
+        "zvětšuje trvalou odchylku",
+        "silně zesiluje šum měření a výstup pak „cuká“",
+        "odstraňuje překmit úplně"
+      ],
+      "answer": 1,
+      "explanation": "D reaguje na rychlost změny, takže i drobný šum ze snímače vyvolá velký zásah."
+    },
+    {
+      "type": "match",
+      "question": "Spoj regulátor s typickým průběhem po skokové změně.",
+      "pairs": [
+        [
+          "dvoupolohový",
+          "kolísá kolem žádané hodnoty"
+        ],
+        [
+          "P",
+          "ustálí se pod žádanou hodnotou"
+        ],
+        [
+          "PI",
+          "dosáhne žádané, často s překmitem"
+        ],
+        [
+          "PID",
+          "dosáhne žádané rychleji, s menším překmitem"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím začneš při ručním nastavování PID regulátoru?",
+      "options": [
+        "nastavíš velké D a malé Kp",
+        "zapneš jen složku P, I a D vypneš",
+        "nastavíš Ti co nejmenší"
+      ],
+      "answer": 1,
+      "explanation": "Nejdřív se ladí samotné P (Ti velmi velké, Td = 0), pak se přidá I a případně malé D."
     }
   ]
 }

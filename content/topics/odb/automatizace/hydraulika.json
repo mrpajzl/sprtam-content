@@ -444,6 +444,67 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady platí při práci na hydraulice?",
       "answer": "Před prací odtlakovat obvod, vypnout čerpadlo, zajistit nebo spustit břemena a vybít akumulátor. Netěsnosti nehledat rukou, protože olej pod tlakem pronikne kůží. Kontrolovat a včas měnit hadice a nepřenastavovat pojistný ventil nad dovolenou hodnotu."
+    },
+    {
+      "type": "input",
+      "question": "Lis potřebuje sílu 60 kN, tlak v obvodu je 15 MPa. Nejmenší plocha pístu v mm² =",
+      "answers": [
+        "4000",
+        "4 000"
+      ],
+      "hints": [
+        "Vzorec F = p · S uprav na S = F / p.",
+        "60 kN = 60 000 N, 15 MPa = 15 N/mm²."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle Pascalova zákona se tlak v uzavřené kapalině šíří všemi směry stejně.",
+      "answer": true,
+      "explanation": "Proto stejný tlak tlačí na píst válce i na stěny všech hadic."
+    },
+    {
+      "type": "choice",
+      "question": "Rameno bagru se zvedá přímočarým pohybem, pásy se točí. Které akční členy to dělají?",
+      "options": [
+        "rameno hydromotor, pásy válec",
+        "rameno válec, pásy hydromotor",
+        "obojí pneumatický válec"
+      ],
+      "answer": 1,
+      "explanation": "Hydraulický válec dělá přímočarý pohyb, hydromotor otáčivý."
+    },
+    {
+      "type": "choice",
+      "question": "Která střední poloha rozvaděče 4/3 šetří v klidu energii?",
+      "options": [
+        "uzavřená",
+        "plovoucí",
+        "oběhová"
+      ],
+      "answer": 2,
+      "explanation": "V oběhové poloze je P spojen s T, olej se vrací do nádrže bez tlaku a čerpadlo netlačí přes pojistný ventil."
+    },
+    {
+      "type": "input",
+      "question": "Kolik N/mm² je tlak 250 bar?",
+      "answers": [
+        "25"
+      ],
+      "hints": [
+        "1 bar = 0,1 N/mm²."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč jde hydraulickým válcem polohovat přesněji než pneumatickým?",
+      "options": [
+        "olej je téměř nestlačitelný",
+        "olej má nižší tlak než vzduch",
+        "hydraulika nemá rozvaděče"
+      ],
+      "answer": 0,
+      "explanation": "Vzduch se stlačuje a „pruží“, olej skoro ne."
     }
   ]
 }

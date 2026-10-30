@@ -392,6 +392,78 @@
       "type": "open",
       "question": "Popiš sekvenci A+ B+ A− B− a co spouští jednotlivé kroky.",
       "answer": "Válec A vyjede po stisku START, pokud je B zasunut (B0). Když A dojede (A1), vyjede B. Po vysunutí B (B1) se A vrátí, a když je A zasunut (A0), vrátí se B. Každý krok spouští snímač, který potvrdí dokončení předchozího pohybu."
+    },
+    {
+      "type": "choice",
+      "question": "Který signál spustí pohyb A− v sekvenci A+ B+ A− B−?",
+      "options": [
+        "A1",
+        "A0",
+        "B1",
+        "START"
+      ],
+      "answer": 2,
+      "explanation": "A− následuje po B+. Spustí ho snímač B1, který potvrdí, že válec B je vysunutý.",
+      "hints": [
+        "Který pohyb je těsně před A−?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podmínka „NEBO“ se v kontaktním schématu zapíše kontakty zapojenými paralelně vedle sebe.",
+      "answer": true,
+      "explanation": "Paralelně = NEBO, sériově = A ZÁROVEŇ."
+    },
+    {
+      "type": "choice",
+      "question": "Tlačítko START je zapojeno přímo na cívku monostabilního rozvaděče, bez relé. Co se stane, když tlačítko pustíš?",
+      "options": [
+        "válec zůstane vysunutý",
+        "pružina vrátí rozvaděč a válec zajede",
+        "válec se zastaví uprostřed zdvihu a zůstane tam"
+      ],
+      "answer": 1,
+      "explanation": "Monostabilní rozvaděč drží novou polohu jen po dobu proudu cívkou."
+    },
+    {
+      "type": "match",
+      "question": "Spoj kontakt s jeho chováním.",
+      "pairs": [
+        [
+          "spínací (NO)",
+          "při stisku obvod spojí"
+        ],
+        [
+          "rozpínací (NC)",
+          "při stisku obvod rozpojí"
+        ],
+        [
+          "samodržný kontakt K1",
+          "drží relé i po puštění START"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Sekvence je A+ A− B+ B−. Po kterém kroku (číslo) je válec B vysunutý?",
+      "answers": [
+        "3"
+      ],
+      "hints": [
+        "Napiš si kroky 1 až 4 pod sebe.",
+        "B+ je třetí pohyb."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Válec má po stisku START vyjet a po dojetí do koncové polohy se sám vrátit. Rozvaděč je monostabilní. Co přidáš do samodržného obvodu?",
+      "options": [
+        "spínací kontakt A0 paralelně ke START",
+        "rozpínací kontakt A1 do série se STOP",
+        "druhou cívku Y2 na rozvaděč"
+      ],
+      "answer": 1,
+      "explanation": "Když válec dojede, A1 rozpojí samodržení, relé K1 odpadne, cívka Y1 ztratí proud a pružina vrátí rozvaděč."
     }
   ]
 }

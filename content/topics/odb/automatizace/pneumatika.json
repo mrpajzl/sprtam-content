@@ -467,6 +467,67 @@
       "type": "open",
       "question": "Vyjmenuj prvky úpravy stlačeného vzduchu a jejich úkol.",
       "answer": "Kompresor stlačuje vzduch, vzdušník ho hromadí a vyrovnává tlak. U stroje je jednotka úpravy: filtr zachytí nečistoty a vodu, regulátor s manometrem nastaví pracovní tlak a maznice případně přidá olejovou mlhu."
+    },
+    {
+      "type": "choice",
+      "question": "Válec má průměr pístu 40 mm, tlak je 6 bar. Jaká je přibližně teoretická síla při vysouvání?",
+      "options": [
+        "asi 75 N",
+        "asi 750 N",
+        "asi 7 500 N",
+        "asi 2 400 N"
+      ],
+      "answer": 1,
+      "explanation": "S = π · 20² ≈ 1 257 mm², 6 bar = 0,6 N/mm², F = 0,6 · 1 257 ≈ 754 N.",
+      "hints": [
+        "Plochu počítej z poloměru, ne z průměru.",
+        "6 bar = 0,6 MPa = 0,6 N/mm²."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Válec se má vysunout tlačítkem u stroje NEBO tlačítkem na dálkovém pultu. Který logický ventil použiješ?",
+      "options": [
+        "dvoutlakový ventil",
+        "škrticí zpětný ventil",
+        "střídavý ventil"
+      ],
+      "answer": 2,
+      "explanation": "Střídavý ventil (NEBO) pustí vzduch z kteréhokoli vstupu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve značce rozvaděče odpovídá každý čtvereček jedné poloze.",
+      "answer": true,
+      "explanation": "Počet poloh zjistíš spočítáním čtverečků, počet cest podle přípojů u jednoho čtverečku."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části pneumatického schématu odspodu nahoru, jak se kreslí.",
+      "items": [
+        "zdroj a úprava vzduchu",
+        "signální prvky (tlačítka, snímače)",
+        "řídicí rozvaděče",
+        "válce"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "K čemu slouží vzdušník?",
+      "options": [
+        "stlačuje vzduch z okolí",
+        "hromadí zásobu stlačeného vzduchu a vyrovnává výkyvy tlaku",
+        "přidává do vzduchu olejovou mlhu",
+        "odvětrává válec do okolí"
+      ],
+      "answer": 1,
+      "explanation": "Vzduch stlačuje kompresor, vzdušník je tlaková nádoba se zásobou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozvaděč se ve schématu kreslí s přípoji u té polohy, ve které je při práci válce vysunutý.",
+      "answer": false,
+      "explanation": "Přípoje se kreslí ke klidové poloze rozvaděče."
     }
   ]
 }

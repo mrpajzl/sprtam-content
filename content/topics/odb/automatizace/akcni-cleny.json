@@ -475,6 +475,76 @@
       "type": "open",
       "question": "Kdy zvolíš pneumatický a kdy hydraulický pohon?",
       "answer": "Pneumatický pro rychlé, časté pohyby s malou až střední silou, kde stačí dvě krajní polohy (manipulace, balení). Hydraulický tam, kde je potřeba velká síla a dobře řiditelný pohyb (lisy, zvedání), protože olej má vysoký tlak a je téměř nestlačitelný."
+    },
+    {
+      "type": "input",
+      "question": "Asynchronní motor má 3 pólové dvojice a je připojen na síť 50 Hz. Synchronní otáčky v ot/min =",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "hints": [
+        "Použij n_s = 60 · f / p."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak změníš směr otáčení stejnosměrného (DC) motoru?",
+      "options": [
+        "prohozením dvou fází",
+        "snížením napětí na polovinu",
+        "přepólováním napájecího napětí",
+        "frekvenčním měničem"
+      ],
+      "answer": 2,
+      "explanation": "U DC motoru mění směr přepólování, velikost napětí mění otáčky. Prohození dvou fází platí pro trojfázový asynchronní motor."
+    },
+    {
+      "type": "truefalse",
+      "question": "Regulační ventil se umí otevřít jen úplně, nebo úplně zavřít.",
+      "answer": false,
+      "explanation": "Regulační ventil mění průtok plynule, má k tomu elektrický nebo pneumatický pohon."
+    },
+    {
+      "type": "choice",
+      "question": "Proč má pneumatický válec malou přesnost polohy uprostřed zdvihu?",
+      "options": [
+        "vzduch je stlačitelný",
+        "vzduch má příliš vysoký tlak",
+        "válec nemá píst"
+      ],
+      "answer": 0,
+      "explanation": "Stlačitelný vzduch „pruží“. Hydraulický olej je téměř nestlačitelný, proto polohuje lépe."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s popisem.",
+      "pairs": [
+        [
+          "enkodér",
+          "snímač natočení hřídele"
+        ],
+        [
+          "skluz",
+          "rotor je pomalejší než pole"
+        ],
+        [
+          "krok",
+          "pootočení krokového motoru na jeden impulz"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou vlastnost má hydraulika oproti pneumatice?",
+      "options": [
+        "vyšší rychlost a nižší cenu",
+        "běžný tlak asi 6 bar",
+        "velmi velkou sílu díky tlaku desítek až stovek barů",
+        "čistý provoz bez oleje"
+      ],
+      "answer": 2,
+      "explanation": "Hydraulika pracuje s olejem pod vysokým tlakem, proto dává velkou sílu. Rychlost, cena a čistota jsou výhody pneumatiky."
     }
   ]
 }
