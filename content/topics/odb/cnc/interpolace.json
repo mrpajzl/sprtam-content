@@ -444,6 +444,69 @@
       "type": "open",
       "question": "Jak určíš, zda použít G02, nebo G03, a co dalšího musí blok oblouku obsahovat?",
       "answer": "Podívám se na rovinu z kladného konce osy kolmé k ní (u G17 shora). Ve směru hodinových ručiček je G02, proti G03. Blok musí obsahovat koncový bod a střed – buď poloměrem R (CR=), nebo I, J, K od počátečního bodu – a posuv F."
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v X20 Y10, střed oblouku je v X35 Y10. Jaká je hodnota I?",
+      "answers": [
+        "15",
+        "I15"
+      ],
+      "explanation": "I = 35 − 20 = 15.",
+      "hints": [
+        "I je vzdálenost středu od počátečního bodu v ose X."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Celá kružnice: nástroj stojí v X0 Y−25, střed je v X0 Y0. Jaká je hodnota J?",
+      "answers": [
+        "25",
+        "J25"
+      ],
+      "explanation": "J = 0 − (−25) = 25.",
+      "hints": [
+        "Pozor na odečítání záporného čísla."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Nástroj jede po oblouku z X0 Y10 do X10 Y0, střed je v X0 Y0 (pohled shora). Kterou funkci použiješ?",
+      "options": [
+        "G03",
+        "G02",
+        "G01"
+      ],
+      "answer": 1,
+      "explanation": "Z horního bodu doprava dolů je to jako ručička od 12 ke 3 – ve směru hodinových ručiček.",
+      "hints": [
+        "Kde je začátek a konec vůči středu?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Oblouk delší než půlkruh se při zadání poloměrem píše se záporným znaménkem R.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Rychlost rychloposuvu G00 se zadává adresou F v programu.",
+      "answer": false,
+      "explanation": "Rychlost rychloposuvu určuje stroj, ne program."
+    },
+    {
+      "type": "order",
+      "question": "Obdélník 30 × 15 mm má W v levém dolním rohu. Seřaď bloky dráhy z X0 Y0 ve směru hodinových ručiček (pohled shora).",
+      "items": [
+        "G01 Y15 F200",
+        "X30",
+        "Y0",
+        "X0"
+      ],
+      "explanation": "Ve směru hodinových ručiček jdeš z levého dolního rohu nahoru, doprava, dolů a doleva.",
+      "hints": [
+        "Ve směru hodinových ručiček jde levá strana nahoru."
+      ]
     }
   ]
 }

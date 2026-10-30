@@ -438,6 +438,73 @@
       "type": "open",
       "question": "Popiš, které M funkce použiješ při výměně nástroje uprostřed programu a proč.",
       "answer": "Nejdřív vypnu chlazení M09 a zastavím vřeteno M05, pak T… M06 vymění nástroj. Pak nastavím otáčky S s M03 (nebo M04) a zapnu chlazení M08. Teprve pak jedu do řezu."
+    },
+    {
+      "type": "choice",
+      "question": "Která funkce roztočí vřeteno vlevo, proti směru hodinových ručiček?",
+      "options": [
+        "M03",
+        "M05",
+        "M04",
+        "M02"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce M05 ukončí program.",
+      "answer": false,
+      "explanation": "M05 zastaví jen vřeteno; konec programu je M30 nebo M02."
+    },
+    {
+      "type": "choice",
+      "question": "Čím se M30 liší od M02?",
+      "options": [
+        "M30 jen zastaví vřeteno",
+        "M30 program navíc vrátí na začátek, aby šel spustit znovu",
+        "M30 je volitelný stop",
+        "nijak, M30 je jen starší zápis"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Chladicí kapalina chladí nástroj, maže řez a odplavuje třísky.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Napiš funkci, která vymění nástroj (např. M…).",
+      "answers": [
+        "M06",
+        "M6"
+      ],
+      "explanation": "Výměna nástroje je M06, např. T5 M06."
+    },
+    {
+      "type": "choice",
+      "question": "Kdy se typicky použije vřeteno vlevo (M04)?",
+      "options": [
+        "při vrtání běžným pravořezným vrtákem",
+        "při zastavení programu",
+        "při zapnutí chlazení",
+        "při řezání levého závitu"
+      ],
+      "answer": 3,
+      "explanation": "Pravořezné nástroje se točí vpravo (M03); vlevo třeba u levého závitu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď funkce na konci obrábění podle typického sledu.",
+      "items": [
+        "M09",
+        "M05",
+        "M30"
+      ],
+      "explanation": "Nejdřív vypnout chlazení, pak zastavit vřeteno, nakonec ukončit program.",
+      "hints": [
+        "Program se ukončuje až úplně na konci."
+      ]
     }
   ]
 }

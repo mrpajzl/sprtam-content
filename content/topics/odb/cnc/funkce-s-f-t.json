@@ -434,6 +434,74 @@
       "type": "open",
       "question": "Jak spočítáš otáčky vřetena z řezné rychlosti? Uveď vzorec a jednotky.",
       "answer": "n = 1000 · vc / (π · D), kde vc je řezná rychlost v m/min, D průměr v mm a n otáčky v ot/min. Číslo 1 000 převádí metry na milimetry."
+    },
+    {
+      "type": "input",
+      "question": "Vrták průměru 8 mm, vc = 25 m/min. Jaké otáčky nastavíš? Zaokrouhli na celé ot/min.",
+      "answers": [
+        "995"
+      ],
+      "explanation": "n = 1000 · 25 / (π · 8) = 25 000 / 25,13 ≈ 995 ot/min.",
+      "hints": [
+        "Použij n = 1000 · vc / (π · D).",
+        "π · 8 ≈ 25,13."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Fréza má 3 zuby, fz = 0,08 mm a otáčky 2 000 ot/min. Jaký je posuv v mm/min?",
+      "answers": [
+        "480"
+      ],
+      "explanation": "vf = 0,08 · 3 · 2 000 = 480 mm/min.",
+      "hints": [
+        "vf = fz · z · n."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Obrobek průměru 40 mm se točí 1 000 ot/min. Jaká je řezná rychlost? Zaokrouhli na celé m/min.",
+      "answers": [
+        "126"
+      ],
+      "explanation": "vc = π · 40 · 1 000 / 1000 ≈ 125,7 ≈ 126 m/min.",
+      "hints": [
+        "vc = π · D · n / 1000."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou funkcí se na Sinumeriku přepne posuv na mm/ot?",
+      "options": [
+        "G94",
+        "G96",
+        "G95",
+        "G97"
+      ],
+      "answer": 2,
+      "explanation": "G94 je mm/min, G95 mm/ot."
+    },
+    {
+      "type": "truefalse",
+      "question": "V režimu G97 se za adresu S píšou přímo otáčky v ot/min.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro hliník se obvykle volí nižší řezná rychlost než pro ocel.",
+      "answer": false,
+      "explanation": "Hliník se obrábí mnohem vyšší řeznou rychlostí než ocel."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se na Sinumeriku vybere nástroj 3 s korekcí (břitem) 1?",
+      "options": [
+        "T0301",
+        "M06 T3 H1",
+        "T3 D1",
+        "S3 D1"
+      ],
+      "answer": 2
     }
   ]
 }

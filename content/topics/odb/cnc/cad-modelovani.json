@@ -466,6 +466,78 @@
       "type": "open",
       "question": "Popiš, jak namodeluješ přírubu s šesti dírami.",
       "answer": "Na rovině nakreslím kružnici se středem v počátku a okótuji průměr, vysunu ji na tloušťku příruby. Vytvořím jednu díru na roztečné kružnici a kruhovým polem ji rozmnožím na šest. Nakonec přidám zaoblení a sražení hran."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým prvkem odebereš materiál tvarem skici, třeba při tvorbě drážky?",
+      "options": [
+        "rotace",
+        "vysunutí",
+        "zaoblení",
+        "vysunutý řez"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "input",
+      "question": "Hřídel má průměr 30 mm. Jak daleko od osy (v mm) bude čára v polovičním profilu pro rotaci?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "Poloviční profil má od osy poloměr: 30 : 2 = 15 mm."
+    },
+    {
+      "type": "input",
+      "question": "Kruhové pole rozmístí 6 děr rovnoměrně po kružnici. Jaký úhel ve stupních svírají sousední díry?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "360° : 6 = 60°."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sražení hranu zkosí, zaoblení ji zakulatí poloměrem.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj geometrickou vazbu s jejím významem.",
+      "pairs": [
+        [
+          "soustředná",
+          "společný střed kružnic"
+        ],
+        [
+          "tečná",
+          "čára se dotýká oblouku"
+        ],
+        [
+          "rovnoběžná",
+          "čáry mají stejný směr"
+        ],
+        [
+          "kolmá",
+          "čáry svírají 90°"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je základní prvek modelu?",
+      "options": [
+        "poslední zaoblení hran",
+        "skica bez kót",
+        "první 3D prvek, který tvoří hlavní tvar součásti",
+        "kruhové pole děr"
+      ],
+      "answer": 2,
+      "explanation": "Nejčastěji vysunutí (deska) nebo rotace (hřídel)."
+    },
+    {
+      "type": "truefalse",
+      "question": "V parametrickém modelu se rozměr správně mění tak, že hranu natáhneš myší.",
+      "answer": false,
+      "explanation": "Rozměr se mění úpravou kóty nebo parametru."
     }
   ]
 }

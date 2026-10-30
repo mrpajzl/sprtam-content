@@ -483,6 +483,84 @@
       "type": "open",
       "question": "Popiš stavbu bloku N60 G01 X50 F200.",
       "answer": "N60 je číslo bloku, G01 přípravná funkce – lineární pohyb pracovním posuvem, X50 je cílová souřadnice v ose X a F200 posuv 200 mm/min. Každé slovo je adresa (písmeno) a hodnota."
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v X0. V režimu G91 následují bloky X15, X−5 a X20. Na jaké souřadnici X skončí?",
+      "answers": [
+        "30",
+        "X30"
+      ],
+      "explanation": "0 + 15 − 5 + 20 = 30.",
+      "hints": [
+        "V G91 se přírůstky postupně sčítají."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Program v G90 má bloky X20, X45 a X30. Jakou hodnotu X by měl poslední blok, kdyby byl zapsán v G91?",
+      "answers": [
+        "-15",
+        "−15",
+        "X-15",
+        "X−15"
+      ],
+      "explanation": "Nástroj jede z X45 do X30: 30 − 45 = −15.",
+      "hints": [
+        "Kde nástroj stojí před posledním blokem?",
+        "Přírůstek = cíl − současná poloha."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapisuje komentář na Sinumeriku?",
+      "options": [
+        "do kulatých závorek",
+        "za středník",
+        "za dvě lomítka",
+        "mezi uvozovky"
+      ],
+      "answer": 1,
+      "explanation": "Na Sinumeriku za středník, na Fanucu do kulatých závorek."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po bloku N60 G01 X50 F200 pojede blok N70 Y30 rychloposuvem, protože v něm chybí G01.",
+      "answer": false,
+      "explanation": "G01 i F jsou modální, takže N70 jede po přímce posuvem 200 mm/min."
+    },
+    {
+      "type": "match",
+      "question": "Spoj adresu s jejím významem.",
+      "pairs": [
+        [
+          "F",
+          "posuv"
+        ],
+        [
+          "S",
+          "otáčky vřetena"
+        ],
+        [
+          "T",
+          "nástroj"
+        ],
+        [
+          "M",
+          "pomocná funkce"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která norma popisuje základ zápisu G-kódu?",
+      "options": [
+        "ISO 841",
+        "ISO 9001",
+        "ISO 6983"
+      ],
+      "answer": 2,
+      "explanation": "ISO 841 popisuje osy strojů, G-kód popisuje ISO 6983."
     }
   ]
 }

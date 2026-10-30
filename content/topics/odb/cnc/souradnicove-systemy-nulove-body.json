@@ -447,6 +447,65 @@
       "type": "open",
       "question": "Jak jsou orientované osy na soustruhu a jak se programuje osa X?",
       "answer": "Osa Z leží v ose vřetena podél obrobku, kladný směr od sklíčidla. Osa X je kolmá, míří od osy rotace ven. X se obvykle programuje jako průměr, takže X40 znamená průměr 40 mm."
+    },
+    {
+      "type": "input",
+      "question": "W leží v levém předním horním rohu kvádru 80 × 50 × 20 mm, Z0 je na horní ploše. Jakou souřadnici Z má spodní plocha?",
+      "answers": [
+        "-20",
+        "−20",
+        "Z-20",
+        "Z−20"
+      ],
+      "explanation": "Spodní plocha je 20 mm pod Z0, tedy Z−20.",
+      "hints": [
+        "Do materiálu se jede do záporných Z."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na soustruhu je W na pravém čele hřídele. Osazení začíná 30 mm od čela směrem ke sklíčidlu. Jaká je jeho souřadnice Z?",
+      "answers": [
+        "-30",
+        "−30",
+        "Z-30",
+        "Z−30"
+      ],
+      "explanation": "Od čela ke sklíčidlu se jde do záporných Z: Z−30."
+    },
+    {
+      "type": "truefalse",
+      "question": "Programátor si při psaní programu představuje, že se pohybuje nástroj a obrobek stojí.",
+      "answer": true,
+      "explanation": "Platí to i tehdy, když na stroji ve skutečnosti jede stůl."
+    },
+    {
+      "type": "truefalse",
+      "question": "U svislé frézky míří kladný směr osy Z dolů ke stolu.",
+      "answer": false,
+      "explanation": "+Z míří od obrobku, u svislé frézky tedy nahoru."
+    },
+    {
+      "type": "choice",
+      "question": "Kolem které osy se otáčí rotační osa C?",
+      "options": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "answer": 2,
+      "explanation": "A se točí kolem X, B kolem Y a C kolem Z."
+    },
+    {
+      "type": "choice",
+      "question": "Kterými funkcemi se vyvolávají další posunutí nulového bodu po G54?",
+      "options": [
+        "G40 až G44",
+        "G55 až G59",
+        "G90 a G91",
+        "M54 až M59"
+      ],
+      "answer": 1
     }
   ]
 }

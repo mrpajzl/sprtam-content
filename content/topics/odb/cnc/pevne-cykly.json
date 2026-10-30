@@ -474,6 +474,58 @@
       "type": "open",
       "question": "Popiš pohyby cyklu G81 a rozdíl mezi G98 a G99.",
       "answer": "Nástroj jede rychloposuvem nad díru a do roviny R, pak vrtá posuvem do hloubky Z a rychloposuvem se vrátí. Při G98 se vrací do počáteční roviny (bezpečné přejetí upínek), při G99 jen do roviny R (kratší čas)."
+    },
+    {
+      "type": "input",
+      "question": "Díra hloubky 40 mm se vrtá cyklem G83 s Q8. Kolik zanoření vrták udělá?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "40 : 8 = 5."
+    },
+    {
+      "type": "input",
+      "question": "Nástroj stojí v Z60 a vrtá se cyklem s R5. Kolik mm sjede rychloposuvem z počáteční roviny do roviny R?",
+      "answers": [
+        "55"
+      ],
+      "explanation": "60 − 5 = 55 mm.",
+      "hints": [
+        "Rychloposuv končí v rovině R."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který cyklus (Fanuc/ISO) vrtá s lámáním třísky krátkými zpětnými pohyby?",
+      "options": [
+        "G81",
+        "G85",
+        "G73",
+        "G84"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená parametr P v cyklu G82?",
+      "options": [
+        "hloubku jednoho zanoření",
+        "prodlevu na dně díry",
+        "rovinu přiblížení",
+        "posuv"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Na Sinumeriku se modální vyvolání cyklu ruší prázdným MCALL.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Hodnota Z ve vrtacím cyklu je délka vrtání měřená od roviny R.",
+      "answer": false,
+      "explanation": "Z je souřadnice dna díry (v G90 od nulového bodu obrobku)."
     }
   ]
 }

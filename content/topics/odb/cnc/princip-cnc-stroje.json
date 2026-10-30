@@ -474,6 +474,87 @@
       "type": "open",
       "question": "Jaké jsou výhody CNC stroje oproti ručnímu obráběcímu stroji?",
       "answer": "Opakovatelná přesnost u mnoha kusů, možnost vyrobit složité tvary (oblouky, plochy) souvislým řízením více os, automatická výměna nástrojů a menší závislost na zručnosti a únavě obsluhy. Program se dá uložit a použít znovu."
+    },
+    {
+      "type": "input",
+      "question": "Kuličkový šroub má stoupání 5 mm. Kolik otáček musí udělat, aby se stůl posunul o 45 mm?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "45 : 5 = 9 otáček.",
+      "hints": [
+        "Jedna otáčka posune stůl o stoupání.",
+        "Vyděl dráhu stoupáním."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Žádaná poloha osy X je 80,000 mm, odměřování hlásí 79,992 mm. O kolik mm musí osa ještě dojet?",
+      "answers": [
+        "0,008",
+        "0.008"
+      ],
+      "explanation": "80,000 − 79,992 = 0,008 mm. Tuto odchylku vyrovná uzavřená smyčka.",
+      "hints": [
+        "Odečti změřenou polohu od žádané."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hlavní pohon točí vřetenem, posuvové pohony posouvají osy.",
+      "answer": true,
+      "explanation": "Každá osa má vlastní posuvový pohon, vřeteno pohání hlavní pohon."
+    },
+    {
+      "type": "truefalse",
+      "question": "Běžný soustruh má hlavně osy X a Y.",
+      "answer": false,
+      "explanation": "Soustruh má hlavně osy X a Z; osa Z leží v ose vřetena."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je přímé odměřování lineárním pravítkem přesnější než snímač na motoru?",
+      "options": [
+        "pravítko je levnější a menší",
+        "snímač na motoru měří jen otáčky vřetena",
+        "pravítko měří polohu stolu, takže zachytí i vůli a teplotní prodloužení šroubu",
+        "pravítko nahrazuje kuličkový šroub"
+      ],
+      "answer": 2,
+      "explanation": "Snímač na motoru vůli ani prodloužení šroubu nevidí, pravítko měří skutečnou polohu stolu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj činnost frézaře na ručním stroji s tím, co ji dělá na CNC stroji.",
+      "pairs": [
+        [
+          "točení kličkou",
+          "servomotor s kuličkovým šroubem"
+        ],
+        [
+          "čtení stupnice",
+          "odměřování"
+        ],
+        [
+          "postup z výkresu",
+          "program v řídicím systému"
+        ],
+        [
+          "ruční výměna nástroje",
+          "výměník a zásobník"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která část CNC stroje tvoří pevnou kostru, nese ostatní části a tlumí chvění?",
+      "options": [
+        "lineární vedení",
+        "vřeteno",
+        "ovládací panel",
+        "lože a stojan"
+      ],
+      "answer": 3
     }
   ]
 }

@@ -465,6 +465,63 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady dodržuješ při práci na CNC stroji?",
       "answer": "Pracuji se zavřenými kryty, mám ochranné brýle, přiléhavý oděv a svázané vlasy, u rotujících částí nenosím rukavice. Ověřím upnutí, nenechám klíč ve sklíčidle, třísky odstraňuji háčkem při stojícím stroji. Nový program pouštím blok po bloku se sníženým posuvem a vím, kde je nouzové zastavení."
+    },
+    {
+      "type": "choice",
+      "question": "Proč musí CAM znát rozměry polotovaru?",
+      "options": [
+        "aby vybral správný postprocesor",
+        "aby nakreslil výkres",
+        "aby věděl, kde je materiál a kde nástroj jede naprázdno",
+        "aby nastavil nulový bod stroje M"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Simulace v CAM může odhalit, že držák nástroje narazí do svěráku.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Při prvním najetí vidíš na displeji, že nástroj má dojet mnohem hlouběji, než je povrch obrobku. Co uděláš?",
+      "options": [
+        "počkáš, jestli se to samo opraví",
+        "okamžitě zastavíš a zkontroluješ nulový bod a délkovou korekci",
+        "zvýšíš override, ať je to rychle hotové",
+        "otevřeš dveře a podíváš se zblízka"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Když soustruh spouštíš jen na chvíli, může klíč zůstat ve sklíčidle.",
+      "answer": false,
+      "explanation": "Klíč ve sklíčidle nesmí zůstat nikdy – při roztočení by ho stroj vymrštil."
+    },
+    {
+      "type": "input",
+      "question": "Díl má šířku 100 mm. Hrubování nechá přídavek 0,3 mm na každé straně. Jaká bude šířka po hrubování v mm?",
+      "answers": [
+        "100,6",
+        "100.6"
+      ],
+      "explanation": "100 + 2 · 0,3 = 100,6 mm. Přídavek pak odebere dokončení.",
+      "hints": [
+        "Přídavek je na obou stranách."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kontrolu u stroje před sérií.",
+      "items": [
+        "ověřit nástroje a jejich korekce",
+        "změřit a zapsat nulový bod",
+        "zavřít kryty a zapnout blok po bloku",
+        "zkušební běh se sníženým posuvem",
+        "změřit první kus",
+        "pustit sérii"
+      ]
     }
   ]
 }

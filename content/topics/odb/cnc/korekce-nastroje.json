@@ -422,6 +422,71 @@
       "type": "open",
       "question": "Na co slouží délková korekce?",
       "answer": "Každý nástroj je jinak dlouhý. Délková korekce v tabulce řekne systému délku každého nástroje, takže nulový bod obrobku v ose Z platí pro špičku všech nástrojů stejně a není třeba měnit program."
+    },
+    {
+      "type": "input",
+      "question": "Jak daleko v mm leží ekvidistanta od kontury pro frézu průměru 16 mm?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "Ekvidistanta je od kontury vzdálená o poloměr: 16 : 2 = 8 mm."
+    },
+    {
+      "type": "choice",
+      "question": "Vnější obrys objíždíš proti směru hodinových ručiček (pohled shora). Kterou korekci použiješ?",
+      "options": [
+        "G41",
+        "G42",
+        "G40",
+        "G43"
+      ],
+      "answer": 1,
+      "explanation": "Na spodní hraně jedeš doprava, obrobek je nad tebou (vlevo), fréza venku vpravo → G42.",
+      "hints": [
+        "Postav se na spodní hranu a dívej se ve směru jízdy."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vnější obrys má mít 60,00 mm, naměříš 59,96 mm. O kolik mm opravíš korekci poloměru? (číslo se znaménkem)",
+      "answers": [
+        "0,02",
+        "+0,02",
+        "0.02",
+        "+0.02"
+      ],
+      "explanation": "Díl je menší o 0,04 mm, na každé straně o 0,02 mm. Poloměr se zvětší o 0,02 mm, fréza pojede dál od kontury.",
+      "hints": [
+        "Odchylku rozděl na dvě strany.",
+        "Díl je menší – má fréza jet blíž, nebo dál?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se nástroj opotřebuje a rozměr nesedí, upraví se korekce v tabulce a program zůstane stejný.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapne délková korekce na frézce s Fanucem?",
+      "options": [
+        "G41 D…",
+        "G54",
+        "G43 H…",
+        "T0303"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Jaké frézování vznikne s pravořeznou frézou (M03) a korekcí G41?",
+      "options": [
+        "nesousledné",
+        "sousledné",
+        "čelní soustružení"
+      ],
+      "answer": 1,
+      "explanation": "Fréza se v záběru otáčí ve stejném směru, jakým se posouvá – to je sousledné frézování."
     }
   ]
 }
