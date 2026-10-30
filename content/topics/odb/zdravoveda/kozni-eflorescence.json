@@ -493,6 +493,73 @@
       "type": "open",
       "question": "Proč musí kosmetička znát kožní eflorescence?",
       "answer": "Aby uměla popsat stav pleti, rozpoznala možné nakažlivé nebo vážné onemocnění a věděla, kdy ošetření odmítnout a poslat klienta k lékaři. Některé eflorescence, třeba pustuly, se nesmí vymačkávat."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje větší dutina s čirou tekutinou, třeba puchýř po popálení?",
+      "options": [
+        "vezikula",
+        "pustula",
+        "bula",
+        "cysta"
+      ],
+      "answer": 2,
+      "explanation": "Malá dutinka s tekutinou je vezikula, větší je bula."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má na tváři hluboké, tuhé a bolestivé ložisko, větší než pupínek. Jak se jmenuje?",
+      "options": [
+        "papula",
+        "nodus",
+        "makula"
+      ],
+      "answer": 1,
+      "explanation": "Nodus (uzel) je větší, hlouběji uložené tuhé ložisko, např. u těžkého akné."
+    },
+    {
+      "type": "truefalse",
+      "question": "Šupina je sekundární eflorescence a hojí se bez jizvy.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj sekundární eflorescenci s popisem.",
+      "pairs": [
+        [
+          "eroze",
+          "povrchové mokvání jen v pokožce"
+        ],
+        [
+          "ragáda",
+          "trhlina v kůži"
+        ],
+        [
+          "vřed",
+          "hluboký defekt do škáry"
+        ],
+        [
+          "jizva",
+          "náhrada tkáně vazivem"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pevný pupínek bez tekutiny je pustula.",
+      "answer": false,
+      "explanation": "Pustula obsahuje hnis. Pevný pupínek bez tekutiny je papula."
+    },
+    {
+      "type": "input",
+      "question": "Jak se latinsky jmenuje skvrna, tedy změna barvy v úrovni kůže?",
+      "answers": [
+        "makula",
+        "macula"
+      ],
+      "hints": [
+        "Česky skvrna, latinsky začíná na „m“."
+      ]
     }
   ]
 }

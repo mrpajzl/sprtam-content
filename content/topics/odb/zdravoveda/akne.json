@@ -439,6 +439,68 @@
       "type": "open",
       "question": "Co smí kosmetička u klienta s akné dělat a kdy ho má poslat k lékaři?",
       "answer": "Smí šetrně čistit pleť, odstraňovat komedony, zklidňovat a poradit s domácí péčí a nekomedogenní kosmetikou. K dermatologovi patří klient s mnoha zanícenými projevy, uzly, cystami, jizvami nebo když se akné nelepší."
+    },
+    {
+      "type": "choice",
+      "question": "Jak vypadá zavřený komedon?",
+      "options": [
+        "černá tečka",
+        "drobný bělavý pupínek bez otvoru",
+        "červený bolestivý uzel",
+        "pupínek s hnisem"
+      ],
+      "answer": 1,
+      "explanation": "Zavřený komedon je bílá tečka, otevřený je černá tečka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hlavní příčinou akné je čokoláda a málo časté mytí.",
+      "answer": false,
+      "explanation": "Hlavní roli hrají hormony, zvýšená tvorba mazu, ucpání folikulů, bakterie a dědičnost."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka si chce pleť s akné vysušovat lihem. Co jí poradíš?",
+      "options": [
+        "Ano, líh odstraní maz a akné zmizí.",
+        "Ano, ale jen večer.",
+        "Ne, líh pleť podráždí a oslabí bariéru, lepší je jemné čištění a lehký hydratační krém."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Masáž zanícené pleti s akné může šířit zánět.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Šestnáctiletá klientka má na čele a nose hodně černých teček a žádné červené pupínky. O jakou formu akné jde?",
+      "options": [
+        "nodulocystickou",
+        "papulopustulózní",
+        "komedonickou"
+      ],
+      "answer": 2,
+      "explanation": "Převažují komedony, zánět chybí – kosmetička nabídne čištění pleti."
+    },
+    {
+      "type": "match",
+      "question": "Spoj projev akné s tím, zda je zanícený.",
+      "pairs": [
+        [
+          "otevřený komedon",
+          "bez zánětu"
+        ],
+        [
+          "pustula",
+          "zánět s hnisem"
+        ],
+        [
+          "nodus",
+          "těžký zánět, hojí se jizvou"
+        ]
+      ]
     }
   ]
 }

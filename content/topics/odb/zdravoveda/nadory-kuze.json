@@ -446,6 +446,67 @@
       "type": "open",
       "question": "Jak se má kosmetička zachovat, když na klientovi uvidí podezřelé znaménko?",
       "answer": "Znaménko neošetřuje, nemasíruje a nedepiluje. Klidně a taktně klientovi řekne, že by stálo za to ukázat ho dermatologovi, a nestanovuje žádnou diagnózu."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má znaménko velké 8 mm, ale pravidelné a jednobarevné. Co uděláš?",
+      "options": [
+        "Nic, jednobarevné znaménko je vždy v pořádku.",
+        "Doporučím ho ukázat dermatologovi, protože je větší než 6 mm.",
+        "Odstraním ho pinzetou.",
+        "Přelíčím ho korektorem."
+      ],
+      "answer": 1,
+      "explanation": "Stačí jeden varovný znak z ABCDE, tady D (průměr nad 6 mm)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Melanom většinou bolí, takže si ho člověk snadno všimne.",
+      "answer": false,
+      "explanation": "Melanom většinou nebolí; pozná se podle vzhledu a změny (ABCDE)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj nezhoubný útvar s popisem.",
+      "pairs": [
+        [
+          "měkký fibrom",
+          "měkký stopkatý výrůstek na krku"
+        ],
+        [
+          "hemangiom",
+          "červený cévní útvar"
+        ],
+        [
+          "seboroická veruka",
+          "hnědý drsný „přilepený“ hrbolek"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená písmeno E v pravidle ABCDE?",
+      "options": [
+        "elasticita znaménka",
+        "vývoj – znaménko se mění",
+        "erupce pupínků"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Čím se liší nezhoubný nádor od zhoubného?",
+      "options": [
+        "Nezhoubný roste pomalu a nešíří se do jiných částí těla.",
+        "Nezhoubný je vždy černý.",
+        "Nezhoubný vždy metastazuje do plic."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Jednou za měsíc je dobré si prohlédnout svá znaménka, třeba pomocí zrcadla.",
+      "answer": true
     }
   ]
 }

@@ -441,6 +441,76 @@
       "type": "open",
       "question": "Co dělat při poranění kontaminovaným nástrojem?",
       "answer": "Ranku nechat chvíli krvácet, umýt mýdlem a vodou, vydezinfikovat a překrýt. Úraz zapsat a co nejdřív jít k lékaři, protože hrozí přenos žloutenky B a C nebo HIV."
+    },
+    {
+      "type": "choice",
+      "question": "Člověk nereaguje, ale dýchá normálně. Do jaké polohy ho dáš?",
+      "options": [
+        "na záda s podloženou hlavou",
+        "do zotavovací polohy na bok",
+        "do sedu s hlavou mezi koleny"
+      ],
+      "answer": 1,
+      "explanation": "Zotavovací poloha brání udušení zvratky nebo jazykem. Dál hlídáš dýchání."
+    },
+    {
+      "type": "input",
+      "question": "Jakým tempem stlačuješ hrudník při resuscitaci? Napiš spodní hranici počtu stlačení za minutu.",
+      "answers": [
+        "100",
+        "sto"
+      ],
+      "explanation": "Stlačuje se rychlostí 100–120 za minutu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tísňové číslo se složkou.",
+      "pairs": [
+        [
+          "150",
+          "hasiči"
+        ],
+        [
+          "155",
+          "zdravotnická záchranná služba"
+        ],
+        [
+          "158",
+          "policie"
+        ],
+        [
+          "112",
+          "jednotné evropské číslo"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Puchýře po popálení voskem je dobré propíchnout, aby se rychleji zhojily.",
+      "answer": false,
+      "explanation": "Puchýře se nepropichují, překryjí se sterilním krytím."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se oko vyplachuje od vnitřního koutku směrem ven?",
+      "options": [
+        "aby voda nestékala do druhého oka",
+        "aby se oko rychleji zavřelo",
+        "protože je to pohodlnější pro kosmetičku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co nepatří do lékárničky salonu?",
+      "options": [
+        "jednorázové rukavice",
+        "resuscitační rouška",
+        "sterilní obvazy",
+        "prášky na spaní pro klienty"
+      ],
+      "answer": 3,
+      "explanation": "Lékárnička obsahuje pomůcky pro první pomoc, ne léky pro klienty."
     }
   ]
 }
