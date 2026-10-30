@@ -457,6 +457,65 @@
       "type": "open",
       "question": "Jaký je rozdíl ve čtení značky nízkolegované a vysokolegované oceli?",
       "answer": "U nízkolegované oceli se čísla za prvky dělí faktorem (Cr, Mn, Ni, Si 4; Mo, V 10 atd.). U vysokolegované (začíná X) jsou čísla přímo procenta prvků. U obou je první číslo stonásobek obsahu uhlíku."
+    },
+    {
+      "type": "input",
+      "question": "Kolik % uhlíku obsahuje ocel 42CrMo4?",
+      "answers": [
+        "0,42",
+        "0.42"
+      ],
+      "explanation": "První číslo se dělí stem: 42 / 100 = 0,42 % C.",
+      "hints": [
+        "První číslo vyděl stem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená písmeno E ve značce E295?",
+      "options": [
+        "ocel pro ocelové konstrukce",
+        "strojní ocel",
+        "ocel pro tlakové nádoby",
+        "betonářská ocel"
+      ],
+      "answer": 1,
+      "explanation": "E = strojní oceli, číslo 295 je minimální mez kluzu v MPa."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přípona J2 ve značce S355J2 znamená zaručenou nárazovou práci 27 J při −20 °C.",
+      "answer": true,
+      "explanation": "JR znamená 27 J při +20 °C, J2 totéž při −20 °C."
+    },
+    {
+      "type": "input",
+      "question": "Kolik % vanadu obsahuje rychlořezná ocel HS6-5-2-5?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Čísla jsou v pořadí W-Mo-V-Co: 6 % W, 5 % Mo, 2 % V, 5 % Co.",
+      "hints": [
+        "U HS jsou čísla v pořadí W-Mo-V-Co."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kam patří ocel ČSN 17 240 podle prvního dvojčíslí?",
+      "options": [
+        "konstrukční oceli obvyklé jakosti",
+        "nástrojové oceli",
+        "vysokolegované oceli",
+        "ušlechtilé uhlíkové oceli"
+      ],
+      "answer": 2,
+      "explanation": "Třída 17 jsou vysokolegované oceli. ČSN 17 240 odpovídá korozivzdorné X5CrNi18-10."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ocel P265GH je betonářská ocel.",
+      "answer": false,
+      "explanation": "Písmeno P značí oceli pro tlakové nádoby. Betonářské oceli začínají písmenem B."
     }
   ]
 }

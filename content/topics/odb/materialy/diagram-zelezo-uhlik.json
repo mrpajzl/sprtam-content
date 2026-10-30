@@ -444,6 +444,65 @@
       "type": "open",
       "question": "Proč se ocel dá kovat a litina ne? Odpověz pomocí diagramu Fe–Fe₃C.",
       "answer": "Ocel (do 2,14 % C) jde ohřát do oblasti austenitu, který je tvárný. Litina má víc uhlíku, a tak v ní při teplotách pod tuhnutím zůstává ledeburit nebo grafit, které jsou křehké, a při kování by praskla."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik uhlíku nejvýš rozpustí ferit?",
+      "options": [
+        "0,77 %",
+        "2,14 %",
+        "asi 0,02 %",
+        "6,67 %"
+      ],
+      "answer": 2,
+      "explanation": "Ferit je železo α s nepatrným množstvím uhlíku, nejvýš asi 0,02 %."
+    },
+    {
+      "type": "input",
+      "question": "Přibližně kolik procent perlitu má pomalu ochlazená ocel s 0,231 % C? (odhad: obsah C děleno 0,77)",
+      "answers": [
+        "30"
+      ],
+      "explanation": "0,231 / 0,77 = 0,3 → asi 30 % perlitu, zbytek ferit.",
+      "hints": [
+        "Vyděl obsah uhlíku eutektoidním obsahem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hranice mezi ocelí a litinou je 0,77 % C.",
+      "answer": false,
+      "explanation": "Hranice je 2,14 % C. Obsah 0,77 % dělí oceli na podeutektoidní a nadeutektoidní."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou strukturu má pomalu ochlazená ocel s 1,0 % C?",
+      "options": [
+        "ferit + perlit",
+        "jen perlit",
+        "perlit + sekundární cementit",
+        "ledeburit"
+      ],
+      "answer": 2,
+      "explanation": "1,0 % je víc než 0,77 %, ocel je nadeutektoidní."
+    },
+    {
+      "type": "choice",
+      "question": "Při jaké teplotě ztuhne tavenina se 4,3 % C na ledeburit?",
+      "options": [
+        "727 °C",
+        "912 °C",
+        "1 148 °C",
+        "1 538 °C"
+      ],
+      "answer": 2,
+      "explanation": "Eutektický bod C: 4,3 % C a 1 148 °C."
+    },
+    {
+      "type": "truefalse",
+      "question": "Perlit je směs dvou fází: feritu a cementitu.",
+      "answer": true,
+      "explanation": "Pod mikroskopem jsou v perlitu vidět střídající se destičky feritu a cementitu."
     }
   ]
 }

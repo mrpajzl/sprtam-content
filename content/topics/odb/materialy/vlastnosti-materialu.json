@@ -511,6 +511,65 @@
       "type": "open",
       "question": "Jak postupuješ při výběru materiálu pro novou součást?",
       "answer": "Zjistím, jak bude součást namáhaná, v jakém prostředí pracuje a jak se bude vyrábět. Podle toho určím potřebné mechanické, chemické a technologické vlastnosti a vyberu materiál, který je splní a je co nejlevnější."
+    },
+    {
+      "type": "input",
+      "question": "Hustota hliníku je 2 700 kg/m³. Hmotnost hliníkové desky o objemu 0,005 m³ v kg =",
+      "answers": [
+        "13,5",
+        "13.5"
+      ],
+      "explanation": "m = ρ · V = 2 700 · 0,005 = 13,5 kg.",
+      "hints": [
+        "Hmotnost = hustota krát objem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost říká, jak snadno se z materiálu odebírají třísky nožem nebo frézou?",
+      "options": [
+        "tvařitelnost",
+        "obrobitelnost",
+        "slévatelnost",
+        "tvrdost"
+      ],
+      "answer": 1,
+      "explanation": "Obrobitelnost je technologická vlastnost. Výborně se obrábí například mosaz."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tepelná roztažnost patří mezi mechanické vlastnosti.",
+      "answer": false,
+      "explanation": "Tepelná roztažnost je fyzikální vlastnost: materiál ji má bez zatížení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Odolnost proti korozi patří mezi chemické vlastnosti.",
+      "answer": true,
+      "explanation": "Chemické vlastnosti popisují, jak materiál reaguje s okolím."
+    },
+    {
+      "type": "choice",
+      "question": "Víko hlavy motoru má být lehké, dobře odvádět teplo a mít složitý tvar. Jaký materiál zvolíš?",
+      "options": [
+        "šedou litinu",
+        "slitinu hliníku s křemíkem (silumin)",
+        "měď",
+        "konstrukční ocel"
+      ],
+      "answer": 1,
+      "explanation": "Hliník je lehký a vede teplo, slitina Al-Si se dobře odlévá do složitých tvarů."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výběru materiálu pro novou součást.",
+      "items": [
+        "zjistit namáhání součásti",
+        "zjistit prostředí",
+        "zjistit způsob výroby",
+        "vypsat potřebné vlastnosti a najít vhodné materiály",
+        "vybrat nejlevnější a nejdostupnější"
+      ]
     }
   ]
 }

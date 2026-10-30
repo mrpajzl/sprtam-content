@@ -417,6 +417,70 @@
       "type": "open",
       "question": "Proč se rázová zkouška dělá i za nízkých teplot?",
       "answer": "Mnoho ocelí je za mrazu křehčích. Zkouška při nízké teplotě ověří, že materiál zůstane houževnatý i v zimě, například u mostů, jeřábů nebo potrubí venku."
+    },
+    {
+      "type": "input",
+      "question": "Vzorek o průměru 10 mm (S₀ = 78,5 mm²) se přetrhl při největší síle 23 550 N. Rm v MPa =",
+      "answers": [
+        "300"
+      ],
+      "explanation": "Rm = Fm / S₀ = 23 550 / 78,5 = 300 MPa.",
+      "hints": [
+        "Rm = Fm / S₀."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "L₀ = 80 mm, Lu = 92 mm. Tažnost A v % =",
+      "answers": [
+        "15"
+      ],
+      "explanation": "A = (92 − 80) / 80 · 100 % = 12 / 80 · 100 % = 15 %.",
+      "hints": [
+        "Prodloužení vyděl původní délkou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která zkouška tvrdosti se nejlépe hodí pro litinu a jiné nestejnorodé materiály?",
+      "options": [
+        "Rockwell C",
+        "Vickers",
+        "Brinell",
+        "Charpy"
+      ],
+      "answer": 2,
+      "explanation": "Brinell dělá velký vtisk kuličkou, který zprůměruje nestejnorodou strukturu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čím větší číslo HRC, tím měkčí materiál.",
+      "answer": false,
+      "explanation": "Čím větší číslo tvrdosti (HB, HV i HRC), tím tvrdší materiál."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto zkoušek je destruktivní?",
+      "options": [
+        "ultrazvuková",
+        "kapilární",
+        "zkouška tahem",
+        "rentgenová"
+      ],
+      "answer": 2,
+      "explanation": "Při zkoušce tahem se vzorek přetrhne. Ostatní metody patří k defektoskopii a součást nepoškodí."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se značí smluvní mez kluzu u materiálů bez výrazné meze kluzu?",
+      "options": [
+        "Rm",
+        "Rp0,2",
+        "A",
+        "KV"
+      ],
+      "answer": 1,
+      "explanation": "Rp0,2 je napětí, při kterém trvalé prodloužení dosáhne 0,2 %."
     }
   ]
 }

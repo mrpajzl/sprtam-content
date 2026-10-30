@@ -460,6 +460,64 @@
       "type": "open",
       "question": "Uveď alespoň čtyři způsoby ochrany strojní součásti proti korozi.",
       "answer": "Volba korozivzdorného materiálu, konstrukce bez kapes s odtokem vody a s izolací různých kovů, kovové povlaky (zinkování, niklování, chromování), nátěry a práškové lakování, konverzní vrstvy (fosfátování, eloxování), katodická ochrana obětovanou anodou a konzervační oleje nebo inhibitory."
+    },
+    {
+      "type": "choice",
+      "question": "Pocínovaná plechovka je poškrábaná až na ocel. Co ve škrábanci koroduje?",
+      "options": [
+        "cín",
+        "železo",
+        "nic, cín chrání i ve škrábanci"
+      ],
+      "answer": 1,
+      "explanation": "Cín je ušlechtilejší než železo. Ve škrábanci je železo anoda a rozpouští se dokonce rychleji."
+    },
+    {
+      "type": "truefalse",
+      "question": "Korozivzdorná ocel ve slané vodě nemůže korodovat.",
+      "answer": false,
+      "explanation": "V chloridech se pasivní vrstva může místně porušit a vznikne bodová nebo štěrbinová koroze."
+    },
+    {
+      "type": "choice",
+      "question": "Která forma koroze napadá hranice zrn, zatímco povrch vypadá zdravě?",
+      "options": [
+        "bodová",
+        "rovnoměrná",
+        "mezikrystalová",
+        "štěrbinová"
+      ],
+      "answer": 2,
+      "explanation": "Mezikrystalová koroze hrozí například u nevhodně svařené korozivzdorné oceli."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se hořčíková anoda v bojleru musí kontrolovat a měnit?",
+      "options": [
+        "postupně se rozpouští místo nádrže",
+        "zabarvuje vodu",
+        "ztrácí magnetismus",
+        "ucpává přívod vody"
+      ],
+      "answer": 0,
+      "explanation": "Když se anoda spotřebuje, začne korodovat ocelová nádrž."
+    },
+    {
+      "type": "input",
+      "question": "Železo a zinek jsou spojené ve vlhku. Který kov koroduje? (jedno slovo)",
+      "answers": [
+        "zinek"
+      ],
+      "explanation": "Zinek je méně ušlechtilý než železo, je anodou a obětuje se.",
+      "hints": [
+        "Koroduje ten kov, který je v řadě ušlechtilosti víc vlevo."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ocel v suchém prostředí prakticky nerezaví, protože chybí elektrolyt.",
+      "answer": true,
+      "explanation": "Elektrochemická koroze potřebuje kov, elektrolyt a kyslík. Když jedno chybí, zastaví se nebo zpomalí."
     }
   ]
 }

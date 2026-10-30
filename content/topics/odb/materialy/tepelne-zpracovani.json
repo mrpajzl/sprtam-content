@@ -473,6 +473,62 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady dodržuješ při kalení do oleje?",
       "answer": "Používám ochranný štít nebo brýle, ohnivzdorný oděv a kalicí rukavice, díl držím kleštěmi. Díl ponořuji rychle a celý, aby olej nevzplanul, u lázně je víko a hasicí přístroj. S díly zacházím, jako by byly horké, i když nesvítí."
+    },
+    {
+      "type": "choice",
+      "question": "Na jakou teplotu se orientačně ohřívá ocel při žíhání na měkko?",
+      "options": [
+        "150–250 °C",
+        "550–650 °C",
+        "kolem A1, asi 680–740 °C",
+        "1 100–1 200 °C"
+      ],
+      "answer": 2,
+      "explanation": "Žíhání na měkko probíhá kolem A1. Rozsah 550–650 °C patří žíhání ke snížení pnutí."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se ocel 42CrMo4 kalí do oleje, a ne do vody jako C45?",
+      "options": [
+        "olej je levnější než voda",
+        "legovaná ocel má menší kritickou rychlost ochlazování",
+        "ve vodě by se legovaná ocel vůbec neochladila",
+        "v oleji se ocel rychleji ohřeje"
+      ],
+      "answer": 1,
+      "explanation": "Legovaná ocel se zakalí i při pomalejším ochlazení. Voda by v ní způsobila velké pnutí, deformace a trhliny."
+    },
+    {
+      "type": "input",
+      "question": "A3 oceli je 780 °C. Horní hranice kalicí teploty (A3 + 50 °C) ve °C =",
+      "answers": [
+        "830"
+      ],
+      "explanation": "780 + 50 = 830 °C."
+    },
+    {
+      "type": "truefalse",
+      "question": "Žíhání končí rychlým ochlazením ve vodě.",
+      "answer": false,
+      "explanation": "Při žíhání se ocel ochlazuje pomalu, obvykle v peci. Rychle se ochlazuje při kalení."
+    },
+    {
+      "type": "choice",
+      "question": "Pro které součásti se používá nízkoteplotní popouštění (asi 150–250 °C)?",
+      "options": [
+        "hřídele a ojnice",
+        "nástroje, měřidla a ložiska",
+        "svařované nosníky",
+        "šrouby vyšších pevností"
+      ],
+      "answer": 1,
+      "explanation": "Nástroje musí zůstat tvrdé, proto se popouštějí jen nízko. Hřídele a šrouby se zušlechťují vysokým popouštěním."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ocel pod 500 °C už nesvítí, ale pořád může popálit.",
+      "answer": true,
+      "explanation": "Proto se s díly zachází jen kleštěmi, i když vypadají vychladlé."
     }
   ]
 }
