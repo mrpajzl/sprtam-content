@@ -453,6 +453,66 @@
       "type": "open",
       "question": "Kdy se píše čárka před spojkou *a*?",
       "answer": "V poměru slučovacím ne. Čárku píšeme, když je *a* součástí jiného poměru (*, a proto*, *, a tak*, *, a přece*) nebo když před *a* končí vložená vedlejší věta."
+    },
+    {
+      "type": "choice",
+      "question": "*Učil se celý den, ale zkoušku neudělal.* – poměr:",
+      "options": [
+        "slučovací",
+        "důsledkový",
+        "odporovací"
+      ],
+      "answer": 2,
+      "explanation": "Druhá věta je v protikladu k první, spojka *ale* je odporovací."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém souvětí je poměr slučovací?",
+      "options": [
+        "Byl unavený, a proto šel spát.",
+        "Venku svítilo slunce a ptáci zpívali.",
+        "Chtěl jít ven, ale pršelo."
+      ],
+      "answer": 1,
+      "explanation": "Druhá věta jen přidává další informaci, proto je před *a* bez čárky."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je oslovení oddělené správně?",
+      "options": [
+        "Petře pojď sem.",
+        "Petře, pojď sem."
+      ],
+      "answer": 1,
+      "explanation": "Oslovení se od zbytku věty odděluje čárkou."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí *Petr maluje, Jana zpívá a děti si hrají.*?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Tři určitá slovesa: *maluje, zpívá, hrají*."
+    },
+    {
+      "type": "input",
+      "question": "Za kterým slovem chybí čárka? *Na výlet nejel neboť byl nemocný.*",
+      "answers": [
+        "nejel"
+      ],
+      "explanation": "Poměr je příčinný (*neboť*), takže se čárka píše."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Buď přijdeš včas, nebo pojedeme bez tebe.* – čárka před *nebo* je správně.",
+      "answer": true,
+      "explanation": "U dvojité spojky *buď – nebo* se před druhou částí čárka píše."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Nepřišel ani nezavolal.* se před *ani* píše čárka.",
+      "answer": false,
+      "explanation": "*ani* tu spojuje věty ve slučovacím poměru, proto se čárka nepíše."
     }
   ]
 }

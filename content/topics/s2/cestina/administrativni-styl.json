@@ -358,6 +358,67 @@
       "type": "open",
       "question": "Co by měl obsahovat motivační dopis?",
       "answer": "Na jakou pozici či školu se hlásím, proč právě tam, jaké mám zkušenosti a dovednosti a čím mohu přispět. Má být stručný, konkrétní, zdvořilý a s kontaktními údaji."
+    },
+    {
+      "type": "choice",
+      "question": "Které oslovení je vhodné v žádosti řediteli školy?",
+      "options": [
+        "Ahoj pane řediteli,",
+        "Vážený pane řediteli,",
+        "Milý řediteli!"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Do které části životopisu napíšeš *řidičský průkaz skupiny B*?",
+      "options": [
+        "vzdělání",
+        "pracovní zkušenosti",
+        "dovednosti"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Co patří do reklamace vadných sluchátek?",
+      "options": [
+        "hodnocení prodavače",
+        "příběh, jak sis sluchátka vybíral",
+        "popis vady a kopie účtenky"
+      ],
+      "answer": 2,
+      "explanation": "Reklamace uvádí, co reklamuješ, jakou to má vadu a co požaduješ. Přikládá se doklad o koupi."
+    },
+    {
+      "type": "input",
+      "question": "Co znamená zkratka *č. j.*? – dvě slova",
+      "answers": [
+        "číslo jednací"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ustálené formule jako *V příloze zasílám…* do administrativního stylu nepatří.",
+      "answer": false,
+      "explanation": "Ustálené formule jsou pro administrativní styl typické."
+    },
+    {
+      "type": "truefalse",
+      "question": "V úřední žádosti je nutné uvést, o co žádáš a z jakého důvodu.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části úřední žádosti.",
+      "items": [
+        "odesílatel",
+        "adresát",
+        "místo a datum",
+        "věc",
+        "oslovení",
+        "text žádosti"
+      ]
     }
   ]
 }

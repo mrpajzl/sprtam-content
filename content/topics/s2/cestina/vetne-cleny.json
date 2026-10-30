@@ -472,6 +472,68 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi přívlastkem shodným a neshodným?",
       "answer": "Shodný stojí obvykle před jménem a shoduje se s ním v rodě, čísle a pádě (*modré auto*). Neshodný stojí za jménem a neshoduje se (*dům s věží, kniha bratra*)."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký větný člen je *pečlivě* ve větě *Soused pečlivě opravil plot.*?",
+      "options": [
+        "přívlastek",
+        "příslovečné určení způsobu",
+        "předmět"
+      ],
+      "answer": 1,
+      "explanation": "Ptáme se od přísudku: opravil jak? → pečlivě."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké příslovečné určení je *pro mléko* ve větě *Šel pro mléko.*?",
+      "options": [
+        "místa",
+        "příčiny",
+        "účelu"
+      ],
+      "answer": 2,
+      "explanation": "Šel za jakým účelem? → pro mléko."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve spojení *modré auto* je *modré* přívlastek shodný.",
+      "answer": true,
+      "explanation": "Stojí před jménem a shoduje se s ním v rodě, čísle a pádě (modrého auta)."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký větný člen je *hladové* ve větě *Děti přišly ze školy hladové.*?",
+      "options": [
+        "přívlastek",
+        "doplněk",
+        "přísudek"
+      ],
+      "answer": 1,
+      "explanation": "Vztahuje se k podmětu i ke slovesu: Děti přišly. Byly hladové."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Stmívá se.* má nevyjádřený podmět.",
+      "answer": false,
+      "explanation": "Podmět nejde doplnit – je to věta jednočlenná."
+    },
+    {
+      "type": "input",
+      "question": "Napiš podmět věty *Na zahradě kvetly růže.*",
+      "answers": [
+        "růže"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky rozboru věty.",
+      "items": [
+        "najdi přísudek",
+        "najdi k němu podmět",
+        "ptej se od přísudku na předmět a příslovečná určení",
+        "ptej se od jmen na přívlastky"
+      ]
     }
   ]
 }

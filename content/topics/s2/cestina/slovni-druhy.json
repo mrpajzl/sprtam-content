@@ -411,6 +411,94 @@
       "type": "open",
       "question": "Proč nelze slovní druh vždy určit bez kontextu? Uveď příklad.",
       "answer": "Stejné slovo může mít ve větě různou funkci. *Vedle domu* – předložka (pojí se s 2. pádem), *stál vedle* – příslovce (určuje místo)."
+    },
+    {
+      "type": "input",
+      "question": "Jaký slovní druh je slovo *běh*?",
+      "answers": [
+        "podstatné jméno",
+        "podstatné",
+        "substantivum"
+      ],
+      "explanation": "Pojmenovává děj, ale skloňuje se (běhu, během) – je to podstatné jméno. Sloveso je *běžet*."
+    },
+    {
+      "type": "choice",
+      "question": "Ve větě *Šel kolem domu.* je slovo *kolem*:",
+      "options": [
+        "příslovce",
+        "spojka",
+        "předložka"
+      ],
+      "answer": 2,
+      "explanation": "Stojí před jménem a určuje jeho pád (kolem domu – 2. pád)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zájmeno s jeho druhem.",
+      "pairs": [
+        [
+          "ten",
+          "ukazovací"
+        ],
+        [
+          "kdo",
+          "tázací"
+        ],
+        [
+          "nikdo",
+          "záporné"
+        ],
+        [
+          "sebe",
+          "osobní zvratné"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je příslovce?",
+      "options": [
+        "venkov",
+        "venku",
+        "venkovský"
+      ],
+      "answer": 1,
+      "explanation": "*Venku* určuje místo (kde?) a nemění tvar. *Venkov* je podstatné jméno, *venkovský* přídavné jméno."
+    },
+    {
+      "type": "truefalse",
+      "question": "Citoslovce patří mezi neohebné slovní druhy.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Ve větě *Pes dnes nechtěl jít ven.* je slovo *ven*:",
+      "options": [
+        "předložka",
+        "příslovce",
+        "podstatné jméno"
+      ],
+      "answer": 1,
+      "explanation": "Určuje okolnost děje (kam?) a nepojí se s žádným jménem."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je spojka?",
+      "options": [
+        "prý",
+        "do",
+        "že",
+        "kéž"
+      ],
+      "answer": 2,
+      "explanation": "*Prý* a *kéž* jsou částice, *do* je předložka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo *otcův* je zájmeno.",
+      "answer": false,
+      "explanation": "*Otcův* je přivlastňovací přídavné jméno (čí?)."
     }
   ]
 }

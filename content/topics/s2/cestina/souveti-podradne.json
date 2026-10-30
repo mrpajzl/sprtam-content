@@ -427,6 +427,74 @@
       "type": "open",
       "question": "Rozeber souvětí *Když jsem přišel domů, zjistil jsem, že mi někdo vzal kolo.*",
       "answer": "Tři věty. Hlavní *zjistil jsem*. *Když jsem přišel domů* – VV příslovečná časová (kdy?). *Že mi někdo vzal kolo* – VV předmětná (co?)."
+    },
+    {
+      "type": "choice",
+      "question": "*Nevím, kdy přijede.* – druh VV:",
+      "options": [
+        "časová",
+        "předmětná",
+        "podmětná"
+      ],
+      "answer": 1,
+      "explanation": "Ptáme se: nevím **co?** Spojovací výraz *kdy* nerozhoduje, rozhoduje otázka."
+    },
+    {
+      "type": "choice",
+      "question": "*Pokud budeš mít čas, zavolej mi.* – druh VV:",
+      "options": [
+        "časová",
+        "přípustková",
+        "podmínková"
+      ],
+      "answer": 2,
+      "explanation": "Zavolej mi **za jaké podmínky?**"
+    },
+    {
+      "type": "choice",
+      "question": "*Mluvil tak, jak mu zobák narostl.* – druh VV:",
+      "options": [
+        "místní",
+        "způsobová",
+        "příčinná"
+      ],
+      "answer": 1,
+      "explanation": "Mluvil **jak?** → VV příslovečná způsobová."
+    },
+    {
+      "type": "choice",
+      "question": "*Zůstal doma, poněvadž byl nemocný.* – druh VV:",
+      "options": [
+        "účelová",
+        "podmínková",
+        "příčinná"
+      ],
+      "answer": 2,
+      "explanation": "Zůstal doma **proč?** → VV příslovečná příčinná."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí *Myslím, že bude chtít jít s námi.*?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Určitá slovesa jsou *myslím* a *bude chtít*. Infinitivy *chtít, jít* další větu netvoří."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Bojím se, aby nepršelo.* jde o VV účelovou, protože začíná spojkou *aby*.",
+      "answer": false,
+      "explanation": "Bojím se **čeho?** → VV předmětná. Druh se neurčuje podle spojky."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky rozboru souvětí.",
+      "items": [
+        "Najdi určitá slovesa a spočítej věty.",
+        "Najdi hlavní větu.",
+        "Z řídící věty se zeptej na každou vedlejší.",
+        "Podle otázky urči druh vedlejší věty."
+      ]
     }
   ]
 }

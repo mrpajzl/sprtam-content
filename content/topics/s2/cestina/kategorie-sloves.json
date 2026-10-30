@@ -412,6 +412,92 @@
       "type": "open",
       "question": "Vysvětli rozdíl mezi dokonavým a nedokonavým videm.",
       "answer": "Nedokonavá slovesa vyjadřují děj probíhající nebo opakovaný (*psát*) a mají tři časy. Dokonavá vyjadřují děj ukončený (*napsat*); tvar přítomného času u nich znamená budoucnost (*napíšu*)."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký vid má sloveso *psát*?",
+      "options": [
+        "dokonavý",
+        "nedokonavý"
+      ],
+      "answer": 1,
+      "explanation": "Děj probíhá – dá se říct *Teď právě píšu*."
+    },
+    {
+      "type": "input",
+      "question": "Kolikátá osoba je tvar *čtete*? (číslo)",
+      "answers": [
+        "2",
+        "2.",
+        "druhá"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vyber spisovný tvar.",
+      "options": [
+        "kdyby jste",
+        "kdybyste",
+        "kdyby ste"
+      ],
+      "answer": 1,
+      "explanation": "*Kdybyste* se píše dohromady jako jedno slovo."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký způsob je *Šel bych ven.*?",
+      "options": [
+        "oznamovací",
+        "rozkazovací",
+        "podmiňovací"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "U tvaru *byli bychom pozváni* určujeme čas.",
+      "answer": false,
+      "explanation": "Čas určujeme jen u způsobu oznamovacího, tady je podmiňovací."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký slovesný rod je ve větě *Petr napsal dopis.*?",
+      "options": [
+        "činný",
+        "trpný"
+      ],
+      "answer": 0,
+      "explanation": "Děj dělá podmět (Petr)."
+    },
+    {
+      "type": "input",
+      "question": "Napiš budoucí čas slovesa *jet* v 1. os. j. č.",
+      "answers": [
+        "pojedu"
+      ],
+      "explanation": "Slovesa pohybu tvoří budoucí čas předponou: *pojedu*, ne *budu jet*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso se slovesnou třídou (podle 3. os. j. č. přítomného času).",
+      "pairs": [
+        [
+          "nese",
+          "1."
+        ],
+        [
+          "mine",
+          "2."
+        ],
+        [
+          "kryje",
+          "3."
+        ],
+        [
+          "volá",
+          "5."
+        ]
+      ]
     }
   ]
 }

@@ -404,6 +404,67 @@
       "type": "open",
       "question": "Proč píšeme *Děti si hrály* s -y?",
       "answer": "Podstatné jméno *děti* je v množném čísle rodu ženského (skloňuje se podle vzoru kost), proto přísudek končí na -y."
+    },
+    {
+      "type": "choice",
+      "question": "*Stoly a židle stál_ v řadě.*",
+      "options": [
+        "i",
+        "y",
+        "a"
+      ],
+      "answer": 1,
+      "explanation": "Mužský neživotný + ženský, mužský životný chybí → -y."
+    },
+    {
+      "type": "input",
+      "question": "Doplň písmeno: *Lidé čekal_ na nádraží.*",
+      "answers": [
+        "i"
+      ],
+      "explanation": "*Lidé* jsou mužský životný."
+    },
+    {
+      "type": "choice",
+      "question": "*Okna a dveře byl_ otevřené.*",
+      "options": [
+        "i",
+        "y",
+        "a"
+      ],
+      "answer": 1,
+      "explanation": "*Dveře* jsou ženského rodu, takže nejsou všechny podměty střední → -y."
+    },
+    {
+      "type": "choice",
+      "question": "*Na stole ležel_ knihy a sešity.*",
+      "options": [
+        "i",
+        "y",
+        "a"
+      ],
+      "answer": 1,
+      "explanation": "Ženský + mužský neživotný → -y."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Města rostla.* je napsaná správně.",
+      "answer": true,
+      "explanation": "*Město* je střední rod → -a."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Auta a motorky stála na parkovišti.* je koncovka správně.",
+      "answer": false,
+      "explanation": "*Motorky* jsou ženského rodu, správně *stály*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň písmeno: *Myši utekl_ do díry.*",
+      "answers": [
+        "y"
+      ],
+      "explanation": "*Myš* je ženského rodu."
     }
   ]
 }
