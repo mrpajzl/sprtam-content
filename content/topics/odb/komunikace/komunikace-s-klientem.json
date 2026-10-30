@@ -353,6 +353,76 @@
       "type": "open",
       "question": "Co je aktivní naslouchání a proč je důležité?",
       "answer": "Je to pozorné poslouchání, které klientovi dávám najevo: oční kontakt, přikývnutí, parafráze, doplňující otázky. Díky němu zjistím skutečnou potřebu a klient cítí, že ho beru vážně."
+    },
+    {
+      "type": "choice",
+      "question": "Která otázka je uzavřená?",
+      "options": [
+        "Co vás na pleti teď trápí?",
+        "Jaký styl máte doma?",
+        "Vyhovuje vám úterý v deset?",
+        "Jak se cítíte po ošetření?"
+      ],
+      "answer": 2,
+      "explanation": "Na otázku „Vyhovuje vám úterý v deset?“ stačí odpovědět ano/ne. Ostatní vyžadují odpověď větou."
+    },
+    {
+      "type": "choice",
+      "question": "Zákazník v obchodě řekne: „Hledám dárek pro tátu.“ Co uděláš nejdřív?",
+      "options": [
+        "ukážeš mu nejdražší kus v obchodě",
+        "zeptáš se otevřeně, co tátu baví",
+        "vyjmenuješ všechno, co máte"
+      ],
+      "answer": 1,
+      "explanation": "Nejdřív zjišťuješ potřebu otevřenými otázkami. Nabízíš až potom."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozhovor složený jen z uzavřených otázek působí jako výslech a dozvíš se z něj málo.",
+      "answer": true,
+      "explanation": "Na uzavřené otázky klient odpoví jen „ano“ nebo „ne“. Otevřené otázky ho nechají mluvit."
+    },
+    {
+      "type": "truefalse",
+      "question": "Skutečnou potřebu klienta poznáš vždy už z jeho první věty.",
+      "answer": false,
+      "explanation": "První věta je často jen povrch. Skutečná potřeba se ukáže až z doplňujících otázek."
+    },
+    {
+      "type": "choice",
+      "question": "Klient řekne: „Pleť mám pořád mastnou.“ Která odpověď je parafráze?",
+      "options": [
+        "„Máte mastnou pleť?“",
+        "„Takže vás trápí lesk během dne.“",
+        "„Tady máte krém.“",
+        "„To má hodně lidí.“"
+      ],
+      "answer": 1,
+      "explanation": "Parafráze zopakuje klientova slova vlastními slovy a ověří, že jste si rozuměli."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup od otázky k nabídce.",
+      "items": [
+        "zeptat se otevřeně a nechat klienta domluvit",
+        "aktivně naslouchat",
+        "zopakovat potřebu parafrází",
+        "nabídnout řešení přesně pro tuto potřebu",
+        "uzavřenou otázkou potvrdit dohodu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve které fázi prodejního rozhovoru používáš hlavně otevřené otázky?",
+      "options": [
+        "přivítání",
+        "zjišťování potřeb",
+        "uzavření",
+        "rozloučení"
+      ],
+      "answer": 1,
+      "explanation": "Otevřené otázky slouží ke zjištění potřeb. Na konci se dohoda potvrzuje uzavřenými otázkami."
     }
   ]
 }

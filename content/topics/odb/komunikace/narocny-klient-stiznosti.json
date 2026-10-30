@@ -395,6 +395,83 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi stížností a reklamací?",
       "answer": "Stížnost je jakýkoli projev nespokojenosti, třeba s chováním personálu. Reklamace je uplatnění práva z vadného zboží nebo služby – zákazník žádá opravu, výměnu, slevu nebo vrácení peněz podle zákona."
+    },
+    {
+      "type": "choice",
+      "question": "Klient tě neustále poučuje a všechno ví lépe. Jak s ním jednat?",
+      "options": [
+        "přerušit ho a opravit každou chybu",
+        "ocenit jeho znalosti a mluvit věcně",
+        "jeho poznámky ignorovat"
+      ],
+      "answer": 1,
+      "explanation": "Vševěd potřebuje uznání. Když ocením jeho znalosti a mluvím věcně, spolupráce je snazší."
+    },
+    {
+      "type": "choice",
+      "question": "Zákazník pořád smlouvá o slevu. Co pomáhá?",
+      "options": [
+        "slevit pokaždé, když naléhá",
+        "přestat s ním mluvit",
+        "vysvětlit hodnotu zboží a držet se jasných pravidel slev"
+      ],
+      "answer": 2,
+      "explanation": "Slevu dáváš jen podle pravidel obchodu, ne pod tlakem. Vysvětlení hodnoty pomůže zákazníkovi cenu přijmout."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stížnost je pro firmu cenná informace o tom, co zlepšit.",
+      "answer": true,
+      "explanation": "Nespokojený klient ukazuje slabé místo služby. Kdo si nestěžuje, často jen tiše odejde."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozzlobenému klientovi je nejlepší hned předložit argumenty, proč nemá pravdu.",
+      "answer": false,
+      "explanation": "Rozzlobený člověk neposlouchá argumenty. Nejdřív uklidníš emoce – vyslechneš a projevíš empatii – a pak řešíš fakta."
+    },
+    {
+      "type": "input",
+      "question": "Barvu naneseš na malé místo kůže a 24–48 hodin sleduješ reakci. Jak se jmenuje tento test? (test …)",
+      "answers": [
+        "snášenlivosti",
+        "test snášenlivosti",
+        "snasenlivosti"
+      ],
+      "explanation": "Test snášenlivosti odhalí alergickou reakci dřív, než barvu použiješ na řasy nebo obočí."
+    },
+    {
+      "type": "choice",
+      "question": "Zákazník reklamuje prasklinu na starožitné židli. Prasklina ale byla při prodeji uvedená na dokladu. Co uděláš?",
+      "options": [
+        "hned mu vrátíš peníze, ať je klid",
+        "klidně mu ukážeš záznam o vadě na dokladu",
+        "řekneš mu, že reklamace nepřijímáte"
+      ],
+      "answer": 1,
+      "explanation": "Vada, o které zákazník při koupi věděl, není důvodem k reklamaci. Vysvětlíš to klidně a s doklady."
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ náročného klienta s tím, jak se chová.",
+      "pairs": [
+        [
+          "vševěd",
+          "poučuje"
+        ],
+        [
+          "smlouvající",
+          "chce slevu"
+        ],
+        [
+          "nerozhodný",
+          "váhá a neví, co chce"
+        ],
+        [
+          "nedůvěřivý",
+          "pochybuje a chce důkazy"
+        ]
+      ]
     }
   ]
 }

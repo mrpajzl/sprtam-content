@@ -384,6 +384,74 @@
       "type": "open",
       "question": "Jaké části má mít obchodní e-mail a jakým stylem ho píšeš?",
       "answer": "Výstižný předmět, oslovení, stručný text k věci, pozdrav a podpis s kontakty. Píšu formálně, vykám, bez smajlíků a před odesláním zkontroluji pravopis a přílohu."
+    },
+    {
+      "type": "choice",
+      "question": "Nejpozději po kolikátém zazvonění bys měl zvednout telefon?",
+      "options": [
+        "po prvním",
+        "po třetím",
+        "po pátém",
+        "až dozvoní"
+      ],
+      "answer": 1,
+      "explanation": "Zvedni nejpozději po třetím zazvonění, ať volající nečeká a nezavěsí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Telefonický hovor ukončuje spíš ten, kdo volal.",
+      "answer": true,
+      "explanation": "Volající ví, jestli už vyřídil vše, co potřeboval."
+    },
+    {
+      "type": "choice",
+      "question": "Které oslovení se hodí do e-mailu klientce?",
+      "options": [
+        "Ahoj Jano,",
+        "Nováková,",
+        "Dobrý den, paní Nováková,"
+      ],
+      "answer": 2,
+      "explanation": "S klienty píšeš formálně. Za oslovením je čárka a text pokračuje na novém řádku malým písmenem."
+    },
+    {
+      "type": "truefalse",
+      "question": "V e-mailu musíš psát „Vám“ a „Váš“ vždy s velkým písmenem, malé písmeno je chyba.",
+      "answer": false,
+      "explanation": "Velké písmeno vyjadřuje zdvořilost, ale malé písmeno je také správně."
+    },
+    {
+      "type": "choice",
+      "question": "Do kdy obvykle odpovíš na e-mail od klienta?",
+      "options": [
+        "do týdne",
+        "do jednoho pracovního dne",
+        "až budeš mít volnou chvíli"
+      ],
+      "answer": 1,
+      "explanation": "Rychlá odpověď, obvykle do jednoho pracovního dne, působí profesionálně."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky přijetí telefonického hovoru.",
+      "items": [
+        "zvednout nejpozději po třetím zazvonění",
+        "ohlásit se pozdravem, názvem provozovny a jménem",
+        "zjistit, co volající potřebuje",
+        "rekapitulovat dohodu",
+        "poděkovat a rozloučit se"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka nepřišla na ošetření a neomluvila se. Jaký e-mail jí napíšeš?",
+      "options": [
+        "s výčitkami, ať se to už neopakuje",
+        "žádný, takovou klientku už nechceš",
+        "věcný a zdvořilý, s nabídkou nového termínu"
+      ],
+      "answer": 2,
+      "explanation": "Bez výčitek a věcně. Klientka mohla mít vážný důvod a nabídka nového termínu ji udrží."
     }
   ]
 }
