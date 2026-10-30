@@ -407,6 +407,79 @@
       "type": "open",
       "question": "Jaké zásady bezpečnosti platí na vrtačce?",
       "answer": "Obrobek pevně upnout do svěráku nebo upínkou, nikdy nedržet rukou. Ochranné brýle, žádné rukavice ani volné oblečení, vlasy pod čepicí. Klíč vyndat ze sklíčidla. Třísky odstraňovat štětečkem po zastavení."
+    },
+    {
+      "type": "input",
+      "question": "Podle pravidla d − P: průměr díry pro závit M12 se stoupáním 1,75 mm v mm =",
+      "answers": [
+        "10,25",
+        "10.25",
+        "10,2",
+        "10.2"
+      ],
+      "explanation": "12 − 1,75 = 10,25 mm, v praxi se volí vrták 10,2 mm.",
+      "hints": [
+        "Od jmenovitého průměru odečti stoupání."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vrták ⌀20 mm, vc = 31,4 m/min. Otáčky v ot/min =",
+      "answers": [
+        "500"
+      ],
+      "explanation": "1000 · 31,4 / (3,14 · 20) = 500",
+      "hints": [
+        "n = 1000 · vc / (π · D)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Délka hrotu vrtáku je asi 0,3 · D. Kolik mm to je u vrtáku ⌀20 mm?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "0,3 · 20 = 6 mm"
+    },
+    {
+      "type": "input",
+      "question": "Díra hloubky 40 mm, vrták ⌀10 mm (hrot asi 3 mm), náběh 2 mm, f = 0,1 mm/ot, n = 450 ot/min. Strojní čas v min =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "L = 40 + 3 + 2 = 45 mm. t = 45 / (0,1 · 450) = 45 / 45 = 1 min.",
+      "hints": [
+        "Do dráhy L započítej hloubku, hrot i náběh.",
+        "t = L / (f · n)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se před vrtáním střed díry označí důlčíkem nebo navrtávákem?",
+      "options": [
+        "aby se vrták méně zahříval",
+        "aby vrták na začátku neujel",
+        "aby díra byla hladší",
+        "aby se nemusel upínat obrobek"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Výstružník ubírá jen malý přídavek, řádově desetiny milimetru.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Díra pro ložisko ⌀62 ve skříni převodovky se na přesný rozměr nejčastěji dokončí…",
+      "options": [
+        "vrtáním velkým vrtákem",
+        "zahlubováním",
+        "vyvrtáváním",
+        "řezáním závitu"
+      ],
+      "answer": 2,
+      "explanation": "Vyvrtávací tyč s nožem zvětší a zpřesní už existující velkou díru."
     }
   ]
 }

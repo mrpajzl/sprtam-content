@@ -428,6 +428,66 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady platí při obrábění?",
       "answer": "Ochranné brýle, přiléhavý oděv, žádné rukavice, šperky ani rozpuštěné vlasy u rotujících částí. Obrobek i nástroj pevně upnout, klíč vyndat ze sklíčidla. Třísky odstraňovat háčkem nebo smetáčkem při stojícím stroji, neměřit za chodu."
+    },
+    {
+      "type": "input",
+      "question": "D = 80 mm, n = 400 ot/min. Řezná rychlost v m/min (zaokrouhli na celé) =",
+      "answers": [
+        "100",
+        "100,5",
+        "100.5"
+      ],
+      "explanation": "3,14 · 80 · 400 / 1000 ≈ 100,5 m/min",
+      "hints": [
+        "vc = π · D · n / 1000"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Soustružíš z ⌀72 na ⌀65 jedním průchodem. Hloubka řezu v mm =",
+      "answers": [
+        "3,5",
+        "3.5"
+      ],
+      "explanation": "(72 − 65) / 2 = 3,5 mm",
+      "hints": [
+        "Rozdíl průměrů rozděl na dvě strany osy."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Po které ploše břitu odchází tříska?",
+      "options": [
+        "po hřbetu",
+        "po čele",
+        "po stopce",
+        "po upínací ploše"
+      ],
+      "answer": 1,
+      "explanation": "Hřbet je obrácený k obrobku, tříska odchází po čele."
+    },
+    {
+      "type": "choice",
+      "question": "Který nástrojový materiál změkne už kolem 250 °C?",
+      "options": [
+        "slinutý karbid",
+        "rychlořezná ocel",
+        "nástrojová uhlíková ocel",
+        "řezná keramika"
+      ],
+      "answer": 2,
+      "explanation": "Proto se uhlíková ocel používá jen na ruční nářadí a pilníky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Plynulou třísku z houževnaté oceli láme utvařeč na čele destičky.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejné řezné rychlosti potřebuje menší průměr nižší otáčky.",
+      "answer": false,
+      "explanation": "n = 1000 · vc / (π · D). Menší D znamená vyšší otáčky."
     }
   ]
 }

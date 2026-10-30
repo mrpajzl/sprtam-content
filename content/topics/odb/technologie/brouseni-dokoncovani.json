@@ -403,6 +403,64 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady platí při broušení?",
       "answer": "Kotouč před upnutím prohlédnout a ozvučit, nesmí se překročit dovolená rychlost, musí být nasazený kryt, opěrka nejvýše asi 3 mm od kotouče. Pracuje se s brýlemi nebo štítem a při rozběhu se stojí mimo rovinu kotouče."
+    },
+    {
+      "type": "input",
+      "question": "Kotouč ⌀250 mm, n = 3 000 ot/min. Obvodová rychlost v m/s (zaokrouhli na celé) =",
+      "answers": [
+        "39",
+        "39,25",
+        "39.25"
+      ],
+      "explanation": "3,14 · 250 · 3000 / 60 000 ≈ 39,25 m/s",
+      "hints": [
+        "v = π · D · n / 60 000"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které brusivo se nejčastěji používá na broušení oceli?",
+      "options": [
+        "karbid křemíku (SiC)",
+        "umělý korund (Al₂O₃)",
+        "diamant",
+        "ocelový písek"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Která tvrdost kotouče je z uvedených nejtvrdší?",
+      "options": [
+        "A",
+        "H",
+        "P"
+      ],
+      "answer": 2,
+      "explanation": "Tvrdost se značí písmeny od A (velmi měkký) po Z (velmi tvrdý)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Prasklý kotouč při ozvučení poklepem zní jasně, zdravý drnčí.",
+      "answer": false,
+      "explanation": "Je to naopak: zdravý kotouč zní jasně, prasklý drnčí."
+    },
+    {
+      "type": "choice",
+      "question": "Při které dokončovací metodě je brusivo volně v pastě mezi dílem a nástrojem?",
+      "options": [
+        "honování",
+        "superfinišování",
+        "lapování",
+        "broušení na plocho"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Broušením dosáhneš menší drsnosti Ra než soustružením.",
+      "answer": true,
+      "explanation": "Soustružení dává Ra řádově jednotky µm, broušení desetiny µm."
     }
   ]
 }

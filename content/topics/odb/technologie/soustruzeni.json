@@ -430,6 +430,67 @@
       "type": "open",
       "question": "Jak spočítáš strojní čas soustružení a na čem závisí?",
       "answer": "t = L/(f·n), kde L je délka plochy plus náběh a přeběh, f posuv na otáčku a n otáčky. Čas se zkrátí větším posuvem nebo vyššími otáčkami, a násobí se počtem průchodů."
+    },
+    {
+      "type": "input",
+      "question": "Válec délky 196 mm, náběh 2 mm, přeběh 2 mm, f = 0,2 mm/ot, n = 500 ot/min. Strojní čas v min =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "L = 196 + 2 + 2 = 200 mm. t = 200 / (0,2 · 500) = 2 min.",
+      "hints": [
+        "Nejdřív přičti náběh a přeběh.",
+        "t = L / (f · n)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hřídel ⌀100 mm, vc = 157 m/min. Otáčky v ot/min =",
+      "answers": [
+        "500"
+      ],
+      "explanation": "1000 · 157 / (3,14 · 100) = 500",
+      "hints": [
+        "n = 1000 · vc / (π · D)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jeden průchod: L = 150 mm, f = 0,25 mm/ot, n = 600 ot/min. Potřebuješ 2 průchody. Celkový strojní čas v min =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Jeden průchod 150 / (0,25 · 600) = 1 min, dva průchody 2 min.",
+      "hints": [
+        "Spočítej čas jednoho průchodu a vynásob počtem průchodů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se pohybuje nůž při čelním soustružení (zarovnání čela)?",
+      "options": [
+        "podél osy obrobku",
+        "šikmo pod úhlem 45°",
+        "kolmo k ose obrobku",
+        "vůbec, pohybuje se obrobek"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Kterým nožem odřízneš hotový kus od tyče?",
+      "options": [
+        "hladicím",
+        "ubíracím",
+        "upichovacím",
+        "závitovým"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Otupenou vyměnitelnou břitovou destičku stačí pootočit nebo vyměnit, nůž se nemusí brousit.",
+      "answer": true
     }
   ]
 }

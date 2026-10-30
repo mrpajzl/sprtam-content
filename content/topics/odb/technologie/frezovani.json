@@ -421,6 +421,75 @@
       "type": "open",
       "question": "Jak spočítáš rychlost posuvu stolu frézky?",
       "answer": "Ze vztahu vf = fz·z·n: posuv na zub z katalogu vynásobím počtem zubů a otáčkami. Otáčky spočítám z řezné rychlosti a průměru frézy n = 1000·vc/(π·D)."
+    },
+    {
+      "type": "input",
+      "question": "Stopková fréza: z = 4, fz = 0,05 mm/zub, n = 3 000 ot/min. Rychlost posuvu v mm/min =",
+      "answers": [
+        "600"
+      ],
+      "explanation": "0,05 · 4 · 3000 = 600 mm/min",
+      "hints": [
+        "vf = fz · z · n"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Plocha 350 mm, náběh a přeběh dohromady 10 mm, vf = 240 mm/min. Strojní čas v min =",
+      "answers": [
+        "1,5",
+        "1.5"
+      ],
+      "explanation": "L = 360 mm, t = 360 / 240 = 1,5 min",
+      "hints": [
+        "Nejdřív přičti náběh a přeběh k délce plochy.",
+        "t = L / vf"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Fréza má 6 zubů a fz = 0,1 mm/zub. O kolik mm se posune stůl za jednu otáčku frézy?",
+      "options": [
+        "0,1 mm",
+        "0,6 mm",
+        "6 mm",
+        "60 mm"
+      ],
+      "answer": 1,
+      "explanation": "Za otáčku řeže všech 6 zubů: 0,1 · 6 = 0,6 mm."
+    },
+    {
+      "type": "choice",
+      "question": "Jak upneš velký obrobek, který se do svěráku nevejde?",
+      "options": [
+        "do dělicí hlavy",
+        "do sklíčidla",
+        "upínkami a šrouby v T-drážkách stolu",
+        "do koníku"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "U obvodového frézování je osa frézy kolmá k obráběné ploše.",
+      "answer": false,
+      "explanation": "Kolmá je u čelního frézování. U obvodového je osa s plochou rovnoběžná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při nesousledném frézování začíná tříska od nulové tloušťky.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "V kolika osách se posouvá stůl běžné frézky?",
+      "options": [
+        "v jedné",
+        "ve dvou",
+        "ve třech",
+        "stůl se nehýbe"
+      ],
+      "answer": 2
     }
   ]
 }

@@ -405,6 +405,69 @@
       "type": "open",
       "question": "Popiš, jak se odečítá rozměr na mikrometru.",
       "answer": "Na objímce přečtu celé milimetry a případně půlmilimetrovou rysku. Na bubínku přečtu dílek proti podélné rysce a vynásobím 0,01 mm. Obě hodnoty sečtu. Před tím dotáhnu vřeteno řehtačkou."
+    },
+    {
+      "type": "input",
+      "question": "Mikrometr: na objímce je vidět 21 mm bez půlmilimetrové rysky, bubínek ukazuje 43. dílek. Rozměr v mm =",
+      "answers": [
+        "21,43",
+        "21.43"
+      ],
+      "explanation": "21 + 43 · 0,01 = 21,43 mm",
+      "hints": [
+        "Půlmilimetrová ryska vidět není, takže k celým mm nic nepřičítáš.",
+        "Dílek bubínku je 0,01 mm."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na výkrese je 40 ±0,05 mm. Tolerance v mm =",
+      "answers": [
+        "0,1",
+        "0.1",
+        "0,10",
+        "0.10"
+      ],
+      "explanation": "Největší rozměr 40,05, nejmenší 39,95. Rozdíl = 0,1 mm.",
+      "hints": [
+        "Tolerance je rozdíl největšího a nejmenšího dovoleného rozměru."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik dílků má bubínek běžného mikrometru?",
+      "options": [
+        "10",
+        "20",
+        "50",
+        "100"
+      ],
+      "answer": 2,
+      "explanation": "50 dílků po 0,01 mm dá jednu otáčku = 0,5 mm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dobrá strana kalibru na díru je vyrobena na nejmenší dovolený rozměr díry.",
+      "answer": true,
+      "explanation": "Musí projít každou dobrou dírou, i tou nejmenší."
+    },
+    {
+      "type": "choice",
+      "question": "Čím zkontroluješ házení hřídele upnutého v hrotech?",
+      "options": [
+        "posuvným měřítkem",
+        "číselníkovým úchylkoměrem",
+        "koncovými měrkami",
+        "válečkovým kalibrem"
+      ],
+      "answer": 1,
+      "explanation": "Úchylkoměr ukazuje odchylku od nastavené hodnoty, obvykle po 0,01 mm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Norma předepisuje měřit přesné součásti při teplotě 30 °C.",
+      "answer": false,
+      "explanation": "Vztažná teplota pro měření je 20 °C."
     }
   ]
 }

@@ -411,6 +411,90 @@
       "type": "open",
       "question": "Jaké zásady bezpečnosti platí u lisů a při kování?",
       "answer": "Ruce nikdy mezi nástroje lisu, používat ochranná zařízení (oboruční ovládání, světelné závory). Při kování ochranné brýle nebo štít, kovářské kleště, pevná obuv a oděv, horký kov nebrat do ruky."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou deformaci má pravítko, které se po ohnutí samo narovná?",
+      "options": [
+        "plastickou",
+        "pružnou",
+        "trvalou",
+        "tepelnou"
+      ],
+      "answer": 1,
+      "explanation": "Pružná deformace je vratná, po povolení síly zmizí."
+    },
+    {
+      "type": "input",
+      "question": "Tyč 30 × 30 mm dlouhá 200 mm se vykove na průřez 15 × 15 mm. Délka v mm =",
+      "answers": [
+        "800"
+      ],
+      "explanation": "V = 30 · 30 · 200 = 180 000 mm³. 180 000 / 225 = 800 mm",
+      "hints": [
+        "Objem se nemění.",
+        "Nový průřez je 15 · 15 = 225 mm²."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kotouček ⌀10 mm z plechu 2 mm, τs = 300 MPa. Počítej s π ≈ 3,14. Síla v N =",
+      "answers": [
+        "18840",
+        "18 840"
+      ],
+      "explanation": "Délka střihu = 3,14 · 10 = 31,4 mm. S = 31,4 · 2 = 62,8 mm². F = 62,8 · 300 = 18 840 N.",
+      "hints": [
+        "Délka střihu je obvod kruhu π · d.",
+        "F = délka · tloušťka · τs"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se vyrábějí hliníkové okenní profily?",
+      "options": [
+        "zápustkovým kováním",
+        "tažením plechu",
+        "protlačováním",
+        "stříháním"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Při tváření za tepla potřebuješ menší sílu než za studena.",
+      "answer": true,
+      "explanation": "Ohřátý kov nad teplotou rekrystalizace je měkký a nezpevňuje se."
+    },
+    {
+      "type": "choice",
+      "question": "Chceš ohnout plech na 90°. Na jaký úhel ho ohneš?",
+      "options": [
+        "přesně na 90°",
+        "o kousek méně, např. 92°",
+        "o kousek víc, např. 88°",
+        "na 45° a pak znovu"
+      ],
+      "answer": 2,
+      "explanation": "Po ohnutí plech odpruží zpět, proto se ohýbá o kousek víc."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s popisem.",
+      "pairs": [
+        [
+          "průvlak",
+          "otvor, kterým se táhne drát"
+        ],
+        [
+          "zápustka",
+          "forma s dutinou tvaru výkovku"
+        ],
+        [
+          "střižnice",
+          "dolní část střihadla s otvorem"
+        ]
+      ]
     }
   ]
 }

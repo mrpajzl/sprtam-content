@@ -411,6 +411,86 @@
       "type": "open",
       "question": "Podle čeho volíš způsob lití? Uveď dva příklady.",
       "answer": "Podle počtu kusů, materiálu, velikosti a přesnosti. Jeden velký litinový díl lijeme do písku, velkou sérii tenkostěnných hliníkových dílů tlakovým litím."
+    },
+    {
+      "type": "choice",
+      "question": "Co je nálitek?",
+      "options": [
+        "vložka, která tvoří otvor v odlitku",
+        "zásobník kovu, ze kterého kov dotéká při smršťování",
+        "kanál, kterým kov teče do formy",
+        "vada, kdy kov vnikne do spáry formy"
+      ],
+      "answer": 1,
+      "explanation": "Nálitek doplňuje kov tam, kde se odlitek smršťuje, a pak se odřízne."
+    },
+    {
+      "type": "input",
+      "question": "Odlitek ze šedé litiny má mít 300 mm, smrštění 1 %. Délka modelu v mm =",
+      "answers": [
+        "303"
+      ],
+      "explanation": "300 · 1,01 = 303 mm",
+      "hints": [
+        "Model je větší o smrštění.",
+        "Vynásob délku číslem 1,01."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakým způsobem lití se nejčastěji vyrábějí lopatky turbín?",
+      "options": [
+        "do pískové formy",
+        "odstředivým litím",
+        "na vytavitelný model",
+        "do kokily"
+      ],
+      "answer": 2,
+      "explanation": "Lití na vytavitelný (voskový) model dává malé, složité a velmi přesné díly."
+    },
+    {
+      "type": "truefalse",
+      "question": "Do kokil se běžně lije ocel, protože kovová forma vydrží vysoké teploty bez poškození.",
+      "answer": false,
+      "explanation": "Kokily slouží hlavně pro slitiny Al, Cu, Zn, Mg. Ocel taje kolem 1 500 °C a formu by poškodila."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje forma, ve které se vyrábějí písková jádra?",
+      "options": [
+        "kokila",
+        "jaderník",
+        "formovací rám",
+        "nálitek"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "question": "Spoj způsob lití s typickým výrobkem.",
+      "pairs": [
+        [
+          "tlakové lití",
+          "hliníková skříň převodovky"
+        ],
+        [
+          "odstředivé lití",
+          "pouzdro"
+        ],
+        [
+          "písková forma",
+          "velký stojan stroje"
+        ],
+        [
+          "vytavitelný model",
+          "šperk"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zálupy a výronky vznikají, když kov vnikne do spáry formy.",
+      "answer": true
     }
   ]
 }

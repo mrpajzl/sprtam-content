@@ -432,6 +432,83 @@
       "type": "open",
       "question": "Popiš postup měkkého pájení měděné trubky.",
       "answer": "Konce očistím a odmastím, nanesu tavidlo, trubku zasunu do tvarovky. Ohřeji spoj, přiložím pájku, která se roztaví a vzlíná do mezery. Spoj nechám bez pohybu vychladnout a otřu zbytky tavidla."
+    },
+    {
+      "type": "choice",
+      "question": "Čím se při tvrdém pájení nejčastěji ohřívá spoj?",
+      "options": [
+        "páječkou",
+        "horkým vzduchem z fénu",
+        "plamenem hořáku",
+        "vůbec se neohřívá"
+      ],
+      "answer": 2,
+      "explanation": "Tvrdé pájky tají nad 450 °C, páječka nestačí. Používá se plamen, indukce nebo pec."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tavidlo nebo pájku s použitím.",
+      "pairs": [
+        [
+          "kalafuna",
+          "pájení v elektronice"
+        ],
+        [
+          "borax",
+          "tvrdé pájení"
+        ],
+        [
+          "stříbrná pájka",
+          "řezná destička na noži"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Lepidlo se při zkoušce roztrhlo uprostřed vrstvy, z povrchů se neodlouplo. Co selhalo?",
+      "options": [
+        "adheze",
+        "koheze",
+        "vzlínavost",
+        "tavidlo"
+      ],
+      "answer": 1,
+      "explanation": "Koheze je pevnost samotné vrstvy lepidla."
+    },
+    {
+      "type": "truefalse",
+      "question": "Anaerobní lepidlo vytvrdne bez přístupu vzduchu, například mezi závity šroubu a matice.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jaké lepidlo drží čelní sklo v autě?",
+      "options": [
+        "kyanoakrylátové",
+        "anaerobní",
+        "polyuretanové",
+        "cínová pájka"
+      ],
+      "answer": 2,
+      "explanation": "Polyuretanové lepidlo tvrdne vlhkostí a zůstává pružné."
+    },
+    {
+      "type": "input",
+      "question": "Přeplátovaný spoj 25 × 40 mm, pevnost lepidla ve smyku 10 MPa. Síla v kN =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "S = 25 · 40 = 1 000 mm². F = 1 000 · 10 = 10 000 N = 10 kN.",
+      "hints": [
+        "Spočítej plochu spoje v mm².",
+        "1 MPa = 1 N/mm², 1 000 N = 1 kN."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Studený spoj vznikne, když pájku nakapeš na neohřátý díl. Je pevný, jen hůř vede proud.",
+      "answer": false,
+      "explanation": "Na studeném kovu pájka nesmáčí povrch. Studený spoj nemá pevnost ani vodivost."
     }
   ]
 }
