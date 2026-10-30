@@ -421,6 +421,92 @@
       "type": "open",
       "question": "Jak funguje očkování?",
       "answer": "Vakcína obsahuje oslabený či usmrcený patogen nebo jeho část. Imunitní systém si vytvoří protilátky a paměťové buňky, takže při skutečné nákaze reaguje rychle."
+    },
+    {
+      "type": "choice",
+      "question": "Máš chřipku. Proč ti nepomůže antibiotikum?",
+      "options": [
+        "Chřipku způsobuje virus, který nemá části, na které antibiotika míří.",
+        "Antibiotika působí jen na prvoky.",
+        "Virus chřipky je vůči antibiotikům rezistentní kvůli plazmidům."
+      ],
+      "answer": 0,
+      "explanation": "Antibiotika ničí stěnu a ribozomy bakterií. Virus nic z toho nemá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mimo hostitelskou buňku virus nemá metabolismus a nemnoží se.",
+      "answer": true,
+      "explanation": "Na klice dveří virus jen přečkává. Kopie umí vyrobit jen v živé buňce."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou nukleovou kyselinu mají herpesviry (původci oparu)?",
+      "options": [
+        "RNA",
+        "DNA",
+        "DNA i RNA"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s popisem.",
+      "pairs": [
+        [
+          "kapsida",
+          "bílkovinný obal viru"
+        ],
+        [
+          "virion",
+          "kompletní částice mimo buňku"
+        ],
+        [
+          "prion",
+          "infekční bílkovina"
+        ],
+        [
+          "bakteriofág",
+          "virus napadající bakterie"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou nemoc způsobuje prion?",
+      "options": [
+        "vzteklinu",
+        "covid-19",
+        "Creutzfeldtovu-Jakobovu nemoc",
+        "plané neštovice"
+      ],
+      "answer": 2,
+      "explanation": "Priony způsobují BSE (nemoc šílených krav) a u člověka Creutzfeldtovu-Jakobovu nemoc."
+    },
+    {
+      "type": "truefalse",
+      "question": "Priony jsou velmi malé viry.",
+      "answer": false,
+      "explanation": "Priony nejsou viry. Nemají DNA ani RNA, jsou to jen chybně složené bílkoviny."
+    },
+    {
+      "type": "choice",
+      "question": "Proč HIV potřebuje reverzní transkriptázu?",
+      "options": [
+        "aby rozložil membránu hostitelské buňky",
+        "aby přepsal svou RNA do DNA a mohl ji vložit do DNA hostitele",
+        "aby si vytvořil kapsidu"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje cyklus množení viru, který končí prasknutím buňky?",
+      "answers": [
+        "lytický",
+        "lytický cyklus",
+        "lyticky"
+      ]
     }
   ]
 }
