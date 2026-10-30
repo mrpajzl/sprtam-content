@@ -467,6 +467,71 @@
       "type": "open",
       "question": "Proč se v elektronice používá šestnáctková soustava?",
       "answer": "Jedna šestnáctková číslice odpovídá přesně čtyřem bitům, takže dlouhá dvojková čísla zapíšeš krátce a převod je snadný. Používá se pro adresy paměti, obsah registrů a kódy barev."
+    },
+    {
+      "type": "input",
+      "question": "Převeď 110010₂ do desítkové soustavy.",
+      "answers": [
+        "50"
+      ],
+      "explanation": "32 + 16 + 2 = 50.",
+      "hints": [
+        "Váhy zprava: 1, 2, 4, 8, 16, 32."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 200 do šestnáctkové soustavy.",
+      "answers": [
+        "C8",
+        "0xC8",
+        "c8",
+        "0xc8"
+      ],
+      "explanation": "200 = 12 · 16 + 8, 12 = C → C8₁₆.",
+      "hints": [
+        "Kolikrát se 16 vejde do 200 a jaký je zbytek?",
+        "Číslice 12 se píše jako C."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čemu se rovná A · 0?",
+      "options": [
+        "A",
+        "1",
+        "0",
+        "Ā"
+      ],
+      "answer": 2,
+      "explanation": "AND s nulou dá vždy 0, ať je A cokoli."
+    },
+    {
+      "type": "truefalse",
+      "question": "Platí A · Ā = 1.",
+      "answer": false,
+      "explanation": "A a Ā nejsou nikdy obě 1, takže A · Ā = 0."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapíše číslo 93 v kódu BCD?",
+      "options": [
+        "0101 1101",
+        "1001 0011",
+        "1001 1100",
+        "0011 1001"
+      ],
+      "answer": 1,
+      "explanation": "9 = 1001, 3 = 0011. (0101 1101 je 93 binárně.)",
+      "hints": [
+        "Každou desítkovou číslici převeď zvlášť na 4 bity."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V logickém součtu (OR) platí 1 + 1 = 1.",
+      "answer": true,
+      "explanation": "OR dá 1, když je aspoň jeden vstup 1 – a to platí i pro oba."
     }
   ]
 }

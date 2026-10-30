@@ -446,6 +446,73 @@
       "type": "open",
       "question": "Popiš, jak se chová přechod PN v propustném a v závěrném směru.",
       "answer": "V propustném směru (+ na P) se vyprázdněná vrstva zúží a po překonání asi 0,6–0,7 V teče proud. V závěrném směru (+ na N) se vrstva rozšíří a teče jen nepatrný závěrný proud minoritních nosičů."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou příměs přidáš do křemíku, abys získal polovodič typu N?",
+      "options": [
+        "bor",
+        "galium",
+        "fosfor",
+        "hliník"
+      ],
+      "answer": 2,
+      "explanation": "Fosfor má 5 valenčních elektronů, pátý elektron je volný a vznikne typ N.",
+      "hints": [
+        "Typ N potřebuje navíc volné elektrony.",
+        "Hledej prvek s 5 valenčními elektrony."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co jsou majoritní nosiče náboje v polovodiči typu P?",
+      "options": [
+        "volné elektrony",
+        "díry",
+        "atomy boru",
+        "protony"
+      ],
+      "answer": 1,
+      "explanation": "V typu P převládají díry, elektrony jsou tam minoritní."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když přechod PN zapojíš v závěrném směru, vyprázdněná vrstva se rozšíří.",
+      "answer": true,
+      "explanation": "Kladný pól na N odtáhne elektrony a záporný pól na P díry od rozhraní, vrstva bez nosičů se rozšíří."
+    },
+    {
+      "type": "truefalse",
+      "question": "Světlo na vodivost polovodiče nemá vliv, stejně jako u kovu.",
+      "answer": false,
+      "explanation": "Světlo může v polovodiči uvolnit nové nosiče a zvýšit vodivost. Využívá to fotodioda."
+    },
+    {
+      "type": "input",
+      "question": "Kolik přechodů PN má bipolární tranzistor? Napiš číslo.",
+      "answers": [
+        "2",
+        "dva"
+      ],
+      "explanation": "Dioda má jeden přechod PN, bipolární tranzistor dva."
+    },
+    {
+      "type": "match",
+      "question": "Spoj s tím, co se stane s odporem při zahřátí.",
+      "pairs": [
+        [
+          "měděný vodič",
+          "odpor roste"
+        ],
+        [
+          "čistý křemík",
+          "odpor klesá"
+        ],
+        [
+          "NTC termistor",
+          "odpor klesá"
+        ]
+      ]
     }
   ]
 }

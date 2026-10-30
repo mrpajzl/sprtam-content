@@ -368,6 +368,67 @@
       "type": "open",
       "question": "Popiš vlastnosti ideálního operačního zesilovače.",
       "answer": "Ideální OZ má nekonečné zesílení, nekonečný vstupní odpor (do vstupů neteče proud) a nulový výstupní odpor. Se zápornou zpětnou vazbou pak platí, že napětí na obou vstupech jsou stejná."
+    },
+    {
+      "type": "input",
+      "question": "Invertující zesilovač: R₁ = 2 kΩ, R₂ = 10 kΩ, vstup 0,4 V, napájení ±15 V. Výstup ve V =",
+      "answers": [
+        "-2",
+        "−2"
+      ],
+      "explanation": "A = −10 / 2 = −5, U_výst = −5 · 0,4 = −2 V.",
+      "hints": [
+        "Nejdřív spočítej zesílení A = −R₂ / R₁."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Neinvertující zesilovač má zesílit 6krát, R₁ = 2 kΩ. R₂ v kΩ =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "6 = 1 + R₂ / 2 kΩ → R₂ / 2 kΩ = 5 → R₂ = 10 kΩ.",
+      "hints": [
+        "Použij A = 1 + R₂ / R₁."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Neinvertující zesilovač s A = 11, vstup 2 V, napájení ±12 V. Co bude na výstupu?",
+      "options": [
+        "22 V",
+        "−22 V",
+        "OZ bude v saturaci zhruba u +10 až +11 V",
+        "0 V"
+      ],
+      "answer": 2,
+      "explanation": "Vypočtených 22 V je mimo napájení. Výstup se zastaví v saturaci u kladného napájení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když napětí na invertujícím vstupu (−) roste, výstup OZ klesá.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Záporná zpětná vazba se vede z výstupu na neinvertující vstup (+).",
+      "answer": false,
+      "explanation": "Záporná zpětná vazba jde na invertující vstup (−). Vazba na vstup + je kladná a zesilovač překlápí."
+    },
+    {
+      "type": "choice",
+      "question": "Komparátor napájený ±12 V: U₊ = 3 V, U₋ = 2 V. Kde bude výstup?",
+      "options": [
+        "u záporného napájení",
+        "asi na 1 V",
+        "u kladného napájení",
+        "asi na 5 V"
+      ],
+      "answer": 2,
+      "explanation": "U₊ > U₋, takže výstup uteče ke kladnému napájení.",
+      "hints": [
+        "Který vstup je větší?"
+      ]
     }
   ]
 }

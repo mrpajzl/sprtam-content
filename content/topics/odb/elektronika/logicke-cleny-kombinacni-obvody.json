@@ -467,6 +467,79 @@
       "type": "open",
       "question": "Popiš postup, jak ze slovního zadání navrhneš kombinační obvod.",
       "answer": "Určím vstupy a výstup, sestavím pravdivostní tabulku pro všechny kombinace, pro řádky s výstupem 1 napíšu mintermy a spojím je součtem. Rovnici zjednoduším Booleovou algebrou a nakreslím schéma z logických členů."
+    },
+    {
+      "type": "input",
+      "question": "Výstup členu XOR pro A = 1, B = 1 =",
+      "answers": [
+        "0"
+      ],
+      "explanation": "Vstupy jsou stejné, XOR dá 0."
+    },
+    {
+      "type": "choice",
+      "question": "Alarm má houkat, když se otevřou dveře D nebo okno O (1 = otevřeno). Který člen použiješ?",
+      "options": [
+        "AND",
+        "NAND",
+        "OR",
+        "XOR"
+      ],
+      "answer": 2,
+      "explanation": "Stačí jedna podmínka: Y = D + O. XOR by při otevřených dveřích i okně zároveň nehoukal."
+    },
+    {
+      "type": "truefalse",
+      "question": "Člen NOR má pro A = 1, B = 0 výstup 1.",
+      "answer": false,
+      "explanation": "NOR dá 1, jen když jsou všechny vstupy 0. Tady je výstup 0."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký minterm patří řádku A = 0, B = 1, C = 1?",
+      "options": [
+        "A · B̄ · C̄",
+        "Ā · B · C",
+        "A + B̄ + C̄",
+        "Ā + B + C"
+      ],
+      "answer": 1,
+      "explanation": "Minterm je součin; vstup s hodnotou 0 se neguje, vstupy s 1 se píšou přímo."
+    },
+    {
+      "type": "input",
+      "question": "Dekodér má 4 vstupní bity. Kolik má výstupů?",
+      "answers": [
+        "16",
+        "šestnáct",
+        "sestnact"
+      ],
+      "explanation": "4 bity dají 2⁴ = 16 kombinací, každá aktivuje jeden výstup.",
+      "hints": [
+        "n bitů dá 2ⁿ kombinací."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj kombinační obvod s tím, co dělá.",
+      "pairs": [
+        [
+          "dekodér",
+          "z binárního čísla aktivuje jeden výstup"
+        ],
+        [
+          "kodér",
+          "z aktivního vstupu udělá binární číslo"
+        ],
+        [
+          "multiplexer",
+          "adresou vybere jeden vstup na výstup"
+        ],
+        [
+          "sčítačka",
+          "sčítá binární čísla"
+        ]
+      ]
     }
   ]
 }

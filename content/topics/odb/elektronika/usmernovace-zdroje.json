@@ -421,6 +421,69 @@
       "type": "open",
       "question": "Popiš blokové schéma lineárního napájecího zdroje a funkci jednotlivých bloků.",
       "answer": "Transformátor sníží síťové napětí a galvanicky oddělí obvod. Usměrňovač z diod vytvoří pulzující napětí jedné polarity. Filtrační kondenzátor pulzy vyhladí a stabilizátor udržuje stálé výstupní napětí bez ohledu na kolísání vstupu a odběru."
+    },
+    {
+      "type": "input",
+      "question": "Jednocestný usměrňovač s jednou diodou, transformátor dává 12 V efektivních. Napětí na kondenzátoru naprázdno ve V (zaokrouhli na 1 desetinné místo) =",
+      "answers": [
+        "16,3",
+        "16,27"
+      ],
+      "explanation": "Vrchol 12 · √2 ≈ 16,97 V, minus 0,7 V na jedné diodě ≈ 16,3 V.",
+      "hints": [
+        "Vrcholové napětí je √2krát větší než efektivní.",
+        "Proud teče jen přes jednu diodu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jednocestný usměrňovač, odběr 0,2 A, kondenzátor 1 000 μF. Zvlnění ve V =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Jednocestný → f_z = 50 Hz. ΔU ≈ 0,2 / (50 · 0,001) = 4 V.",
+      "hints": [
+        "Jaká je frekvence pulzů u jednocestného usměrňovače?",
+        "1 000 μF = 0,001 F."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké výstupní napětí dává stabilizátor 7812?",
+      "options": [
+        "78 V",
+        "5 V",
+        "12 V",
+        "−12 V"
+      ],
+      "answer": 2,
+      "explanation": "Poslední dvojčíslí udává napětí: 7812 dává +12 V. Záporné verze jsou 79xx."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stabilizátory řady 79xx dávají záporné výstupní napětí.",
+      "answer": true,
+      "explanation": "78xx jsou kladné, 79xx záporné stabilizátory."
+    },
+    {
+      "type": "truefalse",
+      "question": "Elektrolytický kondenzátor ve zdroji můžeš zapojit libovolnou polaritou.",
+      "answer": false,
+      "explanation": "Elektrolyt má polaritu. Přepólovaný se zahřívá a může prasknout či vybuchnout."
+    },
+    {
+      "type": "choice",
+      "question": "Kondenzátor za usměrňovačem se nabíjí na 9 V, zvlnění je 2,5 V. Stačí to stabilizátoru 7805, který potřebuje na vstupu aspoň asi 7 V?",
+      "options": [
+        "ano, nejnižší napětí je 7,5 V",
+        "ne, nejnižší napětí je jen 6,5 V",
+        "ano, rozhoduje jen vrchol 9 V"
+      ],
+      "answer": 1,
+      "explanation": "Nejnižší napětí je 9 − 2,5 = 6,5 V, to je méně než 7 V. Pomůže větší kondenzátor nebo vyšší napětí transformátoru.",
+      "hints": [
+        "Stabilizátor musí mít dost napětí i v dolním bodě zvlnění."
+      ]
     }
   ]
 }

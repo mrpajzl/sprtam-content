@@ -416,6 +416,70 @@
       "type": "open",
       "question": "Jak správně zacházet se součástkami citlivými na ESD?",
       "answer": "Pracovat na antistatické podložce s uzemňovacím náramkem, součástky skladovat v antistatických obalech, nesahat přímo na vývody a nepracovat v oblečení, které se snadno nabíjí."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký MOSFET použiješ, když chceš spínat zátěž od kladného napájení (high-side)?",
+      "options": [
+        "s kanálem N",
+        "s kanálem P",
+        "JFET bez hradla",
+        "na typu nezáleží"
+      ],
+      "answer": 1,
+      "explanation": "P-MOSFET se otevírá záporným napětím hradla proti S a spíná zátěž od +. N-MOSFET se dává pod zátěž, k zemi."
+    },
+    {
+      "type": "truefalse",
+      "question": "V unipolárním tranzistoru vede proud jen jeden druh nosičů náboje.",
+      "answer": true,
+      "explanation": "Proto „unipolární“: vedou jen elektrony, nebo jen díry."
+    },
+    {
+      "type": "input",
+      "question": "MOSFET s R_DS(on) = 0,05 Ω spíná proud 3 A. Ztrátový výkon ve W =",
+      "answers": [
+        "0,45"
+      ],
+      "explanation": "P = R_DS(on) · I² = 0,05 · 9 = 0,45 W.",
+      "hints": [
+        "Proud umocni na druhou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "MOSFET má U_GS(th) = 2 V, takže při U_GS = 3,3 V je vždy plně otevřený.",
+      "answer": false,
+      "explanation": "Při prahovém napětí teče jen nepatrný proud. Plně otevřený je až při U_GS, pro které katalog udává R_DS(on)."
+    },
+    {
+      "type": "choice",
+      "question": "Co v katalogu MOSFETu udává U_DS max?",
+      "options": [
+        "největší dovolené napětí mezi D a S",
+        "prahové napětí hradla",
+        "úbytek napětí v sepnutém stavu",
+        "největší proud drainem"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj elektrodu MOSFETu s obdobnou elektrodou bipolárního tranzistoru.",
+      "pairs": [
+        [
+          "gate",
+          "báze"
+        ],
+        [
+          "drain",
+          "kolektor"
+        ],
+        [
+          "source",
+          "emitor"
+        ]
+      ]
     }
   ]
 }

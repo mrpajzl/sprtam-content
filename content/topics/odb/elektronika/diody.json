@@ -416,6 +416,69 @@
       "type": "open",
       "question": "Vysvětli, jak Zenerova dioda stabilizuje napětí a proč potřebuje rezistor.",
       "answer": "Zenerova dioda je zapojena závěrně. Po dosažení Zenerova napětí vede a napětí na ní zůstává téměř stálé, i když se vstupní napětí mění. Rezistor v sérii omezuje proud a zachytí rozdíl napětí, jinak by se dioda zničila."
+    },
+    {
+      "type": "choice",
+      "question": "Ke které oblasti přechodu PN je připojena anoda diody?",
+      "options": [
+        "k oblasti N",
+        "k oblasti P",
+        "k vyprázdněné vrstvě",
+        "k pouzdru"
+      ],
+      "answer": 1,
+      "explanation": "Anoda je na straně P, katoda na straně N."
+    },
+    {
+      "type": "input",
+      "question": "Červená LED (2 V, 20 mA) je napájena z 12 V přes rezistor. Výkon na rezistoru ve W =",
+      "answers": [
+        "0,2"
+      ],
+      "explanation": "Na rezistoru je 12 − 2 = 10 V, výkon P = 10 · 0,02 = 0,2 W.",
+      "hints": [
+        "Nejdřív zjisti napětí na rezistoru.",
+        "P = U · I, proud v ampérech."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zenerova dioda zapojená v propustném směru drží na sobě své Zenerovo napětí, například 5,1 V.",
+      "answer": false,
+      "explanation": "V propustném směru se chová jako běžná dioda a je na ní jen asi 0,7 V. Stabilizuje jen závěrně."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém směru se zapojuje fotodioda jako čidlo světla?",
+      "options": [
+        "v propustném",
+        "v závěrném",
+        "bez napětí nelze",
+        "střídavě"
+      ],
+      "answer": 1,
+      "explanation": "Fotodioda pracuje v závěrném směru. Světlo zvyšuje závěrný proud."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky návrhu stabilizace napětí Zenerovou diodou.",
+      "items": [
+        "zapoj Zenerovu diodu katodou na +",
+        "do série před ni dej rezistor",
+        "výstup odebírej paralelně z diody",
+        "spočítej rezistor R = (U_vst − U_Z) / I"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Bílá LED (3 V, 10 mA) má svítit z napětí 5 V. Předřadný rezistor v Ω =",
+      "answers": [
+        "200"
+      ],
+      "explanation": "R = (5 − 3) / 0,01 = 200 Ω.",
+      "hints": [
+        "10 mA = 0,01 A."
+      ]
     }
   ]
 }

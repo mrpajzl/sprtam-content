@@ -401,6 +401,73 @@
       "type": "open",
       "question": "Popiš tři pracovní režimy bipolárního tranzistoru.",
       "answer": "Zavřený: přechod B-E nevede, kolektorový proud je nulový. Aktivní: I_C = β · I_B, tranzistor zesiluje. Saturace: báze dostává nadbytek proudu, U_CE je jen asi 0,2 V a proud určuje zátěž – sepnutý spínač."
+    },
+    {
+      "type": "choice",
+      "question": "Kam ukazuje šipka na emitoru ve schematické značce tranzistoru PNP?",
+      "options": [
+        "ven z tranzistoru",
+        "k bázi",
+        "dovnitř tranzistoru",
+        "ke kolektoru"
+      ],
+      "answer": 2,
+      "explanation": "Šipka ukazuje směr proudu: u NPN ven, u PNP dovnitř."
+    },
+    {
+      "type": "input",
+      "question": "β = 80, I_B = 0,25 mA. Kolektorový proud v mA =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "I_C = 80 · 0,25 = 20 mA."
+    },
+    {
+      "type": "choice",
+      "question": "Napájení 9 V, R_C = 1 kΩ, β = 100, I_B = 0,2 mA. V jakém režimu je tranzistor?",
+      "options": [
+        "v aktivním režimu, I_C = 20 mA",
+        "v saturaci",
+        "zavřený"
+      ],
+      "answer": 1,
+      "explanation": "Podle β by I_C = 20 mA a úbytek na R_C 20 V, ale napájení má jen 9 V. Proud omezí R_C a tranzistor je v saturaci.",
+      "hints": [
+        "Spočítej, jaký úbytek by byl na R_C při I_C = β · I_B.",
+        "Může být úbytek větší než napájecí napětí?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když přestane téct proud báze, zanikne i kolektorový proud.",
+      "answer": true,
+      "explanation": "Malý proud báze řídí velký kolektorový proud. Bez proudu báze je tranzistor zavřený."
+    },
+    {
+      "type": "input",
+      "question": "Sepnutý tranzistor: U_CE = 0,2 V, I_C = 0,5 A. Ztrátový výkon ve W =",
+      "answers": [
+        "0,1"
+      ],
+      "explanation": "P = U_CE · I_C = 0,2 · 0,5 = 0,1 W."
+    },
+    {
+      "type": "match",
+      "question": "Spoj režim tranzistoru s použitím.",
+      "pairs": [
+        [
+          "zavřený",
+          "spínač vypnuto"
+        ],
+        [
+          "aktivní",
+          "zesilovač"
+        ],
+        [
+          "saturace",
+          "spínač zapnuto"
+        ]
+      ]
     }
   ]
 }

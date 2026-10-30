@@ -383,6 +383,63 @@
       "type": "open",
       "question": "Popiš, jak pracuje binární čítač a proč ho lze použít jako dělič frekvence.",
       "answer": "Čítač je řada klopných obvodů, které počítají hodinové pulzy a jejich výstupy tvoří dvojkové číslo. Každý klopný obvod T překlopí dvakrát pomaleji než předchozí, takže dělí frekvenci dvěma; n obvodů dělí 2ⁿ."
+    },
+    {
+      "type": "choice",
+      "question": "Klopný obvod D: na vstupu D je 0 a přijde náběžná hrana hodin. Jaký bude výstup Q?",
+      "options": [
+        "1",
+        "0",
+        "opačný než předtím",
+        "nezmění se"
+      ],
+      "answer": 1,
+      "explanation": "Při hraně hodin převezme klopný obvod D hodnotu vstupu: Q = D = 0."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hranový klopný obvod D ignoruje změny vstupu D mezi hranami hodin.",
+      "answer": true,
+      "explanation": "Vstup převezme jen v okamžiku hrany. Po celou dobu úrovně přebírá vstup záchytný obvod (latch)."
+    },
+    {
+      "type": "input",
+      "question": "Do 4bitového posuvného registru (na začátku 0000) pošleš bity 0, 1, 1, 1. Bity vstupují zleva. Co je v registru po čtyřech pulzech?",
+      "answers": [
+        "1110"
+      ],
+      "explanation": "Po 1. pulzu 0000, po 2. 1000, po 3. 1100, po 4. 1110.",
+      "hints": [
+        "Při každém pulzu se bity posunou o jednu pozici doprava a nový bit vstoupí vlevo."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hodiny 2 kHz, čítač ze 4 klopných obvodů T. Frekvence posledního výstupu v Hz =",
+      "answers": [
+        "125"
+      ],
+      "explanation": "2 000 / 2⁴ = 2 000 / 16 = 125 Hz.",
+      "hints": [
+        "Každý klopný obvod T dělí frekvenci dvěma."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké největší číslo napočítá binární čítač ze 6 klopných obvodů?",
+      "answers": [
+        "63"
+      ],
+      "explanation": "2⁶ = 64 stavů, tedy 0 až 63.",
+      "hints": [
+        "Čítač z n obvodů počítá 0 až 2ⁿ − 1."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Klopný obvod T při T = 0 a hodinové hraně překlopí výstup.",
+      "answer": false,
+      "explanation": "Při T = 0 drží stav. Překlápí jen při T = 1."
     }
   ]
 }

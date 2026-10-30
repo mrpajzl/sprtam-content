@@ -386,6 +386,79 @@
       "type": "open",
       "question": "Vysvětli, co je rozlišení A/D převodníku a jak souvisí s velikostí kroku.",
       "answer": "Rozlišení je počet bitů, kterými převodník vyjadřuje výsledek; n bitů dá 2ⁿ úrovní. Krok, tedy nejmenší rozlišitelná změna napětí, je U_ref / 2ⁿ, takže čím víc bitů, tím jemnější kroky."
+    },
+    {
+      "type": "input",
+      "question": "8bitový A/D převodník, U_ref = 5,12 V, na vstupu je 1 V. Jaké číslo dá?",
+      "answers": [
+        "50"
+      ],
+      "explanation": "q = 5,12 / 256 = 0,02 V, N = 1 / 0,02 = 50.",
+      "hints": [
+        "Nejdřív spočítej krok q = U_ref / 2ⁿ."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "PWM se střídou 75 % z napájení 12 V. Průměrné napětí ve V =",
+      "answers": [
+        "9"
+      ],
+      "explanation": "0,75 · 12 = 9 V."
+    },
+    {
+      "type": "choice",
+      "question": "Signál obsahuje frekvence až do 5 kHz. Která vzorkovací frekvence vyhovuje?",
+      "options": [
+        "4 kHz",
+        "5 kHz",
+        "12 kHz",
+        "8 kHz"
+      ],
+      "answer": 2,
+      "explanation": "Vzorkovací frekvence musí být víc než 2 · 5 kHz = 10 kHz. Vyhovuje jen 12 kHz.",
+      "hints": [
+        "Vynásob nejvyšší frekvenci signálu dvěma."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Program uložený ve Flash paměti mikrokontroléru zůstane i po vypnutí napájení.",
+      "answer": true,
+      "explanation": "Flash a EEPROM si data pamatují i bez napájení, RAM se smaže."
+    },
+    {
+      "type": "choice",
+      "question": "Který z těchto signálů je analogový?",
+      "options": [
+        "číslo 0–1023 v mikrokontroléru",
+        "napětí z potenciometru 0–5 V",
+        "stav tlačítka 0 nebo 1"
+      ],
+      "answer": 1,
+      "explanation": "Napětí z potenciometru se mění plynule a může mít jakoukoli hodnotu v rozsahu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj blok mikrokontroléru s úkolem.",
+      "pairs": [
+        [
+          "CPU",
+          "provádí instrukce programu"
+        ],
+        [
+          "A/D převodník",
+          "měří analogové napětí"
+        ],
+        [
+          "oscilátor",
+          "dává hodinový signál"
+        ],
+        [
+          "UART, I²C, SPI",
+          "komunikace s čidly a počítačem"
+        ]
+      ]
     }
   ]
 }
