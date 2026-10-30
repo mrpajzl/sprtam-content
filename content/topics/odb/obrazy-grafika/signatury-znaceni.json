@@ -387,6 +387,74 @@
       "type": "open",
       "question": "Co všechno může být napsáno pod moderní grafikou a co to znamená?",
       "answer": "Vlevo číslo listu a nákladu (např. 12/50) nebo označení E.A., H.C. či B.A.T., uprostřed název, vpravo ruční podpis autora tužkou, případně rok."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka B.A.T.?",
+      "options": [
+        "list mimo prodej",
+        "schválený vzorový tisk, podle kterého se tiskne náklad",
+        "autorský tisk mimo náklad"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Listy označené E.A. jsou stejně originální jako číslované listy.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolikátý list nákladu je grafika označená 7/40? (číslo)",
+      "answers": [
+        "7",
+        "7."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vorsterman vyryl mědiryt podle Rubensova obrazu. Jak se takové grafice říká?",
+      "options": [
+        "autorský tisk",
+        "dotisk",
+        "reprodukční rytina"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Dotisk z původní matrice po smrti umělce má stejnou cenu jako tisk za jeho života.",
+      "answer": false,
+      "explanation": "Dotisk vznikl bez dohledu a podpisu autora, proto má menší cenu."
+    },
+    {
+      "type": "choice",
+      "question": "Lept je číslovaný 45/100, ale soupis díla uvádí náklad 30 kusů. Co uděláš?",
+      "options": [
+        "prodám ho jako originál, číslo nevadí",
+        "neprodám ho jako originál, dokud ho neověří znalec",
+        "číslo opravím gumou"
+      ],
+      "answer": 1,
+      "explanation": "Číslo převyšuje známý náklad. Může jít o padělek nebo dotisk s falešným značením."
+    },
+    {
+      "type": "match",
+      "question": "Spoj místo pod moderní grafikou s tím, co tam bývá.",
+      "pairs": [
+        [
+          "vlevo",
+          "číslo listu a nákladu"
+        ],
+        [
+          "uprostřed",
+          "název díla"
+        ],
+        [
+          "vpravo",
+          "podpis autora"
+        ]
+      ]
     }
   ]
 }
