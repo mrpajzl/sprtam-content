@@ -364,6 +364,78 @@
       "type": "open",
       "question": "Kdy masáž rukou neprovedeš?",
       "answer": "Při zánětech, ranách a popáleninách, kožních infekcích jako plíseň nebo bradavice, při otocích neznámého původu, čerstvých úrazech, horečce a akutním ekzému."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým hmatem se na začátku masáže rozetře přípravek?",
+      "options": [
+        "hnětením",
+        "vibrací",
+        "hlazením",
+        "třením"
+      ],
+      "answer": 2,
+      "explanation": "Masáž začíná i končí hlazením od prstů k lokti."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se masíruje každý prst?",
+      "options": [
+        "od kořene ke špičce silným tahem",
+        "od špičky ke kořeni krouživým třením",
+        "jen se protřepe",
+        "jen se zatlačí na kloub"
+      ],
+      "answer": 1,
+      "explanation": "Prsty se masírují postupně od špičky ke kořeni, krouživě třením, s lehkým tahem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při masáži prstů se má silně tahat, aby klouby křupaly.",
+      "answer": false,
+      "explanation": "Prudký tah a lupání v kloubech mohou bolet a klouby poškodit."
+    },
+    {
+      "type": "match",
+      "question": "Spoj část ruky s tím, jak se masíruje.",
+      "pairs": [
+        [
+          "hřbet ruky",
+          "tření palci mezi kůstkami"
+        ],
+        [
+          "dlaň",
+          "tření a hnětení svalů pod palcem"
+        ],
+        [
+          "zápěstí",
+          "jemné kroužky kolem kloubu"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Masáž rukou pomáhá vstřebat krém a kůže je pak hebká.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto situací je kontraindikace masáže rukou?",
+      "options": [
+        "suchá kůže",
+        "horečka",
+        "studené ruce",
+        "krátké nehty"
+      ],
+      "answer": 1,
+      "explanation": "Horečka a akutní nemoc patří mezi kontraindikace masáže."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jedním slovem nazývá důvod, proč ošetření neudělat nebo ho upravit?",
+      "answers": [
+        "kontraindikace"
+      ]
     }
   ]
 }

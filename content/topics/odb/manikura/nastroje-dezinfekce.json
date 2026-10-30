@@ -399,6 +399,83 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi jednorázovými a opakovaně použitelnými nástroji? Uveď příklady.",
       "answer": "Jednorázové pomůcky jako papírový pilník, dřevěná tyčinka nebo tampon se po klientce vyhodí nebo je dostane domů, protože nejdou vydezinfikovat. Kovové nástroje jako kleštičky, nůžky a odsouvač se po každé klientce dezinfikují a sterilizují."
+    },
+    {
+      "type": "input",
+      "question": "Kolik minut trvá sterilizace horkým vzduchem při 160 °C?",
+      "answers": [
+        "120"
+      ],
+      "explanation": "Při 160 °C trvá horkovzdušná sterilizace 120 minut.",
+      "hints": [
+        "Čím nižší teplota, tím déle sterilizace trvá."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým nástrojem se zkracují silné nehty, hlavně na nohou?",
+      "options": [
+        "kleštěmi na kůžičku",
+        "odsouvačem",
+        "kleštěmi na nehty",
+        "leštěnkou"
+      ],
+      "answer": 2,
+      "explanation": "Kleště na nehty jsou silnější než nůžky a zvládnou i tvrdé nehty na nohou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Doba sterilizace se počítá od chvíle, kdy se přístroj zapne.",
+      "answer": false,
+      "explanation": "Doba se počítá od chvíle, kdy celý obsah sterilizátoru dosáhne nastavené teploty."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se nástroj nejdřív dezinfikuje a až potom čistí kartáčkem?",
+      "options": [
+        "kartáček by jinak zrezivěl",
+        "aby se manikérka při čištění sama nenakazila",
+        "dezinfekce lépe působí na špinavý nástroj",
+        "aby nástroj rychleji uschl"
+      ],
+      "answer": 1,
+      "explanation": "Na nástroji mohou být viry z krve. Dezinfekce na začátku chrání toho, kdo nástroj čistí."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto pomůcek je jednorázová?",
+      "options": [
+        "dřevěná tyčinka",
+        "kovový odsouvač",
+        "kleště na kůžičku",
+        "nůžky na nehty"
+      ],
+      "answer": 0,
+      "explanation": "Dřevěná tyčinka nejde vydezinfikovat, proto se po klientce vyhodí nebo ji klientka dostane domů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dezinfekce zničí všechny mikroorganismy včetně spor.",
+      "answer": false,
+      "explanation": "Všechny mikroorganismy včetně spor zničí až sterilizace. Dezinfekce ničí choroboplodné zárodky, ale ne všechny."
+    },
+    {
+      "type": "match",
+      "question": "Spoj teplotu horkovzdušné sterilizace s dobou.",
+      "pairs": [
+        [
+          "160 °C",
+          "120 minut"
+        ],
+        [
+          "170 °C",
+          "60 minut"
+        ],
+        [
+          "180 °C",
+          "30 minut"
+        ]
+      ]
     }
   ]
 }
