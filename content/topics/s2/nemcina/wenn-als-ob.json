@@ -495,6 +495,48 @@
       "type": "open",
       "question": "Kdy použiješ *ob* a kdy *wenn*, když česky řekneš „jestli“?",
       "answer": "Když „jestli“ znamená „zda“ a jde o nepřímou otázku (*Ich weiß nicht, ob er kommt*), je to *ob*. Když znamená „pokud“ a jde o podmínku (*Wenn du Zeit hast, …*), je to *wenn*."
+    },
+    {
+      "type": "choice",
+      "question": "___ wir 2019 in Italien waren, war es sehr heiß. (Když jsme byli v roce 2019 v Itálii, bylo velké horko.)",
+      "options": [
+        "Wenn",
+        "Als",
+        "Ob"
+      ],
+      "answer": 1,
+      "explanation": "Jedno období v minulosti → *als*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně? (Když jsem přišel, spal.)",
+      "options": [
+        "Als ich kam, er schlief.",
+        "Als ich kam, schlief er.",
+        "Als kam ich, schlief er."
+      ],
+      "answer": 1,
+      "explanation": "Ve vedlejší větě je sloveso na konci (*kam*), hlavní věta za ní začíná slovesem (*schlief*)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň sloveso: Hast du Hunger? → Ich frage dich, ob du Hunger ___.",
+      "answers": [
+        "hast"
+      ],
+      "explanation": "V nepřímé otázce s *ob* jde sloveso na konec: *…, ob du Hunger hast.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Spojka *ob* se používá jen v nepřímých otázkách, na které se odpovídá ano, nebo ne.",
+      "answer": true,
+      "explanation": "U otázek s tázacím slovem se místo *ob* použije to slovo: *Ich weiß nicht, wo er wohnt.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "*als* se používá i pro děje, které se v minulosti opakovaly („vždycky když“).",
+      "answer": false,
+      "explanation": "Pro opakování (i v minulosti) je *wenn*: *Immer wenn ich krank war, las ich.* *als* je jen pro jednu událost nebo období."
     }
   ]
 }

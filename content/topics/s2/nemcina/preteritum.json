@@ -600,6 +600,55 @@
       "type": "open",
       "question": "Jak se tvoří préteritum pravidelného a nepravidelného slovesa? Uveď příklad.",
       "answer": "Pravidelné: kmen + -te + koncovka osoby, např. *spielen → ich spielte, wir spielten*. Nepravidelné změní kmen a u ich a er nemá koncovku, např. *gehen → ich ging, wir gingen*."
+    },
+    {
+      "type": "choice",
+      "question": "Ich ___ ihn gut. (Znal jsem ho dobře.)",
+      "options": [
+        "kennte",
+        "kannte",
+        "kann",
+        "kennete"
+      ],
+      "answer": 1,
+      "explanation": "*kennen* je smíšené sloveso: změní samohlásku a přidá -te → *kannte*."
+    },
+    {
+      "type": "choice",
+      "question": "Ve slovníku je *gehen – ging – gegangen*. Co je tvar *ging*?",
+      "options": [
+        "infinitiv",
+        "příčestí do perfekta",
+        "préteritum"
+      ],
+      "answer": 2,
+      "explanation": "Druhý tvar ve trojici je préteritum, třetí (*gegangen*) příčestí do perfekta."
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum (ihr): wohnen",
+      "answers": [
+        "wohntet"
+      ],
+      "explanation": "Pravidelné: kmen *wohn* + -te + koncovka pro ihr -t → *wohntet*.",
+      "hints": [
+        "Pro ihr je koncovka -tet."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum (ich): wissen",
+      "answers": [
+        "wusste",
+        "wußte"
+      ],
+      "explanation": "*wissen* je smíšené sloveso: *wusste* (změna samohlásky + -te)."
+    },
+    {
+      "type": "truefalse",
+      "question": "U slovesa *sein* se v hovoru o minulosti používá spíš perfektum *ich bin gewesen* než préteritum *ich war*.",
+      "answer": false,
+      "explanation": "U *sein*, *haben* a způsobových sloves se préteritum používá i v hovoru: *Ich war müde.*"
     }
   ]
 }

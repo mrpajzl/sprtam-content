@@ -524,6 +524,68 @@
       "type": "open",
       "question": "Řekni německy, proč se učíš němčinu. Použij *um … zu*.",
       "answer": "Například: *Ich lerne Deutsch, um in Deutschland zu studieren.* (abych studoval v Německu) nebo *…, um mit meinen Freunden in Österreich zu sprechen.* (abych mluvil s kamarády v Rakousku)."
+    },
+    {
+      "type": "choice",
+      "question": "Ich habe vergessen, das Fenster ___. (Zapomněl jsem zavřít okno.)",
+      "options": [
+        "zu zumachen",
+        "zuzumachen",
+        "zumachen",
+        "zu machen zu"
+      ],
+      "answer": 1,
+      "explanation": "*zumachen* je odlučitelné sloveso s předponou *zu-*. Další *zu* jde dovnitř: *zu-zu-machen*.",
+      "hints": [
+        "Je zumachen odlučitelné sloveso?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ich gebe dir mein Buch, ___ du lernen kannst. (Dám ti svou knihu, aby ses mohl učit.)",
+      "options": [
+        "um",
+        "damit",
+        "zu",
+        "dass zu"
+      ],
+      "answer": 1,
+      "explanation": "Podměty jsou různé (ich dám, du se učíš) → *damit*. *um … zu* jen pro stejný podmět."
+    },
+    {
+      "type": "input",
+      "question": "Napiš tvar s zu: aufräumen",
+      "answers": [
+        "aufzuräumen",
+        "aufzuraeumen"
+      ],
+      "explanation": "*auf-* je odlučitelná předpona → *zu* dovnitř: *auf-zu-räumen*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Ich will Deutsch zu lernen.“ je správně.",
+      "answer": false,
+      "explanation": "*wollen* je způsobové sloveso, infinitiv je bez zu: *Ich will Deutsch lernen.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Ich hoffe, dich bald zu sehen.“ (Doufám, že tě brzy uvidím.) je správně.",
+      "answer": true,
+      "explanation": "Po *hoffen* je zu + infinitiv na konci věty."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: „Je důležité pít hodně vody.“",
+      "items": [
+        "Es",
+        "ist",
+        "wichtig,",
+        "viel",
+        "Wasser",
+        "zu",
+        "trinken."
+      ],
+      "explanation": "Po *es ist* + přídavné jméno je zu + infinitiv na konci."
     }
   ]
 }

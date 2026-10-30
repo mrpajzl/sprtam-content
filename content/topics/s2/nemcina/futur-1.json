@@ -528,6 +528,57 @@
       "type": "open",
       "question": "Řekni německy tři věci, které uděláš po maturitě.",
       "answer": "Například: *Ich werde studieren.* (Budu studovat.) *Ich werde nach Deutschland fahren.* (Pojedu do Německa.) *Ich werde einen Job suchen.* (Budu hledat práci.)"
+    },
+    {
+      "type": "choice",
+      "question": "Wir ___ dich nie vergessen. (Nikdy na tebe nezapomeneme.)",
+      "options": [
+        "wird",
+        "werdet",
+        "werden",
+        "wollen"
+      ],
+      "answer": 2,
+      "explanation": "wir → *werden*. *wollen* by znamenalo „chtít“."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „Er wird jetzt zu Hause sein.“?",
+      "options": [
+        "Chce teď být doma.",
+        "Teď je asi doma.",
+        "Teď byl doma."
+      ],
+      "answer": 1,
+      "explanation": "Futur I může vyjadřovat odhad o přítomnosti: *Er wird zu Hause sein.* = Asi je doma."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar werden: Meine Eltern ___ im Juli nach Spanien fliegen. (Moji rodiče poletí v červenci do Španělska.)",
+      "answers": [
+        "werden"
+      ],
+      "explanation": "*meine Eltern* = sie (oni) → *werden*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Es wird kalt.“ je ve Futuru I.",
+      "answer": false,
+      "explanation": "Za *wird* není infinitiv, ale přídavné jméno, takže *werden* znamená „stát se“: Ochlazuje se. Futur I by byl *Es wird kalt werden.*"
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: „Myslím, že zítra bude pršet.“",
+      "items": [
+        "Ich",
+        "glaube,",
+        "dass",
+        "es",
+        "morgen",
+        "regnen",
+        "wird."
+      ],
+      "explanation": "Ve vedlejší větě s *dass* stojí *wird* úplně na konci, za infinitivem."
     }
   ]
 }
