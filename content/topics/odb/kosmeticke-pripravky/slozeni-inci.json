@@ -437,6 +437,73 @@
       "type": "open",
       "question": "Klientka je alergická na parfémy. Co v seznamu složek budeš hledat?",
       "answer": "Slovo Parfum (u výrobků do úst Aroma), vonné alergeny jmenované zvlášť, jako Limonene, Linalool nebo Citral, a esenciální oleje uvedené latinským rostlinným názvem."
+    },
+    {
+      "type": "input",
+      "question": "Ve 200 g krému je 30 g oleje. Kolik procent krému tvoří olej? (číslo)",
+      "answers": [
+        "15"
+      ],
+      "explanation": "30 : 200 = 0,15, tedy 15 %.",
+      "hints": [
+        "Hmotnostní podíl = hmotnost složky : hmotnost celku.",
+        "Výsledek vynásob stem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V zubní pastě se vonná směs v INCI píše slovem Parfum.",
+      "answer": false,
+      "explanation": "U výrobků do úst se vonná a chuťová směs píše slovem Aroma."
+    },
+    {
+      "type": "choice",
+      "question": "Sérum má INCI: „Aqua, Glycerin, Niacinamide, Phenoxyethanol, Panthenol, Parfum“. Co víš o množství panthenolu?",
+      "options": [
+        "je ho víc než glycerinu",
+        "je ho méně než 1 %",
+        "je ho přesně 5 %",
+        "je to hlavní složka séra"
+      ],
+      "answer": 1,
+      "explanation": "Panthenol je až za konzervantem Phenoxyethanol, kterého smí být nejvýš 1 %. Panthenolu je tedy méně než 1 %."
+    },
+    {
+      "type": "truefalse",
+      "question": "Barviva se smí psát na konec seznamu složek v libovolném pořadí jako čísla CI.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v INCI píšou složky z rostlin, např. šťáva z aloe?",
+      "options": [
+        "česky",
+        "anglickým obchodním názvem",
+        "číslem CI",
+        "latinským názvem rostliny"
+      ],
+      "answer": 3,
+      "explanation": "Například Aloe Barbadensis Leaf Juice."
+    },
+    {
+      "type": "input",
+      "question": "Kterým anglickým slovem začíná seznam složek na obalu?",
+      "answers": [
+        "Ingredients"
+      ],
+      "explanation": "Seznam složek začíná slovem Ingredients (složení)."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto složek je vonný alergen?",
+      "options": [
+        "Glycerin",
+        "Cetearyl Alcohol",
+        "Limonene",
+        "Tocopherol"
+      ],
+      "answer": 2,
+      "explanation": "Limonene je vonná látka. Cetearyl Alcohol je mastný alkohol (zahušťovadlo), ne vonná látka."
     }
   ]
 }

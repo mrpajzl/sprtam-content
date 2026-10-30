@@ -420,6 +420,86 @@
       "type": "open",
       "question": "Klientka tvrdí, že všechny parabeny jsou jed. Co jí věcně odpovíš?",
       "answer": "Konzervanty v EU posuzují vědci a smí jen povolené v daném množství. Pět parabenů je zakázaných, ale methylparaben a ethylparaben jsou povolené. Bez konzervace by se krém s vodou rychle zkazil, což je větší riziko."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zkažený krém plný mikroorganismů je pro kůži nebezpečnější než povolený konzervant.",
+      "answer": true,
+      "explanation": "Zkažený přípravek hrozí infekcí; povolené konzervanty jsou vědecky posouzené a mají limity."
+    },
+    {
+      "type": "choice",
+      "question": "Krém s PAO 6M jste v salonu otevřeli v únoru. Teď je září a krém voní normálně. Co uděláš?",
+      "options": [
+        "použiju ho, voní normálně",
+        "vyřadím ho, doba po otevření uplynula",
+        "dám ho na týden do lednice a pak použiju",
+        "přeliju ho do nového kelímku"
+      ],
+      "answer": 1,
+      "explanation": "Únor + 6 měsíců = srpen. V září už je doba po otevření pryč, i když krém voní normálně.",
+      "hints": [
+        "Přičti k únoru šest měsíců."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který paraben EU v kosmetice zakázala?",
+      "options": [
+        "Methylparaben",
+        "Ethylparaben",
+        "Isobutylparaben",
+        "Butylparaben"
+      ],
+      "answer": 2,
+      "explanation": "Zakázáno je pět parabenů, mezi nimi isobutylparaben. Methyl-, ethyl- a butylparaben jsou povolené s limity."
+    },
+    {
+      "type": "input",
+      "question": "Ve kterém roce EU zakázala v kosmetice pět parabenů? (číslo)",
+      "answers": [
+        "2014"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč tělový olej bez vody často nemá v INCI žádný konzervant?",
+      "options": [
+        "oleje se nikdy nezkazí",
+        "mikroorganismy potřebují k růstu vodu",
+        "konzervanty jsou v olejích zakázané",
+        "konzervant by olej obarvil"
+      ],
+      "answer": 1,
+      "explanation": "Bezvodé přípravky jsou proti mikrobům odolnější. Olej ale může zžluknout, proto potřebuje antioxidant."
+    },
+    {
+      "type": "match",
+      "question": "Spoj ochranu přípravku s tím, proti čemu chrání.",
+      "pairs": [
+        [
+          "konzervant",
+          "mikroorganismy"
+        ],
+        [
+          "antioxidant",
+          "kyslík"
+        ],
+        [
+          "tmavý obal",
+          "světlo"
+        ],
+        [
+          "skladování v chladu",
+          "teplo"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Stabilní krém se během doby použitelnosti může rozdělit na olej a vodu.",
+      "answer": false,
+      "explanation": "Stabilní přípravek si po celou dobu použitelnosti udrží vzhled, konzistenci i účinek."
     }
   ]
 }

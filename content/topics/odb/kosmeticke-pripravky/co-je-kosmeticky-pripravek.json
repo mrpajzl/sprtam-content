@@ -424,6 +424,79 @@
       "type": "open",
       "question": "Vyjmenuj alespoň pět údajů, které musí být na obalu kosmetiky.",
       "answer": "Jméno a adresa odpovědné osoby, jmenovitý obsah, datum minimální trvanlivosti nebo doba po otevření, upozornění pro použití, číslo šarže, funkce přípravku a seznam složek v INCI."
+    },
+    {
+      "type": "choice",
+      "question": "Jak dlouho musí odpovědná osoba uchovávat dokumentaci přípravku?",
+      "options": [
+        "5 let od výroby první šarže",
+        "10 let od uvedení poslední šarže na trh",
+        "2 roky od oznámení v CPNP",
+        "jen dokud se přípravek prodává"
+      ],
+      "answer": 1,
+      "explanation": "Dokumentace se uchovává 10 let od chvíle, kdy se na trh dostala poslední šarže."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nařízení EU o kosmetice se musí nejdřív přepsat do českého zákona, aby v Česku platilo.",
+      "answer": false,
+      "explanation": "Nařízení EU platí přímo ve všech členských státech, nepřepisuje se."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo v Česku hlavně kontroluje kosmetiku, která už je na trhu?",
+      "options": [
+        "jen výrobce sám",
+        "posuzovatel bezpečnosti",
+        "krajské hygienické stanice",
+        "odpovědná osoba jiné firmy"
+      ],
+      "answer": 2,
+      "explanation": "Státní dozor nad kosmetikou na trhu vykonávají hlavně krajské hygienické stanice."
+    },
+    {
+      "type": "input",
+      "question": "Krém má na obalu otevřený kelímek 3M. Otevřela jsi ho 1. května. Do kterého měsíce ho spotřebuješ? (název měsíce)",
+      "answers": [
+        "srpen",
+        "srpna"
+      ],
+      "explanation": "Květen + 3 měsíce = 1. srpna.",
+      "hints": [
+        "3M znamená 3 měsíce od otevření.",
+        "Přičti ke květnu tři měsíce."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo zpracovává posouzení bezpečnosti kosmetického přípravku?",
+      "options": [
+        "kosmetička, která přípravek používá",
+        "prodavač v drogerii",
+        "úředník krajské hygienické stanice",
+        "posuzovatel bezpečnosti s vysokoškolským vzděláním v oboru"
+      ],
+      "answer": 3,
+      "explanation": "Posuzovatel bezpečnosti je odborník např. z farmacie, toxikologie nebo lékařství."
+    },
+    {
+      "type": "truefalse",
+      "question": "Z portálu CPNP mohou toxikologická informační střediska zjistit složení šamponu, kterého se napilo dítě.",
+      "answer": true,
+      "explanation": "Údaje z oznámení v CPNP slouží i pro rychlou pomoc při otravách."
+    },
+    {
+      "type": "choice",
+      "question": "Které tvrzení smí být na obalu kosmetického krému?",
+      "options": [
+        "Vyléčí lupénku.",
+        "Hydratuje a zjemňuje suchou pleť.",
+        "Léčí plíseň nehtů.",
+        "Odstraní ekzém do týdne."
+      ],
+      "answer": 1,
+      "explanation": "Hydratace zdravé suché pleti je péče. Ostatní tvrzení slibují léčbu nemoci, to kosmetika nesmí."
     }
   ]
 }

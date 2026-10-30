@@ -414,6 +414,90 @@
       "type": "open",
       "question": "Jak bys bez etikety zjistila, jestli je krém O/V, nebo V/O?",
       "answer": "Kápla bych ho do vody: O/V se rozptýlí, V/O ne. Dá se také obarvit barvivem rozpustným ve vodě nebo změřit vodivost, O/V vede proud."
+    },
+    {
+      "type": "choice",
+      "question": "Do které fáze emulze patří bambucké máslo?",
+      "options": [
+        "do vodní fáze",
+        "do olejové fáze",
+        "je to emulgátor",
+        "netvoří žádnou fázi"
+      ],
+      "answer": 1,
+      "explanation": "Oleje, tuky a vosky tvoří olejovou fázi. Glycerin by patřil do vodní."
+    },
+    {
+      "type": "input",
+      "question": "Emulgátor má HLB 5. Napiš typ emulze, kterou vytvoří (O/V nebo V/O).",
+      "answers": [
+        "V/O",
+        "VO",
+        "v o",
+        "voda v oleji"
+      ],
+      "hints": [
+        "Nízké HLB = emulgátor má víc rád tuk.",
+        "Olej pak tvoří vnější fázi."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Označení O/V znamená, že emulze obsahuje víc oleje než vody.",
+      "answer": false,
+      "explanation": "O/V znamená, že olej tvoří kapičky ve vodě. Rozhoduje stavba, ne poměr množství."
+    },
+    {
+      "type": "choice",
+      "question": "Přidáš do krému barvivo rozpustné ve vodě a obarví se celý krém. Jaká je to emulze?",
+      "options": [
+        "V/O",
+        "nedá se poznat",
+        "O/V",
+        "není to emulze"
+      ],
+      "answer": 2,
+      "explanation": "Barvivo rozpustné ve vodě obarví celý krém jen tehdy, když je voda vnější fáze."
+    },
+    {
+      "type": "truefalse",
+      "question": "Molekula emulgátoru má hydrofilní i lipofilní část.",
+      "answer": true,
+      "explanation": "Jeden konec má rád vodu, druhý olej, proto si sedne na hranici kapičky."
+    },
+    {
+      "type": "choice",
+      "question": "Co drží pohromadě emulzi v majonéze?",
+      "options": [
+        "ocet",
+        "sůl",
+        "lecitin z vaječného žloutku",
+        "cukr"
+      ],
+      "answer": 2,
+      "explanation": "Lecitin ze žloutku je přírodní emulgátor."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zkoušku s výsledkem, který dá emulze O/V.",
+      "pairs": [
+        [
+          "ředění vodou",
+          "rozptýlí se"
+        ],
+        [
+          "barvivo rozpustné ve vodě",
+          "obarví celý krém"
+        ],
+        [
+          "měření vodivosti",
+          "vede proud"
+        ],
+        [
+          "nanesení na kůži",
+          "rychle se vsákne"
+        ]
+      ]
     }
   ]
 }

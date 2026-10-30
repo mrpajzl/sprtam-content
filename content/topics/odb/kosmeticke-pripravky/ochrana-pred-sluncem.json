@@ -428,6 +428,72 @@
       "type": "open",
       "question": "Jaké zásady správného používání opalovacího přípravku klientce řekneš?",
       "answer": "Vybrat SPF podle fototypu s UVA v kroužku, nanést dostatečné množství, nevynechat uši a krk, opakovat zhruba každé 2 hodiny a po koupání. K tomu stín kolem poledne, klobouk, brýle a oblečení."
+    },
+    {
+      "type": "input",
+      "question": "Kolik čajových lžiček opalovacího krému asi potřebuje dospělý na celé tělo? (číslo)",
+      "answers": [
+        "6",
+        "šest"
+      ],
+      "explanation": "Asi 6 lžiček, tedy zhruba 36 g, odpovídá 2 mg/cm²."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký rozsah vlnových délek má záření UVB?",
+      "options": [
+        "315–400 nm",
+        "280–315 nm",
+        "pod 280 nm",
+        "400–700 nm"
+      ],
+      "answer": 1,
+      "explanation": "UVA je 315–400 nm, UVC pod 280 nm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Voděodolný opalovací krém se po koupání a utření musí nanést znovu.",
+      "answer": true,
+      "explanation": "Po koupání si drží jen část ochrany a ručník ho stírá."
+    },
+    {
+      "type": "choice",
+      "question": "Jak působí chemické (organické) UV filtry?",
+      "options": [
+        "jen odrážejí záření jako zrcadlo",
+        "blokují 100 % záření",
+        "pohlcují záření a mění ho na teplo",
+        "zesilují opálení"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "SPF 30 zachytí dvakrát víc UVB záření než SPF 15.",
+      "answer": false,
+      "explanation": "SPF 15 zachytí asi 93 %, SPF 30 asi 97 % UVB. Rozdíl jsou jen asi 4 procentní body."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s tím, co pro něj platí.",
+      "pairs": [
+        [
+          "UVB",
+          "způsobuje spálení"
+        ],
+        [
+          "UVA",
+          "urychluje stárnutí kůže"
+        ],
+        [
+          "UVC",
+          "pohltí ho ozonová vrstva"
+        ],
+        [
+          "fototyp I",
+          "vždy se spálí, neopálí se"
+        ]
+      ]
     }
   ]
 }
