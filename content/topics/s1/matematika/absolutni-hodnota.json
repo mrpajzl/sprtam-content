@@ -309,6 +309,79 @@
       "type": "open",
       "question": "Popiš metodu nulových bodů.",
       "answer": "Najdu body, kde výrazy v absolutních hodnotách mění znaménko, rozdělím osu na intervaly. V každém odstraním absolutní hodnoty podle znaménka, vyřeším a ověřím, zda řešení leží v intervalu."
+    },
+    {
+      "type": "input",
+      "question": "|−2,5| + |1,5| =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "2,5 + 1,5 = 4"
+    },
+    {
+      "type": "choice",
+      "question": "Řešení rovnice |x + 2| = 3:",
+      "options": [
+        "x = 5 nebo x = −1",
+        "x = 1 nebo x = −5",
+        "jen x = 1",
+        "nemá řešení"
+      ],
+      "answer": 1,
+      "explanation": "x + 2 = 3 → x = 1; x + 2 = −3 → x = −5.",
+      "hints": [
+        "Výraz uvnitř je buď 3, nebo −3."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "|x − 1| > 2 ⇔ x ∈",
+      "options": [
+        "(−1; 3)",
+        "(−∞; −1) ∪ (3; ∞)",
+        "(−∞; −1⟩ ∪ ⟨3; ∞)",
+        "(3; ∞)"
+      ],
+      "answer": 1,
+      "explanation": "Čísla dál od 1 než 2: vlevo od −1 a vpravo od 3, krajní body nepatří."
+    },
+    {
+      "type": "truefalse",
+      "question": "|a − b| = |b − a| pro všechna reálná a, b.",
+      "answer": true,
+      "explanation": "Vzdálenost dvou čísel nezávisí na pořadí."
+    },
+    {
+      "type": "choice",
+      "question": "Pro x < 0 je |x| rovno:",
+      "options": [
+        "x",
+        "−x",
+        "0",
+        "x²"
+      ],
+      "answer": 1,
+      "explanation": "Záporné číslo změní znaménko: např. |−7| = −(−7) = 7."
+    },
+    {
+      "type": "input",
+      "question": "Kolik celých čísel x splňuje |x| ≤ 2?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "−2, −1, 0, 1, 2"
+    },
+    {
+      "type": "choice",
+      "question": "Jaké jsou nulové body výrazu |x − 5| + |x + 3|?",
+      "options": [
+        "−5 a 3",
+        "5 a −3",
+        "5 a 3",
+        "−5 a −3"
+      ],
+      "answer": 1,
+      "explanation": "x − 5 = 0 pro x = 5, x + 3 = 0 pro x = −3."
     }
   ]
 }

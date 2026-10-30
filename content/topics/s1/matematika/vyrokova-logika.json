@@ -456,6 +456,77 @@
       "type": "open",
       "question": "Kdy je implikace A ⇒ B nepravdivá? Vysvětli na příkladu.",
       "answer": "Jen když A platí a B neplatí. „Když prší, vezmu deštník“ je porušeno, jen když prší a deštník nevezmu."
+    },
+    {
+      "type": "truefalse",
+      "question": "„x + 2 = 7“ je výrok.",
+      "answer": false,
+      "explanation": "Dokud nevíme, co je x, nejde rozhodnout, jestli věta platí."
+    },
+    {
+      "type": "choice",
+      "question": "A i B jsou nepravdivé. Který složený výrok je nepravdivý?",
+      "options": [
+        "A ⇒ B",
+        "A ⇔ B",
+        "A ∨ B",
+        "¬A"
+      ],
+      "answer": 2,
+      "explanation": "Disjunkce má nulu jen v řádku 0 a 0. Implikace i ekvivalence jsou pro A = 0, B = 0 pravdivé, ¬A = 1."
+    },
+    {
+      "type": "choice",
+      "question": "Negace ¬(A ∨ B) je:",
+      "options": [
+        "¬A ∨ ¬B",
+        "¬A ∧ ¬B",
+        "A ∧ B",
+        "¬A ⇒ B"
+      ],
+      "answer": 1,
+      "explanation": "De Morganovo pravidlo: ∨ se změní na ∧ a obě části se znegují."
+    },
+    {
+      "type": "choice",
+      "question": "Negace výroku „Venku prší a fouká vítr.“",
+      "options": [
+        "Venku neprší a nefouká vítr.",
+        "Venku neprší nebo nefouká vítr.",
+        "Venku prší nebo fouká vítr.",
+        "Venku neprší, ale fouká vítr."
+      ],
+      "answer": 1,
+      "explanation": "¬(A ∧ B) = ¬A ∨ ¬B. Stačí, aby neplatila jedna část."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výrok „Číslo 6 je sudé nebo dělitelné třemi.“ je pravdivý.",
+      "answer": true,
+      "explanation": "Platí obě části. Matematické „nebo“ připouští i obojí."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je obměna výroku „Když je číslo dělitelné čtyřmi, je sudé.“?",
+      "options": [
+        "Když je číslo sudé, je dělitelné čtyřmi.",
+        "Když číslo není sudé, není dělitelné čtyřmi.",
+        "Když číslo není dělitelné čtyřmi, není sudé.",
+        "Číslo je dělitelné čtyřmi a není sudé."
+      ],
+      "answer": 1,
+      "explanation": "Obměna A ⇒ B je ¬B ⇒ ¬A. První možnost je obrácená implikace – ta neplatí (6 je sudé, ale ne dělitelné 4)."
+    },
+    {
+      "type": "input",
+      "question": "A = 1, B = 0. Jaká je pravdivostní hodnota ¬A ∨ B? Napiš 1, nebo 0.",
+      "answers": [
+        "0"
+      ],
+      "explanation": "¬A = 0, B = 0, a 0 ∨ 0 = 0.",
+      "hints": [
+        "Nejdřív urči ¬A."
+      ]
     }
   ]
 }

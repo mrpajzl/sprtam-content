@@ -363,6 +363,72 @@
       "type": "open",
       "question": "Jak vyřešíš kvadratickou nerovnici?",
       "answer": "Převedu ji na tvar ax² + bx + c ? 0, najdu kořeny, načrtnu parabolu a vyčtu intervaly, kde je nad nebo pod osou x."
+    },
+    {
+      "type": "input",
+      "question": "Diskriminant rovnice 2x² + 3x − 2 = 0:",
+      "answers": [
+        "25"
+      ],
+      "explanation": "D = 3² − 4 · 2 · (−2) = 9 + 16 = 25"
+    },
+    {
+      "type": "choice",
+      "question": "Kořeny rovnice x² + 2x − 8 = 0:",
+      "options": [
+        "−2 a 4",
+        "2 a −4",
+        "2 a 4",
+        "−2 a −4"
+      ],
+      "answer": 1,
+      "explanation": "(x − 2)(x + 4) = 0",
+      "hints": [
+        "Hledej dvě čísla se součtem −2 a součinem −8."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik reálných kořenů má rovnice x² − 6x + 9 = 0?",
+      "options": [
+        "žádný",
+        "jeden",
+        "dva"
+      ],
+      "answer": 1,
+      "explanation": "D = 36 − 36 = 0. Rovnice je (x − 3)² = 0, kořen 3."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnice x² + 2x + 5 = 0 má dva reálné kořeny.",
+      "answer": false,
+      "explanation": "D = 4 − 20 = −16 < 0, nemá žádný reálný kořen."
+    },
+    {
+      "type": "choice",
+      "question": "x² − 9 > 0 ⇔ x ∈",
+      "options": [
+        "(−3; 3)",
+        "(−∞; −3) ∪ (3; ∞)",
+        "(3; ∞)",
+        "(−∞; −3⟩ ∪ ⟨3; ∞)"
+      ],
+      "answer": 1,
+      "explanation": "Kořeny ±3, parabola otevřená nahoru je nad osou vně kořenů; kraje nepatří (>)."
+    },
+    {
+      "type": "input",
+      "question": "Rovnice x² − 2x − 15 = 0. Větší kořen =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "(x − 5)(x + 3) = 0, kořeny 5 a −3."
+    },
+    {
+      "type": "truefalse",
+      "question": "Parabola y = −x² + 4 je otevřená dolů.",
+      "answer": true,
+      "explanation": "Koeficient u x² je záporný (a = −1)."
     }
   ]
 }

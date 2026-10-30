@@ -438,6 +438,84 @@
       "type": "open",
       "question": "Co je prvočíslo a co číslo složené?",
       "answer": "Prvočíslo je přirozené číslo větší než 1, které má právě dva dělitele: 1 a sebe. Složené číslo má více než dva dělitele."
+    },
+    {
+      "type": "input",
+      "question": "Zapiš 0,(45) jako zlomek v základním tvaru.",
+      "answers": [
+        "5/11"
+      ],
+      "explanation": "100x − x = 45, x = 45/99 = 5/11.",
+      "hints": [
+        "Perioda má 2 číslice, vynásob x stem.",
+        "99x = 45"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém nejmenším číselném oboru má rovnice 2x = 3 řešení?",
+      "options": [
+        "ℕ",
+        "ℤ",
+        "ℚ",
+        "ℝ"
+      ],
+      "answer": 2,
+      "explanation": "x = 3/2 je zlomek, ale ne celé číslo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo √9 je iracionální.",
+      "answer": false,
+      "explanation": "√9 = 3, je to přirozené číslo."
+    },
+    {
+      "type": "input",
+      "question": "D(18, 30) =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "18 = 2 · 3², 30 = 2 · 3 · 5 → D = 2 · 3 = 6"
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo je složené?",
+      "options": [
+        "37",
+        "41",
+        "87",
+        "43"
+      ],
+      "answer": 2,
+      "explanation": "87 = 3 · 29. Ostatní jsou prvočísla."
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo s nejmenším číselným oborem, do kterého patří.",
+      "pairs": [
+        [
+          "5",
+          "ℕ"
+        ],
+        [
+          "−3",
+          "ℤ"
+        ],
+        [
+          "0,7",
+          "ℚ"
+        ],
+        [
+          "π",
+          "ℝ"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozdíl dvou přirozených čísel je vždy přirozené číslo.",
+      "answer": false,
+      "explanation": "3 − 5 = −2, což není přirozené číslo."
     }
   ]
 }

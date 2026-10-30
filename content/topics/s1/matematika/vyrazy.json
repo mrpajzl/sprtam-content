@@ -369,6 +369,83 @@
       "type": "open",
       "question": "Jaké znáš způsoby rozkladu mnohočlenu na součin?",
       "answer": "Vytýkání, užití vzorců (a² − b², (a ± b)²), rozklad kvadratického trojčlenu podle Vietových vzorců a postupné vytýkání po skupinách."
+    },
+    {
+      "type": "choice",
+      "question": "(2x + 1)² =",
+      "options": [
+        "4x² + 1",
+        "2x² + 4x + 1",
+        "4x² + 4x + 1",
+        "4x² + 2x + 1"
+      ],
+      "answer": 2,
+      "explanation": "a = 2x, b = 1: a² = 4x², 2ab = 4x, b² = 1."
+    },
+    {
+      "type": "choice",
+      "question": "Vytkni: 10x³ − 15x² =",
+      "options": [
+        "5x(2x² − 3)",
+        "5x²(2x − 3)",
+        "5x²(2x − 15)",
+        "10x²(x − 15)"
+      ],
+      "answer": 1,
+      "explanation": "Společný činitel obou členů je 5x²."
+    },
+    {
+      "type": "input",
+      "question": "Hodnota výrazu x² − 4x + 1 pro x = 3:",
+      "answers": [
+        "−2",
+        "-2"
+      ],
+      "explanation": "9 − 12 + 1 = −2"
+    },
+    {
+      "type": "choice",
+      "question": "Rozlož x² − 7x + 12.",
+      "options": [
+        "(x + 3)(x + 4)",
+        "(x − 2)(x − 6)",
+        "(x − 3)(x − 4)",
+        "(x − 1)(x − 12)"
+      ],
+      "answer": 2,
+      "explanation": "−3 + (−4) = −7, (−3) · (−4) = 12",
+      "hints": [
+        "Hledej dvě čísla se součtem −7 a součinem 12."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "(x + 2)/2 = x + 1",
+      "answer": false,
+      "explanation": "Krátit smíš jen činitele, ne sčítance: (x + 2)/2 = x/2 + 1."
+    },
+    {
+      "type": "input",
+      "question": "Spočítej zpaměti: 53² − 47² =",
+      "answers": [
+        "600"
+      ],
+      "explanation": "(53 − 47)(53 + 47) = 6 · 100 = 600",
+      "hints": [
+        "Použij a² − b² = (a − b)(a + b)."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Pro která x není definován výraz (x + 1)/(x² − 9)?",
+      "options": [
+        "jen x = 3",
+        "x = 3 a x = −3",
+        "x = −1",
+        "x = 9"
+      ],
+      "answer": 1,
+      "explanation": "x² − 9 = (x − 3)(x + 3) = 0 pro x = 3 nebo x = −3."
     }
   ]
 }

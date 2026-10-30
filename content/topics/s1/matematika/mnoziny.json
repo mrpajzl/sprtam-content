@@ -543,6 +543,48 @@
       "type": "open",
       "question": "Jak určíš průnik a sjednocení dvou intervalů?",
       "answer": "Zakreslím oba intervaly nad jednu číselnou osu. Průnik je část, kde se překrývají, sjednocení je vše, co patří aspoň do jednoho. Pak hlídám krajní body."
+    },
+    {
+      "type": "choice",
+      "question": "A = {2, 4, 6, 8}, B = {1, 2, 3, 4}. A ∪ B =",
+      "options": [
+        "{2, 4}",
+        "{1, 2, 3, 4, 6, 8}",
+        "{6, 8}",
+        "{1, 3}"
+      ],
+      "answer": 1,
+      "explanation": "Sjednocení = všechny prvky, které jsou aspoň v jedné množině, každý jen jednou."
+    },
+    {
+      "type": "input",
+      "question": "|A| = 12, |B| = 9, |A ∩ B| = 4. Kolik prvků má A ∪ B?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "12 + 9 − 4 = 17",
+      "hints": [
+        "Prvky z průniku jsou započítané v |A| i v |B|.",
+        "|A ∪ B| = |A| + |B| − |A ∩ B|"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "(−∞; 4) ∪ ⟨4; ∞) =",
+      "options": [
+        "∅",
+        "(−∞; ∞)",
+        "{4}",
+        "(−∞; 4⟩"
+      ],
+      "answer": 1,
+      "explanation": "Čtyřka patří do druhého intervalu, takže dohromady pokryjí celou číselnou osu ℝ."
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 3 patří do intervalu (3; 5⟩.",
+      "answer": false,
+      "explanation": "Kulatá závorka u 3 znamená, že krajní bod nepatří."
     }
   ]
 }

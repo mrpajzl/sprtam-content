@@ -447,6 +447,72 @@
       "type": "open",
       "question": "Vyslov Pythagorovu větu a řekni, kdy platí.",
       "answer": "V pravoúhlém trojúhelníku je obsah čtverce nad přeponou roven součtu obsahů čtverců nad odvěsnami: c² = a² + b². Platí jen pro pravoúhlé trojúhelníky."
+    },
+    {
+      "type": "input",
+      "question": "Pravoúhlý trojúhelník má přeponu 13 a jednu odvěsnu 5. Druhá odvěsna =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "b² = 169 − 25 = 144, b = 12.",
+      "hints": [
+        "Pythagorova věta: a² + b² = c².",
+        "b² = 13² − 5²"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která trojice délek tvoří pravoúhlý trojúhelník?",
+      "options": [
+        "6, 7, 9",
+        "4, 5, 6",
+        "5, 12, 13",
+        "2, 3, 4"
+      ],
+      "answer": 2,
+      "explanation": "5² + 12² = 25 + 144 = 169 = 13²."
+    },
+    {
+      "type": "input",
+      "question": "V rovnoramenném trojúhelníku má úhel při základně 50°. Úhel proti základně (°) =",
+      "answers": [
+        "80"
+      ],
+      "explanation": "Oba úhly při základně mají 50°: 180° − 2 · 50° = 80°."
+    },
+    {
+      "type": "truefalse",
+      "question": "Z úseček 5 cm, 6 cm a 10 cm lze sestrojit trojúhelník.",
+      "answer": true,
+      "explanation": "5 + 6 = 11 > 10 a i ostatní dvojice dají víc než třetí strana."
+    },
+    {
+      "type": "input",
+      "question": "Pravoúhlý trojúhelník: přepona c = 9, úsek přepony cₐ = 4. Odvěsna a =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "a² = 9 · 4 = 36, a = 6.",
+      "hints": [
+        "Euklidova věta o odvěsně: a² = c · cₐ."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když trojúhelník zvětšíš v poměru 3, jeho obsah vzroste 3×.",
+      "answer": false,
+      "explanation": "Obsah roste k²-krát, tedy 9×."
+    },
+    {
+      "type": "choice",
+      "question": "Střed kružnice vepsané je stejně daleko od:",
+      "options": [
+        "všech tří vrcholů",
+        "všech tří stran",
+        "těžiště a ortocentra"
+      ],
+      "answer": 1,
+      "explanation": "Leží na osách úhlů, proto má stejnou vzdálenost od všech stran. Stejně daleko od vrcholů je střed kružnice opsané."
     }
   ]
 }

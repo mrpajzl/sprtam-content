@@ -344,6 +344,82 @@
       "type": "open",
       "question": "Jaký je vztah mezi obvodovým a středovým úhlem?",
       "answer": "Obvodový úhel je roven polovině středového úhlu příslušného ke stejnému oblouku. Všechny obvodové úhly nad stejným obloukem jsou shodné."
+    },
+    {
+      "type": "input",
+      "question": "Obvodový úhel je 35°. Středový úhel nad stejným obloukem (°) =",
+      "answers": [
+        "70"
+      ],
+      "explanation": "Středový úhel je dvojnásobek obvodového."
+    },
+    {
+      "type": "match",
+      "question": "Spoj mnohoúhelník se součtem jeho vnitřních úhlů.",
+      "pairs": [
+        [
+          "trojúhelník",
+          "180°"
+        ],
+        [
+          "čtyřúhelník",
+          "360°"
+        ],
+        [
+          "pětiúhelník",
+          "540°"
+        ],
+        [
+          "dvanáctiúhelník",
+          "1800°"
+        ]
+      ],
+      "explanation": "Součet je (n − 2) · 180°."
+    },
+    {
+      "type": "input",
+      "question": "Kolik úhlopříček má osmiúhelník?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "8 · 5 / 2 = 20",
+      "hints": [
+        "Vzorec n(n − 3)/2."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kruh s poloměrem 3 má obsah 6π.",
+      "answer": false,
+      "explanation": "S = πr² = 9π. Číslo 6π je obvod (2πr)."
+    },
+    {
+      "type": "input",
+      "question": "Vnitřní úhel pravidelného šestiúhelníku (°) =",
+      "answers": [
+        "120"
+      ],
+      "explanation": "(6 − 2) · 180° = 720°, 720° : 6 = 120°."
+    },
+    {
+      "type": "choice",
+      "question": "Obvod kružnice s poloměrem 4 je:",
+      "options": [
+        "4π",
+        "16π",
+        "8π",
+        "2π"
+      ],
+      "answer": 2,
+      "explanation": "o = 2πr = 2π · 4 = 8π"
+    },
+    {
+      "type": "input",
+      "question": "Lichoběžník má základny 8 cm a 4 cm a výšku 3 cm. Obsah (cm²) =",
+      "answers": [
+        "18"
+      ],
+      "explanation": "(8 + 4) · 3 / 2 = 18"
     }
   ]
 }

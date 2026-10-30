@@ -346,6 +346,81 @@
       "type": "open",
       "question": "Jakými metodami lze řešit soustavu dvou lineárních rovnic?",
       "answer": "Dosazovací (vyjádřím neznámou a dosadím), sčítací (rovnice vynásobím a sečtu, aby neznámá vypadla) a grafická (průsečík dvou přímek)."
+    },
+    {
+      "type": "truefalse",
+      "question": "x = 2 je řešením rovnice 4x − 1 = 3x + 1.",
+      "answer": true,
+      "explanation": "Zkouška: 4 · 2 − 1 = 7 a 3 · 2 + 1 = 7."
+    },
+    {
+      "type": "input",
+      "question": "4 stejné rohlíky a mléko za 25 Kč stály dohromady 41 Kč. Cena jednoho rohlíku v Kč =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "4x = 16, x = 4",
+      "hints": [
+        "Cenu rohlíku označ x a sestav rovnici.",
+        "4x + 25 = 41"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Řešení nerovnice 2x + 3 ≤ 9:",
+      "options": [
+        "x ≥ 3",
+        "x < 3",
+        "x ≤ 3",
+        "x ≤ 6"
+      ],
+      "answer": 2,
+      "explanation": "2x ≤ 6, x ≤ 3. Dělím kladným číslem, znak se neotáčí."
+    },
+    {
+      "type": "choice",
+      "question": "−3x ≤ 12",
+      "options": [
+        "x ≤ −4",
+        "x ≥ −4",
+        "x ≥ 4",
+        "x ≤ 4"
+      ],
+      "answer": 1,
+      "explanation": "Dělím −3, proto otočím znak: x ≥ −4."
+    },
+    {
+      "type": "input",
+      "question": "Soustava x + 2y = 8, x − y = 2. x =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "3y = 6, y = 2, x = 2 + 2 = 4.",
+      "hints": [
+        "Odečti druhou rovnici od první, x zmizí."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Soustava y = 2x + 1 a y = 2x − 3 má:",
+      "options": [
+        "jedno řešení",
+        "nekonečně mnoho řešení",
+        "žádné řešení"
+      ],
+      "answer": 2,
+      "explanation": "Obě přímky mají stejný sklon k = 2, ale jiné q – jsou rovnoběžné a neprotnou se."
+    },
+    {
+      "type": "input",
+      "question": "Tarif A stojí 150 Kč a 3 Kč za minutu, tarif B 250 Kč a 1 Kč za minutu. Při kolika minutách stojí oba stejně?",
+      "answers": [
+        "50"
+      ],
+      "explanation": "2t = 100, t = 50. Oba pak stojí 300 Kč.",
+      "hints": [
+        "150 + 3t = 250 + t"
+      ]
     }
   ]
 }
