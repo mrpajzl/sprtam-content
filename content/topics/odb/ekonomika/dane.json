@@ -417,6 +417,67 @@
       "type": "open",
       "question": "Co je výdajový paušál a kdy se OSVČ vyplatí?",
       "answer": "Výdajový paušál je odečtení výdajů procentem z příjmů (např. 60 % u volné živnosti) místo skutečných výdajů podle dokladů. Vyplatí se tomu, kdo má skutečné výdaje nižší než paušál – třeba programátorovi, který skoro nic nenakupuje."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je snížená sazba DPH v roce 2026 (např. většina potravin a léky)?",
+      "options": [
+        "21 %",
+        "10 %",
+        "12 %",
+        "15 %"
+      ],
+      "answer": 2,
+      "explanation": "V roce 2026 má DPH dvě sazby: základní 21 % a sníženou 12 %."
+    },
+    {
+      "type": "input",
+      "question": "Bunda stojí 2 420 Kč včetně DPH 21 % (2026). Kolik Kč z ceny tvoří DPH?",
+      "answers": [
+        "420"
+      ],
+      "explanation": "Cena bez DPH: 2 420 ÷ 1,21 = 2 000 Kč. DPH: 2 420 − 2 000 = 420 Kč.",
+      "hints": [
+        "Nepočítej 21 % z ceny s DPH.",
+        "Nejdřív zjisti cenu bez DPH: vyděl 1,21."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plátcem DPH se musí stát každý podnikatel, i když má obrat 500 000 Kč za rok.",
+      "answer": false,
+      "explanation": "Registrace je povinná až po překročení obratu 2 mil. Kč za kalendářní rok (od roku 2025)."
+    },
+    {
+      "type": "input",
+      "question": "Fotograf (svobodné povolání, paušál 40 %) měl v roce 2026 příjmy 600 000 Kč. Kolik Kč daně zaplatí po slevě na poplatníka 30 840 Kč?",
+      "answers": [
+        "23160",
+        "23 160"
+      ],
+      "explanation": "Výdaje: 40 % z 600 000 = 240 000 Kč. Základ: 360 000 Kč. Daň 15 %: 54 000 Kč. Po slevě: 54 000 − 30 840 = 23 160 Kč.",
+      "hints": [
+        "Nejdřív spočítej paušální výdaje a základ daně.",
+        "Daň je 15 % ze základu, pak odečti slevu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Plátce DPH má za měsíc DPH na výstupu 8 000 Kč a na vstupu 14 000 Kč. Co nastane?",
+      "options": [
+        "odvede státu 8 000 Kč",
+        "odvede státu 22 000 Kč",
+        "vznikne nadměrný odpočet 6 000 Kč a stát mu ho vrátí",
+        "nic, protože daň nemůže být záporná"
+      ],
+      "answer": 2,
+      "explanation": "Vstup je vyšší než výstup: 8 000 − 14 000 = −6 000 Kč. To je nadměrný odpočet, který stát vrátí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kdo podá daňové přiznání elektronicky, má na to o měsíc delší lhůtu.",
+      "answer": true,
+      "explanation": "Lhůta je zpravidla do 1. dubna, při elektronickém podání o měsíc delší."
     }
   ]
 }

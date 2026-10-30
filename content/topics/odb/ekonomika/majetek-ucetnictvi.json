@@ -415,6 +415,69 @@
       "type": "open",
       "question": "Čím se liší daňová evidence od účetnictví?",
       "answer": "Daňová evidence je jednodušší, vedou ji jen některé OSVČ a sleduje příjmy a výdaje. Účetnictví je podvojné, musí ho vést právnické osoby a sleduje náklady a výnosy; výsledkem jsou rozvaha a výkaz zisku a ztráty."
+    },
+    {
+      "type": "choice",
+      "question": "Kam v rozvaze patří licence na software, kterou firma používá několik let?",
+      "options": [
+        "oběžný majetek – zásoby",
+        "dlouhodobý nehmotný majetek",
+        "cizí kapitál",
+        "vlastní kapitál"
+      ],
+      "answer": 1,
+      "explanation": "Licence slouží déle než rok a nedá se vzít do ruky – je to dlouhodobý nehmotný majetek."
+    },
+    {
+      "type": "input",
+      "question": "Dílna má lis za 120 000 Kč, materiál za 30 000 Kč, v pokladně 10 000 Kč a na účtu 40 000 Kč. Aktiva celkem v Kč =",
+      "answers": [
+        "200000",
+        "200 000"
+      ],
+      "explanation": "120 000 + 30 000 + 10 000 + 40 000 = 200 000 Kč. Všechno jsou to věci a peníze, které dílna má."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vrtačku za 50 000 Kč musí podnik odpisovat několik let.",
+      "answer": false,
+      "explanation": "Odpisuje se hmotný majetek se vstupní cenou nad 80 000 Kč. Levnější věci jdou do nákladů hned."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo musí vést účetnictví?",
+      "options": [
+        "kadeřnice OSVČ, která není zapsaná v obchodním rejstříku",
+        "student, který vedle školy programuje weby na živnost",
+        "Pekárna Novák s.r.o.",
+        "elektrikář OSVČ s příjmy 900 000 Kč za rok"
+      ],
+      "answer": 2,
+      "explanation": "Účetnictví musí vést všechny právnické osoby, tedy i s.r.o. OSVČ mimo obchodní rejstřík si mohou vést daňovou evidenci."
+    },
+    {
+      "type": "choice",
+      "question": "Firma vloží 3 000 Kč z pokladny na bankovní účet. Jak se to zapíše podvojně?",
+      "options": [
+        "Bankovní účet MD 3 000, Pokladna D 3 000",
+        "Pokladna MD 3 000, Bankovní účet D 3 000",
+        "jen Bankovní účet MD 3 000",
+        "Pokladna MD 3 000, Bankovní účet MD 3 000"
+      ],
+      "answer": 0,
+      "explanation": "Peněz na účtu přibude (MD), v pokladně ubude (D). Každá operace jde na dva účty stejnou částkou, jednou na MD a jednou na D.",
+      "hints": [
+        "Přibude peněz na účtu, nebo v pokladně?",
+        "Výběr z banky do pokladny se zapíše Pokladna MD, Bankovní účet D. Tady jdou peníze opačně."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje přehled, který k jednomu dni ukazuje aktiva a pasiva podniku? (jedno slovo)",
+      "answers": [
+        "rozvaha"
+      ],
+      "explanation": "V rozvaze je vlevo majetek (aktiva) a vpravo jeho zdroje (pasiva); obě strany se rovnají."
     }
   ]
 }

@@ -455,6 +455,63 @@
       "type": "open",
       "question": "Jaké povinnosti má živnostník, když už podniká?",
       "answer": "Vystavuje zákazníkům doklady, vede evidenci příjmů a výdajů, podává daňové přiznání a platí daň z příjmů. Sám si platí zálohy na sociální a zdravotní pojištění a hlásí úřadům změny."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký druh živnosti je ostraha majetku a osob?",
+      "options": [
+        "volná",
+        "řemeslná",
+        "vázaná",
+        "koncesovaná"
+      ],
+      "answer": 3,
+      "explanation": "Ostraha je koncesovaná živnost – stát chce větší dohled, proto ji úřad musí povolit."
+    },
+    {
+      "type": "choice",
+      "question": "Kdy vzniká oprávnění provozovat koncesovanou živnost?",
+      "options": [
+        "dnem ohlášení na úřadě",
+        "dnem, kdy rozhodnutí o koncesi nabude právní moci",
+        "dnem vystavení první faktury",
+        "rok po podání žádosti"
+      ],
+      "answer": 1,
+      "explanation": "Koncese je povolení. Úřad nejdřív ověří podmínky a vydá rozhodnutí; oprávnění vzniká, až je pravomocné."
+    },
+    {
+      "type": "input",
+      "question": "Kolik číslic má IČO? (číslo)",
+      "answers": [
+        "8",
+        "osm"
+      ],
+      "explanation": "IČO je osmimístné identifikační číslo osoby, pod kterým je podnikatel veden v rejstřících."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bezúhonný je pro živnost ten, kdo nebyl odsouzen za úmyslný trestný čin související s podnikáním.",
+      "answer": true,
+      "explanation": "Bezúhonnost je jedna ze tří všeobecných podmínek, vedle věku 18 let a svéprávnosti."
+    },
+    {
+      "type": "choice",
+      "question": "Kamila (20 let) chce tvořit webové stránky pro firmy. Jakou živnost potřebuje?",
+      "options": [
+        "koncesovanou",
+        "vázanou",
+        "volnou",
+        "řemeslnou"
+      ],
+      "answer": 2,
+      "explanation": "Tvorba webů a poradenství v IT patří do volné živnosti – stačí všeobecné podmínky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Živnost můžeš ohlásit jen na živnostenském úřadě v místě, kde bydlíš.",
+      "answer": false,
+      "explanation": "Živnost lze ohlásit na kterémkoli živnostenském úřadě, osobně nebo elektronicky."
     }
   ]
 }

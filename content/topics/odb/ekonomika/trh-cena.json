@@ -454,6 +454,84 @@
       "type": "open",
       "question": "Uveď tři vlivy, které mohou zvýšit poptávku po službách kosmetického salonu, a vysvětli proč.",
       "answer": "Například růst příjmů lidí (mají víc peněz na služby), nová móda (třeba nový typ ošetření) a sezona či svátky (před plesy a Vánoci chce ošetření víc lidí). Zvýšit ji může i zdražení konkurenčního salonu, protože je to substitut."
+    },
+    {
+      "type": "choice",
+      "question": "Co říká zákon nabídky?",
+      "options": [
+        "Když cena roste, prodávající chtějí prodat méně.",
+        "Když cena roste, prodávající chtějí prodat více.",
+        "Prodávající prodají vždy stejně bez ohledu na cenu.",
+        "Když cena roste, kupující chtějí koupit více."
+      ],
+      "answer": 1,
+      "explanation": "Při vyšší ceně se prodávajícím prodej víc vyplatí, proto nabídnou víc."
+    },
+    {
+      "type": "input",
+      "question": "Při ceně 300 Kč chtějí lidé koupit 70 kusů, ale prodejci nabízejí jen 45 kusů. Kolik kusů chybí (nedostatek)?",
+      "answers": [
+        "25"
+      ],
+      "explanation": "Poptávané množství je větší: 70 − 45 = 25 kusů nedostatek. Cena bude růst.",
+      "hints": [
+        "Odečti menší číslo od většího."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Zdraží benzín. Co se nejspíš stane s poptávkou po velkých autech?",
+      "options": [
+        "vzroste",
+        "nezmění se",
+        "klesne"
+      ],
+      "answer": 2,
+      "explanation": "Auto a benzín jsou komplementy. Když je provoz auta dražší, lidé kupují méně velkých aut.",
+      "hints": [
+        "Kupuje se benzín spolu s autem, nebo místo něj?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj situaci s tím, co se na trhu změní.",
+      "pairs": [
+        [
+          "lidem vzrostou platy",
+          "poptávka roste"
+        ],
+        [
+          "zdraží materiál",
+          "nabídka klesá"
+        ],
+        [
+          "otevře další prodejce",
+          "nabídka roste"
+        ],
+        [
+          "skončí sezona plavek",
+          "poptávka klesá"
+        ]
+      ],
+      "explanation": "Poptávku mění hlavně příjmy, móda a sezona. Nabídku náklady, technologie a počet prodejců."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký typ trhu tvoří kadeřnictví ve velkém městě?",
+      "options": [
+        "monopol",
+        "oligopol",
+        "dokonalá konkurence",
+        "monopolistická konkurence"
+      ],
+      "answer": 3,
+      "explanation": "Kadeřnictví je mnoho a každé je trochu jiné (styl, místo, obsluha) – to je monopolistická konkurence."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když lidé čekají, že se zboží brzy zdraží, odkládají nákup a poptávka teď klesá.",
+      "answer": false,
+      "explanation": "Je to naopak: při očekávaném zdražení lidé nakupují do zásoby hned a poptávka teď roste."
     }
   ]
 }

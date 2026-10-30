@@ -427,6 +427,69 @@
       "type": "open",
       "question": "Co je bod zvratu a proč je pro podnikatele důležitý?",
       "answer": "Bod zvratu je množství výroby, při kterém se výnosy rovnají nákladům a podnik nemá zisk ani ztrátu. Podnikatel díky němu ví, kolik musí minimálně prodat, aby nebyl ve ztrátě."
+    },
+    {
+      "type": "input",
+      "question": "Fixní náklady jsou 50 000 Kč, cena výrobku 900 Kč, variabilní náklady 400 Kč na kus. Podnik prodá 150 kusů. Zisk v Kč =",
+      "answers": [
+        "25000",
+        "25 000"
+      ],
+      "explanation": "Tržby: 150 × 900 = 135 000 Kč. Náklady: 50 000 + 150 × 400 = 110 000 Kč. Zisk: 135 000 − 110 000 = 25 000 Kč.",
+      "hints": [
+        "Spočítej tržby a celkové náklady zvlášť.",
+        "Celkové náklady = fixní + počet kusů × variabilní na kus."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Výnosy podniku jsou 80 000 Kč, náklady 95 000 Kč. Jaký je výsledek hospodaření?",
+      "options": [
+        "zisk 15 000 Kč",
+        "ztráta 15 000 Kč",
+        "zisk 175 000 Kč",
+        "ztráta 95 000 Kč"
+      ],
+      "answer": 1,
+      "explanation": "80 000 − 95 000 = −15 000 Kč. Záporný výsledek je ztráta."
+    },
+    {
+      "type": "input",
+      "question": "Přímý materiál je 200 Kč, přímé mzdy 100 Kč a výrobní režie 200 % z přímých mezd. Vlastní náklady v Kč =",
+      "answers": [
+        "500"
+      ],
+      "explanation": "Režie: 200 % ze 100 = 200 Kč. Vlastní náklady: 200 + 100 + 200 = 500 Kč.",
+      "hints": [
+        "Nejdřív spočítej režii z přímých mezd."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "DPH, kterou plátce připočte k ceně, si podnik nechá jako součást zisku.",
+      "answer": false,
+      "explanation": "DPH plátce odvede státu. Do zisku nepatří, proto se přičítá až na konci kalkulace."
+    },
+    {
+      "type": "choice",
+      "question": "Kosmetička má měsíčně fixní náklady 24 000 Kč. Ošetření stojí 700 Kč a materiál na něj 100 Kč. Kolik ošetření za měsíc je bod zvratu?",
+      "options": [
+        "34",
+        "60",
+        "40",
+        "240"
+      ],
+      "answer": 2,
+      "explanation": "Každé ošetření přispěje 700 − 100 = 600 Kč. Bod zvratu = 24 000 ÷ 600 = 40 ošetření.",
+      "hints": [
+        "Kolik Kč z každého ošetření zbude na fixní náklady?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pod vlastní náklady by podnik neměl cenu dlouhodobě snižovat.",
+      "answer": true,
+      "explanation": "Vlastní náklady jsou spodní hranice ceny. Kdo prodává pod nimi, prodělává na každém kusu."
     }
   ]
 }

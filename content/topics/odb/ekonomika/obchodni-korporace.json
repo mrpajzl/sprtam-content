@@ -439,6 +439,70 @@
       "type": "open",
       "question": "Co je právnická osoba a proč je pro podnikatele výhodná?",
       "answer": "Právnická osoba je subjekt vytvořený podle zákona, který má vlastní majetek, práva a dluhy oddělené od zakladatelů. Výhodou je, že za dluhy firmy (např. s.r.o. nebo a.s.) majitelé neručí celým soukromým majetkem."
+    },
+    {
+      "type": "input",
+      "question": "Tři společníci zakládají s.r.o. Vloží 20 000 Kč, 50 000 Kč a 30 000 Kč. Základní kapitál v Kč =",
+      "answers": [
+        "100000",
+        "100 000"
+      ],
+      "explanation": "Základní kapitál je součet vkladů: 20 000 + 50 000 + 30 000 = 100 000 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik společníků musí mít nejméně veřejná obchodní společnost (v.o.s.)?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "v.o.s. zakládají aspoň dva společníci. Jeden člověk může založit s.r.o. nebo a.s."
+    },
+    {
+      "type": "choice",
+      "question": "Co je nejvyšší orgán s.r.o.?",
+      "options": [
+        "jednatel",
+        "obchodní rejstřík",
+        "valná hromada",
+        "notář"
+      ],
+      "answer": 2,
+      "explanation": "Valná hromada je schůze všech společníků a rozhoduje o zásadních věcech. Jednatel firmu řídí a jedná za ni."
+    },
+    {
+      "type": "input",
+      "question": "Tři společníci s.r.o. mají v rejstříku vklady po 50 000 Kč. Dva je splatili celé, třetí jen 20 000 Kč. Firma zkrachuje s dluhem 1 000 000 Kč. Kolik Kč nejvýš může věřitel chtít po společnících?",
+      "answers": [
+        "30000",
+        "30 000"
+      ],
+      "explanation": "Společníci s.r.o. ručí do výše nesplacených vkladů. Nesplaceno je 50 000 − 20 000 = 30 000 Kč.",
+      "hints": [
+        "Za kolik ještě ručí ti, kdo vklad splatili celý?",
+        "Spočítej, kolik z vkladů zbývá doplatit."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V jaké formě se sepisuje společenská smlouva s.r.o.?",
+      "options": [
+        "stačí ústní dohoda",
+        "jako notářský zápis",
+        "jako e-mail všem společníkům",
+        "jako formulář na živnostenském úřadě"
+      ],
+      "answer": 1,
+      "explanation": "U s.r.o. a a.s. musí mít společenská smlouva nebo zakladatelská listina formu notářského zápisu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Družstvo patří mezi obchodní korporace.",
+      "answer": true,
+      "explanation": "Obchodní korporace jsou obchodní společnosti (v.o.s., k.s., s.r.o., a.s.) a družstva."
     }
   ]
 }

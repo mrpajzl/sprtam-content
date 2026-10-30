@@ -430,6 +430,69 @@
       "type": "open",
       "question": "Vysvětli, co je investiční trojúhelník, na příkladu spořicího účtu a akcií.",
       "answer": "Investiční trojúhelník tvoří výnos, riziko a likvidita, které nemohou být všechny zároveň nejlepší. Spořicí účet má malé riziko a vysokou likviditu, ale nízký výnos; akcie mají dlouhodobě vyšší výnos, ale vysoké riziko kolísání."
+    },
+    {
+      "type": "input",
+      "question": "Uložíš 30 000 Kč na rok na spořicí účet se sazbou 3 % p. a. Kolik Kč úroku ti zbude po dani 15 %?",
+      "answers": [
+        "765"
+      ],
+      "explanation": "Úrok: 3 % z 30 000 = 900 Kč. Daň: 15 % z 900 = 135 Kč. Zbude 900 − 135 = 765 Kč.",
+      "hints": [
+        "Nejdřív spočítej úrok za rok.",
+        "Z úroku odečti 15 % daně."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který produkt má nejnižší likviditu?",
+      "options": [
+        "běžný účet",
+        "spořicí účet",
+        "stavební spoření (obvykle na 6 let)"
+      ],
+      "answer": 2,
+      "explanation": "U stavebního spoření jsou peníze obvykle 6 let vázané. Z běžného a spořicího účtu je dostaneš rychle."
+    },
+    {
+      "type": "truefalse",
+      "question": "Akcie a akciové fondy jsou pojištěné stejně jako vklady v bance.",
+      "answer": false,
+      "explanation": "Pojištěné jsou jen vklady v bankách (do 100 000 eur). Hodnota akcií a fondů může klesnout a nikdo ji nenahradí."
+    },
+    {
+      "type": "choice",
+      "question": "Půjčuješ si 20 000 Kč. Nabídka A: 10 splátek po 2 200 Kč. Nabídka B: 12 splátek po 1 900 Kč. Která je levnější?",
+      "options": [
+        "B, protože má nižší měsíční splátku",
+        "obě stojí stejně",
+        "A, přeplatíš 2 000 Kč",
+        "B, přeplatíš 800 Kč"
+      ],
+      "answer": 2,
+      "explanation": "A: 10 × 2 200 = 22 000 Kč, přeplatek 2 000 Kč. B: 12 × 1 900 = 22 800 Kč, přeplatek 2 800 Kč. Nižší splátka neznamená levnější půjčku.",
+      "hints": [
+        "Spočítej u obou nabídek, kolik zaplatíš celkem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Uložíš 20 000 Kč na 2 roky se složeným úročením 3 % p. a. (bez daně). Kolik Kč bude na účtu?",
+      "answers": [
+        "21218",
+        "21 218"
+      ],
+      "explanation": "Po roce: 20 000 × 1,03 = 20 600 Kč. Po dvou letech: 20 600 × 1,03 = 21 218 Kč.",
+      "hints": [
+        "Spočítej nejdřív stav po prvním roce.",
+        "Ve druhém roce se úročí celá částka i s prvním úrokem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kdo uloží peníze do banky, úrok dostává. Kdo si od banky půjčí, úrok platí.",
+      "answer": true,
+      "explanation": "Úrok je cena za půjčení peněz. Vkladem vlastně půjčuješ peníze bance."
     }
   ]
 }

@@ -436,6 +436,74 @@
       "type": "open",
       "question": "Vyjmenuj způsoby, jakými může skončit pracovní poměr.",
       "answer": "Dohodou, výpovědí (s výpovědní dobou nejméně 2 měsíce), okamžitým zrušením ve vážných případech, zrušením ve zkušební době a u poměru na dobu určitou uplynutím sjednané doby. Skončí také smrtí zaměstnance."
+    },
+    {
+      "type": "choice",
+      "question": "Jak dlouhá smí být nejvýš zkušební doba u zaměstnance, který není vedoucí (od června 2025)?",
+      "options": [
+        "2 měsíce",
+        "3 měsíce",
+        "4 měsíce",
+        "6 měsíců"
+      ],
+      "answer": 2,
+      "explanation": "Zkušební doba smí trvat nejvýš 4 měsíce, u vedoucích zaměstnanců 8 měsíců. Musí být sjednaná písemně."
+    },
+    {
+      "type": "input",
+      "question": "Kolik hodin týdně nejvýš smí trvat stanovená pracovní doba v pracovním poměru? (číslo)",
+      "answers": [
+        "40",
+        "čtyřicet",
+        "ctyricet"
+      ],
+      "explanation": "Stanovená týdenní pracovní doba je nejvýš 40 hodin."
+    },
+    {
+      "type": "choice",
+      "question": "Student chce celý rok pracovat v servisu 25 hodin týdně. Jakou smlouvu potřebuje?",
+      "options": [
+        "DPP",
+        "DPČ",
+        "pracovní poměr na částečný úvazek"
+      ],
+      "answer": 2,
+      "explanation": "DPČ dovoluje v průměru jen 20 hodin týdně a DPP 300 hodin za rok. 25 hodin týdně celý rok splní jen pracovní poměr.",
+      "hints": [
+        "Kolik hodin týdně dovoluje DPČ?",
+        "Kolik hodin by za rok odpracoval na DPP?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "U jednoho zaměstnavatele smíš mít v jednom roce dvě DPP po 200 hodinách.",
+      "answer": false,
+      "explanation": "Hodiny ze všech DPP u téhož zaměstnavatele se sčítají: 400 hodin je víc než limit 300 hodin za rok."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když DPP nebo DPČ skončí výpovědí a strany si nesjednaly nic jiného, výpovědní doba je 15 dní.",
+      "answer": true,
+      "explanation": "U dohod platí 15denní výpovědní doba. U pracovního poměru jsou to nejméně 2 měsíce."
+    },
+    {
+      "type": "match",
+      "question": "Spoj práci s nejvhodnější smlouvou.",
+      "pairs": [
+        [
+          "prázdninová brigáda na 160 hodin",
+          "DPP"
+        ],
+        [
+          "celoroční výpomoc na recepci 15 h týdně",
+          "DPČ"
+        ],
+        [
+          "stálé místo technika 40 h týdně",
+          "pracovní poměr"
+        ]
+      ],
+      "explanation": "Rozhoduje rozsah: krátká práce do 300 h ročně, pravidelná do poloviny úvazku, nebo plný úvazek."
     }
   ]
 }

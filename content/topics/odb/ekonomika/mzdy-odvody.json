@@ -455,6 +455,67 @@
       "type": "open",
       "question": "Proč stojí zaměstnanec firmu víc, než je jeho hrubá mzda?",
       "answer": "Zaměstnavatel platí ze svého navíc sociální pojištění (2026: 24,8 %) a zdravotní pojištění (9 %) z hrubé mzdy. Při hrubé mzdě 30 000 Kč ho zaměstnanec stojí asi 40 140 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Hrubá mzda je 25 350 Kč. Kolik Kč zaplatí zaměstnanec na sociálním pojištění (7,1 %, zaokrouhli na celé Kč nahoru)?",
+      "answers": [
+        "1800",
+        "1 800"
+      ],
+      "explanation": "25 350 × 0,071 = 1 799,85 Kč, nahoru na celé koruny = 1 800 Kč.",
+      "hints": [
+        "Vynásob hrubou mzdu číslem 0,071."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Technik má časovou mzdu 220 Kč za hodinu a v měsíci odpracoval 168 hodin. Jaká je jeho hrubá mzda?",
+      "options": [
+        "37 960 Kč",
+        "3 696 Kč",
+        "35 960 Kč",
+        "36 960 Kč"
+      ],
+      "answer": 3,
+      "explanation": "168 × 220 = 36 960 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Hrubá mzda je 24 000 Kč, prohlášení podepsané, sazby 2026 (7,1 %, 4,5 %, daň 15 % − 2 570 Kč). Čistá mzda v Kč =",
+      "answers": [
+        "20186",
+        "20 186"
+      ],
+      "explanation": "Sociální 1 704 Kč, zdravotní 1 080 Kč, daň 3 600 − 2 570 = 1 030 Kč. Čistá: 24 000 − 1 704 − 1 080 − 1 030 = 20 186 Kč.",
+      "hints": [
+        "Spočítej zvlášť sociální pojištění, zdravotní pojištění a zálohu na daň.",
+        "Záloha na daň: 15 % z 24 000 minus 2 570 Kč."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Učitel na veřejné škole dostává plat, ne mzdu.",
+      "answer": true,
+      "explanation": "Ve státní a veřejné sféře se odměně za práci říká plat, u soukromého zaměstnavatele mzda."
+    },
+    {
+      "type": "choice",
+      "question": "Prodavač dostává 5 % z toho, co prodá. Jaký je to druh mzdy?",
+      "options": [
+        "časová",
+        "úkolová",
+        "podílová",
+        "minimální"
+      ],
+      "answer": 2,
+      "explanation": "Podílová mzda je podíl z tržeb. Úkolová se platí za kusy, časová za odpracovaný čas."
+    },
+    {
+      "type": "truefalse",
+      "question": "V roce 2026 smí zaměstnavatel za plný úvazek zaplatit hrubou mzdu 21 000 Kč.",
+      "answer": false,
+      "explanation": "Minimální mzda pro rok 2026 je 22 400 Kč. Za plný úvazek nesmí být hrubá mzda nižší."
     }
   ]
 }
