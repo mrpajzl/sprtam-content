@@ -441,6 +441,67 @@
       "type": "open",
       "question": "Vysvětli, proč je opakované používání stejného hesla nebezpečné.",
       "answer": "Když jedna služba unikne, útočníci zkoušejí stejné jméno a heslo na dalších službách (credential stuffing). Se stejným heslem by se dostali i do e-mailu nebo banky."
+    },
+    {
+      "type": "input",
+      "question": "Kolik různých hesel délky 3 lze sestavit z 26 malých písmen anglické abecedy?",
+      "answers": [
+        "17576",
+        "17 576"
+      ],
+      "explanation": "26 · 26 · 26 = 26³ = 17 576.",
+      "hints": [
+        "Na každé ze 3 pozic může být jedno z 26 písmen.",
+        "Spočítej 26 · 26 · 26."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který faktor patří do skupiny „něco, čím jsi“?",
+      "options": [
+        "bezpečnostní klíč",
+        "PIN",
+        "rozpoznání obličeje",
+        "kód z SMS"
+      ],
+      "answer": 2,
+      "explanation": "Biometrie (obličej, otisk prstu) je „něco, čím jsi“. Klíč a telefon jsou „něco, co máš“, PIN je „něco, co znáš“."
+    },
+    {
+      "type": "truefalse",
+      "question": "Heslo „Heslo1!“ je silné, protože má velké písmeno, číslo i vykřičník.",
+      "answer": false,
+      "explanation": "Je krátké a předvídatelné. Vzorec „slovo + číslo + vykřičník“ útočníci zkoušejí jako první."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je hlavní slabina potvrzování přihlášení v mobilní aplikaci (push)?",
+      "options": [
+        "Potřebuje vždy kabel k počítači.",
+        "Uživatel může z únavy omylem potvrdit cizí přihlášení.",
+        "Kód se dá přesměrovat na cizí SIM.",
+        "Funguje jen s bezpečnostním klíčem."
+      ],
+      "answer": 1,
+      "explanation": "Útočník posílá žádosti opakovaně, dokud je uživatel omylem nepotvrdí (únava z žádostí)."
+    },
+    {
+      "type": "choice",
+      "question": "Útočník zkouší nejdřív „123456“, „heslo“, „Heslo123!“ a podobné obměny. Jak se tento útok jmenuje?",
+      "options": [
+        "útok hrubou silou",
+        "phishing",
+        "credential stuffing",
+        "slovníkový útok"
+      ],
+      "answer": 3,
+      "explanation": "Slovníkový útok zkouší nejčastější a uniklá hesla a jejich obměny. Hrubá síla zkouší úplně všechny kombinace."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tajná část klíče u passkey nikdy neopustí zařízení uživatele.",
+      "answer": true,
+      "explanation": "Zařízení si vytvoří dvojici klíčů a tajnou část si nechá. Odemyká ji otiskem, obličejem nebo PINem zařízení."
     }
   ]
 }

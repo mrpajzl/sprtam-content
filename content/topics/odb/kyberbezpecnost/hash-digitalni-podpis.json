@@ -450,6 +450,59 @@
       "type": "open",
       "question": "Jak by měl server bezpečně ukládat hesla uživatelů?",
       "answer": "Nikdy ne přímo. Ke každému heslu vygeneruje náhodnou sůl a uloží hash spočítaný pomalou funkcí určenou pro hesla (bcrypt, scrypt, Argon2). Při přihlášení spočítá hash znovu a porovná ho."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se MD5 a SHA-1 už nepoužívají pro bezpečnost?",
+      "options": [
+        "Mají příliš dlouhý výstup.",
+        "Podařilo se u nich najít kolize.",
+        "Jsou vratné, z hashe jde získat data.",
+        "Neumí zpracovat velké soubory."
+      ],
+      "answer": 1,
+      "explanation": "U MD5 i SHA-1 se podařilo najít dvoje různá data se stejným hashem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kontrola hashe staženého souboru má smysl, jen když hash pochází z důvěryhodného zdroje.",
+      "answer": true,
+      "explanation": "Kdo podvrhne soubor, může podvrhnout i hash vedle něj. Hash ber z oficiálního místa."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou funkci použiješ pro bezpečné ukládání hesel?",
+      "options": [
+        "SHA-1",
+        "MD5",
+        "Argon2",
+        "AES"
+      ],
+      "answer": 2,
+      "explanation": "Na hesla patří pomalé funkce určené k tomu (bcrypt, scrypt, Argon2) se solí. AES je šifra, ne hashovací funkce."
+    },
+    {
+      "type": "truefalse",
+      "question": "Platný digitální podpis zaručuje, že obsah dokumentu je pravdivý.",
+      "answer": false,
+      "explanation": "Podpis zaručuje integritu, autenticitu a nepopiratelnost. Pravdivost obsahu nezaručuje."
+    },
+    {
+      "type": "choice",
+      "question": "Proč autor podepisuje hash dokumentu, a ne celý dokument?",
+      "options": [
+        "Hash je tajný a nikdo ho nevidí.",
+        "Celý dokument by se tím zašifroval.",
+        "Veřejný klíč umí zpracovat jen text.",
+        "Operace se soukromým klíčem jsou pomalé a hash je krátký."
+      ],
+      "answer": 3,
+      "explanation": "Hash má třeba 256 bitů i u gigabajtového dokumentu. Díky odolnosti proti kolizím chrání celý dokument."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kvalifikovaný elektronický podpis má podle nařízení eIDAS stejné právní účinky jako vlastnoruční podpis.",
+      "answer": true
     }
   ]
 }

@@ -416,6 +416,66 @@
       "type": "open",
       "question": "Co je hybridní šifrování a proč se používá?",
       "answer": "Data se šifrují rychlou symetrickou šifrou s náhodným klíčem relace a ten se předá nebo dohodne pomocí asymetrické kryptografie. Spojí se rychlost symetrické šifry s tím, že asymetrická nepotřebuje předem sdílené tajemství; používá to např. HTTPS."
+    },
+    {
+      "type": "input",
+      "question": "Dešifruj slovo NRFND zašifrované Caesarovou šifrou s posunem 3 (anglická abeceda).",
+      "answers": [
+        "KOCKA",
+        "kocka"
+      ],
+      "explanation": "Každé písmeno posuneš o 3 zpět: N → K, R → O, F → C, N → K, D → A.",
+      "hints": [
+        "Při dešifrování posouváš písmena o tři zpět: N → M → L → …"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Caesarova šifra je dnes bezpečná, protože útočník nezná posun.",
+      "answer": false,
+      "explanation": "Klíčů je jen 25. Počítač je vyzkouší všechny okamžitě."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou délku klíče používá dnešní standard AES?",
+      "options": [
+        "8 nebo 16 bitů",
+        "128 nebo 256 bitů",
+        "vždy jen 3 znaky",
+        "AES žádný klíč nemá"
+      ],
+      "answer": 1,
+      "explanation": "AES je symetrická šifra s klíčem 128 nebo 256 bitů."
+    },
+    {
+      "type": "choice",
+      "question": "Jak dnes v HTTPS obvykle obě strany získají společný klíč relace?",
+      "options": [
+        "Prohlížeč ho zašle otevřeně v první zprávě.",
+        "Je napevno uložený v každém prohlížeči.",
+        "Společně ho dohodnou postupem výměny klíčů (Diffie–Hellman).",
+        "Uživatel ho zadá jako heslo."
+      ],
+      "answer": 2,
+      "explanation": "Asymetrická matematika poslouží k dohodě klíče, data pak šifruje rychlá symetrická šifra."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když Eva zašifruje zprávu Adamovým veřejným klíčem, sama ji pak už nepřečte.",
+      "answer": true,
+      "explanation": "Dešifrovat jde jen Adamovým soukromým klíčem, který má jen Adam."
+    },
+    {
+      "type": "choice",
+      "question": "Spolužák chce chránit data vlastní tajnou šifrou, kterou si vymyslel. Co mu poradíš?",
+      "options": [
+        "Ať šifru ještě víc utají a nikomu ji neukazuje.",
+        "Ať zašifruje data dvakrát svou šifrou.",
+        "Ať místo šifry data jen zahashuje MD5.",
+        "Ať použije prověřený algoritmus (např. AES) a chrání klíč."
+      ],
+      "answer": 3,
+      "explanation": "Podle Kerckhoffsova principu má být tajný jen klíč. Domácí šifry mívají chyby, které útočník rychle najde."
     }
   ]
 }

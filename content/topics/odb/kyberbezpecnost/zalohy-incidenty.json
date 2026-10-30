@@ -408,6 +408,67 @@
       "type": "open",
       "question": "Popiš fáze reakce na bezpečnostní incident.",
       "answer": "Příprava (plán, role, zálohy), detekce a analýza (zjistit, co se děje a v jakém rozsahu), omezení šíření (odpojit zasažené systémy), odstranění příčiny, obnova provozu z čistých záloh a nakonec poučení, které zlepší přípravu."
+    },
+    {
+      "type": "input",
+      "question": "Plná záloha je v neděli, přírůstkové od pondělí do pátku. V pátek večer po záloze se rozbije disk. Kolik záloh celkem potřebuješ k obnově?",
+      "answers": [
+        "6",
+        "šest",
+        "sest"
+      ],
+      "explanation": "Nedělní plnou a všech pět přírůstkových (po, út, st, čt, pá): 1 + 5 = 6.",
+      "hints": [
+        "Přírůstková záloha obsahuje jen změny od poslední zálohy.",
+        "K obnově potřebuješ poslední plnou a všechny přírůstkové po ní."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Neměnnou (immutable) zálohu nejde po určitou dobu smazat ani přepsat ani administrátorským účtem.",
+      "answer": true,
+      "explanation": "Proto ji ransomware nezničí ani tehdy, když útočník získá práva správce."
+    },
+    {
+      "type": "choice",
+      "question": "Která záloha proběhne nejrychleji a zabere nejméně místa?",
+      "options": [
+        "plná",
+        "přírůstková",
+        "rozdílová"
+      ],
+      "answer": 1,
+      "explanation": "Přírůstková ukládá jen změny od poslední zálohy, k obnově je jich ale potřeba nejvíc."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje vládní CERT, který v ČR působí při NÚKIB?",
+      "options": [
+        "CSIRT.CZ",
+        "ÚOOÚ",
+        "GovCERT.CZ",
+        "CZ.NIC"
+      ],
+      "answer": 2,
+      "explanation": "GovCERT.CZ působí při NÚKIB. Národní CSIRT.CZ provozuje sdružení CZ.NIC."
+    },
+    {
+      "type": "truefalse",
+      "question": "Průběžná replikace dat na druhý server ochrání před omylem smazaným souborem.",
+      "answer": false,
+      "explanation": "Replikace smazání okamžitě zkopíruje i na druhý server. Chrání jen záloha s historií verzí."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které fázi reakce na incident správce odpojí zasažené počítače od sítě?",
+      "options": [
+        "detekce",
+        "poučení",
+        "obnova",
+        "omezení"
+      ],
+      "answer": 3,
+      "explanation": "Fáze omezení má zastavit šíření útoku. Obnova ze záloh přichází až po odstranění příčiny."
     }
   ]
 }

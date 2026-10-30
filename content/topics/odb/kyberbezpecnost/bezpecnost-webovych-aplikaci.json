@@ -431,6 +431,61 @@
       "type": "open",
       "question": "Co znamená zásada „nikdy nevěř vstupu“?",
       "answer": "Vše, co přijde od uživatele (formuláře, URL, cookies, soubory), může poslat útočník. Server proto každý vstup kontroluje, zpracovává ho bezpečně (parametrizované dotazy) a při výstupu do HTML ho escapuje."
+    },
+    {
+      "type": "truefalse",
+      "question": "Útok XSS míří hlavně na databázi serveru.",
+      "answer": false,
+      "explanation": "XSS míří na prohlížeče ostatních uživatelů. Na databázi útočí SQL injection."
+    },
+    {
+      "type": "choice",
+      "question": "Co je CSRF?",
+      "options": [
+        "vložení SQL do pole formuláře",
+        "cizí web odešle požadavek tvým jménem, když jsi přihlášený",
+        "zahlcení serveru požadavky",
+        "krádež hesla z databáze"
+      ],
+      "answer": 1,
+      "explanation": "Proti CSRF pomáhají CSRF tokeny a cookie s příznakem SameSite."
+    },
+    {
+      "type": "choice",
+      "question": "Na produkčním serveru je zapnutý ladicí výpis chyb a administrátor má výchozí heslo. Do které kategorie chyb to patří?",
+      "options": [
+        "XSS",
+        "zastaralé komponenty",
+        "chybná konfigurace",
+        "injection"
+      ],
+      "answer": 2,
+      "explanation": "Jde o chybnou konfiguraci. Obranou je zabezpečená výchozí konfigurace a revize nastavení."
+    },
+    {
+      "type": "input",
+      "question": "Který příznak cookie zajistí, že se pošle jen přes HTTPS?",
+      "answers": [
+        "Secure",
+        "secure"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve vydání OWASP Top 10 z roku 2021 je na 1. místě chybné řízení přístupu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Aplikace používá knihovnu se známou zranitelností. Co je hlavní obranou?",
+      "options": [
+        "skrýt verzi knihovny",
+        "přidat kontrolu v JavaScriptu",
+        "zapnout ladicí výpis chyb",
+        "aktualizovat knihovnu a sledovat závislosti"
+      ],
+      "answer": 3,
+      "explanation": "Zastaralé komponenty se řeší aktualizacemi a pravidelným sledováním závislostí."
     }
   ]
 }

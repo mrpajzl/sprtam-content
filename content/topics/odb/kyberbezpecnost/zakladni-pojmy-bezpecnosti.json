@@ -482,6 +482,65 @@
       "type": "open",
       "question": "Vysvětli vztah mezi hrozbou, zranitelností a rizikem.",
       "answer": "Hrozba je možná příčina škody, zranitelnost slabé místo, které může využít. Riziko vzniká, když se setkají, a vyjadřuje se jako pravděpodobnost, že k tomu dojde, krát dopad škody."
+    },
+    {
+      "type": "choice",
+      "question": "Útočník zveřejní na internetu známky všech žáků školy. Kterou vlastnost z triády CIA porušil?",
+      "options": [
+        "integritu",
+        "dostupnost",
+        "důvěrnost",
+        "autorizaci"
+      ],
+      "answer": 2,
+      "explanation": "Známky uviděli lidé, kteří je vidět nesměli. To je porušení důvěrnosti."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď rizika od největšího (riziko = pravděpodobnost × dopad). A: P = 2, D = 5. B: P = 4, D = 4. C: P = 5, D = 1.",
+      "items": [
+        "riziko B",
+        "riziko A",
+        "riziko C"
+      ],
+      "hints": [
+        "U každého rizika vynásob pravděpodobnost a dopad."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co z toho je zranitelnost?",
+      "options": [
+        "útočník ze zahraničí",
+        "povodeň",
+        "databáze zákazníků",
+        "chybějící aktualizace systému"
+      ],
+      "answer": 3,
+      "explanation": "Zranitelnost je slabé místo. Útočník a povodeň jsou hrozby, databáze je aktivum."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hrozbou může být i povodeň nebo nepozorný zaměstnanec, nejen útočník.",
+      "answer": true,
+      "explanation": "Hrozba je jakákoli možná příčina škody, tedy i přírodní událost nebo chyba člověka."
+    },
+    {
+      "type": "choice",
+      "question": "Škola zavede pravidelné školení učitelů o podvodných e-mailech. Jaký je to druh opatření?",
+      "options": [
+        "technické",
+        "organizační",
+        "fyzické"
+      ],
+      "answer": 1,
+      "explanation": "Pravidla a školení jsou organizační opatření. Technické je třeba firewall, fyzické zámek."
+    },
+    {
+      "type": "truefalse",
+      "question": "Žák zadá jméno a heslo do elektronické žákovské. Tomuto kroku se říká autorizace.",
+      "answer": false,
+      "explanation": "Ověření, kdo jsi, je autentizace. Autorizace pak rozhoduje, co smíš (třeba vidět jen své známky)."
     }
   ]
 }

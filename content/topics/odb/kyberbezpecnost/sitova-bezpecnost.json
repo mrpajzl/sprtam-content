@@ -494,6 +494,61 @@
       "type": "open",
       "question": "Vysvětli, co je VPN a k čemu slouží ve firmě.",
       "answer": "VPN je šifrovaný tunel přes internet. Ve firmě umožní zaměstnancům z domova nebo pobočkám bezpečně se připojit do vnitřní sítě, aniž by provoz mohl číst někdo po cestě."
+    },
+    {
+      "type": "truefalse",
+      "question": "WEP je dnes dostatečné zabezpečení Wi-Fi.",
+      "answer": false,
+      "explanation": "WEP je prolomené a nemá se používat. Doporučené je WPA3, případně WPA2 s dlouhým heslem."
+    },
+    {
+      "type": "choice",
+      "question": "Učitel potřebuje z domova otevřít soubory na školním serveru. Jaké řešení navrhneš?",
+      "options": [
+        "otevřít server do internetu na všech portech",
+        "poslat soubory e-mailem",
+        "VPN s vícefaktorovým ověřením",
+        "přesunout server do sítě hostů"
+      ],
+      "answer": 2,
+      "explanation": "VPN vytvoří šifrovaný tunel do vnitřní sítě a MFA ochrání přihlášení."
+    },
+    {
+      "type": "input",
+      "question": "Na kterém portu obvykle běží HTTPS? Port =",
+      "answers": [
+        "443"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je hlavní výhoda Wi-Fi s WPA2/WPA3-Enterprise ve škole?",
+      "options": [
+        "Síť nepotřebuje žádné heslo.",
+        "Každý uživatel má vlastní přihlášení.",
+        "Funguje i se starým WEP.",
+        "Nahradí firewall."
+      ],
+      "answer": 1,
+      "explanation": "V Enterprise režimu se každý přihlásí svým účtem (např. eduroam), takže se nesdílí jedno heslo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Proti velkému útoku DDoS obvykle nestačí firewall u serveru, protože se zahltí už samotná linka.",
+      "answer": true,
+      "explanation": "Pomáhá ochrana u poskytovatele nebo CDN, která provoz odfiltruje dřív, než dorazí k serveru."
+    },
+    {
+      "type": "choice",
+      "question": "Co uděláš jako první, když píšeš pravidla firewallu?",
+      "options": [
+        "Na začátek dáš pravidlo „povol vše“.",
+        "Vypneš logování, aby firewall nezpomaloval.",
+        "Na konec dáš pravidlo „povol vše ostatní“.",
+        "Sepíšeš, jaký provoz je opravdu potřeba (kdo, kam, port)."
+      ],
+      "answer": 3,
+      "explanation": "Nejdřív zjistíš potřebný provoz, pak napíšeš přesná povolení a na konec výchozí zákaz."
     }
   ]
 }

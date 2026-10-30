@@ -440,6 +440,63 @@
       "type": "open",
       "question": "Co znamená zámek v adresním řádku a co neznamená?",
       "answer": "Znamená, že spojení je šifrované TLS a certifikát serveru je platný pro tuto doménu. Neznamená, že majitel webu je poctivý ani že web je bez malwaru; podvodná doména může mít platný certifikát."
+    },
+    {
+      "type": "choice",
+      "question": "Která certifikační autorita vydává certifikáty pro weby zdarma a automaticky?",
+      "options": [
+        "DigiCert",
+        "Let's Encrypt",
+        "PostSignum",
+        "Mozilla Firefox"
+      ],
+      "answer": 1,
+      "explanation": "Let's Encrypt vydává certifikáty zdarma a automaticky, obnovují se protokolem ACME."
+    },
+    {
+      "type": "truefalse",
+      "question": "TLS skryje, se kterým serverem komunikuješ.",
+      "answer": false,
+      "explanation": "Obsah je šifrovaný, ale IP adresa serveru a obvykle i doména zůstávají vidět."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď řetězec důvěry od kořene k webu.",
+      "items": [
+        "kořenový certifikát (např. ISRG Root X1)",
+        "mezilehlá certifikační autorita",
+        "certifikát serveru www.skola.cz"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakým protokolem se automaticky obnovují certifikáty od Let's Encrypt?",
+      "options": [
+        "ACME",
+        "SMTP",
+        "X.509",
+        "SSL"
+      ],
+      "answer": 0,
+      "explanation": "Certifikáty mají krátkou platnost, proto se obnovují automaticky protokolem ACME. X.509 je formát certifikátu."
+    },
+    {
+      "type": "truefalse",
+      "question": "V TLS 1.3 se klíč relace dohodne výměnou klíčů s eliptickými křivkami (ECDHE), aniž by se poslal po síti.",
+      "answer": true,
+      "explanation": "Kdo komunikaci jen odposlouchává, klíč z výměny nespočítá."
+    },
+    {
+      "type": "choice",
+      "question": "Co certifikát serveru NEOBSAHUJE?",
+      "options": [
+        "doménu",
+        "veřejný klíč serveru",
+        "soukromý klíč serveru",
+        "podpis vydavatele"
+      ],
+      "answer": 2,
+      "explanation": "Soukromý klíč drží jen server a nikdy ho nikomu neposílá. Certifikát je veřejný."
     }
   ]
 }
