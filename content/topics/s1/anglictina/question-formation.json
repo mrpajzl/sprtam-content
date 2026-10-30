@@ -424,6 +424,80 @@
       "type": "open",
       "question": "Jak se tvoří nepřímé otázky?",
       "answer": "Po zdvořilém úvodu (*Could you tell me, Do you know*) následuje tázací slovo nebo *if/whether* a slovosled oznamovací věty bez *do/does/did*: *Do you know where she lives?*"
+    },
+    {
+      "type": "choice",
+      "question": "What ___ you break?",
+      "options": [
+        "did",
+        "was",
+        "have been"
+      ],
+      "answer": 0,
+      "explanation": "Ptáme se na předmět (co jsi rozbil) → *did* + základní tvar."
+    },
+    {
+      "type": "choice",
+      "question": "Who ___ the window? – Tom broke it.",
+      "options": [
+        "did break",
+        "broke",
+        "did broke"
+      ],
+      "answer": 1,
+      "explanation": "Ptáme se na podmět (kdo rozbil) → bez *did*."
+    },
+    {
+      "type": "choice",
+      "question": "Do you know when the film ___?",
+      "options": [
+        "does start",
+        "starts",
+        "start"
+      ],
+      "answer": 1,
+      "explanation": "Nepřímá otázka → oznamovací pořadí bez *does*, sloveso dostane *-s*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň pomocné sloveso: How often ___ your sister play tennis?",
+      "answers": [
+        "does"
+      ],
+      "explanation": "Present simple, 3. osoba (*your sister*) → *does*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Do you know where she lives?“ je správně.",
+      "answer": true,
+      "explanation": "Po úvodu *Do you know* je oznamovací pořadí *she lives*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Who did invent the telephone?“ je běžná správná otázka na podmět.",
+      "answer": false,
+      "explanation": "Ptáme se na podmět → *Who invented the telephone?*"
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do nepřímé otázky.",
+      "items": [
+        "Could you tell me",
+        "where",
+        "the station",
+        "is?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Převeď na nepřímou otázku: „Is the museum open on Mondays?“",
+      "options": [
+        "Do you know if the museum is open on Mondays?",
+        "Do you know is the museum open on Mondays?",
+        "Do you know what the museum is open on Mondays?"
+      ],
+      "answer": 0,
+      "explanation": "Zjišťovací otázka → *if/whether* a oznamovací pořadí."
     }
   ]
 }

@@ -453,6 +453,92 @@
       "type": "open",
       "question": "Kdy se člen nepoužívá vůbec?",
       "answer": "Při obecných tvrzeních s množným číslem a nepočitatelnými slovy (*Cats like milk*), u většiny jmen osob, zemí, měst, jazyků a u jídel dne."
+    },
+    {
+      "type": "choice",
+      "question": "I watched a film yesterday. ___ film was really boring.",
+      "options": [
+        "A",
+        "The",
+        "–"
+      ],
+      "answer": 1,
+      "explanation": "Film už byl zmíněn, víme, o který jde → *the*."
+    },
+    {
+      "type": "choice",
+      "question": "She's ___ engineer.",
+      "options": [
+        "a",
+        "the",
+        "an"
+      ],
+      "answer": 2,
+      "explanation": "Povolání → *a/an*; *engineer* začíná samohláskou → *an*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň a/an: ___ European country",
+      "answers": [
+        "a"
+      ],
+      "explanation": "*European* se vyslovuje „ju-“, tedy souhláskou /j/ → *a*."
+    },
+    {
+      "type": "choice",
+      "question": "___ apples are good for you.",
+      "options": [
+        "The",
+        "An",
+        "–"
+      ],
+      "answer": 2,
+      "explanation": "Obecné tvrzení v množném čísle → bez členu."
+    },
+    {
+      "type": "truefalse",
+      "question": "„We went skiing in the Alps.“ je správně.",
+      "answer": true,
+      "explanation": "Pohoří mají *the*."
+    },
+    {
+      "type": "choice",
+      "question": "___ sun is very hot today.",
+      "options": [
+        "The",
+        "A",
+        "–"
+      ],
+      "answer": 0,
+      "explanation": "Slunce je jen jedno → *the*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„I love the music.“ je správně, když mluvíš o hudbě obecně.",
+      "answer": false,
+      "explanation": "Obecný pojem bez členu: *I love music.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj podstatné jméno se členem, který před ním bude.",
+      "pairs": [
+        [
+          "___ umbrella",
+          "an"
+        ],
+        [
+          "___ Atlantic Ocean",
+          "the"
+        ],
+        [
+          "___ Prague",
+          "–"
+        ],
+        [
+          "___ horse",
+          "a"
+        ]
+      ]
     }
   ]
 }
