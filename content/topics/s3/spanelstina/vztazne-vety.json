@@ -429,6 +429,51 @@
       "type": "open",
       "question": "Popiš španělsky dvě věci nebo osoby pomocí vztažné věty, jako v hádance.",
       "answer": "Např.: *Es una persona que trabaja en un restaurante y que sirve la comida* (camarero). *Es un lugar donde hay muchos libros* (biblioteca)."
+    },
+    {
+      "type": "choice",
+      "question": "Es un lugar ___ puedes nadar.",
+      "options": [
+        "que",
+        "donde",
+        "quien"
+      ],
+      "answer": 1,
+      "explanation": "Místo → *donde*: Je to místo, kde můžeš plavat."
+    },
+    {
+      "type": "choice",
+      "question": "Los profesores para ___ trabajo son muy simpáticos.",
+      "options": [
+        "que",
+        "quien",
+        "quienes"
+      ],
+      "answer": 2,
+      "explanation": "Osoby v množném čísle po předložce *para* → *quienes*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: El coche en ___ viajamos es nuevo. (auto, ve kterém)",
+      "answers": [
+        "el que"
+      ],
+      "explanation": "Věc po předložce → *el / la que* podle rodu: *el coche → el que*.",
+      "hints": [
+        "Coche je mužského rodu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "„No sé lo que quieres decir.“ je správně.",
+      "answer": true,
+      "explanation": "„To, co“ → *lo que*. Anglické *what* se tu nepřekládá jako *qué*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve vztažné větě se *que* píše s čárkou: *El libro qué leo.*",
+      "answer": false,
+      "explanation": "Vztažné zájmeno se píše bez čárky (*que*). *¿Qué?* s čárkou je otázka."
     }
   ]
 }

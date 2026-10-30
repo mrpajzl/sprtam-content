@@ -509,6 +509,42 @@
       "type": "open",
       "question": "Dej mladšímu sourozenci tři rady, co dělat a co nedělat ve škole. Použij kladný i záporný rozkaz.",
       "answer": "Např.: *Escucha a la profesora. No hables durante la clase. Haz los deberes y no los copies.*"
+    },
+    {
+      "type": "input",
+      "question": "Kladný rozkaz pro *tú* od slovesa *ser*:",
+      "answers": [
+        "sé"
+      ],
+      "explanation": "Nepravidelné: *sé* (s čárkou). Např. *¡Sé bueno!* – Buď hodný!"
+    },
+    {
+      "type": "choice",
+      "question": "Řekni panu (usted): Pojďte dál, prosím.",
+      "options": [
+        "Pasa, por favor.",
+        "Pase, por favor.",
+        "Pasad, por favor."
+      ],
+      "answer": 1,
+      "explanation": "*usted* → subjuntivo: *pase*. *Pasa* je pro *tú*, *pasad* pro *vosotros*."
+    },
+    {
+      "type": "choice",
+      "question": "Řekni kamarádům v Mexiku: Posaďte se!",
+      "options": [
+        "¡Sentaos!",
+        "¡Siéntense!",
+        "¡Sentados!"
+      ],
+      "answer": 1,
+      "explanation": "V Latinské Americe se *vosotros* nepoužívá, i kamarádům se říká *ustedes*: *siéntense*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„¡No abrid el horno!“ je správný záporný rozkaz pro *vosotros*.",
+      "answer": false,
+      "explanation": "Záporný rozkaz je vždy *no* + subjuntivo: *¡No abráis el horno!*"
     }
   ]
 }
