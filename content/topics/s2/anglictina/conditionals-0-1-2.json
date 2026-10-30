@@ -448,6 +448,79 @@
       "type": "open",
       "question": "Co bys dělal/a, kdybys mohl/a změnit jednu věc ve škole? Odpověz anglicky.",
       "answer": "Např.: *If I could change one thing, I would start lessons later, because students would be less tired.*"
+    },
+    {
+      "type": "choice",
+      "question": "Který typ podmínkové věty je *If you heat ice, it melts.*?",
+      "options": [
+        "typ 1",
+        "typ 0",
+        "typ 2"
+      ],
+      "answer": 1,
+      "explanation": "Platí to vždycky (fakt), obě části jsou v present simple → typ 0."
+    },
+    {
+      "type": "input",
+      "question": "Doplň (platí vždycky): If you don't water plants, they ___ (die). – jedno slovo",
+      "answers": [
+        "die"
+      ],
+      "explanation": "Typ 0: obě části v present simple."
+    },
+    {
+      "type": "choice",
+      "question": "If we ___ the 7:15 train, we'll be there by nine.",
+      "options": [
+        "will catch",
+        "caught",
+        "catch"
+      ],
+      "answer": 2,
+      "explanation": "Typ 1: v if-části present simple, *will* jen v hlavní větě."
+    },
+    {
+      "type": "input",
+      "question": "Doplň (auto nemám): If I had a car, I ___ (drive) to school. – dvě slova",
+      "answers": [
+        "would drive",
+        "'d drive"
+      ],
+      "explanation": "Typ 2: v hlavní větě *would* + infinitiv."
+    },
+    {
+      "type": "choice",
+      "question": "I'd help you if I ___ time. (čas nemám)",
+      "options": [
+        "have",
+        "had",
+        "would have"
+      ],
+      "answer": 1,
+      "explanation": "Typ 2, jen je hlavní věta první. V if-části je pořád past simple."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta vyjadřuje jen představu (nereálnou nebo nepravděpodobnou situaci)?",
+      "options": [
+        "If I see Tom, I'll tell him.",
+        "If I saw Tom, I'd tell him.",
+        "If you heat ice, it melts."
+      ],
+      "answer": 1,
+      "explanation": "Past simple v if-části a *would* v hlavní větě → typ 2."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *If I had a million, I'd travel.* tvar *had* znamená, že milion jsem měl v minulosti.",
+      "answer": false,
+      "explanation": "Typ 2 mluví o přítomnosti. Minulý tvar je jen signál, že jde o představu."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Unless you don't study, you'll fail.“ je správně.",
+      "answer": false,
+      "explanation": "*unless* už znamená „pokud ne“. Správně: *Unless you study, you'll fail.*"
     }
   ]
 }

@@ -446,6 +446,78 @@
       "type": "open",
       "question": "Kdy lze vztažné zájmeno vynechat? Uveď příklad.",
       "answer": "V určující vztažné větě, když je zájmeno předmětem: *The girl (who) I met was French.* Je-li podmětem, vynechat ho nelze."
+    },
+    {
+      "type": "choice",
+      "question": "My grandfather, ___ is 90, still drives.",
+      "options": [
+        "that",
+        "who",
+        "which"
+      ],
+      "answer": 1,
+      "explanation": "Neurčující věta (v čárkách) o osobě → *who*. *that* v ní být nesmí."
+    },
+    {
+      "type": "choice",
+      "question": "Spoj do jedné věty: I met a man. He is a pilot.",
+      "options": [
+        "I met a man which is a pilot.",
+        "I met a man, that is a pilot.",
+        "I met a man who is a pilot."
+      ],
+      "answer": 2,
+      "explanation": "O osobě → *who*, určující věta bez čárek."
+    },
+    {
+      "type": "input",
+      "question": "Doplň jedno slovo: The dog ___ lives next door barks all night.",
+      "answers": [
+        "that",
+        "which"
+      ],
+      "explanation": "Zvíře → *which* nebo *that*. Zájmeno je podmět, takže ho vynechat nejde."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: This is the teacher ___ son is in my class.",
+      "answers": [
+        "whose"
+      ],
+      "explanation": "„Jejíž syn“ → přivlastnění → *whose*."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě můžeš vztažné zájmeno vynechat?",
+      "options": [
+        "The girl who called you is here.",
+        "The film that we saw was boring.",
+        "My dad, who is a pilot, travels a lot."
+      ],
+      "answer": 1,
+      "explanation": "Za *that* stojí podmět *we*, zájmeno je předmět v určující větě."
+    },
+    {
+      "type": "choice",
+      "question": "Která vztažná věta je neurčující (jen přidává informaci navíc)?",
+      "options": [
+        "The boy who sits next to me is funny.",
+        "The book that I borrowed is on the table.",
+        "My best friend, who lives in Ostrava, is visiting."
+      ],
+      "answer": 2,
+      "explanation": "Nejlepšího kamaráda máš jednoho, víš, o koho jde i bez dodatku. Proto čárky."
+    },
+    {
+      "type": "truefalse",
+      "question": "*who's* a *whose* znamenají totéž, jen se jinak píšou.",
+      "answer": false,
+      "explanation": "*who's* = *who is*. *whose* = čí, jehož, jejíž."
+    },
+    {
+      "type": "truefalse",
+      "question": "Neurčující vztažná věta se píše mezi čárkami.",
+      "answer": true
     }
   ]
 }

@@ -422,6 +422,78 @@
       "type": "open",
       "question": "K čemu se dovětky v angličtině používají?",
       "answer": "K ověření informace nebo k získání souhlasu, podobně jako česky „že?“. Klesající intonace znamená, že jsme si jistí, stoupající, že se skutečně ptáme."
+    },
+    {
+      "type": "choice",
+      "question": "Anna can swim, ___?",
+      "options": [
+        "can she",
+        "can't she",
+        "doesn't she"
+      ],
+      "answer": 1,
+      "explanation": "Pomocné sloveso *can*, kladná věta → záporný dovětek. *Anna* → *she*."
+    },
+    {
+      "type": "choice",
+      "question": "Your parents live in Brno, ___?",
+      "options": [
+        "don't they",
+        "aren't they",
+        "doesn't they"
+      ],
+      "answer": 0,
+      "explanation": "Věta nemá pomocné sloveso → *do*. *parents* = oni → *don't they*."
+    },
+    {
+      "type": "choice",
+      "question": "Open the window, ___?",
+      "options": [
+        "do you",
+        "shall we",
+        "will you"
+      ],
+      "answer": 2,
+      "explanation": "Rozkaz nebo prosba → dovětek *will you?*"
+    },
+    {
+      "type": "choice",
+      "question": "He has never been to London, ___?",
+      "options": [
+        "hasn't he",
+        "has he",
+        "did he"
+      ],
+      "answer": 1,
+      "explanation": "*never* dělá větu zápornou → kladný dovětek. Pomocné sloveso je *has*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: The film was boring, ___ it?",
+      "answers": [
+        "wasn't"
+      ],
+      "explanation": "Pomocné sloveso *was*, kladná věta → *wasn't*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Martin works in a bank, ___ he?",
+      "answers": [
+        "doesn't"
+      ],
+      "explanation": "Přítomný čas bez pomocného slovesa, 3. osoba → *does*, v záporu *doesn't*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„You won't tell anyone, will you?“ je správně.",
+      "answer": true,
+      "explanation": "Záporná věta s *won't* (= *will not*) → kladný dovětek *will you?*"
+    },
+    {
+      "type": "truefalse",
+      "question": "Když u dovětku hlas na konci klesá, mluvčí se opravdu ptá a odpověď nezná.",
+      "answer": false,
+      "explanation": "Klesající intonace znamená, že si je mluvčí jistý a chce jen souhlas. Stoupající znamená skutečnou otázku."
     }
   ]
 }
