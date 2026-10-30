@@ -355,6 +355,87 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi cyklonou a anticyklonou?",
       "answer": "Cyklona je tlaková níže, vzduch v ní stoupá, tvoří se oblaka a srážky. Anticyklona je tlaková výše, vzduch klesá a převládá jasné, stálé počasí."
+    },
+    {
+      "type": "input",
+      "question": "Na zemi je 20 °C. Kolik °C bude zhruba ve výšce 2 000 m nad ní?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "2 000 m = 20 × 100 m. 20 × 0,65 = 13 °C. 20 − 13 = 7 °C.",
+      "hints": [
+        "Teplota v troposféře klesá asi o 0,65 °C na 100 m.",
+        "Kolikrát je ve 2 000 m obsaženo 100 m?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký je průměrný tlak vzduchu u hladiny moře v hPa (zaokrouhleno na celé)?",
+      "answers": [
+        "1013",
+        "1 013"
+      ],
+      "explanation": "Průměrně asi 1 013 hPa."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které vrstvě atmosféry vzniká počasí?",
+      "options": [
+        "stratosféra",
+        "mezosféra",
+        "troposféra",
+        "termosféra"
+      ],
+      "answer": 2,
+      "explanation": "V troposféře je skoro všechna vodní pára, proto se v ní tvoří mraky a srážky."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které vrstvě atmosféry shoří většina meteorů?",
+      "options": [
+        "mezosféra",
+        "troposféra",
+        "stratosféra",
+        "exosféra"
+      ],
+      "answer": 0,
+      "explanation": "Mezosféra sahá asi do 85 km a teplota v ní s výškou opět klesá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve stratosféře teplota s výškou klesá.",
+      "answer": false,
+      "explanation": "Ve stratosféře teplota roste – ozon pohlcuje UV záření a mění ho na teplo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Troposféra je nad póly nižší než nad rovníkem.",
+      "answer": true,
+      "explanation": "Sahá asi do 8 km nad póly a asi do 18 km nad rovníkem."
+    },
+    {
+      "type": "choice",
+      "question": "Odkud vanou pasáty na severní polokouli?",
+      "options": [
+        "od jihozápadu",
+        "od severovýchodu",
+        "od západu",
+        "od jihu"
+      ],
+      "answer": 1,
+      "explanation": "Vanou od obratníku k rovníku a Coriolisova síla je stáčí doprava – proto od severovýchodu."
+    },
+    {
+      "type": "choice",
+      "question": "Co je typické pro oblast kolem 60° zeměpisné šířky?",
+      "options": [
+        "subtropická výše a pouště",
+        "polární fronta, tlakové níže a časté deště",
+        "pasáty",
+        "polární výše"
+      ],
+      "answer": 1,
+      "explanation": "Kolem 60° se potkává studený polární vzduch s teplejším – vzniká polární fronta."
     }
   ]
 }

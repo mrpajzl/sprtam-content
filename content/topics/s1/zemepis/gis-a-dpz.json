@@ -392,6 +392,96 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi rastrovými a vektorovými daty?",
       "answer": "Rastr je mřížka buněk (pixelů) s hodnotami, hodí se pro snímky a spojité jevy. Vektor popisuje objekty body, liniemi a polygony s atributy, hodí se pro ostré hranice."
+    },
+    {
+      "type": "choice",
+      "question": "Proč přijímač GNSS potřebuje signál ze čtvrté družice?",
+      "options": [
+        "aby určil nadmořskou výšku",
+        "aby dopočítal chybu svých hodin",
+        "aby zjistil směr pohybu",
+        "aby se připojil k internetu"
+      ],
+      "answer": 1,
+      "explanation": "Tři vzdálenosti určí bod v prostoru (i s výškou). Hodiny v mobilu nejsou přesné jako atomové hodiny družic, čtvrtá družice tu chybu opraví."
+    },
+    {
+      "type": "truefalse",
+      "question": "GIS je jen jiný název pro digitální mapu.",
+      "answer": false,
+      "explanation": "GIS data nejen zobrazuje, ale hlavně s nimi počítá – vybírá, překrývá vrstvy, měří vzdálenosti. Mapa je jen výstup."
+    },
+    {
+      "type": "choice",
+      "question": "Který objekt bys ve vektorovém GIS uložil jako bod?",
+      "options": [
+        "dálnici",
+        "rybník",
+        "studnu",
+        "hranici okresu"
+      ],
+      "answer": 2,
+      "explanation": "Studna má jednu polohu → bod. Dálnice je linie, rybník a okres polygon."
+    },
+    {
+      "type": "choice",
+      "question": "Co jsou v GIS atributy?",
+      "options": [
+        "pixely rastru",
+        "družice GNSS",
+        "tabulka vlastností objektu (např. název, délka)",
+        "jednotlivé vrstvy mapy"
+      ],
+      "answer": 2,
+      "explanation": "Atributy popisují objekt – u řeky třeba název, délku a průtok."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mapa teplot uložená jako mřížka čtverečků, z nichž každý má jednu hodnotu, je rastr.",
+      "answer": true,
+      "explanation": "Rastr = mřížka pixelů s hodnotami (barva, výška, teplota)."
+    },
+    {
+      "type": "choice",
+      "question": "Proč mobil mezi vysokými domy určí polohu hůř?",
+      "options": [
+        "domy zakrývají oblohu a signál se odráží od zdí",
+        "nad městy družice nevysílají",
+        "ve městě je slabý signál operátora",
+        "GNSS funguje jen ve volné přírodě"
+      ],
+      "answer": 0,
+      "explanation": "Mobil vidí méně družic a odražený signál letí delší cestou, takže vzdálenost vyjde špatně."
+    },
+    {
+      "type": "input",
+      "question": "Hasiči hledají budovy v záplavovém území. Jakým typem vektorových dat je záplavové území (bod, linie, nebo polygon)?",
+      "answers": [
+        "polygon"
+      ],
+      "explanation": "Záplavové území je uzavřená plocha → polygon. GIS pak vybere budovy, které leží uvnitř."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se z družicového snímku pozná, kde trpí vegetace suchem?",
+      "options": [
+        "podle signálu GNSS z pole",
+        "podle záření, které oko nevidí (např. infračerveného) – zdravé a suché rostliny ho odrážejí jinak",
+        "podle atributů, které vyplní zemědělec"
+      ],
+      "answer": 1,
+      "explanation": "Družice snímá i neviditelné záření. Ze snímku (rastru) se tak dá spočítat, kde vegetace strádá."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak přijímač GNSS určí polohu.",
+      "items": [
+        "družice vyšle signál s časem odeslání",
+        "přijímač změří, jak dlouho signál letěl",
+        "z doby letu spočítá vzdálenost od družice",
+        "ze vzdáleností od více družic určí polohu"
+      ],
+      "explanation": "Vzdálenost = doba letu × rychlost signálu. Ze vzdáleností od aspoň 4 družic přijímač určí polohu i opraví chybu hodin."
     }
   ]
 }

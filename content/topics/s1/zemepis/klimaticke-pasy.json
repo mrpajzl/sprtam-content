@@ -449,6 +449,101 @@
       "type": "open",
       "question": "Jak z klimadiagramu poznáš středomořské podnebí?",
       "answer": "Teploty jsou celý rok nad nulou, léto je horké. Srážky mají maximum v zimě a v létě skoro neprší."
+    },
+    {
+      "type": "input",
+      "question": "Průměrná teplota v červenci je 19 °C, v lednu −3 °C. Jaká je roční amplituda teploty ve °C?",
+      "answers": [
+        "22"
+      ],
+      "explanation": "19 − (−3) = 22 °C.",
+      "hints": [
+        "Odečti nejchladnější měsíc od nejteplejšího.",
+        "Pozor na odečítání záporného čísla."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které Köppenovo písmeno označuje podnebí, kde je i nejteplejší měsíc pod 10 °C?",
+      "options": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": 3,
+      "explanation": "E = polární podnebí, např. Antarktida."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na klimadiagramu ukazuje čára průměrnou teplotu jednotlivých měsíců.",
+      "answer": true,
+      "explanation": "Čára = teplota (°C), sloupce = srážky (mm)."
+    },
+    {
+      "type": "choice",
+      "question": "Klimadiagram: léto přes 35 °C, srážky skoro žádné po celý rok. Jaké je to podnebí?",
+      "options": [
+        "tropické vlhké (A)",
+        "pouštní (B)",
+        "středomořské (C)",
+        "polární (E)"
+      ],
+      "answer": 1,
+      "explanation": "Vysoké teploty a téměř žádné srážky = suché pouštní podnebí, např. Sahara."
+    },
+    {
+      "type": "choice",
+      "question": "Klimadiagram: leden −20 °C, červenec 18 °C, maximum srážek v létě. Jaké je to podnebí?",
+      "options": [
+        "oceánské (C)",
+        "středomořské (C)",
+        "pevninské (D)",
+        "tropické vlhké (A)"
+      ],
+      "answer": 2,
+      "explanation": "Velká amplituda, zima hluboko pod nulou a letní maximum srážek = pevninské (boreální) podnebí, např. Sibiř."
+    },
+    {
+      "type": "truefalse",
+      "question": "Podnebí je počasí, které je na místě právě dnes.",
+      "answer": false,
+      "explanation": "Podnebí je dlouhodobý průměrný stav počasí (obvykle za 30 let). Dnešní stav je počasí."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá suchá oblast za horským hřebenem, kde vlhký vzduch už vypršel na návětrné straně?",
+      "options": [
+        "srážkový stín",
+        "subtropická výše",
+        "polární fronta",
+        "endoreická oblast"
+      ],
+      "answer": 0,
+      "explanation": "Hory zachytí déšť na návětrné straně, za nimi je srážkový stín."
+    },
+    {
+      "type": "match",
+      "question": "Spoj faktor s tím, jak ovlivňuje podnebí.",
+      "pairs": [
+        [
+          "nadmořská výška",
+          "čím výš, tím chladněji"
+        ],
+        [
+          "teplý mořský proud",
+          "otepluje a zvlhčuje"
+        ],
+        [
+          "studený mořský proud",
+          "ochlazuje a vysušuje"
+        ],
+        [
+          "blízkost oceánu",
+          "malá roční amplituda"
+        ]
+      ],
+      "explanation": "Oceán vyrovnává teploty, proto má pobřeží menší amplitudu než vnitrozemí."
     }
   ]
 }

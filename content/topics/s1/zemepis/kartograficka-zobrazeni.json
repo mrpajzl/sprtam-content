@@ -408,6 +408,84 @@
       "type": "open",
       "question": "Jak bys vybral zobrazení pro námořní navigaci a pro srovnání rozloh států?",
       "answer": "Pro navigaci konformní (Mercatorovo), protože loxodroma je přímka a úhly sedí. Pro rozlohy ekvivalentní, které zachovává poměr ploch."
+    },
+    {
+      "type": "choice",
+      "question": "Na jakou zobrazovací plochu se promítá v Křovákově zobrazení?",
+      "options": [
+        "válec",
+        "kužel",
+        "rovina"
+      ],
+      "answer": 1,
+      "explanation": "Křovákovo zobrazení je kuželové konformní – kužel sedí na střední šířky, kde leží Česko."
+    },
+    {
+      "type": "input",
+      "question": "Měřítko 1 : 50 000. Na mapě 6 cm. Kolik km je to ve skutečnosti?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "6 × 50 000 = 300 000 cm = 3 km.",
+      "hints": [
+        "Vynásob vzdálenost na mapě číslem za dvojtečkou.",
+        "100 000 cm = 1 km."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Měřítko 1 : 1 000 000. Kolik km ve skutečnosti odpovídá 1 cm na mapě?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "1 cm = 1 000 000 cm = 10 km."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na Mercatorově mapě je loxodroma zobrazena jako přímka.",
+      "answer": true,
+      "explanation": "Proto se Mercatorova mapa hodí k navigaci – kurz se dá odečíst přímo z mapy."
+    },
+    {
+      "type": "choice",
+      "question": "Které zobrazení je kompenzační a hodí se na mapy světa do atlasu?",
+      "options": [
+        "Mercatorovo",
+        "Křovákovo",
+        "Robinsonovo",
+        "gnómonické"
+      ],
+      "answer": 2,
+      "explanation": "Robinsonovo zobrazení nezachová nic přesně, ale všechna zkreslení drží malá a vyvážená."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vrstevnice nakreslené hustě u sebe znamenají mírný svah.",
+      "answer": false,
+      "explanation": "Hustě u sebe = strmý svah, daleko od sebe = mírný svah."
+    },
+    {
+      "type": "choice",
+      "question": "Kde je zkreslení mapy nejmenší?",
+      "options": [
+        "vždy na okrajích mapy",
+        "tam, kde se zobrazovací plocha dotýká glóbu",
+        "vždy na rovníku",
+        "všude stejně"
+      ],
+      "answer": 1,
+      "explanation": "Proto kužel sedí na střední šířky a rovina položená na pól na polární oblasti."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď měřítka od nejpodrobnější mapy po nejméně podrobnou.",
+      "items": [
+        "1 : 10 000",
+        "1 : 50 000",
+        "1 : 200 000",
+        "1 : 1 000 000"
+      ],
+      "explanation": "Čím menší číslo za dvojtečkou, tím podrobnější mapa."
     }
   ]
 }

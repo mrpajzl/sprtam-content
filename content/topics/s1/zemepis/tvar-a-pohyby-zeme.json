@@ -424,6 +424,87 @@
       "type": "open",
       "question": "Vysvětli vznik ročních období.",
       "answer": "Zemská osa je skloněná a během oběhu si zachovává směr. Polokoule přivrácená ke Slunci má vyšší úhel dopadu paprsků a delší den, a proto léto."
+    },
+    {
+      "type": "input",
+      "question": "Jaký je průměrný poloměr Země v km (zaokrouhleno na celé km)?",
+      "answers": [
+        "6371",
+        "6 371"
+      ],
+      "explanation": "R ≈ 6 371 km – s tímto poloměrem se počítá u modelu koule."
+    },
+    {
+      "type": "choice",
+      "question": "Kde je odstředivá síla vyvolaná rotací Země největší?",
+      "options": [
+        "na pólech",
+        "na rovníku",
+        "na obratnících",
+        "na polárních kruzích"
+      ],
+      "answer": 1,
+      "explanation": "Body na rovníku opisují největší kruh a jsou nejrychlejší, proto se tam Země „vyboulila“."
+    },
+    {
+      "type": "truefalse",
+      "question": "Geoid a rotační elipsoid jsou dva názvy pro stejnou plochu.",
+      "answer": false,
+      "explanation": "Geoid je skutečná nepravidelná plocha hladiny moří, elipsoid je pravidelné matematické těleso, které ho nahrazuje. Liší se až asi o 100 m."
+    },
+    {
+      "type": "choice",
+      "question": "Od které plochy se měří nadmořská výška?",
+      "options": [
+        "od elipsoidu WGS 84",
+        "od geoidu",
+        "od koule o poloměru 6 371 km",
+        "od roviny ekliptiky"
+      ],
+      "answer": 1,
+      "explanation": "Nadmořská výška se měří od geoidu – střední hladiny moře (v ČR se vztahuje k Baltskému moři)."
+    },
+    {
+      "type": "input",
+      "question": "Na jaké zeměpisné šířce (ve stupních) leží obratníky?",
+      "answers": [
+        "23,5",
+        "23.5",
+        "23"
+      ],
+      "explanation": "Obratníky leží na 23,5° s. š. a j. š. – stejně, jako je skloněná zemská osa.",
+      "hints": [
+        "Souvisí to se sklonem zemské osy."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď události v roce od ledna.",
+      "items": [
+        "perihélium (přísluní)",
+        "jarní rovnodennost",
+        "afélium (odsluní)",
+        "podzimní rovnodennost"
+      ],
+      "explanation": "Perihélium začátkem ledna, rovnodennost asi 21. 3., afélium začátkem července, rovnodennost asi 23. 9."
+    },
+    {
+      "type": "choice",
+      "question": "Který jev je důsledkem rotace Země?",
+      "options": [
+        "roční období",
+        "časová pásma",
+        "polární den",
+        "změna délky dne během roku"
+      ],
+      "answer": 1,
+      "explanation": "Rotace trvá den – dává den a noc a časová pásma. Ostatní jevy se mění během roku (revoluce a sklon osy)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když je v Česku zima, je v Austrálii léto.",
+      "answer": true,
+      "explanation": "V prosinci je ke Slunci přikloněná jižní polokoule. Kdyby rozhodovala vzdálenost od Slunce, bylo by léto na obou polokoulích zároveň."
     }
   ]
 }
