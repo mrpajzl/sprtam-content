@@ -455,6 +455,87 @@
       "type": "open",
       "question": "Jaké znáš veršové systémy?",
       "answer": "Časomíra (délka slabik, antika), sylabický (stejný počet slabik), tonický (stejný počet přízvuků), sylabotónický (počet slabik i pravidelný přízvuk) a volný verš bez pravidel."
+    },
+    {
+      "type": "choice",
+      "question": "Na které slabice je v češtině přízvuk?",
+      "options": [
+        "na poslední",
+        "na první",
+        "na předposlední",
+        "kde chce mluvčí"
+      ],
+      "answer": 1,
+      "explanation": "Český přízvuk je vždy na první slabice slova: MA-lí-na, ŠKO-la."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký rým má sloka: „Ráno vstanu **brzy**, / venku svítí **den**, / pes už čeká u **dveří**, / chce jít se mnou **ven**.“?",
+      "options": [
+        "sdružený",
+        "střídavý",
+        "obkročný",
+        "přerývaný"
+      ],
+      "answer": 3,
+      "explanation": "Rýmuje se jen den – ven (2. a 4. verš): ABCB = přerývaný."
+    },
+    {
+      "type": "input",
+      "question": "Urči schéma rýmu a zapiš ho písmeny: „Na louce kvete **mák**, / nad lesem svítá **den**, / do hnízda letí **pták**, / a já jdu tiše **ven**.“",
+      "answers": [
+        "ABAB",
+        "abab"
+      ],
+      "hints": [
+        "Konec 1. verše označ A. Rýmuje se s ním 3. verš?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Báseň může mít rým, a přitom nemít pravidelný rytmus.",
+      "answer": true,
+      "explanation": "Rým (shoda konců veršů) a rytmus (střídání silných a slabých slabik) jsou dvě různé věci."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo samo o sobě tvoří daktyl (– ᴗ ᴗ)?",
+      "options": [
+        "večer",
+        "škola",
+        "jahoda",
+        "máj"
+      ],
+      "answer": 2,
+      "explanation": "JA-ho-da: silná, slabá, slabá. Večer a škola jsou trochej, máj má jen jednu slabiku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sylabický verš znamená, že každý verš má stejný počet přízvuků.",
+      "answer": false,
+      "explanation": "Sylabický verš má stejný počet slabik. Stejný počet přízvuků má verš tonický."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky při určování schématu rýmu.",
+      "items": [
+        "Konec prvního verše označ písmenem A",
+        "U dalšího verše zjisti, jestli se rýmuje s některým předchozím",
+        "Když se nerýmuje, dej mu nové písmeno",
+        "Přečti písmena za sebou – to je schéma"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je stopa?",
+      "options": [
+        "jeden řádek básně",
+        "skupina veršů",
+        "nejmenší opakující se úsek rytmu",
+        "shoda zvuku na konci veršů"
+      ],
+      "answer": 2,
+      "explanation": "Verš se skládá z několika stop, např. trochej – ᴗ se opakuje: MÁ-ma ME-le MA-so."
     }
   ]
 }
