@@ -398,6 +398,64 @@
       "type": "open",
       "question": "Jak bys podle značek odlišil stříbrnou lžičku z roku 1840 od lžičky z roku 1900?",
       "answer": "Lžička z roku 1840 má lotovou ryzost (např. 13), značku místa a letopočet. Lžička z roku 1900 má rakousko-uherskou hlavu Diany s číslicí ryzosti (např. 3 = 800)."
+    },
+    {
+      "type": "choice",
+      "question": "Na prstenu je hlava orla s číslicí 2. Co z toho víš?",
+      "options": [
+        "stříbro ryzosti 900",
+        "platina ryzosti 900",
+        "zlato ryzosti 900",
+        "zlato ryzosti 750"
+      ],
+      "answer": 2,
+      "explanation": "Hlava orla značí zlato vysokých ryzostí: 0 = 999, 1 = 986, 2 = 900."
+    },
+    {
+      "type": "input",
+      "question": "Stříbrná lžíce má ryzost 14 lotů. Kolik je to tisícin?",
+      "answers": [
+        "875"
+      ],
+      "explanation": "14 ÷ 16 = 0,875, tedy 875 ‰.",
+      "hints": [
+        "Ryzí stříbro má 16 lotů.",
+        "Spočítej 14 ÷ 16 a výsledek vynásob tisícem."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, jak se punc dostane na nový šperk.",
+      "items": [
+        "Výrobce vyrazí svou identifikační značku.",
+        "Výrobce předloží šperk Puncovnímu úřadu.",
+        "Úřad zkouškou ověří ryzost.",
+        "Úřad vyrazí puncovní značku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na prstenu je vyraženo číslo 585 a iniciály „JK“, žádné zvíře. Co platí?",
+      "options": [
+        "Prsten opuncoval český Puncovní úřad.",
+        "Ryzost je jen tvrzení výrobce a je třeba ji ověřit.",
+        "Prsten je určitě padělek.",
+        "Prsten je ze stříbra ryzosti 585."
+      ],
+      "answer": 1,
+      "explanation": "Číslo a iniciály vyrazil výrobce. Úřední punc chybí, takže ryzost nikdo z úřadu neověřil."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čárka zlata 585 na zkušebním kameni se v kyselině pro 750 rozpustí, v kyselině pro 585 vydrží.",
+      "answer": true,
+      "explanation": "Kyselina pro vyšší ryzost rozpustí méně čisté zlato. Podle reakce čárky se odhadne ryzost."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hlava Diany je rakousko-uherská puncovní značka pro zlato.",
+      "answer": false,
+      "explanation": "Hlava Diany značila stříbro (1872–1922). Záměna kovu by znamenala úplně špatný odhad ceny."
     }
   ]
 }

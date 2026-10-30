@@ -455,6 +455,67 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi karátem u zlata a karátem u diamantu?",
       "answer": "U zlata je karát míra ryzosti: celek má 24 dílů a 24 kt je ryzí zlato. U drahých kamenů je karát jednotka hmotnosti, 1 ct = 0,2 g."
+    },
+    {
+      "type": "input",
+      "question": "Řetízek váží 8 g a má ryzost 585. Kolik gramů čistého zlata obsahuje?",
+      "answers": [
+        "4,68",
+        "4.68"
+      ],
+      "explanation": "8 g × 0,585 = 4,68 g zlata.",
+      "hints": [
+        "Ryzost 585 převeď na desetinné číslo 0,585.",
+        "Vynásob jím hmotnost řetízku."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která ryzost je nejnižší zákonná ryzost zlata v ČR?",
+      "options": [
+        "375",
+        "585",
+        "750",
+        "500"
+      ],
+      "answer": 1,
+      "explanation": "Zákonné ryzosti zlata v ČR jsou 999, 986, 900, 750 a 585. Nejnižší je 585."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zlato o ryzosti 375 (9 kt) patří mezi české zákonné ryzosti.",
+      "answer": false,
+      "explanation": "Devítikarátové zlato (375) v českém systému zákonnou ryzostí není, nejnižší je 585."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se u čtrnáctikarátového zlata v praxi razí 585, a ne 583?",
+      "options": [
+        "Protože 585 je zaokrouhlení 14 kt na celé desítky.",
+        "Protože 583 je ryzost stříbra.",
+        "Aby slitina měla jistě aspoň 14 karátů.",
+        "Protože karát u zlata váží 0,2 g."
+      ],
+      "answer": 2,
+      "explanation": "14 kt vychází na 583,3 ‰. Ryzost 585 je o kousek vyšší, takže slitina má jistě aspoň 14 karátů."
+    },
+    {
+      "type": "input",
+      "question": "Prsten váží 5 g a obsahuje 3,75 g čistého zlata. Jakou má ryzost v tisícinách?",
+      "answers": [
+        "750"
+      ],
+      "explanation": "3,75 ÷ 5 = 0,75, tedy 750 ‰ (18 kt).",
+      "hints": [
+        "Vyděl hmotnost zlata hmotností prstenu.",
+        "Výsledek vynásob tisícem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ze všech kovů nejlépe vede teplo a elektřinu stříbro.",
+      "answer": true,
+      "explanation": "Stříbro je nejlepší vodič tepla i elektřiny. Na vzduchu ale černá vlivem sirných látek."
     }
   ]
 }
