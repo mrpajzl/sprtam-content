@@ -323,6 +323,90 @@
       "type": "open",
       "question": "Proč průměrná rychlost obecně není průměrem rychlostí?",
       "answer": "Na pomalejším úseku stráví těleso víc času. Průměrná rychlost je celková dráha dělená celkovým časem, úseky se tak váží časem."
+    },
+    {
+      "type": "input",
+      "question": "Cyklista jede stálou rychlostí 5 m/s. Za kolik sekund ujede 1,2 km?",
+      "answers": [
+        "240"
+      ],
+      "explanation": "1,2 km = 1 200 m, t = 1 200 : 5 = 240 s (4 minuty).",
+      "hints": [
+        "Převeď 1,2 km na metry.",
+        "t = s / v"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Auto jede stálou rychlostí 90 km/h. Kolik km ujede za 40 minut?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "s = v · t = 90 · 2/3 = 60 km.",
+      "hints": [
+        "40 min je 2/3 hodiny."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Graf s(t) prochází body (0 s; 4 m) a (5 s; 19 m). Jaká je rychlost tělesa?",
+      "options": [
+        "3,8 m/s",
+        "3 m/s",
+        "15 m/s",
+        "4 m/s"
+      ],
+      "answer": 1,
+      "explanation": "Za 5 s přibylo 19 − 4 = 15 m, v = 15 : 5 = 3 m/s. Počáteční dráha s₀ = 4 m se do rychlosti nepočítá."
+    },
+    {
+      "type": "input",
+      "question": "Pro s = 12 + 4t (s v m, t v s) urči čas v s, kdy bude těleso ve vzdálenosti 40 m.",
+      "answers": [
+        "7"
+      ],
+      "explanation": "40 = 12 + 4t → 4t = 28 → t = 7 s.",
+      "hints": [
+        "Dosaď s = 40 a vyřeš rovnici pro t."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Auto jede 25 m/s. Za ním je 200 m druhé auto, které jede stejným směrem 30 m/s. Za kolik sekund ho dožene?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "Každou sekundu se přiblíží o 30 − 25 = 5 m. t = 200 : 5 = 40 s.",
+      "hints": [
+        "O kolik metrů se druhé auto přiblíží za 1 s?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Auto jede 30 km rychlostí 90 km/h a dalších 30 km rychlostí 45 km/h. Jaká je jeho průměrná rychlost?",
+      "options": [
+        "67,5 km/h",
+        "60 km/h",
+        "45 km/h",
+        "70 km/h"
+      ],
+      "answer": 1,
+      "explanation": "t₁ = 30 : 90 = 1/3 h, t₂ = 30 : 45 = 2/3 h. Celkem 60 km za 1 h → 60 km/h.",
+      "hints": [
+        "Spočítej čas každého úseku zvlášť."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ze dvou těles, jejichž grafy s(t) jsou přímky, jede rychleji to, jehož přímka stoupá strměji.",
+      "answer": true,
+      "explanation": "Strmost (směrnice) grafu s(t) je rychlost."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když graf s(t) stoupá, těleso jede do kopce.",
+      "answer": false,
+      "explanation": "Graf s(t) neukazuje tvar cesty. Na vodorovné ose je čas; stoupání grafu znamená rychlost."
     }
   ]
 }

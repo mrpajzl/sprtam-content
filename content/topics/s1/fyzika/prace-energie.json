@@ -384,6 +384,77 @@
       "type": "open",
       "question": "Jaký je vztah mezi prací a energií?",
       "answer": "Vykonaná práce se rovná změně energie tělesa. Například práce výsledné síly = změna kinetické energie."
+    },
+    {
+      "type": "input",
+      "question": "Skokan 60 kg stojí na věži 10 m nad vodou (g = 10 m/s²). Polohová energie v J =",
+      "answers": [
+        "6000"
+      ],
+      "explanation": "E_p = m · g · h = 60 · 10 · 10 = 6 000 J."
+    },
+    {
+      "type": "input",
+      "question": "Zvedneš batoh 5 kg rovnoměrně do výšky 2 m (g = 10 m/s²). Práce v J =",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Síla se rovná tíze 50 N, míří ve směru pohybu: W = 50 · 2 = 100 J."
+    },
+    {
+      "type": "input",
+      "question": "Kluk 50 kg vyběhne do výšky 12 m za 20 s (g = 10 m/s²). Výkon ve W =",
+      "answers": [
+        "300"
+      ],
+      "explanation": "W = 50 · 10 · 12 = 6 000 J, P = 6 000 / 20 = 300 W.",
+      "hints": [
+        "Nejdřív spočítej práci W = m · g · h.",
+        "P = W / t"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kulička 0,2 kg sjede z klidu bez tření z výšky 0,8 m (g = 10 m/s²). Kinetická energie dole v J =",
+      "answers": [
+        "1,6"
+      ],
+      "explanation": "E_k = E_p = 0,2 · 10 · 0,8 = 1,6 J.",
+      "hints": [
+        "Polohová energie se celá změní na pohybovou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Síla 50 N táhne sáňky 4 m ve směru pohybu. Jakou práci koná?",
+      "options": [
+        "12,5 J",
+        "54 J",
+        "200 J",
+        "2 000 J"
+      ],
+      "answer": 2,
+      "explanation": "W = F · s · cos 0° = 50 · 4 · 1 = 200 J."
+    },
+    {
+      "type": "input",
+      "question": "Motor má příkon 4 kW a účinnost 80 %. Užitečný výkon v kW =",
+      "answers": [
+        "3,2"
+      ],
+      "explanation": "P = η · P₀ = 0,8 · 4 = 3,2 kW. Zbylých 0,8 kW se mění v teplo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Účinnost skutečného motoru může být 100 %.",
+      "answer": false,
+      "explanation": "Část energie se vždy změní v teplo, proto je účinnost menší než 100 %."
+    },
+    {
+      "type": "truefalse",
+      "question": "Joule lze zapsat jako N·m.",
+      "answer": true,
+      "explanation": "Práce W = F · s, tedy newton krát metr."
     }
   ]
 }

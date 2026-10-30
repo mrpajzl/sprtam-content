@@ -489,6 +489,95 @@
       "type": "open",
       "question": "Co jsou základní a odvozené jednotky SI?",
       "answer": "Základních jednotek je 7 (m, kg, s, A, K, mol, cd). Odvozené vznikají jejich kombinací, např. N = kg·m·s⁻², J = N·m."
+    },
+    {
+      "type": "input",
+      "question": "Kolik km/h je 25 m/s?",
+      "answers": [
+        "90"
+      ],
+      "explanation": "25 · 3,6 = 90 km/h. Číslo v km/h je vždy větší než v m/s.",
+      "hints": [
+        "Z m/s na km/h násobíš 3,6."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik m² je 1 cm²? Zapiš jako desetinné číslo.",
+      "answers": [
+        "0,0001"
+      ],
+      "explanation": "1 cm² = 0,01 m · 0,01 m = 0,0001 m² (10⁻⁴ m²). U ploch se převodní číslo umocní na druhou.",
+      "hints": [
+        "1 cm = 0,01 m a převádíš oba rozměry čtverce."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik wattů je 3,2 MW?",
+      "options": [
+        "3 200 W",
+        "3 200 000 W",
+        "320 000 W",
+        "3 200 000 000 W"
+      ],
+      "answer": 1,
+      "explanation": "Mega = 10⁶, takže 3,2 MW = 3,2 · 1 000 000 W = 3 200 000 W."
+    },
+    {
+      "type": "input",
+      "question": "Kolik milisekund (ms) je 0,25 s?",
+      "answers": [
+        "250"
+      ],
+      "explanation": "1 s = 1 000 ms, takže 0,25 s = 0,25 · 1 000 = 250 ms. Menší jednotka = větší číslo."
+    },
+    {
+      "type": "input",
+      "question": "Síly 12 N a 5 N působí v jedné přímce opačnými směry. Velikost výslednice v N =",
+      "answers": [
+        "7"
+      ],
+      "explanation": "Opačné směry se odečítají: 12 − 5 = 7 N (směrem větší síly)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu s její základní jednotkou SI.",
+      "pairs": [
+        [
+          "délka",
+          "metr"
+        ],
+        [
+          "hmotnost",
+          "kilogram"
+        ],
+        [
+          "elektrický proud",
+          "ampér"
+        ],
+        [
+          "termodynamická teplota",
+          "kelvin"
+        ],
+        [
+          "látkové množství",
+          "mol"
+        ]
+      ],
+      "explanation": "SI má 7 základních jednotek: m, kg, s, A, K, mol, cd."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rychlost 1 m/s je totéž co 3,6 km/h.",
+      "answer": true,
+      "explanation": "Za hodinu (3 600 s) urazíš 3 600 m = 3,6 km."
+    },
+    {
+      "type": "truefalse",
+      "question": "Teplota je vektorová veličina.",
+      "answer": false,
+      "explanation": "Teplota nemá směr, stačí číslo a jednotka – je to skalár."
     }
   ]
 }

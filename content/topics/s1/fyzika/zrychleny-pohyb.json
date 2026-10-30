@@ -344,6 +344,83 @@
       "type": "open",
       "question": "Co je volný pád a jaké má vlastnosti?",
       "answer": "Rovnoměrně zrychlený pohyb z klidu působením tíhy bez odporu vzduchu. Zrychlení je g ≈ 9,81 m/s², nezávisí na hmotnosti tělesa."
+    },
+    {
+      "type": "input",
+      "question": "Auto jede 10 m/s a začne zrychlovat se zrychlením 2 m/s². Rychlost v m/s po 5 s =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "v = v₀ + a·t = 10 + 2 · 5 = 20 m/s."
+    },
+    {
+      "type": "input",
+      "question": "Auto jede 10 m/s a 4 s zrychluje se zrychlením 3 m/s². Dráha v m za tu dobu =",
+      "answers": [
+        "64"
+      ],
+      "explanation": "s = 10 · 4 + ½ · 3 · 4² = 40 + 24 = 64 m.",
+      "hints": [
+        "s = v₀·t + ½·a·t²"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Auto brzdí z 30 m/s se zpomalením 6 m/s². Brzdná dráha v m =",
+      "answers": [
+        "75"
+      ],
+      "explanation": "s = 30² / (2 · 6) = 900 / 12 = 75 m.",
+      "hints": [
+        "Brzdná dráha s = v₀² / (2a)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Těleso se rozjíždí z klidu se zrychlením 4 m/s². Jakou rychlost v m/s má po uražení 50 m?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "v² = 2 · 4 · 50 = 400, v = 20 m/s.",
+      "hints": [
+        "Čas neznáš – použij v² = 2·a·s."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou jednotku má zrychlení?",
+      "options": [
+        "m/s",
+        "m/s²",
+        "m²/s",
+        "N"
+      ],
+      "answer": 1,
+      "explanation": "Zrychlení = změna rychlosti (m/s) za sekundu → m/s²."
+    },
+    {
+      "type": "choice",
+      "question": "Kámen puštěný z mostu dopadl do vody za 4 s (g = 10 m/s², bez odporu vzduchu). Jak vysoko je most nad vodou?",
+      "options": [
+        "40 m",
+        "160 m",
+        "80 m",
+        "20 m"
+      ],
+      "answer": 2,
+      "explanation": "h = ½ · g · t² = ½ · 10 · 16 = 80 m."
+    },
+    {
+      "type": "truefalse",
+      "question": "Těleso padající volným pádem urazí za první 2 s dvakrát větší dráhu než za první 1 s.",
+      "answer": false,
+      "explanation": "Dráha roste s t²: za 2 s je 2² = 4× větší (20 m oproti 5 m při g = 10 m/s²)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při brzdění píšeme zrychlení se znaménkem minus, protože míří proti pohybu.",
+      "answer": true,
+      "explanation": "Rychlost ubývá, zrychlení má opačný směr než rychlost."
     }
   ]
 }

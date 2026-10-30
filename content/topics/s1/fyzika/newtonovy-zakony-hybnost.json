@@ -362,6 +362,84 @@
       "type": "open",
       "question": "Co je hybnost a kdy se zachovává?",
       "answer": "Hybnost p = m·v je vektor ve směru rychlosti. Celková hybnost izolované soustavy (bez vnějších sil) se nemění."
+    },
+    {
+      "type": "input",
+      "question": "Motor auta táhne silou 3 000 N, odpor proti pohybu je 600 N, auto má hmotnost 1 200 kg. Zrychlení v m/s² =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Výsledná síla 3 000 − 600 = 2 400 N, a = F / m = 2 400 / 1 200 = 2 m/s².",
+      "hints": [
+        "Nejdřív spočítej výslednou sílu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak velká tíhová síla v N působí na člověka o hmotnosti 55 kg? (g = 10 m/s²)",
+      "answers": [
+        "550"
+      ],
+      "explanation": "F_G = m · g = 55 · 10 = 550 N."
+    },
+    {
+      "type": "input",
+      "question": "Vozík 2 kg jede doprava 5 m/s, proti němu jede vozík 3 kg rychlostí 2 m/s. Po srážce se spojí. Velikost společné rychlosti v m/s =",
+      "answers": [
+        "0,8"
+      ],
+      "explanation": "Před: 2 · 5 + 3 · (−2) = 10 − 6 = 4 kg·m/s. Po: 5 · v = 4 → v = 0,8 m/s doprava.",
+      "hints": [
+        "Směr doprava ber kladně, doleva záporně.",
+        "Součet hybností před = (2 + 3) · v"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Bednu 20 kg táhneš po podlaze stálou rychlostí, f = 0,3, g = 10 m/s². Jak velkou vodorovnou silou v N táhneš?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "F_t = f · m · g = 0,3 · 200 = 60 N. Tah musí třecí sílu přesně vyrovnat.",
+      "hints": [
+        "Stálá rychlost → výsledná síla je nulová."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hokejový puk klouže po ledu a skoro nezpomaluje. Který zákon to popisuje?",
+      "options": [
+        "2. Newtonův zákon",
+        "zákon akce a reakce",
+        "zákon setrvačnosti",
+        "zákon zachování energie"
+      ],
+      "answer": 2,
+      "explanation": "Bez (téměř) žádné výsledné síly těleso pokračuje v pohybu stálou rychlostí – 1. Newtonův zákon."
+    },
+    {
+      "type": "choice",
+      "question": "Proč airbag při nárazu chrání?",
+      "options": [
+        "zmenší změnu hybnosti",
+        "prodlouží dobu nárazu, a tím zmenší sílu",
+        "zvětší hmotnost cestujícího",
+        "zruší setrvačnost"
+      ],
+      "answer": 1,
+      "explanation": "F = Δp / Δt: změna hybnosti je stejná, ale delší Δt znamená menší sílu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kniha leží na stole, takže na ni nepůsobí žádné síly.",
+      "answer": false,
+      "explanation": "Působí na ni tíha dolů a stůl nahoru. Síly jsou stejně velké a opačné, jejich výslednice je nulová."
+    },
+    {
+      "type": "truefalse",
+      "question": "Těleso jede rovnoměrně přímočaře, proto je výslednice sil, které na něj působí, nulová.",
+      "answer": true,
+      "explanation": "Podle 1. Newtonova zákona se pohyb nemění jen tehdy, když je výslednice sil nulová."
     }
   ]
 }

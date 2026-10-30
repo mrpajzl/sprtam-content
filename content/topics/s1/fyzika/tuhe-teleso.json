@@ -375,6 +375,79 @@
       "type": "open",
       "question": "Co je těžiště a jak souvisí se stabilitou?",
       "answer": "Těžiště je působiště tíhové síly tělesa. Těleso je stabilnější, má-li nízko těžiště a velkou podstavu."
+    },
+    {
+      "type": "input",
+      "question": "Matku povoluješ klíčem dlouhým 0,25 m. Na konec klíče působíš kolmo silou 80 N. Moment síly v N·m =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "M = F · d = 80 · 0,25 = 20 N·m."
+    },
+    {
+      "type": "input",
+      "question": "Eva (300 N) sedí na houpačce 2 m od osy. Jak daleko od osy v m si musí na druhou stranu sednout Petr (500 N), aby byla houpačka v rovnováze?",
+      "answers": [
+        "1,2"
+      ],
+      "explanation": "300 · 2 = 600 N·m, 500 · d = 600 → d = 1,2 m. Těžší sedí blíž ose.",
+      "hints": [
+        "F₁ · d₁ = F₂ · d₂"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Potřebuješ moment 30 N·m a klíč je dlouhý 0,2 m. Jak velkou silou v N musíš působit kolmo na konec klíče?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "F = M / d = 30 / 0,2 = 150 N."
+    },
+    {
+      "type": "choice",
+      "question": "Proč jdou dveře otevřít snadno u kliky, ale ztěžka u pantů?",
+      "options": [
+        "u kliky je menší tření",
+        "u kliky má síla větší rameno, a tedy větší moment",
+        "u pantů jsou dveře těžší",
+        "u kliky působí síla rovnoběžně s dveřmi"
+      ],
+      "answer": 1,
+      "explanation": "M = F · d: klika je daleko od osy (pantů), takže stejná síla má větší otáčivý účinek."
+    },
+    {
+      "type": "choice",
+      "question": "Těleso po vychýlení zůstane v nové poloze a jeho těžiště je ve stejné výšce. O jakou rovnovážnou polohu jde?",
+      "options": [
+        "stálou",
+        "vratkou",
+        "volnou"
+      ],
+      "answer": 2,
+      "explanation": "Volná (indiferentní) poloha: těžiště se nezvedne ani neklesne, těleso zůstane, kam ho posuneš."
+    },
+    {
+      "type": "choice",
+      "question": "Co z toho je dvojice sil?",
+      "options": [
+        "tíha knihy a síla stolu, který ji drží",
+        "dva lidé táhnou bednu stejným směrem",
+        "obě ruce otáčejí volantem"
+      ],
+      "answer": 2,
+      "explanation": "Ruce na volantu působí stejně velkými opačnými silami, které neleží na jedné přímce. Tíha knihy a síla stolu leží na jedné přímce, proto to dvojice sil není."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když táhneš klíč šikmo, má stejná síla větší moment, než když táhneš kolmo.",
+      "answer": false,
+      "explanation": "Při šikmém tahu je rameno (kolmá vzdálenost od osy) menší než délka klíče, a moment je proto menší."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pravítko udržíš na prstu v rovnováze, když prst dáš přímo pod jeho těžiště.",
+      "answer": true,
+      "explanation": "Tíha působí v těžišti. Je-li podpěra přímo pod ním, má tíha nulové rameno a pravítko se neotáčí."
     }
   ]
 }

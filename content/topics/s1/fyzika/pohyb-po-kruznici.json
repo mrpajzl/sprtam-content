@@ -364,6 +364,84 @@
       "type": "open",
       "question": "Jak spolu souvisí perioda, frekvence, úhlová a obvodová rychlost?",
       "answer": "f = 1/T, ω = 2π/T = 2πf, obvodová rychlost v = ω·r."
+    },
+    {
+      "type": "input",
+      "question": "Pračka ždímá 1 200 otáček za minutu. Frekvence v Hz =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "f = 1 200 : 60 = 20 otáček za sekundu = 20 Hz.",
+      "hints": [
+        "Minuta má 60 s."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolotoč se otočí jednou za 4 s, sedačka je 3 m od osy. Obvodová rychlost v m/s (π ≈ 3,14, na setiny) =",
+      "answers": [
+        "4,71"
+      ],
+      "explanation": "v = 2 · 3,14 · 3 / 4 = 18,84 / 4 ≈ 4,71 m/s.",
+      "hints": [
+        "v = 2πr / T"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Úhlová rychlost je 2 rad/s, poloměr 3 m. Dostředivé zrychlení v m/s² =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "a_d = ω² · r = 2² · 3 = 12 m/s² (kontrola: v = 6 m/s, v²/r = 36/3 = 12)."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik stupňů je π rad?",
+      "options": [
+        "90°",
+        "360°",
+        "180°",
+        "57°"
+      ],
+      "answer": 2,
+      "explanation": "Celá otáčka je 2π rad = 360°, polovina π rad = 180°. 57° je asi 1 rad."
+    },
+    {
+      "type": "choice",
+      "question": "Kámen na provázku krouží po kružnici a provázek se přetrhne. Kam kámen poletí?",
+      "options": [
+        "do středu kružnice",
+        "po tečně ke kružnici",
+        "ven ze středu po poloměru",
+        "dál po kružnici"
+      ],
+      "answer": 1,
+      "explanation": "Bez síly do středu se kámen dál nezatáčí a letí rovně ve směru, kterým se právě pohyboval – po tečně."
+    },
+    {
+      "type": "choice",
+      "question": "Auto projede dvě zatáčky stejnou rychlostí. První má poloměr 50 m, druhá 100 m. Kde je dostředivé zrychlení větší a kolikrát?",
+      "options": [
+        "ve druhé, 2×",
+        "v první, 2×",
+        "v první, 4×",
+        "v obou stejné"
+      ],
+      "answer": 1,
+      "explanation": "a_d = v² / r: poloviční poloměr při stejné rychlosti = dvojnásobné zrychlení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Všechny body otáčejícího se kotouče mají stejnou úhlovou rychlost.",
+      "answer": true,
+      "explanation": "Všechny se otočí o stejný úhel za stejnou dobu. Liší se jen obvodová rychlost v = ω · r."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se perioda zvětší, frekvence také vzroste.",
+      "answer": false,
+      "explanation": "f = 1 / T: delší oběh znamená méně oběhů za sekundu, frekvence klesne."
     }
   ]
 }

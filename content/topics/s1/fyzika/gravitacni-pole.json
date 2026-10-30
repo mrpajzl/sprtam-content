@@ -366,6 +366,81 @@
       "type": "open",
       "question": "Uveď tři Keplerovy zákony.",
       "answer": "1. Planety obíhají po elipsách, Slunce je v ohnisku. 2. Průvodič opíše za stejný čas stejnou plochu. 3. Poměr T² / a³ je pro všechny planety stejný."
+    },
+    {
+      "type": "input",
+      "question": "Planeta má velkou poloosu 9 au. Kolik let trvá její oběh kolem Slunce?",
+      "answers": [
+        "27"
+      ],
+      "explanation": "T² = 9³ = 729, T = √729 = 27 let.",
+      "hints": [
+        "T² = a³"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní gravitační síla mezi dvěma tělesy, když se vzdálenost ztrojnásobí?",
+      "options": [
+        "zmenší se 3×",
+        "zmenší se 9×",
+        "zmenší se 6×",
+        "zvětší se 9×"
+      ],
+      "answer": 1,
+      "explanation": "Síla závisí na 1/r²: 3² = 9, síla se zmenší 9×."
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát se zvětší gravitační síla, když vzdálenost těles zmenšíme na polovinu?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Síla závisí na 1/r². Poloviční r → (1/2)² = 1/4 ve jmenovateli → síla 4× větší."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní gravitační síla, když hmotnosti obou těles zdvojnásobíme a vzdálenost se nezmění?",
+      "options": [
+        "zvětší se 2×",
+        "zvětší se 4×",
+        "nezmění se",
+        "zmenší se 4×"
+      ],
+      "answer": 1,
+      "explanation": "F_g = κ·m₁·m₂/r²: obě hmotnosti 2× větší → 2 · 2 = 4× větší síla."
+    },
+    {
+      "type": "input",
+      "question": "Jak velká gravitační síla v N působí u povrchu Země na těleso 12 kg? (K = 9,8 N/kg)",
+      "answers": [
+        "117,6"
+      ],
+      "explanation": "F = m · K = 12 · 9,8 = 117,6 N."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou rychlost potřebuje těleso u Země, aby opustilo Sluneční soustavu (3. kosmická rychlost)?",
+      "options": [
+        "7,9 km/s",
+        "11,2 km/s",
+        "16,7 km/s",
+        "30 km/s"
+      ],
+      "answer": 2,
+      "explanation": "1. kosmická 7,9 km/s (kruhová dráha), 2. kosmická 11,2 km/s (opuštění Země), 3. kosmická 16,7 km/s."
+    },
+    {
+      "type": "truefalse",
+      "question": "Gravitační konstanta κ má na Zemi i na Marsu stejnou hodnotu.",
+      "answer": true,
+      "explanation": "κ = 6,67 · 10⁻¹¹ N·m²·kg⁻² je stejná pro celý vesmír. Liší se intenzita pole, ne konstanta."
+    },
+    {
+      "type": "truefalse",
+      "question": "Geostacionární družice obíhá nad zemskými póly.",
+      "answer": false,
+      "explanation": "Geostacionární družice je nad rovníkem a oběhne Zemi za jeden den, proto se zdá, že stojí."
     }
   ]
 }

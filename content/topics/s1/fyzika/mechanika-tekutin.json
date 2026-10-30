@@ -358,6 +358,83 @@
       "type": "open",
       "question": "Zformuluj Pascalův a Archimédův zákon.",
       "answer": "Pascal: tlak vyvolaný vnější silou je v kapalině všude stejný. Archimédes: těleso ponořené do tekutiny je nadlehčováno silou rovnou tíze tekutiny o objemu ponořené části."
+    },
+    {
+      "type": "input",
+      "question": "V jaké hloubce v m je hydrostatický tlak vody 50 kPa? (ρ = 1 000 kg/m³, g = 10 m/s²)",
+      "answers": [
+        "5"
+      ],
+      "explanation": "h = p / (ρ · g) = 50 000 / 10 000 = 5 m.",
+      "hints": [
+        "p = h · ρ · g, vyjádři h.",
+        "50 kPa = 50 000 Pa"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Síla 400 N tlačí na plochu 0,02 m². Tlak v Pa =",
+      "answers": [
+        "20000"
+      ],
+      "explanation": "p = F / S = 400 / 0,02 = 20 000 Pa = 20 kPa."
+    },
+    {
+      "type": "input",
+      "question": "Kámen o objemu 2 dm³ je celý ponořený v oleji (ρ = 800 kg/m³, g = 10 m/s²). Vztlaková síla v N =",
+      "answers": [
+        "16"
+      ],
+      "explanation": "F_vz = V · ρ · g = 0,002 · 800 · 10 = 16 N.",
+      "hints": [
+        "2 dm³ = 0,002 m³"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kohoutkem s průřezem 2 cm² teče voda rychlostí 0,5 m/s. Objemový průtok v cm³ za sekundu =",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Q = 2 cm² · 50 cm/s = 100 cm³/s, tedy 0,1 litru za sekundu.",
+      "hints": [
+        "0,5 m/s = 50 cm/s",
+        "Q = S · v"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Železná a dřevěná koule stejného objemu jsou celé ponořené ve vodě. Na kterou působí větší vztlak?",
+      "options": [
+        "na železnou",
+        "na dřevěnou",
+        "na obě stejný"
+      ],
+      "answer": 2,
+      "explanation": "Vztlak závisí jen na objemu ponořené části a hustotě kapaliny, ne na materiálu tělesa."
+    },
+    {
+      "type": "choice",
+      "question": "Které zařízení využívá Pascalův zákon?",
+      "options": [
+        "křídlo letadla",
+        "hydraulické brzdy",
+        "lodní šroub"
+      ],
+      "answer": 1,
+      "explanation": "V hydraulických brzdách se tlak z pedálu přenáší kapalinou všude stejně. Křídlo využívá Bernoulliho rovnici."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když foukneš mezi dva listy papíru, listy se od sebe oddálí.",
+      "answer": false,
+      "explanation": "Mezi listy proudí vzduch rychleji, a proto je tam menší tlak. Okolní vzduch listy přitlačí k sobě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dřevo o hustotě 600 kg/m³ plave ve vodě a ponořeno má 60 % objemu.",
+      "answer": true,
+      "explanation": "Ponořená část = ρ_tělesa / ρ_kapaliny = 600 / 1 000 = 0,6 = 60 %."
     }
   ]
 }
