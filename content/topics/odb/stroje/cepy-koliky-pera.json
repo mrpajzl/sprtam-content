@@ -449,6 +449,70 @@
       "type": "open",
       "question": "Porovnej pero a drážkování.",
       "answer": "Obojí přenáší krouticí moment mezi hřídelem a nábojem. Pero je jeden hranolek v drážce, je levné a hodí se pro menší momenty. Drážkování má mnoho zubů, přenese větší moment a dovolí náboji posouvat se po hřídeli."
+    },
+    {
+      "type": "choice",
+      "question": "Který kolík je rozříznutá trubička, která drží v díře pružností?",
+      "options": [
+        "válcový",
+        "kuželový",
+        "pružný",
+        "rýhovaný"
+      ],
+      "answer": 2,
+      "explanation": "Pružný kolík se v díře sevře a tlačí do stěn jako pružina."
+    },
+    {
+      "type": "choice",
+      "question": "Čím drží v díře válcový kolík?",
+      "options": [
+        "pružností rozříznuté trubičky",
+        "přesahem – je o kousek větší než díra",
+        "závitem",
+        "kuželovitostí 1 : 50"
+      ],
+      "answer": 1,
+      "explanation": "Válcový kolík se zalisuje s přesahem, takže v díře drží pevně."
+    },
+    {
+      "type": "input",
+      "question": "Pero dlouhé 50 mm nese v náboji bokem 4 mm. Obvodová síla je 6 000 N. Jaké je otlačení v MPa?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "S = l · t = 50 · 4 = 200 mm². p = 6 000 / 200 = 30 MPa.",
+      "hints": [
+        "Nejdřív spočítej styčnou plochu S = l · t.",
+        "Otlačení = síla / plocha."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jednostřižný čep má průměr 10 mm a přenáší sílu 3 140 N. Jaké je smykové napětí v MPa?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "S = π · 10² / 4 ≈ 78,5 mm². τ = 3 140 / 78,5 = 40 MPa.",
+      "hints": [
+        "Průřez čepu S = π · d² / 4.",
+        "Jednostřižný: dělíš jedním průřezem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvojstřižný čep vydrží při stejném průměru zhruba dvakrát větší sílu než jednostřižný.",
+      "answer": true,
+      "explanation": "Síla se rozloží na dva průřezy, takže napětí je poloviční."
+    },
+    {
+      "type": "input",
+      "question": "Čep ve vidlici prochází třemi plechy. V kolika místech se může useknout?",
+      "answers": [
+        "2",
+        "dvou",
+        "dvě"
+      ],
+      "explanation": "Je to dvojstřižný spoj: střižné plochy jsou mezi prostředním a oběma krajními plechy."
     }
   ]
 }

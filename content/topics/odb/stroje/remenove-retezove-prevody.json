@@ -438,6 +438,67 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady platí u řemenových a řetězových převodů?",
       "answer": "Převody musí mít ochranný kryt, protože místo náběhu vtáhne prsty, oděv nebo vlasy. Napínání a kontrola se dělá jen u vypnutého a zajištěného stroje. Nesmí se nosit volný oděv ani rozpuštěné vlasy."
+    },
+    {
+      "type": "input",
+      "question": "Motor má 1 440 min⁻¹, hnaná řemenice se má točit 480 min⁻¹. Malá řemenice má d₁ = 100 mm. Jaký průměr d₂ v mm potřebuješ (bez skluzu)?",
+      "answers": [
+        "300"
+      ],
+      "explanation": "i = 1 440 / 480 = 3. d₂ = i · d₁ = 3 · 100 = 300 mm.",
+      "hints": [
+        "Nejdřív spočítej převodový poměr.",
+        "d₂ = i · d₁"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Přední převodník kola má 48 zubů, zadní pastorek 16 zubů. Kolikrát se otočí zadní kolo na jednu otočku pedálů?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "48 / 16 = 3. Je to převod do rychla, i = 16 / 48 = 1/3."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená označení klínového řemene SPA 1250?",
+      "options": [
+        "klasický profil A, šířka 1 250 mm",
+        "ozubený řemen s 1 250 zuby",
+        "úzký profil SPA, délka 1 250 mm",
+        "řemen pro řemenici o průměru 1 250 mm"
+      ],
+      "answer": 2,
+      "explanation": "Písmena udávají profil, číslo délku řemene v mm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přepnutý řemen přetěžuje ložiska hřídelů.",
+      "answer": true,
+      "explanation": "Proto se řemen napíná jen na předepsanou hodnotu."
+    },
+    {
+      "type": "choice",
+      "question": "Proč přenese klínový řemen víc než plochý?",
+      "options": [
+        "má zuby jako ozubené kolo",
+        "zaklíní se do drážky řemenice",
+        "je z oceli",
+        "nepotřebuje napínání"
+      ],
+      "answer": 1,
+      "explanation": "Lichoběžníkový průřez se zaklíní do drážky, takže se zvětší tření."
+    },
+    {
+      "type": "input",
+      "question": "Bez skluzu by se hnaná řemenice točila 600 min⁻¹. Skluz je 2 %. Kolik min⁻¹ má ve skutečnosti?",
+      "answers": [
+        "588"
+      ],
+      "explanation": "2 % z 600 = 12. 600 − 12 = 588 min⁻¹.",
+      "hints": [
+        "Spočítej 2 % z 600 a odečti je."
+      ]
     }
   ]
 }

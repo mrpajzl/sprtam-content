@@ -466,6 +466,76 @@
       "type": "open",
       "question": "Porovnej nýtový a svarový spoj.",
       "answer": "Nýty potřebují díry, které oslabí plech, a práce je pomalejší, ale spojí i materiály, které nejde svařit (hliník v letadlech). Svar je rychlý, lehčí a těsný, ale materiál se ohřeje a může se zkroutit nebo změnit vlastnosti."
+    },
+    {
+      "type": "input",
+      "question": "Spoj má 2 jednostřižné nýty, každý s průřezem 50 mm². Přenáší sílu 6 000 N. Jaké je napětí ve střihu v MPa?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "τ = F / (i · n · S) = 6 000 / (2 · 1 · 50) = 60 MPa.",
+      "hints": [
+        "Síla se rozdělí mezi všechny nýty.",
+        "τ = F / (i · n · S)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký je průřez nýtu o průměru 10 mm v mm²? (zaokrouhli na jedno desetinné místo)",
+      "answers": [
+        "78,5",
+        "78.5"
+      ],
+      "explanation": "S = π · d² / 4 = π · 100 / 4 ≈ 78,5 mm².",
+      "hints": [
+        "S = π · d² / 4"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké plyny se používají při svařování plamenem?",
+      "options": [
+        "argon a oxid uhličitý",
+        "vzduch a vodík",
+        "kyslík a acetylen",
+        "kyslík a dusík"
+      ],
+      "answer": 2,
+      "explanation": "Kyslíko-acetylenový plamen má asi 3 000 °C."
+    },
+    {
+      "type": "truefalse",
+      "question": "Koutový svar spojuje plechy, které na sebe stojí kolmo nebo se překrývají.",
+      "answer": true,
+      "explanation": "Koutový svar leží v rohu mezi plechy. Plechy v jedné rovině spojuje tupý svar."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ozubené kolo nalisované s přesahem na hřídel je rozebíratelný spoj.",
+      "answer": false,
+      "explanation": "Lisovaný spoj patří mezi nerozebíratelné spoje."
+    },
+    {
+      "type": "match",
+      "question": "Spoj nerozebíratelný spoj s příkladem použití.",
+      "pairs": [
+        [
+          "měkké pájení",
+          "elektronika"
+        ],
+        [
+          "lepení",
+          "kompozity"
+        ],
+        [
+          "nýtování",
+          "hliníková letadla"
+        ],
+        [
+          "lisování",
+          "ozubené kolo na hřídeli"
+        ]
+      ]
     }
   ]
 }

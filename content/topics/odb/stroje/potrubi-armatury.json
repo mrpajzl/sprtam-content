@@ -448,6 +448,78 @@
       "type": "open",
       "question": "Jaké armatury jistí potrubí a co dělají?",
       "answer": "Pojistný ventil se sám otevře při překročení nastaveného tlaku a chrání zařízení před roztržením. Zpětná klapka nebo zpětný ventil pustí proud jen jedním směrem a při zpětném toku se sami zavřou."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tvarovku s tím, co dělá.",
+      "pairs": [
+        [
+          "koleno",
+          "mění směr potrubí"
+        ],
+        [
+          "T-kus",
+          "vytvoří odbočku"
+        ],
+        [
+          "redukce",
+          "mění průměr potrubí"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Trubka má vnitřní průměr 100 mm, voda teče rychlostí 1 m/s. Jaký je průtok v l/s? (zaokrouhli na jedno desetinné místo)",
+      "answers": [
+        "7,9",
+        "7.9"
+      ],
+      "explanation": "S = π · 0,1² / 4 ≈ 0,007 85 m². Q = 0,007 85 · 1 ≈ 0,007 85 m³/s ≈ 7,9 l/s.",
+      "hints": [
+        "Průměr převeď na metry a spočítej S = π · d² / 4.",
+        "1 m³ = 1 000 l."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ocelové potrubí (α = 12 · 10⁻⁶ 1/K) dlouhé 20 m se ohřeje o 100 K. O kolik mm se prodlouží?",
+      "answers": [
+        "24"
+      ],
+      "explanation": "Δl = 12 · 10⁻⁶ · 20 · 100 = 0,024 m = 24 mm.",
+      "hints": [
+        "Δl = α · l · Δt",
+        "Výsledek v metrech převeď na mm."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která armatura se otevře i zavře otočením koule o 90°?",
+      "options": [
+        "šoupátko",
+        "ventil",
+        "kulový kohout",
+        "zpětná klapka"
+      ],
+      "answer": 2,
+      "explanation": "Kulový kohout je rychlý. Rychlé zavření ale může způsobit tlakový ráz."
+    },
+    {
+      "type": "truefalse",
+      "question": "DN 50 znamená, že vnější průměr trubky je přesně 50 mm.",
+      "answer": false,
+      "explanation": "DN je jmenovitá světlost, zaokrouhlený vnitřní průměr. Ocelová trubka DN 50 má vnější průměr kolem 60 mm."
+    },
+    {
+      "type": "input",
+      "question": "Kolik barů je 2,5 MPa?",
+      "answers": [
+        "25"
+      ],
+      "explanation": "1 MPa = 10 bar, takže 2,5 MPa = 25 bar.",
+      "hints": [
+        "1 bar = 0,1 MPa."
+      ]
     }
   ]
 }

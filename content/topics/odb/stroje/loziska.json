@@ -480,6 +480,81 @@
       "type": "open",
       "question": "Vysvětli, jak přečteš označení 6206-2Z.",
       "answer": "6 je kuličkové jednořadé ložisko, 2 je rozměrová řada, 06 · 5 = vrtání 30 mm. 2Z znamená plechové kryty z obou stran."
+    },
+    {
+      "type": "input",
+      "question": "Jaké vrtání v mm má ložisko 6000?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Kód 00 je pevný: 10 mm.",
+      "hints": [
+        "Kódy 00 až 03 se nenásobí pěti."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké vrtání v mm má ložisko 6312?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "12 · 5 = 60 mm.",
+      "hints": [
+        "Poslední dvě číslice jsou kód vrtání."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které ložisko se hodí tam, kde je kolem hřídele velmi málo místa?",
+      "options": [
+        "kuželíkové",
+        "axiální kuličkové",
+        "jehlové",
+        "válečkové NU"
+      ],
+      "answer": 2,
+      "explanation": "Jehlové ložisko má tenké jehly, a proto je nízké."
+    },
+    {
+      "type": "truefalse",
+      "question": "Radiální ložisko nese hlavně sílu ve směru osy hřídele.",
+      "answer": false,
+      "explanation": "Radiální ložisko nese sílu kolmo na osu. Sílu ve směru osy nese axiální ložisko."
+    },
+    {
+      "type": "input",
+      "question": "Kuličkové ložisko má C / P = 6 a otáčí se 1 200 min⁻¹. Kolik hodin je jeho základní trvanlivost?",
+      "answers": [
+        "3000",
+        "3 000"
+      ],
+      "explanation": "L10 = 6³ = 216 milionů otáček. Za hodinu 60 · 1 200 = 72 000 otáček. 216 000 000 / 72 000 = 3 000 h.",
+      "hints": [
+        "L10 = (C / P)³ milionů otáček.",
+        "Spočítej, kolik otáček udělá za hodinu."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo nebo písmeno typu s ložiskem.",
+      "pairs": [
+        [
+          "3",
+          "kuželíkové"
+        ],
+        [
+          "7",
+          "kuličkové s kosoúhlým stykem"
+        ],
+        [
+          "5",
+          "axiální kuličkové"
+        ],
+        [
+          "N",
+          "válečkové"
+        ]
+      ]
     }
   ]
 }

@@ -454,6 +454,79 @@
       "type": "open",
       "question": "Vysvětli, proč jsou brzdy jeřábů a výtahů zabrzděné pružinou.",
       "answer": "Při výpadku proudu nebo poruše musí břemeno zůstat zabrzděné. Pružina brzdí vždy, elektromagnet brzdu odbrzdí jen tehdy, když teče proud. Porucha tedy vede k bezpečnému stavu."
+    },
+    {
+      "type": "input",
+      "question": "Třecí spojka má přenést 150 N·m. f = 0,3, r_s = 0,1 m, i = 2. Jaký přítlak F v N je potřeba?",
+      "answers": [
+        "2500",
+        "2 500"
+      ],
+      "explanation": "F = M / (f · r_s · i) = 150 / (0,3 · 0,1 · 2) = 150 / 0,06 = 2 500 N.",
+      "hints": [
+        "Vyjádři F ze vzorce M = f · F · r_s · i.",
+        "Vyděl moment součinem ostatních hodnot."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Přítlačná síla je 2 000 N a součinitel tření f = 0,35. Jaká je třecí síla v N?",
+      "answers": [
+        "700"
+      ],
+      "explanation": "Ft = f · F_N = 0,35 · 2 000 = 700 N."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se mezi elektromotor a čerpadlo dává pružná spojka?",
+      "options": [
+        "umožní rozpojení za chodu",
+        "vyrovná malou nesouosost hřídelů a tlumí rázy",
+        "přenáší moment jen jedním směrem",
+        "zvýší otáčky čerpadla"
+      ],
+      "answer": 1,
+      "explanation": "Pryžový člen vyrovná malé nepřesnosti v souososti a tlumí rázy."
+    },
+    {
+      "type": "choice",
+      "question": "Která spojka zajistí plynulý rozjezd přes kapalinu?",
+      "options": [
+        "pružná s pryží",
+        "volnoběžka",
+        "hydrodynamická (měnič)",
+        "přírubová"
+      ],
+      "answer": 2,
+      "explanation": "Hydrodynamická spojka přenáší moment olejem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když v autě sešlápneš spojkový pedál, motor se od kol odpojí.",
+      "answer": true,
+      "explanation": "Spojka se rozpojí, motor běží dál a můžeš přeřadit."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh brzdy s typickým použitím.",
+      "pairs": [
+        [
+          "kotoučová",
+          "auta a motocykly"
+        ],
+        [
+          "bubnová",
+          "přívěsy"
+        ],
+        [
+          "pásová",
+          "navijáky"
+        ],
+        [
+          "špalíková",
+          "vlaky"
+        ]
+      ]
     }
   ]
 }

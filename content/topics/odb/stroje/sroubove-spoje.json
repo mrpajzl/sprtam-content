@@ -500,6 +500,83 @@
       "type": "open",
       "question": "Proč a jak se pojišťují šroubové spoje?",
       "answer": "Otřesy a chvění mohou matici povolit. Pojišťuje se tvarově (korunová matice se závlačkou, pojistný plech), třením (kontramatice, samojistná matice) nebo materiálově (lepidlo na závity)."
+    },
+    {
+      "type": "input",
+      "question": "Vřeteno svěráku má závit Tr 20 × 4. O kolik mm se posune čelist za 5 otáček kličkou?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "Stoupání je 4 mm, takže 5 · 4 = 20 mm.",
+      "hints": [
+        "Druhé číslo v označení Tr je stoupání.",
+        "Vynásob stoupání počtem otáček."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které označení patří metrickému jemnému závitu?",
+      "options": [
+        "M12",
+        "M12 – LH",
+        "M12 × 1,25",
+        "Tr 12 × 3"
+      ],
+      "answer": 2,
+      "explanation": "U jemného závitu se stoupání píše za průměr: M12 × 1,25. U hrubého se stoupání nepíše."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh závitu s typickým použitím.",
+      "pairs": [
+        [
+          "metrický M",
+          "spojovací šrouby a matice"
+        ],
+        [
+          "trubkový G",
+          "trubky a armatury"
+        ],
+        [
+          "lichoběžníkový Tr",
+          "vřetena a pohybové šrouby"
+        ],
+        [
+          "oblý Rd",
+          "potravinářská potrubí"
+        ]
+      ],
+      "explanation": "Každý profil závitu se hodí na jinou práci."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je mez kluzu šroubu pevnostní třídy 4.6 v MPa?",
+      "answers": [
+        "240"
+      ],
+      "explanation": "Re = 4 · 6 · 10 = 240 MPa.",
+      "hints": [
+        "Vynásob obě čísla a pak deseti."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Šroub má výpočtový průřez 58 mm² a dovolené napětí je 200 MPa. Jakou největší osovou sílu v N smí nést?",
+      "answers": [
+        "11600",
+        "11 600"
+      ],
+      "explanation": "Z σ = F / S plyne F = σ · S = 200 · 58 = 11 600 N.",
+      "hints": [
+        "Vyjádři sílu ze vzorce σ = F / S.",
+        "1 MPa = 1 N/mm²."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jemný závit drží lépe proti samovolnému uvolnění než hrubý závit.",
+      "answer": true,
+      "explanation": "Jemný závit má menší stoupání, proto se při otřesech tolik nepovoluje."
     }
   ]
 }

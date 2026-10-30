@@ -417,6 +417,72 @@
       "type": "open",
       "question": "Jak se liší paralelní a sériové zapojení pružin?",
       "answer": "Vedle sebe se pružiny stlačí stejně a dělí se o sílu, tuhosti se sčítají a soustava je tužší. Za sebou nese každá celou sílu, stlačení se sčítají a soustava je měkčí: 1/k = 1/k₁ + 1/k₂."
+    },
+    {
+      "type": "input",
+      "question": "Pružina má tuhost 15 N/mm. O kolik mm se stlačí silou 90 N?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "y = F / k = 90 / 15 = 6 mm.",
+      "hints": [
+        "Stlačení = síla / tuhost."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Dvě stejné pružiny po 30 N/mm jsou za sebou a nesou 60 N. O kolik mm se stlačí dohromady?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Každá nese celých 60 N a stlačí se o 60 / 30 = 2 mm. Dohromady 4 mm (výsledná tuhost 15 N/mm).",
+      "hints": [
+        "Za sebou nese každá pružina celou sílu.",
+        "Stlačení obou pružin sečti."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která pružina snese velkou sílu při malém stlačení a skládá se do sloupců?",
+      "options": [
+        "šroubovitá tažná",
+        "zkrutná",
+        "listová",
+        "talířová"
+      ],
+      "answer": 3,
+      "explanation": "Talířová pružina je kuželový talířek z plechu, používá se třeba ve spojkách."
+    },
+    {
+      "type": "choice",
+      "question": "Z jakého materiálu se pružiny obvykle vyrábějí?",
+      "options": [
+        "šedá litina",
+        "pružinová ocel",
+        "čistý hliník",
+        "konstrukční ocel bez tepelného zpracování"
+      ],
+      "answer": 1,
+      "explanation": "Pružinová ocel po kalení a popouštění snese velké pružné deformace."
+    },
+    {
+      "type": "input",
+      "question": "Pružina s tuhostí 40 N/mm je stlačená o 5 mm. Kolik joulů je v ní uloženo?",
+      "answers": [
+        "0,5",
+        "0.5"
+      ],
+      "explanation": "F = 40 · 5 = 200 N, y = 0,005 m. W = ½ · 200 · 0,005 = 0,5 J.",
+      "hints": [
+        "Nejdřív spočítej sílu F = k · y.",
+        "Stlačení převeď na metry."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvrdá pružina má malou tuhost.",
+      "answer": false,
+      "explanation": "Tvrdá pružina potřebuje velkou sílu na stlačení o 1 mm, má tedy velkou tuhost."
     }
   ]
 }

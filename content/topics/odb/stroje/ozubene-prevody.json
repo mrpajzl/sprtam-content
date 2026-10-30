@@ -419,6 +419,70 @@
       "type": "open",
       "question": "Jak převod do pomala mění otáčky a moment a kde se používá?",
       "answer": "Snižuje otáčky v poměru i a zhruba ve stejném poměru zvyšuje krouticí moment (zmenšeno o ztráty, účinnost). Používá se tam, kde je potřeba velká síla otáčení: rozjezd auta, navijáky, míchačky, pohony dopravníků."
+    },
+    {
+      "type": "input",
+      "question": "Jaký je patní průměr kola s m = 2 mm a z = 30 (v mm)?",
+      "answers": [
+        "55"
+      ],
+      "explanation": "d = 2 · 30 = 60 mm. df = d − 2,5m = 60 − 5 = 55 mm.",
+      "hints": [
+        "Nejdřív spočítej roztečný průměr.",
+        "Odečti 2,5 · m."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hnací kolo se 60 zuby pohání pastorek s 20 zuby. O jaký převod jde?",
+      "options": [
+        "do pomala",
+        "do rychla",
+        "i = 1",
+        "nedá se určit"
+      ],
+      "answer": 1,
+      "explanation": "i = z₂ / z₁ = 20 / 60 = 1/3 < 1. Pastorek se točí 3× rychleji."
+    },
+    {
+      "type": "input",
+      "question": "Motor dává 30 N·m, převod i = 4, účinnost 0,95. Jaký je moment na výstupu v N·m?",
+      "answers": [
+        "114"
+      ],
+      "explanation": "M₂ = M₁ · i · η = 30 · 4 · 0,95 = 114 N·m.",
+      "hints": [
+        "M₂ = M₁ · i · η"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která ozubená kola spojují různoběžné hřídele?",
+      "options": [
+        "čelní s přímými zuby",
+        "šnekové kolo se šnekem",
+        "kuželová",
+        "čelní se šikmými zuby"
+      ],
+      "answer": 2,
+      "explanation": "Kuželová kola spojují hřídele, které se protínají (různoběžné)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Šnekový převod může být samosvorný: kolo nedokáže roztočit šnek zpátky.",
+      "answer": true,
+      "explanation": "Proto drží například ladicí mechanika kytary struny napnuté."
+    },
+    {
+      "type": "input",
+      "question": "Kolo má roztečný průměr 120 mm a 40 zubů. Jaký je jeho modul v mm?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "d = m · z, takže m = d / z = 120 / 40 = 3 mm.",
+      "hints": [
+        "Vyjádři m ze vzorce d = m · z."
+      ]
     }
   ]
 }

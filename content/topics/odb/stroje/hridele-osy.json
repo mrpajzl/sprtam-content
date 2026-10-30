@@ -433,6 +433,71 @@
       "type": "open",
       "question": "Proč se hřídel často zlomí v osazení a jak tomu předejít?",
       "answer": "Ostrý roh v osazení je vrub, ve kterém se napětí soustředí, a tam začíná únavová trhlina. Předchází se tomu zaoblením přechodu, plynulejší změnou průměru a kvalitním povrchem."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje úzká drážka kolem hřídele, do které zapadne pojistný kroužek?",
+      "options": [
+        "osazení",
+        "čep",
+        "zápich",
+        "vrub"
+      ],
+      "answer": 2,
+      "explanation": "Zápich je úzká drážka kolem hřídele, například pro pojistný kroužek."
+    },
+    {
+      "type": "input",
+      "question": "Hřídel se otáčí 10 s⁻¹. Jaká je jeho úhlová rychlost v rad/s? (zaokrouhli na celé číslo)",
+      "answers": [
+        "63"
+      ],
+      "explanation": "ω = 2 · π · n = 2 · π · 10 ≈ 62,8 rad/s, zaokrouhleno 63.",
+      "hints": [
+        "ω = 2 · π · n"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký je průřezový modul v krutu Wk plného hřídele d = 20 mm v mm³? (zaokrouhli na celé číslo)",
+      "answers": [
+        "1571"
+      ],
+      "explanation": "Wk = π · d³ / 16 = π · 8 000 / 16 ≈ 1 571 mm³.",
+      "hints": [
+        "Wk = π · d³ / 16",
+        "20³ = 8 000"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč se u hřídele kontrolují kritické otáčky?",
+      "options": [
+        "aby se nezlomil krutem",
+        "aby se při provozních otáčkách nerozkmital (rezonance)",
+        "aby se nepřehřála ložiska",
+        "aby se nezkroutil o velký úhel"
+      ],
+      "answer": 1,
+      "explanation": "Při kritických otáčkách se hřídel rozkmitá rezonancí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Osa kola přívěsu přenáší krouticí moment.",
+      "answer": false,
+      "explanation": "Osa jen nese kolo, krouticí moment nepřenáší."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se upravují hodně namáhané hřídele z oceli 12 050?",
+      "options": [
+        "pozinkováním",
+        "žíháním na měkko",
+        "smaltováním",
+        "zušlechtěním (kalení a popouštění)"
+      ],
+      "answer": 3,
+      "explanation": "Zušlechtění zvýší pevnost a houževnatost hřídele."
     }
   ]
 }
