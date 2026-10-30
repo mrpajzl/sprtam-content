@@ -373,6 +373,87 @@
       "type": "open",
       "question": "Jakou domácí péči doporučíš klientce se zralou pletí?",
       "answer": "Jemné čištění, ráno hydratační krém a každý den SPF, večer výživný krém, případně retinol, pravidelný jemný peeling. Nekouřit a dostatečně spát."
+    },
+    {
+      "type": "choice",
+      "question": "Které vlákno ve škáře zajišťuje, že se kůže po natažení vrátí zpět?",
+      "options": [
+        "kolagen",
+        "keratin",
+        "elastin",
+        "melanin"
+      ],
+      "answer": 2,
+      "explanation": "Elastin jsou pružná vlákna. Kolagen dává kůži pevnost."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kouření patří mezi vnější příčiny stárnutí pleti.",
+      "answer": true,
+      "explanation": "Vnější stárnutí způsobují prostředí a návyky: UV záření, kouření, málo spánku, stres."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má vrásky kolem očí jen při úsměvu, v klidu ne. Jaké to jsou vrásky?",
+      "options": [
+        "statické",
+        "mimické v počátku",
+        "vrásky z dehydratace",
+        "jizvy"
+      ],
+      "answer": 1,
+      "explanation": "Vrásky viditelné jen při pohybu svalů jsou mimické. Statické jsou vidět i v klidu."
+    },
+    {
+      "type": "choice",
+      "question": "Který peeling se hodí pro zralou pleť?",
+      "options": [
+        "hrubý mechanický se zrníčky",
+        "žádný, zralá pleť peeling nesnese",
+        "hluboký chemický peeling v salonu",
+        "jemný enzymatický nebo mírný chemický"
+      ],
+      "answer": 3,
+      "explanation": "Zralá pleť je tenčí a sušší, proto jemný peeling, ne hrubá zrníčka."
+    },
+    {
+      "type": "match",
+      "question": "Spoj látku s jejím účinkem.",
+      "pairs": [
+        [
+          "kyselina hyaluronová",
+          "váže vodu"
+        ],
+        [
+          "vitamin C",
+          "antioxidant"
+        ],
+        [
+          "retinol",
+          "urychluje obnovu pleti"
+        ],
+        [
+          "SPF",
+          "ochrana před UVB"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "UV záření nepůsobí v zimě ani přes mraky, proto stačí SPF v létě.",
+      "answer": false,
+      "explanation": "UV záření (hlavně UVA) působí celý rok i přes mraky. SPF se na zralou pleť hodí každý den."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jedním slovem jmenuje předčasné stárnutí kůže způsobené UV zářením?",
+      "answers": [
+        "fotostárnutí",
+        "fotostarnuti"
+      ],
+      "hints": [
+        "Slovo začíná řeckým základem pro světlo."
+      ]
     }
   ]
 }

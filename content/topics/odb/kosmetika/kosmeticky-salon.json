@@ -428,6 +428,83 @@
       "type": "open",
       "question": "Popiš, jak připravíš pracoviště před příchodem klientky.",
       "answer": "Umyji a vydezinfikuji si ruce, lehátko zakryji čistou podložkou, připravím sterilní nebo vydezinfikované nástroje, jednorázové pomůcky a čisté ručníky. Přípravky budu nabírat špachtlí."
+    },
+    {
+      "type": "choice",
+      "question": "Kosmetička chce sterilizovat nástroje horkým vzduchem při 160 °C. Jak dlouho musí sterilizace trvat?",
+      "options": [
+        "30 minut",
+        "60 minut",
+        "120 minut",
+        "15 minut"
+      ],
+      "answer": 2,
+      "explanation": "Podle tabulky: 160 °C → 120 minut, 170 °C → 60 minut, 180 °C → 30 minut.",
+      "hints": [
+        "Je to nejnižší teplota z tabulky, takže doba bude nejdelší."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Doba sterilizace se počítá od chvíle, kdy kosmetička sterilizátor zapne.",
+      "answer": false,
+      "explanation": "Čas se počítá až od chvíle, kdy celý náklad dosáhne nastavené teploty."
+    },
+    {
+      "type": "choice",
+      "question": "Které z těchto služeb patří mezi činnosti epidemiologicky závažné?",
+      "options": [
+        "prodej kosmetiky v drogerii",
+        "pedikúra a tetování",
+        "úklid kanceláře",
+        "rozvoz pizzy"
+      ],
+      "answer": 1,
+      "explanation": "Činnosti epidemiologicky závažné jsou služby, při kterých hrozí přenos nemocí z člověka na člověka: kosmetika, manikúra, pedikúra, kadeřnictví, tetování."
+    },
+    {
+      "type": "match",
+      "question": "Spoj předpis s tím, co upravuje.",
+      "pairs": [
+        [
+          "zákon č. 258/2000 Sb.",
+          "ochrana veřejného zdraví, provozní řád"
+        ],
+        [
+          "vyhláška č. 137/2004 Sb.",
+          "hygiena činností epidemiologicky závažných"
+        ],
+        [
+          "vyhláška č. 306/2012 Sb.",
+          "podmínky dezinfekce a sterilizace"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co platí pro použité ručníky a prádlo v salonu?",
+      "options": [
+        "ukládají se k čistému prádlu do skříně",
+        "stačí je vyvětrat a použít znovu",
+        "perou se při nízké teplotě, aby se nezničily",
+        "ukládají se odděleně od čistého a perou při vysoké teplotě"
+      ],
+      "answer": 3,
+      "explanation": "Použité prádlo se drží odděleně od čistého a pere se při vysoké teplotě. Čisté prádlo je v zavřené skříni."
+    },
+    {
+      "type": "truefalse",
+      "question": "Umyvadlo s teplou vodou na pracovišti slouží jen k mytí rukou.",
+      "answer": true,
+      "explanation": "Pracoviště má umyvadlo s teplou vodou určené jen na mytí rukou."
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou jmenuje úřad, který schvaluje provozní řád salonu?",
+      "answers": [
+        "KHS"
+      ],
+      "explanation": "Provozní řád schvaluje krajská hygienická stanice (KHS)."
     }
   ]
 }

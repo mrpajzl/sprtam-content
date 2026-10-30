@@ -382,6 +382,83 @@
       "type": "open",
       "question": "Jaké hygienické zásady dodržuješ při epilaci voskem?",
       "answer": "Na každé nabrání vosku beru čistou jednorázovou špachtli a nikdy ji nevracím do vosku. Roll-on hlavice jsou pro jednu klientku. Kůži před ošetřením očistím, používám rukavice a po klientce vše vydezinfikuji."
+    },
+    {
+      "type": "choice",
+      "question": "Jak dlouho obvykle vydrží hladká kůže po holení?",
+      "options": [
+        "1–3 dny",
+        "několik týdnů",
+        "půl roku",
+        "natrvalo"
+      ],
+      "answer": 0,
+      "explanation": "Holení je depilace: kořínek zůstává a chloupek doroste za 1–3 dny."
+    },
+    {
+      "type": "truefalse",
+      "question": "Epilace voskem je odborně epilace, i když se jí v běžné řeči říká „depilace voskem“.",
+      "answer": true,
+      "explanation": "Vosk vytrhne chloupek i s kořínkem, proto jde o epilaci."
+    },
+    {
+      "type": "choice",
+      "question": "Který vosk se nanáší silnější vrstvou, na kůži ztuhne a strhává se bez proužku?",
+      "options": [
+        "teplý (stripový) vosk",
+        "horký (filmový) vosk",
+        "cukrová pasta",
+        "depilační krém"
+      ],
+      "answer": 1,
+      "explanation": "Horký (filmový) vosk ztuhne a strhává se bez proužku. Hodí se na menší a citlivá místa."
+    },
+    {
+      "type": "choice",
+      "question": "Z čeho se vyrábí cukrová pasta?",
+      "options": [
+        "z cukru, včelího vosku a oleje",
+        "z cukru, mléka a mouky",
+        "z cukru, vody a citronové šťávy",
+        "z medu a jílu"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Kterým směrem se strhává proužek teplého vosku?",
+      "options": [
+        "proti směru růstu, těsně u kůže",
+        "po směru růstu",
+        "kolmo nahoru od kůže",
+        "pomalu a postupně"
+      ],
+      "answer": 0,
+      "explanation": "Teplý vosk se nanáší po směru růstu a strhává rychle proti směru růstu, těsně u kůže."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hned po epilaci může klientka jít do sauny nebo na slunce.",
+      "answer": false,
+      "explanation": "Prvních 24 hodin bez sauny, slunce a parfémovaných přípravků."
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu s tím, jak dlouho vydrží.",
+      "pairs": [
+        [
+          "holení",
+          "1–3 dny"
+        ],
+        [
+          "vosk",
+          "několik týdnů"
+        ],
+        [
+          "laser",
+          "dlouhodobě, opakovaně"
+        ]
+      ]
     }
   ]
 }

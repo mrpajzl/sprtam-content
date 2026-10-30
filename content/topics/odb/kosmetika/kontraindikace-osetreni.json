@@ -397,6 +397,86 @@
       "type": "open",
       "question": "Na co se zeptáš klientky před ošetřením přístrojem s elektrickým proudem?",
       "answer": "Na kardiostimulátor, kovové implantáty, těhotenství, epilepsii, nádorová onemocnění, akutní nemoc nebo horečku a na stav kůže v ošetřované oblasti."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka chce barvit řasy, ale má zarudlé, slzící a lepkavé oko. Co uděláš?",
+      "options": [
+        "obarvím jen jedno oko",
+        "barvení odložím a doporučím lékaře",
+        "řasy obarvím šetrnější barvou",
+        "oko vypláchnu tonikem a obarvím"
+      ],
+      "answer": 1,
+      "explanation": "Zánět spojivek je nakažlivý a při ošetření očí je absolutní kontraindikací."
+    },
+    {
+      "type": "truefalse",
+      "question": "Těhotenství je relativní kontraindikace: vynechají se přístroje s elektrickým proudem a některé účinné látky.",
+      "answer": true,
+      "explanation": "Těhotná klientka může mít ošetření, ale upravené bez elektroterapie a některých látek."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je u klientky s cukrovkou potřeba pracovat opatrně?",
+      "options": [
+        "protože kůže hůř snáší chlad",
+        "protože cukrovka je nakažlivá",
+        "protože se kůže hůř hojí",
+        "protože nesmí mít žádný krém"
+      ],
+      "answer": 2,
+      "explanation": "Cukrovka je relativní kontraindikace kvůli horšímu hojení."
+    },
+    {
+      "type": "match",
+      "question": "Spoj kožní onemocnění s tím, jak vypadá.",
+      "pairs": [
+        [
+          "opar",
+          "skupinka puchýřků na rtu"
+        ],
+        [
+          "impetigo",
+          "medově žluté krusty"
+        ],
+        [
+          "plíseň",
+          "červená svědivá šupinatá ložiska"
+        ],
+        [
+          "bradavice",
+          "tvrdé drobné výrůstky"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Klientka chce depilaci nohou voskem a na lýtku má výrazné křečové žíly. Co uděláš?",
+      "options": [
+        "depilaci odmítnu úplně",
+        "vosk dám i na žíly, jen chladnější",
+        "pošlu ji domů pro potvrzení od lékaře",
+        "lýtko se žilami vynechám, zbytek ošetřím"
+      ],
+      "answer": 3,
+      "explanation": "Křečové žíly jsou místní kontraindikace. Vynechá se jen postižené místo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kovový implantát v ošetřované oblasti nevadí při ošetření přístrojem s elektrickým proudem.",
+      "answer": false,
+      "explanation": "Kovové implantáty v ošetřované oblasti jsou kontraindikací elektroterapie."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jedním slovem jmenuje ošetření s elektrickým proudem (například galvanizace)?",
+      "answers": [
+        "elektroterapie"
+      ],
+      "hints": [
+        "Slovo začíná na „elektro“."
+      ]
     }
   ]
 }

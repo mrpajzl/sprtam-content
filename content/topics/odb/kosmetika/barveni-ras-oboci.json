@@ -363,6 +363,75 @@
       "type": "open",
       "question": "Jak postupuješ, když klientce při barvení vnikne barva do oka?",
       "answer": "Okamžitě vyplachuji oko velkým množstvím čisté vlažné vody a netřu ho. Když potíže nepřestanou, posílám klientku k lékaři. Událost zapíšu do karty."
+    },
+    {
+      "type": "choice",
+      "question": "Kam se nanáší ochranný krém nebo vazelína při barvení řas?",
+      "options": [
+        "na řasy, aby se lépe barvily",
+        "na okraj kůže pod okem, ne na řasy",
+        "na víčko pod barvu",
+        "do vnitřního koutku oka"
+      ],
+      "answer": 1,
+      "explanation": "Ochranný krém patří na kůži pod okem, aby se neobarvila. Na řasách by bránil barvení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Barvu s aktivátorem je nejlepší namíchat do zásoby ráno pro všechny klientky.",
+      "answer": false,
+      "explanation": "Barva se míchá s aktivátorem těsně před použitím."
+    },
+    {
+      "type": "choice",
+      "question": "Kam se nanáší barva při alergickém testu?",
+      "options": [
+        "přímo na řasy",
+        "na rty",
+        "za ucho nebo na vnitřní stranu lokte",
+        "na čelo"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Jakým směrem se nanáší barva na horní řasy?",
+      "options": [
+        "od kořínků ke špičkám",
+        "od špiček ke kořínkům",
+        "jen na špičky",
+        "krouživě po víčku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Alergie na barvu se může objevit i u klientky, která ji dřív snášela.",
+      "answer": true,
+      "explanation": "Proto se test opakuje podle výrobce, při změně barvy a při nových potížích."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto klientek může mít obarvené řasy?",
+      "options": [
+        "klientka s ječným zrnem",
+        "klientka týden po operaci očí",
+        "klientka s pozitivním alergickým testem",
+        "klientka s negativním testem a zdravýma očima"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky barvení a úpravy obočí.",
+      "items": [
+        "odlíčení a odmaštění obočí",
+        "ochranný krém kolem obočí",
+        "nanesení barvy po směru chloupků",
+        "setření barvy",
+        "úprava tvaru pinzetou",
+        "dezinfekce a zklidnění"
+      ]
     }
   ]
 }

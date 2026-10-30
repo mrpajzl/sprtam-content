@@ -403,6 +403,88 @@
       "type": "open",
       "question": "Popiš postup diagnostiky pleti.",
       "answer": "Nejdřív rozhovor (anamnéza), pak odlíčení a očištění, prohlídka pod lupou s osvětlením a pohmat. Určím typ a stav pleti, zkontroluji kontraindikace a vše zapíšu do karty klientky."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má celou pleť lesklou, rozšířené póry a sklon ke komedonům. Jaký je to typ pleti?",
+      "options": [
+        "smíšená",
+        "mastná",
+        "normální",
+        "suchá"
+      ],
+      "answer": 1,
+      "explanation": "Lesk na celém obličeji, rozšířené póry a komedony ukazují na mastnou pleť. U smíšené se leskne jen T-zóna."
+    },
+    {
+      "type": "truefalse",
+      "question": "Typ pleti se může během pár dní výrazně změnit, třeba kvůli počasí.",
+      "answer": false,
+      "explanation": "Rychle se mění stav pleti. Typ je do velké míry vrozený a mění se jen pomalu (s věkem, hormony)."
+    },
+    {
+      "type": "choice",
+      "question": "Které projevy patří ke zralé pleti?",
+      "options": [
+        "ztráta pružnosti, vrásky, pigmentové skvrny",
+        "komedony a zanícené pupínky",
+        "lesk jen v T-zóně",
+        "rozšířené žilky po napaření"
+      ],
+      "answer": 0,
+      "explanation": "Zralá pleť ztrácí pružnost, má vrásky a pigmentové skvrny."
+    },
+    {
+      "type": "choice",
+      "question": "Kosmetička přitiskne na čelo, nos a tváře papírek. Co tím zjišťuje?",
+      "options": [
+        "jestli má klientka alergii",
+        "pružnost pleti",
+        "kolik pleť tvoří mazu",
+        "jestli má pleť dost vody"
+      ],
+      "answer": 2,
+      "explanation": "Test papírkem ukazuje, kde se tvoří maz. Mastný otisk = hodně mazu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj stav pleti s typickým projevem.",
+      "pairs": [
+        [
+          "citlivá",
+          "pálí, svědí, snadno zčervená"
+        ],
+        [
+          "dehydratovaná",
+          "chybí voda, pne"
+        ],
+        [
+          "kuperózní",
+          "rozšířené žilky"
+        ],
+        [
+          "aknózní",
+          "komedony a záněty"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na konci diagnostiky kosmetička zkontroluje, jestli ošetření něco nebrání (kontraindikace).",
+      "answer": true,
+      "explanation": "Postup diagnostiky končí určením typu a stavu, zápisem do karty a kontrolou kontraindikací."
+    },
+    {
+      "type": "choice",
+      "question": "Klientka má kuperózní a citlivou pleť. Co při ošetření vynecháš?",
+      "options": [
+        "šetrné odlíčení",
+        "zklidňující masku",
+        "zápis do karty klientky",
+        "dlouhé napařování"
+      ],
+      "answer": 3,
+      "explanation": "Kuperózní pleť je citlivá na teplo. Vynechává se silné teplo, intenzivní masáž tváří a dráždivé přípravky."
     }
   ]
 }
