@@ -462,6 +462,59 @@
       "type": "open",
       "question": "Vyber francouzsky mezi dvěma věcmi v obchodě a zdůvodni to (použij *celui/celle*).",
       "answer": "Například: *Je préfère ce sac-ci, parce que celui-là est trop cher. Et je prends les chaussures noires, celles qui sont en solde.*"
+    },
+    {
+      "type": "choice",
+      "question": "Tu aimes ces gants ? Non, je préfère ___ de Marc.",
+      "options": [
+        "celles",
+        "celui",
+        "ceux"
+      ],
+      "answer": 2,
+      "explanation": "*les gants* = m. r., mn. č. → *ceux*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Les photos de Paris sont belles, mais ___ de Rome sont plus belles.",
+      "answers": [
+        "celles"
+      ],
+      "explanation": "*les photos* = ž. r., mn. č. → *celles*."
+    },
+    {
+      "type": "choice",
+      "question": "Tu vois ces filles ? ___ qui porte un chapeau est ma sœur.",
+      "options": [
+        "Celles",
+        "Celle",
+        "Celui"
+      ],
+      "answer": 1,
+      "explanation": "Mluví se o jedné dívce (*porte* je j. č.) → *celle*."
+    },
+    {
+      "type": "choice",
+      "question": "Ce sac ? C’est celui ___ tu m’as offert.",
+      "options": [
+        "qui",
+        "que",
+        "où"
+      ],
+      "answer": 1,
+      "explanation": "Za vztažným zájmenem stojí nový podmět *tu* → *que*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zájmena *ceci, cela, ça* mají stejně jako *celui* různé tvary podle rodu a čísla.",
+      "answer": false,
+      "explanation": "*ceci, cela, ça* jsou bez rodu – zastupují věc bez jména nebo celou myšlenku."
+    },
+    {
+      "type": "truefalse",
+      "question": "„La maison de mon oncle est plus grande que celle de mon père.“ je správně.",
+      "answer": true,
+      "explanation": "*la maison* → *celle*, za ním *de* + jméno."
     }
   ]
 }
