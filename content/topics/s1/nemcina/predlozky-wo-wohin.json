@@ -566,6 +566,79 @@
       "type": "open",
       "question": "Popiš německy dvěma větami, kde leží tvůj mobil a kam ho teď položíš.",
       "answer": "Například: Mein Handy liegt auf dem Tisch. Jetzt lege ich es in die Tasche. První věta je kde (3. pád), druhá kam (4. pád)."
+    },
+    {
+      "type": "choice",
+      "question": "Der Hund schläft unter ___ Tisch. (der Tisch)",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": 1,
+      "explanation": "Pes spí → kde? → 3. pád, mužský rod *der* → *dem*.",
+      "hints": [
+        "Přesouvá se pes někam, nebo je na místě?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Die Lampe steht zwischen ___ Betten. (die Betten – množné číslo)",
+      "options": [
+        "die",
+        "der",
+        "den"
+      ],
+      "answer": 2,
+      "explanation": "Lampa stojí → kde? → 3. pád množného čísla *den*. *Betten* už končí na *-n*, nic dalšího se nepřidává.",
+      "hints": [
+        "Jaký člen má množné číslo ve 3. pádě?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň stažený tvar (an + člen): Am Wochenende fahren wir ___ Meer. (das Meer)",
+      "answers": [
+        "ans"
+      ],
+      "explanation": "Jedeme k moři → kam? → 4. pád *an das* → *ans*.",
+      "hints": [
+        "Je to „kde?“, nebo „kam?“?",
+        "4. pád středního rodu je *das*."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Ich hänge die Lampe über den Tisch.“ (Pověsím lampu nad stůl.) je 4. pád správně.",
+      "answer": true,
+      "explanation": "*hängen* = pověsit někam → kam? → 4. pád: *über den Tisch*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj předložku s českým významem.",
+      "pairs": [
+        [
+          "hinter",
+          "za"
+        ],
+        [
+          "neben",
+          "vedle"
+        ],
+        [
+          "über",
+          "nad"
+        ],
+        [
+          "unter",
+          "pod"
+        ],
+        [
+          "zwischen",
+          "mezi"
+        ]
+      ],
+      "explanation": "Všech pět patří mezi předložky se 3. a 4. pádem."
     }
   ]
 }

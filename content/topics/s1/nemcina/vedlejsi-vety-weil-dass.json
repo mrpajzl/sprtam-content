@@ -489,6 +489,57 @@
       "type": "open",
       "question": "Odpověz německy celou větou s weil: Warum lernst du Deutsch?",
       "answer": "Například: Ich lerne Deutsch, weil ich in Deutschland arbeiten will. Nebo: …, weil ich die Sprache schön finde."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně? (Přijdu pozdě, protože jsem zmeškal autobus.)",
+      "options": [
+        "Ich komme zu spät, weil ich habe den Bus verpasst.",
+        "Ich komme zu spät, weil ich den Bus habe verpasst.",
+        "Ich komme zu spät, weil ich den Bus verpasst habe."
+      ],
+      "answer": 2,
+      "explanation": "Časované sloveso *habe* jde úplně na konec, až za příčestí *verpasst*.",
+      "hints": [
+        "Které sloveso je časované: *habe*, nebo *verpasst*?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň sloveso na konec: Sie sagt, dass sie heute nicht ___. (kommen)",
+      "answers": [
+        "kommt"
+      ],
+      "explanation": "*sie* (ona) → *kommt*, po *dass* na konci věty."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď vedlejší větu: „…, protože zítra musím pracovat.“",
+      "items": [
+        "weil",
+        "ich",
+        "morgen",
+        "arbeiten",
+        "muss"
+      ],
+      "explanation": "Časované *muss* jde až za infinitiv *arbeiten*, úplně na konec."
+    },
+    {
+      "type": "truefalse",
+      "question": "Před spojkou weil nebo dass uprostřed souvětí píšeme v němčině čárku.",
+      "answer": true,
+      "explanation": "Vedlejší věta se vždy odděluje čárkou: *Ich weiß, dass …*"
+    },
+    {
+      "type": "choice",
+      "question": "Spoj věty spojkou denn: Ich gehe ins Bett. Ich bin müde.",
+      "options": [
+        "Ich gehe ins Bett, denn ich müde bin.",
+        "Ich gehe ins Bett, denn ich bin müde.",
+        "Ich gehe ins Bett, denn bin ich müde."
+      ],
+      "answer": 1,
+      "explanation": "*denn* pořadí slov nemění: podmět *ich*, pak sloveso *bin*."
     }
   ]
 }

@@ -545,6 +545,72 @@
       "type": "open",
       "question": "Řekni německy třemi větami, jaký byl tvůj víkend (war, hatte, musste/wollte).",
       "answer": "Například: Mein Wochenende war schön. Ich hatte viel Zeit. Ich wollte ins Kino gehen, aber ich musste lernen."
+    },
+    {
+      "type": "choice",
+      "question": "Lena ___ gestern ins Kino gehen. (chtěla)",
+      "options": [
+        "wollten",
+        "wollte",
+        "wolltet"
+      ],
+      "answer": 1,
+      "explanation": "*Lena* = ona → stejný tvar jako *ich*, bez koncovky: *wollte*.",
+      "hints": [
+        "Tvar pro er/sie/es je stejný jako pro ich."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš préteritum: du / können → du ___",
+      "answers": [
+        "konntest"
+      ],
+      "explanation": "*können* → bez přehlásky *konn-* + *-te* + koncovka *-st*: *konntest*.",
+      "hints": [
+        "Nejdřív odstraň přehlásku.",
+        "Pro *du* přidej na konec *-st*."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Převeď do préterita: Wir müssen lange warten.",
+      "options": [
+        "Wir müssten lange warten.",
+        "Wir mussten lange warten.",
+        "Wir musstet lange warten."
+      ],
+      "answer": 1,
+      "explanation": "Bez přehlásky + *-ten* pro *wir*: *mussten*. *müssten* = museli bychom, *musstet* je tvar pro *ihr*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Préteritum slovesa „dürfen“ pro ich je „dürfte“.",
+      "answer": false,
+      "explanation": "V préteritu přehláska mizí: *ich durfte* (směl jsem). *dürfte* je podmiňovací tvar."
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu s préteritem slovesa sein.",
+      "pairs": [
+        [
+          "ich",
+          "war"
+        ],
+        [
+          "du",
+          "warst"
+        ],
+        [
+          "wir",
+          "waren"
+        ],
+        [
+          "ihr",
+          "wart"
+        ]
+      ],
+      "explanation": "*ich war, du warst, er war, wir waren, ihr wart, sie waren*."
     }
   ]
 }

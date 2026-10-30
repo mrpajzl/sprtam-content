@@ -537,6 +537,71 @@
       "type": "open",
       "question": "Popiš německy třemi větami svoje ráno (se zvratnými slovesy).",
       "answer": "Například: Ich wasche mich. Dann ziehe ich mich an. Ich putze mir die Zähne und beeile mich."
+    },
+    {
+      "type": "choice",
+      "question": "Er kämmt ___ die Haare.",
+      "options": [
+        "dir",
+        "sich",
+        "ihm"
+      ],
+      "answer": 1,
+      "explanation": "Ve 3. osobě je vždy *sich*, i když jde o „něco na sobě“ (vlasy).",
+      "hints": [
+        "*mir* a *dir* existují jen pro *ich* a *du*."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Du wäschst ___ die Hände.",
+      "answers": [
+        "dir"
+      ],
+      "explanation": "Něco na sobě (ruce) a osoba *du* → *dir*.",
+      "hints": [
+        "Myješ celého sebe, nebo jen část těla?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "„Morgen ich ziehe mich schön an.“ má správný slovosled.",
+      "answer": false,
+      "explanation": "Sloveso musí být na 2. místě, podmět jde za něj: *Morgen ziehe ich mich schön an.*"
+    },
+    {
+      "type": "choice",
+      "question": "Jak přeložíš „Těšíš se na víkend?“ (das Wochenende)",
+      "options": [
+        "Freust du sich auf das Wochenende?",
+        "Freust du dich auf dem Wochenende?",
+        "Freust du dich auf das Wochenende?"
+      ],
+      "answer": 2,
+      "explanation": "*du* → *dich*; *sich freuen auf* + 4. pád → *das Wochenende*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zvratné sloveso s českým významem.",
+      "pairs": [
+        [
+          "sich anziehen",
+          "obléknout se"
+        ],
+        [
+          "sich beeilen",
+          "pospíšit si"
+        ],
+        [
+          "sich interessieren für",
+          "zajímat se o"
+        ],
+        [
+          "sich treffen",
+          "sejít se"
+        ]
+      ],
+      "explanation": "Zvratná slovesa se uč i se zájmenem *sich*."
     }
   ]
 }
