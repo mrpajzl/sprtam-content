@@ -455,6 +455,65 @@
       "type": "open",
       "question": "Jak se zapisují do kusovníku normalizované a vyráběné součásti?",
       "answer": "Vyráběná součást má název, počet kusů, číslo svého výrobního výkresu, materiál a polotovar. Normalizovaná součást se nekreslí; v kusovníku má normu a úplné označení, např. Šroub ISO 4017 – M8 × 25 – 8.8, a počet kusů."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí odkazová čára k pozici?",
+      "options": [
+        "plnou tlustou",
+        "plnou tenkou",
+        "čárkovanou",
+        "čerchovanou tenkou"
+      ],
+      "answer": 1,
+      "explanation": "Odkazová čára je tenká plná, uvnitř součásti končí tečkou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kusovník na samostatném listu A4 má záhlaví nahoře a pozice jdou shora dolů.",
+      "answer": true,
+      "explanation": "Zdola nahoru se píše jen kusovník nad popisovým polem."
+    },
+    {
+      "type": "choice",
+      "question": "Co je materiál C45?",
+      "options": [
+        "šedá litina",
+        "konstrukční ocel",
+        "ocel k zušlechťování",
+        "slitina hliníku"
+      ],
+      "answer": 2,
+      "explanation": "S235JR je konstrukční ocel, EN-GJL-250 šedá litina."
+    },
+    {
+      "type": "input",
+      "question": "Sestava má 3 víka a každé je přišroubované 6 stejnými šrouby. Kolik kusů šroubů zapíšeš do kusovníku?",
+      "answers": [
+        "18"
+      ],
+      "explanation": "3 · 6 = 18 ks pod jednou pozicí.",
+      "hints": [
+        "Stejné šrouby mají jednu pozici a celkový počet kusů."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Čísla pozic se píšou menším písmem než kóty.",
+      "answer": false,
+      "explanation": "Čísla pozic jsou větší než kóty, obvykle 5 nebo 7 mm."
+    },
+    {
+      "type": "choice",
+      "question": "Která součást sestavy nemá vlastní výrobní výkres?",
+      "options": [
+        "hřídel",
+        "víko",
+        "těleso",
+        "matice ISO 4032 – M10 – 8"
+      ],
+      "answer": 3,
+      "explanation": "Matice je normalizovaná a nakupuje se; v kusovníku má normu a označení."
     }
   ]
 }

@@ -433,6 +433,72 @@
       "type": "open",
       "question": "Přečti rámeček | ∥ | 0,02 | A | u horní plochy, když A je spodní plocha.",
       "answer": "Rovnoběžnost: horní plocha musí ležet mezi dvěma rovinami vzdálenými 0,02 mm, které jsou rovnoběžné se základnou A (spodní plochou)."
+    },
+    {
+      "type": "choice",
+      "question": "Co je ve druhém políčku tolerančního rámečku?",
+      "options": [
+        "značka vlastnosti",
+        "hodnota tolerance v mm",
+        "písmeno základny",
+        "měřítko"
+      ],
+      "answer": 1,
+      "explanation": "Rámeček se čte zleva: značka | hodnota | základny."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kóta ⌀30 h6 sama zaručí i to, že je čep rovný.",
+      "answer": false,
+      "explanation": "Podle principu nezávislosti se rozměrová a geometrická tolerance kontrolují každá zvlášť. Na rovnost osy je potřeba přímost."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto tolerancí nepotřebuje základnu?",
+      "options": [
+        "kolmost",
+        "kruhové házení",
+        "válcovitost",
+        "rovnoběžnost"
+      ],
+      "answer": 2,
+      "explanation": "Válcovitost je tolerance tvaru – týká se jen prvku samotného."
+    },
+    {
+      "type": "input",
+      "question": "Na čele kola je rámeček | ↗ | 0,03 | A |. Jaký největší rozkmit (v mm) smí ukázat úchylkoměr při otočení kola kolem osy A?",
+      "answers": [
+        "0,03",
+        "0.03"
+      ],
+      "explanation": "Kruhové házení 0,03 mm: rozkmit úchylkoměru nesmí být v žádném měřeném místě větší."
+    },
+    {
+      "type": "truefalse",
+      "question": "Házení se měří úchylkoměrem při otáčení součásti kolem osy základny.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj další značky s názvem vlastnosti.",
+      "pairs": [
+        [
+          "⏤",
+          "přímost"
+        ],
+        [
+          "⏥",
+          "rovinnost"
+        ],
+        [
+          "⌖",
+          "pozice"
+        ],
+        [
+          "↗",
+          "kruhové házení"
+        ]
+      ]
     }
   ]
 }

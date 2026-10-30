@@ -473,6 +473,70 @@
       "type": "open",
       "question": "Vyjmenuj alespoň pět údajů v popisovém poli a vysvětli, k čemu je číslo výkresu.",
       "answer": "Název součásti, číslo výkresu, vlastník, vypracoval, schválil, datum, měřítko, promítací metoda, materiál, číslo listu. Číslo výkresu výkres jednoznačně identifikuje – podle něj se hledá v archivu a odkazuje se na něj v kusovníku i objednávkách."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký rozměr má formát A2?",
+      "options": [
+        "297 × 420 mm",
+        "420 × 594 mm",
+        "594 × 841 mm",
+        "420 × 600 mm"
+      ],
+      "answer": 1,
+      "explanation": "A2 je dvojnásobek A3: kratší strana 2 · 210 = 420 mm se zdvojí na 594 mm. Delší strana A3 (420) je kratší strana A2."
+    },
+    {
+      "type": "input",
+      "question": "Kolik listů A3 získáš rozřezáním jednoho listu A1?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "A1 → 2 × A2 → 4 × A3.",
+      "hints": [
+        "Každé rozpůlení zdvojnásobí počet listů."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Formát A4 se obvykle kreslí na šířku.",
+      "answer": false,
+      "explanation": "A4 se kreslí na výšku, větší formáty na šířku."
+    },
+    {
+      "type": "input",
+      "question": "Jak široká (v mm) je kreslicí plocha uvnitř rámečku na listu A4 na výšku?",
+      "answers": [
+        "180"
+      ],
+      "explanation": "210 − 20 (levý okraj) − 10 (pravý okraj) = 180 mm.",
+      "hints": [
+        "List A4 na výšku je široký 210 mm.",
+        "Odečti levý a pravý okraj rámečku."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky přípravy výkresového listu.",
+      "items": [
+        "zvolit měřítko a formát",
+        "nakreslit rámeček",
+        "umístit popisové pole vpravo dole",
+        "vyplnit popisové pole",
+        "kreslit pohledy a kóty"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak široké smí být popisové pole nejvýš (podle ČSN EN ISO 7200)?",
+      "options": [
+        "120 mm",
+        "210 mm",
+        "180 mm",
+        "250 mm"
+      ],
+      "answer": 2,
+      "explanation": "Šířka popisového pole je nejvýš 180 mm, takže se vejde i na list A4 na výšku."
     }
   ]
 }

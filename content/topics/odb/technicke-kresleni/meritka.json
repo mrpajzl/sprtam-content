@@ -399,6 +399,78 @@
       "type": "open",
       "question": "Jak zvolíš měřítko pro velmi malou a pro velmi velkou součást?",
       "answer": "Malou součást kreslím zvětšeně (2 : 1, 5 : 1, 10 : 1), aby šly přehledně zakreslit a okótovat detaily. Velkou zmenšeně (1 : 2, 1 : 5, 1 : 10…), aby se vešla na zvolený formát i s kótami. Volím jen měřítka z normalizované řady."
+    },
+    {
+      "type": "input",
+      "question": "Drážka široká 2,5 mm je nakreslená v měřítku 2 : 1. Jak široká je na výkrese (mm)?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "2,5 × 2 = 5 mm. Kóta zůstane 2,5.",
+      "hints": [
+        "U zvětšení skutečnost vynásob."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na výkrese v měřítku 1 : 20 je čára dlouhá 35 mm. Kolik mm měří součást?",
+      "answers": [
+        "700"
+      ],
+      "explanation": "35 × 20 = 700 mm.",
+      "hints": [
+        "Skutečnost = výkres : měřítko.",
+        "Dělit 1/20 je totéž jako násobit 20."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hřídel dlouhá 1 500 mm se má vejít na délku 390 mm. Které nejmenší normalizované zmenšení zvolíš?",
+      "options": [
+        "1 : 2",
+        "1 : 3",
+        "1 : 5",
+        "1 : 10"
+      ],
+      "answer": 2,
+      "explanation": "1 : 2 dá 750 mm (nevejde se), 1 : 3 není normalizované, 1 : 5 dá 300 mm – vejde se. 1 : 10 by zmenšilo zbytečně moc.",
+      "hints": [
+        "Spočítej délku na výkrese pro každé měřítko.",
+        "Pozor, které měřítko v normalizované řadě není."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Má-li detail jiné měřítko než hlavní, napíše se jeho měřítko k označení detailu, např. Z (5 : 1).",
+      "answer": true,
+      "explanation": "Hlavní měřítko je v popisovém poli, odlišná měřítka se píšou k danému pohledu nebo detailu."
+    },
+    {
+      "type": "input",
+      "question": "Čtverec 40 × 40 mm je nakreslený v měřítku 1 : 2. Jakou plochu má na výkrese v mm²?",
+      "answers": [
+        "400"
+      ],
+      "explanation": "Strana na výkrese je 20 mm, plocha 20 · 20 = 400 mm² – čtvrtina skutečných 1 600 mm².",
+      "hints": [
+        "Nejdřív spočítej délku strany na výkrese.",
+        "Plocha čtverce = strana · strana."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na výkrese v měřítku 2 : 1 naměříš 24 mm. Jaký je skutečný rozměr?",
+      "options": [
+        "48 mm",
+        "12 mm",
+        "24 mm",
+        "22 mm"
+      ],
+      "answer": 1,
+      "explanation": "U zvětšení 2 : 1 je výkres dvakrát větší, skutečnost = 24 : 2 = 12 mm.",
+      "hints": [
+        "Je výkres v měřítku 2 : 1 větší, nebo menší než součást?"
+      ]
     }
   ]
 }

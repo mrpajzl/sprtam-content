@@ -421,6 +421,60 @@
       "type": "open",
       "question": "Vyjmenuj součásti, které se v podélném řezu nešrafují, a vysvětli proč.",
       "answer": "Šrouby, matice, podložky, kolíky, nýty, pera, hřídele, kuličky, žebra a ramena kol. Jsou plné, takže řez by neukázal nic nového a výkres by byl jen méně přehledný."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí obrys otočeného (vrstveného) průřezu?",
+      "options": [
+        "plnou tlustou",
+        "čárkovanou",
+        "plnou tenkou",
+        "čerchovanou tenkou"
+      ],
+      "answer": 2,
+      "explanation": "Otočený průřez je nakreslený přímo do pohledu, proto má obrys tenký. Vysunutý průřez má obrys tlustý."
+    },
+    {
+      "type": "choice",
+      "question": "Příruba má díry na roztečné kružnici. Jaký řez je ukáže v jednom obraze?",
+      "options": [
+        "částečný řez",
+        "řez různoběžnými rovinami",
+        "otočený průřez",
+        "řez rovnoběžnými rovinami"
+      ],
+      "answer": 1,
+      "explanation": "U řezu různoběžnými rovinami se jedna rovina natočí do obrazu, takže se ukážou díry na roztečné kružnici."
+    },
+    {
+      "type": "choice",
+      "question": "Díry leží v různých rovnoběžných rovinách a stopa řezu je lomená do schodu. Jak se ten řez jmenuje?",
+      "options": [
+        "řez rovnoběžnými rovinami",
+        "polořez",
+        "průřez",
+        "řez různoběžnými rovinami"
+      ],
+      "answer": 0,
+      "explanation": "Lomená stopa do schodu = řez rovnoběžnými rovinami; kreslí se jako jeden řez."
+    },
+    {
+      "type": "truefalse",
+      "question": "V polovině polořezu, která je v pohledu, se neviditelné hrany nekreslí.",
+      "answer": true,
+      "explanation": "Vnitřek už ukazuje polovina v řezu."
+    },
+    {
+      "type": "truefalse",
+      "question": "V řezu se stěny díry kreslí čárkovanou čarou.",
+      "answer": false,
+      "explanation": "V řezu je díra odkrytá, její stěny se kreslí plnou tlustou čarou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Žebro se v podélném řezu šrafuje stejně jako ostatní materiál.",
+      "answer": false,
+      "explanation": "Žebra a ramena kol se v podélném řezu nešrafují, kreslí se jako pohled."
     }
   ]
 }

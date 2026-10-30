@@ -498,6 +498,65 @@
       "type": "open",
       "question": "Co uděláš, když se na jednom místě kryje více čar?",
       "answer": "Nakreslím jen tu s nejvyšší předností: viditelná hrana, pak neviditelná hrana, stopa roviny řezu, osa, těžišťová čára a nakonec pomocná kótovací čára."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou čarou se kreslí roztečná kružnice děr?",
+      "options": [
+        "plnou tenkou",
+        "čárkovanou tenkou",
+        "čerchovanou tenkou",
+        "plnou tlustou"
+      ],
+      "answer": 2,
+      "explanation": "Roztečné kružnice se kreslí stejně jako osy – čerchovanou tenkou čarou."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená čerchovaná tlustá čára?",
+      "options": [
+        "osu díry",
+        "plochu se zvláštním požadavkem, např. kalení",
+        "neviditelnou hranu",
+        "sousední součást"
+      ],
+      "answer": 1,
+      "explanation": "Tlustou čerchovanou čarou se vyznačí plocha, kde se předepisuje zvláštní úprava, třeba kalení."
+    },
+    {
+      "type": "input",
+      "question": "Tlustá čára má 1 mm. Kolik mm má tenká čára?",
+      "answers": [
+        "0,5",
+        "0.5"
+      ],
+      "explanation": "Poměr tlustá : tenká je 2 : 1, tedy 1 : 2 = 0,5 mm.",
+      "hints": [
+        "Tenká čára je poloviční."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kótovací a pomocné kótovací čáry se kreslí plnou tenkou čarou.",
+      "answer": true,
+      "explanation": "Plná tenká slouží pro kóty, pomocné čáry, odkazové čáry a šrafování."
+    },
+    {
+      "type": "truefalse",
+      "question": "Šikmé technické písmo má sklon 60° k řádku.",
+      "answer": false,
+      "explanation": "Šikmé písmo podle ČSN EN ISO 3098 má sklon 75° k řádku."
+    },
+    {
+      "type": "input",
+      "question": "Která výška písma (v mm) následuje v normalizované řadě po 5 mm?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "Řada je 1,8 – 2,5 – 3,5 – 5 – 7 – 10 – 14 – 20 mm.",
+      "hints": [
+        "Každá další výška je zhruba √2krát (asi 1,4krát) větší."
+      ]
     }
   ]
 }

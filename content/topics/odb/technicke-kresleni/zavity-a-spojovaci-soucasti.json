@@ -469,6 +469,64 @@
       "type": "open",
       "question": "Co všechno obsahuje normalizované označení šroubu a proč se šrouby nekreslí na vlastní výkresy?",
       "answer": "Název, číslo normy, závit, délku dříku a pevnostní třídu, např. Šroub ISO 4017 – M10 × 40 – 8.8. Šrouby se nakupují hotové; norma je jednoznačně popisuje, takže stačí označení v kusovníku a vlastní výkres je zbytečný."
+    },
+    {
+      "type": "input",
+      "question": "Šroub třídy 10.9: jaká je jeho mez pevnosti Rm v MPa?",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "explanation": "První číslo × 100: 10 · 100 = 1 000 MPa.",
+      "hints": [
+        "Mez pevnosti určuje jen první číslo třídy."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Šroub M10 má stoupání 1,5 mm. O kolik mm se posune za 4 otáčky?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Za jednu otáčku se jednochodý šroub posune o stoupání: 4 · 1,5 = 6 mm.",
+      "hints": [
+        "O kolik se šroub posune za jednu otáčku?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "U závitové díry se malý průměr kreslí plnou tlustou čarou.",
+      "answer": true,
+      "explanation": "V díře jsou vrcholy závitu na malém průměru, a vrcholy se kreslí tlustě."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký úhel profilu má metrický závit?",
+      "options": [
+        "55°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Kde se typicky použije lichoběžníkový závit Tr?",
+      "options": [
+        "na vodovodní armatuře",
+        "na pohybovém šroubu svěráku",
+        "na šroubu víka převodovky",
+        "na brýlích"
+      ],
+      "answer": 1,
+      "explanation": "Lichoběžníkový závit slouží pro pohybové šrouby. Vodovodní armatury mají trubkový závit G."
+    },
+    {
+      "type": "truefalse",
+      "question": "Šroub M10 × 40 je i s hlavou dlouhý 40 mm.",
+      "answer": false,
+      "explanation": "40 mm je délka dříku bez hlavy."
     }
   ]
 }

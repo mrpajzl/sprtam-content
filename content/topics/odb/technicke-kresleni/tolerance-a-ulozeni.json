@@ -462,6 +462,68 @@
       "type": "open",
       "question": "Popiš tři druhy uložení a uveď příklad použití.",
       "answer": "S vůlí – díra je vždy větší, díly se pohybují (otočný čep, kluzné ložisko). Přechodné – může vzniknout malá vůle i přesah, díly se dají smontovat a zajišťují přesnou polohu (řemenice na hřídeli s perem). S přesahem – hřídel je větší, díly se nalisují a drží třením (pouzdro, věnec kola)."
+    },
+    {
+      "type": "input",
+      "question": "Kóta 50 +0,2/−0,1. Jaký je dolní mezní rozměr v mm?",
+      "answers": [
+        "49,9",
+        "49.9",
+        "49,90",
+        "49.90"
+      ],
+      "explanation": "50 + (−0,1) = 49,9 mm.",
+      "hints": [
+        "Dolní mezní rozměr = jmenovitý rozměr + dolní úchylka."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Díra ⌀25 +0,021/0, hřídel ⌀25 +0,015/+0,002. Jaký je největší přesah v mm?",
+      "answers": [
+        "0,015",
+        "0.015"
+      ],
+      "explanation": "Největší přesah = největší hřídel − nejmenší díra = 25,015 − 25,000 = 0,015 mm.",
+      "hints": [
+        "Přesah je největší, když je hřídel co největší a díra co nejmenší."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která toleranční třída patří hřídeli?",
+      "options": [
+        "H7",
+        "K7",
+        "h6",
+        "G7"
+      ],
+      "answer": 2,
+      "explanation": "Malé písmeno znamená hřídel, velké díru."
+    },
+    {
+      "type": "truefalse",
+      "question": "V tolerancích se šířka drážky pro pero považuje za díru.",
+      "answer": true,
+      "explanation": "Díra je každý vnitřní rozměr, i když není kruhový."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou toleranci má kóta, u které nejsou napsané žádné úchylky?",
+      "options": [
+        "žádnou, musí být přesná",
+        "obecnou toleranci uvedenou u popisového pole, např. ISO 2768-m",
+        "vždy ±1 mm",
+        "určí si ji výrobce sám"
+      ],
+      "answer": 1,
+      "explanation": "Pro netolerované rozměry platí obecné tolerance, nejčastěji podle ISO 2768-1."
+    },
+    {
+      "type": "truefalse",
+      "question": "U uložení s přesahem je hřídel vždy menší než díra.",
+      "answer": false,
+      "explanation": "U přesahu je hřídel vždy větší než díra, proto se díly lisují."
     }
   ]
 }

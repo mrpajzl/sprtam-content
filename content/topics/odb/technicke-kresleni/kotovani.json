@@ -471,6 +471,60 @@
       "type": "open",
       "question": "Porovnej řetězcové kótování a kótování od základny.",
       "answer": "Řetězcové: kóty navazují, je úsporné, ale nepřesnosti se sčítají. Od základny: všechny rozměry od jedné plochy, nepřesnosti se nesčítají, zabírá víc místa. V praxi se oba způsoby kombinují; funkční rozměry se kótují od základny."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se okótuje tloušťka plechu 2 mm?",
+      "options": [
+        "⌀2",
+        "t = 2",
+        "R2",
+        "2 × 45°"
+      ],
+      "answer": 1,
+      "explanation": "Tloušťka plechu se zapisuje „t =“, např. t = 2."
+    },
+    {
+      "type": "input",
+      "question": "Jak daleko od obrysu (v mm) bývá první kótovací čára?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "První kótovací čára bývá asi 10 mm od obrysu, další asi po 7 mm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Osa smí sloužit jako kótovací čára.",
+      "answer": false,
+      "explanation": "Osa ani obrys nesmí být kótovací čárou; smějí být jen pomocnou kótovací čárou."
+    },
+    {
+      "type": "choice",
+      "question": "Který způsob kótování se hodí pro desku s mnoha dírami vyráběnou na CNC stroji?",
+      "options": [
+        "řetězcové",
+        "smíšené",
+        "souřadnicové"
+      ],
+      "answer": 2,
+      "explanation": "Souřadnicové kótování udává polohy X, Y od jednoho počátku, s čímž CNC stroj přímo pracuje."
+    },
+    {
+      "type": "input",
+      "question": "Tři díry jsou okótované od levé hrany kótami 15, 40 a 70. Jak daleko od sebe (v mm) jsou druhá a třetí díra?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "70 − 40 = 30 mm.",
+      "hints": [
+        "Obě kóty se měří od stejné základny."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Menší kóty se kreslí blíž k obrysu, větší dál od něj.",
+      "answer": true,
+      "explanation": "Tak se kótovací a pomocné čáry nekříží."
     }
   ]
 }

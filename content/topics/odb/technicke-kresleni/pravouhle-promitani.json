@@ -402,6 +402,65 @@
       "type": "open",
       "question": "Jak zvolíš hlavní pohled a počet pohledů?",
       "answer": "Hlavní pohled ukazuje nejvíc charakteristického tvaru, součást je v pracovní nebo výrobní poloze a má co nejméně neviditelných hran. Dalších pohledů kreslím jen tolik, aby byl tvar jednoznačný; rotační součásti často stačí jeden pohled."
+    },
+    {
+      "type": "choice",
+      "question": "Kam se u metody E kreslí pohled zdola?",
+      "options": [
+        "pod nárys",
+        "nad nárys",
+        "vlevo od nárysu",
+        "vpravo od nárysu"
+      ],
+      "answer": 1,
+      "explanation": "U metody E je pohled zdola nad nárysem – obráceně než pohled shora."
+    },
+    {
+      "type": "truefalse",
+      "question": "U metody A (americké) se pohled shora kreslí nad nárys.",
+      "answer": true,
+      "explanation": "Metoda A: pohled shora nad nárys, zleva vlevo. Metoda E je obráceně."
+    },
+    {
+      "type": "input",
+      "question": "Kvádr 80 × 30 × 45 mm (délka × hloubka × výška). Jak dlouhou kratší stranu (v mm) má obdélník v půdorysu?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "Půdorys ukazuje délku × hloubku = 80 × 30, kratší strana je 30 mm.",
+      "hints": [
+        "Co vidíš, když se na kvádr díváš shora?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nárys a bokorys mají stejnou délku.",
+      "answer": false,
+      "explanation": "Nárys a bokorys mají stejnou výšku. Stejnou délku má nárys s půdorysem."
+    },
+    {
+      "type": "choice",
+      "question": "V nárysu je kružnice, v půdorysu obdélník z čárkovaných čar. Co to je?",
+      "options": [
+        "válcový výstupek",
+        "koule",
+        "díra procházející součástí zepředu dozadu",
+        "drážka na horní ploše"
+      ],
+      "answer": 2,
+      "explanation": "Čárkované čáry jsou neviditelné hrany – stěny díry schované v materiálu. Výstupek by byl v půdorysu nakreslený plnou čarou."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik pohledů obvykle stačí na plochý plech, u kterého je zapsaná tloušťka t = 3?",
+      "options": [
+        "jeden",
+        "dva",
+        "tři",
+        "šest"
+      ],
+      "answer": 0,
+      "explanation": "Tloušťka je zapsaná údajem t = 3, takže druhý pohled nic nového neřekne."
     }
   ]
 }

@@ -465,6 +465,65 @@
       "type": "open",
       "question": "Popiš tři základní značky struktury povrchu.",
       "answer": "Základní značka – způsob výroby není předepsán. Se zavřeným trojúhelníkem (čárkou) – povrch vznikne s úběrem materiálu, obráběním. S kroužkem – povrch bez úběru materiálu, např. odlitý nebo tvářený, případně ve stavu dodání. Nad značku se píše parametr, např. Ra 1,6."
+    },
+    {
+      "type": "input",
+      "question": "Kolik mm je Ra 1,6 µm? Napiš jako desetinné číslo.",
+      "answers": [
+        "0,0016",
+        "0.0016"
+      ],
+      "explanation": "1 µm = 0,001 mm, tedy 1,6 µm = 0,0016 mm.",
+      "hints": [
+        "1 µm je tisícina milimetru."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která hodnota následuje v řadě Ra po 3,2 µm?",
+      "options": [
+        "5",
+        "6,3",
+        "6,4",
+        "4,8"
+      ],
+      "answer": 1,
+      "explanation": "Řada: … 0,8 – 1,6 – 3,2 – 6,3 – 12,5 – 25 …"
+    },
+    {
+      "type": "truefalse",
+      "question": "Ra 3,2 znamená, že žádná rýha na povrchu není hlubší než 3,2 µm.",
+      "answer": false,
+      "explanation": "Ra je průměrná úchylka profilu; jednotlivé rýhy mohou být hlubší. Největší výšku profilu udává Rz."
+    },
+    {
+      "type": "choice",
+      "question": "Plocha má předepsáno Ra 0,4. Jakou operací ji nejspíš vyrobíš?",
+      "options": [
+        "soustružením na hrubo",
+        "řezáním pilou",
+        "broušením",
+        "frézováním na hrubo"
+      ],
+      "answer": 2,
+      "explanation": "Broušení dává obvykle Ra 0,2–1,6; hrubé obrábění ani řezání pilou tak hladký povrch nedají."
+    },
+    {
+      "type": "choice",
+      "question": "Odkud se hrot značky drsnosti dotýká plochy?",
+      "options": [
+        "zvenku materiálu",
+        "zevnitř materiálu",
+        "od popisového pole",
+        "od kótovací čáry"
+      ],
+      "answer": 0,
+      "explanation": "Značka stojí na obrysu nebo pomocné čáře a hrotem míří k ploše zvenku materiálu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Základní značka bez čárky a bez kroužku znamená, že způsob výroby není předepsaný.",
+      "answer": true
     }
   ]
 }
