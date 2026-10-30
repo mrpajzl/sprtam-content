@@ -451,6 +451,66 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi DRAM a SRAM?",
       "answer": "DRAM ukládá bit jako náboj v kondenzátoru, musí se obnovovat, je levná a hustá – používá se jako operační paměť. SRAM drží bit v klopném obvodu z tranzistorů, nepotřebuje obnovu, je rychlejší a dražší – používá se jako cache."
+    },
+    {
+      "type": "input",
+      "question": "Teoretická propustnost jednoho kanálu DDR5-5600 v GB/s =",
+      "answers": [
+        "44,8",
+        "44.8"
+      ],
+      "explanation": "5 600 MT/s · 8 B = 44 800 MB/s = 44,8 GB/s.",
+      "hints": [
+        "Číslo v názvu je počet MT/s.",
+        "Vynásob ho 8 bajty a převeď MB/s na GB/s."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Počítač s 8 GB RAM při mnoha otevřených programech zpomaluje a disk přitom pořád pracuje. Co pomůže nejvíc?",
+      "options": [
+        "vyměnit CMOS baterii",
+        "přidat operační paměť",
+        "koupit větší disk",
+        "vyměnit monitor"
+      ],
+      "answer": 1,
+      "explanation": "RAM je plná a systém odkládá data na mnohem pomalejší disk. Víc RAM odkládání omezí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Údaj „512 GB“ u běžného notebooku označuje velikost operační paměti RAM.",
+      "answer": false,
+      "explanation": "512 GB je úložiště (disk). Operační paměť mívá 8–32 GB."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto pamětí je nevolatilní?",
+      "options": [
+        "SRAM",
+        "DRAM",
+        "flash",
+        "cache"
+      ],
+      "answer": 2,
+      "explanation": "Flash udrží data i bez napájení (SSD, firmware). SRAM, DRAM i cache obsah po vypnutí ztratí."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky při výběru RAM do počítače.",
+      "items": [
+        "zjistit typ podporovaný deskou (DDR4/DDR5)",
+        "zjistit tvar modulu (DIMM/SO-DIMM)",
+        "zvolit kapacitu podle použití",
+        "koupit dva stejné moduly kvůli dvěma kanálům",
+        "ověřit maximální kapacitu a rychlost v manuálu desky"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V označení DDR4-3200 znamená číslo 3200 počet milionů přenosů za sekundu (MT/s).",
+      "answer": true,
+      "explanation": "DDR4-3200 zvládne 3 200 MT/s. Propustnost kanálu je pak 3 200 · 8 B = 25,6 GB/s."
     }
   ]
 }

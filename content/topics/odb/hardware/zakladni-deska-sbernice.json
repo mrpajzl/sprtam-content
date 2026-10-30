@@ -469,6 +469,66 @@
       "type": "open",
       "question": "Co zkontroluješ, když vybíráš základní desku k procesoru a skříni?",
       "answer": "Formát desky vůči skříni, patici a podporu procesoru, typ paměti DDR4/DDR5, sloty PCIe a M.2 (NVMe/SATA), porty SATA a napájecí konektory 24pin a 8pin EPS."
+    },
+    {
+      "type": "input",
+      "question": "PCIe 5.0 přenese asi 4 GB/s na linku a směr. Kolik GB/s přenese SSD se 4 linkami? Napiš číslo.",
+      "answers": [
+        "16"
+      ],
+      "explanation": "4 linky · 4 GB/s = 16 GB/s jedním směrem.",
+      "hints": [
+        "Rychlost = rychlost jedné linky × počet linek."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Máš skříň pro desky microATX. Která deska se do ní vejde?",
+      "options": [
+        "ATX",
+        "E-ATX",
+        "mini-ITX"
+      ],
+      "answer": 2,
+      "explanation": "Mini-ITX (170 × 170 mm) je menší a pasuje i do microATX skříně. ATX a E-ATX jsou větší."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená u SSD M.2 označení 2280?",
+      "options": [
+        "kapacita 2 280 GB",
+        "šířka 22 mm, délka 80 mm",
+        "šířka 80 mm, délka 22 mm",
+        "rychlost 2 280 MB/s"
+      ],
+      "answer": 1,
+      "explanation": "První dvě číslice jsou šířka v mm, další délka v mm."
+    },
+    {
+      "type": "truefalse",
+      "question": "U dnešních počítačů vedou hlavní linky PCIe pro grafickou kartu přímo z procesoru, ne přes chipset.",
+      "answer": true,
+      "explanation": "Procesor má vlastní linky pro grafiku a hlavní M.2. Přes chipset jdou méně náročná zařízení."
+    },
+    {
+      "type": "input",
+      "question": "Jaké označení má knoflíková baterie, která obvykle slouží jako CMOS baterie?",
+      "answers": [
+        "CR2032"
+      ],
+      "explanation": "CR2032 napájí hodiny reálného času na desce, když je počítač odpojený."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto sběrnic je paralelní?",
+      "options": [
+        "PCIe",
+        "SATA",
+        "USB",
+        "PATA"
+      ],
+      "answer": 3,
+      "explanation": "PATA posílala bity naráz po plochém 40žilovém kabelu. PCIe, SATA i USB jsou sériové."
     }
   ]
 }

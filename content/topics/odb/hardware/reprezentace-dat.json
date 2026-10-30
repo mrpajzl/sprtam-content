@@ -504,6 +504,75 @@
       "type": "open",
       "question": "Vysvětli, jak se zvuk ukládá do počítače a na čem závisí velikost nahrávky.",
       "answer": "Zvuková vlna se mnohokrát za sekundu změří (vzorkuje) a každý vzorek se uloží jako číslo s danou bitovou hloubkou. Velikost je vzorkovací frekvence · bitová hloubka · počet kanálů · délka; kompresí se dá zmenšit."
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů zabere slovo „čeština“ v kódování UTF-8?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "„č“ a „š“ mají po 2 B, ostatních pět písmen z ASCII po 1 B: 2 + 2 + 5 = 9 B.",
+      "hints": [
+        "Která písmena nejsou v ASCII?",
+        "Česká písmena s diakritikou mají v UTF-8 2 bajty."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké číslo má malé písmeno „a“ v tabulce ASCII (desítkově)?",
+      "options": [
+        "65",
+        "32",
+        "97",
+        "48"
+      ],
+      "answer": 2,
+      "explanation": "Malé „a“ = 97. Velké „A“ = 65, mezera = 32, číslice „0“ = 48."
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů zabere nekomprimovaný obrázek 640 × 480 pixelů s 256 odstíny šedi?",
+      "answers": [
+        "307200",
+        "307 200"
+      ],
+      "explanation": "256 odstínů = 8 bitů = 1 B na pixel. 640 · 480 = 307 200 pixelů, tedy 307 200 B.",
+      "hints": [
+        "Kolik bitů potřebuješ na 256 odstínů?",
+        "Spočítej pixely: šířka · výška."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik bajtů zabere 20 s nekomprimovaného zvuku: mono, 16 kHz, 8 bitů?",
+      "answers": [
+        "320000",
+        "320 000"
+      ],
+      "explanation": "16 000 · 8 · 1 · 20 = 2 560 000 bitů. Děleno 8 = 320 000 B.",
+      "hints": [
+        "Vynásob frekvenci, bitovou hloubku, počet kanálů a čas.",
+        "Výsledek v bitech vyděl osmi."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Zapiš −3 jako 8bitové číslo ve dvojkovém doplňku.",
+      "answers": [
+        "11111101",
+        "1111 1101"
+      ],
+      "explanation": "+3 = 0000 0011. Obrácené bity 1111 1100, po přičtení 1 vyjde 1111 1101.",
+      "hints": [
+        "Začni zápisem +3 v osmi bitech.",
+        "Obrať všechny bity a přičti 1."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Barva zapsaná šestnáctkově #0000FF je čistá červená.",
+      "answer": false,
+      "explanation": "Pořadí složek je R, G, B. #0000FF má R = 0, G = 0, B = 255, je to tedy čistá modrá. Červená je #FF0000."
     }
   ]
 }

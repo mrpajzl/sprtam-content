@@ -541,6 +541,75 @@
       "type": "open",
       "question": "Podle čeho vybereš monitor pro hraní a podle čeho pro grafika?",
       "answer": "Pro hraní je důležitá vysoká obnovovací frekvence (144 Hz a víc) a rychlá odezva, vhodné jsou rychlé IPS, TN nebo OLED. Grafik potřebuje věrné barvy a široké pozorovací úhly, tedy IPS nebo OLED s vyšším rozlišením."
+    },
+    {
+      "type": "input",
+      "question": "Film 6 GB kopíruješ přes USB 3.2 Gen 1 (5 Gb/s). Kolik sekund trvá přenos teoreticky? Napiš číslo.",
+      "answers": [
+        "9,6",
+        "9.6"
+      ],
+      "explanation": "6 GB · 8 = 48 Gb. 48 : 5 = 9,6 s. Ve skutečnosti to trvá déle.",
+      "hints": [
+        "Převeď velikost souboru na gigabity.",
+        "Vyděl rychlostí rozhraní."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Externí SSD čte až 900 MB/s. Které nejpomalejší USB ho teoreticky nebrzdí?",
+      "options": [
+        "USB 2.0",
+        "USB 3.2 Gen 1",
+        "USB 3.2 Gen 2"
+      ],
+      "answer": 2,
+      "explanation": "USB 3.2 Gen 1: 5 Gb/s : 8 = 625 MB/s, to nestačí. USB 3.2 Gen 2: 10 Gb/s : 8 = 1 250 MB/s, to stačí.",
+      "hints": [
+        "Převeď rychlosti USB z Gb/s na MB/s (děl 8)."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou rychlost mají Thunderbolt 3 a 4?",
+      "options": [
+        "5 Gb/s",
+        "10 Gb/s",
+        "40 Gb/s",
+        "480 Mb/s"
+      ],
+      "answer": 2,
+      "explanation": "Thunderbolt 3 a 4 mají 40 Gb/s a jedním kabelem USB-C přenesou data, obraz i napájení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bluetooth sluchátka se musí s počítačem nejdřív spárovat, než je můžeš používat.",
+      "answer": true,
+      "explanation": "Párováním se zařízení navzájem poznají. Pak se už připojují sama."
+    },
+    {
+      "type": "truefalse",
+      "question": "Inkoustová tiskárna nanáší práškový toner, který se zapeče teplem.",
+      "answer": false,
+      "explanation": "Toner zapečený teplem používá laserová tiskárna. Inkoustová stříká kapky inkoustu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zařízení se směrem dat.",
+      "pairs": [
+        [
+          "klávesnice",
+          "vstupní"
+        ],
+        [
+          "reproduktor",
+          "výstupní"
+        ],
+        [
+          "dotykový displej",
+          "vstupní i výstupní"
+        ]
+      ]
     }
   ]
 }

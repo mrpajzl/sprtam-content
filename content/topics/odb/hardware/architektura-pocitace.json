@@ -479,6 +479,75 @@
       "type": "open",
       "question": "Vysvětli cyklus fetch–decode–execute.",
       "answer": "Řadič načte z paměti instrukci (fetch), dekóduje ji, tedy zjistí, co má udělat (decode), a ALU ji provede (execute). Pak se posune na další instrukci a cyklus se opakuje."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém kroku cyklu instrukce ALU skutečně sečte dvě čísla?",
+      "options": [
+        "načtení (fetch)",
+        "dekódování (decode)",
+        "provedení (execute)"
+      ],
+      "answer": 2,
+      "explanation": "Při fetch se instrukce načte z paměti, při decode ji řadič rozluští. Výpočet udělá ALU až při execute."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje malá paměť v procesoru, která si pamatuje adresu další instrukce?",
+      "options": [
+        "cache L3",
+        "čítač instrukcí",
+        "adresová sběrnice",
+        "ALU"
+      ],
+      "answer": 1,
+      "explanation": "Čítač instrukcí drží adresu instrukce, kterou řadič načte příště. Po každé instrukci se posune dál."
+    },
+    {
+      "type": "truefalse",
+      "question": "Každá buňka operační paměti má svou adresu, podle které ji procesor najde.",
+      "answer": true,
+      "explanation": "Paměť je rozdělená na stejně velké buňky a každá má vlastní adresu. Procesor ji posílá po adresové sběrnici."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když ve Wordu uložíš dokument, aplikace zapíše data na disk sama, bez operačního systému.",
+      "answer": false,
+      "explanation": "Aplikace požádá operační systém, ten přes ovladač pošle příkaz řadiči disku. Aplikace na hardware přímo nesahá."
+    },
+    {
+      "type": "choice",
+      "question": "Proč může být harvardská architektura rychlejší než von Neumannova?",
+      "options": [
+        "má vždy vyšší takt",
+        "nepotřebuje žádné sběrnice",
+        "používá větší disk",
+        "instrukci a data může číst současně"
+      ],
+      "answer": 3,
+      "explanation": "Program a data mají oddělené paměti i sběrnice, takže procesor nemusí čekat, až jedna cesta uvolní místo druhé."
+    },
+    {
+      "type": "match",
+      "question": "Spoj vrstvu počítače s příkladem.",
+      "pairs": [
+        [
+          "hardware",
+          "procesor"
+        ],
+        [
+          "firmware",
+          "UEFI"
+        ],
+        [
+          "operační systém",
+          "Linux"
+        ],
+        [
+          "aplikace",
+          "webový prohlížeč"
+        ]
+      ]
     }
   ]
 }

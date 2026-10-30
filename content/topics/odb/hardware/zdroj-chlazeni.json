@@ -433,6 +433,63 @@
       "type": "open",
       "question": "Popiš, jak se teplo dostane z procesoru ven ze skříně.",
       "answer": "Teplo přejde z čipu přes teplovodivou pastu do patky chladiče, heatpipe ho přenesou do žeber, ventilátor ho předá vzduchu. Vzduch nasátý vpředu pak odchází výfukovými ventilátory vzadu a nahoře."
+    },
+    {
+      "type": "input",
+      "question": "Počítač odebírá ze zdroje 300 W, zdroj má účinnost 75 %. Kolik W tepla vznikne ve zdroji? Napiš číslo.",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Ze sítě: 300 / 0,75 = 400 W. Teplo ve zdroji: 400 − 300 = 100 W.",
+      "hints": [
+        "Nejdřív spočítej, kolik zdroj bere ze zásuvky.",
+        "Teplo je rozdíl odebraného a dodaného výkonu."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď stupně certifikace 80 PLUS od nejméně po nejvíce účinný.",
+      "items": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Platinum",
+        "Titanium"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které chlazení je úplně tiché, ale hodí se jen pro malé výkony?",
+      "options": [
+        "vzduchové aktivní",
+        "vodní AiO",
+        "pasivní"
+      ],
+      "answer": 2,
+      "explanation": "Pasivní chlazení má jen žebra bez ventilátoru, takže je tiché, ale odvede méně tepla."
+    },
+    {
+      "type": "truefalse",
+      "question": "Měniče na základní desce snižují napětí 12 V ze zdroje na asi 1 V pro jádra procesoru.",
+      "answer": true,
+      "explanation": "Zdroj dodá 12 V, samotné jádro procesoru potřebuje kolem jednoho voltu."
+    },
+    {
+      "type": "choice",
+      "question": "Jak ochráníš součástky před statickou elektřinou, když pracuješ uvnitř skříně?",
+      "options": [
+        "pracuješ na koberci v ponožkách",
+        "necháš zdroj zapnutý, aby byl počítač uzemněný",
+        "nasadíš antistatický náramek nebo se dotkneš kovové kostry skříně"
+      ],
+      "answer": 2,
+      "explanation": "Náramek nebo dotyk kostry vyrovná náboj tvého těla. Zdroj se před prací vypíná a odpojuje."
+    },
+    {
+      "type": "truefalse",
+      "question": "TDP počítají všichni výrobci stejně, takže přesně udává skutečnou spotřebu čipu.",
+      "answer": false,
+      "explanation": "Výrobci TDP počítají různě. Je to jen orientační údaj pro výběr chladiče."
     }
   ]
 }

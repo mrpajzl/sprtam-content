@@ -420,6 +420,67 @@
       "type": "open",
       "question": "Co ověříš před nákupem dílů, aby byly kompatibilní?",
       "answer": "Stejnou patici procesoru a desky a podporu procesoru chipsetem, typ paměti DDR4/DDR5 podle desky, formát desky vůči skříni včetně délky grafiky a výšky chladiče a výkon a konektory zdroje."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď první kroky sestavení počítače.",
+      "items": [
+        "osadit procesor do patice",
+        "nanést pastu a připevnit chladič",
+        "zasunout moduly RAM",
+        "osadit M.2 SSD",
+        "přišroubovat desku do skříně"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do kterých slotů se podle manuálu obvykle zasouvají 2 moduly RAM na desce se 4 sloty?",
+      "options": [
+        "A1 a A2",
+        "A2 a B2",
+        "B1 a B2"
+      ],
+      "answer": 1,
+      "explanation": "A2 a B2 jsou v různých kanálech, takže paměť poběží dvoukanálově. Vždy to ale ověř v manuálu desky."
+    },
+    {
+      "type": "choice",
+      "question": "Co tvoří minimální sestavu při hledání závady?",
+      "options": [
+        "deska, zdroj a disk bez procesoru",
+        "deska, procesor s chladičem, jeden modul RAM, zdroj a grafika",
+        "celý počítač, jen bez monitoru",
+        "zdroj a ventilátory skříně"
+      ],
+      "answer": 1,
+      "explanation": "Minimální sestava obsahuje jen díly nutné k průchodu POST. Když naběhne, chyba je v něčem odpojeném."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje 8pinový konektor u patice, který napájí procesor? Napiš zkratku.",
+      "answers": [
+        "EPS",
+        "EPS 8pin"
+      ],
+      "explanation": "EPS 8pin (4+4) přivádí 12 V k procesoru. Celou desku napájí 24pinový ATX konektor."
+    },
+    {
+      "type": "truefalse",
+      "question": "Před prací uvnitř skříně stačí počítač vypnout tlačítkem, síťový kabel může zůstat zapojený.",
+      "answer": false,
+      "explanation": "Síťový kabel se odpojí a vypne se vypínač zdroje. Pak se podrží tlačítko zapnutí, aby se vybila zbytková energie."
+    },
+    {
+      "type": "choice",
+      "question": "Co musíš u skříně ověřit kromě toho, že pojme formát desky?",
+      "options": [
+        "počet jader procesoru",
+        "rychlost RAM",
+        "barvu kabelů zdroje",
+        "délku grafické karty a výšku chladiče"
+      ],
+      "answer": 3,
+      "explanation": "Dlouhá grafika nebo vysoký věžový chladič se do menší skříně nemusí vejít."
     }
   ]
 }

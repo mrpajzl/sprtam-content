@@ -446,6 +446,76 @@
       "type": "open",
       "question": "Vysvětli, k čemu je v procesoru cache a jaké má úrovně.",
       "answer": "Cache je malá rychlá paměť v procesoru, která drží právě potřebná data a instrukce, aby jádro nečekalo na pomalejší operační paměť. L1 je nejmenší a nejrychlejší v každém jádře, L2 větší, L3 největší a společná pro jádra."
+    },
+    {
+      "type": "input",
+      "question": "Jádro má takt 3 GHz a IPC 4. Kolik miliard instrukcí za sekundu zhruba zvládne?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "Výkon jádra ≈ takt × IPC = 3 · 4 = 12 miliard instrukcí za sekundu.",
+      "hints": [
+        "Použij vztah výkon ≈ takt × IPC."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Procesor A má 5 GHz a IPC 2, procesor B má 4 GHz a IPC 3. Který je rychlejší na jednom jádře?",
+      "options": [
+        "A",
+        "B",
+        "oba stejně"
+      ],
+      "answer": 1,
+      "explanation": "A: 5 · 2 = 10 miliard instrukcí za sekundu. B: 4 · 3 = 12 miliard. Rychlejší je B, i když má nižší takt.",
+      "hints": [
+        "U každého vynásob takt a IPC."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou instrukční sadu používají procesory Apple M a většina mobilních telefonů?",
+      "options": [
+        "x86-64",
+        "ARM",
+        "LGA 1700"
+      ],
+      "answer": 1,
+      "explanation": "Apple M i mobilní čipy používají ARM (RISC). x86-64 je sada běžných PC, LGA 1700 je patice."
+    },
+    {
+      "type": "truefalse",
+      "question": "Program přeložený pro x86-64 poběží na procesoru ARM bez překladu i bez emulace.",
+      "answer": false,
+      "explanation": "Každý procesor rozumí jen své instrukční sadě. Program pro jinou sadu je potřeba přeložit nebo emulovat."
+    },
+    {
+      "type": "truefalse",
+      "question": "Cache L1 bývá v každém jádře oddělená pro instrukce a pro data.",
+      "answer": true,
+      "explanation": "L1 má desítky kB na jádro a dělí se na instrukční a datovou část."
+    },
+    {
+      "type": "match",
+      "question": "Spoj údaj ze specifikace procesoru s příkladem hodnoty.",
+      "pairs": [
+        [
+          "jádra / vlákna",
+          "8 / 16"
+        ],
+        [
+          "TDP",
+          "105 W"
+        ],
+        [
+          "patice",
+          "AM5"
+        ],
+        [
+          "výrobní proces",
+          "5 nm"
+        ]
+      ]
     }
   ]
 }

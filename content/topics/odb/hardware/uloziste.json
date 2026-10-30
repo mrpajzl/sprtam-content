@@ -482,6 +482,64 @@
       "type": "open",
       "question": "Proč RAID není záloha a jak správně zálohovat?",
       "answer": "RAID chrání jen před selháním disku; smazání, virus nebo požár zasáhnou všechny disky pole. Zálohuje se podle 3-2-1: tři kopie, dva typy médií, jedna kopie mimo místo."
+    },
+    {
+      "type": "input",
+      "question": "3 disky po 4 TB v RAID 5. Kolik TB je využitelných? Napiš číslo.",
+      "answers": [
+        "8"
+      ],
+      "explanation": "RAID 5 ztratí na paritu kapacitu jednoho disku: (3 − 1) · 4 TB = 8 TB.",
+      "hints": [
+        "Kapacita = (n − 1) · velikost disku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "SSD má TBW 600 TB. Ročně na něj zapíšeš 40 TB. Na kolik let vystačí záruční limit? Napiš číslo.",
+      "answers": [
+        "15"
+      ],
+      "explanation": "600 : 40 = 15 let.",
+      "hints": [
+        "Vyděl TBW ročním objemem zápisů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik úrovní náboje musí rozlišit buňka QLC?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "answer": 2,
+      "explanation": "QLC ukládá 4 bity, a 4 bity mají 2⁴ = 16 kombinací, tedy 16 úrovní."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pole RAID 5 potřebuje aspoň 3 disky.",
+      "answer": true,
+      "explanation": "Data a parita se rozprostírají po discích; s méně než třemi disky RAID 5 sestavit nejde."
+    },
+    {
+      "type": "truefalse",
+      "question": "SSD s rozhraním SATA III může číst rychlostí kolem 3 500 MB/s.",
+      "answer": false,
+      "explanation": "SATA III má limit 6 Gb/s, prakticky asi 550 MB/s. Tisíce MB/s zvládne jen NVMe přes PCIe."
+    },
+    {
+      "type": "choice",
+      "question": "Co v označení „SSD 2,5\" SATA“ udává údaj 2,5\"?",
+      "options": [
+        "protokol",
+        "formát (tvar a velikost)",
+        "rychlost čtení",
+        "kapacitu"
+      ],
+      "answer": 1,
+      "explanation": "2,5\" je formát disku. SATA je rozhraní, kterým disk komunikuje."
     }
   ]
 }

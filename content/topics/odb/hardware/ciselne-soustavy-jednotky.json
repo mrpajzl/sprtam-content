@@ -532,6 +532,74 @@
       "type": "open",
       "question": "Popiš, jak převedeš desítkové číslo do dvojkové soustavy a jak výsledek ověříš.",
       "answer": "Číslo opakovaně dělím dvěma a zapisuji zbytky, dokud podíl není 0. Zbytky přečtu odspodu nahoru. Ověřím zpětně: sečtu váhy (1, 2, 4, 8…) míst, kde jsou jedničky."
+    },
+    {
+      "type": "input",
+      "question": "Převeď dvojkové číslo 110010 do desítkové soustavy.",
+      "answers": [
+        "50"
+      ],
+      "explanation": "Jedničky jsou na místech s vahou 32, 16 a 2: 32 + 16 + 2 = 50.",
+      "hints": [
+        "Napiš nad číslice zprava váhy 1, 2, 4, 8, 16, 32."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď šestnáctkové číslo 2C do desítkové soustavy.",
+      "answers": [
+        "44"
+      ],
+      "explanation": "C = 12. 2 · 16 + 12 = 44.",
+      "hints": [
+        "Jakou hodnotu má písmeno C?",
+        "Levá číslice má váhu 16."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď desítkové číslo 200 do šestnáctkové soustavy.",
+      "answers": [
+        "C8",
+        "c8",
+        "0xC8",
+        "C8h"
+      ],
+      "explanation": "200 : 16 = 12 zbytek 8. 12 = C, takže 200 = C8 (kontrola: 12 · 16 + 8 = 200).",
+      "hints": [
+        "Kolikrát se 16 vejde do 200 a jaký je zbytek?",
+        "Číslo 12 zapiš jako písmeno."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik bajtů je 1 MiB?",
+      "options": [
+        "1 000 000",
+        "1 048 576",
+        "1 024 000",
+        "1 000 024"
+      ],
+      "answer": 1,
+      "explanation": "Mebi = 2²⁰ = 1 024 · 1 024 = 1 048 576 B. Desítkové 1 MB je 1 000 000 B."
+    },
+    {
+      "type": "input",
+      "question": "Kolik sekund trvá stažení souboru 250 MB po lince 100 Mb/s (bez režie)?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "250 MB · 8 = 2 000 Mb. 2 000 : 100 = 20 s.",
+      "hints": [
+        "Převeď velikost souboru z bajtů na bity.",
+        "Pak vyděl rychlostí linky."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvojkové číslo 1 0000 0000 (jednička a osm nul) se ještě vejde do jednoho bajtu.",
+      "answer": false,
+      "explanation": "Má 9 bitů a znamená 256. Do jednoho bajtu (8 bitů) se vejdou jen čísla 0 až 255."
     }
   ]
 }
