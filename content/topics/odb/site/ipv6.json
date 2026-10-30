@@ -548,6 +548,68 @@
       "type": "open",
       "question": "Vysvětli pravidla pro zkracování IPv6 adres.",
       "answer": "Ve skupině se smí vynechat úvodní nuly. Jeden souvislý úsek celých nulových skupin se nahradí dvěma dvojtečkami, ale jen jednou v adrese, aby šla jednoznačně rozepsat."
+    },
+    {
+      "type": "input",
+      "question": "Kolik podsítí /64 lze vytvořit z prefixu /60?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "64 − 60 = 4 bity, 2⁴ = 16.",
+      "hints": [
+        "Kolik bitů leží mezi /60 a /64?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které zkrácení adresy fe80:0000:0000:0000:0204:61ff:fe9d:f156 je správné?",
+      "options": [
+        "fe80:204:61ff:fe9d:f156",
+        "fe8::204:61ff:fe9d:f156",
+        "fe80::204:61ff:fe9d:f156",
+        "fe80::24:61ff:fe9d:f156"
+      ],
+      "answer": 2,
+      "explanation": "Tři nulové skupiny nahradí ::, ze skupiny 0204 se vynechá jen úvodní nula.",
+      "hints": [
+        "Vynechat smíš jen úvodní nuly, ne koncové ani prostřední."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Adresa fd12:3456:789a:1::10 je:",
+      "options": [
+        "globální unicast",
+        "unikátní lokální (ULA)",
+        "link-local",
+        "multicast"
+      ],
+      "answer": 1,
+      "explanation": "Adresy fd… patří do fc00::/7, to je ULA, obdoba privátních IPv4."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hlavička IPv6 má pevnou délku 40 B.",
+      "answer": true,
+      "explanation": "IPv4 hlavička má proměnnou délku 20–60 B."
+    },
+    {
+      "type": "truefalse",
+      "question": "V běžné IPv6 podsíti /64 tvoří identifikátor rozhraní prvních 64 bitů adresy.",
+      "answer": false,
+      "explanation": "Prvních 64 bitů je síť (prefix), identifikátor rozhraní je posledních 64 bitů."
+    },
+    {
+      "type": "choice",
+      "question": "Jak si zařízení nastaví adresu pomocí SLAAC?",
+      "options": [
+        "DHCP server mu přidělí celou adresu",
+        "adresu zadá správce ručně",
+        "převede si svou IPv4 adresu",
+        "router oznámí prefix a zařízení si doplní identifikátor rozhraní"
+      ],
+      "answer": 3,
+      "explanation": "SLAAC funguje bez DHCP serveru."
     }
   ]
 }

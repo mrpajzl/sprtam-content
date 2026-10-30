@@ -509,6 +509,65 @@
       "type": "open",
       "question": "Vysvětli, proč doma může mít víc zařízení přístup do internetu přes jednu veřejnou adresu.",
       "answer": "Router používá PAT. Odchozím paketům vymění privátní adresu a port za svou veřejnou adresu a volný port a zapíše si to do tabulky překladů. Podle portu v odpovědi pak pozná, kterému vnitřnímu zařízení ji vrátit."
+    },
+    {
+      "type": "choice",
+      "question": "Služba po tobě chce ověřit vlastnictví domény textovým řetězcem v DNS. Jaký záznam přidáš?",
+      "options": [
+        "MX",
+        "CNAME",
+        "TXT",
+        "PTR"
+      ],
+      "answer": 2,
+      "explanation": "Záznam TXT nese libovolný text, např. ověření domény nebo SPF."
+    },
+    {
+      "type": "choice",
+      "question": "Co DHCP server zařízení **nepřiděluje**?",
+      "options": [
+        "IP adresu",
+        "výchozí bránu",
+        "MAC adresu síťové karty",
+        "adresu DNS serveru"
+      ],
+      "answer": 2,
+      "explanation": "MAC adresa je pevná adresa karty. DHCP přidělí IP adresu, masku, bránu a DNS."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při překladu jména odpoví nakonec IP adresou autoritativní server dané domény.",
+      "answer": true,
+      "explanation": "Kořenový server a server TLD jen odkážou dál."
+    },
+    {
+      "type": "choice",
+      "question": "Server má mít trvale vlastní veřejnou adresu: jedna vnitřní adresa ↔ jedna veřejná. Který druh NAT to je?",
+      "options": [
+        "PAT",
+        "statický NAT",
+        "maškaráda",
+        "DHCP rezervace"
+      ],
+      "answer": 1,
+      "explanation": "PAT (maškaráda) schová mnoho zařízení za jednu adresu."
+    },
+    {
+      "type": "input",
+      "question": "DHCP rozsah je 192.168.1.100–192.168.1.199. Kolik adres může server půjčit?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Od 100 do 199 včetně: 199 − 100 + 1 = 100.",
+      "hints": [
+        "Počítej obě krajní adresy."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Záznam PTR převádí jméno na IPv6 adresu.",
+      "answer": false,
+      "explanation": "Na IPv6 adresu převádí jméno záznam AAAA. PTR slouží ke zpětnému překladu IP → jméno."
     }
   ]
 }

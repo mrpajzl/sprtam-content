@@ -608,6 +608,64 @@
       "type": "open",
       "question": "Popiš postup výroby patch kabelu.",
       "answer": "Odizoluji plášť, rozpletu páry a srovnám vodiče podle T568B na obou koncích, zastřihnu je rovně, zasunu do konektoru RJ-45 až na doraz s pláštěm uvnitř a zalisuji krimpovačkou. Nakonec kabel otestuji testerem."
+    },
+    {
+      "type": "input",
+      "question": "Pevná trasa kabelu má 82 m, patch kabely na koncích 3 m a 7 m. Jaká je celková délka spoje v metrech?",
+      "answers": [
+        "92"
+      ],
+      "explanation": "82 + 3 + 7 = 92 m, to je pod limitem 100 m.",
+      "hints": [
+        "Sečti všechny tři části."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které piny tvoří u zapojení T568B zelený pár?",
+      "options": [
+        "1 a 2",
+        "3 a 6",
+        "4 a 5",
+        "7 a 8"
+      ],
+      "answer": 1,
+      "explanation": "Zelený pár je na pinech 3 a 6 a obkročí modrý pár na pinech 4 a 5."
+    },
+    {
+      "type": "choice",
+      "question": "Kabel povede 40 m dílnou s velkými motory. Který zvolíš?",
+      "options": [
+        "UTP Cat5e",
+        "stíněný kabel S/FTP",
+        "nestíněný UTP Cat6",
+        "koaxiální kabel"
+      ],
+      "answer": 1,
+      "explanation": "V prostředí se silným rušením pomáhá stínění (nebo optika)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dvě dnešní zařízení s funkcí Auto-MDI-X potřebují ke vzájemnému propojení křížený kabel.",
+      "answer": false,
+      "explanation": "Auto-MDI-X si páry prohodí samo, stačí přímý kabel."
+    },
+    {
+      "type": "choice",
+      "question": "Do jaké vzdálenosti zvládne kabel Cat6 rychlost 10 Gb/s?",
+      "options": [
+        "100 m",
+        "asi 55 m",
+        "asi 30 m",
+        "10 m"
+      ],
+      "answer": 1,
+      "explanation": "Cat6 zvládne 10 Gb/s jen asi do 55 m. Na 100 m je potřeba Cat6A."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kontakty konektoru RJ-45 se číslují 1–8 zleva, když se díváš na kontakty a západka je dole.",
+      "answer": true
     }
   ]
 }

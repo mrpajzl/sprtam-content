@@ -528,6 +528,72 @@
       "type": "open",
       "question": "K čemu slouží VLAN a jaký je rozdíl mezi access a trunk portem?",
       "answer": "VLAN rozdělí jeden přepínač na oddělené sítě, např. kvůli bezpečnosti nebo omezení broadcastu. Access port patří do jedné VLAN a posílá rámce bez značky, trunk přenáší víc VLAN mezi přepínači a rámce značí podle 802.1Q."
+    },
+    {
+      "type": "input",
+      "question": "Jaké desítkové číslo je šestnáctkové 2F?",
+      "answers": [
+        "47"
+      ],
+      "explanation": "2 · 16 + 15 = 47.",
+      "hints": [
+        "F = 15.",
+        "První číslice má hodnotu 16."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která část MAC adresy 3C:52:82:1A:2B:3C určuje výrobce (OUI)?",
+      "options": [
+        "1A:2B:3C",
+        "2B:3C",
+        "3C:52:82",
+        "3C"
+      ],
+      "answer": 2,
+      "explanation": "OUI tvoří první 3 bajty (24 bitů) MAC adresy."
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka přepínače: AA → port 1, BB → port 2, CC → port 7. Na port 1 přijde rámec s cílem CC. Kam ho přepínač pošle?",
+      "options": [
+        "na všechny porty kromě 1",
+        "jen na port 7",
+        "na port 2",
+        "zahodí ho"
+      ],
+      "answer": 1,
+      "explanation": "Cíl CC v tabulce je, proto jde rámec jen na port 7."
+    },
+    {
+      "type": "truefalse",
+      "question": "Všechna zařízení připojená k rozbočovači (hubu) jsou v jedné kolizní doméně.",
+      "answer": true,
+      "explanation": "Hub opakuje signál do všech portů, takže si vysílající mohou překážet."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když u rámce nesedí kontrolní součet FCS, přepínač ho opraví a pošle dál.",
+      "answer": false,
+      "explanation": "Poškozený rámec se zahodí."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh adresy s tím, komu jsou data určená.",
+      "pairs": [
+        [
+          "unicast",
+          "jedné síťové kartě"
+        ],
+        [
+          "broadcast",
+          "všem v síti"
+        ],
+        [
+          "multicast",
+          "skupině přijímačů"
+        ]
+      ]
     }
   ]
 }

@@ -586,6 +586,77 @@
       "type": "open",
       "question": "Popiš zapouzdření dat při odeslání webového požadavku.",
       "answer": "Prohlížeč vytvoří HTTP požadavek. TCP přidá hlavičku s porty a vznikne segment, IP přidá IP adresy a vznikne paket, Ethernet přidá MAC adresy a vznikne rámec. Fyzická vrstva ho pošle jako bity. Příjemce hlavičky sundává v opačném pořadí."
+    },
+    {
+      "type": "choice",
+      "question": "Která vrstva OSI řídí navázání, udržování a ukončení relace mezi programy?",
+      "options": [
+        "transportní",
+        "relační",
+        "prezentační",
+        "síťová"
+      ],
+      "answer": 1,
+      "explanation": "Relační (5.) vrstva řídí relaci, tedy sezení programů."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje PDU na síťové (3.) vrstvě?",
+      "options": [
+        "segment",
+        "rámec",
+        "paket",
+        "bit"
+      ],
+      "answer": 2,
+      "explanation": "Segment je na 4. vrstvě, paket na 3., rámec na 2., bity na 1."
+    },
+    {
+      "type": "input",
+      "question": "Na které vrstvě OSI pracuje běžný přepínač? Napiš číslo.",
+      "answers": [
+        "2",
+        "2.",
+        "druhé"
+      ],
+      "explanation": "Přepínač rozhoduje podle MAC adres, tedy na 2. (linkové) vrstvě.",
+      "hints": [
+        "Jakou adresu přepínač čte?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozbočovač (hub) pracuje na 2. vrstvě, protože čte MAC adresy.",
+      "answer": false,
+      "explanation": "Hub adresám nerozumí, jen opakuje signál do všech portů. Pracuje na 1. (fyzické) vrstvě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příjemce sundává hlavičky postupně zdola nahoru. Říká se tomu dekapsulace.",
+      "answer": true,
+      "explanation": "Dekapsulace je opak zapouzdření."
+    },
+    {
+      "type": "match",
+      "question": "Spoj protokol s vrstvou modelu TCP/IP.",
+      "pairs": [
+        [
+          "SSH",
+          "aplikační"
+        ],
+        [
+          "UDP",
+          "transportní"
+        ],
+        [
+          "ICMP",
+          "internetová"
+        ],
+        [
+          "Wi-Fi",
+          "síťového rozhraní"
+        ]
+      ]
     }
   ]
 }

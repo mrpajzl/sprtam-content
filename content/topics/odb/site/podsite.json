@@ -479,6 +479,72 @@
       "type": "open",
       "question": "Vysvětli, proč se sítě dělí na podsítě.",
       "answer": "Podsítě oddělí skupiny zařízení (kancelář, hosty, kamery), což zvyšuje bezpečnost a přehlednost a omezuje broadcast. Adresy se přidělí podle potřeby a neplýtvá se jimi."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je adresa sítě pro 192.168.20.200/28?",
+      "answers": [
+        "192.168.20.192"
+      ],
+      "explanation": "Magické číslo 256 − 240 = 16. Největší násobek 16, který nepřesáhne 200, je 192.",
+      "hints": [
+        "Maska /28 je 255.255.255.240.",
+        "Najdi největší násobek magického čísla do 200."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký je broadcast podsítě, do které patří 10.10.10.70/29?",
+      "answers": [
+        "10.10.10.71"
+      ],
+      "explanation": "Blok /29 má 8 adres. 70 leží v bloku 64–71, broadcast je 10.10.10.71.",
+      "hints": [
+        "Magické číslo pro /29 je 8.",
+        "Broadcast = další podsíť − 1."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Síť 192.168.1.0/24 potřebuješ rozdělit aspoň na 6 stejných podsítí. Jaký bude nový prefix? Napiš jen číslo.",
+      "answers": [
+        "27",
+        "/27"
+      ],
+      "explanation": "2³ = 8 ≥ 6, půjčíš 3 bity: /24 + 3 = /27.",
+      "hints": [
+        "Najdi nejmenší b, aby 2^b ≥ 6."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Potřebuješ podsíť pro 120 zařízení. Jaký nejmenší (nejužší) prefix stačí?",
+      "options": [
+        "/24",
+        "/26",
+        "/25",
+        "/27"
+      ],
+      "answer": 2,
+      "explanation": "/25 má 2⁷ − 2 = 126 použitelných adres. /26 má jen 62."
+    },
+    {
+      "type": "truefalse",
+      "question": "V podsíti 192.168.10.64/26 je poslední použitelná adresa 192.168.10.126.",
+      "answer": true,
+      "explanation": "Broadcast je 192.168.10.127, poslední použitelná je o 1 menší."
+    },
+    {
+      "type": "choice",
+      "question": "Maska je 255.255.252.0. Který oktet je rozhodující a jaké je magické číslo?",
+      "options": [
+        "4. oktet, 4",
+        "3. oktet, 252",
+        "3. oktet, 8",
+        "3. oktet, 4"
+      ],
+      "answer": 3,
+      "explanation": "Rozhodující je oktet, který není 255 ani 0, tedy 3. Magické číslo 256 − 252 = 4."
     }
   ]
 }

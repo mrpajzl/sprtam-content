@@ -526,6 +526,67 @@
       "type": "open",
       "question": "Proč v síti /24 může mít adresu jen 254 zařízení, a ne 256?",
       "answer": "Hostitelská část má 8 bitů, to je 256 adres. První adresa (samé nuly) je adresa sítě a poslední (samé jedničky) je broadcast. Tyto dvě se zařízením nepřidělují, zbývá 254."
+    },
+    {
+      "type": "input",
+      "question": "Převeď 10101000 z dvojkové do desítkové soustavy.",
+      "answers": [
+        "168"
+      ],
+      "explanation": "128 + 32 + 8 = 168.",
+      "hints": [
+        "Hodnoty pozic: 128, 64, 32, 16, 8, 4, 2, 1.",
+        "Sečti hodnoty pozic, kde je 1."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je adresa sítě pro 10.20.77.9/20?",
+      "answers": [
+        "10.20.64.0"
+      ],
+      "explanation": "/20 = 255.255.240.0. Ve 3. oktetu: 77 = 01001101, AND 11110000 = 01000000 = 64.",
+      "hints": [
+        "Maska /20 má ve 3. oktetu 240.",
+        "Převeď 77 do dvojkové soustavy a udělej AND s 11110000."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Adresa 127.0.0.1 označuje vlastní počítač (loopback).",
+      "answer": true,
+      "explanation": "Rozsah 127.0.0.0/8 je loopback, „já sám“."
+    },
+    {
+      "type": "truefalse",
+      "question": "Adresy 10.1.1.5/24 a 10.1.2.5/24 jsou ve stejné síti.",
+      "answer": false,
+      "explanation": "Síťové části 10.1.1 a 10.1.2 se liší. Spojí je jen router."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou masku má prefix /21?",
+      "options": [
+        "255.255.240.0",
+        "255.255.248.0",
+        "255.255.252.0",
+        "255.255.255.248"
+      ],
+      "answer": 1,
+      "explanation": "21 = 8 + 8 + 5 jedniček. 11111000 = 248."
+    },
+    {
+      "type": "input",
+      "question": "Kolik použitelných adres pro zařízení má síť /22?",
+      "answers": [
+        "1022",
+        "1 022"
+      ],
+      "explanation": "32 − 22 = 10 bitů, 2¹⁰ − 2 = 1022.",
+      "hints": [
+        "Hostitelských bitů je 32 minus prefix.",
+        "Nezapomeň odečíst síť a broadcast."
+      ]
     }
   ]
 }

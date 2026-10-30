@@ -542,6 +542,58 @@
       "type": "open",
       "question": "Porovnej pásma 2,4 GHz a 5 GHz.",
       "answer": "2,4 GHz má větší dosah a lépe prochází zdmi, ale je pomalejší, má málo nepřekrývajících se kanálů a ruší ho mikrovlnky a Bluetooth. 5 GHz je rychlejší a má víc kanálů, ale menší dosah."
+    },
+    {
+      "type": "choice",
+      "question": "Z firmy odešel zaměstnanec. Wi-Fi používá WPA2-Enterprise. Co udělá správce?",
+      "options": [
+        "změní heslo a rozdá ho všem",
+        "zablokuje jen jeho účet",
+        "vypne Wi-Fi",
+        "skryje SSID"
+      ],
+      "answer": 1,
+      "explanation": "U Enterprise má každý vlastní účet, ostatní nic nepoznají."
+    },
+    {
+      "type": "truefalse",
+      "question": "Wi-Fi 6E přidává k Wi-Fi 6 pásmo 6 GHz.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Které pásmo Wi-Fi nejvíc ruší mikrovlnky a Bluetooth?",
+      "options": [
+        "5 GHz",
+        "6 GHz",
+        "2,4 GHz"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Filtr MAC adres spolehlivě ochrání Wi-Fi, protože MAC adresu nejde změnit.",
+      "answer": false,
+      "explanation": "Povolené MAC adresy jde zachytit ze vzduchu a MAC adresu lze podvrhnout."
+    },
+    {
+      "type": "input",
+      "question": "Jak se zkratkou nazývá jméno Wi-Fi sítě, které vidíš v seznamu sítí?",
+      "answers": [
+        "SSID"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou šifru používá zabezpečení WPA2?",
+      "options": [
+        "TKIP",
+        "WEP",
+        "AES",
+        "RADIUS"
+      ],
+      "answer": 2,
+      "explanation": "WPA2 šifruje AES. TKIP patří k zastaralému WPA."
     }
   ]
 }

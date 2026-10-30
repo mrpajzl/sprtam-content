@@ -560,6 +560,64 @@
       "type": "open",
       "question": "K čemu slouží porty a co je socket?",
       "answer": "IP adresa doručí data k počítači, port určí konkrétní program v něm, např. 443 pro webový server. Socket je dvojice IP adresa a port; spojení je dané socketem klienta a socketem serveru."
+    },
+    {
+      "type": "choice",
+      "question": "Na jaký port a jakým protokolem se připojí prohlížeč k nešifrovanému webu (HTTP)?",
+      "options": [
+        "UDP 80",
+        "TCP 443",
+        "TCP 80",
+        "UDP 53"
+      ],
+      "answer": 2,
+      "explanation": "HTTP běží na TCP 80, šifrované HTTPS na 443."
+    },
+    {
+      "type": "choice",
+      "question": "Prohlížeč použil klientský port 52311. Do jakého rozsahu patří?",
+      "options": [
+        "dobře známé (0–1023)",
+        "registrované (1024–49151)",
+        "dynamické (49152–65535)"
+      ],
+      "answer": 2,
+      "explanation": "Klienti si dočasné porty berou z dynamického rozsahu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Telnet (port 23) je bezpečný, protože šifruje hesla.",
+      "answer": false,
+      "explanation": "Telnet posílá hesla nešifrovaně. Pro vzdálenou správu se používá SSH."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje jednotka dat protokolu UDP?",
+      "options": [
+        "segment",
+        "rámec",
+        "datagram",
+        "paket"
+      ],
+      "answer": 2,
+      "explanation": "U TCP je to segment, u UDP datagram."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při řízení toku TCP příjemce oznamuje, kolik dat ještě zvládne přijmout (velikost okna).",
+      "answer": true,
+      "explanation": "Odesílatel tak příjemce nezahltí."
+    },
+    {
+      "type": "input",
+      "question": "Jakou zprávou (zkratkou) se slušně ukončuje spojení TCP?",
+      "answers": [
+        "FIN"
+      ],
+      "explanation": "Obě strany pošlou FIN a druhá ho potvrdí ACK.",
+      "hints": [
+        "Z anglického „finish“."
+      ]
     }
   ]
 }

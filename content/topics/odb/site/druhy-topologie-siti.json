@@ -514,6 +514,68 @@
       "type": "open",
       "question": "Vysvětli rozdíl mezi LAN a WAN.",
       "answer": "LAN je místní síť jedné budovy nebo areálu, patří jednomu vlastníkovi a je rychlá. WAN propojuje vzdálená místa (města, státy), linky se pronajímají od operátora. Internet je největší WAN."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik propojení potřebuje úplný mesh 4 uzlů?",
+      "options": [
+        "4",
+        "8",
+        "6",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "4 · 3 / 2 = 6. Každé spojení se počítá jen jednou.",
+      "hints": [
+        "Použij vzorec n · (n − 1) / 2."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ve třídě je 25 počítačů, 1 tiskárna a 1 přepínač. Kolik je v síti uzlů?",
+      "answers": [
+        "27"
+      ],
+      "explanation": "Uzel je každé zařízení v síti, i přepínač: 25 + 1 + 1 = 27.",
+      "hints": [
+        "Uzlem je každé připojené zařízení, nejen počítač."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V síti s topologií sběrnice se přeruší společný kabel. Co se stane?",
+      "options": [
+        "vypadne jen nejbližší počítač",
+        "celá síť přestane fungovat",
+        "nic, data půjdou jinou cestou",
+        "vypadne jen tiskárna"
+      ],
+      "answer": 1,
+      "explanation": "Na sběrnici jsou všichni na jednom kabelu, jeho přerušení vyřadí celou síť."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dělení sítí na LAN, MAN a WAN se řídí tím, jestli síť používá kabel, nebo rádio.",
+      "answer": false,
+      "explanation": "Rozhoduje rozloha sítě. Wi-Fi v bytě je WLAN, tedy bezdrátová LAN."
+    },
+    {
+      "type": "choice",
+      "question": "Firma má dvě linky do internetu od dvou různých operátorů, aby při výpadku jedné fungovala druhá. Jak se tomu říká?",
+      "options": [
+        "topologie",
+        "peer-to-peer",
+        "sběrnice",
+        "redundance"
+      ],
+      "answer": 3,
+      "explanation": "Redundance je záložní cesta nebo zařízení navíc."
+    },
+    {
+      "type": "truefalse",
+      "question": "V uspořádání klient–server je slabým místem server: když vypadne, klienti službu nedostanou.",
+      "answer": true,
+      "explanation": "Službu poskytuje jen server, klienti si o ni žádají."
     }
   ]
 }

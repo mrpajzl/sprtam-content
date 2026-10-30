@@ -523,6 +523,64 @@
       "type": "open",
       "question": "Vysvětli, co je výchozí cesta a k čemu slouží.",
       "answer": "Výchozí cesta 0.0.0.0/0 platí pro všechny cíle, které router jinak nezná. Obvykle vede k poskytovateli internetu, takže router nemusí znát cesty do všech sítí světa."
+    },
+    {
+      "type": "choice",
+      "question": "Tabulka: 10.1.5.0/24 → R4, 10.1.0.0/16 → R3, 10.0.0.0/8 → R2, 0.0.0.0/0 → ISP. Kam jde paket pro 10.200.1.1?",
+      "options": [
+        "R4",
+        "R3",
+        "R2",
+        "ISP"
+      ],
+      "answer": 2,
+      "explanation": "Adresa patří jen do 10.0.0.0/8 a do výchozí cesty. Delší prefix má /8, tedy R2.",
+      "hints": [
+        "Do kterých sítí adresa opravdu patří?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Cílová adresa paketu nesedí na žádný záznam a router nemá výchozí cestu. Co udělá?",
+      "options": [
+        "pošle paket na všechna rozhraní",
+        "paket zahodí",
+        "vrátí paket odesílateli beze změny",
+        "použije první řádek tabulky"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "U metriky platí: čím menší číslo, tím lepší cesta.",
+      "answer": true,
+      "explanation": "Metrika říká, jak „drahá“ je cesta."
+    },
+    {
+      "type": "input",
+      "question": "Kolik skoků nejvýš zvládne protokol RIP?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "RIP počítá skoky, maximum je 15."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem ve Windows vypíšeš směrovací tabulku?",
+      "options": [
+        "ipconfig /all",
+        "route print",
+        "show ip route",
+        "tracert"
+      ],
+      "answer": 1,
+      "explanation": "show ip route je příkaz Cisco IOS, na Linuxu ip route."
+    },
+    {
+      "type": "truefalse",
+      "question": "RIP a OSPF jsou vnější protokoly, které běží mezi autonomními systémy.",
+      "answer": false,
+      "explanation": "RIP a OSPF jsou vnitřní protokoly uvnitř jednoho AS. Mezi AS běží BGP."
     }
   ]
 }
