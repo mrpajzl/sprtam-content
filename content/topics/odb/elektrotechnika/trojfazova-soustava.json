@@ -395,6 +395,70 @@
       "type": "open",
       "question": "Jaké vodiče má trojfázový rozvod TN-S a jakou mají funkci?",
       "answer": "Tři fázové vodiče L1, L2, L3 (hnědá, černá, šedá) vedou pracovní proud. Střední vodič N (modrý) je zpětný vodič pro jednofázové spotřebiče. Ochranný vodič PE (zelenožlutý) je spojený s kostrami a při poruše odvede proud, aby ochrana vypnula."
+    },
+    {
+      "type": "input",
+      "question": "Trojfázový motor odebírá příkon 5 540 W, cos φ = 0,8, síť 400 V. Proud v přívodu v A (zaokrouhli na celé) =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "I = P₀ / (√3 · U · cos φ) = 5 540 / (1,732 · 400 · 0,8) = 5 540 / 554 ≈ 10 A.",
+      "hints": [
+        "Použij I = P₀ / (√3 · U · cos φ)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Motor má výkon na hřídeli 7,5 kW a účinnost 90 %. Příkon v kW (na dvě desetinná místa) =",
+      "answers": [
+        "8,33"
+      ],
+      "explanation": "P₀ = P / η = 7,5 / 0,9 ≈ 8,33 kW.",
+      "hints": [
+        "Příkon je vždy větší než výkon."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Motor má na štítku 400/690 V Δ/Y. Jak ho zapojíš do sítě 3 × 400 V?",
+      "options": [
+        "do hvězdy",
+        "do trojúhelníku",
+        "jen na jednu fázi a N"
+      ],
+      "answer": 1,
+      "explanation": "Vinutí snese 400 V. To má v trojúhelníku, kde je na něm sdružené napětí 400 V."
+    },
+    {
+      "type": "truefalse",
+      "question": "V zapojení do hvězdy je proud v přívodním vodiči √3krát větší než proud ve vinutí.",
+      "answer": false,
+      "explanation": "Ve hvězdě je proud v přívodu stejný jako ve vinutí. √3krát větší je v trojúhelníku."
+    },
+    {
+      "type": "choice",
+      "question": "Tři stejné topné spirály přepojíš z hvězdy do trojúhelníku na stejné síti. Jak se změní celkový výkon?",
+      "options": [
+        "nezmění se",
+        "zvětší se √3krát",
+        "klesne na třetinu",
+        "zvětší se třikrát"
+      ],
+      "answer": 3,
+      "explanation": "Na každé spirále je místo 230 V napětí 400 V. P = U² / R a (400 / 230)² ≈ 3."
+    },
+    {
+      "type": "input",
+      "question": "Tři topné spirály po 46 Ω jsou zapojené do hvězdy na síť 400/230 V. Celkový výkon ve W =",
+      "answers": [
+        "3450",
+        "3 450"
+      ],
+      "explanation": "Každá spirála má 230 V: I = 230 / 46 = 5 A, P = 230 · 5 = 1 150 W. Celkem 3 · 1 150 = 3 450 W.",
+      "hints": [
+        "Ve hvězdě má každá spirála fázové napětí 230 V.",
+        "Spočítej výkon jedné spirály a vynásob třemi."
+      ]
     }
   ]
 }

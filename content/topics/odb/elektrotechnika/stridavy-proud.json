@@ -408,6 +408,70 @@
       "type": "open",
       "question": "Co je účiník cos φ a proč je pro síť nevýhodný malý účiník?",
       "answer": "Účiník je poměr činného a zdánlivého výkonu, cos φ = P / (U · I). Při malém účiníku teče pro stejný užitečný výkon větší proud, takže se víc zatěžují a ohřívají vedení a transformátory. Proto se účiník kompenzuje kondenzátory."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je perioda napětí s frekvencí 60 Hz (síť v USA) v milisekundách? Zaokrouhli na desetiny. ms =",
+      "answers": [
+        "16,7"
+      ],
+      "explanation": "T = 1 / 60 ≈ 0,0167 s ≈ 16,7 ms.",
+      "hints": [
+        "Perioda je převrácená hodnota frekvence."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Amplituda sinusového napětí je 50 V. Efektivní hodnota ve V (zaokrouhli na desetiny) =",
+      "answers": [
+        "35,4"
+      ],
+      "explanation": "U = Uₘ / √2 = 50 / 1,414 ≈ 35,4 V."
+    },
+    {
+      "type": "choice",
+      "question": "Kondenzátor 100 μF při 50 Hz má kapacitní reaktanci přibližně:",
+      "options": [
+        "3,18 Ω",
+        "31,8 Ω",
+        "318 Ω",
+        "0,0314 Ω"
+      ],
+      "answer": 1,
+      "explanation": "X_C = 1 / (2 · 3,14 · 50 · 0,0001) = 1 / 0,0314 ≈ 31,8 Ω.",
+      "hints": [
+        "Kapacitu převeď na farady: 100 μF = 0,0001 F."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "R = 12 Ω a X_L = 16 Ω v sérii, napětí 100 V. Proud v A =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Z = √(144 + 256) = √400 = 20 Ω. I = 100 / 20 = 5 A.",
+      "hints": [
+        "Nejdřív spočítej impedanci Z = √(R² + X²).",
+        "Pak použij I = U / Z."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na reaktanci ideální cívky se energie mění v teplo stejně jako na rezistoru.",
+      "answer": false,
+      "explanation": "Na reaktanci se energie střídavě ukládá do magnetického pole a vrací zpět, teplo nevzniká."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je úhlová frekvence ω sítě 50 Hz?",
+      "options": [
+        "50 rad/s",
+        "157 rad/s",
+        "314 rad/s",
+        "100 rad/s"
+      ],
+      "answer": 2,
+      "explanation": "ω = 2 · π · f = 2 · 3,14 · 50 ≈ 314 rad/s."
     }
   ]
 }

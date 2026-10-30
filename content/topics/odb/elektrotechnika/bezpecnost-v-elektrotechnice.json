@@ -438,6 +438,67 @@
       "type": "open",
       "question": "Na čem závisí nebezpečnost úrazu elektrickým proudem?",
       "answer": "Na velikosti proudu, době, po kterou působí, dráze proudu tělem (nejhorší přes srdce), na druhu a frekvenci proudu a na stavu člověka, například na vlhkosti kůže, která snižuje odpor těla."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto částí je neživá část?",
+      "options": [
+        "svorka motoru",
+        "fázový vodič v zásuvce",
+        "kovová kostra pračky"
+      ],
+      "answer": 2,
+      "explanation": "Kostra je vodivá, ale pod napětím je jen při poruše. Svorka a fázový vodič jsou živé části."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bezpečné malé napětí SELV je oddělené od sítě a není uzemněné.",
+      "answer": true,
+      "explanation": "Uzemněné malé napětí se označuje PELV."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vypnutý jistič sám o sobě zaručuje, že je zařízení v beznapěťovém stavu.",
+      "answer": false,
+      "explanation": "Mohl být vypnut jiný jistič nebo má zařízení víc zdrojů. Beznapěťový stav se musí ověřit."
+    },
+    {
+      "type": "choice",
+      "question": "Co musíš udělat se zkoušečkou, když ověřuješ beznapěťový stav?",
+      "options": [
+        "stačí ji přiložit k jednomu vodiči",
+        "vyzkoušet ji před měřením i po něm na známém zdroji napětí",
+        "nic, zkoušečka se nekontroluje",
+        "vyzkoušet ji jen jednou za rok"
+      ],
+      "answer": 1,
+      "explanation": "Vadná zkoušečka by ukázala beznapěťový stav i tam, kde napětí je."
+    },
+    {
+      "type": "choice",
+      "question": "Co je fibrilace srdečních komor?",
+      "options": [
+        "popálení kůže v místě dotyku",
+        "křeč svalů ruky, která nejde pustit",
+        "rozklad tělních tekutin proudem",
+        "srdce místo pumpování jen nepravidelně kmitá"
+      ],
+      "answer": 3,
+      "explanation": "Je to nejnebezpečnější fyziologický účinek proudu, srdce přestane pumpovat krev."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky první pomoci při úrazu nízkým napětím.",
+      "items": [
+        "přerušit proud (jistič, vidlice)",
+        "zkontrolovat vědomí a dýchání",
+        "volat 155 a při nedýchání resuscitovat",
+        "popáleniny chladit a sterilně překrýt",
+        "předat postiženého lékaři"
+      ],
+      "hints": [
+        "Na postiženého nesahej, dokud je v obvodu."
+      ]
     }
   ]
 }

@@ -407,6 +407,71 @@
       "type": "open",
       "question": "Porovnej asynchronní a stejnosměrný motor z hlediska řízení otáček a údržby.",
       "answer": "Asynchronní klecový motor nemá kartáče, je téměř bezúdržbový a otáčky se řídí změnou frekvence frekvenčním měničem. Stejnosměrný motor s komutátorem má otáčky snadno řiditelné napětím kotvy, ale kartáče a komutátor se opotřebují a potřebují údržbu."
+    },
+    {
+      "type": "input",
+      "question": "Synchronní otáčky motoru s p = 3 pólovými dvojicemi při 50 Hz v ot/min =",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "explanation": "n_s = 60 · 50 / 3 = 1 000 ot/min."
+    },
+    {
+      "type": "input",
+      "question": "Synchronní otáčky jsou 1 500 ot/min a skluz 5 %. Otáčky rotoru v ot/min =",
+      "answers": [
+        "1425",
+        "1 425"
+      ],
+      "explanation": "Rotor zaostává o 5 %: n = 1 500 · (1 − 0,05) = 1 425 ot/min.",
+      "hints": [
+        "Spočítej 5 % ze synchronních otáček a odečti je."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Motor 4 kW se točí 955 ot/min. Moment v N·m =",
+      "answers": [
+        "40"
+      ],
+      "explanation": "M = 9 550 · 4 / 955 = 40 N·m."
+    },
+    {
+      "type": "choice",
+      "question": "Čím nejsnáze řídíš otáčky stejnosměrného motoru s permanentními magnety?",
+      "options": [
+        "frekvencí napájení",
+        "prohozením dvou fází",
+        "velikostí napětí na kotvě",
+        "přepnutím do hvězdy"
+      ],
+      "answer": 2,
+      "explanation": "Otáčky stejnosměrného motoru se řídí napětím na kotvě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sériový stejnosměrný motor se nesmí pouštět naprázdno, protože by se jeho otáčky nebezpečně zvýšily.",
+      "answer": true,
+      "explanation": "Bez zátěže klesne proud i budicí pole a otáčky prudce rostou."
+    },
+    {
+      "type": "match",
+      "question": "Spoj elektrický stroj s tím, co dělá.",
+      "pairs": [
+        [
+          "motor",
+          "elektrická energie → mechanická"
+        ],
+        [
+          "generátor",
+          "mechanická energie → elektrická"
+        ],
+        [
+          "transformátor",
+          "mění velikost střídavého napětí"
+        ]
+      ]
     }
   ]
 }

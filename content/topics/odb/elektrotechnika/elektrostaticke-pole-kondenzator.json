@@ -401,6 +401,64 @@
       "type": "open",
       "question": "Proč je nebezpečné sahat do vypnutého zařízení s velkými kondenzátory a jak postupovat?",
       "answer": "Kondenzátor může držet vysoké napětí i dlouho po odpojení. Před prací se musí bezpečně vybít přes vhodný rezistor nebo vybíjecí přípravek a měřením ověřit, že na něm napětí není."
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátory 10 μF, 22 μF a 47 μF paralelně. Výsledná kapacita v μF =",
+      "answers": [
+        "79"
+      ],
+      "explanation": "Paralelně se kapacity sčítají: 10 + 22 + 47 = 79 μF."
+    },
+    {
+      "type": "input",
+      "question": "Dva kondenzátory po 100 μF sériově. Výsledná kapacita v μF =",
+      "answers": [
+        "50"
+      ],
+      "explanation": "100 · 100 / 200 = 50 μF. Sériově je výsledek menší než nejmenší kondenzátor."
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátor 500 μF se nabíjí přes rezistor 2 kΩ. Za kolik sekund je prakticky nabitý?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "τ = R · C = 2 000 · 0,0005 = 1 s. Prakticky nabitý je za 5τ = 5 s.",
+      "hints": [
+        "Nejdřív spočítej časovou konstantu τ = R · C.",
+        "Prakticky nabitý je kondenzátor za 5τ."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Dva bodové náboje 2 μC a 3 μC jsou ve vzduchu 0,3 m od sebe. Síla mezi nimi v N =",
+      "answers": [
+        "0,6"
+      ],
+      "explanation": "F = 9 · 10⁹ · 2 · 10⁻⁶ · 3 · 10⁻⁶ / 0,09 = 0,054 / 0,09 = 0,6 N.",
+      "hints": [
+        "Použij Coulombův zákon, k ≈ 9 · 10⁹ N·m²/C².",
+        "Vzdálenost umocni na druhou: 0,3² = 0,09."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kondenzátor s označením 100 μF / 35 V připojíš na 48 V. Co hrozí?",
+      "options": [
+        "nic, jen se nabije víc",
+        "dielektrikum prorazí a kondenzátor se zničí",
+        "kondenzátor se vůbec nenabije",
+        "zmenší se jeho kapacita na polovinu"
+      ],
+      "answer": 1,
+      "explanation": "35 V je jmenovité napětí. Při jeho překročení dielektrikum prorazí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Siločáry elektrostatického pole vedou od záporného náboje ke kladnému.",
+      "answer": false,
+      "explanation": "Siločáry vedou od kladného náboje k zápornému."
     }
   ]
 }

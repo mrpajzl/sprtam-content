@@ -407,6 +407,60 @@
       "type": "open",
       "question": "Jaké ztráty vznikají v transformátoru a na čem závisí?",
       "answer": "Ztráty v železe vznikají přemagnetováním jádra (hystereze) a vířivými proudy; téměř nezávisí na zatížení. Ztráty ve vinutí jsou Joulovo teplo R · I², rostou s druhou mocninou proudu, tedy se zatížením."
+    },
+    {
+      "type": "input",
+      "question": "Primár má 920 závitů a je na 230 V. Kolik závitů potřebuje sekundár pro 24 V?",
+      "answers": [
+        "96"
+      ],
+      "explanation": "N₂ = N₁ · U₂ / U₁ = 920 · 24 / 230 = 96 závitů.",
+      "hints": [
+        "Napětí jsou ve stejném poměru jako počty závitů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ovládací transformátor 400/24 V, 240 VA. Jmenovitý primární proud v A =",
+      "answers": [
+        "0,6"
+      ],
+      "explanation": "I₁ ≈ S / U₁ = 240 / 400 = 0,6 A."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se transformátor mírně hřeje, i když k němu není připojená žádná zátěž?",
+      "options": [
+        "ztrátami ve vinutí při plném proudu",
+        "ztrátami v železe (hystereze a vířivé proudy)",
+        "zkratem na sekundáru",
+        "protože mění frekvenci"
+      ],
+      "answer": 1,
+      "explanation": "Ztráty v železe skoro nezávisí na zatížení, vznikají i naprázdno."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se při přenosu stejného výkonu zvýší napětí desetkrát, ztráty ve vedení klesnou stokrát.",
+      "answer": true,
+      "explanation": "Proud klesne desetkrát a ztráty R · I² závisí na druhé mocnině proudu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Transformátor mění frekvenci střídavého napětí.",
+      "answer": false,
+      "explanation": "Mění velikost napětí a proudu, frekvence zůstává stejná."
+    },
+    {
+      "type": "choice",
+      "question": "K transformátoru 230/12 V, 100 VA chceš připojit tři žárovky 12 V / 35 W. Je to v pořádku?",
+      "options": [
+        "ano, napětí žárovek odpovídá sekundáru",
+        "ano, transformátor se vybírá jen podle napětí",
+        "ne, dohromady odebírají 105 VA, víc než 100 VA"
+      ],
+      "answer": 2,
+      "explanation": "3 · 35 = 105 W, u žárovek je to 105 VA. Součet zátěží nesmí překročit jmenovitý výkon S."
     }
   ]
 }

@@ -384,6 +384,69 @@
       "type": "open",
       "question": "Proč vzniká při vypnutí cívky přepětí a jak se proti němu elektronika chrání?",
       "answer": "Cívka se brání změně proudu (vlastní indukce). Při rychlém vypnutí je ΔI/Δt velké, takže se indukuje vysoké napětí. Chrání se nulovou diodou paralelně k cívce, RC členem nebo varistorem."
+    },
+    {
+      "type": "input",
+      "question": "Cívka má 500 závitů. Tok v ní vzroste z 0 na 2 mWb za 0,05 s. Indukované napětí ve V (velikost) =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "Uᵢ = N · ΔΦ / Δt = 500 · 0,002 / 0,05 = 20 V.",
+      "hints": [
+        "Miliwebery převeď na webery.",
+        "Použij Faradayův zákon."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Cívka s indukčností 0,2 H: proud se změní o 0,5 A za 0,01 s. Indukované napětí ve V (velikost) =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Uᵢ = L · ΔI / Δt = 0,2 · 0,5 / 0,01 = 10 V.",
+      "hints": [
+        "Jde o vlastní indukci: Uᵢ = L · ΔI / Δt."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kudy vedou indukční čáry vně tyčového magnetu?",
+      "options": [
+        "od jižního pólu k severnímu",
+        "od severního pólu k jižnímu",
+        "ze středu magnetu ven k oběma pólům"
+      ],
+      "answer": 1,
+      "explanation": "Vně magnetu vedou čáry od N k S a uvnitř magnetu se uzavírají."
+    },
+    {
+      "type": "truefalse",
+      "question": "Silný magnet padá měděnou trubkou pomaleji, než kdyby padal volně vedle ní.",
+      "answer": true,
+      "explanation": "V trubce se indukují vířivé proudy, které podle Lenzova zákona brání změně a magnet brzdí."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou magnetickou indukci má přibližně magnetické pole Země?",
+      "options": [
+        "asi 1 T",
+        "asi 0,5 T",
+        "asi 50 T",
+        "asi 50 μT"
+      ],
+      "answer": 3,
+      "explanation": "Pole Země má asi 0,00005 T = 50 μT. Silný neodymový magnet má u povrchu asi 1 T."
+    },
+    {
+      "type": "input",
+      "question": "Na vodič délky 0,3 m s proudem 8 A kolmo k poli působí síla 1,2 N. Magnetická indukce v T =",
+      "answers": [
+        "0,5"
+      ],
+      "explanation": "B = F / (I · l) = 1,2 / (8 · 0,3) = 1,2 / 2,4 = 0,5 T.",
+      "hints": [
+        "Vyjdi z F = B · I · l a vyjádři B."
+      ]
     }
   ]
 }

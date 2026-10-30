@@ -383,6 +383,67 @@
       "type": "open",
       "question": "Odvoď ze vzorce P = U · I a Ohmova zákona další dva tvary vzorce pro výkon.",
       "answer": "Dosadím U = R · I a dostanu P = R · I². Dosadím I = U / R a dostanu P = U² / R."
+    },
+    {
+      "type": "input",
+      "question": "Rychlovarná konvice s výkonem 2 kW běží 6 minut. Spotřeba v kWh =",
+      "answers": [
+        "0,2"
+      ],
+      "explanation": "6 min = 0,1 h. W = 2 · 0,1 = 0,2 kWh.",
+      "hints": [
+        "Minuty převeď na hodiny."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Ohřívač s příkonem 3 kW běží denně 2 hodiny. Spotřeba za 30 dní v kWh =",
+      "answers": [
+        "180"
+      ],
+      "explanation": "Za den 3 · 2 = 6 kWh, za 30 dní 6 · 30 = 180 kWh."
+    },
+    {
+      "type": "choice",
+      "question": "Motor má příkon 4 kW a účinnost 75 %. Jaký je jeho výkon na hřídeli?",
+      "options": [
+        "5,33 kW",
+        "3 kW",
+        "1 kW",
+        "4,75 kW"
+      ],
+      "answer": 1,
+      "explanation": "P = η · P₀ = 0,75 · 4 = 3 kW. Zbylý 1 kW jsou ztráty."
+    },
+    {
+      "type": "input",
+      "question": "Rezistor 1 kΩ má dovolené zatížení 0,4 W. Největší proud v mA =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "I² = P / R = 0,4 / 1 000 = 0,0004, I = 0,02 A = 20 mA.",
+      "hints": [
+        "Použij P = R · I² a vyjádři proud.",
+        "Odpor převeď na ohmy a výsledek odmocni."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jeden watt je jeden joule za hodinu.",
+      "answer": false,
+      "explanation": "1 W = 1 J/s, tedy joule za sekundu."
+    },
+    {
+      "type": "choice",
+      "question": "Topné těleso se stálým odporem připojíš místo na 230 V na 115 V. Jak se změní jeho výkon?",
+      "options": [
+        "klesne na polovinu",
+        "nezmění se",
+        "klesne na čtvrtinu",
+        "zdvojnásobí se"
+      ],
+      "answer": 2,
+      "explanation": "P = U² / R. Poloviční napětí znamená čtvrtinový výkon."
     }
   ]
 }

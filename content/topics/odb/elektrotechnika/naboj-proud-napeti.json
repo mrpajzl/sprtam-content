@@ -441,6 +441,91 @@
       "type": "open",
       "question": "Popiš, z čeho se skládá jednoduchý elektrický obvod a co je potřeba, aby jím tekl proud.",
       "answer": "Obvod tvoří zdroj napětí, spotřebič, vodiče a obvykle spínač. Proud teče jen tehdy, když je obvod uzavřený a zdroj vytváří napětí."
+    },
+    {
+      "type": "input",
+      "question": "Kolik je 2 500 mA v ampérech? A =",
+      "answers": [
+        "2,5"
+      ],
+      "explanation": "1 000 mA = 1 A, takže 2 500 mA = 2,5 A.",
+      "hints": [
+        "Mili znamená tisícina."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Akumulátor má kapacitu 3 000 mAh a dodává proud 500 mA. Kolik hodin teoreticky vydrží? h =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "t = Q / I = 3 000 mAh / 500 mA = 6 h.",
+      "hints": [
+        "Kapacita je náboj: Q = I · t.",
+        "Vyděl kapacitu proudem, jednotky mA se zkrátí."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zapojuje ampérmetr?",
+      "options": [
+        "paralelně ke spotřebiči",
+        "přímo na póly zdroje",
+        "do série se spotřebičem"
+      ],
+      "answer": 2,
+      "explanation": "Ampérmetr měří proud, který jím musí protékat, proto se obvod rozpojí a měřák se vloží do série."
+    },
+    {
+      "type": "truefalse",
+      "question": "Elektrony se v kovovém vodiči ve skutečnosti pohybují od záporného pólu zdroje ke kladnému.",
+      "answer": true,
+      "explanation": "Technický směr proudu (od + k −) je jen dohoda. Elektrony se pohybují opačně."
+    },
+    {
+      "type": "choice",
+      "question": "Který z materiálů je izolant?",
+      "options": [
+        "měď",
+        "hliník",
+        "PVC",
+        "ocel"
+      ],
+      "answer": 2,
+      "explanation": "PVC nemá volné náboje, proto se z něj dělá izolace kabelů. Kovy jsou vodiče."
+    },
+    {
+      "type": "input",
+      "question": "Vodičem teče proud 4 A po dobu 3 minut. Náboj v C =",
+      "answers": [
+        "720"
+      ],
+      "explanation": "t = 3 min = 180 s. Q = I · t = 4 · 180 = 720 C.",
+      "hints": [
+        "Čas převeď na sekundy."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj předponu s jejím významem.",
+      "pairs": [
+        [
+          "mili (m)",
+          "tisícina"
+        ],
+        [
+          "mikro (μ)",
+          "miliontina"
+        ],
+        [
+          "kilo (k)",
+          "tisíc"
+        ],
+        [
+          "mega (M)",
+          "milion"
+        ]
+      ]
     }
   ]
 }

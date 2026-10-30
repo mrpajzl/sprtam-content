@@ -401,6 +401,66 @@
       "type": "open",
       "question": "Na čem závisí odpor vodiče? Vysvětli, proč se dlouhé prodlužovačky dělají s větším průřezem.",
       "answer": "Odpor závisí na materiálu (rezistivitě), délce, průřezu a teplotě: R = ρ · l / S. Dlouhý kabel má velký odpor, proto se volí větší průřez, aby na něm nebyl velký úbytek napětí a nehřál se."
+    },
+    {
+      "type": "input",
+      "question": "Rezistorem 220 Ω teče proud 50 mA. Napětí na něm ve V =",
+      "answers": [
+        "11"
+      ],
+      "explanation": "50 mA = 0,05 A. U = R · I = 220 · 0,05 = 11 V.",
+      "hints": [
+        "Nejdřív převeď miliampéry na ampéry."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vodič má odpor 0,25 Ω. Jeho vodivost v S =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "G = 1 / R = 1 / 0,25 = 4 S."
+    },
+    {
+      "type": "input",
+      "question": "Hliníkový vodič: ρ = 0,028 Ω·mm²/m, délka 100 m, průřez 4 mm². Odpor v Ω =",
+      "answers": [
+        "0,7"
+      ],
+      "explanation": "R = ρ · l / S = 0,028 · 100 / 4 = 0,7 Ω.",
+      "hints": [
+        "Dosaď do R = ρ · l / S."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Při napětí 12 V teče rezistorem proud 3 mA. Jaký má odpor?",
+      "options": [
+        "4 Ω",
+        "40 Ω",
+        "4 kΩ",
+        "36 mΩ"
+      ],
+      "answer": 2,
+      "explanation": "3 mA = 0,003 A. R = U / I = 12 / 0,003 = 4 000 Ω = 4 kΩ."
+    },
+    {
+      "type": "input",
+      "question": "Měděné vinutí má při 20 °C odpor 5 Ω. Jaký má odpor při 45 °C (α = 0,004 K⁻¹)? Ω =",
+      "answers": [
+        "5,5"
+      ],
+      "explanation": "Δt = 25 K. R = 5 · (1 + 0,004 · 25) = 5 · 1,1 = 5,5 Ω.",
+      "hints": [
+        "Spočítej rozdíl teplot.",
+        "Dosaď do R = R₂₀ · (1 + α · Δt)."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Graf závislosti proudu na napětí u rezistoru při stálé teplotě je parabola.",
+      "answer": false,
+      "explanation": "Proud je přímo úměrný napětí, grafem je přímka procházející počátkem."
     }
   ]
 }
