@@ -547,6 +547,53 @@
       "type": "open",
       "question": "Proč se řekne „Je l’attends“, i když česky říkáme „čekám na něj“?",
       "answer": "Protože francouzské *attendre* má předmět bez předložky (přímý), takže ho nahradí *le/la/les*. Rozhoduje francouzské sloveso, ne čeština."
+    },
+    {
+      "type": "choice",
+      "question": "Tu connais ces filles ? Oui, je ___ connais.",
+      "options": [
+        "la",
+        "les",
+        "leur"
+      ],
+      "answer": 1,
+      "explanation": "*ces filles* = množné číslo, přímý předmět (*connaître* bez předložky) → *les*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Tu prends la voiture ? – Oui, je le prends.“ je správně, protože česky řekneš „beru ho (auto)“.",
+      "answer": false,
+      "explanation": "Rod se řídí francouzským slovem: *la voiture* je ženského rodu → *Je la prends.*"
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí slovesa *acheter*: Ta robe ? Je l’ai ___ hier.",
+      "answers": [
+        "achetée"
+      ],
+      "explanation": "Přímé zájmeno *l’* (= *la robe*) stojí před *avoir*, proto se příčestí shoduje: *achetée*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Neposlouchej ho!“ (tykání, sloveso *écouter*)?",
+      "options": [
+        "N’écoute-le pas !",
+        "Ne l’écoute pas !",
+        "Écoute-le pas !"
+      ],
+      "answer": 1,
+      "explanation": "V záporném rozkazu stojí zájmeno před slovesem; před samohláskou *le → l’*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty „Chci je vidět.“",
+      "items": [
+        "Je",
+        "veux",
+        "les",
+        "voir"
+      ],
+      "explanation": "Je-li ve větě infinitiv, stojí zájmeno před ním: *Je veux les voir.*"
     }
   ]
 }

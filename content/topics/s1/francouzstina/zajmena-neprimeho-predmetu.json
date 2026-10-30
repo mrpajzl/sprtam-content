@@ -513,6 +513,53 @@
       "type": "open",
       "question": "Řekni francouzsky, komu co daruješ k Vánocům, a použij *lui* a *leur*.",
       "answer": "Například: *À ma sœur, je lui offre un livre. À mes parents, je leur offre un voyage. À mon ami, je lui donne un jeu.*"
+    },
+    {
+      "type": "choice",
+      "question": "Ce film plaît à tes amis ? Oui, il ___ plaît.",
+      "options": [
+        "les",
+        "leur",
+        "lui"
+      ],
+      "answer": 1,
+      "explanation": "*plaire à* + víc osob → *leur*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Tu dis bonjour à ta voisine ? Oui, je ___ dis bonjour.",
+      "answers": [
+        "lui"
+      ],
+      "explanation": "*dire à* + jedna osoba → *lui* (i u ženy)."
+    },
+    {
+      "type": "choice",
+      "question": "Nahraď obě části: Je donne les photos à mes parents.",
+      "options": [
+        "Je leur les donne.",
+        "Je les leur donne.",
+        "Je les lui donne."
+      ],
+      "answer": 1,
+      "explanation": "*les photos* → *les*, *à mes parents* → *leur*. Pořadí: *le, la, les* před *lui, leur*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Je l’ai téléphoné hier.“ (o kamarádce) je správně.",
+      "answer": false,
+      "explanation": "*téléphoner à* má nepřímý předmět → *Je lui ai téléphoné hier.*"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Odpověz jim!“ (tykání)?",
+      "options": [
+        "Leur réponds !",
+        "Réponds-les !",
+        "Réponds-leur !"
+      ],
+      "answer": 2,
+      "explanation": "Kladný rozkaz: zájmeno za slovesem se spojovníkem; *répondre à* + víc osob → *leur*."
     }
   ]
 }
