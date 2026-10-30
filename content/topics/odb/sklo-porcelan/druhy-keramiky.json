@@ -407,6 +407,72 @@
       "type": "open",
       "question": "Popiš čtyři hlavní druhy keramiky.",
       "answer": "Hrnčina má pórovitý barevný střep a nízký výpal. Fajáns (majolika) je hrnčina s bílou cíničitou glazurou. Kamenina je slinutá, nepropustná a šedá až hnědá. Porcelán je z kaolínu, živce a křemene, bílý, slinutý a průsvitný."
+    },
+    {
+      "type": "choice",
+      "question": "Kapka vody se na nepolévaném dně talíře rychle vsákne. Jaký má talíř střep?",
+      "options": [
+        "slinutý",
+        "pórovitý",
+        "průsvitný"
+      ],
+      "answer": 1,
+      "explanation": "Vodu nasává pórovitý střep s drobnými dutinkami (hrnčina, fajáns). Slinutý střep vodu skoro nepřijímá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kamenina je v tenké vrstvě průsvitná stejně jako porcelán.",
+      "answer": false,
+      "explanation": "Kamenina je slinutá, ale šedá až hnědá a neprůsvitná. Průsvitný je jen porcelán."
+    },
+    {
+      "type": "choice",
+      "question": "Džbán po lehkém poklepu nehtem zní tupě. Co z toho můžeš usoudit?",
+      "options": [
+        "je to určitě porcelán",
+        "může jít o hrnčinu, nebo o prasklý kus",
+        "je to jistě nepoškozená kamenina"
+      ],
+      "answer": 1,
+      "explanation": "Tupě zní hrnčina, ale také prasklý kus. Nepoškozený porcelán jasně zvoní."
+    },
+    {
+      "type": "input",
+      "question": "Fajáns má bílou neprůhlednou glazuru s oxidem cíničitým. Jak se taková glazura nazývá? (jedno slovo: ___ glazura)",
+      "answers": [
+        "cíničitá",
+        "ciničitá",
+        "cínová"
+      ],
+      "explanation": "Cíničitá glazura obsahuje oxid cíničitý, a proto je bílá a neprůhledná."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh keramiky s jeho střepem.",
+      "pairs": [
+        [
+          "hrnčina",
+          "pórovitý, červený nebo hnědý"
+        ],
+        [
+          "fajáns",
+          "pórovitý pod bílou glazurou"
+        ],
+        [
+          "kamenina",
+          "slinutý, šedý až hnědý"
+        ],
+        [
+          "porcelán",
+          "slinutý, bílý, průsvitný"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Název majolika vznikl podle ostrova Mallorka.",
+      "answer": true,
+      "explanation": "Majolika je italské označení odvozené od Mallorky, fajáns se jmenuje podle města Faenza."
     }
   ]
 }
