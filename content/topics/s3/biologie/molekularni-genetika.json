@@ -441,6 +441,86 @@
       "type": "open",
       "question": "Jaké druhy mutací rozlišujeme?",
       "answer": "Genové (bodové – změna nukleotidů), chromozomové (změna stavby chromozomu – delece, duplikace, translokace) a genomové (změna počtu chromozomů – např. trizomie)."
+    },
+    {
+      "type": "input",
+      "question": "Jeden řetězec DNA je GGCAT. Napiš komplementární řetězec.",
+      "answers": [
+        "CCGTA"
+      ],
+      "explanation": "G–C, G–C, C–G, A–T, T–A → CCGTA.",
+      "hints": [
+        "Páruj A–T a G–C."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Templátové vlákno DNA má úsek TTA. Jaký kodon vznikne na mRNA?",
+      "answers": [
+        "AAU"
+      ],
+      "explanation": "T → A, T → A, A → U → AAU.",
+      "hints": [
+        "V RNA není T – proti A se vkládá U."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kódující část mRNA má 450 nukleotidů (bez stop kodonu). Kolik aminokyselin bude mít bílkovina?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "450 : 3 = 150 aminokyselin.",
+      "hints": [
+        "Jedna aminokyselina = jeden kodon = 3 nukleotidy."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který cukr obsahuje RNA?",
+      "options": [
+        "deoxyribózu",
+        "glukózu",
+        "ribózu",
+        "fruktózu"
+      ],
+      "answer": 2,
+      "explanation": "RNA má ribózu, DNA deoxyribózu."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik různých kodonů lze sestavit ze 4 bází?",
+      "options": [
+        "16",
+        "20",
+        "64",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "4 · 4 · 4 = 64 trojic."
+    },
+    {
+      "type": "choice",
+      "question": "Ztráta části chromozomu je…",
+      "options": [
+        "duplikace",
+        "delece",
+        "translokace"
+      ],
+      "answer": 1,
+      "explanation": "Delece = ztráta, duplikace = zdvojení, translokace = přesun části chromozomu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Genetický kód je téměř univerzální – většina organismů čte kodony stejně.",
+      "answer": true,
+      "explanation": "Proto lze např. lidský gen přečíst i v bakterii."
+    },
+    {
+      "type": "truefalse",
+      "question": "Transkripce probíhá na ribozomech v cytoplazmě.",
+      "answer": false,
+      "explanation": "Transkripce probíhá v jádře, na ribozomech probíhá translace."
     }
   ]
 }

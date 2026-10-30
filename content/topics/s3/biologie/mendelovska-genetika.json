@@ -368,6 +368,93 @@
       "type": "open",
       "question": "Proč trpí hemofilií častěji muži než ženy?",
       "answer": "Gen je recesivní a leží na chromozomu X. Muž má jen jeden X, takže se projeví hned. Žena potřebuje dvě recesivní alely, s jednou je jen přenašečka."
+    },
+    {
+      "type": "choice",
+      "question": "Zkřížíš AA × aa. Jaký genotyp budou mít potomci F1?",
+      "options": [
+        "všichni AA",
+        "všichni Aa",
+        "polovina AA, polovina aa",
+        "1 AA : 2 Aa : 1 aa"
+      ],
+      "answer": 1,
+      "explanation": "1. Mendelův zákon – uniformita F1: všichni Aa."
+    },
+    {
+      "type": "input",
+      "question": "Kolik procent potomků z křížení Aa × Aa bude heterozygotních (Aa)?",
+      "answers": [
+        "50",
+        "50 %"
+      ],
+      "explanation": "Dvě ze čtyř políček jsou Aa → 50 %.",
+      "hints": [
+        "Nakresli kombinační čtverec 2 × 2 a spočítej políčka Aa."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik druhů gamet tvoří heterozygot AaBb?",
+      "answers": [
+        "4",
+        "čtyři",
+        "ctyri"
+      ],
+      "explanation": "AB, Ab, aB, ab."
+    },
+    {
+      "type": "choice",
+      "question": "Otec je daltonik (XᵈY), matka je zdravá a není přenašečka (XᴰXᴰ). Jaké budou jejich dcery?",
+      "options": [
+        "všechny daltonistky",
+        "všechny přenašečky",
+        "polovina přenašečky",
+        "všechny zdravé bez alely d"
+      ],
+      "answer": 1,
+      "explanation": "Dcery dostanou od otce Xᵈ a od matky Xᴰ → XᴰXᵈ, přenašečky."
+    },
+    {
+      "type": "choice",
+      "question": "Jedinec má genotyp aa. Je…",
+      "options": [
+        "dominantní homozygot",
+        "heterozygot",
+        "recesivní homozygot"
+      ],
+      "answer": 2,
+      "explanation": "Dvě stejné recesivní alely = recesivní homozygot."
+    },
+    {
+      "type": "truefalse",
+      "question": "Fenotyp je soubor alel, které jedinec má.",
+      "answer": false,
+      "explanation": "To je genotyp. Fenotyp je, jak jedinec vypadá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při zpětném křížení Aa × aa se mezi potomky může objevit recesivní fenotyp.",
+      "answer": true,
+      "explanation": "Polovina potomků bude aa – tím se prozradí, že rodič byl Aa."
+    },
+    {
+      "type": "match",
+      "question": "Spoj označení s významem.",
+      "pairs": [
+        [
+          "P",
+          "rodiče"
+        ],
+        [
+          "F1",
+          "1. generace potomků"
+        ],
+        [
+          "F2",
+          "potomci F1 mezi sebou"
+        ]
+      ]
     }
   ]
 }
