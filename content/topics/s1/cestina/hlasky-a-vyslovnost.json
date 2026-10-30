@@ -443,6 +443,93 @@
       "type": "open",
       "question": "Jak rozdělujeme české hlásky?",
       "answer": "Na samohlásky (krátké, dlouhé, dvojhlásky) a souhlásky. Souhlásky jsou znělé a neznělé; párové tvoří dvojice (b–p, z–s…), jedinečné m, n, ň, l, r, j jsou vždy znělé."
+    },
+    {
+      "type": "input",
+      "question": "Kolik hlásek má slovo „chata“?",
+      "answers": [
+        "4",
+        "čtyři"
+      ],
+      "hints": [
+        "Pozor: ch je jedna hláska, i když ji píšeme dvěma písmeny."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se vysloví slovo „vstát“?",
+      "options": [
+        "[vstát]",
+        "[fstát]",
+        "[fzdát]",
+        "[vzdát]"
+      ],
+      "answer": 1,
+      "explanation": "Neznělé s ovlivní předchozí v → [f]."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se vysloví slovo „květ“?",
+      "options": [
+        "[gvjet]",
+        "[kfjet]",
+        "[kvjet]",
+        "[gfjet]"
+      ],
+      "answer": 2,
+      "explanation": "Souhláska v souhlásku před sebou neozvučí, k zůstává neznělé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově „smlouva“ vyslovujeme [z], protože m je znělé.",
+      "answer": false,
+      "explanation": "M je jedinečná souhláska a spodobu nezpůsobuje: [smlouva]."
+    },
+    {
+      "type": "input",
+      "question": "Jaký je znělý protějšek souhlásky č?",
+      "answers": [
+        "dž"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově je slabikotvorné l?",
+      "options": [
+        "vlk",
+        "lano",
+        "kolo",
+        "lev"
+      ],
+      "answer": 0,
+      "explanation": "Ve slově vlk tvoří l jádro slabiky, samohláska tam není."
+    },
+    {
+      "type": "choice",
+      "question": "Co platí o souhlásce ň?",
+      "options": [
+        "Je neznělá a párová.",
+        "Je znělá a párová.",
+        "Je jedinečná a vždy znělá.",
+        "Je to samohláska."
+      ],
+      "answer": 2,
+      "explanation": "Jedinečné souhlásky m, n, ň, l, r, j jsou vždy znělé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při vyslovení samohlásky proudí vzduch ústy volně, bez překážky.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky při určování spodoby znělosti.",
+      "items": [
+        "Najdi skupinu párových souhlásek.",
+        "Urči znělost poslední z nich.",
+        "Předchozí párové souhlásky jí přizpůsob.",
+        "Zkontroluj konec slova před pauzou."
+      ]
     }
   ]
 }

@@ -393,6 +393,103 @@
       "type": "open",
       "question": "Jaké zvukové prostředky věty uplatníš při veřejném projevu?",
       "answer": "Melodii (kadence, antikadence), větný důraz na důležitá slova, vhodné tempo, pauzy a sílu hlasu. Pomáhají srozumitelnosti a udržují pozornost."
+    },
+    {
+      "type": "choice",
+      "question": "Kde je přízvuk ve slově „zmrzlina“?",
+      "options": [
+        "zmrz´lina",
+        "´zmrzlina",
+        "zmrzli´na"
+      ],
+      "answer": 1,
+      "explanation": "Přízvuk je v češtině vždy na první slabice slova."
+    },
+    {
+      "type": "input",
+      "question": "Kolik slabik má slovo „učitelka“?",
+      "answers": [
+        "4",
+        "čtyři"
+      ],
+      "hints": [
+        "Vytleskej si ho: u-či-…"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo ve větě „Učím se.“ nemá vlastní přízvuk?",
+      "options": [
+        "učím",
+        "se"
+      ],
+      "answer": 1,
+      "explanation": "Se je příklonka – připojí se k přízvučnému slovu před sebou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Oznamovací věta „Zítra pojedeme k moři.“ končí stoupavou melodií.",
+      "answer": false,
+      "explanation": "Oznamovací věta končí klesavou melodií (kadence)."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou melodii má rozkaz „Zavři okno!“?",
+      "options": [
+        "stoupavou (antikadence)",
+        "polokadenci",
+        "klesavou (kadence)"
+      ],
+      "answer": 2,
+      "explanation": "Rozkaz i oznámení klesají."
+    },
+    {
+      "type": "choice",
+      "question": "Která otázka je zjišťovací?",
+      "options": [
+        "Kdy přijdeš?",
+        "Kdo to udělal?",
+        "Proč pláčeš?",
+        "Je Petr doma?"
+      ],
+      "answer": 3,
+      "explanation": "Na zjišťovací otázku odpovídáme ano, nebo ne."
+    },
+    {
+      "type": "match",
+      "question": "Spoj větu s melodií na jejím konci.",
+      "pairs": [
+        [
+          "Máš čas?",
+          "antikadence"
+        ],
+        [
+          "Kdy máš čas?",
+          "kadence"
+        ],
+        [
+          "Když budeš mít čas,",
+          "polokadence"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená, že je český přízvuk dynamický?",
+      "options": [
+        "Slabiku vyslovíme silnějším výdechem.",
+        "Slabiku vyslovíme vyšším tónem.",
+        "Samohlásku v ní prodloužíme.",
+        "Mění místo podle slova."
+      ],
+      "answer": 0,
+      "explanation": "Dynamický = silovější, silnějším výdechem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Větným důrazem můžeš změnit smysl věty, i když slova zůstanou stejná.",
+      "answer": true,
+      "explanation": "„**Já** jsem to nevzal.“ znamená něco jiného než „Já jsem to **nevzal**.“"
     }
   ]
 }
