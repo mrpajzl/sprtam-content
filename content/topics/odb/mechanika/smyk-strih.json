@@ -428,6 +428,67 @@
       "type": "open",
       "question": "Kdy střih chceme a kdy ne? Uveď příklady.",
       "answer": "Nechceme ho u spojovacích součástí: čepy, kolíky, nýty, pera – ty se kontrolují, aby se neusekly. Chceme ho při stříhání a děrování plechu a u pojistného střižného kolíku, který se při přetížení záměrně usekne."
+    },
+    {
+      "type": "input",
+      "question": "Ocelový prvek (G = 80 000 MPa) se ve smyku zkosí o úhel γ = 0,001 rad. Jaké je smykové napětí v MPa?",
+      "answers": [
+        "80"
+      ],
+      "explanation": "Hookův zákon ve smyku: τ = G · γ = 80 000 · 0,001 = 80 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Lis vystřihuje čtvercový otvor 20 × 20 mm z plechu tloušťky 2 mm, τ_ps = 300 MPa. Jakou silou musí tlačit (kN)?",
+      "answers": [
+        "48"
+      ],
+      "explanation": "Plocha střihu = obvod × tloušťka = 4 · 20 · 2 = 160 mm². F = 160 · 300 = 48 000 N = 48 kN.",
+      "hints": [
+        "Materiál se odděluje po celém obvodu otvoru.",
+        "Obvod čtverce vynásob tloušťkou plechu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Dva čepy d = 8 mm drží plech tloušťky 5 mm a přenášejí 12 000 N. Jaké je otlačení v MPa?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "p = F / (i · d · t) = 12 000 / (2 · 8 · 5) = 150 MPa.",
+      "hints": [
+        "Otlačení: p = F / (i · d · t)."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ocel má mez pevnosti Rm = 500 MPa. Jakou pevnost ve střihu τ_ps přibližně počítáš?",
+      "options": [
+        "500 MPa",
+        "250 MPa",
+        "400 MPa",
+        "625 MPa"
+      ],
+      "answer": 2,
+      "explanation": "Pro ocel se bere τ_ps ≈ 0,8 · Rm = 0,8 · 500 = 400 MPa."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když děruješ stejný otvor do tlustšího plechu, potřebná síla lisu se zmenší.",
+      "answer": false,
+      "explanation": "Plocha střihu S = π · d · t roste s tloušťkou t, takže síla F = S · τ_ps se zvětší."
+    },
+    {
+      "type": "choice",
+      "question": "Která součást je namáhána hlavně smykem?",
+      "options": [
+        "lano jeřábu",
+        "nýt spojující dva plechy",
+        "sloup haly",
+        "hřídel motoru"
+      ],
+      "answer": 1,
+      "explanation": "Na nýt působí plechy napříč a snaží se ho useknout – to je smyk. Lano je v tahu, sloup v tlaku, hřídel v krutu."
     }
   ]
 }

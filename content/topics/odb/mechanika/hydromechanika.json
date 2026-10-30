@@ -421,6 +421,63 @@
       "type": "open",
       "question": "Jaké bezpečnostní zásady platí při práci s hydraulikou?",
       "answer": "Nepovolovat šroubení ani hadice pod tlakem, tlak nejdřív vypustit. Netěsnosti nehledat rukou, protože olej pod vysokým tlakem pronikne kůží. Zvednuté břemeno podepřít mechanickou podpěrou."
+    },
+    {
+      "type": "input",
+      "question": "Převeď tlak 250 bar na MPa.",
+      "answers": [
+        "25"
+      ],
+      "explanation": "1 bar = 0,1 MPa, takže 250 bar = 25 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Manometr ukazuje přetlak 3 bar. Jaký je přibližně absolutní tlak v bar?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Absolutní tlak = přetlak + atmosférický ≈ 3 + 1 = 4 bar."
+    },
+    {
+      "type": "input",
+      "question": "Potrubím s průřezem 400 mm² proudí olej rychlostí 2 m/s. Jakou rychlostí proudí v zúžení s průřezem 100 mm² (m/s)?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "S₁ · v₁ = S₂ · v₂ → v₂ = 400 · 2 / 100 = 8 m/s.",
+      "hints": [
+        "Použij rovnici spojitosti."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "V jaké hloubce vody je přetlak 1 bar (ρ = 1 000 kg/m³, g = 10 m/s²)? Odpověz v metrech.",
+      "answers": [
+        "10"
+      ],
+      "explanation": "1 bar = 100 000 Pa. h = p / (ρ · g) = 100 000 / (1 000 · 10) = 10 m.",
+      "hints": [
+        "Převeď 1 bar na Pa.",
+        "Vyjádři h z p = h · ρ · g."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hydraulický válec má píst D = 100 mm a tlak oleje 10 MPa. Jakou silou přibližně tlačí?",
+      "options": [
+        "7,85 kN",
+        "314 kN",
+        "78,5 kN",
+        "31,4 kN"
+      ],
+      "answer": 2,
+      "explanation": "S = π · 100² / 4 ≈ 7 854 mm². F = 10 · 7 854 ≈ 78 540 N ≈ 78,5 kN."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když přimáčkneš konec zahradní hadice, voda vytéká pomaleji.",
+      "answer": false,
+      "explanation": "Podle rovnice spojitosti v užším místě kapalina proudí rychleji, proto voda stříká dál."
     }
   ]
 }

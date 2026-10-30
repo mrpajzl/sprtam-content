@@ -397,6 +397,65 @@
       "type": "open",
       "question": "Proč se dlouhé hřídele kontrolují i na úhel zkroucení?",
       "answer": "I když hřídel pevnostně vydrží, může se zkroutit tak, že se jeho konce otáčejí nesouhlasně. To vadí u přesných pohonů, obráběcích strojů nebo pojezdů jeřábů. Úhel φ = Mk · l / (G · Jp) roste s délkou hřídele."
+    },
+    {
+      "type": "input",
+      "question": "Jaký je průřezový modul v krutu Wk plného hřídele d = 20 mm v mm³? (π ≈ 3,14)",
+      "answers": [
+        "1570",
+        "1571"
+      ],
+      "explanation": "Wk = π · d³ / 16 = 3,14 · 8 000 / 16 = 1 570 mm³.",
+      "hints": [
+        "Krut: dělí se 16."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Motor má výkon 3 140 W a otáčky 600 min⁻¹. Jaký krouticí moment dává v N·m? (π ≈ 3,14)",
+      "answers": [
+        "50"
+      ],
+      "explanation": "n = 600 / 60 = 10 s⁻¹, ω = 2 · 3,14 · 10 = 62,8 rad/s. Mk = 3 140 / 62,8 = 50 N·m.",
+      "hints": [
+        "Převeď otáčky na s⁻¹ a spočítej ω = 2 · π · n.",
+        "Mk = P / ω"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolikrát je Wk plného kruhového průřezu větší než jeho Wo v ohybu?",
+      "options": [
+        "jsou stejné",
+        "4×",
+        "2×",
+        "π×"
+      ],
+      "answer": 2,
+      "explanation": "Wk = π · d³ / 16, Wo = π · d³ / 32. Wk je dvakrát větší."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když hřídel při stejném krouticím momentu prodloužíš na dvojnásobek, úhel zkroucení se zdvojnásobí.",
+      "answer": true,
+      "explanation": "φ = Mk · l / (G · Jp) je přímo úměrný délce l."
+    },
+    {
+      "type": "input",
+      "question": "Hřídel přenáší Mk = 160 N·m, Wk = 4 000 mm³. Jaké je napětí v krutu v MPa?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "Mk = 160 000 N·mm. τk = 160 000 / 4 000 = 40 MPa.",
+      "hints": [
+        "Převeď N·m na N·mm."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hřídel, který vyhoví na pevnost v krutu, vyhoví vždy i na tuhost.",
+      "answer": false,
+      "explanation": "Dlouhý hřídel se může zkroutit víc, než je dovoleno, i když se neulomí. Proto se kontroluje pevnost i úhel zkroucení."
     }
   ]
 }

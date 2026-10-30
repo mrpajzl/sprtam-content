@@ -379,6 +379,65 @@
       "type": "open",
       "question": "Vysvětli, co je samosvornost a kde se využívá.",
       "answer": "Těleso na nakloněné rovině samo nesjede, když je sklon menší nebo roven úhlu tření, tedy tg α ≤ f₀. Využívá se u šroubů a matic, klínů a šnekových převodů, které se samy neprotočí zpět."
+    },
+    {
+      "type": "input",
+      "question": "Bedna o hmotnosti 40 kg leží na vodorovné podlaze, f = 0,3, g = 10 m/s². Jaká je třecí síla v N?",
+      "answers": [
+        "120"
+      ],
+      "explanation": "F_N = G = 40 · 10 = 400 N. Ft = 0,3 · 400 = 120 N.",
+      "hints": [
+        "Nejdřív spočítej tíhu G = m · g."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Bedna s klidovým součinitelem f₀ = 0,25 zůstane sama stát na rampě se sklonem 20° (tg 20° ≈ 0,36).",
+      "answer": false,
+      "explanation": "tg 20° ≈ 0,36 je větší než f₀ = 0,25, sklon je větší než úhel tření. Bedna sjede."
+    },
+    {
+      "type": "input",
+      "question": "Bednu o tíze 500 N posouváš po vodorovné podlaze rovnoměrně silou 100 N. Jaký je součinitel tření f?",
+      "answers": [
+        "0,2",
+        "0.2"
+      ],
+      "explanation": "Při rovnoměrném pohybu je tažná síla rovna tření: f = Ft / F_N = 100 / 500 = 0,2.",
+      "hints": [
+        "Vyjádři f ze vztahu Ft = f · F_N."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ložisko je přitlačeno silou F_N = 2 000 N. Mazáním klesne součinitel tření z 0,15 na 0,05. O kolik se zmenší třecí síla?",
+      "options": [
+        "100 N",
+        "200 N",
+        "300 N",
+        "50 N"
+      ],
+      "answer": 1,
+      "explanation": "Bez mazání 0,15 · 2 000 = 300 N, s mazáním 0,05 · 2 000 = 100 N. Rozdíl je 200 N."
+    },
+    {
+      "type": "choice",
+      "question": "Tlačíš skříň po podlaze doprava. Kam míří třecí síla, kterou na skříň působí podlaha?",
+      "options": [
+        "doprava",
+        "doleva",
+        "svisle nahoru",
+        "kolmo do podlahy"
+      ],
+      "answer": 1,
+      "explanation": "Třecí síla působí vždy proti směru pohybu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na nakloněné rovině je normálová síla menší než tíha tělesa.",
+      "answer": true,
+      "explanation": "F_N = G · cos α a cos α je pro sklon větší než 0° menší než 1."
     }
   ]
 }

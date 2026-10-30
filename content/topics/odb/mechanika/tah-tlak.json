@@ -380,6 +380,64 @@
       "type": "open",
       "question": "Proč se používá dovolené napětí a bezpečnost?",
       "answer": "Skutečné zatížení, vlastnosti materiálu i výroba se liší od výpočtu. Proto se nepočítá až k mezi kluzu, ale jen k jejímu zlomku σ_D = Re / k. Bezpečnost k pokrývá nepřesnosti a chrání před trvalou deformací či lomem."
+    },
+    {
+      "type": "input",
+      "question": "Tyč d = 10 mm (S ≈ 78,5 mm²) nese tahovou sílu 7 850 N. Jaké je napětí v MPa?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "σ = F / S = 7 850 / 78,5 = 100 MPa."
+    },
+    {
+      "type": "input",
+      "question": "Ocelová tyč (E = 210 000 MPa) má poměrné prodloužení ε = 0,0005. Jaké je v ní napětí v MPa?",
+      "answers": [
+        "105"
+      ],
+      "explanation": "Hookův zákon: σ = E · ε = 210 000 · 0,0005 = 105 MPa.",
+      "hints": [
+        "Použij σ = E · ε."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tyč dlouhá 1 000 mm s průřezem 100 mm² nese 21 000 N, E = 210 000 MPa. O kolik mm se prodlouží?",
+      "answers": [
+        "1"
+      ],
+      "explanation": "Δl = F · l / (E · S) = 21 000 · 1 000 / (210 000 · 100) = 1 mm.",
+      "hints": [
+        "Δl = F · l / (E · S)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Při návrhu táhla ti vyšel potřebný průměr d = 17,3 mm. Který vyráběný průměr zvolíš?",
+      "options": [
+        "17 mm",
+        "16 mm",
+        "18 mm"
+      ],
+      "answer": 2,
+      "explanation": "Rozměr se při návrhu zaokrouhluje vždy nahoru, jinak by napětí překročilo dovolenou hodnotu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Noha stolu je namáhána tahem.",
+      "answer": false,
+      "explanation": "Deska tlačí na nohu shora, noha je stlačována – je namáhána tlakem."
+    },
+    {
+      "type": "choice",
+      "question": "Ocelová a hliníková tyč stejných rozměrů nesou stejnou tahovou sílu. Která se prodlouží víc?",
+      "options": [
+        "ocelová",
+        "hliníková",
+        "obě stejně"
+      ],
+      "answer": 1,
+      "explanation": "Hliník má menší modul pružnosti (asi 70 000 MPa proti 210 000 MPa u oceli), a proto se prodlouží asi 3× víc."
     }
   ]
 }

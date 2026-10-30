@@ -420,6 +420,61 @@
       "type": "open",
       "question": "Popiš druhy podpor nosníku a jejich reakce.",
       "answer": "Posuvná podpora brání pohybu jen kolmo k podložce a má jednu reakci. Pevná kloubová brání posunutí, ale dovolí otáčení, má vodorovnou a svislou reakci. Vetknutí brání posunutí i otáčení a má dvě silové reakce a moment."
+    },
+    {
+      "type": "input",
+      "question": "Nosník 8 m na podporách A a B, síla 16 kN ve vzdálenosti 2 m od A. Jaká je reakce R_A (kN)?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "Momenty k A: R_B · 8 = 16 · 2 → R_B = 4 kN. R_A = 16 − 4 = 12 kN.",
+      "hints": [
+        "Nejdřív spočítej R_B z momentů k bodu A.",
+        "Součet reakcí se rovná zatížení."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Nosník 10 m na podporách A a B. Síly dolů: 10 kN ve 2 m a 20 kN v 6 m od A. Jaká je reakce R_B (kN)?",
+      "answers": [
+        "14"
+      ],
+      "explanation": "ΣM_A = 0: R_B · 10 = 10 · 2 + 20 · 6 = 140 → R_B = 14 kN.",
+      "hints": [
+        "Napiš momenty obou sil k bodu A."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Posuvná (válečková) podpora zachytí i vodorovnou sílu ve směru podložky.",
+      "answer": false,
+      "explanation": "Posuvná podpora má jen jednu reakci, kolmo k podložce. Vodorovnou sílu musí zachytit kloubová podpora."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nosník s jednou pevnou kloubovou a jednou posuvnou podporou je staticky určitý.",
+      "answer": true,
+      "explanation": "Neznámých reakcí je 2 + 1 = 3, stejně jako podmínek rovnováhy v rovině."
+    },
+    {
+      "type": "input",
+      "question": "Konzola dlouhá 3 m nese 6 kN ve vzdálenosti 1,5 m od vetknutí. Jaký moment působí ve vetknutí (kN·m)?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "Rameno je vzdálenost síly od vetknutí, ne délka konzoly: M = 6 · 1,5 = 9 kN·m."
+    },
+    {
+      "type": "choice",
+      "question": "Na nosník s kloubovou podporou A a posuvnou podporou B působí šikmá síla 20 kN pod úhlem 60° k vodorovné. Jak velká je vodorovná reakce R_Ax?",
+      "options": [
+        "17,3 kN",
+        "10 kN",
+        "20 kN",
+        "0 kN"
+      ],
+      "answer": 1,
+      "explanation": "Vodorovná složka síly je 20 · cos 60° = 10 kN. Posuvná podpora vodorovně nedrží, takže R_Ax = 10 kN opačným směrem."
     }
   ]
 }

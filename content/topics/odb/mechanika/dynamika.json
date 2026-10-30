@@ -394,6 +394,65 @@
       "type": "open",
       "question": "Co je účinnost stroje a proč je vždy menší než 1?",
       "answer": "Účinnost je poměr užitečného výkonu a příkonu, η = P / P_příkon. Část energie se vždy ztratí třením, ohřevem nebo hlukem, a proto je výkon menší než příkon a η < 1."
+    },
+    {
+      "type": "input",
+      "question": "Výtah 400 kg se rozjíždí nahoru se zrychlením 0,5 m/s² (g = 9,81 m/s²). Jakou silou táhne lano (N)?",
+      "answers": [
+        "4124"
+      ],
+      "explanation": "F = m · (g + a) = 400 · (9,81 + 0,5) = 400 · 10,31 = 4 124 N.",
+      "hints": [
+        "Lano musí unést tíhu a ještě výtah zrychlovat."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Auto 800 kg jede rychlostí 10 m/s. Jakou má pohybovou energii v kJ?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "Ek = ½ · m · v² = ½ · 800 · 10² = 40 000 J = 40 kJ."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejné síle má vozík s dvojnásobnou hmotností poloviční zrychlení.",
+      "answer": true,
+      "explanation": "a = F / m – dvojnásobná hmotnost dá poloviční zrychlení."
+    },
+    {
+      "type": "input",
+      "question": "Pohon má dávat výkon 1,8 kW a jeho účinnost je 0,9. Jaký příkon potřebuje (W)?",
+      "answers": [
+        "2000"
+      ],
+      "explanation": "P_příkon = P / η = 1 800 / 0,9 = 2 000 W.",
+      "hints": [
+        "Výkon vyděl účinností."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Hřídel přenáší moment 50 N·m při úhlové rychlosti 100 rad/s. Jaký výkon přenáší?",
+      "options": [
+        "500 W",
+        "0,5 W",
+        "5 000 W",
+        "150 W"
+      ],
+      "answer": 2,
+      "explanation": "P = M · ω = 50 · 100 = 5 000 W."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou situaci vysvětluje 3. Newtonův zákon (akce a reakce)?",
+      "options": [
+        "plný vozík se rozjíždí pomaleji než prázdný",
+        "plavec odtlačuje vodu dozadu, a proto pluje dopředu",
+        "cestující se při brzdění autobusu nakloní dopředu"
+      ],
+      "answer": 1,
+      "explanation": "Plavec působí na vodu a voda na plavce opačnou silou. Vozík je 2. zákon, cestující 1. zákon."
     }
   ]
 }

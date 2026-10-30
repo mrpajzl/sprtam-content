@@ -414,6 +414,68 @@
       "type": "open",
       "question": "Proč je výhodnější položit trám na výšku?",
       "answer": "Průřezový modul obdélníku je Wo = b · h² / 6, výška ve směru zatížení je na druhou. Trám na výšku má proto mnohem větší Wo, menší napětí a menší průhyb než naplocho."
+    },
+    {
+      "type": "input",
+      "question": "Konzola dlouhá 2 m nese na volném konci 5 kN. Jaký je ohybový moment v řezu 0,5 m od volného konce (kN·m)?",
+      "answers": [
+        "2,5",
+        "2.5"
+      ],
+      "explanation": "Sečteš momenty sil na jedné straně řezu – na straně volného konce je jen 5 kN na rameni 0,5 m: Mo = 5 · 0,5 = 2,5 kN·m.",
+      "hints": [
+        "Vezmi síly jen na straně volného konce.",
+        "Rameno je vzdálenost síly od řezu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Prkno má průřez 30 × 120 mm. Kolikrát větší Wo má položené na výšku než naplocho?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Na výšku 30 · 120² / 6, naplocho 120 · 30² / 6. Poměr = 120 / 30 = 4.",
+      "hints": [
+        "Výška h je ve vzorci na druhou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď ohybový moment 4 kN·m na N·mm.",
+      "answers": [
+        "4000000",
+        "4 000 000"
+      ],
+      "explanation": "1 kN = 1 000 N a 1 m = 1 000 mm, takže 4 kN·m = 4 · 10⁶ N·mm."
+    },
+    {
+      "type": "choice",
+      "question": "Nosník má přenést Mo = 2 · 10⁶ N·mm, σ_D = 100 MPa. Jaký nejmenší průřezový modul Wo potřebuješ?",
+      "options": [
+        "200 000 mm³",
+        "20 000 mm³",
+        "2 000 mm³",
+        "200 mm³"
+      ],
+      "answer": 1,
+      "explanation": "Wo ≥ Mo / σ_D = 2 000 000 / 100 = 20 000 mm³."
+    },
+    {
+      "type": "truefalse",
+      "question": "U prostého nosníku se silou uprostřed je největší ohybový moment nad podporami.",
+      "answer": false,
+      "explanation": "Nad podporami je ohybový moment nulový. Největší je uprostřed, Mo = F · l / 4."
+    },
+    {
+      "type": "choice",
+      "question": "Prkno leží na dvou podporách a stojíš uprostřed. Která strana prkna je natažená?",
+      "options": [
+        "horní",
+        "dolní",
+        "žádná"
+      ],
+      "answer": 1,
+      "explanation": "Prkno se prohne dolů: dolní vlákna se prodlužují (tah), horní zkracují (tlak)."
     }
   ]
 }

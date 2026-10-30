@@ -412,6 +412,70 @@
       "type": "open",
       "question": "Jak rozložíš sílu do dvou kolmých směrů?",
       "answer": "Zvolím osy x a y a změřím úhel α síly od osy x. Vodorovná složka je Fx = F · cos α, svislá Fy = F · sin α. Složky mají znaménko podle směru."
+    },
+    {
+      "type": "input",
+      "question": "Na těleso působí F₁ = 150 N doprava, F₂ = 30 N doleva a F₃ = 50 N nahoru. Jak velká je výslednice v N?",
+      "answers": [
+        "130"
+      ],
+      "explanation": "ΣFx = 150 − 30 = 120 N, ΣFy = 50 N. R = √(120² + 50²) = √16 900 = 130 N.",
+      "hints": [
+        "Nejdřív sečti vodorovné složky se znaménky.",
+        "Pak použij R = √(ΣFx² + ΣFy²)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Lano táhne silou 400 N pod úhlem 30° nad vodorovnou rovinou. Jak velká je svislá složka Fy v N?",
+      "answers": [
+        "200"
+      ],
+      "explanation": "Fy = 400 · sin 30° = 400 · 0,5 = 200 N.",
+      "hints": [
+        "Svislá složka používá sinus."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Síla 20 N míří vodorovně doleva. Jaká je její složka Fx?",
+      "options": [
+        "20 N",
+        "−20 N",
+        "0 N",
+        "10 N"
+      ],
+      "answer": 1,
+      "explanation": "Složka doleva je podle dohody záporná: Fx = −20 N."
+    },
+    {
+      "type": "choice",
+      "question": "Dvě kolmé síly mají velikosti 5 kN a 12 kN. Jak velká je výslednice?",
+      "options": [
+        "17 kN",
+        "7 kN",
+        "13 kN",
+        "60 kN"
+      ],
+      "answer": 2,
+      "explanation": "R = √(5² + 12²) = √169 = 13 kN. 17 kN by vyšlo jen pro síly stejným směrem."
+    },
+    {
+      "type": "input",
+      "question": "ΣFx = 50 N a ΣFy = 50 N. Jaký úhel ve stupních svírá výslednice s osou x?",
+      "answers": [
+        "45"
+      ],
+      "explanation": "tg α = ΣFy / ΣFx = 50 / 50 = 1, takže α = 45°.",
+      "hints": [
+        "Použij tg α_R = ΣFy / ΣFx."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Síla 50 N doprava a síla 50 N nahoru mají na těleso stejný účinek, protože jsou stejně velké.",
+      "answer": false,
+      "explanation": "Síla je vektor – záleží i na směru. Každá z nich pohne tělesem jinam."
     }
   ]
 }

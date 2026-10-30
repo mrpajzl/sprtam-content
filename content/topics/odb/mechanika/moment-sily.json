@@ -388,6 +388,63 @@
       "type": "open",
       "question": "Co je dvojice sil a kde ji v praxi najdeš?",
       "answer": "Dvě stejně velké, rovnoběžné síly opačného smyslu, které neleží na jedné přímce. Výslednice je nulová, takže těleso jen otáčejí; moment je M = F · a. Příklad: volant, vratidlo závitníku, kohoutek."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když táhneš za klíč přesně ve směru jeho délky (od matice), je moment k matici nulový.",
+      "answer": true,
+      "explanation": "Nositelka síly prochází osou matice, rameno je 0, a proto M = F · 0 = 0."
+    },
+    {
+      "type": "choice",
+      "question": "Povoluješ běžnou matici s pravým závitem, tedy proti směru hodinových ručiček. Jaké znaménko má moment podle dohody z výkladu?",
+      "options": [
+        "záporné (−)",
+        "kladné (+)",
+        "žádné, moment je nulový"
+      ],
+      "answer": 1,
+      "explanation": "Proti směru hodinových ručiček je podle dohody kladný (+)."
+    },
+    {
+      "type": "input",
+      "question": "Vratidlem závitníku otáčíš dvojicí sil 25 N, ruce jsou od sebe 0,3 m. Jaký je moment dvojice v N·m?",
+      "answers": [
+        "7,5",
+        "7.5"
+      ],
+      "explanation": "M = F · a = 25 · 0,3 = 7,5 N·m."
+    },
+    {
+      "type": "input",
+      "question": "Na tyči působí dolů 2 kN ve vzdálenosti 1 m a 6 kN ve vzdálenosti 5 m od levého konce. Jak daleko od levého konce působí výslednice (m)?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "R = 2 + 6 = 8 kN. ΣM = 2 · 1 + 6 · 5 = 32 kN·m. x = 32 / 8 = 4 m.",
+      "hints": [
+        "Sečti síly a pak momenty k levému konci.",
+        "x = ΣM / R"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "K bodu O působí síla 50 N nahoru ve vzdálenosti 2 m vpravo od O a síla 30 N dolů ve vzdálenosti 4 m vpravo od O. Jaký je součet momentů k bodu O v N·m (proti směru hodinových ručiček +)?",
+      "answers": [
+        "−20",
+        "-20"
+      ],
+      "explanation": "Síla nahoru vpravo otáčí proti směru: +50 · 2 = +100. Síla dolů vpravo otáčí po směru: −30 · 4 = −120. ΣM = −20 N·m, těleso se otáčí po směru hodinových ručiček.",
+      "hints": [
+        "Urči u každé síly smysl otáčení.",
+        "Momenty po směru hodinových ručiček jsou záporné."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Moment dvojice sil závisí na tom, ke kterému bodu ho počítáš.",
+      "answer": false,
+      "explanation": "Moment dvojice sil M = F · a je stejný k libovolnému bodu."
     }
   ]
 }
