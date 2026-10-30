@@ -406,6 +406,86 @@
       "type": "open",
       "question": "Vyjmenuj slovanské jazyky podle skupin.",
       "answer": "Západoslovanské: čeština, slovenština, polština, lužická srbština. Východoslovanské: ruština, ukrajinština, běloruština. Jihoslovanské: slovinština, chorvatština, srbština, bulharština, makedonština."
+    },
+    {
+      "type": "choice",
+      "question": "Který z těchto jazyků je východoslovanský?",
+      "options": [
+        "slovinština",
+        "běloruština",
+        "lužická srbština",
+        "slovenština"
+      ],
+      "answer": 1,
+      "explanation": "Východoslovanské jsou ruština, ukrajinština a běloruština."
+    },
+    {
+      "type": "choice",
+      "question": "Ke které větvi indoevropských jazyků patří litevština?",
+      "options": [
+        "slovanské",
+        "germánské",
+        "baltské",
+        "keltské"
+      ],
+      "answer": 2,
+      "explanation": "Litevština je baltský jazyk."
+    },
+    {
+      "type": "truefalse",
+      "question": "Lužická srbština je jihoslovanský jazyk.",
+      "answer": false,
+      "explanation": "Lužická srbština (v Německu) je západoslovanská. Jihoslovanská je srbština na Balkáně."
+    },
+    {
+      "type": "truefalse",
+      "question": "Finština a estonština patří mezi ugrofinské jazyky.",
+      "answer": true,
+      "explanation": "Spolu s maďarštinou tvoří ugrofinskou skupinu, nejsou indoevropské."
+    },
+    {
+      "type": "choice",
+      "question": "Který typ jazyka mění samohlásky uvnitř kořene (kitáb = kniha, kutub = knihy)?",
+      "options": [
+        "aglutinační",
+        "izolační",
+        "introflexivní",
+        "flektivní"
+      ],
+      "answer": 2,
+      "explanation": "Typickým introflexivním jazykem je arabština."
+    },
+    {
+      "type": "truefalse",
+      "question": "Angličtina je germánský jazyk, a proto je izolační.",
+      "answer": false,
+      "explanation": "Germánská je podle původu, izolační (blížící se) podle stavby. Jsou to dvě nezávislá třídění – germánská němčina má pády."
+    },
+    {
+      "type": "match",
+      "question": "Spoj jazyk se skupinou slovanských jazyků.",
+      "pairs": [
+        [
+          "slovenština",
+          "západoslovanská"
+        ],
+        [
+          "běloruština",
+          "východoslovanská"
+        ],
+        [
+          "makedonština",
+          "jihoslovanská"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje prajazyk, ze kterého vznikly všechny slovanské jazyky?",
+      "answers": [
+        "praslovanština"
+      ],
+      "explanation": "Nemáme z ní texty, vědci ji odvozují ze srovnání slovanských jazyků."
     }
   ]
 }
