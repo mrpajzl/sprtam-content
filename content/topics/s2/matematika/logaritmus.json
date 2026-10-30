@@ -397,6 +397,70 @@
       "type": "open",
       "question": "Jak spolu souvisí exponenciální a logaritmická funkce?",
       "answer": "Jsou navzájem inverzní. Grafy y = aˣ a y = logₐ x jsou souměrné podle přímky y = x, definiční obor a obor hodnot se prohodí."
+    },
+    {
+      "type": "input",
+      "question": "log₄ 64 =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "4³ = 64",
+      "hints": [
+        "4 na kolikátou je 64?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "log 0,01 =",
+      "answers": [
+        "−2",
+        "-2"
+      ],
+      "explanation": "0,01 = 10⁻²",
+      "hints": [
+        "0,01 = 1/100"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "log₂ x = −1, x =",
+      "options": [
+        "−2",
+        "1/2",
+        "2",
+        "−1/2"
+      ],
+      "answer": 1,
+      "explanation": "x = 2⁻¹ = 1/2"
+    },
+    {
+      "type": "truefalse",
+      "question": "log(a + b) = log a + log b pro všechna kladná a, b.",
+      "answer": false,
+      "explanation": "Součet logaritmů je logaritmus součinu: log a + log b = log(a · b)."
+    },
+    {
+      "type": "input",
+      "question": "log₃ 18 − log₃ 2 =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "log₃ (18/2) = log₃ 9 = 2",
+      "hints": [
+        "Rozdíl logaritmů = logaritmus podílu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Graf y = log₂ x prochází bodem:",
+      "options": [
+        "[0; 1]",
+        "[1; 0]",
+        "[1; 1]",
+        "[0; 0]"
+      ],
+      "answer": 1,
+      "explanation": "log₂ 1 = 0. Bod [0; 1] patří grafu y = 2ˣ."
     }
   ]
 }

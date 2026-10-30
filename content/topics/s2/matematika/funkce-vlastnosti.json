@@ -393,6 +393,77 @@
       "type": "open",
       "question": "Kdy existuje inverzní funkce a jak souvisí její graf s grafem původní funkce?",
       "answer": "Inverzní funkce existuje jen k prosté funkci. Její graf je souměrný s grafem původní funkce podle přímky y = x; D a H se prohodí."
+    },
+    {
+      "type": "input",
+      "question": "f(x) = x² − 4x. f(3) =",
+      "answers": [
+        "−3",
+        "-3"
+      ],
+      "explanation": "9 − 12 = −3",
+      "hints": [
+        "Dosaď 3 za každé x."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "D(f) pro f(x) = √(4 − x):",
+      "options": [
+        "⟨4; ∞)",
+        "(−∞; 4)",
+        "(−∞; 4⟩",
+        "ℝ ∖ {4}"
+      ],
+      "answer": 2,
+      "explanation": "4 − x ≥ 0, tedy x ≤ 4. Číslo 4 do D(f) patří, √0 = 0."
+    },
+    {
+      "type": "truefalse",
+      "question": "f(x) = x + 1 je sudá.",
+      "answer": false,
+      "explanation": "f(−x) = −x + 1, to není x + 1. Funkce není ani sudá, ani lichá."
+    },
+    {
+      "type": "choice",
+      "question": "Která funkce je sudá?",
+      "options": [
+        "x³ + x",
+        "2x",
+        "x⁴ − 3",
+        "x + 1"
+      ],
+      "answer": 2,
+      "explanation": "(−x)⁴ − 3 = x⁴ − 3"
+    },
+    {
+      "type": "input",
+      "question": "f(x) = 2x + 4. f⁻¹(10) =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "f⁻¹(y) = (y − 4)/2, (10 − 4)/2 = 3",
+      "hints": [
+        "Hledáš x, pro které 2x + 4 = 10."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kružnice je grafem funkce.",
+      "answer": false,
+      "explanation": "Svislá přímka ji protne dvakrát, jednomu x by patřila dvě y."
+    },
+    {
+      "type": "choice",
+      "question": "Podle čeho na grafu poznáš prostou funkci?",
+      "options": [
+        "Žádná svislá přímka neprotne graf víckrát než jednou.",
+        "Žádná vodorovná přímka neprotne graf víckrát než jednou.",
+        "Graf prochází počátkem.",
+        "Graf je souměrný podle osy y."
+      ],
+      "answer": 1,
+      "explanation": "Svislý test platí pro každou funkci. Prostá funkce nesmí mít dvě různá x se stejným y."
     }
   ]
 }

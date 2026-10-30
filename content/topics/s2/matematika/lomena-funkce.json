@@ -347,6 +347,89 @@
       "type": "open",
       "question": "Jak určíš asymptoty funkce y = k/(x − m) + n?",
       "answer": "Je to hyperbola y = k/x posunutá o m ve směru x a o n ve směru y. Svislá asymptota je x = m, vodorovná y = n."
+    },
+    {
+      "type": "input",
+      "question": "y = −6/x. f(−3) =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "−6/(−3) = 2"
+    },
+    {
+      "type": "choice",
+      "question": "Graf y = −4/x leží v kvadrantech:",
+      "options": [
+        "I. a III.",
+        "II. a IV.",
+        "I. a II.",
+        "III. a IV."
+      ],
+      "answer": 1,
+      "explanation": "Pro k < 0 má y opačné znaménko než x."
+    },
+    {
+      "type": "input",
+      "question": "y = 5/(x + 3) − 1. Svislá asymptota x =",
+      "answers": [
+        "−3",
+        "-3"
+      ],
+      "explanation": "Jmenovatel je nula pro x = −3."
+    },
+    {
+      "type": "truefalse",
+      "question": "Graf y = 2/x protíná osu x.",
+      "answer": false,
+      "explanation": "2/x nikdy není 0, osa x je asymptota."
+    },
+    {
+      "type": "input",
+      "question": "Pizzu si rozdělí 4 kamarádi, každý dostane 3 dílky. Kolik dílků dostane každý, když jich bude 6?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "12 : 6 = 2",
+      "hints": [
+        "Celkem dílků: 4 · 3."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vodorovná asymptota y = (3x − 1)/(x + 2):",
+      "options": [
+        "y = −1/2",
+        "x = −2",
+        "y = 3",
+        "y = −2"
+      ],
+      "answer": 2,
+      "explanation": "y = 3 − 7/(x + 2)",
+      "hints": [
+        "3x − 1 = 3(x + 2) − 7"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj funkci se svislou asymptotou.",
+      "pairs": [
+        [
+          "y = 1/(x − 4)",
+          "x = 4"
+        ],
+        [
+          "y = 2/(x + 1)",
+          "x = −1"
+        ],
+        [
+          "y = 3/x + 5",
+          "x = 0"
+        ],
+        [
+          "y = 1/(x − 7) + 2",
+          "x = 7"
+        ]
+      ]
     }
   ]
 }

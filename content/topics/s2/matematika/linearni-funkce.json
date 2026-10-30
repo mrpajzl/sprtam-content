@@ -339,6 +339,90 @@
       "type": "open",
       "question": "Co je přímá úměrnost? Uveď příklad.",
       "answer": "Funkce y = kx (k ≠ 0): kolikrát se zvětší x, tolikrát y. Příklad: cena = cena za kus · počet kusů."
+    },
+    {
+      "type": "input",
+      "question": "Průsečík y = 4x + 10 s osou x: x =",
+      "answers": [
+        "−2,5",
+        "-2,5",
+        "−5/2",
+        "-5/2"
+      ],
+      "explanation": "4x + 10 = 0 → x = −10/4 = −2,5",
+      "hints": [
+        "Polož y = 0."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která přímka prochází počátkem?",
+      "options": [
+        "y = x + 1",
+        "y = −4x",
+        "y = 2",
+        "y = 3x − 3"
+      ],
+      "answer": 1,
+      "explanation": "Počátkem prochází přímka s q = 0."
+    },
+    {
+      "type": "input",
+      "question": "Přímka prochází body [1; 7] a [4; 1]. k =",
+      "answers": [
+        "−2",
+        "-2"
+      ],
+      "explanation": "(1 − 7)/(4 − 1) = −6/3 = −2",
+      "hints": [
+        "k = (y₂ − y₁)/(x₂ − x₁)"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Přímky y = 2x + 1 a y = −2x + 1 jsou rovnoběžné.",
+      "answer": false,
+      "explanation": "Rovnoběžky mají stejné k. Tady je k = 2 a k = −2."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod [2; 5] leží na grafu y = 3x − 1.",
+      "answer": true,
+      "explanation": "3 · 2 − 1 = 5"
+    },
+    {
+      "type": "input",
+      "question": "V bazénu je 200 l vody a přitéká 50 l za minutu. Za kolik minut tam bude 1 000 l?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "50x = 800 → x = 16",
+      "hints": [
+        "Objem: y = 50x + 200.",
+        "Vyřeš 50x + 200 = 1 000."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj přímku s průsečíkem s osou y.",
+      "pairs": [
+        [
+          "y = 2x + 3",
+          "[0; 3]"
+        ],
+        [
+          "y = −x − 5",
+          "[0; −5]"
+        ],
+        [
+          "y = 4x",
+          "[0; 0]"
+        ],
+        [
+          "y = 6 − x",
+          "[0; 6]"
+        ]
+      ]
     }
   ]
 }

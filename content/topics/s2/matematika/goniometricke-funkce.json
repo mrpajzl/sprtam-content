@@ -400,6 +400,64 @@
       "type": "open",
       "question": "Jak převedeš stupně na radiány a zpět?",
       "answer": "Platí 180° = π rad. Stupně násobím π/180, radiány násobím 180/π. Např. 60° = π/3."
+    },
+    {
+      "type": "input",
+      "question": "cos 180° =",
+      "answers": [
+        "−1",
+        "-1"
+      ],
+      "explanation": "Po půl otočce jsi v bodě [−1; 0]."
+    },
+    {
+      "type": "choice",
+      "question": "sin 60° =",
+      "options": [
+        "1/2",
+        "√2/2",
+        "√3/2",
+        "√3"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "60° v radiánech =",
+      "answers": [
+        "π/3",
+        "pi/3"
+      ],
+      "explanation": "60 · π/180 = π/3"
+    },
+    {
+      "type": "input",
+      "question": "3π/4 rad = ? °",
+      "answers": [
+        "135"
+      ],
+      "explanation": "3 · 180/4 = 135",
+      "hints": [
+        "Vynásob 180/π."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce sin x je sudá.",
+      "answer": false,
+      "explanation": "sin(−x) = −sin x, sinus je lichý."
+    },
+    {
+      "type": "choice",
+      "question": "sin(−30°) =",
+      "options": [
+        "1/2",
+        "−1/2",
+        "−√3/2",
+        "√3/2"
+      ],
+      "answer": 1,
+      "explanation": "Sinus je lichý: sin(−30°) = −sin 30°."
     }
   ]
 }

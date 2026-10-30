@@ -319,6 +319,83 @@
       "type": "open",
       "question": "Jak ovlivňuje koeficient a tvar paraboly?",
       "answer": "Znaménko a určuje směr: a > 0 otevřená nahoru, a < 0 dolů. Velikost |a| určuje šířku: čím větší, tím užší."
+    },
+    {
+      "type": "input",
+      "question": "y = (x + 5)² − 2. x-ová souřadnice vrcholu =",
+      "answers": [
+        "−5",
+        "-5"
+      ],
+      "explanation": "x + 5 = x − (−5), takže m = −5. V[−5; −2]."
+    },
+    {
+      "type": "input",
+      "question": "y = x² + 2x − 8. Kladný průsečík s osou x: x =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Kořeny jsou −4 a 2.",
+      "hints": [
+        "Vyřeš x² + 2x − 8 = 0.",
+        "Rozlož na (x + 4)(x − 2)."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vrchol paraboly y = −2x² + 8x − 3:",
+      "options": [
+        "V[−2; −27]",
+        "V[2; 5]",
+        "V[2; −3]",
+        "V[4; −3]"
+      ],
+      "answer": 1,
+      "explanation": "x₀ = −8/(−4) = 2, y₀ = −8 + 16 − 3 = 5",
+      "hints": [
+        "x₀ = −b/(2a)"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Parabola y = x² + 4 protíná osu x.",
+      "answer": false,
+      "explanation": "x² + 4 ≥ 4, nikdy není 0. Vrchol [0; 4] leží nad osou x a parabola jde nahoru."
+    },
+    {
+      "type": "choice",
+      "question": "H(f) pro y = −(x − 1)² + 6:",
+      "options": [
+        "⟨6; ∞)",
+        "(−∞; 1⟩",
+        "(−∞; 6⟩",
+        "ℝ"
+      ],
+      "answer": 2,
+      "explanation": "a < 0, vrchol V[1; 6] je maximum."
+    },
+    {
+      "type": "input",
+      "question": "Zahradník má 40 m pletiva na obdélníkovou ohradu. Největší možná plocha v m² =",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Čtverec 10 × 10 m, plocha 100 m².",
+      "hints": [
+        "Strany jsou x a 20 − x.",
+        "Plocha y = −x² + 20x, vrchol x₀ = 10."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď paraboly od nejužší po nejširší.",
+      "items": [
+        "y = 3x²",
+        "y = x²",
+        "y = 0,5x²",
+        "y = 0,1x²"
+      ],
+      "explanation": "Čím větší |a|, tím užší parabola."
     }
   ]
 }

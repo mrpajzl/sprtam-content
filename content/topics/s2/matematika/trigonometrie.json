@@ -341,6 +341,73 @@
       "type": "open",
       "question": "Kdy použiješ kosinovou větu?",
       "answer": "Když znám dvě strany a úhel jimi sevřený (počítám třetí stranu), nebo všechny tři strany (počítám úhel)."
+    },
+    {
+      "type": "input",
+      "question": "Pravoúhlý trojúhelník: přepona 10, α = 30°. Protilehlá odvěsna =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "10 · sin 30° = 10 · 1/2 = 5",
+      "hints": [
+        "sin α = protilehlá / přepona"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pravoúhlý trojúhelník má strany 5, 12 a 13. cos α pro úhel naproti straně 5 =",
+      "answers": [
+        "12/13"
+      ],
+      "explanation": "Přilehlá odvěsna 12, přepona 13.",
+      "hints": [
+        "Přepona je nejdelší strana."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Znáš dvě strany a úhel, který svírají. Třetí stranu spočítáš:",
+      "options": [
+        "sinovou větou",
+        "Pythagorovou větou",
+        "kosinovou větou"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "a = 3, b = 5, γ = 120°. c =",
+      "answers": [
+        "7"
+      ],
+      "explanation": "c² = 9 + 25 − 2 · 3 · 5 · (−1/2) = 34 + 15 = 49",
+      "hints": [
+        "cos 120° = −1/2"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "a = 6, b = 10, γ = 150°. Obsah S =",
+      "answers": [
+        "15"
+      ],
+      "explanation": "½ · 6 · 10 · ½ = 15",
+      "hints": [
+        "S = ½ab sin γ",
+        "sin 150° = sin 30°"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V pravoúhlém trojúhelníku platí sin α = přilehlá / přepona.",
+      "answer": false,
+      "explanation": "sin α = protilehlá / přepona, přilehlá patří ke kosinu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Je-li úhel γ tupý, je c² větší než a² + b².",
+      "answer": true,
+      "explanation": "cos γ < 0, takže − 2ab cos γ je kladné číslo."
     }
   ]
 }

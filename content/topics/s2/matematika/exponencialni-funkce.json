@@ -378,6 +378,93 @@
       "type": "open",
       "question": "Jak řešíš exponenciální rovnici typu 4ˣ = 8?",
       "answer": "Obě strany převedu na mocniny stejného základu (2²ˣ = 2³). Exponenciální funkce je prostá, proto se rovnají exponenty: 2x = 3, x = 3/2."
+    },
+    {
+      "type": "input",
+      "question": "10ˣ = 0,001, x =",
+      "answers": [
+        "−3",
+        "-3"
+      ],
+      "explanation": "0,001 = 1/10³ = 10⁻³",
+      "hints": [
+        "0,001 = 1/1000"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "8ˣ = 4, x =",
+      "answers": [
+        "2/3"
+      ],
+      "explanation": "2³ˣ = 2² → 3x = 2 → x = 2/3",
+      "hints": [
+        "Převeď obě strany na základ 2."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "2ˣ⁻³ = 16, x =",
+      "options": [
+        "4",
+        "7",
+        "19",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "16 = 2⁴, tedy x − 3 = 4."
+    },
+    {
+      "type": "truefalse",
+      "question": "Graf y = 3ˣ protíná osu x.",
+      "answer": false,
+      "explanation": "3ˣ je vždy kladné, osa x je asymptota."
+    },
+    {
+      "type": "input",
+      "question": "Auto za 400 000 Kč ztratí každý rok 20 % své hodnoty. Hodnota po 2 letech (Kč) =",
+      "answers": [
+        "256000",
+        "256 000"
+      ],
+      "explanation": "400 000 · 0,8² = 400 000 · 0,64 = 256 000",
+      "hints": [
+        "Pokles o 20 % = násobení 0,8."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakým číslem násobíš při růstu o 5 %?",
+      "options": [
+        "0,05",
+        "1,5",
+        "1,05",
+        "0,95"
+      ],
+      "answer": 2,
+      "explanation": "100 % + 5 % = 105 % = 1,05"
+    },
+    {
+      "type": "match",
+      "question": "Spoj rovnici s řešením.",
+      "pairs": [
+        [
+          "2ˣ = 64",
+          "6"
+        ],
+        [
+          "5ˣ = 1",
+          "0"
+        ],
+        [
+          "3ˣ = 81",
+          "4"
+        ],
+        [
+          "7ˣ = 1/7",
+          "−1"
+        ]
+      ]
     }
   ]
 }

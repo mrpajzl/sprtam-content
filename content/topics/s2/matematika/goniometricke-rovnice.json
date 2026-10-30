@@ -364,6 +364,76 @@
       "type": "open",
       "question": "Popiš řešení rovnice 2 sin² x − sin x − 1 = 0.",
       "answer": "Substituce t = sin x: 2t² − t − 1 = 0, t = 1 nebo t = −1/2. Pak sin x = 1 dává π/2 + 2kπ, sin x = −1/2 dává 7π/6 + 2kπ a 11π/6 + 2kπ."
+    },
+    {
+      "type": "choice",
+      "question": "sin x = −1/2, x ∈ ⟨0; 2π):",
+      "options": [
+        "π/6 a 5π/6",
+        "4π/3 a 5π/3",
+        "7π/6 a 11π/6",
+        "5π/6 a 7π/6"
+      ],
+      "answer": 2,
+      "explanation": "π + π/6 = 7π/6 a 2π − π/6 = 11π/6",
+      "hints": [
+        "Záporná výška: body jsou pod osou x."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnice cos x = −0,5 nemá řešení.",
+      "answer": false,
+      "explanation": "−0,5 leží v ⟨−1; 1⟩. Řešení je např. 2π/3."
+    },
+    {
+      "type": "input",
+      "question": "Kolik řešení má tg x = 1 v ⟨0; 2π)?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "π/4 a 5π/4 (perioda tg je π)."
+    },
+    {
+      "type": "input",
+      "question": "2 cos x − 1 = 0, x ∈ ⟨0; π/2⟩. x =",
+      "answers": [
+        "π/3",
+        "pi/3"
+      ],
+      "explanation": "cos x = 1/2 → x = π/3 (60°)",
+      "hints": [
+        "Uprav na cos x = …"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "sin x = 0, x ∈ ⟨0; 2π):",
+      "options": [
+        "π/2 a 3π/2",
+        "jen 0",
+        "0, π a 2π",
+        "0 a π"
+      ],
+      "answer": 3,
+      "explanation": "Výška 0 je na ose x: body [1; 0] a [−1; 0]. 2π do intervalu nepatří."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnice sin² x = 1 má v ⟨0; 2π) dvě řešení.",
+      "answer": true,
+      "explanation": "sin x = 1 → π/2, sin x = −1 → 3π/2."
+    },
+    {
+      "type": "input",
+      "question": "Řešíš sin² x − 3 sin x + 2 = 0 substitucí t = sin x a vyjde t = 1 nebo t = 2. Kolik řešení má rovnice v ⟨0; 2π)?",
+      "answers": [
+        "1"
+      ],
+      "explanation": "t = 2 zahodíš (sinus je nejvýš 1). sin x = 1 dává jen x = π/2.",
+      "hints": [
+        "Může být sin x = 2?"
+      ]
     }
   ]
 }

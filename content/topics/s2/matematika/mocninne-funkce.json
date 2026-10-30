@@ -402,6 +402,74 @@
       "type": "open",
       "question": "Proč je √x definována jen pro x ≥ 0?",
       "answer": "Druhá odmocnina je číslo, jehož druhá mocnina je x. Druhá mocnina reálného čísla není nikdy záporná, proto pro x < 0 reálná odmocnina neexistuje."
+    },
+    {
+      "type": "input",
+      "question": "f(x) = x³. f(−3) =",
+      "answers": [
+        "−27",
+        "-27"
+      ],
+      "explanation": "Lichý exponent zachová znaménko: (−3)³ = −27."
+    },
+    {
+      "type": "choice",
+      "question": "H(f) pro y = x⁴:",
+      "options": [
+        "ℝ",
+        "⟨0; ∞)",
+        "(0; ∞)",
+        "⟨1; ∞)"
+      ],
+      "answer": 1,
+      "explanation": "Sudá mocnina není nikdy záporná a pro x = 0 vyjde 0."
+    },
+    {
+      "type": "truefalse",
+      "question": "y = x⁵ je sudá funkce.",
+      "answer": false,
+      "explanation": "(−x)⁵ = −x⁵, funkce je lichá."
+    },
+    {
+      "type": "input",
+      "question": "f(x) = x⁻³. f(2) =",
+      "answers": [
+        "1/8",
+        "0,125"
+      ],
+      "explanation": "1/2³ = 1/8",
+      "hints": [
+        "x⁻³ = 1/x³"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Zvětšíš hranu krychle třikrát. Její objem se zvětší:",
+      "options": [
+        "3×",
+        "9×",
+        "27×",
+        "6×"
+      ],
+      "answer": 2,
+      "explanation": "Objem V = a³, proto 3³ = 27."
+    },
+    {
+      "type": "truefalse",
+      "question": "√(−9) = −3",
+      "answer": false,
+      "explanation": "(−3)² = 9, ne −9. Druhá odmocnina záporného čísla v ℝ neexistuje."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejmenšího.",
+      "items": [
+        "0,5⁴",
+        "0,5³",
+        "0,5²",
+        "0,5"
+      ],
+      "explanation": "Pro x mezi 0 a 1 je vyšší mocnina menší: 0,0625 < 0,125 < 0,25 < 0,5."
     }
   ]
 }
