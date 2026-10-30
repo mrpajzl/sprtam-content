@@ -410,6 +410,86 @@
       "type": "open",
       "question": "Popiš druhy paměti podle délky uchování.",
       "answer": "Senzorická paměť drží vjem zlomky sekundy. Krátkodobá asi desítky sekund a pojme 7 ± 2 položky. Dlouhodobá uchovává informace roky."
+    },
+    {
+      "type": "choice",
+      "question": "Jazykem ucítíš jen „sladké“ a ještě nevíš, co jíš. Co právě prožíváš?",
+      "options": [
+        "Vjem",
+        "Počitek",
+        "Představu",
+        "Iluzi"
+      ],
+      "answer": 1,
+      "explanation": "Počitek odráží jen jednu vlastnost podnětu, tady chuť."
+    },
+    {
+      "type": "truefalse",
+      "question": "Iluze vzniká, i když podnět skutečně existuje.",
+      "answer": true,
+      "explanation": "Iluze je zkreslený vjem skutečného podnětu, například lžička ve vodě."
+    },
+    {
+      "type": "choice",
+      "question": "Jak dlouho vydrží informace v krátkodobé paměti, když si ji neopakuješ?",
+      "options": [
+        "Zlomky sekundy",
+        "Desítky sekund",
+        "Několik dní",
+        "Celý život"
+      ],
+      "answer": 1,
+      "explanation": "Zlomky sekundy platí pro senzorickou paměť, roky pro dlouhodobou."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje psycholog, který objevil křivku zapomínání? (příjmení)",
+      "answers": [
+        "Ebbinghaus",
+        "Hermann Ebbinghaus"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kamarád ti nadiktuje číslo 604 917 382. Co ti nejvíc pomůže si ho na chvíli zapamatovat?",
+      "options": [
+        "Seskupit číslice do tří trojic",
+        "Přečíst si ho jednou velmi pomalu",
+        "Myslet u toho na něco jiného",
+        "Zapamatovat si jen první číslici"
+      ],
+      "answer": 0,
+      "explanation": "Seskupení zmenší počet položek z 9 na 3 „balíčky“, a to se do krátkodobé paměti vejde snadno."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu informace z okolí do paměti.",
+      "items": [
+        "Podnět",
+        "Počitek",
+        "Vjem",
+        "Pozornost",
+        "Krátkodobá paměť",
+        "Dlouhodobá paměť"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dlouhodobá paměť pojme jen asi 7 položek.",
+      "answer": false,
+      "explanation": "7 ± 2 položky platí pro krátkodobou paměť. Dlouhodobá je prakticky neomezená."
+    },
+    {
+      "type": "choice",
+      "question": "Učitel něco řekl, ale ty ses díval z okna, a teď nevíš co. Kde se informace ztratila?",
+      "options": [
+        "V dlouhodobé paměti",
+        "Při vybavování",
+        "V senzorické paměti, protože ji pozornost nepustila dál",
+        "V krátkodobé paměti, protože byla přeplněná"
+      ],
+      "answer": 2,
+      "explanation": "Bez pozornosti informace zůstane jen ve smyslové paměti a za zlomek sekundy zmizí."
     }
   ]
 }
