@@ -552,6 +552,62 @@
       "type": "open",
       "question": "Řekni o sobě jednu větu se *sowohl … als auch* a jednu s *weder … noch*.",
       "answer": "Například: *Ich mag sowohl Hunde als auch Katzen.* = Mám rád jak psy, tak kočky. *Ich spiele weder Klavier noch Gitarre.* = Nehraju ani na klavír, ani na kytaru."
+    },
+    {
+      "type": "choice",
+      "question": "Ich habe keine Zeit, ___ kann ich nicht kommen.",
+      "options": [
+        "trotzdem",
+        "deshalb",
+        "obwohl"
+      ],
+      "answer": 1,
+      "explanation": "Nemám čas, **proto** nemůžu přijít. Důvod → *deshalb*. *obwohl* by vyžadovalo sloveso na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Zuerst frühstücke ich, dann ___ in die Schule.",
+      "options": [
+        "ich gehe",
+        "gehe ich",
+        "gehe"
+      ],
+      "answer": 1,
+      "explanation": "*dann* zabírá 1. místo, sloveso jde hned za něj a podmět až potom."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Die Wohnung ist ___ klein, aber gemütlich.",
+      "answers": [
+        "zwar"
+      ],
+      "explanation": "sice … ale = *zwar … aber*: Byt je sice malý, ale útulný.",
+      "hints": [
+        "Druhá část dvojité spojky je aber."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Ich bleibe deshalb zu Hause.* má správný slovosled.",
+      "answer": true,
+      "explanation": "*deshalb* smí stát i uprostřed. Na 1. místě je podmět *ich*, sloveso *bleibe* je druhé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po spojce *denn* jde sloveso hned za ni, stejně jako po *deshalb*.",
+      "answer": false,
+      "explanation": "*denn* stojí mimo větu a slovosled nemění: *…, denn es regnet.*"
+    },
+    {
+      "type": "choice",
+      "question": "Přelož: Nemám ani psa, ani kočku.",
+      "options": [
+        "Ich habe weder keinen Hund noch keine Katze.",
+        "Ich habe entweder einen Hund oder eine Katze.",
+        "Ich habe weder einen Hund noch eine Katze."
+      ],
+      "answer": 2,
+      "explanation": "*weder … noch* už je zápor, *kein* se nepřidává."
     }
   ]
 }

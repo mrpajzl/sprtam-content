@@ -497,6 +497,69 @@
       "type": "open",
       "question": "Spoj do jedné věty: *Ich habe eine Katze. Die Katze heißt Mimi.*",
       "answer": "*Ich habe eine Katze, die Mimi heißt.* = Mám kočku, která se jmenuje Mimi. *Katze* je ženský rod a podmět, proto *die*, sloveso na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Die Schüler, ___ der Lehrer eine gute Note gibt, freuen sich.",
+      "options": [
+        "die",
+        "den",
+        "denen"
+      ],
+      "answer": 2,
+      "explanation": "Dát známku komu → 3. pád, množné číslo → *denen*."
+    },
+    {
+      "type": "choice",
+      "question": "Der Mann, ___ ich nach dem Weg frage, ist Polizist.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": 1,
+      "explanation": "*fragen* má v němčině 4. pád (česky „ptát se koho“, 2. pád). Mužský rod, 4. pád → *den*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň vztažné zájmeno: Die Frau, ___ Sohn in meiner Klasse ist, ist Lehrerin.",
+      "answers": [
+        "deren"
+      ],
+      "explanation": "Čí syn? → 2. pád, ženský rod → *deren*. Žena, jejíž syn chodí do mé třídy…",
+      "hints": [
+        "Ptáš se „čí syn?“.",
+        "Ženský rod má ve 2. pádě jiný tvar než mužský."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň vztažné zájmeno: Das Haus, in ___ wir wohnen, ist alt.",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "Kde bydlíme? *in* + 3. pád, *das Haus* je střední rod → *dem*.",
+      "hints": [
+        "Po in na otázku „kde?“ je 3. pád."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Stejně jako v angličtině smíš v němčině vztažné zájmeno vynechat: *das Buch ich lese*.",
+      "answer": false,
+      "explanation": "Němčina vztažné zájmeno nevynechává nikdy: *das Buch, das ich lese*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď do věty: Pes, kterého máme, je malý.",
+      "items": [
+        "Der Hund,",
+        "den",
+        "wir",
+        "haben,",
+        "ist klein."
+      ],
+      "explanation": "Mít koho? → 4. pád *den*. Sloveso *haben* na konci vztažné věty, ta je mezi čárkami."
     }
   ]
 }
