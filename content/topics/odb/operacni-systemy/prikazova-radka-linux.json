@@ -577,6 +577,63 @@
       "type": "open",
       "question": "Proč je příkaz rm -r nebezpečný a jak se chránit?",
       "answer": "Maže složky i s celým obsahem natrvalo, bez koše a bez ptaní. Před spuštěním si zkontroluju cestu (pwd, ls), můžu použít rm -i, které se ptá, a důležitá data mám zálohovaná."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá příkaz `tail -n 5 log.txt`?",
+      "options": [
+        "vypíše prvních 5 řádků souboru",
+        "vypíše posledních 5 řádků souboru",
+        "smaže 5 řádků ze souboru",
+        "spočítá řádky souboru"
+      ],
+      "answer": 1,
+      "explanation": "Začátek souboru ukáže head, konec tail."
+    },
+    {
+      "type": "input",
+      "question": "Napiš celý příkaz, který vytvoří prázdný soubor seznam.txt.",
+      "answers": [
+        "touch seznam.txt"
+      ],
+      "hints": [
+        "Příkaz má pět písmen, anglicky „dotknout se“."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím je `-l` v příkazu `ls -l /etc`?",
+      "options": [
+        "argumentem",
+        "příkazem",
+        "přepínačem",
+        "výzvou"
+      ],
+      "answer": 2,
+      "explanation": "ls je příkaz, -l přepínač (začíná pomlčkou), /etc argument."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příkaz `cd` bez argumentu tě přesune do domovské složky.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak najdeš ve své domovské složce a jejích podsložkách všechny soubory PDF?",
+      "options": [
+        "ls ~ > pdf",
+        "grep pdf ~",
+        "cat ~/*.pdf",
+        "find ~ -name '*.pdf'"
+      ],
+      "answer": 3,
+      "explanation": "find hledá soubory podle jména, grep hledá text uvnitř souborů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příkaz `sudo` se ptá na heslo uživatele root.",
+      "answer": false,
+      "explanation": "sudo se ptá na tvoje vlastní heslo, pokud máš povolení spouštět příkazy jako správce."
     }
   ]
 }

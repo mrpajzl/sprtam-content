@@ -563,6 +563,81 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi absolutní a relativní cestou?",
       "answer": "Absolutní cesta začíná od začátku stromu (v Linuxu od /, ve Windows od písmene jednotky) a platí odkudkoli. Relativní začíná od aktuální složky a používá . pro tuto složku a .. pro nadřazenou."
+    },
+    {
+      "type": "choice",
+      "question": "Flashku chceš používat ve Windows i v macOS a nahrávat na ni filmy větší než 4 GB. Jaký souborový systém zvolíš?",
+      "options": [
+        "FAT32",
+        "NTFS",
+        "exFAT",
+        "ext4"
+      ],
+      "answer": 2,
+      "explanation": "FAT32 nezvládne soubor nad 4 GiB, NTFS macOS bez doplňků jen čte, ext4 Windows běžně nepřečte."
+    },
+    {
+      "type": "input",
+      "question": "Soubor má 13 KiB, blok má 4 KiB. Kolik KiB zabere na disku?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "13 / 4 = 3,25 → 4 bloky = 16 KiB.",
+      "hints": [
+        "Poslední blok se přidělí celý, i když není plný."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je inode v souborovém systému ext4?",
+      "options": [
+        "jméno souboru",
+        "typ oddílu ve Windows",
+        "složka s logy",
+        "záznam o souboru: velikost, vlastník, oprávnění a kde leží jeho bloky"
+      ],
+      "answer": 3,
+      "explanation": "Jméno souboru je uložené ve složce a odkazuje na inode."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tabulka oddílů MBR zvládne disk větší než 2 TiB.",
+      "answer": false,
+      "explanation": "MBR zvládne disk jen do 2 TiB. Pro větší disky je GPT."
+    },
+    {
+      "type": "input",
+      "question": "Jsi v /home/jana/skola/matika. Napiš relativní cestu ke složce /home/jana/hudba.",
+      "answers": [
+        "../../hudba",
+        "../../hudba/"
+      ],
+      "hints": [
+        "Musíš o dvě úrovně výš, do /home/jana.",
+        "Každé .. znamená jednu úroveň výš."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj souborový systém s typickým použitím.",
+      "pairs": [
+        [
+          "APFS",
+          "macOS"
+        ],
+        [
+          "ext4",
+          "Linux"
+        ],
+        [
+          "NTFS",
+          "systémový disk Windows"
+        ],
+        [
+          "FAT32",
+          "starší paměťové karty"
+        ]
+      ]
     }
   ]
 }

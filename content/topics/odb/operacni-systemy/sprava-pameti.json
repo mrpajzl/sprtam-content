@@ -481,6 +481,75 @@
       "type": "open",
       "question": "Proč se počítač zpomalí, když dochází RAM?",
       "answer": "OS začne odkládat stránky na disk do stránkovacího souboru nebo swapu. Disk je řádově pomalejší než RAM, takže každé načtení odložené stránky trvá. Při velkém nedostatku nastane thrashing a počítač skoro stojí."
+    },
+    {
+      "type": "input",
+      "question": "Stránka má 4096 B. Tabulka stránek: stránka 0 → rámec 4, stránka 1 → rámec 2, stránka 2 → rámec 9. Jaká je fyzická adresa pro virtuální adresu 9000?",
+      "answers": [
+        "37672",
+        "37 672"
+      ],
+      "explanation": "9000 = 2 · 4096 + 808 → stránka 2, posun 808. Rámec 9: 9 · 4096 + 808 = 36 864 + 808 = 37 672.",
+      "hints": [
+        "Vyděl adresu 4096, zjisti stránku a zbytek.",
+        "Fyzická adresa = rámec · 4096 + posun."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Stránka má 4096 B. Jaký je posun virtuální adresy 10 000 uvnitř její stránky?",
+      "answers": [
+        "1808",
+        "1 808"
+      ],
+      "explanation": "10 000 = 2 · 4096 + 1808. Posun je zbytek po dělení.",
+      "hints": [
+        "Posun je zbytek po dělení velikostí stránky."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik bitů adresy zabere posun, když má stránka 8 KiB?",
+      "answers": [
+        "13"
+      ],
+      "explanation": "8 KiB = 8192 B = 2¹³.",
+      "hints": [
+        "Vyjádři 8192 jako mocninu dvojky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane, když se proces pokusí zapsat do paměti, která mu nepatří?",
+      "options": [
+        "data se normálně zapíšou",
+        "OS to nedovolí a program skončí chybou (v Linuxu segmentation fault)",
+        "OS automaticky přidá RAM",
+        "počítač se restartuje"
+      ],
+      "answer": 1,
+      "explanation": "OS chrání procesy navzájem, jeden nesmí sahat do paměti druhého."
+    },
+    {
+      "type": "truefalse",
+      "question": "1 kB a 1 KiB jsou stejně velké.",
+      "answer": false,
+      "explanation": "1 kB = 1000 B, 1 KiB = 1024 B."
+    },
+    {
+      "type": "choice",
+      "question": "Program potřebuje 9 KiB paměti, stránka má 4 KiB. Kolik KiB zůstane v poslední stránce nevyužito?",
+      "options": [
+        "1 KiB",
+        "0 KiB",
+        "3 KiB",
+        "4 KiB"
+      ],
+      "answer": 2,
+      "explanation": "Potřebuje 3 stránky = 12 KiB, nevyužito 12 − 9 = 3 KiB (vnitřní fragmentace).",
+      "hints": [
+        "Nejdřív zjisti, kolik celých stránek dostane."
+      ]
     }
   ]
 }

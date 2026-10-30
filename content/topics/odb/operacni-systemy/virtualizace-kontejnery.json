@@ -530,6 +530,63 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi hypervizorem typu 1 a typu 2?",
       "answer": "Typ 1 běží přímo na hardwaru bez dalšího OS pod sebou (ESXi, Hyper-V, KVM) a používá se na serverech. Typ 2 běží jako program v běžném OS (VirtualBox, VMware Workstation) a hodí se pro výuku a testování."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem zastavíš kontejner s názvem web?",
+      "options": [
+        "docker ps web",
+        "docker pull web",
+        "docker stop web",
+        "docker images web"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je vztah mezi obrazem a kontejnerem v Dockeru?",
+      "options": [
+        "obraz je spuštěná instance kontejneru",
+        "kontejner je spuštěná instance obrazu",
+        "jsou to dvě jména pro totéž",
+        "obraz je záloha kontejneru"
+      ],
+      "answer": 1,
+      "explanation": "Obraz je neměnná šablona, z ní se spouští kontejnery."
+    },
+    {
+      "type": "input",
+      "question": "Spustíš `docker run -d -p 3000:80 nginx`. Na kterém portu hostitele otevřeš web?",
+      "answers": [
+        "3000"
+      ],
+      "explanation": "První číslo je port hostitele, druhé port v kontejneru.",
+      "hints": [
+        "Zápis je port hostitele : port kontejneru."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Hypervizor typu 2 běží jako program v běžném operačním systému.",
+      "answer": true,
+      "explanation": "Například VirtualBox nebo VMware Workstation."
+    },
+    {
+      "type": "truefalse",
+      "question": "Linuxový kontejner spustíš přímo na jádru Windows bez virtuálního stroje.",
+      "answer": false,
+      "explanation": "Kontejner sdílí jádro hostitele. Docker Desktop proto ve Windows používá skrytý linuxový VM."
+    },
+    {
+      "type": "choice",
+      "question": "Co je live migrace?",
+      "options": [
+        "spuštění Linuxu z flashky bez instalace",
+        "stažení obrazu z internetu",
+        "záloha virtuálního stroje do cloudu",
+        "přesun běžícího virtuálního stroje na jiný hostitel"
+      ],
+      "answer": 3
     }
   ]
 }

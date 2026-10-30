@@ -535,6 +535,79 @@
       "type": "open",
       "question": "Proč se správci vyplatí PowerShell místo klikání?",
       "answer": "Příkazy a skripty se dají opakovat stejně na mnoha počítačích, bez chyb z klikání, dají se naplánovat a zdokumentovat. Roura s objekty umožní výsledky snadno filtrovat, řadit a ukládat."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým cmdletem najdeš příkazy, které mají v názvu slovo service?",
+      "options": [
+        "Get-Help *service*",
+        "Get-Command *service*",
+        "Get-Member service",
+        "Find-Service"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "Jakým znakem začíná název proměnné v PowerShellu?",
+      "answers": [
+        "$"
+      ],
+      "hints": [
+        "Je to stejný znak jako symbol dolaru."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak zjistíš, jaké vlastnosti mají objekty, které vrátí Get-Service?",
+      "options": [
+        "Get-Service -Help",
+        "Get-Command Get-Service",
+        "Get-Service | Sort-Object",
+        "Get-Service | Get-Member"
+      ],
+      "answer": 3,
+      "explanation": "Get-Member vypíše vlastnosti a metody objektů, které do něj přijdou rourou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na klientských Windows smí skripty .ps1 ve výchozím stavu běžet.",
+      "answer": false,
+      "explanation": "Zásady spouštění jsou ve výchozím stavu Restricted, skripty jsou zakázané."
+    },
+    {
+      "type": "match",
+      "question": "Spoj nástroj s příkazem, kterým ho spustíš.",
+      "pairs": [
+        [
+          "Služby",
+          "services.msc"
+        ],
+        [
+          "Správa disků",
+          "diskmgmt.msc"
+        ],
+        [
+          "Správa počítače",
+          "compmgmt.msc"
+        ],
+        [
+          "Správce zařízení",
+          "devmgmt.msc"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem zkontroluješ a opravíš poškozené systémové soubory Windows?",
+      "options": [
+        "gpupdate /force",
+        "ipconfig /all",
+        "sfc /scannow",
+        "ping"
+      ],
+      "answer": 2,
+      "explanation": "sfc /scannow se spouští jako správce."
     }
   ]
 }

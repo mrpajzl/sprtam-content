@@ -467,6 +467,65 @@
       "type": "open",
       "question": "Jak to, že na jednojádrovém procesoru běží zdánlivě víc programů současně?",
       "answer": "Plánovač jádra procesy rychle střídá: každý dostane krátké časové kvantum a pak se přepne kontext na další. Střídá je tak rychle, že to člověk vnímá jako současný běh."
+    },
+    {
+      "type": "input",
+      "question": "Procesy A (4 ms), B (2 ms), C (3 ms) přijdou v čase 0. Plánovač je střídá po 2 ms (Round Robin) v pořadí A, B, C. V kolikáté ms skončí proces A?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "A 0–2, B 2–4 (B hotovo), C 4–6, A 6–8 (A hotovo v 8), C 8–9.",
+      "hints": [
+        "Nakresli časovou osu po 2 ms.",
+        "Proces, kterému zbývá méně než kvantum, skončí dřív a uvolní procesor."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Procesy P1 (7 ms), P2 (1 ms), P3 (4 ms) přijdou v čase 0. Jaká je průměrná doba čekání u SJF v ms?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Pořadí P2, P3, P1: čekání 0, 1, 5 → 6 / 3 = 2 ms.",
+      "hints": [
+        "Seřaď procesy od nejkratšího.",
+        "Každý čeká, dokud nedoběhnou ty před ním."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je přepnutí kontextu?",
+      "options": [
+        "přihlášení jiného uživatele",
+        "výměna procesu na procesoru: jádro uloží stav jednoho a načte stav druhého",
+        "restart počítače",
+        "přepnutí okna klávesami Alt + Tab"
+      ],
+      "answer": 1,
+      "explanation": "Přepnutí trvá krátce, ale není zadarmo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při preemptivním multitaskingu smí jádro procesu odebrat procesor i proti jeho vůli.",
+      "answer": true,
+      "explanation": "Třeba po uplynutí časového kvanta. Tak to dělají Windows, Linux i macOS."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký problém hrozí u prioritního plánování?",
+      "options": [
+        "procesy přijdou o své PID",
+        "nedá se použít na vícejádrovém procesoru",
+        "procesy s nízkou prioritou se nemusí dostat na řadu (vyhladovění)",
+        "všechny procesy vždy uváznou"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Jádro operačního systému a jádro procesoru jsou totéž.",
+      "answer": false,
+      "explanation": "Jádro OS je software, který řídí systém. Jádro procesoru je hardware, který vykonává instrukce."
     }
   ]
 }

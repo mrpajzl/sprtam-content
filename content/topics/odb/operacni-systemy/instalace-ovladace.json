@@ -478,6 +478,61 @@
       "type": "open",
       "question": "Co je ovladač a odkud ho bezpečně získáš?",
       "answer": "Ovladač je program, který operačnímu systému umožní ovládat konkrétní hardware. Bezpečně ho získám přes Windows Update nebo z oficiálního webu výrobce zařízení či notebooku."
+    },
+    {
+      "type": "choice",
+      "question": "Co je čistá instalace operačního systému?",
+      "options": [
+        "instalace, která zachová programy a data",
+        "instalace na prázdný (smazaný) oddíl",
+        "instalace jen ovladačů",
+        "oprava systémových souborů"
+      ],
+      "answer": 1,
+      "explanation": "Opakem je upgrade, který programy a data zachová."
+    },
+    {
+      "type": "truefalse",
+      "question": "Upgrade systému zachová nainstalované programy a data.",
+      "answer": true
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, v jakém pořadí instaluješ ovladače po čisté instalaci.",
+      "items": [
+        "čipová sada",
+        "grafika",
+        "síť",
+        "zvuk"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Disk má 1000 GB. Windows s daty zabírá 300 GB a chceš mu nechat 150 GB rezervu. Kolik GB zbude pro Linux?",
+      "answers": [
+        "550"
+      ],
+      "explanation": "Windows potřebuje 300 + 150 = 450 GB. Pro Linux zbude 1000 − 450 = 550 GB.",
+      "hints": [
+        "Nejdřív sečti, kolik místa nechaš Windows."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký souborový systém má oddíl EFI?",
+      "options": [
+        "NTFS",
+        "ext4",
+        "FAT32",
+        "exFAT"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Starý režim startu Legacy (BIOS) používá tabulku oddílů GPT.",
+      "answer": false,
+      "explanation": "Legacy používá MBR. GPT patří k režimu UEFI."
     }
   ]
 }

@@ -503,6 +503,85 @@
       "type": "open",
       "question": "Navrhni zálohování pro domácí počítač s rodinnými fotkami.",
       "answer": "Podle 3-2-1: fotky v počítači, záloha na externí disk, který po zálohování odpojím, a třetí kopie v cloudu s verzemi. Zálohovat pravidelně, třeba týdně, a občas zkusit obnovit pár souborů."
+    },
+    {
+      "type": "input",
+      "question": "V neděli uděláš úplnou zálohu 80 GB, pak každý den rozdílovou. Denně se změní 4 GB jiných dat. Kolik GB zaberou úplná a rozdílové zálohy z pondělí až čtvrtka dohromady?",
+      "answers": [
+        "120"
+      ],
+      "explanation": "Rozdílové: 4 + 8 + 12 + 16 = 40 GB. S úplnou 80 + 40 = 120 GB.",
+      "hints": [
+        "Rozdílová obsahuje všechny změny od úplné zálohy, každý den roste."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Děláš úplnou zálohu v neděli a rozdílovou každý den. Disk selže v pátek ráno. Které zálohy potřebuješ k obnově?",
+      "options": [
+        "nedělní úplnou + všechny rozdílové z pondělí až čtvrtka",
+        "nedělní úplnou + čtvrteční rozdílovou",
+        "jen čtvrteční rozdílovou",
+        "jen nedělní úplnou"
+      ],
+      "answer": 1,
+      "explanation": "Poslední rozdílová obsahuje všechny změny od úplné zálohy."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod obnovení systému ve Windows vrátí i smazané osobní dokumenty.",
+      "answer": false,
+      "explanation": "Vrací jen systémové soubory a nastavení. Na dokumenty je Historie souborů nebo jiná záloha."
+    },
+    {
+      "type": "choice",
+      "question": "Firma smí ztratit nejvýš 6 hodin práce (RPO 6 h). Kolikrát denně musí aspoň zálohovat?",
+      "options": [
+        "1krát",
+        "2krát",
+        "4krát",
+        "6krát"
+      ],
+      "answer": 2,
+      "explanation": "24 / 6 = 4 zálohy denně.",
+      "hints": [
+        "Den má 24 hodin."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Za kolik sekund se přes linku 100 Mb/s přenese 100 GB (100 000 MB) zálohy?",
+      "answers": [
+        "8000",
+        "8 000"
+      ],
+      "explanation": "100 Mb/s = 12,5 MB/s. 100 000 / 12,5 = 8000 s, což je asi 2,2 hodiny.",
+      "hints": [
+        "Převeď megabity na megabajty: vyděl osmi.",
+        "Pak vyděl velikost rychlostí."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj nástroj s tím, co dělá.",
+      "pairs": [
+        [
+          "rsync",
+          "kopíruje jen změněné soubory, i přes síť"
+        ],
+        [
+          "tar",
+          "zabalí složky do jednoho archivu"
+        ],
+        [
+          "Timeshift",
+          "snímky linuxového systému"
+        ],
+        [
+          "Bod obnovení systému",
+          "vrátí systémové soubory a nastavení Windows"
+        ]
+      ]
     }
   ]
 }

@@ -497,6 +497,80 @@
       "type": "open",
       "question": "Popiš, jak se spustí operační systém po zapnutí počítače.",
       "answer": "Firmware UEFI nebo BIOS otestuje hardware a spustí zavaděč z disku. Zavaděč (např. GRUB) načte jádro do paměti, jádro spustí první proces (systemd), který spustí služby, a nakonec se objeví přihlášení."
+    },
+    {
+      "type": "choice",
+      "question": "Který program je uložený přímo na základní desce a po zapnutí otestuje hardware a spustí zavaděč?",
+      "options": [
+        "jádro OS",
+        "UEFI",
+        "GRUB",
+        "systemd"
+      ],
+      "answer": 1,
+      "explanation": "Firmware UEFI (dříve BIOS) je na základní desce a startuje jako první."
+    },
+    {
+      "type": "truefalse",
+      "question": "Red Hat Enterprise Linux je open source, a přesto za něj firmy platí.",
+      "answer": true,
+      "explanation": "Platí se za podporu. Open source neznamená vždy zdarma."
+    },
+    {
+      "type": "choice",
+      "question": "Word chce uložit dokument. Jak to proběhne?",
+      "options": [
+        "Word zapíše data přímo na disk, OS do toho nevstupuje",
+        "Word pošle dokument firmwaru UEFI",
+        "Word si o uložení řekne operačnímu systému a ten zapíše data na disk",
+        "Word uloží dokument do zavaděče"
+      ],
+      "answer": 2,
+      "explanation": "Aplikace běží nad OS a využívají jeho služby, třeba správu souborů."
+    },
+    {
+      "type": "match",
+      "question": "Spoj úkol operačního systému s příkladem.",
+      "pairs": [
+        [
+          "správa procesů",
+          "střídání programů na procesoru"
+        ],
+        [
+          "správa paměti",
+          "přidělení RAM programu"
+        ],
+        [
+          "správa souborů",
+          "uložení dokumentu do složky"
+        ],
+        [
+          "ovládání zařízení",
+          "tisk přes ovladač tiskárny"
+        ],
+        [
+          "ochrana přístupu",
+          "přihlášení heslem"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje první proces, který v Linuxu obvykle spustí jádro?",
+      "options": [
+        "GRUB",
+        "UEFI",
+        "Bash",
+        "systemd"
+      ],
+      "answer": 3,
+      "explanation": "systemd pak spustí služby a přihlašovací obrazovku. GRUB je zavaděč, který běží ještě před jádrem."
+    },
+    {
+      "type": "truefalse",
+      "question": "V mikrojádře běží ovladače a souborové systémy přímo v jádře.",
+      "answer": false,
+      "explanation": "To platí pro monolitické jádro. Mikrojádro má v jádře jen minimum, ostatní běží jako samostatné služby."
     }
   ]
 }

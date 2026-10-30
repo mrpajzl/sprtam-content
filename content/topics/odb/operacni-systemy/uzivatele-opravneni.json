@@ -571,6 +571,66 @@
       "type": "open",
       "question": "Proč by běžný uživatel neměl pracovat pod účtem správce?",
       "answer": "Pod správcem může každá chyba nebo škodlivý program měnit a mazat celý systém. Obyčejný účet škodu omezí. Práva správce se mají použít jen na chvíli, když jsou potřeba (sudo, UAC)."
+    },
+    {
+      "type": "input",
+      "question": "Jaké číslo odpovídá oprávnění rw-rw-r--?",
+      "answers": [
+        "664"
+      ],
+      "explanation": "rw- = 4 + 2 = 6, rw- = 6, r-- = 4.",
+      "hints": [
+        "r = 4, w = 2, x = 1."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která písmena odpovídají oprávnění 754?",
+      "options": [
+        "rwxr-xrw-",
+        "rwxrw-r--",
+        "rwxr-xr--",
+        "rw-r-xr--"
+      ],
+      "answer": 2,
+      "explanation": "7 = rwx, 5 = r-x, 4 = r--.",
+      "hints": [
+        "Rozlož každou číslici na součet 4, 2 a 1."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Soubor má oprávnění -rw-r--r--. Jak bude vypadat po příkazu `chmod g+w`?",
+      "options": [
+        "-rw-r--rw-",
+        "-rwxr--r--",
+        "-rw-rw-r--",
+        "-rw-rw-rw-"
+      ],
+      "answer": 2,
+      "explanation": "g = skupina, +w přidá zápis. Vlastník a ostatní se nemění."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým příkazem přidáš uživatele petr do skupiny ucitele?",
+      "options": [
+        "sudo chmod ucitele petr",
+        "sudo usermod -aG ucitele petr",
+        "sudo chown petr ucitele",
+        "sudo passwd ucitele petr"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve Windows soubory v podsložce nikdy nepřebírají oprávnění nadřazené složky.",
+      "answer": false,
+      "explanation": "Přebírají je díky dědění: nastavíš to jednou nahoře a platí to pro všechno uvnitř."
+    },
+    {
+      "type": "truefalse",
+      "question": "Právo w u složky v Linuxu dovoluje v ní vytvářet a mazat soubory.",
+      "answer": true
     }
   ]
 }
