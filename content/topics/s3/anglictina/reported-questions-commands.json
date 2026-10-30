@@ -411,6 +411,93 @@
       "type": "open",
       "question": "Jak převedeš příkazy a prosby do nepřímé řeči?",
       "answer": "Použijeme tell/ask + osoba + to + infinitiv, v záporu not to. Např. \"Sit down.\" → She told me to sit down."
+    },
+    {
+      "type": "choice",
+      "question": "„What time does the film start?“ → He asked ___.",
+      "options": [
+        "what time does the film start",
+        "what time the film started",
+        "what time did the film start",
+        "that the film started"
+      ],
+      "answer": 1,
+      "explanation": "Oznamovací slovosled, bez does/did, posun času: starts → started."
+    },
+    {
+      "type": "choice",
+      "question": "„Please wait outside.“ → They ___ outside.",
+      "options": [
+        "told me wait",
+        "said me to wait",
+        "asked me to wait",
+        "asked me waiting"
+      ],
+      "answer": 2,
+      "explanation": "Prosba: asked + osoba + to + infinitiv."
+    },
+    {
+      "type": "input",
+      "question": "„Can you help me?“ → She asked if I ___ help her. (1 slovo)",
+      "answers": [
+        "could"
+      ],
+      "explanation": "Posun času: can → could."
+    },
+    {
+      "type": "input",
+      "question": "„Where is the station?“ → A tourist asked me where the station ___. (1 slovo)",
+      "answers": [
+        "was"
+      ],
+      "explanation": "Oznamovací slovosled (the station was) a posun času is → was."
+    },
+    {
+      "type": "truefalse",
+      "question": "„She told to me to sit down.“ je správně.",
+      "answer": false,
+      "explanation": "Po tell stojí osoba hned: She told me to sit down."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nepřímá otázka končí tečkou, ne otazníkem.",
+      "answer": true,
+      "explanation": "Už to není otázka, ale oznámení, že se někdo ptal."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď nepřímý příkaz (přímá řeč: „Don't be late!“).",
+      "items": [
+        "The teacher",
+        "told us",
+        "not to",
+        "be",
+        "late."
+      ],
+      "explanation": "Zákaz: told + osoba + not to + infinitiv."
+    },
+    {
+      "type": "match",
+      "question": "Spoj přímou řeč s nepřímou.",
+      "pairs": [
+        [
+          "„Is it raining?“",
+          "He asked if it was raining."
+        ],
+        [
+          "„Where do you work?“",
+          "He asked where I worked."
+        ],
+        [
+          "„Open the door.“",
+          "He told me to open the door."
+        ],
+        [
+          "„I'll carry it.“",
+          "He offered to carry it."
+        ]
+      ],
+      "explanation": "Otázka ano/ne → if, otázka s wh- → oznamovací slovosled, příkaz → told + to, nabídka → offered to."
     }
   ]
 }

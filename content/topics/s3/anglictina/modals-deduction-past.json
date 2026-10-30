@@ -383,6 +383,97 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi „must have done“ a „should have done“?",
       "answer": "Must have done je logický závěr, že se to určitě stalo. Should have done je výčitka nebo lítost: mělo se to stát, ale nestalo."
+    },
+    {
+      "type": "choice",
+      "question": "The streets are wet this morning. It ___ in the night.",
+      "options": [
+        "must have rained",
+        "should have rained",
+        "must rain",
+        "can't have rained"
+      ],
+      "answer": 0,
+      "explanation": "Mokré ulice jsou silný důkaz → určitě pršelo → must have + 3. tvar."
+    },
+    {
+      "type": "choice",
+      "question": "Petr writes everything in his diary. He ___ our meeting.",
+      "options": [
+        "must have forgotten",
+        "can't have forgotten",
+        "should have forgotten"
+      ],
+      "answer": 1,
+      "explanation": "Všechno si zapisuje → určitě nezapomněl → can't have forgotten."
+    },
+    {
+      "type": "choice",
+      "question": "I don't know why Eva didn't come. She ___ ill.",
+      "options": [
+        "must be",
+        "might have been",
+        "should have been",
+        "can't have be"
+      ],
+      "answer": 1,
+      "explanation": "Nevíš jistě a jde o minulost → might have been."
+    },
+    {
+      "type": "input",
+      "question": "Doplň 3. tvar slovesa *see*: She must have ___ the film before – she knew the ending.",
+      "answers": [
+        "seen"
+      ],
+      "explanation": "see – saw – seen. Po have je 3. tvar."
+    },
+    {
+      "type": "input",
+      "question": "Doplň 3. tvar slovesa *leave*: The house is dark. They must have ___ already.",
+      "answers": [
+        "left"
+      ],
+      "explanation": "leave – left – left."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená věta *I needn't have bought so much food.*?",
+      "options": [
+        "Nemusel jsem kupovat tolik jídla (a koupil jsem ho).",
+        "Neměl jsem dost peněz na jídlo.",
+        "Nesměl jsem koupit tolik jídla.",
+        "Určitě jsem nekoupil tolik jídla."
+      ],
+      "answer": 0,
+      "explanation": "needn't have + 3. tvar = zbytečná věc, kterou jsme přesto udělali."
+    },
+    {
+      "type": "truefalse",
+      "question": "„She must had forgotten.“ je správně utvořená věta.",
+      "answer": false,
+      "explanation": "Po modálním slovese je vždy have: She must have forgotten."
+    },
+    {
+      "type": "match",
+      "question": "Spoj přítomnost s minulostí.",
+      "pairs": [
+        [
+          "must be",
+          "must have been"
+        ],
+        [
+          "might be",
+          "might have been"
+        ],
+        [
+          "can't be",
+          "can't have been"
+        ],
+        [
+          "should do",
+          "should have done"
+        ]
+      ]
     }
   ]
 }
