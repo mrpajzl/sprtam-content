@@ -425,6 +425,89 @@
       "type": "open",
       "question": "Popiš, jak gridem postavíš rozvržení s hlavičkou, menu vlevo, obsahem a patičkou.",
       "answer": "Kontejneru dám `display: grid`, dva sloupce (např. 220px 1fr) a tři řádky (auto 1fr auto). V `grid-template-areas` nakreslím hlavičku přes oba sloupce, menu a obsah vedle sebe a patičku přes oba sloupce, a každé části přiřadím `grid-area`."
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 1000 px, `grid-template-columns: 200px 1fr 3fr`, `gap: 20px`. Šířka posledního sloupce v px =",
+      "answers": [
+        "570"
+      ],
+      "explanation": "Mezery 40 px, volno 1000 − 200 − 40 = 760 px, dílů 4, jeden díl 190 px. Poslední sloupec 3 · 190 = 570 px.",
+      "hints": [
+        "Mezi třemi sloupci jsou dvě mezery.",
+        "Volné místo se dělí na 1 + 3 dílů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Galerie má `grid-template-columns: repeat(4, 1fr)` a 10 fotek. Kolik řádků vznikne?",
+      "answers": [
+        "3",
+        "tři",
+        "tri"
+      ],
+      "explanation": "Fotky se kladou po čtyřech: 4 + 4 + 2, tedy tři řádky.",
+      "hints": [
+        "Do jednoho řádku se vejdou čtyři fotky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co dělá `auto-fill` v zápisu `repeat(auto-fill, minmax(150px, 1fr))`?",
+      "options": [
+        "vyplní prázdné buňky obsahem",
+        "vytvoří tolik sloupců, kolik se jich vejde",
+        "nastaví sloupcům šířku auto",
+        "skryje fotky, které se nevejdou"
+      ],
+      "answer": 1,
+      "explanation": "Počet sloupců se přizpůsobí šířce kontejneru, bez media queries."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená `grid-template-rows: auto 1fr auto;`?",
+      "options": [
+        "tři stejně vysoké řádky",
+        "první řádek zabere zbytek, další dva podle obsahu",
+        "první a poslední řádek podle obsahu, prostřední zabere zbytek",
+        "řádky se vytvoří automaticky podle počtu položek"
+      ],
+      "answer": 2,
+      "explanation": "`auto` = podle obsahu, `1fr` = zbylé místo. Typicky hlavička, obsah a patička."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zápis s tím, které sloupce položka zabere (mřížka má 3 sloupce).",
+      "pairs": [
+        [
+          "`grid-column: 1 / 3`",
+          "sloupce 1 a 2"
+        ],
+        [
+          "`grid-column: 2 / 4`",
+          "sloupce 2 a 3"
+        ],
+        [
+          "`grid-column: 3 / 4`",
+          "jen sloupec 3"
+        ],
+        [
+          "`grid-column: 1 / -1`",
+          "všechny tři sloupce"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zápis `grid-template-areas: \"a b\" \"a b\";` je platný: oblast `a` tvoří levý sloupec přes dva řádky.",
+      "answer": true,
+      "explanation": "Oblast `a` je obdélník (jeden sloupec, dva řádky), proto je zápis v pořádku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mřížková čára s číslem −1 je první čára mřížky.",
+      "answer": false,
+      "explanation": "−1 je poslední čára. Proto `1 / -1` roztáhne položku přes všechny sloupce."
     }
   ]
 }

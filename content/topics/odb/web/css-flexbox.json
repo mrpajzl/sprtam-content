@@ -431,6 +431,73 @@
       "type": "open",
       "question": "Jak flexbox rozdělí volné místo mezi položky podle `flex-grow`?",
       "answer": "Od šířky kontejneru se odečtou základní velikosti položek a mezery. Zbylé volné místo se rozdělí v poměru hodnot `flex-grow` a každá položka dostane svůj podíl navíc k základu."
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 700 px, bez gap, tři položky `width: 100px`, `flex-grow` 1, 1 a 3. Šířka třetí položky v px =",
+      "answers": [
+        "340"
+      ],
+      "explanation": "Volno 700 − 300 = 400 px, dílů 5, jeden díl 80 px. Třetí položka: 100 + 3 · 80 = 340 px.",
+      "hints": [
+        "Nejdřív spočítej volné místo.",
+        "Volné místo se dělí na 1 + 1 + 3 dílů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kontejner 900 px, `gap: 20px`, čtyři položky s `flex: 1`. Šířka jedné položky v px =",
+      "answers": [
+        "210"
+      ],
+      "explanation": "Tři mezery 60 px, zbývá 840 px, to je 4 · 210 px.",
+      "hints": [
+        "Mezi čtyřmi položkami jsou tři mezery."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá `flex-wrap: wrap` na kontejneru?",
+      "options": [
+        "Položky se zmenší, aby se vešly do jedné řady.",
+        "Položky se seřadí pod sebe do sloupce.",
+        "Položky, které se nevejdou, přejdou na další řádek.",
+        "Kolem položek se udělá rámeček."
+      ],
+      "answer": 2,
+      "explanation": "Výchozí `nowrap` drží vše v jedné řadě. `wrap` dovolí zalomení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Položka s `flex-grow: 2` je vždy přesně dvakrát širší než položka s `flex-grow: 1`.",
+      "answer": false,
+      "explanation": "Dostane dvakrát víc volného místa. Celková šířka záleží i na základní velikosti."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je výchozí hodnota `flex-grow`?",
+      "options": [
+        "`1`",
+        "`0`",
+        "`auto`",
+        "`2`"
+      ],
+      "answer": 1,
+      "explanation": "Výchozí `0` znamená, že položka neroste a volné místo nebere."
+    },
+    {
+      "type": "choice",
+      "question": "Kontejner má `flex-direction: column`. Kterou vlastností vycentruješ položky vodorovně?",
+      "options": [
+        "`justify-content: center`",
+        "`align-items: center`",
+        "`flex-wrap: center`"
+      ],
+      "answer": 1,
+      "explanation": "U `column` je hlavní osa svislá. Vodorovná je vedlejší a tu řídí `align-items`.",
+      "hints": [
+        "Která osa je u `column` vodorovná?"
+      ]
     }
   ]
 }

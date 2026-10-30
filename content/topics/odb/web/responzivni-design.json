@@ -430,6 +430,65 @@
       "type": "open",
       "question": "Jaké tři nástroje používá responzivní design?",
       "answer": "Meta viewport, aby mobil použil skutečnou šířku; pružné jednotky a obrázky (%, rem, vw, max-width: 100%); a media queries, které při breakpointech mění rozvržení."
+    },
+    {
+      "type": "input",
+      "question": "Kořenový element má písmo 16 px. Kolik px je `0.75rem`?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "0,75 · 16 = 12 px.",
+      "hints": [
+        "1rem = velikost písma kořenového elementu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Viewport je vysoký 700 px. Kolik px je `20vh`?",
+      "answers": [
+        "140"
+      ],
+      "explanation": "1vh je 1 % výšky viewportu, 20 % ze 700 px = 140 px."
+    },
+    {
+      "type": "input",
+      "question": "Rodič je široký 600 px. Kolik px je u potomka `width: 25%`?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "Procenta se počítají z rozměru rodiče: 25 % ze 600 = 150 px."
+    },
+    {
+      "type": "input",
+      "question": "Element má `font-size: 20px` a `padding: 1em`. Kolik px je jeho padding?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "U jiných vlastností než `font-size` se `em` počítá z písma elementu samotného: 1 · 20 = 20 px."
+    },
+    {
+      "type": "choice",
+      "question": "Co patří do atributu `content` u meta viewport?",
+      "options": [
+        "`width=100%, zoom=1`",
+        "`device=mobile`",
+        "`width=device-width, initial-scale=1`",
+        "`min-width=768px`"
+      ],
+      "answer": 2,
+      "explanation": "`width=device-width` řekne mobilu, ať použije skutečnou šířku zařízení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na displeji širokém 500 px se použijí pravidla z `@media (min-width: 600px) { … }`.",
+      "answer": false,
+      "explanation": "`min-width: 600px` platí jen pro viewport široký aspoň 600 px."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při postupu desktop first se styly pro menší displeje upravují v `@media (max-width: …)`.",
+      "answer": true,
+      "explanation": "Desktop first začíná širokým displejem a pro menší ubírá přes `max-width`. Mobile first je opak s `min-width`."
     }
   ]
 }

@@ -420,6 +420,64 @@
       "type": "open",
       "question": "Proč spolu přístupnost a SEO souvisí?",
       "answer": "Čtečka obrazovky i robot vyhledávače stránku „nevidí“ a orientují se podle HTML: nadpisů, alt textů, textů odkazů a title. Co pomáhá nevidomému, pomáhá i vyhledávači."
+    },
+    {
+      "type": "truefalse",
+      "question": "Atribut `placeholder` může plně nahradit `label` u pole formuláře.",
+      "answer": false,
+      "explanation": "Placeholder po začátku psaní zmizí a čtečky ho nemusí přečíst. Pole potřebuje `label`."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje čtečka obrazovky zabudovaná v macOS a iOS?",
+      "options": [
+        "NVDA",
+        "TalkBack",
+        "VoiceOver",
+        "Lighthouse"
+      ],
+      "answer": 2,
+      "explanation": "NVDA je pro Windows, TalkBack pro Android. Lighthouse je testovací nástroj, ne čtečka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro velký text stačí podle WCAG úrovně AA kontrast 3 : 1.",
+      "answer": true,
+      "explanation": "Běžný text potřebuje aspoň 4,5 : 1, velký text aspoň 3 : 1."
+    },
+    {
+      "type": "choice",
+      "question": "K čemu je `<meta name=\"description\">`?",
+      "options": [
+        "určuje kódování znaků stránky",
+        "krátký popis stránky, který vyhledávač často ukáže pod odkazem",
+        "popisek pro obrázky na stránce",
+        "nastaví jazyk stránky pro čtečku"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Proč nemazat obrys fokusu (`outline: none`) bez náhrady?",
+      "options": [
+        "Stránka se pak pomaleji načítá.",
+        "Vyhledávač stránku přestane indexovat.",
+        "Odkazy přestanou fungovat myší.",
+        "Kdo ovládá web klávesnicí, neuvidí, kde právě je."
+      ],
+      "answer": 3,
+      "explanation": "Fokus ukazuje, na kterém odkazu nebo poli uživatel s klávesnicí stojí."
+    },
+    {
+      "type": "input",
+      "question": "Kterou klávesou se na stránce přechází mezi odkazy, tlačítky a poli formuláře?",
+      "answers": [
+        "Tab",
+        "tab",
+        "tabulátor",
+        "tabulator"
+      ],
+      "explanation": "Tab jde dopředu, Shift+Tab zpátky."
     }
   ]
 }

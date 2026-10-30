@@ -483,6 +483,61 @@
       "type": "open",
       "question": "Proč se doporučuje `===` místo `==`?",
       "answer": "`==` před porovnáním převádí typy, takže `5 == '5'` je pravda a vznikají nečekané výsledky. `===` porovnává hodnotu i typ, chování je předvídatelné."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `console.log('10' - 4)`?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Operátor `-` text převede na číslo: 10 − 4 = 6. Spojování textů dělá jen `+`.",
+      "hints": [
+        "Spojovat texty umí jen `+`."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která hodnota v JavaScriptu znamená „záměrně nic“?",
+      "options": [
+        "`undefined`",
+        "`0`",
+        "`null`",
+        "`''`"
+      ],
+      "answer": 2,
+      "explanation": "`null` přiřadíš záměrně. `undefined` má proměnná, které ještě nikdo hodnotu nedal."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `let x = 1; while (x < 20) { x = x * 3; } console.log(x);`?",
+      "answers": [
+        "27"
+      ],
+      "explanation": "x je postupně 1, 3, 9, 27. Při 27 už podmínka x < 20 neplatí a cyklus skončí.",
+      "hints": [
+        "Vypiš si hodnoty x po každém průchodu.",
+        "Cyklus skončí, až x přestane být menší než 20."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `const tri = (x) => x * 3;` při volání `tri(5)`?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "Šipková funkce vrátí výraz za šipkou: 5 · 3 = 15."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výraz `!(3 > 5)` má hodnotu `true`.",
+      "answer": true,
+      "explanation": "`3 > 5` je `false` a `!` ho otočí na `true`."
+    },
+    {
+      "type": "truefalse",
+      "question": "JavaScript je zjednodušená verze jazyka Java.",
+      "answer": false,
+      "explanation": "Kromě podobného jména spolu JavaScript a Java nemají nic společného."
     }
   ]
 }

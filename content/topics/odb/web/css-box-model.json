@@ -442,6 +442,78 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi paddingem a marginem?",
       "answer": "Padding je vnitřní okraj mezi obsahem a rámečkem a má pozadí elementu. Margin je vnější průhledný okraj, který odsouvá sousední elementy; svislé marginy se slučují."
+    },
+    {
+      "type": "input",
+      "question": "`width: 250px; padding: 12px; border: 3px solid;`, výchozí content-box. Šířka na obrazovce v px =",
+      "answers": [
+        "280"
+      ],
+      "explanation": "250 + 2 · 12 + 2 · 3 = 250 + 24 + 6 = 280 px.",
+      "hints": [
+        "Padding i border se přičítají vlevo i vpravo."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`box-sizing: border-box; width: 320px; padding: 20px; border: 2px solid;`. Šířka obsahu v px =",
+      "answers": [
+        "276"
+      ],
+      "explanation": "320 − 2 · 20 − 2 · 2 = 320 − 40 − 4 = 276 px.",
+      "hints": [
+        "Při border-box se padding a border od zadané šířky odečítají."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak velký je levý vnější okraj při `margin: 10px 20px 30px 40px;`?",
+      "options": [
+        "10 px",
+        "20 px",
+        "30 px",
+        "40 px"
+      ],
+      "answer": 3,
+      "explanation": "Čtyři hodnoty jdou od horní po směru hodinových ručiček: nahoře, vpravo, dole, vlevo.",
+      "hints": [
+        "Začni nahoře a pokračuj po směru hodinových ručiček."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Margin se započítává do šířky elementu na obrazovce.",
+      "answer": false,
+      "explanation": "Margin je místo kolem krabice, vně rámečku. Do šířky elementu se nepočítá."
+    },
+    {
+      "type": "input",
+      "question": "Karta je na obrazovce široká 280 px a má `margin: 0 15px`. Kolik px vodorovně zabere v řádku i s marginem?",
+      "answers": [
+        "310"
+      ],
+      "explanation": "280 + 15 + 15 = 310 px.",
+      "hints": [
+        "`margin: 0 15px` znamená 15 px vlevo i vpravo."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který element je blokový, tedy začíná na novém řádku a zabere celou šířku rodiče?",
+      "options": [
+        "`span`",
+        "`a`",
+        "`p`",
+        "`strong`"
+      ],
+      "answer": 2,
+      "explanation": "`p`, `div` a `h1` jsou blokové. `span`, `a` a `strong` jsou řádkové."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vodorovné marginy dvou prvků vedle sebe se neslučují.",
+      "answer": true,
+      "explanation": "Slučují se jen svislé marginy sousedních blokových elementů."
     }
   ]
 }

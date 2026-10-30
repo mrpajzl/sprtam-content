@@ -480,6 +480,89 @@
       "type": "open",
       "question": "Proč používat sémantické značky místo samých `div`?",
       "answer": "Sémantické značky říkají, co obsah znamená. Čtečky obrazovky podle nich nabídnou navigaci, vyhledávače lépe pochopí stránku a kód je čitelnější pro další vývojáře."
+    },
+    {
+      "type": "choice",
+      "question": "Který element je prázdný, tedy nemá obsah ani koncovou značku?",
+      "options": [
+        "`<p>`",
+        "`<br>`",
+        "`<h1>`",
+        "`<nav>`"
+      ],
+      "answer": 1,
+      "explanation": "`<br>` jen zalomí řádek. Nemá obsah, a proto nepotřebuje koncovou značku."
+    },
+    {
+      "type": "choice",
+      "question": "Kde uživatel uvidí text z elementu `<title>`?",
+      "options": [
+        "jako hlavní nadpis na stránce",
+        "v záložce prohlížeče",
+        "v patičce stránky",
+        "nikde, čte ho jen validátor"
+      ],
+      "answer": 1,
+      "explanation": "`title` je v `head`. Zobrazí se v záložce, v uložených záložkách a ve výsledcích vyhledávání."
+    },
+    {
+      "type": "choice",
+      "question": "Pod nadpisem `<h2>` chceš podnadpis. Kterou úroveň použiješ?",
+      "options": [
+        "`<h4>`",
+        "`<h1>`",
+        "`<h3>`",
+        "`<h6>`"
+      ],
+      "answer": 2,
+      "explanation": "Úrovně se nepřeskakují. Pod `h2` patří `h3`.",
+      "hints": [
+        "Nadpisy tvoří osnovu jako kapitola a podkapitola."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "`<span>` je obecný kontejner bez významu, který se používá uvnitř textu (řádkový).",
+      "answer": true,
+      "explanation": "`span` je řádkový, `div` blokový. Ani jeden nemá vlastní význam."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na jedné stránce smí být víc elementů `<article>`.",
+      "answer": true,
+      "explanation": "Každá samostatná novinka nebo příspěvek může být svůj `article`. Jen jednou smí být viditelný `main`."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje atribut v kódu `<a href=\"/kontakt\">Kontakt</a>`? Napiš jen název.",
+      "answers": [
+        "href"
+      ],
+      "hints": [
+        "Atribut je v počáteční značce ve tvaru název=\"hodnota\"."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s příkladem.",
+      "pairs": [
+        [
+          "koncová značka",
+          "`</p>`"
+        ],
+        [
+          "element",
+          "`<p>Ahoj</p>`"
+        ],
+        [
+          "atribut",
+          "`lang=\"cs\"`"
+        ],
+        [
+          "prázdný element",
+          "`<br>`"
+        ]
+      ]
     }
   ]
 }

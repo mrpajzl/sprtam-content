@@ -449,6 +449,87 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi `textContent` a `innerHTML` z pohledu bezpečnosti?",
       "answer": "`textContent` vloží vždy jen obyčejný text. `innerHTML` text vyloží jako HTML, takže vstup od uživatele s kódem by se spustil (XSS). Pro vstup od uživatele se proto používá `textContent`."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou metodou odstraníš element ze stránky?",
+      "options": [
+        "`el.delete()`",
+        "`el.hide()`",
+        "`el.remove()`",
+        "`el.clear()`"
+      ],
+      "answer": 2,
+      "explanation": "`el.remove()` element vyjme z DOM a zmizí ze stránky."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá `document.title = 'Rozvrh';`?",
+      "options": [
+        "přidá na stránku nadpis h1",
+        "změní text v záložce prohlížeče",
+        "vytvoří element title v body",
+        "nic, název stránky nejde měnit"
+      ],
+      "answer": 1,
+      "explanation": "`document.title` je obsah elementu `<title>`, který se ukazuje v záložce."
+    },
+    {
+      "type": "input",
+      "question": "Element `pocet` obsahuje text 5. Co dá výraz `pocet.textContent + 1`? Napiš výsledek bez uvozovek.",
+      "answers": [
+        "51"
+      ],
+      "explanation": "`textContent` je string, takže `+` texty spojí: \"5\" + 1 = \"51\". Správně je `Number(pocet.textContent) + 1`.",
+      "hints": [
+        "Jakého typu je `textContent`?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když na `<p class=\"info\">` zavoláš dvakrát za sebou `classList.toggle('info')`, bude mít odstavec na konci třídu `info`.",
+      "answer": true,
+      "explanation": "První `toggle` třídu odebere, druhý ji zase přidá."
+    },
+    {
+      "type": "truefalse",
+      "question": "V `document.getElementById('menu')` se před id píše mřížka `#`.",
+      "answer": false,
+      "explanation": "`getElementById` bere jen samotné id. Mřížku píšeš u `querySelector('#menu')`, protože tam jde o CSS selektor."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s částí stromu pro `<ul><li>A</li></ul>`.",
+      "pairs": [
+        [
+          "rodič",
+          "`ul`"
+        ],
+        [
+          "potomek",
+          "`li`"
+        ],
+        [
+          "textový uzel",
+          "A"
+        ],
+        [
+          "vrchol celého stromu",
+          "`document`"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Tlačítko přepíná tmavý režim. Kde má být popsaný jeho vzhled?",
+      "options": [
+        "v JS, každá vlastnost zvlášť přes `el.style`",
+        "v CSS ve třídě, kterou JS jen přepíná přes `classList`",
+        "v atributu `onclick` tlačítka",
+        "v `innerHTML` elementu body"
+      ],
+      "answer": 1,
+      "explanation": "Vzhled patří do CSS. JavaScript jen přidá nebo odebere třídu."
     }
   ]
 }

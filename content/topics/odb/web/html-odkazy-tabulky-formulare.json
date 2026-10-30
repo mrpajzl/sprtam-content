@@ -533,6 +533,78 @@
       "type": "open",
       "question": "Popiš, z čeho se skládá jednoduchý přihlašovací formulář.",
       "answer": "Element `form` s `action` (kam) a `method=\"post\"`. Uvnitř popisky `label` propojené přes `for` s poli `input` typu text/email a password, každé s `name`, a tlačítko `button type=\"submit\"`."
+    },
+    {
+      "type": "choice",
+      "question": "Jak napíšeš odkaz, který skočí na element s `id=\"kontakt\"` na téže stránce?",
+      "options": [
+        "`<a href=\"kontakt\">`",
+        "`<a href=\"#kontakt\">`",
+        "`<a href=\".kontakt\">`",
+        "`<a id=\"kontakt\">`"
+      ],
+      "answer": 1,
+      "explanation": "Mřížka `#` v `href` znamená místo na stránce podle `id`."
+    },
+    {
+      "type": "input",
+      "question": "Jakou hodnotu dáš atributu `target`, aby se odkaz otevřel v nové záložce?",
+      "answers": [
+        "_blank"
+      ],
+      "explanation": "`target=\"_blank\"` otevře novou záložku. Používej ho střídmě."
+    },
+    {
+      "type": "choice",
+      "question": "Který element použiješ pro víceřádkovou poznámku k přihlášce?",
+      "options": [
+        "`<input type=\"text\">`",
+        "`<select>`",
+        "`<textarea>`",
+        "`<option>`"
+      ],
+      "answer": 2,
+      "explanation": "`input type=\"text\"` je jen jednořádkový. Víceřádkový text je `textarea`."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přepínače `radio`, ze kterých jde vybrat jen jeden, musí mít stejnou hodnotu atributu `name`.",
+      "answer": true,
+      "explanation": "Stejné `name` z nich dělá jednu skupinu. Vybrat jde pak jen jeden."
+    },
+    {
+      "type": "choice",
+      "question": "Jak roztáhneš buňku `td` přes dva sloupce?",
+      "options": [
+        "`rowspan=\"2\"`",
+        "`colspan=\"2\"`",
+        "`width=\"2\"`",
+        "`span=\"2\"`"
+      ],
+      "answer": 1,
+      "explanation": "`colspan` slučuje sloupce (*columns*), `rowspan` řádky (*rows*)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj hodnotu `href` s tím, kam odkaz vede.",
+      "pairs": [
+        [
+          "`mailto:info@skola.cz`",
+          "otevře nový e-mail"
+        ],
+        [
+          "`#rozvrh`",
+          "místo na téže stránce"
+        ],
+        [
+          "`kontakt.html`",
+          "soubor ve stejné složce"
+        ],
+        [
+          "`/kontakt.html`",
+          "soubor v kořeni webu"
+        ]
+      ]
     }
   ]
 }

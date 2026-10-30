@@ -460,6 +460,70 @@
       "type": "open",
       "question": "Jak spočítáš specificitu selektoru `#menu .polozka a`?",
       "answer": "Spočítám id (1), třídy, atributy a pseudotřídy (1) a typy elementů (1). Specificita je 1-1-1 a porovnává se zleva."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je specificita selektoru `nav ul li a` ve tvaru A-B-C?",
+      "answers": [
+        "0-0-4",
+        "0,0,4",
+        "004",
+        "(0,0,4)",
+        "0 0 4"
+      ],
+      "explanation": "Žádné id ani třída, jen čtyři názvy elementů. Mezery (kombinátory) body nemají.",
+      "hints": [
+        "Spočítej názvy elementů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V CSS je `#nadpis { color: red; }` a v HTML `<h1 id=\"nadpis\" style=\"color: blue\">`. Jakou barvu má nadpis?",
+      "options": [
+        "červenou",
+        "modrou",
+        "černou"
+      ],
+      "answer": 1,
+      "explanation": "Inline styl v atributu `style` přebije každý selektor, i id."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stejnou hodnotu `id` může mít na stránce víc elementů.",
+      "answer": false,
+      "explanation": "`id` musí být jedinečné. Pro víc elementů se používá `class`."
+    },
+    {
+      "type": "choice",
+      "question": "Která pseudotřída vybere pole formuláře, do kterého právě píšeš?",
+      "options": [
+        "`:hover`",
+        "`:first-child`",
+        "`:focus`"
+      ],
+      "answer": 2,
+      "explanation": "`:focus` je aktivní prvek. `:hover` je prvek pod myší."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po pravidle `body { color: navy; }` budou mít tmavě modrý text i odstavce, které vlastní pravidlo pro barvu nemají.",
+      "answer": true,
+      "explanation": "Barva textu se dědí z rodiče na potomky."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou specificitu má selektor `p::before`?",
+      "options": [
+        "0-1-1",
+        "0-0-2",
+        "0-0-1",
+        "0-2-0"
+      ],
+      "answer": 1,
+      "explanation": "Pseudoelement (`::before`) se počítá jako typ elementu do sloupce C. `p` + `::before` = 0-0-2.",
+      "hints": [
+        "Pseudoelement se dvěma dvojtečkami není pseudotřída."
+      ]
     }
   ]
 }

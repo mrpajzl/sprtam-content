@@ -621,6 +621,80 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi HTTP a HTTPS a proč je HTTPS důležité?",
       "answer": "HTTPS je HTTP přenášené šifrovaným spojením TLS. Nikdo po cestě nemůže obsah číst ani měnit a server prokazuje certifikátem, že doména patří jemu. Bez HTTPS by šla hesla a osobní údaje po síti čitelně."
+    },
+    {
+      "type": "choice",
+      "question": "Která odpověď serveru patří do skupiny „přesměrování, hledej jinde“?",
+      "options": [
+        "404 Not Found",
+        "301 Moved Permanently",
+        "201 Created",
+        "503 Service Unavailable"
+      ],
+      "answer": 1,
+      "explanation": "Kódy 3xx znamenají přesměrování. 301 říká, že stránka se trvale přestěhovala jinam.",
+      "hints": [
+        "Podívej se na první číslici kódu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Prohlížeč se zeptá DNS na www.skola.cz. Co dostane zpátky?",
+      "options": [
+        "HTML stránku školy",
+        "IP adresu serveru",
+        "certifikát serveru",
+        "stavový kód 200"
+      ],
+      "answer": 1,
+      "explanation": "DNS jen překládá doménové jméno na IP adresu. Stránku pošle až samotný server."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po načtení HTML posílá prohlížeč další požadavky na obrázky, styly a skripty, které stránka používá.",
+      "answer": true,
+      "explanation": "Každý obrázek, soubor CSS a skript je samostatný soubor. Prohlížeč si o každý řekne zvláštním požadavkem."
+    },
+    {
+      "type": "input",
+      "question": "Na kterém portu standardně běží nešifrované HTTP? Napiš číslo.",
+      "answers": [
+        "80"
+      ],
+      "explanation": "HTTP používá port 80, HTTPS port 443."
+    },
+    {
+      "type": "input",
+      "question": "Jaký port je uvedený v adrese https://knihovna.cz:8080/katalog?autor=capek? Napiš číslo.",
+      "answers": [
+        "8080"
+      ],
+      "explanation": "Port se píše za dvojtečku hned za host. Kdyby tam nebyl, použil by se u https port 443.",
+      "hints": [
+        "Hledej číslo za dvojtečkou za doménou."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj metodu HTTP s tím, k čemu slouží.",
+      "pairs": [
+        [
+          "GET",
+          "získat data"
+        ],
+        [
+          "POST",
+          "poslat nová data"
+        ],
+        [
+          "PATCH",
+          "změnit část záznamu"
+        ],
+        [
+          "DELETE",
+          "smazat záznam"
+        ]
+      ]
     }
   ]
 }
