@@ -483,6 +483,97 @@
       "type": "open",
       "question": "Jak typ vazby ovlivňuje vlastnosti látek?",
       "answer": "Iontové látky mají vysoké teploty tání a v tavenině či roztoku vedou proud. Kovy vedou proud a jsou kujné. Molekulové látky s kovalentní vazbou mají nižší teploty tání a varu."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká vazba je v molekule vodíku H₂?",
+      "options": [
+        "polární kovalentní",
+        "nepolární kovalentní",
+        "iontová"
+      ],
+      "answer": 1,
+      "explanation": "Oba atomy jsou stejné, ΔX = 0 – elektronový pár je přesně uprostřed."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká vazba je mezi vodíkem a kyslíkem? (X(H) = 2,2, X(O) = 3,44)",
+      "options": [
+        "nepolární kovalentní",
+        "iontová",
+        "polární kovalentní"
+      ],
+      "answer": 2,
+      "explanation": "ΔX = 3,44 − 2,2 = 1,24, to je mezi 0,4 a 1,7 → polární kovalentní.",
+      "hints": [
+        "Spočítej rozdíl elektronegativit ΔX."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik vazeb σ celkem obsahuje molekula ethenu H₂C=CH₂?",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "4 vazby C–H (4 σ) + dvojná vazba C=C (1 σ + 1 π) = 5 σ.",
+      "hints": [
+        "Každá vazba – jednoduchá i násobná – obsahuje právě jednu vazbu σ.",
+        "Spočítej čtyři vazby C–H a jednu vazbu C=C."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při varu vody se trhají vazby mezi atomy vodíku a kyslíku v molekulách.",
+      "answer": false,
+      "explanation": "Trhají se jen vodíkové můstky mezi molekulami. Molekuly H₂O zůstávají celé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve vazbě H–Cl jsou vazebné elektrony posunuté k chloru.",
+      "answer": true,
+      "explanation": "Chlor má vyšší elektronegativitu, je na něm částečný záporný náboj."
+    },
+    {
+      "type": "choice",
+      "question": "Mezi molekulami které látky se tvoří vodíkové můstky?",
+      "options": [
+        "CH₄",
+        "H₂O",
+        "H₂",
+        "CO₂"
+      ],
+      "answer": 1,
+      "explanation": "Vodíkové můstky vznikají, když je vodík navázaný na F, O nebo N – to platí jen ve vodě."
+    },
+    {
+      "type": "choice",
+      "question": "Které přitažlivé síly jsou nejslabší?",
+      "options": [
+        "vodíkové můstky",
+        "iontová vazba",
+        "kovalentní vazba",
+        "Van der Waalsovy síly"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "match",
+      "question": "Spoj rozdíl elektronegativit ΔX s typem vazby.",
+      "pairs": [
+        [
+          "ΔX = 0,2",
+          "nepolární kovalentní"
+        ],
+        [
+          "ΔX = 0,9",
+          "polární kovalentní"
+        ],
+        [
+          "ΔX = 2,4",
+          "iontová"
+        ]
+      ]
     }
   ]
 }

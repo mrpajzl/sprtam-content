@@ -461,6 +461,82 @@
       "type": "open",
       "question": "Napiš elektronovou konfiguraci vápníku (Z = 20) a urči valenční elektrony.",
       "answer": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² = [Ar] 4s². Valenční jsou dva elektrony 4s²."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je konfigurace draslíku (Z = 19)?",
+      "options": [
+        "[Ar] 3d¹",
+        "[Ar] 4s¹",
+        "[Ar] 4p¹"
+      ],
+      "answer": 1,
+      "explanation": "Orbital 4s má nižší energii než 3d, proto 19. elektron jde do 4s."
+    },
+    {
+      "type": "input",
+      "question": "Kolik orbitalů typu d je v jedné vrstvě?",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "Pro d je l = 2, magnetické číslo m nabývá hodnot −2 až +2, tedy 5 orbitalů."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď typy orbitalů podle toho, kolik elektronů nejvýše pojmou (od nejmenšího).",
+      "items": [
+        "s",
+        "p",
+        "d",
+        "f"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Měď (Z = 29) má konfiguraci [Ar] 3d⁹ 4s².",
+      "answer": false,
+      "explanation": "Měď je výjimka: [Ar] 3d¹⁰ 4s¹ – úplně zaplněný d-orbital je stabilnější."
+    },
+    {
+      "type": "truefalse",
+      "question": "Spinové kvantové číslo může mít jen hodnotu +½, nebo −½.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je konfigurace hořčíku (Z = 12)?",
+      "options": [
+        "[Ne] 3p²",
+        "[Ne] 3s¹ 3p¹",
+        "[Ne] 3s²",
+        "[Ar] 3s²"
+      ],
+      "answer": 2,
+      "explanation": "Po neonu (10 elektronů) zbývají 2, které jdou do 3s."
+    },
+    {
+      "type": "input",
+      "question": "Kolik valenčních elektronů má fosfor s konfigurací [Ne] 3s² 3p³?",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "3s² 3p³: 2 + 3 = 5 valenčních elektronů.",
+      "hints": [
+        "Valenční elektrony jsou v nejvyšší vrstvě – tady ve 3. vrstvě."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké hodnoty může mít vedlejší kvantové číslo l pro vrstvu n = 2?",
+      "options": [
+        "1, 2",
+        "0, 1",
+        "0, 1, 2"
+      ],
+      "answer": 1,
+      "explanation": "l nabývá hodnot 0 až n − 1, tedy 0 (orbital s) a 1 (orbitaly p)."
     }
   ]
 }

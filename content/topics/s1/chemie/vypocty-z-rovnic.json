@@ -364,6 +364,86 @@
       "type": "open",
       "question": "Kolik gramů Mg je třeba na vznik 20 g MgO? (2 Mg + O₂ → 2 MgO, M(Mg) = 24, M(MgO) = 40)",
       "answer": "n(MgO) = 20 / 40 = 0,5 mol = n(Mg). m(Mg) = 0,5 · 24 = 12 g."
+    },
+    {
+      "type": "input",
+      "question": "N₂ + 3 H₂ → 2 NH₃. Kolik molů N₂ je potřeba na vznik 10 mol NH₃?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Poměr N₂ : NH₃ = 1 : 2, tedy 10 / 2 = 5 mol N₂."
+    },
+    {
+      "type": "input",
+      "question": "2 Mg + O₂ → 2 MgO. Kolik gramů MgO vznikne ze 48 g Mg? (M(Mg) = 24, M(MgO) = 40)",
+      "answers": [
+        "80"
+      ],
+      "explanation": "n(Mg) = 48 / 24 = 2 mol → n(MgO) = 2 mol → m = 2 · 40 = 80 g.",
+      "hints": [
+        "Převeď hořčík na moly.",
+        "Poměr Mg : MgO = 2 : 2 = 1 : 1."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "CaCO₃ → CaO + CO₂. Kolik dm³ CO₂ (norm. podm., 22,4 dm³/mol) vznikne z 25 g CaCO₃? (M = 100 g/mol)",
+      "answers": [
+        "5,6",
+        "5.6"
+      ],
+      "explanation": "n(CaCO₃) = 25 / 100 = 0,25 mol = n(CO₂). V = 0,25 · 22,4 = 5,6 dm³."
+    },
+    {
+      "type": "input",
+      "question": "2 H₂O → 2 H₂ + O₂. Kolik gramů O₂ vznikne rozkladem 36 g vody? (M(H₂O) = 18, M(O₂) = 32)",
+      "answers": [
+        "32"
+      ],
+      "explanation": "n(H₂O) = 36 / 18 = 2 mol → n(O₂) = 1 mol → m = 32 g.",
+      "hints": [
+        "Poměr H₂O : O₂ = 2 : 1."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "2 H₂ + O₂ → 2 H₂O. Máš 4 mol H₂ a 1 mol O₂. Který reaktant je limitující?",
+      "options": [
+        "H₂",
+        "O₂",
+        "žádný, jsou v přesném poměru"
+      ],
+      "answer": 1,
+      "explanation": "Na 4 mol H₂ by byly potřeba 2 mol O₂, ale je jen 1 mol. Kyslík dojde první."
+    },
+    {
+      "type": "input",
+      "question": "2 H₂ + O₂ → 2 H₂O. Máš 4 mol H₂ a 1 mol O₂. Kolik molů vody vznikne?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Limitující je O₂: 1 mol O₂ dá 2 mol H₂O. Vodíku 2 mol zbudou.",
+      "hints": [
+        "Nejdřív urči, která látka dojde první."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která rovnice je správně vyčíslená?",
+      "options": [
+        "N₂ + H₂ → 2 NH₃",
+        "N₂ + 3 H₂ → NH₃",
+        "N₂ + 3 H₂ → 2 NH₃",
+        "2 N₂ + 3 H₂ → 2 NH₃"
+      ],
+      "answer": 2,
+      "explanation": "Vlevo i vpravo jsou 2 atomy N a 6 atomů H."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při chemické reakci se atomy nevytvářejí ani neztrácejí, proto je hmotnost reaktantů stejná jako hmotnost produktů.",
+      "answer": true,
+      "explanation": "Například 4 g H₂ + 32 g O₂ → 36 g H₂O."
     }
   ]
 }

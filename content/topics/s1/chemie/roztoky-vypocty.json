@@ -362,6 +362,81 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi hmotnostním zlomkem a molární koncentrací?",
       "answer": "Hmotnostní zlomek je poměr hmotnosti látky a hmotnosti roztoku, je bezrozměrný. Molární koncentrace je látkové množství v 1 dm³ roztoku, v mol/dm³."
+    },
+    {
+      "type": "input",
+      "question": "Rozpustíš 30 g cukru ve 120 g vody. Hmotnostní zlomek v % =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "m(roztoku) = 30 + 120 = 150 g. w = 30 / 150 = 0,2 = 20 %.",
+      "hints": [
+        "Roztok váží cukr + voda."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik gramů vody potřebuješ na 300 g 5% roztoku soli?",
+      "answers": [
+        "285"
+      ],
+      "explanation": "Soli je 0,05 · 300 = 15 g, vody 300 − 15 = 285 g."
+    },
+    {
+      "type": "input",
+      "question": "Fyziologický roztok obsahuje 0,9 % NaCl. Kolik gramů NaCl je v 1 000 g tohoto roztoku?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "m = 0,009 · 1 000 = 9 g."
+    },
+    {
+      "type": "input",
+      "question": "8 g NaOH (M = 40 g/mol) rozpustíš a doplníš na 250 cm³. c v mol/dm³ =",
+      "answers": [
+        "0,8",
+        "0.8"
+      ],
+      "explanation": "n = 8 / 40 = 0,2 mol, V = 0,25 dm³, c = 0,2 / 0,25 = 0,8 mol/dm³.",
+      "hints": [
+        "Nejdřív n = m / M.",
+        "Objem převeď na dm³."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik cm³ roztoku o c = 1 mol/dm³ potřebuješ, abys zředěním připravil 500 cm³ roztoku o c = 0,2 mol/dm³?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "1 · V₁ = 0,2 · 500 → V₁ = 100 cm³.",
+      "hints": [
+        "Použij c₁ · V₁ = c₂ · V₂."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plyny se v teplé vodě rozpouštějí lépe než ve studené.",
+      "answer": false,
+      "explanation": "Rozpustnost plynů s teplotou klesá – proto teplá limonáda rychle vyčpí."
+    },
+    {
+      "type": "choice",
+      "question": "Ke 200 g 15% roztoku přileješ 100 g vody. Jaký je nový hmotnostní zlomek?",
+      "options": [
+        "7,5 %",
+        "10 %",
+        "15 %",
+        "5 %"
+      ],
+      "answer": 1,
+      "explanation": "Látky je 0,15 · 200 = 30 g, roztoku 300 g. w = 30 / 300 = 10 %."
+    },
+    {
+      "type": "truefalse",
+      "question": "V 1 dm³ roztoku o c = 0,5 mol/dm³ je rozpuštěno 0,5 mol látky.",
+      "answer": true,
+      "explanation": "n = c · V = 0,5 · 1 = 0,5 mol."
     }
   ]
 }

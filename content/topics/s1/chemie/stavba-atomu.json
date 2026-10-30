@@ -456,6 +456,90 @@
       "type": "open",
       "question": "Popiš složení atomu a vlastnosti elementárních částic.",
       "answer": "Jádro tvoří protony (náboj +1, hmotnost ≈ 1 u) a neutrony (bez náboje, ≈ 1 u). Obal tvoří elektrony s nábojem −1 a asi 1836× menší hmotností než proton."
+    },
+    {
+      "type": "input",
+      "question": "Kolik neutronů má nuklid ²⁷Al (Z = 13)?",
+      "answers": [
+        "14"
+      ],
+      "explanation": "N = A − Z = 27 − 13 = 14.",
+      "hints": [
+        "Neutrony N = A − Z."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Atom má 15 protonů a 16 neutronů. Jaké je jeho nukleonové číslo A?",
+      "answers": [
+        "31"
+      ],
+      "explanation": "A = protony + neutrony = 15 + 16 = 31 (je to fosfor ³¹P)."
+    },
+    {
+      "type": "choice",
+      "question": "Částice má 17 protonů a 18 elektronů. Jaký má náboj?",
+      "options": [
+        "1+",
+        "1−",
+        "0",
+        "2−"
+      ],
+      "answer": 1,
+      "explanation": "17 · (+1) + 18 · (−1) = −1. Jeden elektron přibyl, vznikl anion Cl⁻."
+    },
+    {
+      "type": "truefalse",
+      "question": "Elektron je asi 1836× lehčí než proton.",
+      "answer": true,
+      "explanation": "Proto elektrony k hmotnosti atomu skoro nepřispívají."
+    },
+    {
+      "type": "truefalse",
+      "question": "Neutron má kladný náboj +1.",
+      "answer": false,
+      "explanation": "Neutron je bez náboje. Kladný náboj +1 má proton."
+    },
+    {
+      "type": "choice",
+      "question": "Která dvojice nuklidů jsou izotopy?",
+      "options": [
+        "¹⁴C a ¹⁴N",
+        "¹⁶O a ¹⁶N",
+        "¹²C a ¹⁴C",
+        "⁴⁰Ar a ⁴⁰Ca"
+      ],
+      "answer": 2,
+      "explanation": "¹²C a ¹⁴C mají stejné Z = 6 (oba jsou uhlík), liší se jen počtem neutronů."
+    },
+    {
+      "type": "match",
+      "question": "Spoj částici s jejím nábojem.",
+      "pairs": [
+        [
+          "proton",
+          "+1"
+        ],
+        [
+          "neutron",
+          "0"
+        ],
+        [
+          "elektron",
+          "−1"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kde je soustředěna skoro celá hmotnost atomu?",
+      "options": [
+        "v elektronovém obalu",
+        "rovnoměrně v celém atomu",
+        "v jádře"
+      ],
+      "answer": 2,
+      "explanation": "Jádro nese přes 99,9 % hmotnosti atomu, elektrony jsou velmi lehké."
     }
   ]
 }

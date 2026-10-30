@@ -414,6 +414,76 @@
       "type": "open",
       "question": "Jak spočítáš počet atomů v 10 g vápníku (M = 40 g/mol)?",
       "answer": "n = m / M = 10 / 40 = 0,25 mol. N = n · Nₐ = 0,25 · 6,022 · 10²³ ≈ 1,5 · 10²³ atomů."
+    },
+    {
+      "type": "input",
+      "question": "Molární hmotnost NaCl v g/mol (Na = 23, Cl = 35,5) =",
+      "answers": [
+        "58,5",
+        "58.5"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Molární hmotnost CaCO₃ v g/mol (Ca = 40, C = 12, O = 16) =",
+      "answers": [
+        "100"
+      ],
+      "explanation": "40 + 12 + 3 · 16 = 40 + 12 + 48 = 100 g/mol.",
+      "hints": [
+        "Ve vzorci je 1 Ca, 1 C a 3 O."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik molů je 88 g CO₂? (M = 44 g/mol)",
+      "answers": [
+        "2"
+      ],
+      "explanation": "n = m / M = 88 / 44 = 2 mol."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik molekul je v 0,5 mol vody?",
+      "options": [
+        "9",
+        "6,022 · 10²³",
+        "3,011 · 10²³",
+        "1,2 · 10²⁴"
+      ],
+      "answer": 2,
+      "explanation": "N = n · Nₐ = 0,5 · 6,022 · 10²³ = 3,011 · 10²³."
+    },
+    {
+      "type": "input",
+      "question": "Objem 0,25 mol plynu za normálních podmínek v dm³ =",
+      "answers": [
+        "5,6",
+        "5.6"
+      ],
+      "explanation": "V = n · Vₘ = 0,25 · 22,4 = 5,6 dm³."
+    },
+    {
+      "type": "truefalse",
+      "question": "Relativní atomová hmotnost Aᵣ se udává v gramech.",
+      "answer": false,
+      "explanation": "Aᵣ je bezrozměrné číslo. V g/mol se udává molární hmotnost M."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve 2 g vodíku H₂ je stejně molekul jako ve 32 g kyslíku O₂.",
+      "answer": true,
+      "explanation": "Obojí je 1 mol, tedy 6,022 · 10²³ molekul."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamenají normální podmínky, při kterých je Vₘ ≈ 22,4 dm³/mol?",
+      "options": [
+        "25 °C a 100 kPa",
+        "0 °C a 101,325 kPa",
+        "20 °C a 101,325 kPa"
+      ],
+      "answer": 1
     }
   ]
 }
