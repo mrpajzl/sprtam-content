@@ -431,6 +431,68 @@
       "type": "open",
       "question": "Popiš vývojový diagram, který načte dvě čísla a vypíše větší z nich.",
       "answer": "Začátek → načti a, b → kosočtverec „a > b?“ → ano: vypiš a, ne: vypiš b → konec."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou značkou vývojového diagramu nakreslíš krok „Načti věk“?",
+      "options": [
+        "obdélník",
+        "ovál",
+        "rovnoběžník",
+        "kosočtverec"
+      ],
+      "answer": 2,
+      "explanation": "Rovnoběžník (kosodélník) je značka pro vstup a výstup dat."
+    },
+    {
+      "type": "truefalse",
+      "question": "Návod „Míchej polévku, dokud nebude dobrá“ splňuje determinovanost.",
+      "answer": false,
+      "explanation": "„Dobrá“ není jednoznačná podmínka, každý ji posoudí jinak."
+    },
+    {
+      "type": "choice",
+      "question": "Která vlastnost algoritmu chybí postupu „Opakuj: přičti 1 k číslu x“?",
+      "options": [
+        "hromadnost",
+        "elementárnost",
+        "konečnost",
+        "rezultativnost"
+      ],
+      "answer": 2,
+      "explanation": "Chybí podmínka ukončení, takže postup nikdy neskončí.",
+      "hints": [
+        "Skončí ten postup někdy?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Diagram: `s = 1`, `i = 1`; dokud i ≤ 4, proveď `s = s * 2` a `i = i + 1`; vypiš s. Co vypíše?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "s: 1 → 2 → 4 → 8 → 16, pak i = 5 a cyklus končí.",
+      "hints": [
+        "Zapisuj si s a i po každém průchodu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Algoritmus počítá obsah obdélníku. Co je jeho vstup a co výstup?",
+      "options": [
+        "vstup je obsah, výstup jsou délky stran",
+        "vstup jsou délky stran a, b, výstup je obsah",
+        "vstup i výstup je obsah",
+        "algoritmus nemá žádný vstup"
+      ],
+      "answer": 1,
+      "explanation": "Na začátku dostane délky stran, na konci vydá obsah a · b."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ze značky zpracování (obdélníku) vede ve vývojovém diagramu jen jedna šipka.",
+      "answer": true,
+      "explanation": "Obdélník má jeden výstup. Dva výstupy (ano/ne) má jen kosočtverec."
     }
   ]
 }

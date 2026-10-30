@@ -391,6 +391,73 @@
       "type": "open",
       "question": "Co je nekonečný cyklus a jak mu předejít?",
       "answer": "Cyklus, jehož podmínka nikdy nepřestane platit, takže program nikdy neskončí. Předejdeš mu tím, že v těle cyklu měníš proměnnou z podmínky tak, aby se k ukončení blížila."
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát proběhne tělo cyklu `for i in range(0, 20, 5):`?",
+      "answers": [
+        "4",
+        "čtyřikrát",
+        "ctyrikrat"
+      ],
+      "explanation": "i nabývá hodnot 0, 5, 10, 15. Dvacítka se nezahrnuje.",
+      "hints": [
+        "Vypiš si hodnoty i s krokem 5."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `s = 0`, `for i in range(1, 11):` → `if i % 3 == 0: s = s + i`, nakonec `print(s)`?",
+      "answers": [
+        "18"
+      ],
+      "explanation": "Přičtou se jen násobky tří: 3 + 6 + 9 = 18.",
+      "hints": [
+        "Která čísla od 1 do 10 jsou dělitelná třemi?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `for i in range(1, 10):` → `if i * i > 20: break`, a za cyklem `print(i)`?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "4 · 4 = 16 ještě ne, 5 · 5 = 25 > 20, cyklus skončí s i = 5.",
+      "hints": [
+        "Najdi první i, jehož druhá mocnina je větší než 20."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterým cyklem sečteš čísla 1 až 100 včetně (s = 0 na začátku)?",
+      "options": [
+        "`for i in range(100): s = s + i`",
+        "`for i in range(1, 100): s = s + i`",
+        "`for i in range(1, 101): s = s + i`",
+        "`for i in range(0, 100, 1): s = s + i`"
+      ],
+      "answer": 2,
+      "explanation": "Horní mez se nezahrnuje, proto 101, aby se započítala i stovka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příkaz `continue` ukončí celý cyklus.",
+      "answer": false,
+      "explanation": "`continue` jen přeskočí zbytek těla a pokračuje dalším průchodem. Cyklus ukončí `break`."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď hodnoty, kterých postupně nabývá n v programu `n = 20`, `while n > 1: n = n // 2`.",
+      "items": [
+        "20",
+        "10",
+        "5",
+        "2",
+        "1"
+      ],
+      "hints": [
+        "5 // 2 je 2."
+      ]
     }
   ]
 }

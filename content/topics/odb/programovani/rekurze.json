@@ -371,6 +371,68 @@
       "type": "open",
       "question": "Co je rekurze a z jakých dvou částí se rekurzivní funkce skládá?",
       "answer": "Rekurze je řešení úlohy funkcí, která volá sama sebe s menším vstupem. Skládá se ze základního případu, který se vyřeší přímo a rekurzi ukončí, a z rekurzivního případu, který úlohu zmenší a zavolá funkci znovu."
+    },
+    {
+      "type": "input",
+      "question": "`def p(n): return 1 if n == 0 else 2 * p(n - 1)`. Kolik vrátí `p(5)`?",
+      "answers": [
+        "32"
+      ],
+      "explanation": "p(5) = 2 · 2 · 2 · 2 · 2 · 1 = 32.",
+      "hints": [
+        "Rozepiš p(5) = 2 · p(4) a pokračuj až k p(0)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik je nsd(35, 14) podle `nsd(a, b) = a if b == 0 else nsd(b, a % b)`?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "nsd(35, 14) → nsd(14, 7) → nsd(7, 0) → 7.",
+      "hints": [
+        "35 % 14 = 7."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`def faktorial(n): return 1 if n <= 1 else n * faktorial(n - 1)`. Kolikrát se funkce zavolá při výpočtu `faktorial(4)` (včetně prvního volání)?",
+      "answers": [
+        "4",
+        "čtyřikrát",
+        "ctyrikrat"
+      ],
+      "explanation": "faktorial(4), (3), (2) a (1). U jedničky rekurze končí."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik vrátí `faktorial(0)` pro funkci se základním případem `if n <= 1: return 1`?",
+      "options": [
+        "0",
+        "1",
+        "chybu RecursionError",
+        "nikdy neskončí"
+      ],
+      "answer": 1,
+      "explanation": "0 ≤ 1, takže se hned uplatní základní případ. Odpovídá to 0! = 1."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výchozí limit zanoření rekurze v Pythonu je zhruba 1000 úrovní.",
+      "answer": true,
+      "explanation": "Po jeho překročení Python vyvolá RecursionError."
+    },
+    {
+      "type": "choice",
+      "question": "Na kterou úlohu se rekurze hodí nejpřirozeněji?",
+      "options": [
+        "sečtení dvou čísel",
+        "převod textu na velká písmena",
+        "procházení složky se všemi jejími podsložkami",
+        "vypsání jednoho řádku"
+      ],
+      "answer": 2,
+      "explanation": "Složka obsahuje podsložky, které vypadají stejně: menší úloha stejného druhu."
     }
   ]
 }

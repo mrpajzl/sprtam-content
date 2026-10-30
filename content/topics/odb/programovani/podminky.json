@@ -437,6 +437,64 @@
       "type": "open",
       "question": "Proč záleží na pořadí podmínek v řetězci `if`/`elif`?",
       "answer": "Provede se jen první větev, jejíž podmínka platí. Když dáš volnější podmínku první (např. `>= 50` před `>= 90`), přísnější větve se nikdy neprovedou."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(not 3 > 5)`?",
+      "answers": [
+        "True"
+      ],
+      "explanation": "3 > 5 je False a `not` ho obrátí na True."
+    },
+    {
+      "type": "input",
+      "question": "`x = 12`. Co vypíše `if x > 10: print(\"A\")` a pod tím samostatně `if x > 5: print(\"B\")`? (Napiš písmena za sebou bez mezer.)",
+      "answers": [
+        "AB"
+      ],
+      "explanation": "Jsou to dva samostatné `if`, ne `elif`. Každý se vyhodnotí zvlášť a oba platí.",
+      "hints": [
+        "Je tam `elif`, nebo dvě samostatné podmínky?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podmínka `heslo == \"Tajne123\"` platí i tehdy, když uživatel zadá `tajne123`.",
+      "answer": false,
+      "explanation": "Porovnání řetězců rozlišuje velká a malá písmena."
+    },
+    {
+      "type": "choice",
+      "question": "Která podmínka zjistí, že číslo x leží mezi 10 a 20 včetně obou mezí?",
+      "options": [
+        "`x >= 10 or x <= 20`",
+        "`x > 10 and x < 20`",
+        "`x >= 10 and x <= 20`",
+        "`x == 10 and x == 20`"
+      ],
+      "answer": 2,
+      "explanation": "Musí platit obě nerovnosti zároveň, proto `and`, a meze se zahrnují, proto `>=` a `<=`.",
+      "hints": [
+        "Mají platit obě části, nebo stačí jedna?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Výraz `True and False or True` má hodnotu True.",
+      "answer": true,
+      "explanation": "`and` se vyhodnotí dřív: True and False = False. Pak False or True = True."
+    },
+    {
+      "type": "choice",
+      "question": "`vek = 18`. Co vypíše `if vek > 18: print(\"A\")`, `else: print(\"B\")`?",
+      "options": [
+        "A",
+        "B",
+        "A i B",
+        "nic"
+      ],
+      "answer": 1,
+      "explanation": "18 > 18 neplatí, provede se `else`. Pro „18 a víc“ je potřeba `>=`."
     }
   ]
 }

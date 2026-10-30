@@ -402,6 +402,59 @@
       "type": "open",
       "question": "Proč program ukládá data do souboru, když je má v proměnných?",
       "answer": "Proměnné jsou v operační paměti a po skončení programu zmizí. Soubor na disku data zachová i po vypnutí programu a počítače."
+    },
+    {
+      "type": "choice",
+      "question": "Která metoda vrátí celý obsah souboru jako jeden řetězec?",
+      "options": [
+        "`f.readlines()`",
+        "`f.readline()`",
+        "`f.read()`",
+        "`f.write()`"
+      ],
+      "answer": 2,
+      "explanation": "`readlines()` vrací seznam řádků, `readline()` jeden řádek."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `try: x = int(\"pět\")` → `print(\"A\")`, `except ValueError: print(\"B\")`, `finally: print(\"C\")`? (Napiš písmena za sebou bez mezer.)",
+      "answers": [
+        "BC"
+      ],
+      "explanation": "`int(\"pět\")` vyvolá ValueError, zbytek bloku `try` se přeskočí. Provede se `except` a pak vždy `finally`.",
+      "hints": [
+        "Provede se řádek za tím, který vyvolal výjimku?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Blok `else` za `try` se provede jen tehdy, když v `try` nenastala žádná výjimka.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč při otevírání souboru uvádíš `encoding=\"utf-8\"`?",
+      "options": [
+        "aby byl soubor menší",
+        "aby se soubor sám zavřel",
+        "aby šel soubor jen číst",
+        "aby se správně uložila a načetla česká písmena s háčky a čárkami"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "input",
+      "question": "Soubor `cisla.txt` má tři řádky: 4, 7 a 10. Co vypíše `s = 0`, `with open(\"cisla.txt\", encoding=\"utf-8\") as f:` → `for r in f: s = s + int(r)`, nakonec `print(s)`?",
+      "answers": [
+        "21"
+      ],
+      "explanation": "Každý řádek se převede na číslo: 4 + 7 + 10 = 21."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když soubor neexistuje, režim `\"r\"` ho sám vytvoří.",
+      "answer": false,
+      "explanation": "Čtení neexistujícího souboru vyvolá FileNotFoundError. Soubor vytvoří režim `\"w\"` nebo `\"a\"`."
     }
   ]
 }

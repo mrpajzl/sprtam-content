@@ -457,6 +457,69 @@
       "type": "open",
       "question": "Kdy použiješ slovník a kdy seznam?",
       "answer": "Seznam, když záleží na pořadí a prvky hledám podle pozice. Slovník, když k nějakému klíči (jménu, kódu) patří hodnota a hledám ji podle klíče."
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `len({1, 2, 3} | {3, 4, 5})`?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Sjednocení je {1, 2, 3, 4, 5}, trojka se započítá jen jednou.",
+      "hints": [
+        "`|` je sjednocení. Opakuje se nějaký prvek?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co je `{1, 2, 3} ^ {2, 3, 4}`? (Zapiš jako množinu.)",
+      "answers": [
+        "{1, 4}",
+        "{1,4}",
+        "{4, 1}",
+        "{4,1}"
+      ],
+      "explanation": "Symetrický rozdíl obsahuje prvky, které jsou jen v jedné z množin."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `d = {}`, `for p in [\"x\", \"y\", \"x\", \"x\"]: d[p] = d.get(p, 0) + 1`, `print(d[\"x\"])`?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "„x“ je v seznamu třikrát. `get` vrátí dosavadní počet, nebo 0.",
+      "hints": [
+        "Kolikrát se v seznamu objeví „x“?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "`ceny = {\"jablko\": 25, \"hruska\": 30}`, pak `ceny[\"jablko\"] = 20`. Kolik je `len(ceny)`?",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "chyba KeyError"
+      ],
+      "answer": 1,
+      "explanation": "Klíč „jablko“ už existuje, jeho hodnota se jen přepíše. Dvojice zůstávají dvě."
+    },
+    {
+      "type": "choice",
+      "question": "Co prochází cyklus `for k in ceny:`, když `ceny` je slovník?",
+      "options": [
+        "dvojice klíč–hodnota",
+        "jen hodnoty",
+        "jen klíče",
+        "indexy 0, 1, 2…"
+      ],
+      "answer": 2,
+      "explanation": "Samotný slovník v cyklu dává klíče. Dvojice dává `ceny.items()`."
+    },
+    {
+      "type": "truefalse",
+      "question": "Klíčem slovníku může být seznam.",
+      "answer": false,
+      "explanation": "Klíč musí být neměnný, třeba řetězec, číslo nebo n-tice. Seznam jde měnit."
     }
   ]
 }

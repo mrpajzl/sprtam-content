@@ -514,6 +514,67 @@
       "type": "open",
       "question": "Proč program `x = input()` a `print(x + 1)` skončí chybou a jak ho opravit?",
       "answer": "`input()` vrací řetězec a řetězec nejde sečíst s číslem (TypeError). Opravíš ho přetypováním: `x = int(input())`."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(10 - 2 * 3)`?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Násobení má přednost: 10 − 6 = 4.",
+      "hints": [
+        "Co se počítá dřív, odčítání, nebo násobení?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(7 / 2)`?",
+      "answers": [
+        "3.5",
+        "3,5"
+      ],
+      "explanation": "Operátor `/` dělí přesně a vrací `float`."
+    },
+    {
+      "type": "choice",
+      "question": "Co vrátí `type(3.0)`?",
+      "options": [
+        "int",
+        "str",
+        "float",
+        "bool"
+      ],
+      "answer": 2,
+      "explanation": "Číslo s desetinnou tečkou je `float`, i když je za tečkou nula."
+    },
+    {
+      "type": "input",
+      "question": "Uživatel zadá `2`. Co vypíše program `x = input()` a `print(x * 3)`?",
+      "answers": [
+        "222"
+      ],
+      "explanation": "`input()` vrací text `\"2\"` a násobení textu číslem ho zopakuje.",
+      "hints": [
+        "Jakého typu je hodnota v x?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co vypíše `cena = 12.5`, `pocet = 4`, `print(cena * pocet)`?",
+      "options": [
+        "50",
+        "50.0",
+        "12.54",
+        "chybu TypeError"
+      ],
+      "answer": 1,
+      "explanation": "Když je ve výpočtu aspoň jeden `float`, je i výsledek `float`."
+    },
+    {
+      "type": "truefalse",
+      "question": "`print(17 // 5 * 5 + 17 % 5)` vypíše 17.",
+      "answer": true,
+      "explanation": "17 // 5 = 3, 3 · 5 = 15, 17 % 5 = 2, 15 + 2 = 17."
     }
   ]
 }

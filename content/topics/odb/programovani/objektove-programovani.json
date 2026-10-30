@@ -377,6 +377,65 @@
       "type": "open",
       "question": "Vysvětli na příkladu rozdíl mezi třídou a objektem.",
       "answer": "Třída je předpis, např. třída Auto říká, že auto má značku a umí jet. Objekt je konkrétní auto vytvořené podle předpisu, např. modrá Škoda s vlastními hodnotami atributů."
+    },
+    {
+      "type": "input",
+      "question": "Třída Ucet má metodu `vyber(castka)`, která při nedostatku peněz jen vypíše „Nedostatek peněz“. `u = Ucet(\"Eva\")` (zůstatek 0), `u.vloz(200)`, `u.vyber(50)`, `u.vyber(500)`. Kolik je `u.zustatek`?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "200 − 50 = 150. Výběr 500 se neprovede, protože na účtu tolik není.",
+      "hints": [
+        "Proběhne výběr 500?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Třídy Zvire, Pes a Kocka jsou jako ve výkladu (Zvire.zvuk() vrací „...“). Co vrátí `Zvire(\"Bob\").predstav_se()`?",
+      "options": [
+        "Bob: haf",
+        "Bob: ...",
+        "chybu, protože Zvire nemá zvuk()",
+        "Bob"
+      ],
+      "answer": 1,
+      "explanation": "Objekt třídy Zvire použije vlastní metodu `zvuk()`, která vrací „...“."
+    },
+    {
+      "type": "choice",
+      "question": "Který pilíř OOP popisuje, že ve školní evidenci má žák jméno a třídu, ale ne barvu očí?",
+      "options": [
+        "dědičnost",
+        "polymorfismus",
+        "zapouzdření",
+        "abstrakce"
+      ],
+      "answer": 3,
+      "explanation": "Abstrakce: z reálné věci popíšeš jen to, co program potřebuje."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá `super().__init__(jmeno)` v konstruktoru třídy `Student(Osoba)`?",
+      "options": [
+        "vytvoří vedle studenta ještě samostatný objekt Osoba",
+        "zavolá konstruktor předka Osoba, který nastaví jméno",
+        "smaže atributy předka",
+        "přepíše metodu předka"
+      ],
+      "answer": 1,
+      "explanation": "`super()` odkazuje na předka. Jeho `__init__` nastaví jméno a potomek pak doplní, co je nové."
+    },
+    {
+      "type": "truefalse",
+      "question": "Třída `Pes(Zvire)`, která nemá vlastní `__init__`, použije při vytvoření objektu `__init__` předka.",
+      "answer": true,
+      "explanation": "Potomek dědí všechny metody předka, které sám nepřepíše."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když metoda přiřadí `zustatek = 0` (bez `self.`), změní atribut objektu.",
+      "answer": false,
+      "explanation": "Vznikne jen lokální proměnná metody. Atribut objektu se mění přes `self.zustatek`."
     }
   ]
 }

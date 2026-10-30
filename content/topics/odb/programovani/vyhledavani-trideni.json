@@ -412,6 +412,63 @@
       "type": "open",
       "question": "Co vyjadřuje zápis O(n²)?",
       "answer": "Že počet kroků algoritmu roste s druhou mocninou počtu prvků n (v nejhorším případě). Při dvojnásobku prvků je kroků zhruba čtyřikrát víc."
+    },
+    {
+      "type": "input",
+      "question": "Binárně hledáš 5 v seznamu `[2, 5, 8, 12, 16, 23, 38, 56, 72, 91]`, prostředek je `(od + do) // 2`. Kolik porovnání potřebuješ?",
+      "answers": [
+        "2",
+        "dvě",
+        "dva"
+      ],
+      "explanation": "1. index 4 (16): 5 < 16 → vlevo, úsek 0–3. 2. index 1 (5): nalezeno.",
+      "hints": [
+        "První prostředek je index (0 + 9) // 2 = 4."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik je log₂ 64?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "2⁶ = 64, tedy 64 vydělíš dvěma šestkrát, než dojdeš k 1."
+    },
+    {
+      "type": "input",
+      "question": "Jak bude vypadat `[4, 3, 1, 2]` po prvním průchodu třídění přímým výběrem? (Zapiš jako seznam.)",
+      "answers": [
+        "[1, 3, 4, 2]",
+        "[1,3,4,2]"
+      ],
+      "explanation": "Nejmenší je 1, prohodí se s prvním prvkem 4.",
+      "hints": [
+        "Najdi nejmenší prvek a prohoď ho s prvním."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Lineární vyhledávání v 1 000 prvcích trvá nejhůř 1 ms. Kolik zhruba nejhůř potrvá v 5 000 prvcích?",
+      "options": [
+        "25 ms",
+        "5 ms",
+        "1 ms",
+        "10 ms"
+      ],
+      "answer": 1,
+      "explanation": "Složitost O(n): pětkrát víc prvků, zhruba pětkrát víc kroků."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po prvním průchodu bublinkového třídění je největší prvek na konci seznamu.",
+      "answer": true,
+      "explanation": "Největší prvek „probublá“ přes všechny sousedy až na konec."
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce `sorted()` v Pythonu používá bublinkové třídění.",
+      "answer": false,
+      "explanation": "Používá Timsort se složitostí O(n log n)."
     }
   ]
 }

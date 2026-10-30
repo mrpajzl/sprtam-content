@@ -377,6 +377,70 @@
       "type": "open",
       "question": "Uveď aspoň tři důvody, proč dělit program do funkcí.",
       "answer": "Kód se nepíše opakovaně, ale volá se. Program je přehlednější, protože jména funkcí popisují, co dělají. Velký problém se rozloží na menší a každá funkce se dá samostatně otestovat a opravit."
+    },
+    {
+      "type": "input",
+      "question": "`def prumer(a, b, c): return (a + b + c) / 3`. Co vrátí `prumer(2, 4, 9)`?",
+      "answers": [
+        "5.0",
+        "5,0"
+      ],
+      "explanation": "(2 + 4 + 9) / 3 = 15 / 3 = 5.0. Dělení `/` vrací `float`.",
+      "hints": [
+        "Pozor na typ výsledku dělení `/`."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`def vetsi(a, b):` → `if a > b: return a` → `return b`. Kolik je `vetsi(7, 3) + vetsi(2, 9)`?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "vetsi(7, 3) = 7, vetsi(2, 9) = 9, dohromady 16."
+    },
+    {
+      "type": "choice",
+      "question": "`def soucet(a, b): print(a + b)`. Co udělá `x = soucet(2, 3) * 10`?",
+      "options": [
+        "uloží do x číslo 50",
+        "vypíše 5 a 50",
+        "vypíše 5 a pak skončí chybou TypeError",
+        "uloží do x text „55555“"
+      ],
+      "answer": 2,
+      "explanation": "Funkce jen vypíše 5 a vrátí `None`. `None * 10` vyvolá TypeError.",
+      "hints": [
+        "Co funkce vrací, když nemá `return`?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co vypíše program `def f(): y = 10`, pak `f()` a `print(y)`?",
+      "options": [
+        "10",
+        "chybu NameError",
+        "None",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "`y` je lokální proměnná funkce, po návratu zanikne a mimo funkci neexistuje."
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce může obsahovat víc příkazů `return`, ale při jednom volání se provede nejvýš jeden.",
+      "answer": true,
+      "explanation": "První provedený `return` funkci ukončí."
+    },
+    {
+      "type": "input",
+      "question": "`def mocnina(x, n=2): return x ** n`. Kolik je `mocnina(3) + mocnina(2, 3)`?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "mocnina(3) = 3² = 9, mocnina(2, 3) = 2³ = 8, součet 17.",
+      "hints": [
+        "Jakou hodnotu má n, když ho nezadáš?"
+      ]
     }
   ]
 }

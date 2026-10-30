@@ -406,6 +406,60 @@
       "type": "open",
       "question": "Co znamená, že řetězce v Pythonu jsou neměnné, a jaký to má důsledek?",
       "answer": "Po vytvoření nejde řetězec změnit, ani jeho jednotlivý znak. Metody jako `upper()` nebo `replace()` vracejí nový řetězec, který je potřeba uložit do proměnné."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print(\"Informatika\"[2:5])`?",
+      "answers": [
+        "for"
+      ],
+      "explanation": "Znaky na indexech 2, 3, 4: f, o, r.",
+      "hints": [
+        "I má index 0. Pětka se nezahrnuje."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `len(\"Python 3\")`?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "6 písmen, mezera a číslice 3."
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `\"Eva;17;Brno\".split(\";\")[2]`?",
+      "answers": [
+        "Brno"
+      ],
+      "explanation": "`split` dá ['Eva', '17', 'Brno'] a index 2 je třetí prvek."
+    },
+    {
+      "type": "choice",
+      "question": "Co vrátí `\" eva \".strip().upper()`?",
+      "options": [
+        "„ EVA “",
+        "„Eva“",
+        "„EVA“",
+        "„eva“"
+      ],
+      "answer": 2,
+      "explanation": "`strip()` odstraní mezery na krajích a `upper()` převede na velká písmena."
+    },
+    {
+      "type": "input",
+      "question": "Co vrátí `\"ahoj\".find(\"x\")`?",
+      "answers": [
+        "-1",
+        "−1"
+      ],
+      "explanation": "Když hledaný text v řetězci není, `find` vrátí −1."
+    },
+    {
+      "type": "truefalse",
+      "question": "`\"12a\".isdigit()` má hodnotu True.",
+      "answer": false,
+      "explanation": "„a“ není číslice. `isdigit()` vrátí True, jen když jsou všechny znaky číslice."
     }
   ]
 }

@@ -464,6 +464,65 @@
       "type": "open",
       "question": "Proč `b = a` nevytvoří kopii seznamu a jak kopii udělat?",
       "answer": "Proměnná obsahuje jen odkaz na seznam, takže `b = a` vytvoří druhé jméno pro tentýž seznam. Kopii vytvoří `a.copy()`, `list(a)` nebo řez `a[:]`."
+    },
+    {
+      "type": "input",
+      "question": "`a = [3, 1, 4, 1, 5]`, pak `a.remove(1)`. Jak vypadá `a`? (Zapiš jako seznam.)",
+      "answers": [
+        "[3, 4, 1, 5]",
+        "[3,4,1,5]"
+      ],
+      "explanation": "`remove` smaže jen první výskyt hodnoty 1.",
+      "hints": [
+        "Kolik jedniček `remove` smaže?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "`a = [3, 1, 4]`, `x = a.pop()`. Co vypíše `print(x + len(a))`?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "`pop()` odebere a vrátí poslední prvek 4. V seznamu zbudou 2 prvky: 4 + 2 = 6.",
+      "hints": [
+        "Co vrátí `pop()` a kolik prvků v seznamu zůstane?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `print([x * 2 for x in [1, 2, 3] if x != 2])`?",
+      "answers": [
+        "[2, 6]",
+        "[2,6]"
+      ],
+      "explanation": "Dvojka se vynechá, zbylá čísla 1 a 3 se zdvojnásobí."
+    },
+    {
+      "type": "choice",
+      "question": "`a = [5, 2, 7]`, `b = a.sort()`. Co je v proměnné b?",
+      "options": [
+        "[2, 5, 7]",
+        "[5, 2, 7]",
+        "None",
+        "[7, 5, 2]"
+      ],
+      "answer": 2,
+      "explanation": "`sort()` seřadí přímo `a` a vrací `None`. Nový seřazený seznam vrací `sorted(a)`."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po `b = a.copy()` a `b.append(4)` se změní i seznam `a`.",
+      "answer": false,
+      "explanation": "`copy()` vytvoří samostatnou kopii, změna `b` se `a` netýká."
+    },
+    {
+      "type": "input",
+      "question": "Co vypíše `z = [2, 4, 6]` a `print(sum(z) / len(z))`?",
+      "answers": [
+        "4.0",
+        "4,0"
+      ],
+      "explanation": "Součet 12, počet 3, 12 / 3 = 4.0 (dělení `/` dává `float`)."
     }
   ]
 }
