@@ -336,6 +336,62 @@
       "type": "open",
       "question": "Co by měla obsahovat složka cenného předmětu?",
       "answer": "Popis předmětu, identifikační fotografie, údaje o nabytí, doklady provenience, výsledky kontroly databází odcizených předmětů a seznamu kulturních památek a případné posudky a restaurátorské zprávy."
+    },
+    {
+      "type": "choice",
+      "question": "Které období vyžaduje v provenienci zvláštní pozornost kvůli konfiskacím majetku?",
+      "options": [
+        "léta 1900–1910",
+        "období po roce 1948",
+        "období po roce 2000"
+      ],
+      "answer": 1,
+      "explanation": "Kromě let 1938–1945 se pozorně sleduje období po roce 1948, kdy se majetek konfiskoval."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mezera v provenienci automaticky znamená, že je předmět kradený.",
+      "answer": false,
+      "explanation": "Mezera neznamená, že je něco špatně. Je ale signálem pro pečlivější ověření, hlavně v rizikových letech."
+    },
+    {
+      "type": "choice",
+      "question": "Zákazník nabízí obyčejný sériový cínový talíř z 19. století bez dokladů. Co v tomto případě stačí?",
+      "options": [
+        "úplná doložená provenience od výroby",
+        "znalecký posudek a souhlas policie",
+        "identifikace prodávajícího a popis talíře v evidenci"
+      ],
+      "answer": 2,
+      "explanation": "U běžného levného kusu se úplná provenience nečeká. Větší opatrnost patří k cenným a sakrálním předmětům."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto věcí je doklad provenience?",
+      "options": [
+        "rodinná fotografie z roku 1960 s obrazem na zdi obývacího pokoje",
+        "rozměry obrazu",
+        "popis techniky malby"
+      ],
+      "answer": 0,
+      "explanation": "Fotografie dokládá, kde obraz v roce 1960 byl. Rozměry a technika patří jen do popisu předmětu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ke každému kroku provenience je vhodné přiložit doklad, například štítek výstavy nebo dědické usnesení.",
+      "answer": true,
+      "explanation": "Provenience je doložená jen doklady, ne ústním tvrzením."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se u předmětů z kostelů a zámků na provenienci díváme zvlášť pozorně?",
+      "options": [
+        "nesmí se nikdy prodat",
+        "odtud se v minulosti často kradlo",
+        "nemají žádnou cenu"
+      ],
+      "answer": 1,
+      "explanation": "Sakrální a zámecké předměty bývají častěji kradené nebo mohou být kulturními památkami."
     }
   ]
 }

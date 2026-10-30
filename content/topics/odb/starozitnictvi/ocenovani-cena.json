@@ -387,6 +387,63 @@
       "type": "open",
       "question": "Jak klientovi vysvětlíš, proč je tvoje výkupní nabídka nižší než cena v tvém obchodě?",
       "answer": "Prodejní cena musí pokrýt náklady obchodu – nájem, opravy, mzdy, daně – a riziko, že se předmět dlouho neprodá. Rozdíl mezi prodejní a výkupní cenou je marže, ze které obchod žije."
+    },
+    {
+      "type": "input",
+      "question": "Starožitník koupil hodiny za 9 000 Kč a prodal je za 14 500 Kč. Jaká byla marže v Kč?",
+      "answers": [
+        "5500",
+        "5 500"
+      ],
+      "explanation": "Marže = prodejní − výkupní cena = 14 500 − 9 000 = 5 500 Kč.",
+      "hints": [
+        "Marže je rozdíl mezi prodejní a výkupní cenou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto cen bývá u téhož předmětu nejnižší?",
+      "options": [
+        "pojistná",
+        "prodejní",
+        "výkupní"
+      ],
+      "answer": 2,
+      "explanation": "Výkupní cena je nejnižší, protože obchodník z ní musí pokrýt náklady, riziko a zisk."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pojistná cena bývá vyšší než výkupní cena.",
+      "answer": true,
+      "explanation": "Pojistná cena počítá s pořízením náhradního srovnatelného předmětu, tedy spíš s prodejní cenou."
+    },
+    {
+      "type": "choice",
+      "question": "Co je provenience předmětu?",
+      "options": [
+        "kolik z předmětu je z doby jeho vzniku",
+        "doložený původ – kdo předmět kdy vlastnil",
+        "vzácnost předmětu na trhu"
+      ],
+      "answer": 1,
+      "explanation": "Provenience je doložený původ. Zajímavá provenience, např. ze zámecké sbírky, cenu zvyšuje."
+    },
+    {
+      "type": "choice",
+      "question": "Srovnatelné lampy se prodaly v průměru za 8 000 Kč. Tvoje je ve výborném stavu a má doloženou zajímavou provenienci. Jak upravíš odhad?",
+      "options": [
+        "posunu ho nad průměr",
+        "posunu ho pod průměr",
+        "nechám přesně průměr, rozdíly nehrají roli"
+      ],
+      "answer": 0,
+      "explanation": "Lepší stav a provenience jsou faktory, které cenu zvyšují."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dva předměty ze stejné doby a stejného slohu mají vždy podobnou cenu.",
+      "answer": false,
+      "explanation": "Cenu ovlivňuje i materiál, kvalita, stav, původnost a další faktory. Rozdíl může být i desetinásobný."
     }
   ]
 }

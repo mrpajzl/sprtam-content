@@ -373,6 +373,64 @@
       "type": "open",
       "question": "Co uděláš, když chce cizinec koupit a vyvézt obraz z roku 1930 za 300 000 Kč?",
       "answer": "Ověřím, že není kulturní památkou a není kradený. Je starší 50 let a nad 150 000 Kč, takže je předmětem kulturní hodnoty a k vývozu potřebuje osvědčení; míří-li mimo EU, i vývozní licenci. Bez nich vývoz není dovolen."
+    },
+    {
+      "type": "input",
+      "question": "Do kolika dnů vydá osvědčení k vývozu Ministerstvo kultury (stav 2026)?",
+      "answers": [
+        "60",
+        "šedesáti",
+        "šedesát"
+      ],
+      "explanation": "Odborná organizace vydá osvědčení do 30 dnů, ministerstvo do 60 dnů."
+    },
+    {
+      "type": "choice",
+      "question": "Originální grafika z roku 1965 za 15 000 Kč, která není památkou. Je předmětem kulturní hodnoty?",
+      "options": [
+        "ano, je starší 50 let",
+        "ne, za kus nepřesahuje cenový limit 20 000 Kč",
+        "ano, grafika je jím vždy"
+      ],
+      "answer": 1,
+      "explanation": "Grafika musí být starší 50 let a zároveň dražší než 20 000 Kč za kus. Cenu nesplňuje.",
+      "hints": [
+        "U grafiky platí stáří i cena.",
+        "Porovnej cenu s limitem za jeden kus."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká nejvyšší pokuta hrozí podle zákona č. 71/1994 Sb. za vývoz bez osvědčení (stav 2026)?",
+      "options": [
+        "50 000 Kč",
+        "500 000 Kč",
+        "5 000 000 Kč"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Obraz světce z roku 1980 splňuje kritérium „náboženský námět, starší 70 let“.",
+      "answer": false,
+      "explanation": "V roce 2026 je obrazu 46 let, hranice 70 let ještě nesplňuje."
+    },
+    {
+      "type": "choice",
+      "question": "Housle z roku 1900 za 80 000 Kč, které nejsou památkou. Jsou předmětem kulturní hodnoty?",
+      "options": [
+        "ne, cena nepřesahuje 100 000 Kč",
+        "ano, jsou starší 100 let",
+        "ano, hudební nástroje jsou jím vždy"
+      ],
+      "answer": 0,
+      "explanation": "Hudební nástroj musí být starší 100 let a zároveň mít cenu nad 100 000 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při prodeji movité kulturní památky osobě blízké se předkupní právo státu neuplatní.",
+      "answer": true,
+      "explanation": "Prodej osobám blízkým a spoluvlastníkům je z povinnosti nabídnout památku ministerstvu vyjmut."
     }
   ]
 }

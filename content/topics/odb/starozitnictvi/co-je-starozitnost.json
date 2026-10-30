@@ -399,6 +399,69 @@
       "type": "open",
       "question": "Proč by měl starožitník u barokní sochy světce zbystřit?",
       "answer": "Sakrální předměty bývají kulturní památky nebo pocházejí z krádeží v kostelech. Musím ověřit Ústřední seznam kulturních památek, databáze odcizených předmětů a původ, a vědět, že k prodeji může být potřeba osvědčení."
+    },
+    {
+      "type": "choice",
+      "question": "Pod kterou položkou celního sazebníku mají vlastní místo starožitnosti starší než 100 let?",
+      "options": [
+        "9701",
+        "8703",
+        "9706"
+      ],
+      "answer": 2,
+      "explanation": "Položka 9706 celního sazebníku jsou starožitnosti starší než 100 let."
+    },
+    {
+      "type": "choice",
+      "question": "Který zákon řadí mezi starožitnosti pro zvláštní režim předměty starší než 100 let?",
+      "options": [
+        "č. 20/1987 Sb., o státní památkové péči",
+        "č. 235/2004 Sb., o dani z přidané hodnoty",
+        "č. 71/1994 Sb., o prodeji a vývozu předmětů kulturní hodnoty"
+      ],
+      "answer": 1,
+      "explanation": "Zvláštní režim pro obchodníky se starožitnostmi upravuje zákon o DPH č. 235/2004 Sb."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sběratelský předmět musí být starší než 100 let.",
+      "answer": false,
+      "explanation": "Sběratelský předmět má cenu podle zájmu sběratelů a nemusí být starý, např. odznaky z 80. let."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem se zákonem, který se ho týká.",
+      "pairs": [
+        [
+          "kulturní památka",
+          "č. 20/1987 Sb."
+        ],
+        [
+          "předmět kulturní hodnoty",
+          "č. 71/1994 Sb."
+        ],
+        [
+          "zvláštní režim DPH",
+          "č. 235/2004 Sb."
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Starožitnost může být zároveň kulturní památkou, pokud ji za památku prohlásilo Ministerstvo kultury.",
+      "answer": true,
+      "explanation": "Většina starožitností památkou není, ale prohlášením se jí stát může."
+    },
+    {
+      "type": "choice",
+      "question": "Plechové autíčko z roku 1975, které hledají sběratelé hraček. Jak ho zařadíš?",
+      "options": [
+        "starožitnost",
+        "kulturní památka",
+        "sběratelský předmět"
+      ],
+      "answer": 2,
+      "explanation": "Je mu asi 50 let a cenu mu dává zájem sběratelů. Je to sběratelský předmět."
     }
   ]
 }

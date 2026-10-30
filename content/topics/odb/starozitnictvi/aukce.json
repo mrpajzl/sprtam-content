@@ -376,6 +376,72 @@
       "type": "open",
       "question": "Proč si kupující musí limit stanovit i s ohledem na aukční přirážku?",
       "answer": "Ke ceně příklepu se připočítává přirážka v procentech, takže celková platba je vyšší než příklep. Kdo ji nezapočítá, překročí svůj rozpočet."
+    },
+    {
+      "type": "input",
+      "question": "Příklep 45 000 Kč, aukční přirážka 20 %. Kolik Kč činí samotná přirážka?",
+      "answers": [
+        "9000",
+        "9 000"
+      ],
+      "explanation": "45 000 × 0,20 = 9 000 Kč.",
+      "hints": [
+        "20 % je pětina."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Komitent chce dostat na ruku aspoň 25 500 Kč, provize je 15 %. Jaký musí být nejnižší příklep v Kč?",
+      "answers": [
+        "30000",
+        "30 000"
+      ],
+      "explanation": "Komitent dostane 85 % příklepu: 25 500 ÷ 0,85 = 30 000 Kč.",
+      "hints": [
+        "Kolik procent příklepu komitentovi zůstane?",
+        "Vyděl požadovanou částku tímto podílem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá předmět nebo soubor, který se v aukci prodává najednou pod jedním číslem?",
+      "options": [
+        "položka (lot)",
+        "příhoz",
+        "limit"
+      ],
+      "answer": 0,
+      "explanation": "Položka (lot) má v katalogu své číslo, např. položka č. 125: pár svícnů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vyvolávací cena je cena, za kterou se předmět v aukci prodá.",
+      "answer": false,
+      "explanation": "Vyvolávací cena je začátek. Konečnou cenu určí příhozy a příklep."
+    },
+    {
+      "type": "input",
+      "question": "Příklep 40 000 Kč, provize prodávajícího 15 %, přirážka kupujícího 20 %. Kolik Kč celkem získá aukční síň?",
+      "answers": [
+        "14000",
+        "14 000"
+      ],
+      "explanation": "Provize 40 000 × 0,15 = 6 000 Kč, přirážka 40 000 × 0,20 = 8 000 Kč, celkem 14 000 Kč.",
+      "hints": [
+        "Spočítej zvlášť provizi a přirážku.",
+        "Obě částky sečti."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak může registrovaný zájemce v aukci přihazovat?",
+      "options": [
+        "jen osobně v sále",
+        "osobně, písemně, telefonicky nebo online",
+        "jen online"
+      ],
+      "answer": 1,
+      "explanation": "Kromě přihazování v sále aukční síně přijímají i písemné, telefonické a online nabídky."
     }
   ]
 }
