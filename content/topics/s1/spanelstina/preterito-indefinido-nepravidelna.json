@@ -574,6 +574,48 @@
       "type": "open",
       "question": "Vyprávěj ve třech větách, co jsi dělal o víkendu. Použij aspoň dvě nepravidelná slovesa.",
       "answer": "Např.: *El sábado fui a casa de mis abuelos. Hizo buen tiempo y estuvimos en el jardín. El domingo tuve que estudiar.*"
+    },
+    {
+      "type": "choice",
+      "question": "¿Dónde ___ (tú, estar) el sábado pasado?",
+      "options": [
+        "estuvo",
+        "estuviste",
+        "estuvistes"
+      ],
+      "answer": 1,
+      "explanation": "*estar* → kmen *estuv-* + *-iste*: *estuviste*. *Estuvo* je tvar pro *él*."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ayer no pudé dormir.“ je napsáno správně.",
+      "answer": false,
+      "explanation": "Slovesa s novým kmenem nemají čárku: *Ayer no pude dormir.*"
+    },
+    {
+      "type": "choice",
+      "question": "Los niños ___ (pedir) helado.",
+      "options": [
+        "pedieron",
+        "pidieron",
+        "pidaron"
+      ],
+      "answer": 1,
+      "explanation": "*pedir* mění ve 3. osobě *e → i*: *pidió, pidieron*.",
+      "hints": [
+        "Ve 3. osobě se u tohoto slovesa mění samohláska kmene."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Mi madre ___ (conducir) toda la noche.",
+      "answers": [
+        "condujo"
+      ],
+      "explanation": "*conducir* → j-kmen *conduj-* + *-o*: *condujo*.",
+      "hints": [
+        "Kmen končí na j."
+      ]
     }
   ]
 }

@@ -466,6 +466,51 @@
       "type": "open",
       "question": "Jak poznáš, jestli použít lo, nebo la? Pozor na rozdíl mezi češtinou a španělštinou.",
       "answer": "Rozhoduje rod a číslo španělského podstatného jména, ne českého. *La camiseta* (tričko) je ženský rod, proto *la compro*; *el coche* je mužský, proto *lo lavo*."
+    },
+    {
+      "type": "choice",
+      "question": "¿Me esperas después de clase? – Sí, ___ espero.",
+      "options": [
+        "me",
+        "te",
+        "lo"
+      ],
+      "answer": 1,
+      "explanation": "Ptá se *mě*, odpovídáš *tebe* → *te*: *Sí, te espero.* – Ano, počkám na tebe."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: ¿Compras la leche? – Sí, ___ compro.",
+      "answers": [
+        "la"
+      ],
+      "explanation": "*la leche* je ve španělštině ženského rodu (česky *mléko* je střední) → *la*.",
+      "hints": [
+        "Rozhoduje rod španělského slova, ne českého."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Nahraď předmět: Voy a llamar a mis abuelos.",
+      "options": [
+        "Voy a los llamar.",
+        "Voy los a llamar.",
+        "Voy a llamarlos."
+      ],
+      "answer": 2,
+      "explanation": "*mis abuelos* → *los*. Zájmeno se přilepí na konec infinitivu, nebo jde před *voy*: *Los voy a llamar.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„Os invitamos a la fiesta.“ znamená „Zveme vás na večírek.“",
+      "answer": true,
+      "explanation": "*Os* = vás (vosotros, tykání více lidem)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar „Estoy leyendolo.“ je napsaný správně.",
+      "answer": false,
+      "explanation": "Když se zájmeno připojí ke gerundiu, přidá se čárka: *Estoy leyéndolo.*"
     }
   ]
 }
