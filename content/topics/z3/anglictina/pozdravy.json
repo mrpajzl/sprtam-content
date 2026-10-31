@@ -415,6 +415,90 @@
       "type": "open",
       "question": "Jak anglicky pozdravíš ráno, odpoledne a večer?",
       "answer": "Good morning, good afternoon, good evening."
+    },
+    {
+      "type": "choice",
+      "question": "Jsou 3 hodiny odpoledne. Potkáš souseda. Jak ho pozdravíš?",
+      "options": [
+        "Good morning!",
+        "Good afternoon!",
+        "Good night!"
+      ],
+      "answer": 1,
+      "explanation": "Odpoledne = afternoon."
+    },
+    {
+      "type": "choice",
+      "question": "Večer přijdeš na návštěvu k babičce. Co řekneš?",
+      "options": [
+        "Good night!",
+        "Goodbye!",
+        "Good evening!"
+      ],
+      "answer": 2,
+      "explanation": "Když večer přicházíš, řekneš Good evening. Good night je jen při loučení před spaním."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Hello“ říkáš, když odcházíš domů.",
+      "answer": false,
+      "explanation": "Hello říkáš, když přicházíš. Když odcházíš, řekneš Goodbye nebo Bye."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Bye“ je kratší „Goodbye“.",
+      "answer": true,
+      "explanation": "Obojí znamená na shledanou / ahoj při loučení."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Nice to meet you, ___. (taky)",
+      "answers": [
+        "too"
+      ],
+      "explanation": "Nice to meet you, too. = Taky tě rád poznávám."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „How are you?“",
+      "options": [
+        "Jak se jmenuješ?",
+        "Jak se máš?",
+        "Kolik ti je?"
+      ],
+      "answer": 1,
+      "explanation": "How are you? = Jak se máš?"
+    },
+    {
+      "type": "match",
+      "question": "Spoj anglicky a česky.",
+      "pairs": [
+        [
+          "Goodbye!",
+          "Na shledanou!"
+        ],
+        [
+          "Good night!",
+          "Dobrou noc!"
+        ],
+        [
+          "Hi!",
+          "Ahoj!"
+        ],
+        [
+          "Thank you.",
+          "Děkuji."
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď rozhovor o tom, jak se máš.",
+      "items": [
+        "How are you?",
+        "I’m fine, thank you. And you?",
+        "I’m fine, too."
+      ]
     }
   ]
 }

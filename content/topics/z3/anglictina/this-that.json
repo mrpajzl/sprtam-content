@@ -393,6 +393,77 @@
       "type": "open",
       "question": "Ukaž na věc ve třídě a zeptej se a odpověz anglicky.",
       "answer": "What is this? It’s a chair."
+    },
+    {
+      "type": "choice",
+      "question": "Na lavici máš banán. What is ___?",
+      "options": [
+        "that",
+        "this"
+      ],
+      "answer": 1,
+      "explanation": "Banán je blízko u tebe → this."
+    },
+    {
+      "type": "choice",
+      "question": "Za oknem stojí strom. ___ is a tree.",
+      "options": [
+        "That",
+        "This"
+      ],
+      "answer": 0,
+      "explanation": "Strom je daleko → that."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „What is this?“",
+      "options": [
+        "Co je tamto?",
+        "Co je tohle?",
+        "Kde je to?"
+      ],
+      "answer": 1,
+      "explanation": "this = tohle (blízko)."
+    },
+    {
+      "type": "truefalse",
+      "question": "„It’s“ je zkrácené „it is“.",
+      "answer": true,
+      "explanation": "It’s = it is = je to."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na otázku „What is that?“ odpovíš „Is a bird.“",
+      "answer": false,
+      "explanation": "V odpovědi nesmí chybět it: It’s a bird."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: What is this? 🍎 – It’s ___ apple.",
+      "answers": [
+        "an"
+      ],
+      "explanation": "apple začíná samohláskou → an."
+    },
+    {
+      "type": "choice",
+      "question": "Ukazuješ na hvězdu. Hvězda = star. Co odpovíš na „What is that?“",
+      "options": [
+        "It’s a star.",
+        "It’s an star.",
+        "This is star."
+      ],
+      "answer": 0,
+      "explanation": "star začíná souhláskou → a star."
+    },
+    {
+      "type": "order",
+      "question": "Slož odpověď.",
+      "items": [
+        "It’s",
+        "a",
+        "pencil."
+      ]
     }
   ]
 }

@@ -400,6 +400,79 @@
       "type": "open",
       "question": "Zeptej se kamaráda anglicky, jestli má rád fotbal, a odpověz za něj.",
       "answer": "Do you like football? Yes, I do. / No, I don’t."
+    },
+    {
+      "type": "choice",
+      "question": "Nemáš rád déšť. Řekneš:",
+      "options": [
+        "I like rain.",
+        "I don’t like rain.",
+        "I not like rain."
+      ],
+      "answer": 1,
+      "explanation": "Nemám rád = I don’t like."
+    },
+    {
+      "type": "choice",
+      "question": "Do you like football? (ne)",
+      "options": [
+        "No, I like.",
+        "No, I am not.",
+        "No, I don’t."
+      ],
+      "answer": 2,
+      "explanation": "Krátká odpověď opakuje do z otázky: No, I don’t."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Do you like cats? – Yes, I ___.",
+      "answers": [
+        "do"
+      ],
+      "explanation": "Ano = Yes, I do."
+    },
+    {
+      "type": "truefalse",
+      "question": "„I not like milk.“ je správně.",
+      "answer": false,
+      "explanation": "Zápor se dělá s don’t: I don’t like milk."
+    },
+    {
+      "type": "truefalse",
+      "question": "„don’t“ je zkrácené „do not“.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš „Máš rád pizzu?“",
+      "options": [
+        "Do you like pizza?",
+        "You like pizza do?",
+        "Are you like pizza?"
+      ],
+      "answer": 0,
+      "explanation": "Otázka začíná Do: Do you like …?"
+    },
+    {
+      "type": "order",
+      "question": "Slož větu.",
+      "items": [
+        "I",
+        "don’t",
+        "like",
+        "broccoli."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Mám rád psy“?",
+      "options": [
+        "I like dog.",
+        "I like dogs.",
+        "I am like dogs."
+      ],
+      "answer": 1,
+      "explanation": "Psy = víc psů → dogs."
     }
   ]
 }

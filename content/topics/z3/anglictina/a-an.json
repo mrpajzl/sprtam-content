@@ -386,6 +386,76 @@
       "type": "open",
       "question": "Řekni anglicky, co máš na lavici (3 věci s a/an).",
       "answer": "A pen, a book, an eraser."
+    },
+    {
+      "type": "choice",
+      "question": "___ umbrella",
+      "options": [
+        "a",
+        "an"
+      ],
+      "answer": 1,
+      "explanation": "umbrella začíná samohláskou u → an."
+    },
+    {
+      "type": "choice",
+      "question": "___ banana",
+      "options": [
+        "a",
+        "an"
+      ],
+      "answer": 0,
+      "explanation": "banana začíná souhláskou b → a."
+    },
+    {
+      "type": "input",
+      "question": "Doplň a/an: It’s ___ owl.",
+      "answers": [
+        "an"
+      ],
+      "explanation": "owl začíná samohláskou o."
+    },
+    {
+      "type": "input",
+      "question": "Doplň a/an: I have got ___ cat.",
+      "answers": [
+        "a"
+      ],
+      "explanation": "cat začíná souhláskou c."
+    },
+    {
+      "type": "truefalse",
+      "question": "„It’s apple.“ je správně.",
+      "answer": false,
+      "explanation": "Před jednou věcí nesmí a / an chybět: It’s an apple."
+    },
+    {
+      "type": "truefalse",
+      "question": "Před více věcmi a / an nepíšeme: two cats.",
+      "answer": true,
+      "explanation": "a / an znamená jeden, proto ho před víc věcí nedáváme."
+    },
+    {
+      "type": "choice",
+      "question": "Které je správně?",
+      "options": [
+        "a two dogs",
+        "two dogs",
+        "an two dogs"
+      ],
+      "answer": 1,
+      "explanation": "Před víc věcmi a / an nedáváme."
+    },
+    {
+      "type": "choice",
+      "question": "Které písmeno je samohláska?",
+      "options": [
+        "e",
+        "b",
+        "t"
+      ],
+      "answer": 0,
+      "explanation": "Samohlásky jsou a, e, i, o, u."
     }
   ]
 }

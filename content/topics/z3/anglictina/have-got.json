@@ -406,6 +406,89 @@
       "type": "open",
       "question": "Kdy řekneš „has got“ a kdy „have got“?",
       "answer": "Has got u he, she, it (jeden člověk nebo věc). Have got u I, you, we, they."
+    },
+    {
+      "type": "choice",
+      "question": "We ___ got a big house.",
+      "options": [
+        "has",
+        "have"
+      ],
+      "answer": 1,
+      "explanation": "we patří do řádku s have."
+    },
+    {
+      "type": "choice",
+      "question": "Tom ___ got a bike.",
+      "options": [
+        "has",
+        "have"
+      ],
+      "answer": 0,
+      "explanation": "Tom je jeden kluk = he → has."
+    },
+    {
+      "type": "input",
+      "question": "Zápor: She ___ got a dog. (nemá)",
+      "answers": [
+        "hasn’t",
+        "hasn't",
+        "has not",
+        "hasnt"
+      ],
+      "explanation": "she → has, zápor → hasn’t."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: They ___ got a cat.",
+      "answers": [
+        "have"
+      ],
+      "explanation": "they = oni → have."
+    },
+    {
+      "type": "truefalse",
+      "question": "„He haven’t got a bike.“ je správně.",
+      "answer": false,
+      "explanation": "he patří k has → He hasn’t got a bike."
+    },
+    {
+      "type": "truefalse",
+      "question": "„I haven’t got“ znamená „nemám“.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Moje sestra má kočku“?",
+      "options": [
+        "My sister have got a cat.",
+        "My sister has got a cat.",
+        "My sister is got a cat."
+      ],
+      "answer": 1,
+      "explanation": "Sestra = she → has got."
+    },
+    {
+      "type": "match",
+      "question": "Spoj anglické a české slovo.",
+      "pairs": [
+        [
+          "we",
+          "my"
+        ],
+        [
+          "they",
+          "oni"
+        ],
+        [
+          "he",
+          "on"
+        ],
+        [
+          "she",
+          "ona"
+        ]
+      ]
     }
   ]
 }
