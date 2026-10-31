@@ -429,6 +429,83 @@
       "type": "open",
       "question": "Přelož dvěma způsoby: „Nic jsem neviděl.“",
       "answer": "I didn’t see anything. / I saw nothing."
+    },
+    {
+      "type": "input",
+      "question": "Přelož „nikde“.",
+      "answers": [
+        "nowhere"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Přelož „všichni“ (jedním slovem).",
+      "answers": [
+        "everybody",
+        "everyone"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "I saw ___ in the garden. (někoho)",
+      "options": [
+        "anybody",
+        "somebody",
+        "nobody"
+      ],
+      "answer": 1,
+      "explanation": "Kladná věta → some-, osoba → -body."
+    },
+    {
+      "type": "choice",
+      "question": "I don't have ___ to do. (nic)",
+      "options": [
+        "nothing",
+        "anything",
+        "something"
+      ],
+      "answer": 1,
+      "explanation": "Ve větě už je not (don't) → any-. Jen jeden zápor."
+    },
+    {
+      "type": "truefalse",
+      "question": "„somebody“ a „someone“ znamenají totéž.",
+      "answer": true,
+      "explanation": "-body a -one znamenají obojí osobu: někdo."
+    },
+    {
+      "type": "choice",
+      "question": "Everybody ___ pizza.",
+      "options": [
+        "like",
+        "likes"
+      ],
+      "answer": 1,
+      "explanation": "Everybody se chová jako jednotné číslo → likes."
+    },
+    {
+      "type": "truefalse",
+      "question": "„I have nothing.“ je dvojitý zápor, a proto je špatně.",
+      "answer": false,
+      "explanation": "Je tam jen jeden zápor (nothing), sloveso je kladné. Věta je správně."
+    },
+    {
+      "type": "match",
+      "question": "Spoj konec slova s tím, na co se ptá.",
+      "pairs": [
+        [
+          "-body",
+          "kdo"
+        ],
+        [
+          "-thing",
+          "co"
+        ],
+        [
+          "-where",
+          "kde"
+        ]
+      ]
     }
   ]
 }

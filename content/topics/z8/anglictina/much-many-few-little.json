@@ -421,6 +421,83 @@
       "type": "open",
       "question": "Zeptej se anglicky, kolik je hodin volného času a kolik kamarádů má spolužák.",
       "answer": "How much free time have you got? How many friends have you got?"
+    },
+    {
+      "type": "choice",
+      "question": "There isn't ___ traffic today.",
+      "options": [
+        "many",
+        "much",
+        "a few"
+      ],
+      "answer": 1,
+      "explanation": "traffic je nepočitatelné → much."
+    },
+    {
+      "type": "choice",
+      "question": "We have ___ minutes before the bus comes. (pár)",
+      "options": [
+        "a little",
+        "a few",
+        "much"
+      ],
+      "answer": 1,
+      "explanation": "Minuty spočítáš → a few."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo „money“ je v angličtině počitatelné.",
+      "answer": false,
+      "explanation": "Money je nepočitatelné: How much money? Spočítat jdou coins (mince)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: How ___ coins have you got?",
+      "answers": [
+        "many"
+      ],
+      "explanation": "Mince spočítáš → How many."
+    },
+    {
+      "type": "choice",
+      "question": "She is sad. She has ___ friends. (málo)",
+      "options": [
+        "a few",
+        "few",
+        "much"
+      ],
+      "answer": 1,
+      "explanation": "few bez a = málo, skoro žádní."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: I have ___ time, I can help you. (trochu, 2 slova)",
+      "answers": [
+        "a little"
+      ],
+      "explanation": "Čas je nepočitatelný → a little."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejmenšího množství mléka.",
+      "items": [
+        "no milk",
+        "little milk",
+        "a little milk",
+        "a lot of milk"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které podstatné jméno je nepočitatelné?",
+      "options": [
+        "apple",
+        "chair",
+        "milk",
+        "friend"
+      ],
+      "answer": 2,
+      "explanation": "Mléko po kusech nespočítáš."
     }
   ]
 }
