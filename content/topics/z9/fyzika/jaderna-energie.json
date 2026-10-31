@@ -403,6 +403,74 @@
       "type": "open",
       "question": "Jaké jsou výhody a nevýhody jaderných elektráren?",
       "answer": "Výhody: velký stálý výkon, téměř žádné CO₂. Nevýhody: radioaktivní odpad, riziko havárie, drahá výstavba."
+    },
+    {
+      "type": "input",
+      "question": "Máme 80 g látky s poločasem 5 let. Kolik gramů zbude za 15 let?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "15 : 5 = 3 poločasy: 80 → 40 → 20 → 10 g.",
+      "hints": [
+        "Kolik poločasů uplyne za 15 let?",
+        "Po každém poločasu vyděl dvěma."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jód má poločas 8 dní. Kolik procent původního množství zbude za 24 dní?",
+      "answers": [
+        "12,5"
+      ],
+      "explanation": "24 : 8 = 3 poločasy: 100 % → 50 % → 25 % → 12,5 %.",
+      "hints": [
+        "Nejdřív zjisti počet poločasů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Z čeho se skládá jádro atomu?",
+      "options": [
+        "z protonů a elektronů",
+        "z protonů a neutronů",
+        "jen z elektronů"
+      ],
+      "answer": 1,
+      "explanation": "Jádro tvoří protony (kladné) a neutrony (bez náboje). Elektrony jsou kolem jádra."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po dvou poločasech rozpadu se rozpadne celá látka.",
+      "answer": false,
+      "explanation": "Po dvou poločasech zbude čtvrtina: ½ z ½ = ¼."
+    },
+    {
+      "type": "choice",
+      "question": "Které záření projde listem papíru, ale zastaví ho hliníkový plech?",
+      "options": [
+        "α",
+        "β",
+        "γ"
+      ],
+      "answer": 1,
+      "explanation": "α zastaví už papír, β hliníkový plech, γ až silná vrstva olova nebo betonu."
+    },
+    {
+      "type": "choice",
+      "question": "Co se děje při štěpení jádra uranu?",
+      "options": [
+        "dvě lehká jádra se spojí v těžší",
+        "jádro se samo změní na helium",
+        "jádro se po zásahu neutronem rozdělí na dvě menší"
+      ],
+      "answer": 2,
+      "explanation": "Uvolní se energie a 2–3 nové neutrony, které mohou štěpit další jádra."
+    },
+    {
+      "type": "truefalse",
+      "question": "Marie Curie-Skłodowská jako první člověk dostala dvě Nobelovy ceny.",
+      "answer": true,
+      "explanation": "S manželem Pierrem objevila polonium a radium."
     }
   ]
 }

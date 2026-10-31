@@ -351,6 +351,76 @@
       "type": "open",
       "question": "Vysvětli, jak vzniká zatmění Slunce a Měsíce.",
       "answer": "Zatmění Slunce: Měsíc se dostane mezi Slunce a Zemi a vrhá na Zemi stín. Zatmění Měsíce: Země je mezi Sluncem a Měsícem a Měsíc je v jejím stínu."
+    },
+    {
+      "type": "input",
+      "question": "Vzdálenost Země–Měsíc je asi 384 000 km. Kolik sekund letí světlo z Měsíce na Zemi? (zaokrouhli na desetiny)",
+      "answers": [
+        "1,3"
+      ],
+      "explanation": "t = 384 000 : 300 000 = 1,28 ≈ 1,3 s.",
+      "hints": [
+        "Použij t = s : c, c = 300 000 km/s."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Za kolik sekund urazí světlo ve vakuu 600 000 km?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "t = 600 000 : 300 000 = 2 s."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik kilometrů urazí světlo ve vakuu za 3 s?",
+      "options": [
+        "100 000 km",
+        "900 000 km",
+        "300 000 km"
+      ],
+      "answer": 1,
+      "explanation": "s = c · t = 300 000 · 3 = 900 000 km."
+    },
+    {
+      "type": "choice",
+      "question": "Které těleso je zdroj světla?",
+      "options": [
+        "Měsíc",
+        "zrcadlo",
+        "blesk"
+      ],
+      "answer": 2,
+      "explanation": "Blesk světlo sám vyzařuje. Měsíc a zrcadlo jen odrážejí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Lidský obličej je zdroj světla – proto ho vidíme.",
+      "answer": false,
+      "explanation": "Obličej je osvětlené těleso: světlo jen odráží."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stín vzniká, protože světlo letí rovně a neprůhledný předmět neobejde.",
+      "answer": true,
+      "explanation": "Ve stejnorodém prostředí se světlo šíří přímočaře."
+    },
+    {
+      "type": "choice",
+      "question": "Proč vidíme fáze Měsíce?",
+      "options": [
+        "Měsíc mění, jak silně svítí",
+        "osvětlená je jen polovina Měsíce natočená ke Slunci",
+        "Země zakrývá svým stínem část Měsíce"
+      ],
+      "answer": 1,
+      "explanation": "Měsíc nesvítí sám. Podle toho, jak je natočený, vidíme z osvětlené poloviny větší či menší část."
+    },
+    {
+      "type": "truefalse",
+      "question": "Světlo ze Slunce letí k Zemi přes osm minut.",
+      "answer": true,
+      "explanation": "t = 150 000 000 : 300 000 = 500 s = 8 min 20 s."
     }
   ]
 }

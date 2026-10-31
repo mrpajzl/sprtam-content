@@ -335,6 +335,81 @@
       "type": "open",
       "question": "Popiš cestu elektřiny z elektrárny do zásuvky.",
       "answer": "Alternátor vyrobí proud, transformátor zvýší napětí, dálkovým vedením se přenese, snižovací transformátory ho sníží na 230 V do zásuvek."
+    },
+    {
+      "type": "input",
+      "question": "Perioda je 0,05 s. Frekvence v Hz =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "f = 1 : T = 1 : 0,05 = 20 Hz.",
+      "hints": [
+        "Frekvence a perioda jsou převrácené hodnoty: f = 1 : T."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Frekvence je 25 Hz. Perioda v sekundách =",
+      "answers": [
+        "0,04"
+      ],
+      "explanation": "T = 1 : f = 1 : 25 = 0,04 s.",
+      "hints": [
+        "Použij T = 1 : f."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik celých kmitů proběhne v síti 50 Hz za 3 sekundy?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "50 kmitů za sekundu · 3 s = 150 kmitů."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký proud dává solární panel?",
+      "options": [
+        "střídavý",
+        "stejnosměrný",
+        "žádný"
+      ],
+      "answer": 1,
+      "explanation": "Solární panel, stejně jako baterie, dává stejnosměrný proud."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená vlnovka „~“ na štítku spotřebiče (230 V ~ 50 Hz)?",
+      "options": [
+        "stejnosměrný proud",
+        "vysoké napětí",
+        "střídavý proud"
+      ],
+      "answer": 2,
+      "explanation": "Vlnovka značí střídavý proud – v grafu vypadá jako vlna."
+    },
+    {
+      "type": "truefalse",
+      "question": "50 Hz znamená, že jeden kmit trvá 50 sekund.",
+      "answer": false,
+      "explanation": "50 Hz = 50 kmitů za sekundu, jeden kmit trvá 0,02 s."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nabíječka mobilu mění střídavý proud ze zásuvky na stejnosměrný a snižuje napětí.",
+      "answer": true,
+      "explanation": "Mobil potřebuje malé stejnosměrné napětí, kolem 5 V."
+    },
+    {
+      "type": "choice",
+      "question": "Proč alternátor vyrábí právě střídavý proud?",
+      "options": [
+        "dráty se v něm zahřívají",
+        "elektrony se v drátu srážejí",
+        "magnet se k cívce otáčí střídavě severním a jižním pólem"
+      ],
+      "answer": 2,
+      "explanation": "Při každé otáčce se pole v cívce obrátí, a proto proud mění směr."
     }
   ]
 }

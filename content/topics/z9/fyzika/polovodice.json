@@ -327,6 +327,83 @@
       "type": "open",
       "question": "Co je dioda a k čemu se používá?",
       "answer": "Polovodičová součástka s přechodem PN, propouští proud jen jedním směrem. Používá se v usměrňovačích, LED svítí."
+    },
+    {
+      "type": "choice",
+      "question": "Proč polovodič po zahřátí vede proud lépe?",
+      "options": [
+        "atomy v něm přestanou kmitat",
+        "teplo v něm uvolní další volné elektrony",
+        "zahřátím se z něj stane kov"
+      ],
+      "answer": 1,
+      "explanation": "V polovodiči teplo (i světlo) uvolní nové volné elektrony, proto vede lépe."
+    },
+    {
+      "type": "choice",
+      "question": "Která součástka je v elektronickém teploměru?",
+      "options": [
+        "fotorezistor",
+        "termistor",
+        "dioda",
+        "LED"
+      ],
+      "answer": 1,
+      "explanation": "Odpor termistoru se mění s teplotou. Přístroj ho změří a převede na stupně."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký odpor má fotorezistor ve tmě?",
+      "options": [
+        "malý",
+        "velký",
+        "nulový"
+      ],
+      "answer": 1,
+      "explanation": "Ve tmě má fotorezistor velký odpor, na světle malý."
+    },
+    {
+      "type": "input",
+      "question": "Jedním písmenem: polovodič s nedostatkem elektronů (s dírami) je typu…",
+      "answers": [
+        "P",
+        "p"
+      ],
+      "explanation": "P = pozitivní: díry se chovají jako kladný náboj."
+    },
+    {
+      "type": "truefalse",
+      "question": "Díry v polovodiči typu P se chovají jako kladný náboj.",
+      "answer": true,
+      "explanation": "Díra je prázdné místo po chybějícím elektronu, proto působí jako kladný náboj."
+    },
+    {
+      "type": "choice",
+      "question": "Dioda je zapojená P na −, N na +. Co se stane?",
+      "options": [
+        "proud teče",
+        "proud neteče – je v závěrném směru",
+        "proud teče, jen slaběji"
+      ],
+      "answer": 1,
+      "explanation": "V závěrném směru vznikne u přechodu vrstva bez volných nábojů a proud zastaví."
+    },
+    {
+      "type": "truefalse",
+      "question": "Izolant, například plast, vede proud lépe než polovodič.",
+      "answer": false,
+      "explanation": "Izolant nevede téměř vůbec. Polovodič je mezi vodičem a izolantem."
+    },
+    {
+      "type": "choice",
+      "question": "Co vznikne ve fotovoltaickém článku, když na něj dopadá světlo?",
+      "options": [
+        "zvuk",
+        "magnetické pole",
+        "napětí"
+      ],
+      "answer": 2,
+      "explanation": "Světlo dopadající na přechod PN vytvoří napětí – tak fungují solární elektrárny."
     }
   ]
 }

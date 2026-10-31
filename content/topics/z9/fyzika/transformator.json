@@ -348,6 +348,82 @@
       "type": "open",
       "question": "Proč se u elektráren napětí zvyšuje a u spotřebitelů snižuje?",
       "answer": "Vysoké napětí znamená malý proud, a tedy menší ztráty ve vedení. Pro bezpečné použití doma se napětí sníží na 230 V."
+    },
+    {
+      "type": "input",
+      "question": "N₁ = 100, N₂ = 500, U₁ = 6 V. U₂ ve V =",
+      "answers": [
+        "30"
+      ],
+      "explanation": "Poměr 500 : 100 = 5, U₂ = 6 · 5 = 30 V.",
+      "hints": [
+        "Spočítej poměr N₂ : N₁.",
+        "Vynásob jím U₁."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "N₁ = 2 300, N₂ = 60, U₁ = 230 V. U₂ ve V =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "U₂ = 230 · 60 : 2 300 = 6 V.",
+      "hints": [
+        "U₂ = U₁ · N₂ : N₁."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Transformátor mění 230 V na 23 V. Sekundární cívka má 50 závitů. Kolik závitů má primární cívka?",
+      "answers": [
+        "500"
+      ],
+      "explanation": "Napětí klesne 10krát, primární cívka má tedy 10krát víc závitů: 50 · 10 = 500.",
+      "hints": [
+        "Kolikrát je 230 V víc než 23 V?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "N₁ = 400, N₂ = 1 200. Transformační poměr k =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "k = N₂ : N₁ = 1 200 : 400 = 3."
+    },
+    {
+      "type": "choice",
+      "question": "Transformační poměr je k = 0,5. Transformátor napětí…",
+      "options": [
+        "zvyšuje",
+        "snižuje",
+        "nemění"
+      ],
+      "answer": 1,
+      "explanation": "k < 1 → sekundární cívka má méně závitů → napětí se snižuje."
+    },
+    {
+      "type": "choice",
+      "question": "N₁ = 1 000, N₂ = 4 000, U₁ = 230 V. Jaké je U₂?",
+      "options": [
+        "57,5 V",
+        "920 V",
+        "4 230 V"
+      ],
+      "answer": 1,
+      "explanation": "Poměr 4 000 : 1 000 = 4, U₂ = 230 · 4 = 920 V. 57,5 V by vyšlo, kdyby se dělilo místo násobení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ideální transformátor, který napětí snižuje, proud zvětšuje.",
+      "answer": true,
+      "explanation": "Proud se mění opačně než napětí: napětí 10× méně → proud 10× víc."
+    },
+    {
+      "type": "truefalse",
+      "question": "Transformátor, který zvýší napětí, tím vyrobí energii navíc.",
+      "answer": false,
+      "explanation": "Když zvýší napětí, proud se úměrně zmenší. Energie z ničeho nevznikne, část se navíc ztratí teplem."
     }
   ]
 }

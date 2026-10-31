@@ -363,6 +363,77 @@
       "type": "open",
       "question": "Jak se chráníme před hlukem?",
       "answer": "Snížíme hluk u zdroje, postavíme protihlukové stěny, použijeme izolační okna a chrániče sluchu."
+    },
+    {
+      "type": "input",
+      "question": "Hrom zazněl 3 s po blesku. Vzdálenost bouřky v m? (rychlost zvuku 340 m/s)",
+      "answers": [
+        "1020",
+        "1 020"
+      ],
+      "explanation": "s = v · t = 340 · 3 = 1 020 m."
+    },
+    {
+      "type": "input",
+      "question": "Ozvěna se vrátila za 4 s. Jak daleko v m je skála? (340 m/s)",
+      "answers": [
+        "680"
+      ],
+      "explanation": "Zvuk urazí 340 · 4 = 1 360 m tam i zpět, ke skále je polovina: 680 m.",
+      "hints": [
+        "Zvuk letí ke skále a zase zpátky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Drnkneš do struny silněji. Co se změní?",
+      "options": [
+        "výška tónu",
+        "hlasitost",
+        "rychlost zvuku"
+      ],
+      "answer": 1,
+      "explanation": "Silnější drnknutí = větší amplituda = hlasitější zvuk. Výška zůstane."
+    },
+    {
+      "type": "choice",
+      "question": "Proč housle a flétna znějí jinak, i když hrají stejnou notu?",
+      "options": [
+        "zvuk houslí je rychlejší",
+        "mají jinou frekvenci základního tónu",
+        "mají jinou barvu tónu"
+      ],
+      "answer": 2,
+      "explanation": "Barva tónu závisí na tónech přidaných k základnímu. Výška (frekvence) je stejná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ladička s tónem komorní a kmitá 440krát za sekundu.",
+      "answer": true,
+      "explanation": "Komorní a má frekvenci 440 Hz."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá zvuk s frekvencí pod hranicí slyšení, například při zemětřesení?",
+      "options": [
+        "ultrazvuk",
+        "infrazvuk",
+        "ozvěna"
+      ],
+      "answer": 1,
+      "explanation": "Infrazvuk je pod asi 16–20 Hz, ultrazvuk nad 20 000 Hz."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se šíří zvuk, vzduch putuje od zdroje až k našemu uchu.",
+      "answer": false,
+      "explanation": "Šíří se jen kmitání. Částice vzduchu kmitají na místě a postrkují sousední."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bručet můžeš potichu i nahlas a tón zůstane stejně hluboký.",
+      "answer": true,
+      "explanation": "Výška tónu závisí na frekvenci, hlasitost na amplitudě."
     }
   ]
 }
