@@ -405,6 +405,83 @@
       "type": "open",
       "question": "Zeptej se anglicky, kolik stojí lístek, a kolik lidí přijde.",
       "answer": "How much is the ticket? How many people are coming?"
+    },
+    {
+      "type": "choice",
+      "question": "How ___ sugar do you want in your tea?",
+      "options": [
+        "many",
+        "much"
+      ],
+      "answer": 1,
+      "explanation": "Sugar (cukr) je nepočitatelný → much."
+    },
+    {
+      "type": "input",
+      "question": "Doplň much / many: How ___ homework have you got?",
+      "answers": [
+        "much"
+      ],
+      "explanation": "Homework je v angličtině nepočitatelné → much."
+    },
+    {
+      "type": "choice",
+      "question": "How ___ days are there in a week?",
+      "options": [
+        "much",
+        "many"
+      ],
+      "answer": 1,
+      "explanation": "Dny spočítáš → many."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „How much are these shoes?“ je správně.",
+      "answer": true,
+      "explanation": "Ptáš se na cenu → How much."
+    },
+    {
+      "type": "input",
+      "question": "Doplň much / many: There aren’t ___ people in the park.",
+      "answers": [
+        "many"
+      ],
+      "explanation": "People = lidé, množné číslo → many."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „How many juice is in the bottle?“ je správně.",
+      "answer": false,
+      "explanation": "Juice je nepočitatelný → How much juice…?"
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je správně?",
+      "options": [
+        "We haven’t got many bread.",
+        "We haven’t got a lot bread.",
+        "We haven’t got much bread."
+      ],
+      "answer": 2,
+      "explanation": "Bread je nepočitatelný, zápor → much. U a lot chybí of."
+    },
+    {
+      "type": "match",
+      "question": "Spoj otázku s odpovědí.",
+      "pairs": [
+        [
+          "How many brothers have you got?",
+          "Two."
+        ],
+        [
+          "How much is the ticket?",
+          "Five pounds."
+        ],
+        [
+          "How much milk do we need?",
+          "One litre."
+        ]
+      ]
     }
   ]
 }

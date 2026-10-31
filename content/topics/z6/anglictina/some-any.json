@@ -384,6 +384,76 @@
       "type": "open",
       "question": "Řekni anglicky, co máš a nemáš v penále (some / any).",
       "answer": "I have got some pencils. I haven't got any scissors."
+    },
+    {
+      "type": "choice",
+      "question": "There aren’t ___ chairs in the room.",
+      "options": [
+        "some",
+        "any"
+      ],
+      "answer": 1,
+      "explanation": "Zápor (aren’t) → any."
+    },
+    {
+      "type": "choice",
+      "question": "Have we got ___ cheese?",
+      "options": [
+        "some",
+        "any"
+      ],
+      "answer": 1,
+      "explanation": "Obyčejná otázka, nic nenabízím → any."
+    },
+    {
+      "type": "input",
+      "question": "Doplň some / any: My sister has got ___ new games.",
+      "answers": [
+        "some"
+      ],
+      "explanation": "Kladná věta → some."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Can I have some juice, please?“ je správně.",
+      "answer": true,
+      "explanation": "Je to prosba → some, i když končí otazníkem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „I’ve got any apples.“ je správně.",
+      "answer": false,
+      "explanation": "Kladná věta → some: I’ve got some apples."
+    },
+    {
+      "type": "input",
+      "question": "Doplň some / any: I don’t need ___ help.",
+      "answers": [
+        "any"
+      ],
+      "explanation": "Zápor (don’t) → any."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď otázku.",
+      "items": [
+        "Have",
+        "you",
+        "got",
+        "any",
+        "pets?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správnou větu.",
+      "options": [
+        "We haven’t got some milk.",
+        "We haven’t got any milk.",
+        "We have got any milk."
+      ],
+      "answer": 1,
+      "explanation": "V záporu je any, v kladné větě by bylo some."
     }
   ]
 }

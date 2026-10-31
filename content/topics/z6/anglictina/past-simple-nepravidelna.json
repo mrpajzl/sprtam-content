@@ -390,6 +390,77 @@
       "type": "open",
       "question": "Řekni anglicky tři věci, které jsi dělal(a) včera, s nepravidelnými slovesy.",
       "answer": "Např.: I went to school. I ate a sandwich. I saw my friend."
+    },
+    {
+      "type": "input",
+      "question": "Minulý čas: drink →",
+      "answers": [
+        "drank"
+      ],
+      "explanation": "Skupina i → a: drink → drank."
+    },
+    {
+      "type": "input",
+      "question": "Minulý čas: teach →",
+      "answers": [
+        "taught"
+      ],
+      "explanation": "Skupina -aught: teach → taught."
+    },
+    {
+      "type": "choice",
+      "question": "Minulý čas od „sing“:",
+      "options": [
+        "singed",
+        "sang",
+        "sung"
+      ],
+      "answer": 1,
+      "explanation": "Skupina i → a: sing → sang. *Sung* je až třetí tvar."
+    },
+    {
+      "type": "truefalse",
+      "question": "Minulý čas od „cut“ je „cutted“.",
+      "answer": false,
+      "explanation": "Cut patří ke slovesům beze změny: cut → cut."
+    },
+    {
+      "type": "choice",
+      "question": "Které sloveso je pravidelné?",
+      "options": [
+        "drink",
+        "jump",
+        "think"
+      ],
+      "answer": 1,
+      "explanation": "Jump → jumped. Drink → drank a think → thought jsou nepravidelná."
+    },
+    {
+      "type": "choice",
+      "question": "I ___ about you yesterday.",
+      "options": [
+        "thinked",
+        "thought",
+        "taught"
+      ],
+      "answer": 1,
+      "explanation": "Think → thought. *Taught* je minulý tvar od teach."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu.",
+      "items": [
+        "We",
+        "ate",
+        "ice cream",
+        "after school."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar „went“ se použije pro všechny osoby: I went, she went, they went.",
+      "answer": true,
+      "explanation": "V minulém čase je tvar pro všechny osoby stejný."
     }
   ]
 }
