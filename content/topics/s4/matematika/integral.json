@@ -357,6 +357,59 @@
       "type": "open",
       "question": "Co geometricky vyjadřuje určitý integrál ∫ₐᵇ f(x) dx?",
       "answer": "Pro nezápornou funkci obsah plochy mezi grafem, osou x a přímkami x = a, x = b. Části pod osou x se počítají záporně."
+    },
+    {
+      "type": "input",
+      "question": "∫₀² x³ dx =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "[x⁴/4]₀² = 16/4 − 0 = 4.",
+      "hints": [
+        "Primitivní funkce k x³ je x⁴/4."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "∫ sin x dx =",
+      "options": [
+        "cos x + C",
+        "−cos x + C",
+        "sin x + C",
+        "−sin x + C"
+      ],
+      "answer": 1,
+      "explanation": "(−cos x)′ = sin x. Zkouška derivováním ohlídá znaménko."
+    },
+    {
+      "type": "truefalse",
+      "question": "F(x) = x² + 7 je primitivní funkce k f(x) = 2x.",
+      "answer": true,
+      "explanation": "(x² + 7)′ = 2x, derivace konstanty 7 je 0."
+    },
+    {
+      "type": "input",
+      "question": "∫₁² 2x dx =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "[x²]₁² = 4 − 1 = 3."
+    },
+    {
+      "type": "truefalse",
+      "question": "Určitý integrál se počítá jako ∫ₐᵇ f(x) dx = F(a) − F(b).",
+      "answer": false,
+      "explanation": "Správně F(b) − F(a): nejdřív horní mez, od ní odečti dolní."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu určitého integrálu.",
+      "items": [
+        "Najdi primitivní funkci F.",
+        "Dosaď horní mez: F(b).",
+        "Dosaď dolní mez: F(a).",
+        "Odečti F(b) − F(a)."
+      ]
     }
   ]
 }

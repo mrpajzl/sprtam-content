@@ -427,6 +427,59 @@
       "type": "open",
       "question": "Jak derivuješ složenou funkci? Uveď příklad.",
       "answer": "Derivuji vnější funkci (vnitřek nechám) a násobím derivací vnitřní: (f(g(x)))′ = f′(g(x)) · g′(x). Např. (sin 2x)′ = 2 cos 2x."
+    },
+    {
+      "type": "choice",
+      "question": "(cos x)′ =",
+      "options": [
+        "sin x",
+        "−sin x",
+        "−cos x",
+        "cos x"
+      ],
+      "answer": 1,
+      "explanation": "Derivace kosinu je mínus sinus."
+    },
+    {
+      "type": "input",
+      "question": "f(x) = x⁴ − 2x². f′(1) =",
+      "answers": [
+        "0"
+      ],
+      "explanation": "f′(x) = 4x³ − 4x, f′(1) = 4 − 4 = 0.",
+      "hints": [
+        "Zderivuj každý člen: (xⁿ)′ = n · xⁿ⁻¹.",
+        "f′(x) = 4x³ − 4x, teď dosaď 1."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "(x · sin x)′ = sin x + x cos x.",
+      "answer": true,
+      "explanation": "Derivace součinu: f′g + fg′ = 1 · sin x + x · cos x."
+    },
+    {
+      "type": "choice",
+      "question": "(e³ˣ)′ =",
+      "options": [
+        "e³ˣ",
+        "3e³ˣ",
+        "3x · e³ˣ",
+        "e³ˣ⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "Složená funkce: vnější eᵘ zůstane, násobí se derivací vnitřku (3x)′ = 3."
+    },
+    {
+      "type": "input",
+      "question": "f(x) = x². Průměrná rychlost změny mezi x = 1 a x = 3 =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "(9 − 1) / (3 − 1) = 8 / 2 = 4.",
+      "hints": [
+        "Použij (f(b) − f(a)) / (b − a)."
+      ]
     }
   ]
 }

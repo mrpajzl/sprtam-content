@@ -362,6 +362,63 @@
       "type": "open",
       "question": "Co je inflexní bod?",
       "answer": "Bod, ve kterém funkce přechází z konvexní na konkávní nebo naopak. Druhá derivace v něm mění znaménko."
+    },
+    {
+      "type": "choice",
+      "question": "f′ v bodě a mění znaménko z − na +. V bodě a je:",
+      "options": [
+        "lokální maximum",
+        "lokální minimum",
+        "inflexní bod"
+      ],
+      "answer": 1,
+      "explanation": "Funkce nejdřív klesá a pak roste – dno údolí."
+    },
+    {
+      "type": "input",
+      "question": "Dvě kladná čísla mají součet 12. Největší možný součin =",
+      "answers": [
+        "36"
+      ],
+      "explanation": "P′ = 12 − 2x = 0 → x = 6, součin 6 · 6 = 36.",
+      "hints": [
+        "Čísla jsou x a 12 − x, součin P(x) = 12x − x².",
+        "Vyřeš P′(x) = 0."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "f(x) = −x² je konkávní na celém ℝ.",
+      "answer": true,
+      "explanation": "f″(x) = −2 < 0 všude."
+    },
+    {
+      "type": "input",
+      "question": "f(x) = x³ − 6x². Inflexní bod x =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "f′ = 3x² − 12x, f″ = 6x − 12 = 0 → x = 2, f″ tam mění znaménko.",
+      "hints": [
+        "Spočítej druhou derivaci f″."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "f(x) = x² + 2x je na intervalu (−∞; −1) rostoucí.",
+      "answer": false,
+      "explanation": "f′ = 2x + 2 < 0 pro x < −1, funkce tam klesá."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky vyšetření průběhu funkce.",
+      "items": [
+        "urči definiční obor",
+        "vyřeš f′ = 0",
+        "urči znaménka f′ v intervalech",
+        "spočítej f″ a urči prohnutí",
+        "načrtni graf"
+      ]
     }
   ]
 }

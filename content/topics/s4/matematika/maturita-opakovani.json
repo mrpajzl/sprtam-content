@@ -411,6 +411,51 @@
       "type": "open",
       "question": "Vysvětli, proč zlevnění o 20 % a následné zdražení o 20 % nevrátí původní cenu.",
       "answer": "Zdražení se počítá z nižší, už zlevněné ceny. Výsledek je 0,8 · 1,2 = 0,96, tedy 96 % původní ceny."
+    },
+    {
+      "type": "input",
+      "question": "Geometrická posloupnost a₁ = 3, q = 2. a₅ =",
+      "answers": [
+        "48"
+      ],
+      "explanation": "3 · 2⁴ = 3 · 16 = 48.",
+      "hints": [
+        "aₙ = a₁ · qⁿ⁻¹"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Cena vzroste o 25 %, pak klesne o 20 %. Kolik % původní ceny je výsledek?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "1,25 · 0,8 = 1, cena je zpátky na 100 %."
+    },
+    {
+      "type": "choice",
+      "question": "D(f) pro f(x) = √(x − 2):",
+      "options": [
+        "(2; ∞)",
+        "⟨2; ∞)",
+        "(−∞; 2⟩",
+        "ℝ"
+      ],
+      "answer": 1,
+      "explanation": "Pod odmocninou ≥ 0: x − 2 ≥ 0 → x ≥ 2, dvojka patří do oboru."
+    },
+    {
+      "type": "input",
+      "question": "cos 60° =",
+      "answers": [
+        "1/2",
+        "0,5"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnici √x = x − 2 stačí vyřešit umocněním, zkouška není potřeba.",
+      "answer": false,
+      "explanation": "Umocnění dá x² − 5x + 4 = 0, tedy x = 1 nebo 4. Zkouška: x = 1 nevyhovuje (1 ≠ −1), řešení je jen 4."
     }
   ]
 }
