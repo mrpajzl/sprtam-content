@@ -488,6 +488,85 @@
       "type": "open",
       "question": "Jaké mluvnické kategorie určujeme u sloves?",
       "answer": "Osobu, číslo, čas a způsob. (V 7. třídě přibude vid a rod.)"
+    },
+    {
+      "type": "input",
+      "question": "Napiš infinitiv slovesa *čtou*.",
+      "answers": [
+        "číst"
+      ],
+      "explanation": "Infinitiv končí na -t: číst."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký způsob má sloveso *koupila by*?",
+      "options": [
+        "oznamovací",
+        "podmiňovací",
+        "rozkazovací"
+      ],
+      "answer": 1,
+      "explanation": "Je tam *by* – co by se stalo → podmiňovací."
+    },
+    {
+      "type": "choice",
+      "question": "Urči osobu a číslo: *čtete*",
+      "options": [
+        "1. osoba, množné číslo",
+        "2. osoba, množné číslo",
+        "2. osoba, jednotné číslo"
+      ],
+      "answer": 1,
+      "explanation": "vy čtete → 2. osoba, množné číslo."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Hrát si* je zvratné sloveso.",
+      "answer": true,
+      "explanation": "Má u sebe zvratné *si*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar *čtu* je složený.",
+      "answer": false,
+      "explanation": "Čtu je jedno slovo → jednoduchý tvar. Složený je např. *budu číst*."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký čas má *šel jsi*?",
+      "options": [
+        "přítomný",
+        "budoucí",
+        "minulý"
+      ],
+      "answer": 2,
+      "explanation": "Už se to stalo → minulý čas."
+    },
+    {
+      "type": "input",
+      "question": "Doplň spisovně: *Kdybyste chtěli, mohli ___ jít s námi.*",
+      "answers": [
+        "byste"
+      ],
+      "explanation": "Vy → byste."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso se způsobem.",
+      "pairs": [
+        [
+          "čteme",
+          "oznamovací"
+        ],
+        [
+          "čtěte!",
+          "rozkazovací"
+        ],
+        [
+          "četli bychom",
+          "podmiňovací"
+        ]
+      ]
     }
   ]
 }

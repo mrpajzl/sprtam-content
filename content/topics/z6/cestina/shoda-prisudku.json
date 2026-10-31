@@ -432,6 +432,71 @@
       "type": "open",
       "question": "Co napíšeš, když je podmět několikanásobný?",
       "answer": "Když je mezi podměty aspoň jeden mužský životný, píšu -i (*Chlapci a dívky běhali*). Mužský neživotný a ženský dávají -y (*Stromy a keře rostly*)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň koncovku: *Jablka padal_ ze stromu.* Napiš jen písmeno.",
+      "answers": [
+        "a"
+      ],
+      "explanation": "To jablko – střední rod → -a."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Holubi létal_ nad náměstím.*",
+      "options": [
+        "i",
+        "y",
+        "a"
+      ],
+      "answer": 0,
+      "explanation": "Ten holub – zvíře → mužský životný → -i."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Mraky se honil_ po obloze.*",
+      "options": [
+        "i",
+        "y"
+      ],
+      "answer": 1,
+      "explanation": "Ten mrak – věc → mužský neživotný → -y."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Stromy rostli.* je správně -i.",
+      "answer": false,
+      "explanation": "Ten strom – mužský neživotný → Stromy rostly."
+    },
+    {
+      "type": "input",
+      "question": "Doplň koncovku: *Chlapci a dívky tancoval_.* Napiš jen písmeno.",
+      "answers": [
+        "i"
+      ],
+      "explanation": "Mezi podměty je mužský životný (chlapci) → -i."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Okna a dveře byl_ zavřené.*",
+      "options": [
+        "i",
+        "y",
+        "a"
+      ],
+      "answer": 1,
+      "explanation": "Okna (střední) a dveře (ženský), žádný mužský životný → -y."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Telata se pásl_ u řeky.*",
+      "options": [
+        "i",
+        "y",
+        "a"
+      ],
+      "answer": 2,
+      "explanation": "To tele – střední rod → -a."
     }
   ]
 }

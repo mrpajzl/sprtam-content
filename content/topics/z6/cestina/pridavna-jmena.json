@@ -450,6 +450,76 @@
       "type": "open",
       "question": "Vystupňuj přídavné jméno *rychlý* a pojmenuj stupně.",
       "answer": "1. stupeň rychlý, 2. stupeň rychlejší, 3. stupeň nejrychlejší."
+    },
+    {
+      "type": "input",
+      "question": "2. stupeň přídavného jména *vysoký* je…",
+      "answers": [
+        "vyšší"
+      ],
+      "explanation": "vysoký → vyšší → nejvyšší."
+    },
+    {
+      "type": "input",
+      "question": "3. stupeň přídavného jména *levný* je…",
+      "answers": [
+        "nejlevnější"
+      ],
+      "explanation": "levný → levnější → nejlevnější."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký druh přídavného jména je *cizí*?",
+      "options": [
+        "tvrdé",
+        "měkké",
+        "přivlastňovací"
+      ],
+      "answer": 1,
+      "explanation": "Končí ve všech rodech na -í → měkké, vzor jarní."
+    },
+    {
+      "type": "choice",
+      "question": "Jak zní přivlastňovací přídavné jméno od *Pavel*?",
+      "options": [
+        "Pavlin",
+        "Pavelův",
+        "Pavlův"
+      ],
+      "answer": 2,
+      "explanation": "Od muže -ův, e vypadne jako v 2. pádě (Pavla): Pavlův."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přídavné jméno *jarní* má ve všech rodech stejnou koncovku -í.",
+      "answer": true,
+      "explanation": "jarní den, jarní noc, jarní počasí."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Petrov_ bratři*",
+      "options": [
+        "Petrovy",
+        "Petrovi",
+        "Petrova"
+      ],
+      "answer": 1,
+      "explanation": "Bratři – mužský životný, množné číslo → -i."
+    },
+    {
+      "type": "truefalse",
+      "question": "Spojení *nejvíc nejlepší* je správně.",
+      "answer": false,
+      "explanation": "Nej- už znamená „nejvíc“. Správně je jen *nejlepší*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď stupně přídavného jména *mladý* od 1. do 3.",
+      "items": [
+        "mladý",
+        "mladší",
+        "nejmladší"
+      ]
     }
   ]
 }

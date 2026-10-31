@@ -516,6 +516,90 @@
       "type": "open",
       "question": "K čemu slouží zájmena? Uveď tři druhy.",
       "answer": "Zastupují jména, abychom je pořád neopakovali. Druhy: osobní (já), přivlastňovací (můj), ukazovací (ten)."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký druh zájmena je *tento*?",
+      "options": [
+        "tázací",
+        "ukazovací",
+        "vztažné"
+      ],
+      "answer": 1,
+      "explanation": "Tento ukazuje na něco, stejně jako ten a onen."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Mluvili o ___ celý den.*",
+      "options": [
+        "mě",
+        "mně"
+      ],
+      "answer": 1,
+      "explanation": "Mluvili o tobě → mně."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Čekej na ___ před školou.*",
+      "options": [
+        "mně",
+        "mě"
+      ],
+      "answer": 1,
+      "explanation": "Čekej na tebe → mě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zájmeno *nějaký* je záporné.",
+      "answer": false,
+      "explanation": "Začíná ně- → neurčité. Záporná začínají ni- (nikdo, nic)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň osobní zájmeno: *Stromy kvetou a ___ voní.*",
+      "answers": [
+        "ony"
+      ],
+      "explanation": "Stromy jsou mužského rodu neživotného → ony."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Kdo to udělal?* je *kdo* zájmeno tázací.",
+      "answer": true,
+      "explanation": "Kdo se tu ptá → tázací zájmeno."
+    },
+    {
+      "type": "match",
+      "question": "Spoj osobu s osobním zájmenem.",
+      "pairs": [
+        [
+          "1. osoba, jednotné číslo",
+          "já"
+        ],
+        [
+          "2. osoba, jednotné číslo",
+          "ty"
+        ],
+        [
+          "2. osoba, množné číslo",
+          "vy"
+        ],
+        [
+          "3. osoba, množné číslo (ženy)",
+          "ony"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: *Pojď se ___ do kina.*",
+      "options": [
+        "mnou",
+        "mně",
+        "mě"
+      ],
+      "answer": 0,
+      "explanation": "S kým? → 7. pád: se mnou (jako s tebou)."
     }
   ]
 }

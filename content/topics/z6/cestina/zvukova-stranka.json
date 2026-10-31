@@ -531,6 +531,89 @@
       "type": "open",
       "question": "Kde je v češtině přízvuk?",
       "answer": "Na první slabice slova. Když před slovem stojí krátká předložka, přízvuk přejde na ni: *na stole*."
+    },
+    {
+      "type": "input",
+      "question": "Kolik hlásek má slovo *chleba*? Napiš číslo.",
+      "answers": [
+        "5"
+      ],
+      "explanation": "ch – l – e – b – a: ch jsou dvě písmena, ale jedna hláska."
+    },
+    {
+      "type": "choice",
+      "question": "Jak spisovně vyslovíme slovo *hezký*?",
+      "options": [
+        "[hezký]",
+        "[heský]",
+        "[hezgý]"
+      ],
+      "answer": 1,
+      "explanation": "Znělé z stojí před neznělým k, proto zní jako s."
+    },
+    {
+      "type": "truefalse",
+      "question": "Souhláska *ř* je tvrdá.",
+      "answer": false,
+      "explanation": "Ř je měkká: ž, š, č, ř, c, j, ď, ť, ň."
+    },
+    {
+      "type": "input",
+      "question": "Napiš znělý pár k souhlásce *ť*.",
+      "answers": [
+        "ď"
+      ],
+      "explanation": "Pár ď – ť."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově je dvojhláska?",
+      "options": [
+        "úkol",
+        "dům",
+        "auto"
+      ],
+      "answer": 2,
+      "explanation": "Au v *auto* je dvojhláska. Ú a ů jsou dlouhé samohlásky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve spojení *na stole* je přízvuk na předložce *na*.",
+      "answer": true,
+      "explanation": "Krátká předložka splyne se slovem a přízvuk přejde na ni."
+    },
+    {
+      "type": "choice",
+      "question": "Na které slabice je přízvuk ve slově *kamarád*?",
+      "options": [
+        "na poslední",
+        "na první",
+        "na druhé"
+      ],
+      "answer": 1,
+      "explanation": "V češtině je přízvuk vždy na první slabice: **ka**-ma-rád."
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo s jeho spisovnou výslovností.",
+      "pairs": [
+        [
+          "hrad",
+          "[hrat]"
+        ],
+        [
+          "sbírka",
+          "[zbírka]"
+        ],
+        [
+          "lev",
+          "[lef]"
+        ],
+        [
+          "kdo",
+          "[gdo]"
+        ]
+      ]
     }
   ]
 }
