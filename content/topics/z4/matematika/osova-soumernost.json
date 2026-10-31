@@ -344,6 +344,70 @@
       "type": "open",
       "question": "Uveď tři věci z přírody nebo okolí, které jsou souměrné.",
       "answer": "Například motýl, list stromu, lidský obličej, okno, dveře."
+    },
+    {
+      "type": "choice",
+      "question": "Které písmeno má svislou osu souměrnosti?",
+      "options": [
+        "N",
+        "T",
+        "Z"
+      ],
+      "answer": 1,
+      "explanation": "T přeložíš svisle uprostřed a obě poloviny se kryjí. N a Z souměrné nejsou."
+    },
+    {
+      "type": "input",
+      "question": "Kolik os souměrnosti má písmeno M?",
+      "answers": [
+        "1",
+        "jednu",
+        "jedna"
+      ],
+      "explanation": "Jen svislou osu uprostřed."
+    },
+    {
+      "type": "truefalse",
+      "question": "U čtverce jsou osami souměrnosti i obě úhlopříčky.",
+      "answer": true,
+      "explanation": "Čtverec má 4 osy: dvě středem stran a dvě úhlopříčky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod a jeho obraz mohou být od osy různě daleko.",
+      "answer": false,
+      "explanation": "Bod i jeho obraz jsou od osy vždy stejně daleko."
+    },
+    {
+      "type": "choice",
+      "question": "Bod A je 4 cm od osy. Jak daleko je od svého obrazu A′?",
+      "options": [
+        "4 cm",
+        "2 cm",
+        "8 cm"
+      ],
+      "answer": 2,
+      "explanation": "A′ je 4 cm na druhé straně osy: 4 + 4 = 8 cm."
+    },
+    {
+      "type": "choice",
+      "question": "Kudy vedou osy souměrnosti obdélníku (ne čtverce)?",
+      "options": [
+        "po obou úhlopříčkách",
+        "svisle a vodorovně středem stran",
+        "jen svisle středem"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak najdeš obraz bodu A.",
+      "items": [
+        "Z bodu A veď kolmici k ose.",
+        "Změř vzdálenost bodu A od osy.",
+        "Stejnou vzdálenost odměř na druhou stranu osy.",
+        "Označ tam obraz A′."
+      ]
     }
   ]
 }

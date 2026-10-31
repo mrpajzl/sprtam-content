@@ -418,6 +418,55 @@
       "type": "open",
       "question": "Proč musí být zbytek menší než dělitel?",
       "answer": "Kdyby byl stejný nebo větší, mohl bych každému dát ještě jeden kus."
+    },
+    {
+      "type": "input",
+      "question": "Zbytek po dělení 47 : 8 =",
+      "answers": [
+        "7"
+      ],
+      "explanation": "8 · 5 = 40, 47 − 40 = 7. Zbytek 7 je menší než 8."
+    },
+    {
+      "type": "input",
+      "question": "61 : 9 = ? (jen celý podíl)",
+      "answers": [
+        "6"
+      ],
+      "explanation": "9 · 6 = 54, 9 · 7 = 63 už je moc. Zbytek 7."
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 84 : 3 =",
+      "answers": [
+        "28"
+      ],
+      "explanation": "8 : 3 = 2, zbytek 2. Připíšu 4 → 24. 24 : 3 = 8."
+    },
+    {
+      "type": "choice",
+      "question": "Který zápis je správný?",
+      "options": [
+        "44 : 6 = 6 (zb. 8)",
+        "44 : 6 = 7 (zb. 2)",
+        "44 : 6 = 8 (zb. 4)"
+      ],
+      "answer": 1,
+      "explanation": "6 · 7 = 42, zbytek 2. Zbytek 8 je větší než dělitel, 6 · 8 = 48 je víc než 44."
+    },
+    {
+      "type": "truefalse",
+      "question": "31 : 4 = 7 (zb. 3)",
+      "answer": true,
+      "explanation": "Zkouška: 4 · 7 + 3 = 31."
+    },
+    {
+      "type": "input",
+      "question": "Máš 50 vajec. Do krabičky se vejde 6 vajec. Kolik krabiček naplníš úplně?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "50 : 6 = 8 (zb. 2). Osm plných krabiček a 2 vejce zbydou."
     }
   ]
 }

@@ -470,6 +470,64 @@
       "type": "open",
       "question": "K čemu je dobré udělat odhad výsledku?",
       "answer": "Hned poznám velkou chybu. Když vyjde něco úplně jiného než odhad, musím počítat znovu."
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 326 · 4 =",
+      "answers": [
+        "1304",
+        "1 304"
+      ],
+      "explanation": "4 · 6 = 24, píšu 4, 2 si pamatuji. 4 · 2 = 8 a 2 je 10, píšu 0, 1 si pamatuji. 4 · 3 = 12 a 1 je 13."
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 507 · 8 =",
+      "answers": [
+        "4056",
+        "4 056"
+      ],
+      "explanation": "8 · 7 = 56, píšu 6, 5 si pamatuji. 8 · 0 = 0 a 5 je 5. 8 · 5 = 40.",
+      "hints": [
+        "Pozor na nulu uprostřed: i k ní přičti, co si pamatuješ."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 32 · 13 =",
+      "answers": [
+        "416"
+      ],
+      "explanation": "32 · 3 = 96. 32 · 1 desítka = 320. 96 + 320 = 416.",
+      "hints": [
+        "Nejdřív 32 · 3, pak 32 · 1 posunuté o místo doleva.",
+        "Oba řádky sečti pod sebou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Odhadni 612 · 4.",
+      "options": [
+        "asi 24 000",
+        "asi 240",
+        "asi 2 400"
+      ],
+      "answer": 2,
+      "explanation": "612 je asi 600. 600 · 4 = 2 400."
+    },
+    {
+      "type": "truefalse",
+      "question": "U příkladu 158 · 6 je první krok 6 · 8 = 48: píšu 8 a 4 si pamatuji.",
+      "answer": true,
+      "explanation": "Začínáme vpravo u jednotek. Z 48 napíšu jednotky 8, desítky 4 si pamatuji."
+    },
+    {
+      "type": "input",
+      "question": "Lístek do kina stojí 165 Kč. Kolik korun zaplatí 6 dětí?",
+      "answers": [
+        "990"
+      ],
+      "explanation": "165 · 6 = 990."
     }
   ]
 }

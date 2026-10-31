@@ -317,6 +317,66 @@
       "type": "open",
       "question": "Kdy je dobré zaokrouhlovat? Uveď příklad.",
       "answer": "Když stačí přibližná hodnota. Třeba v novinách: na zápase bylo asi 12 000 diváků."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 13 499 na tisíce.",
+      "answers": [
+        "13000",
+        "13 000"
+      ],
+      "explanation": "Hlídač (stovky) je 4 → tisíce nechám: 13 000."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 6 785 na desítky.",
+      "answers": [
+        "6790",
+        "6 790"
+      ],
+      "explanation": "Hlídač (jednotky) je 5 → nahoru: 6 790."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 72 500 na tisíce.",
+      "answers": [
+        "73000",
+        "73 000"
+      ],
+      "explanation": "72 500 je přesně uprostřed mezi 72 000 a 73 000 → nahoru."
+    },
+    {
+      "type": "choice",
+      "question": "Zaokrouhli 4 961 na stovky.",
+      "options": [
+        "4 900",
+        "5 000",
+        "4 960"
+      ],
+      "answer": 1,
+      "explanation": "Hlídač 6 → k 9 stovkám přidám 1 → 10 stovek = 1 tisíc navíc: 5 000."
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo leží přesně uprostřed mezi 24 000 a 25 000?",
+      "options": [
+        "24 050",
+        "24 500",
+        "24 600"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "6 499 ≈ 7 000 (na tisíce)",
+      "answer": false,
+      "explanation": "Hlídač (stovky) je 4 → 6 499 ≈ 6 000."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když zaokrouhluješ 15 382 na stovky, rozhoduje číslice 8.",
+      "answer": true,
+      "explanation": "Hlídač je hned vpravo od stovek – desítky, tedy 8. Vyjde 15 400."
     }
   ]
 }

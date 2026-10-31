@@ -330,6 +330,68 @@
       "type": "open",
       "question": "Proč píšeme velká čísla po trojicích s mezerou?",
       "answer": "Lépe se čtou. Každá trojice je jedna třída: jednotky, tisíce, miliony."
+    },
+    {
+      "type": "input",
+      "question": "Zapiš číslicemi: dvě stě čtyři tisíc sedmdesát (bez mezer).",
+      "answers": [
+        "204070",
+        "204 070"
+      ],
+      "hints": [
+        "Třída tisíců: 204. Třída jednotek: sedmdesát – zapiš ji třemi číslicemi."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká číslice stojí v řádu tisíců v čísle 538 214?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "5 statisíců, 3 desetitisíce, 8 tisíců."
+    },
+    {
+      "type": "choice",
+      "question": "120 400 ? 99 999",
+      "options": [
+        "<",
+        "=",
+        ">"
+      ],
+      "answer": 2,
+      "explanation": "120 400 má šest číslic, 99 999 jen pět. Víc číslic = větší číslo."
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo je hned před 300 000?",
+      "options": [
+        "299 000",
+        "299 999",
+        "300 001"
+      ],
+      "answer": 1,
+      "explanation": "300 000 − 1 = 299 999."
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 1 000 000 má šest nul.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "V čísle 362 105 je číslice 3 v řádu desetitisíců.",
+      "answer": false,
+      "explanation": "Trojka je úplně vlevo v šesticiferném čísle – v řádu statisíců."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od největšího.",
+      "items": [
+        "500 100",
+        "500 010",
+        "450 999",
+        "45 999"
+      ]
     }
   ]
 }

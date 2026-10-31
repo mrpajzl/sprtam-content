@@ -357,6 +357,60 @@
       "type": "open",
       "question": "Jak spočítáš 2/3 z 15?",
       "answer": "15 : 3 = 5, to je jedna třetina. Dvě třetiny: 5 · 2 = 10."
+    },
+    {
+      "type": "input",
+      "question": "Kniha má 40 stran. Přečetl jsi 3/8 knihy. Kolik stran jsi přečetl?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "40 : 8 = 5 (jedna osmina). 5 · 3 = 15.",
+      "hints": [
+        "Nejdřív vyděl jmenovatelem.",
+        "Pak vynásob čitatelem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik je 2/3 z 21?",
+      "answers": [
+        "14"
+      ],
+      "explanation": "21 : 3 = 7, 7 · 2 = 14."
+    },
+    {
+      "type": "choice",
+      "question": "Pizza je na 6 dílů, snědl jsi 5. Jaká část pizzy zbyla?",
+      "options": [
+        "1/6",
+        "5/6",
+        "6/5"
+      ],
+      "answer": 0,
+      "explanation": "Ze 6 dílů zbyl 1 – jedna šestina."
+    },
+    {
+      "type": "choice",
+      "question": "Co ukazuje jmenovatel ve zlomku 4/7?",
+      "options": [
+        "kolik dílů beru",
+        "na kolik dílů je celek rozdělený",
+        "kolik dílů zbylo"
+      ],
+      "answer": 1,
+      "explanation": "Jmenovatel je spodní číslo 7 – celek je rozdělený na 7 stejných dílů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čtvrt hodiny je 1/4 hodiny, tedy 15 minut.",
+      "answer": true,
+      "explanation": "60 : 4 = 15."
+    },
+    {
+      "type": "truefalse",
+      "question": "1/3 z 9 je 6.",
+      "answer": false,
+      "explanation": "9 : 3 = 3. Šest jsou až 2/3 z 9."
     }
   ]
 }
