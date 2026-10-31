@@ -386,6 +386,81 @@
       "type": "open",
       "question": "Popiš činnost čtyřdobého zážehového motoru.",
       "answer": "Sání směsi, komprese, zážeh svíčkou a expanze (koná práci), výfuk spalin. Cyklus se opakuje."
+    },
+    {
+      "type": "input",
+      "question": "Ohřívač 1 000 K, chladič 300 K. Maximální účinnost v % =",
+      "answers": [
+        "70"
+      ],
+      "explanation": "η = (1 000 − 300) / 1 000 = 0,7 = 70 %"
+    },
+    {
+      "type": "input",
+      "question": "Ohřívač má 527 °C, chladič 27 °C. Maximální účinnost v % =",
+      "answers": [
+        "62,5"
+      ],
+      "explanation": "T₁ = 800 K, T₂ = 300 K, η = 500 / 800 = 0,625 = 62,5 %",
+      "hints": [
+        "Nejdřív převeď teploty na kelviny."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Motor s účinností 20 % vykoná za cyklus práci 400 J. Kolik J tepla přijme od ohřívače?",
+      "answers": [
+        "2000",
+        "2 000"
+      ],
+      "explanation": "Q₁ = W / η = 400 / 0,2 = 2 000 J",
+      "hints": [
+        "η = W / Q₁, vyjádři Q₁."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve které době čtyřdobého motoru koná plyn práci?",
+      "options": [
+        "při sání",
+        "při kompresi",
+        "při výfuku",
+        "při expanzi"
+      ],
+      "answer": 3,
+      "explanation": "Expanze je pracovní doba – hořící směs tlačí píst dolů."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tepelný motor by mohl opakovaně pracovat i bez chladiče.",
+      "answer": false,
+      "explanation": "Část tepla musí odejít do chladiče, jinak se plyn nevrátí do výchozího stavu."
+    },
+    {
+      "type": "choice",
+      "question": "Z jakých dějů se skládá Carnotův cyklus?",
+      "options": [
+        "ze dvou izobarických a dvou izochorických",
+        "ze dvou izotermických a dvou adiabatických",
+        "ze čtyř izotermických"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Práce vykonaná za jeden cyklus se rovná rozdílu tepla přijatého od ohřívače a tepla odevzdaného chladiči.",
+      "answer": true,
+      "explanation": "W = Q₁ − Q₂ (zákon zachování energie)."
+    },
+    {
+      "type": "choice",
+      "question": "Co je pracovní látka tepelného motoru?",
+      "options": [
+        "palivo v nádrži",
+        "chladicí kapalina",
+        "plyn nebo pára, která se rozpíná a tlačí na píst"
+      ],
+      "answer": 2
     }
   ]
 }

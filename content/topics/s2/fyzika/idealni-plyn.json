@@ -364,6 +364,81 @@
       "type": "open",
       "question": "Popiš izotermický, izobarický a izochorický děj.",
       "answer": "Izotermický: stálá teplota, pV = konst. Izobarický: stálý tlak, V/T = konst. Izochorický: stálý objem, p/T = konst."
+    },
+    {
+      "type": "input",
+      "question": "Izotermicky rozepneme plyn ze 3 l (200 kPa) na 12 l. Tlak v kPa =",
+      "answers": [
+        "50"
+      ],
+      "explanation": "p₂ = 200 · 3 / 12 = 50 kPa"
+    },
+    {
+      "type": "input",
+      "question": "Pneumatika má tlak 240 kPa při 300 K. Na slunci se ohřeje na 330 K, objem se nemění. Tlak v kPa =",
+      "answers": [
+        "264"
+      ],
+      "explanation": "Izochorický děj: p₂ = 240 · 330 / 300 = 264 kPa"
+    },
+    {
+      "type": "input",
+      "question": "Balonek má objem 3 l při 27 °C (≈ 300 K). Při stálém tlaku ho ochladíme na −73 °C (≈ 200 K). Objem v l =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "V₂ = 3 · 200 / 300 = 2 l",
+      "hints": [
+        "Počítej s teplotou v kelvinech.",
+        "V₁ / T₁ = V₂ / T₂"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "2 mol ideálního plynu při 300 K zaujímají objem 0,0831 m³. Tlak v kPa = (R = 8,31 J/(mol·K))",
+      "answers": [
+        "60"
+      ],
+      "explanation": "p = nRT / V = 2 · 8,31 · 300 / 0,0831 = 60 000 Pa = 60 kPa",
+      "hints": [
+        "Ze stavové rovnice p = n · R · T / V.",
+        "Výsledek vyjde v Pa, převeď na kPa."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak vypadá izobarický děj v p–V diagramu?",
+      "options": [
+        "hyperbola",
+        "vodorovná přímka",
+        "svislá přímka",
+        "uzavřená křivka"
+      ],
+      "answer": 1,
+      "explanation": "Tlak (svislá osa) se nemění, mění se jen objem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Adiabata je v p–V diagramu strmější než izoterma.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Když plyn při stálém tlaku ohřeješ z 10 °C na 20 °C, jeho objem se zdvojnásobí.",
+      "answer": false,
+      "explanation": "V kelvinech jde o ohřátí z 283 K na 293 K, objem vzroste jen asi o 3,5 %."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní tlak plynu, když při stálé teplotě jeho objem ztrojnásobíme?",
+      "options": [
+        "vzroste třikrát",
+        "nezmění se",
+        "klesne o třetinu",
+        "klesne na třetinu"
+      ],
+      "answer": 3,
+      "explanation": "Izotermický děj: p · V = konst."
     }
   ]
 }

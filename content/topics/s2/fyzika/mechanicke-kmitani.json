@@ -380,6 +380,76 @@
       "type": "open",
       "question": "Co je rezonance a kde je užitečná nebo nebezpečná?",
       "answer": "Velký nárůst amplitudy, když se budicí frekvence shoduje s vlastní. Užitečná u hudebních nástrojů a rozhoupání houpačky, nebezpečná pro mosty a stroje."
+    },
+    {
+      "type": "input",
+      "question": "Oscilátor vykoná 120 kmitů za minutu. Frekvence v Hz =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "f = 120 : 60 = 2 Hz",
+      "hints": [
+        "Minuta má 60 s."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Frekvence kmitání je 5 Hz. Perioda v s =",
+      "answers": [
+        "0,2"
+      ],
+      "explanation": "T = 1 / f = 1 / 5 = 0,2 s"
+    },
+    {
+      "type": "input",
+      "question": "Kyvadlo délky 10 m (g = 10 m/s²). Perioda v s (na setiny) =",
+      "answers": [
+        "6,28"
+      ],
+      "explanation": "T = 2π √(10/10) = 2π ≈ 6,28 s"
+    },
+    {
+      "type": "input",
+      "question": "Závaží 1 kg na pružině s tuhostí 100 N/m. Perioda v s (na setiny) =",
+      "answers": [
+        "0,63"
+      ],
+      "explanation": "T = 2π √(1/100) = 2π · 0,1 ≈ 0,63 s",
+      "hints": [
+        "T = 2π √(m / k)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Perioda kmitání je 2 s. Úhlová frekvence v rad/s (na setiny) =",
+      "answers": [
+        "3,14"
+      ],
+      "explanation": "ω = 2π / T = 2π / 2 = π ≈ 3,14 rad/s"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní perioda kyvadla, když ho rozkývám víc (výchylky zůstanou malé)?",
+      "options": [
+        "zdvojnásobí se",
+        "zkrátí se",
+        "nezmění se",
+        "prodlouží se"
+      ],
+      "answer": 2,
+      "explanation": "U malých výchylek perioda nezávisí na amplitudě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tužší pružina se stejným závažím kmitá s kratší periodou.",
+      "answer": true,
+      "explanation": "T = 2π √(m / k): větší k znamená menší T."
+    },
+    {
+      "type": "truefalse",
+      "question": "V krajní poloze má oscilátor největší kinetickou energii.",
+      "answer": false,
+      "explanation": "V krajní poloze je rychlost nulová, energie je celá potenciální."
     }
   ]
 }

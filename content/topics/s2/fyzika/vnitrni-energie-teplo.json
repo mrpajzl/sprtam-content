@@ -371,6 +371,79 @@
       "type": "open",
       "question": "Co je kalorimetrická rovnice a k čemu slouží?",
       "answer": "Vyjadřuje, že v izolované soustavě teplo odevzdané teplejším tělesem se rovná teplu přijatému chladnějším. Slouží k výpočtu výsledné teploty nebo měrné tepelné kapacity."
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ tepla ohřeje 0,5 kg vody o 20 K? (c = 4 200 J/(kg·K))",
+      "answers": [
+        "42"
+      ],
+      "explanation": "Q = 0,5 · 4 200 · 20 = 42 000 J = 42 kJ"
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ tepla ohřeje 2 kg železa o 100 K? (c = 450 J/(kg·K))",
+      "answers": [
+        "90"
+      ],
+      "explanation": "Q = 2 · 450 · 100 = 90 000 J = 90 kJ"
+    },
+    {
+      "type": "input",
+      "question": "Okolí stlačilo plyn prací 500 J a plyn přitom odevzdal teplo 300 J. Změna vnitřní energie v J =",
+      "answers": [
+        "200"
+      ],
+      "explanation": "W = +500 J, Q = −300 J, ΔU = 500 − 300 = 200 J",
+      "hints": [
+        "Odevzdané teplo má záporné znaménko."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Smícháme 2 kg vody 60 °C a 3 kg vody 10 °C. Výsledná teplota ve °C =",
+      "answers": [
+        "30"
+      ],
+      "explanation": "2 · (60 − t) = 3 · (t − 10) → 150 = 5t → t = 30 °C",
+      "hints": [
+        "Teplo odevzdané teplou vodou = teplo přijaté studenou.",
+        "2 · (60 − t) = 3 · (t − 10)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Plyn se rozepne a sám koná práci. Jaké znaménko má práce W v rovnici ΔU = W + Q?",
+      "options": [
+        "W > 0",
+        "W < 0",
+        "W = 0"
+      ],
+      "answer": 1,
+      "explanation": "W je práce, kterou koná okolí na plynu. Když práci koná plyn, je W záporná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Moře je v září ještě teplé hlavně proto, že voda má velkou měrnou tepelnou kapacitu.",
+      "answer": true,
+      "explanation": "Voda se ohřívá pomalu a pomalu také chladne."
+    },
+    {
+      "type": "choice",
+      "question": "Co je kalorimetr?",
+      "options": [
+        "přístroj na měření tlaku plynu",
+        "teploměr se stupnicí v kelvinech",
+        "tepelně izolovaná nádoba"
+      ],
+      "answer": 2,
+      "explanation": "Napodobuje izolovanou soustavu, podobně jako termoska."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vedením se teplo šíří i přes vakuum.",
+      "answer": false,
+      "explanation": "Vedení potřebuje částice. Přes vakuum se teplo šíří jen zářením."
     }
   ]
 }

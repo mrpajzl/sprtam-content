@@ -376,6 +376,80 @@
       "type": "open",
       "question": "Co říká zákon zachování elektrického náboje?",
       "answer": "V izolované soustavě se celkový náboj nemění. Náboj nevzniká ani nezaniká, jen se přesouvá mezi tělesy."
+    },
+    {
+      "type": "input",
+      "question": "Dva náboje po 3 μC jsou ve vakuu 0,3 m od sebe. Síla v N? (k = 9 · 10⁹ N·m²/C²)",
+      "answers": [
+        "0,9"
+      ],
+      "explanation": "F = 9 · 10⁹ · 9 · 10⁻¹² / 0,09 = 0,081 / 0,09 = 0,9 N",
+      "hints": [
+        "Převeď μC na C a vzdálenost umocni na druhou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Dva ionty se ve vakuu přitahují silou 0,81 N. Jak velká bude síla v N ve vodě (εᵣ = 81) při stejné vzdálenosti?",
+      "answers": [
+        "0,01"
+      ],
+      "explanation": "F = 0,81 / 81 = 0,01 N"
+    },
+    {
+      "type": "input",
+      "question": "Kolik elektronů tvoří náboj −8 · 10⁻¹⁹ C? (e = 1,6 · 10⁻¹⁹ C)",
+      "answers": [
+        "5"
+      ],
+      "explanation": "8 · 10⁻¹⁹ : 1,6 · 10⁻¹⁹ = 5"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní elektrická síla, když vzdálenost nábojů ztrojnásobíme?",
+      "options": [
+        "zmenší se 3×",
+        "zmenší se 9×",
+        "zvětší se 9×",
+        "zmenší se 6×"
+      ],
+      "answer": 1,
+      "explanation": "Síla klesá s druhou mocninou vzdálenosti: 3² = 9."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při tření pravítka o svetr vzniká nový elektrický náboj.",
+      "answer": false,
+      "explanation": "Náboj se jen přesouvá – elektrony přejdou z jednoho tělesa na druhé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Svetr, ze kterého přešly elektrony na pravítko, je nabitý kladně.",
+      "answer": true,
+      "explanation": "Svetr má nedostatek elektronů."
+    },
+    {
+      "type": "choice",
+      "question": "Která z látek je izolant?",
+      "options": [
+        "měď",
+        "hliník",
+        "zlato",
+        "sklo"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "choice",
+      "question": "Kolik coulombů je 5 μC?",
+      "options": [
+        "5 · 10⁻³ C",
+        "5 · 10⁻⁶ C",
+        "5 · 10⁻⁹ C",
+        "5 · 10⁶ C"
+      ],
+      "answer": 1,
+      "explanation": "1 μC = 10⁻⁶ C."
     }
   ]
 }

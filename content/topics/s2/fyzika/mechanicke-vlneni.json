@@ -378,6 +378,84 @@
       "type": "open",
       "question": "Jak vzniká stojaté vlnění?",
       "answer": "Interferencí dvou stejných vlnění postupujících proti sobě, např. přímé a odražené vlny na struně. Vznikají uzly (nulová výchylka) a kmitny (největší výchylka)."
+    },
+    {
+      "type": "input",
+      "question": "Netopýr vysílá ultrazvuk 34 kHz, rychlost zvuku ve vzduchu je 340 m/s. Vlnová délka v m =",
+      "answers": [
+        "0,01"
+      ],
+      "explanation": "λ = v / f = 340 / 34 000 = 0,01 m",
+      "hints": [
+        "Převeď kHz na Hz."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vlna na vodě má vlnovou délku 3 m a frekvenci 0,5 Hz. Rychlost šíření v m/s =",
+      "answers": [
+        "1,5"
+      ],
+      "explanation": "v = λ · f = 3 · 0,5 = 1,5 m/s"
+    },
+    {
+      "type": "input",
+      "question": "Vlnění se šíří rychlostí 10 m/s s periodou 0,2 s. Vlnová délka v m =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "λ = v · T = 10 · 0,2 = 2 m"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá zvuk o frekvenci 10 Hz?",
+      "options": [
+        "ultrazvuk",
+        "slyšitelný zvuk",
+        "infrazvuk"
+      ],
+      "answer": 2,
+      "explanation": "Pod 16 Hz je infrazvuk."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vlna na laně, kterou vytvoříš kmitáním konce nahoru a dolů, je podélná.",
+      "answer": false,
+      "explanation": "Částice kmitají kolmo ke směru šíření, je to příčné vlnění."
+    },
+    {
+      "type": "choice",
+      "question": "Sanitka kolem tebe projela a vzdaluje se. Jaký tón slyšíš?",
+      "options": [
+        "vyšší než při přijíždění",
+        "nižší než při přijíždění",
+        "stejný jako při přijíždění"
+      ],
+      "answer": 1,
+      "explanation": "Dopplerův jev: při vzdalování slyšíme nižší frekvenci."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se potká hřeben jedné vlny s dolem stejně velké druhé vlny, vlny se vyruší.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "uzel",
+          "místo stálého klidu"
+        ],
+        [
+          "kmitna",
+          "místo největší výchylky"
+        ],
+        [
+          "vlnová délka",
+          "vzdálenost sousedních hřebenů"
+        ]
+      ]
     }
   ]
 }

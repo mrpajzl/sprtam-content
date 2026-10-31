@@ -355,6 +355,82 @@
       "type": "open",
       "question": "Jak závisí teplota varu na tlaku? Uveď využití.",
       "answer": "S rostoucím tlakem teplota varu roste. Využívá se v tlakovém (Papinově) hrnci, kde voda vře nad 100 °C. Na horách vře pod 100 °C."
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ tepla roztaví 3 kg ledu 0 °C? (l = 334 kJ/kg)",
+      "answers": [
+        "1002",
+        "1 002"
+      ],
+      "explanation": "L = 3 · 334 = 1 002 kJ"
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ tepla přemění 0,5 kg vody 100 °C na páru? (l = 2 260 kJ/kg)",
+      "answers": [
+        "1130",
+        "1 130"
+      ],
+      "explanation": "L = 0,5 · 2 260 = 1 130 kJ"
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ tepla potřebuješ, abys 1 kg ledu 0 °C roztavil a vzniklou vodu ohřál na 100 °C? (l = 334 kJ/kg, c = 4,2 kJ/(kg·K))",
+      "answers": [
+        "754"
+      ],
+      "explanation": "Tání: 1 · 334 = 334 kJ. Ohřev: 1 · 4,2 · 100 = 420 kJ. Celkem 754 kJ.",
+      "hints": [
+        "Rozděl děj na tání a ohřev.",
+        "Na tání L = m · l, na ohřev Q = m · c · Δt."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje přechod z plynného skupenství do kapalného?",
+      "options": [
+        "tuhnutí",
+        "sublimace",
+        "kondenzace",
+        "var"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Vypařování probíhá jen při teplotě varu.",
+      "answer": false,
+      "explanation": "Vypařování probíhá na povrchu kapaliny při jakékoli teplotě. Jen var probíhá při teplotě varu."
+    },
+    {
+      "type": "choice",
+      "question": "Která z látek je amorfní?",
+      "options": [
+        "led",
+        "železo",
+        "sklo",
+        "kuchyňská sůl"
+      ],
+      "answer": 2,
+      "explanation": "Sklo nemá pravidelnou mřížku a při ohřevu postupně měkne."
+    },
+    {
+      "type": "truefalse",
+      "question": "Během tání ledu roste jeho vnitřní energie, i když se teplota nemění.",
+      "answer": true,
+      "explanation": "Dodané teplo rozrušuje vazby mezi částicemi."
+    },
+    {
+      "type": "choice",
+      "question": "Při jaké teplotě přibližně vře voda v tlakovém (Papinově) hrnci?",
+      "options": [
+        "asi 120 °C",
+        "asi 95 °C",
+        "přesně 100 °C"
+      ],
+      "answer": 0,
+      "explanation": "Vyšší tlak = vyšší teplota varu."
     }
   ]
 }

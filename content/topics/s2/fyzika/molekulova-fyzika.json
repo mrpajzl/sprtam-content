@@ -413,6 +413,84 @@
       "type": "open",
       "question": "Co je látkové množství a jak ho vypočítáš?",
       "answer": "Udává počet částic vztažený k Avogadrově konstantě. n = N / N_A nebo n = m / M_m, jednotka mol."
+    },
+    {
+      "type": "input",
+      "question": "Molární hmotnost CO₂ v g/mol (C = 12, O = 16) =",
+      "answers": [
+        "44"
+      ],
+      "explanation": "12 + 2 · 16 = 44 g/mol",
+      "hints": [
+        "Molekula CO₂ má jeden atom uhlíku a dva atomy kyslíku."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Teplota 100 °C v kelvinech (na setiny) =",
+      "answers": [
+        "373,15"
+      ],
+      "explanation": "T = 100 + 273,15 = 373,15 K"
+    },
+    {
+      "type": "input",
+      "question": "Teplota 200 K ve °C (na setiny) =",
+      "answers": [
+        "-73,15",
+        "−73,15"
+      ],
+      "explanation": "t = 200 − 273,15 = −73,15 °C"
+    },
+    {
+      "type": "choice",
+      "question": "Kolik molekul je ve 3 mol vody?",
+      "options": [
+        "6,02 · 10²³",
+        "1,806 · 10²³",
+        "1,806 · 10²⁴",
+        "2,01 · 10²³"
+      ],
+      "answer": 2,
+      "explanation": "N = n · N_A = 3 · 6,02 · 10²³ = 18,06 · 10²³ = 1,806 · 10²⁴",
+      "hints": [
+        "N = n · N_A"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V pevné látce částice stojí na místě a nehýbou se.",
+      "answer": false,
+      "explanation": "Částice v pevné látce neustále kmitají kolem stálých poloh v krystalové mřížce."
+    },
+    {
+      "type": "choice",
+      "question": "Který jev je příkladem difuze?",
+      "options": [
+        "led taje na slunci",
+        "voda se vaří v hrnci",
+        "vůně bábovky se rozšíří celým bytem"
+      ],
+      "answer": 2,
+      "explanation": "Částice vůně samovolně pronikají mezi částice vzduchu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ohřátí o 10 °C odpovídá ohřátí o 283,15 K.",
+      "answer": false,
+      "explanation": "Rozdíl teplot je stejný v obou stupnicích: o 10 °C = o 10 K."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď teploty od nejnižší po nejvyšší.",
+      "items": [
+        "0 K",
+        "−200 °C",
+        "0 °C",
+        "300 K",
+        "50 °C"
+      ],
+      "explanation": "−200 °C = 73,15 K, 0 °C = 273,15 K, 50 °C = 323,15 K."
     }
   ]
 }

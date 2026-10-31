@@ -360,6 +360,75 @@
       "type": "open",
       "question": "Na čem závisí kapacita deskového kondenzátoru?",
       "answer": "C = ε₀εᵣS/d: roste s plochou desek a permitivitou dielektrika, klesá se vzdáleností desek."
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátor 20 μF je nabitý na 50 V. Energie v J =",
+      "answers": [
+        "0,025"
+      ],
+      "explanation": "E = ½ · 2 · 10⁻⁵ · 50² = ½ · 2 · 10⁻⁵ · 2 500 = 0,025 J",
+      "hints": [
+        "E = ½ · C · U², kapacitu převeď na F."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátory 12 μF a 6 μF sériově. Výsledná kapacita v μF =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "1/C = 1/12 + 2/12 = 3/12 = 1/4 → C = 4 μF"
+    },
+    {
+      "type": "input",
+      "question": "Mezi deskami vzdálenými 5 mm je napětí 50 V. Intenzita v V/m =",
+      "answers": [
+        "10000",
+        "10 000"
+      ],
+      "explanation": "E = U / d = 50 / 0,005 = 10 000 V/m",
+      "hints": [
+        "Vzdálenost převeď na metry."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Elektrické síly vykonají při přenesení náboje 5 C práci 30 J. Napětí ve V =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "U = W / Q = 30 / 5 = 6 V"
+    },
+    {
+      "type": "input",
+      "question": "Kondenzátor 10 μF je nabitý na 12 V. Náboj v μC =",
+      "answers": [
+        "120"
+      ],
+      "explanation": "Q = C · U = 10 μF · 12 V = 120 μC"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní kapacita deskového kondenzátoru, když zdvojnásobíme plochu desek?",
+      "options": [
+        "zmenší se na polovinu",
+        "nezmění se",
+        "zdvojnásobí se"
+      ],
+      "answer": 2,
+      "explanation": "C = ε₀εᵣS/d, kapacita je přímo úměrná ploše."
+    },
+    {
+      "type": "truefalse",
+      "question": "Siločáry vycházejí ze záporného náboje a míří do kladného.",
+      "answer": false,
+      "explanation": "Siločáry vycházejí z kladného náboje a míří do záporného."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výsledná kapacita sériově zapojených kondenzátorů je menší než nejmenší z nich.",
+      "answer": true
     }
   ]
 }
