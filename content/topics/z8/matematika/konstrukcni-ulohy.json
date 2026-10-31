@@ -375,6 +375,93 @@
       "type": "open",
       "question": "Jak sestrojíš pravoúhlý trojúhelník, když znáš přeponu?",
       "answer": "Narýsuji přeponu AB a nad ní Thaletovu kružnici (střed ve středu AB). Vrchol C s pravým úhlem leží na ní, podle dalšího údaje ho určím."
+    },
+    {
+      "type": "truefalse",
+      "question": "Trojúhelník se stranami 2 cm, 3 cm a 6 cm lze sestrojit.",
+      "answer": false,
+      "explanation": "2 + 3 = 5 není víc než 6. Kružnice by se neprotnuly."
+    },
+    {
+      "type": "choice",
+      "question": "Ze kterých tří úseček lze sestrojit trojúhelník?",
+      "options": [
+        "3 cm, 4 cm, 8 cm",
+        "4 cm, 5 cm, 7 cm",
+        "2 cm, 2 cm, 5 cm",
+        "1 cm, 2 cm, 3 cm"
+      ],
+      "answer": 1,
+      "explanation": "4 + 5 = 9 > 7. U ostatních není součet dvou kratších větší než nejdelší strana."
+    },
+    {
+      "type": "choice",
+      "question": "Body, které mají stejnou vzdálenost od obou ramen úhlu, leží na…",
+      "options": [
+        "ose úsečky",
+        "kružnici",
+        "ose úhlu",
+        "Thaletově kružnici"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "Přepona AB pravoúhlého trojúhelníku měří 8 cm. Poloměr Thaletovy kružnice nad AB v cm?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "AB je průměr Thaletovy kružnice, poloměr je polovina: 4 cm."
+    },
+    {
+      "type": "match",
+      "question": "Spoj podmínku s množinou bodů.",
+      "pairs": [
+        [
+          "3 cm od bodu S",
+          "kružnice k(S; 3 cm)"
+        ],
+        [
+          "stejně daleko od A a B",
+          "osa úsečky AB"
+        ],
+        [
+          "stejně daleko od ramen úhlu",
+          "osa úhlu"
+        ],
+        [
+          "vidí AB pod pravým úhlem",
+          "Thaletova kružnice"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou větou sestrojíš trojúhelník ze dvou stran a úhlu, který svírají?",
+      "options": [
+        "sss",
+        "usu",
+        "sus"
+      ],
+      "answer": 2,
+      "explanation": "sus = strana, úhel mezi nimi, strana."
+    },
+    {
+      "type": "truefalse",
+      "question": "Osa úsečky prochází jejím středem a je k ní kolmá.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Trojúhelník ABC rýsuješ ze tří stran. Bod C najdeš jako…",
+      "options": [
+        "střed úsečky AB",
+        "průsečík dvou kružnic",
+        "průsečík os úhlů",
+        "libovolný bod nad AB"
+      ],
+      "answer": 1,
+      "explanation": "Kružnice k(A; b) a k(B; a) ukážou body ve správné vzdálenosti od A i B."
     }
   ]
 }

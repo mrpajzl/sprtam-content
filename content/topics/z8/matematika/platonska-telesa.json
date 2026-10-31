@@ -695,6 +695,43 @@
       "type": "open",
       "question": "Co je dualita? Ukaž ji na krychli a osmistěnu.",
       "answer": "Duální těleso vznikne, když do středu každé stěny dáš bod a sousední body spojíš. Stěny a vrcholy si vymění počty: krychle má 6 stěn a 8 vrcholů, osmistěn 8 stěn a 6 vrcholů. Oba mají 12 hran."
+    },
+    {
+      "type": "input",
+      "question": "Kolik hran má osmistěn?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "8 · 3 = 24 stran, 24 : 2 = 12 hran.",
+      "hints": [
+        "Stran všech stěn je 8 · 3. Každá hrana patří dvěma stěnám."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Síť krychle s hranou 4 cm. Kolik cm² papíru zabere?",
+      "answers": [
+        "96"
+      ],
+      "explanation": "6 čtverců po 4 · 4 = 16 cm²: 6 · 16 = 96 cm²."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ze čtverců, kdy se v každém vrcholu stýkají čtyři, lze postavit pravidelný mnohostěn.",
+      "answer": false,
+      "explanation": "4 · 90° = 360°, čtverce leží v rovině jako dlažba."
+    },
+    {
+      "type": "choice",
+      "question": "Které těleso je duální k dvanáctistěnu?",
+      "options": [
+        "krychle",
+        "dvacetistěn",
+        "osmistěn",
+        "čtyřstěn"
+      ],
+      "answer": 1,
+      "explanation": "Dvanáctistěn má 12 stěn a 20 vrcholů, dvacetistěn 20 stěn a 12 vrcholů. Oba mají 30 hran."
     }
   ]
 }

@@ -342,6 +342,83 @@
       "type": "open",
       "question": "Proč je plášť válce obdélník?",
       "answer": "Když plášť rozříznu podél výšky a rozvinu, vznikne obdélník. Jedna strana je výška válce, druhá obvod podstavy."
+    },
+    {
+      "type": "input",
+      "question": "Válec r = 3 cm, v = 10 cm, π ≈ 3,14. Objem v cm³?",
+      "answers": [
+        "282,6"
+      ],
+      "explanation": "3,14 · 9 · 10 = 282,6"
+    },
+    {
+      "type": "input",
+      "question": "Válec d = 6 cm, v = 5 cm, π ≈ 3,14. Objem v cm³?",
+      "answers": [
+        "141,3"
+      ],
+      "explanation": "r = 3 cm. 3,14 · 9 · 5 = 141,3",
+      "hints": [
+        "Ve vzorci je poloměr: r = d : 2."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Válec r = 5 cm, v = 4 cm, π ≈ 3,14. Obsah pláště v cm²?",
+      "answers": [
+        "125,6"
+      ],
+      "explanation": "2 · 3,14 · 5 · 4 = 125,6"
+    },
+    {
+      "type": "input",
+      "question": "Válec r = 1 cm, v = 4 cm, π ≈ 3,14. Povrch v cm²?",
+      "answers": [
+        "31,4"
+      ],
+      "explanation": "Podstavy 2 · 3,14 · 1 = 6,28 cm², plášť 2 · 3,14 · 1 · 4 = 25,12 cm². Celkem 31,4 cm².",
+      "hints": [
+        "Povrch = 2 podstavy + plášť."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik cm³ je 2,5 litru?",
+      "answers": [
+        "2500",
+        "2 500"
+      ],
+      "explanation": "1 l = 1 000 cm³, 2,5 · 1 000 = 2 500."
+    },
+    {
+      "type": "choice",
+      "question": "Rozvinutý plášť válce r = 2 cm, v = 7 cm je obdélník se stranami (π ≈ 3,14)…",
+      "options": [
+        "4 cm a 7 cm",
+        "12,56 cm a 7 cm",
+        "2 cm a 7 cm",
+        "6,28 cm a 7 cm"
+      ],
+      "answer": 1,
+      "explanation": "Jedna strana je obvod podstavy 2 · 3,14 · 2 = 12,56 cm, druhá výška 7 cm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Objem válce spočítáš jako 2πr · v.",
+      "answer": false,
+      "explanation": "2πr · v je plášť. Objem je πr² · v."
+    },
+    {
+      "type": "choice",
+      "question": "Válec r = 10 cm, v = 20 cm. Kolik litrů se do něj vejde (π ≈ 3,14)?",
+      "options": [
+        "62,8 l",
+        "6,28 l",
+        "0,628 l",
+        "628 l"
+      ],
+      "answer": 1,
+      "explanation": "3,14 · 100 · 20 = 6 280 cm³ = 6,28 l."
     }
   ]
 }

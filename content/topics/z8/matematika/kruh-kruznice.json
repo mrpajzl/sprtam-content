@@ -354,6 +354,81 @@
       "type": "open",
       "question": "Jak spočítáš obsah kruhu, když znáš průměr?",
       "answer": "Průměr vydělím dvěma, dostanu poloměr. Ten umocním na druhou a vynásobím π: S = πr²."
+    },
+    {
+      "type": "input",
+      "question": "r = 3 cm, π ≈ 3,14. Obsah kruhu v cm²?",
+      "answers": [
+        "28,26"
+      ],
+      "explanation": "3,14 · 3 · 3 = 3,14 · 9 = 28,26"
+    },
+    {
+      "type": "input",
+      "question": "d = 6 cm, π ≈ 3,14. Délka kružnice v cm?",
+      "answers": [
+        "18,84"
+      ],
+      "explanation": "o = π · d = 3,14 · 6 = 18,84"
+    },
+    {
+      "type": "input",
+      "question": "d = 12 cm, π ≈ 3,14. Obsah kruhu v cm²?",
+      "answers": [
+        "113,04"
+      ],
+      "explanation": "r = 6 cm, S = 3,14 · 36 = 113,04",
+      "hints": [
+        "Nejdřív zjisti poloměr: r = d : 2."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik společných bodů má tečna s kružnicí?",
+      "options": [
+        "2",
+        "0",
+        "1",
+        "nekonečně mnoho"
+      ],
+      "answer": 2,
+      "explanation": "Tečna se kružnice jen dotkne v jednom bodě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vnější přímka má s kružnicí jeden společný bod.",
+      "answer": false,
+      "explanation": "Vnější přímka nemá s kružnicí žádný společný bod. Jeden má tečna."
+    },
+    {
+      "type": "truefalse",
+      "question": "Délka kružnice vydělená jejím průměrem dá u každé kružnice stejné číslo.",
+      "answer": true,
+      "explanation": "Je to číslo π ≈ 3,14."
+    },
+    {
+      "type": "input",
+      "question": "Kolo s poloměrem 30 cm se otočí 10krát (π ≈ 3,14). Kolik cm ujede?",
+      "answers": [
+        "1884",
+        "1 884"
+      ],
+      "explanation": "Jedna otáčka: 2 · 3,14 · 30 = 188,4 cm. Deset otáček: 1 884 cm.",
+      "hints": [
+        "Za jednu otáčku ujede délku kružnice 2 · π · r."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Délka kružnice je 31,4 cm (π ≈ 3,14). Jaký je její poloměr?",
+      "options": [
+        "10 cm",
+        "5 cm",
+        "15,7 cm",
+        "2,5 cm"
+      ],
+      "answer": 1,
+      "explanation": "o = 2 · 3,14 · r = 6,28 · r. 31,4 : 6,28 = 5. Průměr by byl 10 cm."
     }
   ]
 }
