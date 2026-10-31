@@ -365,6 +365,86 @@
       "type": "open",
       "question": "Jak najdeš koncovku?",
       "answer": "Slovo vyskloňuju nebo vyčasuju. Část na konci, která se mění, je koncovka."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je část „do“ ve slově „dopisy“?",
+      "options": [
+        "kořen",
+        "přípona",
+        "předpona",
+        "koncovka"
+      ],
+      "answer": 2,
+      "explanation": "Stojí před kořenem pis – je to předpona."
+    },
+    {
+      "type": "input",
+      "question": "Napiš příponu slova „lesník“.",
+      "answers": [
+        "ník"
+      ],
+      "hints": [
+        "Kořen je les (les, lesní)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš koncovku slova „lesního“.",
+      "answers": [
+        "ího"
+      ],
+      "hints": [
+        "Porovnej tvary lesní – lesního – lesnímu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Každé slovo má předponu.",
+      "answer": false,
+      "explanation": "Ne každé slovo má všechny díly – třeba rybník předponu nemá. Kořen ale má každé."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je příbuzné se slovem „zem“?",
+      "options": [
+        "zeď",
+        "zemský",
+        "zelený"
+      ],
+      "answer": 1,
+      "explanation": "Zemský souvisí se zemí významem. Zeď a zelený jen podobně znějí."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části slova „dopisy“.",
+      "items": [
+        "do",
+        "pis",
+        "y"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo s jeho kořenem.",
+      "pairs": [
+        [
+          "rybník",
+          "ryb"
+        ],
+        [
+          "lesník",
+          "les"
+        ],
+        [
+          "nádraží",
+          "draž"
+        ],
+        [
+          "skočit",
+          "skoč"
+        ]
+      ]
     }
   ]
 }

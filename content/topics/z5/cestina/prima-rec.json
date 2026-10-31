@@ -313,6 +313,80 @@
       "type": "open",
       "question": "Co se stane s tečkou na konci přímé řeči, když za ní následuje uvozovací věta?",
       "answer": "Tečka se změní na čárku, která se píše před koncovými uvozovkami: „Jdu ven,“ řekl Tom."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se v češtině píšou uvozovky?",
+      "options": [
+        "“Ahoj.„",
+        "„Ahoj.“",
+        "«Ahoj.»"
+      ],
+      "answer": 1,
+      "explanation": "Na začátku dole, na konci nahoře."
+    },
+    {
+      "type": "choice",
+      "question": "Kde je uvozovací věta? „Počkej,“ volal Honza, „jdu s tebou.“",
+      "options": [
+        "před přímou řečí",
+        "za přímou řečí",
+        "uprostřed přímé řeči"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správný zápis.",
+      "options": [
+        "„Ty jsi ale vyrostl!“ divila se teta.",
+        "„Ty jsi ale vyrostl!“ Divila se teta.",
+        "„Ty jsi ale vyrostl.“ divila se teta."
+      ],
+      "answer": 0,
+      "explanation": "Vykřičník zůstává a uvozovací věta za přímou řečí začíná malým písmenem."
+    },
+    {
+      "type": "input",
+      "question": "Najdi uvozovací větu: Děda se zeptal: „Kdo chce čaj?“",
+      "answers": [
+        "Děda se zeptal",
+        "děda se zeptal"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaké znaménko napíšeš na místo podtržítka? „Jdu spát_“ řekla Klára.",
+      "answers": [
+        ",",
+        "čárka",
+        "čárku",
+        "carka",
+        "carku"
+      ],
+      "explanation": "Za přímou řečí pokračuje uvozovací věta – tečka se mění na čárku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Uvozovací věta může stát i uprostřed přímé řeči.",
+      "answer": true,
+      "explanation": "„Pojď,“ řekla maminka, „bude oběd.“"
+    },
+    {
+      "type": "truefalse",
+      "question": "Když za přímou řečí následuje uvozovací věta, otazník se změní na čárku.",
+      "answer": false,
+      "explanation": "Otazník a vykřičník zůstávají: „Kde jsi?“ zeptal se táta."
+    },
+    {
+      "type": "order",
+      "question": "Slož větu s přímou řečí.",
+      "items": [
+        "Kamila řekla:",
+        "„Zítra",
+        "pojedeme",
+        "k moři.“"
+      ]
     }
   ]
 }

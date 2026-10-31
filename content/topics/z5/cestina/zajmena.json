@@ -336,6 +336,89 @@
       "type": "open",
       "question": "Vyjmenuj osobní zájmena.",
       "answer": "Já, ty, on, ona, ono, my, vy, oni, ony, ona."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké zájmeno je „tamten“?",
+      "options": [
+        "osobní",
+        "ukazovací",
+        "tázací"
+      ],
+      "answer": 1,
+      "explanation": "Ukazuje na něco (tamten dům) → ukazovací."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké zájmeno je „žádný“?",
+      "options": [
+        "přivlastňovací",
+        "tázací",
+        "záporné"
+      ],
+      "answer": 2,
+      "explanation": "Říká, že není ani jeden → záporné."
+    },
+    {
+      "type": "input",
+      "question": "Nahraď zájmenem: „Tomáš a Jirka“ hrají fotbal. → … hrají fotbal.",
+      "answers": [
+        "oni"
+      ],
+      "explanation": "Kluci – mužský rod, mn. č. → oni."
+    },
+    {
+      "type": "input",
+      "question": "Nahraď zájmenem: „Kotě“ spí v košíku. → … spí v košíku.",
+      "answers": [
+        "ono"
+      ],
+      "explanation": "Kotě je to – střední rod, j. č. → ono."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Náš“ je zájmeno přivlastňovací.",
+      "answer": true,
+      "explanation": "Náš pes – čí pes? → přivlastňovací."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Nikdo“ je zájmeno tázací.",
+      "answer": false,
+      "explanation": "Nikdo říká, že tam není ani jeden člověk → záporné."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zájmeno s druhem.",
+      "pairs": [
+        [
+          "ona",
+          "osobní"
+        ],
+        [
+          "svůj",
+          "přivlastňovací"
+        ],
+        [
+          "tento",
+          "ukazovací"
+        ],
+        [
+          "co",
+          "tázací"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Koho zastupuje „ho“ ve větě „Petr má psa a venčí ho.“?",
+      "options": [
+        "Petra",
+        "psa",
+        "nikoho"
+      ],
+      "answer": 1,
+      "explanation": "Petr venčí psa – „ho“ stojí místo slova psa."
     }
   ]
 }
