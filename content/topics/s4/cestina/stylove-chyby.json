@@ -369,6 +369,81 @@
       "type": "open",
       "question": "Jak se ve slohové práci vyhneš vatě?",
       "answer": "Po napsání text přečtu a škrtám slova bez obsahu (vlastně, jaksi, v podstatě), opakující se myšlenky a zbytečné úvody. Každá věta má přinést novou informaci."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém spojení je zbytečně zdvojený význam?",
+      "options": [
+        "sestoupit ze schodů",
+        "pomalu sestupovat",
+        "sestoupit dolů"
+      ],
+      "answer": 2,
+      "explanation": "Sestoupit už znamená jít dolů → sestoupit dolů je pleonasmus."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Hlavní protagonista“ je pleonasmus.",
+      "answer": true,
+      "explanation": "Protagonista znamená hlavní postava – slovo hlavní je navíc."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta neobsahuje vatu?",
+      "options": [
+        "Je to vlastně jaksi hotové.",
+        "Je to hotové.",
+        "Je to v podstatě jakoby hotové."
+      ],
+      "answer": 1,
+      "explanation": "Vlastně, jaksi, v podstatě, jakoby nenesou informaci – věta funguje i bez nich."
+    },
+    {
+      "type": "choice",
+      "question": "O jakou chybu jde: „Ten dům, v něm jsme bydleli, už nestojí.“?",
+      "options": [
+        "pleonasmus",
+        "anakolut",
+        "vata"
+      ],
+      "answer": 1,
+      "explanation": "Věta se vyšinula z vazby. Správně: Dům, ve kterém jsme bydleli, už nestojí."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Stoupat nahoru“ je spojení bez stylové chyby.",
+      "answer": false,
+      "explanation": "Stoupat už znamená jít nahoru → pleonasmus. Stačí stoupat."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje stylová chyba, kdy řekneš totéž dvakrát? (jedno slovo)",
+      "answers": [
+        "pleonasmus"
+      ],
+      "explanation": "Např. vrátit se zpět, opět znovu."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je kontaminace?",
+      "options": [
+        "Podílel se na projektu.",
+        "Zúčastnil se na projektu.",
+        "Zúčastnil se projektu."
+      ],
+      "answer": 1,
+      "explanation": "Vazba zúčastnit se čeho se zkřížila s podílet se na čem."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky revize textu podle postupu z výkladu.",
+      "items": [
+        "hledat zdvojený směr u sloves pohybu",
+        "zkontrolovat vazby sloves s předložkou",
+        "přečíst větu celou a ověřit, že konec sedí k začátku",
+        "škrtnout prázdná slova"
+      ],
+      "explanation": "Pleonasmus → kontaminace → anakolut → vata."
     }
   ]
 }

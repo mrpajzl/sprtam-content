@@ -339,6 +339,83 @@
       "type": "open",
       "question": "Popiš, jak postupuješ při řešení úloh k výchozímu textu.",
       "answer": "Nejdřív přečtu otázky, pak text. Ke každé otázce vyhledám v textu konkrétní místo, odliším fakta od domněnek a dám pozor na slova jako „vždy, pouze, prý“. Odpověď ověřím a teprve pak zaznačím."
+    },
+    {
+      "type": "choice",
+      "question": "Text: „Petr už třetí den nevyšel z pokoje.“ Co text říká přímo?",
+      "options": [
+        "Petr je nemocný.",
+        "Petr se učí na zkoušku.",
+        "Petr už několik dní nevyšel z pokoje."
+      ],
+      "answer": 2,
+      "explanation": "Nemoc ani učení text neuvádí – jsou to jen domněnky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Text: „Restaurace je otevřena pouze o víkendu.“ Z textu vyplývá, že ve středu je restaurace zavřená.",
+      "answer": true,
+      "explanation": "Pouze o víkendu → v pracovní dny zavřeno. Je to implicitní informace."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo „údajně“ v textu ukazuje, že jde o ověřený fakt.",
+      "answer": false,
+      "explanation": "Údajně (stejně jako prý) uvádí jen tvrzení, ne ověřený fakt."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď úseky tak, aby tvořily souvislý text.",
+      "items": [
+        "Včera v Brně začal festival vína.",
+        "Jeho první den navštívilo přes deset tisíc lidí.",
+        "Pořadatelé proto na příští rok plánují větší prostor."
+      ],
+      "explanation": "Jeho odkazuje na festival, proto navazuje na důvod – velkou návštěvnost."
+    },
+    {
+      "type": "choice",
+      "question": "Co je koheze textu?",
+      "options": [
+        "délka textu a počet odstavců",
+        "jazykové propojení vět – zájmena, spojky, opakovaná slova",
+        "hlavní myšlenka textu"
+      ],
+      "answer": 1,
+      "explanation": "Koheze drží věty pohromadě: Koupil psa. Ten…"
+    },
+    {
+      "type": "choice",
+      "question": "Text: „Všichni účastníci zájezdu dostali oběd zdarma.“ Co z textu vyplývá?",
+      "options": [
+        "Oběd byl chutný.",
+        "Žádný účastník zájezdu za oběd neplatil.",
+        "Zájezd byl drahý."
+      ],
+      "answer": 1,
+      "explanation": "Všichni dostali zdarma → nikdo neplatil. Chuť ani cena zájezdu v textu nejsou."
+    },
+    {
+      "type": "choice",
+      "question": "Co je uzavřená úloha?",
+      "options": [
+        "úloha, kde odpověď napíšeš sám",
+        "úloha bez bodového hodnocení",
+        "úloha s nabídkou odpovědí, ze kterých vybíráš"
+      ],
+      "answer": 2,
+      "explanation": "Např. výběr z možností A–D."
+    },
+    {
+      "type": "choice",
+      "question": "Který úsek patří v uspořádací úloze nejspíš na začátek?",
+      "options": [
+        "Proto se rozhodl přestěhovat.",
+        "Ten dům koupil už jeho děda.",
+        "Pan Novák bydlel celý život v Ostravě."
+      ],
+      "answer": 2,
+      "explanation": "Uvádí téma a nemá zájmeno ani spojku, která by odkazovala dozadu (proto, ten, jeho)."
     }
   ]
 }

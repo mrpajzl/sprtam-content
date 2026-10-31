@@ -387,7 +387,95 @@
     {
       "type": "open",
       "question": "Proč říkáme „očima“, ale „očí“ ve 2. pádě?",
-      "answer": "Oči, uši, ruce a nohy mají zbytky dvojného čísla (duálu). Ve 3. a 7. pádě mají koncovku -ma (očima, rukama), v ostatních pádech tvary množného čísla."
+      "answer": "Oči, uši, ruce a nohy mají zbytky dvojného čísla (duálu). V 7. pádě mají koncovku -ma (očima, rukama), v ostatních pádech jiné tvary (očí, očím, rukou)."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber spisovný tvar: „Chtěl ___ ti pomoct.“ (já)",
+      "options": [
+        "by jsem",
+        "bysem",
+        "bych"
+      ],
+      "answer": 2,
+      "explanation": "1. osoba jednotného čísla kondicionálu = bych."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: „Poslal dopis ___ kamarádům.“ (tři)",
+      "options": [
+        "třema",
+        "třem",
+        "třemi"
+      ],
+      "answer": 1,
+      "explanation": "Komu? → 3. pád → třem. Třemi je 7. pád."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Přišel s oběma rodiči.“ je spisovně.",
+      "answer": true,
+      "explanation": "S kým? → 7. pád číslovky oba = oběma."
+    },
+    {
+      "type": "input",
+      "question": "Napiš spisovně jedním slovem: „kdyby jste“ → …",
+      "answers": [
+        "kdybyste"
+      ],
+      "explanation": "2. osoba množného čísla = byste; s kdyby- se píše dohromady: kdybyste."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je chybný tvar číslovky?",
+      "options": [
+        "Pomohl jsem dvěma sousedům.",
+        "Šel jsem se dvěma psy.",
+        "Seděl mezi dvěmi sestrami.",
+        "Obě dívky přišly."
+      ],
+      "answer": 2,
+      "explanation": "Tvar dvěmi neexistuje. Správně: mezi dvěma sestrami."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: „Hledal ji ___ v davu.“ (oči)",
+      "options": [
+        "očama",
+        "očima",
+        "očimi"
+      ],
+      "answer": 1,
+      "explanation": "Párová část těla má v 7. pádě duálovou koncovku -ma: očima."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tvar „dvěma“ je spisovný jen v 7. pádě, ve 3. pádě se spisovně říká „dvoum“.",
+      "answer": false,
+      "explanation": "Dvěma platí pro 3. i 7. pád. Dvoum je nespisovné."
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslovku s jejím tvarem v 7. pádě (s kým? čím?).",
+      "pairs": [
+        [
+          "dva",
+          "dvěma"
+        ],
+        [
+          "tři",
+          "třemi"
+        ],
+        [
+          "čtyři",
+          "čtyřmi"
+        ],
+        [
+          "oba",
+          "oběma"
+        ]
+      ],
+      "explanation": "Dva a oba mají duálové -ma, tři a čtyři mají -mi."
     }
   ]
 }

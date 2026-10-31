@@ -441,6 +441,93 @@
       "type": "open",
       "question": "Podle čeho poznáš publicistický text?",
       "answer": "Je aktuální, má titulek, informuje širokou veřejnost a často ji i ovlivňuje. Používá publicismy, ustálená spojení a výrazné nadpisy; útvary jsou zpráva, komentář, fejeton, reportáž."
+    },
+    {
+      "type": "choice",
+      "question": "Do kterého stylu patří úvodník v novinách?",
+      "options": [
+        "administrativní",
+        "publicistický",
+        "odborný"
+      ],
+      "answer": 1,
+      "explanation": "Úvodník vychází v novinách a ovlivňuje názor čtenářů → publicistický styl."
+    },
+    {
+      "type": "choice",
+      "question": "Text začíná „Věc: Žádost o prodloužení termínu“ a končí „S pozdravem“. O jaký styl jde?",
+      "options": [
+        "administrativní",
+        "prostě sdělovací",
+        "řečnický"
+      ],
+      "answer": 0,
+      "explanation": "Ustálené formule (Věc:, S pozdravem) a úřední účel → administrativní styl."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přednáška patří do řečnického stylu.",
+      "answer": true,
+      "explanation": "Přednáška působí na posluchače – stejně jako projev nebo proslov."
+    },
+    {
+      "type": "truefalse",
+      "question": "Komentář na rozdíl od zprávy nehodnotí, jen informuje.",
+      "answer": false,
+      "explanation": "Je to naopak: zpráva jen informuje, komentář hodnotí."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém stylu najdeš nejvíc obraznosti (metafor, personifikací)?",
+      "options": [
+        "v odborném",
+        "v administrativním",
+        "v uměleckém"
+      ],
+      "answer": 2,
+      "explanation": "Obraznost slouží estetickému zážitku – to je funkce uměleckého stylu."
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá výraz typický pro novinový jazyk, např. „zelená pro reformu“? (jedno slovo)",
+      "answers": [
+        "publicismus"
+      ],
+      "explanation": "Publicismy jsou typickým znakem publicistického stylu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj jazykový znak se stylem.",
+      "pairs": [
+        [
+          "ustálené formule",
+          "administrativní"
+        ],
+        [
+          "oslovení posluchačů",
+          "řečnický"
+        ],
+        [
+          "hovorové výrazy",
+          "prostě sdělovací"
+        ],
+        [
+          "titulek a aktuálnost",
+          "publicistický"
+        ]
+      ],
+      "explanation": "Otisky prstů stylů – podle nich styl poznáš i z krátkého úryvku."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou funkci má hlavně reklama?",
+      "options": [
+        "poučit",
+        "přesvědčit",
+        "úředně sdělit"
+      ],
+      "answer": 1,
+      "explanation": "Reklama chce čtenáře přimět, aby něco koupil nebo udělal → přesvědčit."
     }
   ]
 }
