@@ -311,6 +311,79 @@
       "type": "open",
       "question": "Spoj dvě věty do souvětí: „Bylo teplo.“ „Šli jsme k vodě.“",
       "answer": "Například: Bylo teplo, a tak jsme šli k vodě. / Protože bylo teplo, šli jsme k vodě."
+    },
+    {
+      "type": "choice",
+      "question": "Která z vět je souvětí?",
+      "options": [
+        "Petr a Jana jdou do školy.",
+        "Petr jde do školy a Jana zůstala doma.",
+        "Ráno jsme jeli autobusem."
+      ],
+      "answer": 1,
+      "explanation": "Má dva přísudky: jde, zůstala. V první větě je jen jeden přísudek: jdou."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí „Když jsem přišel domů, máma vařila a táta četl noviny.“?",
+      "answers": [
+        "3",
+        "tři"
+      ],
+      "hints": [
+        "Najdi všechny přísudky – co se děje?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik přísudků má věta „Zítra budu psát úkol.“?",
+      "answers": [
+        "1",
+        "jeden"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ema čte a Petr kreslí.“ je věta jednoduchá.",
+      "answer": false,
+      "explanation": "Má dva přísudky: čte, kreslí. Je to souvětí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Před spojkou „protože“ píšeme v souvětí čárku.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kam patří čárka? „Vím že máš pravdu.“",
+      "options": [
+        "za „máš“",
+        "před „že“",
+        "nikam"
+      ],
+      "answer": 1,
+      "explanation": "Dvě věty: vím, máš pravdu. Před že píšeme čárku."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber větu se správnou čárkou.",
+      "options": [
+        "Když přijdeš půjdeme ven.",
+        "Když přijdeš, půjdeme ven.",
+        "Když, přijdeš půjdeme ven."
+      ],
+      "answer": 1,
+      "explanation": "Začíná-li souvětí spojkou když, čárka je mezi větami."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které řadě jsou samé spojky?",
+      "options": [
+        "pes, dům, strom",
+        "běží, píše, čte",
+        "ale, protože, že"
+      ],
+      "answer": 2
     }
   ]
 }

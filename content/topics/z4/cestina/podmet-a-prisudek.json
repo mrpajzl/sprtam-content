@@ -312,6 +312,87 @@
       "type": "open",
       "question": "Najdi podmět a přísudek ve větě „Babička peče koláče.“",
       "answer": "Podmět je babička, přísudek je peče."
+    },
+    {
+      "type": "choice",
+      "question": "Co je podmět ve větě „Na louce se pasou krávy.“?",
+      "options": [
+        "louce",
+        "pasou se",
+        "krávy"
+      ],
+      "answer": 2,
+      "explanation": "Kdo se pase? Krávy. Podmět nemusí být na začátku."
+    },
+    {
+      "type": "choice",
+      "question": "Co je přísudek ve větě „Malý Honza rychle běží domů.“?",
+      "options": [
+        "Honza",
+        "běží",
+        "rychle"
+      ],
+      "answer": 1,
+      "explanation": "Co Honza dělá? Běží. Malý a rychle jsou jen ozdoby."
+    },
+    {
+      "type": "input",
+      "question": "Najdi podmět: „Večer svítí na nebi hvězdy.“",
+      "answers": [
+        "hvězdy"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Najdi přísudek: „Naše třída jede na výlet.“",
+      "answers": [
+        "jede"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Podmět stojí vždy na začátku věty.",
+      "answer": false,
+      "explanation": "Podmět může být kdekoli. Zeptej se kdo? co?"
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Čteme pohádku.“ je podmět nevyjádřený.",
+      "answer": true,
+      "explanation": "Kdo čte? My – ve větě to není napsané, poznáme to z tvaru čteme."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je nevyjádřený podmět ve větě „Půjdeš s námi?“",
+      "options": [
+        "já",
+        "ty",
+        "on"
+      ],
+      "answer": 1,
+      "explanation": "Půjdeš – mluvím k tobě, podmět je ty."
+    },
+    {
+      "type": "match",
+      "question": "Spoj větu s jejím podmětem.",
+      "pairs": [
+        [
+          "Na stromě zpívá kos.",
+          "kos"
+        ],
+        [
+          "Do třídy vešel ředitel.",
+          "ředitel"
+        ],
+        [
+          "Jdeme ven.",
+          "(my)"
+        ],
+        [
+          "V noci houkala sova.",
+          "sova"
+        ]
+      ]
     }
   ]
 }

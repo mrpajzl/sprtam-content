@@ -362,6 +362,76 @@
       "type": "open",
       "question": "Jak rozlišíš vzor píseň a kost?",
       "answer": "Obě končí v 1. pádě souhláskou. Ve 2. pádě má píseň koncovku -e/-ě (bez písně), kost koncovku -i (bez kosti)."
+    },
+    {
+      "type": "choice",
+      "question": "Podle jakého vzoru skloňujeme „dlaň“?",
+      "options": [
+        "kost",
+        "píseň",
+        "žena"
+      ],
+      "answer": 1,
+      "explanation": "Bez dlaně – 2. pád na -ě → píseň."
+    },
+    {
+      "type": "choice",
+      "question": "Podle jakého vzoru skloňujeme „věc“?",
+      "options": [
+        "píseň",
+        "růže",
+        "kost"
+      ],
+      "answer": 2,
+      "explanation": "Bez věci – 2. pád na -i → kost."
+    },
+    {
+      "type": "input",
+      "question": "Napiš vzor pro slovo „lavice“.",
+      "answers": [
+        "růže",
+        "ruze"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš vzor pro slovo „lampa“.",
+      "answers": [
+        "žena",
+        "zena"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "„Kuchyně“ se skloňuje podle vzoru růže.",
+      "answer": true,
+      "explanation": "Ta kuchyně končí na -ě, stejně jako růže."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vzory píseň a kost rozlišíme podle 1. pádu.",
+      "answer": false,
+      "explanation": "V 1. pádě končí obě souhláskou. Rozliší je až 2. pád: bez písně × bez kosti."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se píše: „Na stole leží dvě knih_.“",
+      "options": [
+        "knihi",
+        "knihy"
+      ],
+      "answer": 1,
+      "explanation": "Kniha je podle vzoru žena: ženy → knihy (y)."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se píše: „Polévka je bez sol_.“",
+      "options": [
+        "soli",
+        "soly"
+      ],
+      "answer": 0,
+      "explanation": "Sůl – bez soli. Je podle vzoru kost: bez kosti (i)."
     }
   ]
 }

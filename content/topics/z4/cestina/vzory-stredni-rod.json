@@ -330,6 +330,78 @@
       "type": "open",
       "question": "Jak poznáš, jestli je slovo podle vzoru moře, nebo kuře?",
       "answer": "Řeknu 2. pád. Bez moře – zůstane -e. Bez kuřete – přibude -ete. Slova jako kotě, štěně jsou podle kuře."
+    },
+    {
+      "type": "choice",
+      "question": "Podle jakého vzoru skloňujeme „okno“?",
+      "options": [
+        "moře",
+        "město",
+        "stavení"
+      ],
+      "answer": 1,
+      "explanation": "Končí na -o → město."
+    },
+    {
+      "type": "choice",
+      "question": "Podle jakého vzoru skloňujeme „štěně“?",
+      "options": [
+        "moře",
+        "stavení",
+        "kuře"
+      ],
+      "answer": 2,
+      "explanation": "Bez štěněte – přibylo -et- → kuře."
+    },
+    {
+      "type": "choice",
+      "question": "Podle jakého vzoru skloňujeme „srdce“?",
+      "options": [
+        "moře",
+        "kuře",
+        "město"
+      ],
+      "answer": 0,
+      "explanation": "Bez srdce – nic nepřibylo → moře."
+    },
+    {
+      "type": "input",
+      "question": "Napiš vzor pro slovo „zelí“.",
+      "answers": [
+        "stavení",
+        "staveni"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš vzor pro slovo „hřiště“.",
+      "answers": [
+        "moře",
+        "more"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "„Kůzle“ se skloňuje podle vzoru kuře.",
+      "answer": true,
+      "explanation": "Bez kůzlete – přibylo -et-. Mláďata bývají podle vzoru kuře."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slova, která končí na -ě, jsou vždy podle vzoru kuře.",
+      "answer": false,
+      "explanation": "Třeba letiště je podle vzoru moře: bez letiště, nic nepřibylo."
+    },
+    {
+      "type": "choice",
+      "question": "Jak zní 2. pád slova „kotě“?",
+      "options": [
+        "bez kotě",
+        "bez koteta",
+        "bez kotěte"
+      ],
+      "answer": 2,
+      "explanation": "Jako bez kuřete – přibude -ete: bez kotěte."
     }
   ]
 }

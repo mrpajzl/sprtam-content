@@ -305,6 +305,91 @@
       "type": "open",
       "question": "Proč nám slova příbuzná pomáhají při psaní?",
       "answer": "Když nevím, jak se slovo píše, najdu příbuzné slovo. Třeba bydliště – bydlit, tak píšu y."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je kořen slov: hora, horský, horal?",
+      "options": [
+        "ho",
+        "hor",
+        "horsk"
+      ],
+      "answer": 1,
+      "explanation": "Všechna tři slova mají společnou část hor."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo NENÍ příbuzné ke slovu „les“?",
+      "options": [
+        "lesní",
+        "lesk",
+        "lesník"
+      ],
+      "answer": 1,
+      "explanation": "Lesk je třpyt. Má podobná písmena, ale s lesem nesouvisí."
+    },
+    {
+      "type": "input",
+      "question": "Napiš kořen slova „školní“.",
+      "answers": [
+        "škol"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "„Sníh“ a „sněhulák“ jsou slova příbuzná, i když se v kořeni mění samohláska.",
+      "answer": true,
+      "explanation": "Kořen sníh – sněh je pořád stejná část, jen se mění í na ě."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Kolo“ je příbuzné se slovem „škola“.",
+      "answer": false,
+      "explanation": "Kolo s učením nesouvisí. Slova jsou jen podobná."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které řadě jsou všechna slova příbuzná?",
+      "options": [
+        "hrad, hrách, hradba",
+        "dům, dým, dub",
+        "most, můstek, mostní"
+      ],
+      "answer": 2,
+      "explanation": "Most, můstek a mostní mají stejný kořen a souvisí s mostem."
+    },
+    {
+      "type": "choice",
+      "question": "Proč píšeme ve slově „bydliště“ y?",
+      "options": [
+        "patří do rodiny slova bydlit",
+        "po b se píše vždy y",
+        "je to vyjmenované slovo být"
+      ],
+      "answer": 0,
+      "explanation": "Bydliště je místo, kde bydlíme. Je příbuzné s bydlit, proto y."
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo s příbuzným slovem.",
+      "pairs": [
+        [
+          "kámen",
+          "kamínek"
+        ],
+        [
+          "chléb",
+          "chlebový"
+        ],
+        [
+          "kniha",
+          "knihovna"
+        ],
+        [
+          "mléko",
+          "mlékárna"
+        ]
+      ]
     }
   ]
 }

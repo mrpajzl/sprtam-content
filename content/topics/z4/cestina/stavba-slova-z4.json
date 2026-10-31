@@ -334,6 +334,74 @@
       "type": "open",
       "question": "Řekni tři slova s předponou „vy-“.",
       "answer": "Například vyletět, vyskočit, vyprávět."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je kořen ve slově „přeletět“?",
+      "options": [
+        "pře",
+        "let",
+        "ět"
+      ],
+      "answer": 1,
+      "explanation": "Příbuzná slova let, letadlo, letět mají společné let."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je příponová část ve slově „lesník“?",
+      "options": [
+        "les",
+        "esník",
+        "ník"
+      ],
+      "answer": 2,
+      "explanation": "Kořen je les (lesní, lesy). Co je za ním, je příponová část: ník."
+    },
+    {
+      "type": "input",
+      "question": "Napiš kořen slova „výlet“.",
+      "answers": [
+        "let"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš předponu slova „rozběhnout“.",
+      "answers": [
+        "roz"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kořen má každé slovo.",
+      "answer": true,
+      "explanation": "Předpona nebo příponová část chybět může, kořen ne."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo „dopis“ má příponovou část.",
+      "answer": false,
+      "explanation": "Dopis je do – pis. Za kořenem pis už nic není."
+    },
+    {
+      "type": "order",
+      "question": "Slož slovo „podzemní“.",
+      "items": [
+        "pod",
+        "zem",
+        "ní"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo nemá předponu?",
+      "options": [
+        "odnést",
+        "zapsat",
+        "běžec"
+      ],
+      "answer": 2,
+      "explanation": "Běžec začíná rovnou kořenem běh (běž). Odnést má od-, zapsat má za-."
     }
   ]
 }
