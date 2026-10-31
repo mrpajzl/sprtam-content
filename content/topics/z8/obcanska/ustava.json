@@ -356,6 +356,96 @@
       "type": "open",
       "question": "Co tvoří ústavní pořádek ČR?",
       "answer": "Hlavně Ústava ČR a Listina základních práv a svobod, dále další ústavní zákony."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá shromáždění zvolených zástupců, které schvaluje zákony?",
+      "options": [
+        "Ústavní soud",
+        "vláda",
+        "Parlament",
+        "Česká národní banka"
+      ],
+      "answer": 2,
+      "explanation": "Zákony schvaluje Parlament, který volí občané."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď předpisy od nejvyššího po nejnižší.",
+      "items": [
+        "Ústava",
+        "běžný zákon",
+        "nařízení vlády",
+        "vyhláška obce"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ústavní pořádek tvoří jen samotná Ústava ČR.",
+      "answer": false,
+      "explanation": "Patří do něj Ústava, Listina základních práv a svobod a další ústavní zákony."
+    },
+    {
+      "type": "choice",
+      "question": "Obec vydá vyhlášku, která odporuje zákonu. Co platí?",
+      "options": [
+        "vyhláška má přednost, protože je novější",
+        "vyhláška neplatí, nižší předpis nesmí odporovat vyššímu",
+        "platí obojí zároveň"
+      ],
+      "answer": 1,
+      "explanation": "Vyhláška obce je v pyramidě předpisů níž než zákon, a proto mu nesmí odporovat."
+    },
+    {
+      "type": "input",
+      "question": "Kolik poslanců ze 200 musí hlasovat pro ústavní zákon? (číslo)",
+      "answers": [
+        "120"
+      ],
+      "hints": [
+        "Potřeba jsou 3/5 všech poslanců.",
+        "200 : 5 = 40"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Na jak dlouho je jmenován soudce Ústavního soudu?",
+      "options": [
+        "na 4 roky",
+        "na 10 let",
+        "na 6 let",
+        "doživotně"
+      ],
+      "answer": 1,
+      "explanation": "Ústavní soud má 15 soudců, každý je jmenován na 10 let."
+    },
+    {
+      "type": "truefalse",
+      "question": "Lidská práva, například svoboda projevu, jsou vyjmenována v Listině základních práv a svobod.",
+      "answer": true,
+      "explanation": "Listina má stejnou sílu jako Ústava a patří do ústavního pořádku."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem a popis.",
+      "pairs": [
+        [
+          "preambule",
+          "slavnostní úvod Ústavy"
+        ],
+        [
+          "Ústavní soud",
+          "hlídá Ústavu"
+        ],
+        [
+          "ústavní zákon",
+          "stejná síla jako Ústava"
+        ],
+        [
+          "zákon",
+          "psané pravidlo státu"
+        ]
+      ]
     }
   ]
 }
