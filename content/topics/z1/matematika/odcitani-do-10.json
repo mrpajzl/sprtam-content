@@ -453,6 +453,67 @@
       "type": "open",
       "question": "Víš, že 6 + 3 = 9. Kolik je 9 − 3? Proč?",
       "answer": "9 − 3 = 6. Odčítání vrátí, co sčítání přidalo."
+    },
+    {
+      "type": "input",
+      "question": "6 − 2 =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Ze šesti přeškrtnu 2, zbudou 4."
+    },
+    {
+      "type": "input",
+      "question": "9 − 4 =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "8, 7, 6, 5. Kontrola: 5 + 4 = 9.",
+      "hints": [
+        "Stoupni si na 9 a skákej 4× doleva."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "8 − 5 =",
+      "options": [
+        "3",
+        "4",
+        "13"
+      ],
+      "answer": 0,
+      "explanation": "8 − 5 = 3. Kontrola: 3 + 5 = 8."
+    },
+    {
+      "type": "truefalse",
+      "question": "10 − 1 = 9",
+      "answer": true,
+      "explanation": "Jeden krok zpátky z 10 je 9."
+    },
+    {
+      "type": "truefalse",
+      "question": "7 − 3 je totéž jako 3 − 7.",
+      "answer": false,
+      "explanation": "U mínus čísla neprohodíš. 7 − 3 = 4, ale ze 3 kaštanů 7 neubereš."
+    },
+    {
+      "type": "input",
+      "question": "V košíku je 10 kaštanů. Cestou 2 vypadnou. Kolik jich doneseš domů?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "10 − 2 = 8."
+    },
+    {
+      "type": "choice",
+      "question": "Víš, že 7 − 3 = 4. Kterým příkladem to zkontroluješ?",
+      "options": [
+        "4 − 3 = 1",
+        "4 + 3 = 7",
+        "7 + 3 = 10"
+      ],
+      "answer": 1,
+      "explanation": "Co zůstalo + co se ubralo = celek: 4 + 3 = 7."
     }
   ]
 }

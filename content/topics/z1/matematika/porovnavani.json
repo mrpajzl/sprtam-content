@@ -544,6 +544,84 @@
       "type": "open",
       "question": "Máš 5 jablek a 5 hrušek. Čeho je víc?",
       "answer": "Ničeho, je jich stejně: 5 = 5."
+    },
+    {
+      "type": "choice",
+      "question": "3 ? 7",
+      "options": [
+        ">",
+        "<",
+        "="
+      ],
+      "answer": 1,
+      "explanation": "7 je větší, pusa se otevírá k 7: 3 < 7."
+    },
+    {
+      "type": "choice",
+      "question": "8 ? 4",
+      "options": [
+        "<",
+        "=",
+        ">"
+      ],
+      "answer": 2,
+      "explanation": "8 je větší, pusa se otevírá k 8: 8 > 4."
+    },
+    {
+      "type": "choice",
+      "question": "0 ? 0",
+      "options": [
+        "=",
+        "<",
+        ">"
+      ],
+      "answer": 0,
+      "explanation": "Na obou stranách je stejně: 0 = 0."
+    },
+    {
+      "type": "truefalse",
+      "question": "9 < 10",
+      "answer": true,
+      "explanation": "Devět je menší než deset."
+    },
+    {
+      "type": "truefalse",
+      "question": "5 = 6",
+      "answer": false,
+      "explanation": "5 a 6 nejsou stejná čísla: 5 < 6."
+    },
+    {
+      "type": "input",
+      "question": "U stolu jsou 4 děti a 6 židlí. Kolik židlí zbude prázdných?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Vzniknou 4 dvojice, 2 židle zbudou bez dítěte.",
+      "hints": [
+        "Ke každému dítěti dej jednu židli."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Máš 1 velký meloun a 1 malou jahodu. Čeho je víc?",
+      "options": [
+        "melounů",
+        "jahod",
+        "je jich stejně"
+      ],
+      "answer": 2,
+      "explanation": "Porovnáváme, kolik věcí je, ne jak jsou velké: 1 = 1."
+    },
+    {
+      "type": "choice",
+      "question": "Jak čteme 2 < 9?",
+      "options": [
+        "dvě je větší než devět",
+        "dvě je menší než devět",
+        "dvě se rovná devět"
+      ],
+      "answer": 1,
+      "explanation": "Znak < čteme „je menší než“."
     }
   ]
 }

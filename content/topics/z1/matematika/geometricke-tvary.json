@@ -574,6 +574,88 @@
       "type": "open",
       "question": "Najdi ve třídě něco kulatého a něco hranatého.",
       "answer": "Například hodiny jsou kulaté (kruh), lavice nebo tabule je hranatá (obdélník)."
+    },
+    {
+      "type": "input",
+      "question": "Kolik stran má trojúhelník?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Trojúhelník má 3 strany a 3 rohy."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar má kousek pizzy 🍕?",
+      "options": [
+        "kruh",
+        "trojúhelník",
+        "čtverec"
+      ],
+      "answer": 1,
+      "explanation": "Má 3 rohy, je to trojúhelník."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar má plechovka 🥫?",
+      "options": [
+        "krychle",
+        "koule",
+        "válec"
+      ],
+      "answer": 2,
+      "explanation": "Plechovka je těleso – válec."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar má pomeranč 🍊?",
+      "options": [
+        "koule",
+        "kruh",
+        "válec"
+      ],
+      "answer": 0,
+      "explanation": "Pomeranč je plný, vezmeš ho do ruky. Je to koule."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kruh je udělaný z oblé čáry.",
+      "answer": true,
+      "explanation": "Oblá čára jde dokola a nemá žádnou špičku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Míč je kruh.",
+      "answer": false,
+      "explanation": "Míč je těleso – koule. Kruh je jen plochý obrázek."
+    },
+    {
+      "type": "choice",
+      "question": "Obkreslíš na papír stěnu hrací kostky. Jaký tvar ti vyjde?",
+      "options": [
+        "trojúhelník",
+        "čtverec",
+        "kruh"
+      ],
+      "answer": 1,
+      "explanation": "Stěna krychle je čtverec."
+    },
+    {
+      "type": "match",
+      "question": "Spoj počet rohů s tvarem.",
+      "pairs": [
+        [
+          "0 rohů",
+          "kruh"
+        ],
+        [
+          "3 rohy",
+          "trojúhelník"
+        ],
+        [
+          "4 stejné strany",
+          "čtverec"
+        ]
+      ]
     }
   ]
 }

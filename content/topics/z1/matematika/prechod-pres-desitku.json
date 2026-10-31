@@ -563,6 +563,68 @@
       "type": "open",
       "question": "Vysvětli, jak spočítáš 13 − 5.",
       "answer": "Nejdřív uberu 3, abych byl na 10. Pak uberu zbylé 2. Vyjde 8."
+    },
+    {
+      "type": "input",
+      "question": "9 + 4 =",
+      "answers": [
+        "13"
+      ],
+      "explanation": "9 + 1 = 10, 10 + 3 = 13.",
+      "hints": [
+        "Do 10 chybí devítce 1.",
+        "Ze čtyřky zbydou 3."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "7 + 5 =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "7 + 3 = 10, 10 + 2 = 12.",
+      "hints": [
+        "Kolik chybí sedmičce do 10?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "13 − 5 =",
+      "answers": [
+        "8"
+      ],
+      "explanation": "13 − 3 = 10, 10 − 2 = 8.",
+      "hints": [
+        "Nejdřív uber 3, ať jsi na 10."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "16 − 9 =",
+      "options": [
+        "7",
+        "8",
+        "6"
+      ],
+      "answer": 0,
+      "explanation": "16 − 6 = 10, 10 − 3 = 7."
+    },
+    {
+      "type": "choice",
+      "question": "Jak rozložíš 6, když počítáš 8 + 6?",
+      "options": [
+        "3 + 3",
+        "2 + 4",
+        "1 + 5"
+      ],
+      "answer": 1,
+      "explanation": "Osmičce chybí do 10 dvojka: 8 + 2 = 10, pak 10 + 4 = 14."
+    },
+    {
+      "type": "truefalse",
+      "question": "9 + 4 = 12",
+      "answer": false,
+      "explanation": "1 vejce jde do krabičky, 3 leží vedle: 10 + 3 = 13."
     }
   ]
 }

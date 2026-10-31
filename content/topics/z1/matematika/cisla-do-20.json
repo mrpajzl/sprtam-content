@@ -557,6 +557,71 @@
       "type": "open",
       "question": "Počítej po dvou od 0 do 20.",
       "answer": "0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20."
+    },
+    {
+      "type": "input",
+      "question": "Kolik desítek má číslo 20?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "20 jsou dvě desítky a žádná jednotka."
+    },
+    {
+      "type": "input",
+      "question": "Které číslo je před 11?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "O dílek doleva od 11 je 10."
+    },
+    {
+      "type": "choice",
+      "question": "Jak čteme číslo 15?",
+      "options": [
+        "pětnáct",
+        "patnáct",
+        "padesát"
+      ],
+      "answer": 1,
+      "explanation": "Říkáme patnáct, ne pětnáct."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se píše číslo čtrnáct?",
+      "options": [
+        "41",
+        "104",
+        "14"
+      ],
+      "answer": 2,
+      "explanation": "Čtrnáct = deset a čtyři. Píšeme 1 a za ni 4: 14."
+    },
+    {
+      "type": "truefalse",
+      "question": "12 = 1 + 2",
+      "answer": false,
+      "explanation": "Jednička vpředu je celá desítka: 12 = 10 + 2."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od největšího.",
+      "items": [
+        "19",
+        "16",
+        "13",
+        "10"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo chybí? 12, 14, 16, __, 20",
+      "options": [
+        "17",
+        "18",
+        "19"
+      ],
+      "answer": 1,
+      "explanation": "Počítáme po dvou: 16, 18, 20."
     }
   ]
 }

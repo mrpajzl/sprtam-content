@@ -477,6 +477,73 @@
       "type": "open",
       "question": "Řekni všechny dvojice čísel, které dají dohromady 10.",
       "answer": "0 + 10, 1 + 9, 2 + 8, 3 + 7, 4 + 6, 5 + 5."
+    },
+    {
+      "type": "input",
+      "question": "3 + 4 =",
+      "answers": [
+        "7"
+      ],
+      "explanation": "Na 4 a dál: pět, šest, sedm.",
+      "hints": [
+        "Začni na 4 a počítej dál o 3."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "1 + 8 =",
+      "answers": [
+        "9"
+      ],
+      "explanation": "Na 8 a jeden skok dál: 9.",
+      "hints": [
+        "Začni na větším čísle, na 8."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "2 + 2 =",
+      "options": [
+        "3",
+        "4",
+        "22"
+      ],
+      "answer": 1,
+      "explanation": "Dva a dál: tři, čtyři."
+    },
+    {
+      "type": "truefalse",
+      "question": "4 + 3 = 6",
+      "answer": false,
+      "explanation": "4 + 3 = 7. Počítáš až od pětky: pět, šest, sedm."
+    },
+    {
+      "type": "truefalse",
+      "question": "2 + 6 je stejně jako 6 + 2.",
+      "answer": true,
+      "explanation": "U sčítání nezáleží na pořadí. Obojí je 8."
+    },
+    {
+      "type": "input",
+      "question": "Figurka stojí na políčku 4. Hodíš 5. Na kterém políčku bude?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "4 + 5 = 9.",
+      "hints": [
+        "Stoupni si na 4 a udělej 5 skoků doprava."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "V levé dlani je 6 kaštanů. Kolik jich musí být v pravé, aby jich bylo dohromady 10?",
+      "options": [
+        "3",
+        "5",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "6 + 4 = 10."
     }
   ]
 }

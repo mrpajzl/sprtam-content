@@ -446,6 +446,75 @@
       "type": "open",
       "question": "Vymysli příklad na odčítání, kde vyjde 12.",
       "answer": "Například 15 − 3 = 12 nebo 19 − 7 = 12."
+    },
+    {
+      "type": "input",
+      "question": "13 + 4 =",
+      "answers": [
+        "17"
+      ],
+      "explanation": "3 + 4 = 7, s desítkou 17.",
+      "hints": [
+        "Desítka stojí. Sečti jednotky: 3 + 4."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "16 + 3 =",
+      "answers": [
+        "19"
+      ],
+      "explanation": "6 + 3 = 9, s desítkou 19.",
+      "hints": [
+        "Malý příklad: 6 + 3."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "15 − 2 =",
+      "answers": [
+        "13"
+      ],
+      "explanation": "5 − 2 = 3, s desítkou 13.",
+      "hints": [
+        "Desítku nezahazuj."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "18 − 6 =",
+      "options": [
+        "2",
+        "12",
+        "14"
+      ],
+      "answer": 1,
+      "explanation": "8 − 6 = 2. Desítka zůstane: 12."
+    },
+    {
+      "type": "choice",
+      "question": "Který malý příklad ti pomůže spočítat 17 − 4?",
+      "options": [
+        "7 − 4",
+        "17 − 7",
+        "4 − 1"
+      ],
+      "answer": 0,
+      "explanation": "Zakryješ desítku a spočítáš 7 − 4 = 3. Pak přidáš desítku: 13."
+    },
+    {
+      "type": "truefalse",
+      "question": "12 + 7 = 19",
+      "answer": true,
+      "explanation": "2 + 7 = 9, s desítkou 19."
+    },
+    {
+      "type": "input",
+      "question": "V autobusu sedí 13 lidí. Přistoupí 4. Kolik lidí jede?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "Lidí přibude, sčítám: 13 + 4 = 17."
     }
   ]
 }

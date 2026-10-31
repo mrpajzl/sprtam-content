@@ -504,6 +504,75 @@
       "type": "open",
       "question": "Jak poznáš, jestli máš sčítat, nebo odčítat?",
       "answer": "Když něco přibývá (dostal, přišli), sčítám. Když ubývá (snědl, ztratil), odčítám."
+    },
+    {
+      "type": "input",
+      "question": "Ema má 5 kuliček. Od Toma dostane 3. Kolik má Ema kuliček?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "Dostala – přibývá: 5 + 3 = 8. Ema má 8 kuliček."
+    },
+    {
+      "type": "input",
+      "question": "Na krmítku sedí 6 sýkor. Přiletí další 4. Kolik sýkor je na krmítku?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Přiletěly – přibývá: 6 + 4 = 10.",
+      "hints": [
+        "Přiletí – přibývá, nebo ubývá?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na hřišti si hraje 13 dětí. 3 děti odejdou domů. Kolik dětí zůstane na hřišti?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Odešly – ubývá: 13 − 3 = 10.",
+      "hints": [
+        "Odejdou – je tu Mínus."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Pavel má 8 let. Sestra je o 3 roky mladší. Kolik let má sestra?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Mladší = míň let: 8 − 3 = 5.",
+      "hints": [
+        "Mladší znamená, že má míň let."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Babička natrhala 9 švestek a 6 hrušek. Kolik kusů ovoce natrhala dohromady?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "9 + 6: 9 + 1 = 10, 10 + 5 = 15.",
+      "hints": [
+        "Dohromady – sčítáš.",
+        "9 + 1 = 10, pak přidej zbytek."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kája rozbila 2 hrnky. Je to plus, nebo mínus?",
+      "options": [
+        "plus",
+        "mínus"
+      ],
+      "answer": 1,
+      "explanation": "Rozbilo se – hrnků ubývá, je tu Mínus."
+    },
+    {
+      "type": "truefalse",
+      "question": "Úloha „Ve třídě je 10 holek a 8 kluků. Kolik je dětí?“ je na odčítání.",
+      "answer": false,
+      "explanation": "Holky i kluci jsou děti, dáváme je dohromady: 10 + 8 = 18."
     }
   ]
 }
