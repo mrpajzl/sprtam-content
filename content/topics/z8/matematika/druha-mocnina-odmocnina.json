@@ -344,6 +344,87 @@
       "type": "open",
       "question": "Proč je (−6)² kladné?",
       "answer": "(−6)² = (−6) · (−6) a součin dvou záporných čísel je kladný, tedy 36."
+    },
+    {
+      "type": "input",
+      "question": "√121 =",
+      "answers": [
+        "11"
+      ],
+      "explanation": "11 · 11 = 121"
+    },
+    {
+      "type": "input",
+      "question": "√0,64 =",
+      "answers": [
+        "0,8"
+      ],
+      "explanation": "0,8 · 0,8 = 0,64. Číslo 0,64 má 2 desetinná místa, výsledek polovinu – 1.",
+      "hints": [
+        "Odmocni bez čárky: √64.",
+        "Výsledek má poloviční počet desetinných míst."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Mezi kterými celými čísly leží √90?",
+      "options": [
+        "8 a 9",
+        "9 a 10",
+        "44 a 46",
+        "10 a 11"
+      ],
+      "answer": 1,
+      "explanation": "9² = 81 a 10² = 100. 81 < 90 < 100, takže √90 leží mezi 9 a 10."
+    },
+    {
+      "type": "truefalse",
+      "question": "√(−9) = −3",
+      "answer": false,
+      "explanation": "(−3)² = 9, ne −9. Žádné číslo na druhou nedá záporné číslo, proto √(−9) mezi běžnými čísly neexistuje."
+    },
+    {
+      "type": "input",
+      "question": "Čtverec má stranu 12 cm. Obsah v cm² =",
+      "answers": [
+        "144"
+      ],
+      "explanation": "12² = 12 · 12 = 144"
+    },
+    {
+      "type": "input",
+      "question": "−3² + (−3)² =",
+      "answers": [
+        "0"
+      ],
+      "explanation": "−3² = −9 (umocňuje se jen 3), (−3)² = 9. −9 + 9 = 0.",
+      "hints": [
+        "Spočítej zvlášť −3² a (−3)².",
+        "Mínus bez závorky se neumocňuje."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj mocninu s hodnotou.",
+      "pairs": [
+        [
+          "40²",
+          "1 600"
+        ],
+        [
+          "0,9²",
+          "0,81"
+        ],
+        [
+          "7²",
+          "49"
+        ],
+        [
+          "0,1²",
+          "0,01"
+        ]
+      ],
+      "explanation": "U desítek se nuly zdvojí, u desetinných čísel se zdvojí počet desetinných míst."
     }
   ]
 }

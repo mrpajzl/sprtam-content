@@ -301,6 +301,87 @@
       "type": "open",
       "question": "Jak spočítáš odvěsnu, když znáš přeponu a druhou odvěsnu?",
       "answer": "Od druhé mocniny přepony odečtu druhou mocninu známé odvěsny a výsledek odmocním: a = √(c² − b²)."
+    },
+    {
+      "type": "input",
+      "question": "Odvěsny 8 cm a 15 cm. Přepona v cm?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "c² = 64 + 225 = 289, c = √289 = 17",
+      "hints": [
+        "Sečti druhé mocniny odvěsen.",
+        "Které číslo na druhou dá 289?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Přepona 25 cm, odvěsna 7 cm. Druhá odvěsna v cm?",
+      "answers": [
+        "24"
+      ],
+      "explanation": "625 − 49 = 576, √576 = 24",
+      "hints": [
+        "Hledáš odvěsnu, takže odčítáš: 25² − 7².",
+        "Které číslo na druhou dá 576?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Trojúhelník se stranami 6, 7, 9 je pravoúhlý.",
+      "answer": false,
+      "explanation": "6² + 7² = 36 + 49 = 85, ale 9² = 81. 85 ≠ 81."
+    },
+    {
+      "type": "truefalse",
+      "question": "Trojúhelník se stranami 20, 21, 29 je pravoúhlý.",
+      "answer": true,
+      "explanation": "20² + 21² = 400 + 441 = 841 = 29²"
+    },
+    {
+      "type": "choice",
+      "question": "V pravoúhlém trojúhelníku s přeponou c a odvěsnami a, b platí:",
+      "options": [
+        "a² = c² + b²",
+        "c = a + b",
+        "a² = c² − b²",
+        "c² = a² − b²"
+      ],
+      "answer": 2,
+      "explanation": "Odvěsna je kratší než přepona, proto se odčítá: a² = c² − b²."
+    },
+    {
+      "type": "choice",
+      "question": "Odvěsny jsou 1 m a 3 m. Přepona je přibližně:",
+      "options": [
+        "4 m",
+        "3,16 m",
+        "10 m",
+        "2,83 m"
+      ],
+      "answer": 1,
+      "explanation": "c² = 1 + 9 = 10, c = √10 ≐ 3,16 m."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu přepony, když a = 12 a b = 16.",
+      "items": [
+        "c² = 12² + 16²",
+        "c² = 144 + 256",
+        "c² = 400",
+        "c = 20"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Žebřík dlouhý 2,5 m stojí patou 1,5 m od zdi. Do jaké výšky sahá (v m)?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Žebřík je přepona: 2,5² − 1,5² = 6,25 − 2,25 = 4, √4 = 2.",
+      "hints": [
+        "Žebřík je přepona, hledáš odvěsnu."
+      ]
     }
   ]
 }

@@ -332,6 +332,78 @@
       "type": "open",
       "question": "Které členy výrazu můžeš sečíst?",
       "answer": "Jen členy se stejnou proměnnou ve stejné mocnině, např. 3x a 5x. Členy 3x a 5x² ani 3x a 5 sečíst nejde."
+    },
+    {
+      "type": "input",
+      "question": "Hodnota výrazu 3x − 4 pro x = 5:",
+      "answers": [
+        "11"
+      ],
+      "explanation": "3 · 5 − 4 = 15 − 4 = 11"
+    },
+    {
+      "type": "input",
+      "question": "Hodnota výrazu 2a + b pro a = 3 a b = −1:",
+      "answers": [
+        "5"
+      ],
+      "explanation": "2 · 3 + (−1) = 6 − 1 = 5"
+    },
+    {
+      "type": "choice",
+      "question": "4(x − 2) + x =",
+      "options": [
+        "5x − 2",
+        "5x − 8",
+        "4x − 8",
+        "5x + 8"
+      ],
+      "answer": 1,
+      "explanation": "Roznásob: 4x − 8 + x. Sečti x: 5x − 8."
+    },
+    {
+      "type": "choice",
+      "question": "−(2a + 3) =",
+      "options": [
+        "−2a + 3",
+        "2a − 3",
+        "−2a − 3",
+        "−2a"
+      ],
+      "answer": 2,
+      "explanation": "Mínus před závorkou otočí znaménka všech členů."
+    },
+    {
+      "type": "truefalse",
+      "question": "x + x = x²",
+      "answer": false,
+      "explanation": "x + x = 2x. Na druhou je x · x = x²."
+    },
+    {
+      "type": "input",
+      "question": "Kolik členů má výraz 3x − 2y + 7?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Členy jsou 3x, −2y a 7."
+    },
+    {
+      "type": "choice",
+      "question": "Výraz „o 5 menší než trojnásobek čísla n“:",
+      "options": [
+        "5 − 3n",
+        "3(n − 5)",
+        "3n − 5",
+        "n − 15"
+      ],
+      "answer": 2,
+      "explanation": "Trojnásobek n je 3n, o 5 menší: 3n − 5."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výraz 6 − 2(x + 1) se rovná 4 − 2x.",
+      "answer": true,
+      "explanation": "6 − 2x − 2 = 4 − 2x"
     }
   ]
 }

@@ -302,6 +302,69 @@
       "type": "open",
       "question": "Proč se dělá zkouška?",
       "answer": "Dosazením kořene do levé i pravé strany ověřím, že vyjdou stejně. Tak odhalím chybu ve výpočtu."
+    },
+    {
+      "type": "input",
+      "question": "Tři stejné sešity a pravítko za 15 Kč stojí dohromady 72 Kč. Kolik Kč stojí jeden sešit?",
+      "answers": [
+        "19"
+      ],
+      "explanation": "3x + 15 = 72 → 3x = 57 → x = 19",
+      "hints": [
+        "Cenu sešitu označ x a sestav rovnici.",
+        "3x + 15 = 72"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "10 − 3x = 16, x =",
+      "answers": [
+        "-2",
+        "−2"
+      ],
+      "explanation": "Odečti 10: −3x = 6. Vyděl −3: x = −2. Zkouška: 10 + 6 = 16 ✓"
+    },
+    {
+      "type": "input",
+      "question": "4x − 3 = x + 9, x =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Odečti x: 3x − 3 = 9. Přičti 3: 3x = 12. x = 4."
+    },
+    {
+      "type": "input",
+      "question": "2(x + 3) = 16, x =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "2x + 6 = 16 → 2x = 10 → x = 5"
+    },
+    {
+      "type": "input",
+      "question": "x/5 + 1 = 3, x =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Odečti 1: x/5 = 2. Vynásob 5: x = 10."
+    },
+    {
+      "type": "truefalse",
+      "question": "x = 2 je řešením rovnice 3x + 1 = 8.",
+      "answer": false,
+      "explanation": "Zkouška: 3 · 2 + 1 = 7, ne 8."
+    },
+    {
+      "type": "choice",
+      "question": "Rovnice 3(x + 2) = 3x + 6 má:",
+      "options": [
+        "jedno řešení x = 0",
+        "žádné řešení",
+        "řešením je každé číslo",
+        "jedno řešení x = 2"
+      ],
+      "answer": 2,
+      "explanation": "Po roznásobení 3x + 6 = 3x + 6, odečtením 3x vyjde 6 = 6. Platí vždy."
     }
   ]
 }

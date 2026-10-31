@@ -385,6 +385,84 @@
       "type": "open",
       "question": "Jak zapíšeš číslo 2 506 pomocí mocnin deseti?",
       "answer": "2 506 = 2 · 10³ + 5 · 10² + 0 · 10 + 6."
+    },
+    {
+      "type": "input",
+      "question": "2⁷ =",
+      "answers": [
+        "128"
+      ],
+      "explanation": "2 · 2 · 2 · 2 · 2 · 2 · 2 = 128"
+    },
+    {
+      "type": "input",
+      "question": "(−1)⁵ =",
+      "answers": [
+        "-1",
+        "−1"
+      ],
+      "explanation": "Pět mínusů je lichý počet, výsledek je záporný: −1."
+    },
+    {
+      "type": "choice",
+      "question": "x⁹ : x³ =",
+      "options": [
+        "x³",
+        "x⁶",
+        "x¹²",
+        "x²⁷"
+      ],
+      "answer": 1,
+      "explanation": "Při dělení se exponenty odčítají: 9 − 3 = 6."
+    },
+    {
+      "type": "choice",
+      "question": "(a⁴)³ =",
+      "options": [
+        "a⁷",
+        "a⁶⁴",
+        "a¹²",
+        "3a⁴"
+      ],
+      "answer": 2,
+      "explanation": "Mocnina mocniny: exponenty se násobí, 4 · 3 = 12."
+    },
+    {
+      "type": "truefalse",
+      "question": "2³ · 3² se dá zapsat jako 6⁵.",
+      "answer": false,
+      "explanation": "Pravidla platí jen pro stejný základ. 2³ · 3² = 8 · 9 = 72, kdežto 6⁵ = 7 776."
+    },
+    {
+      "type": "input",
+      "question": "3² · 3 =",
+      "answers": [
+        "27"
+      ],
+      "explanation": "3 = 3¹, takže 3² · 3¹ = 3³ = 27.",
+      "hints": [
+        "Samotná 3 je 3¹."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo je 4 · 10³ + 7 · 10 + 2?",
+      "options": [
+        "472",
+        "4 702",
+        "4 072",
+        "40 072"
+      ],
+      "answer": 2,
+      "explanation": "4 000 + 70 + 2 = 4 072. Stovky chybí, proto je na jejich místě 0."
+    },
+    {
+      "type": "input",
+      "question": "0,2³ =",
+      "answers": [
+        "0,008"
+      ],
+      "explanation": "2 · 2 · 2 = 8 a tři desetinná místa: 0,008."
     }
   ]
 }

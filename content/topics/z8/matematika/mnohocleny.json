@@ -386,6 +386,87 @@
       "type": "open",
       "question": "Napiš a vysvětli vzorec pro (a − b)².",
       "answer": "(a − b)² = a² − 2ab + b². Je to (a − b)(a − b): a · a, dvakrát −ab a (−b)(−b) = b²."
+    },
+    {
+      "type": "choice",
+      "question": "(x + 5)² =",
+      "options": [
+        "x² + 25",
+        "x² + 10x + 25",
+        "x² + 5x + 25",
+        "2x + 10"
+      ],
+      "answer": 1,
+      "explanation": "(a + b)² = a² + 2ab + b²: x² + 2 · 5 · x + 25."
+    },
+    {
+      "type": "choice",
+      "question": "(2a + 1)² =",
+      "options": [
+        "4a² + 1",
+        "2a² + 4a + 1",
+        "4a² + 4a + 1",
+        "4a² + 2a + 1"
+      ],
+      "answer": 2,
+      "explanation": "(2a)² = 4a², 2 · 2a · 1 = 4a, 1² = 1.",
+      "hints": [
+        "Celý první člen je 2a, umocni ho celý."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "3a(a + 2) =",
+      "options": [
+        "3a² + 2a",
+        "3a² + 6a",
+        "3a² + 6",
+        "3a + 6"
+      ],
+      "answer": 1,
+      "explanation": "3a · a = 3a², 3a · 2 = 6a."
+    },
+    {
+      "type": "choice",
+      "question": "(x + 1)(x − 3) =",
+      "options": [
+        "x² + 2x − 3",
+        "x² − 3",
+        "x² − 4x − 3",
+        "x² − 2x − 3"
+      ],
+      "answer": 3,
+      "explanation": "x² − 3x + x − 3 = x² − 2x − 3"
+    },
+    {
+      "type": "choice",
+      "question": "Vytkni: 10a − 15 =",
+      "options": [
+        "5(2a − 15)",
+        "5(2a − 3)",
+        "10(a − 15)",
+        "5(a − 3)"
+      ],
+      "answer": 1,
+      "explanation": "Oba členy dělí 5: 10a = 5 · 2a, 15 = 5 · 3."
+    },
+    {
+      "type": "input",
+      "question": "Spočítej chytře: 31 · 29 =",
+      "answers": [
+        "899"
+      ],
+      "explanation": "(30 + 1)(30 − 1) = 30² − 1² = 900 − 1 = 899",
+      "hints": [
+        "31 = 30 + 1 a 29 = 30 − 1.",
+        "Použij vzorec (a + b)(a − b) = a² − b²."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "3x² a 3x jsou podobné členy.",
+      "answer": false,
+      "explanation": "Mají stejnou proměnnou, ale jinou mocninu, proto se sečíst nedají."
     }
   ]
 }
