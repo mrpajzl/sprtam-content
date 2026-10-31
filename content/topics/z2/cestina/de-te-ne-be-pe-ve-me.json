@@ -387,6 +387,82 @@
       "type": "open",
       "question": "Řekni tři slova s ě.",
       "answer": "Například děti, město, věž, pět."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správně napsané slovo.",
+      "options": [
+        "běhat",
+        "bjehat",
+        "behat"
+      ],
+      "answer": 0,
+      "explanation": "Slyšíš „bje“, píšeš bě."
+    },
+    {
+      "type": "choice",
+      "question": "Jak napíšeš, co slyšíš jako „ňeco“?",
+      "options": [
+        "ňeco",
+        "neco",
+        "něco"
+      ],
+      "answer": 2,
+      "explanation": "Ňe píšeme ně: něco."
+    },
+    {
+      "type": "input",
+      "question": "Doplň e/ě: m_síc",
+      "answers": [
+        "ě"
+      ],
+      "explanation": "Slyšíš „mňe“ – píšeš mě: měsíc."
+    },
+    {
+      "type": "input",
+      "question": "Doplň e/ě: s_dm",
+      "answers": [
+        "e"
+      ],
+      "explanation": "Před e je s. S není mezi sedmi kamarády – píšeme sedm."
+    },
+    {
+      "type": "input",
+      "question": "Doplň e/ě: d_da",
+      "answers": [
+        "ě"
+      ],
+      "explanation": "Slyšíš „ďeda“ – píšeš dě: děda."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově „sešit“ píšeme ě.",
+      "answer": false,
+      "explanation": "Po s nikdy ě nepíšeme. Píšeme sešit."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově „pěna“ píšeme ě.",
+      "answer": true,
+      "explanation": "Slyšíš „pjena“ – píšeš pě."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zvuk se zápisem.",
+      "pairs": [
+        [
+          "pje",
+          "pě"
+        ],
+        [
+          "vje",
+          "vě"
+        ],
+        [
+          "mňe",
+          "mě"
+        ]
+      ]
     }
   ]
 }

@@ -289,6 +289,83 @@
       "type": "open",
       "question": "Řekni větu o třech slovech.",
       "answer": "Například: Kočka pije mléko."
+    },
+    {
+      "type": "input",
+      "question": "Kolik slov má věta „Děti si hrají na hřišti.“?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Děti / si / hrají / na / hřišti – 5 slov. I malá slova „si“ a „na“ se počítají.",
+      "hints": [
+        "Slova spočítáš podle mezer."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik slabik má slovo „čokoláda“?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "čo-ko-lá-da – 4 tlesknutí, 4 slabiky.",
+      "hints": [
+        "Vytleskej slovo pomalu."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik hlásek má slovo „chleba“?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "ch-l-e-b-a – 5 hlásek. Ch je jedna hláska.",
+      "hints": [
+        "Pozor na ch – kolik je to zvuků?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak rozdělíš na slabiky slovo „kolotoč“?",
+      "options": [
+        "kol-ot-oč",
+        "ko-lo-toč",
+        "ko-lot-oč"
+      ],
+      "answer": 1,
+      "explanation": "ko-lo-toč – 3 tlesknutí."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo má jen jednu slabiku?",
+      "options": [
+        "voda",
+        "sešit",
+        "míč"
+      ],
+      "answer": 2,
+      "explanation": "Míč řekneš na jedno tlesknutí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo „dům“ má dvě slabiky.",
+      "answer": false,
+      "explanation": "Dům řekneš na jedno tlesknutí – má jednu slabiku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta začíná velkým písmenem.",
+      "answer": true,
+      "explanation": "Věta začíná velkým písmenem a na konci má znaménko, třeba tečku."
+    },
+    {
+      "type": "order",
+      "question": "Slož větu. Seřaď slova.",
+      "items": [
+        "Tatínek",
+        "čte",
+        "noviny."
+      ],
+      "explanation": "Věta začíná velkým písmenem a končí tečkou: Tatínek čte noviny."
     }
   ]
 }

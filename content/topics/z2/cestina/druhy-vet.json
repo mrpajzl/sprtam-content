@@ -336,6 +336,80 @@
       "type": "open",
       "question": "Udělej z věty „Pes štěká.“ otázku.",
       "answer": "Štěká pes? (nebo: Proč pes štěká?)"
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je věta „Zavři okno!“",
+      "options": [
+        "přací",
+        "tázací",
+        "rozkazovací"
+      ],
+      "answer": 2,
+      "explanation": "Přikazuje, aby někdo něco udělal."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je věta „Kéž by bylo léto!“",
+      "options": [
+        "rozkazovací",
+        "přací",
+        "oznamovací"
+      ],
+      "answer": 1,
+      "explanation": "Začíná slovem kéž a vyjadřuje přání."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je věta „Venku prší.“",
+      "options": [
+        "tázací",
+        "oznamovací",
+        "přací"
+      ],
+      "answer": 1,
+      "explanation": "Jen oznamuje, co se děje. Končí tečkou."
+    },
+    {
+      "type": "input",
+      "question": "Jaké znaménko patří na konec oznamovací věty: „Pes spí“",
+      "answers": [
+        ".",
+        "tečka",
+        "tecka"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Přací věta často začíná slovem „ať“ nebo „kéž“.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozkazovací věta se na něco ptá.",
+      "answer": false,
+      "explanation": "Rozkazovací věta přikazuje nebo prosí. Ptá se věta tázací."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je rozkazovací?",
+      "options": [
+        "Máma vaří.",
+        "Pomoz mámě!",
+        "Vaří máma?"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá hlas na konci tázací věty?",
+      "options": [
+        "klesne dolů",
+        "vyskočí nahoru",
+        "zůstane stejný"
+      ],
+      "answer": 1,
+      "explanation": "Když se ptáš, hlas na konci zvedneš: Pes spí?"
     }
   ]
 }

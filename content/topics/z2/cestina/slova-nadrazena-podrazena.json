@@ -333,6 +333,89 @@
       "type": "open",
       "question": "Řekni tři slova podřazená ke slovu „hračky“.",
       "answer": "Například panenka, míč, autíčko."
+    },
+    {
+      "type": "input",
+      "question": "Nadřazené slovo k: mrkev, okurka, cibule",
+      "answers": [
+        "zelenina"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Nadřazené slovo k: leden, únor, březen",
+      "answers": [
+        "měsíce",
+        "měsíc",
+        "měsíce v roce",
+        "měsíce roku"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo nepatří do skupiny zvířata?",
+      "options": [
+        "kůň",
+        "tulipán",
+        "kočka"
+      ],
+      "answer": 1,
+      "explanation": "Tulipán je květina, ne zvíře."
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je nadřazené ke slovům: kladivo, pila, šroubovák?",
+      "options": [
+        "dílna",
+        "nářadí",
+        "kuchyně"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je podřazené slovu „ptáci“?",
+      "options": [
+        "moucha",
+        "vrabec",
+        "kapr"
+      ],
+      "answer": 1,
+      "explanation": "Vrabec je pták. Moucha je hmyz, kapr ryba."
+    },
+    {
+      "type": "truefalse",
+      "question": "Jablko a hruška jsou slova souřadná.",
+      "answer": true,
+      "explanation": "Obě patří do stejné krabice – ovoce."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slova „ovoce“ a „jablko“ jsou souřadná.",
+      "answer": false,
+      "explanation": "Ovoce je nadřazené slovo, jablko podřazené. Nejsou na stejné úrovni."
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo se skupinou.",
+      "pairs": [
+        [
+          "tričko",
+          "oblečení"
+        ],
+        [
+          "mrkev",
+          "zelenina"
+        ],
+        [
+          "židle",
+          "nábytek"
+        ],
+        [
+          "banán",
+          "ovoce"
+        ]
+      ]
     }
   ]
 }
