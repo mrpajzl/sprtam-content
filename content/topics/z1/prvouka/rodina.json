@@ -340,6 +340,88 @@
       "type": "open",
       "question": "Jak pomáháš doma?",
       "answer": "Uklízím si hračky, prostírám stůl nebo zalévám květiny."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo jsou moji rodiče?",
+      "options": [
+        "bratr a sestra",
+        "máma a táta",
+        "babička a děda"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Kolik mám babiček?",
+      "options": [
+        "jednu",
+        "tři",
+        "dvě"
+      ],
+      "answer": 2,
+      "explanation": "Jednu od mámy a jednu od táty."
+    },
+    {
+      "type": "input",
+      "question": "Tatínek mého tatínka je můj ………",
+      "answers": [
+        "dědeček",
+        "děda"
+      ],
+      "explanation": "Rodiče mých rodičů jsou prarodiče."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bratr a sestra jsou sourozenci.",
+      "answer": true,
+      "explanation": "Sourozenci jsou děti, které mají stejné rodiče."
+    },
+    {
+      "type": "truefalse",
+      "question": "Babička je jen maminka mé mámy.",
+      "answer": false,
+      "explanation": "Babička je i maminka mého táty."
+    },
+    {
+      "type": "choice",
+      "question": "Máma vaří večeři. Jak jí můžeš pomoct?",
+      "options": [
+        "prostřu stůl",
+        "pustím si televizi",
+        "rozházím hračky"
+      ],
+      "answer": 0,
+      "explanation": "Když prostřu stůl, je večeře hotová dřív."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo je v rodině obvykle nejstarší?",
+      "options": [
+        "maminka",
+        "já",
+        "dědeček"
+      ],
+      "answer": 2,
+      "explanation": "Nejstarší jsou babička a dědeček."
+    },
+    {
+      "type": "match",
+      "question": "Spoj, kdo je kdo.",
+      "pairs": [
+        [
+          "maminka mé mámy",
+          "babička"
+        ],
+        [
+          "kluk se stejnými rodiči",
+          "bratr"
+        ],
+        [
+          "máma a táta",
+          "rodiče"
+        ]
+      ]
     }
   ]
 }

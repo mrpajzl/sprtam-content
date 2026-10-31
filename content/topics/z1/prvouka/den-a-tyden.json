@@ -347,6 +347,79 @@
       "type": "open",
       "question": "Vyjmenuj dny v týdnu.",
       "answer": "Pondělí, úterý, středa, čtvrtek, pátek, sobota, neděle."
+    },
+    {
+      "type": "choice",
+      "question": "Kdy jsme obvykle ve škole?",
+      "options": [
+        "v noci",
+        "dopoledne",
+        "večer"
+      ],
+      "answer": 1,
+      "explanation": "Dopoledne je čas mezi ránem a polednem, jsme ve škole."
+    },
+    {
+      "type": "choice",
+      "question": "Který den je po neděli?",
+      "options": [
+        "sobota",
+        "úterý",
+        "pondělí"
+      ],
+      "answer": 2,
+      "explanation": "Neděle je poslední den týdne. Pak začíná nový týden pondělím."
+    },
+    {
+      "type": "input",
+      "question": "Dnes je středa. Jaký den bude zítra?",
+      "answers": [
+        "čtvrtek",
+        "ctvrtek"
+      ],
+      "explanation": "Po středě jde čtvrtek."
+    },
+    {
+      "type": "input",
+      "question": "Dnes je středa. Jaký den byl včera?",
+      "answers": [
+        "úterý",
+        "utery"
+      ],
+      "explanation": "Před středou je úterý."
+    },
+    {
+      "type": "truefalse",
+      "question": "Velká ručička ukazuje hodiny.",
+      "answer": false,
+      "explanation": "Hodiny ukazuje malá ručička, velká ukazuje minuty."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pátek je pátý den v týdnu.",
+      "answer": true,
+      "explanation": "Pondělí, úterý, středa, čtvrtek, pátek."
+    },
+    {
+      "type": "choice",
+      "question": "Malá ručička je na 8, velká na 12. Kolik je hodin?",
+      "options": [
+        "12 hodin",
+        "8 hodin",
+        "4 hodiny"
+      ],
+      "answer": 1,
+      "explanation": "Velká na 12 znamená celou hodinu. Malá na 8: 8 hodin."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď dny od pátku.",
+      "items": [
+        "pátek",
+        "sobota",
+        "neděle",
+        "pondělí"
+      ]
     }
   ]
 }

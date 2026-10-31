@@ -330,6 +330,87 @@
       "type": "open",
       "question": "Jmenuj tři domácí zvířata a jejich mláďata.",
       "answer": "Například kráva – tele, slepice – kuře, pes – štěně."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje mládě prasete?",
+      "options": [
+        "tele",
+        "kotě",
+        "sele"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Čí mládě je hříbě?",
+      "options": [
+        "koně",
+        "krávy",
+        "psa"
+      ],
+      "answer": 0,
+      "explanation": "Hříbě je malý koníček."
+    },
+    {
+      "type": "input",
+      "question": "Mládě slepice je ………",
+      "answers": [
+        "kuře",
+        "kuřátko"
+      ],
+      "explanation": "Kuře se vylíhne z vajíčka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mládě krávy je kuře.",
+      "answer": false,
+      "explanation": "Mládě krávy je tele. Kuře je mládě slepice."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ježek, který přijde na zahradu, je domácí zvíře.",
+      "answer": false,
+      "explanation": "Ježka nikdo nechová, sám si hledá potravu. Je volně žijící."
+    },
+    {
+      "type": "choice",
+      "question": "Které zvíře je domácí?",
+      "options": [
+        "veverka",
+        "koza",
+        "liška"
+      ],
+      "answer": 1,
+      "explanation": "Kozu chová člověk na statku."
+    },
+    {
+      "type": "choice",
+      "question": "Proč slepice sedí na vejcích?",
+      "options": [
+        "aby byla vejce v teple",
+        "aby se schovala",
+        "protože je unavená"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj zvíře a to, co nám dává.",
+      "pairs": [
+        [
+          "kráva",
+          "mléko"
+        ],
+        [
+          "slepice",
+          "vejce"
+        ],
+        [
+          "ovce",
+          "vlna"
+        ]
+      ]
     }
   ]
 }

@@ -314,6 +314,86 @@
       "type": "open",
       "question": "Co dělají oči a uši?",
       "answer": "Očima vidím, ušima slyším."
+    },
+    {
+      "type": "choice",
+      "question": "Čím poznám, jak co chutná?",
+      "options": [
+        "ušima",
+        "jazykem",
+        "očima"
+      ],
+      "answer": 1,
+      "explanation": "Chuť poznám jazykem."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým smyslem poznám, že polštář je měkký?",
+      "options": [
+        "čichem",
+        "zrakem",
+        "hmatem"
+      ],
+      "answer": 2,
+      "explanation": "Dotek cítím kůží, hlavně prsty – to je hmat."
+    },
+    {
+      "type": "choice",
+      "question": "Co spojuje hlavu s trupem?",
+      "options": [
+        "krk",
+        "břicho",
+        "rameno"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Kolik prstů mám na obou rukou dohromady?",
+      "answers": [
+        "10",
+        "deset"
+      ],
+      "explanation": "5 + 5 = 10."
+    },
+    {
+      "type": "truefalse",
+      "question": "Břicho je část trupu.",
+      "answer": true,
+      "explanation": "Trup je střed těla. Vpředu má hrudník a břicho, vzadu záda."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ruce a nohy jsou končetiny.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Vůni květiny cítím očima.",
+      "answer": false,
+      "explanation": "Vůni cítím nosem, to je čich."
+    },
+    {
+      "type": "match",
+      "question": "Spoj smysl a část těla.",
+      "pairs": [
+        [
+          "zrak",
+          "oči"
+        ],
+        [
+          "sluch",
+          "uši"
+        ],
+        [
+          "čich",
+          "nos"
+        ],
+        [
+          "hmat",
+          "kůže"
+        ]
+      ]
     }
   ]
 }
