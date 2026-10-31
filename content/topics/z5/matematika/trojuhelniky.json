@@ -332,6 +332,67 @@
       "type": "open",
       "question": "Popiš, jak sestrojíš trojúhelník se stranami 6 cm, 5 cm a 4 cm.",
       "answer": "Narýsuji AB = 6 cm. Z A kružnici s poloměrem 4 cm, z B s poloměrem 5 cm. Průsečík je C, spojím body."
+    },
+    {
+      "type": "choice",
+      "question": "Trojúhelník má strany 3, 5, 6 cm. Je…",
+      "options": [
+        "rovnostranný",
+        "rovnoramenný",
+        "různostranný"
+      ],
+      "answer": 2,
+      "explanation": "Každá strana je jiná."
+    },
+    {
+      "type": "choice",
+      "question": "Trojúhelník má jeden úhel 90°. Je…",
+      "options": [
+        "ostroúhlý",
+        "pravoúhlý",
+        "tupoúhlý"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Ze stran 5 cm, 6 cm a 10 cm lze sestrojit trojúhelník.",
+      "answer": true,
+      "explanation": "5 + 6 = 11 > 10."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ze stran 1 cm, 4 cm a 6 cm lze sestrojit trojúhelník.",
+      "answer": false,
+      "explanation": "1 + 4 = 5 není větší než 6."
+    },
+    {
+      "type": "input",
+      "question": "Trojúhelník má strany 5 cm, 7 cm a 9 cm. Obvod v cm =",
+      "answers": [
+        "21"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Rovnoramenný trojúhelník má obvod 20 cm a základnu 6 cm. Jedno rameno v cm =",
+      "answers": [
+        "7"
+      ],
+      "hints": [
+        "Od obvodu odečti základnu.",
+        "Zbytek připadá na dvě stejná ramena."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenují dvě stejné strany rovnoramenného trojúhelníku?",
+      "options": [
+        "základny",
+        "ramena",
+        "úhlopříčky"
+      ],
+      "answer": 1
     }
   ]
 }

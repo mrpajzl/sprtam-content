@@ -309,6 +309,67 @@
       "type": "open",
       "question": "Kde se v životě používají souřadnice?",
       "answer": "Na mapách a plánech měst, v GPS, v šachu (e4), ve hře Lodě nebo v tabulkách."
+    },
+    {
+      "type": "choice",
+      "question": "Bod [0; 7] leží…",
+      "options": [
+        "na ose x",
+        "na ose y",
+        "v počátku"
+      ],
+      "answer": 1,
+      "explanation": "Doprava jdeš 0 kroků, jen nahoru – zůstaneš na ose y."
+    },
+    {
+      "type": "input",
+      "question": "Body [3; 2] a [3; 9] spojíš úsečkou. Kolik dílků měří?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "Oba mají x = 3, leží nad sebou. 9 − 2 = 7."
+    },
+    {
+      "type": "input",
+      "question": "Z bodu [5; 4] jdeš o 2 doleva. Jaké je nové x?",
+      "answers": [
+        "3"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Obdélník má vrcholy [1; 1], [5; 1], [5; 3]. Kde je čtvrtý vrchol?",
+      "options": [
+        "[3; 5]",
+        "[1; 3]",
+        "[5; 5]"
+      ],
+      "answer": 1,
+      "hints": [
+        "Chybí roh vlevo nahoře. Jaké x má levá strana a jaké y horní?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve hře Lodě znamená B3 sloupec B a řádek 3.",
+      "answer": true,
+      "explanation": "Nejdřív sloupec, pak řádek."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod [3; 0] leží na ose y.",
+      "answer": false,
+      "explanation": "Jdeš 3 doprava a 0 nahoru – bod leží na ose x."
+    },
+    {
+      "type": "input",
+      "question": "Z počátku jdeš 3 kroky doprava a 4 kroky nahoru. Jaké jsou souřadnice bodu? (ve tvaru [x; y])",
+      "answers": [
+        "[3; 4]",
+        "[3;4]",
+        "3; 4",
+        "3;4"
+      ]
     }
   ]
 }

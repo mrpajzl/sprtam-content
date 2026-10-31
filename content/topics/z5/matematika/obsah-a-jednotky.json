@@ -343,6 +343,46 @@
       "type": "open",
       "question": "Jak spočítáš obsah útvaru, který není obdélník, ale dá se rozdělit?",
       "answer": "Rozdělím ho na obdélníky a čtverce, spočítám jejich obsahy a sečtu je (nebo odečtu vyříznutou část)."
+    },
+    {
+      "type": "input",
+      "question": "Obdélník 8 m × 7 m. Obsah v m² =",
+      "answers": [
+        "56"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "4 a = ? m²",
+      "answers": [
+        "400"
+      ],
+      "explanation": "1 a = 100 m², 4 · 100 = 400."
+    },
+    {
+      "type": "input",
+      "question": "3 km² = ? ha",
+      "answers": [
+        "300"
+      ],
+      "explanation": "1 km² = 100 ha, 3 · 100 = 300."
+    },
+    {
+      "type": "choice",
+      "question": "Zahrada má 900 m². Kolik je to arů?",
+      "options": [
+        "90",
+        "9",
+        "0,9"
+      ],
+      "answer": 1,
+      "explanation": "1 a = 100 m². Z menší jednotky na větší dělím: 900 : 100 = 9."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čtverec se stranou 10 cm má obsah 1 dm².",
+      "answer": true,
+      "explanation": "10 cm = 1 dm, 1 dm · 1 dm = 1 dm² (= 100 cm²)."
     }
   ]
 }

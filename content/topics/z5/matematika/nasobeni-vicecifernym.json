@@ -432,6 +432,64 @@
       "type": "open",
       "question": "Jak si ověříš výsledek 24 · 13 = 312?",
       "answer": "Například odhadem 25 · 13 ≈ 325, nebo jinak: 24 · 10 + 24 · 3 = 240 + 72 = 312."
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 63 · 47 =",
+      "answers": [
+        "2961",
+        "2 961"
+      ],
+      "hints": [
+        "První řádek: 63 · 7.",
+        "Druhý řádek: 63 · 4 – posuň ho o místo doleva."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 208 · 34 =",
+      "answers": [
+        "7072",
+        "7 072"
+      ],
+      "hints": [
+        "První řádek: 208 · 4 = 832.",
+        "Druhý řádek: 208 · 3, posunutý o místo doleva."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čokoláda stojí 39 Kč. Kolik stojí 26 čokolád?",
+      "options": [
+        "312 Kč",
+        "1 004 Kč",
+        "1 014 Kč"
+      ],
+      "answer": 2,
+      "explanation": "39 · 6 = 234, 39 · 2 desítky = 780. 234 + 780 = 1 014."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je druhý řádek (dílčí součin) u příkladu 156 · 23, když ho čteš i s posunem?",
+      "options": [
+        "312",
+        "3 120",
+        "468"
+      ],
+      "answer": 1,
+      "explanation": "156 · 2 desítky = 3 120. Číslo 468 = 156 · 3 je první řádek."
+    },
+    {
+      "type": "truefalse",
+      "question": "14 · 16 = 224",
+      "answer": true,
+      "explanation": "14 · 10 = 140, 14 · 6 = 84, 140 + 84 = 224."
+    },
+    {
+      "type": "truefalse",
+      "question": "Odhad příkladu 588 · 21 je asi 1 200.",
+      "answer": false,
+      "explanation": "600 · 20 = 12 000 – výsledek je asi 12 000."
     }
   ]
 }

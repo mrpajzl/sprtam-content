@@ -328,6 +328,65 @@
       "type": "open",
       "question": "K čemu je dobrý sloupcový diagram? Uveď příklad.",
       "answer": "Rychle ukáže, co je největší a nejmenší. Třeba počet žáků ve třídách nebo hlasování o výletu."
+    },
+    {
+      "type": "input",
+      "question": "Kroužky: fotbal 14, výtvarka 9, šachy 6, tanec 11. Kolik žáků chodí do kroužků celkem?",
+      "answers": [
+        "40"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kroužky: fotbal 14, výtvarka 9, šachy 6, tanec 11. Kolik žáků připadá průměrně na jeden kroužek?",
+      "answers": [
+        "10"
+      ],
+      "hints": [
+        "Nejdřív všechny sečti.",
+        "Součet vyděl počtem kroužků."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který kroužek by měl v diagramu nejvyšší sloupec (fotbal 14, výtvarka 9, šachy 6, tanec 11)?",
+      "options": [
+        "tanec",
+        "fotbal",
+        "výtvarka"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "O kolik víc žáků chodí na tanec (11) než na šachy (6)?",
+      "answers": [
+        "5"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Průměr čísel 3, 5 a 10 je 18.",
+      "answer": false,
+      "explanation": "18 je součet. Průměr je 18 : 3 = 6."
+    },
+    {
+      "type": "choice",
+      "question": "Chceš mít zapsaná přesná čísla stránek za každý den. Co je lepší?",
+      "options": [
+        "sloupcový diagram",
+        "tabulka"
+      ],
+      "answer": 1,
+      "explanation": "Tabulka = přesná čísla, diagram = rychlé srovnání."
+    },
+    {
+      "type": "input",
+      "question": "Body v testu: 7, 9, 10, 6. Průměr =",
+      "answers": [
+        "8"
+      ],
+      "explanation": "7 + 9 + 10 + 6 = 32, 32 : 4 = 8."
     }
   ]
 }

@@ -451,6 +451,47 @@
       "type": "open",
       "question": "Jak porovnáš dvě velká čísla?",
       "answer": "Nejdřív spočítám číslice – víc číslic je větší číslo. Při stejném počtu porovnávám zleva, dokud se číslice neliší."
+    },
+    {
+      "type": "input",
+      "question": "Zapiš číslicemi: pět milionů dvacet tisíc osm (bez mezer).",
+      "answers": [
+        "5020008",
+        "5 020 008"
+      ],
+      "hints": [
+        "Každá třída má tři číslice: miliony | tisíce | jednotky.",
+        "Tisíce: 020, jednotky: 008."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 7 351 900 na statisíce (bez mezer).",
+      "answers": [
+        "7400000",
+        "7 400 000"
+      ],
+      "explanation": "Řád statisíců je 3, hlídač (desetitisíce) je 5 → nahoru: 7 400 000.",
+      "hints": [
+        "Najdi číslici v řádu statisíců a hned vpravo od ní hlídače."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo je největší?",
+      "options": [
+        "2 099 999",
+        "2 100 000",
+        "2 010 000"
+      ],
+      "answer": 1,
+      "explanation": "Všechna mají 7 číslic. Zleva: 2 = 2, pak 1 > 0 – vyhrávají 2 100 000."
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 45 000 000 má 8 číslic.",
+      "answer": true,
+      "explanation": "Čtyřicet pět milionů: 2 číslice + 6 nul = 8 číslic."
     }
   ]
 }

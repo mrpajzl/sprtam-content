@@ -400,6 +400,57 @@
       "type": "open",
       "question": "Jak uděláš zkoušku dělení?",
       "answer": "Vynásobím podíl dělitelem a přičtu zbytek. Musí vyjít dělenec, třeba 213 · 4 = 852."
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 976 : 4 =",
+      "answers": [
+        "244"
+      ],
+      "hints": [
+        "9 : 4 = 2, zbytek 1. Připiš 7."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vypočítej písemně: 3 618 : 6 =",
+      "answers": [
+        "603"
+      ],
+      "hints": [
+        "36 : 6 = 6. Pak 1 : 6 – vejde se?",
+        "Když se dělitel nevejde, napiš do podílu 0."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "47 : 5 = 9, zbytek …",
+      "answers": [
+        "2"
+      ],
+      "explanation": "9 · 5 = 45, 47 − 45 = 2."
+    },
+    {
+      "type": "choice",
+      "question": "Provaz dlouhý 1 260 cm rozstříháš na 9 stejných kusů. Kolik cm měří jeden kus?",
+      "options": [
+        "14",
+        "140",
+        "104"
+      ],
+      "answer": 1,
+      "explanation": "12 : 9 = 1, zb. 3. 36 : 9 = 4. 0 : 9 = 0. Podíl 140. Zkouška: 140 · 9 = 1 260."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zbytek při dělení může být větší než dělitel.",
+      "answer": false,
+      "explanation": "Zbytek je vždy menší než dělitel – jinak by se dělitel vešel ještě jednou."
+    },
+    {
+      "type": "truefalse",
+      "question": "312 : 8 = 39, protože 39 · 8 = 312.",
+      "answer": true
     }
   ]
 }
