@@ -312,6 +312,99 @@
       "type": "open",
       "question": "Co se stane s datem, když loď přepluje datovou hranici?",
       "answer": "Při plavbě na západ se datum posune o den dopředu, při plavbě na východ o den zpět."
+    },
+    {
+      "type": "input",
+      "question": "Tokio má UTC+9. V Praze je 10:00 (SEČ, UTC+1). Kolik hodin je v Tokiu?",
+      "answers": [
+        "18",
+        "18:00"
+      ],
+      "hints": [
+        "Rozdíl je 9 − 1 hodin.",
+        "Tokio je na východ – čas přibývá."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "New York má UTC−5. V Praze je 18:00 (SEČ, UTC+1). Kolik hodin je v New Yorku?",
+      "answers": [
+        "12",
+        "12:00"
+      ],
+      "hints": [
+        "Rozdíl mezi +1 a −5 je 6 hodin.",
+        "New York je na západ – čas ubývá."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký čas platí v Česku v létě?",
+      "options": [
+        "UTC+1",
+        "UTC+2",
+        "UTC",
+        "UTC+3"
+      ],
+      "answer": 1,
+      "explanation": "V létě posuneme hodiny o hodinu dopředu – letní čas UTC+2."
+    },
+    {
+      "type": "choice",
+      "question": "Zhruba podél kterého poledníku vede datová hranice?",
+      "options": [
+        "0°",
+        "90° v. d.",
+        "180°"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Celá Čína používá jediný čas.",
+      "answer": true,
+      "explanation": "Hranice pásem se ohýbají podle hranic států."
+    },
+    {
+      "type": "input",
+      "question": "V Londýně je 15:00 (zima, UTC). Kolik hodin je v Praze?",
+      "answers": [
+        "16",
+        "16:00"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Letíš z Prahy na západ do New Yorku. Co uděláš s hodinkami?",
+      "options": [
+        "posunu je dopředu",
+        "posunu je dozadu",
+        "nechám je, jak jsou"
+      ],
+      "answer": 1,
+      "explanation": "Na západ je čas o hodiny zpátky."
+    },
+    {
+      "type": "input",
+      "question": "Odlétáš z Prahy v 8:00 SEČ (UTC+1), let do New Yorku (UTC−5) trvá 9 hodin. Kolik hodin bude v New Yorku při přistání?",
+      "answers": [
+        "11",
+        "11:00"
+      ],
+      "hints": [
+        "Podle pražských hodinek přistaneš v 8 + 9 hodin.",
+        "New York je o 6 hodin pozadu."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje světový čas na nultém poledníku?",
+      "options": [
+        "SEČ",
+        "letní čas",
+        "UTC"
+      ],
+      "answer": 2
     }
   ]
 }

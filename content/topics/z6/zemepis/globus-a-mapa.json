@@ -414,6 +414,102 @@
       "type": "open",
       "question": "Co znamená měřítko 1 : 25 000?",
       "answer": "Skutečnost je zmenšená 25 000krát. 1 cm na mapě odpovídá 25 000 cm, tedy 250 m ve skutečnosti."
+    },
+    {
+      "type": "input",
+      "question": "Měřítko 1 : 25 000. Na mapě je 8 cm. Kolik je to metrů?",
+      "answers": [
+        "2000",
+        "2 000"
+      ],
+      "explanation": "1 cm = 250 m, 8 · 250 m = 2 000 m.",
+      "hints": [
+        "Z 25 000 cm škrtni dvě nuly – kolik metrů je 1 cm?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Měřítko 1 : 1 000 000. Města jsou na mapě 4 cm od sebe. Kolik km je to ve skutečnosti?",
+      "answers": [
+        "40"
+      ],
+      "explanation": "1 cm = 10 km, 4 · 10 km = 40 km.",
+      "hints": [
+        "Z 1 000 000 cm škrtni pět nul – kolik km je 1 cm?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Měřítko 1 : 50 000. Kolik metrů ve skutečnosti odpovídá 1 cm na mapě?",
+      "answers": [
+        "500"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Dvě vesnice jsou ve skutečnosti 3 km od sebe. Kolik cm to je na mapě 1 : 100 000?",
+      "answers": [
+        "3"
+      ],
+      "hints": [
+        "Na této mapě je 1 cm = 1 km."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mapa 1 : 1 000 000 je podrobnější než mapa 1 : 10 000.",
+      "answer": false,
+      "explanation": "Větší číslo = skutečnost je víc zmenšená = méně podrobností."
+    },
+    {
+      "type": "choice",
+      "question": "Proč mapa vždy něco zkresluje?",
+      "options": [
+        "kartografové kreslí nepřesně",
+        "kulatý povrch Země nejde rozložit do roviny beze změn",
+        "Země se pořád otáčí"
+      ],
+      "answer": 1,
+      "explanation": "Jako slupka pomeranče – naplocho popraská nebo se natáhne."
+    },
+    {
+      "type": "truefalse",
+      "question": "Afrika je ve skutečnosti asi 14× větší než Grónsko.",
+      "answer": true,
+      "explanation": "Na mnoha mapách světa vypadá Grónsko kvůli zkreslení skoro stejně velké."
+    },
+    {
+      "type": "choice",
+      "question": "Co je nadmořská výška?",
+      "options": [
+        "vzdálenost místa od moře",
+        "hloubka moře",
+        "výška místa nad hladinou moře"
+      ],
+      "answer": 2,
+      "explanation": "Například Sněžka má 1 603 m n. m."
+    },
+    {
+      "type": "match",
+      "question": "Spoj světovou stranu s místem na mapě.",
+      "pairs": [
+        [
+          "sever",
+          "nahoře"
+        ],
+        [
+          "jih",
+          "dole"
+        ],
+        [
+          "východ",
+          "vpravo"
+        ],
+        [
+          "západ",
+          "vlevo"
+        ]
+      ]
     }
   ]
 }
