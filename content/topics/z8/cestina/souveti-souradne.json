@@ -400,6 +400,80 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi souvětím souřadným a podřadným?",
       "answer": "V souřadném jsou věty rovnocenné. V podřadném vedlejší věta závisí na řídící větě a ptáme se na ni otázkou."
+    },
+    {
+      "type": "choice",
+      "question": "Urči poměr: *Nepomohl mi, ba se mi ještě vysmál.*",
+      "options": [
+        "slučovací",
+        "stupňovací",
+        "odporovací"
+      ],
+      "answer": 1,
+      "explanation": "Druhá věta přidává „víc“ a uvádí ji spojka *ba* → stupňovací."
+    },
+    {
+      "type": "choice",
+      "question": "Urči poměr: *Byla zima, proto jsme si vzali bundy.*",
+      "options": [
+        "příčinný",
+        "důsledkový",
+        "vylučovací"
+      ],
+      "answer": 1,
+      "explanation": "Ve druhé větě je důsledek zimy → důsledkový poměr."
+    },
+    {
+      "type": "choice",
+      "question": "Urči poměr: *Nejez tolik, vždyť budeš mít večeři.*",
+      "options": [
+        "odporovací",
+        "důsledkový",
+        "příčinný"
+      ],
+      "answer": 2,
+      "explanation": "Druhá věta vysvětluje, proč nejíst – je v ní příčina → příčinný poměr."
+    },
+    {
+      "type": "choice",
+      "question": "Urči poměr: *Chtěl přijít, jenže onemocněl.*",
+      "options": [
+        "vylučovací",
+        "odporovací",
+        "příčinný"
+      ],
+      "answer": 1,
+      "explanation": "Druhá věta odporuje první, spojka *jenže* → odporovací."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je čárka správně?",
+      "options": [
+        "Byl nemocný a proto zůstal doma.",
+        "Byl nemocný, a proto zůstal doma."
+      ],
+      "answer": 1,
+      "explanation": "Důsledkový poměr – čárku píšeme i před *a proto*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Před slučovací spojkou *ani* se čárka nepíše.",
+      "answer": true,
+      "explanation": "Slučovací a, i, ani jsou bez čárky: *Nejedl ani nepil.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "V souvětí *Budu si číst nebo půjdu ven.* je poměr odporovací.",
+      "answer": false,
+      "explanation": "Platí jen jedno z toho → vylučovací poměr."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí *Prší, fouká vítr a je zima.*? Napiš číslo.",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Slovesa v určitém tvaru: prší, fouká, je → 3 věty."
     }
   ]
 }

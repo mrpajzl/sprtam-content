@@ -429,6 +429,89 @@
       "type": "open",
       "question": "Rozeber souvětí *Vím, že přijdeš, až skončí škola.*",
       "answer": "Tři věty. Hlavní: Vím. VV předmětná: že přijdeš (co vím?). VV časová: až skončí škola (kdy přijdeš?) – závisí na předmětné větě."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh VV: *Vrátil se domů, protože začalo pršet.*",
+      "options": [
+        "časová",
+        "příčinná",
+        "účelová"
+      ],
+      "answer": 1,
+      "explanation": "Proč se vrátil? → protože začalo pršet → příčinná."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh VV: *Šetřím, abych si koupil kolo.*",
+      "options": [
+        "předmětná",
+        "podmínková",
+        "účelová"
+      ],
+      "answer": 2,
+      "explanation": "Za jakým účelem šetřím? → účelová."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh VV: *Bydlím tam, kde končí les.*",
+      "options": [
+        "místní",
+        "přívlastková",
+        "časová"
+      ],
+      "answer": 0,
+      "explanation": "Kde bydlím? → místní."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh VV: *Je jisté, že vyhrajeme.*",
+      "options": [
+        "předmětná",
+        "podmětná",
+        "přívlastková"
+      ],
+      "answer": 1,
+      "explanation": "Co je jisté? → že vyhrajeme. Ptáme se na podmět → podmětná."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí *Šli jsme se koupat, protože bylo horko.*? Napiš číslo.",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Slovesa v určitém tvaru: šli jsme, bylo → 2 věty.",
+      "hints": [
+        "Počítej jen slovesa v určitém tvaru.",
+        "*Koupat* je infinitiv."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je čárka správně?",
+      "options": [
+        "Nevím kdy přijde.",
+        "Nevím, kdy přijde.",
+        "Nevím kdy, přijde."
+      ],
+      "answer": 1,
+      "explanation": "Vedlejší větu oddělujeme od řídící věty čárkou před spojovacím výrazem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta řídící může být i vedlejší věta.",
+      "answer": true,
+      "explanation": "Řídící je věta, ze které se ptáš. V *Řekl, že přijde, až dodělá úkol.* je pro časovou větu řídící vedlejší věta *že přijde*."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky rozboru souvětí podřadného.",
+      "items": [
+        "Spočítej slovesa v určitém tvaru.",
+        "Najdi hlavní větu.",
+        "Z řídící věty se zeptej na vedlejší.",
+        "Podle otázky urči druh vedlejší věty."
+      ]
     }
   ]
 }

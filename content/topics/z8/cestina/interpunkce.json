@@ -352,6 +352,81 @@
       "type": "open",
       "question": "Uveď aspoň tři případy, kdy píšeme čárku ve větě jednoduché.",
       "answer": "Mezi několikanásobnými členy bez spojky, před odporovacím *ale*, u oslovení, za citoslovcem, u vsuvky a přístavku."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je vsuvka oddělená správně?",
+      "options": [
+        "Zítra myslím, bude pršet.",
+        "Zítra, myslím bude pršet.",
+        "Zítra, myslím, bude pršet."
+      ],
+      "answer": 2,
+      "explanation": "Vsuvku oddělujeme čárkami z obou stran."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber větu s čárkou na správném místě.",
+      "options": [
+        "Je malý ale silný.",
+        "Je malý, ale silný."
+      ],
+      "answer": 1,
+      "explanation": "Před odporovacím *ale* píšeme čárku i ve větě jednoduché."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Je vyšší, než jsem já.* je čárka správně.",
+      "answer": true,
+      "explanation": "Za *než* je sloveso *jsem*, je to tedy věta – čárka patří."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Petr, Jana a Tomáš šli do kina.* chybí čárka před *a*.",
+      "answer": false,
+      "explanation": "Před slučovacím *a* čárku nepíšeme – *a* ji nahrazuje."
+    },
+    {
+      "type": "input",
+      "question": "Kolik čárek patří do věty *Mami podívej to je duha!*? Napiš číslo.",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Mami, podívej, to je duha! – oslovení a hranice mezi dvěma větami.",
+      "hints": [
+        "Najdi oslovení.",
+        "Spočítej slovesa v určitém tvaru."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik čárek patří do věty *Kniha kterou jsi mi půjčil se mi líbila.*? Napiš číslo.",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Kniha, kterou jsi mi půjčil, se mi líbila. – vložená vedlejší věta má čárky z obou stran."
+    },
+    {
+      "type": "choice",
+      "question": "Co odděluje čárka ve větě *Pojďte jíst, děti!*?",
+      "options": [
+        "přístavek",
+        "oslovení",
+        "vsuvku"
+      ],
+      "answer": 1,
+      "explanation": "*Děti* je oslovení (5. pád), proto ho oddělujeme čárkou."
+    },
+    {
+      "type": "choice",
+      "question": "Do které věty patří čárka?",
+      "options": [
+        "Nejedl ani nepil.",
+        "Pes štěkal a kočka mňoukala.",
+        "Byl unavený a přece pokračoval."
+      ],
+      "answer": 2,
+      "explanation": "Byl unavený, a přece pokračoval. – před *a přece* (odpor) píšeme čárku."
     }
   ]
 }
