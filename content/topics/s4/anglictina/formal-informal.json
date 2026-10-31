@@ -415,6 +415,84 @@
       "type": "open",
       "question": "Převeď do formálního stylu: „Hi, I wanna know how much the course is.“",
       "answer": "Dear Sir or Madam, I am writing to enquire about the price of the course. / I would like to know how much the course costs."
+    },
+    {
+      "type": "choice",
+      "question": "Formální ekvivalent „put off“ (odložit):",
+      "options": [
+        "take off",
+        "postpone",
+        "put away"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Formální ekvivalent „look into“ (prošetřit):",
+      "options": [
+        "look at",
+        "see into",
+        "investigate"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve formálním e-mailu je v pořádku použít emoji, když je adresát milý.",
+      "answer": false,
+      "explanation": "Formální styl nepoužívá emoji, slang ani vykřičníky."
+    },
+    {
+      "type": "choice",
+      "question": "Převeď do formálního stylu: „Sorry for the late reply.“",
+      "options": [
+        "Sorry for being so late with this!",
+        "I apologise for the late reply.",
+        "My bad, I'm late."
+      ],
+      "answer": 1,
+      "explanation": "*sorry* → *apologise*, bez vykřičníku a staženin."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Anyway* je typický neformální spojovací výraz.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Který text míchá formální a neformální styl?",
+      "options": [
+        "Dear Sir or Madam, I am writing to enquire about the course.",
+        "Hi Tom, thanks for your message!",
+        "Dear Sir or Madam, I'm writing to ask about the job. Thanks a lot!"
+      ],
+      "answer": 2,
+      "explanation": "Formální oslovení, ale stažený tvar *I'm* a *Thanks a lot!*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj neformální spojovací výraz s formálním.",
+      "pairs": [
+        [
+          "But",
+          "However"
+        ],
+        [
+          "Also",
+          "Furthermore"
+        ],
+        [
+          "So",
+          "Therefore"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň formálně: I would be ___ if you could send me more information. (1 slovo)",
+      "answers": [
+        "grateful"
+      ]
     }
   ]
 }
