@@ -370,6 +370,81 @@
       "type": "open",
       "question": "Co znamenají zkratky n. l. a př. n. l.?",
       "answer": "N. l. = našeho letopočtu, roky po narození Krista. Př. n. l. = před naším letopočtem, roky před ním se počítají pozpátku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rok 2000 byl přestupný.",
+      "answer": true,
+      "explanation": "Je dělitelný 100, ale i 400 – proto přestupný byl."
+    },
+    {
+      "type": "choice",
+      "question": "Který z těchto roků je přestupný?",
+      "options": [
+        "2026",
+        "2027",
+        "2028",
+        "2030"
+      ],
+      "answer": 2,
+      "explanation": "2028 : 4 = 507 beze zbytku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rok 2100 bude přestupný.",
+      "answer": false,
+      "explanation": "2100 je dělitelný 100, ale ne 400 – přestupný nebude."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém roce zavedl papež Řehoř XIII. gregoriánský kalendář?",
+      "options": [
+        "1415",
+        "1582",
+        "1918",
+        "863"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém století je rok 1415?",
+      "options": [
+        "ve 14. století",
+        "v 15. století",
+        "v 16. století",
+        "ve 13. století"
+      ],
+      "answer": 1,
+      "explanation": "1415 − 1 = 1414 → 14 → + 1 = 15. století."
+    },
+    {
+      "type": "truefalse",
+      "question": "21. století začalo 1. 1. 2000.",
+      "answer": false,
+      "explanation": "Rok 0 neexistuje, proto 21. století začalo 1. 1. 2001."
+    },
+    {
+      "type": "input",
+      "question": "Kolik let uplynulo od roku 20 př. n. l. do roku 20 n. l.?",
+      "answers": [
+        "39"
+      ],
+      "explanation": "Do roku 1 př. n. l. je to 19 let, pak 20 let do roku 20 n. l. Rok 0 nebyl: 19 + 20 = 39.",
+      "hints": [
+        "Rok 0 neexistuje."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď roky od nejstaršího.",
+      "items": [
+        "100 př. n. l.",
+        "50 př. n. l.",
+        "1 n. l.",
+        "1582"
+      ],
+      "explanation": "Roky př. n. l. se počítají pozpátku: 100 př. n. l. byl dřív než 50 př. n. l."
     }
   ]
 }
