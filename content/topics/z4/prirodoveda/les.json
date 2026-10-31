@@ -375,6 +375,93 @@
       "type": "open",
       "question": "Jak se máš chovat v lese?",
       "answer": "Neodhazuji odpadky, nekřičím a neruším zvířata. Nerozdělávám oheň, kde se nesmí, a nelámu stromy."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém patře lesa žije krtek?",
+      "options": [
+        "mechovém",
+        "kořenovém",
+        "bylinném"
+      ],
+      "answer": 1,
+      "explanation": "Kořenové patro je pod zemí: kořeny, žížaly, krtek."
+    },
+    {
+      "type": "truefalse",
+      "question": "Buk je jehličnatý strom.",
+      "answer": false,
+      "explanation": "Buk má listy a na podzim je shazuje – je listnatý."
+    },
+    {
+      "type": "match",
+      "question": "Spoj s patrem lesa.",
+      "pairs": [
+        [
+          "šípek",
+          "keřové"
+        ],
+        [
+          "kapradí",
+          "bylinné"
+        ],
+        [
+          "mech",
+          "mechové"
+        ],
+        [
+          "datel",
+          "stromové"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím vždy začíná potravní řetězec?",
+      "options": [
+        "býložravcem",
+        "rostlinou",
+        "dravcem"
+      ],
+      "answer": 1,
+      "explanation": "Jen rostliny umějí vyrobit potravu ze světla."
+    },
+    {
+      "type": "choice",
+      "question": "Které zvíře je býložravec?",
+      "options": [
+        "rys",
+        "jestřáb",
+        "srnec",
+        "liška"
+      ],
+      "answer": 2,
+      "explanation": "Srnec jí rostliny. Rys, jestřáb a liška loví jiná zvířata."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kdyby z lesa zmizely sýkory, bylo by víc housenek.",
+      "answer": true,
+      "explanation": "Sýkory housenky loví. Bez nich by se housenky přemnožily a sežraly víc listů."
+    },
+    {
+      "type": "input",
+      "question": "Kolik pater má les? Napiš číslo.",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "Stromové, keřové, bylinné, mechové a kořenové."
+    },
+    {
+      "type": "choice",
+      "question": "Kterému stromu šišky visí dolů?",
+      "options": [
+        "jedli",
+        "smrku"
+      ],
+      "answer": 1,
+      "explanation": "Smrku šišky visí, jedli stojí vzhůru."
     }
   ]
 }
