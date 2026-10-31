@@ -536,6 +536,57 @@
       "type": "open",
       "question": "Co se stane s *un, une, des* po záporu? Uveď příklad i výjimku.",
       "answer": "Změní se na *de* (před samohláskou *d’*): *J’ai un chien → Je n’ai pas de chien.* Výjimka je sloveso *être*: *C’est un chat → Ce n’est pas un chat.* Určité členy *le, la, les* se nemění."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *Nous avons une voiture.*",
+      "options": [
+        "Nous n’avons pas une voiture.",
+        "Nous ne avons pas de voiture.",
+        "Nous n’avons pas de voiture."
+      ],
+      "answer": 2,
+      "explanation": "*une* se po záporu změní na *de* a *ne* před samohláskou na *n’*."
+    },
+    {
+      "type": "input",
+      "question": "Dej do záporu: Il habite à Lyon.",
+      "answers": [
+        "il n’habite pas à lyon",
+        "il n’habite pas a lyon"
+      ],
+      "explanation": "*habite* začíná na *h*, proto *n’*: *Il n’habite pas à Lyon.* (Nebydlí v Lyonu.)",
+      "hints": [
+        "Sloveso začíná na h – co se stane s ne?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Je n’aime pas de chocolat.* je správně.",
+      "answer": false,
+      "explanation": "Na *de* se mění jen *un, une, des*. Určitý člen zůstává: *Je n’aime pas le chocolat.*"
+    },
+    {
+      "type": "order",
+      "question": "Seřaď větu „Nerad plavu.“",
+      "items": [
+        "Je",
+        "n’aime",
+        "pas",
+        "nager."
+      ],
+      "explanation": "Zápor obalí první, časované sloveso *aime*. *nager* stojí až za *pas*."
+    },
+    {
+      "type": "choice",
+      "question": "Zápor od *Il y a un parc.* (Je tu park.)",
+      "options": [
+        "Il ne y a pas de parc.",
+        "Il n’y a pas de parc.",
+        "Il n’y a pas un parc."
+      ],
+      "answer": 1,
+      "explanation": "*Il y a* → *Il n’y a pas* a *un* se po záporu změní na *de*."
     }
   ]
 }

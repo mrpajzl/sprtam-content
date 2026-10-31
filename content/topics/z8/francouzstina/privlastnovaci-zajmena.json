@@ -528,6 +528,45 @@
       "type": "open",
       "question": "Představ francouzsky svou rodinu ve třech větách.",
       "answer": "Voici mon père et ma mère. J’ai un frère, il s’appelle Adam. Mes grands-parents habitent à Brno."
+    },
+    {
+      "type": "choice",
+      "question": "___ histoire (její příběh)",
+      "options": [
+        "sa",
+        "son",
+        "ses"
+      ],
+      "answer": 1,
+      "explanation": "*histoire* je ženské slovo, ale začíná němým *h*. Proto místo *sa* použiješ *son*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Voici ___ maison. (Tady je jejich dům.)",
+      "answers": [
+        "leur"
+      ],
+      "explanation": "Vlastníci jsou *ils*, dům je jeden → *leur* (bez *s*).",
+      "hints": [
+        "Kolik je domů?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "C’est ___ chat ? (Je to tvoje kočka?)",
+      "options": [
+        "ta",
+        "ton",
+        "tes"
+      ],
+      "answer": 1,
+      "explanation": "*le chat* je ve francouzštině mužský rod → *ton*, i když česky říkáš „tvoje kočka“."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Hugo aime sa grand-mère.* je *sa* správně, i když Hugo je kluk.",
+      "answer": true,
+      "explanation": "Rozhoduje rod věci: *grand-mère* je ženský rod → *sa*."
     }
   ]
 }

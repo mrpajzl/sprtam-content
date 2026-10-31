@@ -545,6 +545,42 @@
       "type": "open",
       "question": "Zeptej se francouzsky spolužáka na tři věci: kde bydlí, co má rád a kolik mu je.",
       "answer": "*Où est-ce que tu habites ? Qu’est-ce que tu aimes ? Tu as quel âge ?*"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš „Co máš rád?“",
+      "options": [
+        "Est-ce que tu aimes ?",
+        "Qui est-ce que tu aimes ?",
+        "Qu’est-ce que tu aimes ?"
+      ],
+      "answer": 2,
+      "explanation": "„Co“ = *qu’est-ce que*. *Qui* = kdo, koho."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tázací slovo: ___ est-ce que tu vas à Paris ? – En juin. (Kdy jedeš do Paříže? – V červnu.)",
+      "answers": [
+        "quand"
+      ],
+      "explanation": "Ptáš se na čas, „kdy“ = *quand*."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se zeptáš inverzí „Mluvíte anglicky?“",
+      "options": [
+        "Vous parlez-anglais ?",
+        "Parlez-vous anglais ?",
+        "Parlez vous-anglais ?"
+      ],
+      "answer": 1,
+      "explanation": "Sloveso jde před zájmeno a spojí se s ním spojovníkem: *Parlez-vous*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Est-ce que tu manges ?* znamená „Co jíš?“",
+      "answer": false,
+      "explanation": "Znamená „Jíš?“ – je to otázka ano/ne. „Co jíš?“ je *Qu’est-ce que tu manges ?*"
     }
   ]
 }
