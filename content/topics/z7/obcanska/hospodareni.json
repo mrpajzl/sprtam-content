@@ -392,6 +392,85 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi nezbytnými a zbytnými výdaji?",
       "answer": "Nezbytné výdaje jsou nutné k životu – jídlo, bydlení, energie. Zbytné jsou ty, bez kterých se obejdu – zábava, další oblečení navíc."
+    },
+    {
+      "type": "input",
+      "question": "Simona chce sluchátka za 600 Kč a spoří 150 Kč měsíčně. Za kolik měsíců na ně našetří?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "600 : 150 = 4 měsíce.",
+      "hints": [
+        "Vyděl cenu částkou, kterou odloží každý měsíc."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Příjem je 800 Kč a výdaje 800 Kč. Jaký je to rozpočet?",
+      "options": [
+        "přebytkový",
+        "schodkový",
+        "vyrovnaný",
+        "úsporný"
+      ],
+      "answer": 2,
+      "explanation": "Příjmy se rovnají výdajům – nic nezbývá a nic nechybí."
+    },
+    {
+      "type": "choice",
+      "question": "Co je pro žáka výdaj?",
+      "options": [
+        "kapesné od rodičů",
+        "dárek od babičky",
+        "lístek do kina",
+        "peníze za prodanou starou hru"
+      ],
+      "answer": 2,
+      "explanation": "Za lístek do kina platíš – je to výdaj. Ostatní peníze dostáváš."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když rozpočtu chybí peníze, škrtáš nejdřív nezbytné výdaje, třeba jídlo.",
+      "answer": false,
+      "explanation": "Nejdřív se škrtají zbytné výdaje, bez kterých se obejdeš."
+    },
+    {
+      "type": "input",
+      "question": "Rodina má příjem 30 000 Kč a výdaje 32 000 Kč. Kolik Kč jí chybí?",
+      "answers": [
+        "2000",
+        "2 000"
+      ],
+      "explanation": "32 000 − 30 000 = 2 000 Kč. Rozpočet je schodkový."
+    },
+    {
+      "type": "choice",
+      "question": "Co je hotovost?",
+      "options": [
+        "mince a bankovky",
+        "platba kartou",
+        "převod z účtu",
+        "platba mobilem"
+      ],
+      "answer": 0,
+      "explanation": "Hotovost jsou mince a bankovky. Karta, převod i mobil jsou bezhotovostní platby."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stejná platba může být pro jednoho výdaj a pro druhého příjem.",
+      "answer": true,
+      "explanation": "Nájem je výdaj nájemníka a příjem majitele bytu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky sestavení rozpočtu.",
+      "items": [
+        "sepsat a sečíst příjmy",
+        "sepsat a sečíst výdaje",
+        "odečíst výdaje od příjmů",
+        "když peníze chybí, škrtnout zbytné výdaje"
+      ],
+      "explanation": "Příjmy, výdaje, porovnání a nakonec úprava."
     }
   ]
 }
