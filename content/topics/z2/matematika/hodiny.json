@@ -526,6 +526,54 @@
       "type": "open",
       "question": "Co děláš v 7 hodin ráno a co v 7 hodin večer?",
       "answer": "Například ráno vstávám a snídám, večer se koupu a chystám do postele. 7 večer je 19:00."
+    },
+    {
+      "type": "choice",
+      "question": "Co je 4:30?",
+      "options": [
+        "půl čtvrté",
+        "půl páté",
+        "čtvrt na pět"
+      ],
+      "answer": 1,
+      "explanation": "Čtyři hodiny už byly, jdeme k pěti: půl páté."
+    },
+    {
+      "type": "choice",
+      "question": "Co je 9:45?",
+      "options": [
+        "tři čtvrtě na deset",
+        "tři čtvrtě na devět",
+        "půl desáté"
+      ],
+      "answer": 0,
+      "explanation": "Velká ručička na 9 = tři čtvrtě. Jdeme k deseti."
+    },
+    {
+      "type": "input",
+      "question": "Kolik minut jsou tři čtvrtě hodiny?",
+      "answers": [
+        "45"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik měsíců má rok?",
+      "answers": [
+        "12"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "8 hodin večer píšeme také 20:00.",
+      "answer": true,
+      "explanation": "Den má 24 hodin. 8 večer je 12 + 8 = 20:00."
+    },
+    {
+      "type": "truefalse",
+      "question": "Velká ručička ukazuje hodiny.",
+      "answer": false,
+      "explanation": "Velká ručička ukazuje minuty, malá hodiny."
     }
   ]
 }

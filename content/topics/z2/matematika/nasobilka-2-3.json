@@ -141,7 +141,7 @@
         },
         {
           "type": "example",
-          "question": "Kolik kol má 4 trojkolek?",
+          "question": "Kolik kol mají 4 trojkolky?",
           "answer": "4 · 3 = 3 + 3 + 3 + 3 = **12 kol**."
         },
         {
@@ -536,6 +536,44 @@
       "type": "open",
       "question": "Vyjmenuj násobky čísla 2 do 20.",
       "answer": "2, 4, 6, 8, 10, 12, 14, 16, 18, 20."
+    },
+    {
+      "type": "input",
+      "question": "3 · 4 =",
+      "answers": [
+        "12"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo je násobek 3?",
+      "options": [
+        "14",
+        "16",
+        "15"
+      ],
+      "answer": 2,
+      "explanation": "Řada trojek: 3, 6, 9, 12, 15 – 15 v ní je."
+    },
+    {
+      "type": "truefalse",
+      "question": "Všechny výsledky násobilky dvou jsou sudá čísla.",
+      "answer": true,
+      "explanation": "2, 4, 6 … 20 – všechna končí na 0, 2, 4, 6 nebo 8."
+    },
+    {
+      "type": "truefalse",
+      "question": "2 · 5 = 12",
+      "answer": false,
+      "explanation": "2 · 5 = 5 + 5 = 10."
+    },
+    {
+      "type": "input",
+      "question": "Kolik kol má 6 trojkolek?",
+      "answers": [
+        "18"
+      ],
+      "explanation": "6 · 3 = 18."
     }
   ]
 }

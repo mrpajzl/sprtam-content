@@ -446,6 +446,69 @@
       "type": "open",
       "question": "Počítej po desítkách od 0 do 100.",
       "answer": "0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100."
+    },
+    {
+      "type": "input",
+      "question": "4 desítky a 0 jednotek je číslo …",
+      "answers": [
+        "40"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Které číslo je hned před 60?",
+      "answers": [
+        "59"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "72 ? 27",
+      "options": [
+        "<",
+        ">",
+        "="
+      ],
+      "answer": 1,
+      "explanation": "7 desítek je víc než 2 desítky."
+    },
+    {
+      "type": "choice",
+      "question": "50 + 5 ? 55",
+      "options": [
+        "<",
+        ">",
+        "="
+      ],
+      "answer": 2,
+      "explanation": "50 + 5 = 55, obě strany jsou stejné."
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 49 je větší než 51.",
+      "answer": false,
+      "explanation": "4 desítky jsou méně než 5 desítek. 49 < 51."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od největšího.",
+      "items": [
+        "98",
+        "89",
+        "80",
+        "18",
+        "8"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Mezi kterými desítkami leží číslo 63?",
+      "options": [
+        "50 a 60",
+        "60 a 70",
+        "70 a 80"
+      ],
+      "answer": 1
     }
   ]
 }
