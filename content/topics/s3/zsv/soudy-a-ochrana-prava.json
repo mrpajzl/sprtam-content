@@ -419,6 +419,83 @@
       "type": "open",
       "question": "Co dělá veřejný ochránce práv?",
       "answer": "Ombudsman prošetřuje stížnosti lidí na postup úřadů a dalších institucí, upozorňuje na pochybení a doporučuje nápravu. Nemůže rušit rozhodnutí. Volí ho Poslanecká sněmovna na 6 let."
+    },
+    {
+      "type": "choice",
+      "question": "U kterého soudu začíná většina sporů?",
+      "options": [
+        "U krajského soudu",
+        "U okresního soudu",
+        "U Nejvyššího soudu",
+        "U vrchního soudu"
+      ],
+      "answer": 1,
+      "explanation": "Soudem prvního stupně je obvykle okresní soud (v Praze obvodní)."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo rozhoduje o odvolání proti rozsudku okresního soudu?",
+      "options": [
+        "Nejvyšší soud",
+        "Ústavní soud",
+        "Krajský soud",
+        "Vrchní soud"
+      ],
+      "answer": 2,
+      "explanation": "Odvolání proti rozsudku okresního soudu projedná krajský soud."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dovolání k Nejvyššímu soudu lze podat jen kvůli zásadním právním otázkám.",
+      "answer": true,
+      "explanation": "Dovolání je mimořádný opravný prostředek, ne běžná druhá šance."
+    },
+    {
+      "type": "input",
+      "question": "Na kolik let volí Poslanecká sněmovna veřejného ochránce práv?",
+      "answers": [
+        "6",
+        "šest"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ministr spravedlnosti smí soudci nařídit, jak má rozhodnout.",
+      "answer": false,
+      "explanation": "Soudy jsou nezávislé – nikdo jim nesmí přikazovat, jak rozhodnout."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje pražský soud na úrovni krajského soudu?",
+      "options": [
+        "Obvodní soud",
+        "Vrchní soud",
+        "Městský soud"
+      ],
+      "answer": 2,
+      "explanation": "V Praze jsou místo okresních obvodní soudy a místo krajského Městský soud."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, jak postupuje pan Novák, kterému firma dluží peníze.",
+      "items": [
+        "Podá žalobu k okresnímu soudu",
+        "Soud vydá rozsudek",
+        "Firma ani tak nezaplatí",
+        "Exekutor dluh vymůže"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá strana, která podala žalobu?",
+      "options": [
+        "žalovaný",
+        "žalobce",
+        "obžalovaný",
+        "svědek"
+      ],
+      "answer": 1,
+      "explanation": "Žalobu podává žalobce, druhá strana je žalovaný."
     }
   ]
 }

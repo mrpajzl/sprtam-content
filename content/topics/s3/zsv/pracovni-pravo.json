@@ -440,6 +440,80 @@
       "type": "open",
       "question": "Jak může skončit pracovní poměr?",
       "answer": "Dohodou, výpovědí (s výpovědní dobou nejméně 2 měsíce), okamžitým zrušením, zrušením ve zkušební době nebo uplynutím sjednané doby u poměru na dobu určitou. Také smrtí zaměstnance."
+    },
+    {
+      "type": "choice",
+      "question": "Student chce celý rok pracovat 8 hodin každý týden, tedy asi 400 hodin ročně u jednoho zaměstnavatele. Co se hodí?",
+      "options": [
+        "Dohoda o provedení práce",
+        "Dohoda o pracovní činnosti",
+        "Nic, studenti pracovat nesmějí"
+      ],
+      "answer": 1,
+      "explanation": "400 hodin je víc než limit DPP (300 hodin ročně). DPČ dovoluje až polovinu týdenní pracovní doby.",
+      "hints": [
+        "Porovnej 400 hodin s limitem DPP."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Týdenní pracovní doba je 40 hodin. Kolik hodin týdně nejvýš smíš pracovat na DPČ?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "DPČ je nejvýš v rozsahu poloviny týdenní pracovní doby: 40 : 2 = 20."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dohodu o provedení práce stačí uzavřít ústně.",
+      "answer": false,
+      "explanation": "I DPP se uzavírá písemně, stejně jako pracovní smlouva."
+    },
+    {
+      "type": "choice",
+      "question": "V pracovní smlouvě je napsáno: „Druh práce: kuchař. Den nástupu: 1. září.“ Co v ní chybí?",
+      "options": [
+        "Výše mzdy",
+        "Místo výkonu práce",
+        "Délka dovolené"
+      ],
+      "answer": 1,
+      "explanation": "Smlouva musí mít druh práce, místo výkonu práce a den nástupu. Mzda může být ve mzdovém výměru."
+    },
+    {
+      "type": "input",
+      "question": "Kolik měsíců může nejvýš trvat zkušební doba vedoucího zaměstnance?",
+      "answers": [
+        "8",
+        "osm"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zaměstnanec může dát výpověď, aniž by uváděl důvod.",
+      "answer": true,
+      "explanation": "Zákonný důvod pro výpověď musí mít jen zaměstnavatel."
+    },
+    {
+      "type": "choice",
+      "question": "Lucie chce z práce odejít hned zítra, bez výpovědní doby. Jak to může udělat?",
+      "options": [
+        "Dá výpověď",
+        "Dohodne se se zaměstnavatelem na skončení",
+        "Nijak, musí odpracovat ještě rok"
+      ],
+      "answer": 1,
+      "explanation": "Při výpovědi běží nejméně 2 měsíce výpovědní doby. Okamžitě skončit lze dohodou."
+    },
+    {
+      "type": "choice",
+      "question": "Čtrnáctiletý Petr chodí do 8. třídy a chce o prázdninách brigádu v obchodě. Smí ji dostat?",
+      "options": [
+        "Ano, na DPP smí pracovat kdokoli",
+        "Ne, zaměstnancem může být až od 15 let po ukončení povinné školní docházky",
+        "Ano, stačí, když souhlasí rodiče"
+      ],
+      "answer": 1
     }
   ]
 }
