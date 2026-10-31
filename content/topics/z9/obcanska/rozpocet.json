@@ -396,6 +396,85 @@
       "type": "open",
       "question": "Proč je dobré mít finanční rezervu?",
       "answer": "Kvůli nečekaným výdajům, např. nemoci, ztrátě práce nebo opravě. Nemusím si pak půjčovat."
+    },
+    {
+      "type": "input",
+      "question": "Příjem 46 000 Kč, výdaje 49 500 Kč. Kolik Kč v rozpočtu chybí?",
+      "answers": [
+        "3500",
+        "3 500"
+      ],
+      "hints": [
+        "Odečti příjmy od výdajů."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Příjmy rodiny jsou 32 000 Kč a výdaje také 32 000 Kč. Jaký je to rozpočet?",
+      "options": [
+        "přebytkový",
+        "schodkový",
+        "vyrovnaný"
+      ],
+      "answer": 2,
+      "explanation": "Příjmy = výdaje → vyrovnaný rozpočet. Je dobré zkusit ušetřit na rezervu."
+    },
+    {
+      "type": "input",
+      "question": "Výdaje domácnosti jsou 25 000 Kč měsíčně. Kolik Kč má mít rezerva aspoň na 3 měsíce?",
+      "answers": [
+        "75000",
+        "75 000"
+      ],
+      "hints": [
+        "Vynásob měsíční výdaje třemi."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který výdaj je mimořádný?",
+      "options": [
+        "nájem",
+        "oprava auta po nehodě",
+        "vánoční dárky",
+        "kroužek"
+      ],
+      "answer": 1,
+      "explanation": "Mimořádné výdaje jsou nečekané. Dárky jsou nepravidelné, nájem a kroužek pravidelné."
+    },
+    {
+      "type": "choice",
+      "question": "Co je hrubá mzda?",
+      "options": [
+        "částka, která přijde na účet",
+        "mzda po zaplacení nájmu",
+        "částka ve smlouvě, než se strhne daň a pojištění",
+        "peníze odložené na rezervu"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Do rozpočtu domácnosti počítáš hrubou mzdu.",
+      "answer": false,
+      "explanation": "Počítáš čistou mzdu – tu, která opravdu přijde na účet."
+    },
+    {
+      "type": "input",
+      "question": "Dovolená stojí 24 000 Kč za rok. Kolik Kč na ni máš odkládat každý měsíc?",
+      "answers": [
+        "2000",
+        "2 000"
+      ],
+      "hints": [
+        "Rok má 12 měsíců."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Oblečení a dárky patří mezi nepravidelné výdaje.",
+      "answer": true,
+      "explanation": "Nejsou každý měsíc, ale dají se čekat."
     }
   ]
 }

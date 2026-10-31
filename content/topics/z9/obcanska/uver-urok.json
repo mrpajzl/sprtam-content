@@ -348,6 +348,83 @@
       "type": "open",
       "question": "Na co si dát pozor, než si vezmeš úvěr?",
       "answer": "Zda ho opravdu potřebuji a zvládnu splácet. Porovnat RPSN, přečíst si smlouvu včetně sankcí a nepůjčovat si u neověřených firem."
+    },
+    {
+      "type": "input",
+      "question": "Půjčíš si 8 000 Kč s úrokem 5 % na rok. Kolik Kč úroku zaplatíš?",
+      "answers": [
+        "400"
+      ],
+      "hints": [
+        "1 % z 8 000 je 80 Kč."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Uložíš 20 000 Kč s úrokem 4 % ročně. Kolik Kč úroku dostaneš za rok (bez daně)?",
+      "answers": [
+        "800"
+      ],
+      "hints": [
+        "1 % z 20 000 je 200 Kč."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Uložíš 2 000 Kč s úrokem 10 % ročně, složené úročení. Kolik Kč bude na účtu po 2 letech?",
+      "answers": [
+        "2420",
+        "2 420"
+      ],
+      "hints": [
+        "Po 1. roce máš 2 200 Kč.",
+        "Ve 2. roce se úročí 2 200 Kč."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Úvěr A: 10 splátek po 1 100 Kč. Úvěr B: 20 splátek po 700 Kč. Který je levnější?",
+      "options": [
+        "A, celkem zaplatíš 11 000 Kč",
+        "B, protože má nižší splátku",
+        "oba jsou stejně drahé",
+        "B, celkem zaplatíš 14 000 Kč"
+      ],
+      "answer": 0,
+      "explanation": "A: 10 · 1 100 = 11 000 Kč. B: 20 · 700 = 14 000 Kč. Nižší splátka neznamená levnější úvěr."
+    },
+    {
+      "type": "choice",
+      "question": "Co ukazuje RPSN?",
+      "options": [
+        "jen výši měsíční splátky",
+        "kolik let se úvěr splácí",
+        "všechny náklady úvěru (úrok i poplatky) v procentech za rok",
+        "počet splátek"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Kdo ukládá peníze do banky, je v roli věřitele.",
+      "answer": true,
+      "explanation": "Bance peníze svěřuje, a proto mu banka platí úrok."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, jak postupuje spirála dluhů.",
+      "items": [
+        "člověk přestane splácet",
+        "naskakují pokuty a dluh roste",
+        "věřitel jde k soudu",
+        "exekutor zabaví část mzdy nebo majetek"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nižší měsíční splátka vždy znamená levnější úvěr.",
+      "answer": false,
+      "explanation": "Nízká splátka často znamená delší splácení a celkově zaplatíš víc. Porovnávej RPSN a celkovou částku."
     }
   ]
 }

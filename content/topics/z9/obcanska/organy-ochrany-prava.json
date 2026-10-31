@@ -389,6 +389,80 @@
       "type": "open",
       "question": "Proč musí být soudy nezávislé?",
       "answer": "Aby rozhodovaly jen podle zákona a důkazů. Nikdo, ani vláda, je nesmí ovlivňovat. Jinak by nebyla spravedlnost pro všechny."
+    },
+    {
+      "type": "choice",
+      "question": "Nesouhlasíš s rozhodnutím okresního soudu. Kdo o tvém odvolání obvykle rozhodne?",
+      "options": [
+        "Ústavní soud",
+        "krajský soud",
+        "policie",
+        "notář"
+      ],
+      "answer": 1,
+      "explanation": "O odvolání rozhoduje vyšší soud – nad okresními jsou krajské soudy."
+    },
+    {
+      "type": "input",
+      "question": "Jaké je číslo tísňové linky Policie ČR?",
+      "answers": [
+        "158"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo jmenuje soudce Ústavního soudu?",
+      "options": [
+        "prezident se souhlasem Senátu",
+        "vláda",
+        "Poslanecká sněmovna",
+        "ministr spravedlnosti"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Ústavní soud může zrušit zákon, který je v rozporu s Ústavou.",
+      "answer": true,
+      "explanation": "Ústavní soud chrání Ústavu a základní práva."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém městě sídlí veřejný ochránce práv (ombudsman)?",
+      "options": [
+        "v Praze",
+        "v Plzni",
+        "v Brně",
+        "v Ostravě"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "order",
+      "question": "Seřaď obecné soudy od nejnižšího.",
+      "items": [
+        "okresní soud",
+        "krajský soud",
+        "Nejvyšší soud"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nejvyšší soud sídlí v Praze.",
+      "answer": false,
+      "explanation": "Nejvyšší soud sídlí v Brně, stejně jako Ústavní soud."
+    },
+    {
+      "type": "choice",
+      "question": "Úřad ti měsíce nevyřizuje žádost a nikdo ti neodpoví. Na koho se obrátíš?",
+      "options": [
+        "na notáře",
+        "na státního zástupce",
+        "na Nejvyšší soud",
+        "na veřejného ochránce práv"
+      ],
+      "answer": 3,
+      "explanation": "Ombudsman prověří, jestli úřad postupuje správně."
     }
   ]
 }

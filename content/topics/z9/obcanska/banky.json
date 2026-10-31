@@ -401,6 +401,94 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi ČNB a obchodní bankou?",
       "answer": "ČNB je centrální banka: vydává peníze a hlídá stabilitu cen. Obchodní banka vede účty lidem a firmám a půjčuje peníze."
+    },
+    {
+      "type": "choice",
+      "question": "Jak nejlépe platit vyúčtování za telefon, jehož částka se každý měsíc mění?",
+      "options": [
+        "trvalým příkazem",
+        "inkasem",
+        "hotovostí",
+        "kreditní kartou"
+      ],
+      "answer": 1,
+      "explanation": "U inkasa si příjemce sám strhne částku, která se může měnit. Trvalý příkaz posílá stále stejnou částku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Občan si může založit účet v České národní bance.",
+      "answer": false,
+      "explanation": "ČNB je centrální banka. Účty lidem vedou obchodní banky."
+    },
+    {
+      "type": "input",
+      "question": "Kolik číslic má obvykle PIN k platební kartě?",
+      "answers": [
+        "4",
+        "čtyři"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Přijde SMS: „Vaše karta je zablokována, klikněte sem a zadejte PIN.“ O co jde?",
+      "options": [
+        "inkaso",
+        "trvalý příkaz",
+        "phishing",
+        "vklad"
+      ],
+      "answer": 2,
+      "explanation": "Je to podvodná zpráva. Banka se na PIN nikdy neptá."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo v ČR dohlíží na obchodní banky?",
+      "options": [
+        "Ministerstvo vnitra",
+        "Česká národní banka",
+        "finanční úřad",
+        "Senát"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Když peníze utracené kreditní kartou včas nevrátíš, platíš vysoké úroky.",
+      "answer": true,
+      "explanation": "Kreditní karta je půjčka od banky."
+    },
+    {
+      "type": "match",
+      "question": "Spoj způsob placení a situaci.",
+      "pairs": [
+        [
+          "trvalý příkaz",
+          "nájem každý měsíc"
+        ],
+        [
+          "inkaso",
+          "vyúčtování za telefon"
+        ],
+        [
+          "převod",
+          "jednorázová platba za zájezd"
+        ],
+        [
+          "hotovost",
+          "mince v pekárně"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je mezinárodní zkratka české koruny?",
+      "options": [
+        "CZE",
+        "EUR",
+        "CSK",
+        "CZK"
+      ],
+      "answer": 3
     }
   ]
 }

@@ -402,6 +402,93 @@
       "type": "open",
       "question": "Co znamená, že je člověk trestně odpovědný od 15 let?",
       "answer": "Od 15 let může být za trestný čin souzen a potrestán. Do 18 let je mladistvý a platí pro něj mírnější pravidla."
+    },
+    {
+      "type": "choice",
+      "question": "Co je zločin?",
+      "options": [
+        "méně závažný trestný čin",
+        "závažnější trestný čin, hrozí delší vězení",
+        "přestupek, který řeší úřad",
+        "porušení školního řádu"
+      ],
+      "answer": 1,
+      "explanation": "Trestné činy se dělí na přečiny (méně závažné) a zločiny (závažnější)."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejméně závažného po nejzávažnější.",
+      "items": [
+        "přestupek",
+        "přečin",
+        "zločin",
+        "zvlášť závažný zločin"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Dvanáctiletý Tom úmyslně rozbije výlohu. Jak se jeho čin nazývá?",
+      "options": [
+        "přečin",
+        "čin jinak trestný",
+        "zločin",
+        "trestný čin mladistvého"
+      ],
+      "answer": 1,
+      "explanation": "Dítě do 15 let není trestně odpovědné. Jeho čin se nazývá čin jinak trestný."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená podmíněný trest („podmínka“)?",
+      "options": [
+        "musí odpracovat hodiny pro obec",
+        "musí zaplatit peníze státu",
+        "do vězení jde, jen když znovu poruší zákon",
+        "nesmí řídit auto"
+      ],
+      "answer": 2,
+      "explanation": "Odsouzený zůstane na svobodě. Do vězení jde, když v době podmínky znovu poruší zákon."
+    },
+    {
+      "type": "match",
+      "question": "Spoj trest a co znamená.",
+      "pairs": [
+        [
+          "odnětí svobody",
+          "vězení"
+        ],
+        [
+          "peněžitý trest",
+          "zaplacení peněz"
+        ],
+        [
+          "zákaz činnosti",
+          "např. nesmí řídit"
+        ],
+        [
+          "obecně prospěšné práce",
+          "neplacená práce pro obec"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Přestupek řeší soud a trestá ho vězením.",
+      "answer": false,
+      "explanation": "Přestupek řeší úřad, trestem bývá napomenutí nebo pokuta."
+    },
+    {
+      "type": "input",
+      "question": "Jak se nazývá návrh státního zástupce, aby soud obžalovaného potrestal?",
+      "answers": [
+        "obžaloba"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mladistvým dává soud pro mládež spíš výchovná opatření nebo mírnější tresty než dospělým.",
+      "answer": true,
+      "explanation": "Pro mladistvé (15–18 let) platí mírnější pravidla."
     }
   ]
 }
