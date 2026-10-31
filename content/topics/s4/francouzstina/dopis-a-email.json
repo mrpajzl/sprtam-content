@@ -455,6 +455,59 @@
       "type": "open",
       "question": "Napiš ústně krátký e-mail kamarádovi z Francie: poděkuj za zprávu a pozvi ho na návštěvu.",
       "answer": "Například: *Salut Lucas ! Merci pour ton message. Tu veux venir à Prague cet été ? On pourrait visiter la ville ensemble. Écris-moi vite ! À bientôt, Petr*"
+    },
+    {
+      "type": "choice",
+      "question": "Jak ve formálním e-mailu napíšeš, že v příloze posíláš životopis?",
+      "options": [
+        "Tu trouves mon CV ici.",
+        "Je vous prie d’agréer mon CV.",
+        "Vous trouverez ci-joint mon CV."
+      ],
+      "answer": 2,
+      "explanation": "*ci-joint* = v příloze; formálně se vyká."
+    },
+    {
+      "type": "choice",
+      "question": "Jak oslovíš ve formálním dopise paní ředitelku školy?",
+      "options": [
+        "Chère Directrice,",
+        "Madame la Directrice,",
+        "Salut Madame !"
+      ],
+      "answer": 1,
+      "explanation": "Formální oslovení s titulem; titul zopakuješ i v závěrečné formuli."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta se hodí do úvodu formálního dopisu?",
+      "options": [
+        "J’espère que tu vas bien.",
+        "Je me permets de vous écrire afin de m’inscrire à votre cours.",
+        "Tu sais quoi ? Je viens en France !"
+      ],
+      "answer": 1,
+      "explanation": "Formální úvod: vykání a ustálená fráze *Je me permets de vous écrire…*"
+    },
+    {
+      "type": "input",
+      "question": "Jak se francouzsky řekne „tykat“? (infinitiv)",
+      "answers": [
+        "tutoyer"
+      ],
+      "explanation": "*tutoyer* = tykat, *vouvoyer* = vykat."
+    },
+    {
+      "type": "truefalse",
+      "question": "Formální dopis podepíšeš celým jménem, neformálnímu stačí křestní jméno.",
+      "answer": true,
+      "explanation": "*Tereza Nováková* × *Tereza*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Cher Monsieur,* je vhodné oslovení neznámé osoby v dopise úřadu.",
+      "answer": false,
+      "explanation": "*Cher Monsieur* jen osobě, kterou znáš. Neznámé osobě *Madame, Monsieur,*."
     }
   ]
 }

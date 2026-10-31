@@ -481,6 +481,56 @@
       "type": "open",
       "question": "Popiš francouzsky věc, kterou máš rád(a), a použij *dont* i *avec lequel/laquelle*.",
       "answer": "Například: *J’ai un vieux vélo dont je suis très fier. C’est le vélo avec lequel j’ai fait mon premier voyage.*"
+    },
+    {
+      "type": "choice",
+      "question": "C’est un résultat ___ je suis fier.",
+      "options": [
+        "que",
+        "dont",
+        "duquel"
+      ],
+      "answer": 1,
+      "explanation": "*être fier de* → *dont*."
+    },
+    {
+      "type": "choice",
+      "question": "Voici le parc près ___ j’habite.",
+      "options": [
+        "dont",
+        "de lequel",
+        "duquel"
+      ],
+      "answer": 2,
+      "explanation": "*près de* + *le parc* (m. r.) → *de + lequel = duquel*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: C’est une fête ___ je me souviens bien.",
+      "answers": [
+        "dont"
+      ],
+      "explanation": "*se souvenir de* → *dont*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Ce sont des questions ___ je n’ai pas pensé. (penser à + les questions = ž. r.)",
+      "answers": [
+        "auxquelles"
+      ],
+      "explanation": "*à + lesquelles = auxquelles*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*dont* stojí hned za podstatným jménem, ke kterému se vztahuje.",
+      "answer": true,
+      "explanation": "*C’est le livre **dont** je parle.*"
+    },
+    {
+      "type": "truefalse",
+      "question": "„La boîte dans lequel j’ai mis les photos“ je správně.",
+      "answer": false,
+      "explanation": "*la boîte* je ženského rodu → *dans laquelle*."
     }
   ]
 }

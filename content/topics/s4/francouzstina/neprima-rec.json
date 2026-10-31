@@ -502,6 +502,61 @@
       "type": "open",
       "question": "Převyprávěj francouzsky, co ti včera řekl a na co se ptal kamarád (aspoň jedno oznámení a jednu otázku).",
       "answer": "Například: *Mon ami m’a dit qu’il avait un nouveau chien. Il m’a demandé si je voulais le voir et quand je serais libre.*"
+    },
+    {
+      "type": "choice",
+      "question": "Il a dit : « Je vais partir. » → Il a dit qu’il ___ partir.",
+      "options": [
+        "va",
+        "allait",
+        "irait"
+      ],
+      "answer": 1,
+      "explanation": "Futur proche se po minulém uvozovacím slovese mění na *allait* + infinitiv."
+    },
+    {
+      "type": "choice",
+      "question": "« Qu’est-ce qui se passe ? » → Elle a demandé ___ se passait.",
+      "options": [
+        "qu’est-ce qui",
+        "ce que",
+        "ce qui"
+      ],
+      "answer": 2,
+      "explanation": "*qu’est-ce qui* (podmět) → *ce qui*."
+    },
+    {
+      "type": "input",
+      "question": "Jak se v nepřímé řeči v minulosti změní *hier*? (dvě slova)",
+      "answers": [
+        "la veille"
+      ],
+      "explanation": "*hier → la veille* (den předtím)."
+    },
+    {
+      "type": "input",
+      "question": "Doplň sloveso *aller*: Il m’a demandé : « Où vas-tu ? » → Il m’a demandé où j’___.",
+      "answers": [
+        "allais"
+      ],
+      "explanation": "Présent → imparfait: *j’allais*. Obrácený slovosled mizí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Elle a dit qu’elle était contente.* může vzniknout z « Je suis contente. » i z « J’étais contente. ».",
+      "answer": true,
+      "explanation": "Présent se posune na imparfait a imparfait zůstává imparfait, takže obě věty dají stejný výsledek."
+    },
+    {
+      "type": "choice",
+      "question": "Paul a dit : « J’ai fini mon travail aujourd’hui. » Která nepřímá řeč je správně?",
+      "options": [
+        "Paul a dit qu’il a fini mon travail aujourd’hui.",
+        "Paul a dit qu’il avait fini son travail ce jour-là.",
+        "Paul a dit qu’il finirait son travail ce jour-là."
+      ],
+      "answer": 1,
+      "explanation": "Passé composé → plus-que-parfait, *mon → son*, *aujourd’hui → ce jour-là*."
     }
   ]
 }

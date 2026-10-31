@@ -526,6 +526,59 @@
       "type": "open",
       "question": "Vyjádři francouzsky svůj názor na mobily ve škole: uveď příčinu, důsledek a přípustku.",
       "answer": "Například: *Je suis pour, parce que le portable est utile. Grâce à lui, on trouve vite des informations. Bien que certains élèves l’utilisent mal, on ne devrait pas l’interdire. C’est pourquoi je suis pour.*"
+    },
+    {
+      "type": "choice",
+      "question": "___ tu es là, aide-moi à porter ce sac.",
+      "options": [
+        "Car",
+        "Puisque",
+        "Donc"
+      ],
+      "answer": 1,
+      "explanation": "*puisque* = příčina, kterou oba znají (když už jsi tu). *car* nemůže začínat větu."
+    },
+    {
+      "type": "choice",
+      "question": "J’aime les langues, ___ j’apprends le français.",
+      "options": [
+        "bien que",
+        "grâce à",
+        "c’est pourquoi"
+      ],
+      "answer": 2,
+      "explanation": "Důsledek: …proto se učím francouzsky."
+    },
+    {
+      "type": "choice",
+      "question": "Il a beaucoup plu, ___ la rivière a débordé.",
+      "options": [
+        "bien que",
+        "si bien que",
+        "malgré"
+      ],
+      "answer": 1,
+      "explanation": "*si bien que* = takže (důsledek). *bien que* je přípustka."
+    },
+    {
+      "type": "input",
+      "question": "Doplň subjonctif od *faire*: Bien qu’il ___ froid, nous sortons.",
+      "answers": [
+        "fasse"
+      ],
+      "explanation": "*bien que* + subjonctif: *qu’il fasse*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*à cause de* se používá spíš u nepříznivé příčiny, *grâce à* u příznivé.",
+      "answer": true,
+      "explanation": "*à cause de la pluie* (kvůli), *grâce à ton aide* (díky)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Po *même si* následuje subjonctif: „Même s’il fasse froid, je sors.“",
+      "answer": false,
+      "explanation": "Po *même si* je indikativ: *Même s’il fait froid…*"
     }
   ]
 }
