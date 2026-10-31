@@ -595,6 +595,39 @@
       "type": "open",
       "question": "Řekni francouzsky, odkud jsi, kde bydlíš a kam bys chtěl(a) jet.",
       "answer": "Je viens de Tchéquie. J’habite à Plzeň. Je voudrais aller au Japon et aux États-Unis."
+    },
+    {
+      "type": "choice",
+      "question": "Tom vient ___ Japon. (Tom je z Japonska.)",
+      "options": [
+        "de",
+        "du",
+        "des"
+      ],
+      "answer": 1,
+      "explanation": "*le Japon* je mužská země → odkud = *de + le = du*."
+    },
+    {
+      "type": "choice",
+      "question": "Nous allons ___ Espagne.",
+      "options": [
+        "au",
+        "à",
+        "en"
+      ],
+      "answer": 2,
+      "explanation": "*l’Espagne* je ženská země → *en Espagne*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň stažený člen: Les enfants jouent ___ cartes. (hrají karty)",
+      "answers": [
+        "aux"
+      ],
+      "explanation": "*jouer à + les cartes = aux cartes*.",
+      "hints": [
+        "*cartes* je v množném čísle – co vznikne z *à + les*?"
+      ]
     }
   ]
 }

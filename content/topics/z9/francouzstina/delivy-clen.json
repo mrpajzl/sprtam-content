@@ -542,6 +542,42 @@
       "type": "open",
       "question": "Řekni francouzsky, co jíš a piješ k snídani a co nemáš rád.",
       "answer": "Au petit-déjeuner, je mange du pain avec de la confiture et je bois du lait. Je n’aime pas le café."
+    },
+    {
+      "type": "choice",
+      "question": "Je voudrais ___ fruits, s’il vous plaît.",
+      "options": [
+        "du",
+        "des",
+        "de la"
+      ],
+      "answer": 1,
+      "explanation": "*fruits* jsou v množném čísle → *des fruits*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: un kilo ___ pommes (kilo jablek)",
+      "answers": [
+        "de"
+      ],
+      "explanation": "Po množství (*un kilo*) jen *de* bez členu: *un kilo de pommes*."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Je mange de la confiture.* je správně.",
+      "answer": true,
+      "explanation": "*la confiture* je ženského rodu → dělivý člen *de la*."
+    },
+    {
+      "type": "choice",
+      "question": "Vous ___ du café ? (boire)",
+      "options": [
+        "boivez",
+        "buvez",
+        "boisez"
+      ],
+      "answer": 1,
+      "explanation": "*boire*: nous buvons, **vous buvez**, ils boivent."
     }
   ]
 }
