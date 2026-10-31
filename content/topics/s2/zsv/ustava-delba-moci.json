@@ -430,6 +430,69 @@
       "type": "open",
       "question": "Popiš, jak vzniká v ČR běžný zákon.",
       "answer": "Návrh projedná a schválí Poslanecká sněmovna, pak Senát (30 dní). Prezident má 15 dní na podpis nebo veto, které Sněmovna může přehlasovat 101 hlasy. Zákon je vyhlášen ve Sbírce zákonů."
+    },
+    {
+      "type": "input",
+      "question": "Kolik dní má Senát na projednání zákona, který mu poslala Sněmovna?",
+      "answers": [
+        "30"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik dní má prezident na to, aby zákon podepsal, nebo ho vrátil?",
+      "answers": [
+        "15"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se Senát k zákonu do 30 dní nevyjádří, platí, že ho schválil.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Prezident vrátil zákon. V sále sedí 180 poslanců a pro zákon jich hlasuje 95. Je veto přehlasováno?",
+      "options": [
+        "ano, je to většina přítomných",
+        "ne, potřeba je aspoň 101 hlasů",
+        "ano, stačí většina senátorů",
+        "ne, potřeba je aspoň 120 hlasů"
+      ],
+      "answer": 1,
+      "explanation": "K přehlasování veta je potřeba nadpoloviční většina všech 200 poslanců, tedy 101 – ne většina přítomných.",
+      "hints": [
+        "Rozhoduje většina přítomných, nebo všech poslanců?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik čtení má ve Sněmovně běžný návrh zákona?",
+      "options": [
+        "jedno",
+        "dvě",
+        "tři",
+        "čtyři"
+      ],
+      "answer": 2,
+      "explanation": "Seznámení s návrhem, úpravy (pozměňovací návrhy) a závěrečné hlasování."
+    },
+    {
+      "type": "choice",
+      "question": "Který dokument tvoří spolu s Ústavou ČR jádro ústavního pořádku?",
+      "options": [
+        "občanský zákoník",
+        "Listina základních práv a svobod",
+        "Sbírka zákonů",
+        "trestní zákoník"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Předsedu vlády jmenuje Poslanecká sněmovna.",
+      "answer": false,
+      "explanation": "Předsedu vlády jmenuje prezident. Vláda pak musí získat důvěru Poslanecké sněmovny."
     }
   ]
 }
