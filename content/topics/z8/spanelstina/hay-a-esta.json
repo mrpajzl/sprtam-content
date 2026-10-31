@@ -496,6 +496,66 @@
       "type": "open",
       "question": "Popiš španělsky svůj pokoj ve třech větách s *hay* a *está/están*.",
       "answer": "En mi habitación hay una cama y una mesa. La mesa está al lado de la ventana. Mis libros están encima de la mesa."
+    },
+    {
+      "type": "choice",
+      "question": "En la clase ___ veinte alumnos.",
+      "options": [
+        "están",
+        "hay",
+        "es"
+      ],
+      "answer": 1,
+      "explanation": "S číslem a novou informací → hay."
+    },
+    {
+      "type": "choice",
+      "question": "Las llaves ___ encima de la mesa.",
+      "options": [
+        "hay",
+        "está",
+        "están"
+      ],
+      "answer": 2,
+      "explanation": "Konkrétní věci (*las llaves*), víc než jedna, říkám kde → están."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Ana ___ en casa. (Ana je doma.)",
+      "answers": [
+        "está",
+        "esta"
+      ],
+      "explanation": "Se jménem konkrétního člověka a místem → está."
+    },
+    {
+      "type": "truefalse",
+      "question": "*De la* se stahuje stejně jako *de el*, takže správně je *al lado del mesa*.",
+      "answer": false,
+      "explanation": "Stahuje se jen *de + el = del*. Správně: *al lado de la mesa*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj další předložky místa s významem.",
+      "pairs": [
+        [
+          "delante de",
+          "před"
+        ],
+        [
+          "encima de",
+          "nahoře na"
+        ],
+        [
+          "lejos de",
+          "daleko od"
+        ],
+        [
+          "en",
+          "v, na"
+        ]
+      ],
+      "explanation": "Předložky místa: *delante de, encima de, lejos de, en*."
     }
   ]
 }

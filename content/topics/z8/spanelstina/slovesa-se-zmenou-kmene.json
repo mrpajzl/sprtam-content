@@ -462,6 +462,51 @@
       "type": "open",
       "question": "Objednej si španělsky v kavárně a zeptej se na cenu.",
       "answer": "Quiero un chocolate caliente, por favor. ¿Cuánto cuesta?"
+    },
+    {
+      "type": "choice",
+      "question": "La clase ___ a las ocho. (empezar)",
+      "options": [
+        "empeza",
+        "empieza",
+        "empiezan"
+      ],
+      "answer": 1,
+      "explanation": "Empezar e→ie, jedna věc (*la clase*) → empieza."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: Yo no ___ la pregunta. (entender)",
+      "answers": [
+        "entiendo"
+      ],
+      "explanation": "Entender e→ie v osobě yo: entiendo.",
+      "hints": [
+        "Je „yo“ v botě?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Nosotros ___ la frase. (repetir)",
+      "options": [
+        "repitimos",
+        "repiten",
+        "repetimos"
+      ],
+      "answer": 2,
+      "explanation": "Nosotros je mimo botu, kmen se nemění: repetimos."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Yo encuentro* je správný tvar slovesa *encontrar*.",
+      "answer": true,
+      "explanation": "Encontrar o→ue, yo je v botě: encuentro."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sloveso *preferir* mění kmen o→ue.",
+      "answer": false,
+      "explanation": "Preferir mění e→ie: *prefiero*."
     }
   ]
 }

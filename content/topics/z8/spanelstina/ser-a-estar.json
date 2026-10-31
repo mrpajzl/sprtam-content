@@ -541,6 +541,51 @@
       "type": "open",
       "question": "Popiš kamaráda: odkud je a jaký je (ser), kde je teď a jak se má (estar).",
       "answer": "Mi amigo Pavel es de Plzeň. Es alto y muy simpático. Ahora está en el colegio y está un poco cansado."
+    },
+    {
+      "type": "choice",
+      "question": "¿Qué hora es? ___ las ocho.",
+      "options": [
+        "Están",
+        "Son",
+        "Es"
+      ],
+      "answer": 1,
+      "explanation": "Čas se vyjadřuje slovesem ser. *Las ocho* je množné číslo → son."
+    },
+    {
+      "type": "choice",
+      "question": "Mi padre ___ alto, pero hoy ___ cansado.",
+      "options": [
+        "está / es",
+        "es / es",
+        "es / está"
+      ],
+      "answer": 2,
+      "explanation": "Výška je vlastnost → es. Únava je stav právě teď → está."
+    },
+    {
+      "type": "truefalse",
+      "question": "*Está* (je) a *esta* (tato) jsou dvě různá slova.",
+      "answer": true,
+      "explanation": "Tvar slovesa estar má čárku: *está*. Bez čárky je to *esta* = tato."
+    },
+    {
+      "type": "truefalse",
+      "question": "Povolání se vyjadřuje slovesem estar: *Están médicos.*",
+      "answer": false,
+      "explanation": "Povolání patří na „vizitku“ → ser: *Son médicos.*"
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar ser: Tú ___ muy simpática.",
+      "answers": [
+        "eres"
+      ],
+      "explanation": "Vlastnost → ser, tú → eres.",
+      "hints": [
+        "Je to vlastnost, nebo momentální stav?"
+      ]
     }
   ]
 }

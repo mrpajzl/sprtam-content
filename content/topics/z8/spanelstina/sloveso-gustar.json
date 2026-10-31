@@ -521,6 +521,42 @@
       "type": "open",
       "question": "Řekni španělsky, co máš rád a co ne (aspoň tři věty).",
       "answer": "Me gusta mucho la música. Me encantan los gatos. No me gustan las matemáticas."
+    },
+    {
+      "type": "choice",
+      "question": "A mis amigos ___ gusta el baloncesto.",
+      "options": [
+        "le",
+        "nos",
+        "les"
+      ],
+      "answer": 2,
+      "explanation": "Jim (mým kamarádům) → les."
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš „Bolí mě hlava“?",
+      "options": [
+        "Me duelen la cabeza.",
+        "Me duele la cabeza.",
+        "Me dole la cabeza."
+      ],
+      "answer": 1,
+      "explanation": "Hlava = jedna věc → duele (doler o→ue)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kamarád řekne *Me gusta el té.* Ty čaj nemáš rád. Odpovíš *A mí no.*",
+      "answer": true,
+      "explanation": "Nesouhlas s kladnou větou → *A mí no.*"
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slovesa: A Pablo le ___ la música. (interesar)",
+      "answers": [
+        "interesa"
+      ],
+      "explanation": "Jedna věc (*la música*) → interesa."
     }
   ]
 }
