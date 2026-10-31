@@ -403,6 +403,76 @@
       "type": "open",
       "question": "Vyslov binomickou větu.",
       "answer": "(a + b)ⁿ = C(n, 0)aⁿ + C(n, 1)aⁿ⁻¹b + … + C(n, n)bⁿ, tedy součet C(n, k)·aⁿ⁻ᵏ·bᵏ pro k od 0 do n."
+    },
+    {
+      "type": "input",
+      "question": "Koeficient u x³ v rozvoji (x + 2)⁵ =",
+      "answers": [
+        "40"
+      ],
+      "explanation": "C(5, 2) · 2² = 10 · 4 = 40",
+      "hints": [
+        "Obecný člen je C(5, k) · x⁵⁻ᵏ · 2ᵏ.",
+        "Pro x³ je 5 − k = 3, tedy k = 2."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "(a − b)⁴ =",
+      "options": [
+        "a⁴ − 4a³b − 6a²b² − 4ab³ − b⁴",
+        "a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴",
+        "a⁴ − 4a³b + 6a²b² − 4ab³ + b⁴",
+        "a⁴ − b⁴"
+      ],
+      "answer": 2,
+      "explanation": "Koeficienty 1 4 6 4 1, za b dosadíme −b: liché mocniny −b dávají minus."
+    },
+    {
+      "type": "input",
+      "question": "C(8, 2) =",
+      "answers": [
+        "28"
+      ],
+      "explanation": "8 · 7 / 2 = 28"
+    },
+    {
+      "type": "input",
+      "question": "Člen bez x v rozvoji (x + 1/x)⁶ =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "k = 3: C(6, 3) = 20",
+      "hints": [
+        "Obecný člen je C(6, k) · x⁶⁻ᵏ · (1/x)ᵏ = C(6, k) · x⁶⁻²ᵏ.",
+        "6 − 2k = 0"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Součet všech koeficientů rozvoje (x + 1)⁸ =",
+      "answers": [
+        "256"
+      ],
+      "explanation": "Dosaď x = 1: 2⁸ = 256"
+    },
+    {
+      "type": "truefalse",
+      "question": "V každém členu rozvoje (a + b)ⁿ je součet exponentů u a a u b roven n.",
+      "answer": true,
+      "explanation": "Člen C(n, k) · aⁿ⁻ᵏ · bᵏ má exponenty (n − k) + k = n."
+    },
+    {
+      "type": "input",
+      "question": "Koeficient u x² v rozvoji (x − 2)⁴ =",
+      "answers": [
+        "24"
+      ],
+      "explanation": "C(4, 2) · (−2)² = 6 · 4 = 24",
+      "hints": [
+        "Za b dosaď −2 i se znaménkem.",
+        "x² → k = 2, (−2)² = 4"
+      ]
     }
   ]
 }

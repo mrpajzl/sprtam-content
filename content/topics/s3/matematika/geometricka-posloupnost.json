@@ -378,6 +378,60 @@
       "type": "open",
       "question": "Kdy má nekonečná geometrická řada součet a jak ho spočítáš?",
       "answer": "Když |q| < 1 – členy se zmenšují k nule. Součet je s = a₁ / (1 − q)."
+    },
+    {
+      "type": "input",
+      "question": "a₁ = 5, q = 2. a₆ =",
+      "answers": [
+        "160"
+      ],
+      "explanation": "5 · 2⁵ = 5 · 32 = 160"
+    },
+    {
+      "type": "input",
+      "question": "81, 27, 9, … Kvocient q =",
+      "answers": [
+        "1/3"
+      ],
+      "explanation": "27 : 81 = 1/3"
+    },
+    {
+      "type": "input",
+      "question": "a₁ = 3, q = 2. Součet prvních 6 členů =",
+      "answers": [
+        "189"
+      ],
+      "explanation": "3 · (64 − 1)/1 = 189",
+      "hints": [
+        "sₙ = a₁ · (qⁿ − 1)/(q − 1)",
+        "2⁶ = 64"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "12 − 6 + 3 − 3/2 + … =",
+      "answers": [
+        "8"
+      ],
+      "explanation": "q = −1/2, s = 12 / (1 + 1/2) = 12 / (3/2) = 8",
+      "hints": [
+        "Kvocient je záporný: q = −6/12.",
+        "s = a₁ / (1 − q)"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Řada 1 − 1 + 1 − 1 + … má konečný součet.",
+      "answer": false,
+      "explanation": "q = −1, tedy |q| = 1. Členy se nezmenšují k nule, řada nekonverguje."
+    },
+    {
+      "type": "input",
+      "question": "Míček spadne z výšky 8 m a po každém odrazu vyskočí do poloviční výšky. Do jaké výšky (v metrech) vyskočí po 3. odrazu?",
+      "answers": [
+        "1"
+      ],
+      "explanation": "8 · (1/2)³ = 8/8 = 1"
     }
   ]
 }

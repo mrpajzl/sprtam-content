@@ -385,6 +385,84 @@
       "type": "open",
       "question": "Jak zjistíš vzájemnou polohu dvou přímek v rovině?",
       "answer": "Porovnám normálové (směrové) vektory: nejsou-li kolineární, jsou přímky různoběžné. Jsou-li, ověřím společný bod: totožné, jinak rovnoběžné různé."
+    },
+    {
+      "type": "input",
+      "question": "Přímka x = 2 + 3t, y = −1 + 2t. y-ová souřadnice bodu pro t = 2 =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "y = −1 + 2 · 2 = 3 (bod [8; 3])"
+    },
+    {
+      "type": "choice",
+      "question": "Přímka má směrový vektor s = (3; 5). Její normálový vektor je:",
+      "options": [
+        "(5; 3)",
+        "(−5; 3)",
+        "(3; −5)",
+        "(−3; 5)"
+      ],
+      "answer": 1,
+      "explanation": "n = (−s₂; s₁) = (−5; 3). Kontrola: 3 · (−5) + 5 · 3 = 0."
+    },
+    {
+      "type": "choice",
+      "question": "Obecná rovnice přímky AB, A[0; 2], B[2; 6]:",
+      "options": [
+        "2x + y − 2 = 0",
+        "x − 2y + 4 = 0",
+        "2x − y − 2 = 0",
+        "2x − y + 2 = 0"
+      ],
+      "answer": 3,
+      "explanation": "2 · 0 − 2 + c = 0 → c = 2. Kontrola B: 4 − 6 + 2 = 0.",
+      "hints": [
+        "s = B − A = (2; 4), normála n = (2; −1).",
+        "Rovnice 2x − y + c = 0, dosaď bod A."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Směrnice přímky 3x + 6y − 1 = 0: k =",
+      "answers": [
+        "−0,5",
+        "-0,5",
+        "−1/2",
+        "-1/2"
+      ],
+      "explanation": "6y = −3x + 1 → y = −x/2 + 1/6"
+    },
+    {
+      "type": "input",
+      "question": "Vzdálenost bodu [1; 2] od přímky 6x + 8y + 8 = 0 =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "|6 + 16 + 8| / √(36 + 64) = 30 / 10 = 3"
+    },
+    {
+      "type": "choice",
+      "question": "Jak leží přímky x + 2y − 3 = 0 a 2x + 4y − 6 = 0?",
+      "options": [
+        "různoběžné",
+        "rovnoběžné různé",
+        "totožné"
+      ],
+      "answer": 2,
+      "explanation": "Druhá rovnice je dvojnásobkem první – jde o tutéž přímku."
+    },
+    {
+      "type": "input",
+      "question": "Průsečík přímek 2x + y = 7 a x − y = 2: y =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "x = 3, y = 3 − 2 = 1",
+      "hints": [
+        "Sečti obě rovnice, y se odečte.",
+        "3x = 9"
+      ]
     }
   ]
 }

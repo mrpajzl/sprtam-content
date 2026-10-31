@@ -384,6 +384,68 @@
       "type": "open",
       "question": "Jak se změní povrch a objem, když všechny rozměry tělesa zvětšíš dvakrát?",
       "answer": "Povrch vzroste 2² = 4krát, objem 2³ = 8krát."
+    },
+    {
+      "type": "input",
+      "question": "Válec r = 3, v = 4. Povrch = k·π, k =",
+      "answers": [
+        "42"
+      ],
+      "explanation": "18π + 24π = 42π",
+      "hints": [
+        "S = 2πr² + 2πrv",
+        "2π · 9 = 18π a 2π · 3 · 4 = 24π"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Akvárium tvaru kvádru má vnitřní rozměry 2 dm × 5 dm × 6 dm. Kolik litrů vody se do něj vejde?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "V = 2 · 5 · 6 = 60 dm³ = 60 l"
+    },
+    {
+      "type": "input",
+      "question": "Koule r = 6. Objem = k·π, k =",
+      "answers": [
+        "288"
+      ],
+      "explanation": "4/3 · 216 = 288",
+      "hints": [
+        "V = 4/3 · πr³",
+        "6³ = 216"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Všechny rozměry tělesa zvětšíme 3×. Povrch vzroste:",
+      "options": [
+        "3×",
+        "6×",
+        "9×",
+        "27×"
+      ],
+      "answer": 2,
+      "explanation": "Povrch roste k²-krát: 3² = 9. Objem by vzrostl 3³ = 27×."
+    },
+    {
+      "type": "input",
+      "question": "Kužel r = 6, v = 8. Povrch = k·π, k =",
+      "answers": [
+        "96"
+      ],
+      "explanation": "36π + 60π = 96π",
+      "hints": [
+        "Nejdřív spočítej stranu s z Pythagorovy věty.",
+        "s = √(36 + 64) = 10, pak S = πr² + πrs."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Válec, koule a kužel se stejným poloměrem r a výškou 2r mají objemy v poměru 3 : 2 : 1.",
+      "answer": true,
+      "explanation": "Válec 2πr³, koule 4/3 πr³, kužel 2/3 πr³ – to je 3 : 2 : 1 (Archimédés)."
     }
   ]
 }

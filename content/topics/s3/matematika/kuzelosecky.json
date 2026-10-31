@@ -379,6 +379,63 @@
       "type": "open",
       "question": "Jak z obecné rovnice kružnice zjistíš střed a poloměr?",
       "answer": "Doplním členy s x a s y na čtverec a převedu na tvar (x − m)² + (y − n)² = r². Střed je S[m; n], poloměr r."
+    },
+    {
+      "type": "choice",
+      "question": "Střed kružnice (x + 1)² + (y − 4)² = 9:",
+      "options": [
+        "[1; −4]",
+        "[−1; 4]",
+        "[1; 4]",
+        "[−1; −4]"
+      ],
+      "answer": 1,
+      "explanation": "x + 1 = x − (−1), tedy m = −1; y − 4 dává n = 4."
+    },
+    {
+      "type": "input",
+      "question": "x² + y² + 4x − 2y − 4 = 0. Poloměr r =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "(x + 2)² + (y − 1)² = 4 + 1 + 4 = 9, r = 3",
+      "hints": [
+        "Doplň členy s x a s y na čtverec.",
+        "x² + 4x = (x + 2)² − 4, y² − 2y = (y − 1)² − 1"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hyperbola x²/16 − y²/9 = 1. Výstřednost e =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "U hyperboly e = √(a² + b²) = √(16 + 9) = 5"
+    },
+    {
+      "type": "input",
+      "question": "Elipsa x²/169 + y²/25 = 1. Výstřednost e =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "e = √(169 − 25) = √144 = 12"
+    },
+    {
+      "type": "choice",
+      "question": "Přímka y = 3 a kružnice x² + y² = 25 jsou:",
+      "options": [
+        "tečna a kružnice",
+        "sečna a kružnice",
+        "nemají společný bod"
+      ],
+      "answer": 1,
+      "explanation": "x² + 9 = 25 → x² = 16, x = ±4. Dva společné body [−4; 3] a [4; 3]."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnice x² + y² = 9 popisuje kružnici s poloměrem 9.",
+      "answer": false,
+      "explanation": "Na pravé straně je r² = 9, tedy r = 3."
     }
   ]
 }

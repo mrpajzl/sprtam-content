@@ -357,6 +357,73 @@
       "type": "open",
       "question": "Odvoď součet prvních n členů aritmetické posloupnosti.",
       "answer": "Sečtu posloupnost s ní samou v obráceném pořadí. Každá dvojice dává a₁ + aₙ, dvojic je n, tedy 2sₙ = n(a₁ + aₙ)."
+    },
+    {
+      "type": "input",
+      "question": "a₁ = 7, d = −2. a₈ =",
+      "answers": [
+        "−7",
+        "-7"
+      ],
+      "explanation": "7 + 7 · (−2) = −7"
+    },
+    {
+      "type": "input",
+      "question": "a₃ = 10, a₇ = 22. d =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "22 − 10 = 12 = 4d → d = 3",
+      "hints": [
+        "Mezi a₃ a a₇ jsou 4 kroky.",
+        "a₇ − a₃ = 4d"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "2 + 4 + 6 + … + 40 =",
+      "answers": [
+        "420"
+      ],
+      "explanation": "20/2 · (2 + 40) = 10 · 42 = 420",
+      "hints": [
+        "Kolik sčítanců je? 40 je dvacátý člen.",
+        "sₙ = n/2 · (a₁ + aₙ)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která posloupnost NENÍ aritmetická?",
+      "options": [
+        "10, 7, 4, 1",
+        "5, 5, 5, 5",
+        "1, 3, 6, 10",
+        "−3, −1, 1, 3"
+      ],
+      "answer": 2,
+      "explanation": "Rozdíly 2, 3, 4 nejsou stejné. Posloupnost 5, 5, 5, 5 je aritmetická s d = 0."
+    },
+    {
+      "type": "input",
+      "question": "aₙ = 4n − 3. a₁₂ =",
+      "answers": [
+        "45"
+      ],
+      "explanation": "4 · 12 − 3 = 45"
+    },
+    {
+      "type": "truefalse",
+      "question": "Body grafu aritmetické posloupnosti leží na přímce.",
+      "answer": true,
+      "explanation": "Každý člen je o stejné d větší než předchozí – stejně jako lineární funkce."
+    },
+    {
+      "type": "input",
+      "question": "Šetříš: 1. týden dáš do pokladničky 20 Kč, každý další týden o 5 Kč víc. Kolik korun dáš v 10. týdnu?",
+      "answers": [
+        "65"
+      ],
+      "explanation": "a₁₀ = 20 + 9 · 5 = 65"
     }
   ]
 }

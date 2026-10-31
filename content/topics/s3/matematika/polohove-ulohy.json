@@ -408,6 +408,78 @@
       "type": "open",
       "question": "Jak sestrojíš řez krychle rovinou?",
       "answer": "Spojuji body roviny ležící v téže stěně. Využívám, že rovnoběžné stěny protne rovina v rovnoběžných přímkách, a průsečíky prodloužených hran."
+    },
+    {
+      "type": "input",
+      "question": "Krychle s hranou 5. Stěnová úhlopříčka = k·√2, k =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "u = a√2 = 5√2"
+    },
+    {
+      "type": "choice",
+      "question": "Krychle ABCDEFGH: přímky AD a BF jsou:",
+      "options": [
+        "rovnoběžné",
+        "mimoběžné",
+        "různoběžné"
+      ],
+      "answer": 1,
+      "explanation": "AD je vodorovná hrana vlevo dole, BF svislá hrana vpravo vpředu. Nemají společný bod a neleží v jedné rovině."
+    },
+    {
+      "type": "choice",
+      "question": "Krychle ABCDEFGH: tělesové úhlopříčky AG a CE jsou:",
+      "options": [
+        "mimoběžné",
+        "rovnoběžné",
+        "různoběžné"
+      ],
+      "answer": 2,
+      "explanation": "Obě procházejí středem krychle, tam se protnou."
+    },
+    {
+      "type": "input",
+      "question": "Krychle ABCDEFGH: odchylka přímek AB a CH (°) =",
+      "answers": [
+        "45"
+      ],
+      "explanation": "CH ∥ BE a úhel mezi hranou AB a úhlopříčkou BE ve čtverci ABFE je 45°.",
+      "hints": [
+        "Přímky jsou mimoběžné – posuň CH rovnoběžně tak, aby protnula AB.",
+        "CH je úhlopříčka zadní stěny, je rovnoběžná s úhlopříčkou BE přední stěny ABFE."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Přímka a rovina mohou mít právě dva společné body.",
+      "answer": false,
+      "explanation": "Přímka v rovině leží (nekonečně mnoho bodů), je s ní rovnoběžná (0 bodů), nebo ji protíná v 1 bodě."
+    },
+    {
+      "type": "input",
+      "question": "Krychle s hranou 3. Vzdálenost rovnoběžek AB a HG = k·√2, k =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Vzdálenost je délka stěnové úhlopříčky BG = 3√2.",
+      "hints": [
+        "AB a HG leží ve stěnách ABCD a EFGH na protějších stranách krychle.",
+        "Spojnice B a G je kolmá k oběma přímkám – je to stěnová úhlopříčka."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Rovina je jednoznačně určena:",
+      "options": [
+        "dvěma různými body",
+        "třemi body, které neleží na jedné přímce",
+        "třemi libovolnými body",
+        "jednou přímkou"
+      ],
+      "answer": 1,
+      "explanation": "Tři body na jedné přímce určují jen přímku – rovin jí prochází nekonečně mnoho."
     }
   ]
 }

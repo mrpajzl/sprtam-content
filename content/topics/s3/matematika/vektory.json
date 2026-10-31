@@ -367,6 +367,77 @@
       "type": "open",
       "question": "Jak spočítáš velikost vektoru AB ze souřadnic bodů?",
       "answer": "Spočítám souřadnice AB = B − A a pak |AB| = √((b₁ − a₁)² + (b₂ − a₂)²) – je to Pythagorova věta."
+    },
+    {
+      "type": "choice",
+      "question": "A[5; 1], B[2; 7]. Vektor AB =",
+      "options": [
+        "(3; −6)",
+        "(7; 8)",
+        "(−3; 6)",
+        "(−3; −6)"
+      ],
+      "answer": 2,
+      "explanation": "AB = B − A = (2 − 5; 7 − 1) = (−3; 6)"
+    },
+    {
+      "type": "input",
+      "question": "|u| pro u = (5; 12) =",
+      "answers": [
+        "13"
+      ],
+      "explanation": "√(25 + 144) = √169 = 13"
+    },
+    {
+      "type": "input",
+      "question": "A[−2; 3], B[4; −5]. |AB| =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "√(36 + 64) = √100 = 10",
+      "hints": [
+        "Nejdřív spočítej AB = B − A.",
+        "AB = (6; −8)"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "u = (4; −3), v = (2; 5). u·v =",
+      "answers": [
+        "−7",
+        "-7"
+      ],
+      "explanation": "4 · 2 + (−3) · 5 = 8 − 15 = −7"
+    },
+    {
+      "type": "choice",
+      "question": "3 · (2; −1) − (1; 4) =",
+      "options": [
+        "(5; 1)",
+        "(7; −7)",
+        "(6; −7)",
+        "(5; −7)"
+      ],
+      "answer": 3,
+      "explanation": "(6; −3) − (1; 4) = (5; −7)"
+    },
+    {
+      "type": "input",
+      "question": "Pro jaké a jsou vektory (a; 2) a (3; −6) kolmé? a =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "3a − 12 = 0 → a = 4",
+      "hints": [
+        "Kolmé vektory mají skalární součin 0.",
+        "3a + 2 · (−6) = 0"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Vektory (2; 3) a (4; 5) jsou kolineární.",
+      "answer": false,
+      "explanation": "2 · (2; 3) = (4; 6) ≠ (4; 5). Žádný násobek (2; 3) nedá (4; 5)."
     }
   ]
 }

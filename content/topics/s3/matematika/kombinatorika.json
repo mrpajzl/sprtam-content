@@ -397,6 +397,53 @@
       "type": "open",
       "question": "Vysvětli pravidlo součinu na příkladu.",
       "answer": "Když první volbu lze udělat m způsoby a ke každé druhou n způsoby, je všech možností m · n. Např. 3 trička a 2 kalhoty dají 6 oblečení."
+    },
+    {
+      "type": "input",
+      "question": "Závodí 8 běžců. Kolika způsoby mohou obsadit 1., 2. a 3. místo?",
+      "answers": [
+        "336"
+      ],
+      "explanation": "V(8, 3) = 8 · 7 · 6 = 336",
+      "hints": [
+        "Záleží na pořadí – jde o variace.",
+        "8 · 7 · 6"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "C(7, 3) =",
+      "answers": [
+        "35"
+      ],
+      "explanation": "7 · 6 · 5 / (3 · 2 · 1) = 210 / 6 = 35"
+    },
+    {
+      "type": "input",
+      "question": "Kolik různých „slov“ vznikne přeskládáním písmen slova KOLO?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "4 písmena, O je dvakrát: 4! / 2! = 24 / 2 = 12"
+    },
+    {
+      "type": "choice",
+      "question": "Z 10 žáků vybíráme 3 do týmu, všichni mají stejnou roli. Jde o:",
+      "options": [
+        "variace",
+        "kombinace",
+        "variace s opakováním"
+      ],
+      "answer": 1,
+      "explanation": "Na pořadí nezáleží a nikdo nemůže být vybrán dvakrát → kombinace C(10, 3)."
+    },
+    {
+      "type": "input",
+      "question": "Kolik třímístných kódů vytvoříš z písmen A, B, C, D, když se písmena smějí opakovat?",
+      "answers": [
+        "64"
+      ],
+      "explanation": "Variace s opakováním: 4³ = 64"
     }
   ]
 }
