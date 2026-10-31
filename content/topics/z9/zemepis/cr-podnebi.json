@@ -350,6 +350,105 @@
       "type": "open",
       "question": "Vysvětli srážkový stín na příkladu.",
       "answer": "Vlhký vzduch od západu stoupá přes Krušné hory, ochlazuje se a vyprší na návětrné straně. Za horami na Žatecku pak padá málo srážek."
+    },
+    {
+      "type": "choice",
+      "question": "Který měsíc je v Česku v průměru nejteplejší?",
+      "options": [
+        "červen",
+        "červenec",
+        "srpen",
+        "září"
+      ],
+      "answer": 1,
+      "explanation": "Nejteplejší je červenec, nejchladnější leden."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď podnebné pásy od rovníku k pólu.",
+      "items": [
+        "tropický",
+        "subtropický",
+        "mírný",
+        "subpolární",
+        "polární"
+      ],
+      "explanation": "Česko leží v mírném pásu."
+    },
+    {
+      "type": "input",
+      "question": "Na každých 100 m výšky klesne teplota asi o 0,6 °C. O kolik °C bude chladněji na kopci, který je o 500 m výš? Rozdíl v °C =",
+      "answers": [
+        "3",
+        "3,0"
+      ],
+      "explanation": "500 m = 5 × 100 m, 5 × 0,6 °C = 3 °C.",
+      "hints": [
+        "Kolikrát se 100 m vejde do 500 m?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Počasí popisuje, jak to na místě obvykle bývá za mnoho let.",
+      "answer": false,
+      "explanation": "To je podnebí. Počasí je, jak je venku právě teď."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké počasí asi přinese v lednu vítr od východu?",
+      "options": [
+        "oblevu a déšť",
+        "mlhu a mokrý sníh",
+        "bouřky a kroupy",
+        "jasno a silné mrazy"
+      ],
+      "answer": 3,
+      "explanation": "Vzduch z pevniny je suchý a v zimě velmi studený."
+    },
+    {
+      "type": "choice",
+      "question": "Na které straně hor obvykle prší nejvíc?",
+      "options": [
+        "na návětrné",
+        "na závětrné",
+        "na obou stejně"
+      ],
+      "answer": 0,
+      "explanation": "Vzduch na návětrné straně stoupá, ochlazuje se a vyprší. Za horami je srážkový stín."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při inverzi se v údolí drží studený vzduch a hromadí se v něm smog.",
+      "answer": true,
+      "explanation": "Nahoře je tepleji než dole, studený vzduch zůstane v údolí jako pod pokličkou."
+    },
+    {
+      "type": "match",
+      "question": "Spoj typ podnebí s popisem.",
+      "pairs": [
+        [
+          "oceánské",
+          "mírné zimy, hodně srážek"
+        ],
+        [
+          "pevninské",
+          "mrazivé zimy, horká léta, málo srážek"
+        ],
+        [
+          "přechodné",
+          "střídá se vliv oceánu a pevniny"
+        ]
+      ],
+      "explanation": "Česko má přechodné podnebí."
+    },
+    {
+      "type": "input",
+      "question": "Srážky se měří v milimetrech. Kolik litrů vody na 1 m² znamená 1 mm srážek? Litrů =",
+      "answers": [
+        "1",
+        "jeden"
+      ],
+      "explanation": "1 mm srážek = 1 litr vody na 1 m²."
     }
   ]
 }
