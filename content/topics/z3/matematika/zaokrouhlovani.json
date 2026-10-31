@@ -460,6 +460,62 @@
       "type": "open",
       "question": "K čemu je zaokrouhlování dobré v obchodě?",
       "answer": "Rychle odhadnu cenu. Třeba 48 Kč + 31 Kč je asi 50 + 30 = 80 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Sešit stojí 38 Kč. Zaokrouhli cenu na desítky.",
+      "answers": [
+        "40"
+      ],
+      "explanation": "Rozhoduje 8 → nahoru."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 653 na stovky.",
+      "answers": [
+        "700"
+      ],
+      "explanation": "Rozhoduje desítka 5 → nahoru."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 285 na desítky.",
+      "answers": [
+        "290"
+      ],
+      "explanation": "Rozhoduje 5 → k desítkám přidám 1."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 960 na stovky.",
+      "answers": [
+        "1000",
+        "1 000"
+      ],
+      "explanation": "Rozhoduje desítka 6 → nahoru: 9 + 1 = 10 stovek = 1 000."
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo po zaokrouhlení na stovky dá 300?",
+      "options": [
+        "249",
+        "281",
+        "352"
+      ],
+      "answer": 1,
+      "explanation": "249 ≈ 200, 281 ≈ 300, 352 ≈ 400."
+    },
+    {
+      "type": "truefalse",
+      "question": "407 ≈ 410 (na desítky)",
+      "answer": true,
+      "explanation": "Rozhoduje 7 → nahoru."
+    },
+    {
+      "type": "truefalse",
+      "question": "250 ≈ 200 (na stovky)",
+      "answer": false,
+      "explanation": "Rozhoduje desítka 5 → nahoru: 250 ≈ 300."
     }
   ]
 }
