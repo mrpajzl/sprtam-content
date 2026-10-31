@@ -551,6 +551,65 @@
       "type": "open",
       "question": "Jak se zeptáš kamaráda a jak dospělého, odkud je? V čem je rozdíl?",
       "answer": "Kamarádovi tykám: Woher kommst du? Dospělému vykám: Woher kommen Sie? U vykání je Sie a sloveso má koncovku -en."
+    },
+    {
+      "type": "choice",
+      "question": "Je 9 hodin večer a jdeš spát. Co řekneš mamince?",
+      "options": [
+        "Guten Abend!",
+        "Gute Nacht!",
+        "Guten Tag!"
+      ],
+      "answer": 1,
+      "explanation": "Před spaním se říká Gute Nacht! = Dobrou noc!"
+    },
+    {
+      "type": "choice",
+      "question": "Jsi ze Švýcarska. Jak to řekneš?",
+      "options": [
+        "Ich komme aus Schweiz.",
+        "Ich komme von der Schweiz.",
+        "Ich komme aus der Schweiz."
+      ],
+      "answer": 2,
+      "explanation": "Před Schweiz stojí die, proto aus der Schweiz."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tázací slovo s českým významem.",
+      "pairs": [
+        [
+          "wie",
+          "jak"
+        ],
+        [
+          "woher",
+          "odkud"
+        ],
+        [
+          "wo",
+          "kde"
+        ],
+        [
+          "wer",
+          "kdo"
+        ]
+      ],
+      "explanation": "Tázací slovo stojí na začátku otázky a říká, na co se ptáš."
+    },
+    {
+      "type": "truefalse",
+      "question": "Paní ve vlaku se zeptáš: „Woher kommst du?“",
+      "answer": false,
+      "explanation": "Cizí dospělé paní vykáš: Woher kommen Sie?"
+    },
+    {
+      "type": "input",
+      "question": "Doplň sloveso: Wo ___ du? (Kde bydlíš?)",
+      "answers": [
+        "wohnst"
+      ],
+      "explanation": "wohnen = bydlet, pro du je tvar wohnst."
     }
   ]
 }

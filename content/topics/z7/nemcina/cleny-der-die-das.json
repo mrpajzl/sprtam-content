@@ -575,6 +575,53 @@
       "type": "open",
       "question": "Kdy použiješ „kein“ a kdy „nicht“? Dej příklad.",
       "answer": "kein/keine zapírá podstatné jméno, které by mělo ein/eine nebo žádný člen: Das ist kein Hund. nicht zapírá ostatní, třeba přídavné jméno: Ich bin nicht müde."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký člen má „Montag“ (pondělí)?",
+      "options": [
+        "die",
+        "der",
+        "das"
+      ],
+      "answer": 1,
+      "explanation": "Dny v týdnu jsou mužského rodu: der Montag."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký člen má „Freiheit“ (svoboda)?",
+      "options": [
+        "das",
+        "der",
+        "die"
+      ],
+      "answer": 2,
+      "explanation": "Slova na -heit jsou ženského rodu: die Freiheit."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň zájmeno: Das Buch ist gut. ___ ist neu.",
+      "options": [
+        "Er",
+        "Es",
+        "Sie"
+      ],
+      "answer": 1,
+      "explanation": "das Buch je střední rod → es."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Junge“ (kluk) končí na -e, a proto má člen die.",
+      "answer": false,
+      "explanation": "Junge je výjimka: kluk je mužského rodu → der Junge."
+    },
+    {
+      "type": "input",
+      "question": "Doplň zápor: Das ist ___ Auto. (To není auto.)",
+      "answers": [
+        "kein"
+      ],
+      "explanation": "das Auto je střední → kein Auto."
     }
   ]
 }

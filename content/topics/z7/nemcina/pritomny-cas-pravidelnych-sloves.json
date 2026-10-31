@@ -508,6 +508,53 @@
       "type": "open",
       "question": "Řekni německy tři věty o tom, co děláš ve volném čase.",
       "answer": "Ich spiele Fußball. Ich höre gern Musik. Ich koche mit meiner Mama. (Hraju fotbal, rád poslouchám hudbu, vařím s mámou.)"
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Meine Mutter ___ viel. (arbeiten)",
+      "options": [
+        "arbeitt",
+        "arbeiten",
+        "arbeitet"
+      ],
+      "answer": 2,
+      "explanation": "Kmen arbeit končí na t, proto se před -t vkládá e: arbeitet."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Du ___ gut. (tanzen)",
+      "options": [
+        "tanzst",
+        "tanzt",
+        "tanzest"
+      ],
+      "answer": 1,
+      "explanation": "Kmen tanz končí na z, u du se přidá jen -t: du tanzt."
+    },
+    {
+      "type": "input",
+      "question": "Jaký je kmen slovesa „kochen“ (vařit)?",
+      "answers": [
+        "koch"
+      ],
+      "explanation": "Z infinitivu ustřihneš -en: koch|en → koch."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Ihr lernt Deutsch.“ je správně.",
+      "answer": true,
+      "explanation": "ihr → -t: ihr lernt."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Co děláš rád?“",
+      "items": [
+        "Was",
+        "machst",
+        "du",
+        "gern?"
+      ],
+      "explanation": "Tázací slovo, sloveso, du a nakonec gern."
     }
   ]
 }
