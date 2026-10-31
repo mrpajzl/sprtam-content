@@ -383,6 +383,86 @@
       "type": "open",
       "question": "Co je slang a co argot? Uveď příklady.",
       "answer": "Slang je řeč zájmové nebo věkové skupiny – žáků, sportovců, hráčů (matika, tělák). Argot je řeč uzavřených skupin, původně zlodějů a vězňů (fízl = policista)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tvar obecné češtiny se znakem, podle kterého ho poznáš.",
+      "pairs": [
+        [
+          "dobrý pivo",
+          "ý místo é"
+        ],
+        [
+          "bejt",
+          "ej místo ý"
+        ],
+        [
+          "vokno",
+          "v- na začátku"
+        ],
+        [
+          "mlíko",
+          "í místo é"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš spisovně: *dobrý pivo*",
+      "answers": [
+        "dobré pivo"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Napiš spisovně: *bejvali*",
+      "answers": [
+        "bývali"
+      ],
+      "explanation": "ej → ý."
+    },
+    {
+      "type": "choice",
+      "question": "Do kterého útvaru patří slovo *fárat* (sjíždět do dolu)?",
+      "options": [
+        "slang",
+        "profesní mluva",
+        "argot"
+      ],
+      "answer": 1,
+      "explanation": "Používají ho horníci – lidé stejné profese."
+    },
+    {
+      "type": "choice",
+      "question": "Co je kodifikace?",
+      "options": [
+        "řeč určitého kraje",
+        "překlad z cizího jazyka",
+        "zapsání spisovné normy do pravidel a slovníků"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Slang a argot jsou totéž.",
+      "answer": false,
+      "explanation": "Slangem mluví zájmová skupina (žáci, sportovci), argotem uzavřená skupina (dříve zloději)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nespisovná čeština je v pořádku v běžném hovoru s kamarády.",
+      "answer": true,
+      "explanation": "Chyba je jen použít ji na nesprávném místě, třeba v písemce."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo kodifikuje spisovnou češtinu (připravuje pravidla a slovníky)?",
+      "options": [
+        "Česká televize",
+        "Ústav pro jazyk český",
+        "Národní muzeum"
+      ],
+      "answer": 1
     }
   ]
 }

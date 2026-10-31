@@ -359,6 +359,77 @@
       "type": "open",
       "question": "Kdy píšeme čárku před *jako* a *než*?",
       "answer": "Když uvozují vedlejší větu se slovesem (Udělal to, jako by se nic nestalo.). Ve srovnání bez slovesa čárka není (silný jako medvěd, vyšší než já)."
+    },
+    {
+      "type": "choice",
+      "question": "Kde je přímá řeč s uvozovací větou uprostřed napsaná správně?",
+      "options": [
+        "„Přijdu,“ řekl Petr, „Ale pozdě.“",
+        "„Přijdu“ řekl Petr „ale pozdě.“",
+        "„Přijdu,“ řekl Petr, „ale pozdě.“"
+      ],
+      "answer": 2,
+      "explanation": "Čárky z obou stran uvozovací věty, druhá část řeči malým písmenem."
+    },
+    {
+      "type": "choice",
+      "question": "Která přímá řeč s vykřičníkem je napsaná správně?",
+      "options": [
+        "„Pojď sem!“, zavolala máma.",
+        "„Pojď sem!“ zavolala máma.",
+        "„Pojď sem!“ Zavolala máma."
+      ],
+      "answer": 1,
+      "explanation": "Za vykřičníkem čárka není a uvozovací věta začíná malým písmenem."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta se srovnáním je napsaná správně?",
+      "options": [
+        "Je vyšší, než já.",
+        "Je vyšší než já."
+      ],
+      "answer": 1,
+      "explanation": "Po než není sloveso – jen srovnání, bez čárky."
+    },
+    {
+      "type": "input",
+      "question": "Kolik čárek patří do věty *Pan Novák náš soused je lékař.*? Napiš číslo.",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Přístavek z obou stran: Pan Novák, náš soused, je lékař."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Je vyšší, než jsem já.* je čárka správně.",
+      "answer": true,
+      "explanation": "Po než následuje věta se slovesem (jsem)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nepřímá řeč se píše v uvozovkách.",
+      "answer": false,
+      "explanation": "Nepřímá řeč je převyprávěná, bez uvozovek: Petr řekl, že přijde."
+    },
+    {
+      "type": "input",
+      "question": "Kolik čárek patří do věty *Ne to nevím ale zeptám se.*? Napiš číslo.",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Ne, to nevím, ale zeptám se."
+    },
+    {
+      "type": "choice",
+      "question": "Jak správně převedeš *Petr řekl: „Přijdu zítra.“* na nepřímou řeč?",
+      "options": [
+        "Petr řekl, že přijde zítra.",
+        "Petr řekl že přijde zítra.",
+        "Petr řekl: že přijde zítra."
+      ],
+      "answer": 0,
+      "explanation": "Vedlejší věta se odděluje čárkou, dvojtečka ani uvozovky tam nejsou."
     }
   ]
 }

@@ -343,6 +343,79 @@
       "type": "open",
       "question": "Rozeber souvětí *Když jsme přišli domů, máma vařila a táta četl noviny, které ráno koupil.*",
       "answer": "Čtyři věty. Hlavní: máma vařila, táta četl noviny (slučovací poměr). VV časová: když jsme přišli domů. VV přívlastková: které ráno koupil (rozvíjí slovo noviny)."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí *Vím, že přijdeš, až skončí trénink.*?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Slovesa vím, přijdeš, skončí → 3 věty."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh vedlejší věty: *Řekl, že přijde.*",
+      "options": [
+        "přívlastková",
+        "předmětná",
+        "příčinná"
+      ],
+      "answer": 1,
+      "explanation": "Co řekl? → předmětná."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh vedlejší věty: *Zůstali jsme doma, protože pršelo.*",
+      "options": [
+        "časová",
+        "podmětná",
+        "příčinná"
+      ],
+      "answer": 2,
+      "explanation": "Proč jsme zůstali doma? → příčinná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Před slučovacím *a* mezi dvěma hlavními větami píšeme čárku.",
+      "answer": false,
+      "explanation": "Máma vařila a táta četl. – před slučovacím a čárka není."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta je napsaná správně?",
+      "options": [
+        "Dům, který stojí na kopci je starý.",
+        "Dům, který stojí na kopci, je starý.",
+        "Dům který stojí na kopci, je starý."
+      ],
+      "answer": 1,
+      "explanation": "Vložená věta se odděluje čárkami z obou stran."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má *Chci číst knihu.*? Napiš číslo.",
+      "answers": [
+        "1"
+      ],
+      "explanation": "Sloveso v určitém tvaru je jen chci. Infinitiv číst se nepočítá."
+    },
+    {
+      "type": "choice",
+      "question": "Na které větě závisí věta *až dodělá úkol* v souvětí *Řekl, že přijde, až dodělá úkol.*?",
+      "options": [
+        "na větě *Řekl*",
+        "na větě *že přijde*"
+      ],
+      "answer": 1,
+      "explanation": "Kdy přijde? → až dodělá úkol. Vedlejší věta visí na jiné vedlejší."
+    },
+    {
+      "type": "input",
+      "question": "Kolik hlavních vět má souvětí *Petr říkal, že nemá čas, ale nakonec přišel.*?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Hlavní: Petr říkal, ale nakonec přišel (odporovací poměr). Že nemá čas je vedlejší."
     }
   ]
 }
