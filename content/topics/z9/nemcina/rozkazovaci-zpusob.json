@@ -523,6 +523,51 @@
       "type": "open",
       "question": "Dej německy tři pokyny: kamarádovi, celé třídě a paní učitelce.",
       "answer": "Kamarádovi: Hilf mir bitte! Třídě: Seid bitte leise! Paní učitelce: Wiederholen Sie das bitte!"
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro jednoho kamaráda od slovesa schreiben: ___ mir bald!",
+      "answers": [
+        "Schreib",
+        "Schreibe"
+      ],
+      "explanation": "du schreibst → škrtnu du a -st → Schreib!"
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš celé třídě „Pište!“?",
+      "options": [
+        "Schreib!",
+        "Schreiben!",
+        "Schreibt!"
+      ],
+      "answer": 2,
+      "explanation": "ihr schreibt → Schreibt!"
+    },
+    {
+      "type": "input",
+      "question": "Rozkaz pro jednoho kamaráda od slovesa essen: ___ dein Brot!",
+      "answers": [
+        "Iss"
+      ],
+      "explanation": "du isst → Iss! (změna e → i zůstává)"
+    },
+    {
+      "type": "choice",
+      "question": "Jak řekneš panu Müllerovi „Počkejte prosím!“?",
+      "options": [
+        "Wartet bitte!",
+        "Warten Sie bitte!",
+        "Warte Sie bitte!"
+      ],
+      "answer": 1,
+      "explanation": "Vykání: sloveso + Sie."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Lest den Text!“ je rozkaz pro víc kamarádů (ihr).",
+      "answer": true,
+      "explanation": "ihr lest → Lest!"
     }
   ]
 }
