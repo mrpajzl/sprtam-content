@@ -370,6 +370,83 @@
       "type": "open",
       "question": "Co a čím můžeš měřit? Uveď tři příklady.",
       "answer": "Délku měřím metrem v metrech, hmotnost váhou v kilogramech, teplotu teploměrem ve stupních Celsia, objem odměrkou v litrech a čas hodinami."
+    },
+    {
+      "type": "input",
+      "question": "Láhev má 1,5 l. Kolik je to mililitrů?",
+      "answers": [
+        "1500"
+      ],
+      "explanation": "1000 ml + 500 ml = 1500 ml.",
+      "hints": [
+        "1 l = 1000 ml",
+        "Půl litru je 500 ml."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik kilogramů je 1 tuna?",
+      "answers": [
+        "1000"
+      ],
+      "explanation": "1 t = 1000 kg."
+    },
+    {
+      "type": "choice",
+      "question": "Hrnek je z porcelánu. Co je v této větě látka?",
+      "options": [
+        "hrnek",
+        "porcelán"
+      ],
+      "answer": 1,
+      "explanation": "Hrnek je těleso (konkrétní věc), porcelán je látka, ze které je vyrobený."
+    },
+    {
+      "type": "match",
+      "question": "Spoj věc se skupenstvím.",
+      "pairs": [
+        [
+          "kámen",
+          "pevné"
+        ],
+        [
+          "voda",
+          "kapalné"
+        ],
+        [
+          "vzduch",
+          "plynné"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Cukr se ve vodě rozpustil, takže z vody úplně zmizel.",
+      "answer": false,
+      "explanation": "Cukr ve vodě zůstal, jen se rozptýlil na nepatrné částečky. Proto je čaj sladký."
+    },
+    {
+      "type": "choice",
+      "question": "Co přitáhne magnet?",
+      "options": [
+        "dřevěnou kostku",
+        "plastové víčko",
+        "kancelářskou sponku",
+        "papír"
+      ],
+      "answer": 2,
+      "explanation": "Magnet přitahuje železo, třeba sponku nebo hřebík."
+    },
+    {
+      "type": "choice",
+      "question": "Teploměr ukazuje 38,5 °C. Co to znamená?",
+      "options": [
+        "člověk má horečku",
+        "člověk je zdravý",
+        "člověk je podchlazený"
+      ],
+      "answer": 0,
+      "explanation": "Zdravý člověk má asi 36–37 °C, 38,5 °C je horečka."
     }
   ]
 }
