@@ -327,6 +327,79 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi koulí a kulovou plochou?",
       "answer": "Kulová plocha jsou body ve vzdálenosti přesně r od středu – jen „slupka“. Koule obsahuje i celý vnitřek."
+    },
+    {
+      "type": "input",
+      "question": "Koule r = 5 cm, π ≈ 3,14. Povrch v cm²?",
+      "answers": [
+        "314"
+      ],
+      "explanation": "4 · 3,14 · 25 = 314"
+    },
+    {
+      "type": "input",
+      "question": "Míček má průměr 4 cm, π ≈ 3,14. Povrch v cm²?",
+      "answers": [
+        "50,24"
+      ],
+      "explanation": "r = 2, S = 4 · 3,14 · 4 = 50,24",
+      "hints": [
+        "Nejdřív poloměr: r = d : 2."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Koule r = 6 cm, π ≈ 3,14. Objem v cm³?",
+      "answers": [
+        "904,32"
+      ],
+      "explanation": "288 · 3,14 = 904,32",
+      "hints": [
+        "r³ = 6 · 6 · 6 = 216",
+        "4/3 · 216 = 288"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vzorec pro povrch koule:",
+      "options": [
+        "4/3 · πr³",
+        "πr²",
+        "4πr²",
+        "2πr"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "Každý bod kulové plochy je od středu vzdálený přesně r.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Když poloměr koule ztrojnásobíš, objem se zvětší…",
+      "options": [
+        "3krát",
+        "9krát",
+        "27krát",
+        "6krát"
+      ],
+      "answer": 2,
+      "explanation": "3³ = 27"
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát je povrch koule větší než obsah kruhu se stejným poloměrem?",
+      "answers": [
+        "4"
+      ],
+      "explanation": "4πr² : πr² = 4 – jako slupka pomeranče, která vyplní 4 kruhy."
+    },
+    {
+      "type": "truefalse",
+      "question": "Povrch koule se udává v cm³.",
+      "answer": false,
+      "explanation": "Povrch je plocha – cm². V cm³ se udává objem."
     }
   ]
 }

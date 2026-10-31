@@ -345,6 +345,79 @@
       "type": "open",
       "question": "Na co si dát pozor při braní půjčky?",
       "answer": "Porovnat RPSN, protože zahrnuje úrok i poplatky. Zjistit celkovou částku, kterou vrátím, a zda splátky zvládnu."
+    },
+    {
+      "type": "input",
+      "question": "Úrok z 30 000 Kč při 4 % ročně za 1 rok (v Kč):",
+      "answers": [
+        "1200",
+        "1 200"
+      ],
+      "explanation": "1 % je 300 Kč, 4 % je 1 200 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Úrok je 1 200 Kč, daň z úroku 15 %. Kolik je daň?",
+      "options": [
+        "15 Kč",
+        "120 Kč",
+        "180 Kč",
+        "1 020 Kč"
+      ],
+      "answer": 2,
+      "explanation": "1 200 · 0,15 = 180 Kč"
+    },
+    {
+      "type": "input",
+      "question": "20 000 Kč, 5 % ročně, složené úročení, 2 roky (bez daně). Kolik Kč?",
+      "answers": [
+        "22050",
+        "22 050"
+      ],
+      "explanation": "20 000 · 1,05 = 21 000, 21 000 · 1,05 = 22 050",
+      "hints": [
+        "Každý rok násob 1,05."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vklad 40 000 Kč, jednoduchý úrok 3 % ročně. Úrok za 3 roky v Kč?",
+      "answers": [
+        "3600",
+        "3 600"
+      ],
+      "explanation": "40 000 · 0,03 · 3 = 3 600"
+    },
+    {
+      "type": "input",
+      "question": "Cena bez DPH 500 Kč, DPH 21 %. Cena s DPH v Kč?",
+      "answers": [
+        "605"
+      ],
+      "explanation": "500 · 1,21 = 605"
+    },
+    {
+      "type": "choice",
+      "question": "Co zahrnuje RPSN?",
+      "options": [
+        "jen úrok",
+        "úrok i poplatky",
+        "jen poplatky",
+        "daň z úroku"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Při jednoduchém úročení dostaneš každý rok stejný úrok.",
+      "answer": true,
+      "explanation": "Úrok se počítá stále jen z původní jistiny."
+    },
+    {
+      "type": "truefalse",
+      "question": "Inflace znamená, že si za stejné peníze koupíš víc.",
+      "answer": false,
+      "explanation": "Inflace je růst cen – za stejné peníze koupíš méně."
     }
   ]
 }

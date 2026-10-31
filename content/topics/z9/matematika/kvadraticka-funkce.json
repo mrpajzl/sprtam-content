@@ -311,6 +311,81 @@
       "type": "open",
       "question": "Co se stane s grafem y = x², když ho změníš na y = x² − 3?",
       "answer": "Celá parabola se posune o 3 dolů. Vrchol bude v bodě [0; −3]."
+    },
+    {
+      "type": "input",
+      "question": "y = x² + 3. Kolik je y pro x = −2?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "(−2)² + 3 = 4 + 3 = 7"
+    },
+    {
+      "type": "choice",
+      "question": "Vrchol paraboly y = x² − 5:",
+      "options": [
+        "[−5; 0]",
+        "[0; 5]",
+        "[0; −5]",
+        "[5; 0]"
+      ],
+      "answer": 2,
+      "explanation": "Parabola y = x² posunutá o 5 dolů."
+    },
+    {
+      "type": "choice",
+      "question": "Parabola y = 0,5x² − 3 je otevřená…",
+      "options": [
+        "dolů",
+        "nahoru"
+      ],
+      "answer": 1,
+      "explanation": "a = 0,5 > 0"
+    },
+    {
+      "type": "choice",
+      "question": "Kolik průsečíků s osou x má parabola y = x² + 1?",
+      "options": [
+        "žádný",
+        "jeden",
+        "dva"
+      ],
+      "answer": 0,
+      "explanation": "x² + 1 je vždy aspoň 1, nikdy 0."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vrchol paraboly y = −x² je její nejvyšší bod.",
+      "answer": true,
+      "explanation": "a = −1 < 0, parabola je otevřená dolů."
+    },
+    {
+      "type": "input",
+      "question": "y = −x² + 4. Kolik je y pro x = 3?",
+      "answers": [
+        "−5",
+        "-5"
+      ],
+      "explanation": "−9 + 4 = −5",
+      "hints": [
+        "Nejdřív umocni: 3² = 9."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Funkce y = x² nabývá i záporných hodnot.",
+      "answer": false,
+      "explanation": "Druhá mocnina je vždy nezáporná, nejmenší hodnota je 0."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak nakreslit parabolu z tabulky.",
+      "items": [
+        "Vyber několik x kolem nuly.",
+        "Dosaď je do předpisu a spočítej y.",
+        "Zakresli body do grafu.",
+        "Spoj body plynulým obloukem."
+      ]
     }
   ]
 }

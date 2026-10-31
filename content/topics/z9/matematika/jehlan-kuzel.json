@@ -311,6 +311,83 @@
       "type": "open",
       "question": "Z čeho se skládá povrch kužele?",
       "answer": "Z podstavy – kruhu πr² – a pláště, což je kruhová výseč s obsahem πrs, kde s je strana kužele."
+    },
+    {
+      "type": "input",
+      "question": "Jehlan: podstava čtverec 3 cm × 3 cm, výška 8 cm. Objem v cm³?",
+      "answers": [
+        "24"
+      ],
+      "explanation": "9 · 8 : 3 = 24"
+    },
+    {
+      "type": "input",
+      "question": "Kužel r = 6 cm, v = 8 cm. Strana s v cm?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "s² = 36 + 64 = 100, s = 10"
+    },
+    {
+      "type": "input",
+      "question": "Kužel r = 2 cm, v = 6 cm, π ≈ 3,14. Objem v cm³?",
+      "answers": [
+        "25,12"
+      ],
+      "explanation": "3,14 · 4 · 6 : 3 = 25,12"
+    },
+    {
+      "type": "input",
+      "question": "Kužel r = 6 cm, s = 10 cm, π ≈ 3,14. Povrch v cm²?",
+      "answers": [
+        "301,44"
+      ],
+      "explanation": "113,04 + 188,4 = 301,44",
+      "hints": [
+        "Povrch = podstava πr² + plášť πrs.",
+        "Podstava 113,04 cm²"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik stěn má trojboký jehlan?",
+      "options": [
+        "3",
+        "5",
+        "4",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "3 boční trojúhelníky + trojúhelníková podstava"
+    },
+    {
+      "type": "input",
+      "question": "Kužel s = 13 cm, r = 5 cm. Výška v cm?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "v² = 169 − 25 = 144, v = 12",
+      "hints": [
+        "s je přepona: v² = s² − r²."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Výška jehlanu se měří po šikmé boční stěně.",
+      "answer": false,
+      "explanation": "Výška je kolmá vzdálenost vrcholu od podstavy."
+    },
+    {
+      "type": "choice",
+      "question": "Kužel má objem 50 cm³. Válec se stejnou podstavou a výškou má…",
+      "options": [
+        "150 cm³",
+        "100 cm³",
+        "50 cm³",
+        "25 cm³"
+      ],
+      "answer": 0,
+      "explanation": "Válec má trojnásobný objem: 3 · 50 = 150"
     }
   ]
 }

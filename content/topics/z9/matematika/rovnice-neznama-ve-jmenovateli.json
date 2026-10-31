@@ -287,6 +287,89 @@
       "type": "open",
       "question": "Proč musíš kořen porovnat s podmínkami?",
       "answer": "Násobením výrazem s neznámou může vzniknout kořen, pro který by byl jmenovatel nulový. Takový kořen řešením není."
+    },
+    {
+      "type": "input",
+      "question": "15/x = 3, x =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "15 = 3x → x = 5"
+    },
+    {
+      "type": "input",
+      "question": "8/(x − 1) = 4, x =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "8 = 4(x − 1) → 12 = 4x → x = 3",
+      "hints": [
+        "Vynásob obě strany (x − 1).",
+        "8 = 4x − 4"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "(x + 3)/(x − 2) = 2, x =",
+      "answers": [
+        "7"
+      ],
+      "explanation": "x + 3 = 2(x − 2) → x = 7. Kontrola: 10/5 = 2 ✓",
+      "hints": [
+        "Podmínka x ≠ 2. Vynásob (x − 2).",
+        "x + 3 = 2x − 4"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "12/x − 1 = 3, x =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "12/x = 4 → 12 = 4x → x = 3"
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je podmínka rovnice 3/(x − 5) = 2/x?",
+      "options": [
+        "jen x ≠ 5",
+        "x ≠ 5 a x ≠ 0",
+        "x ≠ −5 a x ≠ 0",
+        "jen x ≠ 0"
+      ],
+      "answer": 1,
+      "explanation": "Nulový nesmí být ani jeden jmenovatel: x − 5 ≠ 0 a x ≠ 0."
+    },
+    {
+      "type": "input",
+      "question": "3/(x − 5) = 2/x, x =",
+      "answers": [
+        "−10",
+        "-10"
+      ],
+      "explanation": "3x = 2x − 10 → x = −10. Kontrola: 3/(−15) = 2/(−10) = −1/5 ✓",
+      "hints": [
+        "Vynásob obě strany x(x − 5).",
+        "3x = 2(x − 5)"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik řešení má rovnice (x + 1)/(x − 3) = 4/(x − 3)?",
+      "options": [
+        "jedno, x = 3",
+        "žádné",
+        "jedno, x = −3",
+        "nekonečně mnoho"
+      ],
+      "answer": 1,
+      "explanation": "Vynásobením vyjde x + 1 = 4, tedy x = 3. To ale porušuje podmínku x ≠ 3."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnice 5/x = 0 nemá žádné řešení.",
+      "answer": true,
+      "explanation": "Vynásobením x dostaneš 5 = 0, a to neplatí nikdy. Zlomek je nulový, jen když je nulový čitatel."
     }
   ]
 }

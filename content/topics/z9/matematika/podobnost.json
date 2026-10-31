@@ -331,6 +331,90 @@
       "type": "open",
       "question": "Proč se obsah zvětší k²-krát?",
       "answer": "Obsah je součin dvou délek. Každá z nich se zvětší k-krát, takže obsah k · k = k²-krát."
+    },
+    {
+      "type": "input",
+      "question": "Obdélník 5 cm × 3 cm zvětšíme s k = 4. Delší strana v cm?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "5 · 4 = 20"
+    },
+    {
+      "type": "input",
+      "question": "Útvar s obsahem 36 cm² zmenšíme s k = 0,5. Nový obsah v cm²?",
+      "answers": [
+        "9"
+      ],
+      "explanation": "0,5² = 0,25 a 36 · 0,25 = 9",
+      "hints": [
+        "Obsah se změní k²-krát."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterému trojúhelníku je podobný trojúhelník se stranami 6, 8, 10?",
+      "options": [
+        "4, 5, 6",
+        "3, 4, 5",
+        "6, 9, 10",
+        "2, 3, 4"
+      ],
+      "answer": 1,
+      "explanation": "Všechny strany jsou 2krát delší než 3, 4, 5."
+    },
+    {
+      "type": "input",
+      "question": "△ABC ∼ △KLM, |AB| = 6, |KL| = 9, |BC| = 4. |LM| =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "k = 9 : 6 = 1,5 a 4 · 1,5 = 6",
+      "hints": [
+        "Nejdřív spočítej k = |KL| : |AB|."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Trojúhelníky se stranami 2, 3, 4 a 4, 6, 9 jsou podobné.",
+      "answer": false,
+      "explanation": "4 : 2 = 2 a 6 : 3 = 2, ale 9 : 4 = 2,25. Poměr není stejný."
+    },
+    {
+      "type": "match",
+      "question": "Spoj větu o podobnosti trojúhelníků s podmínkou.",
+      "pairs": [
+        [
+          "sss",
+          "tři dvojice stran ve stejném poměru"
+        ],
+        [
+          "uu",
+          "dva shodné úhly"
+        ],
+        [
+          "sus",
+          "dvě strany v poměru a úhel mezi nimi"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na mapě 1 : 50 000 je vzdálenost 4 cm. Kolik km je to ve skutečnosti?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "4 · 50 000 = 200 000 cm = 2 km",
+      "hints": [
+        "Skutečnost je 50 000krát větší.",
+        "100 000 cm = 1 km"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zmenšenina má koeficient podobnosti menší než 1.",
+      "answer": true,
+      "explanation": "k < 1 znamená zmenšení, k > 1 zvětšení."
     }
   ]
 }

@@ -346,6 +346,74 @@
       "type": "open",
       "question": "Popiš graf funkce y = 1/x.",
       "answer": "Hyperbola se dvěma větvemi v I. a III. kvadrantu. Přibližuje se k osám, ale nikdy je neprotne."
+    },
+    {
+      "type": "input",
+      "question": "y = 18/x. Kolik je y pro x = 9?",
+      "answers": [
+        "2"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "y = 24/x. Kolik je x, když y = 8?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "x = k : y = 24 : 8 = 3"
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterých kvadrantech leží větve grafu y = −6/x?",
+      "options": [
+        "v I. a III.",
+        "ve II. a IV.",
+        "v I. a II.",
+        "ve III. a IV."
+      ],
+      "answer": 1,
+      "explanation": "k = −6 < 0, větve jsou ve II. a IV. kvadrantu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod [3; 4] leží na grafu y = 12/x.",
+      "answer": true,
+      "explanation": "12 : 3 = 4"
+    },
+    {
+      "type": "truefalse",
+      "question": "Tabulka x: 2, 4, 8 a y: 8, 4, 2 popisuje nepřímou úměrnost.",
+      "answer": true,
+      "explanation": "Součin x · y je pokaždé 16."
+    },
+    {
+      "type": "truefalse",
+      "question": "Graf funkce y = 5/x protne osu x.",
+      "answer": false,
+      "explanation": "5/x není nikdy nula, graf osu x neprotne."
+    },
+    {
+      "type": "input",
+      "question": "6 dělníků postaví plot za 4 dny. Za kolik dní ho postaví 8 dělníků?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "6 · 4 = 24 dělnických dní, 24 : 8 = 3",
+      "hints": [
+        "Dělníci · dny = stálé číslo."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Bod [−3; 4] leží na grafu y = k/x. k =",
+      "options": [
+        "12",
+        "1",
+        "−1",
+        "−12"
+      ],
+      "answer": 3,
+      "explanation": "k = x · y = (−3) · 4 = −12"
     }
   ]
 }

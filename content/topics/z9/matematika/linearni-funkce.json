@@ -306,6 +306,91 @@
       "type": "open",
       "question": "Co je funkce?",
       "answer": "Předpis, který každému číslu x z definičního oboru přiřadí právě jedno číslo y."
+    },
+    {
+      "type": "input",
+      "question": "y = −2x + 7. Kolik je y pro x = 5?",
+      "answers": [
+        "−3",
+        "-3"
+      ],
+      "explanation": "−2 · 5 + 7 = −10 + 7 = −3"
+    },
+    {
+      "type": "choice",
+      "question": "Která funkce je rostoucí?",
+      "options": [
+        "y = −x + 2",
+        "y = 0,5x − 3",
+        "y = 4",
+        "y = −3x"
+      ],
+      "answer": 1,
+      "explanation": "Rostoucí je ta s k > 0, tady k = 0,5."
+    },
+    {
+      "type": "input",
+      "question": "Přímka y = 2x − 6 protne osu x v x =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "0 = 2x − 6 → 2x = 6 → x = 3",
+      "hints": [
+        "Na ose x je y = 0."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod [1; 4] leží na grafu y = 3x − 2.",
+      "answer": false,
+      "explanation": "3 · 1 − 2 = 1, ne 4."
+    },
+    {
+      "type": "choice",
+      "question": "Přímka prochází body [0; 4] a [1; 1]. Její rovnice:",
+      "options": [
+        "y = 3x + 4",
+        "y = x + 4",
+        "y = −3x + 4",
+        "y = 4x + 1"
+      ],
+      "answer": 2,
+      "explanation": "Pro x = 0 je y = 4, tedy q = 4. Když x vzroste o 1, y klesne o 3, tedy k = −3."
+    },
+    {
+      "type": "match",
+      "question": "Spoj funkci s jejím průběhem.",
+      "pairs": [
+        [
+          "y = 2x + 1",
+          "rostoucí"
+        ],
+        [
+          "y = −x + 3",
+          "klesající"
+        ],
+        [
+          "y = 3",
+          "konstantní"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Půjčovna kol: 50 Kč za zapůjčení a 20 Kč za každou hodinu. Kolik Kč zaplatíš za 4 hodiny?",
+      "answers": [
+        "130"
+      ],
+      "explanation": "20 · 4 + 50 = 130",
+      "hints": [
+        "Předpis: y = 20x + 50"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Graf funkce y = 4x prochází bodem [0; 0].",
+      "answer": true,
+      "explanation": "q = 0, takže pro x = 0 je y = 0."
     }
   ]
 }
