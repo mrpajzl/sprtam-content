@@ -331,6 +331,79 @@
       "type": "open",
       "question": "Vyjmenuj měsíce od ledna.",
       "answer": "Leden, únor, březen, duben, květen, červen, červenec, srpen, září, říjen, listopad, prosinec."
+    },
+    {
+      "type": "input",
+      "question": "Kolik ročních období má rok?",
+      "answers": [
+        "4",
+        "čtyři"
+      ],
+      "explanation": "Jaro, léto, podzim a zima."
+    },
+    {
+      "type": "choice",
+      "question": "Který měsíc je před květnem?",
+      "options": [
+        "červen",
+        "duben",
+        "březen"
+      ],
+      "answer": 1,
+      "explanation": "Popořadě: březen, duben, květen."
+    },
+    {
+      "type": "choice",
+      "question": "Teď je listopad. Který měsíc bude za dva měsíce?",
+      "options": [
+        "prosinec",
+        "únor",
+        "leden"
+      ],
+      "answer": 2,
+      "explanation": "Po listopadu je prosinec a po něm začne nový rok lednem."
+    },
+    {
+      "type": "choice",
+      "question": "Které měsíce patří k létu?",
+      "options": [
+        "červen, červenec, srpen",
+        "září, říjen, listopad",
+        "březen, duben, květen"
+      ],
+      "answer": 0,
+      "explanation": "Léto má červen, červenec a srpen."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nový rok je 1. ledna.",
+      "answer": true,
+      "explanation": "Nový rok je první den roku, 1. ledna."
+    },
+    {
+      "type": "truefalse",
+      "question": "Červenec je 6. měsíc v roce.",
+      "answer": false,
+      "explanation": "Šestý je červen, červenec je až sedmý."
+    },
+    {
+      "type": "input",
+      "question": "Kolik měsíců má jedno roční období?",
+      "answers": [
+        "3",
+        "tři"
+      ],
+      "explanation": "12 měsíců rozdělím na 4 období: každé má 3 měsíce."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď měsíce od září.",
+      "items": [
+        "září",
+        "říjen",
+        "listopad",
+        "prosinec"
+      ]
     }
   ]
 }

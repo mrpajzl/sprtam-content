@@ -347,6 +347,93 @@
       "type": "open",
       "question": "Co doma může být nebezpečné?",
       "answer": "Zásuvky, sporák, nože, zápalky, léky a čisticí prostředky."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená zkratka PSČ?",
+      "options": [
+        "poštovní stanice čísel",
+        "poštovní směrovací číslo",
+        "přesné směrové číslo"
+      ],
+      "answer": 1,
+      "explanation": "PSČ je poštovní směrovací číslo. Podle něj pošta pozná, kam dopis poslat."
+    },
+    {
+      "type": "input",
+      "question": "Kolik číslic má PSČ?",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "PSČ má pět číslic, například 123 45."
+    },
+    {
+      "type": "choice",
+      "question": "Co napíšeš na první řádek adresy?",
+      "options": [
+        "PSČ a obec",
+        "ulici a číslo domu",
+        "jméno a příjmení"
+      ],
+      "answer": 2,
+      "explanation": "Adresa začíná jménem a příjmením. Pak ulice a číslo, nakonec PSČ a obec."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na adresu stačí napsat jen jméno a obec.",
+      "answer": false,
+      "explanation": "V obci žije mnoho lidí. Bez ulice a čísla domu by pošťák nevěděl, kam jít."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které místnosti odpočíváš s rodinou?",
+      "options": [
+        "v koupelně",
+        "v obývacím pokoji",
+        "v kuchyni"
+      ],
+      "answer": 1,
+      "explanation": "Obývací pokoj je místnost, kde rodina odpočívá spolu."
+    },
+    {
+      "type": "choice",
+      "question": "Proč si nehraju se zápalkami?",
+      "options": [
+        "můžu způsobit požár",
+        "rychle se ztratí",
+        "jsou drahé"
+      ],
+      "answer": 0,
+      "explanation": "Ze zápalek a zapalovače může vzniknout požár."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rodinný dům a byt jsou dvě různá místa, kde se dá bydlet.",
+      "answer": true,
+      "explanation": "Domov může být byt v domě s více rodinami nebo rodinný dům."
+    },
+    {
+      "type": "match",
+      "question": "Spoj věc a čím může ublížit.",
+      "pairs": [
+        [
+          "nůž",
+          "říznutí"
+        ],
+        [
+          "sporák",
+          "spálení"
+        ],
+        [
+          "zásuvka",
+          "elektrický proud"
+        ],
+        [
+          "léky",
+          "otrava"
+        ]
+      ]
     }
   ]
 }

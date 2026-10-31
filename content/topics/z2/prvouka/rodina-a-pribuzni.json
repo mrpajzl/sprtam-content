@@ -320,6 +320,89 @@
       "type": "open",
       "question": "Jak slavíte v rodině svátky nebo narozeniny?",
       "answer": "Například se sejdeme, dáme si dárky, upečeme dort a přejeme si."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo je táta mé mámy?",
+      "options": [
+        "strýc",
+        "dědeček",
+        "bratranec"
+      ],
+      "answer": 1,
+      "explanation": "Rodič mojí mámy je o patro výš než ona. Je to můj dědeček."
+    },
+    {
+      "type": "input",
+      "question": "Kolik babiček má každý člověk?",
+      "answers": [
+        "2",
+        "dvě"
+      ],
+      "explanation": "Jedna babička je máma mámy, druhá máma táty."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo je dcera mé tety?",
+      "options": [
+        "sestra",
+        "teta",
+        "sestřenice"
+      ],
+      "answer": 2,
+      "explanation": "Dítě tety, holka, je sestřenice."
+    },
+    {
+      "type": "truefalse",
+      "question": "Syn mé tety je můj bratr.",
+      "answer": false,
+      "explanation": "Bratr má stejné rodiče jako já. Syn tety je můj bratranec."
+    },
+    {
+      "type": "choice",
+      "question": "Co je rodokmen?",
+      "options": [
+        "obrázek rodiny jako strom",
+        "seznam kamarádů",
+        "kniha o stromech"
+      ],
+      "answer": 0,
+      "explanation": "Rodokmen ukazuje, kdo je čí dítě a čí rodič."
+    },
+    {
+      "type": "truefalse",
+      "question": "Já a moje sestra patříme do stejné generace.",
+      "answer": true,
+      "explanation": "Sourozenci jsou jedno patro rodokmenu – jedna generace."
+    },
+    {
+      "type": "choice",
+      "question": "Táta má bratra Karla. Kdo je Karel mně?",
+      "options": [
+        "dědeček",
+        "strýc",
+        "bratranec"
+      ],
+      "answer": 1,
+      "explanation": "Bratr mého rodiče je můj strýc."
+    },
+    {
+      "type": "match",
+      "question": "Spoj příbuzného a kým je.",
+      "pairs": [
+        [
+          "táta táty",
+          "dědeček"
+        ],
+        [
+          "syn strýce",
+          "bratranec"
+        ],
+        [
+          "dcera tety",
+          "sestřenice"
+        ]
+      ]
     }
   ]
 }

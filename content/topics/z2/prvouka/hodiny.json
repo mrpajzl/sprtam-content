@@ -315,6 +315,81 @@
       "type": "open",
       "question": "V kolik hodin chodíš do školy a v kolik spát?",
       "answer": "Například do školy v 7:30 a spát v 8 hodin večer."
+    },
+    {
+      "type": "input",
+      "question": "Kolik minut jsou tři čtvrtě hodiny?",
+      "answers": [
+        "45"
+      ],
+      "explanation": "15 + 15 + 15 = 45 minut."
+    },
+    {
+      "type": "choice",
+      "question": "Co ukazuje velká ručička?",
+      "options": [
+        "dny",
+        "minuty",
+        "hodiny"
+      ],
+      "answer": 1,
+      "explanation": "Velká ručička ukazuje minuty. Malá ukazuje hodiny."
+    },
+    {
+      "type": "choice",
+      "question": "Velká ručička je na 9, malá těsně před 4. Kolik je?",
+      "options": [
+        "tři čtvrtě na tři",
+        "tři čtvrtě na čtyři",
+        "čtvrt na čtyři"
+      ],
+      "answer": 1,
+      "explanation": "Velká na 9 → tři čtvrtě. Blížíme se ke 4 → tři čtvrtě na čtyři (3:45)."
+    },
+    {
+      "type": "choice",
+      "question": "6:30 je…",
+      "options": [
+        "půl šesté",
+        "půl sedmé",
+        "čtvrt na sedm"
+      ],
+      "answer": 1,
+      "explanation": "Šest hodin už uběhlo a jdeme k sedmé – je půl sedmé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Půl hodiny je 50 minut.",
+      "answer": false,
+      "explanation": "Hodina má 60 minut. Polovina ze 60 je 30."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když je velká ručička na 12, je celá hodina.",
+      "answer": true,
+      "explanation": "Velká ručička na 12 znamená celou hodinu, třeba 3:00."
+    },
+    {
+      "type": "choice",
+      "question": "Film začíná ve 4:00 a trvá půl hodiny. Kdy skončí?",
+      "options": [
+        "4:15",
+        "4:30",
+        "5:00"
+      ],
+      "answer": 1,
+      "explanation": "Půl hodiny = 30 minut. 4:00 + 30 minut = 4:30, tedy půl páté.",
+      "hints": [
+        "Kolik minut je půl hodiny?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik minut jsou dvě čtvrthodiny?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "15 + 15 = 30 minut, to je půl hodiny."
     }
   ]
 }

@@ -369,6 +369,88 @@
       "type": "open",
       "question": "Jmenuj strom, keř a bylinu.",
       "answer": "Například strom dub, keř líska a bylina pampeliška."
+    },
+    {
+      "type": "choice",
+      "question": "Která rostlina je keř?",
+      "options": [
+        "dub",
+        "líska",
+        "pampeliška"
+      ],
+      "answer": 1,
+      "explanation": "Líska má víc tenkých větví hned od země – je to keř."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou kůru má bříza?",
+      "options": [
+        "bílou",
+        "červenou",
+        "modrou"
+      ],
+      "answer": 0,
+      "explanation": "Bříza má bílou kůru a malé listy."
+    },
+    {
+      "type": "truefalse",
+      "question": "Modřín je jehličnatý strom.",
+      "answer": true,
+      "explanation": "Modřín má jehlice, i když je na podzim shazuje."
+    },
+    {
+      "type": "truefalse",
+      "question": "Sedmikráska je strom.",
+      "answer": false,
+      "explanation": "Sedmikráska má měkký zelený stonek – je to bylina."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se říká stonku stromu?",
+      "options": [
+        "kmen",
+        "jehlice",
+        "plod"
+      ],
+      "answer": 0,
+      "explanation": "Silný dřevěný stonek stromu je kmen."
+    },
+    {
+      "type": "choice",
+      "question": "Co je v plodu rostliny?",
+      "options": [
+        "jehlice",
+        "semena",
+        "kořeny"
+      ],
+      "answer": 1,
+      "explanation": "V plodu jsou semena, ze kterých může vyrůst nová rostlina."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje strom s jedlými jablky?",
+      "answers": [
+        "jabloň"
+      ],
+      "explanation": "Jablko je plod jabloně."
+    },
+    {
+      "type": "match",
+      "question": "Spoj rostlinu a skupinu.",
+      "pairs": [
+        [
+          "tráva",
+          "bylina"
+        ],
+        [
+          "rybíz",
+          "keř"
+        ],
+        [
+          "lípa",
+          "strom"
+        ]
+      ]
     }
   ]
 }

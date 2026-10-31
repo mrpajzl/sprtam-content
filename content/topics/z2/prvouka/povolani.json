@@ -353,6 +353,91 @@
       "type": "open",
       "question": "Jakou práci dělají tvoji rodiče?",
       "answer": "Řeknu, jak se jmenuje jejich povolání a co při něm dělají."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo používá stetoskop?",
+      "options": [
+        "kuchař",
+        "lékař",
+        "malíř"
+      ],
+      "answer": 1,
+      "explanation": "Lékař stetoskopem poslouchá srdce a dech."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo ošetřuje zuby?",
+      "options": [
+        "automechanik",
+        "veterinář",
+        "zubař"
+      ],
+      "answer": 2,
+      "explanation": "Zubař ošetřuje zuby. Jméno napoví: zub-ař."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nůžky používá jen kadeřnice.",
+      "answer": false,
+      "explanation": "Nůžky používá i krejčí nebo zahradník."
+    },
+    {
+      "type": "choice",
+      "question": "Co je výplata?",
+      "options": [
+        "peníze za práci",
+        "dárek k narozeninám",
+        "jídlo v práci"
+      ],
+      "answer": 0,
+      "explanation": "Výplata jsou peníze, které člověk dostane za svou práci."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo pracuje u pokladny v obchodě?",
+      "options": [
+        "knihovník",
+        "prodavač",
+        "zedník"
+      ],
+      "answer": 1,
+      "explanation": "Prodavač prodává zboží a pracuje u pokladny."
+    },
+    {
+      "type": "input",
+      "question": "Kdo opravuje auta? (automechanik / kuchař)",
+      "answers": [
+        "automechanik"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Všechna povolání jsou důležitá.",
+      "answer": true,
+      "explanation": "Bez uklízečky by byl nepořádek, bez řidiče bychom nedojeli do práce."
+    },
+    {
+      "type": "match",
+      "question": "Spoj povolání a kde pracuje.",
+      "pairs": [
+        [
+          "knihovník",
+          "knihovna"
+        ],
+        [
+          "zemědělec",
+          "pole"
+        ],
+        [
+          "pilot",
+          "letadlo"
+        ],
+        [
+          "učitel",
+          "škola"
+        ]
+      ]
     }
   ]
 }
