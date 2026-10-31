@@ -347,6 +347,69 @@
       "type": "open",
       "question": "Jak porovnáš zlomky 3/4 a 5/6?",
       "answer": "Převedu je na společného jmenovatele 12: 9/12 a 10/12. Větší je 5/6."
+    },
+    {
+      "type": "input",
+      "question": "Zkrať na základní tvar: 14/21",
+      "answers": [
+        "2/3"
+      ],
+      "explanation": "D(14, 21) = 7; 14 : 7 = 2, 21 : 7 = 3."
+    },
+    {
+      "type": "input",
+      "question": "Zkrať na základní tvar: 20/28",
+      "answers": [
+        "5/7"
+      ],
+      "explanation": "Vyděl 4."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zlomek 6/9 je v základním tvaru.",
+      "answer": false,
+      "explanation": "6/9 jde ještě krátit třemi: 2/3."
+    },
+    {
+      "type": "choice",
+      "question": "Který zlomek je větší?",
+      "options": [
+        "5/7",
+        "4/5",
+        "jsou si rovny"
+      ],
+      "answer": 1,
+      "explanation": "Společný jmenovatel 35: 4/5 = 28/35, 5/7 = 25/35."
+    },
+    {
+      "type": "truefalse",
+      "question": "2/5 > 2/7",
+      "answer": true,
+      "explanation": "Stejný počet dílků, ale pětiny jsou větší dílky než sedminy."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: 5/6 = ?/24",
+      "answers": [
+        "20"
+      ],
+      "explanation": "6 · 4 = 24, tedy 5 · 4 = 20."
+    },
+    {
+      "type": "input",
+      "question": "Převeď 3 2/5 na zlomek.",
+      "answers": [
+        "17/5"
+      ],
+      "explanation": "3 · 5 + 2 = 17"
+    },
+    {
+      "type": "input",
+      "question": "Převeď 17/3 na smíšené číslo.",
+      "answers": [
+        "5 2/3"
+      ],
+      "explanation": "17 : 3 = 5, zbytek 2."
     }
   ]
 }

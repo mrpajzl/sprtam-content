@@ -321,6 +321,73 @@
       "type": "open",
       "question": "Vyřeš trojčlenkou: 6 dělníků postaví zeď za 4 dny. Za kolik dní 8 dělníků?",
       "answer": "Víc dělníků → méně dní, nepřímá úměrnost. x = 4 · 6/8 = 3 dny."
+    },
+    {
+      "type": "input",
+      "question": "4 kg jablek stojí 120 Kč. Kolik Kč stojí 7 kg?",
+      "answers": [
+        "210"
+      ],
+      "explanation": "1 kg = 30 Kč, 7 · 30 = 210 Kč"
+    },
+    {
+      "type": "input",
+      "question": "5 malířů vymaluje školu za 12 dní. Za kolik dní ji vymaluje 6 malířů?",
+      "answers": [
+        "10"
+      ],
+      "explanation": "Nepřímá úměrnost: 5 · 12 = 60, 60 : 6 = 10 dní",
+      "hints": [
+        "Víc malířů – víc, nebo méně dní?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která závislost je přímá úměrnost?",
+      "options": [
+        "počet dělníků a doba práce",
+        "rychlost a doba jízdy na stejné trase",
+        "počet stejných lístků a jejich cena",
+        "věk a výška člověka"
+      ],
+      "answer": 2,
+      "explanation": "Dvakrát víc lístků = dvakrát vyšší cena."
+    },
+    {
+      "type": "input",
+      "question": "y = 4x. Kolik je x, když y = 28?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "28 : 4 = 7"
+    },
+    {
+      "type": "truefalse",
+      "question": "Tabulka x = 2, 4, 6 a y = 5, 10, 15 popisuje přímou úměrnost.",
+      "answer": true,
+      "explanation": "Podíl y : x je pořád 2,5."
+    },
+    {
+      "type": "input",
+      "question": "Veličiny x a y jsou nepřímo úměrné. Pro x = 2 je y = 12. Kolik je y pro x = 8?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Součin je stálý: 2 · 12 = 24, 24 : 8 = 3"
+    },
+    {
+      "type": "input",
+      "question": "Rychlostí 50 km/h trvá cesta 3 h. Kolik hodin bude trvat rychlostí 75 km/h?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Délka cesty 50 · 3 = 150 km, 150 : 75 = 2 h"
+    },
+    {
+      "type": "truefalse",
+      "question": "Grafem nepřímé úměrnosti je přímka procházející počátkem.",
+      "answer": false,
+      "explanation": "Přímka z počátku je graf přímé úměrnosti. Graf nepřímé je křivka."
     }
   ]
 }

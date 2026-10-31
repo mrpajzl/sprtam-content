@@ -361,6 +361,73 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi osovou a středovou souměrností?",
       "answer": "Osová zrcadlí podle přímky (osy), bod a obraz leží na kolmici k ose. Středová otáčí o 180° kolem bodu, střed je uprostřed mezi bodem a obrazem."
+    },
+    {
+      "type": "choice",
+      "question": "Které písmeno je osově i středově souměrné?",
+      "options": [
+        "N",
+        "A",
+        "H",
+        "F"
+      ],
+      "answer": 2,
+      "explanation": "N je jen středově, A jen osově, F není souměrné vůbec."
+    },
+    {
+      "type": "truefalse",
+      "question": "Písmeno N je středově souměrné.",
+      "answer": true,
+      "explanation": "Po otočení o půl otáčky vypadá N stejně."
+    },
+    {
+      "type": "truefalse",
+      "question": "Písmeno E je středově souměrné.",
+      "answer": false,
+      "explanation": "Po otočení o 180° by čárky mířily doleva. E je jen osově souměrné."
+    },
+    {
+      "type": "input",
+      "question": "Bod A a jeho obraz A′ jsou od sebe 10 cm. Kolik cm je bod A od středu souměrnosti S?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "S leží přesně uprostřed úsečky AA′: 10 : 2 = 5 cm"
+    },
+    {
+      "type": "input",
+      "question": "Úsečka AB měří 6 cm. Kolik cm měří její obraz A′B′ ve středové souměrnosti?",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Středová souměrnost nemění délky."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky konstrukce obrazu bodu A ve středové souměrnosti se středem S.",
+      "items": [
+        "narýsuj polopřímku AS",
+        "kružítkem změř vzdálenost |AS|",
+        "nanes ji z bodu S dál po polopřímce",
+        "označ vzniklý bod A′"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kde leží střed souměrnosti obdélníku?",
+      "options": [
+        "v jednom z rohů",
+        "v průsečíku úhlopříček",
+        "ve středu delší strany",
+        "mimo obdélník"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Obraz bodu A ve středové souměrnosti najdeš tak, že A zrcadlíš přes přímku vedenou bodem S.",
+      "answer": false,
+      "explanation": "To je osová souměrnost. A′ leží na polopřímce AS za středem ve stejné vzdálenosti."
     }
   ]
 }

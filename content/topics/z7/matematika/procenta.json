@@ -363,6 +363,76 @@
       "type": "open",
       "question": "Co je základ, procentová část a počet procent?",
       "answer": "Základ je celek (100 %). Procentová část je kus základu. Počet procent říká, kolik setin základu ta část tvoří."
+    },
+    {
+      "type": "input",
+      "question": "12 % z 450 =",
+      "answers": [
+        "54"
+      ],
+      "explanation": "1 % = 4,5; 12 · 4,5 = 54",
+      "hints": [
+        "Spočítej nejdřív 1 % z 450."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik % je 9 z 45?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "9 : 45 = 0,2 = 20 %"
+    },
+    {
+      "type": "input",
+      "question": "30 % čísla je 24. Jaké je to číslo?",
+      "answers": [
+        "80"
+      ],
+      "explanation": "1 % = 24 : 30 = 0,8; 100 % = 80"
+    },
+    {
+      "type": "input",
+      "question": "Bunda stojí 1 200 Kč a zlevní o 15 %. Kolik Kč bude stát po slevě?",
+      "answers": [
+        "1020",
+        "1 020"
+      ],
+      "explanation": "1 % = 12 Kč, sleva 15 · 12 = 180 Kč, nová cena 1 200 − 180 = 1 020 Kč"
+    },
+    {
+      "type": "choice",
+      "question": "0,3 je kolik procent?",
+      "options": [
+        "3 %",
+        "0,3 %",
+        "30 %",
+        "300 %"
+      ],
+      "answer": 2,
+      "explanation": "0,3 · 100 = 30 %"
+    },
+    {
+      "type": "input",
+      "question": "Cena klesla ze 400 Kč na 300 Kč. O kolik procent?",
+      "answers": [
+        "25"
+      ],
+      "explanation": "Pokles 100 Kč, základ je původní cena: 100 : 400 = 0,25 = 25 %"
+    },
+    {
+      "type": "input",
+      "question": "Ve třídě je 25 žáků a 4 chybí. Kolik procent žáků chybí?",
+      "answers": [
+        "16"
+      ],
+      "explanation": "4 : 25 = 0,16 = 16 %"
+    },
+    {
+      "type": "truefalse",
+      "question": "75 % je totéž co 3/4.",
+      "answer": true,
+      "explanation": "75/100 = 3/4"
     }
   ]
 }

@@ -297,6 +297,80 @@
       "type": "open",
       "question": "Proč neplatí 1/2 + 1/2 = 2/4?",
       "answer": "Dvě poloviny dají celek, tedy 1. Kdybych sčítal i jmenovatele, vyšla by zase jen polovina, což je nesmysl."
+    },
+    {
+      "type": "input",
+      "question": "3/8 + 1/8 = (v základním tvaru)",
+      "answers": [
+        "1/2"
+      ],
+      "explanation": "4/8 = 1/2"
+    },
+    {
+      "type": "input",
+      "question": "2/5 + 1/3 =",
+      "answers": [
+        "11/15"
+      ],
+      "explanation": "6/15 + 5/15 = 11/15"
+    },
+    {
+      "type": "input",
+      "question": "7/10 − 1/5 = (v základním tvaru)",
+      "answers": [
+        "1/2"
+      ],
+      "explanation": "7/10 − 2/10 = 5/10 = 1/2"
+    },
+    {
+      "type": "input",
+      "question": "4/9 + 1/6 =",
+      "answers": [
+        "11/18"
+      ],
+      "explanation": "n(9, 6) = 18: 8/18 + 3/18 = 11/18",
+      "hints": [
+        "Najdi nejmenší společný násobek 9 a 6."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je nejmenší společný jmenovatel zlomků 5/6 a 3/8?",
+      "options": [
+        "48",
+        "14",
+        "24",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "n(6, 8) = 24. Číslo 48 je také společný jmenovatel, ale ne nejmenší."
+    },
+    {
+      "type": "truefalse",
+      "question": "3/5 − 1/5 = 2/5",
+      "answer": true,
+      "explanation": "Stejnojmenné zlomky: odečtu čitatele, jmenovatel opíšu."
+    },
+    {
+      "type": "input",
+      "question": "3 1/3 + 1 1/2 =",
+      "answers": [
+        "4 5/6",
+        "29/6"
+      ],
+      "explanation": "Celé: 3 + 1 = 4. Zlomky: 2/6 + 3/6 = 5/6."
+    },
+    {
+      "type": "input",
+      "question": "Petr ušel ráno 3/4 km a odpoledne 5/6 km. Kolik km ušel celkem? (zlomkem nebo smíšeným číslem)",
+      "answers": [
+        "19/12",
+        "1 7/12"
+      ],
+      "explanation": "9/12 + 10/12 = 19/12 = 1 7/12",
+      "hints": [
+        "Společný jmenovatel 4 a 6 je 12."
+      ]
     }
   ]
 }

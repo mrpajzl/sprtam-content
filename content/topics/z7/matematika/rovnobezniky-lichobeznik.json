@@ -409,6 +409,82 @@
       "type": "open",
       "question": "Jaké druhy rovnoběžníků znáš?",
       "answer": "Čtverec, obdélník, kosočtverec a kosodélník. Liší se tím, zda mají pravé úhly a zda jsou všechny strany shodné."
+    },
+    {
+      "type": "input",
+      "question": "Rovnoběžník: a = 12 cm, v = 5 cm. Obsah v cm²?",
+      "answers": [
+        "60"
+      ],
+      "explanation": "S = a · v = 12 · 5 = 60 cm²"
+    },
+    {
+      "type": "input",
+      "question": "Lichoběžník: a = 8 cm, c = 4 cm, v = 5 cm. Obsah v cm²?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "(8 + 4) · 5 : 2 = 30 cm²"
+    },
+    {
+      "type": "input",
+      "question": "Rovnoběžník má obsah 48 cm² a výšku 6 cm. Jak dlouhá je strana k této výšce v cm?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "48 = a · 6, a = 48 : 6 = 8 cm"
+    },
+    {
+      "type": "input",
+      "question": "Lichoběžník má strany 9 cm, 5 cm, 5 cm a 5 cm. Obvod v cm?",
+      "answers": [
+        "24"
+      ],
+      "explanation": "9 + 5 + 5 + 5 = 24 cm"
+    },
+    {
+      "type": "choice",
+      "question": "Který rovnoběžník má všechny strany shodné, ale nemá pravé úhly?",
+      "options": [
+        "obdélník",
+        "kosodélník",
+        "kosočtverec",
+        "čtverec"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "question": "Spoj rovnoběžník s jeho vlastnostmi.",
+      "pairs": [
+        [
+          "čtverec",
+          "všechny strany shodné, pravé úhly"
+        ],
+        [
+          "obdélník",
+          "protější strany shodné, pravé úhly"
+        ],
+        [
+          "kosočtverec",
+          "všechny strany shodné, úhly ne pravé"
+        ],
+        [
+          "kosodélník",
+          "protější strany shodné, úhly ne pravé"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Obsah kosodélníku vypočítáš jako součin dvou sousedních stran.",
+      "answer": false,
+      "explanation": "S = strana · výška k ní. Výška je kolmá vzdálenost, ne šikmá strana."
+    },
+    {
+      "type": "truefalse",
+      "question": "Úhlopříčky každého rovnoběžníku se navzájem půlí.",
+      "answer": true
     }
   ]
 }

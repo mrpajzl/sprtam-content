@@ -351,6 +351,78 @@
       "type": "open",
       "question": "Co znamená měřítko mapy 1 : 25 000?",
       "answer": "Každý 1 cm na mapě odpovídá 25 000 cm, tedy 250 m ve skutečnosti."
+    },
+    {
+      "type": "input",
+      "question": "Ve třídě je 14 chlapců a 21 dívek. Poměr chlapců k dívkám v základním tvaru (ve tvaru a:b) =",
+      "answers": [
+        "2:3",
+        "2 : 3"
+      ],
+      "explanation": "Obě čísla vyděl 7."
+    },
+    {
+      "type": "input",
+      "question": "Petr a Jana si dělí 360 Kč v poměru 5 : 7. Kolik Kč dostane Petr?",
+      "answers": [
+        "150"
+      ],
+      "explanation": "5 + 7 = 12 dílů, 1 díl = 360 : 12 = 30 Kč, Petr 5 · 30 = 150 Kč.",
+      "hints": [
+        "Nejdřív sečti díly.",
+        "Celek vyděl počtem dílů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Zmenši 36 v poměru 2 : 3.",
+      "answers": [
+        "24"
+      ],
+      "explanation": "36 · 2/3 = 24"
+    },
+    {
+      "type": "truefalse",
+      "question": "Sirup ředíš v poměru 1 : 4. Ve 2 litrech hotového nápoje je 400 ml sirupu.",
+      "answer": true,
+      "explanation": "Celkem 5 dílů: 2 000 ml : 5 = 400 ml je 1 díl sirupu."
+    },
+    {
+      "type": "input",
+      "question": "Na mapě s měřítkem 1 : 50 000 naměříš 7 cm. Kolik km je to ve skutečnosti?",
+      "answers": [
+        "3,5"
+      ],
+      "explanation": "7 · 50 000 = 350 000 cm = 3,5 km"
+    },
+    {
+      "type": "input",
+      "question": "Skutečná vzdálenost je 2 km. Kolik cm to bude na mapě s měřítkem 1 : 25 000?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "2 km = 200 000 cm; 200 000 : 25 000 = 8 cm",
+      "hints": [
+        "Převeď km na cm."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Mapa má měřítko 1 : 10 000. Kolik ve skutečnosti odpovídá 1 cm na mapě?",
+      "options": [
+        "10 m",
+        "1 km",
+        "100 m",
+        "10 km"
+      ],
+      "answer": 2,
+      "explanation": "10 000 cm = 100 m"
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 16 zvětšené v poměru 5 : 4 je 20.",
+      "answer": true,
+      "explanation": "16 · 5/4 = 20"
     }
   ]
 }
