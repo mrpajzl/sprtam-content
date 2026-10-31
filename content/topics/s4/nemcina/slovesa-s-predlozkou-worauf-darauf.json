@@ -517,6 +517,55 @@
       "type": "open",
       "question": "Uveď tři německá slovesa s předložkovou vazbou, která se liší od češtiny.",
       "answer": "Například *sich interessieren für* (zajímat se o), *Angst haben vor* (bát se čeho, česky bez předložky), *sich freuen über* (mít radost z) nebo *teilnehmen an* (zúčastnit se čeho)."
+    },
+    {
+      "type": "choice",
+      "question": "Ich nehme ___ dem Ausflug teil.",
+      "options": [
+        "auf",
+        "für",
+        "an"
+      ],
+      "answer": 2,
+      "explanation": "*teilnehmen an* + 3. pád = zúčastnit se (čeho)."
+    },
+    {
+      "type": "input",
+      "question": "Zeptej se: ___ sprecht ihr? – Über das Wetter.",
+      "answers": [
+        "Worüber",
+        "Worueber"
+      ],
+      "explanation": "*sprechen über* + věc → *wo + r + über*.",
+      "hints": [
+        "Ptáš se na věc, použij wo-.",
+        "über začíná samohláskou."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Odpověz zájmenným příslovcem: Hast du Angst vor Spinnen? – Ja, ich habe Angst ___.",
+      "answers": [
+        "davor"
+      ],
+      "explanation": "*Angst haben vor* → *da + vor*. *vor* začíná souhláskou, takže bez -r-."
+    },
+    {
+      "type": "choice",
+      "question": "Denkst du oft an deine Oma? – Ja, ich denke oft ___.",
+      "options": [
+        "daran",
+        "an sie",
+        "woran"
+      ],
+      "answer": 1,
+      "explanation": "Babička je osoba → předložka + zájmeno *an sie*. *Daran* je jen pro věci."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Ich freue mich über den Urlaub im nächsten Sommer.“ je správně, když dovolená teprve bude.",
+      "answer": false,
+      "explanation": "Na to, co teprve přijde, se těšíš: *sich freuen auf*. *Über* znamená radost z toho, co už je."
     }
   ]
 }

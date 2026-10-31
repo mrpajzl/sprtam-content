@@ -498,6 +498,66 @@
       "type": "open",
       "question": "Popiš stavbu formálního e-mailu.",
       "answer": "Předmět (Betreff), oslovení s čárkou, úvod s důvodem psaní, hlavní část s otázkami nebo informacemi, závěr s poděkováním nebo prosbou o odpověď, pozdrav *Mit freundlichen Grüßen* bez čárky a podpis."
+    },
+    {
+      "type": "choice",
+      "question": "Jak formálně oslovíš paní Kellerovou?",
+      "options": [
+        "Sehr geehrter Frau Keller,",
+        "Sehr geehrte Keller,",
+        "Sehr geehrte Frau Keller,"
+      ],
+      "answer": 2,
+      "explanation": "U ženy *geehrte* s *-e* a oslovení *Frau* + příjmení, na konci čárka."
+    },
+    {
+      "type": "input",
+      "question": "Jak se německy řekne předmět e-mailu? (jedno slovo)",
+      "answers": [
+        "Betreff",
+        "der Betreff"
+      ],
+      "explanation": "*Betreff: Anfrage Sommerkurs* = Předmět: Dotaz na letní kurz."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Ich danke ihnen für die Information.“ je správně napsaná do formálního e-mailu.",
+      "answer": false,
+      "explanation": "Malé *ihnen* znamená „jim“. Vykání se píše s velkým I: *Ihnen*."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta se hodí jako úvod formálního e-mailu?",
+      "options": [
+        "Danke für deine Mail!",
+        "ich schreibe Ihnen, weil ich Informationen über den Kurs brauche.",
+        "Hallo, wie geht's?"
+      ],
+      "answer": 1,
+      "explanation": "Formální úvod říká, proč píšeš, a vyká (*Ihnen*). Po oslovení s čárkou začíná malým písmenem."
+    },
+    {
+      "type": "match",
+      "question": "Spoj formální frázi s neformální.",
+      "pairs": [
+        [
+          "Sehr geehrte Frau Schmidt,",
+          "Liebe Anna,"
+        ],
+        [
+          "Mit freundlichen Grüßen",
+          "Liebe Grüße"
+        ],
+        [
+          "Könnten Sie mir sagen, …?",
+          "Kannst du mir sagen, …?"
+        ],
+        [
+          "Danke für Ihre Hilfe.",
+          "Danke für deine Hilfe."
+        ]
+      ],
+      "explanation": "Formálně vykání a ustálené fráze, neformálně tykání."
     }
   ]
 }

@@ -493,6 +493,66 @@
       "type": "open",
       "question": "Vyskloňuj slovo der Junge v jednotném čísle.",
       "answer": "1. pád *der Junge*, 2. pád *des Jungen*, 3. pád *dem Jungen*, 4. pád *den Jungen*. Ve 2. pádě není *-s*."
+    },
+    {
+      "type": "choice",
+      "question": "Im Zoo sehen wir den ___.",
+      "options": [
+        "Bär",
+        "Bärs",
+        "Bären"
+      ],
+      "answer": 2,
+      "explanation": "*der Bär* si pamatuj zvlášť – patří do n-deklinace: *den Bären*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slova Präsident: Der Journalist spricht mit dem ___.",
+      "answers": [
+        "Präsidenten",
+        "Praesidenten"
+      ],
+      "explanation": "Cizí slovo na *-ent* → n-deklinace, 3. pád *dem Präsidenten*.",
+      "hints": [
+        "Jak končí slovo Präsident?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slova Name: Ich kenne die Bedeutung des ___ nicht.",
+      "answers": [
+        "Namens"
+      ],
+      "explanation": "*der Name* má ve 2. pádě výjimečně navíc *-s*: *des Namens*.",
+      "hints": [
+        "Name patří mezi výjimky jako Gedanke a Buchstabe."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo patří do n-deklinace?",
+      "options": [
+        "der Mann",
+        "der Affe",
+        "der Hund",
+        "der Freund"
+      ],
+      "answer": 1,
+      "explanation": "*der Affe* je zvíře mužského rodu na *-e* → *den Affen*. Ostatní se skloňují běžně."
+    },
+    {
+      "type": "truefalse",
+      "question": "Množné číslo slova der Student je die Studenten.",
+      "answer": true,
+      "explanation": "V n-deklinaci má *-(e)n* i množné číslo."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tvar slova Biologe: Wir fragen den ___.",
+      "answers": [
+        "Biologen"
+      ],
+      "explanation": "Cizí slovo na *-oge* → n-deklinace, 4. pád *den Biologen*."
     }
   ]
 }
