@@ -466,6 +466,79 @@
       "type": "open",
       "question": "Jak podle elektronegativity určíš druh vazby?",
       "answer": "Spočítám rozdíl elektronegativit. Pod 0,4 je vazba nepolární, mezi 0,4 a 1,7 polární, nad 1,7 iontová."
+    },
+    {
+      "type": "input",
+      "question": "Spočítej ΔX pro vazbu O–H. X(O) = 3,44, X(H) = 2,20. ΔX =",
+      "answers": [
+        "1,24",
+        "1.24"
+      ],
+      "explanation": "3,44 − 2,20 = 1,24 → polární kovalentní vazba.",
+      "hints": [
+        "Odečti menší číslo od většího."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaká vazba je v KCl? X(K) = 0,82, X(Cl) = 3,16.",
+      "options": [
+        "nepolární",
+        "polární kovalentní",
+        "iontová"
+      ],
+      "answer": 2,
+      "explanation": "ΔX = 3,16 − 0,82 = 2,34. Víc než 1,7 → iontová."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je vazba N–H? X(N) = 3,04, X(H) = 2,20.",
+      "options": [
+        "nepolární",
+        "polární kovalentní",
+        "iontová"
+      ],
+      "answer": 1,
+      "explanation": "ΔX = 3,04 − 2,20 = 0,84. To je mezi 0,4 a 1,7 → polární."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká vazba je v molekule kyslíku O₂?",
+      "options": [
+        "trojná",
+        "jednoduchá",
+        "dvojná"
+      ],
+      "answer": 2,
+      "explanation": "Kyslíku chybějí do osmi 2 elektrony, sdílí tedy 2 páry: O=O."
+    },
+    {
+      "type": "input",
+      "question": "Kolik valenčních elektronů má atom chloru?",
+      "answers": [
+        "7"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při iontové vazbě si jeden atom vezme elektron celý a vzniknou ionty.",
+      "answer": true,
+      "explanation": "Například Na⁺ a Cl⁻, které se přitahují opačnými náboji."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozdíl elektronegativit ΔX může vyjít záporný.",
+      "answer": false,
+      "explanation": "ΔX se počítá vždy jako větší minus menší."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď vazby podle počtu sdílených elektronových párů od nejmenšího.",
+      "items": [
+        "H–H",
+        "O=O",
+        "N≡N"
+      ]
     }
   ]
 }
