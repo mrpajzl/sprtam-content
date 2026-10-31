@@ -427,6 +427,86 @@
       "type": "open",
       "question": "Řekni anglicky dvě věci, které doma musíš, a jednu, kterou nemusíš.",
       "answer": "I have to tidy my room. I have to walk the dog. I don't have to cook."
+    },
+    {
+      "type": "choice",
+      "question": "Na koupališti je cedule „Neběhat“. You ___ run here.",
+      "options": [
+        "don't have to",
+        "mustn't",
+        "have to"
+      ],
+      "answer": 1,
+      "explanation": "Je to zákaz → mustn't."
+    },
+    {
+      "type": "choice",
+      "question": "V sobotu není škola. I ___ get up early on Saturday.",
+      "options": [
+        "mustn't",
+        "must",
+        "don't have to"
+      ],
+      "answer": 2,
+      "explanation": "Není to nutné → don't have to (nemusím)."
+    },
+    {
+      "type": "choice",
+      "question": "___ she have to work on Sunday?",
+      "options": [
+        "Do",
+        "Does",
+        "Must"
+      ],
+      "answer": 1,
+      "explanation": "U *have to* se ptáš pomocí *do/does*; she → does."
+    },
+    {
+      "type": "input",
+      "question": "Přelož: Moje sestra nemusí vařit. My sister ___ have to cook.",
+      "answers": [
+        "doesn't",
+        "does not"
+      ],
+      "explanation": "Sestra = she → doesn't have to."
+    },
+    {
+      "type": "input",
+      "question": "Doplň do otázky v minulosti: ___ you have to wait long?",
+      "answers": [
+        "Did",
+        "did"
+      ],
+      "explanation": "Minulost u *have to*: Did you have to…?"
+    },
+    {
+      "type": "truefalse",
+      "question": "Sloveso „must“ nemá minulý tvar, proto „musel jsem“ řekneš „I had to“.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "„You mustn't touch it.“ znamená „Nemusíš se toho dotýkat.“",
+      "answer": false,
+      "explanation": "Mustn't je zákaz: Nesmíš se toho dotýkat."
+    },
+    {
+      "type": "match",
+      "question": "Spoj ceduli s větou.",
+      "pairs": [
+        [
+          "Vstup zdarma",
+          "You don't have to pay."
+        ],
+        [
+          "Zákaz fotografování",
+          "You mustn't take photos."
+        ],
+        [
+          "Povinná helma",
+          "You have to wear a helmet."
+        ]
+      ]
     }
   ]
 }

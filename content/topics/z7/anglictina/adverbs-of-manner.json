@@ -365,6 +365,87 @@
       "type": "open",
       "question": "Popiš anglicky, jak něco děláš (aspoň dvě příslovce).",
       "answer": "I swim well, but I run slowly. I write carefully."
+    },
+    {
+      "type": "input",
+      "question": "Příslovce od „slow“:",
+      "answers": [
+        "slowly"
+      ],
+      "explanation": "Běžné slovo → + ly."
+    },
+    {
+      "type": "input",
+      "question": "Příslovce od „easy“:",
+      "answers": [
+        "easily"
+      ],
+      "explanation": "Souhláska + y → y se změní na i + ly."
+    },
+    {
+      "type": "choice",
+      "question": "He always comes ___.",
+      "options": [
+        "lately",
+        "late",
+        "latly"
+      ],
+      "answer": 1,
+      "explanation": "*Late* je výjimka – jako příslovce se nemění."
+    },
+    {
+      "type": "choice",
+      "question": "They work ___ every day.",
+      "options": [
+        "hard",
+        "hardly",
+        "hardy"
+      ],
+      "answer": 0,
+      "explanation": "Tvrdě = hard. *Hardly* znamená „sotva“."
+    },
+    {
+      "type": "choice",
+      "question": "She is a ___ driver.",
+      "options": [
+        "carefully",
+        "careful"
+      ],
+      "answer": 1,
+      "explanation": "Jaká řidička? → přídavné jméno careful."
+    },
+    {
+      "type": "truefalse",
+      "question": "Příslovce způsobu odpovídá na otázku „jak?“.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "„She sings good.“ je správně.",
+      "answer": false,
+      "explanation": "Jak zpívá? → příslovce. Od *good* je to výjimka *well*: She sings well."
+    },
+    {
+      "type": "match",
+      "question": "Spoj přídavné jméno s příslovcem (pozor na výjimky).",
+      "pairs": [
+        [
+          "good",
+          "well"
+        ],
+        [
+          "hard",
+          "hard"
+        ],
+        [
+          "quick",
+          "quickly"
+        ],
+        [
+          "early",
+          "early"
+        ]
+      ]
     }
   ]
 }

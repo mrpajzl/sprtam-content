@@ -418,6 +418,76 @@
       "type": "open",
       "question": "Co jsi dělal(a) včera v 7 večer? Odpověz anglicky.",
       "answer": "At 7 pm yesterday I was having dinner with my family."
+    },
+    {
+      "type": "choice",
+      "question": "At 10 pm yesterday you ___ a film.",
+      "options": [
+        "was watching",
+        "were watching",
+        "were watch"
+      ],
+      "answer": 1,
+      "explanation": "K *you* patří *were*: you were watching."
+    },
+    {
+      "type": "input",
+      "question": "Napiš tvar s -ing od slovesa „make“.",
+      "answers": [
+        "making"
+      ],
+      "explanation": "Němé -e na konci zmizí: make → making."
+    },
+    {
+      "type": "choice",
+      "question": "Správný -ing tvar od „run“:",
+      "options": [
+        "runing",
+        "runeing",
+        "running"
+      ],
+      "answer": 2,
+      "explanation": "Krátké sloveso souhláska–samohláska–souhláska → zdvojí se n."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Did you sleeping at midnight?“ je správná otázka v minulém čase průběhovém.",
+      "answer": false,
+      "explanation": "Pomocníkem je *was/were*, ne *did*: Were you sleeping at midnight?"
+    },
+    {
+      "type": "input",
+      "question": "Udělej zápor: Ann was dancing. → Ann ___ dancing.",
+      "answers": [
+        "wasn't",
+        "was not"
+      ],
+      "explanation": "K *was* přidáš *not*: wasn't."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Plavali zrovna?“",
+      "items": [
+        "Were",
+        "they",
+        "swimming",
+        "at noon?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Krátká záporná odpověď: Were you working? – No, I ___.",
+      "answers": [
+        "wasn't",
+        "was not"
+      ],
+      "explanation": "K *I* patří *was*, zápor *wasn't*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „My mum was cooking.“ je podmět „my mum“.",
+      "answer": true,
+      "explanation": "Kdo vařil? Moje máma – to je podmět."
     }
   ]
 }
