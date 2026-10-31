@@ -514,6 +514,26 @@
       "type": "open",
       "question": "Proč u převodu hodin na minuty nestačí posunout čárku?",
       "answer": "Hodina má 60 minut, ne 10 ani 100. Posun čárky funguje jen pro 10, 100, 1 000, takže čas musím násobit nebo dělit 60."
+    },
+    {
+      "type": "input",
+      "question": "0,33 l = ? ml",
+      "answers": [
+        "330"
+      ],
+      "explanation": "1 l = 1 000 ml → čárka o 3 místa doprava: 330 ml."
+    },
+    {
+      "type": "choice",
+      "question": "150 min je…",
+      "options": [
+        "1,5 h",
+        "2,5 h",
+        "1,05 h",
+        "15 h"
+      ],
+      "answer": 1,
+      "explanation": "150 : 60 = 2,5 h, tedy 2 h 30 min."
     }
   ]
 }

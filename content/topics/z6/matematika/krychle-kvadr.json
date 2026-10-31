@@ -363,6 +363,83 @@
       "type": "open",
       "question": "Jak spočítáš povrch kvádru?",
       "answer": "Kvádr má 3 dvojice shodných stěn. Sečtu obsahy ab + bc + ac a výsledek vynásobím dvěma."
+    },
+    {
+      "type": "input",
+      "question": "Objem krychle s hranou 5 cm je (v cm³):",
+      "answers": [
+        "125"
+      ],
+      "explanation": "5 · 5 · 5 = 125"
+    },
+    {
+      "type": "input",
+      "question": "Povrch krychle s hranou 2 cm je (v cm²):",
+      "answers": [
+        "24"
+      ],
+      "explanation": "Jedna stěna 2 · 2 = 4 cm², stěn je 6: 6 · 4 = 24."
+    },
+    {
+      "type": "input",
+      "question": "Povrch kvádru 3 cm × 4 cm × 5 cm je (v cm²):",
+      "answers": [
+        "94"
+      ],
+      "explanation": "2 · (3·4 + 4·5 + 3·5) = 2 · (12 + 20 + 15) = 2 · 47 = 94",
+      "hints": [
+        "Spočítej obsahy tří různých stěn.",
+        "Jejich součet vynásob dvěma."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký tvar mají stěny krychle?",
+      "options": [
+        "obdélníky různé velikosti",
+        "stejné čtverce",
+        "trojúhelníky",
+        "dva čtverce a čtyři obdélníky"
+      ],
+      "answer": 1,
+      "explanation": "Krychle má všechny hrany stejné, proto je všech 6 stěn stejný čtverec."
+    },
+    {
+      "type": "truefalse",
+      "question": "Objem kvádru 2 cm × 3 cm × 4 cm je 24 cm².",
+      "answer": false,
+      "explanation": "Číslo sedí, ale jednotka ne: objem se měří v cm³, cm² jsou pro plochu."
+    },
+    {
+      "type": "input",
+      "question": "Kvádr má objem 60 cm³ a dno 5 cm × 4 cm. Jaká je jeho výška v cm?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "Na dno se vejde 5 · 4 = 20 kostiček. 60 : 20 = 3 vrstvy.",
+      "hints": [
+        "Kolik kostiček 1 cm³ se vejde do jedné vrstvy na dně?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Bazén má rozměry 10 m × 5 m × 2 m. Kolik m³ vody se do něj vejde?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "10 · 5 · 2 = 100 m³"
+    },
+    {
+      "type": "input",
+      "question": "Akvárium má rozměry 40 cm × 20 cm × 30 cm. Kolik litrů se do něj vejde?",
+      "answers": [
+        "24"
+      ],
+      "explanation": "V decimetrech: 4 · 2 · 3 = 24 dm³ = 24 l.",
+      "hints": [
+        "Převeď rozměry na decimetry.",
+        "1 dm³ = 1 l"
+      ]
     }
   ]
 }

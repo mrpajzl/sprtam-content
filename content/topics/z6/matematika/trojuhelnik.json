@@ -371,6 +371,75 @@
       "type": "open",
       "question": "Jak rozdělujeme trojúhelníky?",
       "answer": "Podle stran na různostranné, rovnoramenné a rovnostranné. Podle úhlů na ostroúhlé, pravoúhlé a tupoúhlé."
+    },
+    {
+      "type": "input",
+      "question": "Dva úhly trojúhelníku mají 90° a 35°. Kolik stupňů má třetí?",
+      "answers": [
+        "55"
+      ],
+      "explanation": "180 − 90 − 35 = 55"
+    },
+    {
+      "type": "choice",
+      "question": "Trojúhelník s úhly 30°, 60° a 90° je…",
+      "options": [
+        "ostroúhlý",
+        "pravoúhlý",
+        "tupoúhlý",
+        "rovnostranný"
+      ],
+      "answer": 1,
+      "explanation": "Má jeden pravý úhel (90°)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Lze sestrojit trojúhelník se stranami 4 cm, 5 cm a 9 cm.",
+      "answer": false,
+      "explanation": "4 + 5 = 9, a to není víc než 9. Součet dvou stran musí být větší než třetí."
+    },
+    {
+      "type": "choice",
+      "question": "Trojúhelník se stranami 6 cm, 6 cm a 4 cm je…",
+      "options": [
+        "různostranný",
+        "rovnostranný",
+        "rovnoramenný",
+        "pravoúhlý"
+      ],
+      "answer": 2,
+      "explanation": "Dvě strany jsou stejné (ramena 6 cm), třetí je základna."
+    },
+    {
+      "type": "input",
+      "question": "Rovnostranný trojúhelník má stranu 8 cm. Jeho obvod v cm =",
+      "answers": [
+        "24"
+      ],
+      "explanation": "Všechny tři strany jsou stejné: 3 · 8 = 24."
+    },
+    {
+      "type": "input",
+      "question": "Rovnoramenný trojúhelník má oba úhly při základně po 50°. Kolik stupňů má úhel při hlavním vrcholu?",
+      "answers": [
+        "80"
+      ],
+      "explanation": "180 − 50 − 50 = 80",
+      "hints": [
+        "Všechny tři úhly dají dohromady 180°."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V pravoúhlém trojúhelníku je přepona nejdelší strana.",
+      "answer": true,
+      "explanation": "Přepona leží naproti pravému úhlu, který je největší úhel trojúhelníku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výška trojúhelníku vede z vrcholu do středu protější strany.",
+      "answer": false,
+      "explanation": "To je těžnice. Výška dopadá na protější stranu kolmo."
     }
   ]
 }

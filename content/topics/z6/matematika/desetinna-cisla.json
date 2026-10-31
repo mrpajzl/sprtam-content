@@ -349,6 +349,108 @@
       "type": "open",
       "question": "Jak zaokrouhlíš desetinné číslo na desetiny?",
       "answer": "Podívám se na číslici v řádu setin. Je-li 5 až 9, zvětším desetiny o 1; je-li 0 až 4, desetiny nechám. Ostatní místa škrtnu."
+    },
+    {
+      "type": "choice",
+      "question": "V čísle 5,283 stojí číslice 8 v řádu…",
+      "options": [
+        "desetin",
+        "setin",
+        "tisícin",
+        "desítek"
+      ],
+      "answer": 1,
+      "explanation": "Za čárkou jdou desetiny (2), setiny (8), tisíciny (3)."
+    },
+    {
+      "type": "input",
+      "question": "Zapiš desetinným číslem: tři celé a čtyři tisíciny.",
+      "answers": [
+        "3,004"
+      ],
+      "explanation": "Tisíciny jsou třetí místo za čárkou: 3,004.",
+      "hints": [
+        "Tisíciny jsou na třetím místě za čárkou.",
+        "Na místa desetin a setin napiš nuly."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "0,4 > 0,38",
+      "answer": true,
+      "explanation": "0,40 a 0,38: 40 setin je víc než 38 setin."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 7,849 na desetiny.",
+      "answers": [
+        "7,8"
+      ],
+      "explanation": "Vpravo od desetin je 4, to je méně než 5 → desetiny necháš: 7,8."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik setin je 0,3?",
+      "options": [
+        "3",
+        "30",
+        "300",
+        "0,03"
+      ],
+      "answer": 1,
+      "explanation": "0,3 = 0,30, tedy 30 setin."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď tato čísla od nejmenšího po největší.",
+      "items": [
+        "1,05",
+        "1,2",
+        "1,25",
+        "1,5"
+      ],
+      "explanation": "Na setiny: 1,05; 1,20; 1,25; 1,50."
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 2,7 leží na číselné ose vpravo od čísla 2,69.",
+      "answer": true,
+      "explanation": "2,70 > 2,69 a větší číslo leží víc vpravo."
+    },
+    {
+      "type": "input",
+      "question": "Zaokrouhli 4,996 na setiny.",
+      "answers": [
+        "5,00",
+        "5"
+      ],
+      "explanation": "Setiny jsou 9, vpravo je 6 → setiny zvětšíš o 1. Z 4,99 se stane 5,00.",
+      "hints": [
+        "Podívej se na číslici vpravo od setin.",
+        "Když zvětšíš 9 o 1, přenášíš 1 do vyššího řádu."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo s tím, jak se čte.",
+      "pairs": [
+        [
+          "0,6",
+          "šest desetin"
+        ],
+        [
+          "0,06",
+          "šest setin"
+        ],
+        [
+          "0,006",
+          "šest tisícin"
+        ],
+        [
+          "6,6",
+          "šest celých šest desetin"
+        ]
+      ]
     }
   ]
 }

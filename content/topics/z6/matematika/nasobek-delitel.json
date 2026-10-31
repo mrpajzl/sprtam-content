@@ -374,6 +374,86 @@
       "type": "open",
       "question": "Jak poznáš, že je číslo dělitelné 6?",
       "answer": "Musí být dělitelné 2 i 3 zároveň: je sudé a jeho ciferný součet je dělitelný 3."
+    },
+    {
+      "type": "input",
+      "question": "Kolik dělitelů má číslo 16?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "1, 2, 4, 8, 16",
+      "hints": [
+        "Skládej 16 kostiček do obdélníků: 1 × 16, 2 × 8…"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo **není** násobkem čísla 6?",
+      "options": [
+        "24",
+        "42",
+        "46",
+        "54"
+      ],
+      "answer": 2,
+      "explanation": "46 : 6 = 7, zbytek 4. Ostatní: 6 · 4, 6 · 7, 6 · 9."
+    },
+    {
+      "type": "truefalse",
+      "question": "538 je dělitelné 4.",
+      "answer": false,
+      "explanation": "Poslední dvojčíslí 38 není dělitelné 4 (38 : 4 = 9, zbytek 2)."
+    },
+    {
+      "type": "truefalse",
+      "question": "2 655 je dělitelné 5 i 3.",
+      "answer": true,
+      "explanation": "Končí 5 → dělitelné 5. Ciferný součet 2 + 6 + 5 + 5 = 18 → dělitelné 3."
+    },
+    {
+      "type": "choice",
+      "question": "Které číslo je dělitelné 9?",
+      "options": [
+        "2 345",
+        "5 432",
+        "6 118",
+        "3 456"
+      ],
+      "answer": 3,
+      "explanation": "3 + 4 + 5 + 6 = 18 a 18 je dělitelné 9. Ostatní mají ciferný součet 14, 14 a 16."
+    },
+    {
+      "type": "input",
+      "question": "Napiš největší násobek čísla 8, který je menší než 100.",
+      "answers": [
+        "96"
+      ],
+      "explanation": "8 · 12 = 96, další násobek 104 už je větší než 100."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď všechny dělitele čísla 18 od nejmenšího.",
+      "items": [
+        "1",
+        "2",
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "explanation": "18 = 1 · 18 = 2 · 9 = 3 · 6."
+    },
+    {
+      "type": "input",
+      "question": "Číslo 47■ je dělitelné 3. Jaká největší číslice může stát na místě ■?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "4 + 7 = 11. Ciferný součet musí být dělitelný 3: 12, 15 nebo 18 → číslice 1, 4, nebo 7. Největší je 7.",
+      "hints": [
+        "Sečti známé číslice.",
+        "Kolik musíš přičíst, aby vyšel násobek 3?"
+      ]
     }
   ]
 }

@@ -389,6 +389,40 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi obsahem a objemem?",
       "answer": "Obsah měří plochu ve čtverečcích, třeba cm². Objem měří prostor v kostičkách, třeba cm³ nebo litrech."
+    },
+    {
+      "type": "input",
+      "question": "0,3 m³ = ? l",
+      "answers": [
+        "300"
+      ],
+      "explanation": "1 m³ = 1 000 l, 0,3 · 1 000 = 300."
+    },
+    {
+      "type": "input",
+      "question": "Krabice 6 cm × 4 cm × 5 cm. Objem v cm³ =",
+      "answers": [
+        "120"
+      ],
+      "explanation": "Vrstva na dně: 6 · 4 = 24 kostiček. 5 vrstev: 24 · 5 = 120."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik decilitrů je 1,5 l?",
+      "options": [
+        "150 dl",
+        "15 dl",
+        "1 500 dl",
+        "0,15 dl"
+      ],
+      "answer": 1,
+      "explanation": "1 l = 10 dl, takže 1,5 · 10 = 15 dl."
+    },
+    {
+      "type": "truefalse",
+      "question": "Do krychle s hranou 10 cm se vejde přesně 1 litr.",
+      "answer": true,
+      "explanation": "10 cm = 1 dm, krychle má objem 1 dm³ a 1 dm³ = 1 l."
     }
   ]
 }

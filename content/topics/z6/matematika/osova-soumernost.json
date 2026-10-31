@@ -383,6 +383,80 @@
       "type": "open",
       "question": "Uveď tři osově souměrné věci z okolí.",
       "answer": "Například motýl, list stromu, lidský obličej, dveře, čtverec, písmeno A."
+    },
+    {
+      "type": "input",
+      "question": "Kolik os souměrnosti má písmeno H?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Svislá osa uprostřed a vodorovná osa uprostřed."
+    },
+    {
+      "type": "choice",
+      "question": "Které písmeno **nemá** žádnou osu souměrnosti?",
+      "options": [
+        "A",
+        "T",
+        "F",
+        "E"
+      ],
+      "answer": 2,
+      "explanation": "A a T mají svislou osu, E vodorovnou. F nejde přeložit tak, aby se půlky kryly."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bod a jeho obraz leží na jedné kolmici k ose.",
+      "answer": true,
+      "explanation": "Obraz se hledá právě po kolmici k ose."
+    },
+    {
+      "type": "input",
+      "question": "Bod B je 2,5 cm od osy. Jak daleko (v cm) je jeho obraz B′ od osy?",
+      "answers": [
+        "2,5"
+      ],
+      "explanation": "Bod a jeho obraz jsou od osy stejně daleko."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stojíš 1 m před zrcadlem. Tvůj odraz se zdá být 1 m od tebe.",
+      "answer": false,
+      "explanation": "Odraz se zdá být 1 m za zrcadlem, takže od tebe 1 + 1 = 2 m."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky konstrukce obrazu bodu A v osové souměrnosti.",
+      "items": [
+        "Bodem A veď kolmici k ose.",
+        "Průsečík kolmice s osou označ P.",
+        "Změř vzdálenost |AP|.",
+        "Stejnou vzdálenost nanes z P na druhou stranu osy."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Úsečka AB měří 5 cm. Kolik měří její obraz A′B′ v osové souměrnosti?",
+      "options": [
+        "10 cm",
+        "2,5 cm",
+        "5 cm",
+        "záleží na vzdálenosti od osy"
+      ],
+      "answer": 2,
+      "explanation": "Osová souměrnost délky nemění."
+    },
+    {
+      "type": "choice",
+      "question": "Které písmeno má **vodorovnou** osu souměrnosti?",
+      "options": [
+        "A",
+        "V",
+        "D",
+        "M"
+      ],
+      "answer": 2,
+      "explanation": "Horní a dolní půlka D jsou stejné. A, V a M mají jen svislou osu."
     }
   ]
 }

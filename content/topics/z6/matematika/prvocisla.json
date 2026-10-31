@@ -386,6 +386,79 @@
       "type": "open",
       "question": "Jak rozložíš číslo 40 na prvočinitele?",
       "answer": "Postupně dělím prvočísly: 40 = 2 · 20 = 2 · 2 · 10 = 2 · 2 · 2 · 5, tedy 40 = 2³ · 5."
+    },
+    {
+      "type": "choice",
+      "question": "Rozklad čísla 60 na prvočinitele:",
+      "options": [
+        "2 · 30",
+        "2² · 15",
+        "2² · 3 · 5",
+        "2 · 3 · 10"
+      ],
+      "answer": 2,
+      "explanation": "60 : 2 = 30, 30 : 2 = 15, 15 : 3 = 5. Čísla 30, 15 a 10 nejsou prvočísla."
+    },
+    {
+      "type": "choice",
+      "question": "Rozklad čísla 48 na prvočinitele:",
+      "options": [
+        "2³ · 6",
+        "4² · 3",
+        "2⁴ · 3",
+        "2³ · 3"
+      ],
+      "answer": 2,
+      "explanation": "48 = 2 · 2 · 2 · 2 · 3 = 2⁴ · 3. Kontrola: 16 · 3 = 48."
+    },
+    {
+      "type": "truefalse",
+      "question": "57 je prvočíslo.",
+      "answer": false,
+      "explanation": "5 + 7 = 12, takže 57 je dělitelné 3: 57 = 3 · 19."
+    },
+    {
+      "type": "truefalse",
+      "question": "23 je prvočíslo.",
+      "answer": true,
+      "explanation": "23 nejde beze zbytku vydělit 2, 3 ani 5 – dělitelé jsou jen 1 a 23."
+    },
+    {
+      "type": "input",
+      "question": "Kolik prvočísel leží mezi čísly 20 a 30?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "23 a 29. Ostatní čísla mezi 20 a 30 jsou složená."
+    },
+    {
+      "type": "input",
+      "question": "2³ · 3² =",
+      "answers": [
+        "72"
+      ],
+      "explanation": "2 · 2 · 2 = 8, 3 · 3 = 9, 8 · 9 = 72.",
+      "hints": [
+        "2³ = 2 · 2 · 2"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které z čísel je prvočinitelem čísla 45?",
+      "options": [
+        "9",
+        "5",
+        "2",
+        "15"
+      ],
+      "answer": 1,
+      "explanation": "45 = 3 · 3 · 5. Prvočinitelé jsou 3 a 5. Čísla 9 a 15 nejsou prvočísla, 2 číslo 45 nedělí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Každé liché číslo je prvočíslo.",
+      "answer": false,
+      "explanation": "Například 9 = 3 · 3 nebo 15 = 3 · 5 jsou lichá, ale složená."
     }
   ]
 }

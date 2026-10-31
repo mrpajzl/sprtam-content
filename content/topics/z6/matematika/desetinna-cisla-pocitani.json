@@ -436,6 +436,80 @@
       "type": "open",
       "question": "Jak vydělíš 2,4 : 0,3?",
       "answer": "Posunu čárku u obou čísel o jedno místo doprava, aby dělitel byl celé číslo: 24 : 3 = 8."
+    },
+    {
+      "type": "input",
+      "question": "12,5 + 3,75 =",
+      "answers": [
+        "16,25"
+      ],
+      "explanation": "12,50 + 3,75 = 16,25 (čárka pod čárku)."
+    },
+    {
+      "type": "input",
+      "question": "Platíš dvacetikorunou za zboží za 13,40 Kč. Kolik Kč ti vrátí?",
+      "answers": [
+        "6,6",
+        "6,60"
+      ],
+      "explanation": "20,00 − 13,40 = 6,60 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "0,6 · 3 =",
+      "options": [
+        "0,18",
+        "1,8",
+        "18",
+        "0,9"
+      ],
+      "answer": 1,
+      "explanation": "6 · 3 = 18, jedno desetinné místo → 1,8."
+    },
+    {
+      "type": "input",
+      "question": "0,45 · 10 =",
+      "answers": [
+        "4,5"
+      ],
+      "explanation": "Násobení 10 posune čárku o 1 místo doprava."
+    },
+    {
+      "type": "input",
+      "question": "3,6 : 100 =",
+      "answers": [
+        "0,036"
+      ],
+      "explanation": "Dělení 100 posune čárku o 2 místa doleva: 0,036."
+    },
+    {
+      "type": "input",
+      "question": "8,4 : 4 =",
+      "answers": [
+        "2,1"
+      ],
+      "explanation": "84 : 4 = 21; čárku do podílu napíšeš, když ji v dělenci přejdeš → 2,1.",
+      "hints": [
+        "Nejdřív 8 : 4, pak připiš číslici za čárkou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "4,8 : 0,6 =",
+      "options": [
+        "0,8",
+        "80",
+        "8",
+        "2,88"
+      ],
+      "answer": 2,
+      "explanation": "Posuň čárku u obou o 1 místo: 48 : 6 = 8."
+    },
+    {
+      "type": "truefalse",
+      "question": "7 − 2,35 = 5,35",
+      "answer": false,
+      "explanation": "7,00 − 2,35 = 4,65. Chybou je odečíst jen celé části."
     }
   ]
 }
