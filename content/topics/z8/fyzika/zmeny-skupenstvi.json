@@ -370,6 +370,82 @@
       "type": "open",
       "question": "Vyjmenuj všech šest změn skupenství.",
       "answer": "Tání, tuhnutí, vypařování (var), kapalnění, sublimace a desublimace."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá změna plynu na kapalinu?",
+      "options": [
+        "vypařování",
+        "kapalnění",
+        "desublimace",
+        "tání"
+      ],
+      "answer": 1,
+      "explanation": "Například vodní pára zkapalní na studených brýlích."
+    },
+    {
+      "type": "input",
+      "question": "Led o teplotě 0 °C přijal 1 002 kJ tepla a celý roztál. Kolik kg ledu to bylo? (skupenské teplo tání 334 kJ/kg)",
+      "answers": [
+        "3"
+      ],
+      "explanation": "1 002 : 334 = 3 kg",
+      "hints": [
+        "Každý kilogram ledu potřebuje 334 kJ.",
+        "Vyděl celkové teplo číslem 334."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dokud voda za normálního tlaku vře, její teplota zůstává asi 100 °C.",
+      "answer": true,
+      "explanation": "Dodávané teplo se spotřebuje na var, teplota stojí, dokud se voda nevypaří."
+    },
+    {
+      "type": "choice",
+      "question": "Při kterém ději látka teplo **odevzdává**?",
+      "options": [
+        "tání",
+        "vypařování",
+        "tuhnutí",
+        "sublimace"
+      ],
+      "answer": 2,
+      "explanation": "Tuhnutí, kapalnění a desublimace teplo odevzdávají. Tání, vypařování a sublimace ho přijímají."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na vysokých horách vře voda při vyšší teplotě než 100 °C.",
+      "answer": false,
+      "explanation": "Na horách je menší tlak vzduchu, voda tam vře při teplotě nižší než 100 °C."
+    },
+    {
+      "type": "choice",
+      "question": "Proč pára, která zkapalní na ruce, spálí víc než stejně horká voda?",
+      "options": [
+        "pára má menší hmotnost než voda",
+        "pára teplo z ruky odebírá",
+        "při kapalnění odevzdá pára ruce další teplo"
+      ],
+      "answer": 2,
+      "explanation": "Kapalnění teplo odevzdává, takže ruka dostane navíc teplo uvolněné změnou skupenství."
+    },
+    {
+      "type": "input",
+      "question": "Jedním slovem: jak se nazývá prudké vypařování v celé kapalině, při kterém se tvoří bubliny?",
+      "answers": [
+        "var"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Zahříváš led o teplotě −10 °C, až se všechen vypaří. Seřaď, co se děje.",
+      "items": [
+        "teplota ledu roste k 0 °C",
+        "led taje a teplota stojí na 0 °C",
+        "teplota vody roste ke 100 °C",
+        "voda vře a teplota stojí na 100 °C"
+      ]
     }
   ]
 }

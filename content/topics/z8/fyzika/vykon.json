@@ -326,6 +326,82 @@
       "type": "open",
       "question": "Co je účinnost a proč je vždy menší než 100 %?",
       "answer": "Účinnost je poměr užitečného výkonu a příkonu. Je menší než 100 %, protože část energie se ztratí, hlavně jako teplo třením."
+    },
+    {
+      "type": "input",
+      "question": "Motor s výkonem 50 W vykoná práci 1 000 J. Za kolik sekund?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "t = W : P = 1 000 : 50 = 20 s",
+      "hints": [
+        "Ze vzorce W = P · t vyjádři čas."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Dva jeřáby zvednou stejný panel do stejné výšky. První za 20 s, druhý za 60 s. Jak se liší jejich výkony?",
+      "options": [
+        "druhý má 3× větší výkon",
+        "první má 3× větší výkon",
+        "oba mají stejný výkon, protože vykonaly stejnou práci",
+        "první má 2× větší výkon"
+      ],
+      "answer": 1,
+      "explanation": "Práce je stejná, první ji vykonal za třetinový čas, takže má trojnásobný výkon."
+    },
+    {
+      "type": "input",
+      "question": "Kolik kW je 3 500 W?",
+      "answers": [
+        "3,5",
+        "3.5"
+      ],
+      "explanation": "1 kW = 1 000 W, takže 3 500 : 1 000 = 3,5 kW."
+    },
+    {
+      "type": "input",
+      "question": "Žák o hmotnosti 50 kg vyběhne po schodech do výšky 6 m za 10 s. Výkon ve W = (g = 10 N/kg)",
+      "answers": [
+        "300"
+      ],
+      "explanation": "W = 50 · 10 · 6 = 3 000 J; P = 3 000 : 10 = 300 W",
+      "hints": [
+        "Nejdřív spočítej práci: W = m · g · h.",
+        "Práce je 3 000 J, teď ji vyděl časem."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Energie, kterou stroj užitečně nevyužije, se nejčastěji přemění na teplo.",
+      "answer": true,
+      "explanation": "Proto je třeba motor po jízdě horký."
+    },
+    {
+      "type": "input",
+      "question": "Motor má příkon 2 000 W a účinnost 75 %. Užitečný výkon ve W =",
+      "answers": [
+        "1500"
+      ],
+      "explanation": "P = 0,75 · 2 000 = 1 500 W",
+      "hints": [
+        "75 % je 0,75.",
+        "Vynásob příkon číslem 0,75."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Vrtačka odebírá ze zásuvky 500 W a užitečně využije 400 W. Kolik W se ztratí (hlavně jako teplo)?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "500 − 400 = 100 W se přemění hlavně na teplo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kdo vykoná víc práce, má vždy větší výkon.",
+      "answer": false,
+      "explanation": "Výkon záleží i na čase. Malá práce vykonaná velmi rychle může znamenat větší výkon než velká práce za hodinu."
     }
   ]
 }

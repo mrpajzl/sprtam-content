@@ -343,6 +343,83 @@
       "type": "open",
       "question": "Co říká zákon zachování energie?",
       "answer": "Energie nevzniká ani nezaniká, jen se přeměňuje z jedné formy na jinou. Celková energie izolované soustavy je stálá."
+    },
+    {
+      "type": "input",
+      "question": "Polohová energie kladiva 3 kg ve výšce 4 m v J = (g = 10 N/kg)",
+      "answers": [
+        "120"
+      ],
+      "explanation": "Ep = 3 · 10 · 4 = 120 J"
+    },
+    {
+      "type": "input",
+      "question": "Pohybová energie koule 4 kg, která se valí rychlostí 5 m/s, v J =",
+      "answers": [
+        "50"
+      ],
+      "explanation": "v² = 25; Ek = ½ · 4 · 25 = 50 J",
+      "hints": [
+        "Nejdřív umocni rychlost: 5 · 5.",
+        "Ek = ½ · m · v²"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se změní pohybová energie, když se rychlost ztrojnásobí?",
+      "options": [
+        "zvětší se 3×",
+        "zvětší se 6×",
+        "zvětší se 9×",
+        "zvětší se 27×"
+      ],
+      "answer": 2,
+      "explanation": "Rychlost je ve vzorci na druhou: 3 · 3 = 9."
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém bodě má houpačka největší polohovou energii?",
+      "options": [
+        "v nejnižším bodě",
+        "v nejvyšším bodě",
+        "v půlce cesty dolů"
+      ],
+      "answer": 1,
+      "explanation": "Nahoře je houpačka nejvýš a na okamžik se zastaví – polohová energie je největší, pohybová nulová."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když se houpačka sama zastaví, její energie zmizela.",
+      "answer": false,
+      "explanation": "Energie nezaniká. Třením a odporem vzduchu se přeměnila na teplo."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď přeměny energie ve vodní elektrárně.",
+      "items": [
+        "polohová energie vody v přehradě",
+        "pohybová energie padající vody",
+        "roztočená turbína",
+        "elektrická energie z generátoru"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kámen 2 kg spadne z výšky 5 m. Jakou pohybovou energii v J má těsně před dopadem? (g = 10 N/kg, odpor vzduchu zanedbej)",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Ep = 2 · 10 · 5 = 100 J se celá přemění na pohybovou energii.",
+      "hints": [
+        "Podle zákona zachování energie se polohová energie mění na pohybovou.",
+        "Spočítej polohovou energii nahoře."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Energie se měří ve stejné jednotce jako práce – v joulech.",
+      "answer": true,
+      "explanation": "Energie je schopnost konat práci, obě se měří v joulech (J)."
     }
   ]
 }

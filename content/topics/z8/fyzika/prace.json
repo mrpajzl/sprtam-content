@@ -308,6 +308,86 @@
       "type": "open",
       "question": "Jak vypočítáš práci při zvedání tělesa?",
       "answer": "W = m · g · h. Hmotnost krát tíhové zrychlení (asi 10 N/kg) krát výška. Výsledek je v joulech."
+    },
+    {
+      "type": "input",
+      "question": "Vyneseš tašku 8 kg do výšky 5 m. Práce v J = (g = 10 N/kg)",
+      "answers": [
+        "400"
+      ],
+      "explanation": "F = 8 · 10 = 80 N; W = 80 · 5 = 400 J",
+      "hints": [
+        "Nejdřív spočítej sílu: F = m · g.",
+        "F = 80 N, dráha je 5 m."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém případě **nekonáš** mechanickou práci?",
+      "options": [
+        "táhneš sáňky do kopce",
+        "zvedáš tašku na stůl",
+        "stojíš s batohem na zádech na zastávce",
+        "tlačíš skříň po pokoji"
+      ],
+      "answer": 2,
+      "explanation": "Batoh se neposouvá, dráha je 0, takže i práce je 0 – i když se unavíš."
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ je 4 500 J?",
+      "answers": [
+        "4,5",
+        "4.5"
+      ],
+      "explanation": "1 kJ = 1 000 J, takže 4 500 : 1 000 = 4,5 kJ."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když do stejného patra vyneseš dvě stejné tašky místo jedné, vykonáš dvakrát víc práce.",
+      "answer": true,
+      "explanation": "Dvojnásobná síla po stejné dráze znamená dvojnásobnou práci."
+    },
+    {
+      "type": "input",
+      "question": "Jeřáb zvedne panel 500 kg do výšky 12 m. Práce v kJ = (g = 10 N/kg)",
+      "answers": [
+        "60"
+      ],
+      "explanation": "W = 500 · 10 · 12 = 60 000 J = 60 kJ",
+      "hints": [
+        "W = m · g · h, výsledek vyjde v joulech.",
+        "Joule převeď na kJ: vyděl 1 000."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Vykonaná práce je 900 J a dráha 3 m. Jak velká byla síla?",
+      "options": [
+        "2 700 N",
+        "300 N",
+        "30 N",
+        "900 N"
+      ],
+      "answer": 1,
+      "explanation": "F = W : s = 900 : 3 = 300 N"
+    },
+    {
+      "type": "truefalse",
+      "question": "Při zvedání tělesa můžeš do vzorce W = F · s dosadit místo síly přímo hmotnost v kilogramech.",
+      "answer": false,
+      "explanation": "Do vzorce patří síla v newtonech. Hmotnost musíš nejdřív vynásobit g: F = m · g."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejmenší vykonané práce po největší. (g = 10 N/kg)",
+      "items": [
+        "zvednout 1 kg o 1 m",
+        "posunout bednu silou 50 N o 1 m",
+        "zvednout 10 kg o 2 m",
+        "zvednout 5 kg o 10 m"
+      ],
+      "explanation": "10 J < 50 J < 200 J < 500 J"
     }
   ]
 }

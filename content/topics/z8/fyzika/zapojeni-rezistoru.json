@@ -360,6 +360,84 @@
       "type": "open",
       "question": "Proč jsou spotřebiče v domácnosti zapojeny paralelně?",
       "answer": "Každý dostane plné napětí 230 V a lze ho zapnout či vypnout nezávisle na ostatních."
+    },
+    {
+      "type": "input",
+      "question": "Rezistory 5 Ω a 15 Ω sériově. Celkový odpor v Ω =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "R = 5 + 15 = 20 Ω"
+    },
+    {
+      "type": "input",
+      "question": "Rezistory 20 Ω a 30 Ω paralelně. Celkový odpor v Ω =",
+      "answers": [
+        "12"
+      ],
+      "explanation": "R = (20 · 30) : (20 + 30) = 600 : 50 = 12 Ω",
+      "hints": [
+        "Pro dva paralelní rezistory: součin lomeno součtem."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tři rezistory po 30 Ω jsou zapojené paralelně. Celkový odpor v Ω =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "1/R = 3/30 = 1/10, tedy R = 10 Ω",
+      "hints": [
+        "1/R = 1/30 + 1/30 + 1/30",
+        "Na konci převrácenou hodnotu otoč."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Rezistory 3 Ω a 6 Ω jsou zapojené sériově na zdroji 18 V. Jaké napětí je na rezistoru 3 Ω?",
+      "options": [
+        "12 V",
+        "9 V",
+        "6 V",
+        "18 V"
+      ],
+      "answer": 2,
+      "explanation": "R = 9 Ω, I = 18 : 9 = 2 A, U = 2 · 3 = 6 V (na 6 Ω zbývá 12 V).",
+      "hints": [
+        "Nejdřív celkový odpor a proud: I = U : R."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Rezistory 6 Ω a 12 Ω jsou zapojené paralelně na zdroji 12 V. Proud větví s rezistorem 6 Ω v A =",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Na každé větvi je napětí zdroje: I = 12 : 6 = 2 A."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když v paralelním zapojení vypadne jedna větev, přestanou fungovat i ostatní spotřebiče.",
+      "answer": false,
+      "explanation": "Každá větev je připojená přímo ke zdroji, ostatní fungují dál."
+    },
+    {
+      "type": "choice",
+      "question": "Žák počítal dva rezistory po 4 Ω paralelně: 1/R = 1/4 + 1/4 = 1/2, a napsal R = 1/2 Ω. Kolik je správně?",
+      "options": [
+        "0,5 Ω",
+        "2 Ω",
+        "8 Ω",
+        "4 Ω"
+      ],
+      "answer": 1,
+      "explanation": "1/R = 1/2, takže R = 2 Ω. Převrácenou hodnotu musíš na konci otočit."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dva rezistory 10 Ω zapojené sériově můžeš nahradit jedním rezistorem 20 Ω.",
+      "answer": true,
+      "explanation": "Sériově se odpory sčítají: 10 + 10 = 20 Ω."
     }
   ]
 }

@@ -351,6 +351,78 @@
       "type": "open",
       "question": "Proč mají prodlužovací kabely pro výkonné spotřebiče tlustší vodiče?",
       "answer": "Tlustší vodič má menší odpor, tolik se nezahřívá a ztrácí se méně energie."
+    },
+    {
+      "type": "input",
+      "question": "Drát má odpor 5 Ω. Jaký odpor v Ω má stejný drát třikrát delší?",
+      "answers": [
+        "15"
+      ],
+      "explanation": "Trojnásobná délka → trojnásobný odpor: 5 · 3 = 15 Ω"
+    },
+    {
+      "type": "input",
+      "question": "Drát má odpor 10 Ω. Polovinu ho odstřihneš. Jaký odpor v Ω má zbylý kus?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Poloviční délka → poloviční odpor: 10 : 2 = 5 Ω"
+    },
+    {
+      "type": "choice",
+      "question": "Železný a měděný drát mají stejnou délku i průřez. Jaký odpor má železný drát v porovnání s měděným?",
+      "options": [
+        "stejný",
+        "asi 2× větší",
+        "asi 6× větší",
+        "asi 6× menší"
+      ],
+      "answer": 2,
+      "explanation": "Železo má asi 6× větší měrný odpor než měď."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tlustší drát má větší odpor, protože je v něm víc kovu.",
+      "answer": false,
+      "explanation": "Tlustší drát má větší průřez, a tedy menší odpor – jako širší chodba."
+    },
+    {
+      "type": "choice",
+      "question": "Proč odpor kovového drátu s teplotou roste?",
+      "options": [
+        "elektronů v teplém kovu ubývá",
+        "atomy víc kmitají a elektronům víc překážejí",
+        "teplý kov se mění na izolant"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "Drát má odpor 8 Ω. Jaký odpor v Ω má drát z téhož kovu, který je dvakrát delší a má dvakrát větší průřez?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "8 · 2 : 2 = 8 Ω – obě změny se vyruší.",
+      "hints": [
+        "Dvojnásobná délka odpor zdvojnásobí.",
+        "Dvojnásobný průřez odpor zmenší na polovinu."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Stříbro vede elektrický proud lépe než měď.",
+      "answer": true,
+      "explanation": "Stříbro má nejmenší měrný odpor ze všech kovů, ale je drahé."
+    },
+    {
+      "type": "choice",
+      "question": "Jak reostat mění svůj odpor?",
+      "options": [
+        "zahřívá a ochlazuje drát",
+        "jezdcem se mění, jak dlouhým kusem drátu proud prochází",
+        "vymění drát za jiný kov"
+      ],
+      "answer": 1
     }
   ]
 }

@@ -364,6 +364,86 @@
       "type": "open",
       "question": "Na čem závisí teplo potřebné k ohřátí tělesa?",
       "answer": "Na hmotnosti, na látce (měrné tepelné kapacitě) a na tom, o kolik ho ohříváme: Q = m · c · Δt."
+    },
+    {
+      "type": "choice",
+      "question": "Lžička leží v horkém čaji. Kdy přestane teplo přecházet z čaje do lžičky?",
+      "options": [
+        "až bude lžička teplejší než čaj",
+        "až budou mít čaj i lžička stejnou teplotu",
+        "nikdy, teplo přechází pořád"
+      ],
+      "answer": 1,
+      "explanation": "Teplo přechází z teplejšího na chladnější, dokud se teploty nevyrovnají."
+    },
+    {
+      "type": "input",
+      "question": "Kolik kJ tepla potřebuješ k ohřátí 2 kg vody z 20 °C na 70 °C? (c = 4 200 J/(kg·°C))",
+      "answers": [
+        "420"
+      ],
+      "explanation": "Δt = 50 °C; Q = 2 · 4 200 · 50 = 420 000 J = 420 kJ",
+      "hints": [
+        "Nejdřív spočítej změnu teploty Δt = 70 − 20.",
+        "Q = m · c · Δt, výsledek v J vyděl 1 000."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V zimě je kovové zábradlí studenější než dřevěná lavička, která stojí vedle něj.",
+      "answer": false,
+      "explanation": "Mají stejnou teplotu. Kov je dobrý vodič tepla a rychleji odvádí teplo z ruky, proto se zdá studenější."
+    },
+    {
+      "type": "choice",
+      "question": "Proč péřová bunda dobře hřeje?",
+      "options": [
+        "peří samo vyrábí teplo",
+        "peří je dobrý vodič tepla",
+        "mezi peříčky je uvězněný vzduch, který je dobrý izolant"
+      ],
+      "answer": 2,
+      "explanation": "Vzduch vede teplo špatně, takže teplo z těla uniká pomalu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zářením se teplo může šířit i vakuem, kde není žádná látka.",
+      "answer": true,
+      "explanation": "Proto k nám dorazí teplo ze Slunce přes vesmír."
+    },
+    {
+      "type": "input",
+      "question": "Voda se ohřála z 15 °C na 45 °C. Změna teploty Δt v °C =",
+      "answers": [
+        "30"
+      ],
+      "explanation": "Δt = 45 − 15 = 30 °C"
+    },
+    {
+      "type": "input",
+      "question": "Kolik J tepla přijme 2 kg mědi, když se ohřeje o 10 °C? (c = 380 J/(kg·°C))",
+      "answers": [
+        "7600"
+      ],
+      "explanation": "Q = 2 · 380 · 10 = 7 600 J"
+    },
+    {
+      "type": "match",
+      "question": "Spoj situaci se způsobem šíření tepla.",
+      "pairs": [
+        [
+          "hřeješ si ruce u táboráku",
+          "záření"
+        ],
+        [
+          "zahřívá se rukojeť pánve na plotně",
+          "vedení"
+        ],
+        [
+          "záclona se třepotá nad topením",
+          "proudění"
+        ]
+      ]
     }
   ]
 }

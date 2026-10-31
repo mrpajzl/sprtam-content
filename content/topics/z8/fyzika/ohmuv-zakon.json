@@ -340,6 +340,86 @@
       "type": "open",
       "question": "Jak experimentálně zjistíš odpor rezistoru?",
       "answer": "Zapojím ho do obvodu, ampérmetrem změřím proud a voltmetrem napětí na rezistoru. Odpor vypočítám R = U / I."
+    },
+    {
+      "type": "input",
+      "question": "Napětí 24 V, odpor 6 Ω. Proud v A =",
+      "answers": [
+        "4"
+      ],
+      "explanation": "I = U : R = 24 : 6 = 4 A"
+    },
+    {
+      "type": "input",
+      "question": "Proud 2 A, odpor 50 Ω. Napětí ve V =",
+      "answers": [
+        "100"
+      ],
+      "explanation": "U = I · R = 2 · 50 = 100 V"
+    },
+    {
+      "type": "input",
+      "question": "Rezistorem při napětí 5 V teče proud 250 mA. Odpor v Ω =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "R = 5 : 0,25 = 20 Ω",
+      "hints": [
+        "Proud převeď na ampéry: 250 mA = 0,25 A.",
+        "R = U : I"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při stejném napětí teče spotřebičem s větším odporem větší proud.",
+      "answer": false,
+      "explanation": "Odpor proudu brání. Větší odpor znamená menší proud."
+    },
+    {
+      "type": "choice",
+      "question": "Rezistorem při napětí 3 V teče 0,15 A. Jaký proud jím poteče při 9 V?",
+      "options": [
+        "0,3 A",
+        "0,45 A",
+        "0,15 A",
+        "0,05 A"
+      ],
+      "answer": 1,
+      "explanation": "Napětí se ztrojnásobilo, proto se ztrojnásobí i proud: 3 · 0,15 = 0,45 A."
+    },
+    {
+      "type": "choice",
+      "question": "V grafu závislosti proudu na napětí jsou dvě přímky z počátku. Co platí pro strmější přímku?",
+      "options": [
+        "patří rezistoru s větším odporem",
+        "patří rezistoru s menším odporem",
+        "patří zdroji s větším napětím"
+      ],
+      "answer": 1,
+      "explanation": "Stejné napětí protlačí menším odporem větší proud, proto přímka stoupá strměji."
+    },
+    {
+      "type": "truefalse",
+      "question": "Odpor 1 Ω má vodič, kterým při napětí 1 V teče proud 1 A.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj hledanou veličinu se vzorcem.",
+      "pairs": [
+        [
+          "proud I",
+          "U : R"
+        ],
+        [
+          "napětí U",
+          "I · R"
+        ],
+        [
+          "odpor R",
+          "U : I"
+        ]
+      ]
     }
   ]
 }
