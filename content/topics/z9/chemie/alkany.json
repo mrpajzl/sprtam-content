@@ -441,6 +441,92 @@
       "type": "open",
       "question": "Napiš a popiš hoření methanu.",
       "answer": "CH₄ + 2 O₂ → CO₂ + 2 H₂O. Methan reaguje s kyslíkem, vzniká oxid uhličitý a voda a uvolňuje se teplo – reakce je exotermní."
+    },
+    {
+      "type": "input",
+      "question": "Kolik atomů vodíku má hexan (6 uhlíků)?",
+      "answers": [
+        "14"
+      ],
+      "explanation": "2 · 6 + 2 = 14, hexan je C₆H₁₄.",
+      "hints": [
+        "Použij vzorec CₙH₂ₙ₊₂."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je vzorec pentanu?",
+      "options": [
+        "C₅H₁₀",
+        "C₅H₁₂",
+        "C₅H₈",
+        "C₆H₁₄"
+      ],
+      "answer": 1,
+      "explanation": "n = 5, vodíků je 2 · 5 + 2 = 12."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje alkan C₂H₆?",
+      "answers": [
+        "ethan",
+        "etan"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pentan je za běžné teploty plyn.",
+      "answer": false,
+      "explanation": "Plyny jsou jen první čtyři alkany (methan až butan). Pentan je kapalina."
+    },
+    {
+      "type": "choice",
+      "question": "Které alkany jsou za běžné teploty pevné?",
+      "options": [
+        "ty s nejkratším řetězcem",
+        "žádné, všechny jsou plyny",
+        "ty s nejdelším řetězcem"
+      ],
+      "answer": 2,
+      "explanation": "Čím delší řetězec, tím vyšší teplota varu. Nejdelší alkany jsou pevné, třeba parafín ve svíčkách."
+    },
+    {
+      "type": "input",
+      "question": "Kolik molekul oxidu uhličitého vznikne dokonalým hořením jedné molekuly butanu C₄H₁₀?",
+      "answers": [
+        "4"
+      ],
+      "hints": [
+        "Každý atom uhlíku skončí v jedné molekule CO₂."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Oxid uhelnatý výrazně zapáchá, takže ho doma snadno ucítíš.",
+      "answer": false,
+      "explanation": "CO je bez barvy a bez zápachu. Proto se doma dávají hlásiče CO."
+    },
+    {
+      "type": "match",
+      "question": "Spoj alkan nebo směs alkanů s použitím.",
+      "pairs": [
+        [
+          "methan",
+          "zemní plyn"
+        ],
+        [
+          "propan a butan",
+          "plyn v kartuších"
+        ],
+        [
+          "oktan",
+          "benzín"
+        ],
+        [
+          "parafín",
+          "svíčky"
+        ]
+      ]
     }
   ]
 }
