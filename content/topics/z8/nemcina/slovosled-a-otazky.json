@@ -530,6 +530,47 @@
       "type": "open",
       "question": "Jak se v němčině tvoří otázka s tázacím slovem a otázka ano/ne? Uveď příklady.",
       "answer": "S tázacím slovem: tázací slovo, sloveso, podmět – Wo wohnst du? Otázka ano/ne začíná slovesem, za ním je podmět – Wohnst du in Prag?"
+    },
+    {
+      "type": "choice",
+      "question": "Začni větu „Wir fahren nach Berlin.“ slovem „Morgen“.",
+      "options": [
+        "Morgen wir fahren nach Berlin.",
+        "Morgen fahren wir nach Berlin.",
+        "Morgen fahren nach Berlin wir."
+      ],
+      "answer": 1,
+      "explanation": "Sloveso zůstane na 2. místě, podmět wir jde hned za něj."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď slova do otázky „Hraje Anna fotbal?“",
+      "items": [
+        "Spielt",
+        "Anna",
+        "Fußball?"
+      ],
+      "explanation": "Otázka ano/ne začíná slovesem, za ním je podmět."
+    },
+    {
+      "type": "input",
+      "question": "Doplň tázací slovo: ___ machst du am Wochenende? – Ich spiele Fußball.",
+      "answers": [
+        "Was"
+      ],
+      "explanation": "Ptáš se, co děláš → was (co)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Mein großer Bruder wohnt in Wien.“ stojí sloveso na 2. místě.",
+      "answer": true,
+      "explanation": "Mein großer Bruder je jeden větný člen = 1. místo, wohnt je na 2. místě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Am Samstag ich besuche Oma.“ je správně.",
+      "answer": false,
+      "explanation": "Am Samstag je 1. místo, sloveso musí být druhé: Am Samstag besuche ich Oma."
     }
   ]
 }

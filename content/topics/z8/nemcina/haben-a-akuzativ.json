@@ -517,6 +517,50 @@
       "type": "open",
       "question": "Řekni německy, jaké máš sourozence a zvířata (nebo že je nemáš).",
       "answer": "Ich habe einen Bruder und eine Schwester. Ich habe keinen Hund, aber ich habe eine Katze."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň: Wir ___ einen Garten.",
+      "options": [
+        "habt",
+        "haben",
+        "hat"
+      ],
+      "answer": 1,
+      "explanation": "wir → haben."
+    },
+    {
+      "type": "input",
+      "question": "Doplň člen: Er kauft ___ Pullover. (der Pullover, neurčitý člen)",
+      "answers": [
+        "einen"
+      ],
+      "explanation": "Mužský rod ve 4. pádě: ein → einen."
+    },
+    {
+      "type": "choice",
+      "question": "Doplň zápor: Sie hat heute ___ Zeit. (die Zeit)",
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ],
+      "answer": 2,
+      "explanation": "die Zeit je ženská, ve 4. pádě se nemění: keine."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě „Der Hund sieht den Ball.“ je „der Hund“ ve 4. pádě.",
+      "answer": false,
+      "explanation": "Der Hund je podmět (kdo vidí?), proto je v 1. pádě. Ve 4. pádě je den Ball."
+    },
+    {
+      "type": "input",
+      "question": "Doplň člen: Ich suche ___ Lineal. (das Lineal, určitý člen)",
+      "answers": [
+        "das"
+      ],
+      "explanation": "Střední rod se ve 4. pádě nemění: das Lineal."
     }
   ]
 }

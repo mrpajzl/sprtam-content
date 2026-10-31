@@ -496,6 +496,51 @@
       "type": "open",
       "question": "Co znamená ve slovníku zápis „die Hand, ¨-e“? Jak zní množné číslo?",
       "answer": "Znak ¨ znamená přehlásku a -e koncovku. Množné číslo je die Hände (ruce)."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké je množné číslo od „der Lehrer“?",
+      "options": [
+        "die Lehrern",
+        "die Lehrer",
+        "die Lehrers"
+      ],
+      "answer": 1,
+      "explanation": "Mužská slova na -er nemají v množném čísle koncovku."
+    },
+    {
+      "type": "input",
+      "question": "Napiš množné číslo bez členu: die Tasche",
+      "answers": [
+        "Taschen"
+      ],
+      "explanation": "Ženské slovo na -e → přidá se -n."
+    },
+    {
+      "type": "input",
+      "question": "Ve slovníku je „der Vogel, ¨-“ (pták). Napiš množné číslo bez členu.",
+      "answers": [
+        "Vögel",
+        "Voegel"
+      ],
+      "explanation": "¨ = přehláska o → ö, pomlčka bez koncovky: Vögel."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké je množné číslo od „das Sofa“?",
+      "options": [
+        "die Sofae",
+        "die Sofen",
+        "die Sofas"
+      ],
+      "answer": 2,
+      "explanation": "Slova na samohlásku mají většinou -s."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta „Ich habe zwei Hunde.“ je správně.",
+      "answer": true,
+      "explanation": "der Hund, -e → die Hunde. Neurčitý člen v množném čísle zmizí."
     }
   ]
 }
