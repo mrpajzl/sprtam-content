@@ -344,6 +344,78 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi pevnou a volnou kladkou?",
       "answer": "Pevná kladka jen mění směr síly, síla je stejná jako tíha břemene. Volná kladka se pohybuje s břemenem a potřebná síla je poloviční."
+    },
+    {
+      "type": "input",
+      "question": "Síla 50 N působí na rameni 0,2 m. Moment síly v N·m =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "M = F · a = 50 · 0,2 = 10 N·m"
+    },
+    {
+      "type": "input",
+      "question": "Na rameni 0,5 m visí 200 N. Jakou silou v N to vyvážíš na rameni 2 m?",
+      "answers": [
+        "50"
+      ],
+      "explanation": "200 · 0,5 = 100; 100 : 2 = 50 N"
+    },
+    {
+      "type": "input",
+      "question": "Na jedné straně páky působí síla 120 N na rameni 0,5 m. Na jak dlouhém rameni v m ji vyváží síla 30 N?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "120 · 0,5 = 60; 60 : 30 = 2 m",
+      "hints": [
+        "Spočítej moment známé strany.",
+        "Neznámé rameno = moment : síla."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co je osa otáčení u dveří?",
+      "options": [
+        "klika",
+        "panty",
+        "zámek",
+        "práh"
+      ],
+      "answer": 1,
+      "explanation": "Dveře se otáčejí kolem pantů."
+    },
+    {
+      "type": "choice",
+      "question": "Kolikrát menší sílu potřebuješ, když rameno síly prodloužíš třikrát?",
+      "options": [
+        "stejnou",
+        "dvakrát menší",
+        "šestkrát menší",
+        "třikrát menší"
+      ],
+      "answer": 3,
+      "explanation": "Moment F · a se nemění, takže třikrát delší rameno = třetinová síla."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pevnou kladkou zvedneš břemeno 400 N silou 200 N.",
+      "answer": false,
+      "explanation": "Pevná kladka jen mění směr síly, potřebuješ 400 N."
+    },
+    {
+      "type": "input",
+      "question": "Pevnou kladkou na stožáru zvedáš vlajku o tíze 20 N. Jakou silou v N táhneš lano?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "Pevná kladka sílu nezmenší, jen mění její směr."
+    },
+    {
+      "type": "truefalse",
+      "question": "Moment síly vypočítáme jako součin síly a ramene.",
+      "answer": true,
+      "explanation": "M = F · a, jednotka N·m."
     }
   ]
 }

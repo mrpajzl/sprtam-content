@@ -320,6 +320,85 @@
       "type": "open",
       "question": "Jak vypočítáš průměrnou rychlost? Uveď příklad.",
       "answer": "Celou dráhu vydělím celkovým časem: v = s / t. Např. 60 km za 2 h je 30 km/h."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá těleso, vůči kterému posuzujeme, zda se jiné těleso pohybuje?",
+      "options": [
+        "trajektorie",
+        "vztažné těleso",
+        "siloměr",
+        "dráha"
+      ],
+      "answer": 1,
+      "explanation": "Klid i pohyb vždy posuzujeme vůči vztažnému tělesu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pohyb s jeho druhem podle trajektorie.",
+      "pairs": [
+        [
+          "jízda výtahem",
+          "přímočarý"
+        ],
+        [
+          "jízda na kolotoči",
+          "křivočarý"
+        ],
+        [
+          "pád kamene z věže",
+          "přímočarý"
+        ],
+        [
+          "let hozeného míče",
+          "křivočarý"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jezdec na eskalátoru, který jede stále stejně rychle, koná rovnoměrný pohyb.",
+      "answer": true,
+      "explanation": "Rychlost se nemění, pohyb je rovnoměrný."
+    },
+    {
+      "type": "input",
+      "question": "Cyklista ujel 45 km za 3 h. Průměrná rychlost v km/h =",
+      "answers": [
+        "15"
+      ],
+      "explanation": "v = s : t = 45 : 3 = 15 km/h"
+    },
+    {
+      "type": "input",
+      "question": "Kolik km/h je 25 m/s?",
+      "answers": [
+        "90"
+      ],
+      "explanation": "25 · 3,6 = 90 km/h"
+    },
+    {
+      "type": "input",
+      "question": "Vlak jede stálou rychlostí 80 km/h. Kolik km ujede za 1,5 h?",
+      "answers": [
+        "120"
+      ],
+      "explanation": "s = v · t = 80 · 1,5 = 120 km",
+      "hints": [
+        "Hledáš dráhu: s = v · t."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Dvě auta jedou rovnoměrně. Na grafu dráhy je přímka auta A strmější než přímka auta B. Co platí?",
+      "options": [
+        "auto B je rychlejší",
+        "obě jedou stejně rychle",
+        "auto A je rychlejší",
+        "auto A stojí"
+      ],
+      "answer": 2,
+      "explanation": "Čím strmější přímka v grafu dráhy, tím větší rychlost."
     }
   ]
 }

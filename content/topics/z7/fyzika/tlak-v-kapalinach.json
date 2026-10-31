@@ -311,6 +311,95 @@
       "type": "open",
       "question": "Jak funguje hydraulický lis?",
       "answer": "Malou silou působíme na malý píst. Tlak se podle Pascalova zákona přenese na velký píst, kde díky větší ploše vznikne větší síla."
+    },
+    {
+      "type": "input",
+      "question": "Hydrostatický tlak vody v hloubce 4 m v kPa? (ρ = 1 000 kg/m³, g = 10 N/kg)",
+      "answers": [
+        "40"
+      ],
+      "explanation": "p = 4 · 1 000 · 10 = 40 000 Pa = 40 kPa"
+    },
+    {
+      "type": "input",
+      "question": "Hydrostatický tlak vody v hloubce 0,5 m v Pa? (ρ = 1 000 kg/m³, g = 10 N/kg)",
+      "answers": [
+        "5000",
+        "5 000"
+      ],
+      "explanation": "p = 0,5 · 1 000 · 10 = 5 000 Pa"
+    },
+    {
+      "type": "input",
+      "question": "V jaké hloubce v m je hydrostatický tlak vody 80 kPa? (g = 10 N/kg)",
+      "answers": [
+        "8"
+      ],
+      "explanation": "Každý metr vody přidá 10 kPa: 80 : 10 = 8 m",
+      "hints": [
+        "Spočítej, o kolik kPa vzroste tlak na každý metr hloubky."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do PET lahve uděláš tři dírky nad sebou a naplníš ji vodou. Ze které dírky stříká voda nejdál?",
+      "options": [
+        "z nejvyšší",
+        "z prostřední",
+        "ze všech stejně",
+        "z nejnižší"
+      ],
+      "answer": 3,
+      "explanation": "Dole je nad dírkou nejvíc vody, tlak je tam největší."
+    },
+    {
+      "type": "truefalse",
+      "question": "Tlak v kapalině působí jen směrem dolů, na dno nádoby.",
+      "answer": false,
+      "explanation": "Tlak v kapalině působí do všech stran – i do boků a zespodu."
+    },
+    {
+      "type": "choice",
+      "question": "Proč nejde konvici naplnit výš, než sahá hubička?",
+      "options": [
+        "konvice a hubička jsou spojené nádoby",
+        "voda se v konvici zahřívá",
+        "víčko konvice nepustí vodu výš",
+        "hubička je užší než konvice"
+      ],
+      "answer": 0,
+      "explanation": "Ve spojených nádobách je hladina všude stejně vysoko, voda začne hubičkou vytékat."
+    },
+    {
+      "type": "input",
+      "question": "Hydraulický zvedák: malý píst 5 cm², velký 200 cm². Na malý tlačíš silou 50 N. Síla na velkém pístu v N =",
+      "answers": [
+        "2000",
+        "2 000"
+      ],
+      "explanation": "Velký píst je 200 : 5 = 40krát větší, síla je 40 · 50 = 2 000 N"
+    },
+    {
+      "type": "match",
+      "question": "Spoj veličinu ze vzorce p = h · ρ · g s jejím významem.",
+      "pairs": [
+        [
+          "h",
+          "hloubka"
+        ],
+        [
+          "ρ",
+          "hustota kapaliny"
+        ],
+        [
+          "g",
+          "tíhové zrychlení"
+        ],
+        [
+          "p",
+          "hydrostatický tlak"
+        ]
+      ]
     }
   ]
 }

@@ -350,6 +350,87 @@
       "type": "open",
       "question": "Kdy těleso v kapalině klesá, vznáší se a plave?",
       "answer": "Klesá, když je jeho hustota větší než hustota kapaliny. Vznáší se při stejné hustotě. Plave, když je hustota tělesa menší."
+    },
+    {
+      "type": "input",
+      "question": "Těleso o objemu 0,002 m³ je celé ponořené ve vodě. Vztlaková síla v N? (ρ = 1 000 kg/m³, g = 10 N/kg)",
+      "answers": [
+        "20"
+      ],
+      "explanation": "Fvz = 0,002 · 1 000 · 10 = 20 N"
+    },
+    {
+      "type": "input",
+      "question": "Těleso o objemu 300 cm³ je celé ponořené ve vodě. Vztlaková síla v N? (g = 10 N/kg)",
+      "answers": [
+        "3"
+      ],
+      "explanation": "300 cm³ = 0,0003 m³; Fvz = 0,0003 · 1 000 · 10 = 3 N",
+      "hints": [
+        "Objem převeď na m³: 1 m³ = 1 000 000 cm³."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Závaží má na siloměru ve vzduchu 20 N, celé ponořené ve vodě 14 N. Vztlaková síla v N =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Fvz = 20 − 14 = 6 N"
+    },
+    {
+      "type": "choice",
+      "question": "Těleso ve vodě má gravitační sílu 8 N a vztlakovou sílu 5 N. Co se s ním stane?",
+      "options": [
+        "vznáší se",
+        "stoupá k hladině",
+        "klesá ke dnu",
+        "plave na hladině"
+      ],
+      "answer": 2,
+      "explanation": "Fg > Fvz, těleso klesá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Železná a dřevěná kulička stejného objemu, obě úplně ponořené ve vodě, jsou nadnášeny stejnou vztlakovou silou.",
+      "answer": true,
+      "explanation": "Vztlak závisí na objemu ponořené části a hustotě kapaliny, ne na hustotě tělesa."
+    },
+    {
+      "type": "truefalse",
+      "question": "O tom, zda těleso plave, rozhoduje jeho hmotnost: lehké věci plavou, těžké klesnou.",
+      "answer": false,
+      "explanation": "Rozhoduje hustota. Velký dřevěný vor plave, malý kamínek klesne."
+    },
+    {
+      "type": "choice",
+      "question": "Proč stoupá horkovzdušný balon?",
+      "options": [
+        "horký vzduch je lehčí než nic",
+        "horký vzduch má menší hustotu než okolní studený vzduch",
+        "balon odpuzuje Země",
+        "horký vzduch zvětšuje gravitační sílu"
+      ],
+      "answer": 1,
+      "explanation": "Archimédův zákon platí i v plynech."
+    },
+    {
+      "type": "match",
+      "question": "Spoj porovnání sil s tím, co dělá těleso v kapalině.",
+      "pairs": [
+        [
+          "Fg > Fvz",
+          "klesá ke dnu"
+        ],
+        [
+          "Fg = Fvz",
+          "vznáší se"
+        ],
+        [
+          "Fg < Fvz",
+          "stoupá a plave"
+        ]
+      ]
     }
   ]
 }

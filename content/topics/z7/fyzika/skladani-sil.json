@@ -309,6 +309,78 @@
       "type": "open",
       "question": "Kdy je těleso v rovnováze sil? Uveď příklad.",
       "answer": "Když je výslednice všech sil nulová. Například lampa visící na lanku: gravitační síla a síla lanka jsou stejně velké a opačné."
+    },
+    {
+      "type": "input",
+      "question": "Síly 15 N a 35 N působí stejným směrem. Výslednice v N =",
+      "answers": [
+        "50"
+      ],
+      "explanation": "Stejný směr: 15 + 35 = 50 N"
+    },
+    {
+      "type": "input",
+      "question": "Levé družstvo táhne lano silou 40 N, pravé silou 25 N. Výslednice v N =",
+      "answers": [
+        "15"
+      ],
+      "explanation": "Opačné směry: 40 − 25 = 15 N, směr doleva."
+    },
+    {
+      "type": "choice",
+      "question": "Síly 70 N doprava a 90 N doleva. Jaká je výslednice?",
+      "options": [
+        "160 N doleva",
+        "20 N doprava",
+        "20 N doleva",
+        "0 N"
+      ],
+      "answer": 2,
+      "explanation": "+70 + (−90) = −20, tedy 20 N doleva – ve směru větší síly."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je nejmenší možná výslednice dvou sil 12 N a 5 N na jedné přímce? Výslednice v N =",
+      "answers": [
+        "7"
+      ],
+      "explanation": "Nejmenší při opačném směru: 12 − 5 = 7 N"
+    },
+    {
+      "type": "truefalse",
+      "question": "Výslednice dvou opačných sil 50 N a 30 N míří ve směru síly 30 N.",
+      "answer": false,
+      "explanation": "Výslednice míří ve směru větší síly, tedy 50 N."
+    },
+    {
+      "type": "choice",
+      "question": "Lampa visí ze stropu a nehýbe se. Země ji táhne dolů silou 20 N. Jakou silou ji táhne lanko nahoru?",
+      "options": [
+        "10 N",
+        "40 N",
+        "0 N",
+        "20 N"
+      ],
+      "answer": 3,
+      "explanation": "Lampa je v rovnováze, síla lanka je stejně velká jako gravitační síla."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nulová výslednice znamená, že na těleso nepůsobí žádné síly.",
+      "answer": false,
+      "explanation": "Síly působí, ale navzájem se vyruší."
+    },
+    {
+      "type": "input",
+      "question": "Na vozík působí doprava síly 30 N a 20 N a doleva síla 60 N. Výslednice v N =",
+      "answers": [
+        "10"
+      ],
+      "explanation": "+30 + 20 − 60 = −10, tedy 10 N doleva.",
+      "hints": [
+        "Síly doprava piš kladně, doleva záporně.",
+        "Všechno sečti."
+      ]
     }
   ]
 }

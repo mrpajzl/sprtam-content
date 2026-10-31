@@ -326,6 +326,82 @@
       "type": "open",
       "question": "Uveď, kdy je tření užitečné a kdy škodlivé.",
       "answer": "Užitečné je při chůzi, brzdění nebo držení předmětů. Škodlivé je v motorech a strojích – zahřívá a opotřebovává součástky."
+    },
+    {
+      "type": "input",
+      "question": "Tlaková síla 600 N, součinitel tření 0,3. Třecí síla v N =",
+      "answers": [
+        "180"
+      ],
+      "explanation": "Ft = f · Fn = 0,3 · 600 = 180 N"
+    },
+    {
+      "type": "input",
+      "question": "Bedna o hmotnosti 40 kg leží na vodorovné podlaze. Jakou tlakovou silou v N tlačí na podlahu? (g = 10 N/kg)",
+      "answers": [
+        "400"
+      ],
+      "explanation": "Na vodorovné podlaze Fn = m · g = 40 · 10 = 400 N"
+    },
+    {
+      "type": "input",
+      "question": "Skříň o hmotnosti 50 kg posouváš po podlaze, součinitel tření je 0,4. Třecí síla v N = (g = 10 N/kg)",
+      "answers": [
+        "200"
+      ],
+      "explanation": "Fn = 50 · 10 = 500 N; Ft = 0,4 · 500 = 200 N",
+      "hints": [
+        "Nejdřív spočítej tlakovou sílu Fn = m · g.",
+        "Pak vynásob součinitelem tření."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaké tření vzniká, když bedna klouže po podlaze?",
+      "options": [
+        "valivé",
+        "smykové",
+        "žádné",
+        "vzduchové"
+      ],
+      "answer": 1,
+      "explanation": "Při klouzání vzniká smykové tření, při kutálení valivé."
+    },
+    {
+      "type": "choice",
+      "question": "Proč má kufr kolečka?",
+      "options": [
+        "valivé tření je menší než smykové",
+        "kolečka zvětšují tření",
+        "kufr je pak lehčí",
+        "kolečka zmenšují hmotnost obsahu"
+      ],
+      "answer": 0,
+      "explanation": "Kutálení brzdí mnohem méně než vlečení po zemi."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na kvádr na stole položíš druhý stejný kvádr. Třecí síla se zvětší dvakrát.",
+      "answer": true,
+      "explanation": "Tlaková síla je dvojnásobná, a tak je dvojnásobná i třecí síla."
+    },
+    {
+      "type": "truefalse",
+      "question": "Bez tření by se nám chodilo snadněji.",
+      "answer": false,
+      "explanation": "Bez tření bychom nemohli chodit vůbec – noha by klouzala."
+    },
+    {
+      "type": "choice",
+      "question": "Na kterém povrchu má ocelová brusle nejmenší tření?",
+      "options": [
+        "na asfaltu",
+        "na betonu",
+        "na ledu",
+        "na trávě"
+      ],
+      "answer": 2,
+      "explanation": "Led je velmi hladký, součinitel tření oceli na ledu je asi 0,02."
     }
   ]
 }

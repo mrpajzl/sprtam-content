@@ -322,6 +322,93 @@
       "type": "open",
       "question": "Jak vypočítáš gravitační sílu? Uveď příklad.",
       "answer": "Fg = m · g, kde g je asi 10 N/kg. Těleso 5 kg je přitahováno silou 50 N."
+    },
+    {
+      "type": "input",
+      "question": "Jakou gravitační silou v N působí Země na batoh 4,5 kg? (g = 10 N/kg)",
+      "answers": [
+        "45"
+      ],
+      "explanation": "Fg = m · g = 4,5 · 10 = 45 N"
+    },
+    {
+      "type": "input",
+      "question": "Jakou gravitační silou v N působí Země na jablko 200 g? (g = 10 N/kg)",
+      "answers": [
+        "2"
+      ],
+      "explanation": "200 g = 0,2 kg; Fg = 0,2 · 10 = 2 N",
+      "hints": [
+        "Nejdřív převeď gramy na kilogramy."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Siloměr ukazuje 30 N. Jakou hmotnost v kg má zavěšené těleso? (g = 10 N/kg)",
+      "answers": [
+        "3"
+      ],
+      "explanation": "m = Fg : g = 30 : 10 = 3 kg"
+    },
+    {
+      "type": "input",
+      "question": "Astronaut má hmotnost 50 kg. Jakou silou v N ho přitahuje Měsíc? (g = 1,6 N/kg)",
+      "answers": [
+        "80"
+      ],
+      "explanation": "Fg = 50 · 1,6 = 80 N"
+    },
+    {
+      "type": "truefalse",
+      "question": "Na Měsíci má astronaut menší hmotnost než na Zemi.",
+      "answer": false,
+      "explanation": "Hmotnost zůstává stejná. Menší je jen gravitační síla, kterou ho Měsíc přitahuje."
+    },
+    {
+      "type": "choice",
+      "question": "Co měří váhy?",
+      "options": [
+        "sílu v newtonech",
+        "hmotnost v kilogramech",
+        "tlak v pascalech",
+        "rychlost v m/s"
+      ],
+      "answer": 1,
+      "explanation": "Váhy měří hmotnost, siloměr měří sílu."
+    },
+    {
+      "type": "match",
+      "question": "Spoj děj s účinkem síly.",
+      "pairs": [
+        [
+          "brankář chytí míč",
+          "zastavení"
+        ],
+        [
+          "hráč odrazí míč hlavou jinam",
+          "změna směru pohybu"
+        ],
+        [
+          "zmáčkneš plastelínu",
+          "deformace"
+        ],
+        [
+          "kopneš do stojícího míče",
+          "rozpohybování"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Proč nepozoruješ, že se přitahují dvě jablka ležící na stole?",
+      "options": [
+        "jablka se nepřitahují vůbec",
+        "přitahují se jen v noci",
+        "přitahují se tak slabě, že si toho nevšimneš",
+        "přitahuje je jen stůl"
+      ],
+      "answer": 2,
+      "explanation": "Všechna tělesa se přitahují, ale znát je to jen u obrovských těles, jako je Země."
     }
   ]
 }
