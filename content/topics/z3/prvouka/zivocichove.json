@@ -351,6 +351,88 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi hmyzem a pavoukem?",
       "answer": "Hmyz má 6 nohou a často křídla. Pavouk má 8 nohou a nemá křídla."
+    },
+    {
+      "type": "choice",
+      "question": "Co kryje tělo ptáků?",
+      "options": [
+        "srst",
+        "peří",
+        "šupiny"
+      ],
+      "answer": 1,
+      "explanation": "Ptáci mají peří, savci srst, ryby šupiny."
+    },
+    {
+      "type": "choice",
+      "question": "Do které skupiny patří klíště?",
+      "options": [
+        "pavoukovci",
+        "hmyz",
+        "plazi"
+      ],
+      "answer": 0,
+      "explanation": "Klíště má 8 nohou jako pavouk."
+    },
+    {
+      "type": "choice",
+      "question": "Který živočich je hmyz?",
+      "options": [
+        "pavouk křižák",
+        "klíště",
+        "beruška"
+      ],
+      "answer": 2,
+      "explanation": "Beruška má 6 nohou. Pavouk i klíště mají 8."
+    },
+    {
+      "type": "truefalse",
+      "question": "Netopýr je pták, protože létá.",
+      "answer": false,
+      "explanation": "Netopýr má srst a kojí mláďata. Je to savec."
+    },
+    {
+      "type": "truefalse",
+      "question": "Žába má holou vlhkou kůži.",
+      "answer": true,
+      "explanation": "Holou vlhkou kůži mají obojživelníci, třeba žába a čolek."
+    },
+    {
+      "type": "truefalse",
+      "question": "Všechno, co žije ve vodě, je ryba.",
+      "answer": false,
+      "explanation": "Ve vodě žije i velryba (savec) nebo žába (obojživelník)."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje řada kostí podél zad, kterou mají obratlovci?",
+      "answers": [
+        "páteř"
+      ],
+      "explanation": "Páteř se skládá z malých kostí – obratlů."
+    },
+    {
+      "type": "match",
+      "question": "Spoj skupinu a co jim kryje tělo.",
+      "pairs": [
+        [
+          "savci",
+          "srst"
+        ],
+        [
+          "ptáci",
+          "peří"
+        ],
+        [
+          "ryby",
+          "šupiny"
+        ],
+        [
+          "obojživelníci",
+          "holá vlhká kůže"
+        ]
+      ],
+      "explanation": "Obratlovce nejlépe poznáš podle toho, co jim kryje tělo."
     }
   ]
 }

@@ -310,6 +310,94 @@
       "type": "open",
       "question": "Jak se používá kompas?",
       "answer": "Položím ho vodorovně. Střelka ukáže sever, za mnou je jih, vpravo východ a vlevo západ."
+    },
+    {
+      "type": "choice",
+      "question": "V poledne stojíš čelem ke Slunci. Co máš za zády?",
+      "options": [
+        "jih",
+        "sever",
+        "východ"
+      ],
+      "answer": 1,
+      "explanation": "V poledne je Slunce na jihu. Za zády je sever."
+    },
+    {
+      "type": "choice",
+      "question": "Stojíš čelem k severu. Co máš za zády?",
+      "options": [
+        "východ",
+        "jih",
+        "západ"
+      ],
+      "answer": 1,
+      "explanation": "Jih je naproti severu."
+    },
+    {
+      "type": "choice",
+      "question": "Na mapě leží Rakousko pod Českem. Kterým směrem je od nás?",
+      "options": [
+        "na severu",
+        "na západě",
+        "na jihu"
+      ],
+      "answer": 2,
+      "explanation": "Na mapě je dole jih."
+    },
+    {
+      "type": "choice",
+      "question": "Jak položíš kompas, aby ukazoval správně?",
+      "options": [
+        "šikmo",
+        "vodorovně",
+        "svisle"
+      ],
+      "answer": 1,
+      "explanation": "Kompas se pokládá vodorovně na dlaň nebo na zem a čeká se, až se střelka uklidní."
+    },
+    {
+      "type": "truefalse",
+      "question": "Kompas ukazuje sever i v noci a když je zataženo.",
+      "answer": true,
+      "explanation": "Kompas funguje za každého počasí, ve dne i v noci."
+    },
+    {
+      "type": "truefalse",
+      "question": "Na mapě je západ vpravo.",
+      "answer": false,
+      "explanation": "Na mapě je západ vlevo a východ vpravo."
+    },
+    {
+      "type": "input",
+      "question": "Jakým písmenem zkracujeme západ?",
+      "answers": [
+        "Z",
+        "z"
+      ],
+      "explanation": "S sever, J jih, V východ, Z západ."
+    },
+    {
+      "type": "match",
+      "question": "Spoj místo na mapě a světovou stranu.",
+      "pairs": [
+        [
+          "nahoře",
+          "sever"
+        ],
+        [
+          "dole",
+          "jih"
+        ],
+        [
+          "vpravo",
+          "východ"
+        ],
+        [
+          "vlevo",
+          "západ"
+        ]
+      ],
+      "explanation": "Na mapě je sever nahoře, jako když stojíš čelem k severu."
     }
   ]
 }

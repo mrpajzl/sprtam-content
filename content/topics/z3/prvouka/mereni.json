@@ -326,6 +326,93 @@
       "type": "open",
       "question": "Proč potřebujeme jednotky?",
       "answer": "Aby všichni měřili stejně a rozuměli si, například 2 m nebo 3 kg."
+    },
+    {
+      "type": "input",
+      "question": "Kolik metrů je 300 cm?",
+      "answers": [
+        "3"
+      ],
+      "explanation": "100 cm = 1 m, takže 300 cm = 3 m."
+    },
+    {
+      "type": "input",
+      "question": "Kolik gramů jsou 2 kilogramy?",
+      "answers": [
+        "2000"
+      ],
+      "explanation": "1 kg = 1000 g, takže 2 kg = 2000 g."
+    },
+    {
+      "type": "choice",
+      "question": "Čím změříš délku lavice?",
+      "options": [
+        "teploměrem",
+        "pravítkem nebo metrem",
+        "váhou"
+      ],
+      "answer": 1,
+      "explanation": "Délku měříme pravítkem nebo metrem."
+    },
+    {
+      "type": "choice",
+      "question": "V jaké jednotce měříme, kolik vody je v hrnci?",
+      "options": [
+        "v metrech",
+        "v kilogramech",
+        "v litrech"
+      ],
+      "answer": 2,
+      "explanation": "Kolik se někam vejde, je objem. Měříme ho v litrech."
+    },
+    {
+      "type": "match",
+      "question": "Spoj měřidlo a co měří.",
+      "pairs": [
+        [
+          "pravítko",
+          "délku"
+        ],
+        [
+          "váha",
+          "hmotnost"
+        ],
+        [
+          "teploměr",
+          "teplotu"
+        ],
+        [
+          "hodiny",
+          "čas"
+        ],
+        [
+          "odměrka",
+          "objem"
+        ]
+      ],
+      "explanation": "Pro každou veličinu máme jiný přístroj."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dlaň je dobrá jednotka, protože ji má každý stejně velkou.",
+      "answer": false,
+      "explanation": "Každý má jinak velkou dlaň. Proto používáme jednotky, které jsou všude stejné."
+    },
+    {
+      "type": "truefalse",
+      "question": "1 kg je víc než 500 g.",
+      "answer": true,
+      "explanation": "1 kg = 1000 g a 1000 g je víc než 500 g."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď od nejkratší doby.",
+      "items": [
+        "1 sekunda",
+        "1 minuta",
+        "1 hodina"
+      ],
+      "explanation": "1 min = 60 s a 1 h = 60 min."
     }
   ]
 }

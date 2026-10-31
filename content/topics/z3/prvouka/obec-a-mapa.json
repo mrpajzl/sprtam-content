@@ -335,6 +335,93 @@
       "type": "open",
       "question": "Popiš cestu z domova do školy.",
       "answer": "Řeknu, kudy jdu, kolem čeho, kde přecházím silnici a jak dlouho to trvá."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená na mapě zelená barva?",
+      "options": [
+        "hory",
+        "nížiny",
+        "řeky"
+      ],
+      "answer": 1,
+      "explanation": "Zelená = nížiny, hnědá = hory, modrá = voda."
+    },
+    {
+      "type": "choice",
+      "question": "Na mapě je značka, které nerozumíš. Kam se podíváš?",
+      "options": [
+        "na kompas",
+        "do kalendáře",
+        "do legendy"
+      ],
+      "answer": 2,
+      "explanation": "Legenda vysvětluje, co znamenají barvy a značky."
+    },
+    {
+      "type": "choice",
+      "question": "Co může na mapě znamenat značka křížek?",
+      "options": [
+        "řeku",
+        "kostel",
+        "les"
+      ],
+      "answer": 1,
+      "explanation": "Křížek bývá mapová značka pro kostel."
+    },
+    {
+      "type": "truefalse",
+      "question": "Čím tmavší hnědá barva na mapě, tím vyšší hory.",
+      "answer": true,
+      "explanation": "Hory jsou hnědé a tmavší hnědá znamená vyšší místa."
+    },
+    {
+      "type": "truefalse",
+      "question": "Starosta rozhoduje o obci úplně sám.",
+      "answer": false,
+      "explanation": "O důležitých věcech obce rozhoduje zastupitelstvo, které si zvolí občané."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje skupina lidí, kterou si občané zvolí a která rozhoduje o obci?",
+      "answers": [
+        "zastupitelstvo"
+      ],
+      "explanation": "Zastupitelstvo rozhoduje o důležitých věcech obce, třeba o opravě školy."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem a co znamená.",
+      "pairs": [
+        [
+          "plán",
+          "malé místo shora"
+        ],
+        [
+          "mapa",
+          "velké území shora"
+        ],
+        [
+          "legenda",
+          "vysvětlivky značek"
+        ],
+        [
+          "starosta",
+          "vede obec"
+        ]
+      ],
+      "explanation": "Plán i mapa ukazují místo shora, legenda vysvětluje značky."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, jak popíšeš cestu podle plánu.",
+      "items": [
+        "najdu, kde jsem",
+        "najdu cíl",
+        "projedu prstem po ulicích",
+        "řeknu, kolem čeho jdu a kde zahnu"
+      ],
+      "explanation": "Nejdřív start a cíl, pak cesta a nakonec popis."
     }
   ]
 }

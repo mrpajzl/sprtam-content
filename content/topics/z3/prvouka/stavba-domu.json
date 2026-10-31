@@ -549,6 +549,65 @@
       "type": "open",
       "question": "Jak se bydlelo ve staré chalupě a jak bydlíš ty?",
       "answer": "V chalupě byla hlavně jedna místnost, jizba, s velkou pecí. Voda se nosila ze studny a svítilo se svíčkou. Dnes máme víc místností, topení, vodu z kohoutku a elektrické světlo."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo nakreslí plán domu?",
+      "options": [
+        "zedník",
+        "architekt",
+        "pokrývač"
+      ],
+      "answer": 1,
+      "explanation": "Architekt kreslí, jak bude dům vypadat a kde budou místnosti."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenovala hlavní místnost ve staré chalupě?",
+      "options": [
+        "chodba",
+        "garáž",
+        "jizba"
+      ],
+      "answer": 2,
+      "explanation": "V jizbě stála velká pec, vařilo se tam i spalo."
+    },
+    {
+      "type": "truefalse",
+      "question": "Krov a krytina jsou totéž.",
+      "answer": false,
+      "explanation": "Krov je dřevěná kostra střechy, krytina (třeba tašky) ho zakryje navrchu."
+    },
+    {
+      "type": "input",
+      "question": "Na jednu řadu zdi potřebuje zedník 24 cihel. Kolik cihel potřebuje na 2 řady?",
+      "answers": [
+        "48"
+      ],
+      "explanation": "2 · 24 = 48 cihel.",
+      "hints": [
+        "Každá řada má stejně cihel.",
+        "Spočítej 2 · 24."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj materiál a co mu vadí.",
+      "pairs": [
+        [
+          "dřevo",
+          "oheň a vlhko"
+        ],
+        [
+          "hlína se slámou",
+          "voda"
+        ],
+        [
+          "kámen",
+          "je těžký a chladný"
+        ]
+      ],
+      "explanation": "Každý materiál má dobré vlastnosti i slabiny."
     }
   ]
 }
