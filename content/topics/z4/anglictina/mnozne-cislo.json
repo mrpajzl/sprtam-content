@@ -416,6 +416,64 @@
       "type": "open",
       "question": "Řekni anglicky, kolik máš rukou, nohou a zubů (přibližně).",
       "answer": "I have got two hands, two feet and about twenty teeth."
+    },
+    {
+      "type": "input",
+      "question": "Množné číslo: dish",
+      "answers": [
+        "dishes"
+      ],
+      "explanation": "Končí na sh → -es."
+    },
+    {
+      "type": "input",
+      "question": "Množné číslo: boy",
+      "answers": [
+        "boys"
+      ],
+      "explanation": "Před y je samohláska o → jen -s."
+    },
+    {
+      "type": "input",
+      "question": "Množné číslo: person (lidé)",
+      "answers": [
+        "people"
+      ],
+      "explanation": "person je výjimka → people."
+    },
+    {
+      "type": "choice",
+      "question": "Množné číslo: lady",
+      "options": [
+        "ladys",
+        "ladyes",
+        "ladies"
+      ],
+      "answer": 2,
+      "explanation": "Před y je souhláska d → -ies."
+    },
+    {
+      "type": "choice",
+      "question": "Která dvojice je správně?",
+      "options": [
+        "fox → foxs",
+        "fox → foxes",
+        "fox → foxies"
+      ],
+      "answer": 1,
+      "explanation": "Končí na x → -es."
+    },
+    {
+      "type": "truefalse",
+      "question": "Množné číslo od „fish“ je „fish“.",
+      "answer": true,
+      "explanation": "fish se v množném čísle nemění, stejně jako sheep."
+    },
+    {
+      "type": "truefalse",
+      "question": "Množné číslo od „toy“ je „toies“.",
+      "answer": false,
+      "explanation": "Před y je samohláska o → jen -s: toys."
     }
   ]
 }

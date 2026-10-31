@@ -402,6 +402,80 @@
       "type": "open",
       "question": "Vyjmenuj 4 předložky místa a co znamenají.",
       "answer": "In = v, on = na, under = pod, next to = vedle, behind = za, in front of = před."
+    },
+    {
+      "type": "choice",
+      "question": "Míč je za dveřmi: The ball is ___ the door.",
+      "options": [
+        "in front of",
+        "behind",
+        "next to"
+      ],
+      "answer": 1,
+      "explanation": "za = behind."
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená „next to“?",
+      "options": [
+        "pod",
+        "před",
+        "vedle"
+      ],
+      "answer": 2,
+      "explanation": "next to = vedle. Jsou to dvě slova, ale česky jedno."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: My pencil is ___ the pencil case. (v)",
+      "answers": [
+        "in"
+      ],
+      "explanation": "v = in."
+    },
+    {
+      "type": "input",
+      "question": "Doplň: The TV is in ___ of the sofa. (před)",
+      "answers": [
+        "front"
+      ],
+      "explanation": "před = in front of."
+    },
+    {
+      "type": "truefalse",
+      "question": "„behind“ znamená „vedle“.",
+      "answer": false,
+      "explanation": "behind = za, next to = vedle."
+    },
+    {
+      "type": "truefalse",
+      "question": "„The cat is in the box.“ znamená „Kočka je v krabici.“",
+      "answer": true,
+      "explanation": "in = v."
+    },
+    {
+      "type": "choice",
+      "question": "Where is the ball? ⚽ je za gaučem.",
+      "options": [
+        "It’s on the sofa.",
+        "It’s in front of the sofa.",
+        "It’s behind the sofa."
+      ],
+      "answer": 2,
+      "explanation": "za = behind."
+    },
+    {
+      "type": "order",
+      "question": "Slož větu.",
+      "items": [
+        "The",
+        "cat",
+        "is",
+        "in",
+        "the",
+        "box."
+      ],
+      "explanation": "Předložka stojí před místem: in the box."
     }
   ]
 }

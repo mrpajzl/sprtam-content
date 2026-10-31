@@ -390,6 +390,99 @@
       "type": "open",
       "question": "Jak odpovíš krátce ano a ne na „Have you got a sister?“",
       "answer": "Yes, I have. / No, I haven’t."
+    },
+    {
+      "type": "choice",
+      "question": "___ they got a dog?",
+      "options": [
+        "Has",
+        "Have",
+        "Are"
+      ],
+      "answer": 1,
+      "explanation": "they → have."
+    },
+    {
+      "type": "choice",
+      "question": "___ your sister got a phone?",
+      "options": [
+        "Have",
+        "Is",
+        "Has"
+      ],
+      "answer": 2,
+      "explanation": "sister = she → has."
+    },
+    {
+      "type": "input",
+      "question": "Have you got a sister? (ne) – No, I ___.",
+      "answers": [
+        "haven’t",
+        "haven't",
+        "have not",
+        "havent"
+      ],
+      "explanation": "Odpovídáš o sobě: No, I haven’t."
+    },
+    {
+      "type": "choice",
+      "question": "Has he got a bike? (ano)",
+      "options": [
+        "Yes, he have.",
+        "Yes, he has.",
+        "Yes, he has got."
+      ],
+      "answer": 1,
+      "explanation": "he → has. V krátké odpovědi got není."
+    },
+    {
+      "type": "choice",
+      "question": "Udělej otázku z věty: She has got a phone.",
+      "options": [
+        "Has she got a phone?",
+        "Has got she a phone?",
+        "Have she got a phone?"
+      ],
+      "answer": 0,
+      "explanation": "Has jde na začátek, got zůstane za osobou."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Yes, I have got.“ je správná krátká odpověď.",
+      "answer": false,
+      "explanation": "V krátké odpovědi got nikdy není: Yes, I have."
+    },
+    {
+      "type": "order",
+      "question": "Slož otázku: Mají tvoji kamarádi psa?",
+      "items": [
+        "Have",
+        "your",
+        "friends",
+        "got",
+        "a",
+        "dog?"
+      ],
+      "explanation": "Have + kdo + got + věc."
+    },
+    {
+      "type": "match",
+      "question": "Spoj otázku s krátkou odpovědí.",
+      "pairs": [
+        [
+          "Have you got a bike? (ne)",
+          "No, I haven’t."
+        ],
+        [
+          "Has he got a bike? (ano)",
+          "Yes, he has."
+        ],
+        [
+          "Have they got a bike? (ne)",
+          "No, they haven’t."
+        ]
+      ],
+      "explanation": "V odpovědi zopakuješ have nebo has."
     }
   ]
 }

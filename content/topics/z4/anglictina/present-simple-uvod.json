@@ -386,6 +386,87 @@
       "type": "open",
       "question": "Kdy přidáváme ke slovesu -s? Uveď příklad.",
       "answer": "U he, she, it (jeden člověk, zvíře, věc). Například: She plays tennis."
+    },
+    {
+      "type": "choice",
+      "question": "I ___ to school every day.",
+      "options": [
+        "goes",
+        "go",
+        "going"
+      ],
+      "answer": 1,
+      "explanation": "U I je sloveso beze změny."
+    },
+    {
+      "type": "choice",
+      "question": "My dog ___ in the garden.",
+      "options": [
+        "sleep",
+        "sleepes",
+        "sleeps"
+      ],
+      "answer": 2,
+      "explanation": "Pes je jeden = it → přidám -s."
+    },
+    {
+      "type": "input",
+      "question": "Doplň (play): Eva ___ tennis.",
+      "answers": [
+        "plays"
+      ],
+      "explanation": "Eva = she → plays."
+    },
+    {
+      "type": "input",
+      "question": "Doplň (wash): Dad ___ the car.",
+      "answers": [
+        "washes"
+      ],
+      "explanation": "Táta = he. wash končí na sh → -es."
+    },
+    {
+      "type": "input",
+      "question": "Doplň (fly): A bird ___.",
+      "answers": [
+        "flies"
+      ],
+      "explanation": "Souhláska + y → -ies: fly → flies."
+    },
+    {
+      "type": "truefalse",
+      "question": "„She haves a dog.“ je správně.",
+      "answer": false,
+      "explanation": "have je výjimka: She has a dog."
+    },
+    {
+      "type": "truefalse",
+      "question": "„My parents work in Brno.“ je správně.",
+      "answer": true,
+      "explanation": "Rodiče = they → sloveso bez -s."
+    },
+    {
+      "type": "match",
+      "question": "Spoj sloveso a tvar pro he / she.",
+      "pairs": [
+        [
+          "go",
+          "goes"
+        ],
+        [
+          "study",
+          "studies"
+        ],
+        [
+          "have",
+          "has"
+        ],
+        [
+          "play",
+          "plays"
+        ]
+      ],
+      "explanation": "Za he, she, it syčí had: -s, -es, -ies, nebo has."
     }
   ]
 }

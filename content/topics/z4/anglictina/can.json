@@ -393,6 +393,78 @@
       "type": "open",
       "question": "Zeptej se kamaráda anglicky, jestli umí plavat, a odpověz za něj.",
       "answer": "Can you swim? Yes, I can. / No, I can’t."
+    },
+    {
+      "type": "choice",
+      "question": "He can ___ football.",
+      "options": [
+        "plays",
+        "play",
+        "playing"
+      ],
+      "answer": 1,
+      "explanation": "Za can je sloveso beze změny."
+    },
+    {
+      "type": "choice",
+      "question": "Can your sister cook? (ano)",
+      "options": [
+        "Yes, she does.",
+        "Yes, she cans.",
+        "Yes, she can."
+      ],
+      "answer": 2,
+      "explanation": "Krátká odpověď: Yes, she can. can se nikdy nemění."
+    },
+    {
+      "type": "input",
+      "question": "Doplň otázku: ___ you help me?",
+      "answers": [
+        "can"
+      ],
+      "explanation": "Can you help me? = Můžeš mi pomoct?"
+    },
+    {
+      "type": "input",
+      "question": "Can you swim? Ty plavat umíš. Odpověz: Yes, I ___.",
+      "answers": [
+        "can"
+      ],
+      "explanation": "Yes, I can."
+    },
+    {
+      "type": "truefalse",
+      "question": "„Do you can dance?“ je správně.",
+      "answer": false,
+      "explanation": "S can se neptáš pomocí do: Can you dance?"
+    },
+    {
+      "type": "truefalse",
+      "question": "„can“ se u he a she nemění: She can swim.",
+      "answer": true,
+      "explanation": "can je pro všechny stejné, nikdy cans."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „Můžu jít na záchod?“",
+      "options": [
+        "I can go to the toilet?",
+        "Can I go to the toilet?",
+        "Do I can go to the toilet?"
+      ],
+      "answer": 1,
+      "explanation": "Can dáš na začátek: Can I go to the toilet?"
+    },
+    {
+      "type": "order",
+      "question": "Slož otázku: Umí tvůj brácha plavat?",
+      "items": [
+        "Can",
+        "your",
+        "brother",
+        "swim?"
+      ],
+      "explanation": "Can + kdo + sloveso?"
     }
   ]
 }

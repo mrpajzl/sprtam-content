@@ -410,6 +410,85 @@
       "type": "open",
       "question": "Kdy použiješ „there is“ a kdy „there are“?",
       "answer": "There is u jedné věci, there are u více věcí."
+    },
+    {
+      "type": "choice",
+      "question": "There ___ a lamp on the table.",
+      "options": [
+        "are",
+        "is"
+      ],
+      "answer": 1,
+      "explanation": "Lampa je jedna → There is."
+    },
+    {
+      "type": "choice",
+      "question": "There ___ three trees in the garden.",
+      "options": [
+        "is",
+        "are"
+      ],
+      "answer": 1,
+      "explanation": "Stromy jsou tři → There are."
+    },
+    {
+      "type": "input",
+      "question": "Doplň otázku: ___ there any eggs in the fridge?",
+      "answers": [
+        "are"
+      ],
+      "explanation": "Vajec je víc → Are there…?"
+    },
+    {
+      "type": "input",
+      "question": "Zápor: There ___ a pool here. (není)",
+      "answers": [
+        "isn’t",
+        "isn't",
+        "is not",
+        "isnt"
+      ],
+      "explanation": "Bazén je jeden → is, zápor isn’t."
+    },
+    {
+      "type": "choice",
+      "question": "Is there a pool? (ne)",
+      "options": [
+        "No, it isn’t.",
+        "No, there aren’t.",
+        "No, there isn’t."
+      ],
+      "answer": 2,
+      "explanation": "V krátké odpovědi zopakuješ there a is: No, there isn’t."
+    },
+    {
+      "type": "truefalse",
+      "question": "„There is two chairs.“ je správně.",
+      "answer": false,
+      "explanation": "Židle jsou dvě → There are two chairs."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se řekne „V lednici nejsou žádná vejce.“?",
+      "options": [
+        "There aren’t any eggs in the fridge.",
+        "There isn’t any eggs in the fridge.",
+        "There aren’t some eggs in the fridge."
+      ],
+      "answer": 0,
+      "explanation": "Vajec je víc → aren’t. V záporu u víc věcí any."
+    },
+    {
+      "type": "order",
+      "question": "Slož otázku.",
+      "items": [
+        "Is",
+        "there",
+        "a",
+        "pool",
+        "here?"
+      ],
+      "explanation": "Otázka: Is there…?"
     }
   ]
 }
