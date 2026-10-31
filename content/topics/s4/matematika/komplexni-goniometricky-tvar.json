@@ -345,6 +345,64 @@
       "type": "open",
       "question": "Jak geometricky vypadají kořeny rovnice zⁿ = a?",
       "answer": "Je jich n, mají stejnou absolutní hodnotu a leží ve vrcholech pravidelného n-úhelníku se středem v počátku."
+    },
+    {
+      "type": "input",
+      "question": "Argument čísla −i (ve stupních, 0° až 360°) =",
+      "answers": [
+        "270"
+      ],
+      "explanation": "−i = [0; −1] leží dole na záporné imaginární poloose, to jsou tři čtvrtě otáčky."
+    },
+    {
+      "type": "input",
+      "question": "z₁ má argument 100°, z₂ má argument 40°. Argument z₁ / z₂ (°) =",
+      "answers": [
+        "60"
+      ],
+      "explanation": "Při dělení se argumenty odčítají: 100° − 40° = 60°."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá s bodem v Gaussově rovině vynásobení číslem i?",
+      "options": [
+        "zrcadlí ho podle vodorovné osy",
+        "natáhne ho na dvojnásobek",
+        "otočí ho o 180°",
+        "otočí ho o 90° proti směru hodinových ručiček"
+      ],
+      "answer": 3,
+      "explanation": "|i| = 1 a argument i je 90°: délka se nemění, úhel se zvětší o 90°."
+    },
+    {
+      "type": "choice",
+      "question": "Goniometrický tvar čísla 2i:",
+      "options": [
+        "2(cos 0 + i sin 0)",
+        "2(cos π/2 + i sin π/2)",
+        "2(cos π + i sin π)",
+        "cos π/2 + i sin π/2"
+      ],
+      "answer": 1,
+      "explanation": "|2i| = 2 a bod leží nahoře na imaginární ose, argument π/2 (90°)."
+    },
+    {
+      "type": "input",
+      "question": "(cos 45° + i sin 45°)⁸ =",
+      "answers": [
+        "1"
+      ],
+      "explanation": "cos 360° + i sin 360° = 1.",
+      "hints": [
+        "Podle Moivreovy věty vynásob úhel osmi.",
+        "8 · 45° = 360°."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rovnice z⁴ = 1 má v ℂ jen dva kořeny: 1 a −1.",
+      "answer": false,
+      "explanation": "Má čtyři kořeny: 1, i, −1, −i – vrcholy čtverce."
     }
   ]
 }

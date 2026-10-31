@@ -372,6 +372,71 @@
       "type": "open",
       "question": "Proč se u „aspoň jeden“ vyplatí počítat přes opačný jev?",
       "answer": "Opačný jev „ani jednou“ má jen jednu možnost a snadno se spočítá. Pak P(aspoň jeden) = 1 − P(ani jeden)."
+    },
+    {
+      "type": "input",
+      "question": "Hodíme dvěma kostkami. P(součet 12) =",
+      "answers": [
+        "1/36"
+      ],
+      "explanation": "Součet 12 dá jen dvojice 6–6, tedy 1 z 36 dvojic."
+    },
+    {
+      "type": "input",
+      "question": "Hodíme dvěma kostkami. P(součet 4) =",
+      "answers": [
+        "1/12",
+        "3/36"
+      ],
+      "explanation": "3 příznivé dvojice z 36: 3/36 = 1/12.",
+      "hints": [
+        "Vypiš dvojice se součtem 4.",
+        "Jsou to 1+3, 2+2, 3+1."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hodíme třemi mincemi. P(aspoň jeden líc) =",
+      "answers": [
+        "7/8",
+        "0,875"
+      ],
+      "explanation": "1 − 1/8 = 7/8.",
+      "hints": [
+        "Použij opačný jev: ani jeden líc.",
+        "P(tři ruby) = 1/2 · 1/2 · 1/2."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Na minci padl pětkrát po sobě rub. Při šestém hodu je pravděpodobnost líce větší než 1/2.",
+      "answer": false,
+      "explanation": "Hody jsou nezávislé, P(líc) je pořád 1/2. Opak je hráčský omyl."
+    },
+    {
+      "type": "choice",
+      "question": "Hod kostkou. A = padne sudé číslo, B = padne číslo větší než 4. P(A ∪ B) =",
+      "options": [
+        "5/6",
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "answer": 2,
+      "explanation": "P(A) + P(B) − P(A ∩ B) = 3/6 + 2/6 − 1/6 = 4/6 = 2/3 (výsledky 2, 4, 5, 6)."
+    },
+    {
+      "type": "input",
+      "question": "V osudí jsou 4 červené a 6 modrých koulí. Táhneme 2 bez vracení. P(obě červené) =",
+      "answers": [
+        "2/15",
+        "12/90"
+      ],
+      "explanation": "4/10 · 3/9 = 12/90 = 2/15.",
+      "hints": [
+        "První červená: 4/10.",
+        "Pak zbývají 3 červené z 9 koulí."
+      ]
     }
   ]
 }

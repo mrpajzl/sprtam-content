@@ -384,6 +384,72 @@
       "type": "open",
       "question": "Jak spočítáš limitu typu „0/0“ u podílu mnohočlenů?",
       "answer": "Čitatel i jmenovatel rozložím na součin, zkrátím společného činitele (např. x − a) a pak dosadím."
+    },
+    {
+      "type": "input",
+      "question": "lim (x→3) (x² − 9)/(x − 3) =",
+      "answers": [
+        "6"
+      ],
+      "explanation": "Po zkrácení zbyde x + 3, dosadím 3: 6.",
+      "hints": [
+        "Rozlož x² − 9 = (x − 3)(x + 3)."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "lim (n→∞) (5n − 2)/(2n + 1) =",
+      "answers": [
+        "2,5",
+        "5/2"
+      ],
+      "explanation": "(5 − 2/n)/(2 + 1/n) → 5/2 = 2,5.",
+      "hints": [
+        "Vyděl čitatele i jmenovatele n."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "lim (n→∞) (n + 1)/(n² + 1) =",
+      "options": [
+        "1",
+        "0",
+        "∞",
+        "1/2"
+      ],
+      "answer": 1,
+      "explanation": "Vydělím n²: (1/n + 1/n²)/(1 + 1/n²) → 0/1 = 0. Jmenovatel roste rychleji."
+    },
+    {
+      "type": "input",
+      "question": "lim (x→1) (x² − 3x + 2)/(x − 1) =",
+      "answers": [
+        "−1",
+        "-1"
+      ],
+      "explanation": "Po zkrácení zbyde x − 2, dosadím 1: −1.",
+      "hints": [
+        "Dosazením vyjde 0/0, rozlož čitatel.",
+        "x² − 3x + 2 = (x − 1)(x − 2)."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když f(a) neexistuje, nemůže existovat ani lim (x→a) f(x).",
+      "answer": false,
+      "explanation": "Limita se ptá, co se děje blízko a. Např. (x² − 4)/(x − 2) v bodě 2 není definovaná, ale limita je 4."
+    },
+    {
+      "type": "choice",
+      "question": "Výraz typu ∞/∞ u limity:",
+      "options": [
+        "je vždy roven 1",
+        "je vždy roven 0",
+        "je vždy ∞",
+        "je neurčitý – výraz musíš nejdřív upravit"
+      ],
+      "answer": 3,
+      "explanation": "Výsledek záleží na konkrétních funkcích, např. (2n + 1)/(n + 3) → 2."
     }
   ]
 }

@@ -378,6 +378,65 @@
       "type": "open",
       "question": "Jak vydělíš dvě komplexní čísla v algebraickém tvaru?",
       "answer": "Zlomek rozšířím číslem komplexně sdruženým ke jmenovateli. Jmenovatel se stane reálným (a² + b²), pak roznásobím čitatel."
+    },
+    {
+      "type": "choice",
+      "question": "(3 + 2i)(1 + 4i) =",
+      "options": [
+        "3 + 8i",
+        "−5 + 14i",
+        "11 + 14i",
+        "−5 + 10i"
+      ],
+      "answer": 1,
+      "explanation": "3 + 12i + 2i + 8i² = 3 − 8 + 14i = −5 + 14i.",
+      "hints": [
+        "Roznásob každý člen s každým.",
+        "Nahraď 8i² číslem −8."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "|5 − 12i| =",
+      "answers": [
+        "13"
+      ],
+      "explanation": "√(25 + 144) = √169 = 13."
+    },
+    {
+      "type": "input",
+      "question": "i⁵⁰ =",
+      "answers": [
+        "−1",
+        "-1"
+      ],
+      "explanation": "50 = 4 · 12 + 2, takže i⁵⁰ = i² = −1.",
+      "hints": [
+        "Mocniny i se opakují po čtyřech.",
+        "Jaký zbytek dá 50 po dělení 4?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kořeny rovnice x² − 6x + 13 = 0 v ℂ:",
+      "options": [
+        "−3 ± 2i",
+        "3 ± 4i",
+        "3 ± 2i",
+        "6 ± 4i"
+      ],
+      "answer": 2,
+      "explanation": "x = (6 ± 4i)/2 = 3 ± 2i.",
+      "hints": [
+        "Spočítej diskriminant D = b² − 4ac.",
+        "D = −16, takže √D = 4i."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Číslo 5i leží v Gaussově rovině na vodorovné ose.",
+      "answer": false,
+      "explanation": "5i = [0; 5] leží na svislé (imaginární) ose."
     }
   ]
 }
