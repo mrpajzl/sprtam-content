@@ -405,6 +405,92 @@
       "type": "open",
       "question": "Jaké vlastnosti pomáhají nerosty určit?",
       "answer": "Barva, vryp, lesk, tvrdost, štěpnost, hustota, tvar krystalů, případně magnetismus nebo reakce s kyselinou."
+    },
+    {
+      "type": "input",
+      "question": "Jakou tvrdost má křemen na Mohsově stupnici?",
+      "answers": [
+        "7"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do neznámého nerostu rýpne apatit (5), ale on rýpne do fluoritu (4). Jaká je jeho tvrdost?",
+      "options": [
+        "mezi 3 a 4",
+        "mezi 4 a 5",
+        "mezi 5 a 6"
+      ],
+      "answer": 1,
+      "hints": [
+        "Je tvrdší než nerost, do kterého rýpne.",
+        "Je měkčí než nerost, který rýpne do něj."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nerost s tvrdostí 10 je přesně dvakrát tvrdší než nerost s tvrdostí 5.",
+      "answer": false,
+      "explanation": "Mohsova stupnice jen řadí nerosty podle toho, kdo do koho rýpne. Čísla jsou pořadí, ne násobky."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je vryp spolehlivější než barva kusu nerostu?",
+      "options": [
+        "jeden nerost může mít více barev, barva prášku je stálejší",
+        "vryp je u všech nerostů bílý",
+        "vryp prozradí tvrdost nerostu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který nerost snadno rýpne do skla?",
+      "options": [
+        "sádrovec",
+        "kalcit",
+        "křemen"
+      ],
+      "answer": 2,
+      "explanation": "Křemen má tvrdost 7. Sádrovec (2) a kalcit (3) jsou měkčí než sklo."
+    },
+    {
+      "type": "match",
+      "question": "Spoj tvrdost s nerostem Mohsovy stupnice.",
+      "pairs": [
+        [
+          "2",
+          "sádrovec"
+        ],
+        [
+          "6",
+          "živec"
+        ],
+        [
+          "8",
+          "topaz"
+        ],
+        [
+          "9",
+          "korund"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Kuchyňská sůl je nerost halit.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Proč grafit píše, ale diamantem se řeže sklo?",
+      "options": [
+        "grafit je z jiného prvku než diamant",
+        "v grafitu tvoří atomy uhlíku vrstvy, které po sobě kloužou",
+        "grafit je hornina, diamant nerost"
+      ],
+      "answer": 1,
+      "explanation": "Oba jsou z uhlíku. Liší se uspořádáním atomů."
     }
   ]
 }
