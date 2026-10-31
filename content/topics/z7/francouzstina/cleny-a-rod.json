@@ -545,6 +545,34 @@
       "type": "open",
       "question": "Proč je dobré učit se francouzská podstatná jména rovnou se členem?",
       "answer": "Protože rod se nedá spolehlivě odhadnout a často je jiný než v češtině, třeba *le livre* (kniha) nebo *la table* (stůl). Člen rod prozradí."
+    },
+    {
+      "type": "choice",
+      "question": "Jakého rodu je ve francouzštině *voiture* (auto)?",
+      "options": [
+        "středního",
+        "mužského",
+        "ženského"
+      ],
+      "answer": 2,
+      "explanation": "*la voiture* je ženského rodu. Střední rod francouzština nemá."
+    },
+    {
+      "type": "choice",
+      "question": "Il y a une pomme sur la table. ___ pomme est rouge. (Na stole je jablko. To jablko je červené.)",
+      "options": [
+        "Une",
+        "La",
+        "Le"
+      ],
+      "answer": 1,
+      "explanation": "Podruhé už víme, o které jablko jde, a *pomme* je ženského rodu → *la pomme*."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo *moment* je ženského rodu: *la moment*.",
+      "answer": false,
+      "explanation": "Slova na *-ment* jsou mužská: *le moment*."
     }
   ]
 }
