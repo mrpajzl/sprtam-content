@@ -347,6 +347,94 @@
       "type": "open",
       "question": "Uveď příklad, kde musí technici počítat s teplotní roztažností.",
       "answer": "Mosty mají dilatační spáry, koleje mezery, dráty elektrického vedení se v létě prověšují víc. Látky se teplem roztahují."
+    },
+    {
+      "type": "input",
+      "question": "Ráno bylo −4 °C, odpoledne o 12 °C víc. Kolik °C bylo odpoledne?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "−4 + 12 = 8",
+      "hints": [
+        "Od −4 do 0 jsou 4 stupně."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik kelvinů je 50 °C? (na setiny)",
+      "answers": [
+        "323,15",
+        "323.15"
+      ],
+      "explanation": "50 + 273,15 = 323,15",
+      "hints": [
+        "T = t + 273,15"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Voda vře vždycky přesně při 100 °C, i vysoko v horách.",
+      "answer": false,
+      "explanation": "V horách je menší tlak vzduchu a voda vře při nižší teplotě, například kolem 90 °C."
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane s kapalinou v teploměru, když se teploměr ochladí?",
+      "options": [
+        "Roztáhne se a stoupne.",
+        "Smrští se a klesne.",
+        "Nezmění se."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Proč ponoříš zavařovací sklenici, jejíž víčko nejde otevřít, do teplé vody?",
+      "options": [
+        "Sklo v teple změkne.",
+        "Voda víčko namaže.",
+        "Kovové víčko se teplem roztáhne a povolí."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "truefalse",
+      "question": "0 K je nejnižší možná teplota.",
+      "answer": true,
+      "explanation": "0 K = −273,15 °C. Nižší teplotu nic mít nemůže."
+    },
+    {
+      "type": "input",
+      "question": "Teplota klesla z 5 °C na −7 °C. O kolik °C se ochladilo?",
+      "answers": [
+        "12"
+      ],
+      "explanation": "5 + 7 = 12",
+      "hints": [
+        "Z 5 °C na 0 °C je 5 stupňů."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj teplotu s tím, co znamená.",
+      "pairs": [
+        [
+          "0 °C",
+          "tání ledu"
+        ],
+        [
+          "100 °C",
+          "var vody"
+        ],
+        [
+          "asi 36,5 °C",
+          "zdravé lidské tělo"
+        ],
+        [
+          "−273,15 °C",
+          "0 K"
+        ]
+      ]
     }
   ]
 }

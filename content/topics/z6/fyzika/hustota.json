@@ -339,6 +339,84 @@
       "type": "open",
       "question": "Proč dřevo plave a železo se potopí?",
       "answer": "Dřevo má menší hustotu než voda, proto plave. Železo má hustotu mnohem větší než voda, proto klesne."
+    },
+    {
+      "type": "choice",
+      "question": "Kostka má hmotnost 113 g a objem 10 cm³. Z jaké látky je podle tabulky?",
+      "options": [
+        "hliník",
+        "železo",
+        "olovo"
+      ],
+      "answer": 2,
+      "explanation": "113 : 10 = 11,3 g/cm³ – to je olovo.",
+      "hints": [
+        "Spočítej ρ = m : V."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik gramů má 4 cm³ železa (ρ = 7,8 g/cm³)?",
+      "answers": [
+        "31,2",
+        "31.2"
+      ],
+      "explanation": "7,8 · 4 = 31,2",
+      "hints": [
+        "m = ρ · V"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaký objem v cm³ má 81 g hliníku (ρ = 2,7 g/cm³)?",
+      "answers": [
+        "30"
+      ],
+      "explanation": "81 : 2,7 = 30",
+      "hints": [
+        "V = m : ρ"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Převeď 7 800 kg/m³ na g/cm³.",
+      "answers": [
+        "7,8",
+        "7.8"
+      ],
+      "explanation": "1 g/cm³ = 1 000 kg/m³, takže 7 800 : 1 000 = 7,8."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hliník má větší hustotu než železo.",
+      "answer": false,
+      "explanation": "Hliník má 2,7 g/cm³, železo 7,8 g/cm³."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou značku má hustota?",
+      "options": [
+        "m",
+        "ρ (ró)",
+        "V"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Kostička vody o objemu 1 cm³ má hmotnost 1 g.",
+      "answer": true,
+      "explanation": "Voda má hustotu 1 g/cm³."
+    },
+    {
+      "type": "choice",
+      "question": "Těleso má hustotu 0,6 g/cm³. Co udělá ve vodě?",
+      "options": [
+        "potopí se",
+        "plave"
+      ],
+      "answer": 1,
+      "explanation": "Má menší hustotu než voda (1 g/cm³), proto plave."
     }
   ]
 }

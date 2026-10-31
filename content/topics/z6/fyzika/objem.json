@@ -328,6 +328,90 @@
       "type": "open",
       "question": "Jak spolu souvisí litr a krychlový decimetr?",
       "answer": "Jsou si rovny: 1 l = 1 dm³. Krychle o hraně 1 dm pojme právě 1 litr."
+    },
+    {
+      "type": "input",
+      "question": "Kolik ml je 0,5 l?",
+      "answers": [
+        "500"
+      ],
+      "explanation": "1 l = 1 000 ml, 0,5 · 1 000 = 500"
+    },
+    {
+      "type": "input",
+      "question": "Kolik litrů je 3 hl?",
+      "answers": [
+        "300"
+      ],
+      "explanation": "1 hl = 100 l, 3 · 100 = 300"
+    },
+    {
+      "type": "input",
+      "question": "Kvádr má rozměry 4 cm, 5 cm a 2 cm. Objem v cm³ =",
+      "answers": [
+        "40"
+      ],
+      "explanation": "4 · 5 · 2 = 40",
+      "hints": [
+        "Použij V = a · b · c."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Akvárium má rozměry 6 dm, 3 dm a 4 dm. Kolik litrů vody pojme?",
+      "answers": [
+        "72"
+      ],
+      "explanation": "6 · 3 · 4 = 72 dm³ = 72 l",
+      "hints": [
+        "Spočítej objem v dm³.",
+        "1 dm³ = 1 l."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "1 m³ = 100 l.",
+      "answer": false,
+      "explanation": "1 m³ = 1 000 dm³ = 1 000 l."
+    },
+    {
+      "type": "choice",
+      "question": "Jakou značku má objem?",
+      "options": [
+        "m",
+        "V",
+        "l"
+      ],
+      "answer": 1,
+      "explanation": "V je značka veličiny objem. Litr (l) je jednotka."
+    },
+    {
+      "type": "truefalse",
+      "question": "Krychle s hranou 10 cm pojme přesně 1 litr vody.",
+      "answer": true,
+      "explanation": "10 cm = 1 dm, taková krychle má objem 1 dm³ = 1 l."
+    },
+    {
+      "type": "match",
+      "question": "Spoj stejné objemy.",
+      "pairs": [
+        [
+          "1 l",
+          "1 000 ml"
+        ],
+        [
+          "1 dl",
+          "100 ml"
+        ],
+        [
+          "1 hl",
+          "100 l"
+        ],
+        [
+          "1 ml",
+          "1 cm³"
+        ]
+      ]
     }
   ]
 }

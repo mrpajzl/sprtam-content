@@ -415,6 +415,86 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi sériovým a paralelním zapojením žárovek?",
       "answer": "V sérii jsou za sebou – když jedna zhasne, zhasnou všechny. Paralelně jsou vedle sebe – ostatní svítí dál."
+    },
+    {
+      "type": "choice",
+      "question": "Co z toho je spotřebič?",
+      "options": [
+        "baterie",
+        "fén",
+        "spínač"
+      ],
+      "answer": 1,
+      "explanation": "Fén využívá energii z proudu – hřeje a fouká. Baterie je zdroj."
+    },
+    {
+      "type": "truefalse",
+      "question": "Grafit (tuha v tužce) vede elektrický proud.",
+      "answer": true,
+      "explanation": "Grafit je vodič, stejně jako kovy."
+    },
+    {
+      "type": "truefalse",
+      "question": "Stačí jeden drát od baterie k žárovce a žárovka se rozsvítí.",
+      "answer": false,
+      "explanation": "Obvod musí být uzavřený: proud jde z baterie přes žárovku a zpátky do baterie."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se ve schématu kreslí žárovka?",
+      "options": [
+        "dvě čárky – dlouhá a krátká",
+        "kroužek s křížkem",
+        "rovná čára"
+      ],
+      "answer": 1,
+      "explanation": "Dvě čárky jsou baterie, rovná čára je vodič."
+    },
+    {
+      "type": "choice",
+      "question": "Dvě žárovky jsou zapojené paralelně. Jedna praskne. Co udělá druhá?",
+      "options": [
+        "Zhasne také.",
+        "Svítí dál.",
+        "Začne blikat."
+      ],
+      "answer": 1,
+      "explanation": "Při paralelním zapojení má každá žárovka vlastní cestu ke zdroji."
+    },
+    {
+      "type": "choice",
+      "question": "Baterka nesvítí, i když má novou baterii. Co zkontroluješ?",
+      "options": [
+        "jestli je baterka teplá",
+        "jakou má baterka barvu",
+        "jestli je obvod uzavřený – spínač, kontakty, žárovka"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "Jedním slovem: jak se nazývá látka, která elektrický proud nepropustí?",
+      "answers": [
+        "izolant"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj spotřebič s tím, co dělá.",
+      "pairs": [
+        [
+          "žárovka",
+          "svítí"
+        ],
+        [
+          "fén",
+          "hřeje a fouká"
+        ],
+        [
+          "motorek",
+          "točí se"
+        ]
+      ]
     }
   ]
 }

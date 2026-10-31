@@ -371,6 +371,75 @@
       "type": "open",
       "question": "Jak převedeš 2 h 15 min na minuty a na sekundy?",
       "answer": "2 h = 120 min, plus 15 min je 135 min. 135 · 60 = 8 100 s."
+    },
+    {
+      "type": "input",
+      "question": "Kolik minut jsou 3 h?",
+      "answers": [
+        "180"
+      ],
+      "explanation": "3 · 60 = 180"
+    },
+    {
+      "type": "input",
+      "question": "Kolik sekund je 3,5 min?",
+      "answers": [
+        "210"
+      ],
+      "explanation": "3,5 · 60 = 210"
+    },
+    {
+      "type": "input",
+      "question": "Film začal v 18:20 a skončil ve 20:05. Kolik minut trval?",
+      "answers": [
+        "105"
+      ],
+      "explanation": "18:20 → 19:00 je 40 min, 19:00 → 20:00 je 60 min, 20:00 → 20:05 je 5 min. Celkem 105 min.",
+      "hints": [
+        "Spočítej minuty do 19:00.",
+        "Pak přičti celou hodinu a zbylé minuty."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "1,5 hodiny = 1 hodina 50 minut.",
+      "answer": false,
+      "explanation": "Hodina má 60 minut, půl hodiny je 30 minut. 1,5 h = 1 h 30 min."
+    },
+    {
+      "type": "choice",
+      "question": "Co se pravidelně opakuje v digitálních (quartzových) hodinkách?",
+      "options": [
+        "přesýpá se písek",
+        "kývá kyvadlo",
+        "kmitá malý krystal"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "input",
+      "question": "Kolik hodin mají 3 dny?",
+      "answers": [
+        "72"
+      ],
+      "explanation": "1 den = 24 h, 3 · 24 = 72"
+    },
+    {
+      "type": "choice",
+      "question": "Kolik minut trvá vyučovací hodina?",
+      "options": [
+        "60",
+        "45",
+        "50"
+      ],
+      "answer": 1,
+      "explanation": "Vyučovací hodina je kratší než hodina na hodinkách."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mezi sekundami, minutami a hodinami je vždy krok 60.",
+      "answer": true,
+      "explanation": "1 min = 60 s, 1 h = 60 min. Proto se nenásobí 100."
     }
   ]
 }

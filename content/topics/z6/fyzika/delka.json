@@ -371,6 +371,78 @@
       "type": "open",
       "question": "Proč měříme vícekrát a počítáme průměr?",
       "answer": "Každé měření má malou chybu. Průměr z více měření je přesnější než jedno měření."
+    },
+    {
+      "type": "input",
+      "question": "Kolik cm je 1,8 m?",
+      "answers": [
+        "180"
+      ],
+      "explanation": "1,8 · 100 = 180"
+    },
+    {
+      "type": "input",
+      "question": "Kolik km je 3 500 m?",
+      "answers": [
+        "3,5",
+        "3.5"
+      ],
+      "explanation": "3 500 : 1 000 = 3,5",
+      "hints": [
+        "Jdeš na větší jednotku, takže dělíš.",
+        "1 km = 1 000 m."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik dm je 70 cm?",
+      "answers": [
+        "7"
+      ],
+      "explanation": "1 dm = 10 cm, 70 : 10 = 7"
+    },
+    {
+      "type": "input",
+      "question": "Gumu přiložíš začátkem k čárce 3 cm a konec je u čárky 11 cm. Jak dlouhá je guma v cm?",
+      "answers": [
+        "8"
+      ],
+      "explanation": "Neměříš od nuly, proto odečteš: 11 − 3 = 8."
+    },
+    {
+      "type": "input",
+      "question": "Tři spolužáci změřili tužku: 15 cm, 16 cm a 20 cm. Jaký je průměr v cm?",
+      "answers": [
+        "17"
+      ],
+      "explanation": "(15 + 16 + 20) : 3 = 51 : 3 = 17",
+      "hints": [
+        "Všechna měření sečti.",
+        "Součet vyděl počtem měření."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co z toho je veličina?",
+      "options": [
+        "barva",
+        "délka",
+        "metr"
+      ],
+      "answer": 1,
+      "explanation": "Délku jde změřit a vyjádřit číslem. Metr je jednotka, barva se číslem neměří."
+    },
+    {
+      "type": "truefalse",
+      "question": "2,5 m = 25 cm.",
+      "answer": false,
+      "explanation": "Z metrů na centimetry násobíš 100: 2,5 m = 250 cm."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když převádíš na menší jednotku, číslo násobíš.",
+      "answer": true,
+      "explanation": "Menší jednotka se do délky vejde víckrát, číslo je větší."
     }
   ]
 }
