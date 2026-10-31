@@ -385,6 +385,84 @@
       "type": "open",
       "question": "Zformuluj Kirchhoffovy zákony.",
       "answer": "1. Součet proudů vstupujících do uzlu se rovná součtu proudů vystupujících. 2. V uzavřené smyčce je součet úbytků napětí na rezistorech roven součtu elektromotorických napětí zdrojů."
+    },
+    {
+      "type": "input",
+      "question": "Zdroj Uₑ = 9 V, Rᵢ = 0,5 Ω, vnější odpor 4 Ω. Svorkové napětí ve V =",
+      "answers": [
+        "8"
+      ],
+      "explanation": "I = 9 / 4,5 = 2 A. U = 9 − 0,5 · 2 = 8 V.",
+      "hints": [
+        "Nejdřív spočítej proud: I = Uₑ / (R + Rᵢ).",
+        "Pak odečti úbytek na vnitřním odporu: U = Uₑ − Rᵢ · I."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Baterie má naprázdno 4,5 V. Když z ní teče 0,5 A, voltmetr na svorkách ukáže 4,0 V. Jaký je její vnitřní odpor?",
+      "options": [
+        "0,5 Ω",
+        "1 Ω",
+        "8 Ω",
+        "9 Ω"
+      ],
+      "answer": 1,
+      "explanation": "Na vnitřním odporu se ztratí 4,5 − 4,0 = 0,5 V. Rᵢ = 0,5 V / 0,5 A = 1 Ω."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při zkratu je svorkové napětí zdroje prakticky nulové.",
+      "answer": true,
+      "explanation": "Při zkratu teče I_k = Uₑ / Rᵢ, takže úbytek Rᵢ · I_k je celé Uₑ a U = Uₑ − Uₑ = 0."
+    },
+    {
+      "type": "choice",
+      "question": "Drát zkrátíš na polovinu a zároveň použiješ drát s dvojnásobným průřezem ze stejného kovu. Jak se změní jeho odpor?",
+      "options": [
+        "zmenší se 2×",
+        "nezmění se",
+        "zmenší se 4×",
+        "zvětší se 4×"
+      ],
+      "answer": 2,
+      "explanation": "R = ρ · l / S. Poloviční délka dá polovinu, dvojnásobný průřez další polovinu: celkem 4× menší odpor."
+    },
+    {
+      "type": "input",
+      "question": "Rychlovarná konvice s příkonem 2 000 W běží 6 minut. Spotřebovaná energie v kWh =",
+      "answers": [
+        "0,2"
+      ],
+      "explanation": "W = P · t = 2 kW · 0,1 h = 0,2 kWh.",
+      "hints": [
+        "Převeď příkon na kW a čas na hodiny."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Rezistorem s odporem 20 Ω teče proud 0,5 A. Výkon ve W =",
+      "answers": [
+        "5"
+      ],
+      "explanation": "P = R · I² = 20 · 0,25 = 5 W."
+    },
+    {
+      "type": "input",
+      "question": "Kovový drát má při 0 °C odpor 100 Ω, teplotní součinitel α = 4 · 10⁻³ K⁻¹. Odpor v Ω při 50 °C =",
+      "answers": [
+        "120"
+      ],
+      "explanation": "R = 100 · (1 + 0,004 · 50) = 100 · 1,2 = 120 Ω.",
+      "hints": [
+        "Použij R = R₀ · (1 + α · Δt)."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "V uzlu se mohou elektrony hromadit, proto z uzlu může odtékat menší proud, než do něj přitéká.",
+      "answer": false,
+      "explanation": "Podle 1. Kirchhoffova zákona se náboj v uzlu nehromadí: kolik proudu přiteče, tolik odteče."
     }
   ]
 }

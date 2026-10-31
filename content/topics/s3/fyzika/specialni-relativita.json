@@ -360,6 +360,81 @@
       "type": "open",
       "question": "Vysvětli dilataci času a uveď experimentální důkaz.",
       "answer": "Čas plyne v soustavě pohybující se vůči pozorovateli pomaleji: Δt = γΔt₀. Důkaz: miony z kosmického záření doletí k povrchu Země, ačkoli by se bez dilatace rozpadly dřív."
+    },
+    {
+      "type": "input",
+      "question": "Raketa letí rychlostí 0,8c. Na palubě uplynou 3 s. Kolik sekund uplyne pro pozorovatele na Zemi?",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Δt = (5/3) · 3 = 5 s.",
+      "hints": [
+        "Pro 0,8c je γ = 1 / 0,6 = 5/3.",
+        "Δt = γ · Δt₀."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Tyč má vlastní délku 5 m a letí podél své délky rychlostí 0,8c. Naměřená délka v m =",
+      "answers": [
+        "3"
+      ],
+      "explanation": "l = 5 · 0,6 = 3 m.",
+      "hints": [
+        "l = l₀ / γ a pro 0,8c je 1/γ = 0,6."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Raketa letí rychlostí 0,6c. Pozorovatelům na Zemi uplyne během letu 20 let. Kolik let uplyne posádce?",
+      "options": [
+        "12 let",
+        "16 let",
+        "20 let",
+        "25 let"
+      ],
+      "answer": 1,
+      "explanation": "Posádka měří vlastní čas: Δt₀ = Δt / γ = 20 / 1,25 = 16 let."
+    },
+    {
+      "type": "truefalse",
+      "question": "Raketa letí rychlostí 0,6c a vyšle světlo dopředu. Pozorovatel na Zemi naměří rychlost tohoto světla 1,6c.",
+      "answer": false,
+      "explanation": "Podle 2. postulátu naměří každý inerciální pozorovatel rychlost světla c."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro auto jedoucí po dálnici je Lorentzův faktor prakticky roven 1.",
+      "answer": true,
+      "explanation": "Rychlost auta je proti c nepatrná, v²/c² je téměř nula, takže γ ≈ 1."
+    },
+    {
+      "type": "choice",
+      "question": "Co je inerciální vztažná soustava?",
+      "options": [
+        "soustava, která rovnoměrně zrychluje",
+        "soustava, která stojí nebo se pohybuje rovnoměrně přímočaře",
+        "soustava, která se rovnoměrně otáčí"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "Kolik energie odpovídá hmotnosti 2 kg? Výsledek v jednotkách 10¹⁶ J (c = 3 · 10⁸ m/s) =",
+      "answers": [
+        "18"
+      ],
+      "explanation": "E = m · c² = 2 · 9 · 10¹⁶ = 18 · 10¹⁶ J."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu Lorentzova faktoru γ.",
+      "items": [
+        "vyjádři rychlost jako zlomek c",
+        "spočítej v²/c²",
+        "odečti výsledek od 1 a odmocni",
+        "převrať: γ = 1 / odmocnina"
+      ]
     }
   ]
 }

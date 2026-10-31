@@ -374,6 +374,83 @@
       "type": "open",
       "question": "Co je elektromagnetické spektrum a kde v něm leží viditelné světlo?",
       "answer": "Souhrn elektromagnetického záření podle vlnové délky: rádiové vlny, mikrovlny, IR, viditelné světlo (asi 400–750 nm), UV, rentgenové a gama záření."
+    },
+    {
+      "type": "input",
+      "question": "Fialové světlo má vlnovou délku 400 nm. Frekvence v jednotkách 10¹⁴ Hz =",
+      "answers": [
+        "7,5"
+      ],
+      "explanation": "f = 3 · 10⁸ / 4 · 10⁻⁷ = 0,75 · 10¹⁵ = 7,5 · 10¹⁴ Hz.",
+      "hints": [
+        "400 nm = 4 · 10⁻⁷ m.",
+        "f = c / λ."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Diamant má index lomu 2,4. Rychlost světla v diamantu v jednotkách 10⁸ m/s =",
+      "answers": [
+        "1,25"
+      ],
+      "explanation": "v = c / n = 3 · 10⁸ / 2,4 = 1,25 · 10⁸ m/s."
+    },
+    {
+      "type": "input",
+      "question": "Světlo o vlnové délce 600 nm (ve vakuu) vstoupí do skla s indexem lomu 1,5. Vlnová délka ve skle v nm =",
+      "answers": [
+        "400"
+      ],
+      "explanation": "λ = 600 / 1,5 = 400 nm.",
+      "hints": [
+        "Frekvence se nemění, rychlost klesne n-krát.",
+        "λ = v / f, takže i vlnová délka klesne n-krát."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Mřížka s periodou 2 μm, světlo 500 nm. Úhel maxima 2. řádu ve stupních =",
+      "answers": [
+        "30"
+      ],
+      "explanation": "sin α = 2 · 500 · 10⁻⁹ / 2 · 10⁻⁶ = 0,5, tedy α = 30°.",
+      "hints": [
+        "sin α = k · λ / b."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou barvu odkloní optická mřížka nejvíc?",
+      "options": [
+        "fialovou",
+        "zelenou",
+        "červenou"
+      ],
+      "answer": 2,
+      "explanation": "Z b · sin α = k · λ: delší vlnová délka dává větší úhel a červená má nejdelší."
+    },
+    {
+      "type": "truefalse",
+      "question": "Elektromagnetické vlnění potřebuje k šíření látkové prostředí, vakuem se nešíří.",
+      "answer": false,
+      "explanation": "Elektromagnetické vlnění se šíří i vakuem, rychlostí c = 3 · 10⁸ m/s – proto k nám dojde světlo Slunce."
+    },
+    {
+      "type": "choice",
+      "question": "Proč se barvy na mýdlové bublině postupně přelévají?",
+      "options": [
+        "mýdlo obsahuje barviva, která se rozpouštějí",
+        "světlo se v bláně polarizuje",
+        "blána stéká a mění tloušťku, takže se interferencí zesiluje jiná barva"
+      ],
+      "answer": 2,
+      "explanation": "Barva závisí na rozdílu drah světla odraženého od obou stěn blány, tedy na její tloušťce."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rentgenové záření má kratší vlnovou délku než ultrafialové záření.",
+      "answer": true,
+      "explanation": "Ve spektru následuje po UV záření rentgenové a pak gama – vlnová délka se dál zkracuje."
     }
   ]
 }

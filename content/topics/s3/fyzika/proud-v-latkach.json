@@ -418,6 +418,90 @@
       "type": "open",
       "question": "Vysvětli vlastní a příměsovou vodivost polovodičů.",
       "answer": "Vlastní: tepelně se uvolňují elektrony a vznikají díry ve stejném počtu. Příměsová: donory (typ N) dodávají elektrony, akceptory (typ P) vytvářejí díry."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky výpočtu hmotnosti látky vyloučené při elektrolýze.",
+      "items": [
+        "spočítej náboj Q = I · t (čas v sekundách)",
+        "vynásob elektrochemickým ekvivalentem: m = A · Q",
+        "převeď výsledek z kg na g"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Elektrolýza mědi: A = 3,3 · 10⁻⁷ kg/C, proud 5 A, doba 2 000 s. Hmotnost mědi v g =",
+      "answers": [
+        "3,3"
+      ],
+      "explanation": "Q = 5 · 2 000 = 10 000 C. m = 3,3 · 10⁻⁷ · 10⁴ = 3,3 · 10⁻³ kg = 3,3 g.",
+      "hints": [
+        "Q = I · t.",
+        "m = A · Q vyjde v kg."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký typ polovodiče vznikne přidáním boru do křemíku?",
+      "options": [
+        "typ N",
+        "typ P",
+        "vlastní polovodič"
+      ],
+      "answer": 1,
+      "explanation": "Bor má jen 3 valenční elektrony, jedna vazba zůstane neobsazená – vznikne díra. Převládají díry, tedy typ P."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dioda propouští proud oběma směry stejně dobře.",
+      "answer": false,
+      "explanation": "Přechod PN v diodě vede proud jen jedním směrem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Koróna je oslnivý výboj s velkým teplem, který se používá při svařování.",
+      "answer": false,
+      "explanation": "Při svařování se používá obloukový výboj. Koróna je slabé světélkování na hrotech vedení vysokého napětí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Nesamostatný výboj v plynu potřebuje vnější ionizátor, například plamen nebo záření.",
+      "answer": true,
+      "explanation": "Bez ionizátoru by v plynu nebylo dost nosičů náboje a proud by ustal."
+    },
+    {
+      "type": "choice",
+      "question": "Co udává elektrochemický ekvivalent látky?",
+      "options": [
+        "náboj potřebný k vyloučení 1 kg látky",
+        "počet iontů v jednom molu látky",
+        "hmotnost látky vyloučené při průchodu náboje 1 C",
+        "proud, při kterém začne elektrolýza"
+      ],
+      "answer": 2,
+      "explanation": "A je v kg/C: kolik kilogramů látky se vyloučí, když elektrolytem projde 1 C."
+    },
+    {
+      "type": "match",
+      "question": "Spoj prostředí s nosiči proudu.",
+      "pairs": [
+        [
+          "kov",
+          "volné elektrony"
+        ],
+        [
+          "elektrolyt",
+          "kationty a anionty"
+        ],
+        [
+          "ionizovaný plyn",
+          "ionty a elektrony"
+        ],
+        [
+          "polovodič",
+          "elektrony a díry"
+        ]
+      ]
     }
   ]
 }

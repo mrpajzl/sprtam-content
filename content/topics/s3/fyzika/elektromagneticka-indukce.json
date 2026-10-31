@@ -362,6 +362,84 @@
       "type": "open",
       "question": "Co je vlastní indukce a jak se projevuje?",
       "answer": "Změna proudu v cívce mění její vlastní magnetický tok a indukuje napětí, které změně brání. Projevuje se zpožděným nárůstem proudu po zapnutí a jiskrou při vypnutí."
+    },
+    {
+      "type": "input",
+      "question": "Plocha 0,1 m² je v poli 0,4 T, kolmice k ploše svírá s indukčními čarami úhel 60°. Magnetický indukční tok ve Wb =",
+      "answers": [
+        "0,02"
+      ],
+      "explanation": "Φ = 0,4 · 0,1 · 0,5 = 0,02 Wb.",
+      "hints": [
+        "cos 60° = 0,5.",
+        "Φ = B · S · cos α."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Cívka má 200 závitů. Tok každým závitem klesne z 0,05 Wb na 0,01 Wb za 0,2 s. Velikost indukovaného napětí ve V =",
+      "answers": [
+        "40"
+      ],
+      "explanation": "ΔΦ = 0,04 Wb. |Uᵢ| = 200 · 0,04 / 0,2 = 40 V.",
+      "hints": [
+        "Nejdřív spočítej změnu toku ΔΦ.",
+        "|Uᵢ| = N · ΔΦ / Δt."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do cívky zasouváš jižní pól magnetu. Jaký pól vytvoří indukovaný proud na konci cívky u magnetu?",
+      "options": [
+        "severní",
+        "jižní",
+        "žádný, proud neteče"
+      ],
+      "answer": 1,
+      "explanation": "Podle Lenzova zákona cívka brání přibližování magnetu – vytvoří jižní pól, který jižní pól magnetu odpuzuje."
+    },
+    {
+      "type": "truefalse",
+      "question": "Silný magnet padá měděnou trubkou pomaleji než volným vzduchem, přestože měď není feromagnetická.",
+      "answer": true,
+      "explanation": "V trubce se indukují vířivé proudy a jejich pole pád magnetu brzdí."
+    },
+    {
+      "type": "choice",
+      "question": "Stejnou změnu magnetického toku provedeš za poloviční dobu. Jak se změní indukované napětí?",
+      "options": [
+        "zmenší se na polovinu",
+        "nezmění se",
+        "zdvojnásobí se",
+        "zčtyřnásobí se"
+      ],
+      "answer": 2,
+      "explanation": "Uᵢ = −N · ΔΦ / Δt. Poloviční Δt znamená dvojnásobné napětí."
+    },
+    {
+      "type": "input",
+      "question": "Cívkou s indukčností 0,4 H teče proud 3 A. Energie magnetického pole v J =",
+      "answers": [
+        "1,8"
+      ],
+      "explanation": "E = ½ · L · I² = ½ · 0,4 · 9 = 1,8 J."
+    },
+    {
+      "type": "truefalse",
+      "question": "Vložením železného jádra se indukčnost cívky zmenší.",
+      "answer": false,
+      "explanation": "Železné jádro pole cívky mnohonásobně zesílí, takže indukčnost vzroste."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo v roce 1831 objevil elektromagnetickou indukci?",
+      "options": [
+        "André-Marie Ampère",
+        "Michael Faraday",
+        "Heinrich Lenz",
+        "Nikola Tesla"
+      ],
+      "answer": 1
     }
   ]
 }

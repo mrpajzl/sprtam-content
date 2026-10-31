@@ -380,6 +380,85 @@
       "type": "open",
       "question": "Jak funguje oko a jak se korigují jeho vady?",
       "answer": "Rohovka a čočka vytvářejí skutečný převrácený obraz na sítnici, akomodací se mění mohutnost čočky. Krátkozrakost se koriguje rozptylkou, dalekozrakost spojkou."
+    },
+    {
+      "type": "choice",
+      "question": "Spojka má f = 15 cm, předmět je 10 cm před ní. Co vyjde ze zobrazovací rovnice?",
+      "options": [
+        "a′ = 30 cm, obraz skutečný",
+        "a′ = −30 cm, obraz zdánlivý",
+        "a′ = 6 cm, obraz skutečný",
+        "a′ = −6 cm, obraz zdánlivý"
+      ],
+      "answer": 1,
+      "explanation": "1/a′ = 1/15 − 1/10 = −1/30, tedy a′ = −30 cm. Záporné a′ znamená zdánlivý obraz – předmět je mezi ohniskem a čočkou, jako u lupy.",
+      "hints": [
+        "1/a′ = 1/f − 1/a."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Brýle mají optickou mohutnost +4 D. Ohnisková vzdálenost v cm =",
+      "answers": [
+        "25"
+      ],
+      "explanation": "f = 1 / φ = 1 / 4 m = 0,25 m = 25 cm."
+    },
+    {
+      "type": "input",
+      "question": "Mezní úhel pro rozhraní voda (n = 1,33) – vzduch (n = 1). sin α_m (na setiny) =",
+      "answers": [
+        "0,75"
+      ],
+      "explanation": "sin α_m = n₂ / n₁ = 1 / 1,33 ≈ 0,75 (α_m ≈ 49°)."
+    },
+    {
+      "type": "input",
+      "question": "Předmět je 20 cm před spojkou s ohniskovou vzdáleností 10 cm. Příčné zvětšení Z =",
+      "answers": [
+        "-1",
+        "−1"
+      ],
+      "explanation": "1/a′ = 1/10 − 1/20 = 1/20, a′ = 20 cm. Z = −20/20 = −1: obraz skutečný, převrácený, stejně velký.",
+      "hints": [
+        "Nejdřív spočítej a′ ze zobrazovací rovnice.",
+        "Z = −a′ / a."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při lomu ze vzduchu do vody je úhel lomu menší než úhel dopadu.",
+      "answer": true,
+      "explanation": "Voda je opticky hustší, paprsek se lomí ke kolmici."
+    },
+    {
+      "type": "choice",
+      "question": "Kde vzniká obraz v oku krátkozrakého člověka bez brýlí?",
+      "options": [
+        "za sítnicí",
+        "před sítnicí",
+        "přesně na sítnici"
+      ],
+      "answer": 1,
+      "explanation": "Oko láme světlo příliš silně, obraz vznikne před sítnicí. Rozptylka ho posune na sítnici."
+    },
+    {
+      "type": "truefalse",
+      "question": "Zdánlivý obraz se dá zachytit na stínítko.",
+      "answer": false,
+      "explanation": "Na stínítko lze zachytit jen skutečný obraz, kde se paprsky opravdu protínají. Zdánlivý vidíme jen při pohledu do čočky."
+    },
+    {
+      "type": "choice",
+      "question": "Paprsek dopadá na hladinu a svírá s ní úhel 30°. Jaký úhel dopadu dosadíš do Snellova zákona?",
+      "options": [
+        "30°",
+        "60°",
+        "90°",
+        "120°"
+      ],
+      "answer": 1,
+      "explanation": "Úhel dopadu se měří od kolmice: 90° − 30° = 60°."
     }
   ]
 }

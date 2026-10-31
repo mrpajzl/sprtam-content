@@ -385,6 +385,74 @@
       "type": "open",
       "question": "Popiš druhy radioaktivního záření a ochranu před nimi.",
       "answer": "α – jádra helia, zastaví papír. β – elektrony nebo pozitrony, zastaví hliníkový plech. γ – fotony, zeslabí olovo nebo beton. Chrání vzdálenost, čas a stínění."
+    },
+    {
+      "type": "input",
+      "question": "Kolik neutronů má jádro ²³⁸₉₂U?",
+      "answers": [
+        "146"
+      ],
+      "explanation": "N = A − Z = 238 − 92 = 146."
+    },
+    {
+      "type": "input",
+      "question": "²²⁶₈₈Ra se rozpadne rozpadem α. Nukleonové číslo produktu =",
+      "answers": [
+        "222"
+      ],
+      "explanation": "A klesne o 4: 226 − 4 = 222. Vznikne radon ²²²₈₆Rn."
+    },
+    {
+      "type": "input",
+      "question": "⁶⁰₂₇Co se rozpadne β⁻. Nukleonové číslo produktu =",
+      "answers": [
+        "60"
+      ],
+      "explanation": "Při β⁻ se A nemění, jen Z vzroste o 1. Vznikne nikl ⁶⁰₂₈Ni."
+    },
+    {
+      "type": "input",
+      "question": "Máš 80 g radioaktivního jodu s poločasem 8 dní. Kolik gramů ho zbude po 16 dnech?",
+      "answers": [
+        "20"
+      ],
+      "explanation": "16 dní = 2 poločasy. 80 → 40 → 20 g.",
+      "hints": [
+        "Kolik poločasů je 16 dní?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Který druh záření zastaví už list papíru?",
+      "options": [
+        "β",
+        "γ",
+        "α"
+      ],
+      "answer": 2,
+      "explanation": "Záření α (jádra helia) je nejméně pronikavé."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při rozpadu β⁻ se v jádře jeden neutron změní na proton.",
+      "answer": true,
+      "explanation": "Proto Z vzroste o 1 a A se nezmění."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď druhy záření od nejméně pronikavého po nejpronikavější.",
+      "items": [
+        "α",
+        "β",
+        "γ"
+      ],
+      "explanation": "α zastaví papír, β hliníkový plech, γ zeslabí až olovo nebo beton."
+    },
+    {
+      "type": "truefalse",
+      "question": "Izotopy ¹²C a ¹⁴C mají v jádře stejný počet neutronů.",
+      "answer": false,
+      "explanation": "Mají stejný počet protonů (6), ale ¹²C má 6 neutronů a ¹⁴C 8."
     }
   ]
 }

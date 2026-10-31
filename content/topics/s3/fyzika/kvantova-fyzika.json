@@ -385,6 +385,80 @@
       "type": "open",
       "question": "Co je dualismus vlna–částice?",
       "answer": "Světlo i hmotné částice mají vlnové i částicové vlastnosti. Světlo interferuje i se chová jako fotony, elektrony mají vlnovou délku λ = h/p."
+    },
+    {
+      "type": "input",
+      "question": "Energie elektronu atomu vodíku na hladině n = 3 v eV (E₁ = −13,6 eV), na setiny =",
+      "answers": [
+        "-1,51",
+        "−1,51"
+      ],
+      "explanation": "E₃ = −13,6 / 9 ≈ −1,51 eV.",
+      "hints": [
+        "E_n = −13,6 eV / n²."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Elektron ve vodíku přejde z hladiny n = 3 na n = 2. Energie vyzářeného fotonu v eV (na setiny) =",
+      "answers": [
+        "1,89"
+      ],
+      "explanation": "E = 13,6 · (1/4 − 1/9) = 13,6 · 5/36 ≈ 1,89 eV – to je červená čára ve spektru vodíku.",
+      "hints": [
+        "Spočítej E₃ a E₂ ze vztahu E_n = −13,6 eV / n².",
+        "Energie fotonu je rozdíl hladin."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Foton s energií 6 eV dopadne na zinek (výstupní práce 4,3 eV). Maximální kinetická energie elektronu v eV =",
+      "answers": [
+        "1,7"
+      ],
+      "explanation": "E_k = h · f − W_v = 6 − 4,3 = 1,7 eV."
+    },
+    {
+      "type": "input",
+      "question": "Energie 2 eV vyjádřená v joulech je x · 10⁻¹⁹ J. x =",
+      "answers": [
+        "3,2"
+      ],
+      "explanation": "1 eV = 1,6 · 10⁻¹⁹ J, takže 2 eV = 3,2 · 10⁻¹⁹ J."
+    },
+    {
+      "type": "truefalse",
+      "question": "Dostatečně silné červené světlo vyrazí elektrony ze zinku.",
+      "answer": false,
+      "explanation": "Červený foton má méně energie, než je výstupní práce zinku. Víc fotonů nepomůže – každý jedná sám za sebe."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik energie musíš dodat, aby se elektron atomu vodíku v základním stavu (n = 1) z atomu úplně uvolnil?",
+      "options": [
+        "3,4 eV",
+        "10,2 eV",
+        "13,6 eV"
+      ],
+      "answer": 2,
+      "explanation": "Volný elektron má energii 0 eV. Ze základního stavu −13,6 eV je potřeba dodat 13,6 eV."
+    },
+    {
+      "type": "choice",
+      "question": "Na zinek svítíš UV světlem a pak UV světlem s vyšší frekvencí (se stejným počtem fotonů za sekundu). Co se změní?",
+      "options": [
+        "vyletí víc elektronů, ale stejně rychlých",
+        "vyletující elektrony budou rychlejší",
+        "fotoefekt ustane"
+      ],
+      "answer": 1,
+      "explanation": "Energičtější foton dá elektronu víc pohybové energie: E_k = h · f − W_v."
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle relací neurčitosti nelze u částice současně libovolně přesně určit polohu i hybnost.",
+      "answer": true,
+      "explanation": "To ukázal Werner Heisenberg."
     }
   ]
 }

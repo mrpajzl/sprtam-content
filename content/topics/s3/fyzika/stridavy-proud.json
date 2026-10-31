@@ -353,6 +353,80 @@
       "type": "open",
       "question": "Jak se chová cívka a kondenzátor ve střídavém obvodu?",
       "answer": "Cívka má induktanci X_L = ωL, roste s frekvencí, proud se zpožďuje o π/2. Kondenzátor má kapacitanci X_C = 1/(ωC), klesá s frekvencí, proud předbíhá o π/2."
+    },
+    {
+      "type": "input",
+      "question": "Efektivní hodnota střídavého napětí je 12 V. Amplituda ve V (na celé) =",
+      "answers": [
+        "17"
+      ],
+      "explanation": "Uₘ = 12 · 1,414 ≈ 17 V.",
+      "hints": [
+        "Uₘ = U · √2."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolikrát za sekundu změní směr proud o frekvenci 50 Hz?",
+      "answers": [
+        "100"
+      ],
+      "explanation": "Během jedné periody proud změní směr dvakrát, takže 2 · 50 = 100krát."
+    },
+    {
+      "type": "input",
+      "question": "Perioda střídavého napětí v síti 50 Hz v ms =",
+      "answers": [
+        "20"
+      ],
+      "explanation": "T = 1 / f = 1 / 50 s = 0,02 s = 20 ms."
+    },
+    {
+      "type": "input",
+      "question": "Sériový obvod RLC: L = 0,1 H, C = 10 μF. Rezonanční frekvence v Hz (na celé) =",
+      "answers": [
+        "159"
+      ],
+      "explanation": "LC = 0,1 · 10⁻⁵ = 10⁻⁶, √(LC) = 10⁻³. f₀ = 1 / (2π · 10⁻³) ≈ 159 Hz.",
+      "hints": [
+        "Převeď C na farady a spočítej součin L · C.",
+        "f₀ = 1 / (2π √(LC))."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jakou induktanci má cívka 0,1 H při frekvenci 100 Hz?",
+      "options": [
+        "15,7 Ω",
+        "31,4 Ω",
+        "62,8 Ω",
+        "628 Ω"
+      ],
+      "answer": 2,
+      "explanation": "X_L = 2π · 100 · 0,1 = 20π ≈ 62,8 Ω."
+    },
+    {
+      "type": "truefalse",
+      "question": "Pro stejnosměrný proud se ideální cívka chová jako obyčejný drát.",
+      "answer": true,
+      "explanation": "Při f = 0 je X_L = 2π · f · L = 0."
+    },
+    {
+      "type": "truefalse",
+      "question": "V obvodu s ideálním kondenzátorem se proud zpožďuje za napětím o čtvrt periody.",
+      "answer": false,
+      "explanation": "U kondenzátoru proud napětí o π/2 předbíhá. Zpožďuje se u cívky."
+    },
+    {
+      "type": "choice",
+      "question": "Kterou součástku zapojíš do série s výškovým reproduktorem, aby k němu nepropouštěla hluboké tóny?",
+      "options": [
+        "cívku",
+        "kondenzátor",
+        "rezistor"
+      ],
+      "answer": 1,
+      "explanation": "Kapacitance X_C = 1 / (2πfC) je při nízkých frekvencích velká, takže kondenzátor hluboké tóny brzdí a vysoké propustí."
     }
   ]
 }

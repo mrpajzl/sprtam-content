@@ -364,6 +364,86 @@
       "type": "open",
       "question": "Co je Lorentzova síla a kde se uplatňuje?",
       "answer": "Síla působící na náboj pohybující se v magnetickém poli: F = QvB sin α. Uplatňuje se v urychlovačích, hmotnostním spektrografu a u polární záře."
+    },
+    {
+      "type": "input",
+      "question": "B = 0,1 T, I = 3 A, délka vodiče v poli 0,5 m, vodič svírá s indukčními čarami úhel 30°. Síla v N =",
+      "answers": [
+        "0,075"
+      ],
+      "explanation": "F = 0,1 · 3 · 0,5 · 0,5 = 0,075 N.",
+      "hints": [
+        "sin 30° = 0,5.",
+        "F = B · I · l · sin α."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Dlouhá cívka má 1 000 závitů, délku 0,5 m a teče jí proud 2 A (bez jádra). Jaká je indukce uvnitř?",
+      "options": [
+        "přibližně 0,5 mT",
+        "přibližně 5 mT",
+        "přibližně 50 mT",
+        "přibližně 5 μT"
+      ],
+      "answer": 1,
+      "explanation": "B = μ₀ · N · I / l = 4π · 10⁻⁷ · 1 000 · 2 / 0,5 = 16π · 10⁻⁴ T ≈ 5 · 10⁻³ T = 5 mT."
+    },
+    {
+      "type": "choice",
+      "question": "Vzdálenost od dlouhého přímého vodiče s proudem zdvojnásobíš. Jak se změní magnetická indukce?",
+      "options": [
+        "zvětší se 2×",
+        "nezmění se",
+        "zmenší se 2×",
+        "zmenší se 4×"
+      ],
+      "answer": 2,
+      "explanation": "B = μ₀ · I / (2π · d) – indukce je nepřímo úměrná vzdálenosti d."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když tyčový magnet rozlomíš napůl, získáš samostatný severní a samostatný jižní pól.",
+      "answer": false,
+      "explanation": "Každá polovina má opět severní i jižní pól. Samostatný magnetický pól neexistuje."
+    },
+    {
+      "type": "choice",
+      "question": "Co ukazuje palec u Ampérova pravidla pravé ruky?",
+      "options": [
+        "směr indukčních čar",
+        "směr magnetické síly",
+        "směr proudu ve vodiči"
+      ],
+      "answer": 2,
+      "explanation": "Palec míří ve směru proudu, zahnuté prsty ukazují směr indukčních čar kolem vodiče."
+    },
+    {
+      "type": "input",
+      "question": "Elektron (náboj 1,6 · 10⁻¹⁹ C) letí rychlostí 10⁶ m/s kolmo do pole 0,5 T. Lorentzova síla v jednotkách 10⁻¹⁴ N =",
+      "answers": [
+        "8"
+      ],
+      "explanation": "F = 1,6 · 10⁻¹⁹ · 10⁶ · 0,5 = 0,8 · 10⁻¹³ N = 8 · 10⁻¹⁴ N.",
+      "hints": [
+        "F = Q · v · B · sin α, kolmo je sin α = 1."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Lorentzova síla mění velikost rychlosti nabité částice.",
+      "answer": false,
+      "explanation": "Lorentzova síla je stále kolmá k rychlosti, mění jen její směr – proto částice letí po kružnici stálou rychlostí."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď magnetická pole od nejslabšího po nejsilnější.",
+      "items": [
+        "magnetické pole Země",
+        "magnet na lednici",
+        "magnetická rezonance (MRI)"
+      ],
+      "explanation": "Země asi 50 μT, magnet na lednici asi 5 mT, MRI 1,5–3 T."
     }
   ]
 }
