@@ -298,6 +298,88 @@
       "type": "open",
       "question": "Jaká je první a poslední hláska ve slově TÁTA?",
       "answer": "První je T a poslední je A."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je první hláska ve slově RYBA?",
+      "options": [
+        "R",
+        "Y",
+        "A"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je poslední hláska ve slově RYBA?",
+      "options": [
+        "R",
+        "B",
+        "A"
+      ],
+      "answer": 2,
+      "explanation": "Ry-b-a. Po B ještě zazní A."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je první hláska ve slově NOS?",
+      "options": [
+        "S",
+        "N",
+        "O"
+      ],
+      "answer": 1,
+      "explanation": "Nnn-os. Začíná na N."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je první hláska ve slově MED?",
+      "answers": [
+        "M",
+        "m"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jaká je poslední hláska ve slově MÁMA?",
+      "answers": [
+        "A",
+        "a"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo OKNO začíná i končí hláskou O.",
+      "answer": true,
+      "explanation": "O-k-n-o. První i poslední je O."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo KOLO začíná hláskou O.",
+      "answer": false,
+      "explanation": "K-o-l-o. Začíná na K."
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo s první hláskou.",
+      "pairs": [
+        [
+          "táta",
+          "T"
+        ],
+        [
+          "voda",
+          "V"
+        ],
+        [
+          "lev",
+          "L"
+        ],
+        [
+          "sýr",
+          "S"
+        ]
+      ]
     }
   ]
 }

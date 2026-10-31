@@ -275,6 +275,75 @@
       "type": "open",
       "question": "Jaký je rozdíl mezi slovem a větou?",
       "answer": "Věta se skládá ze slov. Věta něco sděluje celé."
+    },
+    {
+      "type": "input",
+      "question": "Kolik slov má věta: *Pes a kočka spí.*",
+      "answers": [
+        "4"
+      ],
+      "explanation": "Pes – a – kočka – spí. I malé „a“ je slovo."
+    },
+    {
+      "type": "input",
+      "question": "Kolik slov má věta: *Jdu s tátou do lesa.*",
+      "answers": [
+        "5"
+      ],
+      "explanation": "Jdu – s – tátou – do – lesa."
+    },
+    {
+      "type": "choice",
+      "question": "Kolik slov má věta: *Jdu s tátou.*",
+      "options": [
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Jdu – s – tátou. Malé „s“ se taky počítá."
+    },
+    {
+      "type": "order",
+      "question": "Slož větu o Emě.",
+      "items": [
+        "Ema",
+        "má",
+        "malou",
+        "kočku."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Malé slovíčko *a* ve větě je samostatné slovo.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě jsou správně mezery?",
+      "options": [
+        "Mámavaří polévku.",
+        "Máma vaří polévku.",
+        "Máma vařípolévku."
+      ],
+      "answer": 1,
+      "explanation": "Mezi každými dvěma slovy je mezera."
+    },
+    {
+      "type": "choice",
+      "question": "Co je písmeno?",
+      "options": [
+        "t",
+        "táta",
+        "Táta spí."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Táta spí.* má 3 slova.",
+      "answer": false,
+      "explanation": "Táta – spí. Jsou to 2 slova."
     }
   ]
 }

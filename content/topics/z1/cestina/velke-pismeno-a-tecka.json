@@ -325,6 +325,92 @@
       "type": "open",
       "question": "Napiš (řekni) své jméno. Jakým písmenem začíná?",
       "answer": "Moje jméno začíná velkým písmenem, třeba Ema – velké E."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správně napsanou větu.",
+      "options": [
+        "máma vaří.",
+        "Máma vaří.",
+        "Máma vaří"
+      ],
+      "answer": 1,
+      "explanation": "Velké M na začátku a tečka na konci."
+    },
+    {
+      "type": "choice",
+      "question": "Najdi větu, která je napsaná správně.",
+      "options": [
+        "Máme doma Psa.",
+        "máme doma psa.",
+        "Máme doma psa."
+      ],
+      "answer": 2,
+      "explanation": "Pes není jméno, píšeme ho malým písmenem."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správně napsané jméno.",
+      "options": [
+        "Ema",
+        "ema"
+      ],
+      "answer": 0,
+      "explanation": "Ema je jméno – velké písmeno."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo *pes* uprostřed věty píšeme velkým písmenem.",
+      "answer": false,
+      "explanation": "Pes není jméno. Píšeme ho malým písmenem."
+    },
+    {
+      "type": "truefalse",
+      "question": "Jméno kočky *Micka* píšeme velkým M.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Co dáš na konec věty, když se ptáš?",
+      "options": [
+        "tečku",
+        "otazník",
+        "čárku"
+      ],
+      "answer": 1,
+      "explanation": "Kde je pes? Na konci otázky je otazník."
+    },
+    {
+      "type": "order",
+      "question": "Slož větu o tátovi.",
+      "items": [
+        "Táta",
+        "hladí",
+        "kočku",
+        "Micku."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo s písmenem, kterým ho uprostřed věty začneš.",
+      "pairs": [
+        [
+          "Petr",
+          "velké P"
+        ],
+        [
+          "pes",
+          "malé p"
+        ],
+        [
+          "Alík",
+          "velké A"
+        ],
+        [
+          "stůl",
+          "malé s"
+        ]
+      ]
     }
   ]
 }

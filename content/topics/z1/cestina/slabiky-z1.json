@@ -336,6 +336,75 @@
       "type": "open",
       "question": "Vytleskej své jméno. Kolik má slabik?",
       "answer": "Například E-ma má 2 slabiky, To-máš má 2, Ka-te-ři-na má 4."
+    },
+    {
+      "type": "input",
+      "question": "Kolik slabik má slovo AUTO?",
+      "answers": [
+        "2"
+      ],
+      "explanation": "au-to. AU řekneš najednou."
+    },
+    {
+      "type": "input",
+      "question": "Kolik slabik má slovo DŮM?",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik slabik má slovo BANÁNY?",
+      "options": [
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "ba-ná-ny = 3"
+    },
+    {
+      "type": "choice",
+      "question": "Jak se slovo RYBA dělí na slabiky?",
+      "options": [
+        "r-yba",
+        "ryb-a",
+        "ry-ba"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo má 2 slabiky?",
+      "options": [
+        "les",
+        "voda",
+        "žirafa"
+      ],
+      "answer": 1,
+      "explanation": "vo-da = 2"
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo AUTO má 3 slabiky.",
+      "answer": false,
+      "explanation": "au-to. AU zní dohromady, slabiky jsou 2."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo MOUCHA má 2 slabiky.",
+      "answer": true,
+      "explanation": "mou-cha"
+    },
+    {
+      "type": "order",
+      "question": "Slož slovo ČOKOLÁDA.",
+      "items": [
+        "ČO",
+        "KO",
+        "LÁ",
+        "DA"
+      ]
     }
   ]
 }
