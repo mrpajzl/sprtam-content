@@ -447,6 +447,65 @@
       "type": "open",
       "question": "Odpověz celou větou se dvěma zájmeny: ¿Les has enviado la carta a tus abuelos?",
       "answer": "*Sí, se la he enviado.* nebo *No, todavía no se la he enviado.* (*les* → *se*, *la carta* → *la*.)"
+    },
+    {
+      "type": "input",
+      "question": "Doplň zájmeno: Mis tíos ___ escriben una carta. (a nosotros)",
+      "answers": [
+        "nos"
+      ],
+      "explanation": "Komu? Nám → *nos*."
+    },
+    {
+      "type": "choice",
+      "question": "¿El mensaje? ___ envío ahora a mis padres.",
+      "options": [
+        "Les lo",
+        "Se lo",
+        "Se los",
+        "Lo les"
+      ],
+      "answer": 1,
+      "explanation": "*el mensaje* → *lo*, *a mis padres* → *les* → *se*. Ve spisovné španělštině *se lo*, i když komu je víc lidí."
+    },
+    {
+      "type": "truefalse",
+      "question": "Větu „Te lo estoy explicando.“ můžeš říct také „Estoy explicándotelo.“",
+      "answer": true,
+      "explanation": "Zájmena jdou buď před vyčasované sloveso, nebo dohromady na konec gerundia (s čárkou kvůli přízvuku)."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správnou větu: Chci ti ten dárek dát.",
+      "options": [
+        "Lo te quiero dar.",
+        "Quiero darte lo.",
+        "Te lo quiero dar."
+      ],
+      "answer": 2,
+      "explanation": "Nejdřív komu (*te*), pak co (*lo*). Na konci infinitivu by bylo dohromady: *Quiero dártelo.*"
+    },
+    {
+      "type": "match",
+      "question": "Spoj větu s překladem.",
+      "pairs": [
+        [
+          "Me lo das.",
+          "Dáváš mi to."
+        ],
+        [
+          "Te las mando.",
+          "Pošlu ti je."
+        ],
+        [
+          "Nos lo explica.",
+          "Vysvětlí nám to."
+        ],
+        [
+          "Se lo digo.",
+          "Řeknu mu to."
+        ]
+      ]
     }
   ]
 }

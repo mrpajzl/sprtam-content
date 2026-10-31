@@ -497,6 +497,62 @@
       "type": "open",
       "question": "Řekni ve třech větách, jak bude vypadat tvůj život za deset let.",
       "answer": "Např.: *Dentro de diez años viviré en Praga. Trabajaré como arquitecto y tendré un perro. Hablaré muy bien español.*"
+    },
+    {
+      "type": "input",
+      "question": "Doplň futuro: Pasado mañana (nosotros) ___ (salir) temprano.",
+      "answers": [
+        "saldremos"
+      ],
+      "explanation": "*salir* → *saldr-* + *-emos*."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je tvar *hacer* ve futuru pro *nosotros*?",
+      "options": [
+        "haceremos",
+        "haremos",
+        "harémos"
+      ],
+      "answer": 1,
+      "explanation": "*hacer* → *har-* + *-emos*. Tvar pro *nosotros* nemá čárku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve futuru simple má čárku i tvar pro *nosotros*: *hablarémos*.",
+      "answer": false,
+      "explanation": "Správně *hablaremos*. Čárku mají všechny tvary kromě *nosotros*."
+    },
+    {
+      "type": "input",
+      "question": "Doplň futuro (slib): Te lo ___ (decir, yo) mañana.",
+      "answers": [
+        "diré",
+        "dire"
+      ],
+      "explanation": "*decir* → *dir-* + *-é*."
+    },
+    {
+      "type": "match",
+      "question": "Spoj časový údaj s významem.",
+      "pairs": [
+        [
+          "mañana",
+          "zítra"
+        ],
+        [
+          "pasado mañana",
+          "pozítří"
+        ],
+        [
+          "la semana que viene",
+          "příští týden"
+        ],
+        [
+          "dentro de dos años",
+          "za dva roky"
+        ]
+      ]
     }
   ]
 }
