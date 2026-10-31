@@ -399,6 +399,86 @@
       "type": "open",
       "question": "K čemu slouží měřítko mapy?",
       "answer": "Říká, kolikrát je mapa menší než skutečnost. Podle něj spočítám skutečnou vzdálenost."
+    },
+    {
+      "type": "choice",
+      "question": "Kde Slunce večer zapadá?",
+      "options": [
+        "na východě",
+        "na jihu",
+        "na západě",
+        "na severu"
+      ],
+      "answer": 2,
+      "explanation": "Slunce vychází na východě, v poledne je na jihu a zapadá na západě."
+    },
+    {
+      "type": "truefalse",
+      "question": "Hvězda Polárka svítí skoro přesně nad severem.",
+      "answer": true,
+      "explanation": "Podle Polárky najdeš sever i v noci."
+    },
+    {
+      "type": "choice",
+      "question": "Díváš se na jih. Na kterou stranu ukazuje tvoje levá ruka?",
+      "options": [
+        "na západ",
+        "na východ",
+        "na sever"
+      ],
+      "answer": 1,
+      "explanation": "Když se díváš na jih, vlevo je východ a vpravo západ."
+    },
+    {
+      "type": "input",
+      "question": "Měřítko 1 : 50 000. Na mapě naměříš 6 cm. Kolik kilometrů je to ve skutečnosti? Napiš číslo.",
+      "answers": [
+        "3"
+      ],
+      "explanation": "1 cm = 500 m, 6 cm = 3 000 m = 3 km.",
+      "hints": [
+        "1 cm na mapě je 50 000 cm, tedy 500 m.",
+        "6 · 500 m = ? m"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která světová strana je opačná k severovýchodu?",
+      "options": [
+        "jihovýchod",
+        "severozápad",
+        "jihozápad"
+      ],
+      "answer": 2,
+      "explanation": "Sever je naproti jihu a východ naproti západu. Proti severovýchodu je tedy jihozápad."
+    },
+    {
+      "type": "truefalse",
+      "question": "Když jsou vrstevnice na mapě hodně u sebe, je kopec mírný.",
+      "answer": false,
+      "explanation": "Vrstevnice blízko u sebe znamenají prudký kopec."
+    },
+    {
+      "type": "choice",
+      "question": "Praha je na mapě nad Českými Budějovicemi. Co z toho plyne?",
+      "options": [
+        "Praha leží severněji",
+        "Praha leží jižněji",
+        "Praha leží výš nad mořem"
+      ],
+      "answer": 0,
+      "explanation": "Na mapě je sever nahoře. Co je výš na mapě, leží severněji."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď světové strany po směru hodinových ručiček, začni severem.",
+      "items": [
+        "sever",
+        "severovýchod",
+        "východ",
+        "jihovýchod",
+        "jih"
+      ]
     }
   ]
 }
