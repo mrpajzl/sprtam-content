@@ -338,6 +338,75 @@
       "type": "open",
       "question": "Převeď větu *Učitel opravil písemky.* do trpného rodu.",
       "answer": "Písemky byly opraveny učitelem."
+    },
+    {
+      "type": "choice",
+      "question": "Ve které větě je trpný rod?",
+      "options": [
+        "Sousedé vymalovali byt.",
+        "Byt byl vymalován.",
+        "Sousedé se smějí."
+      ],
+      "answer": 1,
+      "explanation": "Byl vymalován = být + příčestí trpné."
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí trpné od *postavit*: *Škola byla ___.*",
+      "answers": [
+        "postavena"
+      ],
+      "explanation": "Ta škola → ženský rod → postavena."
+    },
+    {
+      "type": "input",
+      "question": "Doplň příčestí trpné od *umýt*: *Okno bylo ___.*",
+      "answers": [
+        "umyto"
+      ],
+      "explanation": "To okno → střední rod → umyto."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Tráva se seká.* je trpný zvratný rod.",
+      "answer": true,
+      "explanation": "Tráva sama nic neseká, seká ji někdo jiný."
+    },
+    {
+      "type": "truefalse",
+      "question": "V trpném rodě stojí ten, kdo děj udělal, ve 3. pádě (komu?).",
+      "answer": false,
+      "explanation": "Je v 7. pádě (kým?): Okno bylo rozbito Petrem."
+    },
+    {
+      "type": "choice",
+      "question": "Převeď do trpného rodu: *Hasiči uhasili požár.*",
+      "options": [
+        "Hasiči byli uhašeni požárem.",
+        "Požár uhasil hasiče.",
+        "Požár byl uhašen hasiči."
+      ],
+      "answer": 2,
+      "explanation": "Co uhasili? Požár → nový podmět. Kým? Hasiči (7. pád)."
+    },
+    {
+      "type": "choice",
+      "question": "Proč je ve větě *Kolo bylo ukradeno.* trpný rod?",
+      "options": [
+        "Nevíme, kdo kolo ukradl.",
+        "Kolo samo něco udělalo.",
+        "Věta je v budoucím čase."
+      ],
+      "answer": 0,
+      "explanation": "Trpný rod používáme, když nevíme, kdo děj udělal, nebo to není důležité."
+    },
+    {
+      "type": "input",
+      "question": "Převeď do činného rodu: *Dopis byl napsán Petrem.* Napiš sloveso nové věty.",
+      "answers": [
+        "napsal"
+      ],
+      "explanation": "Petr napsal dopis."
     }
   ]
 }

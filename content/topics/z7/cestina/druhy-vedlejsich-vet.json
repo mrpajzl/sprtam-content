@@ -439,6 +439,92 @@
       "type": "open",
       "question": "Utvoř souvětí s vedlejší větou příčinnou.",
       "answer": "Např.: *Zůstal doma, protože byl nemocný.* Vedlejší věta odpovídá na otázku proč?"
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh vedlejší věty: *Pokud bude pršet, zůstanu doma.*",
+      "options": [
+        "časová",
+        "podmínková",
+        "příčinná"
+      ],
+      "answer": 1,
+      "explanation": "Za jaké podmínky zůstanu doma? → podmínková."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh vedlejší věty: *Jdu, kam chci.*",
+      "options": [
+        "předmětná",
+        "přívlastková",
+        "místní"
+      ],
+      "answer": 2,
+      "explanation": "Kam jdu? → místní."
+    },
+    {
+      "type": "choice",
+      "question": "Urči druh vedlejší věty: *Vím, že přijdeš.*",
+      "options": [
+        "podmětná",
+        "předmětná",
+        "příčinná"
+      ],
+      "answer": 1,
+      "explanation": "Vím co? → pádová otázka (4. pád) → předmětná."
+    },
+    {
+      "type": "truefalse",
+      "question": "Spojovací výraz na začátku vedlejší věty vždy přesně určí její druh.",
+      "answer": false,
+      "explanation": "Spojka jen napoví, rozhoduje otázka: *Jdu, kam chci* (místní) × *Vím, kam jde* (předmětná)."
+    },
+    {
+      "type": "input",
+      "question": "Kolik vět má souvětí *Kniha, kterou mi půjčil Petr, je dobrá.*? Napiš číslo.",
+      "answers": [
+        "2"
+      ],
+      "explanation": "Slovesa v určitém tvaru: půjčil, je → 2 věty."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve větě *Pes, který štěká, nekouše.* je vedlejší věta přívlastková.",
+      "answer": true,
+      "explanation": "Jaký pes? Který štěká → rozvíjí podstatné jméno."
+    },
+    {
+      "type": "choice",
+      "question": "Která věta má správně čárky?",
+      "options": [
+        "Pes, který štěká nekouše.",
+        "Pes který štěká, nekouše.",
+        "Pes, který štěká, nekouše."
+      ],
+      "answer": 2,
+      "explanation": "Vedlejší věta vložená doprostřed se odděluje čárkami z obou stran."
+    },
+    {
+      "type": "match",
+      "question": "Spoj spojku s druhem vedlejší věty, který často uvádí.",
+      "pairs": [
+        [
+          "protože",
+          "příčinná"
+        ],
+        [
+          "aby",
+          "účelová"
+        ],
+        [
+          "který",
+          "přívlastková"
+        ],
+        [
+          "pokud",
+          "podmínková"
+        ]
+      ]
     }
   ]
 }

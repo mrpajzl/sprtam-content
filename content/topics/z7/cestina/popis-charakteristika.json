@@ -360,6 +360,77 @@
       "type": "open",
       "question": "Jak postupuješ při popisu předmětu?",
       "answer": "Nejdřív celek (co to je, k čemu slouží), potom části od hlavních k detailům, nakonec můj vztah k věci. Používám výstižná přídavná jména."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký útvar je text *Můj batoh*, který říká, jak batoh vypadá?",
+      "options": [
+        "vypravování",
+        "popis předmětu",
+        "charakteristika"
+      ],
+      "answer": 1,
+      "explanation": "Říká, jak věc vypadá → popis předmětu."
+    },
+    {
+      "type": "choice",
+      "question": "Jaká je charakteristika: *Babička je trpělivá.*?",
+      "options": [
+        "nepřímá",
+        "přímá"
+      ],
+      "answer": 1,
+      "explanation": "Vlastnost je řečena rovnou → přímá."
+    },
+    {
+      "type": "truefalse",
+      "question": "Věta *Má zrzavé vlasy a pihy.* patří do vnitřní charakteristiky.",
+      "answer": false,
+      "explanation": "Popisuje vzhled → vnější charakteristika."
+    },
+    {
+      "type": "choice",
+      "question": "Co patří do závěru charakteristiky?",
+      "options": [
+        "vzhled osoby",
+        "můj vztah k té osobě",
+        "odkud osobu znám"
+      ],
+      "answer": 1,
+      "explanation": "Úvod: kdo to je a odkud ho znám. Závěr: můj vztah k osobě."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď části charakteristiky.",
+      "items": [
+        "úvod: kdo to je",
+        "vnější charakteristika: vzhled",
+        "vnitřní charakteristika: povaha",
+        "závěr: můj vztah k osobě"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nejpřesvědčivější charakteristika spojí vlastnost s důkazem činem.",
+      "answer": true,
+      "explanation": "Seznam vlastností bez důkazu nikoho nepřesvědčí."
+    },
+    {
+      "type": "choice",
+      "question": "V jakém pořadí popisuješ předmět ve stati?",
+      "options": [
+        "nejdřív detaily, pak celek",
+        "nejdřív celek, pak části od hlavních k detailům",
+        "pořadí nehraje roli"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje plán textu v bodech (úvod, stať, závěr)?",
+      "answers": [
+        "osnova"
+      ]
     }
   ]
 }

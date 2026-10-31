@@ -386,6 +386,90 @@
       "type": "open",
       "question": "Rozeber větu *Včera jsme na hřišti hráli fotbal.*",
       "answer": "Podmět nevyjádřený (my), přísudek hráli jsme, včera – PU času, na hřišti – PU místa, fotbal – předmět."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký větný člen je *malý* ve větě *Malý Tomáš ráno snědl rohlík.*?",
+      "options": [
+        "předmět",
+        "PU způsobu",
+        "přívlastek"
+      ],
+      "answer": 2,
+      "explanation": "Jaký Tomáš? Malý → rozvíjí podstatné jméno → přívlastek."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký větný člen je *bratrovi* ve větě *Pomáhám bratrovi.*?",
+      "options": [
+        "podmět",
+        "předmět",
+        "přívlastek"
+      ],
+      "answer": 1,
+      "explanation": "Pomáhám komu? → pádová otázka 3. pádu → předmět."
+    },
+    {
+      "type": "choice",
+      "question": "Jaké příslovečné určení je *na zahradě* ve větě *Děti si hrají na zahradě.*?",
+      "options": [
+        "PU času",
+        "PU místa",
+        "PU způsobu"
+      ],
+      "answer": 1,
+      "explanation": "Kde si hrají? → PU místa."
+    },
+    {
+      "type": "input",
+      "question": "Napiš přívlastek ve větě *Mladá paní koupila chléb.*",
+      "answers": [
+        "mladá",
+        "Mladá"
+      ],
+      "explanation": "Jaká paní? Mladá."
+    },
+    {
+      "type": "input",
+      "question": "Napiš příslovečné určení času: *Vlak přijel ráno do Brna.*",
+      "answers": [
+        "ráno"
+      ],
+      "explanation": "Kdy přijel? Ráno. (*Do Brna* je PU místa.)"
+    },
+    {
+      "type": "truefalse",
+      "question": "Přívlastek rozvíjí podstatné jméno.",
+      "answer": true,
+      "explanation": "Ptáme se na něj jaký? který? čí?"
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve spojení *strom u cesty* je *u cesty* přívlastek shodný.",
+      "answer": false,
+      "explanation": "Strom u cesty – stromu u cesty: tvar se nemění → neshodný."
+    },
+    {
+      "type": "match",
+      "question": "Spoj slovo z věty *Starý rybář chytil kapra v rybníce.* s větným členem.",
+      "pairs": [
+        [
+          "rybář",
+          "podmět"
+        ],
+        [
+          "starý",
+          "přívlastek"
+        ],
+        [
+          "kapra",
+          "předmět"
+        ],
+        [
+          "v rybníce",
+          "PU místa"
+        ]
+      ]
     }
   ]
 }
