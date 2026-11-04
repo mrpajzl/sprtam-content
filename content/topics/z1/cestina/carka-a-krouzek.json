@@ -384,10 +384,80 @@
       "type": "open",
       "question": "Řekni slovo s dlouhou samohláskou.",
       "answer": "Například máma, táta, míč, sýr, dům."
+    },
+    {
+      "type": "truefalse",
+      "question": "Í je dlouhá samohláska.",
+      "answer": true
+    },
+    {
+      "type": "truefalse",
+      "question": "Ve slově *pes* je dlouhá samohláska.",
+      "answer": false,
+      "explanation": "P-e-s. E je krátké, bez čárky."
+    },
+    {
+      "type": "choice",
+      "question": "Vyber správně napsané slovo.",
+      "options": [
+        "mič",
+        "míč",
+        "míčč"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově je dlouhé u napsané správně?",
+      "options": [
+        "stul",
+        "stúl",
+        "stůl"
+      ],
+      "answer": 2,
+      "explanation": "Dlouhé u uprostřed slova má kroužek: ů."
+    },
+    {
+      "type": "choice",
+      "question": "Co má dlouhé á?",
+      "options": [
+        "kroužek",
+        "čárku",
+        "tečku"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "question": "Spoj krátkou a dlouhou samohlásku.",
+      "pairs": [
+        [
+          "o",
+          "ó"
+        ],
+        [
+          "y",
+          "ý"
+        ],
+        [
+          "u",
+          "ů"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Ve kterém slově slyšíš dlouhou samohlásku?",
+      "options": [
+        "les",
+        "táta",
+        "kolo"
+      ],
+      "answer": 1
     }
   ],
   "verified": {
-    "by": "Ondřej Zralý",
-    "at": "2026-10-29"
+    "by": "David Hošek",
+    "at": "2026-11-04"
   }
 }
