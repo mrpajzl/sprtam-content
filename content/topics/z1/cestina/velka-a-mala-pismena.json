@@ -373,10 +373,91 @@
       "type": "open",
       "question": "Řekni, jak vypadá velké a malé písmeno M.",
       "answer": "Velké M má dvě špičky nahoře. Malé m má dva obloučky."
+    },
+    {
+      "type": "match",
+      "question": "Spoj malé a velké písmeno.",
+      "pairs": [
+        [
+          "o",
+          "O"
+        ],
+        [
+          "t",
+          "T"
+        ],
+        [
+          "k",
+          "K"
+        ],
+        [
+          "v",
+          "V"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které je malé písmeno k B?",
+      "options": [
+        "d",
+        "b",
+        "p"
+      ],
+      "answer": 1,
+      "explanation": "Malé b má bříško vpravo jako velké B."
+    },
+    {
+      "type": "choice",
+      "question": "Které je malé písmeno k E?",
+      "options": [
+        "a",
+        "c",
+        "e"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "question": "Které je velké písmeno k m?",
+      "options": [
+        "N",
+        "M",
+        "W"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "truefalse",
+      "question": "Velké písmeno se čte jinak než malé.",
+      "answer": false,
+      "explanation": "Velké i malé písmeno čteme stejně. Mění se jen tvar."
+    },
+    {
+      "type": "truefalse",
+      "question": "Slovo MÁMA a slovo máma čteme stejně.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Napiš malé písmeno k velkému M.",
+      "answers": [
+        "m"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Které slovo je napsané celé malými písmeny?",
+      "options": [
+        "PES",
+        "pes",
+        "Pes"
+      ],
+      "answer": 1
     }
   ],
   "verified": {
-    "by": "Ondřej Zralý",
-    "at": "2026-10-29"
+    "by": "David Hošek",
+    "at": "2026-11-04"
   }
 }
