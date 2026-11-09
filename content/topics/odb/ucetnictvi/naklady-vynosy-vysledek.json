@@ -1,0 +1,466 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "naklady-vynosy-vysledek",
+  "title": "Náklady, výnosy a výsledek hospodaření",
+  "emoji": "📊",
+  "explanations": [
+    {
+      "title": "Kolik firma vydělala",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Autoservis Bětka s.r.o. celý rok opravuje auta a prodává oleje. Na konci roku majitelka chce vědět jediné: vydělali jsme, nebo prodělali? A kolik?"
+        },
+        {
+          "type": "text",
+          "text": "Odpověď dávají **nákladové účty (třída 5)** a **výnosové účty (třída 6)**. Jejich rozdíl je **výsledek hospodaření** a přehledně ho ukazuje **výkaz zisku a ztráty**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Náklad",
+          "definition": "Peněžně vyjádřená spotřeba nebo úbytek hodnoty za účetní období, který snižuje zisk. Účtuje se na **MD** účtů třídy 5.",
+          "example": "Spotřeba náhradních dílů, mzdy mechaniků, odpisy zvedáku."
+        },
+        {
+          "type": "term",
+          "term": "Výnos",
+          "definition": "Peněžně vyjádřený přírůstek z činnosti firmy za účetní období, který zvyšuje zisk. Účtuje se na **D** účtů třídy 6.",
+          "example": "Tržby za opravy, tržby za prodané oleje."
+        },
+        {
+          "type": "term",
+          "term": "Výsledek hospodaření (VH)",
+          "definition": "Výnosy − náklady za účetní období. Kladný je **zisk**, záporný **ztráta**.",
+          "example": "Výnosy 3 000 000 − náklady 2 700 000 = zisk 300 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Nejdůležitější účty třídy 5 a 6"
+        },
+        {
+          "type": "table",
+          "head": [
+            "náklady (třída 5)",
+            "výnosy (třída 6)"
+          ],
+          "rows": [
+            [
+              "501 Spotřeba materiálu",
+              "601 Tržby za vlastní výrobky"
+            ],
+            [
+              "502 Spotřeba energie",
+              "602 Tržby z prodeje služeb"
+            ],
+            [
+              "504 Prodané zboží",
+              "604 Tržby za zboží"
+            ],
+            [
+              "511 Opravy a udržování",
+              "641 Tržby z prodeje dlouhodobého nehmotného a hmotného majetku"
+            ],
+            [
+              "512 Cestovné",
+              "648 Ostatní provozní výnosy"
+            ],
+            [
+              "518 Ostatní služby",
+              "662 Úroky"
+            ],
+            [
+              "521 Mzdové náklady",
+              ""
+            ],
+            [
+              "524 Zákonné sociální a zdravotní pojištění",
+              ""
+            ],
+            [
+              "551 Odpisy dlouhodobého nehmotného a hmotného majetku",
+              ""
+            ],
+            [
+              "562 Úroky, 568 Ostatní finanční náklady",
+              ""
+            ],
+            [
+              "591 Daň z příjmů – splatná",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "náklad",
+              "výnos",
+              "ani jedno – rozvahový případ"
+            ],
+            "items": [
+              {
+                "text": "spotřeba oleje při opravách",
+                "group": 0
+              },
+              {
+                "text": "faktura zákazníkovi za opravu",
+                "group": 1
+              },
+              {
+                "text": "výběr z banky do pokladny",
+                "group": 2
+              },
+              {
+                "text": "mzdy mechaniků",
+                "group": 0
+              },
+              {
+                "text": "prodej olejů zákazníkům",
+                "group": 1
+              },
+              {
+                "text": "úhrada faktury dodavateli",
+                "group": 2
+              },
+              {
+                "text": "odpis zvedáku",
+                "group": 0
+              },
+              {
+                "text": "úrok připsaný bankou na účet",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď případy. Pozor: platba dluhu není náklad – jen se vymění peníze za zánik závazku."
+        },
+        {
+          "type": "example",
+          "question": "Autoservis má za rok: tržby za opravy 1 800 000 Kč, tržby za zboží 600 000 Kč, prodané zboží 420 000 Kč, spotřeba materiálu 500 000 Kč, mzdové náklady 900 000 Kč, pojistné 304 200 Kč, odpisy 80 000 Kč. Spočítej VH.",
+          "answer": "Výnosy = 1 800 000 + 600 000 = 2 400 000 Kč. Náklady = 420 000 + 500 000 + 900 000 + 304 200 + 80 000 = 2 204 200 Kč. VH = 2 400 000 − 2 204 200 = **zisk 195 800 Kč** (před zdaněním)."
+        },
+        {
+          "type": "example",
+          "question": "Autoservis zaplatí z účtu fakturu za materiál 30 000 Kč, který už dříve převzal a zaúčtoval. Jak to ovlivní výsledek hospodaření?",
+          "answer": "**Nijak.** Úhrada faktury je **321/221** – klesne závazek a peníze v bance. Náklad vznikl dřív, při spotřebě materiálu (501). Platba sama náklad není."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Splátka úvěru 50 000 Kč je náklad, protože z účtu odešly peníze.",
+          "right": "Splátka jistiny je **231/221** (nebo 461/221) – jen ubude dluhu i peněz. Nákladem je pouze **úrok** (562).",
+          "why": "Náklad snižuje zisk, protože firma něco spotřebovala. Splátkou dluhu se nic nespotřebuje, jen se vrací půjčené peníze."
+        },
+        {
+          "type": "summary",
+          "text": "Náklady (třída 5) se účtují na MD, výnosy (třída 6) na D. Výsledek hospodaření = výnosy − náklady. Platby dluhů, výběry z banky a podobné rozvahové případy výsledek neovlivňují."
+        }
+      ]
+    },
+    {
+      "title": "Výkaz zisku a ztráty",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rozvaha je fotka firmy k jednomu dni. **Výkaz zisku a ztráty** (lidově výsledovka) je spíš video: ukáže, co se dělo za celý rok a odkud se vzal zisk nebo ztráta."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se jeho stavbu a postup, jak z něj krok za krokem dojít k výsledku po zdanění."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Náklady a výnosy",
+          "definition": "Připomenutí: **náklady** (třída 5) snižují zisk, **výnosy** (třída 6) ho zvyšují. Patří do období, se kterým souvisejí.",
+          "example": "521 Mzdové náklady, 602 Tržby z prodeje služeb."
+        },
+        {
+          "type": "term",
+          "term": "Výkaz zisku a ztráty",
+          "definition": "Součást účetní závěrky. Ukazuje náklady, výnosy a výsledek hospodaření **za celé účetní období**. Jeho podobu stanoví vyhláška 500/2002 Sb.",
+          "example": "Výkaz zisku a ztráty za rok 2026."
+        },
+        {
+          "type": "term",
+          "term": "Druhové členění",
+          "definition": "Náklady se ve výkazu řadí **podle druhu** (materiál, služby, mzdy, odpisy). Je to nejčastější podoba výkazu. Existuje i **účelové členění** (podle funkce – výroba, odbyt, správa).",
+          "example": "Řádek „Osobní náklady“ obsahuje mzdy a pojistné."
+        },
+        {
+          "type": "term",
+          "term": "Provozní a finanční výsledek",
+          "definition": "**Provozní VH** = výnosy a náklady z hlavní činnosti (tržby, materiál, mzdy, odpisy). **Finanční VH** = úroky, poplatky, kurzové rozdíly, cenné papíry.",
+          "example": "Úrok z úvěru snižuje finanční VH."
+        },
+        {
+          "type": "heading",
+          "text": "Stavba výkazu (zjednodušeně)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Tržby z prodeje výrobků a služeb (601, 602) a tržby za prodej zboží (604).",
+            "Odečti výkonovou spotřebu (504, 501, 502, 511, 518…), osobní náklady (521, 524…), odpisy (551) a ostatní provozní náklady; přičti ostatní provozní výnosy → **provozní výsledek hospodaření**.",
+            "Přičti finanční výnosy (např. 662) a odečti finanční náklady (562, 568) → **finanční výsledek hospodaření**.",
+            "Provozní + finanční VH = **výsledek hospodaření před zdaněním**.",
+            "Odečti daň z příjmů (591) → **výsledek hospodaření po zdanění** (za účetní období)."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "řádek výkazu (zjednodušeně)",
+            "Kč"
+          ],
+          "rows": [
+            [
+              "tržby za služby (602)",
+              "1 800 000"
+            ],
+            [
+              "tržby za zboží (604)",
+              "600 000"
+            ],
+            [
+              "výkonová spotřeba (504 + 501 + 518)",
+              "−1 000 000"
+            ],
+            [
+              "osobní náklady (521 + 524)",
+              "−1 072 000"
+            ],
+            [
+              "odpisy (551)",
+              "−80 000"
+            ],
+            [
+              "**provozní VH**",
+              "**248 000**"
+            ],
+            [
+              "úroky a poplatky (562 + 568)",
+              "−48 000"
+            ],
+            [
+              "**finanční VH**",
+              "**−48 000**"
+            ],
+            [
+              "**VH před zdaněním**",
+              "**200 000**"
+            ],
+            [
+              "daň z příjmů 21 % (2026, 591)",
+              "−42 000"
+            ],
+            [
+              "**VH po zdanění**",
+              "**158 000**"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Ověř tabulku: z čeho vznikl provozní VH 248 000 Kč a daň 42 000 Kč?",
+          "answer": "Provozní VH = 1 800 000 + 600 000 − 1 000 000 − 1 072 000 − 80 000 = **248 000 Kč**. VH před zdaněním = 248 000 − 48 000 = 200 000 Kč. Daň (základ daně je pro jednoduchost stejný) = 200 000 · 21 % = **42 000 Kč**. Po zdanění 158 000 Kč."
+        },
+        {
+          "type": "example",
+          "question": "Firma má provozní VH 120 000 Kč, finanční výnosy 5 000 Kč a finanční náklady 35 000 Kč. Jaký je VH před zdaněním?",
+          "answer": "Finanční VH = 5 000 − 35 000 = −30 000 Kč. VH před zdaněním = 120 000 + (−30 000) = **90 000 Kč**. Finanční oblast je ve ztrátě, ale celkově je firma v zisku."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Výkaz zisku a ztráty ukazuje stav k 31. 12., stejně jako rozvaha.",
+          "right": "Výkaz zisku a ztráty zachycuje náklady a výnosy **za celé období** (např. 1. 1. – 31. 12.). Stav k jednomu dni ukazuje rozvaha.",
+          "why": "Náklady a výnosy se během roku sčítají – jsou to toky. Majetek a zdroje jsou stavy k určitému dni."
+        },
+        {
+          "type": "summary",
+          "text": "Výkaz zisku a ztráty ukazuje náklady, výnosy a výsledek za celé období. Postupně vede od provozního a finančního VH k VH před zdaněním a po odečtení daně z příjmů k VH po zdanění. V druhovém členění jsou náklady seřazené podle druhu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Na kterou stranu se účtuje přírůstek nákladu?",
+      "options": [
+        "Má dáti",
+        "Dal",
+        "záleží na druhu nákladu",
+        "náklady se neúčtují na účty"
+      ],
+      "answer": 0,
+      "explanation": "Náklady (třída 5) se účtují na MD, výnosy (třída 6) na D."
+    },
+    {
+      "type": "match",
+      "question": "Spoj účet s názvem.",
+      "pairs": [
+        [
+          "501",
+          "Spotřeba materiálu"
+        ],
+        [
+          "504",
+          "Prodané zboží"
+        ],
+        [
+          "518",
+          "Ostatní služby"
+        ],
+        [
+          "602",
+          "Tržby z prodeje služeb"
+        ],
+        [
+          "604",
+          "Tržby za zboží"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Výnosy 4 500 000 Kč, náklady 4 120 000 Kč. Výsledek hospodaření v Kč =",
+      "answers": [
+        "380000",
+        "380 000"
+      ],
+      "explanation": "4 500 000 − 4 120 000 = 380 000 Kč zisk."
+    },
+    {
+      "type": "choice",
+      "question": "Který případ NEovlivní výsledek hospodaření?",
+      "options": [
+        "úhrada faktury dodavateli z účtu",
+        "spotřeba materiálu ve výrobě",
+        "vyúčtování mezd",
+        "faktura zákazníkovi za službu"
+      ],
+      "answer": 0,
+      "explanation": "Úhrada faktury (321/221) mění jen rozvahové účty."
+    },
+    {
+      "type": "choice",
+      "question": "Firma zaplatí fakturu za opravu služebního auta 8 000 Kč (není plátce DPH). Na který nákladový účet patří oprava?",
+      "options": [
+        "511 Opravy a udržování",
+        "501 Spotřeba materiálu",
+        "548 Ostatní provozní náklady",
+        "551 Odpisy"
+      ],
+      "answer": 0,
+      "explanation": "Opravy a udržování majetku se účtují na 511."
+    },
+    {
+      "type": "input",
+      "question": "Provozní VH je 300 000 Kč, finanční VH −40 000 Kč. VH před zdaněním v Kč =",
+      "answers": [
+        "260000",
+        "260 000"
+      ],
+      "explanation": "300 000 − 40 000 = 260 000 Kč."
+    },
+    {
+      "type": "input",
+      "question": "VH před zdaněním je 260 000 Kč, základ daně je stejný, sazba daně z příjmů PO 21 % (2026). VH po zdanění v Kč =",
+      "answers": [
+        "205400",
+        "205 400"
+      ],
+      "explanation": "Daň = 260 000 · 0,21 = 54 600 Kč. Po zdanění 260 000 − 54 600 = 205 400 Kč.",
+      "hints": [
+        "Nejdřív spočítej daň.",
+        "Daň odečti od VH před zdaněním."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Splátka jistiny bankovního úvěru je náklad.",
+      "answer": false,
+      "explanation": "Splátka jistiny jen snižuje dluh a peníze. Nákladem je úrok (562)."
+    },
+    {
+      "type": "choice",
+      "question": "Kam ve výkazu zisku a ztráty patří zaplacené úroky z úvěru?",
+      "options": [
+        "finanční výsledek hospodaření",
+        "provozní výsledek hospodaření",
+        "do rozvahy, ne do výkazu",
+        "mezi osobní náklady"
+      ],
+      "answer": 0,
+      "explanation": "Úroky (562) jsou finanční náklad."
+    },
+    {
+      "type": "input",
+      "question": "Tržby za zboží 900 000 Kč, prodané zboží 650 000 Kč. Obchodní marže v Kč =",
+      "answers": [
+        "250000",
+        "250 000"
+      ],
+      "explanation": "604 − 504 = 900 000 − 650 000 = 250 000 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Výkaz zisku a ztráty zachycuje náklady a výnosy za celé účetní období.",
+      "answer": true,
+      "explanation": "Rozvaha je k jednomu dni, výkaz zisku a ztráty za období."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď mezisoučty výkazu zisku a ztráty.",
+      "items": [
+        "provozní výsledek hospodaření",
+        "finanční výsledek hospodaření",
+        "výsledek hospodaření před zdaněním",
+        "výsledek hospodaření po zdanění"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co znamená druhové členění výkazu zisku a ztráty?",
+      "options": [
+        "náklady jsou seřazené podle druhu (materiál, služby, mzdy, odpisy)",
+        "náklady jsou seřazené podle oddělení firmy",
+        "výnosy jsou seřazené podle zákazníků",
+        "výkaz obsahuje jen druhy majetku"
+      ],
+      "answer": 0,
+      "explanation": "Druhové členění = podle druhu nákladu. Účelové členění = podle funkce (výroba, odbyt, správa)."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi rozvahou a výkazem zisku a ztráty.",
+      "answer": "Rozvaha ukazuje stav majetku (aktiv) a jeho zdrojů (pasiv) k jednomu dni. Výkaz zisku a ztráty ukazuje náklady a výnosy za celé účetní období a výsledek hospodaření, který z nich vyplývá."
+    },
+    {
+      "type": "open",
+      "question": "Uveď tři případy, které jsou náklady, a tři, při kterých odcházejí peníze nebo vzniká dluh, ale náklad to není.",
+      "answer": "Náklady: spotřeba materiálu (501), mzdy (521), odpisy (551). Nejsou náklady: úhrada faktury dodavateli (321/221), splátka jistiny úvěru (231/221), nákup materiálu na sklad způsobem A (111/321) – náklad vznikne až výdejem."
+    }
+  ]
+}

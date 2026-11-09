@@ -1,0 +1,405 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "vlastni-kapital",
+  "title": "Vlastní kapitál",
+  "emoji": "🏛️",
+  "explanations": [
+    {
+      "title": "Peníze majitelů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Eva a Marek zakládají e-shop Zelený čaj s.r.o. Každý vloží 100 000 Kč. Za rok firma vydělá a společníci řeší, jestli si zisk rozdělí, nebo ho nechají ve firmě."
+        },
+        {
+          "type": "text",
+          "text": "Všechno, co do firmy vložili majitelé, a zisk, který ve firmě nechali, tvoří **vlastní kapitál**. Účtuje se ve **třídě 4**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pasiva",
+          "definition": "Připomenutí: pasiva jsou zdroje majetku. Dělí se na **vlastní kapitál** (patří majitelům) a **cizí zdroje** (dluhy). Pasivní účty mají přírůstky na straně D.",
+          "example": "Vklad společníka, bankovní úvěr."
+        },
+        {
+          "type": "term",
+          "term": "Základní kapitál (411)",
+          "definition": "Součet vkladů společníků zapsaný v obchodním rejstříku. Podle zákona o obchodních korporacích je u s.r.o. minimální vklad **1 Kč**, u a.s. musí být základní kapitál aspoň **2 000 000 Kč** (nebo 80 000 eur).",
+          "example": "Eva 100 000 + Marek 100 000 = základní kapitál 200 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "353 Pohledávky za upsaný základní kapitál",
+          "definition": "Pohledávka firmy za společníky: zavázali se vklad vložit, ale ještě ho nesplatili.",
+          "example": "Marek se zavázal ke vkladu, peníze pošle až za týden."
+        },
+        {
+          "type": "term",
+          "term": "Kapitálové fondy a fondy ze zisku",
+          "definition": "Další části vlastního kapitálu. **413 Ostatní kapitálové fondy** – např. dobrovolný příplatek společníka mimo základní kapitál. **421 Rezervní fond** a **423 Statutární a ostatní fondy** – tvoří se ze zisku, pokud to určí společenská smlouva nebo stanovy.",
+          "example": "Eva přidá 50 000 Kč jako příplatek mimo základní kapitál → 413."
+        },
+        {
+          "type": "heading",
+          "text": "Založení firmy"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Společníci upíšou vklady (zaváží se je vložit): **353/411**.",
+            "Společníci vklady splatí na bankovní účet: **221/353**.",
+            "Nepeněžitý vklad (např. auto) se zaúčtuje na příslušný majetek: **022/353**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Eva a Marek upíšou každý 100 000 Kč. Eva splatí celý vklad na účet, Marek vloží auto oceněné znalcem na 100 000 Kč. Zaúčtuj.",
+          "answer": "Upsání: **353/411** 200 000. Evin vklad: **221/353** 100 000. Markův nepeněžitý vklad: **022/353** 100 000. Účet 353 má zůstatek 0, základní kapitál je 200 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Co patří do vlastního kapitálu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "základní kapitál (411),",
+            "kapitálové fondy (413 Ostatní kapitálové fondy),",
+            "fondy ze zisku (421, 423),",
+            "výsledek hospodaření minulých let: **428 Nerozdělený zisk minulých let**, **429 Neuhrazená ztráta minulých let**,",
+            "výsledek hospodaření běžného účetního období a **431 Výsledek hospodaření ve schvalovacím řízení**."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vlastní kapitál",
+              "cizí zdroje"
+            ],
+            "items": [
+              {
+                "text": "základní kapitál",
+                "group": 0
+              },
+              {
+                "text": "bankovní úvěr",
+                "group": 1
+              },
+              {
+                "text": "nerozdělený zisk minulých let",
+                "group": 0
+              },
+              {
+                "text": "závazky k dodavatelům",
+                "group": 1
+              },
+              {
+                "text": "příplatek společníka mimo základní kapitál",
+                "group": 0
+              },
+              {
+                "text": "nevyplacené mzdy",
+                "group": 1
+              },
+              {
+                "text": "rezervní fond",
+                "group": 0
+              },
+              {
+                "text": "neodvedená DPH",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď položky. Ptej se: patří to majitelům, nebo to firma musí někomu vrátit?"
+        },
+        {
+          "type": "example",
+          "question": "Firma má základní kapitál 200 000 Kč, ostatní kapitálové fondy 50 000 Kč, nerozdělený zisk minulých let 80 000 Kč a neuhrazenou ztrátu minulých let 0 Kč. Letos vydělala 120 000 Kč po zdanění. Kolik je vlastní kapitál?",
+          "answer": "200 000 + 50 000 + 80 000 + 120 000 = **450 000 Kč**. Neuhrazená ztráta by vlastní kapitál snižovala."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Základní kapitál 200 000 Kč znamená, že firma má na účtu 200 000 Kč.",
+          "right": "Základní kapitál je **zdroj** (pasivum). Říká, kolik majitelé vložili. Peníze mohly být dávno utraceny za zboží nebo stroje.",
+          "why": "Pasiva ukazují, odkud majetek je, ne jakou má podobu. Podobu majetku ukazují aktiva."
+        },
+        {
+          "type": "summary",
+          "text": "Vlastní kapitál tvoří základní kapitál (411), kapitálové fondy (413), fondy ze zisku (421, 423) a výsledky hospodaření (428, 429, 431, běžné období). Vklady se upisují 353/411 a splácejí 221/353."
+        }
+      ]
+    },
+    {
+      "title": "Co se ziskem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "E-shop Zelený čaj s.r.o. skončil rok se ziskem. Z něj nejdřív zaplatí daň z příjmů. Co zbyde, si společníci můžou rozdělit, dát do fondu, nebo nechat ve firmě na další roky."
+        },
+        {
+          "type": "text",
+          "text": "Uvidíš, jak se zisk zdaní, kdo rozhodne o jeho rozdělení a jak se rozdělení zaúčtuje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Výsledek hospodaření",
+          "definition": "Rozdíl výnosů a nákladů za účetní období. Kladný = **zisk**, záporný = **ztráta**.",
+          "example": "Výnosy 2 000 000 − náklady 1 600 000 = zisk 400 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Daň z příjmů právnických osob",
+          "definition": "Daň ze zisku firmy (přesněji ze základu daně). Sazba pro rok **2026** je **21 %**. Účtuje se **591 Daň z příjmů – splatná / 341 Daň z příjmů**.",
+          "example": "Základ daně 400 000 Kč → daň 84 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Valná hromada",
+          "definition": "Nejvyšší orgán společnosti, tvoří ho společníci (u a.s. akcionáři). Schvaluje účetní závěrku a rozhoduje o rozdělení zisku nebo úhradě ztráty.",
+          "example": "Eva a Marek se sejdou v květnu a schválí rozdělení zisku."
+        },
+        {
+          "type": "term",
+          "term": "431 Výsledek hospodaření ve schvalovacím řízení",
+          "definition": "Účet, na kterém je loňský výsledek od začátku nového roku do rozhodnutí valné hromady.",
+          "example": "Loňský zisk 316 000 Kč čeká na 431 do května."
+        },
+        {
+          "type": "term",
+          "term": "Podíl na zisku",
+          "definition": "Část zisku vyplacená společníkům. Do výplaty je to závazek firmy vůči nim (**364 Závazky ke společníkům**).",
+          "example": "Každý společník dostane 100 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Od zisku k rozdělení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Na konci roku se vypočte a zaúčtuje daň z příjmů: **591/341**.",
+            "Zisk po zdanění se objeví v rozvaze jako výsledek hospodaření běžného účetního období.",
+            "Na začátku nového roku se převede na **431** (při otevření účtů 701/431).",
+            "Valná hromada schválí účetní závěrku a rozhodne o rozdělení.",
+            "Rozdělení: do fondu **431/421** nebo **431/423**, podíly společníkům **431/364**, ponechání ve firmě **431/428**.",
+            "Výplata podílů: **364/221** (firma předtím srazí a odvede srážkovou daň)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Výnosy 2 000 000 Kč, náklady 1 600 000 Kč (daň z příjmů v nich zatím není). Základ daně je pro jednoduchost stejný jako zisk před zdaněním. Spočítej daň (sazba 2026) a zisk po zdanění.",
+          "answer": "Zisk před zdaněním = 2 000 000 − 1 600 000 = 400 000 Kč. Daň = 400 000 · 21 % = **84 000 Kč**, zaúčtuje se 591/341. Zisk po zdanění = 400 000 − 84 000 = **316 000 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Valná hromada rozdělí zisk 316 000 Kč: 16 000 Kč do statutárního fondu, 200 000 Kč na podíly společníkům, zbytek nechá ve firmě. Zaúčtuj.",
+          "answer": "Fond: **431/423** 16 000. Podíly: **431/364** 200 000. Nerozdělený zisk: **431/428** 316 000 − 16 000 − 200 000 = **100 000 Kč**. Účet 431 má zůstatek 0."
+        },
+        {
+          "type": "heading",
+          "text": "Ztráta"
+        },
+        {
+          "type": "text",
+          "text": "Ztráta se po schválení převede na **429 Neuhrazená ztráta minulých let** (**429/431**). Později se může uhradit ze zisku dalších let, z fondů nebo příplatkem společníků. Ztráta snižuje vlastní kapitál."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zisk patří společníkům, takže si ho můžou vybrat hned 31. 12.",
+          "right": "O rozdělení zisku rozhoduje **valná hromada** až po schválení účetní závěrky. Do té doby je zisk na 431.",
+          "why": "Nejdřív se musí ověřit, že účetnictví je správné a že výplata neohrozí firmu (zákon o obchodních korporacích obsahuje test insolvence)."
+        },
+        {
+          "type": "summary",
+          "text": "Ze zisku se nejdřív zaplatí daň z příjmů (21 % v roce 2026, 591/341). Zisk po zdanění čeká na 431, dokud valná hromada nerozhodne: fondy (421, 423), podíly (431/364), nerozdělený zisk (431/428). Ztráta jde na 429."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Společníci upíšou vklady do základního kapitálu. Předkontace:",
+      "options": [
+        "353/411",
+        "411/353",
+        "221/411",
+        "411/221"
+      ],
+      "answer": 0,
+      "explanation": "Vznikne pohledávka za společníky (353) a základní kapitál (411)."
+    },
+    {
+      "type": "choice",
+      "question": "Společník splatí peněžitý vklad na bankovní účet. Předkontace:",
+      "options": [
+        "221/353",
+        "353/221",
+        "221/411",
+        "411/221"
+      ],
+      "answer": 0,
+      "explanation": "Peníze v bance rostou, pohledávka za upsaný základní kapitál zaniká."
+    },
+    {
+      "type": "input",
+      "question": "Jaká je minimální výše vkladu jednoho společníka do s.r.o. v Kč? (číslo)",
+      "answers": [
+        "1",
+        "jedna"
+      ],
+      "explanation": "Podle zákona o obchodních korporacích stačí vklad 1 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Zisk před zdaněním je 600 000 Kč a základ daně je stejný. Sazba daně z příjmů PO pro rok 2026 je 21 %. Daň v Kč =",
+      "answers": [
+        "126000",
+        "126 000"
+      ],
+      "explanation": "600 000 · 0,21 = 126 000 Kč.",
+      "hints": [
+        "Vynásob základ daně sazbou."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Splatná daň z příjmů za rok se zaúčtuje:",
+      "options": [
+        "591/341",
+        "341/591",
+        "591/342",
+        "538/341"
+      ],
+      "answer": 0,
+      "explanation": "Náklad 591 Daň z příjmů – splatná, závazek 341 Daň z příjmů."
+    },
+    {
+      "type": "choice",
+      "question": "Valná hromada rozhodne vyplatit společníkům podíly na zisku. Předkontace:",
+      "options": [
+        "431/364",
+        "364/431",
+        "431/221",
+        "428/364"
+      ],
+      "answer": 0,
+      "explanation": "Výsledek ve schvalovacím řízení klesá, vzniká závazek ke společníkům (364)."
+    },
+    {
+      "type": "input",
+      "question": "Zisk 500 000 Kč: 50 000 Kč do fondu, 300 000 Kč na podíly, zbytek nerozdělený zisk. Kolik Kč půjde na 428?",
+      "answers": [
+        "150000",
+        "150 000"
+      ],
+      "explanation": "500 000 − 50 000 − 300 000 = 150 000 Kč."
+    },
+    {
+      "type": "truefalse",
+      "question": "Ztráta minulých let snižuje vlastní kapitál.",
+      "answer": true,
+      "explanation": "Neuhrazená ztráta (429) se ve vlastním kapitálu odečítá."
+    },
+    {
+      "type": "match",
+      "question": "Spoj účet s názvem.",
+      "pairs": [
+        [
+          "411",
+          "Základní kapitál"
+        ],
+        [
+          "413",
+          "Ostatní kapitálové fondy"
+        ],
+        [
+          "428",
+          "Nerozdělený zisk minulých let"
+        ],
+        [
+          "429",
+          "Neuhrazená ztráta minulých let"
+        ],
+        [
+          "431",
+          "Výsledek hospodaření ve schvalovacím řízení"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo v s.r.o. rozhoduje o rozdělení zisku?",
+      "options": [
+        "valná hromada",
+        "hlavní účetní",
+        "finanční úřad",
+        "jednatel sám, bez společníků"
+      ],
+      "answer": 0,
+      "explanation": "Valná hromada schvaluje účetní závěrku a rozdělení zisku."
+    },
+    {
+      "type": "truefalse",
+      "question": "Základní kapitál 500 000 Kč znamená, že firma má vždy 500 000 Kč na bankovním účtu.",
+      "answer": false,
+      "explanation": "Základní kapitál je zdroj (pasivum). Peníze mohou být použity na majetek."
+    },
+    {
+      "type": "input",
+      "question": "Základní kapitál 300 000 Kč, kapitálové fondy 40 000 Kč, neuhrazená ztráta minulých let 60 000 Kč, zisk běžného období 90 000 Kč. Vlastní kapitál v Kč =",
+      "answers": [
+        "370000",
+        "370 000"
+      ],
+      "explanation": "300 000 + 40 000 − 60 000 + 90 000 = 370 000 Kč.",
+      "hints": [
+        "Ztráta se odečítá, zisk přičítá."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, co se děje se ziskem.",
+      "items": [
+        "zaúčtování daně z příjmů 591/341",
+        "převod na 431 v novém roce",
+        "valná hromada schválí rozdělení",
+        "zaúčtování rozdělení (431/364, 431/428)",
+        "výplata podílů 364/221"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Z čeho se skládá vlastní kapitál?",
+      "answer": "Ze základního kapitálu (vklady společníků), kapitálových fondů (např. příplatky mimo základní kapitál), fondů ze zisku, výsledku hospodaření minulých let (nerozdělený zisk, neuhrazená ztráta) a výsledku hospodaření běžného období."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se zaúčtuje založení s.r.o. s peněžitým a nepeněžitým vkladem.",
+      "answer": "Upsání vkladů 353/411. Peněžitý vklad splacený na účet 221/353. Nepeněžitý vklad (např. auto) se zaúčtuje na účet příslušného majetku, např. 022/353. Po splacení je účet 353 nulový."
+    }
+  ]
+}

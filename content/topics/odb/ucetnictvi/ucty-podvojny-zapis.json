@@ -1,0 +1,472 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ucty-podvojny-zapis",
+  "title": "Účty, podvojný zápis a účtová osnova",
+  "emoji": "📒",
+  "explanations": [
+    {
+      "title": "Účet jako šuplík",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rozvaha je přehled k jednomu dni. Kdybychom ji přepisovali po každém nákupu, nedělali bychom nic jiného. Proto má každá položka rozvahy svůj **účet** – šuplík, do kterého se během roku zapisuje, co přibylo a co ubylo."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se, na kterou stranu účtu se zapisuje, a proč se každý případ zapisuje **dvakrát**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Účet",
+          "definition": "Záznam pro jednu položku (např. pokladnu). Má dvě strany: levou **Má dáti (MD)** a pravou **Dal (D)**. Kreslí se jako písmeno T.",
+          "example": "Účet 211 Pokladna."
+        },
+        {
+          "type": "term",
+          "term": "Počáteční stav (PS)",
+          "definition": "Kolik na účtu je na začátku účetního období. Převezme se z rozvahy.",
+          "example": "Pokladna PS 10 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Obrat",
+          "definition": "Součet všech zápisů na jedné straně účtu za období. Má obrat MD a obrat D.",
+          "example": "Do pokladny přišlo 25 000 Kč → obrat MD 25 000."
+        },
+        {
+          "type": "term",
+          "term": "Konečný stav (KS)",
+          "definition": "Kolik na účtu zůstane na konci období. Rozdíl stran, říká se mu také **zůstatek**.",
+          "example": "PS 10 000 + příjmy 25 000 − výdaje 20 000 = KS 15 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Aktivní a pasivní účty"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "MD (levá)",
+            "D (pravá)"
+          ],
+          "rows": [
+            [
+              "**aktivní účet** (majetek)",
+              "PS + přírůstky",
+              "úbytky + KS"
+            ],
+            [
+              "**pasivní účet** (zdroje)",
+              "úbytky + KS",
+              "PS + přírůstky"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pomůcka: aktiva jsou v rozvaze **vlevo**, proto aktivní účet začíná a roste **vlevo (MD)**. Pasiva jsou vpravo, pasivní účet začíná a roste **vpravo (D)**."
+        },
+        {
+          "type": "term",
+          "term": "Podvojnost",
+          "definition": "Každý účetní případ se zapíše na **dva účty** stejnou částkou: na jednom na stranu MD, na druhém na stranu D.",
+          "example": "Výběr 5 000 Kč z banky do pokladny: 211 Pokladna MD, 221 Bankovní účty D."
+        },
+        {
+          "type": "term",
+          "term": "Souvztažnost (předkontace)",
+          "definition": "Určení, který účet bude na MD a který na D. Zapisuje se jako dvojice čísel **MD/D**.",
+          "example": "211/221 = Pokladna MD, Bankovní účty D."
+        },
+        {
+          "type": "example",
+          "question": "Pokladna má PS 8 000 Kč. Během měsíce: výběr z banky 20 000 Kč, nákup kancelářských potřeb 3 000 Kč, výplata zálohy na cestu 5 000 Kč. Jaký je KS pokladny?",
+          "answer": "Pokladna je aktivní účet. MD: PS 8 000 + přírůstek 20 000 = 28 000. D: úbytky 3 000 + 5 000 = 8 000. KS = 28 000 − 8 000 = **20 000 Kč** (zapíše se na stranu D, aby se strany vyrovnaly)."
+        },
+        {
+          "type": "example",
+          "question": "Účet 321 Dodavatelé má PS 40 000 Kč. Přijdou faktury za 25 000 Kč a firma zaplatí faktury za 50 000 Kč. Jaký je KS?",
+          "answer": "Dodavatelé jsou pasivní účet (závazek). D: PS 40 000 + nové faktury 25 000 = 65 000. MD: úhrady 50 000. KS = 65 000 − 50 000 = **15 000 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Má dáti znamená příjem peněz, Dal znamená výdej.",
+          "right": "MD a D jsou jen **levá a pravá strana účtu**. Co na nich znamená přírůstek, záleží na typu účtu.",
+          "why": "U aktivního účtu (pokladna) je přírůstek na MD, u pasivního (úvěr) je přírůstek na D. Názvy stran jsou historické, neber je doslova."
+        },
+        {
+          "type": "summary",
+          "text": "Účet má stranu MD (vlevo) a D (vpravo). Aktivní účty mají PS a přírůstky na MD, pasivní na D. Každý případ se zapíše podvojně: stejná částka na MD jednoho účtu a na D druhého."
+        }
+      ]
+    },
+    {
+      "title": "Osnova a knihy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V knihovně má každá kniha své číslo a své místo, jinak by ji nikdo nenašel. V účetnictví mají účty také čísla podle společného seznamu. Účetní z Brna i z Ostravy proto ví, že **221** jsou peníze v bance."
+        },
+        {
+          "type": "text",
+          "text": "Poznáš směrnou účtovou osnovu, rozdíl mezi rozvahovými a výsledkovými účty a knihy, do kterých se účtuje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Účet a strany MD/D",
+          "definition": "Připomenutí: účet je záznam jedné položky. Levá strana je **Má dáti (MD)**, pravá **Dal (D)**. Každý případ jde na MD jednoho účtu a D druhého.",
+          "example": "211/221 = Pokladna MD, Bankovní účty D."
+        },
+        {
+          "type": "term",
+          "term": "Směrná účtová osnova",
+          "definition": "Seznam účtových tříd a skupin, který pro podnikatele vydává Ministerstvo financí. Je stejná pro všechny.",
+          "example": "Třída 2 = finanční účty, skupina 22 = účty v bankách."
+        },
+        {
+          "type": "term",
+          "term": "Účtový rozvrh",
+          "definition": "Seznam konkrétních účtů, který si podle směrné osnovy sestaví každá firma sama.",
+          "example": "Firma si zřídí účty 211, 221, 311, 321, 501…"
+        },
+        {
+          "type": "term",
+          "term": "Syntetický a analytický účet",
+          "definition": "**Syntetický** účet má tři číslice podle osnovy. **Analytický** účet ho rozepisuje podrobněji, za tečkou.",
+          "example": "221 Bankovní účty → 221.100 účet u ČSOB, 221.200 účet u KB."
+        },
+        {
+          "type": "heading",
+          "text": "Účtové třídy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "třída",
+            "obsah",
+            "příklady účtů"
+          ],
+          "rows": [
+            [
+              "0",
+              "dlouhodobý majetek",
+              "013 Software, 022 Hmotné movité věci, 082 Oprávky"
+            ],
+            [
+              "1",
+              "zásoby",
+              "112 Materiál na skladě, 132 Zboží na skladě"
+            ],
+            [
+              "2",
+              "krátkodobý finanční majetek a krátkodobé finanční zdroje",
+              "211 Pokladna, 221 Bankovní účty, 231 Krátkodobé bankovní úvěry"
+            ],
+            [
+              "3",
+              "zúčtovací vztahy",
+              "311 Odběratelé, 321 Dodavatelé, 331 Zaměstnanci, 343 DPH"
+            ],
+            [
+              "4",
+              "kapitálové účty a dlouhodobé závazky",
+              "411 Základní kapitál, 431 Výsledek hospodaření ve schvalovacím řízení"
+            ],
+            [
+              "5",
+              "náklady",
+              "501 Spotřeba materiálu, 518 Ostatní služby, 521 Mzdové náklady"
+            ],
+            [
+              "6",
+              "výnosy",
+              "602 Tržby z prodeje služeb, 604 Tržby za zboží"
+            ],
+            [
+              "7",
+              "závěrkové a podrozvahové účty",
+              "701 Počáteční účet rozvažný, 702 Konečný účet rozvažný, 710 Účet zisků a ztrát"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Rozvahové účty",
+          "definition": "Účty tříd **0–4**. Sledují majetek a zdroje, mají počáteční a konečný stav, který se objeví v rozvaze.",
+          "example": "211 Pokladna, 321 Dodavatelé."
+        },
+        {
+          "type": "term",
+          "term": "Výsledkové účty",
+          "definition": "Účty tříd **5 (náklady)** a **6 (výnosy)**. Nemají počáteční stav, každý rok začínají od nuly. Z nich vychází výsledek hospodaření.",
+          "example": "501 Spotřeba materiálu, 602 Tržby z prodeje služeb."
+        },
+        {
+          "type": "heading",
+          "text": "Účetní knihy"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Deník** – zápisy seřazené **podle data** (chronologicky). Odpovídá na otázku „co se stalo kdy“.",
+            "**Hlavní kniha** – zápisy seřazené **podle účtů** (systematicky). Ukáže stav každého syntetického účtu.",
+            "**Knihy analytických účtů** – podrobnosti k syntetickým účtům (např. každý odběratel zvlášť).",
+            "**Kniha podrozvahových účtů** – věci, které nejsou v rozvaze (např. cizí majetek v pronájmu)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "211",
+                "back": "Pokladna"
+              },
+              {
+                "front": "221",
+                "back": "Bankovní účty"
+              },
+              {
+                "front": "311",
+                "back": "Odběratelé"
+              },
+              {
+                "front": "321",
+                "back": "Dodavatelé"
+              },
+              {
+                "front": "501",
+                "back": "Spotřeba materiálu"
+              },
+              {
+                "front": "602",
+                "back": "Tržby z prodeje služeb"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky až potom, co si název účtu zkusíš říct sám. Čísla nejčastějších účtů je potřeba znát zpaměti."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Přečti případ a najdi dvě věci, které se mění.",
+            "Ke každé najdi účet podle osnovy.",
+            "Urči, zda je účet aktivní, pasivní, nákladový, nebo výnosový.",
+            "Přírůstek aktiva nebo nákladu jde na MD, přírůstek pasiva nebo výnosu na D (úbytky obráceně).",
+            "Zapiš předkontaci MD/D a částku."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma vybere z bankovního účtu 10 000 Kč do pokladny. Zaúčtuj.",
+          "answer": "Pokladna (aktivum) roste → **MD 211**. Bankovní účet (aktivum) klesá → **D 221**. Předkontace **211/221**, 10 000 Kč. (V praxi se výběr často účtuje přes 261 Peníze na cestě, viz finanční účty.)"
+        },
+        {
+          "type": "example",
+          "question": "Firma zaplatí z bankovního účtu dodavateli fakturu 18 000 Kč. Zaúčtuj.",
+          "answer": "Závazek k dodavateli (pasivum) klesá → úbytek pasiva na **MD 321**. Peníze v bance (aktivum) klesají → **D 221**. Předkontace **321/221**, 18 000 Kč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Účet 501 Spotřeba materiálu má počáteční stav převzatý z loňska.",
+          "right": "Nákladové (5) a výnosové (6) účty **nemají počáteční stav**. Na konci roku se uzavřou na účet 710 a v novém roce začínají od nuly.",
+          "why": "Náklady a výnosy měří, co se stalo za jedno období. Letošní zisk se nemá míchat s loňským."
+        },
+        {
+          "type": "summary",
+          "text": "Účty se číslují podle směrné účtové osnovy (třídy 0–7), firma si z ní sestaví účtový rozvrh. Třídy 0–4 jsou rozvahové, 5 a 6 výsledkové. Deník řadí zápisy podle data, hlavní kniha podle účtů."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Na které straně má aktivní účet počáteční stav a přírůstky?",
+      "options": [
+        "Má dáti",
+        "Dal",
+        "počáteční stav na MD, přírůstky na D",
+        "záleží na částce"
+      ],
+      "answer": 0,
+      "explanation": "Aktiva jsou v rozvaze vlevo, proto aktivní účet začíná a roste na straně MD."
+    },
+    {
+      "type": "choice",
+      "question": "Firma vybere 6 000 Kč z bankovního účtu do pokladny (bez účtu peníze na cestě). Předkontace:",
+      "options": [
+        "211/221",
+        "221/211",
+        "211/311",
+        "321/221"
+      ],
+      "answer": 0,
+      "explanation": "Pokladna roste (MD 211), bankovní účet klesá (D 221)."
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo účtu s názvem.",
+      "pairs": [
+        [
+          "211",
+          "Pokladna"
+        ],
+        [
+          "221",
+          "Bankovní účty"
+        ],
+        [
+          "311",
+          "Odběratelé"
+        ],
+        [
+          "321",
+          "Dodavatelé"
+        ],
+        [
+          "521",
+          "Mzdové náklady"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Účet 221 Bankovní účty: PS 50 000 Kč, obrat MD 120 000 Kč, obrat D 95 000 Kč. KS v Kč =",
+      "answers": [
+        "75000",
+        "75 000"
+      ],
+      "explanation": "Aktivní účet: 50 000 + 120 000 − 95 000 = 75 000 Kč.",
+      "hints": [
+        "Je bankovní účet aktivní, nebo pasivní? Na které straně má PS?"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Účet 321 Dodavatelé: PS 30 000 Kč, nové faktury 45 000 Kč, úhrady 60 000 Kč. KS v Kč =",
+      "answers": [
+        "15000",
+        "15 000"
+      ],
+      "explanation": "Pasivní účet: PS a přírůstky na D (30 000 + 45 000 = 75 000), úhrady na MD (60 000). KS = 15 000 Kč.",
+      "hints": [
+        "Faktura od dodavatele závazek zvyšuje, úhrada ho snižuje."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Účty třídy 5 a 6 nemají počáteční stav.",
+      "answer": true,
+      "explanation": "Nákladové a výnosové účty začínají každé období od nuly."
+    },
+    {
+      "type": "choice",
+      "question": "Která účtová třída obsahuje zúčtovací vztahy (pohledávky a závazky)?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "Třída 3: odběratelé, dodavatelé, zaměstnanci, daně…"
+    },
+    {
+      "type": "choice",
+      "question": "Která kniha řadí účetní zápisy podle data?",
+      "options": [
+        "deník",
+        "hlavní kniha",
+        "kniha analytických účtů",
+        "kniha podrozvahových účtů"
+      ],
+      "answer": 0,
+      "explanation": "Deník je chronologický, hlavní kniha systematická (podle účtů)."
+    },
+    {
+      "type": "choice",
+      "question": "Firma zaplatí dodavateli fakturu 12 000 Kč z bankovního účtu. Předkontace:",
+      "options": [
+        "321/221",
+        "221/321",
+        "311/221",
+        "221/311"
+      ],
+      "answer": 0,
+      "explanation": "Závazek klesá (MD 321), peníze v bance klesají (D 221).",
+      "hints": [
+        "Úbytek pasiva se zapisuje na opačnou stranu, než je jeho počáteční stav."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Účtový rozvrh je pro všechny firmy v ČR naprosto stejný.",
+      "answer": false,
+      "explanation": "Stejná je směrná účtová osnova. Účtový rozvrh si podle ní sestaví každá firma sama."
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje levá strana účtu? (dvě slova)",
+      "answers": [
+        "má dáti",
+        "ma dati"
+      ],
+      "explanation": "Levá strana = Má dáti (MD), pravá = Dal (D)."
+    },
+    {
+      "type": "choice",
+      "question": "Co je účet 221.100?",
+      "options": [
+        "analytický účet k účtu 221 Bankovní účty",
+        "syntetický účet z třídy 1",
+        "účtová třída",
+        "podrozvahový účet"
+      ],
+      "answer": 0,
+      "explanation": "Číslo za tečkou označuje analytický účet – podrobnější rozpis syntetického účtu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup zaúčtování případu.",
+      "items": [
+        "najdi dvě věci, které se mění",
+        "přiřaď jim účty podle osnovy",
+        "urči druh účtů a směr změny",
+        "zapiš předkontaci MD/D a částku"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co je podvojnost a souvztažnost, a uveď příklad.",
+      "answer": "Podvojnost znamená, že se každý případ zapíše na dva účty stejnou částkou, na MD jednoho a D druhého. Souvztažnost je určení, které dva účty to jsou. Např. výběr z banky do pokladny: 211/221."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi rozvahovými a výsledkovými účty?",
+      "answer": "Rozvahové účty (třídy 0–4) sledují majetek a zdroje, mají počáteční a konečný stav a jejich zůstatky jdou do rozvahy. Výsledkové účty (5 náklady, 6 výnosy) nemají počáteční stav a slouží ke zjištění výsledku hospodaření za období."
+    }
+  ]
+}

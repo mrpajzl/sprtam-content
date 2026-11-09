@@ -1,0 +1,395 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "danova-evidence",
+  "title": "Daňová evidence a paušální výdaje",
+  "emoji": "🧮",
+  "explanations": [
+    {
+      "title": "Kniha příjmů a výdajů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Instalatér Pavel podniká na živnostenský list. Není v obchodním rejstříku a má obrat kolem milionu korun. Účetnictví vést nemusí – stačí mu jednodušší **daňová evidence**."
+        },
+        {
+          "type": "text",
+          "text": "Uvidíš, co se v ní zapisuje, čím se liší od účetnictví a jak se z ní spočítá základ daně z příjmů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "OSVČ",
+          "definition": "Osoba samostatně výdělečně činná – fyzická osoba, která podniká (např. na živnost) nebo vykonává svobodné povolání.",
+          "example": "Instalatér, kadeřnice, tlumočnice."
+        },
+        {
+          "type": "term",
+          "term": "Daňová evidence",
+          "definition": "Evidence podle **§ 7b zákona o daních z příjmů**. Obsahuje **příjmy a výdaje** v členění potřebném pro výpočet základu daně a údaje o **majetku a dluzích**. Vede ji OSVČ, která nemusí účtovat.",
+          "example": "Pavel zapisuje každou platbu za zakázku i za materiál."
+        },
+        {
+          "type": "term",
+          "term": "Příjem",
+          "definition": "Peníze, které podnikateli **skutečně přišly** (v hotovosti nebo na účet) za podnikání.",
+          "example": "Zákazník zaplatí 8 000 Kč za opravu."
+        },
+        {
+          "type": "term",
+          "term": "Výdaj",
+          "definition": "Peníze, které podnikatel **skutečně zaplatil**, aby příjmy dosáhl, zajistil a udržel (daňově uznatelný výdaj).",
+          "example": "Nákup trubek 2 500 Kč, nájem dílny 6 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Základ daně",
+          "definition": "Částka, ze které se počítá daň: **příjmy − výdaje**.",
+          "example": "900 000 − 550 000 = 350 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se daňová evidence vede"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ke každé platbě musí být doklad (faktura, účtenka, výpis).",
+            "Příjmy a výdaje se zapisují v okamžiku **zaplacení** – ne vystavení faktury.",
+            "U každého zápisu se rozliší, zda je výdaj daňově uznatelný (např. soukromý nákup není).",
+            "Vede se přehled majetku a dluhů: pohledávky, závazky, zásoby, peníze, dlouhodobý majetek.",
+            "Dlouhodobý majetek (nad 80 000 Kč) se do výdajů nedá najednou, ale formou **daňových odpisů**.",
+            "Na konci roku: příjmy − výdaje = základ daně → daňové přiznání."
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "účetnictví",
+            "daňová evidence"
+          ],
+          "rows": [
+            [
+              "co sleduje",
+              "náklady a výnosy (kdy vznikly)",
+              "příjmy a výdaje (kdy se zaplatilo)"
+            ],
+            [
+              "zápis",
+              "podvojný (MD a D)",
+              "jednoduchý"
+            ],
+            [
+              "výsledek",
+              "výsledek hospodaření",
+              "základ daně"
+            ],
+            [
+              "faktura vydaná a nezaplacená",
+              "výnos už v roce vystavení",
+              "příjem až po zaplacení"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Pavel vystaví 20. 12. 2026 fakturu za 30 000 Kč, zákazník ji zaplatí 8. 1. 2027. Do příjmů kterého roku patří?",
+          "answer": "Daňová evidence sleduje **platby**. Peníze přišly v lednu, proto je to **příjem roku 2027**. (V účetnictví by šlo o výnos roku 2026.)"
+        },
+        {
+          "type": "example",
+          "question": "Pavel měl za rok příjmy 1 100 000 Kč. Výdaje: materiál 420 000, nájem dílny 72 000, telefon 12 000, soukromá dovolená 40 000 Kč. Spočítej základ daně.",
+          "answer": "Dovolená není výdaj na podnikání, nezapočítá se. Výdaje = 420 000 + 72 000 + 12 000 = 504 000 Kč. Základ daně = 1 100 000 − 504 000 = **596 000 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Koupil jsem dodávku za 700 000 Kč, tak mám letos výdaj 700 000 Kč.",
+          "right": "Dodávka je dlouhodobý majetek (vstupní cena nad 80 000 Kč). Do výdajů jde postupně **daňovými odpisy** (skupina 2, 5 let).",
+          "why": "I v daňové evidenci platí pravidla zákona o daních z příjmů pro odpisy. Najednou jdou do výdajů jen levnější věci."
+        },
+        {
+          "type": "summary",
+          "text": "Daňovou evidenci vede OSVČ, která nemusí účtovat. Sleduje příjmy a výdaje v okamžiku zaplacení a majetek a dluhy. Základ daně = příjmy − daňově uznatelné výdaje; dlouhodobý majetek jde do výdajů přes odpisy."
+        }
+      ]
+    },
+    {
+      "title": "Paušál, nebo skutečnost?",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Tlumočnice Klára skoro nic nenakupuje – pracuje hlavně hlavou. Truhlář Jirka naopak kupuje spoustu dřeva. Oba se rozhodují: zapisovat skutečné výdaje, nebo použít **paušál**?"
+        },
+        {
+          "type": "text",
+          "text": "Zákon o daních z příjmů dovoluje OSVČ místo skutečných výdajů uplatnit výdaje jako **procento z příjmů**. Nemusí pak výdaje dokládat. Ukážeme si, kdy se to vyplatí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Příjmy, výdaje, základ daně",
+          "definition": "Připomenutí: **příjmy** jsou peníze, které podnikateli přišly, **výdaje** peníze vynaložené na podnikání. **Základ daně** = příjmy − výdaje.",
+          "example": "800 000 − 300 000 = 500 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Paušální výdaje",
+          "definition": "Výdaje stanovené procentem z příjmů podle druhu činnosti (§ 7 zákona o daních z příjmů). Podnikatel je nemusí dokládat doklady, ale musí vést **evidenci příjmů** a pohledávek.",
+          "example": "Řemeslná živnost: 80 % z příjmů."
+        },
+        {
+          "type": "term",
+          "term": "Paušální daň",
+          "definition": "Jiná, samostatná možnost: OSVČ s nižšími příjmy platí jednu měsíční platbu, která zahrnuje daň i pojistné. Podmínky a částky se mění, proto je vždy ověř pro konkrétní rok.",
+          "example": "Pavel může zvážit vstup do paušálního režimu."
+        },
+        {
+          "type": "heading",
+          "text": "Sazby paušálních výdajů (stav 2026)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "činnost",
+            "paušál",
+            "nejvyšší výdaje"
+          ],
+          "rows": [
+            [
+              "řemeslné živnosti, zemědělství, lesnictví",
+              "80 %",
+              "1 600 000 Kč"
+            ],
+            [
+              "ostatní živnosti (např. obchod)",
+              "60 %",
+              "1 200 000 Kč"
+            ],
+            [
+              "jiné podnikání, svobodná povolání (tlumočník, autor…)",
+              "40 %",
+              "800 000 Kč"
+            ],
+            [
+              "nájem (§ 9)",
+              "30 %",
+              "600 000 Kč"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nejvyšší výdaje odpovídají příjmům 2 000 000 Kč. Při vyšších příjmech se paušál dál nezvyšuje."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti druh činnosti a sazbu paušálu.",
+            "Vynásob příjmy sazbou (pozor na strop).",
+            "Porovnej paušál se skutečnými doloženými výdaji.",
+            "Vyber to, co dává **vyšší výdaje** a tedy nižší základ daně."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Tlumočnice Klára (svobodné povolání, paušál 40 %) měla příjmy 900 000 Kč a skutečné výdaje 60 000 Kč. Co se jí vyplatí?",
+          "answer": "Paušál = 900 000 · 40 % = 360 000 Kč. Skutečné výdaje jsou jen 60 000 Kč. Paušál dává vyšší výdaje → základ daně = 900 000 − 360 000 = **540 000 Kč** (se skutečnými výdaji by byl 840 000 Kč)."
+        },
+        {
+          "type": "example",
+          "question": "Truhlář Jirka (řemeslná živnost, 80 %) měl příjmy 1 500 000 Kč a skutečné výdaje 1 300 000 Kč. Co se mu vyplatí?",
+          "answer": "Paušál = 1 500 000 · 80 % = 1 200 000 Kč. Skutečné výdaje 1 300 000 Kč jsou vyšší. Vyplatí se **skutečné výdaje**: základ daně = 1 500 000 − 1 300 000 = **200 000 Kč** (s paušálem by byl 300 000 Kč)."
+        },
+        {
+          "type": "example",
+          "question": "Obchodník (60 %) má příjmy 2 500 000 Kč. Kolik může uplatnit paušálem?",
+          "answer": "60 % z 2 500 000 = 1 500 000 Kč, ale strop je **1 200 000 Kč** (60 % z 2 000 000). Uplatní 1 200 000 Kč, základ daně = 2 500 000 − 1 200 000 = **1 300 000 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "S paušálními výdaji nemusím vést vůbec žádnou evidenci.",
+          "right": "Výdajové doklady schovávat nemusíš, ale musíš vést **evidenci příjmů** a pohledávek (a u dlouhodobého majetku evidenci podle zákona).",
+          "why": "Finanční úřad musí umět ověřit příjmy – z nich se paušál počítá."
+        },
+        {
+          "type": "summary",
+          "text": "OSVČ může místo skutečných výdajů uplatnit paušál: 80 % (řemesla), 60 % (ostatní živnosti), 40 % (svobodná povolání), 30 % (nájem), se stropem odpovídajícím příjmům 2 mil. Kč (stav 2026). Vyplatí se, když jsou skutečné výdaje nižší než paušál."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Kdo smí vést daňovou evidenci?",
+      "options": [
+        "OSVČ, která nemusí vést účetnictví",
+        "každá s.r.o.",
+        "akciová společnost s malým obratem",
+        "spolek"
+      ],
+      "answer": 0,
+      "explanation": "Právnické osoby účtují vždy. Daňovou evidenci vede jen fyzická osoba, která nemusí účtovat."
+    },
+    {
+      "type": "truefalse",
+      "question": "V daňové evidenci se příjem zapisuje až tehdy, když peníze opravdu přijdou.",
+      "answer": true,
+      "explanation": "Daňová evidence sleduje platby. Nezaplacená faktura je zatím pohledávka."
+    },
+    {
+      "type": "input",
+      "question": "OSVČ měla příjmy 850 000 Kč a daňově uznatelné výdaje 390 000 Kč. Základ daně v Kč =",
+      "answers": [
+        "460000",
+        "460 000"
+      ],
+      "explanation": "850 000 − 390 000 = 460 000 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký paušál uplatní elektrikář s řemeslnou živností (stav 2026)?",
+      "options": [
+        "80 %",
+        "60 %",
+        "40 %",
+        "30 %"
+      ],
+      "answer": 0,
+      "explanation": "Řemeslné živnosti a zemědělství: 80 %."
+    },
+    {
+      "type": "choice",
+      "question": "Jaký paušál uplatní tlumočnice (svobodné povolání, stav 2026)?",
+      "options": [
+        "40 %",
+        "60 %",
+        "80 %",
+        "30 %"
+      ],
+      "answer": 0,
+      "explanation": "Svobodná povolání a jiné podnikání mimo živnost: 40 %."
+    },
+    {
+      "type": "input",
+      "question": "Prodejce s volnou živností (paušál 60 %) má příjmy 1 000 000 Kč. Paušální výdaje v Kč =",
+      "answers": [
+        "600000",
+        "600 000"
+      ],
+      "explanation": "1 000 000 · 0,6 = 600 000 Kč."
+    },
+    {
+      "type": "input",
+      "question": "Řemeslník (80 %) má příjmy 2 400 000 Kč. Jaké nejvyšší paušální výdaje může uplatnit v Kč? (stav 2026)",
+      "answers": [
+        "1600000",
+        "1 600 000"
+      ],
+      "explanation": "Strop je 80 % z 2 000 000 Kč = 1 600 000 Kč.",
+      "hints": [
+        "Paušál se počítá nejvýš z příjmů 2 000 000 Kč."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Grafik (svobodné povolání, 40 %) má příjmy 700 000 Kč a skutečné výdaje 150 000 Kč. Nejnižší možný základ daně v Kč =",
+      "answers": [
+        "420000",
+        "420 000"
+      ],
+      "explanation": "Paušál 40 % = 280 000 Kč > 150 000 Kč. Základ = 700 000 − 280 000 = 420 000 Kč.",
+      "hints": [
+        "Spočítej paušál a porovnej ho se skutečnými výdaji.",
+        "Vyber vyšší výdaje."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při uplatnění paušálních výdajů nemusí OSVČ vést vůbec žádnou evidenci.",
+      "answer": false,
+      "explanation": "Musí vést evidenci příjmů a pohledávek, případně majetku."
+    },
+    {
+      "type": "choice",
+      "question": "OSVČ s daňovou evidencí koupí stroj za 300 000 Kč. Jak se projeví ve výdajích?",
+      "options": [
+        "postupně daňovými odpisy",
+        "celý jako výdaj v roce nákupu",
+        "vůbec, stroj nikdy není výdaj",
+        "jen polovina v roce nákupu"
+      ],
+      "answer": 0,
+      "explanation": "Hmotný majetek nad 80 000 Kč se uplatňuje přes daňové odpisy."
+    },
+    {
+      "type": "choice",
+      "question": "Kdy se vyplatí skutečné výdaje místo paušálu?",
+      "options": [
+        "když jsou skutečné výdaje vyšší než paušál",
+        "vždy, paušál je nevýhodný",
+        "nikdy, paušál je vždy výhodnější",
+        "když má podnikatel nižší příjmy než 100 000 Kč"
+      ],
+      "answer": 0,
+      "explanation": "Vyšší výdaje = nižší základ daně = nižší daň."
+    },
+    {
+      "type": "match",
+      "question": "Spoj činnost se sazbou paušálu (stav 2026).",
+      "pairs": [
+        [
+          "truhlář – řemeslná živnost",
+          "80 %"
+        ],
+        [
+          "prodejce oblečení – volná živnost",
+          "60 %"
+        ],
+        [
+          "spisovatelka – autorská činnost",
+          "40 %"
+        ],
+        [
+          "pronájem bytu",
+          "30 %"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup výběru mezi paušálem a skutečnými výdaji.",
+      "items": [
+        "urči druh činnosti a sazbu",
+        "spočítej paušál (pozor na strop)",
+        "porovnej se skutečnými výdaji",
+        "vyber vyšší výdaje"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Čím se liší daňová evidence od účetnictví?",
+      "answer": "Daňová evidence je jednoduchá (ne podvojná), vede ji OSVČ, která nemusí účtovat, a sleduje příjmy a výdaje v okamžiku zaplacení a majetek a dluhy; výsledkem je základ daně. Účetnictví je podvojné, sleduje náklady a výnosy podle toho, kdy vznikly, a jeho výsledkem je účetní závěrka a výsledek hospodaření."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, co jsou paušální výdaje a pro koho se hodí.",
+      "answer": "Paušální výdaje jsou výdaje stanovené procentem z příjmů podle druhu činnosti (80, 60, 40 nebo 30 %), které se nemusí dokládat. Hodí se podnikatelům, jejichž skutečné výdaje jsou nižší než paušál, např. svobodným povoláním nebo službám s malými nákupy."
+    }
+  ]
+}

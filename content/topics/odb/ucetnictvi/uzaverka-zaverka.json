@@ -1,0 +1,454 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "uzaverka-zaverka",
+  "title": "Účetní uzávěrka a účetní závěrka",
+  "emoji": "🔒",
+  "explanations": [
+    {
+      "title": "Konec roku v účtárně",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Prosinec a leden jsou v každé účtárně nejrušnější. Účetní kontroluje, počítá, doúčtovává a nakonec „zavře“ celý rok. Výsledkem jsou výkazy, podle kterých se platí daň a podle kterých firmu posuzují banky i obchodní partneři."
+        },
+        {
+          "type": "text",
+          "text": "Ukážeme si dvě věci, které se snadno pletou: **účetní uzávěrku** (práce) a **účetní závěrku** (výsledek)."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozvahový den",
+          "definition": "Připomenutí: poslední den účetního období, ke kterému se účetnictví uzavírá. U kalendářního roku 31. 12.",
+          "example": "31. 12. 2026."
+        },
+        {
+          "type": "term",
+          "term": "Účetní uzávěrka",
+          "definition": "Soubor prací na konci účetního období: kontroly, inventarizace, doúčtování a uzavření účtů.",
+          "example": "Zaúčtování ročních odpisů, inventura skladu, výpočet daně z příjmů."
+        },
+        {
+          "type": "term",
+          "term": "Účetní závěrka",
+          "definition": "Výsledek uzávěrky: soubor výkazů, které ukazují majetek, zdroje a výsledek firmy. Tvoří ji **rozvaha**, **výkaz zisku a ztráty** a **příloha**.",
+          "example": "Účetní závěrka Autoservisu Bětka s.r.o. k 31. 12. 2026."
+        },
+        {
+          "type": "term",
+          "term": "Inventarizace",
+          "definition": "Ověření, zda stav majetku a závazků v účetnictví odpovídá skutečnosti. **Fyzická inventura** = spočítání, změření, převážení (zásoby, stroje). **Dokladová inventura** = ověření podle dokladů (pohledávky, závazky, software).",
+          "example": "Spočítání oleje ve skladu; odsouhlasení dluhu s dodavatelem."
+        },
+        {
+          "type": "heading",
+          "text": "Uzávěrkové práce"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Inventarizace** majetku a závazků, zaúčtování inventarizačních rozdílů (manka, přebytky).",
+            "**Kontrola** zůstatků přechodných účtů (např. 261 Peníze na cestě, 111, 042).",
+            "**Časové rozlišení** nákladů a výnosů (381, 383, 384, 385).",
+            "Zaúčtování **odpisů** dlouhodobého majetku (551/082).",
+            "Tvorba **rezerv** a **opravných položek**, přepočet cizích měn kurzem ČNB ke dni závěrky.",
+            "Výpočet a zaúčtování **daně z příjmů** (591/341).",
+            "**Uzavření účtů** a sestavení účetní závěrky."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Části účetní závěrky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Rozvaha** – aktiva a pasiva k rozvahovému dni.",
+            "**Výkaz zisku a ztráty** – náklady, výnosy a výsledek za období.",
+            "**Příloha** – vysvětlení a doplnění: použité metody (např. oceňování zásob, odpisy), podrobnosti k položkám.",
+            "**Přehled o peněžních tocích** a **přehled o změnách vlastního kapitálu** – mikro a malé účetní jednotky bez povinného auditu je sestavovat nemusí."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "účetní uzávěrka (práce)",
+              "účetní závěrka (výsledek)"
+            ],
+            "items": [
+              {
+                "text": "inventura skladu",
+                "group": 0
+              },
+              {
+                "text": "rozvaha",
+                "group": 1
+              },
+              {
+                "text": "zaúčtování ročních odpisů",
+                "group": 0
+              },
+              {
+                "text": "výkaz zisku a ztráty",
+                "group": 1
+              },
+              {
+                "text": "výpočet daně z příjmů",
+                "group": 0
+              },
+              {
+                "text": "příloha",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď položky. Pomůcka: uzávěrka je to, co účetní **dělá**, závěrka je to, co **vznikne**."
+        },
+        {
+          "type": "heading",
+          "text": "Co se se závěrkou děje dál"
+        },
+        {
+          "type": "text",
+          "text": "Závěrku **schválí valná hromada** (u s.r.o. společníci). Některé firmy musí mít závěrku **ověřenou auditorem** – podle velikosti (aktiva, obrat, počet zaměstnanců). Obchodní společnosti ji musí **zveřejnit ve sbírce listin obchodního rejstříku**, nejpozději do 12 měsíců od rozvahového dne. Závěrka je také podkladem pro **daňové přiznání** k dani z příjmů."
+        },
+        {
+          "type": "example",
+          "question": "Při inventuře 31. 12. účetní zjistí, že účet 261 Peníze na cestě má zůstatek 20 000 Kč z výběru ze 30. 12., protože bankovní výpis přijde až v lednu. Je to chyba?",
+          "answer": "Není, pokud jde opravdu o peníze na cestě přes konec roku. Účetní zůstatek **ověří** (např. podle výpisu v internetovém bankovnictví a pokladní knihy) a zapíše do inventurního soupisu. Až výpis přijde, zaúčtuje 261/221 a zůstatek se vynuluje."
+        },
+        {
+          "type": "example",
+          "question": "Dodavatel v odsouhlasení zůstatků tvrdí, že mu firma dluží 48 400 Kč. Na účtu 321 je u něj 36 300 Kč. Co účetní udělá?",
+          "answer": "Jde o **dokladovou inventuru** závazků. Rozdíl 12 100 Kč musí vysvětlit: najde chybějící fakturu, nebo naopak zjistí, že faktura byla uhrazena a dodavatel platbu nezaúčtoval. Neprověřený rozdíl se nesmí jen „srovnat“ – zaúčtuje se až podle dokladu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Účetní uzávěrka a účetní závěrka jsou dvě slova pro totéž.",
+          "right": "**Uzávěrka** jsou práce na konci roku (inventarizace, odpisy, uzavření účtů). **Závěrka** je jejich výsledek: rozvaha, výkaz zisku a ztráty a příloha.",
+          "why": "Nejdřív se musí udělat uzávěrka, teprve pak lze sestavit závěrku. Bez správné uzávěrky by závěrka neodpovídala skutečnosti."
+        },
+        {
+          "type": "summary",
+          "text": "Účetní uzávěrka jsou práce na konci období: inventarizace, časové rozlišení, odpisy, rezervy, daň z příjmů a uzavření účtů. Jejím výsledkem je účetní závěrka: rozvaha, výkaz zisku a ztráty a příloha (případně přehled o peněžních tocích a o změnách vlastního kapitálu)."
+        }
+      ]
+    },
+    {
+      "title": "Zavírání účtů",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na konci roku se všechny účty musí „zavřít“ – jako když na konci školního roku uzavřeš sešit a začneš nový. Zůstatky rozvahových účtů se přenesou do nového roku, výsledkové účty začnou od nuly."
+        },
+        {
+          "type": "text",
+          "text": "K tomu slouží tři závěrkové účty třídy 7. Krok za krokem uvidíš, jak se přes ně zjistí výsledek hospodaření."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Rozvahové a výsledkové účty",
+          "definition": "Připomenutí: **rozvahové** účty (třídy 0–4) sledují majetek a zdroje a mají počáteční stav. **Výsledkové** (5 náklady, 6 výnosy) každý rok začínají od nuly.",
+          "example": "221 je rozvahový, 501 výsledkový."
+        },
+        {
+          "type": "term",
+          "term": "710 Účet zisků a ztrát",
+          "definition": "Závěrkový účet, na který se uzavřou všechny náklady a výnosy. Jeho zůstatek je výsledek hospodaření.",
+          "example": "Náklady na MD, výnosy na D."
+        },
+        {
+          "type": "term",
+          "term": "702 Konečný účet rozvažný",
+          "definition": "Závěrkový účet, na který se převedou konečné stavy rozvahových účtů. Obsahuje stejné údaje jako rozvaha.",
+          "example": "Konečný stav pokladny se převede na 702."
+        },
+        {
+          "type": "term",
+          "term": "701 Počáteční účet rozvažný",
+          "definition": "Účet, přes který se na začátku nového roku otevřou rozvahové účty (počáteční stavy).",
+          "example": "Počáteční stav pokladny 1. 1.: 211/701."
+        },
+        {
+          "type": "heading",
+          "text": "Postup uzavření"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Uzavři nákladové účty: **710/5xx** (např. 710/501).",
+            "Uzavři výnosové účty: **6xx/710** (např. 602/710).",
+            "Zjisti zůstatek 710: výnosy (D) > náklady (MD) = **zisk**, opačně ztráta.",
+            "Převeď výsledek: zisk **710/702**, ztráta **702/710**.",
+            "Uzavři aktivní účty: **702/aktivní účet** (např. 702/211).",
+            "Uzavři pasivní účty: **pasivní účet/702** (např. 411/702).",
+            "Kontrola: na 702 se musí strany rovnat, stejně jako v rozvaze."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Uzavření účtu 501: ",
+                "after": " / 501",
+                "options": [
+                  "710",
+                  "702",
+                  "701"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Uzavření účtu 602: 602 / ",
+                "after": "",
+                "options": [
+                  "710",
+                  "702",
+                  "701"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Převod zisku: 710 / ",
+                "after": "",
+                "options": [
+                  "702",
+                  "701",
+                  "431"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Uzavření pokladny: 702 / ",
+                "after": "",
+                "options": [
+                  "211",
+                  "710",
+                  "701"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Otevření pokladny v novém roce: 211 / ",
+                "after": "",
+                "options": [
+                  "701",
+                  "702",
+                  "710"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň účty. Pamatuj: výsledkové účty jdou na 710, rozvahové na 702, otevírá se přes 701."
+        },
+        {
+          "type": "example",
+          "question": "Na konci roku: 501 = 400 000, 521 = 600 000, 551 = 100 000, 602 = 1 300 000 Kč. Uzavři výsledkové účty a urči VH.",
+          "answer": "710/501 400 000, 710/521 600 000, 710/551 100 000 → MD 710 = 1 100 000. 602/710 1 300 000 → D 710 = 1 300 000. Výnosy na D převyšují náklady na MD o 200 000 = **zisk 200 000 Kč**. Strany 710 se vyrovnají zápisem na MD: převod **710/702** 200 000."
+        },
+        {
+          "type": "example",
+          "question": "Firma skončila rok ztrátou 50 000 Kč. Jak se převede na konečný účet rozvažný a kde se objeví v novém roce?",
+          "answer": "U ztráty jsou náklady (MD 710) vyšší než výnosy (D 710). Strany se vyrovnají zápisem na D 710: převod **702/710** 50 000. V rozvaze je ztráta ve vlastním kapitálu se záporným znaménkem. V novém roce se při otevření převede na **431** (431/701) a valná hromada rozhodne o úhradě nebo převodu na 429."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na začátku nového roku otevřu i účty 501 a 602 se zůstatky z loňska.",
+          "right": "Přes **701** se otevírají jen **rozvahové** účty (0–4). Výsledkové účty začínají od nuly.",
+          "why": "Výsledkové účty se uzavřely na 710 a jejich obsah se promítl do výsledku hospodaření, který je už ve vlastním kapitálu."
+        },
+        {
+          "type": "summary",
+          "text": "Náklady se uzavírají 710/5xx, výnosy 6xx/710, zisk 710/702 (ztráta 702/710). Aktivní účty se uzavírají 702/účet, pasivní účet/702. V novém roce se rozvahové účty otevřou přes 701, výsledkové začínají od nuly."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co tvoří účetní závěrku každé účetní jednotky?",
+      "options": [
+        "rozvaha, výkaz zisku a ztráty a příloha",
+        "jen rozvaha",
+        "inventurní soupisy a deník",
+        "daňové přiznání a výpisy z banky"
+      ],
+      "answer": 0,
+      "explanation": "Přehled o peněžních tocích a o změnách vlastního kapitálu sestavují jen některé jednotky."
+    },
+    {
+      "type": "truefalse",
+      "question": "Účetní uzávěrka je soubor prací, jejichž výsledkem je účetní závěrka.",
+      "answer": true,
+      "explanation": "Uzávěrka = práce, závěrka = výkazy."
+    },
+    {
+      "type": "choice",
+      "question": "Uzavření nákladového účtu 501 na konci roku:",
+      "options": [
+        "710/501",
+        "501/710",
+        "702/501",
+        "501/702"
+      ],
+      "answer": 0,
+      "explanation": "Náklady mají zůstatek na MD, proto se uzavírají na MD 710."
+    },
+    {
+      "type": "choice",
+      "question": "Uzavření výnosového účtu 604:",
+      "options": [
+        "604/710",
+        "710/604",
+        "604/702",
+        "702/604"
+      ],
+      "answer": 0,
+      "explanation": "Výnosy mají zůstatek na D, uzavírají se na D 710."
+    },
+    {
+      "type": "choice",
+      "question": "Firma dosáhla zisku. Převod výsledku na konečný účet rozvažný:",
+      "options": [
+        "710/702",
+        "702/710",
+        "710/431",
+        "431/710"
+      ],
+      "answer": 0,
+      "explanation": "Při zisku převyšují výnosy (D 710) náklady (MD 710); rozdíl se doplní na MD 710 a převede 710/702."
+    },
+    {
+      "type": "choice",
+      "question": "Uzavření pasivního účtu 411 Základní kapitál:",
+      "options": [
+        "411/702",
+        "702/411",
+        "411/710",
+        "701/411"
+      ],
+      "answer": 0,
+      "explanation": "Pasivní účty mají zůstatek na D, uzavírají se na D 702."
+    },
+    {
+      "type": "input",
+      "question": "Na účtu 710 je na MD 2 400 000 Kč a na D 2 650 000 Kč. Výsledek hospodaření (zisk) v Kč =",
+      "answers": [
+        "250000",
+        "250 000"
+      ],
+      "explanation": "Výnosy 2 650 000 − náklady 2 400 000 = 250 000 Kč zisk.",
+      "hints": [
+        "Náklady jsou na MD, výnosy na D."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Otevření účtu 221 Bankovní účty na začátku roku:",
+      "options": [
+        "221/701",
+        "701/221",
+        "221/702",
+        "702/221"
+      ],
+      "answer": 0,
+      "explanation": "Aktivní účty mají počáteční stav na MD, protiúčet je 701 Počáteční účet rozvažný."
+    },
+    {
+      "type": "choice",
+      "question": "Pohledávky za odběrateli se inventarizují:",
+      "options": [
+        "dokladovou inventurou",
+        "fyzickou inventurou – převážením",
+        "nemusí se inventarizovat",
+        "jen jednou za pět let"
+      ],
+      "answer": 0,
+      "explanation": "Pohledávky nejdou spočítat ve skladu, ověřují se podle dokladů a odsouhlasením s odběrateli."
+    },
+    {
+      "type": "truefalse",
+      "question": "Mikro a malé účetní jednotky bez povinného auditu nemusí sestavovat přehled o peněžních tocích.",
+      "answer": true,
+      "explanation": "Povinně sestavují rozvahu, výkaz zisku a ztráty a přílohu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď uzavírání účtů.",
+      "items": [
+        "uzavření nákladových účtů na 710",
+        "uzavření výnosových účtů na 710",
+        "převod výsledku hospodaření na 702",
+        "uzavření rozvahových účtů na 702"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj účet třídy 7 s jeho úlohou.",
+      "pairs": [
+        [
+          "701",
+          "otevření rozvahových účtů na začátku roku"
+        ],
+        [
+          "702",
+          "uzavření rozvahových účtů na konci roku"
+        ],
+        [
+          "710",
+          "uzavření nákladů a výnosů, zjištění výsledku"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo schvaluje účetní závěrku s.r.o.?",
+      "options": [
+        "valná hromada",
+        "finanční úřad",
+        "účetní",
+        "obchodní rejstřík"
+      ],
+      "answer": 0,
+      "explanation": "Účetní závěrku schvaluje valná hromada; pak se zveřejní ve sbírce listin."
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj hlavní uzávěrkové práce.",
+      "answer": "Inventarizace majetku a závazků a zaúčtování rozdílů, kontrola přechodných účtů, časové rozlišení nákladů a výnosů, odpisy, tvorba rezerv a opravných položek, přepočet cizích měn, výpočet a zaúčtování daně z příjmů a uzavření účtů."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se na konci roku uzavírají výsledkové a rozvahové účty.",
+      "answer": "Nákladové účty se uzavřou 710/5xx, výnosové 6xx/710. Zůstatek 710 je výsledek hospodaření: zisk se převede 710/702, ztráta 702/710. Aktivní účty se uzavřou 702/účet, pasivní účet/702. Na 702 se strany musí rovnat."
+    }
+  ]
+}

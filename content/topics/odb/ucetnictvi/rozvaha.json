@@ -1,0 +1,515 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "rozvaha",
+  "title": "Rozvaha a změny rozvahových stavů",
+  "emoji": "⚖️",
+  "explanations": [
+    {
+      "title": "Dvě strany mince",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Jana zakládá cukrárnu Sladký kout s.r.o. Vloží 300 000 Kč z úspor a banka jí půjčí 200 000 Kč. Za peníze koupí pec, chladicí vitrínu a suroviny."
+        },
+        {
+          "type": "text",
+          "text": "Na každou věc v cukrárně se dá podívat dvakrát: **co to je** (pec, mouka, peníze) a **z čeho se to zaplatilo** (Janiny úspory, úvěr). Tyto dva pohledy zapisuje **rozvaha**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aktiva",
+          "definition": "Majetek firmy – všechno, co firma má a co jí v budoucnu přinese užitek. Pohled „co to je“.",
+          "example": "Pec, mouka, peníze v pokladně, nezaplacená faktura od zákazníka."
+        },
+        {
+          "type": "term",
+          "term": "Pasiva",
+          "definition": "Zdroje, ze kterých byl majetek pořízen. Pohled „z čeho to je“.",
+          "example": "Janin vklad 300 000 Kč, úvěr od banky 200 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Vlastní kapitál",
+          "definition": "Část pasiv, která patří majitelům: jejich vklady a zisk, který ve firmě nechali.",
+          "example": "Vklad Jany 300 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Cizí zdroje",
+          "definition": "Část pasiv, kterou firma někomu dluží a musí ji vrátit: úvěry, nezaplacené faktury dodavatelům, nevyplacené mzdy, daně.",
+          "example": "Úvěr 200 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Rozvaha",
+          "definition": "Výkaz, který **k jednomu dni** ukazuje aktiva (vlevo) a pasiva (vpravo). Je součástí účetní závěrky.",
+          "example": "Rozvaha cukrárny k 31. 12. 2026."
+        },
+        {
+          "type": "heading",
+          "text": "Bilanční rovnice"
+        },
+        {
+          "type": "text",
+          "text": "Každá koruna majetku má nějaký zdroj. Proto platí **bilanční rovnice**: `aktiva = pasiva`, neboli `aktiva = vlastní kapitál + cizí zdroje`. Součet jedné strany se jmenuje **bilanční suma**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Aktiva (co firma má)",
+            "Kč",
+            "Pasiva (z čeho to má)",
+            "Kč"
+          ],
+          "rows": [
+            [
+              "pec a vitrína",
+              "250 000",
+              "vlastní kapitál – vklad",
+              "300 000"
+            ],
+            [
+              "suroviny",
+              "40 000",
+              "cizí zdroje – bankovní úvěr",
+              "200 000"
+            ],
+            [
+              "peníze na účtu",
+              "200 000",
+              "",
+              ""
+            ],
+            [
+              "peníze v pokladně",
+              "10 000",
+              "",
+              ""
+            ],
+            [
+              "**aktiva celkem**",
+              "**500 000**",
+              "**pasiva celkem**",
+              "**500 000**"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak je rozvaha členěná"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Aktiva:** stálá aktiva (dlouhodobý nehmotný, hmotný a finanční majetek – slouží déle než rok), oběžná aktiva (zásoby, pohledávky, peněžní prostředky), časové rozlišení aktiv.",
+            "**Pasiva:** vlastní kapitál, cizí zdroje (rezervy a závazky), časové rozlišení pasiv."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "aktiva",
+              "pasiva"
+            ],
+            "items": [
+              {
+                "text": "pec na pečení",
+                "group": 0
+              },
+              {
+                "text": "bankovní úvěr",
+                "group": 1
+              },
+              {
+                "text": "mouka na skladě",
+                "group": 0
+              },
+              {
+                "text": "vklad majitelky",
+                "group": 1
+              },
+              {
+                "text": "nezaplacená faktura od dodavatele",
+                "group": 1
+              },
+              {
+                "text": "nezaplacená faktura od odběratele",
+                "group": 0
+              },
+              {
+                "text": "peníze v pokladně",
+                "group": 0
+              },
+              {
+                "text": "zisk z minulých let",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď položky. Ptej se: je to věc nebo peníze, které firma má? Nebo je to zdroj – komu to vlastně patří?"
+        },
+        {
+          "type": "example",
+          "question": "Cukrárna má aktiva 500 000 Kč a cizí zdroje 200 000 Kč. Kolik je vlastní kapitál?",
+          "answer": "Z bilanční rovnice: vlastní kapitál = aktiva − cizí zdroje = 500 000 − 200 000 = **300 000 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Firma má: stroje 800 000 Kč, zboží 150 000 Kč, pohledávky 70 000 Kč, peníze 80 000 Kč, úvěr 400 000 Kč, závazky k dodavatelům 100 000 Kč. Kolik je vlastní kapitál?",
+          "answer": "Aktiva = 800 000 + 150 000 + 70 000 + 80 000 = 1 100 000 Kč. Cizí zdroje = 400 000 + 100 000 = 500 000 Kč. Vlastní kapitál = 1 100 000 − 500 000 = **600 000 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pohledávka je dluh, takže patří do pasiv.",
+          "right": "**Pohledávka** (někdo dluží nám) je **aktivum**. Do pasiv patří **závazek** (my dlužíme někomu).",
+          "why": "Pohledávka je peníz, který firmě v budoucnu přijde – je to její majetek. Závazek je zdroj, který firma jednou musí vrátit."
+        },
+        {
+          "type": "summary",
+          "text": "Rozvaha ukazuje k jednomu dni aktiva (majetek) a pasiva (zdroje: vlastní kapitál a cizí zdroje). Vždy platí aktiva = pasiva. Pohledávky jsou aktiva, závazky pasiva."
+        }
+      ]
+    },
+    {
+      "title": "Čtyři typy změn",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Rozvaha je fotka firmy k jednomu dni. Jenže firma žije: nakupuje, prodává, platí. Každá taková událost rozvahu změní – a přesto obě strany zůstanou stejně velké."
+        },
+        {
+          "type": "text",
+          "text": "Naučíš se poznat, **jak** jaký případ rozvahu změní. Je jen pět možností: čtyři základní typy a jejich kombinace. Bez toho nejde dál zaúčtovat nic."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Aktiva a pasiva",
+          "definition": "Připomenutí: **aktiva** = majetek firmy, **pasiva** = zdroje majetku (vlastní kapitál a cizí zdroje). Vždy platí aktiva = pasiva.",
+          "example": "Peníze na účtu jsou aktivum, úvěr je pasivum."
+        },
+        {
+          "type": "term",
+          "term": "Rozvahová změna",
+          "definition": "Změna položek rozvahy, kterou způsobí účetní případ. Vždy se mění **nejméně dvě položky** stejnou částkou.",
+          "example": "Výběr z banky do pokladny: banka −, pokladna +."
+        },
+        {
+          "type": "term",
+          "term": "Bilanční suma",
+          "definition": "Součet aktiv (= součet pasiv).",
+          "example": "Aktiva 500 000 Kč → bilanční suma 500 000 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři typy změn"
+        },
+        {
+          "type": "table",
+          "head": [
+            "typ",
+            "co se stane",
+            "bilanční suma",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "A+ A−",
+              "jedno aktivum roste, jiné klesá",
+              "nemění se",
+              "výběr z banky do pokladny"
+            ],
+            [
+              "P+ P−",
+              "jedno pasivum roste, jiné klesá",
+              "nemění se",
+              "dlužná faktura se převede na úvěr"
+            ],
+            [
+              "A+ P+",
+              "aktivum i pasivum rostou",
+              "roste",
+              "nákup zboží na fakturu"
+            ],
+            [
+              "A− P−",
+              "aktivum i pasivum klesají",
+              "klesá",
+              "zaplacení faktury dodavateli z účtu"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Najdi dvě položky, které se případem změní.",
+            "U každé urči, zda je to aktivum, nebo pasivum.",
+            "U každé urči, zda roste (+), nebo klesá (−).",
+            "Slož typ změny a rozhodni, co se stane s bilanční sumou."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "A+ A−",
+              "P+ P−",
+              "A+ P+",
+              "A− P−"
+            ],
+            "items": [
+              {
+                "text": "vklad hotovosti z pokladny na bankovní účet",
+                "group": 0
+              },
+              {
+                "text": "nákup materiálu na fakturu",
+                "group": 2
+              },
+              {
+                "text": "splátka úvěru z bankovního účtu",
+                "group": 3
+              },
+              {
+                "text": "přijetí bankovního úvěru na účet",
+                "group": 2
+              },
+              {
+                "text": "úhrada faktury dodavateli úvěrem přímo od banky",
+                "group": 1
+              },
+              {
+                "text": "odběratel zaplatí fakturu na náš účet",
+                "group": 0
+              },
+              {
+                "text": "zaplacení faktury dodavateli z pokladny",
+                "group": 3
+              },
+              {
+                "text": "zisk se převede do fondu",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď případy do čtyř typů. U každého si nejdřív řekni dvě položky, které se mění."
+        },
+        {
+          "type": "example",
+          "question": "Rozvaha: aktiva 500 000 Kč. Firma koupí zboží za 30 000 Kč na fakturu (zaplatí později). Typ změny a nová bilanční suma?",
+          "answer": "Zboží (aktivum) **roste** o 30 000. Závazek k dodavateli (pasivum) **roste** o 30 000. Typ **A+ P+**, bilanční suma vzroste na **530 000 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Pokračování: firma pak zaplatí dodavateli 30 000 Kč z bankovního účtu. Typ a bilanční suma?",
+          "answer": "Peníze na účtu (aktivum) **klesnou**, závazek k dodavateli (pasivum) **klesne**. Typ **A− P−**, bilanční suma klesne zpět na **500 000 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Firma s bilanční sumou 800 000 Kč provede: a) výběr 20 000 Kč z banky do pokladny, b) přijme úvěr 100 000 Kč na účet, c) splatí dodavateli 50 000 Kč z účtu. Jaká je bilanční suma na konci?",
+          "answer": "a) A+ A− → beze změny 800 000. b) A+ P+ → 900 000. c) A− P− → **850 000 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když firma zaplatí dodavateli, ubude jí peněz, a proto aktiva už nejsou rovna pasivům.",
+          "right": "Zároveň ubude **závazku** k dodavateli. Klesnou obě strany stejně (A− P−) a rovnost platí dál.",
+          "why": "Každý případ mění aspoň dvě položky stejnou částkou. Kdyby se měnila jen jedna, rovnice by nesouhlasila – to je znamení, že jsi na druhou položku zapomněl."
+        },
+        {
+          "type": "summary",
+          "text": "Každý případ změní aspoň dvě položky rozvahy stejnou částkou. Typy A+ A− a P+ P− bilanční sumu nemění, A+ P+ ji zvyšuje a A− P− snižuje. Rovnost aktiv a pasiv platí vždy."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Co platí v každé rozvaze?",
+      "options": [
+        "aktiva = vlastní kapitál + cizí zdroje",
+        "aktiva = vlastní kapitál − cizí zdroje",
+        "pasiva = aktiva + vlastní kapitál",
+        "aktiva = výnosy − náklady"
+      ],
+      "answer": 0,
+      "explanation": "Pasiva tvoří vlastní kapitál a cizí zdroje a rovnají se aktivům."
+    },
+    {
+      "type": "input",
+      "question": "Aktiva jsou 1 200 000 Kč, cizí zdroje 450 000 Kč. Vlastní kapitál v Kč =",
+      "answers": [
+        "750000",
+        "750 000"
+      ],
+      "explanation": "1 200 000 − 450 000 = 750 000 Kč.",
+      "hints": [
+        "Pasiva se rovnají aktivům.",
+        "Pasiva = vlastní kapitál + cizí zdroje."
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj případ s typem rozvahové změny.",
+      "pairs": [
+        [
+          "výběr z banky do pokladny",
+          "A+ A−"
+        ],
+        [
+          "nákup materiálu na fakturu",
+          "A+ P+"
+        ],
+        [
+          "splátka úvěru z účtu",
+          "A− P−"
+        ],
+        [
+          "převod zisku do fondu",
+          "P+ P−"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pohledávky za odběrateli patří do pasiv.",
+      "answer": false,
+      "explanation": "Pohledávky jsou majetek – aktiva. Do pasiv patří závazky."
+    },
+    {
+      "type": "choice",
+      "question": "Který typ změny zvyšuje bilanční sumu?",
+      "options": [
+        "A+ P+",
+        "A+ A−",
+        "P+ P−",
+        "A− P−"
+      ],
+      "answer": 0,
+      "explanation": "Rostou obě strany rozvahy."
+    },
+    {
+      "type": "input",
+      "question": "Bilanční suma je 600 000 Kč. Firma přijme bankovní úvěr 150 000 Kč na účet. Nová bilanční suma v Kč =",
+      "answers": [
+        "750000",
+        "750 000"
+      ],
+      "explanation": "Peníze na účtu (A+) i úvěr (P+) rostou o 150 000 Kč. 600 000 + 150 000 = 750 000 Kč.",
+      "hints": [
+        "Která aktiva a která pasiva se změní?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Odběratel zaplatí fakturu 40 000 Kč na náš bankovní účet. Jaký je to typ změny?",
+      "options": [
+        "A+ A− – pohledávka klesne, peníze na účtu vzrostou",
+        "A+ P+ – peníze i závazky vzrostou",
+        "A− P− – pohledávka i závazek klesnou",
+        "P+ P− – změní se jen zdroje"
+      ],
+      "answer": 0,
+      "explanation": "Pohledávka i peníze jsou aktiva: jedno roste, druhé klesá."
+    },
+    {
+      "type": "choice",
+      "question": "Kam v rozvaze patří bankovní úvěr?",
+      "options": [
+        "pasiva – cizí zdroje",
+        "pasiva – vlastní kapitál",
+        "aktiva – oběžná aktiva",
+        "aktiva – stálá aktiva"
+      ],
+      "answer": 0,
+      "explanation": "Úvěr se musí vrátit, je to cizí zdroj."
+    },
+    {
+      "type": "input",
+      "question": "Bilanční suma je 900 000 Kč. Firma zaplatí dodavateli 70 000 Kč z účtu a pak vybere 10 000 Kč z účtu do pokladny. Bilanční suma v Kč =",
+      "answers": [
+        "830000",
+        "830 000"
+      ],
+      "explanation": "Platba dodavateli je A− P− (−70 000). Výběr do pokladny je A+ A− (beze změny). 900 000 − 70 000 = 830 000 Kč.",
+      "hints": [
+        "Urči typ změny u každého případu zvlášť."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozvaha zachycuje stav majetku a zdrojů za celý rok.",
+      "answer": false,
+      "explanation": "Rozvaha ukazuje stav k jednomu dni (např. k 31. 12.). Za celé období se sestavuje výkaz zisku a ztráty."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď postup, jak určit typ rozvahové změny.",
+      "items": [
+        "najdi dvě položky, které se mění",
+        "u každé urči, zda je to aktivum, nebo pasivum",
+        "urči, zda roste, nebo klesá",
+        "slož typ změny a urči vliv na bilanční sumu"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Která položka patří mezi stálá aktiva?",
+      "options": [
+        "dodávkový automobil",
+        "zboží na skladě",
+        "peníze na bankovním účtu",
+        "pohledávka za odběratelem"
+      ],
+      "answer": 0,
+      "explanation": "Automobil slouží déle než rok – dlouhodobý hmotný majetek, tedy stálá aktiva."
+    },
+    {
+      "type": "input",
+      "question": "Firma má: budovu 2 000 000 Kč, zásoby 300 000 Kč, peníze 200 000 Kč, závazky k dodavatelům 250 000 Kč a dlouhodobý úvěr 1 000 000 Kč. Vlastní kapitál v Kč =",
+      "answers": [
+        "1250000",
+        "1 250 000"
+      ],
+      "explanation": "Aktiva = 2 000 000 + 300 000 + 200 000 = 2 500 000 Kč. Cizí zdroje = 250 000 + 1 000 000 = 1 250 000 Kč. Vlastní kapitál = 2 500 000 − 1 250 000 = 1 250 000 Kč.",
+      "hints": [
+        "Nejdřív sečti aktiva, potom cizí zdroje."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš čtyři typy rozvahových změn a ke každému uveď příklad.",
+      "answer": "A+ A− (výběr z banky do pokladny) a P+ P− (převod zisku do fondu) bilanční sumu nemění. A+ P+ (nákup zboží na fakturu) ji zvyšuje, A− P− (úhrada faktury dodavateli z účtu) ji snižuje."
+    },
+    {
+      "type": "open",
+      "question": "Proč se aktiva vždy rovnají pasivům?",
+      "answer": "Aktiva a pasiva jsou dva pohledy na tentýž majetek: aktiva říkají, co firma má, pasiva, z čeho to pořídila. Každá koruna majetku má svůj zdroj a každý případ mění obě strany tak, že rovnost zůstane."
+    }
+  ]
+}

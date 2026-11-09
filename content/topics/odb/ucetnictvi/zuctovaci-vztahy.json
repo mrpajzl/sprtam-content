@@ -1,0 +1,506 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zuctovaci-vztahy",
+  "title": "Zúčtovací vztahy: odběratelé, dodavatelé, mzdy, DPH",
+  "emoji": "🤝",
+  "explanations": [
+    {
+      "title": "Kdo komu dluží",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Grafické studio Pixel s.r.o. vystaví zákazníkovi fakturu za logo. Zákazník zaplatí za 14 dní. Mezitím studio dostane fakturu za tonery a na konci měsíce vyplatí mzdy."
+        },
+        {
+          "type": "text",
+          "text": "Mezi tím, kdy povinnost zaplatit vznikne a kdy se opravdu zaplatí, existuje **pohledávka** nebo **závazek**. Sleduje je **účtová třída 3 – zúčtovací vztahy**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Pohledávka",
+          "definition": "Právo firmy dostat peníze – někdo dluží nám. Je to **aktivum**, aktivní účet (přírůstek na MD).",
+          "example": "311 Odběratelé: zákazník nám dluží za logo."
+        },
+        {
+          "type": "term",
+          "term": "Závazek",
+          "definition": "Povinnost firmy zaplatit – my dlužíme někomu. Je to **pasivum**, pasivní účet (přírůstek na D).",
+          "example": "321 Dodavatelé: dlužíme za tonery."
+        },
+        {
+          "type": "term",
+          "term": "Záloha",
+          "definition": "Platba předem, ještě než se dodá zboží nebo služba. Poskytnutá záloha je pohledávka (**314**), přijatá záloha závazek (**324**).",
+          "example": "Studio zaplatí tiskárně zálohu 5 000 Kč na tisk katalogu."
+        },
+        {
+          "type": "term",
+          "term": "Plátce DPH",
+          "definition": "Firma registrovaná k dani z přidané hodnoty. K cenám připočítává DPH a odvádí ji státu, DPH z nákupů si odečítá. DPH se účtuje na **343 Daň z přidané hodnoty**.",
+          "example": "Studio Pixel je plátce, k faktuře za logo připočítá 21 % DPH (sazba 2026)."
+        },
+        {
+          "type": "heading",
+          "text": "Odběratelé a dodavatelé"
+        },
+        {
+          "type": "table",
+          "head": [
+            "případ",
+            "MD",
+            "D"
+          ],
+          "rows": [
+            [
+              "faktura vydaná za službu (bez DPH)",
+              "311 Odběratelé",
+              "602 Tržby z prodeje služeb"
+            ],
+            [
+              "DPH na výstupu z vydané faktury",
+              "311",
+              "343 DPH"
+            ],
+            [
+              "odběratel zaplatí na účet",
+              "221",
+              "311"
+            ],
+            [
+              "faktura přijatá za službu (bez DPH)",
+              "518 Ostatní služby",
+              "321 Dodavatelé"
+            ],
+            [
+              "DPH na vstupu z přijaté faktury",
+              "343",
+              "321"
+            ],
+            [
+              "úhrada faktury dodavateli z účtu",
+              "321",
+              "221"
+            ],
+            [
+              "poskytnutá záloha dodavateli",
+              "314 Poskytnuté zálohy",
+              "221"
+            ],
+            [
+              "přijatá záloha od odběratele",
+              "221",
+              "324 Přijaté zálohy"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Studio vystaví fakturu za logo 20 000 Kč bez DPH, DPH 21 % (2026). Odběratel zaplatí na účet. Zaúčtuj.",
+          "answer": "Faktura: **311/602** 20 000, **311/343** 4 200. Pohledávka je celkem 24 200 Kč. Úhrada: **221/311** 24 200. Pohledávka zanikne."
+        },
+        {
+          "type": "heading",
+          "text": "DPH: vstup a výstup"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Z vydaných faktur sečti **DPH na výstupu** (zapsáno na D 343).",
+            "Z přijatých faktur sečti **DPH na vstupu** (zapsáno na MD 343).",
+            "Výstup − vstup > 0 → **vlastní daňová povinnost**, firma ji zaplatí: **343/221**.",
+            "Výstup − vstup < 0 → **nadměrný odpočet**, stát vrátí peníze: **221/343**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Za měsíc má studio DPH na výstupu 42 000 Kč a DPH na vstupu 25 200 Kč. Kolik zaplatí a jak se to zaúčtuje?",
+          "answer": "42 000 − 25 200 = **16 800 Kč** vlastní daňová povinnost. Úhrada finančnímu úřadu: **343/221** 16 800. Účet 343 má pak nulový zůstatek."
+        },
+        {
+          "type": "heading",
+          "text": "Časové rozlišení"
+        },
+        {
+          "type": "text",
+          "text": "Náklady a výnosy musí patřit do období, se kterým souvisejí (akruální zásada). Když se platba a souvislost rozejdou přes konec roku, použijí se účty časového rozlišení:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "účet",
+            "kdy",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "381 Náklady příštích období",
+              "platíme letos, náklad je příští rok",
+              "nájem za leden zaplacený v prosinci"
+            ],
+            [
+              "383 Výdaje příštích období",
+              "náklad je letos, platíme příští rok",
+              "nájem za prosinec placený pozadu v lednu"
+            ],
+            [
+              "384 Výnosy příštích období",
+              "dostaneme letos, výnos je příští rok",
+              "nájemník nám v prosinci zaplatí lednový nájem"
+            ],
+            [
+              "385 Příjmy příštích období",
+              "výnos je letos, peníze přijdou příští rok",
+              "nájemné za prosinec nám nájemník zaplatí v lednu"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Studio 15. 12. 2026 zaplatí z účtu nájem za leden 2027, 12 000 Kč. Zaúčtuj v obou letech.",
+          "answer": "Prosinec 2026: platba se nesmí stát nákladem roku 2026 → **381/221** 12 000. Leden 2027: náklad do správného roku → **518/381** 12 000."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Vystavil jsem fakturu se 21 % DPH, takže celá částka s DPH je moje tržba.",
+          "right": "Tržba (602, 604) je jen **částka bez DPH**. DPH na výstupu je **závazek vůči státu** a jde na D 343.",
+          "why": "Plátce DPH daň jen vybírá pro stát. Kdyby ji zahrnul do tržeb, nadhodnotil by výnosy i zisk."
+        },
+        {
+          "type": "summary",
+          "text": "Pohledávky (311, 314) jsou aktiva, závazky (321, 324) pasiva. DPH na výstupu jde na D 343, na vstupu na MD 343; rozdíl je vlastní daňová povinnost (343/221), nebo nadměrný odpočet (221/343). Časové rozlišení (381, 383, 384, 385) přesune náklad nebo výnos do správného roku."
+        }
+      ]
+    },
+    {
+      "title": "Mzdy v účetnictví",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V Ekonomice ses naučil, jak se z hrubé mzdy počítá čistá (téma Mzdy a odvody). Teď uvidíš, kam se jednotlivé částky **zaúčtují**."
+        },
+        {
+          "type": "text",
+          "text": "Mzda je pro firmu velký náklad. Zároveň firma dluží peníze zaměstnanci, zdravotní pojišťovně, správě sociálního zabezpečení i finančnímu úřadu. Každý z nich má svůj účet."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Hrubá a čistá mzda",
+          "definition": "Připomenutí: **hrubá mzda** je dohodnutá mzda před srážkami. Po odečtení pojistného zaměstnance a zálohy na daň zbude **čistá mzda**, kterou zaměstnanec dostane.",
+          "example": "Hrubá 30 000 Kč, čistá 24 590 Kč (výpočet 2026 v Ekonomice)."
+        },
+        {
+          "type": "term",
+          "term": "521 Mzdové náklady",
+          "definition": "Nákladový účet pro **hrubé mzdy** všech zaměstnanců.",
+          "example": "521/331 30 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "331 Zaměstnanci",
+          "definition": "Závazek vůči zaměstnancům – kolik jim firma dluží na mzdách. Snižuje se srážkami a výplatou.",
+          "example": "Po výplatě je zůstatek nula."
+        },
+        {
+          "type": "term",
+          "term": "336 Zúčtování s institucemi sociálního zabezpečení a zdravotního pojištění",
+          "definition": "Závazek vůči správě sociálního zabezpečení a zdravotním pojišťovnám – pojistné zaměstnance i zaměstnavatele.",
+          "example": "Sociální a zdravotní pojištění za měsíc."
+        },
+        {
+          "type": "term",
+          "term": "342 Ostatní přímé daně",
+          "definition": "Závazek vůči finančnímu úřadu ze **zálohy na daň z příjmů** zaměstnanců.",
+          "example": "Záloha na daň 1 930 Kč."
+        },
+        {
+          "type": "term",
+          "term": "524 Zákonné sociální a zdravotní pojištění",
+          "definition": "Náklad zaměstnavatele: pojistné, které platí **navíc ze svého** k hrubé mzdě.",
+          "example": "V roce 2026 sociální 24,8 % a zdravotní 9 % z hrubé mzdy."
+        },
+        {
+          "type": "heading",
+          "text": "Účtování mezd krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Hrubá mzda jako náklad: **521/331**.",
+            "Pojistné zaměstnance (sraženo ze mzdy): **331/336**.",
+            "Záloha na daň zaměstnance: **331/342**.",
+            "Pojistné zaměstnavatele: **524/336**.",
+            "Výplata čisté mzdy na účet zaměstnance: **331/221**.",
+            "Odvod pojistného: **336/221**, odvod zálohy na daň: **342/221**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Grafik Dominik má hrubou mzdu 30 000 Kč. Sazby 2026: zaměstnanec sociální 7,1 % (2 130 Kč) a zdravotní 4,5 % (1 350 Kč), záloha na daň po slevě 1 930 Kč; zaměstnavatel sociální 24,8 % (7 440 Kč) a zdravotní 9 % (2 700 Kč). Zaúčtuj.",
+          "answer": "**521/331** 30 000 (hrubá mzda). **331/336** 3 480 (2 130 + 1 350). **331/342** 1 930. **524/336** 10 140 (7 440 + 2 700). Výplata čisté mzdy **331/221** 24 590 (30 000 − 3 480 − 1 930). Účet 331 má zůstatek nula."
+        },
+        {
+          "type": "example",
+          "question": "Kolik celkem firma za Dominika zaplatí a kolik pošle institucím?",
+          "answer": "Náklady firmy = 521 + 524 = 30 000 + 10 140 = **40 140 Kč**. Na 336 je 3 480 + 10 140 = **13 620 Kč** (odvod 336/221), na 342 **1 930 Kč** (odvod 342/221). Zaměstnanci 24 590 Kč. Kontrola: 13 620 + 1 930 + 24 590 = 40 140 Kč."
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Hrubá mzda: 521 / ",
+                "after": "",
+                "options": [
+                  "331",
+                  "336",
+                  "221"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pojistné zaměstnance: 331 / ",
+                "after": "",
+                "options": [
+                  "336",
+                  "342",
+                  "524"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Záloha na daň: 331 / ",
+                "after": "",
+                "options": [
+                  "342",
+                  "341",
+                  "343"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Pojistné zaměstnavatele: ",
+                "after": " / 336",
+                "options": [
+                  "524",
+                  "521",
+                  "331"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Výplata čisté mzdy: 331 / ",
+                "after": "",
+                "options": [
+                  "221",
+                  "521",
+                  "336"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň čísla účtů. Ptej se, kdo komu dluží a co je pro firmu náklad."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Pojistné zaměstnance je náklad firmy, zaúčtuji ho 524/336.",
+          "right": "Pojistné zaměstnance se **strhne z jeho hrubé mzdy**: **331/336**. Na 524 jde jen pojistné, které platí zaměstnavatel navíc.",
+          "why": "Hrubá mzda (521) už pojistné zaměstnance obsahuje. Kdyby šlo i na 524, firma by ho měla v nákladech dvakrát."
+        },
+        {
+          "type": "summary",
+          "text": "Hrubá mzda 521/331, pojistné zaměstnance 331/336, záloha na daň 331/342, pojistné zaměstnavatele 524/336, výplata 331/221. Náklady firmy na zaměstnance jsou 521 + 524."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Firma vystaví fakturu za službu 10 000 Kč bez DPH. Zaúčtování základu:",
+      "options": [
+        "311/602",
+        "602/311",
+        "311/604",
+        "321/602"
+      ],
+      "answer": 0,
+      "explanation": "Pohledávka za odběratelem (MD 311), výnos z prodeje služeb (D 602)."
+    },
+    {
+      "type": "choice",
+      "question": "DPH na výstupu z vydané faktury se zaúčtuje:",
+      "options": [
+        "311/343",
+        "343/311",
+        "343/321",
+        "321/343"
+      ],
+      "answer": 0,
+      "explanation": "Pohledávka roste o DPH (MD 311), závazek vůči státu na D 343."
+    },
+    {
+      "type": "choice",
+      "question": "DPH na vstupu z přijaté faktury se zaúčtuje:",
+      "options": [
+        "343/321",
+        "321/343",
+        "311/343",
+        "343/221"
+      ],
+      "answer": 0,
+      "explanation": "Nárok na odpočet na MD 343, závazek k dodavateli roste (D 321)."
+    },
+    {
+      "type": "input",
+      "question": "DPH na výstupu za měsíc je 63 000 Kč, na vstupu 41 000 Kč. Vlastní daňová povinnost v Kč =",
+      "answers": [
+        "22000",
+        "22 000"
+      ],
+      "explanation": "63 000 − 41 000 = 22 000 Kč. Úhrada 343/221.",
+      "hints": [
+        "Daň z prodejů minus daň z nákupů."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Faktura za službu 50 000 Kč bez DPH, sazba DPH 21 % (2026). Kolik Kč bude celkem fakturováno?",
+      "answers": [
+        "60500",
+        "60 500"
+      ],
+      "explanation": "DPH = 50 000 · 0,21 = 10 500 Kč. Celkem 60 500 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Hrubá mzda zaměstnanců se zaúčtuje:",
+      "options": [
+        "521/331",
+        "331/521",
+        "524/331",
+        "521/221"
+      ],
+      "answer": 0,
+      "explanation": "Náklad 521 Mzdové náklady, závazek vůči zaměstnancům 331."
+    },
+    {
+      "type": "choice",
+      "question": "Pojistné, které platí zaměstnavatel navíc ze svého, se zaúčtuje:",
+      "options": [
+        "524/336",
+        "331/336",
+        "521/336",
+        "336/524"
+      ],
+      "answer": 0,
+      "explanation": "Náklad 524, závazek vůči institucím 336. Pojistné zaměstnance by bylo 331/336."
+    },
+    {
+      "type": "match",
+      "question": "Spoj účet s tím, komu firma dluží.",
+      "pairs": [
+        [
+          "331",
+          "zaměstnancům"
+        ],
+        [
+          "336",
+          "správě sociálního zabezpečení a zdravotním pojišťovnám"
+        ],
+        [
+          "342",
+          "finančnímu úřadu za zálohy na daň zaměstnanců"
+        ],
+        [
+          "321",
+          "dodavatelům"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Hrubá mzda 40 000 Kč, pojistné zaměstnance 4 640 Kč, záloha na daň 3 430 Kč. Čistá mzda (výplata 331/221) v Kč =",
+      "answers": [
+        "31930",
+        "31 930"
+      ],
+      "explanation": "40 000 − 4 640 − 3 430 = 31 930 Kč.",
+      "hints": [
+        "Od hrubé mzdy odečti všechno, co se zaměstnanci strhne."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Firma 20. 12. 2026 zaplatí pojištění na rok 2027. Jak zaúčtuje platbu v prosinci?",
+      "options": [
+        "381/221",
+        "548/221",
+        "383/221",
+        "221/384"
+      ],
+      "answer": 0,
+      "explanation": "Platba letos, náklad příští rok → 381 Náklady příštích období. V roce 2027 se rozpustí do nákladů."
+    },
+    {
+      "type": "choice",
+      "question": "Nájem za prosinec 2026 firma zaplatí až v lednu 2027. Zaúčtování k 31. 12. 2026:",
+      "options": [
+        "518/383",
+        "381/518",
+        "518/381",
+        "385/602"
+      ],
+      "answer": 0,
+      "explanation": "Náklad patří do roku 2026, platba bude později → 383 Výdaje příštích období."
+    },
+    {
+      "type": "truefalse",
+      "question": "Přijatá záloha od odběratele je pro firmu pohledávka.",
+      "answer": false,
+      "explanation": "Přijatá záloha je závazek (324) – firma musí zboží dodat, nebo zálohu vrátit."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď účtování mezd.",
+      "items": [
+        "hrubá mzda 521/331",
+        "srážky zaměstnanci 331/336 a 331/342",
+        "pojistné zaměstnavatele 524/336",
+        "výplata čisté mzdy 331/221",
+        "odvod institucím 336/221 a 342/221"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, jak vzniká vlastní daňová povinnost a nadměrný odpočet DPH a jak se zaúčtují.",
+      "answer": "Plátce na účtu 343 sbírá DPH na výstupu (z prodejů, strana D) a DPH na vstupu (z nákupů, strana MD). Je-li výstup vyšší, vzniká vlastní daňová povinnost a firma ji zaplatí 343/221. Je-li vyšší vstup, vzniká nadměrný odpočet a stát peníze vrátí 221/343."
+    },
+    {
+      "type": "open",
+      "question": "Kdy se použije účet 381 a kdy 384? Uveď příklad.",
+      "answer": "381 Náklady příštích období, když firma letos zaplatí za něco, co je nákladem příštího roku (nájem za leden zaplacený v prosinci). 384 Výnosy příštích období, když firma letos dostane peníze, které jsou výnosem příštího roku (nájemník zaplatí v prosinci za leden)."
+    }
+  ]
+}

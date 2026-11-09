@@ -1,0 +1,419 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ucetni-doklady",
+  "title": "Účetní doklady",
+  "emoji": "🧾",
+  "explanations": [
+    {
+      "title": "Bez dokladu nic",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Když v obchodě reklamuješ zboží, prodavač chce účtenku. Bez ní nedokážeš, že jsi zboží koupil právě tam."
+        },
+        {
+          "type": "text",
+          "text": "V účetnictví platí totéž, jen přísněji: **každý zápis musí mít doklad**. Doklad dokazuje, že se případ opravdu stal, a kontrola z finančního úřadu podle něj ověřuje každou korunu."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Účetní doklad",
+          "definition": "Průkazný záznam o účetním případu. Jen na jeho základě se smí účtovat.",
+          "example": "Faktura od dodavatele, výpis z banky, pokladní doklad."
+        },
+        {
+          "type": "term",
+          "term": "Faktura",
+          "definition": "Doklad, kterým prodávající žádá zaplacení za zboží nebo službu. **Faktura vydaná** jde od nás odběrateli, **faktura přijatá** přijde k nám od dodavatele.",
+          "example": "Kolo servis vystaví zákazníkovi fakturu za opravu = faktura vydaná."
+        },
+        {
+          "type": "term",
+          "term": "Pokladní doklad",
+          "definition": "Doklad o pohybu hotovosti v pokladně. **Příjmový (PPD)** při příjmu peněz, **výdajový (VPD)** při výdeji.",
+          "example": "VPD na 600 Kč za koupené kancelářské papíry."
+        },
+        {
+          "type": "term",
+          "term": "Bankovní výpis",
+          "definition": "Doklad od banky, který ukazuje všechny pohyby na bankovním účtu za období.",
+          "example": "Výpis za říjen: příchozí platba od odběratele 24 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Interní doklad",
+          "definition": "Doklad, který si firma vystaví sama pro případy, kde jiný doklad není.",
+          "example": "Výpočet odpisů za rok, zaúčtování mezd, předpis manka."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy dokladů"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vnější** – přijdou zvenku nebo jdou ven (faktury, bankovní výpisy, účtenky).",
+            "**Vnitřní** – vznikají uvnitř firmy (příjemky a výdejky skladu, interní doklady, mzdové listy).",
+            "**Jednotlivé** – na jeden případ (faktura). **Sběrné** – shrnou víc dokladů stejného druhu (souhrn výdejek za měsíc)."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "sort",
+          "props": {
+            "groups": [
+              "vnější doklad",
+              "vnitřní doklad"
+            ],
+            "items": [
+              {
+                "text": "faktura od dodavatele materiálu",
+                "group": 0
+              },
+              {
+                "text": "výpis z bankovního účtu",
+                "group": 0
+              },
+              {
+                "text": "výdejka materiálu ze skladu do dílny",
+                "group": 1
+              },
+              {
+                "text": "výpočet ročních odpisů",
+                "group": 1
+              },
+              {
+                "text": "faktura vydaná zákazníkovi",
+                "group": 0
+              },
+              {
+                "text": "zúčtovací a výplatní listina mezd",
+                "group": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Roztřiď doklady. Ptej se: přišel doklad od někoho jiného (nebo jde k někomu jinému), nebo zůstane uvnitř firmy?"
+        },
+        {
+          "type": "example",
+          "question": "Firma koupí za hotové toner do tiskárny za 1 500 Kč. Jaký doklad vznikne a jak se zaúčtuje?",
+          "answer": "Firma dostane účtenku od prodejce (vnější doklad) a vystaví na ni **výdajový pokladní doklad**. Toner se spotřebuje → náklad **501 Spotřeba materiálu** na MD, pokladna klesá → **211** na D. Předkontace **501/211**, 1 500 Kč (bez DPH, pokud firma není plátce)."
+        },
+        {
+          "type": "example",
+          "question": "Firma na konci roku spočítá, že odpisy stroje za rok jsou 40 000 Kč. Podle jakého dokladu se zaúčtují?",
+          "answer": "Odpisy nikdo zvenku nefakturuje, proto firma vystaví **interní doklad** (výpočet odpisů). Zaúčtuje se **551/082**, 40 000 Kč (náklad na odpisy a oprávky ke stroji)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Bankovní výpis neschovávám, platby přece uvidím v internetovém bankovnictví.",
+          "right": "Bankovní výpis je **účetní doklad**. Musí být uložený a archivovaný jako ostatní doklady (i v elektronické podobě).",
+          "why": "Při kontrole musí firma doložit každý zápis. Internetové bankovnictví může za pár let zaniknout, doklad musí vydržet celou dobu archivace."
+        },
+        {
+          "type": "summary",
+          "text": "Účtovat se smí jen podle účetního dokladu. Nejčastější doklady jsou faktury (přijaté a vydané), pokladní doklady (PPD, VPD), bankovní výpisy a interní doklady. Doklady jsou vnější nebo vnitřní, jednotlivé nebo sběrné."
+        }
+      ]
+    },
+    {
+      "title": "Kontrola a cesta dokladu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Doklad, na kterém chybí datum nebo podpis, je jako řidičák bez fotky – nikdo nepozná, jestli platí. Zákon o účetnictví proto přesně říká, co na dokladu musí být."
+        },
+        {
+          "type": "text",
+          "text": "Uvidíš, co doklad musí obsahovat, jakou cestou putuje firmou, jak dlouho se schovává a jak se smí opravit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Účetní doklad",
+          "definition": "Připomenutí: průkazný záznam o účetním případu, bez kterého se nesmí účtovat.",
+          "example": "Faktura, pokladní doklad, bankovní výpis, interní doklad."
+        },
+        {
+          "type": "term",
+          "term": "Náležitosti dokladu",
+          "definition": "Údaje, které podle § 11 zákona o účetnictví musí doklad obsahovat. Chybí-li, doklad není průkazný.",
+          "example": "Číslo dokladu, datum, částka, podpis."
+        },
+        {
+          "type": "term",
+          "term": "Podpisový záznam",
+          "definition": "Podpis (vlastnoruční nebo elektronický) osoby, která za případ odpovídá, a osoby, která ho zaúčtovala.",
+          "example": "Vedoucí dílny podepíše výdejku, účetní podepíše zaúčtování."
+        },
+        {
+          "type": "term",
+          "term": "Předkontace",
+          "definition": "Vyznačení na dokladu, na které účty se zaúčtuje (MD/D).",
+          "example": "Na fakturu za opravu napíše účetní 511/321."
+        },
+        {
+          "type": "heading",
+          "text": "Náležitosti účetního dokladu (§ 11)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "označení dokladu (např. číslo FAP 2026/154),",
+            "obsah účetního případu a jeho účastníci (co se stalo, kdo a s kým),",
+            "peněžní částka nebo cena za měrnou jednotku a množství,",
+            "okamžik vyhotovení dokladu,",
+            "okamžik uskutečnění účetního případu, pokud se liší od vyhotovení,",
+            "podpisový záznam osoby odpovědné za účetní případ a osoby odpovědné za jeho zaúčtování."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Plátci DPH musí na **daňovém dokladu** mít navíc údaje podle zákona o DPH (např. DIČ, základ daně, sazbu a výši daně)."
+        },
+        {
+          "type": "heading",
+          "text": "Oběh dokladu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Vyhotovení nebo přijetí** dokladu.",
+            "**Věcná kontrola** – stalo se to opravdu? Sedí množství, cena, kvalita?",
+            "**Formální kontrola** – má doklad všechny náležitosti a sedí výpočty?",
+            "**Předkontace** – určí se účty MD/D.",
+            "**Zaúčtování** do deníku a hlavní knihy.",
+            "**Úschova a archivace**."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Účetní doklady a účetní knihy – jak dlouho uschovat?",
+                "back": "**5 let** od konce účetního období (zákon o účetnictví)."
+              },
+              {
+                "front": "Účetní závěrka a výroční zpráva – jak dlouho?",
+                "back": "**10 let** od konce účetního období."
+              },
+              {
+                "front": "Daňové doklady k DPH – jak dlouho?",
+                "back": "**10 let** od konce zdaňovacího období, ve kterém se plnění uskutečnilo (zákon o DPH)."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Než kartičku otočíš, odhadni lhůtu. Pozor: daňové zákony mohou vyžadovat delší úschovu, než říká zákon o účetnictví."
+        },
+        {
+          "type": "heading",
+          "text": "Oprava dokladu a zápisu"
+        },
+        {
+          "type": "text",
+          "text": "Opravou nesmí vzniknout nečitelný záznam. Nic se nemaže ani nepřepisuje korektorem. **Opravný záznam** obsahuje, co se opravuje, podpis osoby, která opravu provedla, a okamžik opravy. Chybné zaúčtování se opraví **opravným zápisem**: buď se zaúčtuje stejná předkontace se zápornou částkou (**storno**), nebo se zaúčtuje opačně a pak správně."
+        },
+        {
+          "type": "example",
+          "question": "Účetní omylem zaúčtovala nákup materiálu 4 000 Kč jako 518/321 místo 501/321. Jak chybu opraví stornem?",
+          "answer": "1) Storno chybného zápisu: **518/321 −4 000 Kč** (červeně nebo se znaménkem minus). 2) Správný zápis: **501/321 4 000 Kč**. Na účtu 518 zbude nula a na 501 je správných 4 000 Kč."
+        },
+        {
+          "type": "example",
+          "question": "Doklad o nákupu je z 5. 3. 2026, účtovalo se 20. 3. 2026. Kdy firma doklad nejdřív může skartovat podle zákona o účetnictví?",
+          "answer": "Lhůta je 5 let **od konce účetního období**, kterého se doklad týká. Účetní období končí 31. 12. 2026 → doklad se uschovává do konce roku **2031**, skartovat se smí od roku 2032 (pokud nevyžaduje delší úschovu jiný zákon, např. zákon o DPH u daňových dokladů)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Překlep na dokladu přetřu korektorem a napíšu správné číslo.",
+          "right": "Chybný údaj se **přeškrtne tak, aby zůstal čitelný**, připíše se správný, datum opravy a podpis toho, kdo opravil.",
+          "why": "Zákon o účetnictví zakazuje opravy, po kterých je původní záznam nečitelný. Kontrola musí vidět, co se změnilo a kdo to udělal."
+        },
+        {
+          "type": "summary",
+          "text": "Doklad musí mít náležitosti podle § 11: označení, obsah a účastníky, částku, okamžik vyhotovení a uskutečnění a podpisové záznamy. Projde věcnou a formální kontrolou, předkontací, zaúčtováním a archivací (doklady 5 let, účetní závěrka 10 let). Opravy musí zůstat čitelné."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "truefalse",
+      "question": "Účetní případ se smí zaúčtovat jen na základě účetního dokladu.",
+      "answer": true,
+      "explanation": "Bez dokladu se v účetnictví nesmí nic zapsat."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se označuje doklad o výdeji hotovosti z pokladny?",
+      "options": [
+        "VPD",
+        "PPD",
+        "FAV",
+        "BV"
+      ],
+      "answer": 0,
+      "explanation": "VPD = výdajový pokladní doklad, PPD = příjmový."
+    },
+    {
+      "type": "choice",
+      "question": "Který doklad je vnitřní?",
+      "options": [
+        "výdejka materiálu ze skladu",
+        "faktura od dodavatele",
+        "bankovní výpis",
+        "účtenka z čerpací stanice"
+      ],
+      "answer": 0,
+      "explanation": "Výdejka vzniká uvnitř firmy, ostatní přicházejí zvenku."
+    },
+    {
+      "type": "choice",
+      "question": "Co NENÍ povinnou náležitostí účetního dokladu podle zákona o účetnictví?",
+      "options": [
+        "razítko firmy",
+        "označení dokladu",
+        "peněžní částka",
+        "podpisový záznam"
+      ],
+      "answer": 0,
+      "explanation": "Razítko zákon nevyžaduje. Povinné jsou označení, obsah a účastníci, částka, okamžiky a podpisové záznamy."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď oběh účetního dokladu.",
+      "items": [
+        "přijetí dokladu",
+        "věcná a formální kontrola",
+        "předkontace",
+        "zaúčtování",
+        "archivace"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik let se podle zákona o účetnictví uschovávají účetní doklady? (číslo)",
+      "answers": [
+        "5",
+        "pět"
+      ],
+      "explanation": "Účetní doklady a knihy 5 let od konce účetního období, účetní závěrka 10 let."
+    },
+    {
+      "type": "input",
+      "question": "Kolik let se uschovává účetní závěrka? (číslo)",
+      "answers": [
+        "10",
+        "deset"
+      ],
+      "explanation": "Účetní závěrka a výroční zpráva se uschovávají 10 let od konce účetního období."
+    },
+    {
+      "type": "choice",
+      "question": "Firma koupí za hotové kancelářský papír za 800 Kč (není plátce DPH). Předkontace:",
+      "options": [
+        "501/211",
+        "211/501",
+        "501/221",
+        "518/211"
+      ],
+      "answer": 0,
+      "explanation": "Papír se spotřebuje → 501 Spotřeba materiálu na MD, pokladna klesá → 211 na D.",
+      "hints": [
+        "Je papír materiál, nebo služba?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Chybný údaj na dokladu se smí opravit korektorem, když se pak dopíše správná hodnota.",
+      "answer": false,
+      "explanation": "Oprava nesmí vést k nečitelnosti. Původní údaj se přeškrtne čitelně a připojí se podpis a datum opravy."
+    },
+    {
+      "type": "choice",
+      "question": "Odpisy majetku za rok se zaúčtují na základě:",
+      "options": [
+        "interního dokladu",
+        "faktury přijaté",
+        "příjmového pokladního dokladu",
+        "bankovního výpisu"
+      ],
+      "answer": 0,
+      "explanation": "Odpisy nikdo nefakturuje, firma si vystaví interní doklad."
+    },
+    {
+      "type": "choice",
+      "question": "Nákup 3 000 Kč byl chybně zaúčtován jako 518/321 místo 501/321. Jak se opraví stornem?",
+      "options": [
+        "518/321 −3 000 a pak 501/321 3 000",
+        "501/518 3 000 a nic dalšího",
+        "321/518 3 000 a pak 321/501 3 000",
+        "chybný zápis se vymaže z deníku"
+      ],
+      "answer": 0,
+      "explanation": "Storno = stejná předkontace se zápornou částkou, pak správný zápis. Mazat zápisy se nesmí."
+    },
+    {
+      "type": "match",
+      "question": "Spoj doklad s případem.",
+      "pairs": [
+        [
+          "faktura vydaná",
+          "účtujeme zákazníkovi za opravu"
+        ],
+        [
+          "faktura přijatá",
+          "dodavatel nám účtuje materiál"
+        ],
+        [
+          "příjmový pokladní doklad",
+          "zákazník platí hotově do pokladny"
+        ],
+        [
+          "bankovní výpis",
+          "odběratel zaplatil na účet"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Věcná kontrola dokladu ověřuje, zda se případ opravdu stal a zda sedí množství a cena.",
+      "answer": true,
+      "explanation": "Formální kontrola pak ověřuje náležitosti a správnost výpočtů."
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj náležitosti účetního dokladu podle zákona o účetnictví.",
+      "answer": "Označení dokladu; obsah účetního případu a jeho účastníky; peněžní částku nebo cenu za jednotku a množství; okamžik vyhotovení; okamžik uskutečnění případu, liší-li se; podpisový záznam osoby odpovědné za případ a osoby odpovědné za zaúčtování."
+    },
+    {
+      "type": "open",
+      "question": "Jak se správně opravuje chybný účetní zápis?",
+      "answer": "Chybný zápis se nesmí smazat. Opraví se opravným zápisem: buď stornem (stejná předkontace se zápornou částkou) a novým správným zápisem, nebo zaúčtováním opačné předkontace a pak správné. Oprava musí být doložená a dohledatelná."
+    }
+  ]
+}

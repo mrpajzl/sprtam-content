@@ -1,0 +1,466 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "financni-ucty",
+  "title": "Finanční účty: pokladna, banka, úvěry",
+  "emoji": "🏦",
+  "explanations": [
+    {
+      "title": "Kde firma drží peníze",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kavárna U Mlýna má hotovost v kase, peníze na účtu v bance a zásobu poštovních známek. Občas si půjčí od banky. Všechno jsou to peníze nebo věci, které se za peníze snadno vymění."
+        },
+        {
+          "type": "text",
+          "text": "Tyto položky sleduje **účtová třída 2**. Patří k nejčastějším zápisům v účetnictví, protože skoro každý případ jednou skončí platbou."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Strany účtu MD a D",
+          "definition": "Připomenutí: každý případ se zapíše podvojně – na stranu **Má dáti (MD)** jednoho účtu a **Dal (D)** druhého. U aktivních účtů jde přírůstek na MD, úbytek na D.",
+          "example": "211/221 = Pokladna MD, Bankovní účty D."
+        },
+        {
+          "type": "term",
+          "term": "211 Pokladna",
+          "definition": "Aktivní účet pro hotové peníze (bankovky a mince) ve firmě. Pohyb dokládají pokladní doklady PPD a VPD.",
+          "example": "Tržba v hotovosti 3 000 Kč zvýší pokladnu."
+        },
+        {
+          "type": "term",
+          "term": "221 Bankovní účty",
+          "definition": "Aktivní účet pro peníze na běžných bankovních účtech firmy. Dokladem je **bankovní výpis**.",
+          "example": "Odběratel zaplatí fakturu převodem na účet."
+        },
+        {
+          "type": "term",
+          "term": "213 Ceniny",
+          "definition": "Aktivní účet pro věci, které mají hodnotu peněz a firma je nakoupila předem: poštovní známky, kolky, dálniční známky, stravenky.",
+          "example": "Nákup známek za 1 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "261 Peníze na cestě",
+          "definition": "Přechodný účet pro peníze, které už opustily jedno místo, ale do druhého ještě nedorazily, nebo k nim zatím chybí druhý doklad.",
+          "example": "Peníze vybrané z bankomatu, které ještě nejsou v pokladně."
+        },
+        {
+          "type": "term",
+          "term": "Bankovní úvěr",
+          "definition": "Peníze půjčené od banky, které firma musí vrátit i s **úrokem**. **Krátkodobý** (do 1 roku) se účtuje na 231, **dlouhodobý** na 461.",
+          "example": "Úvěr 500 000 Kč na 5 let = účet 461."
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější případy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "případ",
+            "doklad",
+            "MD",
+            "D"
+          ],
+          "rows": [
+            [
+              "tržba za služby v hotovosti",
+              "PPD",
+              "211",
+              "602"
+            ],
+            [
+              "odběratel zaplatí fakturu na účet",
+              "BV",
+              "221",
+              "311"
+            ],
+            [
+              "úhrada faktury dodavateli z účtu",
+              "BV",
+              "321",
+              "221"
+            ],
+            [
+              "nákup poštovních známek v hotovosti",
+              "VPD",
+              "213",
+              "211"
+            ],
+            [
+              "spotřeba známek (poštovné)",
+              "ID",
+              "518",
+              "213"
+            ],
+            [
+              "bankovní poplatky",
+              "BV",
+              "568",
+              "221"
+            ],
+            [
+              "přijetí krátkodobého úvěru na účet",
+              "BV",
+              "221",
+              "231"
+            ],
+            [
+              "zaplacení úroku z úvěru",
+              "BV",
+              "562",
+              "221"
+            ],
+            [
+              "splátka krátkodobého úvěru",
+              "BV",
+              "231",
+              "221"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zkratky: PPD a VPD = příjmový a výdajový pokladní doklad, BV = bankovní výpis, ID = interní doklad."
+        },
+        {
+          "type": "example",
+          "question": "Kavárna koupí v hotovosti poštovní známky do zásoby za 1 000 Kč. Během měsíce nalepí na dopisy známky za 400 Kč. Zaúčtuj a urči zůstatek cenin.",
+          "answer": "Nákup do zásoby: ceniny rostou, pokladna klesá → **213/211** 1 000 Kč. Spotřeba známek je poštovné, tedy služba → **518/213** 400 Kč. Zůstatek účtu 213 = 1 000 − 400 = **600 Kč**."
+        },
+        {
+          "type": "example",
+          "question": "Firma 1. 10. přijme krátkodobý úvěr 120 000 Kč. Za tři měsíce zaplatí úrok 2 400 Kč a splátku 40 000 Kč. Zaúčtuj a urči zůstatek úvěru.",
+          "answer": "Přijetí: **221/231** 120 000. Úrok je náklad: **562/221** 2 400. Splátka: **231/221** 40 000. Zůstatek úvěru na 231 = 120 000 − 40 000 = **80 000 Kč**. Úrok zůstatek úvěru nesnižuje."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zaplacený úrok z úvěru zaúčtuji jako splátku 231/221.",
+          "right": "Úrok je **cena za půjčení peněz**, tedy finanční náklad: **562/221**. Úvěr (231) snižuje jen splátka jistiny.",
+          "why": "Dluh vůči bance je jen půjčená částka (jistina). Úrok dluh nesnižuje – je to cena za peníze."
+        },
+        {
+          "type": "summary",
+          "text": "Třída 2 sleduje peníze a krátkodobé úvěry: 211 Pokladna, 213 Ceniny, 221 Bankovní účty, 231 Krátkodobé bankovní úvěry, 261 Peníze na cestě. Úroky jsou náklad 562, bankovní poplatky 568, splátka jistiny snižuje úvěr."
+        }
+      ]
+    },
+    {
+      "title": "Peníze na cestě krok za krokem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Účetní dostane doklady v různou dobu. Pokladní doklad o tom, že peníze z banky přišly do pokladny, má hned. Bankovní výpis přijde až za pár dní."
+        },
+        {
+          "type": "text",
+          "text": "Aby se mohlo účtovat podle každého dokladu samostatně, používá se mezikrok – účet **261 Peníze na cestě**. Ukážeme si to na dvou situacích, které se v praxi opakují každý týden."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Finanční účty",
+          "definition": "Účty třídy 2 pro peníze: **211 Pokladna**, **221 Bankovní účty**, **213 Ceniny**. Jsou aktivní – přírůstek na MD, úbytek na D.",
+          "example": "Výběr z banky: pokladna roste, banka klesá."
+        },
+        {
+          "type": "term",
+          "term": "Peníze na cestě (261)",
+          "definition": "Přechodný účet. Zachytí peníze mezi bankou a pokladnou, dokud nemáme oba doklady. Po zaúčtování obou dokladů je jeho zůstatek nulový.",
+          "example": "Pokladní odnese tržbu do banky v pátek, výpis přijde v pondělí."
+        },
+        {
+          "type": "term",
+          "term": "Zůstatek",
+          "definition": "Rozdíl mezi stranami MD a D účtu. U 261 musí být po dokončení případu nula.",
+          "example": "MD 50 000, D 50 000 → zůstatek 0."
+        },
+        {
+          "type": "heading",
+          "text": "Výběr z banky do pokladny"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pokladní vybere peníze z banky a vloží je do pokladny. Vystaví **PPD**: **211/261**.",
+            "Přijde **bankovní výpis** s výběrem: **261/221**.",
+            "Účet 261 má stejnou částku na MD i D → zůstatek nula. Pokladna vzrostla, banka klesla."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Odvod hotovosti z pokladny do banky"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Pokladní vybere peníze z pokladny a odnese je do banky. Vystaví **VPD**: **261/211**.",
+            "Přijde **bankovní výpis** s vkladem: **221/261**.",
+            "Zůstatek 261 je opět nula. Banka vzrostla, pokladna klesla."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "gap",
+          "props": {
+            "items": [
+              {
+                "before": "Výběr z banky, PPD: 211 / ",
+                "after": "",
+                "options": [
+                  "261",
+                  "221",
+                  "311"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Výběr z banky, bankovní výpis: ",
+                "after": " / 221",
+                "options": [
+                  "261",
+                  "211",
+                  "321"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Odvod tržby do banky, VPD: 261 / ",
+                "after": "",
+                "options": [
+                  "211",
+                  "221",
+                  "602"
+                ],
+                "answer": 0
+              },
+              {
+                "before": "Odvod tržby do banky, výpis: ",
+                "after": " / 261",
+                "options": [
+                  "221",
+                  "211",
+                  "311"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Doplň čísla účtů. Vždy si nejdřív řekni, který doklad účtuješ a odkud kam peníze tečou."
+        },
+        {
+          "type": "heading",
+          "text": "Hotovost a zákon"
+        },
+        {
+          "type": "text",
+          "text": "Podle zákona o omezení plateb v hotovosti nesmí platba v hotovosti mezi dvěma stranami za jeden den překročit **270 000 Kč** (stav 2026). Vyšší částky se platí převodem na účet."
+        },
+        {
+          "type": "example",
+          "question": "Pokladna má PS 15 000 Kč. Během dne: PPD výběr z banky 30 000 Kč (výpis dosud nepřišel), VPD nákup čisticích prostředků 1 200 Kč. Jaký je stav pokladny a účtu 261?",
+          "answer": "Pokladna: 15 000 + 30 000 − 1 200 = **43 800 Kč**. Výběr: 211/261 30 000, nákup: 501/211 1 200. Účet 261 má zatím jen D 30 000 → **zůstatek 30 000 Kč na straně D** (čeká se na výpis). Až výpis přijde (261/221), bude zůstatek 0."
+        },
+        {
+          "type": "example",
+          "question": "Kavárna odvede v pátek tržbu 48 000 Kč z pokladny do banky. Výpis přijde v úterý. Zaúčtuj oba doklady.",
+          "answer": "Pátek, VPD: **261/211** 48 000 (pokladna klesá, peníze jsou na cestě). Úterý, bankovní výpis: **221/261** 48 000 (peníze dorazily na účet). Účet 261: MD 48 000, D 48 000 → zůstatek **0**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Na účtu 261 Peníze na cestě může zůstat zůstatek trvale – je to přece jen pomocný účet.",
+          "right": "Zůstatek 261 má trvat jen **pár dní**, než přijde druhý doklad. Dlouhý zůstatek znamená chybu nebo ztracený doklad.",
+          "why": "Peníze nemohou být „na cestě“ měsíce. Při uzávěrce se zůstatek 261 vždy prověří."
+        },
+        {
+          "type": "summary",
+          "text": "Pohyby mezi bankou a pokladnou se účtují přes 261 Peníze na cestě: výběr 211/261 a 261/221, odvod 261/211 a 221/261. Každý doklad se účtuje samostatně a zůstatek 261 se po obou dokladech vynuluje."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Jaké číslo má účet Pokladna?",
+      "options": [
+        "211",
+        "221",
+        "213",
+        "261"
+      ],
+      "answer": 0,
+      "explanation": "211 Pokladna, 213 Ceniny, 221 Bankovní účty, 261 Peníze na cestě."
+    },
+    {
+      "type": "choice",
+      "question": "Zákazník zaplatí za službu hotově 2 500 Kč (firma není plátce DPH). Předkontace:",
+      "options": [
+        "211/602",
+        "602/211",
+        "211/604",
+        "221/602"
+      ],
+      "answer": 0,
+      "explanation": "Pokladna roste (MD 211), vzniká výnos z prodeje služeb (D 602)."
+    },
+    {
+      "type": "choice",
+      "question": "Banka strhne z účtu poplatek za vedení účtu 150 Kč. Předkontace:",
+      "options": [
+        "568/221",
+        "221/568",
+        "562/221",
+        "518/211"
+      ],
+      "answer": 0,
+      "explanation": "Bankovní poplatky jsou ostatní finanční náklady 568, bankovní účet klesá."
+    },
+    {
+      "type": "choice",
+      "question": "Firma zaplatí z účtu úrok z úvěru 3 000 Kč. Předkontace:",
+      "options": [
+        "562/221",
+        "231/221",
+        "221/562",
+        "568/231"
+      ],
+      "answer": 0,
+      "explanation": "Úrok je náklad 562 Úroky. Splátka jistiny by byla 231/221.",
+      "hints": [
+        "Snižuje úrok dluh vůči bance?"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj případ s předkontací.",
+      "pairs": [
+        [
+          "výběr z banky – PPD",
+          "211/261"
+        ],
+        [
+          "výběr z banky – bankovní výpis",
+          "261/221"
+        ],
+        [
+          "odvod tržby do banky – VPD",
+          "261/211"
+        ],
+        [
+          "odvod tržby do banky – výpis",
+          "221/261"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Po zaúčtování obou dokladů má účet 261 Peníze na cestě zůstatek nula.",
+      "answer": true,
+      "explanation": "261 je přechodný účet; částka jde na MD i D."
+    },
+    {
+      "type": "input",
+      "question": "Firma přijala krátkodobý úvěr 200 000 Kč, zaplatila úrok 4 000 Kč a splátku 50 000 Kč. Zůstatek úvěru v Kč =",
+      "answers": [
+        "150000",
+        "150 000"
+      ],
+      "explanation": "200 000 − 50 000 = 150 000 Kč. Úrok je náklad a dluh nesnižuje.",
+      "hints": [
+        "Které z plateb snižují dluh vůči bance?"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Firma koupí do zásoby poštovní známky za 1 200 Kč v hotovosti. Předkontace:",
+      "options": [
+        "213/211",
+        "518/221",
+        "211/213",
+        "501/211"
+      ],
+      "answer": 0,
+      "explanation": "Známky do zásoby jsou ceniny 213; pokladna klesá."
+    },
+    {
+      "type": "choice",
+      "question": "Na který účet patří úvěr splatný za 4 roky?",
+      "options": [
+        "461",
+        "231",
+        "221",
+        "321"
+      ],
+      "answer": 0,
+      "explanation": "Dlouhodobé bankovní úvěry (nad 1 rok) se účtují ve třídě 4 na 461, krátkodobé na 231."
+    },
+    {
+      "type": "input",
+      "question": "Pokladna: PS 12 000 Kč, PPD tržby 18 000 Kč, VPD 7 500 Kč. KS pokladny v Kč =",
+      "answers": [
+        "22500",
+        "22 500"
+      ],
+      "explanation": "12 000 + 18 000 − 7 500 = 22 500 Kč."
+    },
+    {
+      "type": "choice",
+      "question": "Odběratel zaplatí fakturu 36 300 Kč na bankovní účet. Předkontace:",
+      "options": [
+        "221/311",
+        "311/221",
+        "221/321",
+        "321/221"
+      ],
+      "answer": 0,
+      "explanation": "Peníze v bance rostou (MD 221), pohledávka za odběratelem klesá (D 311)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle zákona o omezení plateb v hotovosti (stav 2026) lze za jeden den hotově zaplatit jednomu příjemci nejvýš 270 000 Kč.",
+      "answer": true,
+      "explanation": "Platby nad tuto hranici se musí provést bezhotovostně."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď zaúčtování odvodu tržby z pokladny do banky.",
+      "items": [
+        "pokladní vystaví VPD",
+        "zaúčtuje se 261/211",
+        "přijde bankovní výpis",
+        "zaúčtuje se 221/261"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, k čemu slouží účet 261 Peníze na cestě, a ukaž to na výběru z banky do pokladny.",
+      "answer": "Je to přechodný účet pro peníze mezi bankou a pokladnou, aby se každý doklad mohl zaúčtovat samostatně. Výběr: podle PPD 211/261, podle bankovního výpisu 261/221. Pak má 261 nulový zůstatek."
+    },
+    {
+      "type": "open",
+      "question": "Jak zaúčtuješ přijetí, úrok a splátku krátkodobého bankovního úvěru?",
+      "answer": "Přijetí úvěru na účet 221/231, zaplacený úrok jako náklad 562/221, splátka jistiny 231/221. Úrok zůstatek úvěru nesnižuje."
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zasoby",
+  "title": "Zásoby: materiál a zboží",
+  "emoji": "📦",
+  "explanations": [
+    {
+      "title": "Cesta přes sklad",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Truhlárna Dub s.r.o. nakupuje desky a lepidlo, ze kterých vyrábí nábytek. Vedle toho prodává hotové kování, které sama nevyrábí. Obojí leží chvíli ve skladu."
+        },
+        {
+          "type": "text",
+          "text": "Účetnictví musí vědět, kolik je na skladě, kolik se spotřebovalo a kolik se prodalo. Jinak by nikdo neznal skutečné náklady ani zisk."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zásoby",
+          "definition": "Oběžný majetek, který se spotřebuje nebo prodá, obvykle do jednoho roku. Účtují se v **účtové třídě 1**.",
+          "example": "Desky, lepidlo, kování na prodej, hotové skříně."
+        },
+        {
+          "type": "term",
+          "term": "Materiál",
+          "definition": "Zásoby, které se **spotřebují** při výrobě nebo provozu.",
+          "example": "Dřevěné desky, šrouby, čisticí prostředky."
+        },
+        {
+          "type": "term",
+          "term": "Zboží",
+          "definition": "Zásoby nakoupené proto, aby se **prodaly dál** beze změny.",
+          "example": "Kování koupené od výrobce a prodávané zákazníkům."
+        },
+        {
+          "type": "term",
+          "term": "Pořizovací cena",
+          "definition": "Cena, za kterou se zásoba koupila, **plus vedlejší pořizovací náklady** (doprava, clo, pojištění při přepravě, provize). Plátce DPH do ní DPH nezahrnuje, protože si ji odečte.",
+          "example": "Desky za 20 000 Kč + doprava 1 000 Kč = pořizovací cena 21 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "DPH na vstupu (343)",
+          "definition": "Daň z přidané hodnoty z faktury od dodavatele. Plátce DPH si ji odečte od daně, kterou má odvést. Účtuje se na **343 Daň z přidané hodnoty** na MD.",
+          "example": "Faktura 20 000 Kč + DPH 21 % 4 200 Kč."
+        },
+        {
+          "type": "heading",
+          "text": "Způsob A: vše přes sklad"
+        },
+        {
+          "type": "table",
+          "head": [
+            "případ",
+            "MD",
+            "D"
+          ],
+          "rows": [
+            [
+              "faktura za materiál (cena bez DPH)",
+              "111 Pořízení materiálu",
+              "321 Dodavatelé"
+            ],
+            [
+              "DPH na vstupu z faktury",
+              "343 DPH",
+              "321"
+            ],
+            [
+              "faktura za dopravu materiálu (bez DPH)",
+              "111",
+              "321"
+            ],
+            [
+              "příjem materiálu na sklad (příjemka)",
+              "112 Materiál na skladě",
+              "111"
+            ],
+            [
+              "výdej materiálu do spotřeby (výdejka)",
+              "501 Spotřeba materiálu",
+              "112"
+            ],
+            [
+              "faktura za zboží (bez DPH)",
+              "131 Pořízení zboží",
+              "321"
+            ],
+            [
+              "příjem zboží na sklad",
+              "132 Zboží na skladě a v prodejnách",
+              "131"
+            ],
+            [
+              "prodej zboží na fakturu (cena bez DPH)",
+              "311 Odběratelé",
+              "604 Tržby za zboží"
+            ],
+            [
+              "DPH na výstupu z prodeje",
+              "311",
+              "343"
+            ],
+            [
+              "vyskladnění prodaného zboží (v pořizovací ceně)",
+              "504 Prodané zboží",
+              "132"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Účet 111 (131) je **průchozí**: zachytí všechno, co tvoří pořizovací cenu, a po příjmu na sklad má nulový zůstatek. Materiál, který je zaplacený, ale ještě nedorazil, se účtuje na **119 Materiál na cestě**."
+        },
+        {
+          "type": "example",
+          "question": "Truhlárna (plátce DPH) koupí 100 desek po 200 Kč bez DPH, DPH 21 %. Doprava stojí 1 000 Kč bez DPH (DPH 21 %). Desky přijme na sklad a 40 ks vydá do výroby. Zaúčtuj.",
+          "answer": "Faktura za desky: **111/321** 20 000, **343/321** 4 200. Doprava: **111/321** 1 000, **343/321** 210. Pořizovací cena = 21 000 Kč, tedy 210 Kč za desku. Příjemka: **112/111** 21 000. Výdejka 40 ks · 210 Kč: **501/112** 8 400 Kč."
+        },
+        {
+          "type": "example",
+          "question": "Truhlárna koupí kování za 10 000 Kč bez DPH a celé ho prodá za 15 000 Kč bez DPH (DPH 21 %). Zaúčtuj prodej a spočítej obchodní marži.",
+          "answer": "Nákup: 131/321 10 000 a 132/131 10 000 (DPH 343/321 2 100). Prodej: **311/604** 15 000, **311/343** 3 150. Vyskladnění: **504/132** 10 000. Obchodní marže = tržby 604 − náklady 504 = 15 000 − 10 000 = **5 000 Kč**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při nákupu materiálu na sklad hned účtuji náklad 501.",
+          "right": "Při způsobu A je nákup majetek (111 → 112). Náklad **501 vznikne až výdejem ze skladu** do spotřeby.",
+          "why": "Materiál na skladě se ještě nespotřeboval – je to stále majetek firmy. Náklad vznikne, až se opravdu použije."
+        },
+        {
+          "type": "summary",
+          "text": "Materiál se spotřebuje, zboží se prodá. Při způsobu A jde nákup přes 111 (131) na sklad 112 (132); náklad 501 nebo 504 vzniká až výdejem. Pořizovací cena = cena + vedlejší pořizovací náklady, bez odpočitatelné DPH."
+        }
+      ]
+    },
+    {
+      "title": "Kolik stojí, co vydám",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Truhlárna koupila desky v lednu po 200 Kč a v březnu po 230 Kč. Na skladě leží pomíchané. Když 150 desek vydá do výroby, za kolik je má zaúčtovat?"
+        },
+        {
+          "type": "text",
+          "text": "Zákon na to nabízí pravidla – metody oceňování. Uvidíš také druhý způsob účtování zásob (způsob B) a co se stane, když inventura najde méně, než má být."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Zásoby a sklad",
+          "definition": "Připomenutí: zásoby jsou materiál (spotřebuje se) a zboží (prodá se). Na skladě jsou na účtech **112 Materiál na skladě** a **132 Zboží na skladě**, spotřeba na **501**, prodej na **504**.",
+          "example": "Výdej desek do výroby: 501/112."
+        },
+        {
+          "type": "term",
+          "term": "FIFO",
+          "definition": "Z angl. *first in, first out* – co první přišlo, první odchází. Výdej se ocení cenou **nejstarších** zásob.",
+          "example": "Nejdřív se vydají lednové desky po 200 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Vážený aritmetický průměr",
+          "definition": "Výdej se ocení **průměrnou cenou** všech kusů na skladě: celková cena ÷ počet kusů.",
+          "example": "100 ks po 200 a 200 ks po 230 → průměr 220 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Inventarizace",
+          "definition": "Ověření, zda skutečný stav majetku odpovídá účetnictví. Skutečný stav se zjistí **inventurou** (spočítáním, převážením) a zapíše do **inventurního soupisu**.",
+          "example": "Na konci roku se spočítají desky na skladě."
+        },
+        {
+          "type": "term",
+          "term": "Manko a přebytek",
+          "definition": "**Manko** – skutečně je méně, než ukazuje účetnictví. **Přebytek** – skutečně je víc.",
+          "example": "Účetně 50 desek, napočítáno 47 → manko 3 desky."
+        },
+        {
+          "type": "heading",
+          "text": "Oceňování výdeje"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Zjisti, kolik kusů a za jakou cenu je na skladě (počáteční stav + nákupy).",
+            "**FIFO:** vydávej postupně od nejstarší dodávky a sečti ceny.",
+            "**Průměr:** sečti cenu všech kusů, vyděl jejich počtem a vynásob vydaným množstvím.",
+            "Vydané množství zaúčtuj 501/112 (zboží 504/132).",
+            "Metodu dodržuj trvale (zásada stálosti metod). Metoda LIFO v ČR povolená není."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Na skladě: 100 desek po 200 Kč (leden), pak nákup 200 desek po 230 Kč. Do výroby se vydá 150 desek. Oceň výdej metodou FIFO a průměrem.",
+          "answer": "**FIFO:** 100 · 200 + 50 · 230 = 20 000 + 11 500 = **31 500 Kč**. **Průměr:** (20 000 + 46 000) ÷ 300 = 220 Kč; 150 · 220 = **33 000 Kč**. Zaúčtuje se 501/112 zvolenou částkou."
+        },
+        {
+          "type": "heading",
+          "text": "Způsob B"
+        },
+        {
+          "type": "text",
+          "text": "Firma si může místo způsobu A zvolit **způsob B** (volí ho hlavně menší firmy): nákup jde rovnou do nákladů a sklad se upraví jen na konci roku podle inventury."
+        },
+        {
+          "type": "table",
+          "head": [
+            "případ (způsob B)",
+            "MD",
+            "D"
+          ],
+          "rows": [
+            [
+              "během roku: faktura za materiál",
+              "501",
+              "321"
+            ],
+            [
+              "na konci roku: zrušení počátečního stavu zásob",
+              "501",
+              "112"
+            ],
+            [
+              "na konci roku: zaúčtování konečného stavu podle inventury",
+              "112",
+              "501"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Manka a přebytky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "manko **v normě přirozených úbytků** (vysychání, rozprašování) materiálu: **501/112**, zboží: **504/132**,",
+            "manko **nad normu**: **549 Manka a škody z provozní činnosti** na MD, sklad na D (549/112),",
+            "náhrada manka, kterou zaplatí odpovědný zaměstnanec: **335/648** (pohledávka za zaměstnancem, ostatní provozní výnos),",
+            "přebytek materiálu: **112/501**, zboží: **132/504** (sníží náklad)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Účetně je na skladě lepidlo za 12 000 Kč, inventura zjistila 11 200 Kč. Norma přirozených úbytků je 300 Kč. Zbytek manka uhradí skladník. Zaúčtuj.",
+          "answer": "Manko celkem 800 Kč. V normě: **501/112** 300 Kč. Nad normu: **549/112** 500 Kč. Předpis náhrady skladníkovi: **335/648** 500 Kč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ceny dodávek se mění, tak letos použiju FIFO a příští rok průměr – podle toho, co dá menší zisk.",
+          "right": "Zvolenou metodu oceňování je nutné **používat trvale**. Změnit ji lze jen výjimečně a s vysvětlením v příloze účetní závěrky.",
+          "why": "Zásada stálosti metod zajišťuje, že jde účetnictví porovnávat rok po roce a že si firma nevylepšuje výsledek."
+        },
+        {
+          "type": "summary",
+          "text": "Výdej zásob se oceňuje metodou FIFO nebo váženým průměrem, metodu nelze libovolně měnit. Způsob B účtuje nákup rovnou do nákladů a sklad upraví na konci roku. Manko v normě jde do spotřeby (501, 504), nad normu na 549, přebytek snižuje náklad."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Způsob A: přijde faktura za materiál (bez DPH). Předkontace:",
+      "options": [
+        "111/321",
+        "501/321",
+        "112/321",
+        "321/111"
+      ],
+      "answer": 0,
+      "explanation": "Při způsobu A jde nákup nejdřív na 111 Pořízení materiálu."
+    },
+    {
+      "type": "choice",
+      "question": "Způsob A: materiál se vydá ze skladu do výroby. Předkontace:",
+      "options": [
+        "501/112",
+        "112/501",
+        "112/111",
+        "504/132"
+      ],
+      "answer": 0,
+      "explanation": "Výdejem vznikne náklad 501 Spotřeba materiálu, sklad 112 klesá."
+    },
+    {
+      "type": "choice",
+      "question": "Prodané zboží se vyskladní. Předkontace:",
+      "options": [
+        "504/132",
+        "604/132",
+        "132/504",
+        "501/132"
+      ],
+      "answer": 0,
+      "explanation": "Náklad 504 Prodané zboží, sklad zboží 132 klesá. Tržba se účtuje zvlášť na 604."
+    },
+    {
+      "type": "input",
+      "question": "Materiál stojí 40 000 Kč bez DPH, doprava 2 000 Kč bez DPH, clo 1 500 Kč. Firma je plátce DPH. Pořizovací cena v Kč =",
+      "answers": [
+        "43500",
+        "43 500"
+      ],
+      "explanation": "40 000 + 2 000 + 1 500 = 43 500 Kč. Odpočitatelná DPH do pořizovací ceny nepatří.",
+      "hints": [
+        "Pořizovací cena = cena + vedlejší pořizovací náklady."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na skladě 50 ks po 100 Kč, pak nákup 100 ks po 120 Kč. Vydá se 80 ks. Ocenění výdeje metodou FIFO v Kč =",
+      "answers": [
+        "8600",
+        "8 600"
+      ],
+      "explanation": "50 · 100 + 30 · 120 = 5 000 + 3 600 = 8 600 Kč.",
+      "hints": [
+        "Nejdřív vydej všechny starší kusy."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Na skladě 50 ks po 100 Kč, pak nákup 100 ks po 130 Kč. Vážený aritmetický průměr na 1 ks v Kč =",
+      "answers": [
+        "120"
+      ],
+      "explanation": "(5 000 + 13 000) ÷ 150 = 18 000 ÷ 150 = 120 Kč.",
+      "hints": [
+        "Sečti cenu všech kusů a vyděl jejich počtem."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Manko materiálu nad normu přirozených úbytků se zaúčtuje:",
+      "options": [
+        "549/112",
+        "501/112",
+        "112/549",
+        "335/112"
+      ],
+      "answer": 0,
+      "explanation": "Manko nad normu je na 549 Manka a škody; manko v normě by šlo na 501."
+    },
+    {
+      "type": "choice",
+      "question": "Odpovědný zaměstnanec má uhradit manko 2 000 Kč. Předpis náhrady:",
+      "options": [
+        "335/648",
+        "331/648",
+        "648/335",
+        "211/549"
+      ],
+      "answer": 0,
+      "explanation": "Vznikne pohledávka za zaměstnancem (335) a ostatní provozní výnos (648)."
+    },
+    {
+      "type": "truefalse",
+      "question": "Při způsobu B se nákup materiálu během roku účtuje rovnou do nákladů na účet 501.",
+      "answer": true,
+      "explanation": "Sklad se pak upraví jen na konci roku podle inventury."
+    },
+    {
+      "type": "truefalse",
+      "question": "Metoda LIFO je v České republice povolená pro oceňování výdeje zásob.",
+      "answer": false,
+      "explanation": "Povolené jsou FIFO a vážený aritmetický průměr, LIFO ne."
+    },
+    {
+      "type": "match",
+      "question": "Spoj číslo účtu s názvem.",
+      "pairs": [
+        [
+          "111",
+          "Pořízení materiálu"
+        ],
+        [
+          "112",
+          "Materiál na skladě"
+        ],
+        [
+          "132",
+          "Zboží na skladě a v prodejnách"
+        ],
+        [
+          "504",
+          "Prodané zboží"
+        ],
+        [
+          "604",
+          "Tržby za zboží"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Zboží nakoupené za 24 000 Kč se prodalo za 33 000 Kč (obojí bez DPH). Obchodní marže v Kč =",
+      "answers": [
+        "9000",
+        "9 000"
+      ],
+      "explanation": "Tržby 604 − prodané zboží 504 = 33 000 − 24 000 = 9 000 Kč."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď účtování materiálu způsobem A.",
+      "items": [
+        "faktura od dodavatele 111/321",
+        "faktura za dopravu 111/321",
+        "příjem na sklad 112/111",
+        "výdej do spotřeby 501/112"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Porovnej způsob A a způsob B účtování zásob.",
+      "answer": "Při způsobu A jde nákup přes účet pořízení na sklad a náklad vzniká až výdejem ze skladu (501/112), takže účetnictví průběžně ukazuje stav skladu. Při způsobu B jde nákup rovnou do nákladů (501/321) a stav skladu se upraví jen na konci roku: zruší se počáteční stav (501/112) a zaúčtuje konečný stav podle inventury (112/501)."
+    },
+    {
+      "type": "open",
+      "question": "Co je inventarizace a jak se účtuje manko zásob?",
+      "answer": "Inventarizace ověřuje, zda skutečný stav majetku odpovídá účetnictví; skutečný stav se zjistí inventurou. Manko v normě přirozených úbytků se účtuje do spotřeby (501/112, u zboží 504/132), manko nad normu na 549 Manka a škody. Náhrada od zaměstnance se předepíše 335/648."
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "ucetnictvi-zaklady",
+  "title": "K čemu je účetnictví a kdo ho vede",
+  "emoji": "📚",
+  "explanations": [
+    {
+      "title": "Příběh firmy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Petra a Tomáš založili firmu Kolo servis s.r.o. Opravují kola a prodávají náhradní díly. Po roce se ptají: Vyděláváme? Kolik nám kdo dluží? Kolik daně zaplatíme?"
+        },
+        {
+          "type": "text",
+          "text": "Odpověď jim dá **účetnictví**. Je to pečlivý zápis všeho, co se ve firmě s penězi a majetkem stane. Zajímá majitele, banku, která půjčuje, i finanční úřad."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Účetnictví",
+          "definition": "Soustavný zápis majetku, dluhů, nákladů a výnosů firmy podle pravidel daných zákonem. Ukazuje, jak na tom firma je.",
+          "example": "Kolo servis s.r.o. zapisuje každý nákup dílů i každou opravu."
+        },
+        {
+          "type": "term",
+          "term": "Účetní jednotka",
+          "definition": "Kdo vede účetnictví – firma, spolek nebo podnikatel, kterému to ukládá zákon.",
+          "example": "Kolo servis s.r.o. je účetní jednotka."
+        },
+        {
+          "type": "term",
+          "term": "Účetní případ",
+          "definition": "Událost, která změní majetek, dluhy, náklady nebo výnosy, a proto se musí zapsat.",
+          "example": "Nákup pneumatik, výplata mzdy, oprava kola zákazníkovi."
+        },
+        {
+          "type": "term",
+          "term": "Zákon o účetnictví",
+          "definition": "Zákon č. **563/1991 Sb.** Určuje, kdo musí účtovat a podle jakých pravidel. Podrobnosti pro podnikatele doplňuje **vyhláška č. 500/2002 Sb.** a **České účetní standardy (ČÚS)**.",
+          "example": "Zákon říká, že bez dokladu se nesmí nic zapsat."
+        },
+        {
+          "type": "heading",
+          "text": "Kdo musí účtovat"
+        },
+        {
+          "type": "list",
+          "items": [
+            "všechny **právnické osoby** se sídlem v ČR (s.r.o., a.s., družstva, spolky…),",
+            "podnikatelé – fyzické osoby **zapsaní v obchodním rejstříku**,",
+            "podnikatelé – fyzické osoby, jejichž **obrat za předchozí rok přesáhl 25 milionů Kč**,",
+            "fyzické osoby, které se pro účetnictví **dobrovolně** rozhodnou."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Daňová evidence",
+          "definition": "Jednodušší evidence příjmů, výdajů, majetku a dluhů. Smí ji vést **fyzická osoba – podnikatel (OSVČ)**, která účtovat nemusí. Není to účetnictví, řídí se zákonem o daních z příjmů.",
+          "example": "Kadeřnice s živností zapisuje příjmy a výdaje do knihy."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "účetnictví",
+            "daňová evidence"
+          ],
+          "rows": [
+            [
+              "kdo",
+              "právnické osoby, některé fyzické osoby",
+              "OSVČ, které účtovat nemusí"
+            ],
+            [
+              "co sleduje",
+              "náklady a výnosy, majetek a zdroje",
+              "příjmy a výdaje, majetek a dluhy"
+            ],
+            [
+              "jak",
+              "podvojně – každý případ na dva účty",
+              "jednoduše – jeden zápis"
+            ],
+            [
+              "výsledek",
+              "výsledek hospodaření, rozvaha, výkaz zisku a ztráty",
+              "základ daně z příjmů"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Účetní období"
+        },
+        {
+          "type": "term",
+          "term": "Účetní období",
+          "definition": "Doba, za kterou se účetnictví uzavře a zjistí se výsledek. Trvá **12 po sobě jdoucích měsíců**. Je to buď **kalendářní rok**, nebo **hospodářský rok** (začíná jindy než 1. ledna).",
+          "example": "Kalendářní rok: 1. 1. – 31. 12. Hospodářský rok: 1. 7. 2026 – 30. 6. 2027."
+        },
+        {
+          "type": "term",
+          "term": "Rozvahový den",
+          "definition": "Poslední den účetního období. K němu se účetnictví uzavírá a sestaví se výkazy.",
+          "example": "31. 12. 2026 u kalendářního roku."
+        },
+        {
+          "type": "example",
+          "question": "Kolo servis s.r.o. má obrat 3 miliony Kč ročně. Musí vést účetnictví?",
+          "answer": "Ano. Je to **s.r.o., tedy právnická osoba** – ty účtují vždy, bez ohledu na obrat. Hranice 25 milionů Kč platí jen pro fyzické osoby, které nejsou v obchodním rejstříku."
+        },
+        {
+          "type": "example",
+          "question": "Truhlář Novák je OSVČ, v obchodním rejstříku není a loni měl obrat 1,8 milionu Kč. Co musí vést?",
+          "answer": "Je fyzická osoba, není v rejstříku a obrat je pod 25 miliony Kč. Účetnictví vést **nemusí**. Může vést **daňovou evidenci**, nebo uplatnit paušální výdaje. Účtovat smí dobrovolně."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Malá s.r.o. s jedním zaměstnancem může vést jen daňovou evidenci.",
+          "right": "Každá právnická osoba, i ta nejmenší s.r.o., **musí vést účetnictví**.",
+          "why": "Daňová evidence je jen pro fyzické osoby – podnikatele. Velikost firmy o tom nerozhoduje."
+        },
+        {
+          "type": "summary",
+          "text": "Účetnictví je zákonem upravený zápis majetku, dluhů, nákladů a výnosů (zákon 563/1991 Sb., vyhláška 500/2002 Sb., ČÚS). Vedou ho všechny právnické osoby a některé fyzické osoby, ostatní OSVČ smí vést daňovou evidenci. Účetní období trvá 12 měsíců a končí rozvahovým dnem."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla hry",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Fotbal má pravidla, aby každý zápas šlo posoudit stejně. Účetnictví také. Díky pravidlům může banka porovnat dvě firmy a finanční úřad zkontrolovat daň."
+        },
+        {
+          "type": "text",
+          "text": "Ukážeme si, podle jakých **zásad** se účtuje a proč účetní nesmí zapisovat, jak se mu zrovna hodí."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Účetní zásady",
+          "definition": "Základní pravidla, která musí dodržet každý, kdo účtuje. Část je přímo v zákoně o účetnictví, část vyplývá z účetní praxe.",
+          "example": "Zásada opatrnosti, zásada stálosti metod."
+        },
+        {
+          "type": "term",
+          "term": "Náklad",
+          "definition": "Spotřeba nebo úbytek hodnoty, který firmě v daném období vznikl, aby mohla podnikat. Nezáleží na tom, kdy se zaplatil.",
+          "example": "Mzda za prosinec je náklad prosince, i když se vyplatí v lednu."
+        },
+        {
+          "type": "term",
+          "term": "Výnos",
+          "definition": "Peněžní částka, kterou firma za dané období získala ze své činnosti, i když ji zatím nedostala zaplacenou.",
+          "example": "Oprava kola za 2 000 Kč fakturovaná 20. 12. je výnos prosince."
+        },
+        {
+          "type": "heading",
+          "text": "Nejdůležitější účetní zásady"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Věrný a poctivý obraz** – účetnictví má ukazovat skutečnost, ne přání majitele.",
+            "**Akruální zásada (věcná a časová souvislost)** – náklady a výnosy patří do období, se kterým věcně a časově souvisí, ne do období, kdy se platilo.",
+            "**Opatrnost** – očekávané ztráty a rizika se zapíšou hned, zisky až tehdy, když opravdu nastanou.",
+            "**Předpoklad trvání (going concern)** – účtuje se tak, jako by firma pokračovala i dál.",
+            "**Stálost metod** – zvolený postup (např. ocenění zásob) se nemění rok od roku.",
+            "**Zákaz kompenzace** – pohledávky a závazky, náklady a výnosy se vzájemně nezapočítávají, uvádějí se zvlášť.",
+            "**Oceňování historickými cenami** – majetek se zapisuje v ceně, za kterou se pořídil.",
+            "**Přednost obsahu před formou** – rozhoduje skutečná podstata případu, ne jen to, jak se jmenuje."
+          ]
+        },
+        {
+          "type": "widget",
+          "widget": "flip",
+          "props": {
+            "cards": [
+              {
+                "front": "Nájem za leden 2027 zaplacený v prosinci 2026 – náklad kterého roku?",
+                "back": "Roku **2027** (akruální zásada)."
+              },
+              {
+                "front": "Hrozí, že odběratel nezaplatí. Kdy to zohlednit?",
+                "back": "**Hned** – zásada opatrnosti."
+              },
+              {
+                "front": "Pohledávka 50 000 Kč a závazek 30 000 Kč u téže firmy – můžu vykázat jen 20 000 Kč?",
+                "back": "Ne, **zákaz kompenzace** – vykážou se obě částky."
+              },
+              {
+                "front": "Letos zásoby FIFO, příští rok průměrem, ať je zisk vyšší?",
+                "back": "Ne, **stálost metod**."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Otoč kartičky. U každé zkus nejdřív sám říct, kterou zásadu by účetní porušil."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se postupuje při účtování"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Nastane účetní případ (nákup, prodej, platba…).",
+            "Vznikne **účetní doklad** – důkaz, že se to stalo.",
+            "Doklad se zkontroluje a zaúčtuje do **účetních knih**.",
+            "Na konci účetního období se účetnictví uzavře.",
+            "Sestaví se **účetní závěrka**: rozvaha, výkaz zisku a ztráty a příloha."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma 15. 12. 2026 zaplatila pojištění auta na celý rok 2027 (12 000 Kč). Do nákladů kterého roku pojištění patří?",
+          "answer": "Podle **akruální zásady** patří náklad do období, se kterým souvisí. Pojištění kryje rok 2027, proto je to **náklad roku 2027**, i když se platilo v roce 2026."
+        },
+        {
+          "type": "example",
+          "question": "Firma čeká soudní spor a pravděpodobně zaplatí pokutu 100 000 Kč. Zároveň doufá, že vyhraje zakázku za 500 000 Kč. Co zohlední v účetnictví hned?",
+          "answer": "Podle **zásady opatrnosti** se pravděpodobná ztráta (pokuta) zohlední hned – vytvoří se na ni **rezerva**. Možný zisk ze zakázky se nezapíše, dokud zakázka opravdu nenastane."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Náklad je to, co jsem zaplatil. Výnos je to, co mi přišlo na účet.",
+          "right": "Náklady a výnosy patří do období, **se kterým souvisí**. Na okamžiku platby nezáleží.",
+          "why": "To, co popisuješ, jsou **výdaje a příjmy** – sleduje je daňová evidence. Účetnictví sleduje náklady a výnosy podle akruální zásady."
+        },
+        {
+          "type": "summary",
+          "text": "Účtuje se podle zásad: věrný a poctivý obraz, akruální zásada, opatrnost, předpoklad trvání, stálost metod, zákaz kompenzace, historické ceny a přednost obsahu před formou. Náklady a výnosy patří do období, se kterým souvisí, ne do období platby."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který předpis je zákon o účetnictví?",
+      "options": [
+        "zákon č. 563/1991 Sb.",
+        "zákon č. 586/1992 Sb.",
+        "zákon č. 235/2004 Sb.",
+        "vyhláška č. 500/2002 Sb."
+      ],
+      "answer": 0,
+      "explanation": "586/1992 Sb. je zákon o daních z příjmů, 235/2004 Sb. zákon o DPH a vyhláška 500/2002 Sb. upřesňuje účetnictví podnikatelů."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo musí vést účetnictví?",
+      "options": [
+        "Stavby Krátký a.s.",
+        "zedník OSVČ s obratem 2 miliony Kč, mimo obchodní rejstřík",
+        "fotografka OSVČ s obratem 900 000 Kč",
+        "student, který brigádně doučuje"
+      ],
+      "answer": 0,
+      "explanation": "Akciová společnost je právnická osoba, ty účtují vždy."
+    },
+    {
+      "type": "truefalse",
+      "question": "Fyzická osoba – podnikatel zapsaná v obchodním rejstříku musí vést účetnictví.",
+      "answer": true,
+      "explanation": "Zápis v obchodním rejstříku zakládá povinnost účtovat."
+    },
+    {
+      "type": "input",
+      "question": "Kolik měsíců trvá běžné účetní období? (číslo)",
+      "answers": [
+        "12",
+        "dvanáct"
+      ],
+      "explanation": "Účetní období je 12 po sobě jdoucích měsíců – kalendářní nebo hospodářský rok."
+    },
+    {
+      "type": "choice",
+      "question": "Účetní období od 1. 4. 2026 do 31. 3. 2027 se nazývá:",
+      "options": [
+        "hospodářský rok",
+        "kalendářní rok",
+        "zdaňovací přestávka",
+        "neplatné účetní období"
+      ],
+      "answer": 0,
+      "explanation": "Hospodářský rok má 12 měsíců, ale nezačíná 1. ledna."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zásadu s jejím významem.",
+      "pairs": [
+        [
+          "opatrnost",
+          "ztráty hned, zisky až když nastanou"
+        ],
+        [
+          "akruální zásada",
+          "náklad do období, se kterým souvisí"
+        ],
+        [
+          "stálost metod",
+          "postupy se nemění rok od roku"
+        ],
+        [
+          "zákaz kompenzace",
+          "pohledávky a závazky se nezapočítávají"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mzda za prosinec 2026 vyplacená 10. 1. 2027 je náklad roku 2027.",
+      "answer": false,
+      "explanation": "Mzda souvisí s prací v prosinci, proto je to náklad prosince 2026 (akruální zásada)."
+    },
+    {
+      "type": "choice",
+      "question": "Podnikatel fyzická osoba mimo obchodní rejstřík musí začít účtovat, když jeho obrat za předchozí rok přesáhne:",
+      "options": [
+        "25 000 000 Kč",
+        "2 000 000 Kč",
+        "1 000 000 Kč",
+        "80 000 Kč"
+      ],
+      "answer": 0,
+      "explanation": "Hranice podle zákona o účetnictví je obrat 25 milionů Kč za bezprostředně předcházející kalendářní rok.",
+      "hints": [
+        "Je to mnohem víc, než je hranice pro registraci k DPH."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje poslední den účetního období, ke kterému se sestavuje rozvaha? (dvě slova)",
+      "answers": [
+        "rozvahový den"
+      ],
+      "explanation": "Rozvahový den – u kalendářního roku 31. 12."
+    },
+    {
+      "type": "choice",
+      "question": "Firma zaplatila 20. 12. 2026 nájem za leden 2027. Která zásada říká, že jde o náklad roku 2027?",
+      "options": [
+        "akruální zásada",
+        "zásada opatrnosti",
+        "zásada stálosti metod",
+        "předpoklad trvání"
+      ],
+      "answer": 0,
+      "explanation": "Náklad patří do období, se kterým věcně a časově souvisí."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď, jak postupuje účtování.",
+      "items": [
+        "nastane účetní případ",
+        "vznikne účetní doklad",
+        "zápis do účetních knih",
+        "uzavření účetních knih",
+        "sestavení účetní závěrky"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Daňová evidence je druh podvojného účetnictví.",
+      "answer": false,
+      "explanation": "Daňová evidence není účetnictví. Řídí se zákonem o daních z příjmů a zápis je jednoduchý."
+    },
+    {
+      "type": "truefalse",
+      "question": "Firma si může sama rozhodnout, že zásadu opatrnosti dodržovat nebude, pokud jí to zvýší zisk.",
+      "answer": false,
+      "explanation": "Účetní zásady musí dodržovat každá účetní jednotka. Opatrnost brání tomu, aby firma vykazovala lepší výsledek, než je skutečnost."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, kdo musí vést účetnictví a kdo smí vést daňovou evidenci.",
+      "answer": "Účetnictví musí vést všechny právnické osoby, fyzické osoby zapsané v obchodním rejstříku a fyzické osoby s obratem nad 25 mil. Kč za předchozí rok. Ostatní podnikající fyzické osoby smí vést daňovou evidenci (nebo použít paušální výdaje) a účtovat mohou dobrovolně."
+    },
+    {
+      "type": "open",
+      "question": "Co říká akruální zásada? Uveď příklad.",
+      "answer": "Náklady a výnosy se zapisují do období, se kterým věcně a časově souvisí, bez ohledu na to, kdy se platilo. Např. nájem za leden zaplacený v prosinci je náklad ledna."
+    }
+  ]
+}
