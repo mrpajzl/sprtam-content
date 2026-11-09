@@ -1,0 +1,478 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "informace-uredni-prace",
+  "title": "Informace, osobní údaje a úřední práce",
+  "emoji": "📁",
+  "explanations": [
+    {
+      "title": "První den v práci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Lucie nastoupila po maturitě na městský úřad, na odbor dopravy. Hned první týden řeší tři věci: novinář chce vědět, kolik město zaplatilo za nové semafory; kolega si chce domů odnést seznam řidičů s body; a na podatelnu přišel dopis, který neví kam zařadit."
+        },
+        {
+          "type": "text",
+          "text": "Všechny tři situace mají jasná pravidla: **svobodný přístup k informacím**, **ochrana osobních údajů** a **spisová služba**. K tomu patří i povinnosti úředníka a etika."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Povinný subjekt",
+          "definition": "Kdo musí poskytovat informace podle **zákona č. 106/1999 Sb., o svobodném přístupu k informacím**: státní orgány, obce, kraje a jejich orgány a veřejné instituce.",
+          "example": "Městský úřad, ministerstvo, krajská nemocnice zřízená krajem."
+        },
+        {
+          "type": "term",
+          "term": "Osobní údaj",
+          "definition": "Jakákoli informace o **konkrétním člověku**, kterého lze podle ní přímo nebo nepřímo poznat.",
+          "example": "Jméno, adresa, rodné číslo, fotografie, počet bodů v bodovém systému."
+        },
+        {
+          "type": "term",
+          "term": "GDPR",
+          "definition": "Obecné nařízení EU o ochraně osobních údajů (nařízení 2016/679), které se používá od 25. 5. 2018. V Česku ho doplňuje zákon č. 110/2019 Sb.",
+          "example": "Úřad smí zpracovávat jen údaje, které ke své práci opravdu potřebuje."
+        },
+        {
+          "type": "term",
+          "term": "Spisová služba",
+          "definition": "Pravidla pro evidenci, oběh, uložení a vyřazování dokumentů úřadu. Upravuje ji **zákon č. 499/2004 Sb., o archivnictví a spisové službě**.",
+          "example": "Každý došlý dopis dostane číslo jednací a zapíše se do elektronického systému spisové služby."
+        },
+        {
+          "type": "heading",
+          "text": "Informace na žádost"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Žádost může podat **kdokoli** (občan, novinář, firma), ústně nebo písemně, i elektronicky. **Nemusí uvádět důvod.**",
+            "Je-li žádost nesrozumitelná, úřad do **7 dnů** vyzve k upřesnění. Žadatel má na upřesnění 30 dnů.",
+            "Úřad informaci poskytne **do 15 dnů** od přijetí žádosti. Ze závažných důvodů může lhůtu prodloužit **nejvýše o 10 dnů**.",
+            "Když informaci (zčásti) neposkytne, vydá **rozhodnutí o odmítnutí** s důvodem. Proti němu se lze **odvolat do 15 dnů**.",
+            "Za mimořádně rozsáhlé vyhledání může úřad žádat **úhradu**; musí ji ale předem oznámit."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Novinář chce vědět, kolik město zaplatilo za nové semafory. Musí Lucie informaci dát?",
+          "answer": "Ano. Hospodaření s veřejnými penězi je typická informace, kterou je třeba poskytnout. Novinář nemusí říkat, proč ji chce. Úřad ji poskytne **do 15 dnů**, obvykle i s kopií smlouvy (případně s vyloučením např. obchodního tajemství)."
+        },
+        {
+          "type": "heading",
+          "text": "Osobní údaje"
+        },
+        {
+          "type": "text",
+          "text": "Úřady zpracovávají osobní údaje hlavně proto, že jim to ukládá zákon (**plnění právní povinnosti** nebo **úkol ve veřejném zájmu**). Souhlas člověka většinou nepotřebují, ale smějí zpracovávat jen údaje nutné pro daný účel."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**zákonnost, korektnost, transparentnost**: člověk má vědět, co se s jeho údaji děje,",
+            "**účelové omezení**: údaje jen pro účel, pro který byly získány,",
+            "**minimalizace**: jen tolik údajů, kolik je nutné,",
+            "**omezení uložení**: neuchovávat déle, než je třeba,",
+            "**zabezpečení**: chránit údaje před zneužitím a únikem."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Každý orgán veřejné moci musí mít **pověřence pro ochranu osobních údajů**. Dozor vykonává **Úřad pro ochranu osobních údajů**."
+        },
+        {
+          "type": "example",
+          "question": "Kolega si chce domů na flashce odnést seznam řidičů s body, aby ho „v klidu dodělal“. Je to v pořádku?",
+          "answer": "Není. Jde o **osobní údaje** a jejich přenos mimo zabezpečené prostředí porušuje zásadu **zabezpečení** a vnitřní předpisy úřadu. Ztráta flashky by byla únikem údajů, který musí úřad hlásit dozorovému úřadu."
+        },
+        {
+          "type": "heading",
+          "text": "Spisová služba"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Příjem**: podatelna dokument přijme, zaeviduje a přidělí mu **číslo jednací**.",
+            "**Přidělení**: dokument dostane **zpracovatel** na příslušném odboru.",
+            "**Vyřízení**: zpracovatel věc vyřídí (odpoví, rozhodne) a dokumenty spojí do **spisu**.",
+            "**Vypravení**: odpověď se odešle (datovou schránkou, poštou).",
+            "**Uložení**: vyřízený spis se uloží do **spisovny**.",
+            "**Skartační řízení**: po uplynutí **skartační lhůty** se dokument podle **skartačního znaku** zničí (S), předá do archivu (A), nebo se o něm rozhodne výběrem (V)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Úředník a jeho povinnosti"
+        },
+        {
+          "type": "text",
+          "text": "Zaměstnance obcí a krajů, kteří vykonávají správní činnosti, upravuje **zákon č. 312/2002 Sb., o úřednících územních samosprávných celků**. Úředník musí být mimo jiné starší 18 let, svéprávný a bezúhonný. Při výkonu některých činností potřebuje **zvláštní odbornou způsobilost**, kterou musí prokázat zkouškou do **18 měsíců** od nástupu."
+        },
+        {
+          "type": "list",
+          "items": [
+            "jednat **nestranně** a nenechat se ovlivnit osobními zájmy,",
+            "zdržet se všeho, co by **ohrozilo důvěru** v nestrannost rozhodování,",
+            "zachovávat **mlčenlivost** o tom, co se dozvěděl v práci,",
+            "nepřijímat **dary** a jiné výhody v souvislosti s prací,",
+            "prohlubovat si kvalifikaci."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Žadatel o informaci musí vysvětlit, proč ji chce, jinak mu úřad nic neposkytne.",
+          "right": "Podle zákona č. 106/1999 Sb. **nemusí žadatel uvádět důvod**. Úřad smí informaci odmítnout jen z důvodů, které stanoví zákon.",
+          "why": "Kontrola veřejné správy veřejností je principem demokracie. Úřad nesmí posuzovat, zda je zvědavost „oprávněná“."
+        },
+        {
+          "type": "summary",
+          "text": "Podle zákona č. 106/1999 Sb. může kdokoli bez udání důvodu žádat informace a úřad je poskytne do 15 dnů (prodloužení nejvýše o 10 dnů). Osobní údaje chrání GDPR a zákon č. 110/2019 Sb.: jen pro daný účel, v nutném rozsahu a zabezpečeně. Dokumenty prochází spisovou službou od podatelny po skartaci. Úředník obce či kraje (zákon č. 312/2002 Sb.) jedná nestranně, mlčí o tom, co se dozvěděl, a nepřijímá dary."
+        }
+      ]
+    },
+    {
+      "title": "Pravidla přepážky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Úřad je místo, kde se potkává **otevřenost** (lidé mají právo vědět, co úřad dělá) s **diskrétností** (úřad zná o lidech mnoho osobních věcí). Úředník musí obojí vyvážit."
+        },
+        {
+          "type": "text",
+          "text": "Projdeme pravidla, podle kterých se úředník rozhoduje, co smí říct, co musí říct a co musí chránit. Plus jak zachází s dokumenty a jak se chová."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Svobodný přístup k informacím",
+          "definition": "Právo každého získat informace o činnosti úřadů a veřejných institucí. Vychází z čl. 17 Listiny základních práv a svobod a upravuje ho zákon č. 106/1999 Sb.",
+          "example": "Občan chce vědět, kolik obec utratila za ohňostroj."
+        },
+        {
+          "type": "term",
+          "term": "Správce osobních údajů",
+          "definition": "Kdo určuje, proč a jak se osobní údaje zpracovávají, a odpovídá za to.",
+          "example": "Městský úřad je správcem údajů v evidenci obyvatel."
+        },
+        {
+          "type": "term",
+          "term": "Subjekt údajů",
+          "definition": "Člověk, o kterém osobní údaje jsou.",
+          "example": "Jana, jejíž adresa je v registru obyvatel."
+        },
+        {
+          "type": "term",
+          "term": "Skartační znak a lhůta",
+          "definition": "**Znak** říká, co se s dokumentem po lhůtě stane: **A** – archiv, **S** – zničení, **V** – rozhodne se výběrem. **Lhůta** je počet let, po které se musí dokument uchovat.",
+          "example": "„S/5“ – po 5 letech se dokument zničí."
+        },
+        {
+          "type": "term",
+          "term": "Střet zájmů",
+          "definition": "Situace, kdy osobní zájem úředníka nebo politika může ovlivnit jeho rozhodování ve veřejné věci.",
+          "example": "Úředník rozhoduje o žádosti svého bratra."
+        },
+        {
+          "type": "heading",
+          "text": "Co úřad musí říct"
+        },
+        {
+          "type": "table",
+          "head": [
+            "pravidlo",
+            "podle zákona č. 106/1999 Sb."
+          ],
+          "rows": [
+            [
+              "kdo může žádat",
+              "kdokoli, bez udání důvodu"
+            ],
+            [
+              "forma žádosti",
+              "ústně i písemně, i elektronicky"
+            ],
+            [
+              "výzva k upřesnění",
+              "do 7 dnů"
+            ],
+            [
+              "poskytnutí",
+              "do 15 dnů od přijetí žádosti"
+            ],
+            [
+              "prodloužení",
+              "nejvýše o 10 dnů, ze závažných důvodů"
+            ],
+            [
+              "odmítnutí",
+              "rozhodnutím; odvolání do 15 dnů"
+            ],
+            [
+              "stížnost na postup (např. nečinnost)",
+              "do 30 dnů"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Úřad také musí sám **zveřejňovat** základní informace: jak je organizován, kde a jak lze podávat žádosti, sazebník úhrad a výroční zprávu o poskytování informací."
+        },
+        {
+          "type": "heading",
+          "text": "Co úřad musí chránit"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**osobní údaje** (GDPR, zákon č. 110/2019 Sb.),",
+            "**utajované informace**,",
+            "**obchodní tajemství** firem,",
+            "informace, o kterých to stanoví zvláštní zákon."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Úřady zpracovávají osobní údaje hlavně kvůli **právní povinnosti** a **úkolům ve veřejném zájmu**. Člověk má právo vědět, jaké údaje o něm úřad má (**právo na přístup**), žádat **opravu** nepřesných údajů a další práva. Únik údajů hlásí správce Úřadu pro ochranu osobních údajů zpravidla **do 72 hodin**."
+        },
+        {
+          "type": "example",
+          "question": "Občan chce vědět, kolik obec zaplatila firmě za opravu náměstí, a zároveň jméno a adresu souseda, který podal stížnost na hluk. Co mu úřad poskytne?",
+          "answer": "Cenu za opravu náměstí úřad **poskytne**, jde o hospodaření s veřejnými penězi. Adresu stěžovatele **neposkytne**, je to osobní údaj soukromé osoby, který s kontrolou úřadu nesouvisí. Tuto část žádosti odmítne **rozhodnutím**."
+        },
+        {
+          "type": "heading",
+          "text": "Jak putuje dokument"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "podatelna – příjem a evidence, číslo jednací,",
+            "zpracovatel – vyřízení věci, založení do spisu,",
+            "výpravna – odeslání odpovědi,",
+            "spisovna – uložení vyřízeného spisu,",
+            "skartační řízení – po lhůtě archiv (A), zničení (S) nebo výběr (V)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Úředník a etika"
+        },
+        {
+          "type": "text",
+          "text": "Úředníka obce a kraje upravuje **zákon č. 312/2002 Sb.** Státní zaměstnance na ministerstvech a státních úřadech upravuje jiný předpis, **zákon č. 234/2014 Sb., o státní službě**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "povinnost",
+            "v praxi"
+          ],
+          "rows": [
+            [
+              "nestrannost",
+              "nerozhoduje věci, kde má osobní zájem (podjatost)"
+            ],
+            [
+              "mlčenlivost",
+              "neříká nikomu, co se dozvěděl o lidech a firmách"
+            ],
+            [
+              "zákaz darů",
+              "nepřijme „dárek za vyřízení“"
+            ],
+            [
+              "odbornost",
+              "složí zkoušku zvláštní odborné způsobilosti do 18 měsíců od nástupu"
+            ],
+            [
+              "slušnost a vstřícnost",
+              "jedná s lidmi zdvořile a poučí je o právech"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kdo zjistí protiprávní jednání na pracovišti, může ho oznámit chráněně podle **zákona č. 171/2023 Sb., o ochraně oznamovatelů**. Veřejné funkcionáře se týká i **zákon č. 159/2006 Sb., o střetu zájmů**."
+        },
+        {
+          "type": "example",
+          "question": "Panu Novákovi úředník rychle vyřídil povolení. Pan Novák mu za to druhý den přinese láhev drahého vína. Co má úředník udělat?",
+          "answer": "Dar **odmítnout**. Úředník nesmí přijímat dary ani jiné výhody v souvislosti s výkonem práce. Přijetím by ohrozil důvěru v nestrannost úřadu a mohlo by jít i o korupci."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Úřad musí poskytnout jakoukoli informaci, kterou má, včetně osobních údajů lidí.",
+          "right": "Povinnost poskytovat informace má **meze**: chráněné jsou osobní údaje, utajované informace, obchodní tajemství a další informace podle zákona.",
+          "why": "Otevřenost úřadu se týká jeho činnosti a hospodaření, ne soukromí lidí, o kterých vede záznamy."
+        },
+        {
+          "type": "summary",
+          "text": "Úřad musí kdokoli bez udání důvodu informovat o své činnosti do 15 dnů (zákon č. 106/1999 Sb.), ale chrání osobní údaje, utajované informace a obchodní tajemství. Osobní údaje zpracovává podle GDPR jen pro daný účel a zabezpečeně. Dokumenty prochází spisovou službou až ke skartaci podle znaku A, S nebo V. Úředník obce a kraje (zákon č. 312/2002 Sb.) jedná nestranně, mlčí a nepřijímá dary."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Do kolika dnů od přijetí žádosti musí úřad poskytnout informaci podle zákona č. 106/1999 Sb.? (počet dnů)",
+      "answers": [
+        "15",
+        "patnáct"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "O kolik dnů nejvýše může úřad prodloužit lhůtu k poskytnutí informace?",
+      "options": [
+        "o 10 dnů",
+        "o 15 dnů",
+        "o 30 dnů",
+        "o 5 dnů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Žadatel o informaci musí uvést, proč informaci potřebuje.",
+      "answer": false,
+      "explanation": "Zákon č. 106/1999 Sb. odůvodnění žádosti nevyžaduje."
+    },
+    {
+      "type": "choice",
+      "question": "Jak úřad postupuje, když informaci odmítne poskytnout?",
+      "options": [
+        "vydá rozhodnutí o odmítnutí",
+        "žádost jen založí do spisu",
+        "pošle neformální e-mail",
+        "nemusí reagovat"
+      ],
+      "answer": 0,
+      "explanation": "Proti rozhodnutí se lze odvolat do 15 dnů."
+    },
+    {
+      "type": "choice",
+      "question": "Co je osobní údaj?",
+      "options": [
+        "informace, podle které lze poznat konkrétního člověka",
+        "jen rodné číslo",
+        "jen údaje o zdraví",
+        "jakýkoli údaj o firmě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Od kterého data se používá GDPR?",
+      "options": [
+        "25. 5. 2018",
+        "1. 1. 2016",
+        "1. 7. 2017",
+        "1. 1. 2020"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj skartační znak s tím, co se stane s dokumentem po skartační lhůtě.",
+      "pairs": [
+        [
+          "A",
+          "předá se do archivu"
+        ],
+        [
+          "S",
+          "zničí se"
+        ],
+        [
+          "V",
+          "rozhodne se výběrem"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď cestu dokumentu úřadem.",
+      "items": [
+        "podatelna",
+        "zpracovatel",
+        "výpravna",
+        "spisovna",
+        "skartační řízení"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jakým číslem a rokem je označen zákon o úřednících územních samosprávných celků? (ve tvaru číslo/rok)",
+      "answers": [
+        "312/2002",
+        "312/2002 Sb.",
+        "312/2002 sb"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Do kolika měsíců od nástupu musí úředník prokázat zvláštní odbornou způsobilost?",
+      "options": [
+        "18",
+        "6",
+        "12",
+        "36"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Úřad musí poskytnout cenu, kterou zaplatil firmě za opravu náměstí.",
+      "answer": true,
+      "explanation": "Jde o hospodaření s veřejnými prostředky."
+    },
+    {
+      "type": "choice",
+      "question": "Kdo vykonává dozor nad ochranou osobních údajů v ČR?",
+      "options": [
+        "Úřad pro ochranu osobních údajů",
+        "Ministerstvo vnitra",
+        "Nejvyšší kontrolní úřad",
+        "veřejný ochránce práv"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Úředník rozhoduje o žádosti svého bratra. O jakou situaci jde?",
+      "options": [
+        "střet zájmů (podjatost)",
+        "fikce doručení",
+        "autoremedura",
+        "správní uvážení"
+      ],
+      "answer": 0,
+      "explanation": "Úředník má v takové věci osobní zájem a z rozhodování musí být vyloučen.",
+      "hints": [
+        "Může tu osobní vztah ovlivnit rozhodnutí?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak postupuje úřad, když dostane žádost o informaci, a uveď, kdy ji smí odmítnout.",
+      "answer": "Žádost může podat kdokoli, ústně i písemně, bez udání důvodu. Je-li nesrozumitelná, úřad do 7 dnů vyzve k upřesnění; jinak informaci poskytne do 15 dnů, ze závažných důvodů může lhůtu prodloužit nejvýše o 10 dnů. Odmítnout ji smí jen z důvodů daných zákonem, např. kvůli ochraně osobních údajů, utajovaných informací nebo obchodního tajemství, a to rozhodnutím, proti kterému se lze odvolat do 15 dnů."
+    }
+  ]
+}

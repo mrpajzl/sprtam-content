@@ -1,0 +1,474 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "opravne-prostredky",
+  "title": "Opravné prostředky a správní soudnictví",
+  "emoji": "🔁",
+  "explanations": [
+    {
+      "title": "Když úřad chybuje",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Paní Kovářová dostala rozhodnutí, že jí úřad nepovolil přístavbu garáže. Myslí si, že úřad přehlédl souhlas souseda, který přiložila. Musí se smířit s rozhodnutím, nebo se může bránit?"
+        },
+        {
+          "type": "text",
+          "text": "Bránit se může. Správní řád i soudní řád správní nabízejí několik cest. Každá má jiné podmínky a lhůty. Úředník je musí znát, protože o nich lidi **poučuje**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Opravný prostředek",
+          "definition": "Nástroj, kterým se účastník brání proti rozhodnutí úřadu a žádá jeho zrušení nebo změnu.",
+          "example": "Odvolání proti zamítnutí přístavby."
+        },
+        {
+          "type": "term",
+          "term": "Řádný opravný prostředek",
+          "definition": "Lze ho podat proti rozhodnutí, které **ještě není v právní moci**. Ve správním řízení je to **odvolání** a **rozklad**.",
+          "example": "Odvolání podané 10. den po doručení rozhodnutí."
+        },
+        {
+          "type": "term",
+          "term": "Mimořádný prostředek",
+          "definition": "Prostředek proti rozhodnutí, které **už je v právní moci**. Patří sem **přezkumné řízení**, **obnova řízení** a **nové rozhodnutí**.",
+          "example": "Obnova řízení, když vyjde najevo nový důkaz."
+        },
+        {
+          "type": "term",
+          "term": "Odkladný účinek",
+          "definition": "Dokud se o odvolání nerozhodne, napadené rozhodnutí nenabude právní moci a nelze ho vykonat.",
+          "example": "Pokuta se po odvolání neplatí, dokud nerozhodne odvolací orgán."
+        },
+        {
+          "type": "heading",
+          "text": "Odvolání krok za krokem"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Odvolání se podává do **15 dnů ode dne oznámení** rozhodnutí.",
+            "Podává se **u úřadu, který rozhodnutí vydal** (ne přímo u nadřízeného).",
+            "Uvede se, proti kterému rozhodnutí směřuje, v jakém rozsahu ho napadá a v čem je rozhodnutí nezákonné nebo nesprávné.",
+            "Úřad prvního stupně může odvolání sám **vyhovět** (autoremedura), pokud tím nepoškodí jiného účastníka.",
+            "Jinak předá spis **odvolacímu orgánu** (nadřízenému), nejpozději do 30 dnů od doručení odvolání.",
+            "Odvolací orgán rozhodnutí **zruší**, **zruší a vrátí** k novému projednání, **změní**, nebo odvolání **zamítne** a rozhodnutí potvrdí."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Včas podané a přípustné odvolání má **odkladný účinek**, pokud ho zákon nevylučuje. Odvolací orgán zpravidla nesmí rozhodnutí změnit v neprospěch odvolatele."
+        },
+        {
+          "type": "example",
+          "question": "Paní Kovářové bylo rozhodnutí doručeno v pondělí 13. 4. 2026. Do kdy a kde podá odvolání?",
+          "answer": "Lhůta 15 dnů začíná 14. 4. a končí v úterý **28. 4. 2026**. Odvolání podá u **úřadu, který rozhodl** (stavební úřad). Ten ho předá nadřízenému orgánu, typicky krajskému úřadu."
+        },
+        {
+          "type": "heading",
+          "text": "Když poučení chybí nebo je chybné"
+        },
+        {
+          "type": "text",
+          "text": "Pokud v rozhodnutí poučení o odvolání chybí nebo je nesprávné, lze odvolání podat do 15 dnů od oznámení opravného usnesení, **nejpozději však do 90 dnů** ode dne oznámení rozhodnutí."
+        },
+        {
+          "type": "heading",
+          "text": "Rozklad"
+        },
+        {
+          "type": "term",
+          "term": "Rozklad",
+          "definition": "Řádný opravný prostředek proti rozhodnutí, které v prvním stupni vydal **ústřední správní úřad, ministerstvo** nebo ministr. Rozhoduje o něm ministr nebo vedoucí úřadu na návrh **rozkladové komise**.",
+          "example": "Firma podá rozklad proti rozhodnutí ÚOHS o pokutě."
+        },
+        {
+          "type": "text",
+          "text": "Lhůta je stejná jako u odvolání, 15 dnů. Rozkladová komise má nejméně 5 členů a většinu z nich tvoří odborníci, kteří nejsou zaměstnanci úřadu."
+        },
+        {
+          "type": "heading",
+          "text": "Když je rozhodnutí už v právní moci"
+        },
+        {
+          "type": "table",
+          "head": [
+            "prostředek",
+            "kdo ho zahajuje",
+            "podmínky a lhůty"
+          ],
+          "rows": [
+            [
+              "přezkumné řízení",
+              "nadřízený orgán z moci úřední; kdokoli může dát podnět",
+              "pochybnost o souladu s právními předpisy; zahájit nejpozději do 1 roku od právní moci (a do 2 měsíců od zjištění důvodu)"
+            ],
+            [
+              "obnova řízení",
+              "na žádost účastníka nebo z moci úřední",
+              "nové skutečnosti nebo důkazy, které existovaly, ale účastník je nemohl uplatnit; žádost do 3 měsíců od zjištění, nejpozději do 3 let od právní moci"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Po roce od pravomocného zamítnutí garáže najde paní Kovářová starý dopis, že sousedé se stavbou souhlasili už tehdy. Dopis o něm nevěděla. Co může udělat?",
+          "answer": "Jde o **dříve neznámý důkaz**, který existoval už v původním řízení a nemohla ho uplatnit. Může podat **žádost o obnovu řízení**, a to do 3 měsíců ode dne, kdy se o důkazu dozvěděla, nejpozději do 3 let od právní moci."
+        },
+        {
+          "type": "heading",
+          "text": "Úřad nekoná"
+        },
+        {
+          "type": "text",
+          "text": "Když úřad nerozhoduje ve lhůtě, může účastník požádat **nadřízený orgán o opatření proti nečinnosti**. Ten může úřadu přikázat, aby ve stanovené lhůtě rozhodl, nebo věc převzít sám či svěřit jinému úřadu."
+        },
+        {
+          "type": "heading",
+          "text": "Soud jako poslední slovo"
+        },
+        {
+          "type": "text",
+          "text": "Když opravné prostředky ve správním řízení nepomohou, může se člověk obrátit na **správní soud** podle soudního řádu správního (zákon č. 150/2002 Sb.). **Žaloba** proti rozhodnutí se podává ke **krajskému soudu** do **2 měsíců** od doručení rozhodnutí o odvolání. Proti rozsudku krajského soudu lze podat **kasační stížnost** k **Nejvyššímu správnímu soudu** v Brně."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Odvolání se posílá rovnou krajskému úřadu.",
+          "right": "Odvolání se podává **u úřadu, který rozhodnutí vydal**. Teprve ten ho s celým spisem předá odvolacímu orgánu.",
+          "why": "Úřad prvního stupně tak může chybu sám napravit (autoremedura) a připojí spis a vyjádření."
+        },
+        {
+          "type": "summary",
+          "text": "Proti nepravomocnému rozhodnutí se lze bránit odvoláním (15 dnů, podává se u úřadu, který rozhodl) nebo rozkladem proti rozhodnutí ústředního orgánu. Pravomocné rozhodnutí lze napravit přezkumným řízením nebo obnovou řízení. Proti nečinnosti pomáhá nadřízený orgán. Nakonec rozhoduje správní soud: žaloba ke krajskému soudu do 2 měsíců, kasační stížnost k Nejvyššímu správnímu soudu."
+        }
+      ]
+    },
+    {
+      "title": "Mapa obrany",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Představ si, že stojíš na rozcestí. Jedna cesta vede k odvolání, druhá k obnově, třetí k soudu. Kterou zvolit? Záleží na dvou otázkách: **je rozhodnutí už v právní moci?** a **kolik času uběhlo?**"
+        },
+        {
+          "type": "text",
+          "text": "V tomto vysvětlení si postavíš mapu obrany proti rozhodnutí úřadu. S ní poradíš klientovi na přepážce i sobě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Právní moc",
+          "definition": "Stav rozhodnutí, proti kterému už nelze podat odvolání. Pravomocné rozhodnutí je závazné.",
+          "example": "Odvolací lhůta uplynula bez odvolání."
+        },
+        {
+          "type": "term",
+          "term": "Odvolací orgán",
+          "definition": "Úřad **nadřízený** tomu, který rozhodl v prvním stupni.",
+          "example": "Pro obecní úřad v přenesené působnosti je to krajský úřad."
+        },
+        {
+          "type": "term",
+          "term": "Autoremedura",
+          "definition": "Úřad prvního stupně sám vyhoví odvolání a své rozhodnutí opraví, pokud tím nepoškodí jiného účastníka.",
+          "example": "Úřad uzná, že přehlédl doklad, a vydá nové rozhodnutí."
+        },
+        {
+          "type": "term",
+          "term": "Podnět",
+          "definition": "Upozornění úřadu, že by měl něco prověřit. Na vyřízení podnětu není právní nárok, úřad ale musí podateli sdělit, jak s ním naložil (pokud o to požádá).",
+          "example": "Soused dá podnět k přezkumnému řízení."
+        },
+        {
+          "type": "term",
+          "term": "Správní soudnictví",
+          "definition": "Soudy přezkoumávají, zda úřady rozhodují zákonně. Upravuje ho soudní řád správní, zákon č. 150/2002 Sb.",
+          "example": "Krajský soud zruší nezákonné rozhodnutí krajského úřadu."
+        },
+        {
+          "type": "heading",
+          "text": "Mapa obrany"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Rozhodnutí ještě není v právní moci?** → **odvolání** do 15 dnů od oznámení (u ministerstva či ústředního úřadu **rozklad**).",
+            "**Úřad vůbec nerozhoduje?** → žádost o **opatření proti nečinnosti** u nadřízeného orgánu.",
+            "**Rozhodnutí je v právní moci a je nezákonné?** → **podnět k přezkumnému řízení** nadřízenému orgánu.",
+            "**Objevil se nový důkaz, který dřív nešlo uplatnit?** → **žádost o obnovu řízení**.",
+            "**Opravné prostředky vyčerpány?** → **žaloba** ke krajskému soudu, pak **kasační stížnost** k Nejvyššímu správnímu soudu."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Lhůty, které musíš znát"
+        },
+        {
+          "type": "table",
+          "head": [
+            "prostředek",
+            "lhůta"
+          ],
+          "rows": [
+            [
+              "odvolání a rozklad",
+              "15 dnů od oznámení rozhodnutí"
+            ],
+            [
+              "odvolání při chybějícím nebo chybném poučení",
+              "nejpozději 90 dnů od oznámení"
+            ],
+            [
+              "přezkumné řízení",
+              "usnesení o zahájení do 2 měsíců od zjištění důvodu, nejpozději do 1 roku od právní moci"
+            ],
+            [
+              "obnova řízení",
+              "žádost do 3 měsíců od zjištění důvodu, nejpozději do 3 let od právní moci"
+            ],
+            [
+              "žaloba proti rozhodnutí",
+              "2 měsíce od doručení rozhodnutí o odvolání"
+            ],
+            [
+              "kasační stížnost",
+              "2 týdny od doručení rozsudku krajského soudu"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co může odvolací orgán udělat"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**zamítne** odvolání a rozhodnutí **potvrdí**,",
+            "rozhodnutí **zruší** a řízení zastaví,",
+            "rozhodnutí **zruší a vrátí** prvnímu stupni k novému projednání,",
+            "rozhodnutí **změní**, zpravidla ne v neprospěch odvolatele."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Pan Beneš dostal pokutu. Rozhodnutí mu bylo doručeno 14. 9. 2026, ale on si vzpomene až 5. 10. Může se ještě odvolat?",
+          "answer": "Lhůta 15 dnů začala 15. 9. a skončila **29. 9. 2026**. Odvolání podané 5. 10. je **opožděné**. Rozhodnutí je v právní moci. Pan Beneš může dát jen **podnět k přezkumnému řízení**, pokud je rozhodnutí nezákonné; na zahájení přezkumu ale nemá nárok."
+        },
+        {
+          "type": "example",
+          "question": "Ministerstvo zamítlo v prvním stupni žádost firmy. Jaký prostředek firma použije a kdo o něm rozhodne?",
+          "answer": "Proti rozhodnutí **ministerstva** vydanému v prvním stupni se podává **rozklad** (lhůta 15 dnů). Rozhoduje **ministr** na návrh **rozkladové komise**. Pokud neuspěje, může podat žalobu ke krajskému soudu."
+        },
+        {
+          "type": "heading",
+          "text": "Odvolání nebo podnět?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "odvolání",
+            "podnět k přezkumu"
+          ],
+          "rows": [
+            [
+              "kdo ho podává",
+              "účastník",
+              "kdokoli"
+            ],
+            [
+              "kdy",
+              "před právní mocí",
+              "po právní moci"
+            ],
+            [
+              "musí se jím úřad zabývat?",
+              "ano, musí o něm rozhodnout",
+              "ne, úřad jen posoudí, zda řízení zahájí"
+            ],
+            [
+              "odkladný účinek",
+              "zpravidla ano",
+              "ne"
+            ]
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Odvolat se můžu jen proti odůvodnění, když mi výrok nevadí.",
+          "right": "Odvolání **jen proti odůvodnění** je nepřípustné. Odvolání musí směřovat proti výroku rozhodnutí.",
+          "why": "Práva a povinnosti zakládá výrok. Odůvodnění jen vysvětluje, proč úřad tak rozhodl."
+        },
+        {
+          "type": "summary",
+          "text": "Klíčová otázka je, zda je rozhodnutí v právní moci. Před ní se podává odvolání (nebo rozklad u ústředních orgánů) do 15 dnů, po ní lze použít přezkumné řízení (na podnět, bez nároku) nebo obnovu řízení (nové důkazy). Proti nečinnosti pomáhá nadřízený orgán. Po vyčerpání prostředků zbývá žaloba ke krajskému soudu do 2 měsíců a kasační stížnost k Nejvyššímu správnímu soudu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Do kolika dnů od oznámení rozhodnutí lze podat odvolání? (počet dnů)",
+      "answers": [
+        "15",
+        "patnáct"
+      ],
+      "explanation": "Lhůta podle § 83 správního řádu."
+    },
+    {
+      "type": "choice",
+      "question": "U kterého úřadu se podává odvolání?",
+      "options": [
+        "u úřadu, který rozhodnutí vydal",
+        "přímo u odvolacího orgánu",
+        "u krajského soudu",
+        "u veřejného ochránce práv"
+      ],
+      "answer": 0,
+      "explanation": "Úřad prvního stupně může sám vyhovět, jinak předá spis odvolacímu orgánu."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá opravný prostředek proti rozhodnutí ministerstva vydanému v prvním stupni?",
+      "options": [
+        "rozklad",
+        "odpor",
+        "kasační stížnost",
+        "námitka"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Včas podané a přípustné odvolání má zpravidla odkladný účinek.",
+      "answer": true,
+      "explanation": "Rozhodnutí nenabude právní moci a nelze ho vykonat, pokud zákon odkladný účinek nevylučuje."
+    },
+    {
+      "type": "match",
+      "question": "Spoj prostředek s jeho lhůtou.",
+      "pairs": [
+        [
+          "odvolání",
+          "15 dnů od oznámení"
+        ],
+        [
+          "žaloba ke krajskému soudu",
+          "2 měsíce od doručení rozhodnutí"
+        ],
+        [
+          "kasační stížnost",
+          "2 týdny od doručení rozsudku"
+        ],
+        [
+          "obnova řízení (nejzazší)",
+          "3 roky od právní moci"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jaký je nejzazší termín pro odvolání, když v rozhodnutí chybí poučení?",
+      "options": [
+        "90 dnů od oznámení rozhodnutí",
+        "15 dnů od oznámení rozhodnutí",
+        "1 rok od právní moci",
+        "odvolat se nelze"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Který prostředek je mimořádný (proti pravomocnému rozhodnutí)?",
+      "options": [
+        "obnova řízení",
+        "odvolání",
+        "rozklad",
+        "odpor proti příkazu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Na zahájení přezkumného řízení má podatel podnětu právní nárok.",
+      "answer": false,
+      "explanation": "Přezkumné řízení se zahajuje z moci úřední; podnět jen upozorní nadřízený orgán."
+    },
+    {
+      "type": "choice",
+      "question": "Který soud rozhoduje o kasační stížnosti ve věcech správního soudnictví?",
+      "options": [
+        "Nejvyšší správní soud",
+        "Ústavní soud",
+        "Nejvyšší soud",
+        "okresní soud"
+      ],
+      "answer": 0,
+      "explanation": "Nejvyšší správní soud sídlí v Brně."
+    },
+    {
+      "type": "truefalse",
+      "question": "Odvolání podané jen proti odůvodnění rozhodnutí je nepřípustné.",
+      "answer": true,
+      "explanation": "Odvolání musí směřovat proti výroku (§ 82 odst. 1 správního řádu)."
+    },
+    {
+      "type": "choice",
+      "question": "Rozhodnutí bylo doručeno v pondělí 13. 4. 2026. Kdy je poslední den lhůty pro odvolání?",
+      "options": [
+        "28. 4. 2026",
+        "27. 4. 2026",
+        "29. 4. 2026",
+        "13. 5. 2026"
+      ],
+      "answer": 0,
+      "explanation": "Lhůta začíná 14. 4., patnáctý den je úterý 28. 4.",
+      "hints": [
+        "Den doručení se nezapočítává."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Úřad nerozhodl ve lhůtě. Co může účastník udělat nejdřív?",
+      "options": [
+        "požádat nadřízený orgán o opatření proti nečinnosti",
+        "podat kasační stížnost",
+        "podat odvolání proti nerozhodnutí",
+        "podat žádost o obnovu řízení"
+      ],
+      "answer": 0,
+      "explanation": "Žalobu proti nečinnosti lze podat až po bezvýsledném vyčerpání této žádosti."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky obrany od prvního po poslední.",
+      "items": [
+        "odvolání ke správnímu orgánu",
+        "rozhodnutí odvolacího orgánu",
+        "žaloba ke krajskému soudu",
+        "kasační stížnost k Nejvyššímu správnímu soudu"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi odvoláním a obnovou řízení. Kdy použiješ které a jaké jsou lhůty?",
+      "answer": "Odvolání je řádný opravný prostředek proti rozhodnutí, které ještě není v právní moci; podává ho účastník do 15 dnů od oznámení u úřadu, který rozhodl, a zpravidla má odkladný účinek. Obnova řízení je mimořádný prostředek proti pravomocnému rozhodnutí, když vyjdou najevo dříve neznámé skutečnosti nebo důkazy, které existovaly už v původním řízení; žádost se podává do 3 měsíců od zjištění důvodu, nejpozději do 3 let od právní moci."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "spravni-rizeni",
+  "title": "Správní řízení",
+  "emoji": "📄",
+  "explanations": [
+    {
+      "title": "Žádost o povolení",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Pan Dvořák chce pokácet velký ořešák, který roste na jeho louce za vesnicí. Kmen je silný (obvod přes 80 cm ve výšce 130 cm), proto potřebuje povolení obecního úřadu. Podá žádost a úřad o ní musí rozhodnout. Jak ten proces probíhá?"
+        },
+        {
+          "type": "text",
+          "text": "Postup úřadu od žádosti po konečné rozhodnutí upravuje **správní řád (zákon č. 500/2004 Sb.)**. Platí pro většinu rozhodování úřadů, pokud zvláštní zákon nestanoví jinak."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Správní řízení",
+          "definition": "Postup správního orgánu, jehož cílem je vydat **rozhodnutí**, kterým se konkrétní osobě zakládají, mění nebo ruší práva či povinnosti (§ 9 správního řádu).",
+          "example": "Řízení o povolení kácení ořešáku pana Dvořáka."
+        },
+        {
+          "type": "term",
+          "term": "Účastník řízení",
+          "definition": "Osoba, o jejíchž právech se v řízení rozhoduje nebo jejíž práva mohou být rozhodnutím přímo dotčena (§ 27).",
+          "example": "Pan Dvořák jako žadatel; soused, jemuž by strom mohl spadnout na dům."
+        },
+        {
+          "type": "term",
+          "term": "Podání",
+          "definition": "Každý úkon, kterým se účastník obrací na úřad: žádost, návrh, vyjádření. Lze ho učinit písemně, ústně do protokolu nebo elektronicky.",
+          "example": "Žádost o povolení kácení poslaná datovou schránkou."
+        },
+        {
+          "type": "term",
+          "term": "Rozhodnutí",
+          "definition": "Písemný akt, kterým úřad řízení ve věci ukončí. Má výrok, odůvodnění a poučení.",
+          "example": "„Povoluje se kácení jednoho ořešáku na pozemku č. 125/4…“"
+        },
+        {
+          "type": "heading",
+          "text": "Jak řízení začne"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Na žádost**: řízení je zahájeno dnem, kdy žádost **dojde věcně a místně příslušnému** úřadu.",
+            "**Z moci úřední** (úřad sám, např. pokuta): řízení je zahájeno dnem, kdy je účastníkovi **doručeno oznámení o zahájení řízení**."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Podání musí obsahovat, kdo ho činí, které věci se týká a co se navrhuje. Fyzická osoba uvede jméno, příjmení, datum narození a adresu, a podání podepíše. Když podání chybí něco podstatného, úřad pomůže nedostatky odstranit nebo vyzve k doplnění a dá k tomu přiměřenou lhůtu."
+        },
+        {
+          "type": "heading",
+          "text": "Průběh řízení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Úřad **zjistí stav věci** tak, aby o něm nebyly důvodné pochybnosti. Opatří si **podklady** a provede **důkazy**: listiny, ohledání na místě, svědky, znalecký posudek.",
+            "Účastník má právo navrhovat důkazy, **nahlížet do spisu** a nechat se zastoupit.",
+            "Před vydáním rozhodnutí musí úřad dát účastníkům možnost **vyjádřit se k podkladům** rozhodnutí.",
+            "Úřad vydá **rozhodnutí** a **oznámí** ho účastníkům, obvykle doručením."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Lhůty pro úřad"
+        },
+        {
+          "type": "text",
+          "text": "Úřad rozhodne **bez zbytečného odkladu**. Když to nejde, má lhůtu **30 dnů od zahájení řízení**. K ní se připočítává **až dalších 30 dnů**, je-li třeba nařídit ústní jednání nebo místní šetření, někoho předvolat, doručovat veřejnou vyhláškou nebo jde-li o zvlášť složitý případ."
+        },
+        {
+          "type": "example",
+          "question": "Žádost pana Dvořáka došla úřadu 2. 3. 2026. Úřad musí provést místní šetření u stromu. Do kdy nejpozději má rozhodnout?",
+          "answer": "Základní lhůta je **30 dnů** od zahájení. Kvůli místnímu šetření se může připočítat **až 30 dnů**. Úřad tedy musí rozhodnout nejpozději do **60 dnů** od 2. 3. 2026, tedy zhruba do začátku května. Vždy ale nejdřív platí „bez zbytečného odkladu“."
+        },
+        {
+          "type": "heading",
+          "text": "Rozhodnutí a jeho náležitosti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "část",
+            "co obsahuje"
+          ],
+          "rows": [
+            [
+              "výrok",
+              "jak úřad rozhodl, podle kterých ustanovení zákona, kdo jsou účastníci, případně lhůta ke splnění povinnosti"
+            ],
+            [
+              "odůvodnění",
+              "proč tak rozhodl: z jakých podkladů vyšel, jak je hodnotil a jak se vypořádal s námitkami"
+            ],
+            [
+              "poučení",
+              "zda se lze odvolat, v jaké lhůtě a od kdy se počítá, kdo o odvolání rozhoduje a u koho se podává"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Rozhodnutí dále obsahuje označení úřadu, číslo jednací, datum vyhotovení, otisk úředního razítka a jméno, příjmení, funkci a podpis oprávněné úřední osoby. **Odůvodnění není třeba**, pokud úřad všem účastníkům plně vyhoví."
+        },
+        {
+          "type": "heading",
+          "text": "Doručení, právní moc, vykonatelnost"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Úřad doručuje přednostně do **datové schránky**. Písemnost je doručena přihlášením do schránky, jinak **10. dnem** od dodání.",
+            "Při doručování poštou do vlastních rukou: když adresát není zastižen, písemnost se uloží a adresát má **10 dnů** na vyzvednutí. Nevyzvedne-li ji, považuje se za doručenou **posledním dnem této lhůty** (fikce doručení).",
+            "**Právní moc**: rozhodnutí, které bylo oznámeno a proti kterému **už nelze podat odvolání**, je pravomocné.",
+            "**Vykonatelnost**: rozhodnutí lze vymáhat nebo podle něj jednat, když nabylo právní moci (nebo když odvolání nemá odkladný účinek) a uplynula lhůta ke splnění."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Rozhodnutí bylo panu Dvořákovi uloženo na poště v pondělí 4. 5. 2026, ale nevyzvedl si ho. Kdy je doručeno a do kdy se může odvolat?",
+          "answer": "Desetidenní lhůta začíná dnem po uložení (5. 5.) a končí ve čtvrtek **14. 5. 2026**, tím dnem je rozhodnutí doručeno. Odvolací lhůta 15 dnů začíná 15. 5. a končí v pátek **29. 5. 2026**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Lhůta pro úřad začíná až ve chvíli, kdy úředník žádost otevře.",
+          "right": "Řízení na žádost je zahájeno dnem, kdy žádost **dojde** příslušnému úřadu. Od toho dne běží i lhůta 30 dnů.",
+          "why": "Rozhoduje doručení úřadu, ne vnitřní organizace práce. Jinak by úřad mohl lhůtu libovolně oddalovat."
+        },
+        {
+          "type": "summary",
+          "text": "Správní řízení podle správního řádu č. 500/2004 Sb. se zahajuje na žádost (dojitím žádosti) nebo z moci úřední (doručením oznámení). Úřad zjistí stav věci, umožní účastníkům vyjádřit se a rozhodne bez zbytečného odkladu, nejpozději do 30 dnů (prodloužitelných až o 30 dnů). Rozhodnutí má výrok, odůvodnění a poučení; po marném uplynutí odvolací lhůty nabude právní moci a pak je vykonatelné."
+        }
+      ]
+    },
+    {
+      "title": "Časová osa",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Správní řízení je jako zápas s pravidly a časomírou. Každá strana má svá práva a svůj čas. Kdo lhůtu zmešká, často prohraje, i když měl pravdu."
+        },
+        {
+          "type": "text",
+          "text": "Proto si řízení projdeme jako časovou osu: kdy co začíná, kolik je na co času a jak se lhůty počítají. Pravidla jsou ve **správním řádu (zákon č. 500/2004 Sb.)**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Správní řád",
+          "definition": "Zákon č. 500/2004 Sb., účinný od roku 2006. Obecný předpis o postupu správních orgánů. Zvláštní zákony mohou stanovit odchylky.",
+          "example": "Stavební nebo daňové řízení mají své zvláštní předpisy, správní řád je doplňuje."
+        },
+        {
+          "type": "term",
+          "term": "Lhůta",
+          "definition": "Doba, ve které se musí něco udělat. Zmeškaná lhůta má obvykle nepříznivé následky.",
+          "example": "15 dnů na odvolání."
+        },
+        {
+          "type": "term",
+          "term": "Spis",
+          "definition": "Všechny písemnosti, které se týkají jedné věci. Účastník do něj smí **nahlížet** a dělat si kopie.",
+          "example": "Žádost, fotografie stromu, protokol z místního šetření, rozhodnutí."
+        },
+        {
+          "type": "term",
+          "term": "Úřední deska",
+          "definition": "Veřejně přístupná deska úřadu, fyzická i elektronická (na webu), kde úřad zveřejňuje písemnosti.",
+          "example": "Na úřední desce visí veřejná vyhláška o zahájení řízení."
+        },
+        {
+          "type": "term",
+          "term": "Právní moc a vykonatelnost",
+          "definition": "**Právní moc**: rozhodnutí už nelze napadnout odvoláním a je závazné. **Vykonatelnost**: povinnost z rozhodnutí se musí splnit a lze ji vymáhat.",
+          "example": "Pokuta v právní moci se stane vykonatelnou uplynutím lhůty k zaplacení."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se počítají lhůty (§ 40)"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Den, kdy nastala událost (např. doručení), se **nezapočítává**. Lhůta začíná běžet následujícím dnem.",
+            "Lhůta ve dnech běží **i přes víkendy a svátky**.",
+            "Připadne-li **poslední den** na sobotu, neděli nebo svátek, je posledním dnem nejbližší **následující pracovní den**.",
+            "Lhůta je zachována, když poslední den podání učiníš u úřadu nebo ho **odešleš** (podáš na poště, pošleš datovou schránkou)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Rozhodnutí ti bylo doručeno v pondělí 2. 3. 2026. Do kdy podáš odvolání?",
+          "answer": "Den doručení se nepočítá, lhůta 15 dnů začíná v úterý 3. 3. Patnáctý den je úterý **17. 3. 2026**. To je pracovní den, takže je poslední."
+        },
+        {
+          "type": "example",
+          "question": "Rozhodnutí bylo doručeno v pátek 22. 5. 2026. Do kdy podáš odvolání?",
+          "answer": "Lhůta začíná 23. 5. Patnáctý den je **6. 6. 2026**, ale to je sobota. Posledním dnem je proto nejbližší pracovní den: pondělí **8. 6. 2026**."
+        },
+        {
+          "type": "heading",
+          "text": "Časová osa řízení"
+        },
+        {
+          "type": "table",
+          "head": [
+            "krok",
+            "pravidlo"
+          ],
+          "rows": [
+            [
+              "zahájení na žádost",
+              "dnem, kdy žádost dojde příslušnému úřadu"
+            ],
+            [
+              "zahájení z moci úřední",
+              "dnem doručení oznámení o zahájení účastníkovi"
+            ],
+            [
+              "e-mail bez uznávaného podpisu",
+              "nutno do 5 dnů potvrdit nebo doplnit, jinak se k němu nepřihlíží"
+            ],
+            [
+              "vydání rozhodnutí",
+              "bez zbytečného odkladu, nejpozději do 30 dnů; + až 30 dnů (jednání, šetření, složitý případ)"
+            ],
+            [
+              "doručení do datové schránky",
+              "přihlášením, jinak 10. dnem od dodání"
+            ],
+            [
+              "doručení poštou",
+              "po uložení 10 dnů na vyzvednutí, pak fikce doručení"
+            ],
+            [
+              "veřejná vyhláška",
+              "15. dnem po vyvěšení na úřední desce"
+            ],
+            [
+              "odvolání",
+              "15 dnů od oznámení rozhodnutí"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kdo je účastník"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**v řízení o žádosti**: žadatel a další dotčení, jejichž práva by rozhodnutí přímo ovlivnilo,",
+            "**v řízení z moci úřední**: ten, komu má rozhodnutí založit, změnit nebo zrušit práva či povinnosti,",
+            "**osoby, které za účastníky označí zvláštní zákon** (např. spolky v ochraně přírody)."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Účastník smí navrhovat důkazy, nahlížet do spisu, vyjádřit se k podkladům před vydáním rozhodnutí a nechat se zastoupit. Úřední osoba, o jejíž **nepodjatosti** jsou pochybnosti, je z řízení vyloučena."
+        },
+        {
+          "type": "heading",
+          "text": "Co obsahuje rozhodnutí"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**výrok**: řešení věci, použitá ustanovení zákona, účastníci, lhůty ke splnění,",
+            "**odůvodnění**: důvody, podklady, úvahy a vypořádání námitek (lze vynechat, když úřad všem plně vyhoví),",
+            "**poučení**: zda a do kdy se lze odvolat, u koho a kdo rozhodne,",
+            "označení úřadu, číslo jednací, datum, razítko, jméno a podpis úřední osoby."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Lhůta 15 dnů znamená 15 pracovních dnů.",
+          "right": "Lhůta ve dnech se počítá v **kalendářních dnech**. Jen když **poslední den** padne na sobotu, neděli nebo svátek, posouvá se na nejbližší pracovní den.",
+          "why": "Víkendy uvnitř lhůty se započítávají. Kdo počítá jen pracovní dny, odvolání podá pozdě."
+        },
+        {
+          "type": "summary",
+          "text": "Správní řízení se řídí správním řádem č. 500/2004 Sb. Lhůty se počítají od dne následujícího po události, v kalendářních dnech, s posunem konce na pracovní den. Úřad rozhoduje do 30 dnů (+ až 30), účastník se může odvolat do 15 dnů od oznámení. Doručuje se přednostně do datové schránky; po marné odvolací lhůtě je rozhodnutí v právní moci."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jakým číslem a rokem je označen správní řád? (ve tvaru číslo/rok)",
+      "answers": [
+        "500/2004",
+        "500/2004 Sb.",
+        "500/2004 sb"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy je zahájeno řízení na žádost?",
+      "options": [
+        "dnem, kdy žádost dojde příslušnému úřadu",
+        "dnem, kdy žadatel žádost napíše",
+        "dnem, kdy úředník žádost otevře",
+        "dnem vydání rozhodnutí"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kdy je zahájeno řízení z moci úřední?",
+      "options": [
+        "dnem doručení oznámení o zahájení řízení účastníkovi",
+        "dnem, kdy se úřad o věci dozví",
+        "dnem vydání rozhodnutí",
+        "dnem, kdy účastník zaplatí poplatek"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jaká je základní lhůta pro vydání rozhodnutí, když ho úřad nemůže vydat bezodkladně? (počet dnů)",
+      "answers": [
+        "30",
+        "třicet"
+      ],
+      "explanation": "30 dnů od zahájení řízení, s možným prodloužením až o 30 dnů."
+    },
+    {
+      "type": "input",
+      "question": "O kolik dnů nejvýše se lhůta pro vydání rozhodnutí prodlužuje, je-li nutné místní šetření? (počet dnů)",
+      "answers": [
+        "30",
+        "třicet"
+      ],
+      "explanation": "Připočítává se až 30 dnů."
+    },
+    {
+      "type": "match",
+      "question": "Spoj část rozhodnutí s obsahem.",
+      "pairs": [
+        [
+          "výrok",
+          "jak úřad rozhodl a podle kterých ustanovení"
+        ],
+        [
+          "odůvodnění",
+          "proč tak rozhodl"
+        ],
+        [
+          "poučení",
+          "zda a kdy se lze odvolat"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Lhůta ve dnech se počítá jen v pracovních dnech.",
+      "answer": false,
+      "explanation": "Počítá se v kalendářních dnech; jen poslední den se posouvá z víkendu či svátku na pracovní den."
+    },
+    {
+      "type": "choice",
+      "question": "Rozhodnutí ti bylo doručeno v pondělí 2. 3. 2026. Kdy je poslední den lhůty pro odvolání?",
+      "options": [
+        "17. 3. 2026",
+        "16. 3. 2026",
+        "18. 3. 2026",
+        "23. 3. 2026"
+      ],
+      "answer": 0,
+      "explanation": "Lhůta začíná 3. 3., patnáctý den je 17. 3. (úterý).",
+      "hints": [
+        "Den doručení se do lhůty nezapočítává.",
+        "Počítej 15 kalendářních dnů od 3. 3."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kolik dnů má adresát na vyzvednutí písemnosti uložené na poště, než nastane fikce doručení?",
+      "options": [
+        "10",
+        "15",
+        "5",
+        "30"
+      ],
+      "answer": 0,
+      "explanation": "Posledním dnem desetidenní lhůty je písemnost považována za doručenou."
+    },
+    {
+      "type": "truefalse",
+      "question": "Rozhodnutí je v právní moci, když bylo oznámeno a nelze proti němu podat odvolání.",
+      "answer": true,
+      "explanation": "Tak definuje právní moc § 73 správního řádu."
+    },
+    {
+      "type": "truefalse",
+      "question": "Odůvodnění rozhodnutí není třeba, pokud úřad všem účastníkům plně vyhoví.",
+      "answer": true,
+      "explanation": "Výjimka podle § 68 odst. 4 správního řádu."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky správního řízení na žádost.",
+      "items": [
+        "podání žádosti",
+        "zjištění stavu věci a dokazování",
+        "seznámení účastníků s podklady",
+        "vydání rozhodnutí",
+        "doručení rozhodnutí",
+        "nabytí právní moci"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kam úřad doručuje přednostně?",
+      "options": [
+        "do datové schránky",
+        "na e-mail bez podpisu",
+        "na úřední desku",
+        "telefonicky"
+      ],
+      "answer": 0,
+      "explanation": "Má-li adresát zpřístupněnou datovou schránku, doručuje se do ní."
+    },
+    {
+      "type": "open",
+      "question": "Popiš, jak se ve správním řízení počítají lhůty, a vypočítej příklad.",
+      "answer": "Den události, např. doručení, se nezapočítává; lhůta začíná následujícím dnem a běží v kalendářních dnech. Pokud poslední den připadne na sobotu, neděli nebo svátek, posouvá se na nejbližší pracovní den. Lhůta je zachována odesláním podání poslední den. Příklad: doručeno v pátek 22. 5. 2026, patnáctý den je sobota 6. 6., proto odvolání stačí podat v pondělí 8. 6. 2026."
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "egovernment-evidence",
+  "title": "eGovernment, evidence obyvatel a doklady",
+  "emoji": "💻",
+  "explanations": [
+    {
+      "title": "Úřad z gauče",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Eva (18) se přestěhovala na kolej a potřebuje výpis z rejstříku trestů na brigádu. Kdysi by musela na úřad s občankou a čekat ve frontě. Dnes ho vyřídí na nejbližší pobočce pošty, nebo z mobilu přes portál státu."
+        },
+        {
+          "type": "text",
+          "text": "Elektronizaci veřejné správy říkáme **eGovernment**. Úředník musí umět s jeho nástroji pracovat a poradit s nimi lidem. Pojďme je projít od základů."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "eGovernment",
+          "definition": "Využití informačních technologií ve veřejné správě: elektronická komunikace s úřady, propojené registry, online služby.",
+          "example": "Podání žádosti přes Portál občana místo osobní návštěvy."
+        },
+        {
+          "type": "term",
+          "term": "Datová schránka",
+          "definition": "Elektronické úložiště pro **úřední komunikaci** s úřady. Zpráva doručená do datové schránky má stejné účinky jako doporučený dopis do vlastních rukou. Upravuje ji **zákon č. 300/2008 Sb.**",
+          "example": "Finanční úřad pošle firmě výzvu do datové schránky."
+        },
+        {
+          "type": "term",
+          "term": "Czech POINT",
+          "definition": "Síť **kontaktních míst veřejné správy**, kde lze na jednom místě získat ověřené výpisy z registrů a další služby. Najdeš ho na obecních úřadech, poštách, u notářů a dalších míst.",
+          "example": "Na poště si vyzvedneš výpis z katastru nemovitostí."
+        },
+        {
+          "type": "term",
+          "term": "Základní registry",
+          "definition": "Čtyři hlavní státní databáze, ze kterých úřady berou údaje. Upravuje je **zákon č. 111/2009 Sb.**, fungují od roku 2012.",
+          "example": "Úřad zjistí tvou adresu z registru obyvatel, nemusíš ji dokládat."
+        },
+        {
+          "type": "term",
+          "term": "Elektronická identita",
+          "definition": "Způsob, jak se bezpečně prokázat na internetu, že jsi to opravdu ty. Stát ji ověřuje přes **Národní identitní autoritu**.",
+          "example": "Přihlášení do Portálu občana přes bankovní identitu nebo eObčanku."
+        },
+        {
+          "type": "heading",
+          "text": "Datové schránky"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ze zákona mají datovou schránku **úřady**, **právnické osoby** a od 1. 1. 2023 také **podnikající fyzické osoby** (OSVČ).",
+            "Ostatní občané si ji mohou zřídit **zdarma na žádost**.",
+            "Úřad doručuje přednostně do datové schránky. Zpráva je doručena **přihlášením** oprávněné osoby, jinak **10. dnem** po dodání (fikce doručení).",
+            "Zprávy se ve schránce uchovávají **90 dnů** od doručení, pak se smažou (pokud nemáš placený datový trezor). Důležité zprávy si proto ulož.",
+            "Posílání zpráv úřadům je zdarma."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma pana Krále má datovou schránku, ale nikdo se do ní měsíc nepřihlásil. Mezitím do ní přišla výzva úřadu s lhůtou 15 dnů. Co to znamená?",
+          "answer": "Výzva se považuje za doručenou **10. dnem** po dodání, i když ji nikdo nečetl. Od té doby běží lhůta 15 dnů. Firma ji pravděpodobně zmeškala. Proto je třeba se do schránky pravidelně přihlašovat."
+        },
+        {
+          "type": "heading",
+          "text": "Základní registry"
+        },
+        {
+          "type": "table",
+          "head": [
+            "registr",
+            "zkratka",
+            "co obsahuje"
+          ],
+          "rows": [
+            [
+              "registr obyvatel",
+              "ROB",
+              "jméno, adresa, datum narození, státní občanství…"
+            ],
+            [
+              "registr osob",
+              "ROS",
+              "firmy, spolky, OSVČ, úřady – název, IČO, sídlo"
+            ],
+            [
+              "registr územní identifikace, adres a nemovitostí",
+              "RÚIAN",
+              "adresy, ulice, obce, budovy"
+            ],
+            [
+              "registr práv a povinností",
+              "RPP",
+              "které úřady smějí jaké údaje používat"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Princip zní: **úřad nesmí po člověku chtít údaje, které už sám má nebo si je může zjistit z registrů**. Tento princip „jednou a dost“ posiluje i zákon č. 12/2020 Sb., o právu na digitální služby."
+        },
+        {
+          "type": "heading",
+          "text": "Evidence obyvatel a doklady"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Evidence obyvatel** (zákon č. 133/2000 Sb.): trvalý pobyt se hlásí na **ohlašovně**, tedy na obecním úřadě. Člověk má jen jeden trvalý pobyt.",
+            "**Občanský průkaz** (zákon č. 269/2021 Sb.): povinně ho má každý občan s trvalým pobytem v ČR **od 15 let**. Občanovi staršímu 15 let se vydává s platností **10 let**. O průkaz lze žádat na kterémkoli obecním úřadě obce s rozšířenou působností.",
+            "**Cestovní pas** (zákon č. 329/1999 Sb.): platí 10 let, dětem do 15 let 5 let. Vydávají ho obce s rozšířenou působností.",
+            "**Matrika** (zákon č. 301/2000 Sb.): zápisy narození, manželství a úmrtí; vydává rodné, oddací a úmrtní listy."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Petr (15) bydlí v Kolíně, ale studuje v Pardubicích. Kde si může požádat o první občanský průkaz?",
+          "answer": "Na **kterémkoli obecním úřadě obce s rozšířenou působností**, tedy i v Pardubicích. Nemusí jezdit do místa trvalého pobytu."
+        },
+        {
+          "type": "heading",
+          "text": "Online služby"
+        },
+        {
+          "type": "text",
+          "text": "Přes **Portál občana** (součást Portálu veřejné správy gov.cz) si lze prohlížet své údaje z registrů, posílat podání a sledovat jejich vyřízení. Přihlásit se lze například **eObčankou**, **bankovní identitou** nebo **mobilním klíčem eGovernmentu**. V roce 2025 stát spustil aplikaci **eDoklady** pro digitální podobu občanského průkazu."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když se nepřihlásím do datové schránky, zpráva mi nebyla doručena.",
+          "right": "Zpráva se považuje za doručenou **10. dnem** po dodání do schránky, i když se nepřihlásíš (fikce doručení).",
+          "why": "Jinak by se mohl kdokoli vyhýbat úředním písemnostem jen tím, že schránku neotevře."
+        },
+        {
+          "type": "summary",
+          "text": "eGovernment znamená elektronickou veřejnou správu. Datové schránky (zákon č. 300/2008 Sb.) slouží k úřednímu doručování a zpráva je doručena přihlášením nebo 10. dnem. Czech POINT nabízí výpisy z registrů na jednom místě. Čtyři základní registry (ROB, ROS, RÚIAN, RPP) sdílí údaje mezi úřady. Občanský průkaz je povinný od 15 let a vydávají ho obce s rozšířenou působností."
+        }
+      ]
+    },
+    {
+      "title": "Kde co vyřídit",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Na přepážku přijde člověk a ptá se: „Kde si zařídím datovou schránku? Kde dostanu výpis z rejstříku trestů? Musím s pasem do místa bydliště?“ Dobrý úředník odpoví hned a správně."
+        },
+        {
+          "type": "text",
+          "text": "Toto vysvětlení je jako příručka u přepážky. Nejdřív pojmy, pak tabulky „co – kde – podle čeho“."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Orgán veřejné moci",
+          "definition": "Úřad nebo jiná instituce, která vykonává veřejnou moc: ministerstvo, obec, kraj, soud.",
+          "example": "Finanční úřad, městský úřad, krajský soud."
+        },
+        {
+          "type": "term",
+          "term": "Kontaktní místo veřejné správy (Czech POINT)",
+          "definition": "Místo, kde ti vydají ověřený výstup z informačních systémů veřejné správy a provedou další služby, např. autorizovanou konverzi.",
+          "example": "Obecní úřad, pobočka České pošty, notář."
+        },
+        {
+          "type": "term",
+          "term": "Autorizovaná konverze",
+          "definition": "Převedení listiny do elektronické podoby (nebo opačně) tak, že výsledek má **stejné právní účinky** jako originál.",
+          "example": "Papírovou plnou moc převedeš na Czech POINT do PDF s ověřovací doložkou a pošleš ji datovou schránkou."
+        },
+        {
+          "type": "term",
+          "term": "Trvalý pobyt",
+          "definition": "Adresa, kterou má občan **úředně hlášenou** v evidenci obyvatel. Na ni mu přichází úřední pošta (pokud nemá datovou schránku).",
+          "example": "Eva má trvalý pobyt u rodičů v Táboře, i když bydlí na koleji."
+        },
+        {
+          "type": "term",
+          "term": "Národní identitní autorita (NIA)",
+          "definition": "Státní systém, který ověřuje tvoji elektronickou identitu, když se přihlašuješ k online službám úřadů.",
+          "example": "Přihlášení bankovní identitou do Portálu občana."
+        },
+        {
+          "type": "heading",
+          "text": "Datové schránky v kostce"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Kdo ji má ze zákona**: orgány veřejné moci, právnické osoby a od 1. 1. 2023 i podnikající fyzické osoby.",
+            "**Kdo na žádost**: kterákoli fyzická osoba, zřízení je zdarma (např. na Czech POINT nebo online).",
+            "**Doručení**: přihlášením, nebo **10. dnem** po dodání.",
+            "**Uložení**: zprávy se mažou **90 dnů** po doručení.",
+            "**Pravidlo**: úřad, který může doručit do datové schránky, doručuje přednostně tam."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Co – kde – podle čeho"
+        },
+        {
+          "type": "table",
+          "head": [
+            "potřebuji",
+            "kde to vyřídím",
+            "předpis"
+          ],
+          "rows": [
+            [
+              "výpis z rejstříku trestů, katastru, obchodního rejstříku",
+              "Czech POINT, online přes Portál občana",
+              "zákon o informačních systémech veřejné správy"
+            ],
+            [
+              "občanský průkaz",
+              "kterýkoli obecní úřad obce s rozšířenou působností",
+              "zákon č. 269/2021 Sb."
+            ],
+            [
+              "cestovní pas",
+              "obecní úřad obce s rozšířenou působností",
+              "zákon č. 329/1999 Sb."
+            ],
+            [
+              "změna trvalého pobytu",
+              "ohlašovna (obecní úřad), případně online",
+              "zákon č. 133/2000 Sb."
+            ],
+            [
+              "rodný list",
+              "matriční úřad",
+              "zákon č. 301/2000 Sb."
+            ],
+            [
+              "datová schránka",
+              "Czech POINT nebo online",
+              "zákon č. 300/2008 Sb."
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Paní Malá se přestěhovala z Brna do Kuřimi. Kde ohlásí změnu trvalého pobytu a co se pak s údajem stane?",
+          "answer": "Změnu ohlásí na **ohlašovně** v Kuřimi, tedy na obecním úřadě nového bydliště. Nová adresa se zapíše do **registru obyvatel**. Ostatní úřady ji odtud převezmou, takže ji paní Malá nemusí hlásit každému úřadu zvlášť."
+        },
+        {
+          "type": "heading",
+          "text": "Základní registry a „jednou a dost“"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**ROB** – registr obyvatel,",
+            "**ROS** – registr osob (firmy, spolky, OSVČ, úřady),",
+            "**RÚIAN** – registr územní identifikace, adres a nemovitostí,",
+            "**RPP** – registr práv a povinností (kdo smí jaké údaje číst)."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Registry jsou propojené a úřady z nich čerpají ověřené údaje. Proto úřad **nesmí chtít doklad o údaji**, který má v registru. Zákon č. 12/2020 Sb., o právu na digitální služby, navíc dává lidem právo vyřizovat s úřady stále víc věcí elektronicky."
+        },
+        {
+          "type": "example",
+          "question": "Úřad po Evě chce, aby k žádosti přiložila potvrzení o trvalém pobytu. Má na to právo?",
+          "answer": "Nemá. Údaj o trvalém pobytu je v **registru obyvatel** a úřad si ho musí zjistit sám. Eva může úřednici na tento princip upozornit."
+        },
+        {
+          "type": "heading",
+          "text": "Přihlášení k online službám"
+        },
+        {
+          "type": "text",
+          "text": "K Portálu občana a dalším službám se přihlásíš přes **Národní identitní autoritu**. Možnosti jsou například **eObčanka** (občanský průkaz s čipem), **bankovní identita** nebo **mobilní klíč eGovernmentu**."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Občanský průkaz si musím vyřídit jen v obci, kde mám trvalý pobyt.",
+          "right": "Žádost lze podat na **kterémkoli obecním úřadě obce s rozšířenou působností** v republice.",
+          "why": "Úřady sdílí údaje přes základní registry, takže nemusí záležet na tom, kde máš trvalý pobyt."
+        },
+        {
+          "type": "summary",
+          "text": "Datové schránky mají ze zákona úřady, právnické osoby a od roku 2023 i podnikající fyzické osoby; ostatní na žádost. Výpisy z registrů a autorizovanou konverzi nabízí Czech POINT. Základní registry ROB, ROS, RÚIAN a RPP sdílí údaje, a proto úřad nesmí chtít doklady o tom, co v nich je. Občanský průkaz (povinný od 15 let) a pas vyřídíš u obce s rozšířenou působností, trvalý pobyt na ohlašovně."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jakým číslem a rokem je označen zákon o elektronických úkonech a autorizované konverzi dokumentů (datové schránky)? (ve tvaru číslo/rok)",
+      "answers": [
+        "300/2008",
+        "300/2008 Sb.",
+        "300/2008 sb"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy se zpráva v datové schránce považuje za doručenou, když se adresát nepřihlásí?",
+      "options": [
+        "10. dnem po dodání",
+        "15. dnem po dodání",
+        "30. dnem po dodání",
+        "nikdy"
+      ],
+      "answer": 0,
+      "explanation": "Je to fikce doručení."
+    },
+    {
+      "type": "truefalse",
+      "question": "Od 1. 1. 2023 mají datovou schránku ze zákona i podnikající fyzické osoby.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Kolik je základních registrů? (číslo)",
+      "answers": [
+        "4",
+        "čtyři"
+      ],
+      "explanation": "ROB, ROS, RÚIAN a RPP."
+    },
+    {
+      "type": "match",
+      "question": "Spoj zkratku registru s obsahem.",
+      "pairs": [
+        [
+          "ROB",
+          "obyvatelé"
+        ],
+        [
+          "ROS",
+          "firmy, spolky, OSVČ a úřady"
+        ],
+        [
+          "RÚIAN",
+          "adresy, budovy a území"
+        ],
+        [
+          "RPP",
+          "kdo smí jaké údaje používat"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Od kolika let musí mít občan s trvalým pobytem v ČR občanský průkaz?",
+      "options": [
+        "od 15 let",
+        "od 18 let",
+        "od 12 let",
+        "od narození"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kde lze požádat o občanský průkaz?",
+      "options": [
+        "na kterémkoli obecním úřadě obce s rozšířenou působností",
+        "jen v obci trvalého pobytu",
+        "jen na krajském úřadě",
+        "na finančním úřadě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Co je Czech POINT?",
+      "options": [
+        "síť kontaktních míst veřejné správy",
+        "aplikace pro placení daní",
+        "registr obyvatel",
+        "druh datové schránky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Úřad smí po občanovi chtít potvrzení údaje, který sám vede v základních registrech.",
+      "answer": false,
+      "explanation": "Úřad si údaje z registrů zjistí sám; nesmí je po lidech vyžadovat."
+    },
+    {
+      "type": "choice",
+      "question": "Jak dlouho se uchovávají doručené zprávy v datové schránce bez datového trezoru?",
+      "options": [
+        "90 dnů",
+        "10 dnů",
+        "1 rok",
+        "natrvalo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Kde se hlásí změna trvalého pobytu?",
+      "options": [
+        "na ohlašovně (obecním úřadě)",
+        "na finančním úřadě",
+        "na policii",
+        "u zdravotní pojišťovny"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje převedení listiny do elektronické podoby se stejnými právními účinky?",
+      "options": [
+        "autorizovaná konverze",
+        "vidimace",
+        "legalizace",
+        "digitalizace spisu"
+      ],
+      "answer": 0,
+      "explanation": "Vidimace je ověření shody kopie s listinou, legalizace ověření podpisu.",
+      "hints": [
+        "Provádí se mimo jiné na Czech POINT a výsledkem je dokument s ověřovací doložkou."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Cestovní pas občana staršího 15 let platí 10 let.",
+      "answer": true,
+      "explanation": "Dětem do 15 let se vydává s platností 5 let."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli, k čemu slouží datové schránky a co znamená fikce doručení.",
+      "answer": "Datové schránky slouží k úřední elektronické komunikaci s úřady a mezi nimi; zpráva v nich má účinky doporučeného dopisu do vlastních rukou. Ze zákona je mají úřady, právnické osoby a od roku 2023 i podnikající fyzické osoby, ostatní si je mohou zřídit zdarma. Fikce doručení znamená, že když se adresát do schránky nepřihlásí, zpráva se považuje za doručenou 10. dnem po dodání a začínají běžet lhůty."
+    }
+  ]
+}
