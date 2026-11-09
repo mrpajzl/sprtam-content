@@ -1,0 +1,414 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "zavazky-smlouvy",
+  "title": "Závazky a smlouvy",
+  "emoji": "🤝",
+  "explanations": [
+    {
+      "title": "Od nabídky k podpisu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ráno si koupíš rohlík, cestou zaplatíš jízdenku, odpoledne si objednáš boty na e-shopu. Uzavřel jsi tři smlouvy a ani jsi nic nepodepsal. Smlouvy jsou všude kolem nás."
+        },
+        {
+          "type": "text",
+          "text": "Ze smlouvy vzniká **závazek**: jedna strana může po druhé něco chtít. Musíš vědět, kdy smlouva vznikne, co z typických smluv plyne a jak se dá závazek pojistit."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Závazek",
+          "definition": "Právní vztah, ve kterém má **věřitel** právo na plnění (**pohledávku**) a **dlužník** povinnost plnit (**dluh**).",
+          "example": "Pavel půjčil Tomovi 2 000 Kč. Pavel je věřitel, Tom dlužník."
+        },
+        {
+          "type": "term",
+          "term": "Nabídka (oferta)",
+          "definition": "Návrh na uzavření smlouvy, který je dostatečně určitý a ze kterého je vidět vůle navrhovatele být vázán, když ho druhá strana přijme.",
+          "example": "„Prodám ti své kolo za 4 000 Kč, dej vědět do pátku.“"
+        },
+        {
+          "type": "term",
+          "term": "Přijetí (akceptace)",
+          "definition": "Včasný projev souhlasu s nabídkou. Smlouva je uzavřená, když přijetí **dojde** navrhovateli.",
+          "example": "„Beru, kolo za 4 000 Kč chci.“"
+        },
+        {
+          "type": "heading",
+          "text": "Jak smlouva vznikne"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Navrhovatel učiní **nabídku** se všemi podstatnými náležitostmi (co, za kolik).",
+            "Druhá strana nabídku včas **přijme**. Mlčení ani nečinnost samy o sobě přijetím nejsou.",
+            "Přijetí s podstatnou změnou nebo dodatkem je **nová nabídka** (protinávrh). Původní nabídka tím zaniká.",
+            "Když přijetí dojde navrhovateli, smlouva je **uzavřená** a strany jsou vázány."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Jana nabídne Petrovi kolo za 4 000 Kč. Petr odpoví: „Beru za 3 500 Kč.“ Jana mlčí. Je smlouva uzavřená?",
+          "answer": "Není. Petrova odpověď mění cenu, je to **protinávrh**, tedy nová nabídka. Původní nabídka zanikla. Jana ji nepřijala a mlčení přijetím není."
+        },
+        {
+          "type": "heading",
+          "text": "Nejčastější smlouvy"
+        },
+        {
+          "type": "table",
+          "head": [
+            "smlouva",
+            "kdo co dělá",
+            "na co dát pozor"
+          ],
+          "rows": [
+            [
+              "kupní",
+              "prodávající odevzdá věc a umožní nabýt vlastnictví; kupující zaplatí kupní cenu a věc převezme",
+              "u nemovitosti z katastru přechází vlastnictví až zápisem (vkladem) do katastru"
+            ],
+            [
+              "nájemní",
+              "pronajímatel přenechá věc k dočasnému užívání; nájemce platí nájemné",
+              "nájem bytu silněji chrání nájemce; kauce nejvýš trojnásobek měsíčního nájemného"
+            ],
+            [
+              "o dílo",
+              "zhotovitel provede dílo na svůj náklad a nebezpečí; objednatel ho převezme a zaplatí cenu",
+              "dílo = výsledek činnosti, třeba oprava auta nebo stavba garáže"
+            ],
+            [
+              "zápůjčka",
+              "zapůjčitel přenechá zastupitelnou věc (peníze); vydlužitel vrátí věc stejného druhu",
+              "lidově „půjčka“ peněz; úroky jen když se ujednají"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma Malířství Dvořák vymaluje byt za 15 000 Kč. Malíř si koupí barvy sám. Jaká je to smlouva a kdo nese riziko, když se barva během práce rozlije?",
+          "answer": "**Smlouva o dílo**. Zhotovitel provádí dílo **na svůj náklad a nebezpečí**: barvy i riziko jejich zničení během práce jdou za malířem. Objednatel zaplatí dohodnutou cenu po převzetí hotového díla."
+        },
+        {
+          "type": "heading",
+          "text": "Spotřebitel má zvláštní ochranu"
+        },
+        {
+          "type": "term",
+          "term": "Spotřebitel",
+          "definition": "Člověk, který uzavírá smlouvu s podnikatelem **mimo rámec svého podnikání nebo povolání**.",
+          "example": "Student si kupuje notebook domů."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Smlouvu uzavřenou **na dálku** (e-shop, telefon) nebo **mimo obchodní prostory** může spotřebitel bez udání důvodu zrušit do **14 dnů**; u koupě zboží lhůta běží zpravidla od převzetí.",
+            "U spotřebního zboží může spotřebitel uplatnit práva z **vady**, která se projeví do **24 měsíců** od převzetí.",
+            "Ujednání, která spotřebitele nepřiměřeně znevýhodňují, jsou neplatná."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Zboží z kamenné prodejny můžu do 14 dnů vrátit bez udání důvodu.",
+          "right": "Právo odstoupit do 14 dnů bez udání důvodu dává zákon jen u smluv **na dálku** a **mimo obchodní prostory**. V kamenném obchodě jen tehdy, když to prodejce sám nabízí.",
+          "why": "Na dálku si zboží nemůžeš prohlédnout předem; v obchodě ano. Proto zákon chrání hlavně nákup na dálku."
+        },
+        {
+          "type": "summary",
+          "text": "Smlouva vzniká přijetím nabídky; přijetí se změnou je protinávrh a mlčení přijetím není. Kupní smlouva převádí vlastnictví za cenu, nájem dává věc do užívání, smlouva o dílo zavazuje k výsledku. Spotřebitel může smlouvu na dálku zrušit do 14 dnů a vady reklamovat do 24 měsíců."
+        }
+      ]
+    },
+    {
+      "title": "Pojistky a konec",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Banka půjčí paní Kratochvílové 2 miliony na byt. Co když přestane splácet? Banka chce mít jistotu, že peníze dostane zpět. Proto si dluh **zajistí**: nechá si byt zastavit nebo chce ručitele."
+        },
+        {
+          "type": "text",
+          "text": "A každý závazek jednou skončí: zaplacením, dohodou, výpovědí. Tohle vysvětlení ukazuje, jak se dluh pojišťuje a jak zaniká."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Závazek",
+          "definition": "Vztah, ve kterém **věřitel** může po **dlužníkovi** požadovat plnění a dlužník je povinen plnit.",
+          "example": "Paní Kratochvílová je dlužnice, banka věřitel."
+        },
+        {
+          "type": "term",
+          "term": "Zajištění dluhu",
+          "definition": "Prostředek, který dává věřiteli **další zdroj**, ze kterého se uspokojí, když dlužník neplatí.",
+          "example": "Zástava bytu, ručitel."
+        },
+        {
+          "type": "term",
+          "term": "Utvrzení dluhu",
+          "definition": "Prostředek, který dluh **posiluje** (motivuje dlužníka platit nebo usnadňuje vymáhání), ale nedává věřiteli další majetek.",
+          "example": "Smluvní pokuta za pozdní dokončení stavby."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se dluh zajistí"
+        },
+        {
+          "type": "table",
+          "head": [
+            "prostředek",
+            "jak funguje"
+          ],
+          "rows": [
+            [
+              "zástavní právo",
+              "když dlužník nezaplatí, věřitel se uspokojí z prodeje zastavené věci (u nemovitosti zápis v katastru)"
+            ],
+            [
+              "ručení",
+              "ručitel písemně prohlásí, že zaplatí, když nezaplatí dlužník"
+            ],
+            [
+              "zadržovací právo",
+              "věřitel si ponechá cizí věc, kterou má u sebe, dokud není dluh zaplacen"
+            ],
+            [
+              "zajišťovací převod práva",
+              "dlužník převede právo (třeba vlastnictví auta) na věřitele; po zaplacení se vrací"
+            ],
+            [
+              "dohoda o srážkách ze mzdy",
+              "zaměstnavatel posílá část mzdy dlužníka přímo věřiteli"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se dluh utvrdí"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Smluvní pokuta**: předem dohodnutá částka, kterou dlužník zaplatí, když povinnost poruší. Platí ji bez ohledu na to, zda věřiteli vznikla škoda.",
+            "**Uznání dluhu**: dlužník písemně uzná, že dluží. Má se za to, že dluh trval, a začíná běžet nová promlčecí lhůta."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Stavební firma má podle smlouvy dokončit garáž do 30. června. Za každý den zpoždění zaplatí smluvní pokutu 1 000 Kč. Dokončí ji 10. července. Kolik zaplatí a musí objednatel dokazovat škodu?",
+          "answer": "Zpoždění je **10 dní** (1. až 10. července), smluvní pokuta tedy **10 000 Kč**. Objednatel **nemusí** dokazovat, že mu vznikla škoda: smluvní pokuta se platí už za samotné porušení povinnosti."
+        },
+        {
+          "type": "heading",
+          "text": "Jak závazek zaniká"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Splnění**: nejčastější a „správný“ způsob, dlužník zaplatí.",
+            "**Dohoda**: strany se dohodnou, že závazek ruší nebo nahrazují jiným.",
+            "**Započtení**: dvě protichůdné pohledávky se vzájemně odečtou.",
+            "**Výpověď** nebo **odstoupení od smlouvy**: jednostranné ukončení, jen když to dovoluje zákon nebo smlouva.",
+            "**Nemožnost plnění**, **prominutí dluhu**, **splynutí** (dlužník se stane věřitelem) a u závazků vázaných na osobu i **smrt** dlužníka nebo věřitele."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Eva dluží Martinovi 3 000 Kč. Martin dluží Evě 1 800 Kč. Oba dluhy jsou splatné. Eva projeví vůli započíst. Co zbude?",
+          "answer": "Pohledávky se vzájemně odečtou do výše té nižší: 3 000 − 1 800 = **1 200 Kč**. Martinův dluh zanikl celý, Eva dluží Martinovi už jen 1 200 Kč."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Ručitel musí zaplatit hned, jak dluh dospěje, bez ohledu na dlužníka.",
+          "right": "Ručitel plní, až když **dlužník nesplnil**, ačkoli ho k tomu věřitel písemně vyzval (pokud se nedohodnou jinak nebo dlužník není v úpadku).",
+          "why": "Ručení je zajištění „v záloze“. Hlavní povinnost má dlužník; ručitel nastupuje až po něm."
+        },
+        {
+          "type": "summary",
+          "text": "Dluh lze zajistit (zástava, ručení, zadržení, zajišťovací převod, srážky ze mzdy) nebo utvrdit (smluvní pokuta, uznání dluhu). Závazek zaniká hlavně splněním, ale i dohodou, započtením, výpovědí, odstoupením nebo nemožností plnění."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj pojem s jeho významem.",
+      "pairs": [
+        [
+          "věřitel",
+          "má právo na plnění"
+        ],
+        [
+          "dlužník",
+          "má povinnost plnit"
+        ],
+        [
+          "pohledávka",
+          "právo věřitele"
+        ],
+        [
+          "dluh",
+          "povinnost dlužníka"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když na nabídku neodpovíš, smlouva je uzavřená.",
+      "answer": false,
+      "explanation": "Mlčení ani nečinnost samy o sobě přijetím nejsou."
+    },
+    {
+      "type": "choice",
+      "question": "Ondra nabídne skútr za 20 000 Kč. Kupec odpoví: „Beru za 18 000.“ Co je ta odpověď?",
+      "options": [
+        "nová nabídka (protinávrh)",
+        "přijetí, smlouva vznikla za 20 000 Kč",
+        "přijetí, smlouva vznikla za 18 000 Kč",
+        "odstoupení od smlouvy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj smlouvu s typickým příkladem.",
+      "pairs": [
+        [
+          "kupní smlouva",
+          "koupě ojetého auta"
+        ],
+        [
+          "nájemní smlouva",
+          "bydlení v cizím bytě za měsíční platbu"
+        ],
+        [
+          "smlouva o dílo",
+          "oprava střechy"
+        ],
+        [
+          "smlouva o zápůjčce",
+          "půjčení 5 000 Kč kamarádovi"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdy přechází vlastnictví k nemovitosti zapsané v katastru nemovitostí?",
+      "options": [
+        "zápisem (vkladem) do katastru nemovitostí",
+        "podpisem kupní smlouvy",
+        "zaplacením kupní ceny",
+        "předáním klíčů"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Nejvýš kolikanásobek měsíčního nájemného smí činit kauce u nájmu bytu? Napiš číslo.",
+      "answers": [
+        "3",
+        "tři",
+        "trojnásobek"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Zboží koupené v e-shopu může spotřebitel vrátit do 14 dnů bez udání důvodu.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Kdo je spotřebitel?",
+      "options": [
+        "člověk, který uzavírá smlouvu s podnikatelem mimo své podnikání",
+        "každý, kdo si něco kupuje",
+        "podnikatel, který nakupuje zboží pro firmu",
+        "jen člověk starší 18 let"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj prostředek s tím, zda dluh zajišťuje, nebo utvrzuje.",
+      "pairs": [
+        [
+          "zástavní právo",
+          "zajištění"
+        ],
+        [
+          "ručení",
+          "zajištění"
+        ],
+        [
+          "smluvní pokuta",
+          "utvrzení"
+        ],
+        [
+          "uznání dluhu",
+          "utvrzení"
+        ]
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Firma měla dokončit dílo 15. května, dokončila ho 22. května. Smluvní pokuta je 500 Kč za každý den prodlení. Kolik korun zaplatí?",
+      "answers": [
+        "3500",
+        "3 500"
+      ],
+      "hints": [
+        "Spočítej dny prodlení: 16. až 22. května."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky vzniku smlouvy.",
+      "items": [
+        "navrhovatel učiní nabídku",
+        "nabídka dojde druhé straně",
+        "druhá strana nabídku přijme",
+        "přijetí dojde navrhovateli",
+        "smlouva je uzavřená"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Eva dluží Karlovi 10 000 Kč, Karel dluží Evě 4 000 Kč. Po započtení:",
+      "options": [
+        "Eva dluží Karlovi 6 000 Kč.",
+        "Karel dluží Evě 6 000 Kč.",
+        "Oba dluhy zanikly.",
+        "Eva dluží Karlovi 14 000 Kč."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jak vzniká smlouva? Popiš nabídku a přijetí.",
+      "answer": "Smlouva vzniká tak, že jedna strana učiní dostatečně určitou nabídku a druhá ji včas přijme. Smlouva je uzavřená, když přijetí dojde navrhovateli. Přijetí s podstatnou změnou je nová nabídka a mlčení samo o sobě přijetím není."
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi zajištěním a utvrzením dluhu? Uveď příklady.",
+      "answer": "Zajištění dává věřiteli další zdroj, ze kterého se uspokojí, například zástavní právo nebo ručení. Utvrzení dluh jen posiluje bez dalšího majetku, například smluvní pokuta nebo uznání dluhu."
+    }
+  ]
+}

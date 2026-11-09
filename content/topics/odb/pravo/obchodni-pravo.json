@@ -1,0 +1,342 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "obchodni-pravo",
+  "title": "Obchodní právo",
+  "emoji": "🏪",
+  "explanations": [
+    {
+      "title": "Kdo je podnikatel",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Klára peče dorty. Nejdřív jen pro rodinu, pak pro kamarády za peníze, nakonec si otevře cukrárnu. Kdy se z ní stala **podnikatelka**? A jak se má cukrárna jmenovat, aby si ji nikdo nespletl se sousední?"
+        },
+        {
+          "type": "text",
+          "text": "Obchodní právo je soubor pravidel pro podnikatele. V ČR ho najdeš hlavně v **občanském zákoníku** (č. 89/2012 Sb.) a v **zákoně o obchodních korporacích** (č. 90/2012 Sb.). Pravidla živnosti znáš z ekonomiky; tady jde o právní pohled."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Podnikatel",
+          "definition": "Kdo **samostatně** vykonává na **vlastní účet a odpovědnost** výdělečnou činnost živnostenským nebo obdobným způsobem, se záměrem činit tak **soustavně** za účelem **zisku**. Za podnikatele se považuje i každý, kdo je zapsaný v obchodním rejstříku.",
+          "example": "Klára s živnostenským oprávněním, která prodává dorty v cukrárně."
+        },
+        {
+          "type": "term",
+          "term": "Obchodní firma",
+          "definition": "**Jméno**, pod kterým je podnikatel zapsaný do obchodního rejstříku. Není to podnik ani budova, ale název.",
+          "example": "„Cukrárna Klára s.r.o.“"
+        },
+        {
+          "type": "term",
+          "term": "Obchodní závod",
+          "definition": "Organizovaný soubor jmění, který podnikatel vytvořil a který slouží k jeho podnikání: věci, práva, zaměstnanci, zákazníci, know-how.",
+          "example": "Cukrárna s pecí, vybavením, recepty, smlouvami a zaměstnanci."
+        },
+        {
+          "type": "heading",
+          "text": "Znaky podnikání"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Samostatnost**: podnikatel sám rozhoduje, nikdo mu neřídí práci jako zaměstnanci.",
+            "**Vlastní účet a odpovědnost**: zisk i ztráta jsou jeho.",
+            "**Soustavnost**: nejde o jednorázovou akci.",
+            "**Záměr dosáhnout zisku**: i když se zisk nakonec nepovede."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Klára jednou za rok prodá na školním jarmarku pár dortů. Je podnikatelka?",
+          "answer": "**Není.** Chybí **soustavnost**: jde o ojedinělou, příležitostnou činnost. Podnikatelkou se stane, až bude dorty prodávat pravidelně se záměrem zisku (a k tomu potřebuje živnostenské oprávnění)."
+        },
+        {
+          "type": "heading",
+          "text": "Pravidla pro obchodní firmu"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Firma **nesmí být zaměnitelná** s firmou jiného podnikatele a nesmí působit **klamavě**.",
+            "Firma obchodní korporace musí obsahovat **označení právní formy**: „s.r.o.“, „a.s.“, „v.o.s.“.",
+            "Podnikatel, který není zapsaný v obchodním rejstříku, podniká pod **svým jménem** (může připojit dodatek).",
+            "Kdo zneužije cizí firmu, proti tomu se lze bránit žalobou."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Vedle Kláry si někdo otevře „Cukrárnu Klára, s.r.o.“ a láká její zákazníky. Co může Klára dělat?",
+          "answer": "Firma je **zaměnitelná** a vyvolává nebezpečí záměny. Jde i o **nekalou soutěž**. Klára se může u soudu domáhat, aby se rušitel zdržel užívání firmy, odstranil závadný stav a případně nahradil škodu a vydal bezdůvodné obohacení."
+        },
+        {
+          "type": "heading",
+          "text": "Nekalá soutěž"
+        },
+        {
+          "type": "term",
+          "term": "Nekalá soutěž",
+          "definition": "Jednání v hospodářském styku, které je v rozporu s dobrými mravy soutěže a může přivodit újmu jiným soutěžitelům nebo zákazníkům.",
+          "example": "Klamavá reklama, vyvolání nebezpečí záměny, parazitování na pověsti, zlehčování konkurence, podplácení, porušení obchodního tajemství."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Obchodní firma je podnik, třeba cukrárna i s vybavením.",
+          "right": "Obchodní firma je jen **název**, pod kterým je podnikatel zapsaný. Podnik s vybavením je **obchodní závod**.",
+          "why": "V běžné řeči „firma“ znamená podnik, ale v právu je to jméno. Záměna vede k chybám ve smlouvách i ve zkoušce."
+        },
+        {
+          "type": "summary",
+          "text": "Podnikatel vykonává výdělečnou činnost samostatně, na vlastní účet a odpovědnost, soustavně a za účelem zisku. Obchodní firma je jméno podnikatele v obchodním rejstříku, nesmí být zaměnitelná ani klamavá. Obchodní závod je soubor jmění, který slouží podnikání."
+        }
+      ]
+    },
+    {
+      "title": "Rejstřík a odpovědnost",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Chceš dodat firmě „Stavby Novák s.r.o.“ materiál za půl milionu. Kdo za ni smí podepsat smlouvu? Existuje ještě? A co když jednatel firmu vytuneluje?"
+        },
+        {
+          "type": "text",
+          "text": "Odpovědi najdeš v **obchodním rejstříku** a v pravidlech pro řízení obchodních korporací. Formy korporací (s.r.o., a.s. a další) znáš z ekonomiky. Tady jde o to, jak se o nich dozvíš a kdo za co právně odpovídá."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obchodní rejstřík",
+          "definition": "Veřejný seznam podnikatelů, který vedou **krajské soudy** (rejstříkové soudy) podle zákona č. 304/2013 Sb. o veřejných rejstřících. Je zdarma dostupný na justice.cz.",
+          "example": "Na justice.cz najdeš sídlo, IČO, jednatele i základní kapitál „Stavby Novák s.r.o.“."
+        },
+        {
+          "type": "term",
+          "term": "Statutární orgán",
+          "definition": "Orgán, který právnickou osobu řídí a **jedná za ni navenek**.",
+          "example": "Jednatel s.r.o., představenstvo a.s."
+        },
+        {
+          "type": "term",
+          "term": "Prokura",
+          "definition": "Zvláštní plná moc, kterou udělí podnikatel zapsaný v obchodním rejstříku. Prokurista smí dělat všechna jednání při provozu závodu, ale nemovitosti smí zcizit nebo zatížit jen se zvláštním oprávněním. Prokura se zapisuje do rejstříku.",
+          "example": "Finanční ředitelka je prokuristkou a podepisuje smlouvy s dodavateli."
+        },
+        {
+          "type": "term",
+          "term": "Péče řádného hospodáře",
+          "definition": "Povinnost člena orgánu (např. jednatele) vykonávat funkci s **nezbytnou loajalitou**, s **potřebnými znalostmi a pečlivostí**.",
+          "example": "Jednatel si před velkým obchodem prověří, zda je obchodní partner solventní."
+        },
+        {
+          "type": "heading",
+          "text": "Co obchodní rejstřík říká"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Zapisují se do něj povinně **obchodní korporace** (s.r.o., a.s., v.o.s., k.s., družstvo), zahraniční osoby s pobočkou v ČR a zákonem určení podnikatelé; fyzická osoba se může zapsat i na vlastní žádost.",
+            "Obchodní korporace **vzniká dnem zápisu** do rejstříku.",
+            "Zapisuje se mimo jiné firma, sídlo, IČO, předmět podnikání, statutární orgán, způsob jednání, prokura, základní kapitál.",
+            "**Princip publicity**: nikdo se nemůže dovolávat toho, že nezná údaj zapsaný v rejstříku. Kdo jedná v dobré víře v zapsaný údaj, je chráněn."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Za „Stavby Novák s.r.o.“ ti nabízí podpis pan Rychlý a tvrdí, že je jednatel. V rejstříku je jako jednatelka zapsaná paní Nováková, pan Rychlý tam není. Co uděláš?",
+          "answer": "Údaj v rejstříku je **veřejný** a nemůžeš se dovolávat, že jsi ho neznal. Pan Rychlý jednatelem není (podle rejstříku), takže za společnost bez plné moci jednat nemůže. Požádej o podpis paní Novákovou, nebo chtěj od pana Rychlého **plnou moc**, případně ověř, zda nemá zapsanou **prokuru**."
+        },
+        {
+          "type": "heading",
+          "text": "Odpovědnost jednatele"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Jednatel musí jednat s **péčí řádného hospodáře**: loajálně, se znalostmi a pečlivě.",
+            "Kdo tuto povinnost poruší, **nahradí škodu**, kterou společnosti způsobil.",
+            "Když jednal v dobré víře a informovaně v zájmu společnosti, chrání ho **pravidlo podnikatelského úsudku** (business judgment rule): ne každé neúspěšné rozhodnutí je porušení péče.",
+            "Kdo porušením svých povinností přispěje k úpadku společnosti, může za její dluhy ručit a soud ho může na čas vyloučit z funkce."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Jednatel s.r.o. nikdy neodpovídá svým majetkem, za všechno ručí jen společnost.",
+          "right": "Jednatel, který poruší **péči řádného hospodáře**, nahradí společnosti škodu a v určitých případech může ručit i věřitelům.",
+          "why": "Omezené ručení se týká **společníků** za dluhy společnosti, ne odpovědnosti jednatele za jeho vlastní pochybení ve funkci."
+        },
+        {
+          "type": "example",
+          "question": "Jednatelka prodá firemní dodávku za 50 000 Kč svému bratrovi, i když měla nabídku od cizího kupce za 300 000 Kč. Porušila nějakou povinnost?",
+          "answer": "**Ano.** Porušila **loajalitu**, součást péče řádného hospodáře: upřednostnila zájem příbuzného před zájmem společnosti. Společnosti tím způsobila škodu nejméně **250 000 Kč** (rozdíl cen), kterou musí nahradit."
+        },
+        {
+          "type": "summary",
+          "text": "Obchodní rejstřík vedou krajské soudy; je veřejný a nikdo se nemůže dovolávat neznalosti zapsaných údajů. Korporace vzniká zápisem. Za ni jedná statutární orgán, případně prokurista. Jednatel musí jednat s péčí řádného hospodáře, jinak nahradí způsobenou škodu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Který znak NENÍ součástí definice podnikatele?",
+      "options": [
+        "činnost vykonává jako zaměstnanec podle pokynů",
+        "samostatnost",
+        "soustavnost",
+        "záměr dosáhnout zisku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Obchodní firma je název, pod kterým je podnikatel zapsaný v obchodním rejstříku.",
+      "answer": true
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s významem.",
+      "pairs": [
+        [
+          "obchodní firma",
+          "jméno podnikatele v rejstříku"
+        ],
+        [
+          "obchodní závod",
+          "soubor jmění sloužící podnikání"
+        ],
+        [
+          "prokura",
+          "zvláštní obchodní plná moc"
+        ],
+        [
+          "statutární orgán",
+          "řídí právnickou osobu a jedná za ni"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo vede obchodní rejstřík?",
+      "options": [
+        "krajské soudy",
+        "živnostenské úřady",
+        "Česká národní banka",
+        "finanční úřady"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Obchodní korporace vzniká dnem podpisu společenské smlouvy.",
+      "answer": false,
+      "explanation": "Vzniká dnem zápisu do obchodního rejstříku."
+    },
+    {
+      "type": "choice",
+      "question": "Co nesmí prokurista bez zvláštního oprávnění?",
+      "options": [
+        "zcizit nebo zatížit nemovitost",
+        "podepsat smlouvu s dodavatelem",
+        "objednat zboží",
+        "podepsat fakturu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje princip, podle kterého se nikdo nemůže dovolávat neznalosti údaje zapsaného v obchodním rejstříku? Princip …",
+      "answers": [
+        "publicity",
+        "materiální publicity",
+        "publicita",
+        "veřejnosti"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj jednání s druhem nekalé soutěže.",
+      "pairs": [
+        [
+          "reklama tvrdí, že prací prášek odstraní všechny skvrny, i když to není pravda",
+          "klamavá reklama"
+        ],
+        [
+          "konkurent použije téměř stejné logo a název",
+          "vyvolání nebezpečí záměny"
+        ],
+        [
+          "zaměstnanec prodá recepturu konkurenci",
+          "porušení obchodního tajemství"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje povinnost jednatele jednat loajálně, se znalostmi a pečlivě?",
+      "options": [
+        "péče řádného hospodáře",
+        "zásada legality",
+        "dobrá víra",
+        "presumpce neviny"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Firma obchodní korporace musí obsahovat označení její právní formy, například „s.r.o.“.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Studentka jednou prodá na bleším trhu svoje staré knihy. Je podnikatelka?",
+      "options": [
+        "Ne, chybí soustavnost a záměr podnikat.",
+        "Ano, protože získala peníze.",
+        "Ano, protože prodávala veřejně.",
+        "Ne, protože je nezletilá."
+      ],
+      "answer": 0,
+      "hints": [
+        "Projdi znaky podnikatele jeden po druhém."
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak ověříš, kdo smí za s.r.o. podepsat smlouvu.",
+      "items": [
+        "otevři obchodní rejstřík na justice.cz",
+        "vyhledej společnost podle názvu nebo IČO",
+        "zjisti, kdo je statutární orgán a jaký je způsob jednání",
+        "zkontroluj, zda není zapsaná prokura",
+        "porovnej to s osobou, která chce podepsat"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi obchodní firmou a obchodním závodem?",
+      "answer": "Obchodní firma je jméno, pod kterým je podnikatel zapsaný v obchodním rejstříku. Obchodní závod je organizovaný soubor jmění, který podnikatel vytvořil a který slouží jeho podnikání, například provozovna s vybavením, zaměstnanci a smlouvami."
+    },
+    {
+      "type": "open",
+      "question": "Co znamená péče řádného hospodáře a co hrozí jednateli, který ji poruší?",
+      "answer": "Jednatel musí funkci vykonávat s nezbytnou loajalitou, potřebnými znalostmi a pečlivostí. Pokud tuto povinnost poruší, nahradí společnosti škodu, kterou jí způsobil, a v některých případech může ručit i za její dluhy."
+    }
+  ]
+}

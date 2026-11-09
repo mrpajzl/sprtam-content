@@ -1,0 +1,406 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "trestni-rizeni",
+  "title": "Trestní řízení",
+  "emoji": "🔍",
+  "explanations": [
+    {
+      "title": "Cesta případu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Paní Malé ukradli v tramvaji peněženku. Ohlásí to na policii. Co se pak děje? Kdo vyšetřuje, kdo žaluje, kdo soudí a jak dlouho to trvá?"
+        },
+        {
+          "type": "text",
+          "text": "Postup od oznámení až po výkon trestu upravuje **trestní řád**, zákon č. 141/1961 Sb. Říká se mu trestní právo **procesní**: neříká, co je trestné, ale jak se trestné činy objasňují a trestají."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Orgány činné v trestním řízení",
+          "definition": "Státní orgány, které trestní řízení vedou: **soud**, **státní zástupce** a **policejní orgán**.",
+          "example": "Policie vyšetřuje krádež, státní zástupce podá obžalobu, soud rozhodne."
+        },
+        {
+          "type": "term",
+          "term": "Trestní stíhání",
+          "definition": "Část řízení vedená proti konkrétní osobě. Zahajuje se **usnesením o zahájení trestního stíhání**, ve kterém je popsán skutek a jeho právní kvalifikace.",
+          "example": "Policie zahájí trestní stíhání pana X pro krádež."
+        },
+        {
+          "type": "term",
+          "term": "Obžaloba",
+          "definition": "Návrh, kterým státní zástupce předává věc soudu a žádá, aby obžalovaného uznal vinným a potrestal.",
+          "example": "Státní zástupkyně podá na pana X obžalobu k okresnímu soudu."
+        },
+        {
+          "type": "heading",
+          "text": "Stadia trestního řízení"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Prověřování**: policie zjišťuje, zda se stal trestný čin a kdo ho spáchal (úkony před zahájením trestního stíhání). U méně závažných přečinů může proběhnout zkrácené přípravné řízení.",
+            "**Vyšetřování**: po zahájení trestního stíhání proti konkrétní osobě se shromažďují důkazy. Prověřování a vyšetřování dohromady tvoří **přípravné řízení**; dozor nad ním má státní zástupce.",
+            "**Řízení před soudem**: soud obžalobu předběžně projedná, nařídí **hlavní líčení**, provede důkazy a vynese **rozsudek**.",
+            "**Opravné řízení**: proti rozsudku lze podat **odvolání** (do 8 dnů od doručení opisu rozsudku); o něm rozhoduje soud vyššího stupně.",
+            "**Vykonávací řízení**: výkon pravomocného trestu."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se mění označení člověka"
+        },
+        {
+          "type": "table",
+          "head": [
+            "označení",
+            "od kdy"
+          ],
+          "rows": [
+            [
+              "podezřelý",
+              "v prověřování, než je zahájeno trestní stíhání"
+            ],
+            [
+              "obviněný",
+              "od zahájení trestního stíhání"
+            ],
+            [
+              "obžalovaný",
+              "od podání obžaloby k soudu"
+            ],
+            [
+              "odsouzený",
+              "od právní moci odsuzujícího rozsudku"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Policie zjistí, že peněženku paní Malé ukradl pan Kos. Zahájí proti němu trestní stíhání, státní zástupce podá obžalobu a soud ho uzná vinným. Pan Kos se neodvolá. Jak se během toho jmenuje?",
+          "answer": "Při prověřování **podezřelý**, po usnesení o zahájení trestního stíhání **obviněný**, po podání obžaloby **obžalovaný**. Když uplyne lhůta k odvolání a rozsudek nabude právní moci, je **odsouzený**."
+        },
+        {
+          "type": "heading",
+          "text": "Rychlejší cesty: odklony"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Trestní příkaz**: soud rozhodne bez hlavního líčení, když je skutek spolehlivě prokázán. Obviněný může podat odpor a pak se koná hlavní líčení.",
+            "**Podmíněné zastavení trestního stíhání**: u přečinů, když se obviněný přizná, nahradí škodu a souhlasí; je-li ve zkušební době bez problémů, věc skončí.",
+            "**Narovnání**: obviněný se dohodne s poškozeným, nahradí mu škodu a složí peněžitou částku na účel stanovený zákonem. Narovnání schvaluje soud, v přípravném řízení státní zástupce.",
+            "**Dohoda o vině a trestu**: obviněný se státním zástupcem dohodne vinu a trest, soud dohodu schválí, nebo neschválí."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Obviněný je člověk, kterého soud uznal vinným.",
+          "right": "**Obviněný** je ten, proti komu bylo zahájeno trestní stíhání. Vinným ho může uznat jen soud a teprve po právní moci rozsudku je **odsouzený**.",
+          "why": "Plyne to z presumpce neviny: dokud není vina pravomocně vyslovena, na nikoho se nehledí jako na vinného."
+        },
+        {
+          "type": "summary",
+          "text": "Trestní řízení podle trestního řádu (141/1961 Sb.) vedou policie, státní zástupce a soud. Má stadia: prověřování, vyšetřování (přípravné řízení), řízení před soudem, odvolací a vykonávací řízení. Člověk je postupně podezřelý, obviněný, obžalovaný a odsouzený."
+        }
+      ]
+    },
+    {
+      "title": "Práva a zásady",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Stát má v trestním řízení obrovskou moc: může člověka zadržet, prohledat mu byt, poslat ho do vězení. Aby moc nezneužil, platí pevné **zásady** a obviněný i poškozený mají svá **práva**."
+        },
+        {
+          "type": "text",
+          "text": "Zásady vycházejí z Listiny základních práv a svobod a z trestního řádu (č. 141/1961 Sb.). Jsou to nejčastější otázky u maturity z práva."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Obviněný",
+          "definition": "Osoba, proti které bylo zahájeno trestní stíhání.",
+          "example": "Pan Kos po doručení usnesení o zahájení trestního stíhání."
+        },
+        {
+          "type": "term",
+          "term": "Poškozený",
+          "definition": "Ten, komu trestný čin ublížil na zdraví, způsobil majetkovou nebo nemajetkovou újmu nebo na jehož úkor se pachatel obohatil.",
+          "example": "Paní Malá, které ukradli peněženku."
+        },
+        {
+          "type": "term",
+          "term": "Obhájce",
+          "definition": "**Advokát**, který obviněného v řízení hájí a radí mu.",
+          "example": "Advokátka, kterou si pan Kos zvolí, nebo kterou mu ustanoví soud."
+        },
+        {
+          "type": "heading",
+          "text": "Hlavní zásady"
+        },
+        {
+          "type": "table",
+          "head": [
+            "zásada",
+            "co znamená"
+          ],
+          "rows": [
+            [
+              "presumpce neviny",
+              "na obviněného se hledí jako na nevinného, dokud ho soud pravomocně neodsoudí"
+            ],
+            [
+              "in dubio pro reo",
+              "v pochybnostech ve prospěch obviněného: když vina není prokázána bez důvodných pochybností, soud ho zprostí"
+            ],
+            [
+              "legalita",
+              "státní zástupce musí stíhat všechny trestné činy, o kterých se dozví (s výjimkami stanovenými zákonem)"
+            ],
+            [
+              "oficialita",
+              "orgány postupují z úřední povinnosti, nečekají na návrh poškozeného (výjimky stanoví zákon)"
+            ],
+            [
+              "obžalovací zásada",
+              "soud jedná jen na základě obžaloby (nebo návrhu na potrestání); kdo žaluje, nesoudí"
+            ],
+            [
+              "veřejnost",
+              "hlavní líčení je zpravidla veřejné"
+            ],
+            [
+              "ústnost a bezprostřednost",
+              "soud provádí důkazy přímo před sebou a ústně"
+            ],
+            [
+              "volné hodnocení důkazů",
+              "soud hodnotí důkazy podle svého vnitřního přesvědčení, žádný důkaz nemá předem stanovenou váhu"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Práva obviněného"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Nevypovídat**: nikdo nesmí být nucen vypovídat proti sobě; mlčení nelze vykládat jako přiznání.",
+            "**Zvolit si obhájce** a radit se s ním i bez přítomnosti dalších osob.",
+            "Vyjádřit se ke všem obviněním a důkazům, **navrhovat důkazy**, **nahlížet do spisu**.",
+            "Mluvit svým jazykem, případně s **tlumočníkem**.",
+            "Podávat **opravné prostředky** (stížnost, odvolání)."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Nutná obhajoba",
+          "definition": "Situace, kdy obviněný **musí** mít obhájce. Když si ho nezvolí, ustanoví mu ho soud.",
+          "example": "Obviněný je ve vazbě, je mladistvý nebo je stíhán pro trestný čin s horní hranicí trestu odnětí svobody převyšující 5 let."
+        },
+        {
+          "type": "heading",
+          "text": "Práva poškozeného"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Poškozený se může v řízení **vyjadřovat**, navrhovat důkazy a nahlížet do spisu.",
+            "Může uplatnit **nárok na náhradu škody nebo nemajetkové újmy** přímo v trestním řízení (adhezní řízení). Musí to udělat nejpozději u hlavního líčení před zahájením dokazování.",
+            "Soud pak v rozsudku uloží odsouzenému povinnost škodu nahradit, nebo poškozeného odkáže na civilní řízení.",
+            "Oběti trestných činů mají další práva podle zákona č. 45/2013 Sb. o obětech trestných činů (informace, ochrana před pachatelem, pomoc)."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Paní Malá chce, aby jí pan Kos vrátil 4 000 Kč z ukradené peněženky. Musí ho zvlášť žalovat u civilního soudu?",
+          "answer": "Nemusí. Jako **poškozená** může nárok uplatnit **přímo v trestním řízení**, nejpozději u hlavního líčení před zahájením dokazování. Když soud pana Kose odsoudí, může mu v rozsudku uložit, aby jí 4 000 Kč zaplatil."
+        },
+        {
+          "type": "example",
+          "question": "Obviněný u výslechu řekne: „K věci se nebudu vyjadřovat.“ Může to soud brát jako důkaz viny?",
+          "answer": "**Ne.** Obviněný má **právo nevypovídat** a nesmí být k výpovědi nucen. Mlčení nelze vykládat jako přiznání. Vinu musí obžaloba prokázat jinými důkazy."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když obviněný neprokáže, že je nevinný, soud ho odsoudí.",
+          "right": "Vinu musí prokázat **obžaloba**. Když zůstanou důvodné pochybnosti, soud obžalovaného **zprostí** obžaloby.",
+          "why": "Plyne to z presumpce neviny a zásady in dubio pro reo. Obviněný nemusí dokazovat svou nevinu."
+        },
+        {
+          "type": "summary",
+          "text": "Trestní řízení stojí na presumpci neviny, in dubio pro reo, legalitě, oficialitě, obžalovací zásadě a veřejnosti. Obviněný smí mlčet, mít obhájce a navrhovat důkazy; v případech nutné obhajoby musí obhájce mít. Poškozený může uplatnit náhradu škody přímo v trestním řízení."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jaké číslo má trestní řád ve Sbírce zákonů? Napiš ve tvaru číslo/rok.",
+      "answers": [
+        "141/1961",
+        "141/1961 Sb.",
+        "141/1961 sb"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo patří mezi orgány činné v trestním řízení?",
+      "options": [
+        "soud, státní zástupce a policejní orgán",
+        "soud, advokát a poškozený",
+        "policie, obecní úřad a vláda",
+        "jen soud"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď označení osoby během trestního řízení.",
+      "items": [
+        "podezřelý",
+        "obviněný",
+        "obžalovaný",
+        "odsouzený"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď stadia trestního řízení.",
+      "items": [
+        "prověřování",
+        "vyšetřování",
+        "řízení před soudem (hlavní líčení)",
+        "odvolací řízení",
+        "vykonávací řízení"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Čím se z podezřelého stává obviněný?",
+      "options": [
+        "usnesením o zahájení trestního stíhání",
+        "podáním trestního oznámení",
+        "podáním obžaloby",
+        "vynesením rozsudku"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj zásadu s jejím obsahem.",
+      "pairs": [
+        [
+          "presumpce neviny",
+          "dokud není pravomocně odsouzen, hledí se na něj jako na nevinného"
+        ],
+        [
+          "in dubio pro reo",
+          "v pochybnostech ve prospěch obviněného"
+        ],
+        [
+          "legalita",
+          "státní zástupce stíhá všechny trestné činy, o nichž se dozví"
+        ],
+        [
+          "obžalovací zásada",
+          "soud jedná jen na základě obžaloby"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Když obviněný odmítne vypovídat, soud to může považovat za přiznání.",
+      "answer": false
+    },
+    {
+      "type": "choice",
+      "question": "Kdy jde o nutnou obhajobu?",
+      "options": [
+        "když je obviněný ve vazbě",
+        "vždy, když o to poškozený požádá",
+        "jen u dopravních nehod",
+        "když obviněný mluví česky"
+      ],
+      "answer": 0,
+      "explanation": "Dalšími případy jsou například mladistvý obviněný nebo čin s horní hranicí trestu nad 5 let."
+    },
+    {
+      "type": "truefalse",
+      "question": "Poškozený může nárok na náhradu škody uplatnit přímo v trestním řízení.",
+      "answer": true,
+      "explanation": "Musí to udělat nejpozději u hlavního líčení před zahájením dokazování."
+    },
+    {
+      "type": "input",
+      "question": "Do kolika dnů od doručení opisu rozsudku se v trestním řízení podává odvolání? Napiš číslo.",
+      "answers": [
+        "8",
+        "osm",
+        "osmi"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj odklon s popisem.",
+      "pairs": [
+        [
+          "trestní příkaz",
+          "soud rozhodne bez hlavního líčení"
+        ],
+        [
+          "narovnání",
+          "dohoda s poškozeným a náhrada škody"
+        ],
+        [
+          "dohoda o vině a trestu",
+          "dohoda obviněného se státním zástupcem, kterou schvaluje soud"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Soud má o vině obžalovaného důvodné pochybnosti, které nejde odstranit. Jak rozhodne?",
+      "options": [
+        "zprostí ho obžaloby",
+        "odsoudí ho k mírnějšímu trestu",
+        "nechá rozhodnout státního zástupce",
+        "odloží rozhodnutí na neurčito"
+      ],
+      "answer": 0,
+      "hints": [
+        "Vzpomeň si na latinskou zásadu o pochybnostech."
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vyjmenuj alespoň čtyři práva obviněného v trestním řízení.",
+      "answer": "Obviněný má právo nevypovídat, zvolit si obhájce a radit se s ním, vyjádřit se ke všem obviněním a důkazům, navrhovat důkazy, nahlížet do spisu, používat svůj jazyk nebo tlumočníka a podávat opravné prostředky."
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli zásadu presumpce neviny a co z ní plyne pro dokazování.",
+      "answer": "Dokud soud obviněného pravomocně neodsoudí, hledí se na něj jako na nevinného. Vinu musí prokázat obžaloba, obviněný nemusí dokazovat svou nevinu, a když zůstanou důvodné pochybnosti, soud rozhodne v jeho prospěch."
+    }
+  ]
+}

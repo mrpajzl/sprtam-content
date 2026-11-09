@@ -1,0 +1,398 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "trestni-pravo-hmotne",
+  "title": "Trestní právo hmotné",
+  "emoji": "🚔",
+  "explanations": [
+    {
+      "title": "Rozbor činu",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Ze ZSV víš, že trestný čin je něco horšího než přestupek. Právník ale potřebuje přesně určit, **zda** se trestný čin stal, **kdo** ho spáchal a **jak** se zařadí. Postupuje jako mechanik: rozebere čin na součástky a každou zkontroluje."
+        },
+        {
+          "type": "text",
+          "text": "Základní předpis je **trestní zákoník**, zákon č. 40/2009 Sb. Říká, co je trestný čin a jaké tresty za něj hrozí. Tomu se říká trestní právo **hmotné**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trestný čin",
+          "definition": "Protiprávní čin, který trestní zákon označuje za trestný a který vykazuje **znaky uvedené v zákoně**. Trestat lze jen to, co zákon označuje za trestné v době spáchání (nullum crimen sine lege).",
+          "example": "Krádež podle § 205 trestního zákoníku."
+        },
+        {
+          "type": "term",
+          "term": "Skutková podstata",
+          "definition": "Popis konkrétního trestného činu v paragrafu zákona: soubor znaků, které musí čin mít, aby šlo právě o tento trestný čin.",
+          "example": "Krádež: kdo si přisvojí cizí věc tím, že se jí zmocní, a způsobí na cizím majetku škodu nikoli nepatrnou (nebo splní jiný znak z výčtu)."
+        },
+        {
+          "type": "term",
+          "term": "Subsidiarita trestní represe",
+          "definition": "Trestní právo je **krajní prostředek** (ultima ratio). Trestní odpovědnost se uplatní jen u společensky škodlivých činů, kde nestačí odpovědnost podle jiného předpisu (přestupek, náhrada škody).",
+          "example": "Drobná hádka sousedů se řeší jako přestupek, ne trestním stíháním."
+        },
+        {
+          "type": "heading",
+          "text": "Čtyři znaky skutkové podstaty"
+        },
+        {
+          "type": "table",
+          "head": [
+            "znak",
+            "otázka",
+            "u krádeže"
+          ],
+          "rows": [
+            [
+              "objekt",
+              "Jaký zájem společnosti čin ohrožuje?",
+              "vlastnictví (majetek)"
+            ],
+            [
+              "objektivní stránka",
+              "Co se stalo? (jednání, následek, příčinná souvislost)",
+              "zmocnil se cizí věci, škoda na majetku"
+            ],
+            [
+              "subjekt",
+              "Kdo může čin spáchat?",
+              "kdokoli trestně odpovědný"
+            ],
+            [
+              "subjektivní stránka",
+              "Jaký měl pachatel vztah k činu? (zavinění)",
+              "úmysl"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Úmysl a nedbalost",
+          "definition": "Dvě formy zavinění. **Úmysl přímý**: pachatel chtěl následek způsobit. **Úmysl nepřímý**: věděl, že ho může způsobit, a byl s tím srozuměn. **Nedbalost vědomá**: věděl, že následek může nastat, ale bez přiměřených důvodů spoléhal, že nenastane. **Nedbalost nevědomá**: nevěděl, ačkoli o tom vědět měl a mohl.",
+          "example": "Řidič jede 120 km/h obcí a spoléhá, že se nic nestane: vědomá nedbalost."
+        },
+        {
+          "type": "text",
+          "text": "Za nedbalostní čin lze trestat, jen když to zákon u daného činu výslovně stanoví. Jinak je k trestnosti potřeba úmysl."
+        },
+        {
+          "type": "heading",
+          "text": "Přečin a zločin"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Přečiny** jsou všechny **nedbalostní** trestné činy a ty **úmyslné**, za které zákon stanoví trest odnětí svobody s horní hranicí **do 5 let**.",
+            "**Zločiny** jsou všechny ostatní trestné činy.",
+            "**Zvlášť závažné zločiny** jsou úmyslné trestné činy s horní hranicí trestu odnětí svobody **nejméně 10 let**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Za úmyslný trestný čin hrozí odnětí svobody na 2 až 8 let. Jak ho zařadíš?",
+          "answer": "Je úmyslný a horní hranice (8 let) je **vyšší než 5 let**, takže to není přečin: je to **zločin**. Zvlášť závažný zločin to není, protože horní hranice nedosahuje 10 let."
+        },
+        {
+          "type": "example",
+          "question": "Řidič přehlédne chodce na přechodu a usmrtí ho. Za usmrcení z nedbalosti mu hrozí až 6 let (při porušení důležité povinnosti). Je to přečin, nebo zločin?",
+          "answer": "Je to **přečin**. Všechny **nedbalostní** trestné činy jsou přečiny bez ohledu na výši trestu. Hranice 5 let rozhoduje jen u úmyslných činů."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Přečin je jen čin s trestem do 5 let, nedbalostní čin s vyšším trestem je zločin.",
+          "right": "**Každý nedbalostní** trestný čin je přečin. Hranice 5 let platí jen pro úmyslné činy.",
+          "why": "Zákon (§ 14 trestního zákoníku) dělí činy podle formy zavinění i výše trestu; nedbalost je vždy méně závažná než úmysl."
+        },
+        {
+          "type": "summary",
+          "text": "Trestný čin musí naplnit všechny znaky skutkové podstaty: objekt, objektivní stránku, subjekt a subjektivní stránku (úmysl, nebo nedbalost, když ji zákon stanoví). Přečiny jsou nedbalostní činy a úmyslné s horní hranicí do 5 let; ostatní jsou zločiny, úmyslné s horní hranicí aspoň 10 let jsou zvlášť závažné."
+        }
+      ]
+    },
+    {
+      "title": "Kdo, kdy a čím",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Čtrnáctiletý vandal, šestnáctiletá zlodějka, člověk v akutní psychóze, žena, která se brání útočníkovi. Všichni způsobili něco, co vypadá jako trestný čin. Kdo z nich bude potrestán a jak?"
+        },
+        {
+          "type": "text",
+          "text": "Podle trestního zákoníku (č. 40/2009 Sb.) musí pachatel splnit podmínky odpovědnosti a čin nesmí být ospravedlněný. Teprve pak přichází trest."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Trestní odpovědnost",
+          "definition": "Povinnost nést následky za spáchaný trestný čin. Pachatel musí v době činu dovršit **15 let** a být **příčetný**.",
+          "example": "Dospělý zloděj je trestně odpovědný, desetileté dítě ne."
+        },
+        {
+          "type": "term",
+          "term": "Příčetnost",
+          "definition": "Schopnost **rozpoznat** protiprávnost svého činu (rozpoznávací schopnost) a **ovládat** své jednání (ovládací schopnost). Kdo pro duševní poruchu jednu z nich nemá, je **nepříčetný** a za čin neodpovídá.",
+          "example": "Člověk v akutní psychóze, který nechápe, co dělá."
+        },
+        {
+          "type": "term",
+          "term": "Okolnost vylučující protiprávnost",
+          "definition": "Situace, kdy čin navenek vypadá jako trestný, ale **není protiprávní**, protože ho zákon dovoluje.",
+          "example": "Nutná obrana proti útočníkovi."
+        },
+        {
+          "type": "heading",
+          "text": "Věk pachatele"
+        },
+        {
+          "type": "table",
+          "head": [
+            "věk",
+            "jak se říká činu",
+            "co se děje"
+          ],
+          "rows": [
+            [
+              "do 15 let (dítě)",
+              "čin jinak trestný",
+              "trestně neodpovídá; soud pro mládež může uložit opatření (např. výchovné nebo ochranná výchova)"
+            ],
+            [
+              "15–18 let (mladistvý)",
+              "provinění",
+              "odpovídá podle zákona o soudnictví ve věcech mládeže č. 218/2003 Sb.; sankce jsou mírnější a výchovné"
+            ],
+            [
+              "od 18 let",
+              "trestný čin",
+              "plná odpovědnost podle trestního zákoníku"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kdy čin není protiprávní"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Nutná obrana**: odvracení přímo hrozícího nebo trvajícího útoku. Obrana nesmí být **zcela zjevně nepřiměřená** způsobu útoku.",
+            "**Krajní nouze**: odvracení nebezpečí, které nešlo odvrátit jinak; způsobený následek nesmí být zřejmě stejně závažný nebo závažnější než ten, který hrozil.",
+            "**Svolení poškozeného**: s výjimkou ublížení na zdraví či usmrcení (tam jen u lékařských zákroků lege artis a podobně).",
+            "**Přípustné riziko**, **oprávněné použití zbraně** a další případy stanovené zákonem."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "V noci na paní Jandovou zaútočí muž s nožem. Ona ho udeří kabelkou do hlavy a utrpí otřes mozku. Je trestně odpovědná?",
+          "answer": "**Ne.** Jde o **nutnou obranu**: útok přímo trval a obrana kabelkou proti noži není zcela zjevně nepřiměřená. Čin není protiprávní."
+        },
+        {
+          "type": "example",
+          "question": "Hasič rozbije okno cizího auta, aby z rozpáleného vozu vytáhl zavřené dítě. Spáchal poškození cizí věci?",
+          "answer": "**Ne.** Jde o **krajní nouzi**: nebezpečí pro život dítěte nešlo rychle odvrátit jinak a rozbité okno je mnohem méně závažné než ohrožení života."
+        },
+        {
+          "type": "heading",
+          "text": "Tresty a ochranná opatření"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Soud nejdřív zjistí, že čin je trestný a pachatel odpovědný.",
+            "Vybere **trest** podle trestní sazby u daného paragrafu, např. odnětí svobody (nepodmíněné nebo podmíněně odložené), domácí vězení, obecně prospěšné práce, peněžitý trest, zákaz činnosti, propadnutí věci, zákaz pobytu, vyhoštění.",
+            "Přihlédne k povaze činu, poměrům pachatele a k polehčujícím a přitěžujícím okolnostem. Trest musí být **přiměřený**.",
+            "Vedle trestu nebo místo něj lze uložit **ochranné opatření**, které neslouží k potrestání, ale k ochraně společnosti: ochranné léčení, zabezpečovací detence, zabrání věci, zabrání části majetku, u mladistvých ochranná výchova."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Při nutné obraně smím útočníkovi udělat cokoli.",
+          "right": "Obrana nesmí být **zcela zjevně nepřiměřená** způsobu útoku.",
+          "why": "Nutná obrana vylučuje protiprávnost, jen dokud je obrana přiměřená. Kdo by ze strachu z facky střílel, nutnou obranu překročí (exces)."
+        },
+        {
+          "type": "summary",
+          "text": "Trestně odpovědný je, kdo v době činu dovršil 15 let a je příčetný; mladiství (15–18) se zodpovídají z provinění. Nutná obrana, krajní nouze a další okolnosti vylučují protiprávnost. Soud ukládá přiměřené tresty, vedle nich ochranná opatření k ochraně společnosti."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jaké číslo má trestní zákoník ve Sbírce zákonů? Napiš ve tvaru číslo/rok.",
+      "answers": [
+        "40/2009",
+        "40/2009 Sb.",
+        "40/2009 sb"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj znak skutkové podstaty s otázkou.",
+      "pairs": [
+        [
+          "objekt",
+          "Jaký zájem čin ohrožuje?"
+        ],
+        [
+          "objektivní stránka",
+          "Co se stalo a jaký byl následek?"
+        ],
+        [
+          "subjekt",
+          "Kdo čin spáchal?"
+        ],
+        [
+          "subjektivní stránka",
+          "Jaký měl pachatel k činu vztah?"
+        ]
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj formu zavinění s příkladem.",
+      "pairs": [
+        [
+          "přímý úmysl",
+          "chtěl souseda zranit, tak ho udeřil"
+        ],
+        [
+          "nepřímý úmysl",
+          "střílel do davu a bylo mu jedno, jestli někoho trefí"
+        ],
+        [
+          "vědomá nedbalost",
+          "jel rychle obcí a spoléhal, že se nic nestane"
+        ],
+        [
+          "nevědomá nedbalost",
+          "nezajistil lešení, vůbec ho nenapadlo, že spadne"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Úmyslný trestný čin s trestem odnětí svobody až na 3 roky je:",
+      "options": [
+        "přečin",
+        "zločin",
+        "zvlášť závažný zločin",
+        "přestupek"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "question": "Úmyslný trestný čin s trestem odnětí svobody 10 až 18 let je:",
+      "options": [
+        "zvlášť závažný zločin",
+        "přečin",
+        "jen zločin, ne zvlášť závažný",
+        "provinění"
+      ],
+      "answer": 0,
+      "hints": [
+        "Rozhoduje horní hranice trestní sazby."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Každý nedbalostní trestný čin je přečin.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Od kolika let je člověk v ČR trestně odpovědný? Napiš číslo.",
+      "answers": [
+        "15",
+        "patnácti",
+        "patnáct"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nazývá čin, který spáchá mladistvý (15–18 let)?",
+      "options": [
+        "provinění",
+        "přečin mladistvých",
+        "čin jinak trestný",
+        "delikt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj situaci s okolností vylučující protiprávnost.",
+      "pairs": [
+        [
+          "bráníš se útočníkovi s nožem",
+          "nutná obrana"
+        ],
+        [
+          "rozbiješ okno auta, abys zachránil dítě",
+          "krajní nouze"
+        ],
+        [
+          "pacient souhlasí s operací",
+          "svolení poškozeného"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Při krajní nouzi smí způsobený následek být závažnější než ten, který hrozil.",
+      "answer": false,
+      "explanation": "Následek nesmí být zřejmě stejně závažný nebo ještě závažnější než ten, který hrozil."
+    },
+    {
+      "type": "choice",
+      "question": "Které z těchto opatření je ochranné opatření, ne trest?",
+      "options": [
+        "ochranné léčení",
+        "obecně prospěšné práce",
+        "peněžitý trest",
+        "domácí vězení"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky, jak soud postupuje k uložení trestu.",
+      "items": [
+        "zjistí, zda čin naplňuje znaky trestného činu",
+        "ověří věk a příčetnost pachatele",
+        "zkontroluje, zda nejde o okolnost vylučující protiprávnost",
+        "uloží přiměřený trest podle trestní sazby"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Jak se podle trestního zákoníku dělí trestné činy podle závažnosti?",
+      "answer": "Přečiny jsou všechny nedbalostní trestné činy a úmyslné činy s horní hranicí trestu odnětí svobody do 5 let. Zločiny jsou všechny ostatní. Zvlášť závažné zločiny jsou úmyslné činy s horní hranicí trestu odnětí svobody nejméně 10 let."
+    },
+    {
+      "type": "open",
+      "question": "Kdy jde o nutnou obranu a kde jsou její meze?",
+      "answer": "Nutná obrana je odvracení přímo hrozícího nebo trvajícího útoku na zájem chráněný trestním zákonem. Čin spáchaný v nutné obraně není trestným činem, pokud obrana nebyla zcela zjevně nepřiměřená způsobu útoku."
+    }
+  ]
+}

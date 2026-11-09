@@ -1,0 +1,352 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "nahrada-skody",
+  "title": "Náhrada škody a újmy",
+  "emoji": "🩹",
+  "explanations": [
+    {
+      "title": "Čtyři podmínky",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Fotbalový míč rozbije sousedovi okno. Pes pokouše kolemjdoucího. Řidič nedá přednost a naboural cizí auto. Kdo za to zaplatí a kolik?"
+        },
+        {
+          "type": "text",
+          "text": "Na to odpovídá občanský zákoník (č. 89/2012 Sb.) v části o **náhradě újmy**. Je to jedno z nejčastějších témat soudních sporů i pojišťoven."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Újma",
+          "definition": "Obecné slovo pro každou ztrátu, kterou někdo utrpí. Dělí se na **majetkovou** (škodu) a **nemajetkovou**.",
+          "example": "Rozbité okno je majetková újma, bolest po pokousání nemajetková."
+        },
+        {
+          "type": "term",
+          "term": "Škoda",
+          "definition": "Majetková újma, kterou jde vyjádřit penězi.",
+          "example": "Oprava okna za 6 000 Kč."
+        },
+        {
+          "type": "term",
+          "term": "Nemajetková újma",
+          "definition": "Újma, která nemá přímo peněžní hodnotu: bolest, ztížení společenského uplatnění, zásah do cti nebo soukromí.",
+          "example": "Bolest po zlomené noze, trvalé zjizvení obličeje."
+        },
+        {
+          "type": "term",
+          "term": "Příčinná souvislost",
+          "definition": "Vztah příčiny a následku: škoda vznikla právě kvůli danému jednání nebo události.",
+          "example": "Okno se rozbilo, protože do něj kopnutý míč narazil."
+        },
+        {
+          "type": "term",
+          "term": "Zavinění",
+          "definition": "Vnitřní vztah škůdce k jeho jednání. **Úmysl**: chtěl škodu způsobit nebo s ní byl srozuměn. **Nedbalost**: nechtěl, ale nedal si pozor, ačkoli měl a mohl.",
+          "example": "Úmysl: hodí kámen do okna schválně. Nedbalost: kope míč u okna, i když ví, že může trefit sklo."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy se škoda hradí: subjektivní odpovědnost"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Protiprávní jednání**: škůdce porušil povinnost ze zákona nebo ze smlouvy.",
+            "**Škoda nebo nemajetková újma** skutečně vznikla.",
+            "**Příčinná souvislost** mezi jednáním a újmou.",
+            "**Zavinění** škůdce. Při porušení zákona se nedbalost předpokládá: škůdce musí sám dokázat, že nedbalý nebyl."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Dvanáctiletý Vojta kope na zahradě míč, trefí sousedovo okno a rozbije ho (oprava 6 000 Kč). Rodiče seděli na terase a nic neřekli. Kdo škodu nahradí?",
+          "answer": "Splněny jsou všechny podmínky: porušení povinnosti počínat si opatrně, škoda 6 000 Kč, příčinná souvislost i nedbalost. Za nezletilého odpovídá i ten, kdo **zanedbal dohled** nad ním, tedy rodiče. Vojta hradí, jen pokud je schopen ovládnout své jednání a posoudit jeho následky; rodiče s ním mohou odpovídat **společně a nerozdílně**."
+        },
+        {
+          "type": "heading",
+          "text": "Jak se nahrazuje"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Škoda se hradí **uvedením v předešlý stav** (oprava). Když to nejde nebo o to poškozený požádá, **v penězích**.",
+            "Hradí se **skutečná škoda** (co ubylo z majetku) i **ušlý zisk** (co by poškozený jinak získal).",
+            "Nemajetková újma se odčiňuje **přiměřeným zadostiučiněním**, obvykle v penězích; u ublížení na zdraví jde o bolest a ztížení společenského uplatnění.",
+            "Když škodu spoluzavinil i poškozený, náhrada se **poměrně sníží**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Taxikáři pan Mareš nedal přednost a poškodil auto. Oprava stojí 40 000 Kč a taxikář nemohl týden jezdit, takže přišel o 12 000 Kč tržeb. Co může požadovat?",
+          "answer": "**Skutečnou škodu** 40 000 Kč (náklady na opravu) a **ušlý zisk** 12 000 Kč (prokazatelně ztracené tržby). Celkem **52 000 Kč**. U dopravní nehody to v praxi zaplatí pojišťovna z povinného ručení pana Mareše."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Když škůdce nic neudělal schválně, nemusí nic platit.",
+          "right": "Odpovídá se i za **nedbalost**, a v některých případech (doprava, zvíře, vadný výrobek) dokonce **bez ohledu na zavinění**.",
+          "why": "Zákon chrání poškozeného. Úmysl není podmínkou náhrady; stačí, že si škůdce nepočínal tak opatrně, jak měl."
+        },
+        {
+          "type": "summary",
+          "text": "Újma je majetková (škoda) a nemajetková. Při subjektivní odpovědnosti musí být splněno porušení povinnosti, újma, příčinná souvislost a zavinění. Hradí se skutečná škoda a ušlý zisk, nemajetková újma přiměřeným zadostiučiněním."
+        }
+      ]
+    },
+    {
+      "title": "Bez viny i předem",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Majitelka psa si dala veliký pozor: pes měl vodítko a náhubek byl v tašce. Přesto se vytrhl a pokousal cyklistu. Nic nezanedbala, a stejně platí. Proč?"
+        },
+        {
+          "type": "text",
+          "text": "Protože u některých nebezpečných věcí a činností odpovídá ten, kdo z nich má užitek, **bez ohledu na zavinění**. A ještě lepší než škodu nahradit je škodě **předejít**."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Škoda a újma",
+          "definition": "Škoda je majetková újma (dá se vyčíslit penězi). Nemajetková újma je bolest, ztížení společenského uplatnění, zásah do osobnosti.",
+          "example": "Roztržená bunda je škoda, bolest po kousnutí nemajetková újma."
+        },
+        {
+          "type": "term",
+          "term": "Subjektivní odpovědnost",
+          "definition": "Odpovědnost **za zavinění**: škůdce platí, protože jednal úmyslně nebo z nedbalosti.",
+          "example": "Kluk z nepozornosti rozbije okno."
+        },
+        {
+          "type": "term",
+          "term": "Objektivní odpovědnost",
+          "definition": "Odpovědnost **bez ohledu na zavinění**. Stačí, že škoda vznikla z určité nebezpečné věci nebo činnosti. Zbavit se jí lze jen z důvodů, které uvádí zákon (tzv. liberace).",
+          "example": "Provozovatel auta odpovídá za škodu z provozu vozidla."
+        },
+        {
+          "type": "term",
+          "term": "Prevence",
+          "definition": "Povinnost každého počínat si tak, aby nevznikla nedůvodná újma na zdraví, svobodě, majetku nebo jiných právech jiných.",
+          "example": "Majitel domu v zimě odklidí sníh a led ze střechy nad chodníkem."
+        },
+        {
+          "type": "heading",
+          "text": "Typické případy objektivní odpovědnosti"
+        },
+        {
+          "type": "table",
+          "head": [
+            "případ",
+            "kdo odpovídá"
+          ],
+          "rows": [
+            [
+              "škoda z provozu dopravního prostředku",
+              "provozovatel (auto, vlak, tramvaj)"
+            ],
+            [
+              "škoda způsobená zvířetem",
+              "vlastník zvířete, případně ten, komu ho svěřil"
+            ],
+            [
+              "škoda způsobená vadou výrobku",
+              "výrobce (případně dovozce)"
+            ],
+            [
+              "škoda ze zvlášť nebezpečného provozu",
+              "provozovatel (třeba chemička, lom, elektrárna)"
+            ],
+            [
+              "škoda z provozní činnosti",
+              "provozovatel závodu (může se zprostit, když vynaložil veškerou péči)"
+            ]
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Pes paní Šťastné se vytrhl z vodítka a pokousal cyklistu, kterému roztrhl bundu (2 500 Kč) a způsobil zranění. Paní Šťastná tvrdí, že nic nezanedbala. Musí platit?",
+          "answer": "**Ano.** Za škodu způsobenou zvířetem odpovídá vlastník **bez ohledu na zavinění**. Hradí bundu (škoda 2 500 Kč) i zadostiučinění za bolest (nemajetková újma). Kdyby cyklista psa sám provokoval, náhrada by se mohla snížit pro spoluzavinění."
+        },
+        {
+          "type": "heading",
+          "text": "Jak škodě předejít"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Každý má **obecnou povinnost prevence**: jednat tak, aby nikomu bezdůvodně neublížil.",
+            "Kdo vytvořil nebezpečnou situaci nebo má nad ní kontrolu, musí podle okolností **zakročit** (ohradit výkop, označit mokrou podlahu).",
+            "Kdo ví, že jinému hrozí vážná újma, má ho podle okolností **varovat** nebo mu pomoci, pokud to po něm lze rozumně chtít.",
+            "Hrozí-li škoda, může ohrožený žádat soud, aby uložil **opatření k jejímu odvrácení**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Supermarket vytře podlahu a nedá tam ceduli. Zákaznice uklouzne a zlomí si ruku. Na čem se dá odpovědnost supermarketu postavit?",
+          "answer": "Supermarket porušil **povinnost prevence**: vytvořil nebezpečnou situaci (mokrá podlaha) a neoznačil ji. Jde o porušení povinnosti, újmu (zlomená ruka: bolest, náklady), příčinnou souvislost a nedbalost. Zákaznice má nárok na náhradu škody i na zadostiučinění za bolest."
+        },
+        {
+          "type": "mistake",
+          "wrong": "U objektivní odpovědnosti se nedá nikdy zprostit.",
+          "right": "Zprostit se lze, ale **jen z důvodů, které zákon u daného případu uvádí** (např. u provozu vozidla neodvratitelná okolnost, která nemá původ v provozu).",
+          "why": "Objektivní odpovědnost je přísná, ne absolutní. Zavinění se nezkoumá, liberační důvody ale existují."
+        },
+        {
+          "type": "summary",
+          "text": "Subjektivní odpovědnost stojí na zavinění, objektivní ne: provozovatel vozidla, vlastník zvířete nebo výrobce vadného výrobku odpovídají i bez viny. Každý má povinnost prevence: počínat si tak, aby jinému nevznikla újma."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "match",
+      "question": "Spoj druh újmy s příkladem.",
+      "pairs": [
+        [
+          "škoda",
+          "rozbitý telefon"
+        ],
+        [
+          "nemajetková újma",
+          "bolest po úrazu"
+        ],
+        [
+          "ušlý zisk",
+          "tržby, o které podnikatel přišel"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď předpoklady subjektivní odpovědnosti tak, jak na sebe navazují v čase (od jednání po posouzení viny).",
+      "items": [
+        "porušení povinnosti (protiprávní jednání)",
+        "vznik škody nebo újmy",
+        "příčinná souvislost mezi nimi",
+        "zavinění škůdce"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Za škodu se odpovídá jen tehdy, když ji škůdce způsobil úmyslně.",
+      "answer": false,
+      "explanation": "Stačí nedbalost, u objektivní odpovědnosti se zavinění nezkoumá vůbec."
+    },
+    {
+      "type": "choice",
+      "question": "Kterým způsobem se škoda nahrazuje přednostně?",
+      "options": [
+        "uvedením v předešlý stav",
+        "omluvou",
+        "trestem vězení",
+        "veřejným zveřejněním rozsudku"
+      ],
+      "answer": 0,
+      "explanation": "Když to nejde nebo poškozený požádá, nahrazuje se v penězích."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se nahrazuje nemajetková újma?",
+      "options": [
+        "přiměřeným zadostiučiněním",
+        "jen opravou věci",
+        "nijak, hradí se jen škoda",
+        "pouze pokutou ve prospěch státu"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "question": "Spoj případ s tím, kdo bez ohledu na zavinění odpovídá.",
+      "pairs": [
+        [
+          "škoda z provozu auta",
+          "provozovatel vozidla"
+        ],
+        [
+          "kousnutí psem",
+          "vlastník zvířete"
+        ],
+        [
+          "výbuch vadné nabíječky",
+          "výrobce"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Vlastník psa odpovídá za škodu, kterou pes způsobil, i když nic nezanedbal.",
+      "answer": true
+    },
+    {
+      "type": "input",
+      "question": "Oprava auta stojí 30 000 Kč a podnikatel kvůli nehodě přišel o 8 000 Kč zisku. Kolik korun celkem může požadovat jako náhradu škody?",
+      "answers": [
+        "38000",
+        "38 000"
+      ],
+      "hints": [
+        "Hradí se skutečná škoda i ušlý zisk."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co se stane s náhradou, když škodu spoluzavinil i poškozený?",
+      "options": [
+        "Poměrně se sníží.",
+        "Zanikne úplně.",
+        "Zdvojnásobí se.",
+        "Nic, poškozený dostane vše."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje povinnost počínat si tak, aby jinému nevznikla újma?",
+      "answers": [
+        "prevence",
+        "povinnost prevence",
+        "prevenční povinnost",
+        "předcházení škodám"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rodiče mohou odpovídat za škodu, kterou způsobilo jejich dítě, pokud zanedbali dohled nad ním.",
+      "answer": true
+    },
+    {
+      "type": "choice",
+      "question": "Majitel domu neodklidil v zimě rampouchy, jeden spadl a poranil chodce. Co porušil především?",
+      "options": [
+        "povinnost prevence",
+        "povinnost platit daně",
+        "zákaz nekalé soutěže",
+        "nic, za počasí nikdo neodpovídá"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi subjektivní a objektivní odpovědností za škodu? Uveď příklady.",
+      "answer": "Subjektivní odpovědnost vyžaduje zavinění škůdce (úmysl nebo nedbalost), například kluk z nepozornosti rozbije okno. Objektivní odpovědnost nastává bez ohledu na zavinění, například provozovatel auta za škodu z provozu, vlastník za škodu způsobenou zvířetem nebo výrobce za vadný výrobek; zprostit se lze jen z důvodů, které uvádí zákon."
+    }
+  ]
+}

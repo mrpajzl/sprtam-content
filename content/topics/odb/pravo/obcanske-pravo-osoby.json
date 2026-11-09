@@ -1,0 +1,381 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "obcanske-pravo-osoby",
+  "title": "Osoby, věci a vlastnictví",
+  "emoji": "🧑‍🤝‍🧑",
+  "explanations": [
+    {
+      "title": "Kdo a co",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Kupuješ telefon, pronajímáš si byt, dědíš po babičce chalupu. Pokaždé jde o vztah mezi **osobami** (ty, prodejce, pronajímatel) kvůli nějaké **věci**. Tyto běžné vztahy mezi rovnými účastníky upravuje **občanské právo**."
+        },
+        {
+          "type": "text",
+          "text": "Základní předpis je **občanský zákoník**, zákon č. 89/2012 Sb., účinný od 1. ledna 2014. Lidé mu říkají zkratkou NOZ (nový občanský zákoník) nebo OZ."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Osoba",
+          "definition": "Ten, kdo může mít práva a povinnosti. Osoba je buď **fyzická** (člověk), nebo **právnická** (organizace vytvořená podle zákona).",
+          "example": "Jana Malá je fyzická osoba, Pekárna Malá s.r.o. je právnická osoba."
+        },
+        {
+          "type": "term",
+          "term": "Právní osobnost",
+          "definition": "Způsobilost **mít** práva a povinnosti. Člověk ji má od narození do smrti. Počaté dítě se považuje za narozené, pokud to je v jeho zájmu a narodí se živé.",
+          "example": "Novorozenec může zdědit dům, i když sám nic nepodepíše."
+        },
+        {
+          "type": "term",
+          "term": "Svéprávnost",
+          "definition": "Způsobilost **sám** svým jednáním nabývat práva a zavazovat se k povinnostem (podepsat smlouvu, udělat závěť).",
+          "example": "Dvacetiletý Petr si sám koupí auto na splátky. Šestiletá Ema to nemůže."
+        },
+        {
+          "type": "heading",
+          "text": "Kdy je člověk svéprávný"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Plně svéprávným se člověk stává **zletilostí**, tedy dovršením **18 let**.",
+            "Před 18. rokem se plně svéprávným může stát, když mu soud **přizná svéprávnost** (na návrh, nejdřív v 16 letech, například když se sám živí).",
+            "**Nezletilý** může dělat jen právní jednání přiměřená rozumové a volní vyspělosti nezletilých jeho věku.",
+            "Soud může svéprávnost člověka **omezit**, jen když mu hrozí závažná újma a mírnější opatření nestačí. Nikdy ji nemůže úplně odejmout."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Třináctiletý Kuba si za kapesné koupí zmrzlinu a sám si objedná na splátky elektrokoloběžku za 25 000 Kč. Jsou obě koupě v pořádku?",
+          "answer": "**Zmrzlina** ano: je to běžné jednání přiměřené jeho věku. **Koloběžka na splátky** ne: dlouhodobý dluh za 25 000 Kč přesahuje vyspělost třináctiletého. Za Kubu by musel jednat zákonný zástupce (rodič), případně se souhlasem soudu."
+        },
+        {
+          "type": "heading",
+          "text": "Právnické osoby"
+        },
+        {
+          "type": "term",
+          "term": "Právnická osoba",
+          "definition": "Organizovaný útvar, kterému zákon přiznává právní osobnost. Vzniká obvykle **zápisem do veřejného rejstříku** a jedná za ni její orgán (statutární orgán).",
+          "example": "spolek, nadace, obec, akciová společnost"
+        },
+        {
+          "type": "table",
+          "head": [
+            "druh",
+            "co je podstatou",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "korporace",
+              "společenství osob (členů, společníků)",
+              "spolek, s.r.o., družstvo"
+            ],
+            [
+              "fundace",
+              "majetek věnovaný k určitému účelu",
+              "nadace, nadační fond"
+            ],
+            [
+              "ústav",
+              "majetek a lidská práce pro užitečnou činnost",
+              "ústav provozující hospic"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Když za tebe jedná někdo jiný"
+        },
+        {
+          "type": "term",
+          "term": "Zastoupení",
+          "definition": "Někdo (zástupce) jedná jménem a na účet jiného (zastoupeného). Následky nese zastoupený.",
+          "example": "Maminka podepíše za sedmiletého syna přihlášku do kroužku."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Smluvní zastoupení**: na základě dohody, navenek se prokazuje **plnou mocí**. Vyžaduje-li jednání formu, musí ji mít i plná moc.",
+            "**Zákonné zastoupení**: vzniká ze zákona, typicky rodiče za nezletilé dítě.",
+            "**Opatrovník**: jmenuje ho soud, například člověku s omezenou svéprávností."
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kdo je plně svéprávný, má teprve právní osobnost.",
+          "right": "Právní osobnost má každý člověk od narození. Svéprávnost se teprve postupně získává.",
+          "why": "Právní osobnost = práva a povinnosti **mít**. Svéprávnost = **sám** je svým jednáním získávat. Novorozenec má první, ne druhou."
+        },
+        {
+          "type": "summary",
+          "text": "Osoby jsou fyzické a právnické. Každý člověk má právní osobnost od narození do smrti; plnou svéprávnost získává v 18 letech, dřív jen výjimečně (přiznáním svéprávnosti soudem). Kdo nemůže jednat sám, jedná za něj zástupce: smluvní (plná moc), zákonný nebo opatrovník."
+        }
+      ]
+    },
+    {
+      "title": "Věci a vlastnictví",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Babička má chalupu, na zahradě jabloně a v bance peníze. Soused už dvanáct let používá kus její louky, protože si myslí, že je jeho. Komu louka patří? A čí jsou jablka, která spadnou k sousedovi?"
+        },
+        {
+          "type": "text",
+          "text": "Na takové otázky odpovídá **věcné právo**: část občanského zákoníku (č. 89/2012 Sb.) o věcech, vlastnictví a držbě."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Věc",
+          "definition": "Vše, co je rozdílné od osoby a slouží potřebě lidí. Věc může být **hmotná** (ovládnutelná část vnějšího světa) i **nehmotná** (právo, které to připouští, jiná věc bez hmotné podstaty).",
+          "example": "Hmotná: auto. Nehmotná: pohledávka, ochranná známka."
+        },
+        {
+          "type": "term",
+          "term": "Nemovitá a movitá věc",
+          "definition": "**Nemovité** jsou pozemky, podzemní stavby se samostatným účelovým určením a práva k nim, a co zákon za nemovité prohlásí. Ostatní věci jsou **movité**.",
+          "example": "Pozemek i s domem je nemovitost. Kolo je movitá věc."
+        },
+        {
+          "type": "term",
+          "term": "Součást věci",
+          "definition": "Vše, co k věci podle její povahy patří a nemůže být odděleno, aniž by se věc tím znehodnotila. Sdílí osud věci.",
+          "example": "Stavba spojená se zemí pevným základem je součástí pozemku."
+        },
+        {
+          "type": "term",
+          "term": "Vlastnické právo",
+          "definition": "Nejsilnější právo k věci. Vlastník smí věc **držet**, **užívat**, brát z ní **plody a užitky** a **nakládat** s ní (prodat, darovat, zničit) v mezích zákona.",
+          "example": "Majitelka bytu ho může pronajmout, prodat nebo v něm bydlet."
+        },
+        {
+          "type": "term",
+          "term": "Držba",
+          "definition": "Faktický výkon práva pro sebe. Držitel s věcí zachází, jako by mu patřila, i když vlastníkem být nemusí.",
+          "example": "Soused, který louku seká a užívá jako svou."
+        },
+        {
+          "type": "heading",
+          "text": "Několik pravidel o věcech"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Stavba je součástí pozemku** (od roku 2014 platí opět „povrch ustupuje půdě“). Výjimky stanoví zákon, například dočasné stavby nebo stavby na cizím pozemku z doby před rokem 2014.",
+            "**Zvíře není věc**. Ustanovení o věcech se na něj použijí obdobně, ale jen pokud to neodporuje jeho povaze živého tvora.",
+            "**Plody** (jablka, mláďata) patří vlastníkovi věci, ze které vznikly.",
+            "Vlastnit může věc i více lidí: **spoluvlastnictví** s podíly, například půl na půl."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se nabývá vlastnictví"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "**Smlouvou**: koupě, darování, směna. U movité věci přechází vlastnictví zpravidla účinností smlouvy, u nemovitosti v katastru **zápisem do katastru nemovitostí**.",
+            "**Děděním**: smrtí zůstavitele.",
+            "**Rozhodnutím orgánu veřejné moci**: soud, vyvlastnění.",
+            "**Vydržením**: poctivý a řádný držitel se stane vlastníkem, když věc drží nepřetržitě po zákonem stanovenou dobu.",
+            "**Přivlastněním** věci, která nikomu nepatří, nebo **zpracováním**, přírůstkem a dalšími způsoby."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Vydržení",
+          "definition": "Získání vlastnictví dlouhou držbou. Držba musí být **poctivá** (držitel věří, že mu věc patří), **řádná** (má platný důvod, třeba smlouvu) a **pravá** (nezískal ji lstí nebo násilím). Vydržecí doba je u movité věci **3 roky**, u nemovité **10 let**.",
+          "example": "Soused koupil pozemek podle smlouvy, ve které byla chybně zahrnuta i část babiččiny louky."
+        },
+        {
+          "type": "example",
+          "question": "Soused 12 let užívá kus babiččiny louky. Koupil ho podle kupní smlouvy od předchozího majitele, jenže ten louku nevlastnil. O chybě soused nevěděl. Komu louka patří?",
+          "answer": "Držba je **poctivá** (o chybě nevěděl), **řádná** (má kupní smlouvu) a **pravá**. Jde o nemovitost, potřebná doba je 10 let; uplynulo 12. Soused se stal vlastníkem **vydržením**. Babička by musela prokázat, že podmínky splněny nebyly."
+        },
+        {
+          "type": "example",
+          "question": "Kamarádka ti půjčí kolo. Jsi držitel? Můžeš ho vydržet?",
+          "answer": "Kolo máš u sebe, ale uznáváš, že patří kamarádce: nevykonáváš vlastnické právo **pro sebe**, jsi jen **detentor** (ten, kdo věc fakticky má). Proto ho **vydržet nemůžeš**, ať ho máš jakkoli dlouho."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Kdo něco dlouho používá, automaticky se stává vlastníkem.",
+          "right": "Vydržet lze jen při **poctivé, řádné a pravé držbě** po zákonnou dobu (3 roky movitá, 10 let nemovitá věc).",
+          "why": "Půjčená nebo ukradená věc se nevydrží: chybí přesvědčení, že věc patří držiteli, nebo platný důvod."
+        },
+        {
+          "type": "summary",
+          "text": "Věci jsou hmotné a nehmotné, movité a nemovité; stavba je součástí pozemku a zvíře není věc. Vlastník věc drží, užívá, bere z ní plody a nakládá s ní. Vlastnictví se nabývá smlouvou, děděním, rozhodnutím úřadu nebo vydržením."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Jaké číslo má občanský zákoník ve Sbírce zákonů? Napiš ve tvaru číslo/rok.",
+      "answers": [
+        "89/2012",
+        "89/2012 Sb.",
+        "89/2012 sb"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Od kdy má člověk právní osobnost?",
+      "options": [
+        "od narození",
+        "od 15 let",
+        "od 18 let",
+        "od zápisu do matriky"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Šestnáctiletá Klára, které soud přiznal svéprávnost, může sama uzavřít smlouvu o úvěru.",
+      "answer": true,
+      "explanation": "Přiznáním svéprávnosti se stala plně svéprávnou ještě před 18. narozeninami."
+    },
+    {
+      "type": "match",
+      "question": "Spoj pojem s jeho významem.",
+      "pairs": [
+        [
+          "právní osobnost",
+          "mít práva a povinnosti"
+        ],
+        [
+          "svéprávnost",
+          "sám je svým jednáním získávat"
+        ],
+        [
+          "zastoupení",
+          "někdo jedná za jiného"
+        ],
+        [
+          "držba",
+          "faktický výkon práva pro sebe"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kterou z těchto věcí nezletilý v 10 letech zpravidla zvládne sám?",
+      "options": [
+        "koupit si sešit v papírnictví",
+        "uzavřít nájemní smlouvu na byt",
+        "prodat zděděný pozemek",
+        "vzít si spotřebitelský úvěr"
+      ],
+      "answer": 0,
+      "explanation": "Smí dělat jednání přiměřená vyspělosti nezletilých jeho věku."
+    },
+    {
+      "type": "match",
+      "question": "Spoj druh právnické osoby s příkladem.",
+      "pairs": [
+        [
+          "korporace",
+          "spolek"
+        ],
+        [
+          "fundace",
+          "nadace"
+        ],
+        [
+          "ústav",
+          "zařízení provozující hospic"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Soud může člověku svéprávnost úplně odejmout.",
+      "answer": false,
+      "explanation": "Podle občanského zákoníku ji lze jen omezit, a to pouze v nezbytném rozsahu."
+    },
+    {
+      "type": "choice",
+      "question": "Která z těchto věcí je nemovitá?",
+      "options": [
+        "pozemek",
+        "obytný přívěs na kolech",
+        "traktor",
+        "akcie"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Podle občanského zákoníku je zvíře věc jako každá jiná.",
+      "answer": false,
+      "explanation": "Zvíře není věc; pravidla o věcech se na něj použijí jen obdobně."
+    },
+    {
+      "type": "order",
+      "question": "Seřaď oprávnění vlastníka tak, jak je zákoník tradičně vyjmenovává (od fyzického „mít u sebe“ po rozhodnutí o osudu věci).",
+      "items": [
+        "věc držet",
+        "věc užívat",
+        "brát z ní plody a užitky",
+        "s věcí nakládat"
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Kolik let trvá řádné vydržení nemovité věci? Napiš číslo.",
+      "answers": [
+        "10",
+        "deset"
+      ],
+      "hints": [
+        "U movité věci je to méně, u nemovité víc."
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Martin má od kamaráda půjčenou kytaru už čtyři roky. Stal se jejím vlastníkem?",
+      "options": [
+        "Ne, není držitel, jen věc fakticky má a ví, že patří kamarádovi.",
+        "Ano, movitá věc se vydrží za 3 roky.",
+        "Ano, ale jen když kamarád nic nenamítl.",
+        "Ne, protože kytaru nelze vydržet nikdy."
+      ],
+      "answer": 0,
+      "hints": [
+        "Myslí si Martin, že mu kytara patří?"
+      ]
+    },
+    {
+      "type": "open",
+      "question": "Vysvětli rozdíl mezi právní osobností a svéprávností.",
+      "answer": "Právní osobnost je způsobilost mít práva a povinnosti; má ji každý člověk od narození do smrti. Svéprávnost je způsobilost sám svým jednáním práva nabývat a zavazovat se; plně ji člověk získá zletilostí v 18 letech, výjimečně dřív přiznáním svéprávnosti soudem."
+    },
+    {
+      "type": "open",
+      "question": "Jaké podmínky musí splnit držba, aby vedla k vydržení?",
+      "answer": "Držba musí být poctivá (držitel věří, že mu věc patří), řádná (opírá se o platný důvod, např. smlouvu) a pravá (není získaná lstí ani násilím). Musí trvat nepřetržitě 3 roky u movité a 10 let u nemovité věci."
+    }
+  ]
+}

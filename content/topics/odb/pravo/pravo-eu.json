@@ -1,0 +1,346 @@
+{
+  "$schema": "../../../schema/topic.schema.json",
+  "format": 1,
+  "id": "pravo-eu",
+  "title": "Právo EU a evropské soudy",
+  "emoji": "🇪🇺",
+  "explanations": [
+    {
+      "title": "Druhé patro práva",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "Roaming v EU je za domácí ceny, nabíječky mají jednotný konektor USB-C a na lahvích drží víčka. Tohle nerozhodl český Parlament, ale **Evropská unie**. Česká republika je jejím členem od **1. května 2004**."
+        },
+        {
+          "type": "text",
+          "text": "Unijní právo platí v ČR vedle českého. Kdo pracuje s právem, musí vědět, odkud se bere a co dělat, když si s českým zákonem odporuje."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Primární právo EU",
+          "definition": "Zakládající smlouvy, které uzavřely členské státy: hlavně **Smlouva o Evropské unii** (SEU) a **Smlouva o fungování EU** (SFEU), dále **Listina základních práv EU** a přístupové smlouvy.",
+          "example": "Lisabonská smlouva (účinná od roku 2009) upravila SEU a SFEU."
+        },
+        {
+          "type": "term",
+          "term": "Sekundární právo EU",
+          "definition": "Předpisy, které vydávají orgány EU na základě smluv. Návrh obvykle podává **Evropská komise**, přijímá je **Evropský parlament** a **Rada EU**.",
+          "example": "Nařízení o ochraně osobních údajů (GDPR)."
+        },
+        {
+          "type": "heading",
+          "text": "Druhy sekundárních předpisů"
+        },
+        {
+          "type": "table",
+          "head": [
+            "předpis",
+            "závaznost",
+            "příklad"
+          ],
+          "rows": [
+            [
+              "nařízení",
+              "závazné v celém rozsahu a **přímo použitelné** ve všech státech, bez českého zákona",
+              "GDPR"
+            ],
+            [
+              "směrnice",
+              "závazná co do **výsledku**; stát ji musí **transponovat** (převést) do svého práva ve stanovené lhůtě",
+              "směrnice o právech spotřebitelů → český občanský zákoník"
+            ],
+            [
+              "rozhodnutí",
+              "závazné pro toho, komu je určeno",
+              "rozhodnutí Komise o pokutě pro konkrétní firmu"
+            ],
+            [
+              "doporučení a stanovisko",
+              "nezávazné",
+              "doporučení k očkování"
+            ]
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Transpozice",
+          "definition": "Převedení směrnice do vnitrostátního práva vlastním zákonem nebo jiným předpisem.",
+          "example": "Česká republika promítla spotřebitelské směrnice do občanského zákoníku č. 89/2012 Sb."
+        },
+        {
+          "type": "heading",
+          "text": "Když si české a unijní právo odporují"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Přednost práva EU**: v oblastech, kde má EU pravomoc, má unijní právo přednost před odporujícím vnitrostátním předpisem. Český soud nebo úřad pak český předpis **nepoužije**. Zásadu vyslovil Soudní dvůr v rozsudku Costa v. ENEL (1964).",
+            "**Přímý účinek**: dostatečně jasné a bezpodmínečné ustanovení práva EU se jednotlivec může dovolat přímo před národním soudem. Zásada vychází z rozsudku Van Gend en Loos (1963).",
+            "Pokud stát směrnici netransponuje včas, může se jednotlivec za určitých podmínek dovolat jejích ustanovení vůči **státu**."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Firma z Brna chce vědět, zda se na ni vztahuje GDPR, když ho Parlament ČR nikdy neschválil jako zákon. Co jí odpovíš?",
+          "answer": "**Ano, vztahuje.** GDPR je **nařízení**: je přímo použitelné ve všech členských státech bez převedení do českého zákona. Český zákon o zpracování osobních údajů jen doplňuje to, co nařízení nechává na státech."
+        },
+        {
+          "type": "example",
+          "question": "Směrnice stanoví lhůtu k transpozici do konce roku. Česko ji do té doby neprovede. Co se může stát?",
+          "answer": "Evropská komise může proti ČR podat **žalobu pro porušení povinnosti** k Soudnímu dvoru EU; ten může nakonec uložit i finanční sankci. Jednotlivci se za určitých podmínek mohou jasných ustanovení směrnice dovolat vůči státu a požadovat náhradu škody."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Směrnice platí v ČR stejně jako nařízení, hned a přímo pro všechny.",
+          "right": "**Nařízení** je přímo použitelné. **Směrnice** zavazuje stát k výsledku a musí se **transponovat** do českého práva.",
+          "why": "Směrnice nechává státům volbu formy a prostředků. Proto ji většinou najdeš „schovanou“ v českém zákoně."
+        },
+        {
+          "type": "summary",
+          "text": "Primární právo EU tvoří zakládající smlouvy (SEU, SFEU) a Listina základních práv EU; sekundární právo nařízení (přímo použitelná), směrnice (nutná transpozice), rozhodnutí a nezávazná doporučení. Právo EU má přednost před odporujícím vnitrostátním právem."
+        }
+      ]
+    },
+    {
+      "title": "Dva evropské soudy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "O čem to je"
+        },
+        {
+          "type": "text",
+          "text": "V médiích uslyšíš „Evropský soud rozhodl…“. Jenže evropských soudů je víc a každý patří k jiné organizaci. Jeden sídlí v Lucemburku a hlídá právo EU, druhý ve Štrasburku a hlídá lidská práva."
+        },
+        {
+          "type": "text",
+          "text": "Plést si je je nejčastější chyba u zkoušky. Proto je projdeme vedle sebe."
+        },
+        {
+          "type": "heading",
+          "text": "Nové pojmy"
+        },
+        {
+          "type": "term",
+          "term": "Evropská unie a Rada Evropy",
+          "definition": "Dvě **různé** mezinárodní organizace. **EU** má 27 členských států a vlastní právo. **Rada Evropy** je starší a širší organizace evropských států zaměřená na lidská práva, demokracii a právní stát.",
+          "example": "ČR je členem obou. Norsko je v Radě Evropy, ale ne v EU."
+        },
+        {
+          "type": "term",
+          "term": "Soudní dvůr Evropské unie (SDEU)",
+          "definition": "Soudní orgán EU se sídlem v **Lucemburku**. Skládá se ze **Soudního dvora** a **Tribunálu**. Zajišťuje dodržování práva EU a jeho jednotný výklad.",
+          "example": "Rozsudky Costa v. ENEL a Van Gend en Loos."
+        },
+        {
+          "type": "term",
+          "term": "Evropský soud pro lidská práva (ESLP)",
+          "definition": "Soud **Rady Evropy** se sídlem ve **Štrasburku**. Rozhoduje, zda stát porušil **Úmluvu o ochraně lidských práv a základních svobod** (1950).",
+          "example": "Stížnost člověka, kterému soud v ČR rozhodoval spor nepřiměřeně dlouho."
+        },
+        {
+          "type": "heading",
+          "text": "Co dělá Soudní dvůr EU"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Řízení o předběžné otázce**: národní soud se ptá na výklad nebo platnost práva EU; poslední instance se zeptat musí, když výklad není jasný.",
+            "**Žaloba pro porušení povinnosti**: obvykle Komise proti členskému státu, který neplní povinnosti z práva EU.",
+            "**Žaloba na neplatnost**: přezkum, zda je předpis nebo akt orgánu EU v souladu se smlouvami.",
+            "**Žaloba na nečinnost** a další řízení podle smluv."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Jak se stěžovat k ESLP"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Stížnost směřuje vždy **proti státu**, ne proti soukromé osobě.",
+            "Nejdřív je nutné **vyčerpat všechny vnitrostátní prostředky** nápravy, v ČR zpravidla včetně ústavní stížnosti.",
+            "Stížnost je třeba podat do **4 měsíců** od konečného vnitrostátního rozhodnutí.",
+            "Když soud shledá porušení Úmluvy, vysloví to a může státu uložit, aby stěžovateli zaplatil **spravedlivé zadostiučinění**. Stát musí rozsudek respektovat."
+          ]
+        },
+        {
+          "type": "example",
+          "question": "Český soud řeší spor o cenu letenky a neví, jak vykládat nařízení EU o právech cestujících. Na koho se obrátí?",
+          "answer": "Na **Soudní dvůr EU v Lucemburku** v **řízení o předběžné otázce**. Řízení přeruší, položí otázku a podle odpovědi SDEU pak sám spor rozhodne."
+        },
+        {
+          "type": "example",
+          "question": "Pan Veselý tvrdí, že jeho spor u českých soudů trval 12 let, a tím bylo porušeno jeho právo na spravedlivý proces. Ústavní soud jeho stížnost zamítl. Kam se může obrátit?",
+          "answer": "K **Evropskému soudu pro lidská práva ve Štrasburku**: vyčerpal vnitrostátní prostředky včetně ústavní stížnosti. Stížnost musí podat do **4 měsíců** od rozhodnutí Ústavního soudu a namítat porušení čl. 6 Úmluvy (právo na spravedlivý proces v přiměřené lhůtě)."
+        },
+        {
+          "type": "mistake",
+          "wrong": "Evropský soud pro lidská práva ve Štrasburku je soud Evropské unie.",
+          "right": "ESLP je soud **Rady Evropy**. Soudem EU je **Soudní dvůr EU v Lucemburku**.",
+          "why": "Rada Evropy a Evropská unie jsou dvě různé organizace s jinými smlouvami i soudy."
+        },
+        {
+          "type": "summary",
+          "text": "Soudní dvůr EU v Lucemburku hlídá jednotný výklad a dodržování práva EU, hlavně v řízení o předběžné otázce a při žalobách proti státům. Evropský soud pro lidská práva ve Štrasburku je soud Rady Evropy; stížnost proti státu se podává po vyčerpání vnitrostátních prostředků do 4 měsíců."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "input",
+      "question": "Ve kterém roce vstoupila Česká republika do Evropské unie? Napiš rok.",
+      "answers": [
+        "2004"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj předpis EU s jeho závazností.",
+      "pairs": [
+        [
+          "nařízení",
+          "přímo použitelné ve všech státech"
+        ],
+        [
+          "směrnice",
+          "závazná co do výsledku, nutná transpozice"
+        ],
+        [
+          "rozhodnutí",
+          "závazné pro toho, komu je určeno"
+        ],
+        [
+          "doporučení",
+          "nezávazné"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Co patří do primárního práva EU?",
+      "options": [
+        "Smlouva o fungování EU",
+        "nařízení GDPR",
+        "směrnice o právech spotřebitelů",
+        "rozhodnutí Komise o pokutě"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "truefalse",
+      "question": "Směrnici musí členský stát převést do svého práva.",
+      "answer": true,
+      "explanation": "Tomu se říká transpozice."
+    },
+    {
+      "type": "choice",
+      "question": "Co udělá český soud, když český zákon odporuje přímo použitelnému nařízení EU?",
+      "options": [
+        "použije nařízení EU a český zákon nepoužije",
+        "použije český zákon, protože je novější",
+        "spor odloží, dokud Parlament zákon nezmění",
+        "požádá vládu o rozhodnutí"
+      ],
+      "answer": 0,
+      "hints": [
+        "Vzpomeň si na rozsudek Costa v. ENEL."
+      ]
+    },
+    {
+      "type": "input",
+      "question": "Jak se jmenuje převedení směrnice EU do vnitrostátního práva?",
+      "answers": [
+        "transpozice",
+        "implementace",
+        "transpozice směrnice"
+      ]
+    },
+    {
+      "type": "match",
+      "question": "Spoj soud se sídlem.",
+      "pairs": [
+        [
+          "Soudní dvůr EU",
+          "Lucemburk"
+        ],
+        [
+          "Evropský soud pro lidská práva",
+          "Štrasburk"
+        ],
+        [
+          "Ústavní soud ČR",
+          "Brno"
+        ]
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Evropský soud pro lidská práva je orgánem Evropské unie.",
+      "answer": false,
+      "explanation": "Je to soud Rady Evropy."
+    },
+    {
+      "type": "choice",
+      "question": "Jak se jmenuje řízení, ve kterém se národní soud ptá SDEU na výklad práva EU?",
+      "options": [
+        "řízení o předběžné otázce",
+        "žaloba pro porušení povinnosti",
+        "ústavní stížnost",
+        "dovolání"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "input",
+      "question": "Do kolika měsíců od konečného vnitrostátního rozhodnutí se podává stížnost k ESLP? Napiš číslo.",
+      "answers": [
+        "4",
+        "čtyři",
+        "čtyř"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Seřaď kroky pana Veselého, který chce ke štrasburskému soudu.",
+      "items": [
+        "rozsudek soudu prvního stupně",
+        "odvolání",
+        "dovolání nebo jiný dostupný prostředek",
+        "ústavní stížnost",
+        "stížnost k ESLP"
+      ]
+    },
+    {
+      "type": "choice",
+      "question": "Kdo obvykle podává žalobu pro porušení povinnosti proti členskému státu?",
+      "options": [
+        "Evropská komise",
+        "Evropský soud pro lidská práva",
+        "občan státu",
+        "Rada Evropy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "open",
+      "question": "Jaký je rozdíl mezi nařízením a směrnicí EU?",
+      "answer": "Nařízení je závazné v celém rozsahu a přímo použitelné ve všech členských státech bez národního předpisu. Směrnice je závazná co do výsledku, kterého má být dosaženo, a stát ji musí ve stanovené lhůtě transponovat do svého práva, přičemž volí formu a prostředky."
+    },
+    {
+      "type": "open",
+      "question": "Porovnej Soudní dvůr EU a Evropský soud pro lidská práva.",
+      "answer": "Soudní dvůr EU sídlí v Lucemburku, je orgánem EU a zajišťuje jednotný výklad a dodržování práva EU, například v řízení o předběžné otázce. Evropský soud pro lidská práva sídlí ve Štrasburku, patří k Radě Evropy a rozhoduje stížnosti proti státům na porušení Úmluvy o ochraně lidských práv a základních svobod."
+    }
+  ]
+}
